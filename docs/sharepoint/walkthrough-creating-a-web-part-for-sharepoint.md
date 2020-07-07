@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di una Web part per SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbc4b9a2eecd6eb9853c515eb5358009c32843a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655920"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014588"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procedura dettagliata: creare una Web part per SharePoint
 
@@ -27,7 +26,7 @@ Web part consentire agli utenti di modificare direttamente il contenuto, l'aspet
 
 La Web part Visualizza i dipendenti in una griglia di dati. L'utente specifica il percorso del file che contiene i dati del dipendente. L'utente può inoltre filtrare la griglia dei dati in modo che i dipendenti responsabili siano visualizzati solo nell'elenco.
 
-Questa procedura dettagliata illustra le attività seguenti:
+Vengono illustrate le attività seguenti:
 
 - Creazione di una Web part tramite il modello di elemento **Web part** di Visual Studio.
 
@@ -40,9 +39,9 @@ Questa procedura dettagliata illustra le attività seguenti:
 - Test della web part in SharePoint.
 
     > [!NOTE]
-    > Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+    > Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 - Edizioni supportate di Microsoft Windows e SharePoint.
 
@@ -52,9 +51,9 @@ Questa procedura dettagliata illustra le attività seguenti:
 
 Per prima cosa, creare un progetto SharePoint vuoto. Successivamente, sarà necessario aggiungere una Web part al progetto utilizzando il modello di elemento **Web part** .
 
-1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilizzando l'opzione **Esegui come amministratore** .
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Per iniziare, usare l'opzione **Esegui come amministratore** .
 
-2. Sulla barra degli uomini scegliere **File**  > **nuovo** **progetto** > .
+2. Sulla barra degli uomini scegliere **file**  >  **nuovo**  >  **progetto**.
 
 3. Nella finestra di dialogo **nuovo progetto** espandere il nodo **SharePoint** sotto la lingua che si desidera utilizzare, quindi scegliere il nodo **2010** .
 
@@ -68,7 +67,7 @@ Per prima cosa, creare un progetto SharePoint vuoto. Successivamente, sarà nece
 
 Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiunge il file di codice della web part. Successivamente, si aggiungerà codice al file di codice della web part per eseguire il rendering del contenuto della web part.
 
-1. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+1. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
 2. Nel riquadro **modelli installati** della finestra di dialogo **Aggiungi nuovo elemento** espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
@@ -107,7 +106,7 @@ Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiung
      [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
      [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
 
-5. Sostituire il metodo `CreateChildControls` con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
+5. Sostituire il metodo `CreateChildControls` con il codice seguente. Il codice esegue queste operazioni:
 
    - Aggiunge la griglia di dati e l'etichetta dichiarata nel passaggio precedente.
 
@@ -116,7 +115,7 @@ Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiung
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Aggiungere il metodo seguente alla classe `WebPart1` . Mediante il codice vengono effettuate le seguenti attività:
+6. Aggiungere il metodo seguente alla classe `WebPart1`. Il codice esegue queste operazioni:
 
    - Consente di creare un verbo visualizzato nel menu dei verbi della web part della web part di cui è stato eseguito il rendering.
 
@@ -162,11 +161,11 @@ Quando si esegue il progetto, viene aperto il sito di SharePoint. La Web part vi
         </employees>
     ```
 
-2. Nella barra dei menu del blocco note scegliere **File**  > **Salva con nome**.
+2. Nella barra dei menu del blocco note scegliere **file**  >  **Salva con nome**.
 
 3. Nella finestra di dialogo **Salva con nome** selezionare **tutti i file**nell'elenco **Salva come** .
 
-4. Nella casella **nome file** immettere **Data. XML**.
+4. Nella casella **nome file** immettere **data.xml**.
 
 5. Scegliere una cartella qualsiasi tramite il pulsante **Sfoglia cartelle** , quindi scegliere il pulsante **Salva** .
 
@@ -216,7 +215,7 @@ Mostrare e nascondere i dipendenti che non sono responsabili facendo clic su un 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creazione di Web part per sharepoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
-[procedura: creare una Web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
-[procedura: creare una Web part di SharePoint tramite una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
-[procedura dettagliata: creare una Web part per SharePoint tramite una finestra di progettazione](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
+ [Procedura: creare una Web part](../sharepoint/how-to-create-a-sharepoint-web-part.md) 
+ di SharePoint [Procedura: creare una Web part di SharePoint tramite una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 
+ [Procedura dettagliata: creare una Web part per SharePoint tramite una finestra di progettazione](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

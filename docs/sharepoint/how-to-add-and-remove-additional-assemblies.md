@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: aggiungere e rimuovere assembly aggiuntivi | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdcc1c478bead4df89622a7311b074965cdc0226
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985229"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014823"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Procedura: aggiungere e rimuovere assembly aggiuntivi
   Se un pacchetto di SharePoint dipende da altri assembly per la funzionalità o i dati, è possibile aggiungere gli assembly al pacchetto della soluzione (con estensione wsp). In questo modo, il server SharePoint verifica che gli assembly personalizzati vengano installati con un pacchetto.
@@ -41,7 +40,7 @@ ms.locfileid: "72985229"
 
 4. Scegliere i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")), quindi scegliere l'assembly che si desidera aggiungere. Per finalità di portabilità, è consigliabile usare un percorso relativo all'assembly selezionato.
 
-5. Per la **destinazione della distribuzione**, scegliere il pulsante di opzione **GlobalAssemblyCache** per distribuire l'assembly nella global assembly cache o scegliere il pulsante di opzione **applicazione WebApplication** per distribuire l'assembly nella cartella WebApplication nel Server in cui è in esecuzione SharePoint.
+5. Per la **destinazione della distribuzione**, scegliere il pulsante di opzione **GlobalAssemblyCache** per distribuire l'assembly nella global assembly cache o scegliere il pulsante di opzione **applicazione** Web per distribuire l'assembly nella cartella WebApplication nel server in cui è in esecuzione SharePoint.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>Per aggiungere un assembly dall'output del progetto
 
@@ -57,7 +56,7 @@ ms.locfileid: "72985229"
 
 4. Nell'elenco **progetto di origine** , scegliere il progetto di origine che si desidera aggiungere.
 
-5. Per la **destinazione della distribuzione**, scegliere il pulsante di opzione **GlobalAssemblyCache** per distribuire l'assembly nella global assembly cache o scegliere il pulsante di opzione **applicazione WebApplication** per distribuire l'assembly nella cartella WebApplication nel Server in cui è in esecuzione SharePoint.
+5. Per la **destinazione della distribuzione**, scegliere il pulsante di opzione **GlobalAssemblyCache** per distribuire l'assembly nella global assembly cache o scegliere il pulsante di opzione **applicazione** Web per distribuire l'assembly nella cartella WebApplication nel server in cui è in esecuzione SharePoint.
 
 #### <a name="to-add-a-safe-control"></a>Per aggiungere un controllo sicuro
 
@@ -90,7 +89,7 @@ ms.locfileid: "72985229"
 
 3. Nel riquadro **assembly aggiuntivi** scegliere l'assembly personalizzato che si desidera eliminare.
 
-4. Scegliere il pulsante **Elimina** .
+4. Fare clic sul pulsante **Elimina**.
 
 #### <a name="to-delete-a-safe-control-for-an-assembly"></a>Per eliminare un controllo sicuro per un assembly
 

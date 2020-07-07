@@ -1,7 +1,7 @@
 ---
 title: Creazione di un elenco esterno in SharePoint tramite dati aziendali
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d670215d6a46003315992201c64c23185be7d715
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984657"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015834"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: creare un elenco esterno in SharePoint usando i dati aziendali
 
@@ -32,7 +31,7 @@ Il servizio di integrazione applicativa dei dati consente a SharePoint di visual
 
 In questa procedura dettagliata viene illustrato come creare un modello per il servizio BDC che restituisce informazioni sui contatti in un database di esempio. Si creerà quindi un elenco esterno in SharePoint utilizzando questo modello.
 
-Questa procedura dettagliata illustra le attività seguenti:
+Vengono illustrate le attività seguenti:
 
 - Creazione di un progetto.
 - Aggiunta di un'entità al modello.
@@ -40,9 +39,9 @@ Questa procedura dettagliata illustra le attività seguenti:
 - Aggiunta di un metodo di ricerca specifico.
 - Test del progetto.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
-Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di Windows e SharePoint.
 
@@ -50,11 +49,11 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
 ## <a name="create-a-project-that-contains-a-bdc-model"></a>Creare un progetto che contiene un modello di integrazione applicativa dei dati
 
-1. Nella barra dei menu di Visual Studio scegliere **File** > **nuovo** **progetto** > .
+1. Nella barra dei menu di Visual Studio scegliere **file**  >  **nuovo**  >  **progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-2. In **Visual C#**  o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere l'elemento **2010** .
+2. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere l'elemento **2010** .
 
 3. Nel riquadro **modelli** scegliere **progetto SharePoint 2010**, denominare il progetto **AdventureWorksTest**, quindi scegliere il pulsante **OK** .
 
@@ -66,15 +65,15 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
 6. In **Esplora soluzioni**scegliere il nodo del progetto SharePoint.
 
-7. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+7. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-     Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
+     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
-8. Nel riquadro **modelli** scegliere modello di **integrazione applicativa dei dati (solo soluzione farm)** , assegnare al progetto il nome **AdventureWorksContacts**, quindi scegliere il pulsante **Aggiungi** .
+8. Nel riquadro **modelli** scegliere modello di **integrazione applicativa dei dati (solo soluzione farm)**, assegnare al progetto il nome **AdventureWorksContacts**, quindi scegliere il pulsante **Aggiungi** .
 
 ## <a name="add-data-access-classes-to-the-project"></a>Aggiungere classi di accesso ai dati al progetto
 
-1. Nella barra dei menu scegliere **strumenti** > **Connetti al database**.
+1. Sulla barra dei menu scegliere **strumenti**  >  **Connetti al database**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi connessione**.
 
@@ -84,7 +83,7 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
 3. Scegliere il nodo di progetto in **Esplora soluzioni**.
 
-4. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+4. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
 5. Nel riquadro **modelli installati** scegliere il nodo **dati** .
 
@@ -94,7 +93,7 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
      Verrà aggiunto al progetto un file con estensione dbml e verrà aperto Object Relational Designer (O/R Designer).
 
-8. Nella barra dei menu scegliere **visualizza** > **Esplora server**.
+8. Nella barra dei menu scegliere **Visualizza**  >  **Esplora server**.
 
 9. In **Esplora server**espandere il nodo che rappresenta il database di esempio AdventureWorks, quindi espandere il nodo **tabelle** .
 
@@ -112,21 +111,21 @@ Il progetto **modello di integrazione applicativa dei dati** aggiunge un'entità
 
 3. Nella finestra di progettazione aprire il menu di scelta rapida per **Entity1**, quindi scegliere **Elimina**.
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida per *Entity1. vb* (in Visual Basic) o *Entity1.cs* ( C#in), quindi scegliere **Elimina**.
+4. In **Esplora soluzioni**aprire il menu di scelta rapida per *Entity1. vb* (in Visual Basic) o *Entity1.cs* (in C#), quindi scegliere **Elimina**.
 
-5. Aprire il menu di scelta rapida per *Entity1Service. vb* (in Visual Basic ) o Entity1Service.cs C#(in), quindi scegliere **Elimina**.
+5. Aprire il menu di scelta rapida per *Entity1Service. vb* (in Visual Basic) o *Entity1Service.cs* (in C#), quindi scegliere **Elimina**.
 
 ## <a name="add-an-entity-to-the-model"></a>Aggiungere un'entità al modello
 
 Aggiungere un'entità al modello. È possibile aggiungere entità dalla **casella degli strumenti** di Visual Studio nella finestra di progettazione dell'integrazione applicativa dei dati.
 
-1. Scegliere **Visualizza** > **Casella degli strumenti** sulla barra dei menu.
+1. Sulla barra dei menu scegliere **Visualizza**  >  **casella degli strumenti**.
 
 2. Nella scheda **BusinessDataConnectivity** della **casella degli strumenti**aggiungere un' **entità** nella finestra di progettazione dell'integrazione applicativa dei dati.
 
      La nuova entità verrà visualizzata nella finestra di progettazione. Visual Studio aggiunge al progetto un file denominato *EntityService. vb* (in Visual Basic) o *EntityService.cs* (in C#).
 
-3. Nella barra dei menu scegliere **visualizza** > **Proprietà** > **finestra**.
+3. Nella barra dei menu scegliere **Visualizza**  >  **Properties**  >  **finestra**proprietà.
 
 4. Nella finestra **Proprietà** impostare il valore della proprietà **nome** su **Contact**.
 
@@ -146,7 +145,7 @@ Aggiungere un metodo di ricerca specifico all'entità Contact usando la finestra
 
 1. Nella finestra di progettazione dell'integrazione applicativa dei dati scegliere l'entità **Contact** .
 
-2. Sulla barra dei menu scegliere **visualizza** > **altre finestre** > **Dettagli metodo di integrazione applicativa dei dati**.
+2. Sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa dei dati**di Windows.
 
      Verrà visualizzata la finestra Dettagli metodo di integrazione applicativa dei dati.
 
@@ -182,12 +181,12 @@ Aggiungere un metodo di ricerca specifico all'entità Contact usando la finestra
 
 10. Ripetere il passaggio 6 per creare un descrittore di tipo per ognuno dei campi seguenti.
 
-    |Name|Nome tipo|
+    |Nome|Nome tipo|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |Phone|System.String|
-    |emailAddress|System.String|
+    |Telefono|System.String|
+    |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|
@@ -197,14 +196,14 @@ Aggiungere un metodo di ricerca specifico all'entità Contact usando la finestra
 
      Il file di codice del servizio di contatto verrà aperto nell'editor di codice.
 
-12. Nella classe `ContactService` sostituire il metodo `ReadItem` con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
+12. Nella `ContactService` classe sostituire il `ReadItem` metodo con il codice seguente. Il codice esegue queste operazioni:
 
     - Recupera un record dalla tabella Contact del database AdventureWorks.
 
     - Restituisce un'entità Contact per il servizio di integrazione applicativa dei dati.
 
     > [!NOTE]
-    > Sostituire il valore del campo `ServerName` con il nome del server.
+    > Sostituire il valore del `ServerName` campo con il nome del server.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
@@ -225,19 +224,19 @@ Per consentire al servizio BDC di visualizzare i contatti in un elenco, è neces
 
      Il file di codice per il servizio di Contact verrà aperto nell'editor di codice.
 
-5. Nella classe `ContactService` sostituire il metodo `ReadList` con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
+5. Nella `ContactService` classe sostituire il `ReadList` metodo con il codice seguente. Il codice esegue queste operazioni:
 
    - Recupera i dati dalla tabella Contacts del database AdventureWorks.
 
    - Restituisce un elenco di entità di contatto per il servizio di integrazione applicativa dei dati.
 
      > [!NOTE]
-     > Sostituire il valore del campo `ServerName` con il nome del server.
+     > Sostituire il valore del `ServerName` campo con il nome del server.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
-## <a name="test-the-project"></a>Testare il progetto
+## <a name="test-the-project"></a>Verificare il progetto
 
 Quando si esegue il progetto, viene aperto il sito di SharePoint e Visual Studio aggiunge il modello al servizio di integrazione applicativa dei dati. Creazione di un elenco esterno in SharePoint che fa riferimento all'entità Contact. I dati dei contatti nel database AdventureWorks vengono visualizzati nell'elenco.
 
@@ -276,7 +275,7 @@ Per ulteriori informazioni sulla progettazione di modelli per il servizio BDC in
 
 ## <a name="see-also"></a>Vedere anche
 
-[Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
-[creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md)
-[Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md)
-[integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Progettare un modello](../sharepoint/designing-a-business-data-connectivity-model.md) 
+ di integrazione applicativa dei dati [Creare un modello](../sharepoint/creating-a-business-data-connectivity-model.md) 
+ di integrazione applicativa dei dati Panoramica degli strumenti di [progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md) 
+ [Integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

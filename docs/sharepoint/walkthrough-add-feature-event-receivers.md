@@ -1,7 +1,7 @@
 ---
-title: 'Procedura dettagliata: Aggiungere ricevitori di eventi | Microsoft Docs'
+title: 'Procedura dettagliata: aggiungere ricevitori di eventi di funzionalità | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,108 +16,107 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008281"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015363"
 ---
-# <a name="walkthrough-add-feature-event-receivers"></a>Procedura dettagliata: Aggiungere ricevitori di eventi
-  Ricevitori di eventi sono metodi che vengono eseguite quando si verifica uno degli eventi correlati alle funzionalità seguenti in SharePoint:
+# <a name="walkthrough-add-feature-event-receivers"></a>Procedura dettagliata: aggiungere ricevitori di eventi di funzionalità
+  I ricevitori di eventi di funzionalità sono metodi che vengono eseguiti quando si verifica uno dei seguenti eventi correlati alle funzionalità in SharePoint:
 
-- Una funzionalità viene installata.
+- È installata una funzionalità di.
 
 - Una funzionalità viene attivata.
 
-- Una funzionalità viene disattivata.
+- Una funzionalità è disattivata.
 
-- Una funzionalità è stata rimossa.
+- Una funzionalità viene rimossa.
 
-  Questa procedura dettagliata illustra come aggiungere un ricevitore di eventi a una funzionalità in un progetto SharePoint. Vengono illustrate le attività seguenti:
+  In questa procedura dettagliata viene illustrato come aggiungere un ricevitore di eventi a una funzionalità in un progetto SharePoint. Vengono illustrate le attività seguenti:
 
-- Creazione di un progetto vuoto con un ricevitore di eventi.
+- Creazione di un progetto vuoto con un ricevitore di eventi di funzionalità.
 
-- La gestione di **FeatureDeactivating** (metodo).
+- Gestione del metodo **FeatureDeactivating** .
 
-- Utilizzo del modello oggetto di progetto SharePoint per aggiungere un annuncio all'elenco degli annunci.
+- Utilizzo del modello a oggetti del progetto SharePoint per aggiungere un annuncio all'elenco degli annunci.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di Microsoft Windows e SharePoint.
 
 - Visual Studio.
 
 ## <a name="create-a-feature-event-receiver-project"></a>Creare un progetto di ricevitore di eventi di funzionalità
- In primo luogo, creare un progetto per contenere il ricevitore di eventi.
+ Per prima cosa, creare un progetto che contenga il ricevitore di eventi di funzionalità.
 
-#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Per creare un progetto con un ricevitore di eventi
+#### <a name="to-create-a-project-with-a-feature-event-receiver"></a>Per creare un progetto con un ricevitore di eventi di funzionalità
 
-1. Nella barra dei menu, scegliere **File** > **New** > **progetto** per visualizzare il **nuovo progetto** nella finestra di dialogo.
+1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto** per visualizzare la finestra di dialogo **nuovo progetto** .
 
-2. Espandere la **SharePoint** nodo sotto **Visual c#** o **Visual Basic**, quindi scegliere il **2010** nodo.
+2. Espandere il nodo **SharePoint** sotto **Visual C#** o **Visual Basic**, quindi scegliere il nodo **2010** .
 
-3. Nel **modelli** riquadro, scegliere il **progetto SharePoint 2010** modello.
+3. Nel riquadro **modelli** scegliere il modello di **progetto SharePoint 2010** .
 
-     È consigliabile usare questo tipo di progetto per i ricevitori di eventi di funzionalità perché non presentano alcun modello di progetto.
+     Questo tipo di progetto viene usato per i ricevitori di eventi di funzionalità perché non hanno un modello di progetto.
 
-4. Nel **Name** immettere **FeatureEvtTest**e quindi scegliere il **OK** pulsante per visualizzare il **Personalizzazione guidata SharePoint**.
+4. Nella casella **nome** immettere **FeatureEvtTest**, quindi scegliere il pulsante **OK** per visualizzare la **procedura guidata di personalizzazione di SharePoint**.
 
-5. Nel **specificare il livello di sito e la sicurezza per il debug** pagina, immettere l'URL per il sito di SharePoint server in cui si desidera aggiungere il nuovo elemento campo personalizzato o usare il percorso predefinito (http://\<*sistema nome*> /).
+5. Nella pagina **specificare il sito e il livello di sicurezza per il debug** immettere l'URL per il sito del server SharePoint a cui si desidera aggiungere il nuovo elemento campo personalizzato oppure utilizzare il percorso predefinito (http:// \<*system name*> /).
 
-6. Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.
+6. Nella sezione **Qual è il livello di attendibilità per la soluzione SharePoint** scegliere il pulsante di opzione **Distribuisci come soluzione farm** .
 
-     Per altre informazioni sulle soluzioni create mediante sandbox e soluzioni farm, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
+     Per ulteriori informazioni sulle soluzioni create mediante sandbox e sulle soluzioni farm, vedere Considerazioni sulle soluzioni [create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Scegliere il **Finish** pulsante e quindi si noti che una funzionalità denominata Feature1 visualizzata sotto il **funzionalità** nodo.
+7. Scegliere il pulsante **fine** , quindi osservare che una funzionalità denominata Feature1 viene visualizzata nel nodo **funzionalità** .
 
-## <a name="add-an-event-receiver-to-the-feature"></a>Aggiungere un ricevitore di eventi per la funzionalità
- Successivamente, aggiungere un ricevitore di eventi per la funzionalità e aggiungere il codice che viene eseguito quando questa caratteristica è disattivata.
+## <a name="add-an-event-receiver-to-the-feature"></a>Aggiungere un ricevitore di eventi alla funzionalità
+ Successivamente, aggiungere un ricevitore di eventi alla funzionalità e aggiungere il codice che viene eseguito quando la funzionalità è disattivata.
 
-#### <a name="to-add-an-event-receiver-to-the-feature"></a>Per aggiungere un ricevitore di eventi per la funzionalità
+#### <a name="to-add-an-event-receiver-to-the-feature"></a>Per aggiungere un ricevitore di eventi alla funzionalità
 
-1. Aprire il menu di scelta rapida per il nodo di funzionalità e quindi scegliere **aggiungere funzionalità** per creare una funzionalità.
+1. Aprire il menu di scelta rapida per il nodo funzionalità, quindi scegliere **Aggiungi funzionalità** per creare una funzionalità.
 
-2. Sotto il **funzionalità** nodo, aprire il menu di scelta rapida **Feature1**e quindi scegliere **Aggiungi ricevitore di eventi** per aggiungere un ricevitore di eventi per la funzionalità.
+2. Nel nodo **funzionalità** aprire il menu di scelta rapida per **Feature1**, quindi scegliere **Aggiungi ricevitore di eventi** per aggiungere un ricevitore di eventi alla funzionalità.
 
-     Verrà aggiunto un file di codice in Feature1. In questo caso, il file è denominato uno *Feature1.EventReceiver.cs* oppure *Feature1.EventReceiver.vb*, a seconda del linguaggio di sviluppo del progetto.
+     Viene aggiunto un file di codice in Feature1. In questo caso, il nome è *Feature1.EventReceiver.cs* o *Feature1. EventReceiver. vb*, a seconda del linguaggio di sviluppo del progetto.
 
-3. Se il progetto è scritto in [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)], aggiungere il codice seguente nella parte superiore del ricevitore di eventi, se non è già presente:
+3. Se il progetto è scritto in [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] , aggiungere il codice seguente all'inizio del ricevitore di eventi, se non è già presente:
 
      [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
 
-4. Classe del ricevitore di eventi contiene diversi metodi di commento che fungono da eventi. Sostituire il **FeatureDeactivating** metodo con il codice seguente:
+4. La classe Receiver dell'evento contiene diversi metodi impostati come commento che fungono da eventi. Sostituire il metodo **FeatureDeactivating** con il codice seguente:
 
      [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
      [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
 
-## <a name="test-the-feature-event-receiver"></a>Il ricevitore di eventi di funzionalità di test
- Successivamente, disattivare la funzionalità per testare se le **FeatureDeactivating** metodo restituisce un annuncio all'elenco di annunci di SharePoint.
+## <a name="test-the-feature-event-receiver"></a>Testare il ricevitore di eventi di funzionalità
+ Disattivare quindi la funzionalità per verificare se il metodo **FeatureDeactivating** restituisce un annuncio all'elenco degli annunci di SharePoint.
 
-#### <a name="to-test-the-feature-event-receiver"></a>Per testare il ricevitore di eventi
+#### <a name="to-test-the-feature-event-receiver"></a>Per testare il ricevitore di eventi di funzionalità
 
-1. Impostare il valore del progetto **configurazione distribuzione attiva** proprietà **Nessuna attivazione**.
+1. Impostare il valore della proprietà di **configurazione della distribuzione attiva** del progetto su **No Activation**.
 
-     Impostazione di questa proprietà impedisce la funzionalità di attivazione in SharePoint e consente di eseguire il debug di ricevitori di eventi. Per altre informazioni, vedere [soluzioni SharePoint Debug](../sharepoint/debugging-sharepoint-solutions.md).
+     L'impostazione di questa proprietà impedisce l'attivazione della funzionalità in SharePoint e consente di eseguire il debug dei ricevitori di eventi di funzionalità. Per ulteriori informazioni, vedere [debug di soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
-2. Scegliere il **F5** tasto per eseguire il progetto e distribuirlo in SharePoint.
+2. Premere il tasto **F5** per eseguire il progetto e distribuirlo in SharePoint.
 
-3. Nella parte superiore della pagina Web di SharePoint, aprire il **Azioni sito** menu, quindi scegliere **Impostazioni sito**.
+3. Nella parte superiore della pagina Web di SharePoint aprire il menu **Azioni sito** , quindi scegliere **Impostazioni sito**.
 
-4. Sotto il **Azioni sito** sezione del **le impostazioni del sito** pagina, scegliere il **Gestisci caratteristiche sito** collegamento.
+4. Nella sezione **Azioni sito** della pagina **Impostazioni sito** scegliere il collegamento **Gestisci caratteristiche sito** .
 
-5. Nel **funzionalità** pagina, scegliere il **Activate** accanto al **FeatureEvtTest Feature1** funzionalità.
+5. Nella pagina **funzionalità** fare clic sul pulsante **attiva** accanto alla funzionalità **FeatureEvtTest Feature1** .
 
-6. Nel **funzionalità** pagina, scegliere il **disattiva** accanto al **FeatureEvtTest Feature1** funzionalità e quindi scegliere il **disattivare questa funzionalità**  collegamento di conferma per disattivare la funzionalità.
+6. Nella pagina **funzionalità** , scegliere il pulsante **Disattiva** accanto alla funzionalità **FeatureEvtTest Feature1** , quindi scegliere il collegamento Disattiva la conferma della **funzionalità** per disattivare la funzionalità.
 
-7. Scegliere il **Home** pulsante.
+7. Scegliere il pulsante **Home** .
 
-     Si noti che viene visualizzato un annuncio nel **annunci** Elenca dopo la disattivazione della funzionalità.
+     Si noti che un annuncio viene visualizzato nell'elenco **annunci** dopo che la funzionalità è stata disattivata.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
+- [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

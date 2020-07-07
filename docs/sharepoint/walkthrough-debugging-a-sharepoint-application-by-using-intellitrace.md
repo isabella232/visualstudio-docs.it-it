@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di un'applicazione SharePoint con IntelliTrace
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -16,12 +16,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe1130880db42e920e656d5efef1ea6a5af4d2d0
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984147"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015751"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace
 
@@ -31,9 +30,9 @@ Con IntelliTrace è possibile eseguire più facilmente il debug delle soluzioni 
 
  **Si applica a:** Le informazioni contenute in questo argomento sono valide per le soluzioni SharePoint 2010 e SharePoint 2013 create in Visual Studio.
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
-- [Creazione di un ricevitore di funzionalità](#create-a-feature-receiver)
+- [Creare un ricevitore di funzionalità](#create-a-feature-receiver)
 
 - [Aggiungere codice al ricevitore di funzionalità](#add-code-to-the-feature-receiver)
 
@@ -45,9 +44,9 @@ Con IntelliTrace è possibile eseguire più facilmente il debug delle soluzioni 
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
-Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di Windows e SharePoint.
 
@@ -73,9 +72,9 @@ Si crea innanzitutto un progetto SharePoint vuoto con un ricevitore di funzional
 
 ## <a name="add-code-to-the-feature-receiver"></a>Aggiungere codice al ricevitore di funzionalità
 
-Aggiungere quindi il codice a due metodi nel ricevitore della funzionalità: `FeatureActivated` e `FeatureDeactivating`. Questi metodi vengono attivati ogni volta che una funzionalità viene attivata o disattivata rispettivamente in SharePoint.
+Aggiungere quindi il codice a due metodi nel ricevitore della funzionalità: `FeatureActivated` e `FeatureDeactivating` . Questi metodi vengono attivati ogni volta che una funzionalità viene attivata o disattivata rispettivamente in SharePoint.
 
-1. Nella parte superiore della classe `Feature1EventReceiver` aggiungere il codice seguente, che dichiara le variabili che specificano il sito di SharePoint e il sito secondario:
+1. Nella parte superiore della `Feature1EventReceiver` classe aggiungere il codice seguente, che dichiara le variabili che specificano il sito di SharePoint e il sito secondario:
 
     ```vb
     ' SharePoint site and subsite.
@@ -245,7 +244,7 @@ Aggiungere quindi il codice a due metodi nel ricevitore della funzionalità: `Fe
     }
     ```
 
-## <a name="test-the-project"></a>Testare il progetto
+## <a name="test-the-project"></a>Verificare il progetto
 
 Ora che il codice è stato aggiunto al ricevitore della funzionalità e l'agente di raccolta dati è in esecuzione, distribuire ed eseguire la soluzione SharePoint per verificare se funziona correttamente.
 
@@ -258,7 +257,7 @@ Ora che il codice è stato aggiunto al ricevitore della funzionalità e l'agente
 
 2. Visualizzare il contenuto degli elenchi Annunci e attività.
 
-     L'elenco degli annunci dovrebbe avere un nuovo annuncio denominato **funzionalità attivata: IntelliTraceTest_Feature1**e l'elenco attività deve avere una nuova attività denominata **Disattiva funzionalità: IntelliTraceTest_Feature1**. Se uno di questi elementi è mancante, verificare se la funzionalità è attivata. Se non è attivato, attivarlo.
+     L'elenco degli annunci dovrebbe avere un nuovo annuncio denominato **funzionalità attivata: IntelliTraceTest_Feature1**e l'elenco attività deve avere una nuova attività denominata **disattiva funzionalità: IntelliTraceTest_Feature1**. Se uno di questi elementi è mancante, verificare se la funzionalità è attivata. Se non è attivato, attivarlo.
 
 3. Disattivare la funzionalità eseguendo i passaggi seguenti:
 
@@ -295,7 +294,7 @@ Se si installa Microsoft Monitoring Agent nel sistema in cui è in esecuzione Sh
 
 3. Nella finestra di PowerShell eseguire il comando [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) per creare il file con estensione iTrace, arrestare il monitoraggio e riavviare la soluzione SharePoint.
 
-     **Stop-WebApplicationMonitoring**  *"\<sitosharepoint >\\< SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring***" \<SharePointSite> \\<SharePointAppName \> "*  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Eseguire il debug e correggere la soluzione SharePoint
 

@@ -1,7 +1,7 @@
 ---
-title: 'Procedura: Aggiungere elementi a un progetto SharePoint | Microsoft Docs'
+title: 'Procedura: aggiungere elementi a un progetto SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,40 +12,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 572b466907fdbe43c5b9f094b74837ca05d1b212
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: 1f7a36591d94e846a0024bce8c5d0b618479e647
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966952"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014694"
 ---
-# <a name="how-to-add-items-to-a-sharepoint-project"></a>Procedura: Aggiungere elementi a un progetto SharePoint
-  Soluzioni di SharePoint contengono uno o più progetti, ognuno dei quali contiene più elementi di progetto SharePoint. Dopo avere aperto o creare una soluzione di SharePoint, è possibile aggiungere elementi nuovi o esistenti a questi progetti. Ad esempio, i nuovi progetti di flusso di lavoro sono dotate di un modulo predefinito denominato default. aspx, ma è possibile sostituire tale form con una maschera nuova o diversa o aggiungere un altro form ASPX.
+# <a name="how-to-add-items-to-a-sharepoint-project"></a>Procedura: aggiungere elementi a un progetto SharePoint
+  Le soluzioni SharePoint contengono uno o più progetti, ognuno dei quali contiene più elementi di progetto SharePoint. Dopo aver aperto o creato una soluzione SharePoint, è possibile aggiungere elementi nuovi o esistenti a questi progetti. I nuovi progetti di flusso di lavoro, ad esempio, dispongono di un modulo predefinito denominato default. aspx, ma è possibile sostituire tale modulo con un formato nuovo o diverso oppure aggiungere un altro modulo ASPX.
 
-### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>Per aggiungere un nuovo elemento di progetto a una soluzione di SharePoint
+### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>Per aggiungere un nuovo elemento di progetto a una soluzione SharePoint
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]aprire o creare una soluzione di SharePoint.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire o creare una soluzione SharePoint.
 
-2. Nelle **Esplora soluzioni**, scegliere il nodo del progetto.
+2. In **Esplora soluzioni**scegliere il nodo del progetto.
 
-3. Nella barra dei menu, scegliere **Project** > **Aggiungi nuovo elemento** per visualizzare la **Aggiungi nuovo elemento** nella finestra di dialogo.
+3. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento** per visualizzare la finestra di dialogo **Aggiungi nuovo elemento** .
 
-4. Nel **modelli installati** elenco, quindi espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.
+4. Nell'elenco **modelli installati** espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
-5. Nell'elenco dei modelli di elemento di progetto, scegliere un modello.
+5. Nell'elenco dei modelli di elemento di progetto scegliere un modello.
 
-6. Nel **Name** casella di testo, immettere un nome e quindi scegliere il **OK** pulsante.
+6. Nella casella di testo **nome** immettere un nome, quindi scegliere il pulsante **OK** .
 
-### <a name="to-add-an-existing-project-item-to-a-sharepoint-solution"></a>Per aggiungere un elemento di progetto esistente a una soluzione di SharePoint
+### <a name="to-add-an-existing-project-item-to-a-sharepoint-solution"></a>Per aggiungere un elemento di progetto esistente a una soluzione SharePoint
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]aprire o creare una soluzione di SharePoint.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire o creare una soluzione SharePoint.
 
-2. Nelle **Esplora soluzioni**, scegliere il nodo del progetto.
+2. In **Esplora soluzioni**scegliere il nodo del progetto.
 
-3. Nella barra dei menu, scegliere **Project** > **Aggiungi elemento esistente** per visualizzare la **Aggiungi elemento esistente** nella finestra di dialogo.
+3. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi elemento esistente** per visualizzare la finestra di dialogo **Aggiungi elemento esistente** .
 
-4. Passare alla cartella che contiene l'elemento che si desidera aggiungere, selezionarla e quindi scegliere il **Add** pulsante.
+4. Passare alla cartella che contiene l'elemento che si desidera aggiungere, selezionarlo, quindi scegliere il pulsante **Aggiungi** .
 
 ## <a name="see-also"></a>Vedere anche
-- [Progetto SharePoint e i modelli di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md)
+- [Modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

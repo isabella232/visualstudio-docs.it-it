@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: creare un comando di SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c07d541dc4f68f33d48e7cb41b6bc3923b2ea52
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189236"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016223"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Procedura: creare un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti del server in un'estensione degli strumenti di SharePoint, è necessario creare un *comando di SharePoint* personalizzato per chiamare l'API. Il comando di SharePoint viene definito in un assembly che può chiamare direttamente nel modello a oggetti del server.
@@ -33,7 +32,7 @@ ms.locfileid: "73189236"
     - Ha come destinazione la piattaforma AnyCPU o x64. Per impostazione predefinita, la piattaforma di destinazione per i progetti di libreria di classi è AnyCPU. Per altre informazioni sulla selezione della piattaforma di destinazione, vedere [procedura: configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    > Non è possibile implementare un comando di SharePoint nello stesso progetto che definisce un'estensione degli strumenti di SharePoint, perché i comandi di SharePoint hanno come destinazione le estensioni .NET Framework 3,5 e gli strumenti di SharePoint destinate al [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. È necessario definire tutti i comandi di SharePoint utilizzati dall'estensione in un progetto distinto. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Non è possibile implementare un comando di SharePoint nello stesso progetto che definisce un'estensione degli strumenti di SharePoint, perché i comandi di SharePoint hanno come destinazione le estensioni .NET Framework 3,5 e gli strumenti di SharePoint destinate a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . È necessario definire tutti i comandi di SharePoint utilizzati dall'estensione in un progetto distinto. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Aggiungere riferimenti agli assembly riportati di seguito:
 
@@ -45,7 +44,7 @@ ms.locfileid: "73189236"
 
     - Può avere uno o due parametri.
 
-         Il primo parametro deve essere un oggetto <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext>. Questo oggetto fornisce Microsoft. SharePoint. SPSite o Microsoft. SharePoint. SPWeb in cui viene eseguito il comando. Fornisce anche un <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> oggetto che può essere usato per scrivere messaggi nella finestra di **output** o **Elenco errori** finestra in Visual Studio.
+         Il primo parametro deve essere un <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> oggetto. Questo oggetto fornisce Microsoft. SharePoint. SPSite o Microsoft. SharePoint. SPWeb in cui viene eseguito il comando. Fornisce inoltre un <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> oggetto che può essere usato per scrivere messaggi nella finestra di **Output** o **Elenco errori** finestra in Visual Studio.
 
          Il secondo parametro può essere un tipo di propria scelta, ma questo parametro è facoltativo. È possibile aggiungere questo parametro al comando di SharePoint se è necessario passare i dati dall'estensione degli strumenti di SharePoint al comando.
 
@@ -55,17 +54,17 @@ ms.locfileid: "73189236"
 
     - Il metodo può avere qualsiasi visibilità (**public**, **Internal**o **private**) e può essere static o non static.
 
-4. Applicare il <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> al metodo. Questo attributo specifica un identificatore univoco per il comando. Questo identificatore non deve corrispondere al nome del metodo.
+4. Applicare al <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> metodo. Questo attributo specifica un identificatore univoco per il comando. Questo identificatore non deve corrispondere al nome del metodo.
 
      Quando si chiama il comando dall'estensione degli strumenti di SharePoint, è necessario specificare lo stesso identificatore univoco. Per altre informazioni, vedere [procedura: eseguire un comando di SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice riportato di seguito viene illustrato un comando di SharePoint con l'identificatore `Contoso.Commands.UpgradeSolution`. Questo comando usa le API nel modello a oggetti del server per eseguire l'aggiornamento a una soluzione distribuita.
+ Nell'esempio di codice riportato di seguito viene illustrato un comando di SharePoint con l'identificatore `Contoso.Commands.UpgradeSolution` . Questo comando usa le API nel modello a oggetti del server per eseguire l'aggiornamento a una soluzione distribuita.
 
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
 
- Oltre al primo parametro implicito <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext>, questo comando include anche un parametro di stringa personalizzato che contiene il percorso completo del file con estensione wsp aggiornato al sito di SharePoint. Per visualizzare questo codice nel contesto di un esempio più ampio, vedere [procedura dettagliata: creare un passaggio di distribuzione personalizzato per i progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+ Oltre al primo parametro implicito <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> , questo comando dispone anche di un parametro di stringa personalizzato che contiene il percorso completo del file con estensione wsp aggiornato al sito di SharePoint. Per visualizzare questo codice nel contesto di un esempio più ampio, vedere [procedura dettagliata: creare un passaggio di distribuzione personalizzato per i progetti SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="compiling-the-code"></a>Compilazione del codice
  Questo esempio richiede riferimenti agli assembly seguenti:
@@ -75,7 +74,7 @@ ms.locfileid: "73189236"
 - Microsoft. SharePoint
 
 ## <a name="deploying-the-command"></a>Distribuzione del comando
- Per distribuire il comando, includere l'assembly del comando nello stesso pacchetto di estensione [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] (*VSIX*) con l'assembly dell'estensione che usa il comando. È inoltre necessario aggiungere una voce per l'assembly dei comandi nel file Extension. vsixmanifest. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Per distribuire il comando, includere l'assembly del comando nello stesso [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto di estensione (*VSIX*) con l'assembly di estensione che usa il comando. È inoltre necessario aggiungere una voce per l'assembly dei comandi nel file Extension. vsixmanifest. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Chiamare nei modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)

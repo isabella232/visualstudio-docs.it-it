@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: contrassegnare i controlli come controlli sicuri | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982721"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016263"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: contrassegnare i controlli come controlli sicuri
-  Per la sicurezza, SharePoint distingue tra i controlli Web protetti da attacchi di script injection e Web che non lo sono. È possibile accedere ai controlli protetti o ai *controlli sicuri*da parte di utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà voci di controllo sicure di un elemento del progetto SharePoint o in **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per altre informazioni, vedere
+  Per la sicurezza, SharePoint distingue tra i controlli Web protetti da attacchi di script injection e Web che non lo sono. È possibile accedere ai controlli protetti o ai *controlli sicuri*da parte di utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà voci di controllo sicure di un elemento del progetto SharePoint o in **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per ulteriori informazioni, vedere
 
-- [le impostazioni del file Web. config cambiano](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) e [registrano un assembly Web part come controllo sicuro](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
+- [web.config le impostazioni del file cambiano](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) e [la registrazione di un assembly Web part come controllo sicuro](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
 > [!IMPORTANT]
 > Queste procedure sono a scopo illustrativo. Contrassegnare i controlli in modo sicuro solo se si è certi che siano protetti.
@@ -63,7 +62,7 @@ ms.locfileid: "72982721"
 
      Prendere nota dello spazio dei nomi del controllo perché verrà usato in un secondo momento.
 
-3. Nella barra dei menu scegliere **compila** > **Compila soluzione** per compilare il progetto.
+3. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione** per compilare il progetto.
 
 4. Creare un'altra soluzione SharePoint.
 
@@ -85,7 +84,7 @@ ms.locfileid: "72982721"
 
 12. Immettere i valori per le proprietà della tabella seguente.
 
-    |Nome proprietà|Value|
+    |Nome proprietà|valore|
     |-------------------|-----------|
     |Spazio dei nomi|Spazio dei nomi completo per il controllo, ad esempio **BdcModelProject1. VisualWebPart1**.|
     |Nome tipo|Button1|
@@ -102,7 +101,7 @@ ms.locfileid: "72982721"
 
 15. Immettere i valori per le proprietà della tabella seguente.
 
-    |Nome proprietà|Value|
+    |Nome proprietà|valore|
     |-------------------|-----------|
     |Spazio dei nomi|Spazio dei nomi completo per il controllo, ad esempio **BdcModelProject1. VisualWebPart1**.|
     |Nome tipo|TextBox1|

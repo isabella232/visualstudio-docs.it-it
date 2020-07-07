@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: aggiungere un metodo Finder specifico | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985255"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014817"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Procedura: aggiungere un metodo Finder specifico
   Per restituire una singola istanza di entità, è possibile creare un metodo di *ricerca specifico* . Il servizio di integrazione applicativa dei dati esegue il metodo di ricerca specifico quando un utente sceglie un'entità in una Web part dati business o in un elenco esterno. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +32,7 @@ ms.locfileid: "72985255"
 
     Per informazioni su come aggiungere un'entità alla finestra di **progettazione dell'integrazione applicativa** dei dati in Visual Studio, vedere [procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Sulla barra dei menu scegliere **visualizza** > **altre finestre**, **Dettagli metodo di integrazione applicativa dei dati**.
+2. Sulla barra dei menu scegliere **Visualizza**  >  **altre finestre**, **Dettagli metodo di integrazione applicativa dei dati**.
 
     Verrà visualizzata la finestra **Dettagli metodo BDC** . Per ulteriori informazioni su tale finestra, vedere [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -71,7 +70,7 @@ ms.locfileid: "72985255"
 
     Il file di codice di Entity Service verrà aperto nell'editor di codice. Per altre informazioni sul file di codice di Entity Service, vedere [creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-9. Aggiungere codice al metodo Finder specifico. Mediante il codice vengono effettuate le seguenti attività:
+9. Aggiungere codice al metodo Finder specifico. Il codice esegue queste operazioni:
 
    - Recupera un record da un'origine dati.
 
@@ -80,7 +79,7 @@ ms.locfileid: "72985255"
      Nell'esempio seguente viene restituito un contatto dal database di esempio AdventureWorks per SQL Server.
 
      > [!NOTE]
-     > Sostituire il valore del campo `ServerName` con il nome del server.
+     > Sostituire il valore del `ServerName` campo con il nome del server.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

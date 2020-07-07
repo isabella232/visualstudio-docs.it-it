@@ -1,7 +1,7 @@
 ---
 title: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 2
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
@@ -11,17 +11,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
-ms.translationtype: MT
+ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189148"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86016098"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo personalizzato di elemento di progetto SharePoint e averlo associato a un modello di elemento in Visual Studio, potrebbe essere necessario fornire anche una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando utilizzano il modello per aggiungere una nuova istanza dell'elemento del progetto a un progetto. Le informazioni raccolte possono essere utilizzate per inizializzare l'elemento del progetto.
 
- In questa procedura dettagliata verrà aggiunta una procedura guidata all'elemento del progetto di azione personalizzata illustrato in [procedura dettagliata: creare un elemento del progetto di azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Quando un utente aggiunge un elemento del progetto di azione personalizzata a un progetto SharePoint, la procedura guidata raccoglie informazioni sull'azione personalizzata, ad esempio il percorso e l'URL a cui passare quando viene scelto da un utente finale, e aggiunge queste informazioni al file *Elements. XML* nel nuovo elemento del progetto.
+ In questa procedura dettagliata verrà aggiunta una procedura guidata all'elemento del progetto di azione personalizzata illustrato in [procedura dettagliata: creare un elemento del progetto di azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Quando un utente aggiunge un elemento del progetto di azione personalizzata a un progetto SharePoint, la procedura guidata raccoglie informazioni sull'azione personalizzata, ad esempio il percorso e l'URL a cui passare quando viene scelto da un utente finale, e aggiunge tali informazioni al file *Elements.xml* nel nuovo elemento del progetto.
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
@@ -36,7 +35,7 @@ ms.locfileid: "73189148"
 > [!NOTE]
 > È possibile scaricare un esempio da [GitHub](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) che Mostra come creare attività personalizzate per un flusso di lavoro.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per eseguire questa procedura dettagliata, è necessario innanzitutto creare la soluzione CustomActionProjectItem completando [procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
  Per completare questa procedura dettagliata, è inoltre necessario che nel computer di sviluppo siano presenti i componenti seguenti:
@@ -47,12 +46,12 @@ ms.locfileid: "73189148"
 
   Per completare la procedura dettagliata, è necessario conoscere i concetti seguenti:
 
-- Procedure guidate per i modelli di progetto e di elemento in Visual Studio. Per altre informazioni, vedere [procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md) e l'interfaccia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.
+- Procedure guidate per i modelli di progetto e di elemento in Visual Studio. Per altre informazioni, vedere [procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md) e l' <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia.
 
 - Azioni personalizzate in SharePoint. Per altre informazioni, vedere [azione personalizzata](/previous-versions/office/developer/sharepoint-2010/ms458635(v=office.14)).
 
 ## <a name="create-the-wizard-project"></a>Creare il progetto della procedura guidata
- Per completare questa procedura dettagliata, è necessario aggiungere un progetto alla soluzione CustomActionProjectItem creata in [procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Verrà implementata l'interfaccia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> e verrà definita l'interfaccia utente della procedura guidata in questo progetto.
+ Per completare questa procedura dettagliata, è necessario aggiungere un progetto alla soluzione CustomActionProjectItem creata in [procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). L'interfaccia verrà implementata <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> e verrà definita l'interfaccia utente della procedura guidata in questo progetto.
 
 #### <a name="to-create-the-wizard-project"></a>Per creare il progetto della procedura guidata
 
@@ -60,13 +59,13 @@ ms.locfileid: "73189148"
 
 2. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
-3. Nella finestra di dialogo **nuovo progetto** espandere i nodi **Visual C#**  o **Visual Basic** , quindi scegliere il nodo **Windows** .
+3. Nella finestra di dialogo **nuovo progetto** espandere i nodi **Visual C#** o **Visual Basic** , quindi scegliere il nodo **Windows** .
 
 4. Nella parte superiore della finestra di dialogo **nuovo progetto** assicurarsi che **.NET Framework 4,5** sia selezionato nell'elenco delle versioni del .NET Framework.
 
 5. Scegliere il modello di progetto **libreria di controlli utente WPF** , denominare il progetto **ItemTemplateWizard**, quindi scegliere il pulsante **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aggiunge il progetto **ItemTemplateWizard** alla soluzione.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]aggiunge il progetto **ItemTemplateWizard** alla soluzione.
 
 6. Eliminare l'elemento UserControl1 dal progetto.
 
@@ -79,7 +78,7 @@ ms.locfileid: "73189148"
 
 2. In **Progettazione progetti**verificare che il Framework di destinazione sia impostato su .NET Framework 4,5.
 
-     Per i C# progetti visivi, è possibile impostare questo valore nella scheda **applicazione** . Per Visual Basic progetti, è possibile impostare questo valore nella scheda **Compila** . Per altre informazioni, vedere [How to: target a version of the .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+     Per i progetti Visual C#, è possibile impostare questo valore nella scheda **applicazione** . Per Visual Basic progetti, è possibile impostare questo valore nella scheda **Compila** . Per altre informazioni, vedere [How to: target a version of the .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 3. Nel progetto **ItemTemplateWizard** aggiungere un elemento **Window (WPF)** al progetto e quindi denominare l'elemento **WizardWindow**.
 
@@ -102,7 +101,7 @@ ms.locfileid: "73189148"
 9. Nella finestra **Proprietà** modificare il valore della proprietà **Incorpora tipi di interoperabilità** su **false**.
 
 ## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>Definire il percorso e le stringhe di ID predefiniti per le azioni personalizzate
- Ogni azione personalizzata ha un percorso e un ID specificati nel `GroupID` e `Location` attributi dell'elemento `CustomAction` nel file *Elements. XML* . In questo passaggio si definiscono alcune delle stringhe valide per questi attributi nel progetto ItemTemplateWizard. Al termine di questa procedura dettagliata, queste stringhe vengono scritte nel file *Elements. XML* nell'elemento del progetto di azione personalizzata quando gli utenti specificano un percorso e un ID nella procedura guidata.
+ Ogni azione personalizzata ha un percorso e un ID specificati negli `GroupID` `Location` attributi e dell' `CustomAction` elemento nel file di *Elements.xml* . In questo passaggio si definiscono alcune delle stringhe valide per questi attributi nel progetto ItemTemplateWizard. Al termine di questa procedura dettagliata, queste stringhe vengono scritte nel file di *Elements.xml* nell'elemento del progetto di azione personalizzata quando gli utenti specificano un percorso e un ID nella procedura guidata.
 
  Per semplicità, questo esempio supporta solo un subset dei percorsi e degli ID predefiniti disponibili. Per un elenco completo, vedere [percorsi e ID predefiniti per le azioni personalizzate](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14)).
 
@@ -130,9 +129,9 @@ ms.locfileid: "73189148"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > La finestra creata in questo XAML deriva dalla classe di base <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Quando si aggiunge una finestra di dialogo WPF personalizzata a Visual Studio, è consigliabile derivare la finestra di dialogo da questa classe per ottenere uno stile coerente con altre finestre di dialogo in Visual Studio ed evitare problemi che altrimenti potrebbero verificarsi con le finestre di dialogo modali. Per ulteriori informazioni, vedere [creazione e gestione di finestre di dialogo modali](../extensibility/creating-and-managing-modal-dialog-boxes.md).
+    > La finestra creata in questo codice XAML è derivata dalla <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe base. Quando si aggiunge una finestra di dialogo WPF personalizzata a Visual Studio, è consigliabile derivare la finestra di dialogo da questa classe per ottenere uno stile coerente con altre finestre di dialogo in Visual Studio ed evitare problemi che altrimenti potrebbero verificarsi con le finestre di dialogo modali. Per ulteriori informazioni, vedere [creazione e gestione di finestre di dialogo modali](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
-3. Se si sta sviluppando un progetto di Visual Basic, rimuovere lo spazio dei nomi `ItemTemplateWizard` dal nome della classe `WizardWindow` nell'attributo `x:Class` dell'elemento `Window`. Questo elemento si trova nella prima riga del codice XAML. Al termine, la prima riga dovrebbe essere simile al codice seguente:
+3. Se si sta sviluppando un progetto di Visual Basic, rimuovere lo `ItemTemplateWizard` spazio dei nomi dal `WizardWindow` nome della classe nell' `x:Class` attributo dell' `Window` elemento. Questo elemento si trova nella prima riga del codice XAML. Al termine, la prima riga dovrebbe essere simile al codice seguente:
 
     ```xml
     <Window x:Class="WizardWindow"
@@ -144,7 +143,7 @@ ms.locfileid: "73189148"
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
 
 ## <a name="implement-the-wizard"></a>Implementare la procedura guidata
- Definire la funzionalità della procedura guidata implementando l'interfaccia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.
+ Definire la funzionalità della procedura guidata implementando l' <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfaccia.
 
 #### <a name="to-implement-the-wizard"></a>Per implementare la procedura guidata
 
@@ -158,7 +157,7 @@ ms.locfileid: "73189148"
 
 #### <a name="to-build-your-project"></a>Per compilare il progetto
 
-1. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+1. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
 
 ## <a name="associate-the-wizard-with-the-item-template"></a>Associare la procedura guidata al modello di elemento
  Ora che è stata implementata la procedura guidata, è necessario associarla al modello di elemento dell' **azione personalizzata** completando tre passaggi principali:
@@ -173,23 +172,23 @@ ms.locfileid: "73189148"
 
 1. In **Esplora soluzioni**aprire il menu di scelta rapida dal nodo del progetto **ItemTemplateWizard** , quindi scegliere **proprietà**.
 
-2. Nella scheda **firma** selezionare la casella di controllo **Firma assembly** .
+2. Nella scheda **Firma** selezionare la casella di controllo **Firma assembly**.
 
-3. Nell'elenco **Scegli un file chiave con nome sicuro** scegliere **\<nuovo... >** .
+3. Nell'elenco **Scegli un file chiave con nome sicuro** scegliere **\<New...>** .
 
 4. Nella finestra di dialogo **Crea chiave con nome sicuro** immettere un nome, deselezionare la casella di controllo **Proteggi file di chiave con una password** , quindi scegliere il pulsante **OK** .
 
-5. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+5. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Per ottenere il token di chiave pubblica per l'assembly della procedura guidata
 
-1. In una finestra del prompt dei comandi di Visual Studio, eseguire il comando seguente, sostituendo *PathToWizardAssembly* con il percorso completo dell'assembly ItemTemplateWizard. dll compilato per il progetto ItemTemplateWizard nel computer di sviluppo.
+1. In una finestra del prompt dei comandi di Visual Studio, eseguire il comando seguente, sostituendo *PathToWizardAssembly* con il percorso completo dell'assembly ItemTemplateWizard.dll compilato per il progetto ItemTemplateWizard nel computer di sviluppo.
 
     ```xml
     sn.exe -T PathToWizardAssembly
     ```
 
-     Il token di chiave pubblica per l'assembly *ItemTemplateWizard. dll* viene scritto nella finestra del prompt dei comandi di Visual Studio.
+     Il token di chiave pubblica per l'assembly *ItemTemplateWizard.dll* viene scritto nella finestra del prompt dei comandi di Visual Studio.
 
 2. Lasciare aperta la finestra del prompt dei comandi di Visual Studio. Per completare la procedura successiva, è necessario il token di chiave pubblica.
 
@@ -197,7 +196,7 @@ ms.locfileid: "73189148"
 
 1. In **Esplora soluzioni**espandere il nodo del progetto **ItemTemplate** , quindi aprire il file *ItemTemplate. vstemplate* .
 
-2. In prossimità della fine del file aggiungere il `WizardExtension` elemento seguente tra i tag `</TemplateContent>` e `</VSTemplate>`. Sostituire il valore *yourtoken* dell'attributo `PublicKeyToken` con il token di chiave pubblica ottenuto nella procedura precedente.
+2. In prossimità della fine del file, aggiungere l' `WizardExtension` elemento seguente tra i `</TemplateContent>` `</VSTemplate>` tag e. Sostituire il valore *yourtoken* dell' `PublicKeyToken` attributo con il token di chiave pubblica ottenuto nella procedura precedente.
 
     ```xml
     <WizardExtension>
@@ -206,18 +205,18 @@ ms.locfileid: "73189148"
     </WizardExtension>
     ```
 
-     Per ulteriori informazioni sull'elemento `WizardExtension`, vedere l' [elemento &#40;WizardExtension modelli&#41;di Visual Studio](../extensibility/wizardextension-element-visual-studio-templates.md).
+     Per altre informazioni sull' `WizardExtension` elemento, vedere [elemento WizardExtension &#40;modelli di Visual Studio&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Salvare e chiudere il file.
 
-## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Aggiungere parametri sostituibili al file *Elements. XML* nel modello di elemento
- Aggiungere diversi parametri sostituibili al file *Elements. XML* nel progetto ItemTemplate. Questi parametri vengono inizializzati nel metodo `PopulateReplacementDictionary` nella classe `CustomActionWizard` definita in precedenza. Quando un utente aggiunge un elemento del progetto di azione personalizzata a un progetto, Visual Studio sostituisce automaticamente questi parametri nel file *Elements. XML* del nuovo elemento del progetto con i valori specificati nella procedura guidata.
+## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Aggiungere parametri sostituibili al file *Elements.xml* nel modello di elemento
+ Aggiungere diversi parametri sostituibili al file *Elements.xml* nel progetto ItemTemplate. Questi parametri vengono inizializzati nel `PopulateReplacementDictionary` metodo nella `CustomActionWizard` classe definita in precedenza. Quando un utente aggiunge un elemento del progetto di azione personalizzata a un progetto, Visual Studio sostituisce automaticamente questi parametri nel file di *Elements.xml* nel nuovo elemento del progetto con i valori specificati nella procedura guidata.
 
  Un parametro sostituibile è un token che inizia e termina con il segno di dollaro ($). Oltre a definire i propri parametri sostituibili, è possibile utilizzare parametri predefiniti che vengono definiti e inizializzati dal sistema del progetto SharePoint. Per ulteriori informazioni, vedere [parametri sostituibili](../sharepoint/replaceable-parameters.md).
 
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Per aggiungere parametri sostituibili al file *Elements. XML*
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Per aggiungere parametri sostituibili al file di *Elements.xml*
 
-1. Nel progetto ItemTemplate sostituire il contenuto del file *Elements. XML* con il codice XML seguente.
+1. Nel progetto ItemTemplate sostituire il contenuto del file di *Elements.xml* con il codice XML seguente.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -233,7 +232,7 @@ ms.locfileid: "73189148"
     </Elements>
     ```
 
-     Il nuovo XML modifica i valori degli attributi `Id`, `GroupId`, `Location`, `Description`e `Url` nei parametri sostituibili.
+     Il nuovo XML modifica i valori degli `Id` attributi, `GroupId` , `Location` , `Description` e `Url` in parametri sostituibili.
 
 2. Salvare e chiudere il file.
 
@@ -254,7 +253,7 @@ ms.locfileid: "73189148"
 
 5. Nell'elenco **progetto** scegliere **ItemTemplateWizard**, quindi scegliere il pulsante **OK** .
 
-6. Sulla barra dei **menu scegliere compila** > **Compila soluzione**, quindi assicurarsi che la soluzione venga compilata senza errori.
+6. Sulla barra dei **menu scegliere Compila compila**  >  **soluzione**, quindi assicurarsi che la soluzione venga compilata senza errori.
 
 ## <a name="test-the-wizard"></a>Testare la procedura guidata
  A questo punto si è pronti per testare la procedura guidata. Per prima cosa, iniziare a eseguire il debug della soluzione CustomActionProjectItem nell'istanza sperimentale di Visual Studio. Testare quindi la procedura guidata per l'elemento del progetto di azione personalizzata in un progetto SharePoint nell'istanza sperimentale di Visual Studio. Infine, compilare ed eseguire il progetto SharePoint per verificare che l'azione personalizzata funzioni come previsto.
@@ -263,21 +262,21 @@ ms.locfileid: "73189148"
 
 1. Riavviare Visual Studio con credenziali amministrative, quindi aprire la soluzione CustomActionProjectItem.
 
-2. Nel progetto ItemTemplateWizard aprire il file di codice CustomActionWizard e quindi aggiungere un punto di interruzione alla prima riga di codice nel metodo `RunStarted`.
+2. Nel progetto ItemTemplateWizard aprire il file di codice CustomActionWizard e quindi aggiungere un punto di interruzione alla prima riga di codice nel `RunStarted` metodo.
 
-3. Nella barra dei menu scegliere **Debug** > **eccezioni**.
+3. Nella barra dei menu scegliere **debug**  >  **eccezioni**.
 
 4. Nella finestra di dialogo **eccezioni** assicurarsi che le caselle di controllo **generate** e non **gestite dall'utente** per le **eccezioni Common Language Runtime** siano deselezionate, quindi scegliere il pulsante **OK** .
 
-5. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug** > **Avvia debug**sulla barra dei menu.
+5. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**dalla barra dei menu.
 
      Visual Studio installa l'estensione nel progetto di azione%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Item\1.0 e avvia un'istanza sperimentale di Visual Studio. Si eseguirà il test dell'elemento del progetto in questa istanza di Visual Studio.
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Per testare la procedura guidata in Visual Studio
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **File** > **nuovo** **progetto** > .
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **file**  >  **nuovo**  >  **progetto**.
 
-2. Espandere il **nodo C# Visual** o **Visual Basic** (a seconda della lingua supportata dal modello di elemento), espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
+2. Espandere il nodo **Visual C#** o **Visual Basic** (a seconda della lingua supportata dal modello di elemento), espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
 3. Nell'elenco dei modelli di progetto scegliere **progetto SharePoint 2010**, denominare il progetto **CustomActionWizardTest**, quindi scegliere il pulsante **OK** .
 
@@ -289,11 +288,11 @@ ms.locfileid: "73189148"
 
 7. Nell'elenco degli elementi del progetto scegliere l'elemento **azione personalizzata** , quindi scegliere il pulsante **Aggiungi** .
 
-8. Verificare che il codice nell'altra istanza di Visual Studio si arresti in base al punto di interruzione impostato in precedenza nel metodo `RunStarted`.
+8. Verificare che il codice nell'altra istanza di Visual Studio si arresti in base al punto di interruzione impostato in precedenza nel `RunStarted` metodo.
 
-9. Continuare a eseguire il debug del progetto scegliendo il tasto **F5** oppure, sulla barra dei menu, scegliendo **debug** > **continua**.
+9. Continuare a eseguire il debug del progetto scegliendo il tasto **F5** oppure, sulla barra dei menu, scegliere **debug**  >  **continua**.
 
-     Viene visualizzata la personalizzazione guidata SharePoint.
+     Viene visualizzata la Personalizzazione guidata SharePoint.
 
 10. In **percorso**scegliere il pulsante di opzione **modifica elenco** .
 
@@ -305,11 +304,11 @@ ms.locfileid: "73189148"
 
 14. Nella casella **URL** immettere **https://docs.microsoft.com/sharepoint/dev/** , quindi scegliere il pulsante **fine** .
 
-     Visual Studio aggiunge un elemento denominato **CustomAction1** al progetto e apre il file *Elements. XML* nell'editor. Verificare che nel *file Elements. XML* siano contenuti i valori specificati nella procedura guidata.
+     Visual Studio aggiunge un elemento denominato **CustomAction1** al progetto e apre il file di *Elements.xml* nell'editor. Verificare che *Elements.xml* contenga i valori specificati nella procedura guidata.
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>Per testare l'azione personalizzata in SharePoint
 
-1. Nell'istanza sperimentale di Visual Studio scegliere il tasto **F5** oppure scegliere **debug** > **Avvia debug**sulla barra dei menu.
+1. Nell'istanza sperimentale di Visual Studio scegliere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**dalla barra dei menu.
 
      L'azione personalizzata viene assemblata e distribuita nel sito di SharePoint specificato dalla proprietà **URL sito** del progetto e il Web browser si apre alla pagina predefinita del sito.
 
@@ -331,7 +330,7 @@ ms.locfileid: "73189148"
 
 #### <a name="to-clean-up-the-development-computer"></a>Per pulire il computer di sviluppo
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **strumenti** > **estensioni e aggiornamenti**.
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **strumenti**  >  **estensioni e aggiornamenti**.
 
      Verrà visualizzata la finestra di dialogo **Estensioni e aggiornamenti**.
 
@@ -346,5 +345,5 @@ ms.locfileid: "73189148"
 - [Definire i tipi di elementi di progetto SharePoint personalizzati](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Creare modelli di elementi e modelli di progetto per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Procedura: utilizzare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Percorsi e ID predefiniti per le azioni personalizzate](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

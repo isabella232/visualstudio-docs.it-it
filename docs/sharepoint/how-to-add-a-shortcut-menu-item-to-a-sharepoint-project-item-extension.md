@@ -1,7 +1,7 @@
 ---
-title: Aggiungi voce di menu di scelta rapida per l'estensione di elemento di progetto SharePoint
+title: Aggiungere la voce di menu di scelta rapida all'estensione dell'elemento di progetto SharePoint
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,46 +14,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8041f9cbf19d1e1324478b92d2655f1377102b81
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: 5c0515fddc106418902cd2cca9fcba4c0e365da1
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401632"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014854"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Procedura: Aggiungere una voce di menu di scelta rapida per un'estensione di elemento di progetto SharePoint
-  È possibile aggiungere una voce di menu di scelta rapida a un elemento di progetto SharePoint esistente usando un'estensione di elemento di progetto. La voce di menu viene visualizzato quando l'utente fa clic l'elemento del progetto in **Esplora soluzioni**.
+# <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Procedura: aggiungere una voce di menu di scelta rapida a un'estensione di elemento di progetto SharePoint
+  È possibile aggiungere una voce di menu di scelta rapida a un elemento del progetto SharePoint esistente utilizzando un'estensione di elemento del progetto. La voce di menu viene visualizzata quando un utente fa clic con il pulsante destro del mouse sull'elemento del progetto in **Esplora soluzioni**.
 
- I passaggi seguenti presuppongono che un'estensione di elemento di progetto è già stato creato. Per altre informazioni, vedere [Procedura: Creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
+ Nei passaggi seguenti si presuppone che sia già stata creata un'estensione di elemento di progetto. Per altre informazioni, vedere [procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
 
-### <a name="to-add-a-shortcut-menu-item-in-a-project-item-extension"></a>Per aggiungere una voce di menu di scelta rapida in un'estensione di elemento di progetto
+### <a name="to-add-a-shortcut-menu-item-in-a-project-item-extension"></a>Per aggiungere una voce di menu di scelta rapida in un'estensione di elemento del progetto
 
-1. Nel <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metodo delle <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementazione, handle il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> evento del *projectItemType* parametro.
+1. Nel <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> metodo dell' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementazione, gestire l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> evento del parametro *projectItemType* .
 
-2. Nel gestore eventi per il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> evento, aggiungere un nuovo <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> dell'oggetto per il <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A> o <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A> raccolta del parametro di argomenti dell'evento.
+2. Nel gestore eventi per l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> evento, aggiungere un nuovo <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> oggetto alla <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A> raccolta o del parametro degli argomenti dell'evento.
 
-3. Nel <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> gestore dell'evento per il nuovo <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> dell'oggetto, eseguire le attività da eseguire quando un utente sceglie la voce di menu di scelta rapida.
+3. Nel <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> gestore eventi per il nuovo <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> oggetto, eseguire le attività che si desidera eseguire quando un utente fa clic sulla voce di menu di scelta rapida.
 
 ## <a name="example"></a>Esempio
- Esempio di codice seguente viene illustrato come aggiungere una voce di menu di scelta rapida per l'elemento di progetto del ricevitore di eventi. Quando l'utente fa clic l'elemento del progetto in **Esplora soluzioni** e fa clic il **scrivere messaggi finestra di Output** voce di menu, Visual Studio visualizza un messaggio nel **Output**finestra.
+ Nell'esempio di codice riportato di seguito viene illustrato come aggiungere una voce di menu di scelta rapida all'elemento del progetto ricevitore di eventi. Quando l'utente fa clic con il pulsante destro del mouse sull'elemento del progetto in **Esplora soluzioni** e fa clic sulla voce **di menu Scrivi messaggio finestra di output** , Visual Studio Visualizza un messaggio nella finestra **output** .
 
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionmenu.vb#1)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#1](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionmenu.cs#1)]
 
- Questo esempio Usa il servizio di progetto SharePoint in cui per scrivere il messaggio il **Output** finestra. Per altre informazioni, vedere [usare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
+ In questo esempio viene utilizzato il servizio di progetto SharePoint per scrivere il messaggio nella finestra di **output** . Per ulteriori informazioni, vedere [utilizzare il servizio di progetto SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
 ## <a name="compile-the-code"></a>Compilare il codice
- In questo esempio richiede un progetto libreria di classi con i riferimenti agli assembly seguenti:
+ Questo esempio richiede un progetto di libreria di classi con riferimenti agli assembly seguenti:
 
-- Microsoft.VisualStudio.SharePoint
+- Microsoft. VisualStudio. SharePoint
 
 - System.ComponentModel.Composition
 
-## <a name="deploy-the-extension"></a>Distribuire l'estensione
- Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) creare un pacchetto per l'assembly e qualsiasi altro file che si desidera distribuire con l'estensione. Per altre informazioni, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+## <a name="deploy-the-extension"></a>Distribuzione dell'estensione
+ Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto di estensione (VSIX) per l'assembly e qualsiasi altro file che si vuole distribuire con l'estensione. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
-- [Procedura: Aggiungere una proprietà a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
-- [Estendere gli elementi di progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md)
-- [Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [Procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
+- [Procedura: aggiungere una proprietà a un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)
+- [Estendi elementi di progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md)
+- [Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)

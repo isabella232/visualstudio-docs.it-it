@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +14,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69ec79a613a2bcc50c47ea4d6b66516f75f1fbd6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983799"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015669"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint
   È possibile utilizzare l'elemento di progetto **modello di integrazione applicativa dei dati** per creare un modello per il servizio di integrazione applicativa dei dati in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando questo elemento del progetto, i dati nel modello non vengono visualizzati agli utenti. È inoltre necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.
@@ -28,7 +27,7 @@ ms.locfileid: "72983799"
 
 - Creazione di un'estensione di Visual Studio che esegue due attività principali:
 
-  - Genera un elenco esterno che Visualizza i dati in un modello di integrazione applicativa dei dati. L'estensione usa il modello a oggetti per il sistema del progetto SharePoint per generare un file *Elements. XML* che definisce l'elenco. Aggiunge inoltre il file al progetto in modo che venga distribuito insieme al modello di integrazione applicativa dei dati.
+  - Genera un elenco esterno che Visualizza i dati in un modello di integrazione applicativa dei dati. L'estensione usa il modello a oggetti per il sistema del progetto SharePoint per generare un file di *Elements.xml* che definisce l'elenco. Aggiunge inoltre il file al progetto in modo che venga distribuito insieme al modello di integrazione applicativa dei dati.
 
   - Viene aggiunta una voce di menu di scelta rapida agli elementi del progetto **modello di integrazione applicativa dei dati** in **Esplora soluzioni**. Gli sviluppatori possono fare clic sulla voce di menu per generare un elenco esterno per il modello di integrazione applicativa dei dati.
 
@@ -36,16 +35,16 @@ ms.locfileid: "72983799"
 
 - Test dell'estensione.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare questa procedura dettagliata, è necessario che nel computer di sviluppo siano presenti i componenti seguenti:
 
 - Edizioni supportate di Microsoft Windows, SharePoint e Visual Studio.
 
-- Oggetto [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata usa il modello di **progetto VSIX** nell'SDK per creare un pacchetto VSIX per distribuire l'elemento di progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata usa il modello di **progetto VSIX** nell'SDK per creare un pacchetto VSIX per distribuire l'elemento di progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   Per completare la procedura dettagliata, è necessario conoscere i concetti seguenti:
 
-- Il servizio di integrazione applicativa dei dati in [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Per ulteriori informazioni, vedere [architettura BDC](/previous-versions/office/developer/sharepoint-2010/ee558876(v=office.14)).
+- Il servizio di integrazione applicativa dei dati in [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] . Per ulteriori informazioni, vedere [architettura BDC](/previous-versions/office/developer/sharepoint-2010/ee558876(v=office.14)).
 
 - XML Schema per i modelli di integrazione applicativa dei dati. Per altre informazioni, vedere [infrastruttura del modello di integrazione applicativa](/previous-versions/office/developer/sharepoint-2010/ee556378(v=office.14))dei dati.
 
@@ -62,9 +61,9 @@ ms.locfileid: "72983799"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+2. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**.
 
-3. Nella finestra di dialogo **nuovo progetto** espandere i nodi **Visual C#**  o **Visual Basic** , quindi scegliere il nodo **estensibilità** .
+3. Nella finestra di dialogo **nuovo progetto** espandere i nodi **Visual C#** o **Visual Basic** , quindi scegliere il nodo **estensibilità** .
 
     > [!NOTE]
     > Il nodo **estensibilità** è disponibile solo se si installa Visual Studio SDK. Per ulteriori informazioni, vedere la sezione Prerequisiti più indietro in questo argomento.
@@ -77,7 +76,7 @@ ms.locfileid: "72983799"
 
 6. Nella casella **nome** immettere **GenerateExternalDataLists**, quindi scegliere il pulsante **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aggiunge il progetto **GenerateExternalDataLists** al **Esplora soluzioni**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]aggiunge il progetto **GenerateExternalDataLists** a **Esplora soluzioni**.
 
 7. Se il file source. Extension. vsixmanifest non viene aperto automaticamente, aprire il relativo menu di scelta rapida nel progetto GenerateExternalDataLists, quindi scegliere **Apri** .
 
@@ -87,7 +86,7 @@ ms.locfileid: "72983799"
 
 1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione **GenerateExternalDataLists** , scegliere **Aggiungi**, quindi **nuovo progetto**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo progetto** espandere i nodi **Visual C#**  o **Visual Basic** , quindi scegliere il nodo **Windows** .
+2. Nella finestra di dialogo **Aggiungi nuovo progetto** espandere i nodi **Visual C#** o **Visual Basic** , quindi scegliere il nodo **Windows** .
 
 3. Nell'elenco nella parte superiore della finestra di dialogo scegliere **.NET Framework 4,5**.
 
@@ -95,7 +94,7 @@ ms.locfileid: "72983799"
 
 5. Nella casella **nome** immettere **BdcProjectItemExtension**, quindi scegliere il pulsante **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aggiunge il progetto **BdcProjectItemExtension** alla soluzione e apre il file di codice Class1 predefinito.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]aggiunge il progetto **BdcProjectItemExtension** alla soluzione e apre il file di codice Class1 predefinito.
 
 6. Eliminare il file di codice Class1 dal progetto.
 
@@ -110,7 +109,7 @@ ms.locfileid: "72983799"
 
     - GenerateExternalDataLists
 
-2. Scegliere il progetto BdcProjectItemExtension, quindi nella barra dei menu scegliere **progetto** > **Aggiungi riferimento**.
+2. Scegliere il progetto BdcProjectItemExtension, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi riferimento**.
 
 3. Nel nodo **assembly** , scegliere il nodo **Framework** , quindi selezionare la casella di controllo per ognuno degli assembly seguenti:
 
@@ -122,10 +121,10 @@ ms.locfileid: "72983799"
 
     - Microsoft. VisualStudio. SharePoint
 
-5. Fare clic sul pulsante **OK**.
+5. Fare clic su **OK** .
 
 ## <a name="define-the-project-item-extension"></a>Definire l'estensione dell'elemento di progetto
- Creare una classe che definisce l'estensione per l'elemento del progetto **modello di integrazione applicativa dei dati** . Per definire l'estensione, la classe implementa l'interfaccia <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>. Implementare questa interfaccia quando si desidera estendere un tipo di elemento di progetto esistente.
+ Creare una classe che definisce l'estensione per l'elemento del progetto **modello di integrazione applicativa dei dati** . Per definire l'estensione, la classe implementa l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interfaccia. Implementare questa interfaccia quando si desidera estendere un tipo di elemento di progetto esistente.
 
 #### <a name="to-define-the-project-item-extension"></a>Per definire l'estensione dell'elemento di progetto
 
@@ -138,7 +137,7 @@ ms.locfileid: "72983799"
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
 
 ## <a name="create-the-external-data-lists"></a>Creare gli elenchi di dati esterni
- Aggiungere una definizione parziale della classe `GenerateExternalDataListsExtension` che consente di creare un elenco di dati esterno per ogni entità nel modello di integrazione applicativa dei dati. Per creare l'elenco di dati esterni, questo codice legge prima di tutto i dati di entità nel modello di integrazione applicativa dei dati analizzando i dati XML nel file del modello di integrazione applicativa dei dati. Crea quindi un'istanza di elenco basata sul modello di integrazione applicativa dei dati e aggiunge questa istanza di elenco al progetto.
+ Aggiungere una definizione parziale della `GenerateExternalDataListsExtension` classe che crea un elenco di dati esterno per ogni entità nel modello di integrazione applicativa dei dati. Per creare l'elenco di dati esterni, questo codice legge prima di tutto i dati di entità nel modello di integrazione applicativa dei dati analizzando i dati XML nel file del modello di integrazione applicativa dei dati. Crea quindi un'istanza di elenco basata sul modello di integrazione applicativa dei dati e aggiunge questa istanza di elenco al progetto.
 
 #### <a name="to-create-the-external-data-lists"></a>Per creare gli elenchi di dati esterni
 
@@ -152,7 +151,7 @@ ms.locfileid: "72983799"
 
 #### <a name="to-build-the-solution"></a>Per compilare la soluzione
 
-1. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+1. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>Creare un pacchetto VSIX per distribuire l'estensione dell'elemento di progetto
  Per distribuire l'estensione, usare il progetto VSIX nella soluzione per creare un pacchetto VSIX. Per prima cosa, configurare il pacchetto VSIX modificando il file source. Extension. vsixmanifest incluso nel progetto VSIX. Quindi, creare il pacchetto VSIX compilando la soluzione.
@@ -176,13 +175,13 @@ ms.locfileid: "72983799"
 6. Nell'elenco **tipo** scegliere **Microsoft. VisualStudio. MefComponent**.
 
     > [!NOTE]
-    > Questo valore corrisponde all'elemento `MefComponent` nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione nel pacchetto VSIX. Per altre informazioni, vedere [Elemento MEFComponent (schema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Questo valore corrisponde all' `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione nel pacchetto VSIX. Per altre informazioni, vedere [Elemento MEFComponent (schema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Nell'elenco **origine** scegliere **un progetto nella soluzione corrente**.
 
 8. Nell'elenco **progetto** scegliere **BdcProjectItemExtension**, quindi scegliere il pulsante **OK** .
 
-9. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+9. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
 
 10. Verificare che il progetto venga compilato e compilato senza errori.
 
@@ -197,21 +196,21 @@ ms.locfileid: "72983799"
 
 1. Se necessario, riavviare Visual Studio con credenziali amministrative, quindi aprire la soluzione GenerateExternalDataLists.
 
-2. Nel progetto BdcProjectItemExtension aprire il file di codice ProjectItemExtension e quindi aggiungere un punto di interruzione alla riga di codice nel metodo `Initialize`.
+2. Nel progetto BdcProjectItemExtension aprire il file di codice ProjectItemExtension e quindi aggiungere un punto di interruzione alla riga di codice nel `Initialize` metodo.
 
-3. Aprire il file di codice GenerateExternalDataLists, quindi aggiungere un punto di interruzione alla prima riga di codice nel metodo `GenerateExternalDataLists_Execute`.
+3. Aprire il file di codice GenerateExternalDataLists, quindi aggiungere un punto di interruzione alla prima riga di codice nel `GenerateExternalDataLists_Execute` metodo.
 
-4. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug** > **Avvia debug**sulla barra dei menu.
+4. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**sulla barra dei menu.
 
      Visual Studio installa l'estensione in%UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External Data List Generator\1.0 e avvia un'istanza sperimentale di Visual Studio. Si eseguirà il test dell'elemento del progetto in questa istanza di Visual Studio.
 
 #### <a name="to-test-the-extension"></a>Per testare l'estensione
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **File** > **nuovo** **progetto** > .
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **file**  >  **nuovo**  >  **progetto**.
 
-2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **modelli** , espandere il nodo **visivo C#**  , espandere il nodo **SharePoint** , quindi selezionare **2010**.
+2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **modelli** , espandere il nodo **Visual C#** , espandere il nodo **SharePoint** , quindi selezionare **2010**.
 
-3. Nell'elenco nella parte superiore della finestra di dialogo verificare che sia selezionata l'opzione **.NET Framework 3,5** . I progetti per [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] richiedono questa versione del .NET Framework.
+3. Nell'elenco nella parte superiore della finestra di dialogo verificare che sia selezionata l'opzione **.NET Framework 3,5** . Per i progetti per è [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] necessaria questa versione del .NET Framework.
 
 4. Nell'elenco dei modelli di progetto scegliere **progetto SharePoint 2010**.
 
@@ -227,11 +226,11 @@ ms.locfileid: "72983799"
 
 10. Nella casella **nome** immettere **TestBDCModel**, quindi scegliere il pulsante **Aggiungi** .
 
-11. Verificare che il codice nell'altra istanza di Visual Studio si arresti in base al punto di interruzione impostato nel metodo `Initialize` del file di codice ProjectItemExtension.
+11. Verificare che il codice nell'altra istanza di Visual Studio si arresti in base al punto di interruzione impostato nel `Initialize` metodo del file di codice ProjectItemExtension.
 
-12. Nell'istanza arrestata di Visual Studio, premere il tasto **F5** oppure sulla barra dei menu scegliere **debug** > **continua** per continuare a eseguire il debug del progetto.
+12. Nell'istanza arrestata di Visual Studio, premere il tasto **F5** oppure sulla barra dei menu scegliere **debug**  >  **continua** per continuare a eseguire il debug del progetto.
 
-13. Nell'istanza sperimentale di Visual Studio premere il tasto **F5** oppure, sulla barra dei menu, scegliere **debug** > **Avvia debug** per compilare, distribuire ed eseguire il progetto **TestBDCModel** .
+13. Nell'istanza sperimentale di Visual Studio premere il tasto **F5** oppure, sulla barra dei menu, scegliere **debug**  >  **Avvia debug** per compilare, distribuire ed eseguire il progetto **TestBDCModel** .
 
      Il Web browser si apre alla pagina predefinita del sito di SharePoint specificato per il debug.
 
@@ -241,11 +240,11 @@ ms.locfileid: "72983799"
 
 16. Nell'istanza di Visual Studio in cui è aperto il progetto TestBDCModel, aprire il menu di scelta rapida per il nodo **TestBDCModel** in **Esplora soluzioni**, quindi scegliere **generate external data list**.
 
-17. Verificare che il codice nell'altra istanza di Visual Studio si arresti in base al punto di interruzione impostato nel metodo `GenerateExternalDataLists_Execute`. Premere il tasto **F5** oppure, sulla barra dei menu, scegliere **debug** > **continua** per continuare a eseguire il debug del progetto.
+17. Verificare che il codice nell'altra istanza di Visual Studio si arresti in base al punto di interruzione impostato nel `GenerateExternalDataLists_Execute` metodo. Premere il tasto **F5** oppure, sulla barra dei menu, scegliere **debug**  >  **continua** per continuare a eseguire il debug del progetto.
 
 18. L'istanza sperimentale di Visual Studio aggiunge un'istanza di elenco denominata **Entity1DataList** al progetto TestBDCModel e l'istanza genera anche una funzionalità denominata **Funzionalità2** per l'istanza dell'elenco.
 
-19. Premere il tasto **F5** oppure, sulla barra dei menu, scegliere **debug** > **Avvia debug** per compilare, distribuire ed eseguire il progetto TestBDCModel.
+19. Premere il tasto **F5** oppure, sulla barra dei menu, scegliere **debug**  >  **Avvia debug** per compilare, distribuire ed eseguire il progetto TestBDCModel.
 
      Il Web browser si apre alla pagina predefinita del sito di SharePoint usato per il debug.
 
@@ -274,13 +273,13 @@ ms.locfileid: "72983799"
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Per rimuovere il modello di integrazione applicativa dei dati dal sito di SharePoint
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **compila** > **ritirare**.
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **Build**  >  **ritrazione**compilazione.
 
      Visual Studio rimuove il modello di integrazione applicativa dei dati dal sito di SharePoint.
 
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>Per rimuovere l'estensione dell'elemento di progetto da Visual Studio
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **strumenti** > **estensioni e aggiornamenti**.
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **strumenti**  >  **estensioni e aggiornamenti**.
 
      Verrà visualizzata la finestra di dialogo **Estensioni e aggiornamenti**.
 

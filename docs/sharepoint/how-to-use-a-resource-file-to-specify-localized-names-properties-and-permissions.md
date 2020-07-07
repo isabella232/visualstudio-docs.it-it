@@ -1,7 +1,7 @@
 ---
 title: 'Procedura: usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -19,12 +19,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa2fec260921d66328b2c16075d44b38686c08de
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982562"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015405"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Procedura: usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni
   Utilizzando un file di risorse, è possibile fornire nomi localizzati, definire proprietà e applicare autorizzazioni per oggetti definiti in un modello di integrazione applicativa dei dati. Per specificare queste informazioni, è necessario aggiungere un elemento di **risorsa di connettività dei dati aziendali** a un progetto che contiene un elemento del **modello di integrazione applicativa dei dati** . Specificare nomi, proprietà e autorizzazioni modificando l'XML del file di risorse.
@@ -33,7 +32,7 @@ ms.locfileid: "72982562"
 
 1. In **Esplora soluzioni**espandere la cartella per il progetto SharePoint, quindi scegliere la cartella che contiene il modello di integrazione applicativa dei dati.
 
-2. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+2. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
 3. Espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 

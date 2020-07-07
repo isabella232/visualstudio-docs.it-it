@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
@@ -15,19 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9924b3d709f882fdd552708a795a4b23bd22b070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665409"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015703"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio
   In questa procedura dettagliata viene illustrato come importare un flusso di lavoro riutilizzabile creato in SharePoint Designer 2010 in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto flusso di lavoro di SharePoint.
 
  I flussi di lavoro creati in SharePoint Designer, o *flussi di lavoro dichiarativi*, sono costituiti da [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni anziché da codice. SharePoint Designer 2010 introduce *flussi di lavoro riutilizzabili*, che sono flussi di lavoro dichiarativi portabili che possono essere utilizzati da elenchi diversi nei siti di SharePoint.
 
- I flussi di lavoro creati in [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], ad esempio i flussi di lavoro sequenziali e della macchina a Stati, sono denominati *flussi di lavoro di codice* I flussi di lavoro di codice sono costituiti da file XML e moduli di codice in cui gli utenti possono personalizzare il comportamento del flusso di lavoro.
+ I flussi di lavoro creati in [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] , ad esempio i flussi di lavoro sequenziali e delle macchine a Stati, sono denominati *flussi di lavoro di codice* I flussi di lavoro di codice sono costituiti da file XML e moduli di codice in cui gli utenti possono personalizzare il comportamento del flusso di lavoro.
 
  Tramite Visual Studio è possibile importare flussi di lavoro riutilizzabili creati in SharePoint Designer 2010 e convertirli in flussi di lavoro di codice per utilizzarli nei siti di SharePoint.
 
@@ -45,8 +44,8 @@ ms.locfileid: "72665409"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
 
@@ -59,7 +58,7 @@ ms.locfileid: "72665409"
 
 #### <a name="to-create-sharepoint-subsites"></a>Per creare siti secondari di SharePoint
 
-1. Nella barra dei menu di SharePoint Designer 2010 scegliere **File**  > **nuovo sito Web vuoto**.
+1. In SharePoint Designer 2010, sulla barra dei menu scegliere **file**  >  **nuovo sito Web vuoto**.
 
 2. Nella finestra di dialogo **nuovo sito Web vuoto** passare a un sito di SharePoint in cui si desidera creare il flusso di lavoro oppure utilizzare il valore di http://<em>SystemName</em>/, quindi scegliere il pulsante **OK** .
 
@@ -73,7 +72,7 @@ ms.locfileid: "72665409"
 
     Verrà aperto il nuovo sito secondario in SharePoint Designer. Chiudere l'istanza di SharePoint Designer e tornare alla prima istanza (sito di livello superiore).
 
-6. Ripetere i passaggi 3-5 per creare il secondo sito secondario, questa volta sostituendo il **sito secondario** di word nel [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] con **SPD2**.
+6. Ripetere i passaggi 3-5 per creare il secondo sito secondario, questa volta sostituendo il **sito secondario** di Word in [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] con **SPD2**.
 
 ## <a name="create-a-sharepoint-designer-reusable-workflow"></a>Creazione di un flusso di lavoro riutilizzabile di SharePoint Designer
  Poiché SharePoint non include i flussi di lavoro riutilizzabili che è possibile utilizzare per questo esempio, ne verrà creato uno. In questo semplice flusso di lavoro, quando un utente immette una nuova attività nell'elenco attività con un titolo specifico, l'attività viene assegnata a tale utente.
@@ -121,7 +120,7 @@ ms.locfileid: "72665409"
      L'istruzione di azione ora legge il **Set assegnato a sull'elemento corrente: CreatedBy**.
 
 ## <a name="save-and-deploy-the-reusable-workflow"></a>Salvare e distribuire il flusso di lavoro riutilizzabile
- Poiché [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] possibile importare solo file con estensione *WSP* , è necessario salvare il flusso di lavoro riutilizzabile come file con estensione *WSP* e distribuirlo in SharePoint prima di importarlo in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+ Poiché [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] può importare solo file con *estensione wsp* , è necessario salvare il flusso di lavoro riutilizzabile come file con estensione *WSP* e distribuirlo in SharePoint prima di importarlo in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 > [!IMPORTANT]
 > Se si riceve un errore di runtime eseguendo la procedura riportata di seguito, è necessario eseguire la procedura in un sistema con accesso al sito di SharePoint.
@@ -149,19 +148,19 @@ ms.locfileid: "72665409"
 9. Nella finestra di dialogo **download del file** scegliere il pulsante **Salva** per salvare il file con *estensione wsp* nel sistema locale.
 
 ## <a name="import-the-wsp-file-into-visual-studio"></a>Importare il file con estensione wsp in Visual Studio
- Importare il file con estensione *WSP* in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usando un progetto di flusso di lavoro di importazione riutilizzabile. Questo progetto converte il flusso di lavoro da un flusso di lavoro dichiarativo riutilizzabile in un flusso di lavoro di codice. Dopo la conversione del flusso di lavoro, verrà utilizzato il codice per modificarne il comportamento.
+ Importare il file con *estensione wsp* in utilizzando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] un progetto di flusso di lavoro di importazione riutilizzabile. Questo progetto converte il flusso di lavoro da un flusso di lavoro dichiarativo riutilizzabile in un flusso di lavoro di codice. Dopo la conversione del flusso di lavoro, verrà utilizzato il codice per modificarne il comportamento.
 
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>Per importare un flusso di lavoro da un file con estensione wsp e modificarlo
 
-1. Nella barra dei menu di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scegliere **File**  > **nuovo**  > **progetto**.
+1. Nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] barra dei menu di scegliere **file**  >  **nuovo**  >  **progetto**.
 
-2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **SharePoint** sotto  **C# Visual** o **Visual Basic**, quindi scegliere il nodo **2010** .
+2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **SharePoint** sotto **Visual C#** o **Visual Basic**, quindi scegliere il nodo **2010** .
 
 3. Nel riquadro **modelli** scegliere il modello **Importa flusso di lavoro riutilizzabile di SharePoint 2010** , lasciare il nome del progetto come **WorkflowImportProject1**, quindi scegliere il pulsante **OK** .
 
-    Viene visualizzata la personalizzazione guidata SharePoint.
+    Viene visualizzata la Personalizzazione guidata SharePoint.
 
-4. Nella pagina **specificare il sito e il livello di sicurezza per il debug** immettere il [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] per il secondo sito secondario di SharePoint creato in precedenza: http://<em>System Name</em>/SPD2.
+4. Nella pagina **specificare il sito e il livello di sicurezza per il debug** immettere [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] per il secondo sito secondario di SharePoint creato in precedenza: http://<em>System Name</em>/SPD2.
 
 5. Nella sezione **Qual è il livello di attendibilità per la soluzione SharePoint** scegliere il pulsante di opzione **Distribuisci come soluzione farm** , quindi scegliere il pulsante **Avanti** .
 
@@ -176,17 +175,17 @@ ms.locfileid: "72665409"
 
 7. Nella casella **selezionare gli elementi da importare** scegliere il flusso di lavoro del flusso di lavoro dell' **attività SPD** , quindi scegliere il pulsante **fine** .
 
-    Al termine dell'operazione di importazione, viene creato un progetto denominato **WorkflowImportProject1** contenente un flusso di lavoro denominato **SPD_Workflow_TestFT**. In questa cartella è il file di definizione del flusso di lavoro *Elements. XML* e il file di progettazione del flusso di lavoro ( *. xoml*). La finestra di progettazione contiene due file: il file delle regole (. Rules) e il file code-behind, ovvero *. cs* o *. vb*, a seconda del linguaggio di programmazione del progetto.
+    Al termine dell'operazione di importazione, viene creato un progetto denominato **WorkflowImportProject1** contenente un flusso di lavoro denominato **SPD_Workflow_TestFT**. In questa cartella è il file di definizione del flusso di lavoro *Elements.xml* e il file di progettazione del flusso di lavoro (*. xoml*). La finestra di progettazione contiene due file: il file delle regole (. Rules) e il file code-behind, ovvero *. cs* o *. vb*, a seconda del linguaggio di programmazione del progetto.
 
 8. In **Esplora soluzioni**eliminare la cartella **altri file importati** .
 
-9. Nel file *Elements. XML* eliminare `InstantiationURL="_layouts/IniErkflIP.sspx"`.
+9. Nel file di *Elements.xml* eliminare `InstantiationURL="_layouts/IniErkflIP.sspx"` .
 
-10. In **Esplora soluzioni**scegliere **WorkflowImportProject1**, quindi nella barra dei menu scegliere **progetto**  > **Imposta come progetto di avvio** per impostare **WorkflowImportProject1** come elemento di avvio.
+10. In **Esplora soluzioni**scegliere **WorkflowImportProject1**, quindi nella barra dei menu scegliere **progetto**  >  **impostato come progetto di avvio** per impostare **WorkflowImportProject1** come elemento di avvio.
 
      L'elenco verrà visualizzato immediatamente quando si esegue il debug del progetto.
 
-11. Poiché il modello di **flusso di lavoro importazione riutilizzabile di SharePoint 2010** non importa i valori delle proprietà di associazione per il flusso di lavoro importato, è necessario immetterli Per eseguire questa operazione:
+11. Poiché il modello di **flusso di lavoro importazione riutilizzabile di SharePoint 2010** non importa i valori delle proprietà di associazione per il flusso di lavoro importato, è necessario immetterli A tale scopo, effettuare l'operazione seguente:
 
     1. In **Esplora soluzioni**scegliere il nodo **SPD_Workflow_TestFT** .
 
@@ -194,7 +193,7 @@ ms.locfileid: "72665409"
 
     3. Immettere i valori mancanti nella procedura guidata di personalizzazione di SharePoint, quindi scegliere il pulsante **fine** .
 
-12. Scegliere il file con estensione xoml, quindi nella barra dei menu scegliere **Visualizza** **finestra di progettazione**  >  per visualizzare il flusso di lavoro importato nella finestra di progettazione del flusso di lavoro.
+12. Scegliere il file con estensione xoml, quindi nella barra dei menu scegliere **Visualizza**  >  **finestra di progettazione** per visualizzare il flusso di lavoro importato nella finestra di progettazione del flusso di lavoro.
 
 13. Nel nodo **Windows Workflow v 3.0** della **casella degli strumenti**eseguire uno dei passaggi seguenti:
 

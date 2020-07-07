@@ -1,7 +1,7 @@
 ---
 title: Creazione di pagine per SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -17,12 +17,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297ebf0e7c2ed1273dd5a8ac973ce497c4c64781
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986347"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015165"
 ---
 # <a name="create-pages-for-sharepoint"></a>Creazione di pagine per SharePoint
   È possibile creare pagine dell'applicazione, pagine del sito, pagine master e layout di pagina per un sito di SharePoint.
@@ -39,7 +38,7 @@ ms.locfileid: "72986347"
 |Pagine applicazione|Creare una pagina dell'applicazione se si desidera che la pagina contenga codice personalizzato o si desideri che la pagina venga condivisa tra più siti. In caso contrario, una pagina del sito potrebbe essere la scelta migliore.|
 |Pagine del sito|Creare una pagina del sito se si desidera eseguire una delle attività seguenti:<br /><br /> -Aggiungere la pagina a una raccolta di SharePoint.<br />-Abilitare la pagina per ospitare funzionalità come la Web part dinamica e le zone Web part.<br />-Consente agli utenti di personalizzare la pagina utilizzando SharePoint Designer.<br /><br /> Non creare una pagina del sito se si desidera che la pagina contenga codice personalizzato. Sebbene sia possibile aggiungere codice personalizzato a una pagina del sito, l'esecuzione del codice viene arrestata quando l'utente personalizza la pagina utilizzando SharePoint Designer.|
 |Pagine master|Creare una pagina master se si desidera definire una struttura comune per le pagine del sito e le pagine dell'applicazione.|
-|Layout di pagina|I layout di pagina sono specifici per [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] e consentono di definire ulteriormente una struttura comune per le pagine del sito e le pagine dell'applicazione.|
+|Layout di pagina|I layout di pagina sono specifici di [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] e consentono di definire ulteriormente una struttura comune per le pagine del sito e le pagine dell'applicazione.|
 
  Per una panoramica di ogni tipo di pagina, vedere [blocco predefinito: pagine e interfaccia utente](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14))e layout di [pagina e pagine master](/previous-versions/office/developer/sharepoint-2010/ms543497(v=office.14)).
 

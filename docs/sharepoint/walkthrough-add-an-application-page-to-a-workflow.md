@@ -1,7 +1,7 @@
 ---
-title: "Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro | Microsoft Docs"
+title: "Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro | Microsoft Docs"
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -15,45 +15,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409551"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015487"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro
-  Questa procedura dettagliata illustra come aggiungere una pagina dell'applicazione che consente di visualizzare i dati derivati da un flusso di lavoro a un progetto di flusso di lavoro. Essendo basato su progetto descritto nell'argomento [procedura dettagliata: Creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro
+  In questa procedura dettagliata viene illustrato come aggiungere una pagina dell'applicazione che Visualizza i dati derivati da un flusso di lavoro a un progetto flusso di lavoro. Si basa sul progetto descritto nell'argomento [procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
-- Aggiunta di una pagina ASPX applicazione a un progetto di flusso di lavoro di SharePoint.
+- Aggiunta di una pagina dell'applicazione ASPX a un progetto flusso di lavoro di SharePoint.
 
-- Recupero di dati dal progetto flusso di lavoro e la manipolazione.
+- Recupero di dati dal progetto flusso di lavoro e manipolazione.
 
 - Visualizzazione dei dati in una tabella nella pagina dell'applicazione.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
 
 - Visual Studio.
 
-- Inoltre necessario aver completato il progetto nell'argomento [procedura dettagliata: Creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- È anche necessario completare il progetto nell'argomento [procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend il codice del flusso di lavoro
- In primo luogo, aggiungere una riga di codice per il flusso di lavoro per impostare il valore della colonna risultato all'importo della nota spese. Questo valore viene usato in un secondo momento nel calcolo delle spese report riepilogo.
+ Per prima cosa, aggiungere una riga di codice al flusso di lavoro per impostare il valore della colonna risultato sulla quantità della nota spese. Questo valore viene utilizzato in un secondo momento nel calcolo di riepilogo della nota spese.
 
-#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Per impostare il valore della colonna risultato nel flusso di lavoro
+#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Per impostare il valore della colonna risultati nel flusso di lavoro
 
-1. Caricare il progetto completato dall'argomento [procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Caricare il progetto completato dall'argomento [procedura dettagliata: creazione di un flusso di lavoro con i moduli di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-2. Aprire il codice per *Workflow1.cs* oppure *Workflow1.vb* (a seconda del linguaggio di programmazione).
+2. Aprire il codice per *Workflow1.cs* o *Workflow1. vb* , a seconda del linguaggio di programmazione in uso.
 
-3. In fondo il `createTask1_MethodInvoking` metodo, aggiungere il codice seguente:
+3. `createTask1_MethodInvoking`Aggiungere il codice seguente alla fine del metodo:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -65,16 +64,16 @@ ms.locfileid: "63409551"
       workflowProperties.InitiationData;
     ```
 
-## <a name="create-an-application-page"></a>Creare una pagina applicazione
- Successivamente, aggiungere un form ASPX al progetto. Questo modulo verrà visualizzati i dati ottenuti dal progetto flusso di lavoro report nota spese. A tale scopo, si aggiungerà una pagina dell'applicazione. Una pagina dell'applicazione usa la stessa pagina master come altre pagine di SharePoint, vale a dire che ricorderà altre pagine nel sito di SharePoint.
+## <a name="create-an-application-page"></a>Creare una pagina dell'applicazione
+ Aggiungere quindi un modulo ASPX al progetto. In questo modulo vengono visualizzati i dati ottenuti dal progetto flusso di lavoro della nota spese. A tale scopo, verrà aggiunta una pagina dell'applicazione. Una pagina dell'applicazione utilizza la stessa pagina master di altre pagine di SharePoint, ovvero sarà simile ad altre pagine del sito di SharePoint.
 
 #### <a name="to-add-an-application-page-to-the-project"></a>Per aggiungere una pagina dell'applicazione al progetto
 
-1. Scegliere il progetto ExpenseReport e quindi nella barra dei menu scegliere **Project** > **Aggiungi nuovo elemento**.
+1. Scegliere il progetto ExpenseReport, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-2. Nel **modelli** riquadro, scegliere il **pagina dell'applicazione** modello, usare il nome predefinito per l'elemento del progetto (**ApplicationPage1.aspx**) e scegliere il **Add** pulsante.
+2. Nel riquadro **modelli** scegliere il modello di **pagina applicazione** , usare il nome predefinito per l'elemento del progetto (**ApplicationPage1. aspx**) e scegliere il pulsante **Aggiungi** .
 
-3. Nel [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] di ApplicationPage1.aspx, sostituire il `PlaceHolderMain` sezione con il codice seguente:
+3. In [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] di ApplicationPage1. aspx sostituire la `PlaceHolderMain` sezione con il codice seguente:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -86,9 +85,9 @@ ms.locfileid: "63409551"
     </asp:Content>
     ```
 
-     Questo codice aggiunge una tabella alla pagina con un titolo.
+     Questo codice aggiunge una tabella alla pagina insieme a un titolo.
 
-4. Aggiungere un titolo alla pagina dell'applicazione mediante la sostituzione di `PlaceHolderPageTitleInTitleArea` sezione con il codice seguente:
+4. Aggiungere un titolo alla pagina dell'applicazione sostituendo la `PlaceHolderPageTitleInTitleArea` sezione con il codice seguente:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -96,14 +95,14 @@ ms.locfileid: "63409551"
     </asp:Content>
     ```
 
-## <a name="code-the-application-page"></a>La pagina dell'applicazione del codice
- Successivamente, aggiungere codice alla pagina di riepilogo dell'applicazione della nota spese. Quando si apre la pagina, il codice analizza l'elenco di attività in SharePoint per le spese che supera il limite di spesa allocato. Il report elenca ogni elemento con la somma delle spese.
+## <a name="code-the-application-page"></a>Scrivere il codice della pagina dell'applicazione
+ Successivamente, aggiungere il codice alla pagina dell'applicazione di riepilogo delle spese. Quando si apre la pagina, il codice analizza l'elenco attività in SharePoint per le spese che hanno superato il limite di spesa allocato. Il report elenca ogni elemento insieme alla somma delle spese.
 
-#### <a name="to-code-the-application-page"></a>Scrivere codice della pagina dell'applicazione
+#### <a name="to-code-the-application-page"></a>Per codificare la pagina dell'applicazione
 
-1. Scegliere il **ApplicationPage1.aspx** nodo, quindi nella barra dei menu, scegliere **View** > **codice** per visualizzare il code-behind della pagina dell'applicazione.
+1. Scegliere il nodo **ApplicationPage1. aspx** , quindi nella barra dei menu scegliere **Visualizza**  >  **codice** per visualizzare il codice dietro la pagina dell'applicazione.
 
-2. Sostituire il **usando** oppure **importazione** istruzioni (a seconda del linguaggio di programmazione) nella parte superiore della classe con quanto segue:
+2. Sostituire le istruzioni **using** o **Import** (a seconda del linguaggio di programmazione) nella parte superiore della classe con gli elementi seguenti:
 
     ```vb
     Imports System
@@ -131,7 +130,7 @@ ms.locfileid: "63409551"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3. Aggiungere al metodo `Page_Load` il codice seguente:
+3. Aggiungere il codice seguente al metodo `Page_Load`:
 
     ```vb
     Try
@@ -295,61 +294,61 @@ ms.locfileid: "63409551"
     ```
 
     > [!WARNING]
-    > Assicurarsi di sostituire "TestServer" nel codice con il nome di un server valido di cui è eseguito SharePoint.
+    > Assicurarsi di sostituire "TestServer" nel codice con il nome di un server valido in cui è in esecuzione SharePoint.
 
 ## <a name="test-the-application-page"></a>Testare la pagina dell'applicazione
- Successivamente, determinare se la pagina dell'applicazione vengono visualizzati correttamente i dati di spesa.
+ Determinare quindi se la pagina dell'applicazione visualizza correttamente i dati delle spese.
 
-#### <a name="to-test-the-application-page"></a>Per testare la pagina dell'applicazione
+#### <a name="to-test-the-application-page"></a>Per eseguire il test della pagina dell'applicazione
 
-1. Scegliere il **F5** tasto per eseguire e distribuire il progetto in SharePoint.
+1. Premere il tasto **F5** per eseguire e distribuire il progetto in SharePoint.
 
-2. Scegliere il **casa** pulsante e quindi scegliere il **documenti condivisi** collegamento sulla barra Avvio veloce per visualizzare l'elenco di documenti condivisi nel sito di SharePoint.
+2. Scegliere il pulsante **Home** , quindi scegliere il collegamento **documenti condivisi** sulla barra QuickLaunch per visualizzare l'elenco documenti condivisi nel sito di SharePoint.
 
-3. Per rappresentare le spese per questo esempio, caricare alcuni nuovi documenti in elenco dei documenti, scegliendo la **documenti** sul collegamento il **Strumenti raccolta** scheda nella parte superiore della pagina e quindi scegliendo il  **Caricamento del documento** pulsante sulla barra multifunzione dello strumento.
+3. Per rappresentare i report delle spese per questo esempio, caricare alcuni nuovi documenti nell'elenco documenti scegliendo il collegamento **documenti** nella scheda **Strumenti raccolta** nella parte superiore della pagina e quindi scegliendo il pulsante **Carica documento** sulla barra multifunzione dello strumento.
 
-4. Dopo aver caricato alcuni documenti, creare un'istanza del flusso di lavoro scegliendo la **Library** sul collegamento il **Strumenti raccolta** scheda nella parte superiore della pagina e quindi scegliere il **impostazioni libreria**pulsante sulla barra multifunzione dello strumento.
+4. Dopo aver caricato alcuni documenti, creare un'istanza del flusso di lavoro scegliendo il collegamento **libreria** nella scheda **Strumenti raccolta** nella parte superiore della pagina e quindi scegliendo il pulsante **Impostazioni libreria** nella barra multifunzione dello strumento.
 
-5. Nel **impostazioni raccolta documenti** pagina, scegliere il **le impostazioni del flusso di lavoro** clic sul collegamento nella **autorizzazioni e gestione** sezione.
+5. Nella pagina **Impostazioni raccolta documenti** scegliere il collegamento **Impostazioni flusso di lavoro** nella sezione **autorizzazioni e gestione** .
 
-6. Nel **delle impostazioni del flusso di lavoro** pagina, scegliere il **aggiungere un flusso di lavoro** collegamento.
+6. Nella pagina **Impostazioni flusso di lavoro** scegliere il collegamento **Aggiungi un flusso di lavoro** .
 
-7. Nel **aggiungere un flusso di lavoro** pagina, scegliere il **ExpenseReport - Workflow1** flusso di lavoro, immettere un nome per il flusso di lavoro, ad esempio **ExpenseTest**, quindi scegliere il **Successivo** pulsante.
+7. Nella pagina **Aggiungi un flusso di lavoro** scegliere il flusso di lavoro **ExpenseReport-Workflow1** , immettere un nome per il flusso di lavoro, ad esempio **ExpenseTest**, quindi scegliere il pulsante **Avanti** .
 
-    Viene visualizzato il form di associazione flusso di lavoro. Usarlo per segnalare l'importo del limite di spesa.
+    Viene visualizzato il form di associazione del flusso di lavoro. Usarlo per segnalare l'importo del limite di spesa.
 
-8. Nel form di associazione, immettere **1000** nel **limite di approvazione automatica** casella e quindi scegliere il **Associa flusso di lavoro** pulsante.
+8. Nel modulo di associazione, immettere **1000** nella casella **limite approvazione automatica** , quindi scegliere il pulsante **Associa flusso di lavoro** .
 
-9. Scegliere il **domestica** per tornare alla home page di SharePoint.
+9. Scegliere il pulsante **Home** per tornare alla Home page di SharePoint.
 
-10. Scegliere il **documenti condivisi** collegamento sulla barra Avvio veloce.
+10. Scegliere il collegamento **documenti condivisi** sulla barra QuickLaunch.
 
-11. Scegliere uno dei documenti caricati per visualizzare una freccia a discesa, selezionarlo e quindi scegliere il **flussi di lavoro** elemento.
+11. Scegliere uno dei documenti caricati per visualizzare una freccia a discesa, selezionarla, quindi scegliere l'elemento flussi di **lavoro** .
 
-12. Scegliere l'immagine accanto ExpenseTest per visualizzare il form di avvio del flusso di lavoro.
+12. Scegliere l'immagine accanto a ExpenseTest per visualizzare il form di avvio del flusso di lavoro.
 
-13. Nel **spese totali** casella di testo, immettere un valore che è superiore a 1000 e quindi scegliere il **Avvia flusso di lavoro** pulsante.
+13. Nella casella di testo **Expense Total** immettere un valore maggiore di 1000, quindi scegliere il pulsante **Avvia flusso di lavoro** .
 
-     Quando una spesa segnalata supera l'importo delle spese allocato, un'attività viene aggiunto all'elenco attività. Una colonna denominata **ExpenseTest** con il valore **Completed** viene inoltre aggiunto all'elemento del report nota spese nell'elenco dei documenti condivisi.
+     Quando una spesa segnalata supera l'importo delle spese allocate, viene aggiunta un'attività al Elenco attività. Una colonna denominata **ExpenseTest** con il valore **Completed** viene aggiunta anche all'elemento expense report nell'elenco Shared Documents.
 
-14. Ripetere i passaggi da 11 a 13 nell'elenco dei documenti condivisi altri documenti. (Il numero esatto di documenti non è importante.)
+14. Ripetere i passaggi 11-13 con altri documenti nell'elenco documenti condivisi. Il numero esatto di documenti non è importante.
 
-15. Visualizzare la pagina di riepilogo dell'applicazione expense report aprendo l'URL seguente in un Web browser: **http://**<em>NomeSistema</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Per visualizzare la pagina dell'applicazione Riepilogo spese, aprire l'URL seguente in un Web browser: **http://**<em>systemname</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
-     La pagina Riepilogo della nota spese Elenca tutte le note spese che supera la quantità allocata e la quantità per che è superato la quantità totale per tutti i report.
+     Nella pagina Riepilogo spese sono elencate tutte le segnalazioni spese che hanno superato l'importo allocato, la quantità per cui sono state superate e l'importo totale per tutti i report.
 
 ## <a name="next-steps"></a>Passaggi successivi
- Per altre informazioni sulle pagine dell'applicazione SharePoint, vedere [creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+ Per ulteriori informazioni sulle pagine dell'applicazione SharePoint, vedere [creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
- È possibile altre informazioni su come progettare contenuto pagina di SharePoint tramite Visual Web Designer in Visual Studio vedere gli argomenti seguenti:
+ Per ulteriori informazioni su come progettare il contenuto di una pagina di SharePoint utilizzando la finestra di progettazione visiva Web in Visual Studio, vedere gli argomenti seguenti:
 
-- [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-- [Creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Creazione di controlli riutilizzabili per Web part o pagine dell'applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Procedura: Creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)
-- [Creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [Procedura: creare una pagina dell'applicazione](../sharepoint/how-to-create-an-application-page.md)
+- [Creazione di pagine applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

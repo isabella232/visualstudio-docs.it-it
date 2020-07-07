@@ -1,7 +1,7 @@
 ---
 title: 'Procedura dettagliata: distribuzione di un progetto Elenco attività definizione | Microsoft Docs'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 dev_langs:
 - VB
 - CSharp
@@ -12,12 +12,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
-ms.translationtype: MT
+ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661878"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015759"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procedura dettagliata: distribuire una definizione di elenco attività progetto
 
@@ -25,13 +24,13 @@ In questa procedura guidata viene illustrato come utilizzare [!INCLUDE[vs_dev11_
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 - Edizioni supportate di Microsoft Windows e SharePoint.
 
 - Visual Studio 2017 o Azure DevOps Services.
 
-## <a name="create-a-sharepoint-list"></a>Creare un elenco SharePoint
+## <a name="create-a-sharepoint-list"></a>Crea un elenco di SharePoint
 
 Creare un progetto di elenco di SharePoint e associare la definizione dell'elenco alle attività.
 
@@ -43,7 +42,7 @@ Creare un progetto di elenco di SharePoint e associare la definizione dell'elenc
 
 3. Specificare il sito di SharePoint locale usato per il debug, scegliere il pulsante di opzione **Distribuisci come soluzione farm** , quindi scegliere il pulsante **fine** .
 
-4. Aprire il menu di scelta rapida per il progetto, quindi scegliere **aggiungi** > **nuovo elemento**.
+4. Aprire il menu di scelta rapida per il progetto, quindi scegliere **Aggiungi**  >  **nuovo elemento**.
 
 5. Nel riquadro **modelli** scegliere il modello **elenco** , quindi scegliere il pulsante **Aggiungi** .
 
@@ -73,7 +72,7 @@ Nell'elenco attività è possibile aggiungere un ricevitore di eventi tramite cu
 
      Al progetto viene aggiunto un nuovo nodo ricevitore di eventi con un file di codice denominato **ProjectTaskListEventReceiver**.
 
-6. Aggiungere il codice al metodo `ItemAdded` nel file di codice **ProjectTaskListEventReceiver** . Ogni volta che viene aggiunta una nuova attività, all'attività viene aggiunta una data di scadenza predefinita e una descrizione. La data di scadenza predefinita è il 1 luglio 2009.
+6. Aggiungere il codice al `ItemAdded` metodo nel file di codice **ProjectTaskListEventReceiver** . Ogni volta che viene aggiunta una nuova attività, all'attività viene aggiunta una data di scadenza predefinita e una descrizione. La data di scadenza predefinita è il 1 luglio 2009.
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
@@ -136,31 +135,31 @@ Dopo aver compilato e testato l'elenco attività progetto, è possibile distribu
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Per distribuire l'elenco di attività del progetto nel sistema locale
 
-Sulla barra dei menu di Visual Studio scegliere **compila** > **Distribuisci soluzione**.
+Sulla barra dei menu di Visual Studio scegliere **Compila**  >  **distribuzione soluzione**.
 
 Visual Studio ricicla il pool di applicazioni IIS, ritira le versioni esistenti della soluzione, copia il file del pacchetto di soluzione (con*estensione wsp*) in SharePoint e quindi ne attiva le funzionalità. È ora possibile usare la soluzione in SharePoint. Per ulteriori informazioni sui passaggi di configurazione della distribuzione, vedere [procedura: modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Per distribuire l'elenco di attività del progetto in un sistema remoto
 
-1. Sulla barra dei menu di Visual Studio scegliere **compila** > **pubblica**.
+1. Sulla barra dei menu di Visual Studio scegliere **Compila**  >  **pubblicazione**.
 
 2. Nella finestra di dialogo **pubblica** scegliere il pulsante **di opzione pubblica sul file System** .
 
      È possibile modificare il percorso di destinazione nella finestra di dialogo **pubblica** scegliendo il pulsante con i puntini di sospensione ![icona dei puntini](../sharepoint/media/ellipsisicon.gif "Icona con i puntini di sospensione") di sospensione e quindi passando a un'altra posizione.
 
-3. Scegliere il pulsante **pubblica** .
+3. Fare clic sul pulsante **Pubblica**.
 
      Viene creato un file con *estensione wsp* per la soluzione.
 
 4. Copiare il file con *estensione wsp* nel sistema SharePoint remoto.
 
-5. Usare il comando PowerShell `Add-SPUserSolution` per installare il pacchetto nell'installazione remota di SharePoint. Per le soluzioni farm, utilizzare il comando `Add-SPSolution`.
+5. Usare il `Add-SPUserSolution` comando di PowerShell per installare il pacchetto nell'installazione remota di SharePoint. Per le soluzioni farm, utilizzare il `Add-SPSolution` comando.
 
-     Ad esempio `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     Ad esempio: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
-6. Usare il comando PowerShell `Install-SPUserSolution` per distribuire la soluzione. Per le soluzioni farm, utilizzare il comando `Install-SPSolution`.
+6. Usare il `Install-SPUserSolution` comando di PowerShell per distribuire la soluzione. Per le soluzioni farm, utilizzare il `Install-SPSolution` comando.
 
-     Ad esempio `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     Ad esempio: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
      Per altre informazioni sulla distribuzione remota, vedere [uso delle soluzioni](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) e [aggiunta e distribuzione di soluzioni con PowerShell in SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 

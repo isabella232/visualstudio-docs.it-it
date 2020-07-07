@@ -1,7 +1,7 @@
 ---
-title: 'Esplora pacchetti: Aggiungere e rimuovere funzionalità e gli elementi al pacchetto'
+title: 'Esplora pacchetti: aggiungere & rimuovere funzionalità & elementi al pacchetto'
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
@@ -14,53 +14,52 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f01ecb67cb82ffe325ea471ad5fb5913c8e4d28
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: MT
+ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401555"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86014551"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti
-  Per configurare un pacchetto per distribuire gli elementi di SharePoint e le funzionalità, è possibile usare Esplora pacchetti. È possibile regolare i elementi di progetto SharePoint e le funzionalità all'interno del file con estensione wsp.
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Esplora pacchetti
+  Per configurare un pacchetto per la distribuzione di elementi e funzionalità di SharePoint, è possibile utilizzare Esplora pacchetti. È possibile modificare le funzionalità e gli elementi del progetto SharePoint all'interno del file con estensione wsp.
 
- In alternativa, è possibile utilizzare la finestra di progettazione di creazione di pacchetti per visualizzare e riordinare le funzionalità per modificare l'ordine di attivazione. Per altre informazioni, vedere [Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).
+ In alternativa, è possibile utilizzare la finestra di progettazione per la creazione di pacchetti per visualizzare e riordinare le funzionalità per modificare l'ordine di attivazione. Per ulteriori informazioni, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).
 
 ## <a name="open-the-packaging-explorer"></a>Aprire Esplora pacchetti
- È possibile utilizzare la procedura seguente per aprire l'Explorer di creazione dei pacchetti, se la soluzione di Visual Studio contiene almeno un progetto SharePoint. In alternativa, Esplora pacchetti viene aperto automaticamente quando si visualizza una finestra di progettazione di funzionalità o un pacchetto. Dopo aver chiuso tutte le finestre di progettazione di funzionalità e del pacchetto, viene chiusa anche Esplora pacchetti.
+ È possibile utilizzare la procedura seguente per aprire Esplora pacchetti, se la soluzione di Visual Studio include almeno un progetto SharePoint. In alternativa, Esplora pacchetti viene aperto automaticamente quando si visualizza una funzionalità o progettazione pacchetti. Dopo aver chiuso tutte le finestre di progettazione di pacchetti e funzionalità, viene chiuso anche lo Esplora pacchetti.
 
 #### <a name="to-open-the-packaging-explorer"></a>Per aprire Esplora pacchetti
 
-1. Nella barra dei menu, scegliere **View** > **Other Windows** > **Esplora pacchetti**.
+1. Sulla barra dei menu scegliere **Visualizza**  >  **altri Windows**  >  **Packaging Explorer**.
 
-     Il **Esplora pacchetti** viene visualizzato nei **della casella degli strumenti**.
+     **Esplora pacchetti** viene visualizzato nella **casella degli strumenti**.
 
 ## <a name="adding-a-feature-to-a-package"></a>Aggiunta di una funzionalità a un pacchetto
- È possibile aggiungere le funzionalità nuove ed esistenti a un pacchetto usando Esplora pacchetti.
+ È possibile aggiungere funzionalità nuove ed esistenti a un pacchetto usando Esplora pacchetti.
 
 #### <a name="to-add-a-sharepoint-feature"></a>Per aggiungere una funzionalità di SharePoint
 
-1. Aprire il **Esplora pacchetti**, aprire il menu di scelta rapida per il progetto e quindi scegliere **Aggiungi funzionalità**.
+1. Aprire **Esplora pacchetti**, aprire il menu di scelta rapida per il progetto, quindi scegliere **Aggiungi funzionalità**.
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>Per spostare una funzionalità di SharePoint esistente
 
-1. Aprire il **Esplora pacchetti**e quindi effettuare una delle operazioni seguenti:
+1. Aprire **Esplora pacchetti**, quindi eseguire una delle operazioni seguenti:
 
-    - Trascinare un **funzionalità** da un progetto a un altro progetto.
+    - Trascinare una **funzionalità** da un progetto a un altro progetto.
 
-    - Aprire il menu di scelta rapida per una funzionalità, scegliere **tagliare**, aprire il menu di scelta rapida per il progetto a cui si desidera spostare la funzionalità e quindi scegliere **Incolla**.
+    - Aprire il menu di scelta rapida per una funzionalità, scegliere **taglia**, aprire il menu di scelta rapida per il progetto in cui si desidera spostare la funzionalità, quindi scegliere **Incolla**.
 
     > [!NOTE]
     > Utilizzare questa procedura se nella soluzione sono presenti diversi progetti SharePoint.
 
 ## <a name="validate-a-feature-or-package"></a>Convalidare una funzionalità o un pacchetto
- È possibile identificare problemi potenziali nella funzionalità di SharePoint e i pacchetti tramite la convalida i file. Errori e avvisi vengono visualizzati nella finestra di Output e finestra Elenco errori.
+ È possibile identificare potenziali problemi nelle funzionalità e nei pacchetti di SharePoint convalidando i file. Gli avvisi e gli errori vengono visualizzati nella finestra di output e Elenco errori finestra.
 
-#### <a name="to-validate-a-sharepoint-feature-or-package"></a>Per convalidare un pacchetto o una funzionalità SharePoint
+#### <a name="to-validate-a-sharepoint-feature-or-package"></a>Per convalidare una funzionalità o un pacchetto di SharePoint
 
-1. Aprire il **Esplora pacchetti**.
+1. Aprire **Esplora pacchetti**.
 
-2. Aprire un menu di scelta rapida per una funzionalità o un pacchetto e quindi scegliere **Validate**.
+2. Aprire un menu di scelta rapida per una funzionalità o un pacchetto, quindi scegliere **convalida**.
 
 ## <a name="see-also"></a>Vedere anche
-- [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

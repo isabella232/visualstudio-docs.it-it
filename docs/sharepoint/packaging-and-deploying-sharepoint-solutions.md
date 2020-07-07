@@ -1,7 +1,7 @@
 ---
 title: Creazione di pacchetti e distribuzione di soluzioni SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45815e03d887f4d22f2559acf741f612cab34c49
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986214"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015597"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Creare pacchetti e distribuire soluzioni SharePoint
   In genere, una soluzione SharePoint viene distribuita in un server SharePoint tramite un file di pacchetto di soluzione (con estensione wsp). È possibile utilizzare Visual Studio per organizzare gli elementi del progetto SharePoint in funzionalità e creare un pacchetto per distribuire le funzionalità di SharePoint.
 
- In questo argomento vengono fornite le seguenti informazioni:
+ Questo argomento contiene informazioni sui seguenti aspetti:
 
 - [Creazione di funzionalità e pacchetti](#create-features-and-packages)
 
@@ -95,7 +94,7 @@ ms.locfileid: "72986214"
 
  Per aggiungere ad esempio un file *XML* a un progetto SharePoint, eseguire una delle operazioni seguenti:
 
-- Aggiungere una cartella mappata "Layouts" di SharePoint al progetto. In **Esplora soluzioni** una cartella denominata **Layouts** che include una sottocartella per il progetto. Aggiungere il file con *estensione XML* alla nuova sottocartella. Per impostazione predefinita, il file viene distribuito nel file system di SharePoint in *. \TEMPLATE\LAYOUTS\\\<nome cartella >* . Per informazioni su come aggiungere cartelle mappate, vedere [procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+- Aggiungere una cartella mappata "Layouts" di SharePoint al progetto. In **Esplora soluzioni** una cartella denominata **Layouts** che include una sottocartella per il progetto. Aggiungere il file con *estensione XML* alla nuova sottocartella. Per impostazione predefinita, il file viene distribuito nel file system di SharePoint in *. \\\TEMPLATE\LAYOUTS \<Folder Name> *. Per informazioni su come aggiungere cartelle mappate, vedere [procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 - Aggiungere il *file XML* alla cartella di un elemento del progetto SharePoint, quindi modificare la proprietà del **tipo di distribuzione** del file *con estensione XML* da **NoDeployment** a un'altra impostazione, ad esempio **RootFile** o **ElementFile**. L'impostazione del **tipo di distribuzione** appropriato dipende dal file e dal progetto. Per ulteriori informazioni sulle impostazioni delle proprietà del **tipo di distribuzione** , vedere [sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).
 

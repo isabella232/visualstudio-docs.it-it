@@ -1,7 +1,7 @@
 ---
 title: Creazione di Web part per SharePoint | Microsoft Docs
 ms.date: 02/02/2017
-ms.topic: conceptual
+ms.topic: overview
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -23,12 +23,11 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82e0d860f21f0fe2744c8c05c4ebeb3590be68fc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
-ms.translationtype: MT
+ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
+ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984469"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "86015055"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Creazione di Web part per SharePoint
   Utilizzando Web part è possibile modificare il contenuto, l'aspetto e il comportamento delle pagine di un sito di SharePoint tramite un browser. Le web part sono controlli lato server che vengono eseguiti all'interno di una pagina Web part: si tratta dei blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Vedere [blocco predefinito: Web part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -45,7 +44,7 @@ ms.locfileid: "72984469"
 
 |File|Descrizione|
 |----------|-----------------|
-|*Elements. XML*|Contiene informazioni che il file di definizione delle funzionalità nel progetto utilizza per distribuire la Web part.|
+|*Elements.xml*|Contiene informazioni che il file di definizione delle funzionalità nel progetto utilizza per distribuire la Web part.|
 |file con estensione WebPart|Fornisce le informazioni necessarie a SharePoint per visualizzare la Web part in una raccolta web part.|
 |File di codice|Contiene metodi che aggiungono controlli alla web part e che generano contenuto personalizzato all'interno della web part.|
 
@@ -57,7 +56,7 @@ ms.locfileid: "72984469"
 ## <a name="sharepoint-controls"></a>Controlli di SharePoint
  Visual Studio fornisce alcuni controlli per la creazione di pagine di SharePoint, ad esempio le pagine dell'applicazione. Questi controlli vengono visualizzati nella **casella degli strumenti** in **controlli di SharePoint**. La funzionalità per questi controlli deriva dallo spazio dei nomi [Microsoft. SharePoint. WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) , che contiene i controlli server ASP.NET che vengono utilizzati nelle pagine del sito e dell'elenco di SharePoint.
 
-|Nome controllo|Descrizione|
+|Nome del controllo|Descrizione|
 |------------------|-----------------|
 |[AspMenu](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|Inserisce un menu ASP. Per altre informazioni, vedere [Cenni preliminari sul controllo menu](/previous-versions/ecs0x9w5(v=vs.140)).|
 |[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|Inserisce un elemento di **collegamento** nella pagina *aspx* e applica uno o più fogli di stile esterni definiti da **CssRegistration**.|
@@ -91,16 +90,16 @@ ms.locfileid: "72984469"
 
    Sebbene sia possibile aggiungere codice JavaScript inline a un file di markup sul lato server, il debug non è supportato per i punti di interruzione aggiunti al markup. Per eseguire il debug di JavaScript, fare riferimento a un file JavaScript esterno nel file di markup, quindi impostare i punti di interruzione nel file JavaScript.
 
-- Il debug del codice [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] inline deve essere eseguito nel file di codice generato anziché nel file di markup.
+- Il debug del codice inline [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] deve essere eseguito nel file di codice generato anziché nel file di markup.
 
-- Le web part visive non supportano l'utilizzo della direttiva `<@ Assembly Src=`.
+- Le web part visive non supportano l'utilizzo della `<@ Assembly Src=` direttiva.
 
-- I controlli Web di SharePoint e alcuni controlli [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] non sono supportati nell'ambiente sandbox di SharePoint. Se i controlli non supportati vengono utilizzati in una Web part visiva in una soluzione creata mediante sandbox, viene visualizzato l'errore "il tipo o il nome dello spazio dei nomi ' Theme ' non esiste nello spazio dei nomi ' Microsoft. SharePoint. WebControls '".
+- I controlli Web di SharePoint e alcuni [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] controlli non sono supportati nell'ambiente sandbox di SharePoint. Se i controlli non supportati vengono utilizzati in una Web part visiva in una soluzione creata mediante sandbox, viene visualizzato l'errore "il tipo o il nome dello spazio dei nomi ' Theme ' non esiste nello spazio dei nomi ' Microsoft. SharePoint. WebControls '".
 
   Per ulteriori informazioni sulle soluzioni create mediante sandbox, vedere [differenze tra soluzioni create mediante sandbox e soluzioni farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Creazione di Web part basate su SharePoint in stile obsoleto
- È possibile utilizzare i modelli in Visual Studio per creare Web part [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] personalizzate per SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web part sono basate sull'infrastruttura della web part [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] e sono il tipo consigliato per i nuovi progetti.
+ È possibile utilizzare i modelli in Visual Studio per creare [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web part personalizzate per SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]le web part sono basate sull'infrastruttura delle [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Web part e sono il tipo consigliato per i nuovi progetti.
 
  In pochissimi casi, potrebbe essere necessario creare una Web part utilizzando la Web part basata su SharePoint di tipo obsoleto. È possibile utilizzare Visual Studio per creare questi tipi di Web part, ma Visual Studio non fornisce alcun modello progettato specificamente per facilitarne la creazione.
 
