@@ -6,7 +6,7 @@
       href: javascript-in-vs-2019.md
     - name: JavaScript in Visual Studio 2017
       href: javascript-in-vs-2017.md
-- name: Guide introduttive
+- name: Guide rapide introduttive
   items:
     - name: Presentazione dell'IDE di Visual Studio
       href: quickstart-ide-orientation-js.md
@@ -38,9 +38,9 @@
       href: nodejs-interactive-repl.md
     - name: IntelliSense per JavaScript
       href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-    - name: Eseguire il debug di un'applicazione JavaScript
+    - name: Debug
       href: debug-nodejs.md
-    - name: Testing unità per JavaScript
+    - name: Unit test
       href: unit-testing-javascript-with-visual-studio.md
 - name: Risorse
   items:
