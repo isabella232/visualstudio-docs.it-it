@@ -1,16 +1,16 @@
 ---
 title: Connettersi a progetti in Team Explorer
-ms.date: 05/19/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 8b79dff4815b8a03d81d66a3d64d0e23439e4021
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 31fab067ec9844b36c287b80ed481a68861b222e
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183704"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092323"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Connettersi a progetti in Team Explorer
 
@@ -42,6 +42,7 @@ Per connettersi a un progetto:
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Esercitazione: aprire un progetto da un repository](../get-started/tutorial-open-project-from-repo.md)
 - [Informazioni di riferimento su Team Explorer](reference/team-explorer-reference.md)
 - [Connect to a project (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects) (Connettersi a un progetto (Azure DevOps))
 - [Risolvere i problemi di connessione a un progetto](/azure/devops/user-guide/troubleshoot-connection?view=azure-devops)

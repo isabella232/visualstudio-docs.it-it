@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa1148a47919c12fa423bd90f6d63c030cf743c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
+ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770524"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86092310"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
@@ -74,7 +74,7 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 |-------------------|:-----------------------:|
 |Consente di aprire la finestra di definizione|**ALT** + **F12**|
 |Consente di chiudere la finestra di definizione|**ESC**|
-|Consente di alzare di livello la finestra di definizione in una scheda documento normale|**Sposta** + **ALT** + **Pagina iniziale**|
+|Consente di alzare di livello la finestra di definizione in una scheda documento normale|**CTRL** + **ALT** + **Pagina iniziale**|
 |Consente di spostarsi tra le finestre di definizione|**CTRL** + **Alt** + ALT **-** e **CTRL** + **ALT**+**=**|
 |Consente di spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
 |Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**Sposta** + **ESC**|

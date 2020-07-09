@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5189278f8efe42e6e7916562e7ce4f5d6a964061
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
+ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938255"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86137558"
 ---
 # <a name="developer-community-guidelines"></a>Linee guida per Developer Community
 
@@ -64,6 +64,17 @@ Quando in un problema mancano informazioni importanti, viene assegnato lo stato 
 ### <a name="wont-fix-bugs"></a>Non correggerà i bug
 
 Si chiudono alcuni bug quando si verifica un saldo negativo del vantaggio economico. Se, ad esempio, la correzione è talmente complessa da rischiare la regressione per molti utenti, la correzione potrebbe non essere ragionevole. Quando si chiude un bug di questo tipo, verrà spiegato il motivo per cui si esegue questa operazione.
+
+### <a name="other-product"></a>Altro prodotto
+
+In alcuni casi, quando si segnala un problema, la causa è causata da un altro prodotto e non da Visual Studio. Potrebbe trattarsi di un'altra applicazione correlata o di un'estensione. 
+
+In tal caso, il problema verrà chiuso e verrà chiesto di aprirlo con l'altro prodotto. Di seguito sono riportate alcune posizioni comuni per archiviare i problemi:
+
+* [SQL Server](https://feedback.azure.com/forums/908035-sql-server)
+* [Supporto per le sottoscrizioni di Visual Studio](https://feedback.azure.com/forums/908035-sql-server)
+* [Office](https://support.office.com/article/how-do-i-give-feedback-on-microsoft-office-2b102d44-b43f-4dd2-9ff4-23cf144cfb11)
+* [Windows](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)
 
 #### <a name="additional-information"></a>Informazioni aggiuntive
 
