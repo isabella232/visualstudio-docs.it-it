@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de463fbc941273bed9b949958b9463be6ea1fa3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 35bd6f26b56ea7c3a1d578e5721504a91f60b74c
+ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285634"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86156850"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -81,7 +81,7 @@ Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte su
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 ::: moniker range="vs-2017"
-|Pulsante|Description|
+|Button|Descrizione|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
@@ -149,21 +149,21 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
 ::: moniker range="vs-2017"
-|Gruppo|Description|
+|Gruppo|Descrizione|
 |-|-----------------|
 |**Duration**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
-|**Project**|Raggruppa i test in base al nome dei progetti.|
+|**Progetto**|Raggruppa i test in base al nome dei progetti.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Gruppo|Description|
+|Gruppo|Descrizione|
 |-|-----------------|
 |**Duration**|Raggruppa i test in base al tempo di esecuzione: **veloce**, **medio**e **lento**.|
 |**State**|Raggruppa i test per risultati di esecuzione: **test non**superati, **test ignorati**, **test superati**, **non eseguiti**|
 |**Framework di destinazione** | Raggruppa i test in base al framework di destinazione dei progetti |
-|**Namespace**|Raggruppa i test in base allo spazio dei nomi contenitore.|
-|**Project**|Raggruppa i test in base al progetto contenitore.|
+|**Spazio dei nomi**|Raggruppa i test in base allo spazio dei nomi contenitore.|
+|**Progetto**|Raggruppa i test in base al progetto contenitore.|
 |**Class**|Raggruppa i test in base alla classe contenitore.|
 ::: moniker-end
 
@@ -175,7 +175,7 @@ Una tratto è in genere una coppia nome/valore di una categoria, ma può anche e
 
 Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Il framework di test contiene anche i tratti predefiniti seguenti:
 
-|Caratteristica|Description|
+|Caratteristica|Descrizione|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|
@@ -211,11 +211,21 @@ Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsi
 
 La playlist verrà aperta in una nuova scheda Esplora test. È possibile usare questa playlist una volta e quindi eliminarla oppure fare clic sul pulsante **Salva** sulla barra degli strumenti della finestra della playlist, quindi selezionare un nome e un percorso per salvare la playlist.
 
-![La playlist si apre in una nuova scheda di Esplora test](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
+![La playlist si apre in una nuova scheda di Esplora test](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
 **Per creare una playlist**, scegliere uno o più test in Esplora Test. Fare clic con il pulsante destro del mouse e scegliere **Aggiungi a playlist**  >  **nuova playlist**.
 
 **Per aprire una playlist**, scegliere l'icona della playlist sulla barra degli strumenti di Visual Studio, quindi scegliere un file di playlist salvato in precedenza dal menu.
+
+**Per modificare una playlist**, è possibile fare clic con il pulsante destro del mouse su qualsiasi test e usare le opzioni di menu per aggiungerlo o rimuoverlo da una playlist.
+
+A partire da Visual Studio 2019 versione 16,7, è possibile scegliere il pulsante **modifica** nella barra degli strumenti. Le caselle di controllo verranno visualizzate accanto ai test che mostrano quali test sono inclusi ed esclusi nella playlist. Modificare i gruppi in base alle esigenze.
+
+![Pulsante Modifica playlist](../test/media/vs-2019/test-explorer-playlist-edit-16-7.png)
+
+È inoltre possibile selezionare o deselezionare le caselle dei gruppi padre nella gerarchia. Questa azione crea una playlist dinamica che aggiorna sempre la playlist in base ai test presenti nel gruppo. Se, ad esempio, si posiziona un segno di spunta accanto a una classe, qualsiasi test aggiunto da tale classe diventa parte di questa playlist. Se si elimina un test da tale classe, questo viene rimosso dalla playlist. È possibile ottenere altre informazioni sulle regole salvando la playlist con il pulsante Salva sulla barra degli strumenti e aprendo il file con *estensione playlist* creato sul disco. Questo file elenca tutte le regole e i singoli test che costituiscono una playlist.
+
+![File XML playlist](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -267,7 +277,7 @@ Per filtrare in base a un criterio diverso:
 |Qualifier|Descrizione|
 |-|-----------------|
 |**Caratteristica**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
-|**Project**|Cerca le corrispondenze nei nomi dei progetti di test.|
+|**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
 |**Messaggio di errore**|Cerca le corrispondenze nei messaggi di errore definiti dall'utente restituiti da asserzioni non riuscite.|
 |**Percorso file**|Cerca le corrispondenze nel nome file completo dei file di origine test.|
 |**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
@@ -280,9 +290,9 @@ Per filtrare in base a un criterio diverso:
 |**State**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
-|**Project**|Cerca le corrispondenze nei nomi dei progetti di test.|
+|**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
 |**Framework di destinazione**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
-|**Namespace**|Cerca le corrispondenze negli spazi dei nomi di test.|
+|**Spazio dei nomi**|Cerca le corrispondenze negli spazi dei nomi di test.|
 |**Class**|Cerca le corrispondenze nei nomi delle classi di test.|
 ::: moniker-end
 
@@ -353,7 +363,7 @@ I test possono essere eseguiti da Esplora test facendo clic con il pulsante dest
 > [!NOTE]
 > Non è possibile eseguire un test in una classe astratta, poiché i test vengono solo definiti nelle classi astratte ma non ne viene creata l'istanza. Per eseguire i test nelle classi astratte, creare una classe che deriva dalla classe astratta.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire uno unit test come processo a 64 bit](../test/run-a-unit-test-as-a-64-bit-process.md)

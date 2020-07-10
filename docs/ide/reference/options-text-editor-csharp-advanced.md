@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0e04a011612cdebebd244fc061981b713b858a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ff42473c6f56d69a56cfbd811f2687ba544c7c5e
+ms.sourcegitcommit: 4d932000a0f7e79c9475fe66c02fe9addcd7e47a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79431488"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86181066"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
-Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina delle opzioni, scegliere**Opzioni** **degli strumenti** > , quindi Scegliere Editor **di** > testo**di Impostazioni avanzate**di**C .** > 
+Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni**e quindi scegliere **editor di testo**  >  **C#**  >  **Avanzate**.
 
 > [!NOTE]
 > È possibile che non tutte le opzioni siano elencate.
@@ -28,7 +28,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
 - Analisi del codice in tempo reale o ambito di analisi in background
 
-   Configurare l'ambito di analisi in background per il codice gestito. Per ulteriori informazioni, vedere [Procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito.](../../code-quality/configure-live-code-analysis-scope-managed-code.md)
+   Configurare l'ambito di analisi in background per il codice gestito. Per altre informazioni, vedere [procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito](../../code-quality/configure-live-code-analysis-scope-managed-code.md).
 
 ## <a name="using-directives"></a>Direttive using
 
@@ -87,7 +87,14 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
    using System.Linq;
    ```
 
-- Suggerire l'utilizzo di tipi negli assembly .NET Framework
+::: moniker range=">=vs-2019"                                              
+- Suggerisci le using per i tipi in assembly .NET Framework
+::: moniker-end
+                                         
+::: moniker range="vs-2017"                                                
+- Suggerisci le direttive using per i tipi in assembly di riferimento
+::: moniker-end                                                            
+
 - Suggerisci le direttive using per i tipi in pacchetti NuGet
 
    Se queste opzioni sono selezionate, è disponibile un'[azione rapida](../quick-actions.md) per installare un pacchetto NuGet e aggiungere una direttiva `using` per i tipi senza riferimenti.
@@ -100,7 +107,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
    Quando il cursore viene posizionato all'interno di un simbolo o quando si fa clic su un simbolo, vengono evidenziate tutte le istanze del simbolo nel file di codice.
 
-## <a name="outlining"></a>Struttura
+## <a name="outlining"></a>struttura
 
 - Attiva modalità struttura all'apertura dei file
 
@@ -118,7 +125,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 
-Selezionare queste caselle di controllo per visualizzare le**{}** linee verticali tratteggiate tra le parentesi graffe ( ) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
+Selezionare queste caselle di controllo per visualizzare le linee verticali punteggiate tra parentesi graffe ( **{}** ) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
 
 ## <a name="editor-help"></a>Guida Editor
 
@@ -131,5 +138,5 @@ Selezionare queste caselle di controllo per visualizzare le**{}** linee vertical
 - [Procedura: Inserire commenti XML per la generazione di documentazione](../../ide/reference/generate-xml-documentation-comments.md)
 - [Commenti in formato documentazione XML (Guida per programmatori C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentare il codice con commenti XML (Guida a C#)](/dotnet/csharp/codedoc)
-- [Impostare le opzioni dell'editor specifiche del linguaggio](../../ide/reference/setting-language-specific-editor-options.md)
-- [IntelliSense di C](../../ide/visual-csharp-intellisense.md)
+- [Impostare opzioni dell'editor specifiche del linguaggio](../../ide/reference/setting-language-specific-editor-options.md)
+- [IntelliSense per C#](../../ide/visual-csharp-intellisense.md)
