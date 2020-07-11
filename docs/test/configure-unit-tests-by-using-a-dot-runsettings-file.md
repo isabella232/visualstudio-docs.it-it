@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ae90ae493fb216d89f0e0ee79fdf7e173a3e72
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e03400cf916319f963457af5740139bc88fc5105
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288767"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211603"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare gli unit test usando un file con *estensione runsettings*
 
@@ -67,7 +67,7 @@ Esistono tre modi per specificare un file di impostazioni esecuzione test in Vis
     </Project>
     ```
 
-- Inserire un file di impostazioni esecuzione test denominato ". runsettings" nella radice della soluzione.
+- Inserire un file di impostazioni esecuzione test denominato *. runsettings* alla radice della soluzione.
 
   Se il rilevamento automatico dei file delle impostazioni esecuzione test è abilitato, le impostazioni in questo file vengono applicate a tutti i test eseguiti. È possibile attivare il rilevamento automatico dei file runsettings da due posizioni:
   
@@ -205,6 +205,11 @@ Il codice XML seguente rappresenta il contenuto di un tipico file con estensione
           </MediaRecorder>
         </Configuration>
       </DataCollector>
+
+      <!-- Configuration for blame data collector -->
+      <DataCollector friendlyName="blame" enabled="True">
+      </DataCollector>
+
     </DataCollectors>
   </DataCollectionRunSettings>
 
@@ -233,6 +238,7 @@ Il codice XML seguente rappresenta il contenuto di un tipico file con estensione
           <LogFileName>foo.html</LogFileName>
         </Configuration>
       </Logger>
+      <Logger friendlyName="blame" enabled="True" />
     </Loggers>
   </LoggerRunSettings>
 
@@ -311,6 +317,16 @@ L'agente di raccolta dati video acquisisce la registrazione di una schermata qua
 
 Per personalizzare qualsiasi altro tipo di adattatore dati di diagnostica, usare un [file di impostazioni di test](../test/collect-diagnostic-information-using-test-settings.md).
 
+
+### <a name="blame-data-collector"></a>Incolpare l'agente di raccolta dati
+
+```xml
+<DataCollector friendlyName="blame" enabled="True">
+</DataCollector>
+```
+
+Questa opzione può essere utile per isolare un test problematico che causa un arresto anomalo di un host di test. Eseguendo l'agente di raccolta, viene creato un file di output (*Sequence.xml*) in *TestResults*, che acquisisce l'ordine di esecuzione del test prima dell'arresto anomalo. 
+
 ### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
@@ -356,7 +372,7 @@ Per usare i parametri di esecuzione dei test, aggiungere un campo <xref:Microsof
   </LoggerRunSettings>
 ```
 
-`LoggerRunSettings`la sezione definisce uno o più logger da usare per l'esecuzione dei test. I logger più comuni sono console, TRX e HTML. 
+La `LoggerRunSettings` sezione definisce uno o più logger da usare per l'esecuzione dei test. I logger più comuni sono console, TRX e HTML. 
 
 ### <a name="mstest-run-settings"></a>Impostazioni di esecuzione MSTest
 
@@ -386,6 +402,33 @@ Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi 
 |**MapInconclusiveToFailed**|false|Se un test viene completato senza risultati, ne viene eseguito il mapping allo stato Ignorato in **Esplora test**. Se si vuole che i test senza risultati vengano visualizzati come non superati, impostare il valore su **true**.|
 |**InProcMode**|false|Per fare in modo che i test vengano eseguiti nello stesso processo dell'adattatore MSTest, impostare questo valore su **true**. Questa impostazione fornisce un lieve miglioramento delle prestazioni. Ma se un test termina con un'eccezione, i test rimanenti non vengono eseguiti.|
 |**AssemblyResolution**|false|È possibile specificare i percorsi di assembly aggiuntivi durante la ricerca e l'esecuzione di unit test. Ad esempio, è possibile usare questi percorsi per gli assembly di dipendenza che non si trovano nella stessa directory dell'assembly di test. Per specificare un percorso, usare un elemento **Directory Path**. I percorsi possono includere variabili di ambiente.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+
+## <a name="specify-environment-variables-in-the-runsettings-file"></a>Specificare le variabili di ambiente nel file con *estensione runsettings*
+
+Le variabili di ambiente possono essere impostate nel file con *estensione runsettings* , che può interagire direttamente con l'host di test. Specificare le variabili di ambiente nel file *. runsettings* è necessario per supportare progetti non semplici che richiedono l'impostazione di variabili di ambiente come *DOTNET_ROOT*. Queste variabili vengono impostate durante la generazione del processo host di test e sono disponibili nell'host.
+
+### <a name="example"></a>Esempio
+
+Il codice seguente è un file con *estensione runsettings* di esempio che passa le variabili di ambiente:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File name extension must be .runsettings -->
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- List of environment variables we want to set-->
+      <DOTNET_ROOT>C:\ProgramFiles\dotnet</DOTNET_ROOT>
+      <SDK_PATH>C:\Codebase\Sdk</SDK_PATH>
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
+```
+
+Il nodo **RunConfiguration** deve contenere un nodo **EnvironmentVariables** . Una variabile di ambiente può essere specificata come nome di elemento e il relativo valore.
+
+> [!NOTE]
+> Poiché queste variabili di ambiente devono essere sempre impostate quando l'host di test viene avviato, i test devono sempre essere eseguiti in un processo separato. A tale scopo, il flag */InIsolation* verrà impostato in presenza di variabili di ambiente in modo che l'host di test venga sempre richiamato.
 
 ## <a name="see-also"></a>Vedi anche
 
