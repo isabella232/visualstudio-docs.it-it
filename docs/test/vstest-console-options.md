@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b776599b484bef2b02c50528e838b9be82aa035
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289040"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211567"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -32,7 +32,7 @@ Aprire una [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/dev
 
 Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.exe* con una breve descrizione. È possibile visualizzare un riepilogo simile digitando `VSTest.Console/?` a una riga di comando.
 
-| Opzione | Description |
+| Opzione | Descrizione |
 |---|---|
 |**[*nomi file di test*]**|Esegue i test dai file specificati. Per separare i nomi di file di test, usare gli spazi.<br />Esempi: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*nome file*]**|Eseguire i test con ulteriori impostazioni, ad esempio gli agenti di raccolta dati.<br />Esempio: `/Settings:Local.RunSettings`|
@@ -52,7 +52,7 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 |**/ListExecutors**|Elenca gli executor di test installati.|
 |**/ListLoggers**|Elenca i logger di test installati.|
 |**/ListSettingsProviders**|Elenca i provider di impostazioni test installati.|
-|**/Blame**|Monitora i test durante l'esecuzione e, se il processo host del test si arresta in modo anomalo, genera i nomi dei test nella sequenza di esecuzione fino al test specifico che era in esecuzione al momento dell'arresto anomalo. Questo output semplifica l'isolamento del test che causa l'errore e l'ulteriore diagnosi. [Ulteriori informazioni](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/Blame**|Esegue i test in modalità di segnalazione degli errori. Questa opzione è utile per isolare i test problematici che provocano l'arresto anomalo dell'host di test. Quando viene rilevato un arresto anomalo del sistema, viene creato un file di sequenza in `TestResults/<Guid>/<Guid>_Sequence.xml` che acquisisce l'ordine dei test eseguiti prima dell'arresto anomalo. Per ulteriori informazioni, vedere [Blame Data Collector](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nome file*]**|Scrive i log di traccia di diagnostica nel file specificato.|
 |**/ResultsDirectory:[*percorso*]**|Directory dei risultati dei test che verrà creata nel percorso specificato, se non esistente.<br />Esempio: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*ID processo padre*]**|ID del processo padre responsabile dell'avvio del processo corrente.|
@@ -62,26 +62,46 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 > [!TIP]
 > Opzioni e valori non applicano la distinzione tra maiuscole e minuscole.
 
-## <a name="examples"></a>Esempio
+## <a name="examples"></a>Esempi
 
-La sintassi per l'esecuzione di *VSTest.Console.exe* è:
+La sintassi per l'esecuzione di *vstest.console.exe* è la seguente:
 
-`Vstest.console.exe [TestFileNames] [Options]`
+`vstest.console.exe [TestFileNames] [Options]`
 
-Il comando riportato di seguito esegue *VSTest.Console.exe* per la libreria di test **myTestProject.dll**:
+Il comando seguente esegue *vstest.console.exe* per la libreria di test *myTestProject.dll*:
 
 ```cmd
 vstest.console.exe myTestProject.dll
 ```
 
-Il comando riportato di seguito esegue *VSTest.Console.exe* con più file di test. Per separare i nomi di file di test, usare gli spazi:
+Il comando seguente esegue *vstest.console.exe* con più file di test. Per separare i nomi di file di test, usare gli spazi:
 
 ```cmd
-Vstest.console.exe myTestFile.dll myOtherTestFile.dll
+vstest.console.exe myTestFile.dll myOtherTestFile.dll
 ```
 
-Il comando riportato di seguito esegue *VSTest.Console.exe* con diverse opzioni. Esegue i test indicati nel file *myTestFile.dll* in un processo isolato e usa le impostazioni specificate nel file *Local.RunSettings*. Esegue inoltre solo i test contrassegnati "Priority=1" e registra i risultati in un file con estensione *trx*.
+Il comando seguente esegue *vstest.console.exe* con varie opzioni. Esegue i test indicati nel file *myTestFile.dll* in un processo isolato e usa le impostazioni specificate nel file *Local.RunSettings*. Esegue inoltre solo i test contrassegnati "Priority=1" e registra i risultati in un file con estensione *trx*.
 
 ```cmd
-vstest.console.exe  myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+vstest.console.exe myTestFile.dll /Settings:Local.RunSettings /InIsolation /TestCaseFilter:"Priority=1" /Logger:trx
+```
+
+Il comando seguente esegue *vstest.console.exe* con l' `/blame` opzione per la libreria di test *myTestProject.dll*:
+
+```cmd
+vstest.console.exe myTestFile.dll /blame
+```
+
+Se si è verificato un arresto anomalo dell'host di test, viene generato il file di *sequence.xml* . Il file contiene i nomi completi dei test nella sequenza di esecuzione fino al test specifico che era in esecuzione al momento dell'arresto anomalo.
+
+Se non è presente un arresto anomalo dell'host di test, il file di *sequence.xml* non verrà generato.
+
+Esempio di un file di *sequence.xml* generato: 
+
+```xml
+<?xml version="1.0"?>
+<TestSequence>
+  <Test Name="TestProject.UnitTest1.TestMethodB" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+  <Test Name="TestProject.UnitTest1.TestMethodA" Source="D:\repos\TestProject\TestProject\bin\Debug\TestProject.dll" />
+</TestSequence>
 ```

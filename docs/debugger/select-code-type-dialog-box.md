@@ -15,18 +15,20 @@ helpviewer_keywords:
 - debugging [Visual Studio], engine selection
 - debugger, engine selection
 - debugging engine selection dialog box
+no-loc:
+- Blazor WebAssembly
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6831837853f2e8dd5502e57d0976899c5d31a1a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9ccfe636cd8981c2f9dcc1375fb795d6c026b572
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285426"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211582"
 ---
 # <a name="select-code-type-dialog-box"></a>Finestra di dialogo Seleziona tipo di codice
 
@@ -37,7 +39,7 @@ Per visualizzare questa finestra di dialogo, aprire la finestra di dialogo **Con
 **Eseguire il debug di questi tipi di codice:** Dall'elenco fornito scegliere i tipi di codice di cui si vuole eseguire il debug. Questo può essere utile durante [la risoluzione di un errore di connessione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Questa opzione limita il rilevamento solo ai tipi di codice di cui si vuole eseguire il debug.
 
    ::: moniker range=">=vs-2019"
-   - Webassembly Blazer-webassembly sul lato client
+   - Blazor WebAssembly-Lato clientBlazor WebAssembly
    - GPU-emulatore software-codice C++ in esecuzione in un emulatore software GPU
    - JavaScript (Chrome)-JavaScript in esecuzione in Chrome
    - JavaScript (Microsoft Edge-Chromium)-JavaScript in esecuzione in Microsoft Edge basato su cromo per Windows 10
@@ -57,6 +59,6 @@ Per visualizzare questa finestra di dialogo, aprire la finestra di dialogo **Con
 
    Per la maggior parte degli scenari, non è supportato il fissaggio di più debugger nella stessa sessione di debug. Questa operazione può essere eseguita usando una seconda istanza di Visual Studio.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

@@ -101,6 +101,6 @@ Questo file contiene il codice che configura il comportamento dell'app, ad esemp
 ## <a name="summary"></a>Riepilogo
 In questa esercitazione è stato illustrato come creare una nuova Blazor app Server in Visual Studio per Mac e sono state apprese alcune delle funzionalità offerte da Visual Studio per Mac per semplificare la creazione delle Blazor applicazioni.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 Per una guida più completa alla creazione di Blazor app Web, vedere [introduzione a Blazor ASP.NET Core ](/aspnet/core/blazor/index).

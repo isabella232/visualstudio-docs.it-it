@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: 936216702113fbba2ec7251363418ab6182ade4a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906030"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211611"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
@@ -40,7 +40,7 @@ Chiunque disponga dell'accesso di [proprietario](https://docs.microsoft.com/azur
 
 4. Selezionare il numero di sottoscrizioni da acquistare.
     > [!div class="mx-imgBorder"]
-    > ![Selezionare il numero di sottoscrizioni](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
+    > ![Selezionare il numero di sottoscrizioni](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Scegliere il numero di sottoscrizioni da acquistare")
 
     Se non si vuole che le sottoscrizioni vengano assegnate a se stessi, deselezionare **Assegna questa sottoscrizione a me**.
 
@@ -62,12 +62,18 @@ Se sono state acquistate più sottoscrizioni, procedere al [portale di amministr
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Annullare il rinnovo delle sottoscrizioni cloud acquistate
 
-* Per modificare il numero di sottoscrizioni acquistate:
+Per annullare le sottoscrizioni, è sufficiente impostare il numero di sottoscrizioni per il contratto su zero (0).  Per ridurre il numero di sottoscrizioni, attenersi alla procedura seguente:
+1. Accedi a<https://manage.visualstudio.com>
+1. Se si dispone di più di un contratto, scegliere il contratto desiderato dall'elenco a discesa.
+1. Fare clic sull'icona **Panoramica** in alto a sinistra per visualizzare le informazioni sulle sottoscrizioni.  
+> [!div class="mx-imgBorder"]
+> ![Visualizza panoramica delle sottoscrizioni](_img/buy-vs-subscriptions/overview-button.png "Fare clic sul pulsante Panoramica per visualizzare i dettagli della sottoscrizione")
+
+4. Individuare la voce relativa alle sottoscrizioni che si desidera annullare, quindi fare clic su **modifica quantità**.
+1. Impostare la quantità su zero (0). Le sottoscrizioni rimarranno in vigore fino alla data di fatturazione pianificata, ma non vengono rinnovate al raggiungimento della data di fatturazione.   
 
 > [!div class="mx-imgBorder"]
-> ![Modificare le sottoscrizioni](_img/buy-vs-subscriptions/manage-subscriptions.png)
-
-* Per annullare queste sottoscrizioni, ridurre il numero di sottoscrizioni a zero (0). Le sottoscrizioni non verranno rinnovate all'inizio del periodo di fatturazione successivo (il primo giorno del mese successivo per le sottoscrizioni cloud mensili, 12 mesi dopo per le sottoscrizioni cloud annuali).
+> ![Modifica sottoscrizioni](_img/buy-vs-subscriptions/manage-subscriptions.png "Fare clic su' modifica quantità' per annullare le sottoscrizioni")
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

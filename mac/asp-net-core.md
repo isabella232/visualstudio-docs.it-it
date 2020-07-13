@@ -6,13 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
+no-loc:
+- Blazor
+- Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 5e9eb15ee006ba23328c53511263724140bca1f9
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: ed92205388202c457f4d6c8e3fbba567a0d5944e
+ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939021"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86211651"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
@@ -36,8 +39,8 @@ Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a crear
 - **.NET Core > API**
 - **.NET Core > Applicazione Web**
 - **.NET Core > Applicazione Web (Model-View-Controller)**
-- **App Server > blazer di .NET Core**
-- **App webassembly di .NET Core > Blazer**
+- **App Server > .NET Core Blazor**
+- **App > .NET Core Blazor WebAssembly**
 
 ![Opzioni di progetto ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
@@ -235,7 +238,7 @@ Se è necessario installare manualmente .NET Core in Mac OS 10.12 (Sierra) e ver
 
 Per installare correttamente .NET Core, assicurarsi che tutti i passaggi vengano completati in modo appropriato.
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>Riepilogo
 
 Questa guida offre un'introduzione ad ASP.NET Core. Descrive che cos'è e quando usarlo e fornisce informazioni per l'uso in Visual Studio per Mac.
 Per altre informazioni sui passaggi successivi, fare riferimento alle guide seguenti:
