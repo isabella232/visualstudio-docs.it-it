@@ -1,20 +1,20 @@
 ---
 title: Aggiungi intestazione file
-ms.date: 06/08/2020
+ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 24b0905eed167a99f8a75086c9b5ec6cbbdd8b6a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 44cf9c34a69d665186a9f386e7ec34c5a59b8cdc
+ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290344"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86285381"
 ---
-# <a name="add-debuggerdisplay-attribute"></a>Aggiungi attributo DebuggerDisplay
+# <a name="add-file-header"></a>Aggiungi intestazione file
 
 Questa generazione di codice si applica a:
 
@@ -57,7 +57,7 @@ Questa generazione di codice si applica a:
 
 8. Selezionare **applica** per applicare le modifiche.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Generazione di codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)
