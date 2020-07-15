@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: a39b52f98cb476858e02ae34a4a9422e55dee888
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 659c2b1d792eb02d74ac5d52773f81bdda198a7a
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906002"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301460"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
@@ -26,7 +26,7 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 2. Individuare il riquadro Account per sviluppatore di Windows nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.  Copiare il codice negli Appunti e quindi fare clic su **Activate (attiva**).
    > [!div class="mx-imgBorder"]
    > ![Riquadro del vantaggio per sviluppatori di Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
-3. Nel [https://developer.microsoft.com](https://developer.microsoft.com) sito è possibile iniziare il processo di registrazione.  Fare clic su **Iscriviti** per continuare.
+3. Nel [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) sito è possibile iniziare il processo di registrazione.  Fare clic su **Iscriviti** per continuare.
    > [!div class="mx-imgBorder"]
    > ![Registrazione al vantaggio per sviluppatori di Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 4. Accedere alla sottoscrizione.  Se si hanno più account, scegliere quello associato alla sottoscrizione Enterprise.

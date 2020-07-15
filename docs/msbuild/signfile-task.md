@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee018b42fc23b0a520b510235117cb74729fd4b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 319afb810ba755d0201d3edaebcb06a493b59047
+ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094515"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86301447"
 ---
 # <a name="signfile-task"></a>SignFile (attività)
 
@@ -41,13 +41,13 @@ Consente di firmare il file specificato usando il certificato specificato.
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`CertificateThumbprint`|Parametro `String` obbligatorio.<br /><br /> Specifica il certificato da usare per la firma. Questo certificato deve trovarsi nell'archivio personale dell'utente corrente.|
-|`SigningTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica i file da firmare con il certificato.|
+|`SigningTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica i file da firmare con il certificato, di tipo. exe o. dll.|
 |`TimestampUrl`|Parametro `String` facoltativo.<br /><br /> Specifica l'URL del server di timestamp.|
 |`TargetFrameworkVersion`|La versione di.NET Framework che viene usata per la destinazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
- Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [Classe base Task](../msbuild/task-base-class.md).
+ Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base Task](../msbuild/task-base-class.md).
 
 ## <a name="example"></a>Esempio
 
@@ -75,5 +75,5 @@ Consente di firmare il file specificato usando il certificato specificato.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)
