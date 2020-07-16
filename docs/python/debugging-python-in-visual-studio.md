@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2fdbd2e7f47e75b4d80d07f6af3a6f998dfd72d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541154"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387031"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -253,7 +253,7 @@ La procedura seguente abilita il debug nella sessione corrente di Visual Studio:
 
     ![Output di registrazione del debugger nella finestra Output](media/debugger-logging-output.png)
 
-1. Se Visual Studio si blocca o non si è in grado di accedere alla finestra **Output**, riavviare Visual Studio, aprire una finestra di comando e immettere il comando seguente:
+1. Se Visual Studio smette di rispondere o non si è in grado di accedere alla finestra di **output** , riavviare Visual Studio, aprire una finestra di comando e immettere il comando seguente:
 
     ```ps
     DebugAdapterHost.Logging /On

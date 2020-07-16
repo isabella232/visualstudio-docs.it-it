@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ff2865080b7d36f1a7c3b8a7680d867b92ec9c08
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85905773"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387278"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Procedura: rendere compatibili le estensioni con Visual Studio 2019/2017 e Visual Studio 2015
 
@@ -69,7 +69,7 @@ Se il progetto contiene un *project.jssu* file:
 
 Per compilare e distribuire un VSIXv3 in Visual Studio 2015 e 2019/2017, sono necessari i pacchetti NuGet seguenti:
 
-Version | Strumenti compilati
+Versione | Strumenti compilati
 --- | ---
 Visual Studio 2015 | Microsoft. VisualStudio. Sdk. BuildTasks. 14.0
 Visual Studio 2019 o 2017 | Microsoft. VSSDK. BuildTool
@@ -213,5 +213,4 @@ A questo punto, il progetto dovrebbe essere pronto per compilare un VSIXv3 che p
 ![Trovare un progetto VSIX](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> Se il progetto si blocca con il messaggio di **apertura del file**, forzare l'arresto di Visual Studio, passare alla directory del progetto, visualizzare le cartelle nascoste ed eliminare la cartella *. vs* .
- 
+> Se il progetto smette di rispondere con il messaggio di **apertura del file**, forzare l'arresto di Visual Studio, passare alla directory del progetto, visualizzare le cartelle nascoste ed eliminare la cartella *. vs* .

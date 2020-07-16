@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Continua Documenti Microsoft
+title: 'IDebugProcess3:: continue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8fa2e21e31297279a173c9c9edd087adc560903
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: aba0863ad7c50bf5c14e7a30c06097825b8cf5ec
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80723773"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386797"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Continua l'esecuzione di questo processo da uno stato arrestato. Qualsiasi stato di esecuzione precedente (ad esempio un passaggio) viene mantenuto e il processo inizia l'esecuzione.
+Continua l'esecuzione di questo processo da uno stato interrotto. Qualsiasi stato di esecuzione precedente (ad esempio un passaggio) viene mantenuto e il processo inizia a eseguire nuovamente l'esecuzione.
 
 > [!NOTE]
-> Questo metodo deve essere utilizzato al posto di [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+> Questo metodo deve essere usato anziché [continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,15 +44,15 @@ int Continue(
 
 ## <a name="parameters"></a>Parametri
 `pThread`\
-[in] Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread da continuare.
+in Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread da continuare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha `S_OK`esito positivo, restituisce ; in caso contrario, restituisce il codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo viene chiamato su questo processo indipendentemente dal numero di processi sottoposti a debug o da quale processo ha generato l'evento di arresto. L'implementazione deve mantenere lo stato di esecuzione precedente (ad esempio un passaggio) e continuare l'esecuzione come se non si fosse mai arrestata prima di completare l'esecuzione precedente. Ovvero, se un thread in questo processo stava eseguendo un'operazione di passaggio `Continue` ed è stato arrestato perché un altro processo si è arrestato e quindi è stato chiamato, il thread specificato deve completare l'operazione di passaggio originale.
+ Questo metodo viene chiamato su questo processo indipendentemente dal numero di processi di cui è in corso il debug o dal processo che ha generato l'evento di arresto. L'implementazione deve mantenere lo stato di esecuzione precedente (ad esempio un passaggio) e continuare l'esecuzione come se non fosse mai stata arrestata prima del completamento dell'esecuzione precedente. Ovvero, se un thread in questo processo stava eseguendo un'operazione Step-over ed è stato interrotto perché un altro processo è stato interrotto e quindi `Continue` è stato chiamato, il thread specificato deve completare l'operazione di passaggio a quella originale.
 
- **Avvertenza** Non inviare un evento di arresto o un evento immediato (sincrona) [all'evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata; in caso contrario, il debugger potrebbe bloccarsi.
+ **Avviso** di Non inviare un evento di arresto o un evento immediato (sincrono) a [un evento durante](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) la gestione della chiamata; in caso contrario, il debugger potrebbe smettere di rispondere.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

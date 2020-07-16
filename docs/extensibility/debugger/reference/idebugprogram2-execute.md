@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgram2::Execute . Documenti Microsoft
+title: 'IDebugProgram2:: Execute | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f34ebea67ff95d1da6d777cdd828604f4a2f56e8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: af4650b5523595350543ac549ac162247563e418
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80722976"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386745"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
-Continua l'esecuzione del programma da uno stato arrestato. Qualsiasi stato di esecuzione precedente (ad esempio un passaggio) viene cancellato e il programma viene avviato nuovamente l'esecuzione.
+Continua l'esecuzione del programma da uno stato interrotto. Qualsiasi stato di esecuzione precedente (ad esempio un passaggio) viene cancellato e l'esecuzione del programma viene nuovamente avviata.
 
 > [!NOTE]
-> Questo metodo è deprecato. Utilizzare invece il metodo [Execute.](../../../extensibility/debugger/reference/idebugprocess3-execute.md)
+> Questo metodo è deprecato. Usare invece il metodo [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ int Execute();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Quando l'utente avvia l'esecuzione da uno stato arrestato nel thread di un altro programma, questo metodo viene chiamato su questo programma. Questo metodo viene chiamato anche quando l'utente seleziona il **start** comando dal **Debug** menu nell'IDE. L'implementazione di questo metodo può essere semplice come chiamare il [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) metodo sul thread corrente nel programma.
+ Quando l'utente avvia l'esecuzione da uno stato interrotto nel thread di un altro programma, questo metodo viene chiamato su questo programma. Questo metodo viene chiamato anche quando l'utente seleziona il comando **Avvia** dal menu **debug** nell'IDE. L'implementazione di questo metodo può essere semplice quanto la chiamata al metodo [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) sul thread corrente del programma.
 
 > [!WARNING]
-> Non inviare un evento di arresto o un evento immediato (sincrona) [all'evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata; in caso contrario, il debugger potrebbe bloccarsi.
+> Non inviare un evento di arresto o un evento immediato (sincrono) a [un evento durante](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) la gestione della chiamata; in caso contrario, il debugger potrebbe smettere di rispondere.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

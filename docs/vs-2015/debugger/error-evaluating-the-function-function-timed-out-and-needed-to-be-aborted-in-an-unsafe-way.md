@@ -1,5 +1,5 @@
 ---
-title: 'Errore: La valutazione della funzione &#39;funzione&#39; scaduta e deve essere interrotta in modo non protetto | Microsoft Docs'
+title: "Errore: si è verificato un timeout durante la valutazione della funzione &#39;funzione&#39; e l'operazione deve essere interrotta in modo non sicuro | Microsoft Docs"
 ms.date: 11/15/2016
 ms.topic: reference
 f1_keywords:
@@ -9,40 +9,40 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a27bf67770eef770fddef0301a804e6c45579539
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197055"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387122"
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Errore: La valutazione della funzione &#39;funzione&#39; scaduta e deve essere interrotta in modo non sicuro
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Errore: si è verificato un timeout durante la valutazione della funzione &#39;funzione&#39; e l'operazione deve essere interrotta in modo non sicuro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Testo completo del messaggio: La valutazione della funzione 'funzione' timeout e deve essere interrotta in modo non sicuro. Ciò potrebbe essere danneggiata il processo di destinazione. 
+Testo del messaggio completo: si è verificato un timeout durante la valutazione della funzione ' Function ', che deve essere interrotta in modo non sicuro. Questo potrebbe aver danneggiato il processo di destinazione. 
 
-Per renderne più semplice controllare lo stato degli oggetti .NET, il debugger automaticamente forzerà il proseguimento del processo per eseguire codice aggiuntivo (in genere i metodi di richiamo di proprietà e funzioni di ToString). In molti scenari tutte queste funzioni vengono completate rapidamente e semplificare il debug. Tuttavia, il debugger non viene eseguita l'applicazione in un ambiente sandbox. Di conseguenza, un getter della proprietà o metodo ToString che chiama una funzione nativa che si blocca può causare timeout long che potrebbero non essere ripristinabili. Se si verifica questo messaggio di errore, ciò è accaduto.
+Per semplificare l'ispezione dello stato degli oggetti .NET, il debugger forza automaticamente il processo sottoposto a debug a eseguire codice aggiuntivo, in genere metodi di richiamo di proprietà e funzioni ToString. Nella maggior parte dei casi, queste funzioni vengono completate rapidamente e semplificano notevolmente il debug. Tuttavia, il debugger non esegue l'applicazione in un ambiente sandbox. Di conseguenza, un metodo Get o ToString della proprietà che chiama una funzione nativa che smette di rispondere può causare timeout lunghi che potrebbero non essere ripristinabili. Se viene visualizzato questo messaggio di errore, si è verificato il problema.
  
-Un motivo comune per questo problema è che quando il debugger valuta una proprietà, consente solo il thread in esame per l'esecuzione. Pertanto, se la proprietà è in attesa di altri thread da eseguire all'interno dell'applicazione sottoposta a debug e se è in attesa in modo che il Runtime .NET non è in grado di interrompere, verrà eseguito questo problema.
+Una causa comune di questo problema è che quando il debugger valuta una proprietà, consente solo l'esecuzione del thread controllato. Quindi, se la proprietà è in attesa dell'esecuzione di altri thread all'interno dell'applicazione sottoposta a debug e se è in attesa in un modo in cui il Runtime .NET non è in grado di interrompere, questo problema si verificherà.
  
 ## <a name="to-correct-this-error"></a>Per correggere l'errore
  
-Esistono tre possibili soluzioni al problema.
+Questo problema può essere dovuto a tre soluzioni.
  
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Soluzione 1 #. Impedire il debugger di chiamare la proprietà getter o il metodo ToString
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>#1 soluzione: impedire al debugger di chiamare la proprietà Getter o il metodo ToString
  
-Il messaggio di errore indicherà il nome della funzione di cui che il debugger ha tentato di chiamare. Se è possibile modificare questa funzione, è possibile impedire al debugger di chiamare il getter della proprietà o il metodo ToString. Provare una delle operazioni seguenti:
+Il messaggio di errore indica il nome della funzione che il debugger ha tentato di chiamare. Se è possibile modificare questa funzione, è possibile impedire al debugger di chiamare il metodo Get o ToString della proprietà. Provare una delle operazioni seguenti:
  
-* Modificare il metodo in un altro tipo di codice diverso da un getter della proprietà o metodo ToString e il problema non viene più visualizzato.
+* Modificare il metodo in un altro tipo di codice oltre a un metodo getter o ToString per la proprietà e il problema non è più possibile.
     -oppure-
-* (Per ToString) Definire un attributo DebuggerDisplay sul tipo e sarà possibile utilizzare il debugger di valutare un valore diverso da ToString.
+* (Per ToString) Definire un attributo DebuggerDisplay per il tipo ed è possibile fare in modo che il debugger valuti un valore diverso da ToString.
     -oppure-
-* (Per un getter proprietà) Inserire il `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attributo della proprietà. Ciò può essere utile se si dispone di un metodo che deve rimanere una proprietà per motivi di compatibilità delle API, ma deve essere effettivamente un metodo.
+* (Per un getter di proprietà) Inserire l' `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attributo sulla proprietà. Questa operazione può essere utile se si dispone di un metodo che deve rimanere una proprietà per motivi di compatibilità con le API, ma deve essere effettivamente un metodo.
  
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Soluzione #2: Avere il codice di destinazione di porre il debugger per interrompere la valutazione
+### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>#2 soluzione: fare in modo che il codice di destinazione chieda al debugger di interrompere la valutazione
  
-Il messaggio di errore indicherà il nome della funzione di cui che il debugger ha tentato di chiamare. Se il getter della proprietà o metodo ToString a volte non viene eseguita correttamente, specialmente in situazioni in cui il problema è che un altro thread per eseguire il codice è necessario codice e quindi possa chiamare la funzione di implementazione `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` chiedere il debugger per interrompere la funzione siano stati soddisfacenti. Con questa soluzione, è comunque possibile valutare in modo esplicito queste funzioni, ma il comportamento predefinito prevede che l'esecuzione si arresta quando si verifica alla chiamata NotifyOfCrossThreadDependency.
+Il messaggio di errore indica il nome della funzione che il debugger ha tentato di chiamare. Se il metodo di richiamo della proprietà o ToString a volte non viene eseguito correttamente, soprattutto nelle situazioni in cui il codice richiede un altro thread per eseguire il codice, la funzione di implementazione può chiamare `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` per chiedere al debugger di interrompere la valutazione della funzione. Con questa soluzione è comunque possibile valutare in modo esplicito queste funzioni, ma il comportamento predefinito è che l'esecuzione si interrompe quando si verifica la chiamata NotifyOfCrossThreadDependency.
  
-### <a name="solution-3-disable-all-implicit-evaluation"></a>Soluzione 3 #: Disabilitare tutte le valutazione implicita
+### <a name="solution-3-disable-all-implicit-evaluation"></a>#3 soluzione: disabilitare tutta la valutazione implicita
  
-Se le soluzioni precedenti non risolvono il problema, passare a *degli strumenti* / *opzioni*e deselezionare l'impostazione *debug*  /   *Generali* / *Abilita valutazione delle proprietà e altre chiamate di funzioni implicite*. Questo verrà disabilitata la maggior parte delle valutazioni di funzioni implicite e dovrebbe risolvere il problema.
+Se le soluzioni precedenti non consentono di risolvere il problema, passare a *strumenti*  /  *Opzioni*e deselezionare l'impostazione *debug*  /  *generale*  /  *Abilita valutazione delle proprietà e altre chiamate di funzioni implicite*. Questa operazione Disabilita la maggior parte delle valutazioni di funzioni implicite e dovrebbe risolvere il problema.

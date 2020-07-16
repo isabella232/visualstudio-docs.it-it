@@ -1,18 +1,18 @@
 ---
 title: Installare framework di unit test di terze parti
-ms.date: 04/01/2019
+ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: fb9a08d0d3119724e8db631841aca35c6c6e9fe5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286973"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387187"
 ---
 # <a name="install-unit-test-frameworks"></a>Installare framework di unit test
 
@@ -20,7 +20,12 @@ Esplora test di Visual Studio può eseguire test da qualsiasi framework di unit 
 
 Una soluzione di Visual Studio può includere progetti unit test che usano diversi framework e fanno riferimento a diversi linguaggi.
 
+::: moniker range=">=vs-2019"
+Per .NET, [MSTest, NUnit e xUnit](getting-started-with-unit-testing.md) sono i Framework di test forniti da Visual Studio installati per impostazione predefinita.
+::: moniker-end
+::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) è il framework di test offerto da Visual Studio che viene installato per impostazione predefinita.
+::: moniker-end
 
 ## <a name="acquire-frameworks"></a>Acquisire framework
 
@@ -48,6 +53,6 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
    ![Aggiornare un adattatore di test](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

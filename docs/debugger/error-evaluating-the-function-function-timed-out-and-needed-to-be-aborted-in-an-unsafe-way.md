@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f687672de4bc3511fa0c9198f7ad4145b26dcd11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460798"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386719"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Errore: si è verificato un timeout durante la valutazione della funzione &#39;funzione&#39; e l'operazione deve essere interrotta in modo non sicuro
 
 Testo del messaggio completo: si è verificato un timeout durante la valutazione della funzione ' Function ', che deve essere interrotta in modo non sicuro. Questo potrebbe aver danneggiato il processo di destinazione.
 
-Per semplificare l'ispezione dello stato degli oggetti .NET, il debugger forza automaticamente il processo sottoposto a debug a eseguire codice aggiuntivo, in genere metodi di richiamo di proprietà e funzioni ToString. Nella maggior parte dei casi, queste funzioni vengono completate rapidamente e semplificano notevolmente il debug. Tuttavia, il debugger non esegue l'applicazione in un ambiente sandbox. Di conseguenza, un metodo Get o ToString della proprietà che chiama in una funzione nativa che si blocca può causare timeout lunghi che potrebbero non essere ripristinabili. Se viene visualizzato questo messaggio di errore, si è verificato il problema.
+Per semplificare l'ispezione dello stato degli oggetti .NET, il debugger forza automaticamente il processo sottoposto a debug a eseguire codice aggiuntivo, in genere metodi di richiamo di proprietà e funzioni ToString. Nella maggior parte dei casi, queste funzioni vengono completate rapidamente e semplificano notevolmente il debug. Tuttavia, il debugger non esegue l'applicazione in un ambiente sandbox. Di conseguenza, un metodo Get o ToString della proprietà che chiama una funzione nativa che smette di rispondere può causare timeout lunghi che potrebbero non essere ripristinabili. Se viene visualizzato questo messaggio di errore, si è verificato il problema.
 
 Una causa comune di questo problema è che quando il debugger valuta una proprietà, consente solo l'esecuzione del thread controllato. Quindi, se la proprietà è in attesa dell'esecuzione di altri thread all'interno dell'applicazione sottoposta a debug e se è in attesa in un modo in cui il Runtime .NET non è in grado di interrompere, questo problema si verificherà.
 

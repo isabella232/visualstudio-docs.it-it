@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f0e56b7db76d308a55f7d6bd24930e258385b0f9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540868"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386985"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
 
@@ -133,7 +133,7 @@ Per fare riferimento alle proprietà o alle variabili di ambiente del progetto n
 
 | Attributo | Obbligatoria | Descrizione |
 | --- | --- | --- |
-| Name | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
+| Nome | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
 | Label | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
 | Restituisce | Sì | Deve contenere `@(Commands)`, che identifica la destinazione come comando. |
 
@@ -384,7 +384,7 @@ Indica che il contenuto degli elementi `<Target>` o `<CreatePythonCommandItem>` 
 
 I valori di attributo possono essere vuoti se si fa riferimento a una proprietà non definita. Ad esempio, se si usa il token `$(StartupFile)` ma nel progetto non è stato definito alcun file di avvio, il token viene risolto in una stringa vuota. In questi casi, può essere utile definire un valore predefinito. Ad esempio, l'impostazione predefinita dei comandi **Avvia il server** e **Avvia il debug del server** definiti nei modelli di progetto Bottle, Flask e Django è *manage.py* se non è stato specificato un file di avvio del server in altro modo nelle proprietà del progetto.
 
-### <a name="visual-studio-hangs-and-crashes-when-running-the-command"></a>Blocco e arresto anomalo di Visual Studio durante l'esecuzione del comando
+### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio smette di rispondere e si arresta in modo anomalo durante l'esecuzione del comando
 
 Probabilmente si sta tentando di eseguire un comando della console con `ExecuteIn="output"`, nel qual caso potrebbe verificarsi un arresto anomalo di Visual Studio durante il tentativo di analizzare l'output. Usare invece `ExecuteIn="console"`. (Vedere [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 

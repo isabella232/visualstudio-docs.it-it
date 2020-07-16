@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Continue | Microsoft Docs
+title: 'IDebugProcess3:: continue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8e7167a5425566936c196960d5014fcf5d7c8709
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 92a36bb7e89d8afaa6d76f7d7b3772bd1714ffa7
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405831"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386238"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Continua l'esecuzione di questo processo da arrestare. Qualsiasi stato di esecuzione precedente (ad esempio, un passaggio) viene mantenuto, e il processo viene avviato l'esecuzione anche in questo caso.  
+Continua l'esecuzione di questo processo da uno stato interrotto. Qualsiasi stato di esecuzione precedente (ad esempio un passaggio) viene mantenuto e il processo inizia a eseguire nuovamente l'esecuzione.  
   
 > [!NOTE]
-> Questo metodo deve essere usato al posto di [continuazione](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+> Questo metodo deve essere usato anziché [continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,15 +43,15 @@ int Continue(
   
 #### <a name="parameters"></a>Parametri  
  `pThread`  
- [in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread di proseguire.  
+ in Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread da continuare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo viene chiamato su questo processo indipendentemente da quanti processi sono in fase di debug o processo che ha generato l'evento di arresto. L'implementazione deve mantenere lo stato di esecuzione precedente (ad esempio, un passaggio) e l'esecuzione continua come se non aveva mai arrestato prima di completare l'esecuzione precedente. Vale a dire, se un thread in questo processo stava eseguendo un'operazione dell'istruzione / routine ed è stato arrestato perché è stato arrestato un altro processo e quindi `Continue` è stato chiamato, l'oggetto specificato thread deve completare l'operazione originale dell'istruzione / routine.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo viene chiamato su questo processo indipendentemente dal numero di processi di cui è in corso il debug o dal processo che ha generato l'evento di arresto. L'implementazione deve mantenere lo stato di esecuzione precedente (ad esempio un passaggio) e continuare l'esecuzione come se non fosse mai stata arrestata prima del completamento dell'esecuzione precedente. Ovvero, se un thread in questo processo stava eseguendo un'operazione Step-over ed è stato interrotto perché un altro processo è stato interrotto e quindi `Continue` è stato chiamato, il thread specificato deve completare l'operazione di passaggio a quella originale.  
   
- **Avviso** non invia un evento di arresto o di un evento (sincrono) immediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata; in caso contrario, il debugger potrebbe bloccarsi.  
+ **Avviso** di Non inviare un evento di arresto o un evento immediato (sincrono) a [un evento durante](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) la gestione della chiamata; in caso contrario, il debugger potrebbe smettere di rispondere.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

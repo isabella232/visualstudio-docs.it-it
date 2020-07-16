@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.openlocfilehash: a9af78dc373734905c703a3b9ee5c9462af3e116
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298066"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386680"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Procedura: eseguire l'aggiornamento da una versione di valutazione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile valutare la versione non definitiva di Visual Studio per 14 giorni senza eseguire la registrazione del prodotto. Dopo aver effettuato la registrazione accedendo con un account Microsoft, la licenza provvisoria è valida fino alla data di scadenza prevista.
+È possibile valutare la versione non definitiva di Visual Studio per 14 giorni senza eseguire la registrazione del prodotto. Dopo la registrazione tramite l'accesso con un account Microsoft, la licenza di versione non definitiva è valida fino alla data di scadenza.
 
  È possibile valutare la versione di rilascio delle edizioni Professional ed Enterprise di Visual Studio per 30 giorni, a partire dalla data di installazione del prodotto. L'[accesso a Visual Studio](../ide/signing-in-to-visual-studio.md) aggiunge 60 giorni al periodo di valutazione, per un totale di 90 giorni. Se non si registra una versione di valutazione di Visual Studio entro 30 giorni, il periodo di valutazione scadrà 30 giorni dopo l'installazione.
 

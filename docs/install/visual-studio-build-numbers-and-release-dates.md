@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 06/30/2020
+ms.date: 07/14/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 08190b7c2109f8a5344264786b5c1e3906c4c7b5
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 63a9929ea4e70a085f41e0f3dd2f8a71c1eb487e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770922"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386186"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,13 +27,18 @@ ms.locfileid: "85770922"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.0 | Preview 4 | 14 luglio 2020 | 16.7.30310.162 |
+| 16.6.4 | Versione | 14 luglio 2020 | 16.6.30309.148 |
+| 16.4.11 | Versione | 14 luglio 2020 | 16.4.30308.118 |
+| 16.0.16 | Versione | 14 luglio 2020 | 16.0.28803.791 |
 | 16.6.3 | Versione | 30 giugno 2020 | 16.6.30225.117 |
 | 16.7.0 | Anteprima 3,1 | 25 giugno 2020 | 16.7.30223.230 |
 | 16.7.0 | Preview 3 | 23 giugno 2020 | 16.7.30218.91 |
 | 16.0.15 | Versione | 9 giugno 2020 | 16.0.28803.753 |
 | 16.6.2 | Versione | 9 giugno 2020 | 16.6.30204.135 |
+| 16.4.10 | Versione | 9 giugno 2020 | 16.4.30204.51 |
 | 16.7.0 | Preview 2 | 2 giugno 2020 | 16.7.30128.36 |
 | 16.6.1 | Versione | 1 giugno 2020 | 16.6.30128.74 |
 | 16.4.9 | Versione | 27 maggio 2020 | 16.4.30120.98 |
@@ -154,8 +159,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.25 | Versione | 14 luglio 2020 | 15.9.28307.1216 |
 | 15.9.24 | Versione | 9 giugno 2020 | 15.9.28307.1177 |
 | 15.9.23 | Versione | 12 maggio 2020 | 15.9.28307.1146 |
 | 15.9.22 | Versione | 14 aprile 2020 | 15.9.28307.1093 |

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 3155c2cdc9ea3dc5208a52e5fe37f697a4ad5ef6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903865"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386121"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Disabilitare il debugger JIT
 
@@ -32,15 +32,15 @@ Se Visual Studio non è installato, è possibile impedire il debug JIT disabilit
 
 - Se si sta provando a eseguire un'app Web, disabilitare il debug degli script:
 
-  Nel **Pannello di controllo** di Windows > **Opzioni Internet** > **rete e Internet** , selezionare **Disabilita debug script (Internet Explorer)** e **Disabilita debug script (altro)** . La procedura e le impostazioni esatte dipendono dalla versione di Windows e dal browser.
+  In Opzioni Internet e rete del **Pannello di controllo**di Windows  >  **Network and Internet**  >  **Internet Options**selezionare **Disabilita debug script (Internet Explorer)** e **Disabilita debug script (altro)**. La procedura e le impostazioni esatte dipendono dalla versione di Windows e dal browser.
 
   ![Opzioni Internet JIT](../debugger/media/jitinternetoptions.png "Opzioni Internet JIT")
 
 - Se si sta ospitando un'app Web ASP.NET in IIS, disabilitare il debug sul lato server:
 
   1. Nella **visualizzazione funzionalità**Gestione IIS, nella sezione **ASP.NET** , fare doppio clic su **compilazione .NET**oppure selezionarla e quindi selezionare **Apri funzionalità** nel riquadro **azioni** .
-  1. In **comportamento** > **debug**Selezionare **false**. I passaggi sono diversi nelle versioni precedenti di IIS.
+  1. In **Behavior**  >  **debug**comportamento selezionare **false**. I passaggi sono diversi nelle versioni precedenti di IIS.
 
 Dopo aver disabilitato il debug JIT, l'app potrebbe essere in grado di gestire l'errore ed eseguire normalmente.
 
-Se l'app ha ancora un errore non gestito, potrebbe essere visualizzato un messaggio di errore o l'app potrebbe arrestarsi o bloccarsi. L'app non verrà eseguita normalmente fino a quando l'errore non viene risolto. È possibile provare a contattare il proprietario dell'app e chiedergli di correggerla.
+Se l'app ha ancora un errore non gestito, è possibile che venga visualizzato un messaggio di errore o che l'app si arresti in modo anomalo o interrompa la risposta. L'app non verrà eseguita normalmente fino a quando l'errore non viene risolto. È possibile provare a contattare il proprietario dell'app e chiedergli di correggerla.

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.openlocfilehash: db9267fe9f06569dadea240e5d78c8b35c84b8c4
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651774"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386550"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Come segnalare un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Per la documentazione più recente di Visual Studio, vedere [Come segnalare un p
 
 Se si verifica un problema con Visual Studio 2015, è opportuno segnalarlo a Microsoft in modo che possa diagnosticarlo e risolverlo.  Con lo strumento **Segnala un problema** è possibile raccogliere informazioni dettagliate sul problema e inviarle a Microsoft in pochi clic.
 
-Microsoft rispetta la privacy degli utenti. Per informazioni sul trattamento dei dati inviati a Microsoft, vedere l'[Informativa sulla privacy Microsoft per aziende e sviluppatori](https://www.visualstudio.com/dn948229).
+Microsoft rispetta la privacy degli utenti. Per informazioni su come vengono gestiti i dati inviati a Microsoft, vedere [Informativa sulla privacy della famiglia dei prodotti Microsoft Visual Studio](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Aprire lo strumento Segnala un problema
 
-Fare clic sull'icona di feedback utente accanto ad **Avvio veloce** nella barra del titolo oppure fare clic su **Guida > Commenti e suggerimenti > Segnala un problema**.
+Fare clic sull'icona di feedback utente accanto ad **Avvio veloce **nella barra del titolo oppure fare clic su **Guida > Commenti e suggerimenti > Segnala un problema**.
 
 ![Voce di menu Segnala un problema](../ide/media/report-a-problem-menu-item.png "Voce di menu Segnala un problema")
 
@@ -45,7 +45,7 @@ Fare clic sull'icona di feedback utente accanto ad **Avvio veloce** nella barra 
 
 ## <a name="provide-a-screenshot-optional"></a>Aggiungere uno screenshot (facoltativo)
 
-Scegliere **Includi uno screenshot** per inviare la schermata corrente a Microsoft. Lo strumento consente di ritagliare l'immagine per visualizzare solo la parte della schermata che illustra il problema. È possibile collegare ulteriori screenshot o altri file facendo clic sul pulsante **Allega file aggiuntivi** .
+Scegliere **Includi uno screenshot** per inviare la schermata corrente a Microsoft. Lo strumento consente di ritagliare l'immagine per visualizzare solo la parte della schermata che illustra il problema. È possibile allegare altri screenshot o altri file facendo clic sul pulsante **Allega altri file**.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Fornire una traccia e un dump di heap (facoltativo)
 
@@ -53,7 +53,7 @@ Scegliere **Includi uno screenshot** per inviare la schermata corrente a Microso
 
 1. I file di traccia e di dump di heap sono utili per diagnosticare i problemi.   Siamo grati agli utenti che usano lo strumento Segnala un problema per registrare la procedura che consente di riprodurre il problema e inviare i dati a Microsoft.
 
-2. Fare clic sulla freccia di espansione accanto a **Registrare le azioni per riprodurre il problema**. Se il problema causa il blocco o l'arresto anomalo di Visual Studio, aprire un'altra istanza di Visual Studio e selezionarla nella visualizzazione elenco.
+2. Fare clic sulla freccia di espansione accanto a **Registrare le azioni per riprodurre il problema**. Se il problema causa la mancata risposta o l'arresto anomalo di Visual Studio, aprire un'altra istanza di Visual Studio e selezionarla nella visualizzazione elenco.
 
 3. Fare clic su **Avvia registrazione** e completare i passaggi per riprodurre il problema. Al termine, fare clic sul pulsante **Arresta registrazione** nella finestra mobile.
 
@@ -71,4 +71,4 @@ Fare clic sul pulsante Invia per inviare il report, insieme a eventuali immagini
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Talk to Us](../ide/talk-to-us.md) (Comunicazioni con Microsoft)
+- [Comunica con Microsoft](../ide/talk-to-us.md)

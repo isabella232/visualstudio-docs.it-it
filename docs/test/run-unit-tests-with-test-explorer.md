@@ -1,7 +1,7 @@
 ---
-title: Eseguire unit test ed eseguirne il debug con Esplora test
-description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare l'esecuzione automatica dei test dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco dei test, creare playlist, eseguire il debug dei test e usare tasti di scelta rapida per i test.
-ms.date: 07/29/2019
+title: Eseguire unit test con Esplora test
+description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare le esecuzioni dei test automatici dopo la compilazione, visualizzare i risultati del test, raggruppare e filtrare l'elenco dei test, creare playlist e usare i collegamenti di test.
+ms.date: 07/14/2020
 ms.topic: how-to
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,24 +10,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35bd6f26b56ea7c3a1d578e5721504a91f60b74c
-ms.sourcegitcommit: 46547f0bf3fc1a81e1a906762106dec5855e6e4a
+ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86156850"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386641"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
-Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit test di terze parti. È anche possibile usare Esplora test per raggruppare i test in categorie, filtrare l'elenco dei test e creare, salvare ed eseguire playlist di test. È possibile eseguire il debug dei test e analizzare code coverage e prestazioni dei test.
+Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit test di terze parti. È anche possibile usare Esplora test per raggruppare i test in categorie, filtrare l'elenco dei test e creare, salvare ed eseguire playlist di test. È anche possibile analizzare code coverage ed [eseguire il debug di unit test](../test/debug-unit-tests-with-test-explorer.md).
+
+**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++.
+
+## <a name="build-your-test-project"></a>Compilare il progetto di test
+
+Se nella soluzione di Visual Studio non è già stato configurato un progetto di test, è necessario innanzitutto creare e compilare un progetto di test.
+
+- [Introduzione a unit test (.NET)](../test/getting-started-with-unit-testing.md)
+- [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)
 
 Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Esplora test può tuttavia eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
-
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
-Quando si [Compila il progetto di test](../test/getting-started-with-unit-testing.md), i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
+Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
 
 ::: moniker range="vs-2017"
 ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
@@ -304,23 +311,6 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test che includono "MyClass" nel nome, ad eccezione dei test che includono anche "PerfTest" nel nome.
 
-## <a name="debug-and-analyze-unit-tests"></a>Eseguire il debug e l'analisi di unit test
-
-È possibile usare Esplora test per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
-
-1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
-
-    > [!NOTE]
-    > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.
-
-2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
-
-   Per altre informazioni sul debugger, vedere [Debug in Visual Studio](../debugger/debugger-feature-tour.md).
-
-### <a name="diagnose-test-method-performance-issues"></a>Diagnosticare i problemi di prestazioni dei metodi di test
-
-Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora test e quindi scegliere **Esegui profilatura del test selezionato** dal menu di scelta rapida. Vedere [report sulla profilatura della strumentazione](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
-
 ### <a name="analyze-unit-test-code-coverage"></a>Analizzare il code coverage di unit test
 
 È possibile determinare la quantità di codice del prodotto sottoposta effettivamente a test dagli unit test usando lo strumento per il code coverage di Visual Studio disponibile nell'edizione Visual Studio Enterprise. È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione.
@@ -351,7 +341,7 @@ Per altre informazioni, vedere [Usare la funzionalità code coverage per determi
 
 ## <a name="test-shortcuts"></a>Tasti di scelta rapida per i test
 
-I test possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e selezionando **Esegui test** oppure usando i collegamenti predefiniti di [Esplora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) test in Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono i test o ne eseguono il debug in base a dove si trova il cursore del mouse nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
+I test possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e selezionando **Esegui test** oppure usando i collegamenti predefiniti di [Esplora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) test in Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono o eseguono il [debug di test](../test/debug-unit-tests-with-test-explorer.md) in base alla posizione in cui si trova il cursore nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
 
 |Comandi frequenti| Tasti di scelta rapida|
 |-|------------------------|
@@ -366,5 +356,6 @@ I test possono essere eseguiti da Esplora test facendo clic con il pulsante dest
 ## <a name="see-also"></a>Vedere anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
+- [Eseguire il debug di unit test con Esplora test](../test/debug-unit-tests-with-test-explorer.md)
 - [Eseguire uno unit test come processo a 64 bit](../test/run-a-unit-test-as-a-64-bit-process.md)
 - [Domande frequenti su Esplora test](test-explorer-faq.md)

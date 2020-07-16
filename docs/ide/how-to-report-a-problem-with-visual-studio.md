@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c985d6699c75a78900366204c8bd5275f4c051d
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 15a1d497b5b4217cd7a404cb591c20bb1196b04b
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769935"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387317"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -69,7 +69,7 @@ I file di traccia e di dump di heap sono utili per diagnosticare i problemi. Sia
 
 1. Selezionare la scheda **Registra**.
 
-1. In **Registra le azioni** selezionare l'istanza corrente di Visual Studio, se è possibile riprodurre il problema all'interno di essa. Se non è possibile, ad esempio se Visual Studio è bloccato, selezionare **\<Create a new instance>** per registrare le azioni in una nuova istanza di Visual Studio.
+1. In **Registra le azioni** selezionare l'istanza corrente di Visual Studio, se è possibile riprodurre il problema all'interno di essa. Se non è possibile, ad esempio se Visual Studio smette di rispondere, selezionare **\<Create a new instance>** per registrare le azioni in una nuova istanza di Visual Studio.
 
 1. Selezionare **Avvia registrazione**. Concedere le autorizzazioni per eseguire lo strumento.
 

@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56e5b76b000fd269d76d535e635ba86e72912bad
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c0eaa719bb3eeca2eb3dfe558184699ccca42819
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916010"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387200"
 ---
 # <a name="debug-64-bit-applications"></a>Eseguire il debug di applicazioni a 64 bit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ La versione più recente di questo argomento è reperibile in [applicazioni di d
   
 - Nel computer è installato software di sicurezza di rete che ha reso non affidabile lo stack di rete e ha eliminato alcuni pacchetti trasmessi tramite localhost. Provare a disabilitare tutto il software di sicurezza di rete e determinare se questo consente di risolvere il problema. In questo caso, segnalare al fornitore del software di sicurezza di rete che il software interferisce con traffico di localhost.  
   
-- Si è verificato un blocco o un problema di prestazioni di Visual Studio. Se il problema si verifica regolarmente, è possibile raccogliere dump di Visual Studio (devenv.exe) e del processo di lavoro (msvsmon.exe) e inviarli a Microsoft. 
+- Si è riscontrato un problema a causa del quale Visual Studio smette di rispondere o di un altro problema di prestazioni. Se il problema si verifica regolarmente, è possibile raccogliere dump di Visual Studio (devenv.exe) e del processo di lavoro (msvsmon.exe) e inviarli a Microsoft. 
   
 ## <a name="see-also"></a>Vedere anche  
  [Applicazioni a 64 bit](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Configurazione di programmi per processori a 64 bit](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
- [Supporto a 64 bit per l'IDE di Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
- [Uso di file dump](../debugger/using-dump-files.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Configurazione di programmi per 64 bit](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Supporto di Visual Studio IDE a 64 bit](../ide/visual-studio-ide-64-bit-support.md)   
+ [Uso dei file di dump](../debugger/using-dump-files.md)   
+ [Debug remoto](../debugger/remote-debugging.md)

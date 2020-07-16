@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0173c076a04c4c725565e63c41396b7c4d235952
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85815058"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386264"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Risoluzione dei problemi e problemi noti (Visual Studio Tools per Unity)
 
@@ -50,9 +50,9 @@ Questo dovrebbe risolvere il problema. Nel caso in cui il problema si verifichi 
  devenv /setup
 ```
 
-## <a name="visual-studio-hangs"></a>Visual Studio si blocca
+## <a name="visual-studio-stops-responding"></a>Visual Studio smette di rispondere
 
-Alcuni plug-in Unity come Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usano thread nativi. Il problema si verifica quando un plug-in tenta di collegare un thread nativo al runtime, causando il blocco delle chiamate al sistema operativo. Ciò significa che Unity non può interrompere il thread per il debugger, o per ricaricare il dominio, e si blocca.
+Alcuni plug-in Unity come Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usano thread nativi. Il problema si verifica quando un plug-in tenta di collegare un thread nativo al runtime, causando il blocco delle chiamate al sistema operativo. Ciò significa che Unity non può interrompere il thread per il debugger (o il ricaricamento del dominio) e interrompere la risposta.
 
 Per FMOD, è disponibile una soluzione alternativa che consiste nel passare il [flag](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) di inizializzazione `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` per disabilitare l'elaborazione asincrona ed eseguire tutte le elaborazioni nel thread principale.
 

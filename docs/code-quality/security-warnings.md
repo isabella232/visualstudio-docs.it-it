@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8fbeb9b1631e9cefa132f50a13dc5cf4db58c9d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 9e7a21a010cf98da3d7adb9627105c2847b7571e
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283372"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386355"
 ---
 # <a name="security-warnings"></a>Avvisi di sicurezza
 
@@ -28,7 +28,7 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-|Regola|Description|
+|Regola|Descrizione|
 |----------|-----------------|
 |[CA2100: Controllare la vulnerabilità della sicurezza nelle query SQL](../code-quality/ca2100.md)|Un metodo imposta la proprietà System.Data.IDbCommand.CommandText usando una stringa compilata da un argomento stringa nel metodo. La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una stringa di comando SQL compilata da un input dell'utente è vulnerabile agli attacchi intrusivi nel codice SQL,|
 |[CA2102: Individuare le eccezioni non CLSCompliant nei gestori generali](../code-quality/ca2102.md)|In un membro di un assembly che non è contrassegnato con l'attributo RuntimeCompatibilityAttribute o che è contrassegnato con RuntimeCompatibility(WrapNonExceptionThrows = false) è incluso un blocco catch che gestisce System.Exception e che non contiene un blocco catch generale immediatamente successivo.|
@@ -89,6 +89,13 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
 |[CA2328: Assicurarsi che gli oggetti JsonSerializerSettings siano sicuri](../code-quality/ca2328.md)|I deserializzatori non sicuri sono vulnerabili durante la deserializzazione di dati non attendibili. Un utente malintenzionato potrebbe modificare i dati serializzati per includere tipi imprevisti per inserire oggetti con effetti collaterali dannosi.|
 |[CA2329: Non eseguire la deserializzazione con JsonSerializer usando una configurazione non sicura](../code-quality/ca2329.md)|I deserializzatori non sicuri sono vulnerabili durante la deserializzazione di dati non attendibili. Un utente malintenzionato potrebbe modificare i dati serializzati per includere tipi imprevisti per inserire oggetti con effetti collaterali dannosi.|
 |[CA2330: Assicurarsi che JsonSerializer abbia una configurazione sicura durante la deserializzazione](../code-quality/ca2330.md)|I deserializzatori non sicuri sono vulnerabili durante la deserializzazione di dati non attendibili. Un utente malintenzionato potrebbe modificare i dati serializzati per includere tipi imprevisti per inserire oggetti con effetti collaterali dannosi.|
+|[CA2350: assicurarsi che l'input di DataTable. ReadXml () sia attendibile](ca2350.md)|Quando si deserializza un oggetto <xref:System.Data.DataTable> con un input non attendibile, un utente malintenzionato può creare input dannosi per eseguire un attacco Denial of Service. Potrebbero esserci vulnerabilità di esecuzione del codice remoto sconosciute.|
+|[CA2351: assicurarsi che l'input di DataSet. ReadXml () sia attendibile](ca2351.md)|Quando si deserializza un oggetto <xref:System.Data.DataSet> con un input non attendibile, un utente malintenzionato può creare input dannosi per eseguire un attacco Denial of Service. Potrebbero esserci vulnerabilità di esecuzione del codice remoto sconosciute.|
+|[CA2352: il set di dati o la DataTable unsafe in tipo serializzabile può essere vulnerabile agli attacchi di esecuzione di codice in modalità remota](ca2352.md)|Una classe o uno struct contrassegnato con <xref:System.SerializableAttribute> contiene una <xref:System.Data.DataSet> proprietà o un campo o <xref:System.Data.DataTable> e non dispone di un oggetto <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> .|
+|[CA2353: DataSet o DataTable non sicuro in un tipo serializzabile](ca2353.md)|Una classe o uno struct contrassegnato con un attributo di serializzazione XML o un attributo di contratto dati contiene un campo o una <xref:System.Data.DataSet> <xref:System.Data.DataTable> Proprietà.|
+|[CA2354: il set di dati o la DataTable unsafe nell'oggetto grafico deserializzato può essere vulnerabile agli attacchi di esecuzione di codice remoto](ca2354.md)|La deserializzazione con un <xref:System.Runtime.Serialization.IFormatter?displayProperty=nameWithType> oggetto serializzato e l'oggetto grafico del tipo con cast possono includere un oggetto <xref:System.Data.DataSet> o <xref:System.Data.DataTable> .|
+|[CA2355: DataSet o DataTable non sicuro nell'oggetto grafico deserializzato](ca2355.md)|Deserializzazione quando l'oggetto grafico del tipo sottoposto a cast o specificato può includere <xref:System.Data.DataSet> o <xref:System.Data.DataTable> .|
+|[CA2356: DataSet o DataTable non sicuro nell'oggetto grafico deserializzato Web](ca2356.md)|Un metodo con un oggetto <xref:System.Web.Services.WebMethodAttribute?displayProperty=nameWithType> o <xref:System.ServiceModel.OperationContractAttribute?displayProperty=nameWithType> ha un parametro che può fare riferimento a <xref:System.Data.DataSet> o <xref:System.Data.DataTable> .|
 |[CA3001: Esaminare il codice per verificare la presenza di vulnerabilità di tipo SQL injection](../code-quality/ca3001.md)|Quando si utilizzano comandi SQL e input non attendibili, tenere presenti gli attacchi SQL injection. Un attacco SQL injection può eseguire comandi SQL dannosi, compromettendo la sicurezza e l'integrità dell'applicazione.|
 |[CA3002: Esaminare il codice per verificare la presenza di vulnerabilità di tipo XSS](../code-quality/ca3002.md)|Quando si utilizza un input non attendibile da richieste Web, tenere presente gli attacchi XSS (cross-site scripting). Un attacco XSS inserisce input non attendibile nell'output HTML non elaborato, consentendo all'autore dell'attacco di eseguire script dannosi o modificare il contenuto nella pagina Web.|
 |[CA3003: Esaminare il codice per verificare la presenza di vulnerabilità di tipo file path injection](../code-quality/ca3003.md)|Quando si utilizza un input non attendibile da richieste Web, tenere presente l'utilizzo dell'input controllato dall'utente quando si specificano i percorsi dei file.|

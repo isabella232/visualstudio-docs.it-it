@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Step . Documenti Microsoft
+title: 'IDebugProgram2:: Step | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,18 +15,18 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 194e72eba5a3f137e4650752a090d91ad7c402fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80722767"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387239"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Esegue un passaggio.
 
 > [!NOTE]
-> Questo metodo è deprecato. Utilizzare invece il metodo [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+> Questo metodo è deprecato. Usare invece il metodo [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,22 +48,22 @@ int Step( 
 
 ## <a name="parameters"></a>Parametri
 `pThread`\
-[in] Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread sottoposto a debug passo a passo.
+in Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread di cui viene eseguito il ripasso.
 
 `sk`\
-[in] Valore dell'enumerazione [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) che specifica il tipo di passaggio.
+in Valore dell'enumerazione [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) che specifica il tipo di passaggio.
 
 `step`\
-[in] Valore dell'enumerazione [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) che specifica l'unità di passaggio, ad esempio per istruzione o istruzione.
+in Valore dell'enumerazione [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) che specifica l'unità di misura (ad esempio, per istruzione o istruzione).
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Nel caso in cui vi sia una sincronizzazione o una comunicazione tra thread, altri thread nel programma devono essere eseguiti quando un thread specifico esegue l'esecuzione di istruzioni.
+ Se è presente una sincronizzazione dei thread o una comunicazione tra thread, gli altri thread nel programma devono essere eseguiti quando viene eseguito un determinato thread.
 
 > [!WARNING]
-> Non inviare un evento di arresto o un evento immediato (sincrona) [all'evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) durante la gestione di questa chiamata; in caso contrario, il debugger potrebbe bloccarsi.
+> Non inviare un evento di arresto o un evento immediato (sincrono) a [un evento durante](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) la gestione della chiamata; in caso contrario, il debugger potrebbe smettere di rispondere.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -7,12 +7,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72652468"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387252"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Log generati dal sistema raccolti da Visual Studio
 
@@ -20,11 +20,11 @@ Visual Studio raccoglie i log generati dal sistema per la risoluzione dei proble
 
 ## <a name="types-of-collected-data"></a>Tipi di dati raccolti
 
-Visual Studio raccoglie i log generati dal sistema per gli arresti anomali, i blocchi, la mancanza di risposta dall'interfaccia utente e un utilizzo elevato della CPU o della memoria. Vengono anche raccolte informazioni sugli errori rilevati durante l'installazione o l'utilizzo del prodotto. I dati raccolti variano a seconda dell'errore e possono includere le analisi degli stack, i dump di memoria e le informazioni sulle eccezioni:
+Visual Studio raccoglie i log generati dal sistema per arresti anomali, non risposta dell'interfaccia utente e utilizzo elevato della CPU o della memoria. Vengono anche raccolte informazioni sugli errori rilevati durante l'installazione o l'utilizzo del prodotto. I dati raccolti variano a seconda dell'errore e possono includere le analisi degli stack, i dump di memoria e le informazioni sulle eccezioni:
 
 - Per l'utilizzo elevato della CPU e la mancanza di risposta, vengono raccolte le analisi degli stack dei thread di Visual Studio interessati.
 
-- Per i casi in cui le analisi degli stack di alcuni thread non sono sufficienti per determinare la causa radice del problema, ad esempio per gli arresti anomali del sistema, i blocchi o l'utilizzo elevato della memoria, viene raccolto un *dump* della memoria. Il dump rappresenta lo stato del processo nel momento in cui si è verificato l'errore.
+- Per i casi in cui le tracce dello stack di alcuni thread non sono sufficienti per determinare la causa principale del problema, ad esempio, arresti anomali, mancata risposta o utilizzo elevato della memoria, viene raccolto un *dump*della memoria. Il dump rappresenta lo stato del processo nel momento in cui si è verificato l'errore.
 
 - Per le condizioni di errore imprevisto, ad esempio un'eccezione durante il tentativo di scrivere in un file su disco, vengono raccolte informazioni sull'eccezione. Le informazioni includono il nome dell'eccezione, l'analisi dello stack del thread in cui si è verificata l'eccezione, il messaggio associato all'eccezione e altre informazioni sull'eccezione specifica.
 
@@ -52,7 +52,7 @@ Il flusso di lavoro per determinare la causa radice di un errore varia a seconda
 
 ### <a name="error-classification"></a>Classificazione degli errori
 
-In base ai log, gli errori sono classificati e conteggiati per stabilire la priorità della loro analisi. Ad esempio, è possibile che venga rilevato che l'errore "System.IO.\__Error.WinIOError" in "System.IO.FileStream.Init" si sia verificato 500 volte nella versione \<x> del prodotto e che abbia la frequenza più elevata in quella versione.
+In base ai log, gli errori sono classificati e conteggiati per stabilire la priorità della loro analisi. Ad esempio, è possibile che venga individuato "System.IO. \_ _Error. WinIOError "in" System.IO.FileStream.Init "si è verificato 500 volte nella versione \<x> del prodotto e ha la frequenza massima di occorrenza in tale versione.
 
 ### <a name="work-items-for-tracking"></a>Elementi di lavoro per il rilevamento
 

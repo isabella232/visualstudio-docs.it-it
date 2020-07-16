@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77476867"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86386732"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -40,17 +40,17 @@ Se la compilazione viene completata correttamente, nella finestra **Output** ven
 
 ## <a name="review-the-error-list"></a>Rivedere l'elenco errori
 
-A meno che non siano state apportate modifiche al codice compilato correttamente in precedenza, è probabile si verifichi un errore. Se non si ha familiarità con la codifica, gli errori potrebbero essere numerosi. Gli errori possono essere talvolta elementari, ad esempio un semplice errore di sintassi o un nome di variabile non corretto, oppure difficili da comprendere, in cui l'unico aiuto è un codice non facile da decifrare. Per una visualizzazione più pulita dei problemi, passare alla parte inferiore della finestra **Output** compilazione e fare clic sulla scheda **Elenco errori.** Questo ti porta a una visualizzazione più organizzata degli errori e degli avvisi per il tuo progetto e ti offre anche alcune opzioni aggiuntive.
+A meno che non siano state apportate modifiche al codice compilato correttamente in precedenza, è probabile si verifichi un errore. Se non si ha familiarità con la codifica, gli errori potrebbero essere numerosi. Gli errori possono essere talvolta elementari, ad esempio un semplice errore di sintassi o un nome di variabile non corretto, oppure difficili da comprendere, in cui l'unico aiuto è un codice non facile da decifrare. Per una visualizzazione più chiara dei problemi, passare alla parte inferiore della finestra di **output** di compilazione, quindi fare clic sulla scheda **Elenco errori** . In questo modo si ottiene una visualizzazione più organizzata degli errori e degli avvisi per il progetto e vengono fornite anche alcune opzioni aggiuntive.
 
 ![Output ed elenco di errori di Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Fare clic sulla riga di errore nella finestra **Elenco errori** per passare alla riga in cui si è verificato l'errore. In alternativa, attivare i numeri di riga premendo **CTRL**+**Q**, digitando i numeri di **riga**e quindi scegliendo Attiva o disattiva i numeri di **riga** dai risultati. Questo è il modo più rapido per passare alla finestra di dialogo **Opzioni** in cui è possibile attivare i numeri di riga.)
+Fare clic sulla riga di errore nella finestra **Elenco errori** per passare alla riga in cui si è verificato l'errore. (In alternativa, attivare i numeri di riga premendo **CTRL** + **D**, digitando i **numeri di riga**e quindi scegliendo **attiva o disattiva numeri di riga** dai risultati. Questo è il modo più rapido per passare alla finestra di dialogo **Opzioni** in cui è possibile attivare i numeri di riga.)
 
 ![Editor di Visual Studio con numeri di riga](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
 ![Opzione dei numeri di riga di Visual Studio](../ide/media/vs_ide_gs_debug_options_line_numbers.png)
 
-Premere **Ctrl**+**G** per passare rapidamente al numero di riga in cui si è verificato l'errore.
+Premere **CTRL** + **G** per passare rapidamente al numero di riga in cui si è verificato l'errore.
 
 L'errore viene segnalato da una sottolineatura rossa "a zigzag". Per altri dettagli, passare il mouse sull'errore. Correggere il problema per farlo scomparire. La correzione, però, potrebbe causare un nuovo errore. Questo fenomeno viene chiamato "regressione".
 
@@ -74,13 +74,13 @@ Gli analizzatori di codice cercano i problemi di codice comuni che possono causa
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Analisi del codice C# e Visual Basic
 
-Visual Studio include un set predefinito di [analizzatori .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) che esaminano il codice C# e Visual Basic durante la digitazione. È possibile installare analizzatori aggiuntivi come estensione di Visual Studio o pacchetto NuGet. Se vengono rilevate violazioni delle regole, vengono segnalate sia nell'Elenco errori che nell'editor di codice come scarabocchiato sotto il codice che causa l'errore.
+Visual Studio include un set predefinito di [analizzatori .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) che esaminano il codice C# e Visual Basic durante la digitazione. È possibile installare analizzatori aggiuntivi come estensione di Visual Studio o pacchetto NuGet. Se vengono rilevate violazioni della regola, vengono segnalate sia nel Elenco errori che nell'editor del codice come zigzag sotto il codice che causa il danneggiamento.
 
 ### <a name="c-code-analysis"></a>Analisi del codice C++
 
 Per analizzare il codice C++, eseguire l'[analisi del codice statico](/cpp/code-quality/quick-start-code-analysis-for-c-cpp). È consigliabile eseguire questa analisi dopo aver rimosso gli errori più semplici che impediscono una corretta compilazione e di dedicare del tempo alla risoluzione degli eventuali avvisi restituiti. In questo modo si prevengono altri problemi in futuro e si possono apprendere alcune tecniche relative allo stile del codice.
 
-Premere **Alt**+**F11** (o selezionare **Analizza** > **analisi codice di** esecuzione sulla soluzione dal menu in alto) per avviare l'analisi statica del codice.
+Premere **ALT** + **F11** (oppure selezionare **analizza**  >  **Esegui analisi del codice su soluzione** dal menu superiore) per avviare l'analisi statica del codice.
 
 ![Voce del menu Analisi codice di Visual Studio](../ide/media/vs_ide_gs_debug_run_code_analysis.png)
 
@@ -90,7 +90,7 @@ Eventuali avvisi nuovi o aggiornati vengono visualizzati nella scheda **Elenco e
 
 ## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Usare Azioni rapide per correggere o effettuare il refactoring del codice
 
-Le [Azioni rapide](../ide/quick-actions.md), disponibili dall'icona a forma di lampadina o di cacciavite, consentono di eseguire il refactoring del codice inline. Consentono di risolvere con la massima semplicità gli avvisi più comuni in modo rapido ed efficace nel codice C#, C++ e Visual Basic. Per accedere a questa nuova funzionalità, fare clic con il pulsante destro del mouse sulla linea ondulata sotto un avviso e scegliere **Azioni rapide e refactoring**. In alternativa, quando il cursore si trova sulla linea con la linea ondulata colorata, premere **CTRL**+**.** oppure selezionare l'icona a forma di lampadina, di lampadina di errore o di cacciavite nel margine. Verrà visualizzato un elenco di possibili correzioni o refactoring che è possibile applicare alla riga di codice.
+Le [Azioni rapide](../ide/quick-actions.md), disponibili dall'icona a forma di lampadina o di cacciavite, consentono di eseguire il refactoring del codice inline. Consentono di risolvere con la massima semplicità gli avvisi più comuni in modo rapido ed efficace nel codice C#, C++ e Visual Basic. Per accedere a questa nuova funzionalità, fare clic con il pulsante destro del mouse sulla linea ondulata sotto un avviso e scegliere **Azioni rapide e refactoring**. In alternativa, quando il cursore si trova sulla riga con il zigzag colorato, premere **CTRL** + **.** oppure selezionare l'icona a forma di lampadina, di lampadina di errore o di cacciavite nel margine. Verrà visualizzato un elenco di possibili correzioni o refactoring che è possibile applicare alla riga di codice.
 
 ![Anteprima di lampadina di Visual Studio](../ide/media/quick-actions-options.png)
 
@@ -98,17 +98,17 @@ Le Azioni rapide possono essere usate in tutti i casi in cui gli analizzatori di
 
 ![Testo Azioni rapide non disponibili in questo punto](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Con l'esperienza, è possibile utilizzare rapidamente i tasti freccia e **Ctrl**+**.** per controllare se sono disponibili opportunità per eseguire facilmente il refactoring e per pulire il codice.
+Con l'esperienza, è possibile usare rapidamente i tasti di direzione e **CTRL** + **.** per controllare se sono disponibili opportunità per eseguire facilmente il refactoring e per pulire il codice.
 
 ::: moniker range="vs-2019"
 
-## <a name="run-code-cleanup"></a>Eseguire la pulizia del codiceRun Code Cleanup
+## <a name="run-code-cleanup"></a>Eseguire la pulizia del codice
 
-Visual Studio fornisce la [formattazione su richiesta del file di codice](code-styles-and-code-cleanup.md#apply-code-styles)di C, incluse le preferenze di stile del codice, tramite il pulsante Pulizia **codice** nella parte inferiore dell'editor.
+Visual Studio fornisce la [Formattazione su richiesta del file di codice C#](code-styles-and-code-cleanup.md#apply-code-styles), incluse le preferenze di stile del codice, tramite il pulsante **pulizia codice** nella parte inferiore dell'editor.
 
 ![Pulsante Pulizia del codice in Visual Studio 2019](media/execute-code-cleanup.png)
 
-Oltre a formattare il file per spazi, rientri et cetera, **Pulizia codice** applica anche un set di convenzioni di stile di codice definite. Le preferenze per ogni stile del codice vengono lette dal [file EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), se ce n'è uno per il progetto, o dalle [impostazioni di stile del codice](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) nella finestra di dialogo **Opzioni**.
+Oltre a formattare il file per spazi, rientri e cetera, la **pulizia del codice** applica anche un set di convenzioni di stile di codice definito dall'utente. Le preferenze per ogni stile del codice vengono lette dal [file EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), se ce n'è uno per il progetto, o dalle [impostazioni di stile del codice](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) nella finestra di dialogo **Opzioni**.
 
 ::: moniker-end
 
@@ -118,9 +118,9 @@ Dopo aver compilato correttamente il codice e aver eseguito qualche attività di
 
 ![Finestre automatiche e di stack di chiamate di Visual Studio](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-Interrompere l'app premendo **MAIUSC**+**F5** o facendo clic sul pulsante **Interrompi.** In alternativa, è sufficiente chiudere la finestra principale dell'app (o la finestra di dialogo della riga di comando).
+Arrestare l'applicazione premendo **MAIUSC** + **F5** o facendo clic sul pulsante **Arresta** . In alternativa, è possibile chiudere semplicemente la finestra principale dell'app (o la finestra di dialogo della riga di comando).
 
-Se il codice è stato eseguito senza errori ed esattamente come previsto, complimenti! In caso di blocco, arresto anomalo o risultati imprevisti, è necessario individuare l'origine dei problemi e correggere i bug.
+Se il codice è stato eseguito senza errori ed esattamente come previsto, complimenti! Tuttavia, se smette di rispondere o si arresta in modo anomalo o si sono verificati risultati anomali, è necessario individuare l'origine dei problemi e correggere i bug.
 
 ### <a name="set-simple-breakpoints"></a>Impostare punti di interruzione semplici
 
@@ -132,7 +132,7 @@ Impostare un punto di interruzione facendo clic sul margine più esterno della r
 
 Di seguito sono riportati alcuni usi comuni dei punti di interruzione:
 
-- Per limitare l'origine di un arresto anomalo o di blocco, inserire i punti di interruzione all'interno e intorno al codice della chiamata al metodo che si ritiene causi l'errore. Durante l'esecuzione del codice nel debugger, rimuovere e reimpostare i punti di interruzione fino a individuare la riga di codice interessata. Vedere la sezione successiva per informazioni su come eseguire il codice nel debugger.
+- Per limitare l'origine di un arresto anomalo o di un programma che non risponde, dispersione di punti di interruzione in tutto il codice della chiamata al metodo che si ritiene causi l'errore. Durante l'esecuzione del codice nel debugger, rimuovere e reimpostare i punti di interruzione fino a individuare la riga di codice interessata. Vedere la sezione successiva per informazioni su come eseguire il codice nel debugger.
 
 - Quando si introduce un nuovo codice, impostare un punto di interruzione all'inizio del codice ed eseguire il codice per verificare che funzioni come previsto.
 
@@ -144,7 +144,7 @@ Per altre informazioni sull'uso dei punti di interruzione, vedere [Uso di punti 
 
 ### <a name="inspect-your-code-at-run-time"></a>Esaminare il codice in fase di esecuzione
 
-Quando il codice in esecuzione incontra un punto di interruzione e viene sospeso, la riga di codice contrassegnata in giallo, ovvero l'istruzione corrente, non è ancora stata eseguita. A questo punto, è possibile eseguire l'istruzione corrente ed esaminare i valori modificati. È possibile usare diversi comandi di *esecuzione* per eseguire il codice nel debugger. Se il codice contrassegnato è una chiamata a un metodo, è possibile eseguire le istruzioni premendo **F11**. È inoltre possibile *eseguire un'istruzione alla* riga di codice premendo **F10**. Per informazioni su altri comandi e informazioni dettagliate su come esaminare il codice, leggere [Spostarsi nel codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md).
+Quando il codice in esecuzione incontra un punto di interruzione e viene sospeso, la riga di codice contrassegnata in giallo, ovvero l'istruzione corrente, non è ancora stata eseguita. A questo punto, è possibile eseguire l'istruzione corrente ed esaminare i valori modificati. È possibile usare diversi comandi di *esecuzione* per eseguire il codice nel debugger. Se il codice contrassegnato è una chiamata a un metodo, è possibile eseguire le istruzioni premendo **F11**. È anche possibile eseguire l' *istruzione/* routine della riga di codice premendo **F10**. Per informazioni su altri comandi e informazioni dettagliate su come esaminare il codice, leggere [Spostarsi nel codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
 ![Verifica del valore di runtime di Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
@@ -168,6 +168,6 @@ Per altre informazioni sugli unit test in Visual Studio e su come usarli per cre
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Primo sguardo al debugger](../debugger/debugger-feature-tour.md)
+- [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Altre informazioni sull'uso del debugger](../debugger/index.yml)
 - [Generare e correggere il codice](../ide/code-generation-in-visual-studio.md)

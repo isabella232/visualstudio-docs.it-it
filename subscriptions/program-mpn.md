@@ -7,12 +7,12 @@ ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
-ms.openlocfilehash: fb19f84c480fb1291d225dcce8c0e140a953826b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183054"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387148"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 
@@ -44,7 +44,7 @@ Indipendentemente dal numero di competenze guadagnate da un partner, il numero d
 
 | Vantaggio massimo per i partner con solo competenze Silver                   | Vantaggio massimo per i partner con almeno una competenza Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| 25 sottoscrizioni di Visual Studio Enterprise per paese; 75 in tutto il mondo          | 50 sottoscrizioni di Visual Studio Enterprise per paese; 150 in tutto il mondo         |
+| 25 sottoscrizioni Visual Studio Enterprise per paese/area geografica; 75 in tutto il mondo          | 50 Visual Studio Enterprise sottoscrizioni per paese/area geografica; 150 in tutto il mondo         |
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Sottoscrizioni per i partner che acquistano Action Pack
 

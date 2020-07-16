@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio della rivista del codice incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 30b97c42c3ead60859aed593a3ffbad6ed721227
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906076"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387174"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Rivista di codice inclusa nelle sottoscrizioni di Visual Studio
 
@@ -28,7 +28,7 @@ Il processo di configurazione della sottoscrizione di CODE Magazine è semplice.
 3. Verrà visualizzato un messaggio che mostra che il codice è stato recuperato.  Fare clic su **Attiva** per continuare.  (Se non si è pronti per l'attivazione, è accettabile.  È sempre possibile tornare al riquadro per attivarlo.  Il collegamento "Get code" leggerà "Activate" dopo il recupero del codice.
    > [!div class="mx-imgBorder"]
    > ![Codice della rivista del codice recuperato](_img/vs-code-magazine/vs-code-magazine-success.png "Il codice è stato recuperato")
-4. Si verrà reindirizzati alla pagina di destinazione del Magazine del codice. Selezionare il paese e scegliere la modalità di ricezione della rivista. 
+4. Si verrà reindirizzati alla pagina di destinazione del Magazine del codice. Selezionare il paese/area geografica e scegliere il modo in cui si desidera ricevere la rivista. 
    > [!NOTE]
    > I membri Visual Studio Dev Essentials possono accedere solo alla sottoscrizione digitale. 
 5. In base alle selezioni effettuate, viene visualizzata una nota che mostra il prezzo della sottoscrizione insieme alla quantità di coupon applicato.

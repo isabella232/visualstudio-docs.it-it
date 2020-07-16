@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Altre informazioni sul vantaggio LinkedIn Learning incluso come parte della sottoscrizione LinkedIn Premium inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: f3ce676232742f712a926dbeb70e8fd2505ff18a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904412"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387135"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio
 
@@ -36,7 +36,7 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 
 5. Immettere le informazioni personali, scegliere un nome utente e una password e fare clic su **Iscriviti ora**.
 
-6. Specificare il paese e il codice di avviamento postale e quindi fare clic su **Avanti**.
+6. Specificare il paese/area geografica e il Cap, quindi fare clic su **Avanti**.
 
 7. Indicare quindi alcune informazioni personali per il profilo.  Indicare se si è uno studente o una studentessa e specificare la posizione, la società e il settore più recenti.
 
@@ -91,7 +91,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 R: No, l'offerta LinkedIn Learning è disponibile a solo per i nuovi sottoscrittori.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Serve aiuto con LinkedIn Learning?  Vedere queste risorse:
+- Serve aiuto con LinkedIn Learning?  vedere le risorse seguenti:
   - Assistenza per l'[uso di LinkedIn Learning](https://www.linkedin.com/help/learning).
   - Supporto per domande di carattere generale su [LinkedIn](https://www.linkedin.com/help/linkedin) , ad esempio la creazione di account e profili e la gestione della rete.
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.

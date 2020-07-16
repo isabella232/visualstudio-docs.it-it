@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 758e2bbf69c7b48a1027819377839cbdce9204fe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
+ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75919259"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86387109"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>App e librerie multipiattaforma per C++ nativo
  C++ è un linguaggio disponibile in modo nativo per dispositivi mobili più. Consente di scrivere librerie di codice condiviso tra piattaforme che possono essere compilati per più destinazioni di piattaforma mobile. È possibile creare anche applicazioni per dispositivi mobili completamente in C++. Per modificare, compilare, distribuire il codice multipiattaforma ed eseguirne il debug, è possibile usare Visual C++. Oltre ai modelli per le applicazioni Windows, è possibile creare progetti da modelli per applicazioni attività nativa Android, iOS App o progetti di librerie di codice condiviso per più piattaforme che includono applicazioni ibride Xamarin. Usare IntelliSense specifico della piattaforma per esplorare le API e generare il codice corretto destinato a iOS, Android o Windows. È possibile configurare la compilazione per piattaforme x86 o ARM native e distribuire il codice per un simulatore iOS o ai dispositivi iOS su un Mac collegata alla rete per i dispositivi Android collegati direttamente o utilizzare l'emulatore di Microsoft Visual Studio ad elevate prestazioni per Android per il test. È possibile impostare punti di interruzione, controllare le variabili, visualizzare lo stack ed eseguire il codice C++ un'istruzione alla volta nel debugger di Visual Studio. È possibile condividere tutto il codice, tranne quello più specifico della piattaforma, tra più piattaforme di app e compilarle con una sola soluzione in Visual Studio.
 
- Per iniziare a usare piattaforme multipiattaforma C++, vedere [creare app per dispositivi mobili multipiattaforma con C++ Visual](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
+ Per iniziare a usare C++ multipiattaforma, vedere [creare app per dispositivi mobili multipiattaforma con Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>App di Windows universale di qualsiasi dispositivo Windows 10
  Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Windows, è possibile eseguire la stessa app su qualsiasi dispositivo Windows 10, dai telefoni ai desktop. È possibile creare queste app di Windows universale usando Visual Studio 2015 e gli strumenti di sviluppo di app di Windows universale.
@@ -92,12 +92,12 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
 #### <a name="c"></a>C++
  Visual C++ include significativi miglioramenti relativamente alla conformità del linguaggio C++11/14, oltre al supporto per lo sviluppo di app per dispositivi multipiattaforma, al supporto per funzioni ripristinabili e await (attualmente pianificato per la standardizzazione in C++17), a miglioramenti e correzioni di bug nelle implementazioni della libreria run-time C (CRT) e della libreria standard C++ (STL), nelle finestre di dialogo ridimensionabili in MCF, a nuove ottimizzazioni del compilatore, al miglioramento delle prestazioni di compilazione, a nuove funzionalità di diagnostica e a nuovi strumenti di produttività nell'editor del codice.
 
- Per ulteriori informazioni, vedere [What ' s New for C++ Visual](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) and [the C++ Visual Blog](https://devblogs.microsoft.com/cppblog/).
+ Per ulteriori informazioni, vedere [What ' s New for Visual C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) e The [Visual C++ Blog](https://devblogs.microsoft.com/cppblog/).
 
 ## <a name="device-preview-menu-bar"></a>Menu Anteprima dispositivo
  In progetti per la piattaforma Windows universale, la barra dei menu Anteprima dispositivo consente di vedere come verrà eseguito il rendering dell'interfaccia utente basata su XAML in diverse dimensioni dello schermo.
 
- ![Menu di anteprima dispositivo](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
+ ![Menu Anteprima dispositivo](./ide/media/vs2015-device-preview.png "vs2015_device_preview")
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
  A partire da Visual Studio 2013, la Diagnostica della grafica di Visual Studio include numerose nuove funzionalità, tra cui l'analisi dei Frame, il supporto per Windows Phone, il comando di modifica e applicazione shader e gli strumenti di acquisizione della riga di comando. È inoltre aggiunto supporto per il debug di applicazioni DirectX12. Per ulteriori informazioni, vedere [Visual Studio Graphics Diagnostics](./debugger/visual-studio-graphics-diagnostics.md).
@@ -115,7 +115,7 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
 
    Nuovi servizi verranno aggiunti regolarmente e sarà possibile scoprirli facendo clic sul collegamento per trovare nuovi servizi nella procedura guidata.
 
-   ![Finestra di dialogo Aggiungi Servizi connessi](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
+   ![Finestra di dialogo per l'aggiunta di servizi connessi](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")
 
 ## <a name="design-your-ui"></a>Progettare l'interfaccia utente
  L'esperienza Blend per la progettazione di interfacce utente XAML è stata notevolmente migliorata. Blend è stato completamente riprogettato per fornire un'interfaccia utente più intuitiva, funzionalità di modifica XAML più potenti, tra cui IntelliSense e una migliore integrazione con Visual Studio. Per altre informazioni, vedere [Progettazione di XAML in Visual Studio e Blend per Visual Studio](./designers/designing-xaml-in-visual-studio.md).
@@ -151,7 +151,7 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 ## <a name="live-code-analysis-light-bulbs"></a>Analisi del codice in tempo reale (lampadine)
  Il nuovo compilatore Roslyn per C# e Visual Basic non offre solo tempi di compilazione più rapidi, ma abilita anche scenari completamente nuovi, come l'analisi del codice in tempo reale che fornisce feedback e suggerimenti estesi e personalizzabili direttamente all'interno dell'editor di codice mentre si digita. In Visual Studio 2015 le lampadine vengono visualizzate nel margine sinistro quando si usa la tastiera o come descrizione comando quando si passa il puntatore del mouse su un errore. La lampadina indica in tempo reale che il compilatore, eventualmente usando un set di regole personalizzate, ha rilevato un problema nel codice, ma che è disponibile un suggerimento per correggere l'errore. Fare clic su una lampadina visualizzata per ottenere suggerimenti sulle azioni da eseguire.
 
- ![Lampadine nell'editor di Visual Studio Code](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
+ ![Lampadine nell'editor di codice di Visual Studio](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
 
 ## <a name="enjoy-these-additional-ide-improvements"></a>Altri miglioramenti dell'IDE
 
@@ -164,17 +164,17 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 ### <a name="title-case-menus"></a>Menu Tutte Iniziali Maiuscole
  In base al feedback degli utenti, i menu di Visual Studio hanno di nuovo tutte le iniziali maiuscole per impostazione predefinita. Se tuttavia si preferisce lo stile TUTTE MAIUSCOLE, è possibile impostarlo all'avvio o nella pagina delle proprietà **Strumenti > Opzioni > Generale**:
 
- ![Comandi del menu principale del titolo di Visual Studio 2015](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
+ ![Comandi del menu principale Tutte Iniziali Maiuscole di Visual Studio 2015](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
 ### <a name="high-resolution-images-and-touch-support"></a>Immagini ad alta risoluzione e supporto per il tocco
  L'IDE di Visual Studio include ora immagini veramente ad alta risoluzione nelle visualizzazioni a più alta densità di elementi, ad esempio in aree quali menu, menu di scelta rapida, barre dei comandi di finestre degli strumenti e alcuni progetti in Esplora soluzioni. Su un touchscreen, nella finestra dell'editor di codice di Visual Studio è anche possibile usare movimenti come toccare e tenere premuto, avvicinare le dita, toccare e così via per ingrandire, scorrere, selezionare testo e richiamare menu di scelta rapida.
 
- ![Supporto tocco nell'editor](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
+ ![Supporto per il tocco nell'editor](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")
 
 ### <a name="custom-layouts"></a>Layout personalizzati
  È possibile creare e archiviare layout di finestra personalizzati ed effettuarne il roaming. Ad esempio, è possibile definire un layout preferito da usare sul computer desktop e un layout diverso da usare su un portatile o su un dispositivo con uno schermo piccolo. In alternativa, si può preferire un layout per un progetto dell'interfaccia utente e un altro per un progetto di database. I tasti di scelta rapida consentono di passare rapidamente da un layout all'altro. Questi layout sono disponibili in qualsiasi istanza di Visual Studio dopo avere eseguito l'accesso. Per altre informazioni, vedere [Creare layout di finestra personalizzati](./misc/create-custom-window-layouts.md).
 
- ![Voce di menu layout personalizzato di Visual Studio](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
+ ![Voce di menu dei layout personalizzati in Visual Studio](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>Hub di notifica
  L'interfaccia utente per l'hub di notifica è stata semplificata per consentire di eseguire facilmente un'analisi rapida. Sono stati aggiunti altri tipi di notifiche tra cui quelle per problemi di prestazioni, problemi di rendering e arresti anomali del sistema e ora è possibile scegliere di non visualizzare più una notifica. Per altre informazioni, vedere [Notifiche di Visual Studio](./ide/visual-studio-notifications.md).
@@ -186,11 +186,11 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 
 - Ottenere la cronologia per un intero file di codice nell'editor di Visual Studio.
 
-   ![CodeLens: ottenere i dettagli del file di codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens - Ottenere i dettagli sul file del codice](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Visualizzare un grafico che mostra le persone che hanno modificato il codice. consentendo di individuare i criteri delle modifiche del team e di valutarne l'impatto.
 
-   ![CodeLens: vedere la cronologia delle modifiche del codice come grafico](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: visualizzare la cronologia delle modifiche del codice sotto forma di grafico](./ide/media/codelens.png "CodeLens")
 
 - Individuare facilmente la data delle ultime modifiche apportate al codice.
 
@@ -237,7 +237,7 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 
 - **Diagrammi UML**. Per creare diagrammi classi e diagrammi sequenze UML, non è più possibile usare codice, ma si possono usare i nuovi elementi UML.
 
-- **Esplora architettura** Per creare diagrammi, non è più possibile usare Esplora architettura, ma si può usare Esplora soluzioni.
+- **Esplora architettura**. Per creare diagrammi, non è più possibile usare Esplora architettura, ma si può usare Esplora soluzioni.
 
 ## <a name="visual-studio-extensibility-tools"></a>Strumenti di estendibilità in Visual Studio
  Non è mai stato così semplice installare Visual Studio Extensibility Tools (Visual Studio SDK e modelli). Infatti ora vengono inclusi come componenti facoltativi durante l'installazione.  Gli strumenti di estendibilità consentono agli sviluppatori di scrivere le estensioni da personalizzare e aggiungere funzionalità a Visual Studio. Per ulteriori informazioni sulle estendibilità di Visual Studio, vedere [Visual Studio SDK](./extensibility/visual-studio-sdk.md).
@@ -252,15 +252,15 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 
  È sufficiente fare clic sulla faccina gialla sulla barra del titolo, indicare gli aspetti apprezzati e fare clic sul pulsante **Invia smile** .
 
- Ecco fatto. e suggerimenti inviati verranno inoltrati al team corretto che ne terrà conto per lo sviluppo di nuove funzionalità ancor più gradite agli utenti.
+ La procedura è terminata. e suggerimenti inviati verranno inoltrati al team corretto che ne terrà conto per lo sviluppo di nuove funzionalità ancor più gradite agli utenti.
 
 ### <a name="send-a-frown"></a>Inviare commenti su aspetti da migliorare
  L'invio di commenti su aspetti del prodotto da migliorare consente a Microsoft di gestire il backlog concentrando l'attenzione in primo luogo sulle funzionalità più rilevanti per i propri clienti. Per segnalare un errore o un problema, è possibile usare la funzionalità **Invia faccia imbronciata** direttamente dall'IDE. Anche in questo caso, la procedura è semplicissima:
 
- Fare clic sulla faccina gialla sulla barra del titolo e quindi su **Invia faccia imbronciata**, specificare gli aspetti da migliorare e infine fare clic sull'apposito pulsante. Per altre informazioni, vedere [Talk to Us](./ide/talk-to-us.md).
+ Fare clic sulla faccina gialla sulla barra del titolo e quindi su **Invia faccia imbronciata**, specificare gli aspetti da migliorare e infine fare clic sull'apposito pulsante. Per altre informazioni, vedere [Comunicazioni con Microsoft](./ide/talk-to-us.md).
 
-### <a name="report-crashes-hangs-and-performance-issues"></a>Segnalare arresti anomali, blocchi e problemi di prestazioni
- In alcuni casi un breve commento non è sufficiente a comunicare il reale impatto di una funzionalità che non si è apprezzata. Nel caso in cui si sia verificato un arresto anomalo o un blocco oppure si siano riscontrati problemi di prestazioni, è possibile condividere facilmente la procedura per riprodurre il problema, i dump di arresto anomalo del sistema e i file di traccia usando la finestra di dialogo visualizzata dopo l'invio di una faccia imbronciata.
+### <a name="report-crashes-unresponsive-and-performance-issues"></a>Segnalazione di arresti anomali, problemi di prestazioni e risposta
+ In alcuni casi un breve commento non è sufficiente a comunicare il reale impatto di una funzionalità che non si è apprezzata. Per i momenti in cui Visual Studio smette di rispondere, si arresta in modo anomalo o si verifica un altro problema di prestazioni, è possibile condividere facilmente i passaggi di ripetizione, i dump di arresto anomalo e i file di traccia usando la finestra di dialogo visualizzata dopo l'invio di un cipiglio
 
  In primo luogo, inviare un commento con faccia imbronciata come descritto in precedenza. Nella finestra di dialogo visualizzata è possibile classificare i propri commenti e suggerimenti aggiungendo uno dei tag predefiniti o creandone uno nuovo. I tag facilitano l'inoltro dei commenti al team della funzionalità appropriata. Nell'elenco a discesa **Scegliere una categoria** selezionare l'opzione che rappresenta il problema segnalato, quindi eseguire la procedura per riprodurre il problema. Sono anche disponibili procedure dettagliate su come usare Visual Studio per segnalare problemi. Per altre informazioni, vedere [istruzioni SEND Smile di Visual Studio](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
@@ -270,7 +270,7 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 * [Creare app con interfaccia utente nativa con Xamarin in Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Creare app multipiattaforma con Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [Generare unit test per il codice con IntelliTest](./test/generate-unit-tests-for-your-code-with-intellitest.md)
-* [Usare più account utente](./ide/work-with-multiple-user-accounts.md)
+* [Gestire più account utente](./ide/work-with-multiple-user-accounts.md)
 * [Creare layout di finestra personalizzati](./misc/create-custom-window-layouts.md)
 * [Eseguire azioni rapide con le lampadine](./ide/perform-quick-actions-with-light-bulbs.md)
 * [Novità di Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
