@@ -42,6 +42,8 @@
       items:
         - name: Eseguire unit test con Esplora test
           href: run-unit-tests-with-test-explorer.md
+        - name: Eseguire il debug di unit test con Esplora test
+          href: debug-unit-tests-with-test-explorer.md
         - name: Domande frequenti su Esplora test
           href: test-explorer-faq.md
     - name: Eseguire test dalla riga di comando
@@ -103,7 +105,7 @@
       items:
         - name: Testing unità di una DLL UWP C++
           href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: 'Testing unità di codice Visual C# in un''app UWP'
+        - name: Testing unità di codice Visual C# in un'app UWP
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 'Procedura dettagliata: Creare ed eseguire unit test per app della piattaforma UWP'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
