@@ -1,4 +1,4 @@
-- name: 'Esercitazioni su C#'
+- name: Esercitazioni su C#
   href: index.yml
 - name: Panoramica
   items:
@@ -13,7 +13,7 @@
 - name: Creare un'app
   expanded: true
   items:
-    - name: 'Creare la prima app C#'
+    - name: Creare la prima app C#
       href: tutorial-console.md
     - name: Creare un'app Web
       href: tutorial-aspnet-core.md

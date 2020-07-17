@@ -14,7 +14,7 @@
       href: installing-python-support-in-visual-studio.md
     - name: Installare interpreti Python
       href: installing-python-interpreters.md
-- name: Guide introduttive
+- name: Guide rapide introduttive
   items:
     - name: Creare un'app Web con Flask
       href: ../ide/quickstart-python.md
@@ -87,7 +87,7 @@
           href: python-azure-cloud-service-project-template.md
     - name: Azure SDK per Python
       href: /python/azure/?view=azure-python
-- name: 'Guide pratiche:'
+- name: Guide pratiche
   items:
     - name: Gestire gli ambienti Python
       items:
@@ -143,7 +143,7 @@
       href: unit-testing-python-in-visual-studio.md
     - name: Uso dell'estensione Cookiecutter
       href: using-python-cookiecutter-templates.md
-- name: Reference
+- name: Riferimento
   items:
     - name: Modelli di elemento
       href: python-item-templates.md
