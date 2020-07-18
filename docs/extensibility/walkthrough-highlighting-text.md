@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bfd94a55fe207f5c20e2ed1e5630d62c73c9ba2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 0331c0d240503dd88257269397e1afae80a17803
+ms.sourcegitcommit: 0f30188f57d5ad2b0c8073eb51d37557c8f35a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904722"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86418064"
 ---
 # <a name="walkthrough-highlight-text"></a>Procedura dettagliata: evidenziazione del testo
 È possibile aggiungere diversi effetti visivi all'editor creando parti del componente Managed Extensibility Framework (MEF). In questa procedura dettagliata viene illustrato come evidenziare ogni occorrenza della parola corrente in un file di testo. Se una parola viene eseguita più di una volta in un file di testo e si posiziona il punto di inserimento in un'unica occorrenza, ogni occorrenza viene evidenziata.
@@ -104,7 +104,7 @@ ms.locfileid: "85904722"
     ```csharp
     public HighlightWordFormatDefinition()
     {
-                this.BackgroundColor = Colors.LightBlue;
+        this.BackgroundColor = Colors.LightBlue;
         this.ForegroundColor = Colors.DarkBlue;
         this.DisplayName = "Highlight Word";
         this.ZOrder = 5;

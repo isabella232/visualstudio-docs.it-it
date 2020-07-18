@@ -1,6 +1,6 @@
 ---
 title: Risorse per la risoluzione degli errori
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,12 +93,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0a7b4dea467c0ed233b2db917e231a5a4d787f09
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593616"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459281"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Risorse per la risoluzione dei problemi relativi ad errori dell'ambiente di sviluppo integrato
 
@@ -109,7 +109,7 @@ Non tutti i messaggi di errore hanno un argomento specifico della Guida associat
 
 ## <a name="knowledge-base-articles"></a>Articoli della Knowledge Base
 
-È possibile eseguire una ricerca nella Knowledge Base (KB) online per trovare gli articoli sui problemi del prodotto. Non per tutti i problemi esiste un articolo della Knowledge Base corrispondente, ma sono in genere documentati gli errori riscontrati da un numero significativo di utenti. È possibile accedere agli articoli KB dal sito Web del [Supporto tecnico Microsoft](https://support.microsoft.com).
+È possibile eseguire una ricerca nella Knowledge Base (KB) online per trovare gli articoli sui problemi del prodotto. Non per tutti i problemi esiste un articolo della Knowledge Base corrispondente, ma sono in genere documentati gli errori riscontrati da un numero significativo di utenti. È possibile accedere agli articoli KB dal sito Web del [Supporto tecnico Microsoft](https://support.microsoft.com). È anche possibile visualizzare una raccolta di articoli KB per Visual Studio nella pagina [risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/) .
 
 ## <a name="developer-forums"></a>Forum per sviluppatori
 
@@ -117,9 +117,9 @@ I forum consentono di interagire con altri sviluppatori e anche con i dipendenti
 
 È possibile accedere a forum, blog, chat e altre risorse dal sito Web delle [Community tecniche di Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities).
 
-## <a name="product-support"></a>Supporto tecnico
+## <a name="product-support"></a>Supporto per il prodotto
 
-Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](https://support.microsoft.com/en-us). Per informazioni sul supporto del prodotto disponibile nella propria area, vedere la pagina delle opzioni di commenti e suggerimenti di Visual Studio.For information about product support available in your area, see the [Visual Studio feedback options](../../ide/feedback-options.md) page.
+Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](https://support.microsoft.com/en-us). Per informazioni sul supporto tecnico disponibile nella propria area, vedere la pagina [Opzioni commenti e suggerimenti di Visual Studio](../../ide/feedback-options.md) .
 
 ## <a name="see-also"></a>Vedere anche
 

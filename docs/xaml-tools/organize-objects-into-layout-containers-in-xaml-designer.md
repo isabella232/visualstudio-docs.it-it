@@ -1,17 +1,17 @@
 ---
 title: Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
-ms.date: 11/04/2016
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
+ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592938"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "86459294"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
 
@@ -43,7 +43,7 @@ Consente di disporre gli oggetti in aree della griglia uguali o uniformi. Questo
 
 ![Pannello di layout di tipo UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Area di disegno
+### <a name="canvas"></a>Canvas
 
 Consente di disporre gli oggetti nel modo desiderato. Quando gli utenti eseguono l'app, a questi elementi verranno assegnate posizioni fisse sullo schermo.
 
@@ -71,7 +71,7 @@ Consente di disporre gli oggetti in modo sequenziale da sinistra verso destra. Q
 
 ![Pannello di layout DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Breve video:** pulsante ![Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Breve video:** ![Pulsante Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Controlli di layout
 
@@ -79,7 +79,7 @@ Consente di disporre gli oggetti in modo sequenziale da sinistra verso destra. Q
 
 I seguenti controlli di layout sono quelli più diffusi, ma ne esistono altri. Tutti i pannelli sono disponibili nella **casella degli strumenti** in Visual Studio o nel pannello **Asset** in Blend per Visual Studio.
 
-### <a name="border"></a>Border
+### <a name="border"></a>Bordo
 
 Consente di creare un bordo, uno sfondo o entrambi intorno a un oggetto. È possibile aggiungere un solo oggetto a un controllo **Border**. Per applicare un bordo o uno sfondo a più oggetti, aggiungere a **Border** un pannello di layout, quindi aggiungere gli oggetti al pannello o al controllo.
 
@@ -98,8 +98,6 @@ Consente agli utenti di scorrere verso il basso in una pagina o un'area di una p
 ### <a name="viewbox"></a>Viewbox
 
 Consente di ridimensionare gli oggetti come con un controllo zoom. È possibile aggiungere un solo oggetto a un controllo **Viewbox**. Se si vuole applicare questo effetto a più oggetti, aggiungere un pannello di layout a **ViewBox** e quindi aggiungere i controlli a tale pannello.
-
-(Disponibile solo per i progetti WPF)
 
 ![Controllo di layout ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 

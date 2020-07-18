@@ -171,6 +171,7 @@ f1_keywords:
 - CA1832
 - CA1833
 - CA1835
+- CA1836
 - CA1900
 - CA1901
 - CA1903
@@ -290,18 +291,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7539ad5b7973c9f87222de19ca9c975b04918a35
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835433"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454189"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
 Nella tabella seguente sono elencati gli avvisi di analisi del codice per il codice gestito ordinati per identificatore CheckId.
 
-| CheckId | Avviso | Description |
+| CheckId | Avviso | Descrizione |
 |---------| - | - |
 | CA1000 | [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000.md) | Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento di tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento di tipo è diversa e può generare confusione. |
 | CA1001 | [CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001.md) | Una classe dichiara e implementa un campo di istanza di tipo System.IDisposable e la classe non implementa IDisposable. Una classe che dichiara un campo IDisposable è indirettamente proprietaria di una risorsa non gestita e deve implementare l'interfaccia IDisposable. |
@@ -460,6 +461,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | Ca1832 |[CA1832: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte ReadOnlySpan o ReadOnlyMemory di una matrice](../code-quality/ca1832.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
 | Ca1833 |[CA1833: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte Span o Memory di una matrice](../code-quality/ca1833.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.Span%601> <xref:System.Memory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
 | Ca1835 |[Ca1835: preferisce gli overload basati su Memory'per ' ReadAsync ' è WriteAsync '](../code-quality/ca1835.md) | ' Stream ' ha un overload ' ReadAsync ' che accetta un' &lt; byte &gt; di memoria ' come primo argomento e un overload ' WriteAsync ' che accetta un'ReadOnlyMemory &lt; byte &gt; ' come primo argomento. Preferisci chiamare gli overload basati sulla memoria, che sono più efficienti. |
+| Ca1836 |[Ca1836: preferenza `IsEmpty` rispetto a `Count` quando disponibile](../code-quality/ca1836.md) | Preferisci `IsEmpty` la proprietà che è più efficiente di `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> o <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> per determinare se l'oggetto contiene o meno elementi. |
 | CA1900 | [CA1900: I campi dei tipi di valore devono essere portabili](../code-quality/ca1900.md) | Questa regola consente di verificare che le strutture dichiarate utilizzando layout esplicito vengano allineate correttamente quando viene eseguito il marshalling a codice non gestito nei sistemi operativi a 64 bit. |
 | CA1901 | [CA1901: le dichiarazioni P/Invoke devono essere portabili](../code-quality/ca1901.md) | La regola valuta la dimensione di ciascun parametro e il valore restituito di P/Invoke e verifica che la dimensione del parametro sia corretta quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 32 e a 64 bit. |
 | CA1903 | [CA1903: Usare solo API della versione di .NET Framework di destinazione](../code-quality/ca1903.md) | Un membro o un tipo sta utilizzando un membro o un tipo introdotto in un service pack non incluso con la versione di .NET Framework di destinazione del progetto. |

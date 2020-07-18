@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3fc631a2a99dd6090893393ee20ecec23945713
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: dabcd99e4807d60db53487527d9b3a554169c8c4
+ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814928"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86454150"
 ---
 # <a name="performance-warnings"></a>avvisi di prestazioni
 Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni.
@@ -33,7 +33,7 @@ Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni
 | [CA1801: Controllare i parametri non usati](../code-quality/ca1801.md) | Una firma di metodo include un parametro non utilizzato nel corpo del metodo. |
 | [CA1802: Utilizza valori letterali dove appropriato](../code-quality/ca1802.md) | Un campo viene dichiarato statico e di sola lettura (Shared e ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) e viene inizializzato con un valore calcolabile in fase di compilazione. Poiché il valore assegnato al campo di destinazione è calcolabile in fase di compilazione, modificare la dichiarazione in un campo const (const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) in modo che il valore venga calcolato in fase di compilazione anziché in fase di esecuzione. |
 | [CA1804: Rimuovere variabili locali non usate](../code-quality/ca1804.md) | Le variabili locali inutilizzate e le assegnazioni non necessarie comportano un aumento delle dimensioni dell'assembly e una riduzione delle prestazioni. |
-| [CA1805: non inizializzare inutilmente](../code-quality/ca1805.md) | Il Runtime .NET Inizializza tutti i campi dei tipi di riferimento sui rispettivi valori predefiniti prima di eseguire il costruttore. Nella maggior parte dei casi, l'inizializzazione esplicita di un campo sul valore predefinito è ridondante, che aumenta i costi di manutenzione e può influire negativamente sulle prestazioni, ad esempio con una maggiore dimensione dell'assembly. |
+| [CA1805: Non eseguire inutilmente l'inizializzazione](../code-quality/ca1805.md) | Il Runtime .NET Inizializza tutti i campi dei tipi di riferimento sui rispettivi valori predefiniti prima di eseguire il costruttore. Nella maggior parte dei casi, l'inizializzazione esplicita di un campo sul valore predefinito è ridondante, che aumenta i costi di manutenzione e può influire negativamente sulle prestazioni, ad esempio con una maggiore dimensione dell'assembly. |
 | [CA1806: Non ignorare i risultati dei metodi](../code-quality/ca1806.md) | Un nuovo oggetto viene creato, ma non viene mai usato, oppure un metodo che crea e restituisce una nuova stringa viene chiamato e la nuova stringa non viene mai usata oppure un metodo Component Object Model (COM) o P/Invoke restituisce un codice HRESULT o errore che non viene mai usato. |
 | [CA1809: Evitare un numero eccessivo di variabili locali](../code-quality/ca1809.md) | Un'ottimizzazione comune delle prestazioni consiste nell'archiviare un valore in un registro del processore anziché in memoria. Tale procedura è definita "registrazione del valore".  Per aumentare la possibilità di registrazione di tutte le variabili locali, limitare il numero di tali variabili a 64. |
 | [CA1810: Inizializzare i campi statici del tipo di riferimento inline](../code-quality/ca1810.md) | Quando un tipo dichiara un costruttore statico esplicito, tramite il compilatore JIT (Just-In-Time) viene aggiunto un controllo a ogni metodo statico del tipo e a ogni costruttore di istanza del tipo per assicurare che il costruttore statico sia stato precedentemente chiamato. I controlli dei costruttori statici possono ridurre le prestazioni. |
@@ -59,3 +59,4 @@ Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni
 | [CA1832: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte ReadOnlySpan o ReadOnlyMemory di una matrice](../code-quality/ca1832.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
 | [CA1833: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte Span o Memory di una matrice](../code-quality/ca1833.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.Span%601> <xref:System.Memory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
 | [Ca1835: preferisce gli overload basati su Memory'per ' ReadAsync ' è WriteAsync '](../code-quality/ca1835.md) | ' Stream ' ha un overload ' ReadAsync ' che accetta un' &lt; byte &gt; di memoria ' come primo argomento e un overload ' WriteAsync ' che accetta un'ReadOnlyMemory &lt; byte &gt; ' come primo argomento. Preferisci chiamare gli overload basati sulla memoria, che sono più efficienti. |
+| [Ca1836: preferenza `IsEmpty` rispetto a `Count` quando disponibile](../code-quality/ca1836.md) | Preferisci `IsEmpty` la proprietà che è più efficiente di `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> o <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> per determinare se l'oggetto contiene o meno elementi. |
