@@ -11,15 +11,13 @@
           href: container-tools.md
         - name: App a pagina singola React.js in un contenitore
           href: container-tools-react.md
-        - name: Sviluppo Kubernetes con Azure Dev Spaces >>
-          href: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - name: Sviluppo Kubernetes
+          href: local-process-kubernetes.md
     - name: Esercitazioni
       expanded: true
       items:
         - name: App multi-contenitore con Docker Compose
           href: tutorial-multicontainer.md
-        - name: Kubernetes in Visual Studio
-          href: tutorial-kubernetes-tools.md
     - name: Procedura
       items:
         - name: Debug delle applicazioni in un contenitore Docker locale
@@ -40,7 +38,7 @@
           href: container-build.md
     - name: Risoluzione dei problemi
       href: troubleshooting-docker-errors.md
-    - name: Reference
+    - name: Riferimento
       items:
         - name: Proprietà di MSBuild per i progetti di contenitori
           href: container-msbuild-properties.md
@@ -48,3 +46,11 @@
           href: docker-compose-properties.md
         - name: Impostazioni di avvio
           href: container-launch-settings.md
+- name: Sviluppare con Kubernetes
+  items:
+    - name: Kubernetes in Visual Studio
+      href: tutorial-kubernetes-tools.md
+    - name: Processo locale con Kubernetes (anteprima)
+      href: local-process-kubernetes.md
+    - name: Come funziona Processo locale con Kubernetes (anteprima)
+      href: overview-local-process-kubernetes.md
