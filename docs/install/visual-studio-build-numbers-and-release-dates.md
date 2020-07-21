@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 63a9929ea4e70a085f41e0f3dd2f8a71c1eb487e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 641119c278f5bd489eb45b4e97ad2c89c4529c59
+ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386186"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86476030"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "86386186"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 16.7.0 | Preview 4 | 14 luglio 2020 | 16.7.30310.162 |
 | 16.6.4 | Versione | 14 luglio 2020 | 16.6.30309.148 |
@@ -159,7 +159,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.25 | Versione | 14 luglio 2020 | 15.9.28307.1216 |
 | 15.9.24 | Versione | 9 giugno 2020 | 15.9.28307.1177 |
@@ -339,7 +339,8 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm/)
+* [Visual Studio Roadmap](/visualstudio/productinfo/vs-roadmap)
+* [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
