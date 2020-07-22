@@ -5,32 +5,32 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.DoWhile.UI
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85f8d6c442982fff47a679e8fc2ccc04ee515a9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c56a9ab8b46f8f7ee36875dda507cb9f288136cf
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650522"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875605"
 ---
 # <a name="dowhile-activity-designer"></a>ActivityDesigner DoWhile
 
-L'attività <xref:System.Activities.Statements.DoWhile> esegue l'attività contenuta nel <xref:System.Activities.Statements.DoWhile.Body%2A> almeno una volta, fino a quando una condizione specificata non restituisce **false**. Se è necessario non eseguire l'attività contenuta in un corpo del ciclo o eseguirla più volte, usare l'attività alternativa <xref:System.Activities.Statements.While>.
+L' <xref:System.Activities.Statements.DoWhile> attività esegue l'attività contenuta in <xref:System.Activities.Statements.DoWhile.Body%2A> almeno una volta, fino a quando una condizione specificata non restituisce **false**. Se è necessario non eseguire l'attività contenuta in un corpo del ciclo o eseguirla più volte, usare l'attività alternativa <xref:System.Activities.Statements.While>.
 
 ## <a name="dowhile-properties-in-the-workflow-designer"></a>Proprietà di DoWhile in Progettazione flussi di lavoro
 
-Nella tabella seguente vengono illustrate le proprietà dell'attività <xref:System.Activities.Statements.DoWhile> più utili e viene descritto come utilizzarle nella finestra di progettazione:
+Nella tabella seguente vengono illustrate le proprietà più utili dell' <xref:System.Activities.Statements.DoWhile> attività e viene descritto come utilizzarle nella finestra di progettazione:
 
-|Nome proprietà|Richiesto|Utilizzo|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|L'attività da eseguire quando la condizione è **true**. Per aggiungere l'attività <xref:System.Activities.Statements.DoWhile.Body%2A>, rilasciare un'attività dalla casella degli strumenti nella casella **corpo** dell'ActivityDesigner **DoWhile** con il testo del suggerimento "drop Activity here".|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|Condizione da valutare prima di ogni iterazione del ciclo. Per impostare il <xref:System.Activities.Statements.DoWhile.Condition%2A>, digitare un'espressione Visual Basic nella casella **condizione** nell'ActivityDesigner **DoWhile** o nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|Falso|L'attività da eseguire quando la condizione è **true**. Per aggiungere l' <xref:System.Activities.Statements.DoWhile.Body%2A> attività, rilasciare un'attività dalla casella degli strumenti nella casella **corpo** dell'ActivityDesigner **DoWhile** con il testo del suggerimento "drop Activity here".|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|Vero|Condizione da valutare prima di ogni iterazione del ciclo. Per impostare <xref:System.Activities.Statements.DoWhile.Condition%2A> , digitare un'espressione Visual Basic nella casella **condizione** nell'ActivityDesigner **DoWhile** o nella griglia delle proprietà.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [While](../workflow-designer/while-activity-designer.md)
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

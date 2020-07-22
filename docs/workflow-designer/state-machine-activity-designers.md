@@ -3,23 +3,23 @@ title: ActivityDesigner della macchina a stati Progettazione flussi di lavoro
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 8a2ad311c5ea9b992b8e68a8250433354ea48f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188909"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86876060"
 ---
 # <a name="state-machine-activity-designers"></a>ActivityDesigner della macchina a stati
 
 Progettazione flussi di lavoro include diversi ActivityDesigner che è possibile usare per la costruzione dei flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e vengono fornite indicazioni sulle relative modalità di utilizzo.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informazioni di riferimento
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>
@@ -35,13 +35,13 @@ Progettazione flussi di lavoro include diversi ActivityDesigner che è possibile
 
  [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
 
- [Uso degli Activity Designer](control-flow-activity-designers.md)
+ [Utilizzo degli ActivityDesigner](control-flow-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Messaggistica](../workflow-designer/messaging-activity-designers.md)
 
  [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitive](../workflow-designer/primitives-activity-designers.md)
+ [Primitives](../workflow-designer/primitives-activity-designers.md)
 
  [Transazione](../workflow-designer/transaction-activity-designers.md)
 

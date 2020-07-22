@@ -1,7 +1,7 @@
 ---
 title: Modificare la firma di un metodo
 description: Aggiungere, rimuovere o modificare l'ordine dei parametri di un metodo. Fare clic con il pulsante destro del mouse sul metodo, scegliere Azioni rapide e refactoring e quindi Cambia firma.
-ms.date: 06/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 947f44700ef43815eb29bc3e90563afe1be68f2b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283878"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869568"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
 
@@ -61,12 +61,12 @@ Questo refactoring si applica a:
 
    ![Finestra di dialogo Cambia firma](media/change-signature.png)
 
-   | Pulsante | Description
+   | Pulsante | Descrizione
    | ------ | ---
    | **Su/Giù** | Consente di spostare il parametro selezionato verso l'alto e verso il basso nell'elenco
    | **Aggiungere** | Consente di aggiungere un nuovo parametro all'elenco
    | **Rimuovi** | Consente di rimuovere il parametro selezionato dall'elenco
-   | **Restore** | Consente di ripristinare il parametro selezionato e barrato nell'elenco
+   | **Recupera** | Consente di ripristinare il parametro selezionato e barrato nell'elenco
 
    > [!TIP]
    > Utilizzare la casella di controllo **Anteprima modifiche riferimento** per [verificare il risultato che verrà](../../ide/preview-changes.md) eseguito prima del commit.
@@ -75,18 +75,9 @@ Questo refactoring si applica a:
 
     ![Finestra di dialogo Aggiungi parametro-C #](media/add-parameter-dialog.png)
 
-5. Al termine dell'aggiunta di un parametro, fare clic sul pulsante **OK** per visualizzare l'anteprima delle modifiche.
+5. Al termine dell'aggiunta di un parametro, fare clic su **OK** per visualizzare l'anteprima delle modifiche.
 
     ![Finestra di dialogo Cambia firma](media/change-signature.png)
-
-6. Fare clic su **OK** per visualizzare le modifiche.
-   - C#:
-
-      ![Risultato della modifica della firma - C#](media/changesignature-result-cs.png)
-
-   - Visual Basic:
-
-      ![Risultato della modifica della firma - Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>Vedi anche
 

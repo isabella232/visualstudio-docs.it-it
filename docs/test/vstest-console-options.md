@@ -1,6 +1,6 @@
 ---
 title: Opzioni della riga di comando di VSTest.Console.exe
-ms.date: 07/12/2018
+ms.date: 07/17/2020
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf282ca647310010c2e75e7279f11cbc90aad76
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211567"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869594"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -35,7 +35,7 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 | Opzione | Descrizione |
 |---|---|
 |**[*nomi file di test*]**|Esegue i test dai file specificati. Per separare i nomi di file di test, usare gli spazi.<br />Esempi: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
-|**/Settings:[*nome file*]**|Eseguire i test con ulteriori impostazioni, ad esempio gli agenti di raccolta dati.<br />Esempio: `/Settings:Local.RunSettings`|
+|**/Settings:[*nome file*]**|Eseguire i test con ulteriori impostazioni, ad esempio gli agenti di raccolta dati. Per ulteriori informazioni, vedere [configurare unit test utilizzando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)<br />Esempio: `/Settings:local.runsettings`|
 |**/Tests:[*nome test*]**|Esegue i test con nomi che contengono i valori specificati. Per fornire più valori, separarli con virgole.<br />Esempio: `/Tests:TestMethod1,testMethod2`<br />Non è possibile usare l'opzione della riga di comando **/Tests** con l'opzione della riga di comando **/TestCaseFilter**.|
 |**/Parallel**|Specifica che i test devono essere eseguiti in parallelo. Per impostazione predefinita, è possibile usare fino a tutti i core disponibili nel computer. È possibile configurare il numero di core da usare in un file di impostazioni.|
 |**/Enablecodecoverage**|Abilita l'adapter dei dati di diagnostica CodeCoverage nell'esecuzione dei test.<br />Usare le impostazioni predefinite se non diversamente specificato usando un file di impostazioni.|

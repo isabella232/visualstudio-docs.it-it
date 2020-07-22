@@ -3,17 +3,17 @@ title: ActivityDesigner Progettazione flussi di lavoro primitive
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b71b8d882bd91525c0fdbe5504cd4b44110f51
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b5300af2bc011cb6ae5255d2d55aa425ca9f1925
+ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188927"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86875917"
 ---
 # <a name="primitives-activity-designers"></a>ActivityDesigner Primitive
 
@@ -24,7 +24,7 @@ Gli ActivityDesigner primitivi consentono di creare e configurare diverse attivi
 
  [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Messaggistica](../workflow-designer/messaging-activity-designers.md)
 
  [Runtime](../workflow-designer/runtime-activity-designers.md)
 
@@ -34,6 +34,6 @@ Gli ActivityDesigner primitivi consentono di creare e configurare diverse attivi
 
  [Gestione degli errori](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Uso degli Activity Designer](control-flow-activity-designers.md)
+- [Utilizzo degli ActivityDesigner](control-flow-activity-designers.md)

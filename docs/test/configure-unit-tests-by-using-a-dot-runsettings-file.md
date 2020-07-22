@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0918ee1fc0676f37445f14b078c48c365144644c
-ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
+ms.openlocfilehash: 1a840d4aca1a6eda3f549278e36a1d64725cd8ad
+ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86476017"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869620"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare gli unit test usando un file con *estensione runsettings*
 
@@ -238,9 +238,7 @@ Questa opzione può essere utile per isolare un test problematico che causa un a
 </DataCollector>
 ```
 
-## <a name="testrunparameters-element"></a>Elemento TestRunParameters
-
-I parametri dell'esecuzione dei test consentono di definire le variabili e i valori disponibili per i test in fase di esecuzione. 
+### <a name="testrunparameters"></a>TestRunParameters
 
 ```xml
 <TestRunParameters>
@@ -249,17 +247,20 @@ I parametri dell'esecuzione dei test consentono di definire le variabili e i val
 </TestRunParameters>
 ```
 
-Nel codice di test accedere ai parametri usando la <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> proprietà:
+I parametri dell'esecuzione dei test consentono di definire le variabili e i valori disponibili per i test in fase di esecuzione. Accedere ai parametri usando la <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> Proprietà MSTest (o NUnit [TestContext](https://docs.nunit.org/articles/nunit/writing-tests/TestContext.html)):
 
 ```csharp
-[TestMethod]
+private string _appUrl;
+public TestContext TestContext { get; set; }
+
+[TestMethod] // [Test] for NUnit
 public void HomePageTest()
 {
-    string appURL = TestContext.Properties["webAppUrl"];
+    string _appURL = TestContext.Properties["webAppUrl"];
 }
 ```
 
-Per usare i parametri di esecuzione dei test, aggiungere un campo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privato e una proprietà <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pubblica alla classe di test.
+Per usare i parametri di esecuzione dei test, aggiungere una <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> proprietà pubblica alla classe di test.
 
 ## <a name="loggerrunsettings-element"></a>Elemento LoggerRunSettings
 
@@ -457,7 +458,7 @@ Il nodo **RunConfiguration** deve contenere un nodo **EnvironmentVariables** . U
 > [!NOTE]
 > Poiché queste variabili di ambiente devono essere sempre impostate quando l'host di test viene avviato, i test devono sempre essere eseguiti in un processo separato. A tale scopo, il flag */InIsolation* verrà impostato in presenza di variabili di ambiente in modo che l'host di test venga sempre richiamato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Configurare un agente di test](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md)
