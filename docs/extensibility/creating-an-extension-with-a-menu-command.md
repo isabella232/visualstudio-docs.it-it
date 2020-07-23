@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9e9963e05b0991beaea7da4027f4db3df4e4eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903914"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972335"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Creare un'estensione con un comando di menu
 
@@ -32,7 +32,17 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 1. Creare un progetto VSIX denominato **FirstMenuCommand**. È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
+::: moniker range="vs-2017"
+
 2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **FirstCommand**. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#**  >  **estensibilità** di Visual C# e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *FirstCommand.cs*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **FirstCommand**. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#**  >  **Extensibility** e selezionare **comando**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *FirstCommand.cs*.
+
+::: moniker-end
 
 3. Compilare il progetto e avviare il debug.
 
@@ -50,7 +60,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 ::: moniker-end
 
-Passare ora al menu **strumenti** nell'istanza sperimentale. Dovrebbe essere visualizzato il comando **Invoke FirstCommand** . A questo punto, il comando Visualizza una finestra di messaggio che indica **FirstCommandPackage all'interno di FirstMenuCommand. FirstCommand. MenuItemCallback ()**. Si vedrà come avviare effettivamente il blocco note da questo comando nella sezione successiva.
+Passare ora al menu **strumenti** nell'istanza sperimentale. Dovrebbe essere visualizzato il comando **Invoke FirstCommand** . A questo punto, il comando Visualizza una finestra di messaggio che indica **FirstCommand all'interno di FirstMenuCommand. FirstCommand. MenuItemCallback ()**. Si vedrà come avviare effettivamente il blocco note da questo comando nella sezione successiva.
 
 ## <a name="change-the-menu-command-handler"></a>Modificare il gestore dei comandi di menu
 
@@ -77,11 +87,13 @@ A questo punto, è possibile aggiornare il gestore dei comandi per avviare il bl
     }
     ```
 
-3. Rimuovere il `MenuItemCallback` metodo e aggiungere un `StartNotepad` metodo che avvierà semplicemente il blocco note:
+3. Rimuovere il `Execute` metodo e aggiungere un `StartNotepad` metodo che avvierà semplicemente il blocco note:
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
     {
+        ThreadHelper.ThrowIfNotOnUIThread();
+
         Process proc = new Process();
         proc.StartInfo.FileName = "notepad.exe";
         proc.Start();
@@ -102,7 +114,7 @@ Se si sviluppano più estensioni o si esplorano i risultati con versioni diverse
 
 2. Eseguire il comando seguente dalla riga di comando:
 
-    ```xml
+    ```cmd
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=<version> /RootSuffix=Exp && PAUSE
 
     ```
@@ -113,7 +125,7 @@ Ora che l'estensione dello strumento è in esecuzione nel modo desiderato, è ne
 
 È possibile trovare il file *VSIX* per questa estensione nella directory bin *FirstMenuCommand* . In particolare, supponendo che sia stata compilata la configurazione di rilascio, sarà in:
 
-*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand. vsix*
+*\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\FirstMenuCommand.vsix*
 
 Per installare l'estensione, l'amico deve chiudere tutte le istanze aperte di Visual Studio, quindi fare doppio clic sul file *VSIX* , che Visualizza il programma di **installazione VSIX**. I file vengono copiati nella directory *%LocalAppData%\Microsoft\VisualStudio \<version> \Extensions*
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0871361d25131b493838bac12945a64a19a0f173
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
+ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543728"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "86972361"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creare un'estensione C++ per Python
 
@@ -183,7 +183,7 @@ Se si lavora con Python 2.7, fare invece riferimento a [Extending Python 2.7 wit
     #include <Python.h>
     ```
 
-1. Modificare il metodo `tanh_impl` in modo che accetti e restituisca tipi di Python (ovvero un `PyOjbect*`):
+1. Modificare il metodo `tanh_impl` in modo che accetti e restituisca tipi di Python (ovvero un `PyObject*`):
 
     ```cpp
     PyObject* tanh_impl(PyObject *, PyObject* o) {
