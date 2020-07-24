@@ -6,12 +6,12 @@ ms.topic: conceptual
 description: Descrive i processi per l'uso del processo locale con Kubernetes per connettere il computer di sviluppo al cluster Kubernetes
 keywords: Processo locale con Kubernetes, Docker, Kubernetes, Azure, contenitori
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: adde9d8ecab93bdb6f0aebbd74730ef60bd80cf6
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
+ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454335"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87133976"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Come funziona Processo locale con Kubernetes
 
@@ -40,6 +40,44 @@ Quando il processo locale con Kubernetes stabilisce una connessione al cluster:
 
 Dopo aver stabilito una connessione al cluster, è possibile eseguire ed eseguire il debug del codice in modo nativo nel computer, senza contenitori e il codice può interagire direttamente con il resto del cluster. Qualsiasi traffico di rete ricevuto dall'agente remoto viene reindirizzato alla porta locale specificata durante la connessione, in modo che il codice in esecuzione a livello nativo possa accettare ed elaborare tale traffico. Le variabili di ambiente, i volumi e i segreti del cluster vengono resi disponibili per il codice in esecuzione nel computer di sviluppo. Inoltre, a causa delle voci del file hosts e del Port porting aggiunto al computer di sviluppo da un processo locale con Kubernetes, il codice può inviare il traffico di rete ai servizi in esecuzione nel cluster usando i nomi di servizio del cluster e il traffico viene inoltrato ai servizi in esecuzione nel cluster. Il traffico viene instradato tra il computer di sviluppo e il cluster per l'intera durata della connessione.
 
+## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Uso delle funzionalità di routing per lo sviluppo in isolamento
+
+Per impostazione predefinita, il processo locale con Kubernetes reindirizza tutto il traffico per un servizio al computer di sviluppo. È anche possibile usare le funzionalità di routing per reindirizzare solo le richieste a un servizio originato da un sottodominio nel computer di sviluppo. Queste funzionalità di routing consentono di usare il processo locale con Kubernetes per lo sviluppo in isolamento ed evitare di interferire con altro traffico nel cluster.
+
+L'animazione seguente mostra due sviluppatori che lavorano sullo stesso cluster in isolamento:
+
+![GIF animata che illustra l'isolamento](media/local-process-kubernetes/lpk-graphic-isolated.gif)
+
+Quando si Abilita l'uso in isolamento, il processo locale con Kubernetes esegue le operazioni seguenti oltre alla connessione al cluster Kubernetes:
+
+* Verifica che il cluster Kubernetes non disponga Azure Dev Spaces abilitata.
+* Replica il servizio scelto nel cluster nello stesso spazio dei nomi e aggiunge un'etichetta *routing.VisualStudio.io/Route-from=SERVICE_NAME* e *routing.VisualStudio.io/Route-on-header=kubernetes-route-As: GENERATED_NAME* annotazione.
+* Configura e avvia gestione routing nello stesso spazio dei nomi nel cluster Kubernetes. Gestione routing utilizza un selettore di etichette per cercare l'etichetta *routing.VisualStudio.io/Route-from=SERVICE_NAME* e *routing.VisualStudio.io/Route-on-header=kubernetes-route-As: GENERATED_NAME* annotazione durante la configurazione del routing nello spazio dei nomi.
+
+Se il processo locale con Kubernetes rileva che Azure Dev Spaces è abilitato nel cluster Kubernetes, viene richiesto di disabilitare Azure Dev Spaces prima di poter usare il processo locale con Kubernetes.
+
+Quando viene avviato, gestione routing esegue le operazioni seguenti:
+* Duplica tutti gli ingressi trovati nello spazio dei nomi utilizzando la *GENERATED_NAME* per il sottodominio. 
+* Crea un pod di invio per ogni servizio associato a ingress duplicato con il sottodominio *GENERATED_NAME* .
+* Crea un pod di invio aggiuntivo per il servizio su cui si sta lavorando in isolamento. Ciò consente di indirizzare le richieste con il sottodominio al computer di sviluppo.
+* Configura le regole di routing per ogni pod di invio per gestire il routing per i servizi con il sottodominio.
+
+Quando nel cluster viene ricevuta una richiesta con il sottodominio *GENERATED_NAME* , viene aggiunta un'intestazione *kubernetes-route-As = GENERATED_NAME* alla richiesta. I pod di invio gestiscono il routing della richiesta al servizio appropriato nel cluster. Se la richiesta viene indirizzata al servizio su cui si sta lavorando in isolamento, la richiesta viene reindirizzata al computer di sviluppo dall'agente remoto.
+
+Quando nel cluster viene ricevuta una richiesta senza il sottodominio *GENERATED_NAME* , non viene aggiunta alcuna intestazione alla richiesta. I pod di invio gestiscono il routing della richiesta al servizio appropriato nel cluster. Se la richiesta viene instradata al servizio che viene sostituito, la richiesta viene invece indirizzata al servizio originale anziché all'agente remoto.
+
+> [!IMPORTANT]
+> Ogni servizio del cluster deve inoltrare l'intestazione *kubernetes-route-As = GENERATED_NAME* quando si effettuano richieste aggiuntive. Ad esempio, quando *servicea* riceve una richiesta, effettua una richiesta a *serviceB* prima di restituire una risposta. In questo esempio, *servicea* deve inoltrare l'intestazione *kubernetes-route-As = GENERATED_NAME* nella richiesta a *serviceB*. Alcuni linguaggi, ad esempio [ASP.NET][asp-net-header], possono avere metodi per la gestione della propagazione dell'intestazione.
+
+Quando si esegue la disconnessione dal cluster, per impostazione predefinita il processo locale con Kubernetes rimuoverà tutti i pod di invio e il servizio duplicato. 
+
+> Si noti Il servizio e la distribuzione di gestione routing rimarranno in esecuzione nello spazio dei nomi. Per rimuovere la distribuzione e il servizio, eseguire i comandi seguenti per lo spazio dei nomi.
+>
+> ```azurecli
+> kubectl delete deployment routingmanager-deployment -n NAMESPACE
+> kubectl delete service routingmanager-service -n NAMESPACE
+> ```
+
 ## <a name="diagnostics-and-logging"></a>Diagnostica e registrazione
 
 Quando si usa il processo locale con Kubernetes per la connessione al cluster, i log di diagnostica del cluster vengono registrati nella [directory temporanea][azds-tmp-dir]del computer di sviluppo.
@@ -52,11 +90,17 @@ Il processo locale con Kubernetes presenta le limitazioni seguenti:
 * Un servizio deve essere supportato da un singolo POD per potersi connettere a tale servizio. Non è possibile connettersi a un servizio con più POD, ad esempio un servizio con repliche.
 * Un pod può avere un solo contenitore in esecuzione in tale Pod affinché il processo locale con Kubernetes possa connettersi. Il processo locale con Kubernetes non è in grado di connettersi ai servizi con Pod con contenitori aggiuntivi, ad esempio contenitori sidecar inseriti da mesh dei servizi.
 * Il processo locale con Kubernetes richiede autorizzazioni elevate per l'esecuzione nel computer di sviluppo per modificare il file degli host.
+* Il processo locale con Kubernetes non può essere usato in cluster con Azure Dev Spaces abilitata.
+
+### <a name="local-process-with-kubernetes-and-clusters-with-azure-dev-spaces-enabled"></a>Processo locale con Kubernetes e cluster con Azure Dev Spaces abilitato
+
+Non è possibile usare il processo locale con Kubernetes in un cluster con Azure Dev Spaces abilitata. Se si vuole usare il processo locale con Kubernetes in un cluster con Azure Dev Spaces abilitato, è necessario disabilitare Azure Dev Spaces prima di connettersi al cluster.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Per iniziare a usare il processo locale con Kubernetes per connettersi al computer di sviluppo locale al cluster, vedere [usare il processo locale con Kubernetes](local-process-kubernetes.md).
 
+[asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest

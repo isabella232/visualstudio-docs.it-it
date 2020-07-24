@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
-ms.date: 03/24/2020
+ms.date: 07/22/2020
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
-ms.openlocfilehash: a68456b93a307d97ab706e18b3790e84be547f9f
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
+ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444824"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115323"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
@@ -20,7 +20,7 @@ I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia
 ## <a name="sign-in"></a>Accedi
 
    > [!div class="mx-imgBorder"]
-   > ![Riquadro DevOps di AzureAzure DevOps Tile](_img/vs-azure-devops/vs-azure-devops-tile.png)
+   > ![Riquadro Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
 Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottoscrizione di Visual Studio o l'[identità alternativa](vs-alternate-identity.md), il riconoscimento avviene automaticamente.  In questo modo è possibile aggiungere anche un account aziendale o dell'istituto di istruzione (usato per l'accesso a Visual Studio, Office 365 o alla rete aziendale o dell'istituto di istruzione), in modo che sia possibile accedere ad Azure DevOps sia tramite l'account personale che tramite l'account aziendale o dell'istituto di istruzione.
@@ -30,22 +30,27 @@ Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottos
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, vendita al dettaglio, NFR<sup>1</sup> selezionato  | Schede di Azure & Repos (base), piani di test di Azure, pipeline di Azure (self-hosted)Azure Boards & Repos (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise   | Vl| Schede di Azure & Repos (base), piani di test di Azure, pipeline di Azure (self-hosted)Azure Boards & Repos (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Sì          |
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Azure Boards e Repos (Basic)                                                            |  Sì          |
-| Visual Studio Professional con GitHub Enterprise | Vl| Azure Boards e Repos (Basic)                                                            |  Sì          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Sì          |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Sì          |
+| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, retail, NFR selezionato<sup>1</sup>  | Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Sì          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Sì          |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Repository Azure Boards & (Basic<sup>2</sup>) [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sì          |
+| Visual Studio Professional con GitHub Enterprise | VL| Repository Azure Boards & (Basic<sup>2</sup>) [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sì          |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>) Azure test plans [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sì          |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>) Azure test plans [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sì          |
 ||
 
-<sup>1</sup>  *Include: Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Esclude: MCT Software & Services, Imagine.*
+<sup>1</sup>  *include: not for Resale (NFR), most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT software & Services Developer, ETP. Esclude: MCT software & Services, Imagine.*
 
+<sup>2</sup> il *piano Basic include la definizione di pipeline di versione e pipeline di distribuzione continua multifase (CD) e l'uso di approvazioni e controlli per controllare le distribuzioni. quando è abilitata l'accesso gratuito alla funzionalità di anteprima delle pipeline, le parti interessate ottengono l'accesso a tutte le funzionalità di Azure Pipelines. Per altre informazioni sulle funzionalità incluse nei piani, vedere la [pagina relativa ai livelli di accesso](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)di Azure.*
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'utente.
+Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'utente.
 Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+
+## <a name="frequently-asked-questions"></a>Domande frequenti
+### <a name="q-as-a-visual-studio-enterprise-subscriber-do-i-get-additional-parallel-jobs-for-tfs-and-azure-pipelines"></a>D: come Sottoscrittore di Visual Studio Enterprise, si ottengono processi paralleli aggiuntivi per TFS e Azure Pipelines?
+R: sì. Visual Studio Enterprise sottoscrittori ottengono un processo parallelo in Team Foundation Server 2017 o versione successiva e un processo parallelo indipendente in ogni organizzazione Azure DevOps Services in cui sono membri.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
@@ -54,14 +59,14 @@ Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più so
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle funzionalità di Azure DevOps:
-- [Azure Boards & Repos (Basic Plan)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Repository di Azure Boards & (piano Basic)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-Informazioni su come attivare il [credito individuale Di Azure DevTest.](vs-azure.md)
+Informazioni su come attivare il [credito individuale di Azure DevTest](vs-azure.md).
