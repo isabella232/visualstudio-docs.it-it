@@ -82,6 +82,8 @@
               href: install/update-a-network-installation-of-visual-studio.md
             - name: Aggiornare Visual Studio secondo una baseline di manutenzione
               href: install/update-servicing-baseline.md
+            - name: Aggiornare Visual Studio usando un layout offline minimo
+              href: install/update-minimal-layout.md
             - name: Controllare gli aggiornamenti delle distribuzioni di Visual Studio
               href: install/controlling-updates-to-visual-studio-deployments.md
             - name: Gestire le modifiche al payload del pacchetto
@@ -948,7 +950,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Prodotti e servizi Microsoft per l'accessibilità
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Riferimento
+- name: Informazioni di riferimento
   items:
     - name: Scelte rapide da tastiera
       items:
