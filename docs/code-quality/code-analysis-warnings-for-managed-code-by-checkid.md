@@ -100,6 +100,7 @@ f1_keywords:
 - CA1413
 - CA1414
 - CA1415
+- CA1417
 - CA1500
 - CA1501
 - CA1502
@@ -291,12 +292,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ecf66c26838b6e276188eea1c6fa04d3f5d1799
-ms.sourcegitcommit: 510a928153470e2f96ef28b808f1d038506cce0c
+ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86454189"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235095"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
@@ -397,6 +398,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA1413 | [CA1413: Evitare i campi non pubblici nei tipi valore visibili a COM](../code-quality/ca1413.md) | I campi di istanza non pubblici di tipi di valori visibili a COM sono visibili ai client COM. Esaminare il contenuto dei campi alla ricerca di informazioni che non devono essere esposte o che avranno un impatto non previsto sulla progettazione o la sicurezza. |
 | CA1414 | [CA1414: contrassegnare gli argomenti P/Invoke booleani con marshalling](../code-quality/ca1414.md) | Per il tipo di dati booleano sono disponibili più rappresentazioni nel codice non gestito. |
 | CA1415 | [CA1415: dichiarare correttamente i P/Invoke](../code-quality/ca1415.md) | Tramite questa regola vengono cercate le dichiarazioni di metodo di chiamata al sistema operativo per le funzioni [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] con un puntatore a un parametro di struttura OVERLAPPED e il cui parametro gestito corrispondente non è un puntatore a una struttura System.Threading.NativeOverlapped. |
+| Ca1417 | [Ca1417: non usare `OutAttribute` nei parametri di stringa per P/Invoke](../code-quality/ca1417.md) | I parametri stringa passati per valore con `OutAttribute` possono destabilizzare il runtime se la stringa è una stringa interna. |
 | CA1500 | [CA1500: I nomi delle variabili non devono corrispondere ai nomi dei campi](../code-quality/ca1500.md) | Un metodo di istanza dichiara un parametro o una variabile locale il cui nome corrisponde a un campo di istanza del tipo dichiarante, pertanto vengono generati errori. |
 | CA1501 | [CA1501: Evitare ereditarietà eccessiva](../code-quality/ca1501.md) | Un tipo si trova oltre il quarto livello di annidamento nella gerarchia di ereditarietà. Le gerarchie di tipi eccessivamente annidate possono comportare difficoltà di comprensione e gestione. |
 | CA1502 | [CA1502: Evitare complessità eccessiva](../code-quality/ca1502.md) | Questa regola misura il numero di percorsi linearmente indipendenti tramite il metodo, determinato dal numero e dalla complessità di rami condizionali. |

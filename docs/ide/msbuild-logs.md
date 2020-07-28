@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: ae91f7b9c90f0b06c449d26f67fe4fcc3434518e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85768703"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235069"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Risolvere i problemi e creare i log per problemi relativi a MSBuild
 
@@ -44,7 +44,7 @@ L'ultima definizione di una proprietà è quella utilizzata dalla compilazione. 
 - PropertyGroups e Imports
 - ItemDefinitionGroups
 - ItemGroups
-- Destinazioni
+- Targets
 
 Considerato l'ordine seguente, quindi:
 
@@ -106,7 +106,7 @@ Se si sta compilando nell'IDE di Visual Studio (con visualizzazione dettagliata 
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
     ```
 
-    oppure
+    o
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
@@ -124,10 +124,14 @@ Verrà creato un file Msbuild.binlog nella directory da cui è stato eseguito MS
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
-    oppure
+    o
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /fl MyProject.vcxproj
     ```
 
     Verrà creato un file Msbuild.log nella directory da cui è stato eseguito msbuild.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

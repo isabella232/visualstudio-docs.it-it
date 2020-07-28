@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze ai sottoscrittori
-ms.openlocfilehash: a90d6f3fec1f619cda397788c130f7514307effd
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e8eba6ad97d0f5e7e1da0e75093c33658f26a56a
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183470"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235017"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibile usare il portale di amministrazione per assegnare sottoscrizioni a singoli utenti e gruppi di utenti.
@@ -34,10 +34,10 @@ Ecco come assegnare una sottoscrizione di Visual Studio a un nuovo utente per po
 1. Accedere al portale di [Amministrazione](https://manage.visualstudio.com).
 2. Per assegnare una licenza a un singolo Sottoscrittore di Visual Studio, nella parte superiore della tabella selezionare **Aggiungi**, quindi scegliere **singolo Sottoscrittore**.
    > [!div class="mx-imgBorder"]
-   > ![Aggiungere un singolo sottoscrittore](_img/assign-license-add/add-subscriber-individual.png)
+   > ![Aggiungere un singolo sottoscrittore](_img/assign-license-add/add-subscriber-individual.png "Fare clic su Aggiungi, quindi scegliere singolo Sottoscrittore per assegnare una singola sottoscrizione.")
 3. Immettere le informazioni nei campi del modulo per il nuovo sottoscrittore. Se l'organizzazione usa Azure Active Directory, il campo **Nome** funge da funzione di ricerca per trovare le persone nella directory corrente, in modo da selezionare l'utente corretto nei risultati della ricerca. Dopo aver selezionato la persona, vengono inseriti automaticamente il nome, l'indirizzo di posta elettronica di accesso e l'indirizzo di posta elettronica di notifica.
    > [!div class="mx-imgBorder"]
-   > ![Dettagli sul sottoscrittore](_img/assign-license-add/subscriber-details.png)
+   > ![Dettagli sul sottoscrittore](_img/assign-license-add/subscriber-details.png "Immettere il nome del Sottoscrittore e altri dettagli oppure scegliere tra i membri del tenant.")
 
     > [!NOTE]
     > Affinché i membri di un tenant di Azure Active Directory siano visibili quando si immette un nome di Sottoscrittore, l'amministratore deve essere un membro del tenant. 
@@ -45,15 +45,15 @@ Ecco come assegnare una sottoscrizione di Visual Studio a un nuovo utente per po
 
     Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), assicurarsi di lasciare selezionata la casella di attivazione/disattivazione dei download nella sezione delle **impostazioni di download**. Se si sceglie di disabilitare i download, l'utente non avrà accesso ai download del software.  Anche l'accesso ai codici Product Key verrà disabilitato.  Il Sottoscrittore avrà comunque accesso a tutti gli altri vantaggi inclusi nella sottoscrizione.
    > [!div class="mx-imgBorder"]
-   > ![Accedere ai download](media/access-to-downloads.png)
+   > ! [Accesso ai download] (media/access-to-downloads.png "Scegli" Consenti "per fornire al Sottoscrittore l'accesso ai download software.")
 
     Se si vuole aggiungere le proprie note di riferimento alla sottoscrizione, è possibile aggiungerle nella sezione **Aggiungi riferimento**.
    > [!div class="mx-imgBorder"]
-   > ![Aggiungere le proprie note di riferimento a ogni sottoscrizione](media/add-subscriber-reference-notes.png)
+   > ![Aggiungere le proprie note di riferimento a ogni sottoscrizione](media/add-subscriber-reference-notes.png "Usare il campo riferimento per registrare eventuali note relative a questa sottoscrizione.")
 
     Dopo aver selezionato le opzioni e aver immesso i dati per il sottoscrittore, scegliere **Aggiungi** nella parte inferiore di **Aggiungi sottoscrittore**.
    > [!div class="mx-imgBorder"]
-   > ![Scegliere il pulsante Aggiungi](media/add-button.png)
+   > ![Scegliere il pulsante Aggiungi](media/add-button.png "Fare clic su Aggiungi per salvare le informazioni e assegnare la sottoscrizione al Sottoscrittore.")
 
 ## <a name="resend-assignment-emails"></a>Invia nuovamente i messaggi di posta elettronica di assegnazione
 Dopo l'aggiunta di un Sottoscrittore, un messaggio di posta elettronica di assegnazione verrà inviato automaticamente al nuovo Sottoscrittore con ulteriori istruzioni. È possibile inviare di nuovo il messaggio di posta elettronica di assegnazione in qualsiasi momento selezionando il Sottoscrittore e facendo clic sul pulsante **Invia** di nuovo nel menu in alto.  Per inviare di nuovo i messaggi di posta elettronica a più utenti, tenere premuto il tasto **CTRL** mentre si selezionano i sottoscrittori.  Quando si fa clic sul pulsante **Invia** di nuovo, viene visualizzata una finestra di dialogo in cui viene chiesto di confermare che si desidera inviare nuovamente a tali Sottoscrittori.  
@@ -67,6 +67,6 @@ Dopo l'aggiunta di un Sottoscrittore, un messaggio di posta elettronica di asseg
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Se è necessario aggiungere molti utenti,  vedere le informazioni su come assegnare sottoscrizioni a [più sottoscrittori](assign-license-bulk.md).
-- Serve aiuto?  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Richiesta di assistenza  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 

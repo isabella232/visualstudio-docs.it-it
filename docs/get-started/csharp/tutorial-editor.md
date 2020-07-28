@@ -12,28 +12,28 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 72a74c967849703feeb427d89891a023326ca6b7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75590436"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234965"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
+# <a name="learn-to-use-the-code-editor-with-c"></a>Informazioni su come usare l'editor di codice con C #
 
-In questa introduzione all'editor di codice di Visual Studio della durata di 10 minuti si aggiunge codice a un file per vedere in che modo Visual Studio semplifica la scrittura, la navigazione e la comprensione del codice.
+In questa introduzione di 10 minuti all'editor di codice in Visual Studio, si aggiungerà codice a un file per esaminare alcune delle modalità con cui Visual Studio semplifica la scrittura, lo spostamento e la comprensione del codice C#.
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+> Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+> Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -54,11 +54,11 @@ Per iniziare si crea un nuovo file e si aggiunge codice al file.
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio. Premere **ESC** o fare clic su **Continua senza codice** nella finestra di avvio per aprire l'ambiente di sviluppo.
+1. Aprire Visual Studio. Premere **ESC** oppure fare clic su **continua senza codice** nella finestra di avvio per aprire l'ambiente di sviluppo.
 
 ::: moniker-end
 
-2. Dal menu **File** sulla barra dei menu, scegliere **Nuovo** > **file**o premere **CTRL**+**N**.
+2. Dal menu **file** nella barra dei menu scegliere **nuovo**  >  **file**oppure premere **CTRL** + **N**.
 
 3. Nella finestra di dialogo **Nuovo file**, nella categoria **Generale**, scegliere **Classe di Visual C#** e quindi scegliere **Apri**.
 
@@ -70,7 +70,7 @@ Per iniziare si crea un nuovo file e si aggiunge codice al file.
 
 Visual Studio offre *frammenti di codice* utili che è possibile usare per generare in modo semplice e rapido blocchi di codice di uso comune. [I frammenti di codice](../../ide/code-snippets.md) sono disponibili per vari linguaggi di programmazione, tra cui C#, Visual Basic e C++. Ora si aggiunge il frammento C# `void Main` al file.
 
-1. Posizionare il cursore appena **}** sopra la parentesi graffa `svm` di chiusura finale - nel file e digitare i caratteri (che sta per `static void Main` &mdash;non preoccuparti troppo se non si sa cosa significa).
+1. Posizionare il cursore appena sopra la parentesi graffa di chiusura finale **}** nel file e digitare i caratteri `svm` (che sta per `static void Main` &mdash; non preoccuparsi troppo se non si conosce il significato).
 
    Verrà visualizzata una finestra di dialogo a comparsa con le informazioni sul frammento di codice `svm`.
 
@@ -80,7 +80,7 @@ Visual Studio offre *frammenti di codice* utili che è possibile usare per gener
 
    La firma del metodo `static void Main()` viene aggiunta al file. Il metodo [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) è il punto di ingresso per le applicazioni C#.
 
-I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per la propria lingua scegliendo **Modifica** > **IntelliSense** > **Inserisci frammento di codice** o premendo **Ctrl**+**K**, **Ctrl**+**X**e quindi scegliendo la cartella della lingua. Per C# l'elenco ha l'aspetto seguente:
+I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per la lingua scegliendo **modifica**  >  **IntelliSense**  >  **Inserisci frammento** o premendo **CTRL** + **K**, **CTRL** + **X**e quindi scegliendo la cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
 
 ![Elenco di frammenti di codice per C#](../media/tutorial-code-snippet-list.png)
 
@@ -90,7 +90,7 @@ L'elenco include frammenti per la creazione di una [classe](/dotnet/csharp/progr
 
 La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di Visual Studio, contribuisce ad aumentare la produttività in fase di creazione del codice. Ad esempio, è possibile attivare o disattivare la modalità di completamento IntelliSense ([IntelliSense](../../ide/using-intellisense.md) è un ausilio per la scrittura del codice che visualizza un elenco di metodi corrispondenti, tra le altre cose), aumentare o ridurre un rientro di riga o impostare come commento il codice che non si vuole compilare. In questa sezione, una porzione del codice verrà impostata come commento.
 
-![Barra degli strumenti editor](../media/tutorial-editor-toolbar.png)
+![Barra degli strumenti dell'editor](../media/tutorial-editor-toolbar.png)
 
 1. Incollare il codice seguente nel corpo del metodo `Main()`.
 
@@ -116,7 +116,7 @@ La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di 
                                 select word;
     ```
 
-1. In questa fase non si usa la variabile `morewords` ma, poiché potrebbe risultare utile in seguito, non la si elimina. Invece si impostano le linee corrispondenti come commento. Selezionare l'intera definizione di `morewords` fino al punto e virgola finale, quindi scegliere il pulsante **Imposta le righe selezionate come commento** sulla barra degli strumenti. Se si preferisce utilizzare la tastiera, premere **Ctrl**+**K**, **Ctrl**+**C**.
+1. In questa fase non si usa la variabile `morewords` ma, poiché potrebbe risultare utile in seguito, non la si elimina. Invece si impostano le linee corrispondenti come commento. Selezionare l'intera definizione di `morewords` fino al punto e virgola finale, quindi scegliere il pulsante **Imposta le righe selezionate come commento** sulla barra degli strumenti. Se si preferisce usare la tastiera, premere **CTRL** + **K**, **CTRL** + **C**.
 
    ![Pulsante di impostazione come commento](../media/tutorial-comment-out.png)
 
@@ -124,17 +124,17 @@ La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di 
 
 ## <a name="collapse-code-blocks"></a>Comprimere i blocchi di codice
 
-Non è necessario visualizzare il [costruttore](/dotnet/csharp/programming-guide/classes-and-structs/constructors) vuoto per `Class1` che è stato generato, pertanto per semplificare la visualizzazione del codice si procederà a comprimere il costruttore. Scegliere la piccola casella grigia contenente il segno meno sul margine della prima riga del costruttore. In alternativa, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi del codice del costruttore e premere **Ctrl**+**M**, **Ctrl**+**M**.
+Non è necessario visualizzare il [costruttore](/dotnet/csharp/programming-guide/classes-and-structs/constructors) vuoto per `Class1` che è stato generato, pertanto per semplificare la visualizzazione del codice si procederà a comprimere il costruttore. Scegliere la piccola casella grigia contenente il segno meno sul margine della prima riga del costruttore. In alternativa, se si è un utente della tastiera, posizionare il cursore in un punto qualsiasi del codice del costruttore e premere **CTRL** + **m**, **CTRL** + **m**.
 
 ![Pulsante di compressione evidenziato](../media/tutorial-collapse.png)
 
-Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere nuovamente il blocco di codice, fare clic sulla stessa casella grigia che ora contiene un segno più oppure premere di nuovo **Ctrl**+**M**, **Ctrl**+**M.** Questa funzionalità è denominata [struttura](../../ide/outlining.md) ed è particolarmente utile quando si compariscono metodi lunghi o intere classi.
+Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai puntini di sospensione (`...`). Per espandere di nuovo il blocco di codice, fare clic sulla stessa casella grigia a cui è ora associato un segno più oppure premere **CTRL** + **m**, **CTRL** + **m** . Questa funzionalità è denominata [struttura](../../ide/outlining.md) ed è particolarmente utile quando si esegue il collasso di metodi lunghi o di intere classi.
 
 ## <a name="view-symbol-definitions"></a>Visualizzare le definizioni dei simboli
 
-L'editor di Visual Studio semplifica l'ispezione della definizione di un tipo, metodo e così via. Un modo consiste nel passare al file che contiene la definizione, ad esempio scegliendo **Vai a definizione** o premendo **F12** in qualsiasi punto in cui viene fatto riferimento al simbolo. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../../ide/go-to-and-peek-definition.md#peek-definition). Di seguito si procede a visualizzare la definizione del tipo `string`.
+L'editor di Visual Studio consente di ispezionare facilmente la definizione di un tipo, un metodo e così via. Un modo consiste nel passare al file che contiene la definizione, ad esempio scegliendo **Vai a definizione** o premendo **F12** ovunque si faccia riferimento al simbolo. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../../ide/go-to-and-peek-definition.md#peek-definition). Di seguito si procede a visualizzare la definizione del tipo `string`.
 
-1. Fare clic con il pulsante destro del mouse su una qualsiasi ricorrenza di `string` e scegliere **Visualizza definizione** dal menu del contenuto. In alternativa, premere **ALT**+**F12**.
+1. Fare clic con il pulsante destro del mouse su una qualsiasi ricorrenza di `string` e scegliere **Visualizza definizione** dal menu del contenuto. In alternativa, premere **ALT** + **F12**.
 
    Viene visualizzata una finestra popup con la definizione della classe `String`. È possibile scorrere all'interno della finestra popup o anche esaminare la definizione di un altro tipo dal codice visualizzato.
 
@@ -144,7 +144,7 @@ L'editor di Visual Studio semplifica l'ispezione della definizione di un tipo, m
 
 ## <a name="use-intellisense-to-complete-words"></a>Usare IntelliSense per il completamento di parole
 
-[IntelliSense](../../ide/using-intellisense.md) è una risorsa inestimabile durante la codifica. Consente di visualizzare informazioni sui membri disponibili di un tipo o sui dettagli parametro per diversi overload di un metodo. È anche possibile usare IntelliSense per completare una parola dopo aver digitato un numero di caratteri sufficiente a evitare ambiguità. Aggiungere una riga di codice per stampare le stringhe ordinate nella finestra della console, ovvero la posizione standard in cui finisce l'output del programma.
+[IntelliSense](../../ide/using-intellisense.md) è una risorsa preziosa per la scrittura di codice. Consente di visualizzare informazioni sui membri disponibili di un tipo o sui dettagli parametro per diversi overload di un metodo. È anche possibile usare IntelliSense per completare una parola dopo aver digitato un numero di caratteri sufficiente a evitare ambiguità. Aggiungere una riga di codice per stampare le stringhe ordinate nella finestra della console, ovvero la posizione standard in cui finisce l'output del programma.
 
 1. Sotto la variabile `query` iniziare a digitare il codice seguente:
 
@@ -171,7 +171,7 @@ L'editor di Visual Studio semplifica l'ispezione della definizione di un tipo, m
 
 Quando si inizia a creare codice è facile commettere errori e quindi dover modificare il nome di una variabile o di un metodo. Ora si userà la funzionalità [refactoring](../../ide/refactoring-in-visual-studio.md) di Visual Studio per rinominare la variabile `_words` come `words`.
 
-1. Posizionare il cursore `_words` sulla definizione della variabile e scegliere **Rinomina** dal menu di scelta rapida o nel menu di scelta rapida oppure premere **CTRL**+**R**, **Ctrl**+**R**.
+1. Posizionare il cursore sulla definizione della `_words` variabile e scegliere **Rinomina** dal menu di scelta rapida oppure premere **CTRL** + **r**, **CTRL** + **r**.
 
    Nella parte superiore destra dell'editor viene visualizzata la finestra di dialogo popup **Rinomina**.
 
@@ -192,7 +192,7 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 
 - [Frammenti di codice](../../ide/code-snippets.md)
 - [Spostarsi all'interno del codice](../../ide/navigating-code.md)
-- [Struttura](../../ide/outlining.md)
+- [struttura](../../ide/outlining.md)
 - [Vai a definizione e Visualizza definizione](../../ide/go-to-and-peek-definition.md)
 - [Refactoring](../../ide/refactoring-in-visual-studio.md)
 - [Usare IntelliSense](../../ide/using-intellisense.md)

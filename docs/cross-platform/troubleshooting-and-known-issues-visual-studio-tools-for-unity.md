@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7858846585467de3b5b820902938d6019b0d09ff
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386264"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235082"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Risoluzione dei problemi e problemi noti (Visual Studio Tools per Unity)
 
@@ -169,3 +169,7 @@ Provare ad aggiornare Visual Studio 2015 all'Update 3.
     ```
 
 Infine, inviare il dump del thread a [vstusp@microsoft.com](mailto:vstusp@microsoft.com) , insieme a una descrizione delle operazioni eseguite quando Visual Studio è stato bloccato.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

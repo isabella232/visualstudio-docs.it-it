@@ -2,7 +2,7 @@
 title: Accedi a Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 03/10/2020
+ms.date: 07/24/2020
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d4be9ffd8d1f5ccc6c6d1a1ba5f83e7f0fccf6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285296"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235199"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -38,7 +38,7 @@ Quando si accede si migliorano le proprie esperienze di Visual Studio. Ad esempi
 Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle operazioni che si possono eseguire dopo aver effettuato l'accesso:
 - **Estendere il periodo di valutazione per Visual Studio**: è possibile usare Visual Studio Professional o Visual Studio Enterprise per 90 giorni, anziché essere vincolati al periodo di valutazione di 30 giorni. Per altre informazioni, vedere [estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md).
 
-- **Sbloccare l'edizione Visual Studio Community**: se l'installazione dell'edizione Community richiede una licenza, accedere all'IDE per annullare il blocco.
+- **Continuare a usare Visual Studio Community Edition** : se l'installazione dell'edizione community richiede una licenza, accedere all'IDE per continuare a usare **gratuitamente**Visual Studio community. 
 
 - **Sbloccare Visual Studio se si utilizza un account associato a una sottoscrizione di Visual Studio o a un'organizzazione di Azure DevOps**. Per istruzioni dettagliate, vedere [estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md).
 
@@ -80,7 +80,7 @@ A meno che non esegua la disconnessione, l'utente viene automaticamente connesso
 
 Se si verificano problemi durante l'accesso, vedere la pagina relativa al supporto per le [sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ottenere assistenza.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md)
 * [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)

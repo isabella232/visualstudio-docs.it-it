@@ -1,6 +1,6 @@
 ---
 title: Installare versioni di Visual Studio side-by-side
-ms.date: 03/05/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 428c41a96de90494167d04ded8722d49c76afc71
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b77315363c404cd0647555e5a6ad21d36ac86b
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114654"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234991"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare versioni di Visual Studio side-by-side
 
@@ -46,6 +46,22 @@ Prima di installare le versioni side-by-side, verificare le condizioni seguenti:
 
 * Visual Studio non aggiorna automaticamente le estensioni, perché non tutte le estensioni sono compatibili. È necessario reinstallare le estensioni da [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o dall'autore del software.
 
+## <a name="install-minor-visual-studio-versions-side-by-side"></a>Installare versioni secondarie di Visual Studio side-by-side
+
+Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio alla successiva, il programma di installazione di Visual Studio aggiornerà l'installazione corrente alla versione successiva nel canale per impostazione predefinita. Ad esempio, quando si installa l'anteprima di 16.6.4, il programma di installazione tenterà di sostituire l'installazione corrente di 16.6.3 Preview, perché entrambe le versioni si trovano nel canale 16,6 Preview. Ciò garantisce che le versioni precedenti di Visual Studio non stiano occupando spazio sul computer. In alcuni casi specifici, può essere utile installare le versioni secondarie side-by-side. In questo esempio, ciò significherebbe avere sia 16.6.3 che 16.6.4 nello stesso computer.
+
+1. Scaricare il [file del programma di avvio automatico di Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione secondaria di cui si vuole eseguire l'installazione side-by-side con le versioni esistenti di Visual Studio.
+2. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il menu Start di Windows, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e selezionare **Esegui come amministratore**. Nel prompt dei comandi passare alla directory in cui si trova il file del programma di avvio automatico di Visual Studio.
+3. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file con estensione exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il nome del file con estensione exe deve corrispondere o essere simile a uno dei file seguenti:
+   * vs_community.exe per Visual Studio Community
+   * vs_professional.exe per Visual Studio Professional
+   * vs_enterprise.exe per Visual Studio Enterprise
+
+```
+vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+```
+4. Seguire le finestre di dialogo del programma di installazione per selezionare i componenti necessari per l'installazione. Per altre informazioni, vedere [installare Visual Studio](install-visual-studio.md#step-4---choose-workloads).
+
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versioni di .NET Framework e installazioni side-by-side
 
 I progetti Visual Basic, Visual C# e Visual F# usano l'opzione **Framework di destinazione** in **Creazione progetti** per specificare la versione di .NET Framework che un progetto usa. Per un progetto C++ è possibile modificare manualmente il framework di destinazione modificando il file con estensione vcxproj. Per altre informazioni, vedere la pagina [Compatibilità tra le versioni in .NET Framework](/dotnet/framework/migration-guide/version-compatibility).
@@ -58,16 +74,16 @@ Per informazioni specifiche del linguaggio, vedere l'argomento corrispondente ne
 
 | Linguaggio | Argomento |
 |--------------|-----------|
-| Visual Basic | [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [Pagina Applicazione, Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual C# | [Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Sviluppare con F# in Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Procedura: modificare il framework di destinazione e il set di strumenti della piattaformaHow to: Modify the target framework and platform toolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+|C++ | [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md?view=vs-2017)
+* [Installa Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Trasferire, migrare e aggiornare progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
 * [Compilazione di applicazioni isolate C/C++ e di assembly side-by-side](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
@@ -77,16 +93,16 @@ Per informazioni specifiche del linguaggio, vedere l'argomento corrispondente ne
 
 | Linguaggio | Argomento |
 |--------------|-----------|
-| Visual Basic | [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
-| Visual C# | [Pagina Applicazione, Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Sviluppare con F# in Visual Studio](../ide/fsharp-visual-studio.md) |
-| C++ | [Procedura: modificare il framework di destinazione e il set di strumenti della piattaformaHow to: Modify the target framework and platform toolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| C++ | [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Installa Visual Studio](install-visual-studio.md)
 * [Trasferire, migrare e aggiornare progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [Compilazione di applicazioni isolate C/C++ e di assembly side-by-side](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 

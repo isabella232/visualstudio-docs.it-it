@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: 459220c7fb2103da05f15607787390963863e622
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903286"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235134"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -30,7 +30,7 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
 
 1. L'aggiunta bulk utilizza un modello di Microsoft Excel per caricare informazioni sul Sottoscrittore. Nella finestra di dialogo Upload Multiple Subscriber (Carica più sottoscrittori), fare clic su **Download** per scaricare il modello.
    > [!div class="mx-imgBorder"]
-   > ![Scaricare il modello di Excel per caricare più sottoscrittori](media/download-template-upload-subscribers.png)
+   > ![Scaricare il modello di Excel per caricare più sottoscrittori](media/download-template-upload-subscribers.png "Scaricare il modello di Excel vuoto per iniziare il processo di assegnazione in blocco.")
    >
    > [!NOTE]
    > Scaricare sempre la versione più recente del modello. Se si usa una versione precedente, il caricamento in blocco potrebbe non riuscire.
@@ -50,17 +50,17 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
 
 1. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio. Nella finestra di dialogo **Upload Multiple Subscribers** (Carica più sottoscrittori) fare clic su **Sfoglia**.
    > [!div class="mx-imgBorder"]
-   > ![Passare al modello salvato per caricare più sottoscrittori](media/bulk-add-browse-saved-template.png)
+   > ![Passare al modello salvato per caricare più sottoscrittori](media/bulk-add-browse-saved-template.png "È possibile passare al percorso del file oppure trascinarlo e rilasciarlo in questa finestra di dialogo.")
 
 1. Passare al file Excel salvato e quindi fare clic su **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Caricare il modello di Excel per caricare più sottoscrittori](media/bulk-upload-subscribers.png)
+   > ![Caricare il modello di Excel per caricare più sottoscrittori](media/bulk-upload-subscribers.png "Il modello con i dati verrà visualizzato qui.  Fare clic su OK per avviare il caricamento.")
 
     Viene visualizzata una finestra di dialogo di avanzamento del caricamento.
 
     Se il modello contiene errori, il caricamento avrà esito negativo e verranno visualizzati gli errori per consentire di correggere il modello e tentare nuovamente il caricamento in blocco.
    > [!div class="mx-imgBorder"]
-   > ![Messaggio di errore se il caricamento di più sottoscrittori ha esito negativo](_img/assign-license-bulk/bulk-add-upload-failure.png)
+   > ![Messaggio di errore se il caricamento di più sottoscrittori ha esito negativo](_img/assign-license-bulk/bulk-add-upload-failure.png "Questo messaggio verrà visualizzato se il file caricato conteneva errori.  Risolvere gli errori ed eseguire di nuovo il processo di aggiunta in blocco.")
 
    Se si verifica un errore, attenersi alla procedura seguente:
    1. Aprire il file di Excel creato, risolvere i problemi e salvare il file.
@@ -72,7 +72,7 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
 
     Quando il caricamento ha esito positivo, viene visualizzato l'elenco di sottoscrittori e un messaggio di conferma.
    > [!div class="mx-imgBorder"]
-   > ![Messaggio di conferma se il caricamento di più sottoscrittori ha esito positivo](_img/assign-license-bulk/bulk-add-upload-success.png)
+   > ![Messaggio di conferma se il caricamento di più sottoscrittori ha esito positivo](_img/assign-license-bulk/bulk-add-upload-success.png "Quando il caricamento viene completato correttamente, si riceverà un messaggio di conferma.")
 
 ## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Usare gruppi di Azure Active Directory per assegnare sottoscrizioni 
 L'uso di questa funzionalità consente di mantenere più facilmente le assegnazioni di sottoscrizione. È possibile aggiungere Azure Active Directory gruppi di sicurezza nel portale di amministrazione delle sottoscrizioni, in modo da garantire che a tutti gli utenti del gruppo venga assegnata una sottoscrizione. Per semplificare, quando gli utenti lasciano l'organizzazione e vengono rimossi dalla Azure Active Directory, viene rimosso anche l'accesso alle sottoscrizioni. 
@@ -100,14 +100,14 @@ L'uso di questa funzionalità consente di mantenere più facilmente le assegnazi
 3. Scegliere la scheda **Aggiungi** , quindi selezionare **Azure Active Directory gruppo** nell'elenco a discesa.  
 
    > [!div class="mx-imgBorder"]
-   > ![Scegliere Aggiungi in blocco utilizzando Azure AD](_img/assign-license-bulk/bulk-add-aad.png)
+   > ![Scegliere Aggiungi in blocco utilizzando Azure AD](_img/assign-license-bulk/bulk-add-aad.png "Scegliere la funzionalità Aggiungi in blocco utilizzando Azure AD per eseguire il pull dei sottoscrittori dal gruppo di Azure Active Directory.")
 
 4. Iniziare a immettere il nome del gruppo di Azure AD che si desidera aggiungere nel campo del modulo. Verrà cercata nei gruppi di Azure AD disponibili all'interno dell'organizzazione. 
 
 5. Quando si seleziona il gruppo, il campo viene popolato automaticamente con il nome del gruppo. Sarà possibile visualizzare gli utenti del gruppo prima di aggiungerli. Successivamente, è possibile scegliere il livello di sottoscrizione, i diritti di download e le preferenze di comunicazione per il gruppo. Se lo si desidera, è possibile aggiungere dettagli nel campo di riferimento. 
 
    > [!div class="mx-imgBorder"]
-   > ![Scegliere Aggiungi in blocco utilizzando Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png)
+   > ![Scegliere il gruppo di Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Scegliere il nome del gruppo di Azure AD per aggiungere i sottoscrittori del gruppo.")
 
 6. Fare clic su **Aggiungi** e quindi su **conferma**. 
 
@@ -126,7 +126,7 @@ R: No, tutti gli utenti del gruppo ricevono la stessa sottoscrizione.
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>D: è possibile modificare i dettagli del Sottoscrittore dei singoli utenti aggiunti in un gruppo di Azure AD?  
 R: No. per modificare le informazioni per un singolo Sottoscrittore, è necessario rimuoverle dal gruppo di sicurezza Azure AD e assegnare loro una sottoscrizione singolarmente.  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>D: è stato aggiunto un utente al gruppo di sicurezza Azure AD, ma non è stato aggiunto nel portale di amministrazione delle sottoscrizioni e non è presente una sottoscrizione. relativa ricerca  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>D: è stato aggiunto un utente al gruppo di sicurezza Azure AD, ma non è stato aggiunto nel portale di amministrazione delle sottoscrizioni e non è presente una sottoscrizione. Perché no?  
 R: a seconda del modo in cui l'organizzazione ha configurato Azure AD, è possibile che vengano visualizzati ritardi fino a 24 ore prima che l'utente venga aggiunto. Se la durata è superiore a 24 ore, [contattare il supporto tecnico](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 ## <a name="see-also"></a>Vedere anche

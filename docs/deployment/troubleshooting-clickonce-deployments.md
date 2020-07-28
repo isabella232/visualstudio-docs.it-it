@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e3c2ca89535578e8aefbde25223ade752a2aab
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85381743"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235173"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Risoluzione dei problemi relativi alle distribuzioni ClickOnce
 Questo argomento consente di diagnosticare e risolvere i problemi più comuni con le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni.
@@ -56,7 +56,8 @@ Questo argomento consente di diagnosticare e risolvere i problemi più comuni co
 
  Viene descritta una tecnica per il debug di applicazioni ClickOnce che utilizzano System. Deployment. Application.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
+- [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

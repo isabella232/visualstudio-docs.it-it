@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Informazioni su come impostare le preferenze per la lingua, i contatti, il livello di sottoscrizione e altre opzioni nel portale di amministrazione
-ms.openlocfilehash: b719e60771ef8cca9b956626ca6e9e3dd91edce5
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e34b9cf1ed32abc81b9c2ebb3ef7c370818c9089
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183496"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234614"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Impostare le preferenze per i contratti nel portale di amministrazione
 Gli amministratori con privilegi avanzati possono impostare determinate preferenze nel portale di amministrazione (portale di amministrazione) che verrà applicato globalmente per ogni contratto.  Queste preferenze compileranno automaticamente i dettagli della sottoscrizione per gli amministratori durante l'aggiunta di sottoscrittori e potranno essere modificati solo a livello globale dagli amministratori con privilegi avanzati.  
@@ -24,13 +24,13 @@ Per impostare le preferenze:
 1. Accedere al portale di amministrazione con un ID con privilegi di amministratore con privilegi avanzati.
 2. Fare clic sulla scheda **Manage Administrators** (Gestisci amministratori).
    > [!div class="mx-imgBorder"]
-   > ![Pulsante Admin Preferences (Preferenze amministratore)](_img/admin-prefs/admin-prefs-button.png)
+   > ![Pulsante Admin Preferences (Preferenze amministratore)](_img/admin-prefs/admin-prefs-button.png "Fare clic su Gestisci amministratori e quindi su Preferenze accordo per visualizzare le preferenze")
 
 3. Fare clic su **Agreement Preferences** (Preferenze per i contratti).
 Verrà aperto un pannello a destra e verranno visualizzate le preferenze disponibili. 
 
    > [!div class="mx-imgBorder"]
-   > ![Finestra di dialogo a comparsa Admin Preferences (Preferenze amministratore)](_img/admin-prefs/admin-prefs-flyout.png)
+   > ![Finestra di dialogo a comparsa Admin Preferences (Preferenze amministratore)](_img/admin-prefs/admin-prefs-flyout.png "Imposta le preferenze e fai clic su Salva")
 
 ## <a name="set-your-preferences"></a>Impostare le preferenze
 Verranno illustrate di eseguito tutte le preferenze disponibili e i relativi effetti. 
@@ -86,6 +86,3 @@ Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.
 - [Assegna più sottoscrizioni](assign-license-bulk.md)
 - [Modificare sottoscrizioni](edit-license.md)
 - [Determinare l'utilizzo massimo](maximum-usage.md)
-
-
-

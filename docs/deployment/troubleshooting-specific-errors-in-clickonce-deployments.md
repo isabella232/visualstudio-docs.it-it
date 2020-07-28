@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66a98a822cd9aac6d93b4964e2e8bdadc98972e5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.openlocfilehash: fac7f18244aaa32667514766ad6d393408997e51
+ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85381899"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87235160"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 In questo articolo vengono elencati gli errori comuni seguenti che possono verificarsi durante la distribuzione di un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione e vengono descritti i passaggi per risolvere ogni problema.
@@ -136,6 +136,7 @@ In questo articolo vengono elencati gli errori comuni seguenti che possono verif
 | Non è possibile attivare i collegamenti sulla rete. | I collegamenti a un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione possono essere avviati solo sul disco rigido locale. Non possono essere avviati aprendo un URL che punta a un file di collegamento in un server remoto. |
 | L'applicazione è troppo grande per l'esecuzione online in attendibilità parziale. Per assistenza, contattare il fornitore dell'applicazione o l'amministratore di sistema. | Un'applicazione che viene eseguita con attendibilità parziale non può essere maggiore della metà delle dimensioni della quota dell'applicazione online, che per impostazione predefinita è 250 MB. |
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+- [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)
