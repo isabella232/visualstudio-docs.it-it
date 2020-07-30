@@ -402,8 +402,8 @@
                   href: ide/reference/extract-local-function.md
                 - name: Variabile temporanea inline
                   href: ide/reference/inline-temporary-variable.md
-                - name: Completamento di IntelliSense per tipi non importati
-                  href: ide/reference/intellisense-completion-unimported-types.md
+                - name: Completamento di IntelliSense per tipi e metodi di estensione non importati
+                  href: ide/reference/intellisense-completion-unimported-types-extension-methods.md
                 - name: Inversione di espressioni condizionali e operazioni logiche
                   href: ide/reference/invert-conditional-logical.md
                 - name: Istruzione Invert if
