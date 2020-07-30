@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: e3b8c75249a9246ae15384457957ddea34ea5f2e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
+ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902813"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87375898"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -61,10 +61,10 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 |          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional con GitHub Enterprise          | VL  |   3 mesi    | Sì<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | ND  |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | ND  |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       ND       |
-|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       ND       |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | N/D  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | N/D  |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
+|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       N/D       |
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), ETP, Imagine.*
@@ -82,13 +82,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 R: non tutte le sottoscrizioni di Visual Studio Enterprise includono il vantaggio Pluralsight.  Controllare la [tabella di idoneità](#eligibility) per verificare se la sottoscrizione è idonea.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>D: è possibile accedere a playlist o canali di apprendimento personalizzati?
-R: sì, in qualità di sottoscrittore di Visual Studio l'utente può accedere ai canali di esperti nell'ambito dei vantaggi offerti dal training Pluralsight. Questi canali sono stati appositamente curati dagli esperti di Microsoft e sono pensati per il learning nelle aree .NET, Azure, DevOps e Mobility. Attiva il tuo vantaggio Pluralsight tramite il portale delle sottoscrizioni di Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per ottenere l'accesso a questi canali nella pagina di destinazione di Pluralsight-
-
-• Scott Hanselmann (.NET, Azure)-[https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
-
-• Donovan Brown (DevOps)-[https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
-
-• James Montemagno su (Mobility)-[https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
+A: Sì. Un Sottoscrittore di Visual Studio consente di accedere ai ruoli in primo piano, ai percorsi di apprendimento e ai canali personalizzati (playlist) come parte del vantaggio di formazione Pluralsight. Il contenuto in primo piano è stato curato appositamente da Microsoft e Pluralsight ed è destinato all'apprendimento in aree principali di interesse. Attivare il vantaggio Pluralsight tramite il portale delle sottoscrizioni <https://my.visualstudio.com/benefits> di Visual Studio per ottenere l'accesso a questo e ad altri contenuti nella Home page Pluralsight.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>D: cosa accade alla scadenza della sottoscrizione di Pluralsight?
 R: al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere di acquistare una sottoscrizione direttamente da Pluralsight.  Contattare [Pluralsight](https://www.pluralsight.com) per dettagli completi.

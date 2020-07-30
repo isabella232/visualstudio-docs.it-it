@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f67c41f860417a27a6003a19672d4cd617d37a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
+ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284726"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390262"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -47,6 +47,9 @@ Sul lato sinistro della finestra di dialogo Gestione riferimenti sono disponibil
 - **Windows** con i sottogruppi **Core** ed **Estensioni**. È possibile esplorare i riferimenti in Windows SDK o negli SDK di estensione tramite il **visualizzatore oggetti**.
 
 - **Sfoglia** con il sottogruppo **Recenti**
+ 
+    > [!NOTE]
+    > Se si sviluppano progetti C++, potrebbe non essere possibile visualizzare **Sfoglia** nella finestra di dialogo Gestione riferimenti.
 
 ## <a name="add-a-reference"></a>Aggiungere un riferimento
 
@@ -205,10 +208,10 @@ Quando si esegue un riferimento a un file in un WinMD, il layout previsto preved
 
 Gli **assembly**, **com**, **Windows**e **Browse** supportano ciascuno una scheda **recente** , che enumera l'elenco dei componenti aggiunti di recente ai progetti.
 
-## <a name="search"></a>Cerca
+## <a name="search"></a>Ricerca
 
 La barra di ricerca della finestra di dialogo Gestione riferimenti viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, verranno restituiti risultati solo se la soluzione è costituita da un nome di progetto contenente il termine "sistema".
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)
