@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6172be3995596807562c1dc7956a1ca8952e5ad4
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
+ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276475"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87330960"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Segnalare un problema: Stati e domande frequenti
 
@@ -95,12 +95,6 @@ Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovan
 ![Stato Chiuso - Altro prodotto per la segnalazione di problemi nella community degli sviluppatori](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
 
 **Chiuso - Altro prodotto** indica è stato determinato che il problema è relativo a un altro prodotto. Vedere il commento di Microsoft per conoscere il prodotto esterno ed eventuali collegamenti correlati.
-
-- - -
-
-![Stato Chiuso - Da non correggere per la segnalazione di problemi nella community degli sviluppatori](../ide/media/ProblemStates/ClosedWontFix.jpg)
-
-**Chiuso - Da non correggere** indica che il problema non verrà affrontato a causa di fattori quali la mancanza di allineamento con la direzione futura del prodotto o l'impatto sulla community. Per altre informazioni, vedere il commento di Microsoft.  Anche se non è possibile risolvere questo particolare problema, tutto il feedback è prezioso e contribuisce a migliorare Visual Studio.
 
 - - -
 
