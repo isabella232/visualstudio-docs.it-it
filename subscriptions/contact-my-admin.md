@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per richiedere assistenza in caso di domande o problemi.
-ms.openlocfilehash: 2bf4857ebb794baef8098194d90cff7fee1ecc8f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85904564"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434251"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
 Se la sottoscrizione di Visual Studio viene fornita dall'azienda o dall'istituto di istruzione di appartenenza, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni.  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
@@ -24,7 +24,7 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
 2. Fare clic sulla scheda **Sottoscrizioni**. 
 3. Fare clic sul pulsante **Contact my Admin** (Contatta amministratore) in alto a destra. 
    > [!div class="mx-imgBorder"]
-   > ![Contact my Admin (Contatta amministratore)](_img/contact-my-admin/contact-my-admin-button.png)
+   > ![Contact my Admin (Contatta amministratore)](_img/contact-my-admin/contact-my-admin-button.png "Fare clic sul pulsante Contatta l'amministratore, immettere il messaggio e fare clic su Invia.")
 4. Immettere il messaggio per l'amministratore.
 5. Se si vuole ricevere una copia del messaggio inviato all'amministratore, fare clic sulla casella di controllo **Send me a copy** (Invia una copia). 
 6. Infine, fare clic su **Send** (Invia).

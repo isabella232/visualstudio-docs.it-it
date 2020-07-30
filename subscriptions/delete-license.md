@@ -7,12 +7,12 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono eliminare le assegnazioni di sottoscrizione
-ms.openlocfilehash: e6ce84aa84e25bcdeb44b93954289a65a3454010
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
+ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902899"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87434269"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminare assegnazioni nelle sottoscrizioni di Visual Studio
 Quando un sottoscrittore non ha più necessità di usare una sottoscrizione di Visual Studio, ad esempio quando lascia l'azienda, completa un progetto o passa a un nuovo incarico, è possibile rimuovere la sua sottoscrizione e assegnarla a un altro utente. Si noti che quando si riassegna una sottoscrizione, non tutti i vantaggi del Sottoscrittore verranno reimpostati.  Il nuovo utente sarà in grado di richiedere le chiavi non richieste e di visualizzare le chiavi richieste in precedenza, ma i limiti di attestazione **non** vengono reimpostati.  Per le organizzazioni che hanno in essere contratti Enterprise, gli eventuali vantaggi usati dall'utente originale, ad esempio corsi Pluralsight, verranno reimpostati. 
@@ -24,7 +24,7 @@ Quando un sottoscrittore non ha più necessità di usare una sottoscrizione di V
 2. Per eliminare i sottoscrittori selezionati, fare clic su **Elimina**.
 3. Quando viene visualizzato il messaggio che chiede di confermare l'eliminazione, fare clic su **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Eliminare i sottoscrittori](_img/delete-license/delete-subscribers.png)
+   > ![Eliminare i sottoscrittori](_img/delete-license/delete-subscribers.png "Scegliere gli utenti che si desidera eliminare e fare clic su Elimina. È possibile utilizzare i tasti CTRL e MAIUSC per selezionare più Sottoscrittori.")
 
    > [!NOTE]
    > L'eliminazione bulk tramite un modello non è disponibile. Per le organizzazioni che gestiscono le assegnazioni delle sottoscrizioni tramite Azure Active Directory gruppi di sicurezza, vedere [l'articolo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) per altre informazioni sul modo in cui si verificano le eliminazioni.  

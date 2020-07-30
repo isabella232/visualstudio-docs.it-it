@@ -2,7 +2,7 @@
 title: Guida di Visual Studio Administrator
 titleSuffix: ''
 description: Altre informazioni su come distribuire Visual Studio in un ambiente aziendale.
-ms.date: 03/09/2020
+ms.date: 07/29/2020
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 70eb53c2e2a1625f167844d1e774915fdb1304ac
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419263"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425407"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guida di Visual Studio Administrator
 
@@ -40,13 +40,17 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
 * Definire le esigenze di manutenzione.
 
-  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per altre informazioni, vedere la sezione ***Opzioni di supporto per clienti aziendali e professionisti*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , oltre alla pagina [procedura: aggiornare Visual Studio in una](update-servicing-baseline.md) pagina di base di manutenzione.
+  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***Opzioni di supporto per clienti aziendali e professionisti*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , nonché la pagina [Aggiorna Visual Studio in una pagina di base di manutenzione](update-servicing-baseline.md) .
 
   Se si prevede di applicare gli aggiornamenti di manutenzione insieme agli aggiornamenti delle funzionalità cumulativi, è possibile scegliere gli elementi più recenti.
 
 * Scegliere il modello di aggiornamento.
 
   Decidere da dove i singoli computer client devono ottenere gli aggiornamenti. In particolare, decidere se procurarsi gli aggiornamenti da Internet o da una condivisione locale a livello aziendale. Se si sceglie di usare una condivisione locale, decidere se i singoli utenti possono aggiornare i propri client o se un amministratore si farà carico di aggiornare i client a livello di codice.
+
+  È possibile aggiornare un layout di installazione di rete di Visual Studio con gli ultimi aggiornamenti del prodotto in modo che possa essere usato sia come punto di installazione per l'aggiornamento più recente di Visual Studio, sia per mantenere le installazioni già distribuite nelle workstation client. Per altre informazioni, vedere [aggiornare un'installazione di rete di Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
+
+  Per i computer che non sono connessi a Internet, la creazione di un layout minimo è il modo più semplice e rapido per aggiornare le istanze di Visual Studio offline. Per altre informazioni, vedere [aggiornare Visual Studio usando un layout minimo offline](update-minimal-layout.md).
 
 * Decidere di quali [carichi di lavoro e componenti](workload-and-component-ids.md?view=vs-2019) ha bisogno l'azienda.
 
@@ -62,13 +66,17 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
 * Definire le esigenze di manutenzione.
 
-  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per altre informazioni, vedere la sezione ***supporto per le versioni precedenti di Visual Studio*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , oltre alla pagina [procedura: aggiornare Visual Studio in una](update-servicing-baseline.md) pagina di base di manutenzione.
+  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***supporto per le versioni precedenti di Visual Studio*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , nonché la pagina [Aggiorna Visual Studio in una pagina di base di manutenzione](update-servicing-baseline.md) .
 
   Se si prevede di applicare gli aggiornamenti di manutenzione insieme agli aggiornamenti delle funzionalità cumulativi, è possibile scegliere gli elementi più recenti.
 
 * Scegliere il modello di aggiornamento.
 
   Decidere da dove i singoli computer client devono ottenere gli aggiornamenti. In particolare, decidere se procurarsi gli aggiornamenti da Internet o da una condivisione locale a livello aziendale. Se si sceglie di usare una condivisione locale, decidere se i singoli utenti possono aggiornare i propri client o se un amministratore si farà carico di aggiornare i client a livello di codice.
+
+  È possibile aggiornare un layout di installazione di rete di Visual Studio con gli ultimi aggiornamenti del prodotto in modo che possa essere usato sia come punto di installazione per l'aggiornamento più recente di Visual Studio, sia per mantenere le installazioni già distribuite nelle workstation client. Per altre informazioni, vedere [aggiornare un'installazione di rete di Visual Studio](../install/update-a-network-installation-of-visual-studio.md).
+
+  Per i computer che non sono connessi a Internet, la creazione di un layout minimo è il modo più semplice e rapido per aggiornare le istanze di Visual Studio offline. Per altre informazioni, vedere [aggiornare Visual Studio usando un layout minimo offline](update-minimal-layout.md).
 
 * Decidere di quali [carichi di lavoro e componenti](workload-and-component-ids.md?view=vs-2017) ha bisogno l'azienda.
 
@@ -174,7 +182,7 @@ Il registro di sistema si trova nella directory * Software\Microsoft\VisualStudi
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Esempi di parametri della riga di comando](command-line-parameter-examples.md)
 * [Installare i certificati necessari per l'installazione offline di Visual Studio](install-certificates-for-visual-studio-offline.md)

@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e728f6c4c04e0a3c9ce567c4aaae83ce15cb0cc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
+ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182911"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87425394"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 
@@ -30,7 +30,7 @@ In MSBuild un elemento è un riferimento denominato a uno o più file. Gli eleme
 
 Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.
 
-### <a name="reference"></a>Riferimento
+### <a name="reference"></a>Informazioni di riferimento
 
 Rappresenta un riferimento all'assembly (gestito) nel progetto.
 
@@ -41,7 +41,7 @@ Rappresenta un riferimento all'assembly (gestito) nel progetto.
 |FusionName|Stringa facoltativa. Specifica il nome Fusion semplice o sicuro per l'elemento.<br /><br /> Questo attributo, se specificato, consente di risparmiare tempo in quanto non comporta l'apertura del file di assembly per ottenere il nome Fusion.|
 |SpecificVersion|Valore booleano facoltativo. Specifica se è necessario fare riferimento solo alla versione nel nome Fusion.|
 |Alias|Stringa facoltativa. Gli alias per il riferimento.|
-|Private|Valore booleano facoltativo. Specifica se il riferimento deve essere copiato nella cartella di output. Questo attributo corrisponde alla proprietà **Copia localmente** del riferimento nell'IDE di Visual Studio.|
+|Privato|Valore booleano facoltativo. Specifica se il riferimento deve essere copiato nella cartella di output. Questo attributo corrisponde alla proprietà **Copia localmente** del riferimento nell'IDE di Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -104,7 +104,7 @@ Rappresenta le risorse da incorporare nell'assembly generato.
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta |
-| Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
+| Generatore | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
 | LastGenOutput | Stringa obbligatoria. Il nome del file che è stato creato da qualsiasi generatore di file eseguito sull'elemento. |
 | CustomToolNamespace | Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato se il file si trova fisicamente fuori dall'influenza del progetto. |
@@ -112,14 +112,14 @@ Rappresenta le risorse da incorporare nell'assembly generato.
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 | LogicalName | Stringa obbligatoria. Nome logico della risorsa incorporata. |
 
-### <a name="content"></a>Content
+### <a name="content"></a>Contenuto
 
 Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.
 
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
-| Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
+| Generatore | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
 | LastGenOutput | Stringa obbligatoria. Il nome del file creato da qualsiasi generatore di file che è stato eseguito sull'elemento. |
 | CustomToolNamespace | Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del progetto. |
@@ -128,14 +128,14 @@ Rappresenta file che non sono compilati nel progetto, ma possono essere incorpor
 | Visible | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 
-### <a name="none"></a>nessuno
+### <a name="none"></a>Nessuno
 
 Rappresenta i file che non hanno un ruolo nel processo di compilazione.
 
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
-| Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
+| Generatore | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
 | LastGenOutput | Stringa obbligatoria. Il nome del file che è stato creato da qualsiasi generatore di file eseguito sull'elemento. |
 | CustomToolNamespace | Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del progetto. |
@@ -149,7 +149,7 @@ Rappresenta gli attributi di assembly da generare come `[AssemblyMetadata(key, v
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | Includi | Diventa il primo parametro (chiave) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
-| valore | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
+| Valore | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
 
 > [!NOTE]
 > Questo vale per i progetti che usano solo la .NET Core SDK.
@@ -168,5 +168,6 @@ Rappresenta gli assembly i cui spazi dei nomi devono essere importati dal compil
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Proprietà comuni del progetto MSBuild](../msbuild/common-msbuild-project-properties.md)
+- [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)
 - [Proprietà MSBuild per progetti .NET Core SDK](/dotnet/core/project-sdk/msbuild-props)
+- [Metadati dell'elemento MSBuild comuni](common-msbuild-item-metadata.md)
