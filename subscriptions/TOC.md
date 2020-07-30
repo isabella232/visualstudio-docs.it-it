@@ -30,7 +30,6 @@
 #### [Azure EA DevTest](azure-ea-devtest.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
-#### [Enterprise Mobility + Security](vs-ems.md)
 #### [Microsoft 365 Apps for enterprise](microsoft-365-apps-for-enterprise.md)
 #### [Sviluppatore Microsoft 365](vs-m365.md)
 #### [Parasoft](vs-parasoft.md)
