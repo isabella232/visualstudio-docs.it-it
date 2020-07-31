@@ -6,28 +6,28 @@ manager: lank
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
-description: Informazioni per gli amministratori su come risolvere il problema relativo alle sottoscrizioni sovrallocate
-ms.openlocfilehash: a4cdab7d4e6e5925bab3d4dc7c800dc33ef6d713
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+description: Informazioni su come gli amministratori possono risolvere le sottoscrizioni con sovraallocazione
+ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232444"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453724"
 ---
-# <a name="overallocated-subscriptions"></a>Sottoscrizioni sovrassegnate
-Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. Questo processo è noto come "sovrallocazione".  
+# <a name="over-allocated-subscriptions"></a>Sottoscrizioni con allocazione eccessiva
+Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. Questa operazione viene definita "overallocazione".  
 
-Per visualizzare le allocazioni di pedice, fare clic sull'icona superiore a sinistra per aprire il riquadro delle allocazioni.  
+Per visualizzare le allocazioni di sottoscrizione, fare clic sull'icona in alto a sinistra per aprire il riquadro allocazioni.  
 
 > [!NOTE]
-> La sovrallocazione non è consentita nei programmi Open License.  Inoltre, altri programmi possono visualizzare queste informazioni nel portale in modo diverso.
+> Le overallocazioni non sono consentite nei programmi di licenza Open.  Inoltre, altri programmi possono visualizzare queste informazioni nel portale in modo diverso.
 >
 > [!div class="mx-imgBorder"]
-> ![Avviso di sottoscrizioni richieste in eccedenza](_img/over-claimed/over-claimed-alert.png)
+> ![Avviso di sottoscrizioni richieste in eccedenza](_img/over-claimed/over-claimed-alert.png "Il numero di allocazioni di eccedenze è elencato in panoramica ed è rappresentato dalla barra con hash nel grafico per ogni tipo di sottoscrizione.")
 
-Si noti che la visualizzazione utilizza una barra con hash per indicare le sottoscrizioni sovrassegnate.  Il numero di sovrassegnazioni in tutti i tipi di sottoscrizione è incluso nella sezione Panoramica nella parte superiore e ogni livello di sottoscrizione visualizza anche il proprio stato di allocazione.  
+Si noti che nella visualizzazione viene utilizzata una barra con hash per indicare le sottoscrizioni con overallocazione.  Il numero di sovraallocazioni tra tutti i tipi di sottoscrizione è incluso nella sezione Panoramica nella parte superiore e ogni livello di sottoscrizione Visualizza anche il proprio stato di allocazione.  
 
-## <a name="resolve-overallocated-subscriptions"></a>Risolvere il problema di sovrallocazione di sottoscrizioni
+## <a name="resolve-over-allocated-subscriptions"></a>Risolvere le sottoscrizioni allocate in eccesso
 Esistono diversi modi per risolvere questo problema:
 - Contattare il rivenditore per acquistare sottoscrizioni aggiuntive.
 - Attendere fino al periodo di true-up annuale e pagare per le sottoscrizioni sovrallocate nel momento specifico. 
@@ -43,10 +43,10 @@ Se l'organizzazione dispone di un contratto Enterprise Agreement (EA), gli ammin
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Altre informazioni sulla [Gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise](assign-github.md).
-- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.

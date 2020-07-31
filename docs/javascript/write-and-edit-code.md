@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0f4fff1b13f8e3827d685ee16ccea55e78f733a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f48e7a8be8d902a487ae4f7fdac9e6d85f7b5517
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289092"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453766"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
 In questa breve introduzione all'editor di codice di Visual Studio viene illustrato in che modo Visual Studio semplifica la scrittura, la navigazione e la comprensione del codice.
 
 > [!TIP]
-> Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio.
+> Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio. Per ulteriori informazioni su come ottenere il servizio di linguaggio per TypeScript, vedere [supporto di typescript](../javascript/javascript-in-vs-2019.md#typescript-support).
 
 Questo articolo presuppone una certa familiarità con lo sviluppo di JavaScript. Se non è questo il caso, è consigliabile vedere prima l'esercitazione [Creare un progetto Node.js e un'app Express in Visual Studio](../javascript/tutorial-nodejs.md).
 
@@ -65,6 +65,8 @@ Nel riquadro inferiore è possibile fare clic sulla scheda **Elenco errori** per
 ![Visualizzazione dell'elenco errori](../javascript/media/write-code-error-list.png)
 
 È possibile correggere il codice aggiungendo la virgola (`,`) prima di `"data"`.
+
+Per ulteriori informazioni sui dati [, vedere la](https://github.com/microsoft/JSTSdocs/blob/master/articles/editor/linting.md)pagina.
 
 ## <a name="comment-out-code"></a>Codice di impostazione come commento
 
@@ -116,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 È possibile esaminare i frammenti di codice disponibili per la lingua scegliendo **modifica**  >  **IntelliSense**  >  **Inserisci frammento**, quindi scegliere la cartella del linguaggio.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Frammenti di codice](../ide/code-snippets.md)
 - [Spostarsi all'interno del codice](../ide/navigating-code.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c3ad83cea8dc1a28a817677be102c87ebc8f87
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371872"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453640"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedura: Personalizzare il dizionario di analisi del codice
 
@@ -266,12 +266,12 @@ Le condizioni nel nodo Dictionary/Acronims/CasingExceptions vengono applicate al
 
 1. In **Esplora soluzioni**usare una delle procedure seguenti:
 
-2. Per aggiungere un dizionario a un singolo progetto, fare clic con il pulsante destro del mouse sul nome del progetto, quindi scegliere **Aggiungi elemento esistente**. Specificare il file nella finestra di dialogo **Aggiungi elemento esistente** .
+    - Per aggiungere un dizionario a un singolo progetto, fare clic con il pulsante destro del mouse sul nome del progetto, quindi scegliere **Aggiungi elemento esistente**. Specificare il file nella finestra di dialogo **Aggiungi elemento esistente** .
+  
+    - Per aggiungere un dizionario condiviso tra due o più progetti, individuare il file da condividere nella finestra di dialogo **Aggiungi elemento esistente** , fare clic sulla freccia in giù del pulsante **Aggiungi** e quindi fare clic su **Aggiungi come collegamento**.
 
-3. Per aggiungere un dizionario condiviso tra due o più progetti, individuare il file da condividere nella finestra di dialogo **Aggiungi elemento esistente** , fare clic sulla freccia in giù del pulsante **Aggiungi** e quindi fare clic su **Aggiungi come collegamento**.
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nome del file **CustomDictionary.xml** e scegliere **proprietà**.
 
-4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nome del file **CustomDictionary.xml** e scegliere **proprietà**.
+3. Dall'elenco **azione di compilazione** selezionare **CodeAnalysisDictionary**.
 
-5. Dall'elenco **azione di compilazione** selezionare **CodeAnalysisDictionary**.
-
-6. Dall'elenco **copia in directory di output** selezionare **non copiare**.
+4. Dall'elenco **copia in directory di output** selezionare **non copiare**.

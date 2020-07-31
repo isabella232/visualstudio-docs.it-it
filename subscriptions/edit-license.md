@@ -2,17 +2,17 @@
 title: Modificare sottoscrizioni nel portale di amministrazione | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 03/03/2020
+ms.date: 07/30/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono modificare le assegnazioni di sottoscrizione.
-ms.openlocfilehash: 32d430ac4afe88541fd839827652ec7613ba03b1
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902937"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453741"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modificare assegnazioni di sottoscrizioni di Visual Studio
 L'amministratore delle sottoscrizioni può modificare le sottoscrizioni assegnate a utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
@@ -25,7 +25,7 @@ L'amministratore delle sottoscrizioni può modificare le sottoscrizioni assegnat
 
 Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che vengono visualizzati accanto all'indirizzo di posta elettronica del sottoscrittore quando vi si passa sopra il mouse. Verrà visualizzato un elenco a discesa.  Selezionare **Modifica** per modificare i dati del sottoscrittore. 
 > [!div class="mx-imgBorder"]
-> ![Selezionare un sottoscrittore da modificare](_img/edit-license/select-subscriber.png)
+> ![Selezionare un sottoscrittore da modificare](_img/edit-license/select-subscriber.png "Fare clic sui puntini di sospensione e scegliere modifica.")
 
 È possibile aggiornare il nome, il cognome, il livello di sottoscrizione, l'indirizzo di posta elettronica, il paese, la lingua, i download e il campo di riferimento del Sottoscrittore Modificare le informazioni del Sottoscrittore e fare clic su **Salva**.
 
@@ -45,13 +45,13 @@ Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che
 
 2. La procedura di Modifiche di massa usa un modello di Excel per apportare modifiche a informazioni relative al sottoscrittore. Nella casella Modifiche di massa, fare clic su **Esporta in Excel** per scaricare l'elenco corrente di sottoscrittori, incluse tutte le relative informazioni.
    > [!div class="mx-imgBorder"]
-   > ![Modifica di una licenza - Esportazione di un elenco di modifiche in blocco](_img/edit-license/edit-license-bulk-edit-export.png)
+   > ![Modifica di una licenza - Esportazione di un elenco di modifiche in blocco](_img/edit-license/edit-license-bulk-edit-export.png "Fare clic su Esporta questo Excel per creare un elenco delle sottoscrizioni correnti.")
 
 3. Successivamente, salvare il file in locale in modo che sia più facile trovarlo e apportare le modifiche necessarie prima di caricarlo. Per assicurarsi che il caricamento venga eseguito correttamente, **non modificare il livello di sottoscrizione o il GUID della sottoscrizione** nel file di modifica bulk. in questo modo, il caricamento avrà esito negativo.
 
 4. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio e nella finestra di dialogo Modifiche in blocco, fare clic su **Sfoglia**. Selezionare il file di Excel salvato e fare clic su **OK**. Lo stato di avanzamento del caricamento verrà visualizzato sullo schermo.
    > [!div class="mx-imgBorder"]
-   > ![Modifica di una licenza - Caricamento file delle modifiche di massa](_img/edit-license/edit-license-bulk-file-upload1.png)
+   > ![Modifica di una licenza - Caricamento file delle modifiche di massa](_img/edit-license/edit-license-bulk-file-upload1.png "Passare al percorso del file di Excel completato, selezionarlo e fare clic su OK.")
 
 5. Dopo aver caricato il file, verrà visualizzata una notifica per comunicare l'esito positivo. A questo punto, tutte le modifiche si rifletteranno nelle informazioni relative al sottoscrittore.
 
@@ -65,5 +65,3 @@ Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che
 - È necessario assegnare un ID sottoscrizione specifico? Vedere Assegnazione di un ID sottoscrizione. 
 - Per informazioni sull'individuazione di una sottoscrizione specifica, vedere [Cercare una sottoscrizione](search-license.md).
 - Per creare un elenco di tutte le sottoscrizioni,  vedere [Esportare sottoscrizioni](exporting-subscriptions.md).
-
-

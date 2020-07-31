@@ -2,17 +2,17 @@
 title: Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
-manager: lank
+manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 03/09/2020
+ms.date: 07/30/2020
 ms.topic: conceptual
 description: Informazioni su come trovare, richiedere ed esportare codici Product Key nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 3946388669533a59176dc79cd72f238994a0a01b
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 8ee21c544a44bfd5eca831cdc9fd1c8e00adb35b
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232490"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453743"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio
 Questo articolo illustra come individuare, richiedere ed esportare codici Product Key da https://my.visualstudio.com/productkeys.  Per altre informazioni sull'attivazione di un prodotto con un codice Product Key, sulle versioni per attivazione singola e per contratti multilicenza dei codici Product Key e sui limiti giornalieri per la richiesta di tali codici, vedere la [panoramica dei codici Product Key](product-keys.md).
@@ -20,7 +20,7 @@ Questo articolo illustra come individuare, richiedere ed esportare codici Produc
 ## <a name="locating-and-claiming-product-keys"></a>Individuazione e richiesta dei codici Product Key
 Per visualizzare i propri codici Product Key, è necessario essere connessi alla propria sottoscrizione di Visual Studio. È possibile individuare singoli codici Product Key selezionando il collegamento **Ottieni chiave** azzurro relativo a un prodotto specifico nella pagina [Download](https://my.visualstudio.com/downloads), come illustrato di seguito.  Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Quando per uno stesso prodotto esistono più codici, nella colonna Note relativa al download verranno visualizzate apposite note per semplificare l'identificazione del codice da usare.
 > [!div class="mx-imgBorder"]
-> ![Ottenere la chiave dalla pagina Download](_img/product-keys/download-get-key.png)
+> ![Ottenere la chiave dalla pagina Download](_img/product-keys/download-get-key.png "Fare clic su Ottieni chiave nella pagina informazioni per qualsiasi download per ottenere una chiave per quel prodotto.")
 
 Per alcuni prodotti vengono raggruppate più edizioni del prodotto in un singolo download. In questi casi il codice Product Key immesso determina quale edizione del prodotto è installata.
 Alcuni codici vengono specificati automaticamente, ad esempio quelli "statici", che è possibile usare più volte poiché non è richiesta alcuna attivazione. Altri codici devono essere richiesti selezionando il collegamento **Ottieni chiave** relativo al prodotto.
@@ -32,7 +32,7 @@ Alcuni codici vengono specificati automaticamente, ad esempio quelli "statici", 
 |    Tipo chiave           |    Descrizione                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicabile                    |    Per installare questo prodotto non è necessario alcun codice.                                                       |
-|    Vendita al dettaglio                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
+|    Retail                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
 |    Attivazione multipla        |    Un codice ad attivazione multipla (MAK) consente di attivare più installazioni di un prodotto con lo stesso codice. I codici MAK vengono generalmente usati con le versioni dei prodotti destinate a contratti multilicenza. Viene generalmente offerto un solo codice MAK per sottoscrizione.    |
 |    Codice per attivazione statica    |    I codici per attivazione statica vengono offerti per i prodotti che non richiedono attivazione e possono essere usati per un numero qualsiasi di installazioni.                                                                                                                  |
 |    Codice personalizzato                 |    I codici personalizzati offrono azioni o informazioni speciali per attivare o installare il prodotto.                                                                                                                                                                |
@@ -53,7 +53,7 @@ Per richiedere un codice Product Key:
 2. Fare clic sulla scheda [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
 3. I codici Product Key sono elencati in ordine alfabetico in base al nome del prodotto.  È possibile scorrere fino al nome del prodotto desiderato oppure cercarlo tramite la barra di ricerca nella parte superiore della pagina.
 > [!div class="mx-imgBorder"]
-> ![Cercare il codice Product Key](_img/product-keys/search-keys.png)
+> ![Cercare il codice Product Key](_img/product-keys/search-keys.png "Scorrere fino al prodotto desiderato oppure utilizzare la casella di ricerca per individuare rapidamente qualsiasi prodotto.")
    
 In questo esempio è stata usata la barra di ricerca per individuare un codice Product Key per Visual Studio Enterprise 2019.
 Come si può osservare, sono elencate diverse versioni.  Un codice Product Key è già stato richiesto per ognuna delle versioni 16.0 e 16.1.  Per entrambe le versioni sono ancora disponibili codici Product Key aggiuntivi di tipi diversi. Si noti che è possibile registrare una breve nota sui codici richiesti nella colonna **Note**,  che può essere usata in combinazione con la data nella colonna **Richiesto** per tenere traccia dei codici richiesti.  È possibile ad esempio inserire note quando si attiva un'installazione del prodotto tramite il codice.
@@ -64,11 +64,11 @@ Come si può osservare, sono elencate diverse versioni.  Un codice Product Key �
 > [!IMPORTANT]
 > Se la sottoscrizione scade, non sarà più possibile richiedere nuovi codici o esportare i codici richiesti.
 
-Per esportare i codici, è sufficiente fare clic sul collegamento **Export all keys** (Esporta tutti i codici Product Key) all'estrema destra della pagina Codici "Product Key".  Verrà creato un file con estensione xml intitolato KeysExport.xml e si potrà scegliere se aprire o salvare il file.  Sarà necessario aprire il file con un'applicazione in grado di gestire file con estensione xml.  Ad esempio, è possibile aprire il file come una cartella di lavoro di sola lettura in Excel.
+Per esportare le chiavi, è sufficiente fare clic sul collegamento **Esporta tutte le chiavi** all'estrema destra della pagina codici Product Key.  Verrà creato un file con estensione xml intitolato KeysExport.xml e si potrà scegliere se aprire o salvare il file.  Sarà necessario aprire il file con un'applicazione in grado di gestire file con estensione xml.  Ad esempio, è possibile aprire il file come una cartella di lavoro di sola lettura in Excel.
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

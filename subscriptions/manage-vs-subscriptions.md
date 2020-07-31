@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: 7d883092372d58f4a5bcc787daed0a99124a1704
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
+ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81444875"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87453681"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -26,14 +26,14 @@ Il portale sottoscrizioni di Visual Studio riunisce tutti i programmi e le sotto
 
 La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di colore blu della pagina Vantaggi. Viene anche visualizzata in alto a destra della pagina.
 > [!div class="mx-imgBorder"]
-> ![Sottoscrizione attiva](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![Sottoscrizione attiva](_img/manage-vs-subscriptions/current-subscription-cropped.png "La sottoscrizione corrente viene visualizzata nella parte superiore della pagina e nell'elenco a discesa sottoscrizioni.")
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Per passare da una sottoscrizione all'altra è possibile:
 
 - Fare clic sul menu a discesa in alto a destra e scegliere la sottoscrizione dall'elenco
 - Fare clic sulla scheda Sottoscrizioni e quindi fare clic sulla sottoscrizione necessaria
   > [!div class="mx-imgBorder"]
-  > ![Passaggio da una sottoscrizione all'altra](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![Passaggio da una sottoscrizione all'altra](_img/manage-vs-subscriptions/change-subscription-resized.png "Fare clic sulla scheda sottoscrizioni per visualizzare informazioni dettagliate su tutte le sottoscrizioni e per passare dall'una all'altra.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Se la sottoscrizione non è visibile...
 
@@ -78,7 +78,7 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
 Se si vuole ricevere aggiornamenti periodici sulla propria sottoscrizione e i vantaggi disponibili, inclusa la newsletter mensile Sottoscrizioni di Visual Studio, [aggiornare le preferenze](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) selezionando la casella di controllo relativa alle sottoscrizioni di Visual Studio nel profilo personale di Visual Studio. È possibile modificare queste preferenze e annullare la sottoscrizione in qualsiasi momento. 
 
    > [!div class="mx-imgBorder"]
-   > ![Impostazione delle preferenze](_img/manage-vs-subscriptions/change-prefs.png)
+   > ![Impostazione delle preferenze](_img/manage-vs-subscriptions/change-prefs.png "Fare clic sulla casella di posta elettronica del programma sottoscrizioni di Visual Studio per ricevere gli aggiornamenti.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Collegamento della propria sottoscrizione alle sottoscrizioni Azure DevOps Services o Azure esistenti
 Se si accede alla propria sottoscrizione tramite un account Microsoft personale (MSA) e si possiede una sottoscrizione che include Azure DevOps Services o Microsoft Azure tramite un account aziendale o dell'istituto di istruzione gestito da Azure, è possibile collegare le due sottoscrizioni. Si tratta di un "account alternativo" che consente di continuare a usare l'account Microsoft per accedere alla sottoscrizione e avere contemporaneamente accesso alle risorse esistenti di Azure, Azure DevOps Services o IDE associate agli account aziendali o dell'istituto di istruzione.
@@ -105,7 +105,7 @@ R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per d
 |    Volume Licensing Service Center (VLSC)              |    180          |
 |    Contratto per i prodotti e i servizi Microsoft (MPSA)    |    180          |
 |    Sottoscrizione cloud a Visual Studio                   |    180          |
-|    Programma (ad es. MCT, MPN, Imagine)          |    180          |
+|    Programma (ad esempio MCT, MPN, Imagine)          |    180          |
 |    Non tramite vendita (ad esempio MVP e MSP)                      |    180          |
 |    DevEssentials                                       |    30           |
 
@@ -115,14 +115,14 @@ R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per d
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Gestire le sottoscrizioni per l'organizzazione?  Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio:Learn more about managing Visual Studio subscriptions:
-- [Assegnare singole sottoscrizioniAssign individual subscriptions](assign-license.md)
-- [Assegnare più sottoscrizioniAssign multiple subscriptions](assign-license-bulk.md)
+Gestisci le sottoscrizioni per la tua organizzazione?  Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio:
+- [Assegna singole sottoscrizioni](assign-license.md)
+- [Assegna più sottoscrizioni](assign-license-bulk.md)
 - [Modificare sottoscrizioni](edit-license.md)
 - [Eliminare sottoscrizioni](delete-license.md)
-- [Determinare l'utilizzo massimoDetermine maximum usage](maximum-usage.md)
+- [Determinare l'utilizzo massimo](maximum-usage.md)
