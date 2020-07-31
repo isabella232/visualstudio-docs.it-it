@@ -42,6 +42,8 @@
       items:
         - name: Panoramica
           href: install/visual-studio-administrator-guide.md
+        - name: Guida di Visual Studio per le aziende
+          href: install/visual-studio-enterprise-guide.md
         - name: Usare la riga di comando
           items:
             - name: Usare i parametri della riga di comando per installare Visual Studio
