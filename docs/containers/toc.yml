@@ -11,8 +11,6 @@
           href: container-tools.md
         - name: App a pagina singola React.js in un contenitore
           href: container-tools-react.md
-        - name: Sviluppo Kubernetes
-          href: local-process-kubernetes.md
     - name: Esercitazioni
       expanded: true
       items:
@@ -54,3 +52,5 @@
       href: local-process-kubernetes.md
     - name: Come funziona Processo locale con Kubernetes (anteprima)
       href: overview-local-process-kubernetes.md
+    - name: Configurare Processo locale con Kubernetes
+      href: configure-local-process-with-kubernetes.md

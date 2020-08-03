@@ -8,25 +8,26 @@ f1_keywords:
 - VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
+ms.devlang: CSharp
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 31a31e413ecd39b7d15f8ea3cd0417c2493463ca
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649616"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507963"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML
 
-La finestra di progettazione XAML in Visual Studio e Blend per Visual Studio fornisce un'interfaccia visiva che consente di progettare app basate su XAML, ad esempio WPF e UWP. È possibile creare interfacce utente per le app trascinando i controlli dalla finestra della casella degli strumenti (finestra Asset in Blend per Visual Studio) e impostando le proprietà nella finestra Proprietà. È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
+Il finestra di progettazione XAML in Visual Studio e Blend per Visual Studio fornisce un'interfaccia visiva per semplificare la progettazione di app basate su XAML, ad esempio WPF e UWP. È possibile creare interfacce utente per le app trascinando i controlli dalla finestra della casella degli strumenti (finestra Asset in Blend per Visual Studio) e impostando le proprietà nella finestra Proprietà. È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
 
 Per gli utenti avanzati è anche possibile [personalizzare la finestra di progettazione XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 > [!NOTE]
-> Xamarin.Forms non supporta una finestra di progettazione XAML. Per visualizzare le api XAML di Xamarin.Forms e modificarle mentre l'app è in esecuzione, usa XAML Hot Reload per Xamarin.Forms. Per altre informazioni, vedere la pagina [XAML Hot Reload for Xamarin.Forms (Preview).](/xamarin/xamarin-forms/xaml/hot-reload/)
+> Novell. Forms non supporta una finestra di progettazione XAML. Per visualizzare le interfacce utente XAML di Novell. Forms e modificarle mentre l'app è in esecuzione, usare il ricaricamento a caldo di XAML per Novell. Forms. Per ulteriori informazioni, vedere la pagina [relativa al ricaricamento a caldo di XAML per Novell. Forms (anteprima)](/xamarin/xamarin-forms/xaml/hot-reload/) .
 
 ## <a name="xaml-designer-workspace"></a>Area di lavoro della finestra di progettazione XAML
 
@@ -90,7 +91,7 @@ Visualizza o nasconde la griglia di allineamento che mostra le griglie. Le grigl
 
 **Attiva/Disattiva allineamento alla griglia**
 
-Se **l'aggancio alle linee della griglia** è abilitato, un elemento tende ad allinearsi alla griglia orizzontale e verticale più vicina quando lo trascinate sulla tavola da disegno.
+Se il **blocco sulla griglia** è abilitato, un elemento tende a allinearsi con le griglie orizzontali e verticali più vicine quando lo si trascina sulla tavola da disegno.
 
 **Attiva/Disattiva sfondo tavola da disegno**
 
@@ -116,26 +117,26 @@ La finestra Struttura documento in Visual Studio è simile alla finestra [Oggett
 
 - Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.
 
-- Selezionare gli elementi in modo da poterli modificare. Ad esempio, è possibile spostarli nella gerarchia o impostarne le proprietà nella finestra Proprietà.For example, you can move them around in the hierarchy or set their properties in the Properties window. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Selezionare gli elementi in modo da poterli modificare. Ad esempio, è possibile spostarli nella gerarchia o impostarne le proprietà nella Finestra Proprietà. Per altre informazioni, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Creare e modificare modelli per gli elementi che sono controlli.
 
 - [Crea animazioni](animate-objects-in-xaml-designer.md) (solo Blend per Visual Studio).
 
-Per visualizzare la finestra Struttura documento in Visual Studio, sulla barra dei menu selezionare **Visualizza** > altro**contorno documento****Windows** > .
-Per visualizzare la finestra Oggetti e sequenza temporale in Blend per Visual Studio, sulla barra dei menu selezionare **Visualizza** > **struttura documento**.
+Per visualizzare la finestra Struttura documento in Visual Studio, nella barra dei menu selezionare **Visualizza**  >  **altre finestre**  >  **struttura documento**.
+Per visualizzare la finestra di oggetti e sequenza temporale Blend per Visual Studio, sulla barra dei menu selezionare **Visualizza**  >  **struttura documento**.
 
 ![Finestra Struttura documento in Visual Studio](media/document-outline-window.png)
 
-La visualizzazione principale nella finestra Struttura documento/Oggetti e sequenza temporale mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo. Nella finestra Struttura/Oggetti e timeline del documento sono disponibili le seguenti opzioni:
+La visualizzazione principale nella finestra Struttura documento/Oggetti e sequenza temporale mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo. Nella finestra Struttura documento/Oggetti e sequenza temporale sono disponibili le opzioni seguenti:
 
 **Mostra/Nascondi**
 
-Visualizza o nasconde gli elementi della tavola da disegno. Appare come simbolo di un occhio quando gli elementi sono visualizzati. Puoi anche premere **Ctrl**+**H** per nascondere un elemento e **Maiusc**+**Ctrl**+**H** per mostrarlo.
+Visualizza o nasconde gli elementi della tavola da disegno. Appare come simbolo di un occhio quando gli elementi sono visualizzati. È anche possibile premere **CTRL** + **h** per nascondere un elemento e **spostare** + **CTRL** + **h** per visualizzarlo.
 
 **Blocca/Sblocca**
 
-Blocca o sblocca gli elementi della tavola da disegno. Gli elementi bloccati non possono essere modificati. Appare come simbolo di un lucchetto quando è applicato il blocco. È anche possibile premere **Ctrl**+**L** per bloccare un elemento e premere **Ctrl**+**Ctrl**+**L** per sbloccarlo.
+Blocca o sblocca gli elementi della tavola da disegno. Gli elementi bloccati non possono essere modificati. Appare come simbolo di un lucchetto quando è applicato il blocco. È anche possibile premere **CTRL** + **l** per bloccare un elemento e **spostare** + **CTRL** + **l** per sbloccarlo.
 
 **Reimposta l'ambito pageRoot**
 
@@ -143,7 +144,7 @@ L'opzione nella parte superiore della finestra Struttura documento/Oggetti e seq
 
 ## <a name="properties-window"></a>Finestra Proprietà
 
-La finestra **Proprietà** consente di impostare valori di proprietà sui controlli. e ha l'aspetto seguente:
+La finestra **Proprietà** consente di impostare valori di proprietà sui controlli. Di seguito è riportata un'immagine di tale finestra:
 
 ![Finestra Proprietà](media/xaml-designer-properties-window.png)
 
@@ -161,7 +162,7 @@ A destra di ogni valore di proprietà è presente un *marcatore della proprietà
 
 Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Introduzione a controlli e modelli](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Procedura per creare e applicare una risorsa](../xaml-tools/how-to-create-and-apply-a-resource.md)

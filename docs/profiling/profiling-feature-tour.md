@@ -3,7 +3,11 @@ title: Misurare le prestazioni con gli strumenti di profilatura
 description: Esaminare una breve panoramica dei diversi strumenti di diagnostica disponibili in Visual Studio.
 ms.custom: mvc
 ms.date: 06/03/2020
-ms.topic: quickstart
+ms.topic: overview
+f1_keywords:
+- vs.diagnosticshub.overview
+dev_langs:
+- CSharp
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
@@ -12,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f2583b0624691405ec3ef5a88aa11cb796327
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816696"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507989"
 ---
 # <a name="first-look-at-profiling-tools"></a>Presentazione degli strumenti di profilatura
 
@@ -131,7 +135,7 @@ Per le app .NET Core che usano ADO.NET o Entity Framework Core, lo [strumento di
 
 Lo strumento Mostra ogni query in una visualizzazione elenco. È possibile visualizzare informazioni quali l'ora di inizio e la durata della query.
 
-![Allocazione](./media/db-gotosource.png "Allocation (Allocazione)")
+![Allocation (Allocazione)](./media/db-gotosource.png "Allocation (Allocazione)")
 
 ::: moniker-end
 
@@ -168,7 +172,7 @@ Per diagnosticare la velocità di risposta dell'interfaccia utente, i tempi di c
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analizzare l'uso della rete (piattaforma UWP)
 
-Nelle app UWP è possibile analizzare le operazioni di rete eseguite con l'API `Windows.Web.Http`. Questo strumento può aiutare a risolvere i problemi relativi ad autenticazione e accesso, all'uso non corretto della cache e alle prestazioni insufficienti di visualizzazione download. Per usare lo strumento, scegliere **Rete** nel profiler delle prestazioni e quindi scegliere **Inizia**. Nell'applicazione seguire lo scenario che usa `Windows.Web.Http` e quindi scegliere **Arresta raccolta** per generare il report.
+Nelle app UWP è possibile analizzare le operazioni di rete eseguite con l' `Windows.Web.Http` API. Questo strumento può essere utile per risolvere problemi quali problemi di accesso e autenticazione, uso errato della cache e prestazioni di visualizzazione e download scarse. Per usare lo strumento, scegliere **Rete** nel profiler delle prestazioni e quindi scegliere **Inizia**. Nell'applicazione seguire lo scenario che usa `Windows.Web.Http` e quindi scegliere **Arresta raccolta** per generare il report.
 
 ![Strumento di profilatura utilizzo rete](../profiling/media/prof-tour-network-usage.png "Utilizzo rete diag")
 
@@ -198,14 +202,14 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 ::: moniker range=">=vs-2019"
 |Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[PerfTips](../profiling/perftips.md)|sì|sì|sì|
-|[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
-|[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
-|[Allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)|Sì (solo .NET)|sì|sì|
-|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|no|
-|[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|no|
-|[Visualizzatore eventi](../profiling/events-viewer.md)|sì|sì|sì|
-|[.NET Async](../profiling/analyze-async.md)|Sì (solo .NET)|sì|sì|
+|[PerfTips](../profiling/perftips.md)|Sì|Sì|sì|
+|[Utilizzo CPU](../profiling/cpu-usage.md)|Sì|Sì|sì|
+|[Utilizzo memoria](../profiling/memory-usage.md)|Sì|Sì|sì|
+|[Allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)|Sì (solo .NET)|Sì|sì|
+|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|Sì|sì|no|
+|[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì|sì|no|
+|[Visualizzatore eventi](../profiling/events-viewer.md)|Sì|Sì|sì|
+|[.NET Async](../profiling/analyze-async.md)|Sì (solo .NET)|Sì|sì|
 |[Database](../profiling/analyze-database.md)|Sì (solo .NET Core)|no|Sì (solo ASP.NET Core)|
 |[Esplora prestazioni](../profiling/performance-explorer.md)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
@@ -214,10 +218,10 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 ::: moniker range="vs-2017"
 |Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
-|[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
-|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|no|
-|[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|no|
+|[Utilizzo CPU](../profiling/cpu-usage.md)|Sì|Sì|Sì|
+|[Utilizzo memoria](../profiling/memory-usage.md)|Sì|Sì|Sì|
+|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|Sì|sì|no|
+|[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì|sì|no|
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|
 |[Esplora prestazioni](../profiling/performance-explorer.md)|sì|no|sì|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
@@ -227,5 +231,5 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 ::: moniker-end
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug in Visual Studio](../debugger/debugger-feature-tour.md)

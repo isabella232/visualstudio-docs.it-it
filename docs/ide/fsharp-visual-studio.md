@@ -5,17 +5,19 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
+f1_keywords:
+- fs.ProjectPropertiesDebug
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75ebee68bf76a4dd5419942f79a3207c29673134
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565240"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507976"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Sviluppare con F# in Visual Studio
 
@@ -23,7 +25,7 @@ Questo articolo offre informazioni sulle funzionalità di Visual Studio per lo s
 
 ## <a name="install-f-support"></a>Installare il supporto per F#
 
-Per sviluppare con F# in Visual Studio, installare prima di tutto il carico di lavoro **Sviluppo per desktop .NET**, se non lo si è già fatto. I carichi di lavoro di Visual Studio vengono installati tramite il programma di installazione di Visual Studio, che è possibile aprire selezionando **Strumenti** > **Get Tools and Features**.
+Per sviluppare con F# in Visual Studio, installare prima di tutto il carico di lavoro **Sviluppo per desktop .NET**, se non lo si è già fatto. I carichi di lavoro di Visual Studio vengono installati tramite programma di installazione di Visual Studio, che è possibile aprire selezionando **strumenti**  >  **Ottieni strumenti e funzionalità**.
 
 ![Carico di lavoro Sviluppo per desktop .NET in Visual Studio](media/dotnet-desktop-development-workload.png)
 
@@ -61,9 +63,9 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 |Pagina Creazione progetti|Collegamenti correlati|Descrizione|
 | - |-------------|-----------|
 |Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni e le proprietà a livello di applicazione, ad esempio se si sta creando una libreria o un file eseguibile, nonché la versione di .NET a cui è destinata l'applicazione e informazioni sulla posizione di archiviazione dei file di risorse usati dall'applicazione stessa.|
-|Compilare|[Pagina Compilazione, Progettazione progetti](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
+|Compilazione|[Pagina Compila, Progettazione progetti](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
 |Eventi di compilazione|[Pagina Eventi di compilazione, Creazione progetti](reference/build-events-page-project-designer-csharp.md)|Consente di specificare i comandi da eseguire prima o dopo una compilazione.|
-|Debug|[Pagina Debug, Creazione progetti](reference/debug-page-project-designer.md)|Consente di controllare la modalità di esecuzione dell'applicazione durante il debug, ad esempio i comandi da usare e la directory iniziale dell'applicazione, ed eventuali modalità di debug speciali da abilitare, ad esempio codice nativo e SQL.|
+|Debug|[Pagina Debug, Progettazione progetti](reference/debug-page-project-designer.md)|Consente di controllare la modalità di esecuzione dell'applicazione durante il debug, ad esempio i comandi da usare e la directory iniziale dell'applicazione, ed eventuali modalità di debug speciali da abilitare, ad esempio codice nativo e SQL.|
 |Pacchetto (solo .NET SDK)|N/D|Consente di definire i metadati del pacchetto NuGet durante la pubblicazione come pacchetto NuGet.|
 |Percorsi riferimento|[Gestire i riferimenti in un progetto](managing-references-in-a-project.md)|Consente di specificare la posizione in cui cercare gli assembly da cui dipende il codice.|
 |Risorse (solo .NET SDK)|N/D|Consente di generare e gestire un file di risorse predefinito.|
@@ -74,33 +76,33 @@ La tabella seguente riepiloga le impostazioni specifiche di F#:
 
 |Pagina Creazione progetti|Impostazione|Descrizione|
 | - |-------|-----------|
-|Compilare|Genera chiamate tail|Se selezionata, abilita l'uso delle istruzioni tail MSIL (Microsoft Intermediate Language). In questo modo lo stack frame viene riutilizzato per le funzioni tail ricorsive. Equivalente all'opzione del compilatore `--tailcalls`.|
-|Compilare|Altri flag|Consente di specificare opzioni da riga di comando del compilatore aggiuntive.|
+|Compilazione|Genera chiamate tail|Se selezionata, abilita l'uso delle istruzioni tail MSIL (Microsoft Intermediate Language). In questo modo lo stack frame viene riutilizzato per le funzioni tail ricorsive. Equivalente all'opzione del compilatore `--tailcalls`.|
+|Compilazione|Altri flag|Consente di specificare opzioni da riga di comando del compilatore aggiuntive.|
 
 ## <a name="code-and-text-editor-features"></a>Funzionalità degli editor di codice e di testo
 
 F# supporta le funzionalità seguenti degli editor di codice e di testo di Visual Studio:
 
-|Funzionalità|Descrizione|Supporto in F#|
+|Funzionalità|Description|Supporto in F#|
 |-------|-----------|----------------|
 |Commento automatico|Consente di impostare o rimuovere commenti da sezioni di codice.|Sì|
 |Formattazione automatica|Riformatta il codice con rientri e stile standard.|No|
 |Segnalibri|Consente di salvare posizioni specifiche nell'editor.|Sì|
 |Modifica del rientro|Consente di impostare o annullare un rientro per le righe selezionate.|Sì|
 |Rientro automatico|Applica e annulla il rientro del cursore in base alle regole di ambito F#.|Sì|
-|[Trovare e sostituire testo](finding-and-replacing-text.md)|Consente di eseguire la ricerca in un file, in un progetto o in una soluzione, con la possibilità di modificare il testo.|Sì|
+|[Cercare e sostituire testo](finding-and-replacing-text.md)|Consente di eseguire la ricerca in un file, in un progetto o in una soluzione, con la possibilità di modificare il testo.|Sì|
 |Vai a definizione per l'API .NET|Quando il cursore è posizionato su un'API .NET, visualizza il codice generato dai metadati di .NET.|No|
 |Passaggio alla definizione per un'API definita dall'utente|Quando il cursore è posizionato su un'entità di programma definita dall'utente, sposta il cursore nella posizione all'interno del codice in cui l'entità è definita.|Sì|
 |Vai alla riga|Consente di passare a una riga specifica in un file, in base al numero di riga.|Sì|
 |Barre di spostamento nella parte superiore del file|Consente di passare a posizioni specifiche all'interno del codice, ad esempio a un nome di funzione.|Sì|
 |Linee guida per strutture a blocchi|Mostra linee guida che indicano ambiti F# che visualizzano un'anteprima se si sposta il puntatore del mouse su di essi.|Sì|
-|[Struttura](outlining.md)|Consente di comprimere le sezioni del codice per creare una visualizzazione più compatta.|Sì|
+|[struttura](outlining.md)|Consente di comprimere le sezioni del codice per creare una visualizzazione più compatta.|Sì|
 |Inserimento di tabulazioni|Converte gli spazi in tabulazioni.|Sì|
 |Colorazione dei tipi|Visualizza i nomi dei tipi definiti con un colore particolare.|Sì|
 |Ricerca veloce. Vedere Ricerca veloce, finestra Trova e sostituisci.|Consente di eseguire ricerche all'interno di un file o di un progetto.|Sì|
-|**Ctrl**+**fare clic** su Vai a definizione|Consente di richiamare Vai a definizione tenendo premuto **Ctrl** e facendo clic su un simbolo F#.|Sì|
+|**CTRL** + **fare clic** per passare alla definizione|Consente di richiamare Vai a definizione tenendo premuto **Ctrl** e facendo clic su un simbolo F#.|Sì|
 |Vai a definizione da Informazioni rapide|Simboli selezionabili all'interno delle descrizioni comando che richiamano Vai a definizione.|Sì|
-|Vai a tutti|Consente di eseguire la navigazione globale con corrispondenza fuzzy per tutti i costrutti F , tramite **Ctrl**+**T**.|Sì|
+|Vai a tutti|Abilita la navigazione globale con corrispondenza fuzzy per tutti i costrutti F # tramite **CTRL** + **T**.|Sì|
 |Ridenominazione inline|Consente di rinominare tutte le occorrenze di un simbolo inline.|Sì|
 |Trova tutti i riferimenti|Trova tutte le occorrenze di un simbolo in una codebase.|Sì|
 |Correzione del codice Semplifica nome|Rimuove i qualificatori non necessari per i simboli F#.|Sì|
@@ -118,7 +120,7 @@ La tabella seguente riepiloga le funzionalità di IntelliSense supportate e non 
 |Implementazione automatica di interfacce|Genera stub di codice per metodi di interfaccia.|Sì|
 |Frammenti di codice|Inserisce codice da una libreria di costrutti di codifica comuni in argomenti.|No|
 |Completa parola|Salva il testo digitato completando le parole e i nomi durante la digitazione.|Sì|
-|Completamento automatico|Se abilitata, fa sì che il completamento delle parole selezioni la prima corrispondenza durante la digitazione, invece di attendere la selezione di una parola o la pressione **di CTRL**+**Spazio**.|Sì|
+|Completamento automatico|Quando è abilitata, il completamento della parola seleziona la prima corrispondenza durante la digitazione, invece di attendere la selezione di uno o di premere **CTRL +** + **barra spaziatrice**.|Sì|
 |Offerta di completamento dei simboli all'interno di spazi dei nomi non aperti|Con il completamento automatico, viene suggerito un simbolo corrispondente presente in uno spazio dei nomi non aperto, consentendo il completamento con l'istruzione `open` corrispondente, se selezionato.|Sì|
 |Generazione di elementi di codice|Consente di generare codice di stub per un'ampia gamma di costrutti.|No|
 |Elenca membri|Quando si digita l'operatore di accesso ai membri (.), visualizza i membri di un tipo.|Sì|
@@ -133,7 +135,7 @@ Per informazioni generali su IntelliSense, vedere [Usare IntelliSense](using-int
 
 La tabella seguente riepiloga le funzionalità disponibili quando si esegue il debug di codice F#:
 
-|Funzionalità|Descrizione|Supporto in F#|
+|Funzionalità|Description|Supporto in F#|
 |-------|-----------|----------------|
 |Auto (finestra)|Visualizza le variabili automatiche o temporanee.|No|
 |Punti di interruzione|Consente di sospendere l'esecuzione del codice in corrispondenza di punti specifici durante il debug.|Sì|
@@ -158,9 +160,9 @@ La tabella seguente riepiloga il supporto per F# di Strumenti di Visual Studio.
 |Metrica del codice|Raccoglie informazioni sul codice, ad esempio il numero di righe.|No|
 |Visualizzazione classi|Rende disponibile una visualizzazione del codice di un progetto basata sui tipi.|No|
 |[Finestra Elenco errori](reference/error-list-window.md)|Visualizza l'elenco degli errori nel codice.|Sì|
-|[Interattivo di F](/dotnet/fsharp/tutorials/fsharp-interactive/)|Consente di digitare (o copiare e incollare) codice F# ed eseguirlo immediatamente, indipendentemente dalla compilazione del progetto. La finestra F# Interactive è una finestra REPL (Read-Eval-Print).|Sì|
+|[F# Interactive](/dotnet/fsharp/tutorials/fsharp-interactive/)|Consente di digitare (o copiare e incollare) codice F# ed eseguirlo immediatamente, indipendentemente dalla compilazione del progetto. La finestra F# Interactive è una finestra REPL (Read-Eval-Print).|Sì|
 |Visualizzatore oggetti|Consente di visualizzare i tipi presenti in un assembly.|I tipi F# visualizzati negli assembly compilati non appaiono esattamente come vengono creati. È possibile esplorare la rappresentazione compilata dei tipi F#, ma non è possibile visualizzare i tipi così come appaiono da F#.|
-|[Finestra di output](reference/output-window.md)|Visualizza l'output della compilazione.|Sì|
+|[Output (finestra)](reference/output-window.md)|Visualizza l'output della compilazione.|Sì|
 |Analisi delle prestazioni|Rende disponibili strumenti per la misurazione delle prestazioni del codice.|Sì|
 |Finestra Proprietà|Visualizza le proprietà dell'oggetto con stato attivo nell'ambiente di sviluppo e consente la modifica di tali proprietà.|Sì|
 |Esplora server|Offre alcuni metodi per l'interazione con un'ampia gamma di risorse del server.|Sì|
@@ -169,7 +171,7 @@ La tabella seguente riepiloga il supporto per F# di Strumenti di Visual Studio.
 |Progetti di test|Offre funzionalità per l'esecuzione del test del codice.|No|
 |Casella degli strumenti|Visualizza schede che contengono oggetti trascinabili quali controlli e sezioni di testo o codice.|Sì|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Guida a F# (.NET Framework)](/dotnet/fsharp/)
 - [Introduzione a F# in Visual Studio](/dotnet/fsharp/get-started/get-started-visual-studio)

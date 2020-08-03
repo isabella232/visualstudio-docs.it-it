@@ -4,6 +4,7 @@ ms.date: 05/08/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
+- vs.classdesigner.enum
 helpviewer_keywords:
 - Class Designer [Visual Studio]
 - Class Designer, about Class Designer
@@ -16,16 +17,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 80668f3b999d9e022de3d22abb383f2dbd10730a
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590397"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507911"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Progettare e visualizzare classi e tipi con Progettazione classi
 
-Progettare, visualizzare ed esefare il refactoring di classi e altri tipi nel codice con **Progettazione classi** in Visual Studio.Design, visualize, and refactor classes and other types in your code with Class Designer in Visual Studio. Usare i diagrammi classi per creare e modificare classi nel progetto C#, Visual Basic o C++. È anche possibile usare i diagrammi classi per comprendere meglio la struttura del progetto o riorganizzare il codice.
+Progettare, visualizzare ed effettuare il refactoring di classi e altri tipi nel codice con **Progettazione classi** in Visual Studio. Usare i diagrammi classi per creare e modificare classi nel progetto C#, Visual Basic o C++. È anche possibile usare i diagrammi classi per comprendere meglio la struttura del progetto o riorganizzare il codice.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>Operazioni eseguibili con i diagrammi classi
 
@@ -55,7 +56,7 @@ Dopo aver ottimizzato uno o più diagrammi classi, è possibile copiarli in docu
 > [!NOTE]
 > Progettazione classi non tiene traccia del percorso dei file di origine. Di conseguenza, se si modifica la struttura del progetto o si spostano i file di origine in un progetto, Progettazione classi può perdere traccia del tipo, soprattutto del tipo di origine di un typedef, delle classi di base o dei tipi di associazione. Si potrebbe ricevere un errore, ad esempio **Progettazione classi: impossibile visualizzare il tipo**. In tal caso, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo nuovamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice](../writing-code-in-the-code-and-text-editor.md)
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../../modeling/map-dependencies-across-your-solutions.md)

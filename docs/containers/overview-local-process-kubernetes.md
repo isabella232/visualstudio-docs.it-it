@@ -6,12 +6,15 @@ ms.topic: conceptual
 description: Descrive i processi per l'uso del processo locale con Kubernetes per connettere il computer di sviluppo al cluster Kubernetes
 keywords: Processo locale con Kubernetes, Docker, Kubernetes, Azure, contenitori
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 93bfc509eb21545cde812b8d6d71bb9a93a109e8
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+manager: jillfra
+author: ghogen
+ms.author: ghogen
+ms.openlocfilehash: f8808da9a2bfd49fb0ee7d661b7e57c776036c1c
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133976"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507885"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Come funziona Processo locale con Kubernetes
 
@@ -20,6 +23,9 @@ Il processo locale con Kubernetes consente di eseguire ed eseguire il debug del 
 Il processo locale con Kubernetes evita di dover compilare e distribuire il codice nel cluster creando invece una connessione direttamente tra il computer di sviluppo e il cluster. Connettendo il computer di sviluppo al cluster durante il debug è possibile testare e sviluppare rapidamente il servizio nel contesto dell'applicazione completa senza creare una configurazione Docker o Kubernetes.
 
 Il processo locale con Kubernetes reindirizza il traffico tra il cluster Kubernetes connesso e il computer di sviluppo. Questo reindirizzamento del traffico consente il codice nel computer di sviluppo e i servizi in esecuzione nel cluster Kubernetes per comunicare come se fossero nello stesso cluster Kubernetes. Il processo locale con Kubernetes fornisce anche un modo per replicare le variabili di ambiente e i volumi montati disponibili per i Pod nel cluster Kubernetes nel computer di sviluppo. Fornire l'accesso alle variabili di ambiente e ai volumi montati nel computer di sviluppo consente di lavorare rapidamente sul codice senza dover replicare manualmente tali dipendenze.
+
+> [!WARNING]
+> Il processo locale per Kubernetes deve essere usato solo in scenari di sviluppo e test. Non è previsto né supportato per l'uso con cluster di produzione o servizi dinamici in uso attivo.
 
 ## <a name="using-local-process-with-kubernetes"></a>Uso del processo locale con Kubernetes
 
@@ -39,6 +45,12 @@ Quando il processo locale con Kubernetes stabilisce una connessione al cluster:
 * Avvia l'esecuzione e il debug del codice nel computer di sviluppo. Se necessario, il processo locale con Kubernetes libererà le porte necessarie nel computer di sviluppo arrestando i servizi o i processi che attualmente utilizzano tali porte.
 
 Dopo aver stabilito una connessione al cluster, è possibile eseguire ed eseguire il debug del codice in modo nativo nel computer, senza contenitori e il codice può interagire direttamente con il resto del cluster. Qualsiasi traffico di rete ricevuto dall'agente remoto viene reindirizzato alla porta locale specificata durante la connessione, in modo che il codice in esecuzione a livello nativo possa accettare ed elaborare tale traffico. Le variabili di ambiente, i volumi e i segreti del cluster vengono resi disponibili per il codice in esecuzione nel computer di sviluppo. Inoltre, a causa delle voci del file hosts e del Port porting aggiunto al computer di sviluppo da un processo locale con Kubernetes, il codice può inviare il traffico di rete ai servizi in esecuzione nel cluster usando i nomi di servizio del cluster e il traffico viene inoltrato ai servizi in esecuzione nel cluster. Il traffico viene instradato tra il computer di sviluppo e il cluster per l'intera durata della connessione.
+
+Il processo locale con Kubernetes consente inoltre di replicare le variabili di ambiente e i file montati disponibili nei Pod del cluster nel computer di sviluppo tramite il `KubernetesLocalProcessConfig.yaml` file. È anche possibile usare questo file per creare nuove variabili di ambiente e montaggi del volume.
+
+## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>Configurazione aggiuntiva con KubernetesLocalProcessConfig. YAML
+
+Il `KubernetesLocalProcessConfig.yaml` file consente di replicare le variabili di ambiente e i file montati disponibili per i Pod nel cluster. Per altre informazioni sulle opzioni di configurazione aggiuntive, vedere [configurare un processo locale con Kubernetes][using-config-yaml].
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>Uso delle funzionalità di routing per lo sviluppo in isolamento
 
@@ -108,3 +120,4 @@ Per iniziare a usare il processo locale con Kubernetes per connettersi al comput
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[using-config-yaml]: configure-local-process-with-kubernetes.md
