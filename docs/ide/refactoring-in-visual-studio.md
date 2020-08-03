@@ -5,17 +5,20 @@ ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
+f1_keywords:
+- vs.csharp.refactoring.preview
+ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6a050a07d8f7ef440aa66c3dfd7385b182e4df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02c4b00ce4ebdfc253735783d20fb90c62bae49b
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585717"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507924"
 ---
 # <a name="refactor-code"></a>Effettuare il refactoring del codice
 
@@ -34,5 +37,5 @@ Sono disponibili operazioni di refactoring diverse per i differenti linguaggi di
 - [Azioni rapide](../ide/quick-actions.md)
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Visualizzare l'anteprima delle modifiche](../ide/preview-changes.md)
+- [Anteprima modifiche](../ide/preview-changes.md)
 - [Refactoring (Visual Studio per Mac)](/visualstudio/mac/refactoring)

@@ -2,16 +2,19 @@
 title: Usare il processo locale con Kubernetes con Visual Studio (anteprima)
 ms.technology: vs-azure
 ms.date: 06/02/2020
-ms.topic: conceptual
+ms.topic: how-to
 description: Informazioni su come usare il processo locale con Kubernetes con Visual Studio per connettere il computer di sviluppo a un cluster Kubernetes
 keywords: Processo locale con Kubernetes, Azure Dev Spaces, spazi di sviluppo, Docker, Kubernetes, Azure, contenitori
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: fd2e456f1ffdaaea90c0594b73d5367e51c8f655
-ms.sourcegitcommit: debf31a8fb044f0429409bd0587cdb7d5ca6f836
+ms.author: ghogen
+author: ghogen
+manager: jillfra
+ms.openlocfilehash: 29a3c8563660507a2378a58595ba5ea64788b417
+ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87133996"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "87507898"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Usare il processo locale con Kubernetes (anteprima)
 
@@ -137,6 +140,10 @@ Rimuovere il punto di interruzione inserendo il cursore sulla riga 26 in `BikesH
 >
 > Se Visual Studio termina improvvisamente la connessione al cluster o termina, il servizio da reindirizzare potrebbe non essere ripristinato allo stato originale prima della connessione al processo locale con Kubernetes. Per risolvere questo problema, vedere la [Guida alla risoluzione dei problemi][troubleshooting].
 
+## <a name="additional-configuration"></a>Configurazione aggiuntiva
+
+Il processo locale con Kubernetes può gestire il routing del traffico e la replica delle variabili di ambiente senza alcuna configurazione aggiuntiva. Se è necessario scaricare i file montati nel contenitore del cluster Kubernetes, ad esempio un file ConfigMap, è possibile creare un per scaricare i file nel `KubernetesLocalProcessConfig.yaml` computer di sviluppo. Per ulteriori informazioni, vedere [utilizzo di KubernetesLocalProcessConfig. YAML per la configurazione aggiuntiva con per il processo locale con Kubernetes][kubernetesLocalProcessConfig-yaml].
+
 ## <a name="using-logging-and-diagnostics"></a>Uso della registrazione e della diagnostica
 
 È possibile trovare i log di diagnostica in `Azure Dev Spaces` directory nella [directory *temporanea* del computer di sviluppo][azds-tmp-dir].
@@ -170,3 +177,4 @@ Informazioni sul funzionamento del processo Kubernetes locale.
 [troubleshooting]: /azure/dev-spaces/troubleshooting#fail-to-restore-original-configuration-of-deployment-on-cluster
 [visual-studio]: https://www.visualstudio.com/vs/
 [lpk-extension]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.mindaro
+[kubernetesLocalProcessConfig-yaml]: configure-local-process-with-kubernetes.md
