@@ -6,7 +6,7 @@
       href: javascript-in-vs-2019.md
     - name: JavaScript in Visual Studio 2017
       href: javascript-in-vs-2017.md
-- name: Guide rapide introduttive
+- name: Avvi rapidi
   items:
     - name: Presentazione dell'IDE di Visual Studio
       href: quickstart-ide-orientation-js.md
@@ -26,18 +26,26 @@
       href: publish-nodejs-app-azure.md
 - name: Guide alle procedure
   items:
-    - name: Scrivere e modificare il codice
-      href: write-and-edit-code.md
-    - name: Creare un'applicazione Vue.js
-      href: create-application-with-vuejs.md
+    - name: Editor
+      items:
+        - name: Scrivere e modificare il codice
+          href: write-and-edit-code.md
+        - name: IntelliSense per JavaScript
+          href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+    - name: Compilazione
+      items:
+        - name: Compilare codice TypeScript usando tsc
+          href: compile-typescript-code-npm.md
+        - name: Compilare codice TypeScript con NuGet
+          href: compile-typescript-code-nuget.md
     - name: Gestire pacchetti npm
       href: npm-package-management.md
     - name: Sviluppare senza progetti o soluzioni ("Apri cartella")
       href: develop-javascript-code-without-solutions-projects.md
+    - name: Creare un'applicazione Vue.js
+      href: create-application-with-vuejs.md
     - name: Usare il ciclo Read-Eval-Print interattivo Node.js
       href: nodejs-interactive-repl.md
-    - name: IntelliSense per JavaScript
-      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
     - name: Debug
       href: debug-nodejs.md
     - name: Unit test
