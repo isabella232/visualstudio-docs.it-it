@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2019
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2019.
-ms.date: 05/20/2020
+ms.date: 08/05/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c8e647943b6e99946c2a9123ee17e2be8cc5c2
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 333bb9ca24579758112199c13d5a4af3f60d6058
+ms.sourcegitcommit: d21f1a028628d0221b567ba496690b3b68cfded7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387044"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87818586"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
-**Aggiornamento per la [versione 16,6](/visualstudio/releases/2019/release-notes/)**
+**Aggiornamento per la [versione 16,7](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Scarica Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -86,7 +86,7 @@ Per altre informazioni su IntelliCode, vedere i post di blog [Announcing the gen
 
 ### <a name="code-cleanup"></a>Pulizia del codice
 
-Abbinato a un nuovo indicatore di integrità dei documenti è disponibile un nuovo comando per la pulizia del codice. È possibile usare questo nuovo comando per identificare e quindi risolvere avvisi e suggerimenti con il semplice clic di un pulsante.
+Abbinato a un nuovo indicatore di integrità dei documenti è disponibile un nuovo comando per la pulizia del codice. È possibile usare questo nuovo comando per identificare e quindi correggere sia gli avvisi che i suggerimenti con una singola azione (oppure fare clic su un pulsante).
 
 L'operazione di pulizia formatterà il codice e applicherà eventuali correzioni del codice come suggerito dalle [impostazioni correnti](code-styles-and-code-cleanup.md) e dai [file con estensione editorconfig](create-portable-custom-editor-options.md).
 
@@ -118,7 +118,7 @@ Per altre informazioni, vedere il post di blog [Better multi-monitor experience 
 
 Per altre informazioni, vedere il post di Blog relativo all' [annuncio di .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Collaborare
+## <a name="collaborate"></a>Collaborazione
 
 Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Lunghezza video: 4,22 minuti*
 
@@ -178,7 +178,7 @@ Probabilmente la finestra Espressioni di controllo è già stata usata in preced
 
    ![Animazione che mostra la finestra di ricerca di debug in Visual Studio 2019](media/vs-2019/debug-window-search.gif)
 
-È anche possibile formattare il modo in cui un valore viene visualizzato all'interno delle finestre Espressioni di controllo, Variabili locali e Auto.  Fare doppio clic su uno degli elementi in una qualsiasi delle finestre e aggiungere una virgola (",") per accedere all'elenco a discesa dei possibili identificatori di formato, ognuno dei quali include una descrizione del relativo effetto desiderato.
+È anche possibile formattare il modo in cui un valore viene visualizzato all'interno delle finestre Espressioni di controllo, Variabili locali e Auto. Selezionare (facendo doppio clic) uno degli elementi in una delle finestre e aggiungere una virgola (",") per accedere all'elenco a discesa di possibili identificatori di formato, ognuno dei quali include una descrizione dell'effetto desiderato.
 
    ![Nuova finestra Espressioni di controllo e funzionalità di formattazione dei valori in Visual Studio 2019](media/search-watch-window.png)
 
@@ -212,7 +212,21 @@ Per altre informazioni, vedere il post di Blog relativo alle [proprietà di aggi
 
 Visual Studio 2019 viene aggiornato spesso con nuove funzionalità in grado di migliorare ulteriormente l'esperienza di sviluppo. Per ulteriori informazioni sulle ultime innovazioni, consultare il [Blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/). Per un resoconto di quanto è stato rilasciato in anteprima, vedere le note sulla versione di [Anteprima](/visualstudio/releases/2019/release-notes-preview/). Per un elenco degli elementi che si prevede di rilasciare successivamente, vedere la [Roadmap di Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
-Per altri dettagli sulle funzionalità in corso di sviluppo per Visual Studio 2019, vedere la pagina [Visual Studio Roadmap](/visualstudio/productinfo/vs-roadmap/).
+Nel frattempo, di seguito sono riportate alcune delle nuove funzionalità attualmente disponibili nel lavoro.
+
+- **Supporto di Visual Studio 2019 per codespaces di Visual Studio (anteprima)**
+
+  Oggi più che mai, gli sviluppatori stanno manipolando più progetti al lavoro e a casa. Le nuove funzionalità, le correzioni di bug, le revisioni delle richieste pull &amp; e i prototipi competono per tempo e richiedono un cambio di contesto costante. [Visual Studio codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) può essere utile. Puoi sviluppare interamente nel cloud e creare ambienti personalizzati dedicati per ogni progetto in pochi secondi. Con Visual Studio 2019 è possibile connettersi allo spazio dei codespace e lavorare come in locale.
+
+  Per ulteriori informazioni, vedere la pagina [che cos'è Visual Studio codespaces](/visualstudio/codespaces/overview/what-is-vsonline/) .
+
+- **Esperienza git migliorata in Visual Studio 2019 (anteprima)**
+
+   Continuiamo a eseguire un'iterazione su un'esperienza git rinnovata per migliorare la produttività quando si lavora con il codice su GitHub, Azure Repos e altri servizi di hosting remoto. È possibile inizializzare e effettuare il push da Visual Studio 2019 con una singola azione oppure fare clic su. È inoltre possibile creare nuovi Branch, gestire i rami correnti e risolvere i conflitti di merge.
+
+   Per altre informazioni, vedere il post di Blog relativo ai [nuovi aggiornamenti per l'esperienza git in Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) .
+
+Per ulteriori informazioni sulla versione di anteprima &mdash; e su un collegamento per il download, &mdash; vedere la pagina di anteprima di **[Visual Studio](https://visualstudio.microsoft.com/vs/preview/)** .
 
 ## <a name="give-us-feedback"></a>Commenti e suggerimenti
 
