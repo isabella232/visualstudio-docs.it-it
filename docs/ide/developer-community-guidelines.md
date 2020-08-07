@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7f821a7b815b29c9f85b6ab0686edb0292866d
-ms.sourcegitcommit: 4d5cd0b9de7a87efb69f17b02c2331b749e6ec8d
+ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
+ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86137558"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87972473"
 ---
 # <a name="developer-community-guidelines"></a>Linee guida per Developer Community
 
@@ -89,12 +89,15 @@ Se è stata suggerita una funzionalità, è possibile che non si preveda di riso
 
 Nel processo decisionale si osserveranno le seguenti caratteristiche relative al suggerimento sulle funzionalità:
 
+- Corrisponde alla direzione generale del prodotto?
 - È possibile consentirne la compilazione e la gestione?
 - Si allineano alla strategia di [Roadmap](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) complessiva?
 - Dispone del supporto della community, come indicato da voti e commenti?
 - Ci piace anche con il supporto della community di basso livello?
 
 Se non è possibile rispondere a queste domande, verrà chiusa. Tuttavia, spesso il suggerimento resterà aperto come _Revisione_ per raccogliere altri commenti della community.
+
+Se un suggerimento non corrisponde alla direzione generale del prodotto, verrà chiuso come *fuori ambito*. Potrebbero ad esempio essere presenti investimenti simili in altri membri della famiglia di prodotti Visual Studio. In alternativa, la funzionalità suggerita potrebbe essere rilevante solo per alcune persone, rendendo un'estensione più adatta per fornirla.
 
 Tenere traccia dello stato di avanzamento del suggerimento per le funzionalità facendo riferimento agli [stati dei suggerimenti e alle domande frequenti](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
 
