@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 02a672321a11889d88a8af3305e64a66fe779080
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283190"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913307"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Inizia a usare gli strumenti di Visual Studio Kubernetes
 
@@ -123,7 +123,7 @@ I file aggiunti sono:
 
 - *azds.yaml*. Contiene le impostazioni per Azure Dev Spaces, che fornisce un'esperienza di debug rapida e iterativa nel servizio Azure Kubernetes. Per ulteriori informazioni, vedere [la documentazione Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces).
 
-::: moniker range="vs-2017"
+:::moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Pubblicare in Azure Kubernetes Service (AKS)
 
@@ -145,7 +145,7 @@ A tale scopo, è prima di tutto necessario verificare di aver installato tutti g
 
    ![Screenshot della voce di menu Publish to Azure AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. Scegliere la sottoscrizione e il cluster AKS insieme al profilo di pubblicazione ACR appena creato. Fare quindi clic su **OK**.
+4. Scegliere la sottoscrizione e il cluster AKS insieme al profilo di pubblicazione ACR appena creato. Quindi fare clic su **OK**.
 
    ![Screenshot della schermata Publish to AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
@@ -165,7 +165,17 @@ A tale scopo, è prima di tutto necessario verificare di aver installato tutti g
 
 ::: moniker-end
 
-A questo punto, È ora possibile sfruttare tutte le potenzialità di Visual Studio per lo sviluppo di app Kubernetes.
+La procedura è stata completata. È ora possibile sfruttare tutte le potenzialità di Visual Studio per lo sviluppo di app Kubernetes.
+
+## <a name="remove-kubernetes-support"></a>Rimuovi supporto Kubernetes
+
+1. In **Esplora soluzioni**, in **proprietà**, aprire *launchSettings.jssu*.
+
+1. Eliminare il **contenitore di sezioni in Kubernetes**.
+
+1. Se si passa di nuovo a Docker compose, selezionare il progetto in **Esplora soluzioni**, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**.
+
+1. Opzionale È anche possibile eliminare altri artefatti elencati come indicato in precedenza nell'articolo, ad esempio la cartella **Charts** e *azds. YAML*.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

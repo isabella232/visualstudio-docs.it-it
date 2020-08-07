@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8deed53d2789afb964989e4e995e3120e9842bd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
+ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543845"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "87913318"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -262,7 +262,7 @@ Per correggere un ambiente che si vuole mantenere, provare prima a usare il proc
 Per correggere un ambiente che non dispone di un'opzione di riparazione o per rimuovere un ambiente non valido, usare la procedura seguente per modificare direttamente il Registro di sistema. Visual Studio aggiorna automaticamente la finestra **ambienti Python** quando si apportano modifiche al registro di sistema.
 
 1. Eseguire *regedit.exe*.
-1. Passare a **HKEY_LOCAL_MACHINE\SOFTWARE\Python**. Per IronPython, cercare invece **IronPython**.
+1. Passare a **HKEY_LOCAL_MACHINE \software\python** o **HKEY_CURRENT_USER \software\python**. Per IronPython, cercare invece **IronPython**.
 1. Espandere il nodo che corrisponde alla distribuzione, ad esempio **Python Core** per CPython o **ContinuumAnalytics** per Anaconda. Per IronPython, espandere il nodo del numero di versione.
 1. Controllare i valori nel nodo **InstallPath**:
 
@@ -270,7 +270,8 @@ Per correggere un ambiente che non dispone di un'opzione di riparazione o per ri
 
     - Se l'ambiente è ancora presente nel computer, modificare il valore di **ExecutablePath** nella posizione corretta. Correggere anche i valori **(Predefinito)** e **WindowedExecutablePath** in base alle esigenze.
     - Se l'ambiente non è più presente nel computer e si vuole rimuoverlo dalla finestra **Ambienti Python**, eliminare il nodo padre di **InstallPath**, ad esempio **3.6** nell'immagine precedente.
-
+    - Impostazioni non valide in **HKEY_CURRENT_USER \software\python** sostituire le impostazioni nel **HKEY_LOCAL_MACHINE \software\python**
+    
 ## <a name="see-also"></a>Vedere anche
 
 - [Installare interpreti Python](installing-python-interpreters.md)
