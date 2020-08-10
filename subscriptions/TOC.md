@@ -16,6 +16,7 @@
 ### [Accedere con account Microsoft](sign-in-msa.md)
 ### [Accedere con l'account aziendale o dell'istituto di istruzione](sign-in-work.md)
 ### [Accedere con GitHub](sign-in-github.md)
+### [Identità connesse](use-connected-identities.md)
 ### [Identità alternative](vs-alternate-identity.md)
 ### [Problemi di accesso](sign-in-issues.md)
 ### [Anonimizzazioni dei dati dei sottoscrittori](anonymization.md)
