@@ -10,12 +10,12 @@ ms.assetid: f33e454c-69d8-4cab-9150-d1e7fd04786d
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: e26b5cb1790cab38a6544a04307b7e336a952519
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: 9fd497dcda7e40cf0dbe6409193019ddae84c80b
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835368"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144402"
 ---
 # <a name="iactivescriptparse32parsescripttext"></a>IActiveScriptParse32::ParseScriptText
 Analizza il codice scriptlet specificato, aggiungendo le dichiarazioni nello spazio dei nomi e valutando il codice nel modo appropriato.  
@@ -38,7 +38,7 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parametri  
   
-|||  
+| Parametro | Descrizione |  
 |-|-|  
 |`pstrCode`|in Indirizzo del testo scriptlet da valutare. L'interpretazione di questa stringa dipende dal linguaggio di scripting.|  
 |`pstrItemName`|in Indirizzo del nome dell'elemento che fornisce il contesto in cui valutare scriptlet. Se questo parametro è NULL, il codice viene valutato nel contesto globale del motore di script.|  
@@ -54,7 +54,7 @@ HRESULT ParseScriptText(
 |SCRIPTTEXT_ISPERSISTENT|Indica che il codice aggiunto durante la chiamata deve essere salvato nel caso in cui il motore di scripting venga salvato, ad esempio tramite una chiamata a `IPersist*::Save` , o se il motore di scripting viene reimpostato tramite una transizione allo stato inizializzato.|  
 |SCRIPTTEXT_ISVISIBLE|Indica che il testo dello script deve essere visibile (e, di conseguenza, chiamabile in base al nome) come metodo globale nello spazio dei nomi dello script.|  
   
-|||  
+| Parametro | Descrizione |  
 |-|-|  
 |`pvarResult`|out Indirizzo di un buffer che riceve i risultati dell'elaborazione di scriptlet o `NULL` se il chiamante non prevede alcun risultato (ovvero, il valore SCRIPTTEXT_ISEXPRESSION non è impostato).|  
 |`pexcepinfo`|out Indirizzo di una struttura che riceve informazioni sull'eccezione. Questa struttura viene compilata se `IActiveScriptParse::ParseScriptText` restituisce DISP_E_EXCEPTION.|  

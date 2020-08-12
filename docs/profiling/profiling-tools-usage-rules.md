@@ -9,17 +9,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 51c4f1384a58b19ad9a6a4f46ad0131158cc967c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1aeeb7e0a9061d72a07b718acde70b00dfcbba89
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778349"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144675"
 ---
 # <a name="profiling-tools-usage-rules"></a>Regole di utilizzo degli strumenti di profilatura
 Le regole delle prestazioni nella categoria di utilizzo degli strumenti di profilatura forniscono indicazioni per l'uso del profiler per una raccolta più efficiente dei dati.
 
-| | |
+| Regola | Descrizione |
 | - | - |
 | [DA0002: VSPerfCorProf.dll mancante](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | La profilatura dalla riga di comando potrebbe contenere dati incompleti per i file binari di .NET Framework. Il problema può essere causato dalla mancata impostazione delle variabili di ambiente corrette. |
 | [DA0003: Numero elevato di campioni del kernel](../profiling/da0003-many-kernel-samples.md) | Sono stati registrati molti campioni di profilatura che si sono verificati all'esterno dell'esecuzione del file binario di destinazione. Per raccogliere dati più accurati, è consigliabile ricorrere al metodo di strumentazione. |
@@ -27,4 +27,4 @@ Le regole delle prestazioni nella categoria di utilizzo degli strumenti di profi
 | [DA0008: Numero ridotto di campioni raccolti](../profiling/da0008-few-samples-collected.md) | Il numero di campioni raccolti nell'esecuzione della profilatura non è sufficiente per essere statisticamente significativo. È consigliabile rieseguire la profilatura mantenendo l'applicazione in esecuzione per un periodo di tempo più lungo. È anche possibile considerare l'uso del metodo di strumentazione per la raccolta dei dati. |
 | [DA0026: Tempo di elaborazione CPU kernel eccessivo](../profiling/da0026-excessive-kernel-cpu-time-processing.md) | L'esecuzione della profilatura in modalità kernel del processore ha richiesto un periodo di tempo notevole. Considerare l'uso del metodo di campionamento usando come metrica le chiamate di sistema anziché il tempo. |
 | [DA0029: Versione CLR non supportata](../profiling/da0029-unsupported-clr-version.md) | Il file binario profilato usa una versione di .NET Framework non supportata dal profiler. I rapporti del profiler indicano che non è possibile risolvere i nomi dei simboli. |
-| [DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di databaseDA0030: Gather Tier Interaction measurements for database projects](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md) | È stato raccolto un numero significativo di chiamate ai metodi nello spazio dei nomi <xref:System.Data?displayProperty=fullName>. Per includere i dati sulle chiamate di database, prendere in considerazione la raccolta dei dati sull'interazione tra livelli nelle esecuzioni di profilatura. |
+| [DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di database](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md) | È stato raccolto un numero significativo di chiamate ai metodi nello spazio dei nomi <xref:System.Data?displayProperty=fullName>. Per includere i dati sulle chiamate di database, prendere in considerazione la raccolta dei dati sull'interazione tra livelli nelle esecuzioni di profilatura. |

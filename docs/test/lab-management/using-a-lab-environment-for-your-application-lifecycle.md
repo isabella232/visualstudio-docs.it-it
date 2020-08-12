@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2f4733bd52e44409ec9c2cc9a1e8828864712ceb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286830"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144688"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -28,15 +28,20 @@ Un ambiente lab è una raccolta di computer virtuali e fisici che è possibile u
 
 Ecco alcuni esempi di topologie comuni di ambienti lab:
 
-| Topologia | Description |
+| Topologia | Descrizione |
 |---|---|
 |![Topologia solo server](../media/topology_backend.png)| Questo ambiente lab ha una *topologia server*, che è spesso usata per eseguire test manuali su applicazioni server e che consente ai tester di usare i propri computer client per verificare i bug nell'ambiente. In una topologia di back-end, l'ambiente lab contiene solo i server. Quando si usa questo tipo di topologia in genere si esegue la connessione ai server nell’ambiente lab usando un computer client che non fa parte dell’ambiente.|
 |![Ambiente lab nel cloud](../media/topology_cloud.png)| Questo ambiente lab presenta caratteristiche e funzionalità simili alla _topologia server_ senza il requisito della presenza di macchine virtuali o computer fisici in un ambiente locale. Ciò può ridurre la durata della configurazione, semplificare la manutenzione e abbassare i costi. La configurazione di più siti Web e più macchine virtuali e la personalizzazione della rete sono semplici e rapide in un ambiente cloud come Microsoft Azure.|
 |![Ambiente lab client-server](../media/topology_clientserver.png)| Questo ambiente lab ha una *topologia client/server*, spesso usata per testare un'applicazione dotata di componenti server e client. In una topologia client/server tutti i computer client e server usati per testare l’applicazione si trovano nell’ambiente lab. Quando si usa questa topologia, è possibile raccogliere dati di test da ogni computer che incide sui test.|
 
-| | |
-|---|---|
-| ![icona della telecamera per un video](../../install/media/video-icon.png) | [Guardare un video](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sulla gestione degli ambienti lab per l'esecuzione di test. |
+:::row:::
+    :::column:::
+        ![icona della telecamera per un video](../../install/media/video-icon.png)
+    :::column-end:::
+    :::column:::
+        [Guardare un video](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sulla gestione degli ambienti lab per l'esecuzione di test.
+    :::column-end:::
+:::row-end:::
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Usare il cloud con Compilazione e versione di Azure Pipelines o Team Foundation Server
 
@@ -96,19 +101,19 @@ Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzion
 |Funzionalità|Ambienti SCVMM|Ambienti standard|
 |-|------------------------|-|
 |**Test**|||
-|Eseguire test manuali|Supportato|Supportato|
-|Eseguire il test codificato dell'interfaccia utente e altri test automatizzati|Supportato|Supportato|
-|Archiviare bug dettagliati usando gli adattatori diagnostici|Supportato|Supportato|
+|Eseguire test manuali|Funzionalità supportata|Funzionalità supportata|
+|Eseguire il test codificato dell'interfaccia utente e altri test automatizzati|Funzionalità supportata|Funzionalità supportata|
+|Archiviare bug dettagliati usando gli adattatori diagnostici|Funzionalità supportata|Funzionalità supportata|
 |**Distribuzione della compilazione**|||
-|Flussi di lavoro compilazione, distribuzione e test automatici|Supportato|Supportato|
+|Flussi di lavoro compilazione, distribuzione e test automatici|Funzionalità supportata|Funzionalità supportata|
 |**Creazione e gestione dell'ambiente**|||
 |Usare computer fisici oltre alle macchine virtuali|Non supportate|Supportato|
 |Usare macchine virtuali di terze parti|Non supportate|Supportato|
-|Installazione automatica degli agenti di test nei computer nell'ambiente lab|Supportato|Supportato|
+|Installazione automatica degli agenti di test nei computer nell'ambiente lab|Funzionalità supportata|Funzionalità supportata|
 |Salvare e distribuire lo stato di un ambiente lab tramite snapshot dell'ambiente|Supportato|Non supportate|
 |Creare ambienti lab dai modelli di macchina virtuale|Supportato|Non supportate|
 |Avviare, arrestare e creare lo snapshot dell'ambiente|Supportato|Non supportate|
-|Connettersi all'ambiente usando Visualizzatore ambiente|Supportato|Supportato|
+|Connettersi all'ambiente usando Visualizzatore ambiente|Funzionalità supportata|Funzionalità supportata|
 |Eseguire più copie di un ambiente nello stesso momento usando l'isolamento della rete|Supportato|Non supportate|
 
 ### <a name="lab-management-concepts"></a>Concetti di Lab Management
@@ -127,7 +132,7 @@ Per altre informazioni su Lab Management, vedere:
 * [Pianificare il lab](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
 * [Configurazione e amministrazione di Lab Management](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
 * [Configurazione di Lab Management per ambienti SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Gestisci autorizzazioni](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
+* [Gestire le autorizzazioni](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
 * [Modifica della configurazione](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
 * [Risoluzione dei problemi](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 
@@ -139,7 +144,7 @@ Per informazioni sulla configurazione degli ambienti, vedere:
 * [Creazione e uso di un ambiente di isolamento rete](https://msdn.microsoft.com/library/ee518924.aspx)
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Installare e configurare agenti di test](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management Guide](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/) (Guida di Visual Studio Lab Management)

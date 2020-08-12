@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4f35b398a7348f4e2bdbaaa9ab3e322bf69ddb6
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 6eadf367de224261207fd594322235ff89957b55
+ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72561616"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144623"
 ---
 # <a name="iactivescriptparseparsescripttext"></a>IActiveScriptParse::ParseScriptText
 Analizza il codice scriptlet specificato, aggiungendo le dichiarazioni nello spazio dei nomi e valutando il codice nel modo appropriato.  
@@ -45,7 +45,7 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parametri  
   
-|||  
+| Parametro | Descrizione |  
 |-|-|  
 |`pstrCode`|in Indirizzo del testo scriptlet da valutare. L'interpretazione di questa stringa dipende dal linguaggio di scripting.|  
 |`pstrItemName`|in Indirizzo del nome dell'elemento che fornisce il contesto in cui valutare scriptlet. Se questo parametro è NULL, il codice viene valutato nel contesto globale del motore di script.|  
@@ -55,15 +55,15 @@ HRESULT ParseScriptText(
 |`ulStartingLineNumber`|in Valore in base zero che specifica la riga a partire dalla quale inizierà l'analisi.|  
 |`dwFlags`|in Flag associati a scriptlet. Può essere una combinazione di questi valori:|  
   
-|Value|Significato|  
+|valore|Significato|  
 |-----------|-------------|  
 |SCRIPTTEXT_ISEXPRESSION|Se la distinzione tra un'espressione di calcolo e un'istruzione è importante ma sintatticamente ambigua nel linguaggio di script, questo flag specifica che scriptlet deve essere interpretato come un'espressione, anziché come un'istruzione o un elenco di istruzioni. Per impostazione predefinita, vengono presupposte le istruzioni, a meno che la scelta corretta non possa essere determinata dalla sintassi del testo scriptlet.|  
-|SCRIPTTEXT_ISPERSISTENT|Indica che il codice aggiunto durante la chiamata deve essere salvato nel caso in cui il motore di scripting venga salvato (ad esempio tramite una chiamata a `IPersist*::Save`) o se il motore di scripting viene reimpostato tramite una transizione allo stato inizializzato.|  
+|SCRIPTTEXT_ISPERSISTENT|Indica che il codice aggiunto durante la chiamata deve essere salvato nel caso in cui il motore di scripting venga salvato, ad esempio tramite una chiamata a `IPersist*::Save` , o se il motore di scripting viene reimpostato tramite una transizione allo stato inizializzato.|  
 |SCRIPTTEXT_ISVISIBLE|Indica che il testo dello script deve essere visibile (e, di conseguenza, chiamabile in base al nome) come metodo globale nello spazio dei nomi dello script.|  
   
-|||  
+| Parametro | Descrizione |  
 |-|-|  
-|`pvarResult`|out Indirizzo di un buffer che riceve i risultati dell'elaborazione di scriptlet o `NULL` se il chiamante non prevede alcun risultato, ovvero se il valore di SCRIPTTEXT_ISEXPRESSION non è impostato.|  
+|`pvarResult`|out Indirizzo di un buffer che riceve i risultati dell'elaborazione di scriptlet o `NULL` se il chiamante non prevede alcun risultato (ovvero, il valore SCRIPTTEXT_ISEXPRESSION non è impostato).|  
 |`pexcepinfo`|out Indirizzo di una struttura che riceve informazioni sull'eccezione. Questa struttura viene compilata se `IActiveScriptParse::ParseScriptText` restituisce DISP_E_EXCEPTION.|  
   
 ## <a name="return-value"></a>Valore restituito  
@@ -72,19 +72,19 @@ HRESULT ParseScriptText(
 |Valore restituito|Significato|  
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
-|`DISP_E_EXCEPTION`|Si è verificata un'eccezione durante l'elaborazione di scriptlet. Il parametro `pexcepinfo` contiene informazioni sull'eccezione.|  
-|`E_INVALIDARG`|Argomento non valido.|  
+|`DISP_E_EXCEPTION`|Si è verificata un'eccezione durante l'elaborazione di scriptlet. Il `pexcepinfo` parametro contiene informazioni sull'eccezione.|  
+|`E_INVALIDARG`|Un argomento non è valido.|  
 |`E_POINTER`|È stato specificato un puntatore non valido.|  
 |`E_NOTIMPL`|Questo metodo non è supportato. Il motore di scripting non supporta la valutazione in fase di esecuzione di espressioni o istruzioni.|  
-|`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting è nello stato non inizializzato o chiuso oppure è stato impostato il flag SCRIPTTEXT_ISEXPRESSION e il motore di scripting è nello stato inizializzato).|  
+|`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting è nello stato non inizializzato o chiuso oppure è stato impostato il flag di SCRIPTTEXT_ISEXPRESSION e il motore di scripting è nello stato inizializzato).|  
 |`OLESCRIPT_E_SYNTAX`|Si è verificato un errore di sintassi non specificato in scriptlet.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Se il motore di scripting è nello stato inizializzato, nessun codice verrà effettivamente valutato durante la chiamata. Questo codice viene invece accodato ed eseguito quando il motore di scripting viene passato allo stato Started (o through). Poiché l'esecuzione non è consentita nello stato Initialized, è un errore chiamare questo metodo con il flag SCRIPTTEXT_ISEXPRESSION quando si trova nello stato Initialized.  
   
- Scriptlet può essere un'espressione, un elenco di istruzioni o qualsiasi elemento consentito dal linguaggio di script. Questo metodo, ad esempio, viene usato nella valutazione del tag HTML \<SCRIPT >, che consente l'esecuzione delle istruzioni durante la costruzione della pagina HTML, anziché semplicemente compilarle nello stato dello script.  
+ Scriptlet può essere un'espressione, un elenco di istruzioni o qualsiasi elemento consentito dal linguaggio di script. Questo metodo, ad esempio, viene usato nella valutazione del tag HTML \<SCRIPT> , che consente l'esecuzione delle istruzioni durante la costruzione della pagina HTML, anziché semplicemente compilarle nello stato dello script.  
   
- Il codice passato a questo metodo deve essere una parte di codice valida e completa. In VBScript, ad esempio, non è consentito chiamare questo metodo una volta con Sub Function (x) e quindi una seconda volta con `End Sub`. Il parser non deve attendere la seconda chiamata per completare la subroutine, bensì deve generare un errore di analisi perché una dichiarazione di subroutine è stata avviata ma non completata.  
+ Il codice passato a questo metodo deve essere una parte di codice valida e completa. In VBScript, ad esempio, non è consentito chiamare questo metodo una volta con Sub Function (x) e quindi una seconda volta con `End Sub` . Il parser non deve attendere la seconda chiamata per completare la subroutine, bensì deve generare un errore di analisi perché una dichiarazione di subroutine è stata avviata ma non completata.  
   
  Per ulteriori informazioni sugli stati degli script, vedere la sezione Stati del motore di script dei [motori di script Windows](../../winscript/windows-script-engines.md).  
   
