@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1f182351cbb0351256ebe32b4ab70543022ed92c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275261"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114245"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio
 
@@ -64,7 +64,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
 
 ## <a name="using---wait"></a>Uso di -- wait
 
-* Usare in file batch o script per attendere che il completamento del programma di installazione di Visual Studio prima che venga eseguito il comando successivo. Per i file `%ERRORLEVEL%` batch, una variabile di ambiente conterrà il valore restituito del comando, come documentato nella pagina Utilizzare i parametri della riga di [comando per installare Visual Studio.](use-command-line-parameters-to-install-visual-studio.md) Alcune utilità di comando richiedono parametri aggiuntivi per attendere il completamento e ottenere il valore restituito del programma di installazione. Di seguito è riportato un esempio dei parametri aggiuntivi usati con il comando script di PowerShell 'Start-Process':
+* Usare in file batch o script per attendere che il completamento del programma di installazione di Visual Studio prima che venga eseguito il comando successivo. Per i file batch, una `%ERRORLEVEL%` variabile di ambiente conterrà il valore restituito del comando, come documentato nella pagina [usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md) . Alcune utilità di comando richiedono parametri aggiuntivi per attendere il completamento e ottenere il valore restituito del programma di installazione. Di seguito è riportato un esempio dei parametri aggiuntivi usati con il comando script di PowerShell 'Start-Process':
 
    ```cmd
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
@@ -72,10 +72,11 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
    ```
 
    ```powershell
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   $process = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   Write-Output $process.ExitCode 
    ```
 
-   o
+   oppure
 
    ```powershell
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
@@ -223,7 +224,7 @@ Questo parametro della riga di comando è una **novità della versione 15.9**. P
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Guida per gli amministratori di Visual Studio](visual-studio-administrator-guide.md)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Creare un'installazione offline di Visual StudioCreate an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Creare un'installazione offline di Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

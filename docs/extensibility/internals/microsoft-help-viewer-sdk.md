@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f79ead04e1c8a77ba605d4463bf8b2009f7ce71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536188"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114258"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -445,7 +445,7 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 
 **Branding.xml**
 
-| | |
+| Funzionalità | Descrizione |
 | - | - |
 | Funzionalità: | **CollapsibleArea** |
 | Usare: | Espandi Comprimi testo controllo contenuto |
@@ -459,7 +459,7 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 | ViewColorizedText | Visualizza colori |
 | CombinedVBTabDisplayLanguage | Visual Basic (esempio) |
 | VBDeclaration | Dichiarazione |
-| VBUsage | Utilizzo |
+| VBUsage | Uso |
 | Funzionalità: | **Feedback, piè di pagina e logo** |
 | Usare: | Fornire un controllo feedback per il cliente per fornire commenti e suggerimenti sull'argomento corrente tramite posta elettronica.  Testo del copyright per il contenuto.  Definizione del logo. |
 | **Elemento** | **Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).** |
@@ -563,7 +563,7 @@ Il file di branding.js contiene JavaScript usato dagli elementi di personalizzaz
 
 Il pacchetto di personalizzazione contiene un set di file HTM che supportano scenari per la comunicazione di informazioni chiave per aiutare gli utenti del contenuto, ad esempio una Home page che contiene una sezione che descrive i set di contenuto installati e le pagine che indicano all'utente quando gli argomenti non sono disponibili nel set di argomenti locale. Questi file HTM possono essere modificati per ogni prodotto.  I fornitori di Shell ISO possono utilizzare il pacchetto di personalizzazione predefinito e modificare il comportamento e il contenuto di queste pagine in base alle esigenze.  Questi file fanno riferimento al rispettivo pacchetto di personalizzazione affinché i tag di personalizzazione ottengano il contenuto corrispondente dal file di branding.xml.
 
-|**File**|**Usare**|**Origine contenuto visualizzata**|
+|**File**|**Uso**|**Origine contenuto visualizzata**|
 |-|-|-|
 |homepage.htm|Si tratta di una pagina che Visualizza il contenuto attualmente installato e qualsiasi altro messaggio appropriato da presentare all'utente sul contenuto.  Questo file contiene l'attributo meta data aggiuntivo "Microsoft.Help.Id" Content = "-1" che inserisce il contenuto nella parte superiore del sommario del contenuto locale.||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, Tag\<HomePageTitle>|
@@ -597,7 +597,7 @@ I file CSS di personalizzazione includono le definizioni per la presentazione de
 
 Il contenuto di Visual Studio Visualizza un logo di Visual Studio e altri elementi grafici.  Di seguito è riportato l'elenco completo dei file grafici nel pacchetto di personalizzazione del Visualizzatore della Guida di Visual Studio.
 
-|**File**|**Usare**|**esempi**|
+|**File**|**Uso**|**esempi**|
 |-|-|-|
 |clear.gif|Usato per eseguire il rendering dell'area comprimibile||
 |footer_slice.gif|Presentazione del piè di pagina||
@@ -688,7 +688,7 @@ Per ottenere il pacchetto di personalizzazione di Visual Studio, copiare il file
 </html>
 ```
 
-**Riepilogo**
+**Summary**
 
 L'uso ed estensione dei passaggi precedenti consentirà a VSPs di distribuire i set di contenuto per il Visualizzatore della Guida di Visual Studio.
 

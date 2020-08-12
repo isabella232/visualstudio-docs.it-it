@@ -286,18 +286,19 @@ f1_keywords:
 - CA2247
 - CA5122
 - CA5374
+- IL3000
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b216252ca33495a065c1dbcc6e091a2e5244de78
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: aca6889b46b58828db59be634275e99d6721ee49
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235095"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114149"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
@@ -603,3 +604,4 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | Ca5400 | [Ca5400 assicurarsi che la verifica dell'elenco di revoche di certificati HttpClient non sia disabilitata](../code-quality/ca5400.md) | Un certificato revocato non è più attendibile. Potrebbe essere utilizzato da utenti malintenzionati che passano alcuni dati dannosi o rubando dati sensibili nella comunicazione HTTPS. |
 | CA5401 | [CA5401 non USA al CreateDecryptor con IV non predefinito](../code-quality/ca5401.md) | La crittografia simmetrica deve sempre usare un vettore di inizializzazione non ripetibile per impedire gli attacchi con dizionario. |
 | CA5402 | [CA5402 usare al CreateDecryptor con il valore di inizializzazione predefinito](../code-quality/ca5402.md) | La crittografia simmetrica deve sempre usare un vettore di inizializzazione non ripetibile per impedire gli attacchi con dizionario. |
+| IL3000 | [IL3000 evitare di utilizzare l'accesso al percorso del file di assembly durante la pubblicazione come file singolo](../code-quality/il3000.md) | Evitare di utilizzare l'accesso al percorso del file di assembly durante la pubblicazione come file singolo |

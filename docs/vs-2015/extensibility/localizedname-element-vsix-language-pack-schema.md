@@ -8,17 +8,17 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 64d8430dbcf563ca232d1b8d850678925770219f
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77477029"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114178"
 ---
-# <a name="localizedname-element-vsix-language-pack-schema"></a>Elemento LOCALIZZATOR (schema del Language Pack VSIX)
+# <a name="localizedname-element-vsix-language-pack-schema"></a>Elemento LocalizedName (schema del Language Pack VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Obbligatoria. Nome localizzato dell'estensione da installare.  
+Obbligatorio. Nome localizzato dell'estensione da installare.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -27,39 +27,65 @@ Obbligatoria. Nome localizzato dell'estensione da installare.
 ```  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.  
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|None||  
+|nessuno||  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|None||  
+|nessuno||  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obbligatoria. Fornisce l'elemento radice per un Language Pack VSIX.|  
+|[Elemento LanguagePack VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obbligatorio. Fornisce l'elemento radice per un Language Pack VSIX.|  
   
 ## <a name="text-value"></a>Valore di testo  
- Obbligatoria. Nome del Language Pack nella lingua di destinazione.  
+ Obbligatorio. Nome del Language Pack nella lingua di destinazione.  
   
 ## <a name="element-information"></a>Informazioni sull'elemento  
-  
-|                 |                                                           |
-|-----------------|-----------------------------------------------------------|
-|    Spazio dei nomi    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
-|   Nome schema   |                 Schema del Language Pack VSIX                 |
-| File di convalida |                VSIXLanguagePackSchema.xsd                 |
-|  Può essere vuoto   |                      Non applicabile                       |
+
+:::row:::
+    :::column:::
+        Spazio dei nomi
+    :::column-end:::
+    :::column:::
+        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Schema Name
+    :::column-end:::
+    :::column:::
+        Schema del Language Pack VSIX
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        File di convalida
+    :::column-end:::
+    :::column:::
+        VSIXLanguagePackSchema. xsd
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Può essere vuoto
+    :::column-end:::
+    :::column:::
+        Non applicabile
+    :::column-end:::
+:::row-end:::
   
 ## <a name="see-also"></a>Vedere anche  
- Informazioni di [riferimento sullo schema del Language Pack VSX](../extensibility/vsx-language-pack-schema-reference.md)   
- [Localizzazione dei pacchetti VSIX](../extensibility/localizing-vsix-packages.md)   
+ [Informazioni di riferimento sullo schema del Language Pack VSX](../extensibility/vsx-language-pack-schema-reference.md)   
+ [Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)   
  [Riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110))

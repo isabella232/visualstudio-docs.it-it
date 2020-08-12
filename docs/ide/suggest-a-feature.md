@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe6992bd48cfe28dfe3df20f5540aca76390bf1
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
+ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81276488"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88114211"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Suggerire una funzionalità per Visual Studio
 
-È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://developercommunity.visualstudio.com), consente di suggerire nuove funzionalità. Questo è un nuovo modo in cui puoi essere autorizzato a interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
+È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://developercommunity.visualstudio.com), consente di suggerire nuove funzionalità. Si tratta di un modo nuovo per poter interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
 
 ![Pulsante Suggest a Feature (Suggerisci funzionalità) in Developer Community](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -35,7 +35,7 @@ Il sito User Voice è stato reso di sola lettura. È possibile vedere i post esi
 
 È stata eseguita la migrazione di un set iniziale di idee dal forum User Voice a Developer Community. La migrazione è stata eseguita in base all'impatto sulla community dei commenti e suggerimenti e delle priorità della roadmap dei prodotti. Chi si aspettava di trovare un suggerimento che non è stato incluso, può aggiungerlo liberamente in Developer Community.
 
-## <a name="votes"></a>Votes
+## <a name="votes"></a>Voti
 
 Il sistema di voto di Developer Community è diverso da quello di User Voice. Per mantenere l'integrità dei conteggi di voti di Developer Community e per evitare che i dati vengano falsati, i conteggi di voti di User Voice vengono visualizzati prevalentemente come tag accanto a ogni suggerimento di funzionalità. Passando a votare i suggerimenti nel sito Developer Community migliorato, i nuovi conteggi di voti verranno visualizzati separatamente dai conteggi di voti di User Voice.
 
@@ -83,9 +83,16 @@ Un suggerimento di funzionalità contrassegnato come **Servono altre info** indi
 
 ![Stato Chiuso - Informazioni insufficienti per i suggerimenti in Developer Community](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-**Chiuso - Informazioni insufficiente** indica che dopo diversi tentativi, non abbiamo ricevuto informazioni sufficienti per comprendere completamente il suggerimento. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
+**Chiuso: le informazioni non sono sufficienti** indica che dopo diversi tentativi non sono state ricevute informazioni sufficienti per comprendere completamente il suggerimento per le funzionalità. È necessario chiudere il suggerimento della nuova funzionalità perché non è possibile intraprendere altre azioni in questa fase.
 
 Se vengono trovate le informazioni aggiuntive necessarie, è possibile richiedere di riattivare il ticket una volta ottenute.
+
+- - -
+
+![Stato chiuso di ambito per suggerimenti sulla community degli sviluppatori](../ide/media/SuggestStates/closed-out-of-scope.png)
+
+**Chiuso all'esterno dell'ambito** Se un suggerimento non corrisponde alla direzione generale del prodotto, verrà chiuso come *fuori ambito*. Potrebbero ad esempio essere presenti investimenti simili in altri membri della famiglia di prodotti Visual Studio. In alternativa, la funzionalità suggerita potrebbe essere rilevante solo per alcune persone, rendendo un'estensione più adatta per fornirla.
+
 
 - - -
 
@@ -103,7 +110,7 @@ Se vengono trovate le informazioni aggiuntive necessarie, è possibile richieder
 
 ## <a name="faq"></a>Domande frequenti
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Perché non riesco a vedere la mia idea di User Voice nella community degli sviluppatori?
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Perché non è possibile vedere la mia idea vocale utente nella community degli sviluppatori?
 
 È stata eseguita la migrazione dei nuovi suggerimenti di funzionalità dal forum User Voice a Developer Community in base all'impatto per la più ampia community e alle priorità della roadmap dei prodotti. Se si nota che non è stata eseguita la migrazione di un suggerimento specifico, è possibile aggiungerlo come nuovo suggerimento in Developer Community.
 
