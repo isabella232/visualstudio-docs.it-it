@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eff6ef8f5415ecd4dc1c6dcce5046c976ce0e7c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114258"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168736"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -445,16 +445,16 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 
 **Branding.xml**
 
-| Funzionalità | Descrizione |
+| Elemento | Descrizione |
 | - | - |
 | Funzionalità: | **CollapsibleArea** |
 | Usare: | Espandi Comprimi testo controllo contenuto |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | ExpandText | Espandere |
 | CollapseText | Comprimi |
 | Funzionalità: | **CodeSnippet** |
 | Usare: | Testo del controllo frammento di codice.  Nota: il contenuto dei frammenti di codice con spazio "senza interruzioni" verrà modificato in spazio. |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | CopyToClipboard | Copia negli Appunti |
 | ViewColorizedText | Visualizza colori |
 | CombinedVBTabDisplayLanguage | Visual Basic (esempio) |
@@ -462,7 +462,7 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 | VBUsage | Uso |
 | Funzionalità: | **Feedback, piè di pagina e logo** |
 | Usare: | Fornire un controllo feedback per il cliente per fornire commenti e suggerimenti sull'argomento corrente tramite posta elettronica.  Testo del copyright per il contenuto.  Definizione del logo. |
-| **Elemento** | **Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).** |
+| **elemento** | **Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).** |
 | CopyRight | © 2013 Microsoft Corporation. Tutti i diritti sono riservati. |
 | SendFeedback | \<a href="{0}" {1}>Inviare commenti \</a> e suggerimenti su questo argomento a Microsoft. |
 | FeedbackLink | |
@@ -471,7 +471,7 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 | LogoFileNameHC | vs_logo_wh.gif |
 | Funzionalità: | **Dichiarazione di non responsabilità** |
 | Usare: | Set di dichiarazioni di non responsabilità specifiche del caso per il contenuto tradotto dal computer. |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | MT_Editable | Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento. |
 | MT_NonEditable | Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento. |
 | MT_QualityEditable | Questo articolo è stato tradotto manualmente. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento. |
@@ -480,14 +480,14 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 | MT_BetaRecycledContents | Questo articolo è stato tradotto manualmente per una versione preliminare. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento. |
 | Funzionalità: | **LinkTable** |
 | Usare: | Supporto per i collegamenti agli argomenti online |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | LinkTableTitle | Tabella di collegamento |
 | TopicEnuLinkText | Visualizzare la versione in lingua inglese \</a> di questo argomento disponibile nel computer. |
 | TopicOnlineLinkText | Visualizza questo argomento \<a href="{0}" {1}> online\</a> |
 | OnlineText | Online |
 | Funzionalità: | **Controllo audio video** |
 | Usare: | Visualizzazione di elementi e testo per il contenuto video |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | MultiMediaNotSupported | Per supportare il contenuto, è necessario che sia installato Internet Explorer 9 o versione successiva {0} . |
 | VideoText | visualizzazione di video |
 | AudioText | streaming audio |
@@ -495,25 +495,25 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 | OnlineAudioLinkText | \<p>Per ascoltare l'audio associato a questo argomento, fare clic {0} \<a href="{1}"> {2} qui \</a> .\</p> |
 | Funzionalità: | **Controllo contenuto non installato** |
 | Usare: | Elementi di testo (stringhe) usati per il rendering di contentnotinstalled.htm |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | ContentNotInstalledTitle | Nessun contenuto trovato nel computer. |
 | ContentNotInstalledDownloadContentText | \<p>Per scaricare il contenuto nel computer, \<a href="{0}" {1}> fare clic sulla scheda Gestisci \</a> .\</p> |
 | ContentNotInstalledText | \<p>Nessun contenuto installato nel computer. Vedere l'amministratore per l'installazione del contenuto della guida locale.\</p> |
 | Funzionalità: | **Controllo argomento non trovato** |
 | Usare: | Elementi di testo (stringhe) usati per il rendering di topicnotfound.htm |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | TopicNotFoundTitle | Impossibile trovare l'argomento richiesto nel computer. |
 | TopicNotFoundViewOnlineText | \<p>L'argomento richiesto non è stato trovato nel computer, ma è possibile \<a href="{0}" {1}> visualizzare l'argomento online \</a> .\</p> |
 | TopicNotFoundDownloadContentText | \<p>Vedere il riquadro di spostamento per i collegamenti ad argomenti simili oppure \<a href="{0}" {1}> fare clic sulla scheda Gestisci per \</a> scaricare il contenuto nel computer.\</p> |
 | TopicNotFoundText | \<p>L'argomento richiesto non è stato trovato nel computer.\</p> |
 | Funzionalità: | **Controllo dell'argomento danneggiato** |
 | Usare: | Elementi di testo (stringhe) usati per il rendering di topiccorrupted.htm |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | TopicCorruptedTitle | Impossibile visualizzare l'argomento richiesto. |
 | TopicCorruptedViewOnlineText | \<p>Help Viewer non è in grado di visualizzare l'argomento richiesto. Potrebbe essersi verificato un errore nel contenuto dell'argomento o in una dipendenza di sistema sottostante.\</p> |
 | Funzionalità: | **Controllo Home page** |
 | Usare: | Testo che supporta la visualizzazione del contenuto del nodo di primo livello del Visualizzatore della guida. |
-| **Elemento** | **Valore** |
+| **elemento** | **Valore** |
 | HomePageTitle | Pagina iniziale del Visualizzatore della Guida |
 | HomePageIntroduction | \<p>Benvenuti all'Microsoft Help Viewer, un'origine essenziale di informazioni per tutti gli utenti che utilizzano strumenti, prodotti, tecnologie e servizi Microsoft. Help Viewer consente di accedere alle informazioni di riferimento, al codice di esempio, agli articoli tecnici e altro ancora. Per trovare il contenuto necessario, esplorare il sommario, utilizzare la ricerca full-text o spostarsi nel contenuto utilizzando la parola chiave index.\</p> |
 | HomePageContentInstallText | \<p>\<br />Usare la \<a href="{0}" {1}> scheda Gestisci contenuto \</a> per eseguire le operazioni seguenti: \<ul> \<li> aggiungere contenuto al computer. \</li> \<li> Verificare la disponibilità di aggiornamenti per il contenuto locale. \</li> \<li> Rimuovere il contenuto dal computer.\</li>\</ul>\</p> |

@@ -13,12 +13,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeca594849625b548857a23b9d5c8e278dcdf07c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579287"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168723"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Passaggio 7: Mantenere le coppie visibili
 Il gioco funziona finché il giocatore sceglierà coppie di icone che non corrispondono. Si consideri però cosa dovrebbe accadere quando il giocatore sceglie una coppia esatta. Anziché far scomparire le icone attivando il timer, tramite il metodo <xref:System.Windows.Forms.Timer.Start>, il gioco deve reimpostarsi in modo da non tenere più traccia delle etichette tramite le variabili di riferimento `firstClicked` e `secondClicked`, senza reimpostare i colori delle due etichette scelte.
@@ -30,12 +30,12 @@ Il gioco funziona finché il giocatore sceglierà coppie di icone che non corris
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
 
-       > [!IMPORTANT]
-       > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     > [!IMPORTANT]
+     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il frammento di codice C# o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-     La prima riga dell'istruzione `if` appena aggiunta controlla se l'icona nella prima etichetta scelta dal giocatore è uguale all'icona nella seconda etichetta. Se le icone sono identiche, il programma esegue le tre istruzioni racchiuse tra parentesi graffe in C# o le tre istruzioni all'interno dell'istruzione `if` in Visual Basic. Le prime due istruzioni reimpostano le variabili di riferimento `firstClicked` e `secondClicked` in modo che non tengano più traccia delle etichette. È possibile riconoscere queste due istruzioni dal <xref:System.Windows.Forms.Timer.Tick> gestore eventi del timer. La terza istruzione `return` è un'istruzione, che indica al programma di ignorare il resto delle istruzioni nel metodo senza eseguirle.
+     La prima riga dell'istruzione `if` appena aggiunta controlla se l'icona nella prima etichetta scelta dal giocatore è uguale all'icona nella seconda etichetta. Se le icone sono identiche, il programma esegue le tre istruzioni racchiuse tra parentesi graffe in C# o le tre istruzioni all'interno dell'istruzione `if` in Visual Basic. Le prime due istruzioni reimpostano le variabili di riferimento `firstClicked` e `secondClicked` in modo che non tengano più traccia delle etichette. È possibile riconoscere le due istruzioni dal gestore eventi del timer <xref:System.Windows.Forms.Timer.Tick> . La terza istruzione è un' `return` istruzione, che indica al programma di ignorare le altre istruzioni nel metodo senza eseguirle.
 
-     Se si esegue la programmazione in C, è possibile che`=`si sia notato che parte`==`del codice utilizza un segno di uguale singolo ( ), mentre altre istruzioni utilizzano due segni di uguale ( ). Considerare il perché venga utilizzato in alcune occasioni `=`, in altre `==`.
+     Se si usa la programmazione in C#, è possibile notare che parte del codice usa un solo segno di uguale ( `=` ), mentre altre istruzioni utilizzano due segni di uguale ( `==` ). Considerare il perché venga utilizzato in alcune occasioni `=`, in altre `==`.
 
      Questo è un ottimo esempio per comprendere la differenza. Esaminare attentamente il codice tra parentesi nell'istruzione `if`.
 
@@ -57,15 +57,15 @@ Il gioco funziona finché il giocatore sceglierà coppie di icone che non corris
     firstClicked = null;
     ```
 
-     La prima delle due istruzioni controlla se due icone sono uguali. Poiché vengono confrontati due valori, `==` il programma C 'NET utilizza l'operatore di uguaglianza. La seconda istruzione in realtà modifica il valore, detto *assegnazione*, impostando la variabile di riferimento `firstClicked` su `null` per reimpostarla. Per questo viene utilizzato l'operatore di assegnazione `=`. Per impostare i valori `==` e confrontarli, viene utilizzato `=` in C. Visual Basic utilizza `=` sia per l'assegnazione che per il confronto delle variabili.
+     La prima delle due istruzioni controlla se due icone sono uguali. Poiché vengono confrontati due valori, il programma C# usa l' `==` operatore di uguaglianza. La seconda istruzione in realtà modifica il valore, detto *assegnazione*, impostando la variabile di riferimento `firstClicked` su `null` per reimpostarla. Per questo viene utilizzato l'operatore di assegnazione `=`. C# usa `=` per impostare i valori e `==` per confrontarli. Visual Basic utilizza `=` sia per l'assegnazione che per il confronto delle variabili.
 
-2. Salvare ed eseguire il programma, quindi iniziare a scegliere icone nel form. Se si sceglie una coppia che non corrisponde, l'evento Tick del timer si attiva ed entrambe le icone scompaiono. Se si sceglie una coppia `if` corrispondente, viene eseguita la nuova istruzione e l'istruzione return fa sì che il metodo salti il codice che avvia il timer, in modo che le icone rimangano visibili, come illustrato nell'immagine seguente.
+2. Salvare ed eseguire il programma, quindi iniziare a scegliere icone nel form. Se si sceglie una coppia che non corrisponde, l'evento Tick del timer si attiva ed entrambe le icone scompaiono. Se si sceglie una coppia corrispondente, la nuova `if` istruzione viene eseguita e l'istruzione return fa sì che il metodo ignori il codice che avvia il timer, in modo che le icone restino visibili, come illustrato nella figura seguente.
 
      ![Gioco creato in questa esercitazione](../ide/media/express_finishedgame.png)<br/>
-***Gioco di abbinamento*** con coppie di *icone visibili*
+***Gioco di abbinamenti*** *con coppie di icone visibili*
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)**.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 8: aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)**.
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: Aggiungere un timer](../ide/step-6-add-a-timer.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 6: aggiungere un timer](../ide/step-6-add-a-timer.md).

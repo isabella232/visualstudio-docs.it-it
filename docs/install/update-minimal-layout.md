@@ -1,5 +1,5 @@
 ---
-title: Aggiornare Visual Studio usando un layout minimo offline
+title: Aggiornare Visual Studio usando un layout offline minimo
 description: Informazioni su come aggiornare Visual Studio usando un layout minimo offline.
 ms.date: 07/21/2020
 ms.custom: seodec18
@@ -12,14 +12,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 849cad46463ffb52e2f4f2a930f05daf66f7d737
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
+ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869888"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88168749"
 ---
-# <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aggiornare Visual Studio usando un layout minimo offline
+# <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aggiornare Visual Studio usando un layout offline minimo
 
 Per i computer che non sono connessi a Internet, la creazione di un layout minimo è il modo più semplice e rapido per aggiornare le istanze di Visual Studio offline.
 
@@ -53,15 +53,16 @@ Questo strumento Crea layout di aggiornamento per Visual Studio 2017 (15,9) e ve
 
 ```MinimalLayout.exe [command] <options>...```
 
-#### <a name="commands"></a>Comandi
+#### <a name="commands"></a>Comandi:
 * **Anteprima**: usare questo comando per visualizzare in anteprima il numero di pacchetti che verrà scaricato e lo spazio totale usato per creare questo layout. 
 * **Genera**: usare questo comando per generare il layout minimo per l'aggiornamento di Visual Studio.
-* **Rigenera**: usare questo comando per rigenerare un layout usando un file di risposta layout minimo esistente. Ogni layout minimo produce un `MinimalLayout.json` file di risposta che contiene i parametri di input del layout minimo originali. Per rigenerare il layout minimo, è possibile usare il comando **Rigenera** e un `MinimalLayout.json` file di risposta. Questa opzione è utile se si vuole creare un layout minimo per un nuovo aggiornamento di Visual Studio in base al file di risposta del layout minimo precedente. 
-   - Per questo comando `MinimalLayout.json` è necessario un percorso di file da un layout già generato. 
+* **Rigenera**: usare questo comando per rigenerare un layout usando un file di risposta layout minimo esistente. Ogni layout minimo produce un `MinimalLayout.json` file di risposta che contiene i parametri di input del layout minimo originali. Per rigenerare il layout minimo, è possibile usare il comando **Rigenera** e un `MinimalLayout.json` file di risposta. Questa opzione è utile se si vuole creare un layout minimo per un nuovo aggiornamento di Visual Studio in base al file di risposta del layout minimo precedente.
 
-        ```cmd
-        MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-        ```
+   Per questo comando `MinimalLayout.json` è necessario un percorso di file da un layout già generato. 
+
+    ```cmd
+    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+    ```
 
 * **Verify**: usare questo comando per determinare se la cartella di layout è danneggiata.
 * **Correzione**: usare questo comando per correggere una cartella di layout danneggiata, inclusa la sostituzione di eventuali pacchetti mancanti dalla cartella di layout.
@@ -70,11 +71,11 @@ Questo strumento Crea layout di aggiornamento per Visual Studio 2017 (15,9) e ve
 
 |Opzioni    |Descrizione    |Obbligatorio/facoltativo |Esempio |
 |:----------|:-----------|:------------|:--------------|
-|--targetLocation &lt; dir&gt; |Specifica una directory in cui creare un layout minimo offline.       |Necessario        |--targetLocation c:\VSLayout\ |
-|--baseVersion &lt; versione&gt;|Il layout minimo offline verrà generato a partire da questa versione.   |Necessario|--baseVersion 16.4.0 |
-|--targetVersion &lt; versione&gt;|Il layout minimo offline verrà generato fino a questa versione.|Necessario|--targetVersion 16.4.4|
-|--lingue    |Specifica le lingue da includere nel layout minimo offline. È possibile specificare più valori, separati da spazi.    |Necessario    |--lingue en-US fr-FR |
-|-- &lt; ID ProductID&gt;    |ID del prodotto da cui verrà generato il layout minimo offline. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Necessario|--productId Microsoft. VisualStudio. Product. Enterprise |
+|--targetLocation &lt; dir&gt; |Specifica una directory in cui creare un layout minimo offline.       |Obbligatorio        |--targetLocation c:\VSLayout\ |
+|--baseVersion &lt; versione&gt;|Il layout minimo offline verrà generato a partire da questa versione.   |Obbligatorio|--baseVersion 16.4.0 |
+|--targetVersion &lt; versione&gt;|Il layout minimo offline verrà generato fino a questa versione.|Obbligatorio|--targetVersion 16.4.4|
+|--lingue    |Specifica le lingue da includere nel layout minimo offline. È possibile specificare più valori, separati da spazi.    |Obbligatorio    |--lingue en-US fr-FR |
+|-- &lt; ID ProductID&gt;    |ID del prodotto da cui verrà generato il layout minimo offline. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|Obbligatorio|--productId Microsoft. VisualStudio. Product. Enterprise |
 |--FilePath    |Percorso del file MinimalLayout.jssu file da un layout già creato. Questa opzione viene usata solo con il comando Regenerate.     |Obbligatorio per il comando Regenerate    |--FilePath C:\VSLayout\minimalLayout.json <br><br> **Si noti che il comando Regenerate accetta solo--FilePath come opzione.** |
 |--aggiungere &lt; uno o più ID di carico di lavoro o componente&gt;    |Specifica uno o più ID di carico di lavoro o componente da aggiungere. I componenti aggiuntivi possono essere aggiunti a livello globale usando--includeRecommended e/o <br> --includeOptional. È possibile specificare più carichi di lavoro o ID componente separati da uno spazio.    |Facoltativo    |--aggiungere Microsoft. VisualStudio. workload. ManagedDesktop Microsoft. VisualStudio. workload. NetWeb Component. GitHub. VisualStudio |
 |--includeRecommended    |include i componenti consigliati per tutti i carichi di lavoro installati, ma non i componenti facoltativi.    |Facoltativo    |Per un carico di lavoro specifico: <br> --aggiungere Microsoft. VisualStudio. workload. ManagedDesktop; includeRecommended <br><br> Per applicare a tutti i carichi di lavoro:--includeRecommended |
@@ -177,9 +178,9 @@ L'aggiornamento viene applicato a un'istanza di Visual Studio in due passaggi. P
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Installa Visual Studio](install-visual-studio.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
