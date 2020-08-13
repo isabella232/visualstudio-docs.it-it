@@ -983,3 +983,9 @@
                   href: ca2248.md
             - name: Sospensione funzionalità automatica
               href: automatic-feature-suspension.md
+            - name: Avvisi di pubblicazione
+              items:
+                - name: Panoramica
+                  displayName: publish warnings
+                - name: 'IL3000: Evitare l''accesso al percorso del file di assembly quando si esegue la pubblicazione come file singolo'
+                  href: il3000.md
