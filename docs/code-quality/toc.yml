@@ -567,6 +567,8 @@
                   href: ca1835.md
                 - name: 'CA1836: Preferire IsEmpty a Count quando disponibile'
                   href: ca1836.md
+                - name: 'CA1838: Evitare i parametri StringBuilder per i metodi P/Invoke'
+                  href: ca1838.md
             - name: Avvisi di portabilità
               items:
                 - name: Panoramica
