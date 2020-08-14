@@ -92,6 +92,10 @@
       href: data-visualizations.md
     - name: Debug dei pacchetti NuGet con il collegamento all'origine
       href: source-link.md
+- name: Test
+  items:
+    - name: Panoramica
+      href: testing.md
 - name: Compilazione e creazione di build
   items:
     - name: Panoramica
