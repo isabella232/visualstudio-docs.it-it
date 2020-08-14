@@ -1,18 +1,18 @@
 ---
 title: Suggerimenti per migliorare le prestazioni
-ms.date: 08/14/2018
+ms.date: 08/13/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f90faadeaf9e1f8965aea7850fa1a12bb43b183c
+ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303022"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88214590"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -33,17 +33,17 @@ Visual Studio riaprire automaticamente i documenti lasciati aperti nella session
 
 Tramite una barra gialla, Visual Studio indica se il ripristino automatico dei documenti sta rallentando considerevolmente il caricamento di una soluzione. È possibile disabilitare la riapertura automatica dei file seguendo questa procedura:
 
-1. Selezionare**Opzioni** **strumenti** > per aprire la finestra di dialogo **Opzioni.**
+1. Selezionare **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** .
 
-1. Nella pagina**Generale** **progetti e soluzioni** > deselezionare **Riapri documenti al caricamento**della soluzione .
+1. Nella pagina **progetti e soluzioni**  >  **generale** deselezionare **Riapri documenti al caricamento della soluzione**.
 
 Se si disabilita il ripristino automatico dei file, è possibile accedere velocemente ai file da aprire usando il comando [Vai a](../ide/go-to.md):
 
 - Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere ** CTRL**+**T**.
 
-- Passare all'ultima posizione di modifica in una soluzione utilizzando **Edit** > **Vai a** > **Ultima modifica**o premendo **CTRL**+**Maiusc**+**BACKspace**.
+- Passare all'ultimo percorso di modifica in una soluzione usando **modifica**  >  **Vai a**  >  **Vai a percorso Ultima modifica**o premendo **CTRL** + **MAIUSC**indietro + **Backspace**.
 
-- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **Edit** > **Modifica Vai a** > file**recente**o premere **CTRL**+**1**, **Ctrl**+**R**.
+- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **modifica**  >  **Vai a**  >  **Vai a file recente**oppure premere **CTRL** + **1**, **CTRL** + **R**.
 
 ## <a name="configure-debugging-options"></a>Configurare le opzioni di debug
 
@@ -59,9 +59,9 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     Per il debug nativo, il caricamento dei file di simboli (con estensione *pdb*) è dispendioso in termini di risorse di memoria. È possibile configurare le impostazioni dei simboli del debugger per risparmiare memoria. In genere, si configura la soluzione per caricare solo i moduli del proprio progetto.
 
-    Per specificare il **Tools** > caricamento dei simboli, scegliere**Strumenti Opzioni di** > **debug** > **simboli**.
+    Per specificare il caricamento dei simboli, scegliere **strumenti**  >  **Opzioni**  >  **debug**  >  **simboli**.
 
-    Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli Per aprire la finestra durante il debug, scegliere **Debug** > **moduli****di Windows** > .
+    Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli Per aprire la finestra durante il debug, scegliere **debug**  >  . **Windows**  >  **Moduli**.)
 
     Per altre informazioni, vedere [Understand symbol files](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019) (Informazioni sui file dei simboli).
 
@@ -117,11 +117,25 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
    ::: moniker-end
 
+- **Disabilitare la modalità mappa**
+
+    [**Modalità mappa**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) Visualizza le righe di codice, in miniatura, sulla barra di scorrimento. La modalità mappa è abilitata per impostazione predefinita.
+
+    Per disabilitare la modalità mappa, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **tutti i linguaggi**  >  **barre di scorrimento**e nella sezione **comportamento** deselezionare l'opzione **Usa modalità mappa per barra di scorrimento verticale** .
+
+- **Disabilitare il ritorno a capo automatico**
+
+    A [**capo automatico**](./reference/how-to-manage-word-wrap-in-the-editor.md) viene visualizzata la parte di una lunga riga di codice che si estende oltre la larghezza corrente della finestra dell'editor di codice. Il ritorno a capo automatico è on per impostazione predefinita.
+
+    Per disabilitare il ritorno a capo automatico per un progetto su cui si sta lavorando, vedere **modificare**  >  **Advanced**  >  **Word Wrap**. È possibile abilitare o disabilitare questa impostazione usando gli stessi comandi di menu.
+
+    Per disabilitare il ritorno a capo automatico per tutti i progetti, passare a **strumenti**  >  **Opzioni**  >  **generale**  >  **editor di testo**  >  **tutti i linguaggi**  >  **generale**e nella sezione **Impostazioni** deselezionare l'opzione a **capo automatico** .
+
 - **Disabilitare la finestra di progettazione XAML**
 
     La finestra di progettazione XAML è abilitata per impostazione predefinita, ma usa risorse solo se si apre un file con estensione *xaml*. Se si utilizzano file XAML ma non si intende usare la funzionalità della finestra di progettazione, disabilitare questa funzionalità per liberare memoria.
 
-    Per disabilitare la **finestra di progettazione XAML**, andare a **Strumenti** > **Opzioni** > **Finestra di progettazione XAML** > **Abilita finestra di progettazione XAML** e deselezionare l'opzione.
+    Per disabilitare finestra di progettazione XAML, passare a **strumenti**  >  **Opzioni**  >  **finestra di progettazione XAML**  >  **Abilita finestra di progettazione XAML**e deselezionare l'opzione.
 
 - **Rimuovere i carichi di lavoro**
 
@@ -131,7 +145,7 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
 CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se in presenza di una quantità elevata di garbage in attesa di raccolta si forza una Garbage Collection, si noterà una riduzione nel consumo di memoria da parte del processo *devenv.exe *in **Gestione attività**. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
 
-Per forzare un'operazione di Garbage Collection, utilizzare il tasto di scelta rapida: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Maiusc**+**F12** (premere due volte).
+Per forzare un Garbage Collection, usare il tasto di scelta rapida: **CTRL** + **ALT** + **MAIUSC** + **F12**, **CTRL** + **ALT** + **MAIUSC** + **F12** (premere due volte).
 
 Se l'imposizione della Garbage Collection risulta particolarmente efficiente nel proprio scenario, compilare un report tramite lo strumento per il feedback di Visual Studio poiché questo comportamento è in genere sintomo di un bug.
 
