@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per richiedere assistenza in caso di domande o problemi.
-ms.openlocfilehash: 1ee5b5091c9321a76117f7d7e1c232973f3c2dd5
-ms.sourcegitcommit: b8ce85a6d9c7fcceaad0fba625202f5ecf8f368c
+ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87434251"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247434"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
 Se la sottoscrizione di Visual Studio viene fornita dall'azienda o dall'istituto di istruzione di appartenenza, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni.  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
@@ -21,13 +21,13 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
 
 ## <a name="how-to-contact-your-admin"></a>Come contattare l'amministratore
 1. Accedere al portale dei sottoscrittori all'indirizzo <https://my.visualstudio.com>
-2. Fare clic sulla scheda **Sottoscrizioni**. 
-3. Fare clic sul pulsante **Contact my Admin** (Contatta amministratore) in alto a destra. 
+2. Selezionare la scheda **Sottoscrizioni** . 
+3. Selezionare il pulsante **Contatta l'amministratore** in alto a destra. 
    > [!div class="mx-imgBorder"]
-   > ![Contact my Admin (Contatta amministratore)](_img/contact-my-admin/contact-my-admin-button.png "Fare clic sul pulsante Contatta l'amministratore, immettere il messaggio e fare clic su Invia.")
+   > ![Contact my Admin (Contatta amministratore)](_img/contact-my-admin/contact-my-admin-button.png "Selezionare il pulsante Contatta l'amministratore, immettere il messaggio e selezionare Invia.")
 4. Immettere il messaggio per l'amministratore.
-5. Se si vuole ricevere una copia del messaggio inviato all'amministratore, fare clic sulla casella di controllo **Send me a copy** (Invia una copia). 
-6. Infine, fare clic su **Send** (Invia).
+5. Se si vuole ricevere una copia del messaggio inviato all'amministratore, scegliere la casella di controllo **Invia una copia** . 
+6. Infine, selezionare **Invia**.
 
 > [!NOTE]
 > **Amministratori con privilegi avanzati:**  Per impostare l'indirizzo di posta elettronica a cui vengono inviate le richieste "Contatta l'amministratore", specificare l'indirizzo nelle [Preferenze dell'accordo](admin-prefs.md#contact-email-address).

@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: 8824ff5f233f580d49fe91f79e6f3d348391ab68
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211611"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248344"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
@@ -63,17 +63,17 @@ Se sono state acquistate più sottoscrizioni, procedere al [portale di amministr
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Annullare il rinnovo delle sottoscrizioni cloud acquistate
 
 Per annullare le sottoscrizioni, è sufficiente impostare il numero di sottoscrizioni per il contratto su zero (0).  Per ridurre il numero di sottoscrizioni, attenersi alla procedura seguente:
-1. Accedi a<https://manage.visualstudio.com>
+1. Accedi a <https://manage.visualstudio.com>
 1. Se si dispone di più di un contratto, scegliere il contratto desiderato dall'elenco a discesa.
-1. Fare clic sull'icona **Panoramica** in alto a sinistra per visualizzare le informazioni sulle sottoscrizioni.  
+1. Selezionare l'icona **Panoramica** in alto a sinistra per visualizzare le informazioni sulle sottoscrizioni.  
 > [!div class="mx-imgBorder"]
-> ![Visualizza panoramica delle sottoscrizioni](_img/buy-vs-subscriptions/overview-button.png "Fare clic sul pulsante Panoramica per visualizzare i dettagli della sottoscrizione")
+> ![Visualizza panoramica delle sottoscrizioni](_img/buy-vs-subscriptions/overview-button.png "Selezionare il pulsante Panoramica per visualizzare i dettagli della sottoscrizione")
 
-4. Individuare la voce relativa alle sottoscrizioni che si desidera annullare, quindi fare clic su **modifica quantità**.
+4. Individuare la voce relativa alle sottoscrizioni che si desidera annullare e selezionare **modifica quantità**.
 1. Impostare la quantità su zero (0). Le sottoscrizioni rimarranno in vigore fino alla data di fatturazione pianificata, ma non vengono rinnovate al raggiungimento della data di fatturazione.   
 
 > [!div class="mx-imgBorder"]
-> ![Modifica sottoscrizioni](_img/buy-vs-subscriptions/manage-subscriptions.png "Fare clic su' modifica quantità' per annullare le sottoscrizioni")
+> ![Modifica sottoscrizioni](_img/buy-vs-subscriptions/manage-subscriptions.png "Selezionare ' modifica quantità' per annullare le sottoscrizioni")
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

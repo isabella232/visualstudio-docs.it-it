@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2e5718740b9219ee988859e530591305394fb239
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284308"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250513"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
@@ -32,15 +32,15 @@ Molti problemi potrebbero non avere alcuna firma o procedura distinta per la rip
 
 Di seguito sono descritti i problemi difficili da diagnosticare senza file di diagnostica validi. Dopo aver identificato il caso che meglio descrive il problema, seguire i passaggi di feedback specifici per questo caso.
 
--   [Arresti anomali:](#crashes) Si verifica un arresto anomalo quando il processo (Visual Studio) termina in modo imprevisto.
+- [Arresti anomali:](#crashes) Si verifica un arresto anomalo quando il processo (Visual Studio) termina in modo imprevisto.
 
--   Non [risposta:](#unresponsiveness) VS smette di rispondere per un lungo periodo di tempo.
+- Non [risposta:](#unresponsiveness) VS smette di rispondere per un lungo periodo di tempo.
 
--   [Problemi di lentezza:](#slowness-and-high-cpu-issues) Qualsiasi azione specifica in Visual Studio è più lenta di quella desiderata
+- [Problemi di lentezza:](#slowness-and-high-cpu-issues) Qualsiasi azione specifica in Visual Studio è più lenta di quella desiderata
 
--   [CPU elevata:](#slowness-and-high-cpu-issues) Periodi prolungati di utilizzo elevato della CPU inaspettatamente
+- [CPU elevata:](#slowness-and-high-cpu-issues) Periodi prolungati di utilizzo elevato della CPU inaspettatamente
 
--   [Problemi out-of-process:](#out-of-process-issues) Un problema causato da un processo satellite di Visual Studio
+- [Problemi out-of-process:](#out-of-process-issues) Un problema causato da un processo satellite di Visual Studio
 
 ## <a name="crashes"></a>Crashes
 Si verifica un arresto anomalo quando il processo (Visual Studio) termina in modo imprevisto.
@@ -57,14 +57,13 @@ Gli arresti anomali direttamente riproducibili sono casi con le seguenti caratte
 
 Per questi problemi, attenersi alla procedura descritta in "[come segnalare un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e assicurarsi di includere:
 
--   Passaggi per riprodurre il problema
+- Passaggi per riprodurre il problema
 
--   Un progetto di ripetizione autonomo, come descritto in precedenza. Se non è possibile eseguire la ripetizione autonoma, includere:
+- Un progetto di ripetizione autonomo, come descritto in precedenza. Se non è possibile eseguire la ripetizione autonoma, includere:
 
-    -   Lingua dei progetti aperti (C \# , C++ e così via)
+  - Lingua dei progetti aperti (C \# , C++ e così via)
 
-    -   Il tipo di progetto (applicazione console, ASP.NET e così via)
-
+  - Il tipo di progetto (applicazione console, ASP.NET e così via)
 
 > [!NOTE]
 > **Feedback più prezioso:** Per questo caso, il feedback più prezioso è la serie di passaggi per riprodurre il problema insieme al codice sorgente di esempio.
@@ -99,11 +98,11 @@ Ogni volta che si verifica un arresto anomalo di Visual Studio, viene creato un 
 
 Quindi, usare "segnala un problema" di Visual Studio. funzionalità. Consente di alleghiare il dump appropriato.
 
-1.  Individuare il file di dump per l'arresto anomalo che si sta segnalando (cercare un file con l'ora di creazione corretta)
+1. Individuare il file di dump per l'arresto anomalo che si sta segnalando (cercare un file con l'ora di creazione corretta)
 
-2.  Se possibile, comprimere il file ( \* zip) per ridurne le dimensioni prima di inviare commenti e suggerimenti
+2. Se possibile, comprimere il file ( \* zip) per ridurne le dimensioni prima di inviare commenti e suggerimenti
 
-3.  Attenersi alla procedura descritta in "[come segnalare un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e alleghi il dump dell'heap a un nuovo elemento di feedback.
+3. Attenersi alla procedura descritta in "[come segnalare un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e alleghi il dump dell'heap a un nuovo elemento di feedback.
 
 > [!NOTE] 
 > **Feedback più prezioso:** Per questo caso, il feedback più prezioso è il dump dell'heap acquisito al momento dell'arresto anomalo.
@@ -135,33 +134,33 @@ Se, ad esempio, la digitazione e la navigazione sono entrambe lente, attenersi a
 
 Per ottenere risultati ottimali nell'acquisizione delle prestazioni, attenersi alla procedura seguente:
 
-1.  Se non è già in esecuzione, è possibile aprire una copia di Visual Studio in cui riprodurre il problema
+1. Se non è già in esecuzione, è possibile aprire una copia di Visual Studio in cui riprodurre il problema
 
-    -   Configurare tutti gli elementi per riprodurre il problema. Ad esempio, se è necessario caricare un particolare progetto con un file specifico aperto, assicurarsi che entrambi i passaggi siano completi prima di procedere.
+    - Configurare tutti gli elementi per riprodurre il problema. Ad esempio, se è necessario caricare un particolare progetto con un file specifico aperto, assicurarsi che entrambi i passaggi siano completi prima di procedere.
 
-    -   Se *non* si segnala un problema specifico per il caricamento di una soluzione, provare ad attendere 5-10 minuti (o più, a seconda delle dimensioni della soluzione) dopo aver aperto la soluzione prima di registrare la traccia delle prestazioni. Il processo di caricamento della soluzione produce una grande quantità di dati, pertanto l'attesa di alcuni minuti ci consente di concentrarsi sul problema specifico che si sta segnalando.
+    - Se *non* si segnala un problema specifico per il caricamento di una soluzione, provare ad attendere 5-10 minuti (o più, a seconda delle dimensioni della soluzione) dopo aver aperto la soluzione prima di registrare la traccia delle prestazioni. Il processo di caricamento della soluzione produce una grande quantità di dati, pertanto l'attesa di alcuni minuti ci consente di concentrarsi sul problema specifico che si sta segnalando.
 
-2.  Avvia una seconda copia di Visual Studio *senza alcuna soluzione aperta*
+2. Avvia una seconda copia di Visual Studio *senza alcuna soluzione aperta*
 
-3.  Nella nuova copia di Visual Studio aprire lo strumento **segnala un problema**
+3. Nella nuova copia di Visual Studio aprire lo strumento **segnala un problema**
 
-4.  Seguire i passaggi descritti in [come segnalare un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) fino a raggiungere il passaggio "fornire una traccia e un dump di heap (facoltativo)".
+4. Seguire i passaggi descritti in [come segnalare un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) fino a raggiungere il passaggio "fornire una traccia e un dump di heap (facoltativo)".
 
-5.  Scegliere di registrare la prima copia di Visual Studio (un problema di prestazioni) e avviare la registrazione.
+5. Scegliere di registrare la prima copia di Visual Studio (un problema di prestazioni) e avviare la registrazione.
 
-    -   Viene visualizzata l'applicazione Steps Recorder e viene avviata la registrazione.
+    - Viene visualizzata l'applicazione Steps Recorder e viene avviata la registrazione.
 
-    -   **Durante la registrazione,** eseguire l'azione problematica nella prima copia di Visual Studio. È difficile correggere problemi di prestazioni specifici se non vengono visualizzati nell'intervallo di tempo registrato.
+    - **Durante la registrazione,** eseguire l'azione problematica nella prima copia di Visual Studio. È difficile correggere problemi di prestazioni specifici se non vengono visualizzati nell'intervallo di tempo registrato.
 
-    -   Se l'azione è inferiore a 30 secondi e può essere facilmente ripetuta, ripetere l'azione per illustrare ulteriormente il problema.
+    - Se l'azione è inferiore a 30 secondi e può essere facilmente ripetuta, ripetere l'azione per illustrare ulteriormente il problema.
 
-    -   Per la maggior parte dei casi, una traccia di 60 secondi è sufficiente per illustrare i problemi, soprattutto se l'azione problematica è durata (o è stata ripetuta) per più di 30 secondi. La durata può essere modificata in modo da acquisire il comportamento che si desidera correggere.
+    - Per la maggior parte dei casi, una traccia di 60 secondi è sufficiente per illustrare i problemi, soprattutto se l'azione problematica è durata (o è stata ripetuta) per più di 30 secondi. La durata può essere modificata in modo da acquisire il comportamento che si desidera correggere.
 
-6.  Fare clic su "Interrompi record" nella registrazione passaggi non appena viene completata l'operazione lenta o l'evento CPU elevato da segnalare. Potrebbero essere necessari alcuni minuti per elaborare la traccia delle prestazioni.
+6. Fare clic su "Interrompi record" nella registrazione passaggi non appena viene completata l'operazione lenta o l'evento CPU elevato da segnalare. Potrebbero essere necessari alcuni minuti per elaborare la traccia delle prestazioni.
 
-7.  Al termine, saranno presenti diversi allegati ai commenti. Alleghi eventuali file aggiuntivi che possono contribuire a riprodurre il problema (un progetto di esempio, schermate, video e così via).
+7. Al termine, saranno presenti diversi allegati ai commenti. Alleghi eventuali file aggiuntivi che possono contribuire a riprodurre il problema (un progetto di esempio, schermate, video e così via).
 
-8.  Inviare il feedback.
+8. Inviare il feedback.
 
 Durante la registrazione di una traccia delle prestazioni, se l'operazione lenta o la CPU elevata che si sta segnalando viene portata a termine, arrestare immediatamente la registrazione. Se viene raccolta una quantità eccessiva di informazioni, le informazioni meno recenti vengono sovrascritte. Se la traccia non viene interrotta a breve (entro pochi secondi) dopo l'operazione interessante, i dati di traccia utili vengono sovrascritti.
 
@@ -183,15 +182,15 @@ Sono disponibili numerosi processi satellite che vengono eseguiti in parallelo a
 
 Ciò che rende più praticabile questi tipi di problemi consiste nel fornire log aggiuntivi che possono essere raccolti attenendosi alla procedura seguente:
 
-1.  Se si tratta di un problema direttamente riproducibile, iniziare eliminando la cartella **% Temp%/servicehub/logs** . Se non è possibile riprodurre questo problema, mantenere intatta la cartella e ignorare i punti elenco seguenti:
+1. Se si tratta di un problema direttamente riproducibile, iniziare eliminando la cartella **% Temp%/servicehub/logs** . Se non è possibile riprodurre questo problema, mantenere intatta la cartella e ignorare i punti elenco seguenti:
 
-    -   Imposta la variabile di ambiente globale **ServiceHubTraceLevel** su **All**
-    -   Riprodurre il problema.
+    - Imposta la variabile di ambiente globale **ServiceHubTraceLevel** su **All**
+    - Riprodurre il problema.
 
-2.  Scaricare lo strumento di raccolta dei log Microsoft Visual Studio e .NET Framework [qui](https://www.microsoft.com/download/details.aspx?id=12493).
-3.  Eseguire lo strumento. Viene restituito un file zip a **% Temp%/vslogs.zip**. Alleghi il file ai tuoi commenti.
+2. Scaricare lo strumento di raccolta dei log Microsoft Visual Studio e .NET Framework [qui](https://www.microsoft.com/download/details.aspx?id=12493).
+3. Eseguire lo strumento. Viene restituito un file zip a **% Temp%/vslogs.zip**. Alleghi il file ai tuoi commenti.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Segnala un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)

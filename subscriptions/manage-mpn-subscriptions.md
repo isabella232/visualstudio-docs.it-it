@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 03/09/2020
 ms.topic: how-to
 description: Come assegnare le sottoscrizioni di Visual Studio agli utenti finali per i partner MPN.
-ms.openlocfilehash: fc35178a0d66a048a41ee04d27ae2993949972c8
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902864"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250721"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestire le sottoscrizioni di Visual Studio offerte tramite Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
@@ -29,7 +29,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 6. Selezionare **Privileges** (Privilegi)
 7. Selezionare **Sottoscrizioni di Visual Studio** (Nota: aggiornamento della sottoscrizione di Visual Studio in sospeso)
 8. Selezionare il **singolo** desiderato
-9. Fare clic su **Submit** (Invia)
+9. Selezionare **Invia**
 10. L'utente riceverà un messaggio di posta elettronica
 11. L'utente assegnato accederà [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per accedere
 12. Potrebbe essere visualizzata una pagina del profilo di Visual Studio che include:
@@ -43,7 +43,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 2. Selezionare **Privileges** (Privilegi)
 3. Selezionare **MSDN Subscriptions** (Abbonamenti MSDN). Si noti che questa opzione verrà presto ridenominata "Sottoscrizioni di Visual Studio".
 4. Individuare il **singolo** desiderato
-5. Fare clic su **Submit** (Invia)
+5. Selezionare **Invia**
 6. L'utente riceverà un messaggio di posta elettronica
 7. L'utente assegnato accederà [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per accedere
 8. Potrebbe essere visualizzata una pagina del profilo di Visual Studio

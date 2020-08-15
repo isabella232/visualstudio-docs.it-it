@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: 8bda423ccd5362fba6389195814a44cca286b5a7
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235134"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249613"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -28,7 +28,7 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
 
 1. Per aggiungere più sottoscrittori contemporaneamente, passare alla scheda **Gestisci sottoscrittori** . scegliere la scheda **Aggiungi** , quindi scegliere **Aggiungi in blocco** nell'elenco a discesa.  
 
-1. L'aggiunta bulk utilizza un modello di Microsoft Excel per caricare informazioni sul Sottoscrittore. Nella finestra di dialogo Upload Multiple Subscriber (Carica più sottoscrittori), fare clic su **Download** per scaricare il modello.
+1. L'aggiunta bulk utilizza un modello di Microsoft Excel per caricare informazioni sul Sottoscrittore. Nella finestra di dialogo Carica più Sottoscrittori selezionare **download** per scaricare il modello.
    > [!div class="mx-imgBorder"]
    > ![Scaricare il modello di Excel per caricare più sottoscrittori](media/download-template-upload-subscribers.png "Scaricare il modello di Excel vuoto per iniziare il processo di assegnazione in blocco.")
    >
@@ -48,13 +48,13 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
     - Verificare che tutti i campi obbligatori siano completati. 
     - Controllare la colonna del **messaggio di errore** .  Se vengono elencati errori, risolverli prima di provare a caricare il file. 
 
-1. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio. Nella finestra di dialogo **Upload Multiple Subscribers** (Carica più sottoscrittori) fare clic su **Sfoglia**.
+1. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio. Nella finestra di dialogo **carica più sottoscrittori** selezionare **Sfoglia**.
    > [!div class="mx-imgBorder"]
    > ![Passare al modello salvato per caricare più sottoscrittori](media/bulk-add-browse-saved-template.png "È possibile passare al percorso del file oppure trascinarlo e rilasciarlo in questa finestra di dialogo.")
 
-1. Passare al file Excel salvato e quindi fare clic su **OK**.
+1. Passare al file di Excel salvato e quindi fare clic su **OK**.
    > [!div class="mx-imgBorder"]
-   > ![Caricare il modello di Excel per caricare più sottoscrittori](media/bulk-upload-subscribers.png "Il modello con i dati verrà visualizzato qui.  Fare clic su OK per avviare il caricamento.")
+   > ![Caricare il modello di Excel per caricare più sottoscrittori](media/bulk-upload-subscribers.png "Il modello con i dati verrà visualizzato qui.  Selezionare OK per avviare il caricamento.")
 
     Viene visualizzata una finestra di dialogo di avanzamento del caricamento.
 
@@ -66,8 +66,8 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
    1. Aprire il file di Excel creato, risolvere i problemi e salvare il file.
    0. Tornare al portale di dell'amministrazione e scegliere **Aggiungi**.
    0. Selezionare **Aggiungi in blocco**.
-   0. Poiché è già stato salvato il file di Excel, non è necessario scaricare il modello.  Fare clic su **Sfoglia**, individuare il file appena salvato e fare clic su **Apri**.
-   0. Fare clic su **OK**.
+   0. Poiché è già stato salvato il file di Excel, non è necessario scaricare il modello.  Selezionare **Sfoglia**, individuare il file appena salvato e selezionare **Apri**.
+   0. Selezionare **OK**.
 
 
     Quando il caricamento ha esito positivo, viene visualizzato l'elenco di sottoscrittori e un messaggio di conferma.
@@ -109,7 +109,7 @@ L'uso di questa funzionalità consente di mantenere più facilmente le assegnazi
    > [!div class="mx-imgBorder"]
    > ![Scegliere il gruppo di Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Scegliere il nome del gruppo di Azure AD per aggiungere i sottoscrittori del gruppo.")
 
-6. Fare clic su **Aggiungi** e quindi su **conferma**. 
+6. Selezionare **Aggiungi** e quindi **conferma**. 
 
 7. Per visualizzare il gruppo aggiunto, scorrere fino alla fine dell'elenco di utenti.  
 
@@ -137,4 +137,4 @@ R: a seconda del modo in cui l'organizzazione ha configurato Azure AD, è possib
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Se è necessario aggiungere solo uno o due sottoscrittori,  vedere [Aggiungere singoli utenti](assign-license.md)
-- Richiesta di assistenza Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Serve aiuto? Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).

@@ -1,5 +1,5 @@
 ---
-title: "Passaggio 3: Utilizzo dei dati nell'app ASP.NET CoreStep 3: Working with Data in Your ASP.NET Core App"
+title: "Passaggio 3: uso dei dati nell'app ASP.NET Core"
 description: Iniziare a usare i dati con Entity Framework Core nell'app Web ASP.NET Core con questa esercitazione video e istruzioni dettagliate.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580062"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250794"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>Passaggio 3: Usare i dati con Entity FrameworkStep 3: Work with data using Entity Framework
+# <a name="step-3-work-with-data-using-entity-framework"></a>Passaggio 3: utilizzare i dati utilizzando Entity Framework
 
 Seguire questi passaggi per iniziare a usare i dati con Entity Framework Core nell'app Web ASP.NET Core.
 
@@ -54,7 +54,7 @@ public class Game
 
 A questo punto è possibile procedere con la creazione delle pagine che verranno usate per gestire la libreria di giochi. Nonostante quello che si potrebbe immaginare, l'operazione è in effetti incredibilmente semplice. Prima di tutto è necessario decidere dove posizionare questa funzionalità nell'app. Aprire la cartella Pagine nel progetto Web e aggiungere una nuova cartella. Chiamarla *Games*.
 
-Ora fare clic con il pulsante destro del mouse su Giochi e scegliere **Aggiungi** > **nuovo elemento Scaffolded**. Scegliere l'opzione **Pagine Razor che usano Entity Framework (CRUD)**. CRUD è l'acronimo d"Create, Read, Update, Delete" (Creare, leggere, aggiornare, eliminare) e questo modello creerà le pagine per ogni operazione (incluse una pagina per elencare tutti gli elementi e una pagina per visualizzare i dettagli di un elemento).
+Ora fare clic con il pulsante destro del mouse su giochi e scegliere **Aggiungi**  >  **nuovo elemento con impalcatura**. Scegliere l'opzione **Pagine Razor che usano Entity Framework (CRUD)**. CRUD è l'acronimo d"Create, Read, Update, Delete" (Creare, leggere, aggiornare, eliminare) e questo modello creerà le pagine per ogni operazione (incluse una pagina per elencare tutti gli elementi e una pagina per visualizzare i dettagli di un elemento).
 
 ![ASP.NET Core di Visual Studio 2019 - Aggiungere pagine con scaffolding](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<AppDbContext>();
+            var context = services.GetRequiredService<Data.AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)
@@ -117,7 +117,7 @@ Assicurarsi di usare il nome del progetto anziché WebApplication1 nel codice.
 
 La maggior parte del codice è destinata semplicemente alla gestione degli errori e per consentire l'accesso ad `AppDbContext` di EF Core prima dell'esecuzione dell'app. La riga importante è quella con `context.Database.EnsureCreated()`, che creerà il database se non esiste già. A questo punto l'app è pronta per l'esecuzione.
 
-## <a name="test-it-out"></a>Testare l'app
+## <a name="test-it-out"></a>Eseguire il test
 
 Eseguire l'applicazione e passare a `/Games` nella barra degli indirizzi. Verrà visualizzata una pagina con un elenco vuoto. Fare clic su **Create New** (Crea nuovo) per aggiungere un nuovo elemento `Game` alla raccolta. Compilare il modulo e fare clic su **Create** (Crea). Il gioco dovrebbe comparire nella visualizzazione elenco. Fare clic su **Details** (Dettagli) per visualizzare i dettagli di un singolo record.
 
@@ -131,7 +131,7 @@ Questo è tutto per iniziare a usare i dati in un'app ASP.NET Core con EF Core e
 
 Nel prossimo video si apprenderà come aggiungere il supporto dell'API Web per l'app.
 
-[Passaggio 4: Esposizione di un'API Web dall'app ASP.NET coreStep 4: Exposing a web API From Your ASP.NET Core App](tutorial-aspnet-core-ef-step-04.md)
+[Passaggio 4: esposizione di un'API Web dall'app ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61321555a6896fad926d2ee38c5d73d50801d6b9
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.openlocfilehash: aa3ab53bbda2582d1a9b3c60ac07fd3617d51ddf
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86972348"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248779"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Aggiungere un menu alla barra dei menu di Visual Studio
 
@@ -43,13 +43,13 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 ::: moniker range="vs-2017"
 
-2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **TestCommand**. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >   **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *TestCommand.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **TestCommand**. Nella **Esplora soluzioni**selezionare e mantenere (oppure fare clic con il pulsante destro del mouse) sul nodo del progetto e selezionare **Aggiungi**  >   **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *TestCommand.cs*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **TestCommand**. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >   **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *TestCommand.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento di comando personalizzato denominato **TestCommand**. Nella **Esplora soluzioni**selezionare e mantenere (oppure fare clic con il pulsante destro del mouse) sul nodo del progetto e selezionare **Aggiungi**  >   **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *TestCommand.cs*.
 
 ::: moniker-end
 

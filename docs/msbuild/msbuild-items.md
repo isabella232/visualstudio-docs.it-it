@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4689985d159bd832bc3cadfb54eb17fae2ae71a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183665"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247592"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 
@@ -144,7 +144,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 </Project>
 ```
 
-### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a>Metadati noti degli elementi
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Metadati noti degli elementi
 
  Quando un elemento viene aggiunto a un tipo di elemento, a tale elemento vengono assegnati alcuni metadati noti. Ad esempio, tutti gli elementi hanno il%(di metadati noto \<Filename> ), il cui valore è il nome file dell'elemento (senza l'estensione). Per altre informazioni, vedere [metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md).
 
@@ -191,7 +191,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 
  A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi [ItemGroup](../msbuild/itemgroup-element-msbuild.md) che possono contenere elementi Item. Gli attributi in questa sezione sono validi quando vengono specificati per un elemento in un `ItemGroup` che si trova in una `Target`.
 
-### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a>Rimuovi attributo
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> Rimuovi attributo
 
  L'attributo `Remove` rimuove elementi (file) specifici dal tipo di elemento. Questo attributo è stato introdotto nel .NET Framework 3,5 (solo all'interno delle destinazioni). Le destinazioni interne ed esterne sono supportate a partire da MSBuild 15,0.
 
@@ -205,7 +205,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 </Target>
 ```
 
-### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a>Attributo KeepMetadata
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a> Attributo KeepMetadata
 
  Un elemento item, se viene generato in una destinazione, può contenere l'attributo `KeepMetadata`. Se questo attributo è specificato, solo i metadati specificati nell'elenco di nomi delimitati da punto e virgola verranno trasferiti dall'elemento di origine a quello di destinazione. Un valore vuoto per questo attributo equivale a non specificarlo. L'attributo `KeepMetadata` è stato introdotto in .NET Framework 4.5.
 
@@ -248,7 +248,7 @@ Output:
 -->
 ```
 
-### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a>Attributo RemoveMetadata
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> Attributo RemoveMetadata
 
  Un elemento item, se viene generato in una destinazione, può contenere l'attributo `RemoveMetadata`. Se questo attributo è specificato, tutti i metadati vengono trasferiti dall'elemento di origine all'elemento di destinazione, a eccezione dei metadati i cui nomi sono contenuti nell'elenco di nomi separati da punto e virgola. Un valore vuoto per questo attributo equivale a non specificarlo. L'attributo `RemoveMetadata` è stato introdotto in .NET Framework 4.5.
 
@@ -298,7 +298,7 @@ Output:
 -->
 ```
 
-### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a>Attributo KeepDuplicates
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> Attributo KeepDuplicates
 
  Un elemento item, se viene generato in una destinazione, può contenere l'attributo `KeepDuplicates`. `KeepDuplicates` è un attributo `Boolean` che specifica se un elemento deve essere aggiunto al gruppo di destinazione se l'elemento è un duplicato esatto di un elemento esistente.
 
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-##  <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Aggiornamento dei metadati per gli elementi in un ItemGroup all'esterno di una destinazione
+## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>Aggiornamento dei metadati per gli elementi in un ItemGroup all'esterno di una destinazione
 
 Gli elementi al di fuori delle destinazioni possono avere i metadati esistenti aggiornati tramite l' `Update` attributo. Questo attributo **non** è disponibile per gli elementi in destinazioni.
 
@@ -603,4 +603,4 @@ Item1: notebook
 - [Procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Procedura: visualizzare un elenco di elementi separati da virgole](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
 - [Definizioni degli elementi](../msbuild/item-definitions.md)
-- [Creazione di batch](../msbuild/msbuild-batching.md)
+- [Batch](../msbuild/msbuild-batching.md)

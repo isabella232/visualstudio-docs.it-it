@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: overview
 description: Informazioni su come iniziare a gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale di amministrazione delle sottoscrizioni.
-ms.openlocfilehash: 94ce9e8ceec46403ef816c39115a5418f1ee9e03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902948"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249868"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -42,7 +42,7 @@ Una volta assegnate le sottoscrizioni, la scheda Gestisci sottoscrittori fornisc
 
 Nella parte superiore sinistra della pagina sono disponibili diverse icone che è possibile selezionare per visualizzare una panoramica dell'assegnazione della sottoscrizione, i dettagli del contratto e il report di utilizzo massimo.
 
-Per visualizzare informazioni aggiuntive sul numero di licenze di sottoscrizione acquistate, assegnate e ancora disponibili nell'organizzazione per ogni contratto, fare clic sull'icona superiore per abilitare il pannello di scorrimento.
+Per visualizzare informazioni aggiuntive sul numero di licenze di sottoscrizione acquistate, assegnate e ancora disponibili nell'organizzazione per ogni contratto, selezionare l'icona superiore per abilitare il pannello di scorrimento.
 > [!div class="mx-imgBorder"]
 > ![Pagina relativa ai sottoscrittori del portale di amministrazione sottoscrizioni di Visual Studio](_img/using-admin-portal/subscribers-page.png)
 

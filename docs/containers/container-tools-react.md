@@ -1,17 +1,17 @@
 ---
-title: Strumenti contenitore di Visual Studio con ASP.NET Core e React. js
+title: Strumenti contenitore di Visual Studio con ASP.NET Core e React.js
 author: ghogen
 description: Informazioni su come usare gli strumenti contenitore di Visual Studio e Docker per Windows
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: f7dfc0aa1346c4e888f64f7cd8f23add3056c070
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182788"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249203"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Guida introduttiva: usare Docker con un'app a singola pagina React in Visual Studio
 
@@ -72,7 +72,7 @@ Il passaggio successivo è diverso a seconda che si stiano usando contenitori Li
 
 Nel progetto viene creato un *Dockerfile*, il file recipe per la creazione di un'immagine Docker finale. Per informazioni sui comandi al suo interno, vedere la Guida di [riferimento a Dockerfile](https://docs.docker.com/engine/reference/builder/) .
 
-Aprire il *Dockerfile* nel progetto e aggiungere le righe seguenti per installare Node.js 10.x nel contenitore. Assicurarsi di aggiungere queste righe nella prima sezione, per aggiungere l'installazione di *NPM. exe* di gestione pacchetti del nodo all'immagine di base, oltre che nella `build` sezione.
+Aprire il *Dockerfile* nel progetto e aggiungere le righe seguenti per installare Node.js 10.x nel contenitore. Assicurarsi di aggiungere queste righe nella prima sezione, per aggiungere l'installazione di gestione pacchetti di nodi *npm.exe* all'immagine di base, così come nella `build` sezione.
 
 ```Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
@@ -123,7 +123,7 @@ Aprire il file di progetto facendo doppio clic sul nodo del progetto e aggiornar
 Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM vengono copiati nel contenitore.
 
    1. Aggiungere ``# escape=` `` alla prima riga di Dockerfile
-   1. Aggiungere le righe seguenti prima`FROM … base`
+   1. Aggiungere le righe seguenti prima `FROM … base`
 
       ```Dockerfile
       FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
@@ -133,7 +133,7 @@ Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. Aggiungere la riga seguente prima e dopo`FROM … build`
+   1. Aggiungere la riga seguente prima e dopo `FROM … build`
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
@@ -177,7 +177,7 @@ Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM
       ENTRYPOINT ["dotnet", "WebApplication37.dll"]
       ```
 
-1. Aggiornare il file con estensione dockerignore rimuovendo `**/bin` .
+   1. Aggiornare il file con estensione dockerignore rimuovendo `**/bin` .
 
 ## <a name="debug"></a>Debug
 
@@ -228,7 +228,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     | Impostazione      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Prefisso DNS** | Nome globalmente univoco | Nome che identifica in modo univoco il registro contenitori. |
+    | **Prefisso DNS** | Nome univoco a livello globale | Nome che identifica in modo univoco il registro contenitori. |
     | **Sottoscrizione** | Scegliere la sottoscrizione | Sottoscrizione di Azure da usare. |
     | **[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome del gruppo di risorse in cui creare il registro contenitori. Per creare un nuovo gruppo di risorse scegliere **Nuovo**.|
     | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Livello di servizio del registro contenitori  |
@@ -236,7 +236,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio][0]
 
-1. Fare clic su **Crea**.
+1. Scegliere **Crea**.
 
    ![Screenshot che indica l'esito positivo della pubblicazione](media/container-tools/publish-succeeded.png)
 

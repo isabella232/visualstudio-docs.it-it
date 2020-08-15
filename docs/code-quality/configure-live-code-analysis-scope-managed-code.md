@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b1e4362755bbbfa9ea220fcbdf92abf92723521
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85462123"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249183"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito
 
@@ -25,17 +25,17 @@ ms.locfileid: "85462123"
 Visual Studio esegue una serie di analisi del codice in tempo reale, denominate anche *analisi in background*, mentre si modificano i file di origine nell'editor. Alcune di esse sono richieste di analisi minime per un'esperienza di modifica accettabile dell'IDE di Visual Studio. Alcune di queste funzionalità sono per migliorare la velocità di risposta per le funzionalità IDE. Sebbene alcune di queste funzioni consentano di abilitare funzionalità aggiuntive dell'IDE, ad esempio la diagnostica e le correzioni del codice degli analizzatori Roslyn. In base alla funzionalità, queste analisi possono essere raggruppate come segue:
 
 - **Calcolo in background della diagnostica**: analisi per calcolare errori, avvisi e suggerimenti nei file di origine. Questi dati di diagnostica vengono visualizzati come voci nell'elenco errori e come controllo ortografia durante nell'editor. Possono essere classificati in due categorie:
-    - Diagnostica del compilatore C# e Visual Basic
-    - Diagnostica di Roslyn Analyzer, che include:
+  - Diagnostica del compilatore C# e Visual Basic
+  - Diagnostica di Roslyn Analyzer, che include:
 
-        - Analizzatori IDE predefiniti per i suggerimenti di stile del codice e
-        - Pacchetti dell'analizzatore di terze parti [installati](./install-roslyn-analyzers.md) per i progetti nella soluzione corrente.
+    - Analizzatori IDE predefiniti per i suggerimenti di stile del codice e
+    - Pacchetti dell'analizzatore di terze parti [installati](./install-roslyn-analyzers.md) per i progetti nella soluzione corrente.
 
 - **Altre analisi in background**: analisi per migliorare la velocità di risposta e l'interazione di Visual Studio per le funzionalità IDE. Di seguito sono riportati alcuni esempi di analisi di questo tipo:
-    - Analisi in background dei file aperti.
-    - Compilazione in background dei progetti con file aperti per realizzare i simboli per migliorare la velocità di risposta di alcune funzionalità IDE.
-    - Compilazione della sintassi e delle cache di simboli.
-    - Rilevamento dell'associazione della finestra di progettazione per i file di origine, ad esempio form, controlli e così via.
+  - Analisi in background dei file aperti.
+  - Compilazione in background dei progetti con file aperti per realizzare i simboli per migliorare la velocità di risposta di alcune funzionalità IDE.
+  - Compilazione della sintassi e delle cache di simboli.
+  - Rilevamento dell'associazione della finestra di progettazione per i file di origine, ad esempio form, controlli e così via.
 
 ## <a name="default-analysis-scope"></a>Ambito di analisi predefinito
 
@@ -43,7 +43,7 @@ Per impostazione predefinita, l'analisi del codice in tempo reale per il calcolo
 
 ## <a name="custom-analysis-scope"></a>Ambito di analisi personalizzato
 
-L'ambito predefinito di ogni analisi in background è stato ottimizzato per l'esperienza utente, le funzionalità e le prestazioni ottimali per la maggior parte degli scenari e delle soluzioni dei clienti. In alcuni casi, tuttavia, i clienti potrebbero voler personalizzare questo ambito per ridurre o aumentare l'analisi in background. Ad esempio:
+L'ambito predefinito di ogni analisi in background è stato ottimizzato per l'esperienza utente, le funzionalità e le prestazioni ottimali per la maggior parte degli scenari e delle soluzioni dei clienti. In alcuni casi, tuttavia, i clienti potrebbero voler personalizzare questo ambito per ridurre o aumentare l'analisi in background. Esempio:
 
 - Modalità risparmio energia: se gli utenti eseguono la batteria portatile, è possibile che vogliano ridurre al minimo il consumo di energia elettrica per una durata maggiore della batteria. In questo scenario, è consigliabile ridurre al minimo l'analisi in background.
 - Analisi del codice su richiesta: se gli utenti preferiscono disattivare l'esecuzione di Live Analyzer e eseguire manualmente l'analisi del codice su richiesta, è necessario ridurre al minimo l'analisi in background. Vedere [procedura: eseguire manualmente l'analisi del codice su richiesta](./how-to-run-code-analysis-manually-for-managed-code.md).
@@ -74,7 +74,7 @@ Se Visual Studio rileva che sono disponibili 200 MB o meno di memoria di sistema
 
 ![Testo dell'avviso per la riduzione dell'ambito dell'analisi](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Sospensione funzionalità automatica](./automatic-feature-suspension.md)
 - [Richiesta di funzionalità della modalità di risparmio energia](https://github.com/dotnet/roslyn/issues/38429)

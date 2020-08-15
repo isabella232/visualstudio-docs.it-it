@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: d90567e86d782a64f42f7fdbd06f295a5f130b3a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280863"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250846"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurare un ruolo per un servizio cloud di Azure con Visual Studio
 Un servizio cloud di Azure può includere uno o più ruoli di lavoro o ruoli Web. Per ogni ruolo è necessario definire la modalità di configurazione e configurare la modalità di esecuzione. Per altre informazioni sui ruoli nei servizi cloud, vedere il video [Introduzione ai servizi cloud di Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -90,7 +90,7 @@ Se si usa un valore diverso per ogni configurazione del servizio, non sarà nece
 
     ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selezionare la scheda **Impostazioni** .
+1. Selezionare la scheda **Settings** (Impostazioni).
 
     ![Scheda Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 
@@ -112,8 +112,8 @@ Se si usa un valore diverso per ogni configurazione del servizio, non sarà nece
 
 1. Nella finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**, selezionare un'opzione per **Connetti tramite**. Seguire quindi le istruzioni relative all'opzione selezionata:
 
-    - **Emulatore di archiviazione di Microsoft Azure**: se si seleziona questa opzione, le impostazioni rimanenti nella finestra di dialogo vengono disabilitate, poiché sono valide solo per Azure. Fare clic su **OK**.
-    - **Sottoscrizione**: se si seleziona questa opzione, usare l'elenco a discesa per selezionare e accedere a un account Microsoft oppure aggiungere un account Microsoft. Selezionare una sottoscrizione e un account di archiviazione di Azure. Fare clic su **OK**.
+    - **Emulatore di archiviazione di Microsoft Azure** : se si seleziona questa opzione, le impostazioni rimanenti della finestra di dialogo vengono disabilitate in quanto si applicano solo ad Azure. Selezionare **OK**.
+    - **Sottoscrizione**: se si seleziona questa opzione, usare l'elenco a discesa per selezionare e accedere a un account Microsoft oppure aggiungere un account Microsoft. Selezionare una sottoscrizione e un account di archiviazione di Azure. Selezionare **OK**.
     - **Credenziali immesse manualmente**: immettere il nome dell'account di archiviazione e la chiave primaria o secondaria. Selezionare un'opzione per **Connection** (HTTPS è consigliato per la maggior parte degli scenari). Fare clic su **OK**.
 
 1. Per eliminare una stringa di connessione, selezionarla e quindi scegliere **Rimuovi impostazione**.
@@ -152,7 +152,7 @@ Se si usa un valore diverso per ogni configurazione del servizio, non sarà nece
 
     ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
-1. Selezionare la scheda **Impostazioni** .
+1. Selezionare la scheda **Settings** (Impostazioni).
 
     ![Scheda Settings](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab.png)
 

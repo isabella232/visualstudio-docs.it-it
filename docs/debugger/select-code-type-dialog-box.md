@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccfe636cd8981c2f9dcc1375fb795d6c026b572
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.openlocfilehash: a6fefcea57b97ad3b31e4d10330756565c005184
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86211582"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248765"
 ---
 # <a name="select-code-type-dialog-box"></a>Finestra di dialogo Seleziona tipo di codice
 
@@ -38,26 +38,26 @@ Per visualizzare questa finestra di dialogo, aprire la finestra di dialogo **Con
 
 **Eseguire il debug di questi tipi di codice:** Dall'elenco fornito scegliere i tipi di codice di cui si vuole eseguire il debug. Questo può essere utile durante [la risoluzione di un errore di connessione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md#BKMK_Troubleshoot_attach_errors). Questa opzione limita il rilevamento solo ai tipi di codice di cui si vuole eseguire il debug.
 
-   ::: moniker range=">=vs-2019"
-   - Blazor WebAssembly-Lato clientBlazor WebAssembly
-   - GPU-emulatore software-codice C++ in esecuzione in un emulatore software GPU
-   - JavaScript (Chrome)-JavaScript in esecuzione in Chrome
-   - JavaScript (Microsoft Edge-Chromium)-JavaScript in esecuzione in Microsoft Edge basato su cromo per Windows 10
-   - Debugger CDP (v3) JavaScript-Chrome DevTools protocollo versione 3, usato per il debug in un client CDP
-   - Gestito (CoreCLR)-.NET Core
-   - Gestita (compilazione nativa)-codice/CLR C++
-   - Gestito (v 3.5, v 3.0, v 2.0)-codice .NET Framework per .NET Framework 2,0 e versioni successive (fino a 3,5)
-   - Gestito (v. 4.6, v 4.5, v 4.0)-codice .NET Framework per .NET Framework 4,0 e versioni successive
-   - Nativo-C/C++
-   - Node.js debug-codice ospitato dal runtime di Node.js
-   - Python-Python 
-   - Script: specifica il debugger di script generale per JavaScript. Usare opzioni più restrittive se si applicano allo scenario, ad esempio JavaScript (Chrome).
-   - T-SQL-Transact-SQL
-   - Unity-Unity
-   - Modalità di compatibilità gestita: specifica il debugger legacy per il codice gestito, per l'uso in genere nel debug in modalità mista con codice/CLR C++ (Abilita modifica e continuazione per la modalità mista) o per supportare le estensioni destinate al debugger legacy. Nella maggior parte degli scenari di debug in modalità mista selezionare **nativo** e i tipi di codice **gestito** appropriati anziché la modalità di compatibilità gestita.
-   ::: moniker-end
+::: moniker range=">=vs-2019"
+- Blazor WebAssembly -Lato client Blazor WebAssembly
+- GPU-emulatore software-codice C++ in esecuzione in un emulatore software GPU
+- JavaScript (Chrome)-JavaScript in esecuzione in Chrome
+- JavaScript (Microsoft Edge-Chromium)-JavaScript in esecuzione in Microsoft Edge basato su cromo per Windows 10
+- Debugger CDP (v3) JavaScript-Chrome DevTools protocollo versione 3, usato per il debug in un client CDP
+- Gestito (CoreCLR)-.NET Core
+- Gestita (compilazione nativa)-codice/CLR C++
+- Gestito (v 3.5, v 3.0, v 2.0)-codice .NET Framework per .NET Framework 2,0 e versioni successive (fino a 3,5)
+- Gestito (v. 4.6, v 4.5, v 4.0)-codice .NET Framework per .NET Framework 4,0 e versioni successive
+- Nativo-C/C++
+- Node.js debug-codice ospitato dal runtime di Node.js
+- Python-Python 
+- Script: specifica il debugger di script generale per JavaScript. Usare opzioni più restrittive se si applicano allo scenario, ad esempio JavaScript (Chrome).
+- T-SQL-Transact-SQL
+- Unity-Unity
+- Modalità di compatibilità gestita: specifica il debugger legacy per il codice gestito, per l'uso in genere nel debug in modalità mista con codice/CLR C++ (Abilita modifica e continuazione per la modalità mista) o per supportare le estensioni destinate al debugger legacy. Nella maggior parte degli scenari di debug in modalità mista selezionare **nativo** e i tipi di codice **gestito** appropriati anziché la modalità di compatibilità gestita.
+::: moniker-end
 
-   Per la maggior parte degli scenari, non è supportato il fissaggio di più debugger nella stessa sessione di debug. Questa operazione può essere eseguita usando una seconda istanza di Visual Studio.
+Per la maggior parte degli scenari, non è supportato il fissaggio di più debugger nella stessa sessione di debug. Questa operazione può essere eseguita usando una seconda istanza di Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Come aggiungere un'identità alternativa per la sottoscrizione di Visual Studio per usare Azure DevOps e Azure
-ms.openlocfilehash: f8b634bd2f59bf3de038e7200900ee9930d79fff
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0db6f0f37127c600d529734085da23c30df73b9b
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289373"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248407"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identità per i sottoscrittori di Visual Studio
 Quando si attiva la sottoscrizione di Visual Studio, l'identità (o l'account di accesso) usata durante l'attivazione viene collegata alla sottoscrizione di Visual Studio. In questo modo, l'utente verrà riconosciuto nel [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), in Azure DevOps e in Azure.
@@ -33,7 +33,7 @@ Per tutte le sottoscrizioni, è possibile aggiungere un "account aziendale o del
 
 ### <a name="add-the-alternate-account"></a>Aggiungere l'account alternativo
 1. Accedere al portale per i sottoscrittori di Visual Studio con il proprio account Microsoft (https://my.visualstudio.com).
-2. Fare clic sulla scheda **Sottoscrizioni**.
+2. Selezionare la scheda **Sottoscrizioni** .
 3. Scegliere **Aggiungi un account alternativo**.
 4. Aggiungere l'account aziendale o dell'istituto di istruzione.
     > [!div class="mx-imgBorder"]
@@ -57,7 +57,7 @@ R: Azure DevOps dovrebbe riconoscere automaticamente la sottoscrizione quando si
 
 Se Azure DevOps non riconosce ancora la sottoscrizione, contattare il [supporto tecnico di Azure DevOps](https://azure.microsoft.com/support/devops/).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)

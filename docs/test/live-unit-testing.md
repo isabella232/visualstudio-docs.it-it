@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 185d722f65dce0062dc58a06a05590aacb68138b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906214"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249896"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Come configurare e usare Live Unit Testing
 
@@ -142,7 +142,7 @@ Nella finestra **Esplora test** è possibile notare che alcuni test sono stati s
 
 ![Test non superato in Esplora test](media/lut-test-explorer.png)
 
-È possibile rieseguire tutti i test visualizzati come sbiaditi selezionando le opzioni **Esegui tutto** o **Esegui** dal menu **Esplora test** . In alternativa, selezionare uno o più test nel menu **Esplora test** , fare clic con il pulsante destro del mouse su, quindi scegliere **Esegui test selezionati** o Esegui **debug test selezionati** dal menu di scelta rapida. Quando i test vengono eseguiti, vengono visualizzati nella parte superiore.
+È possibile rieseguire tutti i test visualizzati come sbiaditi selezionando le opzioni **Esegui tutto** o **Esegui** dal menu **Esplora test** . In alternativa, selezionare uno o più test nel menu  **Esplora test** , fare clic con il pulsante destro del mouse su, quindi scegliere **Esegui test selezionati** o Esegui **debug test selezionati** dal menu di scelta rapida. Quando i test vengono eseguiti, vengono visualizzati nella parte superiore.
 
 Esistono alcune differenze tra l'esecuzione automatica di Live Unit Testing e l'aggiornamento dei risultati dei test e l'esecuzione esplicita di test da **Esplora test**. Ecco alcune di queste differenze:
 
@@ -191,16 +191,16 @@ Per le soluzioni con molti progetti di test, è possibile controllare quali prog
 
 Per selezionare i singoli progetti negli unit test, eseguire le operazioni seguenti dopo aver avviato Live Unit Testing:
 
-1. Fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Test attivi** > **Escludi** per escludere l'intera soluzione.
-1. Fare clic con il pulsante destro del mouse su ogni progetto di test che si desidera includere nei test e scegliere i **test dinamici**  >  **Includi**.
+1. Fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Live unit testing**  >  **Escludi** per escludere l'intera soluzione.
+1. Fare clic con il pulsante destro del mouse su ogni progetto di test che si desidera includere nei test e scegliere **Live unit testing**  >  **Includi**.
 
 ### <a name="exclude-individual-tests-from-the-code-editor-window"></a>Escludere i singoli test dalla finestra dell'editor di codice
 
 Per includere o escludere singoli metodi di test, è possibile usare la finestra dell'editor del codice. Fare clic con il pulsante destro del mouse sulla firma del metodo di test nella finestra dell'editor di codice e quindi selezionare una delle opzioni seguenti:
 
-- **Test dinamici**  >  **Includi \<selected method> **
-- **Test dinamici**  >  **Escludi \<selected method> **
-- **Test dinamici**  >  **Escludi tutto \<selected method> tranne**
+- **Live unit testing**  >  **Includi \<selected method> **
+- **Live unit testing**  >  **Escludi \<selected method> **
+- **Live unit testing**  >  **Escludi tutto \<selected method> tranne**
 
 ### <a name="exclude-tests-programmatically"></a>Escludi i test a livello di codice
 

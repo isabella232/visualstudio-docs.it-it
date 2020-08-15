@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078bce0778122b296dcd918d4a9074eed5397f54
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 51c125942f82b43cf786591bc0e364764dc1965e
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371846"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250544"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -62,7 +62,7 @@ Queste regole sono disabilitate per impostazione predefinita, ma è possibile ab
 
    In questo esempio la regola [CA1502](ca1502.md) è configurata in modo da essere attivata quando la complessità ciclomatica di un metodo è maggiore di 10.
 
-3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Ad esempio:
+3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Esempio:
 
    ```xml
    <ItemGroup>
@@ -111,7 +111,7 @@ I risultati vengono generati e viene visualizzata la finestra **Risultati metric
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pacchetto NuGet Microsoft. CodeAnalysis. Metrics
 
-Il modo più semplice per generare dati di metrica del codice dalla riga di comando consiste nell'installare il pacchetto NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Ad esempio:
+Il modo più semplice per generare dati di metrica del codice dalla riga di comando consiste nell'installare il pacchetto NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Esempio:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-È possibile eseguire l'override del nome del file di output specificando `/p:MetricsOutputFile=<filename>` . È anche possibile ottenere dati di metrica del codice di [tipo legacy](#previous-versions) specificando `/p:LEGACY_CODE_METRICS_MODE=true` . Ad esempio:
+È possibile eseguire l'override del nome del file di output specificando `/p:MetricsOutputFile=<filename>` . È anche possibile ottenere dati di metrica del codice di [tipo legacy](#previous-versions) specificando `/p:LEGACY_CODE_METRICS_MODE=true` . Esempio:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -163,6 +163,7 @@ Build succeeded.
 L'output XML generato assume il formato seguente:
 
 ::: moniker range=">=vs-2019"
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -217,8 +218,10 @@ L'output XML generato assume il formato seguente:
   </Targets>
 </CodeMetricsReport>
 ```
+
 ::: moniker-end
 ::: moniker range="vs-2017"
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -269,6 +272,7 @@ L'output XML generato assume il formato seguente:
   </Targets>
 </CodeMetricsReport>
 ```
+
 ::: moniker-end
 
 ### <a name="metricsexe"></a>Metrics.exe
@@ -277,7 +281,7 @@ Se non si vuole installare il pacchetto NuGet, è possibile generare e usare dir
 
 1. Clonare il repository [DotNet/Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers) .
 2. Aprire Prompt dei comandi per gli sviluppatori per Visual Studio come amministratore.
-3. Dalla radice del repository **Roslyn-Analyzers** , eseguire il comando seguente:`Restore.cmd`
+3. Dalla radice del repository **Roslyn-Analyzers** , eseguire il comando seguente: `Restore.cmd`
 4. Passare alla directory *src\Tools*.
 5. Eseguire il comando seguente per compilare il progetto **metrics. csproj** :
 
@@ -289,7 +293,7 @@ Se non si vuole installare il pacchetto NuGet, è possibile generare e usare dir
 
 #### <a name="metricsexe-usage"></a>Utilizzo Metrics.exe
 
-Per eseguire *Metrics.exe*, fornire un progetto o una soluzione e un file XML di output come argomenti. Ad esempio:
+Per eseguire *Metrics.exe*, fornire un progetto o una soluzione e un file XML di output come argomenti. Esempio:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -332,7 +336,7 @@ La `LinesOfCode` metrica è più accurata e affidabile nel nuovo strumento per l
 
 Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` , usano le stesse formule delle versioni precedenti di *Metrics.exe*, ma il nuovo strumento conta il numero di istruzioni per le `IOperations` origini logiche anziché le istruzioni del linguaggio intermedio (il). I numeri saranno leggermente diversi rispetto a quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Usare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)

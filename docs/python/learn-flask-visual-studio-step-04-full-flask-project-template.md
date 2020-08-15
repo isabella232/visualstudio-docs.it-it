@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62957260"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250560"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Passaggio 4: Usare il modello Progetto Web Flask completo
 
@@ -35,17 +35,17 @@ Questo articolo vale anche per il modello "Progetto Web Flask/Jade", che produce
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Passaggio 4-1: Creare un progetto da un modello
 
-1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningFlask** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si desidera utilizzare una nuova soluzione, selezionare **File** > **nuovo** > **progetto.**
+1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningFlask** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **file**  >  **Nuovo**  >  In alternativa, **progetto** ).
 
-1. Nella finestra di dialogo del nuovo progetto, cercare e selezionare il modello **Flask Web Project** , chiamare il progetto "FlaskWeb" e selezionare **OK**.
+1. Nella finestra di dialogo nuovo progetto cercare e selezionare il modello di **progetto Web Flask** , chiamare il progetto "FlaskWeb" e fare clic su **OK**.
 
 1. Poiché il modello include di nuovo un file *requirements.txt*, Visual Studio chiede dove installare queste dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite.
 
-1. Al termine della configurazione dell'ambiente virtuale in Visual Studio, impostare il progetto **FlaskWeb** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionando Imposta come progetto di **avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
+1. Al termine della configurazione dell'ambiente virtuale da parte di Visual Studio, impostare il progetto **FlaskWeb** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionando **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
     ![Progetto FlaskWeb visualizzato in Esplora soluzioni come progetto di avvio](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Selezionare **Debug** > di**avvio debug** (**F5**) o utilizzare il pulsante **Server Web** sulla barra degli strumenti per eseguire il server:
+1. Selezionare **debug**  >  **Avvia debug** (**F5**) o usare il pulsante **server Web** sulla barra degli strumenti per eseguire il server:
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/flask/run-web-server-toolbar-button.png)
 
@@ -69,7 +69,7 @@ Il modello "Progetto Web Flask" crea la struttura riportata di seguito. Il conte
   - *runserver.py*, uno script per eseguire l'app in un server di sviluppo.
   - *requirements.txt*, che contiene una dipendenza da Flask 0.x.
 - La cartella *FlaskWeb* contiene tutti i file dell'app:
-  - init.py contrassegna il codice dell'app come modulo Python, crea l'oggetto Flask e importa le visualizzazioni dell'app. * \_ \_\_ *
+  - init.py contrassegna il codice dell'app come modulo Python, crea l'oggetto Flask e importa le visualizzazioni dell'app. * \_ \_ \_ \_ *
   - *views.py* contiene il codice per il rendering delle pagine.
   - La cartella *static* contiene sottocartelle denominate *content* (file CSS), *fonts* (file del tipo di carattere) e *scripts* (file JavaScript).
   - La cartella *templates* contiene un modello di base *layout.html* oltre a *about.html*, *contact.html* e *index.html* per pagine specifiche che estendono *layout.html*.
@@ -164,7 +164,7 @@ Come indicato all'inizio di questo articolo, Visual Studio offre un modello "Pro
 
 Per abilitare Jade, il modello di progetto per prima cosa include il pacchetto pyjade in *requirements.txt*.
 
-Il file * \_ \_.py\_\_init* dell'app contiene una riga da
+Il file * \_ \_ init \_ \_ . py* dell'app contiene una riga per
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
@@ -235,5 +235,5 @@ Provare a usare entrambe le sintassi, Jinja e Jade, per vedere quale delle due �
 ## <a name="go-deeper"></a>Approfondimento
 
 - [Writing your first Flask app, part 4 - forms and generic views](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (Scrittura della prima app Flask - moduli e visualizzazioni generiche) (docs.djangoproject.com)
-- [Jade su GitHib (documentazione)](https://github.com/liuliqiang/pyjade) (github.com)
+- [Jade su GitHub (documentazione)](https://github.com/liuliqiang/pyjade) (github.com)
 - Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

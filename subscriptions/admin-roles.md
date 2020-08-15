@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 04/07/2020
 ms.topic: conceptual
 description: Informazioni sui ruoli di amministratore con privilegi avanzati e amministratore e su come assegnare gli amministratori.
-ms.openlocfilehash: d77ad470395d1ae341a3bc0835d18a4023b9760c
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: bf10b95d44a960fea50bff6b2fba7b9a8dc98a26
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234627"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248444"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Amministratori con privilegi avanzati e amministratori per i contratti di sottoscrizione di Visual Studio
 
@@ -27,18 +27,18 @@ Esistono due diversi ruoli nel nuovo portale di amministrazione delle sottoscriz
 ## <a name="assigning-administrators"></a>Assegnazione di amministratori
 Per assegnare nuovi amministratori:
 1. Accedere a https://manage.visualstudio.com usando un indirizzo di posta elettronica assegnato come amministratore con privilegi avanzati nel contratto tramite cui sono state acquistate le sottoscrizioni.
-2. Fare clic sulla scheda **Manage Administrators** (Gestisci amministratori).
-3. Fare clic su **Aggiungi**.
+2. Selezionare la scheda **Gestisci amministratori**.
+3. Selezionare **Aggiungi**.
    > [!div class="mx-imgBorder"]
-   > ![Aggiungere amministratori](_img/admin-roles/add-admins.png "Fare clic sul pannello Gestisci amministratori, quindi su Aggiungi per assegnare nuovi amministratori.")
+   > ![Aggiungere amministratori](_img/admin-roles/add-admins.png "Selezionare il pannello Gestisci amministratori, quindi selezionare Aggiungi per assegnare nuovi amministratori.")
 4. Completare il modulo con le informazioni del nuovo amministratore.  
    > [!div class="mx-imgBorder"]
-   > ![Modulo per aggiungere un amministratore](_img/admin-roles/add-form.png "Immettere le informazioni di accesso per il nuovo amministratore e scegliere se renderle un amministratore con privilegi avanzati.  Quindi fare clic su Aggiungi.")
+   > ![Modulo per aggiungere un amministratore](_img/admin-roles/add-form.png "Immettere le informazioni di accesso per il nuovo amministratore e scegliere se renderle un amministratore con privilegi avanzati.  Quindi selezionare Aggiungi.")
 
    > [!NOTE]
    > Se si vuole che questo amministratore sia in grado di assegnare altri amministratori, ricordarsi di selezionare la casella **Super Admin** (Amministratore con privilegi avanzati).
 
-5. Dopo aver fatto clic su **Add** (Aggiungi) per assegnare il nuovo amministratore, questi riceverà un messaggio di posta elettronica con l'invito ad accedere al portale.  
+5. Dopo aver selezionato **Aggiungi** per assegnare il nuovo amministratore, riceveranno un messaggio di posta elettronica che li invita a accedere al portale.  
 
 ## <a name="resources"></a>Risorse
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

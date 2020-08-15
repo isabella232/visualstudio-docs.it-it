@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ce3e41b2fe9dfdb080e23fb4270454bbd57f7ef
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85817203"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249507"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedura: modificare i file XML
 
@@ -22,7 +22,7 @@ L'editor XML è il nuovo editor per i file XML. Può essere usato per un file XM
 > [!NOTE]
 > I documenti XHTML sono gestiti dall'editor HTML.
 
-Per modificare un file XML, fare doppio clic sul file che si desidera modificare.
+Per modificare un file XML, aprire il file che si desidera modificare.
 
 ## <a name="add-a-new-xml-file-to-a-project"></a>Aggiungere un nuovo file XML a un progetto
 
@@ -50,7 +50,7 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 2. Selezionare il **file XML** per creare un nuovo file XML. in alternativa, selezionare **file XSLT** per creare un nuovo foglio di stile XSLT.
 
-3. Fare clic su **Apri**.
+3. Scegliere **Open**(Apri).
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Creare un progetto vuoto per i file XML
 
@@ -62,7 +62,7 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 2. Selezionare il linguaggio del codice desiderato e quindi selezionare il modello di **progetto vuoto (.NET Framework)** .
 
-3. Fare clic su **OK**.
+3. Selezionare **OK**.
 
 ::: moniker-end
 
@@ -72,7 +72,7 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 2. Immettere **progetto vuoto** nella casella di ricerca del modello, selezionare il modello di **progetto vuoto (.NET Framework)** , quindi fare clic su **Avanti**.
 
-3. Fare clic su **Crea**.
+3. Selezionare **Crea**.
 
 ::: moniker-end
 

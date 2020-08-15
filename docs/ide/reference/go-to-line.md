@@ -13,26 +13,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569192"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249880"
 ---
 # <a name="go-to-line-dialog-box"></a>Vai alla riga (finestra di dialogo)
 
-La finestra di dialogo **Vai alla riga** consente di spostarsi su una riga specifica nel documento attivo. Per accedere a questa finestra di dialogo, aprire un documento per la modifica, quindi selezionare **Modifica** > **Vai a** > **riga** o premere **Ctrl**+**G**.
+La finestra di dialogo **Vai alla riga** consente di spostarsi su una riga specifica nel documento attivo. Per accedere a questa finestra di dialogo, aprire un documento per la modifica, quindi selezionare **modifica**  >  **Vai a**  >  **Vai alla riga** o premere **CTRL** + **G**.
 
 ![Finestra di dialogo Vai alla riga in Visual Studio](media/go-to-line-dialog-box.png)
 
 ## <a name="line-number-1---n"></a>Numero di riga (1 - \<n>)
 
-Nella casella **Numero di riga (1 - \<n >)** immettere il numero della riga nel documento attivo su cui ci si vuole spostare. Il numero immesso deve essere compreso tra 1 e l'ultimo numero di riga nel documento corrente.
+Nella casella **numero riga (1- \<n> )** immettere il numero della riga nel documento attivo in cui si desidera spostarsi. Il numero immesso deve essere compreso tra 1 e l'ultimo numero di riga nel documento corrente.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Trovare codice usando i comandi Vai a](../../ide/go-to.md)
-- [Impostare i segnalibri nel codiceSet bookmarks in code](../../ide/setting-bookmarks-in-code.md)
-- [Trovare e sostituire testo](../../ide/finding-and-replacing-text.md)
+- [Trovare codice con i comandi Vai a](../../ide/go-to.md)
+- [Impostare segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)
+- [Cercare e sostituire testo](../../ide/finding-and-replacing-text.md)
 - [Funzionalità dell'editor del codice](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Comando Vai a](go-to-command.md)

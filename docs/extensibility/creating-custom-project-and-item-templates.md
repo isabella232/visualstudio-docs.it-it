@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c702aaaa51d86e2b8aac18a6b55201be03a635f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85903320"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248572"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Creare modelli di progetto e di elemento personalizzati
 
@@ -72,9 +72,9 @@ Per gli scenari di creazione di modelli di base, è consigliabile usare l' **esp
 
 1. Creare un progetto VSIX. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).
 
-2. Impostare il progetto VSIX come progetto di avvio. Nella **Esplora soluzioni**selezionare il nodo progetto VSIX, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**.
+2. Impostare il progetto VSIX come progetto di avvio. Nella **Esplora soluzioni**selezionare il nodo progetto VSIX, selezionare e mantenere (oppure fare clic con il pulsante destro del mouse) e selezionare **Imposta come progetto di avvio**.
 
-3. Impostare il progetto di modello di progetto come asset del progetto VSIX. Aprire il file con *estensione vsixmanifest* . Passare alla scheda **Asset** e fare clic su **nuovo**.
+3. Impostare il progetto di modello di progetto come asset del progetto VSIX. Aprire il file con *estensione vsixmanifest* . Passare alla scheda **Asset** e selezionare **nuovo**.
 
     1. Impostare il campo **tipo** su **Microsoft. VisualStudio. ProjectTemplate** o **Microsoft. VisualStudio. ItemTemplate**.
 
@@ -82,7 +82,7 @@ Per gli scenari di creazione di modelli di base, è consigliabile usare l' **esp
 
 4. Compilare la soluzione e premere **F5**. Viene visualizzata l'istanza sperimentale.
 
-5. Per un progetto di modello di progetto, il modello di progetto dovrebbe essere visualizzato nella finestra di dialogo **nuovo progetto** (**file**  >  **nuovo**  >  **progetto**), nel nodo Visual C# o Visual Basic. Per un progetto di modello di elemento, il modello di elemento verrà visualizzato nella finestra di dialogo **Aggiungi nuovo elemento** . Per visualizzare la finestra di dialogo **Aggiungi nuovo elemento** , dal **Esplora soluzioni**Selezionare il nodo del progetto e fare clic su **Aggiungi**  >  **nuovo elemento**.
+5. Per un progetto di modello di progetto, il modello di progetto dovrebbe essere visualizzato nella finestra di dialogo **nuovo progetto** (**file**  >  **nuovo**  >  **progetto**), nel nodo Visual C# o Visual Basic. Per un progetto di modello di elemento, il modello di elemento verrà visualizzato nella finestra di dialogo **Aggiungi nuovo elemento** . Per visualizzare la finestra di dialogo **Aggiungi nuovo elemento** , dal **Esplora soluzioni**Selezionare il nodo del progetto e selezionare **Aggiungi**  >  **nuovo elemento**.
 
 ## <a name="see-also"></a>Vedere anche
 

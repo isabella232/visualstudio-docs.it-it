@@ -14,11 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d8b5e05fb234e9997bce615f7b2de1d790c1ae0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "86014588"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247651"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procedura dettagliata: creare una Web part per SharePoint
 
@@ -203,7 +204,7 @@ Per popolare la griglia di dati visualizzata nella web part, specificare il perc
 
 ## <a name="test-the-web-part-verb"></a>Testare il verbo della web part
 
-Mostrare e nascondere i dipendenti che non sono responsabili facendo clic su un elemento visualizzato nel menu dei verbi della web part.
+Consente di visualizzare e nascondere i dipendenti che non sono responsabili selezionando un elemento visualizzato nel menu dei verbi della web part.
 
 1. Scegliere la freccia visualizzata sul lato destro della web part, quindi scegliere **Mostra Manager solo** dal menu visualizzato.
 

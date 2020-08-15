@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a37d58d1bd18ef19f610602ec8f2238816405e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285751"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250768"
 ---
 # <a name="understand-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
 
@@ -86,21 +86,21 @@ I report di strumentazione usano questi quattro valori per rappresentare il temp
 
 La profilatura della concorrenza raccoglie informazioni sulle app multithread. La profilatura della contesa delle risorse raccoglie informazioni dettagliate sullo stack di chiamate ogni volta che i thread in conflitto attendono l'accesso a una risorsa condivisa. La visualizzazione della concorrenza raccoglie anche informazioni più generali sul modo in cui l'app multithreading interagisce con:
 
-  - Stesso.
-  - L'hardware.
-  - Sistema operativo.
-  - Altri processi sul computer host.
+- Stesso.
+- L'hardware.
+- Sistema operativo.
+- Altri processi sul computer host.
 
 Report sui conflitti di risorse Visualizza il numero totale di conflitti. Segnalano inoltre il tempo totale di attesa di una risorsa per i moduli, le funzioni, le righe del codice sorgente e le istruzioni. I grafici della sequenza temporale mostrano i conflitti che si sono verificati.
 
 Il Visualizzatore di concorrenza Visualizza informazioni grafiche che consentono di individuare:
 
-  - Colli di bottiglia delle prestazioni.
-  - Sottoutilizzo della CPU.
-  - Contesa di thread.
-  - Migrazione di thread.
-  - Ritardi di sincronizzazione.
-  - Aree di I/O sovrapposte.
+- Colli di bottiglia delle prestazioni.
+- Sottoutilizzo della CPU.
+- Contesa di thread.
+- Migrazione di thread.
+- Ritardi di sincronizzazione.
+- Aree di I/O sovrapposte.
 
   Quando possibile, l'output grafico si collega ai dati dallo stack di chiamate e dal codice sorgente. I dati di visualizzazione della concorrenza possono essere raccolti solo per le app della riga di comando e le app di Windows.
 
@@ -146,7 +146,7 @@ Per informazioni sui dati di interazione tra livelli raccolti dagli strumenti di
 
 [Viste di interazione tra livelli](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 

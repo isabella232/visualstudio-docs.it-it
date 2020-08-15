@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: 19b4bd7c6fce88aa99b336d98d6bf471509af556
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453681"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248432"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -30,10 +30,10 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Per passare da una sottoscrizione all'altra è possibile:
 
-- Fare clic sul menu a discesa in alto a destra e scegliere la sottoscrizione dall'elenco
-- Fare clic sulla scheda Sottoscrizioni e quindi fare clic sulla sottoscrizione necessaria
+- Selezionare l'elenco a discesa in alto a destra e scegliere la sottoscrizione dall'elenco
+- Selezionare la scheda Sottoscrizioni e quindi selezionare la sottoscrizione desiderata
   > [!div class="mx-imgBorder"]
-  > ![Passaggio da una sottoscrizione all'altra](_img/manage-vs-subscriptions/change-subscription-resized.png "Fare clic sulla scheda sottoscrizioni per visualizzare informazioni dettagliate su tutte le sottoscrizioni e per passare dall'una all'altra.")
+  > ![Passaggio da una sottoscrizione all'altra](_img/manage-vs-subscriptions/change-subscription-resized.png "Selezionare la scheda sottoscrizioni per visualizzare informazioni dettagliate su tutte le sottoscrizioni e per passare dall'una all'altra.")
 
 ### <a name="if-your-subscription-is-not-visible"></a>Se la sottoscrizione non è visibile...
 
@@ -68,17 +68,17 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
 
 È possibile modificare facilmente le informazioni di contatto e le preferenze nel profilo personale.
 
-1. Fare clic sul nome nell'angolo superiore destro del Portale sottoscrittore.
-2. Fai clic sul pulsante **Modifica profilo**.
+1. Selezionare il nome nell'angolo superiore destro del portale Sottoscrittore.
+2. Selezionare il pulsante **modifica profilo** .
 3. Nella scheda **Informazioni** è possibile modificare nome, indirizzo e-mail, paese/area geografica, immagine del profilo e preferenze di contatto. Nella scheda **Preferenze** è possibile selezionare le impostazioni preferite per lingua, criteri di data e ora, fuso orario e tema dell'interfaccia utente.
-4. Dopo aver completato le modifiche, fare clic su **Salva**.
-5. Fare clic sul pulsante **Indietro** del browser per tornare alla pagina Vantaggi.
+4. Dopo aver completato le modifiche, selezionare **Salva**.
+5. Selezionare il pulsante **indietro** del browser per tornare alla pagina dei vantaggi.
 
 ### <a name="setting-communications-preferences"></a>Impostazione delle preferenze di comunicazione
 Se si vuole ricevere aggiornamenti periodici sulla propria sottoscrizione e i vantaggi disponibili, inclusa la newsletter mensile Sottoscrizioni di Visual Studio, [aggiornare le preferenze](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) selezionando la casella di controllo relativa alle sottoscrizioni di Visual Studio nel profilo personale di Visual Studio. È possibile modificare queste preferenze e annullare la sottoscrizione in qualsiasi momento. 
 
    > [!div class="mx-imgBorder"]
-   > ![Impostazione delle preferenze](_img/manage-vs-subscriptions/change-prefs.png "Fare clic sulla casella di posta elettronica del programma sottoscrizioni di Visual Studio per ricevere gli aggiornamenti.")
+   > ![Impostazione delle preferenze](_img/manage-vs-subscriptions/change-prefs.png "Selezionare la casella di posta elettronica del programma sottoscrizioni di Visual Studio per ricevere gli aggiornamenti.")
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Collegamento della propria sottoscrizione alle sottoscrizioni Azure DevOps Services o Azure esistenti
 Se si accede alla propria sottoscrizione tramite un account Microsoft personale (MSA) e si possiede una sottoscrizione che include Azure DevOps Services o Microsoft Azure tramite un account aziendale o dell'istituto di istruzione gestito da Azure, è possibile collegare le due sottoscrizioni. Si tratta di un "account alternativo" che consente di continuare a usare l'account Microsoft per accedere alla sottoscrizione e avere contemporaneamente accesso alle risorse esistenti di Azure, Azure DevOps Services o IDE associate agli account aziendali o dell'istituto di istruzione.
@@ -88,11 +88,11 @@ Anche se gli account usano lo stesso indirizzo e-mail, è necessario aggiungere 
 Per aggiungere un account alternativo:
 
 1. Accedere al [Portale sottoscrittore](https://my.visualstudio.com?wt.mc_id=o~msft~docs) con il proprio account Microsoft (MSA).
-2. Fare clic sulla scheda **Sottoscrizioni**.
+2. Selezionare la scheda **Sottoscrizioni** .
 3. In **Collegamenti correlati** scegliere **Add alternate account** (Aggiungi account alternativo).
-4. Immettere l'indirizzo e-mail dell'account aziendale o dell'istituto di istruzione e fare clic su **Aggiungi**.
+4. Immettere l'indirizzo di posta elettronica dell'account aziendale e dell'Istituto di istruzione e selezionare **Aggiungi**.
 
-Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento facendo clic sulla scheda **Sottoscrizioni** e scegliendo l'opzione appropriata nella sezione **Collegamenti correlati**.
+Una volta aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento selezionando la scheda **sottoscrizioni** e scegliendo l'opzione appropriata nella sezione **collegamenti correlati** .
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

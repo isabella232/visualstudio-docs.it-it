@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5970e7e4408c826058cb27590254b278d4cdb9b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85281006"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249212"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "85281006"
 > [!TIP]
 > Se non si è certi se usare **Connetti a processo** per lo scenario di debug, Vedere [scenari di debug comuni](#BKMK_Scenarios).
 
-## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a>Connettersi a un processo in esecuzione nel computer locale
+## <a name="attach-to-a-running-process-on-your-local-machine"></a><a name="BKMK_Attach_to_a_running_process"></a> Connettersi a un processo in esecuzione nel computer locale
 
 Per riconnettersi rapidamente a un processo collegato in precedenza, vedere [Riconnetti a un processo](#BKMK_reattach).
 
@@ -78,14 +78,14 @@ Per riconnettersi rapidamente a un processo collegato in precedenza, vedere [Ric
    1. Nella finestra di dialogo **Seleziona tipo di codice** selezionare **Esegui il debug di questi tipi di codice**.
       Se si verifica un errore quando si tenta di connettersi a un processo nell'elenco, è possibile utilizzare la finestra di dialogo [Seleziona tipo di codice](../debugger/select-code-type-dialog-box.md) per [risolvere](#BKMK_Troubleshoot_attach_errors) il problema.
    1. Selezionare i tipi di codice di cui si vuole eseguire il debug.
-   1. Fare clic su **OK**.
+   1. Selezionare **OK**.
 
 1. Selezionare **Allega**.
 
 >[!NOTE]
 >È possibile essere collegati a più app per il debug, ma solo un'app è attiva nel debugger alla volta. È possibile impostare l'app attiva nella barra degli strumenti del **percorso di debug** di Visual Studio o nella finestra **processi** .
 
-## <a name="attach-to-a-process-on-a-remote-computer"></a><a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>Connettersi a un processo in un computer remoto
+## <a name="attach-to-a-process-on-a-remote-computer"></a><a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Connettersi a un processo in un computer remoto
 
 È inoltre possibile selezionare un computer remoto nella finestra di dialogo **Connetti a processo** , visualizzare un elenco dei processi disponibili in esecuzione in tale computer e connettersi a uno o più processi per il debug. Il debugger remoto (*msvsmon.exe*) deve essere in esecuzione nel computer remoto. Per ulteriori informazioni, vedere [Remote Debugging](../debugger/remote-debugging.md).
 
@@ -148,7 +148,7 @@ Per istruzioni più complete sul debug di applicazioni ASP.NET distribuite in II
    1. Fare clic su **Seleziona**.
    1. Nella finestra di dialogo **Seleziona tipo di codice** selezionare **Esegui il debug di questi tipi di codice**.
       Se si verifica un errore quando si tenta di connettersi a un processo nell'elenco, è possibile utilizzare la finestra di dialogo [Seleziona tipo di codice](../debugger/select-code-type-dialog-box.md) per [risolvere](#BKMK_Troubleshoot_attach_errors) il problema.
-   1. Fare clic su **OK**.
+   1. Selezionare **OK**.
 
 6. Selezionare **Allega**.
 
@@ -165,7 +165,7 @@ Se non è possibile adottare una di queste soluzioni alternative, una terza opzi
 
 Per altre informazioni, vedere [eseguire il debug remoto di .NET Core in esecuzione su Linux tramite SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a>Connettersi a un processo in esecuzione in un contenitore Docker Linux
+## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Connettersi a un processo in esecuzione in un contenitore Docker Linux
 
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un contenitore Docker di Linux .NET Core nel computer locale o remoto usando la finestra **di dialogo Connetti a processo** .
 
@@ -199,17 +199,15 @@ Per altre informazioni, vedere [eseguire il debug remoto di .NET Core in esecuzi
         ![Connettersi a un sistema remoto](../debugger/media/connect-remote-system.png "Connettersi a un sistema remoto")
         1. Selezionare un contenitore in esecuzione a cui connettersi dopo aver eseguito correttamente la connessione a SSH o daemon e quindi fare clic su **OK**.
 
-    
     1. ***Per impostare la destinazione su un contenitore remoto che esegue un processo tramite un [daemon Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
         1. Specificare l'indirizzo del daemon, ad esempio tramite TCP, IP e così via, in **Docker host (facoltativo)** e fare clic sul collegamento Refresh (Aggiorna).
         1. Selezionare un contenitore in esecuzione a cui connettersi dopo la connessione al daemon e fare clic su **OK**.
 
 4. Scegliere il processo contenitore corrispondente nell'elenco dei **processi disponibili** e selezionare **Connetti** per avviare il debug del processo contenitore C# in Visual Studio.
 
-    ![Menu Docker collegato completato](../debugger/media/docker-attach-complete.png "Menu Docker collegato Linux completato")
-    
+    ![Menu Docker collegato completato](../debugger/media/docker-attach-complete.png "Menu Docker collegato Linux completato")    
 
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a>Connettersi a un processo in esecuzione in un contenitore Docker di Windows
+## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Connettersi a un processo in esecuzione in un contenitore Docker di Windows
 
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un contenitore Docker di Windows sul computer locale usando la finestra **di dialogo Connetti a processo** .
 
@@ -238,21 +236,19 @@ Per altre informazioni, vedere [eseguire il debug remoto di .NET Core in esecuzi
 4. Scegliere il processo contenitore corrispondente nell'elenco dei **processi disponibili** e selezionare **Connetti** per avviare il debug del processo contenitore C#.
 
     ![Menu Docker collegato completato](../debugger/media/docker-attach-complete-windows.png "Menu di alconnessione Docker Windows completato")
-    
 
 5.  Scegliere il processo contenitore corrispondente nell'elenco dei processi disponibili e scegliere **Connetti** per avviare il debug del processo contenitore C#.
 
-
 ::: moniker-end
 
-## <a name="reattach-to-a-process"></a><a name="BKMK_reattach"></a>Riconnetti a un processo
+## <a name="reattach-to-a-process"></a><a name="BKMK_reattach"></a> Riconnetti a un processo
 
 È possibile ricollegare rapidamente ai processi a cui è stato precedentemente associato scegliendo **debug**  >  **Riconnetti a processo** (**MAIUSC** + **ALT** + **P**). Quando si sceglie questo comando, il debugger tenterà immediatamente di connettersi agli ultimi processi a cui si è connessi tentando innanzitutto di trovare la corrispondenza con l'ID del processo precedente e, in caso di esito negativo, eseguendo la corrispondenza con il nome del processo precedente. Se non vengono trovate corrispondenze o se più processi hanno lo stesso nome, verrà aperta la finestra **di dialogo Connetti a processo** , in modo da poter selezionare il processo corretto.
 
 > [!NOTE]
 > Il comando **Riconnetti a processo** è disponibile a partire da Visual Studio 2017.
 
-## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a>Scenari di debug comuni
+## <a name="common-debugging-scenarios"></a><a name="BKMK_Scenarios"></a> Scenari di debug comuni
 
 Per determinare se usare **Connetti a processo** e il processo a cui collegarsi, nella tabella seguente vengono illustrati alcuni scenari di debug comuni, con collegamenti ad altre istruzioni, se disponibili. (L'elenco non è esaustivo).
 
@@ -315,13 +311,13 @@ Se si desiderano informazioni più specifiche sui motivi per cui il debugger non
 
     3. Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare gli altri tipi di codice.
 
-    4. Fare clic su **OK**.
+    4. Selezionare **OK**.
 
     5. Nella finestra di dialogo **Connetti a processo** selezionare **Connetti**.
 
     La connessione non verrà eseguita e verrà visualizzato un messaggio di errore specifico.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug di più processi](../debugger/debug-multiple-processes.md)
 - [Debug just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
