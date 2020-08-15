@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 3c529b746d647f0f26306e89c56c73171ba50c1d
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902913"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247330"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
@@ -20,19 +20,19 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
 ## <a name="activation-steps"></a>Passaggi di attivazione
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Individuare il riquadro Azure nella sezione Strumenti della pagina Vantaggi e fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.
+2. Individuare il riquadro Azure nella sezione strumenti della pagina vantaggi e selezionare **attiva** collegamento nella parte inferiore del riquadro del vantaggio.
    > [!div class="mx-imgBorder"]
    > ![Riquadro Azure](_img/vs-azure/vs-azure-tile.png)
 
-3. Se non si ha una sottoscrizione di Azure esistente, verrà richiesto di immettere le informazioni necessarie per creare la sottoscrizione di Azure.  Il primo passaggio consiste nel fornire le informazioni personali e quindi fare clic su **Avanti**.
+3. Se non si ha una sottoscrizione di Azure esistente, verrà richiesto di immettere le informazioni necessarie per creare la sottoscrizione di Azure.  Il primo passaggio consiste nel fornire le informazioni personali e quindi selezionare **Avanti**.
    > [!div class="mx-imgBorder"]
    > ![Registrazione di Azure](_img/vs-azure/vs-azure-about-you.png)
 
-4. Successivamente, sarà necessario verificare l'identità usando un semplice codice di verifica. Specificare il numero di telefono e scegliere se si desidera ricevere il codice in base a testo o telefono.  Immettere il codice ricevuto e fare clic su **Verifica codice**.   
+4. Successivamente, sarà necessario verificare l'identità usando un semplice codice di verifica. Specificare il numero di telefono e scegliere se si desidera ricevere il codice in base a testo o telefono.  Immettere il codice ricevuto e selezionare **Verifica codice**.   
    > [!div class="mx-imgBorder"]
    > ![Preparazione di Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. Per il passaggio finale, fare clic sulla casella di controllo per accettare le condizioni e quindi fare clic su **Iscriviti**.  Questo è tutto ciò che occorre fare.
+5. Per il passaggio finale, selezionare la casella di controllo per accettare le condizioni e quindi selezionare **Iscriviti**.  Questo è tutto ciò che occorre fare.
    > [!div class="mx-imgBorder"]
    > ![Preparazione di Azure](_img/vs-azure/vs-azure-agreement.png)
 
@@ -110,8 +110,8 @@ Vedere la documentazione del [supporto tecnico](vs-tech-support.md) per informaz
 R: la proprietà intellettuale prodotta da un dipendente creato per le risorse fornite da tale società è quindi una proprietà intellettuale della società che fornisce la risorsa. Quindi, se si riceve la sottoscrizione di Visual Studio tramite il proprio datore di lavoro, si applicano i criteri di proprietà intellettuale. 
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Serve aiuto con Azure?  Vedere queste risorse:
-  - Supporto tecnico:[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+- Serve aiuto con Azure?  vedere le risorse seguenti:
+  - Supporto tecnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Suggerimenti & per Azure](https://microsoft.github.io/AzureTipsAndTricks/ "Suggerimenti & per Azure") 
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).

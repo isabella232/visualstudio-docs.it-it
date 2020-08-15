@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Informazioni su come installare Microsoft 365 app per Enterprise
-ms.openlocfilehash: 341598e323b004463d9af2f1b18d5096dea9f3b2
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.openlocfilehash: 8ece49244d5bdecadc5992cda4e56d0785666e2a
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85902988"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250743"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 app per Enterprise nelle sottoscrizioni di Visual Studio
 Microsoft 365 Apps for Enterprise (in precedenza Office 365 Pro Plus) è disponibile nelle sottoscrizioni di Visual Studio selezionate. 
@@ -25,30 +25,30 @@ Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 3
 ## <a name="activation-steps"></a>Passaggi di attivazione
 Il processo per l'attivazione delle app Microsoft 365 per la sottoscrizione Enterprise è semplice.  Per attivare la sottoscrizione e installare le applicazioni, attenersi alla procedura seguente:
 
-1. Accedere alla sottoscrizione di Visual Studio all'indirizzo[https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-1. Individuare il riquadro app Microsoft 365 per Enterprise e fare clic su **attiva**.
+1. Accedere alla sottoscrizione di Visual Studio all'indirizzo [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+1. Individuare il riquadro app Microsoft 365 per Enterprise e selezionare **Activate (attiva**).
    > [!div class="mx-imgBorder"]
-   > ![Riquadro app Microsoft 365 per Enterprise](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Fare clic su' attiva ' per iniziare a usare la sottoscrizione.")
+   > ![Riquadro app Microsoft 365 per Enterprise](_img/microsoft-365-apps-for-enterprise/tile-activate.png "Selezionare ' attiva ' per iniziare a usare la sottoscrizione.")
 
-1. Nella finestra di dialogo "benvenuto, iniziamo a scoprire l'utente", fornire le informazioni di contatto personali richieste e quindi fare clic su **Avanti**.
+1. Nella finestra di dialogo "benvenuto, iniziamo a conoscerti", fornisci le informazioni di contatto personali richieste e quindi seleziona **Avanti**.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 le app per informazioni sui clienti aziendali](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "Immettere le informazioni di contatto")
 
-1. Nella finestra di dialogo "Crea ID utente" creare il nome utente e la password per il tenant, quindi fare clic su **Crea gratuito**.
+1. Nella finestra di dialogo "Crea ID utente" creare il nome utente e la password per il tenant, quindi selezionare **Crea gratuito**.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 app per la creazione di ID utente aziendali](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "Creare l'ID utente e la password")
 
-1. Successivamente, verrà richiesto di fornire un codice per dimostrare di non essere un robot.  È possibile fare in modo che il codice venga inviato come SMS.  Immettere il codice e fare clic su **Avanti**. 
+1. Successivamente, verrà richiesto di fornire un codice per dimostrare di non essere un robot.  È possibile fare in modo che il codice venga inviato come SMS.  Immettere il codice e selezionare **Avanti**. 
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 app per Enterprise dimostra di non essere un robot](_img/microsoft-365-apps-for-enterprise/prove-youre-not-a-robot.png "Richiedere un codice e immetterlo per continuare")
 
-1. Una volta creato l'account, verrà visualizzata una finestra di dialogo con la pagina di accesso per il portale di Office e il nuovo ID utente.  Prendere nota di queste informazioni per l'uso successivo, quindi fare clic su **Avvia installazione** per avviare l'installazione delle app Microsoft 365.
+1. Una volta creato l'account, verrà visualizzata una finestra di dialogo con la pagina di accesso per il portale di Office e il nuovo ID utente.  Prendere nota di queste informazioni per l'uso successivo e selezionare **Avvia installazione** per avviare l'installazione delle app Microsoft 365.
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 le app per Enterprise salvano queste informazioni](_img/microsoft-365-apps-for-enterprise/save-this-info.png "Salvare il nuovo ID utente e il collegamento al portale di Office.")
 
-1. Si accederà automaticamente al portale di Office e a questo punto si è pronti per installare le applicazioni.  Per iniziare, fare clic sul pulsante **Installa** .
+1. Si accederà automaticamente al portale di Office e a questo punto si è pronti per installare le applicazioni.  Per iniziare, selezionare il pulsante **Installa** .
    > [!div class="mx-imgBorder"]
-   > ![App Microsoft 365 per l'installazione Enterprise](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Per installare le applicazioni, fare clic sul pulsante ' Installa '.")
+   > ![App Microsoft 365 per l'installazione Enterprise](_img/microsoft-365-apps-for-enterprise/install-your-office-apps.png "Selezionare il pulsante "Installa" per installare le applicazioni.")
 1. Seguire le istruzioni per installare le app selezionate.  
 
 ## <a name="eligibility"></a>Idoneità

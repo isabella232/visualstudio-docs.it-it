@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
-ms.openlocfilehash: 008052c9b78f93b84e650329cd7ebaf6200d21f1
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950524"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88249543"
 ---
 # <a name="create-razor-web-apps"></a>Creare app Web Razor
 
@@ -41,23 +41,23 @@ Visual Studio per Mac supporta la modifica Razor, tra cui IntelliSense e l'evide
 
    ![App Web Razor in Safari](media/razor-webapp.png)
 
-## <a name="project-anatomy"></a>Dettagli del progetto
+## <a name="project-anatomy"></a>Anatomia del progetto
 
 Le app Web Razor includono i componenti seguenti.
 
 ### <a name="pages-folder"></a>Cartella Pages
 
 Questa cartella contiene le pagine Web di un progetto, insieme al code-behind per ogni:
-   - Un file con * \* estensione cshtml* per il markup HTML e sintassi Razor.
-   - Un file con * \* estensione cshtml.cs* per il code-behind C# per la gestione degli eventi di pagina.
+- Un file con * \* estensione cshtml* per il markup HTML e sintassi Razor.
+- Un file con * \* estensione cshtml.cs* per il code-behind C# per la gestione degli eventi di pagina.
 
-I nomi dei file di supporto iniziano con un carattere di sottolineatura. Ad esempio, il file _Layout.cshtml configura gli elementi dell'interfaccia utente comuni a tutte le pagine. Questo file consente di impostare il menu di navigazione nella parte superiore della pagina e le informazioni sul copyright nella parte inferiore della pagina. Per altre informazioni, vedere [Layout in ASP.NET Core](/aspnet/core/mvc/views/layout).
+I nomi dei file di supporto iniziano con un carattere di sottolineatura. Il file * \_ layout. cshtml* , ad esempio, configura gli elementi dell'interfaccia utente comuni a tutte le pagine. Questo file consente di impostare il menu di navigazione nella parte superiore della pagina e le informazioni sul copyright nella parte inferiore della pagina. Per altre informazioni, vedere [Layout in ASP.NET Core](/aspnet/core/mvc/views/layout).
 
-### <a name="launch-settings"></a>Impostazioni per l'avvio
+### <a name="launch-settings"></a>Impostazioni di avvio
 
 Il *launchSettings.jsnel* file contiene le impostazioni di IIS, l'URL dell'applicazione e altre impostazioni correlate.
 
-### <a name="app-settings"></a>Impostazioni app
+### <a name="app-settings"></a>Impostazioni dell'app
 
 Il *appSettings.jsnel* file contiene i dati di configurazione, ad esempio le stringhe di connessione.
 

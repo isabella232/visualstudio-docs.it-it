@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
-ms.openlocfilehash: d38da1784eb543519f1a36ba7342f0b13ab2b1ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6ce2208e6d1028e1e697b216d41cdd825dfc0d33
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289352"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247313"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
 Se sono state acquistate sottoscrizioni di Visual Studio tramite il programma MPSA, è necessario tenere presente alcuni aspetti prima di poter diventare un amministratore di sottoscrizioni di Visual Studio e assegnare le sottoscrizioni agli utenti. Se il proprio account è già stato configurato come amministratore, è possibile passare direttamente al [portale di amministrazione](https://manage.visualstudio.com/) delle sottoscrizioni di Visual Studio.
@@ -39,14 +39,14 @@ Ecco alcuni requisiti/passaggi necessari per diventare un amministratore delle s
 
 Dopo aver soddisfatto i criteri indicati sopra, è possibile procedere all'associazione dell'account di acquisto al tenant eseguendo la procedura seguente.
 1. Accedere a [Business Center](https://businessaccount.microsoft.com/Customer).
-2. Fare clic sulla scheda **Account** e scegliere **Associa dominio**.
+2. Selezionare la scheda **account** e scegliere **associa domini**.
 3. Selezionare l'**account di acquisto** se sono disponibili più account.
 4. Selezionare il **tenant**, ad esempio contoso.onmicrosoft.com.
-5. Fare clic su **Associa dominio**.
+5. Selezionare **associa dominio**.
 
 Durante l'associazione, tutti gli utenti che soddisfano i criteri effettuano generalmente il provisioning come amministratori delle sottoscrizioni di Visual Studio entro pochi minuti. In alcuni casi, tuttavia, potrebbe essere necessario attendere fino a 24 ore. Al termine del provisioning del tenant, sarà possibile accedere al portale di amministrazione delle sottoscrizioni di Visual Studio. Se il tempo necessario per più di 24 ore, contattare il supporto di MPSA seguendo questa procedura:
-1. Connetti a<https://www.microsoft.com/licensing/mpsa/default>
-2. Fare clic sul menu **altro** nella parte superiore della pagina. 
+1. Connetti a <https://www.microsoft.com/licensing/mpsa/default>
+2. Selezionare il menu **altro** nella parte superiore della pagina. 
 3. Scegli **supporto**
 4. Scegli **supporto licenze**
 5. Selezionare l'opzione di supporto più adatta alle proprie esigenze. 
@@ -62,7 +62,7 @@ Per una descrizione più dettagliata di questo processo,vedere le [guide rapide]
 > [!NOTE]
 > Dopo aver completato il processo di take-over del dominio, è necessario soddisfare i criteri dei cinque passaggi della sezione Associazione pre-tenant (tenant gestito). Dopo aver soddisfatto i criteri, sarà necessario contattare il supporto MPSA per eseguire il provisioning di altri amministratori delle sottoscrizioni di Visual Studio.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)

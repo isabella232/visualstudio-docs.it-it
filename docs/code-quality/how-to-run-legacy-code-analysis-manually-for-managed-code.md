@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44190f8e828f9a971f15b57266978603dcac8139
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 8a6b52a09729cbc76f91eee76f23e652f07c934f
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85462062"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88250524"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Procedura: eseguire manualmente l'analisi del codice legacy per il codice gestito
+
 Lo strumento di analisi del codice fornisce informazioni sul possibile difetto nel codice sorgente. È possibile eseguire l'analisi del codice automaticamente con ogni compilazione di un progetto di codice ed è anche possibile eseguire manualmente l'analisi del codice. Le regole controllate quando viene eseguita l'analisi del codice vengono specificate nella pagina analisi codice delle pagine delle proprietà del progetto. Per altre informazioni, vedere [procedura: configurare l'analisi del codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md).
 
 ## <a name="to-run-code-analysis-manually"></a>Per eseguire manualmente l'analisi del codice
@@ -31,4 +32,3 @@ set EnableLegacyCodeAnalysis = true
 2. In **Esplora soluzioni**fare clic sul progetto.
 
 3. Nel menu **analizza** fare clic su **Esegui analisi del codice sul** *nome del progetto*.
-

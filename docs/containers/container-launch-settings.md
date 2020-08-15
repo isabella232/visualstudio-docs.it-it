@@ -6,18 +6,19 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 07dd9dd4c5c61014eecf245719b142cdbaecbc38
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283333"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88247977"
 ---
 # <a name="container-tools-launch-settings"></a>Impostazioni di avvio degli strumenti contenitore
 
 Nella cartella *Properties* di un progetto ASP.NET Core è possibile trovare il launchSettings.jssu file, che contiene le impostazioni che controllano la modalità di avvio dell'app Web nel computer di sviluppo. Per informazioni dettagliate sul modo in cui questo file viene usato nello sviluppo ASP.NET, vedere [usare più ambienti in ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). In *launchSettings.json*, le impostazioni nella sezione **Docker** sono correlate al modo in cui Visual Studio gestisce le app in contenitori.
 
 ::: moniker range="vs-2017"
+
 ```json
     "Docker": {
       "commandName": "Docker",
@@ -86,6 +87,6 @@ L'impostazione CommandName indica che questa sezione si applica agli strumenti c
 
 Configurare il progetto impostando le [proprietà di compilazione degli strumenti contenitore](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Proprietà di compilazione Docker Compose](docker-compose-properties.md)
