@@ -1,8 +1,8 @@
 ---
-title: "Passaggio 5: Distribuzione dell'app di base dell'ASP.NET in AzureStep 5: Deploying Your ASP.NET Core App to Azure"
+title: "Passaggio 5: distribuzione dell'app ASP.NET Core in Azure"
 description: Distribuire l'App Web di ASP.NET Core in Azure con questo video di esercitazione e per istruzioni dettagliate.
 ms.custom: get-started
-ms.date: 03/31/2019
+ms.date: 08/14/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 monikerRange: vs-2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: dc13dbdadb0c9bca25a816b15c5a99039bff454c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
+ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580025"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "88248622"
 ---
-# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Passaggio 5: Distribuire l'app ASP.NET Core in AzureStep 5: Deploy your ASP.NET Core app to Azure
+# <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Passaggio 5: distribuire l'app ASP.NET Core in Azure
 
 Seguire questi passaggi per distribuire l'app ASP.NET Core e il relativo database in Azure.
 
@@ -35,19 +35,45 @@ _Guardare questo video e seguire le indicazioni per distribuire la prima app ASP
 
 Aprire l'app ASP.NET Core in Visual Studio 2019. L'app deve essere già configurata con EF Core e un'API Web funzionante, come descritto nel [passaggio 4 di questa serie di esercitazioni](tutorial-aspnet-core-ef-step-04.md).
 
-## <a name="publish-to-azure-app-service"></a>Pubblicare in Servizio app di Azure
+## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 
-Fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**. Lasciare le impostazioni predefinite **Servizio app** e **Crea nuovo**, quindi fare clic sul pulsante **Pubblica**. Se non si ha già un account Azure, fare clic su **Crea un account Azure gratuito** e completare il breve processo di registrazione.
+1. Fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**. Nella **pubblicazione** guidata scegliere **Azure** come destinazione.
 
-Aggiungere un'istanza di SQL Server. Specificare nome utente e password di un amministratore.
+   ![Screenshot del servizio app Azure 1](media/vs-2019/app-service-screen-1.png)
 
-![Visual Studio 2019 - Creare il server di Azure SQL](media/vs-2019/vs2019-azure-sql-server.png)
+1. Per la destinazione specifica, scegliere **servizio app Azure (Windows)**.
 
-Aggiungere Application Insights.
+   ![Screenshot del servizio app Azure 2](media/vs-2019/app-service-screen-2.png)
 
-Fare clic sul pulsante **Crea** per continuare.
+1. Scegliere **Crea un nuovo servizio app Azure**. Se non si ha già un account Azure, fare clic su **Crea un account Azure gratuito** e completare il breve processo di registrazione.
 
-![Visual Studio 2019 - Creare un nuovo servizio app di Azure](media/vs-2019/vs2019-azure-create-new-app-service.png)
+   ![Screenshot del servizio app Azure 3](media/vs-2019/app-service-screen-3.png)
+
+1. Specificare un nome e un gruppo di risorse o accettare i valori predefiniti e scegliere **Crea**. Un gruppo di risorse è semplicemente un modo per organizzare le risorse correlate in Azure, ad esempio i servizi che interagiscono con gli account di archiviazione, gli insiemi di credenziali delle chiavi e i database.
+
+   ![Screenshot del servizio app Azure 4](media/vs-2019/app-service-screen-4.png)
+
+1. Scegliere **Fine**. Le risorse vengono create in Azure, l'app viene distribuita e la scheda **pubblica** viene popolata con le informazioni su ciò che è appena stato creato. La scheda **pubblica** fornisce un pulsante per la pubblicazione con un solo clic con la stessa configurazione, Mostra i dettagli di configurazione oppure consente di aggiungere servizi, ad esempio un database.
+
+A questo punto, aggiungere un database di SQL Server di Azure.
+
+1. Nella scheda **pubblica** , in **dipendenze servizio**, accanto a **SQL Server database**, scegliere **Configura**.
+
+1. Nella schermata successiva scegliere **database SQL di Azure**.
+
+   ![Screenshot della schermata del database SQL di Azure](media/vs-2019/app-service-azure-sql-db.png)
+
+1. Nella schermata **Configura database SQL** scegliere **Crea un database SQL**.
+
+   ![Screenshot della schermata di configurazione del database SQL](media/vs-2019/app-service-azure-sql-db-2.png)
+
+1. Nel **database SQL di Azure: creare una nuova** schermata creare un nuovo server di database.
+
+   ![Screenshot del database SQL di Azure: Crea nuovo](media/vs-2019/app-service-azure-sql-db-3.png)
+
+1. Nella **SQL Server: Crea nuova** schermata, scegliere un nome, un percorso e specificare il nome utente e la password di un amministratore.
+
+   ![Visual Studio 2019 - Creare il server di Azure SQL](media/vs-2019/app-service-azure-sql-db-overlayed.png)
 
 ## <a name="exploring-the-azure-portal-and-your-hosted-app"></a>Esplorare il portale di Azure e l'app ospitata
 
@@ -57,7 +83,7 @@ Dopo aver creato il servizio app, il sito verrà avviato in un browser. Durante 
 
 ### <a name="scalability"></a>Scalabilità
 
-È possibile esaminare le opzioni per aumentare ne everso l'app. La scalabilità verticale si riferisce all'aumento delle risorse assegnate a ogni istanza che ospita l'app. oppure aumentare il numero di istanze che ospitano l'app. Si può anche configurare la scalabilità automatica per l'app, in modo da aumentare automaticamente il numero di istanze usate per ospitare l'app in risposta al carico, per poi ridurle quando il carico diminuisce.
+È possibile esaminare le opzioni per la scalabilità dell'app e così via. La scalabilità verticale si riferisce all'aumento delle risorse assegnate a ogni istanza che ospita l'app. oppure aumentare il numero di istanze che ospitano l'app. Si può anche configurare la scalabilità automatica per l'app, in modo da aumentare automaticamente il numero di istanze usate per ospitare l'app in risposta al carico, per poi ridurle quando il carico diminuisce.
 
 ### <a name="security-and-compliance"></a>Sicurezza e conformità
 

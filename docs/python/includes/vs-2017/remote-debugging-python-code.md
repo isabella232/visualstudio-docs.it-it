@@ -10,20 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82c22143f70bc53a358cd25e6ff2ad91eff1e2e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a1f8c145d7c9c072adcc902cae9f2b6ae36937cd
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541076"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88246234"
 ---
 Visual Studio può avviare ed eseguire il debug di applicazioni Python in locale e in remoto in un computer Windows (vedere [Remote Debugging](../../../debugger/remote-debugging.md)). È anche possibile eseguire il debug in remoto su un altro sistema operativo o dispositivo oppure su un'implementazione di Python diversa da CPython usando la [libreria ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Quando si usa ptvsd, il codice Python di cui si esegue il debug ospita il server di debug a cui può collegarsi Visual Studio. L'hosting richiede una piccola modifica del codice per importare e abilitare il server e potrebbe richiedere configurazioni della rete o del firewall nel computer remoto per consentire le connessioni TCP.
 
-|   |   |
-|---|---|
-| ![icona della telecamera per un video](../../../install/media/video-icon.png "Guardare un video") | Per un'introduzione al debug remoto, vedere [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (Approfondimento: il debug multipiattaforma) (youtube.com, 6m22s), applicabile sia a Visual Studio 2015 che a Visual Studio 2017. |
+![icona della fotocamera cinematografica per il video](../../../install/media/video-icon.png "Guardare un video") Per un'introduzione al debug remoto, vedere [Deep Dive: debug remoto multipiattaforma](https://youtu.be/y1Qq7BrV6Cc) (YouTube.com, 6m22s), applicabile sia a Visual Studio 2015 che a 2017.
 
 ## <a name="set-up-a-linux-computer"></a>Impostare un computer Linux
 
