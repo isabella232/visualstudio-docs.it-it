@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d80a8d2ab334495daac4d82fe5c8faa2ad04683d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544248"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238244"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 
@@ -46,7 +46,7 @@ In questa procedura dettagliata viene creato un linguaggio specifico di dominio 
 
 Prima di iniziare questa procedura dettagliata, è necessario installare prima i componenti seguenti:
 
-| | |
+| Componente | Collegamento |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
@@ -54,7 +54,7 @@ Prima di iniziare questa procedura dettagliata, è necessario installare prima i
 
 ## <a name="create-the-project"></a>Creare il progetto
 
-1. Creare un progetto Finestra di progettazione Domain-Specific Language. Denomina tale elemento `TrackingPropertyDSL`.
+1. Creare un progetto Finestra di progettazione Domain-Specific Language. Denominarlo `TrackingPropertyDSL`.
 
 2. Nella **procedura guidata finestra di progettazione Domain-Specific Language**impostare le opzioni seguenti:
 
@@ -718,7 +718,7 @@ Il passaggio successivo consiste nel compilare ed eseguire la finestra di proget
 
 1. Nel menu **Compila** fare clic su **Ricompila soluzione**.
 
-2. Scegliere **Avvia debug**dal menu **debug** .
+2. Scegliere **Avvia debug** dal menu **Debug**.
 
     La build sperimentale di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] apre la soluzione di **debug** , che contiene un file di test vuoto.
 

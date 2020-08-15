@@ -1,5 +1,5 @@
 ---
-title: Funzionalità del servizio di linguaggio Legacy2 - Documenti Microsoft
+title: Servizio di linguaggio legacy Features2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f12e816476aa54f334988b99b9e86e820784f6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.openlocfilehash: 04e7df7fc5c7532d2db45bc2b643a249d1e566c7
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "80707364"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237906"
 ---
-# <a name="legacy-language-service-features"></a>Funzionalità dei servizi di linguaggio legacy
+# <a name="legacy-language-service-features-2"></a>Funzionalità del servizio di linguaggio Legacy 2
 Negli argomenti seguenti sono elencate alcune delle funzionalità del servizio di linguaggio legacy che è possibile fornire.
 
- Servizi di linguaggio legacy vengono implementati come parte di un VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'utilizzare le estensioni MEF. Per ulteriori informazioni sul nuovo modo di implementare un servizio di linguaggio, vedere [Editor e estensioni del servizio](../../extensibility/editor-and-language-service-extensions.md)di linguaggio .
+ I servizi di linguaggio legacy sono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per ulteriori informazioni sul nuovo modo per implementare un servizio di linguaggio, vedere [Editor e le estensioni del servizio di linguaggio](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Si consiglia di iniziare a utilizzare la nuova API dell'editor il prima possibile. Ciò migliorerà le prestazioni del servizio di linguaggio e consentirà di sfruttare le nuove funzionalità dell'editor.
+> Si consiglia di iniziare a usare la nuova API editor appena possibile. Ciò consente di migliorare le prestazioni del servizio di linguaggio e di sfruttare i vantaggi delle nuove funzionalità dell'editor.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Colorazione della sintassi in un servizio di linguaggio legacy](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
@@ -36,7 +36,7 @@ Negli argomenti seguenti sono elencate alcune delle funzionalità del servizio d
 
 - [Informazioni sui parametri in un servizio di linguaggio legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- Viene illustrato come implementare la descrizione comando informazioni sul parametro IntelliSense.Explains how to implement the IntelliSense Parameter Info Tooltip.
+ Viene illustrato come implementare la descrizione comando informazioni parametri IntelliSense.
 
 - [Completamento delle istruzioni in un servizio di linguaggio legacy](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
@@ -48,6 +48,6 @@ Negli argomenti seguenti sono elencate alcune delle funzionalità del servizio d
 
 - [Procedura: Fornire il supporto per la struttura espansa in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Vengono illustrati alcuni passaggi per l'implementazione del supporto del debugger.
+ Vengono illustrati alcuni passaggi nell'implementazione del supporto del debugger.
 
 ## <a name="related-sections"></a>Sezioni correlate

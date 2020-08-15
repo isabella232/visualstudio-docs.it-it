@@ -8,18 +8,18 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969450"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238725"
 ---
-# <a name="code-snippets"></a>Frammenti di codice
+# <a name="code-snippets-for-r"></a>Frammenti di codice per R
 
 I frammenti di codice in Visual Studio offrono collegamenti per inserire rapidamente blocchi di codice di lunghezza arbitraria. In questo modo non è necessario digitare più volte un codice simile. R Tools per Visual Studio (RTVS) aggiunge decine di frammenti R utili alla raccolta di Visual Studio.
 
-Per inserire un frammento, digitare il nome abbreviato del frammento (viene fornito IntelliSense), quindi premere **TAB** per inserire.
+Per inserire un frammento di codice, digitare il nome abbreviato del frammento (IntelliSense fornito), quindi premere **Tab** per inserire.
 
 Di seguito alcuni semplici esempi:
 
@@ -30,9 +30,9 @@ I frammenti di codice sono molto più che un semplice completamento di caratteri
 
 ![Animazione dell'uso di un frammento di codice per inserire una chiamata a read.csv](media/code-snippet-expansion.gif)
 
-In questo caso, durante la digitazione di `readc`, IntelliSense visualizza un elenco di completamento. Se si seleziona tale completamento nell'elenco a discesa e si preme **TAB si** seleziona `readc`, quindi premendo di nuovo **TAB** si espande il frammento di codice. Per questo motivo, l'espansione del frammento equivale spesso a "digitare il frammento e premere TAB due volte". Nella maggior parte dei casi, la prima volta che si preme TAB si completa la selezione di IntelliSense e la seconda volta si attiva l'espansione.
+In questo caso, durante la digitazione di `readc`, IntelliSense visualizza un elenco di completamento. Selezionando il completamento nell'elenco a discesa e premendo **Tab** `readc` e premendo nuovamente **Tab** si espande il frammento di codice. Per questo motivo, l'espansione del frammento equivale spesso a "digitare il frammento e premere TAB due volte". Nella maggior parte dei casi, la prima volta che si preme TAB si completa la selezione di IntelliSense e la seconda volta si attiva l'espansione.
 
-Per visualizzare tutti i frammenti disponibili, aprire la finestra di dialogo**Gestione frammenti** di codice degli **strumenti** > (**Ctrl**+**K**,**B**) e selezionare **R** per **Lingua**. Espandere i gruppi e selezionare singoli frammenti per visualizzare una descrizione e il testo del collegamento:
+Per visualizzare tutti i frammenti disponibili, aprire la finestra di dialogo **strumenti**  >  **Gestione frammenti di codice** (**CTRL** + **K**,**B**) e selezionare **R** per **lingua**. Espandere i gruppi e selezionare singoli frammenti per visualizzare una descrizione e il testo del collegamento:
 
 ![Finestra di dialogo dei frammenti di codice per R](media/code-snippet-dialog.png)
 

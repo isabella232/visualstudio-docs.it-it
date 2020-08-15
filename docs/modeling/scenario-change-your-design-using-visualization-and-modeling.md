@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c0e971a2a38013ae75287467404e3321e3c4d37
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544196"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238894"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -75,11 +75,11 @@ Per altre informazioni su Team Foundation Server, vedere:
 
 - [Test, convalida e archiviazione del codice aggiornato](#TestValidateCheckInCode)
 
-## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a>Ruoli dei diagrammi dell'architettura e della modellazione nello sviluppo del software
+## <a name="roles-of-architecture-and-modeling-diagrams-in-software-development"></a><a name="ModelingDiagramsTools"></a> Ruoli dei diagrammi dell'architettura e della modellazione nello sviluppo del software
 
 La tabella seguente descrive i ruoli che questi strumenti possono svolgere in diverse fasi del ciclo di vita dello sviluppo del software.
 
-||**Modellazione dei requisiti utente**|**Modellazione dei processi aziendali**|**Architettura e progettazione di sistemi**|**Visualizzazione ed esplorazione del codice**|**Verifica**|
+|Strumento/ruolo|Modellazione dei requisiti utente|Modellazione dei processi aziendali|Architettura e progettazione di sistemi|Visualizzazione ed esplorazione del codice|Verifica|
 |------|-|-|-|-|-|
 |Diagramma DSL (Domain-Specific Language)|Sì|Sì|Sì|||
 |Diagramma delle dipendenze, convalida del livello|||Sì|Sì|Sì|
@@ -167,7 +167,7 @@ Dinner Now deve stimare i costi da sostenere per soddisfare il nuovo requisito. 
 |-|-|
 |*Diagramma classi basato su codice*<br /><br /> Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Classi presenti nel codice.|
 
-### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a>Mantieni il codice coerente con la progettazione
+### <a name="keep-code-consistent-with-the-design"></a><a name="ValidatingCode"></a> Mantieni il codice coerente con la progettazione
  Dinner Now deve assicurarsi che il codice aggiornato rimanga coerente con la progettazione. Creano diagrammi di dipendenza che descrivono i livelli di funzionalità nel sistema, specificano le dipendenze consentite tra di essi e associano gli elementi della soluzione a tali livelli.
 
 |**Diagramma**|**Oggetto della descrizione**|
@@ -220,7 +220,7 @@ Vedere:
 
 - [Creare il backlog e le attività tramite Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
-### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a>Test, convalida e archiviazione del codice
+### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a> Test, convalida e archiviazione del codice
 
 Quando i team completano ogni attività, controllano il codice nel controllo del codice sorgente e ricevono promemoria da Team Foundation Server, se si dimenticano. Prima che Team Foundation Server accetti le archiviazioni, i team eseguono unit test e la convalida delle dipendenze per verificare il codice in base ai test case e alla progettazione. Usano Team Foundation Server per eseguire regolarmente compilazioni, unit test automatizzati e la convalida delle dipendenze. Questo permette di verificare che il codice soddisfi i criteri seguenti:
 
@@ -262,7 +262,7 @@ Vedere:
 
 - [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)
 
-### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a>Visualizzare il codice esistente: mappe codice
+### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a> Visualizzare il codice esistente: mappe codice
 
 Le mappe codice mostrano l'organizzazione e le relazioni correnti nel codice. Gli elementi sono rappresentati da *nodi* sulla mappa e le relazioni sono rappresentate da *collegamenti*. Le mappe codice consentono di effettuare i tipi di attività seguenti:
 
@@ -332,7 +332,7 @@ Questa mappa mostra che la classe RespApprovazionePagamenti ora si trova nello s
 |Diagramma delle dipendenze|L'architettura logica del sistema. Usare la convalida delle dipendenze per assicurarsi che il codice rimanga coerente con la progettazione.<br /><br /> Per identificare le dipendenze esistenti o le dipendenze desiderate, creare una mappa codice e raggruppare gli elementi correlati. Per creare un diagramma delle dipendenze, vedere:<br /><br /> - [Creare diagrammi di dipendenza dal codice](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammi di dipendenza: linee guida](../modeling/layer-diagrams-guidelines.md)|
 |Diagramma classi (basato su codice)|Classi presenti nel codice per un progetto specifico.<br /><br /> Per visualizzare e modificare una classe esistente nel codice, usare Progettazione classi.<br /><br /> Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
-### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a>Definire un glossario dei tipi: diagrammi classi
+### <a name="define-a-glossary-of-types-class-diagrams"></a><a name="DefineClasses"></a> Definire un glossario dei tipi: diagrammi classi
  I diagrammi classi definiscono le entità, i termini o i concetti che fanno parte del sistema e le reciproche relazioni. Ad esempio, è possibile usare questi diagrammi durante lo sviluppo per descrivere gli attributi e le operazioni per ogni classe, indipendentemente dal linguaggio o stile di implementazione.
 
  Per aiutare Lucerne a descrivere e discutere le entità che partecipano al caso d'uso Elaborazione dei pagamenti, viene creato il diagramma classi seguente:
@@ -401,7 +401,7 @@ Come punto di partenza per esplorare e discutere le classi esistenti, è possibi
 |Diagramma delle dipendenze|Definizione dell'architettura logica del sistema in relazione alle classi.<br /><br /> Usare la convalida delle dipendenze per assicurarsi che il codice rimanga coerente con la progettazione.<br /><br /> Vedere:<br /><br /> - [Creare diagrammi di dipendenza dal codice](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammi di dipendenza: riferimento](../modeling/layer-diagrams-reference.md)<br />- [Diagrammi di dipendenza: linee guida](../modeling/layer-diagrams-guidelines.md)<br />- [Convalidare il codice con diagrammi di dipendenza](../modeling/validate-code-with-layer-diagrams.md)|
 |Mappa codice|Visualizzazione dell'organizzazione e delle relazioni nel codice esistente.<br /><br /> Per identificare le classi e le relative relazioni e metodi, creare una mappa codice che mostra quegli elementi.<br /><br /> Vedere:<br /><br /> - [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)|
 
-### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a>Descrivere l'architettura logica: diagrammi delle dipendenze
+### <a name="describe-the-logical-architecture-dependency-diagrams"></a><a name="DescribeLayers"></a> Descrivere l'architettura logica: diagrammi delle dipendenze
  I diagrammi di dipendenza descrivono l'architettura logica di un sistema organizzando gli elementi della soluzione in gruppi astratti o *livelli*. Gli elementi possono essere di vario tipo, ad esempio spazi dei nomi, progetti, classi, metodi e così via. I livelli rappresentano i ruoli o le attività svolte nel sistema da tali elementi. È anche possibile includere la convalida dei livelli nelle operazioni di compilazione e archiviazione per assicurare la coerenza del codice con la progettazione.
 
  Per assicurare la coerenza del codice con la progettazione, Dinner Now e Lucerne usano il diagramma delle dipendenze seguente per convalidare il codice durante l'evoluzione:

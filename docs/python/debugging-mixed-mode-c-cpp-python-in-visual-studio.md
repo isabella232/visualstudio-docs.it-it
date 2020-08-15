@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 953ff26a6094a9de9dcf974d5e4cb5a02aaa503f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 0b55a0bbeee7c5a8c38a0df61db0a1b17ae5e033
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533562"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238660"
 ---
 # <a name="debug-python-and-c-together"></a>Debug contemporaneo di codice Python e C++
 
@@ -36,9 +36,8 @@ Le funzionalità di debug in modalità mista includono le seguenti, come illustr
 
 ![Debug in modalità mista per Python in Visual Studio](media/mixed-mode-debugging.png)
 
-|   |   |
-|---|---|
-| ![icona della telecamera per un video](../install/media/video-icon.png "Guardare un video") | Per un'introduzione a compilazione, test e debug dei moduli C nativi con Visual Studio, vedere [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (Approfondimento: creazione di moduli nativi) (youtube.com, 9m 09s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017. |
+![icona della fotocamera cinematografica per il video](../install/media/video-icon.png "Guardare un video") Per un'introduzione alla compilazione, al test e al debug dei moduli C nativi con Visual Studio, vedere [Deep Dive: create native Modules](https://youtu.be/D9RlT06a1EI) (YouTube.com, 9 milioni di 09s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017.
+
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Abilitare il debug in modalità mista in un progetto Python
 

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 1d381bbfd0e83008b962968816c77f540e6a52f5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950464"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238556"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -55,7 +55,7 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 
 3. Scegliere la scheda **Repository registrati** e premere i pulsante **Aggiungi**:
 
-    ![](media/version-control-git5.png)
+    ![La scheda repository registrati della finestra di dialogo Seleziona repository contiene i pulsanti Aggiungi, Rimuovi e modifica e le caselle per il nome e il messaggio del modulo.](media/version-control-git5.png)
 
 4. Inserire il nome del repository che si desidera visualizzare localmente e incollare l'URL del passaggio 3. La finestra di dialogo Configurazione repository sarà analoga alla seguente. Premere OK:
 

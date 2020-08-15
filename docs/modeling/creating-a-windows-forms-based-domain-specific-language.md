@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57507775a03bcfd0649f4efbf8a7771fefc8e20b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85547316"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238361"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Creare un Domain-Specific Language basato su Windows Forms
 
@@ -30,10 +30,8 @@ Il modello DSL **WinForm designer minimo** crea un DSL minimo che è possibile m
 
     In questa procedura dettagliata vengono considerati i nomi seguenti:
 
-   | | |
-   |-|-|
-   | Nome della soluzione e del DSL | FarmApp |
-   | Spazio dei nomi | Company. FarmApp |
+    - Nome della soluzione e del DSL: `FarmApp`
+    - Namespace `Company.FarmApp`
 
 2. Provare a usare l'esempio iniziale fornito dal modello:
 
@@ -51,9 +49,9 @@ Il modello DSL **WinForm designer minimo** crea un DSL minimo che è possibile m
 
    Nell'istanza principale di Visual Studio si notino i punti seguenti sulla soluzione DSL:
 
-- `DslDefinition.dsl`non contiene elementi del diagramma. Ciò è dovuto al fatto che non si utilizzeranno diagrammi DSL per visualizzare i modelli di istanza di questo DSL. Al contrario, si eseguirà il binding di un Windows Form al modello e gli elementi nel form visualizzeranno il modello.
+- `DslDefinition.dsl` non contiene elementi del diagramma. Ciò è dovuto al fatto che non si utilizzeranno diagrammi DSL per visualizzare i modelli di istanza di questo DSL. Al contrario, si eseguirà il binding di un Windows Form al modello e gli elementi nel form visualizzeranno il modello.
 
-- Oltre ai `Dsl` `DslPackage` progetti e, la soluzione contiene un terzo progetto denominato `UI.` **UI** Project contiene la definizione di un controllo Windows Forms. `DslPackage`dipende da `UI` e dipende da `UI` `Dsl` .
+- Oltre ai `Dsl` `DslPackage` progetti e, la soluzione contiene un terzo progetto denominato `UI.` **UI** Project contiene la definizione di un controllo Windows Forms. `DslPackage` dipende da `UI` e dipende da `UI` `Dsl` .
 
 - Nel `DslPackage` progetto, `UI\DocView.cs` contiene il codice che visualizza il Windows Forms controllo definito nel `UI` progetto.
 
@@ -86,9 +84,9 @@ In questa procedura dettagliata viene usata la definizione DSL riportata di segu
 
 4. Utilizzare lo strumento **classe di dominio denominato** per creare le classi di dominio seguenti:
 
-    - `Field`-Assegnare a questa proprietà di dominio aggiuntiva denominata `Size` .
+    - `Field` -Assegnare a questa proprietà di dominio aggiuntiva denominata `Size` .
 
-    - `Animal`-Nella Finestra Proprietà impostare il **modificatore di ereditarietà** su **abstract**.
+    - `Animal` -Nella Finestra Proprietà impostare il **modificatore di ereditarietà** su **abstract**.
 
 5. Utilizzare lo strumento **classe di dominio** per creare le classi seguenti:
 
@@ -162,7 +160,7 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
      Impostare la proprietà **DataMember** su **Animals** o **Fields**.
 
-10. Impostare le proprietà **DataSource** di `AnimalGridView` su `AnimalBinding` e di `FieldGridView` su `FieldBinding` .
+10. Impostare le proprietà **DataSource** di `AnimalGridView` su `AnimalBinding` e di  `FieldGridView` su `FieldBinding` .
 
 11. Modificare il layout del controllo della farm a piacimento.
 
@@ -220,7 +218,7 @@ La soluzione DSL ora può essere compilata ed eseguita, anche se è opportuno ag
 
 3. In **FarmApp Explorer**aprire il menu di scelta rapida nel nodo radice della **Farm** e scegliere **Aggiungi nuova capra**.
 
-     `Goat1`viene visualizzato nella visualizzazione **Animals** .
+     `Goat1` viene visualizzato nella visualizzazione **Animals** .
 
     > [!WARNING]
     > È necessario utilizzare il menu di scelta rapida del nodo della **Farm** , non il nodo **Animals** .

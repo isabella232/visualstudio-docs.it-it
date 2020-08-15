@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c782b84f39419272c271f41d217442cc9e001b3f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535863"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88237997"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: Connettere un host a un processore di direttiva generato
 
@@ -41,7 +41,7 @@ In questa procedura dettagliata sono incluse le attività seguenti:
 
 Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
-| | |
+| Componente | Collegamento |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
@@ -72,7 +72,7 @@ In questa procedura dettagliata viene usata la procedura guidata Finestra di pro
    > [!IMPORTANT]
    > Questo passaggio genera il processore di direttiva e ne aggiunge la chiave nel registro di sistema.
 
-3. Scegliere **Avvia debug**dal menu **debug** .
+3. Scegliere **Avvia debug** dal menu **Debug**.
 
     Viene aperta una seconda istanza di Visual Studio.
 

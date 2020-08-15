@@ -1,5 +1,5 @@
 ---
-title: Analisi codice per il codice gestito
+title: Analisi legacy per codice gestito
 ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4eac88d56399b7f8552962afa50b52c8431232b9
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
+ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974931"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "88238374"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Panoramica dell'analisi codice per il codice gestito in Visual Studio
+# <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Panoramica dell'analisi legacy per il codice gestito in Visual Studio
 
 Visual Studio è in grado di eseguire l'analisi codice del codice gestito in due modi: con l' [analisi legacy](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), nota anche come analisi statica FxCop degli assembly gestiti e con gli [analizzatori di codice](../code-quality/roslyn-analyzers-overview.md)più moderni basati su .NET Compiler Platform. In questo argomento viene illustrata l'analisi legacy. Per altre informazioni sull'analisi del codice basata su .NET Compiler Platform, vedere [Cenni preliminari sugli analizzatori basati su .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md).
 
@@ -26,7 +26,7 @@ L'analisi del codice per il codice gestito analizza gli assembly gestiti e forni
 Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come messaggi di avviso. I messaggi di avviso identificano eventuali problemi di programmazione e progettazione e, se possibile, forniscono informazioni su come risolverli.
 
 > [!NOTE]
-> L'analisi legacy (analisi statica del codice) non è supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET Standard come parte di MSBuild, verrà visualizzato un errore simile a **errore: CA0055: Impossibile identificare la piattaforma per \<il > dll**. Per analizzare il codice nei progetti .NET Core o .NET Standard, usare invece gli [analizzatori di codice](../code-quality/roslyn-analyzers-overview.md) .
+> L'analisi legacy (analisi statica del codice) non è supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET Standard come parte di MSBuild, verrà visualizzato un errore simile a **errore: CA0055: Impossibile identificare la piattaforma \<your.dll> per **. Per analizzare il codice nei progetti .NET Core o .NET Standard, usare invece gli [analizzatori di codice](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integrazione con IDE (Integrated Development Environment)
 
@@ -34,7 +34,7 @@ Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come
 
 Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare l'opzione nella pagina delle proprietà **analisi codice** del progetto. Per altre informazioni, vedere [procedura: abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Per eseguire manualmente l'analisi del codice su un progetto, dalla barra dei menu scegliere **analizza** > **esegui analisi codice** > **eseguire l'analisi del codice su \<progetto >** .
+Per eseguire manualmente l'analisi del codice su un progetto, dalla barra dei menu scegliere **analizza**  >  **esecuzione**analisi codice  >  **Esegui analisi \<project> del codice su **.
 
 ## <a name="rule-sets"></a>Set di regole
 
@@ -59,7 +59,7 @@ Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione degli a
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Se si esegue la migrazione di un progetto a Visual Studio 2017, è possibile che si facciano improvvisamente molti avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile eliminarli tutti scegliendo **analizza** > **Esegui analisi codice ed elimina problemi attivi**.
+> Se si esegue la migrazione di un progetto a Visual Studio 2017, è possibile che si facciano improvvisamente molti avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile eliminarli tutti scegliendo **analizza**  >  **Esegui analisi codice ed elimina problemi attivi**.
 >
 > ![Eseguire l'analisi del codice ed escludere i problemi in Visual Studio](media/suppress-active-issues.png)
 
@@ -68,7 +68,7 @@ Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione degli a
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Se si esegue la migrazione di un progetto a Visual Studio 2019, è possibile che si facciano improvvisamente molti avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile eliminarli tutti scegliendo **analizza** > **compilare ed eliminare i problemi attivi**.
+> Se si esegue la migrazione di un progetto a Visual Studio 2019, è possibile che si facciano improvvisamente molti avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile eliminarli tutti scegliendo **analizza**  >  **compilazione ed elimina problemi attivi**.
 
 ::: moniker-end
 
