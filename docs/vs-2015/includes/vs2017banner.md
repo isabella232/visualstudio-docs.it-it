@@ -1,6 +1,6 @@
 ---
-title: includere il file
-description: includere file
+title: includere file
+description: Includere file
 ms.custom: include file
 author: ghogen
 ms.author: ghogen
