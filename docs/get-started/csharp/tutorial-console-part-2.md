@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: aae83c43a106fd68b03a83124ad2ddcea4652c8d
-ms.sourcegitcommit: c620d59578db1b89f80e64ae04b4898bc4ab292d
+ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87377172"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507956"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Esercitazione: estendere una semplice app console C#
 
-Questa esercitazione illustra come usare Visual Studio per estendere l'app console creata nella prima parte. Verranno illustrate alcune delle funzionalità di Visual Studio che consentono di migliorare la produttività degli sviluppatori, ad esempio l'utilizzo di funzionalità avanzate dell'editor e il debug.
+Questa esercitazione illustra come usare Visual Studio per estendere l'app console creata nella prima parte. Verranno illustrate alcune delle funzionalità di Visual Studio necessarie per lo sviluppo giornaliero, ad esempio la gestione di più progetti e il riferimento a pacchetti di terze parti.
 
 Se è stata appena completata la [prima parte](tutorial-console.md) di questa serie, è già presente l'app console per la calcolatrice.  Per ignorare la parte 1, è possibile iniziare aprendo il progetto da un repository GitHub. L'app del calcolatore C# si trova nel [repository vs-tutorial-Samples](https://github.com/MicrosoftDocs/vs-tutorial-samples), quindi è possibile seguire la procedura descritta in [esercitazione: aprire un progetto da un repository](../tutorial-open-project-from-repo.md) per iniziare.
 

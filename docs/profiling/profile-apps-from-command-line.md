@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5915e687bd4e1f6afb200f4ca3e7a866c6151c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 56007fcb3b951f9b313a25092e89c234d52eb15e
+ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285844"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88507999"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Misurare le prestazioni dell'applicazione dalla riga di comando
 
@@ -41,9 +41,9 @@ Per eseguire la profilatura tramite gli strumenti da riga di comando di diagnost
 
 1. Avviare Blocco note e quindi aprire Gestione attività per ottenere gli ID processo (PID). In Gestione attività cercare il PID nella scheda **Dettagli**.
 
-1. Aprire un prompt dei comandi e passare alla directory con l'agente di raccolta eseguibile, in genere la directory seguente.
+1. Aprire un prompt dei comandi e passare alla directory con il file eseguibile dell'agente di raccolta, in genere qui (per Visual Studio Enterprise).
 
-   ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\```
+   ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
 
 1. Avviare *VSDiagnostics.exe* digitando il comando seguente.
 
@@ -53,9 +53,15 @@ Per eseguire la profilatura tramite gli strumenti da riga di comando di diagnost
 
    È necessario includere gli argomenti seguenti:
 
-   * \<*id*>Identifica la sessione di raccolta. L'ID deve essere un numero compreso tra 1 e 255.
-   * \<*pid*>, PID del processo che si vuole profilare, in questo caso il PID trovato nel passaggio 1
+   * \<*id*> Identifica la sessione di raccolta. L'ID deve essere un numero compreso tra 1 e 255.
+   * \<*pid*>, PID del processo che si vuole profilare, in questo caso il PID trovato nel passaggio 1.
    * \<*configFile*>, il file di configurazione per l'agente di raccolta che si vuole avviare. Per altre informazioni, vedere [File di configurazione degli agenti](#config_file).
+
+   Ad esempio, è possibile usare il comando seguente per l'agente CPUUsageBase sostituendo il *PID* come descritto in precedenza.
+
+   ```cmd
+   VSDiagnostics.exe start 1 /attach:<pid> /loadConfig:AgentConfigs\CPUUsageLow.json
+   ```
 
 1. Ridimensionare Blocco note o digitare un testo nell'applicazione per assicurarsi che vengano raccolte alcune informazioni di profilatura interessanti.
 
@@ -65,7 +71,9 @@ Per eseguire la profilatura tramite gli strumenti da riga di comando di diagnost
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Passare al file di output dal comando precedente e aprirlo in Visual Studio per esaminare le informazioni raccolte.
+1. Individuare l'output del file con *estensione DIAGSESSION* del comando precedente e aprirlo in Visual Studio (**file**  >  **aperto**) per esaminare le informazioni raccolte.
+
+   Per analizzare i risultati, vedere la documentazione per lo strumento di prestazioni corrispondente. È ad esempio possibile [utilizzare la CPU](../profiling/cpu-usage.md), [lo strumento di allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)o lo strumento [database](../profiling/analyze-database.md) .
 
 ## <a name="agent-configuration-files"></a><a name="config_file"></a> File di configurazione degli agenti
 
