@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95623d72e70e572ca7605c34e2e25e7186c284e1
-ms.sourcegitcommit: 4a77403b6bd33c5a6e66a3eefd42c81c39fb67ca
+ms.openlocfilehash: ca095bf424420fb73ba8f369f7e41daea92fe33d
+ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87330960"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88584502"
 ---
 # <a name="report-a-problem-states-and-faq"></a>Segnalare un problema: Stati e domande frequenti
 
@@ -52,7 +52,7 @@ Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovan
 
 ![Stato Servono altre info per la segnalazione di problemi nella community degli sviluppatori](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Servono altre info** indica che sono necessarie altre informazioni di diagnostica per continuare l'analisi.  [Informazioni su come rispondere alle richieste di altre informazioni](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info).
+**Servono altre info** indica che sono necessarie altre informazioni di diagnostica per continuare l'analisi.  [Informazioni su come rispondere alle richieste di altre informazioni](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed).
 
 - - -
 
