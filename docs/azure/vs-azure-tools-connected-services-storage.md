@@ -1,45 +1,53 @@
 ---
 title: Aggiungere spazio di archiviazione di Azure usando Servizi connessi | Microsoft Docs
-description: Aggiungere archiviazione di Azure all'applicazione usando la finestra di dialogo Aggiungi servizi connessi di Visual Studio
+description: Aggiungere una dipendenza del servizio di archiviazione di Azure all'app usando Visual Studio Servizi connessi
 author: ghogen
 manager: jillfra
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
-ms.date: 03/26/2017
+ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: ddb0f2610473841a69ec69600cf9ef83cb898340
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
+ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85280683"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88639454"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
 
-Con Visual Studio è possibile connettere uno dei servizi seguenti ad Archiviazione di Azure tramite la finestra di dialogo **Add Connected Services** (Aggiungi servizi connessi):
+Con Visual Studio, è possibile connettere uno dei seguenti ad archiviazione di Azure usando la funzionalità **servizi connessi** :
 
-- Servizio cloud C#
-- Servizio mobile back-end .NET
-- Sito Web ASP.NET
-- Servizio ASP.NET Core
-- Servizio Processo Web di Azure
+- App console .NET Framework
+- MVC ASP.NET (.NET Framework) 
+- ASP.NET Core
+- .NET Core (incluse app console, WPF, Windows Forms, libreria di classi)
+- Ruolo di lavoro .NET Core
+- Funzioni di Azure
+- App piattaforma UWP (Universal Windows Platform)
+- Xamarin
+- Cordova
 
 La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti richiesti e il codice di connessione e modifica i file di configurazione in modo appropriato.
 
-Dopo il completamento, la finestra di dialogo **Add Connected Services** (Aggiungi servizi connessi) visualizza automaticamente la documentazione che illustra in dettaglio i passaggi necessari per iniziare a lavorare con l'archiviazione BLOB, le code e le tabelle.
-
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Servizi connessi in Visual Studio per Mac](/visualstudio/mac/connected-services).
+## <a name="prerequisites"></a>Prerequisiti
 
-## <a name="connect-to-azure-storage-using-the-connected-services-dialog"></a>Connettersi ad archiviazione di Azure usando la finestra di dialogo Servizi connessi
+- Visual Studio con il carico di lavoro di Azure installato.
+- Progetto di uno dei tipi supportati
 
-1. Aprire il progetto in Visual Studio
+## <a name="connect-to-azure-storage-using-connected-services"></a>Connettersi ad archiviazione di Azure usando Servizi connessi
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Servizi connessi** e scegliere **Add Connected Services** (Aggiungi servizi connessi) dal menu di scelta rapida.
+::: moniker range="vs-2017"
 
-    ![Aggiunta di un servizio connesso di Azure](./media/vs-azure-tools-connected-services-storage/IC796702.png)
+1. Aprire il progetto in Visual Studio.
+
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso**dal menu di scelta rapida.
+
+    ![Aggiunta di un servizio connesso di Azure](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
 1. Nella pagina **Servizi connessi** selezionare **Archiviazione cloud con Archiviazione di Azure**.
 
@@ -62,19 +70,55 @@ Dopo il completamento, la finestra di dialogo **Add Connected Services** (Aggiun
    1. Quando viene visualizzata la finestra di dialogo **Archiviazione di Azure**, la nuova risorsa di archiviazione viene visualizzata nell'elenco. Selezionare la nuova risorsa di archiviazione nell'elenco e quindi **Aggiungi**.
 
 1. Il servizio connesso di archiviazione viene visualizzato sotto il nodo **Riferimenti servizio** del progetto.
+:::moniker-end
 
-## <a name="how-your-project-is-modified"></a>Come viene modificato il progetto
+:::moniker range=">=vs-2019"
 
-Una volta terminata la finestra di dialogo, Visual Studio aggiunge riferimenti e modifica di alcuni file di configurazione. Le modifiche specifiche dipendono dal tipo di progetto.
+1. Aprire il progetto in Visual Studio.
 
-- Progetti ASP.NET - [Risultati – Progetti ASP.NET](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs).
-- Progetti ASP.NET 5 - [Risultati – Progetti ASP.NET 5](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs).
-- Progetti del servizio cloud (ruoli Web e ruoli di lavoro) [Risultati - Progetti del servizio cloud](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs).
-- Progetti di tipo processo Web - [Risultati - Progetti di tipo processo Web](/azure/visual-studio/vs-storage-webjobs-what-happened).
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso**dal menu di scelta rapida.
 
-## <a name="see-also"></a>Vedi anche
+    ![Aggiunta di un servizio connesso di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
-- [Forum MSDN: Archiviazione di Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Blog del team di Archiviazione di Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/).
+1. Nella scheda **servizi connessi** selezionare l'icona + per le **dipendenze del servizio**.
+
+    ![Aggiungi dipendenza del servizio](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
+
+1. Nella pagina **Aggiungi dipendenza** selezionare archiviazione di **Azure**.
+
+    ![Aggiungi Archiviazione di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
+
+    Se non è già stato effettuato l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita](https://azure.microsoft.com/account/free).
+
+1. Nella schermata **Configura archiviazione di Azure** selezionare un account di archiviazione esistente e fare clic su **Avanti**.
+
+    Se è necessario creare un account di archiviazione, andare al passaggio successivo. In caso contrario, andare al passaggio 6.
+
+    ![Aggiungere un account di archiviazione esistente al progetto l'elenco](./media/vs-azure-tools-connected-services-storage/vs-2019/select-azure-storage-account.png)
+
+1. Per creare un account di archiviazione:
+
+   1. Selezionare **Crea un account di archiviazione** nella parte inferiore della finestra di dialogo.
+
+   1. Compilare la finestra di dialogo **archiviazione di Azure: Crea nuovo** e selezionare **Crea**.
+
+       ![Nuovo account di archiviazione di Azure](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
+
+   1. Quando viene visualizzata la finestra di dialogo **Archiviazione di Azure**, la nuova risorsa di archiviazione viene visualizzata nell'elenco. Selezionare il nuovo account di archiviazione nell'elenco e fare clic su **Avanti**.
+
+1. Immettere un nome per la stringa di connessione e scegliere se si desidera che la stringa di connessione venga archiviata in un file di segreti locali o in [Azure Key Vault](/azure/key-vault).
+
+   ![Specificare la stringa di connessione](./media/vs-azure-tools-connected-services-storage/vs-2019/connection-string.png)
+
+1. La schermata **Riepilogo modifiche** Mostra tutte le modifiche che verranno apportate al progetto se si completa il processo. Se le modifiche sembrano OK, scegliere **fine**.
+
+   ![Riepilogo delle modifiche](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
+
+1. Il servizio connesso di archiviazione viene visualizzato sotto il nodo **Riferimenti servizio** del progetto.
+:::moniker-end
+
+## <a name="see-also"></a>Vedere anche
+
+- [Forum di Archiviazione di Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Documentazione di Archiviazione di Azure](/azure/storage/)
 - [Servizi connessi (Visual Studio per Mac)](/visualstudio/mac/connected-services)
