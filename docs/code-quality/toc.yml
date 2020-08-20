@@ -991,3 +991,5 @@
                   displayName: publish warnings
                 - name: 'IL3000: Evitare l''accesso al percorso del file di assembly quando si esegue la pubblicazione come file singolo'
                   href: il3000.md
+                - name: 'IL3001: Evitare l''accesso al percorso del file di assembly quando si esegue la pubblicazione come file singolo'
+                  href: il3001.md
