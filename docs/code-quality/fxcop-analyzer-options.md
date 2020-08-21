@@ -1,5 +1,5 @@
 ---
-title: Opzioni di configurazione dell'analizzatore FxCop
+title: Opzioni di configurazione di .NET Code Quality Analyzer
 ms.date: 09/23/2019
 ms.topic: reference
 author: mikejo5000
@@ -7,21 +7,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6b56bec2174ca71cc66f5424b7bdc309330d95
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 0370688b53e87cf6ea1f5079d2e5c706777dd0c7
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248799"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706568"
 ---
-# <a name="rule-scope-options-for-fxcop-analyzers"></a>Opzioni dell'ambito della regola per gli analizzatori FxCop
+# <a name="rule-scope-options-for-net-code-quality-analyzers"></a>Opzioni dell'ambito delle regole per gli analizzatori di qualità del codice .NET
 
-Alcune regole dell'analizzatore FxCop consentono di perfezionare le parti della codebase a cui devono essere applicate. In questa pagina sono elencate le opzioni di configurazione dell'ambito disponibili, i relativi valori consentiti e le regole a cui è possibile applicare. Per usare queste opzioni, specificarle in un [file EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
-
-Queste opzioni di configurazione sono disponibili a partire dalla versione 2.6.3 del pacchetto NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
+Alcune regole di .NET Code Quality Analyzer consentono di perfezionare le parti della codebase a cui devono essere applicate. In questa pagina sono elencate le opzioni di configurazione dell'ambito disponibili, i relativi valori consentiti e le regole a cui è possibile applicare. Per usare queste opzioni, specificarle in un [file EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 > [!TIP]
-> Per visualizzare l'elenco completo delle opzioni disponibili per una determinata versione del pacchetto FxCopAnalyzers, esaminare il file *analizzatore Configuration.MD* nella cartella della *documentazione* per il pacchetto. Il file si trova in *% USERPROFILE% \\ . nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version\> \documentation\Analyzer Configuration.MD*. Questo file di documentazione di configurazione è incluso in ogni versione del pacchetto, a partire dalla versione 2.6.5. Di seguito è riportato un esempio di come è documentata un'opzione nel file *Configuration.MD dell'analizzatore* :
+> Per visualizzare l'elenco completo delle opzioni disponibili, vedere il [file Configuration.MD dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md). Di seguito è riportato un esempio di come è documentata un'opzione nel file *Configuration.MD dell'analizzatore* :
 >
 > Nome dell'opzione: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > Valori delle opzioni: valori integrali \
@@ -87,28 +85,28 @@ Queste opzioni di configurazione sono disponibili a partire dalla versione 2.6.3
 
 | Descrizione | Valori consentiti | Valore predefinito | Regole configurabili |
 | - | - | - | - |
-| I nomi dei metodi di convalida del controllo null che convalidano gli argomenti passati al metodo sono non null | Formati dei nomi di metodo consentiti (separati da `|` ):<br/> -Solo nome metodo (include tutti i metodi con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel formato dell'ID di [documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo con `M:` prefisso facoltativo | nessuno | [CA1062](ca1062.md) |
+| I nomi dei metodi di convalida del controllo null che convalidano gli argomenti passati al metodo sono non null | Formati dei nomi di metodo consentiti (separati da `|` ):<br/> -Solo nome metodo (include tutti i metodi con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel formato dell'ID di [documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo con `M:` prefisso facoltativo | Nessuno | [CA1062](ca1062.md) |
 
 ## <a name="additional_string_formatting_methods"></a>additional_string_formatting_methods
 
 | Descrizione | Valori consentiti | Valore predefinito | Regole configurabili |
 | - | - | - | - |
-| Nomi dei metodi di formattazione delle stringhe aggiuntivi | Formati dei nomi di metodo consentiti (separati da `|` ):<br/> -Solo nome metodo (include tutti i metodi con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel formato dell'ID di [documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo con `M:` prefisso facoltativo | nessuno | [CA2241](ca2241.md) |
+| Nomi dei metodi di formattazione delle stringhe aggiuntivi | Formati dei nomi di metodo consentiti (separati da `|` ):<br/> -Solo nome metodo (include tutti i metodi con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel formato dell'ID di [documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo con `M:` prefisso facoltativo | Nessuno | [CA2241](ca2241.md) |
 
 ## <a name="excluded_type_names_with_derived_types"></a>excluded_type_names_with_derived_types
 
 | Descrizione | Valori consentiti | Valore predefinito | Regole configurabili |
 | - | - | - | - |
-| Nomi dei tipi, in modo che il tipo e tutti i relativi tipi derivati siano esclusi per l'analisi | Formati dei nomi di simboli consentiti (separati da `|` ):<br/> -Solo nome del tipo (include tutti i tipi con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel formato dell'ID di [documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo con `T:` prefisso facoltativo | nessuno | [CA1303](ca1303.md) |
+| Nomi dei tipi, in modo che il tipo e tutti i relativi tipi derivati siano esclusi per l'analisi | Formati dei nomi di simboli consentiti (separati da `|` ):<br/> -Solo nome del tipo (include tutti i tipi con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel formato dell'ID di [documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo con `T:` prefisso facoltativo | Nessuno | [CA1303](ca1303.md) |
 
 ## <a name="excluded_symbol_names"></a>excluded_symbol_names
 
 | Descrizione | Valori consentiti | Valore predefinito | Regole configurabili |
 | - | - | - | - |
-| Nomi dei simboli esclusi per l'analisi | Formati dei nomi di simboli consentiti (separati da `|` ):<br/> -Solo nome simbolo (include tutti i simboli con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel [formato ID documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo. Ogni nome di simbolo richiede un prefisso di tipo simbolo, ad esempio il prefisso "M:" per i metodi, il prefisso "T:" per i tipi, il prefisso "N:" per gli spazi dei nomi e così via.<br/> - `.ctor` per costruttori e `.cctor` per costruttori statici | nessuno | [CA1062](ca1062.md) [CA1303](ca1303.md) [CA2000](ca2000.md) [CA2100](ca2100.md) CA, [caCA2302](ca2302.md) [CA2301](ca2301.md)<br/>[CA2311](ca2311.md) [CA2312](ca2312.md) [CA2321](ca2321.md) [CA2322](ca2322.md) [CA2327](ca2327.md) [CA2328](ca2328.md)<br/>[CA2329](ca2329.md) [CA2330](ca2330.md) [CA3001](ca3001.md) [CA3002](ca3002.md) [ca3003](ca3003.md) [ca3004](ca3004.md)<br/>[CA3005](ca3005.md) [CA3006](ca3006.md) [CA3007](ca3007.md) [CA3008](ca3008.md) [CA3009](ca3009.md) [CA3010](ca3010.md)<br/>[CA3011](ca3011.md) [CA3012](ca3012.md) [CA5361](ca5361.md) CA5376 CA5377 [CA5378](ca5378.md)<br/>[CA5380](ca5380.md) [CA5381](ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](ca5389.md) CA5390 |
+| Nomi dei simboli esclusi per l'analisi | Formati dei nomi di simboli consentiti (separati da `|` ):<br/> -Solo nome simbolo (include tutti i simboli con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel [formato ID documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo. Ogni nome di simbolo richiede un prefisso di tipo simbolo, ad esempio il prefisso "M:" per i metodi, il prefisso "T:" per i tipi, il prefisso "N:" per gli spazi dei nomi e così via.<br/> - `.ctor` per costruttori e `.cctor` per costruttori statici | Nessuno | [CA1062](ca1062.md) [CA1303](ca1303.md) [CA2000](ca2000.md) [CA2100](ca2100.md) CA, [caCA2302](ca2302.md) [CA2301](ca2301.md)<br/>[CA2311](ca2311.md) [CA2312](ca2312.md) [CA2321](ca2321.md) [CA2322](ca2322.md) [CA2327](ca2327.md) [CA2328](ca2328.md)<br/>[CA2329](ca2329.md) [CA2330](ca2330.md) [CA3001](ca3001.md) [CA3002](ca3002.md) [ca3003](ca3003.md) [ca3004](ca3004.md)<br/>[CA3005](ca3005.md) [CA3006](ca3006.md) [CA3007](ca3007.md) [CA3008](ca3008.md) [CA3009](ca3009.md) [CA3010](ca3010.md)<br/>[CA3011](ca3011.md) [CA3012](ca3012.md) [CA5361](ca5361.md) CA5376 CA5377 [CA5378](ca5378.md)<br/>[CA5380](ca5380.md) [CA5381](ca5381.md) CA5382 CA5383 CA5384 CA5387<br/>CA5388 [CA5389](ca5389.md) CA5390 |
 
 ## <a name="disallowed_symbol_names"></a>disallowed_symbol_names
 
 | Descrizione | Valori consentiti | Valore predefinito | Regole configurabili |
 | - | - | - | - |
-| Nomi di simboli non consentiti nel contesto dell'analisi | Formati dei nomi di simboli consentiti (separati da `|` ):<br/> -Solo nome simbolo (include tutti i simboli con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel [formato ID documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo. Ogni nome di simbolo richiede un prefisso di tipo simbolo, ad esempio il prefisso "M:" per i metodi, il prefisso "T:" per i tipi, il prefisso "N:" per gli spazi dei nomi e così via.<br/> - `.ctor` per costruttori e `.cctor` per costruttori statici | nessuno | [CA1031](ca1031.md) |
+| Nomi di simboli non consentiti nel contesto dell'analisi | Formati dei nomi di simboli consentiti (separati da `|` ):<br/> -Solo nome simbolo (include tutti i simboli con il nome, indipendentemente dal tipo o dallo spazio dei nomi che lo contiene)<br/> -Nomi completi nel [formato ID documentazione](https://github.com/dotnet/csharplang/blob/master/spec/documentation-comments.md#id-string-format)del simbolo. Ogni nome di simbolo richiede un prefisso di tipo simbolo, ad esempio il prefisso "M:" per i metodi, il prefisso "T:" per i tipi, il prefisso "N:" per gli spazi dei nomi e così via.<br/> - `.ctor` per costruttori e `.cctor` per costruttori statici | Nessuno | [CA1031](ca1031.md) |

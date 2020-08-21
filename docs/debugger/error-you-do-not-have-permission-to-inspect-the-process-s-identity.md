@@ -1,5 +1,5 @@
 ---
-title: "Errore: non si dispone dell'autorizzazione per controllare l'identità del processo&#39;s | Microsoft Docs"
+title: "Errore: non si dispone dell'autorizzazione per controllare l'identità del processo &apos; | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bd1bc11d42d8aed0b816a667fe5adcc139a42c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: e91745b8910a9e87ccd4a22fe09c6764a2ab4c6a
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85459922"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706529"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: non si dispone dell'autorizzazione per controllare l'identità del processo&#39;s
 Non si dispone dell'autorizzazione necessaria per controllare l'identità del processo. Probabilmente l'errore è causato dalla configurazione del sistema.
@@ -62,5 +62,5 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
 
 5. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

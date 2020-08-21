@@ -1,5 +1,5 @@
 ---
-title: Errore-la valutazione della funzione &#39;della funzione&#39; scaduta e deve essere interrotta in modo non sicuro | Microsoft Docs
+title: Errore-la valutazione della funzione di funzione &apos; &apos; è scaduta e deve essere interrotta in modo non sicuro | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a655e2994e1eaa1c5ac65e7b8782ec5b9d6f72
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 3d1b5860729b55f1c4ede253cd0f881e0ab56fcc
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386719"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706555"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Errore: si è verificato un timeout durante la valutazione della funzione &#39;funzione&#39; e l'operazione deve essere interrotta in modo non sicuro
 

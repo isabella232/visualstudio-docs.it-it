@@ -1,24 +1,26 @@
 ---
-title: Configurare gli analizzatori FxCop usando EditorConfig
+title: Configurare gli analizzatori di qualità del codice .NET con EditorConfig
 ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
+- .NET analyzers
 - FxCop analyzers, configuring
+- code quality
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 182042db9a744d037e295a8448f8c49a9c7b3a97
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: fbd30859c5ee3dbbea80c6d88d68c0211da62c88
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184796"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88706581"
 ---
-# <a name="configure-fxcop-analyzers"></a>Configurare gli analizzatori FxCop
+# <a name="configure-net-code-quality-analyzers"></a>Configurare gli analizzatori di qualità del codice .NET
 
-Il [pacchetto degli analizzatori FxCop](install-fxcop-analyzers.md) è costituito dalle regole "FxCop" più importanti dell'analisi legacy convertite in analizzatori di codice basati su .NET Compiler Platform. Per alcune regole FxCop, è possibile ridefinire le parti della codebase a cui devono essere applicate tramite [Opzioni configurabili](fxcop-analyzer-options.md). Ogni opzione viene specificata aggiungendo una coppia chiave-valore a un file [EditorConfig](https://editorconfig.org) . Un file di configurazione può essere [specifico di un progetto](#per-project-configuration) oppure può essere [condiviso](#shared-configuration) tra due o più progetti.
+Per determinati analizzatori di qualità del codice .NET (quelli i cui ID di regola iniziano con `CA` ), è possibile ridefinire le parti della codebase a cui applicare le [Opzioni configurabili](fxcop-analyzer-options.md). Ogni opzione viene specificata aggiungendo una coppia chiave-valore a un file [EditorConfig](https://editorconfig.org) . Un file di configurazione può essere specifico per un file, un progetto, una soluzione o l'intero repository.
 
 > [!TIP]
 > Per aggiungere un file con estensione EditorConfig al progetto, fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra **Aggiungi nuovo elemento** immettere **EditorConfig** nella casella di ricerca. Selezionare il modello **file EditorConfig (impostazione predefinita)** e scegliere **Aggiungi**.
@@ -31,10 +33,7 @@ Per informazioni sulla configurazione della gravità di una regola, ad esempio s
 
 ::: moniker-end
 
-Nella parte restante di questo articolo viene illustrata la sintassi generale per le [opzioni che ridefiniscono](fxcop-analyzer-options.md) la posizione in cui vengono applicate le regole FxCop.
-
-> [!NOTE]
-> Non è possibile configurare le regole FxCop legacy usando un file EditorConfig. Per informazioni sulle differenze tra analisi legacy e analizzatori FxCop, vedere [domande frequenti sugli analizzatori di FxCop](fxcop-analyzers-faq.md).
+Nella parte restante di questo articolo viene illustrata la sintassi generale per le [opzioni che ridefiniscono](fxcop-analyzer-options.md) l'applicazione degli analizzatori di qualità del codice .NET.
 
 ## <a name="option-scopes"></a>Ambiti delle opzioni
 
@@ -66,8 +65,6 @@ La sintassi per la configurazione di un'opzione per una regola *specifica* è la
 
 ## <a name="enabling-editorconfig-based-configuration"></a>Abilitazione della configurazione basata su EditorConfig
 
-### <a name="vs2019-163-and-later--fxcopanalyzers-package-version-33x-and-later"></a>VS2019 16,3 e versioni successive + pacchetto FxCopAnalyzers versione 3.3. x e successive
-
 È possibile abilitare la configurazione dell'analizzatore basato su EditorConfig per gli ambiti seguenti:
 
 - Documenti specifici
@@ -76,50 +73,10 @@ La sintassi per la configurazione di un'opzione per una regola *specifica* è la
 - Soluzioni specifiche
 - Intero repository
 
-Per abilitare la configurazione, aggiungere un file con *estensione EditorConfig* con le opzioni nella directory corrispondente. Questo file può contenere anche voci di configurazione della gravità diagnostica basata su EditorConfig. Vedere [qui](use-roslyn-analyzers.md#rule-severity) per altri dettagli.
-
-### <a name="prior-to-vs2019-163-or-using-an-fxcopanalyzers-package-version-prior-to-33x"></a>Prima di VS2019 16,3 o con una versione del pacchetto FxCopAnalyzers precedente alla 3.3. x
-
-#### <a name="per-project-configuration"></a>Configurazione per progetto
-
-Per abilitare la configurazione dell'analizzatore basato su EditorConfig per un progetto specifico, aggiungere un file con *estensione EditorConfig* alla directory radice del progetto.
-
-#### <a name="shared-configuration"></a>Configurazione condivisa
-
-È possibile condividere un file con estensione EditorConfig per la configurazione dell'analizzatore FxCop tra due o più progetti, ma sono necessari alcuni passaggi aggiuntivi.
-
-1. Salvare il file con *estensione EditorConfig* in un percorso comune.
-
-2. Creare un file con *estensione Props* con il contenuto seguente:
-
-   ```xml
-   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-     <PropertyGroup>
-       <SkipDefaultEditorConfigAsAdditionalFile>true</SkipDefaultEditorConfigAsAdditionalFile>
-     </PropertyGroup>
-     <ItemGroup Condition="Exists('<your path>\.editorconfig')" >
-       <AdditionalFiles Include="<your path>\.editorconfig" />
-     </ItemGroup>
-   </Project>
-   ```
-
-3. Aggiungere una riga al file con estensione *csproj* o *VBPROJ* per importare il file con *estensione Props* creato nel passaggio precedente. Questa riga deve essere posizionata prima di tutte le righe che importano i file di FxCop Analyzer *. props* . Ad esempio, se il file. props è denominato *EditorConfig. props*:
-
-   ```xml
-   ...
-   <Import Project="..\..\editorconfig.props" Condition="Exists('..\..\editorconfig.props')" />
-   <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.3\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
-   ...
-   ```
-
-4. Ricaricare il progetto.
-
-> [!NOTE]
-> Il percorso condiviso arbitrario del file EditorConfig descritto di seguito si applica solo alla configurazione dell'ambito di determinate regole dell'analizzatore FxCop. Per altre impostazioni, ad esempio la gravità della regola, le impostazioni generali dell'editor e lo stile del codice, il file EditorConfig deve sempre essere inserito nella cartella del progetto o in una cartella padre.
+Per abilitare la configurazione, aggiungere un file con *estensione EditorConfig* con le opzioni nella directory corrispondente. Questo file può contenere anche voci di configurazione della gravità diagnostica basata su EditorConfig. Per altri dettagli, vedere [qui](use-roslyn-analyzers.md#rule-severity).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Opzioni dell'ambito della regola per gli analizzatori FxCop](fxcop-analyzer-options.md)
+- [Opzioni dell'ambito delle regole per gli analizzatori di qualità del codice .NET](fxcop-analyzer-options.md)
 - [Configurazione analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
-- [Analizzatori FXCop](install-fxcop-analyzers.md)
 - [Convenzioni di codifica .NET per EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
