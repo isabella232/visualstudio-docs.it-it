@@ -1,5 +1,5 @@
 ---
-title: ActivityDesigner Progettazione flussi di lavoro-ClearCollection <T>
+title: ActivityDesigner Progettazione flussi di lavoro-ClearCollection &lt; T &gt;
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96f0b56172684c5c82910b34f40aa44fd6aec81
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86876177"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711625"
 ---
 # <a name="clearcollectiont-activity-designer"></a>Activity Designer\<T> ClearCollection
 
@@ -35,13 +35,13 @@ L' **ActivityDesigner ClearCollection \<T> ** è disponibile nella categoria **r
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.ClearCollection%601> e ne viene descritta la modalità di uso nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.ClearCollection%601>. Il valore predefinito è ClearCollection<Int32 \> . Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|Vero|Specifica la raccolta di cui cancellare tutti gli elementi. Questa raccolta è di tipo **ICollection \<TypeArgument> .** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
 |*TypeArgument*|Vero|Specifica il tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo tipo di *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata della griglia delle proprietà.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Raccolta](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)

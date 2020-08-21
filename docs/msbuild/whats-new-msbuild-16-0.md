@@ -1,5 +1,5 @@
 ---
-title: Novità di MSBuild 16.0 | Microsoft Docs
+title: '&apos;Novità di MSBuild 16,0 | Microsoft Docs'
 ms.date: 03/11/2019
 ms.topic: conceptual
 author: ghogen
@@ -8,20 +8,20 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 69c576f34b73ec99edd231d39e8bfa8ea661f2ff
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48fc1a02ad34a3d5229ead0da79c0f6fa781670e
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77652807"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711651"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novità di MSBuild 16.0
 
-Questo articolo descrive le funzionalità e le proprietà aggiornate in MSBuild 16.0. Per le note dettagliate sulla versione, vedere [MSBuild 16.0.](https://github.com/microsoft/msbuild/releases/tag/v16.0.461.62831)
+Questo articolo descrive le funzionalità e le proprietà aggiornate in MSBuild 16.0. Per le note sulla versione dettagliate, vedere [ MSBuild 16,0](https://github.com/microsoft/msbuild/releases/tag/v16.0.461.62831).
 
 ## <a name="changed-path"></a>Percorso modificato
 
- MSBuild viene installato nella cartella *corrente* in ogni versione di Visual Studio e gli eseguibili si trovano nella sottocartella *.Bin.* Ad esempio, il percorso di *MSBuild.exe* installato con la community di Visual Studio 2019 è *C:.* [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)
+ MSBuild viene installato nella cartella *\Larghezza* in ogni versione di Visual Studio e i file eseguibili si trovano nella sottocartella *\bin* . Ad esempio, il percorso *MSBuild.exe* installato con la community di visual studio 2019 è *c:\Programmi (x86) \Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* è possibile usare anche il modulo di PowerShell seguente per individuare MSBuild: [vssetup. PowerShell](https://github.com/Microsoft/vssetup.powershell).
 
 ## <a name="changed-properties"></a>Proprietà modificate
 

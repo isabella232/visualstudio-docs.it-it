@@ -1,42 +1,44 @@
 ---
-title: Impostare il tema colori e i tipi di carattere
-ms.date: 03/23/2020
-ms.topic: quickstart
+title: Come usare il tema scuro e modificare il colore del testo in Visual Studio
+description: Informazioni su come impostare il tema colori predefinito di Visual Studio sulla modalità scura e modificare i colori dei caratteri nell'editor di testo.
+ms.date: 08/20/2020
+ms.topic: how-to
+ms.custom: contperfq1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0b7b4e439f33e4e2eed8609d7e85e098068aea
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: ec0015f6abd434884d039407209d741febd41121
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233156"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711716"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalizzare l'IDE e l'editor di Visual Studio
+# <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>Procedura: personalizzare l'IDE di Visual Studio e l'editor di testo
 
-In questa esercitazione della durata di 5-10 minuti verranno illustrate le procedure per personalizzare il tema colori di Visual Studio selezionando il tema scuro. Si effettuerà anche la personalizzazione dei colori per due diversi tipi di testo nell'editor di testo.
+Questo articolo illustra come personalizzare il tema colori di Visual Studio selezionando il tema scuro. Si effettuerà anche la personalizzazione dei colori per due diversi tipi di testo nell'editor di testo.
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
-## <a name="set-the-color-theme"></a>Impostare il tema colori
+## <a name="set-the-color-theme-for-the-ide"></a>Impostare il tema colori per l'IDE
 
 Il tema colori predefinito per l'interfaccia utente di Visual Studio è denominato **Blu**. Per questa esercitazione verrà cambiato in **Scuro**.
 
 1. Nella barra dei menu, ovvero la riga dei menu con **File** e **Modifica**, scegliere **Strumenti** > **Opzioni**.
 
-1. Nella pagina delle opzioni**Generale** **ambiente** > impostare **Selezione tema colore** su **Scuro**, quindi **scegliere OK**.
+1. Nella **Environment**  >  pagina Opzioni**generali** ambiente modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
 
    Il tema colori per l'intero ambiente di sviluppo di Visual Studio (IDE) diventa **scuro**.
 
@@ -55,14 +57,14 @@ Il tema colori predefinito per l'interfaccia utente di Visual Studio è denomina
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> È possibile installare temi predefiniti aggiuntivi installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Dopo aver installato questo strumento, i temi di colore aggiuntivi vengono visualizzati nell'elenco a discesa **Tema colore.**
+> È possibile installare temi predefiniti aggiuntivi installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Dopo l'installazione di questo strumento, i temi colori aggiuntivi vengono visualizzati nell'elenco a discesa **tema colori** .
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> È possibile creare temi personalizzati installando la finestra di **progettazione** del tema colore di Visual Studio da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
+> È possibile creare temi personalizzati installando la **finestra di progettazione del tema colori di Visual Studio** dalla [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner).
 
 ::: moniker-end
 
@@ -70,7 +72,7 @@ Il tema colori predefinito per l'interfaccia utente di Visual Studio è denomina
 
 Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di tutto, creare un nuovo file XML per visualizzare i colori predefiniti.
 
-1. Dalla barra dei menu, scegliere **File** > **nuovo** > **file**.
+1. Dalla barra dei menu scegliere **file**  >  **nuovo**  >  **file**.
 
 1. Nella finestra di dialogo **Nuovo file**, nella categoria **Generale**, scegliere **File XML** e quindi scegliere **Apri**.
 
@@ -110,7 +112,7 @@ Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di
 
 1. In **Ambiente** scegliere la categoria **Tipi di carattere e colori**.
 
-   Si noti che il testo in **Mostra impostazioni per** dice Editor&mdash;di **testo**questo è quello che vogliamo. Espandere l'elenco a discesa per visualizzare l'elenco completo delle posizioni in cui è possibile personalizzare i tipi di carattere e il colore del testo.
+   Si noti che il testo sotto **Mostra impostazioni per** indica che l' **editor di testo** &mdash; è quello desiderato. Espandere l'elenco a discesa per visualizzare l'elenco completo delle posizioni in cui è possibile personalizzare i tipi di carattere e il colore del testo.
 
 1. Per modificare il colore del testo dei numeri di riga, in **Elementi visualizzati** scegliere **Numero di riga**. Nella casella **Primo piano elemento** scegliere **Verde oliva**.
 
@@ -128,5 +130,6 @@ Sono stati presentati solo un paio di modi per personalizzare i colori in Visual
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Modificare i tipi di carattere, i colori e le opzioni a contrasto elevato in Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 - [Personalizzare l'editor](../ide/how-to-change-text-case-in-the-editor.md)
 - [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)

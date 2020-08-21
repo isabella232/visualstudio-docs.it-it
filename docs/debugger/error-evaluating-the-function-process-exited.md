@@ -1,5 +1,5 @@
 ---
-title: 'Errore: il processo di destinazione è stato terminato con codice &#39;codice&#39; durante la valutazione della funzione &#39;funzione&#39; | Microsoft Docs'
+title: 'Errore: il processo di destinazione è stato terminato con codice codice &apos; &apos; durante la valutazione della &apos; funzione Function &apos; | Microsoft Docs'
 ms.date: 4/06/2018
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1721196becf1f746d81fa7e3d4ff5f0371e3f57
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 94effc8a5f75e7b38fb7275d175eb324c479a7a9
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460778"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711638"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Errore: il processo di destinazione è stato terminato con codice &#39;codice&#39; durante la valutazione della funzione &#39;funzione&#39;
 

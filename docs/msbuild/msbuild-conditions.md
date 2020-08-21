@@ -18,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fea7763bf1cbce5fac36ce2cd5e54c40e1da989a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
+ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289235"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711703"
 ---
 # <a name="msbuild-conditions"></a>Condizioni di MSBuild
 
 MSBuild supporta un set specifico di condizioni che possono essere applicate ovunque `Condition` sia consentito un attributo. La tabella seguente illustra tali condizioni.
 
-|Condizione|Description|
+|Condizione|Descrizione|
 |---------------|-----------------|
 |'`stringA`' == '`stringB`'|Restituisce `true` se `stringA` è uguale a `stringB`.<br /><br /> Ad esempio:<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti. Questo controllo non fa distinzione tra maiuscole e minuscole.|
 |'`stringA`' != '`stringB`'|Restituisce `true` se `stringA` non è uguale a `stringB`.<br /><br /> Ad esempio:<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti. Questo controllo non fa distinzione tra maiuscole e minuscole.|
@@ -58,7 +58,13 @@ MSBuild supporta un set specifico di condizioni che possono essere applicate ovu
 </Project>
 ```
 
-## <a name="see-also"></a>Vedi anche
+Nei file di progetto MSBuild non esiste alcun tipo booleano vero. I dati booleani sono rappresentati in proprietà che possono essere vuote o impostate su qualsiasi valore. Pertanto, `'$(Prop)' == 'true'` significa "If prop is `true` ,", ma `'$(Prop)' != 'false'` significa "If prop è `true` o unannullato o impostato su qualcos'altro".
+
+La logica booleana viene valutata solo nel contesto delle condizioni, quindi le impostazioni delle proprietà come `<Prop2>'$(Prop1)' == 'true'</Prop>` sono rappresentate come stringa (dopo l'espansione della variabile), non valutate come valori booleani.  
+
+MSBuild implementa alcune regole di elaborazione speciali per semplificare l'utilizzo delle proprietà di stringa utilizzate come valori booleani. I valori letterali booleani sono accettati, quindi `Condition="true"` e `Condition="false"` funzionano come previsto. MSBuild include inoltre regole speciali per supportare l'operatore di negazione booleano. Quindi, se `$(Prop)` è' true ', si `!$(Prop)` espande a `!true` e questo confronto è uguale a `false` , come previsto.
+
+## <a name="see-also"></a>Vedere anche
 
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
