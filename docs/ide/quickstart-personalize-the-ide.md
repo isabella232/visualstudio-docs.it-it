@@ -1,5 +1,5 @@
 ---
-title: Come usare il tema scuro e modificare il colore del testo in Visual Studio
+title: Come usare il tema scuro e modificare il colore del testo nell'editor
 description: Informazioni su come impostare il tema colori predefinito di Visual Studio sulla modalità scura e modificare i colori dei caratteri nell'editor di testo.
 ms.date: 08/20/2020
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0015f6abd434884d039407209d741febd41121
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 3b0e7b11fae63b9a2233b7391805760d3fdd7d27
+ms.sourcegitcommit: cf5b5437f0b43c6d52c479e1a2c443338bd27cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711716"
+ms.locfileid: "88724926"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-text-editor"></a>Procedura: personalizzare l'IDE di Visual Studio e l'editor di testo
 
@@ -68,7 +68,7 @@ Il tema colori predefinito per l'interfaccia utente di Visual Studio è denomina
 
 ::: moniker-end
 
-## <a name="change-text-color"></a>Modificare il colore del testo
+## <a name="change-text-colors-in-the-editor"></a>Modificare i colori del testo nell'editor
 
 Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di tutto, creare un nuovo file XML per visualizzare i colori predefiniti.
 
@@ -128,7 +128,7 @@ Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di
 
 Sono stati presentati solo un paio di modi per personalizzare i colori in Visual Studio. Per ottenere un ambiente di Visual Studio veramente su misura, è possibile esplorare tutte le altre opzioni di personalizzazione disponibili nella finestra di dialogo **Opzioni**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare i tipi di carattere, i colori e le opzioni a contrasto elevato in Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 - [Personalizzare l'editor](../ide/how-to-change-text-case-in-the-editor.md)
