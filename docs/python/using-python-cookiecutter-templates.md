@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 026953ff52f4aa5c34dd4656432fed8ef2a48580
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535148"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801581"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) offre un'interfaccia utente grafica per individuare modelli, opzioni del modello di input e creare progetti e file. Questa estensione è inclusa in Visual Studio 2017 e versioni successive e può essere installata separatamente nelle versioni precedenti di Visual Studio.
 
-Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python mentre Visual Studio è in esecuzione, fare clic sul pulsante **Home** sulla barra degli strumenti di tagliatore per rilevare l'interprete appena installato. (Vedere [ambienti Python](managing-python-environments-in-visual-studio.md) per altre informazioni sugli ambienti in generale).
+Cookiecutter richiede Python 3.3 o versione successiva (a 32 bit o a 64 bit) o Anaconda 3 4.2 o versione successiva (a 32 bit o a 64 bit). Se non è disponibile un interprete Python appropriato, Visual Studio visualizza un avviso. Se si installa un interprete Python mentre Visual Studio è in esecuzione, selezionare il pulsante **Home** sulla barra degli strumenti di tagliatore per rilevare l'interprete appena installato. (Vedere [ambienti Python](managing-python-environments-in-visual-studio.md) per altre informazioni sugli ambienti in generale).
 
 Una volta installato, selezionare **Visualizza**  >  **tagliatore Explorer** per aprire la relativa finestra:
 
@@ -65,7 +65,7 @@ Ogni modello di Cookiecutter definisce un set proprio di opzioni e specifica un 
 
 Se il modello specifica attività specifiche di Visual Studio da eseguire dopo la generazione del codice, viene visualizzata un'ulteriore opzione **Run additional tasks on completion** (Esegui attività aggiuntive al completamento) che consente di rifiutare esplicitamente tali attività. Le attività vengono usate più comunemente per aprire un Web browser, aprire file nell'editor, installare dipendenze e così via.
 
-### <a name="create"></a>Create
+### <a name="create"></a>Creazione
 
 Dopo aver impostato le opzioni, selezionare **Create** (Crea) per generare il codice. Se la cartella di output non è vuota viene visualizzato un messaggio di avviso. Se si ha familiarità con l'output del modello e non è un problema sovrascrivere file, è possibile ignorare l'avviso. In caso contrario, selezionare **Cancel** (Annulla), specificare una cartella vuota e quindi copiare manualmente i file creati nella cartella di output non vuota.
 
@@ -79,7 +79,7 @@ Le opzioni tagliatore sono disponibili tramite **strumenti**  >  **Opzioni**  > 
 
 ![Opzioni di Cookiecutter](media/cookiecutter-tools-options.png)
 
-| Opzione | Description |
+| Opzione | Descrizione |
 | --- | --- |
 | **URL feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | **Show Help (Mostra Guida)** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
@@ -97,9 +97,9 @@ Il rendering predefinito delle variabili di un modello dipende dal tipo di dati 
 
 | Proprietà | Descrizione |
 | --- | --- |
-| Label | Specifica ciò che viene visualizzato sopra l'editor per la variabile, anziché il nome della variabile. |
+| Etichetta | Specifica ciò che viene visualizzato sopra l'editor per la variabile, anziché il nome della variabile. |
 | Descrizione | Specifica che la descrizione comando compare per il controllo di modifica, anziché per il valore predefinito per la variabile. |
-| URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Facendo clic sul collegamento ipertestuale, il browser predefinito dell'utente verrà aperto su tale URL. |
+| URL | Cambia l'etichetta in collegamento ipertestuale, con una descrizione comando che visualizza l'URL. Se si seleziona il collegamento ipertestuale, il browser predefinito dell'utente verrà aperto su tale URL. |
 | Selettore | Consente la personalizzazione dell'editor per una variabile. Sono attualmente supportati i selettori seguenti:<ul><li>`string`: casella di testo standard, impostazione predefinita per le stringhe.</li><li>`list`: casella combinata standard, impostazione predefinita per gli elenchi.</li><li>`yesno`: casella combinata per scegliere tra `y` e `n`, per le stringhe.</li><li>`odbcConnection`: Casella di testo con un pulsante **...** che visualizza una finestra di dialogo di connessione al database.</li></ul> |
 
 Esempio:

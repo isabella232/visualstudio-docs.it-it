@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d520c92e84286ab05f13ad140a9e2e5a3454e09
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248572"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801256"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Creare modelli di progetto e di elemento personalizzati
 
@@ -72,7 +72,7 @@ Per gli scenari di creazione di modelli di base, è consigliabile usare l' **esp
 
 1. Creare un progetto VSIX. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).
 
-2. Impostare il progetto VSIX come progetto di avvio. Nella **Esplora soluzioni**selezionare il nodo progetto VSIX, selezionare e mantenere (oppure fare clic con il pulsante destro del mouse) e selezionare **Imposta come progetto di avvio**.
+2. Impostare il progetto VSIX come progetto di avvio. Nella **Esplora soluzioni**selezionare il nodo progetto VSIX, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**.
 
 3. Impostare il progetto di modello di progetto come asset del progetto VSIX. Aprire il file con *estensione vsixmanifest* . Passare alla scheda **Asset** e selezionare **nuovo**.
 

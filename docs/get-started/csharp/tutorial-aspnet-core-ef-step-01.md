@@ -17,26 +17,26 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580097"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801802"
 ---
-# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Esercitazione: Creare la prima app di base ASP.NET usando Entity Framework con Visual Studio 2019Tutorial: Create your first ASP.NET Core App using Entity Framework with Visual Studio 2019
+# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Esercitazione: creare la prima app ASP.NET Core usando Entity Framework con Visual Studio 2019
 
 In questa esercitazione verrà creata un'app Web ASP.NET Core che usa i dati e l'app verrà distribuita in Azure. L'esercitazione è costituita dai passaggi seguenti:
 
-- [Passaggio 1: Installare Visual Studio 2019Step 1: Install Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [Passaggio 2: Creare la prima app Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
-- [Passaggio 3: Usare i dati con Entity FrameworkStep 3: Work with data using Entity Framework](tutorial-aspnet-core-ef-step-03.md)
-- [Passaggio 4: Esporre un'API Web dall'app ASP.NET CoreStep 4: Expose a web API from your ASP.NET Core app](tutorial-aspnet-core-ef-step-04.md)
-- [Passaggio 5: Distribuire l'app ASP.NET Core in AzureStep 5: Deploy your ASP.NET Core app to Azure](tutorial-aspnet-core-ef-step-05.md)
+- [Passaggio 1: installare Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Passaggio 2: creare la prima app Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+- [Passaggio 3: utilizzare i dati utilizzando Entity Framework](tutorial-aspnet-core-ef-step-03.md)
+- [Passaggio 4: esporre un'API Web dall'app ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Passaggio 5: distribuire l'app ASP.NET Core in Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>Passaggio 1: Installare Visual Studio 2019Step 1: Install Visual Studio 2019
+## <a name="step-1-install-visual-studio-2019"></a>Passaggio 1: installare Visual Studio 2019
 
-Scoprire come installare Visual Studio 2019 con questa esercitazione video e le istruzioni dettagliate. Se Visual Studio è già stato installato, andare al [Passaggio 2: Creare la prima app Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
+Scoprire come installare Visual Studio 2019 con questa esercitazione video e le istruzioni dettagliate. Se Visual Studio è già installato, andare avanti al [passaggio 2: creare la prima app web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
 
 _Guardare questo video e seguire le indicazioni per installare Visual Studio e creare la prima app ASP.NET Core._
 
@@ -85,10 +85,10 @@ Si noti che per la maggior parte dei modelli di progetto è anche possibile sceg
 
 - Nessuna autenticazione.
 - Account utente individuali. Questi vengono archiviati in un database locale o basato su Azure.
-- Account aziendali o dell'istituto di istruzione. Questa opzione usa Active Directory, Azure AD o Office 365 per l'autenticazione.
+- Account aziendali o dell'istituto di istruzione. Questa opzione usa Active Directory, Azure AD o Microsoft 365 per l'autenticazione.
 - Autenticazione di Windows. Adatta per le applicazioni Intranet.
 
-Selezionare il modello di applicazione Web standard senza autenticazione e fare clic su **Crea**.
+Selezionare il modello applicazione Web standard senza autenticazione, quindi fare clic su **Crea**.
 
 ![Visual Studio 2019 - Scegliere le opzioni per il progetto ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -96,8 +96,8 @@ Selezionare il modello di applicazione Web standard senza autenticazione e fare 
 
 Nel prossimo video verranno presentate ulteriori informazioni sul primo progetto ASP.NET Core.
 
-[Esercitazione: Creazione della prima ASP.NET'app Web di base](tutorial-aspnet-core-ef-step-02.md)
+[Esercitazione: creazione della prima app Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Esercitazione: Introduzione a C 'NET e ASP.NET CoreTutorial: Get Started with C'è and ASP.NET Core](tutorial-aspnet-core.md) Un'esercitazione più dettagliata senza una procedura dettagliata video
+- [Esercitazione: Introduzione a C# e ASP.NET Core](tutorial-aspnet-core.md) Esercitazione più dettagliata senza una procedura dettagliata video

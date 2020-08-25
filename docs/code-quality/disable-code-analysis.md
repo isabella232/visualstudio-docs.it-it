@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 163b925423ba5afc62b84866e839c5d86a6444e0
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: d2cac7ad0502d82309aa664b8e8fe6bdd0301815
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371937"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800698"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Come disabilitare l'analisi del codice sorgente per il codice gestito
 
@@ -41,7 +41,7 @@ Per aprire questa pagina, fare clic con il pulsante destro del mouse sul nodo de
 - Per disabilitare l'analisi dell'origine dinamica, deselezionare l'opzione **Esegui su analisi Live** .
 
 > [!NOTE]
-> A partire da Visual Studio 2019 versione 16,5, se si preferisce il flusso di lavoro di esecuzione dell'analisi del codice su richiesta, è possibile disabilitare l'esecuzione dell'analizzatore durante l'analisi in tempo reale e/o compilare e attivare manualmente l'analisi del codice una sola volta in un progetto o in una soluzione su richiesta. Per informazioni sull'esecuzione manuale dell'analisi del codice, vedere [procedura: eseguire manualmente l'analisi del codice per il codice gestito](how-to-run-code-analysis-manually-for-managed-code.md).  
+> A partire da Visual Studio 2019 versione 16,5, se si preferisce il flusso di lavoro di esecuzione dell'analisi del codice su richiesta, è possibile disabilitare l'esecuzione dell'analizzatore durante l'analisi in tempo reale e/o compilare e attivare manualmente l'analisi del codice una sola volta in un progetto o in una soluzione su richiesta. Per informazioni sull'esecuzione manuale dell'analisi del codice, vedere [procedura: eseguire manualmente l'analisi del codice per il codice gestito](how-to-run-code-analysis-manually-for-managed-code.md).
 
 ## <a name="net-framework-projects"></a>Progetti .NET Framework
 
@@ -67,7 +67,7 @@ Esempi:
 
 ## <a name="source-analysis"></a>Analisi dell'origine
 
-Non è possibile disattivare l' [analisi dell'origine](roslyn-analyzers-overview.md) in Visual Studio 2017. Se si desidera cancellare gli errori dell'analizzatore dalla elenco errori, è possibile eliminare tutte le violazioni correnti scegliendo **analizza**  >  **Esegui analisi codice ed elimina problemi attivi** sulla barra dei menu. Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione delle violazioni](use-roslyn-analyzers.md#suppress-violations).
+Non è possibile disattivare l' [analisi dell'origine](roslyn-analyzers-overview.md) in Visual Studio 2017. Se si desidera cancellare gli errori dell'analizzatore dalla **Elenco errori**, è possibile eliminare tutte le violazioni correnti selezionando **analizza**  >  **Esegui analisi codice ed elimina problemi attivi** sulla barra dei menu. Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione delle violazioni](use-roslyn-analyzers.md#suppress-violations).
 
 A partire da Visual Studio 2019 versione 16,3, è possibile disattivare l'analisi del codice sorgente o eseguirla su richiesta. Provare a eseguire l'aggiornamento a Visual Studio 2019.
 
@@ -77,7 +77,7 @@ A partire da Visual Studio 2019 versione 16,3, è possibile disattivare l'analis
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Non visualizzare le violazioni](use-roslyn-analyzers.md#suppress-violations)
 - [Procedura: abilitare e disabilitare l'analisi del codice legacy](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

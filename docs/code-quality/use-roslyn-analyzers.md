@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e7349717478f18b676b74908da8fb8a6a2fc413
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: edb9cb30be9d62a533e6d011cbb8d0436ef898b1
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184588"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801607"
 ---
 # <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
@@ -28,11 +28,11 @@ Gli analizzatori di codice .NET Compiler Platform ("Roslyn") analizzano il codic
 
 ![Nodo analizzatori in Esplora soluzioni](media/analyzers-expanded-in-solution-explorer.png)
 
-È possibile visualizzare le proprietà di una diagnostica, incluse la descrizione e la gravità predefinita, nella finestra **Proprietà** . Per visualizzare le proprietà, fare clic con il pulsante destro del mouse sulla regola e scegliere **Proprietà**oppure selezionare la regola e quindi premere **ALT** + **invio**.
+È possibile visualizzare le proprietà di una diagnostica, incluse la descrizione e la gravità predefinita, nella finestra **Proprietà** . Per visualizzare le proprietà, fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) la regola e selezionare **Proprietà**oppure selezionare la regola e quindi premere **ALT** + **invio**.
 
 ![Proprietà di diagnostica in Finestra Proprietà](media/analyzer-diagnostic-properties.png)
 
-Per visualizzare la documentazione online per una diagnostica, fare clic con il pulsante destro del mouse sulla diagnostica e selezionare **Visualizza Guida**.
+Per visualizzare la documentazione online per una diagnostica, fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) la diagnostica e selezionare **Visualizza Guida**.
 
 Le icone accanto a ogni diagnostica in **Esplora soluzioni** corrispondono alle icone visualizzate nel set di regole quando lo si apre nell'Editor:
 
@@ -147,11 +147,11 @@ Esistono due modi per convertire un file di RuleSet esistente in un file EditorC
 
        ![Converti il set di regole in un file EditorConfig nell'editor di RuleSet](media/convert-ruleset-to-editorconfig-file-ruleset-editor.png)
 
-    2. **Fare clic** sul collegamento barra informazioni.
+    2. Selezionare il collegamento **barra informazioni** .
 
        Verrà visualizzata una finestra di dialogo **Salva con nome** che consente di selezionare la directory in cui si desidera generare il file EditorConfig.
 
-    3. **Fare clic** sul pulsante **Salva** per generare il file EditorConfig.
+    3. Selezionare il pulsante **Salva** per generare il file EditorConfig.
 
        Il EditorConfig generato deve essere aperto nell'editor. Inoltre, la proprietà MSBuild `CodeAnalysisRuleSet` viene aggiornata nel file di progetto in modo che non faccia più riferimento al file di RuleSet originale.
 
@@ -212,7 +212,7 @@ Visual Studio offre un modo pratico per configurare la gravità di una regola da
 
    ![Configurare la gravità della regola dal menu a bulbo chiaro in Visual Studio](media/configure-rule-severity.png)
 
-3. Da qui, selezionare una delle opzioni di gravità.
+3. Da qui, scegliere una delle opzioni di gravità.
 
    ![Configurare la gravità della regola come suggerimento](media/configure-rule-severity-suggestion.png)
 
@@ -225,13 +225,13 @@ Visual Studio offre un modo pratico per configurare la gravità di una regola da
 
 Visual Studio offre anche un modo pratico per configurare la gravità di una regola dal menu di scelta rapida Elenco errori.
 
-1. Quando si verifica una violazione, fare clic con il pulsante destro del mouse sulla voce di diagnostica nell'elenco errori.
+1. Dopo che si è verificata una violazione, fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) la voce di diagnostica nell'elenco errori.
 
 2. Dal menu di scelta rapida selezionare **imposta gravità**.
 
    ![Configurare la gravità della regola dall'elenco errori in Visual Studio](media/configure-rule-severity-error-list.png)
 
-3. Da qui, selezionare una delle opzioni di gravità.
+3. Da qui, scegliere una delle opzioni di gravità.
 
    Visual Studio aggiunge una voce al file EditorConfig per configurare la regola al livello richiesto.
 
@@ -242,12 +242,12 @@ Visual Studio offre anche un modo pratico per configurare la gravità di una reg
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Imposta gravità regola da Esplora soluzioni
 
-1. In Esplora soluzioni, espandere **References**  >  **analizzatori** di riferimenti (o **Dependencies**  >  **analizzatori** di dipendenze per i progetti .NET Core).
+1. In Esplora soluzioni selezionare **References**  >  **analizzatori** di riferimenti (o **Dependencies**  >  **analizzatori** di dipendenze per i progetti .NET Core).
 
 2. Espandere l'assembly che contiene la regola per la quale si desidera impostare la gravità.
 
 ::: moniker range=">=vs-2019"
-3. Fare clic con il pulsante destro del mouse sulla regola e scegliere **imposta gravità**. Nel menu di scelta rapida selezionare una delle opzioni di gravità.
+3. Fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) la regola e selezionare **imposta gravità**. Nel menu di scelta rapida scegliere una delle opzioni di gravità.
 
    Visual Studio aggiunge una voce al file EditorConfig per configurare la regola al livello richiesto. Se il progetto usa un file di RuleSet anziché un file EditorConfig, la voce relativa alla gravità viene aggiunta al file di RuleSet.
 
@@ -256,7 +256,7 @@ Visual Studio offre anche un modo pratico per configurare la gravità di una reg
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-3. Fare clic con il pulsante destro del mouse sulla regola e selezionare **imposta gravità set di regole**. Nel menu di scelta rapida selezionare una delle opzioni di gravità.
+3. Fare clic con il pulsante destro del mouse (o selezionare e mantenere) la regola e selezionare **imposta gravità set di regole**. Nel menu di scelta rapida scegliere una delle opzioni di gravità.
 
    Il livello di gravità per la regola viene salvato nel file del set di regole attivo.
 ::: moniker-end
@@ -265,16 +265,19 @@ Visual Studio offre anche un modo pratico per configurare la gravità di una reg
 
 ![File del set di regole in Esplora soluzioni](media/ruleset-in-solution-explorer.png)
 
-1. Aprire il file del set di regole attivo facendo doppio clic su di esso in **Esplora soluzioni**, selezionando **Apri set di regole attivo** dal menu di **References**scelta rapida del  >  nodo**analizzatori** riferimenti o selezionando **Apri** nella pagina delle proprietà **analisi codice** per il progetto.
+1. Aprire il file del set di regole attivo in uno dei modi seguenti:
 
-   Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, ne assegna il nome * \<projectname> . RuleSet*e lo aggiunge al progetto. Questo set di regole personalizzate diventa anche il set di regole attive per il progetto.
+- In **Esplora soluzioni**fare doppio clic sul file, fare clic con il pulsante destro del mouse ( **References**oppure selezionare e mantenere)  >  nodo**analizzatori** riferimenti e selezionare **Apri set di regole attive**.
+- Nella pagina delle proprietà **analisi codice** per il progetto selezionare **Apri** .
+
+  Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, ne assegna il nome * \<projectname> . RuleSet*e lo aggiunge al progetto. Questo set di regole personalizzate diventa anche il set di regole attive per il progetto.
 
    > [!NOTE]
    > I progetti .NET Core e .NET Standard non supportano i comandi di menu per i set di regole in **Esplora soluzioni**, ad esempio **aprire il set di regole attive**. Per specificare un set di regole non predefinite per un progetto .NET Core o .NET Standard, [aggiungere manualmente la proprietà **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al file di progetto. È comunque possibile configurare le regole all'interno del set di regole nell'interfaccia utente dell'editor set di regole di Visual Studio.
 
 1. Passare alla regola espandendo l'assembly contenitore.
 
-1. Nella colonna **azione** selezionare il valore per aprire un elenco a discesa e selezionare la gravità desiderata nell'elenco.
+1. Nella colonna **azione** selezionare il valore per aprire un elenco a discesa e scegliere la gravità desiderata nell'elenco.
 
    ![File del set di regole aperto nell'editor](media/ruleset-file-in-editor.png)
 
@@ -329,7 +332,7 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 - Dall' **Editor set di regole**
 
-  Deselezionare la casella accanto al nome o impostare **azione** su **nessuno**.
+  Deselezionare la casella di controllo accanto al nome o impostare **azione** su **nessuno**.
 
 - Dall' **editor di codice**
 
@@ -339,7 +342,7 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 - Dal **Elenco errori**
 
-  Selezionare le regole da escludere, quindi fare clic con il pulsante destro del mouse e selezionare **Elimina**  >  **in origine/in file di eliminazione**.
+  Scegliere le regole da escludere, quindi fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) e selezionare **Elimina**  >  **in origine/file di eliminazione**.
 
   - Se si omette **in origine**, viene visualizzata la finestra di dialogo **Anteprima modifiche** con un'anteprima dell' [avviso #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) C# o Visual Basic la direttiva di [avviso #Disable](/dotnet/visual-basic/language-reference/directives/directives) aggiunta al codice sorgente.
 
@@ -369,7 +372,7 @@ Quando si compila il progetto dalla riga di comando, le violazioni delle regole 
 Il livello di dettaglio dell'output di compilazione non influisce sull'eventuale visualizzazione delle violazioni delle regole. Anche con il livello di dettaglio **silenzioso** , le violazioni delle regole vengono visualizzate nell'output di compilazione.
 
 > [!TIP]
-> Se si è abituati a eseguire l'analisi legacy dalla riga di comando, con *FxCopCmd. exe* o tramite MSBuild con il flag **RunCodeAnalysis** , di seguito viene illustrato come eseguire questa operazione con gli analizzatori di codice.
+> Se si è abituati a eseguire l'analisi legacy dalla riga di comando, con *FxCopCmd.exe* o tramite MSBuild con il flag **RunCodeAnalysis** , di seguito viene illustrato come eseguire questa operazione con gli analizzatori di codice.
 
 Per visualizzare le violazioni dell'analizzatore dalla riga di comando quando si compila il progetto usando MSBuild, eseguire un comando simile al seguente:
 

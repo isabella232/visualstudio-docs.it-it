@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63000454"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801178"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introduzione a R Tools per Visual Studio
 
@@ -22,8 +22,8 @@ Dopo aver installato R Tools per Visual Studio (RTVS), da [How to install R Tool
 ## <a name="create-an-r-project"></a>Creare un progetto R
 
 1. Aprire Visual Studio.
-1. Scegliere **File** > **nuovo** > **progetto** **(CTRL**+**Maiusc**+**N**)
-1. Selezionare "R Project" da in **Modelli** > **R**, assegnare al progetto un nome e un percorso e selezionare **OK**:
+1. Scegliere **file**  >  **nuovo**  >  **progetto** (**CTRL** + **MAIUSC** + **N**)
+1. Selezionare "progetto r" in **modelli**  >  **r**, assegnare un nome e un percorso al progetto e selezionare **OK**:
 
    ![Finestra di dialogo Nuovo progetto per R in Visual Studio (RTVS in VS2017)](media/getting-started-01-new-project.png)
 
@@ -34,7 +34,7 @@ Dopo aver installato R Tools per Visual Studio (RTVS), da [How to install R Tool
     - In basso a sinistra viene visualizzata la finestra **R interattivo** in cui è possibile sviluppare e testare il codice in modo interattivo.
 
 > [!Note]
-> È possibile usare la finestra **R interattivo** senza che vi siano progetti aperti e anche quando è stato caricato un tipo di progetto diverso. Basta selezionare **R Tools** > **windows** > **R Interactive** in qualsiasi momento.
+> È possibile usare la finestra **R interattivo** senza che vi siano progetti aperti e anche quando è stato caricato un tipo di progetto diverso. È sufficiente selezionare **R Tools**  >  **Windows**  >  **R interattivo** in qualsiasi momento.
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>Esplorare la finestra interattiva e IntelliSense
 
@@ -84,14 +84,14 @@ Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi 
     plot(density(pop), main = "Population Density", xlab = "X", ylab = "")
     ```
 
-1. Per visualizzare rapidamente i risultati, selezionare tutto il codice (**Ctrl**+**A**), quindi premere **CTRL**+**INVIO** o fare clic con il pulsante destro del mouse e selezionare Esegui **in modalità interattiva**. Tutto il codice selezionato viene eseguito nella finestra interattiva come se fosse stato digitato direttamente. Il risultato viene poi visualizzato in una finestra dei tracciati:
+1. Per visualizzare rapidamente i risultati, selezionare tutto il codice (**CTRL** + **A**), quindi premere **CTRL** + **invio** o fare clic con il pulsante destro del mouse e selezionare **Esegui in interattivo**. Tutto il codice selezionato viene eseguito nella finestra interattiva come se fosse stato digitato direttamente. Il risultato viene poi visualizzato in una finestra dei tracciati:
 
     ![Visualizzazione di un tracciato in Visual Studio](media/getting-started-08-plot1.png)
 
-1. Per una singola riga, è sufficiente premere **CTRL**+**INVIO** in qualsiasi momento per eseguire tale riga nella finestra interattiva.
+1. Per una singola riga, è sufficiente premere **CTRL** + **invio** in qualsiasi momento per eseguire la riga nella finestra interattiva.
 
 > [!Tip]
-> Imparare il modello di apportare modifiche e premendo **Ctrl**+**Invio** (o selezionando tutto con **Ctrl**+**A** e quindi premendo **Ctrl**+**Invio**) per eseguire rapidamente il codice. Questa procedura è molto più efficiente rispetto all'uso del mouse per le stesse operazioni.
+> Informazioni sul modello per apportare modifiche e premere **CTRL** + **invio** (oppure selezionare tutti gli elementi con **CTRL** + **a** e premere **CTRL** + **invio**) per eseguire rapidamente il codice. Questa procedura è molto più efficiente rispetto all'uso del mouse per le stesse operazioni.
 >
 > È anche possibile trascinare e rilasciare la finestra del tracciato fuori dalla cornice di Visual Studio e posizionarlo in qualsiasi punto dello schermo. È quindi possibile ridimensionare la finestra dei tracciati alle dimensioni volute e quindi salvarla in un'immagine o in un file con estensione pdf.
 
@@ -103,7 +103,7 @@ Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi 
     lines(density(samp.means))
     ```
 
-1. Premere **Ctrl**+**A** e **Ctrl**+**Invio** per eseguire nuovamente il codice, producendo il seguente risultato:
+1. Premere **CTRL** + **a** e **CTRL** + di nuovo**invio** per eseguire il codice, producendo il risultato seguente:
 
     ![Doppio tracciato aggiornato in Visual Studio](media/getting-started-09-plot2.png)
 
@@ -125,7 +125,7 @@ Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi 
     lines(density(samp.means))
     ```
 
-1. **Ctrl**+**A** e **Ctrl**+**Invio** di nuovo per vedere il risultato:
+1. **CTRL** + **A** e **CTRL** + di nuovo**invio** per visualizzare il risultato:
 
     ![Doppio tracciato aggiornato in Visual Studio, ridimensionato correttamente](media/getting-started-10-plot3.png)
 
@@ -135,9 +135,9 @@ Nell'editor è possibile eseguire altre operazioni. Per informazioni dettagliate
 
 Uno dei principali vantaggi di Visual Studio è l'interfaccia utente di debug. RTVS è stato sviluppato su queste solide basi alle quali è stata aggiunta un'interfaccia utente innovativa, come ad esempio l'utilità [Esplora variabili](variable-explorer.md). In questo caso, vedremo solo brevemente il debug.
 
-1. Per iniziare, reimpostare l'area di lavoro corrente per cancellare tutto ciò che hai fatto finora utilizzando il comando di menu R **Tools** > **Session** > **Reset.** Per impostazione predefinita, tutte le operazioni eseguite nella finestra interattiva vengono aggiunte alla sessione corrente, che viene usata anche dal debugger. Reimpostando la sessione, si garantisce che la sessione di debug venga avviata senza dati preesistenti. Il comando **Reimposta**, tuttavia, non ha alcun effetto sul file di origine *script.R*, poiché questo viene gestito e salvato fuori dell'area di lavoro.
+1. Per iniziare, reimpostare l'area di lavoro corrente per cancellare tutte le operazioni eseguite finora usando **R Tools**il  >  **Session**  >  comando di menu**Reimposta** sessione di R Tools. Per impostazione predefinita, tutte le operazioni eseguite nella finestra interattiva vengono aggiunte alla sessione corrente, che viene usata anche dal debugger. Reimpostando la sessione, si garantisce che la sessione di debug venga avviata senza dati preesistenti. Il comando **Reimposta**, tuttavia, non ha alcun effetto sul file di origine *script.R*, poiché questo viene gestito e salvato fuori dell'area di lavoro.
 
-1. Con il file *script.R* creato nella sezione precedente, impostare un punto di interruzione sulla riga che inizia con `pop <-` posizionando il cursore sulla riga e premendo **F9** o selezionando il comando di menu **Debug** > **Imposta/Rimuovi punto di interruzione**. In alternativa, fare semplicemente clic sul margine sinistro (rilegatura) della riga, laddove viene visualizzato il punto di interruzione rosso:
+1. Con il file *script.R* creato nella sezione precedente, impostare un punto di interruzione sulla riga che inizia con `pop <-` posizionando il cursore sulla riga e premendo **F9** o selezionando il comando di menu **Debug** > **Imposta/Rimuovi punto di interruzione**. In alternativa, fare clic sul margine sinistro (o sulla barra di navigazione) per la riga in cui viene visualizzato il punto di interruzione rosso:
 
     ![Impostazione di un punto di interruzione nell'editor](media/getting-started-11-debug1.png)
 
@@ -149,7 +149,7 @@ Uno dei principali vantaggi di Visual Studio è l'interfaccia utente di debug. R
 
     ![Barra degli strumenti Debug in Visual Studio](media/getting-started-13-debug3.png)
 
-1. Quando l'esecuzione si arresta in corrispondenza del punto di interruzione, è possibile esaminare i valori delle variabili. Individuare la finestra **Auto** in Visual Studio e selezionare la scheda nella parte inferiore denominata **Variabili locali**. La finestra **Variabili locali** visualizza le variabili locali nel punto corrente all'interno del programma. Se il programma è stato interrotto in corrispondenza del punto di interruzione impostato in precedenza, si nota che la variabile `pop` non è ancora definita. A questo punto utilizzare il comando Esegui**istruzione/sede** `pop` di **debug** > (**F10**) e viene visualizzato il valore per:
+1. Quando l'esecuzione si arresta in corrispondenza del punto di interruzione, è possibile esaminare i valori delle variabili. Individuare la finestra **Auto** in Visual Studio e selezionare la scheda nella parte inferiore denominata **Variabili locali**. La finestra **Variabili locali** visualizza le variabili locali nel punto corrente all'interno del programma. Se il programma è stato interrotto in corrispondenza del punto di interruzione impostato in precedenza, si nota che la variabile `pop` non è ancora definita. A questo punto usare il comando **debug**  >  **Esegui istruzione** /routine (**F10**). verrà visualizzato il valore per `pop` :
 
     ![Finestra Variabili locali in Visual Studio](media/getting-started-14-debug4.png)
 
@@ -168,5 +168,5 @@ In questa procedura dettagliata sono state illustrate le nozioni di base dei pro
 - [Progetti di esempio](getting-started-samples.md)
 - [Modifica del codice](editing-r-code-in-visual-studio.md)
 - [Debug](debugging-r-in-visual-studio.md)
-- [Aree](r-workspaces-in-visual-studio.md)
+- [Aree di lavoro](r-workspaces-in-visual-studio.md)
 - [Visualizzazione dei dati](visualizing-data-with-r-in-visual-studio.md)

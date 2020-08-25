@@ -11,23 +11,23 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72986224"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801568"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Passaggio 3: Usare la finestra interattiva REPL
 
 **Passaggio precedente: [Scrivere ed eseguire codice](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
-La finestra **interattiva** di Visual Studio per Python offre un'esperienza REPL (Read-Evaluate-Print-loop) avanzata che riduce notevolmente il normale ciclo di modifica-build-debug. La finestra **Interattiva** offre tutte le funzionalità dell'esperienza REPL della riga di comando di Python. Rende anche molto semplice lo scambio di codice con i file di origine dell'editor di Visual Studio, che altrimenti risulta eccessivamente complessa con la riga di comando.
+La finestra **interattiva** di Visual Studio per Python offre un'esperienza REPL (Read-Evaluate-Print-Loop) avanzata che riduce notevolmente il consueto ciclo di modifica-compilazione-debug. La finestra **Interattiva** offre tutte le funzionalità dell'esperienza REPL della riga di comando di Python. Rende anche molto semplice lo scambio di codice con i file di origine dell'editor di Visual Studio, che altrimenti risulta eccessivamente complessa con la riga di comando.
 
 > [!NOTE]
 > Per i problemi relativi a REPL, verificare che i pacchetti `ipython` e `ipykernel` siano installati. Per informazioni sull'installazione dei pacchetti, vedere la [scheda Packages (Pacchetti) in Python Environments (Ambienti Python)](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
-1. Aprire la finestra **Interattiva** facendo clic col pulsante destro del mouse sull'ambiente Python del progetto in **Esplora soluzioni**, come **Python 3.6 (32 bit)** illustrato in precedenza, e selezionando **Apri finestra interattiva**. È possibile selezionare alternativamente Visualizza altre**finestre interattive** di Windows Python dal menu principale di Visual Studio.You can alternately select **View** > **Other Windows** > Python Interactive Windows from the main Visual Studio menu.
+1. Aprire la finestra **Interattiva** facendo clic col pulsante destro del mouse sull'ambiente Python del progetto in **Esplora soluzioni**, come **Python 3.6 (32 bit)** illustrato in precedenza, e selezionando **Apri finestra interattiva**. In alternativa, è possibile selezionare **Visualizza**  >  **altre**  >  **finestre Windows Python interattive** dal menu principale di Visual Studio.
 
 1. La finestra **Interattiva** si apre sotto l'editor con il prompt REPL standard **>>>** Python. L'elenco a discesa **Ambiente** consente di selezionare un interprete specifico da utilizzare. In alcuni casi può essere necessario ingrandire la finestra **Interattiva**. A tale scopo, trascinare il separatore tra le due finestre:
 
@@ -44,7 +44,7 @@ La finestra **interattiva** di Visual Studio per Python offre un'esperienza REPL
 
     ![Finestra interattiva di Python con continuazione dell'istruzione](media/vs-getting-started-python-13-interactive3.png)
 
-1. La finestra **interattiva** fornisce una cronologia completa di tutto ciò che hai inserito e migliora la riga di comando REPL con elementi di cronologia su più righe. Ad esempio, è possibile chiamare facilmente l'intera definizione della funzione `f` come singola unità e modificare in modo semplice il nome in `make_double`, invece di dover ricreare la funzione riga per riga.
+1. La finestra **interattiva** fornisce una cronologia completa di tutto ciò che è stato immesso e migliora la REPL della riga di comando con gli elementi della cronologia su più righe. Ad esempio, è possibile chiamare facilmente l'intera definizione della funzione `f` come singola unità e modificare in modo semplice il nome in `make_double`, invece di dover ricreare la funzione riga per riga.
 
 1. Visual Studio può inviare più righe di codice da una finestra dell'editor alla finestra **Interattiva**. Questa funzionalità consente di mantenere il codice in un file di origine e di inviarne facilmente parti selezionate alla finestra **Interattiva**. È quindi possibile usare questi frammenti di codice nell'ambiente REPL rapido piuttosto che dover eseguire l'intero programma. Per visualizzare questa funzionalità, sostituire il ciclo `for` nel file *PythonApplication1.py* con le operazioni seguenti:
 
@@ -54,12 +54,12 @@ La finestra **interattiva** di Visual Studio per Python offre un'esperienza REPL
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Selezionare `import` `from`le `make_dot_string` istruzioni , e nella funzione nel file *.py,* fare clic con il pulsante destro del mouse e **scegliere Invia a interattivo** (o premere **CTRL**+**INVIO**). Il frammento di codice viene incollato immediatamente nella finestra **Interattiva** ed eseguito. Poiché il codice ha definito una funzione, è possibile testarla rapidamente chiamandola un paio di volte:Because the code has defined a function, you can quickly test that function by calling it a few times:
+1. Selezionare le `import` `from` `make_dot_string` istruzioni per la funzione, e nel file con *estensione py* . Fare clic con il pulsante destro del mouse sul testo selezionato e scegliere **Invia a interattivo** oppure premere **CTRL** + **invio**. Il frammento di codice viene incollato immediatamente nella finestra **Interattiva** ed eseguito. Poiché il codice ha definito una funzione, è possibile testare rapidamente la funzione chiamandola più volte:
 
     ![Invio del codice alla finestra interattiva e test](media/vs-getting-started-python-14-interactive4.png)
 
     > [!Tip]
-    > Se si utilizza **CTRL**+**Invio** nell'editor *senza* una selezione, viene eseguita la riga di codice corrente nella finestra **Interattiva** e il punto di inserimento viene automaticamente inserito nella riga successiva. Con questa funzione, premendo **ripetutamente Ctrl**+**Invio** fornisce un modo pratico per scorrere il codice che non è possibile solo con la riga di comando Python. Consente anche di esaminare il codice senza eseguire il debugger e senza avviare necessariamente il programma dall'inizio.
+    > Se si usa **CTRL** + **invio** nell'editor *senza* una selezione, viene eseguita la riga di codice corrente nella finestra **interattiva** e il punto di inserimento viene posizionato automaticamente nella riga successiva. Con questa funzionalità, premendo **Ctrl** + ripetutamente CTRL**invio** , viene illustrato un modo pratico per esaminare il codice che non è possibile solo con la riga di comando di Python. Consente anche di esaminare il codice senza eseguire il debugger e senza avviare necessariamente il programma dall'inizio.
 
 1. È anche possibile copiare e incollare più righe di codice nella finestra **Interattiva** da qualsiasi origine, come il frammento di codice riportato di seguito, che è difficile eseguire con le transazioni di replica della riga di comando di Python. Quando il codice viene incollato, la finestra **Interattiva** lo esegue, come se fosse stato digitato:
 
@@ -71,13 +71,13 @@ La finestra **interattiva** di Visual Studio per Python offre un'esperienza REPL
 
     ![Incollare più righe di codice tramite l'invio alla finestra interattiva](media/vs-getting-started-python-15-interactive5.png)
 
-1. Come è possibile vedere, questo codice funziona correttamente, tuttavia l'output non è molto evocativo. Un valore passaggio diverso nel ciclo `for` potrebbe visualizzare più dell'onda coseno. Dato che l'intero ciclo `for` è presente nella cronologia REPL come singola unità, è facile tornare indietro e apportare qualsiasi modifica, per poi testare di nuovo la funzione. Premere la freccia in su per chiamare il ciclo `for`. Premere quindi sulle frecce verso sinistra o destra per avviare l'esplorazione del codice (fino a tale momento, le frecce su e giù continuano a scorrere la cronologia). Individuare e modificare la specifica `range` in `range(0, 360, 12)`. Quindi premere **Ctrl**+**Invio** (in qualsiasi punto del codice) per eseguire nuovamente l'intera istruzione:
+1. Come è possibile vedere, questo codice funziona correttamente, tuttavia l'output non è molto evocativo. Un valore passaggio diverso nel ciclo `for` potrebbe visualizzare più dell'onda coseno. Dato che l'intero ciclo `for` è presente nella cronologia REPL come singola unità, è facile tornare indietro e apportare qualsiasi modifica, per poi testare di nuovo la funzione. Premere la freccia in su per chiamare il ciclo `for`. Premere quindi sulle frecce verso sinistra o destra per avviare l'esplorazione del codice (fino a tale momento, le frecce su e giù continuano a scorrere la cronologia). Individuare e modificare la specifica `range` in `range(0, 360, 12)`. Premere quindi **CTRL** + **invio** (in qualsiasi punto del codice) per eseguire di nuovo l'intera istruzione:
 
     ![Modifica di un'istruzione precedente nella finestra interattiva](media/vs-getting-started-python-16-interactive6.png)
 
 1. Ripetere il processo per sperimentare con impostazioni diverse i passaggi fino a individuare un valore desiderato. È anche possibile rendere la ripetizione dell'onda aumentando l'intervallo, ad esempio, `range(0, 1800, 12)`.
 
-1. Quando si è soddisfatti del codice scritto nella finestra **Interattiva**, selezionarlo, fare clic con il pulsante destro del mouse e scegliere **Copia codice** (**CTRL**+**MAIUSC**+**C**) quindi incollarlo nell'editor. Questa funzionalità speciale di Visual Studio omette automaticamente qualsiasi output, così come i prompt `>>>` e `...`. Ad esempio, nell'immagine seguente viene illustrato l'uso del comando **Copia codice** su una selezione che include prompt e output:
+1. Quando si è soddisfatti del codice scritto nella finestra **interattiva** , selezionarlo. Fare quindi clic con il pulsante destro del mouse sul codice e scegliere **Copia codice** (**CTRL** + **MAIUSC** + **C**). Infine, incollare il codice selezionato nell'editor. Questa funzionalità speciale di Visual Studio omette automaticamente qualsiasi output, così come i prompt `>>>` e `...`. Ad esempio, nell'immagine seguente viene illustrato l'uso del comando **Copia codice** su una selezione che include prompt e output:
 
     ![Comando copia codice della finestra interattiva su una selezione con prompt e output](media/vs-getting-started-python-17-interactive7.png)
 
@@ -91,7 +91,7 @@ La finestra **interattiva** di Visual Studio per Python offre un'esperienza REPL
 
     Per copiare il contenuto esatto di una finestra **Interattiva** compresi output e prompt, usare il comando standard **Copia**.
 
-1. Le modifiche appena apportate consentono di usare l'ambiente REPL rapido della finestra **Interattiva** per elaborare i dettagli di una piccola parte di codice e aggiungerla facilmente al file di origine del progetto. Quando si esegue nuovamente il codice con **Ctrl**+**F5** (o **Avvia debug** > **senza eseguire debug**), vengono visualizzati i risultati esatti desiderati.
+1. Le modifiche appena apportate consentono di usare l'ambiente REPL rapido della finestra **Interattiva** per elaborare i dettagli di una piccola parte di codice e aggiungerla facilmente al file di origine del progetto. Quando si esegue di nuovo il codice con **CTRL** + **F5** (oppure **debug**  >  **Avvia senza eseguire debug**), viene visualizzato esattamente il risultato desiderato.
 
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -11,18 +11,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: d7fe5a8b2275248c0fc68f9237e9e259973c567b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "63002823"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801724"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: Eseguire il codice nel debugger
 
 **Passaggio precedente: [Usare la finestra Interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
-Oltre alla gestione dei progetti, fornendo un'esperienza di modifica avanzata e la finestra **interattiva,** Visual Studio fornisce il debug completo per il codice Python. Nel debugger, è possibile eseguire il codice in dettaglio, incluse le interazioni di un ciclo. È anche possibile sospendere il programma ogni volta che vengono soddisfatte determinate condizioni. Quando il programma viene sospeso nel debugger, è possibile esaminare in qualsiasi momento lo stato dell'intero programma e modificare il valore di variabili. Tali azioni sono essenziali per individuare i bug del programma e offrire supporto per seguire attentamente il flusso esatto del programma.
+Oltre a gestire i progetti, offrendo un'esperienza di modifica completa e la finestra **interattiva** , Visual Studio offre funzionalità complete di debug per il codice Python. Nel debugger, è possibile eseguire il codice in dettaglio, incluse le interazioni di un ciclo. È anche possibile sospendere il programma ogni volta che vengono soddisfatte determinate condizioni. Quando il programma viene sospeso nel debugger, è possibile esaminare in qualsiasi momento lo stato dell'intero programma e modificare il valore di variabili. Tali azioni sono essenziali per individuare i bug del programma e offrire supporto per seguire attentamente il flusso esatto del programma.
 
 1. Sostituire il codice nel file *PythonApplication1.py* con il codice seguente. Questa variante del codice espande `make_dot_string` in modo da poter esaminare i passaggi discreti nel debugger. Inserisce anche il ciclo `for` in una funzione `main` e lo esegue in modo esplicito chiamando la funzione:
 
@@ -47,15 +47,15 @@ Oltre alla gestione dei progetti, fornendo un'esperienza di modifica avanzata e 
 1. Controllare che il codice funzioni correttamente. A tale scopo, premere **F5** o selezionare il comando di menu **Debug** > **Avvia debug**. Il comando esegue il codice nel debugger. Dato che non sono impostate pause per l'esecuzione del programma, stampa semplicemente un motivo ondulato per alcune iterazioni. Premere un tasto qualsiasi per chiudere la finestra di output.
 
     > [!Tip]
-    > Per chiudere automaticamente la finestra di output al termine del programma, selezionare il comando di menu**Opzioni** **degli strumenti,** > espandere il nodo **Python,** selezionare **Debug**, quindi deselezionare l'opzione Attendi input quando il processo **termina normalmente:**
+    > Per chiudere automaticamente la finestra di output al termine del programma, selezionare il comando di menu **strumenti**  >  **Opzioni** , espandere il nodo **Python** , selezionare **debug**, quindi deselezionare l'opzione **Attendi input quando il processo viene chiuso normalmente**:
     >
     > ![Opzione di debug di Python per chiudere la finestra di output alla normale uscita dal programma](media/vs-getting-started-python-22-debugging5.png)
 
-1. Impostare un `for` punto di interruzione sull'istruzione facendo clic una volta sul margine grigio in base a tale riga oppure inserendo il punto di inserimento in tale riga e utilizzando il comando **Debug** > **Toggle Breakpoint** (**F9**). Sul margine grigio viene visualizzato un punto rosso per indicare il punto di interruzione, come indicato dalla freccia blu di seguito:
+1. Impostare un punto di interruzione sull' `for` istruzione facendo clic una volta nel margine grigio per la riga o posizionando il punto di inserimento nella riga e usando il comando **debug**  >  **/Rimuovi** punto di interruzione (**F9**). Sul margine grigio viene visualizzato un punto rosso per indicare il punto di interruzione, come indicato dalla freccia blu di seguito:
 
     ![Impostazione di un punto di interruzione](media/vs-getting-started-python-18-debugging1.png)
 
-1. Avviare nuovamente il debugger (**F5**) e verificare che l'esecuzione del codice si interrompe sulla riga con tale punto di interruzione. È così possibile analizzare lo stack di chiamate ed esaminare le variabili locali. Le variabili incluse nell'ambito, quando definite, vengono visualizzati nella finestra **Auto** ; è anche possibile passare alla visualizzazione **Variabili locali** nella parte inferiore della finestra per visualizzare tutte le variabili che Visual Studio individua nell'ambito attuale (funzioni incluse), comprese quelle non ancora definite:
+1. Avviare di nuovo il debugger (**F5**) e verificare che l'esecuzione del codice venga arrestata in corrispondenza della riga con il punto di interruzione. È così possibile analizzare lo stack di chiamate ed esaminare le variabili locali. Le variabili incluse nell'ambito, quando definite, vengono visualizzati nella finestra **Auto** ; è anche possibile passare alla visualizzazione **Variabili locali** nella parte inferiore della finestra per visualizzare tutte le variabili che Visual Studio individua nell'ambito attuale (funzioni incluse), comprese quelle non ancora definite:
 
     ![Esperienza dell'interfaccia utente per i punti di interruzione per Python](media/vs-getting-started-python-19-debugging2b.png)
 
@@ -65,9 +65,9 @@ Oltre alla gestione dei progetti, fornendo un'esperienza di modifica avanzata e 
 
     I pulsanti da sinistra a destra nel modo seguente:
     - **Continua** (**F5**) esegue il programma fino al punto di interruzione successivo o fino al completamento del programma.
-    - **Interrompi tutto** (**Ctrl**+**Alt**+**Break**) mette in pausa un programma a esecuzione prolungata.
-    - **Interrompi debug** (**Shift**+**F5**) arresta il programma ovunque si trovi e chiude il debugger.
-    - **Riavvia** (**Ctrl**+**Shift**+**F5**) arresta il programma ovunque si trovi e lo riavvia dall'inizio nel debugger.
+    - **Interrompi tutto** (**CTRL** + **ALT** + **INTERR**) sospende un programma con esecuzione prolungata.
+    - **Interrompi debug** (**MAIUSC** + **F5**) arresta il programma ovunque si trovi e chiude il debugger.
+    - **Riavvia** (**CTRL** + **MAIUSC** + **F5**) arresta il programma ovunque si trovi e lo riavvia dall'inizio del debugger.
     - **Mostra istruzione successiva** (**ALT**+**NUM** **&#42;**) passa alla riga successiva del codice da eseguire. Questo è particolarmente utile per spostarsi all'interno del codice durante una sessione di debug e tornare rapidamente al punto in cui il debugger si è interrotto.
     - **Esegui istruzione** (**F11**) esegue la riga di codice successiva, immettendo le funzioni chiamate.
     - **Esegui istruzione/routine** (**F10**) esegue la riga successiva del codice, senza inserirsi nelle funzioni chiamate.
@@ -79,7 +79,7 @@ Oltre alla gestione dei progetti, fornendo un'esperienza di modifica avanzata e 
 
 1. Ripetere altre volte l'esecuzione dell'istruzione/routine e osservare in che modo si modificano i valori **Variabili locali** o **Auto**.
 
-1. Nella finestra **Variabili locali** o **Auto** fare doppio clic sulla colonna **Valore** per le variabili `i` o `s` per modificare il valore. Premere **INVIO** oppure fare clic all'esterno di tale valore per applicare eventuali modifiche.
+1. Nella finestra **Variabili locali** o **Auto** fare doppio clic sulla colonna **Valore** per le variabili `i` o `s` per modificare il valore. Premere **invio** o fare clic su un'area esterna a tale valore per applicare le modifiche.
 
 1. Continuare l'esecuzione nel codice usando **Esegui istruzione**. **Esegui istruzione** indica che il debugger viene inserito all'interno di una qualsiasi chiamata di funzione per la quale ha informazioni di debug, ad esempio `make_dot_string`. Una volta dentro a `make_dot_string` è possibile esaminare le variabili locali ed eseguire i passaggi nel codice.
 
@@ -93,10 +93,10 @@ Oltre alla gestione dei progetti, fornendo un'esperienza di modifica avanzata e 
 
     ![Impostazione di una condizione per il punto di interruzione](media/vs-getting-started-python-21-debugging4.png)
 
-1. Per eseguire il programma fino al completamento, disabilitare il punto di interruzione facendo clic col pulsante destro del mouse e scegliendo **Disattiva punto di interruzione** (**CTRL**+**F9**). Quindi selezionare **Continua** (o premere **F5**) per eseguire il programma. Quando termina, Visual Studio arresta la sessione di debug e restituisce la modalità di modifica. Si noti che è anche possibile eliminare il punto di interruzione facendo clic sul relativo punto. Questa procedura, tuttavia, elimina anche qualsiasi condizione impostata in precedenza.
+1. Per eseguire il programma fino al completamento, disabilitare il punto di interruzione facendo clic con il pulsante destro del mouse sul punto nel margine e selezionando Disabilita punto di **interruzione** (**CTRL** + **F9**). Quindi selezionare **Continua** (o premere **F5**) per eseguire il programma. Quando termina, Visual Studio arresta la sessione di debug e restituisce la modalità di modifica. Si noti che è anche possibile eliminare il punto di interruzione selezionando il punto o facendo clic con il pulsante destro del mouse sul punto e selezionando Elimina punto di **interruzione**, ma elimina anche tutte le condizioni impostate.
 
 > [!Tip]
-> In alcune situazioni, come ad esempio quando si verifica un errore durante l'avvio dell'interprete Python stesso, la finestra di output potrebbe essere visualizzata solo per pochissimo tempo e poi chiudersi automaticamente, impedendo la visualizzazione dei messaggi di errore. In questo caso, fare clic con il pulsante destro del mouse `-i` sul progetto in Esplora **soluzioni**, selezionare **Proprietà**, selezionare la scheda **Debug** , quindi aggiungere al campo Argomenti **interprete** . Questo argomento fa sì che l'interprete entri in modalità interattiva dopo il completamento di un programma, mantenendo così aperta la finestra fino a quando non si entra nella **combinazione di ctrl**+**e** > **INVIO** per uscire.
+> In alcune situazioni, come ad esempio quando si verifica un errore durante l'avvio dell'interprete Python stesso, la finestra di output potrebbe essere visualizzata solo per pochissimo tempo e poi chiudersi automaticamente, impedendo la visualizzazione dei messaggi di errore. In tal caso, fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni**, selezionare **Proprietà**, selezionare la scheda **debug** , quindi aggiungere `-i` al campo **argomenti dell'interprete** . Questo argomento fa sì che l'interprete passi in modalità interattiva dopo il completamento di un programma, mantenendo la finestra aperta fino a quando non si immette **CTRL** + **Z**  >  **invio** per uscire.
 
 ## <a name="next-step"></a>Passaggio successivo
 

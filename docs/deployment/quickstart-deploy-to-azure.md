@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 461b99261eb88d5267b062cb5d471f1b6ed4ee60
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248035"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800307"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio
 
@@ -31,7 +31,7 @@ Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzi
 
 ## <a name="publish-to-azure-app-service-on-windows"></a>Pubblicare nel servizio app Azure in Windows
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** o usare la voce di menu **Compila** > **Pubblica**.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **pubblica** oppure utilizzare la voce di menu **Compila**  >  **pubblicazione** .
 
     ![Il comando pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "Scegliere Pubblica")
 

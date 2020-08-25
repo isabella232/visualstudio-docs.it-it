@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918634"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801503"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure consigliate per lo sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure consigliate per lo sviluppo descritte in questo articolo.   In modo da garantire:
@@ -57,7 +57,7 @@ Se la soluzione è costituita da un componente aggiuntivo e da un processo ester
 Impostare il numero di versione dei file binari nella soluzione e incrementarlo a ogni aggiornamento. In questo modo sarà più semplice per gli utenti identificare le modifiche tra le versioni e valutare la compatibilità.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Fornire le istruzioni di supporto per le versioni più recenti di Office
-I clienti chiedono agli ISV di fornire istruzioni di supporto per i relativi componenti aggiuntivi COM, VSTO e VBA eseguiti in Office. Elencando le istruzioni di supporto esplicito, i clienti che usano gli strumenti di conformità di Office 365 ProPlus comprendono il supporto.
+I clienti chiedono agli ISV di fornire istruzioni di supporto per i relativi componenti aggiuntivi COM, VSTO e VBA eseguiti in Office. Elencando le istruzioni di supporto esplicito è possibile aiutare i clienti che usano Microsoft 365 app per gli strumenti di conformità aziendale a comprendere il supporto.
 
 Per fornire le istruzioni di supporto per le applicazioni client di Office, ad esempio Word o Excel, verificare innanzitutto che i componenti aggiuntivi vengano eseguiti nella versione corrente di Office e quindi eseguire il commit per fornire gli aggiornamenti se il componente aggiuntivo si interrompe in una versione futura. Non è necessario testare i componenti aggiuntivi quando Microsoft rilascia una nuova compilazione o un aggiornamento a Office. Microsoft raramente modifica la piattaforma di estensibilità COM, VSTO e VBA in Office e queste modifiche saranno ben documentate.
 

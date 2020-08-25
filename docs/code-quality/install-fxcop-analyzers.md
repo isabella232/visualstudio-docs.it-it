@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: df9d345e8557f10d764dce6e56c7491d2c026747
-ms.sourcegitcommit: 0d3d157949b539c78bc101a3c3b456bbcb5af7de
+ms.openlocfilehash: 22f6f80a7e4c8c8c3f91fa436361ff37405893bd
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88286653"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800970"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installare gli analizzatori FxCop in Visual Studio
 
@@ -28,7 +28,7 @@ Microsoft ha creato un set di analizzatori, denominato [Microsoft. CodeAnalysis.
 
 In Visual Studio 2019 versione 16,3 e successive è possibile installare il pacchetto NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) direttamente dalla pagina delle proprietà di analisi del codice del progetto:
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **Proprietà**, quindi selezionare la scheda **analisi codice** .
+1. Fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) nel nodo del progetto in **Esplora soluzioni**, selezionare **Proprietà**e quindi passare alla scheda **analisi codice** .
 
    ![Installare il pacchetto degli analizzatori FxCop dalla pagina delle proprietà in Visual Studio](media/install-fxcop-properties-page.png)
 
@@ -59,7 +59,7 @@ Se si usa una versione precedente di Visual Studio 2019, installare il pacchetto
 
 ### <a name="custom-installation"></a>Installazione personalizzata
 
-Per l'installazione personalizzata, ad esempio per specificare una versione diversa del pacchetto, selezionare il pulsante con i puntini di sospensione (...) nella pagina delle proprietà di analisi del codice del progetto. Questo pulsante apre Gestione pacchetti NuGet con "Microsoft. CodeAnalysis. FxCopAnalyzers" come stringa di ricerca.
+Per l'installazione personalizzata, ad esempio, per specificare una versione diversa del pacchetto, selezionare il pulsante con i puntini di sospensione (...) nella pagina delle proprietà di analisi del codice del progetto. Questo pulsante apre Gestione pacchetti NuGet con "Microsoft. CodeAnalysis. FxCopAnalyzers" come stringa di ricerca.
 
 ![Installare il pacchetto degli analizzatori FxCop personalizzati dalla pagina delle proprietà in Visual Studio](media/install-fxcop-properties-page-ellipsis.png)
 

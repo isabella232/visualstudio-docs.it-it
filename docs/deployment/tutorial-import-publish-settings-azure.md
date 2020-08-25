@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd316956f8e6c385cd59c017af50452b07537dc6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183314"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801711"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione nel servizio app di Azure importando le impostazioni di pubblicazione in Visual Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "84183314"
 
 Questa procedura si applica alle app ASP.NET, ASP.NET Core e .NET Core in Visual Studio. È anche possibile importare le impostazioni di pubblicazione per le app [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-In questa esercitazione:
+In questa esercitazione si apprenderà come:
 
 > [!div class="checklist"]
 > * Generare un file delle impostazioni di pubblicazione dal servizio app di Azure
@@ -57,13 +57,13 @@ Un file di impostazioni di pubblicazione (con* \* estensione publishsettings*) �
 
 1. Creare un nuovo progetto nel computer che esegue Visual Studio.
 
-    Scegliere il modello corretto. In questo esempio scegliere **Applicazione Web ASP.NET (.NET Framework)** oppure (solo per C#) **Applicazione Web ASP.NET Core** e quindi fare clic su **OK**.
+    Scegliere il modello corretto. In questo esempio scegliere **ASP.NET Web Application (.NET Framework)** o (solo per C#) **ASP.NET Core applicazione Web**e quindi fare clic su **OK**.
 
-    Se non vengono visualizzati i modelli di progetto specificati, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro di sviluppo ASP.NET e Web** .
+    Se non vengono visualizzati i modelli di progetto specificati, passare al collegamento **apri programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **nuovo progetto** . Verrà avviato il Programma di installazione di Visual Studio. Installare il carico **di lavoro di sviluppo ASP.NET e Web** .
 
     Il modello di progetto selezionato (ASP.NET o ASP.NET Core) deve corrispondere alla versione di ASP.NET installata nel server Web.
 
-1. Scegliere **MVC** (.NET Framework) o **Applicazione Web (MVC)** (per .NET Core) e verificare che l'opzione **Nessuna autenticazione** sia selezionata, quindi fare clic su **OK**.
+1. Scegliere **MVC** (.NET Framework) o **applicazione Web (Model-View-Controller)** (per .NET Core) e assicurarsi che non sia selezionata **l'opzione autenticazione** , quindi selezionare **OK**.
 
 1. Digitare un nome come **MyWebApp** e fare clic su **OK**.
 
@@ -75,7 +75,7 @@ Un file di impostazioni di pubblicazione (con* \* estensione publishsettings*) �
 
 1. Nel portale di Azure aprire il servizio app di Azure.
 
-1. Fare clic su **Recupera profilo di pubblicazione** e salvare il profilo in locale.
+1. Passare a **Ottieni profilo di pubblicazione** e salvare il profilo localmente.
 
     ![Recuperare il profilo di pubblicazione](../deployment/media/tutorial-azure-app-service-get-publish-profile.png)
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11b99bb08c82725f19f7985a97656edf65f112d5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573287"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800216"
 ---
 # <a name="enable-a-category-of-rules"></a>Abilitare una categoria di regole
 
@@ -28,8 +28,8 @@ Il pacchetto NuGet dell'analizzatore FxCop include set di regole e file EditorCo
 
 - Tutte le regole
 - Flusso di dati
-- Progetta
-- Documentation
+- Progettazione
+- Documentazione
 - Globalizzazione
 - Interoperabilità
 - Facilità di gestione
@@ -37,8 +37,8 @@ Il pacchetto NuGet dell'analizzatore FxCop include set di regole e file EditorCo
 - Prestazioni
 - Portata da FxCop
 - Affidabilità
-- Sicurezza -
-- Usage
+- Sicurezza
+- Uso
 
 Ognuna di queste categorie di regole ha un file EditorConfig o set di regole per:
 
@@ -53,13 +53,13 @@ Ognuna di queste categorie di regole ha un file EditorConfig o set di regole per
 
 ## <a name="predefined-editorconfig-files"></a>File EditorConfig predefiniti
 
-I file EditorConfig predefiniti per il pacchetto Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer si trovano nella directory *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versione\>\editorconfig* . Ad esempio, il file EditorConfig per abilitare tutte le regole di sicurezza si trova in *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versione\>\editorconfig\SecurityRulesEnabled\\. EditorConfig*.
+I file EditorConfig predefiniti per il pacchetto Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer si trovano nella directory *% USERPROFILE% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editorconfig* . Ad esempio, il file EditorConfig per abilitare tutte le regole di sicurezza si trova in *% USERPROFILE% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \editorconfig\SecurityRulesEnabled \\ . EditorConfig*.
 
 Copiare il file con estensione EditorConfig scelto nella directory radice del progetto.
 
 ## <a name="predefined-rule-sets"></a>Set di regole predefiniti
 
-I file del set di regole predefiniti per il pacchetto Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer si trovano nella directory *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versione\>\rulesets* . Ad esempio, il file del set di regole per abilitare tutte le regole di sicurezza si trova in *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versione\>\rulesets\SecurityRulesEnabled.RuleSet*.
+I file del set di regole predefiniti per il pacchetto Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer si trovano nella directory *% USERPROFILE% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets* . Ad esempio, il file del set di regole per abilitare tutte le regole di sicurezza si trova in *% USERPROFILE% \\ . nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers \\ \<version\> \rulesets\SecurityRulesEnabled.RuleSet*.
 
 Copiare uno o più set di regole e incollarli nella directory che contiene il progetto di Visual Studio o direttamente in **Esplora soluzioni**.
 
@@ -90,13 +90,13 @@ Per impostare una regola come set di regole attivo per l'analisi nei progetti .N
 
 ::: moniker range="vs-2017"
 
-- In **Esegui questo set di regole**selezionare **Sfoglia**, quindi selezionare il set di regole desiderato copiato nella directory del progetto.
+- In **Esegui questo set di regole**selezionare **Sfoglia**, quindi scegliere il set di regole desiderato copiato nella directory del progetto.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- In **regole attive**selezionare **Sfoglia**, quindi selezionare il set di regole desiderato copiato nella directory del progetto.
+- In **regole attive**selezionare **Sfoglia**, quindi scegliere il set di regole desiderato copiato nella directory del progetto.
 
 ::: moniker-end
 

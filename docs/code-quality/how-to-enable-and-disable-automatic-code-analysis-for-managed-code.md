@@ -5,12 +5,12 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 532fe62ceee3ab32fc203976af58dd867b97b453
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371885"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801022"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Procedura: abilitare e disabilitare l'analisi del codice binario per il codice gestito
 
@@ -21,9 +21,9 @@ ms.locfileid: "85371885"
 
 Per abilitare o disabilitare l'analisi del codice legacy:
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni**selezionare e mantenere o fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
-2. Nella finestra di dialogo Proprietà del progetto scegliere la scheda **analisi codice** .
+2. Nella finestra di dialogo proprietà per il progetto andare alla scheda **analisi codice** .
 
 3. Specificare il tipo di compilazione nella **configurazione** e nella piattaforma di **destinazione.** (Solo per i progetti Non-.NET Core/.NET standard).
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 5a69fb83f28f4446a91e4125e75706400401ea1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 175aa7111d77e92fb29a3983db7365e068abba2f
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911723"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800385"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gestire le risorse associate agli account di Azure in Visual Studio Cloud Explorer
 
@@ -22,19 +22,19 @@ Cloud Explorer consente di visualizzare le risorse di Azure e i gruppi di risors
 
 Cloud Explorer è basato sullo stack di Azure Resource Manager, proprio come il [portale di Azure](https://portal.azure.com). Pertanto riconosce risorse, come i gruppi di risorse di Azure e i servizi di Azure, come le app per la logica e le app per le API. Supporta infine il [controllo degli accessi in base al ruolo](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * Visual Studio 2017 o versione successiva (vedere [Download di Visual Studio](https://visualstudio.microsoft.com/downloads)) con il **carico di lavoro Azure** selezionato. È anche possibile usare una versione precedente di Visual Studio con [Microsoft Azure SDK per .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Account di Microsoft Azure: se non si ha un account, è possibile [iscriversi per ottenere una versione di valutazione gratuita](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) oppure [attivare i vantaggi della sottoscrizione di Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).
 
 > [!NOTE]
-> Per visualizzare Cloud Explorer, premere **CTRL**+**Q** per attivare la casella di ricerca, quindi immettere **Cloud Explorer**.
+> Per visualizzare Cloud Explorer, premere **CTRL** + **Q** per attivare la casella di ricerca e quindi immettere **Cloud Explorer**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Aggiungere un account di Azure a Cloud Explorer
 
-Per vedere le risorse associate a un account di Azure, prima di tutto è necessario aggiungere l'account a **Cloud Explorer**.
+Per visualizzare le risorse associate a un account Azure, è prima necessario aggiungere l'account a **Cloud Explorer**.
 
-1. In **Cloud Explorer** scegliere il pulsante **Gestione account**.
+1. In **Cloud Explorer**selezionare il pulsante **Gestione account** .
 
    ![Icona delle impostazioni account di Azure di Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -48,7 +48,7 @@ Per vedere le risorse associate a un account di Azure, prima di tutto è necessa
 
    ![Cloud Explorer: selezionare le sottoscrizioni di Azure da visualizzare](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. Dopo aver selezionato le sottoscrizioni di cui si desidera visualizzare le risorse, tali sottoscrizioni e risorse vengono visualizzate in Cloud Explorer.
+1. Dopo aver selezionato le sottoscrizioni di cui si vogliono esplorare le risorse, le sottoscrizioni e le risorse vengono visualizzate nel **Cloud Explorer**.
 
    ![Elenco delle risorse di Cloud Explorer per un account Azure](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
@@ -101,8 +101,8 @@ L'azione **Open in portal**è disponibile per ogni risorsa. Quando si sceglie qu
 
 ## <a name="find-resources-in-cloud-explorer"></a>Cercare risorse in Cloud Explorer
 
-Per trovare risorse con un nome specifico nelle sottoscrizioni dell'account di Azure, immettere il nome nella casella **Cerca** di Cloud Explorer.
+Per individuare le risorse con un nome specifico nelle sottoscrizioni dell'account Azure, immettere il nome nella casella di **ricerca** in **Cloud Explorer**.
 
   ![Ricerca di risorse in Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-Quando si immettono caratteri nella casella **Cerca**, nell'albero delle risorse vengono visualizzate solo le risorse corrispondenti ai caratteri immessi.
+Quando si immettono caratteri nella casella di **ricerca** , nell'albero delle risorse vengono visualizzate solo le risorse corrispondenti a tali caratteri.

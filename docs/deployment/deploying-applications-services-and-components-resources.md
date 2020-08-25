@@ -1,7 +1,8 @@
 ---
-title: Panoramica della distribuzione | Microsoft Docs
-ms.custom: seodec18
-ms.date: 06/22/2018
+title: Distribuire l'app di Visual Studio in una cartella, IIS, Azure o un'altra destinazione
+description: Altre informazioni sulle opzioni di pubblicazione per l'app tramite la pubblicazione guidata
+ms.custom: contperfq1
+ms.date: 08/21/2020
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -13,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5091a7ca7136cd8b62f75ee7f317b1e5b1f3be
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173727"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800833"
 ---
-# <a name="overview-of-deployment-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
+# <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Distribuire l'app in una cartella, IIS, Azure o un'altra destinazione
 
 Mediante la distribuzione, un'applicazione, un servizio o un componente viene distribuito per l'installazione in altri computer, dispositivi, server o nel cloud. Il metodo appropriato viene scelto in Visual Studio per il tipo di distribuzione necessaria.
 
@@ -35,19 +36,27 @@ Dall'interno di Visual Studio è possibile pubblicare le applicazioni direttamen
 - [Azure](#azure)
 - [Container Registry Docker](#docker-container-registry)
 - [Cartella](#folder)
-- [Destinazioni personalizzate (IIS, FTP)](#Custom targets (IIS, FTP))
-
-Nella scheda **Pubblica** è possibile selezionare un profilo di pubblicazione esistente, importare un profilo esistente o crearne uno nuovo usando le opzioni descritte di seguito. Per una panoramica delle opzioni di pubblicazione nell'IDE per diversi tipi di app, vedere [Presentazione della distribuzione](../deployment/deploying-applications-services-and-components.md).
+- [Server FTP/FTPS](#ftpftps-server)
+- [Server Web (IIS)](#web-server-iis)
+- [Importa profilo](#import-profile)
 
 ## <a name="azure"></a>Azure 
 
+Quando si sceglie Azure, è possibile scegliere tra:
+
+- Servizio app Azure in esecuzione in Windows, Linux o come immagine Docker
+- Un'immagine Docker distribuita in Azure Container Registry
+- Una macchina virtuale di Azure
+
+![Scegliere un servizio di Azure](../deployment/media/quickstart-choose-azure-service.png)
+
 ### <a name="azure-app-service"></a>Servizio app di Azure
 
-[App Azure servizio](/azure/app-service/app-service-web-overview) che consente agli sviluppatori di creare rapidamente servizi e applicazioni Web scalabili senza gestire l'infrastruttura. Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azure, ma tali macchine vengono gestite automaticamente. A ogni app di un servizio app viene assegnato un URL \*.azurewebsites.net univoco. Tutti i piani tariffari diversi da quello gratuito consentono l'assegnazione di nomi di dominio personalizzati al sito.
+[App Azure servizio](/azure/app-service/app-service-web-overview) consente agli sviluppatori di creare rapidamente servizi e applicazioni Web scalabili senza gestire l'infrastruttura. Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azure, ma tali macchine vengono gestite automaticamente. A ogni app di un servizio app viene assegnato un URL \*.azurewebsites.net univoco. Tutti i piani tariffari diversi da quello gratuito consentono l'assegnazione di nomi di dominio personalizzati al sito.
 
 Per determinare la potenza di calcolo di un servizio app, scegliere un [piano tariffario](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) per il servizio app che lo contiene. È possibile fare in modo che più app Web (e altri tipi di app) condividano lo stesso servizio app senza modificare il piano tariffario. È ad esempio possibile ospitare insieme app Web di sviluppo, gestione temporanea e produzione nello stesso servizio app.
 
-### <a name="when-to-choose-azure-app-service"></a>Quando scegliere Servizio App di Azure
+#### <a name="when-to-choose-azure-app-service"></a>Quando scegliere Servizio App di Azure
 
 - Si vuole distribuire un'applicazione Web accessibile via Internet.
 - Si vuole adeguare automaticamente l'applicazione Web in base alla richiesta senza doverla ridistribuire.
@@ -56,7 +65,18 @@ Per determinare la potenza di calcolo di un servizio app, scegliere un [piano ta
 
 > Per usare Servizio app di Azure nel proprio centro dati o in altri computer locali, usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Per altre informazioni sulla pubblicazione nel Servizio app, vedere [Guida introduttiva: pubblicare nel Servizio app di Azure](quickstart-deploy-to-azure.md) e [Guida introduttiva: pubblicare ASP.NET Core in Linux](quickstart-deploy-to-linux.md).
+Per ulteriori informazioni sulla pubblicazione nel servizio app, vedere:
+- [Guida introduttiva: pubblicare il servizio app Azure](quickstart-deploy-to-azure.md) e la [Guida introduttiva-pubblicare ASP.NET Core in Linux](quickstart-deploy-to-linux.md).
+- [Risolvere i problemi relativi a ASP.NET Core in app Azure servizio e IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+### <a name="azure-container-registry"></a>Registro Azure Container
+
+[Azure container Registry](/azure/container-registry/) consente di creare, archiviare e gestire le immagini del contenitore Docker e gli artefatti in un registro privato per tutti i tipi di distribuzioni di contenitori.
+
+#### <a name="when-to-choose-azure-container-registry"></a>Quando scegliere Container Registry di Azure
+
+- Quando si dispone di una pipeline di sviluppo e distribuzione di un contenitore Docker esistente.
+- Quando si vuole compilare immagini del contenitore Docker in Azure.
 
 ### <a name="azure-virtual-machines"></a>Macchine virtuali di Azure
 
@@ -66,7 +86,7 @@ Il ridimensionamento di un'applicazione ospitata in macchine virtuali comporta l
 
 Per altre informazioni, vedere il [confronto dettagliato](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) tra Servizio app di Azure, Macchine virtuali di Azure e altri servizi di Azure che è possibile usare come destinazione della distribuzione usando l'opzione Personalizzata in Visual Studio.
 
-### <a name="when-to-choose-azure-app-virtual-machines"></a>Quando scegliere Macchine virtuali di Azure
+#### <a name="when-to-choose-azure-virtual-machines"></a>Quando scegliere macchine virtuali di Azure
 
 - Si vuole distribuire un'applicazione Web accessibile via Internet, con controllo completo della durata degli indirizzi IP assegnati.
 - Sono necessarie personalizzazioni a livello di computer sui server, che includono software aggiuntivo come ad esempio un sistema di database specializzato, configurazioni di rete specifiche, partizioni del disco e così via.
@@ -99,26 +119,61 @@ Si noti che se per qualsiasi motivo (ad esempio, l'accesso al computer) non si �
 
 Per altre informazioni, vedere [Guida introduttiva: distribuire in una cartella locale](quickstart-deploy-to-local-folder.md)
 
-## <a name="custom-targets-iis-ftp"></a>Destinazioni personalizzate (IIS, FTP)
+## <a name="ftpftps-server"></a>Server FTP/FTPS
 
-Una destinazione personalizzata consente di distribuire l'applicazione a una destinazione diversa da Servizio app di Azure, da Macchine virtuali di Azure o dal file system locale. È possibile distribuire l'applicazione a un file system o qualsiasi altro server (Internet o Intranet) a cui si ha accesso, inclusi quelli presenti in altri servizi cloud. È anche possibile usare una distribuzione Web (file o .ZIP) e FTP.
+Un server FTP/FTPS consente di distribuire l'applicazione in un server diverso da Azure. È possibile distribuire l'applicazione a un file system o qualsiasi altro server (Internet o Intranet) a cui si ha accesso, inclusi quelli presenti in altri servizi cloud. È anche possibile usare una distribuzione Web (file o .ZIP) e FTP.
 
-Quando si sceglie una destinazione personalizzata Visual Studio richiede un nome di profilo e quindi raccoglie ulteriori informazioni sulla **connessione** tra cui il server o il percorso di destinazione, un nome di sito e le credenziali. È possibile controllare i comportamenti seguenti nella scheda **Impostazioni**:
+Quando si sceglie un server FTP/FTPS, Visual Studio richiede un nome di profilo, quindi raccoglie informazioni aggiuntive sulla **connessione** , tra cui il server o il percorso di destinazione, il nome di un sito e le credenziali. È possibile controllare i comportamenti seguenti nella scheda **Impostazioni**:
 
 - La configurazione da distribuire.
 - Se rimuovere i file esistenti dalla destinazione.
 - Se precompilare durante la pubblicazione.
 - Se escludere i file nella cartella App_Data dalla distribuzione.
 
-Visual Studio consente di creare qualsiasi numero di profili di distribuzione personalizzata e di gestire i profili con impostazioni diverse.
+È possibile creare qualsiasi numero di profili di distribuzione FTP/FTPS in Visual Studio, rendendo possibile la gestione dei profili con impostazioni diverse.
 
-### <a name="when-to-choose-custom-deployment"></a>Quando scegliere una distribuzione personalizzata
+### <a name="when-to-choose-ftpftps-server-deployment"></a>Quando scegliere la distribuzione del server FTP/FTPS
 
 - Se si usano servizi cloud di un provider diverso da Azure a cui è possibile accedere con URL.
 - Si vuole eseguire la distribuzione usando credenziali diverse da quelle usate in Visual Studio o quelle associate direttamente all'account Azure.
 - Si vuole eliminare i file dalla destinazione ogni volta che si esegue la distribuzione.
 
-Per altre informazioni, vedere [Guida introduttiva: distribuire in un sito Web](quickstart-deploy-to-a-web-site.md)
+## <a name="web-server-iis"></a>Server Web (IIS)
+
+Un server Web IIS consente di distribuire l'applicazione in un server Web diverso da Azure. Può essere distribuito in un server IIS (Internet o Intranet) a cui si ha accesso, inclusi quelli in altri servizi cloud. Può funzionare con Distribuzione Web o un pacchetto di Distribuzione Web.
+
+Quando si sceglie un server Web IIS, Visual Studio richiede un nome di profilo, quindi raccoglie informazioni aggiuntive sulla **connessione** , tra cui il server o il percorso di destinazione, un nome di sito e le credenziali. È possibile controllare i comportamenti seguenti nella scheda **Impostazioni**:
+
+- La configurazione da distribuire.
+- Se rimuovere i file esistenti dalla destinazione.
+- Se precompilare durante la pubblicazione.
+- Se escludere i file nella cartella App_Data dalla distribuzione.
+
+È possibile creare qualsiasi numero di profili di distribuzione del server Web IIS in Visual Studio, rendendo possibile la gestione dei profili con impostazioni diverse.
+
+### <a name="when-to-choose-web-server-iis-deployment"></a>Quando scegliere la distribuzione del server Web (IIS)
+
+- Si sta usando IIS per pubblicare un sito o un servizio a cui è possibile accedere tramite URL.
+- Si vuole eseguire la distribuzione usando credenziali diverse da quelle usate in Visual Studio o quelle associate direttamente all'account Azure.
+- Si vuole eliminare i file dalla destinazione ogni volta che si esegue la distribuzione.
+
+Per ulteriori informazioni, vedere [Guida introduttiva: eseguire la distribuzione in un sito Web](quickstart-deploy-to-a-web-site.md). Per informazioni sulla risoluzione dei problemi relativi a ASP.NET Core in IIS, vedere [risolvere i problemi di ASP.NET Core in app Azure Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
+
+## <a name="import-profile"></a>Importa profilo
+
+È possibile importare un profilo durante la pubblicazione in IIS o app Azure servizio. È possibile configurare la distribuzione usando un *file di impostazioni di pubblicazione* (con* \* estensione publishsettings*). Il file delle impostazioni di pubblicazione viene creato da IIS o dal servizio app di Azure oppure può essere creato manualmente e quindi importato in Visual Studio.
+
+L'uso di un file di impostazioni di pubblicazione può semplificare la configurazione della distribuzione e funziona meglio in un ambiente team rispetto alla configurazione manuale di ogni profilo di distribuzione.
+
+### <a name="when-to-choose-import-profile"></a>Quando scegliere Importa profilo
+
+- Si sta eseguendo la pubblicazione in IIS e si vuole semplificare la configurazione della distribuzione.
+- Si sta eseguendo la pubblicazione in IIS o app Azure servizio e si desidera velocizzare la configurazione della distribuzione per riutilizzare o per la pubblicazione dei membri del team nello stesso servizio.
+
+Per altre informazioni, vedere gli argomenti seguenti:
+
+- [Importare impostazioni di pubblicazione ed eseguire la distribuzione in IIS](tutorial-import-publish-settings-iis.md)
+- [Importare impostazioni di pubblicazione e distribuzione in Azure](tutorial-import-publish-settings-azure.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

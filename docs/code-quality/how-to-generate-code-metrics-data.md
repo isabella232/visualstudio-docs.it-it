@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f85c17321defe08dc96ccc04bc9dea717e3b4183
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706516"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800957"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -72,25 +72,25 @@ Queste regole sono disabilitate per impostazione predefinita, ma è possibile ab
 
 ## <a name="calculate-code-metrics-menu-command"></a>Comando di menu Calcola metrica codice
 
-Generare metriche del codice per uno o tutti i progetti aperti nell'IDE usando il menu **analizza**  >  **metriche del codice** .
+Per generare metriche del codice per uno o tutti i progetti aperti nell'IDE, passare al menu **analizza**  >  **metrica codice** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generare risultati della metrica del codice per un'intera soluzione
 
 È possibile generare risultati della metrica del codice per un'intera soluzione in uno dei modi seguenti:
 
-- Dalla barra dei menu scegliere **analizza**  >  **Calcola metrica codice**  >  **per la soluzione**.
+- Dalla barra dei menu selezionare **analizza**  >  **Calcola metrica codice**  >  **per la soluzione**.
 
-- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Calcola metrica codice**.
+- In **Esplora soluzioni**selezionare e mantenere o fare clic con il pulsante destro del mouse sulla soluzione e selezionare **Calcola metrica codice**.
 
-- Nella finestra **Risultati metrica codice** scegliere il pulsante **Calcola metrica codice per la soluzione** .
+- Nella finestra **Risultati metrica codice** selezionare il pulsante **Calcola metrica codice per la soluzione** .
 
 I risultati vengono generati e viene visualizzata la finestra **Risultati metrica codice** . Per visualizzare i dettagli dei risultati, espandere l'albero nella colonna **gerarchia** .
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generare risultati della metrica del codice per uno o più progetti
 
-1. In **Esplora soluzioni**selezionare uno o più progetti.
+1. In **Esplora soluzioni**scegliere uno o più progetti.
 
-1. Dalla barra dei menu scegliere **analizza**  >  **Calcola metrica codice**  >  **per i progetti selezionati**.
+1. Dalla barra dei menu selezionare **analizza**  >  **Calcola metrica codice**  >  **per i progetti selezionati**.
 
 I risultati vengono generati e viene visualizzata la finestra **Risultati metrica codice** . Per visualizzare i dettagli dei risultati, espandere l'albero nella **gerarchia**.
 

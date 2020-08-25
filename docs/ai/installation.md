@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638583"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800203"
 ---
 # <a name="installation"></a>Installazione
 
@@ -27,17 +27,16 @@ Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2
 
 È possibile scaricare gli strumenti da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) o direttamente da Visual Studio:
 
-1. Selezionare**Estensioni e aggiornamenti degli** **strumenti** > .
+1. Selezionare **strumenti**  >  **estensioni e aggiornamenti**.
 
    ![Menu Estensioni e aggiornamenti in Visual Studio](media/installation/extensions.png)
 
 2. Nella finestra di dialogo **Estensioni e aggiornamenti** selezionare **Online** sul lato sinistro.
 3. Nella casella di ricerca nell'angolo in alto a destra digitare o immettere "tools for ai".
 4. Selezionare **Visual Studio Tools for AI** dai risultati.
-5. Fare clic su **Download**.
+5. Selezionare **Download**.
 
 ## <a name="prepare-your-local-machine"></a>Preparare il computer locale
-
 Prima di eseguire il training di modelli di apprendimento nel computer locale, assicurarsi di aver installato i prerequisiti appropriati. Questi includono anche le librerie e i driver più recenti per la GPU NVIDIA, se presente. Verificare anche di aver installato Python e le librerie Python, tra cui NumPy e SciPy, e i framework di apprendimento avanzato appropriati, come Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e Chainer, che si prevede di usare nel progetto.
 
 > [!NOTE]

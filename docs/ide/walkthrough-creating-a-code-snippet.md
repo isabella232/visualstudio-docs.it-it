@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f46dc6a1871b6d44c37c1931bf65f1b4a11c9ae
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 46744decddcc2d50fd05ea86cc6ebfad9d210031
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770793"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800502"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 
@@ -86,7 +86,7 @@ Il codice XML seguente illustra il modello di frammento di base:
 
 1. È possibile importare un frammento nell'installazione di Visual Studio tramite **Gestione frammenti di codice**. Aprirlo scegliendo **strumenti**  >  **Gestione frammenti di codice**.
 
-2. Fare clic sul pulsante **Importa**.
+2. Fare clic sul pulsante **Import** (Importa).
 
 3. Scegliere il percorso in cui è stato salvato il frammento di codice nella procedura precedente, selezionarlo e fare clic su **Apri**.
 
@@ -96,15 +96,15 @@ Il codice XML seguente illustra il modello di frammento di base:
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual Studio 2017 \ code frammenti C# \My frammenti* 
-    di codice *%USERPROFILE%\Documents\Visual Studio 2017 \ code frammenti frammenti di codice di codice\Visual Basic\Frammenti*
+   *%USERPROFILE%\Documents\Visual Studio 2017 \ code frammenti C# \My frammenti di codice*  
+   *%USERPROFILE%\Documenti\Visual Studio 2017\Frammenti di codice\Visual Basic\Frammenti di codice*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual Studio 2019 \ code frammenti C# \My frammenti* 
-    di codice *%USERPROFILE%\Documents\Visual Studio 2019 \ code frammenti frammenti di codice di codice\Visual Basic\Frammenti*
+   *%USERPROFILE%\Documents\Visual Studio 2019 \ code frammenti C# \My frammenti di codice*  
+   *%USERPROFILE%\Documenti\Visual Studio 2019\Frammenti di codice\Visual Basic\Frammenti di codice*
 
    ::: moniker-end
 

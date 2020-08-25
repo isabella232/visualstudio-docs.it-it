@@ -7,19 +7,19 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/20/2020
 ms.topic: conceptual
 description: Scopri come sfruttare i vantaggi del desktop virtuale Microsoft Windows tramite la sottoscrizione di Visual Studio
-ms.openlocfilehash: b84527f7bdaf3e9218585bd52af0743ef23a5637
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183587"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800606"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accedere al desktop virtuale Windows nelle sottoscrizioni 
 I sottoscrittori di Visual Studio sono ora in grado di usare i singoli crediti di sviluppo/test di Azure per i servizi desktop virtuali di Microsoft Windows.  
-Desktop virtuale di Windows è un servizio di virtualizzazione desktop e app completo in esecuzione nel cloud. Si tratta dell'unica infrastruttura VDI (Virtual Desktop Infrastructure) che offre funzionalità di gestione semplificata, Windows 10 multisessione, ottimizzazioni per Office 365 ProPlus e supporto per gli ambienti Servizi Desktop remoto (RDS). Distribuisci e ridimensiona le tue app e i tuoi desktop Windows in Azure in pochi minuti e Ottieni funzionalità predefinite di sicurezza e conformità.
+Desktop virtuale di Windows è un servizio di virtualizzazione desktop e app completo in esecuzione nel cloud. Si tratta dell'unica infrastruttura VDI (Virtual Desktop Infrastructure) che offre funzionalità di gestione semplificata, Windows 10 multisessione, ottimizzazioni per Microsoft 365 app per le aziende e supporto per gli ambienti Servizi Desktop remoto (RDS). Distribuisci e ridimensiona le tue app e i tuoi desktop Windows in Azure in pochi minuti e Ottieni funzionalità predefinite di sicurezza e conformità.
 Ecco cosa si può fare quando si esegue Desktop virtuale Windows in Azure:
 - Configurare una distribuzione di Windows 10 multisessione che offre una versione completa Windows 10 con scalabilità
-- Virtualizzare Office 365 ProPlus e ottimizzarlo per l'esecuzione in scenari virtuali multiutente
+- Virtualizzare Microsoft 365 Apps for enterprise e ottimizzarlo per l'esecuzione in scenari virtuali multiutente
 - Fornire ai desktop virtuali di Windows 7 aggiornamenti della sicurezza estesi gratuiti
 - Portare i desktop e le app esistenti di Servizi Desktop remoto e Windows Server in qualsiasi computer
 - Virtualizzare sia i desktop che le app

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fb16f4a573a7b905484982871dc838143b125591
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: dbb3984385e0042c669f8aad1d5bb4a2f64de917
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144701"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801620"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Creare tracciati visivi dei dati con R
 
@@ -71,7 +71,7 @@ Si crea una nuova finestra del tracciato usando il pulsante della **R Tools**bar
 
 I tracciati sono anch'essi oggetti indipendenti, quindi è possibile copiarli o spostarli tra le finestre dei tracciati usando il mouse per trascinare la selezione oppure i comandi **Copia**, **Taglia** e **Incolla** disponibili nel menu **Modifica** e nel menu di scelta rapida visualizzato facendo clic con il pulsante destro del mouse.
 
-Il comportamento predefinito per il trascinamento della selezione è copy; per spostare, trascinare e rilasciare tenendo premuto il tasto **MAIUSC** .
+Il comportamento predefinito per il trascinamento della selezione è copy; per spostare, trascinare e rilasciare mentre si preme il tasto **MAIUSC** .
 
 ## <a name="plot-history"></a>Cronologia dei tracciati
 
@@ -82,7 +82,7 @@ Nella cronologia è disponibile un elenco di miniature per i tracciati che sono 
 
 ![Finestra cronologia dei tracciati](media/plotting-plot-history-window.png)
 
-Per aprire un tracciato nella finestra associata, fare doppio clic sul tracciato, selezionarlo e quindi selezionare il pulsante della barra degli strumenti **Mostra tracciato** o fare clic con il pulsante destro del mouse e scegliere **Mostra tracciato**. È anche possibile selezionare un singolo tracciato e copiarlo, tagliarlo o eliminarlo usando il menu di scelta rapida visualizzato facendo clic con il pulsante destro del mouse o il menu **Modifica**.
+Per aprire un tracciato nella finestra associata, fare doppio clic su tale tracciato, selezionarlo e quindi selezionare il pulsante della barra degli strumenti **Mostra tracciato** . In alternativa, fare clic con il pulsante destro del mouse sul tracciato e scegliere **Mostra tracciato**. È anche possibile selezionare un singolo tracciato e copiarlo, tagliarlo o eliminarlo dal menu di scelta rapida o **modifica** .
 
 La durata della cronologia dei tracciati in tutte le finestre è associata alla durata della sessione di R interattiva. Se si reimposta la sessione di R o si esce e si riavvia Visual Studio, la cronologia dei tracciati viene reimpostata.
 

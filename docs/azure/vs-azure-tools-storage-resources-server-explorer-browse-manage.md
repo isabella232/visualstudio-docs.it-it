@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911703"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800476"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Esplorare e gestire le risorse di archiviazione usando Esplora server
 
@@ -22,15 +22,15 @@ ms.locfileid: "72911703"
 
 ## <a name="overview"></a>Panoramica
 
-Se sono stati installati gli Strumenti di Azure per Microsoft Visual Studio, è possibile visualizzare i dati BLOB, della coda e della tabella dagli account di archiviazione per Azure. Il nodo **Archiviazione** di Azure in Esplora server mostra i dati presenti nell'account dell'emulatore di archiviazione locale e negli altri account di archiviazione di Azure.
+Se sono stati installati gli Strumenti di Azure per Microsoft Visual Studio, è possibile visualizzare i dati BLOB, della coda e della tabella dagli account di archiviazione per Azure. Il nodo **archiviazione** di azure in Esplora server Mostra i dati presenti nell'account dell'emulatore di archiviazione locale e negli altri account di archiviazione di Azure.
 
-Per visualizzare Esplora server in Visual Studio, nella barra dei menu selezionare **Visualizza** > **Esplora server**. Il nodo **Archiviazione** mostra tutti gli account di archiviazione esistenti in ogni sottoscrizione o certificato di Azure a cui si è connessi. Se l'account di archiviazione non è visualizzato, è possibile aggiungerlo seguendo le istruzioni riportate [più avanti in questo articolo](#add-storage-accounts-by-using-server-explorer).
+Per visualizzare Esplora server in Visual Studio, nella barra dei menu selezionare **Visualizza**  >  **Esplora server**. Il nodo **Archiviazione** mostra tutti gli account di archiviazione esistenti in ogni sottoscrizione o certificato di Azure a cui si è connessi. Se l'account di archiviazione non è visualizzato, è possibile aggiungerlo seguendo le istruzioni riportate [più avanti in questo articolo](#add-storage-accounts-by-using-server-explorer).
 
-A partire da Azure SDK 2.7, è anche possibile usare Cloud Explorer per visualizzare e gestire le risorse di Azure. Per altre informazioni, vedere [Gestione delle risorse di Azure con Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
+A partire da Azure SDK 2.7, è anche possibile usare Cloud Explorer per visualizzare e gestire le risorse di Azure. Per altre informazioni, vedere [gestione delle risorse di Azure con Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Visualizzare e gestire le risorse di archiviazione in Visual Studio
 
-Esplora server mostra automaticamente un elenco di BLOB, code e tabelle nell'account dell'emulatore di archiviazione. L'account dell'emulatore di archiviazione viene visualizzato come nodo denominato **Sviluppo** sotto il nodo **Archiviazione** in Esplora server.
+Esplora server mostra automaticamente un elenco di BLOB, code e tabelle nell'account dell'emulatore di archiviazione. L'account dell'emulatore di archiviazione è elencato in Esplora server nel nodo **archiviazione** come nodo di **sviluppo** .
 
 Per visualizzare le risorse dell'account dell'emulatore di archiviazione, espandere il nodo **Sviluppo** . Se l'emulatore di archiviazione non è stato avviato, verrà avviato automaticamente quando si espande il nodo **Sviluppo**. Questo processo può richiedere alcuni secondi. Durante l'avvio dell'emulatore di archiviazione è possibile continuare a lavorare in altre aree di Visual Studio.
 
@@ -72,9 +72,9 @@ Il contenuto di un contenitore BLOB viene visualizzato in una scheda nota come v
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>Per creare una cartella o una sottocartella in un contenitore BLOB
 
-1. Scegliere il contenitore BLOB in Cloud Explorer. Nella finestra del contenitore selezionare il pulsante **Carica BLOB**.
+1. Scegliere il contenitore BLOB in **Cloud Explorer**. Nella finestra del contenitore selezionare il pulsante **Carica BLOB**.
 
-1. Nella finestra di dialogo **Carica nuovo file** selezionare il pulsante **Sfoglia** per specificare il file da caricare e quindi immettere un nome di cartella nella casella **Cartella (facoltativa)** .
+1. Nella finestra di dialogo **Carica nuovo file** selezionare il pulsante **Sfoglia** per specificare il file da caricare e quindi immettere un nome di cartella nella casella **Cartella (facoltativa)**.
 
    ![Caricamento di un file in una cartella BLOB](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ Poiché le cartelle nei contenitori BLOB sono cartelle virtuali, non è possibil
 
 È possibile filtrare i BLOB visualizzati specificando un prefisso comune.
 
-Se, ad esempio, si immette il prefisso **hello** nella casella di testo del filtro e quindi si seleziona il pulsante **Esegui** ( **!** ), vengono visualizzati solo i BLOB che iniziano con "hello".
+Se, ad esempio, si immette il prefisso **hello** nella casella di testo del filtro e quindi si seleziona il pulsante **Esegui** (**!**), vengono visualizzati solo i BLOB che iniziano con "hello".
 
 ![Campo Filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,13 +102,13 @@ Il campo del filtro rileva la differenza tra maiuscole e minuscole e non support
 
 ### <a name="to-download-blob-data"></a>Per scaricare i dati BLOB
 
-In Cloud Explorer usare una delle procedure seguenti:
+In **Cloud Explorer**usare uno dei metodi seguenti:
 
 * Aprire il menu di scelta rapida per uno o più BLOB e quindi selezionare **Apri**.
 * Selezionare il nome del BLOB e quindi scegliere il pulsante **Apri**.
 * Fare doppio clic sul nome del BLOB.
 
-Lo stato di avanzamento di un download di BLOB viene visualizzato nella finestra **Log attività di Azure** .
+Lo stato di un download del BLOB viene visualizzato nella finestra **Log attività di Azure**.
 
 Il BLOB viene aperto nell'editor predefinito per il tipo di file. Se il sistema operativo riconosce il tipo di file, il file viene aperto in un'applicazione installata in locale. In caso contrario, viene richiesto di scegliere un'applicazione appropriata per il tipo di file del BLOB. Il file locale creato durante il download di un BLOB è contrassegnato come di sola lettura.
 
@@ -134,7 +134,7 @@ Aprire il menu di scelta rapida del BLOB e quindi selezionare **Copia URL**.
 
 ### <a name="to-edit-a-blob"></a>Per modificare un BLOB
 
-Selezionare il BLOB e quindi scegliere il pulsante **Apri BLOB**.
+Scegliere il BLOB e quindi selezionare il pulsante **Apri BLOB** .
 
 Il file viene scaricato in un percorso temporaneo e aperto nel computer locale. Caricare nuovamente il BLOB dopo aver apportato le modifiche.
 
@@ -158,7 +158,7 @@ La figura seguente mostra una coda contenente due messaggi:
 Per altre informazioni sulle code dei servizi di archiviazione, vedere [Introduzione all'archiviazione code di Azure con .NET](/azure/storage/queues/storage-dotnet-how-to-use-queues). Per informazioni sul servizio Web per le code dei servizi di archiviazione, vedere [Concetti relativi al servizio di accodamento](/rest/api/storageservices/Queue-Service-Concepts). Per informazioni su come inviare messaggi a una coda dei servizi di archiviazione usando Visual Studio, vedere [Invio di messaggi a una coda di servizi di archiviazione](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Le code dei servizi di archiviazione sono diverse dalle code del bus di servizio di Azure. Per altre informazioni sulle code del bus di servizio, vedere[Code, argomenti e sottoscrizioni del bus di servizio](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Le code dei servizi di archiviazione sono diverse dalle code del bus di servizio di Azure. Per altre informazioni sulle code del bus di servizio, vedere [code, argomenti e sottoscrizioni del bus di servizio](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Usare le risorse di una tabella
 
@@ -166,12 +166,12 @@ Il servizio Archiviazione tabelle di Azure consente di archiviare grandi quantit
 
 ### <a name="to-create-a-table"></a>Per creare una tabella
 
-1. In Cloud Explorer selezionare il nodo **Tabelle** dell'account di archiviazione, quindi scegliere **Crea tabella**.
+1. In **Cloud Explorer**selezionare il nodo **tabelle** dell'account di archiviazione e quindi selezionare **Crea tabella**.
 1. Nella finestra di dialogo **Crea tabella** immettere un nome per la tabella.
 
 ### <a name="to-view-table-data"></a>Per visualizzare i dati in una tabella
 
-1. In Cloud Explorer aprire il nodo **Azure**, quindi aprire il nodo **Archiviazione**.
+1. In **Cloud Explorer**aprire il nodo **Azure** e quindi aprire il nodo **archiviazione** .
 1. Aprire il nodo dell'account di archiviazione che interessa e quindi aprire il nodo **Tabelle** per visualizzare un elenco di tabelle per l'account di archiviazione.
 1. Aprire il menu di scelta rapida per una tabella e quindi scegliere **Visualizza tabella**.
 
@@ -181,24 +181,24 @@ La tabella è organizzata in entità (mostrate nelle righe) e proprietà (mostra
 
 ### <a name="to-edit-table-data"></a>Per modificare i dati della tabella
 
-In Progettazione tabelle aprire il menu di scelta rapida per un'entità (una singola riga) o una proprietà (una singola cella) e quindi selezionare **Modifica**.
+In **Progettazione tabelle**aprire il menu di scelta rapida per un'entità (una singola riga) o una proprietà (una singola cella), quindi selezionare **modifica**.
 
 ![Aggiungere o modificare un'entità di tabella](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Le entità di una tabella non devono avere lo stesso set di proprietà (colonne). Tenere presenti le limitazioni seguenti relative alla visualizzazione e alla modifica dei dati della tabella:
 
 * Non è possibile visualizzare o modificare i dati binari (`type byte[]`), ma è possibile archiviarli in una tabella.
-* Non è possibile modificare i valori **PartitionKey** o **RowKey** perché l'archiviazione tabelle in Azure non supporta tale operazione.
+* Non è possibile modificare i valori **PartitionKey** o **RowKey** perché l'archiviazione tabelle di Azure non supporta tale operazione.
 * Non è possibile creare una proprietà denominata **Timestamp**. I servizi di archiviazione di Azure usano una proprietà con quel nome.
-* Se si immette un valore **DateTime**, è necessario applicare un formato appropriato alle impostazioni di area geografica e lingua del computer (ad esempio, MM/GG/AAAA HH:MM:SS [AM|PM] per l'inglese, Stati Uniti).
+* Se si immette un valore **DateTime** , è necessario seguire un formato appropriato per le impostazioni relative all'area e alla lingua del computer (ad esempio, mm/gg/aaaa hh: mm: SS [AM | PM] per l'inglese (Stati Uniti).
 
-### <a name="to-add-entities"></a>Per aggiungere entità
+### <a name="to-add-entities"></a>Per aggiungere le entità
 
-1. In Progettazione tabelle selezionare il pulsante **Aggiungi entità**.
+1. In **Progettazione tabelle**selezionare il pulsante **Aggiungi entità** .
 
     ![Pulsante Aggiungi entità](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Nella finestra di dialogo **Aggiungi entità** immettere i valori delle proprietà **PartitionKey** e **RowKey**.
+1. Nella finestra di dialogo **Aggiungi entità** immettere i valori per le proprietà **PartitionKey** e **RowKey**.
 
     ![Finestra di dialogo Aggiungi entità](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -211,13 +211,13 @@ Se si usa il generatore di query, è possibile personalizzare il set di entità 
 1. Per aprire il generatore di query, visualizzare prima una tabella.
 1. Scegliere il pulsante **Generatore di query** nella barra degli strumenti della visualizzazione tabella.
 
-    Viene visualizzata la finestra di dialogo **Generatore di query** . La figura seguente mostra una query compilata nel generatore di query.
+    Verrà visualizzata la finestra di dialogo **Generatore di query**. La figura seguente mostra una query compilata nel generatore di query.
 
     ![Generatore di query](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Una volta compilata la query, chiudere la finestra di dialogo. La query risultante in formato testo viene visualizzata in una casella di testo come filtro di WCF Data Services.
 1. Per eseguire la query, scegliere l'icona a forma di triangolo verde.
 
-È anche possibile filtrare i dati delle entità visualizzati in Progettazione tabelle se si immette una stringa di filtro di WCF Data Services direttamente nel campo del filtro. Una stringa di questo tipo è simile a una clausola SQL WHERE, ma viene inviata al server come richiesta HTTP. Per informazioni su come costruire stringhe di filtro, vedere [Creazione di stringhe di filtro per Progettazione tabelle](vs-azure-tools-table-designer-construct-filter-strings.md).
+È anche possibile filtrare i dati delle entità visualizzati in Progettazione tabelle se si immette una stringa di filtro di WCF Data Services direttamente nel campo del filtro. Una stringa di questo tipo è simile a una clausola SQL WHERE, ma viene inviata al server come richiesta HTTP. Per informazioni sulla creazione di stringhe di filtro, vedere [creazione di stringhe di filtro per progettazione tabelle](vs-azure-tools-table-designer-construct-filter-strings.md).
 
 La figura seguente mostra un esempio di una stringa di filtro valida:
 
@@ -235,7 +235,7 @@ Quando Esplora server si connette o riceve dati da un account di archiviazione, 
 ### <a name="to-refresh-table-data"></a>Per aggiornare i dati della tabella
 
 * Selezionare il nodo **Tabelle** sotto il nodo **Archiviazione** e quindi selezionare il pulsante **Aggiorna** sulla barra degli strumenti di Esplora server.
-* Per aggiornare l'elenco di entità visualizzato in Progettazione tabelle, selezionare il pulsante **Esegui** in Progettazione tabelle.
+* Per aggiornare l'elenco delle entità visualizzate in **Progettazione tabelle**, fare clic sul pulsante **Execute (esegui** ) nella progettazione tabelle.
 
 ### <a name="to-refresh-queue-data"></a>Per aggiornare i dati della coda
 
@@ -262,7 +262,7 @@ Sono disponibili due modi per aggiungere gli account di archiviazione usando Esp
 
    ![Creare un account di archiviazione di Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Scegliere **Crea**.
+1. Selezionare **Crea**.
 
 Il nuovo account di archiviazione viene visualizzato nell'elenco **Archiviazione** di Esplora soluzioni.
 

@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: 4a1b7bcc8b95b30ea3737dc2561c5abb280e2b5c
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.openlocfilehash: f2f55a149420205435d9f64ea1f66c8c6854ec38
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88639454"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800515"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
 
 Con Visual Studio, è possibile connettere uno dei seguenti ad archiviazione di Azure usando la funzionalità **servizi connessi** :
 
 - App console .NET Framework
-- MVC ASP.NET (.NET Framework) 
+- MVC ASP.NET (.NET Framework)
 - ASP.NET Core
 - .NET Core (incluse app console, WPF, Windows Forms, libreria di classi)
 - Ruolo di lavoro .NET Core

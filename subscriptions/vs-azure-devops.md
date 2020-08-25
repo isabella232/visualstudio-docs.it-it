@@ -7,23 +7,23 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
-ms.openlocfilehash: 591e6a3d781a17a292664847d6173aa371ff1a17
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115323"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801074"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
 
-## <a name="sign-in"></a>Accedi
+## <a name="sign-in"></a>Accesso
 
    > [!div class="mx-imgBorder"]
    > ![Riquadro Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
 
    
-Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottoscrizione di Visual Studio o l'[identità alternativa](vs-alternate-identity.md), il riconoscimento avviene automaticamente.  In questo modo è possibile aggiungere anche un account aziendale o dell'istituto di istruzione (usato per l'accesso a Visual Studio, Office 365 o alla rete aziendale o dell'istituto di istruzione), in modo che sia possibile accedere ad Azure DevOps sia tramite l'account personale che tramite l'account aziendale o dell'istituto di istruzione.
+Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottoscrizione di Visual Studio o l'[identità alternativa](vs-alternate-identity.md), il riconoscimento avviene automaticamente.  In questo modo è anche possibile aggiungere un account aziendale o dell'Istituto di istruzione (che viene usato per l'accesso a Visual Studio, Microsoft 365 o alla rete aziendale o dell'Istituto di istruzione), consentendo di accedere ad Azure DevOps usando l'account personale e l'account aziendale o dell'Istituto di istruzione.
 
 [Iscriversi per avere diritto a un'organizzazione gratuita di Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 
@@ -33,7 +33,7 @@ Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottos
 | Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, retail, NFR selezionato<sup>1</sup>  | Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Sì          |
 | Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops) |  Sì          |
 | Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Repository Azure Boards & (Basic<sup>2</sup>) [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sì          |
-| Visual Studio Professional con GitHub Enterprise | VL| Repository Azure Boards & (Basic<sup>2</sup>) [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sì          |
+| Visual Studio Professional con GitHub Enterprise | VL| Repository Azure Boards & (Basic<sup>2</sup>)  [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sì          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>) Azure test plans [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sì          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>) Azure test plans [altre informazioni](https://docs.microsoft.com/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sì          |
 ||

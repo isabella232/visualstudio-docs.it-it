@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare titoli software Microsoft inclusi nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: aa0784694b3407c621e8efb1916ed5fe41aee0c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248231"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801828"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Download di titoli software nelle sottoscrizioni di Visual Studio
 A seconda della sottoscrizione di Visual Studio, può essere disponibile un'ampia gamma di titoli software Microsoft.  Questo articolo descrive come individuare e scaricare il software necessario per sfruttare al meglio la sottoscrizione. 
@@ -22,7 +22,7 @@ Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamen
 Se la sottoscrizione viene fornita dall'ufficio o dall'Istituto di istruzione, l'amministratore delle sottoscrizioni controlla se è possibile accedere ai download. Disabilitando l'accesso ai download viene disabilitato anche l'accesso ai codici Product Key. Se non si ha accesso ai download e ai codici Product Key necessari, [contattare l'amministratore](contact-my-admin.md).
 
 > [!NOTE]
-> Microsoft è a conoscenza di un problema relativo alla disponibilità dei codici Product Key di Office 365.  Si sta esaminando la causa e questo articolo verrà aggiornato quando il problema viene risolto. 
+> Si è a conoscenza di un problema relativo alla disponibilità di Microsoft 365 codici Product Key.  Si sta esaminando la causa e questo articolo verrà aggiornato quando il problema viene risolto. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Come trovare i download nel portale sottoscrittore?
 Quando si visita la pagina [Download](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) è possibile osservare i download popolari organizzati in gruppi per tipo di prodotto.  È possibile selezionare uno dei download popolari visualizzati o cercare qualsiasi prodotto tramite la barra di ricerca nella parte superiore della pagina.

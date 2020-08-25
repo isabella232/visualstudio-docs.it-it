@@ -1,5 +1,5 @@
 ---
-title: Usare l'editor set di regole di analisi del codice
+title: Usare l'editor set di regole di analisi codice
 ms.date: 04/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 796818d376df477df84f845b5b0a17ace60bd1f2
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587134"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801542"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor set di regole di analisi del codice
 
@@ -26,10 +26,10 @@ Nella tabella seguente vengono illustrate le opzioni di gravità:
 |Azione (gravità)|Descrizione|
 |-|-|
 |Avviso|Genera un avviso nel **Elenco errori** e anche in fase di compilazione.|
-|Errore di|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
-|Informazioni|Genera un messaggio nel **Elenco errori**.|
-|Hidden|La violazione non è visibile all'utente. Tuttavia, l'IDE riceve una notifica della violazione.|
-|nessuna|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
+|Errore|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
+|Info|Genera un messaggio nel **Elenco errori**.|
+|Nascosto|La violazione non è visibile all'utente. Tuttavia, l'IDE riceve una notifica della violazione.|
+|nessuno|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
 
 Nell'editor vengono visualizzate le regole in una struttura ad albero che raggruppa le regole in base a un campo del set di regole specificato. Per aggiungere o rimuovere regole da un set di regole, eseguire uno o più dei passaggi seguenti:
 
@@ -38,11 +38,11 @@ Nell'editor vengono visualizzate le regole in una struttura ad albero che raggru
    > [!TIP]
    > È possibile modificare la modalità di raggruppamento delle regole nell'elenco a discesa **Raggruppa per** .
 
-- Fare clic sul campo **azione** di un gruppo, quindi specificare l'azione da applicare a tutte le regole del gruppo.
+- Nel campo **azione** di un gruppo specificare l'azione da applicare a tutte le regole del gruppo.
 
-- Selezionare o deselezionare la casella di controllo per una singola regola. Quando si seleziona la casella di controllo relativa a una regola, la regola viene impostata sull'azione di avviso.
+- Selezionare o deselezionare la casella di controllo per una singola regola. Quando si seleziona la casella di controllo relativa a una regola, la regola viene impostata sull'azione di **avviso** .
 
-## <a name="toolbar"></a>ToolBar
+## <a name="toolbar"></a>Barra degli strumenti
 
 È possibile utilizzare la barra degli strumenti dell'editor set di regole per raggruppare, filtrare e cercare i dati visualizzati nella griglia del set di regole.
 
@@ -52,7 +52,7 @@ Nella tabella seguente vengono descritti i controlli della barra degli strumenti
 |---------------------|-----------------|
 |**Espandi tutto**|Mostra le regole in tutti i gruppi.|
 |**Comprimi tutto**|Nasconde le regole in tutti i gruppi.|
-|**Group By**|Specifica il campo in base al quale vengono raggruppate le regole. Fare clic su **\<nessuna >** per visualizzare le regole senza gruppi.|
+|**Raggruppa per**|Specifica il campo in base al quale vengono raggruppate le regole. Fare clic **\<None>** per visualizzare le regole senza gruppi.|
 |**Opzioni colonne**|Specifica i campi della regola da visualizzare.|
 |**Nascondi regole che non si applicano alla soluzione corrente**|Consente di visualizzare o nascondere regole che non sono dello stesso tipo di destinazione della soluzione.|
 |**Mostra regole che possono generare errori di analisi del codice**|Consente di visualizzare o nascondere le regole a cui è stata assegnata l'azione di errore.|
@@ -71,8 +71,8 @@ Nella tabella seguente vengono descritti i campi di un set di regole:
 |-----------|-----------------|
 |**ID**|Identificatore della regola.|
 |**Categoria**|Oltre all'appartenenza ai set di regole, le regole di analisi del codice sono raggruppate per categoria. Per altre informazioni, vedere [avvisi di analisi del codice](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Name**|Titolo della regola.|
-|**Namespace**|Spazio dei nomi della regola.|
+|**Nome**|Titolo della regola.|
+|**Spazio dei nomi**|Spazio dei nomi della regola.|
 |**Tipo di destinazione**|Indica se la regola è per il codice nativo, gestito o del database.|
 |**Azione**|Azione eseguita quando la regola viene violata in un'esecuzione dell'analisi del codice. È possibile modificare il campo **azione** .|
 |**Set di regole di origine**|Set di regole che contiene la regola.|
@@ -81,9 +81,9 @@ Nella tabella seguente vengono descritti i campi di un set di regole:
 
 Dalle intestazioni di colonna della griglia del set di regole è possibile ordinare e filtrare le regole in base ai valori del campo.
 
-- Per ordinare gli elenchi di set di regole, fare clic sull'intestazione di colonna del campo in base al quale si desidera eseguire l'ordinamento. Se i set di regole sono raggruppati, ogni gruppo viene ordinato singolarmente.
+- Per ordinare gli elenchi dei set di regole, selezionare l'intestazione di colonna del campo in base al quale si desidera eseguire l'ordinamento. Se i set di regole sono raggruppati, ogni gruppo viene ordinato singolarmente.
 
-- Per filtrare i set di regole in base al valore di un campo, fare clic sul pulsante filtro nell'intestazione di colonna del campo in base al quale si desidera filtrare. Selezionare le caselle di controllo dei valori che si desidera visualizzare e deselezionare le caselle di controllo dei valori che si desidera nascondere.
+- Per filtrare i set di regole in base al valore di un campo, selezionare il pulsante filtro nell'intestazione di colonna del campo in base al quale si desidera filtrare. Selezionare le caselle di controllo dei valori che si desidera visualizzare e deselezionare le caselle di controllo dei valori che si desidera nascondere.
 
 ## <a name="see-also"></a>Vedere anche
 

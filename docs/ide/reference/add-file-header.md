@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 779092e277ac5b6eed3afcaceaf55b26ee2759dd
-ms.sourcegitcommit: 025816f8e388b29e58761d304b0fda755ac5a613
+ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374169"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801321"
 ---
 # <a name="add-file-header"></a>Aggiungere l'intestazione del file
 
@@ -34,12 +34,12 @@ Questa generazione di codice si applica a:
 
 2. Aggiungere la regola seguente al file EditorConfig: *file_header_template*.
 
-3. Impostare il valore della regola su uguale al testo dell'intestazione che si desidera applicare.
+3. Impostare il valore della regola su uguale al testo dell'intestazione che si desidera applicare. È possibile usare `{fileName}` come segnaposto per il nome file.
 
     ![Regola di intestazione del file EditorConfig](media/add-file-header-rule.png)
 
-> [!NOTE]
-> Non è possibile avere più righe esplicite in un EditorConfig e sarà necessario usare il carattere di nuova riga UNIX per inserire nuove righe.
+    > [!NOTE]
+    > Non è possibile avere più righe esplicite in un EditorConfig e sarà necessario usare il carattere di nuova riga UNIX per inserire nuove righe.
 
 4. Posizionare il punto di inserimento sulla prima riga di un file C# o Visual Basic.
 

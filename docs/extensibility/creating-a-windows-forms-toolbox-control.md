@@ -1,5 +1,6 @@
 ---
 title: Creazione di un controllo Windows Forms casella degli strumenti | Microsoft Docs
+description: Questa procedura dettagliata illustra come usare il modello di controllo della casella degli strumenti Windows Forms per creare un semplice controllo del contatore usando Visual Studio SDK.
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb0f0e66d623f53c641126f1e07edaa476d831ae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248608"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801867"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Creare un controllo della casella degli strumenti Windows Forms
 
@@ -35,7 +36,7 @@ Il modello di controllo della casella degli strumenti Windows Forms crea un cont
 
 1. Creare un progetto VSIX denominato `MyWinFormsControl` . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Quando si apre il progetto, aggiungere un modello di elemento di **controllo della casella degli strumenti Windows Forms** denominato `Counter` . Nella **Esplora soluzioni**selezionare e mantenere (oppure fare clic con il pulsante destro del mouse) sul nodo del progetto e selezionare **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#**  >  **estendibilità** di Visual C# e selezionare **Windows Forms controllo della casella degli strumenti**
+2. Quando si apre il progetto, aggiungere un modello di elemento di **controllo della casella degli strumenti Windows Forms** denominato `Counter` . Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#**  >  **estendibilità** di Visual C# e selezionare **Windows Forms controllo della casella degli strumenti**
 
 3. Viene aggiunto un controllo utente, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> per inserire il controllo nella **casella degli strumenti**e una voce di asset **Microsoft. VisualStudio. ToolboxControl** nel manifesto VSIX per la distribuzione.
 
@@ -45,7 +46,7 @@ Il `Counter` controllo richiede due controlli figlio: un oggetto <xref:System.Wi
 
 #### <a name="to-build-the-user-interface"></a>Per creare l'interfaccia utente
 
-1. In **Esplora soluzioni**toccare o fare doppio clic su *Counter.cs* per aprirlo nella finestra di progettazione.
+1. In **Esplora soluzioni**fare doppio clic su *Counter.cs* per aprirlo nella finestra di progettazione.
 
 2. Rimuovere il **clic qui.** pulsante incluso per impostazione predefinita quando si aggiunge il modello di elemento di controllo della casella degli strumenti Windows Forms.
 
@@ -55,7 +56,7 @@ Il `Counter` controllo richiede due controlli figlio: un oggetto <xref:System.Wi
 
 5. Nella finestra **Proprietà** impostare i valori seguenti per i controlli nell'area di progettazione.
 
-    |Controllo|Proprietà|Valore|
+    |Controllo|Proprietà|valore|
     |-------------|--------------|-----------|
     |`Label1`|**Text**|""|
     |`Button1`|**Nome**|btnReset|
@@ -67,7 +68,7 @@ Il `Counter` controllo esporrà un metodo per incrementare il contatore, un even
 
 #### <a name="to-code-the-user-control"></a>Per codificare il controllo utente
 
-1. Toccare o fare doppio clic sul form per aprire il relativo gestore eventi di caricamento nella finestra del codice.
+1. Fare doppio clic sul form per aprire il relativo gestore eventi di caricamento nella finestra del codice.
 
 2. Sopra il metodo del gestore dell'evento, nella classe del controllo creare un Integer per archiviare il valore del contatore e una stringa per archiviare il testo visualizzato, come illustrato nell'esempio seguente.
 
@@ -130,7 +131,7 @@ Il `Counter` controllo esporrà un metodo per incrementare il contatore, un even
 
     I chiamanti possono aggiungere gestori a questo evento per rispondere alle modifiche nel valore del contatore.
 
-7. Tornare alla visualizzazione progettazione e toccare o fare doppio clic sul pulsante **Reimposta** per generare il `btnReset_Click` gestore eventi. Quindi, compilare il comando come illustrato nell'esempio seguente.
+7. Tornare alla visualizzazione progettazione e fare doppio clic sul pulsante **Reimposta** per generare il `btnReset_Click` gestore eventi. Quindi, compilare il comando come illustrato nell'esempio seguente.
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -162,7 +163,7 @@ Il `Counter` controllo esporrà un metodo per incrementare il contatore, un even
 
 2. Nell'istanza sperimentale di Visual Studio creare un progetto di **applicazione Windows Forms** .
 
-3. In **Esplora soluzioni**toccare o fare doppio clic su *Form1.cs* per aprirlo nella finestra di progettazione, se non è già aperto.
+3. In **Esplora soluzioni**fare doppio clic su *Form1.cs* per aprirlo nella finestra di progettazione, se non è già aperto.
 
 4. Nella **casella degli strumenti**il `Counter` controllo deve essere visualizzato nella sezione **generale** .
 
@@ -172,7 +173,7 @@ Il `Counter` controllo esporrà un metodo per incrementare il contatore, un even
 
 7. Trascinare un <xref:System.Windows.Forms.Button> controllo nel form, quindi impostare le proprietà nome e testo del pulsante su `Test` .
 
-8. Toccare o fare doppio clic sul pulsante per aprire *Form1.cs* nella visualizzazione codice e creare un gestore di clic.
+8. Fare doppio clic sul pulsante per aprire *Form1.cs* nella visualizzazione codice e creare un gestore di clic.
 
 9. Nel gestore di clic chiamare `counter1.Increment()` .
 

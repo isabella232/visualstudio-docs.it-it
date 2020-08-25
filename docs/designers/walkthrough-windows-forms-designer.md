@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 11f8480a3a48c1fdee514deb51411e2623055f09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.openlocfilehash: 831e0216bcecff2e9ac6551184ddbfda56a4b525
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85816462"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801295"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>Esercitazione: Introduzione a Progettazione Windows Form
 
@@ -43,7 +43,7 @@ Il primo passaggio consiste nel creare il progetto di controllo DemoCalculator.
 
    ::: moniker-end
 
-2. Per rinominare il file, in **Esplora soluzioni** fare clic con il pulsante destro del mouse su **UserControl1.vb** o **UserControl1.cs**, scegliere **Rinomina** e modificare il nome del file in DemoCalculator.vb o DemoCalculator.cs. Selezionare il pulsante **Sì** quando richiesto per rinominare tutti i riferimenti all'elemento di codice "UserControl1".
+2. Per rinominare il file, in **Esplora soluzioni**, fare clic con il pulsante destro del mouse su **UserControl1. vb** o **UserControl1.cs**, scegliere **Rinomina**e modificare il nome del file in DemoCalculator. vb o DemoCalculator.cs. Selezionare il pulsante **Sì** quando richiesto per rinominare tutti i riferimenti all'elemento di codice "UserControl1".
 
 Progettazione Windows Form mostra l'area di progettazione per il controllo DemoCalculator. In questa visualizzazione è possibile progettare graficamente l'aspetto del controllo selezionando i controlli e i componenti dalla casella degli strumenti e inserendoli nell'area di progettazione. Per altre informazioni sui controlli personalizzati, vedere [Tipi di controlli personalizzati](/dotnet/framework/winforms/controls/varieties-of-custom-controls).
 
@@ -111,7 +111,7 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
 
 Ora che il layout del controllo è configurato, è possibile popolare il controllo DemoCalculator con i pulsanti e una visualizzazione.
 
-1. Nella **casella degli strumenti** fare doppio clic sull'icona del controllo `TextBox`.
+1. Nella **casella degli strumenti**selezionare l' `TextBox` icona del controllo.
 
    Un controllo `TextBox` viene inserito nella prima cella del controllo `TableLayoutPanel`.
 
@@ -129,11 +129,11 @@ Ora che il layout del controllo è configurato, è possibile popolare il control
 
 6. Selezionare il controllo `TableLayoutPanel`.
 
-7. Nella **casella degli strumenti** fare doppio clic sull'icona `Button`.
+7. Nella **casella degli strumenti**selezionare l' `Button` icona.
 
    Un controllo `Button` viene inserito nella successiva cella aperta del controllo `TableLayoutPanel`.
 
-8. Nella **casella degli strumenti** fare doppio clic sull'icona `Button` altre quattro volte per popolare la seconda riga del controllo `TableLayoutPanel`.
+8. Nella **casella degli strumenti**selezionare l' `Button` icona altre quattro volte per popolare la seconda riga del `TableLayoutPanel` controllo.
 
 9. Selezionare tutti e cinque i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**. Premere **CTRL** + **C** per copiare i `Button` controlli negli Appunti.
 
@@ -161,7 +161,7 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    La finestra Struttura documento mostra una visualizzazione albero del controllo DemoCalculator e dei relativi controlli costitutivi. I controlli contenitore come `SplitContainer` visualizzano i relativi controlli figlio come sottonodi dell'albero. È anche possibile rinominare i controlli sul posto usando la finestra Struttura documento.
 
-2. Nella finestra **Struttura documento** fare clic con il pulsante destro del mouse su **button1** e quindi scegliere **Rinomina**. Impostare il nome su sevenButton.
+2. Nella finestra **struttura documento** , fare clic con il pulsante destro del mouse su **Button1**, quindi scegliere **Rinomina**. Impostare il nome su sevenButton.
 
 3. Usando la finestra **Struttura documento**, rinominare i controlli `Button` dal nome generato dalla finestra di progettazione al nome di produzione in base all'elenco seguente:
 
@@ -233,7 +233,7 @@ Quando il controllo o il form viene popolato con diversi controlli, può risulta
 
    - Impostare la proprietà Text del controllo zeroButton su **0**
 
-   - Modificare la proprietà Text del controllo changeSignButton in**+/-**
+   - Modificare la proprietà Text del controllo changeSignButton in **+/-**
 
    - Impostare la proprietà Text del controllo decimalButton su **.** (punto)
 
@@ -247,11 +247,11 @@ Questa operazione completa la progettazione del controllo DemoCalculator. Tutto 
 
 ## <a name="implement-event-handlers"></a>Implementare i gestori eventi
 
-I pulsanti del controllo DemoCalculator hanno gestori eventi che possono essere usati per implementare gran parte della logica della calcolatrice. Progettazione Windows Form consente di implementare gli stub di tutti i gestori eventi per tutti i pulsanti con un doppio clic.
+I pulsanti del controllo DemoCalculator hanno gestori eventi che possono essere usati per implementare gran parte della logica della calcolatrice. Il Progettazione Windows Form consente di implementare gli stub di tutti i gestori eventi per tutti i pulsanti con una sola selezione.
 
 1. Nell'area di progettazione selezionare tutti i controlli `Button` selezionandoli tenendo premuto il tasto **MAIUSC**.
 
-2. Fare doppio clic su uno dei controlli `Button`.
+2. Selezionare uno dei `Button` controlli.
 
    Viene aperto l'editor del codice per i gestori eventi generati dalla finestra di progettazione.
 
@@ -277,7 +277,7 @@ Il primo passaggio consiste nel creare il progetto dell'applicazione. Questo pro
 
 2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **DemoCalculatorTest** e quindi scegliere **Aggiungi riferimento** per aprire la finestra di dialogo **Aggiungi riferimento**.
 
-3. Selezionare la scheda **Progetti** e quindi fare doppio clic sul progetto DemoCalculatorLib per aggiungere il riferimento al progetto di test.
+3. Passare alla scheda **progetti** , quindi selezionare il progetto DemoCalculatorLib per aggiungere il riferimento al progetto di test.
 
 4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **DemoCalculatorTest** e quindi scegliere **Imposta come progetto di avvio**.
 

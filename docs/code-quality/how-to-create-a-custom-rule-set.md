@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81462db07941c73b847c009ef8353b00d28fff4f
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85371911"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801035"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -26,9 +26,9 @@ ms.locfileid: "85371911"
 
 Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando viene violata una regola, &mdash; ad esempio, viene visualizzato un avviso o un errore.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni**selezionare e mantenere o fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
-2. Nelle pagine delle **Proprietà** selezionare la scheda **analisi codice** .
+2. Nelle pagine delle **Proprietà** passare alla scheda **analisi codice** .
 
 ::: moniker range="vs-2017"
 
@@ -42,7 +42,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ::: moniker-end
 
-   - Selezionare il set di regole che si desidera personalizzare.
+   - Scegliere il set di regole che si desidera personalizzare.
 
      \- - oppure -
 
@@ -57,11 +57,11 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 È possibile creare un nuovo file del set di regole dalla finestra di dialogo **nuovo file** :
 
-1. Selezionare **file**  >  **nuovo**  >  **file**oppure premere **CTRL** + **N**.
+1. Selezionare **file**  >  **nuovo**  >  **file**oppure **premere CTRL** + **N**.
 
 2. Nella finestra di dialogo **nuovo file** selezionare la categoria **generale** a sinistra e quindi selezionare **set di regole di analisi codice**.
 
-3. Seleziona **Apri**.
+3. Scegliere **Open**(Apri).
 
    Il nuovo file con *estensione ruleset* verrà aperto nell'Editor set di regole.
 
@@ -70,9 +70,9 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 > [!NOTE]
 > La seguente procedura non si applica ai progetti .NET Core, che non dispongono di una scheda delle proprietà di **analisi del codice** .
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni**selezionare e mantenere o fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
-2. Nelle pagine delle **Proprietà** selezionare la scheda **analisi codice** .
+2. Nelle pagine delle **Proprietà** passare alla scheda **analisi codice** .
 
 ::: moniker range="vs-2017"
 
@@ -86,7 +86,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 ::: moniker-end
 
-4. Nella finestra di dialogo **Aggiungi o Rimuovi set di regole** selezionare i set di regole che si desidera includere nel nuovo set di regole.
+4. Nella finestra di dialogo **Aggiungi o Rimuovi set di regole** scegliere i set di regole che si desidera includere nel nuovo set di regole.
 
    ![Finestra di dialogo Aggiungi o Rimuovi set di regole](media/add-remove-rule-sets.png)
 
@@ -145,7 +145,7 @@ Ora che si dispone di un set di regole, il passaggio successivo consiste nel per
 > [!div class="nextstepaction"]
 > [Modificare le regole nell'Editor set di regole](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Configurare l'analisi codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Tabella di riferimento del set di regole di analisi del codice](../code-quality/rule-set-reference.md)

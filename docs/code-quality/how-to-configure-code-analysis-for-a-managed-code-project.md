@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 985f14446f17d1a4df3cfd14e156f21b7a7ce0de
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "87507859"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801048"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procedura: configurare l'analisi legacy per il codice gestito
 
@@ -36,11 +36,11 @@ In Visual Studio è possibile scegliere da un elenco di [set di regole](../code-
 
 1. Aprire la scheda **analisi codice** nelle pagine delle proprietà del progetto. È possibile precedere in uno dei modi seguenti:
 
-   - In **Esplora soluzioni**selezionare il progetto. Sulla barra dei menu selezionare **analizza**  >  **Configura analisi codice**  >  **per \<projectname> **.
+   - In **Esplora soluzioni**scegliere il progetto. Sulla barra dei menu selezionare **analizza**  >  **Configura analisi codice**  >  **per \<projectname> **.
 
    - Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** , scegliere **Proprietà**, quindi selezionare la scheda **analisi codice** .
 
-2. Negli elenchi **configurazione** e **piattaforma** Selezionare la configurazione di compilazione e la piattaforma di destinazione.
+2. Negli elenchi **configurazione** e **piattaforma** scegliere la configurazione di compilazione e la piattaforma di destinazione.
 
 ::: moniker range="vs-2017"
 
@@ -89,11 +89,11 @@ Per impostazione predefinita, a tutti i progetti gestiti di una soluzione viene 
 
 4. È possibile specificare un set di regole per uno o più progetti:
 
-    - Per specificare un set di regole per un singolo progetto, selezionare il nome del progetto.
+    - Per specificare un set di regole per un singolo progetto, scegliere il nome del progetto.
 
-    - Per specificare un set di regole per più progetti, tenere premuto **CTRL** e selezionare i nomi del progetto.
+    - Per specificare un set di regole per più progetti, selezionare **CTRL** e i nomi del progetto.
 
-    - Per specificare tutti i progetti nella soluzione, tenere premuto **MAIUSC** e fare clic nell'elenco progetto.
+    - Per specificare tutti i progetti nella soluzione, selezionare **MAIUSC** e l'elenco progetto.
 
 5. Selezionare il campo **set di regole** di un progetto, quindi selezionare il nome del set di regole che si desidera applicare.
 

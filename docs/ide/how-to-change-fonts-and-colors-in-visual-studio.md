@@ -1,6 +1,6 @@
 ---
-title: Come modificare i colori dei caratteri, le dimensioni del testo e le opzioni a contrasto elevato
-description: Informazioni su come modificare il colore del tipo di carattere e la dimensione del testo in Visual Studio e su come selezionare le opzioni di contrasto per i problemi di accessibilità.
+title: Modificare i temi, i tipi di carattere, il testo e il contrasto per l'accessibilità
+description: Informazioni su come modificare i temi colori di Visual Studio, i colori dei tipi di carattere, le dimensioni del testo e i colori a contrasto aggiuntivo per problemi di semplicità d'uso e accessibilità.
 ms.date: 08/20/2020
 ms.topic: how-to
 ms.custom: contperfq1
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 280873a2f855aa4c0d7e9951e141ca5492357b5a
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711690"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88801438"
 ---
-# <a name="how-to-change-fonts-colors-and-high-contrast-options-in-visual-studio"></a>Procedura: modificare i tipi di carattere, i colori e le opzioni a contrasto elevato in Visual Studio
+# <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Procedura: modificare i tipi di carattere, i colori e i temi in Visual Studio
 
-È possibile modificare i tipi di carattere e i colori in Visual Studio in molti modi. Ad esempio, è possibile modificare il tema colore blu predefinito sul tema scuro (noto anche come "modalità scura"). È quindi possibile modificare il tipo di carattere e la dimensione del testo predefiniti impostando un tipo di carattere e una dimensione differenti. Se questo è più adatto alle proprie esigenze, è anche possibile selezionare un tema a contrasto elevato.
+È possibile modificare i tipi di carattere e i colori in Visual Studio in molti modi. Ad esempio, è possibile modificare il tema colore blu predefinito sul tema scuro (noto anche come "modalità scura"). Se questo è più adatto alle proprie esigenze, è anche possibile selezionare un tema a contrasto aggiuntivo. È possibile modificare le dimensioni predefinite del testo e del tipo di carattere nell'IDE e nell'editor di codice.
 
 ## <a name="change-the-color-theme"></a>Modificare il tema colori
 
@@ -124,5 +124,6 @@ Per ulteriori informazioni su tutti gli elementi dell'interfaccia utente per i q
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modificare i tipi di carattere e i colori dell'editor del codice](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+- [Procedura: modificare i tipi di carattere e i colori per l'editor in Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Funzionalità dell'editor di codice di Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personalizzare l'IDE di Visual Studio e l'editor](../ide/quickstart-personalize-the-ide.md)

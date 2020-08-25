@@ -1,16 +1,17 @@
 ---
-title: Installare e usare Visual Studio per Mac protetto da un firewall o un server proxy
+title: Installare e usare Visual Studio per Mac con un firewall o un server proxy
+titleSuffix: ''
 description: Questo documento fornisce un elenco di host da abilitare nel firewall per il corretto funzionamento di Visual Studio per Mac (e dei relativi carichi di lavoro, incluso Xamarin) in un ambiente aziendale.
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
-ms.openlocfilehash: 817fce7958ce2b3e4bc3684e639197da8f69e40d
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 25a4597c8d523b63e7ceb0cf8b5eff71af58071a
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938993"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800411"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio per Mac protetto da un firewall o un server proxy
 
@@ -55,7 +56,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 
 ### <a name="general"></a>Generale
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Risoluzione degli URL Microsoft |
 | vsstartpage.blob.core.windows.net| 80/443| Dati della pagina iniziale|
@@ -66,7 +67,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 
 ### <a name="identity"></a>Identità
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| Provider di identità|
 | secure.aadcdn.microsoftonline-p.com | 80/443|Provider di identità|
@@ -75,7 +76,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 
 ### <a name="nuget"></a>NuGet
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|API NuGet|
 | secure.aadcdn.microsoftonline-p.com |80/443| Provider di identità|

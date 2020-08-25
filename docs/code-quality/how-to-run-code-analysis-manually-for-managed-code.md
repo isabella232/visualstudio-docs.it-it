@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 874d95b65b99af4b5a6b00d45101236f62db3df1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 1077e2cdae790fe8a7b7309b1e6427cd3ef81b48
+ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769373"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88800164"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Procedura: eseguire manualmente l'analisi codice per il codice gestito (richiede Visual Studio 2019 versione 16,5 o successiva)
 Per impostazione predefinita, gli analizzatori di codice .NET Compiler Platform ("Roslyn") analizzano il codice C# o Visual Basic durante la digitazione eseguendo l'analisi in tempo reale e durante la compilazione. Di conseguenza, in genere non è necessario attivare manualmente l'analisi del codice. Tuttavia, esistono alcuni scenari in cui potrebbe essere necessario attivare manualmente l'analisi del codice:
@@ -26,8 +26,8 @@ Per impostazione predefinita, gli analizzatori di codice .NET Compiler Platform 
 
 ### <a name="run-code-analysis-manually"></a>Eseguire manualmente l'analisi del codice
 
-1. In **Esplora soluzioni**fare clic sul progetto.
+1. In **Esplora soluzioni**scegliere il progetto.
 
-2. Nel menu **analizza** fare clic su **Esegui analisi del codice sul** *nome del progetto*.
+2. Nel menu **analizza** selezionare **Esegui analisi codice sul nome del** *progetto*.
 
 L'analisi del codice inizierà a essere eseguita in background. Verrà visualizzato il messaggio **esecuzione dell'analisi del codice per \<project> ..** . nella barra di stato di Visual Studio verso l'angolo inferiore sinistro. Al termine dell'analisi del codice, il messaggio di stato viene modificato in **analisi codice \<project> completato per **. L'elenco errori verrà aggiornato a breve con tutta la diagnostica dell'analisi del codice.
