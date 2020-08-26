@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: edb9cb30be9d62a533e6d011cbb8d0436ef898b1
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801607"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893424"
 ---
 # <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
@@ -28,11 +28,11 @@ Gli analizzatori di codice .NET Compiler Platform ("Roslyn") analizzano il codic
 
 ![Nodo analizzatori in Esplora soluzioni](media/analyzers-expanded-in-solution-explorer.png)
 
-È possibile visualizzare le proprietà di una diagnostica, incluse la descrizione e la gravità predefinita, nella finestra **Proprietà** . Per visualizzare le proprietà, fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) la regola e selezionare **Proprietà**oppure selezionare la regola e quindi premere **ALT** + **invio**.
+È possibile visualizzare le proprietà di una diagnostica, incluse la descrizione e la gravità predefinita, nella finestra **Proprietà** . Per visualizzare le proprietà, fare clic con il pulsante destro del mouse sulla regola e scegliere **Proprietà**oppure selezionare la regola e quindi premere **ALT** + **invio**.
 
 ![Proprietà di diagnostica in Finestra Proprietà](media/analyzer-diagnostic-properties.png)
 
-Per visualizzare la documentazione online per una diagnostica, fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) la diagnostica e selezionare **Visualizza Guida**.
+Per visualizzare la documentazione online per una diagnostica, fare clic con il pulsante destro del mouse sulla diagnostica e selezionare **Visualizza Guida**.
 
 Le icone accanto a ogni diagnostica in **Esplora soluzioni** corrispondono alle icone visualizzate nel set di regole quando lo si apre nell'Editor:
 
@@ -66,8 +66,8 @@ Nella tabella seguente vengono illustrate le diverse opzioni di gravità:
 | Avviso | `warning` | Le violazioni vengono visualizzate come *avvisi* nell'elenco errori e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni. | Il codice offensivo è sottolineato con una zigzag verde e contrassegnato da una piccola casella verde nella barra di scorrimento. |
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
-| nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
-| Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
+| Nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
+| Impostazione predefinita | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 La schermata seguente dell'editor del codice mostra tre violazioni diverse con livelli di gravità diversi. Si noti il colore del zigzag e il piccolo quadrato colorato nella barra di scorrimento a destra.
 
@@ -225,7 +225,7 @@ Visual Studio offre un modo pratico per configurare la gravità di una regola da
 
 Visual Studio offre anche un modo pratico per configurare la gravità di una regola dal menu di scelta rapida Elenco errori.
 
-1. Dopo che si è verificata una violazione, fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) la voce di diagnostica nell'elenco errori.
+1. Quando si verifica una violazione, fare clic con il pulsante destro del mouse sulla voce di diagnostica nell'elenco errori.
 
 2. Dal menu di scelta rapida selezionare **imposta gravità**.
 
@@ -242,12 +242,12 @@ Visual Studio offre anche un modo pratico per configurare la gravità di una reg
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Imposta gravità regola da Esplora soluzioni
 
-1. In Esplora soluzioni selezionare **References**  >  **analizzatori** di riferimenti (o **Dependencies**  >  **analizzatori** di dipendenze per i progetti .NET Core).
+1. In Esplora soluzioni, espandere **References**  >  **analizzatori** di riferimenti (o **Dependencies**  >  **analizzatori** di dipendenze per i progetti .NET Core).
 
 2. Espandere l'assembly che contiene la regola per la quale si desidera impostare la gravità.
 
 ::: moniker range=">=vs-2019"
-3. Fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) la regola e selezionare **imposta gravità**. Nel menu di scelta rapida scegliere una delle opzioni di gravità.
+3. Fare clic con il pulsante destro del mouse sulla regola e scegliere **imposta gravità**. Nel menu di scelta rapida scegliere una delle opzioni di gravità.
 
    Visual Studio aggiunge una voce al file EditorConfig per configurare la regola al livello richiesto. Se il progetto usa un file di RuleSet anziché un file EditorConfig, la voce relativa alla gravità viene aggiunta al file di RuleSet.
 
@@ -256,7 +256,7 @@ Visual Studio offre anche un modo pratico per configurare la gravità di una reg
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-3. Fare clic con il pulsante destro del mouse (o selezionare e mantenere) la regola e selezionare **imposta gravità set di regole**. Nel menu di scelta rapida scegliere una delle opzioni di gravità.
+3. Fare clic con il pulsante destro del mouse sulla regola e selezionare **imposta gravità set di regole**. Nel menu di scelta rapida scegliere una delle opzioni di gravità.
 
    Il livello di gravità per la regola viene salvato nel file del set di regole attivo.
 ::: moniker-end
@@ -267,7 +267,7 @@ Visual Studio offre anche un modo pratico per configurare la gravità di una reg
 
 1. Aprire il file del set di regole attivo in uno dei modi seguenti:
 
-- In **Esplora soluzioni**fare doppio clic sul file, fare clic con il pulsante destro del mouse ( **References**oppure selezionare e mantenere)  >  nodo**analizzatori** riferimenti e selezionare **Apri set di regole attive**.
+- In **Esplora soluzioni**fare doppio clic sul file, fare clic con il pulsante destro del mouse su **riferimenti**  >  **analizzatori** nodo e selezionare **Apri set di regole attivo**.
 - Nella pagina delle proprietà **analisi codice** per il progetto selezionare **Apri** .
 
   Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, ne assegna il nome * \<projectname> . RuleSet*e lo aggiunge al progetto. Questo set di regole personalizzate diventa anche il set di regole attive per il progetto.
@@ -342,7 +342,7 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 - Dal **Elenco errori**
 
-  Scegliere le regole da escludere, quindi fare clic con il pulsante destro del mouse (oppure selezionare e mantenere) e selezionare **Elimina**  >  **in origine/file di eliminazione**.
+  Selezionare le regole da escludere, quindi fare clic con il pulsante destro del mouse e selezionare **Elimina**  >  **in origine/in file di eliminazione**.
 
   - Se si omette **in origine**, viene visualizzata la finestra di dialogo **Anteprima modifiche** con un'anteprima dell' [avviso #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) C# o Visual Basic la direttiva di [avviso #Disable](/dotnet/visual-basic/language-reference/directives/directives) aggiunta al codice sorgente.
 

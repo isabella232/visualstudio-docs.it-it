@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1077e2cdae790fe8a7b7309b1e6427cd3ef81b48
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: bbd3d2023310b9412310fc86f419c2e8c4a127c4
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800164"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893398"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code-requires-visual-studio-2019-version-165-or-later"></a>Procedura: eseguire manualmente l'analisi codice per il codice gestito (richiede Visual Studio 2019 versione 16,5 o successiva)
 Per impostazione predefinita, gli analizzatori di codice .NET Compiler Platform ("Roslyn") analizzano il codice C# o Visual Basic durante la digitazione eseguendo l'analisi in tempo reale e durante la compilazione. Di conseguenza, in genere non è necessario attivare manualmente l'analisi del codice. Tuttavia, esistono alcuni scenari in cui potrebbe essere necessario attivare manualmente l'analisi del codice:
 
 - Per impostazione predefinita, l'analisi del codice in tempo reale esegue gli analizzatori solo per i file aperti in Visual Studio. Tuttavia, potrebbe essere interessante visualizzare gli avvisi di analisi del codice per tutti i file in un progetto o in una soluzione specifica. In tal caso, è necessario attivare l'analisi del codice una volta in un progetto o in una soluzione. In alternativa, è possibile abilitare l'analisi del codice Live continua per l'esecuzione in un'intera soluzione. Per altre informazioni, vedere [procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito](./configure-live-code-analysis-scope-managed-code.md).
-- Potrebbe essere preferibile un flusso di lavoro di esecuzione dell'analisi del codice su richiesta su un'analisi dinamica continua o sull'analisi in tempo reale. In tal caso, è possibile disabilitare l'esecuzione dell'analizzatore durante l'analisi in tempo reale e/o la compilazione. Per informazioni sulla disabilitazione dell'analisi, vedere [come disabilitare l'analisi del codice sorgente](disable-code-analysis.md). Sarà quindi necessario attivare manualmente l'analisi del codice una volta in un progetto o in una soluzione. 
+- Potrebbe essere preferibile un flusso di lavoro di esecuzione dell'analisi del codice su richiesta su un'analisi dinamica continua o sull'analisi in tempo reale. In tal caso, è possibile disabilitare l'esecuzione dell'analizzatore durante l'analisi in tempo reale e/o la compilazione. Per informazioni sulla disabilitazione dell'analisi, vedere [come disabilitare l'analisi del codice sorgente](disable-code-analysis.md). Sarà quindi necessario attivare manualmente l'analisi del codice una volta in un progetto o in una soluzione.
 
 ### <a name="run-code-analysis-manually"></a>Eseguire manualmente l'analisi del codice
 
-1. In **Esplora soluzioni**scegliere il progetto.
+1. In **Esplora soluzioni**selezionare il progetto.
 
 2. Nel menu **analizza** selezionare **Esegui analisi codice sul nome del** *progetto*.
 

@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cc2fd460a2087eaaac40abbb1ba04c8126a9aa
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 745bc0c53738370816ad74be9249b721f236ad87
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800853"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893372"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi di analisi codice
 
@@ -50,7 +50,7 @@ In C++/CLI, usare la CA macro non \_ visualizzare \_ messaggi o ca \_ globale \_
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attributo)
 
-Quando si seleziona **Elimina** dal menu di scelta rapida o si fa clic con il pulsante destro del mouse o si seleziona e si tiene presente un messaggio di avviso di analisi del codice nella **Elenco errori**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> viene aggiunto un attributo nel codice o nel file di eliminazione globale del progetto.
+Quando si seleziona **Elimina** dal menu di scelta rapida o facendo clic con il pulsante destro del mouse su un avviso di analisi del codice nella **Elenco errori**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> viene aggiunto un attributo nel codice o nel file di eliminazione globale del progetto.
 
 Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> formato dell'attributo è il seguente:
 

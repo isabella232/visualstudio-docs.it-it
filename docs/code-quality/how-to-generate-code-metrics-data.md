@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab0bbed64f9f85b8b508c3fe14fda4ec59d45f10
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800957"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893411"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -72,7 +72,7 @@ Queste regole sono disabilitate per impostazione predefinita, ma è possibile ab
 
 ## <a name="calculate-code-metrics-menu-command"></a>Comando di menu Calcola metrica codice
 
-Per generare metriche del codice per uno o tutti i progetti aperti nell'IDE, passare al menu **analizza**  >  **metrica codice** .
+Generare metriche del codice per uno o tutti i progetti aperti nell'IDE usando il menu **analizza**  >  **metriche del codice** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generare risultati della metrica del codice per un'intera soluzione
 
@@ -80,7 +80,7 @@ Per generare metriche del codice per uno o tutti i progetti aperti nell'IDE, pas
 
 - Dalla barra dei menu selezionare **analizza**  >  **Calcola metrica codice**  >  **per la soluzione**.
 
-- In **Esplora soluzioni**selezionare e mantenere o fare clic con il pulsante destro del mouse sulla soluzione e selezionare **Calcola metrica codice**.
+- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e quindi scegliere **Calcola metrica codice**.
 
 - Nella finestra **Risultati metrica codice** selezionare il pulsante **Calcola metrica codice per la soluzione** .
 
@@ -88,7 +88,7 @@ I risultati vengono generati e viene visualizzata la finestra **Risultati metric
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generare risultati della metrica del codice per uno o più progetti
 
-1. In **Esplora soluzioni**scegliere uno o più progetti.
+1. In **Esplora soluzioni**selezionare uno o più progetti.
 
 1. Dalla barra dei menu selezionare **analizza**  >  **Calcola metrica codice**  >  **per i progetti selezionati**.
 

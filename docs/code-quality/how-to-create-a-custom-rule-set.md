@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643ee48f798c90851d5ff323685070f9d7268f04
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
+ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801035"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88893268"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -26,9 +26,9 @@ ms.locfileid: "88801035"
 
 Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando viene violata una regola, &mdash; ad esempio, viene visualizzato un avviso o un errore.
 
-1. In **Esplora soluzioni**selezionare e mantenere o fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
-2. Nelle pagine delle **Proprietà** passare alla scheda **analisi codice** .
+2. Nelle pagine delle **Proprietà** selezionare la scheda **analisi codice** .
 
 ::: moniker range="vs-2017"
 
@@ -57,11 +57,11 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 È possibile creare un nuovo file del set di regole dalla finestra di dialogo **nuovo file** :
 
-1. Selezionare **file**  >  **nuovo**  >  **file**oppure **premere CTRL** + **N**.
+1. Selezionare **file**  >  **nuovo**  >  **file**oppure premere **CTRL** + **N**.
 
 2. Nella finestra di dialogo **nuovo file** selezionare la categoria **generale** a sinistra e quindi selezionare **set di regole di analisi codice**.
 
-3. Scegliere **Open**(Apri).
+3. Seleziona **Apri**.
 
    Il nuovo file con *estensione ruleset* verrà aperto nell'Editor set di regole.
 
@@ -70,9 +70,9 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 > [!NOTE]
 > La seguente procedura non si applica ai progetti .NET Core, che non dispongono di una scheda delle proprietà di **analisi del codice** .
 
-1. In **Esplora soluzioni**selezionare e mantenere o fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
-2. Nelle pagine delle **Proprietà** passare alla scheda **analisi codice** .
+2. Nelle pagine delle **Proprietà** selezionare la scheda **analisi codice** .
 
 ::: moniker range="vs-2017"
 
