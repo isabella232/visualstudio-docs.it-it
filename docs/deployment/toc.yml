@@ -2,12 +2,12 @@
   href: index.yml
 - name: Panoramica
   items:
-    - name: Panoramica della distribuzione
-      href: deploying-applications-services-and-components-resources.md
-- name: Guide rapide introduttive
-  items:
     - name: Presentazione della distribuzione
       href: deploying-applications-services-and-components.md
+    - name: 'Eseguire la distribuzione in una cartella, in IIS o in Azure'
+      href: deploying-applications-services-and-components-resources.md
+- name: Avvi rapidi
+  items:
     - name: Distribuire nel Servizio app di Azure
       href: quickstart-deploy-to-azure.md
     - name: Distribuire nel Servizio App per Linux
