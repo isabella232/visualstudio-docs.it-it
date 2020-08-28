@@ -3,23 +3,23 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 40108f56ee9d64688fc665fdef0e0ab731bddfff
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
+ms.sourcegitcommit: f4d734329c82f2c8005b36af4b2b5516d90e6c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82204565"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "89042998"
 ---
 ### <a name="tooltaskextension-parameters"></a>Parametri ToolTaskExtension
 
-Questa attività eredita dalla <xref:Microsoft.Build.Tasks.ToolTaskExtension> classe, che eredita <xref:Microsoft.Build.Utilities.ToolTask> dalla classe, che a sua volta eredita dalla <xref:Microsoft.Build.Utilities.Task> classe. Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano.
+Questa attività eredita dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , che eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano.
 
 Nella tabella seguente vengono descritti i parametri delle classi di base:
 
 | Parametro | Descrizione |
 | - | - |
-| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Parametro `bool` facoltativo.<br /><br /> Quando è impostato `true`su, questa attività passa **/q** alla riga di comando *cmd. exe* in modo che la riga di comando non venga copiata in stdout. |
-| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Parametro di matrice `String` facoltativo.<br /><br /> Matrice di coppie di variabili di ambiente, separate da segni di uguale. Queste variabili vengono passate all'eseguibile generato in aggiunta a o con override selettivo del blocco di ambiente standard. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Parametro `bool` facoltativo.<br /><br /> Quando è impostato su `true` , questa attività passa **/q** alla riga di comando *cmd.exe* in modo che la riga di comando non venga copiata in stdout. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Parametro di matrice `String` facoltativo.<br /><br /> Matrice di definizioni di variabili di ambiente, separate da punti e virgola. Ogni definizione deve specificare un nome e un valore della variabile di ambiente separati da un segno di uguale. Queste variabili vengono passate all'eseguibile generato in aggiunta a o con override selettivo del blocco di ambiente standard. Ad esempio: `Variable1=Value1;Variable2=Value2`. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | Parametro di sola lettura di output `Int32` facoltativo.<br /><br /> Specifica il codice di uscita fornito dal comando eseguito. Se l'attività ha registrato errori, ma il processo ha un codice di uscita pari a 0 (esito positivo), il parametro viene impostato su -1. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, tutti i messaggi ricevuti nel flusso di errori standard vengono registrati come errori. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, tutti i messaggi ricevuti nel flusso di errori standard vengono registrati come errori. |
