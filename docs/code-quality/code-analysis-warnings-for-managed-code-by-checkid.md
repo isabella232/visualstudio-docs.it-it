@@ -1,5 +1,5 @@
 ---
-title: Cenni preliminari sulle regole di qualità del codice
+title: Panoramica delle regole di qualità del codice
 ms.date: 08/27/2020
 ms.topic: reference
 f1_keywords:
@@ -295,12 +295,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 485d3a066ec7d6044082367c36136db8bea03362
-ms.sourcegitcommit: 016bcdc7cd3e3619457beb321800e98544efb6c9
+ms.openlocfilehash: 61c15689e92132d4e3e089823bc94fc90852d4ed
+ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "89091486"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176065"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
@@ -577,6 +577,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA2245 | [CA2245: Non assegnare una proprietà a se stessa](../code-quality/ca2245.md) | Una proprietà è stata assegnata per errore a se stessa. |
 | CA2246 | [CA2246: Non assegnare un simbolo e il relativo membro nella stessa istruzione](../code-quality/ca2246.md) | Non è consigliabile assegnare un simbolo e il relativo membro, ovvero un campo o una proprietà, nella stessa istruzione. Non è chiaro se l'accesso ai membri fosse destinato a usare il valore precedente del simbolo prima dell'assegnazione o del nuovo valore dall'assegnazione in questa istruzione. |
 | CA2247 | [CA2247: l'argomento passato al Costruttore TaskCompletionSource deve essere TaskCreationOptions enum anziché TaskContinuationOptions enum.](../code-quality/ca2247.md) | TaskCompletionSource dispone di costruttori che accettano TaskCreationOptions che controllano l'attività sottostante e i costruttori che accettano lo stato dell'oggetto archiviato nell'attività.  Se si passa accidentalmente un TaskContinuationOptions anziché un TaskCreationOptions, la chiamata tratta le opzioni come stato. |
+| CA2249 | [CA2249: CA2249: provare a usare String. Contains anziché String. IndexOf](../code-quality/ca2249.md) | Le chiamate a in `string.IndexOf` cui viene usato il risultato per verificare la presenza o l'assenza di una sottostringa possono essere sostituite da `string.Contains` . |
 | CA5122 | [Le dichiarazioni P/Invoke CA5122 non devono essere critiche per la sicurezza](../code-quality/ca5122.md) | I metodi sono contrassegnati come SecuritySafeCritical quando viene eseguita un'operazione sensibile di sicurezza, ma possono anche essere usati in sicurezza dal codice trasparente. Il codice trasparente non può mai chiamare direttamente il codice nativo tramite P/Invoke. Di conseguenza, contrassegnare P/Invoke come critico per la sicurezza e richiamabile da codice trasparente non consentirà al codice trasparente di chiamarlo ed è fuorviante per l'analisi di sicurezza. |
 | CA5359 | [CA5359 non disabilitare la convalida del certificato](../code-quality/ca5359.md) | Un certificato può essere utile per autenticare l'identità del server. I client devono convalidare il certificato del server per garantire che le richieste vengano inviate al server desiderato. Se il ServerCertificateValidationCallback restituisce sempre `true` , qualsiasi certificato passerà la convalida. |
 | CA5360 | [CA5360 non chiamano metodi pericolosi nella deserializzazione](../code-quality/ca5360.md) | La deserializzazione non sicura è una vulnerabilità che si verifica quando i dati non attendibili vengono usati per abusare la logica di un'applicazione, infliggendo un attacco Denial of Service (DoS) o persino eseguendo codice arbitrario al momento della deserializzazione. Spesso gli utenti malintenzionati possono usare queste funzionalità di deserializzazione quando l'applicazione deserializza dati non attendibili sotto il proprio controllo. In particolare, richiamare metodi pericolosi nel processo di deserializzazione. Gli attacchi di deserializzazione non sicuri riusciti potrebbero consentire a un utente malintenzionato di eseguire attacchi come attacchi DoS, bypass di autenticazione ed esecuzione di codice in modalità remota. |
