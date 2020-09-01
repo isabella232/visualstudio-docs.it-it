@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b6dd5269868f02582472bee86f19d23719c9a5b
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893424"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219777"
 ---
 # <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
@@ -67,7 +67,7 @@ Nella tabella seguente vengono illustrate le diverse opzioni di gravità:
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
 | Nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
-| Impostazione predefinita | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
+| Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 La schermata seguente dell'editor del codice mostra tre violazioni diverse con livelli di gravità diversi. Si noti il colore del zigzag e il piccolo quadrato colorato nella barra di scorrimento a destra.
 
@@ -102,6 +102,9 @@ L'impostazione della gravità di una regola in un file EditorConfig ha la preced
 - Imposta gravità regola per tutte le regole dell'analizzatore:
 
 `dotnet_analyzer_diagnostic.severity = <severity>`
+
+> [!NOTE]
+> Le voci per configurare più regole dell'analizzatore in una sola volta si applicano solo alle regole *abilitate per impostazione predefinita*. Le regole dell'analizzatore contrassegnate come disabilitate per impostazione predefinita nel pacchetto dell'analizzatore devono essere abilitate tramite voci esplicite `dotnet_diagnostic.<rule ID>.severity = <severity>` .
 
 Se sono presenti più voci applicabili a un ID di regola specifico, di seguito è riportato l'ordine di precedenza per scegliere la voce applicabile:
 

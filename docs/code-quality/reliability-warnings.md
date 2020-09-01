@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 095631abc5678a27a4e79611433ff446337b956c
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85835615"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219608"
 ---
 # <a name="reliability-warnings"></a>Avvisi di affidabilità
 
 Gli avvisi di affidabilità supportano la libreria e l'affidabilità delle applicazioni, ad esempio l'utilizzo corretto della memoria e del thread. Di seguito sono riportate le regole di affidabilità:
 
-|Regola|Description|
+|Regola|Descrizione|
 |----------|-----------------|
 |[CA2000: Eliminare gli oggetti prima che siano esterni all'ambito](../code-quality/ca2000.md)|Poiché è possibile che si verifichi un evento eccezionale che impedisca l'esecuzione del finalizzatore di un oggetto, è opportuno eliminare in modo esplicito l'oggetto prima che tutti i riferimenti a tale oggetto siano esterni all'ambito.|
 |[CA2001: Evitare le chiamate a metodi problematici](../code-quality/ca2001.md)|Un membro chiama un metodo potenzialmente pericoloso o problematico.|
@@ -34,7 +34,8 @@ Gli avvisi di affidabilità supportano la libreria e l'affidabilità delle appli
 |[CA2004: Rimuovere le chiamate a GC.KeepAlive](../code-quality/ca2004.md)|Se si esegue la conversione in utilizzo di SafeHandle, rimuovere tutte le chiamate a GC. KeepAlive (oggetto). In questo caso, le classi non devono chiamare GC. KeepAlive, presumendo che non dispongano di un finalizzatore, ma si affidino a SafeHandle per finalizzare l'handle del sistema operativo.|
 |[CA2006: Usare SafeHandle per incapsulare le risorse native](../code-quality/ca2006.md)|L'utilizzo di IntPtr nel codice gestito potrebbe indicare un potenziale problema di sicurezza e affidabilità. Tutte le occorrenze di IntPtr devono essere esaminate per stabilire se al loro posto è necessario utilizzare SafeHandle o una tecnologia simile.|
 |[CA2007: Non attendere direttamente un'attività](../code-quality/ca2007.md)|Un metodo asincrono [attende](/dotnet/csharp/language-reference/keywords/await) direttamente un oggetto <xref:System.Threading.Tasks.Task> .|
-|[CA2009: Non chiamare ToImmutableCollection su un valore ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable`il metodo è stato chiamato inutilmente su una raccolta non modificabile dallo <xref:System.Collections.Immutable> spazio dei nomi.|
+|[Ca2008: non creare attività senza passare un oggetto TaskScheduler](../code-quality/ca2008.md)|Un'operazione di creazione o di continuazione di un'attività utilizza un overload del metodo che non specifica un <xref:System.Threading.Tasks.TaskScheduler> parametro.|
+|[CA2009: Non chiamare ToImmutableCollection su un valore ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable` il metodo è stato chiamato inutilmente su una raccolta non modificabile dallo <xref:System.Collections.Immutable> spazio dei nomi.|
 |[CA2011: Non assegnare la proprietà all'interno del relativo setter](../code-quality/ca2011.md) | Una proprietà è stata assegnata per errore a un valore all'interno della relativa [funzione di accesso set](/dotnet/csharp/programming-guide/classes-and-structs/using-properties#the-set-accessor). |
 |[CA2012: Usare correttamente gli elementi ValueTask](../code-quality/ca2012.md) | ValueTasks restituiti dalle chiamate ai membri devono essere direttamente in attesa.  Il tentativo di utilizzare un ValueTask più volte o di accedere direttamente a un risultato prima che sia noto come completato può causare un'eccezione o un danneggiamento.  Ignorare un ValueTask di questo tipo è probabilmente un'indicazione di un bug funzionale e potrebbe influire negativamente sulle prestazioni. |
 |[CA2013: Non usare ReferenceEquals con tipi valore](../code-quality/ca2013.md) | Quando si confrontano i valori usando <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> , se objA e objB sono tipi di valore, vengono sottoposte a Boxing prima di essere passati al <xref:System.Object.ReferenceEquals%2A> metodo. Ciò significa che, anche se objA e objB rappresentano la stessa istanza di un tipo di valore, il <xref:System.Object.ReferenceEquals%2A> metodo restituisce comunque false. |

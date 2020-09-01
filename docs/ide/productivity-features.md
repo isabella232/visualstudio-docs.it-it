@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33eb146ce36bfa36dbe28fdcec0f7dfb85daa59b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184081"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219764"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guida alla produttività per Visual Studio
 
@@ -24,7 +24,7 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 Risparmia tempo attraverso i menu per cercare rapidamente tutto ciò che ti serve, inclusi comandi, impostazioni, documentazione e opzioni di installazione. Vedere Tasti di scelta rapida per i comandi nei risultati della ricerca in Visual Studio in modo da poterli memorizzare più facilmente. 
 
-- **Codice simulato utilizzando l'elenco attività**. Se non si dispone di requisiti sufficienti per completare una porzione di codice, usare Elenco attività per tenere traccia dei commenti del codice che usano token quali `TODO` e `HACK` , o token personalizzati, e per gestire i collegamenti che consentono di passare direttamente a una posizione predefinita nel codice. Per ulteriori informazioni, vedere [utilizzare il elenco attività](../ide/using-the-task-list.md.).
+- **Codice simulato utilizzando l'elenco attività**. Se non si dispone di requisiti sufficienti per completare una porzione di codice, usare Elenco attività per tenere traccia dei commenti del codice che usano token quali `TODO` e `HACK` , o token personalizzati, e per gestire i collegamenti che consentono di passare direttamente a una posizione predefinita nel codice. Per ulteriori informazioni, vedere [utilizzare il elenco attività](../ide/using-the-task-list.md).
 
 - **Usare i tasti di scelta rapida Esplora soluzioni**. Se non si ha familiarità con Visual Studio, questi tasti di scelta rapida saranno utili e si risparmia tempo fino a quando si arriva alla velocità di una nuova codebase. Per l'elenco completo dei tasti di scelta rapida, vedere [tasti di scelta rapida predefiniti in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL).
 
@@ -60,7 +60,7 @@ Risparmia tempo attraverso i menu per cercare rapidamente tutto ciò che ti serv
 
 - **Uso di applicazioni di esempio**. È possibile velocizzare lo sviluppo di applicazioni scaricando e installando applicazioni di esempio da [Microsoft Developer Network](https://code.msdn.microsoft.com/). È inoltre possibile capire un particolare concetto di programmazione o tecnologico, scaricando e esplorando un Pacchetto di esempi di un'area.
 
-- **Modificare la formattazione delle parentesi graffe con formattazione/nuove righe**. Utilizzare la pagina Opzioni di **formattazione** per impostare le opzioni per la formattazione del codice nell'editor del codice, incluse le nuove righe. Per altre informazioni su come usare questa impostazione in C#, vedere [finestra di dialogo Opzioni: editor di testo > c# > stile di codice > formattazione](../ide/reference/options-text-editor-csharp-formatting.md). Per C++, vedere [impostare le preferenze di codifica c++ in Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Per Python, vedere [formattare il codice Python](../python/formatting-python-code.md).
+- **Modificare la formattazione delle parentesi graffe con formattazione/nuove righe**. Utilizzare la pagina Opzioni di **formattazione**  per impostare le opzioni per la formattazione del codice nell'editor del codice, incluse le nuove righe. Per altre informazioni su come usare questa impostazione in C#, vedere [finestra di dialogo Opzioni: editor di testo > c# > stile di codice > formattazione](../ide/reference/options-text-editor-csharp-formatting.md). Per C++, vedere [impostare le preferenze di codifica c++ in Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Per Python, vedere [formattare il codice Python](../python/formatting-python-code.md).
 
 - **Modificare il rientro con le schede**. Usare le impostazioni dell'editor personalizzate, adattate a ogni codebase, per applicare stili di codifica coerenti per più sviluppatori che lavorano sullo stesso progetto in diversi editor e IDE. Assicurarsi che l'intero team segua le stesse convenzioni di lingua, le convenzioni di denominazione e le regole di formattazione. Poiché queste impostazioni personalizzate sono portabili e si spostano con il codice, è possibile applicare stili di codifica anche all'esterno di Visual Studio. Per ulteriori informazioni, vedere [Opzioni, editor di testo, tutti i linguaggi, tabulazioni](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
 
@@ -134,7 +134,7 @@ Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di v
 
      Per aggiungere un suggerimento dati, il debugger deve essere in modalità di interruzione. Posizionare il cursore sulla variabile e quindi scegliere il pulsante del blocco sul suggerimento dati visualizzato. Quando il debug viene arrestato, viene visualizzata un'icona a forma di puntina da disegno blu nel file di origine accanto alla riga di codice che contiene la variabile. Se si posiziona il puntatore del mouse su tale icona, viene visualizzato il valore della variabile della sessione di debug più recente.
 
-- **Cancellazione della finestra di controllo immediato**. È possibile cancellare il contenuto della [finestra di controllo immediato](../ide/reference/immediate-window.md) in fase di progettazione immettendo `>cls` o`>Edit.ClearAll`
+- **Cancellazione della finestra di controllo immediato**. È possibile cancellare il contenuto della [finestra di controllo immediato](../ide/reference/immediate-window.md) in fase di progettazione immettendo `>cls` o `>Edit.ClearAll`
 
      Per altre informazioni sui comandi aggiuntivi, vedere alias dei comandi di [Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 

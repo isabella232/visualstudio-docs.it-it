@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84b37bce062ec5f1f406bc6ef9f6507399820af9
-ms.sourcegitcommit: 596f92fcc84e6f4494178863a66aed85afe0bb08
+ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82189476"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219725"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola FxCop
 
@@ -68,14 +68,14 @@ ID regola | Titolo
 [CA1063](ca1063.md) | Implementare IDisposable correttamente
 [CA1064](ca1064.md) | Le eccezioni devono essere pubbliche
 [CA1065](ca1065.md) | Non generare eccezioni in posizioni non previste
-[Ca1066](ca1066.md) | Il {0} tipo deve implementare\<IEquatable T> perché esegue l'override di Equals
-[CA1067](ca1067.md) | Eseguire l'override di Object. Equals (Object)\<quando si implementa IEquatable T>
+[Ca1066](ca1066.md) | Il tipo {0} deve implementare IEquatable \<T> perché esegue l'override di Equals
+[CA1067](ca1067.md) | Eseguire l'override di Object. Equals (Object) quando si implementa IEquatable\<T>
 [CA1068](ca1068.md) | I parametri CancellationToken devono essere indicati per ultimi
 Ca1200 | Evitare l'uso di tag cref con un prefisso
 [CA1303](ca1303.md) | Non passare valori letterali come parametri localizzati
 [CA1304](ca1304.md) | Specificare CultureInfo
 [CA1305](ca1305.md) | Specificare IFormatProvider
-[CA1307](ca1307.md) | Specificare StringComparison
+[CA1307](ca1307.md) | Specificare StringComparison per maggiore chiarezza
 [CA1308](ca1308.md) | Normalizzare le stringhe in lettere maiuscole
 [CA1309](ca1309.md) | USA confronto di stringhe ordinali
 [CA1401](ca1401.md) | I P/Invoke non devono essere visibili
@@ -119,7 +119,7 @@ Ca1826 | Non usare metodi enumerabili sulle raccolte indicizzabili. Usare invece
 [CA2000](ca2000.md) | Eliminare gli oggetti prima che siano esterni all'ambito
 [CA2002](ca2002.md) | Non bloccare oggetti con identità debole
 [Ca2007](ca2007.md) | Prendere in considerazione la chiamata a ConfigureAwait sull'attività attesa
-Ca2008 | Non creare attività senza passare un oggetto TaskScheduler
+[Ca2008](ca2008.md) | Non creare attività senza passare un oggetto TaskScheduler
 Ca2009 | Non chiamare ToImmutableCollection su un valore non modificabile
 CA2010 | Utilizzare sempre il valore restituito dai metodi contrassegnati con PreserveSigAttribute
 [CA2100](ca2100.md) | Controllare la vulnerabilità della sicurezza nelle query SQL
