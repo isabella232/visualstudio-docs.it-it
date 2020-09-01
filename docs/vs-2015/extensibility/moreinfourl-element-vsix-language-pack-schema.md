@@ -8,12 +8,12 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8012eb02d143a741cb7eea70c45cabc4ee92002
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: c583d67e1920080f11158a4001e191e93e234006
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114297"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284398"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>Elemento MoreInfoURL (schema del Language Pack VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,40 +51,14 @@ facoltativo. Collegamento alle informazioni localizzate sull'estensione.
  facoltativo. Un collegamento a un sito Web. Il collegamento è una stringa di testo.  
   
 ## <a name="element-information"></a>Informazioni sull'elemento  
-
-:::row:::
-    :::column:::
-        Spazio dei nomi
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Schema Name
-    :::column-end:::
-    :::column:::
-        Schema del Language Pack VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        File di convalida
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Può essere vuoto
-    :::column-end:::
-    :::column:::
-        Non applicabile
-    :::column-end:::
-:::row-end:::
-
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Spazio dei nomi    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Schema Name   |                 Schema del Language Pack VSIX                 |
+| File di convalida |                VSIXLanguagePackSchema. xsd                 |
+|  Può essere vuoto   |                      Non applicabile                       |
+  
 ## <a name="see-also"></a>Vedere anche  
  [Informazioni di riferimento sullo schema del Language Pack VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)   

@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af70b191e4b9061d08acdc7f76ade843dee41709
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114122"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284411"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli delle applicazioni per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a>Interazioni finestra
+## <a name="window-interactions"></a><a name="BKMK_WindowInteractions"></a> Interazioni finestra
 
 ### <a name="overview"></a>Panoramica
  I due tipi di finestra principali utilizzati in Visual Studio sono gli editor di documenti e le finestre degli strumenti. Rare, ma possibili, sono finestre di dialogo non modali di grandi dimensioni. Sebbene siano tutti non modali nella shell, i modelli sono fondamentalmente diversi. In questo argomento viene illustrata la differenza tra le finestre di documento, le finestre degli strumenti e le finestre di dialogo non modali. I modelli di finestre di dialogo modali sono analizzati nelle [finestre di dialogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -34,13 +34,13 @@ ms.locfileid: "88114122"
 
 ||Finestra del documento|Finestra degli strumenti|Finestra di dialogo non modale|
 |-|---------------------|-----------------|---------------------|
-|**Position**|Sempre posizionato all'interno dell'area dei documenti e non è ancorato attorno ai bordi dell'IDE. Il valore può essere "Estratto", in modo che venga eseguito il float separatamente dalla shell principale.|In genere, la scheda è ancorata attorno ai bordi dell'IDE, ma può essere personalizzata in modo da essere mobile, nascosta automaticamente (sbloccata) o ancorata all'interno dell'area dei documenti.|Grande finestra mobile separata dall'IDE.|
+|**Posizione**|Sempre posizionato all'interno dell'area dei documenti e non è ancorato attorno ai bordi dell'IDE. Il valore può essere "Estratto", in modo che venga eseguito il float separatamente dalla shell principale.|In genere, la scheda è ancorata attorno ai bordi dell'IDE, ma può essere personalizzata in modo da essere mobile, nascosta automaticamente (sbloccata) o ancorata all'interno dell'area dei documenti.|Grande finestra mobile separata dall'IDE.|
 |**Modello di commit**|*Commit ritardato*<br /><br /> Per salvare i dati in un documento, l'utente deve eseguire il comando file/Salva, Salva con nome o Salva tutto. Una finestra del documento ha il concetto di dati all'interno del quale è stata "sporcata", quindi è stato eseguito il commit in uno dei comandi Save. Quando si chiude una finestra del documento, tutti i contenuti vengono salvati su disco o persi.|*Commit immediato*<br /><br /> Nessun modello di salvataggio. Per le finestre degli strumenti di controllo che facilitano la modifica di un file, il file deve essere aperto nell'editor o nella finestra di progettazione attiva e l'editor o la finestra di progettazione è proprietario del salvataggio.|*Commit posticipato o immediato*<br /><br /> In genere, una finestra di dialogo non modale di grandi dimensioni richiede un'azione per eseguire il commit delle modifiche e consente un'operazione di annullamento, che esegue il rollback delle modifiche apportate all'interno della sessione di dialogo.  In questo modo si distingue una finestra di dialogo non modale da una finestra degli strumenti in cui le finestre degli strumenti hanno sempre un modello di commit immediato.|
 |**Visibilità**|*Apri/crea (file) e Chiudi*<br /><br /> L'apertura di una finestra di documento viene eseguita tramite l'apertura di un documento esistente o l'utilizzo di un modello per creare un nuovo documento. Non è presente alcun comando "Apri \<specific editor> ".|*Nascondi e Mostra*<br /><br /> Le finestre degli strumenti a istanza singola possono essere nascoste o visualizzate. Il contenuto e gli Stati nella finestra degli strumenti vengono mantenuti in visualizzazione o nascosti. Le finestre degli strumenti a più istanze possono essere chiuse e nascoste. Quando viene chiusa una finestra degli strumenti a più istanze, il contenuto e lo stato all'interno della finestra degli strumenti vengono eliminati.|*Avviato da un comando*<br /><br /> Le finestre di dialogo vengono avviate da un comando basato su attività.|
 |**Istanze**|*Istanze a istanze diverse*<br /><br /> Molti editor possono essere aperti contemporaneamente e modificare file diversi, mentre alcuni editor consentono anche di aprire lo stesso file in più di un editor (usando la **finestra > comando nuova finestra** ).<br /><br /> Un singolo editor può modificare uno o più file allo stesso tempo (Progettazione progetti).|*A istanza singola o a istanze diverse*<br /><br /> I contenuti cambiano per riflettere il contesto (come nel Visualizzatore proprietà) o lo stato attivo/contesto push ad altre finestre (Elenco attività, Esplora soluzioni).<br /><br /> Le finestre degli strumenti a istanza singola e a istanza singola devono essere associate alla finestra del documento attivo, a meno che non esista un motivo valido per non farlo.|*Istanza singola*|
 |**esempi**|Editor di **testo**, ad esempio l'editor di codice<br /><br /> **Aree di progettazione**, ad esempio una finestra di progettazione di form o una superficie di modellazione<br /><br /> **Layout di controllo simili alle finestre di dialogo**, ad esempio la finestra di progettazione del manifesto|Il **Esplora soluzioni** fornisce una soluzione e i progetti contenuti nella soluzione<br /><br /> Il **Esplora server** fornisce una visualizzazione gerarchica dei server e delle connessioni dati che l'utente sceglie di aprire nella finestra di. Aprendo un oggetto dalla gerarchia del database, ad esempio una query, viene aperta una finestra del documento che consente all'utente di modificare la query.<br /><br /> Il **Visualizzatore proprietà** Visualizza le proprietà dell'oggetto selezionato in una finestra del documento o in un'altra finestra degli strumenti. Le proprietà vengono presentate in una visualizzazione griglia gerarchica o in controlli di tipo finestra di dialogo complessi e consentono all'utente di impostare i valori per tali proprietà.||
 
-## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a>Finestre degli strumenti
+## <a name="tool-windows"></a><a name="BKMK_ToolWindows"></a> Finestre degli strumenti
 
 ### <a name="overview"></a>Panoramica
  Le finestre degli strumenti supportano le operazioni dell'utente che si verificano nelle finestre dei documenti. Possono essere usati per visualizzare una gerarchia che rappresenta un oggetto radice fondamentale fornito da Visual Studio e che può essere modificato.
@@ -103,7 +103,7 @@ ms.locfileid: "88114122"
 
 #### <a name="common-tool-windows-and-their-functions"></a>Finestre degli strumenti comuni e relative funzioni
 
-|Type|Finestra degli strumenti|Funzione|
+|Tipo|Finestra degli strumenti|Funzione|
 |----------|-----------------|--------------|
 |**Gerarchia**|Esplora soluzioni|Struttura ad albero gerarchica che visualizza un elenco di documenti contenuti in progetti, file esterni ed elementi della soluzione. La visualizzazione degli elementi all'interno dei progetti è definita dal pacchetto proprietario del tipo di progetto (ad esempio, i tipi basati su riferimenti, basati su directory o in modalità mista).|
 |**Gerarchia**|Visualizzazione classi|Struttura ad albero gerarchica delle classi e dei vari elementi nel working set di documenti, indipendentemente dai file stessi.|
@@ -131,7 +131,7 @@ ms.locfileid: "88114122"
 |**Debugger:** un gruppo di finestre specifiche per il debug di attività e attività di monitoraggio|Registri||
 |**Debugger:** un gruppo di finestre specifiche per il debug di attività e attività di monitoraggio|Threads||
 
-## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a>Convenzioni dell'editor di documenti
+## <a name="document-editor-conventions"></a><a name="BKMK_DocumentEditorConventions"></a> Convenzioni dell'editor di documenti
 
 ### <a name="document-interactions"></a>Interazioni tra documenti
  Il "documento" è lo spazio più grande all'interno dell'IDE ed è il punto in cui l'utente ha in genere focalizzato l'attenzione per completare le attività, assistito da finestre degli strumenti supplementari. Gli editor di documenti rappresentano le unità di lavoro fondamentali che l'utente apre e Salva in Visual Studio. Mantengono un forte senso di selezione associato a Esplora soluzioni o ad altre finestre di gerarchia attive. L'utente deve essere in grado di puntare a una di queste finestre della gerarchia e di individuare la posizione in cui è contenuto il documento e la relativa relazione con la soluzione, il progetto o un altro oggetto radice fornito da un pacchetto di Visual Studio.
@@ -239,7 +239,7 @@ ms.locfileid: "88114122"
 
 - Gli utenti devono essere in grado di interagire con i controlli usando solo la tastiera, attivando l'editor e la tabulazione tramite i controlli o usando i tasti di scelta standard.
 
-## <a name="dialogs"></a><a name="BKMK_Dialogs"></a>Finestre
+## <a name="dialogs"></a><a name="BKMK_Dialogs"></a> Finestre
 
 ### <a name="introduction"></a>Introduzione
  Le finestre di dialogo in Visual Studio in genere supportano un'unità discreta del lavoro dell'utente e quindi vengono rilasciate.
@@ -295,14 +295,14 @@ ms.locfileid: "88114122"
 
 - Le [procedure guidate](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) sono utili per indirizzare l'utente tramite una sequenza logica di passaggi verso il completamento di un'attività. Nei pannelli sequenziali viene offerta una serie di opzioni, a volte introducendo flussi di lavoro diversi ("Branch") dipendenti da una scelta effettuata nel pannello precedente.
 
-#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a>Finestre di dialogo semplici
+#### <a name="simple-dialogs"></a><a name="BKMK_SimpleDialogs"></a> Finestre di dialogo semplici
  Una semplice finestra di dialogo è una presentazione di controlli in un'unica finestra modale. Questa presentazione potrebbe includere varianti di pattern di controllo complessi, ad esempio un selettore di campo. Per le finestre di dialogo semplici, seguire il layout generale standard e qualsiasi layout specifico necessario per raggruppamenti di controlli complessi.
 
  ![Finestra di dialogo semplice in Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704-01_CreateStrongNameKey")
 
  **Crea chiave con nome sicuro è un esempio di una semplice finestra di dialogo in Visual Studio.**
 
-#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a>Finestre di dialogo sovrapposte
+#### <a name="layered-dialogs"></a><a name="BKMK_LayeredDialogs"></a> Finestre di dialogo sovrapposte
  Le finestre di dialogo sovrapposte includono schede, dashboard e alberi incorporati. Vengono usati per ottimizzare le proprietà quando sono disponibili più gruppi di controlli in un'unica parte dell'interfaccia utente. I raggruppamenti sono sovrapposti in modo che l'utente possa scegliere il raggruppamento da visualizzare in qualsiasi momento.
 
  Nel caso più semplice, il meccanismo di cambio tra i raggruppamenti è un controllo struttura a schede. Sono disponibili diverse alternative. Per informazioni su come scegliere lo stile più appropriato, vedere priorità e livelli.
@@ -313,7 +313,7 @@ ms.locfileid: "88114122"
 
  **Strumenti > opzioni è un esempio di finestra di dialogo sovrapposta in Visual Studio.**
 
-#### <a name="wizards"></a><a name="BKMK_Wizards"></a>Procedure guidate
+#### <a name="wizards"></a><a name="BKMK_Wizards"></a> Procedure guidate
  Le procedure guidate sono utili per indirizzare l'utente tramite una sequenza logica di passaggi nel completamento di un'attività. Nei pannelli sequenziali viene offerta una serie di opzioni e l'utente deve continuare a eseguire ogni passaggio prima di procedere al successivo. Quando sono disponibili impostazioni predefinite sufficienti, il pulsante **fine** è abilitato.
 
  Le procedure guidate modali vengono utilizzate per le attività che:
@@ -331,7 +331,7 @@ ms.locfileid: "88114122"
 
  Per le linee guida specifiche del layout, vedere [layout per Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
-#### <a name="size"></a>Dimensione
+#### <a name="size"></a>Dimensioni
  Le finestre di dialogo devono rientrare in una risoluzione dello schermo di almeno 1024x768 e le dimensioni iniziali della finestra di dialogo non devono superare 900x700 pixel. Le finestre di dialogo possono essere ridimensionabili, ma non è un requisito.
 
  Sono disponibili due consigli per le finestre di dialogo ridimensionabili:
@@ -394,7 +394,7 @@ ms.locfileid: "88114122"
 #### <a name="imagery"></a>Immagini
  Utilizzare le immagini sporadicamente nelle finestre di dialogo. Non usare icone grandi nelle finestre di dialogo semplicemente per usare spazio. Usare le immagini solo se rappresentano una parte importante della trasmissione del messaggio all'utente, ad esempio le icone di avviso o le animazioni di stato.
 
-### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a>Assegnazione di priorità e livelli
+### <a name="prioritizing-and-layering"></a><a name="BKMK_PrioritizingAndLayering"></a> Assegnazione di priorità e livelli
 
 #### <a name="prioritizing-your-ui"></a>Assegnazione delle priorità all'interfaccia utente
  Potrebbe essere necessario portare determinati elementi dell'interfaccia utente in Forefront e inserire opzioni e comportamenti più avanzati, inclusi i comandi nascosti, nelle finestre di dialogo. È possibile usare le funzionalità di uso comune in Forefront facendo spazio al suo interno e rendendola visibile per impostazione predefinita nell'interfaccia utente con un'etichetta di testo quando viene visualizzata la finestra di dialogo.
@@ -425,7 +425,7 @@ ms.locfileid: "88114122"
 ##### <a name="adaptive-ui"></a>Interfaccia utente adattiva
  Mostrare o nascondere l'interfaccia utente in base all'utilizzo o all'esperienza autosegnalata di un utente è un altro modo per presentare l'interfaccia utente necessaria per nascondere altre parti. Questa operazione non è consigliata in Visual Studio perché gli algoritmi per decidere quando visualizzare o nascondere l'interfaccia utente possono essere complessi e le regole sono sempre errate per alcuni set di case.
 
-## <a name="projects"></a><a name="BKMK_Projects"></a>Progetti
+## <a name="projects"></a><a name="BKMK_Projects"></a> Progetti
 
 ### <a name="projects-in-the-solution-explorer"></a>Progetti nel Esplora soluzioni
  La maggior parte dei progetti è classificata come basata su riferimento, basata su directory o mista. Tutti e tre i tipi di progetto sono supportati simultaneamente nel Esplora soluzioni. La radice dell'esperienza utente nell'utilizzo dei progetti si verifica all'interno di questa finestra. Sebbene i diversi nodi di progetto siano progetti di tipo riferimento, directory o in modalità mista, è necessario applicare un modello di interazione comune come punto di partenza prima di divergere in modelli utente specifici del progetto.
@@ -485,19 +485,19 @@ ms.locfileid: "88114122"
 |-------------------|-------------|-----------------|
 |![Icona di "nessun rilascio" del mouse](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706-01_MouseNoDrop")|Nessuna eliminazione|Non è possibile eliminare l'elemento nella posizione specificata.|
 |![Icona "copia" del mouse](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706-02_MouseCopy")|Copia|L'elemento verrà copiato nel percorso di destinazione.|
-|![Icona "spostamento" del mouse](../../extensibility/ux-guidelines/media/0706-03-mousemove.png "0706-03_MouseMove")|Spostamento|L'elemento verrà spostato nel percorso di destinazione.|
+|![Icona "spostamento" del mouse](../../extensibility/ux-guidelines/media/0706-03-mousemove.png "0706-03_MouseMove")|Sposta|L'elemento verrà spostato nel percorso di destinazione.|
 |![Icona "aggiungi riferimento" del mouse](../../extensibility/ux-guidelines/media/0706-04-mouseaddref.png "0706-04_MouseAddRef")|Aggiungi riferimento|Un riferimento all'elemento selezionato verrà aggiunto al percorso di destinazione.|
 
 #### <a name="reference-based-projects"></a>Progetti basati su riferimento
  Nella tabella seguente sono riepilogate le operazioni di trascinamento della selezione, nonché le operazioni Taglia/copia/incolla, che devono essere eseguite in base alla natura dell'elemento di origine e dei tasti di modifica premuti per i progetti di destinazione basati su riferimento:
 
-|Modificatore|Operazione|Elemento di origine: riferimento/collegamento|Elemento di origine: elemento fisico o file system (CF_HDROP)|
+|||Elemento di origine: riferimento/collegamento|Elemento di origine: elemento fisico o file system (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Nessun modificatore|Action|Spostamento|Collegamento|
+|Nessun modificatore|Action|Sposta|Collegamento|
 |Nessun modificatore|Destinazione|Aggiunge un riferimento all'elemento originale|Aggiunge un riferimento all'elemento originale|
 |Nessun modificatore|Source (Sorgente)|Elimina il riferimento all'elemento originale|Mantiene l'elemento originale|
 |Nessun modificatore|Risultato|**DROPEFFECT_MOVE** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|**DROPEFFECT_LINK** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|
-|Maiusc + trascina|Action|Spostamento|Nessuna eliminazione|
+|Maiusc + trascina|Action|Sposta|Nessuna eliminazione|
 |Maiusc + trascina|Destinazione|Aggiunge un riferimento all'elemento originale|Nessuna eliminazione|
 |Maiusc + trascina|Source (Sorgente)|Elimina il riferimento all'elemento originale|Nessuna eliminazione|
 |Maiusc + trascina|Risultato|**DROPEFFECT_MOVE** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|Nessuna eliminazione|
@@ -510,7 +510,7 @@ ms.locfileid: "88114122"
 |Ctrl + Maiusc + trascina|Source (Sorgente)|Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale|
 |Ctrl + Maiusc + trascina|Risultato|**DROPEFFECT_LINK** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|**DROPEFFECT_LINK** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|
 |Ctrl + Maiusc + trascina|Nota|Come il comportamento di trascinamento della selezione per i collegamenti in Esplora risorse.||
-|Taglia/incolla|Action|Spostamento|Collegamento|
+|Taglia/incolla|Action|Sposta|Collegamento|
 |Taglia/incolla|Destinazione|Aggiunge un riferimento all'elemento originale|Aggiunge un riferimento all'elemento originale|
 |Taglia/incolla|Source (Sorgente)|Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale|
 |Taglia/incolla|Risultato|L'elemento rimane nella posizione originale nella risorsa di archiviazione|L'elemento rimane nella posizione originale nella risorsa di archiviazione|
@@ -522,13 +522,13 @@ ms.locfileid: "88114122"
 #### <a name="directory-based-projects"></a>Progetti basati su directory
  Nella tabella seguente sono riepilogate le operazioni di trascinamento della selezione, nonché le operazioni Taglia/copia/incolla, che devono essere eseguite in base alla natura dell'elemento di origine e dei tasti di modifica premuti per i progetti di destinazione basati su directory:
 
-|Modificatore|Operazione|Elemento di origine: riferimento/collegamento|Elemento di origine: elemento fisico o file system (CF_HDROP)|
+|||Elemento di origine: riferimento/collegamento|Elemento di origine: elemento fisico o file system (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Nessun modificatore|Action|Spostamento|Spostamento|
+|Nessun modificatore|Action|Sposta|Sposta|
 |Nessun modificatore|Destinazione|Copia l'elemento nella posizione di destinazione|Copia l'elemento nella posizione di destinazione|
 |Nessun modificatore|Source (Sorgente)|Elimina il riferimento all'elemento originale|Elimina il riferimento all'elemento originale|
 |Nessun modificatore|Risultato|**DROPEFFECT_ spostamento** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|**DROPEFFECT_ spostamento** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|
-|Maiusc + trascina|Action|Spostamento|Spostamento|
+|Maiusc + trascina|Action|Sposta|Sposta|
 |Maiusc + trascina|Destinazione|Copia l'elemento nella posizione di destinazione|Copia l'elemento nella posizione di destinazione|
 |Maiusc + trascina|Source (Sorgente)|Elimina il riferimento all'elemento originale|Elimina l'elemento dal percorso originale|
 |Maiusc + trascina|Risultato|**DROPEFFECT_ spostamento** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|**DROPEFFECT_ spostamento** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|
@@ -537,7 +537,7 @@ ms.locfileid: "88114122"
 |Ctrl + trascina|Source (Sorgente)|Mantiene il riferimento all'elemento originale|Mantiene il riferimento all'elemento originale|
 |Ctrl + trascina|Risultato|**DROPEFFECT_ copia** viene restituita come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|**DROPEFFECT_ copia** viene restituita come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|
 |Ctrl + Maiusc + trascina||Nessuna eliminazione|Nessuna eliminazione|
-|Taglia/incolla|Action|Spostamento|Spostamento|
+|Taglia/incolla|Action|Sposta|Sposta|
 |Taglia/incolla|Destinazione|Copia l'elemento nella posizione di destinazione|Copia l'elemento nella posizione di destinazione|
 |Taglia/incolla|Source (Sorgente)|Elimina il riferimento all'elemento originale|Elimina l'elemento dal percorso originale|
 |Taglia/incolla|Risultato|L'elemento rimane nella posizione originale nella risorsa di archiviazione|L'elemento è stato eliminato dal percorso originale nella risorsa di archiviazione|
@@ -549,13 +549,13 @@ ms.locfileid: "88114122"
 #### <a name="mixed-target-projects"></a>Progetti di destinazione mista
  Nella tabella seguente sono riepilogate le operazioni di trascinamento della selezione, nonché le operazioni Taglia/copia/incolla, che devono essere eseguite in base alla natura dell'elemento di origine e dei tasti di modifica premuti per i progetti di destinazione mista:
 
-|Modificatore|Operazione|Elemento di origine: riferimento/collegamento|Elemento di origine: elemento fisico o file system (CF_HDROP)|
+|||Elemento di origine: riferimento/collegamento|Elemento di origine: elemento fisico o file system (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Nessun modificatore|Action|Spostamento|Spostamento|
+|Nessun modificatore|Action|Sposta|Sposta|
 |Nessun modificatore|Destinazione|Aggiunge un riferimento all'elemento originale|Copia l'elemento nella posizione di destinazione|
 |Nessun modificatore|Source (Sorgente)|Elimina il riferimento all'elemento originale|Elimina il riferimento all'elemento originale|
 |Nessun modificatore|Risultato|**DROPEFFECT_ spostamento** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|**DROPEFFECT_ spostamento** viene restituito come azione da **::D por** e l'elemento viene eliminato dal percorso originale nella risorsa di archiviazione|
-|Maiusc + trascina|Action|Spostamento|Spostamento|
+|Maiusc + trascina|Action|Sposta|Sposta|
 |Maiusc + trascina|Destinazione|Aggiunge un riferimento all'elemento originale|Copia l'elemento nella posizione di destinazione|
 |Maiusc + trascina|Source (Sorgente)|Elimina il riferimento all'elemento originale|Elimina l'elemento dal percorso originale|
 |Maiusc + trascina|Risultato|**DROPEFFECT_ spostamento** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|**DROPEFFECT_ spostamento** viene restituito come azione da **::D por** e l'elemento viene eliminato dal percorso originale nella risorsa di archiviazione|
@@ -567,7 +567,7 @@ ms.locfileid: "88114122"
 |Ctrl + Maiusc + trascina|Destinazione|Aggiunge un riferimento all'elemento originale|Aggiunge un riferimento all'elemento di origine originale|
 |Ctrl + Maiusc + trascina|Source (Sorgente)|Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale|
 |Ctrl + Maiusc + trascina|Risultato|**DROPEFFECT_ collegamento** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|**DROPEFFECT_ collegamento** viene restituito come azione da **::D por** e l'elemento rimane nella posizione originale nella risorsa di archiviazione|
-|Taglia/incolla|Action|Spostamento|Spostamento|
+|Taglia/incolla|Action|Sposta|Sposta|
 |Taglia/incolla|Destinazione|Copia l'elemento nella posizione di destinazione|Copia l'elemento nella posizione di destinazione|
 |Taglia/incolla|Source (Sorgente)|Elimina il riferimento all'elemento originale|Elimina l'elemento dal percorso originale|
 |Taglia/incolla|Risultato|L'elemento rimane nella posizione originale nella risorsa di archiviazione|L'elemento è stato eliminato dal percorso originale nella risorsa di archiviazione|

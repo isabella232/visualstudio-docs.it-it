@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7a97068b70a76dfe343de5fa68db77d2ce9781
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76111313"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284317"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
 
@@ -45,7 +45,7 @@ Le impostazioni seguenti consentono di selezionare la configurazione e la piatta
 
 Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**. Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../../ide/understanding-build-configurations.md) e [Procedura: creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md).
 
-**Piattaforma**
+**Platform**
 
 Specifica le impostazioni della piattaforma da visualizzare o modificare. È possibile specificare **Qualsiasi CPU** (impostazione predefinita), **x64** o **x86**.
 
@@ -71,7 +71,7 @@ Quando si crea un progetto, l'impostazione **Option Explicit** nella **pagina Co
 
 L'impostazione di **Option Explicit** su `Off` non è in genere consigliabile. È possibile digitare un nome di variabile in modo errato in una o più posizioni e ciò può causare risultati imprevisti quando viene eseguito il programma.
 
-**Opzione rigorosa**
+**Option Strict**
 
 Specifica se applicare la semantica rigorosa per i tipi. Quando **Option Strict** è **On**, le condizioni seguenti causano un errore in fase di compilazione:
 
@@ -105,9 +105,9 @@ La sezione **Configurazioni avvisi** della **pagina Compilazione** include impos
 
 Quando si imposta **Option Strict** su **On**, tutte e tre queste impostazioni di configurazione degli avvisi vengono impostate su **Errore**. Quando si imposta **Option Strict** su **Off**, tutte e tre le impostazioni vengono impostate su **Nessuno**.
 
-È possibile modificare singolarmente ogni impostazione di configurazione degli avvisi su **Nessuno**, **Avviso** o **Errore**. Se tutte e tre le impostazioni `On` di `Option strict` configurazione degli avvisi sono impostate su **Errore**, nella casella viene visualizzato . Se tutti e tre sono `Off` **impostati**su Nessuno , in questa casella viene visualizzato . Per qualsiasi altra combinazione di queste impostazioni, viene visualizzato **(personalizzato)**.
+È possibile modificare singolarmente ogni impostazione di configurazione degli avvisi su **Nessuno**, **Avviso** o **Errore**. Se tutte e tre le impostazioni di configurazione degli avvisi sono impostate su **errore**, `On` viene visualizzato nella `Option strict` casella. Se tutti e tre sono impostati su **None**, `Off` viene visualizzato in questa casella. Per qualsiasi altra combinazione di queste impostazioni, viene visualizzato **(personalizzato)**.
 
-**Confronto opzioni**
+**Option Compare**
 
 Specifica il tipo di confronto di stringhe da usare. Selezionare **Binario** per indicare al compilatore di usare confronti di stringhe binari con distinzione tra maiuscole e minuscole. Selezionare **Testo** per usare confronti di stringhe di testo specifici delle impostazioni locali senza distinzione tra maiuscole e minuscole.
 
@@ -117,7 +117,7 @@ Se un file di codice sorgente contiene un'[istruzione Option Compare](/dotnet/vi
 
 Quando si crea un progetto, l'impostazione **Option Compare** nella **pagina Compilazione** viene impostata sul valore dell'impostazione **Option Compare** nella finestra di dialogo **Opzioni**. Per visualizzare o modificare l'impostazione in questa finestra di dialogo scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, quindi fare clic su **Impostazioni predefinite di Visual Basic**. L'impostazione predefinita iniziale di **Option Compare** in **Impostazioni predefinite di Visual Basic** è **Binario**.
 
-**Opzione infer**
+**Deduce dall'opzione**
 
 Specifica se consentire l'inferenza del tipo di variabile locale nelle dichiarazioni di variabile. Selezionare **On** per consentire l'uso dell'inferenza del tipo di variabile locale. Selezionare **Off** per impedire l'inferenza del tipo di variabile locale.
 
@@ -155,7 +155,7 @@ Per impostazione predefinita, tutti gli avvisi del compilatore vengono aggiunti 
 
 **Disabilita tutti gli avvisi**
 
-Specifica se consentire al compilatore di generare notifiche come specificato nella tabella **Condizione e notifica** descritta in precedenza in questo documento. Per impostazione predefinita, tale casella di controllo è deselezionata. Selezionare questa casella di controllo per indicare al compilatore di non generare avvisi o errori.
+Specifica se consentire al compilatore di generare notifiche come specificato nella tabella **Condizione e notifica** descritta in precedenza in questo documento. Per impostazione predefinita, questa casella di controllo è deselezionata. Selezionare questa casella di controllo per indicare al compilatore di non generare avvisi o errori.
 
 Questa impostazione corrisponde all'opzione del compilatore [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn).
 
@@ -189,6 +189,6 @@ Fare clic su questo pulsante per accedere alla finestra di dialogo **Impostazion
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: specificare eventi di compilazione (Visual Basic)How to: Specify Build Events (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilatore della riga di comando di Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)

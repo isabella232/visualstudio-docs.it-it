@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7b351e9f4983f5a2497406f7ca49503254d9fb71
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 102e41e45caac8d0567786579130e0953ec68b30
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114120"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284363"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 
   ![Servizio immagini prima e dopo](../extensibility/media/image-service-before-and-after.png "Servizio immagini prima e dopo")  
 
-## <a name="how-it-works"></a>Funzionamento  
+## <a name="how-it-works"></a>Come funziona  
  Il servizio immagini può fornire un'immagine bitmap adatta per qualsiasi framework dell'interfaccia utente supportato:  
 
 - WPF: BitmapSource  
@@ -88,7 +88,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 </ImageManifest>  
 ```  
 
- **Simboli**  
+ **Symbols**  
 
  Per facilitare la leggibilità e la manutenzione, il manifesto dell'immagine può utilizzare i simboli per i valori di attributo. I simboli sono definiti come segue:  
 
@@ -106,7 +106,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |Importa|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente|  
 |Guid|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione del GUID|  
 |ID|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|  
-|string|Il simbolo rappresenta un valore stringa arbitrario|  
+|Stringa|Il simbolo rappresenta un valore stringa arbitrario|  
 
  Per i simboli viene fatta distinzione tra maiuscole e minuscole e viene fatto riferimento tramite la sintassi $ (symbol-name):  
 
@@ -125,7 +125,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |ManifestFolder|Cartella contenente il file manifesto|  
 |MyDocuments|Percorso completo della cartella documenti dell'utente corrente|  
 |ProgramFiles|Valore della variabile di ambiente% ProgramFiles%|  
-|Sistema|Cartella Windows\System32|  
+|System|Cartella Windows\System32|  
 |WinDir|Valore della variabile di ambiente% WinDir%|  
 
  **Immagine**  
@@ -157,14 +157,16 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
  </Source>  
 ```  
 
-|**Attributo**|**Definizione**|  
-|-|-|  
-| Uri | Necessaria URI che definisce dove è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> : [URI di pacchetto](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) che usa l'autorità Application:///<br />-Riferimento a una risorsa componente assoluto<br />: Percorso di un file che contiene una risorsa nativa |
-| Background  | Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> <em>Scuro:</em> L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Attributo** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|      Uri      |                                                                                                                                                                                                                                                                                                               Necessaria URI che definisce dove è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> : [URI di pacchetto](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) che usa l'autorità Application:///<br />-Riferimento a una risorsa componente assoluto<br />: Percorso di un file che contiene una risorsa nativa                                                                                                                                                                                                                                                                                                               |
+|  Sfondo   | Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> <em>Scuro:</em> L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine. |
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi seguenti:  
 
-|**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
+|**elemento**|**Attributi (tutti necessari)**|**Definizione**|  
 |-|-|-|  
 |\<Size>|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|  
 |\<SizeRange>|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|  
@@ -179,7 +181,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 
 |**Attributo**|**Definizione**|  
 |-|-|  
-|Type|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|  
+|Tipo|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|  
 |ID|Necessaria Parte relativa all'ID integer della risorsa nativa|  
 
  **ImageList**  
@@ -569,7 +571,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Sostituire ogni GUID di **ContainedImage**con $ (ImageCatalogGuid), sostituire l'ID di ogni **ContainedImage**con $ ( \<moniker> ) e aggiungere l'attributo External = "true" a ogni **ContainedImage**  
 
-       - \<moniker>deve essere sostituito con **KnownMoniker** che corrisponde all'immagine ma con "KnownMonikers". rimosso dal nome.  
+       - \<moniker> deve essere sostituito con **KnownMoniker** che corrisponde all'immagine ma con "KnownMonikers". rimosso dal nome.  
 
    - Aggiungere <Import manifest = "$ (ManifestFolder) \\<percorso dir di installazione relativo a \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/nella \> parte superiore della \<Symbols> sezione.  
 
@@ -938,7 +940,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
     |GlyphGroupError||StatusError|  
     |GlyphBscFile||ClassFile|  
-    |GlyphAssembly||Informazioni di riferimento|  
+    |GlyphAssembly||Riferimento|  
     |GlyphLibrary||Libreria|  
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  

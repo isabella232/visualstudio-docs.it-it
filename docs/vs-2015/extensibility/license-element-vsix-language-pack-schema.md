@@ -8,12 +8,12 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91f0792f64e09292836a3b2d60f669c67903b3a7
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114174"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284382"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>Elemento License (schema del Language Pack VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,39 +54,13 @@ facoltativo. Percorso di una versione localizzata del file di licenza per l'este
  Se l' `License` elemento è definito, il testo del file di licenza designato viene visualizzato durante l'installazione e l'utente deve accettare la licenza per continuare.  
   
 ## <a name="element-information"></a>Informazioni sull'elemento  
-
-:::row:::
-    :::column:::
-        Spazio dei nomi  
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Schema Name
-    :::column-end:::
-    :::column:::
-        Schema del Language Pack VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        File di convalida
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Può essere vuoto
-    :::column-end:::
-    :::column:::
-        Non applicabile
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Spazio dei nomi    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Schema Name   |                 Schema del Language Pack VSIX                 |
+| File di convalida |                VSIXLanguagePackSchema. xsd                 |
+|  Può essere vuoto   |                      Non applicabile                       |
   
 ## <a name="see-also"></a>Vedere anche  
  [Informazioni di riferimento sullo schema del Language Pack VSX](../extensibility/vsx-language-pack-schema-reference.md)   

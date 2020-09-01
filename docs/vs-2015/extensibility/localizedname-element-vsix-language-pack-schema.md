@@ -8,12 +8,12 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 64d8430dbcf563ca232d1b8d850678925770219f
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114178"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284347"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>Elemento LocalizedName (schema del Language Pack VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,39 +51,13 @@ Obbligatorio. Nome localizzato dell'estensione da installare.
  Obbligatorio. Nome del Language Pack nella lingua di destinazione.  
   
 ## <a name="element-information"></a>Informazioni sull'elemento  
-
-:::row:::
-    :::column:::
-        Spazio dei nomi
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Schema Name
-    :::column-end:::
-    :::column:::
-        Schema del Language Pack VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        File di convalida
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Può essere vuoto
-    :::column-end:::
-    :::column:::
-        Non applicabile
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Spazio dei nomi    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Schema Name   |                 Schema del Language Pack VSIX                 |
+| File di convalida |                VSIXLanguagePackSchema. xsd                 |
+|  Può essere vuoto   |                      Non applicabile                       |
   
 ## <a name="see-also"></a>Vedere anche  
  [Informazioni di riferimento sullo schema del Language Pack VSX](../extensibility/vsx-language-pack-schema-reference.md)   

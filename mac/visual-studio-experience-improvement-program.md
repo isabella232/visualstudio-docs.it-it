@@ -1,17 +1,16 @@
 ---
 title: Analisi utilizzo software di Visual Studio
 description: Informazioni su come gestire le impostazioni di privacy in Visual Studio per Mac.
-ms.topic: troubleshooting
 author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 4c8f967ee7637f99e85297847f5984a80eb1cbe3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7c2e2dc1cc0171e9e7a8ab81f820ff6be0f389c2
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70108207"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284265"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
 
@@ -39,4 +38,4 @@ Analisi utilizzo software di Visual Studio è attivato per impostazione predefin
 * [Log generati dal sistema raccolti da Visual Studio (in Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Come segnalare un problema con Visual Studio per Mac](report-a-problem.md)
 * [Community degli sviluppatori Visual Studio per Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
-* [Informativa sulla privacy Microsoft](https://privacy.microsoft.com/privacystatement)
+* [Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement)

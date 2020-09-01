@@ -8,12 +8,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd3ed1477d1c4d345e5fc6f6496d12044d4af244
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: e2e1df362fddeab5be98ff90460a8a1a7d4b7876
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114232"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284341"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Elemento VSIXLanguagePack (schema del Language Pack VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,39 +62,13 @@ Obbligatorio. Fornisce l'elemento radice per un Language Pack VSIX. Il Language 
 |nessuno||  
   
 ## <a name="element-information"></a>Informazioni sull'elemento  
-
-:::row:::
-    :::column:::
-        Spazio dei nomi
-    :::column-end:::
-    :::column:::
-        `http://schemas.microsoft.com/developer/vsx-schema-lp/2010`
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Schema Name
-    :::column-end:::
-    :::column:::
-        Schema del Language Pack VSIX
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        File di convalida
-    :::column-end:::
-    :::column:::
-        VSIXLanguagePackSchema. xsd
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Può essere vuoto
-    :::column-end:::
-    :::column:::
-        No
-    :::column-end:::
-:::row-end:::
+  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Spazio dei nomi    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Schema Name   |                 Schema del Language Pack VSIX                 |
+| File di convalida |                VSIXLanguagePackSchema. xsd                 |
+|  Può essere vuoto   |                            No                             |
   
 ## <a name="see-also"></a>Vedere anche  
  Informazioni di [riferimento sullo schema del Language Pack di VSX](../extensibility/vsx-language-pack-schema-reference.md) [localizzazione dei pacchetti VSIX](../extensibility/localizing-vsix-packages.md) [estensione VSIX schema 1,0](/previous-versions/dd393700(v=vs.110))

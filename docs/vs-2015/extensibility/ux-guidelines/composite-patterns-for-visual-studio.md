@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 983a5d91fee40245f6a7d6877ccf38e666fa586e
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114141"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89284416"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 - [Input tocco](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a>Visualizzazione dei dati
+## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a> Visualizzazione dei dati
 
 ### <a name="overview"></a>Panoramica
  I grafici rappresentano un modo visivo per aggregare e visualizzare i dati allo scopo di migliorare il processo decisionale. Possono aiutare gli utenti a occuparsi di una grande quantità di dati, ma poco significative vedono cosa merita attenzione e cosa potrebbe richiedere un'azione.
@@ -70,7 +70,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 ### <a name="other-charting-considerations"></a>Altre considerazioni sui grafici
 
-#### <a name="color"></a>Colore
+#### <a name="color"></a>Color
  In Visual Studio è disponibile una tavolozza specifica dei colori grafici definiti per l'utilizzo. La tavolozza è accessibile per i tipi principali di cecità dei colori e i colori possono essere differenziati anche quando vengono usati come sezioni molto strette di colore. È possibile usare questi colori in qualsiasi combinazione per qualsiasi tipo di grafico o grafico nell'interfaccia utente. Non è necessario usare tutti i sette colori se non sono necessari molti colori distinti. Questi colori non sono stati progettati per essere usati con alcun elemento in primo piano, quindi non inserire testo o glifi su questi colori. Queste tonalità devono essere hardcoded ed essere esposte alla personalizzazione dell'utente in **strumenti > opzioni** (vedere [esposizione dei colori per gli utenti finali](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)).
 
 |Campione|Hex|RGB|
@@ -83,7 +83,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 |![Campione 79D7F2](../../extensibility/ux-guidelines/media/0711-79d7f2.png "0711_79D7F2")|#79D7F2|121.215.242|
 |![Campione B5B5B5](../../extensibility/ux-guidelines/media/0711-b5b5b5.png "0711_B5B5B5")|#B5B5B5|181.181.181|
 
-## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>Interfaccia utente e visualizzazione in oggetto
+## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a> Interfaccia utente e visualizzazione in oggetto
  Questa sezione fornisce il contesto per la lettura, nota anche come visualizzazione di anteprima del codice, un tipo di interfaccia utente in oggetto univoco per Visual Studio.
 
 ### <a name="overview"></a>Panoramica
@@ -249,7 +249,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 - **Non visualizzare mai** il contenuto al passaggio del mouse che risulta modificabile o invita l'interazione dell'utente. Questo comportamento può vanificare gli utenti se tentano di spostare il cursore sul contenuto del dettaglio, perché il comportamento standard di una descrizione comando è quello di ignorare immediatamente quando il cursore non si trova più sul contenuto master che lo ha prodotto.
 
-## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a>Modelli di selezione
+## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a> Modelli di selezione
 
 ### <a name="overview"></a>Panoramica
  Un modello di selezione è il meccanismo usato per indicare e confermare le operazioni su uno o più oggetti di interesse all'interno dell'interfaccia utente. In questo argomento vengono illustrati i modelli di interazione della selezione all'interno degli editor di documenti di Visual Studio: editor di testo, aree di progettazione e superfici di modellazione.
@@ -274,7 +274,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 - Area
 
-#### <a name="scope"></a>Scope
+#### <a name="scope"></a>Ambito
  Il componente più importante della selezione è garantire che l'utente sia in grado di riconoscere la finestra che sta funzionando (attivazione) e la posizione dello stato attivo (selezione). Visual Studio estende la funzionalità di gestione delle finestre in Windows, ma lo schema di attivazione è lo stesso: l'interazione con una finestra porta lo stato attivo sulla finestra. Visual Studio include due indicatori per l'attivazione: uno per le finestre dei documenti e uno per le finestre degli strumenti.
 
  Per le finestre dei documenti, la finestra attiva è indicata da una scheda della finestra del documento in primo piano e modificando il colore di sfondo:
@@ -392,7 +392,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
  **Selezione primaria con due selezioni secondarie**
 
-#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>Aspetto selezione oggetto grafico
+#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aspetto selezione oggetto grafico
  Gli handle di selezione sono quadrati disegnati in un modello rettangolare intorno al rettangolo di selezione dell'oggetto. Il grafico seguente mostra esempi dei vari Stati che un oggetto grafico può avere con handle, ridimensionamento e aspetto di modifica sul posto. Le dimensioni degli handle devono essere associate al bordo della finestra e alle metriche perimetrali usando l'API **GetSystemMetrics** .
 
 |          State          |  Aspetto   |                                                                  Dettagli visivi                                                                  |
@@ -473,7 +473,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 - Il tasto F2 attiva la modifica sul posto per la cella attualmente selezionata.
 
-## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>Persistenza e salvataggio delle impostazioni
+## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a> Persistenza e salvataggio delle impostazioni
 
 ### <a name="overview"></a>Panoramica
  Sebbene ogni componente software in Visual Studio sia in genere responsabile per lo stato e la persistenza, Visual Studio salva automaticamente le impostazioni in alcuni casi, ad esempio con le dimensioni e le posizioni delle finestre. La tabella seguente è costituita da una combinazione di impostazioni salvate automaticamente e da impostazioni che richiedono l'uso di un utente esplicito o di un'azione programmata.
@@ -508,7 +508,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 #### <a name="profile-specific-layouts"></a>Layout specifici del profilo
  Ogni profilo include layout della finestra degli strumenti, organizzati in modo familiare a specifici utenti di sviluppatori (Visual C++ gli sviluppatori si aspettano di visualizzare i **Esplora soluzioni** sul lato sinistro dell'IDE, mentre gli sviluppatori C# si aspettano di vedere i **Esplora soluzioni** a destra). I layout di finestra specifici del profilo vengono caricati dopo che l'utente sceglie un profilo all'avvio. L'autore di un pacchetto deve determinare il layout della finestra più adatto all'esperienza del cliente, sapendo che le modifiche apportate dall'utente alla configurazione della finestra verranno rese permanente.
 
-## <a name="touch-input"></a><a name="BKMK_TouchInput"></a>Input tocco
+## <a name="touch-input"></a><a name="BKMK_TouchInput"></a> Input tocco
  Gli utenti stanno sempre usando i prodotti di sviluppo Microsoft nei dispositivi touch. Tuttavia, esistono barriere che rendono difficile usare gli strumenti di sviluppo nei dispositivi touch. Gli utenti si aspettano che i prodotti forniscano un'esperienza di tocco affidabile e precisa. Lo scopo di queste linee guida è informare le decisioni sulle funzionalità di tocco da incorporare e per favorire un'esperienza di tocco coerente tra Visual Studio e i prodotti correlati.
 
 ### <a name="levels-of-experience"></a>Livelli di esperienza
@@ -522,13 +522,13 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 ||Esperienza di base|Esperienza ottimizzata|Esperienza elevata|
 |-|----------------------|--------------------------|-------------------------|
-|**Consente agli utenti di...**|Correzione del codice e della lettura a livello di progetto e soluzione senza terminazioni non recapitabili|Eseguire attività di manutenzione, refactoring e navigazione|Utilizza un'esperienza coerente, intuitiva e fluida in tutta sicurezza|
-|**Editor**|Panoramica e selezione del tocco<br /><br /> Tocco della barra di scorrimento per saltare e premere + trascina|Zoom a pizzico<br /><br /> Scorrimento rapido<br /><br /> Selection<br /><br /> Facile utilizzo del menu di scelta rapida||
-|**Finestre degli strumenti principali**|Panoramica dell'elenco<br /><br /> Selezione degli elementi<br /><br /> Tocco della barra di scorrimento per saltare e premere + trascina|Scorrimento e selezione semplici degli elementi||
-|**Windowing**||Ridimensiona finestra<br /><br /> Barra di accesso rapido||
-|**Documento**||Navigazione semplice tra file aperti||
-|**Movimenti**||Assicurare il funzionamento dei movimenti comuni nell'IDE|Azioni basate su movimenti<br /><br /> Supportare il trascinamento della selezione e le finestre di progettazione|
-|**Altre considerazioni**|||Tastiera personalizzata sullo schermo|
+|Consente agli utenti di...|Correzione del codice e della lettura a livello di progetto e soluzione senza terminazioni non recapitabili|Eseguire attività di manutenzione, refactoring e navigazione|Utilizza un'esperienza coerente, intuitiva e fluida in tutta sicurezza|
+|Editor|Panoramica e selezione del tocco<br /><br /> Tocco della barra di scorrimento per saltare e premere + trascina|Zoom a pizzico<br /><br /> Scorrimento rapido<br /><br /> Selection<br /><br /> Facile utilizzo del menu di scelta rapida||
+|Finestre degli strumenti principali|Panoramica dell'elenco<br /><br /> Selezione degli elementi<br /><br /> Tocco della barra di scorrimento per saltare e premere + trascina|Scorrimento e selezione semplici degli elementi||
+|Windowing||Ridimensiona finestra<br /><br /> Barra di accesso rapido||
+|Documento||Navigazione semplice tra file aperti||
+|Movimenti||Assicurare il funzionamento dei movimenti comuni nell'IDE|Azioni basate su movimenti<br /><br /> Supportare il trascinamento della selezione e le finestre di progettazione|
+|Altre considerazioni|||Tastiera personalizzata sullo schermo|
 
 #### <a name="gestures"></a>Movimenti
  I movimenti forniscono agli utenti un collegamento ai comandi che potrebbero altrimenti richiedere un'interazione più complicata. Vedere le linee guida di Windows sui [movimenti di tocco comuni per le applicazioni desktop](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)e seguire queste linee guida per la maggior parte dei movimenti, inclusi i semplici movimenti come la panoramica e lo zoom.
