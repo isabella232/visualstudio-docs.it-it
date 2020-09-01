@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98aa80618f5dd9f7d74d79a5d0dcce0c478cc606
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 974b98408d7c88bd437439d10c2cf3b1711a339c
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214573"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219634"
 ---
 # <a name="performance-warnings"></a>avvisi di prestazioni
 Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni.
@@ -48,7 +48,7 @@ Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni
 | [CA1821: Rimuovere i finalizzatori vuoti](../code-quality/ca1821.md) | Quando possibile, evitare di utilizzare i finalizzatori per non sovraccaricare ulteriormente le prestazioni durante il rilevamento della durata dell'oggetto. Un finalizzatore vuoto comporta un sovraccarico aggiuntivo senza alcun vantaggio. |
 | [CA1822: Contrassegna i membri come statici](../code-quality/ca1822.md) | I membri che non accedono ai dati di istanza o non chiamano metodi di istanza possono essere contrassegnati come static (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Tramite il compilatore verranno quindi inviati siti di chiamata non virtuali a tali membri. Si potrà così ottenere un sensibile miglioramento delle prestazioni per codici sensibili alle prestazioni. |
 | [CA1823: Evitare campi privati non usati](../code-quality/ca1823.md) | Sono stati rilevati campi privati che non sembrano essere utilizzati all'interno dell'assembly. |
-| [CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | L'attributo NeutralResourcesLanguage indica a ResourceManager la lingua utilizzata per visualizzare le risorse delle impostazioni cultura non associate ad alcun paese per un assembly. Tale approccio migliora le prestazioni delle ricerche per la prima risorsa caricata e riduce il working set. |
+| [CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | L'attributo NeutralResourcesLanguage informa il Gestione risorse della lingua utilizzata per visualizzare le risorse di impostazioni cultura non associate ad alcun paese per un assembly. Tale approccio migliora le prestazioni delle ricerche per la prima risorsa caricata e riduce il working set. |
 | [CA1825: Evitare allocazioni di matrici di lunghezza zero](../code-quality/ca1825.md) | L'inizializzazione di una matrice di lunghezza zero comporta l'allocazione di memoria non necessaria. Usare invece l'istanza di matrice vuota allocata in modo statico chiamando <xref:System.Array.Empty%2A?displayProperty=nameWithType> . L'allocazione di memoria è condivisa tra tutte le chiamate di questo metodo. |
 | [CA1826: Usare la proprietà anziché il metodo Enumerable LINQ](../code-quality/ca1826.md) | <xref:System.Linq.Enumerable> Il metodo LINQ è stato usato in un tipo che supporta una proprietà equivalente e più efficiente. |
 | [CA1827: Non usare Count/LongCount se è possibile usare Any](../code-quality/ca1827.md) | <xref:System.Linq.Enumerable.Count%2A><xref:System.Linq.Enumerable.LongCount%2A>è stato usato il metodo o dove il <xref:System.Linq.Enumerable.Any%2A> metodo risulta più efficiente. |
@@ -60,4 +60,5 @@ Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni
 | [CA1833: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte Span o Memory di una matrice](../code-quality/ca1833.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.Span%601> <xref:System.Memory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
 | [Ca1835: preferisce gli overload basati su Memory'per ' ReadAsync ' è WriteAsync '](../code-quality/ca1835.md) | ' Stream ' ha un overload ' ReadAsync ' che accetta un' &lt; byte &gt; di memoria ' come primo argomento e un overload ' WriteAsync ' che accetta un'ReadOnlyMemory &lt; byte &gt; ' come primo argomento. Preferisci chiamare gli overload basati sulla memoria, che sono più efficienti. |
 | [Ca1836: preferenza `IsEmpty` rispetto a `Count` quando disponibile](../code-quality/ca1836.md) | Preferisci `IsEmpty` la proprietà che è più efficiente di `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> o <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> per determinare se l'oggetto contiene o meno elementi. |
-| [Ca1838: evitare `StringBuilder` i parametri per P/Invoke](../code-quality/ca1838.md) | Il marshalling di ' StringBuilder ' Crea sempre una copia del buffer nativa, ottenendo più allocazioni per un'operazione di marshalling. |
+| [Ca1837: usare `Environment.ProcessId` anziché `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` è più semplice e veloce di `Process.GetCurrentProcess().Id` . |
+| [Ca1838: evitare `StringBuilder` i parametri per P/Invoke](../code-quality/ca1838.md) | Il marshalling di `StringBuilder` Crea sempre una copia del buffer nativa, ottenendo più allocazioni per un'operazione di marshalling. |

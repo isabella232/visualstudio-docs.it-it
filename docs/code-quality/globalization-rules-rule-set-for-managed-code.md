@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5502989e3866cb28d05e36d4c88e38574e5987c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
+ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587602"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89219673"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Set di regole delle Regole di globalizzazione per codice gestito
 
@@ -28,7 +28,8 @@ Usare il set di regole di globalizzazione Microsoft per concentrarsi sui problem
 |[CA1304](../code-quality/ca1304.md)|Specificare CultureInfo|
 |[CA1305](../code-quality/ca1305.md)|Specificare IFormatProvider|
 |[CA1306](../code-quality/ca1306.md)|Specificare le impostazioni locali per i tipi di dati|
-|[CA1307](../code-quality/ca1307.md)|Specificare StringComparison|
+|[CA1307](../code-quality/ca1307.md)|Specificare StringComparison per maggiore chiarezza|
 |[CA1308](../code-quality/ca1308.md)|Normalizzare le stringhe in lettere maiuscole|
 |[CA1309](../code-quality/ca1309.md)|Usare StringComparison ordinale|
+|[Ca1310](../code-quality/ca1310.md)|Specificare StringComparison per correttezza|
 |[CA2101](../code-quality/ca2101.md)|Specificare il marshalling per gli argomenti di stringa P/Invoke|
