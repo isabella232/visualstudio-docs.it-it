@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595501"
 ---
 # <a name="list-modules-command"></a>Comando Elenca moduli
@@ -35,39 +35,39 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 #### <a name="parameters"></a>Parametri
 /Address:`yes|no`
 
-Facoltativa. Specifica se visualizzare gli indirizzi di memoria dei moduli. Il valore predefinito è `yes`.
+facoltativo. Specifica se visualizzare gli indirizzi di memoria dei moduli. Il valore predefinito è `yes`.
 
 /Name:`yes|no`
 
-Facoltativa. Specifica se visualizzare i nomi dei moduli. Il valore predefinito è `yes`.
+facoltativo. Specifica se visualizzare i nomi dei moduli. Il valore predefinito è `yes`.
 
 /Order:`yes|no`
 
-Facoltativa. Specifica se visualizzare l'ordine dei moduli. Il valore predefinito è `no`.
+facoltativo. Specifica se visualizzare l'ordine dei moduli. Il valore predefinito è `no`.
 
 /Path:`yes|no`
 
-Facoltativa. Specifica se visualizzare i percorsi dei moduli. Il valore predefinito è `yes`.
+facoltativo. Specifica se visualizzare i percorsi dei moduli. Il valore predefinito è `yes`.
 
 /Process:`yes|no`
 
-Facoltativa. Specifica se visualizzare i processi dei moduli. Il valore predefinito è `no`.
+facoltativo. Specifica se visualizzare i processi dei moduli. Il valore predefinito è `no`.
 
 /SymbolFile:`yes|no`
 
-Facoltativa. Specifica se visualizzare i file dei simboli dei moduli. Il valore predefinito è `no`.
+facoltativo. Specifica se visualizzare i file dei simboli dei moduli. Il valore predefinito è `no`.
 
 /SymbolStatus:`yes|no`
 
-Facoltativa. Specifica se visualizzare lo stato dei simboli dei moduli. Il valore predefinito è `yes`.
+facoltativo. Specifica se visualizzare lo stato dei simboli dei moduli. Il valore predefinito è `yes`.
 
 /Timestamp:`yes|no`
 
-Facoltativa. Specifica se visualizzare il timestamp dei moduli. Il valore predefinito è `no`.
+facoltativo. Specifica se visualizzare il timestamp dei moduli. Il valore predefinito è `no`.
 
 /Version:`yes|no`
 
-Facoltativa. Specifica se visualizzare le versioni dei moduli. Il valore predefinito è `no`.
+facoltativo. Specifica se visualizzare le versioni dei moduli. Il valore predefinito è `no`.
 
 ## <a name="example"></a>Esempio
 In questo esempio vengono elencati i nomi dei moduli, gli indirizzi e i timestamp per il processo corrente.
@@ -78,6 +78,6 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Procedura: utilizzare la finestra Moduli](../../debugger/how-to-use-the-modules-window.md)

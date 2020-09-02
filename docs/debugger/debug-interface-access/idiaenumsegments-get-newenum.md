@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9f2d11de426aeb5b40fc5f2c50121d9b644eb94
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468051"
 ---
 # <a name="idiaenumsegmentsget__newenum"></a>IDiaEnumSegments::get__NewEnum
@@ -38,5 +38,5 @@ out Restituisce l' `IUnknown` interfaccia che rappresenta la <xref:System.Runtim
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

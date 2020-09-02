@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c56a9ab8b46f8f7ee36875dda507cb9f288136cf
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875605"
 ---
 # <a name="dowhile-activity-designer"></a>ActivityDesigner DoWhile
@@ -30,7 +30,7 @@ Nella tabella seguente vengono illustrate le proprietà più utili dell' <xref:S
 |<xref:System.Activities.Statements.DoWhile.Body%2A>|Falso|L'attività da eseguire quando la condizione è **true**. Per aggiungere l' <xref:System.Activities.Statements.DoWhile.Body%2A> attività, rilasciare un'attività dalla casella degli strumenti nella casella **corpo** dell'ActivityDesigner **DoWhile** con il testo del suggerimento "drop Activity here".|
 |<xref:System.Activities.Statements.DoWhile.Condition%2A>|Vero|Condizione da valutare prima di ogni iterazione del ciclo. Per impostare <xref:System.Activities.Statements.DoWhile.Condition%2A> , digitare un'espressione Visual Basic nella casella **condizione** nell'ActivityDesigner **DoWhile** o nella griglia delle proprietà.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [While](../workflow-designer/while-activity-designer.md)
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

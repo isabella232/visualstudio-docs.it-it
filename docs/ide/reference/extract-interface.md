@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595670"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring con estrazione di un'interfaccia
@@ -27,9 +27,9 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Consente di creare un'interfaccia utilizzando membri esistenti da una classe, uno struct o un'interfaccia.
+**Cosa:** Consente di creare un'interfaccia usando i membri esistenti di una classe, uno struct o un'interfaccia.
 
-**Quando:** Si dispone di membri in una classe, struct o interfaccia che potrebbero essere ereditati da altre classi, struct o interfacce.
+**Quando:** Sono presenti membri in una classe, uno struct o un'interfaccia che può essere ereditata da altre classi, struct o interfacce.
 
 **Perché:** le interfacce sono costrutti ideali per le progettazioni orientate agli oggetti. Si supponga di avere classi per vari animali (Cane, Gatto, Uccello) che potrebbero contenere tutte metodi comuni, come Mangiare, Bere, Dormire. L'uso di un'interfaccia come IAnimali consentirebbe alle classi Cane, Gatto e Uccello di avere una "firma" comune per questi metodi.
 
@@ -49,7 +49,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+I**. I tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
+      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring - Estrai interfaccia**.
       - Fare clic con il pulsante destro del mouse sul nome della classe, scegliere il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.

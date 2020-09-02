@@ -1,5 +1,5 @@
 ---
-title: Metodo IDebugEngineCreateEvent2 . Documenti Microsoft
+title: IDebugEngineCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 41a964f1e08fc2e88ac9a1d211e4b3e36b32c5b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730604"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
-Il motore di debug (DE) invia questa interfaccia al gestore di sessione di debug (SDM) quando viene creata un'istanza del DE.
+Il motore di debug (DE) Invia questa interfaccia al gestore di debug della sessione (SDM) quando viene creata un'istanza del DE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,22 +29,22 @@ IDebugEngineCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il DE implementa questa interfaccia come parte delle normali operazioni. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata sullo stesso oggetto di `QueryInterface` questa interfaccia `IDebugEvent2` (il modello SDM utilizza il metodo per accedere all'interfaccia).
+ Il DE implementa questa interfaccia come parte delle normali operazioni. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia (il SDM usa il `QueryInterface` metodo per accedere all' `IDebugEvent2` interfaccia).
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il DE crea e invia questo oggetto evento quando il DE è stata creata un'istanza. L'evento viene inviato utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita dal modello SDM quando è collegato al programma in fase di debug.
+ Il DE crea e invia questo oggetto evento quando è stata creata un'istanza di DE. L'evento viene inviato tramite la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente vengono `IDebugEngineCreateEvent2`illustrati i metodi di .
+ La tabella seguente illustra i metodi di `IDebugEngineCreateEvent2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Recupera l'oggetto che rappresenta il motore di debug appena creato (DE).|
+|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Recupera l'oggetto che rappresenta il motore di debug appena creato.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

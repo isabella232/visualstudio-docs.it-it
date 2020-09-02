@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bc2225a35f663a54f1c521364146b8b65f30be7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468203"
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
@@ -31,5 +31,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK`.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

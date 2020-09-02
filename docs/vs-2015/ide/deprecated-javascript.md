@@ -1,5 +1,5 @@
 ---
-title: '&lt;deprecated &gt; (JavaScript) | Microsoft Docs'
+title: '&lt;deprecato &gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 343f3ebe4bea7ee999f60741c189f35defb0ac7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665809"
 ---
 # <a name="ltdeprecatedgt-javascript"></a>&lt;deprecated&gt; (JavaScript)
@@ -33,12 +33,12 @@ Specifica una funzione o un metodo deprecato.
 #### <a name="parameters"></a>Parametri
  `type` Facoltativo. Specifica se la funzione o il metodo verrà rimosso in una versione futura o se la funzione o il metodo è già stato rimosso e se il relativo utilizzo può causare un errore. Impostare su `deprecate` per specificare che la funzione o il metodo verrà rimosso in una versione futura. Impostare su `remove` per specificare che la funzione o il metodo è già stato rimosso.
 
- `locid` Facoltativo. Identificatore per le informazioni di localizzazione sulla funzione o sul metodo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nell'elemento [\<loc>](../ide/loc-javascript.md).
+ `locid` Facoltativo. Identificatore per le informazioni di localizzazione sulla funzione o sul metodo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nell' [\<loc>](../ide/loc-javascript.md) elemento.
 
  `description` Facoltativo. Descrizione della funzione o del metodo deprecato.
 
 ## <a name="remarks"></a>Osservazioni
- Gli elementi utilizzati per annotare le funzioni che includono `<deprecated>` devono essere inseriti nel corpo della funzione prima di qualsiasi istruzione. Quando si contrassegna una funzione come deprecata, è consigliabile sostituire la relativa [\<summary elemento >](../ide/summary-javascript.md) con l'elemento `<deprecated>`.
+ Gli elementi utilizzati per aggiungere annotazioni alle funzioni, che includono `<deprecated>` , devono essere inseriti nel corpo della funzione prima di qualsiasi istruzione. Quando si contrassegna una funzione come deprecata, è consigliabile sostituire il relativo [\<summary>](../ide/summary-javascript.md) elemento con l' `<deprecated>` elemento.
 
 ## <a name="example"></a>Esempio
  L'esempio di codice seguente illustra come usare l'elemento `<deprecated>`.

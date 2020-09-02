@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ebc0fe8391c6390d62cffbb591c4cef1ea52976f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468072"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
@@ -41,7 +41,7 @@ La tabella seguente illustra i metodi di `IDiaEnumSectionContribs` .
 |[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
 |[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="note-for-callers"></a>Nota per i chiamanti
 Ottenere questa interfaccia dal metodo [IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Per informazioni dettagliate, vedere l'esempio.
@@ -106,7 +106,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

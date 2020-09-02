@@ -1,5 +1,5 @@
 ---
-title: SccGetExtendedCapabilities (funzione) . Documenti Microsoft
+title: Funzione SccGetExtendedCapabilities | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700729"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities (funzione)
@@ -35,28 +35,28 @@ SCCRTN SccGetExtendedCapabilities(
 ### <a name="parameters"></a>Parametri
  pContext
 
-[in] Puntatore di contesto del plug-in del controllo del codice sorgente.
+in Puntatore al contesto del plug-in del controllo del codice sorgente.
 
  lSccExCaps
 
-[in] Flag che specifica una funzionalità estesa per la quale eseguire il test (vedere la tabella Codice funzionalità estesa in [Flag di capacità](../extensibility/capability-flags.md) per i possibili flag).
+in Flag che specifica una funzionalità estesa per la quale eseguire il test (vedere la tabella del codice delle funzionalità estese nei [flag di funzionalità](../extensibility/capability-flags.md) per i flag possibili).
 
- pbSupportato
+ pbSupported
 
-[fuori] Restituisce diverso`TRUE`da zero ( ) se la funzionalità specificata è supportata; in caso contrario, restituisce zero (`FALSE`).
+out Restituisce un valore diverso da zero ( `TRUE` ) se la funzionalità specificata è supportata; in caso contrario, restituisce zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Valore restituito
- L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei seguenti valori:
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
 
-|valore|Descrizione|
+|Valore|Descrizione|
 |-----------|-----------------|
-|SCC_OK|L'operazione get capability è stata completata correttamente.|
+|SCC_OK|L'operazione Get Capability è stata completata correttamente.|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Si è verificato un errore sconosciuto o non specificato.|
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo viene chiamato su richiesta; vale a dire, quando è necessario testare una funzionalità, questo metodo viene chiamato per determinare se tale funzionalità è supportata. Viene specificato un solo flag alla volta.
+ Questo metodo viene chiamato su richiesta; ovvero, quando è necessario testare una funzionalità, questo metodo viene chiamato per determinare se tale funzionalità è supportata. Viene specificato un solo flag alla volta.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Codici di errore](../extensibility/error-codes.md)
-- [Flag di capacità](../extensibility/capability-flags.md)
+- [Flag funzionalità](../extensibility/capability-flags.md)

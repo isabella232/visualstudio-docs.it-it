@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd88191baf15837a7862fc447471744977bdf60b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665868"
 ---
 # <a name="customizing-project-and-item-templates"></a>Personalizzazione di modelli di progetto e modelli di elementi
@@ -32,7 +32,7 @@ Dopo aver creato i modelli di progetti ed elementi è possibile personalizzarli 
 
 - Passare parametri personalizzati in un modello per sostituire i valori esistenti.
 
-     Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).
+     Per altre informazioni, vedere [procedura: sostituire i parametri in un modello](../ide/how-to-substitute-parameters-in-a-template.md).
 
 - Personalizzare le procedure guidate che consentono di creare progetti da modelli.
 

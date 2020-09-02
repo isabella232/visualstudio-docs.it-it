@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 55f49a32036fcfd5e9f75f3d8dd61499c4af0b2e
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875722"
 ---
 # <a name="receive-activity-designer"></a>ActivityDesigner Receive
@@ -48,11 +48,11 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | Falso | Specifica la raccolta di oggetti <xref:System.ServiceModel.Activities.CorrelationInitializer> che inizializzano più oggetti <xref:System.ServiceModel.Activities.CorrelationHandle> che configurano questa attività <xref:System.ServiceModel.Activities.Receive> all'interno del flusso di lavoro. Fare clic sul pulsante con i puntini di sospensione accanto alla <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> proprietà nella griglia proprietà per aprire la finestra di dialogo **Aggiungi inizializzatori di correlazione** . Per ulteriori informazioni sull'utilizzo di questa casella, vedere l'argomento relativo alla finestra di [dialogo Aggiungi CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) . |
 | <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | Falso | Specifica un valore che determina se viene creata una nuova istanza del flusso di lavoro per elaborare il messaggio se quest'ultimo non è correlato a un'istanza del flusso di lavoro esistente. Se il valore è impostato su **true**, viene creata una nuova istanza del flusso di lavoro per elaborare il messaggio quando il messaggio non è correlato a un'istanza del flusso di lavoro esistente. |
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | Falso | Specifica una raccolta di tipi noti per l'operazione del servizio implementata da questa attività <xref:System.ServiceModel.Activities.Receive>. Questa proprietà deve essere usata insieme alla proprietà <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> impostata su <xref:System.Runtime.Serialization.DataContractSerializer>. Viene ignorata se viene usato <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Selezionare il pulsante con i puntini di sospensione accanto al campo **knownTypes** nella griglia delle proprietà per visualizzare la finestra di dialogo **Editor raccolta** di tipi con cui è possibile aggiungere tipi rilevanti. Per ulteriori informazioni sull'utilizzo di questa casella, vedere l'argomento della finestra di [dialogo Editor raccolta di tipi](../workflow-designer/type-collection-editor-dialog-box.md) . |
-| <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | Falso | Specifica il tipo di <xref:System.Net.Security.ProtectionLevel> applicato al messaggio.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> indica solo l'autenticazione.<br />2. <xref:System.Net.Security.ProtectionLevel> indica i dati del segno che consentono di garantire l'integrità dei dati trasmessi.<br />3. <xref:System.Net.Security.ProtectionLevel> significa crittografare e firmare i dati per garantire la riservatezza e l'integrità dei dati trasmessi. |
+| <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | Falso | Specifica il tipo di <xref:System.Net.Security.ProtectionLevel> applicato al messaggio.<br /><br /> 1.  <xref:System.Net.Security.ProtectionLevel> indica solo l'autenticazione.<br />2.  <xref:System.Net.Security.ProtectionLevel> indica i dati del segno che consentono di garantire l'integrità dei dati trasmessi.<br />3.  <xref:System.Net.Security.ProtectionLevel> significa crittografare e firmare i dati per garantire la riservatezza e l'integrità dei dati trasmessi. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | Falso | Specifica il tipo di serializzatore da usare per l'operazione del servizio implementata dall'attività <xref:System.ServiceModel.Activities.Receive>. Il valore predefinito è <xref:System.Runtime.Serialization.DataContractSerializer>, che serializza e deserializza un'istanza di un tipo in un documento o un flusso XML che usa un contratto dati fornito. È inoltre possibile usare <xref:System.Xml.Serialization.XmlSerializer> se è richiesto un maggiore controllo sul codice XML. |
 | <xref:System.ServiceModel.Activities.Receive.Action%2A> | Falso | Specifica l'intestazione Action del messaggio. Se non è impostata in modo esplicito, il valore predefinito è: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` . |
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)

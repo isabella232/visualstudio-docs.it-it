@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1b5cba13e439c69b3502b00c6ae159b6af28178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153244"
 ---
-# <a name="bperesifields"></a>BPERESI_FIELDS
+# <a name="bperesi_fields"></a>BPERESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Specifica le informazioni da recuperare su una risoluzione non riuscita di un punto di interruzione.  
@@ -49,36 +49,36 @@ public enum enum_BPERESI_FIELDS { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  PERESI_BPRESLOCATION  
- Initialize/usare la `bpResLocation` campo (punto di interruzione risoluzione percorso) della finestra di [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struttura.  
+ Inizializzare/utilizzare il `bpResLocation` campo (percorso risoluzione punto di interruzione) della struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) .  
   
  BPERESI_PROGRAM  
- Initialize/usare la `pProgram` campo il `BP_ERROR_RESOLUTION_INFO` struttura.  
+ Inizializza/usa il `pProgram` campo della `BP_ERROR_RESOLUTION_INFO` struttura.  
   
  BPERESI_THREAD  
- Initialize/usare la `pThread` campo il `BP_ERROR_RESOLUTION_INFO` struttura.  
+ Inizializza/usa il `pThread` campo della `BP_ERROR_RESOLUTION_INFO` struttura.  
   
  BPERESI_MESSAGE  
- Initialize/usare la `bstrMessage` campo il `BP_ERROR_RESOLUTION_INFO` struttura.  
+ Inizializza/usa il `bstrMessage` campo della `BP_ERROR_RESOLUTION_INFO` struttura.  
   
  BPERESI_TYPE  
- Initialize/usare la `dwType` valore del campo (tipo di punto di interruzione) il `BP_ERROR_RESOLUTION_INFO` struttura.  
+ Inizializza/usa il `dwType` campo (tipo di punto di interruzione) della `BP_ERROR_RESOLUTION_INFO` struttura.  
   
  BPERESI_ALLFIELDS  
- Tutti i campi di inizializzazione/usare la `BP_ERROR_RESOLUTION_INFO` struttura.  
+ Inizializza/usa tutti i campi della `BP_ERROR_RESOLUTION_INFO` struttura.  
   
-## <a name="remarks"></a>Note  
- Passato come parametro per il [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) metodo per indicare quali campi della [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struttura devono essere inizializzate.  
+## <a name="remarks"></a>Osservazioni  
+ Passato come parametro al metodo [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) per indicare quali campi della struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) devono essere inizializzati.  
   
- Questi valori vengono usati anche per indicare quali campi nel `BP_ERROR_RESOLUTION_INFO` struttura siano usati e validi quando viene restituita tale struttura.  
+ Questi valori vengono usati anche per indicare quali campi della `BP_ERROR_RESOLUTION_INFO` struttura vengono usati e validi quando viene restituita tale struttura.  
   
- Questi valori possono essere combinati con un bit per bit `OR`.  
+ Questi valori possono essere combinati con un bit per bit `OR` .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

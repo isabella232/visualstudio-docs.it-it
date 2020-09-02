@@ -20,32 +20,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595475"
 ---
 # <a name="find-in-files"></a>Cerca nei file
 
-**Trova nei file** consente di cercare un set di file specificato. Le corrispondenze trovate e le azioni eseguite sono elencate nella finestra **Risultati ricerca** selezionata in **Opzioni risultati**.
+Cerca **nei file** consente di eseguire ricerche in un set di file specificato. Le corrispondenze trovate e le azioni intraprese sono elencate nella finestra **Risultati ricerca** selezionata in **Opzioni risultati**.
 
 Per visualizzare **Cerca nei file** nella finestra **Trova e sostituisci** è possibile usare uno dei metodi seguenti.
 
 ## <a name="to-display-find-in-files"></a>Per visualizzare Cerca nei file
 
-1. Nella barra dei menu scegliere **Modifica** > **trova e sostituisci**.
+1. Sulla barra dei menu scegliere **modifica**  >  **trova e Sostituisci**.
 
 1. Scegliere **Cerca nei file**.
 
-Per annullare un'operazione Trova, premere **CTRL** + **Break**.
+Per annullare un'operazione di ricerca, premere **CTRL**  +  **INTERR**.
 
 > [!NOTE]
 > Lo strumento Trova e sostituisci non esegue la ricerca nelle directory con l'attributo `Hidden` o `System`.
 
 ## <a name="find-what"></a>Trova
 
-Per cercare una nuova stringa di testo o espressione, specificarla nella casella. Per cercare una delle 20 stringhe cercate più di recente, aprire l'elenco a discesa e scegliere una stringa. Scegliere il pulsante **Generatore di espressioni** adiacente se si vuole usare una o più espressioni regolari nella stringa di ricerca. Per ulteriori informazioni, vedere [Utilizzo di espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Per cercare una nuova stringa di testo o espressione, specificarla nella casella. Per cercare una delle 20 stringhe cercate più di recente, aprire l'elenco a discesa e scegliere una stringa. Scegliere il pulsante **Generatore di espressioni** adiacente se si vuole usare una o più espressioni regolari nella stringa di ricerca. Per altre informazioni, vedere [uso delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 > [!NOTE]
 > Il pulsante **Generatore di espressioni** viene abilitato solo se è stata selezionata l'opzione **Usa espressioni regolari** in **Opzioni di ricerca**.
@@ -66,7 +66,7 @@ Specifica che la ricerca verrà eseguita nelle sottocartelle della cartella **Ce
 
 ## <a name="find-options"></a>Opzioni ricerca
 
-È possibile espandere o comprimere la sezione **Opzioni di ricerca.** È possibile selezionare o deselezionare le opzioni seguenti:
+È possibile espandere o comprimere la sezione **Opzioni di ricerca** . È possibile selezionare o deselezionare le opzioni seguenti:
 
 **Maiuscole/minuscole**
 
@@ -76,7 +76,7 @@ Se questa opzione è selezionata, in una ricerca impostata su **Risultati ricerc
 
 Se questa opzione è selezionata, la finestra **Risultati ricerca** restituirà solo corrispondenze di parole intere.
 
-**Usare espressioni regolariUse Regular Expressions**
+**Usare espressioni regolari**
 
 Se questa casella di controllo è selezionata, è possibile usare notazioni speciali per definire modelli di testo che devono corrispondere nelle caselle di testo **Trova** o **Sostituisci con**. Per un elenco di queste notazioni, vedere [Uso delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
@@ -88,13 +88,13 @@ Selezionare qualsiasi voce dell'elenco per immettere una stringa di ricerca prec
 
 ## <a name="result-options"></a>Opzioni risultati
 
-È possibile espandere o comprimere la sezione **Opzioni risultato.** È possibile selezionare o deselezionare le opzioni seguenti:
+È possibile espandere o comprimere la sezione **Opzioni risultati** . È possibile selezionare o deselezionare le opzioni seguenti:
 
-**Finestra Risultati 1**
+**Finestra Risultati ricerca 1**
 
 Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 1**. Questa finestra viene aperta automaticamente per visualizzare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 1**.
 
-**Finestra Trova risultati 2**
+**Finestra Risultati ricerca 2**
 
 Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 2**. Questa finestra viene aperta automaticamente per visualizzare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 2**.
 

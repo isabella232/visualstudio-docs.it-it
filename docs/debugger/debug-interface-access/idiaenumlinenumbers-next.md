@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1546c0bc7b8682b918d583769a9f580323c9dda4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468210"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
@@ -48,7 +48,7 @@ out Restituisce il numero di numeri di riga nell'enumeratore recuperato.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri numeri di riga. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

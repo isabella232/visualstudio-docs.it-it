@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665844"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Personalizzazione della pagina iniziale per Visual Studio
@@ -31,7 +31,7 @@ ms.locfileid: "72665844"
 
 ## <a name="customizing-the-default-start-page"></a>Personalizzazione della pagina iniziale predefinita
 
-1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
+1. Sulla barra dei menu scegliere **strumenti**, **Opzioni**.
 
 2. Espandere **Ambiente**, quindi scegliere **Avvio**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "72665844"
 
          Vedere [Creazione di una pagina iniziale personalizzata](../misc/creating-your-own-start-page.md).
 
-2. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
+2. Sulla barra dei menu scegliere **strumenti**, **Opzioni**.
 
 3. Espandere **Ambiente**, quindi scegliere **Avvio**.
 

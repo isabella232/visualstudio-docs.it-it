@@ -14,20 +14,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184246"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica se creare il progetto ed eseguire la sostituzione del parametro nella posizione specificata, o eseguire la sostituzione del parametro in una posizione temporanea e quindi salvare il progetto nel percorso specificato.  
+Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel percorso specificato oppure eseguire la sostituzione dei parametri in un percorso temporaneo, quindi salvare il progetto nel percorso specificato.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<CreateInPlace >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<CreateInPlace>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -53,9 +53,9 @@ Specifica se creare il progetto ed eseguire la sostituzione del parametro nella 
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Questo testo deve essere `true` o `false`. Se `true`, viene creato il progetto e la sostituzione dei parametri viene eseguita nella posizione specificata nel **nuovo progetto** nella finestra di dialogo. Se `false`, la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.  
+ Questo testo deve essere `true` o `false`. Se `true` , il progetto viene creato e la sostituzione dei parametri viene eseguita nel percorso specificato nella finestra di dialogo **nuovo progetto** . Se `false` , la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `CreateInPlace` è un elemento facoltativo. Il valore predefinito è `true`.  
   
 ## <a name="example"></a>Esempio  

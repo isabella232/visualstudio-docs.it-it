@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4e8452465873cb66883abd347406d17b469e90a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199993"
 ---
 # <a name="sccproperties-function"></a>Funzione SccProperties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzione consente di visualizzare proprietà di controllo di origine per un file o progetto.  
+Questa funzione consente di visualizzare le proprietà del controllo del codice sorgente per un file o un progetto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,30 +36,30 @@ SCCRTN SccProperties (
   
 #### <a name="parameters"></a>Parametri  
  pvContext  
- [in] La struttura del contesto plug-in del controllo origine.  
+ in Struttura del contesto del plug-in del controllo del codice sorgente.  
   
  hWnd  
- [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
+ in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.  
   
  lpFileName  
- [in] Il nome e percorso completo del file o progetto.  
+ in Nome del percorso completo del file o del progetto.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Le proprietà sono state visualizzate correttamente.|  
-|SCC_I_RELOADFILE|Il sistema di controllo della versione ha modificato le proprietà del file, in modo che l'IDE deve ricaricare questo file.|  
-|SCC_E_PROJNOTOPEN|Il progetto specificato non è stata aperta nel controllo del codice sorgente.|  
+|SCC_I_RELOADFILE|Il sistema di controllo della versione ha modificato le proprietà del file, quindi l'IDE deve ricaricare il file.|  
+|SCC_E_PROJNOTOPEN|Il progetto specificato non è stato aperto nel controllo del codice sorgente.|  
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a visualizzare le proprietà di questo file o progetto.|  
-|SCC_E_FILENOTCONTROLLED|Il file specificato o il progetto non è sotto controllo del codice sorgente.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Si è verificato un errore sconosciuto o generale.|  
+|SCC_E_FILENOTCONTROLLED|Il file o il progetto specificato non è sotto il controllo del codice sorgente.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Si è verificato un errore sconosciuto o generico.|  
   
-## <a name="remarks"></a>Note  
- Il plug-in del controllo del codice sorgente consente di visualizzare le proprietà in una finestra di dialogo.  
+## <a name="remarks"></a>Osservazioni  
+ Il plug-in del controllo del codice sorgente Visualizza le proprietà nella relativa finestra di dialogo.  
   
- Le proprietà sono definite per il plug-in del controllo del codice sorgente e possono differire dal plug-in a plug-in. Se il plug-in consente all'utente di modificare le proprietà di controllo di origine di un file, deve restituire `SCC_I_RELOAD` per segnalare l'IDE in cui è necessario ricaricare il file o progetto.  
+ Le proprietà sono definite dal plug-in del controllo del codice sorgente e possono essere diverse dal plug-in per il plug-in. Se il plug-in consente all'utente di modificare le proprietà del controllo del codice sorgente di un file, deve restituire `SCC_I_RELOAD` per segnalare all'IDE che il file o il progetto deve essere ricaricato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

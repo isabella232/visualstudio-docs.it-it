@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8348ba38849b76a745a56f941850d6b61a8f433f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332085"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Panoramica di Blend per Visual Studio
@@ -79,7 +79,7 @@ Usare i pulsanti correlati allo storyboard ![Pulsanti dello storyboard in Blend 
 
 Passare il puntatore del mouse su ogni pulsante della finestra per altre informazioni sulle funzionalità disponibili.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Animare oggetti](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Disegnare forme e tracciati](../xaml-tools/draw-shapes-and-paths.md)

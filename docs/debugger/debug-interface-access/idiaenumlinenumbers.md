@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f84e14aa3942f512ef1f4cd19bad0372c60e9fbc
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468189"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
@@ -41,7 +41,7 @@ La tabella seguente illustra i metodi di `IDiaEnumLineNumbers` .
 |[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
 |[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Questa interfaccia viene ottenuta chiamando uno dei metodi seguenti nell'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) :
@@ -92,7 +92,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
