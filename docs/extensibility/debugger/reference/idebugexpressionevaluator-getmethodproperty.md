@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugExpressionEvaluator::GetMethodProperty . Documenti Microsoft
+title: 'IDebugExpressionEvaluator:: GetMethodProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ebcf24ee39505091ff79c1f2f31d505217f77efb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729513"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
-Questo metodo ottiene un oggetto proprietà che contiene le variabili locali, gli argomenti e altre proprietà di un metodo.
+Questo metodo ottiene un oggetto Property che contiene le variabili locali, gli argomenti e altre proprietà di un metodo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,19 +49,19 @@ int GetMethodProperty(
 
 ## <a name="parameters"></a>Parametri
 `pSymbolProvider`\
-[in] Provider di simboli da utilizzare, espresso come oggetto [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+in Provider di simboli da utilizzare, espresso come oggetto [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .
 
 `pAddress`\
-[in] Indirizzo nel codice, espresso come oggetto [IDebugAddress,](../../../extensibility/debugger/reference/idebugaddress.md) che deve essere risolto nella funzione contenitore più vicina.
+in Indirizzo nel codice, espresso come oggetto [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) , che deve essere risolto nella funzione contenitore più vicina.
 
 `pBinder`\
-[in] Gestore di associazione da utilizzare, espresso come oggetto [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
+in Binder da usare, espresso come oggetto [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .
 
 `fIncludeHiddenLocals`\
-[in] Diverso da`TRUE`zero ( )significa includere i locali nascosti; zero`FALSE`( ) significa tralasciare i locali nascosti
+in Diverso da zero ( `TRUE` ) indica l'inclusione di variabili locali nascoste. zero ( `FALSE` ) indica di escludere variabili locali nascoste
 
 `ppProperty`\
-[fuori] Restituisce un [oggetto IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta il metodo.
+out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta il metodo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

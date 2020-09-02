@@ -1,5 +1,5 @@
 ---
-title: Come vengono eseguiti gli aggiornamenti dell'applicazione ClickOnce | Microsoft Docs
+title: Come ClickOnce esegue gli aggiornamenti dell'applicazione | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,25 +18,25 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2e8a3c1054219bb7d5b0f9a9ef5e710786344e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152841"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Come vengono eseguiti gli aggiornamenti di applicazioni con ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ClickOnce Usa le informazioni sulla versione di file specificati nel manifesto di distribuzione di un'applicazione per decidere se aggiornare i file dell'applicazione. Dopo l'inizio di un aggiornamento, ClickOnce Usa una tecnica detta *patch con file* per evitare il download ridondante dei file dell'applicazione.  
+ClickOnce utilizza le informazioni sulla versione del file specificate nel manifesto di distribuzione di un'applicazione per decidere se aggiornare i file dell'applicazione. Dopo l'avvio di un aggiornamento, ClickOnce utilizza una tecnica denominata applicazione di *patch* per evitare il download ridondante dei file dell'applicazione.  
   
-## <a name="file-patching"></a>L'applicazione di patch di file  
- Quando si aggiorna un'applicazione, ClickOnce non scarica tutti i file per la nuova versione dell'applicazione, a meno che i file sono stati modificati. Al contrario, confronta le firme hash dei file specificati nel manifesto dell'applicazione per l'applicazione corrente rispetto alle firme contenute nel manifesto per la nuova versione. Se le firme del file sono diverse, viene scaricata la nuova versione. Se le firme corrispondono, il file non è modificato da una versione a quella successiva. In questo caso, ClickOnce consente di copiare il file esistente e lo Usa nella nuova versione dell'applicazione. Questo approccio impedisce ClickOnce di dover scaricare l'intera applicazione nuovamente, anche se solo uno o due file sono stati modificati.  
+## <a name="file-patching"></a>Applicazione di patch ai file  
+ Quando si aggiorna un'applicazione, ClickOnce non Scarica tutti i file per la nuova versione dell'applicazione, a meno che i file non siano stati modificati. Al contrario, confronta le firme hash dei file specificati nel manifesto dell'applicazione per l'applicazione corrente con le firme nel manifesto per la nuova versione. Se le firme di un file sono diverse, ClickOnce Scarica la nuova versione. Se le firme corrispondono, il file non è stato modificato da una versione a quella successiva. In questo caso, ClickOnce copia il file esistente e lo utilizza nella nuova versione dell'applicazione. Questo approccio impedisce a ClickOnce di dover scaricare di nuovo l'intera applicazione, anche se sono stati modificati solo uno o due file.  
   
- Patch con file funziona anche per gli assembly che vengono scaricati su richiesta usando il <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> e <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> metodi.  
+ L'applicazione di patch ai file funziona anche per gli assembly scaricati su richiesta mediante i <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> metodi e.  
   
- Se si usa Visual Studio per compilare l'applicazione, verrà generato nuove firme hash per tutti i file ogni volta che si ricompila l'intero progetto. In questo caso, verranno scaricati tutti gli assembly al client, anche se solo alcuni assembly sia stato modificato.  
+ Se si usa Visual Studio per compilare l'applicazione, vengono generate nuove firme hash per tutti i file ogni volta che si ricompila l'intero progetto. In questo caso, tutti gli assembly verranno scaricati nel client, anche se è possibile che siano stati modificati solo pochi assembly.  
   
- File dell'applicazione di patch non funziona per i file sono contrassegnati come dati e archiviati nella directory dei dati. Questi vengono sempre scaricati indipendentemente dalla firma hash del file. Per altre informazioni sulla directory dei dati, vedere [l'accesso ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
+ L'applicazione di patch al file non funziona per i file contrassegnati come dati e archiviati nella directory dei dati. Vengono sempre scaricati indipendentemente dalla firma hash del file. Per ulteriori informazioni sulla directory dati, vedere [accesso a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   

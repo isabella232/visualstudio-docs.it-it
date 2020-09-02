@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 870e317cb8cea1acc3b4b4f51102283e5f1b28c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657559"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Finestre del flusso di lavoro di Visual Studio (legacy)
@@ -23,7 +23,7 @@ La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](
 
  La maggior parte delle finestre dell'utilità di progettazione legacy è familiare all'utente esperto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nella tabella seguente vengono descritte le finestre primarie.
 
-|Window|Descrizione|
+|Finestra|Descrizione|
 |------------|-----------------|
 |Area di progettazione del flusso di lavoro legacy|Area di progettazione visiva usata per creare un flusso di lavoro che viene destinato a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Offre la possibilità di comporre visivamente le attività trascinando gli ActivityDesigner dalla **casella degli strumenti** all'area di progettazione.|
 |Casella degli strumenti|Fornisce rappresentazioni grafiche delle attività che è possibile trascinare nell'area di progettazione.|

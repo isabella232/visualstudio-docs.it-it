@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ae3f1d74a482192d3782aaa87baa816694abcf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670792"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Procedura: ripristinare refactoring di frammenti C#
@@ -26,7 +26,7 @@ Le operazioni di refactoring di C# si basano sui frammenti di codice disponibili
 
  *Directory di installazione*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID linguaggio*\Refactoring
 
- Se la directory Refactoring o i file in questa directory vengono eliminati o danneggiati, le operazioni di refactoring di C# potrebbero non funzionare nell'IDE. Le procedure seguenti consentono di ripristinare i frammenti di codice per il refactoring di C#.
+ Se la directory Refactoring o i file in questa directory vengono eliminati o danneggiati, le operazioni di refactoring di C# potrebbero non funzionare nell'IDE. Le procedure seguenti consentono di ripristinare i frammenti di codice per il refactoring di C#. 
 
 ### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>Per verificare la disponibilità di frammenti di codice per il refactoring di C# tramite Gestione frammenti di codice
 
@@ -44,7 +44,7 @@ Le operazioni di refactoring di C# si basano sui frammenti di codice disponibili
 
 3. Nella finestra di dialogo **Gestione frammenti di codice** selezionare **Visual C#** nell'elenco a discesa **Linguaggio**.
 
-4. Fare clic su **Aggiungi**. Viene visualizzata la finestra di dialogo **Directory dei frammenti di codice**, che consente di individuare e specificare la directory da aggiungere nuovamente a Gestione frammenti di codice.
+4. Scegliere **Aggiungi**. Viene visualizzata la finestra di dialogo **Directory dei frammenti di codice**, che consente di individuare e specificare la directory da aggiungere nuovamente a Gestione frammenti di codice.
 
 5. Individuare la cartella **Refactoring**, il cui percorso di directory è:
 
@@ -57,4 +57,4 @@ Le operazioni di refactoring di C# si basano sui frammenti di codice disponibili
 6. Fare clic su **Apri** nella finestra di dialogo **Directory dei frammenti di codice** e quindi su **OK** in Gestione frammenti di codice.
 
 ## <a name="see-also"></a>Vedere anche
- [C# ](../ide/visual-csharp-code-snippets.md) [Frammenti di codice](../ide/code-snippets.md) per il [refactoringC#](../csharp-ide/refactoring-csharp.md) di frammenti di codice visivi ()
+ Frammenti di codice di [Visual c#](../ide/visual-csharp-code-snippets.md) [refactoring (C#)](../csharp-ide/refactoring-csharp.md) [frammenti di codice](../ide/code-snippets.md)

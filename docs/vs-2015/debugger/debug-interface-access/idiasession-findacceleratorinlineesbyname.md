@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 47883395ec12cac60d3a21651432f5ac21cc64a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151757"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Restituisce un'enumerazione dei simboli per i frame inline corrispondente al nome di funzione inline specificati.  
+Restituisce un'enumerazione di simboli per i frame inline che corrispondono al nome della funzione inline specificata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,19 +35,19 @@ HRESULT findAcceleratorInlineeLinesByName ( 
   
 #### <a name="parameters"></a>Parametri  
  `name`  
- [in] Il nome della funzione inline da cercare.  
+ in Nome della funzione inline in cui eseguire la ricerca.  
   
  `option`  
- [in] Le opzioni di ricerca del nome da usare durante la ricerca di inline di fotogrammi che corrispondono a `name`. Per altre informazioni, vedere [enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).  
+ in Opzioni di ricerca del nome da utilizzare per la ricerca di frame inline che corrispondono a `name` . Per ulteriori informazioni, vedere [enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).  
   
  `ppResult`  
- [out] Un puntatore a un `IDiaEnumSymbols` puntatore a interfaccia che viene inizializzato con il risultato.  
+ out Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con il risultato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questa funzione ricerca inline solo all'interno delle funzioni di stub di tasti di scelta rapida. Ignora i record di procedure native C++.  
+## <a name="remarks"></a>Osservazioni  
+ Questa funzione Cerca le inline solo nelle funzioni dello stub dell'acceleratore. Ignora i record delle procedure C++ native.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

@@ -8,10 +8,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150937"
 ---
 # <a name="import-an-xcode-project"></a>Importare un progetto XCode
@@ -30,21 +30,21 @@ Microsoft Visual C++ per lo sviluppo di app per dispositivi mobili multipiattafo
   
 2. Nel riquadro **Scegliere un progetto** fare clic sul pulsante Sfoglia per selezionare un file di XCode con estensione pbxproj. Passare al file di progetto nella finestra di dialogo **Seleziona il file di progetto Xcode**, quindi scegliere **Apri**.  
   
-    ![Selezionare un file di progetto nella finestra di dialogo Seleziona il file di progetto Xcode](../cross-platform/media/cppmdd-u2-importxcode-browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
+    ![Selezionare un file di progetto nella finestra di dialogo Seleziona file di progetto Xcode](../cross-platform/media/cppmdd-u2-importxcode-browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
     Nella procedura guidata Importa da Xcode scegliere **Avanti**.  
   
 3. Nel riquadro **Destinazioni di destinazione** selezionare le destinazioni del progetto XCode da importare nei progetti di Visual Studio. Le destinazioni di XCode sono simili ai progetti di Visual Studio: la maggior parte è una raccolta di codice e risorse che producono un file binario. La procedura guidata Importa da Xcode consente solo l'importazione di destinazioni che producono un file binario, ma non una libreria statica, come destinazioni di destinazione. Le destinazioni con una libreria statica XCode sono l'oggetto del passaggio successivo.  
   
-    ![Riquadro Destinazioni di destinazione della procedura guidata Importa da Xcode](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
+    ![Riquadro destinazioni di destinazione della procedura guidata Importa da XCode](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
   
-    Per ogni destinazione selezionata in **Destinazioni da importare**, la procedura guidata rileva automaticamente i file di codice C++ che possono essere suddivisi in un progetto di libreria statica distinto e li inserisce nella sezione **Elementi progetto C++** . Altro codice e altre risorse vengono mantenuti nella sezione **Elementi progetto XCode**. Al termine del processo di importazione, questi elementi diventano progetti di libreria statica e di applicazioni distinti in Visual Studio. Per impostazione predefinita, unit test e destinazioni dei framework non vengono suddivisi in progetti distinti dalla procedura guidata.  
+    Per ogni destinazione selezionata in **Destinazioni da importare**, la procedura guidata rileva automaticamente i file di codice C++ che possono essere suddivisi in un progetto di libreria statica distinto e li inserisce nella sezione **Elementi progetto C++**. Altro codice e altre risorse vengono mantenuti nella sezione **Elementi progetto XCode**. Al termine del processo di importazione, questi elementi diventano progetti di libreria statica e di applicazioni distinti in Visual Studio. Per impostazione predefinita, unit test e destinazioni dei framework non vengono suddivisi in progetti distinti dalla procedura guidata.  
   
     Per modificare i file contenuti in ogni progetto, usare i pulsanti Su e Giù. Quando si è soddisfatti con i file in ogni progetto, scegliere **Avanti** per continuare.  
   
 4. Nel riquadro **Destinazioni librerie** scegliere le destinazioni con una libreria statica del progetto XCode da importare nei progetti di Visual Studio. In questo riquadro è possibile scegliere quali file inserire in un progetto di codice condiviso e quali in un progetto di libreria statica. In ciascuna delle destinazioni nell'elenco **Destinazioni da importare** è possibile controllare quali file inserire in **Elementi progetto codice condiviso** e **Elementi progetto libreria statica** usando i pulsanti Su e Giù.  
   
-    ![Riquadro Destinazioni librerie della procedura guidata Importa da Xcode](../cross-platform/media/cppmdd-u2-importxcode-library.jpg "CPPMDD_U2_ImportXCode_Library")  
+    ![Importa dal riquadro Destinazioni libreria XCode](../cross-platform/media/cppmdd-u2-importxcode-library.jpg "CPPMDD_U2_ImportXCode_Library")  
   
     Un progetto di codice condiviso è un modo per condividere un set di file di codice sorgente tra progetti di Visual Studio. Il codice viene compilato come parte del progetto in cui è incluso, non come un progetto indipendente. Poiché i progetti che includono il codice condiviso possono avere diverse architetture e configurazioni, questo è il modo migliore per fornire un singolo progetto che contiene codice che può essere compilato per molti tipi di piattaforme.  
   
@@ -52,15 +52,15 @@ Microsoft Visual C++ per lo sviluppo di app per dispositivi mobili multipiattafo
   
 5. Il riquadro **Proprietà globali** può essere usato per impostare un percorso di ricerca framework e un percorso di ricerca intestazioni incluse per tutti i progetti iOS in Visual Studio. Visual Studio usa questi percorsi per l'esplorazione del codice sorgente e per IntelliSense. Questi percorsi globali sono utili quando si creano progetti iOS che usano un set comune di intestazioni e framework.  
   
-    ![Riquadro Proprietà globali della procedura guidata Importa da Xcode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
+    ![Importa dal riquadro proprietà globali di XCode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Questi percorsi globali possono anche essere impostati nella finestra di dialogo **Opzioni** di Visual Studio. Per individuarli, scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere **Multipiattaforma**, **C++** , **iOS**, **Proprietà globali**.  
+    Questi percorsi globali possono anche essere impostati nella finestra di dialogo **Opzioni** di Visual Studio. Per individuarli, scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere **Multipiattaforma**, **C++**, **iOS**, **Proprietà globali**.  
   
     Scegliere **Avanti** per continuare.  
   
-6. Il riquadro **Framework** viene usato per configurare i percorsi usati da Visual Studio per l'esplorazione e IntelliSense per il progetto. I percorsi devono essere accessibili a Visual Studio per ogni framework a cui fa riferimento il progetto XCode. La procedura guidata controlla i riferimenti ai framework nei progetti XCode e indica se Visual Studio può individuare il framework. Qualsiasi percorso che è già stato impostato in Proprietà globali verrà individuato da Visual Studio. Le eccezioni sono elencate nell'elenco Framework. Per ciascun framework elencato con una X, specificare un percorso accessibile nel PC in cui Visual Studio può individuare il framework. È possibile usare il pulsante Sfoglia […] per aprire la finestra di dialogo **Selezione cartella** e specificare il percorso. Il percorso del framework può fare riferimento a una copia locale o a una condivisione di rete accessibile sul Mac.  
+6. Il riquadro **Framework** viene usato per configurare i percorsi usati da Visual Studio per l'esplorazione e IntelliSense per il progetto. I percorsi devono essere accessibili a Visual Studio per ogni framework a cui fa riferimento il progetto XCode. La procedura guidata controlla i riferimenti ai framework nei progetti XCode e indica se Visual Studio può individuare il framework. Qualsiasi percorso che è già stato impostato in Proprietà globali verrà individuato da Visual Studio. Le eccezioni sono elencate nell'elenco Framework. Per ciascun framework elencato con una X, specificare un percorso accessibile nel PC in cui Visual Studio può individuare il framework. È possibile usare il pulsante Sfoglia [...] per usare una finestra di dialogo **Seleziona cartella** per trovare il percorso. Il percorso del framework può fare riferimento a una copia locale o a una condivisione di rete accessibile sul Mac.  
   
-    ![Riquadro Framework della procedura guidata Importa da Xcode](../cross-platform/media/cppmdd-u2-importxcode-frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
+    ![Riquadro Importa da Framework di XCode](../cross-platform/media/cppmdd-u2-importxcode-frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
   
     Scegliere **Avanti** per continuare.  
   
@@ -68,7 +68,7 @@ Microsoft Visual C++ per lo sviluppo di app per dispositivi mobili multipiattafo
   
     Per impostare un percorso per un progetto specifico, nell'elenco a discesa **Progetto di destinazione** selezionare il file di progetto, quindi impostare i valori nei controlli **Percorso di ricerca framework** e **Percorso di ricerca intestazioni incluse**. È possibile usare il pulsante Sfoglia […] accanto a ogni controllo per aprire la finestra di dialogo **Selezione cartella** e specificare il percorso.  
   
-    ![Riquadro Progetti della procedura guidata Importa da Xcode](../cross-platform/media/cppmdd-u2-importxcode-projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
+    ![Importa dal riquadro progetti XCode](../cross-platform/media/cppmdd-u2-importxcode-projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
   
     Se non è stato associato alcun Mac remoto a questo PC in Visual Studio, viene visualizzato il collegamento Configura un computer remoto. Per istruzioni su come configurare l'associazione, vedere [Installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f8599348d204d149f3e28d17d681941ddf476b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849323"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procedura: creare un set di regole per l'attività PolicyActivity (legacy)
@@ -36,15 +36,15 @@ In questo argomento viene descritto come creare un set di regole per PolicyActiv
 
 2. Fare clic sulla proprietà **RuleSetReference** .
 
-3. Effettuare una delle seguenti operazioni:
+3. Eseguire una delle operazioni seguenti:
 
     - Fare clic sui puntini di sospensione **[...]** di **RuleSetReference** e quindi selezionare un set di regole esistente nella finestra di [dialogo Seleziona set di regole (legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Andare al passaggio 10.
 
-         oppure
+         -oppure-
 
     - Digitare il nome da assegnare al set di regole. Fare clic sui puntini di sospensione **[...]** di **RuleSetReference** e quindi selezionare **modifica** nella finestra di [dialogo Seleziona set di regole (legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
 
-         oppure
+         -oppure-
 
     - Digitare il nome da assegnare al set di regole. Espandere la proprietà **RuleSetReference** e selezionare i puntini di sospensione **[...]** nella proprietà di **definizione di RuleSet** .
 

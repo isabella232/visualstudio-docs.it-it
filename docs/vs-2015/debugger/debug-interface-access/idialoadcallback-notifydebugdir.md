@@ -1,5 +1,5 @@
 ---
-title: Notifydebugdir | Microsoft Docs
+title: 'IDiaLoadCallback:: NotifyDebugDir | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2e8fe8ffe9d7d495e40c8c84b08aeaefb03e8d17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152003"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Chiamato quando è stata trovata una directory di debug nel file .exe.  
+Chiamato quando viene trovata una directory di debug nel file con estensione exe.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,23 +37,23 @@ HRESULT NotifyDebugDir ( 
   
 #### <a name="parameters"></a>Parametri  
  `fExecutable`  
- [in] `TRUE` se la directory di debug viene letto da un file eseguibile (anziché un file DBG).  
+ [in] `TRUE` Se la directory di debug viene letta da un eseguibile, anziché da un file con estensione dbg.  
   
  `cbData`  
- [in] Numero di byte dei dati nella directory di debug.  
+ in Numero di byte di dati nella directory di debug.  
   
  `data[]`  
- [in] Matrice che viene compilata con la directory di debug.  
+ in Matrice compilata con la directory di debug.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Il codice restituito in genere viene ignorato.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Il codice restituito viene in genere ignorato.  
   
-## <a name="remarks"></a>Note  
- Il [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metodo richiama il callback quando viene trovata una directory di debug durante l'elaborazione del file eseguibile.  
+## <a name="remarks"></a>Osservazioni  
+ Il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) richiama questo callback quando trova una directory di debug durante l'elaborazione del file eseguibile.  
   
- Questo metodo rimuove la necessità per il client decodificare il file eseguibile e/o di debug per supportare le informazioni di debug diverso da quello trovato nel file con estensione pdb. Con questi dati, il client in grado di riconoscere il tipo di informazioni di debug disponibili e che si trova all'interno del file eseguibile o il file DBG.  
+ Questo metodo elimina la necessità per il client di decompilare il file eseguibile e/o di debug per supportare le informazioni di debug diverse da quelle presenti nel file con estensione pdb. Con questi dati, il client è in grado di riconoscere il tipo di informazioni di debug disponibili e se risiede nel file eseguibile o nel file con estensione dbg.  
   
- La maggior parte dei client non sarà necessario questo callback perché le `IDiaDataSource::loadDataForExe` metodo apre in modo trasparente i file con estensione pdb sia DBG quando è necessaria per soddisfare i simboli.  
+ La maggior parte dei client non richiede questo callback perché il `IDiaDataSource::loadDataForExe` metodo apre in modo trasparente i file con estensione PDB e DBG quando necessario per gestire i simboli.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   

@@ -1,5 +1,5 @@
 ---
-title: Elemento CommandPlacement . Documenti Microsoft
+title: Elemento CommandPlacement | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739739"
 ---
-# <a name="commandplacement-element"></a>CommandPlacement (elemento)
-L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in più gruppi o menu. Utilizzando l'elemento CommandPlacement, non è necessario ridefinire completamente questi elementi per modificare l'aspetto di un'interfaccia utente.
+# <a name="commandplacement-element"></a>Elemento CommandPlacement
+L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in più di un gruppo o menu. Utilizzando l'elemento CommandPlacement, non è necessario ridefinire completamente questi elementi per modificare l'aspetto di un'interfaccia utente.
 
- Per ulteriori informazioni, consultate [Creare gruppi riutilizzabili di pulsanti.](../extensibility/creating-reusable-groups-of-buttons.md)
+ Per altre informazioni, vedere [creare gruppi riutilizzabili di pulsanti](../extensibility/creating-reusable-groups-of-buttons.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,26 +34,26 @@ L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in pi�
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|guid|Obbligatorio. Guid del set di comandi, come definito [nell'elemento Symbols](../extensibility/symbols-element.md).|
-|id|Obbligatorio. ID del menu, del gruppo o del comando da `Symbols Element`inserire, come definito nel file .|
+|guid|Obbligatorio. GUID del set di comandi, come definito nell' [elemento symbols](../extensibility/symbols-element.md).|
+|id|Obbligatorio. ID del menu, del gruppo o del comando da inserire, come definito in `Symbols Element` .|
 |priority|Obbligatorio. Determina la posizione visiva dell'elemento nel relativo elemento padre.|
-|Condizione|Facoltativa. Consultate [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|Condizione|facoltativo. Vedere [Aattributes condizionale](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Parent|Obbligatorio. Menu o gruppo che ospita l'elemento da posizionare.|
+|Parent|Obbligatorio. Menu o gruppo che ospita l'elemento da inserire.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[CommandPlacements (elemento)](../extensibility/commandplacements-element.md)|Specifica gruppi di elementi CommandPlacements e CommandPlacement.|
+|[Elemento CommandPlacements](../extensibility/commandplacements-element.md)|Specifica i gruppi di elementi CommandPlacements e CommandPlacement.|
 
 ## <a name="example"></a>Esempio
 
@@ -67,5 +67,5 @@ L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in pi�
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [CommandPlacements (elemento)](../extensibility/commandplacements-element.md)
+- [Elemento CommandPlacements](../extensibility/commandplacements-element.md)
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

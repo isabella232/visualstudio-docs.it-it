@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30b13610cc59b8a0225e52abf47f9a4f2cc97d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657573"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gestire modelli e diagrammi nel controllo della versione
@@ -28,7 +28,7 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
 > [!IMPORTANT]
 > Prestare attenzione quando diversi utenti lavorano sullo stesso progetto di modellazione. Scoprire come [organizzare modelli in progetti di medie o grandi dimensioni](../modeling/structure-your-modeling-solution.md).
 
-## <a name="ModelingProjects"></a>File in un progetto di modello
+## <a name="files-in-a-modeling-project"></a><a name="ModelingProjects"></a> File in un progetto di modello
  Più utenti possono usare un progetto di modellazione contemporaneamente, purché lavorino su file diversi.
 
  Per evitare o risolvere i conflitti tra le modifiche apportate da utenti diversi, è importante comprendere la modalità di archiviazione del modello nei file.
@@ -42,9 +42,9 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
   - **DiagramName.classdiagram.layout** - Se questo file viene eliminato, le forme verranno comunque visualizzate nel diagramma, ma le loro dimensioni e posizioni andranno perse. Ogni file di layout è affiliato a un file di diagramma. Per visualizzarlo, fare clic su [+] accanto al file di diagramma in Esplora soluzioni.
 
 > [!NOTE]
-> È importante mantenere la coerenza tra i file. Ad esempio, se si usa il controllo del codice sorgente per eseguire il rollback delle modifiche in un file UML, è necessario eseguire contemporaneamente il rollback delle modifiche corrispondenti nei file con estensione *diagram e layout. Elementi rappresentati in un oggetto. il file di \*diagram andrà perso se non sono anche rappresentati in un file con estensione UML.
+> È importante mantenere la coerenza tra i file. Ad esempio, se si usa il controllo del codice sorgente per eseguire il rollback delle modifiche in un file UML, è necessario eseguire contemporaneamente il rollback delle modifiche corrispondenti nei file con estensione *diagram e layout. Elementi rappresentati in un oggetto. \* il file del diagramma andrà perso se non sono anche rappresentati in un file con estensione UML.
 
-## <a name="Shared"></a>Utilizzo di progetti di modellazione condivisi
+## <a name="working-on-shared-modeling-projects"></a><a name="Shared"></a> Utilizzo di progetti di modellazione condivisi
  Per ridurre al minimo i conflitti tra operazioni simultanee su parti diverse di un progetto:
 
 - Dividere un progetto di modellazione in pacchetti che rappresentano diverse aree di lavoro. Spostare l'intero modello nei pacchetti, anziché lasciarlo nel modello radice. Per altre informazioni, vedere [definire pacchetti e spazi dei nomi](../modeling/define-packages-and-namespaces.md).
@@ -70,7 +70,7 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
     > [!NOTE]
     > Se un file viene aperto quando si esegue un'operazione **Leggi**e l'operazione comporta modifiche locali, verrà richiesto di ricaricare il file. In questo caso, fare clic su **No**, quindi ricaricare il progetto completo. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto di modellazione, scegliere **Scarica progetto**e quindi scegliere **Ricarica progetto**.
 
-### <a name="Exclusive"></a>Modifiche che richiedono l'accesso esclusivo al modello
+### <a name="changes-requiring-exclusive-access-to-the-model"></a><a name="Exclusive"></a> Modifiche che richiedono l'accesso esclusivo al modello
  Prima di eseguire i seguenti tipi di modifiche, assicurarsi che sia presente un blocco di estrazione per l'intero progetto.
 
 - Ridenominazione o eliminazione di elementi a cui si fa riferimento da altri pacchetti.
@@ -96,7 +96,7 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
     > [!NOTE]
     > Non è possibile spostare il file in un progetto diverso.
 
-## <a name="Merging"></a>Unione di modifiche nei file di modello e nei diagrammi
+## <a name="merging-changes-in-model-files-and-diagrams"></a><a name="Merging"></a> Unione di modifiche nei file di modello e nei diagrammi
  Quando più utenti lavorano su un modello contemporaneamente, [!INCLUDE[esprscc](../includes/esprscc-md.md)] richiederà di unire le modifiche nei file di modello. Lavorando su progetti separati come descritto nelle sezioni precedenti è possibile evitare la maggior parte delle unioni. In genere i conflitti rimanenti possono essere uniti automaticamente in modo sicuro. I seguenti tipi di modifiche non dovrebbero comportare alcuna difficoltà:
 
 - Tipi di linee di vita. Quando si aggiunge una linea di vita a un'interazione (diagramma di sequenza), il relativo tipo viene archiviato nel modello radice, a meno che la linea di vita non sia stata creata da un tipo esistente.

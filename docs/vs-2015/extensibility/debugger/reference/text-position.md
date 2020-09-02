@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 210435231f98c19c16715817e2403f95da3d1f43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204827"
 ---
-# <a name="textposition"></a>TEXT_POSITION
+# <a name="text_position"></a>TEXT_POSITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descrive la posizione di riga e colonna in testo specificato.  
+Descrive la posizione della riga e della colonna nel testo specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,17 +40,17 @@ public struct TEXT_POSITION { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  dwLine  
  Indice della riga nel file di origine.  
   
  dwColumn  
  Offset carattere nella riga.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene utilizzata la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) strutture.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene utilizzata nelle strutture [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .  
   
- Questa struttura viene compilata da una chiamata ai metodi seguenti:  
+ Questa struttura viene compilata mediante una chiamata ai metodi seguenti:  
   
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)  
   
@@ -60,7 +60,7 @@ public struct TEXT_POSITION { 
   
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)  
   
-  Questa struttura viene passata come parametro per i metodi seguenti:  
+  Questa struttura viene passata come parametro ai metodi seguenti:  
   
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)  
   
@@ -73,9 +73,9 @@ public struct TEXT_POSITION { 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

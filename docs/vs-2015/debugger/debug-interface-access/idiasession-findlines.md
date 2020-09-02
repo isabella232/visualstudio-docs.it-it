@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4cf6ff2f1484255fc6c535ce764a5c6335161b44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151673"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera i numeri di riga all'interno di compilando specificato e gli identificatori di file di origine.  
+Recupera i numeri di riga all'interno degli identificatori del file di origine e modulo specificati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,16 +37,16 @@ HRESULT findLines ( 
   
 #### <a name="parameters"></a>Parametri  
  `compiland`  
- [in] Un' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il modulo. Utilizzare questa interfaccia come un contesto in cui cercare i numeri di riga.  
+ in Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il modulo. Usare questa interfaccia come un contesto in cui cercare i numeri di riga.  
   
  `file`  
- [in] Un' [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) oggetto che rappresenta il file di origine in cui cercare i numeri di riga.  
+ in Oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine in cui cercare i numeri di riga.  
   
  `ppResult`  
- [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) recuperare l'oggetto che contiene un elenco di numeri di riga.  
+ out Restituisce un oggetto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) che contiene un elenco dei numeri di riga recuperati.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   

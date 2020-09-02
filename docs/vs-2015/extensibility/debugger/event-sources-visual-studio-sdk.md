@@ -11,19 +11,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a01216f8580e5c366cc6072448a0cf7ef4e6d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152806"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Origini eventi (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Sono disponibili due origini di eventi: il motore di debug (DE) e la sessione di debug manager (SDM). Gli eventi inviati da un CRI hanno un motore diverso da NULL, mentre gli eventi inviati dal modello SDM hanno un motore NULL.  
+Esistono due origini di eventi: il motore di debug (DE) e la gestione del debug della sessione (SDM). Gli eventi inviati da un DE hanno un motore non NULL, mentre gli eventi inviati da SDM hanno un motore NULL.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come inviare le **IDebugProgramCreateEvent2** dal DE per il modello SDM.  
+ Nell'esempio seguente viene illustrato come inviare **IDebugProgramCreateEvent2** da de a SDM.  
   
 ```  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare un set di regole personalizzato | Microsoft Docs'
+title: 'Procedura: creare un set di regole personalizzato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6e4aef02a2bb320112d7d268da28cf66b1ec6751
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657453"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Procedura: Creare un set di regole personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)], è possibile creare e modificare un set di *regole* personalizzato per soddisfare esigenze specifiche del progetto associate all'analisi del codice. Per creare un set di regole personalizzato, è possibile aprire uno o più set di regole standard nell'Editor set di regole. È quindi possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando l'analisi del codice determina che una regola è stata violata.
+In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] , [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)] è possibile creare e modificare un *set di regole* personalizzate per soddisfare specifiche esigenze di progetto associate all'analisi del codice. Per creare un set di regole personalizzato, è possibile aprire uno o più set di regole standard nell'Editor set di regole. È quindi possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando l'analisi del codice determina che una regola è stata violata.
 
  Per creare un nuovo set di regole personalizzate, salvarlo con un nuovo nome file. Il set di regole personalizzate viene assegnato automaticamente al progetto.
 
@@ -31,7 +31,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
 #### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Per aprire un file del set di regole vuoto nell'Editor set di regole
 
-1. Scegliere **nuovo** dal menu **file** di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] e quindi fare clic su **file**.
+1. Scegliere nuovo **File** dal menu file [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , quindi fare **New** clic su **file**.
 
 2. Nella finestra di dialogo **nuovo file** fare clic su **generale** nell'elenco **modelli installati** , quindi selezionare **set di regole di analisi codice**.
 
@@ -47,9 +47,9 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
    - Selezionare il set di regole che si desidera personalizzare.
 
-     \- oppure -
+     \- - oppure -
 
-   - Seleziona **\<Browse... >** per specificare un set di regole esistente non presente nell'elenco.
+   - Selezionare **\<Browse...>** questa impostazione per specificare un set di regole esistente non presente nell'elenco.
 
 4. Fare clic su **Apri** per visualizzare le regole nell'Editor set di regole.
 
@@ -59,7 +59,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
 2. Nella scheda **Proprietà** fare clic su **analisi codice**.
 
-3. Selezionare **\<Choose più set di regole... >** da **Esegui questo set di regole**.
+3. Selezionare **\<Choose multiple rule sets...>** da **Esegui questo set di regole**.
 
 4. Nella finestra di dialogo **Aggiungi o Rimuovi set di regole** selezionare i set di regole su cui si desidera basare il nuovo set di regole e quindi fare clic su **OK**.
 
@@ -97,7 +97,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 
 - Per comprimere le regole in tutti i gruppi, fare clic su **Comprimi tutto**.
 
-- Per modificare il campo in base al quale vengono raggruppate le regole, selezionare il campo dall'elenco **Raggruppa per** . Per visualizzare le regole non raggruppate, selezionare **\<None >** .
+- Per modificare il campo in base al quale vengono raggruppate le regole, selezionare il campo dall'elenco **Raggruppa per** . Per visualizzare le regole non raggruppate, selezionare **\<None>** .
 
 - Per aggiungere o rimuovere campi nelle colonne delle regole, fare clic su **Opzioni colonne**.
 
@@ -112,4 +112,4 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
 - Per aggiungere o rimuovere set di regole predefinite di Microsoft sul set di regole corrente, fare clic su **Aggiungi o Rimuovi set di regole figlio**.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Configurare l'analisi del codice per un progetto di codice gestito ](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [riferimento al set di regole di analisi del codice](../code-quality/code-analysis-rule-set-reference.md)
+ [Procedura: configurare l'analisi del codice per un riferimento al set di regole di analisi del codice di un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [Code analysis rule set reference](../code-quality/code-analysis-rule-set-reference.md)

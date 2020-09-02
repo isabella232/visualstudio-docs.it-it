@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::Parse . Documenti Microsoft
+title: IDebugExpressionEvaluator::P ass | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d1af9d3f253a9849f54bb5a50d432b98eb4ad7b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729499"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
@@ -51,22 +51,22 @@ int Parse(
 
 ## <a name="parameters"></a>Parametri
 `upstrExpression`\
-[in] Stringa di espressione da analizzare.
+in Stringa dell'espressione da analizzare.
 
 `dwFlags`\
-[in] Raccolta di costanti [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) che determinano la modalità di analisi dell'espressione.
+in Raccolta di costanti [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) che determinano il modo in cui l'espressione deve essere analizzata.
 
 `nRadix`\
-[in] Radix da utilizzare per interpretare qualsiasi informazione numerica.
+in Radice da usare per interpretare le informazioni numeriche.
 
 `pbstrError`\
-[fuori] Restituisce l'errore come testo leggibile.
+out Restituisce l'errore come testo leggibile.
 
 `pichError`\
-[fuori] Restituisce la posizione del carattere dell'inizio dell'errore nella stringa di espressione.
+out Restituisce la posizione del carattere all'inizio dell'errore nella stringa dell'espressione.
 
 `ppParsedExpression`\
-[fuori] Restituisce l'espressione analizzata in un [Oggetto IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md)
+out Restituisce l'espressione analizzata in un oggetto [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,5 +1,5 @@
 ---
-title: Struttura TResult&lt;&gt; AsyncTaskMethodBuilder - Membri interni Documenti Microsoft
+title: '&lt;Struttura AsyncTaskMethodBuilder TResult &gt; -membri interni | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9c4f4da7070af09937af9e047ec83142584942e6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739341"
 ---
-# <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder&lt;TResult&gt; struttura - membri interni
-In questo argomento vengono descritti <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> i membri interni della classe. Per informazioni generali su questa <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> classe, vedere l'argomento di riferimento.
+# <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>&lt;Struttura AsyncTaskMethodBuilder TResult &gt; -membri interni
+In questo argomento vengono descritti i membri interni della <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> classe. Per informazioni generali su questa classe, vedere l' <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> argomento di riferimento.
 
- **Spazio dei nomi:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Spazio dei nomi:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **Assembly:** mscorlib (in mscorlib.dll)
 
- Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente è disponibile in Common Intermediate Language (CIL).
+ Poiché non è possibile accedere a questi membri interni dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,9 +39,9 @@ In questo argomento vengono descritti <xref:System.Runtime.CompilerServices.Asyn
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[ObjectIdForDebugger (proprietà)](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Ottiene un oggetto che può essere utilizzato per identificare in modo univoco questo generatore nel debugger.|
-|[m_task campo](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Rappresenta l'attività compilata inizializzata in modo lato.|
+|[Proprietà ObjectIdForDebugger](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|Ottiene un oggetto che può essere utilizzato per identificare in modo univoco il generatore al debugger.|
+|[campo m_task](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|Rappresenta l'attività compilata in modo differito.|
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [Elementi interni delle estensioni parallele per .NET FrameworkParallel extension internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Interni di estensioni parallele per la .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

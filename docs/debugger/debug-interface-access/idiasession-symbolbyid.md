@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01c2470be57616dcb026c3f5f29e3b2ab2a11a4e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465391"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
@@ -43,7 +43,7 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 L'identificatore specificato è un valore univoco usato internamente dal DIA SDK per rendere univoci tutti i simboli.
 
 Questo metodo può essere usato, ad esempio, per recuperare il simbolo che rappresenta il tipo di un altro simbolo (vedere l'esempio).

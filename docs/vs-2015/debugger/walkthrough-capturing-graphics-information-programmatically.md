@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847814"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di acquisire a livello di codice informazioni grafiche da un'app Direct3D.  
@@ -29,7 +29,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 - Chiamare `CaptureCurrentFrame`quando un problema di rendering è difficile da prevedere e acquisire nei test manuali, ma può essere previsto a livello di codice usando le informazioni sullo stato dell'app in fase di esecuzione.  
   
-## <a name="CaptureDX11_2"></a> Acquisizione a livello di codice in Windows 8.1  
+## <a name="programmatic-capture-in-windows-81"></a><a name="CaptureDX11_2"></a> Acquisizione a livello di codice in Windows 8.1  
  Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice nelle app che usano l'API DirectX 11.2 su Windows 8.1, che usa il metodo di acquisizione affidabile. Per informazioni sull'acquisizione a livello di codice nelle app che usano versioni precedenti di DirectX in Windows 8.0, vedere [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) più avanti in questa procedura dettagliata.  
   
  Questa sezione illustra l'esecuzione delle attività seguenti:  
@@ -64,7 +64,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
     > Se nel computer è installata la versione di DirectX SDK del giugno 2010 e il percorso di inclusione del progetto contiene `%DXSDK_DIR%includex86`, spostarlo alla fine del percorso di inclusione. Eseguire la stessa operazione per il percorso della libreria.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- Poiché il Windows Phone 8,1 SDK non include l'intestazione DXProgrammableCapture. h, è necessario definire autonomamente l'interfaccia di `IDXGraphicsAnalysis`, in modo da poter usare i metodi di `BeginCapture()` e `EndCapture()`. Includere altre intestazioni come descritto nella sezione precedente.  
+ Poiché il Windows Phone 8,1 SDK non include l'intestazione DXProgrammableCapture. h, è necessario definire `IDXGraphicsAnalysis` manualmente l'interfaccia in modo che sia possibile usare i `BeginCapture()` metodi e `EndCapture()` . Includere altre intestazioni come descritto nella sezione precedente.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Per definire l'interfaccia IDXGraphicsAnalysis  
   
@@ -85,7 +85,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
  Prima di poter acquisire informazioni grafiche da DirectX 11.2, è necessario ottenere l'interfaccia di debug DXGI.  
   
 > [!IMPORTANT]
-> Quando si usa l'acquisizione a livello di codice, è comunque necessario eseguire l'app in diagnostica grafica (ALT + F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) o nello [strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md).  
+> Quando si usa l'acquisizione a livello di codice, è comunque necessario eseguire l'app in diagnostica grafica (ALT + F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ) o nello [strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Per ottenere l'interfaccia IDXGraphicsAnalysis  
   
@@ -129,7 +129,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
     ...  
     ```  
   
-## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="programmatic-capture-in-windows-80-and-earlier"></a><a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice per Windows 8.0 e versioni precedenti che usano l'API DirectX 11.1, che usa il metodo di acquisizione legacy. Per informazioni sull'acquisizione a livello di codice nelle app che usano DirectX 11.2 in Windows 8.1, vedere [Acquisizione a livello di codice in Windows 8.1](#CaptureDX11_2) in precedenza in questa procedura dettagliata.  
   
  Questa sezione illustra le attività seguenti:  
@@ -182,7 +182,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
    Se non si esegue questo passaggio, il file verrà denominato default.vsglog. Se `DONT_SAVE_VSGLOG_TO_TEMP`non è stato definito, il percorso del file è relativo alla directory temporanea. In caso contrario, è relativo alla directory di lavoro o a un'altra posizione se è stato specificato un nome file assoluto.  
   
-  Per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, il percorso della directory temporanea è specifico per ogni utente e app e si trova in genere in un percorso come C:\Users\\*nomeutente*\AppData\Local\Packages\\nome della *famiglia di pacchetti*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico per ogni utente e si trova in genere in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp\\.  
+  Per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] le app, il percorso della directory temporanea è specifico per ogni utente e app e si trova in genere in un percorso, ad esempio C:\Users \\ *nomeutente*\AppData\Local\Packages \\ *pacchetto nome famiglia*\TempState \\ . Per le applicazioni desktop, il percorso della directory temporanea è specifico per ogni utente e in genere si trova in un percorso come C:\Users \\ *nomeutente*\AppData\Local\Temp \\ .  
   
 > [!NOTE]
 > Per scrivere in una posizione specifica è necessario disporre delle autorizzazioni per la scrittura in quella posizione. In caso contrario, si verificherà un errore. Tenere presente che le app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] hanno più restrizioni rispetto alle app desktop sui percorsi in cui è possibile scrivere dati e che per scrivere in determinati percorsi può essere necessario eseguire operazioni di configurazione aggiuntive.  
@@ -200,5 +200,5 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: acquisizione di informazioni grafiche](../debugger/walkthrough-capturing-graphics-information.md)   
- [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
+ [Acquisizione delle informazioni grafiche](../debugger/capturing-graphics-information.md)   
  [Strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md)

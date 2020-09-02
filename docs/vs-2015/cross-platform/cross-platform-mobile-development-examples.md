@@ -12,13 +12,13 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151010"
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
+# <a name="cross-platform-mobile-development-examples"></a>Esempi di Sviluppo app per dispositivi mobili multipiattaforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma generano esempi completi che è possibile usare per acquisire dimestichezza. Inoltre, in Windows Dev Center sono disponibili molte applicazioni di esempio che è possibile scaricare e provare in Visual Studio.  
@@ -53,4 +53,4 @@ Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobi
   
   Per aprire uno degli esempi in Visual Studio, scaricare il file ZIP e aprire la pagina **Proprietà** del file scaricato in Esplora risorse. Scegliere il pulsante **Sblocca** , quindi **OK**. Estrarre il contenuto del file ZIP nel percorso desiderato, quindi aprire la cartella C++ nell'esempio estratto e aprire il file della soluzione.  
   
-  Per compilare l'esempio, premere F7 oppure scegliere **Compila**, **Compila soluzione**sulla barra dei menu.
+  Per compilare l'esempio, premere F7 oppure sulla barra dei menu scegliere **Compila**, **Compila soluzione**.

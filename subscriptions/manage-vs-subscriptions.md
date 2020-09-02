@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
 ms.openlocfilehash: da78c4f9212341636d85453ad19dde549ddb0e20
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248432"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
@@ -99,7 +99,7 @@ Una volta aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>D: Se non si rinnova la sottoscrizione, per quanto tempo Microsoft mantiene i dati?
 R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per diversi periodi di tempo.
 
-| Channel                                                | Durata (giorni) |
+| Canale                                                | Durata (giorni) |
 |--------------------------------------------------------|-----------------|
 |    Vendita al dettaglio (ad esempio, tramite Microsoft Store)               |    360          |
 |    Volume Licensing Service Center (VLSC)              |    180          |

@@ -11,10 +11,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6823b462f884e06e1729c9bb4777cc166b34ea7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204625"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelli di Visual Studio)
@@ -22,8 +22,8 @@ ms.locfileid: "68204625"
 
 Specifica se l'utente può modificare il campo del percorso.  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<EnableEditOfLocationField>  
   
 ## <a name="syntax"></a>Sintassi  
@@ -36,10 +36,10 @@ Specifica se l'utente può modificare il campo del percorso.
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
- Nessuna  
+ Nessuno  
   
 ### <a name="child-elements"></a>Elementi figlio  
- Nessuna  
+ Nessuno  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
@@ -50,15 +50,15 @@ Specifica se l'utente può modificare il campo del percorso.
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false`, che indica se l'utente può modificare il **posizione** casella di testo al **nuovo progetto** nella finestra di dialogo.  
+ Il testo deve essere `true` o `false` , che indica se l'utente può modificare la casella di testo **percorso** nella finestra di dialogo **nuovo progetto** .  
   
-## <a name="remarks"></a>Note  
- `EnableEditOfLocationField` è un elemento facoltativo. Il valore predefinito è `true`, che consente all'utente di modificare il valore di **posizione** casella di testo nel **nuovo progetto** nella finestra di dialogo.  
+## <a name="remarks"></a>Osservazioni  
+ `EnableEditOfLocationField` è un elemento facoltativo. Il valore predefinito è `true` , che consente all'utente di modificare il valore nella casella di testo **percorso** della finestra di dialogo **nuovo progetto** .  
   
- Nel **nuovo progetto** della finestra di dialogo il **posizione** casella di testo specifica la directory in cui viene salvato un nuovo progetto.  
+ Nella casella di testo **percorso** della finestra di dialogo **nuovo progetto** viene specificata la directory in cui viene salvato un nuovo progetto.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
+ Nell'esempio seguente vengono illustrati i metadati per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,5 +87,5 @@ Specifica se l'utente può modificare il campo del percorso.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

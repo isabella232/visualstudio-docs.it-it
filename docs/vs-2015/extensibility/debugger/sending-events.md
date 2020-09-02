@@ -1,5 +1,5 @@
 ---
-title: L'invio di eventi | Microsoft Docs
+title: Invio di eventi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,37 +11,37 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98247b894d2db628d508713875ba0ea7d0642729
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204735"
 ---
 # <a name="sending-events"></a>Invio di eventi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il meccanismo per la comunicazione tra il debugger e il motore di debug (DE) è un modello di eventi basato su DCOM. Gli eventi vengono inviati come oggetti COM, e ogni evento dispone di parametri che specificano il seguente:  
+Il meccanismo per la comunicazione tra il debugger e il motore di debug (DE) è un modello di eventi basato su DCOM. Gli eventi vengono inviati come oggetti COM e ogni evento dispone di parametri che specificano quanto segue:  
   
-- Germania che ha chiamato l'evento.  
+- Oggetto DE che ha chiamato l'evento.  
   
-- Descrizione di cosa è successo.  
+- Descrizione degli eventi.  
   
-- Il processo, programma e informazioni sul thread che identifica il contesto di in cui si è verificato l'evento. Il processo non viene inviato per gli eventi inviati da un CRI.  
+- Informazioni sul processo, sul programma e sul thread che identificano il contesto in cui si è verificato l'evento. Il processo non viene inviato per gli eventi inviati da un DE.  
   
-- Il tipo di evento che indica se l'evento è sincrono o asincrono.  
+- Tipo di evento che indica se l'evento è sincrono o asincrono.  
   
-  Tutti gli eventi di debug vengono inviati usando il metodo [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+  Tutti gli eventi di debug vengono inviati usando il metodo [IDebugEventCallback2:: Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Origini evento](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
- Illustra le due origini di eventi: il motore di debug (DE) e la sessione di debug manager (SDM).  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Origini eventi](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
+ Vengono illustrate le due origini degli eventi: il motore di debug (DE) e la gestione del debug della sessione (SDM).  
   
  [Tipi di evento supportati](../../extensibility/debugger/supported-event-types.md)  
- Vengono descritti i tipi di eventi attualmente supportate: sincrone e asincrone.  
+ Vengono illustrati i tipi di eventi attualmente supportati: asincrono e sincrono.  
   
  [Descrizioni di eventi](../../extensibility/debugger/event-descriptions.md)  
- Definisce gli eventi e i motivi per l'uso.  
+ Definisce gli eventi e i motivi per utilizzarli.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Descrive come un CRI funziona con l'interprete o sistema operativo per fornire servizi di debug.
+ Viene descritto il funzionamento di un DE con l'interprete o il sistema operativo per fornire servizi di debug.

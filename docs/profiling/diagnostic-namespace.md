@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330258"
 ---
 # <a name="diagnostic-namespace"></a>Spazio dei nomi diagnostic
@@ -28,18 +28,18 @@ Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcator
 namespace diagnostic;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
 ### <a name="classes"></a>Classi
 
-|Nome|Description|
+|Name|Descrizione|
 |----------|-----------------|
 |[Classe marker_series](../profiling/marker-series-class.md)|Rappresenta un canale seriale di eventi generati da un singolo provider.|
-|[Classe span](../profiling/span-class.md)|Definisce una fase dell'applicazione.|
+|[Classe Span](../profiling/span-class.md)|Definisce una fase dell'applicazione.|
 
 ### <a name="enumerations"></a>Enumerazioni
 
-|Nome|Description|
+|Name|Descrizione|
 |----------|-----------------|
 |[Enumerazione marker_importance](../profiling/marker-importance-enumeration.md)|Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.|
 
@@ -48,5 +48,5 @@ namespace diagnostic;
 
  **Spazio dei nomi:** Concorrenza
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Spazio dei nomi Concurrency (Visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1899e59e6eb11b53757d28f9babc09739b1fdad3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151887"
 ---
-# <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
+# <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che indica se la sezione non può essere trasferita memoria insufficiente.  
+Recupera un flag che indica se non è possibile eseguire il paging della sezione alla memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,7 +35,7 @@ HRESULT get_notPaged ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out, retval] Restituisce `TRUE` se la sezione non può essere trasferita; in caso contrario, restituisce `FALSE`.  
+ [out, retval] Restituisce `TRUE` se non è possibile eseguire il paging della sezione; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

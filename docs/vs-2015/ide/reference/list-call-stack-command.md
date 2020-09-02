@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c44ac18468fbd26adab2cf973a21df58ebb28c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657652"
 ---
 # <a name="list-call-stack-command"></a>Comando Elenca stack di chiamate
@@ -39,28 +39,28 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ## <a name="arguments"></a>Argomenti
  `index` Facoltativo. Imposta lo stack frame corrente e non visualizza alcun output.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  Ogni opzione può essere richiamata usando la forma completa o una forma breve.
 
- /Count: `number` [o]/C: `number` facoltativa. Numero massimo di stack di chiamate da visualizzare. Il valore predefinito è illimitato.
+ /Count: `number` [o]/c: `number` facoltativo. Numero massimo di stack di chiamate da visualizzare. Il valore predefinito è illimitato.
 
- /ShowTypes: `yes`&#124; `no` [o]/t: `yes`&#124; `no` facoltativo. Specifica se visualizzare i tipi di parametro. Il valore predefinito è `yes`.
+ /ShowTypes: `yes`&#124;`no` [o]/t: `yes`&#124;`no` facoltativa. Specifica se visualizzare i tipi di parametro. Il valore predefinito è `yes`.
 
- /ShowNames: `yes`&#124; `no` [o]/n: `yes`&#124; `no` facoltativo. Specifica se visualizzare i nomi dei parametri. Il valore predefinito è `yes`.
+ /ShowNames: `yes`&#124;`no` [o]/n: `yes`&#124;`no` facoltativa. Specifica se visualizzare i nomi dei parametri. Il valore predefinito è `yes`.
 
- /ShowValues: `yes`&#124; `no` [o]/v: `yes`&#124; `no` facoltativo. Specifica se visualizzare i valori dei parametri. Il valore predefinito è `yes`.
+ /ShowValues: `yes`&#124;`no` [o]/v: `yes`&#124;`no` facoltativa. Specifica se visualizzare i valori dei parametri. Il valore predefinito è `yes`.
 
- /ShowModule: `yes`&#124; `no` [o]/m: `yes`&#124; `no` facoltativo. Specifica se visualizzare il nome del modulo. Il valore predefinito è `yes`.
+ /ShowModule: `yes`&#124;`no` [o]/m: `yes`&#124;`no` facoltativa. Specifica se visualizzare il nome del modulo. Il valore predefinito è `yes`.
 
- /ShowLineOffset: `yes`&#124; `no` [or]/#: `yes`&#124; `no` facoltativo. Specifica se visualizzare l'offset di riga. Il valore predefinito è `no`.
+ /ShowLineOffset: `yes`&#124;`no` [o]/#: `yes`&#124;`no` facoltativa. Specifica se visualizzare l'offset di riga. Il valore predefinito è `no`.
 
- /ShowByteOffset: `yes`&#124; `no` [o]/b: `yes`&#124; `no` facoltativo. Specifica se visualizzare l'offset di byte. Il valore predefinito è `no`.
+ /ShowByteOffset: `yes`&#124;`no` [o]/b: `yes`&#124;`no` facoltativa. Specifica se visualizzare l'offset di byte. Il valore predefinito è `no`.
 
- /ShowLanguage: `yes`&#124; `no` [o]/l: `yes`&#124; `no` facoltativo. Specifica se visualizzare la lingua. Il valore predefinito è `no`.
+ /ShowLanguage: `yes`&#124;`no` [o]/l: `yes`&#124;`no` facoltativa. Specifica se visualizzare la lingua. Il valore predefinito è `no`.
 
- /IncludeCallsAcrossThreads: `yes`&#124; `no` [o]/i: `yes`&#124; `no` facoltativo. Specifica se includere le chiamate a o da altri thread. Il valore predefinito è `no`.
+ /IncludeCallsAcrossThreads: `yes`&#124;`no` [o]/i: `yes`&#124;`no` facoltativa. Specifica se includere le chiamate a o da altri thread. Il valore predefinito è `no`.
 
- /ShowExternalCode: `yes`&#124; `no` facoltativa. Specifica se visualizzare Just My Code per lo stack di chiamate. Se l'opzione Just My Code è disattivata, viene visualizzato tutto il codice non utente. Se l'opzione Just My Code è attivata, il codice non utente viene visualizzato come `[external]` nell'output dello stack di chiamate.
+ /ShowExternalCode: `yes`&#124;`no` facoltativo. Specifica se visualizzare Just My Code per lo stack di chiamate. Se l'opzione Just My Code è disattivata, viene visualizzato tutto il codice non utente. Se l'opzione Just My Code è attivata, il codice non utente viene visualizzato come `[external]` nell'output dello stack di chiamate.
 
  Thread: `n` facoltativo. Consente di visualizzare lo stack di chiamate per il thread `n`. Se non viene specificato alcun thread, visualizza lo stack di chiamate per il thread corrente.
 

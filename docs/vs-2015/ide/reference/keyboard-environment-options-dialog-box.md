@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c837e93e7df16acdbbedda58343c7d0d8c10b99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657671"
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>Tastiera, Ambiente, finestra di dialogo Opzioni
@@ -24,4 +24,4 @@ ms.locfileid: "72657671"
 Usare questa pagina per impostare le mappature della tastiera. Per altre informazioni sulle mappature, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
+ [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md) (Ambiente, finestra di dialogo Opzioni)

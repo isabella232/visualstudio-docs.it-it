@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: impostare le proprietà di analisi del codice perC++ progetti C | Microsoft Docs'
+title: 'Procedura: impostare le proprietà di analisi del codice per progetti C-C + + | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,10 +20,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b2fb3cb81b49fd4b8cc83e0548110d2025c7488d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277993"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedura: impostare le proprietà di analisi del codice per progetti C/C++
@@ -38,7 +38,7 @@ ms.locfileid: "77277993"
  L'elenco di **configurazione** e l'elenco di **piattaforme** consentono di applicare diverse impostazioni di analisi del codice a diverse combinazioni di configurazioni di progetto e piattaforme. Ad esempio, è possibile indirizzare l'analisi del codice per applicare un set di regole al progetto per le compilazioni di debug e un set diverso per le build di rilascio.  
   
 ## <a name="enabling-code-analysis"></a>Abilitazione dell'analisi codice  
- È possibile decidere se abilitare l'analisi del codice per il progetto selezionando **Abilita analisi codice per CC++ /on compilazione**. In combinazione con l'elenco di **configurazione** , è possibile, ad esempio, decidere di disabilitare l'analisi del codice per le compilazioni di debug e abilitarla per le build di rilascio.  
+ È possibile decidere se abilitare l'analisi del codice per il progetto selezionando **Abilita analisi codice per C/C++ in compilazione**. In combinazione con l'elenco di **configurazione** , è possibile, ad esempio, decidere di disabilitare l'analisi del codice per le compilazioni di debug e abilitarla per le build di rilascio.  
   
  Se il progetto contiene codice gestito, è possibile decidere se abilitare o disabilitare l'analisi del codice selezionando **Abilita analisi codice durante la compilazione**.  
   
@@ -54,4 +54,4 @@ ms.locfileid: "77277993"
   
 ## <a name="see-also"></a>Vedere anche  
  [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
- [Avvisi dell'analisi codice per C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+ [Avvisi di analisi del codice per C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
