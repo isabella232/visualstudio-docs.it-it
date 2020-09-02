@@ -1,5 +1,5 @@
 ---
-title: Proprietà IEnumDebugThreads2 . Documenti Microsoft
+title: IEnumDebugThreads2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bbbe047c08f8e91264163d028c1b40d94cde97fc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715094"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
@@ -35,23 +35,23 @@ IEnumDebugThreads2 : IUnknown
  Chiamare [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) per ottenere questa interfaccia che rappresenta un elenco di tutti i thread in tutti i programmi in esecuzione in un processo. Chiamare [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) per ottenere questa interfaccia che rappresenta un elenco di thread in esecuzione in un programma.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente vengono `IEnumDebugThreads2`illustrati i metodi di .
+ La tabella seguente illustra i metodi di `IEnumDebugThreads2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[Avanti](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Recupera un numero specificato di thread nella sequenza di enumerazione.|
-|[Saltare](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Ignora un numero specificato di thread in una sequenza di enumerazione.|
-|[Reimposta](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md) (Clona)|Crea un enumeratore che contiene lo stesso stato di enumerazione di quello corrente.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Ignora un numero specificato di thread in una sequenza di enumerazione.|
+|[Reimpostazione](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione di quello corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Ottiene il numero di thread in un enumeratore.|
 
 ## <a name="remarks"></a>Osservazioni
- Visual Studio ottiene in genere questa interfaccia per aggiornare la finestra **Thread** e per ottenere il primo thread dell'elenco, al fine di chiamare [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)e [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md).
+ Visual Studio in genere ottiene questa interfaccia per aggiornare la finestra **thread** e per ottenere il primo thread dell'elenco, in modo da chiamare [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)e [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md).
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
@@ -59,6 +59,6 @@ IEnumDebugThreads2 : IUnknown
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
-- [Passaggio](../../../extensibility/debugger/reference/idebugprocess3-step.md)
-- [Continuare](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Continua](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
 - [Eseguire](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

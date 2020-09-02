@@ -1,5 +1,5 @@
 ---
-title: proprietà LAUNCH_FLAGS . Documenti Microsoft
+title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714711"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
@@ -51,7 +51,7 @@ public enum enum_LAUNCH_FLAGS {
 Avvia il processo di debug.
 
 `LAUNCH_NODEBUG`\
-Avvia il processo senza eseguire il debug.
+Avvia il processo senza eseguirne il debug.
 
 `LAUNCH_ENABLE_ENC`\
 DEPRECATO, NON UTILIZZARE.
@@ -60,14 +60,14 @@ DEPRECATO, NON UTILIZZARE.
 Avvia il processo e unisce l'ambiente all'host di avvio.
 
 ## <a name="remarks"></a>Osservazioni
-Questi valori vengono passati come argomento per il [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metodo.
+Questi valori vengono passati come argomento al metodo [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) .
 
-Questi flag possono essere combinati `OR`con un oggetto .
+Questi flag possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

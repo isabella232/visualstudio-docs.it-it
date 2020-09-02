@@ -1,5 +1,5 @@
 ---
-title: Glossario del plug-in del controllo del codice sorgente Documenti Microsoft
+title: Glossario del plug-in del controllo del codice sorgente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,43 +12,43 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699901"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossario del plug-in del controllo del codice sorgente
-I seguenti termini e definizioni utili riguardano la documentazione SDK del plug-in del controllo del codice sorgente.
+I termini e le definizioni utili seguenti riguardano la documentazione dell'SDK del plug-in del controllo del codice sorgente.
 
 ## <a name="definitions"></a>Definizioni
- Checkin Quando un utente apporta modifiche a una copia di lavoro, un utente deve inviare le modifiche dalla copia di lavoro nel repository del controllo del codice sorgente centrale. In questo modo viene creata una nuova revisione del file disponibile per altri utenti. Questo processo è chiamato check-in.
+ Archiviazione quando un utente apporta modifiche a una copia di lavoro, è necessario che l'utente invii le modifiche dalla copia di lavoro all'archivio centrale del controllo del codice sorgente. In questo modo viene creata una nuova revisione del file disponibile per altri utenti. Questo processo è denominato checkin.
 
- Estrazione L'atto di richiedere una copia di lavoro dal repository, informando il repository dell'intenzione di modificarla. Una copia di lavoro riflette lo stato del progetto al momento in cui è stato estratto.
+ Estrae l'azione di richiesta di una copia di lavoro dal repository, per informare il repository della finalità di modificarlo. Una copia di lavoro riflette lo stato del progetto nel momento in cui viene estratto.
 
- Client Un programma che utilizza il sistema di controllo del codice sorgente. Ai fini di questa documentazione, è l'IDE di Visual Studio.For the purpose of this documentation, it is the Visual Studio IDE.
+ Client un programma che utilizza il sistema di controllo del codice sorgente. Ai fini di questa documentazione, si tratta dell'IDE di Visual Studio.
 
- Commento Messaggio che descrive le modifiche che un utente può allegare a una revisione quando viene eseguita un'operazione del controllo del codice sorgente.
+ Commentare un messaggio che descrive le modifiche che un utente può alleghire a una revisione quando viene eseguita un'operazione del controllo del codice sorgente.
 
- Conflitto Una situazione in cui due utenti tentano di archiviare le modifiche alla stessa area dello stesso file. In genere, è necessario eseguire un'unione.
+ Conflitto tra le situazioni in cui due utenti tentano di archiviare le modifiche nella stessa area dello stesso file. In genere, è necessario eseguire un'operazione di merge.
 
- Directory Una cartella locale sul lato client viene definita directory. Questa è la copia in cui un utente apporta effettivamente modifiche. Ci possono essere molte copie di lavoro di un determinato progetto; in genere ogni sviluppatore ha la propria copia.
+ Directory una cartella locale sul lato client viene denominata directory. Si tratta della copia in cui un utente apporta effettivamente modifiche. Possono essere presenti numerose copie di lavoro di un determinato progetto. in genere, ogni sviluppatore ha la propria copia.
 
- Get Un'operazione get aggiorna la copia di lavoro dell'utente con la copia del repository. A differenza di un checkout, un get viene eseguito quando l'utente ha semplicemente bisogno della copia più recente, ma intende non apportare modifiche.
+ Un'operazione Get consente di portare la copia di lavoro dell'utente aggiornata con la copia del repository. A differenza di un checkout, viene eseguita un'operazione get quando l'utente richiede semplicemente la copia più recente, ma intende apportare modifiche.
 
- Cronologia Si tratta in genere di un riepilogo di tutte le estrazioni, archiviazioni, aggiornamenti, tag e versioni eseguite nel repository del controllo del codice sorgente.
+ Cronologia. si tratta in genere di un riepilogo di tutte le estrazioni, archiviazioni, aggiornamenti, tag e versioni eseguite nel repository del controllo del codice sorgente.
 
- IDE Generally refers to the Visual Studio Integrated Development Environment. Tuttavia, potrebbe anche fare riferimento ad altri ambienti client che riconoscono l'API plug-in del controllo del codice sorgente.
+ L'IDE si riferisce in genere all'ambiente di sviluppo integrato di Visual Studio. Tuttavia, può anche fare riferimento ad altri ambienti client che riconoscono l'API del plug-in del controllo del codice sorgente.
 
- Unisci Il processo durante il quale due o più file di codice sorgente vengono combinati per formare un nuovo file che incorpora tutte le funzionalità dei file precedenti. Questo concetto è fondamentale nel controllo della versione in cui due o più sviluppatori lavorano sui file contemporaneamente.
+ Unire il processo durante il quale due o più file di codice sorgente vengono combinati per formare un nuovo file che incorpora tutte le funzionalità dei file precedenti. Questo concetto è fondamentale nel controllo della versione in cui due o più sviluppatori lavorano contemporaneamente sui file.
 
- Progetto Una cartella del controllo del codice sorgente viene spesso definita progetto. Ciò non ha alcuna relazione con progetti o soluzioni in Visual Studio.This does not have any relationship with projects or solutions in Visual Studio.
+ Progetto una cartella del controllo del codice sorgente è spesso definita progetto. Non esiste alcuna relazione con progetti o soluzioni in Visual Studio.
 
- Plug-in UNA DLL che fornisce funzionalità di controllo del codice sorgente implementando l'API del plug-in del controllo del codice sorgente.
+ Plug-in di una DLL che fornisce funzionalità di controllo del codice sorgente implementando l'API del plug-in del controllo del codice sorgente.
 
- Repository La copia master in cui un sistema di controllo del codice sorgente archivia la cronologia completa delle revisioni di un progetto. Ogni progetto ha esattamente un repository.
+ Repository della copia master in cui un sistema di controllo del codice sorgente archivia la cronologia delle revisioni completa di un progetto. Ogni progetto include esattamente un repository.
 
- Revisione Una modifica impegnata nella cronologia di un file o di un insieme di file. Una revisione è un'istantanea in un progetto in continua evoluzione.
+ Revisione di una modifica di cui è stato eseguito il commit nella cronologia di un file o di un set di file. Una revisione è uno snapshot in un progetto continuamente modificato.
 
 ## <a name="see-also"></a>Vedere anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

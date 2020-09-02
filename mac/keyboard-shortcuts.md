@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247382"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Tasti di scelta rapida predefiniti in Visual Studio per Mac
@@ -30,7 +30,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="code-navigation"></a>Esplorazione del codice
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Trova riferimenti|**⇧⌘R**, **F12**|
 |Vai a dichiarazione|**⌘D**, **F12**|
@@ -41,7 +41,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="debug"></a>Debug
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Abilita o disabilita punto di interruzione|**⌥ ⌘/**, **⌘ F9**|
 |Sospendi|**⌥⌘P**, **⌥⌘L5**|
@@ -55,15 +55,15 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Imposta/Rimuovi punto di interruzione|**⌘\\**, **F9**|
 |Visualizza punti di interruzione|**⌥ ⌘ B**|
 
-## <a name="designer"></a>Finestra di progettazione
+## <a name="designer"></a>Designer
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Passa da un file correlato all'altro|**⌃ ⌘ ↑**|
 
 ## <a name="edit"></a>Modifica
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Modalità di modifica vincoli|**⌘ E**|
 |Copia|**⌘ C**|
@@ -87,7 +87,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="f-integration"></a>Integrazione F#
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Cancella F# Interactive|**⌃ ⌥ C**|
 |F# Interactive|**⌃ ⌥ F**|
@@ -98,7 +98,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="file"></a>File
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Chiudi tutto|**⇧ ⌘ W**|
 |Chiudi file|**⌘ W**|
@@ -114,21 +114,21 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="help"></a>Guida
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Documentazione sull'API|**⌥ ⌘?**|
 |Riferimento per le API Unity|**⌘**|
 
 ## <a name="other"></a>Altro
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Implementa messaggi Unity|**⇧ ⌘ M**|
 |Controllare|**⌥ ⌘ I**|
 
-## <a name="project"></a>Project
+## <a name="project"></a>Progetto
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Aggiungi file|**⌥ ⌘ A**|
 |Compilare|**⌘K**, **⇧F6**|
@@ -142,14 +142,14 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="refactoring"></a>Refactoring
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Importa simbolo|**⌃ ⌥ ␣**|
 |Correzione rapida|**⏎ ⌥**|
 
 ## <a name="search"></a>Ricerca
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Comando|**⇧ ⌘ P**|
 |Cerca nei file|**⇧ ⌘ F**|
@@ -167,7 +167,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="text-editor"></a>Editor di testo
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Completa parola|**⌃␣**|
 |Elimina carattere a sinistra|**⌃ H**|
@@ -218,7 +218,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="view"></a>Visualizzazione
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Centra documento e imposta stato attivo|**⌃ L**|
 |Imposta stato attivo per il documento|**F7**|
@@ -237,7 +237,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="window"></a>Finestra
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Attiva 1|**⌘ 1**|
 |Attiva 2|**⌘ 2**|
@@ -275,7 +275,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |↖|**Home**|
 |↘|**Fine**|
 |␣|**Barra spaziatrice**|
-|⇥|**Tra schede**|
+|⇥|**Scheda**|
 
 ## <a name="see-also"></a>Vedere anche
 

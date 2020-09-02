@@ -1,5 +1,5 @@
 ---
-title: Aggiornamento dell'interfaccia utente Documenti Microsoft
+title: Aggiornamento dell'interfaccia utente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698878"
 ---
 # <a name="updating-the-user-interface"></a>Aggiornamento dell'interfaccia utente
-Dopo aver implementato un comando, è possibile aggiungere codice per aggiornare l'interfaccia utente con lo stato dei nuovi comandi.
+Dopo aver implementato un comando, è possibile aggiungere il codice per aggiornare l'interfaccia utente con lo stato dei nuovi comandi.
 
- In una tipica applicazione Win32, il set di comandi può essere sottoposto a polling continuo e lo stato dei singoli comandi può essere regolato man mano che l'utente li visualizza. Tuttavia, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poiché la shell può ospitare un numero illimitato di VSPackage, polling esteso potrebbe ridurre la velocità di risposta, in particolare il polling tra gli assembly di interoperabilità tra codice gestito e COM.
+ In una tipica applicazione Win32, il set di comandi può essere sottoposto a polling continuo e lo stato dei singoli comandi può essere modificato durante la visualizzazione da parte dell'utente. Tuttavia, poiché la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell può ospitare un numero illimitato di pacchetti VSPackage, il polling esteso può ridurre la velocità di risposta, in particolare il polling tra assembly di interoperabilità tra codice gestito e com.
 
 ### <a name="to-update-the-ui"></a>Per aggiornare l'interfaccia utente
 
@@ -29,7 +29,7 @@ Dopo aver implementato un comando, è possibile aggiungere codice per aggiornare
 
     - Chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> .
 
-         Un'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> può essere <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> ottenuta dal servizio, come indicato di seguito.
+         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>È possibile ottenere un'interfaccia dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> servizio, come indicato di seguito.
 
         ```csharp
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)
@@ -44,11 +44,11 @@ Dopo aver implementato un comando, è possibile aggiungere codice per aggiornare
 
         ```
 
-         Se il parametro di <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> è`TRUE`diverso da zero ( ), l'aggiornamento viene eseguito in modo sincrono e immediato. Si consiglia di passare`FALSE`zero ( ) per questo parametro per mantenere buone prestazioni. Se si desidera evitare la `DontCache` memorizzazione nella cache, applicare il flag quando si crea il comando nel file vsct. Tuttavia, utilizzare il flag con cautela o le prestazioni potrebbero diminuire. Per altre informazioni sui flag di comando, vedere la documentazione relativa [all'elemento Flag di comando.](../extensibility/command-flag-element.md)
+         Se il parametro di <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> è diverso da zero ( `TRUE` ), l'aggiornamento viene eseguito in modo sincrono e immediato. È consigliabile passare zero ( `FALSE` ) per questo parametro per garantire prestazioni ottimali. Se si desidera evitare la memorizzazione nella cache, applicare il `DontCache` flag quando si crea il comando nel file con estensione vsct. Tuttavia, è possibile utilizzare il flag con cautela o ridurre le prestazioni. Per ulteriori informazioni sui flag di comando, vedere la documentazione relativa all' [elemento del flag di comando](../extensibility/command-flag-element.md) .
 
-    - Nei package VS che ospitano un controllo ActiveX utilizzando il modello di attivazione <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> sul posto in una finestra, potrebbe essere più conveniente utilizzare il metodo. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> nell'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> il metodo nell'interfaccia sono equivalenti dal punto di lavoro. Entrambi fanno sì che l'ambiente ri-query lo stato di tutti i comandi. In genere, un aggiornamento non viene eseguito immediatamente. Al contrario, un aggiornamento viene ritardato fino al tempo di inattività. La shell memorizza nella cache lo stato del comando per mantenere buone prestazioni. Se si desidera evitare la `DontCache` memorizzazione nella cache, applicare il flag quando si crea il comando nel file vsct. Tuttavia, utilizzare il flag con cautela perché le prestazioni potrebbero diminuire.
+    - Nei pacchetti VSPackage che ospitano un controllo ActiveX usando il modello di attivazione sul posto in una finestra, potrebbe essere più pratico usare il <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> metodo. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> metodo nell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaccia e il <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> metodo nell' <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfaccia sono funzionalmente equivalenti. Entrambi gli ambienti eseguono nuovamente la query sullo stato di tutti i comandi. In genere, un aggiornamento non viene eseguito immediatamente. Un aggiornamento viene invece posticipato fino al tempo di inattività. La shell memorizza nella cache lo stato del comando per garantire prestazioni ottimali. Se si desidera evitare la memorizzazione nella cache, applicare il `DontCache` flag quando si crea il comando nel file con estensione vsct. Tuttavia, usare il flag con cautela perché le prestazioni potrebbero ridursi.
 
-         Si noti che <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> è possibile `QueryInterface` ottenere <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> l'interfaccia chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> su un oggetto o ottenendo l'interfaccia dal servizio.
+         Si noti che è possibile ottenere l' <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfaccia chiamando il `QueryInterface` metodo su un <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> oggetto o ottenendo l'interfaccia dal <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> servizio.
 
 ## <a name="see-also"></a>Vedere anche
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

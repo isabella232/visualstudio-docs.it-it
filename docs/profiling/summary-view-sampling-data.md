@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778206"
 ---
 # <a name="summary-view---sampling-data"></a>Visualizzazione Riepilogo: dati di campionamento
@@ -26,7 +26,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 > Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="timeline-graph"></a>Grafico della sequenza temporale
- Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra la percentuale di utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per ulteriori informazioni, vedere [Procedura: Filtrare le visualizzazioni dei report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Il grafico della sequenza temporale nella visualizzazione Riepilogo mostra la percentuale di utilizzo del processore (CPU) dell'applicazione profilata nel periodo di profilatura. È possibile usare il grafico della sequenza temporale per filtrare la visualizzazione in base a un intervallo di tempo selezionato. Per altre informazioni, vedere [procedura: filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
 ## <a name="hot-path"></a>Percorso critico
  In **Percorso critico** viene visualizzato il percorso di esecuzione in cui è stata raccolta la maggior parte dei campioni. È possibile fare clic su una funzione per attivare la visualizzazione Dettagli funzione per la funzione. Per visualizzare altre visualizzazioni per la funzione, fare clic con il pulsante destro del mouse sulla funzione e scegliere una visualizzazione nell'elenco.
@@ -35,7 +35,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome**|Nome della funzione.|
+|**Name**|Nome della funzione.|
 |**% campioni inclusivi**|Percentuale di tutti i campioni che si sono verificati durante l'esecuzione di questa funzione o di una funzione chiamata da questa funzione.|
 |**% esempi esclusivi**|Percentuale di tutti i campioni che si sono verificati durante l'esecuzione di codice da parte della funzione nel corpo della funzione. Non sono inclusi i campioni raccolti nelle funzioni chiamate da questa funzione.|
 
@@ -48,9 +48,9 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome**|Nome della funzione.|
+|**Name**|Nome della funzione.|
 |**% esempi esclusivi**|Percentuale di tutti i campioni nell'esecuzione della profilatura che sono stati raccolti durante l'esecuzione di codice da parte della funzione nel corpo della funzione. Da questa percentuale sono esclusi i campioni raccolti durante l'esecuzione delle funzioni chiamate da questa funzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione riepilogo - Dati di memoria .NETSummary View - .NET memory data](../profiling/summary-view-dotnet-memory-data.md)
-- [Visualizzazione Riepilogo - dati di strumentazioneSummary View - instrumentation data](../profiling/summary-view-instrumentation-data.md)
+- [Visualizzazione Riepilogo: dati di memoria .NET](../profiling/summary-view-dotnet-memory-data.md)
+- [Visualizzazione Riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)

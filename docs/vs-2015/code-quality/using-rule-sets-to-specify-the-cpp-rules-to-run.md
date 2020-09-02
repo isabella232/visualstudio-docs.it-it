@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di set di regole per C++ specificare le regole da eseguire | Microsoft Docs
+title: Utilizzo di set di regole per specificare le regole C++ da eseguire | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,16 +10,16 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: ff105af1d817613b324e1158130457eb906c753f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277860"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilizzo di set di regole per specificare le regole C++ da eseguire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]è possibile creare e modificare un set di *regole* personalizzate per soddisfare specifiche esigenze di progetto associate all'analisi del codice. Per creare un set C++ di regole personalizzato, è necessarioC++ aprire un progetto C/progetto nell'IDE di Visual Studio. Si apre quindi un set di regole standard nell'editor del set di regole e quindi si aggiungono o rimuovono regole specifiche e, facoltativamente, si modifica l'azione che si verifica quando l'analisi del codice determina che una regola è stata violata.  
+In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] è possibile creare e modificare un set di *regole* personalizzato per soddisfare esigenze specifiche del progetto associate all'analisi del codice. Per creare un set di regole C++ personalizzato, è necessario aprire un progetto C/C++ nell'IDE di Visual Studio. Si apre quindi un set di regole standard nell'editor del set di regole e quindi si aggiungono o rimuovono regole specifiche e, facoltativamente, si modifica l'azione che si verifica quando l'analisi del codice determina che una regola è stata violata.  
   
  Per creare un nuovo set di regole personalizzate, salvarlo con un nuovo nome file. Il set di regole personalizzate viene assegnato automaticamente al progetto.  
   
@@ -37,7 +37,7 @@ In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
      \- - oppure -  
   
-   - Scegliere **\<Sfoglia... >** per specificare un set di regole esistente non presente nell'elenco.  
+   - Scegliere **\<Browse...>** di specificare un set di regole esistente non presente nell'elenco.  
   
 4. Scegliere **Apri** per visualizzare le regole nell'Editor set di regole.  
   
@@ -63,7 +63,7 @@ In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
 - Per comprimere le regole in tutti i gruppi, scegliere **Comprimi tutto**.  
   
-- Per modificare il campo in base al quale vengono raggruppate le regole, scegliere il campo dall'elenco **Raggruppa per** . Per visualizzare le regole non raggruppate, scegliere **\<nessuna >** .  
+- Per modificare il campo in base al quale vengono raggruppate le regole, scegliere il campo dall'elenco **Raggruppa per** . Per visualizzare le regole non raggruppate, scegliere **\<None>** .  
   
 - Per aggiungere o rimuovere campi nelle colonne della regola, scegliere **Opzioni colonne**.  
   

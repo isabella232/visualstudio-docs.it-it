@@ -1,5 +1,5 @@
 ---
-title: Messaggi diagnostici nella finestra di Output | Microsoft Docs
+title: Messaggi di diagnostica nel Finestra di output | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,10 +30,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60f8da2430e1c84af3c26be31c6de561291c8c6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695292"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Messaggi diagnostici nella finestra di output
@@ -46,11 +46,11 @@ ms.locfileid: "65695292"
   
 - Diversi metodi `Write`, che generano informazioni senza interrompere l'esecuzione. Questi metodi sostituiscono il metodo `Debug.Print` utilizzato nelle versioni precedenti di Visual Basic.  
   
-- I metodi <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> and <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, che interrompono l'esecuzione e generano informazioni se si verifica un errore relativo a una condizione specificata. Per impostazione predefinita, il metodo `Assert` visualizza le informazioni in una finestra di dialogo. Per ulteriori informazioni, vedere [Asserzioni nel metodo gestito](../debugger/assertions-in-managed-code.md).  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName><xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>metodi e, che interrompono l'esecuzione e generano informazioni se una condizione specificata ha esito negativo. Per impostazione predefinita, il metodo `Assert` visualizza le informazioni in una finestra di dialogo. Per ulteriori informazioni, vedere [asserzioni nel codice gestito](../debugger/assertions-in-managed-code.md).  
   
 - I metodi <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> and <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, che interrompono sempre l'esecuzione e generano informazioni. Per impostazione predefinita, i metodi `Fail` visualizzano le informazioni in una finestra di dialogo.  
   
-  Oltre a programma out dall'applicazione, il **Output** finestra possono essere visualizzate le informazioni riguardanti:  
+  Oltre a programmare dall'applicazione, la finestra di **output** può visualizzare le informazioni relative a:  
   
 - I moduli caricati o scaricati dal debugger.  
   
@@ -62,8 +62,8 @@ ms.locfileid: "65695292"
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Finestra di output](../ide/reference/output-window.md)   
+ [Finestra Output](../ide/reference/output-window.md)   
  [Traccia e strumentazione di applicazioni](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
  [Introduzione alla strumentazione e alla traccia](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
- [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+ [Tipi di progetto C#, F # e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Debug del codice gestito](../debugger/debugging-managed-code.md)

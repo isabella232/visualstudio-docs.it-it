@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41d3ef0efd4c9eb8eab16bd12cc79f8df1449d65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670679"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: specificare eventi di compilazione (C#)
@@ -54,7 +54,7 @@ ms.locfileid: "72670679"
 6. Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.
 
     > [!NOTE]
-    > Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione ( **...** ) per visualizzare una casella di modifica.
+    > Per aggiungere una sintassi più lunga o per selezionare le macro di compilazione dalla finestra di [dialogo riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione (**...**) per visualizzare una casella di modifica.
 
      La sintassi dell'evento di compilazione può includere qualsiasi comando che sia valido in un prompt dei comandi o in un file bat. Perché vengano sicuramente eseguiti tutti i comandi successivi, il nome di un file batch deve essere preceduto da `call`.
 
@@ -75,7 +75,7 @@ ms.locfileid: "72670679"
 
 1. Creare un'applicazione console per il comando. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#** , fare clic su **Windows** e quindi scegliere il modello **Applicazione console**. Denominare il progetto `ChangeOSVersionCS`.
+2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Windows** e quindi scegliere il modello **Applicazione console**. Assegnare al progetto il nome `ChangeOSVersionCS`.
 
 3. In Program.cs aggiungere la riga seguente alle altre istruzioni `using` all'inizio del file:
 
@@ -137,7 +137,7 @@ ms.locfileid: "72670679"
 
     Il comando accetta due argomenti: il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto (in genere Projectname.publish), e la versione del nuovo sistema operativo.
 
-5. Compilare il progetto. Scegliere **Compila soluzione** dal menu **Compila**.
+5. Compilare il progetto. Nel menu **Compila** scegliere **Compila soluzione**.
 
 6. Copiare il file EXE in una directory, ad esempio `C:\TEMP\ChangeOSVersionVB.exe`.
 
@@ -147,7 +147,7 @@ ms.locfileid: "72670679"
 
 1. Creare un'applicazione Windows per il progetto da pubblicare. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#** , fare clic su **Windows** e quindi fare clic sul modello **Applicazione Windows Form**. Denominare il progetto `CSWinApp`.
+2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Windows** e quindi fare clic sul modello **Applicazione Windows Form**. Assegnare al progetto il nome `CSWinApp`.
 
 3. Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
@@ -163,7 +163,7 @@ ms.locfileid: "72670679"
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. In Creazione progetti fare clic sulla scheda **Eventi di compilazione** e fare clic sul pulsante **Modifica post-compilazione**.
+6. In Progettazione progetti fare clic sulla scheda **eventi di compilazione** e fare clic sul pulsante **modifica post-compilazione** .
 
 7. Nella casella **Riga di comando eventi post-compilazione** digitare il comando seguente:
 
@@ -184,4 +184,4 @@ ms.locfileid: "72670679"
     ```
 
 ## <a name="see-also"></a>Vedere anche
- [Pagina eventi di compilazione, Progettazione progettiC#()](../ide/reference/build-events-page-project-designer-csharp.md) finestra di [dialogo riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [procedura: specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [compilazione e compilazione](../ide/compiling-and-building-in-visual-studio.md)
+ [Pagina eventi di compilazione, Progettazione progetti (C#)](../ide/reference/build-events-page-project-designer-csharp.md) finestra di [dialogo riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [procedura: specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [compilazione e compilazione](../ide/compiling-and-building-in-visual-studio.md)

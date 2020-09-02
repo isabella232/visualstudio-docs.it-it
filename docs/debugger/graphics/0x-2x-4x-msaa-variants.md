@@ -1,5 +1,5 @@
 ---
-title: 0 varianti di MSAA 4x x-2 | Microsoft Docs
+title: Varianti di MSAA 0x-2x-4x | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64816542"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Varianti di MSAA 0x/2x/4x
@@ -28,7 +28,7 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
 > [!NOTE]
 > L'hardware potrebbe non supportare completamente MSAA per tutti i formati. Se una di queste varianti dovesse incorrere in un limite hardware che non è possibile aggirare, la relativa colonna nella tabella di riepilogo delle prestazioni resterà vuota e verrà visualizzato un messaggio di errore.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Queste varianti eseguono l'override degli argomenti relativi conteggio e alla qualità dei campioni nelle chiamate a `ID3DDevice::CreateTexture2D` che creano destinazioni di rendering. In particolare, tali parametri vengono sottoposti a override nei casi seguenti:
 
 - L'oggetto `D3D11_TEXTURE2D_DESC` passato in `pDesc` descrive una destinazione di rendering, ossia:
@@ -49,7 +49,7 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
 
   L'effetto finale di queste modifiche è che tutto il rendering viene eseguito in una destinazione di rendering MSAA, ma, se l'applicazione usa una di tali destinazioni di rendering, o buffer della catena di scambio, come visualizzazione di risorse shader o visualizzazione con accesso non ordinato, i dati verranno campionati dalla copia risolta, non MSAA, della destinazione di rendering.
 
-## <a name="restrictions-and-limitations"></a>Limiti e restrizioni
+## <a name="restrictions-and-limitations"></a>Restrizioni e limitazioni
  In Direct3D11, le trame MSAA sono soggette a maggiori restrizioni rispetto alle trame non MSAA. Non è ad esempio possibile chiamare `ID3D11DeviceContext::UpdateSubresource` su una trama MSAA e la chiamata a `ID3D11DeviceContext::CopySubresourceRegion` non riuscirà se il conteggio e la qualità dei campioni delle risorse di origine e di destinazione non coincidono, situazione che può prodursi quando questa variante esegue l'override delle impostazioni MSAA di una risorsa ma non dell'altra.
 
  Quando la riproduzione rileva questi tipi di conflitti, viene fatto il possibile per replicare il comportamento atteso, ma potrebbe non essere possibile raggiungere una corrispondenza esatta dei risultati. Sebbene raramente ciò influisca sulle prestazioni di queste varianti in modo tale da rappresentarne l'impatto in modo erroneo, ciò può verificarsi, ad esempio, quando il controllo di flusso in un pixel shader viene determinato dal contenuto preciso di una trama, perché la trama replicata potrebbe non avere un contenuto identico.

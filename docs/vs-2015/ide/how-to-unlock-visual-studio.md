@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670599"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Come sbloccare Visual Studio
@@ -50,7 +50,7 @@ ms.locfileid: "72670599"
 ### <a name="updating-stale-licenses"></a>Aggiornamento di licenze obsolete
  È possibile che sia stato visualizzato il messaggio seguente, che indica che la licenza sta per diventare obsoleta in Visual Studio.
 
- ![Finestra di dialogo con le informazioni utente di Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
+ ![Finestra di dialogo con le informazioni utente di Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
 
  Questo messaggio indica che, anche se è possibile che l'abbonamento sia ancora valido, il token della licenza usato da Visual Studio per mantenere aggiornato l'abbonamento non è stato aggiornato ed è diventato obsoleto a causa di uno dei motivi seguenti:
 
@@ -70,7 +70,7 @@ ms.locfileid: "72670599"
 
 1. Rinnovare l'abbonamento. Per visualizzare altre informazioni sulla licenza in uso, passare alla finestra di dialogo File > Impostazioni account e quindi verificare le informazioni sulla licenza nella parte destra della finestra di dialogo.
 
-2. Se si ha un altro abbonamento associato a un account diverso, aggiungere tale account all'elenco Tutti gli account nel lato sinistro della finestra di dialogo File > Impostazioni account facendo clic sul collegamento "Aggiungi un account".
+2. Se si ha un altro abbonamento associato a un account diverso, aggiungere tale account all'elenco Tutti gli account nel lato sinistro della finestra di dialogo File > Impostazioni account facendo clic sul collegamento "Aggiungi un la creazione.
 
 ## <a name="see-also"></a>Vedere anche
- [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md) (Accesso a Visual Studio)
+ [Accesso a Visual Studio](../ide/signing-in-to-visual-studio.md)

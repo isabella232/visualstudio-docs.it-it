@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329177"
 ---
 # <a name="xaml-code-editor"></a>Editor di codice XAML
@@ -116,7 +116,7 @@ Ecco come:
 
 Per ulteriori informazioni sull'utilizzo delle impostazioni, vedere la pagina [Ordina using](../ide/reference/sort-usings.md) . Per ulteriori informazioni su IntelliSense, vedere la pagina relativa [a IntelliSense in Visual Studio](../ide/using-intellisense.md) . Per ulteriori informazioni su alcune delle modalità tipiche di utilizzo delle azioni rapide da parte degli sviluppatori, vedere la pagina delle [azioni rapide comuni](../ide/common-quick-actions.md) .
 
-#### <a name="change-tracking"></a>Change tracking
+#### <a name="change-tracking"></a>Rilevamento modifiche
 
 Il colore del margine sinistro consente di tenere traccia delle modifiche apportate al file. Ecco il modo in cui i colori sono correlati alle azioni intraprese:
 
@@ -173,7 +173,7 @@ Per ulteriori informazioni su come suddividere una finestra dell'editor, vedere 
 
 Altri apprezzano l'uso della *modalità mappa*, che consente di visualizzare le righe di codice in miniatura sulla barra di scorrimento. Gli sviluppatori che dispongono di una grande quantità di codice in un file potrebbero scoprire che la modalità mappa tiene traccia delle righe di codice in modo più efficace rispetto alla barra di scorrimento predefinita.
 
-Per ulteriori informazioni su come modificare le impostazioni predefinite della barra di scorrimento, vedere la pagina [personalizzare la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md) .
+Per ulteriori informazioni su come modificare le impostazioni predefinite della barra di scorrimento, vedere la pagina  [personalizzare la barra di scorrimento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md) .
 
 ## <a name="xaml-specific-features"></a>Funzionalità specifiche di XAML
 
@@ -277,7 +277,7 @@ Per altre informazioni su *tutte* le impostazioni nell'IDE di Visual Studio, ved
 
 Nella finestra di dialogo [Opzioni](../ide/reference/options-text-editor-xaml-formatting.md) per XAML i primi tre elementi seguenti sono universali per tutti i linguaggi di programmazione supportati dall'IDE di Visual Studio. Per ulteriori informazioni su queste opzioni e su come usarle, vedere le informazioni collegate nella tabella seguente.
 
-|Nome  |Altre informazioni  |
+|Name  |Altre informazioni  |
 |---------|---------|
 |Generale  | [Finestra di dialogo Opzioni: editor di testo > tutti i linguaggi](../ide/reference/options-text-editor-all-languages.md) |
 |Barre di scorrimento | [Opzioni, Editor di testo, Tutti i linguaggi, Barre di scorrimento](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
@@ -287,7 +287,7 @@ Nella finestra di dialogo [Opzioni](../ide/reference/options-text-editor-xaml-fo
 
 Nella tabella seguente sono elencate le impostazioni della finestra di dialogo [Opzioni](../ide/reference/options-text-editor-xaml-formatting.md) che consentono di migliorare l'esperienza di modifica quando si sviluppano app basate su XAML. Per ulteriori informazioni su queste opzioni e su come usarle, vedere le informazioni collegate.
 
-|Nome  |Altre informazioni  |
+|Name  |Altre informazioni  |
 |---------|---------|
 |Formattazione | [Opzioni, Editor di testo, XAML, Formattazione](../ide/reference/options-text-editor-xaml-formatting.md) |
 |Varie |  [Opzioni, Editor di testo, XAML, Varie](../ide/reference/options-text-editor-xaml-miscellaneous.md) |
@@ -299,7 +299,7 @@ Nella tabella seguente sono elencate le impostazioni della finestra di dialogo [
 
 Per altre informazioni su come modificare il codice in tempo reale mentre si esegue l'app in modalità di debug, vedere la pagina relativa al [ricaricamento a caldo di XAML](xaml-hot-reload.md) .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Funzionalità dell'editor di codice di Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
 - [XAML in all UWP](/windows/uwp/xaml-platform/xaml-overview/)

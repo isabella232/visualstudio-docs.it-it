@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6b400c3483d200c6073eb4e75cf393a643e39e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165567"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni numeriche della riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, dal simbolo del padre specificato e è contenuta all'interno dell'indirizzo virtuale specificato (valutazione della vulnerabilità).  
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, dal simbolo padre specificato e sono contenute all'interno dell'indirizzo virtuale specificato (VA).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,19 +34,19 @@ HRESULT findInlineeLinesByVA ( 
   
 #### <a name="parameters"></a>Parametri  
  `parent`  
- [in] Un `IDiaSymbol` oggetto che rappresenta l'elemento padre.  
+ in `IDiaSymbol` Oggetto che rappresenta l'elemento padre.  
   
  `va`  
- [in] Specifica l'indirizzo come un responsabile tecnologico  
+ in Specifica l'indirizzo come VA.  
   
  `length`  
- [in] Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query viene usata.  
+ in Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query.  
   
  `ppResult`  
- [out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.  
+ out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

@@ -12,10 +12,10 @@ ms.workload:
 - dotnetcore
 - azure
 ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536786"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core di debug remoto in IIS in Azure in Visual Studio
@@ -68,7 +68,7 @@ Il debug tra due computer connessi tramite un proxy non è supportato. Non è co
 
 1. Aprire il file About.cshtml.cs e impostare un punto di interruzione nel `OnGet` Metodo (nei modelli precedenti, aprire HomeController.cs e impostare il punto di interruzione nel `About()` metodo).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a><a name="remote_debug_azure_app_service"></a>ASP.NET Core di debug remoto in un servizio app Azure
+## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a><a name="remote_debug_azure_app_service"></a> ASP.NET Core di debug remoto in un servizio app Azure
 
 Da Visual Studio è possibile pubblicare rapidamente ed eseguire il debug dell'app in un'istanza con provisioning completo di IIS. Tuttavia, la configurazione di IIS è preimpostata e non è possibile personalizzarla. Per istruzioni più dettagliate, vedere [distribuire un'app web ASP.NET Core in Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Se è necessario avere la possibilità di personalizzare IIS, provare a eseguire il debug in una [macchina virtuale di Azure](#remote_debug_azure_vm).
 
@@ -96,9 +96,9 @@ Da Visual Studio è possibile pubblicare rapidamente ed eseguire il debug dell'a
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-    L'operazione è terminata. Il resto dei passaggi descritti in questo argomento si applica al debug remoto in una macchina virtuale di Azure.
+    Ecco fatto! Il resto dei passaggi descritti in questo argomento si applica al debug remoto in una macchina virtuale di Azure.
 
-## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a>ASP.NET Core di debug remoto in una macchina virtuale di Azure
+## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> ASP.NET Core di debug remoto in una macchina virtuale di Azure
 
 È possibile creare una macchina virtuale di Azure per Windows Server, quindi installare e configurare IIS e gli altri componenti software necessari. Questa operazione richiede più tempo rispetto alla distribuzione in un servizio app Azure e richiede di seguire i passaggi rimanenti di questa esercitazione.
 
@@ -191,7 +191,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 È possibile usare questa opzione per distribuire l'app se si vuole copiare l'app in IIS usando PowerShell, RoboCopy o si desidera copiare manualmente i file.
 
-### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Configurare il sito Web di ASP.NET Core nel computer Windows Server
+### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Configurare il sito Web di ASP.NET Core nel computer Windows Server
 
 Se si importano le impostazioni di pubblicazione, è possibile ignorare questa sezione.
 
@@ -211,20 +211,20 @@ Se non si usa Distribuzione Web, è necessario pubblicare e distribuire l'app us
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Scaricare e installare Remote Tools in Windows Server
+### <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Scaricare e installare Remote Tools in Windows Server
 
 Scaricare la versione di Remote Tools corrispondente alla versione di Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Configurare il debugger remoto in Windows Server
+### <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Configurare il debugger remoto in Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Se è necessario aggiungere autorizzazioni per utenti aggiuntivi, modificare la modalità di autenticazione o il numero di porta per il debugger remoto, vedere [configurare il debugger remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
-### <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Connettersi all'applicazione ASP.NET dal computer che esegue Visual Studio
+### <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a> Connettersi all'applicazione ASP.NET dal computer che esegue Visual Studio
 
 1. Nel computer di Visual Studio aprire la soluzione di cui si sta provando a eseguire il debug (**MyASPApp** se si seguono i passaggi descritti in questo articolo).
 2. In Visual Studio fare clic su **Debug > Connetti a processo** (CTRL + ALT + P).

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670342"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Eseguire azioni rapide con le lampadine
@@ -31,7 +31,7 @@ Le lampadine sono una nuova funzionalità per la produttività di Visual Studio 
 
 2. Premere **Ctrl+.** in un punto qualsiasi della riga per richiamare la lampadina e passare direttamente all'elenco delle correzioni potenziali.
 
-   ![Lampadina con passaggio del mouse](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+   ![Lampadina con passaggio del puntatore del mouse](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
 ## <a name="to-see-potential-fixes"></a>Per visualizzare le potenziali correzioni
  Fare clic sulla freccia GIÙ o sul collegamento Mostra correzioni potenziali per visualizzare un elenco delle azioni rapide eseguibili automaticamente dalla lampadina.

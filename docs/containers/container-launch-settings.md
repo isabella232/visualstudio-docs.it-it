@@ -7,10 +7,10 @@ ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
 ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247977"
 ---
 # <a name="container-tools-launch-settings"></a>Impostazioni di avvio degli strumenti contenitore
@@ -51,7 +51,7 @@ L'impostazione CommandName indica che questa sezione si applica agli strumenti c
 
 ::: moniker range="vs-2017"
 
-|Nome impostazione|Versione|Esempio|Descrizione|
+|Nome impostazione|Version|Esempio|Descrizione|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|"launchBrowser": true|Indica se avviare il browser dopo aver avviato correttamente il progetto.|
 |launchUrl|Visual Studio 2017|"launchUrl": "{Scheme}://{ServiceHost}: {ServicePort}"|Questo URL viene usato quando si avvia il browser.  I token di sostituzione supportati per questa stringa sono:<br>   {Scheme}: sostituito con "http" o "https" a seconda che si stia usando SSL.<br>   {ServiceHost}-generalmente sostituito con "localhost". Quando si fa riferimento a contenitori Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con l'IP del contenitore.<br>   {ServicePort}: in genere sostituito con sslPort o httpPort, a seconda che venga usato SSL.  Quando si fa riferimento a contenitori di Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con "443" o "80", a seconda che venga usato SSL.|

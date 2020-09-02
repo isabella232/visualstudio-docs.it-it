@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind . Documenti Microsoft
+title: 'IDebugField:: getkind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728825"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
@@ -41,7 +41,7 @@ int GetKind(
 
 ## <a name="parameters"></a>Parametri
 `pdwKind`\
-[fuori] Restituisce il tipo di campo come combinazione di [costanti FIELD_KIND.](../../../extensibility/debugger/reference/field-kind.md)
+out Restituisce il tipo di campo come una combinazione di [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) costanti.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

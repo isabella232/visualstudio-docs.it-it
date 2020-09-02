@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Utilizzare la finestra Disassembly | Microsoft Docs'
+title: 'Procedura: utilizzare la finestra Disassembly | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,16 +26,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c25c3cdeb96abacb4123b2d0a851ac3d4acb0cd5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696134"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Procedura: Usare la finestra Disassembly
+# <a name="how-to-use-the-disassembly-window"></a>Procedura: utilizzare la finestra Disassembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo il **le opzioni** della finestra di dialogo **debug** nodo. Non è invece disponibile per il debug di script o SQL.  
+Questa funzionalità è disponibile solo se il debug a livello di indirizzo è abilitato nella finestra di dialogo **Opzioni** , nodo **debug** . Non è invece disponibile per il debug di script o SQL.  
   
  Nella finestra **Disassembly** viene visualizzato il codice assembly corrispondente alle istruzioni create dal compilatore. Se si sta eseguendo il debug di codice gestito, tali istruzioni in linguaggio assembly corrispondono al codice nativo creato dal compilatore JIT (Just-In-Time), non al linguaggio MSIL (Microsoft Intermediate Language) generato dal compilatore di Visual Studio.  
   
@@ -60,22 +60,22 @@ Questa funzionalità è disponibile solo se è abilitato il debug a livello di i
   È poco probabile che si abbia desiderio o necessità di visualizzare istruzioni in linguaggio macchina nel loro formato numerico non elaborato anziché in formato di linguaggio assembly. Tuttavia, qualora ciò fosse necessario, sarà possibile utilizzare la finestra Memoria o scegliere Mostra byte del codice dal menu di scelta rapida della finestra Disassembly.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Per visualizzare la finestra Disassembly  
   
-- Nel **Debug** menu, scegliere **Windows**, fare clic su **Disassembly**.  
+- Scegliere **finestre**dal menu **debug** , quindi fare clic su **Disassembly**.  
   
      Il debugger deve essere in esecuzione o in modalità di interruzione.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Per attivare o disattivare la visualizzazione delle informazioni opzionali  
   
-- Fare doppio clic il **Disassembly** finestra e selezionare o deselezionare le opzioni desiderate nel menu di scelta rapida.  
+- Fare clic con il pulsante destro del mouse sulla finestra **Disassembly** e impostare o deselezionare le opzioni desiderate nel menu di scelta rapida.  
   
      Una freccia gialla sul margine sinistro indica la posizione del punto di esecuzione corrente. Per il codice nativo la posizione corrisponde al contatore di programma della CPU. Questo indicatore mostra l'istruzione successiva che verrà eseguita dal programma.  
   
-     Per altre informazioni, vedere [spostamento verso l'alto o verso il basso nella memoria](../debugger/how-to-page-up-or-down-in-memory.md).  
+     Per ulteriori informazioni, vedere [paging in memoria](../debugger/how-to-page-up-or-down-in-memory.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
+ [Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)

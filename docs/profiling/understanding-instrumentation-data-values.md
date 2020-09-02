@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778076"
 ---
 # <a name="understand-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
@@ -98,5 +98,5 @@ Percentuale dei valori di tempo inclusivo applicazione totali della sessione di 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Analizzare i dati degli strumenti prestazioni](../profiling/analyzing-performance-tools-data.md)
-Procedura: scegliere i metodi di raccoltaAnalyze performance tools data[How to: Choose collection methods](../profiling/how-to-choose-collection-methods.md)
+[Analizzare i dati](../profiling/analyzing-performance-tools-data.md) 
+ degli strumenti per le prestazioni [Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)

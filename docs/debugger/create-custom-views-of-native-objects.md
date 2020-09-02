@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248051"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Creare visualizzazioni personalizzate di oggetti C++ nel debugger usando il Framework natvis
@@ -683,7 +683,7 @@ Il seguente è un esempio di elemento UIVisualizer:
 
 - Una `ServiceId`  -  `Id` coppia di attributi identifica un oggetto `UIVisualizer` . `ServiceId`È il GUID del servizio esposto dal pacchetto del visualizzatore. `Id` Identificatore univoco che distingue i visualizzatori se un servizio ne fornisce più di uno. Nell'esempio precedente, lo stesso servizio del visualizzatore fornisce due visualizzatori.
 
-- L' `MenuName` attributo definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Esempio:
+- L' `MenuName` attributo definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Ad esempio:
 
   ![Menu di scelta rapida UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu di scelta rapida UIVisualizer")
 

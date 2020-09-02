@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
+title: 'IDebugBinder3:: GetTypeArgumentCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e2ccd8aa38c9b2edf6c3d5932168e0f2c72fe92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192989"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo restituisce il numero di tipi di argomento associato all'oggetto.  
+Questo metodo restituisce il numero di tipi di argomenti associati a questo oggetto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int GetTypeArgumentCount(
   
 #### <a name="parameters"></a>Parametri  
  `uCount`  
- [out] Numero di tipi di argomento associato all'oggetto.  
+ out Numero di tipi di argomenti associati a questo oggetto.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Il valore restituito da questo metodo può essere utilizzato per allocare una matrice per l'uso con il [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Il valore restituito da questo metodo può essere utilizzato per allocare una matrice da utilizzare con il metodo [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

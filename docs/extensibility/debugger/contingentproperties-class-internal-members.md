@@ -1,5 +1,5 @@
 ---
-title: Classe ContingentProperties - Membri interni . Documenti Microsoft
+title: Classe ContingentProperties-membri interni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c6441cafcc34a06464061b41691ea5faa32fc359
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739104"
 ---
-# <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties - membri interni
-Contiene proprietà aggiuntive <xref:System.Threading.Tasks.Task> per un oggetto.
+# <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties-membri interni
+Contiene proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto.
 
- **Spazio dei nomi:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Assembly:** mscorlib (in mscorlib.dll)
 
- Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente è disponibile in Common Intermediate Language (CIL).
+ Poiché non è possibile accedere a questi membri interni dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,7 +34,7 @@ Contiene proprietà aggiuntive <xref:System.Threading.Tasks.Task> per un oggetto
        extends System.Object
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
 ### <a name="fields"></a>Campi
 
@@ -43,7 +43,7 @@ Contiene proprietà aggiuntive <xref:System.Threading.Tasks.Task> per un oggetto
 |[m_children](../../extensibility/debugger/m-children-field.md)|Elenco di attività figlio registrate con questa attività.|
 
 ## <a name="remarks"></a>Osservazioni
- .NET Framework inizializza i campi di questa classe solo quando sono necessari.
+ Il .NET Framework inizializza i campi di questa classe solo quando sono necessari.
 
 ## <a name="see-also"></a>Vedere anche
-- [Elementi interni delle estensioni parallele per .NET FrameworkParallel extension internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Interni di estensioni parallele per la .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

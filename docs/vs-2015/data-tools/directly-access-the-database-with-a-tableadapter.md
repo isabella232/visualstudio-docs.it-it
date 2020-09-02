@@ -27,25 +27,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 58500e59a624dac55824033b8b9667754a9040c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657366"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Accedere direttamente al database mediante un oggetto TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Oltre ai `InsertCommand`, `UpdateCommand` e `DeleteCommand`, gli oggetti TableAdapter vengono creati con metodi che possono essere eseguiti direttamente sul database. È possibile chiamare questi metodi (`TableAdapter.Insert`, `TableAdapter.Update` e `TableAdapter.Delete`) per modificare i dati direttamente nel database.
+Oltre agli `InsertCommand` oggetti, e, gli `UpdateCommand` `DeleteCommand` oggetti TableAdapter vengono creati con metodi che possono essere eseguiti direttamente sul database. Questi metodi ( `TableAdapter.Insert` , `TableAdapter.Update` e `TableAdapter.Delete` ) possono essere chiamati per modificare i dati direttamente nel database.
 
- Se non si desidera creare questi metodi diretti, impostare la proprietà `GenerateDbDirectMethods` del TableAdapter su `false` nella finestra **Proprietà** . Se una query viene aggiunta a un TableAdapter oltre alla query principale del TableAdapter, si tratta di query autonome che non generano questi metodi DbDirect.
+ Se non si desidera creare questi metodi diretti, impostare la proprietà del TableAdapter `GenerateDbDirectMethods` su `false` nella finestra **proprietà** . Se una query viene aggiunta a un TableAdapter oltre alla query principale del TableAdapter, si tratta di query autonome che non generano questi metodi DbDirect.
 
 ## <a name="sendcommandsdirectly-to-a-database"></a>Sendcommandsdirectly a un database
  Chiamare il metodo TableAdapter DbDirect che esegue l'attività che si sta tentando di eseguire.
 
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Per inserire nuovi record direttamente in un database
 
-- Chiamare il metodo `Insert` del TableAdapter, passando i valori per ogni colonna come parametri. Nella procedura seguente viene utilizzata la tabella `Region` nel database Northwind, ad esempio.
+- Chiamare il metodo del TableAdapter `Insert` , passando i valori per ogni colonna come parametri. Nella procedura riportata di seguito viene utilizzata `Region` una tabella del database Northwind di esempio.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza del TableAdapter che si desidera utilizzare.
@@ -55,7 +55,7 @@ Oltre ai `InsertCommand`, `UpdateCommand` e `DeleteCommand`, gli oggetti TableAd
 
 #### <a name="to-update-records-directly-in-a-database"></a>Per aggiornare i record direttamente in un database
 
-- Chiamare il metodo `Update` del TableAdapter, passando i valori nuovi e originali per ogni colonna come parametri.
+- Chiamare il metodo del TableAdapter `Update` , passando i valori nuovi e originali per ogni colonna come parametri.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza del TableAdapter che si desidera utilizzare.
@@ -65,7 +65,7 @@ Oltre ai `InsertCommand`, `UpdateCommand` e `DeleteCommand`, gli oggetti TableAd
 
 #### <a name="to-delete-records-directly-from-a-database"></a>Per eliminare i record direttamente da un database
 
-- Chiamare il metodo `Delete` del TableAdapter, passando i valori per ogni colonna come parametri del metodo `Delete`. Nella procedura seguente viene utilizzata la tabella `Region` nel database Northwind, ad esempio.
+- Chiamare il metodo del TableAdapter `Delete` , passando i valori per ogni colonna come parametri del `Delete` metodo. Nella procedura riportata di seguito viene utilizzata `Region` una tabella del database Northwind di esempio.
 
     > [!NOTE]
     > Se non si dispone di un'istanza disponibile, creare un'istanza del TableAdapter che si desidera utilizzare.

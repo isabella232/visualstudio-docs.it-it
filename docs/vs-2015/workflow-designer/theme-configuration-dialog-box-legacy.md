@@ -15,14 +15,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8171c6dcfe285ade07531896893915d0e209e0c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670185"
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Finestra di dialogo configurazione tema (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo di **configurazione del tema** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **configurazione tema** in legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Un tema definisce colori di sfondo e primo piano, stili, icone e altri elementi visivi di un flusso di lavoro. È possibile salvare temi per riutilizzarli in altri flussi di lavoro.
 
@@ -33,9 +33,9 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo di **
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
 |**Nome tema:**|Nome che identifica il tema nella finestra di [dialogo temi, progettazione flussi di lavoro, opzioni (legacy)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md). Viene generato un nome modificabile per i nuovi temi.|
-|**Posizione del tema:**|Nome file e percorso del file del tema. Un nome file modificabile viene generato per temi nuovi basati sul nome del tema generato. Se si modifica il nome del tema generato, è possibile che si desideri modificare il nome del file in modo che corrisponda al nome del tema.|
+|**Percorso del tema:**|Nome file e percorso del file del tema. Un nome file modificabile viene generato per temi nuovi basati sul nome del tema generato. Se si modifica il nome del tema generato, è possibile che si desideri modificare il nome del file in modo che corrisponda al nome del tema.|
 |**...**|Fare clic per selezionare il percorso per salvare un file di tema del flusso di lavoro che usa un’estensione del nome file .wtm. Il percorso selezionato verrà visualizzato nella casella di testo **posizione tema** .|
-|**Selezionare finestra di progettazione e configurare le proprietà:**|Il riquadro sinistro elenca una visualizzazione albero delle attività per le quali il tema può essere personalizzato. Selezionare un'attività nella visualizzazione struttura e le proprietà del tema per l'attività verranno visualizzate nel riquadro delle proprietà posto a destra del riquadro della visualizzazione struttura. Fare clic su una proprietà per modificare il valore.|
+|**Selezionare la finestra di progettazione e configurare proprietà:**|Il riquadro sinistro elenca una visualizzazione albero delle attività per le quali il tema può essere personalizzato. Selezionare un'attività nella visualizzazione struttura e le proprietà del tema per l'attività verranno visualizzate nel riquadro delle proprietà posto a destra del riquadro della visualizzazione struttura. Fare clic su una proprietà per modificare il valore.|
 |**Anteprima**|Fare clic per visualizzare una finestra per visualizzare in anteprima gli effetti delle modifiche della proprietà.|
 
 ## <a name="see-also"></a>Vedere anche

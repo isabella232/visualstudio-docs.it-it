@@ -9,16 +9,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd2b2723a5ecfe66e9471cfea1e8eb55ed7ced59
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547446"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modelli dei controlli comuni per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>Controlli comuni
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Controlli comuni
 
 ### <a name="overview"></a>Panoramica
  I controlli comuni costituiscono la maggior parte dell'interfaccia utente in Visual Studio. La maggior parte dei controlli comuni usati nell'interfaccia di Visual Studio deve seguire le [linee guida](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)per l'interazione con il desktop di Windows. Questo documento è specifico di Visual Studio e illustra le situazioni speciali o i dettagli che aumentano le linee guida di Windows.
@@ -50,10 +50,10 @@ ms.locfileid: "85547446"
 
 - **Finestre degli strumenti, editor di documenti, aree di progettazione e finestre di dialogo con tema:** Usare l'aspetto con tema specializzato usando il servizio color.
 
-### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a>Barre
+### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a> Barre
  Le barre di scorrimento devono seguire [modelli di interazione comuni per le barre di scorrimento di Windows](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) a meno che non siano state ampliate con informazioni sul contenuto, ad esempio nell'editor di codice.
 
-### <a name="input-fields"></a><a name="BKMK_InputFields"></a>Campi di input
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Campi di input
  Per un comportamento di interazione tipico, seguire le [linee guida per i desktop di Windows per le caselle di testo](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Stile di visualizzazione
@@ -76,7 +76,7 @@ ms.locfileid: "85547446"
 
      ![Correzione della larghezza](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl") del **campo di input corretta per la lunghezza del campo di input: il campo di input è una larghezza ragionevole per il contenuto previsto.**
 
-### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>Caselle combinate ed elenchi a discesa
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Caselle combinate ed elenchi a discesa
  Per un comportamento di interazione tipico, seguire le [linee guida per i desktop di Windows per elenchi a discesa e caselle combinate](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Stile di visualizzazione
@@ -96,7 +96,7 @@ ms.locfileid: "85547446"
 
  **Correggere la lunghezza del campo per un controllo a discesa**
 
-### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>Caselle di controllo
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Caselle di controllo
  Per un comportamento di interazione tipico, seguire le [linee guida per il desktop di Windows per le caselle di controllo](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Stile di visualizzazione
@@ -115,7 +115,7 @@ ms.locfileid: "85547446"
 
      ![Correzione](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign") allineamento casella di controllo corretto allineamento casella di controllo **: la casella di controllo è allineata con la linea di base della prima riga di testo.**
 
-### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>Pulsanti di opzione
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Pulsanti di opzione
  Per un comportamento di interazione tipico, seguire le [linee guida per il desktop di Windows per i pulsanti di opzione](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Stile di visualizzazione
@@ -124,7 +124,7 @@ ms.locfileid: "85547446"
 #### <a name="specialized-interactions"></a>Interazioni specializzate
  Non è necessario usare un frame di gruppo per racchiudere le scelte radio.
 
-### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>Raggruppare i frame
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Raggruppare i frame
  Per un comportamento di interazione tipico, seguire le [linee guida per il desktop di Windows per i frame del gruppo](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Stile di visualizzazione
@@ -138,7 +138,7 @@ ms.locfileid: "85547446"
 
 - A volte è accettabile usare una regola orizzontale anziché un contenitore di frame del gruppo.
 
-## <a name="text-controls"></a><a name="BKMK_TextControls"></a>Controlli testo
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a> Controlli testo
 
 ### <a name="labels"></a>Etichette
 
@@ -227,7 +227,7 @@ ms.locfileid: "85547446"
 
   **Esempi di testo della filigrana in Visual Studio**
 
-## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>Pulsanti e collegamenti ipertestuali
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a> Pulsanti e collegamenti ipertestuali
 
 ### <a name="overview"></a>Panoramica
  I pulsanti e i controlli dei collegamenti (collegamenti ipertestuali) devono seguire le [indicazioni di base sul desktop di Windows sui collegamenti ipertestuali](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx) per l'utilizzo, il wording, il ridimensionamento e la spaziatura.
@@ -272,7 +272,7 @@ ms.locfileid: "85547446"
 
 ### <a name="common-buttons"></a>Pulsanti comuni
 
-#### <a name="text"></a>Text
+#### <a name="text"></a>Testo
  Seguire le linee guida per la scrittura nel [testo e nella terminologia dell'interfaccia utente](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
 #### <a name="visual-style"></a>Stile di visualizzazione
@@ -327,10 +327,10 @@ ms.locfileid: "85547446"
 > [!NOTE]
 > Gli utenti devono premere TAB per questi pulsanti (non sono presenti chiavi di accesso), quindi inserirli in un ordine ragionevole. Eseguire il mapping della proprietà Name del pulsante all'azione necessaria in modo che le utilità per la lettura dello schermo interpretino correttamente l'azione del pulsante.
 
-|Nome|Immagine|
+|Name|Immagine|
 |-|-|
-|Aggiunta|![Pulsante grafico "Aggiungi"](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703-08_ButtonAdd")|
-|Rimuovi|![Pulsante grafico "Rimuovi"](../../extensibility/ux-guidelines/media/070703-09-buttonremove.png "070703-09_ButtonRemove")|
+|Add|![Pulsante grafico "Aggiungi"](../../extensibility/ux-guidelines/media/070703-08-buttonadd.png "070703-08_ButtonAdd")|
+|Rimuovere|![Pulsante grafico "Rimuovi"](../../extensibility/ux-guidelines/media/070703-09-buttonremove.png "070703-09_ButtonRemove")|
 |Aggiungi tutto|![Pulsante grafico "Aggiungi tutto"](../../extensibility/ux-guidelines/media/070703-10-buttonaddall.png "070703-10_ButtonAddAll")|
 |Rimuovi tutto|![Pulsante grafico "Rimuovi tutto"](../../extensibility/ux-guidelines/media/070703-11-buttonremoveall.png "070703-11_ButtonRemoveAll")|
 |Sposta su|![Pulsante grafico "Sposta su"](../../extensibility/ux-guidelines/media/070703-12-buttonmoveup.png "070703-12_ButtonMoveUp")|
@@ -358,7 +358,7 @@ ms.locfileid: "85547446"
 
 - Le sottolineature non devono essere visualizzate al passaggio del mouse. Al contrario, il feedback all'utente che il collegamento è attivo è un lieve cambiamento di colore e il cursore di collegamento appropriato.
 
-## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>Visualizzazioni ad albero
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a> Visualizzazioni ad albero
 
 ### <a name="overview"></a>Panoramica
  Le visualizzazioni ad albero forniscono un modo per organizzare elenchi complessi in gruppi padre-figlio. Un utente può espandere o comprimere i gruppi padre per visualizzare o nascondere gli elementi figlio sottostanti. Ogni elemento all'interno di una visualizzazione albero può essere selezionato per fornire ulteriori azioni.
@@ -371,7 +371,7 @@ ms.locfileid: "85547446"
 
 - [Interazioni](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>Stile di visualizzazione
+### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a> Stile di visualizzazione
 
 #### <a name="expanders"></a>Espansori
  I controlli di visualizzazione albero devono essere conformi alla progettazione dell'espansore utilizzata da Windows e Visual Studio. Ogni nodo utilizza un controllo Expander per rivelare o nascondere gli elementi sottostanti. L'uso di un controllo Expander garantisce la coerenza per gli utenti che potrebbero incontrare visualizzazioni ad albero diverse all'interno di Windows e Visual Studio.
@@ -405,7 +405,7 @@ ms.locfileid: "85547446"
 
  **Vengono visualizzate le barre di scorrimento verticali e orizzontali perché il contenuto ha superato i limiti del controllo di visualizzazione albero.**
 
-### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a>Interazioni
+### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a> Interazioni
 
 #### <a name="context-menus"></a>Menu di scelta rapida
  Un nodo della visualizzazione albero può rivelare le opzioni del sottomenu in un menu di scelta rapida. Questa situazione si verifica in genere quando un utente ha fatto clic con il pulsante destro del mouse su un elemento o ha premuto il tasto menu su una tastiera di Windows con l'elemento selezionato. È importante che il nodo ottenga lo stato attivo ed è selezionato. Ciò consente all'utente di identificare l'elemento a cui appartiene il sottomenu.

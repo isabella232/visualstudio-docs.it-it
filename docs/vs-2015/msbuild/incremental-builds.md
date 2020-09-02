@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192887"
 ---
 # <a name="incremental-builds"></a>Compilazioni incrementali
@@ -50,7 +50,7 @@ Le compilazioni incrementali sono compilazioni ottimizzate in modo da non esegui
   
 - La destinazione non ha output non aggiornati e viene ignorata. MSBuild valuta la destinazione e apporta modifiche a elementi e proprietà come se la destinazione fosse stata eseguita.  
   
-  Per supportare la compilazione incrementale, le attività devono garantire che il valore dell'attributo `TaskParameter` di qualsiasi elemento `Output` sia uguale a un parametro di input dell'attività. Ecco alcuni esempi:  
+  Per supportare la compilazione incrementale, le attività devono garantire che il valore dell'attributo `TaskParameter` di qualsiasi elemento `Output` sia uguale a un parametro di input dell'attività. Di seguito sono riportati alcuni esempi:  
   
 ```  
 <CreateProperty Value="123">  
@@ -82,4 +82,4 @@ Le compilazioni incrementali sono compilazioni ottimizzate in modo da non esegui
  In questo modo viene creata la proprietà CompileRan e viene assegnato alla stessa il valore `true`, ma solo se la destinazione viene eseguita. Se la destinazione viene ignorata, la proprietà CompileRan non viene creata.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Destinazioni](../msbuild/msbuild-targets.md)
+ [Server di destinazione](../msbuild/msbuild-targets.md)
