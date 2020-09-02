@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02f078d9293fa8b02267c5003a92d1d60134e1a4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249507"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedura: modificare i file XML
@@ -50,7 +50,7 @@ Per modificare un file XML, aprire il file che si desidera modificare.
 
 2. Selezionare il **file XML** per creare un nuovo file XML. in alternativa, selezionare **file XSLT** per creare un nuovo foglio di stile XSLT.
 
-3. Scegliere **Open**(Apri).
+3. Selezionare **Open** (Apri).
 
 ## <a name="create-an-empty-project-for-xml-files"></a>Creare un progetto vuoto per i file XML
 

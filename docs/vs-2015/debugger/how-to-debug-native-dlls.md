@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eseguire il debug di DLL Native | Microsoft Docs'
+title: 'Procedura: eseguire il debug di DLL native | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,23 +24,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702676"
 ---
-# <a name="how-to-debug-native-dlls"></a>Procedura: Eseguire il debug di DLL native
+# <a name="how-to-debug-native-dlls"></a>Procedura: eseguire il debug di DLL native
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Il debug di una DLL può essere avviato:  
   
 - Dal progetto utilizzato per la creazione dell'eseguibile che chiama la DLL.  
   
-  \- oppure -  
+  \- - oppure -  
   
 - Dal progetto stesso utilizzato per la creazione della DLL.  
   
@@ -50,17 +50,17 @@ ms.locfileid: "65702676"
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Per specificare un eseguibile per la sessione di debug  
   
-1. Nelle **Esplora soluzioni**, selezionare il progetto che crea la DLL.  
+1. In **Esplora soluzioni**selezionare il progetto che crea la dll.  
   
-2. Dal **View** menu, scegliere**pagine delle proprietà**.  
+2. Scegliere**pagine delle proprietà**dal menu **Visualizza** .  
   
-3. Nel **pagine delle proprietà** finestra di dialogo, aprire il **le proprietà di configurazione** cartella e selezionare il **debug** categoria.  
+3. Nella finestra di dialogo **pagine delle proprietà** aprire la cartella **proprietà di configurazione** e selezionare la categoria **debug** .  
   
-4. Nel **comando** , specificare il nome del percorso per il contenitore. Ad esempio, C:\Programmi\Applicazione\APP.EXE.  
+4. Nella casella **comando** specificare il nome del percorso per il contenitore. Ad esempio, C:\Programmi\Applicazione\APP.EXE.  
   
-5. Nel **argomenti del comando** , specificare gli argomenti necessari per il file eseguibile.  
+5. Nella casella **argomenti comando** specificare gli eventuali argomenti necessari per l'eseguibile.  
   
-   Se non si specifica il file eseguibile nel _Project_**pagine delle proprietà** della finestra di dialogo il [eseguibile per la finestra di dialogo di sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md) viene visualizzata quando si avvia il debug.  
+   Se non si specifica il file eseguibile nella finestra di dialogo**pagine delle proprietà** del _progetto_, quando si avvia il debug viene visualizzata la finestra [di dialogo eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   

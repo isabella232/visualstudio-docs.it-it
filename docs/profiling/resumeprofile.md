@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778310"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
@@ -68,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="function-information"></a>Informazioni sulla funzione
  *Intestazione: dichiarata in VSPerf.h*
 
- Raccolta di importazione: *VSPerf.lib*
+ Libreria di importazione: *VSPerf. lib*
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra la funzione ResumeProfile. Nell'esempio si presuppone che sia stata effettuata una chiamata al metodo SuspendProfile per lo stesso thread o processo identificato da [PROFILE_CURRENTID](../profiling/profile-currentid.md).
@@ -104,4 +104,4 @@ void ExerciseResumeProfile()
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)Visual Studio profiler API reference (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

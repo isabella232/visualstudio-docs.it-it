@@ -1,5 +1,5 @@
 ---
-title: Elemento AppliesTo (modelli di Visual Studio) Documenti Microsoft
+title: Elemento AppliesTo (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,19 +10,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 39b5ee1e3cad0b4d8ddbe0fc2dfa1c2d478ec063
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740082"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelli di Visual Studio)
 
-Specifica un'espressione facoltativa che corrisponde a <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>una o più funzionalità (vedere ). Le funzionalità vengono esposte dai tipi di progetto tramite la gerarchia come __VSHPROPID5 di [proprietà. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). In questo modo, il modello può essere condiviso da molteplici tipi di progetto che dispongono di funzionalità applicabili comuni.
+Specifica un'espressione facoltativa che corrisponde a una o più funzionalità (vedere <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher> ). Le funzionalità sono esposte dai tipi di progetto tramite la gerarchia come proprietà [__VSHPROPID5. VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>). In questo modo, il modello può essere condiviso da molteplici tipi di progetto che dispongono di funzionalità applicabili comuni.
 
 Questo elemento è facoltativo. Può essere presente massimo una istanza in un file modello. Questo elemento consente di includere come applicabile solo un modello di elemento, in base alle funzionalità del progetto attivo correntemente selezionato. Non può essere usato per rendere un modello di elemento non applicabile. Se `AppliesTo` è assente o l'espressione non è inclusa correttamente, viene usato `TemplateID` o `TemplateGroupID` per rendere il modello applicabile, come con le versioni precedenti del prodotto.
 
-Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione corretta, vedere [Riferimento agli assembly recapitati in Visual Studio 2013 SDK Update 2](/previous-versions/dn632168(v=vs.120)).
+Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione corretta, vedere [riferimenti agli assembly recapitati in Visual Studio 2013 SDK Update 2](/previous-versions/dn632168(v=vs.120)).
 
 ```xml
 <VSTemplate>
@@ -40,13 +40,13 @@ Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione co
 
 Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
-No.
+Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-No.
+Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -60,11 +60,11 @@ No.
 
 La sintassi valida dell'espressione è definita come segue:
 
-- L'espressione di funzionalità, ad esempio "(VisualC &#124; CSharp) - (MSTest &#124; NUnit)".
+- Espressione di funzionalità, ad esempio "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
-- Il "&#124;" è l'operatore OR.
+- "&#124;" è l'operatore OR.
 
-- I caratteri "&" e """ sono entrambi operatori AND.
+- I caratteri "&" e "+" sono entrambi operatori e.
 
 - Il carattere "!" è l'operatore NOT.
 
@@ -72,11 +72,11 @@ La sintassi valida dell'espressione è definita come segue:
 
 - Un valore null o un'espressione vuota viene valutata come una corrispondenza.
 
-- Le funzionalità del progetto possono essere qualsiasi carattere, ad eccezione di questi caratteri riservati: "'':;<>&#124;&;\\{} \t\b\n\r
+- Le funzionalità del progetto possono essere qualsiasi carattere eccetto questi caratteri riservati: "'':;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <>? \t\b\n\r
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono mostrati tre diversi modelli. `Template1`si applica a tutti i tipi di progetto c'è o qualsiasi altro tipo di progetto che supporta la `WindowsAppContainer` funzionalità. `Template2`si applica a tutti i progetti di C . `Template3` si applica a tutti i progetti C# che non sono progetti `WindowsAppContainer`.
+Nell'esempio seguente vengono mostrati tre diversi modelli. `Template1` si applica a tutti i tipi di progetto C# o a qualsiasi altro tipo di progetto che supporta la `WindowsAppContainer` funzionalità. `Template2` si applica a tutti i progetti C# di qualsiasi tipo. `Template3` si applica a tutti i progetti C# che non sono progetti `WindowsAppContainer`.
 
 ```xml
 <!--  Template 1 -->
@@ -106,5 +106,5 @@ Nell'esempio seguente vengono mostrati tre diversi modelli. `Template1`si applic
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

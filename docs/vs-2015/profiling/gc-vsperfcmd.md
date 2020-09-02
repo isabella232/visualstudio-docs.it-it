@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2bdb28f74dd305dc497521e95d38e00192c21c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193594"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
@@ -32,8 +32,8 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ```  
   
 #### <a name="parameters"></a>Parametri  
- **Allocation**  
- Predefinita. Raccoglie i dati di allocazione della memoria di .NET Framework.  
+ **Allocazione**  
+ Valore predefinito. Raccoglie i dati di allocazione della memoria di .NET Framework.  
   
  **Durata**  
  Raccoglie sia i dati di allocazione della memoria di .NET Framework, sia i dati di durata degli oggetti di .NET Framework.  
@@ -41,7 +41,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie  
  L'opzione **GC** può essere usata solo con l'opzione **Launch**.  
   
- **Launch:** `AppName`  
+ **Avvia:**`AppName`  
  Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.  
   
 ## <a name="example"></a>Esempio  

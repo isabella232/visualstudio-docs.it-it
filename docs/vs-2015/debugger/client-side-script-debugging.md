@@ -1,5 +1,5 @@
 ---
-title: Debug degli Script lato client | Microsoft Docs
+title: Debug di script sul lato client | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702384"
 ---
 # <a name="client-side-script-debugging"></a>Debug di script sul lato client
@@ -30,7 +30,7 @@ ms.locfileid: "65702384"
 Il debugger di Visual Studio offre un ambiente di debug completo per l'individuazione e la correzione degli errori negli script lato client delle pagine ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Apertura di documenti di script  
- È possibile usare **Esplora soluzioni** per visualizzare elenchi di documenti script lato server e client. È possibile aprire qualsiasi documento di script da **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Visualizzare documenti script](../debugger/how-to-view-script-documents.md).  
+ È possibile usare **Esplora soluzioni** per visualizzare elenchi di documenti script lato server e client. È possibile aprire qualsiasi documento di script da **Esplora soluzioni**. Per altre informazioni, vedere [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mapping dei punti di interruzione  
  In Visual Studio non è possibile eseguire direttamente il debug di codice lato server, ma è possibile impostare un punto di interruzione in un file lato server. Visual Studio esegue automaticamente il mapping del punto di interruzione a un percorso corrispondente del file lato client e crea un punto di interruzione associato nel codice lato client.  
@@ -38,7 +38,7 @@ Il debugger di Visual Studio offre un ambiente di debug completo per l'individua
 ## <a name="manually-or-automatically-attaching-to-script"></a>Connessione manuale o automatica a script  
  Per avviare il debug di script in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], il debugger deve essere connesso allo script del quale si desidera eseguire il debug. Questa operazione può essere eseguita manualmente o automaticamente.  
   
- È possibile eseguire la connessione manualmente utilizzando l'interfaccia del debugger [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per scegliere il processo di script in esecuzione desiderato. Per altre informazioni, vedere [Procedura: Associare a script](../debugger/how-to-attach-to-script.md).  
+ È possibile eseguire la connessione manualmente utilizzando l'interfaccia del debugger [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per scegliere il processo di script in esecuzione desiderato. Per altre informazioni, vedere [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
   
  Il debugger si connette automaticamente allo script quando si verifica uno dei seguenti casi:  
   
@@ -60,11 +60,11 @@ Il debugger di Visual Studio offre un ambiente di debug completo per l'individua
 ## <a name="debugging-ajax-script-applications"></a>Debug di applicazioni script AJAX  
  Nelle applicazioni Web che supportano AJAX viene fatto largo uso di codice script e vengono poste serie problematiche di debug. Per informazioni sulle tecniche di debug AJAX, vedere  
   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Cenni preliminari sul debug e sulla traccia delle applicazioni AJAX](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Limitazioni del debug di script](../debugger/limitations-on-script-debugging.md)   
- [Finestra delle variabili](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Limitazioni per il debug di script](../debugger/limitations-on-script-debugging.md)   
+ [Finestre delle variabili](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Finestra di controllo immediato](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing AJAX Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

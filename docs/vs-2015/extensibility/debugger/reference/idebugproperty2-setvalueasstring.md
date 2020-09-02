@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString | Microsoft Docs
+title: 'IDebugProperty2:: SetValueAsString | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d50057570b5b067447321f975d4d33da8aa3de43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193434"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
@@ -44,21 +44,21 @@ int SetValueAsString ( 
   
 #### <a name="parameters"></a>Parametri  
  `pszValue`  
- [in] Stringa contenente il valore da impostare.  
+ in Stringa contenente il valore da impostare.  
   
  `nRadix`  
- [in] Una radice da utilizzare nell'interpretare le informazioni numeriche. Ciò può essere 0 per tentare di determinare automaticamente la radice.  
+ in Una radice da usare per interpretare le informazioni numeriche. Questo può essere 0 per tentare di determinare automaticamente la radice.  
   
  `dwTimeout`  
- [in] Specifica il tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.  
+ in Specifica il tempo massimo di attesa, in millisecondi, prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Nella tabella seguente mostra altri valori possibili.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore. Nella tabella seguente vengono illustrati altri valori possibili.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|La stringa non può essere convertita in un valore della proprietà oppure non è stato possibile impostare il valore della proprietà.|  
-|`E_SETVALUE_VALUE_IS_READONLY`|La proprietà è in sola lettura.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Non è stato possibile convertire la stringa in un valore di proprietà oppure il valore della proprietà non è stato impostato.|  
+|`E_SETVALUE_VALUE_IS_READONLY`|la proprietà è di sola lettura.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

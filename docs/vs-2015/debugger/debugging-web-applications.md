@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d11969ecfbe9a7e3fd02ad289b0de95512b0b8f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177507"
 ---
 # <a name="debugging-web-applications"></a>Debug di applicazioni Web
@@ -31,8 +31,8 @@ ms.locfileid: "68177507"
 
 In questa sezione viene illustrato come eseguire il debug di diversi tipi di applicazioni Web.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Eseguire il debug di applicazioni Web](../debugger/how-to-debug-web-applications.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: eseguire il debug di applicazioni Web](../debugger/how-to-debug-web-applications.md)  
  Viene descritto come eseguire il debug di un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] progetto ancora in fase di sviluppo.  
   
  [Debug di applicazioni Web distribuite](../debugger/debugging-deployed-web-applications.md)  
@@ -44,7 +44,7 @@ In questa sezione viene illustrato come eseguire il debug di diversi tipi di app
  [Procedura dettagliata: Debug di un Web Form](../debugger/walkthrough-debugging-a-web-form.md)  
  Viene illustrato come eseguire il debug di un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Procedura: Eseguire il debug di eccezioni ASP.NET](../debugger/how-to-debug-aspnet-exceptions.md)  
+ [Procedura: eseguire il debug di eccezioni ASP.NET](../debugger/how-to-debug-aspnet-exceptions.md)  
  Viene spiegato come gestire le eccezioni che si verificano durante il debug di applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
 ## <a name="related-sections"></a>Sezioni correlate  
@@ -56,6 +56,6 @@ In questa sezione viene illustrato come eseguire il debug di diversi tipi di app
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)   
- [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
+ [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)   
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)

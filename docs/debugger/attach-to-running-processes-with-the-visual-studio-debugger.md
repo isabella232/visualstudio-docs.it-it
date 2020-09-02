@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249212"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
@@ -189,7 +189,7 @@ Per altre informazioni, vedere [eseguire il debug remoto di .NET Core in esecuzi
     
     ![Selezionare il menu contenitore Docker](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
  
-    **B. per eseguire il debug remoto di un processo del contenitore docker:**
+    **B. Per eseguire il debug remoto di un processo del contenitore docker:**
     
     > [!NOTE] 
     > Sono disponibili due opzioni per la connessione remota a un processo in esecuzione in un contenitore docker. La prima opzione, per usare SSH, è ideale se gli strumenti Docker non sono installati nel computer locale.  Se gli strumenti Docker sono installati localmente e si ha un daemon Docker configurato per accettare le richieste remote, provare la seconda opzione usando un daemon docker.

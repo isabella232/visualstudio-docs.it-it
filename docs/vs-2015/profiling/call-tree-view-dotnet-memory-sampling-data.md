@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ed0d8a2ccf8e33b493ddcb71f9ce3a794a06862
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150748"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET
@@ -26,24 +26,24 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
  I valori nella visualizzazione Albero delle chiamate sono relativi alle istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore dell'istanza della funzione e il numero totale o le dimensioni delle allocazioni nell'esecuzione della profilatura.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
- Nella visualizzazione Albero delle chiamate è possibile espandere ed evidenziare il percorso di esecuzione del processo o della funzione che ha creato gli oggetti più grandi o il numero maggiore di oggetti in memoria. Per visualizzare il percorso più attivo fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
+ Nella visualizzazione Albero delle chiamate è possibile espandere ed evidenziare il percorso di esecuzione del processo o della funzione che ha creato gli oggetti più grandi o il numero maggiore di oggetti in memoria. Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
   
 ## <a name="setting-the-call-tree-root-node"></a>Impostare il nodo radice dell'albero delle chiamate  
  Ogni processo nell'esecuzione della profilatura viene visualizzato come nodo radice. Per impostare un altro nodo come nodo di inizio della visualizzazione Albero delle chiamate, fare clic con il pulsante destro del mouse sul nodo che si vuole impostare come nodo iniziale e selezionare **Imposta radice**.  
   
  Quando imposti il nodo radice, elimini dalla visualizzazione tutte le altre voci ad eccezione del sottoalbero del nodo selezionato. Per reimpostare il nodo radice sul nodo che si stava visualizzando, fare clic con il pulsante destro del mouse nella finestra della visualizzazione Albero delle chiamate e selezionare **Reimposta radice**.  
   
-|Colonna|DESCRIZIONE|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione.|  
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|  
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|  
 |**Nome funzione**|Nome completo della funzione.|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
 |**Indirizzo funzione**|Indirizzo della funzione.|  
-|**Livello**|Profondità della funzione nell'albero delle chiamate.|  
+|**Level**|Profondità della funzione nell'albero delle chiamate.|  
 |**Allocazioni inclusive**|Numero di oggetti allocati dalle istanze di questa funzione chiamate dalla funzione padre nell'albero delle chiamate. Questo numero include le allocazioni effettuate dalle funzioni figlio.|  
 |**% allocazioni inclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che rappresentavano allocazioni inclusive di questa funzione.|  
 |**Allocazioni esclusive**|Numero di oggetti allocati dalle istanze di questa funzione chiamate dalla funzione padre nell'albero delle chiamate. Questo numero non include le allocazioni effettuate dalle funzioni figlio.|  
@@ -54,6 +54,6 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che rappresentavano allocazioni esclusive di questa funzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)   
- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+ [Visualizzazione albero delle chiamate-Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)   
+ [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)

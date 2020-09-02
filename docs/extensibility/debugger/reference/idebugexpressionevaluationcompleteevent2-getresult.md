@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugExpressionEvaluationCompleteEvent2::GetResult . Documenti Microsoft
+title: 'IDebugExpressionEvaluationCompleteEvent2:: GetResult | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4d3af0affa1c6d98a8209a6a72913f9c2bccf1fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729575"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
@@ -40,13 +40,13 @@ int GetResult( 
 ```
 
 ## <a name="parameters"></a>Parametri
-`ppResult`[fuori] Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta il risultato della valutazione dell'espressione.
+`ppResult` out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta il risultato della valutazione dell'espressione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- L'oggetto restituito [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto contiene il valore dell'espressione valutata. Si noti che questo valore potrebbe essere un valore complesso, ad esempio una matrice, ma il risultato finale deve essere un valore numerico o stringa che viene visualizzato all'utente.
+ L'oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) restituito contiene il valore dell'espressione valutata. Si noti che questo valore può essere un valore complesso, ad esempio una matrice, ma il risultato finale deve essere un valore numerico o stringa che viene visualizzato all'utente.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)

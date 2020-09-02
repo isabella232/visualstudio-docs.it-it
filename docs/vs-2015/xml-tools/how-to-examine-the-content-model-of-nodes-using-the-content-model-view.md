@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ddadcb0fbd772a5638bf6023b8cf6c18fbd270d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670848"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedura: esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto
@@ -29,9 +29,9 @@ In questo argomento viene descritto come esplorare i nodi utilizzando la [visual
 
 3. Copiare il codice di esempio XML Schema da [XML Schema di esempio: schema di ordine di acquisto](../xml-tools/sample-xsd-file-purchase-order-schema.md) e incollarlo per sostituire il codice aggiunto al nuovo file XSD per impostazione predefinita.
 
-4. Per selezionare l'elemento `purchaseOrder` in Esplora schema, fare clic con il pulsante destro del mouse sull'elemento `purchaseOrder` nell'editor XML e scegliere **Mostra in Esplora XML**.
+4. Per selezionare l'elemento in Esplora schema, fare clic con il `purchaseOrder` pulsante destro del mouse sull' `purchaseOrder` elemento nell'editor XML e scegliere **Mostra in Esplora XML**.
 
-5. Fare clic con il pulsante destro del mouse sul `purchaseOrder` in XML Explorer e scegliere **Mostra in visualizzazione modello di contenuto**.
+5. Fare clic con il pulsante destro del mouse su `purchaseOrder` in XML Explorer e selezionare **Mostra nella visualizzazione modello di contenuto**.
 
      Nella visualizzazione modello di contenuto viene visualizzato l'elemento `purchaseOrder` sulla relativa area di progettazione.
 
@@ -43,4 +43,4 @@ In questo argomento viene descritto come esplorare i nodi utilizzando la [visual
 
 8. Fare clic sul pulsante **Mostra documentazione** sulla barra degli strumenti XSD per impostare documentazione. È anche possibile fare clic con il pulsante destro del mouse sull'area di progettazione per attivare o disattivare la documentazione.
 
-9. Fare clic sul nodo `purchaseOrder` e selezionare **genera XML di esempio** per visualizzare il documento dell'istanza XML.
+9. Fare clic con il pulsante destro del mouse sul `purchaseOrder` nodo e selezionare **genera XML di esempio** per visualizzare il documento dell'istanza XML.

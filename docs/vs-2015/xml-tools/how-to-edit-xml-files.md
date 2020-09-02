@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c099839cda87819ec0ec7932c2b2e6aa7698fa52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670875"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedura: modificare i file XML
@@ -40,7 +40,7 @@ L'editor XML è il nuovo editor per file XML. Può essere usato per un file XML 
 
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>Per aggiungere un file XML esistente a un progetto
 
-1. Scegliere **Aggiungi elemento esistente**dal menu **progetto** .
+1. Dal menu **Progetto** selezionare**Add Existing Item**(Aggiungi elemento esistente).
 
      Verrà visualizzata la finestra di dialogo **Aggiungi elemento esistente** .
 
@@ -50,7 +50,7 @@ L'editor XML è il nuovo editor per file XML. Può essere usato per un file XML 
 
 1. Scegliere **nuovo**dal menu **file** .
 
-     Verrà visualizzata la finestra di dialogo **nuovo file** .
+     Verrà visualizzata la finestra di dialogo **Nuovo file** .
 
 2. Selezionare il **file XML** per creare un nuovo file XML. in alternativa, selezionare **file XSLT** per creare un nuovo foglio di stile XSLT.
 
@@ -58,9 +58,9 @@ L'editor XML è il nuovo editor per file XML. Può essere usato per un file XML 
 
 ### <a name="to-create-a-project-for-xml-files"></a>Per creare un progetto per i file XML
 
-1. Scegliere **nuovo**dal menu **file** , quindi selezionare **progetto**.
+1. Scegliere **Nuovo** dal menu **File**, quindi selezionare **Progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
 2. Selezionare il linguaggio del codice desiderato, selezionare **progetto vuoto**, quindi fare clic su **OK**.
 

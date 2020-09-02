@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849814"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
@@ -31,7 +31,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
   
  I percorsi dei file con estensione exe e dll vengono archiviati nel file di traccia quando la traccia viene raccolta.  La modifica di questa impostazione non ha alcun effetto sulle tracce raccolte in precedenza.  
   
-## <a name="buffering"></a>Buffer  
+## <a name="buffering"></a>responseBuffering  
  Per raccogliere una traccia, il visualizzatore di concorrenza usa ETW (Event Tracing for Windows).  Per l'archiviazione degli eventi, ETW usa diversi buffer.  Le impostazioni predefinite del buffer ETW possono non essere sempre ottimali e, in alcuni casi, possono causare problemi come la perdita di eventi.  Per configurare le impostazioni del buffer ETW, è possibile usare la scheda Buffer. Per altre informazioni, vedere [Registrazione di eventi](https://msdn.microsoft.com/library/bb968803(VS.85).aspx) e [EVENT_TRACE_PROPERTIES structure](https://msdn.microsoft.com/library/aa363784(VS.85).aspx) (Struttura EVENT_TRACE_PROPERTIES).  
   
 ## <a name="filter"></a>Filtro  
@@ -44,7 +44,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
  Per impostazione predefinita, gli eventi CLR vengono raccolti solo quando un processo gestito viene profilato. Gli eventi CLR, infatti, non sono in genere necessari per i processi nativi.  In alcuni casi, ad esempio quando un processo nativo ospita il CLR, potrebbe essere necessario raccogliere eventi CLR per un processo nativo.  In questo caso, selezionare la casella di controllo **Raccogli per processi nativi**.  
   
 ### <a name="disable-rundown-events"></a>Disabilita eventi rundown  
- Il CLR genera gli eventi da due provider: runtime e rundown.  Se si vogliono raccogliere eventi CLR runtime, evitando però di raccogliere eventi rundown, selezionare la casella di controllo **Disabilita eventi rundown**.  Questa operazione riduce la dimensione del file di traccia generato dalla raccolta, ma è possibile che alcuni stack non vengano risolti. Per altre informazioni, vedere [CLR ETW Providers](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) (Provider CLR ETW).  
+ Il CLR genera gli eventi da due provider: runtime e rundown.  Se si vogliono raccogliere eventi CLR runtime, evitando però di raccogliere eventi rundown, selezionare la casella di controllo **Disabilita eventi rundown**.  Questa operazione riduce la dimensione del file di traccia generato dalla raccolta, ma è possibile che alcuni stack non vengano risolti. Per ulteriori informazioni, vedere [provider ETW di CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) .  
   
 ### <a name="sample-events"></a>Eventi di esempio  
  È possibile usare eventi di esempio per raccogliere tutti gli stack di chiamate associati all'esecuzione di thread. Questi eventi vengono raccolti circa una volta ogni millisecondo nel processo corrente. Se la raccolta di eventi di esempio viene disabilitata, la dimensione della traccia raccolta risulta ridotta, ma non sarà possibile visualizzare alcuno stack di chiamate associato all'esecuzione del thread.  
@@ -84,7 +84,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
   
 - File di traccia del visualizzatore di concorrenza (*.CVTrace)  
   
-  Nei due file con estensione etl vengono archiviati i dati di traccia non elaborati, mentre nei due file del visualizzatore di concorrenza vengono archiviati i dati elaborati.  I file con estensione etl non elaborati non vengono usati dopo l'elaborazione di una traccia.  La selezione della casella di controllo **Elimina i file di log traccia eventi (ETL) dopo l'analisi** riduce la quantità di dati di traccia archiviati nel disco.  
+  Nei due file con estensione etl vengono archiviati i dati di traccia non elaborati, mentre nei due file del visualizzatore di concorrenza vengono archiviati i dati elaborati.  I file con estensione etl non elaborati non vengono usati dopo l'elaborazione di una traccia.  La selezione della casella di controllo **Elimina i file di log di traccia eventi (ETL) dopo l'analisi** riduce la quantità di dati di traccia archiviati sul disco.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Just My Code](../profiling/just-my-code-threads-view.md)   

@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: overview
 description: Informazioni su come iniziare a gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale di amministrazione delle sottoscrizioni.
 ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249868"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual Studio

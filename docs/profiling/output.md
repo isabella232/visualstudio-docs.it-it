@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778505"
 ---
 # <a name="output"></a>Output
@@ -31,7 +31,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **Output** deve essere usata con l'opzione **Start**.
 
- **Inizio:** `Method` specifica il nome del file di output.
+ **Inizio:** `Method` Specifica il nome del file di output.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente il file di dati di profilatura viene creato nella directory corrente.

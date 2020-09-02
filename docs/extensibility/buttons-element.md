@@ -1,5 +1,5 @@
 ---
-title: Pulsante Elemento . Documenti Microsoft
+title: Elemento Buttons | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739927"
 ---
 # <a name="buttons-element"></a>Elemento Buttons
-Raggruppa gli elementi [Button,](../extensibility/button-element.md) che rappresentano singoli comandi.
+Elementi del [pulsante](../extensibility/button-element.md) gruppi, che rappresentano i singoli comandi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,24 +33,24 @@ Raggruppa gli elementi [Button,](../extensibility/button-element.md) che rappres
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Buttons](../extensibility/buttons-element.md)|Raggruppa gli elementi Button.|
+|[Elemento Buttons](../extensibility/buttons-element.md)|Elementi del pulsante gruppi.|
 |[Elemento Button](../extensibility/button-element.md)|Definisce un comando con cui l'utente può interagire.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|
 
 ## <a name="example"></a>Esempio
 
@@ -67,5 +67,5 @@ Raggruppa gli elementi [Button,](../extensibility/button-element.md) che rappres
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Come VSPackage aggiungere elementi dell'interfaccia utenteHow VSPackages add user interface elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: Gli elementi della Shell isolata | Microsoft Docs
+title: Elementi della shell isolata | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,64 +11,64 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204606"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementi della shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile modificare le impostazioni del Registro di sistema, le impostazioni di runtime e punto di ingresso dell'applicazione dell'applicazione shell isolata e relativo vsct, con estensione pkgdef, and.pkgundef file.  
+È possibile modificare le impostazioni del registro di sistema, le impostazioni della fase di esecuzione e il punto di ingresso dell'applicazione dell'applicazione shell isolata e i relativi file. vsct,. pkgdef e. pkgundef.  
   
-## <a name="registry-settings"></a>Impostazioni Registro di sistema  
- Sia il con estensione pkgdef e i file con estensione pkgundef modificano le impostazioni del Registro di sistema per l'applicazione shell isolata. Quando viene eseguita l'applicazione, le impostazioni del Registro di sistema sono definite nella sequenza seguente:  
+## <a name="registry-settings"></a>Impostazioni del Registro di sistema  
+ Entrambi i file con estensione pkgdef e pkgundef modificano le impostazioni del registro di sistema per l'applicazione shell isolata. Quando l'applicazione viene eseguita, le impostazioni del registro di sistema sono definite nella sequenza seguente:  
   
- Quando viene eseguita l'applicazione, le impostazioni del Registro di sistema sono definite nella sequenza seguente:  
+ Quando l'applicazione viene eseguita, le impostazioni del registro di sistema sono definite nella sequenza seguente:  
   
-1. La chiave del Registro di sistema per l'applicazione viene creata.  
+1. Viene creata la chiave del registro di sistema per l'applicazione.  
   
-2. Il Registro di sistema viene aggiornato dal file con estensione pkgdef dell'applicazione mediante la definizione di voci e chiavi specificate.  
+2. Il registro di sistema viene aggiornato dal file con estensione pkgdef dell'applicazione definendo le chiavi e le voci specificate.  
   
-3. Per ogni pacchetto che fa parte dell'applicazione, il Registro di sistema viene aggiornato dal file con estensione pkgdef dello stesso pacchetto. Ogni pacchetto è definito nel file con estensione pkgdef dell'applicazione per il \Packages $ $RootKey\\{*vsPackageGuid*} chiave per il pacchetto.  
+3. Per ogni pacchetto che fa parte dell'applicazione, il registro di sistema viene aggiornato dal file con estensione pkgdef del pacchetto. Ogni pacchetto viene definito nel file con estensione pkgdef dell'applicazione dalla chiave $RootKey $ \Packages \\ {*vsPackageGuid*} per il pacchetto.  
   
-4. Il Registro di sistema viene aggiornato dal AppEnvConfig.pkgdef e BaseConfig.pkgdef nel *percorso di installazione di Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform directory. Questi file sono parte di Visual Studio e far parte del pacchetto ridistribuibile Visual Studio Shell (modalità isolata).  
+4. Il registro di sistema viene aggiornato da AppEnvConfig. pkgdef e BaseConfig. pkgdef nella directory *percorso di installazione di Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform. Questi file fanno parte di Visual Studio e fanno parte anche del pacchetto ridistribuibile di Visual Studio Shell (modalità isolata).  
   
-5. Il Registro di sistema viene aggiornato dal file con estensione pkgundef dell'applicazione rimuovendo le voci e chiavi specificate.  
+5. Il registro di sistema viene aggiornato dal file con estensione pkgundef dell'applicazione rimuovendo le chiavi e le voci specificate.  
   
-## <a name="run-time-settings"></a>Impostazioni di Run-Time  
- Quando un utente avvia l'applicazione shell isolata, chiama il punto di ingresso di avvio della shell di Visual Studio. Le impostazioni dell'applicazione sono definite all'avvio dell'applicazione, come indicato di seguito:  
+## <a name="run-time-settings"></a>Impostazioni della fase di esecuzione  
+ Quando un utente avvia l'applicazione shell isolata, chiama il punto di ingresso iniziale della shell di Visual Studio. Le impostazioni dell'applicazione vengono definite all'avvio dell'applicazione, come indicato di seguito:  
   
-1. La shell di Visual Studio controlla il Registro di sistema dell'applicazione per le chiavi specifiche. Se l'impostazione per una chiave viene specificato nella chiamata al punto di ingresso di avvio, tale valore sostituisce il valore del Registro di sistema.  
+1. La shell di Visual Studio controlla la presenza di chiavi specifiche nel registro di sistema dell'applicazione. Se l'impostazione per una chiave viene specificata nella chiamata al punto di ingresso iniziale, tale valore esegue l'override del valore nel registro di sistema.  
   
-2. Se il Registro di sistema né la voce punto parametro specifica il valore di un'impostazione, quindi viene usato il valore predefinito per l'impostazione.  
+2. Se il registro di sistema o il parametro del punto di ingresso non specificano il valore di un'impostazione, viene usato il valore predefinito per l'impostazione.  
   
-   Quando un utente avvia l'applicazione dalla riga di comando, tutte le opzioni della riga di comando vengono passate alla shell di Visual Studio, che li gestisce nella stesso modo in cui vengono effettuate. Per altre informazioni sulle opzioni Devenv, vedere [opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md) e [opzioni della riga di comando Devenv per lo sviluppo di VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Per altre informazioni sul modo in cui si registra un pacchetto per opzioni della riga di comando, vedere [aggiunta di opzioni della riga di comando](../extensibility/adding-command-line-switches.md).  
+   Quando un utente avvia l'applicazione dalla riga di comando, tutte le opzioni della riga di comando vengono passate alla shell di Visual Studio, che le gestisce esattamente come devenv. Per ulteriori informazioni sulle opzioni devenv, vedere [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md) e [Opzioni della riga di comando devenv per lo sviluppo di VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Per ulteriori informazioni sulla modalità di registrazione di un pacchetto per le opzioni della riga di comando, vedere [aggiunta di opzioni della riga di comando](../extensibility/adding-command-line-switches.md).  
   
-## <a name="the-start-entry-point"></a>Il punto di ingresso di avvio  
- Il file Appenvstub.dll contiene punti di ingresso per l'accesso alle shell isolata. All'avvio dell'applicazione, viene chiamato punto di ingresso iniziale di Appenvstub.dll.  
+## <a name="the-start-entry-point"></a>Punto di ingresso iniziale  
+ Il file di Appenvstub.dll contiene punti di ingresso per l'accesso alla shell isolata. All'avvio dell'applicazione, viene chiamato il punto di ingresso iniziale di Appenvstub.dll.  
   
- È possibile modificare il comportamento dell'applicazione modificando il valore dell'ultimo parametro che viene passato al punto di ingresso iniziale. Per altre informazioni, vedere [isolato Shell voce punto parametri (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md).  
+ È possibile modificare il comportamento dell'applicazione modificando il valore dell'ultimo parametro passato al punto di ingresso iniziale. Per altre informazioni, vedere [parametri del punto di ingresso della shell isolata (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md).  
   
-## <a name="the-vsct-file"></a>Il file con estensione File Vsct  
- Il file con estensione vsct consente di specificare quali elementi dell'interfaccia utente di Visual Studio standard sono disponibili nell'applicazione. Per altre informazioni, vedere [. File Vsct](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md).  
+## <a name="the-vsct-file"></a>Il. File vsct  
+ Il file con estensione vsct consente di specificare quali elementi standard dell'interfaccia utente di Visual Studio sono disponibili nell'applicazione. Per ulteriori informazioni, vedere [. File vsct](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md).  
   
-## <a name="the-pkgundef-file"></a>Il file con estensione File Pkgundef  
- Quando l'applicazione viene installata in un computer in cui è già installato Visual Studio, viene creata una copia delle voci del Registro di sistema di Visual Studio per l'applicazione. Per impostazione predefinita, l'applicazione usa i pacchetti VSPackage che sono già installati nel computer. Il file con estensione pkgundef consente di escludere le voci del Registro di sistema per rimuovere elementi specifici della shell di Visual Studio o estensioni dall'applicazione. Per altre informazioni, vedere [. File Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
+## <a name="the-pkgundef-file"></a>Il. File Pkgundef  
+ Quando l'applicazione viene installata in un computer in cui è già installato Visual Studio, viene creata una copia delle voci del registro di sistema di Visual Studio per l'applicazione. Per impostazione predefinita, l'applicazione usa VSPackage già installati nel computer. Il file con estensione pkgundef consente di escludere le voci del registro di sistema per rimuovere elementi specifici della shell di Visual Studio o delle estensioni dall'applicazione. Per ulteriori informazioni, vedere [. File Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
   
- Il file con estensione pkgundef consente di escludere le voci del Registro di sistema per rimuovere elementi specifici della shell di Visual Studio o estensioni dall'applicazione. Per altre informazioni, vedere [. File Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
+ Il file con estensione pkgundef consente di escludere le voci del registro di sistema per rimuovere elementi specifici della shell di Visual Studio o delle estensioni dall'applicazione. Per ulteriori informazioni, vedere [. File Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md).  
   
- Il set di pacchetti GUID che è possibile escludere sono racchiusi [pacchetto i GUID di funzionalità di Visual Studio](../extensibility/package-guids-of-visual-studio-features.md).  
+ Il set di GUID di pacchetto che è possibile escludere è elencato in [GUID di pacchetto delle funzionalità di Visual Studio](../extensibility/package-guids-of-visual-studio-features.md).  
   
-## <a name="the-pkgdef-file"></a>Il file con estensione File pkgdef  
- Il file con estensione pkgdef consente di definire le voci del Registro di sistema per l'applicazione che vengono impostate quando l'applicazione viene installata. Per una descrizione del file con estensione pkgdef e un elenco di voci del Registro di sistema che utilizza la shell di Visual Studio, vedere [. I file pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
+## <a name="the-pkgdef-file"></a>Il. File pkgdef  
+ Il file con estensione pkgdef consente di definire le voci del registro di sistema per l'applicazione che vengono impostate durante l'installazione dell'applicazione. Per una descrizione del file con estensione pkgdef e un elenco di voci del registro di sistema utilizzate dalla shell di Visual Studio, vedere [. File pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
 ## <a name="substitution-strings"></a>Stringhe di sostituzione  
- Le stringhe di sostituzione usate nei file con estensione pkgdef e pkgundef sono elencate [le stringhe di sostituzione usate in. Pkgdef e. File Pkgundef](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
+ Le stringhe di sostituzione utilizzate nei file con estensione pkgdef e pkgundef sono elencate in [stringhe di sostituzione utilizzate in. Pkgdef e. File Pkgundef](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
   
 ## <a name="other-settings"></a>Altre impostazioni  
- Se l'applicazione shell isolata dipende Microsoft.VisualStudio.GraphModel.dll, è necessario aggiungere il seguente reindirizzamento dell'associazione al file. config dell'applicazione Shell isolata:  
+ Se l'applicazione della shell isolata dipende da Microsoft.VisualStudio.GraphModel.dll, è necessario aggiungere il reindirizzamento di binding seguente al file. config dell'applicazione shell isolata:  
   
 ```  
 <dependentAssembly>  

@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8010bbbc38dee980ebe89dc60ccb513379103a26
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846320"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Finestra di dialogo Editor set di regole (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo **Editor set di regole** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Editor set di regole** in legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  La finestra di dialogo **Editor set di regole** viene utilizzata per creare e modificare i set di regole [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) , che vengono serializzati in un file con estensione rules.
 
@@ -38,19 +38,19 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Edi
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
 |**Aggiungi regola**|Aggiunge una nuova definizione della regola nuova nell’insieme di regole.|
-|**Eliminazione**|Elimina la regola selezionata dall’insieme di regole.|
-|**Concatenamento**|Specifica quale tipo di concatenamento diretto usare con l’insieme di regole. Le opzioni disponibili sono:<br /><br /> -   **concatenamento completo**, che specifica di usare tutti i meccanismi di concatenamento diretto: implicito, attribuzione di metodi ed esplicita usando una funzione **Update** .<br />-   **sequenziale**, che specifica di non usare alcun concatenamento diretto.<br />-   **solo l'aggiornamento esplicito**, che specifica di eseguire il concatenamento diretto solo per le azioni di **aggiornamento** .<br /><br /> Per ulteriori informazioni sul concatenamento diretto, vedere [utilizzo dell'attività PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).|
+|**Elimina**|Elimina la regola selezionata dall’insieme di regole.|
+|**Concatenamento**|Specifica quale tipo di concatenamento diretto usare con l’insieme di regole. Sono disponibili le opzioni seguenti:<br /><br /> -   **Concatenamento completo**, che specifica di usare tutti i meccanismi di concatenamento diretto: implicito, attribuzione di metodi ed esplicita usando una funzione **Update** .<br />-   **Sequenziale**, che specifica di non usare alcun concatenamento diretto.<br />-   **Solo aggiornamento esplicito**, che specifica di eseguire il concatenamento diretto solo per le azioni di **aggiornamento** .<br /><br /> Per ulteriori informazioni sul concatenamento diretto, vedere [utilizzo dell'attività PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).|
 |**Name**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per nome.|
-|**Priority**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per priorità.|
+|**Priorità**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per priorità.|
 |**Rivalutazione**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per tipo di rivalutazione.|
 |**Anteprima della regola**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per anteprima di una condizione della regola e delle azioni.|
-|**Name:**|Immettere il nome della regola.|
-|**Priority:**|Immettere una priorità per la regola. La priorità predefinita è 0.|
-|**Rivalutazione**|Specifica quale tipo di rivalutazione della regola usare con la regola. Le opzioni disponibili sono:<br /><br /> -   **sempre**, che fa sì che la regola venga rivalutata in base alle esigenze.<br />-   **mai**, in modo che la regola non venga mai rivalutata. In questo caso una regola viene eseguita solo una volta.|
-|**Active**|Selezionare per rendere attiva la regola.|
+|**Nome:**|Immettere il nome della regola.|
+|**Priorità**|Immettere una priorità per la regola. La priorità predefinita è 0.|
+|**Rivalutazione:**|Specifica quale tipo di rivalutazione della regola usare con la regola. Sono disponibili le opzioni seguenti:<br /><br /> -   **Sempre**, che fa sì che la regola venga rivalutata in base alle esigenze.<br />-   **Never**, che fa sì che la regola non venga mai rivalutata. In questo caso una regola viene eseguita solo una volta.|
+|**Attivo**|Selezionare per rendere attiva la regola.|
 |**Condizione**|Immettere un'espressione per la condizione della regola. Per informazioni sulla sintassi dell'espressione, vedere la sessione riguardante l’immissione di espressioni di condizioni e azioni in questa pagina.|
-|**Azioni Then:**|Immettere l'espressione per azioni THEN. Per informazioni sulla sintassi dell'espressione, vedere la sessione riguardante l’immissione di espressioni di condizioni e azioni in questa pagina.|
-|**Azioni else:**|Immettere l'espressione per azioni ELSE. Per informazioni sulla sintassi dell'espressione, vedere la sessione riguardante l’immissione di espressioni di condizioni e azioni in questa pagina.|
+|**Azioni THEN:**|Immettere l'espressione per azioni THEN. Per informazioni sulla sintassi dell'espressione, vedere la sessione riguardante l’immissione di espressioni di condizioni e azioni in questa pagina.|
+|**Azioni ELSE:**|Immettere l'espressione per azioni ELSE. Per informazioni sulla sintassi dell'espressione, vedere la sessione riguardante l’immissione di espressioni di condizioni e azioni in questa pagina.|
 |**OK**|Fare clic per salvare l’insieme di regole in un file con estensione rules.|
 
  Per ulteriori informazioni sui set di regole, vedere [utilizzo dell'attività PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx).
@@ -58,7 +58,7 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Edi
 ## <a name="entering-condition-and-action-expressions"></a>Immissione di espressioni di condizioni e azioni
  Immettere le espressioni per la condizione e le azioni Then e else come testo nelle rispettive caselle di testo nella finestra di dialogo **Editor set di regole** . È possibile digitare **questo.** nell'editor per fare riferimento a campi, proprietà e metodi usati nel flusso di lavoro usando un menu di tipo IntelliSense. In alternativa, è possibile digitare direttamente il nome di un membro del flusso di lavoro. È possibile richiamare metodi statici sui tipi a cui viene fatto riferimento digitando il nome della classe seguito dal nome del metodo.
 
- È possibile aggiungere operatori logici alla condizione, ad esempio E, O e NON. È anche possibile aggiungere predicati. Un predicato è composto da un operatore binario e due operandi. Gli operatori binari supportati sono = =, >, \<, > = e < =. Gli operandi supportati sono membri pubblici ai quali è stato assegnato un valore costante, una funzione aritmetica e un ambito.
+ È possibile aggiungere operatori logici alla condizione, ad esempio E, O e NON. È inoltre possibile aggiungere predicati. Un predicato è composto da un operatore binario e due operandi. Gli operatori binari supportati sono = =, >, \<, > = e <=. Gli operandi supportati sono membri pubblici ai quali è stato assegnato un valore costante, una funzione aritmetica e un ambito.
 
  È possibile specificare il tipo per il confronto ed è possibile confrontarlo con un **valore null** o una stringa vuota. È possibile annidare chiamate ai membri su una variabile contenente un tipo complesso, ad esempio, `this.Address.State == "WA"`.
 
@@ -66,13 +66,13 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Edi
 
 - operatori relazionali: ==, =, !=
 
-- Operatori di confronto: <, \<=, >, > =
+- Operatori di confronto: <, \<=, > , >=
 
 - Operatori aritmetici: +, - , *, /, MOD
 
-- Operatori logici: and, & & o, &#124; &#124;, not,!
+- Operatori logici: AND,  && o,  &#124;&#124;, NOT,!
 
-- Operatori bit per bit: &,&#124;
+- Operatori bit per bit: &, &#124;
 
   La precedenza di operatori dell’espressione segue le regole di precedenza dell’operatore C#.
 

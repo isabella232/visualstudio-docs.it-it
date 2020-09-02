@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetReferenceType | Microsoft Docs
+title: 'IDebugReference2:: SetReferenceType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 31be7be2b9d17ca5b7af65e4d38668f88d484d9d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178180"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
@@ -40,7 +40,7 @@ int SetReferenceType ( 
   
 #### <a name="parameters"></a>Parametri  
  `dwRefType`  
- [in] Un valore compreso il [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) enumerazione che specifica il tipo di riferimento.  
+ in Valore dell'enumerazione [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) che specifica il tipo di riferimento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce sempre `E_NOTIMPL`.  

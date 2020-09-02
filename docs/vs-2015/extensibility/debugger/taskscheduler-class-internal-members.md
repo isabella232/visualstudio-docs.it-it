@@ -1,5 +1,5 @@
 ---
-title: Classe TaskScheduler - membri interni | Microsoft Docs
+title: Classe TaskScheduler-membri interni | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 427a84b3dcda0471f5ec9d71883a5a8e859bb92d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176693"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - Membri interni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In questo argomento vengono descritti i membri interni del <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classi che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere il <xref:System.Threading.Tasks.TaskScheduler> argomento di riferimento.  
+In questo argomento vengono descritti i membri interni della <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere l' <xref:System.Threading.Tasks.TaskScheduler> argomento di riferimento.  
   
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché non è possibile accedere a questi membri interni dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ In questo argomento vengono descritti i membri interni del <xref:System.Threadin
        extends System.Object  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
   
 ### <a name="methods"></a>Metodi  
   
-|Name|Descrizione|  
+|Nome|Descrizione|  
 |----------|-----------------|  
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Recupera una matrice di tutte le attività pianificate.|  
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti che sono attualmente attivi.|  
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti attualmente attivi.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   

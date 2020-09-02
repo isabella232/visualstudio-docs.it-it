@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82d1a52616273a1cfe1d54580c91ec4ba6e1c09e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466070"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
@@ -58,7 +58,7 @@ La tabella seguente illustra i metodi di `IDiaSectionContrib` .
 |[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Recupera il CRC delle informazioni di rilocazione per la sezione.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Recupera l'identificatore modulo per la sezione.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Questa interfaccia viene ottenuta chiamando i metodi [IDiaEnumSectionContribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) e [IDiaEnumSectionContribs:: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) . Per un esempio di come ottenere l'interfaccia, vedere l'interfaccia [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) `IDiaSectionContrib` .
@@ -133,7 +133,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)

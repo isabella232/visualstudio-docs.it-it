@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 84c7a173bf0b7f5b3dc2187c0c8574819b2317a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176900"
 ---
 # <a name="message-markers"></a>Marcatori di messaggi
@@ -27,5 +27,5 @@ Un marcatore del messaggio rappresenta l'output del log. Un messaggio è una str
  Talvolta più messaggi si presentano a così poca distanza tra loro nel visualizzatore di concorrenza da non poter essere rappresentati singolarmente. In questo caso, viene visualizzato un *marcatore di aggregazione di messaggi* che rappresenta i messaggi sottostanti. Quando si posiziona il puntatore del mouse su una di queste icone, compare una descrizione comando che mostra il numero di messaggi sottostanti rappresentati. Per visualizzare i messaggi, fare zoom avanti.  Se viene fatto zoom avanti completamente e viene visualizzato ancora un marcatore di aggregazione, è possibile visualizzare i messaggi sottostanti nel [rapporto Marcatori](../profiling/markers-report.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)   
+ [Marcatori del Visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)   
  [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)

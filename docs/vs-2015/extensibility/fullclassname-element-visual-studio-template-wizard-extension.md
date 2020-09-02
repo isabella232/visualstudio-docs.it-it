@@ -1,5 +1,5 @@
 ---
-title: Elemento FullClassName (estensione della creazione guidata modello di Visual Studio) | Microsoft Docs
+title: Elemento FullClassName (estensione della creazione guidata modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,21 +13,21 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6cd466a41c61da929e9acc1619f384a3621f9c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204341"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (estensione della Creazione guidata modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il nome completo della classe che implementa il `IWizard` interfaccia.  
+Nome completo della classe che implementa l' `IWizard` interfaccia.  
   
- \<VSTemplate >  
- \<WizardExtension >  
+ \<VSTemplate>  
+ \<WizardExtension>  
  ...  
- \<FullClassName >  
+ \<FullClassName>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,20 +46,20 @@ Il nome completo della classe che implementa il `IWizard` interfaccia.
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per la creazione guidata modello di personalizzazione.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per personalizzare la creazione guidata modello.|  
   
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Tale testo specifica la classe che implementa il `IWizard` interfaccia. La classe specificata deve esistere nell'assembly specificato per il [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elemento.  
+ Questo testo specifica la classe che implementa l' `IWizard` interfaccia. La classe specificata deve esistere nell'assembly specificato dall'elemento [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `FullClassName` è un elemento figlio obbligatorio di `WizardExtension`.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
+ Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -90,6 +90,6 @@ Il nome completo della classe che implementa il `IWizard` interfaccia.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Procedura: utilizzare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

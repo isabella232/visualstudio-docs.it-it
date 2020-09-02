@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301951"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313796"
 ---
 # <a name="project-and-item-templates"></a>Modelli di progetti e di elementi
 
@@ -27,7 +27,7 @@ Con Visual Studio vengono installati vari modelli di progetti e di elementi pred
 
 I modelli rappresentano un punto di partenza per iniziare a creare progetti o per espandere i progetti esistenti. I modelli di progetto forniscono i file necessari per un determinato tipo di progetto, includono i riferimenti ad assembly standard e impostano le proprietà di progetto predefinite e le opzioni del compilatore. La complessità dei modelli di elementi può variare: da un singolo file vuoto con una determinata estensione di file fino a più file del codice sorgente con codice stub, file di informazioni sulla progettazione e risorse incorporate.
 
-È possibile usare modelli installati, creare modelli personalizzati o scaricare e usare modelli creati dalla community. Per ulteriori informazioni, vedere [Procedura: creare modelli](../ide/how-to-create-project-templates.md) di progetto e [Procedura: creare modelli di elemento](../ide/how-to-create-item-templates.md).
+È possibile usare modelli installati, creare modelli personalizzati o scaricare e usare modelli creati dalla community. Per altre informazioni, vedere [procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md) e [procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Contenuto di un modello
 
@@ -65,13 +65,13 @@ Quando questi file vengono compressi in un file con estensione *zip* e inseriti 
 
 - I modelli di elementi vengono visualizzati nella finestra **Aggiungi nuovo elemento**.
 
-Per ulteriori informazioni sulle cartelle dei modelli, vedere [Procedura: individuare e organizzare](../ide/how-to-locate-and-organize-project-and-item-templates.md)i modelli .
+Per ulteriori informazioni sulle cartelle dei modelli, vedere [procedura: individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: creare modelli di progettoHow to: Create project templates](../ide/how-to-create-project-templates.md)
-- [Procedura: Creare modelli di elementoHow to: Create item templates](../ide/how-to-create-item-templates.md)
+- [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)
 - [Aggiungere o modificare tag nei modelli di progetto](template-tags.md)
-- [Parametri del modello](../ide/template-parameters.md)
+- [Parametri di modelli](../ide/template-parameters.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Pacchetti NuGet nei modelli di Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

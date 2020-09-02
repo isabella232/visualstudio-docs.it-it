@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778375"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilatura e sicurezza in Windows Vista
@@ -47,6 +47,6 @@ La *profilatura tra sessioni* è una funzionalità per la profilatura di un proc
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramiche](../profiling/overviews-performance-tools.md)
+- [Cenni preliminari](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Procedura: eseguire la connessione a un processo in esecuzione](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))

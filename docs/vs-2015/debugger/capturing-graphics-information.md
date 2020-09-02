@@ -1,5 +1,5 @@
 ---
-title: Acquisizione di informazioni grafiche | Microsoft Docs
+title: Acquisizione delle informazioni grafiche | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702546"
 ---
 # <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche
@@ -30,26 +30,26 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Per eseguire l'applicazione nella diagnostica della grafica  
   
-- Nella barra dei menu scegliere **Debug**, **Grafica**, **Avvia diagnostica**. (Tastiera: Premere ALT+F5)  
+- Nella barra dei menu scegliere **Debug**, **Grafica**, **Avvia diagnostica**. Tastiera: premere ALT+F5.  
   
-- Nel **grafica** sulla barra degli strumenti, scegliere il **avvia diagnostica** pulsante.  
+- Sulla barra degli strumenti **grafica** scegliere il pulsante **Avvia diagnostica** .  
   
   Se un'app è in esecuzione nella diagnostica grafica, verranno costantemente acquisiti determinati tipi di informazioni grafiche, tra cui la configurazione dei dispositivi, la creazione della catena di scambio e di oggetti grafici e risorse, nonché altri eventi importanti che influiscono su più di un frame. Contemporaneamente, è possibile acquisire informazioni dettagliate su frame specifici; tali informazioni includono chiamate di disegno e invii di compute shader, oltre a risorse e oggetti Direct3D che li supportano.  
   
 #### <a name="to-capture-a-frame"></a>Per acquisire un frame  
   
-- In Visual Studio sul **grafica** sulla barra degli strumenti, scegliere il **Acquisisci Frame** pulsante![icona pulsante acquisizione grafica](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- In Visual Studio, sulla barra degli strumenti **grafica** , scegliere l'icona del pulsante **Acquisisci frame** pulsante![Acquisisci](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
 - Premere STAMP sulla tastiera.  
   
   > [!NOTE]
   > Mentre un'app è in esecuzione in **Diagnostica della grafica**, è possibile usare il tasto STAMP solo per acquisire un frame di informazioni grafiche e non per eseguire la funzione standard. Questa condizione rimarrà attiva finché non si deciderà di interrompere l'acquisizione delle informazioni grafiche, in genere arrestando il debug o chiudendo l'app, anche se un'altra app presenta lo stato attivo.  
   
-- Nell'interfaccia di acquisizione di Visual Studio, scegliere il **Acquisisci Frame** pulsante che si trova sopra il **sessione di diagnostica** sequenza temporale, o scegliere di grande **Acquisisci Frame** pulsante che si trova sotto il **fotogrammi al secondo** corsia e a destra dei frame acquisiti in precedenza. Entrambi i pulsanti sono evidenziati nell'immagine seguente.  
+- Nell'interfaccia di acquisizione di Visual Studio, scegliere il pulsante **Acquisisci frame** che si trova sopra la sequenza temporale della **sessione di diagnostica** oppure scegliere il pulsante del **frame di acquisizione** di grandi dimensioni situato sotto la corsia per i frame **al secondo** e a destra dei frame acquisiti in precedenza. Entrambi i pulsanti sono evidenziati nell'immagine seguente.  
   
-   ![Acquisire frame con lo strumento utilizzo GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![Acquisire frame con lo strumento di uso della GPU.](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-   Quando si è pronti per esaminare i frame acquisiti, avviare il **Visual Studio Graphics Analyzer** seguendo la **Frame...** collegamento sopra le anteprime delle immagini oppure facendo doppio clic su Anteprima.  
+   Quando si è pronti per esaminare i frame acquisiti, avviare il **analizzatore grafica di Visual Studio** seguendo il **frame...** collegamento sopra le anteprime delle immagini oppure facendo doppio clic sull'anteprima.  
   
   È possibile acquisire solo frame interi e quindi, all'avvio di un'acquisizione, verranno effettivamente registrate le informazioni grafiche dal frame successivo. La registrazione inizierà immediatamente dopo aver verificato il frame in cui è stata avviata l'acquisizione e terminerà dopo aver verificato il frame acquisito. È possibile acquisire un numero indefinito di frame mentre l'app è in esecuzione nella diagnostica grafica. In assenza di frame acquisiti, il log di grafica verrà rimosso.  
   
@@ -79,7 +79,7 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
 ## <a name="capturing-graphics-information-remotely"></a>Acquisizione remota di informazioni grafiche  
  È possibile acquisire informazioni grafiche da un'app in esecuzione nel computer locale o in un computer o dispositivo remoto. L'acquisizione remota è supportata per i computer [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] e i dispositivi [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)]. Per acquisire informazioni grafiche da un'app in esecuzione in remoto, configurare il progetto per il debug remoto e quindi eseguire l'app nella diagnostica della grafica come descritto in precedenza. L'app viene eseguita nel computer remoto e le informazioni grafiche acquisite vengono registrate nel computer di sviluppo.  
   
- La modalità di configurazione del progetto per il debug remoto varia a seconda del tipo di app sviluppata e dal linguaggio di programmazione in uso. Per informazioni su come configurare il debug remoto per un'app Windows Store, vedere [Run Windows Store App in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md). Per informazioni su come configurare il debug remoto per un'app desktop di Windows, vedere [Set Up Remote Debugging per un progetto di Visual Studio](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
+ La modalità di configurazione del progetto per il debug remoto varia a seconda del tipo di app sviluppata e dal linguaggio di programmazione in uso. Per informazioni su come configurare il debug remoto per un'app di Windows Store, vedere [eseguire applicazioni Windows Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md). Per informazioni su come configurare il debug remoto per un'app desktop di Windows, vedere [configurare il debug remoto per un progetto di Visual Studio](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
  Successivamente sarà possibile usare un computer o un dispositivo remoto per riprodurre le informazioni grafiche, indipendentemente dall'origine dell'acquisizione. Per altre informazioni, vedere [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   

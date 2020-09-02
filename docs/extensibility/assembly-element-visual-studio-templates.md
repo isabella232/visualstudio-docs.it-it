@@ -1,5 +1,5 @@
 ---
-title: Elemento Assembly (modelli di Visual Studio) . Documenti Microsoft
+title: Elemento assembly (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740040"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (modelli di Visual Studio)
-Specifica le informazioni su un assembly, che il modello utilizza per aggiungere un riferimento di tale assembly ai progetti.
+# <a name="assembly-element-visual-studio-templates"></a>Elemento assembly (modelli di Visual Studio)
+Specifica le informazioni su un assembly utilizzato dal modello per aggiungere un riferimento a tale assembly ai progetti.
 
- \<VSTemplate \<> TemplateContent \< \<> \<riferimenti> riferimento> assembly>
+ \<VSTemplate> \<TemplateContent>
+ \<References>
+ \<Reference>
+ \<Assembly>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +38,11 @@ Specifica le informazioni su un assembly, che il modello utilizza per aggiungere
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- No.
+### <a name="attributes"></a>Attributes
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -50,7 +53,7 @@ Specifica le informazioni su un assembly, che il modello utilizza per aggiungere
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Questo testo specifica l'assembly da aggiungere a un progetto quando viene creata un'istanza del modello di elemento. Il nome dell'assembly deve essere specificato in uno dei seguenti modi:
+ Questo testo specifica l'assembly da aggiungere a un progetto quando viene creata un'istanza del modello di elemento. Il nome dell'assembly deve essere specificato in uno dei modi seguenti:
 
 - Come nome completo dell'assembly. Ad esempio:
 
@@ -60,7 +63,7 @@ Specifica le informazioni su un assembly, che il modello utilizza per aggiungere
     </Assembly>
     ```
 
-- Come semplice riferimento di testo. Ad esempio:
+- Come riferimento di testo semplice. Ad esempio:
 
     ```
     <Assembly> System </Assembly>
@@ -69,10 +72,10 @@ Specifica le informazioni su un assembly, che il modello utilizza per aggiungere
 ## <a name="remarks"></a>Osservazioni
  `Assembly` è un elemento figlio obbligatorio di `Reference`.
 
- Gli `Reference` `References,` elementi `Assembly` e possono essere utilizzati solo nei `Type` file `Item` *.vstemplate* con un valore di attributo di .
+ Gli `Reference` `References,` elementi, e `Assembly` possono essere utilizzati solo nei file con *estensione vstemplate* il cui `Type` valore di attributo è `Item` .
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente `TemplateContent` viene illustrato l'elemento di un modello di elemento. Questo codice XML aggiunge riferimenti agli assembly *System.dll* e *System.Data.dll.*
+ Nell'esempio seguente viene illustrato l' `TemplateContent` elemento di un modello di elemento. Il codice XML aggiunge riferimenti agli assembly *System.dll* e *System.Data.dll* .
 
 ```
 <TemplateContent>
@@ -93,5 +96,5 @@ Specifica le informazioni su un assembly, che il modello utilizza per aggiungere
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

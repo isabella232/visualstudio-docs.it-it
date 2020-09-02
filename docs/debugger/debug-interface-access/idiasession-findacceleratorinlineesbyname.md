@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: abd6f8afb7275503fa3de855575e9dcb6dad0fb3
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465846"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
@@ -46,10 +46,10 @@ out Puntatore a un `IDiaEnumSymbols` puntatore a interfaccia inizializzato con i
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Questa funzione Cerca le inline solo nelle funzioni dello stub dell'acceleratore. Ignora i record delle procedure C++ native.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

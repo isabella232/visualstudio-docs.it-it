@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f57d4f24348ff805669832ce6db9e8e4e79e4569
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330745"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
@@ -95,7 +95,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
      Il controllo `TextBlock` dovrebbe visualizzare il valore predefinito 0 come testo.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creare un'interfaccia utente tramite la finestra di progettazione XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 - [Finestra di dialogo Aggiungi convertitore di valori](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aaae07987f1d3364b064465aa6edff9a4748301
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329786"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procedura: Escludere o includere funzioni brevi nella strumentazione
@@ -39,6 +39,6 @@ Per impostazione predefinita, gli strumenti di profilatura escludono le *funzion
 
 4. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Controllare la raccolta dati](../profiling/controlling-data-collection.md)
 - [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)

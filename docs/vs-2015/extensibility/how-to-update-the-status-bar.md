@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiornare la barra di stato | Microsoft Docs'
+title: 'Procedura: aggiornare la barra di stato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1d48b07dd5e4fc1fe745e3669041884c1b8eacd9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703152"
 ---
 # <a name="how-to-update-the-status-bar"></a>Procedura: Aggiornare la barra di stato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il **sulla barra di stato** una barra di controllo si trova nella parte inferiore di molte finestre dell'applicazione che contiene uno o più righe di testo di stato o indicatori.  
+La **barra di stato** è una barra di controllo che si trova nella parte inferiore di molte finestre delle applicazioni che contengono uno o più indicatori o righe di testo di stato.  
   
 ### <a name="to-update-the-status-bar"></a>Per aggiornare la barra di stato  
   
-1. Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> su ogni oggetto di visualizzazione (DocView) che fornisce un editor, ad esempio una visualizzazione form e una visualizzazione del codice.  
+1. Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> in ogni singolo oggetto visualizzazione (DocView) fornito dall'editor, ad esempio una visualizzazione form e una visualizzazione codice.  
   
-2. Quando l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>, aggiornare le informazioni contenute nel **sulla barra di stato** chiamando i metodi di <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.  
+2. Quando l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> , aggiornare le informazioni nella **barra di stato** chiamando i metodi di <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> .  
   
     > [!NOTE]
-    > Le chiamate IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> solo quando la finestra del documento viene inizialmente attivata. Nella parte restante del tempo che la finestra del documento è attiva, è necessario aggiornare il **sulla barra di stato** informazioni come lo stato delle modifiche dell'editor.  
+    > L'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> solo quando viene attivata inizialmente la finestra del documento. Per il resto del tempo in cui è attiva la finestra del documento, è necessario aggiornare le informazioni sulla **barra di stato** quando lo stato dell'editor cambia.  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
- Oggetto **sulla barra di stato** contiene quattro campi separati:  
+ Una **barra di stato** contiene quattro campi distinti:  
   
-- Testo stato  
+- Testo Stato  
   
-- Indicatore di stato  
+- Barra di stato  
   
 - Icona animata  
   
-- Informazioni relative all'editor  
+- Informazioni dell'editor  
   
-  Per altre informazioni, vedere [barre di stato](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
+  Per ulteriori informazioni, vedere [barre di stato](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
   
-  Chiama automaticamente l'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo del <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementazione quando viene attivata la finestra del documento.  
+  L'IDE chiama automaticamente il <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> metodo dell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implementazione quando la finestra del documento è attivata.  
   
-  Il responsabile dell'implementazione di VSPackage è responsabile dell'aggiornamento del testo di stato nella barra di stato. L'IDE Reimposta questa stringa per "Pronto" se il campo di testo di stato è impostato su text vuota ("") in fase di inattività.  
+  L'implementatore VSPackage è responsabile dell'aggiornamento del testo di stato nella barra di stato. L'IDE Reimposta questa stringa su "READY" Se il campo di testo stato è impostato su testo vuoto ("") in fase di inattività.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Barre di stato](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

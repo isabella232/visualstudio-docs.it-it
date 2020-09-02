@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cdb35b9c61ddf347ee85553f69536d3757138ebe
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465706"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
@@ -46,7 +46,7 @@ out Restituisce un oggetto [IDiaEnumLineNumbers](../../debugger/debug-interface-
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

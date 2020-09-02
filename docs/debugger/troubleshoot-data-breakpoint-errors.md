@@ -16,10 +16,10 @@ manager: caslan
 ms.workload:
 - multiple
 ms.openlocfilehash: 20e3ea1cb0124e6bdfb93e023021673ca2e34602
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248746"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Risoluzione degli errori dei punti di interruzione dei dati
@@ -79,7 +79,7 @@ L'architettura (configurazione della piattaforma) in cui viene eseguito il progr
 | ARM | 1 | 4 |
 | ARM64 | 2 | 8 |
 
-## <a name="provide-feedback"></a>Fornire il feedback
+## <a name="provide-feedback"></a>Fornire commenti e suggerimenti
 
 Per eventuali problemi o suggerimenti relativi a questa funzionalità, inviare commenti tramite la guida > inviare commenti e suggerimenti > [segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md) nell'IDE o nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
 
