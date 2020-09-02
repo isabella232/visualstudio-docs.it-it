@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 38de89b9774ac20f67b91e4ba864534122f4cdb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580837"
 ---
 # <a name="basictype"></a>BasicType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Specifica tipo di base del simbolo.  
+Specifica il tipo di base del simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,66 +52,66 @@ enum BasicType { 
   
 ## <a name="elements"></a>Elementi  
  btNoType  
- Viene specificato alcun tipo di base.  
+ Nessun tipo di base specificato.  
   
  btVoid  
- Tipo di base è un `void`.  
+ Il tipo di base è `void` .  
   
  btChar  
- Tipo di base è un `char` (tipo di C/C++).  
+ Il tipo di base è un `char` (tipo C/C++).  
   
  btWChar  
- Tipo di base è un carattere wide (Unicode) (`WCHAR`).  
+ Il tipo di base è un carattere wide (Unicode) ( `WCHAR` ).  
   
  btInt  
- Tipo di base è `signed int` (tipo di C/C++).  
+ Il tipo di base è `signed int` (tipo C/C++).  
   
  btUInt  
- Tipo di base è `unsigned int` (tipo di C/C++).  
+ Il tipo di base è `unsigned int` (tipo C/C++).  
   
  btFloat  
- Tipo di base sono un numero a virgola mobile (`FLOAT`).  
+ Il tipo di base è un numero a virgola mobile ( `FLOAT` ).  
   
  btBCD  
- Tipo di base è un numero decimale a livello di codice binario (`BCD`).  
+ Il tipo di base è un valore decimale con codifica binaria ( `BCD` ).  
   
  btBool  
- Tipo di base sono un valore booleano (`BOOL`).  
+ Il tipo di base è un valore booleano ( `BOOL` ).  
   
  btLong  
- Tipo di base è un `long int` (tipo di C/C++).  
+ Il tipo di base è un `long int` (tipo C/C++).  
   
  btULong  
- Tipo di base è un `unsigned long int` (tipo di C/C++).  
+ Il tipo di base è un `unsigned long int` tipo (C/C++).  
   
  btCurrency  
- Tipo di base sono di tipo valuta.  
+ Il tipo di base è Currency.  
   
  btDate  
- Tipo di base è data/ora (`DATE`).  
+ Il tipo di base è date/time ( `DATE` ).  
   
  btVariant  
- Tipo di base sono una struttura di tipo di variabile (`VARIANT`).  
+ Il tipo di base è una struttura di tipo variabile ( `VARIANT` ).  
   
  btComplex  
- Tipo di base è un numero complesso.  
+ Il tipo di base è un numero complesso.  
   
  btBit  
- Tipo di base è un po'.  
+ Il tipo di base è un bit.  
   
  btBSTR  
- Tipo di base sono una stringa di base o binary (`BSTR`).  
+ Il tipo di base è una stringa di base o binaria ( `BSTR` ).  
   
  btHresult  
- Tipo di base è un `HRESULT`.  
+ Il tipo di base è `HRESULT` .  
   
-## <a name="remarks"></a>Note  
- I valori di questa enumerazione vengono restituiti per il [Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_BaseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: cvconst.h  
+ Intestazione: cvconst. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol:: get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

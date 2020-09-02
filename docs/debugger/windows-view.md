@@ -1,5 +1,5 @@
 ---
-title: Windows Vista | Microsoft Docs
+title: Visualizzazione di Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,39 +13,39 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900859"
 ---
 # <a name="windows-view"></a>Visualizzazione finestre
-Alla prima apertura Spy + +, Windows Vista sono riportati un albero di tutte le finestre e i controlli nel sistema. Vengono visualizzati il nome di classe e di handle di finestra. La finestra del desktop corrente è nella parte superiore dell'albero. Tutte le altre finestre figlio del desktop e sono elencate in base alla gerarchia delle finestre standard. Finestre di pari livello visualizzato negli elenchi espandibili su un livello rientrati sotto padri.
+Alla prima apertura di Spy + +, visualizzazione di Windows visualizza un albero di tutte le finestre e i controlli nel sistema. Vengono visualizzati l'handle della finestra e il nome della classe. La finestra del desktop corrente si trova nella parte superiore dell'albero. Tutte le altre finestre sono elementi figlio del desktop e sono elencate in base alla gerarchia standard della finestra. Le finestre di pari livello vengono visualizzate negli elenchi di espandibili rientrate sotto gli elementi padre.
 
- La figura seguente illustra una tipica visualizzazione di Spy + + Windows con il nodo superiore espanso.
+ Nella figura seguente viene illustrata una tipica visualizzazione Windows di Spy + + con il nodo principale espanso.
 
- ![Spy&#43; &#43; Windows Vista](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView") Spy + + Windows Vista
+ ![Spy&#43;&#43; visualizzazione di Windows](../debugger/media/spy--_windowsview.png "_WindowsView di Spy + +") Visualizzazione Windows di Spy + +
 
- La finestra del desktop corrente è nella parte superiore dell'albero. Tutte le altre finestre figlio del desktop e sono elencati in base alla gerarchia di finestra standard, con finestre di pari livello ordinati in ordine Z. È possibile espandere o comprimere qualsiasi nodo padre dell'albero, fare clic il + o - simbolo accanto al nodo.
+ La finestra del desktop corrente si trova nella parte superiore dell'albero. Tutte le altre finestre sono elementi figlio del desktop e sono elencate in base alla gerarchia standard della finestra, con finestre di pari livello ordinate in base all'ordine Z. È possibile espandere o comprimere qualsiasi nodo padre dell'albero facendo clic sul simbolo + o-accanto al nodo.
 
- Quando Windows Vista ha lo stato attivo, è possibile usare lo strumento di ricerca nel [finestra di dialogo ricerca](../debugger/window-search-dialog-box.md) per visualizzare le informazioni da tutte le finestre aperte nel sistema.
+ Quando la visualizzazione di Windows ha lo stato attivo, è possibile usare lo strumento di ricerca nella finestra di [dialogo ricerca finestre](../debugger/window-search-dialog-box.md) per visualizzare le informazioni da qualsiasi finestra aperta nel sistema.
 
-## <a name="in-this-section"></a>In questa sezione
- [Procedura: Usare lo strumento di ricerca](../debugger/how-to-use-the-finder-tool.md) Mostra come questo strumento esegue l'analisi di windows per le proprietà o i messaggi.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Procedura: utilizzare lo strumento di ricerca](../debugger/how-to-use-the-finder-tool.md) Mostra in che modo questo strumento analizza le finestre per le proprietà o i messaggi.
 
- [Procedura: Cercare una finestra in Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md) viene illustrato come trovare una specifica finestra nella visualizzazione di Windows.
+ [Procedura: cercare una finestra nella visualizzazione di Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) Viene illustrato come trovare una finestra specifica nella visualizzazione di Windows.
 
- [Procedura: Visualizzare le proprietà della finestra](../debugger/how-to-display-window-properties.md) m le procedure per aprire la finestra di dialogo Proprietà finestra.
+ [Procedura: visualizzare le proprietà della finestra](../debugger/how-to-display-window-properties.md) m procedure per aprire la finestra di dialogo Proprietà finestra.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+ [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.
 
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+ [Uso di Spy + +](../debugger/using-spy-increment.md) Introduce lo strumento Spy + + e spiega come può essere usato.
 
- [Finestra di dialogo Trova](../debugger/find-window-dialog-box.md) consente di visualizzare le proprietà o i messaggi da una specifica finestra.
+ [Finestra di dialogo Trova finestra](../debugger/find-window-dialog-box.md) Utilizzato per visualizzare le proprietà o i messaggi da una finestra specifica.
 
- [Finestra di dialogo ricerca](../debugger/window-search-dialog-box.md) consente di individuare il nodo per una specifica finestra nella visualizzazione di Windows.
+ [Finestra di dialogo ricerca finestre](../debugger/window-search-dialog-box.md) Utilizzato per trovare il nodo per una finestra specifica nella visualizzazione di Windows.
 
- [Finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) consente di visualizzare le proprietà di una finestra selezionato nella visualizzazione di Windows.
+ [Finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) Utilizzato per visualizzare le proprietà di una finestra selezionata nella visualizzazione di Windows.
 
- [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.

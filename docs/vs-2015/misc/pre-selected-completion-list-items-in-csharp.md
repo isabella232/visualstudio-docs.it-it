@@ -1,5 +1,5 @@
 ---
-title: Pre-selezionata elementi elenco di completamento in c# | Microsoft Docs
+title: Elementi dell'elenco di completamento preselezionati in C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -13,11 +13,11 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: 9ba9e17ba659d1148be9f3e05c3a7372d0496d09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62810593"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>Elementi dell'elenco di completamento preselezionati in C# #
-Questo contenuto è stato spostato in [elenchi di completamento in c#](../misc/completion-lists-in-csharp.md)
+Questo contenuto è stato spostato [negli elenchi di completamento in C#](../misc/completion-lists-in-csharp.md)

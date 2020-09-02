@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62818215"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Programmazione di Visual Studio Tools per Unity
@@ -24,7 +24,7 @@ Questa sezione contiene esempi per l'uso dell'API di Visual Studio Tools per Uni
  Ecco alcuni esempi che mostrano come è possibile usare le API di Visual Studio Tools per Unity.
 
 ### <a name="customize-project-files-created-by-vstu"></a>Personalizzare i file di progetto creati con VSTU
- Visual Studio Tools per Unity offre un callback in stile Unity durante la generazione dei file di progetto. Per informazioni su come modificare il file di progetto ogni volta che viene rigenerato, vedere [Esempio: generazione](../cross-platform/customize-project-files-created-by-vstu.md)di file di progetto .
+ Visual Studio Tools per Unity offre un callback in stile Unity durante la generazione dei file di progetto. Per informazioni su come è possibile modificare il file di progetto ogni volta che viene rigenerato, vedere [esempio: generazione di file di progetto](../cross-platform/customize-project-files-created-by-vstu.md).
 
 ### <a name="share-the-unity-log-callback-with-vstu"></a>Condividere il callback di log di Unity con VSTU
- Visual Studio Tools per Unity registra un callback di log con Unity in modo da poter eseguire la console di Unity in Visual Studio. Se anche gli script di editor registrano un callback di log con Unity, il callback di VSTU potrebbe interferire con questo. Per informazioni su come condividere il callback del log Unity con VSTU, vedere [Esempio: callback del log](../cross-platform/share-the-unity-log-callback-with-vstu.md).
+ Visual Studio Tools per Unity registra un callback di log con Unity in modo da poter eseguire la console di Unity in Visual Studio. Se anche gli script di editor registrano un callback di log con Unity, il callback di VSTU potrebbe interferire con questo. Per informazioni su come è possibile condividere il callback di log di Unity con VSTU, vedere [esempio: callback di log](../cross-platform/share-the-unity-log-callback-with-vstu.md).

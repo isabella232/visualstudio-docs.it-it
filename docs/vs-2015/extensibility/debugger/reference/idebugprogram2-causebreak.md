@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::CauseBreak | Microsoft Docs
+title: 'IDebugProgram2:: CauseBreak | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5520d624b2789488c7ab6a5cab353d78d2cd69ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555709"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Le richieste che il programma di arresta l'esecuzione successiva ora di uno dei tentativi thread di esecuzione.  
+Richiede l'arresto dell'esecuzione del programma la volta successiva che uno dei thread tenta di eseguire.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,12 +37,12 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Un' [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) evento viene inviato quando il programma quindi tenta di eseguire codice dopo questo metodo viene chiamato.  
+## <a name="remarks"></a>Osservazioni  
+ Un evento [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) viene inviato quando il programma tenta di eseguire il codice dopo la chiamata a questo metodo.  
   
- Questo metodo è asincrono, in quanto il metodo viene restituito immediatamente senza dover necessariamente attendere il blocco del programma.  
+ Questo metodo è asincrono perché il metodo restituisce immediatamente un risultato senza necessariamente attendere l'arresto del programma.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

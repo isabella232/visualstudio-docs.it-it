@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62583158"
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
@@ -41,7 +41,7 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
   
   La tabella seguente descrive le colonne del rapporto Visualizzazione Righe.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|Quantità di tempo durante la quale è stata impedita l'esecuzione del codice nell'istruzione a causa di un evento di conflitto. Non è incluso il tempo di blocco nelle funzioni chiamate dall'istruzione.|  
 |**% tempo blocco esclusivo**|Percentuale di tutto il tempo di blocco nel processo che costituiva il tempo di blocco esclusivo dell'istruzione.|  
@@ -53,9 +53,9 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 |**% tempo blocco inclusivo**|Percentuale di tutto il tempo di blocco nel processo che costituiva il tempo di blocco inclusivo dell'istruzione.|  
 |**Conflitti inclusivi**|Numero di volte in cui è stata impedita l'esecuzione di questa istruzione e delle funzioni chiamate nell'istruzione.|  
 |**% conflitti inclusivi**|Percentuale di tutti gli eventi di conflitto nel processo che costituivano conflitti inclusivi di questa istruzione.|  
-|**Nome riga**|Identificatore generato dal profiler della riga. L'identificatore usa la sintassi seguente:`SourceFile`**;[**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|  
+|**Nome riga**|Identificatore generato dal profiler della riga. L'identificatore utilizza la sintassi seguente: `SourceFile` **; [** `LineNumberStart` **,**`CharacterStart` **]->; [**`LineNumberEnd`**,**`CharacterEnd`**]**|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Nome modulo**|Nome del modulo che contiene l'istruzione.|  
+|**Nome del modulo**|Nome del modulo che contiene l'istruzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene l'istruzione.|  
 |**ID processo**|ID di processo (PID) del processo profilato.|  
 |**Nome processo**|Nome del processo.|  
@@ -66,7 +66,7 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne delle visualizzazioni dei rapporti](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Righe](../profiling/lines-view.md)   
- [Visualizzazione Righe - Campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)   
+ [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Visualizzazione righe](../profiling/lines-view.md)   
+ [Visualizzazione righe-campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)

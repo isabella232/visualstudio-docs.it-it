@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fa9c87065130e0b539e49c314648fa5b3944089b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572335"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Rappresenta una query per gli attributi personalizzati in un tipo o metodo.  
+Rappresenta una query per gli attributi personalizzati su un metodo o un tipo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,11 +34,11 @@ IDebugCustomAttributeQuery : IUnknown
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|Recupera un attributo personalizzato in base al nome.|  
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Determina nell'oggetto specificato è definito l'attributo personalizzato.|  
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|Determina se l'attributo personalizzato specificato è definito.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

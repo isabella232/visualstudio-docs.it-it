@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ddf479a2da74803916b7afc1945eb610d6b0e668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576633"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera un flag che indica se la sezione è un record COMDAT.  
@@ -35,13 +35,13 @@ HRESULT get_comdat ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se la sezione è un record COMDAT; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se la sezione è un record COMDAT; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Un record COMDAT è un record di File formato COFF (Common Object) che rende visibile il linker funzioni incluse nel pacchetto.  
+## <a name="remarks"></a>Osservazioni  
+ Un record COMDAT è un record COFF (Common Object File Format) che rende visibili le funzioni in pacchetto al linker.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

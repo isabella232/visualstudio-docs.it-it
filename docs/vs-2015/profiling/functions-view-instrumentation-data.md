@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef2375fc4132e0274e7cded6daf5bdd0a58891c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580225"
 ---
 # <a name="functions-view---instrumentation-data"></a>Visualizzazione Funzioni: dati di strumentazione
@@ -26,14 +26,14 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 ## <a name="general"></a>Generale  
  Le colonne generali identificano la funzione in una riga della visualizzazione.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Nome funzione**|Nome della funzione.|  
 |**Indirizzo funzione**|Indirizzo della funzione.|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione.|  
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione.|  
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
@@ -43,7 +43,7 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso  
  I valori relativi al tempo inclusivo trascorso indicano il tempo di permanenza di una funzione nello stack di chiamate. È incluso il tempo impiegato nelle funzioni chiamate dalla funzione e il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo inclusivo trascorso**|Tempo inclusivo trascorso totale di tutte le chiamate a questa funzione.|  
 |**% tempo inclusivo trascorso**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo trascorso di questa funzione.|  
@@ -54,7 +54,7 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 ## <a name="elapsed-exclusive-values"></a>Valori di tempo esclusivo trascorso  
  I valori relativi al tempo esclusivo trascorso indicano il tempo durante il quale una funzione stava eseguendo codice nel corpo della funzione, vale a dire quando la funzione si trovava in cima allo stack di chiamate. È incluso il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma è escluso il tempo impiegato nelle funzioni chiamate dalla funzione.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo esclusivo trascorso**|Tempo esclusivo trascorso totale di tutte le chiamate a questa funzione.|  
 |**% tempo esclusivo trascorso**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo trascorso totale di questa funzione.|  
@@ -65,7 +65,7 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 ## <a name="application-inclusive-values"></a>Valori di tempo inclusivo applicazione  
  I valori relativi al tempo inclusivo applicazione indicano il tempo di permanenza di una funzione nello stack di chiamate. È escluso il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma è incluso il tempo impiegato nelle funzioni chiamate dalla funzione.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo inclusivo applicazione**|Tempo inclusivo applicazione totale di tutte le chiamate a questa funzione.|  
 |**% tempo inclusivo applicazione**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo applicazione totale di questa funzione.|  
@@ -76,7 +76,7 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione  
  I valori relativi al tempo esclusivo applicazione indicano il tempo di esecuzione diretta di una funzione in cima allo stack di chiamate. È escluso il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ed è escluso anche il tempo impiegato nelle funzioni chiamate dalla funzione.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo esclusivo applicazione**|Tempo esclusivo applicazione totale di tutte le chiamate a questa funzione.|  
 |**% tempo esclusivo applicazione**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo applicazione totale di questa funzione.|  
@@ -85,7 +85,7 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)   
- [Visualizzazione Funzioni - Campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Visualizzazione Funzioni: strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+ [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Visualizzazione funzioni](../profiling/functions-view-sampling-data.md)   
+ [Visualizzazione funzioni-campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Visualizzazione funzioni-strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

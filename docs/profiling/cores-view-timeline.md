@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553110"
 ---
 # <a name="cores-view-timeline"></a>Sequenza temporale della visualizzazione Core
@@ -24,4 +24,4 @@ Ogni riga della sequenza temporale rappresenta un core processore logico nel sis
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Core](../profiling/cores-view.md)
-- [Controllo zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)
+- [Controllo zoom (visualizzazione thread)](../profiling/zoom-control-threads-view.md)

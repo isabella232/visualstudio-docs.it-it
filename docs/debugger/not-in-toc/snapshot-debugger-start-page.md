@@ -1,5 +1,5 @@
 ---
-title: Pagina iniziale per il Debugger di Snapshot
+title: Pagina iniziale per il Snapshot Debugger
 ms.date: 07/14/2018
 robots: noindex, nofollow
 ms.topic: reference
@@ -9,66 +9,66 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62905260"
 ---
-# <a name="getting-started-with-the-snapshot-debugger"></a>Getting Started With The Debugger Snapshot
+# <a name="getting-started-with-the-snapshot-debugger"></a>Introduzione con il Snapshot Debugger
 
-Snapshot Debugger di Visual Studio è ora connessa al servizio, è possibile iniziare la raccolta di snapshot per facilitare il debug.
+Il Visual Studio Snapshot Debugger è ora connesso al servizio ed è possibile iniziare a raccogliere gli snapshot per facilitare il debug.
 
-Per usare il Debugger di Snapshot, impostare alcuni punti di ancoraggio nel codice, fare clic sul pulsante per avviare la raccolta di snapshot e quindi eseguire lo scenario. Quando il codice viene eseguito in cui è stato impostato un punto di ancoraggio, viene creato uno snapshot dell'applicazione. Aprire lo snapshot, facendo clic su di essa nella finestra Strumenti di diagnostica di Visual Studio. È ora possibile eseguire il debug dello snapshot dal servizio come era locale. Per istruzioni dettagliate, continuare a leggere.
+Per usare la Snapshot Debugger, impostare alcuni ancoraggio nel codice, fare clic sul pulsante per iniziare a raccogliere gli snapshot, quindi eseguire lo scenario. Quando viene eseguito il codice in cui è stato impostato un ancoraggio, viene creato uno snapshot dell'applicazione. Quindi aprire lo snapshot facendo clic su di esso in Visual Studio nella finestra Strumenti di diagnostica. È ora possibile eseguire il debug dello snapshot dal servizio esattamente come in locale. Per istruzioni dettagliate, continuare a leggere.
 
 ## <a name="collect-and-view-snapshots"></a>Raccogliere e visualizzare gli snapshot
 
-Il Debugger di Snapshot raccoglie gli snapshot dall'applicazione. Gli snapshot sono come le immagini dell'Application in un punto nel tempo. Indicare a Visual Studio quando e dove raccogliere uno snapshot impostando un punto di ancoraggio nel codice. Il punto di ancoraggio, consente di impostare tutte le condizioni che è necessario assicurarsi di che ottenere uno snapshot del problema che si sta esaminando.
+Il Snapshot Debugger raccoglie gli snapshot dall'applicazione. Gli snapshot sono simili a immagini dei Application in un determinato momento. Si indica a Visual Studio quando e dove raccogliere uno snapshot impostando un ancoraggio nel codice. In ancoraggio è possibile impostare le condizioni necessarie per assicurarsi di ottenere uno snapshot del problema che si sta esaminando.
 
-### <a name="set-a-snappoint"></a>Impostare un punto di ancoraggio
+### <a name="set-a-snappoint"></a>Impostare un ancoraggio
 
-1. Nell'editor del codice, fare clic sulla barra di navigazione a sinistra accanto a una riga di codice che si è interessati per impostare un punto di ancoraggio. Assicurarsi che sia codice che già conosci verrà eseguito.
+1. Nell'editor di codice fare clic sulla barra di navigazione a sinistra accanto a una riga di codice a cui si è interessati per impostare un ancoraggio. Verificare che il codice che si conosce verrà eseguito.
 
-    ![Impostazione di un punto di ancoraggio nell'Editor](../media/snapshot-startpage-set-snappoint.png)
+    ![Impostazione di un ancoraggio nell'editor](../media/snapshot-startpage-set-snappoint.png)
 
-    Un esagono viola viene visualizzato in cui si fa clic sulla sinistra.
+    Viene visualizzato un esagono viola quando si fa clic sulla sinistra.
 
 2. Fare clic su **Avvia raccolta** per attivare il punto di acquisizione snapshot.
 
-### <a name="open-a-snapshot"></a>Aprire uno Snapshot
+### <a name="open-a-snapshot"></a>Aprire uno snapshot
 
-1. Quando viene raggiunto il punto di ancoraggio, uno snapshot viene visualizzato nella finestra Strumenti di diagnostica a destra. Se non si apre la finestra, è possibile aprirlo scegliendo **Debug** > **Windows** > **Mostra strumenti di diagnostica**.
+1. Quando viene raggiunto il valore di ancoraggio, nella finestra Strumenti di diagnostica a destra viene visualizzato uno snapshot. Se la finestra non viene aperta, è possibile aprirla scegliendo **debug**  >  **Windows**  >  **Mostra strumenti di diagnostica**.
 
-    ![Snapshot nella finestra Strumenti di diagnostica](../media/snapshot-startpage-diagsession-window.png)
+    ![Snapshot nella finestra di Strumenti di diagnostica](../media/snapshot-startpage-diagsession-window.png)
 
-2. Fare doppio clic lo snapshot per aprirlo.
+2. Fare doppio clic sullo snapshot per aprirlo.
 
-### <a name="inspect-snapshot-data"></a>Esaminare i dati dello Snapshot
+### <a name="inspect-snapshot-data"></a>Controllare i dati dello snapshot
 
-Da questa visualizzazione, è possibile passare il mouse sulle variabili per visualizzare i suggerimenti dati, usare le variabili locali, espressioni di controllo e chiamare Stack windows e anche valutare le espressioni.
+Da questa visualizzazione, è possibile passare il mouse sulle variabili per visualizzare i suggerimenti dati, usare le finestre Variabili locali, Espressioni di controllo e Stack di chiamate e anche valutare le espressioni.
 
-Il sito Web stesso è ancora attivo e l'operazione non ha effetti sugli utenti finali. Per impostazione predefinita, un solo snapshot viene acquisito per ogni punto di ancoraggio. Vale a dire, dopo che venga acquisito uno snapshot, il punto di ancoraggio viene disattivata. Se si vuole acquisire un altro snapshot in corrispondenza del punto di acquisizione snapshot, è possibile riattivare il punto di acquisizione snapshot facendo clic su **Aggiorna raccolta**.
+Il sito Web stesso è ancora attivo e l'operazione non ha effetti sugli utenti finali. Per impostazione predefinita, viene acquisito un solo snapshot per ogni ancoraggio. Ovvero, dopo l'acquisizione di uno snapshot, il ancoraggio viene disattivato. Se si vuole acquisire un altro snapshot in corrispondenza del punto di acquisizione snapshot, è possibile riattivare il punto di acquisizione snapshot facendo clic su **Aggiorna raccolta**.
 
-### <a name="set-a-logpoint"></a>Impostare un punto di registrazione
+### <a name="set-a-logpoint"></a>Impostare un punto
 
-1. Fare doppio clic su un'icona di punto di ancoraggio (esagono viola) e scegliere **impostazioni**.
+1. Fare clic con il pulsante destro del mouse su un'icona ancoraggio (esagono viola) e scegliere **Impostazioni**.
 
-2. Nel **impostazioni punto di ancoraggio** finestra, seleziona **azioni**.
+2. Nella finestra **delle impostazioni di ancoraggio** selezionare **Actions (azioni**).
 
-    ![Condizioni punto di ancoraggio](../media/snapshot-startpage-logpoint.png)
+    ![Condizioni di ancoraggio](../media/snapshot-startpage-logpoint.png)
 
-3. Nel **messaggio** immettere un messaggio di log che si desidera accedere. È anche possibile valutare le variabili nel messaggio di log, racchiudendole all'interno di parentesi graffe.
+3. Nel campo **messaggio** immettere un messaggio di log che si desidera registrare. È anche possibile valutare le variabili nel messaggio di log, racchiudendole all'interno di parentesi graffe.
 
-    Se si sceglie **inviare alla finestra di Output**, viene visualizzato il messaggio nella finestra Strumenti di diagnostica quando viene raggiunto il punto di registrazione.
+    Se si sceglie **Invia a finestra di output**, il messaggio viene visualizzato nella finestra di strumenti di diagnostica quando viene raggiunto il punto.
 
-    Se si sceglie **invia al log applicazioni**, il messaggio viene visualizzato in qualsiasi punto che è possibile visualizzare i messaggi dal `System.Diagnostics.Trace` (o `ILogger` in .NET Core), ad esempio Application Insights, quando viene raggiunto il punto di registrazione.
+    Se si sceglie **Invia al registro applicazioni**, il messaggio viene visualizzato in qualsiasi punto in cui è possibile visualizzare i messaggi `System.Diagnostics.Trace` (o `ILogger` in .NET Core), ad esempio Application Insights, quando viene raggiunto il punto.
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
-È possibile trovare altre informazioni sul Debugger di Snapshot sul [pagina di docs](../debug-live-azure-applications.md). Altre informazioni sull'impostazione delle condizioni per renderne più semplice individuare i bug.
+Altre informazioni sul Snapshot Debugger sono disponibili nella [pagina docs](../debug-live-azure-applications.md). Altre informazioni sull'impostazione delle condizioni per semplificare la ricerca di bug.
 
 ## <a name="dont-show-me-this-again"></a>Non visualizzare più questo messaggio
 
-Per non visualizzare la pagina iniziale di Debugger Snapshot nuovamente quando ci si connette il Debugger di Snapshot, modificare il **Mostra 'Attività iniziali' pagina all'avvio delle sessioni** opzione **Tools**  >   **Le opzioni** > **Snapshot Debugger**.
+Per non visualizzare più la snapshot debugger pagina iniziale quando si connette il snapshot debugger, modificare la **pagina mostra ' introduzione ' all'avvio della sessione** in **strumenti**  >  **Opzioni**  >  **snapshot debugger**.
 
-![Pagina delle opzioni dello strumento Debugger snapshot](../media/snapshot-startpage-tools-options.png)
+![Pagina delle opzioni dello strumento Snapshot Debugger](../media/snapshot-startpage-tools-options.png)

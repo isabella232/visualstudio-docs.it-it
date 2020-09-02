@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895169"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Debug cronologico (C#, Visual Basic, C++)
@@ -25,14 +25,14 @@ Il debug cronologico è una modalità di debug che dipende dalle informazioni ra
 
  Impostazione di punti di interruzione per individuare i bug può essere una questione piuttosto hit-or-miss. È possibile impostare un punto di interruzione simile al punto nel codice in cui si ritiene che il bug sia quindi eseguire l'applicazione nel debugger e spero che il punto di interruzione ottiene accesso e il luogo in cui l'esecuzione si interrompe è in grado di rivelare l'origine del bug. In caso contrario, sarà necessario provare a impostare un punto di interruzione in un'altra posizione nel codice ed eseguire nuovamente il debugger, eseguire i passi del test più volte fino a individuare il problema.
 
- ![impostare un punto di interruzione](../debugger/media/breakpointprocesa.png "BreakpointProcesa")
+ ![impostazione di un punto di interruzione](../debugger/media/breakpointprocesa.png "BreakpointProcesa")
 
  È possibile usare IntelliTrace e il debug cronologico portati in giro nell'applicazione e controllare lo stato (stack di chiamate e le variabili locali) senza dover impostare punti di interruzione, riavviare il debug e ripetere i passi del test. Ciò consente di risparmiare molto tempo, soprattutto quando il bug si trova approfondita in uno scenario di test che richiede molto tempo per eseguire.
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Come iniziare a usare il debug cronologico?
 
-IntelliTrace è attivato per impostazione predefinita. Sufficiente è decidere quali eventi e chiamate di funzione sono di interesse e se si desidera visualizzare gli snapshot dello stato dell'applicazione completo. Per ulteriori informazioni sulla definizione di ciò che si desidera cercare, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md). Supporto delle funzionalità varia in base alla lingua e app tipo.
+IntelliTrace è attivato per impostazione predefinita. È sufficiente decidere quali eventi e chiamate di funzione sono di interesse e se si desidera visualizzare gli snapshot dello stato completo dell'applicazione. Per ulteriori informazioni sulla definizione di ciò che si desidera cercare, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md). Il supporto della funzionalità varia in base al tipo di linguaggio e app.
 
-- Per visualizzare gli snapshot con il debug cronologico, vedere [ispezionare stati precedenti di app con IntelliTrace](../debugger/view-historical-application-state.md)
-- Per informazioni su come controllare le variabili ed esplorare il codice, vedere [analizzare un'app con il debug cronologico](../debugger/historical-debugging-inspect-app.md)
-- Per altre informazioni sul debug con eventi di IntelliTrace, vedere [procedura dettagliata: Utilizzo di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+- Per visualizzare gli snapshot con il debug cronologico, vedere [esaminare gli Stati delle app precedenti con IntelliTrace](../debugger/view-historical-application-state.md)
+- Per informazioni su come esaminare le variabili e spostarsi nel codice, vedere [esaminare l'app con il debug cronologico](../debugger/historical-debugging-inspect-app.md)
+- Per altre informazioni sul debug con eventi di IntelliTrace, vedere [procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

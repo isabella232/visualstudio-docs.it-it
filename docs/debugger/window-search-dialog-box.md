@@ -1,5 +1,5 @@
 ---
-title: Finestra di dialogo ricerca | Microsoft Docs
+title: Finestra di dialogo ricerca finestre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,42 +11,42 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900923"
 ---
 # <a name="window-search-dialog-box"></a>Finestra di dialogo Ricerca finestre
-Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per una finestra specifica nella [Windows Vista](../debugger/windows-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo alla finestra di visualizzazione di Windows. Quindi scegliere **Trova finestra** dalle **ricerca** menu.
+Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per una finestra specifica nella [visualizzazione Windows](../debugger/windows-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo sulla finestra di visualizzazione di Windows. Quindi scegliere **Trova finestra** dal menu **Cerca** .
 
- È possibile usare la **strumento di ricerca** per selezionare una finestra, oppure è possibile immettere l'handle di finestra o identificare la finestra vicino didascalia e la classe.
+ È possibile utilizzare lo **strumento di ricerca** per selezionare una finestra oppure è possibile immettere l'handle della finestra oppure identificare la finestra in base a didascalia e classe.
 
- Sono disponibili le seguenti impostazioni:
+ Sono disponibili le impostazioni seguenti:
 
- **Strumento di ricerca** lo strumento di trascinamento della selezione utilizzato per selezionare una finestra.
+ **Strumento di ricerca** Strumento di trascinamento della selezione usato per selezionare una finestra.
 
- **Nascondi Spy + +** rimuove la finestra principale di Spy + + e lascia il **mantenendo** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni.
+ **Nascondi Spy + +** Rimuove la finestra principale di Spy + + e lascia visibile la finestra di dialogo **WindowSearch** in cima alle altre applicazioni.
 
- **Gestire** l'ID univoco della finestra per la ricerca.
+ **Gestisci** ID univoco della finestra da ricercare.
 
- **Didascalia** il testo nel titolo della finestra per la ricerca.
+ **Didascalia** Testo del titolo della finestra da ricercare.
 
- **Classe** la classe della finestra per la ricerca.
+ **Classe** Classe della finestra da ricercare.
 
- **Eseguire la ricerca direzione verso l'alto o verso il basso** la direzione iniziale della ricerca.
+ **Direzione di ricerca verso l'alto o verso il basso** Direzione iniziale della ricerca.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [La ricerca di una finestra in Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md) viene illustrato come trovare una specifica finestra nella visualizzazione di Windows.
+ [Ricerca di una finestra nella visualizzazione di Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) Viene illustrato come trovare una finestra specifica nella visualizzazione di Windows.
 
- [Windows Vista](../debugger/windows-view.md) contiene una visualizzazione albero dei controlli e finestre disponibili.
+ [Visualizzazione di Windows](../debugger/windows-view.md) Consente di visualizzare una visualizzazione albero delle finestre e dei controlli disponibili.
 
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+ [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.
 
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+ [Uso di Spy + +](../debugger/using-spy-increment.md) Introduce lo strumento Spy + + e spiega come può essere usato.
 
- [Finestra di dialogo Trova](../debugger/find-window-dialog-box.md) consente di visualizzare le proprietà o i messaggi da una specifica finestra.
+ [Finestra di dialogo Trova finestra](../debugger/find-window-dialog-box.md) Utilizzato per visualizzare le proprietà o i messaggi da una finestra specifica.
 
- [Finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) consente di visualizzare le proprietà di una finestra selezionato nella visualizzazione di Windows.
+ [Finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) Utilizzato per visualizzare le proprietà di una finestra selezionata nella visualizzazione di Windows.
 
- [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.

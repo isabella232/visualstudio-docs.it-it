@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895521"
 ---
 # <a name="reference-programmatic-capture"></a>Riferimento (acquisizione a livello di codice)
@@ -24,7 +24,7 @@ Diagnostica della grafica supporta il controllo a livello di programmazione sull
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[VsgDbg Class](vsgdbg-class.md)|Rappresenta l'interfaccia attraverso cui il componente in-app di diagnostica della grafica è controllato a livello di programmazione.|
+|[Classe VsgDbg](vsgdbg-class.md)|Rappresenta l'interfaccia attraverso cui il componente in-app di diagnostica della grafica è controllato a livello di programmazione.|
 
 ### <a name="preprocessor-symbols"></a>Simboli del preprocessore
 
@@ -38,5 +38,5 @@ Diagnostica della grafica supporta il controllo a livello di programmazione sull
 
 | Titolo | Descrizione |
 | - | - |
-| [Capturing Graphics Information](capturing-graphics-information.md) | Viene indicato come acquisire informazioni grafiche dall'app basata su DirectX per poter usare gli strumenti di diagnostica della grafica [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per diagnosticare problemi di rendering. |
+| [Acquisizione di informazioni grafiche](capturing-graphics-information.md) | Viene indicato come acquisire informazioni grafiche dall'app basata su DirectX per poter usare gli strumenti di diagnostica della grafica [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per diagnosticare problemi di rendering. |
 | [Panoramica](overview-of-visual-studio-graphics-diagnostics.md) | Viene indicato come la diagnostica grafica consente di eseguire il debug degli errori di rendering nei giochi e nelle app DirectX. |

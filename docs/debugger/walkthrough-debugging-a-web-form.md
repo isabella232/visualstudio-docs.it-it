@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug di un modulo Web | Microsoft Docs
+title: Eseguire il debug di un Web Form | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901632"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procedura dettagliata: Debug di un Web Form
@@ -36,31 +36,31 @@ Nei passaggi di questa procedura dettagliata viene illustrato come eseguire il d
 > [!NOTE]
 > Per completare la procedura dettagliata, è necessario disporre di privilegi di amministratore per il computer server. Per impostazione predefinita, il processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], aspnet_wp.exe o w3wp.exe viene eseguito come processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per eseguire il debug di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], è necessario disporre dei privilegi di amministratore per il computer in cui [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] viene eseguito. Per altre informazioni, vedere [System Requirements](../debugger/aspnet-debugging-system-requirements.md).
 
-Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-create-the-web-form"></a>Per creare il Web Form
 
 1. Se una soluzione è già aperta, chiuderla.
 
-2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Sito Web**.
+2. Scegliere **Nuovo **dal menu **File**, quindi fare clic su **Sito Web**.
 
     Verrà visualizzata la finestra di dialogo **Nuovo sito Web**.
 
 3. Nel riquadro **Modelli** selezionare **Sito Web ASP.NET**.
 
-4. Nel **ubicazione** riga, fare clic su **HTTP** dall'elenco e nella casella di testo, digitare **http://localhost/WebSite**.
+4. Nella riga **percorso** fare clic su **http** nell'elenco e digitare nella casella di testo **http://localhost/WebSite** .
 
 5. Nell'elenco **Linguaggio** fare clic su **Visual C#** oppure su **Visual Basic**.
 
 6. Fare clic su **OK**.
 
-    In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene creato un nuovo progetto e viene visualizzato il codice sorgente HTML predefinito. Viene anche creata una nuova directory virtuale denominata **WebSite** in **Sito Web predefinito di IIS**.
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di creare un nuovo progetto e di visualizzare il codice sorgente HTML predefinito. Viene anche creata una nuova directory virtuale denominata **WebSite** in **Sito Web predefinito di IIS**.
 
 7. Fare clic sulla scheda **Progettazione** sul margine inferiore.
 
 8. Scegliere la scheda **Casella degli strumenti** sul margine sinistro o selezionarla dal menu **Visualizza**.
 
-    Verrà aperta la **Casella degli strumenti** .
+    Verrà aperta la **casella degli strumenti** .
 
 9. Nella **Casella degli strumenti** fare clic sul controllo **Button** e aggiungerlo nell'area di progettazione principale Default.aspx.
 
@@ -68,7 +68,7 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
 11. Fare doppio clic sul controllo Button trascinato.
 
-     Ciò consente di visualizzare la tabella codici: Default.aspx.cs per C# o default per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Il cursore dovrebbe trovarsi in corrispondenza della funzione `Button1_Click`.
+     Verrà visualizzata la tabella codici: Default.aspx.cs per C# o Default.aspx.vb per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Il cursore dovrebbe trovarsi in corrispondenza della funzione `Button1_Click`.
 
 12. Nella funzione `Button1_Click` aggiungere il codice seguente:
 
@@ -80,7 +80,7 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
     TextBox1.Text = "Button was clicked!";
     ```
 
-13. Scegliere **Compila soluzione** dal menu **Compila**.
+13. Nel menu **Compila** scegliere **Compila soluzione**.
 
      Il progetto dovrebbe essere compilato senza errori.
 
@@ -134,7 +134,7 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
      Il punto di interruzione verrà rimosso.
 
-11. Scegliere **Termina debug** dal menu **Debug**.
+11. Scegliere **Arresta debug** dal menu **Debug**.
 
 ## <a name="to-attach-to-the-web-form-for-debugging"></a>Per connettere il debugger al Web Form
 
@@ -150,11 +150,11 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
    textBox1.Text = "Button was clicked!";
    ```
 
-3. Nel menu **Debug** fare clic su **Avvia senza eseguire debug**.
+3. Scegliere **Avvia senza eseguire debug** dal menu **Debug**.
 
     Verrà eseguito il Web Form in Internet Explorer, ma il debugger non verrà connesso.
 
-4. Connettersi al processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per altre informazioni, vedere [debug di applicazioni Web distribuite](../debugger/debugging-deployed-web-applications.md).
+4. Connettersi al processo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per ulteriori informazioni, vedere [debug di applicazioni Web distribuite](../debugger/debugging-deployed-web-applications.md).
 
 5. In Internet Explorer fare clic sul pulsante nel form.
 

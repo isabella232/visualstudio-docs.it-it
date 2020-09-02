@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 27ab6619a4d36fc105a3b8a668a31a33ae4c2a43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62793734"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Come aggiornare i progetti alla versione attuale degli strumenti di Microsoft Azure per Visual Studio
@@ -28,8 +28,8 @@ Se un progetto viene aggiornato automaticamente o si specifica di volerlo aggior
 * Il file web.config per i ruoli Web e il file app.config per i ruoli di lavoro vengono aggiornati in modo da fare riferimento alla versione più recente di Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener.dll.
 * Gli assembly Microsoft.WindowsAzure.StorageClient.dll, Microsoft.WindowsAzure.Diagnostics.dll e Microsoft.WindowsAzure.ServiceRuntime.dll vengono aggiornati alle nuove versioni.
 * I profili di pubblicazione archiviati nel file di progetto Azure (con estensione ccproj) vengono spostati in un file separato con estensione azurePubxml nella sottodirectory **Publish** .
-* Alcune proprietà del profilo di pubblicazione vengono aggiornate per supportare funzionalità nuove e modificate. **AllowUpgrade** viene sostituito da **DeploymentReplacementMethod** perché è possibile aggiornare un servizio cloud distribuito in modo simultaneo o incrementale.
-* La proprietà **UseIISExpressByDefault** viene aggiunta e impostata su false in modo che il server Web usato per il debug non passi automaticamente da Internet Information Services (IIS) a IIS Express. IIS Express è il server Web predefinito dei progetti creati con le versioni più recenti degli strumenti.
+* Alcune proprietà del profilo di pubblicazione vengono aggiornate per supportare funzionalità nuove e modificate. **AllowUpgrade** viene sostituita da **DeploymentReplacementMethod** perché è possibile aggiornare un servizio cloud distribuito in modo simultaneo o incrementale.
+* Viene aggiunta la proprietà **UseIISExpressByDefault** è impostata su false in modo che il server Web usato per il debug non passi automaticamente da Internet Information Services (IIS) a IIS Express. IIS Express è il server Web predefinito dei progetti creati con le versioni più recenti degli strumenti.
 * Se Azure Caching è ospitato in uno o più ruoli del progetto, alcune proprietà nella configurazione del servizio (file con estensione cscfg) e nella definizione del servizio (file con estensione csdef) vengono modificate al momento dell'aggiornamento di un progetto. Se il progetto usa il pacchetto NuGet di Azure Caching, verrà aggiornato alla versione più recente del pacchetto. È necessario aprire il file web.config e verificare che la configurazione client sia stata gestita correttamente durante il processo di aggiornamento. Se si aggiungono riferimenti agli assembly del client Azure Caching senza usare il pacchetto NuGet, questi assembly non verranno aggiornati. È necessario aggiornare manualmente i riferimenti alle nuove versioni.
 
 > [!IMPORTANT]
@@ -41,6 +41,6 @@ Se un progetto viene aggiornato automaticamente o si specifica di volerlo aggior
 1. Installare la versione corrente degli strumenti di Azure nell'installazione di Visual Studio da usare per il progetto aggiornato, quindi aprire il progetto da aggiornare. Se il progetto è stato creato con una versione degli strumenti di Azure precedente alla 1.6 (novembre 2011), verrà automaticamente aggiornato alla versione corrente. Se il progetto è stato creato con la versione di novembre 2011 e tale versione è ancora installata, verrà aperto in quest'ultima.
 2. In Esplora soluzioni aprire il menu di scelta rapida per il nodo del progetto, scegliere **Proprietà** e quindi la scheda **Applicazione** della finestra di dialogo visualizzata.
    
-    La scheda **Applicazione** indica la versione degli strumenti associata al progetto. Se viene visualizzata la versione corrente degli strumenti di Azure, il progetto è già stato aggiornato. Se è stata installata una versione più recente degli strumenti rispetto a quella indicata nella scheda, viene visualizzato il pulsante **Aggiorna** .
+    Nella scheda **Applicazione** viene indicata la versione degli strumenti associata al progetto. Se viene visualizzata la versione corrente degli strumenti di Azure, il progetto è già stato aggiornato. Se è stata installata una versione più recente degli strumenti rispetto a quella indicata nella scheda, viene visualizzato il pulsante **Aggiorna**.
 3. Scegliere il pulsante **Aggiorna** per aggiornare un progetto alla versione corrente degli strumenti.
 4. Creare il progetto, quindi trovare eventuali errori risultanti dalle modifiche API. Per informazioni su come modificare il codice per la nuova versione, vedere la documentazione per l'API specifica.

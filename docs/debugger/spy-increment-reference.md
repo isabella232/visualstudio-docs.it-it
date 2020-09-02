@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62902556"
 ---
 # <a name="spy-reference"></a>Riferimenti per Spy++
-Vedere le sezioni elencate di seguito per una descrizione di ogni Spy + + menu e la finestra di dialogo:
+Vedere le sezioni elencate di seguito per le descrizioni di ogni menu e finestra di dialogo di Spy + +:
 
-## <a name="in-this-section"></a>In questa sezione
- [I comandi di menu](../debugger/menu-commands.md) descrive i comandi disponibili in ogni menu Spy + +.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Comandi di menu](../debugger/menu-commands.md) Descrive i comandi disponibili in ogni menu di Spy + +.
 
- [Finestra di dialogo tipo di carattere](../debugger/font-dialog-box-microsoft-spy-increment-help.md) consente di configurare il tipo di carattere utilizzato in una finestra di visualizzazioni di Spy + +.
+ Finestra di [dialogo tipo di carattere](../debugger/font-dialog-box-microsoft-spy-increment-help.md) Utilizzato per configurare il carattere carattere utilizzato in una finestra di visualizzazione di Spy + +.
 
- [Strumenti di ricerca per le visualizzazioni di Spy + +](../debugger/search-tools-for-spy-increment-views.md) finestre di dialogo consente di individuare un nodo specifico in una finestra di visualizzazioni di Spy + +.
+ [Strumenti di ricerca per le visualizzazioni di Spy + +](../debugger/search-tools-for-spy-increment-views.md) Finestre di dialogo utilizzate per trovare un nodo specifico in una finestra delle visualizzazioni di Spy + +.
 
- [Finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) consente di visualizzare le proprietà di una finestra selezionato nella visualizzazione di Windows.
+ [Finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) Utilizzato per visualizzare le proprietà di una finestra selezionata nella visualizzazione di Windows.
 
- [Finestra di dialogo Opzioni del messaggio](../debugger/message-options-dialog-box.md) utilizzato per selezionare quali messaggi sono elencati nella visualizzazione dei messaggi.
+ Finestra di [dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) Consente di selezionare i messaggi elencati nella visualizzazione messaggi.
 
- [Finestra di dialogo proprietà del messaggio](../debugger/message-properties-dialog-box.md) consente di visualizzare le proprietà di un messaggio selezionato nella visualizzazione di messaggi.
+ Finestra di [dialogo Proprietà messaggio](../debugger/message-properties-dialog-box.md) Utilizzato per visualizzare le proprietà di un messaggio selezionato nella visualizzazione messaggi.
 
- [Finestra di dialogo Proprietà elabora](../debugger/process-properties-dialog-box.md) consente di visualizzare le proprietà di un processo selezionato nella visualizzazione processi.
+ Finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md) Utilizzato per visualizzare le proprietà di un processo selezionato nella visualizzazione processi.
 
- [Finestra di dialogo Proprietà thread](../debugger/thread-properties-dialog-box.md) consente di visualizzare le proprietà di un thread selezionato nella visualizzazione thread.
+ Finestra di [dialogo Proprietà thread](../debugger/thread-properties-dialog-box.md) Utilizzato per visualizzare le proprietà di un thread selezionato nella visualizzazione thread.
 
- [Altre finestre di dialogo](../debugger/other-dialog-boxes.md) consente di visualizzare informazioni sul programma di Spy + +.
+ [Altre finestre di dialogo](../debugger/other-dialog-boxes.md) Utilizzato per visualizzare informazioni sul programma Spy + +.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+ [Uso di Spy + +](../debugger/using-spy-increment.md) Introduce lo strumento Spy + + e spiega come può essere usato.
 
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+ [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.

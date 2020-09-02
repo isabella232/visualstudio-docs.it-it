@@ -1,5 +1,5 @@
 ---
-title: Comandi del Menu? | Microsoft Docs
+title: Comandi di menu della Guida | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895104"
 ---
 # <a name="help-menu-commands"></a>comandi del menu ?
-Il **aiutare** menu sono disponibili comandi per aprire i file della Guida.
+Il menu **Guida** fornisce i comandi per aprire i file della guida.
 
- **Indice** apre la schermata di contenuto per la Guida di Spy + +.
+ **Indice** di Apre la schermata contenuto per la Guida di Spy + +.
 
- **Utilizzo della Guida** apre un file della Guida viene descritto come utilizzare la Guida.
+ **Uso della Guida** Apre un file della guida che descrive come usare la guida.
 
- **Informazioni su Spy + +** Mostra le informazioni sul copyright e versione di software per Spy + +.
+ **Informazioni su Spy + +** Mostra la versione del software e le informazioni sul copyright per Spy + +.

@@ -9,23 +9,23 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62584931"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Linee guida sull'esperienza utente di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Le linee guida sull'esperienza di Visual Studio utente sono destinati a coloro che le nuove funzionalità di progettazione per Visual Studio. Queste linee guida contengono informazioni sui modelli utente comuni e modelli di interazione in cui le finestre di progettazione di nuove interfacce utente (UI) è possibile creare esperienze utente semplice e coerente all'interno dell'ambiente di sviluppo.  
+Le linee guida sull'esperienza utente di Visual Studio sono destinate a chi progetta nuove funzionalità per Visual Studio. Queste linee guida contengono informazioni sui modelli utente comuni e i modelli di interazione, in modo che i progettisti di nuove interfacce utente possano creare esperienze utente che sono coerenti e coerenti all'interno dell'ambiente di sviluppo.  
   
- Sviluppo di software per mezzo di prodotti Microsoft comprendere le linee guida fornita da Windows. Sono disponibili tre risorse importanti da tenere presenti:  
+ Lo sviluppo di software per prodotti Microsoft significa comprendere le linee guida fornite da Windows. Esistono tre importanti risorse da tenere presenti:  
   
-- Il [linee guida per l'interazione dell'esperienza utente Windows](https://msdn.microsoft.com/library/aa511258.aspx). Queste linee guida sono le nozioni di base per Windows desktop comportamento e l'aspetto.  
+- Linee guida per l'interazione con l' [esperienza utente di Windows](https://msdn.microsoft.com/library/aa511258.aspx). Queste linee guida sono le nozioni di base per il comportamento e l'aspetto di Windows desktop.  
   
-- Queste linee guida per Visual Studio, che sono linee guida specifiche della piattaforma che sostituiscono le linee guida generali Windows ovunque si adatti al nostro ambiente.  
+- Queste linee guida di Visual Studio, che sono linee guida specifiche della piattaforma che sostituiscono le linee guida generali di Windows laddove appropriate per l'ambiente in uso.  
   
-- Il [controlli e modelli per le app UWP](/windows/uwp/design/controls-and-patterns) costituiscono un riferimento per i modelli emergenti che può essere usato in alcuni casi all'interno di Visual Studio.  
+- I [controlli e i modelli per le app UWP](/windows/uwp/design/controls-and-patterns) sono un riferimento per i modelli emergenti che possono essere usati in alcune istanze all'interno di Visual Studio.  
   
-  Queste linee guida per fornire informazioni sulle operazioni da eseguire durante la progettazione per Visual Studio e in alcuni casi le informazioni su come eseguire questa operazione sono anche incluse. Per ulteriori informazioni sull'implementazione e informazioni sulle specifiche application programming interface (API) che consentono di scrivere codice per soluzioni di integrazione nell'ambiente di sviluppo integrato (IDE) di Visual Studio, usare il [Visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).
+  Queste linee guida forniscono informazioni sulle operazioni da eseguire quando si progetta per Visual Studio e in alcuni casi sono incluse anche informazioni su come eseguire questa operazione. Per informazioni più dettagliate sull'implementazione e per ottenere informazioni sulle API (Application Programming Interface) specifiche che consentono di scrivere codice per le soluzioni integrate in Visual Studio Integrated Development Environment (IDE), usare [Visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).

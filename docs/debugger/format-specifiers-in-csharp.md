@@ -1,5 +1,5 @@
 ---
-title: Formattare gli identificatori nel debugger (c#) | Microsoft Docs
+title: Identificatori di formato nel debugger (C#) | Microsoft Docs
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -26,19 +26,19 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849832"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in c# il debugger di Visual Studio
-È possibile modificare il formato in cui viene visualizzato il valore nella **Watch** finestra usando identificatori di formato. È anche possibile usare gli identificatori di formato nel **controllo immediato** finestra, il **comando** finestra, in [i punti di analisi](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e nelle finestre di origine. Se posiziona su un'espressione in queste finestre, il risultato verrà visualizzato in una [suggerimento dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) nella sezione delle opzioni di formato specificato.
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in C# nel debugger di Visual Studio
+È possibile modificare il formato in cui un valore viene visualizzato nella finestra **espressioni di controllo** usando gli identificatori di formato. È anche possibile usare gli identificatori di formato nella finestra di **controllo immediato** , nella finestra di **comando** , in [punti](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e nelle finestre di origine. Se si sospende un'espressione in queste finestre, il risultato verrà visualizzato in un  [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) nella visualizzazione del formato specificato.
 
-Per usare un identificatore di formato, immettere l'espressione variabile, seguito da una virgola e l'identificatore appropriato.
+Per usare un identificatore di formato, immettere l'espressione della variabile seguita da una virgola e dall'identificatore appropriato.
 
-## <a name="set-format-specifiers"></a>Set di identificatori di formato
-Si userà l'esempio di codice seguente:
+## <a name="set-format-specifiers"></a>Imposta identificatori di formato
+Verrà usato il codice di esempio seguente:
 
 ```csharp
 {
@@ -48,33 +48,33 @@ Si userà l'esempio di codice seguente:
 }
 ```
 
-Aggiungere la `my_var1` variabile per il **Watch** finestra durante il debug **Debug** > **Windows** > **guarda**  >  **Espressione di controllo 1**. Successivamente, la variabile e scegliere **visualizzazione esadecimale**. A questo punto il **Watch** finestra Mostra il valore 0x0065. Per visualizzare questo valore come un intero decimale invece che intero esadecimale, aggiungere l'identificatore di formato decimale **, d** nel **nome** colonna dopo il nome della variabile. Il **valore** colonna Visualizza ora **101**.
+Aggiungere la `my_var1` variabile alla finestra **espressioni di controllo** durante il debug, **eseguire il debug**di  >  **Windows**  >  **Watch**  >  **Watch 1**. Fare quindi clic con il pulsante destro del mouse sulla variabile e scegliere **visualizzazione esadecimale**. A questo punto la finestra **espressioni di controllo** Mostra il valore 0x0065. Per visualizzare questo valore come intero decimale anziché come intero esadecimale, aggiungere l'identificatore di formato decimale **, d** nella colonna **nome** dopo il nome della variabile. La colonna **valore** ora Visualizza **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 
 ::: moniker range=">= vs-2019" 
 
-È possibile visualizzare e selezionare da un elenco di identificatori di formato disponibili mediante l'aggiunta di una virgola (,) per il valore di **Watch** finestra. 
+È possibile visualizzare e selezionare da un elenco di identificatori di formato disponibili aggiungendo una virgola (,) al valore nella finestra **espressioni di controllo** . 
 
 ![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
 
 ::: moniker-end
 
 ## <a name="format-specifiers"></a>Identificatori di formato
-La tabella seguente descrive il C# per il debugger di Visual Studio identificatori di formato.
+La tabella seguente descrive gli identificatori di formato C# per il debugger di Visual Studio.
 
 |Identificatore|Formato|Valore dell'espressione di controllo originale|Visualizza|
 |---------------|------------|--------------------------|--------------|
-|ac|Forzare la valutazione di un'espressione che può essere utile quando la valutazione implicita di proprietà e chiamate di funzione implicite è disattivata.|Messaggio "La valutazione della funzione implicita è stata disattivata dall'utente"|\<valore>|
+|ac|Forza la valutazione di un'espressione, che può essere utile quando la valutazione implicita delle proprietà e delle chiamate di funzione implicite è disattivata.|Messaggio "La valutazione della funzione implicita è stata disattivata dall'utente"|\<value>|
 |d|intero decimale|0x0065|101|
-|dynamic|Visualizza l'oggetto specificato usando una visualizzazione dinamica|Visualizza tutti i membri dell'oggetto, inclusa la visualizzazione dinamica|Visualizza solo la visualizzazione dinamica|
+|dinamico|Visualizza l'oggetto specificato usando una visualizzazione dinamica|Visualizza tutti i membri dell'oggetto, inclusa la visualizzazione dinamica|Visualizza solo la visualizzazione dinamica|
 |h|intero esadecimale|61541|0x0000F065|
 |nq|stringa senza virgolette|"Stringa"|Stringa|
-|protocollo nSe|Specifica il comportamento, non di formato. Valuta l'espressione "Senza effetti collaterali". Se l'espressione non può essere interpretato e può essere risolti solo da una versione di valutazione (ad esempio, una chiamata di funzione), si verrà visualizzato un errore.|N/D|N/D|
+|NSE|Specifica il comportamento, non il formato. Valuta l'espressione con "nessun effetto collaterale". Se l'espressione non può essere interpretata e può essere risolta solo da una valutazione, ad esempio una chiamata di funzione, verrà visualizzato un errore.|N/D|N/D|
 |hidden|Visualizza tutti i membri pubblici e non pubblici|Visualizza i membri pubblici|Visualizza tutti i membri|
-|raw|Visualizza l'elemento così come appare nel nodo degli elementi non elaborati. Valido unicamente sugli oggetti proxy.|Dizionario\<T >|Visualizzazione non elaborata di Dictionary\<T >|
-|results|Utilizzato con una variabile di un tipo che implementa IEnumerable o IEnumerable\<T >, generalmente il risultato di un'espressione di query. Visualizza solo i membri che contengono il risultato della query.|Visualizza tutti i membri|Visualizza i membri che soddisfano le condizioni della query|
+|raw|Visualizza l'elemento così come appare nel nodo degli elementi non elaborati. Valido unicamente sugli oggetti proxy.|Dizionario\<T>|Visualizzazione non elaborata del dizionario\<T>|
+|results|Utilizzato con una variabile di un tipo che implementa IEnumerable o IEnumerable \<T> , in genere il risultato di un'espressione di query. Visualizza solo i membri che contengono il risultato della query.|Visualizza tutti i membri|Visualizza i membri che soddisfano le condizioni della query|
 
 ## <a name="see-also"></a>Vedere anche
-- [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)
-- [Finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md)
+- [Finestre espressioni di controllo e controllo immediato](../debugger/watch-and-quickwatch-windows.md)
+- [Finestre auto e variabili locali](../debugger/autos-and-locals-windows.md)

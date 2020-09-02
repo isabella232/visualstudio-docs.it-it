@@ -1,5 +1,5 @@
 ---
-title: Finestra di dialogo Proprietà elabora | Microsoft Docs
+title: Finestra di dialogo Proprietà processo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903756"
 ---
 # <a name="process-properties-dialog-box"></a>Finestra di dialogo Proprietà processo
-Per altre informazioni su un processo specifico, usare questa finestra di dialogo. Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.
+Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su un processo specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo su una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
- Nei sistemi operativi Windows 98 e Windows 95, solo una versione modificata del **generale** viene visualizzata la scheda.
+ Nei sistemi operativi Windows 98 e Windows 95 viene visualizzata solo una versione modificata della scheda **generale** .
 
-## <a name="in-this-section"></a>In questa sezione
- [Scheda Generale, finestra di dialogo Proprietà processo](../debugger/general-tab-thread-properties-dialog-box.md) utilizzare questa finestra di dialogo saperne di più sul processo selezionato.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Scheda generale, finestra di dialogo Proprietà processo](../debugger/general-tab-thread-properties-dialog-box.md) Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni sul processo selezionato.
 
- [Scheda memoria, finestra di dialogo Proprietà processo](../debugger/memory-tab-process-properties-dialog-box.md) utilizzare questa scheda per visualizzare l'utilizzo della memoria da parte di un processo.
+ [Scheda memoria, finestra di dialogo Proprietà processo](../debugger/memory-tab-process-properties-dialog-box.md) Utilizzare questa scheda per visualizzare il modo in cui un processo utilizza la memoria.
 
- [Scheda File di paging, finestra di dialogo Proprietà processo](../debugger/page-file-tab-process-properties-dialog-box.md) utilizzare questa scheda per esaminare il file di paging di un processo.
+ [Scheda file di paging, finestra di dialogo Proprietà processo](../debugger/page-file-tab-process-properties-dialog-box.md) Utilizzare questa scheda per esaminare il file di paging di un processo.
 
- [Scheda spazio, finestra di dialogo Proprietà processo](../debugger/space-tab-process-properties-dialog-box.md) utilizzare questa scheda per esaminare lo spazio degli indirizzi di un processo.
+ [Scheda spazio, finestra di dialogo Proprietà processo](../debugger/space-tab-process-properties-dialog-box.md) Utilizzare questa scheda per esaminare lo spazio degli indirizzi di un processo.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Finestra di dialogo ricerca elabora](../debugger/process-search-dialog-box.md) consente di individuare il nodo per un determinato processo nella visualizzazione processi.
+ Finestra di [dialogo ricerca processi](../debugger/process-search-dialog-box.md) Utilizzato per trovare il nodo per un processo specifico nella visualizzazione del processo.
 
- [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.
 
- [La ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md) viene illustrato come trovare un processo specifico nella visualizzazione processi.
+ [Ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md) Viene illustrato come trovare un processo specifico nella visualizzazione processi.
 
- [Visualizzazione processi](../debugger/processes-view.md) contiene una visualizzazione albero dei processi attivi.
+ [Visualizzazione processi](../debugger/processes-view.md) Consente di visualizzare una visualizzazione albero dei processi attivi.
 
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+ [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.
 
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+ [Uso di Spy + +](../debugger/using-spy-increment.md) Introduce lo strumento Spy + + e spiega come può essere usato.

@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62564704"
 ---
-# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operatore di contesto nel Debugger di Visual Studio (C++)
+# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operatore di contesto nel debugger di Visual Studio (C++)
 L'operatore di contesto in C++ può essere usato per qualificare la posizione di un punto di interruzione, il nome di una variabile o un'espressione. L'operatore di contesto è utile per specificare un nome da un ambito esterno che altrimenti sarebbe nascosto da un nome locale.
 
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintassi
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintassi
  Il contesto può essere specificato in due modi:
 
 1. {,,[*module*] } *expression*
@@ -53,7 +53,7 @@ L'operatore di contesto in C++ può essere usato per qualificare la posizione di
 
 - *module* è il nome di un modulo. È possibile usare un percorso completo per distinguere i moduli che hanno lo stesso nome.
 
-   Se il percorso di *module* include una virgola, uno spazio incorporato o una parentesi graffa, è necessario racchiudere il percorso tra virgolette in modo che il parser del contesto possa riconoscere correttamente la stringa. Poiché le virgolette singole vengono considerate parte di un nome di file di Windows, è necessario usare le virgolette doppie. Ad esempio,
+   Se il percorso di *module* include una virgola, uno spazio incorporato o una parentesi graffa, è necessario racchiudere il percorso tra virgolette in modo che il parser del contesto possa riconoscere correttamente la stringa. Poiché le virgolette singole vengono considerate parte di un nome di file di Windows, è necessario usare le virgolette doppie. Ad esempio:
 
   ```C++
   {,,"a long, long, library name.dll"} g_Var

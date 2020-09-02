@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251dc4279530c2d10ba8b404ee515824d0671037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62579988"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Visualizzazione Righe: dati di campionamento di memoria .NET
@@ -43,11 +43,11 @@ La visualizzazione Righe dei dati di profilatura sull'allocazione di memoria .NE
   
   Per definizione, un'istruzione non chiama altre funzioni. Vengono quindi elencati solo valori esclusivi.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
-|**Nome modulo**|Nome del modulo che contiene l'istruzione.|  
+|**Nome del modulo**|Nome del modulo che contiene l'istruzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene l'istruzione.|  
 |**File di origine**|File di origine che contiene l'istruzione.|  
 |**Nome funzione**|Nome della funzione che contiene l'istruzione.|  
@@ -57,7 +57,7 @@ La visualizzazione Righe dei dati di profilatura sull'allocazione di memoria .NE
 |**Fine riga di origine**|Numero di riga finale nel file di origine in corrispondenza del quale si è verificata l'allocazione.|  
 |**Inizio carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|  
 |**Fine carattere di origine**|Offset del carattere finale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|  
-|**Nome riga**|Identificatore generato dal profiler della riga con la sintassi seguente:`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|  
+|**Nome riga**|Identificatore generato dal profiler della riga con la sintassi seguente: `Source File` **; [** `Line Number Start` **,**`Character Start` **]->; [**`Line Number Start,Character Start`**]**|  
 |**Allocazioni esclusive**|Numero totale di oggetti creati in questa riga.|  
 |**% allocazioni esclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che sono stati allocati in questa riga.|  
 |**Byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati in questa riga.|  

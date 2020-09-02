@@ -1,5 +1,5 @@
 ---
-title: Scheda File di paging, finestra di dialogo Proprietà processo | Microsoft Docs
+title: Scheda file di paging, finestra di dialogo Proprietà processo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62904107"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Scheda File di paging, finestra di dialogo Proprietà processo
-Usare la **File di paging** pressione di tab per esaminare il file di paging di un processo. Per visualizzare il [finestra di dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo su un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.
+Utilizzare la scheda **file** di paging per esaminare il file di paging di un processo. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
- Le impostazioni seguenti sono disponibili sul **File di paging** scheda:
+ Nella scheda **file di paging** sono disponibili le impostazioni seguenti:
 
 |Voce|Descrizione|
 |-----------|-----------------|
-|**Byte file di paging**|Il numero corrente di pagine che usa questo processo nel file di paging. Il file di paging vengono archiviate le pagine di dati usata dal processo ma non contenute in altri file. Il file di paging viene usato da tutti i processi e la mancanza di spazio nel file di paging può provocare errori mentre sono in esecuzione altri processi.|
-|**N. max byte file di paging**|Il numero massimo di pagine in cui il processo ha usato nel file di paging.|
-|**Errori di pagina**|Il numero di errori di pagina nei thread in esecuzione in questo processo. Un errore di pagina si verifica quando un thread fa riferimento a una pagina di memoria virtuale che non è presente nel proprio working set della memoria principale. Di conseguenza, la pagina non essere richiamata dal disco se presente nell'elenco di standby e quindi già nella memoria principale o se è in uso da un altro processo con cui pagina è condivisa.|
+|**Byte file di paging**|Numero corrente di pagine utilizzate da questo processo nel file di paging. Il file di paging archivia le pagine di dati utilizzate dal processo, ma non incluse in altri file. Il file di paging viene usato da tutti i processi e la mancanza di spazio nel file di paging può causare errori durante l'esecuzione di altri processi.|
+|**N. max byte file di paging**|Numero massimo di pagine utilizzate dal processo nel file di paging.|
+|**Errori di pagina**|Numero di errori di pagina dei thread in esecuzione in questo processo. Un errore di pagina si verifica quando un thread fa riferimento a una pagina di memoria virtuale che non si trova nel proprio working set nella memoria principale. Pertanto, la pagina non verrà recuperata dal disco se è presente nell'elenco di standby e quindi già nella memoria principale o se è utilizzata da un altro processo con cui la pagina è condivisa.|

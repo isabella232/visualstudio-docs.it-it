@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576408"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Definisce i tipi di thunk.  
+Designa i tipi di thunk.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,28 +46,28 @@ typedef enum THUNK_ORDINAL { 
  Thunk standard.  
   
  THUNK_ORDINAL_ADJUSTOR  
- Oggetto `this` thunk DS.  
+ `this`Thunk di regolazione.  
   
  THUNK_ORDINAL_VCALL  
- Thunk chiamata virtuale.  
+ Thunk di chiamata virtuale.  
   
  THUNK_ORDINAL_PCODE  
- Thunk P-code.  
+ Thunk del codice P.  
   
  THUNK_ORDINAL_LOAD  
- Thunk carico ritardo.  
+ Thunk di caricamento ritardato.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Thunk trampoline incrementale (un thunk trampoline viene usato a oscillare in chiamate dallo spazio di memoria a un altro).  
+ Thunk del trampolino incrementale (un thunk del trampolino viene usato per rimbalzare le chiamate da uno spazio di memoria a un altro).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- Thunk trampoline punto di ramo.  
+ Thunk del punto di ramo.  
   
-## <a name="remarks"></a>Note  
- I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: cvconst.h  
+ Intestazione: cvconst. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   

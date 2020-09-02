@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6eda65a49fce09dbbb085da7258a8536484af174
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62905106"
 ---
 # <a name="other-dialog-boxes"></a>Altre finestre di dialogo
-Queste finestre di dialogo visualizzano informazioni sul programma di Spy + +.
+In queste finestre di dialogo vengono visualizzate informazioni sul programma Spy + +.
 
-## <a name="in-this-section"></a>In questa sezione
- [Su Microsoft Spy + +](../debugger/about-microsoft-spy-increment.md) informazioni della proprietà del programma di Spy + +.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Informazioni su Microsoft Spy + +](../debugger/about-microsoft-spy-increment.md) Informazioni sulla proprietà del programma Spy + +.
 
- [Informazioni sul copyright per la Guida di Spy + +](../debugger/copyright-notice-for-spy-increment-help.md) note legali di copyright.
+ [Avviso sul copyright per la Guida di Spy + +](../debugger/copyright-notice-for-spy-increment-help.md) Note legali sul copyright.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.
 
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+ [Uso di Spy + +](../debugger/using-spy-increment.md) Introduce lo strumento Spy + + e spiega come può essere usato.
 
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+ [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.

@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb05bb6a424b5639e0ee98e96c80315c51081ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62848472"
 ---
 # <a name="togglehud"></a>ToggleHUD
-Attiva/Disattiva diagnostica della grafica *HUD* (Head-Up Display) sovrapporre attiva o disattiva.
+Attiva o disattiva la sovrimpressione di diagnostica della grafica *HUD* (Head-up display).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -24,7 +24,7 @@ Attiva/Disattiva diagnostica della grafica *HUD* (Head-Up Display) sovrapporre a
 void ToggleHUD();
 ```
 
-## <a name="remarks"></a>Note
- La diagnostica della grafica HUD viene visualizzata nell'angolo superiore sinistro dell'applicazione in esecuzione nella diagnostica della grafica. Visualizza le informazioni di runtime relativi all'app e sull'acquisizione delle informazioni grafiche e i messaggi aggiunti chiamando il [AddMessage](addmessage.md) funzione membro.
+## <a name="remarks"></a>Osservazioni
+ La diagnostica della grafica HUD viene visualizzata nell'angolo superiore sinistro dell'applicazione in esecuzione nella diagnostica della grafica. Vengono visualizzate informazioni di run-time sull'app e sull'acquisizione di informazioni grafiche e messaggi aggiunti chiamando la funzione membro [AddMessage](addmessage.md) .
 
- Per attivare o disattivare l'HUD, non è necessario acquisire attivamente informazioni grafiche, vale a dire, può essere modificato tramite un'istanza del `VsgDbg` (classe), ma la [Init](init.md) funzione membro non deve essere chiamato per primo.
+ Per impostare l'HUD, non è necessario acquisire attivamente le informazioni grafiche, ovvero può essere attivata o disattivata tramite un'istanza della `VsgDbg` classe, ma non è necessario chiamare prima la funzione membro [init](init.md) .

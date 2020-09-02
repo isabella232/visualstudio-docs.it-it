@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
+title: 'IDebugCoreServer3:: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 45362c9456b99d6cec0af01dcb29844d02363a27
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569793"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Consente l'associazione automatica per i motori di debug specificato.  
+Abilita il fissaggio automatico per i motori di debug specificati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,22 +46,22 @@ int EnableAutoAttach(
   
 #### <a name="parameters"></a>Parametri  
  `rgguidSpecificEngines`  
- [in] Matrice di GUID per ogni motore di debug per contrassegnare come collegamento automatico.  
+ in Matrice di GUID per ogni motore di debug da contrassegnare come connessione automatica.  
   
  `celtSpecificEngines`  
- [in] Il numero di motori specificato in `rgguidSpecificEngines`.  
+ in Numero di motori specificati in `rgguidSpecificEngines` .  
   
  `pszStartPageUrl`  
- [in] URL iniziale da usare quando ci si collega automaticamente.  
+ in URL iniziale da utilizzare per il fissaggio automatico.  
   
  `pbstrSessionID`  
- [out] ID della sessione che è stata collegata automaticamente.  
+ out ID della sessione collegata automaticamente.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Un codice di errore `E_AUTO_ATTACH_NOT_REGISTERED`, che indica che la class factory auto-attach non è stata registrata.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore. Un codice di errore è `E_AUTO_ATTACH_NOT_REGISTERED` , che indica che il class factory di connessione automatica non è stato registrato.  
   
-## <a name="remarks"></a>Note  
- Quando viene avviato un programma associato all'URL specificato, i motori di debug specificato vengono automaticamente avviati e collegati.  
+## <a name="remarks"></a>Osservazioni  
+ Quando viene avviato un programma associato all'URL specificato, i motori di debug specificati vengono avviati automaticamente e collegati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

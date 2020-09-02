@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62830824"
 ---
 # <a name="measure-mode-onoff"></a>Modalità misurazione attiva/non attiva
@@ -26,5 +26,5 @@ Tramite questo strumento è possibile misurare con precisione un periodo di temp
 
 ## <a name="see-also"></a>Vedere anche
 - [Gestire i canali](../profiling/manage-channels.md)
-- [Controllo zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)
+- [Controllo zoom (visualizzazione thread)](../profiling/zoom-control-threads-view.md)
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

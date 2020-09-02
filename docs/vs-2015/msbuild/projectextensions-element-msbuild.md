@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551254"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
@@ -46,14 +46,14 @@ Consente ai file di progetto di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
- nessuno  
+ Nessuno  
   
 ### <a name="child-elements"></a>Elementi figlio  
- nessuno  
+ Nessuno  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   

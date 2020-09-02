@@ -1,5 +1,5 @@
 ---
-title: Scheda output, messaggi di finestra di dialogo Opzioni | Microsoft Docs
+title: Scheda output, finestra di dialogo Opzioni messaggio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,35 +11,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62905075"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Scheda Output, finestra di dialogo Opzioni messaggio
-Usare la **Output** tab per specificare quali dati di ogni messaggio all'elenco nella [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **i messaggi di Log** dal **Spy** menu.
+Utilizzare la scheda **output** per specificare i dati di ogni messaggio da elencare nella [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare la finestra di [dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **Registra messaggi** dal menu **Spy** .
 
- Le impostazioni seguenti sono disponibili sul **Output** scheda:
+ Nella scheda **output** sono disponibili le impostazioni seguenti:
 
- **I numeri di riga** visualizzare i numeri di riga.
+ **Numeri di riga** Visualizzare i numeri di riga.
 
- **A livello di nidificazione dei messaggi** prefisso messaggi annidati con un punto per ogni livello.
+ **Livello di annidamento del messaggio** Prefisso dei messaggi annidati con un periodo per ogni livello.
 
- **Parametri del messaggio non elaborato** visualizzazione esadecimale **wParam** e **lParam** valori.
+ **Parametri dei messaggi non elaborati** Visualizzare i valori di **wParam** e **lParam** esadecimali.
 
- **Parametri del messaggio decodificato** visualizzare i risultati di decodifica di un messaggio specifico del **wParam** e **lParam** valori.
+ **Parametri dei messaggi decodificati** Visualizzare i risultati della decodifica specifica del messaggio dei valori **wParam** e **lParam** .
 
- **Valori restituiti non elaborati** visualizzazione esadecimale **lResult** valore restituito.
+ **Valori restituiti non elaborati** Visualizza il valore restituito **LRESULT** esadecimale.
 
- **Restituire valori decodificati come** visualizzano i risultati di decodifica messaggio specifica la **lResult** valore restituito.
+ **Valori restituiti decodificati** Visualizza i risultati della decodifica specifica del messaggio del valore restituito di **LRESULT** .
 
- **Origine/ora messaggio** il tempo trascorso dall'avvio del sistema di Windows (solo per messaggi inseriti).
+ **Ora di origine del messaggio** Tempo trascorso dall'avvio del sistema Windows (solo per i messaggi pubblicati).
 
- **Posizione del Mouse del messaggio** coordinate dello schermo del mouse quando il messaggio è stato inserito (solo per messaggi inseriti).
+ **Posizione del mouse del messaggio** Coordinate dello schermo del mouse al momento della pubblicazione del messaggio (solo per i messaggi pubblicati).
 
- **Righe al massimo** limitare il numero di righe che vengono mantenuti nella visualizzazione dei messaggi attualmente selezionata.
+ **Righe massime** Limitare il numero di righe conservate nella visualizzazione messaggi attualmente selezionati.
 
- **Anche i messaggi di Log File** specificare un file di output per il log dei messaggi. Questo file di output verrà scritti simultaneamente con la finestra di messaggio del log.
+ **Registra anche i messaggi nel file** Specificare un file di output per il log dei messaggi. Questo file di output viene scritto simultaneamente con la finestra log del messaggio.
 
- **Salvare le impostazioni come predefinito** salvare le impostazioni precedenti per nuove finestre di flusso di messaggi. Queste impostazioni vengono salvate quando si esce da Spy + +.
+ **Salva impostazioni come predefinite** Salvare le impostazioni precedenti per le nuove finestre del flusso di messaggi. Queste impostazioni vengono salvate quando si esce da Spy + +.

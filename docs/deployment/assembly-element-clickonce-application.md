@@ -1,5 +1,5 @@
 ---
-title: '&lt;assembly&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento assembly (applicazione ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b629243920021adc3833f43f268f05638029dc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900760"
 ---
-# <a name="ltassemblygt-element-clickonce-application"></a>&lt;assembly&gt; elemento (applicazione ClickOnce)
-L'elemento di primo livello per il manifesto dell'applicazione.
+# <a name="ltassemblygt-element-clickonce-application"></a>&lt;&gt;elemento assembly (applicazione ClickOnce)
+Elemento di primo livello per il manifesto dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ L'elemento di primo livello per il manifesto dell'applicazione.
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- Il `assembly` elemento è l'elemento radice ed è obbligatorio. Il primo elemento di contenuto deve essere un `assemblyIdentity` elemento. Gli elementi del manifesto devono essere in uno degli spazi dei nomi seguenti:
+ L' `assembly` elemento è l'elemento radice ed è obbligatorio. Il primo elemento contenuto deve essere un `assemblyIdentity` elemento. Gli elementi del manifesto devono trovarsi in uno degli spazi dei nomi seguenti:
 
  `urn:schemas-microsoft-com:asm.v1`
 
@@ -44,16 +44,16 @@ L'elemento di primo livello per il manifesto dell'applicazione.
 
  `http://www.w3.org/2000/09/xmldsig#`
 
- Gli elementi figlio dell'assembly devono essere anche in questi spazi dei nomi, tramite ereditarietà o tramite l'assegnazione di tag.
+ Gli elementi figlio dell'assembly devono essere presenti anche in questi spazi dei nomi, per ereditarietà o per contrassegno.
 
  L'elemento `assembly` presenta l'attributo seguente:
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`manifestVersion`|Obbligatorio. Il `manifestVersion` attributo deve essere impostato su `1.0`.|
+|`manifestVersion`|Obbligatorio. L' `manifestVersion` attributo deve essere impostato su `1.0` .|
 
 ## <a name="example"></a>Esempio
- L'esempio di codice seguente illustra un' `assembly` elemento in un manifesto dell'applicazione per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md).
+ Nell'esempio di codice seguente viene illustrato un `assembly` elemento in un manifesto dell'applicazione per un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione. Questo esempio di codice fa parte di un esempio più ampio fornito nel [manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md).
 
 ```xml
 <asmv1:assembly
@@ -71,4 +71,4 @@ L'elemento di primo livello per il manifesto dell'applicazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
-- [\<assembly > elemento](../deployment/assembly-element-clickonce-deployment.md)
+- [\<assembly> elemento](../deployment/assembly-element-clickonce-deployment.md)

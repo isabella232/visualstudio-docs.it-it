@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900479"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto di distribuzione ClickOnce
@@ -29,28 +29,28 @@ Un manifesto della distribuzione è un file XML che descrive una distribuzione [
 
 | Elemento | Descrizione | Attributi |
 | - | - | - |
-| [\<assembly> Element](../deployment/assembly-element-clickonce-deployment.md) | Obbligatorio. Elemento di primo livello. | `manifestVersion` |
-| [\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-deployment.md) | Obbligatorio. Identifica il manifesto dell'applicazione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<description> Element](../deployment/description-element-clickonce-deployment.md) | Obbligatorio. Identifica le informazioni sull'applicazione usate per creare una shell e l'elemento **Installazione applicazioni** nel Pannello di controllo. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
-| [\<deployment> Element](../deployment/deployment-element-clickonce-deployment.md) | Facoltativo. Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'esposizione al sistema. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
-| [\<compatibleFrameworks> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Obbligatorio. Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione. | `SupportUrl` |
-| [\<dependency> Element](../deployment/dependency-element-clickonce-deployment.md) | Obbligatorio. Identifica la versione dell'applicazione da installare per la distribuzione e il percorso del manifesto dell'applicazione. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
-| [\<publisherIdentity> Element](../deployment/publisheridentity-element-clickonce-deployment.md) | Obbligatorio per i manifesti firmati. Contiene informazioni sull'editore che ha firmato questo manifesto della distribuzione. | `Name`<br /><br /> `issuerKeyHash` |
-| [\<Signature> Element](../deployment/signature-element-clickonce-deployment.md) | Facoltativo. Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione. | nessuno |
-| [\<customErrorReporting> Element](../deployment/customerrorreporting-element-clickonce-deployment.md) | Facoltativo. Specifica un URI da visualizzare quando si verifica un errore. | URI |
+| [\<assembly> Elemento](../deployment/assembly-element-clickonce-deployment.md) | Obbligatorio. Elemento di primo livello. | `manifestVersion` |
+| [\<assemblyIdentity> Elemento](../deployment/assemblyidentity-element-clickonce-deployment.md) | Obbligatorio. Identifica il manifesto dell'applicazione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<description> Elemento](../deployment/description-element-clickonce-deployment.md) | Obbligatorio. Identifica le informazioni sull'applicazione usate per creare una shell e l'elemento **Installazione applicazioni** nel Pannello di controllo. | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<deployment> Elemento](../deployment/deployment-element-clickonce-deployment.md) | facoltativo. Identifica gli attributi usati per la distribuzione degli aggiornamenti e l'esposizione al sistema. | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
+| [\<compatibleFrameworks> Elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md) | Obbligatorio. Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione. | `SupportUrl` |
+| [\<dependency> Elemento](../deployment/dependency-element-clickonce-deployment.md) | Obbligatorio. Identifica la versione dell'applicazione da installare per la distribuzione e il percorso del manifesto dell'applicazione. | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [\<publisherIdentity> Elemento](../deployment/publisheridentity-element-clickonce-deployment.md) | Obbligatorio per i manifesti firmati. Contiene informazioni sull'editore che ha firmato questo manifesto della distribuzione. | `Name`<br /><br /> `issuerKeyHash` |
+| [\<Signature> Elemento](../deployment/signature-element-clickonce-deployment.md) | facoltativo. Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione. | Nessuno |
+| [\<customErrorReporting> Elemento](../deployment/customerrorreporting-element-clickonce-deployment.md) | facoltativo. Specifica un URI da visualizzare quando si verifica un errore. | Uri |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Il file manifesto della distribuzione identifica una distribuzione dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], incluse la versione corrente e altre impostazioni della distribuzione. Fa riferimento al manifesto dell'applicazione, che descrive la versione corrente dell'applicazione e tutti i file contenuti all'interno della distribuzione.
 
  Per altre informazioni, vedere [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
 
-## <a name="file-location"></a>Posizione file
+## <a name="file-location"></a>Percorso del file
  Il file manifesto della distribuzione fa riferimento al manifesto dell'applicazione corretto per la versione corrente dell'applicazione. Quando si rende disponibile una nuova versione di una distribuzione dell'applicazione, è necessario aggiornare il manifesto della distribuzione in modo che faccia riferimento al nuovo manifesto dell'applicazione.
 
  Il file manifesto della distribuzione deve avere un nome sicuro e può anche contenere certificati per la convalida dell'editore.
 
 ## <a name="file-name-syntax"></a>Sintassi del nome file
- Il nome di un file manifesto della distribuzione deve terminare con l'estensione *application*.
+ Il nome di un file manifesto di distribuzione deve terminare con l'estensione *. Application* .
 
 ## <a name="examples"></a>Esempi
  L'esempio di codice seguente illustra un manifesto della distribuzione.

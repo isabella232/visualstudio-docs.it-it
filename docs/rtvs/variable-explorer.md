@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62809823"
 ---
 # <a name="variable-explorer"></a>Esplora variabili
@@ -45,7 +45,7 @@ Poiché i dati sono spesso tabulari, è possibile visualizzare qualsiasi tipo di
 
 Se si fa clic sull'intestazione di una colonna, i dati vengono ordinati in base a tale colonna, alternatamente in ordine crescente e decrescente. Se si fa clic su altre colonne tenendo premuto **MAIUSC**, anche queste colonne vengono prese in considerazione per l'ordinamento. Se si fa clic su una colonna senza tenere premuto **MAIUSC** si torna all'ordinamento in base a una sola colonna.
 
-La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **tenete premuto Maiusc**+**e fate clic sulla** colonna **cilindro,** quindi **tenete premuto Maiusc**+**e fate clic due** volte sulla colonna **mpg** per ordinare l'elenco per i cilindri ascendenti e le miglia decrescenti per gallone:
+La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **MAIUSC** + **fare clic** sulla colonna **CIL** , **Shift**quindi + **fare clic** due volte sulla colonna **MPG** per ordinare l'elenco per i cilindri ascendenti e i chilometri decrescenti per Gallo:
 
 ![Vista tabulare dell'ordinamento dei dati in base a due colonne.](media/variable-explorer-table-view-sorting.png)
 

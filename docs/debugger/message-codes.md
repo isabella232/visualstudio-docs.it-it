@@ -1,5 +1,5 @@
 ---
-title: I codici di messaggio | Microsoft Docs
+title: Codici messaggi | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c09245056bf7e947985bfa55dc9cc4a3a96b8cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62846273"
 ---
 # <a name="message-codes"></a>Codici di messaggio
-Ogni riga del messaggio illustrato [visualizzazione messaggi](../debugger/messages-view.md) contiene 'P', del,' del,' o 'R' codice. Tali codici hanno i significati seguenti:
+Ogni riga di messaggio visualizzata nella [visualizzazione messaggi](../debugger/messages-view.md) contiene un codice "P", "s", "o" R ". Questi codici hanno i significati seguenti:
 
 |Codice|Significato|
 |----------|-------------|
-|P|Il messaggio è stato inserito nella coda con il **PostMessage** (funzione). Non sono disponibili informazioni sulla disposizione finale del messaggio.|
-|S|Il messaggio è stato inviato con la **SendMessage** (funzione). Ciò significa che il mittente non nuovamente il controllo fino a quando il ricevitore elabora e restituisce il messaggio. Il ricevitore può, pertanto, passare un valore restituito al mittente.|
-|s|È stato inviato il messaggio, ma che impedisce l'accesso al valore restituito.|
-|R|Della ognuno ' la riga contiene una riga corrispondente di 'R' (return) che elenca il valore restituito del messaggio. In alcuni casi le chiamate al messaggio sono nidificate, ovvero che un gestore di messaggi invia un altro messaggio.|
+|P|Il messaggio è stato inserito nella coda con la funzione **PostMessage** . Non sono disponibili informazioni relative alla disposizione definitiva del messaggio.|
+|S|Il messaggio è stato inviato con la funzione **SendMessage** . Ciò significa che il mittente non acquisisce il controllo finché il ricevitore non elabora e non restituisce il messaggio. Il ricevitore può quindi passare un valore restituito al mittente.|
+|s|Il messaggio è stato inviato, ma la sicurezza impedisce l'accesso al valore restituito.|
+|R|La riga di ogni ' s ha una riga ' R ' (Return) corrispondente che elenca il valore restituito del messaggio. Talvolta le chiamate di messaggio sono annidate, il che significa che un gestore di messaggi invia un altro messaggio.|

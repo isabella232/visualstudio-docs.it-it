@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94e2562e86af36d935679916c2bfb9669be1758d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62823485"
 ---
 # <a name="utilization-navigator"></a>Strumento di spostamento di utilizzo
 È possibile usare lo strumento di spostamento di utilizzo nel visualizzatore di concorrenza per selezionare un intervallo di tempo in una traccia. Il visualizzatore di concorrenza mostra l'utilizzo dei core della CPU da parte del processo di destinazione nel tempo. Questo rende più semplice esaminare i modelli di utilizzo della CPU e consente inoltre il confronto tra i dati di utilizzo e i dati in altre visualizzazioni. Lo strumento di spostamento di utilizzo è disponibile nella parte superiore di ogni visualizzazione nel visualizzatore di concorrenza. Nella figura seguente è illustrato lo strumento di spostamento di utilizzo.
 
- ![Utilization Navigator che mostra l'intervallo](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator (Controllo CV)") di tempo selezionato Utilization Navigator e un intervallo di tempo selezionato
+ ![Strumento di spostamento di utilizzo che mostra l'intervallo](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator") di tempo selezionato Strumento di spostamento di utilizzo e intervallo di tempo selezionato
 
  Nell'illustrazione, l'intervallo selezionato è definito da un rettangolo rosso, denominato *controllo thumb*.
 

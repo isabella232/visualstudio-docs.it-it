@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fbe8a715c5bb179c5293dd666f1879c07068d8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62583171"
 ---
 # <a name="lineoff"></a>LineOff
@@ -30,12 +30,12 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```  
   
 #### <a name="parameters"></a>Parametri  
- nessuno  
+ Nessuno  
   
 ## <a name="required-options"></a>Opzioni obbligatorie  
  L'opzione **LineOff** può essere usata solo su una riga di comando che contiene l'opzione **Launch**.  
   
- **Launch:** `AppName`  
+ **Avvia:**`AppName`  
  Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.  
   
 ## <a name="example"></a>Esempio  

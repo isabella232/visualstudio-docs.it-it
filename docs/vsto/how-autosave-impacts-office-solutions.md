@@ -1,5 +1,5 @@
 ---
-title: Modalità salvataggio automatico influisce sulle soluzioni Office
+title: Come il salvataggio automatico influisca sulle soluzioni Office
 ms.date: 10/26/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62826683"
 ---
-# <a name="how-autosave-impacts-office-solutions"></a>Modalità salvataggio automatico influisce sulle soluzioni Office
+# <a name="how-autosave-impacts-office-solutions"></a>Come il salvataggio automatico influisca sulle soluzioni Office
 
-Salvataggio automatico è una funzionalità per Excel, PowerPoint e Word che consente di salvare automaticamente e in modo continuativo le modifiche. Se la funzionalità è disattivata, è necessario salvare i file manualmente per mantenere le modifiche. Potrebbe essere necessario adattare la soluzione Office in modo da utilizzarli in modo uniforme anche mentre salvataggio automatico si trova in. Per informazioni dettagliate, vedere [modalità di salvataggio automatico influisce sulle macro e componenti aggiuntivi](/office/vba/library-reference/concepts/how-autosave-impacts-addins-and-macros). Per altre informazioni sul salvataggio automatico, in generale, vedere [What ' s salvataggio automatico?](https://support.office.com/en-US/article/What-is-AutoSave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5).
+Il salvataggio automatico è una funzionalità per Excel, PowerPoint e Word che consente di salvare automaticamente e continuamente le modifiche. Se la funzionalità è disattivata, è necessario salvare i file manualmente per conservare le modifiche. Potrebbe essere necessario modificare la soluzione Office in modo che funzioni correttamente anche quando il salvataggio automatico è acceso. Per informazioni dettagliate, vedere [come il salvataggio automatico influisca sui componenti aggiuntivi e sulle macro](/office/vba/library-reference/concepts/how-autosave-impacts-addins-and-macros). Per ulteriori informazioni sul salvataggio automatico in generale, vedere [che cos'è il salvataggio automatico?](https://support.office.com/en-US/article/What-is-AutoSave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5).
 
 > [!NOTE]
-> Salvataggio automatico per Windows Desktop Word, Excel e PowerPoint è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori di Office 365. Se è stata acquistata una licenza perpetua per Office 2016 o versioni precedenti, si ha attualmente l'accesso alla funzionalità di modifica condivisa. (Excel Online, Excel per Android, in Excel per iOS e dispositivi mobili di Excel in di Windows Store supporta questa funzionalità, tuttavia).
+> Il salvataggio automatico per Windows desktop Word, Excel e PowerPoint è stato introdotto in 2017 ed è attualmente disponibile per i sottoscrittori Office365. Se è stata acquistata una licenza perpetua per Office 2016 o versione precedente, attualmente non si ha accesso alla funzionalità di coautorizzazione. (Excel online, Excel per Android, Excel per iOS ed Excel Mobile in Windows Store supportano questa funzionalità).
 
 ## <a name="see-also"></a>Vedere anche
 - [Sviluppare soluzioni Office](./developing-office-solutions.md)

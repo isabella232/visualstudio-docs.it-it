@@ -1,5 +1,5 @@
 ---
-title: Usando la pubblicazione guidata applicazione di Azure | Microsoft Docs
+title: Uso della procedura guidata pubblica applicazione Azure | Microsoft Docs
 description: Informazioni su come configurare le varie impostazioni della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 author: ghogen
 manager: jillfra
@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: a75e83e3fb2ac43b4fa1d658c7e2a08ec1ae3c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62831343"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso della procedura guidata Pubblica l'applicazione Azure di Visual Studio
@@ -31,7 +31,7 @@ Un'applicazione Web sviluppata in Visual Studio può essere pubblicata in un ser
 
 **Se si dispone di un progetto servizio cloud di Azure:**
 
-1. Creare o aprire un progetto servizio cloud di Azure in Visual Studio.
+1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** dal menu di scelta rapida.
 
@@ -65,7 +65,7 @@ Un'applicazione Web sviluppata in Visual Studio può essere pubblicata in un ser
 
 **Abilita Desktop remoto per tutti i ruoli** - Selezionare questa opzione per consentire la connessione remota al servizio. Questa opzione viene usata principalmente per la risoluzione dei problemi. Per altre informazioni, vedere [Enable Remote Desktop Connection for a Role in Azure Cloud Services using Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio) (Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio).
 
-**Abilita Distribuzione Web per tutti i ruoli Web** - Selezionare questa opzione per abilitare la distribuzione Web per il servizio. È necessario selezionare anche l'opzione **Abilita Desktop remoto per tutti i ruoli** per usare questa funzionalità. Per altre informazioni, vedere [Pubblicazione di un servizio cloud con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
+**Abilita Distribuzione Web per tutti i ruoli Web** - Selezionare questa opzione per abilitare la distribuzione Web per il servizio. È necessario selezionare anche l'opzione **Abilita Desktop remoto per tutti i ruoli** per usare questa funzionalità. Per altre informazioni, vedere [pubblicazione di un servizio cloud con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 ## <a name="settings-page---advanced-settings-tab"></a>Pagina Impostazioni - Scheda Impostazioni avanzate
 
@@ -101,14 +101,14 @@ La diagnostica consente di risolvere i problemi relativi a un servizio cloud di 
 
 ![Riepilogo](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Profilo di destinazione** - È possibile scegliere di creare un profilo di pubblicazione dalle impostazioni scelte. È ad esempio possibile creare un profilo per un ambiente di test e un altro per l'ambiente di produzione. Per salvare il profilo, fare clic sull'icona **Salva** . La procedura guidata crea e salva il profilo nel progetto Visual Studio. Per modificare il nome del profilo, aprire l'elenco **Profilo di destinazione**, quindi scegliere **&lt;Gestisci&gt;**.
+**Profilo di destinazione** - È possibile scegliere di creare un profilo di pubblicazione dalle impostazioni scelte. È ad esempio possibile creare un profilo per un ambiente di test e un altro per l'ambiente di produzione. Per salvare questo profilo, scegliere l'icona **Salva**. La procedura guidata crea e salva il profilo nel progetto Visual Studio. Per modificare il nome del profilo, aprire l'elenco **Profilo di destinazione**, quindi scegliere **&lt;Gestisci&gt;**.
 
    > [!Note]
    > Il profilo di pubblicazione viene visualizzato in Esplora soluzioni di Visual Studio e le impostazioni del profilo vengono scritte in un file con estensione azurePubxml. Le impostazioni vengono salvate come attributi dei tag XML.
 
 ## <a name="publishing-your-application"></a>Pubblicazione dell'applicazione
 
-Dopo avere configurato tutte le impostazioni per la distribuzione del progetto, selezionare **Pubblica** nella parte inferiore della finestra di dialogo. È possibile monitorare lo stato del processo nella finestra **Output** in Visual Studio.
+Dopo avere configurato tutte le impostazioni per la distribuzione del progetto, selezionare **Pubblica** nella parte inferiore della finestra di dialogo. È possibile monitorare lo stato del processo nel riquadro **Output** in Visual Studio.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -120,6 +120,6 @@ Dopo avere configurato tutte le impostazioni per la distribuzione del progetto, 
 
 - [Test delle prestazioni di un servizio cloud di Azure](./vs-azure-tools-performance-profiling-cloud-services.md)
 
-- [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)
+- [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
 - [Informazioni su Azure Application Insights](/azure/application-insights/app-insights-overview)

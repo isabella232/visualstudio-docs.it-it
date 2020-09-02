@@ -18,40 +18,40 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900502"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Distribuzione ClickOnce in Windows Vista
 
-Compilazione di applicazioni in Visual Studio per controllo Account utente (UAC) in Windows Vista in genere genera un manifesto incorporato, come dati binari con codifica XML nel file eseguibile dell'applicazione.  Le applicazioni ClickOnce and Registration-Free COM richiedono un manifesto esterno, in modo che Visual Studio genera un file per i progetti che contiene i dati di controllo dell'account utente invece di un manifesto incorporato. Per le distribuzioni di ClickOnce and Registration-Free COM, Visual Studio Usa le informazioni da un file denominato *manifest* per generare informazioni sul manifesto UAC esterno. Tutti gli altri casi, Visual Studio incorpora i dati di controllo dell'account utente nel file eseguibile dell'applicazione.
+La compilazione di applicazioni in Visual Studio per il controllo dell'account utente in Windows Vista genera in genere un manifesto incorporato, codificato come dati XML binari nel file eseguibile dell'applicazione.  Le applicazioni COM ClickOnce e senza registrazione richiedono un manifesto esterno, quindi Visual Studio genera un file per questi progetti contenenti i dati UAC anziché un manifesto incorporato. Per le distribuzioni COM ClickOnce e senza registrazione, Visual Studio usa le informazioni di un file denominato *app. manifest* per generare informazioni sul manifesto del controllo dell'account utente esterno. Per tutti gli altri casi, in Visual Studio i dati del controllo dell'account utente vengono incorporati nel file eseguibile dell'applicazione.
 
-Visual Studio offre le seguenti opzioni per la generazione del manifesto:
+Visual Studio offre le opzioni seguenti per la generazione di manifesti:
 
-- Usare un manifesto incorporato. Incorporare i dati di controllo dell'account utente nel file eseguibile dell'applicazione ed eseguire come utente normale.
+- Utilizzare un manifesto incorporato. Incorporare i dati UAC nel file eseguibile dell'applicazione ed eseguirli come utente normale.
 
-   Questo è l'impostazione predefinita (a meno che non si usa ClickOnce). Questa impostazione supporta il consueto modo in cui viene eseguito Visual Studio in Windows Vista, con la generazione di un interni ed esterni un manifesto usando `AsInvoker`.
+   Si tratta dell'impostazione predefinita, a meno che non si usi ClickOnce. Questa impostazione supporta il solito modo in cui Visual Studio opera su Windows Vista, con la generazione di un manifesto interno ed esterno tramite `AsInvoker` .
 
-- Usare un manifesto esterno. Generare un manifesto esterno usando *manifest*.
+- Utilizzare un manifesto esterno. Generare un manifesto esterno usando *app. manifest*.
 
-   Questo genera solo il manifesto esterno usando le informazioni contenute in *manifest*. Quando si pubblica un'applicazione tramite ClickOnce o COM senza registrazione, Visual Studio aggiunge *manifest* al progetto e quindi aggiunge questa opzione.
+   Viene generato solo il manifesto esterno usando le informazioni in *app. manifest*. Quando si pubblica un'applicazione usando ClickOnce o COM senza registrazione, Visual Studio aggiunge *app. manifest* al progetto e quindi aggiunge questa opzione.
 
-- Non utilizzare alcun manifesto. Creare l'applicazione senza un manifesto.
+- Non usare alcun manifesto. Creare l'applicazione senza un manifesto.
 
    Questo approccio è noto anche come *virtualizzazione*. Usare questa opzione per la compatibilità con le applicazioni esistenti da versioni precedenti di Visual Studio.
 
-  Le nuove proprietà sono disponibili nel **applicazione** pagina di creazione progetti (Visual c# solo per i progetti) e nel formato di file di progetto MSBuild.
+  Le nuove proprietà sono disponibili nella pagina **applicazione** di progettazione progetti (solo per i progetti Visual C#) e nel formato di file di progetto MSBuild.
 
-  Il metodo per la configurazione di generazione del manifesto UAC nell'IDE di Visual Studio è diversa a seconda del tipo di progetto (Visual c# o Visual Basic).
+  Il metodo per configurare la generazione del manifesto UAC nell'IDE di Visual Studio varia a seconda del tipo di progetto (Visual C# o Visual Basic).
 
-  * Per informazioni sulla configurazione di progetti Visual c# per la generazione di manifesti, vedere [Application Page, Project Designer (c#)](../ide/reference/application-page-project-designer-csharp.md).
+  * Per informazioni sulla configurazione di progetti Visual C# per la generazione di manifesti, vedere [pagina applicazione, Progettazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-  * Per informazioni sulla configurazione di progetti Visual Basic per la generazione di manifesti, vedere [pagina dell'applicazione, creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+  * Per informazioni sulla configurazione di progetti Visual Basic per la generazione di manifesti, vedere [pagina applicazione, Progettazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Autorizzazioni utente e Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)
-- [Pagina Applicazione, Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)
-- [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

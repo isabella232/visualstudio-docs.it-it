@@ -1,5 +1,5 @@
 ---
-title: Scheda Generale, finestra di dialogo proprietà Thread | Microsoft Docs
+title: Scheda generale, finestra di dialogo Proprietà thread | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62896367"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Scheda Generale, finestra di dialogo Proprietà thread
-Usare questa finestra di dialogo per ottenere ulteriori informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un [visualizzazione thread](../debugger/threads-view.md) finestra, oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare qualsiasi nodo di thread nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.
+Usare questa finestra di dialogo per trovare altre informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una finestra [visualizzazione thread](../debugger/threads-view.md) oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare un nodo thread nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
- Il **Thread Properties** finestra di dialogo contiene un riquadro, il **generali** scheda. Sono disponibili le seguenti impostazioni:
+ La finestra di dialogo **Proprietà thread** contiene un riquadro, ovvero la scheda **generale** . Sono disponibili le impostazioni seguenti:
 
 |Voce|Descrizione|
 |-----------|-----------------|
-|**Nome modulo**|Nome del modulo.|
-|**ID thread**|ID univoco di questo thread. Si noti che i numeri di ID thread vengono riutilizzati; consentono di identificare un thread solo per la durata del thread in questione.|
-|**ID processo**|ID univoco di questo processo. Numeri di ID di processo vengono riutilizzati e identificano un processo solo per la durata del processo stesso. Il tipo di oggetto processo viene creato quando viene eseguito un programma. Tutti i thread in un processo di condividono lo stesso spazio degli indirizzi e abbiano accesso agli stessi dati. Scegliere questo valore per visualizzare le proprietà dell'ID del processo.|
-|**Stato thread**|Lo stato corrente del thread. Un thread in esecuzione con un processore; un thread di Standby è circa di usarne uno. È in attesa di un Thread pronto per utilizzare un processore in quanto non è disponibile. Un thread in fase di transizione è in attesa di una risorsa da eseguire, ad esempio in attesa dello stack di esecuzione venga paginato dal disco. Un thread in attesa, il processore non è necessario perché è in attesa di completare un'operazione esterna o una risorsa venga resa disponibile.|
-|**Motivo attesa**|Questa opzione è disponibile solo quando il thread è nello stato di attesa. Coppie di eventi vengono utilizzate per comunicare con i sottosistemi protetti.|
-|**Tempo CPU**|Tempo CPU totale impiegato per il processo e thread. Uguale all'utente ora + tempo privilegiato.|
-|**Tempo utente**|Tempo trascorso totale che questo thread ha impiegato nell'esecuzione del codice in modalità utente. Le applicazioni vengono eseguiti in modalità utente, i sottosistemi, ad esempio la gestione finestre e il motore della grafica.|
-|**Tempo privilegiato**|Tempo trascorso totale che questo thread ha impiegato nell'esecuzione del codice in modalità privilegiata. Quando viene chiamato un servizio di sistema di Windows, il servizio verrà eseguito spesso in modalità privilegiata per accedere ai dati privati di sistema. Tali dati sono protetti dall'accesso dal thread in esecuzione in modalità utente. Chiamate al sistema possono essere esplicite o implicite, ad esempio quando si verifica un errore di pagina o un interrupt.|
-|**Tempo trascorso**|Il tempo totale trascorso, in secondi, il thread è in esecuzione.|
-|**Priorità corrente**|La priorità dinamica corrente di questo thread. Thread all'interno di un processo può aumentare e ridurre le proprie priorità di base rispetto alla priorità di base del processo.|
-|**Priorità di base**|La priorità di base corrente di questo thread.|
-|**Indirizzo iniziale**|Indirizzo virtuale iniziale per questo thread.|
-|**PC utente**|Il contatore di programma utente per il thread.|
-|**Cambi di contesto**|Il numero di opzioni da un thread a altro. Switch di thread può verificarsi all'interno di un singolo processo o tra processi. Un commutatore di thread potrebbe essere causato da un thread di richiesta di informazioni o da un thread quando un thread con priorità maggiore diventa pronto per l'esecuzione.|
+|**Nome del modulo**|Nome del modulo.|
+|**ID thread**|ID univoco del thread. Si noti che i numeri ID del thread vengono riutilizzati. identificano un thread solo per la durata del thread.|
+|**ID processo**|ID univoco del processo. I numeri ID processo vengono riutilizzati in modo da identificare un processo solo per la durata di tale processo. Il tipo di oggetto processo viene creato durante l'esecuzione di un programma. Tutti i thread in un processo condividono lo stesso spazio di indirizzi e hanno accesso agli stessi dati. Scegliere questo valore per visualizzare le proprietà dell'ID del processo.|
+|**Stato thread**|Stato corrente del thread. Un thread in esecuzione usa un processore; un thread standby sta per utilizzarne uno. Un thread pronto è in attesa di utilizzare un processore perché uno non è disponibile. Un thread in transizione è in attesa dell'esecuzione di una risorsa, ad esempio in attesa di paging del relativo stack di esecuzione in dal disco. Un thread in attesa non necessita del processore perché è in attesa del completamento di un'operazione di periferica o una risorsa diventa disponibile.|
+|**Motivo attesa**|Questa condizione è applicabile solo quando il thread è nello stato di attesa. Le coppie di eventi vengono usate per comunicare con i sottosistemi protetti.|
+|**Tempo CPU**|Tempo totale di CPU dedicato a questo processo e ai relativi thread. Uguale all'ora utente + ora privilegiata.|
+|**Tempo utente**|Tempo totale trascorso dal thread per l'esecuzione del codice in modalità utente. Le applicazioni vengono eseguite in modalità utente, come i sottosistemi come gestione finestre e il motore di grafica.|
+|**Tempo privilegiato**|Tempo totale trascorso utilizzato da questo thread per l'esecuzione di codice in modalità privilegiata. Quando viene chiamato un servizio di sistema Windows, il servizio viene spesso eseguito in modalità privilegiata per accedere ai dati privati del sistema. Tali dati vengono protetti dall'accesso da thread in esecuzione in modalità utente. Le chiamate al sistema possono essere esplicite o implicite, ad esempio quando si verifica un errore di pagina o un interrupt.|
+|**Tempo trascorso**|Tempo totale trascorso (in secondi) in cui il thread è stato eseguito.|
+|**Priorità corrente**|Priorità dinamica corrente del thread. I thread all'interno di un processo possono aumentare e ridurre la propria priorità di base rispetto alla priorità di base del processo.|
+|**Priorità di base**|Priorità di base corrente del thread.|
+|**Indirizzo iniziale**|Indirizzo virtuale iniziale per il thread.|
+|**PC utente**|Il contatore del programma utente per il thread.|
+|**Cambi di contesto**|Numero di opzioni da un thread a un altro. I commutatori di thread possono essere eseguiti all'interno di un singolo processo o tra più processi. Un thread può essere causato da un thread che ne richiede altre per informazioni o da un thread che viene interrotto quando un thread con priorità più alta diventa pronto per l'esecuzione.|

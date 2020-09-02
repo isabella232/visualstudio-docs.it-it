@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8ff78c38ad077084b3dea9c96e3251ffddb2206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573014"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Questo metodo recupera il valore della variabile locale specificata come byte non elaborati.  
@@ -38,19 +38,19 @@ HRESULT get_rawLVarInstanceValue(
   
 #### <a name="parameters"></a>Parametri  
  `pInstance`  
- [in] Un `IDiaLVarInstance` che rappresenta un'istanza della variabile locale per ottenere il valore di oggetto.  
+ in `IDiaLVarInstance` Oggetto che rappresenta un'istanza della variabile locale per la quale ottenere il valore.  
   
  `cbDataMax`  
- [in] Numero massimo di byte nel buffer a cui punta `pbData`. Può trattarsi di un massimo di 8 byte (`sizeof(ULONGLONG)`).  
+ in Numero massimo di byte nel buffer a cui punta `pbData` . Può essere un massimo di 8 byte ( `sizeof(ULONGLONG)` ).  
   
  `pcbData`  
- [out] Restituisce il numero effettivo di byte memorizzati nel buffer.  
+ out Restituisce il numero effettivo di byte archiviati nel buffer.  
   
  `pbData`  
- [out] Un buffer per l'inserimento dei dati. Non può essere `NULL`.  
+ out Buffer da compilare con i dati. Non può essere `NULL`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

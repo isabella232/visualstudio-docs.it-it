@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Microsoft Docs
+title: 'IDebugCustomAttribute:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4463fc4f9d321b26487e885255843a7acd945f76
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569270"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
@@ -40,13 +40,13 @@ int GetName(
   
 #### <a name="parameters"></a>Parametri  
  `bstrName`  
- [out] Restituisce una stringa contenente il nome dell'attributo personalizzato.  
+ out Restituisce una stringa contenente il nome dell'attributo personalizzato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- L'oggetto restituito da questo metodo denominato corrisponde al nome della classe utilizzata per dichiarare l'attributo. Ciò non è uguale a può corrispondere al nome della classe dell'attributo personalizzato come c# consente il suffisso "Attribute" che si desidera eliminare da un nome di attributo personalizzato quando viene usata in una dichiarazione.  
+## <a name="remarks"></a>Osservazioni  
+ Il denominato restituito da questo metodo corrisponde al nome della classe utilizzata per dichiarare l'attributo. Questo potrebbe non corrispondere esattamente al nome della classe di attributi personalizzati perché C# consente il rilascio del suffisso "Attribute" da un nome di attributo personalizzato quando viene usato in una dichiarazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

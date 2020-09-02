@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62823524"
 ---
 # <a name="utilization-view"></a>Visualizzazione Utilizzo
@@ -24,9 +24,9 @@ La **visualizzazione Utilizzo** contiene informazioni relative a CPU, GPU e altr
 
  ![Visualizzazione Utilizzo CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
- Il grafico mostra il tempo (sull'asse x) e la media dei core logici usati dal processo di destinazione, dal processo inattivo e dal processo di sistema. Il processo inattivo mostra i core inattivi. Il processo di sistema è un processo in Windows che può eseguire operazioni per conto di altri processi.) I processi rimanenti in esecuzione nel sistema tengono conto dell'utilizzo dei core rimanenti.
+ Il grafico mostra il tempo (sull'asse x) e la media dei core logici usati dal processo di destinazione, dal processo inattivo e dal processo di sistema. Il processo inattivo mostra i core inattivi. Il processo di sistema è un processo in Windows che può eseguire operazioni per conto di altri processi. I rimanenti processi in esecuzione nell'account di sistema per l'utilizzo di tutti i core rimanenti.
 
- Sull'asse y viene indicato il numero di core logici. Windows considera il supporto multithread simultaneo nell'hardware come core logici (ad esempio, Hyper-Threading). Di conseguenza, un sistema dotato di un processore quad core che supporta due thread hardware per ogni core viene visualizzato come un sistema con otto core logici. Questo vale anche per la visualizzazione Core. Per ulteriori informazioni, vedere [Visualizzazione Core.](../profiling/cores-view.md)
+ Sull'asse y viene indicato il numero di core logici. Windows considera il supporto multithread simultaneo nell'hardware come core logici (ad esempio, Hyper-Threading). Di conseguenza, un sistema dotato di un processore quad core che supporta due thread hardware per ogni core viene visualizzato come un sistema con otto core logici. Questo vale anche per la visualizzazione Core. Per altre informazioni, vedere [visualizzazione Core](../profiling/cores-view.md).
 
  Il grafico Attività GPU mostra il numero di motori di DirectX in uso nel tempo.  Un motore è in uso se sta elaborando un pacchetto DMA.  Il grafico non mostra lo specifico motore di DirectX (ad esempio, motore 3D, motore video e altri).
 
@@ -46,7 +46,7 @@ La **visualizzazione Utilizzo** contiene informazioni relative a CPU, GPU e altr
  Se si usa la GPU con C++ AMP o DirectX, potrebbe essere utile identificare il numero di motori GPU in uso o le aree di inattività imprevista della GPU.
 
 ## <a name="zoom"></a>Zoom
- Per ingrandire il grafico Utilizzo CPU o il grafico Attività GPU, selezionare una sezione o usare il dispositivo di scorrimento dello zoom sopra il grafico. L'impostazione dello zoom viene mantenuta quando si passa ad altre visualizzazioni. Per eseguire lo zoom indietro, usare il dispositivo di scorrimento dello zoom. È inoltre possibile eseguire lo zoom utilizzando **CTRL**+**scroll**.
+ Per ingrandire il grafico Utilizzo CPU o il grafico Attività GPU, selezionare una sezione o usare il dispositivo di scorrimento dello zoom sopra il grafico. L'impostazione dello zoom viene mantenuta quando si passa ad altre visualizzazioni. Per eseguire lo zoom indietro, usare il dispositivo di scorrimento dello zoom. È anche possibile eseguire lo zoom usando **CTRL** + **Scroll**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)

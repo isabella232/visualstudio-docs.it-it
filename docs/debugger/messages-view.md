@@ -1,5 +1,5 @@
 ---
-title: La visualizzazione messaggi | Microsoft Docs
+title: Visualizzazione messaggi | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,61 +13,61 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62845852"
 ---
 # <a name="messages-view"></a>Visualizzazione messaggi
-Ogni finestra dispone di un flusso di messaggi associati. Questo flusso di messaggi viene visualizzata una finestra di visualizzazione dei messaggi. L'handle di finestra, codice di messaggio e il messaggio vengono visualizzati. È possibile creare una visualizzazione di messaggi per un thread o processo anche. In questo modo è possibile visualizzare i messaggi inviati a tutte le finestre appartenenti a un determinato processo o thread, che risulta particolarmente utile per l'acquisizione di messaggi di inizializzazione della finestra.
+A ogni finestra è associato un flusso di messaggi. In una finestra di visualizzazione messaggi viene visualizzato questo flusso di messaggi. Vengono visualizzati l'handle della finestra, il codice del messaggio e il messaggio. È possibile creare una visualizzazione messaggi anche per un thread o un processo. In questo modo è possibile visualizzare i messaggi inviati a tutte le finestre di proprietà di un processo o thread specifico, che risulta particolarmente utile per l'acquisizione dei messaggi di inizializzazione della finestra.
 
- Di seguito è riportata una finestra di visualizzazione di messaggi tipici. Si noti che la prima colonna contiene l'handle della finestra e la seconda colonna contiene un codice del messaggio (illustrato in [codici di messaggio](../debugger/message-codes.md)). Messaggio decodificato parametri e valori restituiti sono sul lato destro.
+ Di seguito viene visualizzata una finestra di visualizzazione dei messaggi tipica. Si noti che la prima colonna contiene l'handle di finestra e la seconda colonna contiene un codice di messaggio (descritto in [codici messaggi](../debugger/message-codes.md)). I parametri e i valori restituiti dei messaggi decodificati sono a destra.
 
- ![Spy&#43; &#43; la visualizzazione messaggi](../debugger/media/spy--_messagesview.png "Spy + + _MessagesView") visualizzazione messaggi di Spy + +
+ ![Visualizzazione messaggi di Spy&#43;&#43; ](../debugger/media/spy--_messagesview.png "_MessagesView di Spy + +") Visualizzazione messaggi di Spy + +
 
 ## <a name="procedures"></a>Procedure
 
-#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Per aprire una visualizzazione di messaggi per una finestra, processo o thread
+#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Per aprire una visualizzazione messaggi per una finestra, un processo o un thread
 
-1. Spostare lo stato attivo a un [Windows Vista](../debugger/windows-view.md), [visualizzazione processi](../debugger/processes-view.md), o [visualizzazione thread](../debugger/threads-view.md) finestra.
+1. Spostare lo stato attivo in una [visualizzazione di Windows](../debugger/windows-view.md), nella [visualizzazione processi](../debugger/processes-view.md)o nella finestra [visualizzazione thread](../debugger/threads-view.md) .
 
-2. Trovare il nodo per l'elemento di cui si desidera esaminare i messaggi e selezionarlo.
+2. Individuare il nodo per l'elemento di cui si desidera esaminare i messaggi e selezionarlo.
 
-3. Dal **Spy** menu, scegliere **i messaggi di Log**.
+3. Dal menu **Spy** scegliere **log messages**.
 
-     Il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) apre.
+     Verrà visualizzata la finestra di [dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) .
 
-4. Selezionare le opzioni per il messaggio da visualizzare.
+4. Selezionare le opzioni per il messaggio che si desidera visualizzare.
 
-5. Premere **OK** per avviare la registrazione messaggi.
+5. Premere **OK** per avviare la registrazione dei messaggi.
 
-     Un viene visualizzata la finestra di visualizzazione dei messaggi e un **messaggi** menu viene aggiunto alla barra degli strumenti di Spy + +. A seconda delle opzioni selezionate, i messaggi di avviare lo streaming nella finestra di visualizzazione di messaggi attiva.
+     Viene visualizzata una finestra Visualizzazione messaggi e viene aggiunto un menu **messaggi** alla barra degli strumenti di Spy + +. A seconda delle opzioni selezionate, i messaggi iniziano a trasmettere nella finestra Visualizzazione messaggi attivi.
 
-6. Quando si dispone di messaggi sufficiente, scegliere **Arresta registrazione** dalle **messaggi** menu.
+6. Quando si dispone di un numero sufficiente di messaggi, scegliere **Interrompi registrazione** dal menu **messaggi** .
 
-## <a name="in-this-section"></a>In questa sezione
- [Controllo della visualizzazione messaggi](../debugger/how-to-control-messages-view.md) spiega come gestire la visualizzazione dei messaggi.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Controllo della visualizzazione dei messaggi](../debugger/how-to-control-messages-view.md) Viene illustrato come gestire la visualizzazione dei messaggi.
 
- [Apertura della visualizzazione messaggi dalla finestra Trova](../debugger/how-to-open-messages-view-from-find-window.md) viene illustrato come aprire la visualizzazione messaggi dalla finestra di dialogo Trova finestra.
+ [Apertura della visualizzazione messaggi dalla finestra trova](../debugger/how-to-open-messages-view-from-find-window.md) Viene illustrato come aprire la visualizzazione messaggi dalla finestra di dialogo Trova finestra.
 
- [La ricerca di un messaggio in messaggi](../debugger/how-to-search-for-a-message-in-messages-view.md) viene spiegato come individuare un messaggio specifico nella visualizzazione dei messaggi.
+ [Ricerca di un messaggio nella visualizzazione messaggi](../debugger/how-to-search-for-a-message-in-messages-view.md) Viene illustrato come trovare un messaggio specifico nella visualizzazione messaggi.
 
- [Avviare e arrestare la visualizzazione dei Log messaggi](../debugger/how-to-start-and-stop-the-message-log-display.md) viene spiegato come avviare e arrestare la registrazione dei messaggi.
+ [Avvio e arresto della visualizzazione del log dei messaggi](../debugger/how-to-start-and-stop-the-message-log-display.md) Viene illustrato come avviare e arrestare la registrazione di messaggi.
 
- [I codici di messaggio](../debugger/message-codes.md) definisce i codici per i messaggi elencati nella visualizzazione dei messaggi.
+ [Codici di messaggio](../debugger/message-codes.md) Definisce i codici per i messaggi elencati nella visualizzazione messaggi.
 
- [Visualizzazione delle proprietà di messaggio](../debugger/how-to-display-message-properties.md) come visualizzare ulteriori informazioni su un messaggio.
+ [Visualizzazione delle proprietà del messaggio](../debugger/how-to-display-message-properties.md) Come visualizzare ulteriori informazioni su un messaggio.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+ [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.
 
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+ [Uso di Spy + +](../debugger/using-spy-increment.md) Introduce lo strumento Spy + + e spiega come può essere usato.
 
- [Finestra di dialogo Opzioni del messaggio](../debugger/message-options-dialog-box.md) utilizzato per selezionare quali messaggi sono elencati nella visualizzazione messaggi attiva.
+ Finestra di [dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md) Consente di selezionare i messaggi elencati nella visualizzazione messaggi attivi.
 
- [Finestra di dialogo di ricerca del messaggio](../debugger/message-search-dialog-box.md) consente di individuare il nodo di un messaggio specifico nella visualizzazione dei messaggi.
+ Finestra di [dialogo Ricerca messaggi](../debugger/message-search-dialog-box.md) Utilizzato per trovare il nodo di un messaggio specifico nella visualizzazione messaggi.
 
- [Finestra di dialogo proprietà del messaggio](../debugger/message-properties-dialog-box.md) consente di visualizzare le proprietà di un messaggio selezionato nella visualizzazione di messaggi.
+ Finestra di [dialogo Proprietà messaggio](../debugger/message-properties-dialog-box.md) Utilizzato per visualizzare le proprietà di un messaggio selezionato in visualizzazione messaggio.
 
- [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.
