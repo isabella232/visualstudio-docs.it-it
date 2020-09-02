@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2a13d96d8932a3a9e4628f2d0e67a28869252c95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667366"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: creare un progetto e aggiungere etichette al form
@@ -134,7 +134,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 5. Assegnare alla seconda etichetta punto interrogativo il nome **minusRightLabel**.
 
-6. Denominare il controllo **NumericUpDown** **differenza**.
+6. Denominare il controllo **NumericUpDown****differenza**.
 
 7. Incollare i cinque controlli altre due volte.
 

@@ -1,5 +1,5 @@
 ---
-title: Proprietà VSTextBuffer . Documenti Microsoft
+title: Oggetto oggetto VsTextBuffer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,36 +14,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a5ea44d2b22c96d49f334f2ea33f9db8d69b5eb0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697719"
 ---
-# <a name="vstextbuffer-object"></a>Oggetto VSTextBuffer
-L'oggetto buffer di testo rappresenta un flusso di testo Unicode, che è generalmente associato a un file. Un <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto può essere utilizzato all'esterno del contesto dell'editor principale, come in, una procedura guidata.
+# <a name="vstextbuffer-object"></a>Oggetto oggetto VsTextBuffer
+L'oggetto buffer di testo rappresenta un flusso di testo Unicode, che in genere è associato a un file. Un <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto può essere usato all'esterno del contesto dell'editor principale, come in, una procedura guidata.
 
- Nella tabella seguente vengono `VSTextBuffer`illustrate le interfacce di .
+ Nella tabella seguente vengono illustrate le interfacce di `VSTextBuffer` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[Iolecommandtarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Interfaccia OLE standard. Utilizzato per la gestione di annullamento/ripetizione nel buffer.|
-|[Ipersistfile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Interfaccia OLE standard.|
-|[Ipersiststream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Interfaccia OLE standard.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Consente la creazione di azioni di composti, ovvero azioni raggruppate in una singola unità di annullamento/ripetizione.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Consente la persistenza dei dati del documento gestiti dal buffer di testo.|
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Interfaccia OLE standard. Utilizzato per la gestione delle operazioni di annullamento/ripristino nel buffer.|
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Interfaccia OLE standard.|
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Interfaccia OLE standard.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Consente la creazione di azioni di compound, ovvero azioni raggruppate in una singola unità di annullamento/ripristino.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Abilita la persistenza dei dati del documento gestiti dal buffer di testo.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Fornisce servizi di base; utilizzato da molti client.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|Utilizzato per cercare un buffer.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Fornisce funzionalità di lettura e scrittura utilizzando coordinate bidimensionali. Eredita dall'oggetto `IVsTextBuffer`.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Fornisce funzionalità di lettura e scrittura utilizzando coordinate unidimensionali. Eredita dall'oggetto `IVsTextBuffer`.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Fornisce un accesso rapido, orientato al flusso e sequenziale, al testo nel buffer.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Fornisce l'accesso a una raccolta generica di proprietà. La proprietà più importante è il nome, o moniker, del buffer. È possibile archiviare i propri dati casuali nel buffer con questa interfaccia creando un GUID e utilizzandolo come chiave.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|Utilizzato per la ricerca in un buffer.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Fornisce funzionalità di lettura e scrittura con coordinate bidimensionali. Eredita dall'oggetto `IVsTextBuffer`.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Fornisce funzionalità di lettura e scrittura usando coordinate unidimensionali. Eredita dall'oggetto `IVsTextBuffer`.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Fornisce accesso sequenziale veloce e orientato al flusso al testo nel buffer.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Fornisce l'accesso a una raccolta generica di proprietà. La proprietà più importante è il nome, o moniker, del buffer. È possibile archiviare i dati casuali nel buffer con questa interfaccia creando un GUID e usandolo come chiave.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Supporta i punti di connessione per gli eventi.|
 
 ## <a name="remarks"></a>Osservazioni
- Il `VSTextBuffer` si trova `QueryInterface` di `IVsTextBuffer`solito da una chiamata su . Per ulteriori informazioni, consultate Buffer di [testo.](/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?view=vs-2015)
+ `VSTextBuffer`Viene in genere trovato da una `QueryInterface` chiamata a `IVsTextBuffer` . Per ulteriori informazioni, vedere [buffer di testo](/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?view=vs-2015).
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
-- [Modifica delle figure](https://www.microsoft.com/download/details.aspx?id=55984)
+- [Modifica figure](https://www.microsoft.com/download/details.aspx?id=55984)

@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158272"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
@@ -45,7 +45,7 @@ Contiene un nome un valore della propriet√† definiti dall'utente. Ogni propriet√
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Condition`|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
   
@@ -54,7 +54,7 @@ Contiene un nome un valore della propriet√† definiti dall'utente. Ogni propriet√
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento di raggruppamento per le propriet√†.|  
   

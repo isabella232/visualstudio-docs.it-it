@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetPropertyInfo | Microsoft Docs
+title: 'IDebugProperty2:: GetPropertyInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a6d4c2fd943ddef0b4459460be1f67550e53d84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146267"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene il [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struttura che descrive una proprietà.  
+Ottiene la struttura di [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) che descrive una proprietà.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -50,25 +50,25 @@ int GetPropertyInfo ( 
   
 #### <a name="parameters"></a>Parametri  
  `dwFields`  
- [in] Una combinazione di valori dal [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumerazione che specifica quali campi devono essere compilati nel `pPropertyInfo` struttura.  
+ in Combinazione di valori dell'enumerazione [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi che devono essere compilati nella `pPropertyInfo` struttura.  
   
  `nRadix`  
- [in] Radice da utilizzare nella formattazione qualsiasi informazioni numeriche.  
+ in Radice da usare per la formattazione di qualsiasi informazione numerica.  
   
  `dwTimeout`  
- [in] Specifica il tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.  
+ in Specifica il tempo massimo di attesa, in millisecondi, prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.  
   
  `rgpArgs`  
- [in, out] Riservato per utilizzi futuri; Impostare su un valore null.  
+ [in, out] Riservato per un utilizzo futuro; impostare su un valore null.  
   
  `dwArgCount`  
- [in] Riservato per utilizzi futuri; Impostare su zero.  
+ in Riservato per un utilizzo futuro; impostare su zero.  
   
  `pPropertyInfo`  
- [out] Oggetto [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struttura compilata con la descrizione della proprietà.  
+ out Struttura [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) compilata con la descrizione della proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

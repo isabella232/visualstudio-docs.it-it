@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72e77cfbfcc8a959dd26d4c3fbc1bf633cd9f00e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145507"
 ---
-# <a name="timeline-caret"></a>Indicatore di posizione nella sequenza temporale
+# <a name="timeline-caret"></a>Punto di inserimento della cronologia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si seleziona un punto nella sequenza temporale di un segmento di thread in esecuzione, sopra di esso viene visualizzato un indicatore di posizione nella sequenza temporale. Lo stack di chiamate visualizzato nella scheda dello stack corrente è quello più vicino nel tempo al punto in cui è stato fatto clic sul segmento. L'indicatore viene usato per associare lo stack di chiamate, visualizzato nella scheda **Corrente**, alle informazioni sul momento in cui è stato effettuato il campionamento. L'indicatore mostra la posizione esatta dello stack di chiamate, che rappresenta lo stack di chiamate più vicino alla posizione selezionata dall'utente.  

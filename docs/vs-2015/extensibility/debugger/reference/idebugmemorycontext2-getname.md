@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetName | Microsoft Docs
+title: 'IDebugMemoryContext2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c499dc44e52fd7f23a6801e8836ffc1915c125f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146385"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
@@ -41,13 +41,13 @@ int GetName(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrName`  
- [out] Restituisce il nome del contesto di memoria.  
+ out Restituisce il nome del contesto di memoria.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Il nome di un contesto di memoria non è in genere utilizzato.  
+## <a name="remarks"></a>Osservazioni  
+ Il nome di un contesto di memoria non viene in genere usato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

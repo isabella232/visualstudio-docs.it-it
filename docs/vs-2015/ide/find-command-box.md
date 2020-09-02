@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7c5f9c19573a04b1d9a8d7b8c6e9450aef9bc44
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645727"
 ---
 # <a name="findcommand-box"></a>Trova/Comando (casella)
@@ -29,10 +29,10 @@ ms.locfileid: "72645727"
 
  La casella **Trova/Comando** memorizza gli ultimi 20 elementi immessi e li visualizza in un elenco a discesa. È possibile spostarsi nell'elenco usando i tasti di direzione.
 
- ![Casella&#47;di comando trova](../ide/media/findcommandbox.png "|::ref1::|") Casella Trova/comando
+ ![Casella di comando trova&#47;](../ide/media/findcommandbox.png "FindCommandBox") Casella Trova/comando
 
 ## <a name="searching-for-text"></a>Ricerca di testo
- Per impostazione predefinita, quando si specifica il testo nella casella **Trova/Comando** e si preme il tasto INVIO, Visual Studio esegue la ricerca nella finestra del documento o dello strumento corrente usando le opzioni specificate nella finestra di dialogo **Cerca nei file**. Per altre informazioni, vedere [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
+ Per impostazione predefinita, quando si specifica il testo nella casella **Trova/Comando** e si preme il tasto INVIO, Visual Studio esegue la ricerca nella finestra del documento o dello strumento corrente usando le opzioni specificate nella finestra di dialogo **Cerca nei file**. Per ulteriori informazioni, vedere [ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md).
 
 ## <a name="entering-commands"></a>Immissione di comandi
  Per usare la casella **Trova/Comando** per eseguire un singolo comando o alias di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] invece che per cercare il testo, immettere il comando di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] anteponendo il simbolo di maggiore di (>). Ad esempio:
@@ -41,10 +41,10 @@ ms.locfileid: "72645727"
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
 ```
 
- In alternativa, è anche possibile usare la finestra di comando per immettere ed eseguire comandi singoli o multipli. Alcuni comandi o alias possono essere immessi ed eseguiti da soli, mentre altri richiedono l'immissione di argomenti nella sintassi. Per un elenco di comandi con argomenti, vedere [Comandi di Visual Studio](../ide/reference/visual-studio-commands.md).
+ In alternativa, è anche possibile usare la finestra di comando per immettere ed eseguire comandi singoli o multipli. Alcuni comandi o alias possono essere immessi ed eseguiti da soli, mentre altri richiedono l'immissione di argomenti nella sintassi. Per un elenco di comandi con argomenti, vedere [comandi di Visual Studio](../ide/reference/visual-studio-commands.md).
 
 ## <a name="escape-characters"></a>Caratteri di escape
- Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
+ Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```
 >Edit.Find ^^t /regex

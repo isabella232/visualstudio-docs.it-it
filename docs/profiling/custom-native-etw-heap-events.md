@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552967"
 ---
 # <a name="custom-native-etw-heap-events"></a>Personalizzare gli eventi dell'heap ETW nativo
@@ -51,7 +51,7 @@ Uno snapshot dello strumento [Utilizzo memoria](../profiling/memory-usage.md) se
 
 La procedura riportata di seguito consente di usare questo strumento per verificare l'uso della memoria nell'heap personalizzato.
 
-## <a name="how-to-use"></a>Utilizzo
+## <a name="how-to-use"></a>Uso
 
 Questa libreria può essere usata facilmente in C e C++.
 
@@ -90,7 +90,7 @@ Questa libreria può essere usata facilmente in C e C++.
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   o
+   oppure
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
@@ -156,5 +156,5 @@ Come con l'heap standard di Windows, è possibile usare questo strumento per con
 > Visual Studio contiene anche uno strumento **Utilizzo memoria** nel set di strumenti di **profilatura delle prestazioni**, che viene abilitato dall'opzione di menu **Debug** > **Profiler prestazioni** o dalla combinazione di tasti** ALT**+**F2**.  Questa funzionalità non include la verifica dell'heap e non visualizza l'heap personalizzato come descritto in questo documento.  Solo la finestra **Strumenti di diagnostica**, che può essere abilitata con il menu **Debug** > **Windows** > **Mostra strumenti di diagnostica** o la combinazione di tasti **CTRL**+**ALT**+**F2**, contiene questa funzionalità.
 
 ## <a name="see-also"></a>Vedere anche
-[Esaminare gli strumenti](../profiling/profiling-feature-tour.md)
-di profilatura[Utilizzo memoria](../profiling/memory-usage.md)
+[Esaminare prima di tutto gli strumenti](../profiling/profiling-feature-tour.md) 
+ di profilatura [Utilizzo memoria](../profiling/memory-usage.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f47ddbadc5decaa292d34cd2becbff69e69b51a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146104"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procedura: Filtrare visualizzazioni report degli strumenti per la profilatura per visualizzare Just My Code
@@ -38,4 +38,4 @@ Visual Studio 2010 Premium fornisce un filtro per i rapporti di prestazioni in m
 3. In **Impostazioni generali** deselezionare la casella di controllo **Abilita Just My Code**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Personalizzazione delle visualizzazioni dei rapporti degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
+ [Personalizzazione delle visualizzazioni dei report sugli strumenti delle prestazioni](../profiling/customizing-performance-tools-report-views.md)

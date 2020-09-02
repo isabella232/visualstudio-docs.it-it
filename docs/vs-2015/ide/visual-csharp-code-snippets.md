@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fb84854bd871277f680a753b28c17e3429283928
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646715"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C#
@@ -44,21 +44,21 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 |classe|Crea una dichiarazione di classe.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |ctor|Crea un costruttore per la classe contenitore.|All'interno di una classe.|
 |cw|Crea una chiamata a <xref:System.Console.WriteLine%2A>.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|do|Crea un ciclo [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|do|Crea un ciclo [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` .|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |else|Crea un blocco [else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |enum|Crea una dichiarazione [enum](https://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
-|è uguale a|Crea una dichiarazione di metodo che esegue l'override del metodo <xref:System.Object.Equals%2A> definito nella classe <xref:System.Object>.|All'interno di una classe o uno struct.|
+|equals|Crea una dichiarazione di metodo che esegue l'override del metodo <xref:System.Object.Equals%2A> definito nella classe <xref:System.Object>.|All'interno di una classe o uno struct.|
 |exception|Crea una dichiarazione per una classe che deriva da un'eccezione (<xref:System.Exception> per impostazione predefinita).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
-|for|Crea un ciclo [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|per|Crea un ciclo [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |foreach|Crea un ciclo [foreach](https://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |forr|Crea un ciclo [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8) che decrementa la variabile di ciclo dopo ogni iterazione.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |if|Crea un blocco [if](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|indicizzatore|Crea una dichiarazione di indicizzatore.|All'interno di una classe o uno struct.|
+|Indicizzatore|Crea una dichiarazione di indicizzatore.|All'interno di una classe o uno struct.|
 |interfaccia|Crea una dichiarazione [interface](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |invoke|Crea un blocco che richiama in modo sicuro un evento.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |iteratore|Crea un iteratore.|All'interno di una classe o uno struct.|
 |iterindex|Crea una coppia iteratore/indicizzatore "denominata" usando una classe annidata.|All'interno di una classe o uno struct.|
-|blocco|Crea un blocco [lock](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|lock|Crea un blocco [lock](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |mbox|Crea una chiamata a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Può essere necessario aggiungere un riferimento a System.Windows.Forms.dll.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |namespace|Crea una dichiarazione [namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
 |prop|Crea una dichiarazione di [proprietà implementata automaticamente](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).|All'interno di una classe o uno struct.|
@@ -68,7 +68,7 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 |struct|Crea una dichiarazione [struct](https://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |svm|Crea una dichiarazione [static](https://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[void](https://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) del metodo Main.|All'interno di una classe o uno struct.|
 |switch|Crea un blocco [switch](https://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|try|Crea un blocco [try-catch](https://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|provare|Crea un blocco [try-catch](https://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |tryf|Crea un blocco [try-finally](https://msdn.microsoft.com/library/c27623fb-7261-4464-862c-7a369d3c8f0a).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |unchecked|Crea un blocco [unchecked](https://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |unsafe|Crea un blocco [unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
@@ -76,4 +76,4 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 |while|Crea un ciclo [while](https://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 
 ## <a name="see-also"></a>Vedere anche
- [Funzioni dei frammenti di codice](../ide/code-snippet-functions.md) [frammenti di codice](../ide/code-snippets.md) [procedura: creare un nuovo frammento con sostituzioni](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338) [parametri di modello](../ide/template-parameters.md) [procedura: usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md) [procedura: ripristinare C# i frammenti di refactoring](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Funzioni dei frammenti di codice](../ide/code-snippet-functions.md) [frammenti di codice](../ide/code-snippets.md) [procedura: creare un nuovo frammento con](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338) i [parametri del modello](../ide/template-parameters.md) di sostituzioni [procedura: usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md) [procedura: ripristinare i frammenti di codice di refactoring di C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

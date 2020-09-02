@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591970"
 ---
 # <a name="security-of-text-templates"></a>Sicurezza dei modelli di testo
@@ -24,11 +24,11 @@ I modelli di testo presentano i seguenti problemi di sicurezza:
 - Se il meccanismo usato dall'host per trovare un processore di direttiva non è sicuro, è possibile eseguire un processore di direttive dannose.
 
 ## <a name="arbitrary-code"></a>Codice arbitrario
- Quando si scrive un modello, è possibile inserire qualsiasi codice all'interno dei tag \<# # >. Questo consente l'esecuzione di codice arbitrario dall'interno di un modello di testo.
+ Quando si scrive un modello, è possibile inserire qualsiasi codice all'interno dei \<# #> tag. Questo consente l'esecuzione di codice arbitrario dall'interno di un modello di testo.
 
  Assicurarsi di ottenere modelli da origini attendibili. Assicurarsi di avvisare gli utenti finali dell'applicazione in modo che non eseguano modelli che non provengono da origini attendibili.
 
 ## <a name="malicious-directive-processor"></a>Processore di direttiva dannoso
  Il motore del modello di testo interagisce con un host di trasformazione e uno o più processori di direttiva per trasformare il testo del modello in un file di output. Per ulteriori informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
 
- Se il meccanismo usato dall'host per trovare un processore di direttiva non è sicuro, viene eseguito il rischio di eseguire un processore di direttive dannose. Il processore di direttiva dannosa potrebbe fornire codice eseguito in modalità `FullTrust` durante l'esecuzione del modello. Se si crea un host di trasformazione del modello di testo personalizzato, è necessario utilizzare un meccanismo protetto, ad esempio il registro di sistema, per individuare i processori di direttiva da parte del motore.
+ Se il meccanismo usato dall'host per trovare un processore di direttiva non è sicuro, viene eseguito il rischio di eseguire un processore di direttive dannose. Il processore di direttiva dannosa potrebbe fornire codice eseguito in `FullTrust` modalità quando il modello viene eseguito. Se si crea un host di trasformazione del modello di testo personalizzato, è necessario utilizzare un meccanismo protetto, ad esempio il registro di sistema, per individuare i processori di direttiva da parte del motore.

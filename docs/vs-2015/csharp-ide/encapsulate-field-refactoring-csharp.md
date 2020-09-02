@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b4f5ddbe7eab925b06584f00b04bed3c74e9811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667563"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refactoring Incapsula campo (C#)
@@ -76,7 +76,7 @@ L'operazione di refactoring **Incapsula campo** consente di creare rapidamente u
 
 5. Premere INVIO oppure fare clic sul pulsante **OK** .
 
-6. Se è stata selezionata l'opzione **Anteprima modifiche riferimento** , viene visualizzata la finestra **Anteprima modifiche riferimenti** . Fare clic sul pulsante **applica** .
+6. Se è stata selezionata l'opzione **Anteprima modifiche riferimento** , viene visualizzata la finestra **Anteprima modifiche riferimenti** . Fare clic sul pulsante **Applica**.
 
      Nel file di origine verrà visualizzato il codice delle funzioni di accesso `get` e `set` seguenti:
 
@@ -98,12 +98,12 @@ L'operazione di refactoring **Incapsula campo** consente di creare rapidamente u
     Console.WriteLine("width = {0}", mySquare.Width);
     ```
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  L'operazione **Incapsula campo** è possibile solo quando il cursore è posizionato sulla stessa riga della dichiarazione del campo.
 
  Per le dichiarazioni che dichiarano più campi, **Incapsula campo** usa la virgola come limite tra i campi e avvia il refactoring sul campo più vicino al cursore e sulla stessa riga del cursore. È inoltre possibile specificare il campo che si desidera incapsulare selezionandone il nome nella dichiarazione.
 
- Il codice generato da questa operazione di refactoring viene modellato dalla funzionalità di frammenti di codice per Incapsula campo. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md).
+ Il codice generato da questa operazione di refactoring viene modellato dalla funzionalità di frammenti di codice per Incapsula campo. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
 
 ## <a name="see-also"></a>Vedere anche
- [Refactoring (C#)](../csharp-ide/refactoring-csharp.md) [frammenti C# di codice visivi](../ide/visual-csharp-code-snippets.md)
+ [Refactoring (C#)](../csharp-ide/refactoring-csharp.md) [frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md)

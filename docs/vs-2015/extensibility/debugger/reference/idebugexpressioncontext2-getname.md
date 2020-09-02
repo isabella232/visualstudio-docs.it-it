@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName | Microsoft Docs
+title: 'IDebugExpressionContext2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c69b165e6a9e36d190a64b9d2e9ec41fcff2183
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158418"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
@@ -40,13 +40,13 @@ int GetName( 
   
 #### <a name="parameters"></a>Parametri  
  `pbstrName`  
- [out] Restituisce il nome del contesto di valutazione.  
+ out Restituisce il nome del contesto di valutazione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Il nome è la descrizione di questo contesto di valutazione. È in genere qualcosa che può essere analizzato da un analizzatore di espressioni che fa riferimento a questo contesto di valutazione esatta. Ad esempio, in C++ il nome è come segue:  
+## <a name="remarks"></a>Osservazioni  
+ Il nome è la descrizione di questo contesto di valutazione. Si tratta in genere di un elemento che può essere analizzato da un analizzatore di espressioni che fa riferimento a questo contesto di valutazione esatto. Ad esempio, in C++ il nome è il seguente:  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  

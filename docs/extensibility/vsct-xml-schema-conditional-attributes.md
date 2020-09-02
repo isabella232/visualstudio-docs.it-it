@@ -1,5 +1,5 @@
 ---
-title: Attributi condizionali dello schema XML VSCT Documenti Microsoft
+title: Attributi condizionali di XML Schema VSCT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697938"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>Attributi condizionali dello schema XML VSCT
-È possibile applicare attributi condizionali a tutti gli elenchi e gli elementi. Gli operatori logici e le espressioni di espansione dei simboli restituiscono true o false. Se true, l'elenco o l'elemento associato viene incluso nell'output risultante.
+# <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML Schema attributi condizionali
+È possibile applicare attributi condizionali a tutti gli elenchi e gli elementi. Gli operatori logici e le espressioni di espansione simboli restituiscono true o false. Se true, l'elenco o l'elemento associato viene incluso nell'output risultante.
 
- È possibile testare le espansioni dei token rispetto ad altre espansioni o costanti di token. La `Defined()` funzione verifica se un determinato nome è stato definito, anche se non ha alcun valore.
+ È possibile testare le espansioni del token rispetto ad altre espansioni o costanti del token. La funzione `Defined()` verifica se è stato definito un determinato nome, anche se non ha alcun valore.
 
- Quando un Condition attributo viene applicato a un elenco, la condizione viene applicata a ogni elemento figlio nell'elenco. Se un elemento figlio contiene un attributo Condition, la relativa condizione viene combinata con l'espressione padre tramite un'operazione AND.
+ Quando viene applicato un attributo Condition a un elenco, la condizione viene applicata a ogni elemento figlio dell'elenco. Se un elemento figlio contiene un attributo Condition, la relativa condizione viene combinata con l'espressione padre da un'operazione AND.
 
- I valori 1, '1' e 'true' vengono valutati come true e 0, '0' e 'false' vengono valutati come false.
+ I valori 1,' 1' è true ' vengono valutati come true e 0,' 0' è false ' vengono valutati come false.
 
 ## <a name="operators"></a>Operatori
  Utilizzare gli operatori seguenti per valutare le espressioni condizionali.
@@ -34,9 +34,9 @@ ms.locfileid: "80697938"
 |--------------|----------------|
 |(,)|Raggruppamento|
 |!|NOT logico|
-|\<, >, \<, >, , , !|Relazionale e uguaglianza|
+|\<, >, \<=, >=, ==, !=|Relazionale e uguaglianza|
 |e|Boolean|
-|o|Boolean|
+|Oppure|Boolean|
 
 ## <a name="examples"></a>Esempi
 
@@ -70,4 +70,4 @@ and !Defined(DEBUG)">
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Tabella dei comandi di Visual Studio (. Vsct) file](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Tabella comandi di Visual Studio (. File vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

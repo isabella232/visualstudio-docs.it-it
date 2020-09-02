@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ea066aa31cbc1f6408ee55c92a5ca761608f534
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667820"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Creare elementi e relazioni nei modelli UML
@@ -35,7 +35,7 @@ Nel codice programma per un'estensione a Visual Studio, è possibile creare ed e
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>Ottenere il proprietario dell'elemento per il quale si vuole creare una condizione
  Un modello costituisce un singolo albero, in modo che ogni elemento abbia un proprietario, ad eccezione della radice del modello. La radice del modello è di tipo `IModel`, che è un tipo di `IPackage`.
 
- Se si sta creando un elemento che verrà visualizzato in un diagramma specifico, ad esempio il diagramma corrente dell'utente, è necessario in genere crearlo nel pacchetto che è collegato a tale diagramma. Esempio:
+ Se si sta creando un elemento che verrà visualizzato in un diagramma specifico, ad esempio il diagramma corrente dell'utente, è necessario in genere crearlo nel pacchetto che è collegato a tale diagramma. Ad esempio:
 
 ```
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
@@ -43,7 +43,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 
  In questa tabella è riepilogata le proprietà di elementi del modello comuni:
 
-|Elemento da creare|Owner|
+|Elemento da creare|Proprietario|
 |---------------------------|-----------|
 |`IActor, IUseCase, IComponent, IClass, IInterface, IEnumeration`<br /><br /> `IActivity, IInteraction`|`IPackage, IModel`|
 |`IAttribute, IOperation`|`IClass, IInterface`|
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|
 
 ### <a name="invoke-the-create-method-on-the-owner"></a>Richiamare il metodo di creazione sul proprietario
- Il nome del metodo è nel formato: `Create`*tipoproprietario* `()`. Esempio:
+ Il nome del metodo è nel formato seguente: `Create` *tipoProprietario* `()` . Ad esempio:
 
 ```
 IUseCase usecase1 = linkedPackage.CreateUseCase();
@@ -93,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
 
 3. Impostare le proprietà della relazione, ad esempio il relativo nome.
 
-     Esempio:
+     Ad esempio:
 
     ```
     IAssociation association = subject.Package.CreateAssociation(subject, observer);
     association .Name = "Observes";
     ```
 
-4. Impostare le proprietà di ogni classe della relazione. Esistono sempre due `MemberEnds`. Esempio:
+4. Impostare le proprietà di ogni classe della relazione. Esistono sempre due `MemberEnds`. Ad esempio:
 
     ```
     association .MemberEnds[0].Name = "subject";   // role name

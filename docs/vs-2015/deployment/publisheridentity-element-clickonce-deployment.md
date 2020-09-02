@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento publisherIdentity (distribuzione ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157637"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (distribuzione ClickOnce)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;elemento publisherIdentity (distribuzione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Contiene informazioni sull'editore che ha firmato questo manifesto della distribuzione.  
@@ -39,12 +39,12 @@ Contiene informazioni sull'editore che ha firmato questo manifesto della distrib
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `publisherIdentity` elemento è obbligatorio per manifesti firmati. La tabella seguente illustra gli attributi di `publisherIdentity` supportato dall'elemento.  
+ L' `publisherIdentity` elemento è obbligatorio per i manifesti firmati. La tabella seguente illustra gli attributi supportati dall' `publisherIdentity` elemento.  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
-|`name`|Richiesto. Descrive l'identità dell'entità pubblicata l'applicazione.|  
-|`issuerKeyHash`|Richiesto. Contiene l'hash SHA-1 della chiave pubblica dell'autorità di certificazione.|  
+|`name`|Obbligatorio. Descrive l'identità della parte che ha pubblicato l'applicazione.|  
+|`issuerKeyHash`|Obbligatorio. Contiene l'hash SHA-1 della chiave pubblica dell'autorità emittente del certificato.|  
   
 #### <a name="parameters"></a>Parametri  
   
@@ -52,7 +52,7 @@ Contiene informazioni sull'editore che ha firmato questo manifesto della distrib
   
 ## <a name="exceptions"></a>Eccezioni  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="requirements"></a>Requisiti  
   

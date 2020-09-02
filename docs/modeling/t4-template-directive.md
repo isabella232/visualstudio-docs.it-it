@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591840"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 
-Un modello di testo T4 di Visual Studio inizia in genere con una direttiva `template`, che specifica come deve essere elaborato il modello. Un modello di testo e qualsiasi file in esso incluso non devono contenere più di una direttiva template.
+Un modello di testo T4 di Visual Studio in genere inizia con una `template` direttiva che specifica come deve essere elaborato il modello. Un modello di testo e qualsiasi file in esso incluso non devono contenere più di una direttiva template.
 
 Per una panoramica generale sulla scrittura di modelli di testo, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
@@ -52,7 +52,7 @@ Valori validi:
 
 "", la lingua inglese, ovvero l'impostazione predefinita.
 
-Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per ulteriori informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per altre informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
 L'attributo Culture specifica le impostazioni cultura da utilizzare quando un blocco di espressione viene convertito in testo.
 
@@ -96,7 +96,7 @@ Se si imposta il valore di questo attributo su `true`, viene aggiunta una propri
 
 Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile ai [modelli della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ma non ai modelli in fase di [esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Quando `hostspecific` viene `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
+Quando `hostspecific` è `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,7 +132,7 @@ Valori validi:
 
 `VB`
 
-L'attributo `language` specifica la lingua ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) da usare per il codice sorgente nei blocchi di istruzione e di espressione. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
+L' `language` attributo specifica la lingua ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) da usare per il codice sorgente nei blocchi di istruzione e di espressione. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
 
 Ad esempio:
 

@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04c6415fed131abc5a102f6ec15c69e33f21fd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592347"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
-**XML Schema Explorer** è integrato con Microsoft Visual Studio e l'editor XML per consentire l'utilizzo di schemi XSD (XML Schema Definition Language). Quando si apre un file di XML Schema, il nodo del **set di schemi** viene visualizzato in **XML Schema Explorer**. Tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione, nonché tutti i file a cui viene fatto riferimento tramite un'istruzione `include` o `import`, vengono visualizzati anche in **XML Schema Explorer**.
+**XML Schema Explorer** è integrato con Microsoft Visual Studio e l'editor XML per consentire l'utilizzo di schemi XSD (XML Schema Definition Language). Quando si apre un file di XML Schema, il nodo del **set di schemi** viene visualizzato in **XML Schema Explorer**. Tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione, nonché tutti i file a cui viene fatto riferimento tramite `include` un' `import` istruzione o, vengono visualizzati anche in **XML Schema Explorer**.
 
 **XML Schema Explorer** consente di eseguire le operazioni seguenti:
 
@@ -45,7 +45,7 @@ ms.locfileid: "75592347"
 
 - È possibile accedere a **XML Schema Explorer** da un file con *estensione VB* che dispone di un Visual Basic valore letterale XML associato a un file *xsd* . Per visualizzare il set di schemi in **XML Schema Explorer**, fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o su un'importazione di spazi dei nomi XML e selezionare il comando **Mostra in Esplora schema** . Per ulteriori informazioni, vedere [integrazione di valori letterali XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
-## <a name="tree-view"></a>Visualizzazione albero
+## <a name="tree-view"></a>Visualizzazione ad albero
 In **XML Schema Explorer** vengono visualizzate le informazioni sul set di schemi precompilate in una struttura ad albero. La struttura ad albero è organizzata come segue:
 
 - Al livello principale è presente il nodo del set di schemi.

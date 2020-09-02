@@ -13,38 +13,38 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0515e5905a18db0979b30f74a61ddc19dd2a27a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197482"
 ---
 # <a name="thread-properties-dialog-box"></a>Finestra di dialogo Proprietà thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilizzare questa finestra di dialogo per ulteriori informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un [visualizzazione thread](../debugger/threads-view.md) finestra, oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare qualsiasi nodo di thread nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
+Usare questa finestra di dialogo per trovare altre informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una finestra [visualizzazione thread](../debugger/threads-view.md) oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare un nodo thread nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .  
   
- Il **generale** scheda è l'unico visualizzato. Nei sistemi operativi Windows 98 e Windows 95, una versione modificata di questa scheda viene visualizzata.  
+ La scheda **generale** è l'unica scheda visualizzata. Nei sistemi operativi Windows 98 e Windows 95 viene visualizzata una versione modificata di questa scheda.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Scheda Generale, finestra di dialogo Proprietà thread](../debugger/general-tab-thread-properties-dialog-box.md)  
- Usare questa finestra di dialogo per ottenere maggiori informazioni sul thread selezionato.  
+ Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni sul thread selezionato.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Finestra di dialogo Ricerca thread](../debugger/thread-search-dialog-box.md)  
- Utilizzato per individuare il nodo per un thread specifico nella visualizzazione thread.  
+ Utilizzato per trovare il nodo per un thread specifico nella visualizzazione thread.  
   
- [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.  
+ [Riferimenti per Spy++](../debugger/spy-increment-reference.md)  
+ Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.  
   
- [La ricerca di un Thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+ [Ricerca di un thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Viene illustrato come trovare un thread specifico nella visualizzazione thread.  
   
  [Visualizzazione Thread](../debugger/threads-view.md)  
- Consente di visualizzare una visualizzazione albero di thread attivi.  
+ Consente di visualizzare una visualizzazione albero dei thread attivi.  
   
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
+ Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.  
   
- [Uso di Spy++](../debugger/using-spy-increment.md)  
+ [Utilizzo di Spy++](../debugger/using-spy-increment.md)  
  Introduce lo strumento Spy + + e spiega come può essere usato.

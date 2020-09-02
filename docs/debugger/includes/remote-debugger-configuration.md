@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149210"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312100"
 ---
 1. Nel computer remoto individuare e avviare il **debugger remoto** dal menu **Start** . 
    
@@ -28,7 +28,7 @@ ms.locfileid: "68149210"
    
 1. La prima volta che si avvia il debugger remoto (o prima di averlo configurato), viene visualizzata la finestra di dialogo **configurazione debug remoto** .  
   
-    Configurazione del(../media/remotedebuggerconfwizardpage.png "debugger") remoto ![configurazione del debugger remoto]  
+    ![Configurazione del debugger remoto](../media/remotedebuggerconfwizardpage.png "Configurazione del debugger remoto")  
   
 1. Se l'API per servizi Web Windows non è installata, che si verifica solo in Windows Server 2008 R2, selezionare il pulsante **Installa** .  
   
@@ -38,7 +38,7 @@ ms.locfileid: "68149210"
   
 1. Al termine della configurazione, viene visualizzata la finestra **debugger remoto** .
   
-    Finestra debugger remoto ![finestra](../media/remotedebuggerwindow.png "debugger remoto")
+    ![Finestra del debugger remoto](../media/remotedebuggerwindow.png "Finestra del debugger remoto")
   
     Il debugger remoto è ora in attesa di una connessione. Usare il nome del server e il numero di porta visualizzato per impostare la configurazione della connessione remota in Visual Studio.  
   

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646143"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Richiamo della trasformazione del testo in un'estensione VS
@@ -140,8 +140,8 @@ Sample text.
  È possibile passare i valori da un modello di testo tramite una classe di parametri derivata da <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Argomenti correlati
- Per generare testo da un modello di testo pre-elaborato: chiamare il metodo `TransformText()` della classe generata. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Per generare testo da un modello di testo pre-elaborato: chiamare il `TransformText()` metodo della classe generata. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Per generare testo al di fuori di un'estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]: definire un host personalizzato. Per ulteriori informazioni, vedere [elaborazione di modelli di testo tramite un host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Per generare testo all'esterno di un' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione: definire un host personalizzato. Per ulteriori informazioni, vedere [elaborazione di modelli di testo tramite un host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
  Per generare codice sorgente che può essere compilato ed eseguito in un secondo momento, chiamare il metodo [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) di [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

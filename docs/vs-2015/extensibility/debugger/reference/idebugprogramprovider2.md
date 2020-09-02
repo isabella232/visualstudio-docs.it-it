@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a3ccac5dc60c10983d3b1a33978196fad5197d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146315"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa interfaccia registrata consente il debug di sessione manager (SDM) per ottenere informazioni sui programmi che sono stati "pubblicati" tramite il [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interfaccia.  
+Questa interfaccia registrata consente a gestione debug sessione (SDM) di ottenere informazioni sui programmi che sono stati "pubblicati" tramite l'interfaccia [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -31,27 +31,27 @@ IDebugProgramProvider2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Il motore di debug (DE) implementa questa interfaccia per fornire informazioni sui programmi in fase di debug. Questa interfaccia viene registrata nella sezione del Registro di sistema usando la metrica DE `metricProgramProvider`, come descritto in [helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ Il motore di debug (DE) implementa questa interfaccia per fornire informazioni sui programmi di cui è in corso il debug. Questa interfaccia è registrata nella sezione DE del registro di sistema usando la metrica `metricProgramProvider` , come descritto in [Helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Chiamare COM `CoCreateInstance` utilizzabile con il `CLSID` del provider di programma che viene ottenuto dal Registro di sistema. Vedere l'esempio.  
+ Chiamare `CoCreateInstance` la funzione com con il `CLSID` del provider di programmi ottenuto dal registro di sistema. Vedere l'esempio.  
   
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Ottiene informazioni sui programmi in esecuzione, filtrate in modi diversi.|  
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Ottiene un nodo di programma, dato un ID processo specifico.|  
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Stabilisce un callback per il controllo degli eventi del provider associati tipi specifici di processi.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Consente di stabilire le impostazioni locali per tutte le risorse specifiche della lingua necessarie per la Germania.|  
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Ottiene informazioni sui programmi in esecuzione, filtrati in diversi modi.|  
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Ottiene un nodo di programma, in base a un ID di processo specifico.|  
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Stabilisce un callback da controllare per gli eventi del provider associati a tipi specifici di processi.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Stabilisce le impostazioni locali per tutte le risorse specifiche della lingua richieste da DE.|  
   
-## <a name="remarks"></a>Note  
- In genere, un processo Usa questa interfaccia per scoprire i programmi in esecuzione in tale processo.  
+## <a name="remarks"></a>Osservazioni  
+ In genere, un processo usa questa interfaccia per individuare i programmi in esecuzione in tale processo.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

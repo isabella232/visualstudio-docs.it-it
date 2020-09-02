@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591684"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Elaborare modelli di testo tramite un host personalizzato
@@ -44,16 +44,16 @@ string output = engine.ProcessTemplate(templateString, host);
 
  L'applicazione deve trovare e fornire il modello e deve gestire l'output.
 
- Nel parametro `host` è necessario fornire una classe che implementi [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Questa viene richiamata dal motore.
+ Nel `host` parametro è necessario fornire una classe che implementi [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Questa viene richiamata dal motore.
 
  L'host deve essere in grado di registrare errori, risolvere riferimenti agli assembly e ai file di inclusione, fornire un dominio dell'applicazione nel quale il modello possa essere eseguito e possa chiamare il processore adatto per ciascuna direttiva.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> è definito in **Microsoft. VisualStudio. TextTemplating.\*. 0. dll**e [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) è definito in **Microsoft. VisualStudio. TextTemplating. Interfaces.\*. 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> è definito in **Microsoft. VisualStudio. TextTemplating. \*.0.dll**e [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) è definito in **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0.dll**.
 
-## <a name="in-this-section"></a>In questa sezione
- [Procedura dettagliata: Creazione di un host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md) viene illustrato come creare un host del modello di testo personalizzato che rende disponibile la funzionalità del modello di testo all'esterno di Visual Studio.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Procedura dettagliata: creazione di un host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md) Viene illustrato come creare un host del modello di testo personalizzato che rende disponibile la funzionalità del modello di testo all'esterno di Visual Studio.
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Informazioni di riferimento
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Sezioni correlate

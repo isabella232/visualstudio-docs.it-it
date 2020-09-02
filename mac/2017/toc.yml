@@ -1,0 +1,150 @@
+- name: Visual Studio per Mac
+  href: /visualstudio/mac/
+- name: Presentazione dell'IDE
+  href: ide-tour.md
+- name: Installazione
+  href: installation.md
+  items:
+    - name: Installare e usare un'istanza protetta da un firewall o un proxy
+      href: /visualstudio/mac/install-behind-a-firewall-or-proxy-server
+    - name: Installare una versione di anteprima
+      href: /visualstudio/mac/install-preview
+    - name: Aggiorna
+      href: /visualstudio/mac/update
+    - name: Eseguire l'aggiornamento a Visual Studio 2019 per Mac
+      href: /visualstudio/mac/update-vsmac-8.0
+    - name: Disinstalla
+      href: /visualstudio/mac/uninstall
+- name: Account utente
+  href: /visualstudio/mac/user-accounts
+  items:
+    - name: Accesso
+      href: /visualstudio/mac/signing-in
+    - name: Abilitare la sottoscrizione
+      href: /visualstudio/mac/enable-subscription
+- name: Personalizzazione dell'IDE
+  href: /visualstudio/mac/customizing-the-ide
+  items:
+    - name: Estensione di Visual Studio per Mac
+      href: /visualstudio/mac/extending-visual-studio-mac
+- name: Progetti e soluzioni
+  href: /visualstudio/mac/projects-and-solutions
+  items:
+    - name: Creazione di nuovi progetti
+      href: /visualstudio/mac/create-new-projects
+    - name: Aggiunta e rimozione di elementi di progetto
+      href: /visualstudio/mac/add-and-remove-project-items
+    - name: Gestione delle proprietà di soluzioni e progetti
+      href: /visualstudio/mac/managing-solutions-and-project-properties
+    - name: Gestione dei riferimenti in un progetto
+      href: /visualstudio/mac/managing-references-in-a-project
+      items:
+        - name: Procedura dettagliata - Inserimento di un pacchetto NuGet nel progetto
+          href: /visualstudio/mac/nuget-walkthrough
+    - name: Gestione delle risorse delle app
+      href: /visualstudio/mac/managing-app-resources
+    - name: 'Procedura: Aprire più soluzioni o istanze'
+      href: /visualstudio/mac/open-multiple-solutions
+- name: Editor standard
+  href: /visualstudio/mac/source-editor
+  items:
+    - name: Refactoring
+      href: /visualstudio/mac/refactoring
+    - name: Commenti
+      href: /visualstudio/mac/comments
+    - name: Comportamento dell'editor
+      href: /visualstudio/mac/editor-behavior
+    - name: Commenti dell'attività
+      href: /visualstudio/mac/task-comments
+    - name: Frammenti di codice
+      href: /visualstudio/mac/snippets
+    - name: Selezione blocco
+      href: /visualstudio/mac/block-selection
+    - name: Temi dell'editor
+      href: /visualstudio/mac/editor-themes
+    - name: EditorConfig
+      href: /visualstudio/mac/editorconfig
+    - name: Tasti di scelta rapida comuni
+      href: /visualstudio/mac/keyboard-shortcuts
+- name: Debug
+  href: /visualstudio/mac/debugging
+  items:
+    - name: Visualizzazioni dati
+      href: /visualstudio/mac/data-visualizations
+- name: Compilazione e creazione di build
+  href: /visualstudio/mac/compiling-and-building
+  items:
+    - name: Compilazione e pulizia di progetti e soluzioni
+      href: /visualstudio/mac/building-and-cleaning-projects-and-solutions
+    - name: Azioni di compilazione
+      href: /visualstudio/mac/build-actions
+    - name: Personalizzazione del sistema di compilazione
+      href: /visualstudio/mac/customizing-build-system
+    - name: Configurazioni
+      href: /visualstudio/mac/configurations
+      items:
+        - name: Creare e modificare le configurazioni
+          href: /visualstudio/mac/create-and-edit-configurations
+- name: Controllo della versione
+  href: /visualstudio/mac/version-control
+  items:
+    - name: Controllo della versione di Team Foundation
+      href: /visualstudio/mac/tf-version-control
+    - name: Configurazione di un repository Git
+      href: /visualstudio/mac/set-up-git-repository
+    - name: Uso di Git
+      href: /visualstudio/mac/working-with-git
+    - name: Impostazione di un repository Subversion
+      href: /visualstudio/mac/set-up-subversion-repository
+    - name: Uso di Subversion
+      href: /visualstudio/mac/working-with-subversion
+- name: Distribuzione app Web
+  href: /visualstudio/mac/web-app-deployment
+  items:
+    - name: Eseguire la pubblicazione nel servizio app di Azure
+      href: /visualstudio/mac/publish-app-svc
+    - name: Pubblicare in una cartella
+      href: /visualstudio/mac/publish-folder
+- name: Carichi di lavoro
+  href: /visualstudio/mac/workloads
+  items:
+    - name: ASP.NET Core
+      href: /visualstudio/mac/asp-net-core
+      items:
+        - name: Razor
+          href: /visualstudio/mac/razor
+        - name: JavaScript
+          href: /visualstudio/mac/javascript
+    - name: Azure
+      href: /visualstudio/mac/azure-workload
+      items:
+        - name: Introduzione alle funzioni di Azure
+          href: /visualstudio/mac/azure-functions
+        - name: 'Esercitazione: Funzioni di Azure'
+          href: /visualstudio/mac/azure-functions-lab
+        - name: Servizi connessi
+          href: /visualstudio/mac/connected-services
+    - name: Sviluppo di giochi con Unity
+      href: /visualstudio/mac/unity-tools
+      items:
+        - name: Configurazione
+          href: /visualstudio/mac/setup-vsmac-tools-unity
+        - name: Uso degli strumenti di Unity
+          href: /visualstudio/mac/using-vsmac-tools-unity
+        - name: Uso di .NET 4.x in Unity
+          href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
+        - name: Registro delle modifiche
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
+    - name: App per dispositivi mobili con Xamarin
+      href: /visualstudio/mac/xamarin
+- name: Accessibilità
+  href: /visualstudio/mac/accessibility
+- name: Risoluzione dei problemi
+  href: /visualstudio/mac/troubleshooting
+  items:
+    - name: Analisi utilizzo software di Visual Studio
+      href: /visualstudio/mac/visual-studio-experience-improvement-program
+    - name: Segnalare un problema
+      href: /visualstudio/mac/report-a-problem
+    - name: 'Risoluzione dei problemi: Errori durante il recupero di informazioni sugli aggiornamenti'
+      href: updater-troubleshooting.md

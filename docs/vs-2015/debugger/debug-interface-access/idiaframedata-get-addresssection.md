@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata | Microsoft Docs
+title: 'IDiaFrameData:: get_addressSection | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5e8f35961813ab39a114d3dd733f415056eb9d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197534"
 ---
-# <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
+# <a name="idiaframedataget_addresssection"></a>IDiaFrameData::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera la parte della sezione dell'indirizzo del codice per il frame.  
@@ -35,7 +35,7 @@ HRESULT get_addressSection ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce la parte della sezione dell'indirizzo del codice per il frame.  
+ out Restituisce la parte della sezione dell'indirizzo del codice per il frame.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

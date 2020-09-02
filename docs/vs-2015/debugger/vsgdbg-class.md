@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 053647d48324f056148375bae9268b997ba8721f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145700"
 ---
 # <a name="vsgdbg-class"></a>Classe VsgDbg
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rappresenta un'interfaccia per il controllo a livello di codice del componente in-app di diagnostica della grafica.  
+Rappresenta un'interfaccia per il controllo a livello di codice del componente in-app della diagnostica grafica.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -27,28 +27,28 @@ Rappresenta un'interfaccia per il controllo a livello di codice del componente i
 class VsgDbg;  
 ```  
   
-## <a name="members"></a>Members  
- Il `VsgDbg` classe supporta i seguenti membri.  
+## <a name="members"></a>Membri  
+ La `VsgDbg` classe supporta i membri seguenti.  
   
 ### <a name="public-constructors"></a>Costruttori pubblici  
   
-|Nome|DESCRIZIONE|  
+|Nome|Descrizione|  
 |----------|-----------------|  
-|[VsgDbg::VsgDbg (Costruttore)](../debugger/vsgdbg-vsgdbg-constructor.md)|Costruisce un'istanza di `VsgDbg` classe e, facoltativamente, Prepara il componente in-app di diagnostica della grafica per acquisire e registrare le informazioni grafiche attivamente.|  
-|[VsgDbg::~VsgDbg (distruttore)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)|Elimina un'istanza di `VsgDbg` classe.|  
+|[VsgDbg::VsgDbg (costruttore)](../debugger/vsgdbg-vsgdbg-constructor.md)|Costruisce un'istanza della `VsgDbg` classe e, facoltativamente, prepara il componente in-app della diagnostica della grafica per acquisire e registrare attivamente le informazioni grafiche.|  
+|[VsgDbg::~VsgDbg (distruttore)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)|Elimina un'istanza della `VsgDbg` classe.|  
   
 ### <a name="public-methods"></a>Metodi pubblici  
   
 |Nome|Descrizione|  
 |----------|-----------------|  
 |[AddMessage](../debugger/addmessage.md)|Aggiunge un messaggio personalizzato alla diagnostica della grafica HUD (Head-Up Display).|  
-|[BeginCapture](../debugger/begincapture.md)|Inizia un intervallo di acquisizione che termina con `EndCapture`.|  
+|[BeginCapture](../debugger/begincapture.md)|Inizia un intervallo di acquisizione che termina con `EndCapture` .|  
 |[CaptureCurrentFrame](../debugger/capturecurrentframe.md)|Acquisisce il resto del frame corrente nel file di log di grafica.|  
 |[Copia (acquisizione a livello di codice)](../debugger/copy-programmatic-capture.md)|Copiare il contenuto del log di grafica (.vsglog) attivo in un nuovo file.|  
 |[EndCapture](../debugger/endcapture.md)|Termina un intervallo di acquisizione avviato con `BeginCapture`.|  
-|[Init](../debugger/init.md)|Prepara il componente in-app di diagnostica della grafica per acquisire e registrare le informazioni grafiche attivamente.|  
-|[ToggleHUD](../debugger/togglehud.md)|Attiva o disattiva la sovrimpressione HUD di diagnostica della grafica o disattivare.|  
+|[Init](../debugger/init.md)|Prepara il componente in-app della diagnostica della grafica per acquisire e registrare attivamente le informazioni grafiche.|  
+|[ToggleHUD](../debugger/togglehud.md)|Attiva o disattiva la sovrimpressione HUD di diagnostica della grafica.|  
 |[UnInit](../debugger/uninit.md)|Finalizza il file di log di grafica, lo chiude e libera le risorse utilizzate durante la registrazione attiva delle informazioni grafiche da parte dell'applicazione.|  
   
-## <a name="remarks"></a>Note  
- Il `VsgDbg` classe rappresenta un'interfaccia che è possibile usare per controllare le funzionalità di diagnostica della grafica a livello di codice. È possibile usare alcune funzionalità anche quando si sta attivamente acquisire e registrare le informazioni grafiche; Ciò include la `AddMessage` funzione membro e `ToggleHUD` funzione membro. Le altre funzioni membro preparare il componente in-app di diagnostica della grafica per avviare o arrestare l'acquisizione di informazioni grafiche attivo oppure devono essere chiamate mentre l'app è attivamente acquisire e registrare le informazioni grafiche in un file di log di grafica.
+## <a name="remarks"></a>Osservazioni  
+ La `VsgDbg` classe rappresenta un'interfaccia che è possibile usare per controllare le funzionalità di diagnostica della grafica a livello di codice. È possibile usare alcune funzionalità anche quando non si acquisisce e si registrano attivamente le informazioni grafiche; sono incluse la `AddMessage` funzione membro e la `ToggleHUD` funzione membro. Le altre funzioni membro preparano il componente in-app della diagnostica della grafica per avviare o arrestare l'acquisizione attiva delle informazioni grafiche oppure deve essere chiamato mentre l'app acquisisce e registra attivamente le informazioni grafiche in un file di log di grafica.

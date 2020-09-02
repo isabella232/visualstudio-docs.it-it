@@ -1,5 +1,5 @@
 ---
-title: Panoramica di diagnostica della grafica | Microsoft Docs
+title: Panoramica di Diagnostica della grafica | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc0d0bf4efd8c30d874a24e94d3933d2eef713a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186558"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica grafica di Visual Studio
@@ -30,12 +30,12 @@ ms.locfileid: "68186558"
  La diagnostica grafica supporta le app che usano Direct3D 12, Direct3D 11 e Direct3D 10 e fornisce supporto limitato per le app che usano Direct2D. Non supporta le app che usano versioni precedenti di Direct3D, DirectDraw o altre API grafiche.
 
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 e Direct3D 12
- Windows 10 è disponibile la prossima versione di Direct3D, *Direct3D 12*, che presenta differenze sostanziali da Direct3D 10 e Direct3D 11. Queste differenze riportano DirectX in allineamento con l'hardware grafico moderno, consentendo di sfruttarne appieno il potenziale. Introducono inoltre notevoli modifiche alle API e comportano maggiori responsabilità per i programmatori in merito alla gestione dei conflitti e della durata delle risorse. Disporre di strumenti di debug di qualità elevata è essenziale per aiutare i programmatori di grafica in questa transizione, pertanto Diagnostica grafica di Visual Studio 2015 offre il supporto nativo per Direct3D12. Nonostante le differenze, Diagnostica della grafica con 12 Direct3D offre le stesse funzionalità di Diagnostica della grafica con Direct3D 11.2, con l'attuale eccezione della funzionalità Analisi dei frame. Presto verranno aggiunti il supporto per l'analisi dei frame 12 Direct3D e nuovi strumenti di diagnostica per la risoluzione dei nuovi tipi di bug che è possibile riscontrare in Direct3D 12.
+ Windows 10 introduce la versione successiva di Direct3D, *Direct3D 12*, che è sostanzialmente diversa da Direct3D 10 e Direct3D 11. Queste differenze riportano DirectX in allineamento con l'hardware grafico moderno, consentendo di sfruttarne appieno il potenziale. Introducono inoltre notevoli modifiche alle API e comportano maggiori responsabilità per i programmatori in merito alla gestione dei conflitti e della durata delle risorse. Disporre di strumenti di debug di qualità elevata è essenziale per aiutare i programmatori di grafica in questa transizione, pertanto Diagnostica grafica di Visual Studio 2015 offre il supporto nativo per Direct3D12. Nonostante le differenze, Diagnostica della grafica con 12 Direct3D offre le stesse funzionalità di Diagnostica della grafica con Direct3D 11.2, con l'attuale eccezione della funzionalità Analisi dei frame. Presto verranno aggiunti il supporto per l'analisi dei frame 12 Direct3D e nuovi strumenti di diagnostica per la risoluzione dei nuovi tipi di bug che è possibile riscontrare in Direct3D 12.
 
  Windows 10 mantiene inoltre il supporto per le versioni precedenti di Direct3D, oltre che per i giochi e le applicazioni che si basano su di esse. Diagnostica della grafica in Visual Studio 2015 continua a supportare Direct3D 10 e 11 Direct3D 10 in Windows e in Windows 8.1.
 
 ### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 e Direct3D 11.2
- In [!INCLUDE[win81](../includes/win81-md.md)], DirectX 11.2 introduce nuove funzionalità che includono supporto per l'acquisizione di informazioni grafiche tramite il relativo runtime. [!INCLUDE[win81](../includes/win81-md.md)] Usa la nuova acquisizione basata su runtime, noto come *acquisizione affidabile*, ovvero esclusivamente per tutte le versioni di DirectX che [!INCLUDE[win81](../includes/win81-md.md)] supporta. L'acquisizione affidabile supporta anche nuove funzionalità di Direct3D 11.2.
+ In [!INCLUDE[win81](../includes/win81-md.md)], DirectX 11.2 introduce nuove funzionalità che includono supporto per l'acquisizione di informazioni grafiche tramite il relativo runtime. [!INCLUDE[win81](../includes/win81-md.md)] Usa la nuova acquisizione basata su runtime, nota come *acquisizione affidabile*, esclusivamente per tutte le versioni di DirectX [!INCLUDE[win81](../includes/win81-md.md)] supportate da. L'acquisizione affidabile supporta anche nuove funzionalità di Direct3D 11.2.
 
 ### <a name="limited-direct2d-support"></a>Supporto Direct2D limitato
  Poiché Direct2D è un'API modalità utente basata su Direct3D, è possibile usare la diagnostica della grafica per agevolare il debug dei problemi di rendering nelle app che usano Direct2D. Tuttavia, poiché vengono registrati solo gli eventi Direct3D, anziché gli eventi Direct2D di livello superiore, gli eventi Direct2D non verranno visualizzati nell'elenco eventi grafici. Inoltre, poiché la relazione tra gli eventi Direct2D e gli eventi Direct3D risultanti non è sempre chiara, usare la diagnostica grafica per eseguire il debug dei problemi di rendering nelle app che usano Direct2D non è semplice. È comunque possibile usare la diagnostica della grafica per ottenere informazioni sui problemi di rendering di livello inferiore nelle app che usano Direct2D.
@@ -72,12 +72,12 @@ ms.locfileid: "68186558"
 
  Questa figura mostra un layout tipico di strumenti in Analizzatore grafica.
 
- ![Tutti gli elementi grafici finestre del debugger](../debugger/media/graphicsdebuggerwindows.png "GraphicsDebuggerWindows")
+ ![Tutte le finestre debugger grafica](../debugger/media/graphicsdebuggerwindows.png "GraphicsDebuggerWindows")
 
 ### <a name="the-graphics-toolbar-graphics-analyzer"></a>Barra degli strumenti di grafica (Analizzatore grafica)
  La barra degli strumenti di grafica consente di accedere rapidamente alle finestre dello strumento Analizzatore grafica.
 
- ![La barra degli strumenti di grafica in modalità diagnostica della grafica](../debugger/media/vsg-toolbar.png "vsg_toolbar")
+ ![Barra degli strumenti grafica in modalità diagnostica della grafica](../debugger/media/vsg-toolbar.png "vsg_toolbar")
 
 ### <a name="graphics-log-document"></a>Documento di log della grafica
  Il documento di log della grafica è la finestra degli strumenti più importante di Analizzatore grafica. Questa finestra rappresenta tutti i frame acquisiti eseguendo l'app in Diagnostica grafica. Da qui è possibile selezionare un altro frame da esaminare o selezionare uno specifico pixel da esaminare con lo strumento Cronologia pixel. L'immagine del buffer frame mostrata in questo documento cambia in modo da riflettere l'evento attualmente selezionato, consentendo di visualizzarne l'effetto nel tempo sul buffer frame.
@@ -87,14 +87,14 @@ ms.locfileid: "68186558"
 ### <a name="event-list"></a>Elenco eventi
  Gli eventi di grafica contrassegnano ogni chiamata API Direct3D e ogni evento definito dall'utente.
 
- Il [elenco eventi](../debugger/graphics-event-list.md) Mostra tutti gli eventi di grafica registrati durante il frame in esame. Per individuare più facilmente gli elementi più importanti, è possibile visualizzare l'elenco eventi in due modi: in ordine gerarchico, con le modifiche dello stato recenti sotto la chiamata di disegno successiva, oppure come sequenza temporale. Inoltre, gli eventi sono contraddistinti da colori diversi in base alla coda di appartenenza ed è possibile filtrare l'elenco per includere solo gli eventi a cui si è interessati.
+ L' [elenco di eventi](../debugger/graphics-event-list.md) Mostra tutti gli eventi di grafica registrati durante il frame che si sta esaminando. Per individuare più facilmente gli elementi più importanti, è possibile visualizzare l'elenco eventi in due modi: in ordine gerarchico, con le modifiche dello stato recenti sotto la chiamata di disegno successiva, oppure come sequenza temporale. Inoltre, gli eventi sono contraddistinti da colori diversi in base alla coda di appartenenza ed è possibile filtrare l'elenco per includere solo gli eventi a cui si è interessati.
 
  Quando si seleziona un evento nell'elenco, gli altri strumenti di Analisi grafica riflettono lo stato del frame al momento dell'evento. In questo modo è possibile vedere l'effetto di qualsiasi evento nella GPU. Ad esempio, si può vedere l'effetto immediato di qualsiasi chiamata di disegno sul buffer frame, anche se viene nascosto dalle chiamate di disegno successive. Alcuni eventi dispongono anche di collegamenti ipertestuali, che è possibile seguire per accedere a maggiori dettagli sui parametri o sugli oggetti risorsa correlati.
 
 ### <a name="pipeline-stages"></a>Fasi pipeline
  Ogni chiamata di disegno dell'app passa attraverso la pipeline grafica fornita da Direct3D. In ogni fase della pipeline, l'output della fase precedente viene trasformato da un piccolo programma denominato shader e passato alla fase successiva fino al rendering finale sullo schermo. Molti errori di rendering si verificano al confine tra una fase della pipeline e l'altra, quando il formato di output è diverso rispetto a quanto previsto dalla fase successiva o semplicemente quando una qualsiasi fase genera risultati non corretti. In genere si ottengono solo i risultati finali così come verrebbero visualizzati sullo schermo e non è facile individuare il punto della pipeline in cui si è verificato l'errore.
 
- Il [fasi Pipeline](../debugger/graphics-pipeline-stages.md) finestra Visualizza i risultati di ogni fase in modo indipendente, in modo da poter determinare più facilmente la fase un problema di rendering viene innanzitutto visualizzato in. Dopo aver individuato la fase, si può possibile avviare il debug del relativo shader direttamente dalla finestra Fasi pipeline.
+ La finestra [fasi pipeline](../debugger/graphics-pipeline-stages.md) Visualizza il risultato di ogni fase in modo indipendente, in modo che sia possibile individuare più facilmente la fase in cui un problema di rendering viene visualizzato per primo. Dopo aver individuato la fase, si può possibile avviare il debug del relativo shader direttamente dalla finestra Fasi pipeline.
 
 ### <a name="graphics-state"></a>Stato grafica
  Le operazioni di rendering dipendono da una serie di stati, in genere condivisi tra più oggetti. Molti tipi di problemi di rendering sono causati da uno stato non configurato correttamente.
@@ -104,17 +104,17 @@ ms.locfileid: "68186558"
 ### <a name="pixel-history"></a>Cronologia pixel
  Nelle scene complesse, non è raro che un pixel venga ombreggiato più volte in un singolo frame. A volte il colore precedente viene semplicemente sovrascritto, ma in alcuni casi i colori vengono combinati per ottenere effetti, come la trasparenza. Quando il risultato della combinazione dei colori non è quello desiderato, non è facile stabilire se il motivo è che uno dei colori è sbagliato o se il problema è dovuto al modo in cui sono stati combinati. In altri casi, un oggetto può sembrare mancante perché per qualche motivo il suo contributo al pixel è stato rifiutato.
 
- Il [cronologia Pixel](../debugger/graphics-pixel-history.md) finestra Visualizza la cronologia shader completa di ogni pixel del frame, compresi i contributi rifiutati. Per i contributi non rifiutati, mostra i risultati dello shader non elaborati e le modalità di combinazione di ogni nuovo colore con il precedente. Con queste informazioni, è molto più semplice individuare l'origine degli errori nei pixel che fondono risultati degli shader o determinare quando un oggetto di cui è stato eseguito il rendering manca perché il relativo contributo al pixel è stato erroneamente rifiutato.
+ La finestra [Cronologia pixel](../debugger/graphics-pixel-history.md) Visualizza la cronologia shader completa di ogni pixel nel frame, inclusi i contributi rifiutati. Per i contributi non rifiutati, mostra i risultati dello shader non elaborati e le modalità di combinazione di ogni nuovo colore con il precedente. Con queste informazioni, è molto più semplice individuare l'origine degli errori nei pixel che fondono risultati degli shader o determinare quando un oggetto di cui è stato eseguito il rendering manca perché il relativo contributo al pixel è stato erroneamente rifiutato.
 
 ### <a name="event-call-stack"></a>Stack di chiamate eventi
  Il codice dello shader non è l'unica fonte dei problemi di rendering in un'app Direct3D. A volte il codice sorgente dell'app passa un parametro errato o non configura Direct3D in modo corretto. Un tipo di errore che la funzionalità descritta in precedenza, Cronologia pixel, consente di individuare facilmente, è rappresentato dai casi in cui un oggetto sottoposto a rendering risulta mancante in quanto tutti i suoi pixel sono stati rifiutati. Questo tipo di errore si verifica in genere quando un'impostazione è configurata in modo non corretto, ad esempio quella che controlla la modalità di esecuzione del test di profondità. Normalmente, è possibile trovare l'errore nello stack di chiamate della chiamata di disegno dell'oggetto mancante.
 
- Il [Stack di chiamate eventi](../debugger/graphics-event-call-stack.md) finestra stack di chiamate completo di tutti gli eventi di grafica viene visualizzato nell'elenco eventi, che di passare all'App del codice sorgente e se sono disponibili informazioni di debug. Si tratta di uno strumento potente per seguire un errore dal punto in cui viene visualizzato per la prima volta, nella GPU, al punto in cui ha avuto origine nel codice sorgente dell'applicazione.
+ La finestra [stack di chiamate eventi](../debugger/graphics-event-call-stack.md) Visualizza lo stack di chiamate completo di ogni evento di grafica nell'elenco degli eventi e consente anche di passare al codice sorgente dell'app se sono disponibili informazioni di debug. Si tratta di uno strumento potente per seguire un errore dal punto in cui viene visualizzato per la prima volta, nella GPU, al punto in cui ha avuto origine nel codice sorgente dell'applicazione.
 
 ### <a name="object-table"></a>Tabella oggetti
  Ogni frame di cui l'app esegue il rendering è probabilmente supportato da centinaia o persino migliaia di oggetti risorsa. Questo include buffer e destinazioni di rendering, trame, buffer dei vertici, buffer degli indici, buffer generali e quasi tutto ciò che Direct3D considera un oggetto.
 
- Il [tabella oggetti](../debugger/graphics-object-table.md) Visualizza tutti gli oggetti che esistono al momento dell'evento di grafica selezionato nell'elenco di eventi. Poiché in un'app tipica gli oggetti sono per lo più trame, l'elenco eventi è ottimizzato per visualizzare immediatamente i dettagli pertinenti alle immagini. La colonna Tipo indica il tipo di oggetto presente in ogni riga, mentre la colonna Formato mostra il sottotipo o la versione dell'oggetto. Sono disponibili anche altri dettagli. Alcuni oggetti dispongono anche di collegamenti ipertestuali, che è possibile seguire per esaminare l'oggetto con un visualizzatore più specializzato, ad esempio di trame (si può visualizzare la trama come immagine) o di buffer (si può scegliere come il visualizzatore buffer analizza e mostra i byte non elaborati definendo il formato del buffer).
+ Nella [tabella oggetti](../debugger/graphics-object-table.md) vengono visualizzati tutti gli oggetti esistenti al momento dell'evento di grafica selezionato nell'elenco di eventi. Poiché in un'app tipica gli oggetti sono per lo più trame, l'elenco eventi è ottimizzato per visualizzare immediatamente i dettagli pertinenti alle immagini. La colonna Tipo indica il tipo di oggetto presente in ogni riga, mentre la colonna Formato mostra il sottotipo o la versione dell'oggetto. Sono disponibili anche altri dettagli. Alcuni oggetti dispongono anche di collegamenti ipertestuali, che è possibile seguire per esaminare l'oggetto con un visualizzatore più specializzato, ad esempio di trame (si può visualizzare la trama come immagine) o di buffer (si può scegliere come il visualizzatore buffer analizza e mostra i byte non elaborati definendo il formato del buffer).
 
 ### <a name="frame-analysis"></a>Analisi dei frame
  La grafica dell'app deve essere corretta e veloce, anche in dispositivi meno potenti come computer portatili con grafica integrata o telefoni cellulari. In più, deve essere di qualità elevata.
@@ -124,4 +124,4 @@ ms.locfileid: "68186558"
  Analisi dei frame, tuttavia, non è utile solo per la velocità: consente infatti anche di ottenere il massimo delle prestazioni e allo stesso tempo della qualità visiva. A volte un effetto costoso che sembra eccezionale su un display di grandi dimensioni non ha lo stesso impatto sul piccolo schermo di un telefono cellulare, dove un effetto più semplice potrebbe produrre risultati altrettanto buoni senza scaricare la batteria. Le modifiche automatiche e i benchmark forniti da Analisi grafica consente di trovare il giusto equilibrio per ogni app in un'ampia gamma di dispositivi.
 
 ## <a name="see-also"></a>Vedere anche
- [Strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md) [Debugger HLSL](../debugger/hlsl-shader-debugger.md)
+ [Debugger HLSL](../debugger/hlsl-shader-debugger.md) [dello strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md)

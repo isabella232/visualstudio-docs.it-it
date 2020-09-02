@@ -1,5 +1,5 @@
 ---
-title: Refactoring Estrai interfacciaC#() | Microsoft Docs
+title: Refactoring Estrai interfaccia (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667557"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactoring Estrai interfaccia (C#)
@@ -34,7 +34,7 @@ Estrai interfaccia è un'operazione di refactoring che fornisce un modo semplice
 
 ### <a name="to-use-extract-interface"></a>Per utilizzare Estrai interfaccia
 
-1. Creare un'applicazione console denominata `ExtractInterface`, quindi sostituire `Program` con il codice seguente
+1. Creare un'applicazione console denominata `ExtractInterface` e sostituirla `Program` con il codice seguente
 
     ```csharp
     // Invoke Extract Interface on ProtoA.
@@ -70,7 +70,7 @@ Estrai interfaccia è un'operazione di refactoring che fornisce un modo semplice
     }
     ```
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Questa funzionalità è accessibile solo quando il cursore è posizionato in una classe, uno struct o un'interfaccia contenente i membri che si desidera estrarre. Quando il cursore si trova in questa posizione, richiamare l'operazione di refactoring Estrai interfaccia.
 
  Quando si richiama l'interfaccia Extract in una classe o in uno struct, l'elenco basi e interfacce viene modificato in modo da includere il nuovo nome dell'interfaccia. Quando si richiama l'interfaccia Extract su un'interfaccia, l'elenco basi e interfacce non viene modificato.

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186999"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
@@ -57,21 +57,21 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Elemento facoltativo.<br /><br /> Specifica gli elementi `PropertyGroup` e `ItemGroup` del blocco di codice da valutare se le condizioni di tutti gli elementi `When` restituiscono `false`. In un elemento `Otherwise` può essere presente al massimo un elemento `Choose` ed è necessario che sia l'ultimo.|  
-|[When](../msbuild/when-element-msbuild.md)|Elemento obbligatorio.<br /><br /> Specifica un blocco di codice selezionabile dall'elemento `Choose`. In un elemento `When` possono essere presenti uno o più elementi `Choose`.|  
+|[In caso contrario](../msbuild/otherwise-element-msbuild.md)|Elemento facoltativo.<br /><br /> Specifica gli elementi `PropertyGroup` e `ItemGroup` del blocco di codice da valutare se le condizioni di tutti gli elementi `When` restituiscono `false`. In un elemento `Otherwise` può essere presente al massimo un elemento `Choose` ed è necessario che sia l'ultimo.|  
+|[Se](../msbuild/when-element-msbuild.md)|Elemento obbligatorio.<br /><br /> Specifica un blocco di codice selezionabile dall'elemento `Choose`. In un elemento `When` possono essere presenti uno o più elementi `Choose`.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Specifica il blocco di codice da eseguire se le condizioni di tutti gli elementi `When` restituiscono `false`.|  
+|[In caso contrario](../msbuild/otherwise-element-msbuild.md)|Specifica il blocco di codice da eseguire se le condizioni di tutti gli elementi `When` restituiscono `false`.|  
 |[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
-|[When](../msbuild/when-element-msbuild.md)|Specifica un blocco di codice selezionabile dall'elemento `Choose`.|  
+|[Se](../msbuild/when-element-msbuild.md)|Specifica un blocco di codice selezionabile dall'elemento `Choose`.|  
   
 ## <a name="remarks"></a>Osservazioni  
- Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Conditional Constructs](../msbuild/msbuild-conditional-constructs.md) (Costrutti condizionali).  
+ Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [costrutti condizionali](../msbuild/msbuild-conditional-constructs.md).  
   
 ## <a name="example"></a>Esempio  
  Nel progetto riportato di seguito l'elemento `Choose` viene usato per selezionare il set di valori delle proprietà da impostare negli elementi `When`. Se gli attributi `Condition` di entrambi gli elementi `When` restituiscono `false`, vengono impostati i valori delle proprietà dell'elemento `Otherwise`.  

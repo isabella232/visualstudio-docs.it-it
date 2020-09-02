@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591814"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 
-Nei modelli di testo di Visual Studio, la direttiva `output` viene utilizzata per definire l'estensione del nome file e la codifica del file trasformato.
+Nei modelli di testo di Visual Studio, la `output` direttiva viene usata per definire l'estensione del nome file e la codifica del file trasformato.
 
  Ad esempio, se il progetto di Visual Studio include un file modello denominato **MyTemplate.TT** che contiene la direttiva seguente:
 
@@ -68,6 +68,6 @@ Nei modelli di testo di Visual Studio, la direttiva `output` viene utilizzata pe
 
  `utf-32`
 
- `0` (impostazione predefinita di sistema)
+ `0` (Impostazione predefinita di sistema)
 
  In generale, è possibile usare la stringa WebName o il numero CodePage di tutte le codifiche restituite da <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

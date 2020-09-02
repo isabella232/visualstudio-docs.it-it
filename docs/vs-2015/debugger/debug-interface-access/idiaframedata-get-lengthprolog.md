@@ -1,5 +1,5 @@
 ---
-title: Get_lengthprolog | Microsoft Docs
+title: 'IDiaFrameData:: get_lengthProlog | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1542435d38f4b528c52ecc648ad6ef8f79378bd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552554"
 ---
-# <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
+# <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera il numero di byte del codice di prologo nel blocco.  
@@ -35,13 +35,13 @@ HRESULT get_lengthProlog ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il numero di byte del codice di prologo.  
+ out Restituisce il numero di byte del codice di prologo.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Il codice di prologo è una sequenza di istruzioni che mantiene i registri, imposta lo stato della CPU e consente di stabilire lo stack per la funzione.  
+## <a name="remarks"></a>Osservazioni  
+ Il codice di prologo è una sequenza di istruzioni che conserva i registri, imposta lo stato della CPU e stabilisce lo stack per la funzione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

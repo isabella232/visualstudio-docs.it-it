@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0db7696268e5e3d24d005fbf35a08b330f2dc849
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667484"
 ---
 # <a name="rename-refactoring-c"></a>Refactoring di ridenominazione (C#)
@@ -33,7 +33,7 @@ ms.locfileid: "72667484"
 
  Il refactoring di ridenominazione è disponibile dalle seguenti funzionalità di Visual Studio:
 
-|Funzionalità|Comportamento del refactoring nell'IDE|
+|Feature|Comportamento del refactoring nell'IDE|
 |-------------|----------------------------------------|
 |Editor di codice|Nell'editor di codice, il refactoring di ridenominazione è disponibile quando si posiziona il cursore su determinati tipi di simboli di codice. Quando il cursore si trova in questa posizione, è possibile richiamare il comando **Rinomina** digitando il tasto di scelta rapida (Ctrl + r, CTRL + r) oppure selezionando il comando **Rinomina** da uno smart tag, dal menu di scelta rapida o dal menu **refactoring** .|
 |Visualizzazione classi|Quando si seleziona un identificatore in Visualizzazione classi, il refactoring di ridenominazione è disponibile dal menu di scelta rapida e dal menu **refactoring** .|
@@ -49,9 +49,9 @@ ms.locfileid: "72667484"
 |Campo|Modifica la dichiarazione e gli utilizzi del campo con il nuovo nome.|
 |Variabile locale|Modifica la dichiarazione e gli utilizzi della variabile nel nuovo nome.|
 |Metodo|Modifica il nome del metodo e tutti i riferimenti a tale metodo con il nuovo nome. **Nota:**  Quando si rinomina un metodo di estensione, l'operazione di ridenominazione viene propagata a tutte le istanze del metodo che si trovano nell'ambito, indipendentemente dal fatto che il metodo di estensione venga utilizzato come metodo statico o come metodo di istanza. Per altre informazioni, vedere [Metodi di estensione](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|
-|Spazio dei nomi|Modifica il nome dello spazio dei nomi nel nuovo nome nella dichiarazione, in tutte le istruzioni `using` e nei nomi completi. **Nota:**  Quando si rinomina uno spazio dei nomi, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiorna anche la proprietà **spazio dei nomi predefinito** nella pagina **applicazione** di **Progettazione progetti**. Non è possibile reimpostare questa proprietà selezionando **Annulla** dal menu **modifica** . Per reimpostare il valore predefinito della proprietà **dello spazio dei nomi** , è necessario modificare la proprietà in **Progettazione progetti**. Per ulteriori informazioni, vedere la [pagina dell'applicazione](../ide/reference/application-page-project-designer-csharp.md).|
-|proprietà|Modifica la dichiarazione e gli utilizzi della proprietà con il nuovo nome.|
-|Digitare|Modifica tutte le dichiarazioni e tutti gli utilizzi del tipo nel nuovo nome, inclusi i costruttori e i distruttori. Per i tipi parziali, l'operazione di ridenominazione viene propagata a tutte le parti.|
+|Spazio dei nomi|Modifica il nome dello spazio dei nomi con il nuovo nome nella dichiarazione, in tutte le `using` istruzioni e nei nomi completi. **Nota:**  Quando si rinomina uno spazio dei nomi, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Aggiorna anche la proprietà **spazio dei nomi predefinito** nella pagina **applicazione** di **Progettazione progetti**. Non è possibile reimpostare questa proprietà selezionando **Annulla** dal menu **modifica** . Per reimpostare il valore predefinito della proprietà **dello spazio dei nomi** , è necessario modificare la proprietà in **Progettazione progetti**. Per ulteriori informazioni, vedere la [pagina dell'applicazione](../ide/reference/application-page-project-designer-csharp.md).|
+|Proprietà|Modifica la dichiarazione e gli utilizzi della proprietà con il nuovo nome.|
+|Type|Modifica tutte le dichiarazioni e tutti gli utilizzi del tipo nel nuovo nome, inclusi i costruttori e i distruttori. Per i tipi parziali, l'operazione di ridenominazione viene propagata a tutte le parti.|
 
 #### <a name="to-rename-an-identifier"></a>Per rinominare un identificatore
 
@@ -76,13 +76,13 @@ ms.locfileid: "72667484"
     }
     ```
 
-2. Posizionare il cursore su `MethodB`, nella dichiarazione del metodo o nella chiamata al metodo.
+2. Posizionare il cursore su `MethodB` , nella dichiarazione del metodo o nella chiamata al metodo.
 
 3. Dal menu **refactoring** selezionare **Rinomina**. Verrà visualizzata la finestra di dialogo **Rinomina** .
 
      È inoltre possibile fare clic con il pulsante destro del mouse sul cursore, scegliere **refactoring** dal menu di scelta rapida, quindi fare clic su **Rinomina** per visualizzare la finestra di dialogo **Rinomina** .
 
-4. Nel campo **nuovo nome** Digitare `MethodC`.
+4. Nel campo **nuovo nome** Digitare `MethodC` .
 
 5. Selezionare la casella **di controllo Cerca nei commenti** .
 
@@ -113,24 +113,24 @@ ms.locfileid: "72667484"
     }
     ```
 
-2. Nella dichiarazione per `MethodB`, digitare o Backspace sull'identificatore del metodo. Al di sotto di questo identificatore verrà visualizzato un prompt smart tag.
+2. Nella dichiarazione per `MethodB` , digitare o Backspace sull'identificatore del metodo. Al di sotto di questo identificatore verrà visualizzato un prompt smart tag.
 
     > [!NOTE]
     > È possibile richiamare solo il refactoring di ridenominazione usando gli smart tag in corrispondenza della dichiarazione di un identificatore.
 
 3. Digitare il tasto di scelta rapida MAIUSC + ALT + F10, quindi premere la freccia giù per visualizzare il menu smart tag.
 
-     oppure
+     -oppure-
 
      Spostare il puntatore del mouse sul prompt smart tag per visualizzare lo smart tag. Spostare quindi il puntatore del mouse sullo smart tag e fare clic sulla freccia verso il basso per visualizzare il menu smart tag.
 
-4. Selezionare la voce **di menu Rinomina ' \<identifer1 >' in ' \<identifier2 >'** per richiamare il refactoring di ridenominazione senza visualizzare un'anteprima delle modifiche apportate al codice. Tutti i riferimenti a **\<identifer1 >** verranno aggiornati automaticamente per **\<identifier2 >** .
+4. Selezionare la voce di menu **Rinomina ' \<identifer1> ' in ' \<identifier2> '** per richiamare il refactoring di ridenominazione senza visualizzare un'anteprima delle modifiche apportate al codice. Tutti i riferimenti a **\<identifer1>** verranno aggiornati automaticamente a **\<identifier2>** .
 
-     oppure
+     -oppure-
 
      Selezionare la voce di menu **Rinomina con anteprima** per richiamare il refactoring di ridenominazione con un'anteprima delle modifiche apportate al codice. Verrà visualizzata la finestra di dialogo **Anteprima modifiche** .
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="renaming-implemented-or-overridden-members"></a>Ridenominazione di membri implementati o sottoposti a override
  Quando si **Rinomina** un membro che implementa/sostituisce o viene implementato o sottoposto a override da membri di altri tipi, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualizza una finestra di dialogo che indica che l'operazione di ridenominazione provocherà aggiornamenti a catena. Se si fa clic su **continua**, il motore di refactoring rileva e Rinomina in modo ricorsivo tutti i membri nei tipi di base e derivati che dispongono di relazioni Implements/override con il membro rinominato.
@@ -139,9 +139,9 @@ ms.locfileid: "72667484"
 
  [!code-csharp[CsUsingCsIDERefactor#1](../snippets/csharp/VS_Snippets_VBCSharp/CsUsingCsIDERefactor/CS/Class1.cs#1)]
 
- Nell'esempio precedente la ridenominazione di `C.Method()` rinomina anche `Ibase.Method()` perché `C.Method()` implementa `Ibase.Method()`. Successivamente, il motore di refactoring rileva in modo ricorsivo che `Ibase.Method()` viene implementato da `Derived.Method()` e Rinomina `Derived.Method()`. Il motore di refactoring non Rinomina `Base.Method()` perché `Derived.Method()` non esegue l'override di `Base.Method()`. Il motore di refactoring si interrompe qui, a meno che non siano stati **rinominati gli overload** selezionati nella finestra di dialogo **Rinomina** .
+ Nell'esempio precedente, la ridenominazione anche viene rinominata `C.Method()` `Ibase.Method()` perché `C.Method()` implementa `Ibase.Method()` . Successivamente, il motore di refactoring rileva in modo ricorsivo che `Ibase.Method()` viene implementato da `Derived.Method()` e rinominato `Derived.Method()` . Il motore di refactoring non viene rinominato `Base.Method()` , perché non `Derived.Method()` esegue l'override di `Base.Method()` . Il motore di refactoring si interrompe qui, a meno che non siano stati **rinominati gli overload** selezionati nella finestra di dialogo **Rinomina** .
 
- Se è selezionata l'opzione **Rinomina Overloads** , il motore di refactoring Rinomina `Derived.Method(int i)` perché esegue l'overload di `Derived.Method()`, `Base.Method(int i)` perché viene sottoposto a override da `Derived.Method(int i)` e `Base.Method()` perché è un overload di `Base.Method(int i)`.
+ Se si seleziona **Rinomina Overloads** , il motore di refactoring viene rinominato `Derived.Method(int i)` perché `Derived.Method()` esegue l' `Base.Method(int i)` Overload, perché viene sottoposto a override da `Derived.Method(int i)` e perché è `Base.Method()` un overload di `Base.Method(int i)` .
 
 > [!NOTE]
 > Quando si rinomina un membro definito in un assembly a cui viene fatto riferimento, viene visualizzata una finestra di dialogo che indica che la ridenominazione provocherà errori di compilazione.
@@ -154,7 +154,7 @@ var a = new { ID = 1};
 var b = new { ID = 2};
 ```
 
- Nel codice precedente, la ridenominazione `ID` modificherà `ID` in entrambe le istruzioni perché hanno lo stesso tipo anonimo sottostante.
+ Nel codice precedente, la ridenominazione cambierà `ID` `ID` in entrambe le istruzioni perché hanno lo stesso tipo anonimo sottostante.
 
 ```csharp
 var companyIDs =

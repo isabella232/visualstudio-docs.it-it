@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c17564c992f4c8855d8a96165975a5d0e132755c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547208"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica il tipo di messaggio e il motivo.  
+Specifica il tipo e il motivo del messaggio.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -51,32 +51,32 @@ public enum enum_MESSAGETYPE { 
   
 ## <a name="members"></a>Membri  
  MT_OUTPUTSTRING  
- Indica che deve essere inviato il messaggio nella finestra di output. Ciò si escludono a vicenda da `MT_MESSAGEBOX`.  
+ Indica che il messaggio deve essere inviato alla finestra di output. Si escludono a vicenda `MT_MESSAGEBOX` .  
   
  MT_MESSAGEBOX  
- Indica che il messaggio deve essere visualizzato in una finestra di messaggio. Ciò si escludono a vicenda da `MT_OUTPUTSTRING`.  
+ Indica che il messaggio deve essere visualizzato in una finestra di messaggio. Si escludono a vicenda `MT_OUTPUTSTRING` .  
   
  MT_TYPE_MASK  
- Un valore della maschera per isolare la destinazione del messaggio.  
+ Valore della maschera per isolare la destinazione del messaggio.  
   
  MT_REASON_EXCEPTION  
- Indica che è attualmente visualizzata una finestra di messaggio come risultato un'eccezione. Ciò si escludono a vicenda da `MT_REASON_TRACEPOINT`.  
+ Indica che una finestra di messaggio viene visualizzata come risultato di un'eccezione. Si escludono a vicenda `MT_REASON_TRACEPOINT` .  
   
  MT_REASON_TRACEPOINT  
- Indica che una finestra di messaggio viene visualizzata in seguito a raggiungere un punto di analisi. Ciò si escludono a vicenda per `MT_REASON_EXCEPTION`.  
+ Indica che una finestra di messaggio viene visualizzata come risultato dell'esecuzione di un punto di analisi. Si escludono a vicenda `MT_REASON_EXCEPTION` .  
   
  MT_REASON_MASK  
- Un valore della maschera per isolare il motivo per il messaggio da visualizzare.  
+ Valore della maschera per isolare il motivo del messaggio visualizzato.  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono restituiti dai [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) metodi.  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono restituiti dai metodi [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) .  
   
- Uno dei valori di motivo può essere combinato con uno dei valori di destinazione di output con un bit per bit `OR`.  
+ Uno dei motivi per cui i valori possono essere combinati con uno dei valori di destinazione di output utilizzando un bit per bit `OR` .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

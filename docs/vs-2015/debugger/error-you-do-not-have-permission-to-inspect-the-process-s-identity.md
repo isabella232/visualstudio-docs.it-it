@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Non hai le autorizzazioni per controllare il processo di&#39;identità s | Microsoft Docs'
+title: "Errore: non si dispone dell'autorizzazione per controllare l'identità del processo&#39;s | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157513"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: Non hai le autorizzazioni per controllare il processo di&#39;identità s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: non si dispone dell'autorizzazione per controllare l'identità del processo&#39;s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Non si dispone dell'autorizzazione necessaria per controllare l'identità del processo. Probabilmente l'errore è causato dalla configurazione del sistema.  
@@ -30,9 +30,9 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
 ### <a name="to-enable-terminal-services"></a>Per attivare Servizi terminal  
   
-1. Fare clic su **Start**, quindi scegliere **Pannello di controllo**.  
+1. Fare clic su **Start** , quindi scegliere **Pannello di controllo**.  
   
-2. Nel Pannello di controllo scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.  
+2. Nel pannello di controllo scegliere **passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **strumenti di amministrazione**.  
   
 3. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione computer**.  
   
@@ -44,7 +44,7 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
 6. Nell'elenco **Servizi** fare clic con il pulsante destro del mouse su **Servizi terminal** e quindi scegliere **Proprietà**.  
   
-7. Nel **proprietà servizi Terminal** finestra, passa al **generali** scheda e impostare **tipo di avvio** al **manuale**.  
+7. Nella finestra **Proprietà Servizi terminal** passare alla scheda **generale** e impostare **tipo di avvio** su **manuale**.  
   
 8. Fare clic su **OK**.  
   
@@ -60,7 +60,7 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
      Verrà visualizzata la finestra **Proprietà del sistema**.  
   
-3. Fare clic su **Connessione remota**.  
+3. Fare clic su **Remoto**.  
   
 4. In **Desktop remoto** selezionare **Consenti agli utenti di connettersi in remoto al computer**.  
   

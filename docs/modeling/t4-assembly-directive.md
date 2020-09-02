@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591892"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 
-In un modello di testo della fase di progettazione di Visual Studio, la direttiva `assembly` carica un assembly in modo che il codice del modello possa usare i relativi tipi. L'effetto è simile all'aggiunta di un riferimento a un assembly in un progetto di Visual Studio.
+In un modello di testo della fase di progettazione di Visual Studio, la `assembly` direttiva carica un assembly in modo che il codice del modello possa usare i relativi tipi. L'effetto è simile all'aggiunta di un riferimento a un assembly in un progetto di Visual Studio.
 
  Per una panoramica generale sulla scrittura di modelli di testo, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
@@ -32,11 +32,11 @@ In un modello di testo della fase di progettazione di Visual Studio, la direttiv
 
  Il nome dell'assembly deve essere uno dei seguenti:
 
-- Il nome sicuro dell'assembly nella GAC, quale `System.Xml.dll`. È inoltre possibile utilizzare la forma estesa, quale `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Per ulteriori informazioni, vedere <xref:System.Reflection.AssemblyName>.
+- Il nome sicuro dell'assembly nella GAC, quale `System.Xml.dll`. È inoltre possibile utilizzare la forma estesa, quale `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Per altre informazioni, vedere <xref:System.Reflection.AssemblyName>.
 
 - Il percorso assoluto dell'assembly
 
-  È possibile usare la sintassi `$(variableName)` per fare riferimento a variabili di Visual Studio, ad esempio `$(SolutionDir)`e `%VariableName%` per fare riferimento alle variabili di ambiente. Ad esempio:
+  È possibile usare la `$(variableName)` sintassi per fare riferimento a variabili di Visual Studio, ad esempio `$(SolutionDir)` , e `%VariableName%` per fare riferimento alle variabili di ambiente. Ad esempio:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -63,7 +63,7 @@ In un modello di testo della fase di progettazione di Visual Studio, la direttiv
 
 - Assembly contenente il modello DSL.
 
-## <a name="msbuild"></a>Uso delle proprietà del progetto in MSBuild e Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Uso delle proprietà del progetto in MSBuild e Visual Studio
  Le macro di Visual Studio, ad esempio $ (SolutionDir), non funzionano in MSBuild. Se si desidera trasformare i modelli nel computer di compilazione, è necessario utilizzare le proprietà del progetto.
 
  Modificare il file con estensione csproj o vbproj per definire una proprietà del progetto. In questo esempio viene definita una proprietà denominata `myLibFolder`:

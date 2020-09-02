@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 52caadd7f4dd9349eccb80a366a1458212aba5ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646268"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedura: non visualizzare gli avvisi relativi all'analisi del codice generato
@@ -32,6 +32,6 @@ I compilatori di codice gestito spesso generano codice aggiunto a un progetto pe
 
 1. Fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, quindi scegliere **Proprietà**.
 
-2. Fare clic su **analisi codice**.
+2. Fare clic su **Analisi codice**.
 
 3. Selezionare la casella di controllo non **visualizzare i risultati del codice generato** .

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f34422dfd47efdce9bf837f923da0e139a13398
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667925"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generazione di codice e modelli di testo T4
@@ -44,7 +44,7 @@ In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]un *modello di testo T4* è una c
 
  Inoltre, il modello contiene frammenti di codice programma. È possibile usare questi frammenti per ripetere sezioni di testo, creare sezioni condizionali e visualizzare dati dell'applicazione.
 
- Per generare l'output, l'applicazione chiama una funzione che viene generata dal modello. Esempio:
+ Per generare l'output, l'applicazione chiama una funzione che viene generata dal modello. Ad esempio:
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
@@ -102,7 +102,7 @@ namespace Fabrikam.FirstJob
 
  [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) La generazione di codice e di altre risorse da un modello consente di aggiornare l'applicazione aggiornando il modello.
 
- [Generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md) Se è stato installato [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK di visualizzazione e modellazione, è possibile verificare che il software generato sia sempre aggiornato con le modifiche apportate al modello.
+ [Generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md) Se è stato installato [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l'SDK di visualizzazione e modellazione, è possibile verificare che il software generato continui a essere aggiornato con le modifiche apportate al modello.
 
  [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md) Sintassi di un file di modello di testo.
 

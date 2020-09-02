@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d7bb7e0f3dfee3dd1bf3e9b42afd5837a29f6ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646811"
 ---
 # <a name="template-parameters"></a>Parametri di template
@@ -53,7 +53,7 @@ Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti d
 > [!NOTE]
 > I parametri di modello fanno distinzione tra maiuscole e minuscole.
 
-|Parametro|DESCRIZIONE|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`clrversion`|Versione corrente di Common Language Runtime (CLR).|
 |`GUID [1-10]`|GUID usato per sostituire il GUID del progetto in un file di progetto. È possibile specificare fino a 10 GUID univoci, ad esempio `guid1)`.|

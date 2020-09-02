@@ -1,5 +1,5 @@
 ---
-title: Campo asynctaskmethodbuilder. M_builder | Microsoft Docs
+title: Campo AsyncTaskMethodBuilder. m_builder | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae8e79d948bb95a8f55e43985e80bc7ab949ff76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197380"
 ---
-# <a name="asynctaskmethodbuildermbuilder-field"></a>Campo AsyncTaskMethodBuilder.m_builder
+# <a name="asynctaskmethodbuilderm_builder-field"></a>Campo AsyncTaskMethodBuilder.m_builder
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Rappresenta l'oggetto generatore generico a cui questa istanza non generici delega.  
+Rappresenta l'oggetto generatore generico a cui questa istanza non generica delega.  
   
  **Spazio dei nomi:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché non è possibile accedere a questo membro interno dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ Rappresenta l'oggetto generatore generico a cui questa istanza non generici dele
 .field private valuetype System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<valuetype System.Threading.Tasks.VoidTaskResult> m_builder  
 ```  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>   

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667457"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
@@ -27,7 +27,7 @@ I comandi di Visual Studio consentono di richiamare un comando dalla finestra **
 
  È possibile trovare l'elenco completo dei comandi e la relativa sintassi nella finestra di dialogo **Opzioni** con le voci Tastiera, Ambiente selezionate.
 
- Il carattere di escape per i comandi di Visual Studio è un accento circonflesso (^) con cui si indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Di seguito è riportato un esempio:
+ Il carattere di escape per i comandi di Visual Studio è un accento circonflesso (^) con cui si indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```
 >Edit.Find ^^t /regex
@@ -63,19 +63,19 @@ I comandi di Visual Studio consentono di richiamare un comando dalla finestra **
 |[Apri file](../../ide/reference/open-file-command.md)|Apre un file esistente e consente di specificare un editor.|
 |[Apri progetto](../../ide/reference/open-project-command.md)|Apre un progetto esistente e consente di aggiungerlo alla soluzione corrente.|
 |[Apri soluzione](../../ide/reference/open-solution-command.md)|Apre una soluzione esistente.|
-|[Print](../../ide/reference/print-command.md)|Valuta l'espressione e visualizza i risultati o il testo specificato.|
-|[Comando Controllo immediato](../../ide/reference/quick-watch-command.md)|Visualizza il testo selezionato o specificato nel campo **Espressione** della finestra di dialogo **Espressione di controllo rapida** .|
-|[Sostituisci](../../ide/reference/replace-command.md)|Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** .|
+|[Stampa](../../ide/reference/print-command.md)|Valuta l'espressione e visualizza i risultati o il testo specificato.|
+|[Comando controllo rapido](../../ide/reference/quick-watch-command.md)|Visualizza il testo selezionato o specificato nel campo **Espressione** della finestra di dialogo **Espressione di controllo rapida** .|
+|[Replace](../../ide/reference/replace-command.md)|Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** .|
 |[Sostituisci nei file](../../ide/reference/replace-in-files-command.md)|Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nella [Sostituisci nei file](../../ide/replace-in-files.md).|
 |[Imposta stack frame corrente](../../ide/reference/set-current-stack-frame-command.md)|Consente di visualizzare uno specifico stack frame.|
 |[Imposta thread corrente](../../ide/reference/set-current-thread-command.md)|Consente di visualizzare un thread specifico.|
 |[Imposta radice](../../ide/reference/set-radix-command.md)|Determina il numero di byte da visualizzare.|
 |[Shell](../../ide/reference/shell-command.md)|Avvia i programmi da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] come se il comando venisse eseguito dal prompt dei comandi.|
 |[Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|Visualizza l'URL specificato in una finestra del Web browser all'interno o all'esterno dell'ambiente di sviluppo integrato (IDE).|
-|[Inizio](../../ide/reference/start-command.md)|Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.|
-|[Path](../../ide/reference/symbol-path-command.md)|Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.|
+|[Inizia](../../ide/reference/start-command.md)|Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.|
+|[Percorso](../../ide/reference/symbol-path-command.md)|Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.|
 |[Attiva/disattiva punto di interruzione](../../ide/reference/toggle-breakpoint-command.md)|Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file.|
-|[Comando Espressioni di controllo](../../ide/reference/watch-command.md)|Crea e apre un'istanza specificata di una finestra **Espressione di controllo** .|
+|[Comando Watch](../../ide/reference/watch-command.md)|Crea e apre un'istanza specificata di una finestra **Espressione di controllo** .|
 
 ## <a name="see-also"></a>Vedere anche
  [Finestra](../../ide/reference/command-window.md) di comando [Trova/comando della casella](../../ide/find-command-box.md) di comando [Visual Studio alias](../../ide/reference/visual-studio-command-aliases.md)

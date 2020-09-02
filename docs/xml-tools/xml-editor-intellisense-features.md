@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592386"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
@@ -57,7 +57,7 @@ L'editor XML, inoltre, semplifica la procedura di modifica del codice XML in qua
 
 `<book>`
 
-L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Di seguito è riportato un esempio di questo argomento (&#124;il "" rileva la posizione del cursore):
+L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Di seguito è riportato un esempio di questa operazione (il "&#124;" rileva la posizione del cursore):
 
 `<book>`&#124;`</book>`
 
@@ -87,34 +87,34 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 
 ## <a name="brace-matching"></a>Corrispondenza parentesi graffe
 
-Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare il tasto di scelta rapida (**Ctrl**+ **]** ) per passare da una parentesi graffa alla parentesi graffa corrispondente.
+Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare i tasti di scelta rapida (**CTRL** + **]**) per passare da una parentesi graffa alla parentesi graffa corrispondente.
 
 L'editor XML effettua tale operazione per i seguenti elementi:
 
 - Tag di inizio e di fine corrispondenti.
 
-- Qualsiasi coppia di parentesi angolari "\<" o ">".
+- Qualsiasi coppia di parentesi angolari "\<" or ">".
 
-- Inizio e fine dei commenti.
+- Inizio e fine di commenti.
 
-- Inizio e fine delle istruzioni di elaborazione.
+- Inizio e fine di istruzioni di elaborazione.
 
-- Inizio e fine dei blocchi CDATA.
+- Inizio e fine di blocchi CDATA.
 
-- Inizio e fine delle dichiarazioni DTD.
+- Inizio e fine di dichiarazioni DTD.
 
-- Virgolette di apertura e chiusura sugli attributi.
+- Virgolette di apertura e di chiusura sugli attributi.
 
 ## <a name="modify-the-intellisense-options"></a>Modificare le opzioni di IntelliSense
 
-Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificarlo modificando gli **strumenti** > impostazioni delle **Opzioni** .
+Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare questa impostazione modificando **Tools**le  >  impostazioni delle**Opzioni** degli strumenti.
 
 La sezione **inserimento automatico** della pagina **varie** controlla il comportamento seguente:
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-----------------|
-|Tag di fine|Inserisce i tag di chiusura per i nuovi elementi.|
-|Virgolette per attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|
+|Chiudi i tag|Inserisce i tag di chiusura per i nuovi elementi.|
+|Virgolette per gli attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|
 |Altro markup|Completa commenti, CDATA, DOCTYPE, istruzioni di elaborazione e altre dichiarazioni dei markup.|
 
 ### <a name="to-change-the-auto-completion-behavior"></a>Per modificare il comportamento del completamento automatico
@@ -128,5 +128,5 @@ La sezione **inserimento automatico** della pagina **varie** controlla il compor
 ## <a name="see-also"></a>Vedere anche
 
 - [Editor XML](../xml-tools/xml-editor.md)
-- [Uso di IntelliSense](../ide/using-intellisense.md)
+- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
 - [Procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

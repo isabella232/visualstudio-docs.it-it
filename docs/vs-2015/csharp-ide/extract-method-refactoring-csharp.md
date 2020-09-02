@@ -1,5 +1,5 @@
 ---
-title: Refactoring Estrai metodoC#() | Microsoft Docs
+title: Refactoring Estrai metodo (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e6d5e7913a7433fd4b30da490f33dd614c3e2b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667549"
 ---
 # <a name="extract-method-refactoring-c"></a>Refactoring Estrai Metodo (C#)
@@ -82,20 +82,20 @@ ms.locfileid: "72667549"
 
      È anche possibile fare clic con il pulsante destro del mouse sul codice selezionato, scegliere **refactoring**, quindi fare clic su **Estrai metodo** per visualizzare la finestra di dialogo **Estrai metodo** .
 
-4. Specificare un nome per il nuovo metodo, ad esempio `CircleArea`, nella casella **nuovo nome metodo** .
+4. Specificare un nome per il nuovo metodo, ad esempio `CircleArea` , nella casella **nuovo nome metodo** .
 
      Viene visualizzata un'anteprima della firma del nuovo metodo sotto la **firma del metodo di anteprima**.
 
 5. Fare clic su **OK**.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Quando si usa il comando **Estrai metodo** , il nuovo metodo viene inserito dopo il membro di origine nella stessa classe.
 
 ## <a name="partial-types"></a>Tipi parziali
  Se la classe è un tipo parziale, il **Metodo Extract** genera il nuovo metodo immediatamente successivo al membro di origine. **Estrai metodo** determina la firma del nuovo metodo, creando un metodo statico quando il codice nel nuovo metodo non fa riferimento a dati di istanza.
 
 ## <a name="generic-type-parameters"></a>Parametri di tipo generico
- Quando si estrae un metodo con un parametro di tipo generico non vincolato, il codice generato non aggiungerà il modificatore `ref` a tale parametro a meno che non venga assegnato un valore. Se il metodo estratto supporta i tipi di riferimento come argomento di tipo generico, è necessario aggiungere manualmente il modificatore `ref` al parametro nella firma del metodo.
+ Quando si estrae un metodo con un parametro di tipo generico non vincolato, il codice generato non aggiunge il `ref` modificatore a tale parametro a meno che non vi sia un valore assegnato. Se il metodo estratto supporta i tipi di riferimento come argomento di tipo generico, è necessario aggiungere manualmente il `ref` modificatore al parametro nella firma del metodo.
 
 ## <a name="anonymous-methods"></a>Metodi anonimi
  Se si tenta di estrarre parte di un metodo anonimo che include un riferimento a una variabile locale dichiarata o a cui viene fatto riferimento all'esterno del metodo anonimo, Visual Studio avviserà le potenziali modifiche semantiche.

@@ -1,5 +1,5 @@
 ---
-title: Strumento di configurazione visualizzazione finestra | Microsoft Docs
+title: Configurazione di visualizzazione della finestra degli strumenti | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,19 +12,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186400"
 ---
 # <a name="tool-window-display-configuration"></a>Configurazione della visualizzazione della finestra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando un pacchetto VSPackage registra una finestra degli strumenti, la posizione predefinita, le dimensioni, stile di ancoraggio e altre informazioni sulla visibilità è specificato in valori facoltativi. Per ulteriori informazioni sulla registrazione della finestra degli strumenti, vedere [strumento Windows nel Registro di sistema](../extensibility/tool-windows-in-the-registry.md)  
+Quando un pacchetto VSPackage registra una finestra degli strumenti, la posizione predefinita, le dimensioni, lo stile di ancoraggio e altre informazioni sulla visibilità sono specificate in valori facoltativi. Per ulteriori informazioni sulla registrazione della finestra degli strumenti, vedere la pagina relativa alle [finestre degli strumenti nel registro di sistema](../extensibility/tool-windows-in-the-registry.md)  
   
-## <a name="window-display-information"></a>Informazioni di visualizzazione finestra  
- Configurazione di visualizzazione di base di una finestra degli strumenti viene archiviato in un massimo di sei valori facoltativi:  
+## <a name="window-display-information"></a>Informazioni visualizzate finestra  
+ La configurazione di base dello schermo di una finestra degli strumenti viene archiviata fino a sei valori facoltativi:  
   
 ```  
 HKEY_LOCAL_MACHINE\  
@@ -37,17 +37,17 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|NOME|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
-|Name|REG_SZ|"Short name goes here"|Nome breve che descrive la finestra degli strumenti. Utilizzato solo per riferimento nel Registro di sistema.|  
-|Float|REG_SZ|"X1, Y1, X2, Y2"|Quattro valori delimitati da virgole. X1, Y1 è le coordinate dell'angolo superiore sinistro della finestra degli strumenti. X2, Y2 sia le coordinate dell'angolo inferiore destro. Tutti i valori sono nelle coordinate dello schermo.|  
-|Style|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Collegato"<br /><br /> "Schede"<br /><br /> "AlwaysFloat"|Una parola chiave specifica iniziale visualizzare lo stato della finestra degli strumenti.<br /><br /> "MDI" = ancorate con finestra MDI.<br /><br /> "Mobile" = mobile.<br /><br /> "Collegate" = collegata a un'altra finestra (specificata nella voce della finestra).<br /><br /> "Schede" = combinati con un'altra finestra degli strumenti.<br /><br /> "AlwaysFloat" = non può essere ancorata.<br /><br /> Per altre informazioni, vedere la sezione commenti riportata di seguito.|  
-|Finestra|REG_SZ|*\<GUID>*|Il GUID di una finestra in cui la finestra degli strumenti può essere collegata o a schede. Il GUID può appartenere a uno dei propri windows o una delle finestre nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
-|Orientamento|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Basso"|Vedere la sezione commenti riportata di seguito.|  
-|DontForceCreate|REG_DWORD|0 o 1|Quando questa voce è presente e il relativo valore è diverso da zero, la finestra viene caricata, ma non immediatamente visualizzata.|  
+|Nome|REG_SZ|"Nome breve|Nome breve che descrive la finestra degli strumenti. Utilizzato solo per riferimento nel registro di sistema.|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|Quattro valori delimitati da virgole. X1, Y1 è la coordinata dell'angolo superiore sinistro della finestra degli strumenti. X2, Y2 è la coordinata dell'angolo inferiore destro. Tutti i valori sono nelle coordinate dello schermo.|  
+|Stile|REG_SZ|MDI<br /><br /> Float<br /><br /> Collegato<br /><br /> A schede<br /><br /> "AlwaysFloat"|Parola chiave che specifica lo stato di visualizzazione iniziale della finestra degli strumenti.<br /><br /> "MDI" = ancorato con la finestra MDI.<br /><br /> "Float" = Floating.<br /><br /> "Linked" = collegata a un'altra finestra (specificata nella voce della finestra).<br /><br /> "A schede" = combinato con un'altra finestra degli strumenti.<br /><br /> "AlwaysFloat" = non può essere ancorato.<br /><br /> Per ulteriori informazioni, vedere la sezione dei commenti riportata di seguito.|  
+|Finestra|REG_SZ|*\<GUID>*|GUID di una finestra a cui è possibile collegare o a schede la finestra degli strumenti. Il GUID può appartenere a una delle finestre personali o a una delle finestre nell' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
+|Orientamento|REG_SZ|Sinistra<br /><br /> Destra<br /><br /> Top<br /><br /> Parte inferiore|Vedere la sezione dei commenti riportata di seguito.|  
+|DontForceCreate|REG_DWORD|0 o 1|Quando questa voce è presente e il valore è diverso da zero, la finestra viene caricata, ma non immediatamente visualizzata.|  
   
 ### <a name="comments"></a>Commenti  
- La voce di orientamento definisce la posizione in cui la finestra degli strumenti ancora una volta fatto doppio clic sulla barra del titolo. La posizione è relativa alla finestra specificata nella voce della finestra. Se la voce di stile è impostata su "Collegato", la voce di orientamento può essere "Left", "Right", "Top" o "Bottom". Se la voce di stile è "Schede", l'orientamento voce può essere "Left" o "Right" e specifica in cui viene aggiunta la scheda. Se la voce di stile è "Mobile", prima di tutto si muove la finestra degli strumenti. Una volta fatto doppio clic sulla barra del titolo, applicano le voci di finestra e l'orientamento e la finestra viene utilizzato lo stile "Schede". Se la voce di stile è "AlwaysFloat", la finestra degli strumenti non può essere ancorata. Se la voce di stile è "MDI", la finestra degli strumenti è collegata all'area di MDI e la voce della finestra viene ignorata.  
+ La voce orientamento definisce la posizione di ancoraggio della finestra degli strumenti quando si fa doppio clic sulla barra del titolo. La posizione è relativa alla finestra specificata nella voce della finestra. Se la voce di stile è impostata su "Linked", la voce di orientamento può essere "left", "Right", "Top" o "bottom". Se la voce di stile è "a schede", la voce di orientamento può essere "left" o "Right" e specificare dove viene aggiunta la scheda. Se la voce di stile è "float", la finestra degli strumenti viene spostata per prima. Quando si fa doppio clic sulla barra del titolo, si applicano le voci relative all'orientamento e alla finestra e la finestra usa lo stile "a schede". Se la voce di stile è "AlwaysFloat", la finestra degli strumenti non può essere ancorata. Se la voce di stile è "MDI", la finestra degli strumenti è collegata all'area MDI e la voce della finestra viene ignorata.  
   
 ### <a name="example"></a>Esempio  
   
@@ -69,7 +69,7 @@ HKEY_LOCAL_MACHINE\
 ```  
   
 ## <a name="tool-window-visibility"></a>Visibilità della finestra degli strumenti  
- I valori nella sottochiave visibilità facoltativo determinano le impostazioni di visibilità di una finestra degli strumenti. I nomi dei valori vengono usati per archiviare i GUID dei comandi che richiedono la visibilità della finestra. Se viene eseguito il comando, l'IDE garantisce che la finestra degli strumenti viene creata e reso visibile.  
+ I valori nella sottochiave di visibilità facoltativa determinano le impostazioni di visibilità di una finestra degli strumenti. I nomi dei valori vengono usati per archiviare i GUID dei comandi che richiedono la visibilità della finestra. Se il comando viene eseguito, l'IDE garantisce che la finestra degli strumenti venga creata e resa visibile.  
   
 ```  
 HKEY_LOCAL_MACHINE\  
@@ -86,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|Name|Tipo|Dati|Descrizione|  
+|Nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
-|(Predefinito)|REG_SZ|Nessuna|Lasciare vuoto.|  
-|*\<GUID>*|REG_DWORD o REG_SZ|0 o una stringa descrittiva.|facoltativo. Nome della voce deve essere il GUID di un comando che richiedono la visibilità. Il valore contiene solo una stringa informativa. In genere, il valore è un `reg_dword` impostato su 0.|  
+|Valore predefinito.|REG_SZ|Nessuno|Lasciare vuoto.|  
+|*\<GUID>*|REG_DWORD o REG_SZ|0 o una stringa descrittiva.|facoltativo. Il nome della voce deve essere il GUID di un comando che richiede visibilità. Il valore include solo una stringa informativa. In genere, il valore è `reg_dword` impostato su 0.|  
   
 ### <a name="example"></a>Esempio  
   

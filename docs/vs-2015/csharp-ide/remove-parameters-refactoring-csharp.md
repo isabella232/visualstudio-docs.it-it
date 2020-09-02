@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40c373c3575f007952143e29c8dfc2cfac3d080f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667485"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refactoring Rimuovi parametri (C#)
@@ -29,14 +29,14 @@ ms.locfileid: "72667485"
 
 `Remove Parameters` è un'operazione di refactoring che fornisce un modo semplice per rimuovere i parametri da metodi, indicizzatori o delegati. Rimuovi parametri modifica la dichiarazione; in qualsiasi posizione in cui viene chiamato il membro, il parametro viene rimosso per riflettere la nuova dichiarazione.
 
- Per eseguire l'operazione di rimozione dei parametri, posizionare innanzitutto il cursore su un metodo, un indicizzatore o un delegato. Quando il cursore si trova in posizione, per richiamare l'operazione Rimuovi `Parameters`, fare clic sul menu **refactoring** , premere il tasto di scelta rapida oppure selezionare il comando dal menu di scelta rapida.
+ Per eseguire l'operazione di rimozione dei parametri, posizionare innanzitutto il cursore su un metodo, un indicizzatore o un delegato. Quando il cursore si trova in posizione, per richiamare l' `Parameters` operazione di rimozione, fare clic sul menu **refactoring** , premere il tasto di scelta rapida oppure selezionare il comando dal menu di scelta rapida.
 
 > [!NOTE]
 > Non è possibile rimuovere il primo parametro in un metodo di estensione.
 
 ### <a name="to-remove-parameters"></a>Per rimuovere i parametri
 
-1. Creare un'applicazione console denominata `RemoveParameters`, quindi sostituire `Program` con il codice seguente.
+1. Creare un'applicazione console denominata `RemoveParameters` e sostituirla `Program` con il codice seguente.
 
     ```csharp
     class A
@@ -55,7 +55,7 @@ ms.locfileid: "72667485"
     }
     ```
 
-2. Posizionare il cursore sul metodo `A`, nella dichiarazione del metodo o nella chiamata al metodo.
+2. Posizionare il cursore sul metodo `A` , nella dichiarazione del metodo o nella chiamata al metodo.
 
 3. Dal menu **refactoring** selezionare **Rimuovi parametri** per visualizzare la finestra di dialogo **Rimuovi parametri** .
 
@@ -63,13 +63,13 @@ ms.locfileid: "72667485"
 
      È inoltre possibile fare clic con il pulsante destro del mouse sul cursore, scegliere **refactoring**, quindi fare clic su **Rimuovi parametri** per visualizzare la finestra di dialogo **Rimuovi parametri** .
 
-4. Utilizzando il campo **parametri** , posizionare il cursore su `int i` e quindi fare clic su **Rimuovi**.
+4. Utilizzando il campo **parametri** , posizionare il cursore su `int i` , quindi fare clic su **Rimuovi**.
 
 5. Fare clic su **OK**.
 
 6. Nella finestra di dialogo **Anteprima modifiche-Rimuovi parametri** fare clic su **applica**.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  È possibile rimuovere i parametri da una dichiarazione di metodo o da una chiamata al metodo. Posizionare il cursore nella dichiarazione del metodo o nel nome del delegato e richiamare Rimuovi parametri.
 
 > [!CAUTION]
@@ -87,7 +87,7 @@ MyMethod(param1++, param2);
 MyMethod(param2);
 ```
 
- con l'operazione di refactoring, `param1` non verrà incrementato.
+ l'operazione di refactoring `param1` non verrà incrementata.
 
 ## <a name="see-also"></a>Vedere anche
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157587"
 ---
 # <a name="diagnostic-namespace"></a>Spazio dei nomi diagnostic
@@ -35,21 +35,21 @@ namespace diagnostic;
   
 ### <a name="classes"></a>Classi  
   
-|nome|DESCRIZIONE|  
+|Nome|Descrizione|  
 |----------|-----------------|  
 |[Classe marker_series](../profiling/marker-series-class.md)|Rappresenta un canale seriale di eventi generati da un singolo provider.|  
-|[Classe span](../profiling/span-class.md)|Definisce una fase dell'applicazione.|  
+|[Classe Span](../profiling/span-class.md)|Definisce una fase dell'applicazione.|  
   
 ### <a name="enumerations"></a>Enumerazioni  
   
-|nome|DESCRIZIONE|  
+|Nome|Descrizione|  
 |----------|-----------------|  
 |[Enumerazione marker_importance](../profiling/marker-importance-enumeration.md)|Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.|  
   
 ## <a name="requirements"></a>Requisiti  
  **Intestazione:** cvmarkersobj.h  
   
- **Spazio dei nomi:** Concurrency  
+ **Spazio dei nomi:** Concorrenza  
   
 ## <a name="see-also"></a>Vedere anche  
  [Spazio dei nomi Concurrency (visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)

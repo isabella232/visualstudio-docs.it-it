@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592952"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificare lo stile degli oggetti in Blend per Visual Studio
@@ -75,7 +75,7 @@ Nella finestra di dialogo **Create Style Resource** (Crea risorsa di stile) è p
 
 > [!NOTE]
 > Non è possibile creare stili o modelli per ogni tipo di controllo. Se questi non sono supportati in un controllo, il pulsante di navigazione non verrà visualizzato sopra la tavola da disegno.
-> Per tornare all'ambito di modifica del documento principale, fare clic su **Reimposta ambito per** ![reimposta ambito](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)icona.
+> Per tornare all'ambito di modifica del documento principale, fare clic su **Reimposta l'ambito** ![Icona Reimposta l'ambito](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Applicare uno stile o un modello a un controllo
 
@@ -85,7 +85,7 @@ Fare clic con il pulsante destro del mouse su un oggetto nella finestra [Oggetti
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Ripristinare lo stile o il modello predefinito di un controllo
 
-Selezionare il controllo e nella finestra **Proprietà** ** individuare la proprietà **Stile** o **Modello**. Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
+Selezionare il controllo e nella finestra * * Proprietà * * * * individuare la proprietà **stile** o **modello** . Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
 
 ## <a name="visual-states"></a>Stati di visualizzazione
 
@@ -93,7 +93,7 @@ Gli stati di visualizzazione consentono di cambiare l'aspetto di un controllo in
 
 ![Stato di passaggio del mouse](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Breve video:** pulsante ![Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [gestire lo stato dei controlli WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Breve video:** ![Pulsante Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gestire lo stato dei controlli WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Risorse: creare colori, stili e modelli e riutilizzarli in seguito
 

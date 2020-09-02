@@ -14,20 +14,20 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186430"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento. Questo elemento è significativo quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostata su `false`. Quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostata su `true`, un modello di elemento è disponibile in tutti i tipi di progetto.  
+Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento. Questo elemento è significativo quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostato su `false` . Quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostato su `true` , un modello di elemento è disponibile in tutti i tipi di progetto.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<TemplateGroupID >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<TemplateGroupID>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -55,10 +55,10 @@ Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento
   
  Il testo specifica un identificatore per una categoria di modelli di elemento.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `TemplateGroupID` è un elemento.  
   
- Il valore della `TemplateGroupID` elemento viene usato con la registrazione nel sistema di progetto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<numero di versione >* \Projects\\) per i modelli di filtro che vengono visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo.  
+ Il valore dell' `TemplateGroupID` elemento viene utilizzato insieme alla registrazione del sistema del progetto (HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \projects \\ ) per filtrare i modelli visualizzati nella finestra di dialogo **Aggiungi nuovo elemento** .  
   
 |Valore di Visual C++|Significato|  
 |------------------------|-------------|  
@@ -73,5 +73,5 @@ Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento
 |VC-Android|Usato per i progetti Android|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

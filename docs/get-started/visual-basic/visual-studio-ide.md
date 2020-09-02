@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301979"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312002"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -30,17 +30,17 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 ::: moniker range=">=vs-2019"
 
-[![L'IDE di Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
+[![IDE di Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
 Questa immagine presenta Visual Studio con un progetto aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
-- [Esplora soluzioni](../../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consente di organizzare il codice raggruppando i file in [soluzioni e progetti](tutorial-projects-solutions.md).
+- [Esplora soluzioni](../../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consentono di organizzare il codice raggruppando i file in [soluzioni e progetti](tutorial-projects-solutions.md).
 
-- La [finestra dell'editor](../../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più utilizzati, visualizza il contenuto dei file. Nella finestra è possibile modificare il codice o progettare un'interfaccia utente, ad esempio una finestra con pulsanti e caselle di testo.
+- La [finestra dell'editor](../../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più usati, visualizza il contenuto dei file. Nella finestra è possibile modificare il codice o progettare un'interfaccia utente, ad esempio una finestra con pulsanti e caselle di testo.
 
-- La finestra [Output](../../ide/reference/output-window.md) (in basso al centro) è la finestra in cui Visual Studio invia le notifiche, ad esempio messaggi di errore e di debug, avvisi del compilatore, messaggi di stato di pubblicazione e altro. Ogni messaggio viene visualizzato in una scheda separata.
+- La finestra [Output](../../ide/reference/output-window.md) (in basso al centro) è la finestra in cui Visual Studio invia le notifiche, ad esempio messaggi di errore e di debug, avvisi del compilatore, messaggi di stato di pubblicazione e altro. Ogni origine dei messaggi ha una scheda separata.
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (in basso a destra) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
@@ -86,7 +86,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ::: moniker-end
 
-- [Intellisense](../../ide/using-intellisense.md)
+- [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense è un termine che indica diverse funzionalità che visualizzano le informazioni sul codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor senza dover cercare le informazioni sul tipo altrove. Le funzionalità di IntelliSense variano a seconda del linguaggio. Per altre informazioni, vedere [IntelliSense per C#](../../ide/visual-csharp-intellisense.md), [IntelliSense per Visual C++](../../ide/visual-cpp-intellisense.md), [IntelliSense per JavaScript](../../ide/javascript-intellisense.md) e [IntelliSense per Visual Basic](../../ide/visual-basic-specific-intellisense.md). La figura seguente mostra come IntelliSense visualizza un elenco di membri per un tipo:
 
@@ -102,12 +102,12 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ::: moniker-end
 
-- Casella Cerca
+- Casella di ricerca
 
    La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
 
    > [!TIP]
-   > Premere **Ctrl**+**Q** come collegamento alla casella di ricerca.
+   > Premere **CTRL** + **Q** come collegamento alla casella di ricerca.
 
    ::: moniker range="vs-2017"
 
@@ -127,7 +127,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    È possibile apportare modifiche ed eseguire il debug con altri utenti in tempo reale, indipendentemente dal tipo di app o dal linguaggio di programmazione. Si può condividere il progetto in modo immediato e sicuro e, in base alle esigenze, si possono condividere sessioni di debug, istanze dei terminali, app Web localhost, chiamate vocali e molto altro ancora.
 
-- [Gerarchia di chiamata](../../ide/reference/call-hierarchy.md)
+- [Gerarchia delle chiamate](../../ide/reference/call-hierarchy.md)
 
    La finestra **Gerarchia di chiamata** mostra i metodi che chiamano un metodo selezionato. Si tratta di informazioni che possono risultare utili quando si prevede di cambiare o rimuovere il metodo o quando si tenta di rilevare un bug.
 
@@ -175,7 +175,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ::: moniker-end
 
-- [Definizione di sbircia](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Visualizza definizione](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    La finestra **Visualizza definizione** mostra la definizione di un metodo o un tipo senza aprire un file separato.
 
@@ -235,9 +235,9 @@ Per modificare il tema **Scuro**:
 
 ::: moniker-end
 
-2. Nella barra dei menu, scegliere**Opzioni** **degli strumenti** > per aprire la finestra di dialogo **Opzioni.**
+2. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** .
 
-3. Nella pagina delle opzioni**Generale** **ambiente** > impostare **Selezione tema colore** su **Scuro**, quindi **scegliere OK**.
+3. Nella **Environment**  >  pagina Opzioni**generali** ambiente modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
 
    ![Impostare il tema colori scuro in Visual Studio](media/change-color-theme.png)
 
@@ -259,7 +259,7 @@ Per modificare il tema **Scuro**:
 
 Visual Studio verrà quindi configurato per usare impostazioni di ambiente su misura per gli sviluppatori Visual Basic.
 
-1. Nella barra dei menu scegliere **Strumenti** > **Importa/Esporta impostazioni**.
+1. Sulla barra dei menu scegliere **strumenti**  >  **Importa/Esporta impostazioni**.
 
 2. Nell'**Importazione/Esportazione guidata delle impostazioni** selezionare **Reimposta tutte le impostazioni** nella prima pagina e quindi scegliere **Avanti**.
 
@@ -271,7 +271,7 @@ Visual Studio verrà quindi configurato per usare impostazioni di ambiente su mi
 
 Per informazioni su altri modi per personalizzare l'IDE, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="create-a-program"></a>Creare un programma.
+## <a name="create-a-program"></a>Creare un programma
 
 In questa sezione viene descritta in dettaglio la procedura per creare un programma semplice.
 
@@ -281,7 +281,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    ![File > Nuovo progetto sulla barra dei menu](media/file-new-project-menu.png)
 
-   Nella finestra di dialogo **Nuovo progetto** vengono visualizzati diversi *modelli*di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   La finestra di dialogo **nuovo progetto** Mostra diversi *modelli*di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
 1. Scegliere la categoria **.NET Core** in **Visual Basic** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
@@ -302,7 +302,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Sono disponibili altri menu e finestre degli strumenti, ma per il momento si procederà con la creazione del programma.
 
-1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **Ctrl**+**F5**.
+1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL** + **F5**.
 
    ![Menu Debug > Avvia senza eseguire debug](../media/overview-start-without-debugging.png)
 
@@ -327,7 +327,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine("Hello " + name + "!")
    ```
 
-1. Eseguire nuovamente l'app premendo **Ctrl**+**F5**.
+1. Eseguire di nuovo l'app premendo **CTRL** + **F5**.
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -369,7 +369,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Sono disponibili altri menu e finestre degli strumenti, ma per il momento si procederà con la creazione del programma.
 
-1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **Ctrl**+**F5**.
+1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL** + **F5**.
 
    ![Menu Debug > Avvia senza eseguire debug](media/vs-2019/start-without-debugging.png)
 
@@ -394,7 +394,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
    Console.WriteLine("Hello " + name + "!")
    ```
 
-1. Eseguire nuovamente l'app premendo **Ctrl**+**F5**.
+1. Eseguire di nuovo l'app premendo **CTRL** + **F5**.
 
    Visual Studio ricompila l'app, viene aperta una finestra della console e viene richiesto il nome.
 
@@ -459,7 +459,7 @@ In primo luogo, rinominare la variabile `name`:
 
 ::: moniker range="vs-2017"
 
-10. Eseguire nuovamente il programma premendo **Ctrl**+**F5**. L'output è simile al seguente:
+10. Eseguire di nuovo il programma premendo **CTRL** + **F5**. L'output è simile al seguente:
 
     ![Finestra della console con output del programma](../media/overview-console-final.png)
 
@@ -467,7 +467,7 @@ In primo luogo, rinominare la variabile `name`:
 
 ::: moniker range=">=vs-2019"
 
-10. Eseguire nuovamente il programma premendo **Ctrl**+**F5**. L'output è simile al seguente:
+10. Eseguire di nuovo il programma premendo **CTRL** + **F5**. L'output è simile al seguente:
 
     ![Finestra della console con output del programma](../media/vs-2019/overview-console-final.png)
 
@@ -485,7 +485,7 @@ Impostare un punto di interruzione per visualizzare il valore della variabile `u
 
    ![Punto di interruzione nella riga di codice in Visual Studio](media/breakpoint.png)
 
-1. Avviare il debug selezionando **Debug** > di**avvio** o premendo **F5**.
+1. Avviare il debug selezionando **debug**  >  **Avvia debug** o premendo **F5**.
 
 1. Quando viene visualizzata la finestra della console e viene chiesto di immettere il nome, digitarlo e premere **INVIO**.
 

@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: f9f30dd3eaeb6905088e7eec9db1fa9cc2b0f32c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592959"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
@@ -23,18 +23,18 @@ Questa tabella elenca i tasti di scelta rapida disponibili per lavorare con gli 
 
 |**Per eseguire questa azione**|**Eseguire questa operazione**|
 | - |-----------------|
-|Creare un elemento|Premere **Ctrl**+**N**|
+|Creare un elemento|Premere **CTRL** + **N**|
 |Duplicare un elemento|Tenere premuto **Alt** e premere un tasto di direzione.|
 |Modificare il testo in un controllo|Premere **F2** (premere **Esc** per uscire)|
 |Selezionare un singolo elemento|Premere **Tab** per selezionare gli elementi nell'ordine in cui vengono visualizzati nel documento. È anche possibile selezionare gli elementi usando i tasti di direzione.|
 |Selezionare più elementi|Tenere premuto **Maiusc** e selezionare gli elementi uno per uno|
 |Selezionare più elementi non adiacenti|Tenere premuto **Ctrl** e selezionare il primo e l'ultimo elemento|
-|Spostare gli elementi selezionati|Premere i tasti di direzione. (è possibile tenere premuto **MAIUSC** per aumentare la distanza di spostamento per ogni pressione).|
+|Spostare gli elementi selezionati|Premere i tasti di direzione (è possibile tenere premuto **MAIUSC** per aumentare la distanza di spostamento per ogni pressione).|
 |Ruotare un elemento con incrementi di 15 gradi|Tenere premuto **Maiusc** e ruotare l'elemento|
-|Selezionare tutti gli elementi|Premere **Ctrl**+**A**|
-|Annullare la selezione di tutti gli elementi|Premere **Ctrl**+**Maiusc**+**A**|
+|Selezionare tutti gli elementi|Premere **CTRL** + **A**|
+|Annullare la selezione di tutti gli elementi|Premere **CTRL** + **MAIUSC** + **A**|
 |Mostrare o nascondere i punti di controllo degli elementi|Premere **F9**|
-|Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo sulla Finestra Proprietà, premere **Tab**. Premere **Ctrl**+**Tab** per impostare lo stato attivo sulla finestra Proprietà. È possibile utilizzare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
+|Selezionare una proprietà per un elemento|Con un elemento selezionato e lo stato attivo sulla Finestra Proprietà, premere **Tab**. (Usare **CTRL** + **Per impostare** lo stato attivo sulla finestra Proprietà.) È possibile utilizzare i tasti di direzione per selezionare i valori delle proprietà dagli elenchi a discesa.|
 
 ## <a name="document-outline-window-shortcuts"></a>Tasti di scelta rapida della finestra Struttura documento
 
@@ -42,11 +42,11 @@ La tabella seguente elenca i tasti di scelta rapida disponibili quando si lavora
 
 |**Per eseguire questa azione**|**Eseguire questa operazione**|
 | - |-----------------|
-|Nascondere gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL**+**H**|
-|Mostrare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**Maiusc**+**Ctrl**+**H**|
-|Bloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL**+**L**|
-|Sbloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**Maiusc**+**Ctrl**+**L**|
+|Nascondere gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL** + **H**|
+|Mostrare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**Sposta** + **CTRL** + **H**|
+|Bloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**CTRL** + **L**|
+|Sbloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|**Sposta** + **CTRL** + **L**|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Creazione di un'interfaccia utente tramite XAML Designer](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

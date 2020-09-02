@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157606"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
@@ -32,7 +32,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 </Target>  
 ```  
   
- Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio,  
+ Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio:  
   
 ```  
 <Target Name="AfterBuild" >  
@@ -63,7 +63,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
   Per dettagli e altre informazioni sull'ordine di compilazione delle destinazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione  
- Un elemento di destinazione può avere un attributo `Outputs` che specifica i metadati nel formato %(metadati). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio,  
+ Un elemento di destinazione può avere un attributo `Outputs` che specifica i metadati nel formato %(metadati). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio:  
   
 ```  
 <ItemGroup>  
@@ -100,4 +100,4 @@ Reference: 4.0
   
 ## <a name="see-also"></a>Vedere anche  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
- [Procedura: usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

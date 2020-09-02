@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac683ff6e7079478d5b4e642918df4e281a53f0b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645657"
 ---
 # <a name="full-text-search-tips"></a>Suggerimenti per la ricerca full-text
@@ -32,9 +32,9 @@ Uno dei metodi più utili per l'individuazione delle informazioni nella Guida co
 ### <a name="general-guidelines"></a>Linee guida generali
  Nella tabella seguente sono elencate alcune regole di base e linee guida per lo sviluppo di query di ricerca nella Guida.
 
-|Sintassi|DESCRIZIONE|
+|Sintassi|Descrizione|
 |------------|-----------------|
-|Distinzione fra maiuscole e minuscole|Le ricerche non distinguono tra maiuscole e minuscole. Sviluppare i criteri di ricerca usando indifferentemente caratteri maiuscoli o minuscoli. Ad esempio, "OLE" e "ole" restituiscono gli stessi risultati.|
+|Maiuscole/minuscole|Le ricerche non distinguono tra maiuscole e minuscole. Sviluppare i criteri di ricerca usando indifferentemente caratteri maiuscoli o minuscoli. Ad esempio, "OLE" e "ole" restituiscono gli stessi risultati.|
 |Combinazioni di caratteri|Non è possibile cercare solo singole lettere (a-z) o numeri (0-9). Se si tenta di cercare determinate parole riservate, come ad esempio "e", "da" e "con", queste verranno ignorate. Per altre informazioni, vedere "Parole ignorate nelle ricerche (parole non significative)" più avanti in questo argomento.|
 |Ordine di valutazione|Le query di ricerca vengono valutate da sinistra a destra.|
 
@@ -43,7 +43,7 @@ Uno dei metodi più utili per l'individuazione delle informazioni nella Guida co
 
 > [!IMPORTANT]
 > 1. La ricerca di frasi non è supportata. Se si specifica più di una parola in una stringa di ricerca, gli argomenti restituiti conterranno tutte le parole che sono state specificate ma non necessariamente la frase esatta.
->    2. Usare gli operatori logici per specificare la relazione tra le parole nella frase di ricerca. È possibile includere operatori logici, come ad esempio AND, OR, NOT e NEAR, per limitare la ricerca. Ad esempio, se si cerca "dichiarazione NEAR unione", i risultati della ricerca includeranno argomenti contenenti le parole "dichiarazione" e "unione" distanti non più di alcune parole una dall'altra. Per altre informazioni, vedere [Logical Operators in Search Expressions](../ide/logical-operators-in-search-expressions.md) (Operatori logici nelle espressioni di ricerca).
+>    2. Usare gli operatori logici per specificare la relazione tra le parole nella frase di ricerca. È possibile includere operatori logici, come ad esempio AND, OR, NOT e NEAR, per limitare la ricerca. Ad esempio, se si cerca "dichiarazione NEAR unione", i risultati della ricerca includeranno argomenti contenenti le parole "dichiarazione" e "unione" distanti non più di alcune parole una dall'altra. Per altre informazioni, vedere [operatori logici nelle espressioni di ricerca](../ide/logical-operators-in-search-expressions.md).
 
 ### <a name="filters"></a>Filtri
  È possibile limitare ulteriormente i risultati di ricerca usando gli operatori di ricerca avanzata. La Guida include tre categorie che è possibile usare per filtrare i risultati della ricerca full-text: titolo, codice e parola chiave. Per altre informazioni, vedere [Advanced Search Operators in Search Expressions](../ide/advanced-search-operators-in-search-expressions.md) (Operatori di ricerca avanzata nelle espressioni di ricerca).
