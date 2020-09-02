@@ -1,5 +1,5 @@
 ---
-title: Get_program | Microsoft Docs
+title: 'IDiaFrameData:: get_program | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d87f5c7fda25a901d44b9f511b9a92eb4471f845
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180007"
 ---
-# <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
+# <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera la stringa nel programma che viene usata per calcolare il set prima della chiamata alla funzione corrente di registri.  
+Recupera la stringa di programma utilizzata per calcolare il set di registri prima della chiamata alla funzione corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,23 +35,23 @@ HRESULT get_program ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce la stringa di programma.  
+ out Restituisce la stringa di programma.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- La stringa nel programma è una sequenza di macro che viene interpretata per stabilire il prologo. Ad esempio, un frame dello stack tipica potrebbe usare la stringa di programma `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. Il formato è una notazione polacca inversa, in cui gli operatori seguono gli operandi. `T0` rappresenta una variabile temporanea nello stack. Questo esempio viene eseguita la procedura seguente:  
+## <a name="remarks"></a>Osservazioni  
+ La stringa di programma è una sequenza di macro che viene interpretata per poter stabilire il prologo. Ad esempio, una tipica stack frame potrebbe utilizzare la stringa di programma `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="` . Il formato è la notazione polacca inversa, in cui gli operatori seguono gli operandi. `T0` rappresenta una variabile temporanea nello stack. L'esempio segue questa procedura:  
   
-1. Spostare i contenuti di registro `ebp` a `T0`.  
+1. Spostare il contenuto del registro `ebp` in `T0` .  
   
-2. Aggiungere `4` al valore nella `T0` per produrre un indirizzo, ottenere il valore da tale indirizzo e archiviare il valore nel registro `eip`.  
+2. Aggiungere `4` al valore in `T0` per produrre un indirizzo, ottenere il valore da tale indirizzo e archiviare il valore in Register `eip` .  
   
-3. Ottenere il valore rispetto all'indirizzo archiviato in `T0` e il valore memorizzato nel registro `ebp`.  
+3. Ottenere il valore dall'indirizzo archiviato in `T0` e archiviare il valore in Register `ebp` .  
   
-4. Aggiungere `8` al valore nella `T0` e il valore memorizzato nel registro `esp`.  
+4. Aggiungere `8` al valore in `T0` e archiviare il valore in Register `esp` .  
   
-   Si noti che la stringa nel programma è specifica per la CPU e la convenzione di chiamata impostato per la funzione rappresentata dallo stack frame corrente.  
+   Si noti che la stringa di programma è specifica della CPU e della convenzione di chiamata impostata per la funzione rappresentata dal stack frame corrente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

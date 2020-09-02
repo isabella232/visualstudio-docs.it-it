@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82167423"
 ---
 # <a name="csc-task"></a>Csc (attività)
@@ -44,7 +44,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .
 | `CodePage` | Parametro `Int32` facoltativo.<br /><br /> Specifica la tabella codici da usare per tutti i file del codice sorgente nella compilazione. Per altre informazioni, vedere [-codepage (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option). |
 | `DebugType` | Parametro `String` facoltativo.<br /><br /> Specifica il tipo di debug. `DebugType` può essere `full` o `pdbonly`. Il valore predefinito è `full`, che consente di associare un debugger a un programma in esecuzione. La specifica di `pdbonly` consente il debug del codice sorgente quando il programma viene avviato nel debugger, ma assembler viene visualizzato solo quando il programma in esecuzione è collegato al debugger.<br /><br /> Questo parametro esegue l'override del parametro `EmitDebugInformation`.<br /><br /> Per altre informazioni, vedere [-debug (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `DefineConstants` | Parametro `String` facoltativo.<br /><br /> Definisce i simboli del preprocessore. Per altre informazioni, vedere [-define (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option). |
-| `DelaySign` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che si vuole solo posizionare la chiave pubblica nell'assembly. Se `false`, specifica che si desidera un assembly con firma completa<br /><br /> Questo parametro ha effetto solo se usato con il parametro `KeyFile` o `KeyContainer`.<br /><br /> Per altre informazioni, vedere [-delaysign (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
+| `DelaySign` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che si vuole solo posizionare la chiave pubblica nell'assembly. Se `false` , specifica che si desidera un assembly con firma completa<br /><br /> Questo parametro ha effetto solo se usato con il parametro `KeyFile` o `KeyContainer`.<br /><br /> Per altre informazioni, vedere [-delaysign (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
 | `Deterministic` | Parametro `Boolean` facoltativo.<br/><br/> Se `true`, l'output del compilatore è un assembly il cui contenuto binario è identico in tutte le compilazioni se gli input sono identici.<br/><br/>Per altre informazioni, vedere [-deterministic (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Parametro `String` facoltativo.<br /><br /> Specifica l'elenco di avvisi da disabilitare. Per ulteriori informazioni, vedere [-nowarn (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option). |
 | `DocumentationFile` | Parametro `String` facoltativo.<br /><br /> Elabora commenti sulla documentazione in un file XML. Per ulteriori informazioni, vedere [-doc (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option). |
@@ -60,7 +60,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Csc` .
 | `ModuleAssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica il nome dell'assembly di cui fa parte il modulo. |
 | `NoConfig` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, indica al compilatore di non eseguire la compilazione con il file *csc.rsp*. Per altre informazioni, vedere [-noconfig (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option). |
 | `NoLogo` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, elimina la visualizzazione dei messaggi informativi del compilatore. Per altre informazioni, vedere [-nologo (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option). |
-| `NoStandardLib` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, impedisce l'importazione di *mscorlib. dll*, che definisce l'intero spazio dei nomi System. Usare questo parametro se si vuole definire o creare uno spazio dei nomi e oggetti di sistema personalizzati. Per altre informazioni, vedere [-nostdlib (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
+| `NoStandardLib` | Parametro `Boolean` facoltativo.<br /><br /> Se `true` , impedisce l'importazione di *mscorlib.dll*, che definisce l'intero spazio dei nomi System. Usare questo parametro se si vuole definire o creare uno spazio dei nomi e oggetti di sistema personalizzati. Per altre informazioni, vedere [-nostdlib (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
 | `NoWin32Manifest` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, non includere il manifesto Win32 predefinito. |
 | `Optimize` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, abilita le ottimizzazioni. Se `false`, disabilita le ottimizzazioni. Per altre informazioni, vedere [-optimize (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option). |
 | `OutputAssembly` | Parametro di ouput facoltativo `String`.<br /><br /> Specifica il nome del file di output. Per altre informazioni, vedere [-out (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option). |
@@ -97,5 +97,5 @@ Nell'esempio seguente viene usata l'attività `Csc` per compilare un eseguibile 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

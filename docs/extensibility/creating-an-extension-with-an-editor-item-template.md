@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 91daa7e195435f33b93e6286cb19d820b4418d48
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903847"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Creare un'estensione con un modello di elemento dell'editor
@@ -36,7 +36,7 @@ ms.locfileid: "85903847"
 
     - *EditorClassifier1ClassificationDefinition.cs* contiene la `EditorClassifier1ClassificationDefinition` classe.
 
-    - *EditorClassifier1Format.cs* contiene la `EditorClassifier1Format` classe.
+    - *EditorClassifier1Format.cs* contiene la `EditorClassifier1Format`  classe.
 
     - *EditorClassifier1Provider.cs* contiene la `EditorClassifier1Provider` classe.
 

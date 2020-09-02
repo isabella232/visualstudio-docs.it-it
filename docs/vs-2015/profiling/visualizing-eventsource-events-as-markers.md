@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690210"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizzazione di eventi EventSource come marcatori
@@ -40,12 +40,12 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 |win:LogAlways|Normale|  
 |win:Critical|Critico|  
 |win:Error|Critico|  
-|win:Warning|High|  
+|win:Warning|Alta|  
 |win:Informational|Normale|  
-|win:Verbose|Bassa|  
-|Superiore a win:verbose|Bassa|  
+|win:Verbose|Basso|  
+|Superiore a win:verbose|Basso|  
   
-### <a name="series-name"></a>Nome serie  
+### <a name="series-name"></a>Nome della serie  
  Il nome dell'attività dell'evento viene usato per il nome della serie. Il nome della serie è vuoto se è non stata definita alcuna attività per l'evento.  
   
 ### <a name="category"></a>Category  
@@ -62,11 +62,11 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
   
 |Valore cvType|Tipo di marcatore risultante|  
 |------------------|---------------------------|  
-|0|Messaggio|  
+|0|Message|  
 |1|Inizio sezione span|  
 |2|Fine sezione span|  
 |3|Flag|  
-|Tutti gli altri valori|Messaggio|  
+|Tutti gli altri valori|Message|  
   
 ### <a name="importance"></a>Importanza  
  È possibile usare il campo `cvImportance`, un byte, per controllare l'impostazione dell'importanza per un evento EventSource. È tuttavia consigliabile controllare l'importanza visualizzata di un evento usando il relativo livello.  
@@ -75,13 +75,13 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 |------------------------|---------------------------------------|  
 |0|Normale|  
 |1|Critico|  
-|2|High|  
-|3|High|  
+|2|Alta|  
+|3|Alta|  
 |4|Normale|  
-|5|Bassa|  
-|Tutti gli altri valori|Bassa|  
+|5|Basso|  
+|Tutti gli altri valori|Basso|  
   
-### <a name="series-name"></a>Nome serie  
+### <a name="series-name"></a>Nome della serie  
  Usare il campo evento `cvSeries`, una stringa, per controllare il nome della serie assegnato dal visualizzatore di concorrenza a un evento EventSource.  
   
 ### <a name="category"></a>Category  

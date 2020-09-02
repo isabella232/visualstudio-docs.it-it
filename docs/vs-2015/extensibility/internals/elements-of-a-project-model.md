@@ -13,40 +13,40 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0f3b07068939e34b5c9e9487761177c0e12f5654
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700129"
 ---
 # <a name="elements-of-a-project-model"></a>Elementi di un modello di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Le interfacce e implementazioni di tutti i progetti in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] condividono una struttura di base: il modello di progetto per il tipo di progetto. Nel modello di progetto che è il pacchetto VSPackage si sta sviluppando, è creare oggetti conformi alle decisioni di progettazione e funziona con la funzionalità globale fornita dall'IDE. Anche se si controllano come viene mantenuto un elemento del progetto, ad esempio, non si controlla la notifica che un file deve essere persistente. Quando un utente inserisce lo stato attivo su un elemento di progetto aperto e sceglie **salvare** nel **File** menu nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menu barra, il codice del tipo di progetto devono intercettare il comando dall'IDE, il file della e Invia notifica all'IDE che non sono più viene modificato il file.  
+Le interfacce e le implementazioni di tutti i progetti in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] condividono una struttura di base, ovvero il modello di progetto per il tipo di progetto. Nel modello di progetto, ovvero il pacchetto VSPackage che si sta sviluppando, è possibile creare oggetti conformi alle decisioni di progettazione e collaborare con le funzionalità globali fornite dall'IDE. Sebbene sia possibile controllare il modo in cui un elemento del progetto viene reso permanente, ad esempio, non si controlla la notifica che un file deve essere reso permanente. Quando un utente posiziona lo stato attivo su un elemento di progetto aperto e sceglie **Salva** dal menu **file** nella [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] barra dei menu, il codice del tipo di progetto deve intercettare il comando dall'IDE, salvare in modo permanente il file e inviare la notifica all'IDE che il file non è più modificato.  
   
- Il pacchetto VSPackage interagisce con l'IDE tramite i servizi che forniscono l'accesso alle interfacce di IDE. Ad esempio, tramite il servizio specifico, di monitoraggio e la route comandi e si forniscono informazioni sul contesto per le selezioni effettuate nel progetto. Tutte le funzionalità IDE globale necessari per il pacchetto VSPackage sono fornita da servizi. Per altre informazioni sui servizi, vedere [come: Ottenere un servizio](../../extensibility/how-to-get-a-service.md).  
+ Il pacchetto VSPackage interagisce con l'IDE tramite servizi che forniscono accesso alle interfacce IDE. Ad esempio, tramite particolari servizi, è possibile monitorare e instradare i comandi e fornire informazioni di contesto per le selezioni effettuate nel progetto. Tutte le funzionalità dell'IDE globale necessarie per il pacchetto VSPackage sono fornite dai servizi. Per ulteriori informazioni sui servizi, vedere [procedura: ottenere un servizio](../../extensibility/how-to-get-a-service.md).  
   
  Altre considerazioni sull'implementazione:  
   
 - Un modello di progetto singolo può contenere più di un tipo di progetto.  
   
-- Tipi di progetto e la factory di progetto associati vengono registrate in modo indipendente con GUID.  
+- I tipi di progetto e le factory del progetto supervisore sono registrati in modo indipendente con i GUID.  
   
-- Ogni progetto deve avere un file di modello o una procedura guidata per inizializzare il nuovo file di progetto quando un utente crea un nuovo progetto tramite il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dell'interfaccia utente. Ad esempio, il [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] modelli inizializzare cosa creò vcproj (file).  
+- Ogni progetto deve disporre di un file modello o di una procedura guidata per inizializzare il nuovo file di progetto quando un utente crea un nuovo progetto tramite l' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfaccia utente. Ad esempio, i [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] modelli inizializzano i file con estensione vcproj.  
   
-  La figura seguente mostra le interfacce primarie, servizi e gli oggetti che compongono l'implementazione di un progetto tipico. È possibile usare l'helper dell'applicazione, HierUtil7, per creare gli oggetti sottostanti e altri standard di programmazione. Per altre informazioni sull'helper HierUtil7 dell'applicazione, vedere [non incluso nella Build: Uso delle classi progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  Nella figura seguente sono illustrate le interfacce, i servizi e gli oggetti primari che compongono una tipica implementazione del progetto. È possibile usare l'helper dell'applicazione, HierUtil7, per creare gli oggetti sottostanti e altri standard di programmazione. Per altre informazioni sull'helper dell'applicazione HierUtil7, vedere [not in Build: uso delle classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
-  ![Rappresentazione grafica di Visual Studio del modello di progetto](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+  ![Rappresentazione grafica dei modelli di progetto Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
   modello di progetto  
   
-  Per altre informazioni sulle interfacce e i servizi elencati nel diagramma precedente e altre interfacce facoltative non incluse nel diagramma, vedere [componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md).  
+  Per ulteriori informazioni sulle interfacce e i servizi elencati nel diagramma precedente e altre interfacce facoltative non incluse nel diagramma, vedere componenti di [base del modello di progetto](../../extensibility/internals/project-model-core-components.md).  
   
-  I progetti possono supportare i comandi e pertanto deve implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia per partecipare al routing dei comandi mediante il contesto del comando GUID.  
+  I progetti possono supportare i comandi e pertanto devono implementare l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia per partecipare al routing dei comandi tramite i GUID del contesto del comando.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Non incluso nella Build: Uso delle classi progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Elenco di controllo: creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Not in Build: uso delle classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)   
- [Creazione di istanze del progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
- [Procedura: Ottenere un servizio](../../extensibility/how-to-get-a-service.md)   
+ [Creazione di istanze di progetto tramite Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
+ [Procedura: ottenere un servizio](../../extensibility/how-to-get-a-service.md)   
  [Creazione di tipi di progetto](../../extensibility/internals/creating-project-types.md)

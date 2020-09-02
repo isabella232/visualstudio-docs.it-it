@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 7ca84f1edfc3290fe53e00a5b7f8c85f07b0c66b
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624175"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: Eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud di Azure da Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: Eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud di Azure da Visual Studio
 
 Per sfruttare i servizi di hosting e scalabilità di Azure, è possibile eseguire la migrazione e la distribuzione dell'applicazione Web in un servizio cloud di Azure. Sono necessarie solo modifiche minime al codice. Questo articolo illustra solo la procedura di distribuzione in un servizio cloud; per il Servizio app, vedere [Distribuire un'app Web nel Servizio app di Azure](/azure/app-service/app-service-deploy-local-git).
 
@@ -38,7 +38,7 @@ Per sfruttare i servizi di hosting e scalabilità di Azure, è possibile eseguir
 
 Eventuali avvisi o errori visualizzati indicano problemi da risolvere prima di eseguire la distribuzione in Azure, ad esempio assembly mancanti.
 
-Se si compila l'applicazione, la si esegue in locale con l'emulatore di calcolo o la si pubblica in Azure, è possibile che venga visualizzato l'errore seguente: "Il percorso specificato, il nome file o entrambi sono troppo lunghi". Questo errore indica che la lunghezza del nome completo del progetto di Azure è superiore a 146 caratteri. Per correggere il problema, spostare la soluzione in una cartella diversa con un percorso più breve.
+Se si compila l'applicazione, la si esegue in locale con l'emulatore di calcolo o la si pubblica in Azure, è possibile che venga visualizzato l'errore "Il percorso e/o il nome file specificato è troppo lungo". Questo errore indica che la lunghezza del nome completo del progetto di Azure è superiore a 146 caratteri. Per correggere il problema, spostare la soluzione in una cartella diversa con un percorso più breve.
 
 Per altre informazioni su come gestire eventuali avvisi come errori, vedere [Configurare un progetto di servizio cloud di Azure con Visual Studio](vs-azure-tools-configuring-an-azure-project.md).
 
@@ -52,15 +52,15 @@ Per altre informazioni su come gestire eventuali avvisi come errori, vedere [Con
 Se si ha una stringa di connessione per l'applicazione Web che usa un database SQL Server locale, è necessario eseguire la migrazione del database al database SQL di Azure e aggiornare la stringa di connessione. Per istruzioni su questo processo, vedere gli argomenti seguenti:
 
 - [Migrazione di un database SQL Server al database SQL nel cloud](/azure/sql-database/sql-database-cloud-migrate)
-- [Usare .NET (C#) con Visual Studio Code per connettersi a un database SQL ed eseguire query](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
+- [Usare .NET (C#) con Visual Studio Code per connettersi a un database SQL di Azure ed eseguire query](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
 
 ## <a name="publish-the-application-to-azure-cloud-service"></a>Pubblicare l'applicazione in un servizio cloud di Azure
 
 1. Creare gli account di archiviazione e dei servizi cloud necessari nella sottoscrizione di Azure, come descritto in [Preparare la pubblicazione o la distribuzione di un'applicazione di Azure da Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. In Visual Studio fare clic con il pulsante destro del mouse sul progetto di applicazione e selezionare **Pubblica in Microsoft Azure...** (diverso dal comando "Pubblica...").
-1. Nella finestra **Pubblica applicazione Azure** visualizzata, accedere usando l'account con la sottoscrizione di Azure e scegliere **Avanti >** .
+1. Nella finestra **Pubblica applicazione Azure** visualizzata, accedere usando l'account con la sottoscrizione di Azure e scegliere **Avanti >**.
 1. Nella scheda **Impostazioni > Impostazioni comuni** selezionare il servizio cloud di destinazione dall'elenco a discesa **Servizio cloud**, insieme all'ambiente e alle configurazioni selezionate.
-1. In **Impostazioni > Impostazioni avanzate** selezionare l'account di archiviazione da usare e quindi scegliere **Avanti >** .
+1. In **Impostazioni > Impostazioni avanzate** selezionare l'account di archiviazione da usare e quindi scegliere **Avanti >**.
 1. In **Diagnostica** decidere se si vuole inviare informazioni ad Application Insights.
 1. Selezionare **Avanti >** per visualizzare un riepilogo e quindi selezionare **Pubblica** per avviare la distribuzione.
 1. Visual Studio apre una finestra Log attività in cui è possibile monitorare lo stato di avanzamento del processo:
@@ -82,7 +82,7 @@ La tabella seguente fornisce informazioni dettagliate sull'avvio dell'applicazio
 | Applicazione Web ASP.NET<br/>(inclusi MVC 2, MVC 3, MVC 4) | Nella scheda **Distribuzione** selezionare l'URL per **Log attività di Azure**. |
 | Applicazione Web ASP.NET vuota | Se si ha una pagina `.aspx` predefinita nell'applicazione, nella scheda **Distribuzione** selezionare l'URL per **Log attività di Azure**. Per passare a una pagina diversa, in un browser immettere un URL nel formato seguente: `<deployment_url>/<page_name>.aspx` |
 | Applicazione Silverlight<br/>Applicazione aziendale di Silverlight<br/>Applicazione di navigazione Silverlight | Passare alla pagina specifica dell'applicazione usando il formato di URL seguente: `<deployment_url>/<page_name>.aspx` |
-| Applicazione del servizio WCF<br/>Applicazione servizi flusso di lavoro WCF | Impostare il file `.svc` come pagina iniziale del progetto di servizio WCF. Passare a `<deployment_url>/<service_file>.svc` |
+| Applicazione di servizio WCF<br/>Applicazione di servizio del flusso di lavoro WCF | Impostare il file `.svc` come pagina iniziale del progetto di servizio WCF. Passare a `<deployment_url>/<service_file>.svc` |
 | Entità dinamiche ASP.NET<br/>Linq ASP.NET Dynamic Data a SQL | Aggiornare la stringa di connessione, come descritto nella sezione seguente. Passare quindi a `<deployment_url>/<page_name>.aspx`. Per Linq to SQL è necessario usare un database SQL di Azure. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Aggiornamento di una stringa di connessione per entità dinamiche ASP.NET
@@ -119,8 +119,8 @@ Le applicazioni che possono essere migrate e pubblicate in servizi cloud devono 
 | Silverlight | Applicazione aziendale di Silverlight |
 | Silverlight | Applicazione di navigazione Silverlight |
 | WCF | Applicazione di servizio WCF |
-| WCF | Applicazione servizi flusso di lavoro WCF |
-| Flusso di lavoro | Applicazione servizi flusso di lavoro WCF |
+| WCF | Applicazione di servizio del flusso di lavoro WCF |
+| Flusso di lavoro | Applicazione di servizio del flusso di lavoro WCF |
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -1,5 +1,5 @@
 ---
-title: Libreria di controlli (codice gestito) Web | Microsoft Docs
+title: Libreria di controlli Web (codice gestito) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,16 +18,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688169"
 ---
 # <a name="web-control-library-managed-code"></a>Libreria di controlli Web (Codice gestito)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il modello di progetto Libreria di controlli Web consente di creare una DLL. Poiché la libreria di classi è una DLL, non è possibile eseguirla direttamente. È necessario creare una pagina di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in cui sia incorporato il controllo. Per altre informazioni, vedere [modello libreria di controlli Web](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
+Il modello di progetto Libreria di controlli Web consente di creare una DLL. Poiché la libreria di classi è una DLL, non è possibile eseguirla direttamente. È necessario creare una pagina di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in cui sia incorporato il controllo. Per altre informazioni, vedere [modello di libreria di controlli Web](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Per eseguire il debug di una libreria di controlli Web (procedura 1)  
   
@@ -43,11 +43,11 @@ Il modello di progetto Libreria di controlli Web consente di creare una DLL. Poi
   
 6. Aprire una finestra del browser con un URL che punta al test harness. Quando verrà raggiunto un punto di interruzione nel controllo sarà possibile iniziare il debug.  
   
-### <a name="to-debug-a-web-control-library-method-2"></a>Eseguire il debug di una libreria di controlli Web (il metodo 2)  
+### <a name="to-debug-a-web-control-library-method-2"></a>Per eseguire il debug di una libreria di controlli Web (metodo 2)  
   
 1. Creare il progetto dell'applicazione host e il progetto del controllo Web nella stessa soluzione.  
   
-2. Nelle **Esplora soluzioni**, fare doppio clic su applicazione host e scegliere **Aggiungi riferimento**.  
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sull'applicazione host e scegliere **Aggiungi riferimento**.  
   
 3. Aggiungere un riferimento al progetto del controllo Web.  
   

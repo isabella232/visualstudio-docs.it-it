@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 576f403d92ae1c80d9c7fba1757278ae5c5f25ac
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592594"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integrazione di valori letterali XML con XML Schema Explorer
 
-Visual Basic supporta i valori letterali XML, il che significa che è possibile incorporare frammenti XML direttamente nel codice di Visual Basic. Per altre informazioni, vedere [Cenni preliminari sui valori letterali XML](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-overview).
+Visual Basic supporta valori letterali XML; ciò significa che è possibile incorporare direttamente frammenti XML nel codice Visual Basic. Per altre informazioni, vedere [Cenni preliminari sui valori letterali XML](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-overview).
 
-## <a name="how-to"></a>Procedura
+## <a name="how-to"></a>Procedure
 
 Se un file XSD nel progetto Visual Basic include un valore letterale XML, è possibile visualizzare il set di XML Schema in **XML Schema Explorer**. Per visualizzare il set di schemi associato a un valore letterale XML, fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o su un'importazione di spazi dei nomi XML e selezionare **Mostra in Schema Explorer**.
 

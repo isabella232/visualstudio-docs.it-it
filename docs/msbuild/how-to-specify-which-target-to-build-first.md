@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072528"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procedura: Specificare quale destinazione compilare per prima
 
-Un file di progetto può contenere uno o più elementi `Target` che definiscono come viene compilato il progetto. Il motore di Microsoft Build Engine (MSBuild) compila la prima destinazione trovata e `DefaultTargets` tutte `InitialTargets` le dipendenze, a meno che il file di progetto non contenga un attributo, un attributo o una destinazione non venga specificato nella riga di comando utilizzando l'opzione **-target.**
+Un file di progetto può contenere uno o più elementi `Target` che definiscono come viene compilato il progetto. Il motore di Microsoft Build Engine (MSBuild) compila la prima destinazione individuata e tutte le dipendenze, a meno che il file di progetto non contenga un `DefaultTargets` attributo, un `InitialTargets` attributo o una destinazione venga specificata dalla riga di comando usando l'opzione **-target** .
 ## <a name="use-the-initialtargets-attribute"></a>Usare l'attributo InitialTargets
 
 L'attributo `InitialTargets` dell'elemento `Project` specifica una destinazione che verrà eseguita per prima, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.
@@ -42,7 +42,7 @@ L'attributo `InitialTargets` dell'elemento `Project` specifica una destinazione 
 
 ## <a name="use-the-defaulttargets-attribute"></a>Usare l'attributo DefaultTargets
 
- L'attributo `DefaultTargets` dell'elemento `Project` specifica la destinazione o le destinazioni che vengono compilate se non viene specificata una destinazione in modo esplicito nella riga di comando. Se le destinazioni `InitialTargets` vengono `DefaultTargets` specificate in entrambi gli attributi e e non viene `InitialTargets` specificata alcuna destinazione `DefaultTargets` nella riga di comando, MSBuild esegue le destinazioni specificate nell'attributo seguito dalle destinazioni specificate nell'attributo.
+ L'attributo `DefaultTargets` dell'elemento `Project` specifica la destinazione o le destinazioni che vengono compilate se non viene specificata una destinazione in modo esplicito nella riga di comando. Se vengono specificate destinazioni in entrambi gli `InitialTargets` `DefaultTargets` attributi e e nella riga di comando non è specificata alcuna destinazione, MSBuild esegue le destinazioni specificate nell' `InitialTargets` attributo seguito dalle destinazioni specificate nell' `DefaultTargets` attributo.
 
 #### <a name="to-specify-one-default-target"></a>Per specificare una destinazione predefinita
 
@@ -60,17 +60,17 @@ L'attributo `InitialTargets` dell'elemento `Project` specifica una destinazione 
 
 ## <a name="use-the--target-switch"></a>Usare l'opzione -target
 
- Se una destinazione predefinita non è definita nel file di progetto o se non si desidera utilizzare tale destinazione predefinita, è possibile utilizzare la riga di comando switch **-target** per specificare una destinazione diversa. La destinazione o le destinazioni specificate con l'opzione `DefaultTargets` **-target** vengono eseguite anziché le destinazioni specificate dall'attributo. Le destinazioni specificate nell'attributo `InitialTargets` vengono eseguite sempre per prime.
+ Se una destinazione predefinita non è definita nel file di progetto o se non si vuole usare tale destinazione predefinita, è possibile usare la riga di comando switch **-target** per specificare un'altra destinazione. La destinazione o le destinazioni specificate con l'opzione **-target** vengono eseguite al posto delle destinazioni specificate dall' `DefaultTargets` attributo. Le destinazioni specificate nell'attributo `InitialTargets` vengono eseguite sempre per prime.
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Per usare per prima una destinazione diversa da quella predefinita
 
-- Specificare la destinazione come prima destinazione utilizzando l'opzione della riga di comando **-target.** Ad esempio:
+- Specificare la destinazione come prima destinazione utilizzando l'opzione della riga di comando **-target** . Ad esempio:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Per usare per prime più destinazioni diverse da quelle predefinite
 
-- Elencare le destinazioni, separate da punti e virgola o virgole, utilizzando l'opzione della riga di comando **-target.** Ad esempio:
+- Elencare le destinazioni, separate da punti e virgola o virgole, usando l'opzione della riga di comando **-target** . Ad esempio:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82153044"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
@@ -40,7 +40,7 @@ In questa sezione viene descritto come creare un progetto unit test.
       }
    ```
 
-1. Selezionare il nodo della soluzione in **Esplora soluzioni**. Quindi, dalla barra dei menu superiore, selezionare **file** > **Aggiungi** > **nuovo progetto**.
+1. Selezionare il nodo della soluzione in **Esplora soluzioni**. Quindi, dalla barra dei menu superiore, selezionare **file**  >  **Aggiungi**  >  **nuovo progetto**.
 
 1. Nella finestra di dialogo Nuovo progetto trovare e selezionare un modello di progetto di unit test per il framework di test che si vuole usare.
 
@@ -243,7 +243,7 @@ Per creare unit test che usano [NUnit](https://nunit.org/):
 
 6. Eseguire il test da **Esplora test** o facendo clic con il pulsante destro del mouse sul codice di test e scegliendo **Esegui test**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Procedura dettagliata: Creare ed eseguire unit test per codice gestito](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Comando Crea unit test](create-unit-tests-menu.md)

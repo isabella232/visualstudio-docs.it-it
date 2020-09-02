@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87454605"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compila codice TypeScript (ASP.NET Core)
@@ -68,7 +68,7 @@ Se Visual Studio è installato, il node.exe in bundle verrà automaticamente sel
    }
    ```
 
-   In questo esempio:
+   Esempio:
    - *include* indica al compilatore dove trovare i file typescript (*. TS).
    - l'opzione *outDir* specifica la cartella di output per i file JavaScript semplici che vengono traspilati dal compilatore typescript.
    - l'opzione *sourceMap* indica se il compilatore genera file *sourceMap* .
@@ -110,7 +110,7 @@ Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno
 
 ### <a name="nuget-package-structure-details"></a>Dettagli della struttura dei pacchetti NuGet
 
-`Microsoft.TypeScript.MSBuild.nupkg`contiene due cartelle principali:
+`Microsoft.TypeScript.MSBuild.nupkg` contiene due cartelle principali:
 
 - cartella di *compilazione*
 

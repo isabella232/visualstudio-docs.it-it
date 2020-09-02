@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738067"
 ---
 # <a name="debugging-wcf-services"></a>Debug dei servizi WCF
@@ -29,7 +29,7 @@ ms.locfileid: "72738067"
 
  [Procedura: eseguire istruzioni nei servizi WCF](../debugger/how-to-step-into-wcf-services.md) Viene illustrato il supporto del debugger per l'esecuzione di un'istruzione in un servizio WCF.
 
- [Procedura: eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Viene descritto come eseguire il debug di un servizio WCF che viene eseguito all'esterno di IIS o del server di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+ [Procedura: eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Viene descritto come eseguire il debug di un servizio WCF che viene eseguito all'esterno di IIS o del [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] server di sviluppo.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

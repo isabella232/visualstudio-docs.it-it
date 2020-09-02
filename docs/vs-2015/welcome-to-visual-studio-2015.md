@@ -14,10 +14,10 @@ caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3252ea7cada8261a97832e4e621849e0fb0c91e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543715"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Benvenuti in Visual Studio 2015
@@ -38,7 +38,7 @@ Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispos
 
  Per installare Visual Studio 2015, scaricarlo dalla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/). Per altre informazioni sul processo di installazione, vedere [installare Visual Studio 2015](./install/install-visual-studio-2015.md).
 
-## <a name="extend-visual-studio"></a>Estendere Visual Studio
+## <a name="extend-visual-studio"></a>Estensione di Visual Studio
  Aggiungere l'estensione di Visual Studio in modo da includere uno strumento o uno script che si usa spesso durante la codifica. È possibile creare voci di menu e finestre degli strumenti personalizzate per integrare i propri strumenti nell'ambiente IDE di Visual Studio. È possibile estendere l'editor di Visual Studio per analizzare e correggere il codice o aggiungere un nuovo tipo di progetto in modo da includere solo ciò che è necessario.
 
  Per trovare la versione più recente degli strumenti di estendibilità di Visual Studio (VS SDK), vedere [Visual Studio SDK](./extensibility/visual-studio-sdk.md).

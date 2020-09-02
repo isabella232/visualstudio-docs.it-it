@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149637"
 ---
 # <a name="generatebootstrapper-task"></a>Attività GenerateBootstrapper
@@ -66,7 +66,7 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
   
 - `BootstrapperItems`  
   
-   Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.  
+   Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.  
   
    Specifica i prodotti da compilare nel programma di avvio automatico. Gli elementi passati a questo parametro devono avere la sintassi seguente:  
   
@@ -97,7 +97,7 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
   
   - `HomeSite`: indica che il prerequisito è ospitato dal fornitore del componente.  
   
-  - `Relative`: Indica che il prerequisito è nella stessa posizione dell'applicazione.  
+  - `Relative`: indica che il prerequisito è nella stessa posizione dell'applicazione.  
   
   - `Absolute`: indica che tutti i componenti devono trovarsi in un URL centralizzato. Questo valore deve essere usato con il parametro di input `ComponentsUrl`.  
   
@@ -151,8 +151,8 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
   
    Se `true`, il programma di avvio automatico esegue la convalida XSD sugli elementi del programma di avvio automatico di input specificati. Il valore predefinito di questo parametro è `false`.  
   
-## <a name="remarks"></a>Note  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Osservazioni  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente usa l'attività `GenerateBootstrapper` per installare un'applicazione che deve avere [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] installato come prerequisito.  
@@ -180,4 +180,4 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

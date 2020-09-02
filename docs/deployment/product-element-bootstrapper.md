@@ -1,5 +1,5 @@
 ---
-title: '&lt;Prodotto&gt; elemento (programma di avvio automatico) | Microsoft Docs'
+title: '&lt;&gt;Elemento Product (programma di avvio automatico) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747444"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Prodotto&gt; elemento (programma di avvio automatico)
-Il `Product` elemento è l'elemento XML di primo livello all'interno di un file di prodotto.
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Elemento Product (programma di avvio automatico)
+L' `Product` elemento è l'elemento XML di primo livello all'interno di un file di prodotto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -138,14 +138,14 @@ ProductCode
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- Il `Product` elemento è obbligatorio in un file di prodotto. Include l'attributo seguente.
+ L' `Product` elemento è obbligatorio in un file di prodotto. Ha l'attributo seguente.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`ProductCode`|Identificatore univoco per il prodotto.|
 
 ## <a name="example"></a>Esempio
- Esempio di codice seguente illustra un file di prodotto completo per l'installazione di .NET Framework.
+ Nell'esempio di codice seguente viene illustrato un file di prodotto completo per l'installazione del .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -250,4 +250,4 @@ ProductCode
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
+- [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)

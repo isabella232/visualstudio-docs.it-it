@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62dddacaea1846c8e5d5da404ad7a16fde90f209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662409"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Editor di testo
@@ -29,7 +29,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 ## <a name="general"></a>Generale
  `DTE.Properties("TextEditor", "General")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Se `True`, premendo escape in presenza di una selezione si determina lo spostamento del punto di inserimento nella posizione in cui è iniziata l'azione che ha creato la selezione. `False` consente di spostare il punto di inserimento all'altra estremità della selezione.|
 |DragNDropTextEditing|Get/Set (Boolean)|Determina se è possibile trascinare un'area di testo selezionata da una posizione a un'altra nel documento tramite operazioni Copia o Taglia/Incolla.|
@@ -48,7 +48,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 
  Le opzioni dell'editor `PlainText` influiscono sulle impostazioni dell'editor al momento della modifica dei file di testo. Ogni linguaggio di programmazione e il pacchetto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano impostazioni specifiche dell'**editor di testo**. Ad esempio, per visualizzare o modificare le impostazioni dell'editor di [!INCLUDE[csprcs](../../includes/csprcs-md.md)], utilizzare `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Per le impostazioni dell'editor di **Script SQL** usare `DTE.Properties("TextEditor", "SQL ")`.
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Determina se l'elenco di membri disponibile viene visualizzato automaticamente quando viene digitato un punto dopo un riferimento a una variabile.|
 |AutoListParams|Get/Set (Boolean)|Determina se la descrizione di un elenco di argomenti viene visualizzata automaticamente quando viene digitata una parentesi "(" dopo il nome di una funzione.|
@@ -57,8 +57,8 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 |WordWrap|Get/Set (Boolean)|Determina se nella visualizzazione esiste un ritorno a capo delle righe lunghe alla fine delle parole. Impostando questo valore su `true`, l'elemento della proprietà `VirtualSpace` presente in questo elenco verrà impostato su `false`.|
 |WordWrapGlyphs|Get/Set (Boolean)|Consente di visualizzare un glifo alla fine di una riga, a indicare un ritorno a capo automatico nella riga successiva.|
 |EnableLeftClickForURLs|Get/Set (Boolean)|Determina se nell'editor vengono sottolineati gli URL e se è sufficiente fare clic sul pulsante sinistro del mouse per passare all'URL nel browser registrato del sistema.|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Determina lo stile di rientro: Predefinito, Intelligenti o Nessuno.|
-|TabSize|Get/Set (Long)|Rappresenta il numero di spazi che equivale a una tabulazione. L'impostazione di un intero esterno all'intervallo compreso tra 1 e 60 (inclusi) ha esito negativo.|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>) |Determina lo stile di rientro: Predefinito, Intelligenti o Nessuno.|
+|TabSize|Get/Set (Long)|Rappresenta il numero di spazi che equivalgono a una tabulazione. L'impostazione di un numero intero non compreso nell'intervallo da 1 a 60 (inclusi) ha esito negativo.|
 |InsertTabs|Get/Set (Boolean)|Se `True`, i caratteri di tabulazione vengono utilizzati per i rientri.|
 |IndentSize|Get/Set (Long)|Rappresenta il numero di spazi che equivale a un livello di rientro. L'impostazione di un valore integer esterno all'intervallo compreso tra 1 e 60 (inclusi) ha esito negativo.|
 |ShowLineNumbers|Get/Set (Boolean)|Determina se nella visualizzazione del documento principale dell'editor sono presenti i numeri delle righe lungo il margine sinistro.|

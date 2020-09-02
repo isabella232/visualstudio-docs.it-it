@@ -34,13 +34,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80472828"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo \> Opzioni: Generale dell'editor di testo
+# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: editor di testo \> generale
 
 Questa finestra di dialogo consente di modificare le impostazioni globali di Visual Studio Code e dell'editor di testo. Per visualizzare questa finestra di dialogo, selezionare **Opzioni** nel menu **Strumenti**, espandere la cartella **Editor di testo** e quindi selezionare **Generale**.
 
@@ -72,7 +72,7 @@ Se selezionata, è possibile premere **CTRL** e passare il mouse su un elemento 
 
 Selezionare la casella di controllo **Apri definizione in visualizzazione rapida** per visualizzare la definizione dell'elemento selezionato in una finestra senza spostarsi dalla posizione corrente nell'editor del codice.
 
-## <a name="display"></a>Visualizzazione
+## <a name="display"></a>Schermo
 
 ### <a name="selection-margin"></a>Margine selezione
 
@@ -94,15 +94,15 @@ Quando questa opzione è selezionata, viene visualizzata una casella grigia into
 
 Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai blocchi di codice strutturato, che consentono di identificare facilmente i singoli blocchi di codice.
 
-### <a name="show-file-health-indicator"></a>Mostra indicatore di integrità del file
+### <a name="show-file-health-indicator"></a>Mostra indicatore di integrità file
 
-Quando questa opzione è selezionata, nell'angolo inferiore sinistro dell'editor verrà visualizzata una barra di stato dell'indicatore di integrità del file (errori, avvisi).
+Quando questa opzione è selezionata, nella parte inferiore sinistra dell'editor verrà visualizzata una barra di stato (errori, avvisi) di stato dell'indicatore di integrità file con le opzioni di pulizia del codice.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Opzioni, Editor di testo, Tutti i linguaggi](../../ide/reference/options-text-editor-all-languages.md)
 - [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Opzioni, Editor di testo, Estensione di file](../../ide/reference/options-text-editor-file-extension.md)
-- [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Identificazione e personalizzazione delle scelte rapide da tastiera](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Personalizzazione dell'editor](../how-to-change-text-case-in-the-editor.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugDocumentTextEvents2::onInsertText . Documenti Microsoft
+title: 'IDebugDocumentTextEvents2:: onInsertText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce03984d199fd404b7430b5342a06b51801af2e4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731489"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
@@ -43,10 +43,10 @@ int onInsert( 
 
 ## <a name="parameters"></a>Parametri
 `pos`\
-[in] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che indica dove è stato inserito il testo.
+in Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che indica la posizione in cui è stato inserito il testo.
 
 `dwNumToInsert`\
-[in] Specifica il numero di caratteri di testo che sono stati inseriti.
+in Specifica il numero di caratteri del testo inserito.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

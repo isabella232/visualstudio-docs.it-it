@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591528"
 ---
 # <a name="findcommand-box"></a>Trova/Comando (casella)
 
 È possibile cercare testo ed eseguire i comandi di Visual Studio dalla casella **Trova/Comando**. La casella **Trova/Comando** è ancora disponibile nella barra degli strumenti, ma non è più visibile per impostazione predefinita. È possibile visualizzare la casella **Trova/Comando** scegliendo **Aggiungi o rimuovi pulsanti** nella barra degli strumenti **Standard** e scegliendo **Trova**.
 
-Per eseguire [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] un comando, anteporlo**>** con un segno maggiore di ( ).
+Per eseguire un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comando, anteporre un segno di maggiore di ( **>** ).
 
 La casella **Trova/Comando** memorizza gli ultimi 20 elementi immessi e li visualizza in un elenco a discesa. È possibile spostarsi nell'elenco usando i **tasti di direzione**.
 
@@ -30,7 +30,7 @@ La casella **Trova/Comando** memorizza gli ultimi 20 elementi immessi e li visua
 
 ## <a name="searching-for-text"></a>Ricerca di testo
 
-Per impostazione predefinita, quando si specifica il testo nella casella **Trova/Comando** e quindi si sceglie il **tasto INVIO,** Visual Studio cerca il documento o la finestra degli strumenti corrente utilizzando le opzioni specificate nella finestra di dialogo **Trova nei file.** Per altre informazioni, vedere [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
+Per impostazione predefinita, quando si specifica il testo nella casella **Trova/comando** e quindi si sceglie il tasto **invio** , Visual Studio esegue la ricerca nella finestra del documento o dello strumento corrente usando le opzioni specificate nella finestra **di dialogo Cerca nei file** . Per altre informazioni, vedere [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
 ## <a name="entering-commands"></a>Immissione di comandi
 
@@ -44,7 +44,7 @@ In alternativa, è anche possibile usare la finestra di **comando** per immetter
 
 ## <a name="escape-characters"></a>Caratteri di escape
 
-Un carattere**^** di inserimento ( ) in un comando indica che il carattere immediatamente successivo viene interpretato letteralmente, anziché come un carattere di controllo. In questo modo, è possibile incorporare virgolette diritte (**"**), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
+Un accento circonflesso ( **^** ) in un comando indica che il carattere immediatamente successivo viene interpretato letteralmente, anziché come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte (**"**), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```
 >Edit.Find ^^t /regex

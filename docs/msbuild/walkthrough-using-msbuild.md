@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 310fa3b6795a5e340dcd9c7fa40cb27807c132ba
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072541"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
@@ -43,7 +43,7 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
     Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\*. Accettare le impostazioni predefinite per **Soluzione**, **Nome soluzione** (**BuildApp**) e **Framework**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** > **Windows Desktop** e quindi scegliere **App Windows Forms (.NET Framework)**. Quindi scegliere **OK**.
+    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** > **Windows Desktop** e quindi scegliere **App Windows Forms (.NET Framework)**. Scegliere quindi **OK**.
 
     Nella casella **Nome** digitare `BuildApp`. Immettere un **Percorso** per la soluzione, ad esempio *D:\\*. Accettare le impostazioni predefinite per **Crea directory per soluzione** (selezionata), **Aggiungi al controllo del codice sorgente** (non selezionata) e **Nome soluzione** (**BuildApp**).
     ::: moniker-end
@@ -58,14 +58,14 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
 
 1. In **Esplora soluzioni**fare clic sul nodo del progetto **BuildApp**.
 
-1. Nel browser **Proprietà** notare che la proprietà File di **progetto** è *BuildApp.csproj*. Tutti i file di progetto sono denominati con il suffisso *proj*. Se è stato creato un progetto di Visual Basic, il nome del file di progetto sarebbe *BuildApp.vbproj*.
+1. Nel browser delle **Proprietà** si noti che la proprietà **file di progetto** è *BuildApp. csproj*. Tutti i file di progetto vengono denominati con il suffisso *proj*. Se è stato creato un progetto di Visual Basic, il nome del file di progetto sarà *BuildApp. vbproj*.
 
 1. Fare ancora clic con il pulsante destro del mouse sul nodo del progetto, quindi scegliere **Modifica BuildApp.csproj**. 
 
      Il file di progetto verrà visualizzato nell'editor del codice.
 
 >[!NOTE]
-> Per alcuni tipi di progetto, ad esempio In C, è necessario scaricare il progetto (fare clic con il pulsante destro del mouse sul file di progetto e scegliere **Scarica progetto**) prima di poter aprire e modificare il file di progetto.
+> Per alcuni tipi di progetto, ad esempio C++, è necessario scaricare il progetto (fare clic con il pulsante destro del mouse sul file di progetto e scegliere **Scarica progetto**) prima di poter aprire e modificare il file di progetto.
 
 ## <a name="targets-and-tasks"></a>Destinazioni e attività
 
@@ -76,7 +76,7 @@ I file di progetto sono file in formato XML con il nodo radice [Project](../msbu
 <Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
-I progetti .NET Core (in stile `Sdk` SDK) più recenti hanno un attributo.
+I progetti .NET Core (in stile SDK) più recenti hanno un `Sdk` attributo.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -89,7 +89,7 @@ La compilazione di un'applicazione viene eseguita con gli elementi [Target](../m
 - Un'attività è la più piccola unità di lavoro, in altre parole, l'"atom" di una compilazione. Le attività sono componenti eseguibili indipendenti che possono avere input e output. Attualmente nel file di progetto non sono presenti attività definite o a cui si fa riferimento. Le attività vengono aggiunte al file di progetto nelle sezioni seguenti. Per altre informazioni, vedere l'argomento [Attività](../msbuild/msbuild-tasks.md).
 
 - Una destinazione è una sequenza denominata di attività. Per altre informazioni, vedere l'argomento [Destinazioni](../msbuild/msbuild-targets.md).
-- [potrebbe essere una sequenza denominata di attività, ma criticamente, rappresenta qualcosa da costruire o fare, quindi dovrebbe essere definito in modo orientato agli obiettivi]
+- [può trattarsi di una sequenza denominata di attività, ma, in modo critico, rappresenta qualcosa da compilare, quindi deve essere definito in modo orientato agli obiettivi]
 
 La destinazione predefinita non è definita nel file di progetto. Viene invece specificata nei progetti importati. L'elemento [Import](../msbuild/import-element-msbuild.md) specifica i progetti importati. In un progetto C#, ad esempio, la destinazione predefinita viene importata dal file *Microsoft.CSharp.targets*.
 
@@ -99,7 +99,7 @@ La destinazione predefinita non è definita nel file di progetto. Viene invece s
 
 I file importati vengono effettivamente inseriti nel file di progetto dove vi si fa riferimento.
 
-Nei projct in stile SDK, questo elemento import non viene visualizzato, poiché l'attributo SDK determina l'importazione implicita di questo file.
+In projcts di tipo SDK non viene visualizzato questo elemento Import, perché l'attributo SDK causa l'importazione implicita di questo file.
 
 MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che ogni destinazione non venga compilata più di una volta.
 
@@ -128,30 +128,30 @@ MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che og
 
 3. Salvare il file di progetto.
 
-L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività disponibili e delle informazioni sull'utilizzo, vedere Informazioni di [riferimento sulle attività](../msbuild/msbuild-task-reference.md).
+L'attività Message è una delle tante disponibili in MSBuild. Per un elenco completo delle attività e delle informazioni sull'utilizzo disponibili, vedere [riferimento alle attività](../msbuild/msbuild-task-reference.md).
 
-L'attività Message accetta il valore stringa dell'attributo Text come input e lo visualizza nel dispositivo di output (o lo scrive in uno o più log, se applicabile). La destinazione HelloWorld esegue l'attività Message due volte: prima per visualizzare "Hello" e quindi per visualizzare "World".
+L'attività Message accetta come input il valore stringa dell'attributo di testo e lo Visualizza nel dispositivo di output (oppure lo scrive in uno o più log, se applicabile). La destinazione HelloWorld esegue l'attività Message due volte: prima per visualizzare "Hello" e quindi per visualizzare "World".
 
 ## <a name="build-the-target"></a>Compilare la destinazione
 
-Se si tenta di compilare questo progetto da Visual Studio, non verrà compilata la destinazione definita. Questo perché Visual Studio sceglie la destinazione predefinita, che è ancora quella nel file *.targets* importato.
+Se si prova a compilare questo progetto da Visual Studio, la destinazione definita non verrà compilata. Questo perché Visual Studio sceglie la destinazione predefinita, che è ancora quella nel file con *estensione targets* importato.
 
-Per compilare la destinazione HelloWorld definita sopra, eseguire MSBuild dal **prompt dei comandi per gli sviluppatori** per Visual Studio. Utilizzare l'opzione della riga di comando -target o -t per selezionare la destinazione.
+Per compilare la destinazione HelloWorld definita sopra, eseguire MSBuild dal **prompt dei comandi per gli sviluppatori** per Visual Studio. Usare l'opzione-target o-t della riga di comando per selezionare la destinazione.
 
 > [!NOTE]
 > Nelle sezioni successive il **prompt dei comandi per gli sviluppatori** verrà chiamato **finestra di comando**.
 
-**Per creare la destinazione:**
+**Per compilare la destinazione:**
 
-1. Aprire la finestra di **comando**.
+1. Aprire la **finestra di comando**.
 
    (Windows 10) Nella casella di ricerca della barra delle applicazioni iniziare a digitare il nome dello strumento, ad esempio `dev` o `developer command prompt`. Verrà visualizzato un elenco di app installate che corrispondono ai criteri di ricerca.
 
-   Se è necessario cercarlo manualmente, il file, *LaunchDevCmd.bat* si trova nella cartella *<cartella di installazione di visualstudio\>\<versione>\Common7\Strumenti*.
+   Se è necessario individuarlo manualmente, il file viene *LaunchDevCmd.bat* nella cartella di *installazione di<VisualStudio \> \<version> \Common7\Tools* cartella.
 
-2. Dalla finestra di comando, passare alla cartella che contiene il file di progetto, in questo *caso, D:*
+2. Dalla finestra di comando passare alla cartella contenente il file di progetto, in questo caso *D:\BuildApp\BuildApp*.
 
-3. Eseguire msbuild con `-t:HelloWorld`l'opzione di comando . La destinazione HelloWorld verrà selezionata e compilata:
+3. Eseguire MSBuild con l'opzione di comando `-t:HelloWorld` . La destinazione HelloWorld verrà selezionata e compilata:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
@@ -184,13 +184,13 @@ Per compilare la destinazione HelloWorld definita sopra, eseguire MSBuild dal **
 </PropertyGroup>
 ```
 
- Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Ad esempio,
+ Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Ad esempio:
 
 ```xml
 <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
 ```
 
- definisce la proprietà denominata TargetFrameworkVersion, assegnandole il valore stringa "v4.5".
+ definisce la proprietà denominata TargetFrameworkVersion, assegnando il valore stringa "v 4.5".
 
  Compilare le proprietà possono essere ridefinite in qualsiasi momento. Se
 
@@ -202,7 +202,7 @@ Per compilare la destinazione HelloWorld definita sopra, eseguire MSBuild dal **
 
 ## <a name="examine-a-property-value"></a>Esaminare il valore di una proprietà
 
- Per ottenere il valore di una proprietà, `PropertyName` utilizzare la sintassi seguente, dove è il nome della proprietà:
+ Per ottenere il valore di una proprietà, usare la sintassi seguente, dove `PropertyName` è il nome della proprietà:
 
 ```xml
 $(PropertyName)
@@ -250,7 +250,7 @@ Usare questa sintassi per esaminare alcune delle proprietà nel file di progetto
 
 ### <a name="conditional-properties"></a>Proprietà condizionali
 
-Molte proprietà `Configuration` come sono definite in `Condition` modo condizionale, ovvero l'attributo viene visualizzato nell'elemento proprietà. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio,
+Molte proprietà come `Configuration` sono definite in modo condizionale, ovvero l' `Condition` attributo viene visualizzato nell'elemento Property. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio:
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -262,17 +262,17 @@ Quasi tutti gli elementi di MSBuild possono avere un attributo Condition. Per al
 
 ### <a name="reserved-properties"></a>Proprietà riservate
 
-In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per ulteriori informazioni, vedere [Procedura: fare riferimento al nome o](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) al percorso del file di progetto e alle proprietà riservate e note di [MSBuild.](../msbuild/msbuild-reserved-and-well-known-properties.md)
+In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, vedere [procedura: fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e alle [proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Variabili di ambiente
 
-È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per ulteriori informazioni, vedere Procedura: utilizzare variabili di [ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
+È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per altre informazioni, vedere [procedura: usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Impostare le proprietà dalla riga di comando
 
 Le proprietà possono essere definite dalla riga di comando usando l'opzione della riga di comando -property o -p. I valori delle proprietà ricevuti dalla riga di comando eseguono l'override dei valori delle proprietà impostati nel file di progetto e nelle variabili di ambiente.
 
-**Per impostare un valore di proprietà dalla riga di comando:**
+**Per impostare un valore della proprietà dalla riga di comando:**
 
 1. Dalla **finestra di comando** immettere ed eseguire questa riga:
 
@@ -290,11 +290,11 @@ MSBuild crea la proprietà Configuration e le assegna il valore "Release".
 
 ## <a name="special-characters"></a>Caratteri speciali
 
-Alcuni caratteri hanno un significato particolare nei file di progetto di MSBuild. Tra gli esempi di questi caratteri sono inclusi il punto e virgola (;) e l'asterisco (*). Per usare questi caratteri speciali come valori letterali in un file di progetto, è necessario specificarli usando la sintassi %\<xx>, dove \<xx> rappresenta il valore esadecimale ASCII del carattere.
+Alcuni caratteri hanno un significato particolare nei file di progetto di MSBuild. Tra gli esempi di questi caratteri sono inclusi il punto e virgola (;) e l'asterisco (*). Per usare questi caratteri speciali come valori letterali in un file di progetto, è necessario specificarli usando la sintassi% \<xx> , dove \<xx> rappresenta il valore esadecimale ASCII del carattere.
 
 Modificare l'attività Message per visualizzare il valore della proprietà Configuration con i caratteri speciali per renderla più leggibile.
 
-**Per utilizzare caratteri speciali nell'attività Messaggio:**
+**Per utilizzare caratteri speciali nell'attività Message:**
 
 1. Nell'editor del codice sostituire entrambe le attività Message con questa riga:
 
@@ -316,13 +316,13 @@ Modificare l'attività Message per visualizzare il valore della proprietà Confi
     $(Configuration) is "Debug"
     ```
 
-Per ulteriori informazioni, vedere [caratteri speciali MSBuild](../msbuild/msbuild-special-characters.md).
+Per altre informazioni, vedere [caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md).
 
 ## <a name="build-items"></a>Elementi di compilazione
 
 Un elemento è un'informazione, in genere un nome file, usata come input per il sistema di compilazione. Ad esempio, una raccolta di elementi che rappresentano file di origine potrebbe venire passata a un'attività denominata Compile per compilarli in un assembly.
 
-Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'elemento è il nome dell'elemento figlio e il valore dell'elemento è il valore dell'attributo Include dell'elemento figlio. I valori degli elementi con lo stesso nome vengono raccolti in tipi di elemento con tale nome.  Ad esempio,
+Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'elemento è il nome dell'elemento figlio e il valore dell'elemento è il valore dell'attributo Include dell'elemento figlio. I valori degli elementi con lo stesso nome vengono raccolti in tipi di elemento con tale nome.  Ad esempio:
 
 ```xml
 <ItemGroup>
@@ -331,7 +331,7 @@ Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'e
 </ItemGroup>
 ```
 
-definisce un gruppo di elementi contenente due elementi. Il tipo di elemento Compile ha due valori: *Program.cs* e *Proprietà , AssemblyInfo.cs*.
+definisce un gruppo di elementi contenente due elementi. Il tipo di elemento Compile ha due valori: *Program.cs* e *Properties\AssemblyInfo.cs*.
 
 Il codice seguente crea lo stesso tipo di elemento dichiarando entrambi i file in un attributo Include, separati da punto e virgola.
 
@@ -344,7 +344,7 @@ Il codice seguente crea lo stesso tipo di elemento dichiarando entrambi i file i
 Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 > [!NOTE]
-> I percorsi dei file sono relativi alla cartella contenente il file di progetto MSBuild, anche se il file di progetto è un file di progetto importato. Esistono alcune eccezioni a questo, ad esempio quando si utilizza [Import](import-element-msbuild.md) e [UsingTask](usingtask-element-msbuild.md) elementi.
+> I percorsi dei file sono relativi alla cartella contenente il file di progetto MSBuild, anche se il file di progetto è un file di progetto importato. Esistono alcune eccezioni, ad esempio quando si usano gli elementi [Import](import-element-msbuild.md) e [UsingTask](usingtask-element-msbuild.md) .
 
 ## <a name="examine-item-type-values"></a>Esaminare i valori di un tipo di elemento
 
@@ -419,21 +419,21 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude e caratteri jolly
 
- È possibile usare i caratteri jolly "*", "\*\*" e "?" con l'attributo Include per aggiungere elementi a un tipo di elemento. Ad esempio,
+ È possibile usare i caratteri jolly "*", "\*\*" e "?" con l'attributo Include per aggiungere elementi a un tipo di elemento. Ad esempio:
 
 ```xml
 <Photos Include="images\*.jpeg" />
 ```
 
- aggiunge tutti i file con estensione *.jpeg* nella cartella *images* al tipo di elemento
+ aggiunge tutti i file con estensione *. jpeg* nella cartella *images* al tipo di elemento Photos, mentre
 
 ```xml
 <Photos Include="images\**\*.jpeg" />
 ```
 
- aggiunge tutti i file con estensione *.jpeg* nella cartella *images* e tutte le relative sottocartelle al tipo di elemento Foto. Per altri esempi, vedere [Procedura: selezionare i file da compilare.](../msbuild/how-to-select-the-files-to-build.md)
+ aggiunge tutti i file con estensione *. jpeg* nella cartella *images* e in tutte le relative sottocartelle al tipo di elemento Photos. Per altri esempi, vedere [procedura: selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).
 
- Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Ad esempio,
+ Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Ad esempio:
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -446,22 +446,22 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- È possibile escludere un elemento da un tipo di elemento con l'attributo Exclude. Ad esempio,
+ È possibile escludere un elemento da un tipo di elemento con l'attributo Exclude. Ad esempio:
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- aggiunge tutti i file con estensione *cs* al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa *Designer*. Per altri esempi, vedere [Procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).
+ aggiunge tutti i file con estensione *cs* al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa *Designer*. Per altri esempi, vedere [procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).
 
-L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio,
+L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio:
 
 ```xml
 <Compile Include="*.cs" />
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
-non escluderà il file *Form1.cs*, che è stato aggiunto nell'elemento item precedente.
+non escluderà il file *Form1.cs*, che è stato aggiunto nell'elemento Item precedente.
 
 **Per includere ed escludere elementi**
 
@@ -513,7 +513,7 @@ non escluderà il file *Form1.cs*, che è stato aggiunto nell'elemento item prec
 %(ItemType.MetaDataName)
 ```
 
-**Per esaminare i metadati dell'elemento:**
+**Per esaminare i metadati degli elementi:**
 
 1. Nell'editor del codice sostituire l'attività Message con questa riga:
 
@@ -542,7 +542,7 @@ Si noti come la frase "Compile.DependentUpon" venga visualizzata più volte. L'u
 
 ### <a name="well-known-metadata"></a>Metadati noti
 
- Quando un elemento viene aggiunto a un elenco di elementi, a tale elemento vengono assegnati alcuni metadati noti. Ad esempio, %(FileName) restituisce il nome file di qualsiasi elemento. Per un elenco completo dei metadati noti, consultate [Metadati](../msbuild/msbuild-well-known-item-metadata.md)noti degli elementi.
+ Quando un elemento viene aggiunto a un elenco di elementi, a tale elemento vengono assegnati alcuni metadati noti. Ad esempio, %(FileName) restituisce il nome file di qualsiasi elemento. Per un elenco completo dei metadati noti, vedere [metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md).
 
 **Per esaminare i metadati noti:**
 
@@ -583,7 +583,7 @@ Confrontando i due esempi sopra, è possibile osservare che, mentre non tutti gl
 
 Ad esempio, un elenco di file di origine può essere trasformato in una raccolta di file oggetto usando un'espressione come `@(SourceFiles -> '%(Filename).obj')`. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
 
-**Per trasformare gli elementi utilizzando i metadati:**
+**Per trasformare gli elementi usando i metadati:**
 
 1. Nell'editor del codice sostituire l'attività Message con questa riga:
 
@@ -609,9 +609,9 @@ Si noti che i metadati espressi in questa sintassi non causano la divisione in b
 
 ## <a name="next-steps"></a>Passaggi successivi
 
- Per informazioni su come creare un file di progetto semplice un passaggio alla volta, provare la [procedura dettagliata: creazione di un file](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)di progetto MSBuild da zero .
+ Per informazioni su come creare un file di progetto semplice un passaggio alla volta, provare a eseguire la [procedura dettagliata: creazione di un file di progetto MSBuild da zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica di MSBuild](../msbuild/msbuild.md)
-- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

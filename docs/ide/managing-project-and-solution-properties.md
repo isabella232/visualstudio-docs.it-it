@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591307"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gestire le proprietà di progetti e soluzioni
@@ -33,14 +33,14 @@ Le proprietà del progetto sono organizzate in gruppi e ogni gruppo ha una propr
 
 ### <a name="c-visual-basic-and-f-projects"></a>Progetti C#, Visual Basic e F#
 
-Nei progetti di Visual Basic, Visual Basic e F , le proprietà vengono esposte in **Progettazione progetti**. Nella figura seguente viene illustrata la pagina delle proprietà **Compilazione** per un progetto WPF in C .
+Nei progetti C#, Visual Basic e F # le proprietà sono esposte in **Progettazione progetti**. Nella figura seguente viene illustrata la pagina delle proprietà di **compilazione** per un progetto WPF in C#:
 
 ![Progettazione progetti di Visual Studio](../ide/media/vs2015_proppage_build.png)
 
-Per informazioni su ognuna delle pagine delle proprietà in **Progettazione progetti**, vedere Informazioni di riferimento sulle [proprietà del progetto](../ide/reference/project-properties-reference.md).
+Per informazioni su ognuna delle pagine delle proprietà in **Progettazione progetti**, vedere [riferimento alle proprietà del progetto](../ide/reference/project-properties-reference.md).
 
 > [!TIP]
-> Le soluzioni hanno alcune proprietà e così fanno gli elementi di progetto; Queste proprietà sono accessibili nella [finestra Proprietà](../ide/reference/properties-window.md), non in **Progettazione progetti**.
+> Le soluzioni hanno alcune proprietà, quindi gli elementi del progetto; è possibile accedere a queste proprietà nel [finestra Proprietà](../ide/reference/properties-window.md), non in **Progettazione progetti**.
 
 ### <a name="c-and-javascript-projects"></a>Progetti C++ e JavaScript
 
@@ -48,13 +48,13 @@ I progetti C++ e JavaScript hanno un'interfaccia utente differente per la gestio
 
 ![Proprietà dei progetti Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
-Per informazioni sulle proprietà di progetto C++, vedere [Utilizzo di proprietà di progetto (C++)](/cpp/build/working-with-project-properties). Per ulteriori informazioni sulle proprietà JavaScript, consultate [Pagine delle proprietà, JavaScript](../ide/reference/property-pages-javascript.md).
+Per informazioni sulle proprietà di progetto C++, vedere [Utilizzo di proprietà di progetto (C++)](/cpp/build/working-with-project-properties). Per ulteriori informazioni sulle proprietà JavaScript, vedere [pagine delle proprietà, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Proprietà della soluzione
 
-Per accedere alle proprietà della soluzione, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Proprietà**. Nella finestra di dialogo è possibile impostare le configurazioni di progetto per le build di **debug** o **di rilascio,** scegliere quali progetti devono essere il progetto di avvio quando viene premuto **F5** e impostare le opzioni di analisi del codice.
+Per accedere alle proprietà della soluzione, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Proprietà**. Nella finestra di dialogo è possibile impostare le configurazioni di progetto per le compilazioni di **debug** o di **rilascio** , scegliere i progetti che devono essere il progetto di avvio quando si preme **F5** e impostare le opzioni di analisi del codice.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Soluzioni e progetti in Visual StudioSolutions and projects in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 - [Gestire le proprietà di progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

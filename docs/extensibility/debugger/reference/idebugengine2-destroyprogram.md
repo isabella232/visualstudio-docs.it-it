@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::DestroyProgram . Documenti Microsoft
+title: IDebugEngine2::D estroyProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce139dd22361d9914693cbe8ad723656ab7d4f26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731104"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-Informa un motore di debug (DE) che il programma specificato è stato in genere terminato e che il DE deve pulire tutti i riferimenti al programma e inviare un evento di eliminazione del programma.
+Informa un motore di debug (DE) che il programma specificato è stato interrotto in modo atipico e che il DE dovrebbe pulire tutti i riferimenti al programma e inviare un evento di eliminazione del programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,15 +41,15 @@ int DestroyProgram( 
 
 ## <a name="parameters"></a>Parametri
 `pProgram`\
-[in] Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma che è stato in genere terminato.
+in Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma che è stato interrotto in modo atipico.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Dopo la chiamata a questo metodo, il DE invia successivamente un [evento IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) al gestore di sessione di debug (SDM).
+ Dopo la chiamata a questo metodo, il DE invia successivamente un evento [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) al gestore di debug della sessione (SDM).
 
- Questo metodo non viene `E_NOTIMPL`implementato (restituisce ) se il DE viene eseguito nello stesso processo del programma in fase di debug. Questo metodo viene implementato solo se il DE viene eseguito nello stesso processo del modello SDM.
+ Questo metodo non è implementato (restituisce `E_NOTIMPL` ) se il de viene eseguito nello stesso processo del programma di cui è in corso il debug. Questo metodo viene implementato solo se il DE viene eseguito nello stesso processo del SDM.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

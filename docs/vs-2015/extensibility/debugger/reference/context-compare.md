@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a9cf283cf7239b5ed74e38ca534538a286a477c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179965"
 ---
-# <a name="contextcompare"></a>CONTEXT_COMPARE
+# <a name="context_compare"></a>CONTEXT_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Specifica i criteri per il confronto di due contesti di memoria.  
@@ -55,46 +55,46 @@ public enum enum_CONTEXT_COMPARE { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  CONTEXT_EQUAL  
- Trovare il primo contesto di memoria nell'elenco uguale al contesto di destinazione di memoria.  
+ Trovare il primo contesto di memoria nell'elenco uguale al contesto della memoria di destinazione.  
   
  CONTEXT_LESS_THAN  
- Trovare il primo contesto di memoria nell'elenco che è minore rispetto al contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco minore del contesto di memoria di destinazione.  
   
  CONTEXT_GREATER_THAN  
- Trovare il primo contesto di memoria nell'elenco che è maggiore rispetto al contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco maggiore del contesto di memoria di destinazione.  
   
  CONTEXT_LESS_THAN_OR_EQUAL  
- Trovare il primo contesto di memoria nell'elenco che è minore o uguale al contesto di destinazione di memoria.  
+ Trovare il primo contesto di memoria nell'elenco minore o uguale al contesto della memoria di destinazione.  
   
  CONTEXT_GREATER_THAN_OR_EQUAL  
- Trovare il primo contesto di memoria nell'elenco che è maggiore o uguale al contesto di destinazione di memoria.  
+ Trovare il primo contesto di memoria nell'elenco maggiore o uguale al contesto della memoria di destinazione.  
   
  CONTEXT_SAME_SCOPE  
- Trovare il primo contesto di memoria nell'elenco che è nello stesso ambito il contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che si trova nello stesso ambito del contesto di memoria di destinazione.  
   
  CONTEXT_SAME_FUNCTION  
- Trovare il primo contesto di memoria nell'elenco che è la stessa funzione dell'ambito della memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che si trova nella stessa funzione dell'ambito di memoria di destinazione.  
   
  CONTEXT_SAME_MODULE  
- Trovare il primo contesto di memoria nell'elenco che è nello stesso modulo del contesto di destinazione di memoria.  
+ Trovare il primo contesto di memoria nell'elenco che si trova nello stesso modulo del contesto di memoria di destinazione.  
   
  CONTEXT_SAME_PROCESS  
- Trovare il primo contesto di memoria nell'elenco che è nello stesso processo come contesto di memoria di destinazione.  
+ Trovare il primo contesto di memoria nell'elenco che si trova nello stesso processo del contesto di memoria di destinazione.  
   
-## <a name="remarks"></a>Note  
- Passato come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Passato come argomento al metodo [compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) .  
   
- Questi valori vengono usati per trovare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificate. Un contesto in memoria viene assegnato un elenco di contesti di memoria di confrontarsi con tramite il `IDebugMemoryContext2::Compare` (metodo). Il primo contesto di memoria nell'elenco per il quale l'operatore di confronto è `true` viene quindi restituito.  
+ Questi valori vengono usati per trovare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificati. A un contesto di memoria viene assegnato un elenco di contesti di memoria da confrontare con il `IDebugMemoryContext2::Compare` metodo. Viene quindi restituito il primo contesto di memoria nell'elenco per il quale viene restituito l'operatore di confronto `true` .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+ [Confronta](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

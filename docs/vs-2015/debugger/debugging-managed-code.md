@@ -1,5 +1,5 @@
 ---
-title: Debug del codice gestito | Microsoft Docs
+title: Debug di codice gestito | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,18 +22,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691421"
 ---
 # <a name="debugging-managed-code"></a>Debug del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa sezione vengono descritti alcuni problemi di debug comuni e vengono illustrate varie tecniche per le applicazioni gestite, ovvero scritte in linguaggi compatibili con Common Language Runtime, ad esempio Visual Basic, C# e C++. Le tecniche descritte sono di livello avanzato. Per altre informazioni, vedere [usando il Debugger](../debugger/debugger-basics.md).  
+In questa sezione vengono descritti alcuni problemi di debug comuni e vengono illustrate varie tecniche per le applicazioni gestite, ovvero scritte in linguaggi compatibili con Common Language Runtime, ad esempio Visual Basic, C# e C++. Le tecniche descritte sono di livello avanzato. Per ulteriori informazioni, vedere [utilizzo del debugger](../debugger/debugger-basics.md).  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Messaggi diagnostici nella finestra di output](../debugger/diagnostic-messages-in-the-output-window.md)  
  Vengono descritte le classi <xref:System.Diagnostics.Debug> e <xref:System.Diagnostics.Trace>, con le quali è possibile scrivere messaggi di runtime nella finestra di **Output**. Queste classi includono metodi di output che supportano l'output di informazioni senza interruzione dell'esecuzione e l'output di informazioni con interruzione dell'esecuzione se non viene rispettata una condizione specificata.  
   
@@ -49,10 +49,10 @@ In questa sezione vengono descritti alcuni problemi di debug comuni e vengono il
  [Debug del metodo OnStart](../debugger/how-to-debug-the-onstart-method.md)  
  Vengono forniti codici di esempio per consentire il debug del metodo `OnStart` di un servizio Windows gestito. Per eseguire il debug del metodo `OnStart` di un servizio Windows, è necessario aggiungere alcune righe di codice per simulare il servizio.  
   
- [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
+ [Debug in modalità mista](../debugger/debugging-mixed-mode-applications.md)  
  Viene descritto il debug di applicazioni in modalità mista, ovvero qualsiasi applicazione nella quale vengono combinati codice nativo e codice gestito.  
   
- [Errore: Impossibile eseguire il debug perché nel sistema è abilitato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Errore: impossibile eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Viene descritto un messaggio di errore visualizzato se si tenta di eseguire il debug del codice gestito in un sistema [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], [!INCLUDE[winxp](../includes/winxp-md.md)], [!INCLUDE[Win2kFamily](../includes/win2kfamily-md.md)] o Windows NT avviato in modalità debug.  
   
  [Debug e ottimizzazione JIT](../debugger/jit-optimization-and-debugging.md)  
@@ -61,7 +61,7 @@ In questa sezione vengono descritti alcuni problemi di debug comuni e vengono il
  [Debug LINQ e DLINQ](../debugger/debugging-linq.md)  
  Vengono illustrate le tecniche per il debug di query LINQ.  
   
- [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Viene descritto come usare le finestre degli strumenti **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
@@ -88,6 +88,6 @@ In questa sezione vengono descritti alcuni problemi di debug comuni e vengono il
  Vengono forniti collegamenti a sezioni più ampie della documentazione sul debug. Le informazioni fornite comprendono: novità del debugger, impostazioni e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice gestito, debug di progetti Visual C++, debug di COM e ActiveX, debug di DLL, debug di SQL e riferimenti per l'interfaccia utente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Controlli di debug personalizzato Windows Form in fase di progettazione](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [Procedura dettagliata: debug di controlli di Windows Forms personalizzati in fase di progettazione](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)

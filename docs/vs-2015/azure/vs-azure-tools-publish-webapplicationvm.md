@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e35f5decee2a908a9d1075ff3f6365a1d358c7b2
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70739315"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell script)
@@ -35,79 +35,79 @@ Publish-WebApplicationVM
 ### <a name="configuration"></a>Configurazione
 Percorso del file di configurazione JSON che descrive i dettagli della distribuzione.
 
-| Alias | none |
+| Alias | Nessuno |
 | --- | --- |
-| Obbligatorio? |true |
+| Necessaria? |true |
 | Posizione |denominata |
-| Valore predefinito |none |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Valore predefinito |Nessuno |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ### <a name="subscriptionname"></a>SubscriptionName
 Nome della sottoscrizione di Azure in cui creare la macchina virtuale.
 
-| Alias | none |
+| Alias | Nessuno |
 | --- | --- |
-| Obbligatorio? |False |
+| Necessaria? |false |
 | Posizione |denominata |
 | Valore predefinito |Usa la prima sottoscrizione nel file di sottoscrizione |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-Percorso al pacchetto di distribuzione Web da pubblicare nella macchina virtuale. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Vedere [How to: Create a Web Deployment Package in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx) (Procedura: Creare un pacchetto di distribuzione Web in Visual Studio).
+Percorso al pacchetto di distribuzione Web da pubblicare nella macchina virtuale. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Vedere [Procedura: Creare un pacchetto di distribuzione Web in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
 
-| Alias | none |
+| Alias | Nessuno |
 | --- | --- |
-| Obbligatorio? |False |
+| Necessaria? |false |
 | Posizione |denominata |
-| Valore predefinito |none |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Valore predefinito |Nessuno |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ### <a name="allowuntrusted"></a>AllowUntrusted
 Se true, consente l'utilizzo di certificati che non sono firmati da un'autorità radice attendibile.
 
-| Alias | none |
+| Alias | Nessuno |
 | --- | --- |
-| Obbligatorio? |False |
+| Necessaria? |false |
 | Posizione |denominata |
-| Valore predefinito |False |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Valore predefinito |false |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ### <a name="vmpassword"></a>VMPassword
 Le credenziali per l'account della macchina virtuale. Esempio: -VMPassword @{Name = "admin"; Password = "password"}
 
-| Alias | none |
+| Alias | Nessuno |
 | --- | --- |
-| Obbligatorio? |False |
+| Necessaria? |false |
 | Posizione |denominata |
-| Valore predefinito |none |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Valore predefinito |Nessuno |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ### <a name="databaseserverpassword"></a>DatabaseServerPassword
 Le credenziali del database SQL in Azure. Esempio: -DatabaseServerPassword @{Name = "admin"; Password = "password"}
 
-| Alias | none |
+| Alias | Nessuno |
 | --- | --- |
-| Obbligatorio? |False |
+| Necessaria? |false |
 | Posizione |denominata |
-| Valore predefinito |none |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Valore predefinito |Nessuno |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ### <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Se impostato su true, stampa i messaggi dallo script al flusso di output.
 
-| Alias | none |
+| Alias | Nessuno |
 | --- | --- |
-| Obbligatorio? |False |
+| Necessaria? |false |
 | Posizione |denominata |
-| Valore predefinito |False |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Valore predefinito |false |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ## <a name="remarks"></a>Osservazioni
 Per una spiegazione completa sull'uso dello script per creare ambienti di sviluppo e test, vedere [Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test](vs-azure-tools-publishing-using-powershell-scripts.md).

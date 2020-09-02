@@ -1,5 +1,5 @@
 ---
-title: Cosa&#39;novità per il design
+title: Novità di progettazione&#39;
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302371"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315330"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novità per la progettazione in Visual Studio in Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novità relative alla progettazione in Visual Studio in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Questa versione di Visual Studio include i seguenti miglioramenti, utili per comprendere e progettare meglio il codice.
 
@@ -58,24 +58,24 @@ Questa versione di Visual Studio include i seguenti miglioramenti, utili per com
 
   **Altre modifiche di progettazione e modellazione in questa versione:**
 
-- **Diagrammi layer**. Aggiornare questi diagrammi con Visualizzazione classi e Visualizzatore oggetti. Per soddisfare i requisiti di progettazione software, usare i diagrammi livello per descrivere le dipendenze desiderate per il software. Mantenere il codice coerente con la progettazione individuando il codice che non soddisfa questi vincoli e convalidando il codice futuro con questa linea di base.
+- **Diagrammi livello**. Aggiornare questi diagrammi con Visualizzazione classi e Visualizzatore oggetti. Per soddisfare i requisiti di progettazione software, usare i diagrammi livello per descrivere le dipendenze desiderate per il software. Mantenere il codice coerente con la progettazione individuando il codice che non soddisfa questi vincoli e convalidando il codice futuro con questa linea di base.
 
 - **Diagrammi UML**. Per creare diagrammi classi e diagrammi sequenze UML, non è più possibile usare codice, ma si possono usare i nuovi elementi UML.
 
 - **Esplora architettura**. Per creare diagrammi, non è più possibile usare Esplora architettura, ma si può usare Esplora soluzioni.
 
-## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a>Supporto dell'edizione per l'architettura e gli strumenti di modellazione
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a> Supporto dell'edizione per gli strumenti di architettura e modellazione
 
-Visual Studio 2015 è disponibile in diverse edizioni. Non tutti forniscono supporto per l'architettura e gli strumenti di modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
+Visual Studio 2015 è disponibile in diverse edizioni. Non tutti forniscono supporto per gli strumenti di architettura e modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
 
-|**Funzionalità**|**Enterprise**|**Professionale**|**Community**|**Express**|
+|**Funzionalità**|**Funzionalità per le aziende**|**Professionale**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mappe codice**|Sì|Supporta solo la lettura e il filtro delle mappe codice, l'aggiunta di nuovi nodi generici e la creazione di un nuovo grafico diretto da una selezione.|-|-|
+|**Mappe codice**|Sì|Supporta solo la lettura e il filtraggio delle mappe codice, l'aggiunta di nuovi nodi generici e la creazione di un nuovo grafico diretto da una selezione.|-|-|
 |**Diagrammi classi UML**|Sì|-|-|-|
 |**Diagrammi di sequenza UML**|Sì|-|-|-|
-|**Diagrammi UML Use Case**|Sì|-|-|-|
+|**Diagrammi caso di utilizzo UML**|Sì|-|-|-|
 |**Diagrammi di attività UML**|Sì|-|-|-|
-|**Diagrammi dei componenti UML**|Sì|-|-|-|
-|**Diagrammi di livello**|Sì|-|-|-|
+|**Diagrammi componenti UML**|Sì|-|-|-|
+|**Diagrammi livello**|Sì|-|-|-|
 |**Grafici diretti** (diagrammi DGML)|Sì|Sì|-|-|
 |**Clone del codice**|Sì|-|-|-|

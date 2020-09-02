@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione modello di contenuto (Progettazione XML Schema)
+title: Visualizzazione del modello di contenuto di Progettazione XML Schema
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592913"
 ---
 # <a name="content-model-view"></a>Visualizzazione modello di contenuto
 
 La visualizzazione modello di contenuto fornisce una rappresentazione grafica di nodi dello schema locali e globali e dei relativi componenti, inclusi tipi semplici e complessi, elementi, gruppi di modelli, attributi e gruppi di attributi. Non è possibile visualizzare commenti XML e istruzioni di elaborazione nella visualizzazione modello di contenuto. La visualizzazione modello di contenuto contiene due pannelli: un pannello dell' **area di lavoro** che contiene un elenco dei nodi nell'area di [lavoro di XML Schema Designer](../xml-tools/xml-schema-designer-workspace.md)e l'area di progettazione in cui è possibile visualizzare il modello di contenuto dei nodi dello schema selezionati nel pannello dell' **area di lavoro** . La visualizzazione modello di contenuto include anche la barra degli strumenti di Progettazione XML Schema e la barra di navigazione.
 
-Nell'immagine seguente il pannello dell' **area di lavoro** contiene sei nodi dello schema. Il nodo `purchaseOrder` viene selezionato nel pannello dell' **area di lavoro** e viene visualizzato nell'area di progettazione.
+Nell'immagine seguente il pannello dell' **area di lavoro** contiene sei nodi dello schema. Il `purchaseOrder` nodo viene selezionato nel pannello dell' **area di lavoro** e viene visualizzato nell'area di progettazione.
 
-![Visualizzazione modello di contenuto (Progettazione XML Schema)](../xml-tools/media/xsddesigner_contentmodelview.gif)
+![Visualizzazione del modello di contenuto di Progettazione XML Schema](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Pannello dell'area di lavoro
 
@@ -63,7 +63,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per il pannello 
 |**Mostra in visualizzazione grafico**|Passa alla visualizzazione grafico.|
 |**Cancella area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
-|**Rimuovi tutto tranne la selezione dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
+|**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Genera XML di esempio**|Disponibile solo per elementi globali. Consente di generare un file XML di esempio per l'elemento globale.|
 |**Seleziona tutto**|Seleziona tutti i nodi nel pannello dell' **area di lavoro** .|
 |**Visualizza codice**|Apre il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in **XML Schema Explorer** è selezionato anche nell'editor XML.|
@@ -77,16 +77,16 @@ Utilizzare il menu di scelta rapida per aprire inizialmente la finestra **Propri
 
 I seguenti pulsanti della barra degli strumenti di Progettazione XSD sono abilitati quando la visualizzazione modello di contenuto è attiva.
 
-![Barra degli strumenti Progettazione XML Schema](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
+![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Opzione|Descrizione|
 |-|-----------------|
-|**Mostra visualizzazione iniziale**|Passa alla [visualizzazione iniziale](../xml-tools/start-view.md). È possibile accedere a questa visualizzazione tramite i tasti di scelta rapida: **Ctrl**+**1**.|
-|**Mostra visualizzazione modello di contenuto**|Passa alla [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl**+**2**.|
-|**Mostra visualizzazione grafico**|Passa alla [visualizzazione grafico](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **Ctrl**+**3**.|
+|**Mostra visualizzazione iniziale**|Passa alla [visualizzazione iniziale](../xml-tools/start-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **1**.|
+|**Mostra visualizzazione modello di contenuto**|Passa alla [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **2**.|
+|**Mostra visualizzazione grafico**|Passa alla [visualizzazione grafico](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **3**.|
 |**Cancella area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
-|**Rimuovi tutto tranne la selezione dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
+|**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Mostra documentazione**|Mostra o nasconde il contenuto del nodo annotazione/documentazione.|
 
 ## <a name="panscroll"></a>Panoramica/scorrimento
@@ -125,4 +125,4 @@ Se si apportano modifiche al set di schemi nell'editor XML, le modifiche vengono
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Area di lavoro di Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md)
+- [Area di lavoro di progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md)

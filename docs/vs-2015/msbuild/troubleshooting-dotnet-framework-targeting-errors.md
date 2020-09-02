@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703777"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Risoluzione dei problemi relativi agli errori di impostazione di .NET Framework come destinazione
@@ -38,7 +38,7 @@ Questo argomento illustra gli errori di MSBuild che possono verificarsi a causa 
   
  Per ovviare alle impostazioni, aprire **Esplora soluzioni**, scegliere **Mostra tutti i file** e quindi modificare il file app.config nell'editor XML di Visual Studio. Nelle impostazioni modificare la versione in modo che corrisponda alle versione corretta di .NET Framework. È ad esempio possibile modificare l'impostazione della versione da 4.0.0.0 a 2.0.0.0. Analogamente, per un'applicazione che ha aggiunto risorse, aprire **Esplora soluzioni**, scegliere il pulsante **Mostra tutti i file**, espandere **Progetti** (Visual Basic) o **Proprietà** (C#) e quindi modificare il file Resources.resx nell'editor XML di Visual Studio. Modificare l'impostazione della versione da 4.0.0.0 a 2.0.0.0.  
   
- Se l'applicazione dispone di risorse, come icone o bitmap, o di impostazioni, come stringhe di connessione dati, per correggere l'errore è anche possibile rimuovere tutti gli elementi nella pagina **Impostazioni**  di **Creazione progetti** e quindi aggiungere di nuovo le impostazioni necessarie.  
+ Se l'applicazione dispone di risorse, come icone o bitmap, o di impostazioni, come stringhe di connessione dati, per correggere l'errore è anche possibile rimuovere tutti gli elementi nella pagina **Impostazioni ** di **Creazione progetti** e quindi aggiungere di nuovo le impostazioni necessarie.  
   
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework-and-references-do-not-resolve"></a>Come nuova destinazione di un progetto è stata definita una versione diversa di .NET Framework e non è possibile risolvere i riferimenti  
  Se come nuova destinazione di un progetto è stata definita una versione diversa di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], in alcuni casi è possibile che i riferimenti non vengano risolti correttamente. I riferimenti espliciti completi agli assembly generano spesso questo problema. È tuttavia possibile correggere l'errore rimuovendo i riferimenti non risolti e quindi aggiungendoli di nuovo al progetto. In alternativa, è possibile modificare il file di progetto per sostituire i riferimenti. Rimuovere innanzitutto i riferimenti nel formato seguente:  
@@ -57,7 +57,7 @@ Questo argomento illustra gli errori di MSBuild che possono verificarsi a causa 
 > Dopo aver chiuso e riaperto il progetto, è necessario ricompilarlo per verificare che tutti i riferimenti vengano risolti correttamente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Procedura: destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [Profilo client .NET Framework](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
- [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
+ [Destinazione di una specifica versione di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

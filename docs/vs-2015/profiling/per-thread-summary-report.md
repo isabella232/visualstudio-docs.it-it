@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195508"
 ---
 # <a name="per-thread-summary-report"></a>Report di riepilogo per thread
@@ -26,8 +26,8 @@ ms.locfileid: "68195508"
 Questo grafico a barre mostra la percentuale di tempo usata da ogni thread non nascosto per ciascuna categoria di attività durante l'intervallo di tempo attualmente visibile. "Esecuzione" indica che il thread è in esecuzione; tutte le altre categorie indicano che il thread è in attesa.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Tempo di esecuzione (visualizzazione Thread)](../profiling/execution-time-threads-view.md)   
- [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md)   
+ [Tempo di esecuzione (visualizzazione thread)](../profiling/execution-time-threads-view.md)   
+ [Tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md)   
  [Tempo di gestione della memoria](../profiling/memory-management-time.md)   
  [Tempo di precedenza](../profiling/preemption-time.md)   
  [Tempo di sospensione](../profiling/sleep-time.md)   

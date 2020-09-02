@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592841"
 ---
 # <a name="edit-xslt-style-sheets"></a>Modifica dei fogli di stile XSLT
@@ -25,7 +25,7 @@ Nella tabella seguente vengono descritte le funzionalità specifiche per usare i
 
 **Colorazione della sintassi**
 
-Le parole chiave XSLT, ad esempio `template` e `match`, vengono visualizzate nel colore della parola chiave XSLT specificato dalle impostazioni relative ai **tipi di carattere e ai colori** .
+Le parole chiave XSLT, ad esempio `template` e `match` , vengono visualizzate nel colore della parola chiave XSLT specificato dalle impostazioni relative ai **tipi di carattere e ai colori** .
 
 **Sottolineature ondulate**
 
@@ -35,11 +35,11 @@ Nell'editor XML viene utilizzato il file *XSLT. xsd* installato per convalidare 
 
 Il codice nei blocchi di script è supportato dal debugger XSLT, consentendo di impostare punti di interruzione e di eseguire il codice del blocco di script.
 
-**Visualizza output XSLT**
+**Visualizzazione dell'output XSLT**
 
 È possibile eseguire una trasformazione XSL e visualizzare l'output dell'editor XML. Per ulteriori informazioni, vedere [procedura: eseguire una trasformazione XSLT dall'editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
-**Debug di XSLT**
+**Debug XSLT**
 
 È possibile avviare il debugger XSLT da un file XSLT nell'editor XML. Il debugger supporta l'impostazione dei punti di interruzione nel file XSLT, la visualizzazione dello stato di esecuzione di XSLT e così via. Se si passa con il mouse su una variabile XSLT, viene visualizzata una descrizione con il valore della matrice. Il debugger può essere usato per eseguire il debug di un foglio di stile o di una trasformazione XSLT chiamata da un'altra applicazione. Per ulteriori informazioni, vedere [debug di XSLT](../xml-tools/debugging-xslt.md).
 

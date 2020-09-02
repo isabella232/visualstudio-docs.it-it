@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0330ef80fc1127893590ef8d326cb5b8e0cf0160
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302441"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315252"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colori e stili per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "79302441"
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Metodi per l'assegnazione di colori agli elementi dell'interfaccia di Visual Studio
  Scegliere il metodo più adatto agli elementi dell'interfaccia utente.
 
-|Interfaccia utente|Metodo|Cosa sono?|
+|Interfaccia utente|Metodo|Quali sono?|
 |-------------|------------|--------------------|
 |Sono presenti finestre di dialogo incorporate o autonome.|**Colori di sistema**|Nomi di sistema che consentono al sistema operativo di definire il colore e l'aspetto degli elementi dell'interfaccia utente, ad esempio per i controlli della finestra di dialogo comuni.|
 |Si dispone di un'interfaccia utente personalizzata che si desidera sia coerente con l'ambiente di Visual Studio e che si disponga di elementi dell'interfaccia utente che corrispondono alla categoria e al significato semantico dei token condivisi.|**Colori condivisi comuni**|Nomi di token di colore predefiniti esistenti per elementi dell'interfaccia utente specifici|
@@ -79,7 +79,7 @@ ms.locfileid: "79302441"
 
  **Strumenti>finestra di dialogo Opzioni**
 
-## <a name="the-vscolor-service"></a><a name="BKMK_TheVSColorService"></a>Il servizio VSColor
+## <a name="the-vscolor-service"></a><a name="BKMK_TheVSColorService"></a> Il servizio VSColor
  Visual Studio fornisce un servizio colori ambiente, detto anche servizio VSColor o Shell Color. Questo servizio consente di associare i valori dei colori degli elementi dell'interfaccia utente a un set di colori nome-valore contenente i colori per ogni tema. Il servizio VSColor deve essere usato per tutti gli elementi dell'interfaccia utente, in modo che i colori cambiano automaticamente per riflettere il tema selezionato dall'utente corrente e in modo che l'interfaccia utente associata al servizio colori ambiente si integrerà con i nuovi temi nelle versioni future di Visual Studio.
 
 ### <a name="how-the-service-works"></a>Funzionamento del servizio
@@ -158,7 +158,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 ```
 
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Classi e metodi helper per codice gestito
- Per il codice gestito, la libreria del Framework di pacchetto gestito della shell (Microsoft. VisualStudio. Shell. 12.0. dll) contiene un paio di classi helper che facilitano l'uso dei colori con tema.
+ Per il codice gestito, la libreria del Framework di pacchetto gestito della shell (Microsoft.VisualStudio.Shell.12.0.dll) contiene un paio di classi helper che facilitano l'uso dei colori con tema.
 
  I metodi helper della classe **Microsoft. VisualStudio. Shell. VsColors** in MPF includono **GetThemedGDIColor ()** e **GetThemedWPFColor ()**. Questi metodi helper restituiscono il valore di colore di una voce del tema come System. Drawing. Color o System. Windows. Media. color, da usare nell'interfaccia utente di WinForms o WPF.
 
@@ -256,7 +256,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-## <a name="choosing-high-contrast-colors"></a><a name="BKMK_ChoosingHighContrastColors"></a>Scelta di colori Contrasto elevato
+## <a name="choosing-high-contrast-colors"></a><a name="BKMK_ChoosingHighContrastColors"></a> Scelta di colori Contrasto elevato
 
 ### <a name="overview"></a>Panoramica
  Windows utilizza diversi temi a livello di sistema a contrasto elevato che aumentano il contrasto dei colori di testo, sfondi e immagini, rendendo gli elementi più distinti sullo schermo. Per motivi di accessibilità, è importante che gli elementi dell'interfaccia di Visual Studio rispondano correttamente quando gli utenti passano a un tema Contrasto elevato.
@@ -300,7 +300,7 @@ protected override void Dispose(bool disposing)
 ### <a name="usage-patterns"></a>Modelli di utilizzo
  Molti elementi dell'interfaccia utente comuni hanno già colori a contrasto elevato definiti. È possibile fare riferimento a questi modelli di utilizzo quando si scelgono i nomi dei colori di sistema personalizzati, in modo che gli elementi dell'interfaccia utente siano coerenti con componenti simili.
 
-|Colore di sistema|Uso|
+|Colore di sistema|Utilizzo|
 |------------------|-----------|
 |ActiveCaption|-Icone dell'IDE attivo e del pulsante della finestra con rafting al passaggio del mouse e premere<br />-Sfondo della barra del titolo per l'IDE e le finestre con rafting<br />-Sfondo della barra di stato predefinita|
 |ActiveCaptionText|-IDE attivo e finestre con rafting per il primo piano della barra del titolo (testo e glifi)<br />-Sfondo e bordo dei pulsanti della finestra attiva al passaggio del mouse e premere|
@@ -323,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|-Bordo IDE|
 |WindowText|-Nascondi automaticamente tabulazione in primo piano<br />-Primo piano della scheda della finestra degli strumenti selezionata<br />-Scheda della finestra del documento con stato non attivo e in primo piano della scheda provvisoria o non selezionata<br />-Visualizzazione albero-primo piano predefinito e passaggio del mouse su glifo non selezionato<br />-Bordo scheda selezionato della finestra degli strumenti<br />-Sfondo del cursore della barra di scorrimento, bordo e glifo|
 
-## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a>Esposizione dei colori per gli utenti finali
+## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a> Esposizione dei colori per gli utenti finali
 
 ### <a name="overview"></a>Panoramica
  In alcuni casi è necessario consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o un'area di progettazione. Il modo più comune per eseguire questa operazione consiste nell'utilizzare la finestra di dialogo **strumenti > opzioni** . A meno che non si disponga di un'interfaccia utente altamente specializzata che richiede controlli speciali, il modo più semplice per presentare la personalizzazione è tramite la pagina **tipi di carattere e colori** all'interno della sezione **ambiente** della finestra di dialogo. Per ogni elemento esposto per la personalizzazione, l'utente può scegliere di modificare il colore di primo piano, il colore di sfondo o entrambi.
@@ -344,11 +344,11 @@ protected override void Dispose(bool disposing)
 - **Gestire le modifiche ai tipi di carattere e ai colori.**
 
 #### <a name="to-create-or-identify-categories"></a>Per creare o identificare categorie
- Costruire un tipo speciale di voce del registro di sistema Category in [\\ Hklm\software\microsoft. \Visual Studio<\>Visual\\ Studio versione\>\FontAndColors<Category]. \<Category> è il nome non localizzato della categoria.
+ Costruire un tipo speciale di voce del registro di sistema Category in [Hklm\software\microsoft. \Visual Studio \\<Visual Studio versione \> \FontAndColors \\<Category \> ]. \<Category> nome non localizzato della categoria.
 
  Popolare il registro di sistema con due valori:
 
-|Nome|Type|Data|Description|
+|Nome|Type|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |Category|REG_SZ|GUID|GUID creato per identificare la categoria|
 |Pacchetto|REG_SZ|GUID|GUID del servizio VSPackage che supporta la categoria|
@@ -356,11 +356,11 @@ protected override void Dispose(bool disposing)
  Il servizio specificato nel registro di sistema deve fornire un'implementazione di [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) per la categoria corrispondente.
 
 #### <a name="to-create-or-identify-groups"></a>Per creare o identificare i gruppi
- Costruire un tipo speciale di voce del registro di sistema Category in [\\ Hklm\software\microsoft. \Visual Studio<\>Visual\\ Studio Version\>\FontAndColors<Group]. \<Group> è il nome non localizzato del gruppo.
+ Costruire un tipo speciale di voce del registro di sistema Category in [Hklm\software\microsoft. \Visual Studio \\<Visual Studio Version \> \FontAndColors \\<Group \> ]. \<group> nome non localizzato del gruppo.
 
  Popolare il registro di sistema con due valori:
 
-|Nome|Type|Data|Description|
+|Nome|Type|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |Category|REG_SZ|GUID|GUID creato per identificare la categoria|
 |Pacchetto|REG_SZ|GUID|GUID del servizio VSPackage che supporta la categoria|

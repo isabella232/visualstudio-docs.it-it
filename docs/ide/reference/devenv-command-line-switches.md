@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82255560"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
@@ -52,7 +52,7 @@ Le regole di sintassi per le opzioni `devenv` sono simili alle regole per altre 
   > [!NOTE]
   > Nella cartella padre deve trovarsi un solo e unico file che faccia riferimento a questo progetto. Se la cartella padre non contiene alcun file di soluzione che fa riferimento a questo progetto, o se la cartella padre contiene due o più file di soluzione che vi fanno riferimento, viene creato un file di soluzione temporaneo.
 
-- Quando i percorsi e i nomi dei file contengono spazi, è necessario racchiuderli tra virgolette (""). Ad esempio: `"c:\project a\"`.
+- Quando i percorsi e i nomi dei file contengono spazi, è necessario racchiuderli tra virgolette (""). Ad esempio, `"c:\project a\"`
 
 - Inserire uno spazio tra le opzioni e gli argomenti sulla stessa riga. Ad esempio, il comando `devenv /log output.txt` apre l'IDE e restituisce tutte le informazioni di log per la sessione in output.txt.
 
