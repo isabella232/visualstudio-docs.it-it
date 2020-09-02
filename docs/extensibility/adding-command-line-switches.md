@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903481"
 ---
 # <a name="add-command-line-switches"></a>Aggiungi opzioni della riga di comando
@@ -29,9 +29,9 @@ ms.locfileid: "85903481"
 
  I parametri denominati sono indicati nelle descrizioni seguenti.
 
-|Nome|Description|
+|Nome|Descrizione|
 |-|-|
-| Arguments | Numero di argomenti per l'opzione. Può essere "*" o un elenco di argomenti. |
+| Argomenti | Numero di argomenti per l'opzione. Può essere "*" o un elenco di argomenti. |
 | DemandLoad – viene | Caricare il pacchetto VSPackage automaticamente se è impostato su 1, in caso contrario è impostato su 0. |
 | HelpString | Stringa della guida o ID della risorsa della stringa da visualizzare con **devenv/?**. |
 | Nome | Opzione. |

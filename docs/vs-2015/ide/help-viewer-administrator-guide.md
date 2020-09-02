@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03cacd8de574de92002b44b237cd84c22e761eaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645568"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
@@ -27,7 +27,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
 
  La sintassi di base è la seguente:
 
- \<*percorso di*> \HlpCtntmgr.exe/Operation \<*argomento*>/CatalogName \<*nome*>/locale \<*impostazioni locali*>/SourceUri \< *. msha percorso o URL* 0
+ \<*path to*>\HlpCtntmgr.exe/Operation \<*argument*> /CatalogName \<*name*> /locale \<*locale*> /SourceUri \<*.msha path or URL*>
 
  Per altre informazioni sulla sintassi della riga di comando di HlpCtntMgr.exe, vedere [Argomenti della riga di comando per Gestione contenuto della Guida](../ide/command-line-arguments-for-the-help-content-manager.md).
 
@@ -36,7 +36,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
 ## <a name="deploying-local-help-content-from-the-internet"></a>Distribuzione del contenuto della Guida locale da Internet
  È possibile usare il servizio del pacchetto con il contenuto MSDN per distribuire il contenuto della Guida locale da Internet ai computer client. Usare la sintassi seguente:
 
- \\<*percorso*>\v2.2\HlpCtntmgr.exe /operation \<*nome*> /catalogname \<*nome catalogo*> /locale \<*impostazioni locali*>
+ \\<*percorso a* # C0\v2.2\HlpCtntmgr.exe/Operation \<*name*> /CatalogName \<*catalog name*> /locale \<*locale*>
 
  Per altre informazioni sulla sintassi della riga di comando di HlpCtntMgr.exe, vedere [Argomenti della riga di comando per Gestione contenuto della Guida](../ide/command-line-arguments-for-the-help-content-manager.md).
 
@@ -127,7 +127,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
 
 4. Digitare quanto segue:
 
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nome cartella*>\ /y /e /k /o
+     Xcopy%SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*> \/y/e/k/o
 
      Ad esempio: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
 
@@ -141,7 +141,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
 
 2. Creare un file .bat che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti.
 
-     Esempio:
+     Ad esempio:
 
     ```
     REM - copy pre-ripped content to ProgramData

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc0ec53c35f87751efe78359f582e5f4297143c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664270"
 ---
 # <a name="l2dbformxaml-source-code"></a>Codice sorgente di L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questo argomento contiene e descrive il file di origine XAML per [Esempio di data binding WPF tramite LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
+Questo argomento contiene e descrive il file di origine XAML per il [Data Binding WPF usando LINQ to XML esempio](../designers/wpf-data-binding-using-linq-to-xml-example.md)L2DBForm. XAML.
 
 ## <a name="overall-ui-structure"></a>Struttura complessiva dell'interfaccia utente
  Come è tipico per i progetti WPF, questo file contiene un elemento padre, ovvero un elemento XML <xref:System.Windows.Window> associato alla classe derivata `L2XDBFrom` nello spazio dei nomi `LinqToXmlDataBinding` .
@@ -39,7 +39,7 @@ Questo argomento contiene e descrive il file di origine XAML per [Esempio di dat
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
-## <a name="data-binding-code"></a>Codice di associazione dati
+## <a name="data-binding-code"></a>Codice di data binding
  Oltre che nell'elemento <xref:System.Windows.DataTemplate> , l'associazione dati viene usata in diverse altre sezioni del file.
 
  Nel tag di apertura di `<StackPanel>` , alla riga 38, la proprietà <xref:System.Windows.FrameworkElement.DataContext%2A> di questo pannello è impostata sul provider di dati `LoadedBooks` .
@@ -74,13 +74,13 @@ ItemTemplate ="{StaticResource BookTemplate}"
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
- Usa quindi il data binding bidirezionale, in modo che i valori correnti degli elementi libro vengano visualizzati e aggiornati dalle due caselle di testo di questo pannello. L'associazione dati a proprietà dinamiche è simile a quella usata nel modello di dati `BookTemplate` :
+ Usa quindi l'associazione dati bidirezionale, in modo che i valori correnti degli elementi libro vengano visualizzati e aggiornati dalle due caselle di testo di questo pannello. L'associazione dati a proprietà dinamiche è simile a quella usata nel modello di dati `BookTemplate` :
 
 ```
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
- L'ultima sezione dell'interfaccia utente, **Add New Book**, non usa il data binding nel codice XAML, ma tale codice è disponibile nel codice di gestione degli eventi nel file L2DBForm.xaml.cs.
+ L'ultima sezione dell'interfaccia utente, **Add New Book**, non usa l'associazione dati nel codice XAML, ma tale codice è invece disponibile nel codice di gestione degli eventi nel file L2DBForm.xaml.cs.
 
 ## <a name="example"></a>Esempio
 
@@ -238,8 +238,8 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 ```
 
-### <a name="comments"></a>Comments
- Per il codice sorgente C# relativo ai gestori eventi associati agli elementi dell'interfaccia utente WPF, vedere [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).
+### <a name="comments"></a>Commenti
+ Per il codice sorgente C# per i gestori eventi associati agli elementi dell'interfaccia utente WPF, vedere [codice sorgente di L2DBForm.XAML.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
 ## <a name="see-also"></a>Vedere anche
  [Procedura dettagliata: LinqToXmlDataBinding esempio](../designers/walkthrough-linqtoxmldatabinding-example.md) di [codice sorgente L2DBForm.XAML.cs](../designers/l2dbform-xaml-cs-source-code.md)

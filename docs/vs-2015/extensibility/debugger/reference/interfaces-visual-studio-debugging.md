@@ -11,30 +11,30 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 37ff35e5b073c820f77e5cd861c517bfccbf6ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199536"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfacce (debug di Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella dei contenuti e nella pagina dell'interfaccia nell'ordine Vtable.  
+I metodi vengono elencati in ordine alfabetico sotto ogni interfaccia nel sommario e nella pagina di interfaccia in ordine vtable.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)  
- Descrive le interfacce utilizzate nel motore di debug.  
+ Descrive le interfacce usate nel motore di debug.  
   
  [Interfacce di valutazione delle espressioni](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
- Descrive le interfacce che valutano le espressioni in uno stack di chiamate durante la modalità di interruzione.  
+ Descrive le interfacce che valutano le espressioni in uno stack di chiamate durante la modalità di rottura.  
   
  [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
- Descrive le interfacce che implementa un provider di simboli per associare tipi di identificatori.  
+ Descrive le interfacce implementate da un provider di simboli per associare i tipi agli identificatori.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
- Contiene la documentazione per le interfacce, gli enumeratori e strutture del [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Debugging SDK.  
+ Contiene la documentazione per le interfacce, gli enumeratori e le strutture di [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debug SDK.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

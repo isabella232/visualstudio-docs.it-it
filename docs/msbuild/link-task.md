@@ -31,15 +31,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865349"
 ---
 # <a name="link-task"></a>Link (attività)
 
-Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per ulteriori informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options) e Utilizzo di [MSBuild dalla riga](/cpp/build/msbuild-visual-cpp) di comando e Utilizzo del set di strumenti Microsoft [C](/cpp/build/building-on-the-command-line)
+Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per ulteriori informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options) e [utilizzare MSBuild dalla riga di comando](/cpp/build/msbuild-visual-cpp) e [utilizzare il set di strumenti di Microsoft C++ dalla riga di comando](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parametri
 
@@ -47,7 +47,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **AdditionalDependencies**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Specifica un elenco di file di input da aggiungere al comando.
 
@@ -55,7 +55,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **AdditionalLibraryDirectories**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Esegue l'override del percorso delle librerie dell'ambiente. Specificare un nome di directory.
 
@@ -63,7 +63,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **AdditionalManifestDependencies**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Specifica gli attributi che verranno inseriti nella sezione `dependency` del file manifesto.
 
@@ -71,15 +71,15 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **AdditionalOptions**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
-  Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.
+  Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio,/ \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.
 
   Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).
 
 - **AddModuleNamesToAssembly**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Aggiunge un riferimento del modulo a un assembly.
 
@@ -91,7 +91,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, fa eseguire al sistema operativo ricerche e caricamenti del manifesto. Se `false`, indica che le DLL vengono caricate come se il manifesto non esistesse.
 
-  Per ulteriori informazioni, vedere [/ALLOWISOLATION (ricerca del manifesto)](/cpp/build/reference/allowisolation-manifest-lookup).
+  Per altre informazioni, vedere [/ALLOWISOLATION (ricerca di manifesti)](/cpp/build/reference/allowisolation-manifest-lookup).
 
 - **AssemblyDebug**
 
@@ -103,11 +103,11 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **AssemblyLinkResource**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Crea un collegamento a una risorsa .NET Framework nel file di output. Il file di risorse non viene inserito nel file di output. Specificare il nome della risorsa.
 
-  Per ulteriori informazioni, vedere [/ASSEMBLYLINKRESOURCE (Collegamento alla risorsa .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
+  Per ulteriori informazioni, vedere [/ASSEMBLYLINKRESOURCE (collegamento a .NET Framework risorsa)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
 - **AttributeFileTracking**
 
@@ -117,11 +117,11 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **BaseAddress**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Imposta un indirizzo di base per il programma o la DLL da compilare. Specificare `{address[,size] | @filename,key}`.
 
-  Per ulteriori informazioni, vedere [/BASE (indirizzo di base)](/cpp/build/reference/base-base-address).
+  Per ulteriori informazioni, vedere [/base (indirizzo di base)](/cpp/build/reference/base-base-address).
 
 - **BuildingInIDE**
 
@@ -133,53 +133,53 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **CLRImageType**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Imposta il tipo di un'immagine Common Language Runtime (CLR).
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.
 
-  - **Predefinito** - *nessuno>\<*
+  - **Predefinita** - *\<none>*
 
-  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+  - **ForceIJWImage**  -  **/CLRIMAGETYPE: IJW**
 
-  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+  - **ForcePureILImage**  -  **/CLRIMAGETYPE: pure**
 
-  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+  - **ForceSafeILImage**  -  **/CLRIMAGETYPE: safe**
 
-  Per ulteriori informazioni, vedere [/CLRIMAGETYPE (Specificare](/cpp/build/reference/clrimagetype-specify-type-of-clr-image)il tipo di immagine CLR) .
+  Per ulteriori informazioni, vedere [/CLRIMAGETYPE (specifica il tipo di immagine CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
 - **CLRSupportLastError**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Conserva l'ultimo codice di errore delle funzioni chiamate con il meccanismo P/Invoke.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.
 
-  - **Abilitato** - **/CLRSupportLastError**
+  - **Abilitato**  -  **/CLRSUPPORTLASTERROR**
 
-  - **Disabilitato** - **/CLRSupportLastError:NO**
+  - **Disabilitato**  -  **/CLRSUPPORTLASTERROR: No**
 
-  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+  - **SystemDlls**  -  **/CLRSUPPORTLASTERROR: SYSTEMDLL**
 
-  Per ulteriori informazioni, vedere [/CLRSUPPORTLASTERROR (Mantieni l'ultimo codice di errore per le chiamate PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
+  Per ulteriori informazioni, vedere [/CLRSUPPORTLASTERROR (mantiene l'ultimo codice di errore per le chiamate PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
-- **CLRThreadAttribute (Attributo CLRThreadAttribute)**
+- **CLRThreadAttribute**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica in modo esplicito l'attributo threading per il punto di ingresso del programma CLR.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.
 
-  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+  - **DefaultThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: nessuna**
 
-  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+  - **MTAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: MTA**
 
-  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+  - **STAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: sta**
 
-  Per ulteriori informazioni, vedere [/CLRTHREADATTRIBUTE (Attributo thread CLR impostato).](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute)
+  Per ulteriori informazioni, vedere [/CLRTHREADATTRIBUTE (imposta l'attributo thread CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
 - **CLRUnmanagedCodeCheck**
 
@@ -191,21 +191,21 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **CreateHotPatchableImage**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Prepara un'immagine per l'applicazione di una patch a caldo.
 
   Specificare uno dei valori seguenti, che corrisponde a un'opzione del linker.
 
-  - **Abilitato** - **/FUNCTIONPADMIN**
+  - **Abilitato**  -  **/FUNCTIONPADMIN**
 
-  - **X86Immagine** - **/FUNCTIONPADMIN:5**
+  - **X86Image**  -  **/FUNCTIONPADMIN: 5**
 
-  - **X64Immagine** - **/FUNCTIONPADMIN:6**
+  - **X64Image**  -  **/FUNCTIONPADMIN: 6**
 
-  - **Immagine ItaniumImage** - **/FUNCTIONPADMIN:16**
+  - **ItaniumImage**  -  **/FUNCTIONPADMIN: 16**
 
-  Per ulteriori informazioni, vedere [/FUNCTIONPADMIN (Create hotpatchable image)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
+  Per ulteriori informazioni, vedere [/FUNCTIONPADMIN (Crea immagine Hotpatchable)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
 - **DataExecutionPrevention**
 
@@ -217,7 +217,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **DelayLoadDLLs**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Questo parametro fa in modo che le DLL vengano *caricate in ritardo*. Specificare il nome di una DLL di cui ritardare il caricamento.
 
@@ -231,31 +231,31 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Per altre informazioni, vedere [/DELAYSIGN (firma parzialmente un assembly)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
-- **autista**
+- **Driver**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specificare questo parametro per compilare un driver in modalità kernel Windows NT.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.
 
-  - **NotSet** - *nessuna>\<*
+  - **NotSet** - *\<none>*
 
-  - **Driver** - **/Driver**
+  - **Driver**  -  di **/Driver**
 
-  - **UpOnly** - **/DRIVER:UPONLY**
+  - **Solo**  -  in **/driver: solo**
 
-  - **WDM** - **/DRIVER:WDM**
+  - **WDM**  -  **/driver: WDM**
 
-  Per ulteriori informazioni, vedere [/DRIVER (driver](/cpp/build/reference/driver-windows-nt-kernel-mode-driver)in modalità kernel di Windows NT) .
+  Per ulteriori informazioni, vedere [/driver (driver in modalità kernel di Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
 - **EmbedManagedResourceFile**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Incorpora un file di risorse in un assembly. Specificare il nome file di risorse necessario. Facoltativamente, specificare il nome logico, che viene usato per caricare la risorsa, e l'opzione **PRIVATE**, che indica nel manifesto dell'assembly che il file di risorse è privato.
 
-  Per ulteriori informazioni, vedere [/ASSEMBLYRESOURCE (Incorporare una risorsa gestita)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
+  Per altre informazioni, vedere [/ASSEMBLYRESOURCE (incorpora una risorsa gestita)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
 - **EnableCOMDATFolding**
 
@@ -275,11 +275,11 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **EntryPointSymbol**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica una funzione del punto di ingresso come indirizzo iniziale per un file *EXE* o una DLL. Specificare un nome di funzione come valore del parametro.
 
-  Per ulteriori informazioni, vedere [/ENTRY (simbolo](/cpp/build/reference/entry-entry-point-symbol)del punto di ingresso) .
+  Per ulteriori informazioni, vedere [/entry (simbolo del punto di ingresso)](/cpp/build/reference/entry-entry-point-symbol).
 
 - **FixedBaseAddress**
 
@@ -287,27 +287,27 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, crea un programma o una DLL caricabile solo nel relativo indirizzo di base preferito.
 
-  Per ulteriori informazioni, vedere [/FIXED (Indirizzo di base fisso)](/cpp/build/reference/fixed-fixed-base-address).
+  Per ulteriori informazioni, vedere [/fixed (indirizzo di base fisso)](/cpp/build/reference/fixed-fixed-base-address).
 
 - **ForceFileOutput**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Indica al linker di creare un file *EXE* o una DLL valida anche se viene fatto riferimento a un simbolo che non è definito oppure è definito più volte.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-  - **Abilitato** - **/FORCE**
+  - **Abilitato**  -  **/Force**
 
-  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+  - **MultiplyDefinedSymbolOnly**  -  **/Force: multiple**
 
-  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+  - **UndefinedSymbolOnly**  -  **/Force: non risolto**
 
   Per altre informazioni, vedere [/FORCE (forza l'output del file)](/cpp/build/reference/force-force-file-output).
 
 - **ForceSymbolReferences**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Questo parametro indica al linker di aggiungere un simbolo specificato alla tabella dei simboli.
 
@@ -315,11 +315,11 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **FunctionOrder**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Questo parametro ottimizza il programma inserendo le funzioni incluse nel pacchetto specificate (COMDATs) nell'immagine secondo un ordine predeterminato.
 
-  Per ulteriori informazioni, vedere [/ORDER (Put functions in order)](/cpp/build/reference/order-put-functions-in-order).
+  Per ulteriori informazioni, vedere [/Order (Put Functions in order)](/cpp/build/reference/order-put-functions-in-order).
 
 - **GenerateDebugInformation**
 
@@ -327,7 +327,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, crea informazioni di debug per il file *EXE* o per la DLL.
 
-  Per ulteriori informazioni, vedere [/DEBUG (Genera informazioni di debug)](/cpp/build/reference/debug-generate-debug-info).
+  Per ulteriori informazioni, vedere [/debug (genera informazioni di debug)](/cpp/build/reference/debug-generate-debug-info).
 
 - **GenerateManifest**
 
@@ -341,25 +341,25 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Parametro **booleano** facoltativo.
 
-  Se `true`, crea un *file di mappa*. L'estensione del file di mappa è *.map*.
+  Se `true`, crea un *file di mappa*. L'estensione del nome file del file di mappa è *. map*.
 
-  Per ulteriori informazioni, vedere [/MAP (Genera file mappa)](/cpp/build/reference/map-generate-mapfile).
+  Per ulteriori informazioni, vedere [/Map (genera file map)](/cpp/build/reference/map-generate-mapfile).
 
 - **HeapCommitSize**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica la quantità di memoria fisica nellheap da allocare alla volta.
 
-  Per ulteriori informazioni, `commit` vedere l'argomento in [/HEAP (Set heap size)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapReserveSize**.
+  Per ulteriori informazioni, vedere l' `commit` argomento in [/heap (Set Heap Size)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapReserveSize**.
 
 - **HeapReserveSize**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica il totale di allocazione dell'heap nella memoria virtuale.
 
-  Per ulteriori informazioni, `reserve` vedere l'argomento in [/HEAP (Set heap size)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapCommitSize** in questa tabella.
+  Per ulteriori informazioni, vedere l' `reserve` argomento in [/heap (Set Heap Size)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapCommitSize** in questa tabella.
 
 - **IgnoreAllDefaultLibraries**
 
@@ -387,7 +387,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **IgnoreSpecificDefaultLibraries**
 
-  Parametro **String[]** facoltativo.
+  Parametro **String []** facoltativo.
 
   Specifica il nome di una o più librerie predefinite da ignorare. Separare più librerie usando il punto e virgola.
 
@@ -399,29 +399,29 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, il linker produce un'immagine solo se può produrre anche una tabella dei gestori di eccezioni sicuri dell'immagine.
 
-  Per ulteriori informazioni, vedere [/SAFESEH (l'immagine dispone di gestori eccezioni sicuri)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
+  Per altre informazioni, vedere [/SAFESEH (l'immagine ha gestori delle eccezioni sicuri)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
 - **ImportLibrary**
 
   Nome della libreria di importazione specificato dall'utente che sostituisce il nome predefinito della libreria.
 
-  Per ulteriori informazioni, vedere [/IMPLIB (Name import library)](/cpp/build/reference/implib-name-import-library).
+  Per ulteriori informazioni, vedere [/IMPLIB (nome della libreria di importazione)](/cpp/build/reference/implib-name-import-library).
 
-- **Contenitore di chiaviKeyContainer**
+- **KeyContainer**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Contenitore che contiene la chiave per un assembly firmato.
 
-  Per ulteriori informazioni, vedere [/KEYCONTAINER (Specificare un contenitore di chiavi per firmare un assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Vedere anche il parametro **KeyFile** in questa tabella.
+  Per ulteriori informazioni, vedere [/keycontainer (specificare un contenitore di chiavi per la firma di un assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Vedere anche il parametro **KeyFile** in questa tabella.
 
-- **Keyfile**
+- **KeyFile**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica un file che contiene la chiave per un assembly firmato.
 
-  Per ulteriori informazioni, vedere [/KEYFILE (Specificare](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)la chiave o la coppia di chiavi per firmare un assembly). Vedere anche il parametro **KeyContainer**.
+  Per altre informazioni, vedere [/keyfile (specifica la chiave o la coppia di chiavi per firmare un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Vedere anche il parametro **KeyContainer**.
 
 - **LargeAddressAware**
 
@@ -441,15 +441,15 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **LinkErrorReporting**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Consente di inviare informazioni sugli errori interni del compilatore direttamente a Microsoft.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-  - **NoErrorReport** - **/ERRORREPORT:NESSUNO**
+  - **NoErrorReport**  -  **/errorreport: nessuna**
 
-  - **PromptImmediately** - **/ERRORREPORT:PROMPT**
+  - **PromptImmediately**  -  **/errorreport: prompt**
 
   - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
@@ -479,23 +479,23 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, specifica che il linker deve visualizzare un indicatore di stato che mostra la percentuale di completamento del collegamento.
 
-  Per ulteriori informazioni, `STATUS` vedere l'argomento di [/LTCG (generazione](/cpp/build/reference/ltcg-link-time-code-generation)di codice in fase di collegamento) .
+  Per ulteriori informazioni, vedere l' `STATUS` argomento di [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).
 
 - **LinkTimeCodeGeneration**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica le opzioni per l'ottimizzazione PGO.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-  - **Predefinito** - *nessuno>\<*
+  - **Predefinita** - *\<none>*
 
-  - **UseLinkTimeCodeGeneration** - **/LTCG**
+  - **UseLinkTimeCodeGeneration**  -  **/LTCG**
 
-  - **Strumento PGStrumenti** - **/LTCG:PGStrumento**
+  - **PGINSTRUMENT**  -  **/LTCG: PGINSTRUMENT**
 
-  - **PGOptimization** - **/LTCG:PGOptimize**
+  - **PGOptimization**  -  **/LTCG: PGOptimize**
 
   - **PGUpdate**
 
@@ -503,13 +503,13 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Per altre informazioni, vedere [/LTCG (generazione di codice in fase di collegamento)](/cpp/build/reference/ltcg-link-time-code-generation).
 
-- **ManifestFile (FileManifesto)**
+- **ManifestFile**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Sostituisce il nome file manifesto predefinito con il nome file specificato.
 
-  Per ulteriori informazioni, vedere [/MANIFESTFILE (file manifesto](/cpp/build/reference/manifestfile-name-manifest-file)del nome) .
+  Per ulteriori informazioni, vedere [/MANIFESTFILE (nome file manifesto)](/cpp/build/reference/manifestfile-name-manifest-file).
 
 - **MapExports**
 
@@ -517,59 +517,59 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, indica al linker di includere le funzioni esportate in un file di mappa.
 
-  Per ulteriori informazioni, `EXPORTS` vedere l'argomento di [/MAPINFO (Includi informazioni nel file di mappa)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
+  Per ulteriori informazioni, vedere l' `EXPORTS` argomento di [/MapInfo (include informazioni in file map)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
 - **MapFileName**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Sostituisce il nome file di mappa predefinito con il nome file specificato.
 
 - **MergedIDLBaseFileName**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica il nome file e l'estensione di file del file *IDL*.
 
-  Per ulteriori informazioni, vedere [/IDLOUT (Name MIDL output files)](/cpp/build/reference/idlout-name-midl-output-files).
+  Per altre informazioni, vedere [/IDLOUT (assegnare un nome ai file di output MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
 - **MergeSections**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Combina le sezioni in un'immagine. Specificare `from-section=to-section`.
 
-  Per ulteriori informazioni, vedere [/MERGE (sezioni combina)](/cpp/build/reference/merge-combine-sections).
+  Per ulteriori informazioni, vedere [/merge (combina sezioni)](/cpp/build/reference/merge-combine-sections).
 
 - **MidlCommandFile**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specificare il nome di un file che contiene opzioni della riga di comando MIDL.
 
-  Per ulteriori informazioni, vedere [/MIDL (Specificare](/cpp/build/reference/midl-specify-midl-command-line-options)le opzioni della riga di comando MIDL) .
+  Per altre informazioni, vedere [/MIDL (specifica le opzioni della riga di comando MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
 - **MinimumRequiredVersion**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica la versione minima richiesta del sottosistema. Gli argomenti sono numeri decimali compresi tra 0 e 65535.
 
 - **ModuleDefinitionFile**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica il nome di un [file di definizione moduli](/cpp/build/reference/module-definition-dot-def-files).
 
-  Per ulteriori informazioni, vedere [/DEF (Specificare il file di definizione moduli)](/cpp/build/reference/def-specify-module-definition-file).
+  Per altre informazioni, vedere [/def (specifica il file di definizione del modulo)](/cpp/build/reference/def-specify-module-definition-file).
 
 - **MSDOSStubFileName**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Collega il programma stub MS-DOS specificato a un programma Win32.
 
-  Per ulteriori informazioni, vedere [/STUB (nome file stub MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
+  Per ulteriori informazioni, vedere [/Stub (nome file stub MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
 - **NoEntryPoint**
 
@@ -577,7 +577,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, crea una DLL di sole risorse.
 
-  Per ulteriori informazioni, vedere [/NOENTRY (nessun punto di ingresso)](/cpp/build/reference/noentry-no-entry-point).
+  Per altre informazioni, vedere [/NOENTRY (nessun punto di ingresso)](/cpp/build/reference/noentry-no-entry-point).
 
 - **ObjectFiles**
 
@@ -593,13 +593,13 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Per altre informazioni, vedere l'argomento `REF` in [/OPT (Ottimizzazioni)](/cpp/build/reference/opt-optimizations).
 
-- **Outputfile**
+- **OutputFile**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Esegue l'override del nome e del percorso predefiniti del programma creato dal linker.
 
-  Per ulteriori informazioni, vedere [/OUT (Nome file](/cpp/build/reference/out-output-file-name)di output) .
+  Per ulteriori informazioni, vedere [/out (nome file di output)](/cpp/build/reference/out-output-file-name).
 
 - **PerUserRedirection**
 
@@ -619,7 +619,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, indica a *Bind.exe* che l'immagine collegata non deve essere associata.
 
-  Per ulteriori informazioni, vedere [/ALLOWBIND (Prevent DLL binding)](/cpp/build/reference/allowbind-prevent-dll-binding).
+  Per ulteriori informazioni, vedere [/ALLOWBIND (Impedisci associazione dll)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
 - **Profilo**
 
@@ -631,15 +631,15 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **ProfileGuidedDatabase**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
-  Specifica il nome del file *pgd* che verrà utilizzato per contenere le informazioni sul programma in esecuzione
+  Specifica il nome del file *. PGD* che verrà usato per contenere informazioni sul programma in esecuzione
 
   Per altre informazioni, vedere [/PGD (specifica il database per le ottimizzazioni PGO)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
 - **ProgramDatabaseFile**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica un nome per il database di programma (PDB) creato dal linker.
 
@@ -673,29 +673,29 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, imposta il checksum nell'intestazione di un file *EXE*.
 
-  Per ulteriori informazioni, vedere [/RELEASE (Impostare il checksum)](/cpp/build/reference/release-set-the-checksum).
+  Per ulteriori informazioni, vedere [/Release (set the checksum)](/cpp/build/reference/release-set-the-checksum).
 
-- **ShowProgress (Mostraprogresso)**
+- **ShowProgress**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica il livello di dettaglio dei report di stato per l'operazione di collegamento.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-  - **NotSet** - *nessuna>\<*
+  - **NotSet** - *\<none>*
 
-  - **LinkVerbose** - **/VERBOSE**
+  - **LinkVerbose**  -  **/Verbose**
 
-  - **LinkVerboseLib** - **/VERBOSE:Lib**
+  - **LinkVerboseLib**  -  **/Verbose: lib**
 
-  - **LinkVerboseICF** - **/VERBOSE:ICF**
+  - **LinkVerboseICF**  -  **/verbose: ICF**
 
-  - **LinkVerboseREF** - **/VERBOSE:REF**
+  - **LinkVerboseREF**  -  **/verbose: Ref**
 
-  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+  - **LinkVerboseSAFESEH**  -  **/verbose: SAFESEH**
 
-  - **LinkVerboseCLR** - **/VERBOSE:CLR**
+  - **LinkVerboseCLR**  -  **/verbose: CLR**
 
   Per altre informazioni, vedere [/VERBOSE (stampa i messaggi sullo stato)](/cpp/build/reference/verbose-print-progress-messages).
 
@@ -707,15 +707,15 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **SpecifySectionAttributes**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica gli attributi di una sezione. Esegue l'override degli attributi impostati quando è stato compilato il file *OBJ* per la sezione.
 
-  Per ulteriori informazioni, vedere [/SECTION (Specificare gli attributi](/cpp/build/reference/section-specify-section-attributes)della sezione) .
+  Per altre informazioni, vedere [/Section (specifica attributi di sezione)](/cpp/build/reference/section-specify-section-attributes).
 
 - **StackCommitSize**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica la quantità di memoria fisica in ogni allocazione quando viene allocata altra memoria.
 
@@ -723,7 +723,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **StackReserveSize**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica la dimensione totale di allocazione dello stack nella memoria virtuale.
 
@@ -731,39 +731,39 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
 - **StripPrivateSymbols**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Crea un secondo file database di programma (PDB) che omette i simboli che non si vuole distribuire ai clienti. Specificare il nome del secondo file PDB.
 
-  Per ulteriori informazioni, vedere [/PDBSTRIPPED (Strip private symbols)](/cpp/build/reference/pdbstripped-strip-private-symbols).
+  Per ulteriori informazioni, vedere [/PDBSTRIPPED (Rimuovi simboli privati)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
 - **Sottosistema**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica l'ambiente per il file eseguibile.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-  - **NotSet** - *nessuna>\<*
+  - **NotSet** - *\<none>*
 
-  - **Console** - **/SUBSYSTEM:CONSOLE**
+  - **Console**  -  di **/SUBSYSTEM: console**
 
-  - **Windows** - **/SUBSYSTEM:WINDOWS**
+  - **Windows**  -  **/SUBSYSTEM: Windows**
 
   - **Native** - **/SUBSYSTEM:NATIVE**
 
-  - **Applicazione EFI** - **/SUBSYSTEM:EFI_APPLICATION**
+  - **Applicazione EFI**  -  **/SUBSYSTEM: EFI_APPLICATION**
 
-  - **Driver del servizio di avvio EFI** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+  - Driver del servizio di **avvio EFI**  -  **/SUBSYSTEM: EFI_BOOT_SERVICE_DRIVER**
 
-  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+  - **ROM EFI**  -  **/SUBSYSTEM: EFI_ROM**
 
-  - **Runtime EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+  - **Runtime EFI**  -  **/SUBSYSTEM: EFI_RUNTIME_DRIVER**
 
-  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE (informazioni in inglese)**
+  - **Windows**  -  **/SUBSYSTEM: WindowsCE**
 
-  - **POSIX** - **/SOTTOSISTEMA:POSIX**
+  - **POSIX**  -  **/SUBSYSTEM: POSIX**
 
   Per altre informazioni, vedere [/SUBSYSTEM (Specifica il sottosistema)](/cpp/build/reference/subsystem-specify-subsystem).
 
@@ -773,7 +773,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, indica al linker di non includere una tabella di indirizzi di importazione nell'immagine finale.
 
-  Per ulteriori informazioni, `NOBIND` vedere l'argomento di [/DELAY (Impostazioni di importazione caricamento ritardato)](/cpp/build/reference/delay-delay-load-import-settings).
+  Per ulteriori informazioni, vedere l' `NOBIND` argomento di [/delay (impostazioni di importazione a caricamento ritardato)](/cpp/build/reference/delay-delay-load-import-settings).
 
 - **SupportUnloadOfDelayLoadedDLL**
 
@@ -781,7 +781,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, indica alla funzione dell'helper di caricamento ritardato di supportare lo scaricamento esplicito della DLL.
 
-  Per ulteriori informazioni, `UNLOAD` vedere l'argomento di [/DELAY (Impostazioni di importazione caricamento ritardato)](/cpp/build/reference/delay-delay-load-import-settings).
+  Per ulteriori informazioni, vedere l' `UNLOAD` argomento di [/delay (impostazioni di importazione a caricamento ritardato)](/cpp/build/reference/delay-delay-load-import-settings).
 
 - **SuppressStartupBanner**
 
@@ -797,7 +797,7 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, indica al sistema operativo di copiare prima di tutto l'output del linker in un file di scambio per poi eseguire l'immagine da tale posizione.
 
-  Per ulteriori informazioni, `CD` vedere l'argomento di [/SWAPRUN (Carica output del linker in un file di scambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Vedere anche il parametro **SwapRunFromNET**.
+  Per ulteriori informazioni, vedere l' `CD` argomento di [/SWAPRUN (caricamento dell'output del linker nel file di scambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Vedere anche il parametro **SwapRunFromNET**.
 
 - **SwapRunFromNET**
 
@@ -805,41 +805,41 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, indica al sistema operativo di copiare prima di tutto l'output del linker in un file di scambio per poi eseguire l'immagine da tale posizione.
 
-  Per ulteriori informazioni, `NET` vedere l'argomento di [/SWAPRUN (Carica output del linker in un file di scambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Vedere anche il parametro **SwapRunFromCD** in questa tabella.
+  Per ulteriori informazioni, vedere l' `NET` argomento di [/SWAPRUN (caricamento dell'output del linker nel file di scambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Vedere anche il parametro **SwapRunFromCD** in questa tabella.
 
 - **TargetMachine**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica la piattaforma di destinazione per il programma o DLL.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-  - **NotSet** - *nessuna>\<*
+  - **NotSet** - *\<none>*
 
-  - **MachineARM** - **/MACHINE:ARM**
+  - **MachineARM**  -  **/Machine: ARM**
 
   - **MachineEBC** - **/MACHINE:EBC**
 
   - **MachineIA64** - **/MACHINE:IA64**
 
-  - **MachineMIPS** - **/MACHINE:MIPS**
+  - **MachineMIPS**  -  **/Machine: MIPS**
 
-  - **MachineMIPS16** - **/MACHINE:MIPS16**
+  - **MachineMIPS16**  -  **/Machine: MIPS16**
 
-  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+  - **MachineMIPSFPU**  -  **/Machine: MIPSFPU**
 
-  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+  - **MachineMIPSFPU16**  -  **/Machine: MIPSFPU16**
 
-  - **MachineSH4** - **/MACHINE:SH4 (informazioni in** inglese)
+  - **MachineSH4**  -  **/Machine: SH4**
 
-  - **MACHINETHUMB** - **/MACHINE:THUMB**
+  - **MachineTHUMB**  -  **/Machine: Thumb**
 
-  - **MachineX64** - **/MACHINE:X64 (in inglese)**
+  - **MachineX64**  -  **/Machine: x64**
 
-  - **MachineX86** - **/MACHINE:X86**
+  - **MachineX86**  -  **/Machine: x86**
 
-  Per ulteriori informazioni, vedere [/MACHINE (Specificare](/cpp/build/reference/machine-specify-target-platform)la piattaforma di destinazione) .
+  Per ulteriori informazioni, vedere [/Machine (specifica la piattaforma di destinazione)](/cpp/build/reference/machine-specify-target-platform).
 
 - **TerminalServerAware**
 
@@ -847,11 +847,11 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, imposta un flag nel campo IMAGE_OPTIONAL_HEADER DllCharacteristics nell'intestazione facoltativa dell'immagine del programma. Quando questo flag viene impostato, Terminal Server non apporta determinate modifiche all'applicazione.
 
-  Per ulteriori informazioni, vedere [/TSAWARE (Creare un'applicazione compatibile con Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
+  Per altre informazioni, vedere [/TSAWARE (crea un'applicazione in grado di riconoscere Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
 - **TrackerLogDirectory**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica la directory del log di Tracker.
 
@@ -869,13 +869,13 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, crea un'immagine per il file di output corrente senza un assembly .NET Framework.
 
-  Per ulteriori informazioni, vedere [/NOASSEMBLY (Creare un modulo MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
+  Per altre informazioni, vedere [/NOASSEMBLY (creare un modulo MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
 - **TypeLibraryFile**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
-  Specifica il nome file e l'estensione del file *tlb.* Specificare un nome file o un percorso e un nome file.
+  Specifica il nome file e l'estensione del nome file del file *tlb* . Specificare un nome file o un percorso e un nome file.
 
   Per altre informazioni, vedere [/TLBOUT (assegna un nome al file TLB)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
@@ -885,21 +885,21 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Designa un valore specificato dall'utente per una libreria dei tipi creata dal linker. Specificare un valore compreso tra 1 e 65535.
 
-  Per ulteriori informazioni, vedere [/TLBID (Specificare l'ID risorsa per TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
+  Per ulteriori informazioni, vedere [/TLBID (specifica l'ID risorsa per TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
 - **UACExecutionLevel**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Indica il livello di esecuzione richiesto per l'applicazione quando viene eseguita con Controllo dell'account utente.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-  - **AsInvoker (Richiamatore)** - `level='asInvoker'`
+  - **AsInvoker** - `level='asInvoker'`
 
-  - **HighestDisponibile** - `level='highestAvailable'`
+  - **HighestAvailable** - `level='highestAvailable'`
 
-  - **Requireadministrator** - `level='requireAdministrator'`
+  - **RequireAdministrator** - `level='requireAdministrator'`
 
   Per altre informazioni, vedere l'argomento `level` di [/MANIFESTUAC (incorporazione delle informazioni di Controllo dell'account utente nel manifesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
@@ -917,14 +917,14 @@ Esegue il wrapping dello strumento del linker di Microsoft C, *link.exe*. Lo str
 
   Se `true`, vengono usati gli input allo strumento Gestione librerie invece del file di libreria quando gli output di libreria delle dipendenze del progetto vengono collegati.
 
-- **Version**
+- **Versione**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Inserire un numero di versione nell'intestazione del file *DLL* o *EXE*. Specificare "`major[.minor]`". Gli argomenti `major` e `minor` sono numeri decimali compresi tra 0 e 65535.
 
-  Per ulteriori informazioni, vedere [/VERSION (Informazioni sulla versione)](/cpp/build/reference/version-version-information).
+  Per ulteriori informazioni, vedere [/Version (informazioni sulla versione)](/cpp/build/reference/version-version-information).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

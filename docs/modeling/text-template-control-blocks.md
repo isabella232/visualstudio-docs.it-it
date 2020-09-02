@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591788"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
@@ -141,11 +141,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Come usare i blocchi di controllo
- Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. Per ulteriori informazioni sull'inclusione di altri modelli di testo con la direttiva `include`, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
+ Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. Per ulteriori informazioni sull'inclusione di altri modelli di testo con la `include` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
 
  Quando si usano i blocchi di controllo, è necessario tenere presenti le considerazioni seguenti:
 
-- **Linguaggio.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. Per ulteriori informazioni sulla direttiva `template`, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
+- **Linguaggio.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. Per ulteriori informazioni sulla `template` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
 
      Il linguaggio usato nei blocchi di controllo non ha nulla a che fare con il linguaggio o il formato del testo generato in un modello di testo. È possibile generare codice C# usando codice Visual Basic o viceversa.
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544417"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;elemento postActions &gt; (sviluppo per Office in Visual Studio)
@@ -45,7 +45,7 @@ ms.locfileid: "85544417"
  `postActions` presenta l'elemento seguente:
 
 ### <a name="postaction"></a>postAction
- Facoltativa. Il ruolo dell' `postAction` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento&#62; postAction &#40;sviluppo per Office in Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
+ facoltativo. Il ruolo dell' `postAction` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento&#62; postAction &#40;sviluppo per Office in Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Esempio di azione post-distribuzione
 

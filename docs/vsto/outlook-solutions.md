@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985677"
 ---
 # <a name="outlook-solutions"></a>soluzioni Outlook
@@ -40,7 +40,7 @@ ms.locfileid: "72985677"
 ## <a name="outlook-vsto-add-in-programming-model"></a>Modello di programmazione di componenti aggiuntivi VSTO per Outlook
  Quando si crea un progetto di componente aggiuntivo VSTO per Outlook, Visual Studio genera una classe, chiamata `ThisAddIn`, che costituisce la base della soluzione. Questa classe fornisce un punto di partenza per la scrittura del codice ed espone inoltre il modello a oggetti di Outlook nel componente aggiuntivo VSTO.
 
- Per altre informazioni sulla classe `ThisAddIn` e altre funzionalità che è possibile usare in un componente aggiuntivo VSTO, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
+ Per altre informazioni sulla `ThisAddIn` classe e su altre funzionalità che è possibile usare in un componente aggiuntivo VSTO, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatizzare Outlook mediante il modello a oggetti di Outlook
  Il modello a oggetti di Outlook espone diversi tipi che è possibile usare per automatizzare Outlook. Questi tipi consentono di scrivere il codice per eseguire attività comuni:
@@ -55,7 +55,7 @@ ms.locfileid: "72985677"
 
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>Personalizzare l'interfaccia utente di un'applicazione Outlook
 
-|Attività|Per altre informazioni|
+|Attività|Per ulteriori informazioni|
 |----------|--------------------------|
 |Aggiungere schede personalizzate alla barra multifunzione di un controllo di Outlook.|[Panoramica della barra multifunzione](../vsto/ribbon-overview.md)|
 |Aggiungere gruppi personalizzati a una scheda predefinita in un controllo di Outlook.|[Procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)|

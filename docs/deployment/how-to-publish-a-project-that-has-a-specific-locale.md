@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d3b3aa7c2c56b1175c2f280a96ade78ea17ee55
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382224"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedura: Pubblicare un progetto dotato di impostazioni locali specifiche
@@ -161,7 +161,7 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
 
 7. Cercare in *C:\Inetpub\wwwroot\PublishLocales\en*. Verranno visualizzati i file installati, ad esempio i manifesti, *setup.exe*e il file della pagina Web di pubblicazione, oltre alla DLL della risorsa localizzata. Per impostazione predefinita, ClickOnce aggiunge ai file EXE e DLL l'estensione *deploy*, che può essere rimossa dopo la distribuzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Ambiente di sviluppo di macro](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Finestra Esplora macro](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))

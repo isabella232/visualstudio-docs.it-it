@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::SetResponse | Microsoft Docs
+title: 'IDebugMessageEvent2:: seresponse | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cac96c0f5476694b18884fd8d7713a2bec877aef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685904"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Imposta la risposta, se presente, nella finestra di messaggio.  
+Imposta la risposta, se presente, dalla finestra di messaggio.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,10 +41,10 @@ int SetResponse( 
   
 #### <a name="parameters"></a>Parametri  
  `dwResponse`  
- [in] Specifica la risposta, usando le convenzioni di Win32 `MessageBox` (funzione). Vedere le [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) funzione per i dettagli.  
+ in Specifica la risposta, usando le convenzioni della `MessageBox` funzione Win32. Per informazioni dettagliate, vedere la funzione [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   

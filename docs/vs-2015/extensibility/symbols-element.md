@@ -1,5 +1,5 @@
 ---
-title: Elemento di simboli | Microsoft Docs
+title: Elemento symbols | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160466"
 ---
 # <a name="symbols-element"></a>Elemento Symbols
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definisce i GUID e gli ID usati da altri elementi VSCT. Per codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati da [elemento Extern](../extensibility/extern-element.md). Il codice gestito utilizza gli elementi figlio dell'elemento simboli per definire queste informazioni.  
+Definisce GUID e ID usati da altri elementi VSCT. Per il codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati dall' [elemento extern](../extensibility/extern-element.md). Il codice gestito utilizza gli elementi figlio dell'elemento symbols per definire queste informazioni.  
   
- Se si crea un file con estensione vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento di simboli. Per altre informazioni, vedere [Procedura: Creare una. File Vsct da un oggetto esistente. File CTO](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+ Se si crea un file con estensione vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento symbols. Per ulteriori informazioni, vedere [procedura: creare un oggetto. File vsct da un esistente. File CTO](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
- L'elemento di simboli non deve essere confuso con il [definire elemento](../extensibility/define-element.md), che definisce le coppie nome-valore per l'utilizzo dal preprocessore.  
+ L'elemento symbols non deve essere confuso con l' [elemento define](../extensibility/define-element.md), che definisce le coppie nome/valore per l'uso da parte del preprocessore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,20 +43,20 @@ Definisce i GUID e gli ID usati da altri elementi VSCT. Per codice non gestito, 
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Nessuna||  
+|nessuno||  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|GuidSymbol|Definisce un simbolo GUID. GuidSymbol ha due attributi obbligatori: nome e valore. Il nome è il nome del simbolo e il valore è il valore del GUID sotto forma di stringa.<br /><br /> Ad esempio:\<GuidSymbol name = "guidVsPackage1Pkg" value = "{c5f54698-101a-4846-84d3-dc748f9cd848}" / >|  
-|IDSymbol|Definisce un simbolo. IDSymbol ha due attributi obbligatori: nome e valore. Il nome è il nome del simbolo e il valore è il valore del simbolo sotto forma di stringa.<br /><br /> Ad esempio:\<IDSymbol name = "MyMenuGroup" value = "0x1020" / >|  
+|GuidSymbol|Definisce un simbolo GUID. GuidSymbol dispone di due attributi obbligatori: Name e value. Il nome è il nome del simbolo e il valore è il valore del GUID sotto forma di stringa.<br /><br /> Ad esempio:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|  
+|IDSymbol|Definisce un simbolo. IDSymbol dispone di due attributi obbligatori: Name e value. Il nome è il nome del simbolo e il valore è il valore del simbolo sotto forma di stringa.<br /><br /> Ad esempio:\<IDSymbol name="MyMenuGroup" value="0x1020" />|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|L'elemento radice del file con estensione vsct.|  
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Elemento radice del file con estensione vsct.|  
   
 ## <a name="example"></a>Esempio  
   
@@ -72,4 +72,4 @@ Definisce i GUID e gli ID usati da altri elementi VSCT. Per codice non gestito, 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

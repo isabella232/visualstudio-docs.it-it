@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+title: 'IDebugBreakpointResolution2:: GetResolutionInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 03cdeb1539fc9811a1692a1f7a768da0114a90c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160100"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene le informazioni di risoluzione dei punti di interruzione che descrive il punto di interruzione.  
+Ottiene le informazioni di risoluzione del punto di interruzione che descrivono questo punto di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int GetResolutionInfo( 
   
 #### <a name="parameters"></a>Parametri  
  `dwFields`  
- [in] Una combinazione di flag dal [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumerazione che determinano quali campi del `pBPResolutionInfo` parametro devono essere compilati.  
+ in Combinazione di flag dell'enumerazione [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) che determinano i campi del `pBPResolutionInfo` parametro da compilare.  
   
  `pBPResolutionInfo`  
- [out] Il [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura deve essere compilato con informazioni su questo punto di interruzione.  
+ out Struttura di [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) da compilare con le informazioni su questo punto di interruzione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="example"></a>Esempio  
- L'esempio seguente implementa questo metodo per un semplice `CDebugBreakpointResolution` oggetto che espone il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfaccia.  
+ Nell'esempio seguente viene implementato questo metodo per un `CDebugBreakpointResolution` oggetto semplice che espone l'interfaccia [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(  

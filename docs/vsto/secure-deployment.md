@@ -16,35 +16,35 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978374"
 ---
 # <a name="secure-deployment"></a>Distribuzione sicura
-  Quando si crea una soluzione Office, il computer di sviluppo viene aggiornato automaticamente per consentire al codice nel progetto per l'esecuzione. Tuttavia, quando si distribuisce la soluzione, è necessario fornire l'evidenza su cui basare una decisione di attendibilità della soluzione con un certificato di firma o utilizzando il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiave dei messaggi di richiesta di attendibilità. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).
+  Quando si crea una soluzione Office, il computer di sviluppo viene aggiornato automaticamente per consentire l'esecuzione del codice nel progetto. Tuttavia, quando si distribuisce la soluzione, è necessario fornire l'evidenza su quale basare una decisione di attendibilità firmando la soluzione con un certificato o usando la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiave della richiesta di attendibilità. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Per le personalizzazioni a livello di documento, se si distribuisce il documento in un percorso di rete, è necessario anche aggiungere il percorso del documento all'elenco di percorsi attendibili nel Centro protezione dell'applicazione di Office. Per altre informazioni su come impostare autorizzazioni per i documenti nei computer dell'utente finale, vedere [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).
+ Per le personalizzazioni a livello di documento, se si distribuisce il documento in un percorso di rete, è necessario aggiungere anche il percorso del documento all'elenco di percorsi attendibili nel centro protezione dell'applicazione di Office. Per ulteriori informazioni sull'impostazione delle autorizzazioni per i documenti nei computer degli utenti finali, vedere [Grant trust to Documents](../vsto/granting-trust-to-documents.md).
 
-## <a name="prevent-office-solutions-from-running-code"></a>Impedire l'esecuzione del codice di soluzioni Office
- Gli amministratori possono utilizzare il Registro di sistema per impedire l'esecuzione in un computer di tutte le soluzioni Office. Quando una soluzione Office che Usa estensioni di codice gestito viene aperto, Visual Studio Tools per i controlli di runtime di Office se una voce con il nome `Disabled` esiste in una delle seguenti chiavi del Registro di sistema nel computer:
+## <a name="prevent-office-solutions-from-running-code"></a>Impedisci alle soluzioni Office di eseguire codice
+ Gli amministratori possono usare il registro di sistema per impedire l'esecuzione di tutte le soluzioni Office in un computer. Quando viene aperta una soluzione Office con estensioni di codice gestito, il Strumenti di Visual Studio per Office Runtime controlla se esiste una voce con il nome `Disabled` in una delle seguenti chiavi del registro di sistema nel computer:
 
-- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
+- **HKEY_CURRENT_USER \Software\Microsoft\VSTO**
 
-- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
+- **HKEY_LOCAL_MACHINE \Software\Microsoft\VSTO**
 
-  Per impedire l'esecuzione del codice di soluzioni Office, creare un `Disabled` voce in una o entrambe queste chiavi del Registro di sistema e specificare uno dei seguenti tipi di dati e i valori per `Disabled`:
+  Per impedire l'esecuzione di codice per le soluzioni Office, creare una `Disabled` voce in una o entrambe le chiavi del registro di sistema e specificare uno dei tipi di dati e i valori seguenti per `Disabled` :
 
-- REG_SZ o REG_EXPAND_SZ che è impostato su qualsiasi stringa diversa da "0" (zero).
+- REG_SZ o REG_EXPAND_SZ impostato su una stringa diversa da "0" (zero).
 
-- REG_DWORD che è impostato su qualsiasi valore diverso da 0 (zero).
+- REG_DWORD impostato su un valore diverso da 0 (zero).
 
-  Per abilitare soluzioni di Office eseguire il codice, impostare entrambe le `Disabled` voci da 0 (zero), o eliminare le voci del Registro di sistema.
+  Per consentire alle soluzioni Office di eseguire codice, impostare entrambe le `Disabled` voci su 0 (zero) o eliminare le voci del registro di sistema.
 
 ## <a name="see-also"></a>Vedere anche
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
-- [Preparare il computer per eseguire oppure ospitare le soluzioni Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
-- [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)
+- [Preparare i computer per l'esecuzione o l'hosting di soluzioni Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
+- [Soluzioni Office sicure](../vsto/securing-office-solutions.md)

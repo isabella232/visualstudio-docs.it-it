@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283047"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
@@ -95,7 +95,7 @@ Quando si crea un'origine dati da un servizio, Visual Studio aggiunge un riferim
 
 - [Servizi WCF](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
-- SERVIZI WEB
+- Servizi Web
 
     > [!NOTE]
     > Gli elementi visualizzati nei **Data source** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, viene visualizzato alcun elemento nel **Data source** finestra una volta completata la procedura guidata. Questo perché i set di dati non tipizzati non forniscono uno schema e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.
@@ -118,6 +118,6 @@ Se si desidera eseguire il binding a un oggetto in un assembly o in un progetto 
 
 È possibile creare un'origine dati da un elenco SharePoint eseguendo la **Configurazione guidata origine dati** e selezionando il tipo di origine dati **SharePoint** . SharePoint espone i dati attraverso WCF Data Services, pertanto la creazione di un'origine dati SharePoint equivale alla creazione di un'origine dati da un servizio. Selezionando l'elemento **SharePoint** nella **Configurazione guidata origine dati** viene visualizzata la finestra di dialogo **Aggiungi riferimento al servizio** , in cui è possibile connettersi al servizio dati di SharePoint puntando al server SharePoint. Questa operazione richiede SharePoint SDK.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

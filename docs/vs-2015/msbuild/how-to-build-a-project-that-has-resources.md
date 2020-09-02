@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686522"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Procedura: compilare un progetto con risorse
@@ -83,4 +83,4 @@ Se si stanno compilando le versioni localizzate di un progetto, tutti gli elemen
 [MSBuild](msbuild.md)  
  [Attività GenerateResource](../msbuild/generateresource-task.md)   
  [Attività Csc](../msbuild/csc-task.md)   
- [Resgen.exe (generatore di file di risorse)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (Generatore di file di risorse)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

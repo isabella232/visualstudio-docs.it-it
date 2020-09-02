@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17cd398468bd1640e50f6a58004905cfdf6c2ff0
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382146"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce
@@ -29,7 +29,7 @@ ms.locfileid: "85382146"
 
 1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-2. Fare clic sulla scheda **Sicurezza**.
+2. Fare clic sulla scheda **Security** (Sicurezza).
 
 3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .
 
@@ -48,6 +48,6 @@ ms.locfileid: "85382146"
     > [!NOTE]
     > È possibile usare il metodo `ToXml` di un set di autorizzazioni per generare il codice XML per il manifesto dell'applicazione. Ad esempio, per generare il codice XML per il set di autorizzazioni <xref:System.Security.Permissions.EnvironmentPermission> , chiamare il metodo <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugBinder3 . Documenti Microsoft
+title: IDebugBinder3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa85872337fdc1f7519d0de98cffe1436ef41c67
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735675"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
-> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere [Analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e Esempio di [analizzatore di](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)espressioni gestite .
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Questa interfaccia fornisce l'accesso a tipi, alias e servizi del visualizzatore personalizzato.
 
@@ -32,29 +32,29 @@ IDebugBinder3 : IDebugBinder
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Un motore di debug implementa questa interfaccia per supportare gli alias, i servizi del visualizzatore personalizzato e l'accesso alle informazioni sul tipo di oggetto.
+ Un motore di debug implementa questa interfaccia per supportare alias, servizi del visualizzatore personalizzato e accesso alle informazioni sul tipo di oggetto.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfaccia ottiene questa interfaccia utilizzando [QueryInterface](/cpp/atl/queryinterface).
+ Un'interfaccia [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) ottiene questa interfaccia utilizzando [QueryInterface](/cpp/atl/queryinterface).
 
-## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
- Oltre ai metodi forniti dal IDebugBinder interfaccia, questa interfaccia implementa quanto segue:In addition to the methods provided by the [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interface, this interface implements the following:
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
+ Oltre ai metodi forniti dall'interfaccia [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) , questa interfaccia implementa gli elementi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|Recupera un oggetto memoria che rappresenta la memoria a cui è associato questo oggetto.|
 |[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|Recupera l'eccezione associata a questo oggetto (se presente),|
-|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Recupera un alias dato il suo nome,|
-|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Recupera una matrice di tutti gli alias per questo oggetto,|
-|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Ottiene il numero di tipi di argomento associati a questo oggetto,|
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Recupera un elenco di tipi di argomento associati a questo oggetto,|
-|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Ottiene un'interfaccia a un servizio visualizzatore,|
-|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Converte una posizione dell'oggetto o un indirizzo di memoria a 64 bit in un contesto di memoria.|
+|[FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)|Recupera un alias dato il relativo nome.|
+|[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|Recupera una matrice di tutti gli alias per questo oggetto.|
+|[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|Ottiene il numero di tipi di argomenti associati a questo oggetto.|
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|Recupera un elenco di tipi di argomenti associati a questo oggetto.|
+|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|Ottiene un'interfaccia per un servizio del visualizzatore,|
+|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|Converte il percorso di un oggetto o un indirizzo di memoria a 64 bit in un contesto di memoria.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: ee.h
+ Intestazione: EE. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

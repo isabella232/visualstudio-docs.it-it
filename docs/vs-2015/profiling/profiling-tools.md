@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686190"
 ---
 # <a name="profiling-tools"></a>Strumenti di profilatura
@@ -25,7 +25,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
   
  Consultare il riepilogo in basso per vedere quali strumenti sono disponibili per il tipo di progetto, ad esempio, desktop, UWP, ASP.NET.  
   
- Per accedere agli strumenti di profilatura, usare **Debug / Windows / Mostra strumenti di diagnostica** per usare gli strumenti durante la sessione di debug oppure **Debug / Profiler prestazioni** per eseguire un'analisi mirata delle prestazioni.  Vedere [Esecuzione degli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) per altre informazioni sui diversi approcci.  
+ Per accedere agli strumenti di profilatura, usare **Debug / Windows / Mostra strumenti di diagnostica** per usare gli strumenti durante la sessione di debug oppure **Debug / Profiler prestazioni** per eseguire un'analisi mirata delle prestazioni.  Per altre informazioni sui diversi approcci, vedere [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Eseguire gli strumenti di profilatura con o senza il debugger).  
   
  ![DebugDiagnosticsToolsMenu](../profiling/media/debugdiagnosticstoolsmenu.png "DebugDiagnosticsToolsMenu")  
   
@@ -36,12 +36,12 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
 ## <a name="memory-usage"></a>Utilizzo memoria  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento **Utilizzo memoria** , che consente di creare snapshot dell'heap di memoria gestito e nativo. È possibile usare questo strumento con le applicazioni desktop, le app universali di Windows e le applicazioni ASP.NET. Lo strumento **Utilizzo memoria** può essere eseguito dalla finestra **Strumenti di diagnostica** durante il debug (**Debug / Windows / Mostra strumenti di diagnostica**) o all'esterno del debugger (**Debug / Profiler prestazioni**). Per altre informazioni, vedere [Utilizzo memoria](../profiling/memory-usage.md) e [Utilizzo memoria senza debug](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
+ Trovare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento **utilizzo memoria** . che consente di creare snapshot dell'heap di memoria gestito e nativo. È possibile usare questo strumento con le applicazioni desktop, le app universali di Windows e le applicazioni ASP.NET. Lo strumento **utilizzo memoria** può essere eseguito dalla finestra **strumenti di diagnostica** durante il debug (**debug/Windows/Mostra strumenti di diagnostica**) o all'esterno del debugger (**debug/Profiler prestazioni**). Per ulteriori informazioni, vedere  [utilizzo della memoria](../profiling/memory-usage.md) e [utilizzo della memoria senza debug](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) .  
   
 ## <a name="cpu-usage"></a>Utilizzo CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice C++, C#/VB e JavaScript.  È possibile usare questo strumento con le applicazioni desktop e le app universali di Windows, nonché con le app dei servizi app di Azure. Lo strumento **Utilizzo CPU** può essere eseguito dalla finestra **Strumenti di diagnostica** durante il debug (**Debug / Windows / Mostra strumenti di diagnostica**) o all'esterno del debugger (**Debug / Profiler prestazioni**). Vedere [Utilizzo CPU](../profiling/cpu-usage.md) .  
+ Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice C++, C#/VB e JavaScript.  È possibile usare questo strumento con le applicazioni desktop e le app universali di Windows, nonché con le app dei servizi app di Azure. Lo strumento **utilizzo CPU** può essere eseguito dalla finestra **strumenti di diagnostica** durante il debug (**debug/Windows/Mostra strumenti di diagnostica**) o all'esterno del debugger (**debug/Profiler prestazioni**). Per ulteriori informazioni, vedere [utilizzo della CPU](../profiling/cpu-usage.md) .  
   
 ## <a name="performance-explorer"></a>Esplora prestazioni  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  
@@ -56,7 +56,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
 ## <a name="application-timeline"></a>Sequenza temporale applicazione  
  ![DiagAppTimeline](../profiling/media/diagapptimeline.png "DiagAppTimeline")  
   
- Lo strumento [Sequenza temporale applicazione](../profiling/application-timeline.md) consente di migliorare le prestazioni delle applicazioni XAML offrendo una visualizzazione dettagliata dell'utilizzo delle risorse. È possibile usare lo strumento **Sequenza temporale applicazione** sia con le applicazioni desktop che con le app universali di Windows, ma non con le applicazioni ASP.NET. Lo strumento **Sequenza temporale applicazione** può essere eseguito dalla finestra **Strumenti di diagnostica** (**Debug / Profiler prestazioni**).  
+ Lo strumento [Application Timeline](../profiling/application-timeline.md) consente di migliorare le prestazioni delle applicazioni XAML offrendo una visualizzazione dettagliata dell'utilizzo delle risorse. È possibile usare lo strumento **Sequenza temporale applicazione** sia con le applicazioni desktop che con le app universali di Windows, ma non con le applicazioni ASP.NET. Lo strumento **Sequenza temporale applicazione** può essere eseguito dalla finestra **Strumenti di diagnostica** (**Debug / Profiler prestazioni**).  
   
 ## <a name="perftips"></a>PerfTips  
  ![DiagPerfTips](../profiling/media/diagperftips.png "DiagPerfTips")  
@@ -64,12 +64,12 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
  Quando il debugger interrompe l'esecuzione in un punto di interruzione o un'operazione passo a passo, il tempo trascorso tra l'interruzione e il precedente punto di interruzione viene visualizzato come un suggerimento nella finestra dell'editor. Questi [PerfTips](../profiling/perftips.md) consentono di monitorare e analizzare le prestazioni dell'applicazione durante il debug. È possibile visualizzare i **PerfTips** nelle applicazioni desktop, universali di Windows e ASP.NET.  
   
 ## <a name="javascript-memory"></a>Memoria JavaScript  
- ![DiagJSMemory](../profiling/media/diagjsmemory.png "DiagJSMemory")  
+ ![Finestra](../profiling/media/diagjsmemory.png "Finestra")  
   
  Lo strumento [Memoria JavaScript](../profiling/javascript-memory.md) consente di misurare, valutare e definire la destinazione dei problemi relativi alle prestazioni del codice raccogliendo informazioni sulla temporizzazione all'entrata e all'uscita di ogni funzione nell'app. È possibile usare questo strumento con le app HTML universali di Windows. Lo strumento **Temporizzazione funzione JavaScript** può essere eseguito dalla finestra **Strumenti di diagnostica** (**Debug / Profiler prestazioni**).  
   
 ## <a name="html-ui-responsiveness"></a>Velocità di risposta interfaccia utente HTML  
- ![DiagHTMLResp](../profiling/media/diaghtmlresp.png "DiagHTMLResp")  
+ ![Finestra](../profiling/media/diaghtmlresp.png "Finestra")  
   
  Lo strumento [Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md) consente di isolare i problemi di prestazioni delle app, inclusi velocità di risposta insufficiente, tempo di caricamento lento e aggiornamenti visivi meno frequenti del previsto. È possibile usare questo strumento con le app HTML universali di Windows. Lo strumento **Velocità di risposta interfaccia utente HTML** può essere eseguito dalla finestra **Strumenti di diagnostica** (**Debug / Profiler prestazioni**).  
   
@@ -93,7 +93,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|No|  
 |[Esplora prestazioni](../profiling/performance-explorer.md)|sì|No|sì|  
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET Enterprise|Solo .NET Enterprise|Solo .NET Enterprise|  
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|Sì per HTML, no per XAML|No|  
+|[Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md)|No|Sì per HTML, no per XAML|No|  
 |[Memoria JavaScript](../profiling/javascript-memory.md)|No|Sì per HTML, no per XAML|No|  
   
 ## <a name="see-also"></a>Vedere anche  

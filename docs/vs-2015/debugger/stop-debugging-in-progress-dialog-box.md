@@ -1,5 +1,5 @@
 ---
-title: Arrestare il debug nella finestra di dialogo di avanzamento | Microsoft Docs
+title: Finestra di dialogo Interrompi debug in corso | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fc4b72987be726ab06aeb92a0e3eec2a338949e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684954"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Terminazione debug in corso (finestra di dialogo)
@@ -38,8 +38,8 @@ Questa finestra di dialogo viene visualizzata quando il debugger tenta di interr
  È possibile attendere la disconnessione dei processi e la chiusura della finestra di dialogo oppure utilizzare il pulsante **Termina ora** per terminare immediatamente l'operazione.  
   
  **Termina ora**  
- Fare clic su questo pulsante per terminare immediatamente la sessione di debug. Usando **Termina ora**terminerà, anziché disconnessi i processi in corso il debug. Se si esegue il debug di processi di sistema, l'interruzione di tali processi con **Termina ora** può generare effetti imprevisti e indesiderati.  
+ Fare clic su questo pulsante per terminare immediatamente la sessione di debug. L'utilizzo di **Stop Now**verrà terminato anziché scollegare i processi di cui è in corso il debug. Se si esegue il debug di processi di sistema, l'interruzione di tali processi con **Termina ora** può generare effetti imprevisti e indesiderati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Disconnessione di programmi](https://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)
+ [Scollegamento di programmi](https://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)

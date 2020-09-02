@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments . Documenti Microsoft
+title: 'IDebugBinder3:: GetTypeArguments | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735694"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-Questo metodo recupera un elenco di tipi di argomento associati a questo oggetto.
+Questo metodo recupera un elenco di tipi di argomenti associati a questo oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,16 +47,16 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Parametri
 `skip`\
-[in] Numero di campi da ignorare prima di ottenere i tipi di argomento.
+in Numero di campi da ignorare prima di ottenere i tipi di argomento.
 
 `count`\
-[in] Il numero di campi argomento da restituire (specifica anche la dimensione della `ppFields` matrice).
+in Numero di campi argomento da restituire (specifica anche la dimensione della `ppFields` matrice).
 
 `ppFields`\
-[in, out] Matrice di campi che verranno compilati al ritorno di questo metodo.
+[in, out] Matrice di campi che verrà compilata al ritorno di questo metodo.
 
 `pFetched`\
-[fuori] \(optional) Il numero di campi di tipo argomento effettivamente restituiti.
+[out] \( facoltativo) il numero di campi del tipo di argomento effettivamente restituiti.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

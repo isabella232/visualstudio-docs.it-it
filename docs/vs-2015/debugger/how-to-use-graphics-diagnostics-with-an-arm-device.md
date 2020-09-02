@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Usare diagnostica della grafica con un dispositivo ARM | Microsoft Docs'
+title: 'Procedura: usare Diagnostica della grafica con un dispositivo ARM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685866"
 ---
-# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Procedura: Usare Diagnostica della grafica con un dispositivo ARM
+# <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Procedura: Usare la diagnostica della grafica con un dispositivo ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La diagnostica della grafica supporta il debug remoto di app Direct3D su dispositivi basati su ARM che eseguono Windows RT 8.1 o Windows Phone 8.1. È possibile acquisire informazioni grafiche dall'app Direct3D mentre è in esecuzione nel dispositivo oppure usare quest'ultimo come dispositivo di riproduzione per le informazioni grafiche acquisite in precedenza.  
@@ -28,23 +28,23 @@ La diagnostica della grafica supporta il debug remoto di app Direct3D su disposi
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Per abilitare il debug remoto in un dispositivo basato su ARM  
   
-1. Installare il [criteri dei kit ARM](https://msdn.microsoft.com/windows/desktop/dn469188) nel dispositivo basato su ARM.  
+1. Installare i [criteri di Arm Kit](https://msdn.microsoft.com/windows/desktop/dn469188) nel dispositivo basato su ARM.  
   
 2. Installare il [strumenti di debug remoto](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) nel dispositivo basato su ARM.  
   
 > [!IMPORTANT]
-> Per dispositivi Windows Phone 8.1, potrebbe essere necessario registrare il proprio telefono per lo sviluppo. Per tale operazione è necessario essere uno sviluppatore registrato. Per altre informazioni, vedere [come distribuire ed eseguire un'app per Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> Per dispositivi Windows Phone 8.1, potrebbe essere necessario registrare il proprio telefono per lo sviluppo. Per tale operazione è necessario essere uno sviluppatore registrato. Per ulteriori informazioni, vedere [come distribuire ed eseguire un'app per Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Dopo aver abilitato il debug remoto nel dispositivo, renderlo la destinazione del debug e avviare la diagnostica grafica.  
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>Per configurare e avviare la diagnostica della grafica nel dispositivo  
   
-1. Nel **piattaforme soluzione** elenco a discesa, seleziona **ARM** in modo che il dispositivo basato su ARM sarà disponibile come destinazione del debug remoto.  
+1. Nell'elenco a discesa **piattaforme soluzione** selezionare **ARM** in modo che il dispositivo basato su ARM sarà disponibile come destinazione di debug remoto.  
   
-2. Nel **destinazione di Debug** elenco a discesa selezionare il dispositivo ARM.  
+2. Nell'elenco a discesa **destinazione di debug** selezionare il dispositivo ARM.  
   
-3. Nel menu, scegliere **Debug**, **grafica**, **avvia diagnostica**. (Tastiera: ALT + F5)  
+3. Nel menu scegliere **debug**, **grafica**, **Avvia diagnostica**. (da tastiera: ALT+F5)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Eseguire Windows App Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
+ [Eseguire app di Windows Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
  [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)

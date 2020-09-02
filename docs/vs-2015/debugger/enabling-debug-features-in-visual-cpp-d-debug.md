@@ -1,5 +1,5 @@
 ---
-title: Abilitazione della funzionalità di Debug in Visual C++ (-D_DEBUG) | Microsoft Docs
+title: Abilitazione delle funzionalità di debug in Visual C++ (-D_DEBUG) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,13 +26,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cffa8592c2048c6c6b39eee5c4ca654c41448933
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686697"
 ---
-# <a name="enabling-debug-features-in-visual-c-ddebug"></a>Attivazione delle funzionalità di debug in Visual C++ (/D_DEBUG)
+# <a name="enabling-debug-features-in-visual-c-d_debug"></a>Attivazione delle funzionalità di debug in Visual C++ (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] le funzionalità di debug, ad esempio le asserzioni, vengono attivate quando si compila il programma definendo il simbolo **_DEBUG**. Il simbolo **_DEBUG** può essere definito in uno dei due modi seguenti:  

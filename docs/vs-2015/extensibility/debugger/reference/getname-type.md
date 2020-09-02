@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 648f84b106dab7aa6e38cc3e45e59162a216a875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160130"
 ---
-# <a name="getnametype"></a>GETNAME_TYPE
+# <a name="getname_type"></a>GETNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica il tipo di nome di file da recuperare.  
+Specifica il tipo di nome dei file da recuperare.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -51,7 +51,7 @@ public enum enum_GETNAME_TYPE { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  GN_NAME  
  Specifica un nome descrittivo del documento o del contesto.  
   
@@ -62,24 +62,24 @@ public enum enum_GETNAME_TYPE { 
  Specifica un nome di file di base anziché un percorso completo del documento o del contesto.  
   
  GN_MONIKERNAME  
- Specifica un nome univoco del documento o del contesto sotto forma di un moniker.  
+ Specifica un nome univoco del documento o del contesto sotto forma di moniker.  
   
  GN_URL  
- Specifica il nome dell'URL del documento o del contesto.  
+ Specifica un nome URL del documento o del contesto.  
   
  GN_TITLE  
- Specifica un titolo del documento, se presente.  
+ Specifica un titolo del documento, se disponibile.  
   
  GN_STARTPAGEURL  
  Ottiene l'URL della pagina iniziale per i processi.  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono passati come parametri per il [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metodi per specificare il tipo di nome da restituire.  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono passati come parametri ai metodi [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) per specificare il tipo di nome da restituire.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

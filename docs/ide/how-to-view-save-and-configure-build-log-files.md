@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283905"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: Visualizzare, salvare e configurare file di log di compilazione
@@ -52,7 +52,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 3. Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere uno dei valori seguenti e quindi scegliere il pulsante **OK**.
 
-    |Livello di dettaglio|Description|
+    |Livello di dettaglio|Descrizione|
     | - |-----------------|
     |**Quiet**|Visualizza solo un riepilogo della compilazione.|
     |**Minima**|Visualizza un riepilogo della compilazione e gli errori, gli avvisi e i messaggi classificati con priorità elevata.|
@@ -69,7 +69,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 I log binari sono una funzionalità facoltativa per i progetti .NET che consente di ottenere un'esperienza di ricerca dei log più completa, con la quale sarebbe possibile trovare facilmente informazioni nei log di grandi dimensioni. Per usare i log binari, installare gli [strumenti dei sistemi di progetto](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Per ulteriori informazioni, vedere [https://msbuildlog.com](https://msbuildlog.com) e [log binario](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilare](../ide/compiling-and-building-in-visual-studio.md)

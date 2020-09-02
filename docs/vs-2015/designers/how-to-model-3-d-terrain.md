@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ab202ed97ce2056313eb661d51d7150bb9689829
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664416"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Procedura: Modellare un modello tridimensionale
@@ -21,7 +21,7 @@ ms.locfileid: "72664416"
 
 Questo documento illustra come usare l'editor dei modelli per creare un modello di terreno 3D.
 
- Questo documento illustra le attività seguenti:
+ Questo documento illustra queste attività:
 
 - Aggiunta di oggetti a una scena
 
@@ -38,13 +38,13 @@ Questo documento illustra come usare l'editor dei modelli per creare un modello 
 
  Al termine, il modello dovrebbe risultare simile al seguente:
 
- ![scena&#45;3 D che mostra un modello di terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+ ![3&#45;scena D che mostra un modello di terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
 
  Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
 #### <a name="to-create-a-3-d-terrain-model"></a>Per creare un modello di terreno 3D
 
-1. Creare un modello 3D da utilizzare. Per informazioni su come aggiungere un modello al progetto, vedere la sezione Introduzione in [Editor dei modelli](../designers/model-editor.md).
+1. Creare un modello 3D da utilizzare. Per informazioni su come aggiungere un modello al progetto, vedere la sezione Introduzione nell'editor dei [modelli](../designers/model-editor.md).
 
 2. Aggiungere un piano alla scena. Nella **casella degli strumenti**, in **Forme**, selezionare **Piano** e spostarlo nell'area di progettazione.
 
@@ -66,9 +66,9 @@ Questo documento illustra come usare l'editor dei modelli per creare un modello 
 
    Il modello di terreno è completo. Di seguito viene nuovamente illustrato il modello finale con l'ombreggiatura Phong applicata.
 
-   ![scena&#45;3 D che mostra un modello di terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+   ![3&#45;scena D che mostra un modello di terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
 
    È possibile usare questo modello di terreno per illustrare l'effetto dello shader con sfumatura descritto in [Procedura: Creare uno shader con sfumatura basata sulla geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Editor dei modelli](../designers/model-editor.md)
+ [Editor modelli](../designers/model-editor.md)

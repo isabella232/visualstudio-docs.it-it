@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugThreads2::Reset | Microsoft Docs
+title: 'IEnumDebugThreads2:: Reset | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c34ed2ecd98af2858af3ac297bf4eb83f3964436
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147704"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
@@ -37,10 +37,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Dopo che questo metodo viene chiamato, la chiamata successiva per la [successivo](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md) metodo restituisce il primo elemento dell'enumerazione.  
+## <a name="remarks"></a>Osservazioni  
+ Dopo la chiamata a questo metodo, la chiamata successiva al metodo [successivo](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md) restituisce il primo elemento dell'enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

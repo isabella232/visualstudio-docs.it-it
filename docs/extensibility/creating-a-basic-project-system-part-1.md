@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903423"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Creazione di un sistema di progetto di base, parte 1
@@ -520,7 +520,7 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  Durante la costruzione dell'istanza, la `ProjectNode` classe base carica *Resources.imagelis.bmp*, in cui le bitmap sono incorporate comunemente utilizzate 16 x 16 bitmap da *Resources\imagelis.bmp*. Questo elenco bitmap viene reso disponibile a `SimpleProjectNode` come `ImageHandler.ImageList` . `SimpleProjectNode`Accoda la bitmap del nodo del progetto all'elenco. L'offset della mappa di bit del nodo di progetto nell'elenco immagini viene memorizzato nella cache per un uso successivo come valore della `ImageIndex` proprietà Public. Visual Studio usa questa proprietà per determinare quale bitmap visualizzare come icona del nodo del progetto.
+  Durante la costruzione dell'istanza, la `ProjectNode` classe base carica *Resources.imagelis.bmp*, in cui le bitmap sono incorporate comunemente utilizzate 16 x 16 bitmap da *Resources\imagelis.bmp*. Questo elenco bitmap viene reso disponibile a `SimpleProjectNode` come `ImageHandler.ImageList` . `SimpleProjectNode` Accoda la bitmap del nodo del progetto all'elenco. L'offset della mappa di bit del nodo di progetto nell'elenco immagini viene memorizzato nella cache per un uso successivo come valore della `ImageIndex` proprietà Public. Visual Studio usa questa proprietà per determinare quale bitmap visualizzare come icona del nodo del progetto.
 
 ## <a name="test-the-custom-project-node-icon"></a>Testare l'icona del nodo del progetto personalizzato
  Testare la factory del progetto per verificare se viene creata una gerarchia del progetto con l'icona del nodo del progetto personalizzato.
@@ -601,9 +601,9 @@ Templates
 
 3. Esaminare i valori per i `nameSpace` `className` parametri e.
 
-   - `nameSpace`viene dato il valore dell' \<RootNamespace> elemento nel file del modello di progetto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . In questo caso il valore è `MyRootNamespace`.
+   - `nameSpace` viene dato il valore dell' \<RootNamespace> elemento nel file del modello di progetto *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . In questo caso il valore è `MyRootNamespace`.
 
-   - `className`viene dato il valore del nome del file di origine della classe, senza l'estensione del nome file. In questo caso, il primo file da copiare nella cartella di destinazione è *AssemblyInfo.cs*; il valore di nomeclasse è pertanto `AssemblyInfo` .
+   - `className` viene dato il valore del nome del file di origine della classe, senza l'estensione del nome file. In questo caso, il primo file da copiare nella cartella di destinazione è *AssemblyInfo.cs*; il valore di nomeclasse è pertanto `AssemblyInfo` .
 
 4. Rimuovere il punto di interruzione e premere **F5** per continuare l'esecuzione.
 
@@ -636,4 +636,4 @@ Templates
 
     ![Comando Progetto semplice](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   A questo punto, È stato implementato un sistema di progetto gestito di base.
+   Congratulazioni! È stato implementato un sistema di progetto gestito di base.

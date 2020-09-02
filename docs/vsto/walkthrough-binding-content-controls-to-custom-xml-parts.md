@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544443"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procedura dettagliata: associare controlli contenuto a parti XML personalizzate
@@ -61,7 +61,7 @@ ms.locfileid: "85544443"
 
 1. Creare un progetto di documento di Word con il nome **EmployeeControls**. Creare un nuovo documento per la soluzione. Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]apre il nuovo documento di Word nella finestra di progettazione e aggiunge il progetto **EmployeeControls** a **Esplora soluzioni**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il nuovo documento di Word nella finestra di progettazione e aggiunge il progetto **EmployeeControls** a **Esplora soluzioni**.
 
 ## <a name="add-content-controls-to-the-document"></a>Aggiungere controlli contenuto al documento
  Creare una tabella che contiene tre tipi diversi di controlli contenuto in cui un utente può visualizzare o modificare informazioni su un dipendente.
@@ -78,7 +78,7 @@ ms.locfileid: "85544443"
    |-|
    |**Nome dipendente**|
    |**Data assunzione**|
-   |**Titolo**|
+   |**Title**|
 
 4. Nella seconda colonna della tabella scegliere la prima riga (accanto a **nome dipendente**).
 
@@ -148,7 +148,7 @@ ms.locfileid: "85544443"
 
      Viene aperta la progettazione schema.
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida per **Employees. xsd**, quindi scegliere **Visualizza codice**.
+4. In **Esplora soluzioni**aprire il menu di scelta rapida per  **Employees. xsd**, quindi scegliere  **Visualizza codice**.
 
 5. Sostituire il contenuto del file **Employees. xsd** con lo schema seguente.
 
@@ -225,7 +225,7 @@ ms.locfileid: "85544443"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Per aggiungere una parte XML personalizzata al documento
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per **ThisDocument.cs** o **ThisDocument. vb**, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per  **ThisDocument.cs** o **ThisDocument. vb**, quindi scegliere **Visualizza codice**.
 
 2. Aggiungere le seguenti dichiarazioni alla classe `ThisDocument`. Questo codice dichiara diversi oggetti che verranno usati per aggiungere una parte XML personalizzata al documento.
 
@@ -264,7 +264,7 @@ ms.locfileid: "85544443"
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
 
-## <a name="test-the-project"></a>Verificare il progetto
+## <a name="test-the-project"></a>Testare il progetto
  Quando si apre il documento, i controlli contenuto consentono di visualizzare dati dagli elementi nella parte XML personalizzata. È possibile fare clic su <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> per selezionare uno dei tre valori validi per l' `title` elemento, definiti nel file **Employees. xsd** . Se si modificano i dati in uno dei controlli contenuto, i nuovi valori vengono salvati nella parte XML personalizzata del documento.
 
 ### <a name="to-test-the-content-controls"></a>Per testare i controlli contenuto
@@ -273,11 +273,11 @@ ms.locfileid: "85544443"
 
 2. Verificare che la tabella nel documento sia simile alla tabella seguente. Tutte le stringhe della seconda colonna sono ottenute da un elemento nella parte XML personalizzata del documento.
 
-    |Colonna|valore|
+    |Colonna|Valore|
     |-|-|
     |**Nome dipendente**|**Karina Leal**|
     |**Data assunzione**|**1 aprile 1999**|
-    |**Titolo**|**Responsabile**|
+    |**Title**|**Responsabile**|
 
 3. Scegliere la cella a destra della cella **nome dipendente** e digitare un nome diverso.
 
@@ -318,7 +318,7 @@ ms.locfileid: "85544443"
 
 ## <a name="see-also"></a>Vedere anche
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
-- [Controlli del contenuto](../vsto/content-controls.md)
+- [Controlli contenuto](../vsto/content-controls.md)
 - [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Procedura: proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)

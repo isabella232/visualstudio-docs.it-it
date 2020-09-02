@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af49535233a809006f6109449ae524611b1adc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645603"
 ---
 # <a name="globalizing-applications"></a>Globalizzazione di applicazioni
@@ -33,6 +33,6 @@ Globalizzazione è il processo di progettazione e sviluppo di un prodotto softwa
 
  [Globalizzazione e localizzazione](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Fornisce collegamenti a pagine della guida sulla globalizzazione di pagine Web Form.
 
- [Introduzione alle applicazioni internazionali basate sul .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Vengono illustrati i concetti fondamentali sullo sviluppo di software per un mercato internazionale utilizzando C#Visual Basic o oggetti visivi.
+ [Introduzione alle applicazioni internazionali basate sul .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Vengono illustrati i concetti fondamentali sullo sviluppo di software per un mercato internazionale utilizzando Visual Basic o Visual C#.
 
- [Suggerimenti per lo sviluppo di applicazioni internazionali](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Offre informazioni sulla programmazione per un pubblico internazionale, ad esempio problemi di progettazione e terminologia.
+ [Procedure consigliate per lo sviluppo di applicazioni internazionali](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Fornisce informazioni sulla programmazione per un pubblico internazionale, ad esempio problemi di progettazione e terminologia.

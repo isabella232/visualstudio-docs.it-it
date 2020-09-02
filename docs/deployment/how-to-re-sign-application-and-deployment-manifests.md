@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1905ea32a9899a1262e146f264e0a1179f0e8c6e
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382198"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: Firmare nuovamente manifesti di applicazione e distribuzione
@@ -112,7 +112,7 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
 
 7. Facoltativamente, copiare il manifesto della distribuzione master (*Publish \\ \<appname> . Application*) nella directory di distribuzione della versione (*file publish\Application \\ \<appname> _ \<version> *).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)

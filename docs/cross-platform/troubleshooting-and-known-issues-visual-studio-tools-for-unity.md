@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87235082"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Risoluzione dei problemi e problemi noti (Visual Studio Tools per Unity)
@@ -25,7 +25,7 @@ In questa sezione verranno illustrate le soluzioni a problemi comuni relativi a 
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>Verificare che Editor Attaching sia abilitato
 
-Scegliere **Modifica preferenze >** dal menu Unity, quindi selezionare la scheda **strumenti esterni** . Verificare che la casella di controllo **Connetti editor** sia abilitata. Per altre informazioni, vedere le preferenze nella [documentazione di Unity](https://docs.unity3d.com/Manual/Preferences.html).
+Scegliere **modifica > preferenze** dal menu Unity, quindi selezionare la scheda **strumenti esterni** . Verificare che la casella di controllo **associazione editor** sia abilitata. Per altre informazioni, vedere le preferenze nella [documentazione di Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ### <a name="unable-to-attach"></a>Non è possibile connettersi
 

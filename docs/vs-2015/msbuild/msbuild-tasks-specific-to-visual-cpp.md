@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 452c3b408ab6471963124e61bc803e99eb6be80d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686913"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Attività MSBuild specifiche di Visual C++
@@ -43,14 +43,14 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
 |[Attività CL](../msbuild/cl-task.md)|Esegue il wrapping dello strumento del compilatore Visual C++ (cl.exe).|  
 |[Attività CPPClean](../msbuild/cppclean-task.md)|Elimina i file temporanei creati da MSBuild al momento della compilazione di un progetto Visual C++.|  
 |[Attività LIB](../msbuild/lib-task.md)|Esegue il wrapping dello strumento Gestione librerie Microsoft a 32 bit (lib.exe).|  
-|[Attività Link](../msbuild/link-task.md)|Esegue il wrapping dello strumento linker di Visual C++ (link.exe).|  
-|[Attività MIDL](../msbuild/midl-task.md)|Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language) (midl.exe).|  
+|[Attività di collegamento](../msbuild/link-task.md)|Esegue il wrapping dello strumento linker di Visual C++ (link.exe).|  
+|[MIDL (attività)](../msbuild/midl-task.md)|Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language) (midl.exe).|  
 |[Attività MT](../msbuild/mt-task.md)|Esegue il wrapping dello strumento manifesto Microsoft (mt.exe).|  
 |[Attività RC](../msbuild/rc-task.md)|Esegue il wrapping dello strumento Compilatore di risorse di Microsoft Windows (rc.exe).|  
 |[Attività SetEnv](../msbuild/setenv-task.md)|Imposta o elimina il valore di una variabile di ambiente specificata.|  
 |[Attività VCMessage](../msbuild/vcmessage-task.md)|Registra i messaggi di avviso e i messaggi di errore durante una compilazione.|  
-|[Attività XDCMake](../msbuild/xdcmake-task.md)|Esegue il wrapping dello strumento Documentazione XML (xdcmake.exe) che unisce i file di commento (.xdc) del documento XML in un file con estensione xml.|  
+|[Attività XDCMake](../msbuild/xdcmake-task.md)|Esegue il wrapping dello strumento Documentazione XML (xdcmake.exe) che unisce i file di commento (con estensione xdc) del documento XML in un file con estensione xml.|  
 |[Attività XSD](../msbuild/xsd-task.md)|Esegue il wrapping dello strumento XML Schema Definition (xsd.exe), che genera file di schema o di classe da un'origine.|  
 |[Riferimenti a MSBuild](../msbuild/msbuild-reference.md)|Descrive gli elementi del sistema MSBuild.|  
 |[Attività](../msbuild/msbuild-tasks.md)|Descrive le attività, che sono unità di codice che possono essere combinate per produrre una compilazione.|  
-|[Scrittura di attività](../msbuild/task-writing.md)|Descrive come creare un'attività.|
+|[Scrittura attività](../msbuild/task-writing.md)|Descrive come creare un'attività.|

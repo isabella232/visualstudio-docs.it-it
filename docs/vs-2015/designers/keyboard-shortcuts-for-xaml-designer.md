@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46adab828eea0ffb821147ba9c711634e1899a85
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664308"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
@@ -50,4 +50,4 @@ I tasti di scelta rapida nella finestra di progettazione XAML consentono di lavo
 |Sbloccare gli oggetti della tavola da disegno mentre lo stato attivo è sulla finestra Struttura documento|MAIUSC+CTRL+L|
 
 ## <a name="see-also"></a>Vedere anche
- [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [Creazione di un'interfaccia utente tramite XAML Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

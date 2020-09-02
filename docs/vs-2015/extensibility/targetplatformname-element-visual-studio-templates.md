@@ -9,10 +9,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6f1654c2497742231d12f19286f21a6395129d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160450"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Elemento TargetPlatformName (Modelli di Visual Studio)
@@ -36,7 +36,7 @@ Specifica la piattaforma a cui è destinato il modello di progetto. Questo eleme
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Specifica la versione del sistema operativo a cui è destinato il modello di progetto.|  
   
@@ -49,7 +49,7 @@ Specifica la piattaforma a cui è destinato il modello di progetto. Questo eleme
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il testo deve essere **Windows**.  
   
 ## <a name="example"></a>Esempio  

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21c94cc7ab97070b138cbae108c617094faf09b5
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382211"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati
@@ -119,7 +119,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
    > - La soluzione si trova nella seguente directory: `%UserProfile%\Documents\Visual Studio 2010\Projects\` .
    >
    > - La soluzione viene pubblicata nella seguente directory: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish` .
-   > - La versione più recente dei file dell'applicazione pubblicata si trova nella directory seguente:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
+   > - La versione più recente dei file dell'applicazione pubblicata si trova nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
    >
    > Non è necessario usare il nome o i percorsi della directory descritti in precedenza. Il nome e i percorsi descritti in precedenza vengono usati solo per illustrare i passaggi necessari per la pubblicazione della soluzione.
 
@@ -175,7 +175,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
    Dopo aver eseguito questi passaggi, è possibile spostare i file pubblicati nel percorso da cui si desidera che gli utenti finali possano installare l'applicazione. Se si intende aggiornare spesso la soluzione, è possibile spostare questi comandi in uno script ed eseguire lo script ogni volta che si pubblica una nuova versione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 -[Risoluzione di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview)

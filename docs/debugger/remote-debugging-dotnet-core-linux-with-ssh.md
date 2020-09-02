@@ -10,17 +10,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23bc0fa990a79b1855ec382f42248a0f847c3c9c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78200923"
 ---
 # <a name="remote-debug-net-core-on-linux-using-ssh"></a>Eseguire il debug remoto di .NET Core in Linux con SSH
 
 A partire da Visual Studio 2017, è possibile connettersi ai processi .NET Core in esecuzione in Linux tramite SSH. Questo articolo descrive come configurare il debug e come eseguire il debug.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Nel computer che esegue Visual Studio è necessario installare il carico di lavoro **sviluppo di ASP.NET e Web** o il carico di lavoro **sviluppo multipiattaforma .NET Core** .
 
@@ -34,21 +34,21 @@ sudo apt-get install openssh-server unzip curl
 
 Per preparare l'applicazione per il debug:
 
-- Si consiglia di usare una configurazione di debug quando si compila l'applicazione. È molto più difficile eseguire il debug del codice compilato al dettaglio (una configurazione di rilascio) rispetto al codice compilato con debug. Se è necessario usare una configurazione di versione, disabilitare prima di tutto Just My Code. Per disabilitare questa impostazione, scegliere **strumenti** > **Opzioni** > **debug**, quindi deselezionare **Abilita Just My Code**.
+- Si consiglia di usare una configurazione di debug quando si compila l'applicazione. È molto più difficile eseguire il debug del codice compilato al dettaglio (una configurazione di rilascio) rispetto al codice compilato con debug. Se è necessario usare una configurazione di versione, disabilitare prima di tutto Just My Code. Per disabilitare questa impostazione, scegliere **strumenti**  >  **Opzioni**  >  **debug**, quindi deselezionare **Abilita Just My Code**.
 
-- Verificare che il progetto sia configurato per produrre [PDB](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) portabili (impostazione predefinita) e assicurarsi che PBDs si trovino nella stessa posizione della dll. Per configurarlo in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **proprietà** > **Compila** > informazioni **Avanzate** > **debug**.
+- Verificare che il progetto sia configurato per produrre [PDB](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) portabili (impostazione predefinita) e assicurarsi che PBDs si trovino nella stessa posizione della dll. Per configurarlo in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**  >  **Compila**  >  **Advanced**  >  **informazioni di debug**avanzate.
 
 È possibile usare diversi metodi per distribuire l'app prima del debug. Ad esempio, è possibile:
 
-- Copiare le origini nel computer di destinazione e compilare con ```dotnet build``` nel computer Linux.
+- Copiare le origini nel computer di destinazione e compilarle con ```dotnet build``` nel computer Linux.
 
-- Compilare l'app in Windows e trasferire gli elementi di compilazione nel computer Linux. Gli elementi di compilazione sono costituiti dall'applicazione stessa, da tutte le librerie di runtime da cui dipendono e dal file con *estensione Deps. JSON* .
+- Compilare l'app in Windows e trasferire gli elementi di compilazione nel computer Linux. Gli elementi di compilazione sono costituiti dall'applicazione stessa, da tutte le librerie di runtime da cui dipendono e dal *.deps.jssul* file.
 
 ## <a name="attach-the-debugger"></a>Collegare il debugger
 
 Una volta configurati i computer, avviare l'applicazione nel computer Linux, quindi è possibile connettersi al debugger.
 
-1. In Visual Studio scegliere **Debug** > **Connetti a processo...** .
+1. In Visual Studio scegliere **debug**  >  **Connetti a processo...**.
 
 1. Nell'elenco **tipo di connessione** selezionare **SSH**.
 
@@ -64,7 +64,7 @@ Una volta configurati i computer, avviare l'applicazione nel computer Linux, qui
 
 1. Scegliere **Connetti**.
 
-1. Nella finestra di dialogo visualizzata selezionare il tipo di codice di cui si desidera eseguire il debug. Scegliere **gestito (.NET Core per UNIX)** .
+1. Nella finestra di dialogo visualizzata selezionare il tipo di codice di cui si desidera eseguire il debug. Scegliere **gestito (.NET Core per UNIX)**.
 
 1. Usare le funzionalità di debug di Visual Studio per eseguire il debug dell'app.
 

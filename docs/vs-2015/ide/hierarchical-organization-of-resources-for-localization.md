@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a79caca18c7813605ff851eea6bda642e6300a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645619"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organizzazione gerarchica di risorse per la localizzazione
@@ -37,7 +37,7 @@ In Visual Studio, le risorse localizzate (dati come stringhe e immagini specific
 
 - Sotto le risorse di fallback si trovano le risorse per le impostazioni cultura non associate ad alcun paese. Alcune impostazioni cultura non associate ad alcun paese sono associate a una lingua, ma non a un paese/area geografica. Ad esempio, "fr" per il francese rappresenta impostazioni cultura non associate ad alcun paese. Si noi che le risorse di fallback sono disponibili anche per le impostazioni cultura non associate ad alcun paese e per uno in particolare.
 
-- Sotto a queste risorse si trovano quelle per le impostazioni cultura specifiche. Un'impostazione cultura specifica è associata a una lingua e a un paese/area geografica. Ad esempio, il francese canadese ("fr-CA") è un'impostazione cultura specifica.
+- Sotto a queste risorse si trovano quelle per le impostazioni cultura specifiche. Un'impostazione cultura specifica è associata a una lingua e a un paese/regione. Ad esempio, il francese canadese ("fr-CA") è un'impostazione cultura specifica.
 
   Se un'applicazione tenta di caricare una risorsa localizzata, ad esempio una stringa, e non la trova, dovrà risalire la gerarchia finché trova un file di risorse contenente la risorsa richiesta.
 
@@ -47,7 +47,7 @@ In Visual Studio, le risorse localizzate (dati come stringhe e immagini specific
 
   Se si segue la procedura consigliata di inserimento di più risorse possibili in un file di risorse con impostazioni cultura non associate ad alcun paese per le impostazioni cultura "fr", l'utente francese canadese non visualizzerà le risorse contrassegnate per le impostazioni cultura "fr-BE", ma visualizzerà le stringhe in francese. L'immagine seguente illustra questo scenario più favorevole.
 
-  ![Immagine di Grafica NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
+  ![Grafica NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
 
 ## <a name="see-also"></a>Vedere anche
- [Lingue di risorse neutre per la sicurezza della localizzazione](../ide/neutral-resources-languages-for-localization.md) [e gli assembly satellite localizzati](../ide/security-and-localized-satellite-assemblies.md) [localizzazione di applicazioni](../ide/localizing-applications.md) [globalizzazione e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md) [procedura: impostare le impostazioni cultura e le impostazioni cultura dell'interfaccia utente per Windows Forms Globalizzazione](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) [procedura: impostare le impostazioni cultura e le impostazioni cultura dell'interfaccia utente per la globalizzazione della pagina Web ASP.NET](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [Lingue di risorse neutre per la](../ide/neutral-resources-languages-for-localization.md) [sicurezza di localizzazione e gli assembly satellite localizzati](../ide/security-and-localized-satellite-assemblies.md) [localizzazione di applicazioni](../ide/localizing-applications.md) globalizzazione [e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md) [procedura: impostare le impostazioni cultura e le impostazioni cultura dell'interfaccia utente per Windows Forms globalizzazione](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) [procedura: impostare le impostazioni cultura e le impostazioni cultura dell'interfaccia utente per la globalizzazione della pagina Web ASP.NET](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

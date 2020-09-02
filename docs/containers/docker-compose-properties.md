@@ -7,10 +7,10 @@ ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
 ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283151"
 ---
 # <a name="docker-compose-build-properties"></a>Proprietà di compilazione Docker Compose
@@ -33,17 +33,17 @@ Per impostare il valore di una proprietà, modificare il file di progetto. Per D
 
 Nella tabella seguente vengono illustrate le proprietà MSBuild disponibili per i progetti Docker Compose.
 
-| Nome proprietà | Location | Descrizione | Valore predefinito  |
+| Nome della proprietà | Location | Descrizione | Valore predefinito  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|Specifica i file di composizione aggiuntivi in un elenco delimitato da punti e virgola da inviare al docker-compose.exe per tutti i comandi. Sono consentiti percorsi relativi dal file di progetto Docker-compose (dcproj).|-|
 |DockerComposeBaseFilePath|dcproj|Specifica la prima parte dei nomi file dei file Docker-compose, senza l'estensione *yml* . Ad esempio: <br>1. DockerComposeBaseFilePath = null/undefined: usare il percorso del file di base *Docker-compose*e i file verranno denominati *Docker-compose. yml* e *Docker-compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: i file verranno denominati *mydockercompose. yml* e *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: i file saranno di un livello superiore. |Docker-compose|
-|DockerComposeBuildArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose build` comando. Ad esempio, usare `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose down` comando. Ad esempio, usare `--timeout 500`|-|  
+|DockerComposeBuildArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose build` comando. Ad esempio: `--parallel --pull` |
+|DockerComposeDownArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose down` comando. Ad esempio: `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj o vbproj|Percorso relativo del file del progetto Docker-compose (dcproj). Impostare questa proprietà quando si pubblica il progetto di servizio per trovare le impostazioni di compilazione dell'immagine associate archiviate nel file Docker-compose. yml.|-|
-|DockerComposeUpArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose up` comando. Ad esempio, usare `--timeout 500`|-|
+|DockerComposeUpArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose up` comando. Ad esempio: `--timeout 500`|-|
 |DockerDevelopmentMode|dcproj| Controlla se è abilitata l'ottimizzazione "compilazione su host" (debug in modalità rapida).  I valori consentiti sono **veloce** e **normale**. | Veloce |
-|DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire in F5 o CTRL + F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient|nessuno|
-|DockerLaunchBrowser| dcproj | Indica se avviare il browser. Viene ignorato se viene specificato DockerLaunchAction. | False |
+|DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire in F5 o CTRL + F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient|Nessuno|
+|DockerLaunchBrowser| dcproj | Indica se avviare il browser. Viene ignorato se viene specificato DockerLaunchAction. | Falso |
 |DockerServiceName| dcproj|Se vengono specificati DockerLaunchAction o DockerLaunchBrowser, DockerServiceName è il nome del servizio che deve essere avviato.  Usare questa proprietà per determinare il numero potenzialmente elevato di progetti a cui può fare riferimento un file Docker-compose.|-|
 |DockerServiceUrl| dcproj | URL da utilizzare all'avvio del browser.  I token di sostituzione validi sono "{ServiceIPAddress}", "{ServicePort}" e "{Scheme}".  Ad esempio: {Scheme}://{ServiceIPAddress}: {ServicePort}|-|
 |DockerTargetOS| dcproj | Sistema operativo di destinazione usato durante la compilazione dell'immagine docker.|-|
@@ -104,7 +104,7 @@ services:
 
 Utilizzare le virgolette doppie intorno ai valori, come nell'esempio precedente, e utilizzare la barra rovesciata come carattere di escape per le barre rovesciate nei percorsi.
 
-|Nome etichetta|Description|
+|Nome etichetta|Descrizione|
 |----------|-----------|
 |com. Microsoft. VisualStudio. debuggingee. Arguments|Argomenti passati al programma all'avvio del debug. Per le app .NET Core, questi argomenti sono in genere percorsi di ricerca aggiuntivi per i pacchetti NuGet seguiti dal percorso dell'assembly di output del progetto.|
 |com. Microsoft. VisualStudio. debuggingee. killprogram|Questo comando viene usato per arrestare il programma sottoposto a debug in esecuzione all'interno del contenitore, se necessario.|
@@ -129,7 +129,7 @@ Se si omette *Docker-compose. vs. Release. yml* o *Docker-compose. vs. debug. ym
 
 Per informazioni sulle proprietà di MSBuild in genere, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Proprietà di compilazione degli strumenti contenitore](container-msbuild-properties.md)
 

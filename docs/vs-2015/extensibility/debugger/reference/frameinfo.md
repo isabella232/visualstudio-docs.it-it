@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c0fa2299e47924a10a6d0b02a982535865164191
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160167"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descrive uno stack frame.  
+Descrive un stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -62,53 +62,53 @@ public struct FRAMEINFO { 
 } FRAMEINFO;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  m_dwValidFields  
- Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi vengono compilati.  
+ Combinazione di flag dell'enumerazione [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica i campi che vengono compilati.  
   
  m_bstrFuncName  
- Il nome della funzione associato al frame dello stack.  
+ Nome della funzione associato all'stack frame.  
   
  m_bstrReturnType  
- Il tipo restituito associato al frame dello stack.  
+ Tipo restituito associato all'stack frame.  
   
  m_bstrArgs  
- Gli argomenti alla funzione associato al frame dello stack.  
+ Argomenti per la funzione associata all'stack frame.  
   
  m_bstrLanguage  
- La lingua in cui viene implementata la funzione.  
+ Lingua in cui è implementata la funzione.  
   
  m_bstrModule  
- Il nome del modulo associato al frame dello stack.  
+ Nome del modulo associato all'stack frame.  
   
  m_addrMin  
- L'indirizzo dello stack fisico minimo.  
+ Indirizzo dello stack fisico minimo.  
   
  m_addrMAX  
- L'indirizzo massima dello stack fisico.  
+ Indirizzo massimo dello stack fisico.  
   
  m_pFrame  
- Il [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) oggetto che rappresenta lo stack frame corrente.  
+ Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta questo stack frame.  
   
  m_pFrame  
- Il [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) oggetto che rappresenta il modulo che contiene questo stack frame.  
+ Oggetto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) che rappresenta il modulo che contiene questo stack frame.  
   
  m_fHasDebugInfo  
- Diverso da zero (`TRUE`) se le informazioni di debug è presente nel frame specificato.  
+ Diverso da zero ( `TRUE` ) se le informazioni di debug esistono nel frame specificato.  
   
  m_fHasDebugInfo  
- Diverso da zero (`TRUE`) se il frame dello stack è associato il codice che non è più valido.  
+ Diverso da zero ( `TRUE` ) se l'stack frame è associato a codice che non è più valido.  
   
  m_fHasDebugInfo  
- Diverso da zero (`TRUE`) se il frame dello stack è annotato dal gestore di sessione di debug (SDM).  
+ Diverso da zero ( `TRUE` ) se il stack frame viene annotato da gestione debug sessione (SDM).  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene passata per il [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metodo deve essere compilato. Questa struttura anch ' essa contenuta in un elenco di contenuto nel [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaccia che, a sua volta, viene restituito da una chiamata ai [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) da compilare. Questa struttura è inoltre contenuta in un elenco contenuto nell'interfaccia [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) che, a sua volta, viene restituito da una chiamata al metodo [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

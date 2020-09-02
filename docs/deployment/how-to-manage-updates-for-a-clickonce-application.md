@@ -20,14 +20,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382354"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: Gestire gli aggiornamenti per un'applicazione ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]le applicazioni possono verificare la disponibilità di aggiornamenti automaticamente o a livello di codice. Gli sviluppatori hanno molta flessibilità nell'specificare quando e come vengono eseguiti i controlli di aggiornamento, se gli aggiornamenti sono obbligatori e quando l'applicazione deve verificare la disponibilità di aggiornamenti.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono verificare la disponibilità di aggiornamenti automaticamente o a livello di codice. Gli sviluppatori hanno molta flessibilità nell'specificare quando e come vengono eseguiti i controlli di aggiornamento, se gli aggiornamenti sono obbligatori e quando l'applicazione deve verificare la disponibilità di aggiornamenti.
 
  È possibile configurare l'applicazione per verificare la disponibilità di aggiornamenti automaticamente prima che l'applicazione venga avviata o a intervalli prestabiliti dopo l'avvio dell'applicazione. È inoltre possibile specificare una versione minima richiesta. ovvero viene installato un aggiornamento se la versione dell'utente è inferiore alla versione richiesta.
 
@@ -105,7 +105,7 @@ ms.locfileid: "85382354"
 
 7. Compilare l'applicazione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [Finestra di dialogo Aggiornamenti applicazione](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Scegliere una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

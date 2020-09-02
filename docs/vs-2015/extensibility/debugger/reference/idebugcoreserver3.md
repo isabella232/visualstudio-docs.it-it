@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd1781b133b4c3ee95b4207a0dd237e2dd7298a1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685655"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa interfaccia fornisce accesso alle informazioni sul server che in cui viene eseguito il processo.  
+Questa interfaccia consente di accedere alle informazioni sul server in cui è in esecuzione il processo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,29 +34,29 @@ IDebugCoreServer3 : IDebugCoreServer2
  Visual Studio implementa questa interfaccia.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Uso [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per ottenere questa interfaccia da un' [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interfaccia. Una chiamata a [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) può restituire anche questa interfaccia. Questa interfaccia viene utilizzata in genere da un fornitore di porte personalizzate per avviare i programmi in un server (locale o remoto).  
+ Usare [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per ottenere questa interfaccia da un'interfaccia [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) . Una chiamata a [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) può restituire anche questa interfaccia. Questa interfaccia viene utilizzata più spesso da un fornitore di porte personalizzato per avviare programmi in un server (locale o remoto).  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Oltre ai metodi nel [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interfaccia, questa interfaccia implementa i metodi seguenti:  
+ Oltre ai metodi sull'interfaccia [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , questa interfaccia implementa i metodi seguenti:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|Recupera il nome del server.|  
-|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Recupera una versione breve del nome del server|  
-|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Indica i motori di debug specifiche connettersi automaticamente ai processi quando avvia i processi.|  
-|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Recupera un codice di errore specifico quando automatico collegamento ha esito negativo.|  
+|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Recupera una versione descrittiva del nome del server|  
+|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Indica ai motori di debug specifici di connettersi automaticamente ai processi all'avvio di tali processi.|  
+|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Recupera un codice di errore specifico quando la connessione automatica non riesce.|  
 |[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|Crea un'istanza di un motore di debug nel server.|  
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Recupera un flag che indica se il server è nello stesso computer del chiamante.|  
-|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Recupera un valore che indica il protocollo usato per comunicare con il server.|  
-|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Disabilita tutte le connessione automatica le impostazioni per tutti i motori di debug, che questo server è a conoscenza.|  
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Recupera un flag che indica se il server si trova nello stesso computer del chiamante.|  
+|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Recupera un valore che indica il protocollo utilizzato per comunicare con il server.|  
+|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Disabilita tutte le impostazioni di connessione automatica per tutti i motori di debug di cui questo server è a conoscenza.|  
   
-## <a name="remarks"></a>Note  
- Un fornitore di porte personalizzato riceve la [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interfaccia in una chiamata a [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md). Il `IDebugCoreServer3` interfaccia può essere ottenuta da tale interfaccia.  
+## <a name="remarks"></a>Osservazioni  
+ Un fornitore di porte personalizzato riceve l'interfaccia [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) in una chiamata all' [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md). L' `IDebugCoreServer3` interfaccia può essere ottenuta da tale interfaccia.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
