@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts | Microsoft Docs
+title: 'IDebugPortSupplier3:: EnumPersistedPorts | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 944159ead89166c8452775bd6522a7c441094ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188205"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo recupera un oggetto che consente l'enumerazione dell'elenco di porte persistente.  
+Questo metodo recupera un oggetto che consente l'enumerazione dell'elenco di porte rese permanente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int EnumPersistedPorts(
   
 #### <a name="parameters"></a>Parametri  
  `PortNames`  
- [in] Oggetto [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) struttura che contiene un elenco di nomi di porta per trovare e restituire tra le porte persistente. Verranno restituite solo delle porte persistente con questi nomi.  
+ in Struttura di [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) contenente un elenco di nomi di porte da trovare e restituire tra le porte salvate in modo permanente. Verranno restituite solo le porte salvate in permanenza con questi nomi.  
   
  `ppEnum`  
- [out] Un oggetto che implementa il [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interfaccia.  
+ out Oggetto che implementa l'interfaccia [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Porte persistenti vengono caricate quando viene creata un'istanza, un fornitore di porte e salvato quando viene eliminato definitivamente il fornitore della porta.  
+## <a name="remarks"></a>Osservazioni  
+ Le porte rese disponibili vengono caricate quando viene creata un'istanza di un fornitore di porte e salvate quando il fornitore della porta viene eliminato definitivamente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)   

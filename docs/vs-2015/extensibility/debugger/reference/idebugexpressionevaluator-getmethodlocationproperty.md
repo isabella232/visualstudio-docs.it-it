@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty | Microsoft Docs
+title: 'IDebugExpressionEvaluator:: GetMethodLocationProperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d82b002d9253b2d48f78e74fdf964cf42d241d9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144397"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo converte un percorso di metodo e l'offset in un indirizzo di memoria.  
+Questo metodo converte il percorso e l'offset di un metodo in un indirizzo di memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,27 +48,27 @@ int GetMethodLocationProperty(
   
 #### <a name="parameters"></a>Parametri  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in] Il percorso di metodo e l'offset, espresso come stringa.  
+ in Posizione e offset del metodo, espressi sotto forma di stringa.  
   
  `pSymbolProvider`  
- [in] Il provider di simboli espresso come un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) oggetto.  
+ in Il provider di simboli espresso come oggetto [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .  
   
  `pAddress`  
- [in] Un indirizzo all'interno del metodo, espresso come un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto.  
+ in Un indirizzo all'interno del metodo, espresso come un oggetto [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pBinder`  
- [in] Lo strumento di associazione espressa come un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) oggetto.  
+ in Binder espresso come oggetto [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .  
   
  `ppProperty`  
- [out] Restituisce un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfaccia che rappresenta l'indirizzo di memoria.  
+ out Restituisce un'interfaccia [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta l'indirizzo di memoria.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- L'indirizzo restituito è utilizzabile per impostare un punto di interruzione, ad esempio.  
+## <a name="remarks"></a>Osservazioni  
+ L'indirizzo restituito può essere utilizzato per impostare un punto di interruzione, ad esempio.  
   
- Nonostante il nome `upstrFullyQualifiedMethodPlusOffset`, questo parametro può essere passato un nome di metodo parziali. In tal caso, il metodo selezionato sia quello che racchiude `pAddress`. Modalità di interpretazione di questo parametro è compito l'implementazione dell'analizzatore di espressioni e la lingua supportata.  
+ Nonostante il nome `upstrFullyQualifiedMethodPlusOffset` , è possibile passare un nome di metodo parzialmente qualificato a questo parametro. In tal caso, il metodo selezionato è quello che racchiude `pAddress` . Il modo in cui questo parametro viene interpretato dipende dall'implementazione dell'analizzatore di espressioni e dal linguaggio supportato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

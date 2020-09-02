@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9bfa6c776e3a2137f751d4253feb0239811d95a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654694"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedura: connettersi ai dati di un servizio
@@ -56,7 +56,7 @@ Per connettere l'applicazione ai dati restituiti da un servizio, è possibile es
 
 5. Fare clic su **OK** per aggiungere un riferimento al servizio al progetto.
 
-6. Scegliere **Fine**.
+6. Fare clic su **Fine**.
 
      L'origine dati viene aggiunta alla finestra **Origini dati**.
 

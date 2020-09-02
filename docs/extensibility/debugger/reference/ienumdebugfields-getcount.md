@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::GetCount . Documenti Microsoft
+title: 'IEnumDebugFields:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5109e3f515b98cf8d89babb7a66ec28e7849d3ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716918"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametri
 `pcelt`\
-[fuori] Restituisce il numero di elementi nell'enumerazione.
+out Restituisce il numero di elementi nell'enumerazione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo non fa parte della consueta interfaccia di enumerazione COM che specifica che devono essere implementati solo Next, Clone, Skip e Reset.
+ Questo metodo non fa parte dell'interfaccia di enumerazione COM personalizzata che specifica che deve essere implementato solo Next, clone, Skip e reset.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

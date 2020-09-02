@@ -1,5 +1,5 @@
 ---
-title: Get_lengthparams | Microsoft Docs
+title: 'IDiaFrameData:: get_lengthParams | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f633fe4633ba92b1054aec7f516a6a0921bc64ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563741"
 ---
-# <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
+# <a name="idiaframedataget_lengthparams"></a>IDiaFrameData::get_lengthParams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera il numero di byte dei parametri inseriti nello stack.  
+Recupera il numero di byte di parametri inseriti nello stack.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT get_lengthParams ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il numero di byte dei parametri.  
+ out Restituisce il numero di byte di parametri.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Il valore restituito da questo metodo viene utilizzato in genere l'interpretazione di una stringa nel programma (vedere la [Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) metodo per la definizione di una stringa di programma).  
+## <a name="remarks"></a>Osservazioni  
+ Il valore restituito da questo metodo viene in genere usato nell'interpretazione di una stringa di programma (vedere il metodo [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) per la definizione di una stringa di programma).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

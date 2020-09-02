@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281552"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separare set di dati e TableAdapter in progetti diversi
@@ -57,7 +57,7 @@ Per impostazione predefinita, dopo aver separato il set di dati e il codice Tabl
 > [!NOTE]
 > Per visualizzare il file di classe generato, selezionare il set di dati o il progetto TableAdapter. Quindi, in **Esplora soluzioni**, selezionare **Mostra tutti i file**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md)
 - [Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

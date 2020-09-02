@@ -34,10 +34,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271598"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
@@ -76,7 +76,7 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 |`_Create_lock_level_(name)`|Un'istruzione che dichiara il simbolo `name` come un livello di blocco in modo che possa essere utilizzato nelle annotazioni `_Has_Lock_level_` e `_Lock_level_order_`.|  
 |`_Has_lock_kind_(kind)`|Annota qualsiasi oggetto per perfezionare le informazioni sul tipo di un oggetto risorsa. A volte viene usato un tipo comune per diversi tipi di risorse e il tipo di overload non è sufficiente per distinguere i requisiti semantici tra le varie risorse. Di seguito è riportato un elenco di parametri `kind` predefiniti:<br /><br /> `_Lock_kind_mutex_`<br /> ID del tipo di blocco per mutex.<br /><br /> `_Lock_kind_event_`<br /> ID del tipo di blocco per gli eventi.<br /><br /> `_Lock_kind_semaphore_`<br /> ID del tipo di blocco per i semafori.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID del tipo di blocco per i blocchi di rotazione.<br /><br /> `_Lock_kind_critical_section_`<br /> ID del tipo di blocco per le sezioni critiche.|  
 |`_Has_lock_level_(name)`|Annota un oggetto di blocco e lo fornisce al livello di blocco `name`.|  
-|`_Lock_level_order_(name1, name2)`|Istruzione che fornisce l'ordinamento dei blocchi tra `name1` e `name2`.|  
+|`_Lock_level_order_(name1, name2)`|Istruzione che fornisce l'ordinamento dei blocchi tra `name1` e `name2` .|  
 |`_Post_same_lock_(expr1, expr2)`|Annota una funzione e indica che lo stato successivo dei due blocchi `expr1` e `expr2`, verrà considerato come se fosse lo stesso oggetto di blocco.|  
 |`_Releases_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione riducendo di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|  
 |`_Releases_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione riducendo di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|  
@@ -104,17 +104,17 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 |Annotazione|Descrizione|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Annota una variabile e indica se la variabile è accessibile, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|  
-|`_Interlocked_`|Annota una variabile ed è equivalente a `_Guarded_by_(_Global_interlock_)`.|  
+|`_Interlocked_`|Annota una variabile ed è equivalente a `_Guarded_by_(_Global_interlock_)` .|  
 |`_Interlocked_operand_`|Il parametro della funzione con annotazioni è l'operando di destinazione di una delle varie funzioni Interlocked.  Tali operandi devono disporre di proprietà aggiuntive specifiche.|  
 |`_Write_guarded_by_(expr)`|Annota una variabile e indica se la variabile è modificata, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Uso delle annotazioni SAL per ridurreC++ i difetti di C/codice](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Informazioni su SAL](../code-quality/understanding-sal.md)   
  [Annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)   
+ [Annotazione del comportamento delle funzioni](../code-quality/annotating-function-behavior.md)   
  [Annotazione di struct e classi](../code-quality/annotating-structs-and-classes.md)   
- [Specificare quando e dove si applica un'Annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Specifica quando e dove si applica un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funzioni intrinseche](../code-quality/intrinsic-functions.md)   
  [Procedure consigliate ed esempi](../code-quality/best-practices-and-examples-sal.md)   
  [Blog del team di analisi del codice](https://blogs.msdn.com/b/codeanalysis/)

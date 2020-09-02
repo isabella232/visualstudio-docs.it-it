@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField | Microsoft Docs
+title: 'IDebugCustomAttribute:: GetParentField | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b6d6ceadc8ee0dc6099d6463a75f1c792837e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62569576"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
@@ -40,13 +40,13 @@ int GetParentField(
   
 #### <a name="parameters"></a>Parametri  
  `ppField`  
- [out] Restituisce il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che rappresenta il campo a cui è associato l'attributo personalizzato.  
+ out Restituisce l'oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il campo a cui è associato l'attributo personalizzato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Chiamare il [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metodo sull'oggetto restituito [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) è oggetto di determinare quale tipo di campo padre.  
+## <a name="remarks"></a>Osservazioni  
+ Chiamare il metodo [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) sull'oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) restituito per determinare il tipo di campo padre.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   

@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984753"
 ---
 # <a name="data-visualizations"></a>Visualizzazioni di dati
@@ -28,7 +28,7 @@ Un oggetto Point/PointF o CGPoint in iOS e Mac viene visualizzato come tupla che
 
 ![Visualizzazione dei punti](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Dimensione
+## <a name="size"></a>Dimensioni
 Un oggetto Size/SizeF CGSize in iOS e Mac viene visualizzato come rettangolo. L'oggetto viene disegnato in modo da ridimensionarsi fino a 250 px e da questo momento in poi il rettangolo viene ridimensionato in base al valore massimo di 250px:
 
 [Visualizzazione delle dimensioni](media/data-visualizations-image11.png)
@@ -43,7 +43,7 @@ Le coordinate vengono tracciate su una mappa, aggiungendo la posizione al centro
 
 [Visualizzazione delle coordinate](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Colore
+## <a name="color"></a>Color
 Visualizza le proprietà UIColor, CGColor e Color, indicando l'anteprima del colore, i componenti RGBA, i valori di tonalità-luminosità-saturazione e il valore esadecimale del colore:
 
 ![Visualizzazione dei colori](media/data-visualizations-image14.png)
@@ -60,7 +60,7 @@ Il visualizzatore mostra un oggetto `NSBezierPath`:
 
 ![Visualizzazione delle curve di Bézier](media/data-visualizations-image16.png)
 
-## <a name="string"></a>string
+## <a name="string"></a>Stringa
 
 Una stringa di meno di 100 caratteri viene visualizzata completamente, senza anteprima. Le stringhe più lunghe verranno visualizzate completamente nell'anteprima. Le stringhe sono modificabili e il visualizzatore include un pulsante di modifica, che permette la modifica del valore della stringa nell'anteprima o nell'editor dei valori delle stringhe, mostrato di seguito:
 
@@ -90,13 +90,13 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 
 * **Primitive**
   * Visualizza il valore non elaborato del tipo primitivo.
-* **Enum**
+* **Enumerazione**
   * Visualizza il valore del campo senza il qualificatore di tipo enum.
 * **Tupla**
   * Usa il formato (,) per la visualizzazione.
 * **Null**
   * Mostra i valori "null".
-* **Url**
+* **URL**
   * Mostra un collegamento ipertestuale su cui è possibile fare clic.
 * **IntPtr**
   * Visualizza una rappresentazione esadecimale di un oggetto IntPtr.

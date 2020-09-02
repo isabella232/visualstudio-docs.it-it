@@ -15,18 +15,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e1223b3cee7f0246d8d685260fb6ea9ad0045347
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817645"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Impossibile utilizzare 'continue' all'esterno di un ciclo
 Si è provato a usare l'istruzione **continue** all'esterno di un ciclo. L'istruzione **continue** può essere usata solo all'interno del corpo di un oggetto:  
   
-- `do-while`ciclo  
+- `do-while` ciclo  
   
-- `while`ciclo  
+- `while` ciclo  
   
 - ciclo **for** ,  
   
@@ -36,9 +36,9 @@ Si è provato a usare l'istruzione **continue** all'esterno di un ciclo. L'istru
   
 - Verificare che l'istruzione **continue** venga visualizzata nel corpo di un oggetto:  
   
-  - `do-while`ciclo  
+  - `do-while` ciclo  
 
-  - `while`ciclo  
+  - `while` ciclo  
 
   - ciclo **for** ,  
 

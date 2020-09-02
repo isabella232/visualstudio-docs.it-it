@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5f5d8bb92b80942a95528a0b2e4c7e64bbfafc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668146"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedura: creare e modificare le configurazioni
@@ -121,7 +121,7 @@ Per una soluzione è possibile creare diverse configurazioni della build. È pos
 
 2. Nell'elenco a discesa **Configurazione soluzione attiva** selezionare la configurazione voluta.
 
-3. Nel riquadro **Contesti progetto** per ogni progetto selezionare la **Configurazione** e la **Piattaforma** volute. Selezionare quindi se eseguire la **compilazione** e la **distribuzione**.
+3. Nel riquadro **contesti progetto** , per ogni progetto selezionare la **configurazione** e la **piattaforma** desiderate e scegliere se **compilarla** e se **distribuirla** .
 
 ## <a name="see-also"></a>Vedere anche
  [Informazioni sulle configurazioni](../ide/understanding-build-configurations.md) [di compilazione creazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [procedura: modificare le proprietà del progetto e le impostazioni di configurazione](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

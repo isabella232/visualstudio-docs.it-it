@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 16a09a5b0f5e534d310092036b8e7eb1d4c344d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668481"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Override ed estensione delle classi generate
@@ -29,7 +29,7 @@ La definizione DSL è una piattaforma in cui è possibile creare un potente set 
 ### <a name="overriding-methods-in-a-partial-class"></a>Override di metodi in una classe parziale
  Le definizioni di classe parziali consentono di definire una classe in più di una posizione. In questo modo è possibile separare il codice generato dal codice scritto personalmente. Nel codice scritto manualmente è possibile eseguire l'override delle classi ereditate dal codice generato.
 
- Se, ad esempio, nella definizione DSL si definisce una classe di dominio denominata `Book`, è possibile scrivere codice personalizzato per aggiungere metodi di override:
+ Se, ad esempio, nella definizione DSL si definisce una classe di dominio denominata `Book` , è possibile scrivere codice personalizzato per aggiungere metodi di override:
 
  `public partial class Book`
 
@@ -55,13 +55,13 @@ La definizione DSL è una piattaforma in cui è possibile creare un potente set 
 
  Tuttavia, è possibile eseguire l'override di questi metodi impostando il flag **generato doppio derivato** per la classe di dominio. In questo modo vengono generate due classi, una che è una classe di base astratta dell'altra. Tutte le definizioni di metodo e proprietà si trovano nella classe di base e solo il costruttore si trova nella classe derivata.
 
- Ad esempio, nella libreria di esempio. DSL, per la classe di dominio `CirculationBook` la proprietà `Generates``Double Derived` è impostata su `true`. Il codice generato per la classe di dominio contiene due classi:
+ Ad esempio, nella libreria di esempio. DSL la `CirculationBook` classe di dominio ha la `Generates``Double Derived` proprietà impostata su `true` . Il codice generato per la classe di dominio contiene due classi:
 
 - `CirculationBookBase`, che è un oggetto astratto e che contiene tutti i metodi e le proprietà.
 
-- `CirculationBook`, derivato da `CirculationBookBase`. È vuota, tranne che per i relativi costruttori.
+- `CirculationBook`, derivato da `CirculationBookBase` . È vuota, tranne che per i relativi costruttori.
 
-  Per eseguire l'override di qualsiasi metodo, si crea una definizione parziale della classe derivata, ad esempio `CirculationBook`. È possibile eseguire l'override sia dei metodi generati che dei metodi ereditati dal framework di modellazione.
+  Per eseguire l'override di qualsiasi metodo, si crea una definizione parziale della classe derivata, ad esempio `CirculationBook` . È possibile eseguire l'override sia dei metodi generati che dei metodi ereditati dal framework di modellazione.
 
   È possibile utilizzare questo metodo con tutti i tipi di elemento, tra cui elementi del modello, relazioni, forme, diagrammi e connettori. È anche possibile eseguire l'override dei metodi di altre classi generate. Alcune classi generate, ad esempio ToolboxHelper, sono sempre derivate da Double.
 
@@ -73,7 +73,7 @@ La definizione DSL è una piattaforma in cui è possibile creare un potente set 
  Scrivere una definizione di classe parziale in un file separato dai file generati e fornire il costruttore.
 
 ### <a name="flagged-extension-points"></a>Punti di estensione contrassegnati
- Un punto di estensione contrassegnato è una posizione nella definizione DSL in cui è possibile impostare una proprietà o una casella di controllo per indicare che si fornirà un metodo personalizzato. I costruttori personalizzati sono un esempio. Altri esempi includono l'impostazione del `Kind` di una proprietà di dominio su un archivio calcolato o personalizzato oppure l'impostazione del flag **is Custom** in un generatore di connessioni.
+ Un punto di estensione contrassegnato è una posizione nella definizione DSL in cui è possibile impostare una proprietà o una casella di controllo per indicare che si fornirà un metodo personalizzato. I costruttori personalizzati sono un esempio. Altri esempi includono l'impostazione dell'oggetto `Kind` di una proprietà di dominio su un archivio calcolato o personalizzato oppure l'impostazione del flag **is Custom** in un generatore di connessioni.
 
  In ogni caso, quando si imposta il flag e si rigenera il codice, viene generato un errore di compilazione. Fare doppio clic sull'errore per visualizzare un commento che spiega cosa è necessario fornire.
 

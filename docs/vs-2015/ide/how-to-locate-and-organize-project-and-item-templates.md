@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651876"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: individuare e organizzare modelli di progetto e modelli di elementi
@@ -40,7 +40,7 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
 
   Ad esempio, la directory seguente contiene i modelli di progetto personalizzati di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per la lingua inglese:
 
-  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+  C: \\ *VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
 ### <a name="custom-templates"></a>Modelli personalizzati
  Per impostazione predefinita, i modelli personalizzati risiedono nel percorso seguente:
@@ -106,7 +106,7 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
 
 7. Creare un progetto oppure aprire un progetto esistente.
 
-8. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+8. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
 9. Verificare che la categoria Web sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Aggiungi nuovo elemento**.
 
@@ -137,7 +137,7 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
 
 3. Creare un progetto oppure aprire un progetto esistente.
 
-4. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+4. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
 5. Verificare che la categoria HelloWorld sia visualizzata nel riquadro **Tipi di progetto** della finestra di dialogo **Aggiungi nuovo elemento**.
 

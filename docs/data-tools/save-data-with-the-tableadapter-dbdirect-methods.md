@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281609"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
@@ -117,10 +117,10 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 2. Impostare le proprietà **Name** e **Text** seguenti per ciascun pulsante.
 
-    |Nome|Text|
+    |Nome|Testo|
     |----------|----------|
-    |`InsertButton`|**Insert**|
-    |`UpdateButton`|**Update**|
+    |`InsertButton`|**Inserimento**|
+    |`UpdateButton`|**Aggiornamento**|
     |`DeleteButton`|**Elimina**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Per aggiungere il codice per l'inserimento dei nuovi record nel database
@@ -168,6 +168,6 @@ A seconda dei requisiti dell'applicazione, è possibile eseguire diversi passagg
 
 - Aggiunta di altre tabelle al set di dati tramite selezione di **Configura il Dataset con la procedura guidata** nella finestra **Origini dati**. È possibile aggiungere controlli che consentono di visualizzare dati correlati mediante il trascinamento dei nodi correlati nel form. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

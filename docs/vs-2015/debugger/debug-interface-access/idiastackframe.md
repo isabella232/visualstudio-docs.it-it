@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3199498f9e31f65045f7df44c4c6b6c39be18f56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144739"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Espone le proprietà di uno stack frame.  
+Espone le proprietà di un stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,35 +32,35 @@ IDiaStackFrame : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Metodi supportati da questa interfaccia sono i seguenti:  
+ Di seguito sono riportati i metodi supportati da questa interfaccia:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Recupera un flag che indica che il puntatore di base viene allocato per il codice in questo intervallo di indirizzi. Metodo deprecato.|  
-|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Recupera la base di indirizzo del frame.|  
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Recupera un flag che indica che la gestione delle eccezioni C++ è attivo.|  
+|[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Recupera un flag che indica che il puntatore di base è allocato per il codice in questo intervallo di indirizzi. Questo metodo è deprecato.|  
+|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Recupera la base dell'indirizzo del frame.|  
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Recupera un flag che indica che la gestione delle eccezioni C++ è attiva.|  
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Recupera un flag che indica che il blocco contiene il punto di ingresso di una funzione.|  
-|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Recupera il numero di byte delle variabili locali inserite nello stack.|  
-|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Recupera il numero di byte dei parametri inseriti nello stack.|  
-|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Recupera il numero di byte del codice di prologo nel blocco|  
-|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Recupera il numero di byte di registra salvato inseriti nello stack.|  
-|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Recupera l'indirizzo base di variabili locali.|  
+|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Recupera il numero di byte delle variabili locali di cui è stato effettuato il push nello stack.|  
+|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Recupera il numero di byte di parametri inseriti nello stack.|  
+|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Recupera il numero di byte del codice di prologo nel blocco.|  
+|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Recupera il numero di byte dei registri salvati inseriti nello stack.|  
+|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Recupera la base degli indirizzi delle variabili locali.|  
 |[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|Recupera il numero massimo di byte inseriti nello stack nel frame.|  
 |[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Recupera il valore della variabile locale specificata come byte non elaborati.|  
 |[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Recupera il valore di un registro specificato.|  
-|[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Recupera l'indirizzo del mittente del frame.|  
-|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Recupera le dimensioni del fotogramma in byte.|  
-|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Recupera un flag che indica che la gestione delle eccezioni di sistema è in vigore.|  
+|[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Recupera l'indirizzo di ritorno del frame.|  
+|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Recupera le dimensioni in byte del frame.|  
+|[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Recupera un flag che indica che la gestione delle eccezioni di sistema è attiva.|  
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Recupera il tipo di frame.|  
   
-## <a name="remarks"></a>Note  
- Uno stack frame è un'astrazione di una chiamata di funzione durante l'esecuzione.  
+## <a name="remarks"></a>Osservazioni  
+ Una stack frame è un'astrazione di una chiamata di funzione durante l'esecuzione.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Ottenere questa interfaccia chiamando il [Idiaenumstackframes](../../debugger/debug-interface-access/idiaenumstackframes-next.md) (metodo). Vedere le [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) interfaccia per un esempio su come ottenere il `IDiaStackFrame` interfaccia.  
+ Ottenere questa interfaccia chiamando il metodo [IDiaEnumStackFrames:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md) . Vedere l'interfaccia [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) per un esempio su come ottenere l' `IDiaStackFrame` interfaccia.  
   
 ## <a name="example"></a>Esempio  
- Questo esempio visualizza diversi attributi di uno stack frame.  
+ In questo esempio vengono visualizzati diversi attributi di un stack frame.  
   
 ```cpp#  
 void PrintStackFrame(IDiaStackFrame* pFrame)  
@@ -104,14 +104,14 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: DIA2.h  
+ Intestazione: dia2. h  
   
- Libreria: diaguids.lib  
+ Libreria: diaguids. lib  
   
- DLL: MSDIA80  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
- [IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
+ [IDiaEnumStackFrames:: Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

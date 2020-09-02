@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9469415682d7347aa3d51ee09878e31e28e85f62
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465720"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
@@ -34,7 +34,7 @@ HRESULT findInlineeLinesByRVA ( 
 #### <a name="parameters"></a>Parametri
  `parent`
 
-in `IDiaSymbol`Oggetto che rappresenta l'elemento padre.
+in `IDiaSymbol` Oggetto che rappresenta l'elemento padre.
 
  `rva`
 
@@ -51,7 +51,7 @@ out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri d
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

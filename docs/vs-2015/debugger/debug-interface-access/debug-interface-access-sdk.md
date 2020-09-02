@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug Interface Access SDK | Microsoft Docs
+title: Debug Interface Access SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,32 +16,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ddaea95bc879364de99c0ec01213cda30fa4e7d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197616"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il Microsoft eseguire il Debug dell'interfaccia Access Software Development Kit (DIA SDK) fornisce l'accesso alle informazioni archiviate nei file di programma del database (con estensione pdb) generati dagli strumenti di post-compilazione di Microsoft di debug. Poiché il formato del file PDB generato dagli strumenti di post-compilazione sottoposto a revisione costante, che espone il formato è poco pratico. Usando l'API di DIA, è possibile sviluppare applicazioni che cercano ed esplorare le informazioni di debug archiviate in un file con estensione pdb. Tali applicazioni potrebbe, ad esempio, segnalare informazioni sullo stack di traccia-back e analizzare i dati sulle prestazioni.  
+Microsoft Debug Interface Access Software Development Kit (DIA SDK) fornisce l'accesso alle informazioni di debug archiviate nei file di database di programma (con estensione pdb) generati dagli strumenti di Microsoft postcompiler. Poiché il formato del file con estensione PDB generato dagli strumenti del postcompilatore subisce una revisione costante, l'esposizione del formato non è praticabile. Utilizzando l'API DIA è possibile sviluppare applicazioni che consentono di cercare ed esplorare le informazioni di debug archiviate in un file con estensione pdb. Tali applicazioni potrebbero, ad esempio, ottenere informazioni sulla traccia dello stack e analizzare i dati sulle prestazioni.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Introduzione](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
- Fornisce una panoramica di DIA SDK le funzionalità e specifica in cui è installato il DIA SDK, nonché i file di libreria e intestazione obbligatoria.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Per iniziare](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+ Fornisce una panoramica delle funzionalità di DIA SDK e specifica la posizione in cui è installato il DIA SDK nonché i file di intestazione e di libreria necessari.  
   
  [Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- Vengono fornite istruzioni su come usare l'API di DIA per eseguire query sul file con estensione pdb.  
+ Fornisce istruzioni su come usare l'API DIA per eseguire una query sul file con estensione pdb.  
   
  [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
- Viene descritto come vengono usati i simboli e relativi tag nell'API di DIA.  
+ Viene illustrato come usare simboli e tag di simboli nell'API DIA.  
   
  [Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
- Contiene le interfacce, metodi, le enumerazioni e strutture dell'API di DIA.  
+ Contiene le interfacce, i metodi, le enumerazioni e le strutture dell'API DIA.  
   
  [Esempio Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)  
- Viene illustrato come usare l'API di DIA per cercare ed esplorare le informazioni di debug.  
+ Viene illustrato come usare l'API DIA per cercare e visualizzare le informazioni di debug.  
   
  [File di origine Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)  
- Utilizzato dal codice sorgente [esempio Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md) per dimostrare l'API di DIA.
+ Codice sorgente usato dall' [Esempio Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md) per illustrare l'API dia.

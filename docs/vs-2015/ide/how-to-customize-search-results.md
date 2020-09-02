@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 379debcfc1a3c9e6529563ebbf1d4b8f6397dad3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667991"
 ---
 # <a name="how-to-customize-search-results"></a>Procedura: Personalizzare i risultati della ricerca
@@ -50,4 +50,4 @@ Esistono vari modi per personalizzare la visualizzazione dei risultati della ric
 2. Selezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**.
 
 ## <a name="see-also"></a>Vedere anche
- [Suggerimenti per la ricerca full-text](../ide/full-text-search-tips.md)
+ [Full-Text Search Tips](../ide/full-text-search-tips.md) (Suggerimenti per la ricerca full-text)

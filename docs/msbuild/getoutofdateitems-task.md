@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272398"
 ---
 # <a name="getoutofdateitems-task"></a>Attività GetOutOfDateItems
@@ -39,11 +39,11 @@ Nella tabella seguente vengono descritti i parametri dell'attività **GetOutOfDa
 |**DependenciesMetadataName**|Parametro **stringa** facoltativo.|
 |**HasInterdependencies**|Parametro di output **bool** facoltativo.|
 |**OutOfDateSources**|Parametro di output facoltativo **ITaskItem[]**.|
-|**OutputsMetadataName**|Parametro **di stringa** obbligatorio.|
-|**recenti**|Parametro **Facoltativo ITaskItem[].**|
-|**TLogDirectory**|Parametro **di stringa** obbligatorio.|
-|**TLogNamePrefix**|Parametro **di stringa** obbligatorio.|
+|**OutputsMetadataName**|Parametro di **stringa** obbligatorio.|
+|**recenti**|Parametro **ITaskItem []** facoltativo.|
+|**TLogDirectory**|Parametro di **stringa** obbligatorio.|
+|**TLogNamePrefix**|Parametro di **stringa** obbligatorio.|
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+[Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

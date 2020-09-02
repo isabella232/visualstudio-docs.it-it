@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba27b32cc322da2e14cec86b878a7dd42dae0039
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668097"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Procedura: Creare ereditarietà tra tipi (Progettazione classi)
@@ -30,7 +30,7 @@ Per creare una relazione di ereditarietà tra due tipi in un diagramma classi us
 
 1. Dal progetto in Esplora soluzioni aprire un file del diagramma classi (con estensione cd).
 
-     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [How to: Aggiungere diagrammi classi ai progetti (Progettazione classi) ](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).
+     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).
 
 2. In **Progettazione classi** nella **Casella degli strumenti** fare clic su **Ereditarietà**.
 
@@ -50,4 +50,4 @@ Per creare una relazione di ereditarietà tra due tipi in un diagramma classi us
     >  Anche se è possibile visualizzare i tipi generici esistenti, non si possono creare nuovi tipi generici. Non si possono inoltre modificare i parametri di tipo per i tipi generici esistenti.
 
 ## <a name="see-also"></a>Vedere anche
- [Ereditarietà](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) [Nozioni fondamentali sull'ereditarietà](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) [Procedura: Visualizzare l'ereditarietà tra tipi (Progettazione classi)](../ide/how-to-view-inheritance-between-types-class-designer.md) [Classi Visual C++ in Progettazione classi](../ide/visual-cpp-classes-in-class-designer.md)
+ [Inheritance](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea) [Nozioni fondamentali sull'ereditarietà](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5) dell'ereditarietà [procedura: visualizzare l'ereditarietà tra tipi (Progettazione classi)](../ide/how-to-view-inheritance-between-types-class-designer.md) [Visual C++ classi in Progettazione classi](../ide/visual-cpp-classes-in-class-designer.md)

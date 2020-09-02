@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9153da163fb30b05e13d9c25f8589d632d64326e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198147"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Finestra di output, Debug, finestra di dialogo Opzioni
@@ -30,13 +30,13 @@ ms.locfileid: "68198147"
 
 È possibile specificare quali tipi di informazioni di debug vengono visualizzati nella finestra **Output**. Per visualizzare queste opzioni aprire il menu **Strumenti**, fare clic su **Opzioni**, espandere il nodo **Debug** e fare clic su **Finestra di output**.  
   
- **Impostazioni generali di Output**  
- Questa categoria include i controlli che determinano se i messaggi di debug generali vengono visualizzati nei **Output** finestra. Per ogni tipo di messaggio, è possibile specificare se venga o meno visualizzato.  
+ **Impostazioni generali di output**  
+ Questa categoria contiene i controlli che determinano se i messaggi di debug generale vengono visualizzati nella finestra di **output** . Per ogni tipo di messaggio, è possibile specificare se venga o meno visualizzato.  
   
  **Impostazioni di traccia WPF**  
- Questa categoria include i controlli che determinano il livello dei messaggi di traccia WPF visualizzati nel **Output** finestra. Per ogni tipo di messaggio è possibile specificare se venga o meno visualizzato; si può inoltre specificare un livello che varia da **Critico** a **Tutto**.  
+ Questa categoria contiene i controlli che determinano il livello dei messaggi di traccia WPF visualizzati nella finestra di **output** . Per ogni tipo di messaggio è possibile specificare se venga o meno visualizzato; si può inoltre specificare un livello che varia da **Critico** a **Tutto**.  
   
- Per altre informazioni, vedere [Procedura: Visualizzare le informazioni di traccia WPF](../debugger/how-to-display-wpf-trace-information.md).  
+ Per altre informazioni, vedere [procedura: visualizzare le informazioni di traccia WPF](../debugger/how-to-display-wpf-trace-information.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug, finestra di dialogo Opzioni](../debugger/debugging-options-dialog-box.md)   

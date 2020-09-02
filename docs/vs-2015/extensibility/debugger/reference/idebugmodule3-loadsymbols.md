@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::LoadSymbols | Microsoft Docs
+title: 'IDebugModule3:: LoadSymbols | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 46385a61c5cc8cc30f75fd06a55bbe155e045f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157278"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
@@ -37,12 +37,12 @@ int LoadSymbols();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Se il metodo ha esito positivo, restituisce `S_OK`. In caso contrario, restituisce un codice di errore.  
+ Se il metodo ha esito positivo, viene restituito `S_OK`. Se ha esito negativo, viene restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo carica i simboli dal percorso di ricerca corrente (che può essere modificata chiamando il [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) (metodo)).  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo carica i simboli dal percorso di ricerca corrente, che può essere modificato chiamando il metodo [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) .  
   
- Questo metodo è preferibile tramite il [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) (metodo).  
+ Questo metodo è preferibile rispetto al metodo [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   

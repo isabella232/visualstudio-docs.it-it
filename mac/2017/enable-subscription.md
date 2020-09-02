@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
 ms.openlocfilehash: c3f8aef1b784b0261eeba6408a8cef0144e5fcac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984996"
 ---
 # <a name="enable-subscription"></a>Abilitare la sottoscrizione
@@ -28,13 +28,13 @@ Per iniziare a usare una sottoscrizione, accedere a Visual Studio per Mac seguen
 
 Se la sottoscrizione è scaduta, sono disponibili due opzioni:
 
-1. Rinnovare l'abbonamento. È possibile rinnovare l'abbonamento accedendo a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
+1. Rinnovare l'abbonamento. È possibile rinnovare la sottoscrizione passando a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) .
 
 2. Se è disponibile un altro account con una sottoscrizione attiva, è possibile aggiungerlo a Visual Studio per Mac come descritto in dettaglio nell'articolo [Aggiunta di più account utente](signing-in.md). Visual Studio per Mac rileverà la licenza migliore tra quelle degli account aggiunti.
 
 ## <a name="product-key-usage"></a>Utilizzo dei codici Product Key
 
-Attualmente, non è possibile usare un codice Product Key per abilitare i diritti Professional o Enterprise per Visual Studio per Mac. Per usare Visual Studio Enterprise per Mac o Visual Studio Professional per Mac, è necessario disporre di una [sottoscrizione](https://visualstudio.microsoft.com/subscriptions/) pertinente ed eseguire [l'accesso](signing-in.md) all'IDE.
+Attualmente, non è possibile usare un codice Product Key per abilitare i diritti Professional o Enterprise per Visual Studio per Mac. Per usare Visual Studio Enterprise per Mac o Visual Studio Professional per Mac, è necessario avere una [sottoscrizione](https://visualstudio.microsoft.com/subscriptions/) pertinente ed effettuare l' [accesso](signing-in.md) all'IDE.
 
 ## <a name="offline-activation"></a>Attivazione offline
 

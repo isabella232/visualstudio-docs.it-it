@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74876064"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Creare pacchetti della soluzione SharePoint
@@ -35,18 +35,18 @@ ms.locfileid: "74876064"
 
 |Proprietà progettazione pacchetti|Descrizione dell'impostazione predefinita|
 |-------------------------------|------------------------------------|
-|Name|Richiesto. Il nome predefinito del pacchetto è impostato su *NomeProgetto*.|
-|Reimposta server Web|Parametro facoltativo. Selezionare se si desidera riavviare il server Web dopo l'installazione del file con *estensione wsp* nel server SharePoint.|
-|Tipo di server di distribuzione|Parametro facoltativo. Rappresenta il tipo di server che ospita il pacchetto. Se non è impostato, il valore predefinito è WebFrontEnd.<br /><br /> ApplicationServer: descrive un server che ospita i servizi.<br /><br /> WebFrontEnd: descrive un server che ospita siti Web.|
+|Nome|Obbligatorio. Il nome predefinito del pacchetto è impostato su *NomeProgetto*.|
+|Reimposta server Web|facoltativo. Selezionare se si desidera riavviare il server Web dopo l'installazione del file con *estensione wsp* nel server SharePoint.|
+|Tipo di server di distribuzione|facoltativo. Rappresenta il tipo di server che ospita il pacchetto. Se non è impostato, il valore predefinito è WebFrontEnd.<br /><br /> ApplicationServer: descrive un server che ospita i servizi.<br /><br /> WebFrontEnd: descrive un server che ospita siti Web.|
 |Elementi nella soluzione|Tutte le funzionalità e gli elementi del progetto SharePoint che è possibile aggiungere al pacchetto.|
-|Elementi nel pacchetto|Parametro facoltativo. Tutti gli elementi e le funzionalità di SharePoint che si desidera distribuire nel pacchetto.|
+|Elementi nel pacchetto|facoltativo. Tutti gli elementi e le funzionalità di SharePoint che si desidera distribuire nel pacchetto.|
 
 ## <a name="configure-the-packaging-process"></a>Configurare il processo di creazione del pacchetto
- Dopo aver sviluppato le soluzioni SharePoint in Visual Studio, è possibile personalizzare il modo in cui i progetti vengono inclusi nel pacchetto.
+ Dopo aver sviluppato le soluzioni SharePoint in Visual Studio, è possibile personalizzare il modo in cui vengono creati i pacchetti dei progetti.
 
  La tabella seguente illustra le due destinazioni di MSBuild che è possibile usare per personalizzare la modalità di creazione del file con *estensione wsp* .
 
-|destinazione|Descrizione|
+|Destinazione|Descrizione|
 |------------|-----------------|
 |BeforeLayout|Destinazione che esegue le attività immediatamente prima che i file vengano copiati in una directory intermedia. È possibile modificare i file prima di creare un file di pacchetto (con*estensione wsp*).|
 |AfterLayout|Destinazione che esegue le attività immediatamente dopo la copia dei file in una directory intermedia.|
@@ -69,7 +69,7 @@ ms.locfileid: "74876064"
 6. I file nella directory intermedia vengono aggiunti al file con estensione *WSP* .
 
 ## <a name="package-folder-structure"></a>Struttura delle cartelle del pacchetto
- Quando si crea il pacchetto del progetto SharePoint, viene creato un file con *estensione wsp* nella cartella *SolutionFolder\bin\\\<BuildConfiguration >* Ad esempio, se la soluzione si trova in *C:\Visual Studio 2013 \ Projects\ListDefinition1* e la configurazione della build è impostata su Release, il file con *estensione wsp* si trova in *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
+ Quando si crea il pacchetto del progetto SharePoint, viene creato un file con *estensione wsp* nella *cartella \\ \<BuildConfiguration> SolutionFolder\bin* Ad esempio, se la soluzione si trova in *C:\Visual Studio 2013 \ Projects\ListDefinition1* e la configurazione della build è impostata su Release, il file con *estensione wsp* si trova in *C:\Visual Studio 2013 \ Projects\ListDefinition1\bin\Release*.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

@@ -11,10 +11,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f3e030facd8c70aec4fdc480b01c90ee4c0acda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188384"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
@@ -29,19 +29,19 @@ IDebugPortPicker : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Questa interfaccia viene implementata da fornitori di porte. Un fornitore di porte viene definito il selettore porta esporlo come CLSID e scegliendo il `metricPortPickerCLSID` metrica a CLSID esposto.  
+ Questa interfaccia viene implementata dai fornitori di porte. Un fornitore di porte definisce il selettore di porte esponendolo come CLSID e puntando la `metricPortPickerCLSID` metrica sul CLSID esposto.  
   
 ## <a name="methods"></a>Metodi  
- Nella tabella seguente sono illustrati i metodi di `IDebugPortPicker`.  
+ La tabella seguente illustra i metodi di `IDebugPortPicker` .  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|Consente di visualizzare la finestra di dialogo specificata che consente all'utente di selezionare una porta.|  
-|[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Imposta il provider del servizio.|  
+|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|Visualizza la finestra di dialogo specificata che consente all'utente di selezionare una porta.|  
+|[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Imposta il provider di servizi.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,5 +1,5 @@
 ---
-title: Comandi del Menu? | Microsoft Docs
+title: Comandi di menu della Guida | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63a1a0cd9068f8c9dc40dc6fc6ac7984ef250a16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197497"
 ---
 # <a name="help-menu-commands"></a>comandi del menu ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il **aiutare** menu sono disponibili comandi per aprire i file della Guida.  
+Il menu **Guida** fornisce i comandi per aprire i file della guida.  
   
  **Index**  
- Apre la schermata di contenuto per la Guida di Spy + +.  
+ Apre la schermata contenuto per la Guida di Spy + +.  
   
  **Uso della Guida**  
- Apre un file della Guida viene descritto come utilizzare la Guida.  
+ Apre un file della guida che descrive come usare la guida.  
   
  **Informazioni su Spy++**  
- Mostra le informazioni sul copyright e versione di software per Spy + +.
+ Mostra la versione del software e le informazioni sul copyright per Spy + +.

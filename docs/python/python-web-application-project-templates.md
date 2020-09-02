@@ -11,33 +11,33 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302756"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315122"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
 Python in Visual Studio supporta lo sviluppo di progetti Web nei framework Bottle, Flask e Django, usando modelli di progetto e un'utilità di avvio del debug che può essere configurata in modo da gestire diversi framework. Questi modelli includono un file *requirements.txt* per dichiarare le dipendenze necessarie. Quando si crea un progetto da uno di questi modelli, Visual Studio richiede di installare i pacchetti. Vedere [Installare i requisiti di progetto](#install-project-requirements) più avanti in questo articolo.
 
-È inoltre possibile utilizzare il modello **di progetto Web** generico per altri framework, ad esempio Piramide. In questo caso, con il modello non vengono installati framework. In alternativa, installare i pacchetti necessari nell'ambiente in uso per il progetto (vedere [Finestra Ambienti Python- Scheda Pacchetti](python-environments-window-tab-reference.md#packages-tab)).
+È anche possibile usare il modello di **progetto Web** generico per altri Framework, ad esempio Pyramid. In questo caso, con il modello non vengono installati framework. In alternativa, installare i pacchetti necessari nell'ambiente in uso per il progetto (vedere [Finestra Ambienti Python- Scheda Pacchetti](python-environments-window-tab-reference.md#packages-tab)).
 
 Per informazioni sulla distribuzione di un'app Web Python in Azure, vedere [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ## <a name="use-a-project-template"></a>Usare un modello di progetto
 
-Creare un progetto da un modello utilizzando **File** > **Nuovo** > **progetto**. Per visualizzare i modelli per i progetti Web, selezionare **Python** > **Web** sul lato sinistro della finestra di dialogo. Quindi, selezionare un modello a scelta, specificare il nome del progetto e della soluzione, impostare le opzioni per una directory soluzione e un repository Git e selezionare **OK**.
+Per creare un progetto da un modello, usare **file**  >  **nuovo**  >  **progetto**. Per visualizzare i modelli per i progetti web, selezionare **Python**  >  **Web** sul lato sinistro della finestra di dialogo. Quindi, selezionare un modello a scelta, specificare il nome del progetto e della soluzione, impostare le opzioni per una directory soluzione e un repository Git e selezionare **OK**.
 
 ![Finestra di dialogo Nuovo progetto per app Web](media/projects-new-project-dialog-web.png)
 
-Il modello di **progetto Web** generico, menzionato in precedenza, fornisce solo un progetto di Visual Studio vuoto senza codice e senza presupposti diversi dall'essere un progetto Python. Per informazioni dettagliate sul modello **Servizio Cloud Azure**, vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md).
+Il modello di **progetto Web** generico, indicato in precedenza, fornisce solo un progetto di Visual Studio vuoto senza codice e nessun presupposto diverso da un progetto Python. Per informazioni dettagliate sul modello **Servizio Cloud Azure**, vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md).
 
 Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e rientrano in tre categorie generali come descritto nelle sezioni seguenti. Le app create con uno di questi modelli contengono codice sufficiente per eseguire l'app in locale ed eseguirne il debug. Ognuno di essi fornisce anche l'[oggetto app WSGI](https://www.python.org/dev/peps/pep-3333/) (python.org) necessario per l'uso con i server Web di produzione.
 
 ### <a name="blank-group"></a>Gruppo vuoto
 
-Tutti i modelli **Progetto Web \<framework> vuoto** creano un progetto con una quantità minima più o meno grande di codice boilerplate e le dipendenze necessarie dichiarate in un file *requirements.txt*.
+Tutti i modelli di ** \<framework> progetto Web vuoti** creano un progetto con codice standard più o meno minimo e le dipendenze necessarie dichiarate in un file di *requirements.txt* .
 
 | Modello | Descrizione |
 | --- | --- |
@@ -47,25 +47,25 @@ Tutti i modelli **Progetto Web \<framework> vuoto** creano un progetto con una q
 
 ### <a name="web-group"></a>Gruppo Web
 
-Tutti ** \<** i modelli di progetto Web di Framework> creano un'app Web di avvio con una progettazione identica indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
+Tutti i modelli di ** \<Framework> progetto Web** creano un'app Web di avvio con una progettazione identica, indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici (CSS, JavaScript e i tipi di carattere) e usa un meccanismo per il modello di pagina appropriato per il framework.
 
 | Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle** | Genera un'app i cui file statici sono contenuti nella cartella *static* e gestiti tramite codice in *app.py*. Il routing per le singole pagine è specificato in *routes.py* e la cartella *views* contiene i modelli di pagina.|
 | **Progetto Web Django** | Genera un progetto Django e un'app Django con tre pagine, il supporto dell'autenticazione e un database SQLite (ma nessun modello dati). Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 4 dell'esercitazione su Django](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
 | **Progetto Web Flask** | Genera un'app i cui file statici sono contenuti nella cartella *static*. Il codice in *views.py* gestisce il routing e i modelli di pagina usano il motore Jinja contenuto nella cartella *templates*. Il file *runserver.py* fornisce il codice di avvio. Vedere [Informazioni su Flask, passaggio 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
-| **Progetto Web Flask/Jade** | Genera la stessa app del modello **Flask Web Project** ma utilizzando l'estensione Jade per il motore di modelli Jinja. |
+| **Progetto Web Flask/Jade** | Genera la stessa app del modello di **progetto Web Flask** ma usando l'estensione Jade per il motore del modello Jinja. |
 
 ### <a name="polls-group"></a>Gruppo di sondaggi
 
-I modelli **Progetto Web \<framework> di sondaggi** creano un'app Web di base attraverso la quale gli utenti possono votare domande di sondaggi diversi. Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
+I modelli di ** \<framework> progetto Web di polling** creano un'app Web di base tramite la quale gli utenti possono votare domande di polling diverse. Ogni app si basa sulla struttura dei modelli progetto **Web** per usare un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app (/seed) che carica i sondaggi da un file *samples.json*.
 
 | Modello | Descrizione |
 | --- | --- |
 | **Progetto Web Bottle di sondaggi** | Genera un'app che può essere eseguita su un database in memoria, MongoDB o un archivio tabelle di Azure, che viene configurato tramite la variabile di ambiente `REPOSITORY_NAME`. I modelli di dati e il codice dell'archivio dati sono contenuti nella cartella *models* e il file *settings.py* contiene codice per determinare l'archivio dati usato. |
 | **Progetto Web Django di sondaggi** | Genera un progetto Django e un'app Django con tre pagine e un database SQLite. Include le personalizzazioni per l'interfaccia amministrativa Django che consentono a un amministratore autenticato di creare e gestire i sondaggi. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 6 dell'esercitazione su Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
 | **Progetto Web Flask di sondaggi** | Genera un'app che può essere eseguita su un database in memoria, MongoDB o un archivio tabelle di Azure, che viene configurato tramite la variabile di ambiente `REPOSITORY_NAME`. I modelli di dati e il codice dell'archivio dati sono contenuti nella cartella *models* e il file *settings.py* contiene codice per determinare l'archivio dati usato. L'app utilizza il motore Jinja per i modelli di pagina. Vedere [Informazioni su Flask, passaggio 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
-| **Progetto Web Flask/Jade di sondaggi** | Genera la stessa app del modello **Polls Flask Web Project** ma utilizzando l'estensione Jade per il motore di modelli Jinja. |
+| **Progetto Web Flask/Jade di sondaggi** | Genera la stessa app del modello di **progetto Web di polling Flask** ma usando l'estensione Jade per il motore del modello Jinja. |
 
 ## <a name="install-project-requirements"></a>Installare i requisiti di progetto
 
@@ -81,7 +81,7 @@ I servizi cloud di Microsoft Azure invece *supportano* il file *requirements.txt
 
 ## <a name="debugging"></a>Debug
 
-Quando si avvia un progetto Web per il debug, Visual Studio avvia un server Web locale su una porta casuale e apre il browser predefinito usando l'indirizzo e la porta specificati. Per specificare opzioni aggiuntive, fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà**e selezionare la scheda **Utilità di avvio Web:**
+Quando si avvia un progetto Web per il debug, Visual Studio avvia un server Web locale su una porta casuale e apre il browser predefinito usando l'indirizzo e la porta specificati. Per specificare opzioni aggiuntive, fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà**e quindi selezionare la scheda **utilità di avvio Web** :
 
 ![Proprietà dell'utilità di Web per il modello Web generico](media/template-web-launcher-properties.png)
 
@@ -95,25 +95,25 @@ Le proprietà nei gruppi **Comando esegui server** e **Comando debug server** (q
 
 - **Comando**: può essere uno script Python (file *\*.py*), un nome di modulo (come in `python.exe -m module_name`) o una singola riga di codice (come in `python.exe -c "code"`). Il valore nell'elenco a discesa indica il tipo da usare.
 - **Argomenti**: questi argomenti vengono passati nella riga di comando dopo il comando.
-- **Ambiente**: elenco delimitato da caratteri di nuova riga di coppie \<NAME>=\<VALUE> che specificano le variabili di ambiente. Queste variabili vengono impostate dopo tutte le proprietà che possono comportare la modifica dell'ambiente, ad esempio il numero di porta e i percorsi di ricerca, di conseguenza possono sovrascrivere tali valori.
+- **Environment**: elenco di coppie separate da una nuova riga che \<NAME> = \<VALUE> specifica le variabili di ambiente. Queste variabili vengono impostate dopo tutte le proprietà che possono comportare la modifica dell'ambiente, ad esempio il numero di porta e i percorsi di ricerca, di conseguenza possono sovrascrivere tali valori.
 
 Per specificare qualsiasi proprietà di progetto o variabile di ambiente, è possibile usare la sintassi MSBuild, ad esempio: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)` è il percorso relativo del file di avvio, mentre `{StartupModule}` è il nome importabile del file di avvio. `$(SERVER_HOST)`e `$(SERVER_PORT)` sono normali variabili di ambiente impostate dalle proprietà **URL di avvio** e **Numero porta,** automaticamente o dalla proprietà **Ambiente.**
+`$(StartupFile)` è il percorso relativo del file di avvio, mentre `{StartupModule}` è il nome importabile del file di avvio. `$(SERVER_HOST)` e `$(SERVER_PORT)` sono variabili di ambiente normali impostate dalle proprietà **URL di avvio** e **numero di porta** , automaticamente o dalla proprietà **dell'ambiente** .
 
 > [!Note]
 > I valori in **Comando esegui server** vengono usati con il comando **Debug** > **Avvia server** oppure quando si preme **CTRL**+**F5**. I valori nel gruppo **Comando debug server** vengono usati con il comando **Debug** > **Avvia il server di debug** oppure quando si preme **F5**.
 
 ### <a name="sample-bottle-configuration"></a>Esempio di configurazione di Bottle
 
-Il modello **Bottiglia progetto Web** include codice boilerplate che esegue la configurazione necessaria. Un'app Bottle importata potrebbe però non includere questo codice. In questo caso, le impostazioni seguenti consentono di avviare l'app usando il modulo `bottle` installato:
+Il modello di **progetto Web bottle** include codice standard che esegue la configurazione necessaria. Un'app Bottle importata potrebbe però non includere questo codice. In questo caso, le impostazioni seguenti consentono di avviare l'app usando il modulo `bottle` installato:
 
 - Gruppo **Comando esegui server**:
-  - **Comando** `bottle` : (modulo)
-  - **Argomenti**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Comando**: `bottle` (modulo)
+  - **Argomenti**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - Gruppo **Comando debug server**:
-  - **Comando** `bottle` : (modulo)
-  - **Argomenti**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Comando**: `bottle` (modulo)
+  - **Argomenti** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 L'opzione `--reload` è sconsigliata quando si usa Visual Studio per il debug.
 
@@ -141,11 +141,11 @@ Se si vogliono condividere impostazioni personalizzate per un altro framework op
 
 ## <a name="convert-a-project-to-azure-cloud-service"></a>Convertire un progetto in un servizio cloud di Azure
 
-Il comando **Converti in progetto di servizio cloud** di Microsoft Azure (immagine sotto) aggiunge un progetto di servizio cloud alla soluzione. Questo progetto include le impostazioni di distribuzione e la configurazione per i servizi e le macchine virtuali da usare. Usare il comando **Pubblica** nel progetto cloud per eseguire la distribuzione nei servizi cloud. Con il comando **Pubblica** nel progetto Python la distribuzione viene ancora eseguita nei siti Web. Per altre informazioni, vedere [Progetti servizio cloud di Azure](python-azure-cloud-service-project-template.md).
+Il comando **Converti in progetto servizio cloud Microsoft Azure** (immagine seguente) consente di aggiungere un progetto di servizio cloud alla soluzione. Questo progetto include le impostazioni di distribuzione e la configurazione per i servizi e le macchine virtuali da usare. Usare il comando **Pubblica** nel progetto cloud per eseguire la distribuzione nei servizi cloud. Con il comando **Pubblica** nel progetto Python la distribuzione viene ancora eseguita nei siti Web. Per altre informazioni, vedere [Progetti servizio cloud di Azure](python-azure-cloud-service-project-template.md).
 
 ![Comando Converti in progetto servizio cloud di Microsoft Azure](media/template-web-convert-menu.png)
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Informazioni di riferimento sui modelli di elemento Python](python-item-templates.md)
-- [Pubblicare in Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

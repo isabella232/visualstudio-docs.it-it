@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afbe2f813f0bba881f85463777c704c30a45d9ce
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281500"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata
@@ -23,6 +23,6 @@ Il file *. dbml* contiene un riferimento a una stringa di connessione nel file d
 
 Per rispondere a questo messaggio, fare clic su **OK**. Le informazioni di connessione contenute nel file con *estensione dbml* vengono aggiunte alle impostazioni dell'applicazione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

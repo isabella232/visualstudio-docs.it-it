@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e74beb2903cd133dfdd322ce4c297692eae3411
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817190"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: eseguire una trasformazione XSLT dall'editor XML
@@ -29,7 +29,7 @@ Se la proprietà di **output** specifica un nome di file con un oggetto. *htm* o
 
 2. Associare un foglio di stile XSLT al documento XML.
 
-    - Aggiungere un'istruzione di elaborazione `xml-stylesheet` al documento XML. Ad esempio, aggiungere la riga seguente al prologo del documento:`<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
+    - Aggiungere un'istruzione di elaborazione `xml-stylesheet` al documento XML. Ad esempio, aggiungere la riga seguente al prologo del documento: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
        -oppure-
 

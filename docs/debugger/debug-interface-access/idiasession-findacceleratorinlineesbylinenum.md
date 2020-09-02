@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec927532ebc808fae0717e36439be356cb022b32
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465874"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
@@ -39,7 +39,7 @@ in Oggetto `IDiaSymbol` che corrisponde alla funzione dello stub dell'accelerato
 
  `file`
 
-in `IDiaSourceFile`Del percorso di origine.
+in `IDiaSourceFile` Del percorso di origine.
 
  `linenum`
 
@@ -56,7 +56,7 @@ out Puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia inizializzato c
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

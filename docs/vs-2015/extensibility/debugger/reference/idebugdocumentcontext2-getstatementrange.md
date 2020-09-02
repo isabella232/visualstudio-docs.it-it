@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange | Microsoft Docs
+title: 'IDebugDocumentContext2:: GetStatementRange | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68411ac4ded03c83ad0ad1e414107e6591f4e975
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145052"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene l'intervallo di istruzioni di file del contesto del documento.  
+Ottiene l'intervallo di istruzioni file del contesto del documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,21 +42,21 @@ int GetStatementRange( 
   
 #### <a name="parameters"></a>Parametri  
  `pBegPosition`  
- [in, out] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura compilata con la posizione iniziale. Impostare questo argomento con un valore null se questa informazione non è necessaria.  
+ [in, out] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) compilata con la posizione iniziale. Se queste informazioni non sono necessarie, impostare questo argomento su un valore null.  
   
  `pEndPosition`  
- [in, out] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura compilata con la posizione finale. Impostare questo argomento con un valore null se questa informazione non è necessaria.  
+ [in, out] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) compilata con la posizione finale. Se queste informazioni non sono necessarie, impostare questo argomento su un valore null.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Un intervallo di istruzione è l'intervallo di righe che hanno contribuito il codice a cui fa riferimento in questo contesto di documento.  
+## <a name="remarks"></a>Osservazioni  
+ Un intervallo di istruzioni è l'intervallo di righe che ha contribuito al codice a cui si riferisce il contesto del documento.  
   
- Per ottenere l'intervallo del codice sorgente (inclusi i commenti) all'interno di questo contesto di documento, chiamare il [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) (metodo).  
+ Per ottenere l'intervallo del codice sorgente (inclusi i commenti) in questo contesto del documento, chiamare il metodo [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) .  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CDebugContext` oggetto che espone il [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaccia. In questo esempio viene compilata la posizione finale solo se la posizione di inizio non è un valore null.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un `CDebugContext` oggetto semplice che espone l'interfaccia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) . Questo esempio compila la posizione finale solo se la posizione iniziale non è un valore null.  
   
 ```cpp#  
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,  

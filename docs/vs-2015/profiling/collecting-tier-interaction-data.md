@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568047"
 ---
 # <a name="collecting-tier-interaction-data"></a>Raccolta di dati di interazione tra livelli
@@ -34,7 +34,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
  **Windows 8 e Windows Server 2012**  
   
- Per raccogliere dati di interazione tra livelli nelle applicazioni desktop di Windows 8 e nelle applicazioni Windows Server 2012, è necessario utilizzare il metodo di strumentazione. Non è possibile raccogliere dati di interazione tra livelli per le applicazioni Windows Store. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012). È possibile includere i dati di interazione tra livelli in tutti i metodi di profilatura su un'altra versione di Windows supportata.  
+ Per raccogliere dati di interazione tra livelli nelle applicazioni desktop di Windows 8 e nelle applicazioni Windows Server 2012, è necessario utilizzare il metodo di strumentazione. Non è possibile raccogliere dati di interazione tra livelli per le applicazioni Windows Store. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). È possibile includere i dati di interazione tra livelli in tutti i metodi di profilatura su un'altra versione di Windows supportata.  
   
  **Creazione guidata sessione di prestazioni**  
   
@@ -49,4 +49,4 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
 3. In Esplora prestazioni selezionare il nodo **Destinazioni** e quindi specificare il progetto, il file eseguibile o il sito Web che si vuole sottoporre a profilatura.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Interazioni tra livelli](../profiling/tier-interactions-view.md)
+ [Interazioni tra livelli (visualizzazione)](../profiling/tier-interactions-view.md)

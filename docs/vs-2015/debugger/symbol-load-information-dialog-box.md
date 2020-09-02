@@ -1,5 +1,5 @@
 ---
-title: Finestra di dialogo informazioni caricamento dei simboli | Microsoft Docs
+title: Finestra di dialogo informazioni sul caricamento simboli | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 321de64442b983dd6da1d23c25d535b389f15bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144586"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Finestra di dialogo Informazioni sul caricamento simboli
@@ -28,7 +28,7 @@ ms.locfileid: "68144586"
 
 La finestra di dialogo **Informazioni sul caricamento simboli** viene visualizzata quando si fa clic con il pulsante destro del mouse nella finestra **Moduli** e si sceglie **Informazioni sul caricamento simboli**.  
   
-## <a name="uielement-list"></a>Elenco UIElement  
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia  
  **Informazioni**  
  Visualizza le directory in cui vengono cercati i file di simboli con estensione PDB in base alle impostazioni di installazione di Visual Studio e alle modifiche apportate alle impostazioni dei simboli nella finestra di dialogo **Opzioni**.  
   

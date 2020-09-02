@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Detach | Microsoft Docs
+title: IDebugProcess2::D etach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8bbbebc76d8301bd4632f95f8832ee657a3bce46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188044"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Scollega debugger da questo processo per tutti i programmi nel processo di scollegamento.  
+Scollega il debugger da questo processo scollegando tutti i programmi nel processo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,10 +37,10 @@ int Detach();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Tutti i programmi e il processo di continuare l'esecuzione, ma non fanno più parte della sessione di debug. Dopo l'operazione di scollegamento è completo e non è più debug verranno inviati gli eventi per questo processo (e i relativi programmi).  
+## <a name="remarks"></a>Osservazioni  
+ Tutti i programmi e il processo continuano a funzionare, ma non fanno più parte della sessione di debug. Al termine dell'operazione di scollegamento, non vengono inviati altri eventi di debug per questo processo (e i relativi programmi).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

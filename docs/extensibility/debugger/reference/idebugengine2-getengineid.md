@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugEngine2::GetEngineID . Documenti Microsoft
+title: 'IDebugEngine2:: GetEngineID | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731087"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
@@ -41,16 +41,16 @@ int GetEngineID(
 
 ## <a name="parameters"></a>Parametri
 `pguidEngine`\
-[fuori] Restituisce il GUID del file DE.
+out Restituisce il GUID dell'oggetto DE.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
-Alcuni esempi di GUID `guidScriptEng`tipici sono , `guidNativeEng`, o `guidSQLEng`. I nuovi motori di debug creeranno il proprio GUID per l'identificazione.
+Alcuni esempi di GUID tipici sono `guidScriptEng` , `guidNativeEng` o `guidSQLEng` . I nuovi motori di debug creeranno il proprio GUID per l'identificazione.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come `CEngine` implementare questo metodo per un oggetto semplice che implementa il [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un `CEngine` oggetto semplice che implementa l'interfaccia [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) .
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {

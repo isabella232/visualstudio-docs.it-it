@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35cce37afc389501386ffec7b75b934e7933bc98
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197798"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
@@ -47,8 +47,8 @@ int GetCount(
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo considera tutti gli elementi di un oggetto matrice come matrice unidimensionale, anche se l'oggetto matrice è multidimensionale. Ad esempio, `pdwElements` in base alla `myarray[3][2][6]`matrice, questo metodo restituisce 36 nel parametro. Usare il  Metodo [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) per recuperare i singoli elementi uno alla volta.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo considera tutti gli elementi di un oggetto matrice come matrice unidimensionale, anche se l'oggetto matrice è multidimensionale. Ad esempio, in base alla matrice `myarray[3][2][6]` , questo metodo restituisce 36 nel `pdwElements` parametro. Usare il metodo [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) per recuperare i singoli elementi uno alla volta.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

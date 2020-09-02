@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cb837c9b3d465d229f64fac08dac02af8d50f5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652011"
 ---
 # <a name="properties-of-decorators"></a>Proprietà degli elementi Decorator
@@ -27,11 +27,11 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 
 ## <a name="expandcollapse-decorator"></a>Espandi/Comprimi elemento Decorator
 
-|proprietà|Descrizione|Impostazione predefinita|
+|Proprietà|Descrizione|Predefinito|
 |--------------|-----------------|-------------|
 |DisplayName|Nome dell'elemento Decorator che verrà visualizzato nella finestra di progettazione generata.|Espandi elemento Decorator compresso|
-|Name|Nome dell'elemento Decorator.|ExpandCollapseDecorator|
-|Note|Note informali associate a questo elemento Decorator.|\<nessuno>|
+|Nome|Nome dell'elemento Decorator.|ExpandCollapseDecorator|
+|Note|Note informali associate a questo elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|
 |OffsetFromLine|Offset dell'elemento Decorator dalla riga rispetto alla posizione predefinita, in pollici. (Solo sui connettori).|0|
@@ -40,12 +40,12 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 
 ## <a name="icon-decorator"></a>Elemento Decorator icona
 
-|proprietà|Descrizione|Impostazione predefinita|
+|Proprietà|Descrizione|Predefinito|
 |--------------|-----------------|-------------|
-|DefaultIcon|Percorso dell'icona o del file di immagine da visualizzare.|\<nessuno>|
+|DefaultIcon|Percorso dell'icona o del file di immagine da visualizzare.|\<none>|
 |DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Elemento Decorator icona|
-|Name|Nome dell'elemento Decorator.|IconDecorator|
-|Note|Note informali associate all'elemento Decorator.|\<nessuno>|
+|Nome|Nome dell'elemento Decorator.|IconDecorator|
+|Note|Note informali associate all'elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|
 |OffsetFromLine|Offset dell'elemento Decorator dalla riga rispetto alla posizione predefinita, in pollici. (Solo sui connettori).|0|
@@ -54,14 +54,14 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|proprietà|Descrizione|Impostazione predefinita|
+|Proprietà|Descrizione|Predefinito|
 |--------------|-----------------|-------------|
-|DefaultText|Testo predefinito da visualizzare.|Label|
-|DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Label|
+|DefaultText|Testo predefinito da visualizzare.|Etichetta|
+|DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Etichetta|
 |FontSize|Dimensioni del carattere per il testo visualizzato nell'elemento Decorator.|8|
-|FontStyle|Stile del carattere per il testo visualizzato nell'elemento Decorator.|Regular|
-|Name|Nome dell'elemento Decorator.|Label|
-|Note|Note informali associate all'elemento Decorator.|\<nessuno>|
+|FontStyle|Stile del carattere per il testo visualizzato nell'elemento Decorator.|Normale|
+|Nome|Nome dell'elemento Decorator.|Etichetta|
+|Note|Note informali associate all'elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|
 |OffsetFromLine|Offset dell'elemento Decorator dalla riga rispetto alla posizione predefinita, in pollici. (Solo sui connettori).|0|

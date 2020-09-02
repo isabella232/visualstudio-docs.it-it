@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281643"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
@@ -144,6 +144,6 @@ Per questa procedura dettagliata, i dati nella `Customers` tabella si trova in u
 
 4. Controllare i valori presenti nel database per verificare che le modifiche siano state salvate.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

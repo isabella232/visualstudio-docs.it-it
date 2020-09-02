@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667967"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Procedura: disabilitare il processo di hosting
@@ -45,4 +45,4 @@ Le chiamate ad alcune API possono essere influenzate quando il processo di hosti
 - Il debug parzialmente attendibile non è disponibile.
 
 ## <a name="see-also"></a>Vedere anche
- [Il debug e il](../debugger/debugging-and-the-hosting-process.md) processo di hosting del processo di hosting [(vshost. exe)](../ide/hosting-process-vshost-exe.md) viene [compilato durante lo sviluppo di applicazioni](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+ [Il debug e il](../debugger/debugging-and-the-hosting-process.md) processo di hosting che [ospita il processo (vshost.exe)](../ide/hosting-process-vshost-exe.md) si [Compila durante lo sviluppo di applicazioni](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

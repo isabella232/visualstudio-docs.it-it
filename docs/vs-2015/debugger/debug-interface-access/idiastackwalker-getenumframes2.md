@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25090ae66d28ebd9eb62f62f14979de1e82c5302
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144726"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un enumeratore di frame dello stack per un tipo di piattaforma specifica.  
+Recupera un enumeratore di stack frame per un tipo di piattaforma specifico.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,19 +38,19 @@ Recupera un enumeratore di frame dello stack per un tipo di piattaforma specific
   
 #### <a name="parameters"></a>Parametri  
  `cpuid`  
- [in] Un valore compreso il [enumerazione CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) enumerazione che specifica il tipo di piattaforma.  
+ in Valore dell'enumerazione [CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) enumerazione, che specifica il tipo di piattaforma.  
   
  `pHelper`  
- [in] L'helper [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) oggetto.  
+ in Oggetto [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) helper.  
   
  `ppEnum`  
- [out] Restituisce un [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) contenente un elenco di oggetti [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) oggetti.  
+ out Restituisce un oggetto [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) contenente un elenco di oggetti [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Per ottenere un elenco di frame dello stack per semplicemente x86 piattaforma, chiamare il [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Per ottenere un elenco di stack frame solo per la piattaforma x86, chiamare il metodo [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   

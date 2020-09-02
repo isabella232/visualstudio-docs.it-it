@@ -9,10 +9,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 42352ba4c5260c4b13a4cb3c6875d3469efcf404
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573383"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Sincronizzare le modifiche tra XCode e Visual Studio
@@ -25,14 +25,14 @@ Il componente Microsoft Visual C++ per lo sviluppo di app per dispositivi mobili
 ## <a name="the-remote-machine-menu"></a>Menu Computer remoto
  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su un progetto di applicazione iOS per visualizzare il menu di scelta rapida. Selezionare **Computer remoto** per visualizzare le opzioni remote disponibili.
 
- ![Voce di menu Computer remoto in Esplora soluzioni](../cross-platform/media/cppmdd-u2-remotemachine-menu.jpg "CPPMDD_U2_RemoteMachine_Menu")
+ ![Voce di menu computer remoto in Esplora soluzioni](../cross-platform/media/cppmdd-u2-remotemachine-menu.jpg "CPPMDD_U2_RemoteMachine_Menu")
 
  Questi comandi consentono di aprire il progetto in XCode, spostare le modifiche locali o l'intero progetto tra Visual Studio e XCode e pulire i file temporanei nel computer remoto.
 
 ### <a name="open-in-xcode"></a>Apri in Xcode
  Per aprire il progetto in XCode da Visual Studio, scegliere il sottomenu **Computer remoto**, quindi scegliere **Apri in Xcode** per aprire il progetto selezionato nel computer remoto associato. Viene usato il server vcremote per aprire XCode nel Mac e passare a una directory temporanea creata nel Mac che contiene una copia del progetto. Verrà visualizzata una finestra di dialogo di Visual Studio che mostra la directory temporanea usata per il progetto. Le azioni eseguite nel computer remoto sono anche indicate nella finestra **Output** di Visual Studio. Per visualizzarle, può essere necessario selezionare **Computer remoto Visual C++** nell'elenco a discesa **Mostra output di**, disponibile nella parte superiore della finestra **Output**.
 
- ![Azioni nel computer remoto visualizzate nella finestra Output.](../cross-platform/media/cppmdd-u2-remotemachine-output.png "CPPMDD_U2_RemoteMachine_Output")
+ ![La finestra output Mostra le azioni del computer remoto.](../cross-platform/media/cppmdd-u2-remotemachine-output.png "CPPMDD_U2_RemoteMachine_Output")
 
  Nel Mac è possibile usare tutti gli strumenti di XCode per modificare il codice, le risorse, gli storyboard e le azioni. In Visual Studio, il progetto di applicazione iOS è contrassegnato come "Aperto in XCode" per indicare che potrebbero essere apportate modifiche nel computer remoto. Dopo aver completato le modifiche, è possibile usare i comandi Pull da computer remoto o Pull incrementale da computer remoto per copiare nuovamente le modifiche nel progetto di Visual Studio.
 

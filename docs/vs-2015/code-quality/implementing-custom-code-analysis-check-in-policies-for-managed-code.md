@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1cf759e01e5f152f2220124c90f145bfbbe3c01d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651580"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementazione di criteri di archiviazione dell'analisi codice personalizzati per codice gestito
@@ -47,7 +47,7 @@ Un criterio di archiviazione dell'analisi del codice specifica un set di regole 
 
 #### <a name="to-create-the-check-in-policy-rule-set"></a>Per creare il set di regole dei criteri di archiviazione
 
-1. Scegliere **nuovo**dal menu **file** , quindi fare clic su **file**.
+1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **File**.
 
 2. Nell'elenco **categorie** fare clic su **generale**.
 
@@ -82,7 +82,7 @@ Un criterio di archiviazione dell'analisi del codice specifica un set di regole 
 
 3. Nell'elenco dei **criteri di archiviazione** fare doppio clic su **analisi codice**e verificare che la casella di controllo **Imponi analisi codice per codice gestito** sia selezionata.
 
-4. Nell'elenco **Esegui questo set di regole** fare clic su **set di regole \<Selezionare dall'> del controllo del codice sorgente**.
+4. Nell'elenco **Esegui questo set di regole** fare clic su **\<Select Rule Set from Source Control>** .
 
 5. Digitare il percorso del file del set di regole dei criteri di archiviazione nel controllo della versione.
 
@@ -112,10 +112,10 @@ Un criterio di archiviazione dell'analisi del codice specifica un set di regole 
 
 4. Se necessario, fare clic sulle opzioni appropriate negli elenchi **configurazione** e **piattaforma** .
 
-5. Per eseguire l'analisi del codice ogni volta che il progetto di codice viene compilato usando la configurazione specificata, selezionare la casella di controllo **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** .
+5. Per eseguire l'analisi del codice ogni volta che il progetto di codice viene compilato utilizzando la configurazione specificata, selezionare la casella di controllo **Abilita analisi codice su compilazione (definizione CODE_ANALYSIS costante)** .
 
 6. Per ignorare il codice nei componenti di altre società, selezionare la casella di controllo non **visualizzare i risultati del codice generato** .
 
-7. Nell'elenco **Esegui questo set di regole** fare clic su **\<Browse... >** .
+7. Nell'elenco **Esegui questo set di regole** fare clic su **\<Browse...>** .
 
 8. Specificare la versione locale del file del set di regole dei criteri di archiviazione.
