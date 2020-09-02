@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41c3fd765977a1f92f5cf125bb64bb7f5b0cd2cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664296"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Tasti di scelta rapida in Blend
@@ -21,7 +21,7 @@ ms.locfileid: "72664296"
 
 Tasti di scelta rapida per i progetti
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Per|Procedere nel modo seguente|
 |----------------|-------------|
 |Creare un nuovo progetto|CTRL+MAIUSC+N|
 |Aprire un progetto o una soluzione (non un sito)|CTRL+MAIUSC+O|
@@ -29,12 +29,12 @@ Tasti di scelta rapida per i progetti
 |Salvare una copia della soluzione o del sito|CTRL+MAIUSC+P|
 |Aggiungere un elemento esistente al progetto|CTRL+I|
 |Aggiungere un riferimento a una DLL (WPF)|ALT+MAIUSC+R|
-|Compilare il progetto|CTRL+MAIUSC+B|
+|Compilare il progetto|CTRL+SHIFT+B|
 |Testare il progetto o il sito|F5|
 
 ## <a name="document-shortcuts"></a>Tasti di scelta rapida per i documenti
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Per|Procedere nel modo seguente|
 |----------------|-------------|
 |Spostarsi tra i documenti aperti|CTRL+TAB|
 |Salvare il documento attivo|CTRL+S|
@@ -47,13 +47,13 @@ Tasti di scelta rapida per i progetti
 |Taglia|CTRL+X|
 |Copia|CTRL+C|
 |Incolla|CTRL+V|
-|Eliminazione|DELETE|
+|Elimina|DELETE|
 |Trovare testo (solo visualizzazione XAML o editor JavaScript)|CTRL+F|
 |Trovare l'occorrenza successiva del testo (solo visualizzazione XAML o editor JavaScript)|F3 o CTRL+H|
 
 ## <a name="object-shortcuts"></a>Tasti di scelta rapida per gli oggetti
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Per|Procedere nel modo seguente|
 |----------------|-------------|
 |Creare un nuovo elemento|CTRL+N|
 |Duplicare un oggetto|Tenere premuto ALT e trascinare l'oggetto|
@@ -94,7 +94,7 @@ Tasti di scelta rapida per i progetti
 
 ## <a name="view-shortcuts"></a>Tasti di scelta rapida per le visualizzazioni
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Per|Procedere nel modo seguente|
 |----------------|-------------|
 |Spostarsi tra le visualizzazioni **Progettazione**, **Codice** e **Doppia visualizzazione**|F11|
 |Ingrandire la tavola da disegno|CTRL+SEGNO DI UGUALE|
@@ -110,7 +110,7 @@ Tasti di scelta rapida per i progetti
 
 ## <a name="workspace-shortcuts"></a>Tasti di scelta rapida per l'area di lavoro
 
-|Per eseguire questa operazione|Seguire questa procedura|
+|Per|Procedere nel modo seguente|
 |----------------|-------------|
 |Spostarsi tra le aree di lavoro **Animazione** e **Progettazione**|CTRL+F11|
 |Visualizzare o nascondere il pannello **Asset**|CTRL+PUNTO|

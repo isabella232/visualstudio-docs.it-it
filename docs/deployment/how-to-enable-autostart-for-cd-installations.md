@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382445"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Procedura: Attivare l'avvio automatico per le installazioni da CD
 Quando si distribuisce un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione per mezzo di supporti rimovibili, ad esempio CD-ROM o DVD-ROM, è possibile abilitare in `AutoStart` modo che l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione venga avviata automaticamente al momento dell'inserimento del supporto.
 
- `AutoStart`può essere abilitato nella pagina **pubblica** di **Progettazione progetti**.
+ `AutoStart` può essere abilitato nella pagina **pubblica** di **Progettazione progetti**.
 
 ### <a name="to-enable-autostart"></a>Per abilitare l'avvio automatico
 
@@ -44,6 +44,6 @@ Quando si distribuisce un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 
      Un file *Autorun. inf* verrà copiato nel percorso di pubblicazione quando viene pubblicata l'applicazione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

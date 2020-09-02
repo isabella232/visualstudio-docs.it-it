@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProcess2::GetServer . Documenti Microsoft
+title: 'IDebugProcess2:: GetServer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f54faf50f5307a1c4c67d07efccd5747918e322
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723894"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
-Ottiene il server in cui è in esecuzione questo processo.
+Ottiene il server in cui è in esecuzione il processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetServer( 
 
 ## <a name="parameters"></a>Parametri
 `ppServer`\
-[fuori] Restituisce un [oggetto IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) che rappresenta il server in cui è in esecuzione il processo.
+out Restituisce un oggetto [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) che rappresenta il server in cui è in esecuzione il processo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Più server possono essere in esecuzione su un singolo computer.
+ È possibile eseguire più di un server in un singolo computer.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

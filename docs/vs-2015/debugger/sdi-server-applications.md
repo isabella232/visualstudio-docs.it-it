@@ -1,5 +1,5 @@
 ---
-title: Applicazioni Server SDI | Microsoft Docs
+title: Applicazioni server SDI | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148157"
 ---
 # <a name="sdi-server-applications"></a>Applicazioni server SDI
@@ -36,4 +36,4 @@ Se si esegue il debug di un'applicazione server SDI, è necessario specificare `
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)   
- [Procedura: Eseguire il debug di server COM](../debugger/how-to-debug-com-servers.md)
+ [Procedura: eseguire il debug di server COM](../debugger/how-to-debug-com-servers.md)

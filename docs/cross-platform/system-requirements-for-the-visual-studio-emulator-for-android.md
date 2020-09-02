@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272049"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator per Android
@@ -52,9 +52,9 @@ Requisiti di Hyper-V
 
 - Nel BIOS, devono essere supportate le funzionalità seguenti:
 
-  - Virtualizzazione assistita da hardware
+  - Virtualizzazione basata su hardware
 
-  - Conversione indirizzi di secondo livello
+  - Conversione indirizzi di secondo livello (SLAT)
 
   - Protezione esecuzione programmi basata su hardware
 
@@ -97,9 +97,9 @@ Requisiti di Hyper-V nel BIOS
 
 Il BIOS del computer deve supportare i requisiti seguenti e tali requisiti devono essere abilitati:
 
-- Virtualizzazione assistita da hardware
+- Virtualizzazione basata su hardware
 
-- Conversione indirizzi di secondo livello
+- Conversione indirizzi di secondo livello (SLAT)
 
 - Protezione esecuzione programmi basata su hardware
 
@@ -110,7 +110,7 @@ Se le impostazioni del computer e del BIOS sono già configurate per supportare 
 |Requisito|Come controllare e abilitare questo requisito|
 |-----------------|----------------------------------------------|
 |Hyper-V deve essere installato|Seguire le stesse istruzioni usate per [abilitare Hyper-V per l'emulatore di Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Controllare lo stato del servizio **Hyper-V Virtual Machine Management** nello snap-in Servizi.|
-|Hyper-V deve essere in esecuzione.|Per altre informazioni sulla gestione dei servizi, vedere gli argomenti seguenti:<br /><br /> -   [Avviare, arrestare, sospendere, riprendere o riavviare un servizio](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurare la modalità di avvio di un servizioConfigure how a service is started](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
+|Hyper-V deve essere in esecuzione.|Per altre informazioni sulla gestione dei servizi, vedere gli argomenti seguenti:<br /><br /> -   [Avviare, arrestare, sospendere, riprendere o riavviare un servizio](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurare la modalità di avvio di un servizio](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  È necessario essere un membro del gruppo di amministratori di Hyper-V locali.
 
@@ -121,12 +121,12 @@ Se le impostazioni del computer e del BIOS sono già configurate per supportare 
 > [!IMPORTANT]
 > Dopo aver partecipato al gruppo, disconnettersi o riavviare il computer per rendere effettiva la modifica.
 
- ![Aggiunta al gruppo di sicurezza Amministratori di Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Aggiunta al gruppo di sicurezza Amministratori Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Per aggiungersi manualmente a un gruppo, aprire lo snap-in Utenti e gruppi locali.
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>L'esecuzione dell'emulatore da un VHD di avvio non è supportata
- Se si tenta di eseguire un'applicazione in Visual Studio Emulator per Android durante l'esecuzione di Windows da un VHD di avvio, l'emulatore in genere richiede alcuni minuti per l'avvio o non viene avviato. Se l'emulatore non viene avviato, viene visualizzato il seguente messaggio: Distribuzione dell'applicazione non riuscita. Riprovare.
+ Se si tenta di eseguire un'applicazione in Visual Studio Emulator per Android durante l'esecuzione di Windows da un VHD di avvio, l'emulatore in genere richiede alcuni minuti per l'avvio o non viene avviato. Se l'emulatore non viene avviato, viene visualizzato il seguente messaggio: Distribuzione dell'applicazione non riuscita. Riprova.
 
  Questa configurazione non è supportata. Per informazioni sui problemi correlati, vedere [Risoluzione dei problemi di Visual Studio Emulatore per Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 

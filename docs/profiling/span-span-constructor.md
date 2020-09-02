@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979822"
 ---
 # <a name="spanspan-constructor"></a>Costruttore span::span
@@ -70,4 +70,4 @@ span(
 
 ## <a name="see-also"></a>Vedere anche
 
-- [span (classe)](../profiling/span-class.md)
+- [Classe span](../profiling/span-class.md)

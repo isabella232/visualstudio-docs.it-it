@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903552"
 ---
 # <a name="debug-tasks"></a>Attività di debug
@@ -45,4 +45,4 @@ Per eseguire il debug di un programma, è necessario avviarlo ed è necessario c
  [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md) Spiega in che modo il DE opera simultaneamente nei contesti di codice, documentazione e valutazione delle espressioni. Viene descritto, per ognuno dei tre contesti, la posizione, la posizione o la valutazione pertinente.
 
 ## <a name="see-also"></a>Vedere anche
- [Attività iniziali](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
+ [Operazioni preliminari](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

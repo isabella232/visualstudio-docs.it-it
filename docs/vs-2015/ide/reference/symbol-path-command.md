@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651009"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
@@ -54,4 +54,4 @@ Debug.SymbolPath
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Comandi della finestra di comando ](../../ide/reference/command-window.md) [Visual Studio](../../ide/reference/visual-studio-commands.md)
+ [Command Window](../../ide/reference/command-window.md) [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md) per la finestra di comando

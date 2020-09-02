@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Usare un visualizzatore | Microsoft Docs'
+title: 'Procedura: usare un visualizzatore | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -24,23 +24,23 @@ caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446428"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64778370"
 ---
-# <a name="how-to-use-a-visualizer"></a>Procedura: Usare un visualizzatore
-È possibile usare un visualizzatore per visualizzare il contenuto di una variabile o di un oggetto in modo significativo per il tipo di dati. È possibile utilizzare i visualizzatori da **suggerimenti dati**, un **Watch** finestra, il **Auto** finestra o il **variabili locali** finestra.  
+# <a name="how-to-use-a-visualizer"></a>Procedura: utilizzare un visualizzatore
+È possibile usare un visualizzatore per visualizzare il contenuto di una variabile o di un oggetto in modo significativo per il tipo di dati. È possibile usare i visualizzatori da **suggerimenti**dati, una finestra **espressioni di controllo** , la finestra **auto** o la finestra **variabili locali** .  
   
  I visualizzatori non sono supportati in Compact Framework.  
   
 > [!NOTE]
-> Nelle **Store** le app, solo il testo standard, i visualizzatori HTML, XML e JSON sono supportati. Non sono supportati i visualizzatori personalizzati (creati dall'utente).  
+> Nelle app dello **Store** sono supportati solo i visualizzatori di testo, HTML, XML e JSON standard. Non sono supportati i visualizzatori personalizzati (creati dall'utente).  
   
 ### <a name="to-open-a-visualizer"></a>Per aprire un visualizzatore  
   
-1. Scegliere l'icona della lente di ingrandimento visualizzata accanto al nome di una variabile in **suggerimenti dati**, un **Watch** finestra o nella **Auto**, **variabili locali**, o **Controllo immediato** finestra.  
+1. Fare clic sull'icona della lente di ingrandimento visualizzata accanto a un nome di variabile in **suggerimenti**dati, in una finestra **espressioni di controllo** o nella finestra **auto**, **variabili locali**o **controllo immediato** .  
   
      Verrà visualizzato un elenco di visualizzatori.  
   
@@ -56,10 +56,10 @@ ms.locfileid: "63446428"
   
      -oppure-  
   
-     `My Documents\Visual Studio 2010\Visualizers` *Visual Studio Version* `\Visualizers`  
+     `My Documents\Visual Studio 2010\Visualizers`*Versione di Visual Studio*`\Visualizers`  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
- [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
- [Procedura: Scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
- [Visualizzare i valori di dati nei suggerimenti dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+ [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
+ [Procedura: scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
+ [Visualizzare i valori dei dati nei suggerimenti dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

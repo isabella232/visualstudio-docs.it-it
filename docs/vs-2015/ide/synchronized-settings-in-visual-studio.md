@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646823"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Impostazioni sincronizzate in Visual Studio
@@ -40,11 +40,11 @@ Per impostazione predefinita, quando si usa lo stesso account di personalizzazio
 
   - Tutte le impostazioni nella pagina delle opzioni **Ambiente**, **Avvio**
 
-  - Tutte le impostazioni nelle pagine delle opzioni **Editor di testo**
+  - Tutte le impostazioni nelle pagine delle opzioni dell' **editor di testo**
 
 - Tutte le impostazioni nelle pagine delle opzioni di XAML Designer
 
-- Alias di comandi definiti dall'utente. Per altre informazioni su come definire gli alias di comandi, vedere [Alias di comandi di Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+- Alias di comandi definiti dall'utente. Per altre informazioni su come definire gli alias di comando, vedere [alias dei comandi di Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
 - I layout delle finestre definite dall'utente nella pagina **Finestra &#124; Gestisci layout finestra**
 

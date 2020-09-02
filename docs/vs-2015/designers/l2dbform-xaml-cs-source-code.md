@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f783161865092f714955b65e6f2fa4791741cbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664281"
 ---
-# <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
+# <a name="l2dbformxamlcs-source-code"></a>Codice sorgente di L2DBForm.xaml.cs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo argomento vengono forniti il contenuto e la descrizione del codice sorgente C# del file L2DBForm.xaml.cs. La classe parziale L2XDBForm contenuta in questo file può essere divisa in tre sezioni logiche: membri di dati e gestori degli eventi Click `OnRemove` e `OnAddBook`.
 
-## <a name="data-members"></a>Membri di dati
+## <a name="data-members"></a>Membri dei dati
  Per associare questa classe alle risorse della finestra usate in L2DBForm.xaml, vengono usati due membri di dati privati.
 
 - La variabile dello spazio dei nomi `myBooks` viene inizializzata in `"http://www.mybooks.com"`.
@@ -134,7 +134,7 @@ namespace LinqToXmlDataBinding {
 
 ```
 
-### <a name="comments"></a>Comments
+### <a name="comments"></a>Commenti
  Per il codice sorgente XAML associato per questi gestori, vedere [Codice sorgente di L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md).
 
 ## <a name="see-also"></a>Vedere anche
