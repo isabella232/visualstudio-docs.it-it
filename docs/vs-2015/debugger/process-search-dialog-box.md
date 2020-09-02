@@ -1,5 +1,5 @@
 ---
-title: Finestra di dialogo ricerca elabora | Microsoft Docs
+title: Finestra di dialogo Cerca processo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,43 +12,43 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae6321cdc8d94b1f1344f36a1332aa0eee0bdb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198123"
 ---
 # <a name="process-search-dialog-box"></a>Finestra di dialogo Ricerca processi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un processo specifico nel [visualizzazione processi](../debugger/processes-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un **processi** finestra di visualizzazione. Quindi scegliere **Trova processo** dalle **ricerca** menu.  
+Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un processo specifico nella [visualizzazione processi](../debugger/processes-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su una finestra visualizzazione **processi** . Scegliere quindi **trova processo** dal menu **Cerca** .  
   
- Sono disponibili le seguenti impostazioni:  
+ Sono disponibili le impostazioni seguenti:  
   
  **Processo**  
- L'ID di processo per la ricerca.  
+ ID del processo da cercare.  
   
  **Modulo**  
- La stringa del modulo da cercare.  
+ Stringa del modulo da cercare.  
   
  **Direzione di ricerca verso l'alto o verso il basso**  
- La direzione iniziale della ricerca.  
+ Direzione iniziale della ricerca.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [La ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ [Ricerca di un processo nella visualizzazione processi](../debugger/how-to-search-for-a-process-in-processes-view.md)  
  Viene illustrato come trovare un processo specifico nella visualizzazione processi.  
   
  [Visualizzazione processi](../debugger/processes-view.md)  
- Consente di visualizzare una visualizzazione struttura ad albero dei processi attivi.  
+ Consente di visualizzare una visualizzazione albero dei processi attivi.  
   
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
+ Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.  
   
- [Uso di Spy++](../debugger/using-spy-increment.md)  
+ [Utilizzo di Spy++](../debugger/using-spy-increment.md)  
  Introduce lo strumento Spy + + e spiega come può essere usato.  
   
  [Finestra di dialogo Proprietà processo](../debugger/process-properties-dialog-box.md)  
- Consente di visualizzare le proprietà di un processo selezionato nella visualizzazione processi.  
+ Utilizzato per visualizzare le proprietà di un processo selezionato nella visualizzazione processi.  
   
- [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+ [Riferimenti per Spy++](../debugger/spy-increment-reference.md)  
+ Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.

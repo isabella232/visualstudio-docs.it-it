@@ -11,30 +11,30 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75401eb0d5acd5d363d05aec57909eef5b9855e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144306"
 ---
 # <a name="web-site-support-attributes"></a>Attributi di supporto per siti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Progetto di sito Web può essere esteso per fornire il supporto per il Web, linguaggi di programmazione. Il linguaggio deve eseguire la registrazione con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] in modo che i modelli di progetto possono essere visualizzati nei **nuovo sito Web** finestra di dialogo quando viene selezionata la lingua.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Il progetto di sito Web può essere esteso per fornire supporto per i linguaggi di programmazione Web. È necessario che il linguaggio si registri [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] in modo che i modelli di progetto possano essere visualizzati nella finestra di dialogo **nuovo sito Web** quando la lingua è selezionata.  
   
- L'esempio di IronPython Studio include supporto per siti web. È possibile trovarlo con le [esempi di VSSDK](../../misc/vssdk-samples.md). Include le seguenti classi di attributi per la registrazione di IronPython come linguaggio di codebehind per nuovi progetti Web.  
+ L'esempio IronPython Studio include il supporto per siti Web. È possibile trovarlo con gli [esempi di VSSDK](../../misc/vssdk-samples.md). Sono incluse le classi Attribute seguenti per registrare IronPython come linguaggio codebehind per i nuovi progetti Web.  
   
 ## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute  
- Questo attributo viene inserito nel progetto Java. La lingua viene aggiunto all'elenco dei linguaggi di programmazione Web di **Language** nell'elenco il **nuovo sito Web** nella finestra di dialogo. Ad esempio, di seguito aggiunge IronPython all'elenco:  
+ Questo attributo viene inserito nel progetto di linguaggio. Consente di aggiungere la lingua all'elenco dei linguaggi di programmazione Web nell'elenco **lingua** della finestra di dialogo **nuovo sito Web** . Il codice seguente, ad esempio, aggiunge IronPython all'elenco:  
   
 ```  
 [WebSiteProject("IronPython", "Iron Python")]public class PythonProjectPackage : ProjectPackage  
 ```  
   
- Questo attributo imposta inoltre il percorso di modelli in modo che punti alla cartella modelli. Per altre informazioni sulla posizione della cartella modelli, vedere [modelli di supporto di siti Web](../../extensibility/internals/web-site-support-templates.md).  
+ Questo attributo imposta anche il percorso dei modelli in modo che punti alla cartella Templates. Per ulteriori informazioni sul percorso della cartella dei modelli, vedere [modelli di supporto per siti Web](../../extensibility/internals/web-site-support-templates.md).  
   
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute  
- Questo attributo viene inserito nel progetto Java. Consente al progetto sito Web di annidare un tipo di file (correlato) sotto un altro tipo di file (primario) nei **Esplora soluzioni**.  
+ Questo attributo viene inserito nel progetto di linguaggio. Consente al progetto di sito Web di annidare un tipo di file (correlato) in un altro tipo di file (primario) nell' **Esplora soluzioni**.  
   
  Ad esempio:  
   
@@ -42,10 +42,10 @@ ms.locfileid: "68144306"
 [WebSiteProjectRelatedFiles("aspx", "py")]public class PythonProjectPackage : ProjectPackage  
 ```  
   
- Specifica che un file codebehind di IronPython è correlato a un file aspx. Quando viene creata una nuova pagina Web. aspx in una soluzione di sito IronPython Web, un nuovo file di origine con estensione py viene generato e visualizzato come nodo figlio della pagina aspx.  
+ Specifica che un file codebehind IronPython è correlato a un file aspx. Quando viene creata una nuova pagina Web aspx in una soluzione di sito Web IronPython, viene generato un nuovo file di origine con estensione py e viene visualizzato come nodo figlio della pagina aspx.  
   
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute  
- Questo attributo viene inserito nel pacchetto del progetto di linguaggio. Seleziona il provider di Intellisense per la lingua.  
+ Questo attributo viene inserito nel pacchetto del progetto di linguaggio. Consente di selezionare il provider IntelliSense per la lingua.  
   
  Ad esempio:  
   
@@ -53,9 +53,9 @@ ms.locfileid: "68144306"
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]public class PythonPackage : Package, IOleComponent  
 ```  
   
- Specifica che un'istanza di PythonIntellisenseProvider, che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>, deve essere creata su richiesta per fornire servizi di linguaggio.  
+ Specifica che un'istanza di PythonIntellisenseProvider, che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> , deve essere creata su richiesta per fornire i servizi di linguaggio.  
   
- L'implementazione IVsIntellisenseProject gestisce riferimenti e chiama il compilatore di linguaggio quando una pagina Web con il codice è richiesto ma non viene memorizzato nella cache.  
+ L'implementazione di IVsIntellisenseProject gestisce i riferimenti e chiama il compilatore del linguaggio quando viene richiesta una pagina Web con codice ma non memorizzata nella cache.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Supporto per siti Web](../../extensibility/internals/web-site-support.md)

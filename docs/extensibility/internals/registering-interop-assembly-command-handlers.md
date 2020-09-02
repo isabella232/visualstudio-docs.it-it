@@ -1,5 +1,5 @@
 ---
-title: Registrazione dei gestori di comandi dell'assembly di interoperabilità Documenti Microsoft
+title: Registrazione di gestori di comandi di assembly di interoperabilità | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705866"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrazione dei gestori dei comandi negli assembly di interoperabilità
-Un pacchetto VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve registrarsi con in modo che l'ambiente di sviluppo integrato (IDE) instrada correttamente i comandi.
+Un pacchetto VSPackage deve registrarsi in in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modo che il Integrated Development Environment (IDE) instrada correttamente i comandi.
 
- Il Registro di sistema può essere aggiornato mediante la modifica manuale o utilizzando un file di registrazione (RGs). Per altre informazioni, vedere [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
+ Il registro di sistema può essere aggiornato tramite la modifica manuale o tramite un file di registrazione (con estensione RGS). Per altre informazioni, vedere [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
  Il Framework di pacchetto gestito (MPF) fornisce questa funzionalità tramite la <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> classe.
 
-- [Le](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) risorse di riferimento per il formato della tabella dei comandi si trovano nelle DLL dell'interfaccia utente satellite non gestite.
+- Le risorse di riferimento per il [formato della tabella comandi](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) si trovano in DLL dell'interfaccia utente satellite non gestite.
 
-## <a name="command-handler-registration-of-a-vspackage"></a>Registrazione del gestore di comandi di un pacchetto VSPackageCommand Handler Registration of a VSPackage
- Un VSPackage che funge da gestore per i comandi basati sull'interfaccia utente richiede una voce del Registro di sistema denominata in base al pacchetto VSPackage `GUID`. Questa voce del Registro di sistema specifica il percorso del file di risorse dell'interfaccia utente del pacchetto VSPackage e la risorsa di menu all'interno di tale file. La voce del Registro di sistema stessa\\si trova nella cartella HKEY_LOCAL_MACHINE, Software, Microsoft VisualStudio*\<Version>* Menus, dove [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] * \<Versione>* è la versione di , ad esempio 9.0.
+## <a name="command-handler-registration-of-a-vspackage"></a>Registrazione del gestore comandi di un pacchetto VSPackage
+ Un pacchetto VSPackage che funge da gestore per i comandi basati sull'interfaccia utente richiede una voce del registro di sistema denominata dopo il pacchetto VSPackage `GUID` . Questa voce del registro di sistema specifica il percorso del file di risorse dell'interfaccia utente del pacchetto VSPackage e della risorsa di menu all'interno del file. La voce del registro di sistema si trova in HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, dove *\<Version>* è la versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , ad esempio 9,0.
 
 > [!NOTE]
-> Quando>inizializzata la\\ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell, è possibile eseguire l'override del percorso di radice di HKEY_LOCAL_MACHINE , SOFTWARE , Microsoft VisualStudio*\<Version>.* Per ulteriori informazioni sul percorso radice, vedere [Installazione di pacchetti VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> Il percorso radice di HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* può essere sottoposto a override con una radice alternativa quando la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell viene inizializzata. Per ulteriori informazioni sul percorso radice, vedere [installazione di VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
-### <a name="the-ctmenu-resource-registry-entry"></a>Voce del Registro di sistema delle risorse CTMENUThe CTMENU Resource Registry Entry
- La struttura della voce del Registro di sistema è:
+### <a name="the-ctmenu-resource-registry-entry"></a>Voce del registro di sistema della risorsa CTMENU
+ La struttura della voce del registro di sistema è:
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
@@ -42,22 +42,22 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>
 ```
 
- \<*GUID*> `GUID` è il del pacchetto VSPackage nel formato XXXXXX-XXXX-XXXX-XXXX-XXXX-XXXXXXXXX.
+ \<*GUID*> è del `GUID` pacchetto VSPackage nel formato {xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx}.
 
- *Il>Informazioni sulle risorse è costituito da tre elementi separati da virgole. \<* Questi elementi sono, nell'ordine:
+ *\<Resource Information>* è costituito da tre elementi separati da virgole. Questi elementi sono, nell'ordine:
 
- \<*Percorso della DLL* \<di risorse>, *ID risorsa menu*>, \<Versione *menu*>
+ \<*Path to Resource DLL*>, \<*Menu Resource ID*>, \<*Menu Version*>
 
- Nella tabella seguente vengono \<descritti i campi della> *Informazioni sulle risorse.*
+ Nella tabella seguente vengono descritti i campi di \<*Resource Information*> .
 
 | Elemento | Descrizione |
 |---------------------------| - |
-| \<*Percorso della DLL delle risorse*> | Questo è il percorso completo della DLL di risorse che contiene la risorsa di menu o questo viene lasciato vuoto, che indica che la DLL di risorse del pacchetto VSPackage deve essere utilizzata (come specificato nella sottochiave Packages in cui è registrato il pacchetto VSPackage stesso).<br /><br /> È consuetudine lasciare vuoto questo campo. |
-| \<*ID risorsa menu*> | Si tratta dell'ID `CTMENU` risorsa della risorsa che contiene tutti gli elementi dell'interfaccia utente per il pacchetto VSPackage come compilato da un file [con estensione vsct.](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) |
-| \<*Versione menu*> | Si tratta di un numero `CTMENU` utilizzato come versione per la risorsa. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]utilizza questo valore per determinare se è necessario `CTMENU` riunire il `CTMENU` contenuto della risorsa con la cache di tutte le risorse. Una rimerge viene attivata eseguendo il comando devenv setup.<br /><br /> Questo valore deve inizialmente essere impostato su 1 `CTMENU` e incrementato dopo ogni modifica nella risorsa e prima che si verifichi nuovamente il merge. |
+| \<*Path to Resource DLL*> | Si tratta del percorso completo della DLL di risorse che contiene la risorsa di menu o viene lasciato vuoto, a indicare che è necessario usare la DLL di risorse del pacchetto VSPackage (come specificato nella sottochiave pacchetti in cui è registrato il pacchetto VSPackage).<br /><br /> È personalizzato per lasciare vuoto questo campo. |
+| \<*Menu Resource ID*> | Si tratta dell'ID risorsa della `CTMENU` risorsa che contiene tutti gli elementi dell'interfaccia utente per il pacchetto VSPackage compilato da un file con [estensione vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) . |
+| \<*Menu Version*> | Si tratta di un numero usato come versione per la `CTMENU` risorsa. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Usa questo valore per determinare se è necessario riunire il contenuto della `CTMENU` risorsa con la relativa cache di tutte le `CTMENU` risorse. Viene attivata una riunione eseguendo il comando di configurazione devenv.<br /><br /> Inizialmente, questo valore deve essere impostato su 1 e incrementato dopo ogni modifica nella `CTMENU` risorsa e prima che si verifichi il merge. |
 
 ### <a name="example"></a>Esempio
- Di seguito è riportato un esempio di un paio di voci di risorse:Here is an example of a couple of resource entries:
+ Di seguito è riportato un esempio di un paio di voci di risorse:
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\

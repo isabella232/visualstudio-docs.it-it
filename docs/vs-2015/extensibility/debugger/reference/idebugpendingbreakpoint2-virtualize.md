@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: virtualizzate | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caf4277afc63d403cc3d02c4d79b9e5f2b1b8d26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143883"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Alterna lo stato virtualizzato di questo oggetto in sospeso punto di interruzione. Quando un punto di interruzione in sospeso è virtualizzato, il motore di debug tenterà di associarla ad ogni caricamento nuovo codice nel programma.  
+Consente di abilitare o disabilitare lo stato virtualizzato del punto di interruzione in sospeso. Quando un punto di interruzione in sospeso viene virtualizzato, il motore di debug tenterà di associarlo ogni volta che viene caricato il nuovo codice nel programma.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,16 +41,16 @@ int Virtualize( 
   
 #### <a name="parameters"></a>Parametri  
  `fVirtualize`  
- [in] Impostare su diverso da zero (`TRUE`) per virtualizzare il punto di interruzione in sospeso o a zero (`FALSE`) per disattivare la virtualizzazione.  
+ in Impostare su un valore diverso da zero ( `TRUE` ) per virtualizzare il punto di interruzione in sospeso o su zero ( `FALSE` ) per disattivare la virtualizzazione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stata eliminata.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.  
   
-## <a name="remarks"></a>Note  
- Un punto di interruzione virtualizzato è associato ogni volta che viene caricato codice.  
+## <a name="remarks"></a>Osservazioni  
+ Un punto di interruzione virtualizzato viene associato ogni volta che viene caricato il codice.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CPendingBreakpoint` oggetto che espone il [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un `CPendingBreakpoint` oggetto semplice che espone l'interfaccia [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugClassField::EnumBaseClasses . Documenti Microsoft
+title: 'IDebugClassField:: EnumBaseClasses | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 12317c549050be31ac9e19bc7b3d8a6683f743d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734478"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
-Crea un enumeratore per le classi base di questa classe.
+Crea un enumeratore per le classi di base di questa classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ int EnumBaseClasses(
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
 
-[fuori] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che rappresenta l'elenco di classi base. Restituisce un valore null se non sono presenti classi base.
+out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) che rappresenta l'elenco di classi di base. Restituisce un valore null se non sono disponibili classi di base.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK, restituisce S_SH_NO_BASE_CLASSES se non sono presenti classi base (e il `ppEnum` parametro è impostato su un valore null); in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Le classi base nell'oggetto enumeratore vengono specificate in ordine della classe base più immediata (o più derivata) alla classe base più remota. Ad esempio, date le classi c:
+ Le classi base nell'oggetto enumeratore vengono specificate in ordine della classe di base più immediata (o più derivata) per la classe di base più remota. Ad esempio, date le classi C++:
 
 ```
 class Root { }
@@ -57,7 +57,7 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }
 ```
 
- L'enumerazione restituirà le `Level2`classi `Level1` `Root`base nell'ordine , , .
+ L'enumerazione restituirà le classi base nell'ordine `Level2` , `Level1` , `Root` .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

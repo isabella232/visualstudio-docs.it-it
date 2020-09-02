@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di RDT_ReadLock Documenti Microsoft
+title: Utilizzo RDT_ReadLock | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,30 +14,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fb897fab61e1e14b52863b5853748c685200d5ba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705921"
 ---
 # <a name="rdt_readlock-usage"></a>Uso di RDT_ReadLock
 
-[_VSRDTFLAGS. RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) è un flag che fornisce la logica per il blocco di un documento nella tabella documenti in esecuzione (RDT), ovvero l'elenco di tutti i documenti attualmente aperti nell'IDE di Visual Studio. Questo flag determina quando i documenti vengono aperti e se un documento è visibile nell'interfaccia utente o mantenuto invisibile in memoria.
+[_VSRDTFLAGS. RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) è un flag che fornisce la logica per il blocco di un documento nella tabella documenti in esecuzione (RDT), che è l'elenco di tutti i documenti attualmente aperti nell'IDE di Visual Studio. Questo flag determina quando i documenti vengono aperti e se un documento è visibile nell'interfaccia utente o viene mantenuto in memoria.
 
-In genere, si utilizza [no di _VSRDTFLAGS. RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) in caso di una delle seguenti condizioni:
+In genere si usa [_VSRDTFLAGS. RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) quando si verifica una delle condizioni seguenti:
 
-- Si desidera aprire un documento in modo invisibile e di sola <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> lettura, ma non è ancora stabilito che dovrebbe essere il proprietario.
+- Si vuole aprire un documento in modo invisibile e di sola lettura, ma non è ancora stato stabilito che <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> dovrebbe essere il proprietario.
 
-- Si desidera che all'utente venga richiesto di salvare un documento che è stato aperto in modo invisibilmente prima che l'utente lo visualizzasse nell'interfaccia utente e quindi tentasse di chiuderlo.
+- Si desidera che all'utente venga richiesto di salvare un documento che è stato aperto in modo invisibile prima che l'utente lo visualizzasse nell'interfaccia utente e quindi tentasse di chiuderlo.
 
-## <a name="how-to-manage-visible-and-invisible-documents"></a>Come gestire i documenti visibili e invisibili
+## <a name="how-to-manage-visible-and-invisible-documents"></a>Come gestire documenti visibili e invisibili
 
-Quando un utente apre un documento <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> nell'interfaccia utente, è necessario stabilire un proprietario per il documento e [_VSRDTFLAGS. RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) flag deve essere impostato. Se <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> non è possibile stabilire alcun proprietario, il documento non verrà salvato quando l'utente fa clic su **Salva tutto** o chiude l'IDE. Ciò significa che se un documento è aperto in modo invisibilmente dove viene modificato in memoria e all'utente viene richiesto di salvare il documento all'arresto o al salvataggio se si seleziona **Salva tutto,** non è possibile utilizzare un `RDT_ReadLock` file. Al contrario, `RDT_EditLock` è necessario <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> utilizzare un e registrare un quando un [__VSREGDOCLOCKHOLDER. RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) bandiera.
+Quando un utente apre un documento nell'interfaccia utente, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> deve essere stabilito un proprietario per il documento e un [_VSRDTFLAGS. ](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) È necessario impostare RDT_EditLock flag. Se non <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> è possibile stabilire alcun proprietario, il documento non verrà salvato quando l'utente fa clic su **Salva tutto** o chiude l'IDE. Ciò significa che se un documento è aperto in modo invisibile quando viene modificato in memoria e all'utente viene richiesto di salvare il documento in caso di arresto o di salvataggio se si sceglie **Salva tutto** , `RDT_ReadLock` non sarà possibile utilizzare un oggetto. Al contrario, è necessario usare un `RDT_EditLock` e registrare un <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> quando un [__VSREGDOCLOCKHOLDER. Flag RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) .
 
-## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLock e modifica del documento
+## <a name="rdt_editlock-and-document-modification"></a>Modifica di RDT_EditLock e documenti
 
-Il flag precedente menzionato indica che l'apertura `RDT_EditLock` invisibile del documento produrrà la sua quando il documento viene aperto dall'utente in un **visibile DocumentWindow**. In questo caso, all'utente viene visualizzato un prompt **di salvataggio** quando il visibile **DocumentWindow** viene chiuso. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel`le implementazioni <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> che utilizzano il `RDT_ReadLock` servizio funzionano inizialmente quando viene eseguito solo un oggetto (ad esempio, quando il documento viene aperto in modo invisibile per analizzare le informazioni). Successivamente, se il documento deve essere modificato, il blocco viene aggiornato a un **RDT_EditLock**debole . Se l'utente apre quindi il documento `CodeModel`in un `RDT_EditLock` oggetto **visibile DocumentWindow**, viene rilasciato il debole 's weak.
+Il flag precedente indicato indica che l'apertura invisibile del documento verrà restituita `RDT_EditLock` quando il documento viene aperto dall'utente in un **DocumentWindow**visibile. Quando si verifica questo problema, all'utente viene visualizzata una richiesta di **salvataggio** quando il **DocumentWindow** visibile viene chiuso. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` le implementazioni che utilizzano il <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> servizio funzionano inizialmente quando viene eseguito solo un oggetto `RDT_ReadLock` , ad esempio quando il documento viene aperto in modo invisibile per analizzare le informazioni. In seguito, se il documento deve essere modificato, il blocco viene aggiornato a un **RDT_EditLock**vulnerabile. Se l'utente apre il documento in un **DocumentWindow**visibile, `CodeModel` viene rilasciato l'oggetto vulnerabile `RDT_EditLock` .
 
-Se l'utente chiude quindi **il DocumentWindow** e sceglie **No** quando viene `CodeModel` richiesto di salvare il documento aperto, l'implementazione elimina tutte le informazioni nel documento e riapre il documento dal disco in modo invisibilmente la volta successiva che sono necessarie ulteriori informazioni per il documento. La sottigliezza di questo comportamento è un'istanza in cui l'utente apre il **DocumentWindow** del documento aperto invisibile, lo modifica, lo chiude e quindi sceglie **No** quando viene richiesto di salvare il documento. In questo caso, se `RDT_ReadLock`il documento ha un oggetto , il documento non verrà effettivamente chiuso e il documento modificato rimarrà aperto in modo invitante in memoria, anche se l'utente ha scelto di non salvare il documento.
+Se l'utente chiude il **DocumentWindow** e sceglie **No** quando viene richiesto di salvare il documento aperto, l' `CodeModel` implementazione Elimina tutte le informazioni nel documento e riapre il documento dal disco in modo invisibile alla successiva richiesta di ulteriori informazioni per il documento. La sottigliezza di questo comportamento è un'istanza in cui l'utente apre il **DocumentWindow** del documento invisibile aperto, lo modifica, lo chiude e quindi sceglie **No** quando viene richiesto di salvare il documento. In questo caso, se il documento dispone di un `RDT_ReadLock` , il documento non verrà effettivamente chiuso e il documento modificato rimarrà aperto in modo invisibile in memoria, anche se l'utente ha scelto di non salvare il documento.
 
-Se l'apertura invisibile del `RDT_EditLock`documento utilizza un debole , quindi restituisce il suo blocco quando l'utente apre il documento visibilmente e non vengono mantenuti altri blocchi. Quando l'utente chiude il **DocumentWindow** e sceglie **No** quando viene richiesto di salvare il documento, quindi il documento deve essere chiuso dalla memoria. Ciò significa che il client invisibile deve restare in ascolto degli eventi RDT per tenere traccia di questa occorrenza. La volta successiva che il documento è necessario, il documento deve essere riaperto.
+Se l'apertura invisibile del documento utilizza un oggetto debole `RDT_EditLock` , viene restituito il blocco quando l'utente apre il documento in modo visibile e non vengono mantenuti altri blocchi. Quando l'utente chiude il **DocumentWindow** e sceglie **No** quando viene richiesto di salvare il documento, il documento deve essere chiuso dalla memoria. Ciò significa che il client invisibile deve restare in ascolto degli eventi di RDT per tenere traccia dell'occorrenza. La volta successiva che il documento è necessario, il documento deve essere riaperto.

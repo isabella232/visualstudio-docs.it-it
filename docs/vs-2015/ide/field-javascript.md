@@ -1,5 +1,5 @@
 ---
-title: '&lt;field &gt; (JavaScript) | Microsoft Docs'
+title: '&lt;Field &gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3fc786e4d99d1eaff4a8b152ea9496ce8400ff1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663863"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;field&gt; (JavaScript)
@@ -38,23 +38,23 @@ Specifica le informazioni sulla documentazione, inclusa una descrizione, per un 
 ```
 
 #### <a name="parameters"></a>Parametri
- `name` il nome del campo o del membro. Quando l'elemento `<field>` viene usato in una funzione del costruttore, `name` è obbligatorio e definisce il membro a cui viene applicato il tag. Quando l'elemento `<field>` annota direttamente un campo, questo attributo viene ignorato e il nome usato da Visual Studio è il nome del campo effettivo nel codice sorgente.
+ `name` Nome del campo o del membro. Quando l' `<field>` elemento viene utilizzato in una funzione del costruttore, `name` è obbligatorio e definisce il membro a cui viene applicato il tag. Quando l' `<field>` elemento annota direttamente un campo, questo attributo viene ignorato e il nome usato da Visual Studio è il nome del campo effettivo nel codice sorgente.
 
  `static` Facoltativo. Specifica se il campo è un membro della funzione del costruttore o un membro dell'oggetto restituito dalla funzione del costruttore. Impostare su `true` per trattare il campo come membro della funzione del costruttore. Impostare su `false` per trattare il campo come membro dell'oggetto restituito dalla funzione del costruttore.
 
  `type` Facoltativo. Tipo di dati del campo. Il tipo può essere uno dei seguenti:
 
-- Tipo di linguaggio ECMAScript nella specifica ECMAScript 5, ad esempio `Number` e `Object`.
+- Tipo di linguaggio ECMAScript nella specifica ECMAScript 5, ad esempio `Number` e `Object` .
 
 - Un oggetto DOM, ad esempio `HTMLElement`, `Window` e `Document`.
 
 - Una funzione costruttore JavaScript.
 
-  `integer` Facoltativo. Se `type` è `Number`, specifica se il campo è un numero intero. Impostare su `true` per indicare che il campo è un numero intero. in caso contrario, impostare su `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
+  `integer` Facoltativo. Se `type` è `Number` , specifica se il campo è un numero intero. Impostare su `true` per indicare che il campo è un intero; in caso contrario, impostare su `false` . Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
 
-  `domElement` Facoltativo. Questo attributo è deprecato. L'attributo `type` ha la precedenza su questo attributo. Questo attributo specifica se il campo documentato è un elemento DOM. Impostare su `true` per specificare che il campo è un elemento DOM; in caso contrario, impostare su `false`. Se l'attributo `type` non è impostato e `domElement` è impostato su `true`, IntelliSense considera il campo documentato come `HTMLElement` durante l'esecuzione del completamento delle istruzioni.
+  `domElement` Facoltativo. Questo attributo è deprecato. L'attributo `type` ha la precedenza su questo attributo. Questo attributo specifica se il campo documentato è un elemento DOM. Impostare su `true` per specificare che il campo è un elemento DOM; in caso contrario, impostare su `false` . Se l' `type` attributo non è impostato e `domElement` è impostato su `true` , IntelliSense considera il campo documentato come un oggetto `HTMLElement` quando si esegue il completamento delle istruzioni.
 
-  `mayBeNull` Facoltativo. Specifica se il campo documentato può essere impostato su null. Impostare su `true` per indicare che il campo può essere impostato su null. in caso contrario, impostare su `false`. Il valore predefinito è `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
+  `mayBeNull` Facoltativo. Specifica se il campo documentato può essere impostato su null. Impostare su `true` per indicare che il campo può essere impostato su null; in caso contrario, impostare su `false` . Il valore predefinito è `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
 
   `elementType` Facoltativo. Se `type` è `Array`, questo attributo specifica il tipo degli elementi nella matrice.
 
@@ -66,16 +66,16 @@ Specifica le informazioni sulla documentazione, inclusa una descrizione, per un 
 
   `helpKeyword` Facoltativo. Parola chiave per Guida F1.
 
-  `locid` Facoltativo. Identificatore per le informazioni di localizzazione sul campo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nel tag [\<loc>](../ide/loc-javascript.md).
+  `locid` Facoltativo. Identificatore per le informazioni di localizzazione sul campo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nel [\<loc>](../ide/loc-javascript.md) tag.
 
-  `value` Facoltativo. Specifica il codice che deve essere valutato per l'uso da parte di IntelliSense anziché dal codice della funzione stessa. Per `<field>`, questo attributo è supportato per le funzioni del costruttore, ma non è supportato per i valori letterali dell'oggetto. È possibile utilizzare questo attributo per fornire informazioni sul tipo quando il tipo di campo non è definito. Ad esempio, è possibile usare `value=’1’` per trattare il tipo di campo come numero.
+  `value` Facoltativo. Specifica il codice che deve essere valutato per l'uso da parte di IntelliSense anziché dal codice della funzione stessa. Per `<field>` , questo attributo è supportato per le funzioni del costruttore, ma non è supportato per i valori letterali dell'oggetto. È possibile utilizzare questo attributo per fornire informazioni sul tipo quando il tipo di campo non è definito. Ad esempio, è possibile usare `value=’1’` per trattare il tipo di campo come numero.
 
   `description` Facoltativo. Una descrizione per il campo.
 
 ## <a name="remarks"></a>Osservazioni
- L'attributo `name` è obbligatorio quando si documenta un campo in una funzione del costruttore. Per tutti gli altri scenari, tutti gli attributi per l'elemento `<field>` sono facoltativi.
+ L' `name` attributo è obbligatorio quando si documenta un campo in una funzione del costruttore. Per tutti gli altri scenari, tutti gli attributi per l' `<field>` elemento sono facoltativi.
 
- Quando si documenta una funzione del costruttore, l'elemento `<field>` deve essere visualizzato immediatamente prima della dichiarazione di campo. L'attributo `name` deve corrispondere al nome del campo usato nel codice sorgente. Per i membri di un oggetto, l'attributo `name` può essere omesso se l'elemento `<field>` viene visualizzato immediatamente prima della dichiarazione del membro dell'oggetto.
+ Quando si documenta una funzione del costruttore, l' `<field>` elemento deve essere visualizzato immediatamente prima della dichiarazione di campo. L' `name` attributo deve corrispondere al nome del campo usato nel codice sorgente. Per i membri dell'oggetto, l' `name` attributo può essere omesso se l' `<field>` elemento viene visualizzato immediatamente prima della dichiarazione del membro dell'oggetto.
 
 ## <a name="example"></a>Esempio
  L'esempio di codice seguente illustra come usare l'elemento `<field>`.
@@ -102,7 +102,7 @@ function Engine() {
 ```
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come utilizzare l'elemento `<field>` con l'attributo `static` impostato su `true`.
+ Nell'esempio seguente viene illustrato come utilizzare l' `<field>` elemento con l' `static` attributo impostato su `true` .
 
 ```javascript
 function Engine() {
@@ -116,7 +116,7 @@ Engine.
 ```
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come utilizzare l'elemento `<field>` con l'attributo `static` impostato su `false`.
+ Nell'esempio seguente viene illustrato come utilizzare l' `<field>` elemento con l' `static` attributo impostato su `false` .
 
 ```javascript
 function Engine() {
@@ -131,7 +131,7 @@ eng.
 ```
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come utilizzare l'elemento `<field>` con l'attributo `value`.
+ Nell'esempio seguente viene illustrato come utilizzare l' `<field>` elemento con l' `value` attributo.
 
 ```javascript
 function calculator(a) {

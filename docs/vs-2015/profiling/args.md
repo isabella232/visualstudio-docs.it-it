@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65759da4363891c713f906e6cb10f00443bcbceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197908"
 ---
 # <a name="args"></a>Args
@@ -34,7 +34,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  Un elenco di argomenti per l'applicazione di destinazione del comando **Launch**.  
   
 ## <a name="required-options"></a>Opzioni obbligatorie  
- **Launch:** `AppName`  
+ **Avvia:**`AppName`  
  Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.  
   
 ## <a name="example"></a>Esempio  

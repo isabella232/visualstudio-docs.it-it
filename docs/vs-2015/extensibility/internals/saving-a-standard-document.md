@@ -1,5 +1,5 @@
 ---
-title: Salvataggio di un documento Standard | Microsoft Docs
+title: Salvataggio di un documento standard | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,51 +13,51 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198074"
 ---
 # <a name="saving-a-standard-document"></a>Salvataggio di un documento standard
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-L'ambiente gestisce il salvataggio, Salva con nome e salvare tutti i comandi. Quando un utente seleziona **salvare**, **Salva con nome**, o **Salva tutto** dal **File** dal menu o chiude la soluzione, causando un  **Salva tutto**, verifica quanto segue.  
+L'ambiente gestisce i comandi Salva, Salva con nome e Salva tutti. Quando un utente seleziona **Salva**, **Salva con nome**o **Salva tutto** dal menu **file** o chiude la soluzione, generando un' **eccezione Salva tutto**, si verifica il processo seguente.  
   
- ![Editor standard](../../extensibility/internals/media/public.gif "pubblico")  
-Salvare, Salva con nome e la gestione di un editor standard del comando Salva tutto  
+ ![Editor standard](../../extensibility/internals/media/public.gif "Pubblico")  
+Salva, Salva con nome e Salva tutte le operazioni di gestione dei comandi per un editor standard  
   
- Questa procedura è descritta nei passaggi seguenti:  
+ Questo processo è descritto in dettaglio nei passaggi seguenti:  
   
-1. Quando la **salvare** e **Salva con nome** comandi sono selezionati, l'ambiente Usa il <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> del servizio per determinare la finestra del documento attivo e in questo modo gli elementi che devono essere salvate. Dopo che è noto che la finestra del documento attivo, l'ambiente Cerca il puntatore di gerarchia e l'identificatore dell'elemento (ID elemento) per il documento nella tabella documenti in esecuzione. Per altre informazioni, vedere [tabella documenti in esecuzione](../../extensibility/internals/running-document-table.md).  
+1. Quando si selezionano i comandi **Salva** e **Salva con nome** , l'ambiente USA il <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servizio per determinare la finestra del documento attiva e quindi gli elementi da salvare. Quando la finestra del documento attivo è nota, l'ambiente trova il puntatore della gerarchia e l'identificatore dell'elemento (itemID) per il documento nella tabella documenti in esecuzione. Per ulteriori informazioni, vedere [esecuzione della tabella documenti](../../extensibility/internals/running-document-table.md).  
   
-    Quando la **Salva tutto** comando è selezionato, l'ambiente utilizza le informazioni nella tabella documenti in esecuzione per compilare l'elenco di tutti gli elementi da salvare.  
+    Quando si seleziona il comando **Salva tutto** , l'ambiente utilizza le informazioni nella tabella documenti in esecuzione per compilare l'elenco di tutti gli elementi da salvare.  
   
-2. Quando la soluzione riceve un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> chiamata, scorre il set di elementi selezionati (vale a dire le selezioni multiple esposte dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servizio).  
+2. Quando la soluzione riceve una <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> chiamata, scorre il set di elementi selezionati, ovvero le selezioni multiple esposte dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servizio.  
   
-3. Su ogni elemento nella selezione, la soluzione Usa il puntatore di gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> metodo per determinare se il **salvare** comando di menu deve essere abilitato. Se uno o più elementi vengono modificati, il **salvare** command è abilitato. Se la gerarchia Usa un editor standard, i delegati di gerarchia per l'esecuzione di query modificato lo stato per l'editor chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> (metodo).  
+3. Per ogni elemento della selezione, la soluzione USA il puntatore della gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> metodo per determinare se il comando di menu **Salva** deve essere abilitato. Se uno o più elementi sono Dirty, il comando **Salva** è abilitato. Se la gerarchia usa un editor standard, la gerarchia delega la query per lo stato dirty all'editor chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> metodo.  
   
-4. Su ogni elemento selezionato è stato modificato, la soluzione Usa il puntatore di gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> metodo sulle gerarchie appropriate.  
+4. Per ogni elemento selezionato Dirty, la soluzione USA il puntatore della gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> Metodo sulle gerarchie appropriate.  
   
-    È comune per la gerarchia usare un editor standard per modificare il documento. In questo caso, i dati del documento relativo oggetto tale editor deve supportare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfaccia. Al momento della ricezione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> chiamata al metodo, il progetto deve informare l'editor che il documento viene salvato, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> metodo sull'oggetto dati del documento. L'editor può consentire l'ambiente per gestire il **Salva con nome** della finestra di dialogo chiamando `Query Service` per il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> interfaccia. Restituisce un puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaccia. L'editor deve quindi chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> , passando un puntatore per l'editor <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> implementazione tramite il `pPersistFile` parametro. L'ambiente, quindi esegue l'operazione di salvataggio e fornisce il **Salva con nome** finestra di dialogo per l'editor. L'ambiente chiama quindi tornare all'editor con <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>.  
+    È normale che la gerarchia usi un editor standard per modificare il documento. In questo caso, l'oggetto dati del documento per l'editor deve supportare l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfaccia. Al momento della ricezione della <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> chiamata al metodo, il progetto deve informare l'editor che il documento viene salvato chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> metodo sull'oggetto dati del documento. L'editor può consentire all'ambiente di gestire la finestra di dialogo **Salva con nome** , chiamando `Query Service` per l' <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> interfaccia. Viene restituito un puntatore all' <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaccia. L'editor deve quindi chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> metodo, passando un puntatore all'implementazione dell'editor <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> tramite il `pPersistFile` parametro. L'ambiente esegue quindi l'operazione di salvataggio e fornisce la finestra di dialogo **Salva con nome** per l'editor. L'ambiente richiama quindi l'editor con <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> .  
   
-5. Se l'utente tenta di salvare un documento senza titolo (vale a dire, un documento non sono stato salvato in precedenza), quindi un comando Salva con nome viene effettivamente eseguito.  
+5. Se l'utente tenta di salvare un documento senza titolo, ovvero un documento precedentemente non salvato, viene effettivamente eseguito un comando Salva con nome.  
   
-6. Per il comando Salva con nome, l'ambiente consente di visualizzare la finestra di dialogo Salva con nome, la richiesta all'utente un nome di file.  
+6. Per il comando Salva con nome, l'ambiente Visualizza la finestra di dialogo Salva con nome, in cui viene richiesto all'utente un nome file.  
   
-    Se è stato modificato il nome del file, quindi la gerarchia è responsabile per l'aggiornamento della cornice di documento, le informazioni nella cache chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument).  
+    Se il nome del file è stato modificato, la gerarchia è responsabile dell'aggiornamento delle informazioni memorizzate nella cache del frame del documento chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> (VSFPROPID_MkDocument).  
   
-   Se il **Salva con nome** comando Sposta la posizione del documento e la gerarchia è sensibile al percorso del documento, quindi la gerarchia è responsabile per la consegna il proprietario della finestra del documento aperto in un'altra gerarchia. Ad esempio, ciò si verifica se il progetto rileva se il file è un file all'interno o esterno (File esterni) in relazione al progetto. Utilizzare la procedura seguente per modificare la proprietà di un file al progetto file esterni.  
+   Se il comando **Salva con nome** sposta il percorso del documento e la gerarchia è sensibile al percorso del documento, la gerarchia è responsabile della consegna della proprietà della finestra Apri documento a un'altra gerarchia. Questa situazione si verifica, ad esempio, se il progetto rileva se il file è un file interno o esterno (file vario) in relazione al progetto. Utilizzare la procedura seguente per modificare la proprietà di un file nel progetto di file esterni.  
   
-## <a name="changing-file-ownership"></a>Modifica delle proprietà del File  
+## <a name="changing-file-ownership"></a>Modifica della proprietà del file  
   
-#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Per modificare la proprietà del file al progetto file esterni  
+#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Per modificare la proprietà del file nel progetto di file esterni  
   
-1. Eseguire una query del servizio per il <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaccia.  
+1. Servizio query per l' <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaccia.  
   
-     Un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> viene restituito.  
+     Viene restituito un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> .  
   
-2. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) metodo per trasferire i documenti nella nuova gerarchia. La gerarchia esegue il comando Salva con nome chiama questo metodo.  
+2. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` Metodo (, `punkWindowFrame` ) per trasferire il documento alla nuova gerarchia. La gerarchia che esegue il comando Salva con nome chiama questo metodo.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e78975acab0bf30f1f188cdd7b6454fd6e74ce6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143712"
 ---
 # <a name="sccrename-function"></a>Funzione SccRename
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzione consente di rinominare un file nel sistema di controllo di origine.  
+Questa funzione rinomina un file nel sistema di controllo del codice sorgente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,33 +37,33 @@ SCCRTN SccRename(
   
 #### <a name="parameters"></a>Parametri  
  pvContext  
- [in] La struttura del contesto plug-in del controllo origine.  
+ in Struttura del contesto del plug-in del controllo del codice sorgente.  
   
  hWnd  
- [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
+ in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.  
   
  lpFileName  
- [in] Il nome completo del file del file che viene rinominato.  
+ in Nome completo del file che viene rinominato.  
   
  lpNewName  
- [in] Specificare il nuovo nome completo. Se il percorso della directory è diverso, quindi il file è stato spostato da una sottodirectory a un altro.  
+ [in] Nuovo nome completo. Se il percorso della directory è diverso, il file è stato spostato da una sottodirectory a un'altra.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
-|Valore|DESCRIZIONE|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|L'operazione di ridenominazione completata correttamente.|  
+|SCC_OK|Operazione di ridenominazione completata correttamente.|  
 |SCC_E_PROJNOTOPEN|Il progetto non è aperto nel controllo del codice sorgente.|  
-|SCC_E_FILENOTCONTROLLED|Il file non è incluso nel controllo del codice sorgente.|  
-|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete.|  
-|SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a completare l'operazione.|  
-|SCC_E_COULDNOTCREATEPROJECT|Il progetto non può essere creato come parte del processo di ridenominazione.|  
-|SCC_E_OPNOTPERFORMED|Non è stata eseguita l'operazione.|  
+|SCC_E_FILENOTCONTROLLED|Il file non è sotto il controllo del codice sorgente.|  
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto.|  
+|SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a completare questa operazione.|  
+|SCC_E_COULDNOTCREATEPROJECT|Non è stato possibile creare il progetto come parte del processo di ridenominazione.|  
+|SCC_E_OPNOTPERFORMED|L'operazione non è stata eseguita.|  
 |SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato o generale.|  
   
-## <a name="remarks"></a>Note  
- Questa funzione può essere utilizzata per rinominare un file o viene spostato da una posizione a altra nel sistema di controllo di origine. Il plug-in del controllo del codice sorgente non tentare di accedere al file su disco. È responsabilità dell'IDE per rinominare il file locale.  
+## <a name="remarks"></a>Osservazioni  
+ Questa funzione può essere usata per rinominare un file o spostarla da una posizione a un'altra nel sistema di controllo del codice sorgente. Il plug-in del controllo del codice sorgente non deve tentare di accedere al file su disco. È responsabilità dell'IDE rinominare il file locale.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

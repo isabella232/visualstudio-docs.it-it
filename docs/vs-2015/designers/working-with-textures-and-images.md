@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93813aa734c615e7f045c98c776e600be4ee3fab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663930"
 ---
 # <a name="working-with-textures-and-images"></a>Uso di trame e immagini
@@ -45,5 +45,5 @@ ms.locfileid: "72663930"
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini con trame e immagini.|
-|[Esempi dell'editor immagini](../designers/image-editor-examples.md)|Contiene i collegamenti ad alcuni argomenti che descrivono come usare l'editor di immagini per eseguire attività comuni di elaborazione delle immagini.|
+|[Editor di immagini](../designers/image-editor.md)|Descrive come usare l'editor di immagini con trame e immagini.|
+|[Esempi di editor di immagini](../designers/image-editor-examples.md)|Contiene i collegamenti ad alcuni argomenti che descrivono come usare l'editor di immagini per eseguire attività comuni di elaborazione delle immagini.|

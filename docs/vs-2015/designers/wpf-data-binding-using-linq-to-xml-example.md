@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7eea9b5c2cf542d75187dd4033270e6eb6880942
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663906"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>Esempio di data binding WPF tramite LINQ to XML
@@ -29,4 +29,4 @@ Contenuto della sezione è incluso un esempio di WPF (Windows Presentation Found
 |[Procedura dettagliata: esempio LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)|Sono contenuti i file di origine primari per il progetto e una descrizione relativa all'utilizzo di LINQ to XML per il data binding all'interno di questo codice.|
 
 ## <a name="see-also"></a>Vedere anche
- [Data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)
+ [data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)

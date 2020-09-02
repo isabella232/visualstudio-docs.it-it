@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538385"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Procedura: aggiungere controlli contenuto a documenti di Word
@@ -48,7 +48,7 @@ ms.locfileid: "85538385"
 
   Per informazioni sui controlli contenuto, vedere [controlli contenuto](../vsto/content-controls.md).
 
-## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a>Aggiunta di controlli contenuto in fase di progettazione
+## <a name="add-content-controls-at-design-time"></a><a name="designtime"></a> Aggiunta di controlli contenuto in fase di progettazione
  Sono disponibili varie modalità di aggiunta di controlli contenuto al documento in un progetto a livello di documento in fase di progettazione:
 
 - Aggiungere un controllo contenuto dalla scheda **Controlli Word** della **Casella degli strumenti**.
@@ -69,11 +69,11 @@ ms.locfileid: "85538385"
 
     - Fare doppio clic su un controllo contenuto nella **Casella degli strumenti**.
 
-         oppure
+         Oppure
 
     - Fare clic su un controllo contenuto nella **casella degli strumenti** , quindi premere il tasto **invio** .
 
-         oppure
+         Oppure
 
     - Trascinare un controllo contenuto dalla **Casella degli strumenti** nel documento. Il controllo contenuto viene aggiunto in corrispondenza della selezione corrente nel documento, non in corrispondenza della posizione del puntatore del mouse.
 
@@ -94,7 +94,7 @@ ms.locfileid: "85538385"
 
 3. Nel gruppo **Controlli** fare clic sull'icona del controllo contenuto che si desidera aggiungere.
 
-## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Aggiungere controlli contenuto in fase di esecuzione in un progetto a livello di documento
+## <a name="add-content-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Aggiungere controlli contenuto in fase di esecuzione in un progetto a livello di documento
  È possibile aggiungere controlli contenuto a livello di codice al documento in fase di esecuzione usando i metodi della proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> della classe `ThisDocument` nel progetto. Ogni metodo ha tre overload che è possibile usare per aggiungere un controllo contenuto nei modi seguenti:
 
 - Aggiungere un controllo in corrispondenza della selezione corrente.
@@ -135,7 +135,7 @@ ms.locfileid: "85538385"
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Aggiungere controlli contenuto in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+## <a name="add-content-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Aggiungere controlli contenuto in fase di esecuzione in un progetto di componente aggiuntivo VSTO
  È possibile aggiungere controlli contenuto a livello di codice a qualsiasi documento aperto in fase di esecuzione usando un componente aggiuntivo VSTO. A tale scopo, generare un elemento host <xref:Microsoft.Office.Tools.Word.Document> basato su un documento aperto e quindi usare i metodi della proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> di tale elemento host. Ogni metodo ha tre overload che è possibile usare per aggiungere un controllo contenuto nei modi seguenti:
 
 - Aggiungere un controllo in corrispondenza della selezione corrente.

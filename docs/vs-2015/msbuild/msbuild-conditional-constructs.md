@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143753"
 ---
 # <a name="msbuild-conditional-constructs"></a>Costrutti condizionali di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] offre un meccanismo per l'elaborazione di tipo either/or con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) e [Otherwise](../msbuild/otherwise-element-msbuild.md).  
+[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornisce un meccanismo per l'elaborazione/o con gli elementi [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md)e [in caso contrario](../msbuild/otherwise-element-msbuild.md) .  
   
 ## <a name="using-the-choose-element"></a>Uso dell'elemento Choose  
  L'elemento `Choose` contiene una serie di elementi `When` con attributi `Condition` che vengono sottoposti a test in ordine dall'alto verso il basso finché un elemento restituisce `true`. Se più di un elemento `When` restituisce `true`, viene usato solo il primo. Un elemento `Otherwise`, se presente, viene valutato se nessuna condizione per un elemento `When` restituisce `true`.  
@@ -82,5 +82,5 @@ ms.locfileid: "68143753"
 ## <a name="see-also"></a>Vedere anche  
  [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)   
- [Elemento Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
+ [Elemento in caso contrario (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
