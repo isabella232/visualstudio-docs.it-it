@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159238"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Risoluzione di assembly in fase di progettazione
@@ -40,4 +40,4 @@ Quando si aggiunge un riferimento a un assembly tramite la scheda .NET della fin
  Il Targeting Pack fornito ora con .NET Framework SDK include un elenco di tutti gli assembly di runtime contenuti in quella versione del framework, definito elenco di ridistribuzione (redist). Grazie a questo elenco diventa impossibile, per il sistema di compilazione, risolvere i tipi a fronte di una versione dell'assembly errata.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Concetti avanzati)
+ [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663425"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Procedura: configurare le proprietà del progetto flusso di lavoro (legacy)
@@ -29,7 +29,7 @@ Seguire questi passaggi per visualizzare o modificare proprietà associate ai pr
 
 1. Se **Esplora soluzioni** finestra non è visibile, selezionare **Esplora soluzioni** dal menu **Visualizza** .
 
-2. Selezionare un progetto in **Esplora soluzioni**.
+2. In **Esplora soluzioni**selezionare un progetto.
 
 3. Se la finestra **Proprietà** non è visibile, scegliere **finestra Proprietà** dal menu **Visualizza** .
 

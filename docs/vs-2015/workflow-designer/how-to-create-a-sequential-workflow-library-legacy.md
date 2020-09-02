@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: adc2e71678e6892d12640a3153f24bfb90dfa429
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663404"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Procedura: creare una libreria del flusso di lavoro sequenziale (legacy)
@@ -28,7 +28,7 @@ Seguire questi passaggi per creare un progetto libreria flusso di lavoro sequenz
 
 1. Avviare Visual Studio.
 
-2. Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
+2. Scegliere **Nuovo** dal menu **File**e quindi selezionare **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 

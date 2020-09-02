@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893307"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor set di regole di analisi del codice
@@ -71,7 +71,7 @@ Nella tabella seguente vengono descritti i campi di un set di regole:
 |-----------|-----------------|
 |**ID**|Identificatore della regola.|
 |**Categoria**|Oltre all'appartenenza ai set di regole, le regole di analisi del codice sono raggruppate per categoria. Per altre informazioni, vedere [avvisi di analisi del codice](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Nome**|Titolo della regola.|
+|**Name**|Titolo della regola.|
 |**Spazio dei nomi**|Spazio dei nomi della regola.|
 |**Tipo di destinazione**|Indica se la regola è per il codice nativo, gestito o del database.|
 |**Azione**|Azione eseguita quando la regola viene violata in un'esecuzione dell'analisi del codice. È possibile modificare il campo **azione** .|

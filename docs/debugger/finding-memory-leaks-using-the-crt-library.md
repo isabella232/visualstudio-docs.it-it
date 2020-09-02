@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350485"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Individuare le perdite di memoria con la libreria CRT
@@ -186,7 +186,7 @@ Il numero di allocazione della memoria indica quando è stato allocato un blocco
 
 1. Nella finestra **espressioni di controllo** Digitare `_crtBreakAlloc` nella colonna **nome** .
 
-   Se si usa la versione DLL multithread della libreria CRT (opzione/MD), aggiungere l'operatore di contesto:`{,,ucrtbased.dll}_crtBreakAlloc`
+   Se si usa la versione DLL multithread della libreria CRT (opzione/MD), aggiungere l'operatore di contesto: `{,,ucrtbased.dll}_crtBreakAlloc`
    
    Assicurarsi che i simboli di debug siano caricati. In caso contrario `_crtBreakAlloc` , verrà segnalato come non *identificato*.
 
@@ -229,7 +229,7 @@ Per restituire il contenuto di una `_CrtMemState` struttura, passare la struttur
 _CrtMemDumpStatistics( &s1 );
 ```
 
-`_ CrtMemDumpStatistics`Restituisce un dump dello stato di memoria simile al seguente:
+`_ CrtMemDumpStatistics` Restituisce un dump dello stato di memoria simile al seguente:
 
 ```cmd
 0 bytes in 0 Free Blocks.
@@ -252,15 +252,15 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );
 ```
 
-`_CrtMemDifference`Confronta gli Stati di memoria `s1` e `s2` e restituisce un risultato in ( `s3` ) che rappresenta la differenza tra `s1` e `s2` .
+`_CrtMemDifference` Confronta gli Stati di memoria `s1` e `s2` e restituisce un risultato in ( `s3` ) che rappresenta la differenza tra `s1` e `s2` .
 
 Una tecnica per individuare le perdite di memoria inizia inserendo le `_CrtMemCheckpoint` chiamate all'inizio e alla fine dell'applicazione, quindi usando `_CrtMemDifference` per confrontare i risultati. Se `_CrtMemDifference` Mostra una perdita di memoria, è possibile aggiungere altre `_CrtMemCheckpoint` chiamate per dividere il programma usando una ricerca binaria, fino a quando non si è isolata l'origine della perdita.
 
 ## <a name="false-positives"></a>Falsi positivi
 
- `_CrtDumpMemoryLeaks`può fornire false indicazioni di perdite di memoria se una libreria contrassegna le allocazioni interne come blocchi normali anziché come blocchi CRT o client. In questo caso, `_CrtDumpMemoryLeaks` non è in grado di indicare la differenza tra allocazioni utente e allocazioni interne della libreria. Se i distruttori globali relativi alle allocazioni della libreria vengono eseguiti dopo il punto in cui viene chiamato `_CrtDumpMemoryLeaks`, ogni allocazione interna della libreria viene segnalata come perdita di memoria. Le versioni della libreria di modelli standard precedenti a Visual Studio .NET possono causare la `_CrtDumpMemoryLeaks` segnalazione di falsi positivi.
+ `_CrtDumpMemoryLeaks` può fornire false indicazioni di perdite di memoria se una libreria contrassegna le allocazioni interne come blocchi normali anziché come blocchi CRT o client. In questo caso, `_CrtDumpMemoryLeaks` non è in grado di indicare la differenza tra allocazioni utente e allocazioni interne della libreria. Se i distruttori globali relativi alle allocazioni della libreria vengono eseguiti dopo il punto in cui viene chiamato `_CrtDumpMemoryLeaks`, ogni allocazione interna della libreria viene segnalata come perdita di memoria. Le versioni della libreria di modelli standard precedenti a Visual Studio .NET possono causare la `_CrtDumpMemoryLeaks` segnalazione di falsi positivi.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Dettagli heap di debug CRT](../debugger/crt-debug-heap-details.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

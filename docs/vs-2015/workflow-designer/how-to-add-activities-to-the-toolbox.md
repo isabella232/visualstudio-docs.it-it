@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8fc2af704ab587480913c51cdbc593e6cc0f483a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663472"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: aggiungere attività nella Casella degli strumenti
@@ -21,11 +21,11 @@ Le attività possono essere aggiunte alla **casella degli strumenti** nella solu
 
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Per aggiungere un'attività dall'interno del progetto corrente
 
-1. Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. [!INCLUDE[crabout](../includes/crabout-md.md)] aggiungere una nuova attività personalizzata al progetto, vedere [procedura: aggiungere un nuovo elemento a un progetto flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1. Aggiungere una nuova attività personalizzata al progetto del flusso di lavoro corrente. [!INCLUDE[crabout](../includes/crabout-md.md)] per aggiungere una nuova attività personalizzata al progetto, vedere [procedura: aggiungere un nuovo elemento a un progetto flusso di lavoro](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
 2. Aggiungere la logica personalizzata all'attività.
 
-3. Compilare il progetto. Se la compilazione ha avuto esito positivo, viene visualizzata una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" con l'attività personalizzata inclusa in tale categoria.
+3. Compilare il progetto. Se la compilazione ha avuto esito positivo, viene visualizzata una nuova categoria nella **casella degli strumenti** denominata " \<*project name*> " con l'attività personalizzata inclusa in tale categoria.
 
     > [!NOTE]
     > Se la casella degli strumenti viene reimpostata, le attività personalizzate verranno rimosse, anche se la soluzione viene compilata nuovamente. Per ripopolare la casella degli strumenti con le attività personalizzate dopo che è stata reimpostata, riavviare [!INCLUDE[vs2010](../includes/vs2010-md.md)].
@@ -40,7 +40,7 @@ Le attività possono essere aggiunte alla **casella degli strumenti** nella solu
 
 1. Aprire una soluzione che contiene almeno un progetto flusso di lavoro e un progetto libreria attività personalizzato oppure un altro progetto flusso di lavoro che definisce un'attività personalizzata.
 
-2. Compilare entrambi i progetti. Se le compilazioni sono state completate correttamente, viene visualizzata una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" con l'attività personalizzata inclusa in tale categoria.
+2. Compilare entrambi i progetti. Se le compilazioni sono state completate correttamente, viene visualizzata una nuova categoria nella **casella degli strumenti** denominata " \<*project name*> " con l'attività personalizzata inclusa in tale categoria.
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Per aggiungere un'attività alla Casella degli strumenti da un assembly
 

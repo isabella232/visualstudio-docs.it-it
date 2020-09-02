@@ -1,5 +1,5 @@
 ---
-title: Cenni preliminari sulle proprietà personalizzate dei documenti
+title: Cenni preliminari sulle proprietà personalizzate del documento
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,42 +18,42 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951171"
 ---
-# <a name="custom-document-properties-overview"></a>Cenni preliminari sulle proprietà personalizzate dei documenti
+# <a name="custom-document-properties-overview"></a>Cenni preliminari sulle proprietà personalizzate del documento
 
-Quando si compila un progetto a livello di documento, Visual Studio aggiunge due proprietà personalizzate per il documento nel progetto: \_AssemblyLocation e \_AssemblyName. Quando un utente apre un documento, l'applicazione Microsoft Office controlla per queste proprietà personalizzate dei documenti. Se sono presenti nel documento, l'applicazione carica il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], che avvia la personalizzazione. Per altre informazioni, vedere [soluzioni di architettura di Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Quando si compila un progetto a livello di documento, Visual Studio aggiunge due proprietà personalizzate al documento nel progetto: \_ PercorsoAssembly e \_ AssemblyName. Quando un utente apre un documento, l'applicazione Microsoft Office controlla le proprietà personalizzate del documento. Se sono presenti nel documento, l'applicazione carica [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , che avvia la personalizzazione. Per altre informazioni, vedere [architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_AssemblyName
+## <a name="_assemblyname"></a>\_AssemblyName
 
-Questa proprietà contiene il CLSID di un'interfaccia il caricatore di soluzioni Office del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Il valore CLSID è 4-491E-A7D4-64AF99AF6E8B 4E3C66D5 - 58D. Non è necessario modificare questo valore.
+Questa proprietà contiene il CLSID di un'interfaccia nel componente del caricatore di soluzioni Office dell'oggetto [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Il valore CLSID è 4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B. Questo valore non deve mai essere modificato.
 
-## <a name="assemblylocation"></a>\_AssemblyLocation
+## <a name="_assemblylocation"></a>\_PercorsoAssembly
 
-Questa proprietà contiene una stringa che fornisce dettagli sul manifesto di distribuzione per la personalizzazione. Per altre informazioni sui manifesti, vedere [i manifesti dell'applicazione e distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Questa proprietà contiene una stringa che fornisce informazioni dettagliate sul manifesto di distribuzione per la personalizzazione. Per altre informazioni sui manifesti, vedere [manifesti dell'applicazione e di distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Il \_valore della proprietà AssemblyLocation può avere formati diversi, a seconda del modo in cui la soluzione viene distribuita:
+ Il \_ valore della proprietà PercorsoAssembly può avere formati diversi, a seconda della modalità di distribuzione della soluzione:
 
-- Se la soluzione viene pubblicata per essere installata da un sito Web, percorso UNC o una CD o unità USB, la proprietà AssemblyLocation ha il formato *DeploymentManifestPath*|*SolutionID*. La stringa seguente è riportato un esempio:
+- Se la soluzione è pubblicata per essere installata da un sito Web, da un percorso UNC o da un'unità CD o USB, il formato della proprietà _AssemblyLocation è *DeploymentManifestPath* | *SolutionID*. La stringa seguente è un esempio:
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- Se si sono in esecuzione o debug della soluzione da Visual Studio, la proprietà AssemblyLocation ha il formato *DeploymentManifestName*|*SolutionID*| vstolocal. La stringa seguente è riportato un esempio:
+- Se si esegue o si esegue il debug della soluzione da Visual Studio, la proprietà _AssemblyLocation ha il formato *DeploymentManifestName* | *SolutionID*| vstolocal. La stringa seguente è un esempio:
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+     ExcelWorkbook1. VSTO | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal
 
-  Il *SolutionID* è un GUID che il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene utilizzato per identificare la soluzione. Il *SolutionID* viene generato automaticamente quando si compila il progetto. Il **vstolocal** termine indica al [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] che l'assembly deve essere caricato dalla stessa cartella del documento.
+  *SolutionID* è un GUID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usato da per identificare la soluzione. Il *SolutionID* viene generato automaticamente quando si compila il progetto. Il termine **vstolocal** indica a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] che l'assembly deve essere caricato dalla stessa cartella del documento.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)
-- [Manifesti dell'applicazione e distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Procedura: Distribuire una soluzione Office usando ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Procedura: Creare e modificare le proprietà personalizzate dei documenti](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Manifesti dell'applicazione e di distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Procedura: pubblicare una soluzione Office tramite ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Procedura: creare e modificare proprietà personalizzate di un documento](../vsto/how-to-create-and-modify-custom-document-properties.md)

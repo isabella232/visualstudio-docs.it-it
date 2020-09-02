@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5126b3dc45d33471080ae154e06f4a327e21fef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663443"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Procedura: modificare l'opzione di avanzamento nell'esecuzione del debug (legacy)
@@ -37,7 +37,7 @@ In questo argomento viene descritto come modificare l'opzione di avanzamento nel
 
 2. Aprire un progetto flusso di lavoro legacy esistente o creare un nuovo progetto che usa attività simultanee e che viene destinato a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
-3. Nel menu **flusso di lavoro** della [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy, scegliere **debug**, quindi scegliere **Opzioni di esecuzione**.
+3. Nel menu **flusso di lavoro** del legacy [!INCLUDE[wfd2](../includes/wfd2-md.md)] , scegliere **debug**, quindi scegliere **Opzioni di esecuzione**.
 
 4. Selezionare **istanza** o **ramo**.
 

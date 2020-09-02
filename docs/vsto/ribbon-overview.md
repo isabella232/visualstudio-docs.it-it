@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985606"
 ---
 # <a name="ribbon-overview"></a>Panoramica della barra multifunzione
@@ -103,7 +103,7 @@ ms.locfileid: "72985606"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>Selezionare le barre multifunzione da visualizzare in fase di esecuzione
  Poiché un progetto può contenere più di una barra multifunzione, è possibile selezionare la barra multifunzione da visualizzare in fase di esecuzione.
 
- Per selezionare una barra multifunzione da visualizzare in fase di esecuzione, eseguire l'override del metodo `CreateRibbonExtensibilityObject` nella classe `ThisAddin`, `ThisWorkbook`o `ThisDocument` del progetto e restituire la barra multifunzione che si desidera visualizzare. Nell'esempio seguente viene controllato il valore di un campo denominato `myCondition` e viene restituita la barra multifunzione appropriata.
+ Per selezionare una barra multifunzione da visualizzare in fase di esecuzione, eseguire l'override del `CreateRibbonExtensibilityObject` metodo nella `ThisAddin` `ThisWorkbook` classe, o `ThisDocument` del progetto e restituire la barra multifunzione che si desidera visualizzare. Nell'esempio seguente viene controllato il valore di un campo denominato `myCondition` e viene restituita la barra multifunzione appropriata.
 
 > [!NOTE]
 > La sintassi utilizzata in questo esempio restituisce una barra multifunzione creata utilizzando l'elemento **barra multifunzione (finestra di progettazione visiva)** . La sintassi per la restituzione di una barra multifunzione creata utilizzando un elemento **barra multifunzione (XML)** è leggermente diversa. Per ulteriori informazioni sulla restituzione di un elemento **barra multifunzione (XML)** , vedere [Ribbon XML](../vsto/ribbon-xml.md).
@@ -130,5 +130,5 @@ ms.locfileid: "72985606"
 |[Procedura: aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Viene illustrato come aggiungere controlli al menu visualizzato quando si fa clic sul **file**.|
 |[Procedura: aggiungere un pulsante di avvio della finestra di dialogo a un gruppo della barra multifunzione](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Mostra come aggiungere un pulsante di avvio della finestra di dialogo a qualsiasi gruppo su una barra multifunzione.|
 |[Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Viene illustrato come personalizzare la barra multifunzione in modi avanzati esportando la barra multifunzione dalla finestra di progettazione al file XML della barra multifunzione.|
-|[XML della barra multifunzione](../vsto/ribbon-xml.md)|Viene illustrato come personalizzare una barra multifunzione tramite XML della barra multifunzione.|
+|[Ribbon XML](../vsto/ribbon-xml.md)|Viene illustrato come personalizzare una barra multifunzione tramite XML della barra multifunzione.|
 |[Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Viene illustrato come creare una scheda personalizzata della barra multifunzione usando l'elemento **barra multifunzione (XML)** .|

@@ -1,5 +1,5 @@
 ---
-title: Elemento Symbols Documenti Microsoft
+title: Elemento symbols | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c24c3f84df23a07b6b16272b66b29e32ad7b911
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699344"
 ---
 # <a name="symbols-element"></a>Elemento Symbols
-Definisce GUID e ID utilizzati da altri elementi VSCT. Per il codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati da [Extern Element](../extensibility/extern-element.md). Il codice gestito usa gli elementi figlio dell'elemento Symbols per definire queste informazioni.
+Definisce GUID e ID usati da altri elementi VSCT. Per il codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati dall' [elemento extern](../extensibility/extern-element.md). Il codice gestito utilizza gli elementi figlio dell'elemento symbols per definire queste informazioni.
 
- Se si crea un file vsct da un file .cto esistente, i simboli verranno generati come elementi figlio dell'elemento Symbols. Per ulteriori informazioni, vedere Procedura: creare un oggetto [. File Vsct da un file esistente. File Cto](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+ Se si crea un file con estensione vsct da un file CTO esistente, i simboli verranno generati come elementi figlio dell'elemento symbols. Per ulteriori informazioni, vedere [procedura: creare un oggetto. File vsct da un esistente. File CTO](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
- L'elemento Symbols non deve essere confuso con l'elemento [Define](../extensibility/define-element.md), che definisce le coppie nome-valore per l'utilizzo da parte del preprocessore.
+ L'elemento symbols non deve essere confuso con l' [elemento define](../extensibility/define-element.md), che definisce le coppie nome/valore per l'uso da parte del preprocessore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,14 +47,14 @@ Definisce GUID e ID utilizzati da altri elementi VSCT. Per il codice non gestito
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|GuidSymbol (Simbolo Guid)|Definisce un simbolo GUID. GuidSymbol ha due attributi obbligatori: name e value. Il nome è il nome del simbolo e il valore è il valore del GUID come stringa.<br /><br /> Ad esempio:\<GuidSymbol name "guidVsPackage1Pkg" value"/c5f54698-101a-4846-84d3-dc748f9cd848" />|
-|IdSymbol (Simbolo)|Definisce un simbolo. IDSymbol ha due attributi obbligatori: name e value. Il nome è il nome del simbolo e il valore è il valore del simbolo come stringa.<br /><br /> Ad esempio:\<IDSymbol name : "MyMenuGroup" value "0x1020" />|
+|GuidSymbol|Definisce un simbolo GUID. GuidSymbol dispone di due attributi obbligatori: Name e value. Il nome è il nome del simbolo e il valore è il valore del GUID sotto forma di stringa.<br /><br /> Ad esempio:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
+|IDSymbol|Definisce un simbolo. IDSymbol dispone di due attributi obbligatori: Name e value. Il nome è il nome del simbolo e il valore è il valore del simbolo sotto forma di stringa.<br /><br /> Ad esempio:\<IDSymbol name="MyMenuGroup" value="0x1020" />|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Elemento radice del file vsct.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Elemento radice del file con estensione vsct.|
 
 ## <a name="example"></a>Esempio
 

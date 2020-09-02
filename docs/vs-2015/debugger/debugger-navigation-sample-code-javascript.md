@@ -1,5 +1,5 @@
 ---
-title: Il debugger di codice di esempio di navigazione (JavaScript) | Microsoft Docs
+title: Codice di esempio di navigazione del debugger (JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6102fd8eace3db19e44a0214ce7ce98278b53eea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198198"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>Codice di esempio della navigazione del debugger (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il codice in questo argomento è il file di esempio per la [controllare l'esecuzione in una sessione di debug (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) argomento.  
+Il codice in questo argomento è il file di esempio per l' [esecuzione del controllo in un argomento della sessione di debug (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) .  
   
-## <a name="defaultjs-sample-code"></a>codice di esempio default. js  
+## <a name="defaultjs-sample-code"></a>default.js codice di esempio  
   
 ```javascript  
 // For an introduction to the Blank template, see the following documentation:  

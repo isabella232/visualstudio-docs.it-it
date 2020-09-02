@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64811543"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizzare eventi EventSource come marcatori
@@ -29,7 +29,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 
 3. In tutti gli altri casi, l'evento viene considerato un messaggio.
 
-### <a name="importance"></a>priorità
+### <a name="importance"></a>Importanza
  La tabella seguente illustra il mapping tra il livello di evento e l'importanza del marcatore.
 
 |Livello ETW|Importanza del visualizzatore di concorrenza|
@@ -37,7 +37,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 |win:LogAlways|Normale|
 |win:Critical|Critico|
 |win:Error|Critico|
-|win:Warning|Alto|
+|win:Warning|Alta|
 |win:Informational|Normale|
 |win:Verbose|Basso|
 |Superiore a win:verbose|Basso|
@@ -48,7 +48,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 ### <a name="category"></a>Category
  Se il livello è win:Critical o win:Error, la categoria è Avviso (-1). In caso contrario, la categoria è quella predefinita (0).
 
-### <a name="text"></a>Text
+### <a name="text"></a>Testo
  Se è stato definito un messaggio di testo formattato come printf-type per l'evento, viene visualizzato come descrizione del marcatore. In caso contrario, la descrizione è il nome dell'evento e il valore di ogni campo Payload.
 
 ## <a name="customize-visualization-of-eventsource-events"></a>Personalizzare la visualizzazione degli eventi EventSource
@@ -65,15 +65,15 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 |3|Flag|
 |Tutti gli altri valori|Message|
 
-### <a name="importance"></a>priorità
+### <a name="importance"></a>Importanza
  È possibile usare il campo `cvImportance`, un byte, per controllare l'impostazione dell'importanza per un evento EventSource. È tuttavia consigliabile controllare l'importanza visualizzata di un evento usando il relativo livello.
 
 |Valore cvImportance|Importanza del visualizzatore di concorrenza|
 |------------------------|---------------------------------------|
 |0|Normale|
 |1|Critico|
-|2|Alto|
-|3|Alto|
+|2|Alta|
+|3|Alta|
 |4|Normale|
 |5|Basso|
 |Tutti gli altri valori|Basso|
@@ -84,7 +84,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 ### <a name="category"></a>Category
  Usare il campo `cvCategory`, un byte, per controllare la categoria assegnata dal visualizzatore di concorrenza a un evento EventSource.
 
-### <a name="text"></a>Text
+### <a name="text"></a>Testo
  Usare il campo `cvTextW`, una stringa, per controllare la descrizione assegnata dal visualizzatore di concorrenza a un evento EventSource.
 
 ### <a name="spanid"></a>SpanID
@@ -94,4 +94,4 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 > L'uso di SpanID per annidare sezioni span, consentirne la parziale sovrapposizione nello stesso thread o consentirne l'inizio in un thread e la fine in un altro non è supportato.
 
 ## <a name="see-also"></a>Vedere anche
-- [Indicatori del visualizzatore di concorrenzaConcurrency visualizer markers](../profiling/concurrency-visualizer-markers.md)
+- [Marcatori del Visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)

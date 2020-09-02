@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594656"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
@@ -21,7 +21,7 @@ I modelli di testo in Visual Studio offrono un modo utile per generare testo di 
 
  Per un'introduzione generale ai modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="how-to-"></a>Procedure
+## <a name="how-to-"></a>Come si fa...
 
 ### <a name="generate-part-of-my-application-code"></a>Genera parte del codice dell'applicazione
  Ho una configurazione o un *modello* in un file o un database. Una o più parti del codice dipendono da tale modello.
@@ -29,13 +29,13 @@ I modelli di testo in Visual Studio offrono un modo utile per generare testo di 
 - Generare alcuni file di codice dai modelli di testo. Per altre informazioni, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) e [Qual è il modo migliore per iniziare a scrivere un modello?](#starting).
 
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Genera i file in fase di esecuzione, passando i dati nel modello
- In fase di esecuzione, l'applicazione genera file di testo, ad esempio report, che contengono una combinazione di testo e dati standard. Desidero evitare la scrittura di centinaia di istruzioni `write`.
+ In fase di esecuzione, l'applicazione genera file di testo, ad esempio report, che contengono una combinazione di testo e dati standard. Desidero evitare la scrittura di centinaia di `write` istruzioni.
 
 - Aggiungere un modello di testo di runtime al progetto. Questo modello crea una classe nel codice, che è possibile creare e usare per generare il testo. È possibile passare i dati ad esso nei parametri del costruttore. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-- Se si desidera generare da modelli disponibili solo in fase di esecuzione, è possibile utilizzare modelli di testo standard. Se si scrive un'estensione di Visual Studio, è possibile richiamare il servizio del modello di testo. Per altre informazioni, vedere [richiamo della trasformazione del testo in un'estensione di Visual](../modeling/invoking-text-transformation-in-a-vs-extension.md)Studio. In altri contesti, è possibile usare il motore del modello di testo. Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
+- Se si desidera generare da modelli disponibili solo in fase di esecuzione, è possibile utilizzare modelli di testo standard. Se si scrive un'estensione di Visual Studio, è possibile richiamare il servizio del modello di testo. Per altre informazioni, vedere [richiamo della trasformazione del testo in un'estensione di Visual](../modeling/invoking-text-transformation-in-a-vs-extension.md)Studio. In altri contesti, è possibile usare il motore del modello di testo. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Usare la direttiva \<#@parameter# > per passare parametri a questi modelli. Per altre informazioni, vedere [direttiva parameter T4](../modeling/t4-parameter-directive.md).
+     Utilizzare la \<#@parameter#> direttiva per passare parametri a questi modelli. Per altre informazioni, vedere [direttiva parameter T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Lettura di un altro file di progetto da un modello
  Per leggere un file dallo stesso progetto di Visual Studio del modello:
@@ -48,7 +48,7 @@ I modelli di testo in Visual Studio offrono un modo utile per generare testo di 
 
 Se i metodi sono già presenti, ad esempio, nelle classi .NET:
 
-- Utilizzare la direttiva \<#@assembly# > per caricare l'assembly e utilizzare \<#@import# > per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva import T4](../modeling/t4-import-directive.md).
+- Utilizzare la \<#@assembly#> direttiva per caricare l'assembly e utilizzare \<#@import#> per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva import T4](../modeling/t4-import-directive.md).
 
    Se si utilizza spesso lo stesso set di direttive di assembly e di importazione, è consigliabile scrivere un processore di direttiva. In ogni modello è possibile richiamare il processore di direttiva, che può caricare gli assembly e i file del modello e impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [creazione di processori di direttive del modello di testo T4 personalizzato](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
@@ -56,13 +56,13 @@ Se si scrivono i metodi manualmente:
 
 - Se si scrive un modello di testo di runtime, scrivere una definizione di classe parziale con lo stesso nome del modello di testo di Runtime. Aggiungere i metodi aggiuntivi in questa classe.
 
-- Scrivere un blocco di controllo della funzionalità di classe `<#+ ... #>` in cui è possibile dichiarare metodi, proprietà e classi private. Quando il modello di testo viene compilato, viene trasformato in una classe. I blocchi di controllo standard `<#...#>` e testo vengono trasformati in un unico metodo e i blocchi di funzionalità di classe vengono inseriti come membri distinti. Per altre informazioni, vedere [blocchi di controllo del modello di testo](../modeling/text-template-control-blocks.md).
+- Scrivere un blocco `<#+ ... #>` di controllo della funzionalità di classe in cui è possibile dichiarare metodi, proprietà e classi private. Quando il modello di testo viene compilato, viene trasformato in una classe. I blocchi di controllo `<#...#>` e il testo standard vengono trasformati in un unico metodo e i blocchi di funzionalità di classe vengono inseriti come membri distinti. Per altre informazioni, vedere [blocchi di controllo del modello di testo](../modeling/text-template-control-blocks.md).
 
    I metodi definiti come funzionalità di classe possono includere anche blocchi di testo incorporati.
 
-   Si consiglia di inserire le funzionalità di classe in un file separato che è possibile `<#@include#>` in uno o più file di modello.
+   Si consiglia di inserire le funzionalità di classe in un file separato, che può essere `<#@include#>` inserito in uno o più file di modello.
 
-- Scrivere i metodi in un assembly separato (libreria di classi) e chiamarli dal modello. Utilizzare la direttiva `<#@assembly#>` per caricare l'assembly e `<#@import#>` per impostare il contesto dello spazio dei nomi. Si noti che per ricompilare l'assembly durante il debug, potrebbe essere necessario arrestare e riavviare Visual Studio. Per altre informazioni, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
+- Scrivere i metodi in un assembly separato (libreria di classi) e chiamarli dal modello. Utilizzare la `<#@assembly#>` direttiva per caricare l'assembly e `<#@import#>` per impostare il contesto dello spazio dei nomi. Si noti che per ricompilare l'assembly durante il debug, potrebbe essere necessario arrestare e riavviare Visual Studio. Per altre informazioni, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Generare molti file da uno schema del modello
  Se si generano spesso file da modelli con lo stesso schema di database o XML:
@@ -78,7 +78,7 @@ Se si scrivono i metodi manualmente:
      Per ulteriori informazioni, vedere [Introduzione con linguaggi specifici del dominio](../modeling/getting-started-with-domain-specific-languages.md) e [generazione di codice da una Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Ottenere dati da Visual Studio
- Per usare i servizi forniti in Visual Studio, impostare l'attributo `hostSpecific` e caricare l'assembly `EnvDTE`. Ad esempio:
+ Per usare i servizi forniti in Visual Studio, impostare l' `hostSpecific` attributo e caricare l' `EnvDTE` assembly. Ad esempio:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -98,15 +98,15 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ## <a name="more-general-questions"></a>Domande più generali
 
-### <a name="starting"></a>Qual è il modo migliore per iniziare a scrivere un modello di testo?
+### <a name="what-is-the-best-way-to-start-writing-a-text-template"></a><a name="starting"></a> Qual è il modo migliore per iniziare a scrivere un modello di testo?
 
 1. Scrivere un esempio specifico del file generato.
 
-2. Convertirlo in un modello di testo inserendo la direttiva `<#@template #>` e le direttive e il codice necessari per caricare il file o il modello di input.
+2. Convertirlo in un modello di testo inserendo la `<#@template #>` direttiva e le direttive e il codice necessari per caricare il file o il modello di input.
 
 3. Sostituire progressivamente parti del file con blocchi di codice e di espressione.
 
-### <a name="what-is-a-model"></a>Che cos'è un "modello"?
+### <a name="what-is-a-model"></a>Che cos'è un modello?
 
 - Input letto dal modello. Potrebbe trovarsi in un file o in un database. Potrebbe trattarsi di XML, di un disegno di Visio o di un linguaggio specifico di dominio (DSL) o di un modello UML, oppure potrebbe trattarsi di un testo normale. Potrebbe essere distribuito in diversi file. In genere, più di un modello legge un modello.
 

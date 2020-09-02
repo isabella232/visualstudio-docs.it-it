@@ -13,10 +13,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d775c79cc7abdf6a66b1174ae625ca468f0764fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663457"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedura: aggiungere commenti a un flusso di lavoro in Progettazione del flusso di lavoro
@@ -45,7 +45,7 @@ Per facilitare la creazione di flussi di lavoro più ampi e complessi, [!INCLUDE
 
 3. Nell'elemento verrà visualizzata un'icona dell'annotazione. Passare il mouse sull'icona di annotazione per visualizzare il testo dell'annotazione.
 
-     ![Attività Sequence che mostra l'annotazione](../workflow-designer/media/annotation.png "Annotazione")
+     ![L'attività Sequence con annotazione](../workflow-designer/media/annotation.png "Annotazione")
 
 ### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Visualizzazione di un'annotazione della finestra di progettazione dell'attività
 
@@ -53,11 +53,11 @@ Per facilitare la creazione di flussi di lavoro più ampi e complessi, [!INCLUDE
 
 2. Le annotazioni vengono visualizzati nella finestra di progettazione dell'attività. Nella schermata riportata di seguito, l'annotazione "inizia attività nel flusso di lavoro" viene visualizzata nella finestra di progettazione dell'attività.
 
-     ![Annotazione mostrata nell'ActivityDesigner](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+     ![Annotazione visualizzata nella finestra di progettazione dell'attività](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
 
 3. Per visualizzare l'annotazione all'esterno della finestra di progettazione dell'attività, passare il mouse sull'area annotazione nella finestra di progettazione dell'attività e fare clic sull'icona **Rimuovi**
 
-     ![Annotazione visualizzata al di fuori della progettazione di un'attività](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+     ![Annotazione visualizzata all'esterno della finestra di progettazione dell'attività](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
 
 ### <a name="showing-or-hiding-all-annotations"></a>Mostra o nascondi tutte le annotazioni
 

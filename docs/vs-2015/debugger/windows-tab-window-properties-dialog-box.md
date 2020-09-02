@@ -1,5 +1,5 @@
 ---
-title: Finestra di dialogo Proprietà finestra, scheda di Windows | Microsoft Docs
+title: Scheda Windows, finestra di dialogo Proprietà finestra | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,23 +12,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c474a85499b221a3ee1d5dfd6befb872f6710f63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159687"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Scheda Finestre, finestra di dialogo Proprietà finestra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usare la **Windows** pressione di tab per visualizzare informazioni sulle finestre correlate per la finestra selezionata. Per visualizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
+Utilizzare la scheda **Windows** per visualizzare le informazioni sulle finestre correlate alla finestra selezionata. Per visualizzare la finestra di [dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo sulla finestra di [visualizzazione di Windows](../debugger/windows-view.md) . Selezionare un nodo della finestra nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .  
   
- Le impostazioni seguenti sono disponibili sul **Windows** scheda:  
+ Nella scheda **Windows** sono disponibili le impostazioni seguenti:  
   
 |Voce|Descrizione|  
 |-----------|-----------------|  
-|**Finestra successiva**|L'handle della finestra di pari livello successiva nella stessa sequenza (Z order) mostrata nella visualizzazione struttura ad albero della finestra ("none" Se non vi è alcuna finestra successiva). Scegliere questa voce per visualizzare le proprietà della finestra successiva.|  
-|**Finestra precedente**|L'handle della finestra di pari livello precedente nella stessa sequenza (Z order) mostrata nella visualizzazione struttura ad albero della finestra ("none" Se non vi è alcuna finestra precedente). Scegliere questa voce per visualizzare le proprietà della finestra precedente.|  
-|**Finestra padre**|Handle della finestra padre della finestra ("none" Se non esiste alcun padre). Scegliere questa voce per visualizzare le proprietà della finestra padre.|  
-|**Primo elemento figlio**|Handle della finestra della finestra prima figlio, nella sequenza (Z order) mostrato nella visualizzazione struttura ad albero della finestra ("none" Se non esistono alcuna finestra figlio). Selezionare questo valore per visualizzare le proprietà della prima finestra figlio.|  
-|**Finestra proprietaria**|Handle della finestra proprietaria della finestra corrente. Finestra principale di un'applicazione è in genere proprietario finestre di dialogo modale del sistema, ad esempio ("none" Se non vi è alcun proprietario). Scegliere questa voce per visualizzare le proprietà della finestra proprietaria.|
+|**Finestra successiva**|Handle della finestra di pari livello successiva nella stessa sequenza (ordine Z) visualizzato nella visualizzazione albero della finestra ("None" se non è presente alcuna finestra successiva). Scegliere questa voce per visualizzare le proprietà della finestra successiva.|  
+|**Finestra precedente**|Handle della finestra di pari livello precedente nella stessa sequenza (ordine Z) visualizzato nella visualizzazione albero della finestra ("None" se non è presente una finestra precedente). Scegliere questa voce per visualizzare le proprietà della finestra precedente.|  
+|**Finestra padre**|Handle della finestra padre della finestra ("None" se non è presente alcun elemento padre). Scegliere questa voce per visualizzare le proprietà della finestra padre.|  
+|**First Child**|Handle della prima finestra figlio della finestra, nella sequenza (ordine Z) visualizzata nella visualizzazione albero della finestra ("None" se non sono presenti finestre figlio). Scegliere questo valore per visualizzare le proprietà della prima finestra figlio.|  
+|**Finestra proprietaria**|Handle della finestra proprietaria di questa finestra. La finestra principale di un'applicazione è in genere costituita da finestre di dialogo modali del sistema, ad esempio "None" se non è presente alcun proprietario. Scegliere questa voce per visualizzare le proprietà della finestra proprietaria.|

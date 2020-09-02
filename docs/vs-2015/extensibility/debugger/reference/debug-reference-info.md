@@ -13,13 +13,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 675373ae1728bbca2cc7a89fdaa8014e6286d8b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159318"
 ---
-# <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
+# <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Descrive un riferimento.  
@@ -50,35 +50,35 @@ public struct DEBUG_REFERENCE_INFO { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  dwFields  
- Una combinazione di flag dal [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumerazione che specifica quali campi vengono compilati.  
+ Combinazione di flag dell'enumerazione [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica i campi che vengono compilati.  
   
  bstrName  
- Il nome specificato dall'utente del [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetto.  
+ Nome dell'oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) specificato dall'utente.  
   
  bstrType  
- Il tipo di riferimento sotto forma di stringa formattata.  
+ Tipo di riferimento come stringa formattata.  
   
  bstrValue  
- Il valore di riferimento sotto forma di stringa formattata  
+ Il valore di riferimento come stringa formattata  
   
  dwAttrib  
- Una combinazione di flag dal [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumerazione che specifica i flag per gli attributi della proprietà di debug.  
+ Combinazione di flag dell'enumerazione [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) che specifica i flag per gli attributi della proprietà di debug.  
   
  dwRefType  
- Un valore compreso il [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) enumerazione che specifica se il tipo di riferimento è forte o debole.  
+ Valore dell'enumerazione [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) che specifica se il tipo di riferimento è forte o debole.  
   
  m_pReference  
- Un' [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che specifica le informazioni di riferimento.  
+ Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che specifica le informazioni di riferimento.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene passata a una chiamata per il [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) metodo da compilare. Questa struttura viene anche restituita come parte di un elenco dal [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) interfaccia che, a sua volta, viene restituito da una chiamata ai [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene passata a una chiamata al metodo [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) da compilare. Questa struttura viene restituita anche come parte di un elenco dall'interfaccia [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) che, a sua volta, viene restituita da una chiamata al metodo [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

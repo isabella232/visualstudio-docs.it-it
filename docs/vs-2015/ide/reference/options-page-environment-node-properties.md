@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595020"
 ---
 # <a name="options-page-environment-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Ambiente
@@ -32,7 +32,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 |ShowStatusBar|Get/Set (Boolean)|Determina se viene visualizzata o meno la barra di stato.|
 |WindowMenuContainsNItems|Get/Set (Short)|Determina la modalità di contenimento delle finestre di documento nella parte inferiore del menu Finestre.|
 |MRUListContainsNItems|Get/Set (Short)|Determina il numero dei file visualizzati nel sottomenu "Usati di recente".|
-|Animations|Get/Set (Boolean)|Determina se l'ambiente di sviluppo integrato (IDE, Integrated Development Environment) usa l'animazione nella barra di stato.|
+|Animazioni|Get/Set (Boolean)|Determina se l'ambiente di sviluppo integrato (IDE, Integrated Development Environment) usa l'animazione nella barra di stato.|
 |AnimationSpeed|Get/Set (Short)||
 |AutoAdjustExperience|Get/Set (Boolean)|Regola automaticamente l'esperienza visiva in base alle prestazioni del client.|
 |RichClientExperienceOptions|Get/Set (Enum)|Abilita l'esperienza visiva dettagliata del client con i valori presenti in <xref:EnvDTE100.vsRichClientExperienceOptions>.|
@@ -63,7 +63,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 |SaveDocsAsUnicodeWhenDataLoss|Get/Set (Boolean)|Salva i documenti come Unicode quando i dati non possono essere salvati nella tabella codici.|
 |DontShowGlobalUndoChangeLossDialog|Get/Set (Boolean)|Visualizza un avviso se l'annullamento globale avrà effetto su altri file modificati.|
 |AllowEditingReadOnlyFiles|Get/Set (Boolean)|Consente di modificare i file di sola lettura, ma visualizza un avviso quando viene effettuato un tentativo di salvataggio di tali file.|
-|DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions> Posizione nella scheda in cui inserire il documento aperto.|
+|DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Posizione nella scheda in cui inserire il documento aperto.|
 
 ## <a name="extension-manager"></a>Gestione estensioni
  `DTE.Properties("Environment", "ExtensionManager")`
@@ -105,7 +105,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 
 |Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
-|Scheme|Get/Set (String)|Restituisce una stringa contenente uno schema predefinito, una stringa contenente il percorso completo del file con estensione vsk caricato o "(Predefinito)" se non viene caricato alcun file con estensione vsk.|
+|Schema|Get/Set (String)|Restituisce una stringa contenente uno schema predefinito, una stringa contenente il percorso completo del file con estensione vsk caricato o "(Predefinito)" se non viene caricato alcun file con estensione vsk.|
 
 ## <a name="projects-and-solution"></a>Progetti e soluzioni
  `DTE.Properties("Environment", "ProjectsAndSolution")`
@@ -135,7 +135,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 
 |Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Azione da eseguire all'avvio, da <xref:EnvDTE.vsStartUp>, con valori compresi tra 0 e 5:<br /><br /> -   0: Apri home page<br />-   1: Carica ultima soluzione caricata<br />-   2: Mostra finestra **Apri progetto**<br />-   3: Mostra finestra **Nuovo progetto**<br />-   4: Visualizza ambiente vuoto<br />-   5: Mostra pagina iniziale|
+|OnStartUp|Get/Set (Enum)|Azione da eseguire all'avvio, da <xref:EnvDTE.vsStartUp>, con valori compresi tra 0 e 5:<br /><br /> - 0: Apri home page<br />- 1: Carica ultima soluzione caricata<br />- 2: Mostra finestra **Apri progetto**<br />- 3: Mostra finestra **Nuovo progetto**<br />- 4: Visualizza ambiente vuoto<br />- 5: Mostra pagina iniziale|
 |StartPageRSSUrl|Get/Set (String)|URL del feed RSS usato all'avvio.|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Aggiorna la pagina iniziale dopo ogni passaggio dell'intervallo specificato in StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Intervallo in minuti per l'aggiornamento della pagina iniziale.|
@@ -166,4 +166,4 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 - [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Pagina delle opzioni, Proprietà del nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md)
-- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
+- [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md) (Ambiente, finestra di dialogo Opzioni)

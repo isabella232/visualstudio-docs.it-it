@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7fac1c840d93c03b659e7934a82eb53895b60ede
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141946"
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccolta di dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler
@@ -28,10 +28,10 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
   
 |Attività|Contenuti correlati|  
 |----------|---------------------|  
-|**Avviare un'applicazione .NET Framework e sottoporre a profilatura dati di concorrenza**|-   [Procedura: Avviare un'applicazione .NET Framework per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Avviare un'applicazione C/C++ e sottoporre a profilatura dati di concorrenza**|-   [Procedura: Avviare un'applicazione nativa per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione .NET Framework per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione nativa e raccogliere dati di concorrenza](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
+|**Avviare un'applicazione .NET Framework e sottoporre a profilatura dati di concorrenza **|-   [How to: Launch a .NET Framework Application to Collect Concurrency Data](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md) (Procedura: Avviare un'applicazione .NET Framework per raccogliere dati di concorrenza)|  
+|**Avviare un'applicazione C/C++ e sottoporre a profilatura dati di concorrenza **|-   [Procedura: avviare un'applicazione nativa per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [Procedura: connessione del profiler a un'applicazione .NET Framework per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: connessione del profiler a un'applicazione nativa e raccolta di dati di concorrenza](/visualstudio/profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>Attività correlate  
   
@@ -39,9 +39,9 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
   
 |Attività|Contenuti correlati|  
 |----------|---------------------|  
-|**Eseguire la profilatura tramite il metodo di campionamento**|-   [Raccolta di statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccolta di dati di intervallo dettagliati tramite strumentazione](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**Sottoporre a profilatura l'allocazione di memoria .NET e la garbage collection**|-   [Raccolta di dati di memoria di .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
+|**Eseguire la profilatura tramite il metodo di campionamento**|-   [Raccolta delle statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
+|**Profilare usando il metodo di strumentazione**|-   [Raccolta di dati di intervallo dettagliati tramite la strumentazione](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
+|**Sottoporre a profilatura l'allocazione di memoria .NET e la garbage collection**|-   [Raccolta di dati di memoria .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**Aggiunta di dati di interazione tra livelli**|-   [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ### <a name="profiling-concurrency-issues"></a>Profilatura di problemi di concorrenza  
@@ -56,5 +56,5 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
   
  [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)  
   
-## <a name="reference"></a>Riferimenti  
- [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)
+## <a name="reference"></a>Riferimento  
+ [Riferimento Strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)

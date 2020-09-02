@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158702"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Utilizzo elevato del processore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id regola | DA0004 |  
-| Categoria | Utilizzo degli strumenti di profilatura |  
-| Metodi di profilatura | Campionamento di strumentazione |  
+ID regola | DA0004 |  
+| Categoria | Utilizzo Strumenti di profilatura |  
+| Metodi di profilatura | Campionamento strumentazione |  
 | Messaggio | L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di usare la modalità di campionamento per le applicazioni basate sulla CPU.|  
 | Tipo di regola | Informazioni |  
   

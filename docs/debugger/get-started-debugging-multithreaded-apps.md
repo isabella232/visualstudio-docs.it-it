@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350511"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introduzione al debug di applicazioni multithread (C#, Visual Basic, C++)
@@ -67,7 +67,7 @@ Per prima cosa è necessario un progetto di applicazione multithreading. Di segu
 
    Digitare quindi un nome come *MyThreadWalkthroughApp* e fare clic su **OK**.
 
-   Fare clic su **OK**.
+   Selezionare **OK**.
    ::: moniker-end
 
    Verrà visualizzato un nuovo progetto console. Una volta creato il progetto, viene visualizzato un file di origine. A seconda della lingua scelta, il file di origine potrebbe essere denominato *Program.cs*, *MyThreadWalkthroughApp. cpp*o *Module1. vb*.
@@ -209,7 +209,7 @@ Per prima cosa è necessario un progetto di applicazione multithreading. Di segu
     End Class
     ```
 
-1. Scegliere **Salva tutto** dal menu **File**.
+1. Scegliere **Save All** (Salva tutto) dal menu **File**.
 
 1. (Solo Visual Basic) In Esplora soluzioni (riquadro a destra), fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**. Nella scheda **applicazione** impostare l'oggetto di **avvio** su **semplice**.
 
@@ -313,7 +313,7 @@ Nella finestra **stack in parallelo** è possibile passare da una visualizzazion
 
 5. Per deselezionare i thread, fare clic con il pulsante destro del mouse su uno o più thread con flag nella finestra espressione di **controllo in parallelo** e selezionare **Rimuovi flag**.
 
-### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Blocca e sblocca l'esecuzione del thread
+### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> Blocca e sblocca l'esecuzione del thread
 
 > [!TIP]
 > È possibile bloccare e sbloccare (sospendere e riprendere) thread per controllare l'ordine in cui i thread eseguono il lavoro. Questo può aiutare a risolvere i problemi di concorrenza, ad esempio i deadlock e le race condition.
@@ -332,7 +332,7 @@ Nella finestra **stack in parallelo** è possibile passare da una visualizzazion
 
     L'app può anche creare un'istanza di alcuni nuovi thread. I nuovi thread sono senza flag e non sono bloccati.
 
-### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a>Segui un singolo thread con punti di interruzione condizionali
+### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a> Segui un singolo thread con punti di interruzione condizionali
 
 Può essere utile seguire l'esecuzione di un singolo thread nel debugger. Un modo per eseguire questa operazione consiste nel bloccare i thread a cui non si è interessati. In alcuni scenari potrebbe essere necessario seguire un singolo thread senza bloccare altri thread, ad esempio per riprodurre un bug specifico. Per seguire un thread senza bloccare altri thread, è necessario evitare di suddividere il codice ad eccezione del thread a cui si è interessati. A tale scopo, è possibile impostare un punto di [interruzione condizionale](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
@@ -360,7 +360,7 @@ Può essere utile seguire l'esecuzione di un singolo thread nel debugger. Un mod
     > [!NOTE]
     > Quando si avanza il debugger, vengono eseguiti tutti i thread. Tuttavia, il debugger non si interrompe nel codice su altri thread, a meno che uno degli altri thread non raggiunga un punto di interruzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: Passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md)

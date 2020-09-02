@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62950569"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Guida di R Tools per Visual Studio
@@ -24,7 +24,7 @@ La Guida di R è integrata direttamente nella finestra interattiva in Visual Stu
 > [!Tip]
 > La finestra della Guida, come tutte le finestre di Visual Studio, può essere disposta e ancorata a seconda delle proprie preferenze. Vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Per aprire i risultati della Guida in un browser, selezionare il menu**Opzioni** **strumenti** > R e impostare la proprietà **Visualizzatore Guida R** su . `External` Vedere [R Tools for Visual Studio options](options-for-r-tools-in-visual-studio.md) (Opzioni di R Tools per Visual Studio).
+> Per aprire i risultati della Guida in un browser, selezionare il menu opzioni di **R Tools**  >  **Options** e impostare la proprietà **Guida di R browser** su `External` . Vedere [R Tools for Visual Studio options](options-for-r-tools-in-visual-studio.md) (Opzioni di R Tools per Visual Studio).
 
 Per eseguire ricerche nella Guida, usare il comando `??` seguito dal termine di ricerca. Se il termine di ricerca contiene spazi, usare le virgolette:
 
@@ -42,13 +42,13 @@ La finestra della Guida ha anche un campo di immissione per la ricerca tramite i
 
 Gli sviluppatori spesso cercano nella documentazione di R informazioni sui nomi di funzione, i set di dati e altri elementi. R Tools per Visual Studio (RTVS) semplifica il processo grazie all'integrazione delle ricerche nella Guida direttamente nell'editor e nelle finestre interattive.
 
-- Premendo **F1** durante un'operazione di completamento automatico si ottiene un elenco di risultati della Guida che corrispondono alla sottostringa.
+- La pressione di **F1** durante un'operazione di completamento automatico genera un elenco di risultati della Guida corrispondenti alla sottostringa.
 - Fare clic con il pulsante destro del mouse su un termine di ricerca, ad esempio una funzione, e selezionare il comando **Help on** (Guida su) per aprire la Guida per tale funzione. È anche possibile richiamare **Help on** (Guida su) per qualsiasi selezione.
 
     ![Richiamare la Guida mediante il menu di scelta rapida visualizzato facendo clic con il pulsante destro del mouse](media/help-right-click.png)
 
 > [!Tip]
-> Per aprire la Guida integrata in un browser, selezionare**Opzioni** **strumenti** > R e impostare **F1 Web Browser su** `External`. Vedere [R Tools for Visual Studio options](options-for-r-tools-in-visual-studio.md) (Opzioni di R Tools per Visual Studio).
+> Per aprire la guida integrata in un browser, selezionare **R Tools**  >  **options** e impostare il **Web browser F1** su `External` . Vedere [R Tools for Visual Studio options](options-for-r-tools-in-visual-studio.md) (Opzioni di R Tools per Visual Studio).
 
 ## <a name="integrated-stackoverflow-search"></a>Ricerca di StackOverflow integrata
 
@@ -56,7 +56,7 @@ Oltre a eseguire ricerche nella documentazione di R, gli sviluppatori spesso cer
 
 ![Risultati della ricerca nel Web in Visual Studio](media/help-web-search-results.png)
 
-È possibile modificare la stringa `R site:stackoverflow`di ambito aggiunta, , tramite l'opzione della stringa di ricerca Web **R Tools** > **Options** > **F1:**
+È possibile modificare la stringa di ambito accodata, `R site:stackoverflow` , tramite l'opzione **R Tools**  >  **Opzioni**della  >  **stringa di ricerca Web F1** :
 
 ![Modifica dell'opzione Stringa di ricerca sul Web F1](media/options-dialog.png)
 

@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183802"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specificare i file di simboli (con estensione pdb) e di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F #)
@@ -81,7 +81,7 @@ Il debugger cerca anche i file di simboli nei percorsi seguenti:
 
    - Qualsiasi cartella della cache di simboli locale.
 
-   - Server di simboli e posizioni di rete, Internet o locali specificati, ad esempio i server dei simboli Microsoft, se selezionati. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]può scaricare i file di simboli di debug dai server di simboli che implementano il `symsrv` protocollo. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) e gli [strumenti di debug per Windows](/windows-hardware/drivers/debugger/index) sono due strumenti che possono usare i server di simboli.
+   - Server di simboli e posizioni di rete, Internet o locali specificati, ad esempio i server dei simboli Microsoft, se selezionati. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può scaricare i file di simboli di debug dai server di simboli che implementano il `symsrv` protocollo. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) e gli [strumenti di debug per Windows](/windows-hardware/drivers/debugger/index) sono due strumenti che possono usare i server di simboli.
 
      I server di simboli che è possibile utilizzare includono:
 
@@ -159,14 +159,14 @@ Nella pagina **strumenti**  >  **Opzioni**di  >  **debug**  >  **simboli** è po
   <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
 - **Abilita supporto del server di origine**
 
-  Usa il server di origine per facilitare il debug di un'app quando non è presente codice sorgente nel computer locale oppure il file con *estensione PDB* non corrisponde al codice sorgente. Il server di origine accetta richieste di file e restituisce i file effettivi dal controllo del codice sorgente. Il server di origine viene eseguito utilizzando una DLL denominata *srcsrv. dll* per leggere il file con *estensione PDB* dell'app. Il file con *estensione PDB* contiene i puntatori al repository del codice sorgente, nonché i comandi utilizzati per recuperare il codice sorgente dal repository.
+  Usa il server di origine per facilitare il debug di un'app quando non è presente codice sorgente nel computer locale oppure il file con *estensione PDB* non corrisponde al codice sorgente. Il server di origine accetta richieste di file e restituisce i file effettivi dal controllo del codice sorgente. Il server di origine viene eseguito utilizzando una DLL denominata *srcsrv.dll* per leggere il file con *estensione PDB* dell'app. Il file con *estensione PDB* contiene i puntatori al repository del codice sorgente, nonché i comandi utilizzati per recuperare il codice sorgente dal repository.
 
-  È possibile limitare i comandi che *srcsrv. dll* può eseguire dal file *PDB* dell'app elencando i comandi consentiti in un file denominato *srcsrv. ini*. Inserire il file *srcsrv. ini* nella stessa cartella di *srcsrv. dll* e *devenv. exe*.
+  È possibile limitare i comandi che *srcsrv.dll* possibile eseguire dal file *PDB* dell'app elencando i comandi consentiti in un file denominato *srcsrv.ini*. Inserire il file di *srcsrv.ini* nella stessa cartella *srcsrv.dll* e *devenv.exe*.
 
   >[!IMPORTANT]
-  >I comandi arbitrari possono essere incorporati nel file con *estensione PDB* di un'app, quindi assicurarsi di inserire solo i comandi che si desidera eseguire in un file *srcsrv. ini* . Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >I comandi arbitrari possono essere incorporati nel file con *estensione PDB* di un'app, quindi assicurarsi di inserire solo i comandi da eseguire in un file di *srcsrv.ini* . Eventuali tentativi di eseguire un comando non presente nel file *srcsvr.ini* causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
-  >Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Se, ad esempio, è stato elencato *cmd. exe* in *srcsrv. ini*, un utente malintenzionato potrebbe specificare parametri in *cmd. exe* che lo renderebbe pericoloso.
+  >Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Se, ad esempio, è stato elencato *cmd.exe* nel *srcsrv.ini*, un utente malintenzionato potrebbe specificare parametri in *cmd.exe* che lo renderebbe pericoloso.
 
   Selezionare questo elemento e gli elementi figlio desiderati. **Consenti al server di origine per gli assembly parzialmente attendibili (solo gestito)** ed **Esegui sempre comandi del server di origine non attendibili senza chiedere conferma** possono aumentare i rischi per la sicurezza.
 
@@ -182,21 +182,21 @@ Compilare con **/debug** per creare un file con *estensione PDB* . È possibile 
 
 ### <a name="cc-options"></a>Opzioni C/C++
 
-- File *VC \< x>. pdb* e * \< Project>. pdb*
+- File *VC \<x> . pdb* e * \<project> . pdb*
 
-  Quando si esegue la compilazione con [/Zi o/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format), viene creato un file con *estensione PDB* per C/C++. In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] , l'opzione [/FD](/cpp/build/reference/fd-program-database-file-name) assegna un nome al file con *estensione PDB* creato dal compilatore. Quando si crea un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizzando l'IDE, l'opzione **/FD** viene impostata in modo da creare un file con *estensione PDB* denominato * \< Project>. pdb*.
+  Quando si esegue la compilazione con [/Zi o/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format), viene creato un file con *estensione PDB* per C/C++. In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] , l'opzione [/FD](/cpp/build/reference/fd-program-database-file-name) assegna un nome al file con *estensione PDB* creato dal compilatore. Quando si crea un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizzando l'IDE, l'opzione **/FD** viene impostata in modo da creare un file con *estensione PDB* denominato * \<project> PDB*.
 
   Se si compila l'applicazione C/C++ usando un makefile e si specifica **/Zi** o **/Zi** senza usare **/FD**, il compilatore crea due file con *estensione PDB* :
 
-  - *VC \< x>. pdb*, dove * \< x>* rappresenta la versione del compilatore Microsoft C++, ad esempio *VC11. pdb*
+  - *VC \<x> . pdb*, dove *\<x>* rappresenta la versione del compilatore Microsoft C++, ad esempio *VC11. pdb*
 
-    Il file *VC \< x>. pdb* archivia tutte le informazioni di debug relative ai singoli file oggetto e si trova nella stessa directory del makefile del progetto. Ogni volta che viene creato un file oggetto, il compilatore C/C++ unisce le informazioni di debug nel file *VC \< x>. pdb*. Quindi, anche se ogni file di origine include file di intestazione comuni, ad esempio * \< Windows. h>*, i typedef di tali intestazioni vengono archiviati solo una volta, anziché in ogni file oggetto. Queste includono informazioni sui tipi ma non sui simboli, ad esempio sulle definizioni delle funzioni.
+    Il file *VC \<x> . pdb* archivia tutte le informazioni di debug per i singoli file oggetto e si trova nella stessa directory del makefile del progetto. Ogni volta che viene creato un file oggetto, il compilatore C/C++ unisce le informazioni di debug nel file *VC \<x> . pdb*. Quindi, anche se ogni file di origine include file di intestazione comuni, ad esempio *\<windows.h>* , i typedef di tali intestazioni vengono archiviati una sola volta, anziché in ogni file oggetto. Queste includono informazioni sui tipi ma non sui simboli, ad esempio sulle definizioni delle funzioni.
 
-  - *\<progetto>. pdb*
+  - *\<project>PDB*
 
-    Il file * \< Project>. pdb* archivia tutte le informazioni di debug per il file *exe* del progetto e risiede nella sottodirectory *\Debug* Il file * \< Project>. pdb* contiene informazioni complete sul debug, inclusi i prototipi di funzione, non solo le informazioni sul tipo disponibili in *VC \< x>. pdb*.
+    Il file con * \<project> estensione PDB* archivia tutte le informazioni di debug per il file *exe* del progetto e risiede nella sottodirectory *\Debug* Il file con * \<project> estensione PDB* contiene informazioni complete sul debug, inclusi i prototipi di funzione, non solo le informazioni sul tipo disponibili in *VC \<x> . pdb*.
 
-  I file *VC \< x>. pdb* e * \< Project>. pdb* consentono gli aggiornamenti incrementali. Il linker incorpora anche il percorso dei file con *estensione PDB* nel file con estensione *exe* o *dll* creato.
+  Entrambi i file *VC \<x> . pdb* e * \<project> . pdb* consentono gli aggiornamenti incrementali. Il linker incorpora anche il percorso dei file con *estensione PDB* nel file con estensione *exe* o *dll* creato.
 
 - <a name="use-dumpbin-exports"></a>Tabelle di esportazione DLL
 
@@ -206,7 +206,7 @@ Compilare con **/debug** per creare un file con *estensione PDB* . È possibile 
 
 ### <a name="web-applications"></a>Applicazioni Web
 
-Impostare il file *Web. config* dell'applicazione ASP.NET sulla modalità di debug. Tramite la modalità di debug, ASP.NET genera simboli per i file generati dinamicamente e il debugger si collega all'applicazione ASP.NET. Visual Studio imposta questa impostazione automaticamente quando si avvia il debug, se il progetto è stato creato dal modello dei progetti Web.
+Impostare la modalità di debug per il file di *web.config* dell'applicazione ASP.NET. Tramite la modalità di debug, ASP.NET genera simboli per i file generati dinamicamente e il debugger si collega all'applicazione ASP.NET. Visual Studio imposta questa impostazione automaticamente quando si avvia il debug, se il progetto è stato creato dal modello dei progetti Web.
 
 ## <a name="manage-symbols-while-debugging"></a>Gestire i simboli durante il debug
 
@@ -245,7 +245,7 @@ Quando si verifica questa situazione, il debugger Visualizza i **simboli non car
 **Per utilizzare la pagina del documento nessun simbolo caricato per individuare e caricare i simboli mancanti:**
 
 - Per modificare il percorso di ricerca, selezionare un percorso non selezionato oppure selezionare **nuovo percorso** o **nuovo percorso VSTS** e immettere o selezionare un nuovo percorso. Selezionare **carica** per cercare nuovamente i percorsi e caricare il file di simboli se viene trovato.
-- Per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca, selezionare **Sfoglia e trova \< nome file eseguibile>**. Il file di simboli viene caricato se viene trovato oppure **Esplora file** consente di selezionare manualmente il file di simboli.
+- Per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca, selezionare **Sfoglia e trova \<executable-name> **. Il file di simboli viene caricato se viene trovato oppure **Esplora file** consente di selezionare manualmente il file di simboli.
 - Per aprire la pagina **Opzioni**di  >  **debug**  >  **simboli** , selezionare **Modifica impostazioni simboli**.
 - Per visualizzare il disassembly in una nuova finestra una volta, selezionare **Visualizza Disassembly**oppure selezionare la finestra di **dialogo Opzioni** per impostare l'opzione in modo che mostri sempre il disassembly quando i file di origine o di simboli non vengono trovati.
 - Per visualizzare i percorsi cercati e il risultato, espandere **informazioni sul caricamento dei simboli**.

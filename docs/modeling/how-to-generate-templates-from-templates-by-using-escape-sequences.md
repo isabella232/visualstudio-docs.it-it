@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1460b03a027a2b33844edc7d617f8b5f21208772
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594643"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procedura: generare modelli da modelli utilizzando sequenze di escape
@@ -21,7 +21,7 @@ ms.locfileid: "75594643"
 
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Per generare un modello di testo dall'interno di un modello di testo
 
-- Utilizzare la barra rovesciata (\\) come carattere di escape per produrre i tag di markup necessari all'interno del modello di testo per le direttive, le istruzioni, le espressioni e le funzionalità di classe in un file di modello di testo separato.
+- Utilizzare la barra rovesciata ( \\ ) come carattere di escape per produrre i tag di markup necessari all'interno del modello di testo per le direttive, le istruzioni, le espressioni e le funzionalità di classe in un file di modello di testo separato.
 
     ```
     \<#@ directive \#>
@@ -31,7 +31,7 @@ ms.locfileid: "75594643"
     ```
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono utilizzati caratteri di escape per produrre un modello di testo da un modello di testo. La direttiva `output` imposta il tipo di file di destinazione sul tipo di file del modello di testo (con estensione TT).
+ Nell'esempio seguente vengono utilizzati caratteri di escape per produrre un modello di testo da un modello di testo. La `output` direttiva imposta il tipo di file di destinazione sul tipo di file del modello di testo (con estensione TT).
 
 ```csharp
 \<#@ output extension=".tt" \#>

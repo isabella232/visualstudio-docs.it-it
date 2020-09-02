@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594929"
 ---
 # <a name="trackedvctooltask-base-class"></a>Classe di base TrackedVCToolTask
@@ -30,7 +30,7 @@ Nella tabella seguente vengono descritti i parametri della classe di base **Trac
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Parametro **bool** facoltativo.|
 |**EnableExecuteTool**|Parametro **bool** facoltativo.|
-|**ExcludedInputPaths**|Parametro **Facoltativo ITaskItem[].**|
+|**ExcludedInputPaths**|Parametro **ITaskItem []** facoltativo.|
 |**MinimalRebuildFromTracking**|Parametro **bool** facoltativo.|
 |**PathOverride**|Parametro **stringa** facoltativo.|
 |**PostBuildTrackingCleanup**|Parametro **bool** facoltativo.|
@@ -38,17 +38,17 @@ Nella tabella seguente vengono descritti i parametri della classe di base **Trac
 |**SkippedExecution**|Parametro di output **bool** facoltativo.|
 |**SourcesCompiled**|Parametro di output facoltativo **ITaskItem[]**.|
 |**TLogCommandFile**|Parametro **ITaskItem** facoltativo.|
-|**TLogReadFiles**|Parametro **Facoltativo ITaskItem[].**|
-|**TLogWriteFiles**|Parametro **Facoltativo ITaskItem[].**|
+|**TLogReadFiles**|Parametro **ITaskItem []** facoltativo.|
+|**TLogWriteFiles**|Parametro **ITaskItem []** facoltativo.|
 |**ToolArchitecture**|Parametro **stringa** facoltativo.|
 |**TrackCommandLines**|Parametro **bool** facoltativo.|
 |**TrackFileAccess**|Parametro **bool** facoltativo.|
-|**TrackedInputFilesToIgnore**|Parametro **Facoltativo ITaskItem[].**|
-|**TrackedOutputFilesToIgnore**|Parametro **Facoltativo ITaskItem[].**|
+|**TrackedInputFilesToIgnore**|Parametro **ITaskItem []** facoltativo.|
+|**TrackedOutputFilesToIgnore**|Parametro **ITaskItem []** facoltativo.|
 |**TrackerFrameworkPath**|Parametro **stringa** facoltativo.|
 |**TrackerSdkPath**|Parametro **stringa** facoltativo.|
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimento alle attività](../msbuild/msbuild-task-reference.md)<br/>
+[Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)<br/>
 [Attività](../msbuild/msbuild-tasks.md)

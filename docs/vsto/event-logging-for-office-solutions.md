@@ -1,5 +1,5 @@
 ---
-title: Registrazione degli eventi per le soluzioni Office
+title: Registrazione eventi per le soluzioni Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,25 +16,25 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951941"
 ---
-# <a name="event-logging-for-office-solutions"></a>Registrazione degli eventi per le soluzioni Office
+# <a name="event-logging-for-office-solutions"></a>Registrazione eventi per le soluzioni Office
   È possibile usare il Visualizzatore eventi di Windows per visualizzare i messaggi di eccezione acquisiti da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] quando si installano o disinstallano soluzioni Office. Questi messaggi del registratore eventi possono essere usati per risolvere i problemi di installazione e di distribuzione.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="read-the-event-log"></a>Leggere il registro eventi
+## <a name="read-the-event-log"></a>Leggi il registro eventi
  Aprire il **Visualizzatore eventi** e applicare un filtro per visualizzare solo gli eventi desiderati.
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Per leggere il registro eventi in Windows Server 2003 e Windows XP
 
-1. Aprire **Strumenti di amministrazione**nel Pannello di controllo.
+1. Nel pannello di controllo aprire **strumenti di amministrazione**.
 
-2. Avviare il **Visualizzatore eventi**.
+2. Avviare **Visualizzatore eventi**.
 
 3. Nell'elenco dei registri eventi, selezionare **Applicazione**.
 
@@ -48,9 +48,9 @@ ms.locfileid: "62951941"
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Per leggere il registro eventi in Windows 7, Windows Vista e Windows Server 2008
 
-1. Aprire **Strumenti di amministrazione**nel Pannello di controllo.
+1. Nel pannello di controllo aprire **strumenti di amministrazione**.
 
-2. Avviare il **Visualizzatore eventi**.
+2. Avviare **Visualizzatore eventi**.
 
 3. Espandere **Registri di Windows**.
 
@@ -74,12 +74,12 @@ ms.locfileid: "62951941"
 
   Dopo la disinstallazione di una soluzione Office, i messaggi di eccezione rimangono nel registro eventi.
 
-  Per visualizzare o registrare messaggi di eccezione durante l'esecuzione di una soluzione Office, vedere [Debug Office projects](../vsto/debugging-office-projects.md) e [progetti di Office di eseguire il Debug](../vsto/debugging-office-projects.md).
+  Per visualizzare o registrare i messaggi di eccezione quando si esegue una soluzione Office, vedere eseguire il debug di progetti di [Office](../vsto/debugging-office-projects.md) ed [eseguire il debug di progetti](../vsto/debugging-office-projects.md)di Office.
 
 ### <a name="localization"></a>Localizzazione
- Il linguaggio del messaggio di eccezione viene determinato dal linguaggio di runtime di Visual Studio Tools per Office. Ad esempio, se il computer dell'utente finale ha il language pack giapponese installato, il messaggio di eccezione viene scritto nel registro eventi in giapponese.
+ Il linguaggio del messaggio di eccezione viene determinato dal linguaggio di runtime di Visual Studio Tools per Office. Ad esempio, se nel computer dell'utente finale è installato il Language Pack giapponese, il messaggio di eccezione viene scritto nel registro eventi in giapponese.
 
-## <a name="disable-the-event-logger"></a>Disabilitare il Registratore eventi
+## <a name="disable-the-event-logger"></a>Disabilitare il logger di eventi
  Quando si installano o disinstallano soluzioni Office, il registratore eventi viene attivato per impostazione predefinita. Per disabilitarlo è possibile impostare la variabile di ambiente VSTO_EVENTLOGDISABLED su "1" (uno).
 
 ### <a name="to-disable-the-event-log"></a>Per disabilitare il registro eventi
@@ -98,4 +98,4 @@ ms.locfileid: "62951941"
 
 ## <a name="see-also"></a>Vedere anche
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
-- [Risolvere i problemi di distribuzione di soluzioni Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Risolvere i problemi di distribuzione della soluzione Office](../vsto/troubleshooting-office-solution-deployment.md)

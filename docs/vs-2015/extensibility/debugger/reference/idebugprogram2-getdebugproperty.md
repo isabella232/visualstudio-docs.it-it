@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetDebugProperty | Microsoft Docs
+title: 'IDebugProgram2:: GetDebugProperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29b86a1aa144e553b126445a865330a8edb786ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187910"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
@@ -40,15 +40,15 @@ int GetDebugProperty( 
   
 #### <a name="parameters"></a>Parametri  
  `ppProperty`  
- [out] Restituisce un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che rappresenta le proprietà del programma.  
+ out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta le proprietà del programma.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Le proprietà restituite da questo metodo sono specifiche del programma. Se il programma deve restituire più di una proprietà, il [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto restituito da questo metodo è un contenitore di proprietà aggiuntive e chiamando la [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metodo restituisce un elenco di tutte le proprietà.  
+## <a name="remarks"></a>Osservazioni  
+ Le proprietà restituite da questo metodo sono specifiche del programma. Se il programma deve restituire più di una proprietà, l'oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) restituito da questo metodo è un contenitore di proprietà aggiuntive e la chiamata al metodo [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) restituisce un elenco di tutte le proprietà.  
   
- Un programma può esporre qualsiasi numero e tipo di proprietà aggiuntive che possono essere descritti tramite il `IDebugProperty2` interfaccia. Un IDE potrebbe visualizzare le proprietà di programma aggiuntive tramite un'interfaccia utente del browser di proprietà generica.  
+ Un programma può esporre qualsiasi numero e tipo di proprietà aggiuntive che possono essere descritte tramite l' `IDebugProperty2` interfaccia. Un IDE potrebbe visualizzare le proprietà aggiuntive del programma tramite un'interfaccia utente del Visualizzatore proprietà generica.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
