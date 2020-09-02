@@ -1,5 +1,5 @@
 ---
-title: 'Oggetto VSCodeWindow : Documenti Microsoft'
+title: Oggetto oggetto VsCodeWindow. | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,25 +14,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 55739b1ef577123ac0395b4c5cfb1e3c5dbc779f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697962"
 ---
-# <a name="vscodewindow-object"></a>Oggetto VSCodeWindow
-Una finestra del codice è una finestra di documento specializzata che può includere una o più visualizzazioni di testo, in genere l'oggetto. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
+# <a name="vscodewindow-object"></a>Oggetto oggetto VsCodeWindow.
+Una finestra del codice è una finestra di documento specializzata che può includere una o più visualizzazioni di testo, in genere l' <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> oggetto.
 
- Dal punto di vista dell'architettura, la finestra del codice è una finestra del documento che si trova all'interno di una cornice della finestra. Funzionalmente, la finestra del codice è semplicemente una finestra del documento con funzionalità aggiuntive. In modalità interfaccia a documenti multipli (MDI), la finestra del codice è il frame figlio MDI. Per ulteriori informazioni, vedere Personalizzazione delle finestre di [codice tramite l'API legacy](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+ In architettura, la finestra del codice è una finestra del documento che si trova all'interno di una cornice della finestra. Dal punto di vista funzionale, la finestra del codice è semplicemente una finestra del documento con funzionalità aggiuntive. Nella modalità interfaccia a documenti multipli (MDI) la finestra del codice è il frame figlio MDI. Per altre informazioni, vedere [personalizzazione delle finestre di codice tramite l'API legacy](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
 
- La tabella seguente include le <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> interfacce nell'oggetto.
+ Nella tabella seguente sono incluse le interfacce dell' <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> oggetto.
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|Fornisce un meccanismo di accesso generico per individuare un servizio identificato da un identificatore univoco globale (GUID).|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Rappresenta un elemento figlio MDI (Multiple Document Interface) contenente una o più visualizzazioni codice.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Rappresenta un'interfaccia a documenti multipli (MDI) che contiene una o più visualizzazioni di codice.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Riempie una cornice della finestra.|
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
-- [Modifica delle figure](https://www.microsoft.com/download/details.aspx?id=55984)
+- [Modifica figure](https://www.microsoft.com/download/details.aspx?id=55984)

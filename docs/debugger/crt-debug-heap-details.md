@@ -74,10 +74,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247937"
 ---
 # <a name="crt-debug-heap-details"></a>Informazioni dettagliate sull'heap di debug CRT
@@ -147,7 +147,7 @@ Ciascun blocco di memoria dell'heap di debug viene assegnato a uno di cinque tip
 
 `_CRT_BLOCK` I blocchi di memoria allocati internamente da numerose funzioni della libreria di runtime sono contrassegnati come blocchi CRT, in modo da poter essere gestiti separatamente. Di conseguenza non avranno necessariamente alcun effetto sul rilevamento delle perdite e su altre operazioni. Le allocazioni non devono mai allocare, riallocare o liberare blocchi di tipo CRT.
 
-`_CLIENT_BLOCK` Un'applicazione può tenere traccia con modalità speciali di un dato gruppo di allocazioni a scopo di debug effettuando tali allocazioni con questo tipo di blocco di memoria, usando chiamate esplicite alle funzioni dell'heap di debug. In MFC, ad esempio, tutti gli oggetti **CObjects** vengono allocati come blocchi client, mentre è possibile che altre applicazioni inseriscano oggetti di memoria differenti in blocchi client. È inoltre possibile specificare sottotipi dei blocchi client per consentire una registrazione più differenziata. Per specificare sottotipi di blocchi client, spostare il numero verso sinistra di 16 bit ed effettuare un'operazione `OR` su di esso con `_CLIENT_BLOCK`. Esempio:
+`_CLIENT_BLOCK` Un'applicazione può tenere traccia con modalità speciali di un dato gruppo di allocazioni a scopo di debug effettuando tali allocazioni con questo tipo di blocco di memoria, usando chiamate esplicite alle funzioni dell'heap di debug. In MFC, ad esempio, tutti gli oggetti **CObjects** vengono allocati come blocchi client, mentre è possibile che altre applicazioni inseriscano oggetti di memoria differenti in blocchi client. È inoltre possibile specificare sottotipi dei blocchi client per consentire una registrazione più differenziata. Per specificare sottotipi di blocchi client, spostare il numero verso sinistra di 16 bit ed effettuare un'operazione `OR` su di esso con `_CLIENT_BLOCK`. Ad esempio:
 
 ```cpp
 #define MYSUBTYPE 4

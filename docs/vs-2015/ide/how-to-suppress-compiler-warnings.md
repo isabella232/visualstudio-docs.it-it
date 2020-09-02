@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670648"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: non visualizzare avvisi del compilatore
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile ripulire un log di compilazione specificando uno o più tipi di avvisi del compilatore che non devono essere contenuti nel log. È ad esempio possibile usare questa tecnica per rivedere alcune ma non tutte le informazioni generate automaticamente quando il livello di dettaglio del log di compilazione viene impostato su Normale, Dettagliato o Diagnostico. Per altre informazioni sul livello di dettaglio, vedere [How to: View, Save, and Configure Build Log Files](../ide/how-to-view-save-and-configure-build-log-files.md) (Procedura: Visualizzare, salvare e configurare file di log di compilazione)
+È possibile ripulire un log di compilazione specificando uno o più tipi di avvisi del compilatore che non devono essere contenuti nel log. È ad esempio possibile usare questa tecnica per rivedere alcune ma non tutte le informazioni generate automaticamente quando il livello di dettaglio del log di compilazione viene impostato su Normale, Dettagliato o Diagnostico. Per ulteriori informazioni sul livello di dettaglio, vedere [procedura: visualizzare, salvare e configurare i file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Per non visualizzare avvisi specifici per C# Visual o F \#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Per non visualizzare avvisi specifici per Visual C# o F\#
 
 1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72670648"
 
 ## <a name="suppressing-warnings-for-visual-basic"></a>Avvisi non visualizzati per Visual Basic
 
-È possibile nascondere gli avvisi del compilatore specifici per Visual Basic modificando il file con estensione vbproj per il progetto. È anche possibile usare la [pagina Compilazione di Creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) per scegliere di non visualizzare gli di avvisi in base alla categoria. Per altre informazioni, vedere [Configuring Warnings in Visual Basic](../ide/configuring-warnings-in-visual-basic.md) (Configurazione degli avvisi in Visual Basic).
+È possibile nascondere gli avvisi del compilatore specifici per Visual Basic modificando il file con estensione vbproj per il progetto. È anche possibile usare la [pagina Compilazione di Creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) per scegliere di non visualizzare gli di avvisi in base alla categoria. Per ulteriori informazioni, vedere [Configuring Warnings in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Per non visualizzare avvisi specifici per Visual Basic
 
@@ -58,7 +58,7 @@ ms.locfileid: "72670648"
 
 2. Sulla barra dei menu scegliere **Progetto**, **Scarica progetto**.
 
-3. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Modifica**_nomeprogetto_ **.vbproj**.
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Modifica**_nomeprogetto_**.vbproj**.
 
     Il file di progetto si aprirà nell'editor del codice.
 
@@ -111,5 +111,5 @@ ms.locfileid: "72670648"
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura dettagliata: compilazione di un'applicazione](../ide/walkthrough-building-an-application.md)
-- [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)
+- [Procedura: visualizzare, salvare e configurare i file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

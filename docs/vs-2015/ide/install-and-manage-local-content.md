@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 569254c9df668c7755116f37a819fe65a3ecaa59
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670469"
 ---
 # <a name="install-and-manage-local-content"></a>Installare e gestire il contenuto locale
@@ -52,7 +52,7 @@ Usare Microsoft Help Viewer per aggiungere, rimuovere, aggiornare e spostare il 
 
     - Immettere il percorso di un file con estensione msha o l'URL di un endpoint del servizio.
 
-    - Scegliere il pulsante Sfoglia ( **…** ) per trovare un file con estensione MSHA.
+    - Scegliere il pulsante Sfoglia (**..**.) per passare a un file con estensione msha.
 
     - Nell'elenco scegliere la voce che è stata usata più di recente.
 

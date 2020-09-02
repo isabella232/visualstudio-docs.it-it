@@ -1,5 +1,5 @@
 ---
-title: Plug-in del controllo del codice sorgente Documenti Microsoft
+title: Plug-in del controllo del codice sorgente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,45 +11,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699897"
 ---
 # <a name="source-control-plug-ins"></a>Plug-in del controllo del codice sorgente
-La sezione di riferimento dell'SDK del plug-in del controllo del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]codice sorgente contiene la specifica completa dell'interfaccia che consente l'integrated dei sistemi di controllo del codice sorgente con . Specifica la sintassi e la semantica delle varie funzioni e tipi di dati [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che il plug-in del controllo del codice sorgente deve implementare per interfacciarsi con l'ambiente di sviluppo integrato (IDE).
+La sezione di riferimento dell'SDK del plug-in del controllo del codice sorgente contiene la specifica dell'interfaccia completa che consente l'integrazione dei sistemi di controllo del codice sorgente con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Specifica la sintassi e la semantica delle varie funzioni e tipi di dati che il plug-in del controllo del codice sorgente deve implementare per l'interfaccia con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Funzioni API plug-in del controllo del codice sorgenteSource Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md) Elenca le funzioni che devono essere implementate dal plug-in del controllo del codice sorgente per essere conformi all'API del plug-in del controllo del codice sorgente.
+- [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md) Elenca le funzioni che devono essere implementate dal plug-in del controllo del codice sorgente per garantire la conformità con l'API del plug-in del controllo del codice sorgente.
 
-- [Funzioni di callback implementate dall'IDECallback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md) Vengono descritte le funzioni utilizzate dal plug-in del controllo del codice sorgente per passare informazioni all'IDE durante l'esecuzione di determinati comandi.
+- [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md) Descrive le funzioni utilizzate dal plug-in del controllo del codice sorgente per passare le informazioni all'IDE mentre vengono eseguiti determinati comandi.
 
-- [Enumeratori](../extensibility/enumerators.md) Elenca i tipi di dati dell'enumeratore nell'API del plug-in del controllo del codice sorgente che il plug-in del controllo del codice sorgente deve conoscere.
+- [Enumeratori](../extensibility/enumerators.md) Elenca i tipi di dati dell'enumeratore nell'API del plug-in del controllo del codice sorgente di cui il plug-in del controllo del codice sorgente deve essere a conoscenza.
 
-- [Flag di capacitàCapability Flags](../extensibility/capability-flags.md) Vengono descritti `SCC_CAP_xxx` i flag, che indicano le funzionalità di un provider.
+- [Flag funzionalità](../extensibility/capability-flags.md) Vengono descritti i `SCC_CAP_xxx` flag, che indicano le funzionalità di un provider.
 
-- [Flag di bit utilizzati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) Elenca i flag utili nel contesto di comandi particolari.
+- [Flag utilizzato da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) Elenca i flag che risultano utili nel contesto di particolari comandi.
 
-- [Codici di errore](../extensibility/error-codes.md) Elenca i valori di errore `SCCTRN`comuni restituiti dalle funzioni come .
+- [Codici di errore](../extensibility/error-codes.md) Elenca i valori di errore comuni restituiti dalle funzioni come `SCCTRN` .
 
-- Stringhe utilizzate come chiavi per la ricerca di [un plug-in del controllo del codice sorgenteStrings Used as Keys for Finding a Source Control Plug-in](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md) Vengono descritte le chiavi per l'accesso al Registro di sistema per trovare il plug-in del controllo del codice sorgente.
+- [Stringhe utilizzate come chiavi per la ricerca di un plug-in del controllo del codice sorgente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md) Descrive le chiavi per l'accesso al registro di sistema per trovare il plug-in del controllo del codice sorgente.
 
-- [DI MSSCCPRJ. File SCC](../extensibility/mssccprj-scc-file.md) Descrive un file sul lato client che contiene informazioni opache all'IDE, ma che viene utilizzato dal plug-in del controllo del codice sorgente per individuare la soluzione o il progetto nel controllo della versione.
+- [Mssccprj. File SCC](../extensibility/mssccprj-scc-file.md) descrive un file sul lato client che contiene informazioni opache nell'IDE, ma che viene usato dal plug-in del controllo del codice sorgente per individuare la soluzione o il progetto nel controllo della versione.
 
-- [Procedure consigliate per l'implementazione di un plug-in del controllo del codice sorgenteBest Practices for Implementing a Source Control Plug-in](../extensibility/best-practices-for-implementing-a-source-control-plug-in.md) Fornisce una raccolta di importanti promemoria tecnici da ricordare durante l'implementazione dell'API del plug-in del controllo del codice sorgente.
+- [Procedure consigliate per l'implementazione di un plug-in del controllo del codice sorgente](../extensibility/best-practices-for-implementing-a-source-control-plug-in.md) Fornisce una raccolta di importanti promemoria tecnici da ricordare durante l'implementazione dell'API del plug-in del controllo del codice sorgente.
 
-- [Restrizioni sulle lunghezze delle stringheRestrictions on String Lengths](../extensibility/restrictions-on-string-lengths.md) Vengono descritte le limitazioni dell'API del plug-in del controllo del codice sorgente sulle lunghezze delle stringhe utilizzate in varie funzioni.
+- [Restrizioni sulle lunghezze di stringa](../extensibility/restrictions-on-string-lengths.md) Descrive le limitazioni nell'API del plug-in del controllo del codice sorgente sulle lunghezze delle stringhe utilizzate in varie funzioni.
 
-- [Glossario](../extensibility/source-control-plug-in-glossary.md) Fornisce termini utili e le relative definizioni per la lettura della documentazione di Source Control Plug-in SDK.
+- [Glossario](../extensibility/source-control-plug-in-glossary.md) Fornisce termini utili e le relative definizioni per leggere la documentazione dell'SDK del plug-in del controllo del codice sorgente.
 
-- [Procedura: disattivare gli avvisi di compatibilità per i plug-in del controllo del codice sorgenteHow to: Turn Off Compatibility Warnings for Source Control Plug-ins](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md) Viene descritto come disabilitare gli avvisi.
+- [Procedura: disattivare gli avvisi di compatibilità per i plug-in del controllo del codice sorgente](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md) Viene descritto come disabilitare gli avvisi.
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Esempio di plug-in del controllo del codice sorgenteSource Control Plug-in Sample](https://www.microsoft.com/download/details.aspx?id=55984) Fornisce un esempio della funzionalità del plug-in del controllo del codice sorgente.
+- [Esempio di plug-in del controllo del codice sorgente](https://www.microsoft.com/download/details.aspx?id=55984) Fornisce un esempio di funzionalità del plug-in del controllo del codice sorgente.
 
-- [Guida di test per i plug-in del controllo del codice sorgenteTest Guide for Source Control Plug-ins](../extensibility/internals/test-guide-for-source-control-plug-ins.md) Vengono descritte le procedure di test relative a un plug-in del controllo del codice sorgente.
+- [Guida di test per i plug-in del controllo del codice sorgente](../extensibility/internals/test-guide-for-source-control-plug-ins.md) Descrive le procedure di test correlate a un plug-in del controllo del codice sorgente.
 
-- [Creazione di un plug-in del controllo del codice sorgenteCreating a Source Control Plug-in](../extensibility/internals/creating-a-source-control-plug-in.md) Viene illustrato come creare un plug-in del controllo del codice [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sorgente che fornisce funzionalità di controllo del codice sorgente mentre si utilizza l'interfaccia utente del controllo del codice sorgente.
+- [Creazione di un plug-in del controllo del codice sorgente](../extensibility/internals/creating-a-source-control-plug-in.md) Viene illustrato come creare un plug-in del controllo del codice sorgente che fornisce la funzionalità di controllo del codice sorgente mentre si utilizza l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfaccia utente del controllo del codice sorgente.
 
-- [Guida di riferimento a Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md) Presenta un elenco di argomenti di riferimento.
+- [Riferimenti per Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md) Viene presentato un elenco di argomenti di riferimento.

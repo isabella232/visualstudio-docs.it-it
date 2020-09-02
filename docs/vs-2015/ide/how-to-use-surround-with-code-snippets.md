@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdb635854d298b8a1eabc81019f7b18c2f50eecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670556"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Procedura: utilizzare frammenti di codice racchiusi
@@ -30,7 +30,7 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 2. Nell'Editor di codice selezionare il testo da racchiudere.
 
-3. Premere CTRL+K, CTRL+S.
+3. Digitare CTRL+K, CTRL+S.
 
 4. Selezionare un frammento di codice nell'elenco tramite il mouse oppure digitare il nome del frammento e premere TAB o INVIO.
 
@@ -52,11 +52,11 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 2. Nell'Editor di codice selezionare il testo da racchiudere.
 
-3. Fare clic con il pulsante destro del mouse sul testo selezionato e selezionare il comando **Racchiudi tra** nel menu di scelta rapida.
+3. Fare clic con il pulsante destro del mouse sul testo selezionato, quindi selezionare il comando **Racchiudi** tra dal menu di scelta rapida.
 
 4. Selezionare il frammento di codice dallo strumento per l'inserimento di frammenti di codice e quindi premere TAB o INVIO.
 
      In alternativa, è possibile digitare il nome del frammento di codice e premere TAB o INVIO.
 
 ## <a name="see-also"></a>Vedere anche
- [Selezione frammenti di codice](../ide/reference/code-snippet-picker.md) per [frammenti di codice visivi C# ](../ide/visual-csharp-code-snippets.md)
+ [Selezione frammenti di codice](../ide/reference/code-snippet-picker.md) per [frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md)

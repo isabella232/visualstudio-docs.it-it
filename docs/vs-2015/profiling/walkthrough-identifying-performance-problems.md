@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695009"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procedura dettagliata: Identificazione dei problemi di prestazioni
@@ -128,7 +128,7 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
      Verrà avviato il **Blocco note** e sarà visualizzato un nuovo file che contiene un elenco di persone di PeopleTrax. L'attesa consente di identificare più facilmente la procedura di esportazione dei dati per il filtro.  
   
-6. Chiudere il **Blocco note** e quindi chiudere l'applicazione **PeopleTrax**.  
+6. Chiudere il **blocco note**e quindi chiudere l'applicazione **PeopleTrax** .  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] genera un report della sessione di prestazioni (con estensione vsp).  
   
@@ -159,6 +159,6 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
    Quando si esegue nuovamente l'applicazione, sarà possibile osservare notevoli miglioramenti delle prestazioni. È consigliabile ripetere la sessione di profilatura, anche se si registrano miglioramenti delle prestazioni visibili all'utente. Esaminare i dati dopo aver risolto un problema è importante perché il primo problema potrebbe nascondere altri problemi.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
+ [Panoramiche](../profiling/overviews-performance-tools.md)   
  [Introduzione](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (Formato informazioni di debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7,/Zi,/ZI (formato informazioni di debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

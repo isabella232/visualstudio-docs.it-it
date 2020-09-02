@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d15b749d0564010cf6a67527f456a76a9db885cc
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329189"
 ---
 # <a name="c-library-reference"></a>Riferimento alla libreria C++
@@ -28,6 +28,6 @@ In questa sezione sono contenute informazioni di riferimento per l'SDK del visua
 
 [Spazio dei nomi Concurrency (Visualizzatore di concorrenza)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)

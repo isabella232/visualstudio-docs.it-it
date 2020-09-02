@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd48ac8f5753521240ed3feb6003d945786820a3
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329089"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Visualizzare dati in Blend per Visual Studio
@@ -45,6 +45,6 @@ Per generare dati di esempio da una classe, aprire un documento XAML e nel panne
 
 **Breve video:** ![Icona Riproduci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combinare il data binding con Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creare un'interfaccia utente usando Blend per Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento SDKReference (modelli di Visual Studio) Documenti Microsoft
+title: Elemento SDKReference (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700172"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Elemento SDKReference (modelli di Visual Studio)
@@ -33,10 +33,10 @@ Specifica che il modello di elemento usa un riferimento all'SDK.
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- No.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 

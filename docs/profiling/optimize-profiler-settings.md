@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ef802958817b43dd66973db66a80d328454aa83
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329259"
 ---
 # <a name="optimizing-profiler-settings"></a>Ottimizzazione delle impostazioni del profiler
@@ -46,7 +46,7 @@ Alcuni strumenti, ad esempio lo strumento [utilizzo CPU](../profiling/cpu-usage.
 
 ![Pagina delle proprietà dell'hub diag](../profiling/media/diaghubpropertiespage.png "Pagina delle proprietà dell'hub diag")
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Esecuzione di strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Uso simultaneo di più strumenti del profiler](../profiling/use-multiple-profiler-tools-simultaneously.md)

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugField::GetInfo . Documenti Microsoft
+title: 'IDebugField:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b3251db3426f87901ca0768800feaa36fef5373
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728849"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
@@ -43,10 +43,10 @@ int GetInfo(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di [costanti FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) che seleziona le informazioni da visualizzare. Se il campo rappresenta un simbolo, si tratta in genere del nome e del tipo del simbolo.
+in Combinazione di [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) costanti che seleziona le informazioni da visualizzare. Se il campo rappresenta un simbolo, si tratta in genere del nome e del tipo del simbolo.
 
 `pFieldInfo`\
-[fuori] Restituisce le informazioni nella struttura [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) fornita.
+out Restituisce le informazioni nella struttura [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) fornita.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536942"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
@@ -31,10 +31,10 @@ Per altre informazioni e per il codice di esempio, vedere:
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="providing-access-to-a-dsl"></a><a name="provide"></a>Fornire l'accesso a un linguaggio DSL
+## <a name="providing-access-to-a-dsl"></a><a name="provide"></a> Fornire l'accesso a un linguaggio DSL
  Prima di poter creare un riferimento ModelBus a un modello o ai relativi elementi, è necessario definire un ModelBusAdapter per il linguaggio specifico di dominio. Il modo più semplice per eseguire questa operazione consiste nell'usare l'estensione del bus di modello di Visual Studio, che consente di aggiungere comandi al Finestra di progettazione DSL.
 
-### <a name="to-expose-a-dsl-definition-to-model-bus"></a><a name="expose"></a>Per esporre una definizione DSL al bus di modello
+### <a name="to-expose-a-dsl-definition-to-model-bus"></a><a name="expose"></a> Per esporre una definizione DSL al bus di modello
 
 1. Aprire il file di definizione del linguaggio specifico di dominio. Fare clic con il pulsante destro del mouse sull'area di progettazione e quindi scegliere **Abilita ModelBus**.
 
@@ -82,7 +82,7 @@ Per assicurarsi che gli ID elemento siano salvati in modo permanente:
 
 - Eseguire l'override di `ResolveElementReference` per individuare l'elemento corretto da un riferimento ModelBus
 
-## <a name="accessing-a-dsl-from-another-dsl"></a><a name="editRef"></a>Accesso a un linguaggio DSL da un altro DSL
+## <a name="accessing-a-dsl-from-another-dsl"></a><a name="editRef"></a> Accesso a un linguaggio DSL da un altro DSL
 
 È possibile archiviare riferimenti ModelBus in una proprietà di dominio in un linguaggio specifico di dominio ed è possibile scrivere codice personalizzato per usarli. È anche possibile consentire all'utente di creare un riferimento ModelBus selezionando un file di modello e un elemento al suo interno.
 
@@ -386,7 +386,7 @@ ModelBusReference elementReferenceRestored =
 
  L'MBR viene deserializzato in due fasi:
 
-- `ModelBusReferencePropertySerializer`è il serializzatore standard che gestisce l'intestazione MBR. Usa il contenitore delle proprietà `SerializationContext` DSL standard che è archiviato in `ReferenceContext` tramite la chiave `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. In particolare, `SerializationContext` deve contenere un'istanza di `ModelBus`.
+- `ModelBusReferencePropertySerializer` è il serializzatore standard che gestisce l'intestazione MBR. Usa il contenitore delle proprietà `SerializationContext` DSL standard che è archiviato in `ReferenceContext` tramite la chiave `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. In particolare, `SerializationContext` deve contenere un'istanza di `ModelBus`.
 
 - L'adattatore ModelBus gestisce la parte specifica dell'adattatore dell'MBR. Può usare le informazioni aggiuntive archiviate nel ContextReference dell'MBR. L'adapter basato su file semplice mantiene i percorsi dei file radice utilizzando le chiavi `FilePathLoadContextKey` e `FilePathSaveContextKey` .
 
@@ -510,7 +510,7 @@ Quando si fa clic con il pulsante destro del mouse sul diagramma di definizione 
 
 - Viene aggiunto un nuovo progetto `ModelBusAdapter` alla soluzione.
 
-- Al progetto `ModelBusAdapter` viene aggiunto un riferimento a `DslPackage`. `ModelBusAdapter`contiene un riferimento al `Dsl` progetto.
+- Al progetto `ModelBusAdapter` viene aggiunto un riferimento a `DslPackage`. `ModelBusAdapter` contiene un riferimento al `Dsl` progetto.
 
 - In **DslPackage\source.extention.TT**, `|ModelBusAdapter|` viene aggiunto come componente MEF.
 

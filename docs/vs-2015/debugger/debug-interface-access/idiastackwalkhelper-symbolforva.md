@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ed714501f18b0c1ab771556a56a6ca3bbc061d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150053"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
@@ -36,13 +36,13 @@ HRESULT symbolForVA( 
   
 #### <a name="parameters"></a>Parametri  
  `va`  
- [in] Indirizzo virtuale in cui è contenuto nel simbolo richiesto. Il simbolo deve essere un `SymTagFunctionType` (un valore compreso il [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione).  
+ in Indirizzo virtuale contenuto nel simbolo richiesto. Il simbolo deve essere un oggetto, `SymTagFunctionType` ovvero un valore dell'enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .  
   
  `ppSymbol`  
- [out] Un' [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo all'indirizzo specificato.  
+ out Oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo in corrispondenza dell'indirizzo specificato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

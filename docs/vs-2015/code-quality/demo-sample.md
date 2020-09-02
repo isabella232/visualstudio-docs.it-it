@@ -13,24 +13,24 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277878"
 ---
 # <a name="demo-sample"></a>Esempio dimostrativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedura dettagliata: analisi del codiceC++ C/per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure creano:  
+Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedura dettagliata: analisi del codice C/C++ per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure creano:  
   
-- Una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] denominata CppDemo.  
+- Una [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione denominata CppDemo.  
   
 - Un progetto di libreria statica con nome CodeDefects.  
   
 - Un progetto di libreria statica con nome Annotations.  
   
-  Le procedure forniscono inoltre il codice per i file header e cpp per le librerie statiche.  
+  Le procedure specificano anche il codice per l'intestazione e i file con estensione cpp per le librerie statiche.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Creare la soluzione CppDemo e il progetto CodeDefects  
   
@@ -38,7 +38,7 @@ Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedur
   
 2. Nell'elenco ad albero **Tipo progetto** espandere **Altri linguaggi** se Visual C++ non è il linguaggio predefinito in Visual Studio.  
   
-3. Espandere **Visual C++** , quindi fare clic su **Generale**.  
+3. Espandere **Visual C++**, quindi fare clic su **Generale**.  
   
 4. In **Modelli** fare clic su **Progetto vuoto**.  
   
@@ -56,17 +56,17 @@ Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedur
   
 3. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.  
   
-4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)** .  
+4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)**.  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Aggiungere l'intestazione e il file di origine al progetto CodeDefects  
   
 1. In Esplora soluzioni espandere **CodeDefects**, fare clic con il pulsante destro del mouse su **File di intestazione**, fare clic su **Aggiungi** e quindi fare clic su **Nuovo elemento**.  
   
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di intestazione (.h)** .  
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di intestazione (.h)**.  
   
 3. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.  
   
-4. Copiare il codice seguente e incollarlo nel file **bug. cpp** nell'editor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+4. Copiare il codice seguente e incollarlo nel file **bug. cpp** nell' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
   
     ```  
     #include <windows.h>  
@@ -90,11 +90,11 @@ Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedur
   
 5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.  
   
-6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di C++ (.cpp)** .  
+6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di C++ (.cpp)**.  
   
 7. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.  
   
-8. Copiare il codice seguente e incollarlo nel file bug. h nell'editor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+8. Copiare il codice seguente e incollarlo nel file bug. h nell' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
   
     ```  
     #include <stdlib.h>  
@@ -170,17 +170,17 @@ Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedur
   
 6. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.  
   
-7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)** .  
+7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)**.  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Aggiungere il file di intestazione e il file di origine per il progetto Annotations  
   
 1. In Esplora soluzioni espandere **Annotations**, fare clic con il pulsante destro del mouse su **File di intestazione**, fare clic su **Aggiungi** e quindi fare clic su **Nuovo elemento**.  
   
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di intestazione (.h)** .  
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di intestazione (.h)**.  
   
 3. Nella casella di testo **Nome** digitare **annotations.h** e quindi fare clic su **Aggiungi**.  
   
-4. Copiare il codice seguente e incollarlo nel file **Annotations. h** nell'editor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+4. Copiare il codice seguente e incollarlo nel file **Annotations. h** nell' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -199,11 +199,11 @@ Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedur
   
 5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.  
   
-6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di C++ (.cpp)** .  
+6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di C++ (.cpp)**.  
   
 7. Nella casella di testo **Nome** digitare **annotations.cpp** e quindi fare clic su **Aggiungi**.  
   
-8. Copiare il codice seguente e incollarlo nel file **Annotations. cpp** nell'editor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+8. Copiare il codice seguente e incollarlo nel file **Annotations. cpp** nell' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

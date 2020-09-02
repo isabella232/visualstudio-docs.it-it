@@ -1,5 +1,5 @@
 ---
-title: ShowByDefault (elemento) (modelli di Visual Studio)
+title: Elemento ShowByDefault (modelli di Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700103"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault (elemento) (modelli di Visual Studio)
-Se `false`, specifica che il modello verrà visualizzato solo sotto [l'oggetto TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)specificato.
+# <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (modelli di Visual Studio)
+Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)specificato.
 
- \<> VSTemplate \<> \<TemplateData> ShowByDefault
+ \<VSTemplate> \<TemplateData>
+ \<ShowByDefault>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,10 +37,10 @@ Se `false`, specifica che il modello verrà visualizzato solo sotto [l'oggetto T
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- No.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 

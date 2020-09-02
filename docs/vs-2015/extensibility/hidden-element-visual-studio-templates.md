@@ -1,5 +1,5 @@
 ---
-title: Nascosto elemento (modelli di Visual Studio) | Microsoft Docs
+title: Elemento Hidden (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f5150cda1b1285132fd70cd7bd7fa4572121057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204251"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
+Specifica se il modello viene visualizzato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Nascosto >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Hidden>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,12 +52,12 @@ Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** oppu
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false`, che indica se il modello verrà visualizzato nel **nuovo progetto** o **Aggiungi nuovo elemento** finestre di dialogo.  
+ Il testo deve essere `true` o `false` , che indica se il modello verrà visualizzato nelle finestre di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `Hidden` è un elemento facoltativo.  
   
- Se non specificato, nessun altro elemento figlio del `TemplateData` elemento sono necessari.  
+ Se specificato, non sono necessari altri elementi figlio dell' `TemplateData` elemento.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente vengono illustrati i metadati per un modello [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
@@ -88,5 +88,5 @@ Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** oppu
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
