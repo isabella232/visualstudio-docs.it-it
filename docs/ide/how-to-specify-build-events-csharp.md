@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283996"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
@@ -174,9 +174,9 @@ Richiamare quindi questo comando in un evento di post-compilazione per modificar
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Pagina eventi di compilazione, Progettazione progetti (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Finestra di dialogo riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
-- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilare](../ide/compiling-and-building-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugAlias::GetICorDebugValue . Documenti Microsoft
+title: 'IDebugAlias:: GetICorDebugValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd01785fee7ce65296bac940fb19819415139d53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736487"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>Parametri
 `ppUnk`\
-[fuori] `IUnknown` che rappresenta il valore associato a questo alias. Questa interfaccia può essere interrogata per l'interfaccia. `ICorDebugValue`
+[out] `IUnknown` interfaccia che rappresenta il valore associato a questo alias. È possibile eseguire query su questa interfaccia per l' `ICorDebugValue` interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo si applica solo `ICorDebugValue` ai valori gestiti (è un'interfaccia disponibile in .NET Framework ed è definito in .NET Framework SDK nel file cordebug.idl).
+ Questo metodo si applica solo ai valori gestiti ( `ICorDebugValue` è un'interfaccia disponibile nel .NET Framework e viene definito in .NET Framework SDK nel file CorDebug. idl).
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

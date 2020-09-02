@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eseguire la profilatura di codice JavaScript nelle pagine Web | Microsoft Docs'
+title: 'Procedura: Profilare codice JavaScript nelle pagine Web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688151"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedura: Profilare il codice JavaScript nelle pagine Web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedura: Profilare codice JavaScript nelle pagine Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gli strumenti di profilatura di[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] possono raccogliere dati sulle prestazioni per il codice JavaScript eseguito in un'applicazione Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , in una pagina Web arbitraria o in un'applicazione JavaScript usando il metodo di profilatura della strumentazione.  
@@ -34,7 +34,7 @@ Gli strumenti di profilatura di[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poss
 > [!WARNING]
 > Per profilare JavaScript nelle applicazioni Windows Store, vedere uno degli argomenti seguenti:  
 > 
-> - [Temporizzazione funzione JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [temporizzazione funzione JavaScript in un dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+> - Temporizzazione [funzione JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) temporizzazione [funzione JavaScript in un dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [Analizzare dati su Temporizzazione funzione JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
@@ -42,13 +42,13 @@ Gli strumenti di profilatura di[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poss
   
  Quando si specifica la profilatura JavaScript, questa viene applicata sia al codice JavaScript eseguito nel browser che al codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] eseguito nel server.  
   
-- Per un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], la profilatura viene applicata sia al codice JavaScript eseguito nel browser che al codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] eseguito nel server.  
+- Per un'applicazione Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , la profilatura viene applicata sia al codice JavaScript eseguito nel browser che al codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] eseguito nel server.  
   
 - Per una pagina Web arbitraria, la profilatura viene applicata al codice JavaScript eseguito nel browser.  
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Per eseguire la profilatura di JavaScript in un progetto dell'applicazione Web ASP.NET  
   
-1. In [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] aprire il progetto Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+1. In [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]aprire il progetto Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 2. Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni**.  
   
@@ -58,7 +58,7 @@ Gli strumenti di profilatura di[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poss
   
 5. Nella terza pagina della procedura guidata, selezionare la casella di controllo **Profilo JavaScript** , quindi fare clic su **Avanti**.  
   
-6. Nella quarta pagina della procedura guidata, fare clic su **Fine** per avviare l'applicazione Web nel browser.  
+6. Nella quarta pagina della procedura guidata fare clic su **fine** per avviare l'applicazione Web nel browser.  
   
 7. Verificare la funzionalità di cui eseguire la profilatura.  
   
@@ -80,7 +80,7 @@ Gli strumenti di profilatura di[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poss
   
     2. Selezionare la casella di controllo **Profilo JavaScript** , quindi fare clic su **Avanti**.  
   
-6. Nella quarta pagina della procedura guidata, fare clic su **Fine** per avviare la pagina Web nel browser.  
+6. Nella quarta pagina della procedura guidata fare clic su **fine** per avviare la pagina Web nel browser.  
   
 7. Verificare la funzionalità di cui eseguire la profilatura.  
   

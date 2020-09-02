@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425394"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
@@ -41,7 +41,7 @@ Rappresenta un riferimento all'assembly (gestito) nel progetto.
 |FusionName|Stringa facoltativa. Specifica il nome Fusion semplice o sicuro per l'elemento.<br /><br /> Questo attributo, se specificato, consente di risparmiare tempo in quanto non comporta l'apertura del file di assembly per ottenere il nome Fusion.|
 |SpecificVersion|Valore booleano facoltativo. Specifica se è necessario fare riferimento solo alla versione nel nome Fusion.|
 |Alias|Stringa facoltativa. Gli alias per il riferimento.|
-|Privato|Valore booleano facoltativo. Specifica se il riferimento deve essere copiato nella cartella di output. Questo attributo corrisponde alla proprietà **Copia localmente** del riferimento nell'IDE di Visual Studio.|
+|Privati|Valore booleano facoltativo. Specifica se il riferimento deve essere copiato nella cartella di output. Questo attributo corrisponde alla proprietà **Copia localmente** del riferimento nell'IDE di Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -76,7 +76,7 @@ Rappresenta un file manifesto nativo o un riferimento a tale file.
 
 ### <a name="projectreference"></a>ProjectReference
 
-Rappresenta un riferimento a un altro progetto. `ProjectReference`gli elementi vengono trasformati in elementi di [riferimento](#reference) dalla `ResolveProjectReferences` destinazione, pertanto tutti i metadati validi per un riferimento potrebbero essere validi in `ProjectReference` , se il processo di trasformazione non lo sovrascrive.
+Rappresenta un riferimento a un altro progetto. `ProjectReference` gli elementi vengono trasformati in elementi di [riferimento](#reference) dalla `ResolveProjectReferences` destinazione, pertanto tutti i metadati validi per un riferimento potrebbero essere validi in `ProjectReference` , se il processo di trasformazione non lo sovrascrive.
 
 |Nome metadati degli elementi|Descrizione|
 |---------------|-----------------|
@@ -104,7 +104,7 @@ Rappresenta le risorse da incorporare nell'assembly generato.
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta |
-| Generatore | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
+| Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
 | LastGenOutput | Stringa obbligatoria. Il nome del file che è stato creato da qualsiasi generatore di file eseguito sull'elemento. |
 | CustomToolNamespace | Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato se il file si trova fisicamente fuori dall'influenza del progetto. |
@@ -112,14 +112,14 @@ Rappresenta le risorse da incorporare nell'assembly generato.
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 | LogicalName | Stringa obbligatoria. Nome logico della risorsa incorporata. |
 
-### <a name="content"></a>Contenuto
+### <a name="content"></a>Content
 
 Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.
 
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
-| Generatore | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
+| Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
 | LastGenOutput | Stringa obbligatoria. Il nome del file creato da qualsiasi generatore di file che è stato eseguito sull'elemento. |
 | CustomToolNamespace | Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del progetto. |
@@ -135,7 +135,7 @@ Rappresenta i file che non hanno un ruolo nel processo di compilazione.
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
-| Generatore | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
+| Generator | Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento. |
 | LastGenOutput | Stringa obbligatoria. Il nome del file che è stato creato da qualsiasi generatore di file eseguito sull'elemento. |
 | CustomToolNamespace | Stringa obbligatoria. Lo spazio dei nomi in cui qualsiasi generatore di file eseguito su questo elemento deve creare codice. |
 | Collegamento | Stringa facoltativa. Il percorso di annotazione che viene visualizzato quando il file si trova fisicamente fuori dall'influenza del progetto. |

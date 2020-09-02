@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650777"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Procedura dettagliata: chiamare codice in un componente aggiuntivo VSTO da VBA
@@ -32,7 +32,7 @@ ms.locfileid: "72650777"
 
  Benché la procedura dettagliata usi in particolare Excel, i concetti illustrati sono applicabili a qualsiasi modello di progetto di componente aggiuntivo VSTO disponibile in Visual Studio.
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Definizione di una classe che può essere esposta ad altre soluzioni Office.
 
@@ -42,8 +42,8 @@ ms.locfileid: "72650777"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -56,7 +56,7 @@ ms.locfileid: "72650777"
 
 1. Creare un progetto di componente aggiuntivo VSTO per Excel con il nome **ExcelImportData**, usando il modello di progetto di componente aggiuntivo VSTO per Excel. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice **ThisAddIn.cs** o **ThisAddIn.vb** e aggiunge il progetto **ExcelImportData** a **Esplora soluzioni**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice **ThisAddIn.cs** o **ThisAddIn. vb** e aggiunge il progetto **ExcelImportData** a **Esplora soluzioni**.
 
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Definire una classe che è possibile esporre ad altre soluzioni Office
  Lo scopo di questa procedura dettagliata è chiamare il metodo `ImportData` di una classe denominata `AddInUtilities` nel componente aggiuntivo VSTO dal codice VBA. Il metodo consente di scrivere una stringa nella cella A1 del foglio di lavoro attuale.
@@ -97,7 +97,7 @@ ms.locfileid: "72650777"
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
-4. Scegliere **Compila soluzione** dal menu **Compila**.
+4. Nel menu **Compila** scegliere **Compila soluzione**.
 
      Verificare che la soluzione venga compilata senza errori.
 
@@ -123,7 +123,7 @@ ms.locfileid: "72650777"
 
      Viene aperto il file di codice relativo all'oggetto `ThisWorkbook` .
 
-6. Aggiungere il codice VBA seguente al file di codice. Questo codice ottiene innanzitutto un oggetto COMAddIn che rappresenta il componente aggiuntivo VSTO **ExcelImportData** . Quindi, il codice usa la proprietà dell'oggetto COMAddIn per chiamare il metodo `ImportData`.
+6. Aggiungere il codice VBA seguente al file di codice. Questo codice ottiene innanzitutto un oggetto COMAddIn che rappresenta il componente aggiuntivo VSTO **ExcelImportData** . Quindi, il codice usa la proprietà dell'oggetto COMAddIn per chiamare il `ImportData` metodo.
 
     ```vb
     Sub CallVSTOMethod()
@@ -155,5 +155,5 @@ ms.locfileid: "72650777"
 - [Chiamata di codice nei componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

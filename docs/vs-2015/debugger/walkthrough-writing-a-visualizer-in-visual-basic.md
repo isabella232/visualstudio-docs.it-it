@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic | Microsoft Docs'
+title: 'Procedura dettagliata: scrittura di un visualizzatore in Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,19 +18,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 954bd976317f5b5ad577b1236c9d7421c2d50315
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688216"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: scrittura di un visualizzatore in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] per scrivere un visualizzatore semplice che consente di visualizzare il contenuto di una stringa in una finestra di messaggio di Windows Form. Questo visualizzatore semplice di stringhe è un esempio base per illustrare la creazione di visualizzatori per altri tipi di dati più applicabili ai progetti.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, passare al menu **Strumenti** e scegliere **Importa/Esporta**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, passare al menu **Strumenti** e scegliere **Importa/Esporta**. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta dal debugger. La prima operazione da effettuare consiste nel creare un progetto Libreria di classi per la DLL.  
   
@@ -40,9 +40,9 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1. Nel menu **File** scegliere **Nuovo** e fare clic su **Nuovo progetto**.  
   
-2. Nel **nuovo progetto** nella finestra di dialogo **tipo di progetto**s, fare clic su **Visual Basic**.  
+2. Nella finestra di dialogo **nuovo progetto** , in **tipo di progetto**, fare clic su **Visual Basic**.  
   
-3. Nel **modelli** fare clic su **libreria di classi**.  
+3. Nella casella **modelli** fare clic su **libreria di classi**.  
   
 4. Nella casella **Nome** digitare un nome appropriato per la libreria di classi, ad esempio **MyFirstVisualizer**.  
   
@@ -57,7 +57,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
 2. Sostituire Class1.vb con un nome significativo, ad esempio DebuggerSide.vb.  
   
     > [!NOTE]
-    > In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la dichiarazione di classe viene modificata automaticamente in base al nuovo nome di file DebuggerSide.vb.  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modifica automaticamente la dichiarazione di classe in DebuggerSide. vb in modo che corrisponda al nuovo nome file.  
   
 3. In **Esplora soluzioni** fare clic son il pulsante destro del mouse su **My First Visualizer** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
   
@@ -89,7 +89,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
    Inherits DialogDebuggerVisualizer  
    ```  
   
-   `DialogDebuggerVisualizer` dispone di un metodo astratto, `Show`, di cui è necessario eseguire l'override.  
+   `DialogDebuggerVisualizer` dispone di un metodo astratto, `Show` , che è necessario eseguire l'override di.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Per eseguire l'override del metodo DialogDebuggerVisualizer.Show  
   
@@ -167,7 +167,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1. Nel menu **File** fare clic su **Aggiungi** e quindi fare clic su **Nuovo progetto**.  
   
-2. Nel **Aggiungi nuovo progetto** nella finestra di dialogo il **modelli** fare clic su **applicazione Console**.  
+2. Nella casella **modelli** della finestra di dialogo **Aggiungi nuovo progetto** fare clic su **applicazione console**.  
   
 3. Nella casella **Nome** digitare un nome significativo per l'applicazione console, ad esempio **MyTestConsole**.  
   
@@ -200,7 +200,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
     Si noti che in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la dichiarazione di classe viene modificata automaticamente in TestConsole.vb in base al nuovo nome file.  
   
-3. In TestConsole. vb, aggiungere il codice seguente `Imports` istruzione:  
+3. In TestConsole. vb aggiungere l'istruzione seguente `Imports` :  
   
    ```  
    Imports MyFirstVisualizer  
@@ -219,15 +219,15 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere **Imposta come progetto di avvio** dal menu di scelta rapida.  
   
-2. Nel menu **Debug** fare clic su **Avvia**.  
+2. Scegliere **Avvia** dal menu **Debug**.  
   
     Verrà avviata l'applicazione console. Verrà aperto il visualizzatore contenente la stringa "Hello, World".  
   
-   Il visualizzatore è stato compilato e sottoposto a test.  
+   Complimenti. è stato compilato e sottoposto a test.  
   
-   Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).  
+   Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Architettura del visualizzatore](../debugger/visualizer-architecture.md)   
- [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
+ [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)   
+ [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
+ [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

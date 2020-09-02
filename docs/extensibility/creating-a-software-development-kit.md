@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904118"
 ---
 # <a name="create-a-software-development-kit"></a>Creare una Software Development Kit
@@ -27,7 +27,7 @@ Esistono due tipi di SDK:
 
 Le sezioni seguenti descrivono l'infrastruttura generale degli SDK e la modalità di creazione di un SDK di piattaforma e di estensione.
 
-## <a name="platform-sdks"></a>SDK delle piattaforme
+## <a name="platform-sdks"></a>Platform SDK
 
 Gli SDK della piattaforma sono necessari per sviluppare app per una piattaforma. Ad esempio, l' [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK è necessario per sviluppare app per [!INCLUDE[win81](../debugger/includes/win81_md.md)] .
 
@@ -50,7 +50,7 @@ Gli SDK della piattaforma hanno il seguente layout:
                         \[arch]
 ```
 
-| Nodo | Description |
+| Nodo | Descrizione |
 |------------------------| - |
 | Cartella *riferimenti* | Contiene file binari che contengono API che possono essere codificate in base a. Possono includere file o assembly di metadati Windows (WinMD). |
 | Cartella *DesignTime* | Contiene i file necessari solo in fase di pre-esecuzione/debug. Questi possono includere documenti XML, librerie, intestazioni, binari della fase di progettazione della casella degli strumenti, elementi MSBuild e così via<br /><br /> I documenti XML dovrebbero, idealmente, essere posizionati nella cartella *\DesignTime* , ma i documenti XML per i riferimenti continueranno a essere inseriti insieme al file di riferimento in Visual Studio. Ad esempio, il documento XML per un riferimento<em>\References \\ [config] \\ [Arch] \sample.dll</em> sarà *\References \\ [config] \\ [Arch] \sample.xml*e la versione localizzata del documento sarà *\References \\ [config] \\ [Arch] \\ [locale] \sample.xml*. |
@@ -195,7 +195,7 @@ L'elenco seguente fornisce gli elementi del file:
 
 16. Riferimento al file: specificato solo per i riferimenti che contengono controlli o sono file WinMD nativi. Per informazioni su come specificare se un riferimento contiene controlli, vedere [specificare il percorso degli elementi della casella degli strumenti riportati di](#ToolboxItems) seguito.
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Specificare il percorso degli elementi della casella degli strumenti
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> Specificare il percorso degli elementi della casella degli strumenti
 
 L'elemento **ToolBoxItems** dello schema *SDKManifest.xml* specifica la categoria e la posizione degli elementi della casella degli strumenti negli SDK di piattaforma e di estensione. Negli esempi seguenti viene illustrato come specificare percorsi diversi. Questa operazione è applicabile ai riferimenti WinMD o DLL.
 

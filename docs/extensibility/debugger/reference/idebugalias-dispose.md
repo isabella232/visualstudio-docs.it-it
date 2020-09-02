@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugAlias::Dispose . Documenti Microsoft
+title: IDebugAlias::D di pose | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df3a2ecc50063df8f90645b9ccaa72754c3728c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736551"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
@@ -42,7 +42,7 @@ int Dispose();
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Una volta chiamato questo metodo, l'alias non è più disponibile.
+ Quando viene chiamato questo metodo, l'alias non è più disponibile.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

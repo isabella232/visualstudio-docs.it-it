@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4ea056c48525014fffad0243dfeb4dd40a8daa3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687020"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Procedura: Serializzare le informazioni sui simboli
@@ -37,6 +37,6 @@ ms.locfileid: "65687020"
 3. In **Impostazione generale** selezionare **Serializzare automaticamente le informazioni sui simboli**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
- [Procedura: Reference Windows Symbol Information](../profiling/how-to-reference-windows-symbol-information.md)   
- [Procedura: Salvare i file di Report analizzato](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
+ [Procedura: fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Procedura: salvare i file di report analizzati](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

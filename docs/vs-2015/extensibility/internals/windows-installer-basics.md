@@ -1,5 +1,5 @@
 ---
-title: Nozioni di base di Windows Installer | Microsoft Docs
+title: Nozioni di base Windows Installer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,66 +12,66 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4693654e12dc37209cb92e3e2ba95bde8bd13e77
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687672"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il programma di installazione di Windows installa e Disinstalla applicazioni o i prodotti software nel computer dell'utente, eseguire queste attività in unità denominate i componenti di Windows Installer (denominati talvolta WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni usando Windows Installer e installazione.  
+Il Windows Installer installa e Disinstalla le applicazioni o i prodotti software sul computer di un utente, eseguendo queste attività in unità denominate Windows Installer componenti (talvolta denominati WICs o solo componenti). Un GUID identifica ogni WIC, ovvero l'unità di base dell'installazione e il conteggio dei riferimenti per le configurazioni che utilizzano Windows Installer.  
   
- Per una documentazione completa del programma di installazione di Windows, vedere l'argomento Platform SDK [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).  
+ Per la documentazione completa del Windows Installer, vedere l'argomento Platform SDK [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).  
   
 ## <a name="authoring-a-vspackage"></a>Creazione di un pacchetto VSPackage  
- Programma di installazione di Windows Usa pacchetti di installazione, che contengono informazioni necessarie dal programma di installazione di Windows per installare, disinstallare o ripristinare un prodotto ed eseguire l'interfaccia utente (UI) di configurazione. Ogni pacchetto di installazione include un file con estensione msi, che contiene un database di installazione, un flusso di informazioni di riepilogo e i flussi di dati di varie parti dell'installazione. Per usare il programma di installazione, è necessario creare un'installazione. Poiché il programma di installazione consente di organizzare le installazioni sul concetto di componenti e archivia le informazioni relative all'installazione in un database relazionale, il processo di creazione di un pacchetto di installazione su vasta scala comporta i passaggi seguenti:  
+ Windows Installer utilizza i pacchetti di installazione che contengono informazioni che Windows Installer necessario installare, disinstallare o ripristinare un prodotto ed eseguire l'interfaccia utente del programma di installazione. Ogni pacchetto di installazione include un file con estensione msi, che contiene un database di installazione, un flusso di informazioni di riepilogo e flussi di dati per varie parti dell'installazione. Per utilizzare il programma di installazione, è necessario creare un'installazione. Poiché il programma di installazione organizza le installazioni intorno al concetto di componenti e archivia le informazioni relative all'installazione in un database relazionale, il processo di creazione di un pacchetto di installazione comporta l'ampia gamma dei passaggi seguenti:  
   
-1. Pianificare l'installazione di authoring per supportare il controllo delle versioni e le strategie side-by-side.  
+1. Pianificare la creazione dell'installazione per supportare il controllo delle versioni e le strategie side-by-side.  
   
 2. Identificare le funzionalità da presentare agli utenti.  
   
-3. Organizzare i VSPackage e le dipendenze in componenti.  
+3. Organizzare il pacchetto VSPackage e le dipendenze in componenti.  
   
-4. Popolare il database di installazione con le informazioni.  
+4. Inserire le informazioni nel database di installazione.  
   
 5. Convalidare il pacchetto di installazione.  
   
-   Questa documentazione riguarda principalmente il primo e il terzo passaggio del processo. Durante questa procedura organizzare le funzionalità dei pacchetti VSPackage in WICs può definire il controllo delle versioni e strategia per le versioni successive del motivo di manutenzione [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. I rimanenti tre passaggi sono descritti dettagliatamente nella documentazione di Windows Installer in Platform SDK.  
+   Questa documentazione riguarda principalmente il primo e il terzo passaggio del processo. Durante questi passaggi si organizzano le funzionalità VSPackage in WICs in modo da poter eseguire il frame della strategia di controllo delle versioni e di manutenzione per tenere conto delle versioni successive di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . I tre passaggi rimanenti sono descritti in dettaglio in Windows Installer documentazione in Platform SDK.  
   
 ## <a name="key-terms"></a>Termini chiave  
- Di seguito sono le definizioni dei termini chiave correlati alla tecnologia Windows Installer.  
+ Di seguito sono riportate le definizioni dei termini chiave relativi alla tecnologia Windows Installer.  
   
  Risorsa  
- I file, chiavi del Registro di sistema, collegamenti, o e così via che può essere installato in un computer. Queste risorse sono raggruppate logicamente in componenti di Windows Installer.  
+ File, chiavi del registro di sistema, collegamenti o e così via che possono essere installati in un computer. Queste risorse sono raggruppate logicamente in componenti Windows Installer.  
   
- Componente di Windows Installer (WIC)  
- L'unità di installazione che rappresenta un raggruppamento logico di risorse correlate in cui sono installati e disinstallati come un'unità di base. Componenti di Windows Installer sono identificati da un ID di componenti univoci, o GUID. Inoltre, Windows Installer mantiene il riferimento a livello di WIC di conteggio. Per una flessibilità, controllo delle versioni massimo includono non più di una risorsa primaria, ad esempio una DLL, in un determinato WIC. Si noti che dopo individuare e popolare un WIC, assegnargli un GUID e distribuirla, è possibile modificarne la composizione. Per altre informazioni, vedere [organizzare le applicazioni in componenti](https://msdn.microsoft.com/library/aa370561.aspx).  
+ Componente Windows Installer (WIC)  
+ Unità di base di installazione che rappresenta un raggruppamento logico di risorse correlate installate e disinstallate come unità. Windows Installer componenti sono identificati da un ID componente univoco o GUID. Inoltre, Windows Installer gestisce il conteggio dei riferimenti a livello di WIC. Per la massima flessibilità di controllo delle versioni, includere non più di una risorsa primaria, ad esempio una DLL, in un determinato oggetto WIC. Si noti che dopo aver identificato e popolato un oggetto WIC, avere un GUID e distribuirlo, non è possibile modificarne la composizione. Per altre informazioni, vedere [organizzazione di applicazioni in componenti](https://msdn.microsoft.com/library/aa370561.aspx).  
   
  Pacchetto (pacchetto Redist)  
- Un'unità di distribuzione che è costituito da un file con estensione msi e i file di origine esterna a cui questo file potrebbe fare riferimento. Un pacchetto contiene tutte le informazioni necessarie per eseguire l'interfaccia utente e per installare o disinstallare l'applicazione Windows Installer.  
+ Unità di distribuzione costituita da un file con estensione msi e da file di origine esterni a cui il file potrebbe puntare. Un pacchetto contiene tutte le informazioni che Windows Installer necessario eseguire l'interfaccia utente e per installare o disinstallare l'applicazione.  
   
- .msi File  
- Un file di archiviazione strutturata COM che contiene le istruzioni e i dati necessari per installare un'applicazione. Ogni pacchetto contiene almeno un file con estensione msi. Il file con estensione msi contiene il database di programma di installazione, un flusso di informazioni di riepilogo e possibilmente uno o più trasformazioni e i file di origine interna. Installazione dei file possono essere compressi in un file CAB e archiviati in un flusso di file con estensione msi o archiviati, compressi o non compressi, all'esterno del file con estensione msi sul supporto di origine. Per altre informazioni, vedere [estensioni di File Windows Installer](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
+ File con estensione msi  
+ Un file di archiviazione strutturata COM contenente le istruzioni e i dati necessari per installare un'applicazione. Ogni pacchetto contiene almeno un file con estensione msi. Il file con estensione msi contiene il database del programma di installazione, un flusso di informazioni di riepilogo e possibilmente una o più trasformazioni e file di origine interni. I file da installare possono essere compressi in un file CAB e archiviati in un flusso nel file con estensione msi o archiviati, compressi o decompressi, all'esterno del file con estensione msi sul supporto di origine. Per ulteriori informazioni, vedere [Windows Installer estensioni di file](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
   
-## <a name="windows-installer-rules-enforcement"></a>Imposizione delle regole di Windows Installer  
- Due set di regole determinano la distribuzione di risorse tramite i componenti del programma di installazione. Un set di regole viene mantenuto dal programma di installazione di Windows, anche se è necessario applicare il secondo set come autore di installazione.  
+## <a name="windows-installer-rules-enforcement"></a>Imposizione di regole Windows Installer  
+ Due set di regole determinano la distribuzione delle risorse tramite i componenti dell'installazione. Un set di regole viene gestito dal Windows Installer stesso, mentre è necessario applicare il secondo set come autore dell'installazione.  
   
 > [!NOTE]
-> Imposizione di regole di Windows Installer si verifica solo se si esegue una convalida del file con estensione msi. Tuttavia, vengono avvisati trattare queste regole come procedure consigliate. Per altre informazioni, vedere [la convalida di un Database di installazione](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [convalida dei pacchetti](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> L'imposizione delle regole di Windows Installer si verifica solo se si esegue una convalida del file con estensione msi. Tuttavia, si consiglia di considerare queste regole come procedure consigliate. Per ulteriori informazioni, vedere [convalida di un database di installazione](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [convalida del pacchetto](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
-#### <a name="installer-enforced-rules"></a>Regole applicate a livello di programma di installazione  
+#### <a name="installer-enforced-rules"></a>Regole applicate dal programma di installazione  
   
-- Tutti i file in un dato componente devono essere installati nella stessa directory. Al contrario, i file di installazione per separare le cartelle devono appartenere per separare i componenti.  
+- Tutti i file in un determinato componente devono essere installati nella stessa directory. Viceversa, i file installati in cartelle separate devono appartenere a componenti distinti.  
   
-- Può essere presente solo un percorso della chiave per ogni componente. Il percorso della chiave è semplicemente una chiave del Registro di sistema o file che rappresenta l'intero componente.  
+- Può essere presente un solo percorso della chiave per ogni componente. Il percorso della chiave è semplicemente un file o una chiave del registro di sistema che rappresenta l'intero componente.  
   
-#### <a name="component-provider-responsibilities"></a>Responsabilità del Provider di componenti  
+#### <a name="component-provider-responsibilities"></a>Responsabilità del provider di componenti  
   
-- Le due risorse che potrebbe essere fornito separatamente nelle versioni successive devono essere presenti in componenti separati. Le risorse devono essere raggruppate nel componente stesso, solo quando si è certi che queste risorse non verranno fornita separatamente. In effetti, è consigliabile che tutte le risorse primarie (ad esempio, DLL) esistono sempre in WICs separato. Per altre informazioni, vedere [definizione di programma di installazione di componenti](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Due risorse che potrebbero essere fornite separatamente nelle versioni successive dovrebbero esistere in componenti distinti. Le risorse devono essere raggruppate nello stesso componente solo quando si è certi che queste risorse non verranno mai fornite separatamente. In realtà, è consigliabile che tutte le risorse primarie (ad esempio, dll) esistano sempre in WICs separate. Per ulteriori informazioni, vedere [definizione dei componenti del programma di installazione](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
-- Alcuna risorsa con controllo delle versioni non deve sempre fornito con più WIC.  
+- Nessuna risorsa con versione deve essere distribuita in più di un WIC.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Cosa accade se le regole dei componenti vengono interrotte.](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Cosa accade se le regole dei componenti sono interrotte?](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904024"
 ---
 # <a name="create-a-settings-category"></a>Crea una categoria di impostazioni
@@ -37,7 +37,7 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
 
 2. Aprire il file *VSPackage. resx* e aggiungere le tre risorse stringa seguenti:
 
-    |Nome|valore|
+    |Nome|Valore|
     |----------|-----------|
     |106|Categoria personale|
     |107|Impostazioni personali|
