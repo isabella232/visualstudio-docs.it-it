@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva a diagnostica della grafica | Microsoft Docs
+title: Introduzione con Diagnostica della grafica | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9056fdae9d0eff55c572d8e38503d88269dbde3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704712"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica grafica di Visual Studio
@@ -44,16 +44,16 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
  Per usare un computer di riproduzione remoto che esegue Windows 10 da un computer di sviluppo con Windows 8.1, è necessario installare Windows 10 SDK nel computer di sviluppo e la funzionalità opzionale Strumenti di grafica nel computer di riproduzione.
 
-## <a name="InstallGraphicsTools"></a> Installare Strumenti di grafica per Windows 10
+## <a name="install-graphics-tools-for-windows-10"></a><a name="InstallGraphicsTools"></a> Installare Strumenti di grafica per Windows 10
  In Windows 10, l'infrastruttura di diagnostica grafica viene offerta attraverso la funzionalità facoltativa di Windows denominata *Strumenti di grafica*. Questa funzionalità è necessaria per acquisire e riprodurre le informazioni di grafica in Windows 10 indipendentemente dal fatto che l'app acquisita abbia come destinazione una versione precedente di Windows e dalla versione di Direct3D in uso. Si può scegliere di installare la funzionalità di Strumenti di grafica in anticipo; in caso contrario, sarà installata su richiesta al primo avvio di una sessione di Diagnostica grafica da Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Per installare Strumenti di grafica per Windows 10
 
-1. Nel **avviare** menu, scegliere **impostazioni**. Il **impostazioni** viene visualizzata la finestra.
+1. Dal menu **Start** scegliere **Impostazioni**. Verrà visualizzata la finestra di dialogo **Impostazioni** .
 
-2. Nel **le impostazioni** finestra di dialogo, scegliere **System**, quindi selezionare **le app installate** dall'elenco di impostazioni di sistema.
+2. Nella finestra di dialogo **Impostazioni** scegliere **sistema**, quindi selezionare **app installate** nell'elenco delle impostazioni di sistema.
 
-3. Sul lato destro del **le impostazioni** finestra di dialogo scegliere **Gestisci funzionalità facoltative** sotto **installata l'App e funzionalità**. Viene visualizzata la finestra di dialogo **Gestisci funzionalità facoltative**.
+3. Sul lato destro della finestra di dialogo **Impostazioni** scegliere **Gestisci funzionalità facoltative** in **app e funzionalità installate**. Viene visualizzata la finestra di dialogo **Gestisci funzionalità facoltative**.
 
 4. Nella finestra di dialogo **Gestisci funzionalità facoltative** scegliere **Aggiungi una funzionalità**. Viene visualizzato un elenco di funzionalità facoltative che è possibile installare.
 
@@ -65,19 +65,19 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 > La funzionalità facoltativa di Windows 10 Strumenti di grafica offre funzionalità leggere di acquisizione e riproduzione, ad esempio il programma di acquisizione da riga di comando **dxcap.exe**, che può essere usato in scenari di supporto, testing e diagnostica nei computer in cui non sono installati gli strumenti di sviluppo. Per altre informazioni, vedere l'argomento [Strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md).
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Primo utilizzo di Diagnostica della grafica
- Ora che si dispone di tutto il necessario, è possibile iniziare a usare Diagnostica della grafica eseguendo le operazioni descritte nei passaggi seguenti.
+ Ora che si dispone di tutto il necessario, è possibile iniziare a usare Diagnostica della grafica seguendo questa procedura.
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Creare un'app Direct3D
  Se si dispone già di un'app Direct3D con cui esplorare Diagnostica della grafica, passare al punto successivo. In caso contrario, si può usare uno degli esempi di Direct3D disponibili in Code Gallery.
 
-- Per provare diagnostica della grafica con Direct3D 12 su Windows 10 usando Visual Studio 2015, provare il [esempio Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) per Windows 10.
+- Per provare Diagnostica della grafica con Direct3D 12 in Windows 10 con Visual Studio 2015, provare l' [esempio Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) per Windows 10.
 
-- Per provare diagnostica della grafica con Direct3D 11 su Windows 10 o Windows 8.1, è possibile usare la **App DirectX (Windows universale)** oppure **App DirectX (Windows 8.1)** modelli di progetto. O, per operazioni più complesse, provare il [esempio di gioco marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) per Windows 8.1.
+- Per provare Diagnostica della grafica con Direct3D 11 in Windows 10 o Windows 8.1, è possibile usare i modelli di progetto **app DirectX (universale di Windows)** o  **app DirectX (Windows 8.1)** . In alternativa, per qualcosa di più interessante, provare a usare l' [esempio DirectX Marble Maze Game](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) per Windows 8.1.
 
   Verificare che sia possibile compilare l'applicazione prima di andare avanti.
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Avviare una sessione di Diagnostica grafica
- A questo punto si è pronti per avviare la prima sessione di diagnostica della grafica. In Visual Studio, nel menu principale, scegliere **eseguire il Debug, grafica, avvia diagnostica**, oppure premere **ALT+F5**. L'app viene avviata in Diagnostica grafica e in Visual Studio vengono visualizzate le finestre della sessione di diagnostica.
+ A questo punto si è pronti per avviare la prima sessione di diagnostica della grafica. Nel menu principale di Visual Studio scegliere **debug, grafica, Avvia diagnostica**oppure premere **ALT + F5**. L'app viene avviata in Diagnostica grafica e in Visual Studio vengono visualizzate le finestre della sessione di diagnostica.
 
 > [!IMPORTANT]
 > Se si esegue l'app in Windows 10 e non si è ancora installata la funzionalità facoltativa Strumenti di grafica, verrà richiesto di farlo ora. La funzionalità deve essere installata per poter usare Diagnostica della grafica in Windows 10.
@@ -87,13 +87,13 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
 ##### <a name="to-capture-single-frames"></a>Per acquisire singoli frame
 
-- In Visual Studio scegliere il pulsante nella barra degli strumenti **Acquisisci frame** nella barra degli strumenti di grafica o nella finestra della sessione di diagnostica. Oppure, se l'app ha lo stato attivo, premere **Stamp**.
+- In Visual Studio scegliere il pulsante nella barra degli strumenti **Acquisisci frame** nella barra degli strumenti di grafica o nella finestra della sessione di diagnostica. In alternativa, se l'app ha lo stato attivo, è sufficiente premere **Stamp**.
 
 ##### <a name="to-capture-a-sequence-of-frames"></a>Per acquisire una sequenza di frame
 
 - In Visual Studio, nella finestra della sessione di diagnostica impostare **Frame da acquisire** sul numero di frame da acquisire in sequenza, quindi acquisire la sequenza usando uno dei metodi descritti in precedenza per acquisire singoli frame.
 
-   Per acquisire nuovamente singoli frame, impostare **frame da acquisire** a `1`.
+   Per acquisire nuovamente singoli frame, impostare i **frame per l'acquisizione** in `1` .
 
   Al termine dell'operazione di acquisizione dei frame, uscire dall'app o scegliere il pulsante **Arresta** nella barra degli strumenti di grafica o nella finestra della sessione di diagnostica.
 
@@ -102,7 +102,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
  Se è stato selezionato frame errato nella finestra della sessione di diagnostica oppure si vuole esaminare un frame diverso, è possibile selezionare un altro da Analizzatore grafica. Nella scheda **Destinazione rendering** della finestra del log di grafica, sotto l'immagine della destinazione di rendering, espandere l'**Elenco frame** e quindi scegliere un altro frame da esaminare.
 
- Per altre informazioni su come usare gli strumenti di Analizzatore grafica tra loro, vedere la [esempi](../debugger/graphics-diagnostics-examples.md).
+ Per altre informazioni su come usare gli strumenti di analizzatore grafica insieme, vedere gli [esempi](../debugger/graphics-diagnostics-examples.md).
 
 ## <a name="see-also"></a>Vedere anche
  [Grafica Direct3D 12](https://msdn.microsoft.com/52094ae3-3b44-4689-9ee7-1ba1b3a779cb)

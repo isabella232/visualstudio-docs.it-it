@@ -11,20 +11,20 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0548e1e791c41d806ccc222176ee571b037389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153734"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Metodo NotifyDebuggerOfWaitCompletion
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Metodo segnaposto usato come destinazione un punto di interruzione dal debugger. Questo metodo non deve essere impostato come inline o ottimizzato.  
+Metodo segnaposto utilizzato come destinazione del punto di interruzione dal debugger. Questo metodo non deve essere inline o ottimizzato.  
   
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,8 +32,8 @@ Metodo segnaposto usato come destinazione un punto di interruzione dal debugger.
 private void NotifyDebuggerOfWaitCompletion()  
 ```  
   
-## <a name="remarks"></a>Note  
- Tutte le operazioni di join con un'attività devono chiamare questo metodo se i bit di notifica di debugger è impostato.  
+## <a name="remarks"></a>Osservazioni  
+ Tutte le operazioni di join con un'attività devono chiamare questo metodo se è impostato il bit di notifica del debugger.  
   
 ## <a name="requirements"></a>Requisiti  
   

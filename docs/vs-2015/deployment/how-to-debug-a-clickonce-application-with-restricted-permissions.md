@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate | Microsoft Docs"
+title: "Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d60f88c4d1532a03922f12f21bb9b455ef5d84d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153791"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizzazioni di attendibilità totale. È quindi molto probabile che le eccezioni di sicurezza generate durante il debug di un'applicazione ClickOnce siano diverse da quelle restituite all'utente finale quando esegue l'applicazione con autorizzazioni limitate.  
@@ -41,7 +41,7 @@ Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizz
   
 3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** e quindi selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
   
-4. Fare clic su **Avanzate** .  
+4. Fare clic sul pulsante **Avanzate** .  
   
 5. Selezionare la casella di controllo **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** e quindi fare clic su **OK**.  
   
@@ -55,14 +55,14 @@ Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizz
   
 3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** e quindi selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
   
-4. Fare clic su **Avanzate** .  
+4. Fare clic sul pulsante **Avanzate** .  
   
 5. Selezionare la casella di controllo **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** e quindi fare clic su **OK**.  
   
 6. Nella casella di testo **Esegui debug dell'applicazione come se fosse stata scaricata dal seguente URL** immettere un URL o un percorso di rete.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Procedura: impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Protezione delle applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Sicurezza di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
+ [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

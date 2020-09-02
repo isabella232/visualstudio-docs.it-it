@@ -1,5 +1,5 @@
 ---
-title: SccBackgroundGet (funzione) . Documenti Microsoft
+title: Funzione SccBackgroundGet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701235"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet (funzione)
@@ -37,13 +37,13 @@ SCCRTN SccBackgroundGet(
 ### <a name="parameters"></a>Parametri
  pContext
 
-[in] Puntatore di contesto del plug-in del controllo del codice sorgente.
+in Puntatore al contesto del plug-in del controllo del codice sorgente.
 
  nFile
 
-[in] Numero di file `lpFileNames` specificati nella matrice.
+in Numero di file specificati nella `lpFileNames` matrice.
 
- LpNomidi File
+ lpFileNames
 
 [in, out] Matrice di nomi di file da recuperare.
 
@@ -52,25 +52,25 @@ SCCRTN SccBackgroundGet(
 
  dwFlags
 
-[in] Flag di`SCC_GET_ALL` `SCC_GET_RECURSIVE`comando ( , ).
+in Flag di comando ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).
 
  dwBackgroundOperationID
 
-[in] Valore univoco associato a questa operazione.
+in Valore univoco associato a questa operazione.
 
 ## <a name="return-value"></a>Valore restituito
- L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei seguenti valori:
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
 
-|valore|Descrizione|
+|Valore|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Operazione completata correttamente.|
-|SCC_E_BACKGROUNDGETINPROGRESS|Un recupero in background è già in corso (il plug-in del controllo del codice sorgente deve restituire questo solo se non supporta le operazioni batch simultanee).|
-|SCC_I_OPERATIONCANCELED|L'operazione è stata annullata prima del completamento.|
+|SCC_E_BACKGROUNDGETINPROGRESS|È già in corso un recupero in background (il plug-in del controllo del codice sorgente deve restituire questo valore solo se non supporta le operazioni batch simultanee).|
+|SCC_I_OPERATIONCANCELED|Operazione annullata prima del completamento.|
 
 ## <a name="remarks"></a>Osservazioni
- Questa funzione viene sempre chiamata su un thread diverso da quello che ha caricato il plug-in del controllo del codice sorgente. Questa funzione non deve restituire fino a quando non viene eseguita; tuttavia, può essere chiamato più volte con più elenchi di file, tutti contemporaneamente.
+ Questa funzione viene sempre chiamata su un thread diverso da quello che ha caricato il plug-in del controllo del codice sorgente. Non è previsto che la funzione restituisca fino a quando non viene eseguita. Tuttavia, può essere chiamato più volte con più elenchi di file, nello stesso momento.
 
- L'utilizzo `dwFlags` dell'argomento è lo stesso di [SccGet](../extensibility/sccget-function.md).
+ L'uso dell' `dwFlags` argomento è identico a quello di [SccGet](../extensibility/sccget-function.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

@@ -11,18 +11,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f502f8ac10c28ff8c25433792ab60caf6ee05bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184439"
 ---
 # <a name="com-constants-in-managed-code"></a>Costanti COM nel codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il Framework di pacchetto gestito (MPF) rende disponibili al codice gestito alcune costanti COM standard. Queste costanti sono elencate di seguito per riferimento.  
+Il Framework di pacchetto gestito (MPF) rende disponibili alcune costanti COM standard per il codice gestito. Queste costanti sono elencate di seguito per riferimento.  
   
-## <a name="boolean-hresult-values"></a>Valori HRESULT booleano  
+## <a name="boolean-hresult-values"></a>Valori HRESULT booleani  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
   
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>  

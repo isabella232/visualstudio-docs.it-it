@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbb2674381992bd86f0144af103615f0a3922fcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153580"
 ---
-# <a name="bpcondstyle"></a>BP_COND_STYLE
+# <a name="bp_cond_style"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica lo stile di condizione punto di interruzione per in sospeso e associati i punti di interruzione.  
+Specifica lo stile della condizione del punto di interruzione per i punti di interruzione in sospeso e associati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,23 +43,23 @@ public enum enum_BP_COND_STYLE { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  BP_COND_NONE  
- Quando viene raggiunta la posizione del punto di interruzione, viene attivato il punto di interruzione. Nessuna condizione di punto di interruzione specificati.  
+ Genera il punto di interruzione quando viene raggiunta la posizione del punto di interruzione. Non è stata specificata alcuna condizione del punto di interruzione.  
   
  BP_COND_WHEN_TRUE  
- Viene attivato il punto di interruzione solo quando il punto di interruzione associata l'espressione condizionale restituisce `true`.  
+ Genera il punto di interruzione solo quando l'espressione condizionale associata al punto di interruzione restituisce `true` .  
   
  BP_COND_WHEN_CHANGED  
- Viene attivato il punto di interruzione solo quando il valore dell'espressione condizionale associato il punto di interruzione è stato modificato da relativo valutazione precedente.  
+ Genera il punto di interruzione solo quando il valore dell'espressione condizionale associato al punto di interruzione è stato modificato rispetto alla valutazione precedente.  
   
-## <a name="remarks"></a>Note  
- Utilizzato per il `styleCondition` membro della [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struttura.  
+## <a name="remarks"></a>Osservazioni  
+ Utilizzato per il `styleCondition` membro della struttura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d49c912ae14154fc552c76fc011596f4f22166f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153569"
 ---
-# <a name="bpcondition"></a>BP_CONDITION
+# <a name="bp_condition"></a>BP_CONDITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descrive le condizioni in cui viene attivato un punto di interruzione.  
+Descrive le condizioni in cui un punto di interruzione viene attivato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,31 +46,31 @@ public struct BP_CONDITION { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  `pThread`  
- Il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread attivo per l'applicazione che contiene il punto di interruzione.  
+ Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread attivo per l'applicazione che contiene il punto di interruzione.  
   
  `styleCondition`  
- Un valore compreso il [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumerazione che indica lo stile di questa condizione di punto di interruzione.  
+ Valore dell'enumerazione [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) che descrive lo stile di questa condizione del punto di interruzione.  
   
  `bstrContext`  
- La posizione del punto di interruzione.  
+ Posizione del punto di interruzione.  
   
  `bstrCondition`  
- La condizione di attivazione del punto di interruzione.  
+ Condizione di attivazione del punto di interruzione.  
   
  `nRadix`  
- Radice da usare nella valutazione di tutte le informazioni numeriche.  
+ Radice da usare per la valutazione di qualsiasi informazione numerica.  
   
-## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura è un membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .  
   
- Questa struttura viene anche passata come parametro per il [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) metodi.  
+ Questa struttura viene passata anche come parametro ai metodi [secondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [secondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
@@ -78,7 +78,7 @@ public struct BP_CONDITION { 
  [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   
- [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)   
+ [Condizione di](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   
+ [Condizione di](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)

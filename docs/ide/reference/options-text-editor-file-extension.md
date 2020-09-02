@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596203"
 ---
 # <a name="options-text-editor-file-extension"></a>Opzioni, Editor di testo, Estensione file
@@ -34,7 +34,7 @@ Quando si seleziona un'opzione "con codifica", ogni volta che si apre un documen
 
 Digitare l'estensione di file di cui si vuole definire lo strumento di modifica nell'IDE.
 
-**Editore**
+**Editor**
 
 Selezionare la finestra di progettazione o l'editor dell'IDE in cui verranno aperti i documenti con l'estensione di file specificata. Quando si seleziona un'opzione "con codifica", ogni volta che si apre un documento di questo tipo viene visualizzata una finestra di dialogo che consente di selezionare uno schema di codifica.
 

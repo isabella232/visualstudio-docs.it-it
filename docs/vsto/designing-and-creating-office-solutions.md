@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189708"
 ---
 # <a name="design-and-create-office-solutions"></a>Progettazione e creazione di soluzioni Office
@@ -44,7 +44,7 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 
 - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
-  La versione di .NET Framework scelta per il progetto è necessaria per l'esecuzione della soluzione nei computer degli utenti finali. Se, ad esempio, il progetto è destinato alla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] è necessario nei computer degli utenti finali. In questo esempio, la soluzione non verrà eseguita se nei computer degli utenti finali viene installato solo il .NET Framework 3,5.
+  La versione di .NET Framework scelta per il progetto è necessaria per l'esecuzione della soluzione nei computer degli utenti finali. Se, ad esempio, il progetto [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] è destinato a, il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] è necessario nei computer degli utenti finali. In questo esempio, la soluzione non verrà eseguita se nei computer degli utenti finali viene installato solo il .NET Framework 3,5.
 
   Se si esegue la migrazione di un progetto di componente aggiuntivo VSTO destinato a .NET Framework 3.5, Visual Studio modifica il framework di destinazione del progetto impostandolo su [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, a seconda della versione di Office installata.
 
@@ -56,14 +56,14 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 > Non è possibile usare .NET Framework 3.5 o versioni precedenti nei progetti Office creati tramite [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. I progetti di Office create mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] richiedono funzionalità che sono state introdotte in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprendere quando gli assembly di interoperabilità primari di Office sono necessari nei computer degli utenti finali
- Per impostazione predefinita, gli assembly di interoperabilità primari (PIA) di Office non devono essere installati nei computer degli utenti finali se la proprietà **Incorpora tipi di interoperabilità** di ogni riferimento Pia di Office nel progetto è impostata su **true**, ovvero il valore predefinito. In questo scenario, le informazioni sul tipo per i tipi di assembly di interoperabilità primari utilizzati dalla soluzione vengono incorporate nell'assembly della soluzione quando si compila il progetto. In fase di esecuzione vengono utilizzate le informazioni sul tipo incorporate anziché gli assembly di interoperabilità primari per effettuare chiamate nel modello a oggetti basato su COM dell'applicazione di Office. Per ulteriori informazioni sulla modalità di incorporamento dei tipi di assembly di interoperabilità primari nella soluzione, vedere [equivalenza del tipo e tipi di interoperabilità incorporati](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
+ Per impostazione predefinita, gli assembly di interoperabilità primari (PIA) di Office non devono essere installati nei computer degli utenti finali se la proprietà **Incorpora tipi di interoperabilità** di ogni riferimento Pia di Office nel progetto è impostata su **true**, ovvero il valore predefinito. In questo scenario, le informazioni sul tipo per i tipi di assembly di interoperabilità primari utilizzati dalla soluzione vengono incorporate nell'assembly della soluzione quando si compila il progetto. In fase di runtime, le informazioni sul tipo incorporate vengono utilizzate al posto degli assembly di interoperabilità primari per chiamare il modello a oggetti COM dell'applicazione di Office. Per ulteriori informazioni sulla modalità di incorporamento dei tipi di assembly di interoperabilità primari nella soluzione, vedere [equivalenza del tipo e tipi di interoperabilità incorporati](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
 
  Se la proprietà **Incorpora tipi di interoperabilità** di ogni riferimento Pia di Office nel progetto è impostata su **false**, gli assembly di interoperabilità primari di Office devono essere installati e registrati nel Global assembly cache in ogni computer dell'utente finale che esegue la soluzione. Nella maggior parte dei casi, gli assembly di interoperabilità primari vengono installati per impostazione predefinita con Office, ma è anche possibile includere l'assembly di interoperabilità primario ridistribuibile come prerequisito per la soluzione. Per ulteriori informazioni, vedere [prerequisiti della soluzione Office per la distribuzione](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).
 
 ### <a name="understand-the-client-profile"></a>Informazioni sul profilo client
  .NET Framework Client Profile è un sottoinsieme della versione completa di .NET Framework. È possibile scegliere .NET Framework Client Profile se è necessario utilizzare solo le funzionalità client di .NET Framework e si desidera fornire l'esperienza di distribuzione più veloce per la soluzione Office. Per ulteriori informazioni, vedere [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).
 
- Quando si crea un progetto Office destinato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)],  [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] è la destinazione predefinita. Se si desidera sviluppare per la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]completa, è necessario impostare questa opzione dopo la creazione del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Quando si crea un progetto Office destinato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)],  [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] è la destinazione predefinita. Se si desidera sviluppare per il completo [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , è necessario impostare questa opzione dopo la creazione del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Creare soluzioni per l'edizione a 64 bit di Microsoft Office
  Microsoft Office è disponibile nelle edizioni a 64 bit e a 32 bit. Per creare soluzioni Office che possono essere eseguite in entrambe le edizioni, l'impostazione della piattaforma di destinazione per il progetto deve essere impostata su **qualsiasi CPU**. Questo è il valore predefinito per i progetti Office. Per altre informazioni, vedere [compilare soluzioni Office](../vsto/building-office-solutions.md).
@@ -88,7 +88,7 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 
  Per motivi di sicurezza, è consigliabile creare progetti nel computer locale anziché svilupparli in un percorso condiviso. Per altre informazioni, vedere [sviluppo collaborativo di soluzioni Office](../vsto/collaborative-development-of-office-solutions.md).
 
-## <a name="referenced-assemblies"></a>Assembly a cui viene fatto riferimento
+## <a name="referenced-assemblies"></a>Assembly di riferimento
  L'assembly può fare riferimento ad altri assembly elencati nei riferimenti del progetto. Tuttavia, un assembly del progetto a livello di documento non può fare riferimento a un altro assembly del progetto a livello di documento.
 
 ## <a name="see-also"></a>Vedere anche

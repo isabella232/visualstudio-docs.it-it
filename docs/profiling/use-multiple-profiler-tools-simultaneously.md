@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332033"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>Uso simultaneo di più strumenti del profiler
@@ -31,7 +31,7 @@ Durante l'analisi, le operazioni di filtro del tempo vengono applicate tra gli s
 
 ![Filtro tempo Hub diag](../profiling/media/diaghubtimefiltering.png "Filtro tempo Hub diag")
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md)
 - [Esecuzione di strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)

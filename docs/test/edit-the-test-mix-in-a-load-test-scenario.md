@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595930"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali test delle prestazioni Web, unit test e test codificati dell'interfaccia utente includere in uno scenario di test di carico
@@ -43,11 +43,11 @@ Quando si crea un nuovo scenario usando la **Creazione guidata test di carico** 
 
 1. Aprire un test di carico.
 
-2. **Nell'Editor test di carico**fare clic con il pulsante destro del mouse su uno scenario esistente e quindi scegliere Aggiungi **test**.
+2. Nella **Editor test di carico**fare clic con il pulsante destro del mouse su uno scenario esistente, quindi scegliere **Aggiungi test**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi test**. È possibile aggiungere allo scenario tutti i test delle prestazioni Web, gli unit test e i test codificati dell'interfaccia utente della soluzione non ancora aggiunti.
 
-3. Nel riquadro **Test disponibili** selezionare i test delle prestazioni Web, dell'unità e dell'interfaccia utente codificati che si desidera aggiungere. Fare clic sulla freccia destra per aggiungere i test al riquadro **Test selezionati**.
+3. Nel riquadro **test disponibili** selezionare i test delle prestazioni Web, le unità e i test codificati dell'interfaccia utente che si desidera aggiungere. Fare clic sulla freccia destra per aggiungere i test al riquadro **Test selezionati**.
 
 4. Al termine dell'aggiunta dei test, scegliere **OK**.
 
@@ -62,16 +62,16 @@ Quando si crea un nuovo scenario usando la **Creazione guidata test di carico** 
 
 1. Aprire un test di carico.
 
-2. **Nell'albero**del test di carico fare clic con il pulsante destro del mouse sullo scenario da cui si desidera rimuovere un test nell'albero del test di carico e scegliere **Modifica combinazione di test**. Verrà visualizzata la finestra di dialogo **Modifica combinazione di test**.
+2. Nell'albero del test di carico dell' **Editor test di carico**, fare clic con il pulsante destro del mouse sullo scenario da cui si desidera rimuovere un test e scegliere **Modifica combinazione di test**. Verrà visualizzata la finestra di dialogo **Modifica combinazione di test**.
 
-3. Selezionare il test delle prestazioni Web, dell'unità o dell'interfaccia utente codificata nella griglia, quindi scegliere **Rimuovi**.
+3. Selezionare il test delle prestazioni Web, dell'unità o del test codificato dell'interfaccia utente nella griglia e quindi scegliere **Rimuovi**.
 
     > [!NOTE]
     > Dopo aver rimosso il test, regolare la combinazione di test in base alla distribuzione preferita.
 
 4. Al termine della rimozione dei test, scegliere **OK**.
 
-## <a name="about-the-mix-control"></a><a name="EditingTestMixAboutMixControl"></a>Informazioni sul controllo Mix
+## <a name="about-the-mix-control"></a><a name="EditingTestMixAboutMixControl"></a> Informazioni sul controllo combinazione
 Il controllo Mix consente di regolare la percentuale di carico distribuita tra test, tipi di browser o tipi di rete in uno scenario di test di carico. I valori percentuali vengono modificati spostando i dispositivi di scorrimento. Con la regolazione della combinazione di test si specifica la probabilità che un utente virtuale esegua un determinato test in uno scenario di test di carico.
 
 Quando si sposta un dispositivo di scorrimento, i valori in percentuale di tutti gli elementi disponibili variano. Se gli elementi sono più di due, la quantità aggiunta o rimossa viene distribuita in modo uniforme tra gli altri elementi. È possibile eseguire l'override di questo comportamento. Se si seleziona la casella di controllo nella colonna del blocco per un particolare elemento, il valore percentuale specificato per tale elemento verrà bloccato. Quindi, quando si sposta un dispositivo di scorrimento, il quantità aggiunta o rimossa viene applicata solo agli eventuali elementi non bloccati rimanenti.
@@ -81,10 +81,10 @@ Il pulsante **Distribuisci** consente di allocare le percentuali in modo uniform
 > [!WARNING]
 > Il pulsante **Distribuisci** esegue l'override degli eventuali elementi bloccati.
 
-È anche possibile digitare i valori **%** percentuali direttamente nella colonna anziché utilizzare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
+È anche possibile digitare i valori percentuali direttamente nella **%** colonna anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
 
 > [!NOTE]
-> I cursori sono disabilitati quando il totale non viene aggiunto fino al **%** 100% o quando i valori percentuali immessi nella colonna sono decimali.
+> I dispositivi di scorrimento sono disabilitati se il totale non è pari al 100% oppure quando i valori percentuali immessi nella **%** colonna sono decimali.
 
 Quando si immettono manualmente le percentuali, assicurarsi che la somma di tutti gli elementi sia 100%. Quando si salva una combinazione, se la somma non è pari al 100%, verrà richiesto di accettare i valori percentuali così come sono o di tornare indietro e regolarli. Se si sceglie di accettarle così come sono, le percentuali verranno ripartite proporzionalmente al 100%.  Se ad esempio si dispone di due elementi che sono stati impostati manualmente su 80% e 40%, il primo elemento verrà impostato su 66,67% (80 diviso 120) mentre il secondo su 33,33% (40 diviso 120).
 

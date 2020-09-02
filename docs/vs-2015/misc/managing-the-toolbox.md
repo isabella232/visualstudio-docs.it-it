@@ -1,5 +1,5 @@
 ---
-title: La gestione della casella degli strumenti | Microsoft Docs
+title: Gestione della casella degli strumenti | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,16 +11,16 @@ ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681538"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] consente a un pacchetto VSPackage, ad esempio un editor o una finestra di progettazione, di gestire l'appartenenza e l'aspetto della **casella degli strumenti**.  
   
- La **casella degli strumenti** può inoltre essere gestita usando l'automazione. Per altre informazioni sulla gestione di una casella degli strumenti tramite l'automazione, vedere [come: Control the Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ La **casella degli strumenti** può inoltre essere gestita usando l'automazione. Per altre informazioni sulla gestione di una casella degli strumenti tramite l'automazione, vedere [How to: Control the Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Selezione automatica della scheda della casella degli strumenti  
  Una scheda o una categoria specifica della **casella degli strumenti** può essere impostata automaticamente come attiva in base alla finestra di progettazione o all'editor attualmente attivo. Ad esempio, se è attivata una finestra di progettazione di form, si potrebbe voler impostare come attiva la scheda **Tutti i Windows Form** .  
@@ -36,7 +36,7 @@ ms.locfileid: "65681538"
   
 |Interfaccia|Descrizione|  
 |---------------|-----------------|  
-|<xref:System.Drawing.Design.IToolboxService>|Consente alle applicazioni di gestire, aggiungere e rimuovere <xref:System.Drawing.Design.ToolboxItem> oggetti dal **casella degli strumenti**. Consente inoltre di configurare l'aspetto e le categorie della **casella degli strumenti** .|  
+|<xref:System.Drawing.Design.IToolboxService>|Consente alle applicazioni di gestire, aggiungere e rimuovere <xref:System.Drawing.Design.ToolboxItem> oggetti dalla **casella degli strumenti**. Consente inoltre di configurare l'aspetto e le categorie della **casella degli strumenti** .|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>|Consente alle applicazioni di gestire, aggiungere e rimuovere controlli della **casella degli strumenti** basati su ActiveX, nonché di configurare le categorie e l'aspetto della **casella degli strumenti** .|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>|Estende le funzionalità disponibili in <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> fornendo supporto completo per il salvataggio permanente e la localizzazione.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox4>||  
@@ -47,11 +47,11 @@ ms.locfileid: "65681538"
   
 - <xref:System.Drawing.Design.IToolboxService> è disponibile solo per pacchetti VSPackage basati sul framework di pacchetto gestito (MPF, Managed Package Framework).  
   
-- Controlli non possono essere aggiunti direttamente per la **casella degli strumenti** usando <xref:System.Drawing.Design.IToolboxService>.  
+- I controlli non possono essere aggiunti direttamente alla **casella degli strumenti** usando <xref:System.Drawing.Design.IToolboxService> .  
   
 - Un pacchetto VSPackage deve usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> per aggiungere controlli oppure ospitare il controllo in un controllo wrapper che deriva da <xref:System.Windows.Forms.AxHost>.  
   
-   Visual Studio fornisce lo strumento `Aximp.exe` per l'automazione del wrapping di un controllo ActiveX in un controllo derivato da <xref:System.Windows.Forms.AxHost>. Per altre informazioni, vedere [Aximp.exe (Windows Form Control Importer di ActiveX)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio fornisce lo strumento `Aximp.exe` per l'automazione del wrapping di un controllo ActiveX in un controllo derivato da <xref:System.Windows.Forms.AxHost>. Per ulteriori informazioni, vedere [Aximp.exe (Windows Forms utilità di importazione di controlli ActiveX)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sono interfacce basate su COM disponibili tramite gli assembly di interoperabilità.  
   

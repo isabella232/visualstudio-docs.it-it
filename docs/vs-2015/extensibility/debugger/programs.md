@@ -1,5 +1,5 @@
 ---
-title: I programmi | Microsoft Docs
+title: Programmi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,34 +12,34 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9070b33c7522cdc13fd6217956fcab72cd83f8d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153635"
 ---
-# <a name="programs"></a>Programs
+# <a name="programs"></a>Programmi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 In termini di architettura del debugger, un **programma**:  
   
-- È un contenitore per un set di thread e un set di moduli. Un programma non ha nessuna analogia singolo nel sistema operativo Windows.  
+- È un contenitore per un set di thread e un set di moduli. Un programma non ha una singola analogia nel sistema operativo Windows.  
   
-     Un programma è un tipo di processo secondario. Ad esempio, quando si esegue il debug di un sito Web, uno script può essere considerato un programma. Mentre è in esecuzione uno script nel processo del motore di scripting, indipendente da altri script, include anche un proprio set di thread. Un motore di debug (DE) viene associato a un programma e non a un processo o un thread.  
+     Un programma è un tipo di sottoprocesso. Ad esempio, quando si esegue il debug di un sito Web, uno script può essere considerato come un programma. Mentre uno script viene eseguito nel processo del motore di script, indipendentemente da altri script, dispone anche di un proprio set di thread. Un motore di debug (DE) si connette a un programma e non a un processo o a un thread.  
   
-- Possibile identificare se stesso e il processo in esecuzione in e può essere collegato per essere disconnesso da e descrivono il DE che ha creato, se presente. Un programma possa eseguire, arrestare, continuare e terminare.  
+- Può identificare se stesso e il processo in cui è in esecuzione e può essere collegato, essere scollegato da e descrivere il DE che lo ha creato, se disponibile. Un programma può eseguire, arrestare, continuare ed essere terminato.  
   
-- Possibile enumerare tutti i relativi thread. Un programma può fornire anche il proprio flusso disassembly e possa enumerare tutti i contesti di codice di una posizione del documento specificato.  
+- Consente di enumerare tutti i relativi thread. Un programma può anche fornire il proprio flusso di Disassembly ed è in grado di enumerare tutti i contesti di codice di una determinata posizione del documento.  
   
-- È rappresentato da un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaccia, creata prima che il programma viene collegato o come parte del processo di collegamento, a seconda dell'implementazione. Quando una porta enumera i programmi di un processo, viene creato ogni programma in base a una corrispondente [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) passata come argomento a interfaccia [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Mentre i motori di debug anche creare `IDebugProgram2` interfacce per rappresentare i programmi, questi programmi non vengono create in base a un nodo di programma. Il `IDebugProgramNode2` interfacce create da un CRI vengono usate per eseguire il debug effettivi, mentre quelli creati da una porta sono utilizzati solo per l'individuazione dei quali programmi sono in esecuzione in un processo.  
+- È rappresentato da un'interfaccia [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , creata prima che il programma venga collegato o come parte del processo di connessione, a seconda dell'implementazione. Quando una porta enumera i programmi di un processo, ogni programma viene creato in base a un'interfaccia [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) corrispondente passata come argomento a [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Sebbene i motori di debug creino anche `IDebugProgram2` interfacce per rappresentare i programmi, questi programmi non vengono creati in base a un nodo del programma. Le `IDebugProgramNode2` interfacce create da un de vengono usate per il debug effettivo, mentre quelle create da una porta vengono usate solo per individuare i programmi in esecuzione in un processo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Processi](../../extensibility/debugger/processes.md)   
- [Nodi di programma](../../extensibility/debugger/program-nodes.md)   
+ [Nodi del programma](../../extensibility/debugger/program-nodes.md)   
  [Moduli](../../extensibility/debugger/modules.md)   
  [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)   
  [Motore di debug](../../extensibility/debugger/debug-engine.md)   
- [Posizione di documento](../../extensibility/debugger/document-position.md)   
+ [Posizione del documento](../../extensibility/debugger/document-position.md)   
  [Contesto del codice](../../extensibility/debugger/code-context.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   

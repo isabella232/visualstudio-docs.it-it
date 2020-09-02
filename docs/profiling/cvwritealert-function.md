@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332172"
 ---
 # <a name="cvwritealert-function"></a>Funzione CvWriteAlert
@@ -71,5 +71,5 @@ HRESULT CvWriteAlertVA(
 
  **ANSI:** CvWriteAlertA, CvWriteAlertVA
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

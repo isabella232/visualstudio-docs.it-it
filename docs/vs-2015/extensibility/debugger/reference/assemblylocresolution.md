@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c088b27e686d42d800a6470fbbced8192c100bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153607"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica un assembly in cui si trova.  
+Specifica la posizione in cui si trova un assembly.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,26 +47,26 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
   
 ## <a name="members"></a>Members  
  ALR_NAME  
- Assembly si trova nello spazio dei nomi corrente.  
+ L'assembly si trova nello spazio dei nomi corrente.  
   
  ALR_USERDIR  
- Assembly si trova in una directory dell'utente.  
+ L'assembly si trova in una directory utente.  
   
  ALR_SHAREDDIR  
- Assembly si trova nella directory condivisa.  
+ L'assembly si trova in una directory condivisa.  
   
  ALR_REMOTEDIR  
- Assembly si trova in una directory remota.  
+ L'assembly si trova in una directory remota.  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono restituiti per il [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metodi.  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono restituiti dai metodi [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .  
   
- Questi valori possono essere combinati con i `OR` operazione.  
+ Questi valori possono essere combinati con l' `OR` operazione.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

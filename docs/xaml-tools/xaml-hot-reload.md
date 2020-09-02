@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815890"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio
@@ -49,15 +49,15 @@ Di seguito sono riportate le limitazioni note del ricaricamento a caldo di XAML.
 
 |Limitazione|WPF|UWP|Note|
 |-|-|-|-|
-|Cablare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportato|Vedere errore: *assicurarsi che l'evento non sia riuscito*. Si noti che in WPF è possibile fare riferimento a un gestore eventi esistente. Nelle app UWP, il riferimento a un gestore eventi esistente non è supportato.|
+|Cablare gli eventi ai controlli durante l'esecuzione dell'app|Non Supportato|Non supportato|Vedere errore: *assicurarsi che l'evento non sia riuscito*. Si noti che in WPF è possibile fare riferimento a un gestore eventi esistente. Nelle app UWP, il riferimento a un gestore eventi esistente non è supportato.|
 |Creazione di oggetti risorsa in un dizionario risorse, ad esempio quelli nella pagina/finestra o nel file *app. XAML* dell'app.|Supportato a partire da Visual Studio 2019 Update 2|Supportato|Esempio: aggiunta di un oggetto a `SolidColorBrush` un dizionario risorse da utilizzare come `StaticResource` .</br>Nota: è possibile applicare/utilizzare risorse statiche, convertitori di stile e altri elementi scritti in un dizionario risorse durante l'utilizzo del ricaricamento a caldo di XAML. Solo la creazione della risorsa non è supportata.</br> Modifica della proprietà del dizionario risorse `Source` .|
-|Aggiunta di nuovi controlli, classi, finestre o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|nessuno|
-|Gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|nessuno|
+|Aggiunta di nuovi controlli, classi, finestre o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|Nessuno|
+|Gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|Nessuno|
 |Modifica data binding che usa l'estensione di markup {x:Bind}|N/D|Supportato a partire da Visual Studio 2019|Questa operazione richiede Windows 10 versione 1809 (Build 10.0.17763). Non supportato in Visual Studio 2017 o versioni precedenti.|
-|La modifica delle direttive x:Uid non è supportata|N/D|Non supportato|nessuno|
+|La modifica delle direttive x:Uid non è supportata|N/D|Non Supportato|Nessuno|
 |Più processi | Non supportato | Non supportato | Il ricaricamento a caldo può essere utilizzato solo su 1 processo alla volta. |
 
-## <a name="error-messages"></a>Messaggi di errore
+## <a name="error-messages"></a>messaggi di errore
 
 È possibile che si verifichino gli errori seguenti durante l'utilizzo del ricaricamento a caldo di XAML.
 

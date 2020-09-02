@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7fa9aa7a4a19ebd5ae45ee84364e71043a28f6be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651466"
 ---
 # <a name="localizing-applications"></a>Localizzazione di applicazioni
@@ -37,10 +37,10 @@ La *localizzazione* è il processo di personalizzazione dell'applicazione per de
  [Linguaggi di risorse non associate ad alcun paese per la localizzazione](../ide/neutral-resources-languages-for-localization.md)Introduce la classe <xref:System.Resources.NeutralResourcesLanguageAttribute>, che specifica le impostazioni cultura delle risorse incluse nell'assembly principale di un'applicazione.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Introduzione alle applicazioni internazionali basate sul .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Vengono illustrati i concetti relativi allo sviluppo di software per un mercato internazionale utilizzando C#Visual Basic o oggetti visivi.
+ [Introduzione alle applicazioni internazionali basate sul .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Vengono illustrati i concetti relativi allo sviluppo di software per un mercato internazionale utilizzando Visual Basic o Visual C#.
 
  [Globalizzazione di Windows Form](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) Offre collegamenti a pagine sulla creazione di applicazioni Windows che supportano più impostazioni cultura.
 
- [Globalizzazione e localizzazione](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Offre collegamenti a pagine sulla creazione di applicazioni web che supportano più impostazioni cultura.
+ [Globalizzazione e localizzazione](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Fornisce collegamenti a pagine sulla creazione di applicazioni Web che supportano più impostazioni cultura.
 
- [Suggerimenti per lo sviluppo di applicazioni internazionali](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Offre informazioni sulla programmazione per un pubblico internazionale, ad esempio problemi di progettazione e terminologia.
+ [Procedure consigliate per lo sviluppo di applicazioni internazionali](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Fornisce informazioni sulla programmazione per un pubblico internazionale, ad esempio problemi di progettazione e terminologia.

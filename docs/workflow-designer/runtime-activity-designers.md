@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 366a590daefa2fae33b3e76959444ad7fc9d2504
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875488"
 ---
 # <a name="runtime-activity-designers"></a>ActivityDesigner Runtime
@@ -25,7 +25,7 @@ Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e term
 
  [Messaggistica](../workflow-designer/messaging-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [Primitive](../workflow-designer/primitives-activity-designers.md)
 
  [Transazione](../workflow-designer/transaction-activity-designers.md)
 
@@ -33,6 +33,6 @@ Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e term
 
  [Gestione degli errori](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Utilizzo degli ActivityDesigner](control-flow-activity-designers.md)

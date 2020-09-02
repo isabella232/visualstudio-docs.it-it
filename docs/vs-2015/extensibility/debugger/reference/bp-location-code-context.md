@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1d703a35c0b4e065bcf3515fe063c7620382666f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153488"
 ---
-# <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
+# <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descrive la posizione di un punto di interruzione che è associato direttamente a un indirizzo nel programma sottoposto a debug.  
+Descrive la posizione di un punto di interruzione associato direttamente a un indirizzo nel programma di cui è in corso il debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,17 +32,17 @@ typedef struct _BP_LOCATION_CODE_CONTEXT { 
 } BP_LOCATION_CODE_CONTEXT;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  pCodeContext  
- Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del punto di interruzione nel codice.  
+ Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del punto di interruzione nel codice.  
   
-## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189689"
 ---
 # <a name="data-in-office-solutions"></a>Dati nelle soluzioni Office
   Molte soluzioni Office consentono agli utenti di recuperare o modificare dati. Quando si creano soluzioni Office usando Visual Studio, esistono molti modalità di uso dei dati.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
  Descrive come associare i dati ai controlli nelle soluzioni Office.
@@ -50,7 +50,7 @@ ms.locfileid: "73189689"
 
  Elenca gli argomenti che illustrano come usare i dati in Visual Studio.
 
-- [Salva dati](../data-tools/save-data-back-to-the-database.md)
+- [Salvare i dati](../data-tools/save-data-back-to-the-database.md)
 
  Fornisce i collegamenti ad argomenti sull'uso dei dataset, inclusa la modifica dei dati in un dataset e la scrittura delle modifiche nell'origine dati.
 

@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c16c92b41aa0635ecb24d83e30e2c347620b2c75
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675530"
 ---
 # <a name="xdcmake-task"></a>Attività XDCMake
@@ -32,7 +32,7 @@ ms.locfileid: "65675530"
 
 Esegue il wrapping dello strumento Documentazione XML (xdcmake.exe) che unisce i file di commento (con estensione xdc) del documento XML in un file con estensione xml.  
   
- Viene creato un file con estensione xdc quando si forniscono commenti alla documentazione nel codice sorgente di Visual C++ e si compila con l'opzione [/doc](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63) del compilatore. Per altre informazioni, vedere [Riferimento a XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Pagina delle proprietà dello strumento generatore di documenti XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) e l'opzione della riga di comando per la visualizzazione della Guida (**/?**) relativa a xdcmake.exe.  
+ Viene creato un file con estensione xdc quando si aggiungono commenti alla documentazione nel codice sorgente di Visual C++ e si compila con l'opzione [/doc](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63) del compilatore. Per ulteriori informazioni, vedere la Guida di [riferimento a XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), le [pagine delle proprietà dello strumento generatore di documenti XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)e l'opzione della guida della riga di comando (**/?**) per xdcmake.exe.  
   
 ## <a name="remarks"></a>Osservazioni  
  Per impostazione predefinita, lo strumento xdcmake.exe supporta solo alcune opzioni della riga di comando. Vengono supportate altre opzioni quando si specifica l'opzione **/old** della riga di comando.  
@@ -40,17 +40,17 @@ Esegue il wrapping dello strumento Documentazione XML (xdcmake.exe) che unisce i
 ## <a name="parameters"></a>Parametri  
  La tabella seguente descrive i parametri dell'attività **XDCMake**.  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
-|**AdditionalDocumentFile**|Parametro **String[]** facoltativo.<br /><br /> Consente di specificare uno o più file aggiuntivi con estensione xdc da unire.<br /><br /> Per altre informazioni, vedere la descrizione di **File di documentazione aggiuntivi** in [Pagina delle proprietà dello strumento generatore di documenti XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0). Vedere anche le opzioni **/old** e **/Fs** della riga di comando per xdcmake.exe.|  
-|**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, "*/opzione1 /opzione2 /opzione#*". Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XDCMake**.<br /><br /> Per altre informazioni, vedere [Riferimento a XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Pagina delle proprietà dello strumento generatore di documenti XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) e l'opzione della riga di comando per la visualizzazione della Guida (**/?**) relativa a xdcmake.exe.|  
-|**DocumentLibraryDependencies**|Parametro **Boolean** facoltativo.<br /><br /> Se è `true` e il progetto corrente contiene una dipendenza a un progetto di libreria statica (con estensione lib) nella soluzione, i file con estensione xdc di quel progetto di libreria sono inclusi nel file XML di output del progetto corrente.<br /><br /> Per altre informazioni, vedere la descrizione di **Dipendenze raccolte documenti** in [Pagina delle proprietà dello strumento generatore di documenti XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0).|  
-|**OutputFile**|Parametro **String** facoltativo.<br /><br /> Esegue l'override del nome del file di output predefinito. Il nome predefinito è derivato dal nome del primo file con estensione xdc elaborato.<br /><br /> Per altre informazioni, vedere l'opzione **/out:**`filename` in [Riferimento a XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac). Vedere anche le opzioni **/old** e **/Fo** della riga di comando per xdcmake.exe.|  
-|**ProjectName**|Parametro **String** facoltativo.<br /><br /> Nome del progetto corrente.|  
-|**SlashOld**|Parametro **Boolean** facoltativo.<br /><br /> Se è `true`, abilita le opzioni aggiuntive di xdcmake.exe.<br /><br /> Per altre informazioni, vedere l'opzione della riga di comando **/old** relativa a xdcmake.exe.|  
-|**Sources**|Parametro `ITaskItem[]` obbligatorio.<br /><br /> Definisce una matrice di elementi del file di origine MSBuild che può essere usata ed emessa dalle attività.|  
-|**SuppressStartupBanner**|Parametro **Boolean** facoltativo.<br /><br /> Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/nologo** in [Riferimento a XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac).|  
-|**TrackerLogDirectory**|Parametro **String** facoltativo.<br /><br /> Specifica la directory per il log di Tracker.|  
+|**AdditionalDocumentFile**|Parametro **String []** facoltativo.<br /><br /> Consente di specificare uno o più file aggiuntivi con estensione xdc da unire.<br /><br /> Per ulteriori informazioni, vedere la descrizione dei **file di documento aggiuntivi** nelle [pagine delle proprietà dello strumento generatore di documenti XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0). Vedere anche le opzioni **/old** e **/Fs** della riga di comando per xdcmake.exe.|  
+|**AdditionalOptions**|Parametro **stringa** facoltativo.<br /><br /> Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, "*/opzione1/opzione2/opzione #*". Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XDCMake**.<br /><br /> Per altre informazioni, vedere [Riferimento a XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Pagina delle proprietà dello strumento generatore di documenti XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) e l'opzione della riga di comando per la visualizzazione della Guida (**/?**) relativa a xdcmake.exe.|  
+|**DocumentLibraryDependencies**|Parametro **booleano** facoltativo.<br /><br /> Se è `true` e il progetto corrente contiene una dipendenza a un progetto di libreria statica (con estensione lib) nella soluzione, i file con estensione xdc di quel progetto di libreria sono inclusi nel file XML di output del progetto corrente.<br /><br /> Per ulteriori informazioni, vedere la descrizione delle **dipendenze della raccolta documenti** nelle [pagine delle proprietà dello strumento generatore di documenti XML](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0).|  
+|**OutputFile**|Parametro **stringa** facoltativo.<br /><br /> Esegue l'override del nome del file di output predefinito. Il nome predefinito è derivato dal nome del primo file con estensione xdc elaborato.<br /><br /> Per ulteriori informazioni, vedere l'opzione **/out:** `filename` in [riferimento a XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac). Vedere anche le opzioni della riga di comando **/Old** e **/fo** per xdcmake.exe.|  
+|**Nome progetto**|Parametro **stringa** facoltativo.<br /><br /> Nome del progetto corrente.|  
+|**SlashOld**|Parametro **booleano** facoltativo.<br /><br /> Se è `true`, abilita le opzioni aggiuntive di xdcmake.exe.<br /><br /> Per ulteriori informazioni, vedere l'opzione della riga di comando **/Old** per xdcmake.exe.|  
+|**recenti**|Parametro `ITaskItem[]` obbligatorio.<br /><br /> Definisce una matrice di elementi del file di origine MSBuild che può essere usata ed emessa dalle attività.|  
+|**SuppressStartupBanner**|Parametro **booleano** facoltativo.<br /><br /> Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.<br /><br /> Per altre informazioni, vedere l'opzione **/nologo** in [riferimento a XDCMake](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac).|  
+|**TrackerLogDirectory**|Parametro **stringa** facoltativo.<br /><br /> Specifica la directory per il log di Tracker.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

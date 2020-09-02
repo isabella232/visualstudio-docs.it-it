@@ -1,5 +1,5 @@
 ---
-title: Fornisce supporto per le finestre di progettazione per l'annullamento | Microsoft Docs
+title: Fornire il supporto per l'annullamento alle finestre di progettazione | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,96 +11,96 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675346"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Aggiunta del supporto dell'annullamento alle finestre di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Finestre di progettazione, come editor, in genere necessario supportare le operazioni di annullamento in modo che gli utenti possono invertire le modifiche recenti quando si modifica un elemento di codice.  
+Le finestre di progettazione, come gli editor, in genere devono supportare le operazioni di annullamento in modo che gli utenti possano invertire le modifiche recenti durante la modifica di un elemento di codice.  
   
- La maggior parte delle finestre di progettazione implementate in Visual Studio include il supporto di annullamento automaticamente fornito dall'ambiente.  
+ La maggior parte delle finestre di progettazione implementate in Visual Studio dispone del supporto di annullamento automaticamente fornito dall'ambiente.  
   
- Implementazioni della finestra di progettazione che è necessario fornire supporto per la funzionalità di annullamento:  
+ Implementazioni della finestra di progettazione che devono fornire supporto per la funzionalità di annullamento:  
   
-- Fornisce la gestione dell'annullamento implementando la classe base astratta <xref:System.ComponentModel.Design.UndoEngine>  
+- Fornire la gestione dell'annullamento implementando la classe di base astratta <xref:System.ComponentModel.Design.UndoEngine>  
   
-- Persistenza forniture e CodeDOM supportano implementando il <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e il <xref:System.ComponentModel.Design.IComponentChangeService> classi.  
+- Fornire la persistenza e il supporto CodeDOM implementando le <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> <xref:System.ComponentModel.Design.IComponentChangeService> classi e.  
   
-  Per altre informazioni su come scrivere le finestre di progettazione utilizzando [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], vedere [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Per ulteriori informazioni sulla scrittura di finestre di progettazione utilizzando [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , vedere [estensione del supporto in fase di progettazione](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
-  Il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornisce un'infrastruttura di annullamento predefinito per:  
+  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]Fornisce un'infrastruttura di annullamento predefinita per:  
   
-- Fornendo annullare le implementazioni di gestione tramite il <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> e <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> classi.  
+- Fornire implementazioni di gestione di annullamento tramite le <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> classi e.  
   
-- Fornisce la persistenza e il supporto CodeDOM tramite l'impostazione predefinita <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> e <xref:System.ComponentModel.Design.IComponentChangeService> implementazioni.  
+- Fornire supporto per la persistenza e CodeDOM tramite <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> le <xref:System.ComponentModel.Design.IComponentChangeService> implementazioni e predefinite.  
   
-## <a name="obtaining-undo-support-automatically"></a>Come ottenere supporto per l'annullamento automaticamente  
- Qualsiasi finestra di progettazione creata in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta in modo automatico e l'intera operazione di annullamento if, la finestra di progettazione:  
+## <a name="obtaining-undo-support-automatically"></a>Recupero automatico del supporto di annullamento  
+ Qualsiasi finestra di progettazione creata in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dispone del supporto di annullamento automatico e completo se, la finestra di progettazione:  
   
-- Usa un <xref:System.Windows.Forms.Control> basati su classi per la propria interfaccia utente.  
+- Usa una <xref:System.Windows.Forms.Control> classe basata per la relativa interfaccia utente.  
   
-- Usa la generazione di codice standard basato su CodeDOM e sistema di analisi per la persistenza e la generazione di codice.  
+- Usa il sistema di analisi e generazione del codice basato su CodeDOM standard per la generazione e la persistenza del codice.  
   
-     Per altre informazioni sull'uso di supporto di Visual Studio CodeDOM, vedere [Dynamic Source Code Generation and Compilation](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Per ulteriori informazioni sull'utilizzo del supporto di Visual Studio CodeDOM, vedere [generazione e compilazione di codice sorgente dinamico](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb) .  
   
-## <a name="when-to-use-explicit-designer-undo-support"></a>Quando usare il supporto di annullamento della finestra di progettazione esplicita  
- Finestre di progettazione è necessario fornire le proprie gestione dell'annullamento se usano un'interfaccia utente grafica, definita come un adattatore della visualizzazione, diverso da quello fornito da <xref:System.Windows.Forms.Control>.  
+## <a name="when-to-use-explicit-designer-undo-support"></a>Quando usare il supporto di annullamento esplicito della finestra di progettazione  
+ I progettisti devono fornire la propria gestione degli annullamenti se utilizzano un'interfaccia utente grafica, definita scheda di visualizzazione, diversa da quella fornita da <xref:System.Windows.Forms.Control> .  
   
- Un esempio di questo oggetto può consistere nella creazione un prodotto con un'interfaccia di progettazione con interfaccia grafica basata su web anziché un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] basato su interfaccia grafica.  
+ Un esempio potrebbe essere la creazione di un prodotto con un'interfaccia di progettazione grafica basata sul Web anziché un' [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] interfaccia grafica basata sul Web.  
   
- In questi casi, uno sarebbe necessario registrare questo adattatore della visualizzazione con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usando <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>e fornire la gestione esplicita di annullamento.  
+ In questi casi, è necessario registrare questa scheda di visualizzazione con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizzando <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute> e fornire una gestione esplicita di annullamento.  
   
- Finestre di progettazione necessari fornire supporto CodeDOM e persistenza se non usano il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modello di generazione di codice fornito nel <xref:System.CodeDom> lo spazio dei nomi.  
+ Se non utilizzano il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modello di generazione del codice fornito nello spazio dei nomi, le finestre di progettazione devono fornire il supporto CodeDom e di persistenza <xref:System.CodeDom> .  
   
 ## <a name="undo-support-features-of-the-designer"></a>Annullare le funzionalità di supporto della finestra di progettazione  
- il SDK di ambiente fornisce le implementazioni predefinite delle interfacce necessarie per fornire supporto che può essere utilizzato dalle finestre di progettazione non usa per l'annullamento <xref:System.Windows.Forms.Control> basati su classi per le proprie interfacce utente o il modello standard di persistenza e CodeDOM.  
+ L'SDK dell'ambiente fornisce le implementazioni predefinite delle interfacce necessarie per fornire il supporto di annullamento che può essere utilizzato da progettisti che non utilizzano <xref:System.Windows.Forms.Control> classi basate per le interfacce utente o il modello CodeDOM e di persistenza standard.  
   
- Il <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> deriva dalla classe la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] <xref:System.ComponentModel.Design.UndoEngine> classe utilizzando un'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> classe per la gestione delle operazioni di annullamento.  
+ La <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> classe deriva dalla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] <xref:System.ComponentModel.Design.UndoEngine> classe usando un'implementazione della <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> classe per gestire le operazioni di annullamento.  
   
- Visual Studio offre la funzionalità di annullamento della finestra di progettazione seguente:  
+ Visual Studio fornisce la funzionalità seguente per la finestra di progettazione Annulla:  
   
-- Funzionalità di annullamento collegata tra più finestre di progettazione.  
+- Funzionalità di annullamento collegate tra più finestre di progettazione.  
   
-- Unità figlio all'interno di una finestra di progettazione può interagire con i genitori implementando <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> sul <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>.  
+- Le unità figlio all'interno di una finestra di progettazione possono interagire con i relativi elementi padre implementando <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> su <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> .  
   
-  il SDK di ambiente fornisce il supporto CodeDOM e persistenza fornendo:  
+  L'SDK dell'ambiente fornisce il supporto per CodeDOM e persistenza fornendo:  
   
-- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> come un implementazioni del <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> come implementazioni di <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
-  Oggetto <xref:System.ComponentModel.Design.IComponentChangeService> fornite dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]' host di progettazione.  
+  Oggetto <xref:System.ComponentModel.Design.IComponentChangeService> fornito dall' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host di progettazione ''.  
   
-## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>Tramite la funzionalità SDK dell'ambiente per fornire supporto dell'annullamento  
- Per ottenere supporto per l'annullamento, è necessario un oggetto che implementa una finestra di progettazione:  
+## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>Uso delle funzionalità dell'SDK per l'ambiente per fornire supporto per l'annullamento  
+ Per ottenere il supporto di annullamento, un oggetto che implementa una finestra di progettazione deve:  
   
-- Creare un'istanza e inizializzare un'istanza di <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> classe con un valore valido <xref:System.IServiceProvider> implementazione.  
+- Creare un'istanza della classe e inizializzarla <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> con un'implementazione valida <xref:System.IServiceProvider> .  
   
-- Ciò <xref:System.IServiceProvider> classe deve fornire i servizi seguenti:  
+- Questa <xref:System.IServiceProvider> classe deve fornire i servizi seguenti:  
   
   - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
   - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
-       Le finestre di progettazione utilizzando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serializzazione CodeDOM può scegliere di usare <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> fornito con il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] come relativa implementazione del <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
+       Le finestre di progettazione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che usano la serializzazione CodeDom possono scegliere di usare <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> fornito con [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] come implementazione di <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> .  
   
-       In questo caso, il <xref:System.IServiceProvider> classe fornita per il <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> costruttore deve restituire tale oggetto come un'implementazione del <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> classe.  
+       In questo caso, la <xref:System.IServiceProvider> classe fornita al <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> costruttore deve restituire questo oggetto come implementazione della <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> classe.  
   
   - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
-       Le finestre di progettazione utilizzando il valore predefinito <xref:System.ComponentModel.Design.DesignSurface> fornite dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene garantito che un'implementazione predefinita dell'host di progettazione di <xref:System.ComponentModel.Design.IComponentChangeService> classe.  
+       Per le finestre di progettazione che usano l'impostazione predefinita <xref:System.ComponentModel.Design.DesignSurface> fornita dall' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host di progettazione è garantita un'implementazione predefinita della <xref:System.ComponentModel.Design.IComponentChangeService> classe.  
   
-  Le finestre di progettazione che implementa un <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> meccanismo di annullamento basato su tiene automaticamente traccia delle modifiche se:  
+  Le finestre di progettazione che implementano un <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> meccanismo di annullamento basato su rileva automaticamente le modifiche se  
   
-- Le modifiche alle proprietà vengono effettuate tramite il <xref:System.ComponentModel.TypeDescriptor> oggetto.  
+- Le modifiche alle proprietà vengono apportate tramite l' <xref:System.ComponentModel.TypeDescriptor> oggetto.  
   
-- <xref:System.ComponentModel.Design.IComponentChangeService> gli eventi vengono generati manualmente quando è eseguito il commit di una modifica di annullabile.  
+- <xref:System.ComponentModel.Design.IComponentChangeService> gli eventi vengono generati manualmente quando viene eseguito il commit di una modifica annullabile.  
   
-- Modifica della finestra di progettazione è stata creata nel contesto di un <xref:System.ComponentModel.Design.DesignerTransaction>.  
+- La modifica nella finestra di progettazione è stata creata nel contesto di un oggetto <xref:System.ComponentModel.Design.DesignerTransaction> .  
   
-- La finestra di progettazione sceglie di creare in modo esplicito le unità di annullamento tramite l'unità di annullamento standard fornito da un'implementazione di <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> o l'implementazione specifica di Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>, che deriva da <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> e fornisce inoltre un implementazione di entrambi <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>.  
+- La finestra di progettazione sceglie di creare in modo esplicito le unità di annullamento usando l'unità di annullamento standard fornita da un'implementazione di <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> o l'implementazione specifica di Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> , che deriva da <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> e fornisce anche un'implementazione di <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.ComponentModel.Design.UndoEngine>   

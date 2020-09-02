@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595488"
 ---
 # <a name="list-threads-command"></a>Comando Elenca thread
@@ -33,7 +33,7 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>Argomenti
 `index`
 
-Facoltativa. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.
+facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.
 
 ## <a name="remarks"></a>Osservazioni
 Quando specificato, l'argomento `index` contrassegna il thread indicato come thread corrente. Nell'elenco viene visualizzato un asterisco (*) accanto al thread corrente.
@@ -48,7 +48,7 @@ Quando specificato, l'argomento `index` contrassegna il thread indicato come thr
 
 - [Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)
 - [Comando Elenca disassembly](../../ide/reference/list-disassembly-command.md)
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

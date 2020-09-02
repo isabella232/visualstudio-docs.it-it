@@ -1,5 +1,5 @@
 ---
-title: Non è possibile creare un nome di associazione &lt;association &gt; i tipi di proprietà non corrispondono | Microsoft Docs
+title: Impossibile creare un nome di associazione di associazione &lt; &gt; . i tipi di proprietà non corrispondono | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c93221710f8adc2421f902f27fdb96d957c9cd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651145"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossibile creare un'associazione &lt;nome associazione&gt;. Le proprietà non hanno tipi corrispondenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Impossibile creare un'associazione \<nome associazione>. Le proprietà non hanno tipi corrispondenti. Le proprietà non hanno tipi corrispondenti: \<nomi proprietà>.
+Impossibile creare un'associazione \<association name> . i tipi di proprietà non corrispondono. Le proprietà non hanno tipi corrispondenti: \<property names> .
 
  Le associazioni vengono definite dalle **Proprietà associazione** selezionate nella finestra di dialogo **Editor di associazione**. Le proprietà di ciascun lato dell'associazione devono presentare lo stesso tipo di dati.
 

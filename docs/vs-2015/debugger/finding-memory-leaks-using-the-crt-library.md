@@ -1,5 +1,5 @@
 ---
-title: Individuazione di perdite di memoria tramite la libreria CRT | Microsoft Docs
+title: Ricerca di perdite di memoria tramite la libreria CRT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,10 +31,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682429"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Individuazione di perdite di memoria tramite la libreria CRT
@@ -121,7 +121,7 @@ Object dump complete.
   
   Esistono altri due tipi di blocchi di memoria che non compaiono mai nei report delle perdite di memoria. Un *blocco libero* è dato da memoria rilasciata. Per definizione non si tratta quindi di perdita. Un *blocco da ignorare* è dato da memoria che è stata esplicitamente contrassegnata per essere esclusa dal report delle perdite di memoria.  
   
-  Queste tecniche sono appropriate per la memoria allocata tramite la funzione `malloc` CRT standard. Se la memoria usando C++ viene allocata `new` operatore, tuttavia, ne verrà visualizzato solo il numero di file e righe in cui l'implementazione dell'oggetto globale `operator new` chiamate `_malloc_dbg` nel report delle perdite di memoria. Poiché questo comportamento non è molto utile, è possibile modificarlo per segnalare la riga che ha effettuato l'allocazione tramite una macro che si presenta come segue: 
+  Queste tecniche sono appropriate per la memoria allocata tramite la funzione `malloc` CRT standard. Se il programma alloca memoria usando l'operatore C++ `new` , tuttavia, è possibile visualizzare solo il file e il numero di riga in cui l'implementazione delle `operator new` chiamate globali `_malloc_dbg` nel report delle perdite di memoria. Poiché tale comportamento non è molto utile, è possibile modificarlo per segnalare la riga che ha eseguito l'allocazione usando una macro simile alla seguente: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -133,7 +133,7 @@ Object dump complete.
 #endif
 ```  
   
-A questo punto è possibile sostituire il `new` operatore usando la `DBG_NEW` macro nel codice. Nelle build di debug, si usa un overload dell'oggetto globale `operator new` che accetta parametri aggiuntivi per il tipo di blocco, file e numero di riga. Questo overload del metodo `new` chiamate `_malloc_dbg` per registrare le informazioni aggiuntive. Quando si usa `DBG_NEW`, segnala la perdita di memoria Mostra il numero di riga e nome file in cui sono stati allocati gli oggetti persi. Nelle build di vendita al dettaglio, Usa il valore predefinito `new`. (Si consiglia di non crei una macro del preprocessore denominata `new`, o qualsiasi altra lingua (parola chiave).) Di seguito è riportato un esempio della tecnica:  
+A questo punto è possibile sostituire l' `new` operatore usando la `DBG_NEW` macro nel codice. Nelle build di debug usa un overload di Global `operator new` che accetta parametri aggiuntivi per il tipo di blocco, il file e il numero di riga. Questo overload di `new` chiama `_malloc_dbg` per registrare le informazioni aggiuntive. Quando si usa `DBG_NEW` , i report sulle perdite di memoria mostrano il nome file e il numero di riga in cui sono stati allocati gli oggetti persi. Nelle compilazioni finali usa il valore predefinito `new` . Non è consigliabile creare una macro del preprocessore denominata `new` o qualsiasi altra parola chiave del linguaggio. Ecco un esempio della tecnica:  
   
 ```cpp  
 // debug_new.cpp
@@ -163,7 +163,7 @@ void main() {
 }
 ```  
   
-Quando si esegue questo codice nel debugger di Visual Studio, la chiamata a `_CrtDumpMemoryLeaks` genera un report nel **Output** finestra che ha un aspetto simile al seguente:  
+Quando si esegue questo codice nel debugger in Visual Studio, la chiamata a `_CrtDumpMemoryLeaks` genera un report nella finestra di **output** simile alla seguente:  
   
 ```Output  
 Detected memory leaks!
@@ -174,7 +174,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-Ciò indica che l'allocazione persa era nella riga 20 di debug_new.cpp.  
+Ciò indica che l'allocazione persa è stata alla riga 20 di debug_new. cpp.  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>Impostazione di punti di interruzione su un numero di allocazione della memoria  
  Il numero di allocazione della memoria indica quando è stato allocato un blocco di memoria di cui è stata registrata la perdita. Un blocco con un numero di allocazione della memoria pari a 18, ad esempio, corrisponde al diciottesimo blocco di memoria allocato durante l'esecuzione dell'applicazione. Il report CRT tiene conto di tutte le allocazioni di blocchi di memoria durante l'esecuzione. Sono incluse le allocazioni della libreria CRT e di altre librerie come MFC. Di conseguenza, un blocco con un numero di allocazione della memoria pari a 18 potrebbe non essere il diciottesimo blocco di memoria allocato dal codice. In genere, non lo è.  
@@ -187,7 +187,7 @@ Ciò indica che l'allocazione persa era nella riga 20 di debug_new.cpp.
   
 2. Quando l'applicazione si interrompe al punto di interruzione, viene visualizzata la finestra **Espressioni di controllo** .  
   
-3. Nel **Watch** finestra, digitare `_crtBreakAlloc` nel **nome** colonna.  
+3. Nella finestra **espressioni di controllo** Digitare `_crtBreakAlloc` nella colonna **nome** .  
   
     Se si usa la versione DLL multithread della libreria CRT (opzione /MD), includere l'operatore di contesto `{,,ucrtbased.dll}_crtBreakAlloc`  
   
@@ -201,7 +201,7 @@ Ciò indica che l'allocazione persa era nella riga 20 di debug_new.cpp.
   
    Anche l'impostazione di un punto di interruzione dei dati sull'oggetto può essere utile. Per altre informazioni, vedere [Using Breakpoints](../debugger/using-breakpoints.md).  
   
-   È anche possibile impostare i punti di interruzione dell'allocazione di memoria nel codice. Questo risultato può essere raggiunto in due modi:  
+   È anche possibile impostare i punti di interruzione dell'allocazione di memoria nel codice. A questo scopo è possibile procedere in due modi:  
   
 ```  
 _crtBreakAlloc = 18;  
@@ -263,6 +263,6 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
  È possibile che, in alcuni casi, vengano date da `_CrtDumpMemoryLeaks` false indicazioni di perdite di memoria. Questa situazione può verificarsi quando si usa una libreria che contrassegna allocazioni interne come _NORMAL_BLOCK e non come `_CRT_BLOCK`o `_CLIENT_BLOCK`. In questo caso, `_CrtDumpMemoryLeaks` non è in grado di indicare la differenza tra allocazioni utente e allocazioni interne della libreria. Se i distruttori globali relativi alle allocazioni della libreria vengono eseguiti dopo il punto in cui viene chiamato `_CrtDumpMemoryLeaks`, ogni allocazione interna della libreria viene segnalata come perdita di memoria. Nelle versioni precedenti della libreria di modelli standard, prima di Visual Studio .NET, venivano segnalati falsi positivi da `_CrtDumpMemoryLeaks` . Nelle versioni più recenti il problema è stato risolto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni dettagliate sull'Heap di Debug CRT](../debugger/crt-debug-heap-details.md)   
+ [Dettagli heap di debug CRT](../debugger/crt-debug-heap-details.md)   
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug del codice nativo](../debugger/debugging-native-code.md)

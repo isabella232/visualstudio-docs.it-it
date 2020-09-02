@@ -13,23 +13,23 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 63d405b0e62735c0c1e3d7bb716ea2db29bc19fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651566"
 ---
 # <a name="in-source-suppression-overview"></a>Panoramica dell'eliminazione nell'origine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'eliminazione nell'origine è la possibilità di escludere o ignorare le violazioni dell'analisi codice nel codice gestito aggiungendo l'attributo **SuppressMessage** ai segmenti di codice che causano le violazioni. L'attributo **SuppressMessage** è un attributo condizionale incluso nei metadati il dell'assembly del codice gestito solo se il simbolo di compilazione CODE_ANALYSIS è definito in fase di compilazione.
+L'eliminazione nell'origine è la possibilità di escludere o ignorare le violazioni dell'analisi codice nel codice gestito aggiungendo l'attributo **SuppressMessage** ai segmenti di codice che causano le violazioni. L'attributo **SuppressMessage** è un attributo condizionale incluso nei metadati il dell'assembly del codice gestito solo se il CODE_ANALYSIS simbolo di compilazione viene definito in fase di compilazione.
 
  In C++/CLI, utilizzare le macro CA_SUPPRESS_MESSAGE o CA_GLOBAL_SUPPRESS_MESSAGE nel file di intestazione per aggiungere l'attributo.
 
  Non usare le eliminazioni in origine nelle build di rilascio per evitare la spedizione accidentale dei metadati di eliminazione nel codice sorgente. A causa del costo di elaborazione dell'eliminazione nell'origine, le prestazioni dell'applicazione possono anche essere ridotte includendo i metadati di eliminazione nell'origine.
 
 > [!NOTE]
-> Non è necessario eseguire manualmente il codice di questi attributi. Per altre informazioni, vedere [procedura: non visualizzare avvisi tramite la voce di menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). La voce di menu non è disponibile C++ per il codice.
+> Non è necessario eseguire manualmente il codice di questi attributi. Per altre informazioni, vedere [procedura: non visualizzare avvisi tramite la voce di menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). La voce di menu non è disponibile per il codice C++.
 
 ## <a name="suppressmessage-attribute"></a>Attributo SuppressMessage
  Quando si fa clic con il pulsante destro del mouse su un avviso di analisi del codice nel **Elenco errori** e quindi si fa clic su **Disattiva messaggi**, viene aggiunto un attributo **SuppressMessage** nel codice o nel file di eliminazione globale del progetto.
@@ -70,20 +70,20 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
   - Risorsa
 
-  - Digitare
+  - Type
 
-  - Member
+  - Membro
 
 - **Target** : identificatore utilizzato per specificare la destinazione in cui l'avviso viene eliminato. Deve contenere un nome di elemento completo.
 
 ## <a name="suppressmessage-usage"></a>Utilizzo di SuppressMessage
  Gli avvisi di analisi del codice vengono eliminati a livello del quale viene applicata un'istanza dell'attributo **SuppressMessage** . Lo scopo è quello di associare strettamente le informazioni di eliminazione al codice in cui si verifica la violazione.
 
- Il tipo di eliminazione generale include la categoria Rule e un identificatore di regola che contiene una rappresentazione facoltativa leggibile del nome della regola. Di seguito è riportato un esempio:
+ Il tipo di eliminazione generale include la categoria Rule e un identificatore di regola che contiene una rappresentazione facoltativa leggibile del nome della regola. Ad esempio:
 
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
- Se sono presenti motivi di prestazioni rigorosi per ridurre al minimo i metadati di eliminazione in origine, il nome della regola può essere escluso. La categoria Rule e l'ID della regola costituiscono insieme un identificatore di regola sufficientemente univoco. Di seguito è riportato un esempio:
+ Se sono presenti motivi di prestazioni rigorosi per ridurre al minimo i metadati di eliminazione in origine, il nome della regola può essere escluso. La categoria Rule e l'ID della regola costituiscono insieme un identificatore di regola sufficientemente univoco. Ad esempio:
 
  `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

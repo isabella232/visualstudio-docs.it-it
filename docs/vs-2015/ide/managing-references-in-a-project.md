@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1f2f3c26d89616f083c218c6b11610fe5e329a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651321"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
@@ -37,7 +37,7 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 
  Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul nodo Riferimenti di Esplora soluzioni e scegliere **Aggiungi riferimento**. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
- ![Aggiungere un riferimento in Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "|::ref1::|")
+ ![Aggiungere un riferimento in Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")
 
  È possibile fare riferimento ai seguenti tipi di componenti e servizi:
 
@@ -77,9 +77,9 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 
 4. Riavviare Visual Studio e aprire l'app.
 
-5. Fare clic con il pulsante destro del mouse sul nodo **Riferimenti** del progetto che ha causato l'errore e scegliere **Aggiungi riferimento**.
+5. Fare clic con il pulsante destro del mouse sul nodo **riferimenti** del progetto che ha causato l'errore e scegliere **Aggiungi riferimento** .
 
-6. Fare clic sulla scheda **Windows** e sulla sottoscheda **Estensioni** , quindi deselezionare le caselle di controllo per l'SDK di estensione precedente e selezionare le caselle di controllo per i nuovi SDK di estensione. Fare clic su **OK**.
+6. Fare clic sulla scheda **Windows** , quindi sulla sottoscheda **estensioni** , deselezionare le caselle di controllo per gli SDK di estensione precedenti e selezionare le caselle di controllo per i nuovi SDK di estensione. Fare clic su **OK**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Aggiunta di un riferimento in fase di progettazione
  Quando si fa riferimento a un assembly nel progetto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cerca l'assembly nei percorsi seguenti:
@@ -94,7 +94,7 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 > In Visual Studio, tutti i progetti contengono un riferimento implicito a `System.Core`, anche se `System.Core` è rimosso dall'elenco di riferimenti.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Riferimenti a componenti condivisi in fase di esecuzione
- In fase di esecuzione i componenti devono trovarsi nel percorso di output del progetto o nella [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Se il progetto contiene un riferimento a un oggetto che non è in uno di questi percorsi, è necessario copiare il riferimento al percorso di output del progetto quando si compila il progetto. La <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> proprietà indica se la copia deve essere eseguita. Se il valore è **True**, il riferimento viene copiato nella directory del progetto quando si compila quest'ultimo. Se il valore è **False**, il riferimento non viene copiato.
+ In fase di esecuzione i componenti devono trovarsi nel percorso di output del progetto o nella [global assembly cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Se il progetto contiene un riferimento a un oggetto che non è in uno di questi percorsi, è necessario copiare il riferimento al percorso di output del progetto quando si compila il progetto. La <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> proprietà indica se la copia deve essere eseguita. Se il valore è **True**, il riferimento viene copiato nella directory del progetto quando si compila quest'ultimo. Se il valore è **False**, il riferimento non viene copiato.
 
  Se si distribuisce un'applicazione che contiene un riferimento a un componente personalizzato registrato nella GAC (Global Assembly Cache), tale componente non verrà distribuito con l'applicazione, indipendentemente dall'impostazione di <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> . Nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]era possibile impostare la proprietà <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> su un riferimento per garantire che l'assembly venisse distribuito. A questo punto, è necessario aggiungere manualmente l'assembly nella cartella \Bin. Con questa operazione è possibile mettere tutto il codice personalizzato sotto controllo, riducendo il rischio di pubblicare codice personalizzato con cui non si ha familiarità.
 
@@ -103,12 +103,12 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 ## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Fare riferimento a un progetto o a un componente destinato a una versione differente di .NET Framework.
  È possibile creare applicazioni che fanno riferimento a progetti o assembly destinati a una versione diversa di .NET Framework. Ad esempio, è possibile creare un'applicazione destinata a [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] che fa riferimento a un assembly destinato a [!INCLUDE[dnprdnext](../includes/dnprdnext-md.md)]. Se si crea un progetto destinato a una versione precedente di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], in tale progetto non è possibile impostare un riferimento a un progetto o un assembly destinato a [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)] o .NET Framework 4.
 
- Per altre informazioni, vedere [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Per ulteriori informazioni, vedere la pagina relativa alla [destinazione di una specifica .NET Framework versione](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 ## <a name="project-to-project-references"></a>Riferimenti da progetto a progetto
- I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly; è possibile crearli tramite la scheda **Progetto** . Visual Studio può trovare un assembly se viene specificato un percorso al progetto.
+ I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly. è possibile crearli usando la scheda **progetto** . Visual Studio è in grado di trovare un assembly quando viene specificato un percorso per il progetto.
 
- In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory bin, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: [Avviso: impossibile copiare la dipendenza "file" del progetto "progetto" nella directory di esecuzione perché sovrascriverebbe il riferimento "file"](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Per altre informazioni, vedere [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) e [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md).
+ In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto può fare riferimento a una versione compilata in precedenza del progetto. Questo può comportare la necessità di diverse versioni di una singola DLL nella directory bin, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: [Avviso: impossibile copiare la dipendenza "file" del progetto "progetto" nella directory di esecuzione perché sovrascriverebbe il riferimento "file"](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Per altre informazioni, vedere [Risoluzione dei problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md) e [Procedura: Creare e rimuovere dipendenze di progetto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.

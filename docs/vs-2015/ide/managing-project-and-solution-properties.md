@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ec48aac60a8f15527c92d19a38ca9f996dcfdd6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651353"
 ---
 # <a name="managing-project-and-solution-properties"></a>Gestione delle proprietà di progetti e soluzioni
@@ -21,11 +21,11 @@ ms.locfileid: "72651353"
 
 Le proprietà dei progetti governano molti aspetti della compilazione, del debug, del test e della distribuzione. Alcune proprietà sono comuni tra tutti i tipi di progetto e altre sono univoche di piattaforme o linguaggi specifici. Per accedere alle proprietà di progetto, fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere Proprietà oppure digitare le proprietà nella casella di ricerca **Avvio veloce** nella barra dei menu.
 
- ![Menu di scelta rapida Progetto](../ide/media/vs2015-proj-prop-menu.gif "|::ref1::|")
+ ![Menu di scelta rapida del progetto](../ide/media/vs2015-proj-prop-menu.gif "vs2015_proj_prop_menu")
 
  I progetti .NET hanno anche un nodo di proprietà nell'albero del progetto stesso.
 
- ![Nodo Proprietà nell'albero Esplora soluzioni](../ide/media/vs2015-props-se.png "|::ref2::|")
+ ![Nodo Proprietà nell'albero Esplora soluzioni](../ide/media/vs2015-props-se.png "VS2015_Props_SE")
 
 > [!TIP]
 > Le soluzioni, così come gli elementi del progetto, hanno alcune proprietà, che sono accessibili nella [Finestra Proprietà](../ide/reference/properties-window.md), non in **Progettazione progetti**.
@@ -36,14 +36,14 @@ Le proprietà dei progetti governano molti aspetti della compilazione, del debug
 ### <a name="c-and-visual-basic-projects"></a>Progetti C# e Visual Basic
  Nei progetti C# e Visual Basic, le proprietà sono esposte in **Progettazione progetti**. La figura seguente mostra la pagina della proprietà di compilazione per un progetto WPF in C#:
 
- ![Creazione progetti di Visual Studio](../ide/media/vs2015-proppage-build.png "|::ref3::|")
+ ![Creazione progetti di Visual Studio](../ide/media/vs2015-proppage-build.png "VS2015_PropPage_Build")
 
  Per informazioni su ognuna delle pagine delle proprietà in Progettazione progetti, vedere [Riferimenti alle proprietà di progetto](../ide/reference/project-properties-reference.md).
 
 ### <a name="c-and-javascript-projects"></a>Progetti C++ e JavaScript
  I progetti C++ e JavaScript hanno un'interfaccia utente differente per la gestione delle proprietà del progetto. Questa illustrazione mostra la pagina delle proprietà di un progetto C++ (le pagine JavaScript sono simili):
 
- ![Proprietà dei progetti Visual C&#43;&#43;](../ide/media/vs2015-projprops-cpp.png "|::ref4::|")
+ ![Proprietà dei progetti Visual C&#43;&#43;](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")
 
  Per informazioni sulle proprietà di progetto C++, vedere [Utilizzo di proprietà di progetto](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Per altre informazioni sulle proprietà JavaScript, vedere [Pagine proprietà, JavaScript](../ide/reference/property-pages-javascript.md).
 

@@ -12,16 +12,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7842bd2e0a6cebc5980781bae1fc89c1401fc08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184404"
 ---
 # <a name="combos-element"></a>Elemento Combos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I gruppi [elemento Combo](../extensibility/combo-element.md) elementi.  
+Raggruppa gli elementi di elementi [combinati](../extensibility/combo-element.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ I gruppi [elemento Combo](../extensibility/combo-element.md) elementi.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento Combos](../extensibility/combos-element.md)|Raggruppa gli elementi di casella combinata.|  
+|[Elemento Combos](../extensibility/combos-element.md)|Raggruppa gli elementi combinati.|  
 |[Elemento Combo](../extensibility/combo-element.md)|Definisce i comandi che vengono visualizzati in una casella combinata.|  
   
 ### <a name="parent-elements"></a>Elementi padre  

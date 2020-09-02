@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare un manifesto di pacchetto | Microsoft Docs'
+title: 'Procedura: creare un manifesto del pacchetto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,30 +20,30 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153841"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto del pacchetto
+# <a name="how-to-create-a-package-manifest"></a>Procedura: creare un manifesto di pacchetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto di programma di avvio automatico. Un pacchetto bootstrapper contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ogni impostazione locale. Le funzionalità condivise tra le versioni localizzate che devono essere inserite il manifesto del prodotto.  
+Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico contiene un singolo file manifesto del prodotto, ma un manifesto del pacchetto per ogni impostazione locale. Le funzionalità condivise tra diverse versioni localizzate dovrebbero essere inserite nel manifesto del prodotto.  
   
- Per altre informazioni sui manifesti di pacchetto, vedere [come: Creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).  
+ Per ulteriori informazioni sui manifesti dei pacchetti, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).  
   
 ## <a name="creating-the-package-manifest"></a>Creazione del manifesto del pacchetto  
   
 #### <a name="to-create-the-package-manifest"></a>Per creare il manifesto del pacchetto  
   
-1. Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio Usa c:\package.  
+1. Creare una directory per il pacchetto del programma di avvio automatico. Questo esempio Usa c:\package.  
   
-2. Creare una sottodirectory con il nome delle impostazioni locali, ad esempio en per inglese.  
+2. Creare una sottodirectory con il nome delle impostazioni locali, ad esempio en per la lingua inglese.  
   
-3. In Visual Studio, creare un file XML denominato `package.xml`e salvarlo nella cartella c:\package\en.  
+3. In Visual Studio creare un file XML denominato `package.xml` e salvarlo nella cartella C:\package\en.  
   
-4. Aggiungere codice XML per elencare il nome del pacchetto, le impostazioni cultura per questo manifesto del pacchetto di aggiornamento e il contratto di licenza facoltativo. Il codice XML seguente usa le variabili `DisplayName` e `Culture`, che sono definiti in un elemento successivo.  
+4. Aggiungere il codice XML per elencare il nome del pacchetto del programma di avvio automatico, le impostazioni cultura per questo manifesto del pacchetto localizzato e il contratto di licenza facoltativo. Nel codice XML seguente vengono utilizzate le variabili `DisplayName` e `Culture` , definite in un elemento successivo.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
         LicenseAgreement="eula.txt">  
     ```  
   
-5. Aggiungere codice XML per elencare tutti i file che si trovano nella directory specifiche delle impostazioni locali. Il codice XML seguente viene utilizzato un file denominato EULA. txt è applicabile per il **en** delle impostazioni locali.  
+5. Aggiungere XML per elencare tutti i file presenti nella directory specifica delle impostazioni locali. Nel codice XML seguente viene utilizzato un file denominato eula.txt applicabile per le impostazioni locali **en** .  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
     </PackageFiles>  
     ```  
   
-6. Aggiungere codice XML per definire le stringhe localizzabili per il pacchetto di programma di avvio automatico. Il codice XML seguente aggiunge le stringhe di errore per le impostazioni locali en.  
+6. Aggiungere il codice XML per definire le stringhe localizzabili per il pacchetto del programma di avvio automatico. Nel codice XML seguente vengono aggiunte stringhe di errore per le impostazioni locali en.  
   
     ```  
       <Strings>  
@@ -74,10 +74,10 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
     </Strings>  
     ```  
   
-7. Copiare la cartella c:\package. nella directory di avvio automatico di Visual Studio. Per Visual Studio 2010, si tratta della directory di Sdks\windows\v7.0A\Bootstrapper\Packages. \Programmi\Microsoft.  
+7. Copiare la cartella C:\package nella directory del programma di avvio automatico di Visual Studio. Per Visual Studio 2010, si tratta della directory \Programmi\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages  
   
 ## <a name="example"></a>Esempio  
- Il manifesto del pacchetto contiene informazioni specifiche delle impostazioni locali, ad esempio i messaggi di errore, condizioni di licenza software e i language pack.  
+ Il manifesto del pacchetto contiene informazioni specifiche delle impostazioni locali, ad esempio i messaggi di errore, le condizioni di licenza software e i Language Pack.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  

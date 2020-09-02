@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596580"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generazione di codice da un linguaggio specifico di dominio
 
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un modo efficace per generare codice, documenti, file di configurazione e altri elementi dai dati rappresentati nei modelli. Utilizzando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], è possibile creare un set di classi che rappresentano i dati ed è possibile scrivere i modelli di testo nelle classi i cui nomi e proprietà riflettono i dati.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un modo efficace per generare codice, documenti, file di configurazione e altri elementi dai dati rappresentati nei modelli. Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , è possibile creare un set di classi che rappresentano i dati ed è possibile scrivere i modelli di testo nelle classi i cui nomi e proprietà riflettono i dati.
 
 Ad esempio, Fabrikam dispone di un file XML di nomi di clienti e indirizzi di posta elettronica. Gli sviluppatori creano un modello in cui il cliente è una classe, con nome proprietà e posta elettronica. Scrivono diversi modelli di testo per elaborare i dati, incluso il frammento che produce una tabella di tutti i clienti come parte di una pagina HTML:
 
@@ -28,13 +28,13 @@ Ad esempio, Fabrikam dispone di un file XML di nomi di clienti e indirizzi di po
 <# } #>  </table>
 ```
 
-Quando il database del cliente viene elaborato, il file XML viene letto nell'archivio modelli. Un *processore di direttiva*, creato con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], rende disponibile la classe Customer per il codice nel modello di testo. Molti modelli di testo possono essere eseguiti sullo stesso archivio.
+Quando il database del cliente viene elaborato, il file XML viene letto nell'archivio modelli. Un *processore di direttiva*, creato mediante [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , rende disponibile la classe Customer per il codice nel modello di testo. Molti modelli di testo possono essere eseguiti sullo stesso archivio.
 
-I modelli di testo sono essenziali per [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Vengono usati per generare il codice sorgente per gli elementi del modello di dominio, nonché per il pacchetto VSPackage e i controlli usati per integrare gli strumenti con Visual Studio.
+I modelli di testo sono essenziali per [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] . Vengono usati per generare il codice sorgente per gli elementi del modello di dominio, nonché per il pacchetto VSPackage e i controlli usati per integrare gli strumenti con Visual Studio.
 
-In questa sezione vengono illustrati alcuni modi per creare, modificare ed eseguire il debug dei modelli di testo utilizzati in [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+In questa sezione vengono illustrati alcuni dei modi per creare, modificare ed eseguire il debug dei modelli di testo utilizzati in [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] .
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 [Accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md)\
 Fornisce informazioni di base sul riferimento a un linguaggio specifico di dominio nei modelli di testo.
@@ -48,7 +48,7 @@ Viene descritto come connettere un host personalizzato a un processore di dirett
 [Comando DslTextTransform](../modeling/the-dsltexttransform-command.md)\
 Descrive il file di comando che esegue l'eseguibile TextTransform nella riga di comando per i modelli di testo che fanno riferimento a linguaggi specifici del dominio.
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Informazioni di riferimento
 
 [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)\
 Fornisce la sintassi delle direttive e dei blocchi di controllo del modello di testo.

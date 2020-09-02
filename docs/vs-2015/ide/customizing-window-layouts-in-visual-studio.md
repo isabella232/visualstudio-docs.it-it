@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665828"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizzazione del layout delle finestre in Visual Studio
@@ -39,7 +39,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 ## <a name="kinds-of-windows"></a>Tipi di finestre
 
 ### <a name="tool-and-document-windows"></a>Finestre dei documenti e degli strumenti
- L'IDE presenta due tipi di finestre di base: *finestre degli strumenti* e *finestre dei documenti*. Le finestre degli strumenti includono Esplora soluzioni, Esplora server, Finestra di output, Elenco errori, le finestre di progettazione, le finestre del debugger e così via. Le finestre dei documenti contengono i file del codice sorgente, file di testo arbitrario, file config e così via. Le finestre degli strumenti possono essere ridimensionate e trascinate dalla barra del titolo. Le finestre di documento possono essere trascinate dalla relativa scheda. fare clic con il pulsante destro del mouse sulla scheda o sulla barra del titolo per impostare altre opzioni nella finestra.
+ L'IDE presenta due tipi di finestre di base: *finestre degli strumenti* e *finestre dei documenti*. Le finestre degli strumenti includono Esplora soluzioni, Esplora server, Finestra di output, Elenco errori, le finestre di progettazione, le finestre del debugger e così via. Le finestre dei documenti contengono i file del codice sorgente, file di testo arbitrario, file config e così via. Le finestre degli strumenti possono essere ridimensionate e trascinate dalla barra del titolo. Le finestre di documento possono essere trascinate in base alla relativa scheda. Fare clic con il pulsante destro del mouse sulla scheda o sulla barra del titolo per impostare altre opzioni nella finestra.
 
  Nel menu **Finestra** vengono visualizzate le opzioni disponibili per ancorare, rendere mobili e nascondere le finestre nell'IDE. Fare clic con il pulsante destro del mouse sulla barra del titolo o sulla scheda di una finestra per visualizzare opzioni aggiuntive per tale specifica finestra. È possibile visualizzare più istanze di determinate finestre degli strumenti per volta. Ad esempio, è possibile visualizzare più finestre di un browser Web, nonché creare ulteriori istanze di alcune finestre degli strumenti selezionando **Nuova finestra** nel menu **Finestra** .
 
@@ -77,7 +77,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
   Le finestre dei documenti e degli strumenti possono essere disposte trascinandole, utilizzando i comandi nel menu **Finestra** e facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ancoraggio delle finestre
  Quando si seleziona e si trascina la barra del titolo di una finestra degli strumenti oppure la scheda della finestra del documento, viene visualizzata una guida a forma di rombo. Durante l'operazione di trascinamento, quando il cursore si trova sopra una delle frecce nel rombo, viene visualizzata un'area ombreggiata che mostra la posizione in cui verrà ancorata la finestra se viene rilasciato il mouse in quel preciso momento.
@@ -94,11 +94,11 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
  Guida a forma di rombo per le finestre degli strumenti
 
- ![Guide della finestra degli strumenti-diamanti](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+ ![Guide a forma di rombo finestra degli strumenti](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
 
  Nella figura seguente viene illustrata la finestra Esplora soluzioni mentre viene ancorata in una nuova posizione, mostrata dall'area ombreggiata in blu:
 
- ![Ancoraggio Esplora soluzioni in una nuova posizione](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
+ ![Ancoraggio di Esplora soluzioni in una nuova posizione](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
 
 ### <a name="closing-and-auto-hiding-tool-windows"></a>Chiusura e scomparsa automatica delle finestre degli strumenti
  È possibile chiudere una finestra degli strumenti facendo clic sulla X nella parte superiore destra della barra del titolo. Per riaprire la finestra, utilizzare l'abbreviazione da tastiera o il comando di menu appropriato. Le finestre degli strumenti supportano una funzionalità denominata Nascondi automaticamente, che fa in modo che una finestra scompaia dallo schermo quando si utilizza un'altra finestra. Quando una finestra viene nascosta automaticamente, il relativo nome viene visualizzato su una scheda sul bordo dell'IDE. Per utilizzare nuovamente la finestra, posizionare il mouse sulla scheda affinché sia possibile visualizzare di nuovo la finestra.
@@ -133,7 +133,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Creare un progetto per interfaccia utente e personalizzare il layout
 
-1. Nella finestra di dialogo **Nuovo progetto** creare un'applicazione desktop WPF di Visual C# e assegnarle il nome desiderato. Si supponga che questo sia il progetto in cui si lavorerà sull'interfaccia utente e che quindi si voglia dare più spazio alla finestra di progettazione spostando quindi le altre finestre degli strumenti.
+1. Nella finestra di dialogo **Nuovo progetto** crear un'applicazione desktop WPF di Visual C# e assegnarle il nome desiderato. Si supponga che questo sia il progetto in cui si lavorerà sull'interfaccia utente e che quindi si voglia dare più spazio alla finestra di progettazione spostando quindi le altre finestre degli strumenti.
 
 2. Se sono disponibili più monitor, spostare le finestre **Esplora soluzioni** e **Proprietà** sul secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
 
@@ -157,7 +157,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 1. Per passare da un layout a un altro, usare le abbreviazioni da tastiera oppure dal menu principale scegliere **Finestra > Applica layout finestra**.
 
-     ![Menu applica layout finestra](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
+     ![Applicare menu layout di finestra](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
      Dopo l'applicazione del layout dell'interfaccia utente, notare che questo viene mantenuto sia modalità di modifica che in modalità di debug.
 
@@ -169,7 +169,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 1. Per rimuovere, rinominare o riordinare il layout personalizzato, scegliere **Finestra > Gestisci layout finestra**. Se si sposta un layout, l'associazione principale viene adattata automaticamente alla nuova posizione nell'elenco. Le associazioni non possono essere modificate diversamente, di conseguenza è possibile archiviare un massimo di 10 layout alla volta.
 
-     ![Gestisci layout finestra](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+     ![Gestire i layout delle finestre](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 
      Per ricordare le abbreviazioni da tastiera associate ai vari layout, scegliere **Finestra > Applica layout finestra**.
 

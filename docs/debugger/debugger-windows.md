@@ -10,33 +10,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188546"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Esaminare i dati usando le finestre del debugger in Visual Studio
 
 È possibile aprire la maggior parte delle finestre del debugger durante il debug del programma. Per visualizzare un elenco delle finestre del debugger, impostare un punto di interruzione e avviare il debug. Quando si raggiunge il punto di interruzione e l'esecuzione si arresta, fare clic su **Debug > Finestre**.
 
-|Window|Tasto di scelta rapida|Vedere l'argomento|
+|Finestra|Tasto di scelta rapida|Vedere l'argomento|
 |-|-|-|
 |Punti di interruzione|CTRL+ALT+B|[Usare i punti di interruzione](../debugger/using-breakpoints.md)|
 |Impostazioni eccezioni|CTRL+ALT+E|[Gestire le eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md)|
-|Output|CTRL+ALT+O|[Output (finestra)](../ide/reference/output-window.md)|
+|Output|CTRL+ALT+O|[Finestra di output](../ide/reference/output-window.md)|
 |Espressioni di controllo|CTRL+ALT+W, (1, 2, 3, 4)|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|
 |Controllo immediato|MAIUSC+F9|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|
 |Auto|CTRL+ALT+V, A|[Finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md)|
 |Variabili locali|CTRL+ALT+V, L|[Finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md)|
-|Stack di chiamate|CTRL+ALT+C|[Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md)|
-|Controllo immediato|CTRL+ALT+I|[Finestra di controllo immediato](../ide/reference/immediate-window.md)|
-|Stack in parallelo|CTRL+MAIUSC+D, S|[Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)|
-|Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)|
-|Thread|CTRL+ALT+H|[Eseguire il debug con la finestra Thread](../debugger/how-to-use-the-threads-window.md)|
-|Moduli|CTRL+ALT+U|[Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)|
-|Thread GPU|-|[Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Attività|CTRL+MAIUSC+D, K|[Uso della finestra Attività](../debugger/using-the-tasks-window.md)|
+|Stack di chiamate|CTRL+ALT+C|[Procedura: utilizzare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md)|
+|Immediato|CTRL+ALT+I|[Finestra di controllo immediato](../ide/reference/immediate-window.md)|
+|Stack in parallelo|CTRL+MAIUSC+D, S|[Utilizzo della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)|
+|Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Inizia a eseguire il debug di applicazioni multithread](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Threads|CTRL+ALT+H|[Eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md)|
+|Moduli|CTRL+ALT+U|[Procedura: utilizzare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)|
+|Thread GPU|-|[Procedura: usare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Attività|CTRL+MAIUSC+D, K|[Utilizzo della finestra Attività](../debugger/using-the-tasks-window.md)|
 |Debug interattivo di Python|MAIUSC+ALT+I|[Finestra REPL interattiva per Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Console JavaScript|CTRL+ALT+V, C|[Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](quickstart-debug-html-and-css.md)|
@@ -44,8 +44,8 @@ ms.locfileid: "73188546"
 |Esplora proprietà attive|-|[Analizzare le proprietà XAML durante il debug](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Processi|CTRL+ALT+Z|[Debug di thread e processi](../debugger/debug-threads-and-processes.md)|
 |Memoria|CTRL+ALT+M, (1, 2, 3, 4)|[Finestra Memoria](../debugger/memory-windows.md)|
-|Disassembly|CTRL+ALT+D|[Procedura: Usare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
-|Registri|CTRL+ALT+G|[Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)|
+|Disassembly|CTRL+ALT+D|[Procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
+|Registri|CTRL+ALT+G|[Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>Vedere anche
 
