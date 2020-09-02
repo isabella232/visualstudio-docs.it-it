@@ -1,5 +1,5 @@
 ---
-title: DebugBreak e DebugBreak | Microsoft Docs
+title: DebugBreak e __debugbreak | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea2a40943233e7dfffd3340f2e27da1d43a76a0a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691171"
 ---
-# <a name="debugbreak-and-debugbreak"></a>DebugBreak e __debugbreak
+# <a name="debugbreak-and-__debugbreak"></a>DebugBreak e __debugbreak
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile chiamare la funzione Win32 DebugBreak o la funzione intrinseca [__debugbreak](https://msdn.microsoft.com/library/1d1e1c0c-891a-4613-ae4b-d790094ba830) in qualunque punto del codice. `DebugBreak` e `__debugbreak` hanno lo stesso effetto dell'impostazione di un punto di interruzione nella stessa posizione.  

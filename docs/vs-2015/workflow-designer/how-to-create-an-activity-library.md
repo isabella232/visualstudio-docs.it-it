@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9dec73d392dc6af74e5daef99bd6d306f7d58409
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662748"
 ---
 # <a name="how-to-create-an-activity-library"></a>Procedura: creare una libreria attività
@@ -27,7 +27,7 @@ Le attività personalizzate sono usate per modellare i processi aziendali partic
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-3. Nel riquadro **Tipi progetto** selezionare flusso di **lavoro** da progetti **visivi C#**  o **Visual Basic** raggruppamenti a seconda delle preferenze della lingua.
+3. Nel riquadro **Tipi progetto** selezionare flusso di **lavoro** dai progetti **Visual C#** o **Visual Basic** raggruppamenti a seconda delle preferenze della lingua.
 
 4. Nel riquadro **modelli** selezionare **libreria attività**.
 
@@ -38,7 +38,7 @@ Le attività personalizzate sono usate per modellare i processi aziendali partic
 7. Nella casella **soluzione** Digitare un nome descrittivo per la soluzione, quindi fare clic su **OK**.
 
     > [!NOTE]
-    > Se si desidera aggiungere un'applicazione console del flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)], fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e scegliere **Aggiungi**, quindi **nuovo progetto.** per aprire la finestra di dialogo **nuovo progetto** . Procedere come descritto sopra in questa procedura.
+    > Se si desidera aggiungere un'applicazione console del flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)] , fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e selezionare **Aggiungi**, quindi **nuovo progetto.** per aprire la finestra di dialogo **nuovo progetto** . Procedere come descritto sopra in questa procedura.
 
 8. Il modello di progetto crea una definizione di attività in XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] verrà visualizzato con l'area di disegno per l'attività personalizzata.
 

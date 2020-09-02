@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Clone . Documenti Microsoft
+title: 'IEnumDebugCustomAttributes:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b3c6cd55293bf34b0c2780dd76eaf8f4ee81bb69
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717267"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
@@ -47,7 +47,7 @@ int Clone(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata a questo metodo. Tuttavia, gli stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
+ La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata di questo metodo. Tuttavia, gli Stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

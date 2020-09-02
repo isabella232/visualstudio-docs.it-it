@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 43df639b2cd99200f725a8ebb941477481a6f0ff
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87471519"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
@@ -61,7 +61,7 @@ Rilasciata il 23 giugno 2020
 
   - Aggiunta della [`UNT0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0016.md) diagnostica. `Invoke`L'uso `InvokeRepeating` di, `StartCoroutine` o `StopCoroutine` con un primo argomento che è un valore letterale stringa non è indipendente dai tipi.
 
-  - Aggiunta della [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md) diagnostica. `SetPixels`la chiamata è lenta.
+  - Aggiunta della [`UNT0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0017.md) diagnostica. `SetPixels` la chiamata è lenta.
 
   - Aggiunta del supporto per i commenti e i rientri del blocco per i file shader.
 
@@ -73,7 +73,7 @@ Rilasciata il 23 giugno 2020
   
   - Usare sempre il browser predefinito quando si apre la documentazione dell'API Unity.
   
-  - Corretti [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md) [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) ed [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) eliminati con le regole seguenti: `IDE0044` non visualizzare (ReadOnly), `IDE0051` (non usato), `CS0649` (mai assegnato) per tutti i campi decorati con l'attributo SerializeField. `CS0649`Non visualizzare (mai assegnato) i campi pubblici di tutti i tipi che estendono `Unity.Object` .
+  - Corretti [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md) [`USP0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0006.md) ed [`USP0007`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0007.md) eliminati con le regole seguenti: `IDE0044` non visualizzare (ReadOnly), `IDE0051` (non usato), `CS0649` (mai assegnato) per tutti i campi decorati con l'attributo SerializeField. Eliminare `CS0649` (mai assegnato) per i campi pubblici di tutti i tipi che estendono `Unity.Object`.
 
   - Correzione del controllo dei parametri di tipo generico per [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) diagostic.
 
@@ -261,10 +261,10 @@ Rilasciata il 16 settembre 2019
     - [`UNT0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0009.md): Quando si applica l'attributo InitializeOnLoad a una classe, è necessario fornire un costruttore statico. L'attributo InitializeOnLoad garantisce che verrà chiamato all'avvio dell'editor.
     - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md): I comportamenti monocomportamentali devono essere creati solo utilizzando AddComponent (). un MonoBehaviour è un componente e deve essere associato a un GameObject.
     - [`UNT0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0011.md): ScriptableObject deve essere creato solo con CreateInstance (). Gli ScriptableObject devono essere creati dal motore di Unity per gestire i metodi relativi ai messaggi di Unity.
-    - [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md)per `IDE0029` : gli oggetti Unity non devono usare la coalesone null.
-    - [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md)per `IDE0031` : gli oggetti Unity non devono utilizzare la propagazione Null.
-    - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md)per `IDE0051` : i messaggi Unity vengono richiamati dal runtime di Unity.
-    - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md)per `IDE0044` : i campi con un attributo SerializeField non devono essere resi di sola lettura.
+    - [`USP0001`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0001.md) per `IDE0029` : gli oggetti Unity non devono usare la coalesone null.
+    - [`USP0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0002.md) per `IDE0031` : gli oggetti Unity non devono utilizzare la propagazione Null.
+    - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) per `IDE0051` : i messaggi Unity vengono richiamati dal runtime di Unity.
+    - [`USP0004`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0004.md) per `IDE0044` : i campi con un attributo SerializeField non devono essere resi di sola lettura.
 
 ## <a name="4310"></a>4.3.1.0
 

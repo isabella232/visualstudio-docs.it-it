@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c7964c6654d1f6996d1acc44542e3a7bf093a52
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82167461"
 ---
 # <a name="al-assembly-linker-task"></a>Attività AL (Assembly Linker)
 
-L'attività AL è a capo di *al. exe*, uno strumento distribuito con Windows Software Development Kit (SDK). Lo strumento Assembly Linker consente di creare un assembly con un manifesto da uno o più file che costituiscono moduli o file di risorse. Poiché è possibile che negli ambienti di compilazione e sviluppo queste funzionalità siano già disponibili, spesso non è necessario usare direttamente questa attività. Assembly Linker è particolarmente utile per gli sviluppatori che hanno la necessità di creare un unico assembly da più file di componenti, ad esempio quelli che possono essere prodotti dallo sviluppo in linguaggi misti. Questa attività non combina i moduli in un unico file assembly. Affinché l'assembly ottenuto venga caricato correttamente, è comunque necessario che i singoli moduli vengano distribuiti e che siano disponibili. Per altre informazioni su *AL.exe*, vedere [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
+L'attività AL include *AL.exe*, uno strumento distribuito con Windows Software Development Kit (SDK). Lo strumento Assembly Linker consente di creare un assembly con un manifesto da uno o più file che costituiscono moduli o file di risorse. Poiché è possibile che negli ambienti di compilazione e sviluppo queste funzionalità siano già disponibili, spesso non è necessario usare direttamente questa attività. Assembly Linker è particolarmente utile per gli sviluppatori che hanno la necessità di creare un unico assembly da più file di componenti, ad esempio quelli che possono essere prodotti dallo sviluppo in linguaggi misti. Questa attività non combina i moduli in un unico file assembly. Affinché l'assembly ottenuto venga caricato correttamente, è comunque necessario che i singoli moduli vengano distribuiti e che siano disponibili. Per altre informazioni su *AL.exe*, vedere [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
 
 ## <a name="parameters"></a>Parametri
 
@@ -95,5 +95,5 @@ L'attività AL è a capo di *al. exe*, uno strumento distribuito con Windows Sof
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+* [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 * [Attività](../msbuild/msbuild-tasks.md)

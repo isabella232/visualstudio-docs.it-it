@@ -1,5 +1,5 @@
 ---
-title: Non è possibile creare un nome &lt;association associazione &gt; la proprietà è elencata due volte | Microsoft Docs
+title: 'Impossibile creare un nome di associazione di associazione &lt; &gt; : la proprietà è elencata due volte | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e4a1d20b5c341c1643836ae30e5de6243f35454
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662552"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Impossibile creare un'associazione &lt;nome associazione&gt;. La stessa proprietà è elencata più volte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Impossibile creare un'associazione \<nome associazione>. La stessa proprietà è elencata più volte: \<nome proprietà>.
+Impossibile creare un'associazione \<association name> . La stessa proprietà è elencata più volte: \<property name> .
 
  Le associazioni vengono definite dalle **Proprietà associazione** selezionate nella finestra di dialogo **Editor di associazione**. Le proprietà possono essere elencate una sola volta per ogni classe nell'associazione.
 

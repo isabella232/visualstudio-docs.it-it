@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825142"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funzionalità di accessibilità di Help Viewer
-Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i servizi offerti, in modo che tutti gli utenti siano in grado di usarli. Questo argomento fornisce le informazioni sulle funzionalità, i prodotti e i servizi in grado di rendere Microsoft Help Viewer accessibile agli utenti con diverse abilità.
+Microsoft cerca di sviluppare prodotti e servizi che siano facili da utilizzare per chiunque. Questo argomento fornisce le informazioni sulle funzionalità, i prodotti e i servizi in grado di rendere Microsoft Help Viewer accessibile agli utenti con diverse abilità.
 
 ## <a name="keyboard-access"></a>Accesso da tastiera
 È possibile accedere a tutte le funzionalità di Help Viewer tramite la tastiera. Per altre informazioni, vedere [Tasti di scelta rapida (Help Viewer)](../help-viewer/shortcut-keys.md).
 
-## <a name="font-size"></a>Dimensione carattere
+## <a name="font-size"></a>Dimensioni del carattere
 È possibile modificare la dimensione del carattere in cui viene visualizzato il testo dell'argomento nella finestra del documento. Per altre informazioni, vedere [Personalizzare Help Viewer](../help-viewer/customize.md).
 
 ## <a name="window-size"></a>Dimensioni finestra

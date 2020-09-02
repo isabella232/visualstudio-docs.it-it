@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Usare il Visualizzatore dell'albero WPF | Microsoft Docs"
+title: "Procedura: usare il Visualizzatore dell'albero di WPF | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 381dc45351ae03e615afbdd31239869e3dba8e4e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825441"
 ---
-# <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: Usare il visualizzatore dell'albero di WPF
+# <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: utilizzare il visualizzatore della struttura ad albero di WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile utilizzare il visualizzatore dell'albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in tale albero. Per altre informazioni sulle strutture ad albero visuali, vedere [strutture ad albero in WPF](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Per altre informazioni sulle proprietà di dipendenza, vedere [Cenni preliminari sulle proprietà di dipendenza](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
+È possibile utilizzare il visualizzatore dell'albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in tale albero. Per ulteriori informazioni sugli alberi visivi, vedere [strutture ad albero in WPF](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Per ulteriori informazioni sulle proprietà di dipendenza, vedere [Cenni preliminari sulle proprietà di dipendenza](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
   
- Quando si apre il Visualizzatore dell'albero di WPF, si vedranno due riquadri: il **struttura ad albero visuale** a sinistra e il **delle proprietà della** _nome_ **:**  _Tipo_ riquadro a destra. Selezionare un oggetto qualsiasi nel **struttura ad albero visuale** riquadro e il **delle proprietà di** _nome_ **:** _tipo_ riquadro è aggiornati automaticamente per mostrare le proprietà di quell'oggetto.  
+ Quando si apre il Visualizzatore della struttura ad albero di WPF, vengono visualizzati due riquadri: la **struttura ad albero visuale** a sinistra e il riquadro **Proprietà** _nome_**:**_tipo_ a destra. Selezionare un oggetto nel riquadro **struttura ad albero visuale** e il riquadro **Proprietà** _nome_**:**_tipo_ viene aggiornato automaticamente per visualizzare le proprietà dell'oggetto.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Per aprire il visualizzatore della struttura ad albero di WPF  
   
@@ -53,7 +53,7 @@ ms.locfileid: "67825441"
 
 ### <a name="to-search-the-properties-list"></a>Per eseguire ricerche nell'elenco di proprietà  
   
-- Nel **delle proprietà di** _nome_ **:** _tipo_ riquadro, digitare la stringa di cui si desidera eseguire la ricerca nel **filtrare**finestra.  
+- Nel riquadro **Proprietà** _nome_**:**_digitare_ la stringa che si desidera cercare nella casella **filtro** .  
   
   Il visualizzatore della struttura ad albero di WPF troverà immediatamente le proprietà che corrispondono alla stringa digitata; nell'elenco sono visualizzate soltanto le proprietà corrispondenti alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.  
 
@@ -64,7 +64,7 @@ ms.locfileid: "67825441"
 - Fare clic sull'icona **Chiudi** nell'angolo in alto a destra della finestra di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Usare un visualizzatore](../misc/how-to-use-a-visualizer.md)   
+ [Procedura: usare un visualizzatore](../misc/how-to-use-a-visualizer.md)   
  [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
  [Strutture ad albero in WPF](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)   
- [Panoramica sulle proprietà di dipendenza](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)
+ [Cenni preliminari sulle proprietà di dipendenza](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)

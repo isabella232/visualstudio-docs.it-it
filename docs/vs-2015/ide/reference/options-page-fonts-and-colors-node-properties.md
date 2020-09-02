@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23aa4eff3339ad3cd3ab7d4106745dc6fa83df34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662433"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori
@@ -37,10 +37,10 @@ Questo documento descrive le proprietà di tipi di carattere e colori per una fi
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |FontFamily|Get/Set (String)|Il tipo di carattere da usare, ad esempio "Courier New".|
-|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Valore <xref:EnvDTE.vsFontCharSet> che specifica il tipo di set di caratteri da usare, ad esempio ebraico o russo.|
+|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>) |Valore <xref:EnvDTE.vsFontCharSet> che specifica il tipo di set di caratteri da usare, ad esempio ebraico o russo.|
 |FontSize|Get/Set (Short)|La dimensione del carattere da usare, in punti. Ad esempio, 10 o 12.|
 
 ## <a name="see-also"></a>Vedere anche

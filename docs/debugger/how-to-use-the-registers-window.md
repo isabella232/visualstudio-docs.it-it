@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348574"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizzare i valori di registrazione nella finestra registri (C#, C++, Visual Basic, F #)
@@ -55,7 +55,7 @@ Per informazioni sui flag visualizzati nella finestra **registri** , vedere [inf
 >[!NOTE]
 >Le finestre di dialogo e i comandi di menu potrebbero variare a seconda dell'edizione o delle impostazioni di Visual Studio. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **strumenti** di Visual Studio. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
-### <a name="see-also"></a>Vedi anche
+### <a name="see-also"></a>Vedere anche
 
 - [Nozioni fondamentali di debug: finestra registri](../debugger/debugging-basics-registers-window.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

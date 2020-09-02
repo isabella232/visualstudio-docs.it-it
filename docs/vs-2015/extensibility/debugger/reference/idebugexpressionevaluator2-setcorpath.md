@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCorPath | Microsoft Docs
+title: 'IDebugExpressionEvaluator2:: SetCorPath | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c1508c7c0936f8ed8d92852e5b75c073cb9d85a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179921"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Imposta il percorso di common language runtime (CLR) caricato nel debugger.  
+Imposta il percorso del Common Language Runtime (CLR) caricato nel debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ int SetCorPath(
   
 #### <a name="parameters"></a>Parametri  
  `pcstrCorPath`  
- [in] Percorso di CLR caricati nel debugger.  
+ in Percorso del CLR caricato nel debugger.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **ExpressionEvaluatorPackage** oggetto che espone le [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **ExpressionEvaluatorPackage** che espone l'interfaccia [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) .  
   
 ```cpp#  
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)  

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348119"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Eseguire il debug di app UWP nei computer remoti da Visual Studio
@@ -35,15 +35,15 @@ Per eseguire il debug di un'app UWP in un dispositivo remoto da Visual Studio:
   - Alcune versioni di Windows 10 avviano ed eseguono automaticamente Remote Tools. In caso contrario, [installare ed eseguire il Remote Tools per Visual Studio](#BKMK_download).
   - I dispositivi Windows Mobile 10 non richiedono o supportano Remote Tools.
 
-## <a name="configure-a-visual-studio-project-for-remote-debugging"></a><a name="BKMK_ConnectVS"></a>Configurare un progetto di Visual Studio per il debug remoto
-<a name="BKMK_DirectConnect"></a>Usare le **Proprietà** del progetto per specificare il dispositivo remoto a cui connettersi. Le impostazioni variano a seconda del linguaggio di programmazione.
+## <a name="configure-a-visual-studio-project-for-remote-debugging"></a><a name="BKMK_ConnectVS"></a> Configurare un progetto di Visual Studio per il debug remoto
+<a name="BKMK_DirectConnect"></a> Usare le **Proprietà** del progetto per specificare il dispositivo remoto a cui connettersi. Le impostazioni variano a seconda del linguaggio di programmazione.
 
 > [!CAUTION]
 > Per impostazione predefinita, la pagina delle proprietà imposta il **protocollo universale (non crittografato)** come **tipo di autenticazione** per le connessioni remote di Windows 10. Potrebbe essere necessario impostare **Nessuna autenticazione** per la connessione al debugger remoto. **Universale (protocollo non crittografato)** e nessun protocollo di **autenticazione** non dispone di sicurezza di rete, quindi i dati passati tra lo sviluppo e i computer remoti sono vulnerabili. Scegliere questi tipi di autenticazione solo per le reti attendibili che non sono a rischio da traffico dannoso o ostile.
 >
 >Se si sceglie l' **autenticazione di Windows** per il tipo di **autenticazione**, sarà necessario accedere al computer remoto durante il debug. Il debugger remoto deve essere in esecuzione anche in modalità di **autenticazione di Windows** , con lo stesso account utente del computer che esegue Visual Studio.
 
-### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Configurare un progetto C# o Visual Basic per il debug remoto
+### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurare un progetto C# o Visual Basic per il debug remoto
 
 1. Selezionare il progetto C# o Visual Basic in Visual Studio **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio**oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
 
@@ -55,7 +55,7 @@ Per eseguire il debug di un'app UWP in un dispositivo remoto da Visual Studio:
 
     ![Proprietà del progetto gestito per il debug remoto](../debugger/media/vsrun_managed_projprop_remote.png "Proprietà del progetto di debug gestito")
 
-### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Configurare un progetto C++ per il debug remoto
+### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurare un progetto C++ per il debug remoto
 
 1. Selezionare il progetto C++ in Visual Studio **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio**oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
 
@@ -67,7 +67,7 @@ Per eseguire il debug di un'app UWP in un dispositivo remoto da Visual Studio:
 
     ![Proprietà del progetto C++ per il debug remoto](../debugger/media/vsrun_cpp_projprop_remote.png "Proprietà del progetto di debug C++")
 
-### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a>Utilizzare la finestra di dialogo connessioni remote
+### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a> Utilizzare la finestra di dialogo connessioni remote
 
 Nella finestra di dialogo **connessioni remote** è possibile cercare un nome di computer remoto o un indirizzo IP specifico oppure rilevare automaticamente le connessioni selezionando l'icona di aggiornamento a freccia arrotondata. La finestra di dialogo Cerca solo i dispositivi della subnet locale che eseguono attualmente il debugger remoto. Non tutti i dispositivi possono essere rilevati nella finestra di dialogo **connessioni remote** .
 
@@ -88,11 +88,11 @@ Per eseguire il debug di app in un computer remoto, in Visual Studio è necessar
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="configure-the-remote-tools"></a><a name="BKMK_setup"></a>Configurare Remote Tools
+### <a name="configure-the-remote-tools"></a><a name="BKMK_setup"></a> Configurare Remote Tools
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-## <a name="debug-uwp-apps-remotely"></a><a name="BKMK_RunRemoteDebug"></a>Eseguire il debug di app UWP in modalità remota
+## <a name="debug-uwp-apps-remotely"></a><a name="BKMK_RunRemoteDebug"></a> Eseguire il debug di app UWP in modalità remota
 
 Il debug remoto funziona allo stesso modo del debug locale.
 
@@ -106,7 +106,7 @@ Il debug remoto funziona allo stesso modo del debug locale.
 
 1. Se necessario, selezionare **debug**  >  **Interrompi debug** o premere **MAIUSC** + **F5** per arrestare il debug e chiudere l'app remota.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Opzioni di distribuzione remota avanzata](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Test delle app UWP con Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)
 - [Eseguire il debug di app UWP in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

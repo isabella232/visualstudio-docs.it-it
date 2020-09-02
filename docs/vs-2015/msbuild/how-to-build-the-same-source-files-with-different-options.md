@@ -15,19 +15,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821678"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: compilare gli stessi file di origine con opzioni diverse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si compilano progetti, spesso si compilano gli stessi componenti con opzioni di compilazione diverse. È possibile, ad esempio, creare una build di debug con informazioni sui simboli o una build di versione senza informazioni sui simboli, ma con le ottimizzazioni abilitate oppure è possibile compilare un progetto da eseguire su una piattaforma specifica, ad esempio x86 o [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. In tutti questi casi, la maggior parte delle opzioni di compilazione è la stessa. Vengono modificate solo alcune opzioni per controllare la configurazione della build. Con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], è possibile usare le proprietà e le condizioni per creare le diverse configurazioni della build.  
   
 ## <a name="using-properties-to-modify-projects"></a>Uso delle proprietà per modificare i progetti  
- L'elemento `Property` definisce una variabile a cui si fa riferimento più volte in un file di progetto, ad esempio per indicare la posizione di una directory temporanea o per impostare i valori delle proprietà usate in più configurazioni, ad esempio in una build di debug e in una build di rilascio. Per altre informazioni sulle proprietà, vedere [Proprietà di MSBuild](msbuild-properties1.md).  
+ L'elemento `Property` definisce una variabile a cui si fa riferimento più volte in un file di progetto, ad esempio per indicare la posizione di una directory temporanea o per impostare i valori delle proprietà usate in più configurazioni, ad esempio in una build di debug e in una build di rilascio. Per altre informazioni sulle proprietà, vedere [proprietà di MSBuild](msbuild-properties1.md).  
   
  È possibile usare le proprietà per modificare la configurazione della build senza dover modificare il file di progetto. L'attributo `Condition` dell'elemento `Property` e dell'elemento `PropertyGroup` consente di modificare il valore delle proprietà. Per altre informazioni sulle condizioni di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vedere [Condizioni](../msbuild/msbuild-conditions.md).  
   
@@ -61,7 +61,7 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     \- oppure -  
+     \- - oppure -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -75,7 +75,7 @@ Quando si compilano progetti, spesso si compilano gli stessi componenti con opzi
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   \- o -  
+   \- oppure  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
@@ -188,5 +188,5 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ## <a name="see-also"></a>Vedere anche  
 [MSBuild](msbuild.md)  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
  [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md)

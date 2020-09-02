@@ -1,5 +1,5 @@
 ---
-title: Sicurezza del debugger - Documenti Microsoft
+title: Sicurezza del debugger | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80527920"
 ---
 # <a name="debugger-security"></a>Sicurezza del debugger
@@ -50,11 +50,11 @@ La possibilità di eseguire il debug di un altro processo offre grandi potenzial
 
  ![Finestra di dialogo Errore](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")
 
- Quando si utilizza la modalità di autenticazione di Windows, tenere presente che la concessione di un'autorizzazione utente non attendibile per connettersi a msvsmon è pericolosa, poiché all'utente vengono concesse tutte le autorizzazioni sul computer che ospita msvsmon.
+ Quando si usa la modalità di autenticazione di Windows, tenere presente che la concessione di un'autorizzazione utente non attendibile per la connessione a msvsmon è pericolosa, perché all'utente vengono concesse tutte le autorizzazioni per il computer che ospita msvsmon.
 
  Non eseguire il debug di un processo sconosciuto in un computer remoto: esistono potenziali exploit che potrebbero influire sul computer che esegue il debugger o che potrebbero compromettere msvsmon. Se è assolutamente necessario eseguire il debug di un processo sconosciuto, provare a eseguire il debug locale e usare un firewall per contenere eventuali rischi.
 
- Per informazioni sulla configurazione di msvsmon, vedere [Configurare il debugger remoto.](../debugger/remote-debugging.md#bkmk_setup)
+ Per informazioni sulla configurazione di msvsmon, vedere [configurare il debugger remoto](../debugger/remote-debugging.md#bkmk_setup).
 
 ### <a name="web-services-debugging-security"></a>Sicurezza del debug di servizi Web
  Il debug locale è più sicuro, ma poiché è probabile che [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non sia installato nel server, non è sempre pratico. In genere, il debug dei servizi Web viene eseguito in remoto, tranne durante lo sviluppo, pertanto le procedure consigliate relative alla sicurezza del debug remoto si applicano anche al debug dei servizi Web. Di seguito sono riportate alcune procedure consigliate aggiuntive. Per altre informazioni, vedere [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
@@ -78,7 +78,7 @@ La possibilità di eseguire il debug di un altro processo offre grandi potenzial
   Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Impostazioni e preparazione del debuggerDebugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)
-- [Primo sguardo al debugger](../debugger/debugger-feature-tour.md)
+- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
+- [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Avviso di sicurezza: può essere pericoloso connettersi a un processo appartenente a un account utente non attendibile. Se le seguenti sottostanti risultano sospette o non sicure, non stabilire la connessione al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
 - [Avviso di sicurezza: il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

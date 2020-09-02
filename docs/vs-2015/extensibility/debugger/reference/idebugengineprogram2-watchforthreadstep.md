@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
+title: 'IDebugEngineProgram2:: WatchForThreadStep | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 59489af368c2e95a2d3cc93edbd6f7ab02a1c156
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195644"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Controlla che l'esecuzione viene arrestata la visione per l'esecuzione (o) venga eseguita il thread specificato.  
+Esegue il controllo dell'esecuzione (o smette di controllare l'esecuzione) nel thread specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,24 +46,24 @@ int WatchForThreadStep( 
   
 #### <a name="parameters"></a>Parametri  
  `pOriginatingProgram`  
- [in] Un' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma in corso rientri.  
+ in Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma di cui viene eseguito il ripasso.  
   
  `dwTid`  
- [in] Specifica l'identificatore del thread da controllare.  
+ in Specifica l'identificatore del thread da controllare.  
   
  `fWatch`  
- [in] Diverso da zero (`TRUE`) significa che inizia a guardare per l'esecuzione sul thread identificato da `dwTid`; in caso contrario, zero (`FALSE`) significa interruzione il controllo per l'esecuzione su `dwTid`.  
+ in Diverso da zero ( `TRUE` ) significa iniziare a controllare l'esecuzione nel thread identificato da `dwTid` ; in caso contrario, zero ( `FALSE` ) indica l'arresto dell'esecuzione del controllo `dwTid` .  
   
  `dwFrame`  
- [in] Specifica un indice dei fotogrammi che controlla il tipo di passaggio. Quando si tratta di valore è zero (0), il tipo di passaggio è "eseguire l'istruzione" e il programma deve essere arrestata ogni volta che il thread identificato da `dwTid` esegue. Quando `dwFrame` è diverso da zero, il tipo di passaggio è "Esegui istruzione/routine" e il programma deve essere interrotta solo se il thread identificato da `dwTid` è in esecuzione in un frame di cui indice è uguale o superiore nello stack di `dwFrame`.  
+ in Specifica un indice di frame che controlla il tipo di passaggio. Se il valore è zero (0), il tipo di passaggio è "Esegui istruzione" e il programma dovrebbe arrestarsi ogni volta che il thread identificato da `dwTid` viene eseguito. Quando `dwFrame` è diverso da zero, il tipo di passaggio è "Esegui istruzione/routine" e il programma dovrebbe arrestarsi solo se il thread identificato da `dwTid` viene eseguito in un frame il cui indice è uguale o superiore nello stack rispetto a `dwFrame` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Quando i passaggi da un programma, identificato dal gestore di sessione di debug (SDM) il `pOriginatingProgram` parametro, notifica a tutti gli altri programmi collegati chiamando questo metodo.  
+## <a name="remarks"></a>Osservazioni  
+ Quando la gestione del debug della sessione (SDM) esegue il passaggio di un programma, identificato dal `pOriginatingProgram` parametro, invia una notifica a tutti gli altri programmi collegati chiamando questo metodo.  
   
- Questo metodo è applicabile solo per l'esecuzione di istruzioni stesso thread.  
+ Questo metodo è applicabile solo all'esecuzione dello stesso thread.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

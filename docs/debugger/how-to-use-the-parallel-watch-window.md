@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fb0d5ac60ea5ab89b02a624488b5df4f8a7164b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348626"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Impostare un'espressione di controllo sulle variabili nei thread paralleli in Visual Studio (C#, Visual Basic, C++)
@@ -84,7 +84,7 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 
 - Immettere un'espressione booleana nella casella **Filtra per espressione booleana**. Il debugger valuta l'espressione per ogni contesto del thread. Vengono visualizzate solo le righe in cui valore è `true`.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: usare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Procedura dettagliata: debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

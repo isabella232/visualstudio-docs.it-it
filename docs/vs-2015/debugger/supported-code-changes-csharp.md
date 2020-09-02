@@ -1,5 +1,5 @@
 ---
-title: Modifiche supportate al codice (c#) | Microsoft Docs
+title: Modifiche al codice supportate (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823534"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C#)
@@ -47,7 +47,7 @@ La funzionalità Modifica e continuazione è in grado di gestire la maggior part
 - Aggiunta di `foreach`, `using` o `lock` intorno all'istruzione attiva.  
   
 ## <a name="unsafe-code"></a>Codice di tipo unsafe  
- Le modifiche al codice di tipo unsafe sono soggette alle stesse limitazioni delle modifiche al codice di tipo safe, con l'aggiunta della seguente: Modifica e continuazione non supporta le modifiche al codice di tipo unsafe esistente all'interno di un metodo che contiene il `stackalloc` operatore.  
+ Le modifiche a codice non sicuro hanno le stesse limitazioni delle modifiche a codice sicuro, con un'ulteriore restrizione: Modifica e continuazione non supporta modifiche a codice non sicuro all'interno di un metodo che contiene l'operatore `stackalloc`.  
   
 ## <a name="exceptions"></a>Eccezioni  
  Modifica e continuazione supporta modifiche ai blocchi `catch` e `finally`, tranne che l'aggiunta di un blocco `catch` o `finally` all'istruzione attiva non è consentita.  
@@ -59,7 +59,7 @@ La funzionalità Modifica e continuazione è in grado di gestire la maggior part
   
   - Cattura di una variabile che non è stata catturata in precedenza.  
 
-  - Modifica del tipo di espressione di query (ad esempio, select a = > Selezionare nuovo {A = un})  
+  - Modifica del tipo di espressione di query (ad esempio, selezionare a => selezionare nuovo {A = a};)  
 
   - Rimozione di un oggetto `where` che contiene un'istruzione attiva.  
 
@@ -75,11 +75,11 @@ La funzionalità Modifica e continuazione è in grado di gestire la maggior part
   
 - Debug di un dump di Dr. Watson.  
   
-- Modifica di codice dopo un'eccezione non gestita, quando la "**Rimuovi stack di chiamate su eccezioni non gestite**" opzione non è selezionata.  
+- Modifica del codice dopo un'eccezione non gestita, quando l'opzione "**Rimuovi stack di chiamate su eccezioni non gestite**" non è selezionata.  
   
 - Debug di un'applicazione di runtime incorporata.  
   
-- Debug di un'applicazione che dispone **collegare a** invece di eseguire l'applicazione da **avviare** dal **Debug** menu.  
+- Debug di un'applicazione che dispone di **Connetti a** invece di eseguire l'applicazione scegliendo **Avvia** dal menu **debug** .  
   
 - Debug di codice ottimizzato.  
   

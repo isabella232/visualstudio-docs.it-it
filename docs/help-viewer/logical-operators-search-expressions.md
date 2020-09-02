@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824907"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operatori logici e avanzati nelle espressioni di ricerca
@@ -26,7 +26,7 @@ ms.locfileid: "67824907"
 
 Gli operatori logici specificano in che modo più termini di ricerca debbano essere combinati in una query di ricerca. La tabella seguente illustra gli operatori logici AND, OR, NOT e NEAR.
 
-|Per cercare|Usa|Esempio|Risultato|
+|Per cercare|Uso|Esempio|Risultato|
 |-------------------|---------|-------------|------------|
 |Entrambi i termini nello stesso articolo|AND|DIB AND tavolozza|Argomenti che contengono sia "DIB" che "tavolozza".|
 |Uno dei termini in un articolo|OR|raster OR vettore|Argomenti che contengono "raster" o "vettore".|
@@ -40,7 +40,7 @@ Gli operatori logici specificano in che modo più termini di ricerca debbano ess
 
 Gli operatori di ricerca avanzati consentono di affinare la ricerca di contenuto specificando l'area di un articolo in cui cercare il termine. La tabella seguente descrive i quattro operatori di ricerca avanzata disponibili.
 
-|Per cercare|Usa|Esempio|Risultato|
+|Per cercare|Uso|Esempio|Risultato|
 |-------------------|---------|-------------|------------|
 |Un termine nel titolo dell'articolo|`title:`|`title:binaryreader`|Argomenti che contengono "binaryreader" nei titoli.|
 |Un termine in un esempio di codice|`code:`|`code:readdouble`|Argomenti che contengono "readdouble" in un esempio di codice.|

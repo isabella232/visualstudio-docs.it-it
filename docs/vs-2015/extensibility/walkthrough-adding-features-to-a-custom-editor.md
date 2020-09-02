@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Aggiunta di funzionalità in un Editor personalizzato | Microsoft Docs'
+title: 'Procedura dettagliata: aggiunta di funzionalità a un editor personalizzato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,13 +11,13 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1d14fb36298518409df34302f9346e186f0b0263
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825158"
 ---
-# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Procedura dettagliata: Aggiunta di funzionalità in un editor personalizzato
+# <a name="walkthrough-adding-features-to-a-custom-editor"></a>Procedura dettagliata: aggiunta di funzionalità in un editor personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzionalità.  
@@ -26,76 +26,76 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
   
 1. Creare un editor personalizzato usando il modello di progetto di pacchetto di Visual Studio.  
   
-     Per altre informazioni, vedere [Procedura dettagliata: Creazione di un Editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Per ulteriori informazioni, vedere [procedura dettagliata: creazione di un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
-2. Decidere se l'editor per supportare una singola visualizzazione o più visualizzazioni.  
+2. Decidere se si desidera che l'editor supporti una sola visualizzazione o più visualizzazioni.  
   
-     Un editor che supporta il **nuova finestra** comando o dispone di visualizzazione form e visualizzazione codice, richiede gli oggetti di visualizzazione di documenti e oggetti dati documenti separati. In un editor che supporta una sola visualizzazione, l'oggetto dati del documento e l'oggetto visualizzazione del documento possono essere implementati nello stesso oggetto.  
+     Un editor che supporta il comando **nuova finestra** o con visualizzazione form e visualizzazione codice richiede oggetti dati del documento e oggetti visualizzazione del documento distinti. In un editor che supporta solo una singola visualizzazione, l'oggetto dati del documento e l'oggetto visualizzazione del documento possono essere implementati nello stesso oggetto.  
   
-     Per un esempio di visualizzazioni multiple, vedere [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+     Per un esempio di visualizzazioni multiple, vedere [supporto di più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md).  
   
-3. Implementare una factory dell'editor mediante l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia.  
+3. Implementare una factory dell'editor implementando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia.  
   
-     Per altre informazioni, vedere [factory dell'Editor](../extensibility/editor-factories.md).  
+     Per altre informazioni, vedere [Editor Factory](../extensibility/editor-factories.md).  
   
-4. Decidere se si desidera che l'editor per utilizzare l'attivazione sul posto o semplificato l'incorporamento per gestire la finestra oggetto visualizzazione del documento.  
+4. Decidere se si vuole che l'editor usi l'attivazione sul posto o l'incorporamento semplificato per gestire la finestra oggetto visualizzazione documento.  
   
-     Una finestra dell'editor di incorporamento semplificato ospita una visualizzazione del documento standard, mentre una finestra dell'editor di attivazione sul posto ospita un controllo ActiveX o altro oggetto come relativa visualizzazione documento attivo. Per altre informazioni, vedere [incorporamento semplificato](../extensibility/simplified-embedding.md) e [attivazione sul posto](../misc/in-place-activation.md).  
+     Una finestra Editor di incorporamento semplificata ospita una visualizzazione del documento standard, mentre una finestra dell'editor di attivazione sul posto ospita un controllo ActiveX o un altro oggetto attivo come visualizzazione del documento. Per altre informazioni, vedere [incorporamento semplificato](../extensibility/simplified-embedding.md) e [attivazione sul posto](../misc/in-place-activation.md).  
   
-5. Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia per gestire i comandi.  
+5. Implementare l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia per gestire i comandi.  
   
-6. Fornire persistenza documento e la risposta alle modifiche di file esterno eseguendo queste operazioni:  
+6. Fornire la persistenza dei documenti e la risposta alle modifiche al file esterno eseguendo le operazioni seguenti:  
   
-    1. Per rendere persistenti i file, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> e <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> nell'oggetto dati documento dell'editore.  
+    1. Per rendere permanente il file, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> e <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> nell'oggetto dati del documento dell'editor.  
   
-    2. Per rispondere alle modifiche di file esterno, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> nell'oggetto dati documento dell'editore.  
+    2. Per rispondere alle modifiche apportate ai file esterni, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> nell'oggetto dati del documento dell'editor.  
   
         > [!NOTE]
-        > Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> per ottenere un puntatore a `IVsFileChangeEx`.  
+        > Chiamare `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> per ottenere un puntatore a `IVsFileChangeEx` .  
   
-7. Coordinare gli eventi di modifica di documenti con controllo del codice sorgente. A tale scopo, effettuare le seguenti operazioni:  
+7. Coordina gli eventi di modifica del documento con il controllo del codice sorgente. Per eseguire questa operazione:  
   
-    1. Ottenere un puntatore a `IVsQueryEditQuerySave2` chiamando `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.  
+    1. Ottenere un puntatore a chiamando `IVsQueryEditQuerySave2` `QueryService` il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .  
   
-    2. Quando si verifica il primo evento di modifica, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (metodo).  
+    2. Quando si verifica il primo evento di modifica, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> metodo.  
   
-         Ciò richiede all'utente di estrarre il file se non si è già estratto. Assicurarsi di gestire una condizione di "file non estratto" per evitare errori  
+         Viene chiesto all'utente di estrarre il file se non è già stato estratto. Assicurarsi di gestire una condizione di "file non estratto" per evitare errori  
   
-    3. Analogamente, prima di salvare il file, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> (metodo).  
+    3. Analogamente, prima di salvare il file, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> metodo.  
   
-         Questo metodo richiede all'utente di salvare il file se non è stato salvato o se è stata modificata dall'ultimo salvataggio.  
+         Questo metodo richiede all'utente di salvare il file se non è stato salvato o se è stato modificato dopo l'ultimo salvataggio.  
   
-8. Abilitare la **proprietà** finestra per visualizzare le proprietà per il testo selezionato nell'editor. A tale scopo, effettuare le seguenti operazioni:  
+8. Abilitare la finestra **Proprietà** per visualizzare le proprietà per il testo selezionato nell'editor. Per eseguire questa operazione:  
   
-    1. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ogni volta testo selezione viene modificata, passando nell'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
+    1. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ogni volta che la selezione del testo viene modificata, passando l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .  
   
-    2. Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> service per ottenere un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
+    2. Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> servizio per ottenere un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .  
   
-9. Consentire agli utenti di trascinare gli elementi tra l'editor e il **casella degli strumenti**, o tra gli editor esterni (ad esempio Microsoft Word) e il **della casella degli strumenti**. A tale scopo, effettuare le seguenti operazioni:  
+9. Consentire agli utenti di trascinare e rilasciare elementi tra l'editor e la **casella degli strumenti**oppure tra editor esterni (come Microsoft Word) e la **casella degli strumenti**. Per eseguire questa operazione:  
   
-    1. Implementare `IDropTarget` sull'editor per indicare all'IDE che l'editor è un obiettivo di rilascio.  
+    1. Implementare nell' `IDropTarget` Editor per avvisare l'IDE che l'editor è un obiettivo di rilascio.  
   
-    2. Implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> interfaccia per la vista in modo da abilitare e disabilitare gli elementi in un editor del **casella degli strumenti**.  
+    2. Implementare l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> interfaccia nella visualizzazione in modo che l'editor possa abilitare e disabilitare gli elementi nella **casella degli strumenti**.  
   
-    3. Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> e chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> service per ottenere un puntatore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> interfacce.  
+    3. Implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> e chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> servizio per ottenere un puntatore alle <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> interfacce e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> .  
   
-         In questo modo il pacchetto VSPackage aggiungere nuovi elementi per il **casella degli strumenti**.  
+         Ciò consente al VSPackage di aggiungere nuovi elementi alla **casella degli strumenti**.  
   
-10. Decidere se tutte le altre caratteristiche facoltative per l'editor.  
+10. Decidere se si desiderano altre funzionalità facoltative per l'editor.  
   
-    - Se si desidera che l'editor per supportare trovare e sostituire i comandi, implementare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.  
+    - Se si desidera che l'editor supporti i comandi Trova e Sostituisci, implementare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget> .  
   
-    - Se si desidera utilizzare una finestra degli strumenti Struttura documento nell'editor, implementare `IVsDocOutlineProvider`.  
+    - Se si desidera utilizzare una finestra degli strumenti struttura documento nell'editor, implementare `IVsDocOutlineProvider` .  
   
-    - Se si desidera usare una barra di stato nell'editor, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> e chiamare `QueryService` per <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> per ottenere un puntatore a `IVsStatusBar`.  
+    - Se si desidera utilizzare una barra di stato nell'editor, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> e chiamare `QueryService` per <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> per ottenere un puntatore a `IVsStatusBar` .  
   
-         Ad esempio, un editor può visualizzare riga / informazioni di colonna, la modalità di selezione (trasmettere / finestra) e modalità di inserimento (inserimento /overstrike).  
+         Un editor può, ad esempio, visualizzare le informazioni su righe/colonne, la modalità di selezione (flusso/casella) e la modalità di inserimento (inserimento/overstrike).  
   
-    - Se si desidera che l'editor per supportare il `Undo` comando, il metodo consigliato consiste nell'usare il modello di gestione di annullamento OLE. In alternativa, è possibile avere l'handle di editor la `Undo` comando direttamente.  
+    - Se si vuole che l'editor supporti il `Undo` comando, il metodo consigliato consiste nell'usare il modello di gestione degli annullamenti OLE. In alternativa, è possibile fare in modo che l'editor gestisca `Undo` direttamente il comando.  
   
-11. Creazione del Registro di sistema informazioni, inclusi i GUID per il pacchetto VSPackage i menu, l'editor e altre funzionalità.  
+11. Creare informazioni del registro di sistema, inclusi i GUID per il pacchetto VSPackage, i menu, l'editor e altre funzionalità.  
   
-     Di seguito è riportato un esempio di codice che dovrà inserire nello script di file con estensione RGS per illustrare come registrare correttamente un editor generico.  
+     Di seguito è riportato un esempio generico di codice che si inserisce nello script del file con estensione RGS per dimostrare come registrare correttamente un editor.  
   
     ```  
     NoRemove Editors  
@@ -117,17 +117,17 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
   
 12. Implementare il supporto della Guida sensibile al contesto.  
   
-     In questo modo è possibile fornire supporto della Guida F1 e finestra Guida dinamica per gli elementi nell'editor. Per altre informazioni, vedere [come: Fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md).  
+     In questo modo è possibile fornire la Guida sensibile al contesto e il supporto della finestra della Guida dinamica per gli elementi dell'editor. Per altre informazioni, vedere [procedura: fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md).  
   
-13. Esporre un modello a oggetti da un editor di automazione tramite l'implementazione di `IDispatch` interfaccia.  
+13. Esporre un modello a oggetti di automazione dall'editor implementando l' `IDispatch` interfaccia.  
   
      Per altre informazioni, vedere [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md).  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
   
-- L'istanza dell'editor viene creato quando si chiama l'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> (metodo). Se l'editor supporta più visualizzazioni, `CreateEditorInstance` crea i dati del documento e gli oggetti di visualizzazione documento. Se l'oggetto dati del documento è già aperto, non null `punkDocDataExisting` valore viene passato a `IVsEditorFactory::CreateEditorInstance`. Implementazione della factory dell'editor deve determinare se un oggetto dati del documento esistente è compatibile eseguendo una query per le interfacce appropriate su di esso. Per altre informazioni, vedere [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+- L'istanza dell'editor viene creata quando l'IDE chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metodo. Se l'editor supporta più visualizzazioni, in `CreateEditorInstance` vengono creati sia i dati del documento sia gli oggetti visualizzazione del documento. Se l'oggetto dati del documento è già aperto, `punkDocDataExisting` viene passato un valore non null a `IVsEditorFactory::CreateEditorInstance` . L'implementazione della factory dell'editor deve determinare se un oggetto dati del documento esistente è compatibile eseguendo una query per le interfacce appropriate. Per altre informazioni, vedere [supporto di più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md).  
   
-- Se si usa l'approccio di incorporamento semplificato, implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaccia.  
+- Se si usa l'approccio di incorporamento semplificato, implementare l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaccia.  
   
 - Se si decide di utilizzare l'attivazione sul posto, implementare le interfacce seguenti:  
   
@@ -138,17 +138,17 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    > Il `IOleInPlaceComponent` interfaccia viene utilizzata per evitare l'unione di menu OLE 2.  
+    > L' `IOleInPlaceComponent` interfaccia viene utilizzata per evitare l'Unione di menu OLE 2.  
   
-     I `IOleCommandTarget` implementazione gestisce i comandi, ad esempio **tagliare**, **copia**, e **Incolla**. Quando si implementa `IOleCommandTarget`, decidere se l'editor richiede un proprio file vsct per definire la propria struttura di menu comando o se è possibile implementare comandi standard definiti dalle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In genere, gli editor di usano ed estendono i menu dell'IDE e definiscono le proprie le barre degli strumenti. Tuttavia, spesso è necessario per un editor definire i proprio comandi specifici oltre all'utilizzo di set di comandi standard dell'IDE. A tale scopo, l'editor deve dichiarare i comandi standard USA e quindi definire qualsiasi nuovi comandi, menu di scelta rapida, i menu di primo livello e le barre degli strumenti in un file con estensione vsct. Se si crea un'attivazione sul posto dell'editor, quindi implementare <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definire i menu e barre degli strumenti per l'editor in un file con estensione vsct invece di usare l'unione di menu OLE 2.  
+     L' `IOleCommandTarget` implementazione gestisce i comandi, ad esempio **taglia**, **copia**e **Incolla**. Quando `IOleCommandTarget` si implementa, decidere se l'Editor richiede il proprio file. vsct per definire la propria struttura del menu dei comandi o se può implementare comandi standard definiti da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In genere, gli editor usano ed estendono i menu dell'IDE e definiscono le barre degli strumenti. Tuttavia, spesso è necessario che un editor definisca i propri comandi specifici, oltre a usare il set di comandi standard dell'IDE. A tale scopo, l'editor deve dichiarare i comandi standard utilizzati e quindi definire i nuovi comandi, i menu di scelta rapida, i menu di primo livello e le barre degli strumenti in un file con estensione vsct. Se si crea un editor di attivazione sul posto, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definire i menu e le barre degli strumenti per l'editor in un file con estensione vsct anziché utilizzare l'Unione dei menu OLE 2.  
   
-- Per evitare di affollare nell'interfaccia utente di comando di menu, è necessario usare i comandi esistenti nell'IDE prima di inventare nuovi comandi. Comandi condivisi sono definiti in SharedCmdDef.vsct e ShellCmdDef.vsct. Questi file vengono installati per impostazione predefinita nella sottodirectory VisualStudioIntegration\Common\Inc del [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installazione.  
+- Per evitare che il comando di menu venga affollato nell'interfaccia utente, è necessario usare i comandi esistenti nell'IDE prima di inventare nuovi comandi. I comandi condivisi sono definiti in SharedCmdDef. vsct e ShellCmdDef. vsct. Questi file vengono installati per impostazione predefinita nella sottodirectory VisualStudioIntegration\Common\Inc dell' [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] installazione.  
   
-- `ISelectionContainer` possibile esprimere una o più selezioni. Ogni oggetto selezionato viene implementato come un `IDispatch` oggetto.  
+- `ISelectionContainer` consente di esprimere selezioni singole e multiple. Ogni oggetto selezionato viene implementato come un `IDispatch` oggetto.  
   
-- L'IDE implementa il `IOleUndoManager` come un servizio accessibile da un <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> o come un oggetto che può essere creata un'istanza tramite <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. L'editor implementa il `IOleUndoUnit` per ogni interfaccia `Undo` azione.  
+- L'IDE implementa `IOleUndoManager` come servizio accessibile da <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> o come oggetto di cui è possibile creare un'istanza tramite <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> . L'editor implementa l' `IOleUndoUnit` interfaccia per ogni `Undo` azione.  
   
-- Esistono due posizioni un editor personalizzato può esporre gli oggetti di automazione:  
+- Un editor personalizzato può esporre gli oggetti di automazione in due posizioni:  
   
   - `Document.Object`  
 
@@ -156,4 +156,4 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
   
 ## <a name="see-also"></a>Vedere anche  
  [Aggiunta come contributo al modello di automazione](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Procedura: fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md)
+ [Procedura: Fornire il contesto per gli editor](../extensibility/how-to-provide-context-for-editors.md)

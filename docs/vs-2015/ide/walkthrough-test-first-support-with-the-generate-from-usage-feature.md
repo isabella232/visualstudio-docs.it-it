@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f40ed5f3070f177d1c914495f78a223364d64ae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662668"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Procedura dettagliata: supporto test preliminare con la funzionalità di generazione dall'utilizzo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questo argomento illustra come usare la funzionalità di [generazione dall'utilizzo](../misc/generate-from-usage.md), che supporta lo sviluppo di test preventivi.
+Questo argomento illustra come usare la funzionalità [Generate From Usage](../misc/generate-from-usage.md) , che supporta lo sviluppo di test preventivi.
 
  Lo*sviluppo di test preventivi* è un approccio alla progettazione software in cui prima si scrivono unit test in base alle specifiche del prodotto e quindi si scrive il codice sorgente necessario per fare in modo che i test abbiano esito positivo. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta lo sviluppo di test preventivi grazie alla generazione di nuovi tipi e membri nel codice sorgente quando si fa riferimento a essi per la prima volta nei test case, prima che vengano definiti.
 
@@ -38,11 +38,11 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
 2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sull'icona della soluzione nella parte superiore, scegliere **Aggiungi**e quindi fare clic su **Nuovo progetto**. Nel riquadro **Tipi di progetto** , a sinistra nella finestra di dialogo **Nuovo progetto** , fare clic su **Test**.
 
-3. Nel riquadro **Modelli** fare clic su **Progetto unit test** e accettare il nome predefinito UnitTestProject1. La figura seguente mostra la finestra di dialogo quando viene visualizzata in [!INCLUDE[csprcs](../includes/csprcs-md.md)]. In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] l'aspetto della finestra di dialogo è simile.
+3. Nel riquadro **Modelli** fare clic su **Progetto unit test** e accettare il nome predefinito UnitTestProject1. La figura seguente mostra la finestra di dialogo quando viene visualizzata in [!INCLUDE[csprcs](../includes/csprcs-md.md)]. In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]l'aspetto della finestra di dialogo è simile.
 
      ![Finestra di dialogo nuovo progetto di test](../ide/media/newproject-test.png "NewProject_Test") Finestra di dialogo nuovo progetto
 
-4. Fare clic su **OK** per chiudere la finestra di dialogo **Nuovo progetto** .
+4. Scegliere **OK** per chiudere la finestra di dialogo **Nuovo progetto** .
 
 5. Nel progetto della classe in **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla voce **Riferimenti** e scegliere **Aggiungi riferimento**.
 
@@ -71,13 +71,13 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
      ![Sottolineatura smart tag in Visual Basic](../ide/media/genclass-underlinevb.png "GenClass_UnderlineVB") Visual Basic
 
-     ![Sottolineatura smart tag&#35; in C](../ide/media/genclass-underline.png "GenClass_Underline") VisualC#
+     ![Sottolineatura smart tag in C&#35;](../ide/media/genclass-underline.png "GenClass_Underline") Visual C #
 
 4. Posizionare il puntatore del mouse sullo smart tag per visualizzare un messaggio di errore che indica che non è ancora stato definito un tipo denominato `Automobile` . Fare clic sullo smart tag o premere CTRL+. (CTRL+punto) per aprire il menu di scelta rapida per la generazione dall'utilizzo, come illustrato nelle figure seguenti.
 
      ![Menu di scelta rapida Smart tag in Visual Basic](../ide/media/genclass-smartvb.png "GenClass_SmartVB") Visual Basic
 
-     ![Menu di scelta rapida Smart tag&#35; in C](../ide/media/genclass-smartcs.png "GenClass_SmartCS") VisualC#
+     ![Menu di scelta rapida Smart tag in C&#35;](../ide/media/genclass-smartcs.png "GenClass_SmartCS") Visual C #
 
 5. A questo punto sono disponibili due opzioni. È possibile fare clic su **Genera classe per "Automobile"** per creare un nuovo file nel progetto di test e popolarlo con una classe vuota denominata `Automobile`. Questo è un modo rapido per creare una nuova classe in un nuovo file con modificatori di accesso predefiniti nel progetto corrente. È anche possibile fare clic su **Genera nuovo tipo** per aprire la finestra di dialogo **Genera nuovo tipo** . Questo comando fornisce opzioni che includono l'inserimento della classe in un file esistente e l'aggiunta del file a un altro progetto.
 
@@ -106,7 +106,7 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
      ![Menu di scelta rapida genera proprietà in Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB") Visual Basic
 
-     ![Menu di scelta rapida genera proprietà&#35; in C](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") VisualC#
+     ![Menu di scelta rapida genera proprietà in C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") Visual C #
 
 ### <a name="to-locate-the-source-code"></a>Per individuare il codice sorgente
 
