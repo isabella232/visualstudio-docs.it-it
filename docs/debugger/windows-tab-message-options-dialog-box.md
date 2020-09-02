@@ -1,5 +1,5 @@
 ---
-title: Scheda di Windows, finestra di dialogo Opzioni messaggio | Microsoft Docs
+title: Scheda Windows, finestra di dialogo Opzioni messaggio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,29 +11,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929175"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Scheda Finestre, finestra di dialogo Opzioni messaggio
-Usare la **Windows** per impostare l'ambito dei messaggi elencati nella scheda [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **i messaggi di Log** dal **Spy** menu.
+Utilizzare la scheda **Windows** per impostare l'ambito dei messaggi elencati nella [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare la finestra di [dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **Registra messaggi** dal menu **Spy** .
 
- Le impostazioni seguenti sono disponibili sul **Windows** scheda:
+ Nella scheda **Windows** sono disponibili le impostazioni seguenti:
 
- **Strumento di ricerca** lo strumento di trascinamento della selezione utilizzato per selezionare una finestra.
+ **Strumento di ricerca** Strumento di trascinamento della selezione usato per selezionare una finestra.
 
- **Nascondi Spy + +** rimuove la finestra principale di Spy + + e lascia il **Opzioni messaggio** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni.
+ **Nascondi Spy + +** Rimuove la finestra principale di Spy + + e lascia visibile la finestra di dialogo **MessageOptions** in cima alle altre applicazioni.
 
- **Finestra padre** visualizzare messaggi per la finestra selezionata e la relativa finestra padre diretto.
+ **Finestra padre** Visualizza i messaggi per la finestra selezionata e la finestra padre immediata.
 
- **Finestra figlio** Visualizza i messaggi per la finestra selezionata e tutte le finestre figlio, tra cui annidati finestre figlio.
+ **Finestra figlio** Visualizza i messaggi per la finestra selezionata e tutte le relative finestre figlio, incluse le finestre figlio annidate.
 
- **Windows stesso Thread** visualizzare i messaggi per la finestra selezionata e tutte le altre finestre appartenenti allo stesso thread.
+ **Finestre dello stesso thread** Visualizza i messaggi per la finestra selezionata e tutte le altre finestre di proprietà dello stesso thread.
 
- **Windows del processo stesso** visualizzare i messaggi per la finestra selezionata e tutte le altre finestre appartenenti allo stesso processo.
+ **Finestre dello stesso processo** Visualizza i messaggi per la finestra selezionata e tutte le altre finestre appartenenti allo stesso processo.
 
- **Tutti i Windows nel sistema** visualizzare messaggi per tutte le finestre.
+ **Tutte le finestre nel sistema** Visualizza i messaggi per tutte le finestre.
 
- **Salvare le impostazioni come predefinito** salvare le impostazioni precedenti per nuove finestre di flusso di messaggi. Queste impostazioni vengono salvate anche quando si esce da Spy + +.
+ **Salva impostazioni come predefinite** Salvare le impostazioni precedenti per le nuove finestre del flusso di messaggi. Queste impostazioni vengono salvate anche quando si esce da Spy + +.

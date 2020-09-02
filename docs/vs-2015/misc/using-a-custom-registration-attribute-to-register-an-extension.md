@@ -8,17 +8,17 @@ ms.assetid: 98068fa7-bda1-4922-b3f6-28680de58c3d
 caps.latest.revision: 3
 manager: jillfra
 ms.openlocfilehash: a619c5d418df3b9b85ab09cf9b907617ebd81b67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62935784"
 ---
 # <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>Uso di un attributo di registrazione personalizzato per registrare un'estensione
-In alcuni casi potrebbe essere necessario creare un nuovo attributo di registrazione per l'estensione. È possibile usare gli attributi di registrazione per aggiungere nuove chiavi del Registro di sistema o per aggiungere nuovi valori per le chiavi esistenti. Il nuovo attributo deve derivare da <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, e deve eseguire l'override di <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> e <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> metodi.  
+In alcuni casi potrebbe essere necessario creare un nuovo attributo di registrazione per l'estensione. È possibile usare gli attributi di registrazione per aggiungere nuove chiavi del registro di sistema o per aggiungere nuovi valori alle chiavi esistenti. Il nuovo attributo deve derivare da <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> ed è necessario eseguire l'override dei <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> metodi e.  
   
 ## <a name="creating-a-custom-attribute"></a>Creazione di un attributo personalizzato  
- Il codice seguente viene illustrato come creare un nuovo attributo di registrazione.  
+ Nel codice seguente viene illustrato come creare un nuovo attributo di registrazione.  
   
 ```  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
@@ -28,10 +28,10 @@ In alcuni casi potrebbe essere necessario creare un nuovo attributo di registraz
   
 ```  
   
- Il <xref:System.AttributeUsageAttribute> viene utilizzato nelle classi di attributo per specificare l'elemento del programma (classe, metodo, e così via) a cui fa riferimento l'attributo, che può essere utilizzato più volte e che può essere ereditata.  
+ <xref:System.AttributeUsageAttribute>Viene usato nelle classi di attributi per specificare l'elemento Program (classe, metodo e così via) a cui si riferisce l'attributo, se può essere usato più di una volta e se può essere ereditato.  
   
-### <a name="creating-a-registry-key"></a>Creazione di una chiave del Registro di sistema  
- Nel codice seguente, l'attributo personalizzato viene creato un **personalizzato** sottochiave sotto la chiave per il pacchetto VSPackage in fase di registrazione.  
+### <a name="creating-a-registry-key"></a>Creazione di una chiave del registro di sistema  
+ Nel codice seguente, l'attributo custom crea una sottochiave **personalizzata** sotto la chiave per il pacchetto VSPackage registrato.  
   
 ```  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -56,8 +56,8 @@ public override void Unregister(RegistrationContext context)
   
 ```  
   
-### <a name="creating-a-new-value-under-an-existing-registry-key"></a>Creazione di un nuovo valore in una chiave del Registro di sistema esistente  
- È possibile aggiungere i valori personalizzati a una chiave esistente. Il codice seguente viene illustrato come aggiungere un nuovo valore a una chiave di registrazione del pacchetto VSPackage.  
+### <a name="creating-a-new-value-under-an-existing-registry-key"></a>Creazione di un nuovo valore in una chiave del registro di sistema esistente  
+ È possibile aggiungere valori personalizzati a una chiave esistente. Il codice seguente illustra come aggiungere un nuovo valore a una chiave di registrazione VSPackage.  
   
 ```  
 public override void Register(RegistrationAttribute.RegistrationContext context)  

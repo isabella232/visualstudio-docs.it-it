@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di Spy + + | Microsoft Docs
+title: Uso di Spy + + | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8751aa4bdd80b95406dcc588b469da43f7221a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929903"
 ---
 # <a name="using-spy"></a>Utilizzo di Spy++
-Spy + + (SPYXX. Con estensione EXE) è un'utilità basata su Win32 che ti offre una visualizzazione grafica dei processi, thread, windows e i messaggi della finestra del sistema. In questa sezione del Spy + + della Guida include i seguenti argomenti:
+Spy + + (SPYXX.EXE) è un'utilità basata su Win32 che offre una visualizzazione grafica dei processi, dei thread, delle finestre e dei messaggi di finestra del sistema. Questa sezione della Guida di Spy + + include gli argomenti della guida seguenti:
 
-## <a name="in-this-section"></a>In questa sezione
- [Introduzione a Spy + +](../debugger/introducing-spy-increment.md) vengono illustrati i tipi di informazioni che è possibile visualizzare con lo strumento Spy + +.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Introduzione a Spy + +](../debugger/introducing-spy-increment.md) Vengono illustrati i tipi di informazioni che è possibile visualizzare con lo strumento Spy + +.
 
- [Procedura: Avviare Spy + +](../debugger/how-to-start-spy-increment.md) illustra come avviare Spy + + dal menu Strumenti.
+ [Procedura: avviare Spy + +](../debugger/how-to-start-spy-increment.md) Viene illustrato come avviare Spy + + dal menu strumenti.
 
- [Barra degli strumenti di Spy + +](../debugger/spy-increment-toolbar.md) descrive i comandi disponibili sulla barra degli strumenti di Spy + +.
+ [Barra degli strumenti di Spy + +](../debugger/spy-increment-toolbar.md) Descrive i comandi disponibili sulla barra degli strumenti di Spy + +.
 
- [Procedura: Visualizzare le visualizzazioni di Spy + +](../debugger/how-to-display-spy-increment-views.md) come visualizzare una visualizzazione di Windows, visualizzazione di messaggi, visualizzazione dei processi e visualizzazione thread.
+ [Procedura: visualizzare le visualizzazioni di Spy + +](../debugger/how-to-display-spy-increment-views.md) Come visualizzare visualizzazione di Windows, visualizzazione messaggi, visualizzazione processi e visualizzazione thread.
 
- [Procedura: Aggiornare la visualizzazione](../debugger/how-to-refresh-the-view.md) viene descritto il comando di aggiornamento.
+ [Procedura: aggiornare la visualizzazione](../debugger/how-to-refresh-the-view.md) Viene illustrato il comando Refresh.
 
- [Procedura: Modificare i tipi di carattere](../debugger/how-to-change-fonts.md) viene illustrato come modificare la modalità di visualizzazione di una vista.
+ [Procedura: modificare i tipi di carattere](../debugger/how-to-change-fonts.md) Viene illustrato come modificare la modalità di visualizzazione di una visualizzazione.
 
- [Procedura: Espandere e comprimere Spy + + alberi](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) viene illustrato come modificare una vista.
+ [Procedura: espandere e comprimere alberi di Spy + +](../debugger/how-to-expand-and-collapse-spy-increment-trees.md) Viene illustrato come modificare una visualizzazione.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+ [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.
 
- [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) include sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.

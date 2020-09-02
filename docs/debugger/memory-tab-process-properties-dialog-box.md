@@ -11,27 +11,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62931285"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Scheda Memoria, finestra di dialogo Proprietà processo
-Usare la **memoria** scheda per visualizzare l'utilizzo della memoria da parte di un processo. Per visualizzare il [finestra di dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo su un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.
+Utilizzare la scheda **memoria** per visualizzare il modo in cui un processo utilizza la memoria. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
- Le impostazioni seguenti sono disponibili sul **memoria** scheda:
+ Nella scheda **memoria** sono disponibili le impostazioni seguenti:
 
 |Voce|Descrizione|
 |-----------|-----------------|
-|**Byte virtuali**|Le dimensioni correnti (in byte) di spazio degli indirizzi virtuali usata dal processo. L'utilizzo di spazio degli indirizzi virtuali non implica necessariamente un uso corrispondente di pagine su disco o memoria principale. Tuttavia, lo spazio virtuale è finito e usando troppa può limitare la capacità del processo per caricare le librerie.|
-|**N. massimo byte virtuali**|Il numero massimo di byte di spazio degli indirizzi virtuali del processo è utilizzato in qualsiasi momento.|
-|**Working Set**|Il set di pagine in memoria utilizzate di recente dai thread del processo. Se la memoria disponibile è superiore alla soglia specificata, le pagine verranno lasciate nel Working Set di un processo anche se non sono in uso. Quando la memoria disponibile scende sotto una soglia, le pagine verranno rimosse dal Working Set. Se sono necessarie, saranno richiamate nuovamente nel Working Set prima di lasciare la memoria principale.|
-|**Working Set massimo**|Il numero massimo di pagine nel working set del processo in qualsiasi punto nel tempo.|
-|**Byte riserva di paging**|La quantità corrente di pool di paging allocata dal processo. Pool di paging è un'area di memoria di sistema in cui i componenti del sistema operativo acquisiscono spazio come il completamento delle attività assegnate. Le pagine del pool di paging possono essere trasferite nel file di paging quando non si accede dal sistema per periodi prolungati di tempo.|
-|**Byte riserva non di paging**|Numero corrente di byte in pool non di paging allocata dal processo. Il pool non di paging è un'area di memoria di sistema in cui lo spazio viene acquisito da componenti del sistema operativo come il completamento delle attività assegnate. Le pagine del pool non di paging non possono essere trasferite nel file di paging; rimangono nella memoria principale fino a quando vengono allocate.|
-|**Byte privati**|Il numero corrente di byte, allocata a questo processo che non può essere condivisi con altri processi.|
-|**Byte liberi**|Lo spazio indirizzi virtuali inutilizzati totale di questo processo.|
-|**Byte riservati**|La quantità totale di memoria virtuale riservata per utilizzi futuri da questo processo.|
-|**Byte immagine liberi**|La quantità di spazio degli indirizzi virtuali che non sia in uso o riservato per le immagini all'interno di questo processo.|
-|**Byte immagine riservati**|La somma della memoria virtuale riservata per le immagini eseguito all'interno di questo processo.|
+|**Virtual Bytes**|Dimensioni correnti, in byte, dello spazio degli indirizzi virtuali usato dal processo. L'utilizzo dello spazio degli indirizzi virtuali non implica necessariamente l'utilizzo corrispondente di pagine del disco o della memoria principale. Tuttavia, lo spazio virtuale è finito e l'uso di un numero troppo elevato può limitare la capacità del processo di caricare le librerie.|
+|**N. massimo byte virtuali**|Il numero massimo di byte di spazio degli indirizzi virtuali usato dal processo in un momento specifico.|
+|**Working Set**|Il set di pagine di memoria interessate di recente dai thread del processo. Se la memoria disponibile nel computer supera la soglia specificata, le pagine verranno lasciate nel working set di un processo anche se non sono utilizzate. Quando la memoria disponibile scende al di sotto di una soglia, le pagine vengono rimosse dal working set. Se sono necessari, verranno richiamati temporaneamente nel working set prima di lasciare la memoria principale.|
+|**Working Set massimo**|Numero massimo di pagine del working set di questo processo in qualsiasi momento.|
+|**Byte riserva di paging**|Quantità corrente di pool di paging che il processo ha allocato. Il pool di paging è un'area di memoria di sistema in cui i componenti del sistema operativo acquisiscono spazio quando eseguono le attività designate. Le pagine del pool di paging possono essere inserite nel file di paging quando il sistema non accede al sistema per periodi di tempo prolungati.|
+|**Byte riserva non di paging**|Numero corrente di byte nel pool non di paging allocato dal processo. Il pool non di paging è un'area di memoria di sistema in cui lo spazio viene acquisito dai componenti del sistema operativo quando eseguono le attività designate. Non è possibile eseguire il paging delle pagine del pool non di paging nel file di paging; rimangono nella memoria principale fino a quando vengono allocati.|
+|**Private Bytes**|Numero corrente di byte allocati da questo processo che non possono essere condivisi con altri processi.|
+|**Byte disponibili**|Lo spazio degli indirizzi virtuali non utilizzati totale di questo processo.|
+|**Byte riservati**|Quantità totale di memoria virtuale riservata per l'utilizzo futuro da parte di questo processo.|
+|**Byte immagine liberi**|Quantità di spazio degli indirizzi virtuali non in uso o riservata da immagini all'interno di questo processo.|
+|**Byte immagine riservati**|Somma di tutta la memoria virtuale riservata dalle immagini eseguite in questo processo.|

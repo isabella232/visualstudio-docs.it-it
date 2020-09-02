@@ -1,5 +1,5 @@
 ---
-title: I comandi di menu | Microsoft Docs
+title: Comandi di menu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62931313"
 ---
 # <a name="menu-commands"></a>Comandi di menu
-Gli argomenti della Guida in questa sezione elenca i comandi disponibili nei menu Spy + +.
+Gli argomenti della Guida in questa sezione elencano i comandi disponibili nei menu di Spy + +.
 
-## <a name="in-this-section"></a>In questa sezione
- [Comandi del Menu Spy](../debugger/spy-menu-commands.md) descrive tutti i comandi disponibili dal **Spy** menu.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Comandi di menu Spy](../debugger/spy-menu-commands.md) Descrive ogni comando disponibile dal menu **Spy** .
 
- [Struttura ad albero comandi di Menu](../debugger/tree-menu-commands.md) descrive tutti i comandi disponibili dal **albero** menu.
+ [Comandi di menu albero](../debugger/tree-menu-commands.md) Descrive ogni comando disponibile nel menu della **struttura ad albero** .
 
- [Cercare i comandi di Menu](../debugger/search-menu-commands.md) descrive tutti i comandi disponibili dal **ricerca** menu.
+ [Comandi del menu Cerca](../debugger/search-menu-commands.md) Descrive ogni comando disponibile nel menu di **ricerca** .
 
- [Visualizzare i comandi di Menu](../debugger/view-menu-commands.md) descrive tutti i comandi disponibili dal **visualizzazione** menu.
+ [Comandi del menu Visualizza](../debugger/view-menu-commands.md) Descrive ogni comando disponibile dal menu **Visualizza** .
 
- [I messaggi di comandi di Menu](../debugger/messages-menu-commands.md) descrive tutti i comandi disponibili dal **messaggi** menu.
+ [Comandi del menu messaggi](../debugger/messages-menu-commands.md) Descrive ogni comando disponibile nel menu **messaggi** .
 
- [Comandi del Menu finestra](../debugger/window-menu-commands.md) descrive tutti i comandi disponibili dal **finestra** menu.
+ [Comandi del menu finestra](../debugger/window-menu-commands.md) Descrive ogni comando disponibile nel menu **finestra** .
 
- [Comandi del Menu](../debugger/help-menu-commands.md) descrive tutti i comandi disponibili dal **aiutare** menu.
+ [Comandi di menu della Guida](../debugger/help-menu-commands.md) Descrive ogni comando disponibile **dal menu?** .
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Utilizzo di Spy + +](../debugger/using-spy-increment.md) introduce lo strumento Spy + + e spiega come può essere usato.
+ [Uso di Spy + +](../debugger/using-spy-increment.md) Introduce lo strumento Spy + + e spiega come può essere usato.
 
- [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.
+ [Viste di Spy + +](../debugger/spy-increment-views.md) Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.
 
- [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) sono incluse in questa sezione e le altre sezioni che descrivono ogni finestra di dialogo di Spy + +.
+ [Riferimenti per Spy + +](../debugger/spy-increment-reference.md) Include questa sezione e le sezioni che descrivono ogni finestra di dialogo di Spy + +.

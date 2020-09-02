@@ -1,5 +1,5 @@
 ---
-title: Cercare i comandi di Menu | Microsoft Docs
+title: Comandi del menu Cerca | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c61dc9e752dccee909baa742e4c8d677df865a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62929808"
 ---
 # <a name="search-menu-commands"></a>comandi del menu Cerca
-Il **ricerca** menu fornisce comandi per eseguire la ricerca di specifici di windows.
+Nel menu **Cerca** sono disponibili comandi per la ricerca di finestre specifiche.
 
- **Trovare/processo/Thread/messaggio della finestra** consente di aprire la **finestra**/**processo**/**Thread** /  **Ricerca messaggi** della finestra di dialogo in cui è possibile usare il **ricerca** o specificare i criteri di ricerca.
+ **Trova finestra/processo/thread/messaggio** Apre la **finestra**di / **Process** / **Thread** / dialogo**MessageSearch** thread processo finestra, in cui è possibile usare **FinderTool** o specificare i criteri di ricerca.
 
- **Trova successivo** consente la visualizzazione corrente per la finestra corrispondente successiva, processo, thread o messaggio. Questa voce di menu (e il pulsante della barra degli strumenti correlati) è disponibile solo quando è presente un risultato di ricerca valida che non è univoco.
+ **Trova successivo** Cerca nella visualizzazione corrente la finestra, il processo, il thread o il messaggio corrispondente successivo. Questa voce di menu (e il pulsante della barra degli strumenti correlato) è disponibile solo se è presente un risultato di ricerca valido che non è univoco.
 
- **Trova precedente** consente la visualizzazione corrente per la finestra corrispondente precedente, processo, thread o messaggio. Questa voce di menu (e il pulsante della barra degli strumenti correlati) è disponibile solo quando è presente un risultato di ricerca valida che non è univoco.
+ **Trova precedente** Cerca nella visualizzazione corrente la finestra, il processo, il thread o il messaggio corrispondente precedente. Questa voce di menu (e il pulsante della barra degli strumenti correlato) è disponibile solo se è presente un risultato di ricerca valido che non è univoco.

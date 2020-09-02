@@ -1,5 +1,5 @@
 ---
-title: Prerequisiti per le applicazioni a 64 bit la distribuzione | Microsoft Docs
+title: Distribuzione dei prerequisiti per le applicazioni a 64 bit | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62928874"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
@@ -35,13 +35,13 @@ La distribuzione ClickOnce supporta l'installazione di applicazioni su piattafor
 
 | Componente ridistribuibile | Supporto x64 | Supporto IA64 |
 | - |-------------|--------------|
-| [!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)] | Yes | No |
-| Librerie di runtime di Visual C++ 2010 (IA64) | No | Yes |
-| Librerie di runtime di Visual C++ 2010 (x64) | Yes | No |
-| Microsoft .NET Framework 4 (x86 e x64) | Yes | |
-| Microsoft .NET Framework 4 Client Profile (x86 e x64) | Yes | |
+| [!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)] | Sì | No |
+| Librerie di runtime di Visual C++ 2010 (IA64) | No | Sì |
+| Librerie di runtime di Visual C++ 2010 (x64) | Sì | No |
+| Microsoft .NET Framework 4 (x86 e x64) | Sì | |
+| Microsoft .NET Framework 4 Client Profile (x86 e x64) | Sì | |
 
 ## <a name="see-also"></a>Vedere anche
-- [Distribuire le applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md)
+- [Distribuire applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md)
 - [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps)
