@@ -1,5 +1,5 @@
 ---
-title: Limitazioni del debug di WCF | Microsoft Docs
+title: Limitazioni del debug WCF | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176804"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitazioni del debug di WCF
@@ -77,11 +77,11 @@ Sono disponibili tre modalità per avviare il debug di un servizio WCF:
     ```  
   
 ## <a name="self-hosting"></a>Self-hosting  
- Un *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, nell'host dei servizi WCF o nel server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Per informazioni su come eseguire il debug di un servizio self-hosted, vedere [come: Eseguire il debug di un servizio WCF Self-Hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+ Un *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, nell'host dei servizi WCF o nel server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Per informazioni su come eseguire il debug di un servizio self-hosted, vedere [procedura: eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
 ## <a name="self-hosting"></a>Self-hosting  
- Per abilitare il debug delle applicazioni di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 o 3.5, è necessario installare [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 o 3.5 prima dell'installazione di [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]. Se [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] viene installato prima di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 o 3.5, quando si tenta di eseguire il debug di un'applicazione di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 o 3.5 viene generato un errore. Il messaggio di errore è "Impossibile eseguire automaticamente l'istruzione sul server". Per risolvere questo problema, utilizzare il Windows **Pannello di controllo**, **programmi e funzionalità** ripristinare il [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] installazione.  
+ Per abilitare il debug delle applicazioni di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 o 3.5, è necessario installare [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 o 3.5 prima dell'installazione di [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]. Se [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] viene installato prima di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 o 3.5, quando si tenta di eseguire il debug di un'applicazione di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 o 3.5 viene generato un errore. Il messaggio di errore è "Impossibile eseguire automaticamente l'istruzione sul server". Per risolvere il problema, usare il **Pannello di controllo**di Windows, **programmi e funzionalità** per ripristinare l' [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] installazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug dei servizi WCF](../debugger/debugging-wcf-services.md)   
- [Procedura: Eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+ [Debug di servizi WCF](../debugger/debugging-wcf-services.md)   
+ [Procedura: eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

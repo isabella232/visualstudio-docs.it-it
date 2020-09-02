@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847991"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
@@ -24,7 +24,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
 > [!NOTE]
 > Gli strumenti per le prestazioni per le altre versioni di Windows supportate (Windows 7, Windows Server 2008 R2) sono rimasti invariati.  
   
-## <a name="BKMK_In_this_topic"></a> In questo argomento  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
  [Raccolta di dati nelle app di Windows Store dall'IDE di Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Raccolta di dati nelle app in esecuzione sul desktop di Windows 8 o in Windows Server 2012 dall'IDE di Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,7 +35,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
   [Raccolta di dati di interazione tra livelli (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Raccolta di dati nelle app di Windows Store dall'IDE di Visual Studio  
+## <a name="collecting-data-on-windows-store-apps-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Raccolta di dati nelle app di Windows Store dall'IDE di Visual Studio  
  Quando si profila un'app di Windows Store scritta in JavaScript e in HTML 5, si raccolgono dati di strumentazione per il codice JavaScript. Quando si profila un'app di Windows Store o un componente scritto in Visual C++, Visual C# o Visual Basic, si raccolgono dati di campionamento per il codice nativo e il codice gestito. È possibile profilare l'applicazione localmente o in un computer remoto.  
   
  Le seguenti funzionalità e opzioni di profilatura non sono supportate nella profilatura di app di Windows Store:  
@@ -60,7 +60,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
   [Eseguire app di Windows Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [Analizzare le prestazioni delle applicazioni](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Analizzare le prestazioni dell'app](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
 - [Temporizzazione funzione JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
@@ -74,21 +74,21 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
 - [Analizzare i dati relativi alle prestazioni per il codice Visual C++, Visual C# e Visual Basic nelle applicazioni Windows Store](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
-  [In questo argomento](#BKMK_In_this_topic)  
+  [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Raccolta di dati nelle app in esecuzione sul desktop di Windows 8 o in Windows Server 2012 dall'IDE di Visual Studio  
+## <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Raccolta di dati nelle app in esecuzione sul desktop di Windows 8 o in Windows Server 2012 dall'IDE di Visual Studio  
  La profilatura mediante il metodo di strumentazione è rimasta invariata per Windows 8.  
   
  La profilatura di interazione tra livelli (TIP) non è supportata usando il metodo di campionamento.  
   
-### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Raccolta di dati nelle app in esecuzione sul desktop di Windows 8 o in Windows Server 2012 mediante campionamento dall'IDE di Visual Studio  
+### <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Raccolta di dati nelle app in esecuzione sul desktop di Windows 8 o in Windows Server 2012 usando il campionamento dall'IDE di Visual Studio  
  Queste funzionalità e opzioni di profilatura non sono supportate quando si profilano applicazioni di Windows 8 Desktop o di Windows Server 2012 usando il metodo di campionamento:  
   
 - Profilatura di interazione tra livelli (TIP). La raccolta di dati TIP è supportata mediante la strumentazione.  
   
 - Opzioni di campionamento, come l'impostazione dell'evento e dell'intervallo di campionamento o la raccolta di dati aggiuntivi del contatore delle prestazioni.  
   
-## <a name="BKMK_Profiling_from_the_command_line"></a> Profilatura dalla riga di comando  
+## <a name="profiling-from-the-command-line"></a><a name="BKMK_Profiling_from_the_command_line"></a> Profilatura dalla riga di comando  
  Per raccogliere dati di profilatura nei dispositivi Windows 8 e Windows Server 2012, inclusi i dispositivi privi di installazione di Visual Studio, si usano due strumenti da riga di comando:  
   
 |Nome dello strumento|Descrizione|  
@@ -102,7 +102,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
 - Scaricare gli strumenti come parte di Remote Tools per Visual Studio dal [sito Web MSDN](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software).  
   
-- Copiare ed eseguire il programma di installazione dei profiler autonomi dal computer con Visual Studio. I programmi di installazione si trovano nella cartella *% VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Scegliere il programma di installazione per il sistema operativo (x86/x64) del computer remoto.  
+- Copiare ed eseguire il programma di installazione dei profiler autonomi dal computer con Visual Studio. I programmi di installazione si trovano nella cartella *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Scegliere il programma di installazione per il sistema operativo (x86/x64) del computer remoto.  
   
 > [!NOTE]
 > Per raccogliere i dati di profilatura TIP, è necessario installare il profiler autonomo dal computer con Visual Studio nel computer remoto.  
@@ -115,7 +115,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
 - Opzioni di campionamento, come l'impostazione dell'evento e dell'intervallo di campionamento o la raccolta di dati aggiuntivi del contatore delle prestazioni.  
   
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Raccolta di dati di interazione tra livelli (TIP)  
+## <a name="collecting-tier-interaction-tip-data"></a><a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Raccolta di dati di interazione tra livelli (TIP)  
  La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui tempi di esecuzione delle funzioni di applicazioni multilivello che comunicano con i database tramite i servizi ADO.NET. I dati vengono raccolti solo per le chiamate di funzione sincrone.  
   
  **Versioni di Visual Studio**  
@@ -132,11 +132,11 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
    **Creazione guidata sessione di prestazioni e Esplora prestazioni**  
   
-   È necessario aggiungere l'opzione di raccolta dati di interazione tra livelli a una profilatura eseguita da Esplora prestazioni. È inoltre necessario aggiungere il progetto, il file eseguibile o il sito Web al nodo di destinazione di Esplora prestazioni. Vedere [Raccolta di dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md).  
+   È necessario aggiungere l'opzione di raccolta dati di interazione tra livelli a una profilatura eseguita da Esplora prestazioni. È inoltre necessario aggiungere il progetto, il file eseguibile o il sito Web al nodo di destinazione di Esplora prestazioni. Vedere [raccolta di dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md).  
   
    **Raccolta di dati TIP in un computer remoto**  
   
-   Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs\_profiler\_** _\<Piattaforma>_ **\_** _\<Linguaggio>_ **.exe** dalla cartella _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download [Remote Tools per Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs \_ \_ Profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download [Remote Tools per Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    È possibile usare [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) per raccogliere i dati di profilatura.  
   

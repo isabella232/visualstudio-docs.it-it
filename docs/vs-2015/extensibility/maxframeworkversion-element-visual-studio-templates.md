@@ -12,19 +12,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194321"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica la versione massima di .NET Framework richiesto dal modello. Determina se il modello viene visualizzato nel **modelli** sezione del **Aggiungi nuovo progetto** della finestra di dialogo in base al valore selezionato nel **versioneFrameworkdidestinazione** finestra di **Aggiungi nuovo progetto** nella finestra di dialogo.  
+Specifica la versione massima del .NET Framework richiesta dal modello. Determina se il modello viene visualizzato nella sezione **modelli** della finestra di dialogo **Aggiungi nuovo progetto** , in base al valore selezionato nella casella **versione Framework di destinazione** della finestra di dialogo **Aggiungi nuovo progetto** .  
   
- \<VSTemplate >  
- \<MaxFrameworkVersion >  
+ \<VSTemplate>  
+ \<MaxFrameworkVersion>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,18 +45,18 @@ Specifica la versione massima di .NET Framework richiesto dal modello. Determina
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello e definisce come viene visualizzato in entrambi i **nuovo progetto** o il **Aggiungi nuovo elemento** nella finestra di dialogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Categorizza il modello e ne definisce la modalità di visualizzazione nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .|  
   
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere il più alto numero di versione di .NET Framework che è consentito dal modello.  
+ Il testo deve essere il numero di versione più alto del .NET Framework consentito dal modello.  
   
-## <a name="remarks"></a>Note  
- `MaxFrameworkVersion` è un elemento facoltativo. L'elemento nel `TemplateData` sezione del file con estensione vstemplate funge da filtro per il **modelli** sezione del **Aggiungi nuovo progetto** nella finestra di dialogo. Solo i modelli con requisiti di .NET Framework minore di `MaxFrameworkVersion` i valori degli elementi verranno visualizzati in base al valore selezionato nel **versione Framework di destinazione** finestra di **Aggiungi nuovo progetto**finestra di dialogo. Il `MaxFrameworkVersion` elemento deve essere omesso solo se necessario, per non causare inavvertitamente modelli venga visualizzata quando vengono usati con le versioni più recenti di .NET Framework.  
+## <a name="remarks"></a>Osservazioni  
+ `MaxFrameworkVersion` è un elemento facoltativo. L'elemento nella `TemplateData` sezione del file con estensione vstemplate funge da filtro per la sezione **modelli** della finestra di dialogo **Aggiungi nuovo progetto** . Verranno visualizzati solo i modelli i cui requisiti .NET Framework sono inferiori ai `MaxFrameworkVersion` valori degli elementi, in base al valore selezionato nella casella **versione Framework di destinazione** della finestra di dialogo **Aggiungi nuovo progetto** . L' `MaxFrameworkVersion` elemento deve essere omesso a meno che non sia necessario, in modo da non causare inavvertitamente la visualizzazione dei modelli quando vengono usati con versioni più recenti del .NET Framework.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati di un controllo standard [!INCLUDE[csprcs](../includes/csprcs-md.md)] modello di classe.  
+ Nell'esempio seguente vengono illustrati i metadati per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] modello di classe standard.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -75,8 +75,8 @@ Specifica la versione massima di .NET Framework richiesto dal modello. Determina
 </VSTemplate>  
 ```  
   
- In questo esempio, la versione massima di .NET Framework richiesto dal modello, rappresentato da `MaxFrameworkVersion`, è 3.5. Il modello precedente verrà visualizzato solo quando si seleziona 3.0 o 3.5 nel **versione Framework di destinazione** nella casella il **Aggiungi nuovo progetto** nella finestra di dialogo.  
+ In questo esempio, la versione massima del .NET Framework richiesta dal modello, rappresentata da `MaxFrameworkVersion` , è 3,5. Il modello precedente verrà visualizzato solo quando si seleziona 3,0 o 3,5 nella casella **versione Framework di destinazione** della finestra di dialogo **Aggiungi nuovo progetto** .  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

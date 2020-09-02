@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cba043d8300d47ae5ffba1c175a19fcfa2e65ed
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330331"
 ---
 # <a name="events-viewer"></a>Visualizzatore eventi
@@ -40,11 +40,11 @@ Per ulteriori informazioni su come rendere più efficiente lo strumento, vedere 
 
 ![Traccia di un Visualizzatore eventi](../profiling/media/eventviewertrace.png "Traccia di un Visualizzatore eventi")
 
-|Nome colonna|Descrizione|
+|Nome della colonna|Descrizione|
 |----------|---------------------|
 |Provider Name|Origine evento|
 |Nome evento|Evento come specificato dal provider|
-|Text|Descrizioni del provider, il nome dell'evento e l'ID dell'evento|
+|Testo|Descrizioni del provider, il nome dell'evento e l'ID dell'evento|
 |Timestamp (MS)|Quando è avvenuto l'evento|
 |GUID del provider|ID del provider di eventi|
 |ID evento|ID dell'evento.|

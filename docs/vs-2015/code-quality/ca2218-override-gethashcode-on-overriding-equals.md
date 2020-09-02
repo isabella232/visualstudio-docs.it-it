@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538801"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Eseguire l'override di GetHashCode all'override di Equals
@@ -36,7 +36,7 @@ ms.locfileid: "85538801"
  Un tipo pubblico esegue l'override <xref:System.Object.Equals%2A?displayProperty=fullName> , ma non esegue l'override <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.Object.GetHashCode%2A>Restituisce un valore, in base all'istanza corrente, adatto per algoritmi di hash e strutture di dati, ad esempio una tabella hash. Due oggetti dello stesso tipo e sono uguali devono restituire lo stesso codice hash per assicurarsi che le istanze dei seguenti tipi funzionino correttamente:
+ <xref:System.Object.GetHashCode%2A> Restituisce un valore, in base all'istanza corrente, adatto per algoritmi di hash e strutture di dati, ad esempio una tabella hash. Due oggetti dello stesso tipo e sono uguali devono restituire lo stesso codice hash per assicurarsi che le istanze dei seguenti tipi funzionino correttamente:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ ms.locfileid: "85538801"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Tipi che implementano<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Tipi che implementano <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, fornire un'implementazione di <xref:System.Object.GetHashCode%2A> . Per una coppia di oggetti dello stesso tipo, è necessario assicurarsi che l'implementazione restituisca lo stesso valore se l'implementazione di <xref:System.Object.Equals%2A> restituisce `true` per la coppia.

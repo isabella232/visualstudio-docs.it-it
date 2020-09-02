@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151194"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Compilare un'applicazione OpenGL ES in Android e iOS
@@ -24,22 +24,22 @@ ms.locfileid: "68151194"
 Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma, è possibile creare soluzioni e progetti di Visual Studio per le app iOS e Android che condividono un codice comune. Questo argomento descrive un modello di soluzione che crea un'app iOS semplice e un'app NativeActivity di Android. Le app hanno un codice C++ in comune che usa OpenGL ES per visualizzare lo stesso cubo rotante animato in tutte le piattaforme. OpenGL ES (OpenGL for Embedded Systems o GLES) è un'API grafica 2D e 3D supportata in molti dispositivi mobili.  
   
  [Requisiti](#req)   
- [Creare un nuovo progetto di applicazione OpenGLES](#Create)   
+ [Creare un nuovo progetto di applicazione OpenGLes](#Create)   
  [Compilare ed eseguire l'app Android](#BuildAndroid)   
  [Compilare ed eseguire l'app iOS](#BuildIOS)   
  [Personalizzare le app](#Customize)  
   
-## <a name="req"></a> Requisiti  
- Prima di creare un'app OpenGL ES per iOS e Android, verificare che tutti i requisiti di sistema siano soddisfatti. È necessario installare l'opzione Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma in Visual Studio 2015. Verificare che gli SDK e gli strumenti di terze parti richiesti siano inclusi nell'installazione e che sia installato Visual Studio Emulator per Android. Per altre informazioni e istruzioni dettagliate, vedere [Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Per compilare e testare l'app iOS, è necessario un computer Mac, configurato in base alle istruzioni di installazione. Per altre informazioni sulla configurazione per lo sviluppo di iOS, vedere [Installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+## <a name="requirements"></a><a name="req"></a> Requisiti  
+ Prima di creare un'app OpenGL ES per iOS e Android, verificare che tutti i requisiti di sistema siano soddisfatti. È necessario installare l'opzione Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma in Visual Studio 2015. Verificare che gli SDK e gli strumenti di terze parti richiesti siano inclusi nell'installazione e che sia installato Visual Studio Emulator per Android. Per ulteriori informazioni e istruzioni dettagliate, vedere [Install Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Per compilare e testare l'app iOS, è necessario un computer Mac, configurato in base alle istruzioni di installazione. Per altre informazioni su come configurare per lo sviluppo di iOS, vedere [installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-## <a name="Create"></a> Creare un nuovo progetto di applicazione OpenGLES  
+## <a name="create-a-new-opengles-application-project"></a><a name="Create"></a> Creare un nuovo progetto di applicazione OpenGLes  
  In questa esercitazione verrà creato un nuovo progetto di applicazione OpenGL ES, quindi verrà compilata ed eseguita l'app predefinita in Visual Studio Emulator per Android. Quindi, l'app per iOS verrà compilata ed eseguita nel simulatore iOS.  
   
 #### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
 1. Aprire Visual Studio. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
-2. Nella finestra di dialogo **Nuovo progetto** in **Modelli**scegliere **Visual C++** , **Multipiattaforma**, quindi scegliere il modello **Applicazione OpenGLES (Android, iOS)** .  
+2. Nella finestra di dialogo **Nuovo progetto** in **Modelli**scegliere **Visual C++**, **Multipiattaforma**, quindi scegliere il modello **Applicazione OpenGLES (Android, iOS)** .  
   
 3. Assegnare all'app un nome come `MyOpenGLESApp`, quindi scegliere **OK**.  
   
@@ -63,20 +63,20 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
 - **MyOpenGLESApp.iOS.Application** contiene le risorse e il codice glue Objective-C per creare un'app iOS che collega il codice della libreria statica C++ in MyOpenGLESApp.iOS.StaticLibrary. Questo progetto crea un pacchetto di compilazione che viene trasferito al Mac da Visual Studio e dall'agente remoto. Quando si compila questo progetto, Visual Studio invia i file e i comandi per compilare e distribuire l'app nel Mac.  
   
-## <a name="BuildAndroid"></a> Compilare ed eseguire l'app Android  
+## <a name="build-and-run-the-android-app"></a><a name="BuildAndroid"></a> Compilare ed eseguire l'app Android  
  La soluzione creata dal modello imposta l'app Android come progetto predefinito.  È possibile compilare ed eseguire l'app per verificare l'installazione e la configurazione. Per un test iniziale, eseguire l'app in uno dei profili del dispositivo installati da Visual Studio Emulator per Android. Se si preferisce testare l'app in un'altra destinazione, è possibile caricare l'emulatore di destinazione o connettere il dispositivo al computer.  
   
 #### <a name="to-build-and-run-the-android-native-activity-app"></a>Per compilare ed eseguire l'app NativeActivity di Android  
   
 1. Se non è ancora selezionato, scegliere **x86** dall'elenco a discesa **Piattaforme soluzione** .  
   
-    ![Impostare la piattaforma soluzione su x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
+    ![Impostare la piattaforma della soluzione su x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
   
-    Usare x86 per fare riferimento ad Android Emulator per Windows. Se la destinazione è un dispositivo, scegliere la piattaforma soluzione basata sul processore del dispositivo. Se l'elenco **Piattaforme soluzione** non è visualizzato, scegliere **Piattaforme soluzione** dall'elenco **Aggiungi o rimuovi pulsanti** , quindi scegliere la piattaforma.  
+    Usare x86 per fare riferimento ad Android Emulator per Windows. Se la destinazione è un dispositivo, scegliere la piattaforma soluzione basata sul processore del dispositivo. Se l'elenco **piattaforme soluzione** non è visualizzato, scegliere **piattaforme soluzione** dall'elenco **Aggiungi/rimuovi pulsanti** , quindi scegliere la piattaforma.  
   
 2. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto MyOpenGLESApp.Android.Packaging, quindi scegliere **Compila**.  
   
-    ![Compilare il progetto di pacchetti Android](../cross-platform/media/cppmdd-opengles-andbuild.png "CPPMDD_OpenGLES_AndBuild")  
+    ![Compilazione del progetto di pacchetti Android](../cross-platform/media/cppmdd-opengles-andbuild.png "CPPMDD_OpenGLES_AndBuild")  
   
     La finestra di output visualizza l'output del processo di compilazione per la libreria condivisa e l'app di Android.  
   
@@ -84,7 +84,7 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
 3. Scegliere uno dei profili di VS Emulator Android Phone (x86) come destinazione della distribuzione.  
   
-    ![Scegliere la destinazione di distribuzione](../cross-platform/media/cppmdd-opengles-pickemulator.png "CPPMDD_OpenGLES_PickEmulator")  
+    ![Selezione della destinazione di distribuzione](../cross-platform/media/cppmdd-opengles-pickemulator.png "CPPMDD_OpenGLES_PickEmulator")  
   
     Se sono installati altri emulatori o è connesso un dispositivo Android, è possibile sceglierli nell'elenco a discesa delle destinazioni della distribuzione. Per eseguire l'app, la piattaforma soluzione compilata deve corrispondere alla piattaforma del dispositivo di destinazione.  
   
@@ -92,7 +92,7 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
     Visual Studio avvia l'emulatore, che richiede alcuni secondi per caricare e distribuire il codice. Ecco come verrà visualizzata l'app in Visual Studio Emulator per Android.  
   
-    ![App in esecuzione nell'emulatore per Android](../cross-platform/media/cppmdd-opengles-andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
+    ![App in esecuzione nell'emulatore Android](../cross-platform/media/cppmdd-opengles-andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
   
     Una volta avviata l'app, è possibile impostare i punti di interruzione e usare il debugger per eseguire il codice un'istruzione alla volta, esaminare le variabili locali e controllare i valori.  
   
@@ -104,8 +104,8 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
    Visual Studio compila i progetti NativeActivity di Android usando Android NDK, che usa Clang come set di strumenti della piattaforma. Visual Studio esegue il mapping delle proprietà del progetto NativeActivity alle opzioni della riga di comando e alle opzioni usate per compilare, collegare ed eseguire il debug nella piattaforma di destinazione. Per dettagli, aprire la finestra di dialogo **Pagine delle proprietà** per il progetto MyOpenGLESApp.Android.NativeActivity. Per altre informazioni sulle opzioni della riga di comando, vedere [Clang Compiler User's Manual](http://clang.llvm.org/docs/UsersManual.html).  
   
-## <a name="BuildIOS"></a> Compilare ed eseguire l'app iOS  
- Il progetto dell'app iOS viene creato e modificato in Visual Studio, ma deve essere compilato e distribuito da un Mac a causa di restrizioni relative alla licenza. Visual Studio comunica con un agente remoto in esecuzione nel Mac per trasferire i file del progetto ed eseguire i comandi di compilazione, distribuzione e debug. Per compilare l'app iOS, è necessario impostare e configurare il Mac e Visual Studio per la comunicazione. Per istruzioni dettagliate, vedere [Installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md) Quando l'agente remoto è in esecuzione e Visual Studio è associato al Mac, è possibile compilare ed eseguire l'app iOS per verificare l'installazione e la configurazione.  
+## <a name="build-and-run-the-ios-app"></a><a name="BuildIOS"></a> Compilare ed eseguire l'app iOS  
+ Il progetto dell'app iOS viene creato e modificato in Visual Studio, ma deve essere compilato e distribuito da un Mac a causa di restrizioni relative alla licenza. Visual Studio comunica con un agente remoto in esecuzione nel Mac per trasferire i file del progetto ed eseguire i comandi di compilazione, distribuzione e debug. Per compilare l'app iOS, è necessario impostare e configurare il Mac e Visual Studio per la comunicazione. Per istruzioni dettagliate, vedere [installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Quando l'agente remoto è in esecuzione e Visual Studio è associato al Mac, è possibile compilare ed eseguire l'app iOS per verificare l'installazione e la configurazione.  
   
 #### <a name="to-build-and-run-the-ios-app"></a>Per compilare ed eseguire l'app iOS  
   
@@ -115,13 +115,13 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
 2. Se non è ancora selezionato, scegliere **x86** dall'elenco a discesa **Piattaforme soluzione** .  
   
-    ![Impostare la piattaforma soluzione su x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
+    ![Impostare la piattaforma della soluzione su x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
   
-    Usare x86 per fare riferimento al simulatore iOS. Se la destinazione è un dispositivo iOS, scegliere la piattaforma soluzione basata sul processore del dispositivo (di solito, un processore ARM). Se l'elenco **Piattaforme soluzione** non è visualizzato, scegliere **Piattaforme soluzione** dall'elenco **Aggiungi o rimuovi pulsanti** , quindi scegliere la piattaforma.  
+    Usare x86 per fare riferimento al simulatore iOS. Se la destinazione è un dispositivo iOS, scegliere la piattaforma soluzione basata sul processore del dispositivo (di solito, un processore ARM). Se l'elenco **piattaforme soluzione** non è visualizzato, scegliere **piattaforme soluzione** dall'elenco **Aggiungi/rimuovi pulsanti** , quindi scegliere la piattaforma.  
   
 3. In Esplora soluzioni aprire il menu di scelta rapida per il progetto MyOpenGLESApp.iOS.Application e scegliere **Compila**.  
   
-    ![Compilare il progetto applicazione iOS](../cross-platform/media/cppmdd-opengles-iosbuild.png "CPPMDD_OpenGLES_iOSBuild")  
+    ![Compilazione di un progetto applicazione iOS](../cross-platform/media/cppmdd-opengles-iosbuild.png "CPPMDD_OpenGLES_iOSBuild")  
   
     La finestra di output visualizza l'output del processo di compilazione per la libreria statica e l'app di iOS. Nel Mac la finestra terminale che esegue l'agente remoto mostra il comando e l'attività di trasferimento dei file.  
   
@@ -129,11 +129,11 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
 4. Scegliere **Simulatore iOS** nella barra degli strumenti per eseguire l'app nel simulatore iOS nel Mac. L'avvio del simulatore potrebbe richiedere qualche istante. Per vedere l'output, potrebbe essere necessario portare il simulatore in primo piano nel Mac.  
   
-    ![App in esecuzione nel simulatore per iOS](../cross-platform/media/cppmdd-opengles-iossimulator.png "CPPMDD_OpenGLES_iOSSimulator")  
+    ![App in esecuzione nel simulatore iOS](../cross-platform/media/cppmdd-opengles-iossimulator.png "CPPMDD_OpenGLES_iOSSimulator")  
   
     Una volta avviata l'app, è possibile impostare i punti di interruzione e usare il debugger di Visual Studio per esaminare le variabili locali, visualizzare lo stack di chiamate e controllare i valori.  
   
-    ![Debugger nel punto di interruzione nell'app iOS](../cross-platform/media/cppmdd-opengles-iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
+    ![Debugger al punto di interruzione nell'app iOS](../cross-platform/media/cppmdd-opengles-iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
   
 5. Premere MAIUSC+F5 per arrestare il debug.  
   
@@ -143,11 +143,11 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
    Visual Studio trasferisce i file del progetto e invia i comandi al client remoto per compilare l'app con Xcode. Il client remoto invia a sua volta le informazioni sullo stato della compilazione a Visual Studio. Dopo aver compilato l'app, è possibile usare Visual Studio per inviare i comandi per l'esecuzione e il debug dell'app. Il debugger in Visual Studio controlla l'app in esecuzione nel simulatore iOS sul Mac o su un dispositivo iOS collegato. Visual Studio esegue il mapping delle proprietà del progetto StaticLibrary alle opzioni della riga di comando e alle opzioni usate per compilare, collegare ed eseguire il debug nella piattaforma iOS di destinazione. Per dettagli sull'opzione della riga di comando del compilatore, aprire la pagina **Pagine delle proprietà** per il progetto MyOpenGLESApp.iOS.StaticLibrary.  
   
-## <a name="Customize"></a> Personalizzare le app  
+## <a name="customize-your-apps"></a><a name="Customize"></a> Personalizzare le app  
  È possibile modificare il codice condiviso C++ per aggiungere o modificare le funzionalità comuni. È necessario modificare le chiamate al codice condiviso nei progetti MyOpenGLESApp.Android.NativeActivity e MyOpenGLESApp.iOS.Application in modo che corrispondano. È possibile usare le macro del preprocessore per specificare le sezioni specifiche per la piattaforma nel codice comune. La macro del preprocessore `__ANDROID__` è predefinita quando viene eseguita la compilazione per Android. La macro del preprocessore `__APPLE__` è predefinita quando viene eseguita la compilazione per iOS.  
   
  Per visualizzare IntelliSense per una specifica piattaforma del progetto, scegliere il progetto nell'elenco a discesa delle funzionalità di commutazione del contesto nella barra Navigazione nella parte superiore della finestra dell'editor.  
   
- ![Elenco a discesa selezione tipo di contesto del progetto nell'editor](../cross-platform/media/cppmdd-opengles-contextswitcher.png "CPPMDD_OpenGLES_ContextSwitcher")  
+ ![Elenco a discesa di selezione del tipo di contesto del progetto nell'editor](../cross-platform/media/cppmdd-opengles-contextswitcher.png "CPPMDD_OpenGLES_ContextSwitcher")  
   
  I problemi di IntelliSense nel progetto corrente vengono contrassegnati con una riga rossa ondulata. I problemi negli altri progetti vengono contrassegnati con una riga viola ondulata. Per impostazione predefinita, Visual Studio non supporta l'applicazione di colori al codice o IntelliSense per i file Java o Objective-C. Tuttavia, è possibile modificare i file di origine e modificare le risorse per impostare il nome dell'applicazione, l'icona e altri dettagli relativi all'implementazione.

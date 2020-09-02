@@ -14,34 +14,34 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0b56ab490342cfbda9c16408aa0937abd80728c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194384"
 ---
 # <a name="managing-vspackages"></a>Gestione dei pacchetti VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nella maggior parte dei casi non è necessario preoccuparsi della gestione dei pacchetti VSPackage, poiché i modelli di progetto ed elemento registrare e caricare automaticamente il pacchetto. Tuttavia, in alcuni casi potrebbe essere necessario apprendere un po' più allo scopo di gestire il pacchetto.  
+Nella maggior parte dei casi non è necessario preoccuparsi della gestione dei pacchetti VSPackage, dal momento che i modelli di progetto e di elemento si registrano e caricano automaticamente il pacchetto. In alcuni casi, tuttavia, potrebbe essere necessario saperne di più per poter gestire il pacchetto.  
   
-## <a name="using-the-experimental-instance"></a>Usare l'istanza sperimentale  
- Per altre informazioni sull'istanza sperimentale, vedere [il processo dell'istanza sperimentale](../extensibility/the-experimental-instance.md).  
+## <a name="using-the-experimental-instance"></a>Utilizzo dell'istanza sperimentale  
+ Per ulteriori informazioni sull'istanza sperimentale, vedere [l'istanza sperimentale](../extensibility/the-experimental-instance.md).  
   
 ## <a name="registering-and-unregistering-vspackages"></a>Registrazione e annullamento della registrazione di pacchetti VSPackage  
- Per sapere come registrare e annullare la registrazione di pacchetti VSPackage e altri tipi di estensione, vedere [la registrazione e annullamento della registrazione dei pacchetti VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
+ Per informazioni su come registrare e annullare la registrazione di pacchetti VSPackage e altri tipi di estensione, vedere [registrazione e annullamento della registrazione di pacchetti VSPackage](../extensibility/registering-and-unregistering-vspackages.md).  
   
-## <a name="loading-a-vspackage"></a>Il caricamento di un pacchetto VSPackage  
- Per caricare automaticamente quando un determinato che GUID CMDUICONTEXT è attivata, è possono impostare i pacchetti VSPackage. Per altre informazioni, vedere [caricamento di VSPackage](../extensibility/loading-vspackages.md).  
+## <a name="loading-a-vspackage"></a>Caricamento di un pacchetto VSPackage  
+ I pacchetti VSPackage possono essere impostati su autoload quando un determinato GUID CMDUICONTEXT è attivato. Per altre informazioni, vedere [caricamento dei pacchetti VSPackage](../extensibility/loading-vspackages.md).  
   
-## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>Usare AsyncPackage per caricare pacchetti VSPackage in Background  
- La classe AsyncPackage consente il caricamento in un thread in background per una migliore velocità di risposta dell'interfaccia utente in Visual Studio di pacchetto. Per altre informazioni, vedere [Procedura: Usare AsyncPackage per caricare pacchetti VSPackage in Background](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
+## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>Uso di AsyncPackage per caricare i pacchetti VSPackage in background  
+ La classe AsyncPackage consente il caricamento di pacchetti in un thread in background per migliorare la velocità di risposta dell'interfaccia utente in Visual Studio. Per altre informazioni, vedere [procedura: usare AsyncPackage per caricare VSPackage in background](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
   
-## <a name="rule-based-ui-context-for-extensions"></a>Contesto dell'interfaccia utente basata su regole per le estensioni  
- Contesti dell'interfaccia utente basata su regole consente agli autori di estensioni definire le condizioni precise in cui viene attivato un contesto dell'interfaccia utente e associati i pacchetti VSPackage caricato. Per altre informazioni, vedere [Procedura: Usare il contesto dell'interfaccia utente basata su regole per le estensioni di Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
+## <a name="rule-based-ui-context-for-extensions"></a>Contesto dell'interfaccia utente basato su regole per le estensioni  
+ I contesti dell'interfaccia utente basati su regole consentono agli autori di estensioni di definire le condizioni esatte in cui un contesto dell'interfaccia utente viene attivato e i pacchetti VSPackage associati caricati. Per altre informazioni, vedere [procedura: usare il contesto dell'interfaccia utente basato su regole per le estensioni di Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
   
 ## <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage  
- Scopri le tecniche per la risoluzione dei problemi relativi a pacchetti VSPackage che non vengono caricati o si verificano errori: [Risoluzione dei problemi relativi ai pacchetti VSPackage](../extensibility/troubleshooting-vspackages.md)  
+ Informazioni sulle tecniche per la risoluzione dei problemi relativi ai pacchetti VSPackage che non vengono caricati o si verificano errori: [risoluzione dei problemi dei pacchetti VSPackage](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Pacchetti VSPackage](../extensibility/internals/vspackages.md)
+ [VSPackages](../extensibility/internals/vspackages.md)

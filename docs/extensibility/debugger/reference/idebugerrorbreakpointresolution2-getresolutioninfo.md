@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetResolutionInfo . Documenti Microsoft
+title: 'IDebugErrorBreakpointResolution2:: GetResolutionInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d242dcfac7a9c846793a8dcc9cd6684923192a80
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730029"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
@@ -43,7 +43,7 @@ int GetResolutionInfo( 
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag dell'enumerazione [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) `pErrorResolutionInfo` che determinano i campi di da compilare.
+in Combinazione di flag dell'enumerazione [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) che determinano i campi da `pErrorResolutionInfo` compilare.
 
 `pErrorResolutionInfo`\
 [in, out] Struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) compilata con la descrizione della risoluzione del punto di interruzione.
@@ -52,7 +52,7 @@ int GetResolutionInfo( 
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-L'esempio seguente implementa questo `CDebugErrorBreakpointResolution` metodo per un oggetto semplice che espone il [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) interfaccia.
+Nell'esempio seguente viene implementato questo metodo per un `CDebugErrorBreakpointResolution` oggetto semplice che espone l'interfaccia [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) .
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(

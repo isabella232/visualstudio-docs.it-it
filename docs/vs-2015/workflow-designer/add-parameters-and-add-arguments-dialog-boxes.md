@@ -12,10 +12,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 975fb1604273f4cda80b9f4ebd098a229d8c52c2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547953"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Aggiungere parametri e argomenti alle finestre di dialogo
@@ -31,7 +31,7 @@ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente de
 
 |Nome|Descrizione|
 |-|-|
-|**Nome**|Il nome dell’argomento.|
+|**Name**|Il nome dell’argomento.|
 |**Direzione**|Specifica se l'argomento rappresenta il flusso di dati nel delegato e/o al di fuori del delegato.|
 |**Tipo**|Nome tipo del nuovo argomento.|
 |**Valore**|Il valore da usare per questa istanza di un argomento del delegato.|

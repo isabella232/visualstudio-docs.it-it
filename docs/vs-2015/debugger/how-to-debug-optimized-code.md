@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Debug di codice ottimizzato | Microsoft Docs'
+title: 'Procedura: eseguire il debug di codice ottimizzato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,17 +24,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675619"
 ---
-# <a name="how-to-debug-optimized-code"></a>Procedura: Eseguire il debug di codice ottimizzato
+# <a name="how-to-debug-optimized-code"></a>Procedura: eseguire il debug di codice ottimizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
 > L'opzione del compilatore [/Zo (Ottimizzare il debug)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introdotta in Visual Studio Update 3) genera informazioni più complete sul debug per il codice ottimizzato (progetti non compilati con l'opzione del compilatore **/Od**). Vedere [Opzioni /O (Ottimizza codice)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d). Questo include un supporto migliorato per il debug delle variabili locali e delle funzioni inline.  
@@ -65,7 +65,7 @@ NOTA]
   
 2. Selezionare il progetto in Esplora soluzioni.  
   
-3. Scegliere **Pagine delle proprietà** dal menu **Visualizza**.  
+3. Nel menu **Visualizza** fare clic su **Pagine delle proprietà**.  
   
 4. Nella finestra di dialogo **Pagine delle proprietà** verificare che sia selezionata la voce `Debug` nell'elenco a discesa **Configurazione**.  
   
@@ -73,11 +73,11 @@ NOTA]
   
 6. Nella cartella **C++** selezionare `Optimization`.  
   
-7. Nell'elenco di proprietà situato a destra cercare `Optimization`. L'impostazione accanto a tale opzione sarà probabilmente `Disabled (`[/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Scegliere una delle altre opzioni (`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` o `Custom`).  
+7. Nell'elenco di proprietà situato a destra cercare `Optimization`. L'impostazione accanto a essa probabilmente indica `Disabled (` [/od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5) `)` . Scegliere una delle altre opzioni ( `Minimum Size``(` [/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2) `)` , `Maximum Speed``(` [/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2) `)` , `Full Optimization``(` [/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)` o `Custom` ).  
   
 8. Se si è scelto l'opzione `Custom` per `Optimization`, a questo punto è possibile impostare le opzioni per le altre proprietà presenti nell'elenco.  
   
-9. Selezionare le proprietà di configurazione, C/C++, il nodo della riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` per il **opzioni aggiuntive** casella di testo.  
+9. Selezionare il nodo Proprietà di configurazione, C/C++, riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` alla casella di testo **Opzioni aggiuntive** .  
   
     > [!WARNING]
     > `/Zo` richiede Visual Studio 2013 Update 3 o una versione successiva.  

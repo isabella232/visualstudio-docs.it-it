@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e7de0b3985e09f61fd0c63d1764304b150503883
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657923"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debug o disabilitazione del codice del progetto nella finestra di progettazione XAML
@@ -33,7 +33,7 @@ In molti casi, le eccezioni non gestite nella finestra di progettazione XAML pos
 
   Quando il codice del progetto è disabilitato, Visual Studio visualizza segnaposto, ad esempio il nome della proprietà per un'associazione in cui i dati non sono più disponibili o un segnaposto per un controllo che non è più in esecuzione.
 
-  ![Finestra di dialogo eccezione non gestita](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")
+  ![Finestra di dialogo Eccezione non gestita](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")
 
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Per determinare se il codice del progetto sta causando un'eccezione
 
@@ -73,9 +73,9 @@ In molti casi, le eccezioni non gestite nella finestra di progettazione XAML pos
 
 - Nella finestra di dialogo dell'eccezione non gestita fare clic sul collegamento **Fare clic qui per consentire l'esecuzione del codice del progetto e ricaricare la finestra di progettazione** .
 
-- In alternativa, sulla barra degli strumenti nella finestra di progettazione XAML fare clic sul pulsante **Disabilita il codice del progetto** .
+- In alternativa, nella barra degli strumenti della finestra di progettazione XAML scegliere il pulsante **Disabilita codice progetto** .
 
-     ![Pulsante Disabilita codice progetto](../designers/media/xaml-disablecode.png "XAML_DisableCode")
+     ![Pulsante Disabilita il codice del progetto](../designers/media/xaml-disablecode.png "XAML_DisableCode")
 
      È possibile attivare di nuovo il pulsante per riabilitare il codice del progetto.
 

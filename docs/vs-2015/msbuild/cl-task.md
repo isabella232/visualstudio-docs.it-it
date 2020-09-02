@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698632"
 ---
 # <a name="cl-task"></a>Attività CL
@@ -49,7 +49,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Parametro String facoltativo.  
   
-   Elenco di opzioni della riga di comando. Ad esempio, "/*option1* /*option2* /*option#*". Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività.  
+   Elenco di opzioni della riga di comando. Ad esempio, "/*opzione1*  / *opzione2*  / *Option #*". Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività.  
   
    Per altre informazioni, vedere [Opzioni del compilatore](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
@@ -79,15 +79,15 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NoListing** - *\<none>*  
+  - **Nolisting** - *\<none>*  
   
-  - **AssemblyCode** - **/FA**  
+  - **AssemblyCode**  -  **/Fa**  
   
-  - **AssemblyAndMachineCode** - **/FAc**  
+  - **AssemblyAndMachineCode**  -  **/Fac**  
   
-  - **AssemblyAndSourceCode** - **/FAs**  
+  - **AssemblyAndSourceCode**  -  **/FAS**  
   
-  - **All** - **/FAcs**  
+  - **Tutto**  -  **/FACS**  
   
     Per altre informazioni, vedere le opzioni **/FA**, **/FAc**, **/FAs** e **/FAcs** in [/FA, /Fa (File di listato)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
@@ -99,13 +99,13 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Default** -                          *\<none>*  
+  - **Predefinita** -                          *\<none>*  
   
-  - **StackFrameRuntimeCheck** - **/RTCs**  
+  - **StackFrameRuntimeCheck**  -  **/RTCs**  
   
-  - **UninitializedLocalUsageCheck** - **/RTCu**  
+  - **UninitializedLocalUsageCheck**  -  **/RTCu**  
   
-  - **EnableFastChecks** -                          **/RTC1**  
+  - **EnableFastChecks**  -                           **/RTC1**  
   
     Per altre informazioni, vedere [/RTC (Controlli di runtime)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
@@ -131,7 +131,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Se `true`, rileva alcuni sovraccarichi del buffer che sovrascrivono l'indirizzo del mittente, una tecnica comune per sfruttare il codice che non applica restrizioni per le dimensioni del buffer.  
   
-   Per altre informazioni, vedere [/GS (Controllo sicurezza buffer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
+   Per altre informazioni, vedere [/GS (controllo sicurezza buffer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
   
 - **BuildingInIDE**  
   
@@ -147,11 +147,11 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Cdecl** - **/Gd**  
+  - **Cdecl**  -  **/GD**  
   
-  - **FastCall** -                          **/Gr**  
+  - **Fastcall**  -                           **/Gr**  
   
-  - **StdCall** -                          **/Gz**  
+  - **Stdcall**  -                           **/GZ**  
   
     Per altre informazioni, vedere [/Gd, /Gr, /Gv, /Gz (Convenzioni di chiamata)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
   
@@ -163,11 +163,11 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Default** - *\<none>*  
+  - **Predefinita** - *\<none>*  
   
-  - **CompileAsC** - **/TC**  
+  - **CompileAsC**  -  **/TC**  
   
-  - **CompileAsCpp** - **/TP**  
+  - **CompileAsCpp**  -  **/TP**  
   
     Per altre informazioni, vedere [/Tc, /Tp, /TC, /TP (Specifica il tipo di file di origine)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
   
@@ -181,17 +181,17 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
   - **false** - *\<none>*  
   
-  - **true** - **/clr**  
+  - valore **true**  -  **/CLR**  
   
-  - **Pure** - **/clr:pure**  
+  - **Pure**  -  **/CLR: pure**  
   
-  - **Safe** - **/clr:safe**  
+  - **Sicurezza**  -  **/CLR: safe**  
   
-  - **OldSyntax** - **/clr:oldSyntax**  
+  - **OldSyntax**  -  **/CLR: oldSyntax**  
   
-    Per altre informazioni, vedere [/clr (Compilazione Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+    Per altre informazioni, vedere [/CLR (compilazione Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
-- **CreateHotPatchableImage**  
+- **CreateHotpatchableImage**  
   
    Parametro booleano facoltativo.  
   
@@ -207,11 +207,11 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **OldStyle** - **/Z7**  
+  - **Oldstyle**  -  **/Z7**  
   
-  - **ProgramDatabase** - **/Zi**  
+  - **ProgramDatabase**  -  **/Zi**  
   
-  - **EditAndContinue** - **/ZI**  
+  - **EDITANDCONTINUE**  -  **/Zi**  
   
     Per altre informazioni, vedere [/Z7, /Zd, /Zi, /ZI (Formato informazioni di debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
   
@@ -239,9 +239,9 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **StreamingSIMDExtensions** - **/arch:SSE**  
+  - **StreamingSIMDExtensions**  -  **/Arch: SSE**  
   
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**  
+  - **StreamingSIMDExtensions2**  -  **/Arch: SSE2**  
   
     Per altre informazioni, vedere [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
@@ -261,7 +261,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Per altre informazioni, vedere [/analyze (Analisi codice)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
   
-- **ErrorReporting**  
+- **Errorreporting-**  
   
    Parametro String facoltativo.  
   
@@ -269,13 +269,13 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **None** - **/errorReport:none**  
+  - **Nessuna**  -  **/errorreport: nessuna**  
   
-  - **Prompt** - **/errorReport:prompt**  
+  - **Messaggio di richiesta**  -  **/errorreport: prompt**  
   
-  - **Queue** - **/errorReport:queue**  
+  - **Coda**  -  di **/errorreport: Queue**  
   
-  - **Send** - **/errorReport:send**  
+  - **Invia**  -  **/errorreport: Send**  
   
     Per altre informazioni, vedere [/errorReport (Segnala gli errori interni del compilatore)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
@@ -289,11 +289,11 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
   - **false** - *\<none>*  
   
-  - **Async** - **/EHa**  
+  - **Asincrono**  -  **/EHA**  
   
-  - **Sync** - **/EHsc**  
+  - **Sincronizza**  -  **/EHsc**  
   
-  - **SyncCThrow** - **/EHs**  
+  - **SyncCThrow**  -  **/EHS**  
   
     Per altre informazioni, vedere [/EH (Modello di gestione delle eccezioni)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
   
@@ -313,11 +313,11 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Neither** - *\<none>*  
+  - **Né** - *\<none>*  
   
-  - **Size** - **/Os**  
+  - **Dimensioni**  -  **/OS**  
   
-  - **Speed** - **/Ot**  
+  - **Velocità**  -  **/OT**  
   
     Per altre informazioni, vedere [/Os, /Ot (Ottimizza per dimensione codice, Ottimizza per velocità codice)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
   
@@ -337,11 +337,11 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Precise** - **/fp:precise**  
+  - **Precisione**  -  **/FP: precisa**  
   
-  - **Strict** - **/fp:strict**  
+  - **Strict**  -  **/FP: Strict**  
   
-  - **Fast** - **/fp:fast**  
+  - **Veloce**  -  **/FP: Fast**  
   
     Per altre informazioni, vedere [/fp (Specifica il comportamento della virgola mobile)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
@@ -363,7 +363,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
 - **ForcedUsingFiles**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Determina l'elaborazione di uno o più file **#using** specificati da parte del preprocessore.  
   
@@ -395,19 +395,19 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
 - **InlineFunctionExpansion**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica il livello di espansione della funzione inline per la compilazione.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Default** - *\<none>*  
+  - **Predefinita** - *\<none>*  
   
-  - **Disabled** - **/Ob0**  
+  - **Disabilitato**  -  **/Ob0**  
   
-  - **OnlyExplicitInline** - **/Ob1**  
+  - **OnlyExplicitInline**  -  **/OB1**  
   
-  - **AnySuitable** - **/Ob2**  
+  - **AnySuitable**  -  **/Ob2**  
   
     Per altre informazioni, vedere [/Ob (Espansione funzioni inline)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
@@ -437,15 +437,15 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
 - **ObjectFileName**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica un nome file oggetto (OBJ) o una directory da usare al posto dell'impostazione predefinita.  
   
-   Per altre informazioni, vedere [/Fo (Nome file oggetto)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
+   Per ulteriori informazioni, vedere [/FO (nome file oggetto)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
   
 - **ObjectFiles**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Elenco di file oggetto.  
   
@@ -473,43 +473,43 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Per altre informazioni, vedere [/openmp (Attiva supporto OpenMP 2.0)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
   
-- **Optimization**  
+- **Ottimizzazione**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica diverse ottimizzazioni del codice per velocità e dimensioni.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Disabled** - **/Od**  
+  - **Disabilitato**  -  **/Od**  
   
-  - **MinSpace** - **/O1**  
+  - **MinSpace**  -  **/O1**  
   
-  - **MaxSpeed** - **/O2**  
+  - **Maxspeed**  -  **/O2**  
   
-  - **Full** - **/Ox**  
+  - **Completo**  -  **/Ox**  
   
-    Per altre informazioni, vedere [Opzioni /O (Ottimizza codice)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
+    Per ulteriori informazioni, vedere [Opzioni/o (Ottimizza codice)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
   
 - **PrecompiledHeader**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Creare o usare un file di intestazione precompilata (PCH) durante la compilazione.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NotUsing** - *\<none>*  
+  - **Non utilizzare** - *\<none>*  
   
-  - **Create** - **/Yc**  
+  - **Crea**  -  **/YC**  
   
-  - **Use** - **/Yu**  
+  - **USA**  -  **/Yu**  
   
     Per altre informazioni, vedere [/Yc (Crea il file di intestazione precompilata)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) e [/Yu (Usa il file di intestazione precompilata)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Vedere anche i parametri **PrecompiledHeaderFile** e **PrecompiledHeaderOutputFile** in questa tabella.  
   
 - **PrecompiledHeaderFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica un nome di file di intestazione precompilata da creare o usare.  
   
@@ -517,7 +517,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
 - **PrecompiledHeaderOutputFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica un nome di percorso per un'intestazione precompilata anziché usare il nome di percorso predefinito.  
   
@@ -537,7 +537,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Definisce un simbolo di pre-elaborazione per il file di origine.  
   
-   Per altre informazioni, vedere [/D (definizioni preprocessore)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
+   Per altre informazioni, vedere [/D (Preprocessor Definitions)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
   
 - **PreprocessOutput**  
   
@@ -591,13 +591,13 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **MultiThreaded** - **/MT**  
+  - **Multithreading**  -  **/Mt**  
   
-  - **MultiThreadedDebug** - **/MTd**  
+  - **MultiThreadedDebug**  -  **/MTD**  
   
-  - **MultiThreadedDLL** - **/MD**  
+  - **MultiThreadedDLL**  -  **/MD**  
   
-  - **MultiThreadedDebugDLL** - **/MDd**  
+  - **MultiThreadedDebugDLL**  -  **/MDD**  
   
     Per altre informazioni, vedere [/MD, /MT, /LD (utilizzo della libreria di runtime)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
   
@@ -625,7 +625,7 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Per altre informazioni, vedere l'opzione **/RTCc** in [/RTC (Controlli di runtime)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
-- **Sources**  
+- **recenti**  
   
    Parametro `ITaskItem[]` obbligatorio.  
   
@@ -647,17 +647,17 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Default** - **/Zp1**  
+  - **Impostazione predefinita**  -  **/Zp1**  
   
-  - **1Byte** - **/Zp1**  
+  - **1Byte**  -  **/Zp1**  
   
-  - **2Bytes** - **/Zp2**  
+  - **2Bytes**  -  **/Zp2**  
   
-  - **4Bytes** - **/Zp4**  
+  - **4Bytes**  -  **/Zp4**  
   
-  - **8Bytes** - **/Zp8**  
+  - **8Bytes**  -  **/ZP8**  
   
-  - **16Bytes** - **/Zp16**  
+  - **16bytes**  -  **/Zp16**  
   
     Per altre informazioni, vedere [/Zp (Allineamento membri struct)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
   
@@ -679,11 +679,11 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
 - **TreatSpecificWarningsAsErrors**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Considera l'elenco specificato di avvisi del compilatore come errori.  
   
-   Per altre informazioni, vedere l'opzione **/we**`n` in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Livello di avviso)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Per ulteriori informazioni, vedere l' **/we** `n` opzione/we in [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD.,/we,/wo,/WV,/WX (livello di avviso)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWarningAsError**  
   
@@ -741,17 +741,17 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **TurnOffAllWarnings** - **/W0**  
+  - **TurnOffAllWarnings**  -  **/W0**  
   
-  - **Level1** - **/W1**  
+  - **Level1**  -  **/W1**  
   
-  - **Level2** - **/W2**  
+  - **Level2**  -  **/W2**  
   
-  - **Level3** - **/W3**  
+  - **Level3**  -  **/W3**  
   
-  - **Level4** - **/W4**  
+  - **Level4**  -  **/W4**  
   
-  - **EnableAllWarnings** - **/Wall**  
+  - **EnableAllWarnings**  -  **/Wall**  
   
     Per altre informazioni, vedere l'opzione **/W**_n_ in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Livello di avviso)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
@@ -804,4 +804,4 @@ Esegue il wrapping dello strumento del compilatore Visual C++, cl.exe. Il compil
 ## <a name="remarks"></a>Osservazioni  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

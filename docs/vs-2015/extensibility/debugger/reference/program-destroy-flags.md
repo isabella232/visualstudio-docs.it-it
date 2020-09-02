@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 16933eb409f55be209d54c26d0c077ed96f53cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205002"
 ---
-# <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
+# <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Enumera validi i valori del programma di eliminare definitivamente i flag.  
+Enumera i valori validi del programma Distruggi flag.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,15 +41,15 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>Termini  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- Eliminare definitivamente programma, ma continuare a eseguire il debug.  
+ Elimina il programma, ma continua a eseguire il debug.  
   
-## <a name="remarks"></a>Note  
- L'enumerazione viene restituita per le [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ L'enumerazione viene restituita dal metodo [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

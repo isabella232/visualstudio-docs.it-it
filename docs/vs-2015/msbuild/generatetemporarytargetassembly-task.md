@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ce412fdeb8d466708f3231cba14718d13720c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65676635"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Attività GenerateTemporaryTargetAssembly
@@ -33,16 +33,16 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`AssemblyName`|Parametro **String** obbligatorio.<br /><br /> Specifica il nome breve dell'assembly generato per un progetto ed è anche il nome dell'assembly di destinazione generato temporaneamente. Se, ad esempio, un progetto genera un eseguibile [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] il cui nome è **WinExeAssembly.exe**, il parametro **AssemblyName** presenterà il valore **WinExeAssembly**.|  
 |`CompileTargetName`|Parametro **String** obbligatorio.<br /><br /> Specifica il nome della destinazione [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] usata per generare assembly dai file di codice sorgente. Il valore tipico per **CompileTargetName** è **CoreCompile**.|  
 |`CompileTypeName`|Parametro **String** obbligatorio.<br /><br /> Specifica il tipo di compilazione eseguito dalla destinazione specificata dal parametro **CompileTargetName**. Per la destinazione **CoreCompile** questo valore è **Compile**.|  
 |`CurrentProject`|Parametro **String** obbligatorio.<br /><br /> Specifica il percorso completo del file di progetto [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] per il progetto che richiede un assembly di destinazione temporaneo.|  
-|`GeneratedCodeFiles`|Parametro **ITaskItem[]** facoltativo.<br /><br /> Specifica l'elenco di file di codice gestito specifici del linguaggio generati dall'attività [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
+|`GeneratedCodeFiles`|Parametro **ITaskItem []** facoltativo.<br /><br /> Specifica l'elenco di file di codice gestito specifici del linguaggio generati dall'attività [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
 |`IntermediateOutputPath`|Parametro **String** obbligatorio.<br /><br /> Specifica la directory in cui viene generato l'assembly di destinazione temporaneo.|  
 |`MSBuildBinPath`|Parametro **String** obbligatorio.<br /><br /> Specifica il percorso di **MSBuild.exe**, necessario per compilare l'assembly di destinazione temporaneo.|  
-|`ReferencePath`|Parametro **ITaskItem[]** facoltativo.<br /><br /> Specifica un elenco di assembly, per percorso e nome file, a cui fanno riferimento i tipi compilati nell'assembly di destinazione temporaneo.|  
+|`ReferencePath`|Parametro **ITaskItem []** facoltativo.<br /><br /> Specifica un elenco di assembly, per percorso e nome file, a cui fanno riferimento i tipi compilati nell'assembly di destinazione temporaneo.|  
 |`ReferencePathTypeName`|Parametro **String** obbligatorio.<br /><br /> Specifica il parametro usato dal parametro di destinazione della compilazione (**CompileTargetName**), che specifica l'elenco di riferimenti ad assembly (**ReferencePath**). Il valore appropriato è **ReferencePath**.|  
   
 ## <a name="remarks"></a>Osservazioni  
@@ -74,9 +74,9 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)   
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimenti a MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Riferimento attività](../msbuild/wpf-msbuild-task-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)   
  [Compilazione di un'applicazione WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Panoramica delle applicazioni browser XAML di WPF](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

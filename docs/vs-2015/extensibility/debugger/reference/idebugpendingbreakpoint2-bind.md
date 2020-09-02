@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: bind | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 33cdcad38e2f46962120dcd63c1be21675060be0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194530"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Associa il punto di interruzione in sospeso a uno o più percorsi di codice.  
+Associa questo punto di interruzione in sospeso a una o più posizioni di codice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,12 +38,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stata eliminata.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.  
   
-## <a name="remarks"></a>Note  
- Quando viene chiamato questo metodo, un motore di debug (DE) tentare di associare tutte le posizioni di codice che corrispondono a questo punto di interruzione in sospeso.  
+## <a name="remarks"></a>Osservazioni  
+ Quando viene chiamato questo metodo, un motore di debug (DE) deve tentare di associare questo punto di interruzione in sospeso a tutte le posizioni del codice corrispondenti.  
   
- Quando questo metodo termina, il chiamante deve attendere gli eventi che indicano che il punto di interruzione in sospeso è stato associato o è in errore prima di supporre che le chiamate al [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)nei metodi enumererà tutte limite o errore dei punti di interruzione, rispettivamente.  
+ Dopo la restituzione di questo metodo, il chiamante deve attendere gli eventi che indicano che il punto di interruzione in sospeso è associato o è in errore prima di presumere che le chiamate a [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md). methods enumerano rispettivamente tutti i punti di interruzione associati o Error.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

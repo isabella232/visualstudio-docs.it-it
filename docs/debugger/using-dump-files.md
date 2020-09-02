@@ -23,15 +23,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386953"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Dump di file nel debugger di Visual Studio
 
-<a name="BKMK_What_is_a_dump_file_"></a>Un *file dump* è uno snapshot che mostra il processo che era in esecuzione e i moduli caricati per un'app in un determinato momento. Un dump con informazioni sull'heap include anche uno snapshot della memoria dell'app in quel momento.
+<a name="BKMK_What_is_a_dump_file_"></a> Un *file dump* è uno snapshot che mostra il processo che era in esecuzione e i moduli caricati per un'app in un determinato momento. Un dump con informazioni sull'heap include anche uno snapshot della memoria dell'app in quel momento.
 
 L'apertura di un file dump con un heap in Visual Studio è simile all'arresto in corrispondenza di un punto di interruzione in una sessione di debug. Sebbene non sia possibile continuare l'esecuzione, è possibile esaminare gli stack, i thread e i valori delle variabili dell'app al momento del dump.
 
@@ -90,7 +90,7 @@ Quando è abilitato il [debug](../debugger/just-in-time-debugging-in-visual-stud
    - Per impostare i percorsi di caricamento dei simboli, selezionare **Imposta percorsi simboli**.
    - Per avviare il debug, selezionare **debug con solo gestito**, **Esegui il debug con solo nativo**, **Esegui il debug con misto**oppure Esegui il debug **con la memoria gestita**.
 
-## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Trovare file con estensione exe, PDB e di origine
+## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Trovare file con estensione exe, PDB e di origine
 
 Per usare le funzionalità di debug complete in un file dump, è necessario disporre di Visual Studio:
 

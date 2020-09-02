@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65531889"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generare un decostruttore in Visual Studio
@@ -22,11 +22,11 @@ Questa generazione di codice si applica a:
 
 - C#
 
-**Cosa:** Consente di generare immediatamente lo stub del metodo per un nuovo decostruttore.
+**Cosa:** Consente di generare immediatamente lo stub del metodo per un nuovo costruttore.
 
-**Quando:** Si desidera decostruire correttamente il tipo automaticamente.
+**Quando:** Si vuole decostruire correttamente il tipo automaticamente.
 
-**Perché:** È possibile digitare manualmente un decostruttore, ma questa funzionalità genera automaticamente lo stub con i parametri out corretti.
+**Motivo:** È possibile digitare manualmente un decostruttore, ma questa funzionalità genera automaticamente lo stub con i parametri out corretti.
 
 ## <a name="generate-a-deconstructor"></a>Generare un decostruttore
 
@@ -50,6 +50,6 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generazione del codice](../code-generation-in-visual-studio.md)
-- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
-- [Suggerimenti per gli sviluppatori .NETTips for .NET developers](../csharp-developer-productivity.md)
+- [Generazione codice](../code-generation-in-visual-studio.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)
+- [Suggerimenti per gli sviluppatori .NET](../csharp-developer-productivity.md)

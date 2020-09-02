@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39669e2c1268c2e5d2a294f5b95c314500ead78a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205090"
 ---
-# <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
+# <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica i flag di stato punto di interruzione in sospeso.  
+Specifica i flag di stato del punto di interruzione in sospeso.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,20 +41,20 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  PBPSF_NONE  
  Segnaposto.  
   
  PBPSF_VIRTUALIZED  
- Specifica un virtualizzato in sospeso punto di interruzione, che deve essere associato ogni volta che viene caricato di nuovo codice.  
+ Specifica un punto di interruzione virtualizzato in sospeso, che deve essere associato ogni volta che viene caricato un nuovo codice.  
   
-## <a name="remarks"></a>Note  
- Utilizzato per il `flags` membro della [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura.  
+## <a name="remarks"></a>Osservazioni  
+ Utilizzato per il `flags` membro della struttura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

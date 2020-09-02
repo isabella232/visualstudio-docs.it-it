@@ -1,5 +1,5 @@
 ---
-title: AsyncVoidMethodBuilder.m_objectIdForDebugger Campo Documenti Microsoft
+title: Campo AsyncVoidMethodBuilder. m_objectIdForDebugger | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 10d63a92e2648c269c51faddc9521323c76116b1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739320"
 ---
-# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger
-Rappresenta l'oggetto inizializzato in modo lato utilizzato dal debugger per identificare in modo univoco questo generatore.
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder. m_objectIdForDebugger campo
+Rappresenta l'oggetto inizializzato in modo differito utilizzato dal debugger per identificare in modo univoco il generatore.
 
- **Spazio dei nomi:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Spazio dei nomi:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
  **Assembly:** mscorlib (in mscorlib.dll)
 
- Poiché non è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente è disponibile in Common Intermediate Language (CIL).
+ Poiché non è possibile accedere a questo membro interno dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,4 +34,4 @@ Rappresenta l'oggetto inizializzato in modo lato utilizzato dal debugger per ide
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [Elementi interni delle estensioni parallele per .NET FrameworkParallel extension internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Interni di estensioni parallele per la .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

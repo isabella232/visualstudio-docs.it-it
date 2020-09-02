@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::ParseText . Documenti Microsoft
+title: IDebugExpressionContext2::P arseText | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a8494c9c90c4cb6e94115c542a25e12e948f7064
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729656"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
@@ -51,33 +51,33 @@ int ParseText(
 
 ## <a name="parameters"></a>Parametri
 `pszCode`\
-[in] Espressione da analizzare.
+in Espressione da analizzare.
 
 `dwFlags`\
-[in] Combinazione di flag dell'enumerazione [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) che controlla l'analisi.
+in Combinazione di flag dell'enumerazione [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) che controlla l'analisi.
 
 `nRadix`\
-[in] La radice da utilizzare nell'analisi di qualsiasi `pszCode`informazione numerica in .
+in La radice da utilizzare per l'analisi di qualsiasi informazione numerica in `pszCode` .
 
 `ppExpr`\
-[fuori] Restituisce l'oggetto [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) che rappresenta l'espressione analizzata, pronta per l'associazione e la valutazione.
+out Restituisce l'oggetto [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) che rappresenta l'espressione analizzata, pronta per l'associazione e la valutazione.
 
 `pbstrError`\
-[fuori] Restituisce il messaggio di errore se l'espressione contiene un errore.
+out Restituisce il messaggio di errore se l'espressione contiene un errore.
 
 `pichError`\
-[fuori] Restituisce l'indice dei `pszCode` caratteri dell'errore in se l'espressione contiene un errore.
+out Restituisce l'indice dei caratteri dell'errore in `pszCode` se l'espressione contiene un errore.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
-Quando questo metodo viene chiamato, un motore di debug (DE) deve analizzare l'espressione e convalidarla per la correttezza. I `pbstrError` `pichError` parametri e possono essere compilati se l'espressione non è valida.
+Quando viene chiamato questo metodo, un motore di debug (DE) deve analizzare l'espressione e convalidarla per verificarne la correttezza. `pbstrError` `pichError` Se l'espressione non è valida, è possibile compilare i parametri e.
 
-Si noti che l'espressione non viene valutata, ma solo analizzata. Una chiamata successiva ai metodi [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) valuta l'espressione analizzata.
+Si noti che l'espressione non viene valutata, solo analizzata. Una chiamata successiva ai metodi [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) valuta l'espressione analizzata.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come `CEnvBlock` implementare questo metodo per un oggetto semplice che espone il [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaccia. In questo esempio l'espressione viene analizzata come nome di una variabile di ambiente e il valore viene recuperato da tale variabile.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un `CEnvBlock` oggetto semplice che espone l'interfaccia [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Questo esempio considera l'espressione da analizzare come nome di una variabile di ambiente e recupera il valore da tale variabile.
 
 ```cpp
 HRESULT CEnvBlock::ParseText(

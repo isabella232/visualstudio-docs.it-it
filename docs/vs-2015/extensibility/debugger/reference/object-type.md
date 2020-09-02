@@ -13,13 +13,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc23045fa70554133eba3a7f1326681bf31ea379
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205148"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
+# <a name="object_type"></a>Object_Type
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Specifica il tipo di un oggetto dall'analizzatore di espressioni.  
@@ -67,7 +67,7 @@ public enum enum_OBJECT_TYPE { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  OBJECT_TYPE_BOOLEAN  
  Indica che l'oggetto è un valore booleano.  
   
@@ -75,28 +75,28 @@ public enum enum_OBJECT_TYPE { 
  Indica che l'oggetto è un carattere.  
   
  OBJECT_TYPE_I1  
- Indica che l'oggetto è un intero con segno a 1 byte.  
+ Indica che l'oggetto è un intero con segno a un byte.  
   
  OBJECT_TYPE_U1  
- Indica che l'oggetto è un intero senza segno a 1 byte.  
+ Indica che l'oggetto è una Unsigned Integer a un byte.  
   
  OBJECT_TYPE_I2  
- Indica che l'oggetto è un intero con segno a due byte.  
+ Indica che l'oggetto è un intero con segno a 2 byte.  
   
  OBJECT_TYPE_U2  
- Indica che l'oggetto è un intero senza segno a due byte.  
+ Indica che l'oggetto è una Unsigned Integer a due byte.  
   
  OBJECT_TYPE_I4  
- Indica che l'oggetto è un intero con segno a quattro byte.  
+ Indica che l'oggetto è un intero con segno a 4 byte.  
   
  OBJECT_TYPE_U4  
- Indica che l'oggetto è un intero senza segno a quattro byte.  
+ Indica che l'oggetto è un Unsigned Integer a quattro byte.  
   
  OBJECT_TYPE_I8  
- Indica che l'oggetto è un intero con segno a 8 byte.  
+ Indica che l'oggetto è un intero con segno a otto byte.  
   
  OBJECT_TYPE_U8  
- Indica che l'oggetto è un intero senza segno a 8 byte.  
+ Indica che l'oggetto è un Unsigned Integer a otto byte.  
   
  OBJECT_TYPE_R4  
  Indica che l'oggetto è un numero a virgola mobile a quattro byte.  
@@ -113,13 +113,13 @@ public enum enum_OBJECT_TYPE { 
  OBJECT_TYPE_CLASS  
  Indica che l'oggetto è una classe.  
   
-## <a name="remarks"></a>Note  
- Passato come argomento per il [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metodi.  
+## <a name="remarks"></a>Osservazioni  
+ Passato come argomento ai metodi [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: ee.h  
+ Intestazione: EE. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

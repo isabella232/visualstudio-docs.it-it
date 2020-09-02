@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547836"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitare complessità eccessiva
@@ -57,7 +57,7 @@ ms.locfileid: "85547836"
 
 - Numero di rami (ad esempio `if` , `while` e `do` )
 
-- Numero di `case` istruzioni in un oggetto`switch`
+- Numero di `case` istruzioni in un oggetto `switch`
 
   Negli esempi seguenti vengono illustrati i metodi con complessità ciclomatica variabili.
 

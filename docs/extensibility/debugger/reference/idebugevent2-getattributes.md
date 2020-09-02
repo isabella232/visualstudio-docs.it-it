@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugEvent2::GetAttributes . Documenti Microsoft
+title: 'IDebugEvent2:: GetAttributes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ffc3fc1b7988401611190fdf09e8041bf0dc5b1a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729948"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
@@ -41,13 +41,13 @@ int GetAttribute( 
 
 ## <a name="parameters"></a>Parametri
 `pdwAttrib`\
-[fuori] Combinazione di flag dell'enumerazione [EVENTATTRIBUTES.](../../../extensibility/debugger/reference/eventattributes.md)
+out Combinazione di flag dell'enumerazione [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia è comune a tutti gli eventi. Questo metodo descrive il tipo di evento; ad esempio, è l'evento sincrono o asincrono ed è un evento di arresto.
+ L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) è comune a tutti gli eventi. Questo metodo descrive il tipo di evento. ad esempio, è l'evento sincrono o asincrono ed è un evento di arresto.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

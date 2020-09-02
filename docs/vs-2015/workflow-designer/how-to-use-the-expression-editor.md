@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849229"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procedura: utilizzare l'editor espressioni
 L'editor espressioni è un controllo di [!INCLUDE[wfd1](../includes/wfd1-md.md)] usato in molte attività del flusso di lavoro per immettere e valutare queste espressioni. L'editor espressioni fornisce un'esperienza di modifica IDE completa che include, tra le altre funzionalità, IntelliSense, colorazione, ParamInfo, controllo errori di ortografia durante la digitazione. Il compilatore convalida l'espressione dopo che è stata immessa. Se l'espressione non è valida, viene visualizzata un'icona di errore. L'editor può essere aperto anche come finestra di dialogo **Editor espressioni** .
 
- Le espressioni sono valori letterali o codice [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associati ad argomenti o proprietà. Contengono elementi valore, ad esempio variabili, costanti, valori letterali, proprietà, che vengono combinati con le operazioni per produrre un nuovo valore. Le espressioni vengono scritte usando la sintassi VB.NET, anche se l'applicazione si trova in un programma che usa C#. Ciò significa che la capitalizzazione non è rilevante, il confronto viene eseguito usando un singolo segno di uguale ("=") anziché ("= ="), gli operatori booleani sono le parole "and" e "or" invece dei simboli "& &" e&#124;&#124;"" e **non** viene usato alcun **valore anziché null**. Per ulteriori informazioni su espressioni e operatori in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e per alcuni esempi, vedere [operatori ed espressioni in Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
+ Le espressioni sono valori letterali o codice [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associati ad argomenti o proprietà. Contengono elementi valore, ad esempio variabili, costanti, valori letterali, proprietà, che vengono combinati con le operazioni per produrre un nuovo valore. Le espressioni vengono scritte usando la sintassi VB.NET, anche se l'applicazione si trova in un programma che usa C#. Ciò significa che la capitalizzazione non è rilevante, il confronto viene eseguito usando un singolo segno di uguale ("=") anziché ("= ="), gli operatori booleani sono le parole "and" e "or" invece dei simboli "&&" e "&#124;&#124;" e **non** viene usato alcun **valore anziché null**. Per ulteriori informazioni sulle espressioni e gli operatori in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e per alcuni esempi, vedere [operatori ed espressioni in Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
 
  L' **Editor espressioni** si comporta come segue:
 
@@ -45,7 +45,7 @@ L'editor espressioni è un controllo di [!INCLUDE[wfd1](../includes/wfd1-md.md)]
 
 3. Fare clic sull'editor espressioni sinistro nell'ActivityDesigner per l'attività <xref:System.Activities.Statements.Assign>.
 
-     Le stringhe di filigrana grigie **\<** e **\<immettere un'espressione VB >** sono le stringhe di testo predefinite per gli editor espressioni nell'attività <xref:System.Activities.Statements.Assign>.
+     Le stringhe di filigrana grigie **\<To>** e **\<Enter a VB Expression>** sono le stringhe di testo predefinite per gli editor espressioni nell' <xref:System.Activities.Statements.Assign> attività.
 
 4. Immettere l'espressione. Se si immette una stringa, assicurarsi di inserire la stringa tra virgolette. Se si sceglie di associare l'argomento dell'espressione a una variabile, non usare le virgolette.
 

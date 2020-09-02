@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d0579a6783debf261290538e3f3346640d58e415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194427"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica i percorsi usati di recente (MRU) nei **nuovo progetto** e **Aggiungi nuovo elemento** nella finestra di dialogo.  
+Specifica i percorsi utilizzati più di recente nella finestra di dialogo **nuovo progetto** e **Aggiungi nuovo elemento** .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,9 +46,9 @@ Specifica i percorsi usati di recente (MRU) nei **nuovo progetto** e **Aggiungi 
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|  
   
-## <a name="remarks"></a>Note  
- Questo elemento deve essere utilizzato solo per modelli creati tramite il [!INCLUDE[vsipprvsip](../includes/vsipprvsip-md.md)].  
+## <a name="remarks"></a>Osservazioni  
+ Questo elemento deve essere usato solo per i modelli prodotti tramite [!INCLUDE[vsipprvsip](../includes/vsipprvsip-md.md)] .  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
