@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugBinder::ResolveDynamicType . Documenti Microsoft
+title: 'IDebugBinder:: ResolveDynamicType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a3e490d06444d555625136d6b7ba2a8e99169f59
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735985"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
@@ -43,10 +43,10 @@ int ResolveDynamicType(
 
 ## <a name="parameters"></a>Parametri
 `pDynamic`\
-[in] Oggetto [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) che rappresenta un tipo di una variabile.
+in Oggetto [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) che rappresenta un tipo di una variabile.
 
 `ppResolved`\
-[fuori] Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che fornisce informazioni specifiche sul tipo della variabile.
+out Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che fornisce informazioni specifiche sul tipo della variabile.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

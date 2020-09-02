@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 461593e4c77d7c90210ae1bb78741a1fff9616ec
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284191"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedura: Gestire le finestre dell'editor
@@ -54,7 +54,7 @@ Per semplificare la modifica è possibile suddividere una finestra dell'editor i
 
    Viene aggiunta una nuova istanza a schede dell'editor.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Personalizzazione del layout delle finestre](../ide/customizing-window-layouts-in-visual-studio.md)

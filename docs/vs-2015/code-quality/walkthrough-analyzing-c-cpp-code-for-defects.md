@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: analisi delC++ codice C per i difetti | Microsoft Docs'
+title: 'Procedura dettagliata: analisi del codice C-C + + per i difetti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c822dbcc6a1ece2040da22a3442dd584c3926d97
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272443"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura guidata: analisi del codice C/C++ per l'identificazione degli errori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenziali difetti del codice usando lo strumento di analisi del codiceC++ per C/code.  
+Questa procedura dettagliata illustra come analizzare il codice C/C++ per i potenziali difetti del codice usando lo strumento di analisi del codice per il codice C/C++.  
   
- In questa procedura dettagliata viene illustrato il processo di utilizzo dell'analisi del codice per analizzare il codiceC++ C/codice per i potenziali difetti del codice.  
+ In questa procedura dettagliata viene illustrato il processo di utilizzo dell'analisi del codice per analizzare il codice C/C++ per i potenziali difetti del codice.  
   
  I passaggi eseguiti sono i seguenti:  
   
@@ -38,17 +38,17 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
   
 - Annotare il codice sorgente per migliorare l'analisi del difetto del codice.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Prerequisiti  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
 - Una copia dell' [esempio di demo](../code-quality/demo-sample.md).  
   
-- Conoscenza di base di CC++/.  
+- Conoscenza di base di C/C++.  
   
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>Per eseguire l'analisi del difetto del codice sul codice nativo  
   
-1. Aprire la soluzione demo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Aprire la soluzione demo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      La soluzione Demo ora popola **Esplora soluzioni**.  
   
@@ -64,7 +64,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
   
 5. Fare clic su **Analisi codice**.  
   
-6. Fare clic sulla casella di controllo **Abilita analisiC++ codice per la compilazione C/on** .  
+6. Fare clic sulla casella di controllo **Abilita analisi codice per C/C++ in compilazione** .  
   
 7. Ricompilare il progetto codedifettos.  
   
@@ -74,13 +74,13 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
   
 1. Scegliere **Elenco errori** dal menu **Visualizza**.  
   
-     A seconda del profilo dello sviluppatore scelto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], potrebbe essere necessario puntare ad **altre finestre** dal menu **Visualizza** , quindi fare clic su **Elenco errori**.  
+     A seconda del profilo dello sviluppatore scelto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , potrebbe essere necessario puntare ad **altre finestre** dal menu **Visualizza** , quindi fare clic su **Elenco errori**.  
   
 2. Nella **Elenco errori**fare doppio clic sull'avviso seguente:  
   
      avviso C6230: cast implicito tra tipi semanticamente diversi: utilizzo di HRESULT in un contesto booleano.  
   
-     Nell'editor di codice viene visualizzata la riga che ha provocato l'avviso nella funzione `bool``ProcessDomain()`. Questo avviso indica che è in uso un HRESULT in un'istruzione ' If ' in cui è previsto un risultato booleano.  
+     Nell'editor di codice viene visualizzata la riga che ha provocato l'avviso nella funzione `bool``ProcessDomain()` . Questo avviso indica che è in uso un HRESULT in un'istruzione ' If ' in cui è previsto un risultato booleano.  
   
 3. Correggere questo avviso utilizzando la macro SUCCEEDed. Il codice dovrebbe essere simile al codice seguente:  
   
@@ -100,7 +100,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
   
 ### <a name="to-treat-warning-as-an-error"></a>Per considerare l'avviso come un errore  
   
-1. Nel file bug. cpp aggiungere l'istruzione `#pragma` seguente all'inizio del file per considerare il C6001 di avviso come errore:  
+1. Nel file bug. cpp aggiungere l' `#pragma` istruzione seguente all'inizio del file per considerare l'avviso C6001 come errore:  
   
     ```  
     #pragma warning (error: 6001)  
@@ -126,7 +126,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
   
 3. Fare clic su **Analisi codice**.  
   
-4. Selezionare la casella di controllo **Abilita analisi codiceC++ per la compilazione C/on** .  
+4. Selezionare la casella di controllo **Abilita analisi codice per C/C++ in compilazione** .  
   
 5. Ricompilare il progetto delle annotazioni.  
   
@@ -158,7 +158,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
   
 ### <a name="to-use-source-code-annotation"></a>Per utilizzare l'annotazione del codice sorgente  
   
-1. Annotare i parametri formali e il valore restituito della funzione `AddTail` usando le condizioni pre e post, come illustrato nell'esempio seguente:  
+1. Annotare i parametri formali e il valore restituito della funzione `AddTail` utilizzando le condizioni pre e post, come illustrato nell'esempio seguente:  
   
      `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
   

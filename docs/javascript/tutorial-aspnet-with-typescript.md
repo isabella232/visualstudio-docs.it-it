@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453701"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Esercitazione: creare un'app ASP.NET Core con TypeScript in Visual Studio
@@ -34,7 +34,7 @@ Se Visual Studio non è ancora installato, passare alla pagina dei [download di 
 
 ::: moniker-end
 
-In questa esercitazione si apprenderà come:
+In questa esercitazione verranno illustrate le procedure per:
 > [!div class="checklist"]
 > * Creare un progetto ASP.NET Core
 > * Aggiungere il pacchetto NuGet per il supporto di TypeScript
@@ -42,7 +42,7 @@ In questa esercitazione si apprenderà come:
 > * Eseguire l'app
 > * Aggiungere una libreria di terze parti con NPM
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * È necessario che Visual Studio sia installato e che il carico di lavoro sviluppo Web ASP.NET.
 

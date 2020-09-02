@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2980d34028c58a6abadb2df21bf22c8d37cda6e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160768"
 ---
-# <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
+# <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Definisce il nome file predefinito del file di log di grafica.  
@@ -38,10 +38,10 @@ Definisce il nome file predefinito del file di log di grafica.
 #define VSG_DEFAULT_FILENAME L"default.vsglog"  
 ```  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Se viene definito il simbolo del preprocessore `DONT_SAVE_VSGLOG_TO_TEMP`, il nome del file è relativo alla directory corrente dell'applicazione acquisita o è un percorso assoluto; in caso contrario, è relativo alla directory dei file temporanei dell'utente e non può essere un percorso assoluto.  
   
- Per modificare il nome file definito, è necessario ridefinirlo prima di includere `vsgcapture.h` nel programma.  
+ Per modificare il nome del file definito, è necessario ridefinirlo prima `vsgcapture.h` di includere nel programma.  
   
 ## <a name="example"></a>Esempio  
  In questo esempio viene illustrato come modificare il nome file predefinito del file di acquisizione:  

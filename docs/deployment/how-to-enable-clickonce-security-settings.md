@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382432"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Procedura: Abilitare le impostazioni di sicurezza ClickOnce
@@ -34,7 +34,7 @@ Per pubblicare l'applicazione, è necessario abilitare la sicurezza dall'accesso
 
 1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-2. Fare clic sulla scheda **Sicurezza**.
+2. Fare clic sulla scheda **Security** (Sicurezza).
 
 3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .
 
@@ -47,7 +47,7 @@ Per pubblicare l'applicazione, è necessario abilitare la sicurezza dall'accesso
 
 1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-2. Fare clic sulla scheda **Sicurezza**.
+2. Fare clic sulla scheda **Security** (Sicurezza).
 
 3. Deselezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .
 
@@ -56,6 +56,6 @@ Per pubblicare l'applicazione, è necessario abilitare la sicurezza dall'accesso
     > [!NOTE]
     > Ogni volta che l'applicazione viene pubblicata con la pubblicazione guidata, questa casella di controllo viene selezionata. è necessario cancellarlo di nuovo dopo ogni pubblicazione completata correttamente.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

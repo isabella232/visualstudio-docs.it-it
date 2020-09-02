@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382f0ad34e8f3bf5188429733851003402e8ba1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650975"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>Schede e finestre, Ambiente, finestra di dialogo Opzioni
@@ -24,4 +24,4 @@ ms.locfileid: "72650975"
 Usare questa pagina per impostare le opzioni per le modalità di comportamento di finestre a schede in un riquadro dell'editor e la modalità di comportamento delle finestre degli strumenti. Per altre informazioni, vedere [How to: Arrange and Dock Windows](../../misc/how-to-arrange-and-dock-windows.md) (Procedura: Disporre e ancorare le finestre)
 
 ## <a name="see-also"></a>Vedere anche
- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
+ [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md) (Ambiente, finestra di dialogo Opzioni)

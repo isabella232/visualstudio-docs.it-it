@@ -11,10 +11,10 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650846"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluzioni filtrate in Visual Studio
@@ -37,7 +37,7 @@ Sono disponibili le funzionalità seguenti:
 
 Per aprire una soluzione senza caricare uno dei relativi progetti dalla finestra di dialogo **Apri progetto**:
 
-1. Scegliere Apri**Open** > **progetto/Soluzione** **File** > dalla barra dei menu.
+1. Scegliere **file**  >  **Apri**  >  **progetto/soluzione** dalla barra dei menu.
 
 2. Nella finestra di dialogo **Apri progetto** selezionare la soluzione e quindi selezionare la casella di controllo **Non caricare i progetti**.
 
@@ -57,7 +57,7 @@ Per aprire una soluzione senza caricare uno dei relativi progetti dalla finestra
 
 (Novità di Visual Studio 2019 versione 16.1)
 
-Per aprire una soluzione senza caricare i relativi progetti [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) dalla riga di comando, utilizzare l'opzione come illustrato nell'esempio seguente:
+Per aprire una soluzione senza caricare alcun progetto dalla riga di comando, usare l' [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) opzione come illustrato nell'esempio seguente:
 
 ```cmd
 devenv /donotloadprojects MySln.sln

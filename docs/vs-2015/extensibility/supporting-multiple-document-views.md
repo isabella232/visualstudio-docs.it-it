@@ -11,34 +11,34 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9377fc12db8cedba65a418fd32b82a1421bd9b43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160511"
 ---
 # <a name="supporting-multiple-document-views"></a>Supporto di più visualizzazioni documento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile fornire più di una visualizzazione di un documento tramite la creazione di dati del documento separata e oggetti di visualizzazione di documenti per l'editor. Alcuni casi in cui una visualizzazione del documento aggiuntivo potrebbe essere utile sono:  
+È possibile fornire più di una visualizzazione di un documento creando oggetti dati del documento e oggetti visualizzazione documento distinti per l'editor. Alcuni casi in cui è utile una visualizzazione del documento aggiuntiva sono:  
   
-- Nuovo supporto della finestra: Si desidera fornire due o più viste dello stesso tipo, l'editor in modo che un utente che dispone già di una finestra aprire nell'editor è possibile aprire una nuova finestra selezionando il **nuova finestra** dalle **finestra** menu.  
+- Supporto per la nuova finestra: si desidera che l'editor fornisca due o più visualizzazioni dello stesso tipo, in modo che un utente che dispone già di una finestra aperta nell'Editor possa aprire una nuova finestra selezionando il comando **nuova finestra** dal menu **finestra** .  
   
-- Supporto di visualizzazione form e il codice: Si vuole che l'editor per fornire visualizzazioni di tipi diversi. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], ad esempio, fornisce una visualizzazione form e una visualizzazione del codice.  
+- Supporto per il form e la visualizzazione del codice: si desidera che l'editor fornisca visualizzazioni di tipi diversi. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], ad esempio, fornisce una visualizzazione form e una visualizzazione codice.  
   
-  Per altre informazioni, vedere la procedura CreateEditorInstance nel file EditorFactory.cs nel progetto editor personalizzato creato dal modello di pacchetto Visual Studio. Per altre informazioni su questo progetto, vedere [procedura dettagliata: Creazione di un Editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Per altre informazioni, vedere la procedura CreateEditorInstance nel file EditorFactory.cs nel progetto di editor personalizzato creato dal modello di pacchetto di Visual Studio. Per ulteriori informazioni su questo progetto, vedere [procedura dettagliata: creazione di un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
-## <a name="synchronizing-views"></a>La sincronizzazione delle viste  
- Quando si implementano visualizzazioni multiple, l'oggetto dati del documento è responsabilità di conservare tutte le visualizzazioni sincronizzate con i dati. È possibile usare l'evento di gestione delle interfacce su <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> per sincronizzare più visualizzazioni con i dati.  
+## <a name="synchronizing-views"></a>Sincronizzazione di viste  
+ Quando si implementano più visualizzazioni, l'oggetto dati del documento è responsabile di mantenere tutte le visualizzazioni sincronizzate con i dati. È possibile utilizzare le interfacce di gestione degli eventi su <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> per sincronizzare più visualizzazioni con i dati.  
   
- Se non si usa il <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto per sincronizzare più visualizzazioni, è necessario implementare il proprio sistema di eventi per gestire le modifiche apportate all'oggetto dati del documento. È possibile usare diversi livelli di granularità per mantenere aggiornati più viste. Con un'impostazione di massima granularità, durante la digitazione in un'unica visualizzazione le altre visualizzazioni vengono aggiornate immediatamente. Con una granularità minima, non altre visualizzazioni vengono aggiornate fino a quando non vengono attivati.  
+ Se non si utilizza l' <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto per sincronizzare più visualizzazioni, è necessario implementare il proprio sistema di eventi per gestire le modifiche apportate all'oggetto dati del documento. È possibile utilizzare livelli di granularità diversi per rendere aggiornate più visualizzazioni. Con un'impostazione della granularità massima, quando si digita una visualizzazione, le altre visualizzazioni vengono aggiornate immediatamente. Con la granularità minima, altre viste non vengono aggiornate finché non vengono attivate.  
   
-## <a name="determining-whether-document-data-is-already-open"></a>Determinare se i dati del documento è già aperto  
- La tabella documenti in esecuzione (RDT) nell'ambiente di sviluppo integrato (IDE) consente di verificare se i dati per un documento sono già aperti, come illustrato nel diagramma seguente.  
+## <a name="determining-whether-document-data-is-already-open"></a>Determinare se i dati del documento sono già aperti  
+ La tabella documenti in esecuzione (RDT) nel Integrated Development Environment (IDE) consente di rilevare se i dati per un documento sono già aperti, come illustrato nella figura seguente.  
   
  ![Immagine di DocDataView](../extensibility/media/docdataview.gif "Docdataview")  
 Visualizzazioni multiple  
   
- Per impostazione predefinita, ogni vista (oggetto visualizzazione del documento) viene contenuta in una proprio cornice della finestra (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>). Come già notato, tuttavia, dati documento possono essere visualizzati in visualizzazioni multiple. A tale scopo, Visual Studio verifica RDT per determinare se il documento in questione è già aperto in un editor. Quando l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> per creare l'editor, un valore non NULL restituito nel `punkDocDataExisting` parametro indica che il documento è già aperto in un altro editor. Per altre informazioni su come visualizzare le funzioni, RDT [tabella documenti in esecuzione](../extensibility/internals/running-document-table.md).  
+ Per impostazione predefinita, ogni visualizzazione (oggetto visualizzazione documento) è contenuta nella relativa cornice di finestra ( <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> ). Come già indicato, tuttavia, i dati del documento possono essere visualizzati in più visualizzazioni. Per abilitare questa operazione, Visual Studio controlla il RDT per determinare se il documento in questione è già aperto in un editor. Quando l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> per creare l'editor, un valore non null restituito nel `punkDocDataExisting` parametro indica che il documento è già aperto in un altro editor. Per ulteriori informazioni sul funzionamento delle funzioni RDT, vedere [esecuzione di una tabella documenti](../extensibility/internals/running-document-table.md).  
   
- Nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementazione, esaminare l'oggetto dati del documento restituito nella `punkDocDataExisting` per determinare se i dati del documento sono appropriati per l'editor. (Ad esempio, solo i dati HTML devono essere visualizzati da un editor HTML.) Se è appropriato, quindi la factory dell'editor deve fornire una seconda vista per i dati. Se il `punkDocDataExisting` parametro non `NULL`, è possibile sia che l'oggetto dati del documento è aperto in un altro editor, o, più probabile, che i dati del documento sono già aperti in una vista diversa con l'editor stesso. Se i dati del documento sono aperti in un editor diverso che non supporta la factory dell'editor, Visual Studio non riesce aprire la factory dell'editor. Per altre informazioni, vedere [Procedura: Collegare visualizzazioni ai dati documento](../extensibility/how-to-attach-views-to-document-data.md).
+ Nell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementazione di esaminare l'oggetto dati del documento restituito in `punkDocDataExisting` per determinare se i dati del documento sono appropriati per l'editor. Ad esempio, solo i dati HTML devono essere visualizzati da un editor HTML. Se è appropriato, la factory dell'editor deve fornire una seconda visualizzazione per i dati. Se il `punkDocDataExisting` parametro non è `NULL` , è possibile che l'oggetto dati del documento sia aperto in un altro editor o, più probabilmente, che i dati del documento siano già aperti in una visualizzazione diversa con lo stesso editor. Se i dati del documento sono aperti in un editor diverso che non è supportato dalla factory dell'editor, Visual Studio non è in grado di aprire la factory dell'editor. Per altre informazioni, vedere [procedura: aggiungere visualizzazioni ai dati del documento](../extensibility/how-to-attach-views-to-document-data.md).

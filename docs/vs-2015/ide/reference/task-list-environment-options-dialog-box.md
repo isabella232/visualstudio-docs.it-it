@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72e5f82fa3ca4b7ca909ee07e5b77a31b3e20879
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650969"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Elenco attività, Ambiente, finestra di dialogo Opzioni
@@ -44,7 +44,7 @@ La pagina Opzioni consente di aggiungere, eliminare e modificare i token di comm
 
  Mostra i nomi di file solo quando è selezionata, nella colonna **file** della **elenco attività** vengono visualizzati solo i nomi dei file da modificare e non i percorsi completi.
 
-## <a name="tokens"></a>token
+## <a name="tokens"></a>Tokens
  Quando si inserisce un commento nel codice il cui testo inizia con un token proveniente da **Elenco token**, in **Elenco attività** il commento viene visualizzato come nuova voce ogni volta che il file viene aperto per la modifica. È possibile fare clic su questa voce di **Elenco attività** per passare direttamente alla riga del commento nel codice. Per altre informazioni, vedere [Uso dell'elenco attività](../../ide/using-the-task-list.md).
 
  Elenco di token Visualizza un elenco di token e consente di aggiungere o rimuovere token personalizzati. I token di commento fanno distinzione tra maiuscole e minuscole in Visual C# e Visual C++, ma non in Visual Basic.

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592334"
 ---
 # <a name="xml-schemas-dialog-box"></a>Finestra di dialogo XML Schema
@@ -23,13 +23,13 @@ La finestra di dialogo **schemi XML** consente di selezionare gli schemi XML Sch
 
 È possibile accedere alla finestra di dialogo **schemi XML** facendo clic sul pulsante **schemi** nella finestra proprietà del documento oppure selezionando **schemi** dal menu **XML** .
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
-**Usare**
+**Uso**
 
 Consente di selezionare la modalità di utilizzo di XML Schema.
 
-- **Automatica**. Questo schema non è usato dal documento corrente ma è disponibile per l'associazione automatica. Se il documento XML dichiara uno spazio di nomi che corrisponde al `targetNamespace` di questo schema, lo schema viene automaticamente associato e incluso nel set di schemi.
+- **Automatico**. Questo schema non è usato dal documento corrente ma è disponibile per l'associazione automatica. Se il documento XML dichiara uno spazio di nomi che corrisponde al `targetNamespace` di questo schema, lo schema viene automaticamente associato e incluso nel set di schemi.
 
 - **Utilizzare questo schema**. Questo schema è usato dal documento corrente. L'utilizzo di questo schema è stato richiesto in modo esplicito selezionando questa colonna oppure lo schema è stato associato automaticamente in base a un `targetNamespace` corrispondente.
 
@@ -43,7 +43,7 @@ Consente di visualizzare lo spazio dei nomi di destinazione associato allo schem
 
 Consente di visualizzare il nome del file di XML Schema.
 
-**Aggiungi**
+**Aggiungere**
 
 Apre la finestra di dialogo **Apri schema XSD** , che consente di selezionare schemi aggiuntivi da aggiungere al set di schemi. Quando si aggiunge uno schema al set di schemi, il valore della colonna **use** è impostato in modo da **utilizzare questo schema**.
 
@@ -54,4 +54,4 @@ Consente di rimuovere lo schema attualmente selezionato dal set di schemi. L'ope
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: selezionare gli schemi XML da utilizzare](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
-- [Cache degli schemi](../xml-tools/schema-cache.md)
+- [Cache dello schema](../xml-tools/schema-cache.md)

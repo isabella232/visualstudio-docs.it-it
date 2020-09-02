@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382471"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procedura: Personalizzare la pagina Web predefinita per un'applicazione ClickOnce
@@ -45,9 +45,9 @@ Quando si pubblica un'applicazione ClickOnce sul Web, una pagina Web viene gener
 
 3. Personalizzare la pagina nel modo desiderato e salvarla.
 
-4. Facoltativa. Per impedire a Visual Studio di sovrascrivere la pagina Web di pubblicazione personalizzata, deselezionare **genera automaticamente pagina Web di distribuzione dopo ogni pubblicazione** nella finestra di dialogo **Opzioni di pubblicazione** .
+4. facoltativo. Per impedire a Visual Studio di sovrascrivere la pagina Web di pubblicazione personalizzata, deselezionare **genera automaticamente pagina Web di distribuzione dopo ogni pubblicazione** nella finestra di dialogo **Opzioni di pubblicazione** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugBinder . Documenti Microsoft
+title: IDebugBinder | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fcdec19c4667356edaf9e057c86ddc24baf747b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735966"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
-> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere [Analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e Esempio di [analizzatore di](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)espressioni gestite .
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Questa interfaccia associa un campo simbolo, in genere restituito dal provider di simboli, a un contesto di memoria o a un oggetto che contiene il valore corrente del simbolo.
+ Questa interfaccia associa un campo di simboli, in genere restituito dal provider di simboli, a un contesto di memoria o a un oggetto che contiene il valore corrente del simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,23 +38,23 @@ IDebugBinder : IUnknown
  Questa interfaccia viene utilizzata nel processo di valutazione delle espressioni e viene in genere utilizzata nell'implementazione di [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) e [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md).
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente vengono `IDebugBinder`illustrati i metodi di .
+ La tabella seguente illustra i metodi di `IDebugBinder` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[Associare](../../../extensibility/debugger/reference/idebugbinder-bind.md)|Ottiene il contesto di memoria o l'oggetto che contiene il valore corrente del simbolo.|
+|[Associazione](../../../extensibility/debugger/reference/idebugbinder-bind.md)|Ottiene il contesto di memoria o l'oggetto che contiene il valore corrente del simbolo.|
 |[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|Determina il tipo in fase di esecuzione di un oggetto.|
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|Converte la posizione di un oggetto o un indirizzo di memoria in un contesto di memoria.|
-|[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|Ottiene un [oggetto IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) utilizzato per creare i parametri della funzione.|
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|Converte un indirizzo di memoria o un percorso dell'oggetto in un contesto di memoria.|
+|[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|Ottiene un oggetto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) usato per creare i parametri della funzione.|
 |[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|Ottiene il tipo esatto per una variabile.|
 
 ## <a name="remarks"></a>Osservazioni
- Questa interfaccia restituisce gli oggetti utilizzati dall'analizzatore di espressioni negli alberi di analisi. L'analizzatore di espressioni analizza un'espressione utilizzando il provider di simboli per convertire i simboli nell'espressione in istanze di [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), che descrivono ogni simbolo in termini di tipo e posizione nel codice sorgente. Il [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md) metodo `IDebugField` converte gli oggetti [in IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetti che connettono o associano un tipo di simbolo a un valore effettivo in memoria. Questi `IDebugObject` oggetti vengono quindi archiviati in un albero di analisi per una valutazione successiva.
+ Questa interfaccia restituisce gli oggetti utilizzati dall'analizzatore di espressioni negli alberi di analisi. L'analizzatore di espressioni analizza un'espressione utilizzando il provider di simboli per convertire i simboli nell'espressione in istanze di [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), che descrivono ogni simbolo in termini di tipo e posizione nel codice sorgente. Il metodo [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md) converte `IDebugField` gli oggetti in oggetti [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che si connettono o associano un tipo di simbolo a un valore effettivo in memoria. Questi `IDebugObject` oggetti vengono quindi archiviati in un albero di analisi per una valutazione successiva.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: ee.h
+ Intestazione: EE. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5271388a5b1ce4508db7aea0a28e2b5a70b51348
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646251"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
@@ -25,20 +25,20 @@ ms.locfileid: "72646251"
 È possibile usare le pagine nella cartella **Ambiente** della finestra di dialogo **Opzioni** per impostare la visualizzazione e il comportamento di alcuni elementi dell'ambiente di sviluppo integrato (IDE). Per accedere alle pagine di Ambiente, nella barra dei menu scegliere **Strumenti**, **Opzioni** e fare clic su **Ambiente**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati nel computer potrebbero variare rispetto a quelli descritti nella Guida, a seconda delle impostazioni attive e dell'edizione di Visual Studio in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Le finestre di dialogo e i comandi di menu visualizzati nel computer potrebbero variare rispetto a quelli descritti nella Guida, a seconda delle impostazioni attive e dell'edizione di Visual Studio in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 |Per informazioni sulla procedura|Vedere|
 |----------------------------------|---------|
-|Personalizzare l'aspetto e il comportamento di finestre, menu e altri elementi dell'IDE.|[Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)|
+|Personalizzare l'aspetto e il comportamento di finestre, menu e altri elementi dell'IDE.|[Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)|
 |Specificare la sicurezza per i componenti aggiuntivi.|[Sicurezza componenti aggiuntivi, Ambiente, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|
 |Modificare le impostazioni predefinite per il salvataggio e il recupero automatici dei file|[Salvataggio automatico, Ambiente, finestra di dialogo Opzioni](../../ide/reference/autorecover-environment-options-dialog-box.md)|
-|Definire le impostazioni di gestione e visualizzazione di documenti che includono il comportamento dei file esterni.|[Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)|
+|Definire le impostazioni di gestione e visualizzazione di documenti che includono il comportamento dei file esterni.|[Documenti, ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)|
 |Personalizzare l'esecuzione degli aggiornamenti e la modalità di gestione delle estensioni.|[Estensioni e aggiornamenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
-|Personalizzare il momento della visualizzazione delle finestre di messaggio e il comportamento della finestra **Trova e sostituisci** durante un’operazione di Ricerca rapida e Sostituzione veloce e di popolamento automatico di Trova.|[Trova e sostituisci, Ambiente, finestra di dialogo Opzioni](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
+|Personalizzare il momento in cui vengono visualizzate le finestre di messaggio e il modo in cui viene eseguita la finestra **trova e Sostituisci** durante una ricerca veloce o una sostituzione veloce, oltre a inserire automaticamente il valore trova.|[Trova e sostituisci, Ambiente, finestra di dialogo Opzioni](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Impostare il tipo di carattere e il colore in determinati editor, finestre di dialogo, finestre di strumenti e altri elementi dell’interfaccia utente.|[Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|
 |Personalizzare il percorso dei file vssettings che archiviano le informazioni sulle impostazioni utente.|[Importa/Esporta impostazioni, Ambiente, finestra di dialogo Opzioni](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |Selezionare un linguaggio predefinito per Visual Studio.|[Impostazioni internazionali, Ambiente, finestra di dialogo Opzioni](../../ide/reference/international-settings-environment-options-dialog-box.md)|
-|Per impostare le opzioni di mappatura della tastiera.|[Tastiera, Ambiente, finestra di dialogo Opzioni](../../ide/reference/keyboard-environment-options-dialog-box.md)|
+|Per impostare le opzioni di mappatura della tastiera.|[Tastiera, ambiente, finestra di dialogo Opzioni](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Per specificare se le notifiche sono abilitate.|[Notifiche, Ambiente, finestra di dialogo Opzioni](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Per specificare le opzioni per la finestra Avvio veloce.|[Avvio veloce, Ambiente, finestra di dialogo Opzioni](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |Per specificare le opzioni della pagina iniziale.|[Avvio, Ambiente, finestra di dialogo Opzioni](../../ide/reference/startup-environment-options-dialog-box.md)|

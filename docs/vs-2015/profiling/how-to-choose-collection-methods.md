@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199811"
 ---
-# <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
+# <a name="how-to-choose-collection-methods"></a>Procedura: scegliere un metodo di raccolta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supportano tre metodi di raccolta dei dati relativi alle prestazioni: campionamento, strumentazione e concorrenza. È anche possibile usare il metodo di campionamento o di strumentazione per raccogliere dati di durata e allocazione di memoria .NET.  
@@ -97,6 +97,6 @@ Gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sup
 3. Fare clic su **Concorrenza**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)   
  [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)
