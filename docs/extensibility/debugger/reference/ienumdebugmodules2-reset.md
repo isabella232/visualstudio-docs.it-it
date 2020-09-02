@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Reset . Documenti Microsoft
+title: 'IEnumDebugModules2:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 81fc33620449837f3d2af883f0721d24df92e804
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80716522"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
@@ -41,7 +41,7 @@ int Reset();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Dopo la chiamata a questo metodo, la chiamata successiva al [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) metodo restituisce il primo elemento dell'enumerazione.
+ Dopo la chiamata a questo metodo, la chiamata successiva al metodo [successivo](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) restituisce il primo elemento dell'enumerazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

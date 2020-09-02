@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugEngine3 . Documenti Microsoft
+title: IDebugEngine3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7026156eac7f60e7435e32244c3cc03ae5f08e1e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730646"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
-Rappresenta un singolo motore di debug (DE) che controlla il debug di uno o più moduli.
+Rappresenta un motore di debug singolo (DE) che controlla il debug di uno o più moduli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,26 +29,26 @@ IDebugEngine3 : IDebugEngine2
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia viene implementata da un DE personalizzato (se supporta i simboli) per abilitare lo stato JustMyCode.This interface is implemented by a custom DE (if it supports symbols) to enable the JustMyCode state. Questa interfaccia deve essere implementata dal DE se supporta i simboli e JustMyCode.This interface must be implemented by the DE if it supports symbols and JustMyCode.
+ Questa interfaccia viene implementata da un oggetto DE personalizzato (se supporta i simboli) per abilitare lo stato JustMyCode. Questa interfaccia deve essere implementata da DE se supporta i simboli e JustMyCode.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Questa interfaccia viene chiamata dal gestore di sessione di debug (SDM) per passare le opzioni utente per i percorsi da cui caricare i simboli. Viene anche chiamato per impostare il GUID del motore quando viene creata un'istanza (questo GUID si basa sulle metriche dal momento della registrazione del motore). Il file SDM chiama anche questa interfaccia per impostare lo stato JustMyCode e per impostare tutte le eccezioni note dal debugger a uno stato specificato.
+ Questa interfaccia viene chiamata da gestione debug sessione (SDM) per passare le opzioni utente per i percorsi da cui caricare i simboli. Viene anche chiamato per impostare il GUID del motore quando ne viene creata un'istanza (questo GUID è basato sulle metriche del momento della registrazione del motore). SDM chiama anche questa interfaccia per impostare lo stato JustMyCode e per impostare tutte le eccezioni note dal debugger su uno stato specificato.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Oltre ai metodi ereditati da [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md), l'interfaccia `IDebugEngine3` espone i metodi seguenti.
+ Oltre ai metodi ereditati da [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md), l' `IDebugEngine3` interfaccia espone i metodi seguenti.
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Imposta il percorso o i percorsi che il DE utilizzerà per la ricerca di simboli di debug.|
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Carica i simboli per tutti i moduli che non hanno ancora caricato i simboli.|
+|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Imposta il percorso o i percorsi che il DE utilizzerà per cercare i simboli di debug.|
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Carica i simboli per tutti i moduli per i quali non sono ancora stati caricati i simboli.|
 |[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|Indica al DE le informazioni JustMyCode.|
-|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Imposta il GUID DE dalle metriche.|
-|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Impostare tutte le eccezioni attualmente in sospeso su uno stato specificato.|
+|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Imposta il GUID DE dalla metrica.|
+|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Imposta tutte le eccezioni attualmente in attesa su uno stato specificato.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

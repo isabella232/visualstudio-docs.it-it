@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541635"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procedura: configurare la sicurezza dell'elenco di inclusione
@@ -55,10 +55,10 @@ ms.locfileid: "85541635"
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Disabilitato**|
-    |**MyComputer**|**Enabled**|
-    |**LocalIntranet**|**Enabled**|
-    |**TrustedSites**|**Enabled**|
+    |**UntrustedSites**|**Disattivata**|
+    |**MyComputer**|**Attivata**|
+    |**LocalIntranet**|**Attivata**|
+    |**TrustedSites**|**Attivata**|
 
      Per impostazione predefinita, il valore di **Internet** è **AuthenticodeRequired** e il valore di **UntrustedSites** è **disabilitato**.
 
@@ -113,7 +113,7 @@ ms.locfileid: "85541635"
 
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Disabilitato**|
+    |**UntrustedSites**|**Disattivata**|
     |**Internet**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -170,11 +170,11 @@ ms.locfileid: "85541635"
 
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Disabilitato**|
-    |**Internet**|**Disabilitato**|
-    |**MyComputer**|**Disabilitato**|
-    |**LocalIntranet**|**Disabilitato**|
-    |**TrustedSites**|**Disabilitato**|
+    |**UntrustedSites**|**Disattivata**|
+    |**Internet**|**Disattivata**|
+    |**MyComputer**|**Disattivata**|
+    |**LocalIntranet**|**Disattivata**|
+    |**TrustedSites**|**Disattivata**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Per disabilitare l'elenco di inclusione a livello di codice
 

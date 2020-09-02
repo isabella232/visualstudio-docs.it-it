@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595696"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -33,11 +33,11 @@ devenv /Edit [File1[ FileN]...]
 
 - *File1*
 
-  Facoltativa. File da aprire in un'istanza esistente di Visual Studio. Se non esiste alcuna istanza di Visual Studio, viene creata una nuova istanza con un layout di finestra semplificato e lo strumento apre *File1* nella nuova istanza.
+  facoltativo. File da aprire in un'istanza esistente di Visual Studio. Se non esiste alcuna istanza di Visual Studio, viene creata una nuova istanza con un layout di finestra semplificato e lo strumento apre *File1* nella nuova istanza.
 
 - *FileN*
 
-  Facoltativa. Uno o più file aggiuntivi da aprire nell'istanza esistente di Visual Studio.
+  facoltativo. Uno o più file aggiuntivi da aprire nell'istanza esistente di Visual Studio.
 
 ## <a name="remarks"></a>Osservazioni
 

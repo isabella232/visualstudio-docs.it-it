@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb8074317e52b43806a61d6486c53d7409333e2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153410"
 ---
-# <a name="bplocationtype"></a>BP_LOCATION_TYPE
+# <a name="bp_location_type"></a>BP_LOCATION_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica il tipo di posizione del punto di interruzione per una richiesta di punto di interruzione.  
+Specifica il tipo di posizione del punto di interruzione per una richiesta del punto di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -67,63 +67,63 @@ public enum enum_BP_LOCATION_TYPE { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  BPLT_NONE  
- Non specifica nessuna posizione punto di interruzione.  
+ Non specifica alcun punto di interruzione.  
   
  BPLT_FILE_LINE  
- Specifica il tipo di posizione del punto di interruzione come un file di riga.  
+ Specifica il tipo di posizione del punto di interruzione come riga di file.  
   
  BPLT_FUNC_OFFSET  
- Specifica il tipo di posizione del punto di interruzione come un offset di funzione.  
+ Specifica il tipo di posizione del punto di interruzione come offset di funzione.  
   
  BPLT_CONTEXT  
- Specifica il tipo di posizione del punto di interruzione come un contesto.  
+ Specifica il tipo di posizione del punto di interruzione come contesto.  
   
  BPLT_STRING  
  Specifica il tipo di posizione del punto di interruzione sotto forma di stringa.  
   
  BPLT_ADDRESS  
- Specifica il tipo di posizione del punto di interruzione come un indirizzo.  
+ Specifica il tipo di posizione del punto di interruzione come indirizzo.  
   
  BPLT_RESOLUTION  
- Specifica il tipo di posizione del punto di interruzione come una risoluzione.  
+ Specifica il tipo di posizione del punto di interruzione come risoluzione.  
   
  BPLT_CODE_FILE_LINE  
  Specifica il tipo di posizione del punto di interruzione come una riga di codice sorgente.  
   
  BPLT_CODE_FUNC_OFFSET  
- Specifica il tipo di posizione del punto di interruzione come un offset di funzione di codice.  
+ Specifica il tipo di posizione del punto di interruzione come offset della funzione del codice.  
   
  BPLT_CODE_CONTEXT  
- Specifica il tipo di posizione del punto di interruzione come un contesto del codice.  
+ Specifica il tipo di posizione del punto di interruzione come contesto del codice.  
   
  BPLT_CODE_STRING  
  Specifica il tipo di posizione del punto di interruzione come una stringa di codice.  
   
  BPLT_CODE_ADDRESS  
- Specifica il tipo di posizione del punto di interruzione come un indirizzo di codice.  
+ Specifica il tipo di posizione del punto di interruzione come indirizzo di codice.  
   
  BPLT_DATA_STRING  
- Specifica il tipo di posizione del punto di interruzione come una stringa di dati.  
+ Specifica il tipo di posizione del punto di interruzione come stringa di dati.  
   
  BPLT_TYPE_MASK  
- Specifica una maschera di bit, in modo che il tipo di punto di interruzione possa essere estratti dal valore.  
+ Specifica una maschera di bit, in modo che il tipo di punto di interruzione possa essere estratto dal valore.  
   
  BPLT_LOCATION_TYPE_MASK  
- Specifica una maschera di bit, in modo che il tipo di posizione del punto di interruzione possa essere estratti dal valore.  
+ Specifica una maschera di bit, in modo che il tipo di posizione del punto di interruzione possa essere estratto dal valore.  
   
-## <a name="remarks"></a>Note  
- Passato come parametro per il [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Passato come parametro al metodo [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) .  
   
- Un tipo di posizione del punto di interruzione è costituito da un tipo di punto di interruzione e un tipo di posizione. Ciò significa che un tipo di posizione del punto di interruzione non è solo un tipo di punto di interruzione (ad esempio, `BPT_CODE`) o un tipo di posizione (ad esempio, `BPLT_FILE_LINE`). Le costanti predefinite per tutti i tipi di posizione punto di interruzione attualmente supportati sono inclusi in questa enumerazione (`BPLT_CODE_FILE_LINE` tramite `BPLT_DATA_STRING`).  
+ Un tipo di posizione del punto di interruzione è costituito da un tipo di punto di interruzione e un tipo di posizione Ciò significa che un tipo di posizione del punto di interruzione non è mai solo un tipo di punto di interruzione (ad esempio, `BPT_CODE` ) o un tipo di posizione (ad esempio, `BPLT_FILE_LINE` ). Le costanti predefinite per tutti i tipi di posizione dei punti di interruzione attualmente supportati sono incluse in questa enumerazione ( `BPLT_CODE_FILE_LINE` tramite `BPLT_DATA_STRING` ).  
   
- `BPT_CODE` e `BPT_DATA` appartengono le [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumerazione.  
+ `BPT_CODE` e `BPT_DATA` sono membri dell'enumerazione [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

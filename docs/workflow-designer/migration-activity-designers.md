@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189724"
 ---
 # <a name="migration-activity-designers"></a>ActivityDesigner Migrazione
@@ -29,9 +29,9 @@ Per altri tipi di ActivityDesigner, vedere gli argomenti seguenti:
 
 - [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
 
-- [Uso degli Activity Designer](control-flow-activity-designers.md)
+- [Utilizzo degli ActivityDesigner](control-flow-activity-designers.md)
 
-- [Messaging](../workflow-designer/messaging-activity-designers.md)
+- [Messaggistica](../workflow-designer/messaging-activity-designers.md)
 
 - [Runtime](../workflow-designer/runtime-activity-designers.md)
 

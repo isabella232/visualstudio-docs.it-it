@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugEngine3::SetAllExceptions . Documenti Microsoft
+title: 'IDebugEngine3:: SetAllExceptions | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b2913756c30bf3b1c8436434da71337a2100aa8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730800"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
-Questo metodo imposta lo stato di tutte le eccezioni in sospeso.
+Questo metodo imposta lo stato di tutte le eccezioni in attesa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ int SetAllExceptions(
 
 ## <a name="parameters"></a>Parametri
 `dwState`\
-[in] Uno dei [valori EXCEPTION_STATE.](../../../extensibility/debugger/reference/exception-state.md)
+in Uno dei valori di [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha `S_OK`esito positivo, restituisce ; in caso contrario, restituisce il codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

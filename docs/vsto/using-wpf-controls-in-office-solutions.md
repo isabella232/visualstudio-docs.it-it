@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189759"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usare i controlli WPF nelle soluzioni Office
@@ -59,7 +59,7 @@ Non è possibile aggiungere i controlli WPF direttamente agli elementi dell'inte
 
     - Per i riquadri attività personalizzati, aggiungere un elemento del **controllo utente** al progetto. Per altre informazioni, vedere [procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-6. Dalla scheda **controlli utente WPF** di NomeProgetto della **casella degli strumenti**trascinare il controllo utente WPF nella finestra di progettazione per il riquadro azioni, l'area del modulo o il riquadro attività personalizzato.
+6. Dalla scheda *ProjectName* **controlli utente WPF** di NomeProgetto della **casella degli strumenti**trascinare il controllo utente WPF nella finestra di progettazione per il riquadro azioni, l'area del modulo o il riquadro attività personalizzato.
 
      Visual Studio crea automaticamente un oggetto <xref:System.Windows.Forms.Integration.ElementHost> che contiene il controllo utente WPF nell'elemento dell'interfaccia utente.
 
@@ -79,7 +79,7 @@ Non è possibile aggiungere i controlli WPF direttamente agli elementi dell'inte
 
 6. Aprire la finestra di progettazione per il controllo utente Windows Form.
 
-7. Dalla scheda **controlli utente WPF** di NomeProgetto della **casella degli strumenti**trascinare il controllo utente WPF nella finestra di progettazione.
+7. Dalla scheda *ProjectName* **controlli utente WPF** di NomeProgetto della **casella degli strumenti**trascinare il controllo utente WPF nella finestra di progettazione.
 
      Visual Studio crea automaticamente un oggetto <xref:System.Windows.Forms.Integration.ElementHost> che contiene il controllo utente WPF nel controllo utente Windows Form.
 
@@ -106,7 +106,7 @@ Per altre informazioni sulle problematiche di progettazione e architettura per l
 
 - [Interoperatività di WPF e Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
-- [Controlli Windows Form e controlli WPF equivalenti](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Controlli di Windows Forms e controlli WPF equivalenti](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Per altre informazioni sull'aggiunta dei controlli WPF a form e controlli Windows Form in Visual Studio in fase di progettazione, vedere gli argomenti seguenti:
 

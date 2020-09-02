@@ -58,10 +58,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a9ebda81f013f42aeac23c9c0a8cc5a0a41f5f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651348"
 ---
 # <a name="managing-external-tools"></a>Gestione di strumenti esterni
@@ -85,7 +85,7 @@ ms.locfileid: "72651348"
 6. Editor configurazione servizi WCF: consente di creare e modificare le impostazioni di configurazione dei servizi WCF.
 
 > [!WARNING]
-> È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="adding-new-tools"></a>Aggiunta di nuovi strumenti
  È possibile aggiungere uno strumento esterno al menu **Strumenti**. Aprire la finestra di dialogo **Strumenti esterni**, fare clic su **Aggiungi**, quindi inserire le informazioni. L'immissione seguente consente ad esempio di aprire la cartella dove si trova il file attualmente aperto in Visual Studio:
@@ -102,7 +102,7 @@ ms.locfileid: "72651348"
 > [!NOTE]
 > La barra di stato dell'IDE visualizza le variabili di Riga corrente e Colonna corrente per indicare dove si trova il punto di inserimento nell'Editor codice attivo. La variabile di Testo corrente restituisce il testo o codice selezionato in quella posizione.
 
-|Name|Argomento|Descrizione|
+|Nome|Argomento|Descrizione|
 |----------|--------------|-----------------|
 |Percorso elemento|$(ItemPath)|Nome file completo del file corrente (unità + percorso + nome file).|
 |Directory elemento|$(ItemDir)|Directory del file corrente (unità + percorso).|
@@ -112,10 +112,10 @@ ms.locfileid: "72651348"
 |Colonna corrente|$(CurCol)|Posizione della colonna corrente del cursore nella finestra del codice.|
 |Testo corrente|$(CurText)|Testo selezionato.|
 |Percorso di destinazione|$(TargetPath)|Nome file completo dell'elemento da compilare (unità + percorso + nome file).|
-|Target Directory|$(TargetDir)|Directory dell'elemento da compilare.|
-|Target Name|$(TargetName)|Nome file dell'elemento da compilare.|
+|Directory di destinazione|$(TargetDir)|Directory dell'elemento da compilare.|
+|Nome destinazione|$(TargetName)|Nome file dell'elemento da compilare.|
 |Estensione di destinazione|$(TargetExt)|Estensione di file dell'elemento da compilare.|
-|Directory binaria|$(BinDir)|Posizione finale del file binario in fase di compilazione (definita come unità + percorso). Ad esempio: **\\...\Documenti\Visual Studio \<Versione>\\<NomeProgetto\>\bin\debug**|
+|Directory binaria|$(BinDir)|Posizione finale del file binario in fase di compilazione (definita come unità + percorso). Ad esempio:** \\ . ..\Documenti\Visual Documenti\Visual Studio \<Version> \\<NomeProgetto \> \bin\Debug**|
 |Directory del progetto|$(ProjDir)|Directory del progetto corrente (unità + percorso).|
 |Nome del file di progetto|$(ProjFileName)|Nome file del progetto corrente (unità + percorso + nome file).|
 |Directory soluzione|$(SolutionDir)|Directory della soluzione corrente (unità + percorso).|
