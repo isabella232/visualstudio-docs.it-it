@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::GetCount | Microsoft Docs
+title: 'IEnumDebugFields:: GetCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f45cabbc9f95b41cbaabbdef1e3241bdfa7959d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199660"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
@@ -40,13 +40,13 @@ int GetCount(
   
 #### <a name="parameters"></a>Parametri  
  `pcelt`  
- [out] Restituisce il numero di elementi nell'enumerazione.  
+ out Restituisce il numero di elementi nell'enumerazione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo non fa parte l'interfaccia di enumerazione COM facoltativa che specifica che solo successivo, il Clone, Skip e reimpostazione deve essere implementata.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo non fa parte dell'interfaccia di enumerazione COM personalizzata che specifica che deve essere implementato solo Next, clone, Skip e reset.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

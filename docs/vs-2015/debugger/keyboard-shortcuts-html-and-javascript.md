@@ -1,5 +1,5 @@
 ---
-title: Tasti di scelta rapida (HTML e JavaScript) | Microsoft Docs
+title: Scelte rapide da tastiera (HTML e JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,42 +15,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199688"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Scelte rapide da tastiera (HTML e JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "windows_and_phone_content")  
   
  Tasti di scelta rapida in Visual Studio per il debug delle app di Store scritte in HTML e JavaScript.  
   
 ## <a name="general-shortcuts"></a>Tasti di scelta rapida generali  
  Questi tasti di scelta rapida funzionano per tutti gli strumenti delle app di Store scritte in HTML e JavaScript.  
   
-|Azione|Collegamento|  
+|Action|Tasto di scelta rapida|  
 |------------|--------------|  
 |Aggiornare l'app di Windows|CTRL+MAIUSC+R|  
 |Riavviare l'app di Windows|Ctrl+Maiusc+F5|  
-|Arrestare il debug|MAIUSC+F5|  
+|Arrestare l'esecuzione del debug|MAIUSC+F5|  
 |Aprire l'hub Prestazioni e diagnostica|ALT+F2|  
   
 ## <a name="javascript-console-shortcuts"></a>Tasti di scelta rapida della Console JavaScript  
  Usa questi tasti di scelta rapida nella finestra Console JavaScript.  
   
-|Azione|Collegamento|  
+|Action|Tasto di scelta rapida|  
 |------------|--------------|  
-|Eseguire un comando della console|INVIO|  
+|Eseguire un comando della console|Immettere|  
 |Chiudere la console|ESC|  
 |Passare dalla modalità a riga singola a quella multiriga e viceversa|CTRL+ALT+M|  
   
 ## <a name="dom-explorer-shortcuts"></a>Tasti di scelta rapida di DOM Explorer  
  Usa questi tasti di scelta rapida in DOM Explorer.  
   
-|Azione|Collegamento|  
+|Action|Tasto di scelta rapida|  
 |------------|--------------|  
 |Seleziona elemento|Ctrl+B|  
 |Visualizzare/nascondere le caselle evidenziate della pagina Web quando si usa **Seleziona elemento**|CTRL+MAIUSC+I|  
@@ -60,5 +60,5 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |Ridurre il valore CSS selezionato di 1|Freccia GIÙ|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [Guida introduttiva: eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

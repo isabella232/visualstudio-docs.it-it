@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7fadcff84c4b927a7718d7d4ad1311918ae0f18a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199784"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Specifica del percorso degli strumenti da riga di comando degli strumenti di profilatura
@@ -22,15 +22,15 @@ ms.locfileid: "68199784"
 Il percorso degli strumenti da riga di comando di Strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non è aggiunto alla variabile di ambiente PATH. Nei computer a 32 bit gli strumenti si trovano in un'unica directory. Nei computer a 64 bit sono disponibili versioni a 32 bit e a 64 bit degli strumenti di profilatura.  
   
 ## <a name="32-bit-computers"></a>Computer a 32 bit  
- Nei computer a 32 bit la directory predefinita per gli strumenti di profilatura è *Unità*\Programmi\Microsoft Visual Studio 11.0\Team Tools\Performance Tools.  
+ Nei computer a 32 bit la directory predefinita degli strumenti del profiler è *unità*\Programmi\microsoft Visual Studio 11.0 \ Team Tools\Performance Tools.  
   
 ## <a name="64-bit-computers"></a>Computer a 64 bit  
  Nei computer a 64 bit specificare il percorso in base alla piattaforma di destinazione dell'applicazione da sottoporre a profilatura.  
   
 - La directory predefinita per gli strumenti di profilatura per applicazioni a 32 bit è la seguente:  
   
-     *Unità*\Programmi (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
+     *Unità*\Program Files (x86) \Microsoft Visual Studio 11.0 \ Team Tools\Performance Tools  
   
 - La directory predefinita per gli strumenti di profilatura per applicazioni a 64 bit è la seguente:  
   
-     *Unità*\Programmi (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64
+     *Unità*\Program Files (x86) \Microsoft Visual Studio 11.0 \ Team Tools\Performance Tools\x64

@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51c79c34520c36e51599d4d6135784f493673b62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146456"
 ---
 # <a name="visualizer-security-considerations"></a>Considerazioni sulla sicurezza del visualizzatore
@@ -41,7 +41,7 @@ La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. At
  Per ovviare a questa vulnerabilità, tenere presenti le interfacce esposte dal visualizzatore.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Architettura del visualizzatore](../debugger/visualizer-architecture.md)   
- [Procedura: Scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
+ [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)   
+ [Procedura: scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)   
  [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

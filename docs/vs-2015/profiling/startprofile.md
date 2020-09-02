@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 994cde18cfe304add796bffa74d2a327e1c63f45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199748"
 ---
 # <a name="startprofile"></a>StartProfile
@@ -36,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. Gli enumeratori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:  
   
-|Enumerator|DESCRIZIONE|  
+|Enumeratore|Descrizione|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Impostazione del livello globale con effetti su tutti i processi e i thread nell'esecuzione della profilatura.|  
 |PROFILE_PROCESSLEVEL|Impostazione del livello processo con effetti su tutti i thread che fanno parte del processo specificato.|  
@@ -47,9 +47,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  Identificatore del processo o del thread generato dal sistema.  
   
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
- La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
+ La funzione indica esito l'esito positivo o negativo tramite l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
-|Enumerator|DESCRIZIONE|  
+|Enumeratore|Descrizione|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|L'ID dell'elemento di profilatura non esiste.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Il livello di profilatura specificato non esiste.|  
@@ -110,4 +110,4 @@ void ExerciseStartProfile()
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
