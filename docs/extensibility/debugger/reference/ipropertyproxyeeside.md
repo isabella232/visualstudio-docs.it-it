@@ -1,5 +1,5 @@
 ---
-title: Proprietà IPropertyProxyEESide . Documenti Microsoft
+title: IPropertyProxyEESide | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c89cecbf22091a45e31c307c5b523ac8aa4c924e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714855"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
-Questa interfaccia fornisce metodi per visualizzare i dati sull'oggetto associato. Questa interfaccia fa parte del supporto per i visualizzatori di tipo.
+Questa interfaccia fornisce i metodi per visualizzare i dati nell'oggetto associato. Questa interfaccia è parte del supporto per i visualizzatori di tipi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,30 +29,30 @@ IPropertyProxyEESide : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Un analizzatore di espressioni implementa questa interfaccia per supportare i visualizzatori di tipo.
+ Un analizzatore di espressioni implementa questa interfaccia per supportare i visualizzatori di tipi.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) per ottenere questa interfaccia. Chiamare [QueryInterface](/cpp/atl/queryinterface) su un [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia per ottenere il [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) interfaccia.
+ Chiamare [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) per ottenere questa interfaccia. Chiamare [QueryInterface](/cpp/atl/queryinterface) su un'interfaccia [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) per ottenere l'interfaccia [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) .
 
-## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
- Questa interfaccia implementa i seguenti metodi:
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
+ Questa interfaccia implementa i metodi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|Inizializza un provider dell'origine dati in modo che sia possibile accedere ai dati dell'oggetto.|
-|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|Recupera informazioni sull'assembly dell'oggetto.|
+|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|Recupera le informazioni sull'assembly dell'oggetto.|
 |[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|Ottiene i dati iniziali per l'oggetto.|
-|[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|Crea una copia di un archivio dati esistente.|
+|[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|Crea una copia di un'archiviazione dati esistente.|
 |[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|Crea un riferimento a un archivio dati esistente.|
 |[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|Recupera informazioni su un assembly specifico nel contesto dell'assembly contenente questo oggetto.|
 
 ## <a name="remarks"></a>Osservazioni
- Un visualizzatore di tipo utilizza questa interfaccia per accedere ai valori associati all'oggetto di cui fa parte questa interfaccia. L'accesso ai dati avviene tramite l'interfaccia [IEEDataStorage,](../../../extensibility/debugger/reference/ieedatastorage.md) che fornisce una visualizzazione di sola lettura dei dati.
+ Un visualizzatore di tipi usa questa interfaccia per accedere ai valori associati all'oggetto di cui fa parte l'interfaccia. L'accesso ai dati viene eseguito tramite l'interfaccia [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) , che fornisce una visualizzazione di sola lettura dei dati.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

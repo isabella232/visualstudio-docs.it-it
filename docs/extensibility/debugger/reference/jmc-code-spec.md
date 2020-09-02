@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC . Documenti Microsoft
+title: JMC_CODE_SPEC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714734"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
@@ -43,18 +43,18 @@ public struct JMC_CODE_SPEC {
 
 ## <a name="members"></a>Membri
 `fIsUserCode`\
-Diverso da`TRUE`zero ( ) se il modulo deve essere considerato codice utente; in caso`FALSE`contrario, zero ( ) se il modulo deve essere considerato come codice esterno e non deve essere sottoposto a debug.
+Diverso da zero ( `TRUE` ) se il modulo deve essere considerato codice utente; in caso contrario, zero ( `FALSE` ) se il modulo deve essere trattato come codice esterno e non deve essere sottoposto a debug.
 
 `bstrModuleName`\
 Nome del modulo in questione.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene passata come elenco di tali strutture per il [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) metodo.
+Questa struttura viene passata come un elenco di tali strutture al metodo [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

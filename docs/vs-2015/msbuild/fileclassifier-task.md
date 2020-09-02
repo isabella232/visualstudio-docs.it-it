@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2077b1df6d6362c924527e296d36c041e7bd9929
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65693789"
 ---
 # <a name="fileclassifier-task"></a>Attività FileClassifier
@@ -32,16 +32,16 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica un in
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
-|`CLREmbeddedResource`|Non usato.|  
-|`CLRResourceFiles`|Non usato.|  
-|`CLRSatelliteEmbeddedResource`|Non usato.|  
-|`Culture`|Parametro **String** facoltativo.<br /><br /> Specifica le impostazioni cultura per la compilazione. Questo valore può essere **null** se la compilazione non è localizzabile. Se **null**, il valore predefinito corrisponde al valore minuscolo restituito da **CultureInfo.InvariantCulture**.|  
-|`MainEmbeddedFiles`|Parametro di output **ITaskItem[]** facoltativo.<br /><br /> Specifica le risorse non localizzabili incorporate nell'assembly principale.|  
+|`CLREmbeddedResource`|Non utilizzato.|  
+|`CLRResourceFiles`|Non utilizzato.|  
+|`CLRSatelliteEmbeddedResource`|Non utilizzato.|  
+|`Culture`|Parametro **stringa** facoltativo.<br /><br /> Specifica le impostazioni cultura per la compilazione. Questo valore può essere **null** se la compilazione non è localizzabile. Se **null**, il valore predefinito corrisponde al valore minuscolo restituito da **CultureInfo.InvariantCulture**.|  
+|`MainEmbeddedFiles`|Parametro di output facoltativo **ITaskItem[]**.<br /><br /> Specifica le risorse non localizzabili incorporate nell'assembly principale.|  
 |`OutputType`|Parametro **String** obbligatorio.<br /><br /> Specifica il tipo di file in cui incorporare i file di origine specificati. I valori validi sono **exe**, **winexe** e **library**.|  
-|`SatelliteEmbeddedFiles`|Parametro di output **ITaskItem[]** facoltativo.<br /><br /> Specifica i file localizzabili incorporati nell'assembly satellite per le impostazioni cultura specificate dal parametro **Culture**.|  
-|`SourceFiles`|Parametro **ITaskItem []** obbligatorio.<br /><br /> Specifica l'elenco di file da classificare.|  
+|`SatelliteEmbeddedFiles`|Parametro di output facoltativo **ITaskItem[]**.<br /><br /> Specifica i file localizzabili incorporati nell'assembly satellite per le impostazioni cultura specificate dal parametro **Culture**.|  
+|`SourceFiles`|Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica l'elenco di file da classificare.|  
   
 ## <a name="remarks"></a>Osservazioni  
  Se il parametro **Culture** non è impostato, tutte le risorse specificate usando il parametro **SourceFiles** non sono localizzabili. In caso contrario, sono localizzabili a meno che non vengano associate a un attributo **Localizable** impostato su **false**.  
@@ -67,8 +67,8 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica un in
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)   
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimenti a MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Riferimento attività](../msbuild/wpf-msbuild-task-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)   
  [Compilazione di un'applicazione WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

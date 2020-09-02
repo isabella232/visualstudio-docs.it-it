@@ -9,10 +9,10 @@ caps.latest.revision: 16
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b6f358f43dcace230e1d58773e58be011d9033e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657085"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Scrittura di unit test per C/C++ con il framework di testing unità Microsoft per C++.
@@ -60,7 +60,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 
     - `Assert` contiene diverse funzioni statiche che è possibile usare per verificare i risultati di un test.
 
-    - Il parametro `LINE_INFO()` è facoltativo. Nei casi in cui non esiste alcun file PDB, consente al Test Runner di identificare la posizione di un errore.
+    - `LINE_INFO()` è facoltativo. Nei casi in cui non esiste alcun file PDB, consente al Test Runner di identificare la posizione di un errore.
 
     - È anche possibile scrivere metodi di impostazione e pulizia dei test. Per altre informazioni, aprire la definizione della macro `TEST_METHOD` e leggere i commenti in CppUnitTest.h.
 
@@ -82,7 +82,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 
         3. Dal menu di scelta rapida di un test, scegliere **Debug del test selezionato** per eseguire il test nel debugger
 
-## <a name="walkthrough"></a> Procedura dettagliata: Compilare una DLL non gestita con Esplora test
+## <a name="walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a> Procedura dettagliata: Compilare una DLL non gestita con Esplora test
  È possibile adattare questa procedura dettagliata per compilare la propria DLL. La procedura principale è la seguente:
 
 1. [Creare un progetto di test nativo](#unitTestProject). I test vengono creati in un progetto separato dalla DLL che si sta sviluppando.
@@ -101,21 +101,21 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 
 8. [Unità isolate da risorse esterne](https://msdn.microsoft.com/library/hh549174.aspx). In genere, una DLL dipende da altri componenti del sistema che si sta sviluppando, come altre DLL, i database, o dei sottosistemi remoti. È utile verificare ogni unità in isolamento dalle relative dipendenze. I componenti esterni possono provocare un rallentamento dell'esecuzione dei test. Durante lo sviluppo, gli altri componenti potrebbero non essere completati.
 
-### <a name="unitTestProject"></a> Creare un progetto nativo di unit test
+### <a name="create-a-native-unit-test-project"></a><a name="unitTestProject"></a> Creare un progetto nativo di unit test
 
-1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
-     Nella finestra di dialogo espandere, **Installato**, **Modelli**, **Visual C++** , **Test**.
+     Nella finestra di dialogo espandere, **Installato**, **Modelli**, **Visual C++**, **Test**.
 
      Scegliere il modello **Progetto di test nativo** .
 
      In questa procedura dettagliata, il progetto di test viene denominato `NativeRooterTest`.
 
-     ![Creazione di un&#43; &#43; progetto unit test C](../test/media/utecpp01.png "UteCpp01")
+     ![Creazione di un progetto di unit test di&#43;&#43; C](../test/media/utecpp01.png "UteCpp01")
 
 2. Nel nuovo progetto, controllare **unittest1.cpp**
 
-     ![Progetto di test con&#95;classe di test&#95;e metodo di test](../test/media/utecpp2.png "UteCpp2")
+     ![Progetto di test con classe&#95;di test e metodo di&#95;di TEST](../test/media/utecpp2.png "UteCpp2")
 
      Si noti che:
 
@@ -125,7 +125,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 
     - I metodi dei test vengono raggruppati in classi usando `TEST_CLASS(YourClassName){...}`.
 
-         Quando vengono eseguiti i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato. È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo.
+         Quando si eseguono i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato. È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo.
 
 3. Verificare che i test vengano eseguiti in Esplora test:
 
@@ -140,7 +140,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 
          Si noti che la classe `Assert` fornisce diversi metodi statici che è possibile usare per verificare i risultati nei metodi di test.
 
-    2. Dal menu **Test** , scegliere **Esegui** , **Tutti i test**.
+    2. Scegliere **Esegui** , **tutti i test**dal menu **test** .
 
          Viene eseguita la compilazione e l'esecuzione del test.
 
@@ -150,19 +150,19 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 
          ![Esplora unit test con un test superato](../test/media/utecpp04.png "UteCpp04")
 
-### <a name="createDllProject"></a> Creare un progetto DLL non gestito
+### <a name="create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> Creare un progetto DLL non gestito
 
 1. Creare un progetto **Visual C++** tramite il modello **Progetto Win32** .
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
-     ![Creazione di un&#43; &#43; progetto C Win32](../test/media/utecpp05.png "UteCpp05")
+     ![Creazione di un progetto Win32 di&#43;&#43; C](../test/media/utecpp05.png "UteCpp05")
 
 2. Selezionare **DLL** ed **Esporta simboli** nella creazione guidata applicazione Win32.
 
      L'opzione **Esporta simboli** genera una semplice macro che è possibile usare per dichiarare i metodi esportati.
 
-     ![Creazione&#43; &#43; guidata progetto C impostata per i simboli dll ed export](../test/media/utecpp06.png "UteCpp06")
+     ![Creazione guidata progetto C&#43;&#43; impostata per i simboli DLL ed export](../test/media/utecpp06.png "UteCpp06")
 
 3. Dichiarare una funzione esportata nel file .h principale:
 
@@ -180,19 +180,19 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
     }
     ```
 
-### <a name="coupleProjects"></a> Unire il progetto di test al progetto DLL
+### <a name="couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> Unire il progetto di test al progetto DLL
 
 1. Aggiungere il progetto DLL ai riferimenti del progetto di test:
 
    1. Aprire le proprietà del progetto di test e scegliere **Proprietà comuni**, **Framework e riferimenti**.
 
-        ![Framework&#43; &#43; e riferimenti &#45; per le proprietà del progetto C](../test/media/utecpp08.png "UteCpp08")
+        ![Proprietà del progetto C&#43;&#43; &#45; Framework e riferimenti](../test/media/utecpp08.png "UteCpp08")
 
    2. Scegliere **Aggiungi nuovo riferimento**.
 
         Nella finestra di dialogo **Aggiungi riferimento** , selezionare il progetto DLL e scegliere **Aggiungi**.
 
-        ![&#43; &#43; Proprietà &#45; progetto C Aggiungi nuovo riferimento](../test/media/utecpp09.png "UteCpp09")
+        ![Proprietà del progetto&#43;&#43; C &#45; Aggiungi nuovo riferimento](../test/media/utecpp09.png "UteCpp09")
 
 2. Nel file principale .cpp delll'unit test, includere il file .h del codice DLL:
 
@@ -226,11 +226,11 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 
 5. In Esplora test scegliere **Esegui tutto**.
 
-    ![Test di base &#45; di Esplora unit test superato](../test/media/utecpp10.png "UteCpp10")
+    ![Esplora unit test &#45; test di base superato](../test/media/utecpp10.png "UteCpp10")
 
    È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
-### <a name="iterate"></a> Aumentare i test in maniera iterativa e farli passare
+### <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Aumenta in modo iterativo i test e passali
 
 1. Aggiungere un nuovo test:
 
@@ -251,11 +251,11 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
     >
     >  Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.
 
-2. Compilare la soluzione e quindi in Esplora test, scegliere **Esegui tutto**.
+2. Compilare la soluzione, quindi in Esplora test scegliere **Esegui tutto**.
 
      Il nuovo test non riesce.
 
-     ![Il RangeTest ha esito negativo](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest non riuscito](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.
@@ -279,16 +279,16 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
     }
     ```
 
-4. Compilare la soluzione e quindi in Esplora test, scegliere **Esegui tutto**.
+4. Compilare la soluzione e quindi in Esplora test scegliere **Esegui tutto**.
 
      Entrambi i test vengono superati.
 
-     ![Test intervallo Esplora &#45; unit test superato](../test/media/utecpp12.png "UteCpp12")
+     ![Esplora unit test &#45; test intervallo superato](../test/media/utecpp12.png "UteCpp12")
 
     > [!TIP]
     > Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.
 
-### <a name="debug"></a> Debug di un test non superato
+### <a name="debug-a-failing-test"></a><a name="debug"></a> Eseguire il debug di un test non superato
 
 1. Aggiungere un altro test:
 
@@ -363,7 +363,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 > [!TIP]
 > Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-Small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
-### <a name="refactor"></a> Eseguire il refactoring del codice senza modificare i test
+### <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Effettuare il refactoring del codice senza modificare i test
 
 1. Semplificare il calcolo centrale nella funzione SquareRoot:
 
@@ -393,4 +393,4 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
      È anche possibile lasciare al chiamante un livello minimo di code coverage.
 
 ## <a name="see-also"></a>Vedere anche
- [Aggiunta di unit test alle C++ applicazioni esistenti](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [tramite Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [Panoramica del codice gestito/non gestito per l'interoperabilità del debug del](https://msdn.microsoft.com/library/ms973872.aspx) [codice nativo](../debugger/debugging-native-code.md) [procedura dettagliata: Creazione e utilizzo di una libreria a collegamentoC++dinamico ()](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [importazione ed esportazione](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [Aggiunta di unit test alle applicazioni C++ esistenti](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) [tramite Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) [Panoramica del codice gestito/non gestito interoperabilità debug del](https://msdn.microsoft.com/library/ms973872.aspx) [codice nativo](../debugger/debugging-native-code.md) [procedura dettagliata: creazione e utilizzo di una libreria a collegamento dinamico (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941) [importazione ed esportazione](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

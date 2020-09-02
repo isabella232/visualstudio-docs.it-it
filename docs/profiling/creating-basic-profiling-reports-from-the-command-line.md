@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bca944b67b19fdbb4138c479acf5693994d1c717
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329047"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Creare report di profilatura di base tramite la riga di comando
@@ -39,7 +39,7 @@ Questo articolo descrive i comandi VSPerfReport di base che generano report di v
 |**Contatore**|Elenca i contrassegni di profilo e valori del contatore delle prestazioni di Windows raccolti durante l'esecuzione della profilatura.|-   [Visualizzazione Contrassegni](../profiling/marks-view.md)|
 |**IP**|Elenca i dati di profilatura per istruzione.|-   [Campionamento dei dati](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dati su conflitti](../profiling/instruction-pointers-ips-view-contention-data.md)|
 |**Life**|Visualizza la durata degli oggetti allocati.|-   [Visualizzazione Durata oggetti](../profiling/object-lifetime-view.md)|
-|**Grafico a linee**|Elenca i dati di profilatura per riga di codice sorgente.|-   [Campionamento dei dati](../profiling/lines-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dati sui conflitti](../profiling/lines-view-contention-data.md)|
+|**Linea**|Elenca i dati di profilatura per riga di codice sorgente.|-   [Campionamento dei dati](../profiling/lines-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dati sui conflitti](../profiling/lines-view-contention-data.md)|
 |**Intestazione**|Informazioni di intestazione per il file di dati di profilatura.|Specifico per il file.|
 |**Contrassegno**|Contrassegni di profilatura raccolti nell'esecuzione della profilatura.|-   [Visualizzazione Contrassegni](../profiling/marks-view.md)|
 |**Modulo**|Elenca i dati di profilatura per i moduli.|-   [Campionamento dei dati](../profiling/modules-view-sampling-data.md)<br />-   [Dati di strumentazione](../profiling/modules-view-instrumentation-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione di memoria .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/modules-view-contention-data.md)|

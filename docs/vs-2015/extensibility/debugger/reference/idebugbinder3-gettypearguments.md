@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Microsoft Docs
+title: 'IDebugBinder3:: GetTypeArguments | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,15 +13,15 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f7b6038013370ad85a665d9899d367e621aa991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192279"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
-Questo metodo recupera un elenco dei tipi di argomento associato all'oggetto.
+Questo metodo recupera un elenco di tipi di argomenti associati a questo oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,25 +47,25 @@ int GetTypeArguments(
 
  `skip`
 
- [in] Numero di campi da ignorare prima di ottenere i tipi di argomento.
+ in Numero di campi da ignorare prima di ottenere i tipi di argomento.
 
  `count`
 
- [in] Il numero di campi dell'argomento da restituire (specifica anche la dimensione del `ppFields` matrice).
+ in Numero di campi argomento da restituire (specifica anche la dimensione della `ppFields` matrice).
 
  `ppFields`
 
- [in, out] Matrice di campi che verranno compilati in fase di restituzione di questo metodo.
+ [in, out] Matrice di campi che verrà compilata al ritorno di questo metodo.
 
  `pFetched`
 
- [out] Il numero di campi dei tipi di argomento ha effettivamente restituito (facoltativo).
+ out Il numero di campi del tipo di argomento effettivamente restituiti (facoltativo).
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Note
- È possibile ottenere in anticipo il numero di tipi di argomento con [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+## <a name="remarks"></a>Osservazioni
+ Il numero di tipi di argomento può essere ottenuto in anticipo con [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
 ## <a name="see-also"></a>Vedere anche
 

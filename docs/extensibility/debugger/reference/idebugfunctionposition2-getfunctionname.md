@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetFunctionName . Documenti Microsoft
+title: 'IDebugFunctionPosition2:: getfunctionname | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 771dbe369154200805fb9d344dd5b457353e34dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728419"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
-Ottiene il nome della funzione a cui punta questa posizione.
+Ottiene il nome della funzione a cui fa riferimento questa posizione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ int GetFunctionName(
 
 ## <a name="parameters"></a>Parametri
 `pbstrFunctionName`\
-[fuori] Restituisce il nome della funzione.
+out Restituisce il nome della funzione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

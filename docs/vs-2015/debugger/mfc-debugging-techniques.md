@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c795e978de3911b3c5e815583c32e878fd7b173
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696909"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
@@ -39,16 +39,16 @@ ms.locfileid: "65696909"
 
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.  
   
-## <a name="BKMK_In_this_topic"></a> In questo argomento  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
  [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
- [Utilizzo della macro TRACE](#BKMK_The_TRACE_macro)  
+ [Macro TRACE](#BKMK_The_TRACE_macro)  
   
  [Rilevamento di perdite di memoria in MFC](#BKMK_Memory_leak_detection_in_MFC)  
   
-- [Gestione delle allocazioni di memoria](#BKMK_Tracking_memory_allocations)  
+- [Rilevamento delle allocazioni di memoria](#BKMK_Tracking_memory_allocations)  
   
-- [Abilitazione della diagnostica di memoria](#BKMK_Enabling_memory_diagnostics)  
+- [Abilitazione della diagnostica della memoria](#BKMK_Enabling_memory_diagnostics)  
   
 - [Creazione di snapshot di memoria](#BKMK_Taking_memory_snapshots)  
   
@@ -64,7 +64,7 @@ Se si effettua il debug di un programma MFC, possono essere utili le seguenti te
   
   - [Compilazione di un'app MFC con informazioni di debug per i moduli selezionati](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
-## <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
+## <a name="afxdebugbreak"></a><a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC offre una speciale funzione [AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) per programmare i punti di interruzione nel codice sorgente:  
   
 ```  
@@ -82,9 +82,9 @@ _asm int 3
   
  Accertarsi di rimuovere le istruzioni `AfxDebugBreak` quando si crea una build di rilascio o si utilizza `#ifdef _DEBUG` per racchiuderle.  
   
- [In questo argomento](#BKMK_In_this_topic)  
+ [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-## <a name="BKMK_The_TRACE_macro"></a> Utilizzo della macro TRACE  
+## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> Utilizzo della macro TRACE  
  Per visualizzare i messaggi generati dal programma nella [finestra di output](../ide/reference/output-window.md)del debugger è possibile usare la macro [ATLTRACE](https://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) oppure la macro [TRACE](https://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) MFC. Analogamente alle [asserzioni](../debugger/c-cpp-assertions.md)le macro di traccia sono attive solo nella versione di debug del programma e vengono annullate quando ne viene effettuata la compilazione nella versione di rilascio.  
   
  Gli esempi che seguono illustrano alcuni metodi di utilizzo della macro **TRACE** . Analogamente a `printf`la macro **TRACE** è in grado di gestire svariati argomenti.  
@@ -115,12 +115,12 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  Per altre informazioni sulla macro **TRACE** , vedere [Servizi diagnostici](https://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8).  
   
- [In questo argomento](#BKMK_In_this_topic)  
+ [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Memory_leak_detection_in_MFC"></a> Rilevamento di perdite di memoria in MFC  
+## <a name="detecting-memory-leaks-in-mfc"></a><a name="BKMK_Memory_leak_detection_in_MFC"></a> Rilevamento di perdite di memoria in MFC  
  MFC offre classi e funzioni per il rilevamento della memoria allocata ma mai disallocata.  
   
-### <a name="BKMK_Tracking_memory_allocations"></a> Gestione delle allocazioni di memoria  
+### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Gestione delle allocazioni di memoria  
  In MFC è possibile usare la macro [DEBUG_NEW](https://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) anziché l'operatore **new** per un supporto nella ricerca di perdite di memoria. Nella versione di debug del programma, `DEBUG_NEW` tiene traccia del nome file e del numero di riga di ciascun oggetto da esso allocato. Quando si compila una versione di rilascio del programma, `DEBUG_NEW` si traduce in una semplice operazione **new** senza informazioni relative a nome file e numero di riga. La velocità non viene pertanto in alcun modo compromessa nella versione di rilascio del programma.  
   
  Se non si desidera riscrivere l'intero programma in modo da utilizzare `DEBUG_NEW` anziché **new**, sarà possibile definire questa macro nei file sorgente:  
@@ -133,9 +133,9 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  La versione di debug del framework MFC utilizza `DEBUG_NEW` automaticamente, a differenza del codice. Se si desidera godere dei vantaggi di `DEBUG_NEW`, sarà necessario utilizzare `DEBUG_NEW` esplicitamente oppure **#define new** come illustrato in precedenza.  
   
- [In questo argomento](#BKMK_In_this_topic)  
+ [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Enabling_memory_diagnostics"></a> Abilitazione della diagnostica di memoria  
+### <a name="enabling-memory-diagnostics"></a><a name="BKMK_Enabling_memory_diagnostics"></a> Abilitazione della diagnostica di memoria  
  Per poter utilizzare le utilità di diagnostica della memoria è necessario attivare la traccia diagnostica.  
   
  **Per abilitare o disabilitare la diagnostica della memoria**  
@@ -146,7 +146,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 - Se si desidera godere di un maggior controllo sulle caratteristiche di diagnostica della memoria, sarà possibile attivare e disattivare selettivamente singole caratteristiche di diagnostica della memoria impostando il valore della variabile globale MFC [afxMemDF](https://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). A questa variabile è possibile assegnare i seguenti valori, come specificato dal tipo enumerato **afxMemDF**.  
   
-  |Value|Descrizione|  
+  |Valore|Descrizione|  
   |-----------|-----------------|  
   |**allocMemDF**|Attiva l'allocatore di memoria diagnostica (impostazione predefinita).|  
   |**delayFreeMemDF**|Liberare memoria quando si chiama `delete` o `free` solo dopo la chiusura del programma. In questo modo il programma allocherà la maggior quantità possibile di memoria.|  
@@ -158,9 +158,9 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
   ```  
   
-  [In questo argomento](#BKMK_In_this_topic)  
+  [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Taking_memory_snapshots"></a> Creazione di snapshot di memoria  
+### <a name="taking-memory-snapshots"></a><a name="BKMK_Taking_memory_snapshots"></a> Creazione di snapshot di memoria  
   
 1. Creare un oggetto [CMemoryState](https://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) e chiamare la funzione membro [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) . Verrà creato il primo snapshot della memoria.  
   
@@ -191,13 +191,13 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Si noti che le istruzioni relative al controllo della memoria sono racchiuse in blocchi `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** in modo che vengano compilate solo nelle versioni di debug del programma.  
+    Si noti che le istruzioni di controllo della memoria sono racchiuse tra `#ifdef` [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) /  blocchi di **#endif** in modo che vengano compilate solo nelle versioni di debug del programma.  
   
     Determinata l'esistenza di una perdita di memoria, sarà possibile usare un'altra funzione membro, [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , che consentirà di individuare la perdita.  
   
-   [In questo argomento](#BKMK_In_this_topic)  
+   [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Viewing_memory_statistics"></a> Visualizzazione delle statistiche di memoria  
+### <a name="viewing-memory-statistics"></a><a name="BKMK_Viewing_memory_statistics"></a> Visualizzazione delle statistiche di memoria  
  La funzione [CMemoryState::Difference](https://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) esamina due oggetti stato di memoria e rileva eventuali oggetti non deallocati dall'heap tra gli stati iniziale e finale. Dopo aver creato snapshot di memoria e averli confrontati usando `CMemoryState::Difference`, è possibile chiamare [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) per ottenere informazioni sugli oggetti non deallocati.  
   
  Si consideri l'esempio seguente:  
@@ -230,10 +230,10 @@ Total allocations: 67 bytes
   
  `Total allocations` indica la quantità totale di memoria utilizzata dal programma.  
   
- [In questo argomento](#BKMK_In_this_topic)  
+ [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Taking_object_dumps"></a> Creazione di dump di oggetti  
- In un programma MFC, è possibile usare [CMemoryState:: DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) per eseguire il dump una descrizione di tutti gli oggetti nell'heap non deallocati. `DumpAllObjectsSince` esegue il dump di tutti gli oggetti allocati dall'ultima [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Se non ha avuto luogo alcuna chiamata `Checkpoint` , `DumpAllObjectsSince` effettuerà il dump di tutti gli oggetti e non oggetti attualmente in memoria.  
+### <a name="taking-object-dumps"></a><a name="BKMK_Taking_object_dumps"></a> Acquisizione di dump di oggetti  
+ In un programma MFC, è possibile usare [CMemoryState::D umpallobjectssince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) per eseguire il dump di una descrizione di tutti gli oggetti nell'heap che non sono stati deallocati. `DumpAllObjectsSince` esegue il dump di tutti gli oggetti allocati dall'ultima [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Se non ha avuto luogo alcuna chiamata `Checkpoint` , `DumpAllObjectsSince` effettuerà il dump di tutti gli oggetti e non oggetti attualmente in memoria.  
   
 > [!NOTE]
 > Prima di poter utilizzare il dump di oggetti MFC, è necessario [abilitare la traccia di diagnostica](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
@@ -276,9 +276,9 @@ Phone #: 581-0215
   
  La libreria di run-time del linguaggio C dispone di una funzione simile, [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1), che è possibile usare per le allocazioni di run-time del linguaggio C.  
   
- [In questo argomento](#BKMK_In_this_topic)  
+ [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-#### <a name="BKMK_Interpreting_memory_dumps"></a> Interpretazione dei dump di memoria  
+#### <a name="interpreting-memory-dumps"></a><a name="BKMK_Interpreting_memory_dumps"></a> Interpretazione dei dump di memoria  
  Considerare questo dump di oggetti in maggior dettaglio:  
   
 ```  
@@ -359,12 +359,12 @@ Phone #: 581-0215
 }  
 ```  
   
- [In questo argomento](#BKMK_In_this_topic)  
+ [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-#### <a name="BKMK_Customizing_object_dumps"></a> Personalizzazione di dump di oggetti  
+#### <a name="customizing-object-dumps"></a><a name="BKMK_Customizing_object_dumps"></a> Personalizzazione di dump di oggetti  
  Quando si deriva una classe da [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), è possibile eseguire l'override della funzione membro `Dump` per fornire ulteriori informazioni quando si usa [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) per eseguire il dump di oggetti nella [finestra Output](../ide/reference/output-window.md).  
   
- La funzione `Dump` scrive una rappresentazione testuale delle variabili membro dell'oggetto in un contesto di dump ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Il contesto di dump è analogo a un flusso I/O. È possibile usare l'operatore APPEND ( **<<** ) per inviare dati a `CDumpContext`.  
+ La funzione `Dump` scrive una rappresentazione testuale delle variabili membro dell'oggetto in un contesto di dump ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Il contesto di dump è analogo a un flusso I/O. È possibile usare l'operatore Append ( **<<** ) per inviare dati a un oggetto `CDumpContext` .  
   
  Quando si esegue l'override della funzione `Dump` , è opportuno chiamare dapprima la versione della classe base di `Dump` per effettuare il dump del contenuto dell'oggetto classe base, generando poi una descrizione testuale e un valore per ciascuna variabile membro della classe derivata.  
   
@@ -414,37 +414,37 @@ pMyPerson->Dump( afxDump );
 #endif  
 ```  
   
- [In questo argomento](#BKMK_In_this_topic)  
+ [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Riduzione delle dimensioni di una build di debug di MFC  
+## <a name="reducing-the-size-of-an-mfc-debug-build"></a><a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Riduzione delle dimensioni di una build di debug MFC  
  Le informazioni di debug di un'applicazione MFC di grandi dimensioni possono richiedere notevole spazio su disco. Per ridurre le dimensioni, è possibile usare una di queste procedure:  
   
-1. Ricompilare le librerie MFC usando il [/Z7, /Zi, /ZI (formato informazioni di Debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opzione, anziché **/Z7**. Queste opzioni compilano un singolo file di database di programma (PDB) che contiene informazioni di debug per l'intera libreria, riducendo la ridondanza e risparmiando spazio.  
+1. Ricompilare le librerie MFC usando l'opzione [/Z7,/Zi,/Zi (formato informazioni di debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) invece di **/Z7**. Queste opzioni compilano un singolo file di database di programma (PDB) che contiene informazioni di debug per l'intera libreria, riducendo la ridondanza e risparmiando spazio.  
   
-2. Ricompilare le librerie MFC senza informazioni di debug (nessun [/Z7, /Zi, /ZI (formato informazioni di Debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opzione). In questo caso la mancanza delle informazioni di debug impedirà di utilizzare la maggior parte delle utilità del debugger nel codice delle librerie MFC, ma dal momento che le librerie MFC sono già state sottoposte a un debug completo, questo non dovrebbe rappresentare un problema.  
+2. Ricompilare le librerie MFC senza informazioni di debug (nessuna opzione [/Z7,/Zi,/Zi (formato informazioni di debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) ). In questo caso la mancanza delle informazioni di debug impedirà di utilizzare la maggior parte delle utilità del debugger nel codice delle librerie MFC, ma dal momento che le librerie MFC sono già state sottoposte a un debug completo, questo non dovrebbe rappresentare un problema.  
   
 3. Compilare l'applicazione con informazioni di debug solo per i moduli selezionati, come descritto di seguito.  
   
-   [In questo argomento](#BKMK_In_this_topic)  
+   [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
-### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Compilazione di un'app MFC con informazioni di debug per i moduli selezionati  
+### <a name="building-an-mfc-app-with-debug-information-for-selected-modules"></a><a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Compilazione di un'app MFC con informazioni di debug per i moduli selezionati  
  La compilazione di moduli selezionati con le librerie di debug MFC consente di eseguire i moduli un'istruzione alla volta e di utilizzare altre utilità di debug. In questa procedura vengono utilizzate sia la modalità debug che la modalità rilascio del makefile Visual C++. Per completarla, è necessario eseguire le modifiche descritte nei passaggi seguenti (nonché un'operazione di ricompilazione totale quando è richiesta una compilazione di rilascio completa).  
   
-1. Selezionare il progetto in Esplora soluzioni.  
+1. In Esplora soluzioni selezionare il progetto.  
   
 2. Scegliere **Pagine delle proprietà** dal menu **Visualizza**.  
   
 3. Creare innanzitutto una nuova configurazione di progetto.  
   
-   1. Nella finestra di dialogo **Pagine delle proprietà di \<Progetto>** fare clic sul pulsante **Gestione configurazione**.  
+   1. Nella finestra di dialogo ** \<Project> pagine delle proprietà** fare clic sul pulsante **Configuration Manager** .  
   
-   2. Nella [finestra di dialogo Gestione configurazione](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)individuare il progetto all'interno della griglia. Nella colonna **Configurazione** selezionare **\<Nuova...>** .  
+   2. Nella [finestra di dialogo Gestione configurazione](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)individuare il progetto all'interno della griglia. Nella colonna **configurazione** selezionare **\<New...>** .  
   
    3. Nella [finestra di dialogo Nuova configurazione progetto](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)digitare, all'interno della casella **Nome configurazione progetto** , il nome da assegnare alla nuova configurazione, ad esempio "Debug parziale".  
   
    4. Scegliere **Release** dall'elenco **Copia impostazioni da**.  
   
-   5. Fare clic su **OK** per chiudere la **nuova configurazione progetto**nella finestra di dialogo.  
+   5. Fare clic su **OK** per chiudere la finestra di dialogo **nuova configurazione progetto**.  
   
    6. Chiudere la finestra di dialogo **Gestione configurazione** .  
   
@@ -478,13 +478,13 @@ pMyPerson->Dump( afxDump );
   
    6. Fare clic sulle impostazioni **Formato informazioni di debug** e selezionare l'opzione desiderata (in genere **/ZI**) per le informazioni di debug.  
   
-   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/usa intestazioni precompilate** nella finestra di dialogo **Proprietà di \<Progetto>** (cartella **Proprietà di configurazione**, sottocartella **C/C++** , categoria **Intestazioni precompilate**).  
+   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/Usa intestazioni precompilate** nella finestra di dialogo ** \<Project> Proprietà** (cartella**proprietà di configurazione** , sottocartella **C/C++** , categoria **intestazioni precompilate** ).  
   
 7. Scegliere **Compila** dal menu **Compila** per compilare nuovamente i file di progetto non aggiornati.  
   
    In alternativa alla tecnica descritta in questo argomento è possibile usare un makefile esterno per definire singole opzioni per ciascun file. In tal caso, per collegarsi alle librerie di debug MFC, sarà necessario definire il flag [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) per ciascun modulo. Per utilizzare le librerie di rilascio MFC, è necessario definire NDEBUG. Per altre informazioni sulla scrittura di makefile esterni, vedere [Riferimenti a NMAKE](https://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
   
-   [In questo argomento](#BKMK_In_this_topic)  
+   [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di Visual C++](../debugger/debugging-native-code.md)

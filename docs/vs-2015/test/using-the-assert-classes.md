@@ -14,10 +14,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6a4f7f1631ac4bfc651f5df347db010cf47a656
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657141"
 ---
 # <a name="using-the-assert-classes"></a>Utilizzo di classi Assert
@@ -60,4 +60,4 @@ Usare le classi Assert dello spazio dei nomi UnitTestingFramework per verificare
  Decorare un metodo di test con l'attributo ExpectedExceptionAttribute quando si vuole che il metodo di test verifichi che un'eccezione di cui è prevista la generazione da parte di un metodo nel codice di sviluppo sia effettivamente generata nel metodo.
 
 ## <a name="see-also"></a>Vedere anche
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [creazione ed esecuzione di unit test per il codice esistente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> [Creazione ed esecuzione di unit test per il codice esistente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

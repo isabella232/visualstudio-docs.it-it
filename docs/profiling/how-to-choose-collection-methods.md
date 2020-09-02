@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4dbc54fc394f75778f74d9b6b02e93882129cdb9
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329273"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
@@ -31,7 +31,7 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 - Nella prima pagina della procedura guidata selezionare una delle opzioni seguenti:
 
-| Opzione | Description |
+| Opzione | Descrizione |
 |----------------------------| - |
 | **Campionamento CPU** | Consente di raccogliere le statistiche dell'applicazione utili per l'analisi iniziale e per l'analisi dei problemi relativi all'uso della CPU. |
 | **Strumentazione** | Consente di raccogliere i dati di intervallo dettagliati utili per l'analisi mirata e per l'analisi dei problemi relativi alle prestazioni di input/output. |
@@ -90,7 +90,7 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 3. Fare clic su **Concorrenza**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
  di prestazioni [Informazioni sui valori](../profiling/understanding-sampling-data-values.md) 

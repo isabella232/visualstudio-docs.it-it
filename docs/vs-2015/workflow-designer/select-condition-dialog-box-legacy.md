@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bece06c618e5fcc0e91dcbd683b961979fd76dcf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846188"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Finestra di dialogo Seleziona condizione (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo **Seleziona condizione** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Seleziona condizione** in legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  La finestra di dialogo **Seleziona condizione** viene utilizzata per selezionare una condizione della regola dichiarativa da assegnare alla proprietà della condizione di un'attività. Queste condizioni della regola sono esposte come proprietà nelle attività predefinite di Windows Workflow Foundation seguenti:
 
@@ -42,8 +42,8 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Sel
 |**Nuovo...**|Fare clic per aprire la finestra di [dialogo Editor condizione della regola (legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) per creare una nuova condizione della regola.|
 |**Modifica...**|Fare clic per aprire la finestra di [dialogo Editor condizione della regola (legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) per modificare la condizione della regola selezionata.|
 |**Rinomina...**|Fare clic per aprire una finestra di dialogo usata per rinominare la condizione della regola selezionata.|
-|**Eliminazione**|Fare clic per eliminare la condizione della regola selezionata.|
-|**Anteprima della condizione**|Visualizza l'espressione della condizione per la condizione della regola selezionata.|
+|**Elimina**|Fare clic per eliminare la condizione della regola selezionata.|
+|**Anteprima della Condizione**|Visualizza l'espressione della condizione per la condizione della regola selezionata.|
 |**OK**|Fare clic per assegnare la condizione della regola selezionata alla condizione dell’attività.|
 
  Per altre informazioni sulla creazione e la modifica delle condizioni delle regole, vedere [finestra di dialogo Editor condizione della regola (legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).

@@ -1,5 +1,5 @@
 ---
-title: Servizio Essentials | Microsoft Docs
+title: Servizi essenziali | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,36 +11,36 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696072"
 ---
 # <a name="service-essentials"></a>Nozioni fondamentali sui servizi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage fornisce un set specifico di interfacce per un altro VSPackage da utilizzare. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] è a sua volta una raccolta di VSPackage che fornisce servizi per gli altri pacchetti VSPackage.  
+Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage fornisce un set specifico di interfacce per l'utilizzo da parte di un altro VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] è a sua volta una raccolta di pacchetti VSPackage che fornisce servizi ad altri pacchetti VSPackage.  
   
- Ad esempio, è possibile utilizzare il servizio SVsActivityLog per ottenere un'interfaccia IVsActivityLog, che è possibile usare per scrivere nel log attività. Per altre informazioni, vedere [Procedura: Usare il Log attività](../../extensibility/how-to-use-the-activity-log.md).  
+ Ad esempio, è possibile usare il servizio SVsActivityLog per ottenere un'interfaccia IVsActivityLog, che può essere usata per scrivere nel log attività. Per altre informazioni, vedere [procedura: usare il log attività](../../extensibility/how-to-use-the-activity-log.md).  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornisce anche alcuni servizi predefiniti che non sono registrati. Pacchetti VSPackage possono sostituire incorporati o altri servizi, fornendo un override del servizio. Sostituzione di un solo servizio è consentito per qualsiasi servizio.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornisce anche alcuni servizi predefiniti che non sono registrati. I pacchetti VSPackage possono sostituire i servizi predefiniti o altri fornendo un override del servizio. Per qualsiasi servizio è consentita una sola sostituzione del servizio.  
   
- Servizi non dispongono di alcuna esposizione al rilevamento. Pertanto, è necessario conoscere l'ID di servizio (SID) di un servizio che si desidera utilizzare, ed è necessario conoscere quali interfacce offre. La documentazione di riferimento per il servizio fornisce queste informazioni.  
+ I servizi non hanno individuabilità. Pertanto, è necessario essere a conoscenza dell'identificatore del servizio (SID) di un servizio che si desidera utilizzare ed è necessario stabilire quali interfacce sono disponibili. La documentazione di riferimento per il servizio fornisce queste informazioni.  
   
-- Pacchetti VSPackage che forniscono servizi vengono chiamati i provider di servizi.  
+- I pacchetti VSPackage che forniscono servizi sono detti provider di servizi.  
   
-- I servizi forniti da altri pacchetti VSPackage sono denominati servizi globali.  
+- I servizi forniti ad altri pacchetti VSPackage sono denominati servizi globali.  
   
-- Servizi sono disponibili solo per il pacchetto VSPackage che li implementa o per tutti gli oggetti che vengono creati, sono denominati servizi locali.  
+- I servizi disponibili solo per il pacchetto VSPackage che li implementa, o per qualsiasi oggetto creato, sono denominati servizi locali.  
   
-- I servizi che sostituiscono i servizi incorporati o i servizi forniti da altri pacchetti, vengono chiamati servizio esegue l'override.  
+- I servizi che sostituiscono i servizi o i servizi predefiniti forniti da altri pacchetti sono detti override del servizio.  
   
-- I servizi o le sostituzioni di servizio, vengono caricate su richiesta, vale a dire, il provider del servizio viene caricato quando il servizio che fornisce è richiesto da un altro pacchetto VSPackage.  
+- I servizi o le sostituzioni dei servizi vengono caricati su richiesta, ovvero il provider di servizi viene caricato quando il servizio fornito viene richiesto da un altro pacchetto VSPackage.  
   
-- Per supportare il caricamento su richiesta, un provider del servizio registra i suoi servizi globali con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Per altre informazioni, vedere [registrazione dei servizi](../../misc/registering-services.md).  
+- Per supportare il caricamento su richiesta, un provider di servizi registra i servizi globali con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Per ulteriori informazioni, vedere la pagina relativa alla [registrazione dei servizi](../../misc/registering-services.md).  
   
-- Dopo aver ottenuto un servizio, usare [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (codice non gestito) o al cast (codice gestito) per ottenere l'interfaccia desiderata, ad esempio:  
+- Dopo aver ottenuto un servizio, usare [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (codice non gestito) o eseguire il cast (codice gestito) per ottenere l'interfaccia desiderata, ad esempio:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,13 +51,13 @@ Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage 
   
     ```  
   
-- Codice gestito fa riferimento a un servizio in base al tipo, mentre il codice non gestito si riferisce a un servizio con il relativo GUID.  
+- Il codice gestito fa riferimento a un servizio in base al relativo tipo, mentre il codice non gestito fa riferimento a un servizio in base al relativo GUID.  
   
-- Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carica un pacchetto VSPackage, passa un provider di servizi a VSPackage per consentire l'accesso a VSPackage per servizi globali. Ciò è detto "posizione" il pacchetto VSPackage.  
+- Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carica un pacchetto VSPackage, passa un provider di servizi al pacchetto VSPackage per concedere all'accesso VSPackage ai servizi globali. Questa operazione è detta "Ubicazione" del pacchetto VSPackage.  
   
-- I VSPackage possono essere i provider di servizi per gli oggetti creati. Ad esempio, un modulo potrebbe inviare una richiesta per un servizio di colore per il frame, che potrà passare alla richiesta [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- I pacchetti VSPackage possono essere provider di servizi per gli oggetti creati. Un modulo, ad esempio, potrebbe inviare una richiesta per un servizio color al relativo frame, che potrebbe passare la richiesta a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-- Gli oggetti gestiti che sono molto annidati, o non individuati affatto, possono chiamare <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> per l'accesso diretto ai servizi globali. Per altre informazioni, vedere [Procedura: Usare GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
+- Gli oggetti gestiti che sono annidati in modo approfondito o che non sono in alcun sito possono chiamare <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> per l'accesso diretto ai servizi globali. Per altre informazioni, vedere [procedura: usare GetGlobalService](../../misc/how-to-use-getglobalservice.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Elenco dei servizi disponibili](../../extensibility/internals/list-of-available-services.md)   

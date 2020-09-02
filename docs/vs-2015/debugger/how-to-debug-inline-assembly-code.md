@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eseguire il debug di codice Assembly Inline | Microsoft Docs'
+title: 'Procedura: eseguire il debug di codice assembly inline | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,21 +22,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0dde41d1ccee5b63c5cd84862ba4f4ffe51745d2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696250"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Procedura: Eseguire il debug di codice assembly inline
+# <a name="how-to-debug-inline-assembly-code"></a>Procedura: eseguire il debug di codice assembly inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Per il debug di codice assembly inline sono disponibili le finestre **Disassembly** e **Registri**.  
   
-## <a name="procedure"></a>Routine  
+## <a name="procedure"></a>Procedura  
   
 #### <a name="to-debug-inline-assembly-code"></a>Per eseguire il debug di codice assembly inline  
   

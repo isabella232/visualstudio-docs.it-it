@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::Evaluate . Documenti Microsoft
+title: 'IDebugFunctionObject2:: Evaluate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d87d7d3531d198a1478b4aaa55b354c3ac101302
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728442"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
-Chiama la funzione e restituisce il valore risultante come oggetto.
+Chiama la funzione e restituisce il valore risultante come un oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,19 +47,19 @@ int Evaluate (
 
 ## <a name="parameters"></a>Parametri
 `ppParams`\
-[in] Matrice di [oggetti IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta i parametri di input. Ognuno di questi parametri è stato creato utilizzando uno dei metodi Create in questa interfaccia.
+in Matrice di oggetti [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta i parametri di input. Ognuno di questi parametri è stato creato usando uno dei metodi create in questa interfaccia.
 
 `dwParams`\
-[in] Numero di parametri `ppParams` nella matrice.
+in Numero di parametri nella `ppParams` matrice.
 
 `dwEvalFlags`\
-[in] Combinazione di flag dell'enumerazione [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) che specificano come deve essere eseguita la valutazione.
+in Combinazione di flag dell'enumerazione [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) che specificano la modalità di esecuzione della valutazione.
 
 `dwTimeout`\
-[in] Specifica il tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Utilizzare **INFINITE** per attendere all'infinito.
+in Specifica il tempo massimo di attesa, in millisecondi, prima che venga restituito da questo metodo. Usare **infinito** per un'attesa indefinita.
 
 `ppResult`\
-[fuori] Restituisce un **oggetto IDebugObject** che rappresenta il valore della funzione come oggetto.
+out Restituisce un **IDebugObject** che rappresenta il valore della funzione come un oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

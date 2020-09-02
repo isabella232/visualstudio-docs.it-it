@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 555bb56ee84b7bc48f6b6453c11daef366f97e49
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845127"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Errore: il server Web non è in grado di trovare la risorsa richiesta
@@ -36,4 +36,4 @@ Ai fini della sicurezza, IIS ha restituito un errore generico.
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumento di sicurezza UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
- [Errore: il server Web è stato bloccato e blocca il verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+ [Errore: il server Web è stato bloccato e blocca il verbo di DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

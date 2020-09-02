@@ -9,13 +9,13 @@ caps.latest.revision: 8
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657190"
 ---
-# <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Utilizzo di membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
+# <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Uso di membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Usare le classi e membri nello spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.UnitTesting> durante la codifica di unit test. È possibile usarli sia quando si scrive uno unit test da zero che per la modifica di uno unit test generato dal codice sottoposto a test.
 
@@ -41,7 +41,7 @@ Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../include
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Attributi usati per stabilire un ordine di chiamata
- Un elemento di codice decorato con uno degli attributi seguenti viene chiamato nel momento specificato. Per altre informazioni, vedere [Anatomia di un unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Un elemento di codice decorato con uno degli attributi seguenti viene chiamato nel momento specificato. Per altre informazioni, vedere [anatomia di uno unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Per gli assembly
  AssemblyInitialize e AssemblyCleanup vengono chiamati subito dopo il caricamento e subito prima dello scaricamento dell'assembly.
@@ -64,7 +64,7 @@ Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../include
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Attributi usati per identificare classi e metodi di test
- Ogni classe di test deve avere l'attributo TestClass e ogni metodo di test deve avere l'attributo TestMethod. Per altre informazioni, vedere [Anatomia di un unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Ogni classe di test deve avere l'attributo TestClass e ogni metodo di test deve avere l'attributo TestMethod. Per altre informazioni, vedere [anatomia di uno unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

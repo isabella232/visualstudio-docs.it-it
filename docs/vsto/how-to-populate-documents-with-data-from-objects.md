@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547173"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Procedura: popolare documenti con dati da oggetti
@@ -60,7 +60,7 @@ Per connettere l'oggetto dati a BindingSource:
 
 1. Nel codice creare un'istanza del tipo di oggetto associato all'origine dati.
 
-2. Creare un'istanza di un oggetto <xref:System.Windows.Forms.BindingSource>.
+2. Creare un'istanza di un <xref:System.Windows.Forms.BindingSource>.
 
 3. Assegnare l'istanza dell'origine dati alla proprietà <xref:System.Windows.Forms.BindingSource.DataSource%2A> dell'oggetto <xref:System.Windows.Forms.BindingSource>.
 

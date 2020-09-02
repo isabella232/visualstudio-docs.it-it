@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845571"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Procedura dettagliata: creazione di un frammento di codice
@@ -75,7 +75,7 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
 
 1. È possibile aggiungere frammenti di codice personalizzati all'installazione di Visual Studio tramite Gestione frammenti di codice. Aprire Gestione frammenti di codice (**Strumenti/Gestione frammenti di codice**).
 
-2. Fare clic sul pulsante **Importa**.
+2. Fare clic sul pulsante **Import** (Importa).
 
 3. Scegliere il percorso in cui è stato salvato il frammento di codice nella procedura precedente, selezionarlo e fare clic su **Apri**.
 
@@ -91,7 +91,7 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
 
 ### <a name="adding-description-and-shortcut-fields"></a>Aggiunta di campi di descrizione e collegamento
 
-1. I campi di descrizione contengono informazioni dettagliate sul frammento di codice quando viene visualizzato in Gestione frammenti di codice. Il collegamento è un tag che gli utenti possono digitare per inserire il frammento. Modificare il frammento aggiunto aprendo il file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
+1. I campi di descrizione contengono informazioni dettagliate sul frammento di codice quando viene visualizzato in Gestione frammenti di codice. Il collegamento è un tag che gli utenti possono digitare per inserire il frammento. Modificare il frammento aggiunto aprendo il file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` .
 
 2. Aggiungere gli elementi Author e Description all'elemento Header e compilarli.
 
@@ -122,11 +122,11 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
 
 6. Salvare di nuovo il file del frammento.
 
-7. Per testare il collegamento, aprire un progetto Visual Basic e aprire un file di codice. Digitare `hello` nel file e premere TAB. È necessario inserire il codice del frammento.
+7. Per testare il collegamento, aprire un progetto Visual Basic e aprire un file di codice. Digitare `hello` il file e premere TAB. È necessario inserire il codice del frammento.
 
 ### <a name="to-add-references-and-imports"></a>Per aggiungere riferimenti e importazioni
 
-1. Con i frammenti di Visual Basic è possibile aggiungere un riferimento a un progetto utilizzando l'elemento References e aggiungere una dichiarazione Imports utilizzando l'elemento Imports. I frammenti di codice in altre lingue non dispongono di questa funzionalità. Se, ad esempio, si modifica `Console.WriteLine` nell'esempio di codice per `MessageBox.Show`, potrebbe essere necessario aggiungere l'assembly System. Windows. Forms. dll al progetto.
+1. Con i frammenti di Visual Basic è possibile aggiungere un riferimento a un progetto utilizzando l'elemento References e aggiungere una dichiarazione Imports utilizzando l'elemento Imports. I frammenti di codice in altre lingue non dispongono di questa funzionalità. Se, ad esempio, si modifica `Console.WriteLine` nell'esempio di codice in `MessageBox.Show` , potrebbe essere necessario aggiungere il System.Windows.Forms.dll assembly al progetto.
 
 2. Aprire il frammento.
 
@@ -262,4 +262,4 @@ Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente 
     ```
 
 ## <a name="see-also"></a>Vedere anche
- [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)
+ [Riferimenti allo schema di frammenti di codice](../ide/code-snippets-schema-reference.md)

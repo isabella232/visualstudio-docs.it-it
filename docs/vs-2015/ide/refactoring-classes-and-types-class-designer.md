@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5803b720ae1271d8319310820d1f0dc159db8bf9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670265"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactoring di classi e tipi (Progettazione classi)
@@ -39,11 +39,11 @@ Quando si effettua il refactoring del codice, si modifica la struttura interna d
 
 |Attività|Contenuto di supporto|
 |----------|------------------------|
-|**Refactoring di classi:** è possibile usare le operazioni di refactoring per suddividere una classe in classi parziali o per implementare una classe base astratta.|-   [Procedura: Dividere una classe in classi parziali (Progettazione classi)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|
-|**Uso di interfacce:** in Progettazione classi è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia.|-   [Procedura: Implementare un'interfaccia (Progettazione classi)](../ide/how-to-implement-an-interface-class-designer.md)|
-|**Refactoring di tipi, membri dei tipi e parametri:** con Progettazione classi è possibile rinominare i tipi, eseguire l'override dei membri dei tipi oppure spostarli da un tipo all'altro. È anche possibile creare tipi nullable.|-   [Ridenominazione di tipi e membri dei tipi](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Spostamento dei membri dei tipi da un tipo a un altro](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Procedura: Creare un tipo nullable (Progettazione classi)](../ide/how-to-create-a-nullable-type-class-designer.md)|
+|**Refactoring di classi:** è possibile usare le operazioni di refactoring per suddividere una classe in classi parziali o per implementare una classe base astratta.|-   [Procedura: suddividere una classe in classi parziali (Progettazione classi)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|
+|**Uso di interfacce:** in Progettazione classi è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia.|-   [Procedura: implementare un'interfaccia (Progettazione classi)](../ide/how-to-implement-an-interface-class-designer.md)|
+|**Refactoring di tipi, membri dei tipi e parametri:** con Progettazione classi è possibile rinominare i tipi, eseguire l'override dei membri dei tipi oppure spostarli da un tipo all'altro. È anche possibile creare tipi nullable.|-   [Ridenominazione di tipi e membri dei tipi](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Trasferimento di membri di tipo da un tipo a un altro](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Procedura: creare un tipo Nullable (Progettazione classi)](../ide/how-to-create-a-nullable-type-class-designer.md)|
 
-### <a name="RenamingTypesAndMembers"></a> Ridenominazione di tipi e membri dei tipi
+### <a name="renaming-types-and-type-members"></a><a name="RenamingTypesAndMembers"></a> Ridenominazione di tipi e membri dei tipi
  In Progettazione classi è possibile rinominare un tipo o un membro di un tipo nel diagramma classi o nella finestra Proprietà. Nella finestra Dettagli classe è possibile modificare il nome di un membro ma non di un tipo. La ridenominazione di un tipo o di un membro di un tipo verrà propagata a tutte le finestre e i percorsi di codice in cui è presente il nome precedente.
 
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Per cambiare un nome in Progettazione classi
@@ -62,7 +62,7 @@ Quando si effettua il refactoring del codice, si modifica la struttura interna d
 
 2. Nella colonna **Nome** modificare il nome del membro del tipo.
 
-3. Per spostare lo stato attivo dalla cella, premere **INVIO** oppure fare clic all'esterno della cella.
+3. Per spostare lo stato attivo dalla cella, premere il tasto **invio** oppure fare clic sulla cella.
 
     > [!NOTE]
     > Nella finestra Dettagli classe è possibile modificare il nome di un membro ma non di un tipo.
@@ -77,7 +77,7 @@ Quando si effettua il refactoring del codice, si modifica la struttura interna d
 
      Il nuovo nome verrà propagato a tutte le finestre e i percorsi di codice del progetto corrente in cui è presente il nome precedente.
 
-### <a name="MovingTypeMembers"></a> Spostamento dei membri dei tipi da un tipo a un altro
+### <a name="moving-type-members-from-one-type-to-another"></a><a name="MovingTypeMembers"></a> Trasferimento di membri di tipo da un tipo a un altro
  In **Progettazione classi**è possibile spostare un membro del tipo da un tipo a un altro, se entrambi sono visibili nel diagramma classi corrente.
 
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Per spostare un membro da un tipo a un altro

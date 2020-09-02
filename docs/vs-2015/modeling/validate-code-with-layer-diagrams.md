@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845433"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Convalidare il codice con diagrammi livello
@@ -43,7 +43,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
    Trovare codice o dipendenze che richiedono azioni quando si sposta il codice in un'architettura diversa.
 
-  **Requirements**
+  **Requisiti**
 
 - Visual Studio
 
@@ -58,9 +58,9 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 > [!IMPORTANT]
 > Se si desidera eseguire la convalida dei livelli in Team Foundation Build, è inoltre necessario installare la stessa versione di Visual Studio nel server di compilazione.
 
-- [Verificare se un elemento supporta la convalida](#SupportsValidation)
+- [Vedere se un elemento supporta la convalida](#SupportsValidation)
 
-- [Includi altri assembly e progetti .NET per la convalida](#IncludeReferences)
+- [Includere altri progetti e assembly .NET per la convalida](#IncludeReferences)
 
 - [Convalidare manualmente il codice](#ValidateManually)
 
@@ -68,23 +68,23 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
 - [Risolvere i problemi di convalida dei livelli](#TroubleshootingValidation)
 
-- [Comprendere e risolvere gli errori di convalida del livello](#UnderstandingValidationErrors)
+- [Individuare e risolvere gli errori di convalida dei livelli](#UnderstandingValidationErrors)
 
-## <a name="SupportsValidation"></a>Verificare se un elemento supporta la convalida
+## <a name="see-if-an-item-supports-validation"></a><a name="SupportsValidation"></a> Verificare se un elemento supporta la convalida
  È possibile collegare i livelli a siti Web, documenti Office, file di testo normale e file in progetti condivisi tra più app, ma il processo di convalida non li includerà. Gli errori di convalida non verranno visualizzati per i riferimenti a progetti oppure a assembly collegati a livelli separati quando tra tali livelli non è presente alcuna dipendenza. Tali riferimenti non vengono considerati dipendenze a meno che il codice non li usi.
 
 1. Nel diagramma livello selezionare uno o più livelli, fare clic con il pulsante destro del mouse sulla selezione e quindi scegliere **Visualizza collegamenti**.
 
 2. In **Esplora livello**esaminare la colonna **supporta la convalida** . Se il valore è false, l'elemento non supporta la convalida.
 
-## <a name="IncludeReferences"></a>Includi altri assembly e progetti .NET per la convalida
+## <a name="include-other-net-assemblies-and-projects-for-validation"></a><a name="IncludeReferences"></a> Includi altri assembly e progetti .NET per la convalida
  Quando si trascinano elementi nel diagramma livello, i riferimenti agli assembly .NET o ai progetti corrispondenti vengono aggiunti automaticamente alla cartella **Riferimenti livello** nel progetto di modello. Questa cartella contiene i riferimenti agli assembly e ai progetti analizzati durante la convalida. È possibile includere altri assembly e progetti .NET per la convalida senza trascinarli manualmente nel diagramma livello.
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di modello o sulla cartella **Riferimenti livello** , quindi scegliere **Aggiungi riferimento**.
 
 2. Nella finestra di dialogo **Aggiungi riferimento** selezionare gli assembly o i progetti, quindi fare clic su **OK**.
 
-## <a name="ValidateManually"></a>Convalidare manualmente il codice
+## <a name="validate-code-manually"></a><a name="ValidateManually"></a> Convalidare manualmente il codice
  Se si dispone di un diagramma livello aperto collegato a elementi della soluzione, è possibile eseguire il comando **Validate** Shortcut dal diagramma. È anche possibile usare il prompt dei comandi per eseguire il comando **MSBuild** con la proprietà personalizzata **/p: ValidateArchitecture** impostata su **true**. Ad esempio, analogamente alle modifiche nel codice, eseguire regolarmente la convalida dei livelli in modo da rilevare tempestivamente conflitti di dipendenza.
 
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>Per convalidare il codice da un diagramma livello aperto
@@ -105,9 +105,9 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
 #### <a name="to-validate-code-at-the-command-prompt"></a>Per convalidare il codice al prompt dei comandi
 
-1. Aprire il prompt dei comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+1. Aprire il prompt dei comandi di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-2. Effettuare una delle seguenti operazioni:
+2. Selezionare una delle opzioni seguenti:
 
    - Per convalidare il codice rispetto a un progetto di modellazione specifico nella soluzione, eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.
 
@@ -115,7 +115,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
      msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
      ```
 
-     - oppure -
+     - - oppure -
 
        Passare alla cartella contenente il file di progetto di modellazione (con estensione modelproj) e il diagramma livello, quindi eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.
 
@@ -129,7 +129,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
      msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
      ```
 
-     - oppure -
+     - - oppure -
 
        Individuare la cartella della soluzione che deve contenere un progetto di modellazione che a sua volta contiene un diagramma livello, quindi eseguire [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con la seguente proprietà personalizzata.
 
@@ -137,11 +137,11 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
      msbuild /p:ValidateArchitecture=true
      ```
 
-     Verranno elencati tutti gli errori che si verificano. Per altre informazioni su [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vedere attività [MSBuild](../msbuild/msbuild.md) e [MSBuild](../msbuild/msbuild-task.md).
+     Verranno elencati tutti gli errori che si verificano. Per altre informazioni su [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , vedere attività [MSBuild](../msbuild/msbuild.md) e [MSBuild](../msbuild/msbuild-task.md).
 
    Per ulteriori informazioni sugli errori di convalida, vedere [comprendere e risolvere gli errori di convalida dei livelli](#UnderstandingValidationErrors).
 
-### <a name="ManageErrors"></a>Gestione degli errori di convalida
+### <a name="manage-validation-errors"></a><a name="ManageErrors"></a> Gestione degli errori di convalida
  Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni conflitti segnalati durante la convalida. Ad esempio, è possibile eliminare gli errori che sono già stati corretti o che non sono attinenti allo scenario in questione. Quando si elimina un errore, è buona norma registrare un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)].
 
 > [!WARNING]
@@ -153,14 +153,14 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
   Usare queste attività per gestire gli errori di convalida nella finestra **Elenco errori** :
 
-|**Per**|**Attenersi alla seguente procedura**|
+|**To**|**Attenersi alla seguente procedura**|
 |------------|----------------------------|
 |Eliminare gli errori selezionati durante la convalida|Fare clic con il pulsante destro del mouse su uno o più errori selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su non **visualizzare errori**.<br /><br /> Gli errori eliminati vengono visualizzati come barrati. Alla successiva convalida, questi errori non saranno visualizzati.<br /><br /> Gli errori eliminati vengono registrati in un file con estensione suppressions per il file del diagramma livello corrispondente.|
 |Interrompere l'eliminazione di errori selezionati|Fare clic con il pulsante destro del mouse sull'errore o sugli errori eliminati selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su **Interrompi eliminazione errori**.<br /><br /> Alla successiva convalida, gli errori eliminati selezionati verranno visualizzati.|
 |Ripristinare tutti gli errori eliminati nella finestra di **Elenco errori**|Fare clic con il pulsante destro del mouse in un punto qualsiasi della finestra **Elenco errori** , scegliere **Gestisci errori di convalida**, quindi fare clic su **Mostra tutti gli errori eliminati**.|
 |Nascondi tutti gli errori eliminati dalla finestra di **Elenco errori**|Fare clic con il pulsante destro del mouse in un punto qualsiasi della finestra **Elenco errori** , scegliere **Gestisci errori di convalida**, quindi fare clic su **Nascondi tutti gli errori eliminati**.|
 
-## <a name="ValidateAuto"></a>Convalidare automaticamente il codice
+## <a name="validate-code-automatically"></a><a name="ValidateAuto"></a> Convalidare automaticamente il codice
  È possibile eseguire la convalida dei livelli ogni volta che si esegue una compilazione. Se il team utilizza Team Foundation Build, è possibile eseguire la convalida dei livelli nelle archiviazioni gestite, che si possono specificare creando un'attività personalizzata MSBuild, e utilizzare i rapporti di compilazione per raccogliere gli errori di convalida. Per creare compilazioni di archiviazione gestita, vedere [usare un processo di compilazione di archiviazione gestita per convalidare le modifiche](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Per convalidare automaticamente il codice durante una compilazione locale
@@ -171,7 +171,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- oppure -
+ \- - oppure -
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di modello che contiene il diagramma livello o i diagrammi, quindi scegliere **Proprietà**.
 
@@ -195,11 +195,11 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
     `/p:ValidateArchitecture=true`
 
-   Per ulteriori informazioni sugli errori di convalida, vedere [comprendere e risolvere gli errori di convalida dei livelli](#UnderstandingValidationErrors). Per ulteriori informazioni su [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], vedere:
+   Per ulteriori informazioni sugli errori di convalida, vedere [comprendere e risolvere gli errori di convalida dei livelli](#UnderstandingValidationErrors). Per altre informazioni su [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], vedere:
 
 - [Compilare l'applicazione](/azure/devops/pipelines/index)
 
-- [Usa il modello predefinito per il processo di compilazione](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
+- [Utilizzare il modello predefinito per il processo di compilazione](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
 
 - [Modificare una compilazione legacy basata su UpgradeTemplate. XAML](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
 
@@ -207,14 +207,14 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
 - [Monitorare lo stato di una compilazione in esecuzione](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
-## <a name="TroubleshootingValidation"></a>Risolvere i problemi di convalida dei livelli
+## <a name="troubleshoot-layer-validation-issues"></a><a name="TroubleshootingValidation"></a> Risolvere i problemi di convalida dei livelli
  Nella tabella seguente vengono descritti i problemi di convalida dei livelli e la relativa risoluzione. Questi problemi differiscono dagli errori risultanti da conflitti tra il codice e la progettazione. Per ulteriori informazioni su questi errori, vedere [comprendere e risolvere gli errori di convalida dei livelli](#UnderstandingValidationErrors).
 
 |**Problema**|**Possibili cause**|**Risoluzione**|
 |---------------|------------------------|--------------------|
 |Gli errori di convalida non si verificano come previsto.|La convalida non funziona sui diagrammi livello copiati da altri diagrammi livello in Esplora soluzioni e appartenenti allo stesso progetto di modellazione. I diagrammi livello copiati in questo modo contengono gli stessi riferimenti del diagramma livello originale.|Aggiungere un nuovo diagramma livello al progetto di modellazione.<br /><br /> Copiare gli elementi dal diagramma livello di origine al nuovo diagramma.|
 
-## <a name="UnderstandingValidationErrors"></a>Informazioni e risoluzione degli errori di convalida dei livelli
+## <a name="understanding-and-resolving-layer-validation-errors"></a><a name="UnderstandingValidationErrors"></a> Informazioni e risoluzione degli errori di convalida dei livelli
  Quando si esegue la convalida di codice in base a un diagramma livello, se il codice è in conflitto con la progettazione si verificano errori di convalida. In presenza delle condizioni seguenti è possibile ad esempio che si verifichino errori di convalida:
 
 - Un artefatto viene assegnato al livello errato. In questo caso, spostare l'elemento.
@@ -227,21 +227,21 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 
 |**Sintassi**|**Descrizione**|
 |----------------|---------------------|
-|*ArtifactN*(*ArtifactTypeN*)|*Artefatto* è un artefatto associato a un livello nel diagramma livello.<br /><br /> *Tipoelementon* è il tipo di *artefatto*, ad esempio una **classe** o un **Metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
-|*NamespaceNameN*|Nome di uno spazio dei nomi.|
-|*LayerNameN*|Nome di un livello nel diagramma livello.|
-|*DependencyType*|Tipo di relazione di dipendenza tra *elemento1* e *Artifact2*. Ad esempio, *elemento1* ha una relazione **calls** con *Artifact2*.|
+|*Artefatto*(*tipoelementon*)|*Artefatto* è un artefatto associato a un livello nel diagramma livello.<br /><br /> *Tipoelementon* è il tipo di *artefatto*, ad esempio una **classe** o un **Metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
+|*NomeSpazioDeiNomiN*|Nome di uno spazio dei nomi.|
+|*NomeLivelloN*|Nome di un livello nel diagramma livello.|
+|*TipoDipendenza*|Tipo di relazione di dipendenza tra *elemento1* e *Artifact2*. Ad esempio, *elemento1* ha una relazione **calls** con *Artifact2*.|
 
-|**Sintassi di errore**|**Descrizione errore**|
+|**Sintassi errore**|**Descrizione errore**|
 |----------------------|---------------------------|
-|AV0001: dipendenza non valida: *elemento1*(*tipoartefatto1*)--> *Artifact2*(*tipoartefatto2*)<br /><br /> Livelli: *LayerName1*, dipendenze *LayerName2* &#124; : *DependencyType*|*Elemento1* in *LayerName1* non deve avere una dipendenza da *Artifact2* in *LayerName2* perché *LayerName1* non ha una dipendenza diretta da *LayerName2*.|
-|AV1001: spazio dei nomi non valido: *artefatto*<br /><br /> Livello: *LayerName* &#124; obbligatorio spazio dei nomi: *nomespaziodeinomi1* &#124; spazio dei nomi corrente: *nomespaziodeinomi2*|Per *LayerName* è necessario che gli elementi associati appartengano a *nomespaziodeinomi1*. L' *artefatto* è in *nomespaziodeinomi2*, non in *nomespaziodeinomi1*.|
-|AV1002: dipende dallo spazio dei nomi non consentito: *elemento1*(*tipoartefatto1*) &#124; *Artifact2*(*tipoartefatto2*)<br /><br /> Livello: *LayerName* &#124; Forbidden Namespace: &#124; dipendenze NamespaceName: *DependencyType*|Per *LayerName* è necessario che gli elementi associati non dipendano da *NamespaceName*. *Elemento1* non può dipendere da *Artifact2* perché *Artifact2* è in *NamespaceName*.|
-|AV1003: nello spazio dei nomi non consentito: *artefatto*(*ArtifactType*)<br /><br /> Livello: spazio dei nomi *non* &#124; consentito: *NamespaceName*|Per *LayerName* è necessario che gli elementi associati non possano appartenere allo *spazio dei nomi*. L' *elemento* appartiene a *NamespaceName*.|
+|AV0001: dipendenza non valida: *elemento1*(*tipoartefatto1*)--> *Artifact2*(*tipoartefatto2*)<br /><br /> Livelli: *LayerName1*, *LayerName2* &#124; dipendenze: *DependencyType*|*Elemento1* in *LayerName1* non deve avere una dipendenza da *Artifact2* in *LayerName2* perché *LayerName1* non ha una dipendenza diretta da *LayerName2*.|
+|AV1001: spazio dei nomi non valido: *artefatto*<br /><br /> Livello: *layername* &#124; spazio dei nomi richiesto: *Nomespaziodeinomi1* &#124; spazio dei nomi corrente: *nomespaziodeinomi2*|Per *LayerName* è necessario che gli elementi associati appartengano a *nomespaziodeinomi1*. L' *artefatto* è in *nomespaziodeinomi2*, non in *nomespaziodeinomi1*.|
+|AV1002: dipende dallo spazio dei nomi non consentito: *elemento1*(*Tipoartefatto1*) &#124; *Artifact2*(*tipoartefatto2*)<br /><br /> Livello: *layername* &#124; spazio dei nomi non consentito: *NamespaceName* &#124; dipendenze: *DependencyType*|Per *LayerName* è necessario che gli elementi associati non dipendano da *NamespaceName*. *Elemento1* non può dipendere da *Artifact2* perché *Artifact2* è in *NamespaceName*.|
+|AV1003: nello spazio dei nomi non consentito: *artefatto*(*ArtifactType*)<br /><br /> Livello: *layername* &#124; spazio dei nomi non consentito: *NamespaceName*|Per *LayerName* è necessario che gli elementi associati non possano appartenere allo *spazio dei nomi*. L' *elemento* appartiene a *NamespaceName*.|
 |AV3001: collegamento mancante: il livello '*LayerName*' si collega a'*artefatto*' che non è stato trovato. Probabilmente manca un riferimento a un assembly.|*LayerName* si collega a un elemento che non è stato trovato. Ad esempio, è possibile che manchi un collegamento a una classe perché nel progetto di modellazione manca un riferimento all'assembly che contiene la classe.|
 |AV9001: errori interni durante l'analisi dell'architettura. I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output.|Per altre informazioni, vedere il log degli eventi di compilazione o la finestra di output.|
 
-## <a name="security"></a>Sicurezza -
+## <a name="security"></a>Sicurezza
 
 ## <a name="see-also"></a>Vedere anche
  [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)

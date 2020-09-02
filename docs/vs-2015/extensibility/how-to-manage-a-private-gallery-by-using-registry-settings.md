@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Gestire una raccolta privata mediante le impostazioni del Registro di sistema | Microsoft Docs'
+title: 'Procedura: gestire una raccolta privata utilizzando le impostazioni del registro di sistema | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,19 +12,19 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204162"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: Gestire una raccolta privata tramite le impostazioni del Registro di sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se sei un amministratore o lo sviluppatore di un'estensione della Shell isolata, è possibile controllare l'accesso per i controlli, modelli e strumenti di Visual Studio Gallery, la raccolta di esempi o raccolte private. Per rendere una raccolta disponibile o non disponibile, creare un file. pkgdef che descrive le chiavi del Registro di sistema modificato e i relativi valori.  
+Se si è un amministratore o lo sviluppatore di un'estensione della shell isolata, è possibile controllare l'accesso ai controlli, ai modelli e agli strumenti di Visual Studio Gallery, della raccolta di esempi o delle raccolte private. Per rendere una raccolta disponibile o non disponibile, creare un file con estensione pkgdef che descrive le chiavi del registro di sistema modificate e i relativi valori.  
   
-## <a name="managing-private-galleries"></a>La gestione di raccolte Private  
- È possibile creare un file con estensione pkgdef per controllare l'accesso alle raccolte in più computer. Questo file deve avere il formato seguente.  
+## <a name="managing-private-galleries"></a>Gestione delle raccolte private  
+ È possibile creare un file con estensione pkgdef per controllare l'accesso alle raccolte su più computer. Questo file deve avere il formato seguente.  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{UniqueGUID}]  
@@ -38,22 +38,22 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Il `Repositories` chiave fa riferimento alla raccolta per essere abilitati o disabilitati. Visual Studio Gallery e la raccolta di esempi usano il repository seguente GUID:  
+ La `Repositories` chiave fa riferimento alla raccolta da abilitare o disabilitare. Visual Studio Gallery e la raccolta di esempi usano i seguenti GUID del repository:  
   
-- Visual Studio Gallery: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Raccolta di Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
 - Raccolta di esempi: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
-  Il `Disabled` valore è facoltativo. Per impostazione predefinita, una raccolta è abilitata.  
+  Il `Disabled` valore è facoltativo. Per impostazione predefinita, la raccolta è abilitata.  
   
-  Il `Priority` valore determina l'ordine in cui le raccolte disponibili sono elencate nella finestra di dialogo Opzioni. Raccolta di Visual Studio ha priorità 10 e la raccolta di esempi ha priorità 20. Raccolte private avviare con priorità 100. Se diverse raccolte hanno lo stesso valore di priorità, l'ordine in cui vengono visualizzati è determinato dai valori dei relativi localizzata `DisplayName` attributi.  
+  Il `Priority` valore determina l'ordine in cui le raccolte sono elencate nella finestra di dialogo Opzioni. Visual Studio Gallery ha la priorità 10 e la raccolta di esempi ha priorità 20. Le raccolte private iniziano con la priorità 100. Se più raccolte hanno lo stesso valore di priorità, l'ordine in cui vengono visualizzate è determinato dai valori degli attributi localizzati `DisplayName` .  
   
-  Il `Protocol` valore è obbligatorio per le raccolte basate su Atom o basata su SharePoint.  
+  Il `Protocol` valore è obbligatorio per le raccolte basate su Atom o su SharePoint.  
   
-  Sia `DisplayName`, o entrambe `DisplayNameResourceID` e `DisplayNamePackageGuid`, deve essere specificato. Se si specifica all, il `DisplayNameResourceID` e `DisplayNamePackageGuid` coppia viene utilizzata.  
+  `DisplayName` `DisplayNameResourceID` È necessario specificare sia, sia che `DisplayNamePackageGuid` . Se vengono specificati tutti, `DisplayNameResourceID` `DisplayNamePackageGuid` viene utilizzata la coppia e.  
   
-## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Disabilitare la raccolta di Visual Studio usando un File con estensione pkgdef  
- È possibile disabilitare una raccolta in un file. pkgdef. La voce seguente disabilita la raccolta di Visual Studio:  
+## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Disabilitazione di Visual Studio Gallery tramite un file con estensione pkgdef  
+ È possibile disabilitare una raccolta in un file con estensione pkgdef. La voce seguente Disabilita Visual Studio Gallery:  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
@@ -61,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- La voce seguente disabilita la raccolta di esempi:  
+ La seguente voce Disabilita la raccolta di esempi:  
   
 ```  
 [$RootPath$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  

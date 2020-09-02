@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Utilizzare la finestra thread GPU | Microsoft Docs'
+title: 'Procedura: usare la finestra thread GPU | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7b97c346cc933e14292fbb1198bfb69ecf59717
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696169"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Procedura: Usare la finestra Thread GPU
+# <a name="how-to-use-the-gpu-threads-window"></a>Procedura: utilizzare la finestra Thread GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per altre informazioni sulle applicazioni eseguite nella GPU, vedere [Panoramica di C++ AMP](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
+Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per ulteriori informazioni sulle applicazioni eseguite sulla GPU, vedere [C++ amp Overview](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  La finestra Thread GPU contiene una tabella in cui ogni riga rappresenta un set di thread GPU che hanno gli stessi valori in tutte le colonne. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile contrassegnare, rimuovere i flag, bloccare (sospendere) e sbloccare (riprendere) i thread dalla finestra Thread GPU. Le colonne seguenti sono visualizzate nella finestra Thread GPU:  
   
@@ -55,13 +55,13 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
   
 ### <a name="to-display-the-gpu-threads-window"></a>Per visualizzare la finestra Thread GPU  
   
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto e scegliere **Proprietà**.  
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto, quindi scegliere **Proprietà**.  
   
 2. Nella finestra **Pagine delle proprietà** per il progetto, in **Proprietà di configurazione** scegliere **Debug**.  
   
 3. Nell'elenco **Debugger da avviare** selezionare **Debugger Windows locale**. Nell'elenco **Tipo di debugger** selezionare **Solo GPU**. È necessario scegliere questo debugger per l'interruzione in corrispondenza dei punti di interruzione nel codice in esecuzione sulla GPU.  
   
-4. Fare clic sul pulsante **OK** .  
+4. Fare clic su **OK** .  
   
 5. Impostare un punto di interruzione nel codice della GPU.  
   
@@ -71,7 +71,7 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
   
 ### <a name="to-change-to-a-different-active-thread"></a>Per passare a un altro thread attivo  
   
-- Fare doppio clic sulla colonna. (Tastiera: Selezionare la riga e premere INVIO).  
+- Fare doppio clic sulla colonna. Sulla tastiera selezionare la riga e premere INVIO.  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Per visualizzare un riquadro e un thread specifici  
   
@@ -106,6 +106,6 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 - Scegliere il pulsante del flag nella finestra Thread GPU.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Procedura: Usare la finestra Espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Procedura dettagliata: Debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Procedura: usare la finestra espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)   
+ [Procedura dettagliata: debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

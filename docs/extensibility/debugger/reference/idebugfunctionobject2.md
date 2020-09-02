@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugFunctionObject2 . Documenti Microsoft
+title: IDebugFunctionObject2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c4150480d2e6686992d78727b6fed817da270145
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728436"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
-> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere [Analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e Esempio di [analizzatore di](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)espressioni gestite .
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Rappresenta una funzione e migliora il [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaccia.
+ Rappresenta una funzione e migliora l'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,26 +33,26 @@ IDebugFunctionObject2 : IUnknown
  Un analizzatore di espressioni (EE) implementa questa interfaccia per rappresentare una funzione.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- I metodi di questa interfaccia rinviano quelli di IDebugFunctionObject nei modi seguenti:Methods of this interface defer those of **IDebugFunctionObject** in the following ways:
+ I metodi di questa interfaccia rinviano quelli di **IDebugFunctionObject** nei modi seguenti:
 
-- Il **IDebugEvaluate** metodo accetta flag.
+- Il metodo **IDebugEvaluate** accetta flag.
 
-- Il **metodo CreateObject** accetta flag e un timeout.
+- Il metodo **CreateObject** accetta flag e un timeout.
 
-- Il **CreateStringObjectWithLength** metodo accetta una lunghezza.
+- Il metodo **CreateStringObjectWithLength** richiede una lunghezza.
 
 ## <a name="methods"></a>Metodi
- Questa interfaccia implementa i metodi seguenti:This interface implements the following methods:
+ Questa interfaccia implementa i metodi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Crea un oggetto che utilizza un costruttore date le impostazioni del flag di valutazione e un valore di timeout.|
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Crea un oggetto che usa un costruttore, date le impostazioni dei flag di valutazione e un valore di timeout.|
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Crea un oggetto stringa con la lunghezza specificata.|
-|[Valutare](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Chiama la funzione e restituisce il valore risultante come oggetto.|
+|[Valuta](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Chiama la funzione e restituisce il valore risultante come un oggetto.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Ee.h
+ Intestazione: EE. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
