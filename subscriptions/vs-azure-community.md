@@ -8,10 +8,10 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Supporto della community di Azure in specifiche sottoscrizioni di Visual Studio.
 ms.openlocfilehash: 0a4f04051c7bd42fc3a2da3bd0c3c374600f1be9
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238621"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum Supporto della community di Azure nelle sottoscrizioni di Visual Studio
@@ -26,7 +26,7 @@ Ottenere assistenza direttamente dal team di Azure in una selezione di forum di 
         - [App Web di Servizio app di Azure](https://social.msdn.microsoft.com/forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Backup di Azure](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)  
         - [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)  
-        - [HDInsight di Azure](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)  
+        - [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)  
         - [Portale di gestione di Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
@@ -39,7 +39,7 @@ Ottenere assistenza direttamente dal team di Azure in una selezione di forum di 
         - [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
-        - [Database SQL di Azure](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
+        - [database SQL di Azure](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
         - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
         - [Archiviazione di Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
         - [Macchine virtuali di Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
@@ -49,7 +49,7 @@ Ottenere assistenza direttamente dal team di Azure in una selezione di forum di 
     :::column-end:::
 :::row-end:::
 
-## <a name="get-started"></a>Operazioni preliminari
+## <a name="get-started"></a>Introduzione
 È semplice iniziare a partecipare alla community di Azure.
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 

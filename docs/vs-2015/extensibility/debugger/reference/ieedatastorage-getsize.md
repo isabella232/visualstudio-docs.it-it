@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetSize | Microsoft Docs
+title: 'IEEDataStorage:: GetSize | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c76ae583d089b23d21664c9e312d2486a14c2aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192129"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
@@ -40,13 +40,13 @@ int GetSize(
   
 #### <a name="parameters"></a>Parametri  
  `size`  
- [out] Il numero di byte contenuti in questo oggetto.  
+ out Numero di byte contenuti in questo oggetto.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Usare la [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) metodo per recuperare i byte di dati effettivi.  
+## <a name="remarks"></a>Osservazioni  
+ Usare il metodo [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) per recuperare i byte di dati effettivi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   

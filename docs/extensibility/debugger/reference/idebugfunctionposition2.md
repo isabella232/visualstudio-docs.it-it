@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugFunctionPosition2 . Documenti Microsoft
+title: IDebugFunctionPosition2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c260b6316207b0079a2ca8893b851db8b1288ba6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728318"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
@@ -32,23 +32,23 @@ IDebugFunctionPosition2 : IUnknown
  Il motore di debug (DE) implementa questa interfaccia per rappresentare la posizione di una funzione all'interno di un documento di origine.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Questa interfaccia viene fornita come parte di un'unione [di BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) (in particolare, una struttura [di BP_LOCATION_CODE_FUNC_OFFSET)](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) che a sua volta fa parte della struttura [BP_REQUEST_INFO,](../../../extensibility/debugger/reference/bp-request-info.md) utilizzata nella creazione di un punto di interruzione in sospeso.
+ Questa interfaccia viene fornita come parte di un'Unione [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) (in particolare, una struttura [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) ) che fa parte della struttura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) , utilizzata per la creazione di un punto di interruzione in sospeso.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente vengono `IDebugFunctionPosition2`illustrati i metodi di .
+ La tabella seguente illustra i metodi di `IDebugFunctionPosition2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Ottiene il nome della funzione relativa a questa posizione.|
+|[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Ottiene il nome della funzione a cui è correlata questa posizione.|
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Ottiene l'offset dall'inizio della funzione.|
 
 ## <a name="remarks"></a>Osservazioni
- La posizione rappresentata da questa interfaccia è basata su testo, in particolare una struttura [TEXT_POSITION.](../../../extensibility/debugger/reference/text-position.md)
+ La posizione rappresentata da questa interfaccia è basata su testo, in particolare una struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

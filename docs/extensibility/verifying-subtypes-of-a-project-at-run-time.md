@@ -1,5 +1,5 @@
 ---
-title: Verifica dei sottotipi di un progetto in fase di esecuzione Documenti Microsoft
+title: Verifica dei sottotipi di un progetto in fase di esecuzione | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0d739a9f8734dd8941e3254d03364cbf4c77350
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698175"
 ---
-# <a name="verify-subtypes-of-a-project-at-run-time"></a>Verificare i sottotipi di un progetto in fase di esecuzioneVerify subtypes of a project at run time
-Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzato deve includere la logica per cercare tale sottotipo in modo che possa non riuscire normalmente se il sottotipo non è presente. Nella procedura seguente viene illustrato come verificare la presenza di un sottotipo specificato.
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>Verificare i sottotipi di un progetto in fase di esecuzione
+Un VSPackage che dipende da un sottotipo di progetto personalizzato deve includere la logica per cercare tale sottotipo, in modo che possa avere esito negativo correttamente se il sottotipo non è presente. Nella procedura riportata di seguito viene illustrato come verificare la presenza di un sottotipo specificato.
 
 ### <a name="to-verify-the-presence-of-a-subtype"></a>Per verificare la presenza di un sottotipo
 
-1. Ottenere la gerarchia del progetto dagli <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetti di progetto e soluzione come oggetto aggiungendo il codice seguente al pacchetto VSPackage.Get the project hierarchy from the project and solution objects as a object by adding the following code to your VSPackage.
+1. Ottenere la gerarchia del progetto dagli oggetti del progetto e della soluzione come <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto aggiungendo il codice seguente al pacchetto VSPackage.
 
     ```csharp
     EnvDTE.DTE dte;
@@ -40,7 +40,7 @@ Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzato de
 
     ```
 
-2. Eseguire il cast <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> della gerarchia all'interfaccia.
+2. Eseguire il cast della gerarchia all' <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interfaccia.
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -48,7 +48,7 @@ Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzato de
 
     ```
 
-3. Ottenere l'elenco dei GUID di tipo <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>di progetto richiamando il file .
+3. Ottenere l'elenco dei GUID del tipo di progetto richiamando <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> .
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
@@ -68,5 +68,5 @@ Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzato de
 
 ## <a name="see-also"></a>Vedere anche
 - [Sottotipi di progetto](../extensibility/internals/project-subtypes.md)
-- [Progettazione di sottotipi di progetto](../extensibility/internals/project-subtypes-design.md)
+- [Progettazione sottotipi di progetto](../extensibility/internals/project-subtypes-design.md)
 - [Proprietà e metodi estesi dai sottotipi di progetto](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

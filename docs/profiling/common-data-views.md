@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74777829"
 ---
 # <a name="common-data-views"></a>Visualizzazioni dei dati comuni
@@ -27,27 +27,27 @@ Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i re
 
  Descrive la visualizzazione e il report di riepilogo. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)
+- [Visualizzazione chiamante/chiamato](../profiling/caller-callee-view.md)
 
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione struttura ad albero delle chiamate](../profiling/call-tree-view.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)
 
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione Moduli](../profiling/modules-view.md)
+- [Visualizzazione moduli](../profiling/modules-view.md)
 
  Descrive la visualizzazione e il report Moduli. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione Funzioni](../profiling/functions-view.md)
+- [Visualizzazione funzioni](../profiling/functions-view.md)
 
  Descrive la visualizzazione e il report Funzioni. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione Righe](../profiling/lines-view.md)
+- [Visualizzazione righe](../profiling/lines-view.md)
 
  Descrive la visualizzazione e il report Righe. Le colonne di dati dipendono dal metodo di profilatura.
 
-- [Visualizzazione Puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view.md)
+- [Visualizzazione puntatori all'istruzione](../profiling/instruction-pointers-ips-view.md)
 
  Descrive la visualizzazione e il report Puntatori all'istruzione. Le colonne di dati dipendono dal metodo di profilatura.
 

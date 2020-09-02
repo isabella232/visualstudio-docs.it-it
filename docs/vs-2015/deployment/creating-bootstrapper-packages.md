@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845526"
 ---
 # <a name="creating-bootstrapper-packages"></a>Creazione di programmi di avvio automatico
@@ -76,7 +76,7 @@ Il programma di installazione è un programma generico che può essere configura
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- oppure  
+ Oppure  
   
 ```  
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,9 +100,9 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabella seguente illustra le proprietà popolate automaticamente dal programma di avvio automatico.  
   
-|Gli|Descrizione|  
+|Proprietà|Descrizione|  
 |--------------|-----------------|  
-|ApplicationName|Nome dell'applicazione.|  
+|ApplicationName|Il nome dell'applicazione.|  
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Numero di versione per i sistemi operativi Microsoft Windows 95, Windows 98 o Windows ME. La sintassi della versione è Principale.Secondario.ServicePack.|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- L'elenco dei ridistribuibili è un file XML al quale è necessario assegnare un nome usando il formato *Nome azienda*.*Nome componente*.RedistList.xml. Quindi, se ad esempio il nome del componente è Datawidgets e la società che lo produce è Acme, usare il nome Acme.DataWidgets.RedistList.xml. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:  
+ L'elenco ridistribuibile è un file XML a cui è necessario assegnare un nome usando il formato seguente: *nome della società*. *Nome del componente*.RedistList.xml. Quindi, se ad esempio il nome del componente è Datawidgets e la società che lo produce è Acme, usare il nome Acme.DataWidgets.RedistList.xml. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -125,7 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md)   
  [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)   
  [Usare il programma di avvio automatico di Visual Studio 2005 per avviare l'installazione](https://msdn.microsoft.com/magazine/cc163899.aspx)

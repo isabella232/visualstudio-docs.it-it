@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugGenericFieldDefinition::ConstructInstantiation . Documenti Microsoft
+title: 'IDebugGenericFieldDefinition:: ConstructInstantiation | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728254"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
-Costruisce un'istanza di campo data una matrice di argomenti di tipo.
+Costruisce un'istanza di campo in base a una matrice di argomenti di tipo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,13 +44,13 @@ int ConstructInstantiation(
 
 ## <a name="parameters"></a>Parametri
 `cArgs`\
-[in] Numero di argomenti `ppArgs` nella matrice.
+in Numero di argomenti nella `ppArgs` matrice.
 
 `ppArgs`\
-[in] Matrice che contiene gli argomenti di tipo. Gli argomenti di tipo devono essere tipi chiusi (generici non generici o di cui è stata creata un'istanza completa).
+in Matrice che contiene gli argomenti di tipo. Gli argomenti di tipo devono essere tipi chiusi (generics non generici o con istanze complete).
 
 `ppConstructedField`\
-[fuori] Restituisce il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia che rappresenta il nuovo campo.
+out Restituisce l'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il nuovo campo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

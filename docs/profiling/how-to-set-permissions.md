@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 03f508bd2ff904898d77cd5ac07c30992da63b46
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328942"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
@@ -66,7 +66,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
      Verrà visualizzata la finestra di dialogo ** \<folder name> Proprietà** .
 
-3. Fare clic sulla scheda **Sicurezza**.
+3. Fare clic sulla scheda **Security** (Sicurezza).
 
 4. Fare clic sul nome dell'account utente nella casella **Utenti e gruppi**.
 
@@ -120,7 +120,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
    Dopo aver effettuato l'accesso, gli utenti specificati saranno in grado di usare gli strumenti di profilatura senza autorizzazioni di amministratore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
  di prestazioni [VSPerfCmd](../profiling/vsperfcmd.md) 

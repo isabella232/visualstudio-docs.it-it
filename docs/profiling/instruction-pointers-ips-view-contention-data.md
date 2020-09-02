@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774312"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Visualizzazione dei puntatori all'istruzione: dati sui conflitti
@@ -35,8 +35,8 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Nome del modulo**|Nome del modulo contenente l'istruzione.|
 |**Percorso modulo**|Percorso del modulo contenente l'istruzione.|
-|**ID di processo**|ID di processo (PID) del processo profilato.|
-|**Process Name**|Nome del processo.|
+|**ID processo**|ID di processo (PID) del processo profilato.|
+|**Nome processo**|Nome del processo.|
 |**Inizio carattere di origine**|Offset del carattere nella riga del file di origine in corrispondenza del quale inizia questa istruzione.|
 |**Fine carattere di origine**|Offset del carattere nella riga del file di origine in corrispondenza del quale termina questa istruzione.|
 |**File di origine**|File di origine che contiene l'istruzione.|
@@ -44,7 +44,7 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: personalizzare le colonne della visualizzazione reportHow to: Customize report view columns](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md)
-- [Visualizzazione Puntatori all'istruzione (IP) - campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view.md)
+- [Visualizzazione puntatori all'istruzione-campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)

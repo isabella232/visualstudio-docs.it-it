@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016791"
 ---
 # <a name="develop-sharepoint-solutions"></a>Sviluppare soluzioni SharePoint
@@ -100,7 +101,7 @@ ms.locfileid: "86016791"
 |Percorso di distribuzione|Percorso completo del file nel server SharePoint. Questo percorso è composto dalle sottoproprietà Radice distribuzione e Percorso distribuzione|
 |Percorso distribuzione|Percorso relativo del file nel file del server SharePoint, ad esempio Workflow1 \\ . Il percorso completo per il file viene creato concatenando il valore *Deployment Path* alla fine del valore *Deployment Root* .<br /><br /> Se si seleziona il valore *RootFile* per la proprietà *tipo di distribuzione* , la proprietà radice della *distribuzione* viene modificata in \<SharePointRoot> \\ , ottenendo un percorso completo di \<SharePointRoot> \Workflow1 \\ . Per ulteriori informazioni, vedere Creazione di [pacchetti e distribuzione di soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
 |Deployment Root|Stringa. Cartella radice in cui viene distribuito il file nel server SharePoint. Ad esempio, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> Il valore della proprietà *Deployment Root* è determinato dall'impostazione di *Deployment Type* .|
-|Tipo di distribuzione|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . I possibili valori sono i seguenti:<br /><br /> NoDeployment*\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> ElementFile: * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile*\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource*\<ClassResourcePath>\\*<br /><br /> Per altre informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Tipo di distribuzione|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . I possibili valori sono i seguenti:<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> ElementFile: * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> Per altre informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |File Name|Nome del file o della cartella per il file dell'elemento.|
 |Percorso completo|Percorso del file per l'elemento (sola lettura).|
 

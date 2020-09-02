@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 88df7c676e6dbd95704716eb8a361f2fce7f66d4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328822"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Procedura: Fare riferimento alle informazioni sui simboli di Windows
@@ -47,6 +47,6 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 
      È anche possibile fare clic sul pulsante con i puntini di sospensione (**... **) e quindi selezionare una directory dalla finestra di dialogo **Sfoglia per cartelle**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
 - [Procedura: serializzare le informazioni sui simboli](../profiling/how-to-serialize-symbol-information.md)

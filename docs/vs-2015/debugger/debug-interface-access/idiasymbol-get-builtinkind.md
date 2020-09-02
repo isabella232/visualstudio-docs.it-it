@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a18567472edc15c39505acda9e5c4896d56c0f12
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149784"
 ---
-# <a name="idiasymbolgetbuiltinkind"></a>IDiaSymbol::get_builtInKind
+# <a name="idiasymbolget_builtinkind"></a>IDiaSymbol::get_builtInKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un tipo incorporato del tipo di HLSL.  
+Recupera un tipo incorporato del tipo HLSL.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,10 +32,10 @@ HRESULT get_buildInKind(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Un puntatore a un `DWORD` che contiene un oggetto incorporato del tipo HLSL.  
+ out Puntatore a un oggetto `DWORD` che include un tipo incorporato del tipo HLSL.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

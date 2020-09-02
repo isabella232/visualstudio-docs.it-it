@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: dbe8f0cdb976dfb687071b231b2907b6b7124b3a
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328731"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati di memoria tramite la riga di comando
@@ -56,7 +56,7 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.
 
-     | Opzione | Description |
+     | Opzione | Descrizione |
      | - | - |
      | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna Nome utente nella scheda Processi di Gestione attività di Windows. |
      | [/crosssession &#124; /cs](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna ID sessione nella scheda Processi di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -71,7 +71,7 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 
     - `PID` specifica l'ID del processo dell'applicazione di destinazione. `ProcessName` specifica il nome del processo. Si noti che se si specifica `ProcessName` e sono in esecuzione più processi con lo stesso nome, i risultati sono imprevedibili. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.
 
-    - **/targetclr:** `Version` Specifica la versione del Common Language Runtime (CLR) da profilare quando più di una versione del runtime viene caricata in un'applicazione. Facoltativa.
+    - **/targetclr:** `Version` Specifica la versione del Common Language Runtime (CLR) da profilare quando più di una versione del runtime viene caricata in un'applicazione. facoltativo.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
 
@@ -81,7 +81,7 @@ Quando è in esecuzione l'applicazione di destinazione, è possibile controllare
 
 - Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/GlobalOff/GlobalOn](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato da `PID`.|
@@ -109,7 +109,7 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 
      **VSPerfCmd /off**
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Profilare applicazioni](../profiling/command-line-profiling-of-stand-alone-applications.md) 
  autonome [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40ae0a08e1623e1b90046d164d8bfe04eaf67229
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656857"
 ---
 # <a name="debugging-legacy-workflows"></a>Debug dei flussi di lavoro legacy
@@ -27,7 +27,7 @@ Se si sta usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] in [!INCLUDE[vs_cur
 > Se più versioni di Visual Studio vengono installate e disinstallate sul computer, il debug WF3 potrebbe non riuscire per una delle due seguenti cause:
 >
 > - I punti di interruzione non vengono rilevati.
->   - Viene visualizzato il seguente messaggio:
+>   - Viene visualizzato il messaggio seguente:
 >
 >   **Impossibile avviare il debug sul server Web. Il debugger non è installato correttamente.  Impossibile eseguire il debug del tipo di codice richiesto.  Eseguire il programma di installazione per installare o ripristinare il debugger.**
 >
@@ -70,4 +70,4 @@ Se si sta usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] in [!INCLUDE[vs_cur
 
  [Opzioni di avanzamento nell’esecuzione del debug (legacy)](../workflow-designer/debug-stepping-options-legacy.md)
 
- [Procedura: Modificare l'opzione di avanzamento nell'esecuzione del debug (legacy)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Procedura: modificare l'opzione di avanzamento nell'esecuzione del debug (legacy)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

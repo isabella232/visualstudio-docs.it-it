@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5971b5d7cf55e75c3350c72575856326be62feba
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464373"
 ---
 # <a name="idiasymbolget_addressoffset"></a>IDiaSymbol::get_addressOffset
@@ -41,7 +41,7 @@ out Restituisce la parte di offset della posizione di un indirizzo.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Per i membri statici presenti in una DLL esterna, l'offset restituito da questo metodo può essere 0 poiché questo metodo si basa sull'ottenimento dell'indirizzo virtuale del membro. Gli indirizzi virtuali sono validi solo se il metodo [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) nell'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) è stato chiamato con un parametro diverso da zero che specifica l'indirizzo di caricamento della dll.
 
  Per ottenere la parte della sezione di un indirizzo, chiamare il metodo [IDiaSymbol:: get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md) .
@@ -53,7 +53,7 @@ out Restituisce la parte di offset della posizione di un indirizzo.
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)

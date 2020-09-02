@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670495"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio
@@ -39,7 +39,7 @@ ms.locfileid: "72670495"
 
   Indipendentemente dalle impostazioni, dalla personalizzazione e dal contesto, è possibile trovare e modificare un tasto di scelta rapida nella finestra di dialogo **Opzioni**. È inoltre possibile cercare i tasti di scelta rapida predefiniti per decine e decine di comandi in [Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) e in [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md) è disponibile un elenco completo di tutti i tasti di scelta rapida predefiniti (basati su Impostazioni generali per lo sviluppo).
 
-  **In questo argomento**
+  **Contenuto dell'argomento**
 
 - [Identificazione di un tasto di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)
 
@@ -52,13 +52,13 @@ ms.locfileid: "72670495"
 > [!NOTE]
 > In base alle impostazioni e all'edizione di Visual Studio, i nomi e le pozioni dei comandi dei menu e le opzioni visualizzate nelle finestre di dialogo possono variare. Questo argomento è basato su **Impostazioni generali per lo sviluppo**.
 
-## <a name="bkmk_identify"></a> Identificazione di un tasto di scelta rapida
+## <a name="identifying-a-keyboard-shortcut"></a><a name="bkmk_identify"></a> Identificazione di un tasto di scelta rapida
 
-1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
+1. Sulla barra dei menu scegliere **strumenti**, **Opzioni**.
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
-     ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "|::ref1::|")
+     ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
 3. Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
 
@@ -70,15 +70,15 @@ ms.locfileid: "72670495"
 
 5. Se al comando è associato un tasto di scelta rapida, verrà visualizzato nell'elenco **Tasti di scelta rapida per comando selezionato**.
 
-     ![Visualizzare un tasto di scelta rapida per un comando specificato](../ide/media/viewshortcut.png "|::ref2::|")
+     ![Visualizzare un collegamento per un comando specifico](../ide/media/viewshortcut.png "ViewShortcut")
 
-## <a name="bkmk_assign"></a> Personalizzazione di un tasto di scelta rapida
+## <a name="customizing-a-keyboard-shortcut"></a><a name="bkmk_assign"></a> Personalizzazione di un tasto di scelta rapida
 
-1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
+1. Sulla barra dei menu scegliere **strumenti**, **Opzioni**.
 
 2. Espandere la cartella **Ambiente** e scegliere **Tastiera**.
 
-     ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "|::ref3::|")
+     ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
 3. Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
 
@@ -100,14 +100,14 @@ ms.locfileid: "72670495"
 
      Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, premere il tasto BACKSPACE per eliminare il tasto di scelta rapida prima di provarne un altro.
 
-     ![Specificare un tasto di scelta rapida diverso per un comando](../ide/media/reassignshortcut.png "|::ref4::|")
+     ![Specificare un collegamento diverso per un comando](../ide/media/reassignshortcut.png "ReassignShortcut")
 
 7. Scegliere il pulsante **Assegna**.
 
     > [!NOTE]
     > Se si specifica un tasto di scelta rapida diverso per un comando, scegliere il pulsante **Assegna** e quindi il pulsante **Annulla**. La finestra di dialogo si chiude, ma la modifica non viene ripristinata.
 
-## <a name="bkmk_transfer"></a> Condivisione di tasti di scelta rapida personalizzati
+## <a name="sharing-custom-keyboard-shortcuts"></a><a name="bkmk_transfer"></a> Condivisione di tasti di scelta rapida personalizzati
  È possibile condividere i tasti di scelta rapida personalizzati esportandoli in un file e quindi fornendo il file ad altri utenti in modo che possano importare i dati.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Per esportare solo i tasti di scelta rapida
@@ -120,7 +120,7 @@ ms.locfileid: "72670495"
 
 4. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Avanti**.
 
-     ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png "|::ref5::|")
+     ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png "ExportShortcuts")
 
 5. Nelle caselle **Assegnare un nome al file di impostazioni?** e **Archivia il file di impostazioni in questa directory** lasciare i valori predefiniti o specificare valori diversi e quindi scegliere il pulsante **Fine**.
 
@@ -142,7 +142,7 @@ ms.locfileid: "72670495"
 
 7. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Fine**.
 
-     ![Importare solo i tasti di scelta rapida personalizzati](../ide/media/importshortcuts.png "|::ref6::|")
+     ![Importare solo i tasti di scelta rapida personalizzati](../ide/media/importshortcuts.png "ImportShortcuts")
 
 ## <a name="see-also"></a>Vedere anche
  [Accessibility Features of Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) (Funzionalità di accessibilità di Visual Studio)

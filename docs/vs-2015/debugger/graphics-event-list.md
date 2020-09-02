@@ -12,20 +12,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845041"
 ---
-# <a name="graphics-event-list"></a>Elenco eventi di grafica
+# <a name="graphics-event-list"></a>Elenco eventi grafici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.  
   
  Questo è l'elenco di eventi:  
   
- ![Elenco di eventi il cui nome contiene "index".](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![Elenco di eventi con "Vertice" nel relativo nome.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>Uso dell'elenco di eventi  
  Quando si seleziona un evento nell'elenco, l'attività si riflette nelle informazioni visualizzate dagli altri strumenti di analisi grafica. Usando l'elenco di eventi insieme a questi altri strumenti è possibile esaminare in dettaglio un problema di rendering per determinarne la causa. Per altre informazioni su come risolvere i problemi di rendering usando l'elenco di eventi insieme agli altri strumenti di analisi grafica, vedere [Esempi](../debugger/graphics-diagnostics-examples.md).  
@@ -35,10 +35,10 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 ### <a name="color-coded-events-in-direct3d-12"></a>Eventi contraddistinti dal colore in Direct3D 12  
  Direct3D 12 espone più code che corrispondono a funzionalità hardware diverse. Per agevolare l'identificazione della coda associata a un particolare evento di grafica in Direct3D 12, quando si lavora su una cattura di un'app Direct3D 12, all'interno dell'elenco gli eventi sono contraddistinti da colori diversi in base alla coda.  
   
-|Coda Direct3D 12|Colore|  
+|Coda Direct3D 12|Color|  
 |-----------------------|-----------|  
-|Coda di rendering|Verde|  
-|Coda di calcolo|Yellow|  
+|Coda di rendering|Green|  
+|Coda di calcolo|Giallo|  
 |Coda di copia|Orange|  
   
  Direct3D 11 non espone più code, dunque gli eventi non sono contraddistinti dal colore nell'elenco di eventi quando si lavora con una cattura di un'app Direct3D 11.  
@@ -56,7 +56,7 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
   
 - Nella finestra **Elenco eventi grafici** , sopra l'elenco degli eventi, individuare l'elenco a discesa **Visualizza** e scegliere la visualizzazione **Cronologia** o la visualizzazione **Chiamate di disegno** .  
   
-### <a name="filtering-events"></a>Filtro di eventi  
+### <a name="filtering-events"></a>Filtro degli eventi  
  La casella Cerca, situata nell'angolo superiore destro della finestra **Elenco eventi grafici** consente di filtrare l'elenco di eventi in modo da includere solo gli eventi i cui nomi contengono determinate parole chiave. È possibile specificare singole parole chiave, ad esempio `Vertex`, come mostrato nella figura precedente, oppure un elenco di parole chiave separate da punti e virgola, come `Draw;Primitive`, per visualizzare solo gli eventi il cui nome contiene `Draw` o `Primitive` . Le ricerche sono sensibili agli spazi. Ad esempio, `VSSet` e `VS Set` sono differenti. Fare quindi attenzione a formulare le ricerche nel modo corretto.  
   
 ### <a name="moving-between-draw-calls"></a>Spostamento tra chiamate di disegno  
@@ -71,9 +71,9 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 |Icona|Descrizione evento|  
 |----------|-----------------------|  
 |(nessuna icona)|Evento generale<br /> Qualsiasi evento diverso da un evento definito dall'utente, un gruppo di eventi definito dall'utente o un evento di disegno.|  
-|![Icona dell'evento di richiamo](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Evento di disegno<br /> Contrassegna un evento di disegno che si è verificato durante il frame acquisito.|  
-|![Icona dell'&#45;indicatore dell'evento definito dall'utente](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Gruppo di eventi definito dall'utente<br /> Raggruppa gli eventi correlati, in base a quanto definito dall'app.|  
-|![Icona dell'&#45;indicatore dell'evento definito dall'utente](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Marcatore di eventi definito dall'utente<br /> Contrassegna una posizione specifica, in base a quanto definito dall'app.|  
+|![Icona dell'evento di disegno](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|Evento di disegno<br /> Contrassegna un evento di disegno che si è verificato durante il frame acquisito.|  
+|![Icona dell'indicatore dell'evento definito dall'utente&#45;](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Gruppo di eventi definito dall'utente<br /> Raggruppa gli eventi correlati, in base a quanto definito dall'app.|  
+|![Icona dell'indicatore dell'evento definito dall'utente&#45;](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|Marcatore di eventi definito dall'utente<br /> Contrassegna una posizione specifica, in base a quanto definito dall'app.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Contrassegno di eventi definiti dall'utente nell'app  
  Gli eventi definiti dall'utente sono specifici dell'app. Possono essere usati per correlare gli eventi significativi che si verificano nell'app a quelli presenti nell'Elenco eventi grafici. Ad esempio, è possibile creare gruppi di eventi definiti dall'utente per organizzare in gruppi o gerarchie gli eventi correlati al rendering dell'interfaccia, in modo da poter sfogliare più facilmente l'elenco di eventi, oppure creare marcatori quando vengono disegnati determinati tipi di oggetti, in modo da trovare facilmente gli eventi grafici correlati nell'elenco di eventi.  
@@ -102,4 +102,4 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
  È possibile usare qualsiasi API supportata dalla versione di Direct3D in uso. Ad esempio, se la destinazione è l'API Direct3D 11.1, per creare un marcatore di eventi si può usare `SetMarker` o `D3DPerf_SetMarker` , ma non `SetMarkerInt` perché quest'ultima è disponibile solo in Direct3D 11.2. È anche possibile combinare nella stessa app le API che supportano versioni diverse di Direct3D.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)
+ [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)

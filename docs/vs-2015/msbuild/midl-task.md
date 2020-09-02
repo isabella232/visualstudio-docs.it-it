@@ -28,10 +28,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 336a02927374e856a2d6f5a55eb03c5ae1ac7037
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845187"
 ---
 # <a name="midl-task"></a>Attività MIDL
@@ -44,7 +44,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **AdditionalIncludeDirectories**  
   
-     Parametro **String[]** facoltativo.  
+     Parametro **String []** facoltativo.  
   
      Aggiunge una directory all'elenco di directory nelle quali viene effettuata la ricerca dei file IDL importati, inclusi i file di intestazione e i file di configurazione dell'applicazione.  
   
@@ -52,15 +52,15 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **AdditionalOptions**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
-     Elenco di opzioni della riga di comando. Ad esempio, **"** _/opzione1 /opzione2 /opzione#_ ". Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività MIDL.  
+     Elenco di opzioni della riga di comando. Ad esempio, **"**_/opzione1/opzione2/opzione #_". Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività MIDL.  
   
      Per altre informazioni, vedere "MIDL Command-Line Reference" (Informazioni di riferimento sulla riga di comando MIDL) nel sito Web [MSDN](https://msdn.microsoft.com/).  
   
 - **ApplicationConfigurationMode**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, consente di usare alcune parole chiave dei file di configurazione dell'applicazione nel file IDL.  
   
@@ -68,7 +68,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **ClientStubFile**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il nome del file stub client per un'interfaccia RPC.  
   
@@ -76,7 +76,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **CPreprocessOptions**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica le opzioni da passare al preprocessore C/C++. Specificare un elenco di opzioni del preprocessore delimitate da spazio.  
   
@@ -84,23 +84,23 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **DefaultCharType**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il tipo di carattere predefinito che verrà usato dal compilatore C per compilare il codice generato.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Valore|Opzione da riga di comando|  
     |-----------|--------------------------|  
     |**Signed**|**/char signed**|  
     |**Unsigned**|**/char unsigned**|  
-    |**Ascii**|**/char ascii7**|  
+    |**ASCII**|**/char ascii7**|  
   
      Per altre informazioni, vedere l'opzione **/char** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](https://msdn.microsoft.com/).  
   
 - **DllDataFileName**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il nome file per il file *dlldata* generato per una DLL del proxy.  
   
@@ -108,23 +108,23 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **EnableErrorChecks**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il tipo di controllo errori che verrà eseguito dagli stub generati in fase di esecuzione.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Valore|Opzione da riga di comando|  
     |-----------|--------------------------|  
-    |**None**|**/error none**|  
-    |**EnableCustom**|**/error**|  
-    |**All**|**/error all**|  
+    |**Nessuno**|**/error none**|  
+    |**EnableCustom**|**/Error**|  
+    |**Tutto**|**/error all**|  
   
      Per altre informazioni, vedere l'opzione **/error** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](https://msdn.microsoft.com/).  
   
 - **ErrorCheckAllocations**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, verifica la presenza di errori di memoria insufficiente.  
   
@@ -132,7 +132,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **ErrorCheckBounds**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, controlla le dimensioni delle matrici variabili conformi e variabili rispetto alla specifica relativa alla durata delle trasmissioni.  
   
@@ -140,15 +140,15 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **ErrorCheckEnumRange**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, controlla che i valori di enumerazione siano compresi in un intervallo consentito.  
   
-     Per altre informazioni, vedere l'opzione **/error enum** nella guida della riga di comando ( **/?** ) per midl.exe.  
+     Per ulteriori informazioni, vedere l'opzione **enum/Error** nella guida della riga di comando (**/?**) per midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, controlla che nessun puntatore di riferimento Null venga passato agli stub client.  
   
@@ -156,7 +156,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **ErrorCheckStubData**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, genera uno stub che acquisisce eccezioni di unmarshalling sul lato server e le propaga al client.  
   
@@ -164,37 +164,37 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **GenerateClientFiles**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica se il compilatore genera un file di origine C sul lato client per un'interfaccia RPC.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Valore|Opzione da riga di comando|  
     |-----------|--------------------------|  
-    |**None**|**/client none**|  
+    |**Nessuno**|**/client none**|  
     |**Stub**|**/client stub**|  
   
      Per altre informazioni, vedere l'opzione **/client** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](https://msdn.microsoft.com/).  
   
 - **GenerateServerFiles**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica se il compilatore genera un file di origine C sul lato server per un'interfaccia RPC.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Valore|Opzione da riga di comando|  
     |-----------|--------------------------|  
-    |**None**|**/server none**|  
+    |**Nessuno**|**/server none**|  
     |**Stub**|**/server stub**|  
   
      Per altre informazioni, vedere l'opzione **/server** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](https://msdn.microsoft.com/).  
   
 - **GenerateStublessProxies**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, genera stub completamente interpretati con proxy senza stub per le interfacce degli oggetti.  
   
@@ -202,7 +202,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **GenerateTypeLibrary**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, non viene generato un file di libreria dei tipi (TLB).  
   
@@ -210,7 +210,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **HeaderFileName**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il nome del file di intestazione generato.  
   
@@ -218,7 +218,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **IgnoreStandardIncludePath**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, l'attività MIDL effettua la ricerca solo nelle directory specificate usando l'opzione **AdditionalIncludeDirectories** e ignora la directory corrente e le directory specificate dalla variabile di ambiente INCLUDE.  
   
@@ -226,7 +226,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **InterfaceIdentifierFileName**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il nome del *file dell'identificatore di interfaccia* per un'interfaccia COM. Esegue l'override del nome predefinito ottenuto aggiungendo "_i.c" al nome file IDL.  
   
@@ -242,7 +242,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **MkTypLibCompatible**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, è necessario che il formato dei file di input sia compatibile con mktyplib.exe versione 2.03.  
   
@@ -250,7 +250,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **OutputDirectory**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica la directory predefinita in cui l'attività MIDL scrive i file di output.  
   
@@ -258,15 +258,15 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **PreprocessorDefinitions**  
   
-     Parametro **String[]** facoltativo.  
+     Parametro **String []** facoltativo.  
   
-     Specifica una o più *definizioni*, ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]* .  
+     Specifica una o più *definizioni*, ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]*.  
   
      Per altre informazioni, vedere l'opzione **/D** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](https://msdn.microsoft.com/). Vedere anche il parametro **UndefinePreprocessorDefinitions** in questa tabella.  
   
 - **ProxyFileName**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il nome del file proxy di interfaccia per un'interfaccia COM.  
   
@@ -274,7 +274,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **RedirectOutputAndErrors**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Reindirizza l'output, ad esempio messaggi di errore e avvisi, dall'output standard al file specificato.  
   
@@ -282,13 +282,13 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **ServerStubFile**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il nome del file stub server per un'interfaccia RPC.  
   
      Per altre informazioni, vedere l'opzione **/sstub** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](https://msdn.microsoft.com/). Vedere anche il parametro **ClientStubFile** in questa tabella.  
   
-- **Source**  
+- **Origine**  
   
      Parametro `ITaskItem[]` obbligatorio.  
   
@@ -296,15 +296,15 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **StructMemberAlignment**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica l'allineamento (*livello di compressione*) delle strutture nel sistema di destinazione.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Valore|Opzione da riga di comando|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<nessuno>*|  
+    |**NotSet**|*\<none>*|  
     |**1**|**/Zp1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
@@ -314,7 +314,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **SuppressCompilerWarnings**  
   
-     Parametro **Boolean** facoltativo.  
+     Parametro **booleano** facoltativo.  
   
      Se `true`, elimina i messaggi di avviso dall'attività MIDL.  
   
@@ -330,15 +330,15 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **TargetEnvironment**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica l'ambiente in cui viene eseguita l'applicazione.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Valore|Opzione da riga di comando|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<nessuno>*|  
+    |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
     |**Itanium**|**/env ia64**|  
     |**X64**|**/env x64**|  
@@ -353,13 +353,13 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **TypeLibFormat**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il formato del file di libreria dei tipi.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Valore|Opzione da riga di comando|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -368,7 +368,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **TypeLibraryName**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica il nome del file di libreria dei tipi.  
   
@@ -376,7 +376,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **UndefinePreprocessorDefinitions**  
   
-     Parametro **String[]** facoltativo.  
+     Parametro **String []** facoltativo.  
   
      Rimuove le definizioni precedenti di un nome passando il nome al preprocessore C come in base a una direttiva `#undefine`. Specificare uno o più nomi definiti in precedenza.  
   
@@ -402,13 +402,13 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
 - **WarningLevel**  
   
-     Parametro **String** facoltativo.  
+     Parametro **stringa** facoltativo.  
   
      Specifica la gravità (*livello di avviso*) degli avvisi da creare. Per il valore 0 non vengono creati avvisi. Diversamente, viene creato un avviso se il livello di avviso è numericamente inferiore o uguale al valore specificato.  
   
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-    |Valore|Opzione della riga di comando|  
+    |Valore|Opzione da riga di comando|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  
@@ -418,7 +418,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Per altre informazioni, vedere l'opzione **/W** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](https://msdn.microsoft.com/). Vedere anche il parametro **WarnAsError** in questa tabella.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

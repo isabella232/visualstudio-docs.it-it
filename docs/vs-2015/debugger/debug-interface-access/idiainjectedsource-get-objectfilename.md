@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f485fb52c2de36e111fe2846a9ee16328ac61c49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192404"
 ---
-# <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
+# <a name="idiainjectedsourceget_objectfilename"></a>IDiaInjectedSource::get_objectFilename
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera il nome file dell'oggetto a cui l'origine è stata compilata.  
+Recupera il nome del file oggetto in cui è stata compilata l'origine.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,7 +35,7 @@ HRESULT get_objectFilename ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il nome file dell'oggetto a cui l'origine è stata compilata.  
+ out Restituisce il nome del file oggetto in cui è stata compilata l'origine.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

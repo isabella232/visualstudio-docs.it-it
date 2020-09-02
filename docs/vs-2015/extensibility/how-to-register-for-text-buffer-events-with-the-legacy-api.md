@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Registrarsi per gli eventi nel Buffer di testo con l'API Legacy | Microsoft Docs"
+title: "Procedura: registrare gli eventi del buffer di testo con l'API legacy | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f36e8dd780788d241e3c286b1bbbe581311b143
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204087"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Procedura: Eseguire la registrazione per gli eventi del buffer di testo con l'API legacy
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Procedura: eseguire la registrazione per gli eventi del buffer di testo con l'API legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se si accede al buffer di testo usando l'API legacy, è necessario registrarsi per gli eventi nel buffer di testo come illustrato nella procedura seguente.  
+Se si accede al buffer di testo tramite l'API legacy, è necessario registrarsi per gli eventi del buffer di testo, come illustrato nella procedura seguente.  
   
-### <a name="to-advise-text-buffer-events"></a>Per indicare gli eventi nel buffer di testo  
+### <a name="to-advise-text-buffer-events"></a>Per consigliare gli eventi del buffer di testo  
   
-1. Da un puntatore a una delle interfacce <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>, chiamare `QueryInterface` per un puntatore a <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
+1. Da un puntatore a una delle interfacce in <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> , chiamare `QueryInterface` per un puntatore a <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> .  
   
-2. Chiamare il <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A> (metodo) e passare l'ID di interfaccia degli eventi per cui si vuole registrare.  
+2. Chiamare il <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A> metodo e passare l'ID di interfaccia degli eventi per i quali si desidera eseguire la registrazione.  
   
-     Ad esempio, se si desidera registrare per <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>, poi passare a una ID di IID_IVsTextLinesEvents interfaccia.  
+     Se ad esempio si vuole eseguire la registrazione per <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> , passare un ID di interfaccia di IID_IVsTextLinesEvents.  
   
-     Il buffer di testo restituisce un puntatore al <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaccia per l'oggetto punto di connessione appropriata.  
+     Il buffer di testo restituisce un puntatore all' <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaccia per l'oggetto punto di connessione appropriato.  
   
-3. Tramite questo puntatore, chiamare il <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> , passando un puntatore all'implementazione dell'interfaccia degli eventi per il quale si desidera registrare, ad esempio, il `IVsTextLinesEvents` interfaccia.  
+3. Utilizzando questo puntatore, chiamare il <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> metodo, passando un puntatore all'implementazione dell'interfaccia degli eventi per la quale si desidera eseguire la registrazione, ad esempio l' `IVsTextLinesEvents` interfaccia.  
   
-     L'ambiente restituisce un cookie che è quindi possibile utilizzare per interrompere l'ascolto di eventi chiamando il <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A> (metodo).  
+     L'ambiente restituisce un cookie che è possibile usare per arrestare l'ascolto degli eventi chiamando il <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A> metodo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eventi del buffer di testo nell'API legacy](../extensibility/text-buffer-events-in-the-legacy-api.md)

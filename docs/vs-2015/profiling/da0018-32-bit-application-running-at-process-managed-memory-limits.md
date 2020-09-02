@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d3247fb421800f87740a911563880b70abf3eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844726"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
@@ -46,7 +46,7 @@ ID regola | DA0018 |
  Quando la dimensione totale degli heap gestiti si avvicina al limite predefinito, il sovraccarico di gestione della memoria aumenta di solito a un punto tale che potrebbe iniziare ad avere un impatto sulla capacità di risposta e sulla scalabilità dell'applicazione.  
   
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso  
- Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione [Contrassegni](../profiling/marks-view.md). Individuare le colonne **Memoria CLR .NET\\Byte in tutti gli heap** e **Totale byte di cui è stato eseguito il commit**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'allocazione di memoria gestita è maggiore rispetto ad altre fasi. Confrontare i valori della colonna **Byte in tutti gli heap** con la frequenza di Garbage Collection indicata nelle colonne **Memoria CLR .NET\\Raccolte di generazione 0**, **Memoria CLR .NET\\Raccolte di generazione 1** e **Memoria CLR .NET\\Raccolte di generazione 2** per determinare se il modello di allocazioni di memoria gestita incide sulla frequenza di Garbage Collection.  
+ Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione [Contrassegni](../profiling/marks-view.md) . Individuare le colonne **Memoria CLR .NET\\Byte in tutti gli heap** e **Totale byte di cui è stato eseguito il commit**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'allocazione di memoria gestita è maggiore rispetto ad altre fasi. Confrontare i valori della colonna **Byte in tutti gli heap** con la frequenza di Garbage Collection indicata nelle colonne **Memoria CLR .NET\\Raccolte di generazione 0**, **Memoria CLR .NET\\Raccolte di generazione 1** e **Memoria CLR .NET\\Raccolte di generazione 2** per determinare se il modello di allocazioni di memoria gestita incide sulla frequenza di Garbage Collection.  
   
  In un'applicazione .NET Framework, Common Language Runtime limita la dimensione totale degli heap gestiti a un valore leggermente inferiore a metà della dimensione massima della parte di area privata di uno spazio degli indirizzi del processo. Per i processi a 32 bit in esecuzione su un computer a 32 bit, il limite superiore della parte privata dello spazio degli indirizzi del processo è di 2 GB. Quando la dimensione totale degli heap gestiti si avvicina al limite predefinito, il sovraccarico di gestione della memoria può aumentare e le prestazioni dell'applicazione possono diminuire.  
   
@@ -54,7 +54,7 @@ ID regola | DA0018 |
   
 - ottimizzazione dell'utilizzo delle risorse di memoria gestita da parte dell'applicazione  
   
-   oppure  
+   -oppure-  
   
 - esecuzione di procedure per limitare i vincoli architettonici alla dimensione massima della memoria virtuale per un processo a 32 bit  
   

@@ -1,5 +1,5 @@
 ---
-title: PROPRIETÀ MESSAGETYPE . Documenti Microsoft
+title: MESSAGETYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b4d0fd12495a59427500c16ef6f37d9f8b6e61f5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714490"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
@@ -52,32 +52,32 @@ public enum enum_MESSAGETYPE { 
 
 ## <a name="fields"></a>Campi
  `MT_OUTPUTSTRING`\
- Indica che il messaggio deve essere inviato alla finestra di output. Questo si escludono a vicenda da `MT_MESSAGEBOX`.
+ Indica che il messaggio deve essere inviato alla finestra di output. Si escludono a vicenda `MT_MESSAGEBOX` .
 
  `MT_MESSAGEBOX`\
- Indica che il messaggio deve essere visualizzato in una finestra di messaggio. Questo si escludono a vicenda da `MT_OUTPUTSTRING`.
+ Indica che il messaggio deve essere visualizzato in una finestra di messaggio. Si escludono a vicenda `MT_OUTPUTSTRING` .
 
  `MT_TYPE_MASK`\
- Valore maschera per isolare la destinazione del messaggio.
+ Valore della maschera per isolare la destinazione del messaggio.
 
  `MT_REASON_EXCEPTION`\
- Indica che una finestra di messaggio viene visualizzata come risultato di un'eccezione. Questo si escludono a vicenda da `MT_REASON_TRACEPOINT`.
+ Indica che una finestra di messaggio viene visualizzata come risultato di un'eccezione. Si escludono a vicenda `MT_REASON_TRACEPOINT` .
 
  `MT_REASON_TRACEPOINT`\
- Indica che viene visualizzata una finestra di messaggio come risultato di un punto di analisi. Questo si escludono a vicenda per `MT_REASON_EXCEPTION`.
+ Indica che una finestra di messaggio viene visualizzata come risultato dell'esecuzione di un punto di analisi. Si escludono a vicenda `MT_REASON_EXCEPTION` .
 
  `MT_REASON_MASK`\
- Valore della maschera per isolare il motivo della visualizzazione del messaggio.
+ Valore della maschera per isolare il motivo del messaggio visualizzato.
 
 ## <a name="remarks"></a>Osservazioni
- Questi valori vengono restituiti dal [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) metodi.
+ Questi valori vengono restituiti dai metodi [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) .
 
- Uno dei valori di motivo può essere combinato con `OR`uno dei valori di destinazione dell'output utilizzando un oggetto bit per bit.
+ Uno dei motivi per cui i valori possono essere combinati con uno dei valori di destinazione di output utilizzando un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

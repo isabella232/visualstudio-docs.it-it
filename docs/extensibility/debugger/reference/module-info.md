@@ -1,5 +1,5 @@
 ---
-title: proprietà MODULE_INFO . Documenti Microsoft
+title: MODULE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714305"
 ---
 # <a name="module_info"></a>MODULE_INFO
-Viene descritto un determinato modulo (DLL, EXE o assembly).
+Descrive un particolare modulo (DLL, EXE o assembly).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,9 +61,9 @@ public struct MODULE_INFO { 
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
  `dwValidFields`\
- Combinazione di flag dell'enumerazione [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) che specifica quali campi vengono compilati.
+ Combinazione di flag dell'enumerazione [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) che specifica i campi che vengono compilati.
 
  `m_bstrName`\
  Nome del modulo.
@@ -75,7 +75,7 @@ public struct MODULE_INFO { 
  Versione del modulo.
 
  `m_bstrDebugMessage`\
- Un messaggio facoltativo relativo al modulo, ad esempio "Impossibile caricare i simboli".
+ Un messaggio facoltativo sul modulo, ad esempio, "non è possibile caricare i simboli".
 
  `m_addrLoadAddress`\
  Indirizzo di caricamento del modulo.
@@ -90,23 +90,23 @@ public struct MODULE_INFO { 
  Ordine di caricamento del modulo.
 
  `m_TimeStamp`\
- Ora dell'ultima modifica del file di simboli.
+ Ora dell'Ultima modifica del file di simboli.
 
  `m_bstrUrlSymbolLocation`\
- Percorso del file di simboli (ad\\esempio, ". ") specificato nel modulo. Utilizzato come posizione iniziale per trovare i simboli per un modulo.
+ Percorso del file di simboli (ad esempio, ". \\ ") specificato nel modulo. Usato come posizione iniziale per trovare i simboli per un modulo.
 
  `m_dwModuleFlags`\
  Combinazione di flag dell'enumerazione [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) che descrive il modulo.
 
 ## <a name="remarks"></a>Osservazioni
- Questa struttura viene passata al [metodo GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) in cui viene compilata.
+ Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) dove viene compilata.
 
- Questa struttura corrisponde a ogni modulo elencato nella finestra **Moduli.**
+ Questa struttura corrisponde a ogni modulo elencato nella finestra **moduli** .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

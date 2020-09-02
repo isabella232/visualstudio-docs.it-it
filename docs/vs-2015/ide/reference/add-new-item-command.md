@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e6237ace96799961683b0b0431f5dad3ab679e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670202"
 ---
 # <a name="add-new-item-command"></a>Comando Aggiungi nuovo elemento
@@ -35,7 +35,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ## <a name="arguments"></a>Argomenti
  `filename` Facoltativo. Percorso e nome file dell'elemento da aggiungere alla soluzione.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /t: `templatename` Facoltativo. Specifica il tipo di file da creare. Se non viene specificato alcun modello, per impostazione predefinita viene creato un file di testo.
 
  La sintassi dell'argomento /t:`templatename` riflette le informazioni riportate nella finestra di dialogo **Aggiungi nuovo elemento di soluzione**. È necessario immettere il nome completo della categoria e il tipo di file separati da una barra rovesciata (`\`) racchiudendo l'intera stringa tra virgolette.

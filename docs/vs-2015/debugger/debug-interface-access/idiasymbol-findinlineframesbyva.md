@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45ba0d02c58bf40fb45ea79616c58bbc9037671c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149878"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un'enumerazione che consente a un client scorrere tutti i frame inline in un indirizzo virtuale specificato (valutazione della vulnerabilità).  
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato (VA).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,13 +34,13 @@ HRESULT findInlineFramesByVA ( 
   
 #### <a name="parameters"></a>Parametri  
  `va`  
- [in] Specifica l'indirizzo come un responsabile tecnologico  
+ in Specifica l'indirizzo come VA.  
   
  `ppResult`  
- [out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame che vengono recuperati.  
+ out Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco dei frame recuperati.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

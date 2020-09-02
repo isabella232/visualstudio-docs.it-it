@@ -1,5 +1,5 @@
 ---
-title: Riferimenti alle API non gestite ClickOnce | Microsoft Docs
+title: Informazioni di riferimento sulle API non gestite ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,67 +20,67 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 714d7b18995bf1ad51b07e02227e440879f73c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192311"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Riferimenti alle API non gestite ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pubbliche API non gestite da dfshim.  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] API pubbliche non gestite da dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
- Esegue la pulizia o disinstalla tutte le applicazioni online dal [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cache dell'applicazione.  
+ Pulisce o disinstalla tutte le applicazioni online dalla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cache dell'applicazione.  
   
 ### <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un valore HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
   
-### <a name="remarks"></a>Note  
- La chiamata a CleanOnlineAppCache avvierà il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] del servizio se non è già in esecuzione.  
+### <a name="remarks"></a>Osservazioni  
+ La chiamata di CleanOnlineAppCache avvierà il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] servizio se non è già in esecuzione.  
   
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
- Recupera le informazioni di distribuzione dall'URL del manifesto e l'attivazione.  
+ Recupera le informazioni di distribuzione dal manifesto e dall'URL di attivazione.  
   
 ### <a name="parameters"></a>Parametri  
   
 |Parametro|Descrizione|Type|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|Un puntatore al `ActivationURL`.|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|Un puntatore al `PathToDeploymentManifest`.|LPCWSTR|  
-|`pwzApplicationIdentity`|Puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica l'identità dell'applicazione completo restituito.|LPWSTR|  
-|`pdwIdentityBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzApplicationIdentity` buffer, in WCHAR. Ciò include lo spazio per il carattere di terminazione NULL.|LPDWORD|  
-|`pwzProcessorArchitecture`|Puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica l'architettura del processore di distribuzione dell'applicazione, dal manifesto.|LPWSTR|  
-|`pdwArchitectureBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzProcessorArchitecture` buffer, in WCHAR.|LPDWORD|  
-|`pwzApplicationManifestCodebase`|Puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica la codebase del manifesto dell'applicazione, dal manifesto.|LPWSTR|  
-|`pdwCodebaseBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzApplicationManifestCodebase` buffer, in WCHAR.|LPDWORD|  
-|`pwzDeploymentProvider`|Un puntatore a un buffer per ricevere una stringa con terminazione NULL che specifica il provider di distribuzione dal manifesto, se presente. In caso contrario, viene restituita una stringa vuota.|LPWSTR|  
-|`pdwProviderBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzProviderBufferLength`.|LPDWORD|  
+|`pcwzActivationUrl`|Puntatore a `ActivationURL`.|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|Puntatore a `PathToDeploymentManifest`.|LPCWSTR|  
+|`pwzApplicationIdentity`|Puntatore a un buffer per ricevere una stringa con terminazione NULL che specifica l'identità dell'applicazione completa restituita.|LPWSTR|  
+|`pdwIdentityBufferLength`|Puntatore a un valore DWORD che corrisponde alla lunghezza del `pwzApplicationIdentity` buffer, in WCHAR. Include lo spazio per il carattere di terminazione NULL.|LPDWORD|  
+|`pwzProcessorArchitecture`|Puntatore a un buffer per ricevere una stringa con terminazione NULL che specifica l'architettura del processore della distribuzione dell'applicazione, dal manifesto.|LPWSTR|  
+|`pdwArchitectureBufferLength`|Puntatore a un valore DWORD che corrisponde alla lunghezza del `pwzProcessorArchitecture` buffer, in WCHAR.|LPDWORD|  
+|`pwzApplicationManifestCodebase`|Puntatore a un buffer per ricevere una stringa con terminazione NULL che specifica la codebase del manifesto dell'applicazione, dal manifesto.|LPWSTR|  
+|`pdwCodebaseBufferLength`|Puntatore a un valore DWORD che corrisponde alla lunghezza del `pwzApplicationManifestCodebase` buffer, in WCHAR.|LPDWORD|  
+|`pwzDeploymentProvider`|Puntatore a un buffer per ricevere una stringa con terminazione NULL che specifica il provider di distribuzione dal manifesto, se presente. In caso contrario, viene restituita una stringa vuota.|LPWSTR|  
+|`pdwProviderBufferLength`|Puntatore a un valore DWORD che rappresenta la lunghezza di `pwzProviderBufferLength` .|LPDWORD|  
   
 ### <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Restituisce HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) se un buffer è troppo piccolo.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un valore HRESULT che rappresenta l'errore. Restituisce HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) se un buffer è troppo piccolo.  
   
-### <a name="remarks"></a>Note  
- I puntatori non devono essere null. `pcwzActivationUrl` e `pcwzPathToDeploymentManifest` non deve essere vuoto.  
+### <a name="remarks"></a>Osservazioni  
+ I puntatori non devono essere null. `pcwzActivationUrl` e `pcwzPathToDeploymentManifest` non devono essere vuoti.  
   
- È responsabilità del chiamante per pulire l'URL di attivazione. Ad esempio, aggiungendo caratteri di escape in cui sono necessari o rimuovendo la stringa di query.  
+ È responsabilità del chiamante pulire l'URL di attivazione. Ad esempio, l'aggiunta di caratteri di escape dove sono necessari o la rimozione della stringa di query.  
   
- È responsabilità del chiamante per limitare la lunghezza di input. Ad esempio, la lunghezza URL massima è 2KB.  
+ È responsabilità del chiamante limitare la lunghezza di input. Ad esempio, la lunghezza massima dell'URL è 2 KB.  
   
 ## <a name="launchapplication"></a>LaunchApplication  
- Avvia o si installa un'applicazione usando un URL di distribuzione.  
+ Avvia o installa un'applicazione usando un URL di distribuzione.  
   
 ### <a name="parameters"></a>Parametri  
   
 |Parametro|Descrizione|Type|  
 |---------------|-----------------|----------|  
-|`deploymentUrl`|Un puntatore a una stringa con terminazione NULL che contiene l'URL del manifesto della distribuzione.|LPCWSTR|  
+|`deploymentUrl`|Puntatore a una stringa con terminazione NULL che contiene l'URL del manifesto di distribuzione.|LPCWSTR|  
 |`data`|Riservato per usi futuri. Deve essere NULL.|LPVOID|  
 |`flags`|Riservato per usi futuri. Deve essere 0.|DWORD|  
   
 ### <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un valore HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetInfo | Microsoft Docs
+title: 'IDebugStackFrame2:: GetInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6ebfda26b58bb1e7048b969133fa1672edad8a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164771"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene una descrizione del frame dello stack.  
+Ottiene una descrizione dell'stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,16 +44,16 @@ int GetInfo ( 
   
 #### <a name="parameters"></a>Parametri  
  `dwFieldSpec`  
- [in] Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi del `pFrameInfo` parametro devono essere compilati.  
+ in Combinazione di flag dell'enumerazione [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) che specifica i campi del `pFrameInfo` parametro da compilare.  
   
  `nRadix`  
- [in] La radice da utilizzare nella formattazione qualsiasi informazioni numeriche.  
+ in La radice da usare per la formattazione di qualsiasi informazione numerica.  
   
  `pFrameInfo`  
- [out] Oggetto [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura compilata con la descrizione del frame dello stack.  
+ out Struttura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) compilata con la descrizione del stack frame.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

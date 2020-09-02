@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 297D9094-B40F-4C1A-BF19-B14CB735003A
 ms.openlocfilehash: cb6f9e3a41236d10b0558a508c2531b08ec7fe13
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845826"
 ---
 # <a name="troubleshooting-why-can-i-not-see-all-available-templates"></a>Risoluzione dei problemi: perché non è possibile visualizzare tutti i modelli disponibili?

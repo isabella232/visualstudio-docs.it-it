@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab972df2cf1b382498d2e57a5ae2e978c7230a34
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692883"
 ---
-# <a name="fieldkind"></a>FIELD_KIND
+# <a name="field_kind"></a>FIELD_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica il tipo di campo contenuto un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.  
+Specifica il tipo di campo contenuto in un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -123,15 +123,15 @@ public enum enum_FIELD_KIND {
 };  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  FIELD_KIND_TYPE  
- Indica che il campo è un solo tipo.  
+ Indica che il campo è solo un tipo.  
   
  FIELD_KIND_SYMBOL  
  Indica che il campo è un simbolo, con tipo, nome e altre informazioni.  
   
  FIELD_TYPE_PRIMITIVE  
- Indica che il campo è un tipo di dati primitivi.  
+ Indica che il campo è un tipo di dati primitivo.  
   
  FIELD_TYPE_STRUCT  
  Indica che il campo è una struttura.  
@@ -143,7 +143,7 @@ public enum enum_FIELD_KIND {
  Indica che il campo è un'interfaccia.  
   
  FIELD_TYPE_UNION  
- Indica che il campo è un'unione.  
+ Indica che il campo è un'Unione.  
   
  FIELD_TYPE_ARRAY  
  Indica che il campo è una matrice.  
@@ -167,7 +167,7 @@ public enum enum_FIELD_KIND {
  Indica che il campo è un typedef.  
   
  FIELD_TYPE_BITFIELD  
- Indica che il campo è un campo di bit.  
+ Indica che il campo è un bit.  
   
  FIELD_TYPE_NAMESPACE  
  Indica che il campo è uno spazio dei nomi.  
@@ -200,7 +200,7 @@ public enum enum_FIELD_KIND {
  Indica che il campo è un parametro.  
   
  FIELD_SYM_THIS  
- Indica che il campo è il puntatore "this".  
+ Indica che il campo è il puntatore "This".  
   
  FIELD_SYM_GLOBAL  
  Indica che il campo è globale.  
@@ -209,7 +209,7 @@ public enum enum_FIELD_KIND {
  Indica che il campo recupera le proprietà.  
   
  FIELD_SYM_PROP_SETTER  
- Indica che il campo set di proprietà.  
+ Indica che il campo imposta le proprietà.  
   
  FIELD_SYM_EXTENDED  
  Riservato per usi futuri.  
@@ -223,20 +223,20 @@ public enum enum_FIELD_KIND {
  FIELD_SYM_MASK  
  Indica una maschera per le informazioni sui simboli.  
   
-## <a name="remarks"></a>Note  
- Restituito da una chiamata per il [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Restituito da una chiamata al metodo [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .  
   
- A seconda del tipo di campo [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) può essere chiamata sulle [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia per una forma più specifica dell'interfaccia. Ad esempio, se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_METHOD`, è quindi possibile chiamare `QueryInterface` su ho`DebugField` per ottenere il [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaccia.  
+ A seconda del tipo di campo, è possibile chiamare [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sull'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) per un tipo di interfaccia più specifico. Se, ad esempio, [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_METHOD` , è possibile chiamare `QueryInterface` su I `DebugField` per ottenere l'interfaccia [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
- [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   
+ [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
