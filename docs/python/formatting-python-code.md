@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957535"
 ---
 # <a name="format-python-code"></a>Formattare il codice Python
 
 Visual Studio consente di riformattare rapidamente il codice in base a opzioni di formattazione preconfigurate.
 
-- Per formattare una selezione: selezionare **Modifica** > **selezione formato** **avanzato** > o premere **Ctrl**+**E** > **F**.
-- Per formattare l'intero file: selezionare **Ctrl**+ **Modifica** > documento in > **formato** **avanzato**o premere Ctrl**E** > **D**.
+- Per formattare una selezione: selezionare **modifica**  >  **Advanced**  >  **selezione formato** avanzato oppure premere **CTRL** + **E**  >  **F**.
+- Per formattare l'intero file: selezionare **modifica**  >  **Advanced**  >  **documento formato** avanzato oppure premere **CTRL** + **E**  >  **D**.
 
-Le opzioni sono impostate tramite**Opzioni** >  **Opzioni** > Testo**Editor** > **Python** > **Formattazione** e le relative schede nidificate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
+Le opzioni vengono impostate tramite **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **Python**  >  **formattazione** Python e le relative schede nidificate. È necessario selezionare **Mostra tutte le impostazioni** per visualizzare queste opzioni:
 
 ![Opzioni di formattazione di Python in Visual Studio](media/options-editor-formatting.png)
 
@@ -32,7 +32,7 @@ Per impostazione predefinita, le opzioni di formattazione sono impostate in modo
 
 Il [supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md) aggiunge anche l'utile comando [**Riempi paragrafo di commento**](#fill-comment-paragraph-command) al menu **Modifica** > **Avanzate** come descritto in una sezione successiva.
 
-## <a name="spacing"></a>Spacing (Spaziatura)
+## <a name="spacing"></a>Spaziatura
 
 La scheda **Spacing** (Spaziatura) consente di controllare la posizione in cui inserire o rimuovere gli spazi attorno a costrutti di linguaggio. Esistono tre possibili valori per ogni opzione:
 
@@ -42,7 +42,7 @@ La scheda **Spacing** (Spaziatura) consente di controllare la posizione in cui i
 
 Le tabelle seguenti includono esempi per le varie opzioni:
 
-| Opzione Definizioni di classe | Selezionato | Cancellato |
+| Opzione Definizioni di classe | Selezionata | Cancellato |
 | --- | --- | --- |
 | **Insert space between a class declaration's name and bases list (Inserisci spazio tra il nome della dichiarazione di classe e l'elenco di basi)** | `class X (object): pass` | `class X(object): pass` |
 | **Insert space within bases list parentheses (Inserisci spazio tra le parentesi dell'elenco di basi)** | `class X( object ): pass` | `class X(object): pass` |
@@ -50,7 +50,7 @@ Le tabelle seguenti includono esempi per le varie opzioni:
 
 <br/>
 
-| Opzione Definizioni di funzioni | Selezionato | Cancellato |
+| Opzione Definizioni di funzioni | Selezionata | Cancellato |
 | --- | --- | --- |
 | **Insert space between a function declaration's name and parameter list (Inserisci spazio tra il nome della dichiarazione di funzione e l'elenco di parametri)** | `def X (): pass` | `def X(): pass` |
 | **Insert space within parameter list parentheses (Inserisci spazio tra le parentesi dell'elenco di parametri)** | `def X( a, b ): pass` | `def X(a, b): pass` |
@@ -60,14 +60,14 @@ Le tabelle seguenti includono esempi per le varie opzioni:
 
 <br/>
 
-| Opzione Operators (Operatori) | Selezionato | Cancellato |
+| Opzione Operators (Operatori) | Selezionata | Cancellato |
 | --- | --- | --- |
 | **Inserisci spazio tra gli operatori binari** | `a + b` | `a+b` |
 | **Inserisci gli spazi intorno agli operatori di assegnazione** | `a = b` | `a=b` |
 
 <br/>
 
-| Opzione Expression spacing (Spaziatura espressioni) | Selezionato | Cancellato |
+| Opzione Expression spacing (Spaziatura espressioni) | Selezionata | Cancellato |
 | --- | --- | --- |
 | **Inserisci spazio tra il nome della funzione e l'elenco argomenti nelle chiamate** | `X ()` | `X()` |
 | **Inserisci spazio tra le parentesi dell'elenco di argomenti vuoto** | `X( )` | `X()` |
@@ -92,7 +92,7 @@ Le opzioni relative alle **istruzioni** consentono di controllare la riscrittura
 | **Rimuovi i punti e virgola non necessari** | `x = 42;` | `x = 42` |
 | **Place multiple statements on new lines** (Inserisci più istruzioni in nuove righe) | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
-## <a name="wrapping"></a>Wrapping (Ritorno a capo)
+## <a name="wrapping"></a>Ritorno a capo
 
 **Wrapping** consente di impostare la **larghezza massima dei commenti**, che per impostazione predefinita è 80. Se viene impostata l'opzione **Esegui il wrapping dei commenti troppo lunghi**, Visual Studio riformatta i commenti in modo che non superino la larghezza massima.
 
@@ -109,7 +109,7 @@ Le opzioni relative alle **istruzioni** consentono di controllare la riscrittura
 
 ## <a name="fill-comment-paragraph-command"></a>Comando Fill Comment Paragraph (Riempi paragrafo commenti)
 
-**Modifica** > **paragrafo commento di riempimento** **avanzato** > (**Ctrl**+**E** > **P**) ridispone e formatta il testo del commento, combinando le righe brevi e suddividendo quelle lunghe.
+**Modifica**  >  **Funzionalità avanzate**  >  **Riempimento paragrafo di commento** (**CTRL** + **e**  >  **P**) rifluisce e formatta il testo del commento, combinando le righe brevi e suddividendo quelle lunghe.
 
 Ad esempio:
 

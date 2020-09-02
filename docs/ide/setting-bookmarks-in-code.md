@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595436"
 ---
 # <a name="set-bookmarks-in-code"></a>Impostare segnalibri nel codice
 
-È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni: la **finestra dei segnalibri** **(Visualizza** > **finestra segnalibro)** e la barra degli strumenti dell'editor di testo.
+È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni:**View**la **finestra segnalibro** (  >  **finestra segnalibro**visualizzazione) e la barra degli strumenti Editor di testo.
 
 ![Barra degli strumenti segnalibro](media/bookmark-toolbar.png)
 
@@ -34,7 +34,7 @@ Per capire a colpo d'occhio a cosa si riferisce un segnalibro, è possibile rino
 > [!IMPORTANT]
 > Il segnalibro viene impostato sul numero di righe, non sul codice. Se si modifica il codice, il segnalibro viene mantenuto sul numero di riga e non si sposta con il codice.
 
-È possibile spostarsi tra i segnalibri utilizzando i pulsanti **Segnalibro Successivo** e **Segnalibro precedente** nella finestra del segnalibro.
+È possibile spostarsi tra i segnalibri utilizzando i pulsanti **segnalibro successivo** e **segnalibro precedente** nella finestra segnalibro.
 
 È possibile organizzare i segnalibri in cartelle virtuali scegliendo **Nuova cartella** nella finestra Segnalibri e trascinando i segnalibri selezionati nella nuova cartella.
 

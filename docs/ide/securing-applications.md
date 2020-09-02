@@ -1,5 +1,5 @@
 ---
-title: Security
+title: Sicurezza
 ms.date: 06/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595449"
 ---
 # <a name="secure-applications"></a>Proteggere le applicazioni
@@ -41,8 +41,8 @@ La sicurezza è anche un aspetto importante del processo di compilazione. Alcuni
 ## <a name="see-also"></a>Vedere anche
 
 - [Sicurezza in .NET](/dotnet/standard/security/index)
-- [Sicurezza di AzureAzure security](/azure/security/)
+- [Sicurezza di Azure](/azure/security/)
 - [Windows 10 Mobile security guide](/windows/security/threat-protection/windows-10-mobile-security-guide) (Guida alla sicurezza di Windows 10 Mobile)
 - [Apache Cordova platform security features](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017) (Funzionalità di sicurezza della piattaforma Apache Cordova)
 - [Sicurezza di ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1)
-- [Sicurezza di Windows FormWindows Forms security](/dotnet/framework/winforms/windows-forms-security)
+- [Sicurezza Windows Forms](/dotnet/framework/winforms/windows-forms-security)

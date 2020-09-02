@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::EnumThreads | Microsoft Docs
+title: 'IDebugProcess2:: EnumThreads | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e9b6447827baa80da2843c992a8d2233dd1a4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188030"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
@@ -40,15 +40,15 @@ int EnumThreads(
   
 #### <a name="parameters"></a>Parametri  
  `ppEnum`  
- [out] Restituisce un [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) oggetto che contiene un elenco di tutti i thread in tutti i programmi nel processo.  
+ out Restituisce un oggetto [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) che contiene un elenco di tutti i thread in tutti i programmi nel processo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo enumera i thread in esecuzione in ciascun programma e quindi le combina in una vista di processo dei thread. Un singolo thread possono essere eseguite in più programmi; Questo metodo enumera solo una volta tale thread.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo enumera i thread in esecuzione in ogni programma e li combina in una visualizzazione processo dei thread. Un thread singolo può essere eseguito in più programmi; Questo metodo enumera il thread una sola volta.  
   
- Questo metodo presenta un elenco di thread del processo senza duplicati. In caso contrario, per enumerare i thread in esecuzione in un particolare programma, usare il [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) (metodo).  
+ Questo metodo presenta un elenco dei thread del processo senza duplicati. In caso contrario, per enumerare i thread in esecuzione in un particolare programma, utilizzare il metodo [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

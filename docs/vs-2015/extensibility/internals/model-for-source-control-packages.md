@@ -1,5 +1,5 @@
 ---
-title: Modello per i pacchetti del controllo origine | Microsoft Docs
+title: Modello per i pacchetti del controllo del codice sorgente | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,30 +11,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 811cdfa2cbae85d6509e7cd883c5675b81639fa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198426"
 ---
 # <a name="model-for-source-control-packages"></a>Modello per i pacchetti del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il modello seguente rappresenta un esempio di implementazione di un controllo di origine. Nel modello, vengono visualizzati le interfacce da implementare e i servizi di ambiente che è necessario chiamare. Come tutti i servizi, è effettivamente chiamare i metodi di una determinata interfaccia che è possibile ottenere tramite il servizio. I nomi delle classi vengono identificati per renderne più semplice visualizzare come controllo del codice sorgente viene eseguito.  
+Il modello seguente rappresenta un esempio di implementazione del controllo del codice sorgente. Nel modello vengono visualizzate le interfacce che è necessario implementare e i servizi dell'ambiente che devono essere chiamati. Come tutti i servizi, si chiamano effettivamente i metodi di una particolare interfaccia ottenuti tramite il servizio. Vengono identificati i nomi delle classi per semplificare la visualizzazione del modo in cui viene eseguito il controllo del codice sorgente.  
   
- ![Controllo del codice sorgente&#95;esempi di SCRIP](../../extensibility/internals/media/scc-tup.gif "SCC_TUP")  
-Progetto di controllo sorgente di esempio  
+ ![Esempi di impostato di SCC&#95;](../../extensibility/internals/media/scc-tup.gif "SCC_TUP")  
+Esempio di progetto di controllo del codice sorgente  
   
 ## <a name="interfaces"></a>Interfacce  
- È possibile implementare il codice sorgente per i nuovi tipi di progetto in Visual Studio usando l'elenco delle interfacce illustrato nella tabella seguente.  
+ È possibile implementare il controllo del codice sorgente per i nuovi tipi di progetto in Visual Studio usando l'elenco di interfacce illustrato nella tabella seguente.  
   
-|Interfaccia|Usa|  
+|Interfaccia|Uso|  
 |---------------|---------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Chiamato dai progetti e gli editor prima che di salvataggio o i file di modifica (modificato). Questa interfaccia è possibile accedere tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> servizio.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Chiamato dai progetti per richiedere l'autorizzazione per aggiungere, rimuovere o rinominare un file o directory. Questa interfaccia viene anche chiamata dai progetti per informare l'ambiente quando un'operazione di aggiunta approvati, rimuovere o rinominare l'azione è stata completata. È possibile accedervi usando il <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> servizio.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Implementata da qualsiasi entità che esegue la registrazione per ricevere una notifica quando i progetti aggiungono, rinominano o rimuovere un file o directory. Per registrare la notifica dell'evento, chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Chiamato dai progetti per registrare con il pacchetto del controllo codice sorgente e per ottenere informazioni sullo stato del controllo origine. Questa interfaccia è possibile accedere tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> servizio.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementata dal progetto di rispondere alle richieste di controllo di origine per informazioni sui file e per ottenere le impostazioni di controllo richiesto per il file di progetto di origine.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Chiamato da progetti ed editor prima di salvare o modificare i file (Dirty). È possibile accedere a questa interfaccia tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> servizio.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Chiamato dai progetti per richiedere l'autorizzazione per aggiungere, rimuovere o rinominare un file o una directory. Questa interfaccia viene chiamata anche dai progetti per informare l'ambiente quando viene completata un'azione di aggiunta, rimozione o ridenominazione approvata. È possibile accedervi usando il <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> servizio.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Implementata da qualsiasi entità registrata per ricevere una notifica quando i progetti aggiungono, rinominano o rimuovono un file o una directory. Per eseguire la registrazione per la notifica degli eventi, chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A> .|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Viene chiamato dai progetti per la registrazione con il pacchetto del controllo del codice sorgente e per ottenere informazioni sullo stato del controllo del codice sorgente. È possibile accedere a questa interfaccia tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> servizio.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementato dal progetto per rispondere alle richieste di controllo del codice sorgente per ottenere informazioni sui file e per ottenere le impostazioni di controllo del codice sorgente necessarie per il file di progetto.|  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

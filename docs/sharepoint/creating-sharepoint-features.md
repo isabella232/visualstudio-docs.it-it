@@ -1,5 +1,5 @@
 ---
-title: Creazione di funzionalità SharePoint | Microsoft Docs
+title: Creazione di funzionalità di SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,45 +14,45 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952744"
 ---
-# <a name="create-sharepoint-features"></a>Creare funzionalità di SharePoint
-  È possibile utilizzare una funzionalità di SharePoint per raggruppare gli elementi di progetto di SharePoint correlati per facilitare la distribuzione. È possibile creare funzionalità imposta ambiti di e contrassegnare altre funzionalità come dipendenze utilizzando la finestra di progettazione di funzionalità di SharePoint. La finestra di progettazione genera inoltre un manifesto, ovvero un file XML che descrive ogni funzionalità.
+# <a name="create-sharepoint-features"></a>Creazione di funzionalità di SharePoint
+  È possibile utilizzare una funzionalità di SharePoint per raggruppare gli elementi del progetto SharePoint correlati per semplificare la distribuzione. È possibile creare funzionalità, impostare gli ambiti e contrassegnare altre funzionalità come dipendenze tramite la finestra di progettazione delle funzionalità di SharePoint. La finestra di progettazione genera inoltre un manifesto, ovvero un file XML che descrive ogni funzionalità.
 
-## <a name="add-features-to-the-sharepoint-solution"></a>Aggiungere funzionalità alla soluzione di SharePoint
- È possibile aggiungere una funzionalità per la soluzione SharePoint tramite Esplora soluzioni o Esplora pacchetti. È possibile usare uno dei metodi seguenti per aggiungere una funzionalità.
+## <a name="add-features-to-the-sharepoint-solution"></a>Aggiungere funzionalità alla soluzione SharePoint
+ È possibile aggiungere una funzionalità alla soluzione SharePoint usando Esplora soluzioni o packaging Explorer. Per aggiungere una funzionalità, è possibile utilizzare uno dei metodi seguenti.
 
-- In **Esplora soluzioni**, aprire il menu di scelta rapida **funzionalità**, quindi scegliere **Aggiungi funzionalità**.
+- In **Esplora soluzioni**aprire il menu di scelta rapida per **funzionalità**, quindi scegliere **Aggiungi funzionalità**.
 
-- Nelle **Esplora pacchetti**, aprire il menu di scelta rapida per il pacchetto e quindi scegliere **Aggiungi funzionalità**.
+- In **Packaging Explorer**aprire il menu di scelta rapida per il pacchetto, quindi scegliere **Aggiungi funzionalità**.
 
-## <a name="using-the-feature-designer"></a>Usando la finestra di progettazione di funzionalità
- Una soluzione di SharePoint può contenere uno o più funzionalità di SharePoint, vengono raggruppati sotto il nodo di funzionalità in Esplora soluzioni. Ogni funzionalità ha il proprio **Progettazione funzionalità** che è possibile usare per personalizzare le proprietà di funzionalità. Per altre informazioni, vedere [Procedura: Personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Per distinguere le funzionalità uno da altro, è possibile configurare le proprietà della funzionalità, ad esempio il titolo, descrizione, versione e ambito.
+## <a name="using-the-feature-designer"></a>Utilizzo di progettazione funzionalità
+ Una soluzione SharePoint può contenere una o più funzionalità di SharePoint, raggruppate sotto il nodo della funzionalità in Esplora soluzioni. Ogni funzionalità dispone di una propria **finestra di progettazione delle funzionalità** che è possibile utilizzare per personalizzare le proprietà della funzionalità. Per altre informazioni, vedere [procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Per distinguere le funzionalità le une dalle altre, è possibile configurare le proprietà della funzionalità, ad esempio titolo, descrizione, versione e ambito.
 
-### <a name="feature-designer-options"></a>Opzioni della finestra di progettazione delle funzionalità
- Dopo aver creato una funzionalità, è possibile utilizzare la finestra di progettazione di funzionalità per personalizzarla.
+### <a name="feature-designer-options"></a>Opzioni di progettazione funzionalità
+ Dopo aver creato una funzionalità, è possibile utilizzare la finestra Progettazione funzionalità per personalizzarla.
 
- Nella tabella seguente vengono descritte le proprietà di funzionalità che vengono visualizzate nella finestra di progettazione di funzionalità.
+ Nella tabella seguente vengono descritte le proprietà della funzionalità visualizzate nella finestra di progettazione della funzionalità.
 
 |Proprietà|Descrizione|
 |--------------|-----------------|
-|Titolo|Facoltativo. Il titolo predefinito della funzionalità è impostato su *SolutionName* *FeatureName*.|
-|Descrizione|Facoltativo. La descrizione della funzionalità di SharePoint.|
-|Ambito|Obbligatorio. Se una funzionalità viene creata usando **Esplora soluzioni**, l'ambito viene impostato su Web per impostazione predefinita.<br /><br /> -Farm: Attivare una funzionalità per un'intera server farm.<br /><br /> -Sito: Attivare una funzionalità per tutti i siti web in una raccolta siti.<br /><br /> -Web: Attivare una funzionalità per un sito web specifico.<br /><br /> -WebApplication: Attivare una funzionalità per tutti i siti web in un'applicazione web.|
-|Elementi nella soluzione|Tutti gli elementi di SharePoint che può essere aggiunto alla funzionalità.|
-|Elementi nella funzionalità|Gli elementi di progetto SharePoint che sono state aggiunte alla funzionalità.|
+|Titolo|facoltativo. Il titolo predefinito della funzionalità è impostato su *SolutionName* *FeatureName*.|
+|Descrizione|Facoltativa. Descrizione della funzionalità di SharePoint.|
+|Ambito|Obbligatorio. Se una funzionalità viene creata tramite **Esplora soluzioni**, l'ambito viene impostato su Web per impostazione predefinita.<br /><br /> -Farm: attiva una funzionalità per un'intera server farm.<br /><br /> -Site: attiva una funzionalità per tutti i siti Web in una raccolta siti.<br /><br /> -Web: attiva una funzionalità per un sito Web specifico.<br /><br /> -WebApplication: attiva una funzionalità per tutti i siti Web in un'applicazione Web.|
+|Elementi nella soluzione|Tutti gli elementi di SharePoint che possono essere aggiunti alla funzionalità.|
+|Elementi della funzionalità|Elementi del progetto SharePoint aggiunti alla funzionalità.|
 
-## <a name="add-and-remove-sharepoint-project-items"></a>Aggiungere e rimuovere elementi di progetto SharePoint
- È possibile selezionare gli elementi di progetto SharePoint che si desidera aggiungere una funzionalità di SharePoint per la distribuzione. Usare la **Progettazione funzionalità** per aggiungere e rimuovere elementi alle funzionalità e visualizzare il manifesto della funzionalità. Per altre informazioni, vedere [Procedura: Aggiungere e rimuovere elementi alle funzionalità SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).
+## <a name="add-and-remove-sharepoint-project-items"></a>Aggiunta e rimozione di elementi di progetto SharePoint
+ È possibile selezionare gli elementi del progetto SharePoint a cui si desidera aggiungere una funzionalità di SharePoint per la distribuzione. Utilizzare **Progettazione funzionalità** per aggiungere e rimuovere elementi alle funzionalità e visualizzare il manifesto della funzionalità. Per altre informazioni, vedere [procedura: aggiungere e rimuovere elementi nelle funzionalità di SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).
 
-## <a name="add-feature-dependencies"></a>Aggiungere le dipendenze delle funzionalità
- È possibile configurare il manifesto della funzionalità in modo che il server SharePoint attiva determinate funzionalità prima che la funzionalità viene attivata. Ad esempio, se la funzionalità di SharePoint dipende da altre funzionalità per dati o funzionalità, il server SharePoint prima di tutto possibile provare a attivare le funzionalità che dipende la funzionalità. Per altre informazioni, vedere [Procedura: Aggiungere e rimuovere dipendenze di funzionalità](../sharepoint/how-to-add-and-remove-feature-dependencies.md).
+## <a name="add-feature-dependencies"></a>Aggiungere dipendenze di funzionalità
+ È possibile configurare il manifesto della funzionalità in modo che il server SharePoint attivi determinate funzionalità prima che la funzionalità venga attivata. Se, ad esempio, la funzionalità di SharePoint dipende da altre funzionalità per la funzionalità o i dati, il server SharePoint può innanzitutto provare ad attivare le funzionalità da cui dipende la funzionalità. Per altre informazioni, vedere [procedura: aggiungere e rimuovere dipendenze di funzionalità](../sharepoint/how-to-add-and-remove-feature-dependencies.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
-- [Procedura: Aggiungere e rimuovere elementi alle funzionalità SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
-- [Procedura: Aggiungere e rimuovere dipendenze di funzionalità](../sharepoint/how-to-add-and-remove-feature-dependencies.md)
+- [Procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
+- [Procedura: aggiungere e rimuovere elementi nelle funzionalità di SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
+- [Procedura: aggiungere e rimuovere dipendenze di funzionalità](../sharepoint/how-to-add-and-remove-feature-dependencies.md)

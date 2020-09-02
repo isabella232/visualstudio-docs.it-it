@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546939"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;elemento postAction &gt; (sviluppo per Office in Visual Studio)
@@ -43,10 +43,10 @@ ms.locfileid: "85546939"
  `postAction` presenta gli elementi seguenti:
 
 ### <a name="entrypoint"></a>entryPoint
- Facoltativa. Il ruolo dell' `entryPoint` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento entryPoints&#62; &#40;sviluppo per Office in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ facoltativo. Il ruolo dell' `entryPoint` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento entryPoints&#62; &#40;sviluppo per Office in Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ### <a name="postactiondata"></a>postActionData
- Facoltativa. Il ruolo dell' `postActionData` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento postActionData&#62; &#40;sviluppo per Office in Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
+ facoltativo. Il ruolo dell' `postActionData` elemento nello `vstav3` spazio dei nomi è definito in [&#60;elemento postActionData&#62; &#40;sviluppo per Office in Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Esempio di azione post-distribuzione
 

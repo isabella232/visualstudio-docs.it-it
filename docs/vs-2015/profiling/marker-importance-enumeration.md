@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198390"
 ---
-# <a name="markerimportance-enumeration"></a>Enumerazione marker_importance
+# <a name="marker_importance-enumeration"></a>Enumerazione marker_importance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.  
@@ -35,7 +35,7 @@ enum marker_importance;
   
 ### <a name="values"></a>Valori  
   
-|nome|DESCRIZIONE|  
+|Nome|Descrizione|  
 |----------|-----------------|  
 |`critical_importance`|Specifica che il marcatore è di importanza critica.|  
 |`high_importance`|Specifica che il marcatore è di elevata importanza.|  
@@ -48,4 +48,4 @@ enum marker_importance;
  **Spazio dei nomi:** Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Vedere anche  
- [Spazio dei nomi diagnostic](../profiling/diagnostic-namespace.md)
+ [Spazio dei nomi Diagnostic](../profiling/diagnostic-namespace.md)

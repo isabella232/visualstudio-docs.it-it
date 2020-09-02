@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugEngineLaunch2::CanTerminateProcess . Documenti Microsoft
+title: 'IDebugEngineLaunch2:: CanTerminateProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 91c68e0a0e314015c1f2e6df2a96243c6ce854e7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730564"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
@@ -41,13 +41,13 @@ int CanTerminateProcess ( 
 
 ## <a name="parameters"></a>Parametri
 `pProcess`\
-[in] Oggetto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) che rappresenta il processo da terminare.
+in Oggetto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) che rappresenta il processo da terminare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha `S_OK`esito positivo, restituisce ; in caso contrario restituisce un codice di errore. Restituisce `S_FALSE` se il motore non è in grado di terminare il processo, ad esempio perché l'accesso è negato.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `S_FALSE` se il motore non è in grado di terminare il processo, ad esempio perché l'accesso è stato negato.
 
 ## <a name="remarks"></a>Osservazioni
- Se questo `S_OK`metodo restituisce , è possibile chiamare il metodo [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) per terminare effettivamente il processo.
+ Se questo metodo restituisce `S_OK` , è possibile chiamare il metodo [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) per terminare effettivamente il processo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

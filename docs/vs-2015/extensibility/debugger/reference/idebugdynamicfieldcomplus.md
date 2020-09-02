@@ -11,16 +11,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 71756b4c4df0768520f72219cf50e5407604635d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198493"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Rappresenta un campo dinamico per un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) oggetto.  
+Rappresenta un campo dinamico per un oggetto [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -29,16 +29,16 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ```  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi nel [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) interfaccia, questa interfaccia implementa i metodi seguenti:  
+ Oltre ai metodi sull'interfaccia [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) , questa interfaccia implementa i metodi seguenti:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Recupera un tipo di dato il tipo primitivo.|  
-|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Recupera un tipo dato il relativo token.|  
+|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Recupera un tipo dato il tipo primitivo.|  
+|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Recupera un tipo in base al relativo token.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

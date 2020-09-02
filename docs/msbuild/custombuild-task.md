@@ -18,15 +18,15 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595345"
 ---
 # <a name="custombuild-task"></a>Attività CustomBuild
 
-Esegue il wrapping dello strumento del compilatore di Microsoft C, cmd.exe. Questa classe deriva da [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ma non usa il rilevamento file per individuare le dipendenze di file. Affinché la compilazione incrementale funzioni correttamente, tutte le dipendenze devono essere specificate esplicitamente come AdditionalDependencies.
+Esegue il wrapping dello strumento compilatore Microsoft C++ cmd.exe. Questa classe deriva da [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ma non usa il rilevamento file per individuare le dipendenze di file. Affinché la compilazione incrementale funzioni correttamente, tutte le dipendenze devono essere specificate esplicitamente come AdditionalDependencies.
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,4 +40,4 @@ La tabella seguente descrive i parametri dell'attività **CustomBuild**.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+[Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
