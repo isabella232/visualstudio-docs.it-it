@@ -13,13 +13,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d617d428c9551bc821e1c72fa517497769e6f047
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204914"
 ---
-# <a name="referencecompare"></a>REFERENCE_COMPARE
+# <a name="reference_compare"></a>REFERENCE_COMPARE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Specifica il tipo di confronto per i riferimenti.  
@@ -43,26 +43,26 @@ public enum enum_REFERENCE_COMPARE { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  REF_COMPARE_EQUAL  
- Specifica un confronto di uguaglianza.  
+ Specifica un confronto di uguale a.  
   
  REF_COMPARE_LESS_THAN  
- Specifica un minore di-confronto.  
+ Specifica un confronto di minore di.  
   
  REF_COMPARE_GREATER_THAN  
- Specifica una maggiore-confronto.  
+ Specifica un confronto maggiore di.  
   
-## <a name="remarks"></a>Note  
- Passato come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugreference2-compare.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Passato come argomento al metodo [compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ [Confronta](../../../extensibility/debugger/reference/idebugreference2-compare.md)

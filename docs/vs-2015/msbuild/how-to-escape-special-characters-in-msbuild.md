@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94fc8d858e2db9bd1e00bb8770cf52672a900ab0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178353"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Procedura: utilizzare caratteri di escape speciali in MSBuild
@@ -26,7 +26,7 @@ ms.locfileid: "68178353"
 
 Alcuni caratteri hanno un significato particolare nei file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Tra gli esempi di carattere sono inclusi il punto e virgola (;) e l'asterisco (*). Per un elenco completo di questi caratteri speciali, vedere [Caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md).  
   
- Per usare questi caratteri speciali come valori letterali in un file di progetto, è necessario specificarli usando la sintassi %*xx*, dove *xx* rappresenta il valore esadecimale ASCII del carattere.  
+ Per usare questi caratteri speciali come valori letterali in un file di progetto, è necessario specificarli usando la sintassi%*XX*, dove *XX* rappresenta il valore esadecimale ASCII del carattere.  
   
 ## <a name="msbuild-special-characters"></a>Caratteri speciali di MSBuild  
  I caratteri speciali sono usati, ad esempio, nell'attributo `Include` degli elenchi di elementi. L'elenco di elementi seguenti, ad esempio, dichiara due elementi: `MyFile.cs` e `MyClass.cs`.  
@@ -47,4 +47,4 @@ Alcuni caratteri hanno un significato particolare nei file di progetto [!INCLUDE
   
 ## <a name="see-also"></a>Vedere anche  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
- [Elementi](../msbuild/msbuild-items.md) [MSBuild](msbuild.md)
+ [MSBuild](msbuild.md) [Elementi](../msbuild/msbuild-items.md) MSBuild

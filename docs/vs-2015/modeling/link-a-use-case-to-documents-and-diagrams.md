@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657646"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Collegare un caso di utilizzo a documenti e diagrammi
@@ -74,14 +74,14 @@ ms.locfileid: "72657646"
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Per eseguire il collegamento a un documento condiviso, un elemento OneNote o una pagina Web
 
-1. Ottenere l'URL dell'elemento condiviso. Questo può essere, ad esempio, un percorso di file di rete che inizia con ' \\ \\' o una pagina Web o un URL di SharePoint che inizia con ' http://' o un collegamento a una sezione, pagina o paragrafo di OneNote con inizio ' OneNote:'.
+1. Ottenere l'URL dell'elemento condiviso. Questo può essere, ad esempio, un percorso di file di rete che inizia con ' \\ \\ ' o una pagina Web o un URL di SharePoint che inizia con ' http://' o un collegamento a una sezione, pagina o paragrafo di OneNote con inizio ' OneNote:'.
 
 2. Nella casella degli strumenti fare clic su **artefatto** , quindi fare clic nel diagramma caso di utilizzo.
 
 3. Con il nuovo elemento selezionato, digitare o incollare l'URL nella proprietà **collegamento ipertestuale** .
 
     > [!NOTE]
-    > Se si desidera fornire un percorso di file, è consigliabile scegliere un file in un'area di lavoro comune (a partire da' \\ \\') o un file all'interno della soluzione di Visual Studio. In questo modo, il percorso file resterà valido nel computer di un altro membro del team oppure in caso la soluzione venga spostata. Per aggiungere un documento, ad esempio un documento di Word, alla soluzione, fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni, scegliere **Aggiungi** , quindi fare clic su **elemento esistente**.
+    > Se si vuole fornire un percorso di file, è consigliabile scegliere un file in un'area di lavoro comune (a partire da' \\ \\ ') o un file all'interno della soluzione di Visual Studio. In questo modo, il percorso file resterà valido nel computer di un altro membro del team oppure in caso la soluzione venga spostata. Per aggiungere un documento, ad esempio un documento di Word, alla soluzione, fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni, scegliere **Aggiungi** , quindi fare clic su **elemento esistente**.
 
 ## <a name="see-also"></a>Vedere anche
  [Diagrammi caso d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md) [diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md) [modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md) [creare modelli per l'app](../modeling/create-models-for-your-app.md)

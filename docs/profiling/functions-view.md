@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779194"
 ---
 # <a name="functions-view"></a>Visualizzazione Funzioni
@@ -28,7 +28,7 @@ La visualizzazione Funzioni elenca le funzioni chiamate durante la profilatura.
 
  Per impostazione predefinita, le funzioni vengono elencate per nome. Per visualizzare le funzioni per modulo, fare clic con il pulsante destro del mouse nella finestra Visualizzazione Funzioni e quindi selezionare **Mostra in visualizzazione Modulo**. Verrà visualizzata la visualizzazione Modulo.
 
- Per aggiungere o rimuovere colonne, fare clic con il pulsante destro del mouse nella finestra del report e quindi **scegliere Aggiungi/Rimuovi colonne**. È anche possibile ordinare i dati facendo clic su un nome di colonna. Per altre informazioni, vedere [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md).
+ Per aggiungere o rimuovere colonne, fare clic con il pulsante destro del mouse nella finestra del report e quindi scegliere **Aggiungi/Rimuovi colonne**. È anche possibile ordinare i dati facendo clic su un nome di colonna. Per altre informazioni, vedere [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md).
 
  Le colonne disponibili nella visualizzazione Funzioni dipendono dal metodo di profilatura (campionamento o strumentazione) usato per raccogliere i dati e dal fatto che i dati della memoria .NET siano stati raccolti o meno durante l'esecuzione della profilatura.
 

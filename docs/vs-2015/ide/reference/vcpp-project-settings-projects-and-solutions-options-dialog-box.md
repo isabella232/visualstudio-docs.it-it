@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef861d13387c013659e5e4c1714680b71896858c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657860"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Impostazioni progetto di VC++, Progetti e soluzioni, finestra di dialogo Opzioni
@@ -35,7 +35,7 @@ Questa finestra di dialogo consente di definire le impostazioni del progetto [!I
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Selezionare **Progetti e soluzioni** e quindi **Impostazioni progetto di VC++** .
+2. Selezionare **Progetti e soluzioni** e quindi **Impostazioni progetto di VC++**.
 
 ## <a name="build-customization-search-path"></a>Percorso di ricerca per le personalizzazioni delle compilazioni
  Specifica l'elenco delle directory che contengono i file con estensione rule, che consentono di definire le regole di compilazione per i progetti.
@@ -70,4 +70,4 @@ Questa finestra di dialogo consente di definire le impostazioni del progetto [!I
  **Mostra tutti i file** Configura **Esplora soluzioni** per visualizzare i file nel progetto e i file su disco nella cartella del progetto.
 
 ## <a name="see-also"></a>Vedere anche
- [Compilazione di cC++ /programmi](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) c [C++ /riferimento alla compilazione](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
+ [Creazione](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) di riferimenti per la [compilazione](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) in c/c++ di programmi c/c++

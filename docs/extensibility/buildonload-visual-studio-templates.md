@@ -1,5 +1,5 @@
 ---
-title: Attributo e elemento BuildOnLoad (modelli di Visual Studio)
+title: Attributo ed elemento di BuildOnLoad (modelli di Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3be4016822ccaaae2f1352f91ecc10f09273a889
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739941"
 ---
-# <a name="buildonload-attribute-and-element"></a>Attributo e elemento BuildOnLoad
+# <a name="buildonload-attribute-and-element"></a>Attributo ed elemento di BuildOnLoad
 
-Specifica se compilare il progetto immediatamente dopo che è stato creato. **BuildOnLoad** è sia un attributo che un elemento.
+Specifica se compilare il progetto immediatamente dopo la creazione. **BuildOnLoad** è un attributo e un elemento.
 
-Gerarchia degli elementi:
+Gerarchia elementi:
 
 ```xml
 <VSTemplate>
@@ -47,7 +47,7 @@ Gerarchia degli elementi:
 
 ## <a name="text-value"></a>Valore di testo
 
-È necessario un valore di testo per l'elemento **BuildOnLoad.** Il testo deve `true` `false`essere o , che indica se compilare il progetto immediatamente dopo la creazione.
+Per l'elemento **BuildOnLoad** è necessario un valore di testo. Il testo deve essere `true` o `false` , che indica se compilare il progetto immediatamente dopo che è stato creato.
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -55,7 +55,7 @@ Gerarchia degli elementi:
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente illustra i metadati per un modello di C , quando BuildOnLoad viene usato come elemento:The following example illustrates the metadata for a C' template when **BuildOnLoad** is used as an element:
+L'esempio seguente illustra i metadati per un modello C# quando **BuildOnLoad** viene usato come elemento:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,7 +84,7 @@ L'esempio seguente illustra i metadati per un modello di C , quando BuildOnLoad 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [BuildProjectOnload (elemento)](buildprojectonload-element-visual-studio-templates.md)
+- [Elemento BuildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
 - [Elemento TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)
-- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

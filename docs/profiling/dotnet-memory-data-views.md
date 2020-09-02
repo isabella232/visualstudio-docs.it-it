@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779272"
 ---
 # <a name="net-memory-data-views"></a>Visualizzazioni dei dati di memoria .NET
@@ -35,19 +35,19 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Elenca i tipi che sono stati allocati durante la profilatura, il numero di istanze, le dimensioni in byte e la generazione di Garbage Collection del tipo.
 
-- [Visualizzazione Struttura ad albero delle chiamate - Campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
  Visualizza un albero gerarchica che rappresenta i percorsi di esecuzione e i dati sull'allocazione di memoria di funzioni nella profilatura.
 
-- [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione moduli-campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
 
  Organizza i dati sull'allocazione di memoria .NET tramite modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni che erano in esecuzione quando è stata allocata la memoria.
 
-- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 
  Elenca i dati sull'allocazione di memoria per una funzione selezionata, le funzioni che hanno chiamato la funzione selezionata e le funzioni che sono state chiamate dalla funzione selezionata.
 
-- [Visualizzazione Funzioni - Campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione funzioni-campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)
 
  Elenca i dati sull'allocazione di memoria per le funzioni nella profilatura.
 
@@ -63,15 +63,15 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Visualizza un albero gerarchica che rappresenta i percorsi di esecuzione, i dati sull'allocazione di memoria e i dati temporali dettagliati per le funzioni instrumentate nella profilatura.
 
-- [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione moduli-strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 
  Organizza i dati di profilatura usando il modulo ed elenca le funzioni, i dati sull'allocazione di memoria e i dati temporali dettagliati per il modulo.
 
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Visualizzazione chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 
  Elenca i dati sull'allocazione di memoria e i dati temporali dettagliati per una funzione instrumentata selezionata, le funzioni che hanno chiamato la funzione selezionata e le funzioni che sono state chiamate dalla funzione selezionata.
 
-- [Visualizzazione Funzioni - Strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione funzioni-strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 
  Elenca i dati sull'allocazione di memoria per le funzioni instrumentate nella profilatura.
 
@@ -93,6 +93,6 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di campionamento.
 
-- [Viste dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
+- [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
 
  Informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler generati tramite il metodo di strumentazione.

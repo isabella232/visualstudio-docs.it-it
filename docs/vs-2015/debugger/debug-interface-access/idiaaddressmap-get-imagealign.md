@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f3e7a326c78207976fb8493905b412df65e0c63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178236"
 ---
-# <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
+# <a name="idiaaddressmapget_imagealign"></a>IDiaAddressMap::get_imageAlign
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera l'allineamento dell'immagine corrente.  
@@ -35,13 +35,13 @@ HRESULT get_imageAlign ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il valore di allineamento dell'immagine dal file eseguibile.  
+ out Restituisce il valore di allineamento dell'immagine dall'eseguibile.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Le immagini sono allineate a limiti di memoria specifica a seconda di come l'immagine è stato caricato e creato. L'allineamento è in genere nei limiti di 1, 2, 4, 8, 16, 32 o 64 byte. L'allineamento dell'immagine può essere impostato con una chiamata per il [Put_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Le immagini sono allineate a limiti di memoria specifici a seconda della modalità con cui l'immagine è stata caricata e creata. L'allineamento è in genere i limiti di 1, 2, 4, 8, 16, 32 o 64 byte. L'allineamento dell'immagine può essere impostato con una chiamata al metodo [IDiaAddressMap::p ut_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
