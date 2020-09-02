@@ -1,5 +1,5 @@
 ---
-title: Recupero delle proprietà di progetto | Microsoft Docs
+title: Recupero delle proprietà di un progetto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,31 +12,31 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d0557d08c318eda47853ec69c6204739cbece560
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204327"
 ---
 # <a name="getting-project-properties"></a>Recupero delle proprietà del progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa procedura dettagliata mostra come proprietà del progetto consente di visualizzare in una finestra degli strumenti.  
+In questa procedura dettagliata viene illustrato come visualizzare le proprietà del progetto in una finestra degli strumenti.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per ulteriori informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Per creare un progetto VSIX e aggiungere una finestra degli strumenti  
   
-1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto VSIX denominato `ProjectPropertiesExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
+1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto VSIX denominato `ProjectPropertiesExtension` . Il modello di progetto VSIX è reperibile nella finestra di dialogo **nuovo progetto** in **Visual C#/extensibility**.  
   
-2. Aggiungere una finestra degli strumenti tramite l'aggiunta di un modello di elemento di finestra degli strumenti personalizzata denominato `ProjectPropertiesToolWindow`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **finestra di dialogo Aggiungi nuovo elemento**, passare a **elementi di Visual c# / Extensibility** e selezionare **finestra degli strumenti personalizzata**. Nel **Name** campo nella parte inferiore della finestra di dialogo, modificare il nome del file per `ProjectPropertiesToolWindow.cs`. Per altre informazioni su come creare una finestra degli strumenti personalizzata, vedere [creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Aggiungere una finestra degli strumenti aggiungendo un modello di elemento della finestra degli strumenti personalizzato denominato `ProjectPropertiesToolWindow` . Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi/nuovo elemento**. Nella finestra di **dialogo Aggiungi nuovo elemento**passare a **elementi/estensibilità di Visual C#** e selezionare **finestra degli strumenti personalizzata**. Nel campo **nome** nella parte inferiore della finestra di dialogo modificare il nome del file in `ProjectPropertiesToolWindow.cs` . Per ulteriori informazioni sulla creazione di una finestra degli strumenti personalizzata, vedere [creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 3. Compilare la soluzione e verificare che l'operazione avvenga senza errori.  
   
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Per visualizzare le proprietà del progetto in una finestra degli strumenti  
   
-1. Aggiungere il codice seguente nel file ProjectPropertiesToolWindowCommand.cs istruzioni using.  
+1. Nel file ProjectPropertiesToolWindowCommand.cs aggiungere le istruzioni using seguenti.  
   
     ```csharp  
     using EnvDTE;  
@@ -44,9 +44,9 @@ Questa procedura dettagliata mostra come proprietà del progetto consente di vis
   
     ```  
   
-2. In ProjectPropertiesToolWindowControl.xaml, rimuovere al pulsante esistente e aggiungere un controllo TreeView dalla casella degli strumenti. È anche possibile rimuovere il gestore dell'evento click dal file ProjectPropertiesToolWindowControl.xaml.cs.  
+2. In ProjectPropertiesToolWindowControl. XAML rimuovere il pulsante esistente e aggiungere un controllo TreeView dalla casella degli strumenti. È anche possibile rimuovere il gestore dell'evento click dal file ProjectPropertiesToolWindowControl.xaml.cs.  
   
-3. In ProjectPropertiesToolWindowCommand.cs, usare il metodo ShowToolWindow() per aprire il progetto e leggere le relative proprietà, quindi aggiungere le proprietà di visualizzazione albero. Il codice per ShowToolWindow dovrebbe essere simile al seguente:  
+3. In ProjectPropertiesToolWindowCommand.cs usare il metodo ShowToolWindow () per aprire il progetto e leggere le relative proprietà, quindi aggiungere le proprietà al controllo TreeView. Il codice per ShowToolWindow dovrebbe essere simile al seguente:  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
@@ -93,10 +93,10 @@ Questa procedura dettagliata mostra come proprietà del progetto consente di vis
     }  
     ```  
   
-4. Compilare il progetto e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato.  
+4. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza sperimentale.  
   
 5. Nell'istanza sperimentale aprire un progetto.  
   
-6. Nel **Vista / Windows Other** fare clic su **ProjectPropertiesToolWindow**.  
+6. Nella **visualizzazione/altre finestre** fare clic su **ProjectPropertiesToolWindow**.  
   
-     Verrà visualizzato il controllo struttura ad albero nella finestra degli strumenti insieme al nome del primo progetto e di tutte le relative proprietà di progetto.
+     Il controllo albero verrà visualizzato nella finestra degli strumenti insieme al nome del primo progetto e di tutte le relative proprietà del progetto.

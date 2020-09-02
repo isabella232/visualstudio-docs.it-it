@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192823"
 ---
-# <a name="start"></a>Start
+# <a name="start"></a>Avvio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'opzione **Start** è un'opzione di VSPerfCmd.exe che consente di inizializzare il profiler con il metodo di profilatura specificato.  
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie  
  È necessario specificare l'opzione **Output** quando nella riga di comando viene specificato **Start**.  
   
- **Output:** `filename`  
+ **Output:**`filename`  
  Specifica il nome del file di output.  
   
 ## <a name="exclusive-options"></a>Opzioni esclusive  
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**&#124;**CS**  
  Abilita la profilatura tra processi. Sono supportati entrambi i nomi dell'opzione **CrossSession** e **CS**.  
   
- **User:** [`domain\`]`username`  
+ **Utente:**[ `domain\` ]`username`  
  Consente l'accesso client al monitor con l'account specificato.  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -60,10 +60,10 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>Opzioni non valide  
  Non è possibile usare le opzioni seguenti con l'opzione **Start** nella riga di comando.  
   
- **Status**  
+ **Stato**  
  **Status** viene applicato ai processi profilati. Questa opzione elenca i processi e i thread insieme al relativo stato di profilatura corrente (On/Off). Ad esempio, se un processo viene arrestato, **Status** non indica questo stato nel rapporto. **Status** mostra che il processo è profilato o non profilato.  
   
- **Shutdown**[ **:** `Timeout`]  
+ **Arresto**[**:** `Timeout` ]  
  Disattiva il profiler.  
   
 ## <a name="example"></a>Esempio  

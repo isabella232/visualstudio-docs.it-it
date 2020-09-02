@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb6344885e9e30c056982b15b8323eef3ef467b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165185"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
@@ -34,25 +34,25 @@ IDebugAddress : IUnknown
  Un provider di simboli implementa questa interfaccia per rappresentare un indirizzo di un oggetto.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Molti metodi sul numero di interfacce restituiscono questa interfaccia.  
+ Molti metodi su molte interfacce restituiscono questa interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Questa interfaccia implementa il metodo seguente:  
   
-|Metodo|DESCRIZIONE|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Recupera una [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struttura che descrive un oggetto e il relativo percorso.|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|Recupera una struttura [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) che descrive un oggetto e la relativa posizione.|  
   
-## <a name="remarks"></a>Note  
- Il provider di simboli restituisce questa interfaccia per rappresentare un oggetto e la relativa posizione all'interno di un particolare ambito (ad esempio, funzione, metodo o classe). Questa interfaccia viene restituita dal e passata ai vari metodi del provider di simboli di espressione dell'analizzatore di espressioni. In genere, il provider di simboli è l'unica entità che è necessario interpretare il contenuto di questa interfaccia.  
+## <a name="remarks"></a>Osservazioni  
+ Il provider di simboli restituisce questa interfaccia per rappresentare un oggetto e la relativa posizione all'interno di un ambito specifico (ad esempio, funzione, metodo o classe). Questa interfaccia viene restituita da e passata a diversi metodi del provider di simboli e dell'analizzatore di espressioni. In genere, il provider di simboli è l'unica entità che deve interpretare il contenuto di questa interfaccia.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfacce del Provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

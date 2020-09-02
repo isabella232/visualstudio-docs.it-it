@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::EnumProperties | Microsoft Docs
+title: 'IDebugStackFrame2:: EnumProperties | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f92db2c2fbafcd5be991281d7da4f594dcfb2c85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164799"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Crea un enumeratore per le proprietà associato al frame dello stack, ad esempio le variabili locali.  
+Crea un enumeratore per le proprietà associate all'stack frame, ad esempio le variabili locali.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -50,28 +50,28 @@ int EnumProperties ( 
   
 #### <a name="parameters"></a>Parametri  
  `dwFieldSpec`  
- [in] Una combinazione di flag dal [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumerazione che specifica quali campi in enumerati [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strutture sono da compilare.  
+ in Combinazione di flag dell'enumerazione [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi nelle strutture [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) enumerate da compilare.  
   
  `nRadix`  
- [in] La radice da utilizzare nella formattazione qualsiasi informazioni numeriche.  
+ in La radice da usare per la formattazione di qualsiasi informazione numerica.  
   
  `refiid`  
- [in] Un GUID di un filtro consente di selezionare quale [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strutture devono essere enumerati, ad esempio `guidFilterLocals`.  
+ in GUID di un filtro usato per selezionare le strutture di [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) da enumerare, ad esempio `guidFilterLocals` .  
   
  `dwTimeout`  
- [in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.  
+ in Tempo massimo, in millisecondi, di attesa prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.  
   
  `pcelt`  
- [out] Restituisce il numero di proprietà enumerato. Equivale alla chiamata al metodo il [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) (metodo).  
+ out Restituisce il numero di proprietà enumerate. Equivale a chiamare il metodo [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) .  
   
  `ppEnum`  
- [out] Restituisce un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) oggetto contenente un elenco delle proprietà desiderate.  
+ out Restituisce un oggetto [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contenente un elenco delle proprietà desiderate.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Poiché questo metodo consente a tutte le proprietà selezionate deve essere recuperato con una singola chiamata, è più veloce di chiamare in modo sequenziale i [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) e [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metodi.  
+## <a name="remarks"></a>Osservazioni  
+ Poiché questo metodo consente il recupero di tutte le proprietà selezionate con una singola chiamata, è più veloce della chiamata sequenziale dei metodi [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) e [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

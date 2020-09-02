@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165456"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Installare più versioni localizzate di Visual Studio
@@ -26,7 +26,7 @@ Per la documentazione più recente di Visual Studio, vedere [Installare i Langua
 
 Installando uno o più Language Pack, è possibile eseguire Visual Studio 2015 in lingue diverse nello stesso computer. È necessario ottenere un Language Pack separato per ogni lingua da installare.
 
-## <a name="important-considerations"></a>Considerazioni importanti
+## <a name="important-considerations"></a>Importanti considerazioni
 
 - Quando si installa un Language Pack, per ogni lingua vengono installati automaticamente file di risorse per le funzionalità installate.
 
@@ -37,4 +37,4 @@ Installando uno o più Language Pack, è possibile eseguire Visual Studio 2015 i
 ## <a name="see-also"></a>Vedere anche
 
 - [Microsoft Language Interface Pack (LIP) e Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
-- [Installare Visual Studio](../install/install-visual-studio-2015.md)
+- [Installa Visual Studio](../install/install-visual-studio-2015.md)

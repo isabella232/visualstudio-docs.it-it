@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bef01cd29bb2312bd682f2f1f1150ee78da293e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150063"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legge un blocco di dati dall'immagine del file eseguibile in memoria.  
+Legge un blocco di dati dall'immagine dell'eseguibile in memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,22 +39,22 @@ HRESULT readMemory( 
   
 #### <a name="parameters"></a>Parametri  
  `type`  
- [in] Un valore compreso il [enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) enumerazione che specifica il tipo di memoria da leggere.  
+ in Valore dell'enumerazione di [enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) che specifica il tipo di memoria da leggere.  
   
  va  
- [in] Indirizzo virtuale dell'immagine da cui iniziare la lettura.  
+ in Indirizzo virtuale nell'immagine da cui iniziare la lettura.  
   
  `cbData`  
- [in] Le dimensioni del buffer di dati in byte.  
+ in Dimensioni in byte del buffer di dati.  
   
  `pcbData`  
- [out] Restituisce il numero di byte effettivamente letti. Se `pbData` è `NULL`, il valore è il numero totale di byte di dati disponibili.  
+ out Restituisce il numero di byte effettivamente letti. Se `pbData` è `NULL` , si tratta del numero totale di byte dei dati disponibili.  
   
  `pbData`  
- [in, out] Un buffer che viene compilato con la memoria di lettura.  
+ [in, out] Buffer compilato con la memoria letta.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

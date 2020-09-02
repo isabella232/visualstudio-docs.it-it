@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24afbfcfe31de52ac51329bb67df41cc59dd6f1e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547277"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
@@ -36,7 +36,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 > [!NOTE]
 > Per creare mappe del codice, è necessario disporre di Visual Studio Enterprise Edition. Quando si modifica una mappa di codice in Visual Studio, viene eseguita la rimozione di tutti gli attributi e gli elementi DGML inutilizzati che vengono eliminati quando si salva il file con estensione dgml. Vengono anche creati automaticamente elementi di codice quando si aggiungono manualmente nuovi collegamenti. Quando si salva il file con estensione dgml, tutti gli attributi aggiunti a un elemento si ridispongono in ordine alfabetico.
 
-## <a name="group-code-elements"></a><a name="OrganizeNodes"></a>Elementi di codice del gruppo
+## <a name="group-code-elements"></a><a name="OrganizeNodes"></a> Elementi di codice del gruppo
  È possibile aggiungere nuovi gruppi o convertire i nodi esistenti in un gruppo.
 
 1. Aprire il file con estensione dgml in un editor di testo o XML.
@@ -77,7 +77,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
     Per altre informazioni sull' `Category` attributo, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories).
 
-## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a>Modificare lo stile della mappa
+## <a name="change-the-style-of-the-map"></a><a name="ChangeGraphStyle"></a> Modificare lo stile della mappa
  È possibile modificare il colore di sfondo e del bordo della mappa modificando il file con estensione dgml della mappa. Per modificare lo stile degli elementi di codice e dei collegamenti, vedere [modificare lo stile degli elementi di codice e dei collegamenti](#Highlight).
 
 1. Aprire il file con estensione dgml in un editor di testo o XML.
@@ -105,7 +105,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     </DirectedGraph>
     ```
 
-## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a>Modificare lo stile degli elementi di codice e dei collegamenti
+## <a name="change-the-style-of-code-elements-and-links"></a><a name="Highlight"></a> Modificare lo stile degli elementi di codice e dei collegamenti
 
 ### <a name="CreateCustomStyles"></a>
  È possibile applicare stili personalizzati agli elementi di codice seguenti:
@@ -131,7 +131,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     Background="ColorNameOrHexadecimalValue"
     ```
 
-     Bordo
+     Riquadro
 
     ```xml
     Stroke="ColorNameOrHexadecimalValue"
@@ -193,7 +193,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     Style="Plain"
     ```
 
-     Forma
+     Con forme
 
      Per sostituire una forma con un'icona, impostare la proprietà `Shape` su `None` e la proprietà `Icon` sul percorso con il file dell'icona.
 
@@ -286,29 +286,29 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
     Questa espressione utilizza la notazione BNF (Backus-Naur Form) seguente:
 
-    \<Expression>:: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124;\<Number>
+    \<Expression> :: = \<BinaryExpression> &#124; \<UnaryExpression> &#124; "(" \<Expression> ")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
     \<BinaryExpression>::= \<Expression> \<Operator>\<Expression>
 
-    \<UnaryExpression>::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-"\<Expression>
+    \<UnaryExpression> ::= "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
 
-    \<Operator>:: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "e" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> :: = "<" &#124; " \<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "e" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings>:: = \<MemberBindings> &#124; \<MemberBinding> "."\<MemberBinding>
+    \<MemberBindings> :: = \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding>
 
-    \<MemberBinding>:: = \<MethodCall> &#124;\<PropertyGet>
+    \<MemberBinding> :: = \<MethodCall> &#124; \<PropertyGet>
 
-    \<MethodCall>::= \<Identifier> "(" \<MethodArgs> ")"
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet>Identificatore:: =
+    \<PropertyGet> Identificatore:: =
 
-    \<MethodArgs>:: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124;\<empty>
+    \<MethodArgs> :: = \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    \<Identifier>::= [^. ]*
+    \<Identifier> ::= [^. ]*
 
-    \<Literal>:: = valore letterale stringa con virgolette singole o doppie
+    \<Literal> :: = valore letterale stringa con virgolette singole o doppie
 
-    \<Number>:: = stringa di cifre con separatore decimale facoltativo
+    \<Number> :: = stringa di cifre con separatore decimale facoltativo
 
     È possibile specificare più `<Condition/>` elementi, che devono essere tutti true per applicare lo stile.
 
@@ -435,7 +435,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 </DirectedGraph>
 ```
 
-## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a>Assegnare proprietà a elementi di codice e collegamenti
+## <a name="assign-properties-to-code-elements-and-links"></a><a name="AssignProperties"></a> Assegnare proprietà a elementi di codice e collegamenti
  È possibile organizzare elementi di codice e collegamenti mediante l'assegnazione di proprietà. Ad esempio, è possibile selezionare elementi di codice con proprietà specifiche in modo che sia possibile raggrupparli, modificarne lo stile o nasconderli.
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>Per assegnare una proprietà a un elemento di codice
@@ -480,7 +480,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     </Properties>
     ```
 
-## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a>Assegnare categorie a elementi di codice e collegamenti
+## <a name="assign-categories-to-code-elements-and-links"></a><a name="AssignCategories"></a> Assegnare categorie a elementi di codice e collegamenti
  Nelle sezioni seguenti viene illustrato come è possibile organizzare elementi di codice mediante l'assegnazione di categorie e come è possibile creare categorie gerarchiche che consentono di organizzare elementi di codice e aggiungere attributi alle categorie figlio tramite l'ereditarietà.
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>Per assegnare una categoria a un elemento di codice
@@ -551,7 +551,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
      In questo esempio lo sfondo di `MyFirstNode` è verde perché il relativo attributo `Category` eredita l'attributo `Background` di `MyParentCategory`.
 
-## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a>Collegare documenti o URL a elementi di codice e collegamenti
+## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a> Collegare documenti o URL a elementi di codice e collegamenti
  È possibile collegare documenti o URL a un elemento di codice oppure a collegamenti modificando il file con estensione dgml della mappa e aggiungendo un attributo `Reference` all'elemento `<Node/>` per un elemento di codice oppure all'elemento `<Link/>` per un collegamento. È quindi possibile aprire e visualizzare il contenuto dall'elemento di codice o dal collegamento. L'attributo `Reference` specifica il percorso di tale contenuto. Il percorso può essere assoluto oppure relativo alla posizione del file con estensione dgml.
 
 > [!CAUTION]

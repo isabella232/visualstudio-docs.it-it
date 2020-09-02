@@ -1,5 +1,5 @@
 ---
-title: Proprietà IPropertyProxyProvider . Documenti Microsoft
+title: IPropertyProxyProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f71d993c7f99cade5b866e67298132a325986e3a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714787"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
@@ -29,25 +29,25 @@ IPropertyProxyProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- L'analizzatore di espressioni (EE) implementa questa interfaccia sullo stesso oggetto che implementa il [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfaccia come parte del supporto di EE dei visualizzatori di tipo.
+ L'analizzatore di espressioni (EE) implementa questa interfaccia sullo stesso oggetto che implementa l'interfaccia [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) come parte del supporto di EE dei visualizzatori di tipi.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Chiamare [QueryInterface](/cpp/atl/queryinterface) `IDebugProperty3` su un'interfaccia per ottenere questa interfaccia.
+ Chiamare [QueryInterface](/cpp/atl/queryinterface) su un' `IDebugProperty3` interfaccia per ottenere questa interfaccia.
 
-## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
- L'interfaccia implementa il metodo seguente:The `IPropertyProxyProvider` interface implements the following method:
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
+ L' `IPropertyProxyProvider` interfaccia implementa il metodo seguente:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Recupera un'interfaccia proxy di proprietà per visualizzare i dati su un oggetto.|
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|Recupera un'interfaccia proxy di proprietà per visualizzare i dati in un oggetto.|
 
 ## <a name="remarks"></a>Osservazioni
- Anche se l'eE implementa questa interfaccia, l'implementazione di [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) viene in genere gestita da [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Vedere [Visualizzazione e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) per informazioni dettagliate su come ottenere il IEEVisualizerService interfaccia.
+ Anche se EE implementa questa interfaccia, l'implementazione di [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) viene in genere gestita da [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md). Per informazioni dettagliate su come ottenere l'interfaccia IEEVisualizerService, vedere [visualizzazione e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

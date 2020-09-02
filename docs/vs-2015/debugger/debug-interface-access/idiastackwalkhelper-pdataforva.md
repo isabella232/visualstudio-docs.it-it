@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5af921caa989d7279bb9f52751c452d91045cf3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150087"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
@@ -38,24 +38,24 @@ HRESULT pdataForVA( 
   
 #### <a name="parameters"></a>Parametri  
  `va`  
- [in] Specifica l'indirizzo virtuale dei dati da ottenere.  
+ in Specifica l'indirizzo virtuale dei dati da ottenere.  
   
  `cbData`  
- [in] Le dimensioni dei dati in byte da ottenere.  
+ in Dimensioni dei dati in byte da ottenere.  
   
  `pcbData`  
- [out] Restituisce le dimensioni effettive dei dati in byte che è stato ottenuto.  
+ out Restituisce le dimensioni effettive dei dati in byte ottenuti.  
   
  `pbData`  
- [in, out] Un buffer che viene compilato con i dati richiesti. Non può essere `NULL`.  
+ [in, out] Buffer compilato con i dati richiesti. Non può essere `NULL`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è presente alcun PDATA per l'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non è presente pData per l'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- PDATA (della sezione denominata "pdata") di un modulo contiene informazioni sulla gestione delle eccezioni per le funzioni.  
+## <a name="remarks"></a>Osservazioni  
+ PDATA (la sezione denominata ". pData") di un modulo contiene informazioni sulla gestione delle eccezioni per le funzioni.  
   
- Il chiamante conosca la quantità di dati deve essere restituita in modo che il chiamante non ha necessità di porre per quantità di dati è disponibile. Pertanto, è accettabile per l'implementazione di questo metodo per restituire un errore se il `pbData` parametro è `NULL`.  
+ Il chiamante sa la quantità di dati da restituire, in modo che il chiamante non debba richiedere la quantità di dati disponibili. Pertanto, è accettabile che un'implementazione di questo metodo restituisca un errore se il `pbData` parametro è `NULL` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

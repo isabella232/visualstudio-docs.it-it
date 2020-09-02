@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetExtendedInfo | Microsoft Docs
+title: 'IDebugProperty2:: GetExtendedInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 74810aab2f47a36c716891fd45b7424eb737b142
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164981"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene le informazioni per la proprietà estese.  
+Ottiene le informazioni estese per la proprietà.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,26 +42,26 @@ int GetExtendedInfo ( 
   
 #### <a name="parameters"></a>Parametri  
  `guidExtendedInfo`  
- [in] GUID che determina il tipo di informazioni estese da recuperare. Per informazioni dettagliate, vedere la sezione Osservazioni.  
+ in GUID che determina il tipo di informazioni estese da recuperare. Per ulteriori informazioni, vedere Note.  
   
  `pExtendedInfo`  
- [out] Restituisce un `VARIANT` (C++) o un oggetto (C#) che può essere utilizzato per recuperare le informazioni sulle proprietà estese. Ad esempio, questo parametro potrebbe restituire un `IUnknown` interfaccia che è possibile eseguire query per un [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfaccia. Per informazioni dettagliate, vedere la sezione Osservazioni.  
+ out Restituisce un `VARIANT` oggetto (C++) o (C#) che può essere utilizzato per recuperare le informazioni sulle proprietà estese. Questo parametro, ad esempio, potrebbe restituire un' `IUnknown` interfaccia su cui è possibile eseguire una query per un'interfaccia [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) . Per ulteriori informazioni, vedere Note.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Restituisce `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` se non sono disponibili informazioni estese da recuperare.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore. Restituisce `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` se non sono presenti informazioni estese da recuperare.  
   
-## <a name="remarks"></a>Note  
- Questo metodo è disponibile per il recupero di informazioni che non si prestano a viene recuperato chiamando il [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo esiste allo scopo di recuperare informazioni che non si prestano a essere recuperate chiamando il metodo [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .  
   
- I GUID seguenti sono in genere riconosciuti da questo metodo (i valori GUID vengono specificati per il linguaggio c# perché il nome non è disponibile in qualsiasi assembly). È possibile creare GUID aggiuntive per uso interno.  
+ I GUID seguenti vengono in genere riconosciuti da questo metodo (i valori GUID sono specificati per C# perché il nome non è disponibile in alcun assembly). È possibile creare GUID aggiuntivi per uso interno.  
   
 |Nome|GUID|Descrizione|  
 |----------|----------|-----------------|  
-|guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Restituisce un `IUnknown` interfaccia al documento. In genere, il [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfaccia può essere ottenuta da questo `IUnknown` interfaccia.|  
-|guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Restituisce un `IUnknown` interfaccia per il contesto del documento. In genere, il [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaccia può essere ottenuta da questo `IUnknown` interfaccia.|  
-|guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|Restituisce una stringa che contiene il CLSID di un visualizzatore personalizzato, in genere implementato tramite un analizzatore di espressioni.|  
-|guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|Restituisce un numero a 32 bit che rappresenta il numero di slot desiderata se questa proprietà rappresenta un indirizzo locale di codice gestito.|  
-|guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|Restituisce una stringa contenente la firma della variabile associata all'oggetto di proprietà.|  
+|guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Restituisce un' `IUnknown` interfaccia al documento. In genere, l'interfaccia [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) può essere ottenuta da questa `IUnknown` interfaccia.|  
+|guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Restituisce un' `IUnknown` interfaccia al contesto del documento. In genere, l'interfaccia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) può essere ottenuta da questa `IUnknown` interfaccia.|  
+|guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|Restituisce una stringa contenente il CLSID di un visualizzatore personalizzato, in genere implementato da un analizzatore di espressioni.|  
+|guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|Restituisce un numero a 32 bit che rappresenta il numero di slot desiderato se questa proprietà rappresenta un indirizzo locale del codice gestito.|  
+|guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|Restituisce una stringa contenente la firma della variabile associata all'oggetto proprietà.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

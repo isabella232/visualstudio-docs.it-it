@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846145"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilizzo dell'ActivityDesigner legacy
@@ -46,12 +46,12 @@ In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd
 ## <a name="configuring-an-activity"></a>Configurazione di un'attività.
  Mentre la Finestra di progettazione dell’attività è attiva, è possibile usare il visualizzatore proprietà per configurare le proprietà elencate nella tabella seguente.
 
-|Gli|Comments|
+|Proprietà|Commenti|
 |--------------|--------------|
-|**Name**|Nome dell’attività.|
+|**Name**|Nome dell'attività.|
 |**Classe di base**|Classe base dalla quale è derivata l’attività. La classe base predefinita è [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx). Nella finestra **Proprietà** fare clic sui puntini di sospensione **[...]** della **classe di base** per selezionare un'altra classe di base nella finestra di [dialogo Cerca e seleziona un tipo .NET (legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
 |**Descrizione**|Descrizione dell'attività definita dall'utente.|
-|**Enabled**|Per impostazione predefinita, impostare su **true** per abilitare l'esecuzione e la convalida delle attività. Impostare su **false** per disabilitare l'esecuzione e la convalida delle attività. Per informazioni sull'esecuzione e la convalida delle attività, vedere [sviluppo di attività del flusso di lavoro](https://msdn2.microsoft.com/library/ms734413.aspx).|
+|**Attivata**|Per impostazione predefinita, impostare su **true** per abilitare l'esecuzione e la convalida delle attività. Impostare su **false** per disabilitare l'esecuzione e la convalida delle attività. Per informazioni sull'esecuzione e la convalida delle attività, vedere [sviluppo di attività del flusso di lavoro](https://msdn2.microsoft.com/library/ms734413.aspx).|
 
 ## <a name="adding-child-activities"></a>Aggiunta di attività figlio.
  È possibile trascinare le attività figlio dalla Casella degli strumenti all'attività che si sta progettando. È quindi possibile configurare ogni attività figlio usando il visualizzatore proprietà.

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b090e85005ffcab6498adb6f85885cd86c9813fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150189"
 ---
-# <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
+# <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Imposta il valore di un registro.  
@@ -36,13 +36,13 @@ HRESULT put_registerValue ( 
   
 #### <a name="parameters"></a>Parametri  
  `index`  
- [in] Un valore compreso il [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) enumerazione che specifica il registro in cui scrivere.  
+ in Valore della CV_HREG_e enumerazione di [enumerazione](../../debugger/debug-interface-access/cv-hreg-e.md) che specifica il registro in cui scrivere.  
   
  `NewVal`  
- [in] Il valore di nuovo Registra.  
+ in Nuovo valore del registro.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
