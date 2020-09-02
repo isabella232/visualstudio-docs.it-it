@@ -13,21 +13,21 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35448f4324213739cb2dc14a95598ac9a3d4432f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204368"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelli di progetto Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica una cartella in cui verrà aggiunto al progetto.  
+Specifica una cartella che verrà aggiunta al progetto.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
  \<Project>  
- \<Cartella >  
+ \<Folder>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,28 +45,28 @@ Specifica una cartella in cui verrà aggiunto al progetto.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Name`|Attributo obbligatorio.<br /><br /> Il nome della cartella del progetto.|  
-|`TargetFolderName`|Attributo facoltativo.<br /><br /> Specifica il nome da assegnare alla cartella quando viene creato un progetto dal modello. Questo attributo è utile per l'uso di sostituzione dei parametri per creare un nome di cartella o una cartella con una stringa internazionale di denominazione che non è possibile usare direttamente nel file con estensione zip.|  
+|`Name`|Attributo obbligatorio.<br /><br /> Nome della cartella del progetto.|  
+|`TargetFolderName`|Attributo facoltativo.<br /><br /> Specifica il nome da assegnare alla cartella quando viene creato un progetto dal modello. Questo attributo è utile per l'utilizzo della sostituzione dei parametri per creare un nome di cartella o per rinominare una cartella con una stringa internazionale che non può essere utilizzata direttamente nel file con estensione zip.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|`Folder`|Specifica una cartella da aggiungere al progetto. `Folder` gli elementi possono contenere figlio `Folder` elementi.|  
+|`Folder`|Specifica una cartella da aggiungere al progetto. `Folder` gli elementi possono contenere `Folder` elementi figlio.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Specifica un file da aggiungere al progetto.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo degli [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
+|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo di [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
-## <a name="remarks"></a>Note  
- `Folder` è un elemento figlio facoltativo di `Project`.  
+## <a name="remarks"></a>Osservazioni  
+ `Folder` è un elemento figlio facoltativo di `Project` .  
   
- Per organizzare gli elementi del progetto in cartelle in un modello, è possibile usare uno qualsiasi dei metodi seguenti:  
+ È possibile utilizzare uno dei metodi seguenti per organizzare gli elementi di progetto in cartelle in un modello:  
   
-- Includere le cartelle nel file zip del modello e aggiungerli al progetto nel file vstemplate, specificando il percorso del file nei `ProjectItem` elementi, con nessuna `Folder` elementi. Questo è il metodo consigliato. Ad esempio:  
+- Includere le cartelle nel file con estensione zip del modello e aggiungerle al progetto nel file con estensione vstemplate specificando il percorso del file negli `ProjectItem` elementi, senza `Folder` elementi. Questo è il metodo consigliato. Ad esempio:  
   
      `...`  
   
@@ -76,7 +76,7 @@ Specifica una cartella in cui verrà aggiunto al progetto.
   
      `...`  
   
-- Includere le cartelle nel file zip del modello e aggiungerli al progetto nel file con estensione vstemplate con `Folder` elementi. Ad esempio:  
+- Includere le cartelle nel file con estensione zip del modello e aggiungerle al progetto nel file con estensione vstemplate con `Folder` gli elementi. Ad esempio:  
   
      `...`  
   
@@ -90,7 +90,7 @@ Specifica una cartella in cui verrà aggiunto al progetto.
   
      `...`  
   
-- Non includere le cartelle nel file zip del modello, ma aggiungere cartelle utilizzando il `TargetFileName` attributo del `ProjectItem` elemento. Ad esempio:  
+- Non includere cartelle nel file con estensione zip del modello, ma aggiungere cartelle utilizzando l' `TargetFileName` attributo dell' `ProjectItem` elemento. Ad esempio:  
   
      `...`  
   
@@ -101,7 +101,7 @@ Specifica una cartella in cui verrà aggiunto al progetto.
      `...`  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -130,6 +130,6 @@ Specifica una cartella in cui verrà aggiunto al progetto.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
  [Elemento ProjectItem (modelli di elemento di Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 034040ecd8df3368f53cb7a3bf99197e962e2b56
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702297"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando una proprietà associata a uno specifico documento sta per essere eliminata.  
+Questa interfaccia viene inviata dal motore di debug (DE) a gestione debug sessione (SDM) quando una proprietà associata a un documento specifico sta per essere distrutta.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -31,25 +31,25 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- La Germania implementa questa interfaccia per segnalare che una proprietà è stata eliminata. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per l'accesso di `IDebugEvent2` interfaccia. Questa interfaccia viene implementata se la Germania è creato in precedenza una proprietà associata a uno script. eliminazione definitiva della proprietà rimuove lo script associato dall'IDE.  
+ Il DE implementa questa interfaccia per segnalare che una proprietà è stata eliminata definitivamente. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM utilizza [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per accedere all' `IDebugEvent2` interfaccia. Questa interfaccia viene implementata se in precedenza è stata creata una proprietà associata a uno script. l'eliminazione definitiva della proprietà comporta la rimozione dello script associato dall'IDE.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- La Germania crea e invia l'oggetto evento al report che è stata eliminata definitivamente una proprietà. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando è associato al programma in fase di debug.  
+ Il DE crea e invia questo oggetto evento per segnalare che una proprietà è stata eliminata definitivamente. L'evento viene inviato utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente illustra il metodo di `IDebugPropertyDestroyEvent2`.  
+ Nella tabella seguente viene illustrato il metodo di `IDebugPropertyDestroyEvent2` .  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Ottiene la proprietà da distruggere.|  
+|[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Ottiene la proprietà da eliminare definitivamente.|  
   
-## <a name="remarks"></a>Note  
- Vedere le note [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) per informazioni dettagliate sui motivi per cui questi eventi vengono usati.  
+## <a name="remarks"></a>Osservazioni  
+ Vedere la sezione Osservazioni per [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) per informazioni dettagliate sul motivo per cui vengono usati questi eventi.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Visualizzare e nascondere gruppi di registri | Microsoft Docs'
+title: 'Procedura: visualizzare e nascondere gruppi di registri | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ae0a5a690e1413bfccd66ee0e9db7f6d812c15
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702244"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Procedura: Visualizzare e nascondere gruppi di registri
+# <a name="how-to-display-and-hide-register-groups"></a>Procedura: visualizzare e nascondere gruppi di registri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La finestra **Registri** è disponibile solo se il debug a livello di indirizzo è stato attivato nel nodo **Debug** della categoria **Generale** nella finestra di dialogo **Opzioni**.  
@@ -38,7 +38,7 @@ La finestra **Registri** è disponibile solo se il debug a livello di indirizzo 
  Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi. Facendo clic con il pulsante destro del mouse sulla finestra **Registri** verrà visualizzato un menu di scelta rapida contenente tali gruppi, che è possibile visualizzare o nascondere secondo necessità seguendo la procedura riportata di seguito.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-or-hide-register-groups"></a>Per visualizzare o nascondere i gruppi di registri  
   
@@ -49,4 +49,4 @@ La finestra **Registri** è disponibile solo se il debug a livello di indirizzo 
      I gruppi di registri non supportati dall'hardware per il quale si sta eseguendo il debug sono disabilitati nel menu di scelta rapida e non possono essere selezionati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
+ [Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)

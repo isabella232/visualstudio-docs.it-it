@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778427"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
@@ -110,7 +110,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccolta di dati TIP in un computer remoto**
 
-Per raccogliere i dati di interazione tra livelli in un computer remoto, è necessario copiare nel computer remoto la _ \<versione _Vs **\_\_profiler**_\<Platform>_ **\_** Language>**.exe** dalla cartella *%VSInstallDir%* Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs \_ Profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella *%VSInstallDir%\Team Tools\Performance Tools\Setups* di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 È possibile usare [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) per raccogliere i dati di profilatura.
 
@@ -120,6 +120,6 @@ I dati di interazione tra livelli possono essere visualizzati solo in Visual Stu
 
 ## <a name="see-also"></a>Vedere anche
 
-[Performance Explorer](../profiling/performance-explorer.md)
-[Configura sessioni prestazioni](../profiling/configuring-performance-sessions.md)
-[Profilo dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Esplora prestazioni](../profiling/performance-explorer.md) 
+ [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni [Profilo dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

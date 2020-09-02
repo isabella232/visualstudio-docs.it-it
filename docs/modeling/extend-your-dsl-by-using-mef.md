@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547641"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
@@ -26,7 +26,7 @@ Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)
 
 1. Creare una nuova cartella denominata **MefExtension in** all'interno del progetto **DslPackage** . Aggiungere i file seguenti:
 
-     Nome file:`CommandExtensionVSCT.tt`
+     Nome file: `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > Impostare il GUID in questo file in modo che corrisponda al GUID CommandSetId definito in DslPackage\GeneratedCode\Constants.tt
@@ -42,21 +42,21 @@ Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    Nome file:`CommandExtensionRegistrar.tt`
+    Nome file: `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    Nome file:`ValidationExtensionEnablement.tt`
+    Nome file: `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    Nome file:`ValidationExtensionRegistrar.tt`
+    Nome file: `ValidationExtensionRegistrar.tt`
 
     Se si aggiunge questo file, è necessario abilitare la convalida nel linguaggio DSL usando almeno una delle opzioni in **EditorValidation** in DSL Explorer.
 
@@ -65,7 +65,7 @@ Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    Nome file:`PackageExtensionEnablement.tt`
+    Nome file: `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework (MEF)
 
 2. Creare una nuova cartella denominata **MefExtension in** all'interno del progetto **DSL** . Aggiungere i file seguenti:
 
-     Nome file:`DesignerExtensionMetaDataAttribute.tt`
+     Nome file: `DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    Nome file:`GestureExtensionEnablement.tt`
+    Nome file: `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    Nome file:`GestureExtensionController.tt`
+    Nome file: `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -177,7 +177,7 @@ Se si ha accesso a un linguaggio DSL abilitato per MEF creato dall'utente o da u
 
 Per scrivere un comando di menu, definire una classe che implementi <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> e prefissi la classe con l'attributo definito nel linguaggio DSL, denominato *dslutente* `CommandExtension` . È possibile scrivere più di una classe di comandi di menu.
 
-`QueryStatus()`viene chiamato ogni volta che l'utente fa clic con il pulsante destro del mouse sul diagramma. Deve controllare la selezione corrente e impostare `command.Enabled` per indicare quando il comando è applicabile.
+`QueryStatus()` viene chiamato ogni volta che l'utente fa clic con il pulsante destro del mouse sul diagramma. Deve controllare la selezione corrente e impostare `command.Enabled` per indicare quando il comando è applicabile.
 
 ```csharp
 using System.ComponentModel.Composition;

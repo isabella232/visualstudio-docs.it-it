@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850063"
 ---
 # <a name="set-up-remote-workspaces"></a>Impostare aree di lavoro remote
@@ -26,7 +26,7 @@ In questo articolo viene illustrato come configurare un server remoto con SSL e 
 
 ## <a name="install-an-ssl-certificate"></a>Installare un certificato SSL
 
-RTVS richiede che tutte le comunicazioni con un server remoto si svolgano tramite HTTP, che richiede un certificato SSL nel server. È possibile usare un certificato firmato da un'autorità di certificazione attendibile (scelta consigliata) o un certificato autofirmato. (Un certificato autofirmato fa sì che RTVS emetta avvisi quando connesso.) Con uno dei due, è quindi necessario installarlo sul computer e consentire l'accesso alla sua chiave privata.
+RTVS richiede che tutte le comunicazioni con un server remoto si svolgano tramite HTTP, che richiede un certificato SSL nel server. È possibile usare un certificato firmato da un'autorità di certificazione attendibile (scelta consigliata) o un certificato autofirmato. Un certificato autofirmato causa l'emissione di avvisi da RTVS in caso di connessione. Con uno di essi, è necessario installarlo nel computer e consentire l'accesso alla relativa chiave privata.
 
 ### <a name="obtain-a-trusted-certificate"></a>Ottenere un certificato attendibile
 
@@ -76,7 +76,7 @@ Per installare il certificato nel computer remoto, eseguire *certlm.msc* (lo str
 Dopo aver importato il certificato, concedere all'account `NETWORK SERVICE` le autorizzazioni per la lettura della chiave privata, come indicato nelle istruzioni che seguono. `NETWORK_SERVICE` è l'account usato per l'esecuzione del broker dei servizi R, il servizio che termina le connessioni SSL in ingresso nel computer server.
 
 1. Eseguire *certlm.msc* (lo strumento di gestione certificati) da un prompt dei comandi dell'amministratore.
-1. Espandere**Certificati** **personali** > , fare clic con il pulsante destro del mouse sul certificato e selezionare Tutte **le attività** > **Gestisci chiavi private**.
+1. Espandere **Personal**  >  **certificati**personali, fare clic con il pulsante destro del mouse sul certificato e scegliere **tutte le attività**  >  **Gestisci chiavi private**.
 1. Fare clic con il pulsante destro del mouse sul certificato e selezionare il comando **Gestisci chiavi private** in **Tutte le attività**.
 1. Nella finestra di dialogo visualizzata selezionare **Add** (Aggiungi) e immettere `NETWORK SERVICE` come nome dell'account:
 
@@ -199,11 +199,11 @@ Per l'esecuzione dei servizi R nel computer remoto è anche necessario creare ac
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-**D: Il computer server R non risponde, cosa devo fare?**
+**D. Il computer server R non risponde, cosa devo fare?**
 
 Provare a eseguire il ping del computer remoto dalla riga di comando: `ping remote-machine-name`. Se il ping non riesce verificare che il computer sia in esecuzione.
 
-**D: La finestra interattiva R indica che il computer remoto è acceso, ma perché il servizio non è in esecuzione?**
+**D. La finestra interattiva di R indica che il computer remoto è acceso, ma perché il servizio non è in esecuzione?**
 
 Esistono tre possibili motivi:
 
@@ -213,21 +213,21 @@ Esistono tre possibili motivi:
 
 Riavviare il computer dopo aver modificato le condizioni precedenti. Quindi verificare che `RHostBrokerService` e `RUserProfileService` siano in esecuzione tramite Gestione attività (scheda Servizi) o tramite *services.msc*.
 
-**D: Perché nella finestra interattiva R viene visualizzato il valore "401 Accesso negato" durante la connessione al server R?**
+**D. Perché la finestra interattiva di R dice "401 accesso negato" durante la connessione a R server?**
 
-Le ragioni possibili sono due:
+Le ragioni possono essere due:
 
 - È molto probabile che l'account `NETWORK SERVICE` non disponga dell'accesso alla chiave privata del certificato SSL. Seguire le istruzioni specificate in precedenza per concedere a `NETWORK SERVICE` l'accesso alla chiave privata.
 - Verificare che il servizio `seclogon` sia in esecuzione. Usare *services.msc* per configurare l'avvio automatico di `seclogon`.
 
-**D: Perché nella finestra interattiva R viene visualizzato il valore "404 Non trovato" durante la connessione al server R?**
+**D. Perché la finestra interattiva di R dice "404 non trovato" durante la connessione a R server?**
 
 Questo errore è probabilmente dovuto al fatto che mancano una o più librerie ridistribuibili di Visual C++. Verificare se nella finestra interattiva di R è presente un messaggio relativo a una libreria (DLL) mancante. Quindi verificare che sia installato il componente ridistribuibile VS 2015 e che sia installato R.
 
-**D: Non riesco ad accedere a Internet/risorsa dalla finestra interattiva R, cosa devo fare?**
+**D. Non è possibile accedere a Internet/Resource dalla finestra interattiva di R, cosa devo fare?**
 
 Verificare che le regole firewall per `Microsoft.R.Host.Broker` e `Microsoft.R.Host` consentano l'accesso in uscita sulla porta 5444. Riavviare il computer dopo aver applicato le modifiche.
 
-**D. Ho provato tutte queste soluzioni, e ancora non funziona. E adesso?**
+**D. Ho provato tutte queste soluzioni e non funziona ancora. Ora?**
 
-Cercare nei file di registro in *C:* Questa cartella contiene file di log separati per ogni istanza del servizio R Broker che è stata eseguita. Ogni volta che il servizio viene riavviato, viene creato un nuovo file di log. Verificare se il file di log più recente contiene indicazioni sulla possibile causa dell'errore.
+Esaminare i file di log in *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Questa cartella contiene file di log distinti per ogni istanza del servizio R broker eseguito. Ogni volta che il servizio viene riavviato, viene creato un nuovo file di log. Verificare se il file di log più recente contiene indicazioni sulla possibile causa dell'errore.

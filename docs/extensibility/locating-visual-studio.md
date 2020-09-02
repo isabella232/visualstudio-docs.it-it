@@ -10,36 +10,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64878150"
 ---
 # <a name="locate-visual-studio"></a>Individuare Visual Studio
 
-A partire da Visual Studio 2017, è possibile installare più istanze della stessa versione o edition anche. Ciò è utile quando si desidera visualizzare in anteprima nuove funzionalità nel computer di sviluppo primario, mantenendo l'installazione precedente. Grazie a queste modifiche, non è disponibile alcun valore di variabile o del Registro di sistema unico ambiente che è possibile usare per individuare un'istanza. In alternativa, è possibile usare una [API di query COM](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) per trovare le istanze in base a criteri appropriati per l'estensione.
+A partire da Visual Studio 2017, è possibile installare più istanze della stessa versione o persino dell'edizione. Questa operazione è utile quando si desidera visualizzare in anteprima nuove funzionalità nel computer di sviluppo primario mantenendo l'installazione precedente. A causa di queste modifiche, non esiste una singola variabile di ambiente o un valore del registro di sistema che è possibile utilizzare per individuare un'istanza. È invece possibile usare un' [API di query com](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) per individuare le istanze in base ai criteri rilevanti per l'estensione.
 
-Si tratta di un'API veloce, di sola lettura con i pacchetti NuGet disponibile per il codice nativo e gestito.
+Si tratta di un'API veloce di sola lettura con pacchetti NuGet disponibili per il codice nativo e gestito.
 
 | Codice | Pacchetto |
 | ---- | --- |
 | Nativo | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Gestito | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Gestita | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-È possibile individuare una singola istanza, data un percorso o il processo corrente o enumerare tutte le istanze. Visualizzare [esempi](https://github.com/Microsoft/vs-setup-samples) per esempi completi di come individuare Visual Studio.
+È possibile individuare una singola istanza in base a un percorso o al processo corrente oppure enumerare tutte le istanze. Per esempi completi su come individuare Visual Studio [, vedere gli esempi.](https://github.com/Microsoft/vs-setup-samples)
 
 ## <a name="tools"></a>Strumenti
 
-Per trovare Visual Studio e altri strumenti in ambienti di compilazione, gli script PowerShell, i programmi di installazione e altri scenari, sono disponibili numerosi strumenti open source, è possibile usare direttamente o ridistribuire insieme i propri script.
+Per trovare Visual Studio e altri strumenti negli ambienti di compilazione, script PowerShell, programmi di installazione e altri scenari, sono disponibili diversi strumenti open source che è possibile usare direttamente o ridistribuire insieme a script personalizzati.
 
 | Progetto | Descrizione |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | Singolo file eseguibile nativo per individuare le istanze che soddisfano criteri, ad esempio versione o versioni non definitive, il prodotto sia installato e quali carichi di lavoro siano installati. Supporta anche la ricerca di Visual Studio 2010 e versioni successive, anche se meno informazioni vengano restituite che per Visual Studio 2017 e versioni successive. Vedere le [wiki](https://github.com/Microsoft/vswhere/wiki) per alcuni esempi. |
-| [Cmdlet di VSSetup](https://github.com/Microsoft/vssetup.powershell) | I cmdlet di PowerShell supportati 2.0 e versioni più recenti che restituiscono informazioni avanzate come oggetti, è possibile usare per trovare le istanze in base agli stessi criteri _vswhere_ e per individuare proprietà anche altre informazioni sulle istanze. Vedere le [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) per alcuni esempi. |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Viene automaticamente individuata _VSIX Installer_ e passa attraverso la riga di comando per installare un **VSIX* file. Questa funzionalità può essere utile per i programmi di installazione che non hanno supporto diretto per l'API di query. Vedere le [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) per alcuni esempi. |
+| [vswhere](https://github.com/Microsoft/vswhere) | File eseguibile nativo a file singolo per individuare le istanze che soddisfano i criteri, ad esempio il rilascio o la versione non definitiva, il prodotto installato e i carichi di lavoro installati. Supporta anche la ricerca di Visual Studio 2010 e versioni successive, anche se vengono restituite meno informazioni per Visual Studio 2017 e versioni successive. Per esempi, vedere il [wiki](https://github.com/Microsoft/vswhere/wiki) . |
+| [Cmdlet VSSetup](https://github.com/Microsoft/vssetup.powershell) | I cmdlet di PowerShell supportano 2,0 e versioni successive che restituiscono informazioni dettagliate come oggetti che è possibile usare per trovare le istanze in base agli stessi criteri di _vswhere_ e per individuare ancora più proprietà sulle istanze. Per esempi, vedere il [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) . |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Individua automaticamente _VSIX Installer_ e passa la riga di comando tramite per installare un file **. vsix* . Questa funzionalità può essere utile nei programmi di installazione che non dispongono di supporto diretto per le API di query. Per esempi, vedere il [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) . |
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Modifiche all'installazione di Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
-* [Avviare Visual Studio usando DTE](launch-visual-studio-dte.md)
+* [Modifiche al programma di installazione di Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [Avviare Visual Studio tramite DTE](launch-visual-studio-dte.md)

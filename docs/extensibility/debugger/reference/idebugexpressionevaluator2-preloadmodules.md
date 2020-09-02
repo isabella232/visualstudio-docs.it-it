@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules . Documenti Microsoft
+title: IDebugExpressionEvaluator2::P reloadModules | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729324"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
@@ -40,16 +40,16 @@ int PreloadModules (
 
 ## <a name="parameters"></a>Parametri
 `pSym`\
-[in] Provider di simboli per il quale verranno precaricati i moduli.
+in Provider di simboli per il quale verranno precaricati i moduli.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
-Questo metodo facoltativo viene utilizzato quando si esegue una connessione di processo di hosting. Dà all'EE la possibilità di "riscaldarsi" come parte dell'attacco.
+Questo metodo facoltativo viene usato quando si esegue un attacco di hosting-Process. Consente ad EE di "scaldarsi" come parte dell'associazione.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **ExpressionEvaluatorPackage** oggetto che espone il [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **ExpressionEvaluatorPackage** che espone l'interfaccia [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) .
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

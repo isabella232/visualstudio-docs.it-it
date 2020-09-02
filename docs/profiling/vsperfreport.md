@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329959"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -48,11 +48,11 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="general-report-options"></a>Opzioni generali per i report
  La tabella seguente descritte le opzioni di formattazione dei report generali e le opzioni per selezionare i dati da includere nel report.
 
-|Opzioni|Description|
+|Opzioni|Descrizione|
 |-------------|-----------------|
 |**U**|L'output del report e l'output di console reindirizzato vengono scritti in formato Unicode. Deve essere la prima opzione specificata.|
 |**Summary:**[*tipi*]|Crea uno o più tipi di report.<br /><br /> -   `All` - Vengono generati tutti i tipi di report.<br />-   `CallerCallee` - Relazioni padre-figlio tra le funzioni.<br />-   `Function` - Funzioni chiamate.<br />-   `CallTree` - Gerarchia delle funzioni chiamate.<br />-   `Counter` - Tutti i contrassegni insieme ai valori dei contatori delle prestazioni di Windows.<br />-   `Ip` - Istruzioni profilate.<br />-   `Life` - Durata degli oggetti allocati (disponibile quando sono stati raccolti dati sulle allocazioni).<br />-   `Line` - Dati di profilatura delle righe di codice sorgente.<br />-   `Header` - Il report contiene informazioni sull'intestazione di file.<br />-   `Mark` - Tutti i contrassegni.<br />-   `Module` - Moduli profilati.<br />-   `Process` - Processi profilati.<br />-   `Thread` - Thread profilati.<br />-   `Type` -Tipo allocati.<br />-   `Contention` - Conflitti di risorse.<br />-   `RuleWarnings` - Problemi relativi alle regole di prestazioni.<br />-   `ETW` - Tutti gli eventi ETW (Event Tracing for Windows) raccolti durante l'esecuzione della profilatura. Il file di dati con estensione etl deve essere nella posizione originale o nella directory contenente il file con estensione vsp o vsps.|
-|**XML**|Il report viene generato in formato XML.|
+|**Xml**|Il report viene generato in formato XML.|
 |**CallTrace**|Crea un elenco di ingressi e uscite da funzioni, eventi ETW e contrassegni.|
 |**ClearPackedSymbols**|Rimuove i simboli precedentemente incorporati da un file di dati del profiler. Eseguire questo comando prima di eseguire PackSymbols una seconda volta.|
 |**SymbolPath:**`path`|Specifica uno o più percorsi di ricerca o server di simboli che contengono i simboli per il file di dati del profiler.|
@@ -68,7 +68,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>Opzioni di filtro
  La tabella seguente descrive le opzioni disponibili per filtrare i dati disponibili.
 
-|Opzioni|Description|
+|Opzioni|Descrizione|
 |-------------|-----------------|
 |**JustMyCode**[**:**[ `caller` ] [, `callee` ]]|Mostra solo le chiamate di funzioni dell'applicazione dell'utente. Le chiamate di sistema vengono nascoste.<br /><br /> - Nessun parametro: nasconde tutte le funzioni di sistema.<br />-   `caller` - Mostra un livello di funzioni di sistema che chiamano funzioni dell'applicazione.<br />-   `callee` - Mostra un livello di funzioni di sistema che vengono chiamate da funzioni dell'applicazione dell'utente.|
 |**StartTime:**[*valore*]|Mostra solo i dati raccolti dopo il valore (in millisecondi).|
@@ -82,7 +82,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="difference-report-options"></a>Opzioni per i report sulle differenze
  La tabella seguente descrive le opzioni per confrontare i file di report.
 
-|Opzioni|Description|
+|Opzioni|Descrizione|
 |-------------|-----------------|
 |**Diff**  `vspfile1 vspfile2`|Confrontare due file di report (con estensione *vsp* o *vsps*). Le opzioni Summary verranno ignorate quando si usa l'opzione Diff.|
 |**Diff:**[*valore*]|Sotto questo valore di soglia la differenza tra due valori verrà ignorata. Inoltre, i nuovi dati con valori al di sotto della soglia non verranno visualizzati.|
@@ -90,5 +90,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:**[*ColumnName*]|Usare questa colonna specifica per confrontare i file. Per impostazione predefinita, viene usata la colonna percentuale campioni esclusivi.|
 |**QueryDiffTables**|Elenco delle tabelle e delle colonne valide per i due file di report specificati.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Visualizzazioni rapporto di prestazioni](../profiling/performance-report-views.md)

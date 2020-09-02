@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778583"
 ---
 # <a name="lines-view---sampling-data"></a>Visualizzazione Righe: dati di campionamento
@@ -44,8 +44,8 @@ Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene la riga della funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la riga della funzione.|
 |**File di origine**|File di origine che contiene la riga della funzione.|
@@ -56,9 +56,9 @@ Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle
 |**Fine riga di origine**|Numero di riga finale nel file di origine in corrispondenza del quale è stato raccolto il campione.|
 |**Inizio carattere di origine**|Offset del carattere iniziale nel file di origine in corrispondenza del quale è stato raccolto il campione.|
 |**Fine carattere di origine**|Offset del carattere finale nel file di origine in corrispondenza del quale è stato raccolto il campione.|
-|**Nome riga**|Un identificatore generato dal profiler della`Source File`riga con la sintassi seguente:**;[** `Line Number Start` **,**,`Character Start`**]->; [**`Line Number End`**,**`Character End`**]**|
+|**Nome riga**|Identificatore generato dal profiler della riga con la sintassi seguente: `Source File` **; [** `Line Number Start` **,**`Character Start` **]->; [**`Line Number End`**,**`Character End`**]**|
 |**Campioni esclusivi**|Numero totale di campioni raccolti durante l'esecuzione della riga della funzione.|
 |**% esempi esclusivi**|Percentuale di tutti i campioni nell'esecuzione della profilatura che sono stati raccolti durante l'esecuzione della riga della funzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione Righe - Campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione righe-campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)

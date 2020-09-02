@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778570"
 ---
 # <a name="markprofile"></a>MarkProfile
@@ -48,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="remarks"></a>Osservazioni
  Il valore del contrassegno viene inserito nel file con estensione *vsp* ogni volta che il codice viene eseguito se il thread che contiene la funzione MarkProfile è in corso di profilatura. È possibile chiamare MarkProfile più volte.
 
- I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno di profilo inserito in un thread può essere utilizzato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread dell'oggetto . *vsp.*
+ I contrassegni del profilo hanno ambito globale. Ad esempio, è possibile usare un contrassegno del profilo inserito in un thread per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread in. file *VSP* .
 
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno o con le funzioni API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).
 
@@ -61,7 +61,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="function-information"></a>Informazioni sulla funzione
  *Intestazione: dichiarata in VSPerf.h*
 
- Raccolta di importazione: *VSPerf.lib*
+ Libreria di importazione: *VSPerf. lib*
 
 ## <a name="example"></a>Esempio
  Il codice seguente illustra la funzione MarkProfile.
@@ -99,4 +99,4 @@ void ExerciseMarkProfile()
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)Visual Studio profiler API reference (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

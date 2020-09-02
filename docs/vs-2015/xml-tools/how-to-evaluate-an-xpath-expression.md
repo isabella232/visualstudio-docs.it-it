@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ecec9004506a9bd05d3d773e44bb264af363f96f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670872"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Procedura: valutare un'espressione XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile valutare le espressioni XPath con la finestra di dialogo controllo **immediato** . L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente, ovvero il nodo `self::node()` nella finestra **variabili locali** , fornisce il contesto di valutazione per l'espressione XPath.
+È possibile valutare le espressioni XPath con la finestra di dialogo controllo **immediato** . L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente, ovvero il `self::node()` nodo nella finestra **variabili locali** , fornisce il contesto di valutazione per l'espressione XPath.
 
  Nell'elenco seguente vengono descritte le funzioni supportate durante la valutazione di un'espressione XPath:
 
@@ -30,7 +30,7 @@ ms.locfileid: "72670872"
 - Non sono supportate le funzioni definite dall'utente.
 
 > [!NOTE]
-> Nella procedura seguente vengono usati i file file belowAvg. xsl e Books. XML dell'argomento [procedura dettagliata: eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) .
+> La procedura seguente usa i file file belowAvg. xsl e books.xml dell'argomento [scenario: debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) .
 
 ### <a name="to-evaluate-an-xpath-expression"></a>Per valutare un'espressione XPath
 
@@ -50,7 +50,7 @@ ms.locfileid: "72670872"
 
 5. Modificare l'espressione XPath in `./price/text() < $bookAverage` e fare clic su **Rivaluta**.
 
-     Nella casella **valore** viene indicato che l'espressione XPath restituisce `true`.
+     Nella casella **valore** viene indicato che l'espressione XPath restituisce `true` .
 
 ## <a name="see-also"></a>Vedere anche
  [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)
