@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
 ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983591"
 ---
 # <a name="understanding-build-configurations"></a>Informazioni sulle configurazioni della build
@@ -36,7 +36,7 @@ In Visual Studio per Mac, anziché impostare un progetto di avvio, è possibile 
 
 ![Elenco a discesa della configurazione di esecuzione](media/projects-and-solutions-image8.png)
 
-Una configurazione di esecuzione è un set di opzioni di esecuzione con un nome. Per un progetto possono essere definite diverse configurazioni per scopi diversi. Le configurazioni di esecuzione sono definite a livello di progetto. Per ogni progetto eseguibile viene creata automaticamente una configurazione predefinita, anche se è possibile aggiungerne un numero illimitato. Alcuni tipi di progetto generano automaticamente altre configurazioni di esecuzione. Ad esempio, i progetti watchOS possono generare _configurazioni Glance e Notification.For example,_ watchOS projects may generate Glance and Notification configurations.
+Una configurazione di esecuzione è un set di opzioni di esecuzione con un nome. Per un progetto possono essere definite diverse configurazioni per scopi diversi. Le configurazioni di esecuzione sono definite a livello di progetto. Per ogni progetto eseguibile viene creata automaticamente una configurazione predefinita, anche se è possibile aggiungerne un numero illimitato. Alcuni tipi di progetto generano automaticamente altre configurazioni di esecuzione. Ad esempio, i progetti watchos possono generare un'  _occhiata e configurazioni di notifiche._
 
 Le configurazioni possono essere condivise con altri sviluppatori, nel qual caso vengono archiviate nel file con estensione csproj, o mantenute in locale, nel qual caso vengono archiviate in un file con estensione user.
 

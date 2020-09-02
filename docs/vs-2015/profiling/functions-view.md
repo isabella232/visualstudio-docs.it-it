@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08fd68d99841d2877a2b32fe71968ea05e8db427
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62583132"
 ---
 # <a name="functions-view"></a>Visualizzazione Funzioni
@@ -30,12 +30,12 @@ La visualizzazione Funzioni elenca le funzioni chiamate durante la profilatura.
   
  Per impostazione predefinita, le funzioni vengono elencate per nome. Per visualizzare le funzioni per modulo, fare clic con il pulsante destro del mouse nella finestra Visualizzazione Funzioni e quindi selezionare **Mostra in visualizzazione Modulo**. Verrà visualizzata la visualizzazione Modulo.  
   
- Per aggiungere o rimuovere colonne, fare clic con il pulsante destro del mouse nella finestra del report e quindi scegliere **Aggiungi/Rimuovi colonne**. È anche possibile ordinare i dati facendo clic su un nome di colonna. Per altre informazioni, vedere [Procedura: Personalizzare colonne della visualizzazione Report](../profiling/how-to-customize-report-view-columns.md).  
+ Per aggiungere o rimuovere colonne, fare clic con il pulsante destro del mouse nella finestra del report e quindi scegliere **Aggiungi/Rimuovi colonne**. È anche possibile ordinare i dati facendo clic su un nome di colonna. Per altre informazioni, vedere [procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md).  
   
  Le colonne disponibili nella visualizzazione Funzioni dipendono dal metodo di profilatura (campionamento o strumentazione) usato per raccogliere i dati e dal fatto che i dati della memoria .NET siano stati raccolti o meno durante l'esecuzione della profilatura.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)   
- [Visualizzazione Funzioni](../profiling/functions-view-instrumentation-data.md)   
- [Visualizzazione Funzioni: strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione Funzioni: campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)
+ [Visualizzazione funzioni](../profiling/functions-view-sampling-data.md)   
+ [Visualizzazione funzioni](../profiling/functions-view-instrumentation-data.md)   
+ [Visualizzazione funzioni-strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Visualizzazione funzioni-campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)

@@ -18,19 +18,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6ff05e7e8cc74eacb00b5ec8ff42bd48faaa12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159188"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Utilizzo elevato di String.Split o String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id regola | DA0013 |  
-| Categoria di |. Linee guida sull'uso di .NET Framework |  
+ID regola | DA0013 |  
+| Categoria |. Linee guida sull'utilizzo di .NET Framework |  
 | Metodi di profilatura | Campionamento |  
-| Messaggio | Provare a ridurre l'utilizzo delle funzioni String. Split e String. Substring. |  
+| Messaggio | Provare a ridurre l'uso delle funzioni String. Split e String. Substring. |  
 | Tipo di regola | Avviso |  
   
 ## <a name="cause"></a>Causa  

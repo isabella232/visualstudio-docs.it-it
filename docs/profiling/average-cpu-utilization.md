@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01557fb378f03ffd033495ca42024c1143e67187
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62776998"
 ---
 # <a name="average-cpu-utilization"></a>Utilizzo CPU medio
@@ -24,4 +24,4 @@ Viene visualizzato l'utilizzo medio dei core logici del sistema da parte del pro
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Core](../profiling/cores-view.md)
-- [Grafico dell'utilizzo della CPU](../profiling/cpu-utilization-graph.md)
+- [Grafico Utilizzo CPU](../profiling/cpu-utilization-graph.md)

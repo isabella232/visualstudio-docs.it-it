@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f283c2c1825c4b8b02fb5b044ce113231a919317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646853"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
@@ -32,12 +32,12 @@ Specifica la descrizione di una funzione o di un metodo.
 ```
 
 #### <a name="parameters"></a>Parametri
- `locid` Facoltativo. Identificatore per le informazioni di localizzazione sulla funzione o sul metodo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nell'elemento [\<loc>](../ide/loc-javascript.md).
+ `locid` Facoltativo. Identificatore per le informazioni di localizzazione sulla funzione o sul metodo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nell' [\<loc>](../ide/loc-javascript.md) elemento.
 
  `description` Facoltativo. Descrizione della funzione o del metodo.
 
 ## <a name="remarks"></a>Osservazioni
- Gli elementi usati per annotare le funzioni, che includono [\<summary>](../ide/summary-javascript.md), [\<param>](../ide/param-javascript.md) e [\<returns>](../ide/returns-javascript.md) devono essere posizionati nel corpo della funzione prima di qualsiasi istruzione.
+ Gli elementi utilizzati per aggiungere annotazioni alle funzioni, tra cui [\<summary>](../ide/summary-javascript.md) , [\<param>](../ide/param-javascript.md) e [\<returns>](../ide/returns-javascript.md) , devono essere inseriti nel corpo della funzione prima di qualsiasi istruzione.
 
 ## <a name="example"></a>Esempio
  L'esempio di codice seguente illustra come usare l'elemento `<summary>`.

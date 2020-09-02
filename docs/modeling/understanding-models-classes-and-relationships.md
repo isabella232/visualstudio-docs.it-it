@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565903"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
@@ -22,7 +22,7 @@ Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione 
  In questo argomento vengono illustrate le funzionalità centrali della definizione DSL.
 
 ## <a name="the-dsl-definition"></a>Definizione DSL
- Quando si apre `Dsl\DslDefinition.dsl`, la finestra di Visual Studio è simile all'immagine seguente.
+ Quando si apre `Dsl\DslDefinition.dsl` , la finestra di Visual Studio è simile all'immagine seguente.
 
  ![Progettazione DSL](../modeling/media/dsl_designer.png)
 
@@ -116,7 +116,7 @@ Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione 
 
  Nella rappresentazione XML del modello, un collegamento di riferimento tra due elementi viene rappresentato utilizzando i *moniker.* Ovvero, i moniker sono nomi che identificano in modo univoco ogni elemento del modello. Il nodo XML per ogni elemento del modello contiene un nodo che specifica il nome della relazione e il moniker dell'altro elemento.
 
-## <a name="roles"></a>Ruoli di
+## <a name="roles"></a>Ruoli
  Ogni relazione di dominio ha due ruoli, un ruolo di origine e un ruolo di destinazione.
 
  Nell'immagine seguente la riga tra la classe di dominio del **server di pubblicazione** e la relazione di dominio **PublisherCatalog** è il ruolo di origine. La riga tra la relazione di dominio e la classe di dominio **album** è il ruolo di destinazione.
@@ -128,9 +128,9 @@ Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione 
  Quando si crea una relazione in una definizione DSL, al nome della proprietà e della relazione vengono assegnati i valori predefiniti. Tuttavia, è possibile modificarli.
 
 ## <a name="multiplicities"></a>Molteplicità
- Molteplicità specificare il numero di elementi che possono avere lo stesso ruolo in una relazione di dominio. Nell'esempio, l'impostazione di molteplicità zero-a-molti (0..\*) nel ruolo del **Catalogo** specifica che qualsiasi istanza della classe di dominio del **server di pubblicazione** può avere tutti i collegamenti alla relazione di **PublisherCatalog** che si desidera assegnare.
+ Molteplicità specificare il numero di elementi che possono avere lo stesso ruolo in una relazione di dominio. Nell'esempio, l'impostazione di molteplicità zero-a-molti (0.. \* ) nel ruolo **del catalogo** specifica che qualsiasi istanza della classe di dominio del **server di pubblicazione** può avere tutti i collegamenti alla relazione di **PublisherCatalog** che si desidera assegnare.
 
- Configurare la molteplicità di un ruolo digitando nel diagramma o modificando la proprietà `Multiplicity` nella finestra **Proprietà** . Nella tabella seguente vengono descritte le impostazioni per questa proprietà.
+ Configurare la molteplicità di un ruolo digitando nel diagramma o modificando la `Multiplicity` proprietà nella finestra **Proprietà** . Nella tabella seguente vengono descritte le impostazioni per questa proprietà.
 
 |Tipo di molteplicità|Descrizione|
 |-|-|

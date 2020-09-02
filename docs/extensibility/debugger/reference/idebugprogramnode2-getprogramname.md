@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName . Documenti Microsoft
+title: 'IDebugProgramNode2:: getprogrammname | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721993"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
@@ -41,16 +41,16 @@ int GetProgramName (
 
 ## <a name="parameters"></a>Parametri
 `pbstrProgramName`\
-[fuori] Restituisce il nome del programma.
+out Restituisce il nome del programma.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
-Il nome di un programma non è la stessa cosa come il percorso del programma, anche se il nome del programma può essere parte di tale percorso.
+Il nome di un programma non corrisponde al percorso del programma, sebbene il nome del programma possa essere parte di tale percorso.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come `CProgram` implementare questo metodo per un oggetto semplice che implementa il [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia. La `MakeBstr` funzione alloca una copia della stringa specificata come BSTR.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un `CProgram` oggetto semplice che implementa l'interfaccia [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) . La `MakeBstr` funzione alloca una copia della stringa specificata come BSTR.
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {

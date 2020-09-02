@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 031caa0f1bccb2c3f57dbbc89b4dd7d311928b77
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567554"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalizzare modelli di progetto e modelli di elemento
@@ -25,7 +25,7 @@ Ad esempio, è possibile effettuare le attività seguenti:
 
 - Modificare ed esportare un modello esistente come modello utente.
 
-   Per ulteriori informazioni, vedere [Procedura: aggiornare i modelli esistenti](../ide/how-to-update-existing-templates.md).
+   Per altre informazioni, vedere [procedura: aggiornare modelli esistenti](../ide/how-to-update-existing-templates.md).
 
 - Passare parametri personalizzati in un modello per sostituire i valori esistenti.
 
@@ -37,9 +37,9 @@ Ad esempio, è possibile effettuare le attività seguenti:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
-- [Procedura: risolvere i problemi relativi ai modelliHow to: Troubleshoot templates](../ide/how-to-troubleshoot-templates.md)
-- [Procedura: creare modelli di progettoHow to: Create project templates](../ide/how-to-create-project-templates.md)
-- [Procedura: Creare modelli di elementoHow to: Create item templates](../ide/how-to-create-item-templates.md)
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Procedura: risolvere i problemi relativi ai modelli](../ide/how-to-troubleshoot-templates.md)
+- [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

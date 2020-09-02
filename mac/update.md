@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: ccfcf04816727800501dada64e73d6ce35876674
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984547"
 ---
 # <a name="update-visual-studio-for-mac"></a>Aggiornare Visual Studio per Mac
@@ -26,7 +26,7 @@ Visual Studio per Mac offre due canali per ottenere le versioni più recenti:
 
 È possibile usare il riquadro dello **strumento di aggiornamento di Visual Studio** per verificare la presenza di nuovi aggiornamenti, modificare i canali e per scaricare e installare gli aggiornamenti.
 
-Per aprire **Visual Studio Updater**, passare a **Visual Studio > Verifica disponibilità aggiornamenti**:
+Per aprire **Visual Studio Updater**, passare a **Visual Studio > verificare la disponibilità di aggiornamenti**:
 
 ![Opzione Controlla aggiornamenti](media/update-image1.png)
 
@@ -44,7 +44,7 @@ Per modificare il canale, selezionarlo dall'elenco a discesa a premere il pulsan
 
 Il cambio di canale avvia automaticamente il processo di download di nuovi aggiornamenti.
 
-Se si è selezionata l'opzione **Controlla automaticamente**, il riquadro dello strumento di aggiornamento viene visualizzato quando viene aperto Visual Studio per Mac per consentire di sapere se sono disponibili nuovi aggiornamenti. I nuovi download inizieranno a scaricare automaticamente sul computer quando viene visualizzata questa casella.
+Se si è selezionata l'opzione **Controlla automaticamente**, il riquadro dello strumento di aggiornamento viene visualizzato quando viene aperto Visual Studio per Mac per consentire di sapere se sono disponibili nuovi aggiornamenti. I nuovi download verranno scaricati automaticamente nel computer quando viene visualizzata questa finestra.
 
 Per avviare l'installazione degli aggiornamenti, selezionare il pulsante **Riavvia e installa aggiornamenti**:
 

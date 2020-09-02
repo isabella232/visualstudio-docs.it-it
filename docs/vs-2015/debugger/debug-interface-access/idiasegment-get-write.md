@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9fb40262b194b8888a3fc4033cef18480ecb2439
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62558372"
 ---
-# <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
+# <a name="idiasegmentget_write"></a>IDiaSegment::get_write
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera un flag che indica se il segmento può essere modificato.  
@@ -35,7 +35,7 @@ HRESULT get_write ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se il segmento può essere modificato; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se è possibile scrivere nel segmento. in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

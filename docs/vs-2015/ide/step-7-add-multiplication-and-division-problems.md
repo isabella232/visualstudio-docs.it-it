@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7f7efb0acf6611346abe67a7a94e5c221919665
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646969"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Passaggio 7: aggiungere problemi di moltiplicazione e divisione
@@ -53,6 +53,6 @@ Nella settima parte di questa esercitazione si aggiungeranno i problemi di molti
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 8: personalizzare il quiz](../ide/step-8-customize-the-quiz.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 8: personalizzare il quiz](../ide/step-8-customize-the-quiz.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 6: aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md).

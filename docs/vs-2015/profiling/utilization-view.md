@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145359"
 ---
 # <a name="utilization-view"></a>Visualizzazione Uso
@@ -27,7 +27,7 @@ La **visualizzazione Utilizzo** mostra le informazioni relative a CPU, GPU e alt
   
  ![Visualizzazione Utilizzo CPU](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  
   
- Il grafico mostra il tempo (sull'asse x) e la media dei core logici usati dal processo di destinazione, dal processo inattivo e dal processo di sistema. Il processo inattivo mostra i core inattivi. Il processo di sistema è un processo di Windows che può eseguire operazioni per conto di altri processi. Gli altri processi sono quelli in esecuzione nell'account di sistema per l'utilizzo da parte dei core rimanenti.  
+ Il grafico mostra il tempo (sull'asse x) e la media dei core logici usati dal processo di destinazione, dal processo inattivo e dal processo di sistema. Il processo inattivo mostra i core inattivi. Il processo di sistema è un processo in Windows che può eseguire operazioni per conto di altri processi. I rimanenti processi in esecuzione nell'account di sistema per l'utilizzo di tutti i core rimanenti.  
   
  Sull'asse y viene indicato il numero di core logici. Windows considera il supporto multithread simultaneo nell'hardware come core logici (ad esempio, Hyper-Threading). Di conseguenza, un sistema dotato di un processore quad core che supporta due thread hardware per ogni core viene visualizzato come un sistema con otto core logici. Questo vale anche per la visualizzazione Core. Per altre informazioni, vedere [Visualizzazione Core](../profiling/cores-view.md).  
   

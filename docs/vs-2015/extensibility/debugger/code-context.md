@@ -1,5 +1,5 @@
 ---
-title: Codice contesto | Microsoft Docs
+title: Contesto del codice | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d59a4c79cb21386fa6f6e7031404aeb0b435b3b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197367"
 ---
 # <a name="code-context"></a>Contesto del codice
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Nelle [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debug, una **contesto codice**:  
+In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debug, un **contesto di codice**:  
   
-- Fornisce un'astrazione di una posizione nel codice come nota al motore di debug (DE). Per la maggior parte delle architetture di run-time oggi, un contesto del codice può essere considerato come un indirizzo nel flusso di istruzioni del programma. Per le lingue non convenzionale, dove codice non può essere rappresentato da istruzioni, un contesto del codice può essere rappresentato da un altro modo.  
+- Fornisce un'astrazione di una posizione nel codice come noto al motore di debug (DE). Per la maggior parte delle architetture di runtime oggi, un contesto di codice può essere considerato come un indirizzo nel flusso di istruzioni di un programma. Per le lingue non tradizionali, in cui il codice non può essere rappresentato dalle istruzioni, un contesto di codice può essere rappresentato da altri mezzi.  
   
-- Descrive la posizione corrente nel flusso di esecuzione del programma in fase di debug.  
+- Descrive la posizione corrente nel flusso di esecuzione del programma di cui è in corso il debug.  
   
-- Esiste solo quando un programma è stata interrotta in un punto di interruzione.  
+- Esiste solo quando un programma è stato interrotto in corrispondenza di un punto di interruzione.  
   
-- Ha un contesto di documento associato.  
+- Dispone di un contesto del documento associato.  
   
-- Viene implementato da un [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interfaccia.  
+- Viene implementato da un'interfaccia [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
- [Contesto di documento](../../extensibility/debugger/document-context.md)   
+ [Contesto del documento](../../extensibility/debugger/document-context.md)   
  [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)

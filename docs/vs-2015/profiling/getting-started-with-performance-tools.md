@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158225"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introduzione agli strumenti per le prestazioni
@@ -34,12 +34,12 @@ Questa sezione fornisce una panoramica dei concetti e delle attività applicabil
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
-|**Profilare in modo rapido un'applicazione o un sito Web:** Utilizzare procedura guidata per configurare ed eseguire una sessione di profilatura per una soluzione di Visual Studio o un sito Web.|-   [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**Profilatura di un'applicazione senza la procedura guidata:** Informazioni su come usare le pagine delle proprietà di sessione di prestazioni per creare una sessione di prestazioni.|-   [Procedura: Creare manualmente sessioni di prestazioni](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Prova:** Ottieni esperienza pratica profilando un'applicazione di esempio.|-   [Procedura dettagliata: Identificazione dei problemi di prestazioni](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
+|**Profilare in modo rapido un'applicazione o un sito Web:** usare la Creazione guidata sessione di prestazioni per configurare ed eseguire una sessione di profilatura per una soluzione Visual Studio o un sito Web.|-   [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Procedura: raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**Profilare un'applicazione senza la procedura guidata:** imparare a usare le pagine delle proprietà della sessione di prestazioni per creare una sessione di prestazioni.|-   [Procedura: creare manualmente sessioni di prestazioni](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**Esercitazione:** acquisire esperienza pratica profilando un'applicazione di esempio.|-   [Procedura dettagliata: identificazione dei problemi di prestazioni](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
+ [Panoramiche](../profiling/overviews-performance-tools.md)   
  [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)   
- [Uso di regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md)   
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md) (Configurazione di sessioni di prestazioni)
+ [Uso di regole per le prestazioni per analizzare i dati](../profiling/using-performance-rules-to-analyze-data.md)   
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

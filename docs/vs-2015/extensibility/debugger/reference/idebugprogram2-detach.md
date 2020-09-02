@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Detach | Microsoft Docs
+title: IDebugProgram2::D etach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 922c3d4df6332fc5b9bc5b264c4d46b3f1b91805
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549324"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Scollega un motore di debug del programma.  
+Scollega un motore di debug dal programma.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,10 +37,10 @@ int Detach();
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Un programma disconnesso continua l'esecuzione, ma non è più parte della sessione di debug. Nessun altro evento di debug programma viene inviato una volta che il motore di debug viene scollegato.  
+## <a name="remarks"></a>Osservazioni  
+ Un programma scollegato continua l'esecuzione, ma non fa più parte della sessione di debug. Quando il motore di debug viene scollegato, non vengono inviati altri eventi di debug del programma.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: 'IDebugBreakpointRequest2:: GetRequestInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 998312e9f6dcf16e5afedb22cec870acdcd0efa1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158799"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene le informazioni richieste punto di interruzione che descrive questa richiesta di punto di interruzione.  
+Ottiene le informazioni sulla richiesta del punto di interruzione che descrivono questa richiesta di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int GetRequestInfo( 
   
 #### <a name="parameters"></a>Parametri  
  `dwFields`  
- [in] Una combinazione di flag dal [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumerazione che determina quali campi di `pBPRequestInfo` parametro devono essere compilati.  
+ in Combinazione di flag dell'enumerazione [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) che determina i campi del `pBPRequestInfo` parametro da compilare.  
   
  `pBPRequestInfo`  
- [out] Specifica la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struttura da compilare con la descrizione della richiesta di punto di interruzione.  
+ out Specifica la struttura di [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) da compilare con la descrizione della richiesta del punto di interruzione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CDebugBreakpointRequest` oggetto che espone il [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un `CDebugBreakpointRequest` oggetto semplice che espone l'interfaccia [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) .  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

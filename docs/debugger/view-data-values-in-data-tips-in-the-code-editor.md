@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75404273"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Visualizzare i valori dei dati nei suggerimenti dati nell'editor di codice
@@ -35,7 +35,7 @@ I suggerimenti dati vengono visualizzati solo in modalità di interruzioni e sol
 
 ### <a name="display-a-datatip"></a>Visualizzare un DataTip
 
-1. Impostare un punto di interruzione nel codice e avviare il debug premendo **F5** o selezionando **debug** > **avviare il debug**.
+1. Impostare un punto di interruzione nel codice e avviare il debug premendo **F5** o selezionando **debug**  >  **Avvia debug**.
 
 1. Quando viene sospesa in corrispondenza del punto di interruzione, passare il mouse su qualsiasi variabile nell'ambito corrente. Viene visualizzato un DataTip che mostra il nome e il valore corrente della variabile.
 
@@ -75,7 +75,7 @@ Per chiudere tutti i suggerimenti dati, scegliere **Cancella tutti i suggeriment
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Chiudi tutti i suggerimenti dati per un file specifico
 
-Per chiudere tutti i suggerimenti dati per un file specifico, scegliere **Cancella tutti i suggerimenti dati aggiunti a \<nomefile >** dal menu **debug** .
+Per chiudere tutti i suggerimenti dati per un file specifico, scegliere **Cancella tutti i suggerimenti dati \<Filename> aggiunti a **dal menu **debug** .
 
 ## <a name="expand-and-edit-information"></a>Espandi e modifica informazioni
 È possibile utilizzare i suggerimenti dati per espandere una matrice, una struttura o un oggetto e visualizzarne i membri. È anche possibile modificare il valore di una variabile da un suggerimento dati.
@@ -125,22 +125,22 @@ La variabile viene visualizzata nella finestra **espressioni di controllo** . Se
 
 È possibile esportare i suggerimenti dati in un file XML, che è possibile condividere o modificare utilizzando un editor di testo. È anche possibile importare un file XML DataTip ricevuto o modificato.
 
-**Per esportare suggerimenti dati:**
+**Per esportare i suggerimenti dati:**
 
-1. Selezionare **Debug** > **Esporta suggerimenti**dati.
+1. Selezionare **debug**  >  **Esporta suggerimenti**dati.
 
 1. Nella finestra di dialogo **Esporta suggerimenti** dati passare al percorso in cui salvare il file XML, digitare un nome per il file e quindi selezionare **Salva**.
 
-**Per importare suggerimenti dati:**
+**Per importare i suggerimenti dati:**
 
-1. Selezionare **Debug** > **Importa suggerimenti**dati.
+1. Selezionare **debug**  >  **Importa suggerimenti**dati.
 
 1. Nella finestra di dialogo **Importa suggerimenti** dati selezionare il file XML dei suggerimenti dati che si desidera aprire e quindi selezionare **Apri**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
-- [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)
+- [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)
 - [Esaminare prima di tutto il debug](../debugger/debugger-feature-tour.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
 - [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)
-- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
+- [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

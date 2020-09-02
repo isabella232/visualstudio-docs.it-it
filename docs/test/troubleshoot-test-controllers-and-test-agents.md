@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565955"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie di risoluzione dei problemi dei controller e degli agenti di test nei test di carico
@@ -97,7 +97,7 @@ Per correggere questo errore, è necessario associare il controller di test a un
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Per ottenere l'indirizzo IP della scheda di rete
 
-1. Scegliere **Start**, quindi **Esegui**.
+1. Fare clic su **Start**, quindi scegliere **Esegui**.
 
      Viene visualizzata la finestra di dialogo **Esegui**.
 
@@ -113,7 +113,7 @@ Per correggere questo errore, è necessario associare il controller di test a un
 
 1. Arrestare il servizio controller di test. Al prompt dei comandi digitare `net stop vsttcontroller`.
 
-2. Aprire il file *QTController.exe.config*. Questo file si trova in *%ProgramFiles(x86)% .*
+2. Aprire il file *QTController.exe.config*. Il file si trova in *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 3. Aggiungere una voce per la proprietà `BindTo` alle impostazioni dell'applicazione. Specificare l'indirizzo IP della scheda di rete da associare al controller. Il codice sarà simile a quello riportato di seguito:
 

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74985213"
 ---
 # <a name="source-editor"></a>Editor standard
@@ -50,7 +50,7 @@ Questa voce di menu può anche essere usata per abilitare o disabilitare la ridu
 
 Può essere necessario visualizzare i caratteri invisibili nel codice sorgente. Questo è un modo per verificare visivamente che si stiano rispettando gli standard di codifica e che non si sprechi spazio. È anche utile quando si scrive in F#, dove la valutazione del codice dipende da righe con un rientro preciso.
 
-Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_ visualizzare i caratteri invisibili: Mai, Su selezione o Sempre:
+Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_   verranno visualizzati i caratteri invisibili: mai, in selezione o sempre:
 
 ![Opzioni per mostrare i caratteri invisibili](media/source-editor-image3.png)
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetPendingBreakpoint . Documenti Microsoft
+title: 'IDebugBoundBreakpoint2:: GetPendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4037cff1e080b4af97dbc56de4802f6f73504649
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735488"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-Ottiene il punto di interruzione in sospeso da cui è stato creato il punto di interruzione associato specificato.
+Ottiene il punto di interruzione in sospeso dal quale è stato creato il punto di interruzione associato specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ int GetPendingBreakpoint( 
 
 ## <a name="parameters"></a>Parametri
 `ppPendingBreakpoint`\
-[fuori] Restituisce l'oggetto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il punto di interruzione in sospeso utilizzato per creare questo punto di interruzione associato.
+out Restituisce l'oggetto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il punto di interruzione in sospeso utilizzato per creare questo punto di interruzione associato.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
@@ -51,7 +51,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 Un punto di interruzione in sospeso può essere considerato come una raccolta di tutte le informazioni necessarie per associare un punto di interruzione al codice che può essere applicato a uno o più programmi.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come `CBoundBreakpoint` implementare questo metodo per un oggetto semplice che espone il [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un `CBoundBreakpoint` oggetto semplice che espone l'interfaccia [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(

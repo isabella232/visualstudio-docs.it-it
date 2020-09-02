@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566774"
 ---
 # <a name="settings-page-project-designer"></a>Pagina Impostazioni, Creazione progetti
@@ -65,7 +65,7 @@ Per altre informazioni sulle classi helper delle impostazioni, vedere [Gestire l
 
 La **griglia Impostazioni** consente di configurare le impostazioni dell'applicazione. La griglia include le colonne seguenti:
 
-**Nome**
+**Name**
 
 Immettere il nome dell'impostazione dell'applicazione in questo campo.
 

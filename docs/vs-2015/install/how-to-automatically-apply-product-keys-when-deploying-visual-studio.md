@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186002"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Procedura: applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio
@@ -32,7 +32,7 @@ Per la documentazione più recente di Visual Studio, vedere [Applicare automatic
  `vs_enterprise.exe [any other setup parameters] /ProductKey AAAAABBBBBCCCCCDDDDDDEEEEEE`
 
 ## <a name="apply-the-license-after-installation"></a>Applicare la licenza dopo l'installazione
- È possibile attivare una versione installata di Visual Studio con un codice Product Key tramite l'utilità storePID.exe nei computer di destinazione in modalità invisibile all'utente. StorePID.exe è un programma di utilità che viene installato con Visual Studio in **\<unità>:\\\Programmi (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
+ È possibile attivare una versione installata di Visual Studio con un codice Product Key tramite l'utilità storePID.exe nei computer di destinazione in modalità invisibile all'utente. StorePID.exe è un programma di utilità che viene installato con Visual Studio in ** \<drive> : \\ \Program Files (x86) \Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
 
  Eseguire storePID.exe con privilegi elevati, usando un agente System Center o un prompt dei comandi con privilegi elevati, seguito dal codice Product Key (con i trattini) e il codice Microsoft Product Code (MPC). Assicurarsi di includere i trattini nel codice Product Key.
 
@@ -60,4 +60,4 @@ Se StorePID.exe ha applicato correttamente il codice Product Key, verrà restitu
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Installare Visual Studio](../install/install-visual-studio-2015.md)
+- [Installa Visual Studio](../install/install-visual-studio-2015.md)

@@ -8,13 +8,13 @@ ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
 ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75405470"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Risoluzione dei problemi: Updater ha errori durante il recupero delle informazioni
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Risoluzione dei problemi: Errori durante il recupero di informazioni sugli aggiornamenti
 
 In rare occasioni può essere visualizzato il messaggio di errore "Si è verificato un errore durante il recupero delle informazioni sugli aggiornamenti" quando si tenta di [aggiornare Visual Studio per Mac](update.md). In questo caso, provare i passaggi seguenti per risolvere il problema:
 
@@ -25,4 +25,4 @@ In rare occasioni può essere visualizzato il messaggio di errore "Si è verific
   - Il programma di installazione aggiornerà i componenti installati nel computer.
   - Eseguendo di nuovo il programma di installazione sarà anche possibile installare eventuali componenti mancanti, non installati in precedenza.
 - È inoltre possibile provare a cancellare i download memorizzati nella cache eliminando il file che si trova in `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml`.
-- Se si utilizza una versione precedente di Visual Studio per Mac, `VisualStudio` è possibile che nella directory siano disponibili altri numeri di versione. Eliminare `index.xml` anche il file in questi percorsi.
+- Se si utilizza una versione precedente di Visual Studio per Mac, è possibile che nella directory siano presenti altri numeri di versione `VisualStudio` . Eliminare il `index.xml` file anche in questi percorsi.

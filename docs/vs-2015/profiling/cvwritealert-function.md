@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f5c428b471c576c1ca15b73a1c8b2ccfa2cc7b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551221"
 ---
 # <a name="cvwritealert-function"></a>Funzione CvWriteAlert
@@ -78,4 +78,4 @@ HRESULT CvWriteAlertVA(
  **ANSI:** CvWriteAlertA, CvWriteAlertVA  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alla libreria C++](../profiling/cpp-library-reference.md)
+ [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

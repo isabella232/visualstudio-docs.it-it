@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565604"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
@@ -68,7 +68,7 @@ Selezionare un riferimento Web nell'elenco **Riferimenti** e fare clic su questo
 
 È possibile digitare il proprio spazio dei nomi in questa casella e fare clic su **Aggiungi importazione utente** per aggiungerlo all'elenco degli spazi dei nomi.
 
-È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nello spazio dei nomi *dell'alias*=*namespace*di formato . Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nel formato *alias* = *spazio dei nomi*. Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Aggiungi importazione utente**
 
@@ -91,5 +91,5 @@ Selezionare uno spazio dei nomi specificato dall'utente nell'elenco degli spazi 
 ## <a name="see-also"></a>Vedere anche
 
 - [Gestione dei riferimenti in un progetto](../../ide/managing-references-in-a-project.md)
-- [Procedura: aggiungere o rimuovere spazi dei nomi importati (Visual Basic)How to: Add or Remove Imported Namespaces (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Procedura: aggiungere o rimuovere spazi dei nomi importati (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Istruzione Imports (spazio dei nomi XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

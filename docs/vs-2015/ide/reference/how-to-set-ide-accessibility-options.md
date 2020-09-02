@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: afff9e06c4333f4910e22e963d24090c1d1e4c6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651326"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procedura: impostare le opzioni di accessibilità IDE
@@ -26,7 +26,7 @@ ms.locfileid: "72651326"
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] supporta anche i layout di tastiera Dvorak, che consentono di accedere più facilmente ai caratteri usati con maggiore frequenza. È anche possibile personalizzare le combinazioni di tasti predefinite di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editor, finestre di dialogo e finestre degli strumenti
  Per impostazione predefinita, le finestre di dialogo e le finestre degli strumenti in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano le stesse dimensioni di carattere e gli stessi colori del sistema operativo. Le impostazioni relative ai colori per il frame dell'IDE, le finestre di dialogo, le barre degli strumenti e le finestre degli strumenti si basano su una combinazione di colori: chiara o scura. È possibile cambiare il tema colori corrente in [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md).
@@ -50,7 +50,7 @@ ms.locfileid: "72651326"
 
      Per modificare le dimensioni dei caratteri del testo in un editor, scegliere **Editor di testo**.
 
-     Per modificare le dimensioni dei caratteri del testo nelle finestre degli strumenti basate su testo, scegliere **[Tutte le finestre degli strumenti di testo]** .
+     Per modificare le dimensioni dei caratteri del testo nelle finestre degli strumenti basate su testo, scegliere **[Tutte le finestre degli strumenti di testo]**.
 
      Per modificare le dimensioni dei caratteri del testo delle descrizioni comandi in un editor, scegliere **Descrizione comando editor**.
 
@@ -71,7 +71,7 @@ ms.locfileid: "72651326"
  È anche possibile modificare i colori predefiniti per il testo, gli indicatori di margine, lo spazio e gli elementi di codice nell'editor.
 
 > [!NOTE]
-> Per usare colori a contrasto elevato per tutte le finestre delle applicazioni del sistema operativo, premere <strong>ALT di sinistra +</strong> **MAIUSC di sinistra + STAMP**. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] è aperto, chiuderlo e riaprirlo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per implementare correttamente i colori a contrasto elevato.
+> Per usare colori a contrasto elevato per tutte le finestre delle applicazioni del sistema operativo, premere <strong>ALT di sinistra +</strong>**MAIUSC di sinistra + STAMP**. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] è aperto, chiuderlo e riaprirlo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per implementare correttamente i colori a contrasto elevato.
 
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Per modificare il colore degli elementi nell'editor
 
@@ -96,7 +96,7 @@ ms.locfileid: "72651326"
 
 2. Nella finestra di dialogo **Personalizza** fare clic sulla scheda **Comandi**.
 
-3. Selezionare **Barra degli strumenti** e quindi scegliere il nome della barra degli strumenti che contiene il pulsante per il quale si vuole visualizzare testo.
+3. Selezionare **barra degli strumenti** e quindi scegliere il nome della barra degli strumenti contenente il pulsante per il quale si desidera visualizzare il testo.
 
 4. Selezionare il comando che si vuole modificare nell'elenco.
 

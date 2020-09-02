@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550912"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Introduzione a PTVS: Modifica del codice
@@ -34,7 +34,7 @@ from math import sin
   
  Durante la scrittura del codice, se si usa un identificatore che non è associato ma è presente nelle librerie, PTVS visualizza un popup con una correzione rapida per aggiungere l'istruzione di importazione appropriata necessaria.  Se ad esempio è stato digitato `cos`, viene visualizzato **import from math**.  
   
- È possibile usare un frammento di codice per generare il codice.  Scegliere IntelliSense dal menu Modifica, quindi Inserisci frammento di codice.  Scegliere Python e quindi def.  Chiamare la funzione `make_dot_string` e aggiungere un parametro `x`.  È ora possibile aggiungere le asserzioni al file per lo sviluppo basato su test e si noterà che PTVS è già in grado di visualizzare la nuova funzione negli elenchi di completamento.  
+ È possibile usare un frammento di codice per generare il codice.  Scegliere IntelliSense dal menu Modifica, quindi Inserisci frammento di codice.  A questo punto, scegliere Python e quindi def.  Chiamare la funzione `make_dot_string` e aggiungere un parametro `x` .  È ora possibile aggiungere le asserzioni al file per lo sviluppo basato su test e si noterà che PTVS è già in grado di visualizzare la nuova funzione negli elenchi di completamento.  
   
 ```python  
 assert make_dot_string(90) == '          o'  

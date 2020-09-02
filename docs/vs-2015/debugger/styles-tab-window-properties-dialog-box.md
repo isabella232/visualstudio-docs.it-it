@@ -12,20 +12,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6ddde5bdb6064b7012157c04d156ed225b5763a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197490"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Scheda Stili, finestra di dialogo Proprietà finestra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usare la **stili** pressione di tab per visualizzare gli stili applicati per la finestra selezionata. Per visualizzare il [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
+Utilizzare la scheda **stili** per visualizzare gli stili applicati alla finestra selezionata. Per visualizzare la finestra di [dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo sulla finestra di [visualizzazione di Windows](../debugger/windows-view.md) . Selezionare un nodo della finestra nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .  
   
- Le impostazioni seguenti sono disponibili sul **stili** scheda:  
+ Nella scheda **stili** sono disponibili le impostazioni seguenti:  
   
 |Voce|Descrizione|  
 |-----------|-----------------|  
-|**Stili di finestra**|Una combinazione di finestra codici di stile e gli stili di controllo, se applicabile.|  
-|**Stili estesi**|Una combinazione dei codici di stile di finestra esteso.|
+|**Stili di finestra**|Combinazione di codici di stile della finestra e stili di controllo, se applicabile.|  
+|**Stili estesi**|Combinazione di codici di stile della finestra estesa.|

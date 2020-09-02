@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302574"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312743"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto Azure di Visual Studio per l'uso di più configurazioni del servizio
 
@@ -41,13 +41,13 @@ Consente di selezionare il file `ServiceConfiguration.*.cscfg` interessato dalle
 
 Impostare la proprietà **Conteggio istanze** sul numero di istanze che il servizio deve eseguire per questo ruolo.
 
-Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande**o **Molto grande**.  Per ulteriori informazioni, vedere Dimensioni per i [servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
+Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande**o **Molto grande**.  Per ulteriori informazioni, vedere [dimensioni dei servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Startup Action (Azione di avvio) (solo ruolo Web)
 
 Impostare questa proprietà per specificare che in Visual Studio deve essere avviato un Web browser per gli endpoint HTTP o HTTPS o entrambi quando si inizia il debug.
 
-L'opzione **Endpoint HTTPS** è disponibile solo se è già stato definito un endpoint HTTPS per il ruolo. È possibile definire un endpoint HTTPS nella pagina delle proprietà **Endpoint** .
+L'opzione **endpoint HTTPS** è disponibile solo se è già stato definito un endpoint HTTPS per il ruolo. È possibile definire un endpoint HTTPS nella pagina delle proprietà **Endpoint** .
 
 Se è già stato aggiunto un endpoint HTTPS, l'opzione Endpoint HTTPS è abilitata per impostazione predefinita e Visual Studio avvia un browser per questo endpoint all'inizio del debug in aggiunta a un browser per l'endpoint HTTP, presupponendo che entrambe le opzioni di avvio siano abilitate.
 
@@ -55,7 +55,7 @@ Se è già stato aggiunto un endpoint HTTPS, l'opzione Endpoint HTTPS è abilita
 
 Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il progetto di servizio cloud di Azure e l'account di archiviazione sono impostati per usare l'emulatore di archiviazione locale. Quando si è pronti a eseguire la distribuzione in Azure, è possibile selezionare il pulsante del generatore (**…**) per usare in sostituzione l’archiviazione di Azure. È possibile trasferire i dati di diagnostica nell'account di archiviazione a richiesta o a intervalli pianificati automaticamente. Per altre informazioni sulla diagnostica di Azure, vedere [Abilitazione della diagnostica nei servizi cloud e nelle macchine virtuali di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Pagina Impostazioni
+## <a name="settings-page"></a>Pagina delle impostazioni
 
 Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](/previous-versions/azure/dn602775(v=azure.11)), in particolare il metodo [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)).
 

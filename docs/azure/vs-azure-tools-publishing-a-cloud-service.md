@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301741"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313302"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Pubblicazione di un servizio cloud con Visual Studio
 
@@ -67,13 +67,13 @@ Se l'infrastruttura back-end dell'app è stabile, ma i ruoli Web richiedono aggi
 
 ### <a name="requirements-for-using-web-deploy"></a>Requisiti per l'uso di Distribuzione Web
 
-- **Solo**a scopo di sviluppo e test : le modifiche vengono apportate direttamente alla macchina virtuale in cui è in esecuzione il ruolo Web. Se è necessario riciclare questa macchina virtuale, le modifiche andranno perse perché il pacchetto originale pubblicato viene utilizzato per ricreare la macchina virtuale per il ruolo. Pubblicare nuovamente l'applicazione per ottenere le modifiche più recenti per il ruolo Web.
+- **Solo a scopo di sviluppo e test**: le modifiche vengono apportate direttamente alla macchina virtuale in cui è in esecuzione il ruolo Web. Se è necessario riciclare questa macchina virtuale, le modifiche andranno perse perché il pacchetto originale pubblicato viene utilizzato per ricreare la macchina virtuale per il ruolo. Pubblicare nuovamente l'applicazione per ottenere le modifiche più recenti per il ruolo Web.
 
-- Solo i **ruoli Web possono essere aggiornati:** i ruoli di lavoro non possono essere aggiornati. Inoltre, non è possibile aggiornare `RoleEntryPoint` in `web role.cs`.
+- **È possibile aggiornare solo i ruoli Web**: i ruoli di lavoro non possono essere aggiornati. Inoltre, non è possibile aggiornare `RoleEntryPoint` in `web role.cs`.
 
-- **Può supportare solo una singola istanza di un ruolo Web:** non è possibile avere più istanze di qualsiasi ruolo Web nell'ambiente di distribuzione. Tuttavia, sono supportati più ruoli web con una sola istanza.
+- **Può supportare solo una singola istanza di un ruolo Web**: non è possibile avere più istanze di qualsiasi ruolo Web nell'ambiente di distribuzione. Tuttavia, sono supportati più ruoli web con una sola istanza.
 
-- **Abilita connessioni desktop remoto:** questo requisito consente a Distribuzione Web di utilizzare l'utente e la password per connettersi alla macchina virtuale per distribuire le modifiche al server che esegue Internet Information Services (IIS). Inoltre, potrebbe essere necessario connettersi alla macchina virtuale per aggiungere un certificato attendibile a IIS su questa macchina virtuale. Con questo certificato si ha la certezza che la connessione remota per IIS usata da Distribuzione Web sia protetta.
+- **Abilita connessioni Desktop remoto**: questo requisito consente distribuzione Web di usare l'utente e la password per connettersi alla macchina virtuale per distribuire le modifiche al server che esegue Internet Information Services (IIS). Inoltre, potrebbe essere necessario connettersi alla macchina virtuale per aggiungere un certificato attendibile a IIS su questa macchina virtuale. Con questo certificato si ha la certezza che la connessione remota per IIS usata da Distribuzione Web sia protetta.
 
 Si presuppone che si usi la procedura guidata **Pubblica l'applicazione Azure**.
 
@@ -136,10 +136,10 @@ Potrebbe essere necessario includere file specifici nel pacchetto di servizio in
    c. Scegliere il riferimento che si vuole aggiungere e quindi fare clic su **OK**. Il riferimento viene aggiunto all'elenco nella cartella **Riferimenti**.
    d. Aprire il menu di scelta rapida per l'assembly aggiunto, quindi scegliere **Proprietà**. Verrà visualizzata la finestra **Proprietà**.
 
-      Per includere questo assembly nel pacchetto del servizio, **nell'elenco Copia locale** scegliere **True**.
+      Per includere questo assembly nel pacchetto del servizio, nell' **elenco Copia localmente** scegliere **true**.
 1. In **Esplora soluzioni** aprire il nodo del progetto in cui manca l'assembly a cui si fa riferimento.
 
-1. Per aggiungere l'assembly al progetto, aprire il menu di scelta rapida per la cartella **Riferimenti**, quindi scegliere **Aggiungi riferimento**. Viene visualizzata la finestra di dialogo **Aggiungi riferimento.**
+1. Per aggiungere l'assembly al progetto, aprire il menu di scelta rapida per la cartella **Riferimenti**, quindi scegliere **Aggiungi riferimento**. Verrà visualizzata la finestra di dialogo **Aggiungi riferimento** .
 
 1. Scegliere il riferimento da aggiungere, quindi scegliere **OK**.
 

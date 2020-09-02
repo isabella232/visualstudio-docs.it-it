@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146117"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procedura: Escludere o includere funzioni brevi nella strumentazione
@@ -29,11 +29,11 @@ Per impostazione predefinita, gli strumenti di profilatura escludono le *funzion
   
 1. In **Esplora prestazioni** selezionare **Sessione prestazioni** e quindi fare clic con il pulsante destro del mouse e selezionare **Proprietà**.  
   
-     Verrà visualizzata la finestra di dialogo **Pagine delle proprietà**.  
+     Viene visualizzata la finestra di dialogo **Pagine delle proprietà**.  
   
 2. In **Pagine delle proprietà** fare clic sulle proprietà di **Strumentazione**.  
   
-3. Per escludere le funzioni brevi dalla strumentazione, selezionare **Escludi funzioni brevi da strumentazione**. Questa è l'impostazione predefinita.  
+3. Per escludere le funzioni brevi dalla strumentazione, selezionare **Escludi funzioni brevi da strumentazione**. Si tratta dell'impostazione predefinita.  
   
      -oppure-  
   
@@ -42,5 +42,5 @@ Per impostazione predefinita, gli strumenti di profilatura escludono le *funzion
 4. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   
+ [Controllo della raccolta dati](../profiling/controlling-data-collection.md)   
  [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)

@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 025ba2eb95514efc740d1f8f7b3bf674d6bf237a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645640"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
@@ -59,9 +59,9 @@ ms.locfileid: "72645640"
 ## <a name="find-and-replace-control"></a>Controllo Trova e sostituisci
  Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore destro della finestra dell'editor di codice. Il controllo **Trova e sostituisci** evidenzia immediatamente tutte le occorrenze della stringa di ricerca specificata nel documento corrente. È possibile spostarsi da un'occorrenza all'altra scegliendo il pulsante **Trova successivo** o **Trova precedente** nel controllo di ricerca.
 
- È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto**.
+ È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto** .
 
- Per modificare il colore di evidenziazione per le corrispondenze, scegliere il menu **Strumenti**, selezionare **Opzioni**, quindi scegliere **Ambiente** e selezionare **Tipi di carattere e colori**. Nell'elenco **Show settings for** (Mostra impostazioni per), selezionare **Editor di testo**, quindi nell'elenco **Elementi visualizzati**, selezionare **Trova evidenziato (estensione)** .
+ Per modificare il colore di evidenziazione per le corrispondenze, scegliere il menu **Strumenti**, selezionare **Opzioni**, quindi scegliere **Ambiente** e selezionare **Tipi di carattere e colori**. Nell'elenco **Show settings for** (Mostra impostazioni per), selezionare **Editor di testo**, quindi nell'elenco **Elementi visualizzati**, selezionare **Trova evidenziato (estensione)**.
 
 ### <a name="searching-tool-windows"></a>Finestre dello strumento di ricerca
  È possibile utilizzare il controllo **Trova** nelle finestre del codice o del testo, quali le finestre **Output** e le finestre **Risultati ricerca**, scegliendo **Trova e sostituisci** dal menu **Modifica** o (CTRL + F).
@@ -71,10 +71,10 @@ ms.locfileid: "72645640"
 ## <a name="findreplace-in-files"></a>Ricerca/sostituzione nei file
  **Find/Replace in Files** (Trova/Sostituisci nei file) funziona come il controllo **Trova e sostituisci**, con la differenza che è possibile definire un ambito per la ricerca. Non solo è possibile cercare il file aperto corrente nell'editor, ma anche tutti i documenti aperti, l'intera soluzione, il progetto corrente e gli insiemi di cartelle selezionati. È inoltre possibile eseguire la ricerca in base all'estensione del nome file. Per accedere alla finestra di dialogo **Find/Replace in Files** (Trova/Sostituisci nei file) scegliere **Trova e sostituisci** dal menu **Modifica** (o CTRL + MAIUSC + F).
 
- Quando si sceglie **Find All**  (Trova tutti), si apre una finestra **Risultati ricerca** che elenca le corrispondenze della ricerca. Selezionando un risultato nell'elenco viene visualizzato il file associato ed evidenziata la corrispondenza. Se il file non è già aperto per la modifica, viene aperto in una scheda di anteprima a destra della finestra scheda. È possibile utilizzare il controllo **Trova** per eseguire la ricerca nell'elenco dei **Risultati ricerca**.
+ Quando si sceglie **Find All ** (Trova tutti), si apre una finestra **Risultati ricerca** che elenca le corrispondenze della ricerca. Selezionando un risultato nell'elenco viene visualizzato il file associato ed evidenziata la corrispondenza. Se il file non è già aperto per la modifica, viene aperto in una scheda di anteprima a destra della finestra scheda. È possibile utilizzare il controllo **Trova** per eseguire la ricerca nell'elenco dei **Risultati ricerca**.
 
 ### <a name="creating-custom-search-folder-sets"></a>Creazione di set personalizzati di cartelle di ricerca
- È possibile definire un ambito di ricerca scegliendo il pulsante **Seleziona cartelle di ricerca** (simile a **...** ) accanto alla casella **Cerca in**. Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca ed è possibile salvare la specifica in modo da poterla riutilizzare successivamente. È possibile specificare le cartelle in un computer remoto solo se è stato eseguito il mapping della relativa unità nel computer locale.
+ È possibile definire un ambito di ricerca scegliendo il pulsante **Seleziona cartelle di ricerca** (simile a **...**) accanto alla casella **Cerca in**. Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca ed è possibile salvare la specifica in modo da poterla riutilizzare successivamente. È possibile specificare le cartelle in un computer remoto solo se è stato eseguito il mapping della relativa unità nel computer locale.
 
 ### <a name="creating-custom-component-sets"></a>Creazione di set di componenti personalizzati
  È possibile definire set di componenti nell'ambito di ricerca scegliendo il pulsante **Modifica insieme di componenti personalizzato** accanto alla casella **Cerca in**. È possibile specificare i componenti .NET o COM installati, i progetti Visual Studio che sono inclusi nella soluzione, o qualunque assembly o libreria dei tipi (.dll, .tlb, .olb, .exe o .ocx). Per individuare i riferimenti, selezionare la casella **Cerca in riferimenti**.

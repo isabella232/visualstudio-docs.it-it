@@ -12,20 +12,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e3940097ac53255b7bdd2c12c9ccc64605016e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62584905"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Verifica dei sottotipi di un progetto in fase di esecuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzati deve includere logica da cercare in modo che si può arrestare normalmente se non è presente il sottotipo di sottotipo. La procedura seguente viene illustrato come verificare la presenza di un sottotipo specificato.  
+Un VSPackage che dipende da un sottotipo di progetto personalizzato deve includere la logica per cercare tale sottotipo, in modo che possa avere esito negativo correttamente se il sottotipo non è presente. Nella procedura riportata di seguito viene illustrato come verificare la presenza di un sottotipo specificato.  
   
 ### <a name="to-verify-the-presence-of-a-subtype"></a>Per verificare la presenza di un sottotipo  
   
-1. Ottenere la gerarchia del progetto dagli oggetti di progetto e soluzione come un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto aggiungendo il codice seguente al pacchetto VSPackage.  
+1. Ottenere la gerarchia del progetto dagli oggetti del progetto e della soluzione come <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto aggiungendo il codice seguente al pacchetto VSPackage.  
   
     ```  
     EnvDTE.DTE dte;  
@@ -42,7 +42,7 @@ Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzati de
   
     ```  
   
-2. Eseguire il cast della gerarchia per il <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interfaccia.  
+2. Eseguire il cast della gerarchia all' <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interfaccia.  
   
     ```  
     IVsAggregatableProjectCorrected AP;  
@@ -50,7 +50,7 @@ Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzati de
   
     ```  
   
-3. Ottiene l'elenco di GUID del tipo di progetto richiamando il <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.  
+3. Ottenere l'elenco dei GUID del tipo di progetto richiamando <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> .  
   
     ```  
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();  
@@ -70,5 +70,5 @@ Un pacchetto VSPackage che dipende da un sottotipo di progetto personalizzati de
   
 ## <a name="see-also"></a>Vedere anche  
  [Sottotipi di progetto](../extensibility/internals/project-subtypes.md)   
- [Progettazione di sottotipi di progetto](../extensibility/internals/project-subtypes-design.md)   
+ [Progettazione sottotipi di progetto](../extensibility/internals/project-subtypes-design.md)   
  [Proprietà e metodi estesi dai sottotipi di progetto](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

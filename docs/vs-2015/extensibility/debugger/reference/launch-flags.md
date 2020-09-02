@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f209ed773a72c3925661bd81ecfe2685408b3189
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147456"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
+# <a name="launch_flags"></a>LAUNCH_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Specifica i flag di avvio del debug.  
@@ -45,28 +45,28 @@ public enum enum_LAUNCH_FLAGS { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  LAUNCH_DEBUG  
- Avvia il processo per eseguire il debug.  
+ Avvia il processo di debug.  
   
  LAUNCH_NODEBUG  
  Avvia il processo senza eseguirne il debug.  
   
  LAUNCH_ENABLE_ENC  
- DEPRECATO, NON USARE.  
+ DEPRECATO, NON UTILIZZARE.  
   
  LAUNCH_MERGE_ENV  
- Avvia il processo e unisce l'ambiente con l'host che esegue l'applicazione.  
+ Avvia il processo e unisce l'ambiente all'host di avvio.  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono passati come argomento per il [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono passati come argomento al metodo [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) .  
   
- Questi flag possono essere combinati con un bit per bit `OR`.  
+ Questi flag possono essere combinati con un bit per bit `OR` .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ffff52722fe27f2761307dcb2acd874d3849fdbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72647017"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Set di regole consigliate miste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le regole consigliate di Microsoft sono incentrate sui problemi più comuni e C++ critici nei progetti che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri errori di logica e progettazione importanti. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per C++ i progetti che supportano Common Language Runtime. Questo set di regole è progettato per essere configurato con la Visual Studio Professional Edition e versioni successive.
+Le regole consigliate di Microsoft sono incentrate sui problemi più comuni e critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri errori di logica e progettazione importanti. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti C++ che supportano Common Language Runtime. Questo set di regole è progettato per essere configurato con la Visual Studio Professional Edition e versioni successive.
 
 |                                                              Regola                                                              |                                                             Descrizione                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -90,7 +90,7 @@ Le regole consigliate di Microsoft sono incentrate sui problemi più comuni e C+
 |                                               [C6303](../code-quality/c6303.md)                                                |                                      Argomento stringa di caratteri wide non valido per formattare la funzione                                      |
 |                                               [C6305](../code-quality/c6305.md)                                                |                                                    Uso dimensione e conteggio non corrispondente                                                    |
 |                                               [C6306](../code-quality/c6306.md)                                                |                                              Chiamata di funzione dell'argomento variabile non corretto                                              |
-|                                               [C6308](../code-quality/c6308.md)                                                |                                                            Perdita di realloc                                                             |
+|                                               [C6306](../code-quality/c6308.md)                                                |                                                            Perdita di realloc                                                             |
 |                                               [C6310](../code-quality/c6310.md)                                                |                                                  Costante filtro eccezioni non valida                                                  |
 |                                               [C6312](../code-quality/c6312.md)                                                |                                                  Ciclo di esecuzione dell'eccezione continua                                                  |
 |                                               [C6314](../code-quality/c6314.md)                                                |                                                        Precedenza or bit per bit                                                        |
@@ -156,7 +156,7 @@ Le regole consigliate di Microsoft sono incentrate sui problemi più comuni e C+
 |                                              [C28020](../code-quality/c28020.md)                                               |                                               L'espressione non è true in questa chiamata                                               |
 |                                              [C28021](../code-quality/c28021.md)                                               |                                           Il parametro annotato deve essere un puntatore                                           |
 |                                              [C28022](../code-quality/c28022.md)                                               |            Le classi di funzioni in questa funzione non corrispondono alle classi di funzioni nel typedef utilizzato per definirlo.            |
-|                                              [C28023](../code-quality/c28023.md)                                               |         La funzione assegnata o passata deve avere un \_Function_class annotazione \_ per almeno una delle classi         |
+|                                              [C28023](../code-quality/c28023.md)                                               |         La funzione assegnata o passata deve avere un' \_ \_ annotazione Function_class per almeno una delle classi         |
 |                                              [C28024](../code-quality/c28024.md)                                               | Il puntatore a funzione assegnato è annotato con la classe Function, che non è contenuta nell'elenco delle classi di funzioni. |
 |                                              [C28039](../code-quality/c28039.md)                                               |                                     Il tipo di parametro effettivo deve corrispondere esattamente al tipo                                      |
 |                                              [C28112](../code-quality/c28112.md)                                               |            Una variabile A cui si accede tramite una funzione Interlocked deve essere sempre accessibile tramite una funzione Interlocked.            |

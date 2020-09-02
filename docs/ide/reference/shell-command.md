@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565877"
 ---
 # <a name="shell-command"></a>Comando Shell
@@ -41,20 +41,20 @@ Obbligatorio. Percorso e nome del file da eseguire o del documento da aprire. È
 
 `args`
 
-Facoltativa. Argomenti da passare al programma richiamato.
+facoltativo. Argomenti da passare al programma richiamato.
 
-## <a name="switches"></a>Switch
+## <a name="switches"></a>Commutatori
 /commandwindow [oppure] /command [oppure] /c [oppure] /cmd
 
-Facoltativa. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
+facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
 
 /dir:`folder` [oppure] /d: `folder`
 
-Facoltativa. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
+facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
 
 /outputwindow [oppure] /output [oppure] /out [oppure] /o
 
-Facoltativa. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
+facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
 
 ## <a name="remarks"></a>Osservazioni
 Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.
@@ -86,8 +86,8 @@ Il comando seguente usa xcopy.exe per copiare il file `MyText.txt` nella cartell
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Finestra Output](../../ide/reference/output-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Finestra di output](../../ide/reference/output-window.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Next | Microsoft Docs
+title: 'IEnumDebugCodeContexts2:: Next | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 011c3c53276445924deb9be5f7a540929f3f8a13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551814"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Restituisce il set successivo di elementi dall'enumerazione.  
+Restituisce il successivo set di elementi dall'enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,16 +44,16 @@ int Next(
   
 #### <a name="parameters"></a>Parametri  
  `celt`  
- [in] Il numero di elementi da recuperare. Specifica inoltre la dimensione massima del `rgelt` matrice.  
+ [in] Numero di elementi da recuperare. Specifica inoltre la dimensione massima della `rgelt` matrice.  
   
  `rgelt`  
- [in, out] Matrice di [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) elementi da compilare.  
+ [in, out] Matrice di elementi [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) da compilare.  
   
  `pceltFetched`  
- [out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.  
+ out Restituisce il numero di elementi effettivamente restituiti in `rgelt` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è possibile che venga restituito un numero di elementi inferiore al numero richiesto; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)   

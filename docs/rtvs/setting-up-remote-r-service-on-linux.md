@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62809557"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service per Linux
@@ -22,9 +22,9 @@ Remote R Service per Linux è attualmente disponibile in un pacchetto come rtvs-
 
 Dopo aver configurato il computer remoto, i passaggi seguenti consentono di connettere R Tools for Visual Studio (RTVS) a tale servizio:
 
-1. Selezionare **R Tools** > **Windows** > **Workspaces** per aprire la finestra **Aree di lavoro.**
+1. Selezionare **R Tools**  >  **Windows**  >  **area di lavoro** Windows per aprire la finestra **aree di lavoro** .
 1. Selezionare **Aggiungi connessione**.
-1. Assegnare un nome alla connessione e specificare l'URL, ad esempio `https://localhost:5444` (sottosistema Windows per Linux) o `https://public-ip:5444` (contenitore di Azure). Selezionare **Salva** al termine.
+1. Assegnare un nome alla connessione e specificare l'URL, ad esempio `https://localhost:5444` (sottosistema Windows per Linux) o `https://public-ip:5444` (contenitore di Azure). Al termine, selezionare **Salva**.
 1. Selezionare l'icona della connessione o fare doppio clic sull'elemento della connessione.
 1. Fornire le credenziali di accesso. Al nome utente deve essere aggiunto il prefisso `<<unix>>\`, come in `<<unix>>\ruser1`, richiesto per tutte le connessioni a computer remoti Linux.
 1. Se si usa un certificato autofirmato, potrebbe essere visualizzato un avviso. Il messaggio include istruzioni per risolvere l'avviso.
@@ -87,7 +87,7 @@ In ogni caso, nel computer remoto deve essere installato uno degli interpreti R 
 
 #### <a name="create-a-vm"></a>Creare una macchina virtuale
 
-1. Accedere al [portale](https://portal.azure.com)di Azure .
+1. Accedere al [portale di Azure](https://portal.azure.com).
 1. Passare a Macchine virtuali e quindi selezionare **Aggiungi**.
 1. Nell'elenco delle immagini di macchine virtuali disponibili cercare e selezionare una delle voci seguenti:
     - Server Ubuntu: `Ubuntu Server 16.04 LTS`
@@ -97,14 +97,14 @@ In ogni caso, nel computer remoto deve essere installato uno degli interpreti R 
 1. Apportare le altre modifiche eventualmente desiderate alla configurazione della macchina virtuale.
 1. Scegliere una dimensione di macchina virtuale, verificare la configurazione e selezionare **Crea**. Dopo aver creato la macchina virtuale, procedere alla sezione successiva.
 
-#### <a name="configure-the-vm"></a>Configurare la VM
+#### <a name="configure-the-vm"></a>Configurare la macchina virtuale
 
 1. Nella sezione **Rete** della macchina virtuale aggiungere 5444 come porta in ingresso consentita. Per usare una porta diversa, modificare l'impostazione nel file di configurazione del daemon RTVS (*/etc/rtvs/rtvsd.config.json*).
 1. (Facoltativo) Impostare un nome DNS. È anche possibile usare l'indirizzo IP.
 1. Connettersi alla macchina virtuale con un client SSH, ad esempio PuTTY per WIndows.
 1. Seguire le istruzioni sopra riportate per un [computer Ubuntu fisico](#physical-ubuntu-computer).
 
-### <a name="windows-subsystem-for-linux-wsl"></a>Sottosistema Windows per Linux (WSL)
+### <a name="windows-subsystem-for-linux-wsl"></a>Sottosistema di Windows per Linux (WSL)
 
 1. Seguire le istruzioni di installazione del sottosistema Windows per Linux per [Windows 10](/windows/wsl/install-win10#install-the-windows-subsystem-for-linux) o [Windows Server](/windows/wsl/install-on-server#enable-the-windows-subsystem-for-linux-wsl).
 1. Avviare Bash in Windows e seguire le istruzioni precedenti per un [computer Ubuntu fisico](#physical-ubuntu-computer) con una eccezione. Nel passaggio 3 avviare il servizio con il comando `rtvsd`, perché il sottosistema Windows per Linux attualmente non supporta le interfacce systemd/systemctl.
