@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 319afb810ba755d0201d3edaebcb06a493b59047
-ms.sourcegitcommit: c2b3bf0de44cd379fd1ad5110385021d0ec950ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86301447"
 ---
 # <a name="signfile-task"></a>SignFile (attività)
@@ -45,7 +45,7 @@ Consente di firmare il file specificato usando il certificato specificato.
 |`TimestampUrl`|Parametro `String` facoltativo.<br /><br /> Specifica l'URL del server di timestamp.|
 |`TargetFrameworkVersion`|La versione di.NET Framework che viene usata per la destinazione.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
  Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base Task](../msbuild/task-base-class.md).
 

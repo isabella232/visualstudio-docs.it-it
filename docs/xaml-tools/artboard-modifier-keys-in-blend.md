@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329584"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Tasti di modifica della tavola da disegno in Blend
@@ -39,8 +39,8 @@ Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertant
 |Spostarsi tra i documenti aperti|Premere **Ctrl**la + **scheda** CTRL|
 |Aprire il pannello **Asset**|Premere **Ctrl**il + **punto** CTRL|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Scelte rapide da tastiera](../xaml-tools/keyboard-shortcuts-in-blend.md)
+- [Tasti di scelta rapida](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [Tasti di modifica strumento Penna](../xaml-tools/pen-tool-modifier-keys-in-blend.md)
 - [Tasti di modifica strumento Selezione diretta](../xaml-tools/direct-selection-tool-modifier-keys-in-blend.md)

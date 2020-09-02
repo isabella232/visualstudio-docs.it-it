@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Utilizzare la finestra Espressioni di controllo parallelo | Microsoft Docs'
+title: 'Procedura: usare la finestra espressione di controllo in parallelo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697488"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>Procedura: Usare la finestra Espressione di controllo in parallelo
+# <a name="how-to-use-the-parallel-watch-window"></a>Procedura: utilizzare la finestra Espressione di controllo in parallelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti vengono visualizzate nella finestra **Espressione di controllo in parallelo**:  
@@ -37,9 +37,9 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 - Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.  
   
   > [!TIP]
-  > È necessario aprire la **l'attività parallela** finestra per visualizzare le informazioni sull'attività nel **espressioni di controllo parallela** finestra.  
+  > È necessario aprire la finestra **attività in parallelo** per visualizzare le informazioni sull'attività nella finestra espressione di controllo in **parallelo** .  
   
-- Il  **\<Aggiungi espressione di controllo >** colonna, in cui è possibile immettere espressioni di controllo.  
+- **\<Add Watch>** Colonna in cui è possibile immettere espressioni da controllare.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -53,19 +53,19 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
   
 ### <a name="to-add-a-watch-expression"></a>Per aggiungere un'espressione di controllo  
   
-- Selezionare  **\<Aggiungi espressione di controllo >** e quindi specificare un'espressione di controllo.  
+- Selezionare **\<Add Watch>** e quindi specificare un'espressione di controllo.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Per aggiungere o rimuovere flag che contrassegnano un thread  
   
-- Selezionare la colonna del contrassegno per la riga o aprire il menu di scelta rapida per il thread e scegliere **Flag** oppure **Rimuovi flag**.  
+- Selezionare la colonna flag per la riga oppure aprire il menu di scelta rapida per il thread e scegliere **flag o Rimuovi** **flag**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Per visualizzare solo i thread con flag  
   
-- Scegliere il pulsante Mostra solo con flag nell'angolo superiore sinistro della **espressioni di controllo parallela** finestra.  
+- Scegliere il pulsante Mostra solo con flag nell'angolo superiore sinistro della finestra espressione di **controllo in parallelo** .  
   
 ### <a name="to-switch-frames"></a>Per passare da un frame a un altro  
   
-- Fare doppio clic sulla colonna frame. (Tastiera: Selezionare la riga e premere INVIO).  
+- Fare doppio clic sulla colonna frame. (tastiera: selezionare la riga e premere INVIO).  
   
 ### <a name="to-sort-a-column"></a>Per ordinare una colonna  
   
@@ -88,6 +88,6 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 - Immettere un'espressione booleana nella casella **Filtra per espressione booleana**. Il debugger valuta l'espressione per ogni contesto del thread. Vengono visualizzate solo le righe in cui valore è `true`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Procedura dettagliata: Debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Procedura: usare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Procedura dettagliata: debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

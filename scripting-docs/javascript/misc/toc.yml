@@ -1,0 +1,142 @@
+- name: 'Previsto ''{'''
+  href: expected-left-curly-brace.md
+- name: 'Previsto identificatore, stringa o numero'
+  href: expected-identifier-string-or-number.md
+- name: Prevista funzione
+  href: function-expected.md
+- name: Previsto VBArray
+  href: vbarray-expected.md
+- name: Previsto 'catch'
+  href: expected-catch.md
+- name: Assegnazione a un risultato di funzione non consentita
+  href: cannot-assign-to-a-function-result.md
+- name: Errore di sintassi (JavaScript)
+  href: syntax-error-javascript.md
+- name: Previsto un oggetto di espressione regolare
+  href: regular-expression-object-expected.md
+- name: False (Windows Script Technologies)
+  href: false-windows-script-technologies.md
+- name: 'Previsto ''}'''
+  href: expected-right-curly-brace.md
+- name: Previsto oggetto Enumerator
+  href: enumerator-object-expected.md
+- name: Il numero delle cifre frazionarie non è compreso nell'intervallo
+  href: the-number-of-fractional-digits-is-out-of-range.md
+- name: Previsto oggetto date
+  href: date-object-expected.md
+- name: Commento senza terminazione
+  href: unterminated-comment.md
+- name: Impossibile utilizzare 'continue' all'esterno di un ciclo
+  href: can-t-have-continue-outside-of-loop.md
+- name: Previsto oggetto JavaScript
+  href: javascript-object-expected.md
+- name: 'Previsto '':'''
+  href: expected-colon.md
+- name: Alla lunghezza della matrice deve essere assegnato un numero positivo finito
+  href: array-length-must-be-assigned-a-finite-positive-number.md
+- name: Previsto '@end'
+  href: expected-at-end.md
+- name: Numero non valido
+  href: invalid-number.md
+- name: La precisione non è compresa nell'intervallo
+  href: the-precision-is-out-of-range.md
+- name: Quantificatore imprevisto (JavaScript)
+  href: unexpected-quantifier-javascript.md
+- name: Assegnazione a 'this' non consentita
+  href: cannot-assign-to-this.md
+- name: La funzione non ha un oggetto Prototype valido
+  href: function-does-not-have-a-valid-prototype-object.md
+- name: Le funzioni setter devono avere un argomento
+  href: setter-functions-must-have-one-argument.md
+- name: Carattere non valido (JavaScript)
+  href: invalid-character-javascript.md
+- name: Eccezione generata e non rilevata
+  href: exception-thrown-and-not-caught.md
+- name: Previsto numero
+  href: number-expected.md
+- name: L'utilizzo di una parola riservata futura per un identificatore non è valido
+  href: the-use-of-a-future-reserved-word-for-an-identifier-is-invalid.md
+- name: La parola chiave 'throw' deve essere seguita da un'espressione nella stessa riga di codice sorgente
+  href: throw-must-be-followed-by-an-expression-on-the-same-source-line.md
+- name: Assegnazione non valida (JavaScript)
+  href: illegal-assignment-javascript.md
+- name: '''default'' può apparire una sola volta in un''istruzione ''switch'''
+  href: default-can-only-appear-once-in-a-switch-statement.md
+- name: Previsto '=' (JavaScript)
+  href: expected-equal-javascript.md
+- name: L'URI da codificare contiene un carattere non valido
+  href: the-uri-to-be-encoded-contains-an-invalid-character.md
+- name: Previsto '-'
+  href: expected-minus.md
+- name: Intervallo non valido nel set di caratteri (JavaScript)
+  href: invalid-range-in-character-set-javascript.md
+- name: Previsto identificatore (JavaScript)
+  href: expected-identifier-javascript.md
+- name: Prevista costante
+  href: expected-constant.md
+- name: Identificatore non definito
+  href: undefined-identifier.md
+- name: Accesso negato
+  href: access-is-denied.md
+- name: 'Previsto ''\]'''
+  href: expected-right-square-bracket.md
+- name: Previsto 'while'
+  href: expected-while.md
+- name: Previsto '@'
+  href: expected-at.md
+- name: Etichetta ridefinita
+  href: label-redefined.md
+- name: Impossibile trovare l'etichetta
+  href: label-not-found.md
+- name: Errore di sintassi nell'espressione regolare (JavaScript)
+  href: syntax-error-in-regular-expression-javascript.md
+- name: Previsto '(' (JavaScript)
+  href: expected-left-parenthesis-javascript.md
+- name: Prevista cifra esadecimale
+  href: expected-hexadecimal-digit.md
+- name: Previsto oggetto
+  href: object-expected.md
+- name: Riferimento circolare nell'argomento Value non supportato
+  href: circular-reference-in-value-argument-not-supported.md
+- name: Compilazione condizionale disattivata
+  href: conditional-compilation-is-turned-off.md
+- name: Previsto 'var'
+  href: expected-var.md
+- name: Costante stringa senza terminazione (JavaScript)
+  href: unterminated-string-constant-javascript.md
+- name: Prevista stringa
+  href: string-expected.md
+- name: Argomento Replacer non valido
+  href: invalid-replacer-argument.md
+- name: '''with'' non è disponibile in ECMA 327 Compact Profile'
+  href: with-not-available-in-the-ecma-327-compact-profile.md
+- name: Riepilogo degli operatori (JavaScript)
+  href: operator-subtractsummary-javascript.md
+- name: Previsto membro dell'oggetto
+  href: object-member-expected.md
+- name: Parola chiave True
+  href: true-keyword.md
+- name: L'oggetto non supporta questa proprietà o metodo
+  href: object-doesn-t-support-this-property-or-method.md
+- name: Previsto Boolean
+  href: boolean-expected.md
+- name: Previsto ';'
+  href: expected-semicolon.md
+- name: Previsto ')' (JavaScript)
+  href: expected-right-parenthesis-javascript.md
+- name: Previsto oggetto Array o Arguments
+  href: array-or-arguments-object-expected.md
+- name: Prevista ')' nell'espressione regolare (JavaScript)
+  href: expected-right-parenthesis-in-regular-expression-javascript.md
+- name: 'Prevista ''\]'' nell''espressione regolare (JavaScript)'
+  href: expected-right-square-bracket-in-regular-expression-javascript.md
+- name: La lunghezza della matrice deve essere pari a un numero intero positivo finito
+  href: array-length-must-be-a-finite-positive-integer.md
+- name: Impossibile utilizzare 'break' all'esterno di un ciclo
+  href: can-t-have-break-outside-of-loop.md
+- name: Uso di una parola chiave per un identificatore non valido
+  href: the-use-of-a-keyword-for-an-identifier-is-invalid.md
+- name: Istruzione 'return' esterna alla funzione
+  href: return-statement-outside-of-function.md
+- name: La codifica usata per l'URI da decodificare non è valida
+  href: the-uri-to-be-decoded-is-not-a-valid-encoding.md

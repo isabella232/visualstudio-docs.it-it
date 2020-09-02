@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778258"
 ---
 # <a name="startprofile"></a>StartProfile
@@ -68,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="function-information"></a>Informazioni sulla funzione
  *Intestazione: dichiarata in VSPerf.h*
 
- Raccolta di importazione: *VSPerf.lib*
+ Libreria di importazione: *VSPerf. lib*
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra la chiamata della funzione StartProfile.
@@ -108,4 +108,4 @@ void ExerciseStartProfile()
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento all'API del profiler di Visual Studio (nativo)Visual Studio profiler API reference (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

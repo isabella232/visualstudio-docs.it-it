@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538636"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Eseguire l'override di Equals all'overload dell'operatore "uguale a"
@@ -50,7 +50,7 @@ ms.locfileid: "85538636"
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Esempi di definizioni di uguaglianza incoerenti
 
 ### <a name="description"></a>Descrizione
- Nell'esempio seguente viene illustrato un tipo con definizioni incoerenti di uguaglianza. `BadPoint`modifica il significato di uguaglianza fornendo un'implementazione personalizzata dell'operatore di uguaglianza, ma non esegue l'override di in <xref:System.Object.Equals%2A> modo che si comportano in modo identico.
+ Nell'esempio seguente viene illustrato un tipo con definizioni incoerenti di uguaglianza. `BadPoint` modifica il significato di uguaglianza fornendo un'implementazione personalizzata dell'operatore di uguaglianza, ma non esegue l'override di in <xref:System.Object.Equals%2A> modo che si comportano in modo identico.
 
 ### <a name="code"></a>Codice
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]

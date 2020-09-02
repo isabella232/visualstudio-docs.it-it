@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 11a4134ce02ca540cdffff9cc51a1280bd4173bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165676"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un elenco di origini che è stato inserito nell'archivio di simboli per i provider di attributi o altri componenti del processo di compilazione.  
+Recupera un elenco di origini inserite nell'archivio simboli dai provider di attributi o da altri componenti del processo di compilazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,13 +36,13 @@ HRESULT findInjectedSource ( 
   
 #### <a name="parameters"></a>Parametri  
  srcFile  
- [in] Nome del file di origine da cercare.  
+ in Nome del file di origine per il quale eseguire la ricerca.  
   
  ppResult  
- [out] Restituisce un [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) oggetto che contiene un elenco di tutte le origini inserite.  
+ out Restituisce un oggetto [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) che contiene un elenco di tutte le origini inserite.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i valori dei dati nei suggerimenti dati nell'editor del codice | Microsoft Docs
+title: Visualizzare i valori dei dati nei suggerimenti dati nell'editor di codice | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700101"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Visualizzare i valori di dati nei suggerimenti dati nell'editor del codice
@@ -33,7 +33,7 @@ ms.locfileid: "65700101"
 
 I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nel programma durante il debug. I suggerimenti dati funzionano solo in modalità di interruzione e solo con variabili che si trovano nell'ambito di esecuzione corrente.  
   
- Nelle [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], i suggerimenti dati possono essere aggiunti a una posizione specifica in un file di origine, oppure possono scorrere nella parte superiore delle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows.  
+ In [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] i suggerimenti dati possono essere aggiunti a una posizione specifica in un file di origine oppure possono essere mobili in tutte le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finestre.  
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>Per visualizzare un suggerimento dati (solo in modalità di interruzione)  
   
@@ -44,15 +44,15 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
    > [!NOTE]
    > I suggerimenti dati vengono sempre valutati nel contesto in cui l'esecuzione viene sospesa, non nel punto in cui passa il cursore. Se si passa il puntatore su una variabile in un'altra funzione con lo stesso nome di una variabile presente nel contesto corrente, il valore della variabile nell'altra funzione viene visualizzato come valore della variabile nel contesto corrente.  
   
-2. Il suggerimento dati scompare quando si rimuove il puntatore del mouse. Per bloccare il suggerimento dati, in modo che resti aperta, scegliere il **blocca a origine** icona, o  
+2. Il suggerimento dati scompare quando si rimuove il puntatore del mouse. Per aggiungere il DataTip in modo che rimanga aperto, fare clic sull'icona **Aggiungi a origine** o  
   
-   - Fare doppio clic su una variabile, quindi fare clic su **blocca a origine**.  
+   - Fare clic con il pulsante destro del mouse su una variabile, quindi scegliere **Aggiungi a origine**.  
   
      Il suggerimento dati bloccato verrà chiuso al termine della sessione di debug.  
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>Per sbloccare un suggerimento dati e far sì che scorra  
   
-- In un suggerimento dati bloccato, scegliere il **Sblocca da origine** icona.  
+- In un DataTip aggiunto, fare clic sull'icona **Rimuovi dall'origine** .  
   
      L'icona di blocco passa alla posizione sbloccata. Il suggerimento dati scorre ora nella parte superiore delle finestre aperte. Il suggerimento dati mobile verrà chiuso al termine della sessione di debug.  
   
@@ -64,22 +64,22 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 ### <a name="to-close-a-datatip"></a>Per chiudere un suggerimento dati  
   
-- Posizionare il puntatore del mouse su un suggerimento dati e quindi scegliere il **Chiudi** icona.  
+- Posizionare il puntatore del mouse su un DataTip, quindi fare clic sull'icona **Chiudi** .  
   
 ### <a name="to-close-all-datatips"></a>Per chiudere tutti i suggerimenti dati  
   
-- Nel **Debug** menu, fare clic su **Cancella tutti i suggerimenti dati**.  
+- Scegliere **Cancella tutti i suggerimenti**dati dal menu **debug** .  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Per chiudere tutti i suggerimenti dati di un file specifico  
   
-- Nel **Debug** menu, fare clic su **Cancella tutti i suggerimenti dati bloccati a** *File*.  
+- Scegliere **Cancella tutti i suggerimenti dati aggiunti al** *file*dal menu **debug** .  
   
 ## <a name="expanding-and-editing-information"></a>Espansione e modifica delle informazioni  
  È possibile utilizzare i suggerimenti dati per espandere una matrice, una struttura o un oggetto e visualizzarne i membri. È anche possibile modificare il valore di una variabile da un suggerimento dati.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Per espandere una variabile per visualizzarne gli elementi  
   
-- In un suggerimento dati posizionare il puntatore del mouse sul **+** sign che precede il nome della variabile.  
+- In una DataTip, posizionare il puntatore del mouse sul **+** segno che precede il nome della variabile.  
   
      La variabile si espande per visualizzare i relativi elementi in formato struttura ad albero.  
   
@@ -101,7 +101,7 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
      Il suggerimento dati resterà trasparente finché si terrà premuto il tasto CTRL.  
   
 ## <a name="visualizing-complex-data-types"></a>Visualizzazione di tipi di dati complessi  
- Se viene visualizzata un'icona della lente di ingrandimento accanto al nome di una variabile in un suggerimento dati, uno o più [creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md) sono disponibili per le variabili di quel tipo di dati. È possibile utilizzare un visualizzatore per visualizzare le informazioni in un formato più significativo, generalmente grafico.  
+ Se viene visualizzata un'icona a forma di lente di ingrandimento accanto al nome di una variabile in un DataTip, è possibile creare uno o più [visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md) per le variabili di tale tipo di dati. È possibile utilizzare un visualizzatore per visualizzare le informazioni in un formato più significativo, generalmente grafico.  
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Per visualizzare il contenuto di una variabile utilizzando un visualizzatore  
   
@@ -114,35 +114,35 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
      Un visualizzatore visualizzerà le informazioni.  
   
 ## <a name="adding-information-to-a-watch-window"></a>Aggiunta di informazioni a una finestra Espressioni di controllo  
- Se si desidera continuare a guardare una variabile, è possibile aggiungere la variabile per il **Watch** finestra da un suggerimento dati.  
+ Se si vuole continuare a osservare una variabile, è possibile aggiungere la variabile alla finestra **espressioni di controllo** da un DataTip.  
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>Per aggiungere una variabile alla finestra Espressioni di controllo  
   
-- Fare doppio clic su un suggerimento dati e quindi fare clic su **Aggiungi espressione di controllo**.  
+- Fare clic con il pulsante destro del mouse su un DataTip, quindi scegliere Aggiungi espressione di **controllo**.  
   
-     La variabile verrà aggiunta per il **Watch** finestra. Se si usa un'edizione che supporta più **Watch** windows, la variabile verrà aggiunta a **espressione di controllo 1.**  
+     La variabile viene aggiunta alla finestra **espressioni di controllo** . Se si usa un'edizione che supporta più finestre **espressioni di controllo** , la variabile viene aggiunta a **espressioni di controllo 1.**  
   
 ## <a name="importing-and-exporting-datatips"></a>Importazione ed esportazione di suggerimenti dati  
  È possibile esportare suggerimenti dati in un file XML, per poi condividerlo con un collega o modificarlo mediante un editor di testo.  
   
 #### <a name="to-export-datatips"></a>Per esportare suggerimenti dati  
   
-1. Nel menu Debug, fare clic su **Esporta suggerimenti dati**.  
+1. Scegliere **Esporta suggerimenti**dati dal menu debug.  
   
-     Il **Esporta suggerimenti dati** verrà visualizzata la finestra di dialogo.  
+     Verrà visualizzata la finestra di dialogo **Esporta suggerimenti** dati.  
   
-2. Usare tecniche di file standard per passare al percorso in cui si desidera salvare il file XML, digitare un nome per il file nei **nomefile** casella e quindi fare clic su **OK**.  
+2. Utilizzare le tecniche di file standard per passare al percorso in cui si desidera salvare il file XML, digitare un nome per il file nella casella **nome file** e quindi fare clic su **OK**.  
   
 #### <a name="to-import-datatips"></a>Per importare suggerimenti dati  
   
-1. Nel menu Debug, fare clic su **Importa suggerimenti dati**.  
+1. Scegliere **Importa suggerimenti**dati dal menu debug.  
   
-     Il **Importa suggerimenti dati** verrà visualizzata la finestra di dialogo.  
+     Verrà visualizzata la finestra di dialogo **Importa suggerimenti** dati.  
   
 2. Utilizzare la finestra di dialogo per trovare il file XML che si desidera aprire e fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Procedura: Utilizzare la finestra di dialogo Controllo immediato](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Procedura: utilizzare la finestra di dialogo controllo immediato](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
- [Procedura: Modificare il formato numerico del Debugger Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Procedura: modificare il formato numerico delle finestre del debugger](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

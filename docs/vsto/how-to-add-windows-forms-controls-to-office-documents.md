@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b12d51ffe3a2e647a067b95d320e8beb70cac384
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547537"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Procedura: aggiungere controlli Windows Forms ai documenti di Office
@@ -35,7 +35,7 @@ ms.locfileid: "85547537"
 
 - [Aggiungere controlli in fase di esecuzione nei componenti aggiuntivi VSTO](#runtimeaddin)
 
-## <a name="add-controls-at-design-time"></a><a name="designtime"></a>Aggiungere controlli in fase di progettazione
+## <a name="add-controls-at-design-time"></a><a name="designtime"></a> Aggiungere controlli in fase di progettazione
  Sono disponibili varie modalità di aggiunta di controlli Windows Form al documento in un progetto a livello di documento in fase di progettazione.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "85547537"
      Il controllo viene aggiunto al documento con la dimensione e la posizione specificate.
 
     > [!NOTE]
-    > Quando si seleziona un controllo in Excel, verrà visualizzato **= Embed ("WinForms. Control. host", "")** nella barra della **Formula**. Questo testo è necessario e non deve essere eliminato.
+    > Quando si seleziona un controllo in Excel, verrà visualizzato **= Embed ("WinForms. Control. host", "")**  nella barra della **Formula**. Questo testo è necessario e non deve essere eliminato.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Per aggiungere un controllo Windows al documento facendo un singolo clic sul controllo
 
@@ -97,7 +97,7 @@ ms.locfileid: "85547537"
     > [!NOTE]
     > Quando si seleziona un controllo in Excel, verrà visualizzato **=EMBED("WinForms.Control.Host","")** nella **Barra della formula**. Questo testo è necessario e non deve essere eliminato.
 
-## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a>Aggiungere controlli in fase di esecuzione nei progetti a livello di documento
+## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a> Aggiungere controlli in fase di esecuzione nei progetti a livello di documento
  È possibile aggiungere controlli Windows Form a livello di codice a un documento in fase di esecuzione. In Word usare i metodi della proprietà <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> della classe `ThisDocument`. In Excel usare i metodi della <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> proprietà di una classe `Sheet` *n* . Ogni metodo dispone di diversi overload per specificare in modi diversi il percorso del controllo.
 
  Quando si aggiunge un controllo Windows Form a un documento in fase di esecuzione, il controllo non viene reso persistente nel documento quando quest'ultimo viene chiuso. È possibile ricreare il controllo alla prossima apertura del documento. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -111,7 +111,7 @@ ms.locfileid: "85547537"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]
 
-## <a name="add-controls-at-run-time-in-vsto-add-ins"></a><a name="runtimeaddin"></a>Aggiungere controlli in fase di esecuzione nei componenti aggiuntivi VSTO
+## <a name="add-controls-at-run-time-in-vsto-add-ins"></a><a name="runtimeaddin"></a> Aggiungere controlli in fase di esecuzione nei componenti aggiuntivi VSTO
  È possibile aggiungere controlli Windows Form a livello di codice a qualsiasi documento aperto in fase di esecuzione. Generare innanzitutto un elemento host basato su un foglio di lavoro o un documento aperto. In Word usare quindi i metodi della proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> del nuovo elemento host. In Excel usare i metodi della proprietà <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> del nuovo elemento host. Ogni metodo dispone di diversi overload per specificare in modi diversi il percorso del controllo.
 
  Quando si aggiunge un controllo Windows Form a un documento in fase di esecuzione, il controllo non viene reso persistente nel documento quando quest'ultimo viene chiuso. È possibile ricreare il controllo alla prossima apertura del documento. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).

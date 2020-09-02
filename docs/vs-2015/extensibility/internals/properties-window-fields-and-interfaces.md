@@ -1,5 +1,5 @@
 ---
-title: Proprietà Window Fields and Interfaces | Microsoft Docs
+title: Campi e interfacce della finestra Proprietà | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,39 +11,39 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65700816"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Campi e interfacce della finestra Proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il modello per la selezione determinare quali informazioni vengono visualizzate nel **proprietà** finestra è basata sulla finestra di stato attivo nell'IDE. Ogni finestra e oggetto all'interno della finestra selezionata, può avere relativo oggetto di contesto di selezione il push nel contesto di selezione globale. L'ambiente aggiorna il contesto di selezione globale con i valori di una cornice di finestra quando tale finestra ha lo stato attivo. Quando viene modificato lo stato attivo, pertanto, non il contesto di selezione.  
+Il modello per la selezione per determinare quali informazioni vengono visualizzate nella finestra **Proprietà** è basato sulla finestra con lo stato attivo nell'IDE. Ogni finestra e oggetto all'interno della finestra selezionata può avere un oggetto contesto di selezione inserito nel contesto di selezione globale. L'ambiente aggiorna il contesto di selezione globale con i valori da una cornice della finestra quando tale finestra ha lo stato attivo. Quando lo stato attivo cambia, il contesto di selezione.  
   
-## <a name="tracking-selection-in-the-ide"></a>Traccia della selezione nell'IDE  
- Il frame della finestra o il sito, di proprietà dall'IDE, offre un servizio chiamato <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>. I passaggi seguenti mostrano come una modifica in una selezione, causata dall'utente modificando lo stato attivo a un'altra finestra aperta o selezionando un elemento di progetto diverso nel **Esplora soluzioni**, viene implementata per modificare il contenuto visualizzato nella finestra di  **Proprietà** finestra.  
+## <a name="tracking-selection-in-the-ide"></a>Rilevamento della selezione nell'IDE  
+ Al frame o al sito della finestra, di proprietà dell'IDE, è associato un servizio denominato <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> . Nei passaggi seguenti viene illustrato come una modifica in una selezione, causata dall'utente che imposta lo stato attivo su un'altra finestra aperta o selezionando un elemento di progetto diverso in **Esplora soluzioni**, viene implementata per modificare il contenuto visualizzato nella finestra **Proprietà** .  
   
-1. L'oggetto creato dal pacchetto VSPackage che viene inserito nelle chiamate finestra selezionata <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> avere <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> richiamare <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
+1. L'oggetto creato dal pacchetto VSPackage che è presente nella finestra selezionata chiama <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> per avere <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> Invoke <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .  
   
-2. Il contenitore di selezione, fornito per la finestra selezionata, consente di creare un proprio <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> oggetto. Quando la modifica di selezione, il pacchetto VSPackage chiama <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> per notificare a qualsiasi listener nell'ambiente, inclusi i **proprietà** finestra, della modifica. Fornisce inoltre l'accesso alle informazioni di gerarchia ed elemento correlate alla nuova selezione.  
+2. Il contenitore di selezione, fornito dalla finestra selezionata, crea il proprio <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> oggetto. Quando la selezione viene modificata, il pacchetto VSPackage chiama <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> per notificare a tutti i listener nell'ambiente, inclusa la finestra **Proprietà** , della modifica. Fornisce inoltre l'accesso alle informazioni sulla gerarchia e sugli elementi correlati alla nuova selezione.  
   
-3. La chiamata <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> e passando gli elementi della gerarchia selezionata nel `VSHPROPID_BrowseObject` parametro consente di popolare il <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> oggetto.  
+3. La chiamata a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> e il passaggio degli elementi della gerarchia selezionati nel `VSHPROPID_BrowseObject` parametro compilerà l' <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> oggetto.  
   
-4. Oggetto derivato dal [IDispatch Interface](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) viene restituita per <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> per l'elemento richiesto e l'ambiente esegue il wrapping in un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (vedere il passaggio seguente). Se la chiamata non riesce, l'ambiente esegue una seconda chiamata a `IVsHierarchy::GetProperty`, passandolo al contenitore di selezioni <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> che specifichino l'elemento della gerarchia o gli elementi.  
+4. Viene restituito un oggetto derivato dall' [interfaccia IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) per <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> l'elemento richiesto e l'ambiente ne esegue il wrapping in un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (vedere il passaggio successivo). Se la chiamata ha esito negativo, l'ambiente esegue una seconda chiamata a `IVsHierarchy::GetProperty` , passando al contenitore di selezione <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> fornito dall'elemento o dagli elementi della gerarchia.  
   
-    Il progetto VSPackage non viene creato <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> perché la finestra fornita dall'ambiente di VSPackage che implementa (ad esempio, **Esplora soluzioni**) costruisce <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> per suo conto.  
+    Il pacchetto VSPackage del progetto non viene creato <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> perché il pacchetto VSPackage della finestra fornito dall'ambiente che lo implementa (ad esempio, **Esplora soluzioni**) costrutti per <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> suo conto.  
   
-5. L'ambiente chiama i metodi della <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> per ottenere gli oggetti in base il `IDispatch` interfaccia per riempire il **proprietà** finestra.  
+5. L'ambiente richiama i metodi di <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> per ottenere gli oggetti in base all' `IDispatch` interfaccia da compilare nella finestra **proprietà** .  
   
-   Quando un valore nel **delle proprietà** finestra viene modificata, i pacchetti VSPackage implementare `IVsTrackSelectionEx::OnElementValueChangeEx` e `IVsTrackSelectionEx::OnSelectionChangeEx` per segnalare la modifica per il valore dell'elemento. Richiama quindi l'ambiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> oppure <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> per mantenere le informazioni visualizzate nel **proprietà** finestra sincronizzati con i valori delle proprietà. Per altre informazioni, vedere [aggiornare i valori delle proprietà nella finestra proprietà](../../misc/updating-property-values-in-the-properties-window.md).  
+   Quando viene modificato un valore nella finestra **Proprietà** , i pacchetti VSPackage implementano `IVsTrackSelectionEx::OnElementValueChangeEx` e `IVsTrackSelectionEx::OnSelectionChangeEx` per segnalare la modifica al valore dell'elemento. L'ambiente richiama quindi <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> per salvare le informazioni visualizzate nella finestra **proprietà** sincronizzate con i valori delle proprietà. Per ulteriori informazioni, vedere [aggiornamento dei valori delle proprietà nella finestra Proprietà](../../misc/updating-property-values-in-the-properties-window.md).  
   
-   Oltre a selezionare un altro elemento del progetto **Esplora soluzioni** per visualizzare le proprietà correlate a tale elemento, è anche possibile scegliere un oggetto diverso all'interno di una finestra del form o un documento utilizzando l'elenco a discesa disponibile nel **Proprietà** finestra. Per altre informazioni, vedere [elenco di oggetti finestra proprietà](../../extensibility/internals/properties-window-object-list.md).  
+   Oltre a selezionare un elemento di progetto diverso in **Esplora soluzioni** per visualizzare le proprietà correlate a tale elemento, è anche possibile scegliere un oggetto diverso in un form o in una finestra del documento utilizzando l'elenco a discesa disponibile nella finestra **Proprietà** . Per ulteriori informazioni, vedere [elenco di oggetti finestra Proprietà](../../extensibility/internals/properties-window-object-list.md).  
   
-   È possibile modificare il modo in cui vengono visualizzate informazioni il **proprietà** griglia della finestra dall'ordine alfabetico per categoria, e, se disponibile, è anche possibile aprire una pagina delle proprietà dell'oggetto selezionato facendo clic sui pulsanti appropriati nel  **Proprietà** finestra. Per altre informazioni, vedere [pulsanti della finestra proprietà](../../extensibility/internals/properties-window-buttons.md) e [pagine delle proprietà](../../extensibility/internals/property-pages.md).  
+   È possibile modificare il modo in cui le informazioni vengono visualizzate nella griglia della finestra **Proprietà** da alfabetico a categorico e, se disponibile, è anche possibile aprire una pagina delle proprietà per un oggetto selezionato facendo clic sui pulsanti appropriati nella finestra **Proprietà** . Per ulteriori informazioni, vedere [pulsanti della finestra Proprietà](../../extensibility/internals/properties-window-buttons.md) e [pagine delle proprietà](../../extensibility/internals/property-pages.md).  
   
-   Infine, la parte inferiore della **delle proprietà** finestra contiene inoltre una descrizione del campo selezionato nel **proprietà** griglia della finestra. Per altre informazioni, vedere [recupero delle descrizioni dei campi dalla finestra delle proprietà](../../misc/getting-field-descriptions-from-the-properties-window.md).  
+   Infine, nella parte inferiore della finestra **Proprietà** è inclusa anche una descrizione del campo selezionato nella griglia della finestra **Proprietà** . Per ulteriori informazioni, vedere [recupero delle descrizioni dei campi nella finestra Proprietà](../../misc/getting-field-descriptions-from-the-properties-window.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensione delle proprietà](../../extensibility/internals/extending-properties.md)

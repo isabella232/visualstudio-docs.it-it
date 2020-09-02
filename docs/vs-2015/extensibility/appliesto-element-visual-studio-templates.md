@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698930"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelli di Visual Studio)
@@ -22,7 +22,7 @@ Specifica un'espressione facoltativa da associare a una o più funzionalità. Ve
   
  Questo elemento è facoltativo. Può essere presente massimo una istanza in un file modello. Questo elemento consente di includere come applicabile solo un modello di elemento, in base alle funzionalità del progetto attivo correntemente selezionato. Non può essere usato per rendere un modello di elemento non applicabile. Se `AppliesTo` è assente o l'espressione non è inclusa correttamente, viene usato `TemplateID` o `TemplateGroupID` per rendere il modello applicabile, come con le versioni precedenti del prodotto.  
   
- Introdotto in Visual Studio 2013 Update 2. Per correlare la versione corretta, vedere [che fanno riferimento a recapitare gli assembly in Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione corretta, vedere [riferimenti agli assembly recapitati in Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -37,7 +37,7 @@ Specifica un'espressione facoltativa da associare a una o più funzionalità. Ve
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
-### <a name="attributes"></a>Attributi  
+### <a name="attributes"></a>Attributes  
  Nessuno.  
   
 ### <a name="child-elements"></a>Elementi figlio  
@@ -54,11 +54,11 @@ Specifica un'espressione facoltativa da associare a una o più funzionalità. Ve
   
  La sintassi valida dell'espressione è definita come segue:  
   
-- L'espressione della funzionalità, ad esempio "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- Espressione di funzionalità, ad esempio "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
-- Il "&#124;" è l'operatore OR.  
+- "&#124;" è l'operatore OR.  
   
-- Il "&" e "+" caratteri sono entrambi operatori AND.  
+- I caratteri "&" e "+" sono entrambi operatori e.  
   
 - Il carattere "!" è l'operatore NOT.  
   
@@ -66,10 +66,10 @@ Specifica un'espressione facoltativa da associare a una o più funzionalità. Ve
   
 - Un valore null o un'espressione vuota viene valutata come una corrispondenza.  
   
-- Le funzionalità del progetto possono essere qualsiasi carattere eccetto i caratteri riservati: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
+- Le funzionalità del progetto possono essere qualsiasi carattere eccetto questi caratteri riservati: "'':;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <>? \t\b\n\r  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono mostrati tre diversi modelli. `Template1` si applica a tutti i tipi di progetto C# o a qualsiasi altro tipo di progetto che supporta la funzionalità `WindowsAppContainer`. `Template2` si applica a tutti i progetti C# di qualsiasi genere. `Template3` si applica a tutti i progetti C# che non sono progetti `WindowsAppContainer`.  
+ Nell'esempio seguente vengono mostrati tre diversi modelli. `Template1` si applica a tutti i tipi di progetto C# o a qualsiasi altro tipo di progetto che supporta la `WindowsAppContainer` funzionalità. `Template2` si applica a tutti i progetti C# di qualsiasi tipo. `Template3` si applica a tutti i progetti C# che non sono progetti `WindowsAppContainer`.  
   
 ```xml  
 <!--  Template 1 -->  
@@ -99,5 +99,5 @@ Specifica un'espressione facoltativa da associare a una o più funzionalità. Ve
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: proprietà INTERCEPT_EXCEPTION_ACTION . Documenti Microsoft
+title: INTERCEPT_EXCEPTION_ACTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc44a4fc5264566468777749d5732662ba81ed6d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715059"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
-Specifica le azioni da eseguire quando si intercettano le eccezioni.
+Specifica le azioni da intraprendere durante l'intercettazione delle eccezioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,15 +45,15 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 ## <a name="parameters"></a>Parametri
 
 `IEA_INTERCEPT`\
-Abilita l'intercettazione dell'eccezione corrente. Questo è l'unico valore supportato al momento e deve essere specificato.
+Consente di intercettare l'eccezione corrente. Questo è l'unico valore attualmente supportato e deve essere specificato.
 
 ## <a name="remarks"></a>Osservazioni
-Questi valori vengono passati nel metodo [InterceptCurrentException.These](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) values are passed into the InterceptCurrentException method.
+Questi valori vengono passati nel metodo [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

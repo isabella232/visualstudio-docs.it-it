@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugExpressionEvaluator::SetRegistryRoot . Documenti Microsoft
+title: 'IDebugExpressionEvaluator:: SetRegistryRoot | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729424"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-Questo metodo imposta la radice del Registro di sistema. Utilizzato per il debug side-by-side.
+Questo metodo imposta la radice del registro di sistema. Usato per il debug side-by-side.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int SetRegistryRoot(
 
 ## <a name="parameters"></a>Parametri
 `ustrRegistryRoot`\
-[in] La nuova radice del Registro di sistema.
+in Nuova radice del registro di sistema.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- La radice del Registro di sistema specificata viene in genere impostata quando viene creata per la prima volta\\un'istanza dell'analizzatore di espressioni e punta alla chiave del Registro di sistema per una versione specifica di Visual Studio (HKEY_LOCAL_MACHINE , SOFTWARE , MicrosoftVisualStudio*X.Y*, dove *X.Y* è un numero di versione).
+ La radice del registro di sistema specificata viene in genere impostata quando viene creata un'istanza della prima istanza dell'analizzatore di espressioni e punta alla chiave del registro di sistema per una versione specifica di Visual Studio (HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*, dove *x. y* è un numero di versione).
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

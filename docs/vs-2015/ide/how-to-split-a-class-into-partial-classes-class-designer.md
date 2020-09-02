@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e93ebc58e4e9b6092921e4155fe3d821bb552c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670707"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Procedura: dividere una classe in classi parziali (Progettazione classi)
@@ -24,7 +24,7 @@ ms.locfileid: "72670707"
 
 È possibile dividere la dichiarazione di una classe o struttura in più dichiarazioni usando la parola chiave `Partial` in Visual Basic o la parola chiave `partial` in Visual C#. Si può usare il numero di dichiarazioni parziali desiderato, in un numero qualsiasi di file di origine differenti oppure in un singolo file di origine. Tutte le dichiarazioni, tuttavia, devono trovarsi nello stesso assembly e nello stesso spazio dei nomi.
 
- Le classi parziali sono utili in varie situazioni. Ad esempio, quando si lavora su progetti di grandi dimensioni, la separazione di una classe in più file consente a più programmatori di lavorare in contemporanea. Quando si lavora con il codice generato da Visual Studio, è possibile modificare la classe senza dover ricreare il file di origine. (Il codice wrapper per Windows Form e per servizi Web è un esempio di codice generato da Visual Studio.) È possibile creare codice che usa classi generate automaticamente senza dover modificare il file creato da Visual Studio.
+ Le classi parziali sono utili in varie situazioni. Ad esempio, quando si lavora su progetti di grandi dimensioni, la separazione di una classe in più file consente a più programmatori di lavorare in contemporanea. Quando si lavora con il codice generato da Visual Studio, è possibile modificare la classe senza dover ricreare il file di origine. Esempi di codice generato da Visual Studio includono Windows Forms e il codice wrapper del servizio Web. È quindi possibile creare codice che usa le classi generate automaticamente senza dover modificare il file creato da Visual Studio.
 
  Esistono due tipi di metodi parziali, chiamati dichiarazione e implementazione in Visual C# e Visual Basic.
 
@@ -76,4 +76,4 @@ public partial class Employee
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Classi parziali e metodi](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1) parziali [(tipo)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334) parziale ( [metodoC# ) (riferimento)](https://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137) [parziale](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)
+ [Classi parziali e metodi](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1) parziali [(tipo)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334) parziale ( [metodo) (riferimenti per C#)](https://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137) [parziale](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e7dfc2b1137b30a03425f663d70e12c528dad39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657404"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Ereditarietà delle classi di dati (Object Relational Designer)
@@ -28,7 +28,7 @@ Analogamente ad altri oggetti, le classi [!INCLUDE[vbtecdlinq](../includes/vbtec
 ## <a name="inheritance-properties"></a>Proprietà di ereditarietà
  Nella tabella seguente sono elencate le proprietà di ereditarietà e le rispettive descrizioni:
 
-|proprietà|Descrizione|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |Proprietà Discriminator|Proprietà (mappata alla colonna) che determina a quale classe appartiene il record corrente.|
 |Valore discriminante classe base|Valore (nella colonna definita come proprietà Discriminator) che determina che un record fa parte della classe base.|
@@ -40,7 +40,7 @@ Analogamente ad altri oggetti, le classi [!INCLUDE[vbtecdlinq](../includes/vbtec
 |Argomento|Descrizione|
 |-----------|-----------------|
 |[Procedura: Configurare l'ereditarietà usando O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Viene descritto come configurare le classi di entità che usano l'ereditarietà mediante [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
-|[Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a una sola tabella (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Vengono fornite istruzioni dettagliate per la configurazione delle classi di entità che usano l'ereditarietà a tabella singola con [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
+|[Procedura dettagliata: creazione di classi di LINQ to SQL usando l'ereditarietà a tabella singola (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Vengono fornite istruzioni dettagliate per la configurazione delle classi di entità che usano l'ereditarietà a tabella singola con [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|
 
 ## <a name="see-also"></a>Vedere anche
  Procedura dettagliata per la [creazione di classi di LINQ to SQL (o-R Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [: creazione di classi di LINQ to SQL usando l'ereditarietà a tabella singola (o/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md) [Introduzione](https://msdn.microsoft.com/library/db8a557a-fef8-4f4f-bb91-8cff7250ee25)

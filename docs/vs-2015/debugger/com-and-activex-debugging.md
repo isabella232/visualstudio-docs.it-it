@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b4d74a6a1c4f03951d93eaf2aa5e556762b9021
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702313"
 ---
 # <a name="com-and-activex-debugging"></a>Debug di COM e ActiveX
@@ -34,11 +34,11 @@ ms.locfileid: "65702313"
 
 In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e di controlli ActiveX.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Debug dei server e dei contenitori COM](../debugger/com-server-and-container-debugging.md)  
  Vengono citate particolari considerazioni relative al debug di applicazioni COM. I problemi includono: debug di un server e di un contenitore COM tramite due progetti all'interno della stessa soluzione, traccia di chiamate che attraversano i limiti dei processi, impostazione di punti di interruzione in funzioni di callback ed esecuzione delle istruzioni attraverso e all'interno di contenitori e server.  
   
- [Procedura: Eseguire il debug di un controllo ActiveX](../debugger/how-to-debug-an-activex-control.md)  
+ [Procedura: eseguire il debug di un controllo ActiveX](../debugger/how-to-debug-an-activex-control.md)  
  Vengono fornite informazioni sul debug di controlli ActiveX, quali: specifica di un contenitore relativo alla sessione di debug per visualizzare come viene eseguito il codice nel controllo ActiveX, debug di un controllo ActiveX con associazione a dati, simulazione di un particolare contenitore ed esecuzione passo passo del codice del contenitore.  
   
  [Strumenti di debug COM](../debugger/com-debugging-tools.md)  

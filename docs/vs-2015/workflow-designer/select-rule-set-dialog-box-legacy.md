@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c6cc7a101a854611228b1a3bc38f63fffff45c1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846180"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Finestra di dialogo Seleziona set di regole (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo **Seleziona set di regole** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Seleziona set di regole** in legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  La finestra di dialogo **Seleziona set di regole** viene utilizzata per selezionare un set di regole che è possibile utilizzare con un'attività [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) . Per informazioni su come accedere alla finestra di dialogo **Seleziona set di regole** , vedere [procedura: creare un set di regole PolicyActivity (legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
@@ -32,8 +32,8 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Sel
 |**Nuovo...**|Fare clic per aprire la finestra di [dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) per creare una nuova condizione della regola.|
 |**Modifica...**|Fare clic per aprire la finestra di [dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) per modificare la condizione della regola selezionata.|
 |**Rinomina...**|Fare clic per aprire una finestra di dialogo usata per rinominare il set di regole selezionato.|
-|**Eliminazione**|Fare clic per eliminare l’insieme di regole selezionato.|
-|**Anteprima set di regole**|Visualizza le regole nell’insieme di regole selezionato.|
+|**Elimina**|Fare clic per eliminare l’insieme di regole selezionato.|
+|**Anteprima insieme di regole**|Visualizza le regole nell’insieme di regole selezionato.|
 |**OK**|Fare clic per assegnare il set di regole selezionato all'attività **PolicyActivity** .|
 
  Per ulteriori informazioni su come creare e modificare i set di regole, vedere [finestra di dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
@@ -44,4 +44,4 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Sel
  Per ulteriori informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](https://msdn2.microsoft.com/library/bb628447.aspx).
 
 ## <a name="see-also"></a>Vedere anche
- [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [Finestra di dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Utilizzo di PolicyActivity Activity](https://msdn2.microsoft.com/library/bb675229.aspx) [Utilizzo delle condizioni nei flussi di lavoro](https://msdn2.microsoft.com/library/bb628447.aspx)
+ [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [Finestra di dialogo Editor set di regole PolicyActivity (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [usando l'attività PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx) [usando le condizioni nei flussi di lavoro](https://msdn2.microsoft.com/library/bb628447.aspx)

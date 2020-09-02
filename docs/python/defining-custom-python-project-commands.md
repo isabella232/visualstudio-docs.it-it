@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386985"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
@@ -131,17 +131,17 @@ Per fare riferimento alle proprietà o alle variabili di ambiente del progetto n
 
 ### <a name="target-attributes"></a>Attributi Target
 
-| Attributo | Obbligatoria | Descrizione |
+| Attributo | Obbligatorio | Descrizione |
 | --- | --- | --- |
 | Nome | Sì | Identificatore per il comando all'interno del progetto di Visual Studio. Questo nome deve essere aggiunto al gruppo di proprietà `<PythonCommands>` per visualizzare il comando nel sottomenu Python. |
-| Label | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
+| Etichetta | Sì | Nome visualizzato dell'interfaccia utente visualizzato nel sottomenu Python. |
 | Restituisce | Sì | Deve contenere `@(Commands)`, che identifica la destinazione come comando. |
 
 ### <a name="createpythoncommanditem-attributes"></a>Attributi CreatePythonCommandItem
 
 Per tutti i valori di attributo non viene fatta distinzione tra maiuscole e minuscole.
 
-| Attributo | Obbligatoria | Descrizione |
+| Attributo | Obbligatorio | Descrizione |
 | --- | --- | --- |
 | TargetType | Sì | Specifica il contenuto dell'attributo Target e come viene usato insieme all'attributo Arguments:<ul><li>**executable**: eseguire il file eseguibile denominato in Target, aggiungendo il valore in Arguments, come in caso di immissione diretta nella riga di comando. Il valore deve contenere solo un nome di programma senza argomenti.</li><li>**script**: eseguire *python.exe* con il nome di file in Target seguito dal valore in Arguments.</li><li>**module**: eseguire `python -m` seguito dal nome del modulo in Target seguito dal valore in Arguments.</li><li>**code**: eseguire il codice inline contenuto in Target. Il valore di Arguments viene ignorato.</li><li>**pip**: eseguire `pip` con il comando in Target seguito da Arguments. Se ExecuteIn è impostato su "output", tuttavia, pip presuppone il comando `install` e usa Target come nome del pacchetto.</li></ul> |
 | Destinazione | Sì | Nome del file, nome del modulo, codice o comando pip da usare, a seconda di TargetType. |
@@ -355,7 +355,7 @@ Indica la presenza di errori di sintassi nel file di progetto. Il messaggio incl
 
 ### <a name="console-window-closes-immediately-after-command-is-run"></a>La finestra della console viene chiusa immediatamente dopo l'esecuzione del comando
 
-Usare `ExecuteIn="consolepause"` anziché `ExecuteIn="console"`.
+Usare `ExecuteIn="consolepause"` invece di `ExecuteIn="console"`.
 
 ### <a name="command-does-not-appear-on-the-menu"></a>Il comando non viene visualizzato nel menu
 
@@ -386,7 +386,7 @@ I valori di attributo possono essere vuoti se si fa riferimento a una proprietà
 
 ### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio smette di rispondere e si arresta in modo anomalo durante l'esecuzione del comando
 
-Probabilmente si sta tentando di eseguire un comando della console con `ExecuteIn="output"`, nel qual caso potrebbe verificarsi un arresto anomalo di Visual Studio durante il tentativo di analizzare l'output. Usare invece `ExecuteIn="console"`. (Vedere [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
+Probabilmente si sta tentando di eseguire un comando della console con `ExecuteIn="output"`, nel qual caso potrebbe verificarsi un arresto anomalo di Visual Studio durante il tentativo di analizzare l'output. In alternativa, utilizzare `ExecuteIn="console"`. (Vedere [Problema 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>Il comando eseguibile "non è riconosciuto come comando interno o esterno, un programma eseguibile o un file batch"
 

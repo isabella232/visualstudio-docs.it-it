@@ -11,11 +11,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301860"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312587"
 ---
 # <a name="code-style-preferences"></a>Preferenze di stile per il codice
 
@@ -30,7 +30,7 @@ ms.locfileid: "79301860"
 
 ::: moniker range=">=vs-2019"
 
-È possibile popolare manualmente il file EditorConfig oppure generarlo automaticamente in base alle impostazioni per gli stili del codice specificate nella finestra di dialogo **Opzioni** di Visual Studio. Questa pagina delle opzioni è disponibile in **Opzioni degli strumenti** > **Options** > **Editor di testo** > [ C **'** o **Basic**] > Stile **di codice** > **generale**. Fare clic su **Genera file con estensione editorconfig dalle impostazioni** per generare automaticamente un file con estensione *editorconfig* per lo stile di codifica in base alle impostazioni in questa pagina **Opzioni**.
+È possibile popolare manualmente il file EditorConfig oppure generarlo automaticamente in base alle impostazioni per gli stili del codice specificate nella finestra di dialogo **Opzioni** di Visual Studio. Questa pagina di opzioni è disponibile in **strumenti**  >  **Opzioni**  >  **editor di testo** > [**C#** o **Basic**] > **stile di codice**  >  **generale**. Fare clic su **Genera file con estensione editorconfig dalle impostazioni** per generare automaticamente un file con estensione *editorconfig* per lo stile di codifica in base alle impostazioni in questa pagina **Opzioni**.
 
 ![Generare un file con estensione editorconfig dalle impostazioni in Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -58,7 +58,7 @@ Le opzioni impostate in questa finestra sono applicabili all'account di personal
 
 ### <a name="preference-and-severity"></a>Preferenza e gravità
 
-Per ogni impostazione di stile del codice in questa pagina è possibile impostare i valori **Preferenza** e **Gravità** usando i menu a discesa disponibili per ogni riga. La gravità può essere impostata su **Solo refactoring**, **Suggerimento**, **Avviso** o **Errore**. Se si vogliono abilitare le [Azioni rapide](../ide/quick-actions.md) per uno stile di codice, assicurarsi che l'opzione **Gravità** sia impostata su un valore diverso da **Solo refactoring**. Quando si utilizza ![uno](media/light-bulb-dropdown.png)stile non ![preferito,](media/error-bulb.png)viene visualizzata](media/screwdriver.png) la lampadina lampadina ad Actions Quick **Actions,** la lampadina di errore lampadina, o l'icona cacciavite del cacciavite ![e si può scegliere un'opzione nell'elenco **Azioni rapide** per riscrivere automaticamente il codice nello stile preferito.
+Per ogni impostazione di stile del codice in questa pagina è possibile impostare i valori **Preferenza** e **Gravità** usando i menu a discesa disponibili per ogni riga. La gravità può essere impostata su **Solo refactoring**, **Suggerimento**, **Avviso** o **Errore**. Se si vogliono abilitare le [Azioni rapide](../ide/quick-actions.md) per uno stile di codice, assicurarsi che l'opzione **Gravità** sia impostata su un valore diverso da **Solo refactoring**. Viene visualizzata la lampadina delle **azioni rapide** della lampadina, dell'errore della ![ lampadina di ](media/light-bulb-dropdown.png) ![ errore o dell' ](media/error-bulb.png) icona del cacciavite, ![ ](media/screwdriver.png) quando viene usato uno stile non preferito ed è possibile scegliere un'opzione nell'elenco **azioni rapide** per riscrivere automaticamente il codice nello stile preferito.
 
 ## <a name="apply-code-styles"></a>Applicare stili di codice
 
@@ -74,7 +74,7 @@ Configurare le impostazioni da applicare con **Formatta documento** nella [pagin
 ![Impostazioni degli stili di codice per Formatta documento in Visual Studio 2017](media/format-document-settings-experiment.png)
 
 > [!TIP]
-> Le regole **configurate** con una gravità Nessuno non partecipano alla pulizia del codice, ma possono essere applicate singolarmente tramite il menu **Azioni rapide e refactoring.**
+> Le regole configurate con una gravità di **nessuno** non partecipano alla pulizia del codice, ma possono essere applicate singolarmente tramite il menu **azioni rapide e refactoring** .
 
 La prima volta che si attiva il comando **Formatta documento**, una barra informazioni gialla richiede all'utente di configurare le impostazioni di pulizia del codice.
 
@@ -82,18 +82,18 @@ La prima volta che si attiva il comando **Formatta documento**, una barra inform
 
 ::: moniker range=">=vs-2019"
 
-Per i file di codice di C, in Visual Studio 2019 è presente un pulsante **Pulizia codice** nella parte inferiore dell'editor (tastiera: **Ctrl**+**K**, **Ctrl**+**E**) per applicare gli stili di codice da un file EditorConfig o dalla pagina delle opzioni **Stile codice.** Se è presente un file con estensione *editorconfig* per il progetto, queste impostazioni hanno la precedenza.
+Per i file di codice C#, Visual Studio 2019 contiene un pulsante di **pulizia del codice** nella parte inferiore dell'editor (tastiera: **CTRL** + **K**, **CTRL** + **E**) per applicare stili di codice da un file EditorConfig o dalla pagina Opzioni di **stile del codice** . Se è presente un file con estensione *editorconfig* per il progetto, queste impostazioni hanno la precedenza.
 
 ![Eseguire la pulizia del codice in Visual Studio 2019](media/execute-code-cleanup.png)
 
 > [!TIP]
-> Le regole **configurate** con una gravità Nessuno non partecipano alla pulizia del codice, ma possono essere applicate singolarmente tramite il menu **Azioni rapide e refactoring.**
+> Le regole configurate con una gravità di **nessuno** non partecipano alla pulizia del codice, ma possono essere applicate singolarmente tramite il menu **azioni rapide e refactoring** .
 
 Configurare innanzitutto gli stili di codice da applicare (in uno dei due profili) nella finestra di dialogo **Configura Pulizia del codice**. Per aprire questa finestra di dialogo, fare clic sulla freccia di espansione accanto all'icona a forma di scopa di Pulizia del codice e quindi scegliere **Configura Pulizia del codice**.
 
 ![Configurare Pulizia del codice in Visual Studio 2019](media/configure-code-cleanup.png)
 
-Dopo aver configurato la pulizia del codice, è possibile fare clic sull'icona della scopa o premere **Ctrl**+**K**, **Ctrl**+**E** per eseguire la pulizia del codice. È anche possibile eseguire la pulizia del codice per l'intero progetto o soluzione. Fare clic con il pulsante destro del mouse sul nome del progetto o della soluzione in **Esplora soluzioni**, selezionare **Analizza ed esegui pulizia del codice** e quindi selezionare **Esegui pulizia del codice**.
+Dopo aver configurato la pulizia del codice, è possibile fare clic sull'icona a forma di scopa oppure premere **CTRL** + **K**, **CTRL** + **E** per eseguire la pulizia del codice. È anche possibile eseguire la pulizia del codice per l'intero progetto o soluzione. Fare clic con il pulsante destro del mouse sul nome del progetto o della soluzione in **Esplora soluzioni**, selezionare **Analizza ed esegui pulizia del codice** e quindi selezionare **Esegui pulizia del codice**.
 
 ![Eseguire Pulizia del codice per l'intero progetto o soluzione](media/run-code-cleanup-project-solution.png)
 

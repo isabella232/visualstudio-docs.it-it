@@ -8,25 +8,25 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c32c8bc013816a8292b14ec4fceec4e8026bc0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204459"
 ---
 # <a name="extensibility-in-visual-studio"></a>Estendibilità in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio offre molte opzioni di estendibilità. È possibile creare SDK personalizzati, usare gli SDK di Azure (che vengono installati come parte di Visual Studio), Windows e Windows Phone ed estendere Visual Studio.
+Visual Studio offre molte opzioni di estendibilità. È possibile creare SDK personalizzati, usare Windows, Windows Phone e Azure SDK (installati come parte di Visual Studio) ed estendere Visual Studio.
 
-## <a name="extend-visual-studio"></a>Estendere Visual Studio
- È possibile usare Visual Studio SDK per estendere praticamente tutte le parti di Visual Studio: i comandi, menu, windows, gli editor e progetti. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+## <a name="extend-visual-studio"></a>Estensione di Visual Studio
+ È possibile usare Visual Studio SDK per estendere praticamente ogni parte di Visual Studio: comandi, menu, finestre, editor e progetti. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="create-your-own-sdks"></a>Creare SDK personalizzati
- Scopri come creare, assemblare e distribuire il proprio SDK della piattaforma e l'estensione: [Creazione di un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+## <a name="create-your-own-sdks"></a>Crea SDK personalizzati
+ Informazioni su come creare, creare pacchetti e distribuire SDK di piattaforma e di estensione personalizzati: [creazione di un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 ## <a name="roslyn-extensibility"></a>Estendibilità di Roslyn
- Scopri come usare Roslyn per l'estendibilità: [estendibilità .NET Compiler Platform ("Roslyn")](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md).
+ Informazioni su come usare Roslyn per l'estendibilità: [.NET Compiler Platform ("Roslyn")](../extensibility/dotnet-compiler-platform-roslyn-extensibility.md).
 
 ## <a name="azure-sdk"></a>Azure SDK
- Informazioni su come abilitare il SDK di Azure: [Abilitazione di Azure SDK](../extensibility/enabling-the-azure-sdk.md).
+ Informazioni su come abilitare Azure SDK: [Abilitazione di Azure SDK](../extensibility/enabling-the-azure-sdk.md).

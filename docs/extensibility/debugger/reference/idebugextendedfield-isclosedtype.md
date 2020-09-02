@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugExtendedField::IsClosedType . Documenti Microsoft
+title: 'IDebugExtendedField:: IsClosedType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4524d7c899480518e669f1f77a4756a83e0cf52f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729058"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
@@ -37,7 +37,7 @@ int IsClosedType();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se il campo è un `S_OK`tipo chiuso, restituisce ; in caso `S_FALSE`contrario, restituisce .
+ Se il campo è un tipo chiuso, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

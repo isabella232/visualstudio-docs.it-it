@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 820f4ac8b154579664e01b12aa8146e4668cc17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670674"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: specificare gli eventi di compilazione (Visual Basic)
@@ -63,9 +63,9 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
 
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Per creare un comando exe per modificare il manifesto dell'applicazione
 
-1. Creare un'applicazione console per il comando. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
+1. Creare un'applicazione console per il comando. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** nel nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione console**. Denominare il progetto `ChangeOSVersionVB`.
+2. Nella finestra di dialogo **Nuovo progetto** nel nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione console**. Assegnare al progetto il nome `ChangeOSVersionVB`.
 
 3. In Module1.vb aggiungere la riga seguente alle altre istruzioni `Imports` all'inizio del file:
 
@@ -118,7 +118,7 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
 
     Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione (ovvero, la cartella in cui il processo di compilazione crea il manifesto, in genere Projectname.publish). Il secondo argomento è la nuova versione del sistema operativo.
 
-5. Scegliere **Compila soluzione** dal menu **Compila**.
+5. Nel menu **Compila** scegliere **Compila soluzione**.
 
 6. Copiare il file EXE in una directory, ad esempio `C:\TEMP\ChangeOSVersionVB.exe`.
 
@@ -126,9 +126,9 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
 
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Per richiamare un evento di post-compilazione per modificare il manifesto dell'applicazione
 
-1. Creare un'applicazione Windows per il progetto da pubblicare. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
+1. Creare un'applicazione Windows per il progetto da pubblicare. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** del nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione Windows**. Denominare il progetto `VBWinApp`.
+2. Nella finestra di dialogo **Nuovo progetto** del nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione Windows**. Assegnare al progetto il nome `VBWinApp`.
 
 3. Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
@@ -144,7 +144,7 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. In Creazione progetti, passare alla scheda **Compila** e fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.
+6. In Creazione progetti, passare alla scheda **Compila** e fare clic sul pulsante **eventi di compilazione** per aprire la finestra di dialogo **eventi di compilazione** .
 
 7. Nella casella **Riga di comando eventi post-compilazione** immettere il comando seguente:
 
@@ -165,4 +165,4 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
     ```
 
 ## <a name="see-also"></a>Vedere anche
- Pagina relativa alla gestione della compilazione delle [proprietà di compilazione](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [, creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [pagina di pubblicazione, creazione progetti](../ide/reference/publish-page-project-designer.md) [evento pre-compilazione/post-compilazione riga di comando eventi](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [procedura:C#specificare gli eventi di compilazione () ](../ide/how-to-specify-build-events-csharp.md)
+ Pagina relativa alla gestione della compilazione delle [proprietà di compilazione](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [, creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [pagina di pubblicazione, creazione progetti](../ide/reference/publish-page-project-designer.md) [evento pre-compilazione/post-compilazione riga di comando evento](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [procedura: specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md)
