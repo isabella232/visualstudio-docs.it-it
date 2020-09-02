@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176078"
 ---
 # <a name="usage-warnings"></a>avvisi di utilizzo
@@ -77,4 +77,4 @@ Gli avvisi di utilizzo supportano il corretto utilizzo di .NET.
 |[CA2246: Non assegnare un simbolo e il relativo membro nella stessa istruzione](../code-quality/ca2246.md)|Non è consigliabile assegnare un simbolo e il relativo membro, ovvero un campo o una proprietà, nella stessa istruzione. Non è chiaro se l'accesso ai membri fosse destinato a usare il valore precedente del simbolo prima dell'assegnazione o del nuovo valore dall'assegnazione in questa istruzione.|
 |[CA2247: L'argomento passato al costruttore TaskCompletionSource deve essere l'enumerazione TaskCreationOptions invece dell'enumerazione TaskContinuationOptions](../code-quality/ca2246.md)|TaskCompletionSource dispone di costruttori che accettano TaskCreationOptions che controllano l'attività sottostante e i costruttori che accettano lo stato dell'oggetto archiviato nell'attività.  Se si passa accidentalmente un TaskContinuationOptions anziché un TaskCreationOptions, la chiamata tratta le opzioni come stato.|
 |[CA2248: specificare l'argomento ' enum ' corretto per ' enum. HasFlag '](../code-quality/ca2248.md)|Il tipo enum passato come argomento alla chiamata al `HasFlag` metodo è diverso dal tipo enum chiamante.|
-|[CA2249: provare a usare String. Contains anziché String. IndexOf](../code-quality/ca2249.md)|Le chiamate a in `string.IndexOf` cui viene usato il risultato per verificare la presenza o l'assenza di una sottostringa possono essere sostituite da `string.Contains` .|
+|[CA2249: Provare a usare String.Contains invece di String.IndexOf](../code-quality/ca2249.md)|Le chiamate a in `string.IndexOf` cui viene usato il risultato per verificare la presenza o l'assenza di una sottostringa possono essere sostituite da `string.Contains` .|

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893268"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
@@ -51,7 +51,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 4. Selezionare **Apri** per visualizzare le regole nell'Editor set di regole.
 
 > [!NOTE]
-> Se si dispone di un progetto .NET Core o .NET Standard, il processo è leggermente diverso perché non è disponibile alcuna scheda delle proprietà di **analisi del codice** . attenersi alla procedura per [copiare un set di regole predefinito nel progetto e impostarlo come set di regole attivo](analyzer-rule-sets.md). Dopo aver copiato su un set di regole, è possibile [modificarlo nell'editor del set di regole di Visual Studio](working-in-the-code-analysis-rule-set-editor.md) aprendolo dal **Esplora soluzioni**.
+> Se si dispone di un progetto .NET Core o .NET Standard, il processo è leggermente diverso perché non è disponibile alcuna scheda delle proprietà di **analisi del codice** . Seguire i passaggi per [copiare un set di regole predefinito nel progetto e impostarlo come set di regole attivo](analyzer-rule-sets.md). Dopo aver copiato su un set di regole, è possibile [modificarlo nell'editor del set di regole di Visual Studio](working-in-the-code-analysis-rule-set-editor.md) aprendolo dal **Esplora soluzioni**.
 
 ## <a name="create-a-new-rule-set"></a>Creare un nuovo set di regole
 
@@ -61,7 +61,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 2. Nella finestra di dialogo **nuovo file** selezionare la categoria **generale** a sinistra e quindi selezionare **set di regole di analisi codice**.
 
-3. Seleziona **Apri**.
+3. Selezionare **Open** (Apri).
 
    Il nuovo file con *estensione ruleset* verrà aperto nell'Editor set di regole.
 

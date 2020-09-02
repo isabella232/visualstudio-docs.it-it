@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9807762a4573cdbc68a4af26bf9d73b46827c7af
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285335"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
@@ -80,6 +80,6 @@ Per ulteriori informazioni su alcune delle schede della **casella degli strument
 - [Casella degli strumenti, Scheda Componenti](../../ide/reference/toolbox-components-tab.md)
 - [Casella degli strumenti, Scheda HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Scegli elementi della Casella degli strumenti, Componenti WPF](choose-toolbox-items-wpf-components.md)

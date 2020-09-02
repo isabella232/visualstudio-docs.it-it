@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Microsoft Docs
+title: 'IDebugDocument2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09456b20faf4d5f5ea09baa55e0a7fd78a19a95c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186652"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
@@ -42,16 +42,16 @@ int GetName( 
   
 #### <a name="parameters"></a>Parametri  
  `gnType`  
- [in] Un valore compreso il [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumerazione che determina il tipo del nome da restituire.  
+ in Valore dell'enumerazione [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) che determina il tipo di nome da restituire.  
   
  `pbstrFileName`  
- [out] Restituisce una stringa contenente il nome del documento.  
+ out Restituisce una stringa contenente il nome del documento.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo può, ad esempio, restituire il nome del documento come un titolo o come nome del file o persino parte di un nome file.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo può, ad esempio, restituire il nome del documento come titolo o come nome file o anche parte di un nome file.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

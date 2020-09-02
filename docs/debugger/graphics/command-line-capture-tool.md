@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389689"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64808466"
 ---
 # <a name="command-line-capture-tool"></a>Strumento di acquisizione da riga di comando
 DXCap.exe è uno strumento da riga di comando per l'acquisizione e la riproduzione della diagnostica grafica. Supporta Direct3D dalla versione 10 alla 12 per tutti i livelli di funzionalità.
@@ -31,75 +31,75 @@ DXCap.exe -info
 ```
 
 #### <a name="parameters"></a>Parametri
- `-file` `filename` In modalità di acquisizione (`-c`), `filename` specifica il nome del file di log di grafica che le informazioni grafiche vengono registrate in. Se `filename` non è specificato, le informazioni grafiche vengono registrate in un file denominato `<appname>-<date>-<time>.vsglog` per impostazione predefinita.
+ `-file``filename`In modalità di acquisizione ( `-c` ) `filename` specifica il nome del file di log di grafica in cui vengono registrate le informazioni grafiche. Se `filename` non è specificato, le informazioni grafiche vengono registrate in un file denominato per `<appname>-<date>-<time>.vsglog` impostazione predefinita.
 
- In modalità di convalida (-v), `filename` specifica il nome del file di log di grafica da convalidare. Se `filename` non è specificato, viene usato anche in questo caso il log di grafica che è stato convalidato per ultima.
+ In modalità di convalida (-v), `filename` specifica il nome del file di log di grafica da convalidare. Se `filename` non è specificato, viene usato di nuovo il log di grafica che è stato ultima convalida.
 
- `-frame` `frames` In modalità di acquisizione, `frames` specifica i frame da acquisire. Il primo frame è 1. È possibile specificare più frame usando virgole e intervalli. Ad esempio, se `frames` viene `2, 5, 7-9, 15`, i frame `2`, `5`, `7`, `8`, `9`, e `15` vengono acquisiti.
+ `-frame``frames`In modalità di acquisizione, `frames` specifica i frame che si desidera acquisire. Il primo frame è 1. È possibile specificare diversi frame usando virgole e intervalli. Ad esempio, se `frames` è `2, 5, 7-9, 15` , `2` `5` vengono acquisiti i frame,,, `7` `8` , `9` e `15` .
 
 > [!TIP]
-> Uso `-frame` `manual` per specificare che i frame verranno acquisiti manualmente premendo il tasto STAMP. È possibile acquisire i frame all'avvio dell'app. Per interrompere l'acquisizione dei frame, tornare all'interfaccia della riga di comando e premere INVIO.
+> Utilizzare `-frame` `manual` per specificare che i frame verranno acquisiti manualmente premendo il tasto Stamp. È possibile acquisire i frame all'avvio dell'app. Per interrompere l'acquisizione dei frame, tornare all'interfaccia della riga di comando e premere INVIO.
 
- `-period` `periods` In modalità di acquisizione, `periods` specifica gli intervalli di tempo, espressi in secondi, durante i quali acquisire i frame. È possibile specificare più periodi usando virgole e intervalli. Ad esempio se `periods` viene `2.1-5, 7.0-9.3`, quindi i fotogrammi sottoposti a rendering tra `2.1` e `5` secondi e tra`7` e `9.3` secondi vengono acquisiti.
+ `-period`In `periods` modalità di acquisizione, `periods` specifica gli intervalli di tempo, in secondi, durante i quali si desidera acquisire i frame. È possibile specificare più punti usando virgole e intervalli. Se, ad `periods` esempio `2.1-5, 7.0-9.3` , è, vengono acquisiti i frame di cui viene eseguito il rendering tra `2.1` e `5` secondi e tra `7` e `9.3` secondi.
 
- `-c` `app` [`args...`] Modalità di acquisizione. In modalità di acquisizione, `app` specifica il nome dell'app da cui acquisire le informazioni grafiche; `args...` specifica ulteriori parametri della riga di comando per tale app.
+ `-c``app`[ `args...` ] Modalità di acquisizione. In modalità di acquisizione, `app` specifica il nome dell'app da cui acquisire le informazioni grafiche; `args...` specifica ulteriori parametri della riga di comando per tale app.
 
- `-p` [`filename`] Modalità di riproduzione (`-p`). In modalità di riproduzione, `filename` specifica il nome del file di log di grafica da riprodurre. Se `filename` non è specificato, il log di grafica ultima riproduzione viene usato di nuovo.
+ `-p` [ `filename` ] Modalità di riproduzione ( `-p` ). In modalità di riproduzione, `filename` specifica il nome del file di log di grafica da riprodurre. Se `filename` non è specificato, viene usato di nuovo il log di grafica eseguito per ultimo.
 
- `-debug` In modalità di riproduzione, `-debug` specifica che la riproduzione deve essere riprodotto con il livello di debug Direct3D abilitato.
+ `-debug` In modalità di riproduzione, `-debug` specifica che la riproduzione deve essere eseguita con il livello di debug Direct3D abilitato.
 
- `-warp` In modalità di riproduzione, `-warp` specifica che la riproduzione deve essere riprodotta usando il renderer software WARP.
+ `-warp` In modalità di riproduzione, `-warp` specifica che la riproduzione deve essere eseguita usando il renderer software Warp.
 
- `-hw` In modalità di riproduzione, `-hw` specifica che la riproduzione deve essere riprodotta usando hardware della GPU.
+ `-hw` In modalità di riproduzione, `-hw` specifica che la riproduzione deve essere eseguita utilizzando hardware GPU.
 
- `-config` In modalità di riproduzione, `-config` consente di visualizzare le informazioni relative al computer che è stato usato per acquisire il file di log di grafica.
+ `-config` In modalità di riproduzione, `-config` Visualizza tutte le informazioni sul computer utilizzato per acquisire il file di log di grafica.
 
- `-rawmode` In modalità di riproduzione, `-rawmode` specifica che la riproduzione deve essere eseguita senza alcuna modifica per gli eventi registrati. Durante il normale funzionamento, la modalità di riproduzione potrebbe apportare piccole modifiche alla riproduzione per semplificare il debug e velocizzare la riproduzione. Ad esempio, potrebbe simulare l'output della catena di scambio, anziché l'esecuzione dei comandi della catena di scambio. In genere questa riproduzione non costituisce un problema, ma potrebbe essere necessario la riproduzione avvenga in modo più fedele agli eventi registrati. Ad esempio, è possibile utilizzare questa opzione per ripristinare il comportamento di rendering a schermo intero in un'app che è stata acquisita durante l'esecuzione in modalità schermo intero.
+ `-rawmode` In modalità di riproduzione, `-rawmode` specifica che la riproduzione deve essere eseguita senza modifiche agli eventi registrati. Durante il normale funzionamento, la modalità di riproduzione potrebbe apportare piccole modifiche alla riproduzione per semplificare il debug e velocizzare la riproduzione. Ad esempio, potrebbe simulare l'output della catena di scambio, anziché l'esecuzione dei comandi della catena di scambio. In genere, questa riproduzione non costituisce un problema, ma potrebbe essere necessario eseguire la riproduzione in modo più fedele all'evento registrato. Ad esempio, è possibile usare questa opzione per ripristinare il comportamento di rendering a schermo intero in un'app acquisita durante l'esecuzione in modalità schermo intero.
 
  `-toXML` [`xml_filename`] In modalità di riproduzione, `xml_filename` specifica il nome del file in cui viene scritta una rappresentazione XML della riproduzione. Se `xml_filename` non viene specificato, la rappresentazione XML viene scritta in un file denominato come il file da riprodurre, ma con l'estensione `.xml`.
 
  `-v` Modalità di convalida. In modalità di convalida, i frame acquisiti vengono riprodotti sia su dispositivi hardware che WARP e i relativi risultati vengono confrontati mediante una funzione di confronto immagini. È possibile usare questa funzionalità per identificare rapidamente i problemi di driver che interessano il rendering.
 
- `-examine` `events` In modalità di convalida, `events` specifica il set di eventi grafici di cui vengono confrontati i risultati immediati. Ad esempio, `-examine present,draw,copy,clear` limita il confronto solo gli eventi appartenenti a tali categorie.
+ `-examine``events`In modalità di convalida, `events` specifica il set di eventi grafici i cui risultati immediati vengono confrontati. Ad esempio, `-examine present,draw,copy,clear` limita il confronto solo agli eventi appartenenti a tali categorie.
 
 > [!TIP]
-> È consigliabile iniziare con `-examine present,draw,copy,clear` perché questo sarà rivelare la maggior parte dei problemi ma molto meno tempo rispetto a un set più completo di eventi. Se necessario, è possibile specificare un set di eventi diverso o più grande per convalidare tali eventi e rivelare altri tipi di problemi.
+> Si consiglia di iniziare con `-examine present,draw,copy,clear` perché questa operazione rivelerà la maggior parte dei problemi, ma improverà molto meno tempo rispetto a un set di eventi più completo. Se necessario, è possibile specificare un set di eventi diverso o più grande per convalidare tali eventi e rivelare altri tipi di problemi.
 
- `-haltonfail` In modalità di convalida, `-haltonfail` interrompe la convalida quando vengono rilevate differenze tra il renderer hardware e WARP. Per riprendere la convalida, premere un tasto.
+ `-haltonfail` In modalità di convalida, `-haltonfail` interrompe la convalida quando vengono rilevate differenze tra il renderer hardware e Warp. Per riprendere la convalida, premere un tasto.
 
- `-exitonfail` In modalità di convalida, `-exitonfail` esce immediatamente quando vengono rilevate differenze tra il renderer hardware e WARP dalla convalida. Al termine del programma in questo modo, viene restituito `0` per l'ambiente; in caso contrario, restituisce `1`.
+ `-exitonfail` In modalità di convalida, `-exitonfail` chiude immediatamente la convalida quando vengono rilevate differenze tra il renderer hardware e Warp. Quando il programma viene terminato in questo modo, viene restituito `0` all'ambiente; in caso contrario, restituisce `1` .
 
- `-showprogress` In modalità di convalida, `-showprogress` Visualizza informazioni sullo stato relative alla sessione di convalida. Lo stato WARP viene visualizzato a sinistra; lo stato hardware viene visualizzato a destra.
+ `-showprogress` In modalità di convalida, `-showprogress` Visualizza informazioni sullo stato di avanzamento della sessione di convalida. Lo stato WARP viene visualizzato a sinistra; lo stato hardware viene visualizzato a destra.
 
- `-e` `search_string` Enumera le app UWP installati. È possibile usare queste informazioni per eseguire acquisizioni della riga di comando con le app UWP.
+ `-e``search_string`Enumera le app UWP installate. È possibile usare queste informazioni per eseguire acquisizioni da riga di comando con le app UWP.
 
  `-info` Visualizza le informazioni sul computer e sulle DLL di acquisizione.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  DXCap.exe funziona in tre modalità:
 
- Modalità di acquisizione (-c) acquisire informazioni grafiche da un'app in esecuzione e le registra in un file di log di grafica. Le funzionalità di acquisizione e il formato di file sono identici a quelli di Visual Studio.
+ La modalità di acquisizione (-c) acquisisce le informazioni grafiche da un'app in esecuzione e le registra in un file di log di grafica. Le funzionalità di acquisizione e il formato di file sono identici a quelli di Visual Studio.
 
- Modalità di riproduzione (-p) riproduzione acquisiti in precedenza gli eventi di grafica da un file di log di grafica esistente. Per impostazione predefinita, la riproduzione avviene in una finestra, anche quando il file di log di grafica è stato acquisito da un'app a schermo intero. La riproduzione viene eseguita a schermo intero solo quando il log di grafica file è stato acquisito da un'app a schermo intero e `-rawmode` è specificato.
+ Modalità di riproduzione (-p) la riproduzione degli eventi grafici acquisiti in precedenza da un file di log di grafica esistente. Per impostazione predefinita, la riproduzione avviene in una finestra, anche quando il file di log di grafica è stato acquisito da un'app a schermo intero. La riproduzione viene eseguita a schermo intero solo quando il file di log di grafica è stato acquisito da un'app a schermo intero ed `-rawmode` è specificato.
 
- Modalità di convalida (`-v`) convalida il comportamento di rendering riproducendo i frame acquisiti, sia su hardware che WARP, quindi confrontando i risultati di utilizzando una funzione di confronto immagini. È possibile usare questa funzionalità per identificare rapidamente i problemi di driver che interessano il rendering.
+ La modalità di convalida ( `-v` ) consente di convalidare il comportamento di rendering eseguendo i frame acquisiti in hardware e Warp, confrontando quindi i risultati usando una funzione di confronto immagini. È possibile usare questa funzionalità per identificare rapidamente i problemi di driver che interessano il rendering.
 
  Oltre a queste modalità, dxcap.exe esegue altre due funzioni che non eseguono l'acquisizione o la riproduzione di informazioni grafiche.
 
- Funzione di enumerazione (`-e`) vengono visualizzati i dettagli sulle App UWP installati nel computer. Questi dettagli includono il nome del pacchetto e l'ID App che identificano il file eseguibile in un'app UWP. Per acquisire informazioni grafiche da un'app di Windows Store con DXCap.exe, usare il nome del pacchetto e l'ID app anziché il nome del file eseguibile usato durante l'acquisizione di un'app desktop.
+ Funzione di enumerazione ( `-e` ) Visualizza i dettagli sulle app UWP installate nel computer. Questi dettagli includono il nome del pacchetto e AppID che identificano il file eseguibile in un'app UWP. Per acquisire informazioni grafiche da un'app di Windows Store con DXCap.exe, usare il nome del pacchetto e l'ID app anziché il nome del file eseguibile usato durante l'acquisizione di un'app desktop.
 
- Funzione informazioni (`-info)` vengono visualizzati i dettagli sulla DLL macchina e acquisizione.
+ Funzione info ( `-info)` Visualizza i dettagli relativi al computer e le DLL di acquisizione.
 
 ## <a name="examples"></a>Esempi
 
 ### <a name="capture-graphics-information-from-a-desktop-app"></a>Acquisizione di informazioni grafiche da un'app desktop
- Usare `-c` per specificare l'app da cui si desidera acquisire informazioni grafiche.
+ Usare `-c` per specificare l'app da cui si vogliono acquisire le informazioni grafiche.
 
 ```cmd
 DXCap.exe -c BasicHLSL11.exe
 ```
 
- Per impostazione predefinita, le informazioni grafiche vengono registrate in un file denominato `<appname>-<date>-<time>.vsglog`. Usare `-file` per specificare un altro file cui registrare.
+ Per impostazione predefinita, le informazioni grafiche vengono registrate in un file denominato `<appname>-<date>-<time>.vsglog` . Consente `-file` di specificare un file diverso in cui registrare i dati.
 
 ```cmd
 DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
@@ -116,20 +116,20 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
 > [!NOTE]
 > Poiché gli argomenti della riga di comando inseriti dopo l'app vengono passati all'app, è necessario specificare gli argomenti per DXCap.exe prima di usare l'opzione `-c`.
 
-### <a name="capture-graphics-information-from-a-uwp-app"></a>Acquisire informazioni grafiche da un'app UWP.
+### <a name="capture-graphics-information-from-a-uwp-app"></a>Acquisisci le informazioni grafiche da un'app UWP.
  È possibile acquisire informazioni grafiche da un'app UWP.
 
 ```cmd
 DXCap.exe -c Microsof.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps
 ```
 
- Uso DXCap.exe per l'acquisizione da un'app UWP è simile a quello per l'acquisizione da un'app desktop di Windows, ma invece identificato un'app desktop di base al relativo nome di file, si identifica un'app UWP per il nome del pacchetto e il nome o ID dell'eseguibile contenuto nel pacchetto che si desidera  acquisire dal. Per renderne più semplice scoprire come identificare le app UWP installati nel computer, usare il `-e` opzione con DXCap.exe per enumerarle:
+ L'uso di DXCap.exe per l'acquisizione da un'app UWP è simile a quello usato per l'acquisizione da un'app desktop di Windows, ma identificando invece un'app desktop in base al nome del file, è possibile identificare un'app UWP in base al nome del pacchetto e al nome o all'ID del file eseguibile all'interno del pacchetto da cui si vuole eseguire l'acquisizione. Per semplificare la ricerca di come identificare le app UWP installate nel computer, usare l' `-e` opzione con DXCap.exe per enumerarle:
 
 ```cmd
 DXCap.exe -e
 ```
 
- È possibile fornire una stringa di ricerca facoltativa per trovare l'app che si sta cercando. Quando viene fornita la stringa di ricerca, DXCap.exe enumera le app UWP il cui nome del pacchetto, nome dell'app o ID app corrispondono alla stringa di ricerca. La ricerca non fa distinzione tra maiuscole e minuscole.
+ È possibile fornire una stringa di ricerca facoltativa per trovare l'app che si sta cercando. Quando viene specificata la stringa di ricerca, DXCap.exe enumera le app UWP il cui nome del pacchetto, il nome dell'app o gli ID app corrispondono alla stringa di ricerca. La ricerca non fa distinzione tra maiuscole e minuscole.
 
 ```cmd
 DXCap.exe -e map
@@ -137,16 +137,16 @@ DXCap.exe -e map
 
  Il comando precedente enumera le app UWP che corrispondono a "map"; di seguito è riportato l'output:
 
- **Package "Microsoft.BingMaps":** **InstallDirectory: C:\Programmi\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533** **nome: Microsoft.BingMaps** **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US** **Version          : 2.1.2914.1734** **avviabili applicazioni:** **Id: AppexMaps** **Exe: C:\Programmi\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: No** **AppSpec (per avviare): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** l'ultima riga dell'output per ogni app enumerata Visualizza il comando è possibile usare per acquisire informazioni grafiche da quest'ultimo.
+ **Pacchetto "Microsoft. BingMaps":** **InstallDirectory: C:\Program files\windowsapps\microsoft. BingMaps_2.1.2914.1734_X64__8wekyb3d8bbwe** **FullName: Microsoft. BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **Nome: Microsoft. BingMaps** **Publisher: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = versione USA** **: 2.1.2914.1734** **applicazioni avviabili:** **ID: AppexMaps** **exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: nessun** **AppSpec (da avviare): DXCap.exe-C Microsoft. BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe, AppexMaps** l'ultima riga di output per ogni app enumerata Visualizza il comando che è possibile usare per acquisire le informazioni grafiche.
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Acquisizione di frame specifici o frame tra intervalli di tempo specifici
- Usare `-frame` per specificare i frame da acquisire con virgole e intervalli:
+ Utilizzare `-frame` per specificare i frame che si desidera acquisire utilizzando virgole e intervalli:
 
 ```cmd
 DXCap.exe -frame 2,5,7-9,15 -c SimpleBezier11.exe
 ```
 
- In alternativa, usare `-period` per specificare un set di intervalli di tempo durante il quale acquisire i frame. Gli intervalli di tempo vengono specificati in secondi ed è possibile indicare più intervalli:
+ In alternativa, usare `-period` per specificare un set di intervalli temporali durante i quali acquisire i frame. Gli intervalli di tempo vengono specificati in secondi ed è possibile indicare più intervalli:
 
 ```cmd
 DXCap.exe -period 2.1-5, 7.0-9.3 -c SimpleBezier11.exe
@@ -159,7 +159,7 @@ DXCap.exe -period 2.1-5, 7.0-9.3 -c SimpleBezier11.exe
 DXCap.exe -manual -c SimpleBezier11.exe
 ```
 
-### <a name="play-back-a-graphic-log-file"></a>Riprodurre un file di log di grafica
+### <a name="play-back-a-graphic-log-file"></a>Riprodurre un file di log grafico
  Usare `-p` per riprodurre un file di log di grafica acquisito in precedenza.
 
 ```cmd
@@ -180,13 +180,13 @@ DXCap.exe -p regression_test_12.vsglog -rawmode
 ```
 
 ### <a name="play-back-using-warp-or-a-hardware-device"></a>Riproduzione con dispositivo WARP o hardware
- Potrebbe essere necessario forzare la riproduzione di un file di log di grafica acquisito su un dispositivo hardware all'uso di WARP o forzare la riproduzione di un log acquisito su WARP all'uso di un dispositivo hardware. Usare `-warp` per eseguire la riproduzione con WARP.
+ Potrebbe essere necessario forzare la riproduzione di un file di log di grafica acquisito su un dispositivo hardware all'uso di WARP o forzare la riproduzione di un log acquisito su WARP all'uso di un dispositivo hardware. Usare `-warp` per riprodurre il prodotto usando Warp.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -warp
 ```
 
- Usare `-hw` per eseguire la riproduzione con hardware.
+ Utilizzare `-hw` per riprodurre utilizzando l'hardware.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -hw
@@ -206,26 +206,26 @@ DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear
 ```
 
 ### <a name="convert-a-graphics-log-file-to-pngs"></a>Conversione di un file di log di grafica in formato PNG
- Per visualizzare o analizzare i frame da un file di log di grafica, DXCap.exe può salvare i frame acquisiti come file di immagine con estensione PNG (Portable Network Graphics). Usare `-screenshot` a in modalità di riproduzione per restituire i frame acquisiti come file PNG.
+ Per visualizzare o analizzare i frame da un file di log di grafica, DXCap.exe può salvare i frame acquisiti come file di immagine con estensione PNG (Portable Network Graphics). Usare `-screenshot` in modalità di riproduzione per restituire i frame acquisiti come file con estensione png.
 
 ```cmd
 DXCap.exe -p BasicHLSL11.vsglog -screenshot
 ```
 
- Uso `-frame` con `-screenshot` per specificare i frame che si desidera restituire.
+ Utilizzare `-frame` con `-screenshot` per specificare i frame che si desidera restituire.
 
 ```cmd
 DXCap.exe -p BasicHLSL11.vsglog -screenshot -frame 5, 7-9
 ```
 
 ### <a name="convert-a-graphics-log-file-to-xml"></a>Conversione di un file di log di grafica in formato XML
- Per elaborare e analizzare i log di grafica usando strumenti familiari come FindStr o XSLT, DXCap.exe può convertire un file di log di grafica in formato XML. Usare `-toXML` in modalità di riproduzione per convertire il log in XML anziché riprodurlo eseguire il backup.
+ Per elaborare e analizzare i log di grafica usando strumenti familiari come FindStr o XSLT, DXCap.exe può convertire un file di log di grafica in formato XML. Utilizzare `-toXML` in modalità di riproduzione per convertire il log in formato XML invece di riprodurlo.
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -toXML
 ```
 
- Per impostazione predefinita, l'output XML viene scritto in un file con lo stesso nome del log di grafica, ma con estensione XML. Nell'esempio precedente, il file XML sarà denominato **regression_test_12.xml**. Per assegnare al file XML di un nome diverso, specificarlo dopo `-toXML`.
+ Per impostazione predefinita, l'output XML viene scritto in un file con lo stesso nome del log di grafica, ma con estensione XML. Nell'esempio precedente, il file XML verrà denominato **regression_test_12.xml**. Per assegnare un nome diverso al file XML, specificarlo dopo `-toXML` .
 
 ```cmd
 DXCap.exe -p regression_test_12.vsglog -toXML temp.xml

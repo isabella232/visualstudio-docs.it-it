@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
+title: 'IDebugDocument2:: GetDocumentClassID | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4ac97400d09e77b0910b945d78c2f0cf28073a01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186666"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
@@ -40,13 +40,13 @@ int GetDocumentClassID( 
   
 #### <a name="parameters"></a>Parametri  
  `pclsid`  
- [out] Restituisce un GUID che rappresenta l'ID di classe del documento.  
+ out Restituisce un GUID che rappresenta l'ID di classe del documento.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Il GUID della classe è utilizzabile per creare un'istanza di singole classi ognuno dei quali rappresenta un documento.  
+## <a name="remarks"></a>Osservazioni  
+ Il GUID della classe può essere utilizzato per creare un'istanza di singole classi, ciascuna delle quali rappresenta un documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

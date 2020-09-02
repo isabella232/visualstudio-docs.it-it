@@ -1,5 +1,5 @@
 ---
-title: Variante delle dimensioni del Viewport 1x1 | Microsoft Docs
+title: Variante dimensioni viewport 1x1 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 74e3bc706cb2df12aacddf9fbb77dec598bfc17a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157562"
 ---
 # <a name="1x1-viewport-size-variant"></a>Variante delle dimensioni del viewport 1x1
@@ -26,7 +26,7 @@ Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le des
   
  Se questa variante mostra un miglioramento notevole delle prestazioni, questo potrebbe indicare un utilizzo eccessivo della velocità di riempimento, a significare che la risoluzione scelta è troppo elevata per la piattaforma di destinazione o che l'app impiega troppo tempo per l'ombreggiatura di pixel che in seguito vengono sovrascritti (caricamento). Il risultato suggerisce che la riduzione delle dimensioni del buffer frame o della quantità di caricamento determina un miglioramento delle prestazioni dell'app.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Le dimensioni del riquadro di visualizzazione vengono reimpostate su 1x1 pixel dopo ogni chiamata a `ID3D11DeviceContext::OMSetRenderTargets` o `ID3D11DeviceContext::RSSetViewports`.  
   
 ## <a name="example"></a>Esempio  

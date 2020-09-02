@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6a9a15b7284c647cb115c34b5655bdcaa7402ce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663572"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Procedura: passare dalla notazione membro alla notazione associazione (Progettazione classi)
@@ -47,4 +47,4 @@ In Progettazione classi è possibile modificare il modo in cui il diagramma clas
      La linea di associazione scompare e la proprietà viene visualizzata nel raggruppamento appropriato all'interno della forma tipo nel diagramma.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: creare ereditarietà tra tipi (Progettazione classi)](../ide/how-to-create-inheritance-between-types-class-designer.md) [procedura: visualizzare l'ereditarietà tra tipi (Progettazione classi)](../ide/how-to-view-inheritance-between-types-class-designer.md) [visualizzazione di tipi e relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md) [procedura: visualizzare un'associazione di raccolte (Progettazione classi) ](../ide/how-to-visualize-a-collection-association-class-designer.md)
+ [Procedura: creare ereditarietà tra tipi (Progettazione classi)](../ide/how-to-create-inheritance-between-types-class-designer.md) [procedura: visualizzare l'ereditarietà tra tipi (Progettazione classi)](../ide/how-to-view-inheritance-between-types-class-designer.md) [visualizzazione di tipi e relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md) [procedura: visualizzare un'associazione di raccolte (Progettazione classi)](../ide/how-to-visualize-a-collection-association-class-designer.md)

@@ -22,13 +22,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596502"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: Browser Web ambiente \>
+# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: \> Web browser ambiente
 
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.
 
@@ -65,5 +65,5 @@ Selezionare questa opzione per modificare le opzioni di Internet Explorer nella 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Finestra di progettazione HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

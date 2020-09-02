@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188286"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
@@ -36,18 +36,18 @@ La distribuzione avviene automaticamente quando si esegue il debug dell'app da V
 
 - Distribuzione di un'app di cui viene eseguito il debug quando viene avviata da un'altra app o da un altro metodo.
 
-## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Come distribuire un'app UWP
+## <a name="how-to-deploy-a-uwp-app"></a><a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Come distribuire un'app UWP
  La distribuzione manuale di un'app è un processo facile:
 
 1. Se esegui la distribuzione in un dispositivo remoto, specifica il nome o l'indirizzo IP del dispositivo nella pagina delle proprietà del progetto di avvio dell'app. I passaggi necessari sono elencati più avanti in questo argomento.
 
 2. Sulla barra degli strumenti Visual Studio del debugger seleziona la destinazione di distribuzione nell'elenco a discesa accanto al pulsante **Avvia debug** .
 
-     ![Esegui nel computer locale](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
+     ![Effettuare l'esecuzione nel computer locale](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
 3. Scegli **Distribuzione** dal menu **Compilazione**.
 
-## <a name="BKMK_How_to_specify_a_remote_device"></a> Come specificare un dispositivo remoto
+## <a name="how-to-specify-a-remote-device"></a><a name="BKMK_How_to_specify_a_remote_device"></a> Come specificare un dispositivo remoto
 
 **Prerequisiti**
 
@@ -72,15 +72,15 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 
 6. È possibile digitare il nome o l'indirizzo IP del dispositivo remoto oppure è possibile scegliere il dispositivo nella finestra di dialogo **connessione remota** .
 
-    ![Finestra di dialogo Seleziona connessione debugger remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
+    ![Finestra di dialogo per la selezione della connessione del debugger remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
     La finestra di dialogo **connessione remota** Visualizza i dispositivi della subnet di rete locale e qualsiasi dispositivo connesso direttamente al computer Visual Studio tramite un cavo Ethernet.
 
-   **Impostazione del dispositivo remoto nella pagina C++ di un progetto**
+   **Impostazione del dispositivo remoto nella pagina di un progetto C++**
 
-   ![Proprietà&#43; &#43; del progetto C per il debug remoto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+   ![C&#43;&#43; le proprietà del progetto per il debug remoto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
-7. Scegliere **Debugger remoto** dall'elenco **Debugger da avviare** .
+7. Scegli **Debugger remoto** dall'elenco **Debugger da avviare** .
 
 8. Immetti il nome di rete del dispositivo remoto nella casella **Nome computer** . In alternativa, puoi fare clic sulla freccia in giù della casella per selezionare il dispositivo nella finestra di dialogo Seleziona connessione debugger remoto.
 
@@ -88,31 +88,31 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 
    ![Proprietà del progetto gestito per il debug remoto](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")
 
-9. Scegliere **Computer remoto** dall'elenco **Dispositivo di destinazione** .
+9. Scegli **Computer remoto** dall'elenco **Dispositivo di destinazione** .
 
 10. Immetti il nome di rete del dispositivo remoto nella casella **Computer remoto** o fai clic su **Trova** per scegliere il dispositivo nella finestra di dialogo **Seleziona connessione debugger remoto** .
 
-## <a name="BKMK_Deployment_options"></a> Opzioni di distribuzione
+## <a name="deployment-options"></a><a name="BKMK_Deployment_options"></a> Opzioni di distribuzione
 
 Di seguito sono indicate le opzioni di distribuzione che puoi impostare nella pagina delle proprietà Debug del progetto di avvio.
 
 **Consenti loopback della rete locale**
 
-Per motivi di sicurezza, un'app UWP o [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] installata in modalità standard non è consentita per effettuare chiamate di rete al dispositivo in cui è installata. Per impostazione predefinita, la distribuzione di Visual Studio crea una esenzione da questa regola per l'app distribuita. Questa esenzione ti consente di verificare le procedure di comunicazione in un singolo computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], dovrai testarla senza l'esenzione.
+Per motivi di sicurezza, un UWP o un' [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app installata in modalità standard non è consentita per effettuare chiamate di rete al dispositivo in cui è installato. Per impostazione predefinita, la distribuzione di Visual Studio crea una esenzione da questa regola per l'app distribuita. Questa esenzione ti consente di verificare le procedure di comunicazione in un singolo computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], dovrai testarla senza l'esenzione.
 
 Per rimuovere l'esenzione relativa al loopback della rete:
 
-- Nella pagina C# delle proprietà Debug e Visual Basic deselezionare la casella di controllo **Consenti loopback di rete** .
+- Nella pagina delle proprietà debug in C# e Visual Basic deselezionare la casella di controllo **Consenti loopback di rete** .
 
-- Nella pagina C++ delle proprietà debug impostare il valore **Consenti loopback rete** su **No**.
+- Nella pagina delle proprietà debug C++ impostare il valore **Consenti loopback rete** su **No**.
 
-**Non avviare, ma eseguire il debug del codice all'avvio (C# e Visual Basic)/avviare l'applicazioneC++()**
+**Non avviare, ma eseguire il debug del codice all'avvio (C# e Visual Basic)/applicazione di avvio (C++)**
 
 Per configurare la distribuzione in modo da avviare automaticamente una sessione di debug all'avvio dell'app:
 
-- Nella pagina C# delle proprietà debug e Visual Basic, selezionare la casella di controllo **non avviare, ma eseguire il debug del codice all'avvio** .
+- Nella pagina delle proprietà debug in C# e Visual Basic, selezionare la casella di controllo **non avviare, ma eseguire il debug del codice all'avvio** .
 
-- Nella pagina C++ delle proprietà debug, impostare il valore di **Avvia applicazione** su **Sì**.
+- Nella pagina delle proprietà debug C++ impostare il valore di **Avvia applicazione** su **Sì**.
 
 ## <a name="see-also"></a>Vedere anche
 

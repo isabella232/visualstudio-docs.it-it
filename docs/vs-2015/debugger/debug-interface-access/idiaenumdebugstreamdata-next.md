@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bdbf58321426890bffd45a08818dc5341bdfc3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187391"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un determinato numero di record nella sequenza enumerata.  
+Recupera un numero specificato di record nella sequenza enumerata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,22 +39,22 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parametri  
  celt  
- [in] Il numero di record da recuperare.  
+ in Numero di record da recuperare.  
   
  cbData  
- [in] Dimensioni del buffer di dati, in byte.  
+ in Dimensioni in byte del buffer di dati.  
   
  pcbData  
- [out] Restituisce il numero di byte restituiti. Se `data` è NULL, quindi `pcbData` contiene il numero totale di byte di dati disponibili per tutti i record richiesti.  
+ out Restituisce il numero di byte restituiti. Se `data` è null, `pcbData` contiene il numero totale di byte dei dati disponibili per tutti i record richiesti.  
   
  data[]  
- [out] Un buffer che deve essere compilata con i dati di record di flusso di debug.  
+ out Buffer che deve essere compilato con i dati del record del flusso di debug.  
   
  pceltFetched  
- [in, out] Restituisce il numero di record in `data`.  
+ [in, out] Restituisce il numero di record in `data` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti più record. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri record. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187836"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Visualizzazione Puntatore all'istruzione: dati sui conflitti
@@ -25,7 +25,7 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
   
  La tabella seguente illustra i valori delle colonne nella visualizzazione Puntatore all'istruzione.  
   
-|Colonna|DESCRIZIONE|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|Tempo di blocco in questa funzione.|  
 |**% tempo blocco esclusivo**|Percentuale di tempo di blocco durante l'esecuzione dell'istruzione.|  
@@ -35,7 +35,7 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
 |**Nome funzione**|Nome della funzione contenente l'istruzione.|  
 |**Indirizzo istruzione**|Indirizzo di memoria dell'istruzione nel file binario caricato.|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Nome modulo**|Nome del modulo contenente l'istruzione.|  
+|**Nome del modulo**|Nome del modulo contenente l'istruzione.|  
 |**Percorso modulo**|Percorso del modulo contenente l'istruzione.|  
 |**ID processo**|ID di processo (PID) del processo profilato.|  
 |**Nome processo**|Nome del processo.|  
@@ -46,7 +46,7 @@ Nella visualizzazione Puntatore all'istruzione dei dati sui conflitti sono elenc
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md)   
- [Visualizzazione Puntatore all'istruzione - Campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)
+ [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Visualizzazione puntatori all'istruzione](../profiling/instruction-pointers-ips-view.md)   
+ [Visualizzazione puntatori all'istruzione-campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+ [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)

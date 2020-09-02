@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596437"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, scheda HTML
@@ -168,7 +168,7 @@ Quando si trascina **Area di testo** nell'area di visualizzazione Progettazione,
 > [!IMPORTANT]
 > È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
 
-**tavolo**
+**Tabella**
 
 ![Schermata HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
@@ -192,7 +192,7 @@ Quando si trascina **Immagine** nell'area di visualizzazione Progettazione, nel 
 <img alt="" src="">
 ```
 
-**Seleziona**
+**Select**
 
 ![Controllo Dropdown della casella degli strumenti di una pagina HTML](../../ide/reference/media/vxdropdown.gif)
 

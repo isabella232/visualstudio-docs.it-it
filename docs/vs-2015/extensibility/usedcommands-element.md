@@ -14,18 +14,18 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba37458e0f8abca27047574170ab8aa3cc7a44ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186286"
 ---
 # <a name="usedcommands-element"></a>Elemento UsedCommands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'elemento UsedCommands Raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.  
+L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.  
   
- L'elemento UsedCommands è facoltativo. Se non è necessario chiamare i comandi definiti all'esterno del pacchetto, non è necessario includere questa sezione nel file con estensione vsct.  
+ L'elemento UsedCommands è facoltativo. Se non si chiamano comandi definiti all'esterno del pacchetto, non è necessario includere questa sezione nel file con estensione vsct.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,19 +42,19 @@ L'elemento UsedCommands Raggruppa gli elementi UsedCommand e altri raggruppament
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento UsedCommand](../extensibility/usedcommand-element.md)|Il comando che viene implementato da un altro codice.|  
+|[Elemento UsedCommand](../extensibility/usedcommand-element.md)|Comando implementato da altro codice.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi (ad esempio, le voci di menu, menu, barre degli strumenti e caselle combinate) che un pacchetto VSPackage fornisce all'ambiente di sviluppo integrato (IDE).|  
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi (ad esempio, le voci di menu, i menu, le barre degli strumenti e le caselle combinate) forniti da un VSPackage al Integrated Development Environment (IDE).|  
   
 ## <a name="example"></a>Esempio  
   
@@ -68,4 +68,4 @@ L'elemento UsedCommands Raggruppa gli elementi UsedCommand e altri raggruppament
   
 ## <a name="see-also"></a>Vedere anche  
  [Elemento UsedCommand](../extensibility/usedcommand-element.md)   
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187922"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica grafica di Visual Studio
@@ -66,12 +66,12 @@ ms.locfileid: "73187922"
 
  Questa figura mostra un layout tipico di strumenti in Analizzatore grafica.
 
- ![Tutte le finestre del debugger grafica](media/graphicsdebuggerwindows.png "GraphicsDebuggerWindows")
+ ![Tutte le finestre debugger grafica](media/graphicsdebuggerwindows.png "GraphicsDebuggerWindows")
 
 ### <a name="the-graphics-toolbar-graphics-analyzer"></a>Barra degli strumenti di grafica (Analizzatore grafica)
  La barra degli strumenti di grafica consente di accedere rapidamente alle finestre dello strumento Analizzatore grafica.
 
- ![Barra degli strumenti grafica in modalità diagnostica grafica](media/vsg_toolbar.png "vsg_toolbar")
+ ![Barra degli strumenti grafica in modalità diagnostica della grafica](media/vsg_toolbar.png "vsg_toolbar")
 
 ### <a name="graphics-log-document"></a>Documento di log della grafica
  Il documento di log della grafica è la finestra degli strumenti più importante di Analizzatore grafica. Questa finestra rappresenta tutti i frame acquisiti eseguendo l'app in Diagnostica grafica. Da qui è possibile selezionare un altro frame da esaminare o selezionare uno specifico pixel da esaminare con lo strumento Cronologia pixel. L'immagine del buffer frame mostrata in questo documento cambia in modo da riflettere l'evento attualmente selezionato, consentendo di visualizzarne l'effetto nel tempo sul buffer frame.

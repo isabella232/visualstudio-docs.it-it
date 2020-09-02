@@ -1,5 +1,5 @@
 ---
-title: Idiareadexeatrvacallback | Microsoft Docs
+title: 'IDiaReadExeAtRVACallback:: ReadExecutableAtRVA | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8d74543b7b57d188712c04bc43429357a5140c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187264"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legge il numero specificato di byte a partire specificato indirizzo virtuale relativo (RVA) dal file eseguibile.  
+Legge il numero specificato di byte a partire dall'indirizzo RVA (relative Virtual Address) specificato dal file eseguibile.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,19 +38,19 @@ HRESULT ReadExecutableAtRVA ( 
   
 #### <a name="parameters"></a>Parametri  
  `relativeVirtualAddress`  
- [in] il RVA del file eseguibile per iniziare la lettura.  
+ in RVA nel file eseguibile da cui iniziare la lettura.  
   
  `cbData`  
- [in] Numero di byte da leggere.  
+ in Numero di byte da leggere.  
   
  `pcbData`  
- [out] Restituisce il numero di byte letti.  
+ out Restituisce il numero di byte letti.  
   
  `data[]`  
- [in, out] Matrice che viene compilata con byte letti dal file.  
+ [in, out] Matrice compilata con byte letti dal file.  
   
-## <a name="remarks"></a>Note  
- Questo metodo viene chiamato dal codice di supporto di DIA per caricare i byte di dati da un eseguibile usando un indirizzo virtuale relativo. Questo metodo viene chiamato supportare le [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo viene chiamato dal codice di supporto DIA per caricare i byte di dati da un file eseguibile usando un indirizzo virtuale relativo. Questo metodo viene chiamato per supportare il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   

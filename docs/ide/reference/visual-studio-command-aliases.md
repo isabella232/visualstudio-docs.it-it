@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596411"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
@@ -35,10 +35,10 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 
 |Nome comando|Alias|Nome completo|
 |------------------|-----------|-------------------|
-|[Comando Stampa](../../ide/reference/print-command.md)|?|Debug.Print|
-|[Comando Controllo immediato](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
+|[Comando stampa](../../ide/reference/print-command.md)|?|Debug.Print|
+|[Comando controllo rapido](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Aggiungi nuovo progetto|AddProj|File.AddNewProject|
-|[Comando Alias](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
+|[Alias (comando)](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
 |Auto (finestra)|Auto|Debug.Autos|
 |finestra Punti di interruzione|bl|Debug.Breakpoints|
 |Imposta/Rimuovi punto di interruzione|bp|Debug.ToggleBreakPoint|
@@ -62,7 +62,7 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Disassembly (finestra)|disasm|Debug.Disassembly|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a otto byte|dq|Debug.ListMemory /Format:EightBytes|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) come Unicode|du|Debug.ListMemory /Unicode|
-|[Comando Valuta istruzione](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
+|[Comando valuta istruzione](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
 |Esci|Esci|File.Exit|
 |Formatta selezione|format|Edit.FormatSelection|
 |Schermo intero|A tutto schermo|View.FullScreen|
@@ -78,7 +78,7 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Elimina riga|LineDel|Edit.LineDelete|
 |Elenca membri|ListMembers|Edit.ListMembers|
 |Finestra Variabili locali|Variabili locali|Debug.Locals|
-|[Comando Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md)|File di log|Tools.LogCommandWindowOutput|
+|[Comando log output della finestra di comando](../../ide/reference/log-command-window-output-command.md)|File di log|Tools.LogCommandWindowOutput|
 |Modalità indicatore nella finestra di comando|mark|Tools.CommandWindowMarkMode|
 |Memoria (finestra)|Memory Memory1|Debug.Memory1|
 |Finestra Memoria 2|Memory2|Debug.Memory2|
@@ -87,7 +87,7 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |[Imposta radice (comando)](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
 |[Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Segnalibro successivo|NextBook|Edit.NextBookmark|
-|[Comando Nuovo file](../../ide/reference/new-file-command.md)|nf|File.NewFile|
+|[Comando nuovo file](../../ide/reference/new-file-command.md)|nf|File.NewFile|
 |Nuovo progetto|np NewProj|File.NewProject|
 |[Comando Apri file](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Comando Apri progetto](../../ide/reference/open-project-command.md)|op|File.OpenProject|
@@ -105,7 +105,7 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Salva elementi selezionati|Salva|File.SaveSelectedItems|
 |Salva tutto|SaveAll|File.SaveAll|
 |Save As|SaveAs|File.SaveSelectedItemsAs|
-|[Shell (comando)](../../ide/reference/shell-command.md)|shell|Tools.Shell|
+|[Comando della shell](../../ide/reference/shell-command.md)|shell|Tools.Shell|
 |Interrompi ricerca nei file|StopFind|Edit.FindInFiles /stop|
 |Scambia punto di aggancio|SwapAnchor|Edit.SwapAnchor|
 |Esegui istruzione|t|Debug.StepInto|
@@ -118,15 +118,15 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Finestra della casella degli strumenti|casella degli strumenti|View.Toolbox|
 |[Comando Elenca disassembly](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Maiuscole|Ucase|Edit.MakeUppercase|
-|Annullamento|rollback|Edit.Undo|
+|Annulla|rollback|Edit.Undo|
 |Rimuovi tabulazioni nella selezione|Untabify|Edit.UntabifySelection|
 |Finestra Espressioni di controllo|Espressioni di controllo|Debug.WatchN|
 |Attiva/Disattiva a capo automatico|WordWrap|Edit.ToggleWordWrap|
 |Elenca processi|&#124;|Debug.ListProcesses|
-|[Comando Elenca thread](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
+|[Comando list Threads](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)

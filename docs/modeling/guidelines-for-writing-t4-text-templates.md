@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596541"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
@@ -46,25 +46,25 @@ In alcuni casi, i test generali possono essere eseguiti direttamente sul modello
 
 Consenti codice personalizzato: genera classi parziali.
 
-Consentire il codice scritto manualmente oltre al codice generato. È insolito che uno schema di generazione del codice sia in grado di tenere conto di tutte le possibili varianti che possono verificarsi. Pertanto, è prevedibile aggiungere o eseguire l'override di parte del codice generato. Se il materiale generato si trova in un linguaggio .NET, C# ad esempio o Visual Basic, sono particolarmente utili due strategie:
+Consentire il codice scritto manualmente oltre al codice generato. È insolito che uno schema di generazione del codice sia in grado di tenere conto di tutte le possibili varianti che possono verificarsi. Pertanto, è prevedibile aggiungere o eseguire l'override di parte del codice generato. Se il materiale generato si trova in un linguaggio .NET, ad esempio C# o Visual Basic, sono particolarmente utili due strategie:
 
 - Le classi generate devono essere parziali. In questo modo è possibile aggiungere contenuto al codice generato.
 
 - Le classi devono essere generate in coppie, una che eredita dall'altra. La classe base deve contenere tutti i metodi e le proprietà generati e la classe derivata deve contenere solo i costruttori. Ciò consente al codice scritto manualmente di eseguire l'override dei metodi generati.
 
-In altre lingue generate, ad esempio XML, usare la direttiva `<#@include#>` per creare semplici combinazioni di contenuto scritto manualmente e generato. In casi più complessi, potrebbe essere necessario scrivere un passaggio di post-elaborazione che combina il file generato con tutti i file scritti manualmente.
+In altre lingue generate, ad esempio XML, usare la `<#@include#>` direttiva per creare semplici combinazioni di contenuto scritto manualmente e generato. In casi più complessi, potrebbe essere necessario scrivere un passaggio di post-elaborazione che combina il file generato con tutti i file scritti manualmente.
 
 Spostare il materiale comune in file di inclusione o modelli di run-time.
 
-Per evitare di ripetere blocchi simili di testo e codice in più modelli, usare la direttiva `<#@ include #>`. Per altre informazioni, vedere [direttiva include T4](../modeling/t4-include-directive.md).
+Per evitare la ripetizione di blocchi di testo e codice simili in più modelli, utilizzare la `<#@ include #>` direttiva. Per altre informazioni, vedere [direttiva include T4](../modeling/t4-include-directive.md).
 
-È anche possibile compilare modelli di testo in fase di esecuzione in un progetto separato e quindi chiamarli dal modello della fase di progettazione. A tale scopo, utilizzare la direttiva `<#@ assembly #>` per accedere al progetto separato.
+È anche possibile compilare modelli di testo in fase di esecuzione in un progetto separato e quindi chiamarli dal modello della fase di progettazione. A tale scopo, utilizzare la `<#@ assembly #>` direttiva per accedere al progetto separato.
 
 Si consiglia di trasferire blocchi di codice di grandi dimensioni in un assembly separato.
 
-Se si dispone di blocchi di codice e di funzionalità di classe di grandi dimensioni, potrebbe essere utile spostare parte del codice in metodi compilati in un progetto separato. È possibile utilizzare la direttiva `<#@ assembly #>` per accedere al codice nel modello. Per altre informazioni, vedere [direttiva dell'assembly T4](../modeling/t4-assembly-directive.md).
+Se si dispone di blocchi di codice e di funzionalità di classe di grandi dimensioni, potrebbe essere utile spostare parte del codice in metodi compilati in un progetto separato. È possibile utilizzare la `<#@ assembly #>` direttiva per accedere al codice nel modello. Per altre informazioni, vedere [direttiva dell'assembly T4](../modeling/t4-assembly-directive.md).
 
-È possibile inserire i metodi in una classe astratta che il modello può ereditare. La classe astratta deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Per altre informazioni, vedere [direttiva template T4](../modeling/t4-template-directive.md).
+È possibile inserire i metodi in una classe astratta che il modello può ereditare. La classe astratta deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Per altre informazioni, vedere [direttiva template T4](../modeling/t4-template-directive.md).
 
 Genera codice, non file di configurazione.
 
@@ -115,7 +115,7 @@ In **MyReportText-methods.cs**:
 
 Consenti codice personalizzato: specificare i punti di estensione.
 
-Provare a generare metodi virtuali nei blocchi di funzionalità \<# + Class # >. In questo modo, è possibile usare un singolo modello in molti contesti senza alcuna modifica. Anziché modificare il modello, è possibile costruire una classe derivata che fornisca la logica aggiuntiva minima. La classe derivata può essere di codice normale oppure può essere un modello in fase di esecuzione.
+Provare a generare metodi virtuali in \<#+ class feature blocks #> . In questo modo, è possibile usare un singolo modello in molti contesti senza alcuna modifica. Anziché modificare il modello, è possibile costruire una classe derivata che fornisca la logica aggiuntiva minima. La classe derivata può essere di codice normale oppure può essere un modello in fase di esecuzione.
 
 Ad esempio, in MyStandardRunTimeTemplate.tt:
 
@@ -139,11 +139,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Raccolta dati separata dalla generazione del testo.
 
-Provare a evitare di combinare i blocchi di calcolo e di testo. In ogni modello di testo usare il primo \<# blocco di codice # > per impostare le variabili ed eseguire calcoli complessi. Dal primo blocco di testo fino alla fine del modello o il primo \<# + classe blocco di funzionalità # >, evitare espressioni lunghe ed evitare cicli e condizionali a meno che non contengano blocchi di testo. Questa procedura rende il modello più semplice da leggere e gestire.
+Provare a evitare di combinare i blocchi di calcolo e di testo. In ogni modello di testo usare il primo \<# code block #> per impostare le variabili ed eseguire calcoli complessi. Dal primo blocco di testo fino alla fine del modello o della prima \<#+ class feature block #> , evitare espressioni lunghe ed evitare cicli e condizionali a meno che non contengano blocchi di testo. Questa procedura rende il modello più semplice da leggere e gestire.
 
 Non usare `.tt` per i file di inclusione.
 
-Usare un'estensione di file diversa, ad esempio `.ttinclude` per i file di inclusione. Utilizzare `.tt` solo per i file che si desidera elaborare come modelli di testo in fase di esecuzione o di progettazione. In alcuni casi, Visual Studio riconosce `.tt` file e imposta automaticamente le relative proprietà per l'elaborazione.
+Utilizzare un'estensione del nome di file diversa, ad esempio `.ttinclude` per i file di inclusione. Utilizzare `.tt` solo per i file che si desidera elaborare come modelli di testo in fase di esecuzione o di progettazione. In alcuni casi, Visual Studio riconosce `.tt` i file e ne imposta automaticamente le proprietà per l'elaborazione.
 
 Avviare ogni modello come prototipo fisso.
 

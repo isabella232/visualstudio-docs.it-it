@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188326"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Debug di applicazioni Web: risoluzione dei problemi
@@ -34,4 +34,4 @@ In questa sezione sono contenute le procedure comuni utilizzabili per risolvere 
 ## <a name="related-sections"></a>Sezioni correlate
  [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md) Spiega la risoluzione dei problemi e la risoluzione degli errori.
 
- [Debug di script e applicazioni Web](how-to-enable-debugging-for-aspnet-applications.md) Cenni preliminari sul debug di applicazioni Web quali [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], servizi Web XML e progetti ATL Server.
+ [Debug di script e applicazioni Web](how-to-enable-debugging-for-aspnet-applications.md) Cenni preliminari sul debug di applicazioni Web quali [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , servizi Web XML e progetti ATL Server.

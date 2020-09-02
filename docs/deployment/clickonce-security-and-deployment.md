@@ -18,31 +18,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d33e99d11007ca4684f3d875620e2baeb7ddc1e7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285494"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sicurezza e distribuzione di ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows con aggiornamento automatico che possono essere installate ed eseguite con interazioni utente minime. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]fornisce supporto completo per la pubblicazione e l'aggiornamento di applicazioni distribuite con la tecnologia ClickOnce se i progetti sono stati sviluppati con Visual Basic e Visual C#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [la pagina relativa alla distribuzione ClickOnce per le applicazioni Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows con aggiornamento automatico che possono essere installate ed eseguite con interazioni utente minime. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornisce supporto completo per la pubblicazione e l'aggiornamento di applicazioni distribuite con la tecnologia ClickOnce se i progetti sono stati sviluppati con Visual Basic e Visual C#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [la pagina relativa alla distribuzione ClickOnce per le applicazioni Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]la distribuzione si verifica in tre problemi principali:
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la distribuzione si verifica in tre problemi principali:
 
 - **Difficoltà di aggiornamento delle applicazioni.** Con Microsoft Windows Installer distribuzione, ogni volta che un'applicazione viene aggiornata, l'utente può installare un aggiornamento, un file msp e applicarlo al prodotto installato; con la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, è possibile fornire aggiornamenti automaticamente. Vengono scaricate solo le parti dell'applicazione che sono state modificate, quindi l'applicazione aggiornata completa viene reinstallata da una nuova cartella affiancata.
 
 - **Effetti sul computer dell'utente.** Con Windows Installer distribuzione, le applicazioni spesso si basano su componenti condivisi, con la possibilità di conflitti di controllo delle versioni. con la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, ogni applicazione è indipendente e non può interferire con altre applicazioni.
 
-- **Autorizzazioni di sicurezza.** Windows Installer distribuzione richiede autorizzazioni amministrative e consente solo l'installazione limitata degli utenti. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]la distribuzione consente agli utenti non amministratori di installare e concedere solo le autorizzazioni di sicurezza per l'accesso al codice necessarie per l'applicazione.
+- **Autorizzazioni di sicurezza.** Windows Installer distribuzione richiede autorizzazioni amministrative e consente solo l'installazione limitata degli utenti. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la distribuzione consente agli utenti non amministratori di installare e concedere solo le autorizzazioni di sicurezza per l'accesso al codice necessarie per l'applicazione.
 
   In passato, questi problemi causavano talvolta la creazione di applicazioni Web anziché di applicazioni basate su Windows, sacrificando un'interfaccia utente avanzata per semplificare l'installazione. Utilizzando le applicazioni distribuite mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è possibile sfruttare al meglio entrambe le tecnologie.
 
 ## <a name="what-is-a-clickonce-application"></a>Che cos'è un'applicazione ClickOnce?
  Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è qualsiasi Windows Presentation Foundation (*. XBAP*), Windows Forms (*exe*), applicazione console (*exe*) o soluzione Office (con*estensione dll*) pubblicata usando la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. È possibile pubblicare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in tre modi diversi: da una pagina Web, da una condivisione file di rete o da un supporto come un CD-ROM. Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata nel computer di un utente finale ed eseguita localmente anche quando il computer è offline oppure può essere eseguito in modalità solo online senza installare in modo permanente alcun elemento nel computer dell'utente finale. Per ulteriori informazioni, vedere [scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]le applicazioni possono essere con aggiornamento automatico; possono verificare la disponibilità di versioni più recenti e sostituire automaticamente eventuali file aggiornati. Lo sviluppatore può specificare il comportamento di aggiornamento; un amministratore di rete può controllare le strategie di aggiornamento, ad esempio, rendendo obbligatorio un aggiornamento. È anche possibile eseguire il rollback degli aggiornamenti a una versione precedente dall'utente finale o da un amministratore. Per ulteriori informazioni, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono essere con aggiornamento automatico; possono verificare la disponibilità di versioni più recenti e sostituire automaticamente eventuali file aggiornati. Lo sviluppatore può specificare il comportamento di aggiornamento; un amministratore di rete può controllare le strategie di aggiornamento, ad esempio, rendendo obbligatorio un aggiornamento. È anche possibile eseguire il rollback degli aggiornamenti a una versione precedente dall'utente finale o da un amministratore. Per ulteriori informazioni, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
- Poiché [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni sono isolate, l'installazione o l'esecuzione di un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione non può interrompere le applicazioni esistenti. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]le applicazioni sono autosufficienti; ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene installata ed eseguita da una cache protetta per singolo utente e per ogni applicazione. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]le applicazioni vengono eseguite nelle aree di sicurezza Internet o Intranet. Se necessario, l'applicazione può richiedere autorizzazioni di protezione elevate. Per altre informazioni, vedere [proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).
+ Poiché [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni sono isolate, l'installazione o l'esecuzione di un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione non può interrompere le applicazioni esistenti. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni sono autosufficienti; ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene installata ed eseguita da una cache protetta per singolo utente e per ogni applicazione. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni vengono eseguite nelle aree di sicurezza Internet o Intranet. Se necessario, l'applicazione può richiedere autorizzazioni di protezione elevate. Per altre informazioni, vedere [proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).
 
 ## <a name="how-clickonce-security-works"></a>Funzionamento della sicurezza ClickOnce
  La sicurezza di base [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è basata sui certificati, i criteri di sicurezza dall'accesso di codice e la richiesta di attendibilità ClickOnce.
@@ -91,7 +91,7 @@ ms.locfileid: "85285494"
 ## <a name="clickonce-tools"></a>Strumenti ClickOnce
  La tabella seguente illustra gli strumenti che è possibile usare per generare, modificare, firmare e firmare nuovamente i manifesti dell'applicazione e della distribuzione.
 
-|Strumento|Description|
+|Strumento|Descrizione|
 |----------|-----------------|
 |[Pagina Sicurezza, Progettazione progetti](../ide/reference/security-page-project-designer.md)|Firma i manifesti dell'applicazione e della distribuzione.|
 |[Pagina Pubblica, Progettazione progetti](../ide/reference/publish-page-project-designer.md)|Genera e modifica i manifesti dell'applicazione e della distribuzione per applicazioni Visual Basic e Visual C#.|
@@ -111,7 +111,7 @@ ms.locfileid: "85285494"
 |Chrome|3,5|
 |Microsoft Edge|3,5|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Distribuzione ClickOnce in Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185947"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere dati di campionamento a livello di riga
+# <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere i dati di campionamento a livello di riga
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il campionamento a livello di riga è una capacità del profiler che consente di determinare il punto del codice di una funzione che richiede un uso intensivo del processore, ad esempio una funzione con esempi esclusivi elevati, in cui il processore impiega la maggior parte del tempo.  
@@ -54,10 +54,10 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
   
 - Prima della profilatura, digitare **VSPerfCLREnv /samplelineoff**. Questa operazione ha effetto sulle applicazioni e sui servizi.  
   
-     oppure  
+     - o -  
   
-- Quando si avvia un'applicazione, digitare **VSPerfCmd /lineoff \<altri argomenti>** .  
+- Quando si avvia un'applicazione, digitare **VSPerfCmd \<other arguments> /LineOff **.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
  [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)

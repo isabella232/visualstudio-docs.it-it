@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95a537c703d4afd68bb291205e0c7da8d9b8fc59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143021"
 ---
-# <a name="debugreason"></a>DEBUG_REASON
+# <a name="debug_reason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica il motivo per cui è stato avviato il processo per eseguire il debug.  
+Specifica il motivo per cui è stato avviato il processo di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -49,27 +49,27 @@ public enum enum_DEBUG_REASON {
   
 #### <a name="parameters"></a>Parametri  
  DEBUG_REASON_ERROR  
- Si è verificato un errore non specifico (usato come una condizione predefinita quando nessuno degli altri motivi adattamento).  
+ Si è verificato un errore non specifico (usato come condizione predefinita quando nessuno degli altri motivi si adatta).  
   
  DEBUG_REASON_USER_LAUNCHED  
- Il processo è stato avviato su richiesta dell'utente.  
+ Il processo è stato avviato in corrispondenza della richiesta dell'utente.  
   
  DEBUG_REASON_USER_ATTACHED  
- Il processo già in esecuzione è stato collegato dall'utente.  
+ Il processo già in esecuzione è stato associato dall'utente.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- Il processo è stato associato automaticamente al quando è stata avviata.  
+ Il processo è stato associato automaticamente al momento dell'avvio.  
   
  DEBUG_REASON_CAUSALITY  
- Il processo è stato avviato a causa dell'errore una *Just-In-Time* evento di debug (JIT).  
+ Il processo è stato avviato a causa di un evento di debug JIT ( *just-in-Time* ).  
   
-## <a name="remarks"></a>Note  
- Restituito dal [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Restituito dal metodo [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

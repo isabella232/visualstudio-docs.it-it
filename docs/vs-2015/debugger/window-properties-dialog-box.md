@@ -12,51 +12,51 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eb07b20c08945b6a9f253d0ab634dca1c767d59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187246"
 ---
 # <a name="window-properties-dialog-box"></a>Proprietà finestra (finestra di dialogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usare questa finestra di dialogo per ottenere ulteriori informazioni su una specifica finestra. Per visualizzare questa finestra di dialogo, spostare lo stato attivo per il [Windows Vista](../debugger/windows-view.md) finestra. Selezionare qualsiasi nodo finestra nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
+Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su una finestra specifica. Per visualizzare questa finestra di dialogo, spostare lo stato attivo sulla finestra di [visualizzazione di Windows](../debugger/windows-view.md) . Selezionare un nodo della finestra nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Scheda Generale. Finestra di dialogo Proprietà finestra](../debugger/general-tab-window-properties-dialog-box.md)  
- Mostra le informazioni sulla finestra selezionata.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Scheda generale finestra di dialogo Proprietà finestra](../debugger/general-tab-window-properties-dialog-box.md)  
+ Mostra informazioni sulla finestra selezionata.  
   
- [Scheda Stili. Finestra di dialogo Proprietà finestra](../debugger/styles-tab-window-properties-dialog-box.md)  
- Mostra gli stili applicati per la finestra selezionata.  
+ [Scheda stili finestra di dialogo Proprietà finestra](../debugger/styles-tab-window-properties-dialog-box.md)  
+ Mostra gli stili applicati alla finestra selezionata.  
   
- [Scheda Finestre. Finestra di dialogo Proprietà finestra](../debugger/windows-tab-window-properties-dialog-box.md)  
- Mostra le informazioni in windows per la finestra selezionata.  
+ [Scheda Windows finestra di dialogo Proprietà finestra](../debugger/windows-tab-window-properties-dialog-box.md)  
+ Mostra informazioni sulle finestre correlate alla finestra selezionata.  
   
- [Scheda Classe. Finestra di dialogo Proprietà finestra](../debugger/class-tab-window-properties-dialog-box.md)  
- Mostra le informazioni sulla classe della finestra selezionata.  
+ [Scheda classe finestra di dialogo Proprietà finestra](../debugger/class-tab-window-properties-dialog-box.md)  
+ Mostra informazioni sulla classe della finestra selezionata.  
   
- [Scheda Processo. Finestra di dialogo Proprietà finestra](../debugger/process-tab-window-properties-dialog-box.md)  
+ [Scheda processo. finestra di dialogo Proprietà finestra](../debugger/process-tab-window-properties-dialog-box.md)  
  Identifica il processo della finestra selezionata.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Finestra di dialogo Ricerca finestre](../debugger/window-search-dialog-box.md)  
- Utilizzato per trovare il nodo per una specifica finestra nella visualizzazione di Windows.  
+ Utilizzato per trovare il nodo per una finestra specifica nella visualizzazione di Windows.  
   
- [riferimenti per Spy++](../debugger/spy-increment-reference.md)  
- Include varie sezioni che descrivono ogni Spy + + menu e la finestra di dialogo.  
+ [Riferimenti per Spy++](../debugger/spy-increment-reference.md)  
+ Include sezioni che descrivono ogni menu e finestra di dialogo di Spy + +.  
   
- [Usando lo strumento di ricerca](../debugger/how-to-use-the-finder-tool.md)  
- Viene illustrato come questo strumento esegue l'analisi di windows per le proprietà o i messaggi.  
+ [Uso dello strumento di ricerca](../debugger/how-to-use-the-finder-tool.md)  
+ Mostra in che modo questo strumento analizza le finestre per le proprietà o i messaggi.  
   
- [La ricerca di una finestra in Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Viene illustrato come trovare una specifica finestra nella visualizzazione di Windows.  
+ [Ricerca di una finestra nella visualizzazione di Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ Viene illustrato come trovare una finestra specifica nella visualizzazione di Windows.  
   
- [visualizzazione finestre](../debugger/windows-view.md)  
- Consente di visualizzare una visualizzazione struttura ad albero dei controlli e finestre disponibili.  
+ [Visualizzazione finestre](../debugger/windows-view.md)  
+ Consente di visualizzare una visualizzazione albero delle finestre e dei controlli disponibili.  
   
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  
- Illustra le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.  
+ Illustra le visualizzazioni ad albero di Spy + + di Windows, i messaggi, i processi e i thread.  
   
- [Uso di Spy++](../debugger/using-spy-increment.md)  
+ [Utilizzo di Spy++](../debugger/using-spy-increment.md)  
  Introduce lo strumento Spy + + e spiega come può essere usato.

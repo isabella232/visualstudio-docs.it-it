@@ -6,17 +6,17 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71128386"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
 
-Microsoft Build Engine è una piattaforma per la creazione di applicazioni. Il motore, noto anche come MSBuild, è stato sviluppato da Microsoft e consente la creazione di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. In questo momento, tuttavia, xbuild è stato gradualmente eliminato a favore dell'utilizzo di MSBuild in tutti i sistemi operativi.
+Il Microsoft Build Engine è una piattaforma per la compilazione di applicazioni. Il motore, noto anche come MSBuild, è stato sviluppato da Microsoft e consente la creazione di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. Al momento, tuttavia, xbuild è stato eliminato a favore dell'utilizzo di MSBuild in tutti i sistemi operativi.
 
-**MSBuild** viene usato come sistema di compilazione per i progetti in Visual Studio per Mac e funziona prendendo un set di input, ad esempio i file di origine, e li trasforma in output, ad esempio eseguibili. tramite la chiamata a strumenti quali il compilatore.
+**MSBuild** viene usato come sistema di compilazione per i progetti in Visual Studio per Mac e funziona prendendo un set di input, ad esempio i file di origine, e li trasforma in output, ad esempio i file eseguibili. tramite la chiamata a strumenti quali il compilatore.
 
 ## <a name="msbuild-file"></a>File di MSBuild
 
@@ -101,5 +101,5 @@ Il frammento di codice seguente, ad esempio, crea le schermate di avvio di iOS. 
 
 Per approfondire le proprie conoscenze di MSBuild, è possibile usare le risorse seguenti:
 
-* [Cenni preliminari su MSBuild](/visualstudio/msbuild/msbuild)
-* [Concetti relativi a MSBuildMSBuild Concepts](/visualstudio/msbuild/msbuild-concepts)
+* [Panoramica di MSBuild](/visualstudio/msbuild/msbuild)
+* [Concetti relativi a MSBuild](/visualstudio/msbuild/msbuild-concepts)

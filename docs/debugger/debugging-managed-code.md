@@ -17,19 +17,19 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188408"
 ---
-# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug di codice gestitoC#(, Visual Basic F#, C++,/CLI)
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug di codice gestito (C#, Visual Basic, F #, C++/CLI)
 
-Questa sezione descrive i problemi e le tecniche comuni di debug per le applicazioni gestite o le applicazioni scritte in linguaggi destinati ai Common Language Runtime, ad C#esempio Visual Basic C++, e/cli. Le tecniche descritte sono di livello avanzato. [Presentazione del debugger](../debugger/debugger-feature-tour.md).
+Questa sezione descrive i problemi e le tecniche comuni di debug per le applicazioni gestite o le applicazioni scritte in linguaggi destinati ai Common Language Runtime, ad esempio Visual Basic, C# e C++/CLI. Le tecniche descritte sono di livello avanzato. [Esaminare prima di tutto il debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-[Messaggi diagnostici nella finestra di output](../debugger/diagnostic-messages-in-the-output-window.md)\
+[Messaggi di diagnostica nel Finestra di output](../debugger/diagnostic-messages-in-the-output-window.md)\
 Vengono descritte le classi <xref:System.Diagnostics.Debug> e <xref:System.Diagnostics.Trace>, con le quali è possibile scrivere messaggi di runtime nella finestra di **Output**. Queste classi includono metodi di output che supportano l'output di informazioni senza interruzione dell'esecuzione e l'output di informazioni con interruzione dell'esecuzione se non viene rispettata una condizione specificata.
 
 [Asserzioni nel codice gestito](../debugger/assertions-in-managed-code.md)\
@@ -38,7 +38,7 @@ Vengono descritte le asserzioni nel codice gestito, che verificano le condizioni
 [Istruzioni Stop in Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Viene descritta l'istruzione `Stop`, che fornisce un'alternativa all'impostazione di un punto di interruzione. Sono inoltre disponibili esempi di codice e un confronto tra le istruzioni `Stop` ed `End` e tra le istruzioni `Stop` e `Assert`.
 
-[Procedura dettagliata: Debug di un Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Procedura dettagliata: debug di un Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
 Vengono date istruzioni dettagliate per la creazione di un Windows Form e per il debug di tale form. Un Windows Form, un componente standard di un'applicazione Windows gestita, è una delle applicazioni gestite più comuni. In questa procedura dettagliata vengono utilizzati Visual C# e Visual Basic, ma le tecniche per la creazione di un Windows Form con C++ sono simili.
 
 [Debug del metodo OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,16 +47,16 @@ Vengono forniti codici di esempio per consentire il debug del metodo `OnStart` d
 [Debug in modalità mista](../debugger/debugging-mixed-mode-applications.md)\
 Viene descritto il debug di applicazioni in modalità mista, ovvero qualsiasi applicazione nella quale vengono combinati codice nativo e codice gestito.
 
-[Errore: impossibile eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Errore: Impossibile eseguire il debug perché nel sistema è abilitato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 Viene descritto un messaggio di errore visualizzato se si tenta di eseguire il debug del codice gestito in un sistema [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] o Windows NT avviato in modalità debug.
 
-[Debug e ottimizzazione JIT](../debugger/jit-optimization-and-debugging.md)\
+[Ottimizzazione e debug JIT](../debugger/jit-optimization-and-debugging.md)\
 Vengono descritti gli effetti dell'ottimizzazione JIT sul debug.
 
-[Debug LINQ e DLINQ](../debugger/debugging-linq.md)\
+[Debug di LINQ e DLINQ](../debugger/debugging-linq.md)\
 Vengono illustrate le tecniche per il debug di query LINQ.
 
-[Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)\
+[Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)\
 Viene descritto come usare le finestre degli strumenti **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela.
 
 ## <a name="related-sections"></a>Sezioni correlate
@@ -70,7 +70,7 @@ Vengono descritte la traccia, che consente di monitorare l'esecuzione dell'appli
 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)\
 Viene descritta un'opzione del linker che aggiunge <xref:System.Diagnostics.DebuggableAttribute> al codice scritto con C++. Questo attributo è necessario per l'utilizzo di funzionalità di debug, quali la connessione con C++.
 
-[Esecuzione del debug delle applicazioni di servizio Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
+[Debug di applicazioni di servizio Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
 Vengono fornite considerazioni per il debug di applicazioni di servizio Windows, quali: impostazione, connessione al processo, debug del codice nel metodo `OnStart` del servizio e il codice nel metodo Main, impostazione di punti di interruzione e utilizzo di Services Control Manager per avviare, interrompere, arrestare e continuare il servizio.
 
 [Debug e profilatura](/dotnet/framework/debug-trace-profile/index)\

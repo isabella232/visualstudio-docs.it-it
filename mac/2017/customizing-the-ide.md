@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79301713"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315005"
 ---
 # <a name="customizing-the-ide"></a>Personalizzazione dell'IDE
 
@@ -60,7 +60,7 @@ Queste informazioni vengono usate per popolare le intestazioni standard dei file
 
 I campi **Nome** e **Posta elettronica** vengono usati in tutti i commit eseguiti tramite il controllo della versione in Visual Studio per Mac. Se questi campi non sono popolati, Visual Studio per Mac chiede di farlo quando si tenta di usare il controllo della versione.
 
-## <a name="key-bindings"></a>Associazioni di chiave
+## <a name="key-bindings"></a>Combinazioni di tasti
 
 I tasti di scelta rapida consentono di adattare l'ambiente di sviluppo in modo da rendere più efficienti gli spostamenti all'interno di Visual Studio per Mac. Sono disponibili tasti di scelta rapida familiari presenti nelle interfacce IDE più diffuse, ad esempio Visual Studio (in Windows), ReSharper, Visual Studio Code e Xcode.
 

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197630"
 ---
 # <a name="datakind"></a>DataKind
@@ -44,40 +44,40 @@ enum DataKind { 
   
 ## <a name="elements"></a>Elementi  
  DataIsUnknown  
- Non è possibile determinare il simbolo dei dati.  
+ Non è possibile determinare il simbolo di dati.  
   
  DataIsLocal  
- Elemento dati è una variabile locale.  
+ L'elemento dati è una variabile locale.  
   
  DataIsStaticLocal  
- Elemento dati è una variabile locale statica.  
+ L'elemento dati è una variabile locale statica.  
   
  DataIsParam  
- Elemento dati è un parametro formale.  
+ L'elemento dati è un parametro formale.  
   
  DataIsObjectPtr  
- Elemento dati è un puntatore a oggetto (`this`).  
+ L'elemento dati è un puntatore a oggetto ( `this` ).  
   
  DataIsFileStatic  
- Elemento di dati è una variabile con ambito file.  
+ L'elemento dati è una variabile con ambito file.  
   
  DataIsGlobal  
- Elemento dati è una variabile globale.  
+ L'elemento dati è una variabile globale.  
   
  DataIsMember  
- Elemento dati è una variabile membro oggetto.  
+ L'elemento dati è una variabile membro oggetto.  
   
  DataIsStaticMember  
- Elemento dati è una variabile di classe statici.  
+ L'elemento dati è una variabile statica di classe.  
   
  DataIsConstant  
- Elemento dati è un valore costante.  
+ L'elemento dati è un valore costante.  
   
-## <a name="remarks"></a>Note  
- I valori di questa enumerazione vengono restituiti per il [Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: cvconst.h  
+ Intestazione: cvconst. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   

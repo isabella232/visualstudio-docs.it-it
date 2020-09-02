@@ -1,5 +1,5 @@
 ---
-title: Variante del formato di destinazione di rendering a 16bpp | Microsoft Docs
+title: Variante del formato di destinazione di rendering 16bpp | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157565"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Variante del formato di destinazione di rendering 16bpp
@@ -34,7 +34,7 @@ Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazion
   
  Le architetture GPU che usano tecniche di rendering basate su riquadri registrano vantaggi significativi usando un formato di buffer di frame a 16bpp perché la cache del frame di buffer locale di ogni riquadro può ospitare una parte del buffer di frame più grande. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:  
   
 - Il membro BindFlags presenta il flag D3D11_BIND_REDNER_TARGET impostato.  
@@ -43,11 +43,11 @@ Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazion
   
 - Il membro Usage è impostato su D3D11_USAGE_DEFAULT.  
   
-## <a name="restrictions-and-limitations"></a>Limiti e restrizioni  
+## <a name="restrictions-and-limitations"></a>Restrizioni e limitazioni  
  Poiché il formato B5G6R5 non ha un canale alfa, il contenuto alfa non viene mantenuto da questa variante. Se il rendering dell'app richiede un canale alfa nella destinazione di rendering, non è possibile passare semplicemente al formato B5G6R5.  
   
 ## <a name="example"></a>Esempio  
- Il **formato di destinazione di rendering a 16bpp** variante può essere riprodotta per destinazioni di rendering create tramite `CreateTexture2D` usando codice simile al seguente:  
+ La variante del **formato di destinazione di rendering 16bpp** può essere riprodotta per le destinazioni di rendering create tramite usando `CreateTexture2D` codice simile al seguente:  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  

@@ -14,10 +14,10 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37a1965712920420bdc4d784a003dbfbd2f2167a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285218"
 ---
 # <a name="add-tags-to-project-templates"></a>Aggiungere tag ai modelli di progetto
@@ -52,7 +52,7 @@ I tag vengono usati in due posizioni nella finestra di dialogo **nuovo progetto*
 <ProjectTypeTag> Project Type </ProjectTypeTag>
 ```
 
-## <a name="attributes"></a>Attributi
+## <a name="attributes"></a>Attributes
 
 È possibile usare gli attributi facoltativi seguenti in scenari utente avanzati:
 
@@ -73,11 +73,11 @@ Sintassi:
 
 ### <a name="child-elements"></a>Elementi figlio
 
-No.
+Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Obbligatorio) Classifica il modello in base alla categoria e ne definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento**.|
 
@@ -145,7 +145,7 @@ L'esempio seguente mostra i metadati per un modello di progetto per un'applicazi
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](creating-project-and-item-templates.md)
