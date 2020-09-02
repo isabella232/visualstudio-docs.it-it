@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a45568ea62a767d06a33c324f0f05a1f697e93f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464982"
 ---
 # <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
@@ -36,7 +36,7 @@ HRESULT get_rawLVarInstanceValue(
 #### <a name="parameters"></a>Parametri
  `pInstance`
 
-in `IDiaLVarInstance`Oggetto che rappresenta un'istanza della variabile locale per la quale ottenere il valore.
+in `IDiaLVarInstance` Oggetto che rappresenta un'istanza della variabile locale per la quale ottenere il valore.
 
  `cbDataMax`
 
@@ -53,5 +53,5 @@ out Buffer da compilare con i dati. Non può essere `NULL`.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

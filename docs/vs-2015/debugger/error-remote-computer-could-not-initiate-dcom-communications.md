@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Computer remoto non è stato possibile avviare le comunicazioni DCOM | Microsoft Docs'
+title: 'Errore: il computer remoto non è riuscito ad avviare le comunicazioni DCOM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8ddec2bdec09da1f1175b59c94db31841a1453f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697330"
 ---
-# <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Errore: Il computer remoto non può iniziare le comunicazioni DCOM
+# <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Errore: il computer remoto non può avviare le comunicazioni DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando il computer remoto ha tentato di comunicare con il computer locale si è verificato un errore DCOM. Il computer locale è il computer che  
@@ -36,7 +36,7 @@ Quando il computer remoto ha tentato di comunicare con il computer locale si è 
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1. Se nel computer locale è abilitato Windows Firewall, vedere [Set Up the Remote Tools sul dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) per istruzioni su come configurare il firewall per il debug locale.  
+1. Se il computer locale è Windows Firewall abilitato, vedere [configurare la strumenti remoti nel dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) per istruzioni su come configurare il firewall per il debug locale.  
   
 2. Testare l'autenticazione di Windows tentando di aprire una condivisione di file nel computer locale dal server remoto.  
   

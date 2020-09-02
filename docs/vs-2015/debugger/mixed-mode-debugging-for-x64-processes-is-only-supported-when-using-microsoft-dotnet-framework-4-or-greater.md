@@ -1,5 +1,5 @@
 ---
-title: Modalità mista debug per i processi x64 è solo supportato quando si usa Microsoft.NET Framework 4 o versioni successive | Microsoft Docs
+title: Il debug in modalità mista per i processi x64 è supportato solo quando si usa Microsoft.NET Framework 4 o versione successiva | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,26 +17,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e974269cccb65db66ee59735f7acc5de494e2106
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697825"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-NET Framework versioni precedenti a 4 non forniscono supporto per il debug in modalità mista di x64 processi. Ciò significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.  
+Le versioni di .NET Framework precedenti alla 4 non forniscono supporto per il debug in modalità mista di processi x64. Ciò significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.  
   
-### <a name="workarounds"></a>Soluzioni  
+### <a name="workarounds"></a>Soluzioni alternative  
   
 - Aggiornare il progetto per l'utilizzo di Microsoft .NET Framework 4 o versione successiva.  
   
-     - oppure -  
+     –oppure–  
   
      Eseguire il debug del codice gestito e del codice nativo in sessioni di debug separate.  
   
-     - oppure -  
+     –oppure–  
   
      Eseguire il debug del codice misto come processo a 32 bit, come descritto nelle procedure che seguono.  
   
@@ -58,7 +58,7 @@ NET Framework versioni precedenti a 4 non forniscono supporto per il debug in mo
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Visualizzare [impostazione del debug SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Vedere [configurazione del debug SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Eseguire il debug di applicazioni a 64 Bit](../debugger/debug-64-bit-applications.md)
+ [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)

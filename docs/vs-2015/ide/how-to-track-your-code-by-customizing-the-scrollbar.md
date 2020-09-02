@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a852b0e5ac6c6a677caab97279a0b0cb0299d27f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670628"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Procedura: tenere traccia del codice personalizzando la barra di scorrimento
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Procedura: Tenere traccia del codice personalizzando la barra di scorrimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si usano file di codice lunghi, può risultare difficile tenere presente tutto il contenuto. È possibile personalizzare la barra di scorrimento della finestra del codice per ottenere una panoramica del contenuto del codice.
@@ -25,7 +25,7 @@ Quando si usano file di codice lunghi, può risultare difficile tenere presente 
 
 1. È possibile configurare la barra di scorrimento in modo da visualizzare le modifiche al codice, i punti di interruzione, gli errori e i segnalibri.
 
-     Aprire la pagina Opzioni **barra di scorrimento** (**strumenti, Opzioni editor di testo. Tutti i linguaggi** o un linguaggio specifico o digitare la **barra di scorrimento** nella finestra avvio veloce).
+     Aprire la pagina Opzioni **barra di scorrimento** (**strumenti, Opzioni editor di testo. Tutti i linguaggi** o un linguaggio specifico o digitare la  **barra di scorrimento** nella finestra avvio veloce).
 
 2. Selezionare **Mostra annotazioni su barra di scorrimento verticale** e quindi selezionare le annotazioni da visualizzare. L'opzione **Contrassegni** include punti di interruzione e segnalibri.
 
@@ -49,7 +49,7 @@ Quando si usano file di codice lunghi, può risultare difficile tenere presente 
 
      ![Barra di scorrimento in modalità mappa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
-2. In modalità mappa per abilitare le anteprime del codice quando si sposta il cursore verso l'alto e il basso nella barra di scorrimento, selezionare l'opzione **Mostra descrizione comando anteprima**. L'aspetto è il seguente:
+2. In modalità mappa per abilitare le anteprime del codice quando si sposta il cursore verso l'alto e il basso nella barra di scorrimento, selezionare l'opzione **Mostra descrizione comando anteprima**. Ecco come appare:
 
      ![Barra di scorrimento con una descrizione comando](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
 

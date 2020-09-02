@@ -19,9 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017024"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importa elementi da un sito di SharePoint esistente
@@ -90,7 +91,7 @@ ms.locfileid: "86017024"
 
  Se ad esempio si importa la definizione di elenco ExpenseForms, viene visualizzata una definizione di elenco con tale nome nella cartella **definizioni di elenco** in **Esplora soluzioni** insieme ai relativi file *Elements.xml* e *Schema.xml* . Tuttavia, i form ASPX e HTML associati possono essere inseriti in una cartella denominata **ExpenseForms** nella cartella **Altri file importati** . Per completare l'importazione, spostare i file nella definizione di elenco ExpenseForms in **Esplora soluzioni** e modificare la proprietà **DeploymentType** per ogni file da **NoDeployment** a **ElementFile**.
 
- Quando si importano i ricevitori di eventi, il file di *Elements.xml* viene copiato nel percorso corretto, ma è necessario includere manualmente l'assembly nel pacchetto della soluzione in modo che venga distribuito con la soluzione. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)]come eseguire questa operazione, vedere [procedura: aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+ Quando si importano i ricevitori di eventi, il file di *Elements.xml* viene copiato nel percorso corretto, ma è necessario includere manualmente l'assembly nel pacchetto della soluzione in modo che venga distribuito con la soluzione. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] come eseguire questa operazione, vedere [procedura: aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
  Quando si importano i flussi di lavoro, i moduli di InfoPath vengono copiati nella cartella **Altri file importati** . Se il file con *estensione wsp* contiene un modello Web, viene impostato come pagina di avvio in **Esplora soluzioni**.
 
@@ -125,7 +126,7 @@ ms.locfileid: "86017024"
 ## <a name="the-sharepointproductversion-attribute"></a>Attributo SharePointProductVersion
  Quando si importa una soluzione creata in una versione precedente di SharePoint come [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], impostare il valore dell'attributo SharePointProductVersion su 12.0 nel manifesto del pacchetto o inserire un controllo di gestione script in tutte le pagine Web importate e lasciare l'attributo SharePointProductVersion impostato su 14.0. In caso contrario, i Web Form importati non vengono visualizzati in SharePoint.
 
-### <a name="background"></a>Background
+### <a name="background"></a>Sfondo
  Le soluzioni in [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] includono un attributo denominato SharePointProductVersion. In SharePoint questo attributo viene usato nei manifesti di pacchetto per determinare la versione di SharePoint per cui è progettata la soluzione. I due valori validi sono 12.0 e 14.0. Il valore 12.0 indica che l'elemento è progettato per [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], mentre il valore 14.0 indica che l'elemento è progettato per [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
  Per maggiore sicurezza durante il rendering di pagine ASPX, [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] richiedono che tutte le pagine master o ASPX contengano un controllo di gestione di script. Per altre informazioni sul gestore di script, vedere [Panoramica del controllo ScriptManager](/previous-versions/bb398863(v=vs.140)). Dato che il controllo di gestione script non è disponibile in [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] e [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], è necessario aggiungerne uno a qualsiasi pagina di [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] che venga aggiornata a [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]. Le pagine ASPX che usano una pagina master standard non richiedono un controllo di gestione di script perché ne è già stato aggiunto uno alla pagina master standard. Per le pagine ASPX che non usano una pagina master o che usano una pagina master personalizzata, invece, è necessario aggiungere un controllo script per consentirne il funzionamento in [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].

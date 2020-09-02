@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbea61c2a26b1dc81487365ef8fc3f320ac95943
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657310"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagrammi casi d'uso UML: riferimento
@@ -42,26 +42,26 @@ In Visual Studio un *diagramma caso di utilizzo* riepiloga chi usa l'applicazion
  Le tabelle nelle sezioni seguenti descrivono gli elementi disponibili in un diagramma caso di utilizzo oltre alle relative proprietà principali. Per un elenco completo delle proprietà, vedere [proprietà di elementi in diagrammi caso di utilizzo UML](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).
 
 ### <a name="actors-use-cases-and-subsystems"></a>Attori, casi di utilizzo e sottosistemi
- ![Elementi in un diagramma caso di utilizzo](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
+ ![Elementi in un diagramma di caso di utilizzo](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
 
-|**Forma**|**Elemento**|**Descrizione e proprietà principali**|
+|**Con forme**|**elemento**|**Descrizione e proprietà principali**|
 |---------------|-----------------|-----------------------------------------|
-|1|**Attore**|Rappresenta un utente, un'organizzazione o un sistema esterno che interagisce con l'applicazione o il sistema. Un attore è un tipo di elemento.<br /><br /> -   **percorso immagine** : il percorso del file di un'immagine da usare al posto dell'icona dell'attore predefinito. L'icona deve essere un file di risorse all'interno del progetto di Visual Studio.|
-|2|**Caso d'uso**|Rappresenta le azioni eseguite da uno o più attori per il perseguimento di un obiettivo specifico. Un caso di utilizzo è un tipo di elemento.<br /><br /> -   **Subjects** : il sottosistema in cui viene visualizzato il caso di utilizzo.|
-|3\.|**Associazione**|Indica che un attore partecipa a un caso di utilizzo.|
-|4|**Sottosistema o componente**|L'applicazione o il sistema in cui si sta lavorando o una parte di esso. Può essere una rete di grandi dimensioni o una singola classe di un'applicazione.<br /><br /> I casi di utilizzo supportati da un sistema o un componente vengono visualizzati all'interno del rettangolo. Può essere utile illustrare alcuni casi di utilizzo all'esterno del rettangolo per chiarire l'ambito del sistema.<br /><br /> Un sottosistema in un diagramma caso di utilizzo ha fondamentalmente lo stesso tipo di un componente in un diagramma dei componenti.<br /><br /> **viene creata indirettamente un'istanza** di -   : se false, il sistema in esecuzione dispone di uno o più oggetti che corrispondono direttamente a questo sottosistema. Se true, il sottosistema è un costrutto nella progettazione visualizzato nel sistema in esecuzione solo tramite la creazione di istanze delle relative parti costituenti.|
+|1|**Actor**|Rappresenta un utente, un'organizzazione o un sistema esterno che interagisce con l'applicazione o il sistema. Un attore è un tipo di elemento.<br /><br /> -   **Percorso immagine** : il percorso del file di un'immagine da usare al posto dell'icona dell'attore predefinito. L'icona deve essere un file di risorse all'interno del progetto di Visual Studio.|
+|2|**Caso d'uso**|Rappresenta le azioni eseguite da uno o più attori per il perseguimento di un obiettivo specifico. Un caso di utilizzo è un tipo di elemento.<br /><br /> -   **Subjects** : sottosistema in cui viene visualizzato il caso di utilizzo.|
+|3|**Associazione**|Indica che un attore partecipa a un caso di utilizzo.|
+|4|**Sottosistema o componente**|L'applicazione o il sistema in cui si sta lavorando o una parte di esso. Può essere una rete di grandi dimensioni o una singola classe di un'applicazione.<br /><br /> I casi di utilizzo supportati da un sistema o un componente vengono visualizzati all'interno del rettangolo. Può essere utile illustrare alcuni casi di utilizzo all'esterno del rettangolo per chiarire l'ambito del sistema.<br /><br /> Un sottosistema in un diagramma caso di utilizzo ha fondamentalmente lo stesso tipo di un componente in un diagramma dei componenti.<br /><br /> -   **Viene creata indirettamente** . Se false, il sistema in esecuzione dispone di uno o più oggetti che corrispondono direttamente a questo sottosistema. Se true, il sottosistema è un costrutto nella progettazione visualizzato nel sistema in esecuzione solo tramite la creazione di istanze delle relative parti costituenti.|
 
 ### <a name="structuring-use-cases"></a>Strutturazione dei casi di utilizzo
- ![Casi d'uso con Includi, Estendi e generalizzazione](../modeling/media/uml-ucovstructure.png "UML_UCOvStructure")
+ ![Casi di utilizzo con Includi, Estendi e Generalizzazione](../modeling/media/uml-ucovstructure.png "UML_UCOvStructure")
 
-|Forma|**Elemento**|Descrizione|
+|Con forme|**elemento**|Descrizione|
 |-----------|-----------------|-----------------|
 |5|**Includere**|Un caso di utilizzo di inclusione chiama il caso di utilizzo incluso. L'inclusione viene usata per mostrare come un caso di utilizzo venga suddiviso in passaggi più piccoli. Il caso di utilizzo incluso viene inserito all'estremità della freccia.<br /><br /> Si noti che il diagramma non mostra l'ordine dei passaggi. È possibile usare un diagramma di attività, un diagramma di sequenza o un altro documento per descrivere questi dettagli.|
-|6|**Estendere**|Un caso di utilizzo di estensione aggiunge gli obiettivi e passaggi per il caso di utilizzo esteso. Le estensioni possono essere usate solo in determinate condizioni. Il caso di utilizzo esteso viene inserito all'estremità della freccia.<br /><br /> Si noti che il diagramma non mostra le circostanze esatte in cui viene applicata l'estensione. È possibile registrare tali dettagli in un commento o un altro documento.|
+|6|**Estendi**|Un caso di utilizzo di estensione aggiunge gli obiettivi e passaggi per il caso di utilizzo esteso. Le estensioni possono essere usate solo in determinate condizioni. Il caso di utilizzo esteso viene inserito all'estremità della freccia.<br /><br /> Si noti che il diagramma non mostra le circostanze esatte in cui viene applicata l'estensione. È possibile registrare tali dettagli in un commento o un altro documento.|
 |7|**Ereditarietà**|Mette in correlazione un elemento specializzato e un elemento generalizzato. L'elemento generalizzato viene inserito all'estremità della freccia.<br /><br /> Un caso di utilizzo specializzato eredita gli obiettivi e gli attori della relativa generalizzazione e può aggiungere obiettivi più specifici e i passaggi per raggiungerli.<br /><br /> Un attore specializzato eredita i casi di utilizzo, gli attributi e le associazioni della relativa generalizzazione e può aggiungerne altri.|
 |8|**Dipendenza**|Indica che la progettazione dell'origine dipende dalla progettazione della destinazione.|
-|9|**Commentoo**|Usato per aggiungere note generali al diagramma.|
-|10|**Artefatto**|Un elemento fornisce un collegamento a un altro diagramma o documento. È possibile crearlo trascinando un file da Esplora soluzioni. Può essere collegato con una dipendenza a qualsiasi altro elemento del diagramma. Un elemento viene in genere usato per collegare un caso di utilizzo a un diagramma di sequenza, una pagina di OneNote, un documento di Word o una presentazione di PowerPoint che ne descrive i dettagli. Il documento può essere un elemento della soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o un documento in una posizione condiviso, ad esempio un sito di SharePoint.<br /><br /> -   **collegamento ipertestuale**. L'URL o il percorso del file del diagramma o del documento.<br /><br /> Fare doppio clic su un elemento per aprire il file o una pagina Web a cui è collegato.|
+|9|**Commento**|Usato per aggiungere note generali al diagramma.|
+|10|**Elemento**|Un elemento fornisce un collegamento a un altro diagramma o documento. È possibile crearlo trascinando un file da Esplora soluzioni. Può essere collegato con una dipendenza a qualsiasi altro elemento del diagramma. Un elemento viene in genere usato per collegare un caso di utilizzo a un diagramma di sequenza, una pagina di OneNote, un documento di Word o una presentazione di PowerPoint che ne descrive i dettagli. Il documento può essere un elemento della soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o un documento in una posizione condiviso, ad esempio un sito di SharePoint.<br /><br /> -   **Collegamento ipertestuale**. L'URL o il percorso del file del diagramma o del documento.<br /><br /> Fare doppio clic su un elemento per aprire il file o una pagina Web a cui è collegato.|
 |11 (non mostrato)|**Pacchetti**|I casi di utilizzo, gli attori e i sottosistemi possono essere contenuti all'interno di pacchetti. Le forme di pacchetto non vengono visualizzate nel diagramma, ma è possibile impostare la proprietà **LinkedPackage** del diagramma. Elementi creati successivamente nel diagramma vengono posizionati all'interno del pacchetto. Per altre informazioni, vedere [definire pacchetti e spazi dei nomi](../modeling/define-packages-and-namespaces.md).|
 
 ## <a name="see-also"></a>Vedere anche

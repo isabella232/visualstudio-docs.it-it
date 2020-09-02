@@ -1,6 +1,6 @@
 ---
-title: Nucleo di ASP.NET debug
-description: Eseguire il debug di ASP.NET Core tramite il debugger di Visual StudioDebug ASP.NET Core using the Visual Studio debugger
+title: ASP.NET Core di debug
+description: Eseguire il debug di ASP.NET Core usando il debugger di Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847880"
 ---
-# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il debug di ASP.NET Core con il debugger di Visual StudioQuickstart: Debug ASP.NET Core with the Visual Studio debugger
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Guida introduttiva: eseguire il debug di ASP.NET Core con il debugger di Visual Studio
 
 Il debugger di Visual Studio propone molte funzionalità potenti per il debug delle app. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
@@ -31,7 +31,7 @@ Il debugger di Visual Studio propone molte funzionalità potenti per il debug de
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere **Modelli**, quindi scegliere **Crea una nuova applicazione Web ASP.NET Core**. Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
+    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C#** scegliere **Web** e quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
 
     Nella finestra di dialogo visualizzata scegliere **Applicazione Web** nel riquadro centrale e quindi fare clic su **OK**.
 
@@ -138,4 +138,4 @@ Per altre informazioni sull'uso della funzione di modifica e continua e sulle li
 In questa esercitazione si è appreso come avviare il debugger, eseguire il codice ed esaminare le variabili. Sono disponibili una panoramica delle funzionalità del debugger e collegamenti a ulteriori informazioni.
 
 > [!div class="nextstepaction"]
-> [Primo sguardo al debugger](../debugger/debugger-feature-tour.md)
+> [Presentazione del debugger](../debugger/debugger-feature-tour.md)

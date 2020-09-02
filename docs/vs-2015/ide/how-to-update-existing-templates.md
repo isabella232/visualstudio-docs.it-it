@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b56cf11057957b0eb99fc065ed26af10d8adfbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670579"
 ---
 # <a name="how-to-update-existing-templates"></a>Procedura: aggiornare modelli esistenti
@@ -61,7 +61,7 @@ Dopo aver creato un modello e compresso i file in un file ZIP, può essere neces
 
 8. Avviare come amministratore un'istanza del prompt dei comandi di sviluppo (nel menu Start in **Visual Studio 2010/Strumenti di Visual Studio/Prompt dei comandi per gli sviluppatori**).
 
-9. Eseguire il comando seguente: `devenv /installvstemplates`.
+9. Eseguire questo comando: `devenv /installvstemplates`.
 
 ## <a name="see-also"></a>Vedere anche
  [Personalizzazione dei modelli](../ide/customizing-project-and-item-templates.md) [creazione di modelli di progetto e modelli di elemento di](../ide/creating-project-and-item-templates.md) [Visual Studio riferimenti allo schema](../extensibility/visual-studio-template-schema-reference.md) del modello [parametri](../ide/template-parameters.md) [procedura: creare starter kit](../ide/how-to-create-starter-kits.md)

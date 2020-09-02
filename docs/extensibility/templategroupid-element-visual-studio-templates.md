@@ -1,5 +1,5 @@
 ---
-title: Elemento TemplateGroupID (modelli di Visual Studio) Documenti Microsoft
+title: Elemento TemplateGroupID (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699069"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelli di Visual Studio)
-Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento. Questo elemento è significativo quando [ShowByDefault (modelli](../extensibility/showbydefault-visual-studio-templates.md) di Visual Studio) è impostato su `false`. Quando [ShowByDefault (modelli](../extensibility/showbydefault-visual-studio-templates.md) di Visual `true`Studio) è impostato su , in tutti i tipi di progetto è disponibile un modello di elemento.
+Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento. Questo elemento è significativo quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostato su `false` . Quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostato su `true` , un modello di elemento è disponibile in tutti i tipi di progetto.
 
- \<VSTemplate \<> TemplateData>> \<
+ \<VSTemplate> \<TemplateData>
+ \<TemplateGroupID>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- No.
+### <a name="attributes"></a>Attributes
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -55,7 +56,7 @@ Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento
 ## <a name="remarks"></a>Osservazioni
  `TemplateGroupID` è un elemento.
 
- Il valore `TemplateGroupID` dell'elemento viene utilizzato insieme alla registrazione del sistema\\del progetto (HKEY_LOCAL_MACHINE , SOFTWARE , Microsoft VisualStudio*\<numero di versione>* progetti\\) per filtrare i modelli visualizzati nella finestra di dialogo Aggiungi nuovo **elemento** .
+ Il valore dell' `TemplateGroupID` elemento viene utilizzato insieme alla registrazione del sistema del progetto (HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \projects \\ ) per filtrare i modelli visualizzati nella finestra di dialogo **Aggiungi nuovo elemento** .
 
 |Valore di Visual C++|Significato|
 |------------------------|-------------|

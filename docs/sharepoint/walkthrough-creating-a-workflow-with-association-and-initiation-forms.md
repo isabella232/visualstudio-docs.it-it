@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86017136"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio
@@ -167,7 +168,7 @@ ms.locfileid: "86017136"
 
 2. Nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento** per visualizzare la finestra di dialogo **Aggiungi nuovo elemento** .
 
-3. Nella visualizzazione albero della finestra di dialogo espandere **Visual C#** o **Visual Basic** (a seconda del linguaggio del progetto), espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
+3. Nella visualizzazione albero della finestra di dialogo espandere **Visual C#** o **Visual Basic**  (a seconda del linguaggio del progetto), espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
 4. Nell'elenco dei modelli scegliere il modello **modulo di avvio del flusso di lavoro** .
 

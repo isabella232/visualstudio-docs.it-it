@@ -10,10 +10,10 @@ ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
 ms.openlocfilehash: a651aaa74465f053aa0ae7eee0f3caba3f288192
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238907"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Riferimento al valore del colore per Visual Studio
@@ -170,7 +170,7 @@ Quando si usa questa guida di riferimento, tenere presente quanto segue:
 > [!NOTE]
 > **Contrasto elevato campioni vengono visualizzati solo per il confronto.** Usare il nome del colore di sistema per Contrasto elevato interfaccia utente e non usare un contagocce o una selezione colori su questi campioni. Contrasto elevato campioni in questo argomento riflettono il tema Contrasto elevato #1 di Windows. I colori hanno un aspetto diverso in altri temi Contrasto elevato.
 
-### <a name="content"></a>Contenuto
+### <a name="content"></a>Content
 
 | | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
@@ -346,7 +346,7 @@ Quando si usa questa guida di riferimento, tenere presente quanto segue:
 |**Background**| ![Campione #ECECF0](../../extensibility/ux-guidelines/media/ECECF0.png "Campione #ECECF0")<br />`#ECECF0` | ![campione #3F3F46](../../extensibility/ux-guidelines/media/3F3F46.png "campione #3F3F46")<br />`#3F3F46` | ![Campione #ECECF0](../../extensibility/ux-guidelines/media/ECECF0.png "Campione #ECECF0")<br />`#ECECF0` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "Campione di controllo")<br />`Control` |
 |**Border**| ![Campione #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "Campione #CCCEDB")<br />`#CCCEDB` | ![campione #555555](../../extensibility/ux-guidelines/media/555555.png "campione #555555")<br />`#555555` | ![Campione CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "Campione CCCEDB")<br />`#CCCEDB` | ![Campione ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "Campione ControlDark")<br />`ControlDark` |
 
-### <a name="disabled"></a>Disabled
+### <a name="disabled"></a>Disattiva
 
 | | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
@@ -397,7 +397,7 @@ Quando si usa questa guida di riferimento, tenere presente quanto segue:
 |**Text**| ![campione #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "campione #1E1E1E")<br />`#1E1E1E` | ![Campione #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "Campione #F1F1F1")<br />`#F1F1F1` | ![campione #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "campione #1E1E1E")<br />`#1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "Campione ControlText")<br />`ControlText` |
 |**Icona**| ![ campione](../../extensibility/ux-guidelines/media/1E1E1E.png "campione #1E1E1E")<br />`#1E1E1E` | ![Campione #F1F1F1](../../extensibility/ux-guidelines/media/F1F1F1.png "Campione #F1F1F1")<br />`#F1F1F1` | ![campione #1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "campione #1E1E1E")<br />`#1E1E1E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "Campione ControlText")<br />`ControlText` |
 
-### <a name="disabled"></a>Disabled
+### <a name="disabled"></a>Disattiva
 
 | | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |
@@ -455,7 +455,7 @@ Quando si usa questa guida di riferimento, tenere presente quanto segue:
 |**Icona**| ![campione #717171](../../extensibility/ux-guidelines/media/717171.png "# 717171swatch")<br />`#717171` | ![campione #999999](../../extensibility/ux-guidelines/media/999999.png "campione #999999")<br />`#999999` | ![campione #1B293E](../../extensibility/ux-guidelines/media/1B293E.png "campione #1B293E")<br />`#1B293E` | ![Campione ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "Campione ControlText")<br />`ControlText` |
 |**Sfondo del glifo**| ![Campione #FFFFFF](../../extensibility/ux-guidelines/media/FFFFFF.png "Campione #FFFFFF")<br />`#FFFFFF` | ![campione #333337](../../extensibility/ux-guidelines/media/333337.png "campione #333337")<br />`#333337` | ![Campione #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "Campione #FCFCFC")<br />`#FCFCFC` | ![Campione di controllo](../../extensibility/ux-guidelines/media/HCControl.png "Campione di controllo")<br />`#Control` |
 
-#### <a name="disabled"></a>Disabled
+#### <a name="disabled"></a>Disattiva
 
 | | Tema chiaro | Tema scuro | Tema blu | Contrasto elevato |
 | --- | :---: | :---: | :---: | :---: |

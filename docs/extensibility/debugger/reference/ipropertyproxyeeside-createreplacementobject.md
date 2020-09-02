@@ -1,5 +1,5 @@
 ---
-title: Proprietà IPropertyProxyEESide::CreateReplacementObject . Documenti Microsoft
+title: 'IPropertyProxyEESide:: CreateReplacementObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715043"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
@@ -43,7 +43,7 @@ int CreateReplacementObject(
 
 ## <a name="parameters"></a>Parametri
 `dataIn`\
-[in] Oggetto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenente i dati da copiare.
+in Oggetto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) che contiene i dati da copiare.
 
 `dataOut`\
 [out] Restituisce un nuovo oggetto `IEEDataStorage`.
@@ -52,9 +52,9 @@ int CreateReplacementObject(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- A questo metodo viene assegnato un [iEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto che rappresenta una matrice di byte. Questo oggetto dati in ingresso non viene in genere implementato da EE. Tuttavia, l'oggetto restituito da questo metodo viene sempre implementato da `IEEDataStorage` EE, che consente a EE implementare l'interfaccia su qualsiasi classe desiderata.
+ A questo metodo viene assegnato un oggetto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) che rappresenta una matrice di byte. Questo oggetto dati in ingresso non è in genere implementato da EE. Tuttavia, l'oggetto restituito da questo metodo viene sempre implementato da EE, che consente all'EE di implementare l' `IEEDataStorage` interfaccia su qualsiasi classe desiderata.
 
- Si noti che i `IEEDataStorage` dati forniti dall'oggetto in `IEEDataStorage` ingresso devono essere gli stessi dati nell'oggetto in uscita.
+ Si noti che i dati forniti dall'oggetto in ingresso `IEEDataStorage` devono essere gli stessi dati nell'oggetto in uscita `IEEDataStorage` .
 
 ## <a name="see-also"></a>Vedere anche
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

@@ -10,25 +10,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 45f7b38f7dbb6ea470b2d9e186dc8e6bf4b33b1e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657333"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile eseguire la migrazione di progetti che definiscono e utilizzano il linguaggio specifico di dominio per [!INCLUDE[vs2010](../includes/vs2010-md.md)] dalla versione di [!INCLUDE[dsl](../includes/dsl-md.md)] distribuita con [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].
+È possibile eseguire la migrazione di progetti che definiscono e utilizzano il linguaggio specifico di dominio a [!INCLUDE[vs2010](../includes/vs2010-md.md)] dalla versione di [!INCLUDE[dsl](../includes/dsl-md.md)] distribuita con [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] .
 
- Uno strumento di migrazione viene fornito come parte di [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]. Lo strumento converte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetti e soluzioni che utilizzano o definiscono gli strumenti DSL.
+ Viene fornito uno strumento di migrazione come parte di [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)] . Lo strumento converte i [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetti e le soluzioni che usano o definiscono gli strumenti DSL.
 
- È necessario eseguire lo strumento di migrazione in modo esplicito: non viene avviato automaticamente quando si apre una soluzione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Lo strumento e il documento dettagliato delle linee guida sono disponibili in questo percorso:
+ È necessario eseguire lo strumento di migrazione in modo esplicito: non viene avviato automaticamente quando si apre una soluzione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Lo strumento e il documento dettagliato delle linee guida sono disponibili in questo percorso:
 
  **%Programmi%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Prima di eseguire la migrazione dei progetti DSL
- Lo strumento di migrazione modifica [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] file di progetto (con**estensione csproj**) e i file di soluzione (con**estensione sln**).
+ Lo strumento di migrazione modifica i [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] file di progetto (con**estensione csproj**) e i file di soluzione (con**estensione sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Per preparare i progetti per la migrazione.
 
@@ -63,9 +63,9 @@ ms.locfileid: "72657333"
 
    1. Fare clic su **Converti**.
 
-        Prima di convertire ogni file di progetto, una copia di _Project_ **. csproj** viene salvata come _Project_ **. VS2008. csproj**
+        Prima di convertire ogni file di progetto, una copia di _Project_**. csproj** viene salvata come _Project_**. VS2008. csproj**
 
-        Una copia di ogni _Solution_ **. sln** viene salvata come _Solution_ **. VS2008. sln**
+        Una copia di ogni _Solution_**. sln** viene salvata come _Solution_**. VS2008. sln**
 
    2. Esaminare le conversioni non riuscite segnalate.
 

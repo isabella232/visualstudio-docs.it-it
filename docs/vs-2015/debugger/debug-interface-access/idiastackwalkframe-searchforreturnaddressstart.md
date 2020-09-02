@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2d34c4f10679d6f0702dead5352ddf088704b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150173"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cerca stack frame specificato per un indirizzo del mittente o in prossimità dell'indirizzo specificato.  
+Cerca nell'stack frame specificato un indirizzo restituito in corrispondenza o in prossimità dell'indirizzo specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,16 +37,16 @@ HRESULT searchForReturnAddressStart ( 
   
 #### <a name="parameters"></a>Parametri  
  `frame`  
- [in] Un' [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto che rappresenta lo stack frame corrente.  
+ in Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'stack frame corrente.  
   
  `startAddress`  
- [in] Un indirizzo di memoria virtuale da cui iniziare la ricerca.  
+ in Indirizzo di memoria virtuale da cui iniziare la ricerca.  
   
  `returnAddress`  
- [out] Restituisce la funzione più vicina indirizzo del mittente `startAddress`.  
+ out Restituisce l'indirizzo restituito della funzione più vicino a `startAddress` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   

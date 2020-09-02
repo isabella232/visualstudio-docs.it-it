@@ -7,13 +7,13 @@ ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
 ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849153"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procedura: diagnosticare i ritardi dell'interfaccia utente causati dalle estensioni
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procedura: Diagnosticare i ritardi dell'interfaccia utente causati dalle estensioni
 
 Quando l'interfaccia utente smette di rispondere, Visual Studio esamina lo stack di chiamate del thread dell'interfaccia utente, iniziando dalla foglia e lavorando verso la base. Se Visual Studio determina che un stack frame di chiamate appartiene a un modulo che fa parte di un'estensione installata e abilitata, viene visualizzata una notifica.
 
@@ -43,7 +43,7 @@ Per diagnosticare un ritardo dell'interfaccia utente, prima di tutto è necessar
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Riavviare Visual Studio con accesso alle attività
 
-Visual Studio può generare un "log attività" che fornisce informazioni utili per il debug di un problema. Per attivare la registrazione delle attività in Visual Studio, aprire Visual Studio con l'opzione della riga di comando `/log`. Dopo l'avvio di Visual Studio, il log attività viene archiviato nel percorso seguente:
+Visual Studio può generare un "log attività" che fornisce informazioni utili per il debug di un problema. Per attivare la registrazione delle attività in Visual Studio, aprire Visual Studio con l' `/log` opzione della riga di comando. Dopo l'avvio di Visual Studio, il log attività viene archiviato nel percorso seguente:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -71,7 +71,7 @@ Per arrestare la raccolta di tracce, è sufficiente usare il pulsante **Interrom
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Esaminare il log attività per ottenere l'ID ritardo
 
-Come indicato in precedenza, è possibile trovare il log attività in *%APPDATA%\Microsoft\VisualStudio\<vs_instance_id > \ActivityLog.XML*. Ogni volta che Visual Studio rileva un ritardo dell'interfaccia utente dell'estensione, scrive un nodo nel log attività con `UIDelayNotifications` come origine. Questo nodo contiene quattro informazioni sul ritardo dell'interfaccia utente:
+Come indicato in precedenza, è possibile trovare il log attività in *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml*. Ogni volta che Visual Studio rileva un ritardo dell'interfaccia utente dell'estensione, scrive un nodo nel log attività con `UIDelayNotifications` come origine. Questo nodo contiene quattro informazioni sul ritardo dell'interfaccia utente:
 
 - ID ritardo dell'interfaccia utente, un numero sequenziale che identifica in modo univoco un ritardo dell'interfaccia utente in una sessione di Visual Studio
 - ID sessione, che identifica in modo univoco la sessione di Visual Studio dall'inizio alla chiusura
@@ -102,7 +102,7 @@ Successivamente, aprire il file di traccia. Questa operazione può essere esegui
 Quindi, selezionare il file di traccia nel riquadro a sinistra e aprirlo scegliendo **Apri** dal menu di scelta rapida o dal menu di scelta rapida.
 
 > [!NOTE]
-> Per impostazione predefinita, PerfView restituisce un archivio zip. Quando si apre *Trace. zip*, l'archivio viene decompresso automaticamente e viene aperta la traccia. È possibile ignorare questa operazione deselezionando la casella **zip** durante la raccolta delle tracce. Tuttavia, se si prevede di trasferire e usare tracce in computer diversi, è consigliabile evitare di deselezionare la casella **zip** . Senza questa opzione, il PDB obbligatorio per gli assembly NGEN non verrà associato alla traccia e pertanto i simboli degli assembly NGEN non verranno risolti nel computer di destinazione. Per ulteriori informazioni su PDB per gli assembly NGEN, vedere [questo post di Blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) .
+> Per impostazione predefinita, PerfView restituisce un archivio zip. Quando si apre *trace.zip*, viene automaticamente decompresso l'archivio e viene aperta la traccia. È possibile ignorare questa operazione deselezionando la casella **zip** durante la raccolta delle tracce. Tuttavia, se si prevede di trasferire e usare tracce in computer diversi, è consigliabile evitare di deselezionare la casella **zip** . Senza questa opzione, il PDB obbligatorio per gli assembly NGEN non verrà associato alla traccia e pertanto i simboli degli assembly NGEN non verranno risolti nel computer di destinazione. Per ulteriori informazioni su PDB per gli assembly NGEN, vedere [questo post di Blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) .
 
 Possono essere necessari alcuni minuti prima che PerfView elabori e apra la traccia. Una volta aperta la traccia, viene visualizzato un elenco di diverse "visualizzazioni".
 
@@ -110,11 +110,11 @@ Possono essere necessari alcuni minuti prima che PerfView elabori e apra la trac
 
 Per ottenere l'intervallo di tempo del ritardo dell'interfaccia utente, si userà prima la visualizzazione **eventi** :
 
-1. Aprire la visualizzazione **eventi** selezionando `Events` nodo sotto la traccia e scegliendo **Apri** dal menu di scelta rapida o dal menu di scelta rapida.
-2. Selezionare "`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`" nel riquadro sinistro.
+1. Aprire la visualizzazione **eventi** selezionando `Events` node sotto la traccia e scegliendo **Apri** dal menu di scelta rapida o dal menu di scelta rapida.
+2. Selezionare " `Microsoft-VisualStudio/ExtensionUIUnresponsiveness` " nel riquadro sinistro.
 3. Premere INVIO
 
-La selezione viene applicata e tutti gli eventi `ExtensionUIUnresponsiveness` vengono visualizzati nel riquadro di destra.
+La selezione viene applicata e tutti `ExtensionUIUnresponsiveness` gli eventi vengono visualizzati nel riquadro di destra.
 
 ![Selezione di eventi nella visualizzazione eventi](media/perfview-event-selection.png)
 
@@ -137,7 +137,7 @@ Durante l'apertura della visualizzazione **stack tempo thread** , scegliere il p
 Nella visualizzazione **stack tempo thread** , nella parte superiore sinistra della pagina, è possibile impostare l'intervallo di tempo sui valori calcolati nel passaggio precedente e premere **invio** in modo che gli stack vengano modificati in base a tale intervallo di tempo.
 
 > [!NOTE]
-> Determinare quale thread è il thread dell'interfaccia utente (avvio) può essere intuitivo se la raccolta di tracce viene avviata dopo che Visual Studio è già aperto. Tuttavia, i primi elementi nello stack del thread dell'interfaccia utente (avvio) sono sempre le dll del sistema operativo più probabili (*ntdll. dll* e *Kernel32. dll*) seguite da `devenv!?` e quindi `msenv!?`. Questa sequenza può semplificare l'identificazione del thread dell'interfaccia utente.
+> Determinare quale thread è il thread dell'interfaccia utente (avvio) può essere intuitivo se la raccolta di tracce viene avviata dopo che Visual Studio è già aperto. Tuttavia, i primi elementi nello stack del thread dell'interfaccia utente (avvio) rappresentano sempre le dll del sistema operativo più probabili (*ntdll.dll* e *kernel32.dll*) seguite da `devenv!?` e quindi `msenv!?` . Questa sequenza può semplificare l'identificazione del thread dell'interfaccia utente.
 
  ![Identificazione del thread di avvio](media/ui-delay-startup-thread.png)
 

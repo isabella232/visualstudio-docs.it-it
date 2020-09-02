@@ -7,10 +7,10 @@ ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536864"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Modalità di compilazione delle app aggiunte a contenitori in Visual Studio
@@ -181,7 +181,7 @@ Visual Studio usa un punto di ingresso del contenitore personalizzato a seconda 
 |Tipo di contenitore|Punto di ingresso|
 |-|-|
 | **Contenitori Linux** | Il punto di ingresso è `tail -f /dev/null` , ovvero un'attesa infinita per il mantenimento dell'esecuzione del contenitore. Quando l'app viene avviata tramite il debugger, è il debugger responsabile dell'esecuzione dell'app (ovvero `dotnet webapp.dll` ). Se avviato senza eseguire il debug, lo strumento esegue un `docker exec -i {containerId} dotnet webapp.dll` per eseguire l'app.|
-| **Contenitori Windows**| Il punto di ingresso è simile a quello `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus` che esegue il debugger, quindi è in ascolto delle connessioni. Lo stesso vale per il debugger che esegue l'app e un `docker exec` comando quando viene avviato senza debug. Per .NET Framework app Web, il punto di ingresso è leggermente diverso `ServiceMonitor` da quello in cui viene aggiunto al comando.|
+| **Contenitori di Windows**| Il punto di ingresso è simile a quello `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus` che esegue il debugger, quindi è in ascolto delle connessioni. Lo stesso vale per il debugger che esegue l'app e un `docker exec` comando quando viene avviato senza debug. Per .NET Framework app Web, il punto di ingresso è leggermente diverso `ServiceMonitor` da quello in cui viene aggiunto al comando.|
 
 Il punto di ingresso del contenitore può essere modificato solo in progetti Docker-compose, non in progetti a contenitore singolo.
 
