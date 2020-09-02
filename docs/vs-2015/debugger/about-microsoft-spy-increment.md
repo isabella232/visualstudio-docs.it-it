@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 437ef1f72d3b766a0fc59d602af814a64b735c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157541"
 ---
 # <a name="about-microsoft-spy"></a>Informazioni su Microsoft Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilizzare questa finestra di dialogo per visualizzare i copyright, versione, la proprietà e altre informazioni su Spy + +.
+Usare questa finestra di dialogo per visualizzare il copyright, la versione, la proprietà e altre informazioni su Spy + +.

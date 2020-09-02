@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i comandi di Menu | Microsoft Docs
+title: Comandi del menu Visualizza | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6f8efd65c60b28c0ba50419770351d62cb615dec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146480"
 ---
 # <a name="view-menu-commands"></a>comandi del menu Visualizza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il **vista** menu sono disponibili comandi per il controllo di Spy + + dell'interfaccia utente.  
+Il menu **Visualizza** include i comandi per il controllo dell'interfaccia utente di Spy + +.  
   
- **Tipo di carattere**  
- Apre la **Font** della finestra di dialogo in cui è possibile selezionare un tipo di carattere per l'uso della visualizzazione corrente di Spy + +.  
+ **Carattere**  
+ Apre la finestra di dialogo **tipo di carattere** , in cui è possibile selezionare un tipo di carattere da utilizzare nella visualizzazione corrente di Spy + +.  
   
- **Toolbar**  
- Nasconde o Visualizza la barra degli strumenti.  
+ **Barra degli strumenti**  
+ Consente di nascondere o visualizzare la barra degli strumenti.  
   
  **Barra di stato**  
  Nasconde o Visualizza la barra di stato.  
   
  **Proprietà**  
- Apre la **proprietà** finestra di dialogo per la visualizzazione attiva.
+ Apre la finestra di dialogo **Proprietà** per la visualizzazione attiva.

@@ -1,5 +1,5 @@
 ---
-title: Aggiunta della riga di comando | Microsoft Docs
+title: Aggiunta di opzioni della riga di comando | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e28a3f303849458a407b212d3aad1a8c198f6d25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62562276"
 ---
 # <a name="adding-command-line-switches"></a>Aggiunta di opzioni della riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile aggiungere opzioni della riga di comando che si applicano al pacchetto VSPackage quando viene eseguita devenv.exe. Usare <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> per dichiarare il nome dell'opzione e le relative proprietà. In questo esempio viene aggiunta l'opzione MySwitch per una sottoclasse di VSPackage denominato **AddCommandSwitchPackage** senza argomenti e con il pacchetto VSPackage caricato automaticamente.  
+È possibile aggiungere opzioni della riga di comando che si applicano al pacchetto VSPackage quando devenv.exe viene eseguito. Usare <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> per dichiarare il nome dell'opzione e le relative proprietà. In questo esempio viene aggiunta l'opzione di commutazione a pagina per una sottoclasse di VSPackage denominata **AddCommandSwitchPackage** senza argomenti e con il pacchetto VSPackage caricato automaticamente.  
   
 ```csharp  
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]  
 ```  
   
- Nella tabella seguente vengono visualizzati i parametri denominati  
+ Nella tabella seguente sono illustrati i parametri denominati  
   
  Argomenti  
- Il numero di argomenti per il commutatore. Può essere "*", o un elenco di argomenti.  
+ Numero di argomenti per l'opzione. Può essere "*" o un elenco di argomenti.  
   
- DemandLoad  
- Caricare il pacchetto VSPackage automaticamente se è impostato su 1, altrimenti è impostato su 0.  
+ DemandLoad – viene  
+ Caricare il pacchetto VSPackage automaticamente se è impostato su 1, in caso contrario è impostato su 0.  
   
  HelpString  
- L'ID della Guida stringa o una risorsa della stringa da visualizzare con **devenv /?**.  
+ Stringa della guida o ID della risorsa della stringa da visualizzare con **devenv/?**.  
   
  Nome  
- Questo parametro.  
+ Opzione.  
   
  PackageGuid  
- Il GUID del pacchetto.  
+ GUID del pacchetto.  
   
- Il primo valore degli argomenti è in genere 0 o 1. Un valore speciale di ' *' può essere utilizzato per indicare che tutto il resto della riga di comando è costituito dall'argomento. Ciò può essere utile negli scenari in cui un utente deve passare una stringa di comando del debugger di debug.  
+ Il primo valore di arguments è in genere 0 o 1. È possibile usare un valore speciale di "*" per indicare che l'intero resto della riga di comando è l'argomento. Questa operazione può essere utile per gli scenari di debug in cui un utente deve passare una stringa di comando del debugger.  
   
- È il valore DemandLoad `true` (1) o `false` (0) indica che il pacchetto VSPackage deve essere caricato automaticamente.  
+ Il valore DemandLoad – viene è `true` (1) o `false` (0) indica che il pacchetto VSPackage deve essere caricato automaticamente.  
   
- Il valore HelpString è l'ID risorsa della stringa che viene visualizzato nella finestra di devenv /? Visualizzazione della Guida. Questo valore deve essere nel formato "#nnn" dove nnn è un numero intero. Il valore di stringa nel file di risorse deve terminare con un carattere di nuova riga.  
+ Il valore HelpString è l'ID risorsa della stringa visualizzata in devenv/? Visualizzazione della guida. Questo valore deve essere nel formato "#nnn", dove nnn è un numero intero. Il valore stringa nel file di risorse deve terminare con un carattere di nuova riga.  
   
- Il valore del nome è il nome del commutatore.  
+ Il valore Name è il nome dell'opzione.  
   
- Il valore PackageGuid è il GUID del pacchetto che implementa questo commutatore. L'IDE Usa questo GUID per trovare il pacchetto VSPackage nel Registro di sistema a cui viene applicata l'opzione della riga di comando.  
+ Il valore PackageGuid è il GUID del pacchetto che implementa questa opzione. L'IDE usa questo GUID per trovare il pacchetto VSPackage nel registro di sistema a cui si applica l'opzione della riga di comando.  
   
-## <a name="retrieving-command-line-switches"></a>Il recupero della riga di comando  
- Quando viene caricato il pacchetto, è possibile recuperare le opzioni della riga di comando, completare i passaggi seguenti.  
+## <a name="retrieving-command-line-switches"></a>Recupero delle opzioni della riga di comando  
+ Quando il pacchetto viene caricato, è possibile recuperare le opzioni della riga di comando completando i passaggi seguenti.  
   
-1. In un VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementazione, chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> per ottenere il <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfaccia.  
+1. Nell'implementazione di VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> , chiamare `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> per ottenere l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfaccia.  
   
-2. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> per recuperare le opzioni della riga di comando immesso dall'utente.  
+2. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> per recuperare le opzioni della riga di comando immesse dall'utente.  
   
-   Il codice seguente viene illustrato come determinare se l'opzione della riga di comando MySwitch è stata immessa dall'utente:  
+   Nel codice riportato di seguito viene illustrato come verificare se l'opzione della riga di comando del parametro è stata immessa dall'utente:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  
@@ -74,11 +74,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
 ```  
   
- È responsabilità dell'utente per verificare la presenza di opzioni della riga di comando ogni volta che viene caricato il pacchetto.  
+ È responsabilità dell'utente verificare le opzioni della riga di comando ogni volta che il pacchetto viene caricato.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
- [Devenv Command Line Switches](../ide/reference/devenv-command-line-switches.md)  (Opzioni della riga di comando di Devenv)  
- [CreatePkgDef Utility](../extensibility/internals/createpkgdef-utility.md)   
+ [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)   
+ [Utilità CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
  [File con estensione Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

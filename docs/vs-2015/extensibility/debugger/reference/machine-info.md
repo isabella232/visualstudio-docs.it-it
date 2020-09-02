@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ac571a1e1c7a9d6cff1caaca40f1c6568f99adf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546788"
 ---
-# <a name="machineinfo"></a>MACHINE_INFO
+# <a name="machine_info"></a>MACHINE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descrive un particolare computer.  
+Descrive un computer specifico.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,21 +44,21 @@ public struct MACHINE_INFO { 
   
 ## <a name="members"></a>Membri  
  `Fields`  
- Una combinazione di flag dal [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) enumerazione che specificano quali campi della struttura vengono inizializzati.  
+ Combinazione di flag dell'enumerazione [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) che specificano i campi della struttura inizializzati.  
   
  `bstrName`  
- Nome del computer. Equivalente alla chiamata [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).  
+ Nome del computer. Equivale a chiamare [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).  
   
  `Flags`  
- Una combinazione di flag dal [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) enumerazione che descrive gli attributi di computer.  
+ Combinazione di flag dell'enumerazione [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) che descrive gli attributi del computer.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene restituita da una chiamata per il [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene restituita da una chiamata al metodo [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

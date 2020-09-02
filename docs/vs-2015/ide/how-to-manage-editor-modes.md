@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a188e90d3feeb903eb8b4efceb91eb53cac3bdce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651839"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procedura: gestire le modalità dell'editor
@@ -38,23 +38,23 @@ ms.locfileid: "72651839"
 È possibile visualizzare l'editor di Visual Studio Code in diverse modalità.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="enabling-full-screen-mode"></a>Abilitazione della modalità Schermo intero
- È possibile nascondere tutte le caselle degli strumenti e visualizzare solo le finestre dei documenti abilitando la modalità **Schermo intero**.
+ È possibile scegliere di nascondere tutte le finestre degli strumenti e visualizzare solo le finestre dei documenti abilitando la modalità **schermo intero** .
 
-#### <a name="to-enable-full-screen-mode"></a>Per abilitare la modalità Schermo intero
+#### <a name="to-enable-full-screen-mode"></a>Per attivare la modalità Schermo intero
 
-- Premere ALT+MAIUSC+INVIO per attivare o disattivare la modalità **Schermo intero**.
+- Premere ALT + MAIUSC + INVIO per attivare o disattivare la modalità **schermo intero** .
 
-     --oppure--
+     -- o --
 
 - Eseguire il comando `View.Fullscreen` nella finestra **Comando**.
 
 ## <a name="enabling-virtual-space-mode"></a>Abilitazione della modalità Spazio virtuale
  Nella modalità **Spazio virtuale** vengono inseriti spazi alla fine di ogni riga di codice. Selezionare questa opzione per inserire commenti in corrispondenza di un punto coerente accanto al codice.
 
-#### <a name="to-enable-virtual-space-mode"></a>Per abilitare la modalità Spazio virtuale
+#### <a name="to-enable-virtual-space-mode"></a>Per attivare la modalità spazio virtuale
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 

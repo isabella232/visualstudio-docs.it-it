@@ -1,5 +1,5 @@
 ---
-title: Nozioni di base del debugger | Microsoft Docs
+title: Nozioni fondamentali sul debugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,17 +19,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1228b75b1e0e579012f0c2a04a100cb615ae1687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145710"
 ---
 # <a name="debugger-basics"></a>Nozioni di base sul debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Il debugger di Visual Studio debugger consente di osservare il comportamento del programma in fase di esecuzione e di individuazione di errori logici. Il debugger può essere usato con tutti i linguaggi di programmazione di Visual Studio e con le relative librerie associate. Con il debugger, è possibile interrompere l'esecuzione per esaminare il codice e valutare variabili nell'applicazione.
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Introduzione al debugger](../debugger/getting-started-with-the-debugger.md)  
  Spiega come usare il debugger per controllare l'esecuzione dell'applicazione.  
   
@@ -54,7 +54,7 @@ Il debugger di Visual Studio debugger consente di osservare il comportamento del
  [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  Spiega come specificare i file di origine e dei simboli per il debug.  
   
- [Eseguire il debug di applicazioni a 64 Bit](../debugger/debug-64-bit-applications.md)  
+ [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)  
  Spiega come eseguire il debug di applicazioni a 64 bit e come effettuare la risoluzione dei problemi.  
   
  [Sicurezza del debugger](../debugger/debugger-security.md)  

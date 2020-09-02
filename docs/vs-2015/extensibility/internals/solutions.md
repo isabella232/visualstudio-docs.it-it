@@ -12,18 +12,18 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17a88037abf64211148730d5a36cf92605b34a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197183"
 ---
 # <a name="solutions"></a>Soluzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme per creare un'applicazione. Le informazioni di progetto e lo stato relativi alla soluzione vengono archiviati in due file di soluzione, un file di soluzione basata su testo (con estensione sln) e un file di soluzione binario utente opzione (con estensione suo).  
+Una soluzione è un raggruppamento di uno o più progetti che interagiscono tra loro per creare un'applicazione. Il progetto e le informazioni sullo stato relative alla soluzione vengono archiviati in due file di soluzione, un file di soluzione basato su testo (. sln) e un file di opzione utente della soluzione binaria (con estensione suo).  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Panoramica](../../extensibility/internals/solutions-overview.md)  
  Vengono descritti i tipi di file di soluzione inclusi in una soluzione e il processo che si verifica quando viene aperta una soluzione.  
   

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::GetCount | Microsoft Docs
+title: 'IEnumDebugCodeContexts2:: GetCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e32a0d47fc1f07c3858b056d4483c762853bb428
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551757"
 ---
 # <a name="ienumdebugcodecontexts2getcount"></a>IEnumDebugCodeContexts2::GetCount
@@ -40,13 +40,13 @@ int GetCount(
   
 #### <a name="parameters"></a>Parametri  
  `pcelt`  
- [out] Restituisce il numero di elementi nell'enumerazione.  
+ out Restituisce il numero di elementi nell'enumerazione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo non fa parte dell'interfaccia di enumerazione COM facoltativa che specifica che solo le `Next`, `Clone`, `Skip`, e `Reset` devono essere implementati i metodi.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo non fa parte dell'interfaccia di enumerazione com personalizzata che specifica che `Next` `Clone` `Skip` `Reset` devono essere implementati solo i metodi,, e.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

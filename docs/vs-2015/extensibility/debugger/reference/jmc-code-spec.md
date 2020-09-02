@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca7d6bfb799f0a9460702c4b581ef3f5261672b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147491"
 ---
-# <a name="jmccodespec"></a>JMC_CODE_SPEC
+# <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa struttura consente di impostare le informazioni di JustMyCode per un modulo.  
+Questa struttura viene utilizzata per impostare le informazioni JustMyCode per un modulo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,20 +40,20 @@ public struct JMC_CODE_SPEC {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  fIsUserCode  
- Diverso da zero (`TRUE`) se il modulo viene considerato codice utente; in caso contrario, zero (`FALSE`) se il modulo è da trattare come codice esterno e non da sottoporre a debug.  
+ Diverso da zero ( `TRUE` ) se il modulo deve essere considerato codice utente; in caso contrario, zero ( `FALSE` ) se il modulo deve essere trattato come codice esterno e non deve essere sottoposto a debug.  
   
  bstrModuleName  
  Nome del modulo in questione.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene passata come un elenco di tali strutture per la [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene passata come un elenco di tali strutture al metodo [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

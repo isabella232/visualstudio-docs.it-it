@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Microsoft Docs
+title: 'IDebugExpression2:: EvaluateSync | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 602a823e4066aff40d1f6271a20b480bb4a92f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158421"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
@@ -46,30 +46,30 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parametri  
  `dwFlags`  
- [in] Una combinazione di flag dal [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumerazione che controllano la valutazione dell'espressione.  
+ in Combinazione di flag dell'enumerazione [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) che controllano la valutazione dell'espressione.  
   
  `dwTimeout`  
- [in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.  
+ in Tempo massimo, in millisecondi, di attesa prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.  
   
  `pExprCallback`  
- [in] Questo parametro è sempre un valore null.  
+ in Questo parametro è sempre un valore null.  
   
  `ppResult`  
- [out] Restituisce il [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che contiene il risultato della valutazione dell'espressione.  
+ out Restituisce l'oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che contiene il risultato della valutazione dell'espressione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Alcuni codici di errore tipiche sono:  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Di seguito sono riportati alcuni codici di errore tipici:  
   
 |Errore|Descrizione|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Un'altra espressione in fase di valutazione e la valutazione dell'espressione simultanee non è supportata.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|È attualmente in corso la valutazione di un'altra espressione e la valutazione dell'espressione simultanea non è supportata.|  
 |E_EVALUATE_TIMEOUT|Timeout della valutazione.|  
   
-## <a name="remarks"></a>Note  
- Per la valutazione sincrona, non è necessario inviare un evento torna a Visual Studio al completamento della valutazione.  
+## <a name="remarks"></a>Osservazioni  
+ Per la valutazione sincrona, non è necessario inviare un evento a Visual Studio al completamento della valutazione.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CExpression` oggetto che implementa le [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un `CExpression` oggetto semplice che implementa l'interfaccia [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) .  
   
 ```cpp#  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  

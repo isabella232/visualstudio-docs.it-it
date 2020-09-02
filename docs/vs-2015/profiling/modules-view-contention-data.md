@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157358"
 ---
 # <a name="modules-view---contention-data"></a>Visualizzazione Moduli: dati sui conflitti
@@ -27,7 +27,7 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
   
  La tabella seguente descrive i valori delle colonne nella visualizzazione Moduli dei dati sui conflitti.  
   
-|Colonna|DESCRIZIONE|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|- Per una funzione, l'ora in cui è stata impedita l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.<br />- Per un modulo, la somma del tempo di blocco esclusivo delle funzioni nel modulo.<br />- Per una riga o un'istruzione, il periodo durante il quale è stata bloccata l'esecuzione della riga o dell'istruzione.|  
 |**% tempo blocco esclusivo**|- Per una funzione o un modulo, la percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per la funzione o il modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale è stata bloccata l'esecuzione della riga o dell'istruzione.|  
@@ -38,7 +38,7 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
 |**Conflitti inclusivi**|- Per una funzione, il numero di volte in cui l'esecuzione di questa funzione o di una funzione chiamata da questa è stata bloccata.<br />- Per un modulo, il numero di conflitti in cui almeno una funzione da questo modulo era nello stack.<br />- Per una riga o un'istruzione, il numero di volte per cui è stata bloccata l'esecuzione della riga o dell'istruzione.|  
 |**% conflitti inclusivi**|- Per una funzione o un modulo, la percentuale di tutti i campioni nell'esecuzione della profilatura che costituivano campioni esclusivi di questa funzione o di questo modulo.<br />- Per una riga o un'istruzione, la percentuale del tempo totale di blocco nell'esecuzione di profilatura durante la quale era in esecuzione la riga o l'istruzione.|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|  
+|**Nome del modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene il modulo, la funzione, la riga o il puntatore all'istruzione.|  
 |**Name**|Nome del modulo o della funzione.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
@@ -46,9 +46,9 @@ Nella visualizzazione Moduli dei dati sui conflitti vengono visualizzati i dati 
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Moduli](../profiling/modules-view.md)   
- [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)   
+ [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Visualizzazione moduli](../profiling/modules-view.md)   
+ [Visualizzazione moduli-strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Visualizzazione moduli-campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)   
  [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)

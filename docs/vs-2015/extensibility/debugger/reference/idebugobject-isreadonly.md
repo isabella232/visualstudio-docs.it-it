@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsReadOnly | Microsoft Docs
+title: 'IDebugObject:: IsReadOnly | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 74b55895e440f900e59cd3b517e22dd8a0191414
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159084"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina se questo oggetto è di sola lettura.  
+Determina se l'oggetto è di sola lettura.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int IsReadOnly(
   
 #### <a name="parameters"></a>Parametri  
  `pfIsReadOnly`  
- [out] Restituisce diverso da zero (`TRUE`) se l'oggetto è di sola lettura; in caso contrario, restituisce zero (`FALSE`).  
+ out Restituisce un valore diverso da zero ( `TRUE` ) se l'oggetto è di sola lettura; in caso contrario, restituisce zero ( `FALSE` ).  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Un oggetto di sola lettura non può essere modificata dopo averlo creato.  
+## <a name="remarks"></a>Osservazioni  
+ Non è possibile modificare il valore di un oggetto di sola lettura dopo che è stato creato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

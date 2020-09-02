@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ad0570436dda6ac9ae52325c891b32a563cf6f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547364"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera il nome del file per l'ultimo errore di caricamento.  
@@ -35,10 +35,10 @@ HRESULT get_lastError (
   
 #### <a name="parameters"></a>Parametri  
  pRetVal  
- [out] Restituisce una stringa che contiene il nome del file con estensione pdb associato con l'ultimo errore di caricamento.  
+ out Restituisce una stringa che contiene il nome del file con estensione pdb associato all'ultimo errore di caricamento.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce l'ultimo codice di errore causato da un'operazione di caricamento. Restituisce `E_INVALIDARG` se il `pRetVal` parametro è `NULL`.  
+ Restituisce l'ultimo codice di errore causato da un'operazione di caricamento. Restituisce `E_INVALIDARG` se il `pRetVal` parametro è `NULL` .  
   
 ## <a name="example"></a>Esempio  
   

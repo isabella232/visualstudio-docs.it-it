@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0e3a8563d5e2cd29c9c521761498d7ef87b7cbab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656164"
 ---
 # <a name="searching-the-schema-set"></a>Ricerche nel set di schemi
@@ -28,7 +28,7 @@ XML Schema Explorer consente di eseguire ricerche nel set di schemi nei seguenti
 ## <a name="keyword-search"></a>Ricerca per parole chiave
  Per eseguire ricerche di parole chiave, immettere una sottostringa nella casella di testo **Cerca SchemaSet** della barra degli strumenti di XML Schema Explorer.
 
- ![Ricerca parole chiave di XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Ricerca di parole chiave in XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
  XML Schema Explorer esegue ricerche dei seguenti elementi nel set di schemi:
 
@@ -46,7 +46,7 @@ XML Schema Explorer consente di eseguire ricerche nel set di schemi nei seguenti
 
  È possibile aggiungere i risultati della ricerca all'area di lavoro facendo clic sul pulsante **Aggiungi nodi evidenziati all'area di lavoro** nel riquadro dei risultati di riepilogo.
 
- ![Risultato della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Risultati della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
 
 ## <a name="clearing-search-results"></a>Eliminazione dei risultati di ricerca
  Per cancellare i risultati della ricerca, fare clic sul pulsante **x** nel riquadro risultati riepilogo della barra degli strumenti di ricerca di XML Schema Explorer.

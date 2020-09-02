@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetContainer | Microsoft Docs
+title: 'IDebugField:: GetContainer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f6c5b0cb1b14ac7cc34e284e2d073fafed9b20e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547130"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
@@ -40,12 +40,12 @@ int GetContainer(
   
 #### <a name="parameters"></a>Parametri  
  `ppContainerField`  
- [out] Restituisce il contenitore come rappresentata dai [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaccia.  
+ out Restituisce il contenitore come rappresentato dall'interfaccia [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Se questo campo non dispone di un contenitore, l'oggetto restituito `ppContainerField` sarà un valore null.  
   
 ## <a name="see-also"></a>Vedere anche  

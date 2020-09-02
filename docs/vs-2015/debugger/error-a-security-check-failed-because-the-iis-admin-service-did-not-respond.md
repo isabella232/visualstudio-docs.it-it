@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Un controllo di sicurezza non è riuscita perché il servizio di amministrazione IIS non ha risposto | Microsoft Docs'
+title: 'Errore: controllo di sicurezza non riuscito perché il servizio di amministrazione IIS non ha risposto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65eb724d14123292a0694623bf46859f8a3966f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197080"
 ---
-# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Errore: Controllo di sicurezza non riuscito. Il servizio di amministrazione IIS non ha risposto
+# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Errore: controllo di sicurezza non riuscito. Il servizio di amministrazione IIS non ha risposto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo errore si verifica quando il servizio di amministrazione IIS non risponde. In questo modo viene indicato che l'installazione di IIS presenta un problema. Verificare innanzitutto che il servizio sia in esecuzione tramite lo strumento **Servizi** in **Strumenti di amministrazione**.  
@@ -51,4 +51,4 @@ Questo errore si verifica quando il servizio di amministrazione IIS non risponde
      Per ulteriori informazioni, vedere la documentazione relativa al servizio IIS.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

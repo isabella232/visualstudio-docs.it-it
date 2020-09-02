@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 70bd6623d86ecfa76d3e09de09a8dcfad3d5da20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159261"
 ---
 # <a name="removedir-task"></a>Attività RemoveDir
@@ -34,13 +34,13 @@ Rimuove le directory specificate con tutti i relativi file e sottodirectory.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `RemoveDir` .  
   
-|Parametro|DESCRIZIONE|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`Directories`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica le directory da eliminare.|  
 |`RemovedDirectories`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene le directory che sono state eliminate correttamente.|  
   
 ## <a name="remarks"></a>Osservazioni  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente rimuove le directory specificate dalle proprietà `OutputDirectory` e `DebugDirectory`. Questi percorsi vengono considerati relativi rispetto alla directory del progetto.  
@@ -63,4 +63,4 @@ Rimuove le directory specificate con tutti i relativi file e sottodirectory.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

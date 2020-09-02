@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 72ed9b8a747814d9537739c8dc27e5f113547756
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561860"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Indica il protocollo usato per la comunicazione tra un server di debug e il pacchetto di debug (DE).  
+Indica il protocollo utilizzato per la comunicazione tra un server di debug e il pacchetto di debug (DE).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,33 +52,33 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>Parametri  
  CONNECTION_NONE  
- Non è stata stabilita alcuna connessione a un server.  
+ Non è stata effettuata alcuna connessione a un server.  
   
  CONNECTION_UNKNOWN  
- È stata stabilita una connessione, ma è di tipo sconosciuto.  
+ È stata effettuata una connessione, ma è di tipo sconosciuto.  
   
  CONNECTION_LOCAL  
- Connessione è a un server locale.  
+ Connessione a un server locale.  
   
  CONNECTION_PIPE  
- Connessione avviene tramite una named pipe.  
+ La connessione viene stnamed pipe.  
   
  CONNECTION_TCPIP  
- Connessione Usa TCP/IP.  
+ La connessione utilizza TCP/IP.  
   
  CONNECTION_HTTP  
- Connessione utilizza HTTP (tramite un server Web).  
+ La connessione Usa HTTP (tramite un server Web).  
   
  CONNECTION_OTHER  
- Un altro tipo di connessione è stato stabilito (questo valore non viene attualmente utilizzato).  
+ È stato stabilito un altro tipo di connessione (questo valore non è attualmente in uso).  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono restituiti dai [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono restituiti dal metodo [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

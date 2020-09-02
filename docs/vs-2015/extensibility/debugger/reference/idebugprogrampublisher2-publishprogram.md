@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram | Microsoft Docs
+title: IDebugProgramPublisher2::P ublishProgram | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 21bc6e558eff662874ac35eb8557f01838914ca9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547338"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo rende disponibili per i motori di debug (DEs a) un programma e il gestore di sessione di debug.  
+Questo metodo rende disponibile un programma per i motori di debug (DEs) e gestione debug della sessione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,19 +44,19 @@ int PublishProgram(
   
 #### <a name="parameters"></a>Parametri  
  `Engines`  
- [in] Matrice di GUID per la crittografia DEs che possono avviare o connettersi a questo programma.  
+ in Matrice di GUID per DEs che può avviare o connettersi al programma.  
   
  `szFriendlyName`  
- [in] Nome descrittivo per il programma (ciò viene visualizzato nei menu o finestre di dialogo presentate all'utente).  
+ in Nome descrittivo per il programma (visualizzato in menu o finestre di dialogo presentate all'utente).  
   
  `pDebuggeeInterface`  
- [in] `IUnknown` interfaccia per il programma (questo valore viene usato come un cookie per identificare in modo univoco il programma; questo stesso valore viene utilizzato per il programma "unpublish")  
+ [in] `IUnknown` interfaccia per il programma (questo valore viene usato come cookie per identificare in modo univoco il programma; lo stesso valore viene usato per annullare la pubblicazione del programma)  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Per rendere non è più disponibile per il debug di un programma, chiamare [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
+## <a name="remarks"></a>Osservazioni  
+ Per rendere un programma non più disponibile per il debug, chiamare [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

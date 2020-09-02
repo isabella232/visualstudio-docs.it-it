@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 825f72eec5b56fef70019b64d6e599b7c4712ee2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146515"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Restituisce un frame in base all'indirizzo virtuale relativo (RVA).  
+Restituisce un frame in base all'indirizzo RVA (relative Virtual Address).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,13 +36,13 @@ HRESULT frameByRVA( 
   
 #### <a name="parameters"></a>Parametri  
  relativeVirtualAddress  
- [in] RVA del frame di interesse.  
+ in RVA del frame di interesse.  
   
- cornice  
- [out] Restituisce un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto che rappresenta la cornice che contiene l'indirizzo fornito.  
+ frame  
+ out Restituisce un oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta il frame che contiene l'indirizzo fornito.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se nessun frame di dati corrisponde all'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se nessun dato del frame corrisponde all'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

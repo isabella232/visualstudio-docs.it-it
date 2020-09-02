@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9fc2a0774206eac0c9295a425d81555ffdd3cac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561365"
 ---
 # <a name="properties-in-office-projects"></a>Proprietà nei progetti di Office
@@ -30,8 +30,8 @@ ms.locfileid: "62561365"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="namespace-for-host-item"></a>Namespace per elemento host
- Usare la proprietà **Spazio dei nomi per elemento host** per modificare lo spazio dei nomi delle classi dell'elemento host (ad esempio, le classi `ThisAddIn`, `ThisWorkbook`o `ThisDocument` ) nei progetti Visual C#. Questa proprietà viene visualizzata nel **delle proprietà** finestra quando si seleziona il nodo del documento in un progetto a livello di documento (ad esempio *ExcelWorkbook1.xlsx* o *WordDocument1.docx* ) o il nodo dell'applicazione in un progetto componente aggiuntivo VSTO (come Excel o Word) in **Esplora soluzioni**.
+## <a name="namespace-for-host-item"></a>Spazio dei nomi per elemento host
+ Utilizzare la proprietà **spazio dei nomi per elemento host** per modificare lo spazio dei nomi per le classi di elementi host (ad esempio, le `ThisAddIn` `ThisWorkbook` classi, o `ThisDocument` ) nei progetti Visual C#. Questa proprietà viene visualizzata nella finestra **Proprietà** quando si seleziona il nodo del documento in un progetto a livello di documento, ad esempio *ExcelWorkbook1.xlsx* o *WordDocument1.docx*, o il nodo dell'applicazione in un progetto di componente aggiuntivo VSTO, ad esempio Excel o Word, in **Esplora soluzioni**.
 
  Quando si crea un progetto di Office in Visual C#, agli elementi host viene attribuito uno spazio dei nomi in base al nome del progetto. Si consiglia di usare la proprietà **Spazio dei nomi per elemento host** per modificare lo spazio dei nomi anziché modificare direttamente i file di codice. Quando si usa questa proprietà, lo spazio dei nomi viene modificato nei file di codice (nascosti) generati, oltre che nei file di codice visibili.
 
@@ -44,7 +44,7 @@ ms.locfileid: "62561365"
 
 - Selezionare **false** se non si desidera che il set di dati venga memorizzato nella cache del documento.
 
-  Per altre informazioni sulla memorizzazione nella cache dei dati, vedere [memorizzato nella cache i dati nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md).
+  Per ulteriori informazioni sulla memorizzazione nella cache dei dati, vedere la pagina relativa [ai dati memorizzati nella cache nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="value2"></a>Value2
  La proprietà **Value2** è disponibile solo per progetti modello o cartella di lavoro di Excel. Viene visualizzata nel nodo proprietà **Databindings** nella finestra **Proprietà** quando si seleziona un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> nella finestra di progettazione del foglio di lavoro.
@@ -52,6 +52,6 @@ ms.locfileid: "62561365"
  Usare la proprietà **Value2** nella finestra **Proprietà** per associare la proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> di <xref:Microsoft.Office.Tools.Excel.NamedRange> a un campo dell'origine dati.
 
 ## <a name="see-also"></a>Vedere anche
-- [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
-- [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)
+- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
+- [Panoramica sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)
 - [Eventi nei progetti di Office](../vsto/events-in-office-projects.md)

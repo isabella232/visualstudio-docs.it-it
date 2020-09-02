@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Cancella lo Stack di annullamento | Microsoft Docs'
+title: 'Procedura: cancellare lo stack di annullamento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549169"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Procedura: Cancella lo Stack di annullamento
+# <a name="how-to-clear-the-undo-stack"></a>Procedura: Cancellare lo stack di fasi di rollback
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La procedura seguente illustra come cancellare lo stack di annullamento.  
+La seguente procedura illustra come cancellare lo stack di annullamento.  
   
 ### <a name="to-clear-the-undo-stack"></a>Per cancellare lo stack di annullamento  
   
-1. Per cancellare l'utilizzo dello stack di annullamento il [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) (metodo). Di seguito è riportato un esempio:  
+1. Per cancellare lo stack di annullamento, usare il metodo [IOleUndoManager::D iscardfrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) . Di seguito è riportato un esempio:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  
@@ -45,4 +45,4 @@ La procedura seguente illustra come cancellare lo stack di annullamento.
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Gestione dell'annullamento implementare](../extensibility/how-to-implement-undo-management.md)
+ [Procedura: Implementare la gestione della fase di rollback](../extensibility/how-to-implement-undo-management.md)

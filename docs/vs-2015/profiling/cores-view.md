@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 869980fe7bbb773d566dffd38088b003e3a97a3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145646"
 ---
 # <a name="cores-view"></a>Visualizzazione Core
@@ -30,6 +30,6 @@ La visualizzazione Core indica come è stata mappata l'esecuzione dei thread ai 
  Nell'area della legenda è presente una voce per ogni colore nel grafico. Ogni voce indica colore e nome del thread, numero di scambi di contesto tra core diversi, numero totale di scambi di contesto e percentuale di scambi di contesto tra core diversi. La legenda viene ordinata per numero di scambi di contesto tra core, in ordine decrescente. Vengono elencati solo i thread eseguiti durante l'intervallo di tempo visualizzato.  L'elenco viene aggiornato se si esegue lo zoom o la panoramica.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Concurrency Visualizer](../profiling/concurrency-visualizer.md)  (Visualizzatore di concorrenza)  
- [Utilization View](../profiling/utilization-view.md)  (Visualizzazione Uso)  
+ [Visualizzatore di concorrenza](../profiling/concurrency-visualizer.md)   
+ [Visualizzazione utilizzo](../profiling/utilization-view.md)   
  [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

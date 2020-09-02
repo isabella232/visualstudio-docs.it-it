@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f558dc11f4f338cd370442bf9feaed419ce29411
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547585"
 ---
-# <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
+# <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa struttura rappresenta un elemento della matrice all'interno di una matrice.  
+Questa struttura rappresenta un elemento di matrice all'interno di una matrice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,20 +42,20 @@ public struct METADATA_ADDRESS_ARRAYELEM {
   
 ## <a name="terms"></a>Termini  
  tokMethod  
- L'ID della matrice di questo elemento è una parte di.  
+ ID della matrice di cui fa parte questo elemento.  
   
- [C++] `_mdToken` sia un `typedef` un 32-bit `int`.  
+ [C++] `_mdToken` è un oggetto `typedef` per un oggetto a 32 bit `int` .  
   
  dwIndex  
- L'indice di questo elemento all'interno della matrice.  
+ Indice di questo elemento all'interno della matrice.  
   
-## <a name="remarks"></a>Note  
- Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_ARRAYELEM` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_ARRAYELEM` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

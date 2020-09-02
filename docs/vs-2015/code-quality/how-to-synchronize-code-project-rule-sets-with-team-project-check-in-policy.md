@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3c6e7550940f9d2efa5ca228123310f1b861ee76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651595"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Procedura: sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto team
@@ -35,7 +35,7 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
 
-2. Fare clic su **analisi codice**.
+2. Fare clic su **Analisi codice**.
 
 3. Nell'elenco **Esegui questo set di regole** fare clic sul set di regole dei criteri di archiviazione.
 
@@ -45,9 +45,9 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
 
-3. Fare clic su **analisi codice**.
+3. Fare clic su **Analisi codice**.
 
-4. Nell'elenco **Esegui questo set di regole** fare clic su **\<Browse... >** .
+4. Nell'elenco **Esegui questo set di regole** fare clic su **\<Browse...>** .
 
 5. Nella finestra di dialogo **Apri** specificare il file del set di regole dei criteri di archiviazione.
 
@@ -65,6 +65,6 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 5. Aprire la finestra di dialogo proprietà per il progetto di codice e visualizzare la pagina **analisi codice** .
 
-6. Nell'elenco **Esegui questo set di regole** fare clic su **\<Browse... >** .
+6. Nell'elenco **Esegui questo set di regole** fare clic su **\<Browse...>** .
 
 7. Nella finestra di dialogo **Apri** specificare il file del set di regole.

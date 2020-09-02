@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 21c39c553a153707bad707d50cf5a13ae87973fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147746"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
@@ -34,26 +34,26 @@ IEnumDebugReferenceInfo2 : IUnknown
  Il motore di debug (DE) implementa questa interfaccia come parte del supporto per i riferimenti agli oggetti in memoria. Questa interfaccia deve essere implementata solo se i riferimenti sono supportati.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Le chiamate di Visual Studio [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) per ottenere questa interfaccia.  
+ Visual Studio chiama [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) per ottenere questa interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi di `IEnumDebugReferenceInfo2`.  
+ La tabella seguente illustra i metodi di `IEnumDebugReferenceInfo2` .  
   
-|Metodo|DESCRIZIONE|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
-|[avanti](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|Recupera un numero specificato di [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) strutture in una sequenza di enumerazione.|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|Ignora un numero specificato di [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) strutture nella sequenza di enumerazione.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
+|[Avanti](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|Recupera un numero specificato di strutture di [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) in una sequenza di enumerazione.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|Ignora un numero specificato di strutture di [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) nella sequenza di enumerazione.|  
+|[Reimpostazione](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|Riporta all'inizio la sequenza di enumerazione.|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|Ottiene il numero di [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) strutture nell'enumeratore.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|Ottiene il numero di strutture di [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) in un enumeratore.|  
   
-## <a name="remarks"></a>Note  
- Un riferimento è essenzialmente un tipo e un indirizzo, mentre una proprietà è un nome, tipo e l'indirizzo. Un riferimento viene mantenuto fino a quando l'oggetto indicato è presente in memoria. Visualizzare [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) per altri dettagli.  
+## <a name="remarks"></a>Osservazioni  
+ Un riferimento è essenzialmente un tipo e un indirizzo, mentre una proprietà è un nome, un tipo e un indirizzo. Un riferimento viene reso persistente fino a quando l'oggetto a cui si fa riferimento esiste nella memoria. Per ulteriori informazioni, vedere [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

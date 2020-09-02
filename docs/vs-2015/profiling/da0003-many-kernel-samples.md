@@ -15,26 +15,26 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad9a0671595d4628932ff4f2db41a137e060c4d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158718"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Numero elevato di campioni del kernel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id regola | DA0003 |  
-| Categoria | Utilizzo degli strumenti di profilatura |  
+ID regola | DA0003 |  
+| Categoria | Utilizzo Strumenti di profilatura |  
 | Metodi di profilatura | Campionamento |  
-| Messaggio | Presente un numero elevato di campioni in modalità Kernel. Questa circostanza potrebbe indicare un volume elevato di attività I/O oppure un rapporto elevato di cambi di contesto. Si consiglia di profilare nuovamente l'applicazione usando la modalità strumentazione.|  
+| Messaggio | Si dispone di una percentuale elevata di campioni in modalità kernel. Questa circostanza potrebbe indicare un volume elevato di attività I/O oppure un rapporto elevato di cambi di contesto. Si consiglia di profilare nuovamente l'applicazione usando la modalità strumentazione.|  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  
  Una parte significativa degli esempi di stack di chiamate raccolti per l'applicazione era in esecuzione in modalità kernel. Si consiglia di profilare l'applicazione usando un altro metodo di profilatura.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- In Windows è possibile eseguire il codice in modalità kernel oppure in modalità utente. La modalità kernel è chiamata anche modalità privilegiata. Solo il codice di sistema di basso livello, ad esempio i driver di dispositivo, viene eseguito in modalità kernel. Un'applicazione in modalità utente può passare alla modalità kernel per eseguire operazioni di I/O, per attendere primitive di sincronizzazione di thread o processi o per eseguire chiamate di sistema.  
+ In Windows è possibile eseguire il codice in modalità kernel oppure in modalità utente. (La modalità kernel viene chiamata anche modalità con privilegi). Solo il codice di sistema di basso livello, ad esempio i driver di dispositivo, viene eseguito in modalità kernel. Un'applicazione in modalità utente può passare alla modalità kernel per eseguire operazioni di I/O, per attendere primitive di sincronizzazione di thread o processi o per eseguire chiamate di sistema.  
   
  Il campionamento è più efficace quando si profilano applicazioni che per la maggior parte del tempo eseguono operazioni in modalità utente. Il numero di campioni raccolti durante l'esecuzione dell'applicazione in modalità kernel può indicare operazioni di I/O frequenti o può indicare che si stanno verificando cambi di contesto. Nessuna di queste operazioni può essere analizzata usando il metodo di campionamento. Se è stato acquisito un numero eccessivo di campioni in modalità kernel, è possibile che i dati di campionamento non contengano un numero sufficiente di campioni in modalità utente per essere statisticamente significativi.  
   

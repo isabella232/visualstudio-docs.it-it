@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cce5300a795922162f2e0b979e553f4235ceacc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147444"
 ---
-# <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
+# <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Specifica il tipo di informazioni da recuperare per un computer specifico.  
@@ -43,27 +43,27 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  MCIF_NAME  
- Initialize/usare la `bstrName` campo nella struttura.  
+ Inizializza/usa il `bstrName` campo nella struttura.  
   
  MCIF_FLAGS  
- Initialize/usare la `Flags` campo nella struttura.  
+ Inizializza/usa il `Flags` campo nella struttura.  
   
  MIF_ALL  
- Utilizzo o inizializzare tutti i campi della struttura.  
+ Inizializzare/utilizzare tutti i campi della struttura.  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono passati per il [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metodo per indicare i membri della [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struttura devono essere inizializzate.  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono passati al metodo [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) per indicare quali membri della struttura [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) devono essere inizializzati.  
   
- Usato anche nel `Fields` membro del `MACHINE_INFO` struttura per indicare quali campi vengono usati e valido.  
+ Usato anche nel `Fields` membro della `MACHINE_INFO` struttura per indicare quali campi vengono usati e validi.  
   
- Questi flag possono essere combinati con un bit per bit `OR`.  
+ Questi flag possono essere combinati con un bit per bit `OR` .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

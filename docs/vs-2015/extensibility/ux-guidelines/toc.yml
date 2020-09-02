@@ -1,0 +1,38 @@
+- name: Linee guida sull'esperienza utente di Visual Studio
+  href: visual-studio-user-experience-guidelines.md
+  items:
+    - name: Nozioni fondamentali sull'esperienza utente per Visual Studio
+      href: ux-essentials-for-visual-studio.md
+    - name: Tipi di carattere e formattazione per Visual Studio
+      href: fonts-and-formatting-for-visual-studio.md
+    - name: Colori e stili per Visual Studio
+      href: colors-and-styling-for-visual-studio.md
+      items:
+        - name: Colori condivisi per Visual Studio
+          href: shared-colors-for-visual-studio.md
+    - name: Immagini e icone per Visual Studio
+      href: images-and-icons-for-visual-studio.md
+      items:
+        - name: Dizionario del linguaggio visivo per Visual Studio
+          href: visual-language-dictionary-for-visual-studio.md
+    - name: Menu e comandi per Visual Studio
+      href: menus-and-commands-for-visual-studio.md
+    - name: Modelli di interazione per Visual Studio
+      href: interaction-patterns-for-visual-studio.md
+      items:
+        - name: Modelli delle applicazioni per Visual Studio
+          href: application-patterns-for-visual-studio.md
+        - name: Modelli dei controlli comuni per Visual Studio
+          href: common-control-patterns-for-visual-studio.md
+        - name: Modelli compositi per Visual Studio
+          href: composite-patterns-for-visual-studio.md
+    - name: Testo dell'interfaccia utente e Guida per Visual Studio
+      href: ui-text-and-help-for-visual-studio.md
+    - name: Layout per Visual Studio
+      href: layout-for-visual-studio.md
+    - name: Notifiche e avanzamento per Visual Studio
+      href: notifications-and-progress-for-visual-studio.md
+    - name: Animazioni per Visual Studio
+      href: animations-for-visual-studio.md
+    - name: Strumenti di valutazione per Visual Studio
+      href: evaluation-tools-for-visual-studio.md

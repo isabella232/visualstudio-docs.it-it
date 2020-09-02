@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e5f6c6db903b3ecced2ac3ebc4aaa0a3e60910c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145506"
 ---
 # <a name="timer"></a>Timer
@@ -40,26 +40,26 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie  
  L'opzione **Timer** può essere specificata solo in una riga di comando che include una delle opzioni seguenti.  
   
- **Launch:** `AppName`  
+ **Avvia:**`AppName`  
  Avvia il profiler e l'applicazione specificata da `AppName`.  
   
- **Attach:** `PID`  
+ **Connetti:**`PID`  
  Collega il profiler al processo specificato dall'ID di processo (`PID`).  
   
 ## <a name="invalid-options"></a>Opzioni non valide  
  Le opzioni seguenti non possono essere specificate nella stessa riga di comando che include **Timer**.  
   
- **PF**[ **:** `Events`]  
+ **PF**[**:** `Events` ]  
  Imposta l'evento di campionamento sugli errori di pagina e, facoltativamente, imposta l'intervallo di campionamento su `Events`. L'intervallo PF predefinito è 10.  
   
- **Sys**[ **:** `Events`]  
+ **Sys**[**:** `Events` ]  
  Imposta l'evento di campionamento su chiamate del sistema operativo e, facoltativamente, imposta l'intervallo di campionamento su `Events`. L'intervallo Sys predefinito è 10.  
   
- **Counter**[ **:** `Name,Reload,FriendlyName`]  
+ **Contatore**[**:** `Name,Reload,FriendlyName` ]  
  Imposta l'evento di campionamento sul contatore delle prestazioni della CPU specificato da `Name` e imposta l'intervallo di campionamento su `Reload`.  
   
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
- Raccoglie dati di memoria .NET. Per impostazione predefinita, (**Allocation**), i dati vengono raccolti in corrispondenza di ogni evento di allocazione di memoria. Quando si specifica il parametro **Lifetime**, i dati vengono raccolti anche in corrispondenza di ogni evento di Garbage Collection.  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ Raccoglie dati di memoria .NET. Per impostazione predefinita (**allocazione**), i dati vengono raccolti a ogni evento di allocazione della memoria. Quando viene specificato il parametro **Lifetime** , i dati vengono raccolti anche in corrispondenza di ogni evento Garbage Collection.  
   
 ## <a name="example"></a>Esempio  
  Questo esempio illustra come impostare l'intervallo di campionamento del profiler su 1.000.000 cicli del processore.  

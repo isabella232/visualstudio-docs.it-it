@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145538"
 ---
-# <a name="tier-interactions-view"></a>Visualizzazione Interazioni tra livelli
+# <a name="tier-interactions-view"></a>Interazioni tra livelli (visualizzazione)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui tempi di esecuzione nelle funzioni di applicazioni multilivello che comunicano con i database tramite [!INCLUDE[vstecado](../includes/vstecado-md.md)]. I dati vengono raccolti solo per le chiamate di funzione sincrone.  
@@ -41,9 +41,9 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Nome**|- Per una riga di primo livello, nome del processo o della pagina Web profilata.<br />- Per una riga di connessione di database, nome del server che ospita il database.|  
+|**Name**|- Per una riga di primo livello, nome del processo o della pagina Web profilata.<br />- Per una riga di connessione di database, nome del server che ospita il database.|  
 |**Database**|Nome del database (solo righe di connessione di database).|  
-|**Conteggio**|Numero totale di richieste generate dal processo, dalla pagina Web o dalla connessione di database.|  
+|**Numero**|Numero totale di richieste generate dal processo, dalla pagina Web o dalla connessione di database.|  
 |**Tempo totale trascorso**|Tempo totale impiegato per l'esecuzione di una richiesta dal processo, dalla pagina Web o dalla connessione di database.|  
 |**Tempo massimo trascorso**|Tempo massimo impiegato per l'esecuzione di una richiesta dal processo, dalla pagina Web o dalla connessione di database.|  
 |**Tempo minimo trascorso**|Tempo minimo impiegato per l'esecuzione di una richiesta dal processo, dalla pagina Web o dalla connessione di database.|  
@@ -53,7 +53,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Testo del comando**|Query SQL della richiesta.|  
+|**Testo comando**|Query SQL della richiesta.|  
 |**Conteggio query**|Numero di volte in cui è stata eseguita la query.|  
 |**Tempo totale trascorso**|Tempo totale impiegato per l'esecuzione delle istanze della query.|  
 |**Tempo massimo trascorso**|Tempo massimo impiegato per l'esecuzione di un'istanza della query.|  

@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e14165ba2111f40898c00b3d01950425c042070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652916"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
@@ -51,7 +51,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
 
 - Passaggio dei dati da un form all'altro.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare questa procedura dettagliata, è necessario:
 
 - Accedere al database di esempio Northwind.
@@ -62,7 +62,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
 
 1. Creare un nuovo progetto dal menu **file** .
 
-2. Denominare il progetto `PassingDataBetweenForms`.
+2. Assegnare al progetto il nome `PassingDataBetweenForms`.
 
 3. Selezionare **Windows Forms applicazione**e fare clic su **OK**. Per ulteriori informazioni, vedere [applicazioni client](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).
 
@@ -74,7 +74,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
 
 1. Scegliere **Mostra origini dati** dal menu **Dati**.
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
@@ -144,13 +144,13 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
     > [!NOTE]
     > Verificare che la sintassi dei parametri sia corretta per il database. In Microsoft Access, ad esempio, la clausola WHERE presenta la seguente sintassi: `WHERE CustomerID = ?`.
 
-6. Scegliere **Avanti**.
+6. Fare clic su **Avanti**.
 
-7. Per il immettere il **nome DataTableMethod**, digitare `FillByCustomerID`.
+7. Per il **riempimento di un nome DataTableMethod**, digitare `FillByCustomerID` .
 
 8. Deselezionare l'opzione **Restituisci una DataTable**, quindi scegliere **Avanti**.
 
-9. Scegliere **Fine**.
+9. Fare clic su **Fine**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Creare un metodo su Form2 per passare i dati a
 
@@ -180,7 +180,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
      [!code-csharp[VbRaddataDisplaying#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs#2)]
      [!code-vb[VbRaddataDisplaying#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb#2)]
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione
 

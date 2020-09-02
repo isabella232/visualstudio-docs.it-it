@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare una. File Vsct | Microsoft Docs'
+title: 'Procedura: creare un oggetto. File vsct | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a2483c000bb7c9446ac51bb94ef4006a7b2ac89f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158347"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedura: Creare un file con estensione vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Esistono diversi modi per creare un file di configurazione (con estensione vsct) basato su XML di Visual Studio Command Table.  
+Esistono diversi modi per creare un file di configurazione tabella comandi di Visual Studio (con estensione vsct) basato su XML.  
   
 - È possibile creare un nuovo VSPackage nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modello di pacchetto.  
   
-- È possibile usare il compilatore comando basato su XML di configurazione di tabella, Vsct.exe, per generare un file da un file con estensione CTC esistente.  
+- Per generare un file da un file con estensione CTC esistente, è possibile usare il compilatore di configurazione della tabella dei comandi basato su XML, Vsct.exe.  
   
-- È possibile usare Vsct.exe per generare un file con estensione vsct da un file CTO esistente.  
+- È possibile utilizzare Vsct.exe per generare un file con estensione vsct da un file CTO esistente.  
   
 - È possibile creare manualmente un nuovo file con estensione vsct.  
   
-  Questo argomento illustra come creare manualmente un nuovo file con estensione vsct.  
+  In questo argomento viene illustrato come creare manualmente un nuovo file con estensione vsct.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Per creare manualmente un nuovo file con estensione vsct  
   
 1. Avviare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-2. Nel **File** dal menu **New**, quindi fare clic su **File**.  
+2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **File**.  
   
-3. Nel **modelli** riquadro, fare clic su **File XML** e quindi fare clic su **Open**.  
+3. Nel riquadro **modelli** fare clic su **file XML** e quindi su **Apri**.  
   
-4. Nel **View** menu, fare clic su **finestra proprietà** per visualizzare le proprietà del file XML.  
+4. Scegliere **finestra Proprietà** dal menu **Visualizza** per visualizzare le proprietà del file XML.  
   
-5. Nel **proprietà** finestra, fare clic sul pulsante Sfoglia (...) della proprietà di schemi.  
+5. Nella finestra **Proprietà** fare clic sul pulsante Sfoglia (...) nella proprietà schemi.  
   
-6. Nell'elenco di schemi XSD, selezionare lo schema vsct.xsd. Se non è nell'elenco, fare clic su **Add** e quindi individuare il file in un'unità locale. Fare clic su **OK** al termine.  
+6. Nell'elenco degli schemi XSD selezionare lo schema vsct. xsd. Se non è presente nell'elenco, fare clic su **Aggiungi** e quindi individuare il file in un'unità locale. Al termine, fare clic su **OK** .  
   
-7. Nel file XML, digitare `<CommandTable` e quindi premere TAB. Chiudere il tag digitando `>`.  
+7. Nel file XML digitare `<CommandTable` e quindi premere TAB. Chiudere il tag digitando `>` .  
   
-     Verrà creato un file con estensione vsct base.  
+     Verrà creato un file con estensione vsct di base.  
   
-8. Inserire gli elementi del file XML che si desidera aggiungere, in base al [VSCT Schema](../../extensibility/vsct-xml-schema-reference.md). Per altre informazioni, vedere [creazione e modifica. File Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. Inserire gli elementi del file XML che si desidera aggiungere, in base allo [schema vsct](../../extensibility/vsct-xml-schema-reference.md). Per ulteriori informazioni, vedere [creazione e modifica. File vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 ## <a name="compiling-the-code"></a>Compilazione del codice  
- Semplicemente aggiungendo un file con estensione vsct da un progetto non viene spostato da compilare. È necessario includerlo nel processo di compilazione.  
+ La semplice aggiunta di un file con estensione vsct a un progetto non ne comporta la compilazione. È necessario incorporarlo nel processo di compilazione.  
   
-### <a name="to-add-a-vsct-file-to-project-compilation"></a>Per aggiungere un file con estensione vsct per la compilazione del progetto  
+### <a name="to-add-a-vsct-file-to-project-compilation"></a>Per aggiungere un file con estensione vsct alla compilazione del progetto  
   
-1. Aprire il file di progetto nell'editor. Se il progetto viene caricato, è necessario prima scaricarlo.  
+1. Aprire il file di progetto nell'editor. Se il progetto viene caricato, è necessario scaricarlo per primo.  
   
 2. Aggiungere un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) che contiene un elemento VSCTCompile, come illustrato nell'esempio seguente.  
   
@@ -70,9 +70,9 @@ Esistono diversi modi per creare un file di configurazione (con estensione vsct)
   
     ```  
   
-     L'elemento ResourceName deve sempre essere impostata su `Menus.ctmenu`.  
+     L'elemento resourceName deve essere sempre impostato su `Menus.ctmenu` .  
   
-3. Se il progetto contiene un file con estensione resx, aggiungere un elemento risorsa incorporata contenente un elemento MergeWithCTO, come illustrato nell'esempio seguente.  
+3. Se il progetto contiene un file con estensione resx, aggiungere un elemento EmbeddedResource che contiene un elemento MergeWithCTO, come illustrato nell'esempio seguente.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.resx">  
@@ -82,9 +82,9 @@ Esistono diversi modi per creare un file di configurazione (con estensione vsct)
   
     ```  
   
-     Questo markup deve passare all'interno dell'elemento ItemGroup che contiene risorse incorporate.  
+     Questo markup dovrebbe andare all'interno dell'elemento ItemGroup che contiene risorse incorporate.  
   
-4. Aprire il file del pacchetto, in genere denominato *ProjectName*Package.cs oppure *ProjectName*Package.vb, nell'editor.  
+4. Aprire il file del pacchetto, in genere denominato *nomeprogetto*Package.cs o *NomeProgetto*Package. vb, nell'editor.  
   
 5. Aggiungere un attributo ProvideMenuResource alla classe del pacchetto, come illustrato nell'esempio seguente.  
   
@@ -92,11 +92,11 @@ Esistono diversi modi per creare un file di configurazione (con estensione vsct)
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     ```  
   
-     Il primo valore del parametro deve corrispondere al valore dell'attributo ResourceName che è definito nel file di progetto.  
+     Il primo valore del parametro deve corrispondere al valore dell'attributo resourceName definito nel file di progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione. File Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
- [Visual Studio Command Table (. File Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Procedura: Creare una. File Vsct da un oggetto esistente. File CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
- [Procedura: Creare una. File Vsct da un oggetto esistente. File CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
+ [Authoring. File vsct](../../extensibility/internals/authoring-dot-vsct-files.md)   
+ [Tabella comandi di Visual Studio (. File vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Procedura: creare un oggetto. File vsct da un esistente. File CTC](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file.md)   
+ [Procedura: creare un oggetto. File vsct da un esistente. File CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)   
  [Riferimenti sullo schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

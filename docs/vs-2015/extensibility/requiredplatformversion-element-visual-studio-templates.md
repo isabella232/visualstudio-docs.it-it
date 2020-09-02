@@ -9,24 +9,24 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e5ba8cfef6674b5603cf03c73619f686338af3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159283"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica la versione minima del sistema operativo il modello di progetto necessaria per funzionare correttamente. Questo elemento viene usato per modelli di progetto che creano [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app.  
+Specifica la versione minima del sistema operativo necessaria per il corretto funzionamento del modello di progetto. Questo elemento viene usato per i modelli di progetto per la creazione di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app.  
   
- Il `RequiredPlatformVersion` valore viene confrontato direttamente con la versione del sistema operativo. Se il `RequiredPlatformVersion` è superiore alla versione del sistema operativo, il modello non viene visualizzato nei **nuovo progetto** nella finestra di dialogo. Per specificare un modello per [!INCLUDE[win8](../includes/win8-md.md)] o versione successiva, impostare `RequiredPlatformVersion` a 6.2.0. Per specificare un modello per [!INCLUDE[win81](../includes/win81-md.md)] o versione successiva, impostare RequiredPlatformVersion alla versione 6.3.0.  
+ Il `RequiredPlatformVersion` valore viene confrontato direttamente con la versione del sistema operativo. Se `RequiredPlatformVersion` è superiore alla versione del sistema operativo, il modello non viene visualizzato nella finestra di dialogo **nuovo progetto** . Per specificare un modello per [!INCLUDE[win8](../includes/win8-md.md)] o versione successiva, impostare `RequiredPlatformVersion` su 6.2.0. Per specificare un modello per [!INCLUDE[win81](../includes/win81-md.md)] o versione successiva, impostare RequiredPlatformVersion su 6.3.0.  
   
- I modelli che specificano `RequiredPlatformVersion`= 8 compatibili con il cliente precedente [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] modelli.  
+ I modelli che specificano `RequiredPlatformVersion` = 8 sono compatibili con i modelli di cliente precedenti [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
   
  VSTemplate  
 TemplateData  
-... TargetPlatformName  
+..... TargetPlatformName  
 RequiredPlatformVersion  
   
 ## <a name="syntax"></a>Sintassi  
@@ -36,7 +36,7 @@ RequiredPlatformVersion
 ```  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
- No.  
+ Nessuno.  
   
 ### <a name="attributes"></a>Attributi  
  Nessuno.  
@@ -53,7 +53,7 @@ RequiredPlatformVersion
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Questo testo specifica la versione minima del sistema operativo richiesta dal modello.  
   
 ## <a name="example"></a>Esempio  

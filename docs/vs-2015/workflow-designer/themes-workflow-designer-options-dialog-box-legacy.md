@@ -15,14 +15,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8b8dfd5c2aaf6e7ced24bc952d7ccadc04cc72f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654682"
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Finestra di dialogo Temi, finestra di progettazione del flusso di lavoro, opzioni (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo **temi, progettazione flussi di lavoro, opzioni** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **temi, progettazione flussi di lavoro, opzioni** nell'legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Un tema definisce colori di sfondo e primo piano, stili, icone e altri elementi visivi di un flusso di lavoro. È possibile salvare temi per riutilizzarli in altri flussi di lavoro. È possibile selezionare i temi predefiniti e salvati personalizzati utilizzando la finestra di dialogo **temi, progettazione flussi di lavoro, opzioni** . Per aprire questa finestra di dialogo, fare clic su **Seleziona tema personalizzato** nel menu **flusso di lavoro** . In alternativa, fare clic con il pulsante destro del mouse sull'area di progettazione del flusso di lavoro e scegliere **Seleziona tema**
 
@@ -33,7 +33,7 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **tem
 |**Nuovo**|Fare clic per aprire la finestra di [dialogo di configurazione del tema (legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) per creare un nuovo tema.|
 |**Modifica...**|Fare clic per aprire la finestra di [dialogo di configurazione del tema (legacy)](../workflow-designer/theme-configuration-dialog-box-legacy.md) per modificare il tema selezionato.|
 |**Sfoglia**|Fare clic per cercare un file di tema del flusso di lavoro con estensione .wtm.|
-|**Seleziona un tema**|Intestazione di colonna del nome di tema dell’elenco dei temi. Selezionare un tema dall'elenco, fare clic su **modifica** per modificarlo oppure fare clic su **OK** per utilizzare il tema selezionato per il flusso di lavoro.|
+|**Selezionare un tema**|Intestazione di colonna del nome di tema dell’elenco dei temi. Selezionare un tema dall'elenco, fare clic su **modifica** per modificarlo oppure fare clic su **OK** per utilizzare il tema selezionato per il flusso di lavoro.|
 |**Descrizione**|Intestazione di colonna della descrizione del tema dell’elenco dei temi.|
 |**Posizione**|Intestazione di colonna del percorso del tema dell’elenco dei temi.|
 

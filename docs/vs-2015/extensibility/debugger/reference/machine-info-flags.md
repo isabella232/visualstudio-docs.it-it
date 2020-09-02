@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3b5819368c91590bbc1973e4c6097f29bb2ba9db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546837"
 ---
-# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
+# <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Utilizzato per descrivere un computer.  
@@ -41,15 +41,15 @@ public enum enum_MACHINE_INFO_FLAGS { 
   
 ## <a name="members"></a>Membri  
  MCIFLAG_TERMINAL_SERVICES_AVAILABLE  
- Indica che sono disponibili servizi terminal.  
+ Indica che i servizi Terminal sono disponibili.  
   
-## <a name="remarks"></a>Note  
- Utilizzato come il `Flags` membro della [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struttura.  
+## <a name="remarks"></a>Osservazioni  
+ Utilizzato come `Flags` membro della struttura [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

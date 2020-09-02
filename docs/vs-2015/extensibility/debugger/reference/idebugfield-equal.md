@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal | Microsoft Docs
+title: 'IDebugField:: EQUAL | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa630a6f2084f7ff79a9c89b685658cf694fcab9
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547312"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
@@ -40,10 +40,10 @@ int Equal(
   
 #### <a name="parameters"></a>Parametri  
  `pField`  
- [in] Campo da confrontare con questo.  
+ in Campo da confrontare con questo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se i campi sono uguali, restituisce `S_OK`. Se i campi sono diversi, restituisce `S_FALSE.` in caso contrario, restituisce un codice di errore.  
+ Se i campi sono uguali, restituisce `S_OK` . Se i campi sono diversi, restituisce `S_FALSE.` in caso contrario, restituisce un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

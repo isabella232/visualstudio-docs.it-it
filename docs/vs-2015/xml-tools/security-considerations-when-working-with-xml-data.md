@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 491e8cf8f9441180e66259ed295e04e8a1a90493
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656129"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considerazioni sulla sicurezza durante l'utilizzo di dati XML
@@ -42,4 +42,4 @@ In questo argomento vengono illustrati i problemi di sicurezza che è necessario
 - L'analizzatore di espressioni XSLT viene caricato dal motore di debug gestito. Il motore di debug gestito presuppone che tutto il codice venga eseguito dal computer locale dell'utente. Di conseguenza, la classe <xref:System.Xml.Xsl.XslCompiledTransform> scarica il file XSLT nel computer locale dell'utente. La possibilità che possa verificarsi un'elevazione dei privilegi di esecuzione è attenuata dall'esecuzione di tutte le trasformazioni XSLT in un nuovo dominio applicazione con autorizzazioni limitate.
 
 ## <a name="see-also"></a>Vedere anche
- [Domini dell'applicazione](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)
+ [Domini applicazione](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d56f2dfc2924008a6be293fe1498f0ffe32abaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651432"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operatori logici nelle espressioni di ricerca
@@ -30,7 +30,7 @@ Con gli operatori logici è possibile limitare la ricerca di contenuto mediante 
 |Per cercare|Uso|Esempio|Risultato|
 |-------------------|---------|-------------|------------|
 |Entrambi i termini nello stesso argomento|AND|DIB AND tavolozza|Argomenti che contengono sia "DIB" che "tavolozza".|
-|Uno dei termini in un argomento|Oppure|raster OR vettore|Argomenti che contengono "raster" o "vettore".|
+|Uno dei termini in un argomento|OPPURE|raster OR vettore|Argomenti che contengono "raster" o "vettore".|
 |Primo termine senza il secondo nello stesso argomento|NOT|"sistema operativo" NOT DOS|Argomenti che contengono "sistema operativo" ma non "DOS".|
 |Entrambi i termini, vicini in un argomento|VICINO|utente NEAR kernel|Gli argomenti che contengono "utente" in prossimità di "kernel".|
 

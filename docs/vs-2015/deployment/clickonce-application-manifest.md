@@ -17,44 +17,44 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157420"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione è un file XML che descrive un'applicazione che viene distribuita usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione è un file XML che descrive un'applicazione distribuita tramite [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesti dell'applicazione sono i seguenti elementi e attributi.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i manifesti dell'applicazione hanno gli elementi e gli attributi seguenti.  
   
-|Elemento|DESCRIZIONE|Attributi|  
+|Elemento|Descrizione|Attributi|  
 |-------------|-----------------|----------------|  
-|[\<assembly> Element](../deployment/assembly-element-clickonce-application.md)|Richiesto. Elemento di primo livello.|`manifestVersion`|  
-|[\<assemblyIdentity> Element](../deployment/assemblyidentity-element-clickonce-application.md)|Richiesto. Identifica l'assembly principale del [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md)|Identifica i requisiti di sicurezza dell'applicazione.|Nessuna|  
-|[\<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md)|Richiesto. Identifica il punto di ingresso del codice dell'applicazione.|`name`|  
-|[\<dependency> Element](../deployment/dependency-element-clickonce-application.md)|Richiesto. Identifica ogni dipendenza necessaria per l'esecuzione dell'applicazione. Può anche identificare gli assembly che è necessario preinstallare.|Nessuna|  
-|[\<Elemento file>](../deployment/file-element-clickonce-application.md)|facoltativo. Identifica il file non viene usato dall'applicazione ogni assembly. Può includere i dati sull'isolamento COM (Component Object Model) associati al file.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
-|[\<fileAssociation> Element](../deployment/fileassociation-element-clickonce-application.md)|facoltativo. Identifica un'estensione di file da associare all'applicazione.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
+|[\<assembly> Elemento](../deployment/assembly-element-clickonce-application.md)|Obbligatorio. Elemento di primo livello.|`manifestVersion`|  
+|[\<assemblyIdentity> Elemento](../deployment/assemblyidentity-element-clickonce-application.md)|Obbligatorio. Identifica l'assembly primario dell' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<trustInfo> Elemento](../deployment/trustinfo-element-clickonce-application.md)|Identifica i requisiti di sicurezza dell'applicazione.|Nessuno|  
+|[\<entryPoint> Elemento](../deployment/entrypoint-element-clickonce-application.md)|Obbligatorio. Identifica il punto di ingresso del codice dell'applicazione.|`name`|  
+|[\<dependency> Elemento](../deployment/dependency-element-clickonce-application.md)|Obbligatorio. Identifica ogni dipendenza necessaria per l'esecuzione dell'applicazione. Può anche identificare gli assembly che è necessario preinstallare.|Nessuno|  
+|[\<file> Elemento](../deployment/file-element-clickonce-application.md)|facoltativo. Identifica ogni file non di assembly usato dall'applicazione. Può includere i dati sull'isolamento COM (Component Object Model) associati al file.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<fileAssociation> Elemento](../deployment/fileassociation-element-clickonce-application.md)|facoltativo. Identifica un'estensione di file da associare all'applicazione.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
-## <a name="remarks"></a>Note  
- Il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] file manifesto dell'applicazione identifica un'applicazione distribuita usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Per altre informazioni su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vedere [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md).  
+## <a name="remarks"></a>Osservazioni  
+ Il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] file manifesto dell'applicazione identifica un'applicazione distribuita con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Per altre informazioni su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vedere [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md).  
   
 ## <a name="file-location"></a>Percorso file  
- Oggetto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione è specifico per una singola versione di una distribuzione. Per questo motivo, essi devono essere archiviati separatamente dai manifesti di distribuzione. La convenzione comune consiste nell'inserirli in una sottodirectory denominata in base alla versione associata.  
+ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione è specifico per una singola versione di una distribuzione. Per questo motivo, è necessario archiviarli separatamente dai manifesti di distribuzione. La convenzione comune consiste nell'inserirli in una sottodirectory denominata dopo la versione associata.  
   
- Il manifesto dell'applicazione deve sempre essere firmato prima della distribuzione. Se si modifica un manifesto dell'applicazione manualmente, è necessario utilizzare mage.exe firmare nuovamente il manifesto dell'applicazione, aggiornare il manifesto di distribuzione e quindi firmare nuovamente il manifesto di distribuzione. Per altre informazioni, vedere [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Il manifesto dell'applicazione deve sempre essere firmato prima della distribuzione. Se si modifica manualmente un manifesto dell'applicazione, è necessario usare mage.exe per firmare di nuovo il manifesto dell'applicazione, aggiornare il manifesto di distribuzione e quindi firmare nuovamente il manifesto della distribuzione. Per ulteriori informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="file-name-syntax"></a>Sintassi del nome file  
- Il nome di un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] file manifesto dell'applicazione deve essere il nome completo e l'estensione dell'applicazione come identificati nel `assemblyIdentity` elemento, seguito dall'estensione manifest. Ad esempio, un manifesto dell'applicazione che fa riferimento all'applicazione Example.exe utilizzerebbe la seguente sintassi del nome file.  
+ Il nome di un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] file manifesto dell'applicazione deve essere il nome completo e l'estensione dell'applicazione come identificati nell' `assemblyIdentity` elemento, seguiti dall'estensione manifest. Ad esempio, un manifesto dell'applicazione che fa riferimento all'applicazione Example.exe utilizzerebbe la sintassi del nome file seguente.  
   
  `example.exe.manifest`  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente illustra un manifesto dell'applicazione per un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione.  
+ Nell'esempio di codice seguente viene illustrato un manifesto dell'applicazione per un' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione.  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

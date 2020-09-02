@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03fd9b6fd794320faf76119616900b79d5bf4333
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187849"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Numero ridotto di campioni raccolti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id regola | DA0008 NUMERO RIDOTTO |  
-| Categoria | Utilizzo degli strumenti di profilatura |  
+ID regola | DA0008 |  
+| Categoria | Utilizzo Strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | Sono stati raccolti solo pochi campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi.|  
+| Messaggio | Sono stati raccolti solo pochi esempi. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi.|  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  

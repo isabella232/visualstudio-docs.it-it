@@ -13,10 +13,10 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe87bff62c1044442b579664fb789f918a2e6c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186455"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>Elemento TemplateContent (modelli di Visual Studio)
@@ -24,7 +24,7 @@ ms.locfileid: "68186455"
 
 Specifica il contenuto del modello.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
   
 ## <a name="syntax"></a>Sintassi  
@@ -40,7 +40,7 @@ Specifica il contenuto del modello.
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|Specifica se compilare la soluzione quando viene creato un progetto dal modello.|  
   
@@ -49,22 +49,22 @@ Specifica il contenuto del modello.
 |Elemento|Descrizione|  
 |-------------|-----------------|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica l'organizzazione e i contenuti dei modelli multiprogetto.|  
-|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i file o directory da aggiungere al progetto.|  
-|[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i riferimenti all'assembly necessari per un modello di elemento.|  
+|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i file o le directory da aggiungere al progetto.|  
+|[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i riferimenti ad assembly necessari per un modello di elemento.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Elemento facoltativo.<br /><br /> Specifica un file contenuto nel modello.|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i parametri personalizzati che devono essere utilizzati quando viene creato un progetto o un elemento dal modello.|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica i parametri personalizzati da usare quando un progetto o un elemento viene creato dal modello.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Contiene tutti i metadati per il modello di progetto, un modello di elemento o lo starter kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Contiene tutti i metadati per il modello di progetto, il modello di elemento o starter kit.|  
   
-## <a name="remarks"></a>Note  
- `TemplateContent` un elemento è obbligatorio.  
+## <a name="remarks"></a>Osservazioni  
+ `TemplateContent` è un elemento obbligatorio.  
   
 ## <a name="example"></a>Esempio  
- L'esempio seguente mostra i metadati per un modello di progetto per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] dell'applicazione.  
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -91,5 +91,5 @@ Specifica il contenuto del modello.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

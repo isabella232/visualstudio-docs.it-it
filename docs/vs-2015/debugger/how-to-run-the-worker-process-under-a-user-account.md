@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eseguire il processo di lavoro con un Account utente | Microsoft Docs'
+title: 'Procedura: eseguire il processo di lavoro con un account utente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,20 +21,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157862"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: Eseguire il processo di lavoro con un account utente
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.  
   
-## <a name="procedure"></a>Routine  
+## <a name="procedure"></a>Procedura  
   
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Per eseguire aspnet_wp.exe con un account utente  
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Per eseguire aspnet_wp.exe con un account utente  
   
 1. Aprire il file machine.config, che si trova sul computer nella cartella CONFIG, nel percorso in cui è stato installato l'ambiente runtime.  
   
@@ -60,7 +60,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
     iisreset  
     ```  
 
-    oppure  
+    - o -  
   
     ```  
     net stop iisadmin /y  
@@ -71,19 +71,19 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
   
 7. Nella finestra di dialogo **Proprietà file ASP.NET temporanei** scegliere la scheda **Sicurezza** .  
   
-8. Scegliere **Avanzate**.  
+8. Fare clic su **Avanzate**.  
   
 9. Nella finestra di dialogo **Impostazioni avanzate di sicurezza per file ASP.Net temporanei** fare clic sul pulsante **Aggiungi**.  
   
-    Verrà visualizzata la finestra di dialogo per **la selezione di utenti, computer o gruppi**  .  
+    Verrà visualizzata la **finestra di dialogo per la selezione di utenti, computer o gruppi**.  
   
-10. Digitare il nome utente nella casella **Immettere il nome dell'oggetto da selezionare** quindi scegliere **OK**. Il nome utente deve seguire il formato: Nomedominio\nomeutente.  
+10. Digitare il nome utente nella casella **Immettere il nome dell'oggetto da selezionare** quindi scegliere **OK**. Il nome utente deve seguire il formato NomeDominio\NomeUtente.  
   
 11. Nella finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** , assegnare all'utente **Controllo completo**, quindi scegliere **OK** per chiudere la finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** .  
   
-12. Verrà visualizzata la finestra di dialogo **Sicurezza** , in cui verrà chiesto di confermare la modifica delle autorizzazioni in una cartella di sistema. Scegliere **Sì**.  
+12. Verrà visualizzata la finestra di dialogo **Sicurezza** , in cui verrà chiesto di confermare la modifica delle autorizzazioni in una cartella di sistema. Fare clic su **Sì**.  
   
 13. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà file ASP.NET temporanei** .  
   
 ## <a name="see-also"></a>Vedere anche  
-[Debug ASP.NET: Requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)  
+[Debug di ASP.NET: requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)  

@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1be7cb6071a0307a56285b8929e52e038c263fdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546824"
 ---
-# <a name="metadatatype"></a>METADATA_TYPE
+# <a name="metadata_type"></a>METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa struttura consente di specificare informazioni su un tipo di campo impiegato dai metadati.  
+Questa struttura specifica le informazioni su un tipo di campo tratto dai metadati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,25 +44,25 @@ public struct METADATA_TYPE {
   
 #### <a name="parameters"></a>Parametri  
  ulAppDomainID  
- ID dell'applicazione da cui proviene il simbolo. Ciò consente di identificare in modo univoco un'istanza dell'applicazione.  
+ ID dell'applicazione da cui è arrivato il simbolo. Viene utilizzato per identificare in modo univoco un'istanza dell'applicazione.  
   
  guidModule  
- Il GUID del modulo che contiene questo campo.  
+ GUID del modulo che contiene questo campo.  
   
  tokClass  
- L'ID del token dei metadati di questo tipo.  
+ ID del token di metadati di questo tipo.  
   
- [C++] `_mdToken` sia un `typedef` un 32-bit `int`.  
+ [C++] `_mdToken` è un oggetto `typedef` per un oggetto a 32 bit `int` .  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene visualizzato come parte dell'unione nel [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struttura quando il `dwKind` campo il `TYPE_INFO` struttura è impostata su `TYPE_KIND_METADATA` (un valore compreso il [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumerazione).  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene visualizzata come parte dell'Unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il `dwKind` campo della `TYPE_INFO` struttura è impostato su `TYPE_KIND_METADATA` (un valore dell'enumerazione [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).  
   
- Il `tokClass` valore è un token di metadati che identifica un tipo. Per informazioni dettagliate su come interpretare i bit più significativi dell'ID del token di metadati, vedere la `CorTokenType` enumerazione nel file corhdr. h di [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] SDK.  
+ Il `tokClass` valore è un token di metadati che identifica in modo univoco un tipo. Per informazioni dettagliate su come interpretare i bit superiori dell'ID del token di metadati, vedere l' `CorTokenType` enumerazione nel file corhdr. h nell' [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] SDK.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

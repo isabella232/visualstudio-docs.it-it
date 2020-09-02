@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Pagina su o freccia giù in memoria | Microsoft Docs'
+title: "Procedura: pagina verso l'alto o verso il basso in memoria | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157853"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Procedura: Spostarsi verso l'alto o verso il basso in una pagina di memoria
+# <a name="how-to-page-up-or-down-in-memory"></a>Procedura: spostare verso l'alto o verso il basso una pagina di memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si visualizza il contenuto della memoria nella finestra **Memoria** o **Disassembly**, è possibile utilizzare la barra di scorrimento verticale per spostarsi verso l'alto o verso il basso nello spazio di memoria.  
@@ -52,6 +52,6 @@ Quando si visualizza il contenuto della memoria nella finestra **Memoria** o **D
 - Fare clic sulla freccia all'estremità superiore o inferiore della barra di scorrimento verticale.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Finestre Memoria](../debugger/memory-windows.md)   
- [Procedura: Usare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)   
+ [Finestre memoria](../debugger/memory-windows.md)   
+ [Procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)   
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

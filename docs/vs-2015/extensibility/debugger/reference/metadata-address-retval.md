@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f685bcfad5cf576215aa50aa26540ba207de2e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546863"
 ---
-# <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
+# <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa struttura rappresenta un valore restituito da un metodo o funzione.  
+Questa struttura rappresenta un valore restituito da un metodo o una funzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,24 +46,24 @@ public struct METADATA_ADDRESS_RETVAL {
   
 ## <a name="terms"></a>Termini  
  tokMethod  
- L'ID del metodo di questo valore restituito è per.  
+ ID del metodo a cui è associato il valore restituito.  
   
  dwCorType  
- Il tipo di base del valore restituito. Si tratta di un valore compreso il `CorElementType` definita nell'enumerazione il [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] file corhdr. h SDK.  
+ Tipo di base del valore restituito. Si tratta di un valore dell' `CorElementType` enumerazione definita nel [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] file corhdr. h dell'SDK.  
   
  dwSigSize  
- Le dimensioni della firma del valore restituito (archiviato in `rgSig`).  
+ Dimensione della firma del valore restituito (archiviata in `rgSig` ).  
   
  rgSig  
- Matrice di byte che costituiscono la firma del valore restituito.  
+ Matrice di byte che costituisce la firma del valore restituito.  
   
-## <a name="remarks"></a>Note  
- Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_RETVAL` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura fa parte dell'Unione nella struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura è impostato su `ADDRESS_KIND_RETVAL` (un valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

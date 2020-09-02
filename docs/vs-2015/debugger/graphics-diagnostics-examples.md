@@ -1,5 +1,5 @@
 ---
-title: Esempi di diagnostica della grafica | Microsoft Docs
+title: Esempi di Diagnostica della grafica | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14b4ac689109e29baa4ee06c668b208d0d5227b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159709"
 ---
 # <a name="graphics-diagnostics-examples"></a>Esempi di diagnostica grafica
@@ -29,7 +29,7 @@ Questi esempi mostrano come eseguire il debug dei problemi di rendering nelle ap
 - [Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>Usare la diagnostica della grafica con un dispositivo basato su ARM  
- È possibile usare la diagnostica della grafica per eseguire il debug della propria app Direct3D in un dispositivo basato su ARM tramite debug remoto. Per altre informazioni, vedere [Procedura: Usare la diagnostica della grafica con un dispositivo ARM](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md).  
+ È possibile usare la diagnostica della grafica per eseguire il debug della propria app Direct3D in un dispositivo basato su ARM tramite debug remoto. Per altre informazioni [, vedere Procedura: usare diagnostica della grafica con un dispositivo ARM](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md).  
   
 ## <a name="playing-back-graphics-information"></a>Riproduzione di informazioni grafiche  
  Dopo aver acquisito le informazioni grafiche da un'app in esecuzione, è possibile riprodurre gli eventi acquisiti per diagnosticare problemi di rendering. Per riprodurre, è possibile usare il computer di sviluppo oppure un computer remoto o un dispositivo connesso. Per altre informazioni, vedere [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
@@ -55,4 +55,4 @@ Questi esempi mostrano come eseguire il debug dei problemi di rendering nelle ap
 ## <a name="debugging-compute-shaders"></a>Debug di compute shader  
  È possibile usare la diagnostica della grafica per il debug dei kernel del compute shader DirectCompute che generano risultati errati. Con DirectCompute, è possibile usare la potenza di calcolo della GPU per eseguire calcoli su un numero elevato di elementi dati in parallelo. Per alcuni tipi di problemi, l'uso della GPU può fornire prestazioni molto superiori a quelle offerte da un codice, per quanto ben ottimizzato, per CPU. I debugger tradizionali non possono tuttavia rilevare codice eseguito su GPU. Il debug di questo tipo di codice spesso richiede strumenti specializzati specifici del fornitore, che potrebbero non integrarsi bene con Visual Studio. Per rendere il debug di compute shader più coerente su un intervallo di GPU, la diagnostica della grafica acquisisce eventi di invio di DirectCompute, in aggiunta agli eventi di rendering Direct3D, così che sia possibile usare strumenti comuni per il debug dei problemi nel codice del compute shader.  
   
- Per uno scenario che dimostra come eseguire il debug di un problema di simulazione causato da un bug nel compute shader, vedere [procedura dettagliata: Usare diagnostica della grafica per eseguire il Debug di un Compute Shader](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md).
+ Per uno scenario che dimostra come eseguire il debug di un problema di simulazione causato da un bug nel compute shader, vedere [procedura dettagliata: uso di diagnostica della grafica per eseguire il Debug di un Compute Shader](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md).
