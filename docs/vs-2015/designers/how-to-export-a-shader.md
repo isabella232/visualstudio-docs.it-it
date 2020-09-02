@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2225ce416fed4e97e998a50f70a0dc4c25908476
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664463"
 ---
 # <a name="how-to-export-a-shader"></a>Procedura: Esportare uno shader
@@ -30,9 +30,9 @@ Questo documento illustra come usare la finestra di progettazione shader per esp
 
 #### <a name="to-export-a-shader"></a>Per esportare uno shader
 
-1. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire un file **Visual Shader Graph (.dgsl)** .
+1. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire un file **Visual Shader Graph (.dgsl)**.
 
-     Se non è disponibile un file **Visual Shader Graph (.dgsl)** , crearne uno come descritto in [Procedura: Creare uno shader con colore di base ](../designers/how-to-create-a-basic-color-shader.md).
+     Se non si dispone di un file **Visual shader Graph (. dgsl)** da aprire, crearne uno come descritto in [procedura: creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md).
 
 2. Nella barra degli strumenti **Progettazione shader** scegliere **Avanzate**, **Esporta**, **Esporta come**. Viene visualizzata la finestra di dialogo **Esporta shader**.
 
@@ -49,4 +49,4 @@ Questo documento illustra come usare la finestra di progettazione shader per esp
 4. Nella casella combinata **Nome file** specificare un nome per lo shader esportato e scegliere il pulsante **Salva**.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Creare una [finestra di progettazione shader](../designers/shader-designer.md) di base Color shader ](../designers/how-to-create-a-basic-color-shader.md)
+ [Procedura: creare una finestra di progettazione shader di base color shader](../designers/how-to-create-a-basic-color-shader.md) [Shader Designer](../designers/shader-designer.md)

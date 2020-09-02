@@ -1,5 +1,5 @@
 ---
-title: Registrazione di servizi | Microsoft Docs
+title: Registrazione dei servizi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,16 +10,16 @@ ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
 manager: jillfra
 ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62971290"
 ---
 # <a name="registering-services"></a>Registrazione di servizi
 Per supportare il caricamento su richiesta, un provider di servizi deve registrare i suoi servizi globali con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Durante lo sviluppo, i provider di servizi gestiti registrano servizi e sostituzioni dei servizi aggiungendo attributi al codice sorgente dei pacchetti e quindi compilando i pacchetti nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Questo consente di eseguire l'utility RegPkg.exe sull'assembly risultante, registrare il pacchetto e prepararlo per la distribuzione. Per altre informazioni, vedere [Procedura: Registrare un servizio](../misc/how-to-register-a-service.md).  
+ Durante lo sviluppo, i provider di servizi gestiti registrano servizi e sostituzioni dei servizi aggiungendo attributi al codice sorgente dei pacchetti e quindi compilando i pacchetti nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Questo consente di eseguire l'utility RegPkg.exe sull'assembly risultante, registrare il pacchetto e prepararlo per la distribuzione. Per altre informazioni, vedere [procedura: registrare un servizio](../misc/how-to-register-a-service.md).  
   
  I provider di servizi non gestiti devono registrare i servizi forniti con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nella sezione del Registro di sistema dedicata ai servizi o alle sostituzioni dei servizi. Il frammento seguente del file REG mostra come potrebbe essere registrato il servizio SVsTextManager:  
   

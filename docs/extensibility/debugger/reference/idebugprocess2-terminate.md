@@ -1,5 +1,5 @@
 ---
-title: Metodo IDebugProcess2::Terminate . Documenti Microsoft
+title: 'IDebugProcess2:: terminate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8da1b2719e8b37df009e3bbef99e57c24117a963
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723811"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
@@ -41,7 +41,7 @@ int Terminate();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Quando un processo viene terminato, tutti i programmi all'interno di tale processo vengono terminati; non è consentito eseguire altro codice.
+ Quando un processo viene terminato, tutti i programmi all'interno del processo vengono terminati; nessuno è autorizzato a eseguire altro codice.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

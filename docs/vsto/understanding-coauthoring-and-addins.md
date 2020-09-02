@@ -1,5 +1,5 @@
 ---
-title: Comprendere i componenti aggiuntivi e creazione condivisa
+title: Informazioni su coautore e componenti aggiuntivi
 ms.date: 07/20/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62978185"
 ---
-# <a name="understand-coauthoring-and-add-ins"></a>Comprendere i componenti aggiuntivi e creazione condivisa
+# <a name="understand-coauthoring-and-add-ins"></a>Informazioni su coautore e componenti aggiuntivi
 
-Creazione condivisa è una funzionalità del desktop di Excel per Windows che consente di modificare una cartella di lavoro ospitato nel cloud (vale a dire, OneDrive, OneDrive for Business o SharePoint Online) contemporaneamente con altri utenti. Con l'aggiunta di questa funzionalità, potrebbe essere necessario apportare modifiche alla soluzione di Excel per assicurarsi che funzioni in modo uniforme anche quando gli utenti sono creazione condivisa. Visualizzare [sulla creazione condivisa in Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
+La coautorizzazione è una funzionalità di Excel per Windows desktop che consente di modificare una cartella di lavoro ospitata nel cloud, ovvero OneDrive, OneDrive for business o SharePoint Online, contemporaneamente ad altri utenti. Con l'aggiunta di questa funzionalità, potrebbe essere necessario apportare modifiche alla soluzione Excel per assicurarsi che funzioni correttamente anche quando gli utenti sono coautori. Vedere [informazioni sulla coautorizzazione in Excel](/office/vba/excel/concepts/about-coauthoring-in-excel).
 
-Nota: Creazione condivisa per Windows Desktop Excel è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori di Office 365. Gli utenti che hanno acquistato una licenza perpetua per Office 2016 o versioni precedenti non sono attualmente disponibili per la funzionalità di modifica condivisa. (Excel Online, Excel per Android, in Excel per iOS e dispositivi mobili di Excel in di Windows Store supportano anche creazione condivisa).
+Nota: la coautorizzazione per Windows desktop Excel è stata introdotta in 2017 ed è attualmente disponibile per i sottoscrittori Office365. Gli utenti che hanno acquistato una licenza perpetua per Office 2016 o versioni precedenti non hanno attualmente accesso alla funzionalità di cocreazione. (Excel online, Excel per Android, Excel per iOS e Excel Mobile in Windows Store supportano anche la cocreazione).
 
 ## <a name="see-also"></a>Vedere anche
 - [Soluzioni Excel](./excel-solutions.md)

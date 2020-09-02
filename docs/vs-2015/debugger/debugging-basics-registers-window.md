@@ -1,5 +1,5 @@
 ---
-title: 'Nozioni fondamentali di debug: Finestra registri | Microsoft Docs'
+title: 'Nozioni fondamentali di debug: finestra registri | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,18 +22,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5c9380ccc9a21270da3c5832222976e4c7121e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686710"
 ---
-# <a name="debugging-basics-registers-window"></a>Nozioni fondamentali di debug: Finestra Registri
+# <a name="debugging-basics-registers-window"></a>Nozioni fondamentali di debug: finestra Registri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La finestra **Registri** è disponibile solo se il debug a livello di indirizzo è stato attivato nella finestra di dialogo **Opzioni**, nodo **Debug**.  
   
- I registri sono speciali posizioni interne a un processore (CPU) utilizzate per archiviare piccole porzioni di dati attualmente in uso da parte del processore. Durante la compilazione o l'interpretazione di codice sorgente vengono generate istruzioni che spostano dati dalla memoria ai registri e viceversa, secondo necessità. L'accesso ai dati nei registri è molto veloce rispetto all'accesso ai dati in memoria, il codice che consente al processore di mantenere i dati in un registro di sistema e accedervi ripetutamente tende a essere eseguito più velocemente rispetto al codice che richiede il processore per caricare e scaricare i registri continuamente. Per facilitare la conservazione dei dati nei registri da parte del compilatore ed eseguire ulteriori ottimizzazioni è consigliabile evitare l'utilizzo di variabili globali e basarsi il più possibile su variabili locali. Il codice scritto in questo modo viene definito come dotato di un buon posizionamento dei riferimenti. In alcuni linguaggi, quali C/C++, il programmatore può dichiarare una variabile di registro, imponendo così al compilatore di conservare sempre, per quanto possibile, la variabile in un registro. Per altre informazioni, vedere [Parola chiave register](https://msdn.microsoft.com/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
+ I registri sono speciali posizioni interne a un processore (CPU) utilizzate per archiviare piccole porzioni di dati attualmente in uso da parte del processore. Durante la compilazione o l'interpretazione di codice sorgente vengono generate istruzioni che spostano dati dalla memoria ai registri e viceversa, secondo necessità. L'accesso ai dati nei registri è molto rapido rispetto all'accesso ai dati in memoria, quindi il codice che consente al processore di tenere i dati in un registro e di accedervi ripetutamente tende a eseguire più velocemente del codice che richiede al processore di caricare e scaricare costantemente i registri. Per facilitare la conservazione dei dati nei registri da parte del compilatore ed eseguire ulteriori ottimizzazioni è consigliabile evitare l'utilizzo di variabili globali e basarsi il più possibile su variabili locali. Il codice scritto in questo modo viene definito come dotato di un buon posizionamento dei riferimenti. In alcuni linguaggi, quali C/C++, il programmatore può dichiarare una variabile di registro, imponendo così al compilatore di conservare sempre, per quanto possibile, la variabile in un registro. Per altre informazioni, vedere [Parola chiave register](https://msdn.microsoft.com/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
   
  I registri possono essere distinti in due tipi: registri di utilizzo generale e registri di utilizzo specifico. Nei registri di utilizzo generale sono contenuti dati relativi a operazioni generali quali la somma di due numeri o l'aggiunta del riferimento a un elemento in una matrice. I registri di utilizzo specifico hanno scopi e significato particolari. Un esempio illuminante è il registro dei puntatori dello stack, utilizzato dal processore per tenere traccia dello stack di chiamate del programma. Con molta probabilità, il programmatore non intenderà modificare direttamente il puntatore dello stack. La sua presenza, tuttavia, è essenziale per il corretto funzionamento del programma. Senza il puntatore dello stack, infatti, non vi sarebbero informazioni chiare su quale punto del programma deve essere raggiunto al termine di una chiamata di funzione.  
   
@@ -45,7 +45,7 @@ La finestra **Registri** è disponibile solo se il debug a livello di indirizzo 
   
  Per altre informazioni sulla visualizzazione della finestra **Registri**, vedere [Uso della finestra Registri](../debugger/how-to-use-the-registers-window.md).  
   
- Quando si esamina il **registra** finestra, si noteranno voci, che in questo esempio:  
+ Quando si esamina la finestra **registri** , vengono visualizzate voci come l'esempio seguente:  
   
 ```  
 EAX = 003110D8  
@@ -59,5 +59,5 @@ EAX = 003110D8
  Per evitare confusione, nella finestra **Registri** i registri sono organizzati in gruppi. Facendo clic con il pulsante destro del mouse sulla finestra **Registri** verrà visualizzato un menu di scelta rapida in cui sono elencati i gruppi, che è possibile visualizzare o nascondere secondo necessità.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)   
- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
+ [Procedura: utilizzare la finestra registri](../debugger/how-to-use-the-registers-window.md)   
+ [Nozioni di base sul debugger](../debugger/debugger-basics.md)

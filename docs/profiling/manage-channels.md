@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64779245"
 ---
 # <a name="manage-channels"></a>Gestione dei canali
@@ -27,10 +27,10 @@ Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile 
 
 |Criteri|Definizione|
 |--------------|----------------|
-|Start Time|Ordina i thread in base all'ora di inizio. Si tratta dell'ordinamento predefinito.|
+|Ora di Inizio|Ordina i thread in base all'ora di inizio. Si tratta dell'ordinamento predefinito.|
 |Ora fine|Ordina i thread in base all'ora di fine.|
 |Esecuzione|Ordina i thread in base alla percentuale di tempo trascorso in fase di esecuzione.|
-|Synchronization|Ordina i thread in base alla percentuale di tempo trascorso in fase di sincronizzazione.|
+|Sincronizzazione|Ordina i thread in base alla percentuale di tempo trascorso in fase di sincronizzazione.|
 |I/O|Ordina i thread in base alla percentuale di tempo trascorso in fase di I/O (lettura e scrittura di dati).|
 |Sospendi|Ordina i thread in base alla percentuale di tempo trascorso in fase di sospensione.|
 |Paging|Ordina i thread in base alla percentuale di tempo trascorso in fase di paging.|
@@ -59,6 +59,6 @@ Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile 
  Se una traccia contiene eventi marcatori, è possibile usare questo comando per raggruppare i canali dei marcatori sotto il thread che ha generato gli eventi marcatori.  I canali dei dischi vengono spostati all'inizio dell'elenco dei canali e i canali GPU vengono spostati alla fine.
 
 ## <a name="see-also"></a>Vedere anche
-- [Controllo zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)
-- [Modalità misurazione attiva/non attiva](../profiling/measure-mode-on-off.md)
+- [Controllo zoom (visualizzazione thread)](../profiling/zoom-control-threads-view.md)
+- [Modalità misurazione attiva/disattiva](../profiling/measure-mode-on-off.md)
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

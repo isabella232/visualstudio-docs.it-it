@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591996"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Supporto per le lingue bidirezionali in Visual Studio
@@ -58,7 +58,7 @@ Gli elementi seguenti possono avere nomi in arabo o ebraico e vengono gestiti co
 
 - Valori delle proprietà
 
-   È possibile utilizzare testo arabo o ebraico nella finestra **Proprietà.** La finestra consente di passare dall'ordine di lettura da destra a sinistra a quello da sinistra a destra utilizzando le sequenze di tasti standard di Windows **(Ctrl**+**Maiusc di destra** per l'ordine da destra a sinistra e **CTRL**+MAIUSC**sinistro** per l'ordine da sinistra a destra).
+   Nella finestra **Proprietà** è possibile usare testo in arabo o ebraico. La finestra consente di passare tra l'ordine di lettura da destra a sinistra e da sinistra a destra usando le sequenze di tasti standard di Windows (**CTRL** + **RightShift** per la lettura da destra a sinistra e **CTRL** + **LeftShift** per da sinistra a destra).
 
 - Codice e testo letterale.
 
@@ -74,11 +74,11 @@ Gli elementi seguenti possono avere nomi in arabo o ebraico e vengono gestiti co
 
 ### <a name="file-encoding"></a>Codifica file
 
-È possibile salvare e aprire file con codifica Unicode o specifica della lingua. Per ulteriori informazioni, consultate [Procedura: Salvare e aprire file con codifica](../ide/how-to-save-and-open-files-with-encoding.md).
+È possibile salvare e aprire file con codifica Unicode o specifica della lingua. Per altre informazioni, vedere [procedura: salvare e aprire file con codifica](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="right-to-left-reading-order"></a>Ordine di lettura da destra a sinistra
 
-Visual Studio offre supporto limitato per l'ordine di lettura da destra a sinistra. Per impostazione predefinita i controlli per l'immissione di testo in Visual Studio adottano l'ordine di lettura da sinistra a destra. Nella maggior parte dei casi è possibile cambiare l'ordine di lettura con operazioni standard di Windows. Ad esempio, è possibile premere **CTRL**+**MAIUSC di destra** per passare il **proprietà** finestra per supportare l'ordine di lettura da destra a sinistra per i valori delle proprietà.
+Visual Studio offre supporto limitato per l'ordine di lettura da destra a sinistra. Per impostazione predefinita i controlli per l'immissione di testo in Visual Studio adottano l'ordine di lettura da sinistra a destra. Nella maggior parte dei casi è possibile cambiare l'ordine di lettura con operazioni standard di Windows. È ad esempio possibile premere **CTRL** + **RightShift** per impostare la finestra **Proprietà** in modo da supportare l'ordine di lettura da destra a sinistra per i valori delle proprietà.
 
 L'ordine di lettura da destra a sinistra non è supportato nelle posizioni seguenti in Visual Studio:
 

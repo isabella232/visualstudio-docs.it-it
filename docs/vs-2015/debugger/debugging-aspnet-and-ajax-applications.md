@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686737"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Debug di applicazioni ASP.NET e AJAX
@@ -35,7 +35,7 @@ Il debug di applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è
   
 - In un'applicazione Windows, il codice di cui eseguire il debug si trova essenzialmente in un punto, mentre per un'applicazione Web il codice può essere sul client e sul server. Mentre il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è tutto sul server, il codice JavaScript o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] potrebbe trovarsi anche sul client.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Preparazione al debug di ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
  Vengono descritti i passaggi necessari per attivare il debug di applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
@@ -46,7 +46,7 @@ Il debug di applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è
  [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)  
  Viene spiegato perché è necessario attivare l'opzione Just My Code per il debug di eccezioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing AJAX Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Vengono illustrati alcuni strumenti e tecniche che possono agevolare il debug del codice AJAX.  
   
  [IntelliTrace](../debugger/intellitrace.md)  
@@ -55,5 +55,5 @@ Il debug di applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)   
- [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
+ [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)   
+ [Nozioni di base sul debugger](../debugger/debugger-basics.md)

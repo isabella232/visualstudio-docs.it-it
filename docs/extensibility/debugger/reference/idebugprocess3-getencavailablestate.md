@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProcess3::GetENCAvailableState . Documenti Microsoft
+title: 'IDebugProcess3:: GetENCAvailableState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 77345cfc3aa1dd95482052893e7c09591ad7cd4e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723650"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Questo metodo ottiene lo stato corrente di Modifica e continuazione del processo. Un fornitore di `E_NOTIMPL`porta personalizzato deve sempre restituire .
+Questo metodo ottiene lo stato di modifica e continuazione corrente del processo. Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetENCAvailableState(
 
 ## <a name="parameters"></a>Parametri
 `pReason`\
-[fuori] Valore dell'enumerazione [EncUnavailableReason.](../../../extensibility/debugger/reference/encunavailablereason.md)
+out Valore dell'enumerazione [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha `S_OK`esito positivo, restituisce ; in caso contrario, restituisce il codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 > [!NOTE]
-> Un fornitore di `E_NOTIMPL`porta personalizzato deve sempre restituire .
+> Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL` .
 
 ## <a name="remarks"></a>Osservazioni
  Questo stato può essere influenzato da [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).

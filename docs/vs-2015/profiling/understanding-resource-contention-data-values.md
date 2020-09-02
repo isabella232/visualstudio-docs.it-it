@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5983396924f38c31b6dafcd42b762042e1880e8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145441"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Informazioni sui valori dei dati su conflitti di risorse
@@ -34,10 +34,10 @@ La profilatura dei conflitti di risorse raccoglie informazioni dettagliate sullo
   
 - I valori esclusivi mostrano solo il numero di conflitti che hanno costretto una funzione ad attendere e che sono stati causati dal codice nel corpo della funzione. I conflitti causati da funzioni figlio non sono inclusi. Il tempo esclusivo per la funzione include inoltre solo i tempi di attesa causati dalle istruzioni nel corpo della funzione.  
   
-  Le visualizzazioni dei report sui conflitti di risorse includono anche grafici della sequenza temporale che mostrano i singoli eventi di conflitto nel tempo e gli stack di chiamate che hanno creato l'evento specifico. Per altre informazioni, vedere uno degli argomenti seguenti:  
+  Le visualizzazioni dei report sui conflitti di risorse includono anche grafici della sequenza temporale che mostrano i singoli eventi di conflitto nel tempo e gli stack di chiamate che hanno creato l'evento specifico. Per ulteriori informazioni, vedere uno degli argomenti seguenti:  
   
-- [Visualizzazione Dettagli thread](../profiling/thread-details-view-contention-data.md)  
+- [Visualizzazione dettagli thread](../profiling/thread-details-view-contention-data.md)  
   
-- [Visualizzazione Dettagli risorsa](../profiling/resource-details-view-contention-data.md)  
+- [Visualizzazione dettagli risorsa](../profiling/resource-details-view-contention-data.md)  
   
   Per altre informazioni sulla seconda modalità di profilatura della concorrenza, vedere [Visualizzatore di concorrenza](../profiling/concurrency-visualizer.md).

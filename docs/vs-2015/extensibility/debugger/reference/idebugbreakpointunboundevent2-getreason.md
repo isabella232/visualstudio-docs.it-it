@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
+title: 'IDebugBreakpointUnboundEvent2:: GetReason | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6633fa2b3950d49a3db3b286157d50c026261300
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160037"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene il motivo per che il punto di interruzione è stato dissociato.  
+Ottiene il motivo per cui il punto di interruzione non è associato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,16 +40,16 @@ int GetReason( 
   
 #### <a name="parameters"></a>Parametri  
  `pdwUnboundReason`  
- [out] Restituisce un valore di [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) enumerazione che specifica il motivo è stato dissociato al punto di interruzione.  
+ out Restituisce un valore dall'enumerazione [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) che specifica il motivo per cui il punto di interruzione non è associato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- I motivi includono un punto di interruzione in corso riassociato a un percorso diverso dopo un'operazione di modifica e continuazione, o a una determinazione che un punto di interruzione era associato in errore.  
+## <a name="remarks"></a>Osservazioni  
+ I motivi includono il riassociazione di un punto di interruzione a un percorso diverso dopo un'operazione di modifica e continuazione o la determinazione che un punto di interruzione è stato associato a un errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CBreakpointUnboundDebugEventBase** oggetto che espone le [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CBreakpointUnboundDebugEventBase** che espone l'interfaccia [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) .  
   
 ```cpp#  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  

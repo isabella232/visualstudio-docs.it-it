@@ -18,17 +18,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78263103"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
 
-Contiene informazioni su un parametro specifico per `UsingTask` `TaskFactory`un'attività generata da un oggetto .  Il nome dell'elemento è il nome del parametro.  Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contiene informazioni su un parametro specifico per un'attività generata da un oggetto `UsingTask` `TaskFactory` .  Il nome dell'elemento è il nome del parametro.  Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<Project> \<UsingTask>
+ \<ParameterGroup>
+ \<Parameter>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +44,7 @@ Contiene informazioni su un parametro specifico per `UsingTask` `TaskFactory`un'
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -52,13 +54,13 @@ Contiene informazioni su un parametro specifico per `UsingTask` `TaskFactory`un'
 
 ### <a name="child-elements"></a>Elementi figlio
 
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene un elenco facoltativo di parametri che saranno presenti `UsingTask` `TaskFactory`nell'attività generata da un oggetto .|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene un elenco facoltativo di parametri che saranno presenti nell'attività generata da un oggetto `UsingTask` `TaskFactory` .|
 
 ## <a name="example"></a>Esempio
 
@@ -80,5 +82,5 @@ Contiene informazioni su un parametro specifico per `UsingTask` `TaskFactory`un'
 ## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
-- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
+- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

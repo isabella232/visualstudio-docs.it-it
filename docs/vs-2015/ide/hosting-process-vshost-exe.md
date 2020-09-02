@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a998246f514f13a575f6a7fef850f9f705f92553
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645537"
 ---
 # <a name="hosting-process-vshostexe"></a>Processo di hosting (vshost.exe)
@@ -34,7 +34,7 @@ Il processo di hosting è una funzionalità di Visual Studio che migliora le pre
  Un'applicazione può essere specificata come applicazione parzialmente attendibile nella [pagina di sicurezza](../ide/reference/security-page-project-designer.md) della **Creazione progetti**. Il debug di un'applicazione parzialmente attendibile richiede un'inizializzazione speciale del dominio dell'applicazione. Tale inizializzazione viene gestita dal processo di hosting.
 
 ## <a name="design-time-expression-evaluation"></a>Valutazione delle espressioni per la fase di progettazione
- La valutazione delle espressioni in fase di progettazione consente di testare il codice dalla finestra di **controllo immediato** senza dover eseguire l'applicazione. Il processo di hosting esegue questo codice durante la valutazione dell'espressione di progettazione. Per altre informazioni, vedere [Finestra di controllo immediato](../ide/reference/immediate-window.md).
+ La valutazione delle espressioni in fase di progettazione consente di testare il codice dalla finestra di **controllo immediato** senza dover eseguire l'applicazione. Il processo di hosting esegue questo codice durante la valutazione dell'espressione di progettazione. Per ulteriori informazioni, vedere [finestra di controllo immediato](../ide/reference/immediate-window.md).
 
 ## <a name="see-also"></a>Vedere anche
  [Debug e processo di hosting](../debugger/debugging-and-the-hosting-process.md) [procedura: disabilitare il processo di hosting dei](../ide/how-to-disable-the-hosting-process.md) [domini dell'applicazione](https://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8) [finestra immediata](../ide/reference/immediate-window.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986153"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Creare componenti aggiuntivi VSTO per Office con Visual Studio
@@ -28,8 +28,8 @@ ms.locfileid: "72986153"
 
  Per informazioni aggiornate sullo sviluppo di Office, vedere il [centro per sviluppatori Microsoft Office](https://developer.microsoft.com/office/docs).
 
-## <a name="in-this-section"></a>In questa sezione
-- [Introduzione &#40;allo sviluppo per Office in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+## <a name="in-this-section"></a>Contenuto della sezione
+- [Introduzione &#40;sviluppo per Office in Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 
  Fornisce collegamenti alle informazioni su come configurare un computer di sviluppo per creare soluzioni Office, su come iniziare a creare soluzioni Office e sulle novità relative allo sviluppo di Office in Visual Studio.
 
@@ -73,7 +73,7 @@ ms.locfileid: "72986153"
 
  Fornisce informazioni su come automatizzare Visio e creare componenti aggiuntivi VSTO per Visio.
 
-- [Soluzioni Word](word-solutions.md)
+- [soluzioni Word](word-solutions.md)
 
  Fornisce informazioni su come automatizzare Word e creare soluzioni Word.
 
@@ -97,15 +97,15 @@ ms.locfileid: "72986153"
 
  Fornisce collegamenti ad applicazioni di esempio e ad argomenti che illustrano le procedure dettagliate per l'esecuzione di attività comuni.
 
-- [Guida di &#40;riferimento generale sviluppo per Office in Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
+- [Guida di riferimento generale &#40;sviluppo per Office in Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
 
  Vengono forniti collegamenti a informazioni dettagliate sugli assembly di interoperabilità primari di Office, i manifesti, gli elementi dell'interfaccia utente e i messaggi di errore.
 
-- [Sviluppo di &#40;Office di riferimento gestito in Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
+- [Riferimenti gestiti &#40;sviluppo per Office in Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
 
  Fornisce collegamenti a informazioni sugli spazi dei nomi e i tipi di API usati nei progetti di Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Per la documentazione di riferimento delle API sugli spazi dei nomi e i tipi usati nei progetti di Office destinati a .NET Framework 3,5, vedere la sezione di riferimento seguente nella documentazione di Visual Studio 2008: [riferimenti gestiti di sistema 2007](managed-reference-office-development-in-visual-studio.md).
 
-- [Informazioni di riferimento &#40;sulle API non gestite sviluppo per Office in Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Informazioni di riferimento sulle API non gestite &#40;sviluppo per Office in Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Contiene collegamenti a informazioni sulle interfacce COM che è possibile usare per eseguire azioni come caricare e scaricare componenti aggiuntivi VSTO gestiti nelle applicazioni di Office.
 
@@ -118,4 +118,4 @@ ms.locfileid: "72986153"
 
 - [Sviluppo di applicazioni in Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Contiene collegamenti ad argomenti in cui viene illustrato come utilizzare Visual Studio per progettare, sviluppare, eseguire il debug e distribuire applicazioni Web, servizi Web XML e applicazioni client tradizionali.
 
-- [Programmazione .NET Framework in Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Viene illustrato lo sviluppo di applicazioni con il .NET Framework in C#Visual Basic e Visual.
+- [Programmazione .NET Framework in Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Viene illustrato lo sviluppo di applicazioni con il .NET Framework in Visual Basic e Visual C#.

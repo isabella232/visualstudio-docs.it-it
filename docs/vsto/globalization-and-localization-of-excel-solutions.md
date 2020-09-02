@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986048"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizzazione e localizzazione di soluzioni Excel
@@ -47,7 +47,7 @@ ms.locfileid: "72986048"
  È tuttavia necessario assicurarsi che tutte le parti del codice che interagiscono con il testo del documento continuino a corrispondere alla lingua del testo e che i segnalibri, gli intervalli denominati e gli altri campi visualizzati si adattino alle eventuali riformattazioni del documento di Office necessarie per rispettare le differenze nella grammatica e nella lunghezza del testo. Per i modelli di documenti che contengono testo relativamente breve, è possibile memorizzare il testo in file di risorse per poi caricarlo in fase di esecuzione.
 
 ### <a name="text-direction"></a>Direzione del testo
- In Excel, è possibile impostare una proprietà del foglio di lavoro per il rendering del testo da destra a sinistra. I controlli host, o qualsiasi controllo che disponga di una proprietà `RightToLeft`, che viene posizionata nella finestra di progettazione corrisponde automaticamente a queste impostazioni in fase di esecuzione. Per Word non è presente un'impostazione del documento per il testo bidirezionale (è sufficiente modificare l'allineamento del testo), pertanto non è possibile eseguire il mapping dei controlli a questa impostazione. che devono quindi essere impostati individualmente. È possibile scrivere codice per esaminare tutti i controlli e imporre il rendering del testo da destra a sinistra.
+ In Excel, è possibile impostare una proprietà del foglio di lavoro per il rendering del testo da destra a sinistra. I controlli host, o qualsiasi controllo con una `RightToLeft` proprietà, posizionati nella finestra di progettazione corrispondono automaticamente a tali impostazioni in fase di esecuzione. Per Word non è presente un'impostazione del documento per il testo bidirezionale (è sufficiente modificare l'allineamento del testo), pertanto non è possibile eseguire il mapping dei controlli a questa impostazione. che devono quindi essere impostati individualmente. È possibile scrivere codice per esaminare tutti i controlli e imporre il rendering del testo da destra a sinistra.
 
 ### <a name="change-culture"></a>Modifica impostazioni cultura
  Il codice di personalizzazione a livello di documento in genere condivide il thread principale dell'interfaccia utente di Excel, per cui tutte le modifiche apportate alle impostazioni cultura del thread influiscono su qualsiasi altro elemento in esecuzione su tale thread. La modifica non è limitata alla personalizzazione.
@@ -55,7 +55,7 @@ ms.locfileid: "72986048"
  I controlli Windows Form vengono inizializzati prima dell'avvio dei componenti aggiuntivi VSTO a livello di applicazione da parte dell'applicazione host. In queste situazioni, le impostazioni cultura devono essere modificate prima dell'impostazione dei controlli dell'interfaccia utente.
 
 ## <a name="install-the-language-packs"></a>Installare i Language Pack
- Se Windows è impostato su una lingua diversa dall'inglese, è possibile installare i Language Pack di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] in modo da visualizzare i messaggi di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nella stessa lingua di Windows. Se gli utenti finali eseguono le soluzioni con le impostazioni non in lingua inglese per Windows, devono avere il Language Pack corretto per visualizzare i messaggi di runtime nella stessa lingua di Windows. I Language Pack [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sono disponibili nell' [area download Microsoft](https://www.microsoft.com/download).
+ Se Windows è impostato su una lingua diversa dall'inglese, è possibile installare i Language Pack di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] in modo da visualizzare i messaggi di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nella stessa lingua di Windows. Se gli utenti finali eseguono le soluzioni con le impostazioni non in lingua inglese per Windows, devono avere il Language Pack corretto per visualizzare i messaggi di runtime nella stessa lingua di Windows. I [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Pack sono disponibili nell' [area download Microsoft](https://www.microsoft.com/download).
 
  Inoltre, sono necessari i Language Pack per .NET Framework ridistribuibili per i messaggi di ClickOnce. I Language Pack .NET Framework sono disponibili nell' [area download Microsoft](https://www.microsoft.com/download).
 
@@ -77,7 +77,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Lo stesso codice, se usato in una soluzione creata tramite gli strumenti di sviluppo di Office in Visual Studio e passato a Excel tramite l'interoperabilità COM, produce gli stessi risultati quando la data viene formattata in stile en-US.
 
- Esempio:
+ Ad esempio:
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]

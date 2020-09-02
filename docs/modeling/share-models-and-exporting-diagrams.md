@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591918"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Condividere modelli ed esportare diagrammi
@@ -30,7 +30,7 @@ In Visual Studio è possibile condividere modelli e diagrammi con i colleghi in 
  Per suggerimenti sull'organizzazione dei modelli in un progetto di medie o grandi dimensioni, vedere [strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Lettura e la verifica dei modelli
- I membri del team che usano alcune versioni di Visual Studio (che non possono creare modelli) possono leggere i modelli, i diagrammi di modellazione e i grafici diretti, ma non possono modificarli.  Per visualizzare le edizioni di Visual Studio che supportano questa funzionalità, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ I membri del team che usano alcune versioni di Visual Studio (che non possono creare modelli) possono leggere modelli, diagrammi di modellazione e grafici diretti, ma non possono modificarli.  Per visualizzare le edizioni di Visual Studio che supportano questa funzionalità, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  È possibile aprire un diagramma delle dipendenze solo all'interno del modello in cui è stato creato. Per consentire l'accesso a un diagramma, è quindi necessario fornire l'accesso a tutti i file del progetto di modellazione o alle relative copie.
 

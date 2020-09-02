@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: baeae2af825edc6a0032445288de7311b1ab1ae1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664401"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Procedura: Modificare il punto pivot di un modello tridimensionale
@@ -32,7 +32,7 @@ Questo documento illustra come usare l'editor dei modelli per modificare il *pun
 
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>Per modificare il punto perno di un modello 3D
 
-1. Iniziare con un modello 3D esistente, come quello descritto in [Procedura: Creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md).
+1. Iniziare con un modello 3D esistente, ad esempio quello descritto in [procedura: creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md).
 
 2. Passare alla modalità perno. Nella barra degli strumenti disponibile in modalità **Editor dei modelli** scegliere il pulsante **Modalità perno** per attivare la modalità perno. Viene visualizzata una casella intorno al pulsante **Modalità perno** per indicare che l'editor dei modelli è ora in modalità perno. In modalità perno, operazioni come la traslazione agiscono sul punto di perno dell'oggetto anziché sulla struttura dell'oggetto nello spazio globale.
 
@@ -47,7 +47,7 @@ Questo documento illustra come usare l'editor dei modelli per modificare il *pun
 
    Di seguito è riportato un modello con un punto di perno modificato:
 
-   ![Modello di una casa con un punto di perno modificato](../designers/media/digit-modified-model.png "Digit-modified-Model")
+   ![Modello di casa con punto pivot modificato](../designers/media/digit-modified-model.png "Digit-modified-Model")
 
 ## <a name="see-also"></a>Vedere anche
  [Procedura: creare un](../designers/how-to-create-a-basic-3-d-model.md) [Editor modello](../designers/model-editor.md) modello 3D di base

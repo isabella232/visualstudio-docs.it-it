@@ -10,10 +10,10 @@ ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 26562268167abdfc5ee643618ec1610da231f9f0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283164"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Eseguire il debug di app in un contenitore Docker locale
@@ -159,7 +159,7 @@ Durante il ciclo di sviluppo, Visual Studio ricompila solo le immagini del conte
 
 Se il contenitore è stato modificato manualmente e si vuole riavviare con un'immagine del contenitore pulita, usare il comando **Compila**  >  **Pulisci** in Visual Studio e compilare come di consueto.
 
-## <a name="troubleshoot"></a>Risolvere i problemi
+## <a name="troubleshoot"></a>Risolvere problemi
 
 Informazioni su come [risolvere i problemi di sviluppo di Docker in Visual Studio](troubleshooting-docker-errors.md).
 

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1a0d10dabdace7ef7ab3805a59b892548cf6556
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645524"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Procedura: aggiungere diagrammi classi ai progetti (Progettazione classi)
@@ -40,7 +40,7 @@ Aggiungere un diagramma di classi al progetto Visual C# .NET, Visual Basic .NET 
 
 1. In Esplora soluzioni aprire il menu di scelta rapida del file di classe e quindi scegliere **Visualizza diagramma classi**.
 
-     oppure
+     -oppure-
 
      In **Visualizzazione classi** aprire il menu di scelta del tipo o dello spazio dei nomi e quindi scegliere **Visualizza diagramma classi**.
 
@@ -51,4 +51,4 @@ Aggiungere un diagramma di classi al progetto Visual C# .NET, Visual Basic .NET 
      Verrà creato un diagramma classi compilato automaticamente.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: creare tipi usando Progettazione classi](../ide/how-to-create-types-by-using-class-designer.md) [procedura: visualizzare i tipi esistenti (Progettazione classi)](../ide/how-to-view-existing-types-class-designer.md) [progettazione di classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md) [visualizzazione di tipi e relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md) [uso dei diagrammi classi ( Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md)
+ [Procedura: creare tipi usando Progettazione classi](../ide/how-to-create-types-by-using-class-designer.md) [procedura: visualizzare i tipi esistenti (Progettazione classi)](../ide/how-to-view-existing-types-class-designer.md) [progettazione di classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md) [visualizzazione di tipi e relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md) [uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Accedere ai tipi di carattere incorporati e combinazione di colori | Microsoft Docs'
+title: 'Procedura: accedere ai tipi di carattere e alla combinazione di colori predefiniti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,75 +13,75 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685314"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procedura: Accedere alla combinazione colori e ai tipi di carattere predefiniti
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procedura: Accedere i tipi di carattere e alle combinazioni colori predefiniti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associato con la finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.  
+In Visual Studio Integrated Development Environment (IDE) è presente uno schema di tipi di carattere e colori associato alla finestra dell'editor. È possibile accedere a questo schema tramite l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.  
   
- Per usare lo schema di colori e tipi di carattere predefiniti, un pacchetto VSPackage deve:  
+ Per usare lo schema di tipi di carattere e colori predefiniti, un pacchetto VSPackage deve:  
   
-- Definire una categoria da usare con il servizio predefinito, i tipi di carattere e colori.  
+- Definire una categoria da usare con il servizio colori e tipi di carattere predefiniti.  
   
-- Registrare la categoria con il server predefinito di tipi di carattere e colori.  
+- Registrare la categoria con il server dei tipi di carattere e i colori predefiniti.  
   
-- Indicare all'IDE che una specifica finestra Usa gli elementi visualizzati predefiniti e le categorie mediante il `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` e `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfacce.  
+- Consigliare all'IDE che una finestra specifica usi gli elementi e le categorie predefiniti visualizzati usando le `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfacce e.  
   
-  L'IDE Usa la categoria risulta come un handle della finestra. Nome della categoria viene visualizzato nel **Mostra impostazioni per:** casella di riepilogo a discesa nel **Fonts and Colors** pagina delle proprietà.  
+  L'IDE usa la categoria risultante come handle per la finestra. Il nome della categoria viene visualizzato nella casella di riepilogo a discesa **Mostra impostazioni per:** della pagina delle proprietà **tipi di carattere e colori** .  
   
-### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Per definire una categoria utilizzando i colori e tipi di carattere predefiniti  
+### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Per definire una categoria con i tipi di carattere e i colori predefiniti  
   
-1. Creare un GUID non autorizzato.  
+1. Creare un GUID arbitrario.  
   
-    Il GUID viene utilizzato per identificare in modo univoco una categoria<strong>.</strong> Questa categoria riutilizza specifica di colori e tipi di carattere predefiniti dell'IDE.  
+    Questo GUID viene usato per identificare in modo univoco una categoria<strong>.</strong> Questa categoria riutilizza le specifiche predefinite dei tipi di carattere e dei colori dell'IDE.  
   
    > [!NOTE]
-   > Durante il recupero di dati carattere e colori con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o altre interfacce, i pacchetti VSPackage questo GUID usano per fare riferimento a informazioni incorporate.  
+   > Quando si recuperano dati di tipo carattere e colore con la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o altre interfacce, i pacchetti VSPackage usano questo GUID per fare riferimento a informazioni predefinite.  
   
-2. Nome della categoria deve essere aggiunto a una tabella di stringhe all'interno di file di risorse (RC) del pacchetto VSPackage, in modo che possa essere localizzata in base alle necessità quando visualizzati nell'IDE di.  
+2. Il nome della categoria deve essere aggiunto a una tabella di stringhe all'interno del file di risorse del pacchetto VSPackage (RC), in modo che possa essere localizzato in base alle esigenze quando viene visualizzato nell'IDE.  
   
-    Per altre informazioni, vedere [aggiunta o eliminazione di una stringa](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Per ulteriori informazioni, vedere [aggiunta o eliminazione di una stringa](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
-### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Per registrare una categoria utilizzando i colori e tipi di carattere predefiniti  
+### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Per registrare una categoria con i tipi di carattere e i colori predefiniti  
   
-1. Costruire un tipo speciale di voce del Registro di sistema categoria nel percorso seguente:  
+1. Costruire un tipo speciale di voce del registro di sistema Category nel percorso seguente:  
   
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]  
+     [Hklm\software\microsoft. \Visual Studio \\ *\<Visual Studio version>* \FontAndColors \\ *\<Category>* ]  
   
-     *\<Categoria >* è il nome non localizzato della categoria.  
+     *\<Category>* nome non localizzato della categoria.  
   
-2. Popolare il Registro di sistema per usare i tipi di carattere azionari e combinazione di colori con quattro valori:  
+2. Popolare il registro di sistema per usare i tipi di carattere e la combinazione di colori predefiniti con quattro valori:  
   
     |Nome|Tipo|Dati|Descrizione|  
     |----------|----------|----------|-----------------|  
-    |Category|REG_SZ|GUID|Un GUID arbitrario che identifica una categoria che contiene lo schema di carattere e colori predefinito.|  
-    |Pacchetto|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Il GUID viene utilizzato da tutti i pacchetti VSPackage che utilizzano le configurazioni predefinite di carattere e colori.|  
-    |NameID|REG_DWORD|Id|L'ID risorsa del nome di una categoria localizzabili nel pacchetto VSPackage.|  
-    |ToolWindowPackage|REG_SZ|GUID|Il GUID della VSPackage che implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.|  
+    |Category|REG_SZ|GUID|GUID arbitrario che identifica una categoria che contiene la combinazione di tipi di carattere e colori azionaria.|  
+    |Pacchetto|REG_SZ|GUID|F5E7E71D-1401-11D1-883B-0000F87579D2<br /><br /> Questo GUID viene usato da tutti i pacchetti VSPackage che usano le configurazioni predefinite per il tipo di carattere e il colore.|  
+    |NameID|REG_DWORD|ID|ID risorsa di un nome di categoria localizzabile nel pacchetto VSPackage.|  
+    |ToolWindowPackage|REG_SZ|GUID|GUID del pacchetto VSPackage che implementa l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.|  
   
 3. 
   
-### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Per avviare l'uso di caratteri fornita dal sistema e i colori  
+### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Per avviare l'utilizzo di tipi di carattere e colori forniti dal sistema  
   
-1. Creare un'istanza di `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interfaccia come parte dell'implementazione e l'inizializzazione della finestra.  
+1. Creare un'istanza dell' `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interfaccia come parte dell'implementazione e dell'inizializzazione della finestra.  
   
-2. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodo per ottenere un'istanza del `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfaccia corrispondente all'oggetto corrente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> istanza.  
+2. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodo per ottenere un'istanza dell' `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfaccia corrispondente all' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> istanza corrente.  
   
 3. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> due volte.  
   
-   - Chiamare una volta con `VSEDITPROPID_ViewGeneral_ColorCategory`come argomento.  
+   - Chiamare una sola volta con `VSEDITPROPID_ViewGeneral_ColorCategory` come argomento.  
   
-   - Chiamare una volta con `VSEDITPROPID_ViewGeneral_FontCategory` come argomento.  
+   - Chiamare una sola volta con `VSEDITPROPID_ViewGeneral_FontCategory` come argomento.  
   
-     Questo imposta ed espone i servizi di tipi di carattere e colori predefiniti come proprietà della finestra.  
+     Consente di impostare ed esporre i servizi di tipi di carattere e colori predefiniti come proprietà della finestra.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente avvia l'uso di colori e tipi di carattere predefiniti.  
+ Nell'esempio seguente viene avviato l'utilizzo di tipi di carattere e colori predefiniti.  
   
 ```  
 CComVariant vt;  
@@ -98,7 +98,7 @@ if (spPropCatContainer != NULL){
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Usando tipi di carattere e colori](../extensibility/using-fonts-and-colors.md)   
- [Recuperare le informazioni di colore per la colorazione del testo e del tipo di carattere](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
- [L'accesso a tipo di carattere archiviata e le impostazioni dei colori](../extensibility/accessing-stored-font-and-color-settings.md)   
+ [Uso di tipi di carattere e colori](../extensibility/using-fonts-and-colors.md)   
+ [Recupero delle informazioni sui colori e sui tipi di carattere per la colorazione del testo](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
+ [Accesso alle impostazioni dei tipi di carattere e dei colori archiviati](../extensibility/accessing-stored-font-and-color-settings.md)   
  [Panoramica di tipi di carattere e colori](../extensibility/font-and-color-overview.md)

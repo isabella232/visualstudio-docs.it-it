@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugBinder3::FindAlias . Documenti Microsoft
+title: 'IDebugBinder3:: FindAlias | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0a697e39d21b1c25a98c09ad6cc4837cca7a293
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735869"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-Questo metodo individua un alias, dato un nome. Questo cercherà tutti gli alias nel programma.
+Questo metodo individua un alias, dato un nome. Questa operazione eseguirà la ricerca in tutti gli alias del programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int FindAlias(
 
 ## <a name="parameters"></a>Parametri
 `pcstrName`\
-[in] Nome dell'alias da trovare.
+in Nome dell'alias da trovare.
 
 `ppAlias`\
-[fuori] Alias trovato (se presente) rappresentato dal [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interfaccia.
+out Alias trovato, se presente, rappresentato dall'interfaccia [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) .
 
 ## <a name="return-value"></a>Valore restituito
- Se ha `S_OK`esito positivo, restituisce ; in caso `S_FALSE` contrario, restituisce (se alias non viene trovato) o un codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` (se alias non viene trovato) o un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo inizializza l'oggetto di destinazione su null prima di chiamare; quindi verifica la verifica di un valore null in seguito per determinare se l'alias è stato trovato o meno.
+ Questo metodo inizializza l'oggetto di destinazione su null prima di chiamare. quindi verifica un valore null in seguito per determinare se l'alias è stato trovato o meno.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

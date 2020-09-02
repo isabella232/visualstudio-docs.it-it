@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160439"
 ---
 # <a name="build-loggers"></a>Logger di compilazione
@@ -44,12 +44,12 @@ I logger consentono di personalizzare l'output della compilazione e visualizzare
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>Risposta ai valori di dettaglio del logger  
- In alcuni casi, è possibile che si voglia registrare le informazioni di un evento solo se l'opzione **/verbosity** di MSBuild.exe contiene un determinato valore. In questo esempio, il gestore dell'evento <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> registra un messaggio solo se la proprietà <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, impostata dall'opzione **/verbosity** , è uguale a <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.  
+ In alcuni casi, può essere utile registrare solo le informazioni di un evento se l'opzione MSBuild.exe **/verbosity** contiene un determinato valore. In questo esempio, il <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> gestore eventi registra un messaggio solo se la <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> proprietà, impostata dall'opzione **/verbosity** , è uguale a <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>Definizione di un logger  
- Dopo aver compilato il logger in un assembly, è necessario indicare a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] di usare il logger durante le compilazioni. Questa operazione può essere eseguita usando l'opzione **/logger** con MSBuild.exe. Per altre informazioni sulle opzioni disponibili per MSBuild.exe, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).  
+ Dopo aver compilato il logger in un assembly, è necessario indicare a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] di usare il logger durante le compilazioni. Questa operazione viene eseguita utilizzando l'opzione **/logger** con MSBuild.exe. Per ulteriori informazioni sulle opzioni disponibili per MSBuild.exe, vedere [riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).  
   
  La riga di comando seguente compila il progetto `MyProject.csproj` e usa la classe logger implementata in `SimpleLogger.dll`. L'opzione **/nologo** nasconde l'intestazione e il messaggio del copyright, mentre l'opzione **/noconsolelogger** disattiva il logger di console predefinito di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
@@ -65,7 +65,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>DESCRIZIONE  
+### <a name="description"></a>Descrizione  
  L'esempio seguente contiene il codice completo per il logger.  
   
 ### <a name="code"></a>Codice  
@@ -75,7 +75,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>DESCRIZIONE  
+### <a name="description"></a>Descrizione  
  L'esempio seguente illustra l'implementazione di un logger che scrive il log in un file, anziché visualizzarlo nella finestra di console.  
   
 ### <a name="code"></a>Codice  
@@ -84,5 +84,5 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ### <a name="comments"></a>Commenti  
   
 ## <a name="see-also"></a>Vedere anche  
- [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)  (Recupero di log di compilazione)  
+ [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

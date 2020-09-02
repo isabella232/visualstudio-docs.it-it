@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62973754"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Visualizzazione Thread nel visualizzatore di concorrenza
@@ -47,13 +47,13 @@ La visualizzazione **Thread** illustra anche le dipendenze tra thread. Ad esempi
 
 ## <a name="use-threads-view"></a>Usare la visualizzazione Thread
 
-Per avviare il visualizzatore di concorrenza, selezionare **Analizza** > **visualizzatore di concorrenza**e quindi selezionare un'opzione, ad esempio Avvia nuovo **processo**.
+Per avviare il Visualizzatore di concorrenza, selezionare **analizza**  >  **Visualizzatore di concorrenza**, quindi selezionare un'opzione, ad esempio **Avvia nuovo processo**.
 
 Il visualizzatore di concorrenza avvia l'app e raccoglie una traccia finché non si seleziona **Arresta raccolta**. Il visualizzatore quindi analizza la traccia e visualizza i risultati nella pagina del report di traccia.
 
 Selezionare la scheda **Thread** in alto a sinistra nel report per aprire la visualizzazione **Thread**.
 
-![Visualizzazione Thread](../profiling/media/threadsviewnarrowing.png "visualizzazione thread")
+![Visualizzazione thread](../profiling/media/threadsviewnarrowing.png "visualizzazione thread")
 
 Selezionare gli intervalli di tempo e i thread per avviare un'analisi delle prestazioni.
 

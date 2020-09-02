@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4de6750b7497e971af1096a0970495f3d4363a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160027"
 ---
 # <a name="cores-view-logical-cores"></a>Core logici nella visualizzazione Core
@@ -26,4 +26,4 @@ ms.locfileid: "68160027"
 Ogni nome di canale rappresenta uno dei core logici che esistono nel sistema profilato. Per la denominazione il conteggio viene eseguito da 0 fino al numero totale di core logici. Ad esempio, un sistema di quattro core esegue il conteggio dal core logico 0 al core logico 3.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Cores View](../profiling/cores-view.md) (Visualizzazione Core)
+ [Visualizzazione Core](../profiling/cores-view.md)

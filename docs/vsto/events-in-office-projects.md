@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986123"
 ---
 # <a name="events-in-office-projects"></a>Eventi nei progetti di Office
@@ -103,39 +103,39 @@ ms.locfileid: "72986123"
 ### <a name="order-of-events-in-document-level-excel-projects"></a>Ordine degli eventi nei progetti di Excel a livello di documento
  I gestori eventi **Startup** nei progetti di Excel vengono chiamati nell'ordine seguente:
 
-1. `ThisWorkbook_Startup`
+1. `ThisWorkbook_Startup`.
 
-2. `Sheet1_Startup`
+2. `Sheet1_Startup`.
 
-3. `Sheet2_Startup`
+3. `Sheet2_Startup`.
 
-4. `Sheet3_Startup`
+4. `Sheet3_Startup`.
 
 5. Altri fogli in ordine.
 
    I gestori eventi **Shutdown** in una soluzione di cartella di lavoro vengono chiamati nell'ordine seguente:
 
-6. `ThisWorkbook_Shutdown`
+6. `ThisWorkbook_Shutdown`.
 
-7. `Sheet1_Shutdown`
+7. `Sheet1_Shutdown`.
 
-8. `Sheet2_Shutdown`
+8. `Sheet2_Shutdown`.
 
-9. `Sheet3_Shutdown`
+9. `Sheet3_Shutdown`.
 
 10. Altri fogli in ordine.
 
     L'ordine viene determinato quando viene compilato il progetto. Se l'utente riorganizza i fogli in fase di esecuzione, non viene modificato l'ordine poiché gli eventi vengono generati alla successiva apertura o chiusura della cartella di lavoro.
 
 ## <a name="vsto-add-in-projects"></a>Progetti di componente aggiuntivo VSTO
- Visual Studio fornisce codice generato nei componenti aggiuntivi VSTO. Questo codice genera due eventi diversi: <xref:Microsoft.Office.Tools.AddInBase.Startup> e <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
+ Visual Studio fornisce codice generato nei componenti aggiuntivi VSTO. Questo codice genera due eventi diversi: <xref:Microsoft.Office.Tools.AddInBase.Startup> e <xref:Microsoft.Office.Tools.AddInBase.Shutdown> .
 
 ### <a name="startup-event"></a>Startup (evento)
  L'evento <xref:Microsoft.Office.Tools.AddIn.Startup> viene generato dopo che il componente aggiuntivo VSTO viene caricato e tutto il codice di inizializzazione nell'assembly è stato eseguito. Questo evento viene gestito dal metodo `ThisAddIn_Startup` nel file di codice generato.
 
  Il codice nel gestore eventi `ThisAddIn_Startup` è il primo codice utente da eseguire, a meno che il componente aggiuntivo VSTO non esegua l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . In questo caso, il gestore eventi `ThisAddIn_Startup` viene chiamato dopo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.
 
- Non aggiungere il codice nel gestore eventi `ThisAdd-In_Startup` se il codice richiede l'apertura di un documento. Al contrario, aggiungere tale codice a un evento generato dall'applicazione di Office quando un utente crea o apre un documento. Per altre informazioni, vedere [accedere a un documento all'avvio dell'applicazione di Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+ Non aggiungere il codice nel `ThisAdd-In_Startup` gestore eventi se il codice richiede l'apertura di un documento. Al contrario, aggiungere tale codice a un evento generato dall'applicazione di Office quando un utente crea o apre un documento. Per altre informazioni, vedere [accedere a un documento all'avvio dell'applicazione di Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
  Per altre informazioni sulla sequenza di avvio dei componenti aggiuntivi VSTO, vedere [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 

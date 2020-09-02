@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 525b5fe8f2726ab1f7f2ff80abf7bc06937a7a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964238"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Mantenere un indirizzo IP virtuale costante per un servizio cloud di Azure
@@ -29,7 +29,7 @@ L'indirizzo VIP di un servizio cloud viene allocato alla prima distribuzione in 
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>Aggiornare un servizio cloud senza modifica dell'indirizzo VIP
 1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio. 
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto. Dal menu di scelta rapida selezionare **Pubblicare**.
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto. Dal menu di scelta rapida selezionare **Pubblicare**.
 
     ![Menu Pubblica](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/solution-explorer-publish-menu.png)
 
@@ -37,11 +37,11 @@ L'indirizzo VIP di un servizio cloud viene allocato alla prima distribuzione in 
 
     ![Pagina di accesso Pubblica applicazione Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Nella scheda **Impostazioni comuni** verificare che il nome del servizio cloud in cui si esegue la distribuzione e i valori per **Ambiente**, **Configurazione della build** e **Configurazione del servizio** siano corretti.
+4. Nella scheda **impostazioni comuni** verificare che il nome del servizio cloud in cui si esegue la distribuzione, l' **ambiente**, la configurazione della **Build**e la configurazione del **servizio** siano corretti.
 
     ![Scheda delle impostazioni comuni di Pubblica applicazione Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. Nella scheda **Impostazioni avanzate** verificare che il **Etichetta distribuzione** e **Account di archiviazione** siano corretti. Verificare che la casella di controllo **Elimina distribuzione in caso di errore** sia deselezionata e che sia selezionata la casella di controllo **Aggiornamento distribuzione**. Deselezionando la casella di controllo **Elimina distribuzione in caso di errore**, si assicura che l'indirizzo VIP non andrà perso in caso di errore durante la distribuzione. Se si seleziona la casella di controllo **Aggiornamento distribuzione**, si assicura che la distribuzione non verrà eliminata e che l'indirizzo VIP non andrà perso quando si ripubblica l'applicazione. 
+5. Nella scheda **Impostazioni avanzate** verificare che il **Etichetta distribuzione** e **Account di archiviazione** siano corretti. Verificare che la casella di controllo **Elimina distribuzione in caso di errore** sia deselezionata e che sia selezionata la casella di controllo **Aggiornamento distribuzione**. Deselezionando la casella di controllo **Elimina distribuzione in** caso di errore, si assicura che l'indirizzo VIP non venga perso se si verifica un errore durante la distribuzione. Se si seleziona la casella di controllo **Aggiornamento distribuzione**, si assicura che la distribuzione non verrà eliminata e che l'indirizzo VIP non andrà perso quando si ripubblica l'applicazione. 
 
     ![Scheda delle impostazioni avanzate di Pubblica applicazione Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 
@@ -54,4 +54,4 @@ L'indirizzo VIP di un servizio cloud viene allocato alla prima distribuzione in 
     ![Pagina di riepilogo di Pubblica applicazione Azure](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-summary.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
-- [Usare della procedura guidata Pubblica l'applicazione Azure di Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)
+- [Uso della procedura guidata Pubblica l'applicazione Azure di Visual Studio](vs-azure-tools-publish-azure-application-wizard.md)

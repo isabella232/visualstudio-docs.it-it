@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62960160"
 ---
 # <a name="zoom-control-threads-view"></a>Controllo zoom (visualizzazione Thread)
@@ -26,10 +26,10 @@ Il controllo zoom è un dispositivo di scorrimento che consente di ingrandire e 
  Eseguendo uno zoom avanti tramite trascinamento nella visualizzazione della sequenza temporale, viene creata un'area evidenziata in giallo. Quando si rilascia il pulsante del mouse, la visualizzazione della sequenza temporale viene ingrandita sull'intervallo selezionato.
 
 ## <a name="zoom-in-and-out-by-using-the-mouse-wheel"></a>Zoom avanti e indietro tramite la rotellina del mouse
- Fare clic su un punto qualsiasi della sequenza temporale (per assicurarsi che abbia lo stato attivo del mouse), quindi premere **CTRL** e spostare la rotellina del mouse (zoom avanti; zoom indietro).
+ Fare clic su qualsiasi punto della sequenza temporale (per assicurarsi che abbia lo stato attivo del mouse), quindi premere **CTRL** e spostare la rotellina del mouse (avanti Zoom avanti; Zoom indietro).
 
 ## <a name="see-also"></a>Vedere anche
 - [Gestire i canali](../profiling/manage-channels.md)
-- [Modalità misurazione attiva/non attiva](../profiling/measure-mode-on-off.md)
-- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
-- [Navigatore di utilizzo](../profiling/utilization-navigator.md)
+- [Modalità misurazione attiva/disattiva](../profiling/measure-mode-on-off.md)
+- [Visualizzazione thread](../profiling/threads-view-parallel-performance.md)
+- [Strumento di spostamento di utilizzo](../profiling/utilization-navigator.md)

@@ -16,10 +16,10 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283073"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Aggiungere controlli personalizzati alla finestra Origini dati
@@ -89,7 +89,7 @@ Per aggiungere controlli all'elenco di controlli associati:
     > [!NOTE]
     > Solo i controlli che si trovano all'interno della soluzione corrente o in un assembly a cui si fa riferimento possono essere aggiunti all'elenco di controlli associati. I controlli devono inoltre implementare uno degli attributi di data binding nella tabella precedente. Per associare dati a un controllo personalizzato che non è disponibile nella finestra Origini dati, trascinare il controllo dalla **casella degli strumenti** nell'area di progettazione, quindi trascinare l'elemento da associare a dalla finestra **origini dati** nel controllo.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Finestra di dialogo Opzioni di personalizzazione dell'interfaccia utente dati](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

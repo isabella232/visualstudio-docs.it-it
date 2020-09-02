@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160313"
 ---
 # <a name="report-based-on-visible-time-range"></a>Rapporto basato sull'intervallo di tempo visibile
@@ -29,13 +29,13 @@ La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i c
   
 ## <a name="see-also"></a>Vedere anche  
  [Nessuna attività di thread da mostrare](../profiling/no-thread-activity-to-show-threads-view.md)   
- [Rapporto profilo di esecuzione](../profiling/execution-profile-report.md)   
+ [Rapporto Profilo di esecuzione](../profiling/execution-profile-report.md)   
  [Tempo di sincronizzazione](../profiling/synchronization-time.md)   
- [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md)   
+ [Tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md)   
  [Tempo di sospensione](../profiling/sleep-time.md)   
  [Tempo di gestione della memoria](../profiling/memory-management-time.md)   
  [Tempo di precedenza](../profiling/preemption-time.md)   
  [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)   
- [Report Operazioni su disco](../profiling/disk-operations-report-threads-view.md)   
- [Report Riepilogo per thread](../profiling/per-thread-summary-report.md)   
+ [Rapporto delle operazioni su disco](../profiling/disk-operations-report-threads-view.md)   
+ [Report di riepilogo per thread](../profiling/per-thread-summary-report.md)   
  [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 . Documenti Microsoft
+title: 'IDebugBinder3:: GetMemoryContext64 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735734"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Converte una posizione dell'oggetto o un indirizzo di memoria a 64 bit in un contesto di memoria.
+Converte il percorso di un oggetto o un indirizzo di memoria a 64 bit in un contesto di memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>Parametri
 `pField`\
-[in] Oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, `dwConstant` quindi utilizzare invece.
+in Oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL` , usare `dwConstant` invece.
 
 `uConstant`\
-[in] Un indirizzo di memoria a 64 bit, ad esempio 0x50000000.
+in Un indirizzo di memoria a 64 bit, ad esempio 0x50000000.
 
 `ppMemCxt`\
-[fuori] Restituisce il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaccia che rappresenta l'indirizzo dell'oggetto o l'indirizzo in memoria.
+out Restituisce l'interfaccia [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che rappresenta l'indirizzo dell'oggetto o l'indirizzo in memoria.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Negli esempi seguenti viene creato un oggetto che implementa il [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) interfaccia e utilizza questo metodo per recuperare il contesto di memoria.
+Negli esempi seguenti viene creato un oggetto che implementa l'interfaccia [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) e utilizza questo metodo per recuperare il contesto di memoria.
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )

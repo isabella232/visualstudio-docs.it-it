@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283918"
 ---
 # <a name="how-to-update-existing-templates"></a>Procedura: Aggiornare modelli esistenti
@@ -65,7 +65,7 @@ In Visual Studio è disponibile l'**Esportazione guidata modelli** che può esse
 
 1. Eliminare i file di modello estratti e il file di modello precedente con estensione *zip*.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

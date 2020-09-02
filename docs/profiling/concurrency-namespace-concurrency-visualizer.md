@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63001075"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Spazio dei nomi Concurrency (visualizzatore di concorrenza)
@@ -28,16 +28,16 @@ Lo spazio dei nomi `Concurrency` fornisce classi e funzioni che consentono l'acc
 namespace Concurrency;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Membri
 
 ### <a name="namespaces"></a>Spazi dei nomi
 
 |Nome|Descrizione|
 |----------|-----------------|
-|[Spazio dei nomi diagnostico](../profiling/diagnostic-namespace.md)|Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.|
+|[Spazio dei nomi Diagnostic](../profiling/diagnostic-namespace.md)|Lo spazio dei nomi `diagnostics` offre funzionalità per l'emissione di marcatori del visualizzatore di concorrenza.|
 
 ## <a name="requirements"></a>Requisiti
  **Intestazione:** cvmarkersobj.h
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento alla libreria C](../profiling/c-library-reference.md)
+- [Riferimenti alla libreria C](../profiling/c-library-reference.md)

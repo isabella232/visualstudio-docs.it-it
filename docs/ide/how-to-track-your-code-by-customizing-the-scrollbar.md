@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283983"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Procedura: Personalizzare la barra di scorrimento
 
 Quando si usano file di codice di grandi dimensioni, può essere difficile tenere traccia di tutto il contenuto dei file. È possibile personalizzare la barra di scorrimento dell'editor di codice per ottenere una panoramica di cosa avviene nel codice.
 
-## <a name="annotations"></a>Annotazioni
+## <a name="annotations"></a>annotazioni
 
 È possibile specificare se la barra di scorrimento deve mostrare annotazioni, ad esempio modifiche al codice, punti di interruzione, segnalibri, errori e posizione del cursore.
 
@@ -70,6 +70,6 @@ La figura seguente mostra l'opzione **Mostra descrizione comando anteprima**:
 > [!TIP]
 > Per modificare i colori visualizzati in modalità mappa, scegliere **strumenti**  >  **Opzioni**  >  **ambiente**  >  **tipi di carattere e colori**. Successivamente, in **elementi visualizzati**scegliere uno degli elementi che sono preceduti da "panoramica", apportare le modifiche ai colori desiderate, quindi scegliere **OK**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

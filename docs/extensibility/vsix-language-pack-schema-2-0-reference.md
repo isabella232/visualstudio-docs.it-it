@@ -12,10 +12,10 @@ ms.author: zorio
 author: zoeyr
 manager: jillfra
 ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169339"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Informazioni di riferimento sullo schema del Language Pack VSIX 2,0
@@ -24,11 +24,11 @@ Lo schema del Language Pack VSIX fornisce informazioni di installazione localizz
 
 ## <a name="language-pack-schema"></a>Schema Language Pack
 
-L'elemento radice del file di Language Pack è `<PackageLanguagePackManifest>`, con un attributo di `Version`, ovvero la versione del formato Language Pack. Questo articolo descrive la versione 2,0 del formato Language Pack, specificato nel manifesto impostando l'attributo `Version` sul valore `Version="2.0.0"`. L'elemento radice contiene esattamente un elemento `<Metadata>` figlio.
+L'elemento radice del file di Language Pack è `<PackageLanguagePackManifest>` , con un attributo di `Version` , che è la versione del formato Language Pack. Questo articolo descrive la versione 2,0 del formato Language Pack, specificato nel manifesto impostando l' `Version` attributo sul valore `Version="2.0.0"` . L'elemento radice contiene esattamente un `<Metadata>` elemento figlio.
 
-### <a name="packagelanguagepackmanifest-element"></a>Elemento packagelanguagepackmanifest
+### <a name="packagelanguagepackmanifest-element"></a>Elemento PackageLanguagePackManifest
 
-All'interno dell'elemento `<PackageLanguagePackManifest>` deve esistere l'elemento seguente:
+All'interno dell' `<PackageLanguagePackManifest>` elemento deve esistere l'elemento seguente:
 
 |Titolo|Descrizione|
 |-----------|-----------------|
@@ -36,7 +36,7 @@ All'interno dell'elemento `<PackageLanguagePackManifest>` deve esistere l'elemen
 
 ### <a name="metadata-element"></a>Elemento Metadata
 
-All'interno dell'elemento `<Metadata>` è possibile avere gli elementi seguenti:
+All'interno dell' `<Metadata>` elemento è possibile avere gli elementi seguenti:
 
 |Titolo|Descrizione|
 |-----------|-----------------|

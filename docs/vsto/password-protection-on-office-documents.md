@@ -1,5 +1,5 @@
 ---
-title: Password di protezione nei documenti di Office
+title: Protezione delle password nei documenti di Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,28 +17,28 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62977900"
 ---
-# <a name="password-protection-on-office-documents"></a>Password di protezione nei documenti di Office
-  È possibile impostare una password per i documenti di Microsoft Office Word e cartelle di lavoro di Microsoft Office Excel in modo che non può essere aperto da chi non conosce la password. Questa opzione, detta **Password all'apertura**.
+# <a name="password-protection-on-office-documents"></a>Protezione delle password nei documenti di Office
+  È possibile impostare una password nei documenti Microsoft Office Word e Microsoft Office cartelle di lavoro di Excel in modo che non possano essere aperte da un utente che non conosce la password. Questa opzione è denominata **password all'apertura**.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- È possibile creare progetti a livello di documento con i documenti esistenti e le cartelle di lavoro che hanno **Password all'apertura** abilitata. Il comportamento in Visual Studio è diverso per i documenti di Word ed Excel che hanno **Password all'apertura** abilitata.
+ È possibile creare progetti a livello di documento usando documenti e cartelle di lavoro esistenti per i quali è abilitata la **password per l'apertura** . Il comportamento in Visual Studio è diverso per i documenti di Word ed Excel per i quali è abilitata la **password per l'apertura** .
 
- Per informazioni sull'abilitazione **Password all'apertura**, vedere la Guida di Word o Excel.
+ Per informazioni sull'abilitazione della **password all'apertura**, vedere la Guida in Word o Excel.
 
 ## <a name="behavior-of-excel-and-word"></a>Comportamento di Excel e Word
- Ogni volta che si apre una cartella di lavoro di Excel in Visual Studio dotato **Password all'apertura** abilitata, viene richiesta la password. Quando si compila la soluzione richiederà la password anche in questo caso, poiché il documento viene aperto durante la compilazione.
+ Ogni volta che si apre una cartella di lavoro di Excel in Visual Studio in cui è abilitata la **password in Open** , in Excel viene richiesta la password. Quando si compila la soluzione, verrà richiesta di nuovo la password, perché il documento viene aperto durante la compilazione.
 
- La prima volta che si apre un documento di Word in Visual Studio dotato **Password all'apertura** abilitata, viene richiesta la password. Dopo aver immesso correttamente la password **Password all'apertura** viene rimosso dal documento e apertura del documento non è più necessaria una password. Se si desidera che il documento nella soluzione per richiedere una password prima che può essere aperto, è necessario abilitare **Password all'apertura** dopo la compilazione finale e prima di distribuire la soluzione.
+ La prima volta che si apre un documento di Word in Visual Studio con la password abilitata per l' **apertura** , Word richiede la password. Dopo aver immesso correttamente la password, la **password all'apertura** verrà rimossa dal documento e l'apertura del documento non richiederà più una password. Se si vuole che il documento nella soluzione richieda una password prima di poterla aprire, è necessario abilitare la **password all'apertura** dopo la compilazione finale e prima di distribuire la soluzione.
 
 ## <a name="see-also"></a>Vedere anche
-- [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
-- [Information rights management e panoramica sulle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
-- [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
+- [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
+- [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Procedura: consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
