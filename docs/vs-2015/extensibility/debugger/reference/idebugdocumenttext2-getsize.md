@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetSize | Microsoft Docs
+title: 'IDebugDocumentText2:: GetSize | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f6d438db999e2e0b2aa85c45c0b38333238755e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200203"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera la dimensione del testo nella posizione specificata nel documento.  
+Recupera la dimensione del testo in questa posizione nel documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,18 +42,18 @@ int GetSize( 
   
 #### <a name="parameters"></a>Parametri  
  `pcNumLines`  
- [out] Restituisce il numero di righe di testo.  
+ out Restituisce il numero di righe di testo.  
   
  `pcNumChars`  
- [out] Restituisce il numero di caratteri del testo.  
+ out Restituisce il numero di caratteri del testo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- [C++ solo] Se non si desidera un valore specifico, passare un valore NULL per il parametro.  
+## <a name="remarks"></a>Osservazioni  
+ [Solo C++] Se non si desidera un valore specifico, passare un valore NULL per il parametro.  
   
- [C# solo] Specificare entrambi i parametri.  
+ [Solo C#] È necessario specificare entrambi i parametri.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

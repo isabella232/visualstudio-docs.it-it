@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c66894fe0515b28037bbb2a19715fa09cbf9fa62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153594"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
+# <a name="attach_reason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica il motivo per il motore di debug (DE) da associare a un nodo di programma.  
+Specifica il motivo per cui il motore di debug (DE) deve connettersi a un nodo del programma.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,23 +43,23 @@ public enum enum_ATTACH_REASON { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  ATTACH_REASON_AUTO  
- Collegare perché il processo è attualmente in modalità di debug.  
+ Connetti perché il processo è attualmente in modalità di debug.  
   
  ATTACH_REASON_LAUNCH  
- Collegare perché il processo è stato avviato.  
+ Connettersi perché il processo è stato avviato.  
   
  ATTACH_REASON_USER  
- Collegare a causa di una richiesta dell'utente.  
+ Connessione a causa di una richiesta dell'utente.  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono usati come parametro per il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) e [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metodi.  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono usati come parametro per i metodi di [connessione](../../../extensibility/debugger/reference/idebugengine2-attach.md) e di [associazione](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

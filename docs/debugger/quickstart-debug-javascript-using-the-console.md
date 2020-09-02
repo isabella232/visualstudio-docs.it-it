@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348106"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Eseguire il debug di JavaScript usando la console in Visual Studio
@@ -46,7 +46,7 @@ La finestra Console JavaScript ti permette di:
 
 Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedere [aggiornare un'app (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità di debug JavaScript, ad esempio l'uso del DOM Explorer e l'impostazione dei punti di interruzione, vedere [Guida introduttiva: eseguire il debug di app HTML e CSS](../debugger/quickstart-debug-html-and-css.md) ed [eseguire il debug in Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a>Eseguire il debug con la finestra console JavaScript
+## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a> Eseguire il debug con la finestra console JavaScript
 La procedura seguente consente di creare un'app `FlipView` e mostra come eseguire il debug interattivo di un errore di codifica JavaScript.
 
 > [!NOTE]
@@ -249,11 +249,11 @@ La figura seguente mostra l'elenco Destinazione nella finestra Console JavaScrip
 
 Puoi anche cambiare il contesto di esecuzione usando il comando `cd` , ma devi ricordare il nome dell'altro contesto di esecuzione e il riferimento che usi deve essere incluso nell'ambito. L'elenco **Destinazione** offre un accesso migliore ad altri contesti di esecuzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Scelte rapide da tastiera](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Debug di un controllo WebView](../debugger/debug-a-webview-control.md)

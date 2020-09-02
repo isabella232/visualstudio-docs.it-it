@@ -1,5 +1,5 @@
 ---
-title: Funzione SccCheckin . Documenti Microsoft
+title: Funzione SccCheckin | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701188"
 ---
 # <a name="scccheckin-function"></a>SccCheckin (funzione)
-Questa funzione archivia i file estratti in precedenza nel sistema di controllo del codice sorgente, archiviando le modifiche e creando una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.
+Questa funzione archivia i file precedentemente estratti nel sistema di controllo del codice sorgente, archiviando le modifiche e creando una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,54 +39,54 @@ SCCRTN SccCheckin (
 ### <a name="parameters"></a>Parametri
  pvContext
 
-[in] Struttura di contesto del plug-in del controllo del codice sorgente.
+in Struttura del contesto del plug-in del controllo del codice sorgente.
 
  hWnd
 
-[in] Un handle per la finestra dell'IDE che il plug-in SCC può utilizzare come elemento padre per tutte le finestre di dialogo che fornisce.
+in Handle per la finestra IDE che il plug-in SCC può utilizzare come elemento padre per tutte le finestre di dialogo fornite.
 
  nFile
 
-[in] Numero di file selezionati per l'estrazione.
+in Numero di file selezionati da archiviare.
 
- LpNomidi File
+ lpFileNames
 
-[in] Matrice di nomi di percorso locali completi dei file da archiviare.
+in Matrice di nomi di percorso locale completi dei file da archiviare.
 
- LpCommento
+ lpComment
 
-[in] Commento da applicare a ciascuno dei file selezionati da archiviare. Questo parametro è `NULL` se il plug-in del controllo del codice sorgente deve richiedere un commento.
+in Commento da applicare a ognuno dei file selezionati che vengono archiviati. Questo parametro è `NULL` se il plug-in del controllo del codice sorgente deve richiedere un commento.
 
- fOpzioni
+ fOptions
 
-[in] Flag di comando, `SCC_KEEP_CHECKEDOUT`0 o .
+in Flag di comando, ovvero 0 o `SCC_KEEP_CHECKEDOUT` .
 
- PvOpzioni
+ pvOptions
 
-[in] Opzioni specifiche del plug-in SCC.
+in Opzioni specifiche del plug-in SCC.
 
 ## <a name="return-value"></a>Valore restituito
- L'implementazione del plug-in del controllo del codice sorgente di questa funzione deve restituire uno dei seguenti valori:
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
 
-|valore|Descrizione|
+|Valore|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Il file è stato archiviato correttamente.|
-|SCC_E_FILENOTCONTROLLED|Il file selezionato non è nel controllo del codice sorgente.|
-|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di contesa. È consigliabile eseguire un nuovo tentativo.|
+|SCC_E_FILENOTCONTROLLED|Il file selezionato non è sotto il controllo del codice sorgente.|
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico. Il file non è stato archiviato.|
 |SCC_E_NOTCHECKEDOUT|L'utente non ha estratto il file, quindi non può archiviarlo.|
-|SCC_E_CHECKINCONFLICT|Impossibile eseguire l'archiviazione perché:<br /><br /> - Un altro utente `bAutoReconcile` ha effettuato l'accesso in anticipo ed era false.<br /><br /> -oppure-<br /><br /> - L'unione automatica non può essere eseguita (ad esempio, quando i file sono binari).|
-|SCC_E_VERIFYMERGE|Il file è stato automaticamente unito ma non è stato archiviato nella verifica dell'utente in sospeso.|
-|SCC_E_FIXMERGE|Il file è stato unito automaticamente ma non è stato archiviato a causa di un conflitto di unione che deve essere risolto manualmente.|
+|SCC_E_CHECKINCONFLICT|Impossibile eseguire l'archiviazione perché:<br /><br /> -Un altro utente ha eseguito l'check-in avanti e il valore `bAutoReconcile` è false.<br /><br /> -oppure-<br /><br /> -Non è possibile eseguire l'Unione automatica (ad esempio, quando i file sono binari).|
+|SCC_E_VERIFYMERGE|Il file è stato sottoposto a merge automatico ma non è stato archiviato per la verifica degli utenti in sospeso.|
+|SCC_E_FIXMERGE|Il file è stato unito automaticamente ma non è stato archiviato a causa di un conflitto di merge che deve essere risolto manualmente.|
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|
-|SCC_I_OPERATIONCANCELED|L'operazione è stata annullata prima del completamento.|
-|SCC_I_RELOADFILE|Un file o un progetto deve essere ricaricato.|
-|SCC_E_FILENOTEXIST|File locale non trovato.|
+|SCC_I_OPERATIONCANCELED|Operazione annullata prima del completamento.|
+|SCC_I_RELOADFILE|È necessario ricaricare un file o un progetto.|
+|SCC_E_FILENOTEXIST|Il file locale non è stato trovato.|
 
 ## <a name="remarks"></a>Osservazioni
- Il commento si applica a tutti i file archiviati. L'argomento comment `null` può essere una stringa, nel qual caso il plug-in del controllo del codice sorgente può richiedere all'utente una stringa di commento per ogni file.
+ Il commento si applica a tutti i file in fase di verifica. L'argomento comment può essere una `null` stringa, nel qual caso il plug-in del controllo del codice sorgente può richiedere all'utente una stringa di commento per ogni file.
 
- È `fOptions` possibile dare all'argomento `SCC_KEEP_CHECKEDOUT` un valore del flag per indicare l'intenzione dell'utente di archiviare il file ed estrarlo nuovamente.
+ All' `fOptions` argomento può essere assegnato un valore del `SCC_KEEP_CHECKEDOUT` flag per indicare l'intento dell'utente di controllare il file ed estrarlo di nuovo.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 28bcaa626797313f6ea68a17da33ef9ea192a856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154195"
 ---
 # <a name="locationtype"></a>LocationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Indica il tipo di informazioni di percorso contenute in un simbolo.  
+Indica il tipo di informazioni sulla posizione contenute in un simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,51 +46,51 @@ enum LocationType { 
   
 ## <a name="elements"></a>Elementi  
  `LocIsNull`  
- Informazioni sulla posizione non è disponibile.  
+ Le informazioni sulla posizione non sono disponibili.  
   
  `LocIsStatic`  
- Posizione è statica.  
+ Il percorso è statico.  
   
  `LocIsTLS`  
- Si trova nell'archiviazione thread-local.  
+ Il percorso si trova nell'archiviazione thread-local.  
   
  `LocIsRegRel`  
- Percorso è relativo al registro.  
+ Il percorso è relativo al registro.  
   
  `LocIsThisRel`  
- Percorso è `this`-relativo.  
+ Il percorso è `this` relativo.  
   
  `LocIsEnregistered`  
- Si trova in un registro di sistema.  
+ Il percorso si trova in un registro.  
   
  `LocIsBitField`  
- Si trova in un campo di bit.  
+ Il percorso si trova in un campo di bit.  
   
  `LocIsSlot`  
- Trova uno slot di Microsoft Intermediate Language (MSIL).  
+ Location è uno slot MSIL (Microsoft Intermediate Language).  
   
  `LocIsIlRel`  
- Percorso è relativo al codice MSIL.  
+ Il percorso è relativo a MSIL.  
   
  `LocInMetaData`  
- Si trova nei metadati.  
+ Il percorso è nei metadati.  
   
  `LocIsConstant`  
- Si trova in un valore costante.  
+ Il percorso è in un valore costante.  
   
  `LocTypeMax`  
- Il numero di tipi di percorso di questa enumerazione.  
+ Numero di tipi di posizione in questa enumerazione.  
   
-## <a name="remarks"></a>Note  
- Le proprietà disponibili per il [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaccia dipendono dalla posizione del simbolo all'interno del file di immagine. Per altre informazioni, vedere [percorsi di simboli](../../debugger/debug-interface-access/symbol-locations.md).  
+## <a name="remarks"></a>Osservazioni  
+ Le proprietà disponibili per l'interfaccia [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dipendono dalla posizione del simbolo all'interno del file di immagine. Per ulteriori informazioni, vedere [posizioni dei simboli](../../debugger/debug-interface-access/symbol-locations.md).  
   
- I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) (metodo).  
+ I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: cvconst.h  
+ Intestazione: cvconst. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [Percorsi dei simboli](../../debugger/debug-interface-access/symbol-locations.md)

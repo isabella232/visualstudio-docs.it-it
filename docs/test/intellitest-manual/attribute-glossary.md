@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302630"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315226"
 ---
 # <a name="attribute-glossary"></a>Glossario degli attributi
 
@@ -66,7 +66,7 @@ Questo attributo consente di asserire che il valore governato non può essere **
   }
   ```
 
-* un **tipo**
+* **tipo**
 
   ```csharp
   // never consider null for Foo types
@@ -79,7 +79,7 @@ Può anche essere allegato a un assembly, una fixture o un metodo di test. In qu
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-Attributo che contrassegna una classe contenente *explorations*. Equivale all'attributo **TestClassAttribute** di MSTest (**TestFixtureAttribute** in NUnit). L'attributo è facoltativo.
+Attributo che contrassegna una classe contenente *explorations*. Equivale all'attributo **TestClassAttribute** di MSTest (**TestFixtureAttribute** in NUnit). Questo attributo è facoltativo.
 
 Le classi contrassegnate con [PexClass](#pexclass) devono *poter essere costruite per impostazione predefinita*:
 
@@ -142,7 +142,7 @@ public partial class MyTests {
 <a name="pexexplorationattributebase"></a>
 ## <a name="pexexplorationattributebase"></a>PexExplorationAttributeBase
 
-[Ulteriori informazioni](xref:Microsoft.Pex.Framework.PexExplorationAttributeBase)
+[Altre informazioni](xref:Microsoft.Pex.Framework.PexExplorationAttributeBase)
 
 <a name="pexassemblysettings"></a>
 ## <a name="pexassemblysettings"></a>PexAssemblySettings
@@ -233,17 +233,17 @@ class CtorTest(int capacity) {
 <a name="pexallowedexceptionfromassembly"></a>
 ## <a name="pexallowedexceptionfromassembly"></a>PexAllowedExceptionFromAssembly
 
-[Ulteriori informazioni](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromAssemblyAttribute)
+[Altre informazioni](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromAssemblyAttribute)
 
 <a name="pexallowedexceptionfromtype"></a>
 ## <a name="pexallowedexceptionfromtype"></a>PexAllowedExceptionFromType
 
-[Ulteriori informazioni](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeAttribute)
+[Altre informazioni](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeAttribute)
 
 <a name="pexallowedexceptionfromtypeundertest"></a>
 ## <a name="pexallowedexceptionfromtypeundertest"></a>PexAllowedExceptionFromTypeUnderTest
 
-[Ulteriori informazioni](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
+[Altre informazioni](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
 ## <a name="got-feedback"></a>Per eventuali commenti,
 

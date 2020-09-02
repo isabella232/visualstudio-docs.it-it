@@ -1,5 +1,5 @@
 ---
-title: Prerequisiti per le applicazioni a 64 bit la distribuzione | Microsoft Docs
+title: Distribuzione dei prerequisiti per le applicazioni a 64 bit | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92f30e8e059475c907da184aa59a8e4b7a2cf19f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675574"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
@@ -38,13 +38,13 @@ La distribuzione ClickOnce supporta l'installazione di applicazioni su piattafor
   
 |Componente ridistribuibile|Supporto x64|Supporto IA64|  
 |---------------------|-----------------|------------------|  
-|[!INCLUDE[vsto_runtime](../includes/vsto-runtime-md.md)]|Yes|No|  
-|Librerie di runtime di Visual C++ 2010 (IA64)|No|Yes|  
-|Librerie di runtime di Visual C++ 2010 (x64)|Yes|No|  
-|Microsoft .NET Framework 4 (x86 e x64)|Yes||  
-|Microsoft .NET Framework 4 Client Profile (x86 e x64)|Yes||  
+|[!INCLUDE[vsto_runtime](../includes/vsto-runtime-md.md)]|Sì|No|  
+|Librerie di runtime di Visual C++ 2010 (IA64)|No|Sì|  
+|Librerie di runtime di Visual C++ 2010 (x64)|Sì|No|  
+|Microsoft .NET Framework 4 (x86 e x64)|Sì||  
+|Microsoft .NET Framework 4 Client Profile (x86 e x64)|Sì||  
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuzione di applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md)   
- [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Applicazioni a 64 bit](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

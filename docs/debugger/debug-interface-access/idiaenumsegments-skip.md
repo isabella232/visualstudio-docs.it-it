@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a17d8be6292a67475ae259e519749ba2422894a0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467953"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
@@ -38,5 +38,5 @@ in Numero di segmenti nella sequenza di enumerazione da ignorare.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` se non sono più presenti segmenti da ignorare.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

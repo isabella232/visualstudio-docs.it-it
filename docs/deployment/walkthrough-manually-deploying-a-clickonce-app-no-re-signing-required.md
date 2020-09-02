@@ -1,5 +1,5 @@
 ---
-title: Distribuire manualmente ClickOnce mantenendo informazioni personalizzate distintive dell'App
+title: Distribuire manualmente le app ClickOnce che conservano la personalizzazione
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,37 +23,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263418"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione
-Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e quindi passarla a un cliente per pubblicare e distribuire, il cliente ha in genere aggiornare il manifesto di distribuzione e firmare nuovamente la soluzione. Sebbene questo rappresenti il metodo consigliato nella maggior parte dei casi, .NET Framework 3.5 consente di creare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni che possono essere distribuite dai clienti senza la necessità di rigenerare un nuovo manifesto di distribuzione. Per altre informazioni, vedere [le applicazioni di distribuzione ClickOnce per i server di test e produzione senza riapposizione della firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+# <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e che conserva le informazioni di personalizzazione
+Quando si crea un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione e la si assegna a un cliente per la pubblicazione e la distribuzione, il cliente ha tradizionalmente dovuto aggiornare il manifesto di distribuzione e firmarlo di nuovo. Sebbene questo sia ancora il metodo preferito nella maggior parte dei casi, il .NET Framework 3,5 consente di creare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni che possono essere distribuite dai clienti senza dover rigenerare un nuovo manifesto di distribuzione. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di applicazioni ClickOnce per i server di test e di produzione senza firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
- Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e quindi passarla a un cliente per pubblicare e distribuire, l'applicazione può usare la personalizzazione del cliente o conservare le proprie. Ad esempio, se l'applicazione è una singola applicazione proprietaria, si potrebbe essere necessario mantenere la personalizzazione. Se l'applicazione è altamente personalizzata per ogni cliente, si potrebbe voler usare la personalizzazione del cliente. .NET Framework 3.5 consente di conservare la personalizzazione, informazioni sull'editore e la firma di sicurezza quando si concede un'applicazione a un'organizzazione per la distribuzione. Per altre informazioni, vedere [delle applicazioni ClickOnce creare altri utenti possano distribuire](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
+ Quando si crea un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione e la si assegna a un cliente per la pubblicazione e la distribuzione, l'applicazione può usare la personalizzazione del cliente o può mantenere la personalizzazione. Ad esempio, se l'applicazione è un'unica applicazione proprietaria, potrebbe essere necessario mantenere la personalizzazione. Se l'applicazione è altamente personalizzata per ogni cliente, è consigliabile utilizzare la personalizzazione del cliente. Il .NET Framework 3,5 consente di mantenere le informazioni di personalizzazione, di pubblicazione e di sicurezza quando si assegna un'applicazione a un'organizzazione per la distribuzione. Per ulteriori informazioni, vedere [la pagina relativa alla creazione di applicazioni ClickOnce per la distribuzione da altri utenti](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
-> In questa procedura dettagliata creare distribuzioni manualmente usando lo strumento da riga di comando *Mage.exe* o lo strumento con interfaccia grafico *MageUI.exe*. Per altre informazioni sulle distribuzioni manuali, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> In questa procedura dettagliata le distribuzioni vengono create manualmente tramite lo strumento da riga di comando *Mage.exe* o lo strumento grafico *MageUI.exe*. Per ulteriori informazioni sulle distribuzioni manuali, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per eseguire i passaggi in questa procedura dettagliata è necessario quanto segue:
+ Per eseguire la procedura descritta in questa procedura dettagliata, è necessario quanto segue:
 
-- Un'applicazione Windows Forms che si è pronti per la distribuzione. Questa applicazione verrà indicata come *WindowsFormsApp1*.
+- Windows Forms Application che si è pronti per la distribuzione. Questa applicazione verrà denominata *WindowsFormsApp1*.
 
 - Visual Studio o il Windows SDK.
 
-### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Per distribuire un'applicazione ClickOnce con più distribuzioni e supporto della personalizzazione tramite Mage.exe
+### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Per distribuire un'applicazione ClickOnce con più distribuzioni e supporto di personalizzazione usando Mage.exe
 
-1. Aprire un prompt dei comandi di Visual Studio o un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] prompt dei comandi e passare alla directory in cui verranno archiviati i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file.
+1. Aprire un prompt dei comandi di Visual Studio o un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] prompt dei comandi e passare alla directory in cui vengono archiviati i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file.
 
-2. Creare una directory denominata alla versione corrente della distribuzione. Se questa è la prima volta che si sta distribuendo l'applicazione, si sceglierà probabilmente **1.0.0.0**.
+2. Creare una directory denominata dopo la versione corrente della distribuzione. Se è la prima volta che si distribuisce l'applicazione, è probabile che si scelga **1.0.0.0**.
 
    > [!NOTE]
-   > La versione della distribuzione può essere diverso dalla versione dei file dell'applicazione.
+   > La versione della distribuzione può essere diversa dalla versione dei file dell'applicazione.
 
-3. Creare una sottodirectory denominata **bin** e copiare tutti i file dell'applicazione in questo caso, inclusi file eseguibili, gli assembly, le risorse e i file di dati.
+3. Creare una sottodirectory denominata **bin** e copiare qui tutti i file dell'applicazione, inclusi i file eseguibili, gli assembly, le risorse e i file di dati.
 
 4. Generare il manifesto dell'applicazione con una chiamata a Mage.exe.
 
@@ -61,30 +61,30 @@ Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"
    ```
 
-5. Firmare il manifesto dell'applicazione con il proprio certificato digitale.
+5. Firmare il manifesto dell'applicazione con il certificato digitale.
 
    ```cmd
    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx
    ```
 
-6. Generare il manifesto di distribuzione con una chiamata a *Mage.exe*. Per impostazione predefinita *Mage.exe* contrassegnerà il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione come un'applicazione installata, in modo che non può essere eseguito sia online e offline. Per rendere l'applicazione disponibile solo quando l'utente è online, usare il `-i` argomento con un valore di `f`. Poiché questa applicazione sfrutterà la più funzionalità di distribuzione, escludere le `-providerUrl` argomento per *Mage.exe*. (Nelle versioni di .NET Framework precedenti alla versione 3.5, l'esclusione `-providerUrl` per un'applicazione non in linea causerà un errore.)
+6. Generare il manifesto di distribuzione con una chiamata a *Mage.exe*. Per impostazione predefinita, *Mage.exe* contrassegna la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione come applicazione installata, in modo che possa essere eseguita sia online che offline. Per rendere disponibile l'applicazione solo quando l'utente è online, utilizzare l' `-i` argomento con un valore di `f` . Poiché questa applicazione sfrutta la funzionalità di distribuzione multipla, escludere l' `-providerUrl` argomento per *Mage.exe*. Nelle versioni del .NET Framework precedenti alla versione 3,5, escludendo `-providerUrl` per un'applicazione offline, verrà generato un errore.
 
    ```cmd
    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest
    ```
 
-7. Non firmare il manifesto di distribuzione.
+7. Non firmare il manifesto della distribuzione.
 
-8. Fornire tutti i file al cliente, che verrà distribuita l'applicazione nella propria rete.
+8. Fornire tutti i file al cliente, che distribuirà l'applicazione nella rete.
 
-9. A questo punto, il cliente deve firmare il manifesto di distribuzione con il proprio certificato a generazione automatica. Ad esempio, se il cliente appropriato per una società denominata Adventure Works, può generare un certificato autofirmato usando il *MakeCert.exe* dello strumento. Successivamente, usare il *Pvk2pfx.exe* dello strumento per combinare i file creati da *MakeCert.exe* in un file PFX che può essere passato al *Mage.exe*.
+9. A questo punto, il cliente deve firmare il manifesto della distribuzione con il proprio certificato generato automaticamente. Se, ad esempio, il cliente lavora per una società denominata Adventure Works, può generare un certificato autofirmato usando lo strumento *MakeCert.exe* . Usare quindi lo strumento *Pvk2pfx.exe* per combinare i file creati da *MakeCert.exe* in un file PFX che può essere passato al *Mage.exe*.
 
     ```cmd
     makecert -r -pe -n "CN=Adventure Works" -sv MyCert.pvk MyCert.cer
     pvk2pfx.exe -pvk MyCert.pvk -spc MyCert.cer -pfx MyCert.pfx
     ```
 
-10. Il cliente Usa quindi questo certificato per firmare il manifesto di distribuzione.
+10. Il cliente usa quindi questo certificato per firmare il manifesto di distribuzione.
 
     ```cmd
     mage -Sign WindowsFormsApp1.application -CertFile MyCert.pfx
@@ -92,65 +92,65 @@ Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 
 11. Il cliente distribuisce l'applicazione agli utenti.
 
-### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Per distribuire un'applicazione ClickOnce con più distribuzioni e supporto della personalizzazione tramite MageUI.exe
+### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Per distribuire un'applicazione ClickOnce con più distribuzioni e supporto di personalizzazione usando MageUI.exe
 
-1. Aprire un prompt dei comandi di Visual Studio o un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] prompt dei comandi e passare alla directory in cui verranno archiviati i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file.
+1. Aprire un prompt dei comandi di Visual Studio o un [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] prompt dei comandi e passare alla directory in cui vengono archiviati i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] file.
 
-2. Creare una sottodirectory denominata **bin** e copiare tutti i file dell'applicazione in questo caso, inclusi file eseguibili, gli assembly, le risorse e i file di dati.
+2. Creare una sottodirectory denominata **bin** e copiare qui tutti i file dell'applicazione, inclusi i file eseguibili, gli assembly, le risorse e i file di dati.
 
-3. Creare una sottodirectory denominata in base alla versione corrente della distribuzione. Se questa è la prima volta che si sta distribuendo l'applicazione, si sceglierà probabilmente **1.0.0.0**.
+3. Creare una sottodirectory denominata dopo la versione corrente della distribuzione. Se è la prima volta che si distribuisce l'applicazione, è probabile che si scelga **1.0.0.0**.
 
    > [!NOTE]
-   > La versione della distribuzione può essere diverso dalla versione dei file dell'applicazione.
+   > La versione della distribuzione può essere diversa dalla versione dei file dell'applicazione.
 
-4. Spostare il \\ **bin** directory nella directory creata nel passaggio 2.
+4. Spostare la \\ directory **bin** nella directory creata nel passaggio 2.
 
-5. Avviare lo strumento con interfaccia grafico *MageUI.exe*.
+5. Avviare lo strumento grafico *MageUI.exe*.
 
    ```cmd
    MageUI.exe
    ```
 
-6. Creare un nuovo manifesto dell'applicazione selezionando **File**, **New**, **Application Manifest** dal menu di scelta.
+6. Creare un nuovo manifesto dell'applicazione selezionando **file**, **nuovo**, **manifesto dell'applicazione** dal menu.
 
-7. Nel valore predefinito **nome** , immettere il nome e numero di versione di questa distribuzione. Inoltre, fornire un valore per **server di pubblicazione**, che verrà usato come nome della cartella per il collegamento di scelta rapida dell'applicazione nel menu Start quando viene distribuita.
+7. Nella scheda **nome** predefinito immettere il nome e il numero di versione della distribuzione. Specificare anche un valore per **Publisher**, che verrà usato come nome della cartella per il collegamento di collegamento dell'applicazione nel menu Start quando viene distribuito.
 
-8. Selezionare il **Opzioni applicazione** scheda e fare clic su **Usa manifesto applicazione per informazioni sull'attendibilità**. Ciò consentirà di terze parti della personalizzazione per questo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.
+8. Selezionare la scheda **Opzioni applicazione** e fare clic su **Usa manifesto applicazione per informazioni sull'attendibilità**. In questo modo verrà abilitata la personalizzazione di terze parti per questa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
 
-9. Selezionare il **file** scheda e fare clic sui **Sfoglia** accanto al **Directory dell'applicazione** casella di testo.
+9. Selezionare la scheda **file** e fare clic sul pulsante **Sfoglia** accanto alla casella di testo **Directory applicazione** .
 
-10. Selezionare la directory che contiene i file dell'applicazione che è stato creato nel passaggio 2, quindi fare clic su **OK** nella finestra di dialogo Selezione cartella.
+10. Selezionare la directory che contiene i file dell'applicazione creati nel passaggio 2, quindi fare clic su **OK** nella finestra di dialogo Selezione cartella.
 
-11. Scegliere il **Popola** pulsante per aggiungere tutti i file dell'applicazione per l'elenco dei file. Se l'applicazione contiene più di un file eseguibile, contrassegnare il file eseguibile principale per la distribuzione dell'applicazione di avvio selezionando **punto di ingresso** dalle **tipo di File** elenco a discesa. (Se l'applicazione contiene solo un file eseguibile *MageUI.exe* verrà contrassegnato per l'utente.)
+11. Fare clic sul pulsante **popola** per aggiungere tutti i file dell'applicazione all'elenco file. Se l'applicazione contiene più file eseguibili, contrassegnare il file eseguibile principale per questa distribuzione come applicazione di avvio selezionando il **punto di ingresso** dall'elenco a discesa **tipo file** . Se l'applicazione contiene un solo file eseguibile, *MageUI.exe* lo contrassegnerà.
 
-12. Selezionare il **autorizzazioni necessarie** scheda e selezionare il livello di attendibilità è necessaria l'applicazione per l'asserzione. Il valore predefinito è **attendibilità**, che sarà appropriato per la maggior parte delle applicazioni.
+12. Selezionare la scheda **autorizzazioni necessarie** e selezionare il livello di attendibilità che l'applicazione deve dichiarare. Il valore predefinito è **attendibilità totale**, che sarà appropriato per la maggior parte delle applicazioni.
 
-13. Selezionare **File**, **salvare** dal menu, quindi salvare il manifesto dell'applicazione. Verrà richiesto per firmare il manifesto dell'applicazione durante il salvataggio.
+13. Selezionare **file**, **Salva** dal menu e salvare il manifesto dell'applicazione. Verrà richiesto di firmare il manifesto dell'applicazione al momento del salvataggio.
 
-14. Se si dispone di un certificato archiviato come file nel file system, usare il **Sign come file di certificato** opzione e selezionare il certificato dal file system con i puntini di sospensione ( **...** ) pulsante.
+14. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione per il **file del certificato di firma** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione (**...**).
 
      -oppure-
 
-     Se il certificato si trova in un archivio di certificati che sono accessibili dal computer, selezionare la **segno con l'opzione certificati archiviati**e selezionare il certificato dall'elenco fornito.
+     Se il certificato viene mantenuto in un archivio certificati a cui è possibile accedere dal computer, selezionare l' **opzione firma con certificato archiviato**e selezionare il certificato dall'elenco fornito.
 
-15. Selezionare **File**, **New**, **manifesto della distribuzione** dal menu per creare il manifesto di distribuzione e quindi nel **nome** scheda, fornire un nome e numero di versione (**1.0.0.0** in questo esempio).
+15. Selezionare **file**, **nuovo**, **manifesto distribuzione** dal menu per creare il manifesto di distribuzione e quindi nella scheda **nome** specificare un nome e un numero di versione (**1.0.0.0** in questo esempio).
 
-16. Passare al **aggiornare** scheda e specificare la frequenza con cui si desidera questo aggiornamento dell'applicazione. Se l'applicazione usa la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API di distribuzione per verificare la presenza di aggiornamenti, deselezionare la casella di controllo etichettata **l'applicazione deve controllare disponibilità di aggiornamenti**.
+16. Passare alla scheda **aggiornamento** e specificare la frequenza con cui si vuole aggiornare l'applicazione. Se l'applicazione usa l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API di distribuzione per verificare la disponibilità di aggiornamenti, deselezionare la casella di controllo con l'etichetta **questa applicazione deve verificare la disponibilità di aggiornamenti**.
 
-17. Passare al **riferimento all'applicazione** scheda. È possibile popolare anticipatamente tutti i valori in questa scheda, fare clic il **Seleziona manifesto** pulsante e selezionando il manifesto dell'applicazione creata nei passaggi precedenti.
+17. Passare alla scheda **riferimento all'applicazione** . È possibile pre-popolare tutti i valori in questa scheda facendo clic sul pulsante **Seleziona manifesto** e selezionando il manifesto dell'applicazione creato nei passaggi precedenti.
 
-18. Scegli **salvare** e salvare il manifesto di distribuzione su disco. Verrà richiesto per firmare il manifesto dell'applicazione durante il salvataggio. Fare clic su **annullare** per salvare il manifesto senza firmarla.
+18. Scegliere **Salva** e salvare il manifesto di distribuzione su disco. Verrà richiesto di firmare il manifesto dell'applicazione al momento del salvataggio. Fare clic su **Annulla** per salvare il manifesto senza firma.
 
-19. Tutti i file dell'applicazione di fornire al cliente.
+19. Fornire tutti i file dell'applicazione al cliente.
 
-20. A questo punto, il cliente deve firmare il manifesto di distribuzione con il proprio certificato a generazione automatica. Ad esempio, se il cliente appropriato per una società denominata Adventure Works, può generare un certificato autofirmato usando il *MakeCert.exe* dello strumento. Successivamente, usare il *Pvk2pfx.exe* dello strumento per combinare i file creati da *MakeCert.exe* in un file PFX che può essere passato al *MageUI.exe*.
+20. A questo punto, il cliente deve firmare il manifesto della distribuzione con il proprio certificato generato automaticamente. Se, ad esempio, il cliente lavora per una società denominata Adventure Works, può generare un certificato autofirmato usando lo strumento *MakeCert.exe* . Usare quindi lo strumento *Pvk2pfx.exe* per combinare i file creati da *MakeCert.exe* in un file PFX che può essere passato al *MageUI.exe*.
 
     ```cmd
     makecert -r -pe -n "CN=Adventure Works" -sv MyCert.pvk MyCert.cer
     pvk2pfx.exe -pvk MyCert.pvk -spc MyCert.cer -pfx MyCert.pfx
     ```
 
-21. Con il certificato generato, il cliente accede a questo punto il manifesto di distribuzione aprendo il manifesto di distribuzione in *MageUI.exe*e quindi salvarla. Quando viene visualizzata la finestra di dialogo firma, il cliente seleziona **Sign come file di certificato** opzione e sceglie il file PFX che ha salvato su disco.
+21. Con il certificato generato, il cliente ora firma il manifesto di distribuzione aprendo il manifesto di distribuzione in *MageUI.exe*e quindi salvarlo. Quando viene visualizzata la finestra di dialogo firma, il cliente seleziona l'opzione **per il file del certificato di firma** e sceglie il file PFX salvato su disco.
 
 22. Il cliente distribuisce l'applicazione agli utenti.
 

@@ -17,25 +17,25 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154111"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Quando [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Per altre informazioni, vedere [Visual C++ Tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md) (Attività Visual C++).  
+Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Quando [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Per ulteriori informazioni, vedere [attività Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività dispone anche dei parametri seguenti:  
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
 |`Condition`|Parametro `String` facoltativo.<br /><br /> Espressione `Boolean` usata dal motore di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] per determinare se l'attività verrà eseguita. Per altre informazioni sulle condizioni supportate da [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vedere [Condizioni](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [Procedura: Ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`ContinueOnError`|Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori dall'attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [Procedura: Ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Classe di base Task](../msbuild/task-base-class.md)  
  Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Utilities.Task>.  
   
@@ -45,7 +45,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)  
  Aggiunge diversi parametri alle attività che derivano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>.  
   
- [Attività AL (Assembly Linker)](../msbuild/al-assembly-linker-task.md)  
+ [Attività AL (assembly linker)](../msbuild/al-assembly-linker-task.md)  
  Crea un assembly con un manifesto da uno o più file che costituiscono moduli o file di risorse.  
   
  [Attività AspNetCompiler](../msbuild/aspnetcompiler-task.md)  
@@ -69,7 +69,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Attività ConvertToAbsolutePath](../msbuild/converttoabsolutepath-task.md)  
  Converte un percorso relativo, o un riferimento, in un percorso assoluto.  
   
- [Attività Copy](../msbuild/copy-task.md)  
+ [Copia attività](../msbuild/copy-task.md)  
  Copia i file in una nuova posizione.  
   
  [Attività CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)  
@@ -87,7 +87,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Attività Csc](../msbuild/csc-task.md)  
  Richiama il compilatore Visual C# per creare librerie eseguibili a collegamento dinamico o moduli di codice.  
   
- [Attività Delete](../msbuild/delete-task.md)  
+ [Elimina attività](../msbuild/delete-task.md)  
  Elimina i file specificati.  
   
  [Attività Error](../msbuild/error-task.md)  
@@ -105,7 +105,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Attività FindUnderPath](../msbuild/findunderpath-task.md)  
  Determina gli elementi di una raccolta specificata presenti nella cartella indicata e in tutte le relative sottocartelle.  
   
- [Attività FormatUrl task](../msbuild/formaturl-task.md)  
+ [Attività FormatUrl](../msbuild/formaturl-task.md)  
  Converte un URL in un formato URL corretto.  
   
  [Attività FormatVersion](../msbuild/formatversion-task.md)  
@@ -147,7 +147,7 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Attività Message](../msbuild/message-task.md)  
  Registra un messaggio durante una compilazione.  
   
- [Attività Move](../msbuild/move-task.md)  
+ [Sposta attività](../msbuild/move-task.md)  
  Sposta i file in una nuova posizione.  
   
  [Attività MSBuild](../msbuild/msbuild-task.md)  
@@ -219,13 +219,13 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
  [Attività XmlPeek](../msbuild/xmlpeek-task.md)  
  Restituisce valori come specificato dalla query XPath da un file XML.  
   
- [XmlPoke Task](../msbuild/xmlpoke-task.md)  
+ [XmlPoke (attività)](../msbuild/xmlpoke-task.md)  
  Imposta i valori come specificato da una query XPath in un file XML.  
   
  [Attività XslTransformation](../msbuild/xsltransformation-task.md)  
  Trasforma un input XML tramite *Extensible Stylesheet Language Transformation* (XSLT) o un XSLT compilato e gli output in un dispositivo o file di output.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
- [Scrittura di attività](../msbuild/task-writing.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
+ [Scrittura attività](../msbuild/task-writing.md)   
  [Attività](../msbuild/msbuild-tasks.md)

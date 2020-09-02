@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 986056b1f5202c2fb94d27a8792ed3b0fe308944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200138"
 ---
 # <a name="sccendbatch-function"></a>Funzione SccEndBatch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzione si conclude un batch di operazioni di controllo codice sorgente. Questi batch non possono essere annidati.  
+Questa funzione conclude un batch di operazioni del controllo del codice sorgente. Questi batch non possono essere annidati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,16 +34,16 @@ SCCRTN SccEndBatch(void);
  No.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|Batch di operazioni conclude correttamente.|  
+|SCC_OK|Il batch di operazioni è stato completato correttamente.|  
 |SCC_E_UNKNOWNERROR|Errore non specifico.|  
   
-## <a name="remarks"></a>Note  
- Batch di controllo di origine utilizzati per eseguire le stesse operazioni di controllo di origine in più progetti o più contesti. Batch sono utilizzabile per eliminare le finestre di dialogo ridondanti rispetto all'esperienza utente durante un'operazione batch. Il [SccBeginBatch](../extensibility/sccbeginbatch-function.md) e il `SccEndBatch` funzione vengono utilizzati come coppia per indicare l'inizio e alla fine di un'operazione. Non possono essere annidate.  
+## <a name="remarks"></a>Osservazioni  
+ I batch del controllo del codice sorgente vengono usati per eseguire le stesse operazioni di controllo del codice sorgente tra più progetti o più contesti. I batch possono essere usati per eliminare le finestre di dialogo ridondanti dall'esperienza utente durante un'operazione in batch. [SccBeginBatch](../extensibility/sccbeginbatch-function.md) e la `SccEndBatch` funzione vengono usati come coppia per indicare l'inizio e la fine di un'operazione. Non possono essere annidati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

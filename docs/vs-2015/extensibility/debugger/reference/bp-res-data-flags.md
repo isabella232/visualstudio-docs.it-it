@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68d1c0705ae7d27bf281f5d65e9385228cd36bc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153336"
 ---
-# <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
+# <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica se il punto di interruzione dei dati viene emulato o implementata nell'hardware.  
+Specifica se il punto di interruzione dei dati viene emulato o implementato nell'hardware.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,17 +39,17 @@ public enum enum_BP_RES_DATA_FLAGS { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  BP_RES_DATA_EMULATED  
  Specifica che il punto di interruzione dei dati viene emulato.  
   
-## <a name="remarks"></a>Note  
- Utilizzato per il `dwFlags` membro della [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struttura.  
+## <a name="remarks"></a>Osservazioni  
+ Utilizzato per il `dwFlags` membro della struttura [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aadb526e50351c8344c8b265dca3364637d1ff0c
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875566"
 ---
 # <a name="initializecorrelation-activity-designer"></a>ActivityDesigner InitializeCorrelation
@@ -45,7 +45,7 @@ Nella tabella seguente sono illustrate le <xref:System.ServiceModel.Activities.I
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|Falso|<xref:System.ServiceModel.Activities.CorrelationHandle> usato per associare le attività del flusso di lavoro nella correlazione.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|Falso|Dizionario dei dati di correlazione che mette in correlazione i messaggi all'istanza del flusso di lavoro.<br /><br /> Utilizzare la finestra di dialogo **Inizializza correlazione** per configurare <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Per altre informazioni sulla finestra di dialogo Usa questa finestra di dialogo, vedere l'articolo sulla finestra di [dialogo Editor raccolta di tipi](../workflow-designer/type-collection-editor-dialog-box.md) .|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [Ricevere](../workflow-designer/receive-activity-designer.md)

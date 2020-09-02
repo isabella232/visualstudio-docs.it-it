@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd00a2b669b806b09a6ae221b2ba2e03f8d45ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200081"
 ---
 # <a name="sccgetuseroption-function"></a>Funzione SccGetUserOption
@@ -36,30 +36,30 @@ SCCRTN SccGetUserOption(
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto del plug-in controllo di origine.  
+ in Puntatore al contesto del plug-in del controllo del codice sorgente.  
   
  nOption  
- [in] Opzione da recuperare (per le opzioni possibili, vedere la sezione Osservazioni).  
+ in Opzione da recuperare (vedere le note per le possibili opzioni).  
   
  lpVal  
- [out] Valore associato all'opzione.  
+ out Valore associato all'opzione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
-|Value|DESCRIZIONE|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|Opzione è stato recuperato correttamente.|  
-|SCC_E_OPNOTSUPPORTED|Opzione non è supportata.|  
+|SCC_OK|L'opzione è stata recuperata correttamente.|  
+|SCC_E_OPNOTSUPPORTED|L'opzione non è supportata.|  
 |SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato.|  
   
-## <a name="remarks"></a>Note  
- Le opzioni seguenti sono supportate da questo comando:  
+## <a name="remarks"></a>Osservazioni  
+ Questo comando supporta le opzioni seguenti:  
   
-|Opzione User|Descrizione|  
+|Opzione utente|Descrizione|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se l'utente desidera estrarre la versione locale dei file. `lpVal` viene assegnato `SCC_USEROPT_COLV_YES` (utente desidera estrarre i file locali) o `SCC_USEROPT_COLV_NO`.|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se l'utente desidera estrarre la versione locale dei file. `lpVal` viene assegnato `SCC_USEROPT_COLV_YES` (l'utente desidera estrarre i file locali) o `SCC_USEROPT_COLV_NO` .|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
- [Codici di errore](../extensibility/error-codes.md)
+ [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)   
+ [Codici errore](../extensibility/error-codes.md)

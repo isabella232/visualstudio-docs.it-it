@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00368230bfadf322f0c98aceb18b575f1688a070
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154228"
 ---
-# <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
+# <a name="idiasymbolget_memoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera il tipo di spazio di memoria.  
@@ -32,10 +32,10 @@ HRESULT get_memorySpaceKind(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Un puntatore a un `DWORD` che contiene il tipo di spazio di memoria.  
+ out Puntatore a un oggetto `DWORD` che include il tipo di spazio di memoria.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

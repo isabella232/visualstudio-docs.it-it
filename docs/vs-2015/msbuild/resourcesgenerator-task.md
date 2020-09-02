@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fa8b438727160bb5a752643f7ef9791ca5e09245
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682144"
 ---
 # <a name="resourcesgenerator-task"></a>Attività ResourcesGenerator
@@ -32,7 +32,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpora un
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`OutputPath`|Parametro **String** obbligatorio.<br /><br /> Specifica il percorso della directory di output. Se il percorso non è assoluto, verrà trattato come percorso relativo alla directory di progetto radice.|  
 |`OutputResourcesFile`|Parametro di output **ITaskItem[]** obbligatorio.<br /><br /> Specifica il percorso e il nome del file con estensione resources generato. Se il percorso non è assoluto, verrà trattato come percorso relativo alla directory di progetto radice.|  
@@ -56,8 +56,8 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpora un
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)   
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimenti a MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Riferimento attività](../msbuild/wpf-msbuild-task-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)   
  [Compilazione di un'applicazione WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

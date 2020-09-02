@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188689"
 ---
 # <a name="com-and-activex-debugging"></a>Debug di COM e ActiveX
@@ -39,7 +39,7 @@ In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e d
  [Strumenti di debug com](../debugger/com-debugging-tools.md) Elenca i visualizzatori e le applicazioni di esempio che possono essere utili per eseguire il debug dell'applicazione COM.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Prima di tutto esaminare il debugger](../debugger/debugger-feature-tour.md) Vengono forniti collegamenti alle sezioni più grandi della documentazione di debug. Le informazioni includono: novità del debugger, impostazioni e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice gestito C++ , debug di progetti, debug di com e ActiveX, debug di dll, debug di SQL e utente riferimenti dell'interfaccia.
+ [Prima di tutto esaminare il debugger](../debugger/debugger-feature-tour.md) Vengono forniti collegamenti alle sezioni più grandi della documentazione di debug. Le informazioni includono: novità del debugger, impostazioni e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice gestito, debug di progetti C++, debug di COM e ActiveX, debug di dll, debug di SQL e riferimenti all'interfaccia utente.
 
 ## <a name="see-also"></a>Vedere anche
 

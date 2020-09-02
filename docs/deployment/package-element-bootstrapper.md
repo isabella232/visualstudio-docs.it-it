@@ -1,5 +1,5 @@
 ---
-title: '&lt;Pacchetto&gt; elemento (programma di avvio automatico) | Microsoft Docs'
+title: '&lt;Elemento del pacchetto &gt; (programma di avvio automatico) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745755"
 ---
-# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacchetto&gt; elemento (programma di avvio automatico)
-Il `Package` elemento è l'elemento XML di primo livello all'interno di un file del pacchetto.
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Elemento del pacchetto &gt; (programma di avvio automatico)
+L' `Package` elemento è l'elemento XML di primo livello all'interno di un file di pacchetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -141,16 +141,16 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- Il `Package` elemento è obbligatorio. Include gli attributi seguenti.
+ L' `Package` elemento è obbligatorio. Ha gli attributi seguenti.
 
 | Attributo | Descrizione |
 |--------------------| - |
-| `Culture` | Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina la lingua da utilizzare. Questo attributo è una chiave nel `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione. |
-| `Name` | Obbligatorio. Il nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questo attributo è una chiave nel `Strings` elemento che deve contenere un `String` elemento con la `Name` e `Culture` proprietà impostate in modo che corrisponda il `Name` e `Culture` le proprietà di `Package`. |
-| `LicenseAgreement` | Facoltativo. Specifica il nome del file del pacchetto di distribuzione che contiene il contratto di licenza dell'utente finale (EULA).  Questo file può essere una stringa di testo normale (*txt*) in formato testo. ( *.rtf*) |
+| `Culture` | Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina il linguaggio da utilizzare. Questo attributo è una chiave dell' `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione. |
+| `Name` | Obbligatorio. Nome del pacchetto visualizzato allo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Questo attributo è una chiave nell' `Strings` elemento, che deve contenere un `String` elemento con le `Name` proprietà e `Culture` impostate in modo da corrispondere alle `Name` `Culture` proprietà e di `Package` . |
+| `LicenseAgreement` | facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto di licenza con l'utente finale (EULA).  Questo file può essere in formato testo normale (con*estensione txt*) o RTF. (*RTF*) |
 
 ## <a name="example"></a>Esempio
- Esempio di codice seguente illustra un file del pacchetto completo per la ridistribuzione di .NET Framework 2.0.
+ Nell'esempio di codice riportato di seguito viene illustrato un file di pacchetto completo per ridistribuire il .NET Framework 2,0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -188,4 +188,4 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
+- [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)

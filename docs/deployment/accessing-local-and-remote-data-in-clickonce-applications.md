@@ -1,5 +1,5 @@
 ---
-title: L'accesso ai dati locali e remoti in applicazioni ClickOnce | Microsoft Docs
+title: Accesso a dati locali e remoti in applicazioni ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66746076"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Accedere a dati locali e remoti in applicazioni ClickOnce
@@ -45,8 +45,8 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>Contrassegnare i file di dati in una distribuzione ClickOnce
  Per inserire un file esistente nella directory dei dati, è necessario contrassegnarlo come file di dati nel file manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Per altre informazioni, vedere [Procedura: Includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
-#### <a name="read-from-and-write-to-the-data-directory"></a>Leggere e scrivere nella directory dati
- Per la lettura dalla directory dei dati, l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deve richiedere le autorizzazioni di lettura. Analogamente, per la scrittura nella directory sono necessarie le autorizzazioni di scrittura. L'applicazione ottiene automaticamente queste autorizzazioni se è configurata per l'esecuzione con attendibilità totale. Per altre informazioni sull'elevazione delle autorizzazioni per l'applicazione utilizzando l'elevazione delle autorizzazioni o distribuzione di applicazioni attendibili, vedere [applicazioni ClickOnce Secure](../deployment/securing-clickonce-applications.md).
+#### <a name="read-from-and-write-to-the-data-directory"></a>Lettura e scrittura nella directory dei dati
+ Per la lettura dalla directory dei dati, l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deve richiedere le autorizzazioni di lettura. Analogamente, per la scrittura nella directory sono necessarie le autorizzazioni di scrittura. L'applicazione ottiene automaticamente queste autorizzazioni se è configurata per l'esecuzione con attendibilità totale. Per ulteriori informazioni sull'elevazione delle autorizzazioni per l'applicazione mediante l'elevazione delle autorizzazioni o la distribuzione di applicazioni attendibili, vedere [proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
 > Se l'organizzazione non usa la distribuzione di applicazioni attendibili e ha disattivato l'elevazione delle autorizzazioni, l'asserzione delle autorizzazioni non riesce.
@@ -56,11 +56,11 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
 
- Per altre informazioni su come contrassegnare i file nella distribuzione come file di dati, vedere [come: Includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Per altre informazioni su come contrassegnare i file nella distribuzione come file di dati, vedere [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
  È anche possibile ottenere il percorso della directory dei dati usando le variabili rilevanti nella classe <xref:System.Windows.Forms.Application> , ad esempio <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- La manipolazione di altri tipi di file potrebbe richiedere autorizzazioni aggiuntive. Ad esempio, se si desidera utilizzare un database di Access (*mdb*) file, l'applicazione deve asserire l'attendibilità totale per poter utilizzare il relativo \<xref:System.Data > classi.
+ La manipolazione di altri tipi di file potrebbe richiedere autorizzazioni aggiuntive. Se ad esempio si desidera utilizzare un file di database di Access (con*estensione mdb*), l'applicazione deve asserire l'attendibilità totale per poter utilizzare le \<xref:System.Data> classi pertinenti.
 
 #### <a name="data-directory-and-application-versions"></a>Directory dei dati e versioni dell'applicazione
  Ogni versione dell'applicazione ha la propria directory dei dati, isolata rispetto alle altre versioni. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea questa directory indipendentemente dai file di dati inclusi nella distribuzione in modo che l'applicazione disponga di un percorso in cui creare i nuovi file di dati in fase di esecuzione. Quando viene installata una nuova versione di un'applicazione, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] copia tutti i file di dati esistenti dalla directory dei dati della versione precedente alla directory dei dati della nuova versione, indipendentemente dal fatto che i file fossero inclusi nella distribuzione originale o siano stati creati dall'applicazione.
@@ -72,7 +72,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 ### <a name="isolated-storage"></a>Spazio di memorizzazione isolato
  Lo spazio di memorizzazione isolato fornisce un'API per creare e accedere ai file usando una semplice API. Il percorso effettivo dei file archiviati è nascosto sia allo sviluppatore che all'utente.
 
- Spazio di memorizzazione isolato funziona in tutte le versioni di .NET Framework. Lo spazio di memorizzazione isolato funziona anche in applicazioni parzialmente attendibili senza necessità di autorizzazioni aggiuntive. Usare lo spazio di memorizzazione isolato se l'applicazione deve essere eseguita con attendibilità parziale, ma deve gestire dati specifici dell'applicazione.
+ Lo spazio di memorizzazione isolato funziona in tutte le versioni del .NET Framework. Lo spazio di memorizzazione isolato funziona anche in applicazioni parzialmente attendibili senza necessità di autorizzazioni aggiuntive. Usare lo spazio di memorizzazione isolato se l'applicazione deve essere eseguita con attendibilità parziale, ma deve gestire dati specifici dell'applicazione.
 
  Per altre informazioni, vedere [Spazio di memorizzazione isolato](/dotnet/standard/io/isolated-storage).
 
@@ -95,10 +95,10 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 |Installazione da condivisione file|Non può accedere a tutti i server Web|
 |Installazione da CD-ROM|Può accedere a qualsiasi server Web|
 
- Se l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non riesce ad accedere a un server Web a causa di restrizioni di sicurezza, l'applicazione deve asserire <xref:System.Net.WebPermission> per il sito Web specificato. Per altre informazioni su come aumentare le autorizzazioni di sicurezza per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione, vedere [delle applicazioni ClickOnce Secure](../deployment/securing-clickonce-applications.md).
+ Se l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non riesce ad accedere a un server Web a causa di restrizioni di sicurezza, l'applicazione deve asserire <xref:System.Net.WebPermission> per il sito Web specificato. Per ulteriori informazioni sull'aumento delle autorizzazioni di sicurezza per un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, vedere [Secure ClickOnce Applications](../deployment/securing-clickonce-applications.md).
 
-### <a name="access-data-through-an-xml-web-service"></a>Accesso ai dati tramite un servizio Web XML
- Se si espongono i dati sotto forma di servizio Web XML, è possibile accedervi usando un proxy del servizio Web XML. Il proxy è una classe .NET Framework creano usando il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le operazioni del servizio Web XML, ad esempio il recupero dei clienti, l'emissione di ordini e così via, vengono esposte come metodi nel proxy. I servizi Web risultano più semplici da usare rispetto al testo non elaborato o ai file XML.
+### <a name="access-data-through-an-xml-web-service"></a>Accedere ai dati tramite un servizio Web XML
+ Se si espongono i dati sotto forma di servizio Web XML, è possibile accedervi usando un proxy del servizio Web XML. Il proxy è una classe .NET Framework creata usando uno dei due [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Le operazioni del servizio Web XML, ad esempio il recupero dei clienti, l'emissione di ordini e così via, vengono esposte come metodi nel proxy. I servizi Web risultano più semplici da usare rispetto al testo non elaborato o ai file XML.
 
  Se il servizio Web XML funziona tramite HTTP, sarà associato alle stesse restrizioni di sicurezza delle classi <xref:System.Net.WebClient> e <xref:System.Net.HttpWebRequest> .
 
@@ -109,4 +109,4 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+- [Procedura: includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

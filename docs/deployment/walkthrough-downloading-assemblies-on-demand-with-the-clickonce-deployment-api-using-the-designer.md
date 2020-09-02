@@ -1,5 +1,5 @@
 ---
-title: Scaricare gli assembly su richiesta con ClickOnce tramite la finestra di progettazione
+title: Scaricare assembly su richiesta con ClickOnce usando la finestra di progettazione
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,26 +18,26 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a8c5def5c4ebdf8f34efef50dca8dc4656bbd7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263430"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: Scaricare gli assembly su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: scaricare assembly su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione
 Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vengono scaricati alla prima esecuzione dell'applicazione. Alcune parti dell'applicazione possono tuttavia essere usate da un set limitato di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime.
 
 > [!NOTE]
 > Per usare questa procedura, è necessario eseguire l'applicazione con attendibilità totale.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ## <a name="create-the-projects"></a>Creare i progetti
 
 ### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Per creare un progetto che usa un assembly su richiesta con Visual Studio
 
-1. Creare un nuovo progetto Windows Form in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Aggiungi** dal menu **File**e quindi fare clic su **Nuovo progetto**. Scegliere un progetto **Libreria di classi** nella finestra di dialogo e assegnare il nome `ClickOnceLibrary`a tale progetto.
+1. Creare un nuovo progetto Windows Form in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Aggiungi** dal menu **File** e quindi fare clic su **Nuovo progetto**. Scegliere un progetto **Libreria di classi** nella finestra di dialogo e assegnare il nome `ClickOnceLibrary`a tale progetto.
 
    > [!NOTE]
    > In Visual Basic è consigliabile modificare le proprietà del progetto per cambiare lo spazio dei nomi radice per questo progetto in `Microsoft.Samples.ClickOnceOnDemand` o in uno spazio dei nomi selezionato. Per semplicità, i due progetti in questa procedura dettagliata si trovano nello stesso spazio dei nomi.
@@ -79,11 +79,11 @@ Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!IN
 
 4. Espandere la casella di riepilogo a discesa **Gruppo** e selezionare **Nuovo**. Immettere il nome `ClickOnceLibrary` come nome del nuovo gruppo.
 
-5. Continuare a pubblicare l'applicazione come descritto in [come: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Continuare la pubblicazione dell'applicazione come descritto in [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Per contrassegnare gli assembly come facoltativi nell'applicazione ClickOnce mediante lo Strumento per la generazione e la modifica di manifesti - Client grafico (MageUI.exe)
 
-1. Creare le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti come descritto in [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Creare i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti come descritto in [procedura dettagliata: distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 2. Prima di chiudere MageUI.exe, selezionare la scheda contenente il manifesto dell'applicazione di distribuzione e all'interno della scheda selezionare la scheda **File** .
 

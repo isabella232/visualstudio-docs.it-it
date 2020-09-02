@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b23073c41f5da7d1563a6be46e0d114334527b35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153515"
 ---
-# <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
+# <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descrive la posizione di un punto di interruzione in un indirizzo nel codice.  
+Descrive la posizione di un punto di interruzione in corrispondenza di un indirizzo nel codice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,26 +35,26 @@ typedef struct _BP_LOCATION_CODE_ADDRESS { 
 } BP_LOCATION_CODE_ADDRESS;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  `bstrContext`  
- Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.  
+ Contesto del punto di interruzione, in genere un metodo o un nome di funzione come visualizzato in uno stack di chiamate.  
   
  `bstrModuleUrl`  
- L'URL del modulo che contiene il punto di interruzione.  
+ URL del modulo che contiene il punto di interruzione.  
   
  `bstrFunction`  
- Il nome della funzione che contiene il punto di interruzione.  
+ Nome della funzione che contiene il punto di interruzione.  
   
  `bstrAddress`  
- L'indirizzo del punto di interruzione, viene analizzato da un analizzatore di espressioni per associarlo a un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto.  
+ Indirizzo del punto di interruzione, analizzato da un analizzatore di espressioni per associarlo a un oggetto [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
-## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

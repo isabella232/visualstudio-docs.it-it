@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3be3aa5426c2d1283b8b4cded51cc9c2772642ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682093"
 ---
 # <a name="sgen-task"></a>Attività SGen
@@ -34,7 +34,7 @@ Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specif
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `SGen` .  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`BuildAssemblyName`|Parametro `String` obbligatorio.<br /><br /> Assembly per cui generare il codice di serializzazione.|  
 |`BuildAssemblyPath`|Parametro `String` obbligatorio.<br /><br /> Percorso dell'assembly per cui generare il codice di serializzazione.|  
@@ -53,9 +53,9 @@ Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specif
 |`UseProxyTypes`|Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, l'attività SGen genera il codice di serializzazione solo per i tipi proxy del servizio Web XML.|  
   
 ## <a name="remarks"></a>Osservazioni  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/tooltaskextension-base-class.md) (Classe di base TaskExtension).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/tooltaskextension-base-class.md) (Classe di base TaskExtension).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)   
  [Attività](../msbuild/msbuild-tasks.md)   
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682367"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: creazione di un nuovo file di progetto MSBuild
@@ -264,7 +264,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
      Questo comando crea la cartella \Bin\, quindi richiama il compilatore di Visual C# per creare l'applicazione MSBuildSample e la inserisce nella cartella \Bin\.  
   
-2. Per verificare che la cartella \Bin\ sia stata creata e che contenga l'applicazione MSBuildSample, digitare  **dir Bin**.  
+2. Per verificare che la cartella \Bin\ sia stata creata e che contenga l'applicazione MSBuildSample, digitare ** dir Bin**.  
   
 3. Testare l'applicazione digitando **Bin\MSBuildSample**.  
   
@@ -401,7 +401,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descrizione  
  L'esempio seguente illustra un file di progetto che compila un'applicazione [!INCLUDE[csprcs](../includes/csprcs-md.md)] e registra un messaggio contenente il nome del file di output.  
   
 ### <a name="code"></a>Codice  
@@ -441,7 +441,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descrizione  
  L'esempio seguente illustra un file di progetto che compila un'applicazione [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e registra un messaggio contenente il nome del file di output.  
   
 ### <a name="code"></a>Codice  
@@ -477,7 +477,7 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 </Project>  
 ```  
   
-## <a name="whats-next"></a>Argomenti successivi  
+## <a name="whats-next"></a>in ordine di priorità  
  Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per imparare a usare Visual Studio per creare, modificare, compilare e verificare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Vedere anche  

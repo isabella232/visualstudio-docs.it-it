@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595631"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
@@ -48,19 +48,19 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sull'icona ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione della classe](media/class-preview-cs.png)
 
 3. Selezionare una delle opzioni dal menu a discesa:
 
    - Genera l'elemento classe '*NomeTipo*' nel nuovo file&mdash;Crea una classe denominata *NomeTipo* in un file denominato *NomeTipo*.cs/.vb
-   - Genera classe '&mdash;*NomeTipo*' Crea una classe denominata *TypeName* nel file corrente.
-   - Genera classe annidata&mdash;'*NomeTipo*' Crea una classe denominata *TypeName* annidata all'interno della classe corrente.
+   - Genera la classe '*typeName*' &mdash; Crea una classe denominata *typeName* nel file corrente.
+   - Genera la classe annidata '*typeName*' &mdash; Crea una classe denominata *typeName* annidata all'interno della classe corrente.
    - Genera nuovo tipo&mdash;Crea una nuova classe o un nuovo struct con tutte le proprietà specificate.
 
    > [!TIP]
@@ -72,10 +72,10 @@ Questa generazione di codice si applica a:
 
    Selezione | Descrizione
    --- | ---
-   Accesso | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
+   Access | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
    Tipo | Può essere impostato come *classe* o *struct*.
-   Nome | Questo non può essere modificato e sarà il nome già digitato.
-   Project | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
+   Name | Questo non può essere modificato e sarà il nome già digitato.
+   Progetto | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
    File Name | È possibile creare un nuovo file oppure è possibile aggiungere il tipo a un file esistente.
 
 Vengono creati la classe o lo struct. Per C# viene creato anche un costruttore.
@@ -91,4 +91,4 @@ Vengono creati la classe o lo struct. Per C# viene creato anche un costruttore.
 ## <a name="see-also"></a>Vedere anche
 
 - [Generazione di codice](../code-generation-in-visual-studio.md)
-- [Anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)

@@ -26,15 +26,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595618"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
-La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). È possibile accedere a questa finestra di dialogo facendo clic su**Opzioni** **strumenti** > e quindi selezionando Tipi di**carattere e colori** **dell'ambiente** > .
+La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo è possibile fare clic su **strumenti**  >  **Opzioni**e quindi selezionare **Environment**  >  **tipi di carattere e colori**dell'ambiente.
 
 Le modifiche apportate alla combinazione colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
@@ -63,7 +63,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
 
 - **Tipo di carattere ambiente**
 
-     Modifica lo stile e la dimensione del carattere per tutti gli elementi dell'interfaccia utente dell'IDE che non dispongono già di un'opzione separata in **Mostra impostazioni per**.
+     Modifica lo stile e la dimensione del carattere per tutti gli elementi dell'interfaccia utente IDE che non dispongono già di un'opzione separata in **Mostra impostazioni per**.
 
      ::: moniker range="vs-2017"
 
@@ -76,7 +76,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.
 
     > [!NOTE]
-    > Le modifiche apportate al testo degli elementi **[Tutte le** finestre degli strumenti di testo] non hanno effetto durante la sessione in cui vengono apportate. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
+    > Le modifiche apportate al testo degli elementi **[tutte le finestre degli strumenti di testo]** non diventano effettive durante la sessione in cui vengono effettuate. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.
 
 **Valori predefiniti**
 
@@ -152,9 +152,9 @@ Alcuni degli elementi visualizzati includono:
 |**Parola chiave**|Parole chiave riservate per il linguaggio specificato. Ad esempio: class e namespace.|
 |**Indirizzo di memoria**|Colore del testo usato per visualizzare la colonna dell'indirizzo all'interno della finestra **Memoria**.|
 |**Memoria modificata**|Colore del testo usato per visualizzare i dati modificati all'interno della finestra **Memoria**.|
-|**Dati memoria**|Colore del testo utilizzato per visualizzare i dati all'interno della finestra **Memoria.**|
+|**Dati memoria**|Colore del testo usato per visualizzare i dati all'interno della finestra **memoria** .|
 |**Memoria illeggibile**|Colore del testo usato per visualizzare le aree della memoria illeggibili all'interno della finestra **Memoria**.|
-|**Numero**|Numero nel codice che rappresenta un valore numerico effettivo.|
+|**Number**|Numero nel codice che rappresenta un valore numerico effettivo.|
 |**Operatore**|Operatori come +, - e !=.|
 |**Altro errore**|Altri tipi di errore non coperti da altre sottolineature a zigzag per gli errori. Attualmente sono incluse le modifiche non applicabili in Modifica e continuazione.|
 |**Parola chiave preprocessore**|Parole chiave usate dal preprocessore come #include.|
@@ -191,15 +191,15 @@ Alcuni degli elementi visualizzati includono:
 |**Tipi utente (interfacce)**|Colore del tipo per le interfacce.|
 |**Tipi utente (tipi di valore)**|Colore del tipo per i tipi valore come struct in C#.|
 |**Indicatore di sola lettura di Visual Basic**|Indicatore specifico di Visual Basic usato per designare EnC, ad esempio aree di eccezione, una definizione di metodo e frame di chiamata non foglia.|
-|**Avviso**|Avvisi del compilatore.|
+|**Warning**|Avvisi del compilatore.|
 |**Percorso righe di avviso**|Usato per le righe di avviso di analisi statica.|
 |**Attributo XML**|Nomi di attributi.|
 |**Virgolette per l'attributo XML**|Virgolette per gli attributi XML.|
 |**Valore dell'attributo XML**|Contenuto degli attributi XML.|
-|**Sezione CData XML**|Contenuto di \<![CDATA[...]]>.|
+|**Sezione CData XML**|Contenuto di \<![CDATA[...]]> .|
 |**Commento XML**|Contenuto di \<!-- -->.|
-|**Delimitatore XML**|Delimitatori di sintassi XML, tra cui <, <?, <!, \<!--, -->, ?\>, \<![, ]]> e [, ].|
-|**Attributo documento XML**|Valore di un attributo di documentazione XML, come \<param name="I"> dove la "I" è colorata.|
+|**Delimitatore XML**|Delimitatori di sintassi XML, tra cui <, <?, <!, \<!--, --> ,? \> , \<![, ]]> e [,].|
+|**Attributo documento XML**|Valore di un attributo di documentazione XML, ad esempio \<param name="I"> dove viene colorato il "i".|
 |**Commento documento XML**|Commenti racchiusi nei commenti della documentazione XML.|
 |**Tag documento XML**|Tag nei commenti della documentazione XML, ad esempio<br /><br /> /// \<summary>.|
 |**Parola chiave XML**|Parole chiave DTD quali CDATA, IDREF e NDATA.|
@@ -212,11 +212,11 @@ Alcuni degli elementi visualizzati includono:
 
 Visualizza l'elenco dei colori disponibili che è possibile scegliere per il primo piano dell'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di primo piano modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
 
-**Automatico**
+**Automatic** (Automatica)
 
 Gli elementi possono ereditare il colore di primo piano da altri elementi visualizzati, ad esempio **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
 
-**Predefinito**
+**Default**
 
 Il colore visualizzato per l'elemento la prima volta che si apre Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
 
@@ -231,11 +231,11 @@ Visualizza la finestra di dialogo Colore che consente di impostare un colore per
 
 Visualizza una tavolozza di colori in cui è possibile scegliere un colore di sfondo per l'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di sfondo modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.
 
-**Automatico**
+**Automatic** (Automatica)
 
 Gli elementi possono ereditare il colore di sfondo da altri elementi visualizzati, ad esempio **Testo normale**. Con questa opzione, quando si modifica il colore di un elemento visualizzato ereditato, cambia automaticamente anche il colore degli elementi visualizzati correlati. Ad esempio, se si seleziona il valore **Automatico** per **Errore del compilatore** e in seguito si modifica il colore di **Testo normale** impostando il rosso, il colore rosso viene ereditato automaticamente anche da **Errore del compilatore**.
 
-**Predefinito**
+**Default**
 
 Il colore visualizzato per l'elemento la prima volta che si apre Visual Studio. È possibile fare clic sul pulsante **Valori predefiniti** per reimpostare questo colore.
 

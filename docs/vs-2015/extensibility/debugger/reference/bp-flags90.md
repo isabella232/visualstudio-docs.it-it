@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f7192eb7b2fa6d8bc886c0e601788ecba8eebcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153502"
 ---
-# <a name="bpflags90"></a>BP_FLAGS90
+# <a name="bp_flags90"></a>BP_FLAGS90
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Enumera i valori validi per i flag facoltativi. Il flag facoltativo consente di specificare informazioni aggiuntive quando si imposta un punto di interruzione. Questa enumerazione estende la [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumerazione.  
+Enumera i valori validi per i flag facoltativi. I flag facoltativi possono essere utilizzati per specificare informazioni aggiuntive quando si imposta un punto di interruzione. Questa enumerazione estende l'enumerazione [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -53,21 +53,21 @@ public enum enum_BP_FLAGS90
   
 #### <a name="parameters"></a>Parametri  
  BP90_FLAG_NONE  
- Non specifica alcun flag per il punto di interruzione.  
+ Non specifica alcun flag del punto di interruzione.  
   
  BP90_FLAG_MAP_DOCPOSITION  
- Specifica che il motore di debug (DE) deve eseguire il mapping del punto di interruzione usando la posizione del documento. Ciò si applica solo ai punti di interruzione impostati nei file di origine orientata ai servizi script, ad esempio le pagine ASP (Active Server).  
+ Specifica che il motore di debug (DE) deve eseguire il mapping del punto di interruzione utilizzando la posizione del documento. Questa operazione è applicabile solo ai punti di interruzione impostati nei file di origine orientati agli script, ad esempio pagine ASP (Active Server).  
   
  BP90_FLAG_DONT_STOP  
- Specifica che il punto di interruzione deve essere elaborato dal motore di debug, ma che il motore di debug in definitiva non deve arrestare vale a dire, un' [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) oggetto dell'evento non deve essere inviato. Questo flag è progettato per essere utilizzati principalmente con i punti di traccia.  
+ Specifica che il punto di interruzione deve essere elaborato dal motore di debug, ma il motore di debug in definitiva non dovrebbe arrestarsi. ovvero, un oggetto evento [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) non deve essere inviato. Questo flag è progettato per essere utilizzato principalmente con i punti di traccia.  
   
  BP90_FLAG_TRACEPOINT_CONTINUE  
- Utilizzato dal motore di debug nativo per determinare se lo stato di avanzamento nell'esecuzione deve essere cancellato. Si differenzia dal BP90_FLAG_DONT_STOP perché BP90_FLAG_DONT_STOP non è impostato se il punto di traccia viene eseguita una macro.  
+ Utilizzato dal motore di debug nativo per determinare se lo stato di avanzamento deve essere cancellato. È diverso da BP90_FLAG_DONT_STOP perché BP90_FLAG_DONT_STOP non è impostato se il punto di traccia esegue una macro.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Msdbg90.h  
+ Intestazione: Msdbg90. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

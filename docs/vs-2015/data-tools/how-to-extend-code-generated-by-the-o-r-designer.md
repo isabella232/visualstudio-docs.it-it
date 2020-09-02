@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1d60090ca16907e16bb58970d793124c5bb2dec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665956"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Procedura: estendere il codice generato da O/R Designer
@@ -27,9 +27,9 @@ Il codice generato da [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-s
 
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Per creare una classe parziale e aggiungere codice a una classe di entità
 
-1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) nell'[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic sul file **. dbml** in **Esplora soluzioni** /**Esplora database**.)
+1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Fare doppio clic sul file **. dbml** in **Esplora soluzioni** / **Esplora database**.)
 
-2. Nella [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] fare clic con il pulsante destro del mouse sulla classe per la quale si desidera aggiungere la convalida, quindi scegliere **Visualizza codice**.
+2. In fare [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] clic con il pulsante destro del mouse sulla classe per la quale si desidera aggiungere la convalida, quindi scegliere **Visualizza codice**.
 
      Viene aperto l'editor del codice con una classe parziale per la classe di entità selezionata.
 
@@ -39,9 +39,9 @@ Il codice generato da [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-s
 
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Per creare una classe parziale e aggiungere codice a un oggetto DataContext
 
-1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) nell'[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic sul file **. dbml** in **Esplora soluzioni** /**Esplora database**.)
+1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Fare doppio clic sul file **. dbml** in **Esplora soluzioni** / **Esplora database**.)
 
-2. Nella [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] fare clic con il pulsante destro del mouse su un'area vuota della finestra di progettazione, quindi scegliere **Visualizza codice**.
+2. In fare [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] clic con il pulsante destro del mouse su un'area vuota della finestra di progettazione, quindi scegliere **Visualizza codice**.
 
      Viene aperto l'editor del codice con una classe parziale per l'oggetto DataContext.
 

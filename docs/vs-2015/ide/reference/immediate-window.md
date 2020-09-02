@@ -16,13 +16,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3177c92713f6fdeb9b9b8a47a0da38608714174d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651297"
 ---
-# <a name="immediate-window"></a>Controllo immediato (finestra)
+# <a name="immediate-window"></a>Finestra di controllo immediato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le espressioni, eseguire istruzioni, i valori delle variabili di stampa e così via. Consente di immettere le espressioni che devono essere valutate ed eseguite dal linguaggio di sviluppo durante il debug. Per visualizzare il **immediato** finestra, aprire un progetto per la modifica, quindi scegliere **Windows** dal **Debug** dal menu **immediato**, oppure premere CTRL + ALT + I.
@@ -70,7 +70,7 @@ Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le e
 
 2. Scegliere **Finestre** dal menu **Debug** e quindi fare clic su **Controllo immediato**.
 
-3. Tipo `?MyFunction(2)` nel **immediato** finestra e premere INVIO.
+3. Digitare `?MyFunction(2)` nella finestra di **controllo immediato** e premere INVIO.
 
     Il **immediato** finestra eseguirà `MyFunction` e visualizzare `4`.
 
@@ -123,4 +123,4 @@ Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le e
 2. Fare doppio clic sull'area di testo della finestra **Output** e selezionare o deselezionare **Messaggi di eccezione**.
 
 ## <a name="see-also"></a>Vedere anche
- [Esplorazione del codice con il debug della](../../debugger/navigating-through-code-with-the-debugger.md) [finestra di comando](../../ide/reference/command-window.md) del debugger in [concetti di base del debugger](../../debugger/debugger-basics.md) [di Visual Studio](../../debugger/debugging-in-visual-studio.md) [procedura dettagliata: debug in fase di progettazione alias di](../../debugger/walkthrough-debugging-at-design-time.md) [comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [con normali Espressioni in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
+ [Esplorazione del codice con il debug della](../../debugger/navigating-through-code-with-the-debugger.md) [finestra di comando](../../ide/reference/command-window.md) del debugger in [concetti di base del debugger](../../debugger/debugger-basics.md) [di Visual Studio](../../debugger/debugging-in-visual-studio.md) [procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md) [alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [con espressioni regolari in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

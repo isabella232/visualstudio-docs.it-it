@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51070e06f684c2e873ded76ec8797ed7587745ff
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348320"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usare le finestre di memoria nel debugger di Visual Studio (C#, C++, Visual Basic, F #)
@@ -117,5 +117,5 @@ Nelle app in codice nativo, è possibile usare i nomi di registro come espressio
 
    Quando si usa un comando di debug, ad esempio **Step**, l'indirizzo di memoria visualizzato nel campo **Address** e nella parte superiore della finestra **Memory** viene modificato automaticamente quando cambia il puntatore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Visualizzare i dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Modifica la lingua di pubblicazione di un'applicazione ClickOnce | Microsoft Docs"
+title: "Procedura: modifica della lingua di pubblicazione per un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,21 +18,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26e4074b731dad44cd9eed40f1c1cc755d786562
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683805"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedura: Cambiare la lingua di pubblicazione di un'applicazione ClickOnce
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedura: cambiare la lingua di pubblicazione di un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione, l'interfaccia utente visualizzata durante l'installazione il valore predefinito è la lingua del computer di sviluppo. Se si pubblica un'applicazione localizzata, è necessario specificare una lingua e impostazioni cultura in base alla versione localizzata. Ciò è determinato dal `Publish language` proprietà per il progetto.  
+Quando si pubblica un' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione, l'interfaccia utente visualizzata durante l'installazione viene impostata in modo predefinito sulla lingua e le impostazioni cultura del computer di sviluppo. Se si pubblica un'applicazione localizzata, sarà necessario specificare una lingua e le impostazioni cultura corrispondenti alla versione localizzata. Questa operazione è determinata dalla `Publish language` proprietà per il progetto.  
   
- Il `Publish language` proprietà può essere impostata **Publish Options** finestra di dialogo, accessibile dal **pubblica** pagina della **Progettazione progetti**.  
+ La `Publish language` proprietà può essere impostata nella finestra di dialogo **Opzioni di pubblicazione** accessibile dalla pagina **pubblica** di **Progettazione progetti**.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-publish-language"></a>Per modificare la lingua di pubblicazione  
   
@@ -40,11 +40,11 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] app
   
 2. Fare clic sulla scheda **Pubblica**.  
   
-3. Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.  
+3. Fare clic sul pulsante **Opzioni** per aprire la finestra di dialogo **Opzioni di pubblicazione** .  
   
-4. Fare clic su **descrizione**.  
+4. Fare clic su **Descrizione**.  
   
-5. Nel **Publish Options** finestra di dialogo selezionare una lingua e le impostazioni cultura dal **lingua di pubblicazione** elenco a discesa e quindi fare clic su **OK**.  
+5. Nella finestra di dialogo **Opzioni di pubblicazione** selezionare una lingua e le impostazioni cultura dall'elenco a discesa **lingua di pubblicazione** , quindi fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   

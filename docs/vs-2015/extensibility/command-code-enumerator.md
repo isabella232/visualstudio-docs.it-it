@@ -1,5 +1,5 @@
 ---
-title: Enumeratore di codice di comando | Microsoft Docs
+title: Enumeratore del codice di comando | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 06f1a3f7146125e59d02efc72a4d4fc9ab33be39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184381"
 ---
 # <a name="command-code-enumerator"></a>Enumeratore di codice di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questo enumeratore viene utilizzato nelle opzioni per la [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e il [SccPopulateList](../extensibility/sccpopulatelist-function.md)per indicare il comando per il quale vengono specificate le opzioni.  
+Questo enumeratore viene usato nelle opzioni per [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md)per indicare il comando per il quale vengono specificate le opzioni.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,41 +41,41 @@ enum SCCCOMMAND {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  SCC_COMMAND_GET  
- Corrisponde alla [SccGet](../extensibility/sccget-function.md).  
+ Corrisponde a [SccGet](../extensibility/sccget-function.md).  
   
  SCC_COMMAND_CHECKOUT  
- Corrisponde alla [SccCheckout](../extensibility/scccheckout-function.md).  
+ Corrisponde a [SccCheckout](../extensibility/scccheckout-function.md).  
   
  SCC_COMMAND_CHECKIN  
- Corrisponde alla [SccCheckin](../extensibility/scccheckin-function.md).  
+ Corrisponde a [SccCheckin](../extensibility/scccheckin-function.md).  
   
  SCC_COMMAND_UNCHECKOUT  
- Corrisponde alla [SccUncheckout](../extensibility/sccuncheckout-function.md).  
+ Corrisponde a [SccUncheckout](../extensibility/sccuncheckout-function.md).  
   
  SCC_COMMAND_ADD  
- Corrisponde alla [SccAdd](../extensibility/sccadd-function.md).  
+ Corrisponde a [SccAdd](../extensibility/sccadd-function.md).  
   
  SCC_COMMAND_REMOVE  
- Corrisponde alla [SccRemove](../extensibility/sccremove-function.md).  
+ Corrisponde a [SccRemove](../extensibility/sccremove-function.md).  
   
  SCC_COMMAND_DIFF  
- Corrisponde alla [SccDiff](../extensibility/sccdiff-function.md).  
+ Corrisponde a [SccDiff](../extensibility/sccdiff-function.md).  
   
  SCC_COMMAND_HISTORY  
- Corrisponde alla [SccHistory](../extensibility/scchistory-function.md).  
+ Corrisponde a [SccHistory](../extensibility/scchistory-function.md).  
   
  SCC_COMMAND_RENAME  
- Corrisponde alla [SccRename](../extensibility/sccrename-function.md).  
+ Corrisponde a [SccRename](../extensibility/sccrename-function.md).  
   
  SCC_COMMAND_PROPERTIES  
- Corrisponde alla [SccProperties](../extensibility/sccproperties-function.md).  
+ Corrisponde a [SccProperties](../extensibility/sccproperties-function.md).  
   
  SCC_COMMAND_OPTIONS  
- Corrisponde alla [SccSetOption](../extensibility/sccsetoption-function.md).  
+ Corrisponde a [SccSetOption](../extensibility/sccsetoption-function.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Plug-in controllo codice sorgente](../extensibility/source-control-plug-ins.md)   
+ [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)

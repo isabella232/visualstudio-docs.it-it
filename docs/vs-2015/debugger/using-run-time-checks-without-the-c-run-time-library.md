@@ -1,5 +1,5 @@
 ---
-title: Utilizzo in fase di esecuzione dei controlli senza la libreria Run-Time di C | Microsoft Docs
+title: Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,16 +28,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1eefddd21817360736b9f20f74ca3dc8a83683fe
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684030"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se si collega il programma senza la libreria di runtime C, Usa **/NODEFAULTLIB**e si desidera usare i controlli in fase di esecuzione, è necessario collegarlo con RunTmChk.  
+Se si collega il programma senza la libreria di runtime del linguaggio C, usando **/NODEFAULTLIB**e si vogliono usare i controlli run-time, è necessario collegarsi a RunTmChk. lib.  
   
  `_RTC_Initialize` consente di inizializzare il programma per i controlli runtime. Se non si stabilisce il collegamento con la libreria di runtime del linguaggio C, è necessario verificare che il programma sia compilato con i controlli degli errori di runtime prima di chiamare `_RTC_Initialize`, come illustrato di seguito:  
   
@@ -70,4 +70,4 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
  Dopo aver installato la funzione di segnalazione degli errori predefinita, sarà possibile installare altre funzioni di segnalazione degli errori con `_RTC_SetErrorFuncW`. Per altre informazioni, vedere [_RTC_SetErrorFuncW](https://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Usare i controlli di runtime nativi](../debugger/how-to-use-native-run-time-checks.md)
+ [Procedura: utilizzare i controlli runtime nativi](../debugger/how-to-use-native-run-time-checks.md)

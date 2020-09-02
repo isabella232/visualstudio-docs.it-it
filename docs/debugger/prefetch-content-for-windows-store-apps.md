@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 65b889452a23bb970cbee4c65455679a3473abab
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348067"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Eseguire il debug di app UWP con contenuto prelettura in Visual Studio
@@ -39,5 +39,5 @@ ms.locfileid: "85348067"
 > [!NOTE]
 > Ripeti questi passaggi quando aggiungi o modifichi il contenuto Web specificato.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Post di Blog: attivazione della prelettura per le app di Windows Store in Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
