@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::CanSetNextStatement | Microsoft Docs
+title: 'IDebugThread2:: CanSetNextStatement | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3e98603a39d820b5565836bd2620f8a27def76f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153065"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina se il puntatore all'istruzione corrente può essere impostato sul frame dello stack specificato.  
+Determina se il puntatore all'istruzione corrente può essere impostato sulla stack frame specificata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int CanSetNextStatement ( 
   
 #### <a name="parameters"></a>Parametri  
  `pStackFrame`  
- Riservato per utilizzi futuri; Impostare su un valore null. Se si tratta di un valore null, usare lo stack frame corrente.  
+ Riservato per un utilizzo futuro; impostare su un valore null. Se si tratta di un valore null, utilizzare la stack frame corrente.  
   
  `pCodeContext`  
- [in] Un' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che descrive la posizione del codice sta per essere eseguita e il relativo contesto.  
+ in Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che descrive la posizione del codice che sta per essere eseguita e il relativo contesto.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Se questo metodo restituisce `S_OK`, quindi chiamare il [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) metodo effettivamente impostare l'istruzione successiva.  
+## <a name="remarks"></a>Osservazioni  
+ Se questo metodo restituisce `S_OK` , chiamare il metodo [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) per impostare effettivamente l'istruzione successiva.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

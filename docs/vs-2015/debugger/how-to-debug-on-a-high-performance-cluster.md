@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eseguire il debug in un Cluster a prestazioni elevate | Microsoft Docs'
+title: 'Procedura: eseguire il debug in un cluster ad alte prestazioni | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,20 +18,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702697"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Procedura: Eseguire il debug su un cluster a prestazioni elevate
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Procedura: eseguire il debug su un cluster ad alte prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per requisiti generali di installazione remota, vedere [debug remoto](../debugger/remote-debugging.md).  
+Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per i requisiti generali di configurazione remota, vedere [Remote Debugging](../debugger/remote-debugging.md).  
   
  Quando si esegue il debug in un cluster ad alte prestazioni, è possibile usare tutte le tecniche e le finestre di debug di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] disponibili per il debug remoto. Poiché, tuttavia, il debug viene eseguito in remoto, la finestra della console esterna non è disponibile.  
   
- Le finestre **Thread** e **Processi** sono particolarmente utili per il debug di applicazioni parallele. Per suggerimenti su come usare queste finestre, vedere [come: Utilizzare la finestra processi](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [come: Utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md).  
+ Le finestre **Thread** e **Processi** sono particolarmente utili per il debug di applicazioni parallele. Per suggerimenti su come usare queste finestre, vedere [procedura: usare la finestra processi](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [procedura: usare la finestra thread](../debugger/how-to-use-the-threads-window.md).  
   
  Nelle procedure riportate di seguito sono illustrate alcune tecniche che risultano particolarmente utili per il debug in un cluster ad alte prestazioni.  
   
@@ -65,7 +65,7 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
   
 3. Nella finestra di dialogo **Filtro punto di interruzione** digitare:  
   
-     `ProcessName =` *yourprocessname*  
+     `ProcessName =`  *yourprocessname*  
   
      -oppure-  
   
@@ -101,9 +101,9 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Debug remoto](../debugger/remote-debugging.md)   
- [Procedura: Utilizzare la finestra processi](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [Procedura: Utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md)   
+ [Procedura: utilizzare la finestra processi](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Procedura: usare la finestra thread](../debugger/how-to-use-the-threads-window.md)   
  [Thread e processi](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Uso di punti di interruzione](../debugger/using-breakpoints.md)

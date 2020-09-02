@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread | Microsoft Docs
+title: 'IDebugThread2:: GetLogicalThread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f430ea7ba69ca55bc76543d853396e22b193cf02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153057"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Motori di debug non implementano questo metodo.  
+I motori di debug non implementano questo metodo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,13 +42,13 @@ int GetLogicalThread( 
   
 #### <a name="parameters"></a>Parametri  
  `pStackFrame`  
- [in] Un' [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) oggetto che rappresenta il frame dello stack.  
+ in Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta l'stack frame.  
   
  `ppLogicalThread`  
- [out] Restituisce un `IDebugLogicalThread2` interfaccia che rappresenta il thread logico associato. Un'implementazione del motore di debug debba impostare un valore null.  
+ out Restituisce un' `IDebugLogicalThread2` interfaccia che rappresenta il thread logico associato. Un'implementazione del motore di debug deve impostare questa impostazione su un valore null.  
   
 ## <a name="return-value"></a>Valore restituito  
- Eseguire il debug restituiscono sempre le implementazioni di motore `E_NOTIMPL`.  
+ Le implementazioni del motore di debug restituiscono sempre `E_NOTIMPL` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

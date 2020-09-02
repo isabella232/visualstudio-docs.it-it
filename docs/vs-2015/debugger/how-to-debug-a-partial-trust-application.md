@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Eseguire il debug di un'applicazione con attendibilità parziale | Microsoft Docs"
+title: "Procedura: eseguire il debug di un'applicazione parzialmente attendibile | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704482"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>Procedura: Eseguire il debug di un'applicazione parzialmente attendibile
+# <a name="how-to-debug-a-partial-trust-application"></a>Procedura: eseguire il debug di un'applicazione parzialmente attendibile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le informazioni contenute in questo argomento sono valide per applicazioni Windows e console  
   
- [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md) rende più semplice distribuire le applicazioni parzialmente attendibili che sfruttano [Code Access Security](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) per limitare l'accesso alle risorse in un computer.  
+ La [protezione e la distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md) semplificano la distribuzione di applicazioni con attendibilità parziale che sfruttano la sicurezza dall'accesso di [codice](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) per limitare l'accesso alle risorse in un computer.  
   
  Il debug di un'applicazione parzialmente attendibile può essere complesso perché queste applicazioni hanno autorizzazioni di sicurezza diverse e si comportano quindi in modo diverso in base all'area dalla quale viene eseguita l'installazione. Se l'installazione viene eseguita da Internet, un'applicazione parzialmente attendibile disporrà di poche autorizzazioni. Se l'installazione viene eseguita da una rete Intranet locale, avrà un numero di autorizzazioni maggiore. Se l'installazione viene eseguita dal computer locale, avrà autorizzazioni complete. È inoltre possibile configurare aree personalizzate con autorizzazioni personalizzate. Potrebbe essere necessario eseguire il debug di un'applicazione parzialmente attendibile in una o più di queste condizioni. In Visual Studio sono disponibili strumenti che semplificano anche questo tipo di debug.  
   
@@ -45,41 +45,41 @@ Le informazioni contenute in questo argomento sono valide per applicazioni Windo
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Per scegliere un'area per l'applicazione parzialmente attendibile  
   
-1. Dal **Project** menu, scegliere _NomeProgetto_**proprietà**.  
+1. Scegliere**proprietà** _NomeProgetto_dal menu **progetto** .  
   
-2. Nel *Projectname* pagine delle proprietà, fare clic sui **sicurezza** pagina.  
+2. Nelle pagine delle proprietà di *NomeProgetto* fare clic sulla pagina **sicurezza** .  
   
-3. Selezionare **abilitare le impostazioni di sicurezza ClickOnce**.  
+3. Selezionare **Abilita impostazioni di sicurezza ClickOnce**.  
   
-4. Sotto **zona da cui verrà installata l'applicazione**, selezionare la casella di riepilogo di elenco a discesa e selezionare l'area dalla quale si desidera simulare l'installazione dell'applicazione.  
+4. In **area da cui verrà installata l'applicazione**, fare clic sulla casella di riepilogo a discesa e scegliere la zona da cui si desidera simulare l'applicazione da installare.  
   
-     Il **le autorizzazioni richieste dall'applicazione** griglia vengono visualizzate tutte le autorizzazioni disponibili. Le autorizzazioni assegnate all'applicazione sono contrassegnate con un segno di spunta.  
+     Le **autorizzazioni richieste dalla** griglia dell'applicazione visualizzano tutte le autorizzazioni disponibili. Le autorizzazioni assegnate all'applicazione sono contrassegnate con un segno di spunta.  
   
-5. Se si sceglie l'area è stata **(personalizzata)**, selezionare le impostazioni personalizzate adeguate nella **impostazione** colonna del **autorizzazioni** griglia.  
+5. Se la zona scelta è **(personalizzata)**, selezionare le impostazioni personalizzate corrette nella colonna **impostazione** della griglia **autorizzazioni** .  
   
 6. Scegliere **OK** per chiudere le pagine delle proprietà.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Per aggiungere un'autorizzazione quando si verifica un'eccezione di sicurezza  
   
-1. Il **informazioni sulle eccezioni** verrà visualizzata la finestra di dialogo con messaggio: **SecurityException non gestita.**  
+1. Viene visualizzata la finestra di dialogo informazioni sulle **eccezioni** con il messaggio: **SecurityException non è stato gestito.**  
   
-2. Nel **informazioni sulle eccezioni** nella finestra di dialogo **azioni**, fare clic su **Aggiungi autorizzazione al progetto**.  
+2. Nella finestra di dialogo informazioni sulle **eccezioni** , in **azioni**, fare clic su **Aggiungi autorizzazione al progetto**.  
   
-3. Il **riavvia Debug** verrà visualizzata la finestra di dialogo.  
+3. Verrà visualizzata la finestra di dialogo **Riavvia debug** .  
   
     - Se si desidera riavviare la sessione di debug con la nuova autorizzazione, fare clic su **Sì**.  
   
-    - Se non si desidera riavviare ancora, fare clic su **No**.  
+    - Se non si vuole ancora riavviare, fare clic su **No**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Per visualizzare le autorizzazioni aggiunte durante il debug  
   
-1. Dal **Project** menu, scegliere _NomeProgetto_**proprietà**.  
+1. Scegliere**proprietà** _NomeProgetto_dal menu **progetto** .  
   
-2. Nel *Projectname* pagine delle proprietà, fare clic sui **sicurezza** pagina.  
+2. Nelle pagine delle proprietà di *NomeProgetto* fare clic sulla pagina **sicurezza** .  
   
-3. Esaminare i **le autorizzazioni richieste dall'applicazione** griglia. Le autorizzazioni aggiunti sono presenti due icone **inclusi** colonna: il segno di spunta normale, che dispone di autorizzazioni, tutti inclusi e un'icona aggiuntiva a forma di fumetto con una lettera "i".  
+3. Esaminare le **autorizzazioni richieste dalla griglia dell'applicazione** . Eventuali autorizzazioni aggiuntive aggiunte hanno due icone nella colonna **inclusa** : il segno di spunta normale, che include tutte le autorizzazioni incluse, e un'icona aggiuntiva, simile a un fumetto che contiene la lettera "i".  
   
-4. Usare la barra di scorrimento verticale per visualizzare l'intera **le autorizzazioni richieste dall'applicazione** griglia.  
+4. Utilizzare la barra di scorrimento verticale per visualizzare le autorizzazioni intere **richieste dalla griglia dell'applicazione** .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   

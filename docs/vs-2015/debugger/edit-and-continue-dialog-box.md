@@ -1,5 +1,5 @@
 ---
-title: Modifica e continuazione nella finestra di dialogo | Microsoft Docs
+title: Finestra di dialogo modifica e continuazione | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77fd48cd8e64be296231ff847b31d940d3d5831c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704151"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Finestra di dialogo Modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Solo nativo) questa finestra di dialogo viene visualizzata quando è stato modificato durante il debug del codice e **modifica e continuazione** riconosce perché consente di applicare le modifiche al codice. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).  
+Solo nativo) questa finestra di dialogo viene visualizzata quando è stato modificato il codice durante il debug e la **modifica e continuazione** riconosce che è possibile applicare le modifiche al codice. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).  
   
  **Non visualizzare più questo messaggio**  
  Se si seleziona questa casella di controllo, la modalità **Modifica e continuazione** applicherà le modifiche al codice senza chiedere l'autorizzazione. Per attivare nuovamente questo messaggio di avviso, accedere alla finestra di dialogo **Opzioni**, aprire la cartella **Debug**, fare clic sulla pagina **Modifica e continuazione** e selezionare **Richiama dai comandi di debug** e **Chiedi conferma**.  

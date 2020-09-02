@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72e8d428df4796c34c5ac20447e7bf8121f259d2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703774"
 ---
-# <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
+# <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se la funzione contiene eventuali [Structured Exception Handling (C /C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (ad esempio, try /\_except blocchi).  
+Recupera un flag che specifica se la funzione contiene una [gestione strutturata delle eccezioni (C/C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (ad esempio, __try/ \_ _except blocchi).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,21 +35,21 @@ HRESULT get_hasSEH(
   
 #### <a name="parameters"></a>Parametri  
  `pFlag`  
- [out] Restituisce `TRUE` se la funzione con qualsiasi Gestione blocchi, strutturata delle eccezioni in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se la funzione presenta blocchi strutturati di gestione delle eccezioni; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Gestione strutturata delle eccezioni (C/C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976)
+ [Structured Exception Handling (C/C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976)

@@ -14,16 +14,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d4bc592ff0198d4cc93d500c39167e214e63f032
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702582"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina l'esistenza di un attributo personalizzato per questo campo e, se presente, restituisce le informazioni sugli attributi.  
+Determina l'esistenza di un attributo personalizzato per questo campo e, se esistente, restituisce le informazioni sugli attributi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,36 +32,36 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un provider di simboli implementa questa interfaccia nello stesso oggetto che implementa [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) per supportare gli attributi personalizzati.  
+ Un provider di simboli implementa questa interfaccia sullo stesso oggetto che implementa [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) per supportare gli attributi personalizzati.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Uso [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per ottenere questa interfaccia dalle [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia.  
+ Usare [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per ottenere questa interfaccia dall'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi del **IDebugCustomAttributeQuery** interfaccia.  
+ La tabella seguente illustra i metodi dell'interfaccia **IDebugCustomAttributeQuery** .  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Determina l'esistenza di un attributo personalizzato in base al nome.|  
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Determina se un attributo personalizzato esiste per nome.|  
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Ottiene le informazioni sugli attributi per l'attributo personalizzato specificato.|  
   
- Oltre al **IDebugCustomAttributeQuery** metodi, `IDebugCustomAttributeQuery2` implementa il metodo seguente:  
+ Oltre ai metodi **IDebugCustomAttributeQuery** , `IDebugCustomAttributeQuery2` implementa il metodo seguente:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Ottiene un enumeratore per tutti gli attributi personalizzati collegati a questo campo.|  
   
-## <a name="remarks"></a>Note  
- Il [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) metodo può restituire un enumeratore per tutti gli attributi personalizzati definiti per questo campo.  
+## <a name="remarks"></a>Osservazioni  
+ Il metodo [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) può restituire un enumeratore per tutti gli attributi personalizzati definiti per questo campo.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfacce del Provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

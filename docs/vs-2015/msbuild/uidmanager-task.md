@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703686"
 ---
 # <a name="uidmanager-task"></a>Attività UidManager
@@ -36,7 +36,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.UidManager> controlla, aggiorna 
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
-|`IntermediateDirectory`|Parametro **String** facoltativo.<br /><br /> Specifica la directory usata per eseguire il backup dei file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] di origine specificati dal parametro **MarkupFiles**.|  
+|`IntermediateDirectory`|Parametro **stringa** facoltativo.<br /><br /> Specifica la directory usata per eseguire il backup dei file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] di origine specificati dal parametro **MarkupFiles**.|  
 |`MarkupFiles`|Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica i file [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] di origine da includere per il controllo, l'aggiornamento o la rimozione degli UID.|  
 |`Task`|Parametro **String** obbligatorio.<br /><br /> Specifica l'attività di gestione degli UID da eseguire. Le opzioni valide sono **Check**, **Update** o **Remove**.|  
   
@@ -58,9 +58,9 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.UidManager> controlla, aggiorna 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)   
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimenti a MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
+ [Riferimento attività](../msbuild/wpf-msbuild-task-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)   
  [Compilazione di un'applicazione WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Procedura: Localizzare un'applicazione](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 560587e70365a485c3391a0623b959f88d417698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671063"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Creare query TableAdapter con parametri
@@ -34,13 +34,13 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
 > Quando si crea una query con parametri, usare la notazione del parametro specifica del database con cui si esegue la codifica. Ad esempio, nelle origini dati Access e OleDb viene usato il punto interrogativo (?) per indicare i parametri, quindi la clausola WHERE risulterebbe simile a `WHERE City = ?`.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida, a seconda delle impostazioni attive o dell'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni**dal menu **strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida, a seconda delle impostazioni attive o dell'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni**dal menu **strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="create-a-parameterized-tableadapter-query"></a>Creare una query TableAdapter con parametri
 
 - Creare un nuovo oggetto TableAdapter aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati. Per altre informazioni, vedere [creare e configurare TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-     oppure
+     -oppure-
 
 - Aggiungere una query a un oggetto TableAdapter esistente aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.
 
@@ -65,17 +65,17 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
 
 4. Digitare un nome nella casella **Nuovo nome query** se si intende creare una nuova query.
 
-    oppure
+    -oppure-
 
     Selezionare una query nella casella **Nome query esistente**.
 
 5. Nella casella di **testo query** Digitare una query che accetta parametri.
 
-6. Scegliere **OK**.
+6. Selezionare **OK**.
 
     Un controllo per l'immissione del parametro e un pulsante **Carica** verranno aggiunti al form in un controllo <xref:System.Windows.Forms.ToolStrip>.
 
-   Ai parametri TableAdapter è possibile assegnare valori null quando si desidera eseguire una query per i record senza valore corrente. Si consideri, ad esempio, la query seguente con un parametro `ShippedDate` nella relativa clausola `WHERE`:
+   Ai parametri TableAdapter è possibile assegnare valori null quando si desidera eseguire una query per i record senza valore corrente. Si consideri, ad esempio, la query seguente con un `ShippedDate` parametro nella relativa `WHERE` clausola:
 
    ```sql
    SELECT CustomerID, OrderDate, ShippedDate
@@ -93,9 +93,9 @@ Se si trattasse di una query su un TableAdapter, era possibile eseguire una quer
 
 1. Nella **Progettazione DataSet**selezionare la query TableAdapter che deve accettare valori di parametro null.
 
-2. Nella finestra **Proprietà** selezionare **parametri**. Premere quindi il pulsante con i puntini di sospensione ( **...** ) per aprire l' **Editor della raccolta Parameters**.
+2. Nella finestra **Proprietà** selezionare **parametri**. Premere quindi il pulsante con i puntini di sospensione (**...**) per aprire l' **Editor della raccolta Parameters**.
 
-3. Selezionare il parametro che consente valori null e impostare la proprietà **AllowDBNull** su `true`.
+3. Selezionare il parametro che consente valori null e impostare la proprietà **AllowDBNull** su `true` .
 
 ## <a name="see-also"></a>Vedere anche
 

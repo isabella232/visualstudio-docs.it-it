@@ -11,10 +11,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4ac6fa753be7672f1e698bda231bd11217c10d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152725"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>Metodo GetScheduledTasksForDebugger
@@ -24,9 +24,9 @@ Recupera una matrice di tutte le attività pianificate.
   
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché non è possibile accedere a questo membro interno dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,10 +35,10 @@ Recupera una matrice di tutte le attività pianificate.
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Matrice di tutte le attività pianificate. Ogni attività sono in esecuzione o ha completato l'esecuzione.  
+ Matrice di tutte le attività pianificate. Ogni attività è in esecuzione o ha terminato l'esecuzione.  
   
-## <a name="remarks"></a>Note  
- Questo metodo non è thread-safe e non deve essere utilizzato contemporaneamente ad altre istanze di <xref:System.Threading.Tasks.TaskScheduler> deve essere chiamato da un debugger solo quando il debugger ha sospeso tutti gli altri thread.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo non è thread-safe e non deve essere utilizzato contemporaneamente ad altre istanze di <xref:System.Threading.Tasks.TaskScheduler> . deve essere chiamato da un debugger solo quando il debugger ha sospeso tutti gli altri thread.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

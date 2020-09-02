@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e1669affa89c91ca3ae1958c22ff3ec4d56bb8c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670959"
 ---
 # <a name="editing-xslt-style-sheets"></a>Modifica di fogli di stile XSLT
@@ -24,7 +24,7 @@ L'editor XML consente anche di modificare i fogli di stile XSLT. È possibile us
 ## <a name="xslt-features"></a>Funzionalità XSLT
  Nella tabella seguente vengono descritte le funzionalità specifiche per usare i fogli di stile XSLT.
 
- **Colorazione della sintassi** Le parole chiave XSLT, ad esempio `template`, `match` e così via, vengono visualizzate nel colore della parola chiave XSLT specificato dalle impostazioni relative ai **tipi di carattere e ai colori** .
+ **Colorazione della sintassi** Le parole chiave XSLT, ad esempio `template` , `match` e così via, vengono visualizzate nel colore della parola chiave XSLT specificato dalle impostazioni relative ai **tipi di carattere e ai colori** .
 
  **Sottolineature ondulate** Nell'editor XML viene utilizzato il file XSLT. xsd installato per convalidare i fogli di stile XSLT. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. L'editor XML compila inoltre il foglio di stile in background e segnala gli errori del compilatore o avvisi con le opportune sottolineature ondulate.
 

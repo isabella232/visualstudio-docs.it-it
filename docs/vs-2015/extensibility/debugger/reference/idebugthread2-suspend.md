@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Microsoft Docs
+title: 'IDebugThread2:: Suspend | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c334a660b9c85345c636c7cc4b9aaea1a9b12076
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152946"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
@@ -40,16 +40,16 @@ HRESULT Suspend ( 
   
 #### <a name="parameters"></a>Parametri  
  `pdwSuspendCount`  
- [out] Restituisce il conteggio di sospensione al termine dell'operazione di sospensione.  
+ out Restituisce il numero di Sospendi dopo l'operazione di sospensione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Ogni chiamata al metodo incrementa il conteggio di suspend superiore a 0. Questo conteggio di sospensione viene visualizzato nei **thread** finestra di debug.  
+## <a name="remarks"></a>Osservazioni  
+ Ogni chiamata a questo metodo incrementa il conteggio di sospensione superiore a 0. Questo numero di Sospendi viene visualizzato nella finestra debug **thread** .  
   
- Per ogni chiamata a questo metodo, deve esistere una chiamata successiva per la [Riprendi](../../../extensibility/debugger/reference/idebugthread2-resume.md) (metodo).  
+ Per ogni chiamata a questo metodo, deve essere presente una chiamata successiva al metodo [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ [Riprendi](../../../extensibility/debugger/reference/idebugthread2-resume.md)

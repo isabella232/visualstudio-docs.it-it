@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ce0e4a3aaca752cbdeda0a83e469977306c3404
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657687"
 ---
 # <a name="find-command"></a>Comando Trova
@@ -36,7 +36,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="arguments"></a>Argomenti
  `findwhat` Obbligatorio. Testo da cercare.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /case o /c Facoltativo. Vengono rilevate corrispondenze solo se i caratteri maiuscoli e minuscoli corrispondono esattamente a quelli specificati nell'argomento `findwhat`.
 
  /doc o /d Facoltativo. Cerca solo nel documento corrente. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open` o `/sel`.
@@ -69,4 +69,4 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Finestra di comando ](../../ide/reference/command-window.md) [Find/Command Box ](../../ide/find-command-box.md) comandi di [Visual Studio ](../../ide/reference/visual-studio-commands.md) alias di comando di [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Command Window](../../ide/reference/command-window.md) [Casella Trova/comando](../../ide/find-command-box.md) della finestra di comando [Visual Studio](../../ide/reference/visual-studio-commands.md) Visualizza gli [alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

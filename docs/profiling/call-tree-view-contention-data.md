@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779779"
 ---
 # <a name="call-tree-view---contention-data"></a>Visualizzazione Albero delle chiamate: dati sui conflitti
@@ -26,7 +26,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 ## <a name="highlight-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione
  Nella visualizzazione Albero delle chiamate è possibile espandere ed evidenziare il percorso di esecuzione del processo o della funzione che ha determinato il maggior numero di conflitti.
 
-- Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul processo o sulla funzione, quindi **scegliere Espandi percorso critico**.
+- Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.
 
 ## <a name="set-the-call-tree-root-node"></a>Impostare il nodo radice dell'albero delle chiamate
  Ogni processo nell'esecuzione della profilatura viene visualizzato come nodo radice. Per impostare il nodo di inizio della visualizzazione Albero delle chiamate, fare clic con il pulsante destro del mouse sul nodo che si vuole impostare come nodo iniziale e fare clic su **Imposta radice**.
@@ -45,18 +45,18 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 |**% tempo blocco inclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco inclusivo per le istanze di questa funzione in questo percorso di esecuzione.|
 |**Conflitti inclusivi**|Numero totale di conflitti che hanno bloccato istanze di questa funzione in questo percorso di esecuzione. Il numero include i conflitti delle funzioni figlio chiamate dalla funzione.|
 |**% conflitti inclusivi**|Percentuale del totale di conflitti nell'esecuzione della profilatura corrispondente ai conflitti inclusivi delle istanze di questa funzione in questo percorso di esecuzione.|
-|**Livello**|Livello della funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di VSReport. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|Livello della funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di VSReport. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: personalizzare le colonne della visualizzazione reportHow to: Customize report view columns](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)
-- [Visualizzazione Struttura ad albero delle chiamate - strumentazioneCall Tree view - instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)
+- [Visualizzazione albero delle chiamate-Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)

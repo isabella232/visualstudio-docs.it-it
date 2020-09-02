@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e75f5417ffabd26b87afb2a62812904446674c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153155"
 ---
-# <a name="codepath"></a>CODE_PATH
+# <a name="code_path"></a>CODE_PATH
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descrive una chiamata di metodo o funzione.  
+Descrive un metodo o una chiamata di funzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,20 +40,20 @@ public struct CODE_PATH {
 }  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  bstrName  
- Il nome del percorso del codice.  
+ Nome del percorso del codice.  
   
  pCode  
- Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del codice per eseguire una funzione.  
+ Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del codice per eseguire un'istruzione in una funzione.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene utilizzata per implementare l'esecuzione di una funzione. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) restituisce tutte le chiamate dalla posizione corrente nel programma sottoposto a debug. Questa struttura rappresenta una chiamata di questo tipo.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene utilizzata per implementare l'esecuzione di un'istruzione in una funzione. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) restituisce tutte le chiamate dalla posizione corrente nel programma di cui è in corso il debug. Questa struttura rappresenta una chiamata di questo tipo.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

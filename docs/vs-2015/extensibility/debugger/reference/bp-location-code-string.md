@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50c48098aee3b1077edec99210e7ab624d2a8d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153457"
 ---
-# <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
+# <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Utilizzata per impostare i punti di interruzione di codice basati su una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).  
+Usato per impostare i punti di interruzione del codice in base a una stringa che l'utente può immettere dall'Integrated Development Environment (IDE).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -33,20 +33,20 @@ typedef struct _BP_LOCATION_CODE_STRING { 
 } BP_LOCATION_CODE_STRING;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  `bstrContext`  
- Contesto del punto di interruzione all'interno del codice, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.  
+ Contesto del punto di interruzione all'interno del codice, in genere un metodo o un nome di funzione come visualizzato in uno stack di chiamate.  
   
  `bstrCodeExpr`  
  Stringa che l'utente digita per descrivere il punto di interruzione del codice.  
   
-## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

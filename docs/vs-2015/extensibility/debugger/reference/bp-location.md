@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a3e5f690a679118c7bb02c110d6e5d066a2bd0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153392"
 ---
-# <a name="bplocation"></a>BP_LOCATION
+# <a name="bp_location"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica il tipo di struttura utilizzata per descrivere la posizione del punto di interruzione.  
+Specifica il tipo di struttura utilizzato per descrivere la posizione del punto di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -54,45 +54,45 @@ public struct BP_LOCATION {
   
 ## <a name="members"></a>Membri  
  `bpLocationType`  
- Un valore compreso il [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) enumerazione utilizzata per interpretare il `bpLocation` union o `unionmemberX` membri.  
+ Valore dell'enumerazione [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) utilizzata per interpretare l' `bpLocation` Unione o i `unionmemberX` membri.  
   
  `bpLocation`.`bplocCodeFileLine`  
- [C++ solo] Contiene il [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) struttura se `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.  
+ [Solo C++] Contiene la struttura [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) se `bpLocationType`  =  `BPLT_CODE_FILE_LINE` .  
   
  `bpLocation.bplocCodeFuncOffset`  
- [C++ solo] Contiene il [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struttura se `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.  
+ [Solo C++] Contiene la struttura [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) se `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET` .  
   
  `bpLocation.bplocCodeContext`  
- [C++ solo] Contiene il [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) struttura se `bpLocationType`  =  `BPLT_CODE_CONTEXT`.  
+ [Solo C++] Contiene la struttura [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) se `bpLocationType`  =  `BPLT_CODE_CONTEXT` .  
   
  `bpLocation.bplocCodeString`  
- [C++ solo] Contiene il [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) struttura se `bpLocationType`  =  `BPLT_CODE_STRING`.  
+ [Solo C++] Contiene la struttura [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) se `bpLocationType`  =  `BPLT_CODE_STRING` .  
   
  `bpLocation.bplocCodeAddress`  
- [C++ solo] Contiene il [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) struttura se `bpLocationType`  =  `BPLT_CODE_ADDRESS`.  
+ [Solo C++] Contiene la struttura [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) se `bpLocationType`  =  `BPLT_CODE_ADDRESS` .  
   
  `bpLocation.bplocDataString`  
- [C++ solo] Contiene il [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) struttura se `bpLocationType`  =  `BPLT_DATA_STRING`.  
+ [Solo C++] Contiene la struttura [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) se `bpLocationType`  =  `BPLT_DATA_STRING` .  
   
  `bpLocation.bplocResolution`  
- [C++ solo] Contiene il [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) struttura se `bpLocationType`  =  `BPLT_RESOLUTION`.  
+ [Solo C++] Contiene la struttura [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) se `bpLocationType`  =  `BPLT_RESOLUTION` .  
   
  `unionmember1`  
- [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
+ [Solo C#] Vedere la sezione Osservazioni su come interpretare.  
   
  `unionmember2`  
- [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
+ [Solo C#] Vedere la sezione Osservazioni su come interpretare.  
   
  `unionmember3`  
- [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
+ [Solo C#] Vedere la sezione Osservazioni su come interpretare.  
   
  `unionmember4`  
- [C# solo] Vedere la sezione Osservazioni sull'interpretazione.  
+ [Solo C#] Vedere la sezione Osservazioni su come interpretare.  
   
-## <a name="remarks"></a>Note  
- Questa struttura è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura è un membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .  
   
- [C# solo] Il `unionmemberX` membri vengono interpretati in base alla tabella riportata di seguito. Cerca nella colonna a sinistra per la `bpLocationType` valore per poi passare tra le altre colonne per determinare quali ognuno `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` conseguenza. Vedere l'esempio di un modo per interpretare una parte di questa struttura in c#.  
+ [Solo C#] I `unionmemberX` membri vengono interpretati in base alla tabella seguente. Cercare il valore nella colonna sinistra `bpLocationType` , quindi esaminare le altre colonne per determinare ciò che ogni `unionmemberX` membro rappresenta ed effettuare il marshalling di `unionmemberX` conseguenza. Vedere l'esempio relativo a un modo per interpretare una parte di questa struttura in C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -100,12 +100,12 @@ public struct BP_LOCATION {
 |`BPLT_CODE_FUNC_OFFSET`|`string` (un contesto)|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|-|-|  
 |`BPLT_CODE_CONTEXT`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
 |`BPLT_CODE_STRING`|`string` (un contesto)|`string` (espressione condizionale)|-|-|  
-|`BPLT_CODE_ADDRESS`|`string` (un contesto)|`string` (modulo URL)|`string` (nome della funzione)|`string` (indirizzo)|  
-|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (un contesto)|`string` (espressione di dati)|`uint` (numero di elementi)|  
+|`BPLT_CODE_ADDRESS`|`string` (un contesto)|`string` (URL modulo)|`string` (nome funzione)|`string` Indirizzo|  
+|`BPLT_DATA_STRING`|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|`string` (un contesto)|`string` (espressione dati)|`uint` (numero di elementi)|  
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come interpretare la `BP_LOCATION` struttura in c# per il `BPLT_DATA_STRING` tipo. Questo tipo particolare di seguito viene illustrato come interpretare tutte e quattro `unionmemberX` membri in tutti i formati possibili (oggetto, stringa e numero).  
+ Questo esempio illustra come interpretare la `BP_LOCATION` struttura in C# per il `BPLT_DATA_STRING` tipo. Questo particolare tipo Mostra come interpretare tutti e quattro `unionmemberX` i membri in tutti i formati possibili (oggetto, stringa e numero).  
   
 ```csharp  
 using System;  
@@ -131,9 +131,9 @@ namespace MyPackage
 ```  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

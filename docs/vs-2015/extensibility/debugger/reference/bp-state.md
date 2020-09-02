@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4de23d462136ad417859d7064fef6b4ace7e59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153257"
 ---
-# <a name="bpstate"></a>BP_STATE
+# <a name="bp_state"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica l'esistenza di un punto di interruzione associato e specifica se è abilitata.  
+Specifica l'esistenza di un punto di interruzione associato e specifica anche se è abilitato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,26 +45,26 @@ public enum enum_BP_STATE { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  BPS_NONE  
- Specifica che sia presente alcun punto di interruzione.  
+ Specifica che non esiste alcun punto di interruzione.  
   
  BPS_DELETED  
  Specifica che il punto di interruzione è stato eliminato.  
   
  BPS_DISABLED  
- Specifica che il punto di interruzione è disabilitata.  
+ Specifica che il punto di interruzione è disabilitato.  
   
  BPS_ENABLED  
  Specifica che il punto di interruzione è abilitato.  
   
-## <a name="remarks"></a>Note  
- Restituito dal [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Restituito dal metodo [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

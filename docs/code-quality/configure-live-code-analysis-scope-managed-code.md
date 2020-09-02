@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249183"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito
@@ -43,7 +43,7 @@ Per impostazione predefinita, l'analisi del codice in tempo reale per il calcolo
 
 ## <a name="custom-analysis-scope"></a>Ambito di analisi personalizzato
 
-L'ambito predefinito di ogni analisi in background è stato ottimizzato per l'esperienza utente, le funzionalità e le prestazioni ottimali per la maggior parte degli scenari e delle soluzioni dei clienti. In alcuni casi, tuttavia, i clienti potrebbero voler personalizzare questo ambito per ridurre o aumentare l'analisi in background. Esempio:
+L'ambito predefinito di ogni analisi in background è stato ottimizzato per l'esperienza utente, le funzionalità e le prestazioni ottimali per la maggior parte degli scenari e delle soluzioni dei clienti. In alcuni casi, tuttavia, i clienti potrebbero voler personalizzare questo ambito per ridurre o aumentare l'analisi in background. Ad esempio:
 
 - Modalità risparmio energia: se gli utenti eseguono la batteria portatile, è possibile che vogliano ridurre al minimo il consumo di energia elettrica per una durata maggiore della batteria. In questo scenario, è consigliabile ridurre al minimo l'analisi in background.
 - Analisi del codice su richiesta: se gli utenti preferiscono disattivare l'esecuzione di Live Analyzer e eseguire manualmente l'analisi del codice su richiesta, è necessario ridurre al minimo l'analisi in background. Vedere [procedura: eseguire manualmente l'analisi del codice su richiesta](./how-to-run-code-analysis-manually-for-managed-code.md).

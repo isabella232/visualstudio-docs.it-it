@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
+title: 'IDebugStackFrame2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d370670ed86ee3484243fe5dc7cfdd8ea64be084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153136"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene la lingua associata a questo frame dello stack.  
+Ottiene la lingua associata a questo stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,10 +42,10 @@ int GetLanguageInfo ( 
   
 #### <a name="parameters"></a>Parametri  
  `pbstrLanguage`  
- [out] Restituisce il nome del linguaggio che implementa il metodo associato a questo frame dello stack.  
+ out Restituisce il nome della lingua che implementa il metodo associato a questo stack frame.  
   
  `pguidLanguage`  
- [out] Restituisce il `GUID` del linguaggio. Per il [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] linguaggi, ad esempio, di seguito può essere restituiti:  
+ out Restituisce l'oggetto `GUID` del linguaggio. Per le [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] lingue, ad esempio, è possibile che vengano restituiti i seguenti elementi:  
   
 - `guidVBScriptLang`  
   
@@ -60,7 +60,7 @@ int GetLanguageInfo ( 
 - `guidScriptLang`  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

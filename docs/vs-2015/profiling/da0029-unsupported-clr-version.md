@@ -17,20 +17,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 532427618f476e1e187d8a1c88749810f9d157c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152655"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Versione CLR non supportata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id regola | DA0029 |  
-| Categoria | Utilizzo degli strumenti di profilatura |  
+ID regola | DA0029 |  
+| Categoria | Utilizzo Strumenti di profilatura |  
 | Metodo di profilatura | Profilatura dalla riga di comando |  
-| Messaggio | Durante la raccolta è stata rilevata una versione CLR non supportata. È possibile che i simboli gestiti non vengano risolti correttamente.|  
-| Tipo di regola | Le informazioni. |  
+| Messaggio | È stata rilevata una versione CLR non supportata durante la raccolta. È possibile che i simboli gestiti non vengano risolti correttamente.|  
+| Tipo di regola | Informazioni. |  
   
 ## <a name="cause"></a>Causa  
  Si sta tentando di profilare un'applicazione che usa [!INCLUDE[net_v11_long](../includes/net-v11-long-md.md)] non supportato dagli strumenti di profilatura.  
@@ -39,4 +39,4 @@ Id regola | DA0029 |
  Questo avviso si verifica perché gli strumenti di profilatura non sono in grado di risolvere i simboli per il codice gestito in esecuzione nell'applicazione. Gli strumenti di profilatura non sono in grado di risolvere i simboli di codice gestito per le applicazioni che eseguono [!INCLUDE[net_v11_long](../includes/net-v11-long-md.md)].  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
- No.
+ Nessuno.
