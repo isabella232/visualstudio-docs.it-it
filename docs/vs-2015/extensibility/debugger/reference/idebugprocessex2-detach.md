@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Microsoft Docs
+title: IDebugProcessEx2::D etach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b79f1f80f9b6849c37fc9b6c4c8669f1397f0227
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538148"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo indica il processo che una sessione di debug non è più il processo.  
+Questo metodo informa il processo che una sessione non sta più eseguendo il debug del processo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int Detach(
   
 #### <a name="parameters"></a>Parametri  
  `pSession`  
- [in] Un valore che identifica in modo univoco la sessione per questo processo da scollegare.  
+ in Valore che identifica in modo univoco la sessione da cui scollegare il processo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- L'interfaccia passato `pSession` è deve essere considerato solo un cookie, un valore che identifica in modo univoco il gestore di sessione di debug che originariamente collegato a questo processo, nessuno dei metodi nell'interfaccia specificata sono funzionali.  
+## <a name="remarks"></a>Osservazioni  
+ L'interfaccia passata deve `pSession` essere considerata solo come un cookie, un valore che identifica in modo univoco la gestione del debug della sessione che originariamente era collegata a questo processo; nessuno dei metodi nell'interfaccia fornita è funzionante.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

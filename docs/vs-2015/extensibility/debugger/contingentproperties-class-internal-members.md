@@ -1,5 +1,5 @@
 ---
-title: Classe ContingentProperties - membri interni | Microsoft Docs
+title: Classe ContingentProperties-membri interni | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414646"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties - Membri interni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Contiene le proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto.  
+Contiene proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto.  
   
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Poiché non è possibile accedere a questi membri interni da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché non è possibile accedere a questi membri interni dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,10 +42,10 @@ Contiene le proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> ogge
   
 |Nome|Descrizione|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|L'elenco delle attività figlio che sono registrati con questa attività.|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|Elenco di attività figlio registrate con questa attività.|  
   
-## <a name="remarks"></a>Note  
- .NET Framework consente di inizializzare i campi di questa classe solo quando sono necessari.  
+## <a name="remarks"></a>Osservazioni  
+ Il .NET Framework inizializza i campi di questa classe solo quando sono necessari.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Elementi interni delle estensioni parallele per .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

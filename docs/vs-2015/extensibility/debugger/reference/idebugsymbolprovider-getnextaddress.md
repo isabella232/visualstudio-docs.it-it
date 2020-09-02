@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetNextAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1bf0798e0f49d9e7b2871c5601f966bc282b186
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421450"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
@@ -44,16 +44,16 @@ int GetNextAddress( 
   
 #### <a name="parameters"></a>Parametri  
  `pAddress`  
- [in] Indirizzo di debug specificato.  
+ in Indirizzo di debug specificato.  
   
  `fStatementOnly`  
- [in] Se TRUE, limita gli indirizzi di debug per una singola istruzione.  
+ in Se TRUE, limita gli indirizzi di debug a una singola istruzione.  
   
  `ppAddress`  
- [out] Restituisce l'indirizzo di debug successiva.  
+ out Restituisce l'indirizzo di debug successivo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un valore valido `HRESULT`, in genere S_OK.  
+ Restituisce un `HRESULT` S_OK valido, in genere.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

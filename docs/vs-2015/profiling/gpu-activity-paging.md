@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5979ccf8cafedb849b7ae9f7af6b0b35096e624f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434163"
 ---
 # <a name="gpu-activity-paging"></a>Attività GPU (paging)
@@ -27,4 +27,4 @@ I segmenti **Attività GPU (paging)** nella scheda Thread rappresentano i casi i
  Quando si seleziona un segmento di paging GPU, il rapporto nella scheda **Corrente** visualizza le informazioni sul pacchetto DMA che è stato elaborato. Ciò include la quantità di tempo per cui è rimasto in attesa nella coda hardware associata al motore di DirectX, il processo che ha inviato il pacchetto DMA e il tempo richiesto per elaborare il pacchetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Utilizzo](../profiling/utilization-view.md)
+ [Visualizzazione Uso](../profiling/utilization-view.md)

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423837"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
@@ -31,8 +31,8 @@ Gli strumenti **Struttura ad albero visuale attiva** ed **Esplora proprietà att
 |Tipo di app|Sistema operativo e strumenti|  
 |-----------------|--------------------------------|  
 |Applicazioni Windows Presentation Foundation (4.0 e versioni successive)|Windows 7 e versioni successive|  
-|App di Windows Store e Windows Phone 8.1|Windows 10 e versioni successive, con la [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|  
-|App di Windows universale|Windows 10 e versioni successive, con la [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|  
+|App di Windows Store e Windows Phone 8.1|Windows 10 e versioni successive, con [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|  
+|App di Windows universale|Windows 10 e versioni successive, con [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Visualizzazione degli elementi nella finestra Struttura ad albero visuale attiva  
  Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visualizzazione elenco e un pulsante. Ogni volta che si fa clic sul pulsante, viene aggiunto un altro elemento all'elenco. Gli elementi pari sono di colore grigio e quelli dispari sono gialli.  
@@ -78,25 +78,25 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  Compilare il progetto e avviare il debug. La build deve essere configurata per il debug, non per il rilascio. Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).  
   
- Quando la finestra viene visualizzata, fare clic sul pulsante **Aggiungi elemento** un paio di volte. Viene visualizzato un output simile al seguente:  
+ Quando la finestra viene visualizzata, fare clic sul pulsante **Aggiungi elemento** un paio di volte. L'output dovrebbe essere simile al seguente:  
   
- ![Finestra principale dell'app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")  
+ ![Finestra principale dell'app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-app")  
   
- A questo punto aprire il **albero elementi visivi attivi** finestra (**eseguire il Debug / Windows / albero elementi visivi attivi**, oppure individuarlo e selezionarlo lungo il lato sinistro dell'IDE). Rilasciare la finestra dalla posizione di ancoraggio in modo da poterla visualizzare affiancata alla finestra delle **proprietà attive**. Nella finestra **Struttura ad albero visuale attiva** espandere il nodo **ContentPresenter**. Tale nodo dovrebbe contenere i nodi per il pulsante e la casella di riepilogo. Espandere la casella di riepilogo, listBox, (e quindi **ScrollContentPresenter** e **ItemsPresenter**) per individuare i relativi elementi. La finestra dovrebbe essere simile alla seguente:  
+ Aprire ora la finestra **struttura ad albero visuale** attiva (**debug/finestre/albero elementi visivi attivi**o trovarla lungo il lato sinistro dell'IDE). Rilasciare la finestra dalla posizione di ancoraggio in modo da poterla visualizzare affiancata alla finestra delle **proprietà attive**. Nella finestra **Struttura ad albero visuale attiva** espandere il nodo **ContentPresenter**. Tale nodo dovrebbe contenere i nodi per il pulsante e la casella di riepilogo. Espandere la casella di riepilogo, listBox, (e quindi **ScrollContentPresenter** e **ItemsPresenter**) per individuare i relativi elementi. La finestra dovrebbe essere simile alla seguente:  
   
- ![ListBoxItems nell'albero visuale in tempo reale](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree ListBoxItem")  
+ ![ListBoxItems nell'albero degli elementi visivi attivi](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")  
   
  Tornare alla finestra dell'applicazione e aggiungere altri elementi. Nella finestra **Albero elementi visivi attivi** dovrebbero venire visualizzati altri elementi casella di riepilogo.  
   
- Esaminare ora le proprietà di uno degli elementi casella di riepilogo. Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il **contenuti** campo è "Item1" e il **sfondo** campo è **#ffffffe0** (giallo chiaro). Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. Il **Esplora proprietà attive** dovrebbe essere il **contenuto** campo è "Item2" e il **sfondo** campo è **#ffd3d3d3** (grigio chiaro ).  
+ Esaminare ora le proprietà di uno degli elementi casella di riepilogo. Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo **contenuto** è "Item1" e il campo **background** è **#FFFFFFE0** (giallo chiaro). Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. **Esplora proprietà attive** dovrebbe mostrare che il campo **contenuto** è "Item2" e il campo **sfondo** è **#FFD3D3D3** (grigio chiaro).  
   
- La struttura effettiva del codice XAML include numerosi elementi a cui probabilmente non si è direttamente interessati e se non si conosce bene il codice potrebbe risultare difficile esplorare l'albero per trovare ciò che si sta cercando. In modo che il **albero elementi visivi attivi** dispone di un paio di modi che consentono di utilizzare dell'interfaccia utente dell'applicazione che consentono di trovare l'elemento da esaminare.  
+ La struttura effettiva del codice XAML include numerosi elementi a cui probabilmente non si è direttamente interessati e se non si conosce bene il codice potrebbe risultare difficile esplorare l'albero per trovare ciò che si sta cercando. Quindi, la **struttura ad albero visuale** attiva ha un paio di modi che consentono di usare l'interfaccia utente dell'applicazione per individuare l'elemento che si desidera esaminare.  
   
  **Abilita la selezione nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva**. Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive**) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà.  
   
  **Visualizza gli Adorner layout nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante immediatamente a destra del pulsante di abilitazione della selezione. Quando l'opzione **Visualizza gli Adorner layout** è attivata, la finestra dell'applicazione mostra le linee orizzontali e verticali lungo i bordi dell'oggetto selezionato, per consentire di vederne l'allineamento, nonché rettangoli che mostrano i margini. Ad esempio, attivare entrambe le opzioni **Abilita selezione** e **Visualizza gli Adorner layout** e selezionare il blocco di testo **Aggiungi elemento** nell'applicazione. Dovrebbero venire visualizzati il nodo del blocco di testo in **Struttura ad albero visuale attiva** e le proprietà del blocco di testo nel **visualizzatore delle proprietà attive**, nonché le linee orizzontali e verticali lungo i bordi del blocco di testo.  
   
- ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")  
+ ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")  
   
  **Anteprima selezione**. È possibile abilitare questa modalità selezionando il terzo pulsante da sinistra sulla barra degli strumenti nella finestra Albero elementi visivi attivi. Questa modalità mostra il codice XAML in cui è stato dichiarato l'elemento, se si ha accesso al codice sorgente dell'applicazione. Selezionare le opzioni **Abilita selezione** e **Anteprima selezione** e quindi selezionare il pulsante nell'applicazione di test. Il file MainWindow.xaml verrà aperto in Visual Studio e il cursore verrà posizionato sulla riga in cui è definito il pulsante.  
   
@@ -105,8 +105,8 @@ private void button_Click(object sender, RoutedEventArgs e)
   
 1. Avviare l'applicazione **TestXaml** nella configurazione di rilascio. Non è possibile eseguire l'associazione a un processo in esecuzione in una configurazione di tipo**Debug**.  
   
-2. Aprire una seconda istanza di Visual Studio e fare clic su **Debug / Connetti a processo**. Trovare **TestXaml.exe** nell'elenco di processi disponibili e fare clic su **Associa**.  
+2. Aprire una seconda istanza di Visual Studio e fare clic su **debug/Connetti a processo**. Trovare **TestXaml.exe** nell'elenco di processi disponibili e fare clic su **Associa**.  
   
 3. Viene avviata l'esecuzione dell'applicazione.  
   
-4. Nella seconda istanza di Visual Studio, aprire il **albero elementi visivi attivi** (**eseguire il Debug / Windows / albero elementi visivi attivi**). Dovrebbero venire visualizzati gli elementi dell'interfaccia utente di **TestXaml** e dovrebbe essere possibile modificarli nello stesso modo in cui sono stati modificati direttamente durante il debug dell'applicazione.
+4. Nella seconda istanza di Visual Studio aprire la **struttura ad albero visuale** attiva (**debug/finestre/albero elementi visivi attivi**). Dovrebbero venire visualizzati gli elementi dell'interfaccia utente di **TestXaml** e dovrebbe essere possibile modificarli nello stesso modo in cui sono stati modificati direttamente durante il debug dell'applicazione.

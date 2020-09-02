@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElements | Microsoft Docs
+title: 'IDebugArrayObject:: GetElements | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cad81d76e2fcec01fa50a37fa6ab6cb49cfc79be
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423699"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
@@ -40,13 +40,13 @@ int GetElements(
   
 #### <a name="parameters"></a>Parametri  
  `ppEnum`  
- [out] Restituisce un [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) oggetto che consente l'enumerazione su tutti gli elementi.  
+ out Restituisce un oggetto [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md) che consente l'enumerazione su tutti gli elementi.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- In alternativa, usare il [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) e [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) metodi per scorrere gli elementi.  
+## <a name="remarks"></a>Osservazioni  
+ In alternativa, usare i metodi [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) e [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) per scorrere gli elementi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

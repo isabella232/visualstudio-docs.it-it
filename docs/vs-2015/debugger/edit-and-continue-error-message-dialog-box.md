@@ -1,5 +1,5 @@
 ---
-title: Modifica e continuazione finestra di messaggio di errore | Microsoft Docs
+title: Finestra di dialogo modifica e continuazione messaggio di errore | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5437ef982309ef8595f08283f2685e93d346e764
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428294"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Finestra di dialogo di errore di Modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa finestra di dialogo viene visualizzata quando si esegue il debug in un linguaggio che supporta la modifica e continuazione, ma **modifica e continuazione** non è disponibile per il tipo di sono state apportate modifiche al codice. Nel messaggio di errore sono riportate informazioni più dettagliate. Questa finestra di dialogo può essere visualizzata per uno dei seguenti motivi:  
+Questa finestra di dialogo viene visualizzata quando si esegue il debug in un linguaggio che supporta modifica e continuazione, ma la funzionalità **modifica e continuazione** non è disponibile per il tipo di modifiche apportate al codice. Nel messaggio di errore sono riportate informazioni più dettagliate. Questa finestra di dialogo può essere visualizzata per uno dei seguenti motivi:  
   
 - Si è tentato di modificare il codice gestito mentre era abilitato il debug di codice non gestito. La funzionalità Modifica e continuazione non è compatibile con il debug in modalità mista.  
   
@@ -37,15 +37,15 @@ Questa finestra di dialogo viene visualizzata quando si esegue il debug in un li
   
 - Si è tentato di modificare il codice durante il debug di un dump di Dr. Watson.  
   
-- Si è provato a modificare il codice dopo che si è verificata un'eccezione non gestita e l'opzione "**Rimuovi stack di chiamate su eccezioni non gestite**" non è stato selezionato.  
+- Si è tentato di modificare il codice dopo un'eccezione non gestita ed è stata selezionata l'opzione "**Rimuovi stack di chiamate su eccezioni non gestite**".  
   
 - Si è tentato di modificare il codice durante il debug di un'applicazione di runtime incorporata.  
   
-- Si è provato a modificare il codice in un programma che si era connessi anziché avviandolo dal **Debug** menu.  
+- Si è tentato di modificare il codice in un programma a cui si è connessi anziché iniziare dal menu **debug** .  
   
 - Si è tentato di modificare il codice ottimizzato.  
   
-- Si è tentato di modificare il codice gestito quando la destinazione è un'applicazione a 64 bit. Se si desidera utilizzare Modifica e continuazione, è necessario impostare la destinazione su x86 (*Project* **delle proprietà**, **compilare** scheda **del compilatore avanzate** impostazione.).  
+- Si è tentato di modificare il codice gestito quando la destinazione è un'applicazione a 64 bit. Se si desidera utilizzare Modifica e continuazione, è necessario impostare la destinazione su x86 (*Project* **Proprietà**progetto, scheda **Compila** , impostazione **del compilatore avanzata** ).  
   
 - Si è tentato di modificare il codice in un assembly modificato durante il debug e ricaricato.  
   
@@ -55,7 +55,7 @@ Questa finestra di dialogo viene visualizzata quando si esegue il debug in un li
   
 - Si è tentato di modificare il codice durante l'esecuzione.  
   
-## <a name="uielement-list"></a>Elenco UIElement  
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia  
  **OK**  
  Chiudere la finestra di dialogo e annullare il tentativo di modifica immediatamente precedente.  
   

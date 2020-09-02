@@ -14,31 +14,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9453b9132543060819bbdabd0e504ec5dbae69e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62424024"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Enumera i vari stack frame disponibile.  
+Enumera i vari stack frame disponibili.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Recupera un numero specificato di elementi dello stack frame dalla sequenza di enumerazione.|  
-|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Recupera un numero specificato di elementi stack frame dalla sequenza di enumerazione.|  
+|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Riporta all'inizio la sequenza di enumerazione.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Ottenere questa interfaccia chiamando il [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) oppure [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) metodi.  
+ Ottenere questa interfaccia chiamando il metodo [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) o [IDiaStackWalker:: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) .  
   
 ## <a name="example"></a>Esempio  
- Questo esempio illustra come ottenere e usare il `IDiaEnumStackFrames` interfaccia. Vedere le [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) per un'implementazione dell'interfaccia di `PrintStackFrame` (funzione).  
+ Questo esempio illustra come ottenere e usare l' `IDiaEnumStackFrames` interfaccia. Vedere l'interfaccia [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) per un'implementazione della `PrintStackFrame` funzione.  
   
 ```cpp#  
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,  
@@ -66,14 +66,14 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: DIA2.h  
+ Intestazione: dia2. h  
   
- Libreria: diaguids.lib  
+ Libreria: diaguids. lib  
   
- DLL: MSDIA80  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)   
+ [IDiaStackWalker:: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

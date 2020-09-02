@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadMultiple | Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadMultiple | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 40cd84e00f2e6abea285368a6206c7400abf8877
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538083"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Operazioni di lettura specificata delle proprietà dal set di proprietà corrente.  
+Legge le proprietà specificate dal set di proprietà corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,19 +37,19 @@ HRESULT ReadMultiple( 
   
 #### <a name="parameters"></a>Parametri  
  `cpspec`  
- [in] Conteggio delle proprietà specificate nel `rgpspec` matrice. Se è zero, il metodo non restituisce nessuna proprietà ma restituire `S_OK` come un codice di riuscita.  
+ in Numero di proprietà specificate nella `rgpspec` matrice. Se è zero, il metodo non restituisce alcuna proprietà ma restituisce `S_OK` un codice di esito positivo.  
   
  `rgpspec`  
- [in] Una matrice di proprietà da leggere. Le proprietà possono essere specificate da un ID di proprietà o da un nome di stringa facoltativa. Non è necessario specificare le proprietà in un ordine specifico nella matrice. La matrice può contenere proprietà duplicate, generando i valori delle proprietà duplicate nell'output restituito per le proprietà semplici. Proprietà semplice non deve restituire l'accesso negato nel tentativo di aprirli una seconda volta. La matrice può contenere una combinazione di ID di proprietà e ID di stringa. Questa matrice deve avere almeno `cpspec` numero dei valori delle proprietà.  
+ in Matrice di proprietà da leggere. Le proprietà possono essere specificate da un ID di proprietà o da un nome di stringa facoltativo. Non è necessario specificare le proprietà in un ordine particolare nella matrice. La matrice può contenere proprietà duplicate, con la conseguente restituzione di valori di proprietà duplicati per le proprietà semplici. Le proprietà non semplici dovrebbero restituire accesso negato per un tentativo di aprirle una seconda volta. La matrice può contenere una combinazione di ID di proprietà e ID di stringa. Questa matrice deve contenere almeno un `cpspec` numero di valori di proprietà.  
   
  `rgvar`  
- [in, out] Matrice di `PROPVARIANT` strutture (nello spazio dei nomi Interop) da compilare con i valori per ogni proprietà. La matrice deve essere almeno `cpspec` le dimensioni degli elementi. Il chiamante non necessita inizializzare i valori nella matrice.  
+ [in, out] Matrice di `PROPVARIANT` strutture (nello spazio dei nomi Microsoft. VisualStudio. OLE. Interop) da compilare con i valori per ogni proprietà. La matrice deve contenere almeno `cpspec` elementi di dimensioni. Il chiamante non deve inizializzare i valori nella matrice.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se uno o più delle proprietà non è stato trovato. In caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se una o più proprietà non sono state trovate. In caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Se una proprietà non trovato, la voce corrispondente nel `rgvar` matrice contiene una `VARIANT` con il tipo di `VT_EMPTY`.  
+## <a name="remarks"></a>Osservazioni  
+ Se una proprietà non viene trovata, la voce corrispondente nella `rgvar` matrice contiene un oggetto `VARIANT` con il tipo di `VT_EMPTY` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

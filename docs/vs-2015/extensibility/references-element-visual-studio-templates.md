@@ -1,5 +1,5 @@
 ---
-title: Fa riferimento all'elemento (modelli di Visual Studio) | Microsoft Docs
+title: Elemento References (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19fd3e260e6c7079ccfb98f520858a31191cc112
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538213"
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento References (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.  
+Raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.  
   
  \<VSTemplate>  
  \<TemplateContent>  
- \<Riferimenti a >  
+ \<References>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -49,7 +49,7 @@ Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Riferimento](../extensibility/reference-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto. Deve esistere uno o più `Reference` elementi in un `References` elemento.|  
+|[Riferimento](../extensibility/reference-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto. Devono essere presenti uno o più `Reference` elementi in un `References` elemento.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
@@ -57,13 +57,13 @@ Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.
 |-------------|-----------------|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Specifica il contenuto del modello.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `References` è un elemento figlio facoltativo di `TemplateContent`.  
   
- Il `Reference` e `References` elementi possono essere utilizzati solo nei file con estensione vstemplate che hanno una `Type` valore dell'attributo `Item`.  
+ Gli `Reference` `References` elementi e possono essere utilizzati solo nei file con estensione vstemplate il cui `Type` valore di attributo è `Item` .  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato il `TemplateContent` elemento di un modello di elemento. Questo file XML vengono aggiunti riferimenti agli assembly System. dll e System.  
+ Nell'esempio seguente viene illustrato l' `TemplateContent` elemento di un modello di elemento. Il codice XML aggiunge riferimenti agli assembly System.dll e System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -84,5 +84,5 @@ Raggruppa i riferimenti all'assembly che il modello aggiunge ai progetti.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

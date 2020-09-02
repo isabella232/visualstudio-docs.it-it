@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a24513e5d047501417e4c61285662f7167241e3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414659"
 ---
 # <a name="stepkind"></a>STEPKIND
@@ -50,21 +50,21 @@ public enum enum_STEPKIND { 
  Passaggi in una funzione.  
   
  STEP_OVER  
- Istruzioni/routine di una funzione.  
+ Passaggi su una funzione.  
   
  STEP_OUT  
- Esce dalla funzione.  
+ Esce da una funzione.  
   
  STEP_BACKWARDS  
- Procedura con le versioni precedenti in una funzione.  
+ Viene descritta la procedura indietro in una funzione.  
   
-## <a name="remarks"></a>Note  
- Passato come argomento per il [passaggio](../../../extensibility/debugger/reference/idebugprocess3-step.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Passato come argomento al metodo [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

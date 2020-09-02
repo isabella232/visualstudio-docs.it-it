@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::SetObjectForVisualizer | Microsoft Docs
+title: 'IEEVisualizerDataProvider:: SetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d20164e31f8c42b7099f99ff34ac120319a2def1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540279"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo modifica l'oggetto che rappresenta il visualizzatore.  
+Questo metodo modifica l'oggetto rappresentato dal visualizzatore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,19 +44,19 @@ int SetObjectForVisualizer(
   
 #### <a name="parameters"></a>Parametri  
  `pNewObject`  
- [in] Oggetto da impostare.  
+ in Oggetto da impostare.  
   
  `error`  
- [out] Se si è verificato un errore durante l'impostazione dell'oggetto, questa stringa contiene il messaggio di errore.  
+ out Se si è verificato un errore durante l'impostazione dell'oggetto, questa stringa contiene il messaggio di errore.  
   
  `pException`  
- [out] Se si è verificato un errore, questo oggetto contiene le informazioni sull'eccezione.  
+ out Se si è verificato un errore, questo oggetto contiene le informazioni sull'eccezione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- È responsabilità dell'implementatore per determinare le modalità di restituzione di informazioni sull'errore. Tuttavia, è possibile che alcuni chiamanti possano solo vedere se è stato restituito un oggetto eccezione conoscere presenti l'aspetto è verificato un errore, in modo che questo metodo deve sempre restituire un oggetto eccezione, se si è verificato un errore. La stringa di errore deve essere fornita anche nel caso in cui il chiamante desidera assicurarsi di usarla.  
+## <a name="remarks"></a>Osservazioni  
+ Spetta all'implementatore determinare il modo in cui vengono restituite le informazioni sugli errori. Tuttavia, è possibile che alcuni chiamanti possano controllare solo se è stato restituito un oggetto eccezione per sapere che si è verificato un errore, pertanto questo metodo deve restituire sempre un oggetto eccezione se si è verificato un errore. È necessario specificare anche la stringa di errore nel caso in cui il chiamante voglia utilizzarlo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

@@ -1,5 +1,5 @@
 ---
-title: Idiaenumtables | Microsoft Docs
+title: 'IDiaEnumTables:: Item | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eec94a5a02eda8fe9b1b3bf8f76f5050ab1e020
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423868"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una tabella tramite un indice o nome.  
+Recupera una tabella per mezzo di un indice o un nome.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>Parametri  
  `index`  
- [in] Indice o nome del [IDiaTable](../../debugger/debug-interface-access/idiatable.md) da recuperare. Se si usa una variante dell'integer, deve essere compreso nell'intervallo da 0 a `count`-1, dove `count` viene restituito dalle [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables-get-count.md) (metodo).  
+ in Indice o nome del [IDiaTable](../../debugger/debug-interface-access/idiatable.md) da recuperare. Se viene usata una variante Integer, deve essere compresa nell'intervallo da 0 a `count` -1, dove `count` viene restituito dal metodo [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) .  
   
  `table`  
- [out] Restituisce un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) oggetto che rappresenta la tabella desiderata.  
+ out Restituisce un oggetto [IDiaTable](../../debugger/debug-interface-access/idiatable.md) che rappresenta la tabella desiderata.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Se viene specificata una variante di stringa, la stringa di nomi di una determinata tabella. Il nome deve essere uno dei nomi di tabella come definito in [costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).  
+## <a name="remarks"></a>Osservazioni  
+ Se viene specificata una stringa Variant, la stringa assegna un nome a una tabella specifica. Il nome deve essere uno dei nomi di tabella come definito in [costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).  
   
 ## <a name="example"></a>Esempio  
   
@@ -60,5 +60,5 @@ pEnumTables->Item( var, &pTable );
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
+ [IDiaEnumTables:: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
  [Costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)

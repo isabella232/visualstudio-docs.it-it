@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428551"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifica e continuazione (Visual Basic)
@@ -43,8 +43,8 @@ Modifica e continuazione è una funzionalità per il debug di [!INCLUDE[vbprvb](
   
  Negli argomenti di questa sezione vengono fornite informazioni dettagliate sull'utilizzo di questa funzionalità e sui tipi di modifiche non consentiti.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Applicare modifiche in modalità di interruzione con Modifica e continuazione](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: applicare modifiche in modalità di interruzioni con modifica e continuazione](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Viene descritto come applicare modifiche al codice in modalità di interruzione.  
   
  [Modifiche non supportate in Modifica e continuazione di Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  

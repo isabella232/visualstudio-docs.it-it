@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetLanguage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8124e0c6328695da9773edbfd949ec2634dbfdb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421772"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
@@ -44,18 +44,18 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Parametri  
  `pAddress`  
- [in] Un oggetto indirizzo rappresentato da un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.  
+ in Oggetto Address rappresentato da un'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pguidLanguage`  
- [out] Restituisce un `GUID` che specifica la lingua.  
+ out Restituisce un oggetto `GUID` che specifica la lingua.  
   
  `pguidLanguageVendor`  
- [out] Restituisce un `GUID` che specifica il fornitore di linguaggio.  
+ out Restituisce un oggetto `GUID` che specifica il fornitore del linguaggio.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Il motore di debug chiama questo metodo per ottenere le informazioni necessarie per selezionare l'analizzatore di espressioni corretto.  
   
 ## <a name="see-also"></a>Vedere anche  

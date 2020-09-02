@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e18e906cbc65ea811e765553a8d2711b3e4eb0f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423738"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
+# <a name="field_info"></a>FIELD_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa struttura descrive una variabile locale, parametro o altri campi.  
+Questa struttura descrive una variabile locale, un parametro o un altro campo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,27 +48,27 @@ public struct FIELD_INFO {
   
 ## <a name="members"></a>Membri  
  dwFields  
- Una combinazione di flag dal [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) enumerazione che specifica i membri che vengono compilati.  
+ Combinazione di flag dell'enumerazione [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) che specifica i membri che vengono compilati.  
   
  bstrFullName  
- Il nome completo del campo.  
+ Nome completo del campo.  
   
  bstrName  
- Il nome breve del campo.  
+ Nome breve del campo.  
   
  bstrType  
- Il tipo del campo.  
+ Tipo del campo.  
   
  dwModifiers  
- Una combinazione di flag dal [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumerazione che descrive il campo.  
+ Combinazione di flag dell'enumerazione [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) che descrive il campo.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene passata per il [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) in cui viene compilato nel metodo.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) dove viene compilata.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

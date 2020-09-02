@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Visualizzare le informazioni di traccia WPF | Microsoft Docs'
+title: 'Procedura: visualizzazione di informazioni di traccia WPF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537960"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Procedura: Visualizzare le informazioni di traccia WPF
+# <a name="how-to-display-wpf-trace-information"></a>Procedura: visualizzare le informazioni di traccia WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] è in grado di ricevere informazioni di traccia di debug da applicazioni WPF e di visualizzare tali informazioni nella finestra **Output**. Per visualizzare le informazioni di traccia di debug, la tracciatura WPF deve essere abilitata.  
@@ -33,7 +33,7 @@ ms.locfileid: "62537960"
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Per abilitare o personalizzare le informazioni di traccia WPF  
   
-1. Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Options** (Opzioni) dal menu **Tools** (Strumenti).  
   
 2. Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "62537960"
   
      Verrà visualizzato un controllo elenco a discesa nella colonna Impostazioni accanto a **Data binding** o qualsiasi categoria selezionata.  
   
-8. Fare clic sull'elenco a discesa e selezionare il tipo di informazioni di traccia che si desidera visualizzare: **Tutti i**, **critici**, **errore**, **avviso**, **informazioni**, **Verbose**, o **ActivityTracing**.  
+8. Fare clic sull'elenco a discesa e selezionare il tipo di informazioni di traccia che si vuole visualizzare: **Tutto**, **Critico**, **Errore**, **Avviso**, **Informazioni**, **Dettaglio** o **Attività**.  
   
      **Critico** abilita solo la tracciatura di eventi Critico.  
   
@@ -69,7 +69,7 @@ ms.locfileid: "62537960"
   
 ### <a name="to-disable-wpf-trace-information"></a>Per disabilitare le informazioni di traccia WPF  
   
-1. Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Options** (Opzioni) dal menu **Tools** (Strumenti).  
   
 2. Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.  
   

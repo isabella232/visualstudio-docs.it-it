@@ -1,5 +1,5 @@
 ---
-title: La registrazione di una finestra degli strumenti | Microsoft Docs
+title: Registrazione di una finestra degli strumenti | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8178938715278bf69fe8f4cc1b336bbd19cec04e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535638"
 ---
 # <a name="registering-a-tool-window"></a>Registrazione di una finestra degli strumenti
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {  
 ```  
   
- Nel codice precedente, il <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra le finestre degli strumenti PersistedWindowPane e DynamicWindowPane con Visual Studio. La finestra degli strumenti persistente viene ancorata e a schede con **Esplora soluzioni**, e la finestra dinamica è stata assegnata un valore predefinito a partire da posizione e dimensioni. La finestra dinamica viene resa temporanea, che indica che non è stato creato all'avvio. Scrive un valore DontForceCreate nella chiave di ToolWindows nel Registro di sistema. Per altre informazioni, vedere [configurazione visualizzazione della finestra degli strumenti](../extensibility/tool-window-display-configuration.md).
+ Nel codice precedente <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra le finestre degli strumenti PersistedWindowPane e DynamicWindowPane con Visual Studio. La finestra degli strumenti permanente è ancorata e a schede con **Esplora soluzioni**e alla finestra dinamica viene assegnata una posizione e una dimensione di inizio predefinite. La finestra dinamica viene resa temporanea, a indicare che non viene creata all'avvio. Viene scritto un valore DontForceCreate nella chiave ToolWindows nel registro di sistema. Per ulteriori informazioni, vedere [configurazione dello schermo della finestra degli strumenti](../extensibility/tool-window-display-configuration.md).

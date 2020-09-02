@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8ff6b4d35447125d5923bea1a0b2d2bb48dff79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421616"
 ---
-# <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
+# <a name="idiasectioncontribget_length"></a>IDiaSectionContrib::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera il numero di byte in una sezione.  
@@ -35,7 +35,7 @@ HRESULT get_length ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il numero di byte in una sezione.  
+ out Restituisce il numero di byte in una sezione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64eee421a5ed5bd46a64b51694d913a4f2dc4d41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538876"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legge `BOOL` valori in un set di proprietà.  
+Legge `BOOL` i valori in un set di proprietà.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ HRESULT ReadBOOL ( 
   
 #### <a name="parameters"></a>Parametri  
  `id`  
- [in] Identificatore della proprietà da leggere (`PROPID` definito in Wtypes. H come un `ULONG`).  
+ in Identificatore della proprietà da leggere ( `PROPID` è definito in Wtypes. h come `ULONG` ).  
   
  `pValue`  
- [out] Restituisce il valore della proprietà.  
+ out Restituisce il valore della proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BOOL`.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BOOL` .  
   
-## <a name="remarks"></a>Note  
- Per ottenere risultati coerenti, interpretare la `BOOL` valore in modo che siano valori diversi da zero `TRUE` e zero è `FALSE`.  
+## <a name="remarks"></a>Osservazioni  
+ Per risultati coerenti, interpretare il `BOOL` valore in modo che i valori diversi da zero siano `TRUE` e zero sia `FALSE` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

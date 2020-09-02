@@ -13,24 +13,24 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3050e89db2f5cbb138f3d358b10c7cd936c560e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423387"
 ---
-# <a name="stack-frames"></a>Stack frame
+# <a name="stack-frames"></a>Frame dello stack
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In termini di architettura del debugger, un **frame dello stack**:  
+In termini di architettura del debugger, un **stack frame**:  
   
-- È un'astrazione di un oggetto stack che fornisce il contesto di esecuzione di un thread. Un thread viene sempre eseguito all'interno di una funzione. Uno stack frame contiene le variabili locali della funzione e gli argomenti ad esso. Per eseguire il debug con Visual Studio, la lingua o l'ambiente in fase di debug deve supportare gli stack frame.  
+- È un'astrazione di uno stack che fornisce il contesto di esecuzione di un thread. Un thread viene sempre eseguito all'interno di una funzione. Un stack frame include le variabili locali della funzione e gli argomenti. Per eseguire il debug con Visual Studio, il linguaggio o l'ambiente di cui è in corso il debug deve supportare gli stack frame.  
   
-- Possono entrambi identificare e descrivere se stesso e può restituire il thread associato. Uno stack frame può restituire anche il contesto del codice che rappresenta il puntatore all'istruzione corrente, nonché la documentazione associata e contesti di valutazione di espressione.  
+- È in grado di identificare e descrivere se stesso e può restituire il thread associato. Un stack frame può anche restituire il contesto del codice che rappresenta il puntatore all'istruzione corrente, nonché i contesti di documentazione e di valutazione dell'espressione associati.  
   
-- Dispone di proprietà che descrivono il nome, tipo e valore di argomenti e variabili locali e che vengono visualizzati nelle varie finestre di debug dell'IDE.  
+- Dispone di proprietà che descrivono il nome, il tipo e il valore di variabili e argomenti locali e che vengono visualizzati in diverse finestre di debug dell'IDE.  
   
-- È rappresentato da un [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interfaccia, in genere creato da un motore di debug (DE) o una macchina virtuale come conseguenza l'esecuzione di un thread.  
+- È rappresentato da un'interfaccia [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) , in genere creata da un motore di debug (de) o da una macchina virtuale come conseguenza dell'esecuzione di un thread.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)   

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0c7a796a57d5c96d870850bb02051d745fd8473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538829"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legge `BSTR` valori in un set di proprietà.  
+Legge `BSTR` i valori in un set di proprietà.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ HRESULT ReadBSTR ( 
   
 #### <a name="parameters"></a>Parametri  
  `id`  
- [in] Identificatore della proprietà da leggere (`PROPID` definito in Wtypes. H come un `ULONG`).  
+ in Identificatore della proprietà da leggere ( `PROPID` è definito in Wtypes. h come `ULONG` ).  
   
  `pValue`  
- [out] Restituisce il valore della proprietà.  
+ out Restituisce il valore della proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BSTR`.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BSTR` .  
   
-## <a name="remarks"></a>Note  
- Oggetto `BSTR` è definito da Windows come una stringa con terminazione zero caratteri "wide".  
+## <a name="remarks"></a>Osservazioni  
+ Un oggetto `BSTR` viene definito da Windows come stringa di caratteri wide con terminazione zero.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

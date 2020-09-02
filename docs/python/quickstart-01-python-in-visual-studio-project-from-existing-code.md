@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429090"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Guida introduttiva: Creare un progetto Python a partire da un codice esistente
@@ -26,7 +26,7 @@ Dopo aver [installato il supporto Python in Visual Studio](installing-python-sup
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-Se lo si desidera, eseguire il programma premendo **Ctrl**+**F5** o selezionando **Avvia debug** > **senza eseguire debug**.
+Se lo si desidera, eseguire il programma premendo **CTRL** + **F5** o selezionando **debug**  >  **Avvia senza eseguire debug**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

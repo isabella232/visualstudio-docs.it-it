@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadDWORD | Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadDWORD | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e92b74fc1165adf359614e354ab60f3fc118e34b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538839"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legge `DWORD` valori in un set di proprietà.  
+Legge `DWORD` i valori in un set di proprietà.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ HRESULT ReadDWORD ( 
   
 #### <a name="parameters"></a>Parametri  
  `id`  
- [in] Identificatore della proprietà da leggere (`PROPID` definito in Wtypes. H come un `ULONG`).  
+ in Identificatore della proprietà da leggere ( `PROPID` è definito in Wtypes. h come `ULONG` ).  
   
  `pValue`  
- [out] Restituisce il valore della proprietà.  
+ out Restituisce il valore della proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `DWORD`.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `DWORD` .  
   
-## <a name="remarks"></a>Note  
- Oggetto `DWORD` è definito da Windows come un intero senza segno a 32 bit.  
+## <a name="remarks"></a>Osservazioni  
+ Un `DWORD` viene definito da Windows come Unsigned Integer a 32 bit.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

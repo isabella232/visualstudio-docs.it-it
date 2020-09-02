@@ -25,21 +25,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431628"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare la **RPTn**, e **RPTFn** macro, definite in CRTDBG. H, per sostituire l'uso di `printf` istruzioni per eseguire il debug. Queste macro vengono automaticamente eliminate nel rilascio quando compilare **debug** non è definito, in modo che non è necessario racchiuderle tra istruzioni **#ifdef**s.  
+È possibile usare le macro **_RPTn**e **_RPTFn** , definite in CRTDBG. H, per sostituire l'utilizzo di `printf` istruzioni per il debug. Queste macro scompaiono automaticamente nella build di rilascio quando **_DEBUG** non è definito, pertanto non è necessario racchiuderle tra **#ifdef**.  
   
 |Macro|Descrizione|  
 |-----------|-----------------|  
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Genera una stringa di messaggio e da zero a quattro argomenti. Da _RPT1 a **_RPT4** la stringa di messaggio funge da stringa di formattazione di tipo printf per gli argomenti.|  
-|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|Uguale allo **RPTn** , ma queste macro generano anche il numero di riga e il nome del file in cui si trova la macro.|  
+|**_RPTF0**, **_RPTF1**, **, _RPTF2**, **_RPTF4**|Come **_RPTn** , ma queste macro restituiscono anche il nome del file e il numero di riga in cui si trova la macro.|  
   
  Si consideri l'esempio seguente:  
   
@@ -74,7 +74,7 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- Una chiamata a **ALERT_IF2** è stato possibile eseguire tutte le funzioni delle **printf** codice all'inizio di questo argomento:  
+ Una chiamata a **ALERT_IF2** può eseguire tutte le funzioni del codice **printf** all'inizio di questo argomento:  
   
 ```  
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   

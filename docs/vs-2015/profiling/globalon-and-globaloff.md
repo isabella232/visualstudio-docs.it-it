@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434228"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
@@ -23,7 +23,7 @@ Le opzioni **GlobalOff** e **GlobalOn** di VSPerfCmd.exe consentono di sospender
   
  È possibile specificare **GlobalOn** e **GlobalOff** come le uniche opzioni in una riga di comando di VSPerfCmd.exe oppure includerle in righe di comando che contengono anche le opzioni **Start**, **Launch** o **Attach**.  
   
- **GlobalOn** e **GlobalOff** possono anche essere combinate con le opzioni **ProcessOn**, **ProcessOff**, **ThreadOn** e  **ThreadOff**.  
+ **GlobalOn** e **GlobalOff** possono anche essere combinate con le opzioni **ProcessOn**, **ProcessOff**, **ThreadOn** e ** ThreadOff**.  
   
  Le opzioni **GlobalOn** e **GlobalOff** interagiscono con le opzioni **ProcessOn** e **ProcessOff** che controllano la raccolta dei dati per un processo specificato e con le opzioni **ThreadOn** e **ThreadOff** che controllano la raccolta dei dati per un thread specificato.  
   
@@ -33,7 +33,7 @@ Le opzioni **GlobalOff** e **GlobalOn** di VSPerfCmd.exe consentono di sospender
   
 - **GlobalOn** imposta immediatamente il conteggio globale Start/Stop su 1 e riprende la profilatura.  
   
-  Per altre informazioni, vedere [API per strumenti di profilatura](../profiling/profiling-tools-apis.md).  
+  Per altre informazioni, vedere [api strumenti di profilatura](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,24 +46,24 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>Parametri  
- nessuno  
+ Nessuno  
   
 ## <a name="valid-options"></a>Opzioni valide  
  **GlobalOn** e **GlobalOff** possono essere specificate su righe di comando che contengono anche le opzioni seguenti.  
   
- **Start:** `Method`  
+ **Inizio:**`Method`  
  Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.  
   
- **Launch:** `AppName`  
+ **Avvia:**`AppName`  
  Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.  
   
- **Attach:** `PID`  
+ **Connetti:**`PID`  
  Avvia la profilatura del processo specificato.  
   
- {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:**`PID`  
  Arresta o avvia la profilatura per il processo specificato.  
   
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:**`TID`  
  Arresta o avvia il profiling per il processo specificato (solo metodo di strumentazione).  
   
 ## <a name="example"></a>Esempio  

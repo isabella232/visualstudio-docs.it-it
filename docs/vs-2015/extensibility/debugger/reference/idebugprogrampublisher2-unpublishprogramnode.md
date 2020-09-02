@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode | Microsoft Docs
+title: 'IDebugProgramPublisher2:: UnpublishProgramNode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4fed7f35b87ec3e4a761b7adc33876affe778d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423134"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Rimuove un nodo di programma specificato dalla disponibilità del debug motori (DEs) e gestore di sessione di debug (SDM).  
+Rimuove un nodo di programma specificato dalla disponibilità ai motori di debug (DEs) e alla gestione del debug della sessione (SDM).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,15 +40,15 @@ int UnpublishProgramNode(
   
 #### <a name="parameters"></a>Parametri  
  `pProgramNode`  
- [in] Un' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il nodo di programma da rimuovere.  
+ in Oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il nodo del programma da rimuovere.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Una volta rimosso, il nodo di programma non è più disponibile per essere eseguita una query per le informazioni sul programma.  
+## <a name="remarks"></a>Osservazioni  
+ Una volta rimossa, il nodo del programma non è più disponibile per la query per le informazioni sul programma.  
   
- Per rendere disponibile un nodo di programma, chiamare il [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) (metodo).  
+ Per rendere disponibile un nodo di programma, chiamare il metodo [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

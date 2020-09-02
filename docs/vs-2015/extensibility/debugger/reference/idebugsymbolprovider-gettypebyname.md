@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetTypeByName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba2f16f2493207bb063fd2c9706f9866d23efa57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421213"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo associa un nome di simbolo a un tipo di simbolo.  
+Questo metodo esegue il mapping di un nome di simbolo a un tipo di simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,19 +44,19 @@ int GetTypeByName(
   
 #### <a name="parameters"></a>Parametri  
  `pszClassName`  
- [in] Il nome del simbolo.  
+ in Nome del simbolo.  
   
  `nameMatch`  
- [in] Seleziona il tipo di corrispondenza, ad esempio, distinzione maiuscole/minuscole. Un valore compreso il [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione.  
+ in Consente di selezionare il tipo di corrispondenza, ad esempio con distinzione tra maiuscole e minuscole. Valore dell'enumerazione [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .  
   
  `ppField`  
- [out] Restituisce il tipo di simbolo come un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.  
+ out Restituisce il tipo di simbolo come oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo è una versione generica del [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo è una versione generica di [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

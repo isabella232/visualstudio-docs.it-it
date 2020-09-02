@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2:: IsAddressSequencePoint | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 761264f57ba0eb0775159f3cc2c3385228723eb2
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540551"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
@@ -39,13 +39,13 @@ int IsAddressSequencePoint(
   
 #### <a name="parameters"></a>Parametri  
  `pAddress`  
- [in] Eseguire il debug indirizzo rappresentato dal [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.  
+ in Indirizzo di debug rappresentato dall'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'indirizzo di debug è un punto di sequenza, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE`.  
+ Se l'indirizzo di debug è un punto di sequenza, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(  

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField | Microsoft Docs
+title: 'IDebugObject2:: GetField | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58b3599d69f105e2ab2401daa4ea464a9b97da24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535161"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
@@ -40,12 +40,12 @@ int GetField(
   
 #### <a name="parameters"></a>Parametri  
  `ppField`  
- [out] Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto se non è un valore null.  
+ out Restituisce un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) se non è un valore null.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Un campo descrive il tipo dell'oggetto.  
   
 ## <a name="see-also"></a>Vedere anche  

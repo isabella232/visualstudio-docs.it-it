@@ -1,5 +1,5 @@
 ---
-title: '&lt;Le stringhe&gt; elemento (programma di avvio automatico) | Microsoft Docs'
+title: '&lt;Elemento Strings &gt; (Bootstrapper) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421525"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Le stringhe&gt; elemento (programma di avvio automatico)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Elemento Strings &gt; (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definisce le stringhe localizzate per i nomi dei prodotti, nomi dei pacchetti e i messaggi di errore di installazione.  
+Definisce le stringhe localizzate per i nomi dei prodotti, i nomi dei pacchetti e i messaggi di errore di installazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,19 +43,19 @@ Definisce le stringhe localizzate per i nomi dei prodotti, nomi dei pacchetti e 
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `Strings` elemento è figlio di `Package` elemento. Non dispone di attributi.  
+ L' `Strings` elemento è un elemento figlio dell' `Package` elemento. Non ha attributi.  
   
 ## <a name="string"></a>Stringa  
- Il `String` elemento è figlio di `Strings` elemento. Oggetto `Strings` elemento può avere uno o più `String` elementi.  
+ L' `String` elemento è un elemento figlio dell' `Strings` elemento. Un `Strings` elemento può contenere uno o più `String` elementi.  
   
  `String` ha l'attributo seguente.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Name`|Obbligatorio. Il nome della stringa.|  
+|`Name`|Obbligatorio. Nome della stringa.|  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente specifica tutte le stringhe in inglese per il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programma di installazione.  
+ Nell'esempio di codice seguente vengono specificate tutte le stringhe inglesi per il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programma di installazione.  
   
 ```  
 <Strings>  
@@ -77,4 +77,4 @@ Definisce le stringhe localizzate per i nomi dei prodotti, nomi dei pacchetti e 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [\<Package> Element](../deployment/package-element-bootstrapper.md)
+ [\<Package> Elemento](../deployment/package-element-bootstrapper.md)

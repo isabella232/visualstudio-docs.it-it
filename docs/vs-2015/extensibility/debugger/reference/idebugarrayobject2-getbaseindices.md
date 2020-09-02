@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
+title: 'IDebugArrayObject2:: GetBaseIndices | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c10fb65ec698bf9c5c9b7623b29e2f47851afe8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423599"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera gli indici di base (inferiore) per ogni indice dato il numero di dimensioni nella matrice.  
+Recupera gli indici di base (limiti inferiori) per ogni indice dato il numero di dimensioni nella matrice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,16 +41,16 @@ int GetBaseIndices (
   
 #### <a name="parameters"></a>Parametri  
  `dwRank`  
- [in] Il numero di dimensioni (rank) della matrice.  
+ in Numero di dimensioni (rango) della matrice.  
   
  `dwIndices`  
- [out] Indici base (inferiore) per la matrice.  
+ out Indici di base (limiti inferiori) per la matrice.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Ad esempio, questa funzione restituirà '5' per la matrice creata dal codice c# seguente:  
+## <a name="remarks"></a>Osservazioni  
+ Ad esempio, questa funzione restituisce ' 5' per la matrice creata dal codice C# seguente:  
   
 ```  
 int[] lengths = { 12 };  

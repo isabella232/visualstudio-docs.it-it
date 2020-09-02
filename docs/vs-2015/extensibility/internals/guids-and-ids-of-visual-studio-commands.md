@@ -15,52 +15,52 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538138"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID e ID dei comandi di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-I valori GUID e ID dei comandi inclusi nell'ambiente di sviluppo integrato (IDE) di Visual Studio vengono definiti nei file con estensione vsct che vengono installati come parte di Visual Studio SDK. Per altre informazioni, vedere [IDE-Defined comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
+I valori GUID e ID dei comandi inclusi in Visual Studio Integrated Development Environment (IDE) sono definiti nei file con estensione vsct installati come parte di Visual Studio SDK. Per altre informazioni, vedere [comandi, menu e gruppi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
- Per altre informazioni su come utilizzare gli oggetti dell'IDE che sono definiti in file con estensione vsct, vedere [estensione di menu e comandi](../../extensibility/extending-menus-and-commands.md).
+ Per altre informazioni su come usare gli oggetti IDE definiti nei file vsct, vedere [estensione di menu e comandi](../../extensibility/extending-menus-and-commands.md).
 
 ## <a name="finding-a-command-definition"></a>Ricerca di una definizione di comando
- Poiché Visual Studio definisce i comandi di più di mille, non è pratico elencarle tutte in questo articolo. Al contrario, seguire questi passaggi per individuare la definizione di un comando.
+ Poiché Visual Studio definisce più di 1000 comandi, non è pratico elencarli tutti qui. Attenersi invece alla seguente procedura per individuare la definizione di un comando.
 
 #### <a name="to-locate-a-command-definition"></a>Per individuare una definizione di comando
 
-1. In Visual Studio, aprire i file seguenti nella *percorso di installazione di Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ cartella: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.
+1. In Visual Studio aprire i file seguenti nella cartella *percorso di installazione di Visual Studio SDK*\VisualStudioIntegration\Common\Inc\: SharedCmdDef. vsct, ShellCmdDef. vsct, VsDbgCmdUsed. vsct, Venusmenu. vsct.
 
-    La maggior parte dei comandi di Visual Studio sono definiti in SharedCmdDef.vsct e ShellCmdDef.vsct. VsDbgCmdUsed.vsct definisce i comandi relativi al debugger e Venusmenu.vsct definisce i comandi specifici per lo sviluppo Web.
+    La maggior parte dei comandi di Visual Studio è definita in SharedCmdDef. vsct e ShellCmdDef. vsct. VsDbgCmdUsed. vsct definisce i comandi relativi al debugger e Venusmenu. vsct definisce i comandi specifici per lo sviluppo Web.
 
-2. Se il comando è una voce di menu, tenere presente il testo esatto della voce di menu. Se il comando è un pulsante sulla barra degli strumenti, si noti il testo della descrizione comando visualizzato quando si posiziona su di esso.
+2. Se il comando è una voce di menu, prendere nota del testo esatto della voce di menu. Se il comando è un pulsante su una barra degli strumenti, annotare il testo della descrizione comando visualizzato quando ci si sofferma su di esso.
 
-3. Premere CTRL + F per aprire la **trovare** nella finestra di dialogo.
+3. Premere CTRL + F per aprire la finestra di dialogo **trova** .
 
-4. Nel **Find what** , digitare il testo annotato nel passaggio 2.
+4. Nella casella **trova** Digitare il testo annotato nel passaggio 2.
 
-5. Verificare che **tutti i documenti aperti** viene visualizzato nei **Cerca in** casella.
+5. Verificare che **tutti i documenti aperti** siano visualizzati nella casella **Cerca in** .
 
-6. Fare clic sui **Trova successivo** pulsante fino a quando il testo selezionato nella `<Strings>` sezione di un [elemento pulsante](../../extensibility/button-element.md).
+6. Fare clic sul pulsante **Trova successivo** fino a quando non viene selezionato il testo nella `<Strings>` sezione di un [elemento Button](../../extensibility/button-element.md).
 
-    Il `<Button>` elemento che il comando viene visualizzata in è la definizione di comando.
+    L' `<Button>` elemento in cui il comando viene visualizzato è la definizione del comando.
 
-   Quando è stata trovata la definizione di comando, è possibile inserire una copia del comando in un altro menu o sulla barra degli strumenti mediante la creazione di un [elemento CommandPlacement](../../extensibility/commandplacement-element.md) che ha gli stessi `guid` e `id` valori del comando. Per altre informazioni, vedere [creazione di gruppi riutilizzabili di pulsanti](../../extensibility/creating-reusable-groups-of-buttons.md).
+   Una volta trovata la definizione del comando, è possibile inserire una copia del comando su un altro menu o una barra degli strumenti creando un [elemento CommandPlacement](../../extensibility/commandplacement-element.md) con gli `guid` stessi `id` valori e del comando. Per ulteriori informazioni, vedere [creazione di gruppi riutilizzabili di pulsanti](../../extensibility/creating-reusable-groups-of-buttons.md).
 
 ### <a name="special-cases"></a>Casi speciali
- Nei casi seguenti, il testo del menu o il testo della descrizione comando potrebbe non corrispondere esattamente quali sono le novità della definizione del comando.
+ Nei casi seguenti, il testo del menu o il testo della descrizione comando potrebbe non corrispondere esattamente a quello presente nella definizione del comando.
 
-- Voci di menu che includono un carattere sottolineato, ad esempio la **Print** comando il **File** menu, in cui il P è sottolineato.
+- Voci di menu che includono un carattere sottolineato, ad esempio il comando **stampa** del menu **file** , in cui il P è sottolineato.
 
-     I caratteri preceduti dal carattere '&' nei nomi di voce di menu sono visualizzati come sottolineato. Tuttavia, i file con estensione vsct sono scritti in XML, che usa il carattere '&' per indicare i caratteri speciali e richiede che deve essere digitata una e commerciale che deve essere visualizzato come&amp;'. Pertanto, in un file con estensione vsct, il **Print** comando è visualizzato come '&amp;Print'.
+     I caratteri preceduti dal carattere "&" nei nomi delle voci di menu vengono visualizzati sotto forma di sottolineatura. Tuttavia, i file con estensione vsct sono scritti in XML, che usa il carattere "&" per indicare caratteri speciali e richiede che una e commerciale che deve essere visualizzata debba essere digitata come ' &amp; '. Pertanto, in un file con estensione vsct, il comando **Print** viene visualizzato come " &amp; Print".
 
-- I comandi che hanno testo dinamico, ad esempio **salvare** *Filename corrente*e generato dinamicamente le voci di menu, ad esempio gli elementi nel **file recenti** elenco.
+- Comandi con testo dinamico, ad esempio **Salva** *nome file corrente*e voci di menu generate dinamicamente, ad esempio gli elementi nell'elenco dei **file recenti** .
 
-     Non vi è alcun modo affidabile per cercare testo dinamico. In alternativa, trovare un gruppo che ospita il comando desiderato consultando [GUID e ID del menu di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oppure [GUID e ID di Visual Studio le barre degli strumenti](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e cercare l'ID di tale gruppo. Se la definizione di comando non è presente il gruppo come relativo [elemento padre](../../extensibility/parent-element.md), cercare SharedCmdPlace.vsct e ShellCmdPlace.vsct (o VsDbgCmdPlace.vsct per i comandi del debugger) un `<CommandPlacement>` che imposta l'elemento padre dell'elemento di comando. AndVsDbgCmdPlace.vsct SharedCmdPlace.vsct, ShellCmdPlace.vsct, inclusi i *percorso di installazione di Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ cartella.
+     Non esiste un modo affidabile per eseguire ricerche in testo dinamico. Trovare invece un gruppo che ospita il comando desiderato consultando [GUID e ID dei menu di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) o [GUID e ID delle barre degli strumenti di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e cercare l'ID del gruppo. Se la definizione del comando non dispone del gruppo come [elemento padre](../../extensibility/parent-element.md), cercare SharedCmdPlace. vsct e ShellCmdPlace. vsct (o VsDbgCmdPlace. vsct per i comandi del debugger) per un `<CommandPlacement>` elemento che imposta l'elemento padre del comando. SharedCmdPlace. vsct, ShellCmdPlace. vsct, andVsDbgCmdPlace. vsct si trovano nella cartella *percorso di installazione di Visual Studio SDK*\VisualStudioIntegration\Common\Inc\.
 
 ## <a name="see-also"></a>Vedere anche
- [Confronto tra oggetti MenuCommand e OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) [Visual Studio Command Table (. File Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [riferimento allo Schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
+ [Oggetti MenuCommand rispetto](../../misc/menucommands-vs-olemenucommands.md) alla [tabella di comandi di Visual Studio OleMenuCommands (. File vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)

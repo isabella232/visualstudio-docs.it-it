@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d97f4f065d48b2b9c56bf029fb944eb3e4e7cb11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414591"
 ---
 # <a name="stepunit"></a>STEPUNIT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica l'unità di incremento per l'esecuzione di istruzioni.  
+Specifica l'unità di misura per l'esecuzione di istruzioni.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,21 +45,21 @@ enum enum_STEPUNIT { 
   
 ## <a name="members"></a>Membri  
  STEP_STATEMENT  
- Procedura dall'istruzione.  
+ Passaggi per istruzione.  
   
  STEP_LINE  
- Procedura dalla riga.  
+ Passaggi per riga.  
   
  STEP_INSTRUCTION  
- Procedura dall'istruzione.  
+ Passaggi per istruzione.  
   
-## <a name="remarks"></a>Note  
- Passato come argomento per il [passaggio](../../../extensibility/debugger/reference/idebugprocess3-step.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Passato come argomento al metodo [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

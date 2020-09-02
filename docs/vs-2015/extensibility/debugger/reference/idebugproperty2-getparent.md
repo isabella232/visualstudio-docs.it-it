@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetParent | Microsoft Docs
+title: 'IDebugProperty2:: GetParent | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85c8ac00550c4a8e63cd06bdabf9e794f636129d
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538714"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
@@ -40,10 +40,10 @@ int GetParent ( 
   
 #### <a name="parameters"></a>Parametri  
  `ppParent`  
- [out] Restituisce un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che rappresenta l'elemento padre della proprietà.  
+ out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta l'elemento padre della proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Restituisce `S_GETPARENT_NO_PARENT` se non esiste alcun padre.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore. Restituisce `S_GETPARENT_NO_PARENT` se non esiste alcun padre.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

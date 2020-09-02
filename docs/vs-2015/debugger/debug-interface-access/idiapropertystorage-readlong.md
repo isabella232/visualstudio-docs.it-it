@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08661272bea779ff0789619d58bf6f2837a21917
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538317"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Legge `LONG` valori in un set di proprietà.  
+Legge `LONG` i valori in un set di proprietà.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,16 +36,16 @@ HRESULT ReadDLONG ( 
   
 #### <a name="parameters"></a>Parametri  
  `id`  
- [in] Identificatore della proprietà da leggere (`PROPID` definito in Wtypes. H come un `ULONG`).  
+ in Identificatore della proprietà da leggere ( `PROPID` è definito in Wtypes. h come `ULONG` ).  
   
  `pValue`  
- [out] Restituisce il valore della proprietà.  
+ out Restituisce il valore della proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `LONG`.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `LONG` .  
   
-## <a name="remarks"></a>Note  
- Oggetto `LONG` è definito da Windows come un intero con segno a 32 bit.  
+## <a name="remarks"></a>Osservazioni  
+ Un `LONG` viene definito da Windows come intero con segno a 32 bit.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

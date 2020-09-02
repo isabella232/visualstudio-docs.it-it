@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3eb93749a3190bf2468c8d12e1ca906dc40f0cbd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428222"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera lo stride del matrice o matrice non sequenziale.  
+Recupera lo stride della matrice o della matrice con stride.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,10 +32,10 @@ HRESULT get_stride(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Un puntatore a un `DWORD` che contiene lo stride.  
+ out Puntatore a un oggetto `DWORD` che include lo stride.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 705bbb952436c9e87e16fe0a5901472b0bbb71be
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428286"
 ---
-# <a name="idiasymbolgetsubtype"></a>IDiaSymbol::get_subType
+# <a name="idiasymbolget_subtype"></a>IDiaSymbol::get_subType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera il tipo di sottoscrizione.  
+Recupera il sottotipo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -32,10 +32,10 @@ HRESULT get_subType(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Puntatore al tipo di sottoscrizione.  
+ out Puntatore al sottotipo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

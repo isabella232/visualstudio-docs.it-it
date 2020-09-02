@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Visualizzare le visualizzazioni di Spy + + | Microsoft Docs'
+title: 'Procedura: visualizzare le visualizzazioni di Spy + + | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,17 +12,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6e034bdf1ecefc996aa238cbcd97616d083363b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538787"
 ---
-# <a name="how-to-display-spy-views"></a>Procedura: Visualizzare le visualizzazioni di Spy++
+# <a name="how-to-display-spy-views"></a>Procedura: visualizzare le visualizzazioni di Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Avvio di Spy + +, viene aperto in [Windows Vista](../debugger/windows-view.md), una visualizzazione struttura ad albero di tutte le finestre e i controlli disponibili nel computer. Questa finestra di primo livello è stata aggiunta una didascalia "Windows 1". Sono disponibili anche altre tre visualizzazioni di Spy + +: [La visualizzazione messaggi](../debugger/messages-view.md), [visualizzazione processi](../debugger/processes-view.md), e [visualizzazione thread](../debugger/threads-view.md). È possibile visualizzare la visualizzazione desiderata di **Spy** menu. Per altre informazioni, vedere [visualizzazioni di Spy + +](../debugger/spy-increment-views.md).  
+Quando viene avviato, Spy + + viene aperto in [visualizzazione di Windows](../debugger/windows-view.md), una visualizzazione albero di tutte le finestre e i controlli disponibili nel computer. Questa finestra radice è con didascalia "Windows 1". Sono disponibili anche altre tre visualizzazioni di Spy + +: [visualizzazione messaggi](../debugger/messages-view.md), [visualizzazione processi](../debugger/processes-view.md)e [visualizzazione thread](../debugger/threads-view.md). È possibile visualizzare la visualizzazione desiderata dal menu **Spy** . Per altre informazioni, vedere [visualizzazioni di Spy + +](../debugger/spy-increment-views.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Uso di Spy++](../debugger/using-spy-increment.md)   
- [riferimenti per Spy++](../debugger/spy-increment-reference.md)
+ [Uso di Spy + +](../debugger/using-spy-increment.md)   
+ [Riferimenti per Spy++](../debugger/spy-increment-reference.md)

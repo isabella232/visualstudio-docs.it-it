@@ -11,16 +11,16 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e59d3eb67fe45003babf53862736a435586deeeb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537940"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Fornisce supporto per un fornitore di porte selezionare e interagire con un server core.  
+Fornisce supporto per un fornitore di porte per la selezione e l'interazione con un server di base.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -29,19 +29,19 @@ IDebugPortSupplierEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Un fornitore di porte personalizzato implementa questa interfaccia in modo che è possibile selezionare il server core da usare.  
+ Un fornitore di porte personalizzato implementa questa interfaccia in modo che sia in grado di selezionare il server principale da usare.  
   
 ## <a name="methods"></a>Metodi  
- Nella tabella seguente sono illustrati i metodi di **IDebugPortSupplierEx2**.  
+ La tabella seguente illustra i metodi di **IDebugPortSupplierEx2**.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Imposta il server principale per il fornitore della porta.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Portpriv.h  
+ Intestazione: Portpriv. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

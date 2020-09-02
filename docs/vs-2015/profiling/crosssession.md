@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05e1f2360b3257e44fde1af8be3554dd7fd95115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537180"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -30,18 +30,18 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```  
   
 #### <a name="parameters"></a>Parametri  
- nessuno  
+ Nessuno  
   
 ## <a name="valid-options"></a>Opzioni valide  
  Per abilitare la profilatura in un'altra sessione, l'opzione **CrossSession** deve essere specificata con l'opzione **Start**. **CrossSession** deve essere specificata anche in tutti i comandi **Attach e Detach** di **VSPerfCmd**.  
   
- **Start:** `Method`  
+ **Inizio:**`Method`  
  L'opzione **Start** inizializza il profiler sul metodo di profilatura specificato.  
   
- **Attach:** _PID_[**,**_PID_]  
+ **Connetti:** _PID_[**,**_PID_]  
  Avvia la profilatura dei processi specificati.  
   
- **Detach**[**:**_PID_[,_PID_]]  
+ **Scollega**[**:**_PID_[,_PID_]]  
  Arresta la profilatura dei processi specificati.  
   
 ## <a name="example"></a>Esempio  

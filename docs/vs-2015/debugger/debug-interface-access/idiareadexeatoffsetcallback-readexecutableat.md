@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ac5452437ab6fdec3eb68baf46aeeab8434df4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538863"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
@@ -38,19 +38,19 @@ HRESULT ReadExecutableAt ( 
   
 #### <a name="parameters"></a>Parametri  
  fileOffset  
- [in] Offset nel file eseguibile per iniziare la lettura.  
+ in Offset nel file eseguibile da cui iniziare la lettura.  
   
  cbData  
- [in] Numero di byte da leggere.  
+ in Numero di byte da leggere.  
   
  pcbData  
- [out] Restituisce il numero di byte letti.  
+ out Restituisce il numero di byte letti.  
   
  data[]  
- [in, out] Matrice che viene compilata con byte letti dal file.  
+ [in, out] Matrice compilata con byte letti dal file.  
   
-## <a name="remarks"></a>Note  
- Questo metodo viene chiamato dal codice di supporto di DIA per caricare i byte di dati da un eseguibile usando un offset di file assoluto. Questo metodo viene chiamato supportare le [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo viene chiamato dal codice di supporto DIA per caricare i byte di dati da un eseguibile usando un offset assoluto del file. Questo metodo viene chiamato per supportare il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   

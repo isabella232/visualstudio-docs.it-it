@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext | Microsoft Docs
+title: 'IDebugBinder:: GetMemoryContext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db8d8d820c43d17194feda0bf228227a279dccc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423413"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo converte una posizione di oggetto o un indirizzo di memoria in un contesto in memoria.  
+Questo metodo converte il percorso di un oggetto o un indirizzo di memoria in un contesto di memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,16 +44,16 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>Parametri  
  `pField`  
- [in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi usare `dwConstant` invece.  
+ in Oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL` , usare `dwConstant` invece.  
   
  `dwConstant`  
- [in] Un indirizzo di memoria costante, ad esempio 0x5000.  
+ in Un indirizzo di memoria costante, ad esempio 0x5000.  
   
  `ppMemCxt`  
- [out] Restituisce il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaccia che rappresenta l'indirizzo dell'oggetto o l'indirizzo in memoria.  
+ out Restituisce l'interfaccia [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che rappresenta l'indirizzo dell'oggetto o l'indirizzo in memoria.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
