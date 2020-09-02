@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugField::Equal . Documenti Microsoft
+title: 'IDebugField:: EQUAL | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8a45a31c02376f95c3cd6b0c4a4adf0434fabe92
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729016"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-Questo metodo confronta questo campo con il campo specificato per l'uguaglianza.
+Questo metodo confronta questo campo con il campo specificato per verificarne l'uguaglianza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ int Equal(
 
 ## <a name="parameters"></a>Parametri
 `pField`\
-[in] Il campo da confrontare con questo.
+in Campo da confrontare con questo.
 
 ## <a name="return-value"></a>Valore restituito
- Se i campi sono `S_OK`uguali, restituisce . Se i campi sono `S_FALSE.` diversi, restituisce In caso contrario, restituisce un codice di errore.
+ Se i campi sono uguali, restituisce `S_OK` . Se i campi sono diversi, restituisce `S_FALSE.` in caso contrario, restituisce un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

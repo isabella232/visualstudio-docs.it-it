@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670305"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
@@ -23,11 +23,11 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
  Questo argomento include le sezioni seguenti:
 
- [Accesso agli strumenti di Visual Studio](../ide/productivity-tips-for-visual-studio.md#BKMK_Access)
+ [Accesso a Strumenti di Visual Studio](../ide/productivity-tips-for-visual-studio.md#BKMK_Access)
 
  [Scrittura di codice](../ide/productivity-tips-for-visual-studio.md#BKMK_Writing)
 
- [Spostamento all'interno del codice](../ide/productivity-tips-for-visual-studio.md#BKMK_Navigating)
+ [Navigazione all'interno del codice](../ide/productivity-tips-for-visual-studio.md#BKMK_Navigating)
 
  [Ricerca di elementi più veloce](../ide/productivity-tips-for-visual-studio.md#BKMK_Finding)
 
@@ -35,7 +35,7 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
  [Gestione di file, barre degli strumenti e finestre](../ide/productivity-tips-for-visual-studio.md#BKMK_Managing)
 
-## <a name="BKMK_Access"></a> Accesso agli strumenti di Visual Studio
+## <a name="accessing-visual-studio-tools"></a><a name="BKMK_Access"></a> Accesso a Strumenti di Visual Studio
  È possibile accedere facilmente al prompt dei comandi per gli sviluppatori o a un altro strumento se lo si aggiunge nella schermata iniziale o nella barra delle applicazioni.
 
 1. Nella schermata iniziale immettere `Visual Studio Tools` e quindi premere INVIO.
@@ -60,18 +60,18 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
 3. Scegliere **Aggiungi a Start** o **Aggiungi alla barra delle applicazioni**.
 
-## <a name="BKMK_Writing"></a> Scrittura di codice
+## <a name="writing-code"></a><a name="BKMK_Writing"></a> Scrittura di codice
  È possibile scrivere il codice più rapidamente tramite le seguenti funzionalità.
 
 - **Uso di applicazioni di esempio**. È possibile velocizzare lo sviluppo di applicazioni scaricando e installando gli esempi da MSDN Code Gallery. È inoltre possibile capire un particolare concetto di programmazione o tecnologico, scaricando e esplorando un Pacchetto di esempi di un'area.
 
-- **Uso di IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo. Ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci contenenti la combinazione di caratteri presente in qualsiasi posizione del nome. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) (Uso di IntelliSense).
+- **Utilizzare IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo. Ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci contenenti la combinazione di caratteri presente in qualsiasi posizione del nome. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) (Uso di IntelliSense).
 
 - **Modifica dell'inserimento automatico delle opzioni IntelliSense durante l'immissione del codice**. Se si attiva la modalità di suggerimento di IntelliSense, è possibile specificare che le opzioni IntelliSense vengano inserite solo se si scelgono in modo esplicito.
 
      Per abilitare la modalità di suggerimento, scegliere la combinazione di tasti CTRL + ALT + BARRA SPAZIATRICE o scegliere **Modifica**, **IntelliSense**, **Attiva/disattiva modalità di terminazione** nella barra dei menu.
 
-- **Uso di frammenti di codice**. È possibile utilizzare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
+- **Usare frammenti di codice**. È possibile utilizzare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
 
      Per inserire un frammento di codice, scegliere **Modifica**, **IntelliSense**, **Inserisci frammento di codice** nella barra dei menu o aprire il menu di scelta rapida in un file e scegliere **Inserisci frammento di codice**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
 
@@ -81,19 +81,19 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Figura 1: errori di smart tag
 
-     ![Suggerimenti smart tag errori](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
+     ![Suggerimenti smart tag errori](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
      Nelle caselle rosse vengono forniti suggerimenti per effettuare il refactoring del codice.
 
      Figura 2: refactoring degli smart tag
 
-     ![Suggerimenti smart tag refactoring](../ide/media/productivity-redsmarttags.png "|::ref2::|")
+     ![Suggerimenti smart tag refactoring](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
 
 - **Visualizzazione e modifica della definizione di un elemento di codice**. È possibile visualizzare e modificare rapidamente il modulo in cui viene definito un elemento di codice, ad esempio un membro, una variabile o un elemento locale.
 
-     Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi premere ALT+F12 o aprire il menu di scelta rapida per l'elemento e scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.
+     Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi premere ALT + F12 o aprire il menu di scelta rapida per l'elemento, quindi scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.
 
-## <a name="BKMK_Navigating"></a> Spostamento all'interno del codice
+## <a name="navigating-within-your-code"></a><a name="BKMK_Navigating"></a> Navigazione all'interno del codice
  È possibile utilizzare varie tecniche per trovare e spostarsi in punti specifici del codice più rapidamente.
 
 - **Inserimento di un segnalibro per le righe di codice**. È possibile utilizzare i segnalibri per passare rapidamente alle righe di codice specifiche in un file.
@@ -104,9 +104,9 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Per accedere a questa funzionalità, scegliere **Modifica**, **Passa a** nella barra dei menu.
 
-- **Esplorazione della struttura generale del codice**. In **Esplora soluzioni** è possibile cercare e visualizzare le classi e i relativi tipi e membri nei progetti. È inoltre possibile cercare simboli, visualizzare la gerarchia di chiamata di un metodo, trovare i riferimenti dei simboli ed eseguire altre attività. Se si sceglie un elemento di codice in **Esplora soluzioni**, il file associato viene visualizzato nella scheda **Anteprima** e il cursore si sposta sull'elemento nel file. Per altre informazioni, vedere [Viewing the Structure of Code](../ide/viewing-the-structure-of-code.md) (Visualizzazione della struttura del codice).
+- **Esplorazione della struttura generale del codice**. In **Esplora soluzioni** è possibile cercare e visualizzare le classi e i relativi tipi e membri nei progetti. È inoltre possibile cercare simboli, visualizzare la gerarchia di chiamata di un metodo, trovare i riferimenti dei simboli ed eseguire altre attività. Se si sceglie un elemento di codice in **Esplora soluzioni**, il file associato viene visualizzato nella scheda **Anteprima** e il cursore si sposta sull'elemento nel file. Per ulteriori informazioni, vedere [visualizzazione della struttura del codice](../ide/viewing-the-structure-of-code.md).
 
-## <a name="BKMK_Finding"></a> Ricerca di elementi più veloce
+## <a name="finding-items-faster"></a><a name="BKMK_Finding"></a> Ricerca di elementi più veloce
  È possibile cercare nell'IDE comandi, file e opzioni, oltre a filtrare il contenuto delle finestre degli strumenti per visualizzare solo informazioni rilevanti per l'attività corrente.
 
 - **Applicazione di filtri al contenuto delle finestre degli strumenti**. È possibile eseguire ricerche nel contenuto di molte finestre degli strumenti, come **Casella degli strumenti**, finestra **Proprietà** ed **Esplora soluzioni**, ma visualizzare solo gli elementi i cui nomi contengono i caratteri specificati.
@@ -117,16 +117,16 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Figura 3: elenco risultati di Avvio veloce per `new project`
 
-     ![Risultati di Avvio veloce per il nuovo progetto](../ide/media/productivity-quicklaunch.png "|::ref3::|")
+     ![Risultati di Avvio veloce per il nuovo progetto](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
      **Avvio veloce** consente di visualizzare i collegamenti alla finestra di dialogo **Nuovo progetto**, alla finestra di dialogo **Aggiungi nuovo elemento** e alla pagina Progetti e soluzioni nella finestra di dialogo **Opzioni**. I risultati di Avvio veloce possono anche includere file di progetto e finestre degli strumenti.
 
-## <a name="BKMK_Debugging"></a> Debug del codice
+## <a name="debugging-code"></a><a name="BKMK_Debugging"></a> Debug del codice
  Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di velocizzare il processo.
 
 - **Verifica della stessa pagina, applicazione o sito in diversi browser**. Quando si esegue il debug del codice, è possibile passare facilmente da un Web browser installato all'altro, compreso [Controllo pagina (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), senza dover aprire la finestra di dialogo **Esplora con**. È possibile usare l'elenco **Destinazione di debug**, che si trova sulla barra degli strumenti **Standard** accanto al pulsante **Avvia debug**, per verificare rapidamente quale browser si stia usando durante il debug o la visualizzazione delle pagine.
 
-     ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
+     ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
 - **Impostazione di punti di interruzione temporanei**. È possibile creare un punto di interruzione temporaneo nella riga di codice corrente e avviare contemporaneamente il debugger. Quando si raggiunge la riga di codice, viene attivata la modalità di interruzione del debugger. Per altre informazioni, vedere [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (Spostarsi nel codice con il Debugger).
 
@@ -144,14 +144,14 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Per altre informazioni su comandi aggiuntivi, vedere [Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio).
 
-## <a name="BKMK_Managing"></a> Gestione di file, barre degli strumenti e finestre
+## <a name="managing-files-toolbars-and-windows"></a><a name="BKMK_Managing"></a> Gestione di file, barre degli strumenti e finestre
  In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che sia necessario lavorare in più file di codice e spostarsi tra diverse finestre degli strumenti. I suggerimenti riportati di seguito consentono di organizzare al meglio le attività da eseguire.
 
 - **Blocco della visualizzazione dei file usati di frequente nell'editor**. È possibile bloccare i file nel lato sinistro della scheda in modo che rimangano visibili indipendentemente dal numero di file aperti nell'editor.
 
      Per bloccare un file, scegliere la scheda del file e quindi scegliere il pulsante **Attiva/disattiva stato di blocco**.
 
-- **Spostamento di documenti e finestre in altri monitor**. Se si utilizza più di un monitor durante lo sviluppo delle applicazioni, è possibile gestire più facilmente le parti dell'applicazione spostando i file aperti nell'editor in un altro monitor. È anche possibile spostare le finestre degli strumenti, come le finestre del debugger, in un altro monitor e ancorare le finestre degli strumenti e dei documenti per creare raggruppamenti. Per altre informazioni, vedere [How to: Arrange and Dock Windows](../misc/how-to-arrange-and-dock-windows.md) (Procedura: Disporre e ancorare le finestre).
+- **Spostamento di documenti e finestre in altri monitor**. Se si utilizza più di un monitor durante lo sviluppo delle applicazioni, è possibile gestire più facilmente le parti dell'applicazione spostando i file aperti nell'editor in un altro monitor. È anche possibile spostare le finestre degli strumenti, come le finestre del debugger, in un altro monitor e ancorare le finestre degli strumenti e dei documenti per creare raggruppamenti. Per altre informazioni, vedere [procedura: disporre e ancorare le finestre](../misc/how-to-arrange-and-dock-windows.md).
 
      È anche possibile gestire i file più facilmente creando un'altra istanza di **Esplora soluzioni** e spostandola in un altro monitor. Per creare un'altra istanza di **Esplora soluzioni**, aprire un menu di scelta rapida in **Esplora soluzioni** e quindi scegliere **Nuova visualizzazione Esplora soluzioni**.
 

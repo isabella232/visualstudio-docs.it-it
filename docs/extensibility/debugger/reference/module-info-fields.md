@@ -1,5 +1,5 @@
 ---
-title: proprietà MODULE_INFO_FIELDS . Documenti Microsoft
+title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714322"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
@@ -66,55 +66,55 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Campi
  `MIF_NONE`\
- Inizializzare/utilizzare nessuno dei campi nella struttura.
+ Inizializzare/usare nessuno dei campi nella struttura.
 
  `MIF_NAME`\
- Inizializzare/utilizzare `m_bstrName` il campo nella struttura [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
+ Inizializza/usa il `m_bstrName` campo nella struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
  `MIF_URL`\
- Inizializzare/utilizzare `m_bstrUrl` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_bstrUrl` campo nella `MODULE_INFO` struttura.
 
  `MIF_VERSION`\
- Inizializzare/utilizzare `m_bstrVersion` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_bstrVersion` campo nella `MODULE_INFO` struttura.
 
  `MIF_DEBUGMESSAGE`\
- Inizializzare/utilizzare `m_bstrDebugMessage` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_bstrDebugMessage` campo nella `MODULE_INFO` struttura.
 
  `MIF_LOADADDRESS`\
- Inizializzare/utilizzare `m_addrLoadAddress` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_addrLoadAddress` campo nella `MODULE_INFO` struttura.
 
  `MIF_PREFFEREDADDRESS`\
- Inizializzare/utilizzare `m_addrPreferredLoadAddress` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_addrPreferredLoadAddress` campo nella `MODULE_INFO` struttura.
 
  `MIF_SIZE`\
- Inizializzare/utilizzare `m_dwSize` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_dwSize` campo nella `MODULE_INFO` struttura.
 
  `MIF_LOADORDER`\
- Inizializzare/utilizzare `m_dwLoadOrder` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_dwLoadOrder` campo nella `MODULE_INFO` struttura.
 
  `MIF_TIMESTAMP`\
- Inizializzare/utilizzare `m_TimeStamp` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_TimeStamp` campo nella `MODULE_INFO` struttura.
 
  `MIF_URLSYMBOLLOCATION`\
- Inizializzare/utilizzare `m_bstrUrlSymbolLocation` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_bstrUrlSymbolLocation` campo nella `MODULE_INFO` struttura.
 
  `MIF_FLAGS`\
- Inizializzare/utilizzare `m_dwModuleFlags` il `MODULE_INFO` campo nella struttura.
+ Inizializza/usa il `m_dwModuleFlags` campo nella `MODULE_INFO` struttura.
 
  `MIF_ALLFIELDS`\
- Inizializzare/utilizzare tutti i `MODULE_INFO` campi nella struttura.
+ Inizializzare/utilizzare tutti i campi della `MODULE_INFO` struttura.
 
 ## <a name="remarks"></a>Osservazioni
- Questi valori vengono passati come argomento per il [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metodo per indicare quali campi della struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) devono essere inizializzati.
+ Questi valori vengono passati come argomento al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) per indicare quali campi della struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) devono essere inizializzati.
 
- Questi valori vengono utilizzati anche nella `MODULE_INFO` struttura per indicare quali campi vengono utilizzati e validi.
+ Questi valori vengono inoltre utilizzati nella `MODULE_INFO` struttura per indicare quali campi vengono utilizzati e validi.
 
- Questi flag possono essere combinati `OR`con un oggetto .
+ Questi flag possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

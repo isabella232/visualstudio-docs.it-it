@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Generare gli eventi quando l'Editor perde lo stato attivo | Microsoft Docs"
+title: "Procedura: generare eventi quando l'editor perde lo stato attivo | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204198"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Procedura: Generare eventi quando l'editor perde lo stato attivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In alcuni casi è necessario sapere quando un editor perde lo stato attivo nella cornice della finestra. Ad esempio, si potrebbe essere necessario estrarre codice da una finestra del codice dopo che l'editor non è più è incentrato su di esso. La seguente procedura fornisce i passaggi da seguire per ricevere la notifica dell'editor perde lo stato attivo.  
+Talvolta è necessario stabilire quando un editor perde lo stato attivo sulla cornice della finestra. Ad esempio, potrebbe essere necessario estrarre il codice da una finestra del codice dopo che l'editor non è più incentrato su di esso. Nella procedura riportata di seguito vengono illustrati i passaggi da seguire per ricevere la notifica dell'editor che perde lo stato attivo.  
   
-### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Per attivare un evento in risposta a un editor perde lo stato attivo  
+### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Per generare un evento in risposta a un editor che perde lo stato attivo  
   
-1. Monitorare gli eventi di selezione ottenendo un' <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> dall'oggetto <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.  
+1. Consente di monitorare gli eventi di selezione ottenendo un <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> oggetto da <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> .  
   
-2. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> e fornire il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> oggetto.  
+2. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> e fornire il proprio <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> oggetto.  
   
-3. Nella chiamata a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>, cercare `elementid==SEID_WindowFrame`.  
+3. Nella chiamata a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> cercare `elementid==SEID_WindowFrame` .  
   
-4. Test di `varValueNew` parametro per due motivi:  
+4. Testare il `varValueNew` parametro per due elementi:  
   
     1. La cornice della finestra che si sta cercando.  
   
-    2. Il punto in corrispondenza del quale il programma perde la selezione del frame della finestra.
+    2. Punto in cui il programma perde la selezione nel frame della finestra.

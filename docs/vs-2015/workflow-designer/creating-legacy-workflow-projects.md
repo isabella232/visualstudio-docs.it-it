@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 644676393a606dfd7fbf6aa400a625dce2db3697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656884"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Creazione di progetti flusso di lavoro legacy
@@ -35,21 +35,21 @@ Contenuto della sezione viene descritto come creare progetti flusso di lavoro us
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Procedura: Creare progetti di flusso di lavoro (legacy)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
 
- [Procedura: Creare applicazioni console del flusso di lavoro sequenziale (legacy)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
+ [Procedura: creare applicazioni console del flusso di lavoro sequenziale (legacy)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
 
- [Procedura: Creare una libreria del flusso di lavoro sequenziale (legacy)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
+ [Procedura: creare una libreria del flusso di lavoro sequenziale (legacy)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
 
  [Procedura: Creare una libreria di attività del flusso di lavoro (legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
 
- [Procedura: Creare applicazioni console flusso di lavoro di una macchina a stati (legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
+ [Procedura: creare applicazioni console flusso di lavoro di una macchina a stati (legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
 
- [Procedura: Creare una libreria del flusso di lavoro di macchina a stati (legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
+ [Procedura: creare una libreria del flusso di lavoro di macchina a stati (legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
 
  [Procedura: Creare un progetto di flusso di lavoro vuoto (legacy)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
 
  [Procedura: Configurare le proprietà del progetto flusso di lavoro (legacy)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
 
- [Procedura: Aggiungere un nuovo elemento a un progetto flusso di lavoro (Legacy)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
+ [Procedura: aggiungere un nuovo elemento a un progetto flusso di lavoro [legacy]](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>Vedere anche
  Viste del flusso di lavoro [sequenziale (legacy)](../workflow-designer/sequential-workflow-views-legacy.md) [finestre del flusso di lavoro di Visual Studio (legacy)](../workflow-designer/visual-studio-workflow-windows-legacy.md)

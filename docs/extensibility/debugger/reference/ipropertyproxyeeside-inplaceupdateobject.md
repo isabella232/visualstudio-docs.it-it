@@ -1,5 +1,5 @@
 ---
-title: Proprietà IPropertyProxyEESide::InPlaceUpdateObject . Documenti Microsoft
+title: 'IPropertyProxyEESide:: InPlaceUpdateObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 79167b0f7e8094fabf80bb9b2d83c94ac874aa31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714897"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
@@ -43,20 +43,20 @@ int InPlaceUpdateObject(
 
 ## <a name="parameters"></a>Parametri
 `dataIn`\
-[in] Oggetto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenente i nuovi dati.
+in Oggetto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) che contiene i nuovi dati.
 
 `dataOut`\
-[fuori] Restituisce `IEEDataStorage` un nuovo oggetto contenente i dati sostituiti.
+out Restituisce un nuovo `IEEDataStorage` oggetto contenente i dati sostituiti.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo aggiorna effettivamente i dati dell'oggetto. Non è necessario che i dati nell'oggetto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) restituito siano `IEEDataStorage` uguali ai dati nell'oggetto in ingresso, ma l'oggetto restituito deve riflettere il valore corrente della proprietà.
+ Questo metodo aggiorna effettivamente i dati dell'oggetto. I dati nell'oggetto [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) restituito non devono necessariamente corrispondere ai dati nell'oggetto in arrivo `IEEDataStorage` , ma l'oggetto restituito deve riflettere il valore corrente della proprietà.
 
- L'oggetto dati in ingresso non viene in genere implementato da EE. Tuttavia, l'oggetto restituito da questo metodo viene sempre implementato da `IEEDataStorage` EE, che consente a EE implementare l'interfaccia su qualsiasi classe desiderata.
+ L'oggetto dati in ingresso non è in genere implementato da EE. Tuttavia, l'oggetto restituito da questo metodo viene sempre implementato da EE, che consente all'EE di implementare l' `IEEDataStorage` interfaccia su qualsiasi classe desiderata.
 
- Il [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) metodo crea un oggetto dati basato sull'oggetto dati in ingresso, ma non influisce sui dati originali della proprietà.
+ Il metodo [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) crea un oggetto dati basato sull'oggetto dati in ingresso ma non influisce sui dati originali della proprietà.
 
 ## <a name="see-also"></a>Vedere anche
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

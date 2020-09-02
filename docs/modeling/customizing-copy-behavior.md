@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547342"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
@@ -211,7 +211,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Consentire all'utente di trascinare e rilasciare gli elementi.**
 Vedere [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a>Personalizzazione del comportamento di copia dei collegamenti
+## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a> Personalizzazione del comportamento di copia dei collegamenti
  Quando l'utente copia un elemento, il comportamento standard prevede che gli eventuali elementi incorporati vengano anch'essi copiati. È possibile modificare il comportamento di copia standard. Nella definizione DSL selezionare un ruolo a un lato di una relazione e nella Finestra Proprietà impostare il valore di **copia propaga** .
 
  ![Propagazione della proprietà Copia del ruolo di dominio](../modeling/media/dslpropagatescopy.png)
@@ -284,12 +284,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Definire due metodi nella classe ElementOperations:
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`che determina se l'elemento di origine può essere trascinato nella forma, nel connettore o nel diagramma di destinazione.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` che determina se l'elemento di origine può essere trascinato nella forma, nel connettore o nel diagramma di destinazione.
 
-- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`che combina l'elemento di origine nella destinazione.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` che combina l'elemento di origine nella destinazione.
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()`viene chiamato per determinare il feedback da assegnare all'utente quando il mouse si sposta sul diagramma. I parametri per il metodo sono costituiti dall'elemento su cui sta passando il mouse e dai dati sull'origine da cui è stata eseguita l'operazione di trascinamento. L'utente può trascinare da qualsiasi punto dello schermo. L'oggetto di origine può quindi essere di diversi tipi e può essere serializzato in diversi formati. Se l'origine è un modello DSL o UML, il parametro dati è la serializzazione di un oggetto <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Le operazioni di trascinamento, di copia e quelle eseguite mediante la casella degli strumenti usano ElementGroupPrototypes per rappresentare frammenti di modelli.
+ `CanMerge()` viene chiamato per determinare il feedback da assegnare all'utente quando il mouse si sposta sul diagramma. I parametri per il metodo sono costituiti dall'elemento su cui sta passando il mouse e dai dati sull'origine da cui è stata eseguita l'operazione di trascinamento. L'utente può trascinare da qualsiasi punto dello schermo. L'oggetto di origine può quindi essere di diversi tipi e può essere serializzato in diversi formati. Se l'origine è un modello DSL o UML, il parametro dati è la serializzazione di un oggetto <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Le operazioni di trascinamento, di copia e quelle eseguite mediante la casella degli strumenti usano ElementGroupPrototypes per rappresentare frammenti di modelli.
 
  Un prototipo di gruppo di elementi può contenere qualsiasi numero di elementi e collegamenti. I tipi di elemento sono identificabili mediante i relativi GUID. Il GUID si riferisce alla forma che viene trascinata e non all'elemento del modello sottostante. Nell'esempio seguente `CanMerge()` restituisce true se una forma della classe di un diagramma UML viene trascinata sul diagramma attuale.
 

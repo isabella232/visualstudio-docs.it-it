@@ -7,10 +7,10 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb9b02e10a2d263a39e7ae6a150e452ff8321d9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85537059"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
@@ -27,8 +27,8 @@ Lo strumento Manifest to Code è un'applicazione console che accetta un file con
   
 |**Nome dell'opzione**|**Note**|**Obbligatorio o facoltativo**|  
 |-|-|-|  
-|/manifest|Percorso del manifesto dell'immagine da utilizzare per creare o aggiornare il wrapper di codice.|Obbligatoria|  
-|/Language|Linguaggio in cui generare il wrapper di codice.<br /><br /> Valori validi: CPP, C++, CS, CSharp, C#, VB o VSCT i valori non fanno distinzione tra maiuscole e minuscole.<br /><br /> Per l'opzione VSCT Language, le opzioni/monikerClass,/classAccess e/Namespace vengono ignorate.|Obbligatoria|  
+|/manifest|Percorso del manifesto dell'immagine da utilizzare per creare o aggiornare il wrapper di codice.|Necessario|  
+|/Language|Linguaggio in cui generare il wrapper di codice.<br /><br /> Valori validi: CPP, C++, CS, CSharp, C#, VB o VSCT i valori non fanno distinzione tra maiuscole e minuscole.<br /><br /> Per l'opzione VSCT Language, le opzioni/monikerClass,/classAccess e/Namespace vengono ignorate.|Necessario|  
 |/imageIdClass|Il nome di imageIdClass e il file associato creato dallo strumento. Per l'opzione del linguaggio C++ vengono generati solo i file con estensione h.<br /><br /> Impostazione predefinita: \<Manifest Path> \MyImageIds.\<Lang Ext>|Facoltativo|  
 |/monikerClass|Il nome di monikerClass e il file associato creato dallo strumento. Per l'opzione del linguaggio C++ vengono generati solo i file con estensione h. Viene ignorato per il linguaggio VSCT.<br /><br /> Impostazione predefinita: \<Manifest Path> \MyMonikers.\<Lang Ext>|Facoltativo|  
 |/classAccess|Modificatore di accesso per imageIdClass e monikerClass. Verificare che il modificatore di accesso sia valido per la lingua specificata. Viene ignorato per l'opzione VSCT Language.<br /><br /> Impostazione predefinita: Public|Facoltativo|  

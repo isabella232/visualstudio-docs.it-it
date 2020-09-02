@@ -1,5 +1,5 @@
 ---
-title: UsedCommand (elemento) . Documenti Microsoft
+title: Elemento UsedCommand | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80698831"
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
-Consente a un pacchetto VSPackage di accedere a un comando definito in un altro file vsct. Ad esempio, se il pacchetto VSPackage utilizza il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comando **standard Copia,** che è definito dalla shell, è possibile aggiungere il comando a un menu o barra degli strumenti senza implementarlo nuovamente.
+Consente a un VSPackage di accedere a un comando definito in un altro file con estensione vsct. Se, ad esempio, il pacchetto VSPackage usa il comando **Copy** standard, definito dalla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, è possibile aggiungere il comando a un menu o a una barra degli strumenti senza implementarlo di nuovo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,13 +30,13 @@ Consente a un pacchetto VSPackage di accedere a un comando definito in un altro 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|guid|Obbligatorio. GUID della coppia di ID GUID che identifica il comando.|
-|id|Obbligatorio. ID della coppia di ID GUID che identifica il comando.|
-|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Obbligatorio. GUID della coppia GUID ID che identifica il comando.|
+|id|Obbligatorio. ID della coppia GUID ID che identifica il comando.|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -48,10 +48,10 @@ Consente a un pacchetto VSPackage di accedere a un comando definito in un altro 
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Gruppi UsedCommand elementi e altri UsedCommands raggruppamenti.|
+|[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.|
 
 ## <a name="remarks"></a>Osservazioni
- Aggiungendo un comando `<UsedCommands>` all'elemento, un VSPackage informa l'ambiente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che il pacchetto VSPackage richiede il comando. È necessario `<UsedCommand>` aggiungere un elemento per qualsiasi comando il pacchetto richiede che potrebbe non essere incluso in tutte le versioni e configurazioni di Visual Studio.You should add a element for any command your package requires that might not be included in all versions and configurations of Visual Studio. Se, ad esempio, il pacchetto chiama un comando specifico di Visual C, il comando non sarà `<UsedCommand>` disponibile per gli utenti di Visual Web Developer a meno che non si includa un elemento per il comando.
+ Aggiungendo un comando all' `<UsedCommands>` elemento, un VSPackage informa l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente che il pacchetto VSPackage richiede il comando. È necessario aggiungere un `<UsedCommand>` elemento per qualsiasi comando richiesto dal pacchetto che potrebbe non essere incluso in tutte le versioni e le configurazioni di Visual Studio. Se, ad esempio, il pacchetto chiama un comando specifico per Visual C++, il comando non sarà disponibile per gli utenti di Visual Web Developer a meno che non si includa un `<UsedCommand>` elemento per il comando.
 
 ## <a name="example"></a>Esempio
 

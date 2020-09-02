@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f388671f7efeeefa05704d934ccf5307578e7d3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150447"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Restituisce un'enumerazione dei simboli per i frame inline che corrispondono al percorso di origine specificato.  
+Restituisce un'enumerazione di simboli per i frame inline che corrispondono al percorso di origine specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,22 +37,22 @@ HRESULT findAcceleratorInlineeLinesByName ( 
   
 #### <a name="parameters"></a>Parametri  
  `parent`  
- [in] Un `IDiaSymbol` che corrisponde alla funzione di stub di tasti di scelta rapida che deve essere eseguita la ricerca.  
+ in Oggetto `IDiaSymbol` che corrisponde alla funzione dello stub dell'acceleratore in cui è necessario eseguire la ricerca.  
   
  `file`  
- [in] Il `IDiaSourceFile` della posizione di origine.  
+ in `IDiaSourceFile` Del percorso di origine.  
   
  `linenum`  
- [in] Numero di riga della posizione di origine.  
+ in Numero di riga del percorso di origine.  
   
  `colnum`  
- [in] Il numero di colonna della posizione di origine.  
+ in Numero di colonna del percorso di origine.  
   
  `ppResult`  
- [out] Un puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia che viene inizializzato con il risultato.  
+ out Puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia inizializzato con il risultato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

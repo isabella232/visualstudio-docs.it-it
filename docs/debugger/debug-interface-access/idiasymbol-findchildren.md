@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f1fe583ba4932f4f534886ed1c9af34e900ba67
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464590"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
@@ -53,10 +53,10 @@ out Restituisce un oggetto [IDiaEnumSymbols](../../debugger/debug-interface-acce
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK` se è stato trovato almeno un elemento figlio del simbolo oppure restituisce `S_FALSE` se non sono stati trovati elementi figlio; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Questo metodo è identico alla chiamata al metodo [IDiaSession:: findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md) con questo simbolo come primo parametro.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

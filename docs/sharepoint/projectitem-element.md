@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536877"
 ---
 # <a name="projectitem-element"></a>ProjectItem (elemento)
@@ -42,7 +42,7 @@ ms.locfileid: "85536877"
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -64,7 +64,7 @@ ms.locfileid: "85536877"
 |[SafeControls](../sharepoint/safecontrols-element.md)|Elemento facoltativo.<br /><br /> Rappresenta una raccolta di controlli ASPX e Web part designati come sicuri per qualsiasi utente per accedere a qualsiasi pagina ASPX nel sito di SharePoint.<br /><br /> È possibile includere un solo elemento **SafeControls** .|
 
 ### <a name="parent-elements"></a>Elementi padre
- No.
+ Nessuno.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 

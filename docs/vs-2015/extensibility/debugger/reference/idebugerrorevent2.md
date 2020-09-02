@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83170c72eeabaae2ac193e47ddc91e1ec1e54046
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695428"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
@@ -31,25 +31,25 @@ IDebugErrorEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Il motore di debug (DE) implementa questa interfaccia per segnalare gli errori come messaggi leggibili. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per l'accesso di `IDebugEvent2` interfaccia.  
+ Il motore di debug (DE) implementa questa interfaccia per segnalare gli errori come messaggi leggibili. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM utilizza [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per accedere all' `IDebugEvent2` interfaccia.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- La Germania crea e invia l'oggetto evento per segnalare un errore. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando associato al programma in fase di debug.  
+ Il DE crea e invia questo oggetto evento per segnalare un errore. L'evento viene inviato tramite la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug.  
   
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable  
  Questa interfaccia implementa il metodo seguente:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|`GetErrorMessage`|Restituisce un errore sotto forma di stringa leggibile dall'utente.|  
+|`GetErrorMessage`|Restituisce un errore come stringa leggibile.|  
   
-## <a name="remarks"></a>Note  
- Se il motore di debug si verifica un errore, è possibile utilizzare questa interfaccia per segnalare il messaggio tramite Visual Studio per l'utente.  
+## <a name="remarks"></a>Osservazioni  
+ Se il motore di debug rileva un errore, può usare questa interfaccia per segnalare il messaggio tramite Visual Studio all'utente.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

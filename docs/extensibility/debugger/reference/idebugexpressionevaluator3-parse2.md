@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugExpressionEvaluator3::Parse2 . Documenti Microsoft
+title: IDebugExpressionEvaluator3::P arse2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729137"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
@@ -53,28 +53,28 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>Parametri
 `upstrExpression`\
-[in] Stringa di espressione da analizzare.
+in Stringa dell'espressione da analizzare.
 
 `dwFlags`\
-[in] Raccolta di costanti [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) che determinano la modalità di analisi dell'espressione.
+in Raccolta di costanti [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) che determinano il modo in cui l'espressione deve essere analizzata.
 
 `nRadix`\
-[in] Radix da utilizzare per interpretare qualsiasi informazione numerica.
+in Radice da usare per interpretare le informazioni numeriche.
 
 `pSymbolProvider`\
-[in] Interfaccia del provider di simboli.
+in Interfaccia del provider di simboli.
 
 `pAddress`\
-[in] Indirizzo del frame di valutazione.
+in Indirizzo del frame di valutazione.
 
 `pbstrError`\
-[fuori] Restituisce l'errore come testo leggibile.
+out Restituisce l'errore come testo leggibile.
 
 `pichError`\
-[fuori] Restituisce la posizione del carattere dell'inizio dell'errore nella stringa di espressione.
+out Restituisce la posizione del carattere all'inizio dell'errore nella stringa dell'espressione.
 
 `ppParsedExpression`\
-[fuori] Restituisce l'espressione analizzata in un [Oggetto IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md)
+out Restituisce l'espressione analizzata in un oggetto [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) .
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
@@ -83,7 +83,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 Questo metodo produce un'espressione analizzata, non un valore effettivo. Un'espressione analizzata è pronta per essere valutata, ovvero convertita in un valore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CEE** oggetto che espone il [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CEE** che espone l'interfaccia [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) .
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c57072d4b8707136f0ccd2a759bc3d393720efb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150444"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un file di origine dall'identificatore di file di origine.  
+Recupera un file di origine in base all'identificatore del file di origine.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,18 +36,18 @@ HRESULT findFileById ( 
   
 #### <a name="parameters"></a>Parametri  
  `uniqueId`  
- [in] Specifica l'identificatore di file di origine.  
+ in Specifica l'identificatore del file di origine.  
   
  `ppResult`  
- [out] Restituisce un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) recuperare l'oggetto che rappresenta il file di origine.  
+ out Restituisce un oggetto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresenta il file di origine recuperato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- L'identificatore di file di origine è un valore univoco utilizzato internamente per il DIA SDK affinché tutti i file di origine univoco. Questo metodo viene in genere utilizzato internamente per il DIA SDK.  
+## <a name="remarks"></a>Osservazioni  
+ L'identificatore del file di origine è un valore univoco usato internamente per la DIA SDK per rendere univoci tutti i file di origine. Questo metodo viene in genere usato internamente per la DIA SDK.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession:: findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
