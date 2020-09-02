@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4e548f1f2b82a97206cdf41174a8c1c7d61e885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200056"
 ---
 # <a name="sccgetversion-function"></a>Funzione SccGetVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzione Ottiene il numero di versione dell'API di plug-in controllo di origine supportate per il plug-in del controllo del codice sorgente.  
+Questa funzione ottiene il numero di versione dell'API del plug-in del controllo del codice sorgente supportata dal plug-in del controllo del codice sorgente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,15 +34,15 @@ LONG SccGetVersion(void);
  No.  
   
 ## <a name="return-value"></a>Valore restituito  
- Oggetto `LONG` tipo di dati che contiene il numero di versione dell'API di plug-in controllo di origine supportati:  
+ `LONG`Tipo di dati che contiene il numero di versione dell'API del plug-in del controllo del codice sorgente supportato:  
   
 |WORD|Descrizione|  
 |----------|-----------------|  
 |HIWORD|Versione principale|  
 |LOWORD|Versione secondaria|  
   
-## <a name="remarks"></a>Note  
- Ad esempio, se un controllo del codice sorgente del plug-in supporta la versione 1.3 dell'API dei plug-in controllo di origine, questa funzione restituirà 0x0103.  
+## <a name="remarks"></a>Osservazioni  
+ Se, ad esempio, un plug-in del controllo del codice sorgente supporta la versione 1,3 dell'API del plug-in del controllo del codice sorgente, la funzione restituirà 0x0103.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

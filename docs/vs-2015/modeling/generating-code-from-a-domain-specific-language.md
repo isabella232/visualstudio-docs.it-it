@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 32cafb9e68fc2535ed3b570022a59d284f4c4cae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666107"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generazione di codice da un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] fornisce un modo efficace per generare codice, documenti, file di configurazione e altri elementi dai dati rappresentati nei modelli. Utilizzando [!INCLUDE[dsl](../includes/dsl-md.md)], è possibile creare un set di classi che rappresentano i dati ed è possibile scrivere i modelli di testo nelle classi i cui nomi e proprietà riflettono i dati.
+Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] offre un modo efficace per generare codice, documenti, file di configurazione e altri elementi dai dati rappresentati nei modelli. Usando [!INCLUDE[dsl](../includes/dsl-md.md)] , è possibile creare un set di classi che rappresentano i dati ed è possibile scrivere i modelli di testo nelle classi i cui nomi e proprietà riflettono i dati.
 
  Ad esempio, Fabrikam dispone di un file XML di nomi di clienti e indirizzi di posta elettronica. Gli sviluppatori creano un modello in cui il cliente è una classe, con nome proprietà e posta elettronica. Scrivono diversi modelli di testo per elaborare i dati, incluso il frammento che produce una tabella di tutti i clienti come parte di una pagina HTML:
 
@@ -31,11 +31,11 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] fornisce un modo efficace per g
 <# } #>  </table>
 ```
 
- Quando il database del cliente viene elaborato, il file XML viene letto nell'archivio modelli. Un *processore di direttiva*, creato con [!INCLUDE[dsl](../includes/dsl-md.md)], rende disponibile la classe Customer per il codice nel modello di testo. Molti modelli di testo possono essere eseguiti sullo stesso archivio.
+ Quando il database del cliente viene elaborato, il file XML viene letto nell'archivio modelli. Un *processore di direttiva*, creato mediante [!INCLUDE[dsl](../includes/dsl-md.md)] , rende disponibile la classe Customer per il codice nel modello di testo. Molti modelli di testo possono essere eseguiti sullo stesso archivio.
 
- I modelli di testo sono essenziali per [!INCLUDE[dsl](../includes/dsl-md.md)]. Vengono usati per generare il codice sorgente per gli elementi del modello di dominio, nonché per il pacchetto VSPackage e i controlli usati per integrare gli strumenti con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ I modelli di testo sono essenziali per [!INCLUDE[dsl](../includes/dsl-md.md)] . Vengono usati per generare il codice sorgente per gli elementi del modello di dominio, nonché per il pacchetto VSPackage e i controlli usati per integrare gli strumenti con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- In questa sezione vengono illustrati alcuni modi per creare, modificare ed eseguire il debug dei modelli di testo utilizzati in [!INCLUDE[dsl](../includes/dsl-md.md)].
+ In questa sezione vengono illustrati alcuni dei modi per creare, modificare ed eseguire il debug dei modelli di testo utilizzati in [!INCLUDE[dsl](../includes/dsl-md.md)] .
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md)
@@ -54,7 +54,7 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] fornisce un modo efficace per g
 
  Descrive il file di comando che esegue l'eseguibile TextTransform nella riga di comando per i modelli di testo che fanno riferimento a linguaggi specifici del dominio.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informazioni di riferimento
  [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)
 
  Fornisce la sintassi delle direttive e dei blocchi di controllo del modello di testo.

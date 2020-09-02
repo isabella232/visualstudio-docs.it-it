@@ -1,5 +1,5 @@
 ---
-title: Parametro di Assembly di interoperabilità di Visual Studio marshalling | Microsoft Docs
+title: Marshalling del parametro dell'assembly di interoperabilità di Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,45 +12,45 @@ ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
 ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686921"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Marshalling dei parametri degli assembly di interoperabilità di Visual Studio
-Pacchetti VSPackage che vengono scritti in codice gestito potrebbero essere necessario chiamare o essere chiamato da codice COM non gestito. In genere, gli argomenti del metodo vengono trasformati o sottoposto a marshalling, automaticamente per il marshalling di interoperabilità. Tuttavia, talvolta argomenti non è possibile trasformare in modo semplice. In questi casi, vengono utilizzati i parametri del prototipo metodo assembly di interoperabilità corrispondente ai parametri di funzione COM fedelmente possibile. Per altre informazioni, vedere [marshalling di interoperabilità](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+I pacchetti VSPackage scritti in codice gestito potrebbero dover chiamare o essere chiamati da codice COM non gestito. Gli argomenti dei metodi vengono in genere trasformati o sottoposti a marshalling automaticamente dal gestore di marshalling di interoperabilità. Tuttavia, a volte gli argomenti non possono essere trasformati in modo semplice. In questi casi, i parametri del prototipo del metodo di assembly di interoperabilità vengono utilizzati per trovare il più vicino possibile i parametri della funzione COM. Per ulteriori informazioni, vedere [marshalling di interoperabilità](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Suggerimenti generali  
   
-##### <a name="read-the-reference-documentation"></a>Leggere la documentazione di riferimento  
- Per rilevare i problemi di interoperabilità in modo efficace è leggere la documentazione di riferimento per ogni metodo.  
+##### <a name="read-the-reference-documentation"></a>Leggi la documentazione di riferimento  
+ Un modo efficace per rilevare i problemi di interoperabilità consiste nel leggere la documentazione di riferimento per ogni metodo.  
   
- La documentazione di riferimento per ogni metodo contiene tre sezioni rilevanti:  
+ La documentazione di riferimento per ogni metodo contiene tre sezioni pertinenti:  
   
-- Il [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] prototipo di funzione COM.  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]Prototipo di funzione com.  
   
-- Il prototipo di metodo di assembly di interoperabilità.  
+- Il prototipo del metodo di assembly di interoperabilità.  
   
-- Un elenco di parametri di COM e una breve descrizione della ognuno.  
+- Elenco dei parametri COM e una breve descrizione di ognuno.  
   
-##### <a name="look-for-differences-between-the-two-prototypes"></a>Cercare le differenze tra i due prototipi  
- La maggior parte dei problemi di interoperabilità derivano da mancate corrispondenze tra la definizione di un determinato tipo in un'interfaccia COM e la definizione dello stesso tipo nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gli assembly di interoperabilità. Ad esempio, si consideri la differenza tra la possibilità di passare un `null` valore nel parametro [out]. È necessario ricercare le differenze tra i due prototipi e prendere in considerazione le implicazioni per i dati passati.  
+##### <a name="look-for-differences-between-the-two-prototypes"></a>Individuare le differenze tra i due prototipi  
+ La maggior parte dei problemi di interoperabilità derivano da mancate corrispondenze tra la definizione di un particolare tipo in un'interfaccia COM e la definizione dello stesso tipo negli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] assembly di interoperabilità. Si consideri, ad esempio, la differenza nella possibilità di passare un `null` valore in un parametro [out]. È necessario verificare le differenze tra i due prototipi e prendere in considerazione le relative ramificazioni per i dati passati.  
   
 ##### <a name="read-the-parameter-definitions"></a>Leggere le definizioni dei parametri  
- Leggere le definizioni dei parametri. COM è meno rigorosa rispetto a common language runtime (CLR) per la combinazione di diversi tipi di dati in un singolo parametro. Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfacce COM sfruttano questa flessibilità. Qualsiasi parametro che può passare o richiedono un valore non standard o un tipo di dati, ad esempio un valore costante in un parametro del puntatore, deve essere descritto come tali nella documentazione.  
+ Leggere le definizioni dei parametri. COM è meno restrittivo del Common Language Runtime (CLR) sulla combinazione di tipi diversi di dati in un singolo parametro. Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interfacce com sfruttano pienamente questa flessibilità. Qualsiasi parametro che può passare o richiedere un valore o un tipo di dati non standard, ad esempio un valore costante in un parametro puntatore, deve essere descritto come tale nella documentazione.  
   
-### <a name="iunknown-objects-passed-as-type-void"></a>IUnknown gli oggetti passati come tipo void * *  
- Cercare [i parametri che sono definiti come out] `void **` in COM interfaccia, ma che sono definite come `[``iid_is``]` nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo di metodo di assembly di interoperabilità.  
+### <a name="iunknown-objects-passed-as-type-void"></a>Oggetti IUnknown passati come tipo void * *  
+ Cercare i parametri [out] definiti come tipo `void **` nell'interfaccia com, ma che sono definiti come `[``iid_is``]` nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo del metodo di assembly di interoperabilità.  
   
- In alcuni casi, un'interfaccia COM genera un `IUnknown` oggetto e l'interfaccia COM quindi lo passa come tipo `void **`. Queste interfacce sono particolarmente importanti perché se la variabile viene definita come [out] nel file IDL, la `IUnknown` oggetto è conteggio dei riferimenti con il `AddRef` (metodo). Se l'oggetto non viene gestita correttamente, si verifica una perdita di memoria.  
+ In alcuni casi, un'interfaccia COM genera un `IUnknown` oggetto e l'interfaccia com la passa quindi come tipo `void **` . Queste interfacce sono particolarmente importanti perché se la variabile è definita come [out] nell'IDL, l' `IUnknown` oggetto viene conteggiato come riferimento con il `AddRef` metodo. Si verifica una perdita di memoria se l'oggetto non è gestito correttamente.  
   
 > [!NOTE]
-> Un `IUnknown` oggetto creato dall'interfaccia COM e restituiti in una variabile [out] causa una perdita di memoria se non viene rilasciato in modo esplicito.  
+> Un `IUnknown` oggetto creato dall'interfaccia com e restituito in una variabile [out] causa una perdita di memoria se non viene rilasciata in modo esplicito.  
   
- Metodi gestiti che gestiscono tali oggetti devono trattare <xref:System.IntPtr> come puntatore a un `IUnknown` dell'oggetto e chiamare il <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodo per ottenere l'oggetto. Il chiamante deve quindi eseguire il cast del valore restituito in qualsiasi tipo è appropriato. Quando l'oggetto non è più necessario, chiamare <xref:System.Runtime.InteropServices.Marshal.Release%2A> rilasciarlo.  
+ I metodi gestiti che gestiscono tali oggetti devono <xref:System.IntPtr> essere trattati come un puntatore a un `IUnknown` oggetto e chiamare il <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodo per ottenere l'oggetto. Il chiamante deve quindi eseguire il cast del valore restituito a qualsiasi tipo appropriato. Quando l'oggetto non è più necessario, chiamare <xref:System.Runtime.InteropServices.Marshal.Release%2A> per rilasciarlo.  
   
- Seguito è riportato un esempio della chiamata al metodo il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> metodo e la gestione il `IUnknown` oggetto correttamente:  
+ Di seguito è riportato un esempio di chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> metodo e di gestione `IUnknown` corretta dell'oggetto:  
   
 ```  
 MyClass myclass;  
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
-> I metodi seguenti sono note come passare `IUnknown` puntatori dell'oggetto come tipo <xref:System.IntPtr>. È necessario gestirle come descritto in questa sezione.  
+> I metodi seguenti sono noti per passare i `IUnknown` puntatori all'oggetto come tipo <xref:System.IntPtr> . Gestirli come descritto in questa sezione.  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
@@ -91,36 +91,36 @@ else
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
-### <a name="optional-out-parameters"></a>[Out] i parametri facoltativi  
- Cercare i parametri che sono definiti come [out] tipo di dati (`int`, `object`e così via) in COM interfaccia, ma che sono definiti come matrici dello stesso tipo di dati nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo di metodo di assembly di interoperabilità.  
+### <a name="optional-out-parameters"></a>Parametri [out] facoltativi  
+ Cercare i parametri definiti come tipo di dati [out] ( `int` , `object` e così via) nell'interfaccia com, ma che sono definiti come matrici con lo stesso tipo di dati nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo del metodo di assembly di interoperabilità.  
   
- Interfacce di alcuni COM, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, considerare [i parametri come facoltativi out]. Se non è necessario un oggetto, le interfacce COM restituiscono un `null` come il valore del parametro anziché creare l'oggetto [out] puntatore a. Si tratta di un comportamento correlato alla progettazione. Per queste interfacce, `null` i puntatori vengono considerati come parte del comportamento corretto del pacchetto VSPackage, e viene restituito alcun errore.  
+ Alcune interfacce COM, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> , considerano i parametri [out] come facoltativi. Se un oggetto non è necessario, queste interfacce COM restituiscono un `null` puntatore come valore di tale parametro anziché creare l'oggetto [out]. Questo si verifica per motivi strutturali. Per queste interfacce, i `null` puntatori vengono considerati come parte del comportamento corretto del pacchetto VSPackage e non viene restituito alcun errore.  
   
- Poiché Common Language Runtime non supporta il valore di parametro [out] sia `null`, parte del comportamento progettato di queste interfacce non è disponibili direttamente nel codice gestito. Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metodi di assembly di interoperabilità per interfacce interessate risolvere il problema definendo i parametri come matrici in quanto CLR consente il passaggio di `null` matrici.  
+ Poiché CLR non consente il valore di un parametro [out] `null` , parte del comportamento progettato di queste interfacce non è direttamente disponibile all'interno del codice gestito. I [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metodi di assembly di interoperabilità per le interfacce interessate aggirano il problema definendo i parametri pertinenti come matrici perché CLR consente il passaggio di `null` matrici.  
   
- Le implementazioni gestite di questi metodi devono essere inseriti un `null` matrice nel parametro quando non c'è niente da restituire. In caso contrario, creare una matrice a un elemento del tipo corretto e inserire il valore restituito nella matrice.  
+ Le implementazioni gestite di questi metodi devono inserire una `null` matrice nel parametro quando non è presente alcun elemento da restituire. In caso contrario, creare una matrice a un elemento del tipo corretto e inserire il valore restituito nella matrice.  
   
- Metodi che ricevono informazioni dalle interfacce con [out] facoltativo gestiti parametri ricevano il parametro sotto forma di matrice. È sufficiente esaminare il valore del primo elemento della matrice. Se non è `null`, considerare il primo elemento, come se fosse il parametro originale.  
+ I metodi gestiti che ricevono informazioni dalle interfacce con i parametri [out] facoltativi ricevono il parametro come matrice. Esaminare semplicemente il valore del primo elemento della matrice. In caso contrario `null` , considerare il primo elemento come se fosse il parametro originale.  
   
-### <a name="passing-constants-in-pointer-parameters"></a>Costanti passando nei parametri di puntatore  
- Cercare i parametri che vengono definite come [in] i puntatori dell'interfaccia COM, ma che sono definiti come un <xref:System.IntPtr> digitare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo di metodo di assembly di interoperabilità.  
+### <a name="passing-constants-in-pointer-parameters"></a>Passaggio di costanti nei parametri del puntatore  
+ Cercare i parametri definiti come [in] puntatori nell'interfaccia COM, ma che sono definiti come <xref:System.IntPtr> tipo nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo del metodo di assembly di interoperabilità.  
   
- Un problema simile si verifica quando un'interfaccia COM passa un valore speciale, ad esempio 0, -1 o -2, anziché un puntatore all'oggetto. A differenza di [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], Common Language Runtime non supporta le costanti per eseguire il cast come oggetti. Al contrario, il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] assembly di interoperabilità definisce il parametro come un <xref:System.IntPtr> tipo.  
+ Un problema simile si verifica quando un'interfaccia COM passa un valore speciale, ad esempio 0,-1 o-2, anziché un puntatore a un oggetto. Diversamente da [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] , CLR non consente il cast delle costanti come oggetti. Al contrario, l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] assembly di interoperabilità definisce il parametro come <xref:System.IntPtr> tipo.  
   
- Implementazioni gestite di questi metodi devono sfruttare il fatto che il <xref:System.IntPtr> classe dispone di entrambe `int` e `void *` costruttori per creare un <xref:System.IntPtr> da un oggetto o una costante integer, come appropriato.  
+ Le implementazioni gestite di questi metodi dovrebbero sfruttare il fatto che la <xref:System.IntPtr> classe dispone di entrambi `int` i `void *` costruttori e per creare un <xref:System.IntPtr> oggetto da un oggetto o da una costante Integer, a seconda dei casi.  
   
- Gestito i metodi che ricevono <xref:System.IntPtr> devono usare parametri di questo tipo di <xref:System.IntPtr> digitare gli operatori di conversione per gestire i risultati. Convertire innanzitutto le <xref:System.IntPtr> a `int` e verificarne il funzionamento in costanti integer pertinenti. Se i valori non corrispondono, convertirlo in un oggetto del tipo richiesto e continuare.  
+ I metodi gestiti che ricevono <xref:System.IntPtr> parametri di questo tipo devono usare gli <xref:System.IntPtr> operatori di conversione dei tipi per gestire i risultati. Convertire innanzitutto <xref:System.IntPtr> in `int` e testarlo rispetto alle costanti Integer pertinenti. Se nessun valore corrisponde, convertirlo in un oggetto del tipo richiesto e continuare.  
   
- Per esempi, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>.  
+ Per esempi, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> .  
   
-### <a name="ole-return-values-passed-as-out-parameters"></a>OLE restituiscono i valori passati come [parametri out]  
- Cerca i metodi che hanno una `retval` valore restituito nell'interfaccia COM, ma che hanno un' `int` valore restituito e un altro [parametro di matrice in out] il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo di metodo di assembly di interoperabilità. Dovrebbe essere chiaro che questi metodi richiedono una gestione speciale in quanto il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipi di assembly di interoperabilità (metodo) hanno un parametro di più rispetto ai metodi di interfaccia COM.  
+### <a name="ole-return-values-passed-as-out-parameters"></a>Valori restituiti OLE passati come parametri [out]  
+ Cercare i metodi che hanno un `retval` valore restituito nell'interfaccia com, ma che hanno un `int` valore restituito e un parametro di matrice [out] aggiuntivo nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipo del metodo di assembly di interoperabilità. Dovrebbe essere chiaro che questi metodi richiedono una gestione speciale perché i [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototipi dei metodi di assembly di interoperabilità hanno un parametro maggiore rispetto ai metodi dell'interfaccia com.  
   
- Numero di interfacce COM che trattano di attività OLE invia le informazioni sullo stato OLE al programma chiamante archiviato nel `retval` valore restituito di interfaccia. Invece di usare un valore restituito, corrispondente [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i metodi di assembly di interoperabilità restituire le informazioni al programma chiamante archiviato in un [out] parametro di matrice.  
+ Molte interfacce COM che gestiscono l'attività OLE inviano informazioni sullo stato OLE al programma chiamante archiviato nel `retval` valore restituito dell'interfaccia. Anziché utilizzare un valore restituito, i [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metodi di assembly di interoperabilità corrispondenti inviano le informazioni al programma chiamante archiviato in un parametro di matrice [out].  
   
- Implementazioni gestite di questi metodi devono creare una matrice a elemento singolo dello stesso tipo di parametro [out] e inserirlo nel parametro. Il valore dell'elemento della matrice deve essere lo stesso come il componente COM appropriato `retval`.  
+ Le implementazioni gestite di questi metodi devono creare una matrice a elemento singolo dello stesso tipo del parametro [out] e inserirla nel parametro. Il valore dell'elemento di matrice deve essere uguale a quello dell'elemento COM appropriato `retval` .  
   
- Metodi gestiti che chiamano le interfacce di questo tipo devono inserire il primo elemento all'esterno della matrice [out]. Questo elemento può essere considerato come se fosse un `retval` valore restituito dall'interfaccia COM corrispondente.  
+ I metodi gestiti che chiamano interfacce di questo tipo devono estrarre il primo elemento dalla matrice [out]. Questo elemento può essere considerato come se fosse un `retval` valore restituito dall'interfaccia com corrispondente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Marshalling di interoperabilità](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   

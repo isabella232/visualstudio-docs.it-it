@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2683ec839d8eae41d3f4ab59112a31ba6d893848
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541974"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Cercare e ridisporre le mappe codice
@@ -41,7 +41,7 @@ Le mappe codice possono essere personalizzate senza influire sul codice sottosta
 
 - È possibile visualizzare le mappe codice e apportarvi modifiche limitate in Visual Studio Professional.
 
-## <a name="get-started-working-with-code-maps"></a><a name="ManageLargeGraphs"></a>Introduzione all'uso delle mappe codice
+## <a name="get-started-working-with-code-maps"></a><a name="ManageLargeGraphs"></a> Introduzione all'uso delle mappe codice
 
 Creare una mappa del codice. per altri dettagli, vedere [eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) . Se non si desidera attendere il completamento della generazione della mappa, fare clic sul collegamento **Annulla** in qualsiasi momento per arrestare il processo di generazione. In questo caso, non sarà però possibile vedere i dettagli di tutte le dipendenze e tutti i collegamenti.
 
@@ -57,7 +57,7 @@ Dopo aver generato la mappa, iniziare la revisione del codice attenendosi ai sug
 
 - Ottimizzare le prestazioni delle mappe di grandi dimensioni. Per altre informazioni, vedere [eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) . Ad esempio, attivare **Ignora compilazione** sulla barra degli strumenti della mappa in modo che Visual Studio non ricostruisca la soluzione quando si aggiornano gli elementi sulla mappa.
 
-## <a name="change-the-map-layout"></a><a name="Selecting"></a>Modificare il layout della mappa
+## <a name="change-the-map-layout"></a><a name="Selecting"></a> Modificare il layout della mappa
 
 |**To**|**Eseguire questi passaggi**|
 |-|-|
@@ -68,7 +68,7 @@ Dopo aver generato la mappa, iniziare la revisione del codice attenendosi ai sug
 |Modificare il layout all'interno di un gruppo indipendentemente dagli altri nodi e gruppi sulla mappa.|Selezionare un nodo e aprire il menu di scelta rapida. Scegliere **layout** e selezionare uno stile di layout.<br /><br /> - oppure -<br /><br /> Selezionare un nodo ed espanderlo per visualizzare i nodi figlio. Fare clic sul titolo del nodo per visualizzare la barra degli strumenti popup del gruppo e aprire la barra degli strumenti **modifica lo stile di layout della** ![ barra degli strumenti del gruppo di dipendenze del gruppo &#45; &#45; ](../modeling/media/dependencygraph_grouptoolbar.gif) elenco. Selezionare uno dei layout di struttura ad albero, i **cluster rapidi**o la **visualizzazione elenco** (che consente di disporre il contenuto del gruppo in un elenco).<br /><br /> Per altri dettagli, vedere [nodi gruppo](#OrganizeGroups) .|
 |Annullare un'azione nella mappa.|Premere **CTRL**  +  **Z** o usare il comando **Annulla** di Visual Studio.|
 
-## <a name="browse-the-map"></a><a name="Explore"></a>Esplorare la mappa
+## <a name="browse-the-map"></a><a name="Explore"></a> Esplorare la mappa
 
 |**To**|**Eseguire questi passaggi**|
 |-|-|
@@ -80,7 +80,7 @@ Dopo aver generato la mappa, iniziare la revisione del codice attenendosi ai sug
 |Selezionare tutti i nodi non selezionati.|Aprire il menu di scelta rapida per i nodi selezionati. Scegliere **Seleziona**, **Inverti selezione**.|
 |Selezionare altri nodi che si collegano a quelli selezionati.|Aprire il menu di scelta rapida per i nodi selezionati. Scegliere **Seleziona** e uno dei seguenti:<br /><br /> -Per selezionare nodi aggiuntivi collegati direttamente al nodo selezionato, scegliere **dipendenze in ingresso**.<br />-Per selezionare nodi aggiuntivi che si collegano direttamente dal nodo selezionato, scegliere **dipendenze in uscita**.<br />-Per selezionare nodi aggiuntivi che si collegano direttamente al e dal nodo selezionato, scegliere **entrambi**.<br />-Per selezionare tutti i nodi che si collegano al e dal nodo selezionato, scegliere **Sottografico connesso**.<br />-Per selezionare tutti gli elementi figlio del nodo selezionato, scegliere **figli**.|
 
-## <a name="filter-nodes-and-links"></a><a name="FilterNodes"></a>Filtrare nodi e collegamenti
+## <a name="filter-nodes-and-links"></a><a name="FilterNodes"></a> Filtrare nodi e collegamenti
 
 |**To**|**Eseguire questi passaggi**|
 |-|-|
@@ -91,7 +91,7 @@ Dopo aver generato la mappa, iniziare la revisione del codice attenendosi ai sug
 
 Le icone visualizzate nel riquadro Legenda della mappa riflettono le impostazioni definite nell'elenco. Per visualizzare o nascondere il pannello legenda, fare clic sul pulsante **Legenda** sulla barra degli strumenti della mappa codice.
 
-## <a name="examine-nodes-and-links"></a><a name="Inspect"></a>Esaminare nodi e collegamenti
+## <a name="examine-nodes-and-links"></a><a name="Inspect"></a> Esaminare nodi e collegamenti
 
 Le mappe codice mostrano i tipi di collegamenti seguenti:
 
@@ -109,11 +109,11 @@ Le mappe codice mostrano i tipi di collegamenti seguenti:
 |Visualizzare altre informazioni su un nodo o un collegamento.|Spostare il puntatore del mouse sopra un nodo o un collegamento finché non viene visualizzata una descrizione comando.<br /><br /> La descrizione comando per un collegamento di aggregazione elenca le singole dipendenze che rappresenta.<br /><br /> - oppure -<br /><br /> Aprire il menu di scelta rapida per il nodo o il collegamento. Scegliere **modifica**, **Proprietà**.|
 |Mostrare o nascondere il contenuto di un gruppo.|-Per espandere un gruppo, aprire il menu di scelta rapida per il nodo e scegliere **gruppo**, **Espandi**.<br />     - oppure -<br />     Spostare il puntatore del mouse sopra il nodo finché non viene visualizzato il pulsante con la freccia di espansione (freccia giù). Fare clic su questo pulsante per espandere il gruppo. Tastiera: per espandere o comprimere il gruppo selezionato, premere il tasto **più** ( **+** ) o il tasto **meno** ( **-** ).<br />-Per comprimere un gruppo, aprire il menu di scelta rapida per il nodo e scegliere **gruppo**, **Comprimi**.<br />     - oppure -<br />     Spostare il puntatore del mouse sopra un gruppo finché non viene visualizzato il pulsante con la freccia di espansione (freccia su). Fare clic su questo pulsante per comprimere il gruppo.<br />-Per espandere tutti i gruppi, premere **CTRL**  +  **a** per selezionare tutti i nodi. Aprire il menu di scelta rapida per la mappa e scegliere **gruppo**, **Espandi**. **Nota:**      Questo comando non è disponibile se l'espansione di tutti i gruppi genera una mappa inutilizzabile o problemi di memoria. È consigliabile espandere la mappa solo fino al livello di dettaglio che interessa.<br />-Per comprimere tutti i gruppi, aprire il menu di scelta rapida per un nodo o per la mappa. Scegliere **gruppo**, **Comprimi tutto**.|
 |Visualizzare la definizione di codice per uno spazio dei nomi, un tipo o un membro.|Aprire il menu di scelta rapida per il nodo e scegliere **Vai a definizione**.<br /><br /> -oppure-<br /><br /> Fare doppio clic sul nodo. Per espandere i gruppi, fare doppio clic sull'intestazione del gruppo.<br /><br /> -oppure-<br /><br /> Selezionare il nodo e premere **F12**.<br /><br /> Ad esempio:<br /><br /> -Per uno spazio dei nomi contenente una classe, viene aperto il file di codice per la classe per visualizzare la definizione di tale classe. In altri casi, la finestra **Risultati ricerca simbolo** Visualizza un elenco di file di codice. **Nota:**      Quando si esegue questa attività in uno spazio dei nomi Visual Basic, il file di codice dietro lo spazio dei nomi non viene aperto. Questo problema si verifica anche quando si esegue questa attività su un gruppo di nodi selezionati che includono uno spazio dei nomi Visual Basic. Per risolvere il problema, individuare manualmente il file di codice associato allo spazio dei nomi oppure omettere dalla selezione il nodo per lo spazio dei nomi.<br />-Per una classe o una classe parziale, viene aperto il file di codice per tale classe per visualizzare la definizione della classe.<br />-Per un metodo, viene aperto il file di codice per la classe padre per visualizzare la definizione del metodo.|
-|Esaminare le dipendenze e gli elementi che fanno parte di un collegamento di aggregazione.|Selezionare i collegamenti a cui si è interessati e aprire il menu di scelta rapida per la selezione. Scegliere **Mostra collegamenti partecipanti** o **Mostra collegamenti che contribuiscono alla nuova mappa del codice**.<br /><br /> In Visual Studio i gruppi vengono espansi a entrambe le estremità del collegamento e vengono mostrati solo gli elementi e le dipendenze che partecipano al collegamento. **Nota:**  Quando si esaminano le dipendenze tra elementi in gruppi parziali, è possibile che venga visualizzato questo comportamento: <ul><li>I collegamenti a elementi che non partecipano all'esame scompaiono dalla mappa, anche se tali collegamenti esistono ancora.</li><li>Si supponga di esaminare un collegamento a un elemento in un gruppo parziale e successivamente di esaminare un collegamento diverso allo stesso elemento. Durante la seconda analisi, il gruppo parziale di destinazione mostra solo gli elementi della prima analisi. I collegamenti e gli elementi di destinazione che non hanno partecipato al primo esame ma che partecipano al secondo esame non vengono visualizzati.</li></ul> Per visualizzare gli elementi mancanti da un gruppo, scegliere **Recupera nuovamente Children** ![ icona rifetch Children ](../modeling/media/dependencygraph_deletednodesicon.png) (che indica che non tutti i membri di un gruppo vengono visualizzati nella mappa). È anche possibile provare a eseguire le azioni (tastiera: premere **CTRL + Z**) ed esaminare le dipendenze su una nuova mappa.|
+|Esaminare le dipendenze e gli elementi che fanno parte di un collegamento di aggregazione.|Selezionare i collegamenti a cui si è interessati e aprire il menu di scelta rapida per la selezione. Scegliere **Mostra collegamenti partecipanti**  o **Mostra collegamenti che contribuiscono alla nuova mappa del codice**.<br /><br /> In Visual Studio i gruppi vengono espansi a entrambe le estremità del collegamento e vengono mostrati solo gli elementi e le dipendenze che partecipano al collegamento. **Nota:**  Quando si esaminano le dipendenze tra elementi in gruppi parziali, è possibile che venga visualizzato questo comportamento: <ul><li>I collegamenti a elementi che non partecipano all'esame scompaiono dalla mappa, anche se tali collegamenti esistono ancora.</li><li>Si supponga di esaminare un collegamento a un elemento in un gruppo parziale e successivamente di esaminare un collegamento diverso allo stesso elemento. Durante la seconda analisi, il gruppo parziale di destinazione mostra solo gli elementi della prima analisi. I collegamenti e gli elementi di destinazione che non hanno partecipato al primo esame ma che partecipano al secondo esame non vengono visualizzati.</li></ul> Per visualizzare gli elementi mancanti da un gruppo, scegliere **Recupera nuovamente Children** ![ icona rifetch Children ](../modeling/media/dependencygraph_deletednodesicon.png) (che indica che non tutti i membri di un gruppo vengono visualizzati nella mappa). È anche possibile provare a eseguire le azioni (tastiera: premere **CTRL + Z**) ed esaminare le dipendenze su una nuova mappa.|
 |Esaminare le dipendenze tra più nodi in gruppi diversi.|Espandere i gruppi per visualizzare tutti i relativi elementi figlio. Selezionare tutti i nodi che interessano, inclusi i relativi elementi figlio. La mappa mostra i collegamenti tra gruppi tra i nodi selezionati.<br /><br /> Per selezionare tutti i nodi in un gruppo, tenere premuto **MAIUSC** e il pulsante sinistro del mouse mentre si estrae un rettangolo attorno a tale gruppo. Per selezionare tutti i nodi di una mappa, premere **CTRL** + **a**. **Suggerimento:**  Per visualizzare sempre i collegamenti tra gruppi, scegliere **layout** sulla barra degli strumenti della mappa, **Avanzate**, **Mostra tutti i collegamenti tra gruppi**.|
 |Visualizzare gli elementi a cui fa riferimento un nodo o un collegamento.|Aprire il menu di scelta rapida per il nodo e scegliere **Trova tutti i riferimenti**. **Nota:**  Questo vale solo quando l' `Reference` attributo è impostato per il nodo o il collegamento nel file con estensione dgml della mappa. Per aggiungere riferimenti a elementi da nodi o collegamenti, vedere [personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|
 
-## <a name="hide-or-show-nodes-and-links"></a><a name="HidingShowing"></a>Nascondere o visualizzare nodi e collegamenti
+## <a name="hide-or-show-nodes-and-links"></a><a name="HidingShowing"></a> Nascondere o visualizzare nodi e collegamenti
 
 Se vengono nascosti, i nodi non possono partecipare ad algoritmi di layout. Per impostazione predefinita, i collegamenti tra gruppi sono nascosti. I collegamenti tra gruppi sono collegamenti singoli che connettono nodi tra gruppi. Quando i gruppi vengono compressi, tutti i collegamenti tra gruppi presenti nella mappa vengono aggregati in singoli collegamenti tra gruppi. Quando si espande un gruppo e si selezionano nodi nel gruppo, i collegamenti tra gruppi vengono visualizzati mostrando le dipendenze nel gruppo.
 
@@ -137,7 +137,7 @@ Se vengono nascosti, i nodi non possono partecipare ad algoritmi di layout. Per 
 |Mostrare solo i collegamenti tra gruppi per i nodi selezionati.|**Mostra collegamenti tra gruppi nei nodi selezionati**|
 |Nascondere tutti i collegamenti.|**Nascondi tutti i collegamenti**. Per visualizzare di nuovo i collegamenti, scegliere una delle opzioni elencate sopra.|
 
-## <a name="group-nodes"></a><a name="OrganizeGroups"></a>Nodi gruppo
+## <a name="group-nodes"></a><a name="OrganizeGroups"></a> Nodi gruppo
 
 |**To**|**Eseguire questi passaggi**|
 |-|-|
@@ -149,7 +149,7 @@ Se vengono nascosti, i nodi non possono partecipare ad algoritmi di layout. Per 
 |Rimuovere i gruppi.|Selezionare il gruppo o i gruppi da rimuovere. Aprire il menu di scelta rapida per la selezione e scegliere **gruppo**, **Rimuovi gruppo**.|
 |Rimuovere i nodi dal relativo gruppo padre.|Selezionare i nodi da spostare. Aprire il menu di scelta rapida per la selezione e scegliere **gruppo**, **Rimuovi da elemento padre**. I nodi vengono rimossi fino al relativo gruppo padre del padre oppure all'esterno di un gruppo se non hanno un gruppo padre del padre.<br /><br /> - oppure -<br /><br /> Selezionare i nodi e trascinarli all'esterno del gruppo.|
 
-## <a name="add-remove-or-rename-nodes-links-and-comments"></a><a name="AddRemoveNodesLinks"></a>Aggiunta, rimozione o ridenominazione di nodi, collegamenti e commenti
+## <a name="add-remove-or-rename-nodes-links-and-comments"></a><a name="AddRemoveNodesLinks"></a> Aggiunta, rimozione o ridenominazione di nodi, collegamenti e commenti
 
 Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare più o meno elementi sulla mappa. È anche possibile rinominare gli elementi e aggiungervi commenti.
 
@@ -259,7 +259,7 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
 - Modificare il colore di sfondo dell'elemento o cancellare il flag di completamento scegliendo **modifica**  >  **altri colori flag**.
 
-## <a name="change-the-style-of-a-code-element-or-link"></a><a name="ChangeStyleCodeOrLink"></a>Modificare lo stile di un elemento di codice o un collegamento
+## <a name="change-the-style-of-a-code-element-or-link"></a><a name="ChangeStyleCodeOrLink"></a> Modificare lo stile di un elemento di codice o un collegamento
 
 È possibile modificare le icone per gli elementi di codice e i colori per gli elementi di codice e i collegamenti usando le icone e i colori predefiniti. Ad esempio, è possibile scegliere un colore per evidenziare elementi di codice e collegamenti con una determinata categoria o proprietà. In questo modo si possono identificare aree specifiche della mappa e concentrarsi su di esse. È possibile specificare icone e colori personalizzati modificando il file con estensione dgml della mappa; vedere [personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
@@ -297,7 +297,7 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
     > [!NOTE]
     > È possibile ridisporre, eliminare o disattivare temporaneamente gli stili nella casella **Legenda** . Vedere [modificare la casella Legenda](#ModifyLegend).
 
-## <a name="edit-the-legend-box"></a><a name="ModifyLegend"></a>Modificare la casella Legenda
+## <a name="edit-the-legend-box"></a><a name="ModifyLegend"></a> Modificare la casella Legenda
 
 È possibile ridisporre, eliminare o disattivare temporaneamente gli stili nella casella **Legenda** :
 
@@ -307,12 +307,12 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
     |**To**|**Scegliere**|
     |-|-|
-    |Disattivare l'elemento di codice|**Disable**|
-    |Eliminare l'elemento di codice|**Eliminazione**|
+    |Disattivare l'elemento di codice|**Disabilitato**|
+    |Eliminare l'elemento di codice|**Elimina**|
     |Spostare lo stile in alto|**Sposta su**|
     |Spostare l'elemento di codice in basso|**Sposta giù**|
 
-## <a name="copy-styles-from-one-map-to-another"></a><a name="CopyLegend"></a>Copia stili da una mappa a un'altra
+## <a name="copy-styles-from-one-map-to-another"></a><a name="CopyLegend"></a> Copia stili da una mappa a un'altra
 
 1. Verificare che la casella **Legenda** sia visualizzata nella mappa di origine. Se non è visibile, fare clic su **Legenda**sulla barra degli strumenti della mappa.
 
@@ -320,7 +320,7 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
 
 3. Incollare la legenda nella mappa di destinazione.
 
-## <a name="merge-code-maps"></a><a name="MergeMaps"></a>Eseguire il merge delle mappe codice
+## <a name="merge-code-maps"></a><a name="MergeMaps"></a> Eseguire il merge delle mappe codice
 
 È possibile unire le mappe copiando e incollando gli elementi di codice tra le mappe. Se gli identificatori degli elementi di codice corrispondono, l'operazione per incollare gli elementi di codice funziona come un'operazione di unione. Per semplificare questa attività, inserire tutti gli assembly o i file binari da visualizzare nella stessa cartella, in modo che il percorso completo di ogni assembly o file binario sia lo stesso per ogni mappa da unire.
 

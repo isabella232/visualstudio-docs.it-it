@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::LoadSymbols Documenti Microsoft
+title: 'IDebugEngine3:: LoadSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7963d39601a0d3a90ca2daa7632902d7aa506de8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730807"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
-Carica (se necessario) i simboli per tutti i moduli sottoposti a debug da questo motore di debug.
+Carica (se necessario) i simboli per tutti i moduli di cui è in corso il debug da questo motore di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ int LoadSymbols();
  No.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario restituisce il codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Vengono caricati i simboli di debug per tutti i moduli a cui fa riferimento questo motore di debug. I simboli vengono caricati solo se non sono già stati caricati. La ricerca di simboli viene eseguita nei percorsi impostati da una chiamata a [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).
+ Vengono caricati i simboli di debug per tutti i moduli a cui fa riferimento il motore di debug. I simboli vengono caricati solo se non sono già stati caricati. I simboli vengono cercati nei percorsi impostati da una chiamata a [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)

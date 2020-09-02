@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683005"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
@@ -28,11 +28,11 @@ ms.locfileid: "65683005"
 
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è il sistema di compilazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. I seguenti sono collegamenti ad argomenti che contengono informazioni di riferimento su [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)  
  Descrive gli elementi XML che costituiscono il formato di file di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Task Reference](../msbuild/msbuild-task-reference.md) (Riferimento alle attività)  
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)  
  Descrive alcune attività tipiche incluse in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Condizioni](../msbuild/msbuild-conditions.md)  
@@ -41,10 +41,10 @@ ms.locfileid: "65683005"
  [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)  
  Descrive come usare gli elementi `Choose`, `When` e `Otherwise`.  
   
- [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
+ [Proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  Descrive le proprietà riservate [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)  
+ [Proprietà comuni del progetto MSBuild](../msbuild/common-msbuild-project-properties.md)  
  Descrive le proprietà di progetto comuni a tutti i tipi di progetto e anche le proprietà usate spesso da determinati tipi di progetto.  
   
  [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)  
@@ -65,7 +65,7 @@ ms.locfileid: "65683005"
  [Risorse aggiuntive](../msbuild/additional-resources-for-msbuild.md)  
  Contiene collegamenti ai siti Web e ai newsgroup su [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
+ [Riferimenti a MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
  Contiene un riferimento alle destinazioni e alle attività di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] per Windows Presentation Foundation (WPF).  
   
  [Caratteri speciali di escape](../msbuild/special-characters-to-escape.md)  

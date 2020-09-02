@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705840"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Aggiunta di dati di interazione tra livelli dalla riga di comando
@@ -34,7 +34,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
  **Raccolta di dati TIP in un computer remoto**  
   
- Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs\_profiler\_**_\<Piattaforma>_**\_**_\<Linguaggio>_**.exe** dalla cartella _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download [Remote Tools per Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+ Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs \_ \_ Profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download [Remote Tools per Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  **Report TIP**  
   
@@ -79,7 +79,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
    vsperfclrenv /off  
    ```  
   
-   Per altre informazioni, vedere [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md).  
+   Per altre informazioni, vedere [profilatura di applicazioni](../profiling/command-line-profiling-of-stand-alone-applications.md)autonome.  
   
 ### <a name="profiling-services"></a>Profilatura di servizi  
  Per eseguire la profilatura di servizi, incluse le applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], usare l'opzione **VSPerfClrEnv /GlobalInteractionOn** per impostare le variabili di ambiente e l'opzione **VSPerfClrEnv /GlobalInteractionOff** per rimuoverle.  
@@ -138,7 +138,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 13. Riavviare il computer per registrare le variabili di ambiente cancellate.  
   
-    Per altre informazioni, vedere uno degli argomenti seguenti:  
+    Per ulteriori informazioni, vedere uno degli argomenti seguenti:  
   
     [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
@@ -153,4 +153,4 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- Per altre informazioni su VSPerfASPNETCmd, vedere [Profilatura rapida di sito Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+ Per ulteriori informazioni su VSPerfASPNETCmd, vedere [profilatura rapida di siti Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

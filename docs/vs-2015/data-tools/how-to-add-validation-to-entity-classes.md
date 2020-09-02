@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a68b0314f3c64ce9196b8d48a78844bc81990a92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665988"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
@@ -24,7 +24,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
  Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) forniscono metodi parziali che consentono agli utenti di estendere il codice generato dalla finestra di progettazione eseguito durante le operazioni di inserimento, aggiornamento ed eliminazione di entità complete e anche durante e dopo la modifica delle singole colonne.
 
 > [!NOTE]
-> In questo argomento vengono forniti i passaggi di base per aggiungere la convalida a classi di entità usando [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Poiché potrebbe essere difficile seguire questi passaggi generici senza fare riferimento a una classe di entità specifica, viene fornita una procedura dettagliata in cui vengono utilizzati i dati effettivi.
+> In questo argomento vengono forniti i passaggi di base per aggiungere la convalida a classi di entità usando [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Poiché potrebbe essere difficile seguire questi passaggi generici senza fare riferimento a una specifica classe di entità, è stata fornita una procedura dettagliata in cui vengono usati dati effettivi.
 
 ## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>Aggiunta della convalida per le modifiche al valore di una specifica colonna
  In questa procedura viene mostrato come convalidare i dati quando viene modificato il valore in una colonna. Poiché la convalida viene eseguita nella definizione di classe anziché nell'interfaccia utente, se il valore causa l'esito negativo della convalida, viene generata un'eccezione. Implementare la gestione degli errori per il codice nell'applicazione che tenta di modificare i valori della colonna.
@@ -33,7 +33,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Per convalidare i dati durante la modifica del valore di una colonna
 
-1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) nell'[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
+1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
 
 2. In Progettazione relazionale di O, fare clic con il pulsante destro del mouse sulla classe per la quale si desidera aggiungere la convalida, quindi scegliere **Visualizza codice**.
 
@@ -47,7 +47,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
    2. Individuare il metodo **on**_ColumnName_**Changing** per la colonna a cui si desidera aggiungere la convalida.
 
-   3. Alla classe parziale viene aggiunto un metodo `Changing`*columnname* `On`.
+   3. `On`Viene aggiunto un metodo *ColumnName* `Changing` alla classe parziale.
 
    4. Aggiungere il codice riportato di seguito per verificare innanzitutto che sia stato immesso un valore e quindi per assicurarsi che il valore immesso per la colonna sia accettabile per l'applicazione. Poiché l'argomento `value` contiene il valore proposto, aggiungere logica per confermare che si tratta di un valore valido:
 
@@ -82,9 +82,9 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Per convalidare i dati durante un aggiornamento a una classe di entità
 
-1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) nell'[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
+1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
 
-2. Fare clic con il pulsante destro del mouse su un'area vuota della finestra di progettazione di O/R e scegliere **Visualizza codice**.
+2. Fare clic con il pulsante destro del mouse su un'area vuota in Object Relational Designer e quindi scegliere **Visualizza codice**.
 
     Viene aperto l'editor del codice con una classe parziale per `DataContext`.
 
@@ -96,7 +96,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
    2. Fare clic su **Update**_NOMECLASSEDIENTITÀ alla_.
 
-   3. Alla classe parziale viene aggiunto un metodo di `Update`*NOMECLASSEDIENTITÀ alla* .
+   3. `Update`Viene aggiunto un metodo *NOMECLASSEDIENTITÀ alla* alla classe parziale.
 
    4. Accedere ai valori delle singole colonne usando l'argomento `instance`, come mostrato nel codice seguente:
 
@@ -109,9 +109,9 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
 
       Per i progetti C#:
 
-   5. Poiché C# i progetti non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare il metodo partial `Update`*NomeClasse* .
+   5. Poiché i progetti C# non generano automaticamente i gestori eventi, è possibile usare IntelliSense per creare il metodo di `Update` *NomeClasse* parziale.
 
-   6. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento relativo alla classe per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice generato quando si seleziona un metodo parziale `Update`*ClassName* :
+   6. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento relativo alla classe per cui si desidera aggiungere la convalida. Il codice seguente è simile al codice generato quando si seleziona un `Update` metodo parziale *NomeClasse* :
 
       ```csharp
       partial void UpdateCLASSNAME(CLASSNAME instance)

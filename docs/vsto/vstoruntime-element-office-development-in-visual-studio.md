@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541882"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento vstoRuntime (sviluppo per Office in Visual Studio)
@@ -42,7 +42,7 @@ ms.locfileid: "85541882"
 |---------------|-----------------|
 |`release`|Obbligatorio. La versione di rilascio del runtime di Visual Studio Tools per Office.|
 |`version`|Obbligatorio. Numero di versione del runtime di Visual Studio Tools per Office.|
-|`supportUrl`|Facoltativa. Collegamento alla posizione di installazione del runtime di Visual Studio Tools per Office.|
+|`supportUrl`|facoltativo. Collegamento alla posizione di installazione del runtime di Visual Studio Tools per Office.|
 
  `vstoRuntime` non contiene elementi.
 

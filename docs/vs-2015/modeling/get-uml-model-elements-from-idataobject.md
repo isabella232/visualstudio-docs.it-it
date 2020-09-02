@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 66b4ffc312af89aa5852a1f4dad62fd328176df3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666081"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Ottenere elementi di modelli UML da IDataObject
@@ -26,14 +26,14 @@ Quando l'utente trascina elementi da qualsiasi origine in un diagramma, gli elem
 > [!NOTE]
 > La maggior parte delle operazioni che è necessario eseguire sui modelli UML può essere eseguita usando i tipi in definiti negli assembly **Microsoft. VisualStudio. Uml. Interfaces** e **Microsoft. VisualStudio. ArchitectureTools. Extensibility**. Tuttavia, a tale scopo, è necessario usare alcune classi che fanno parte dell'implementazione di strumenti di modellazione UML. Ad esempio, `ShapeElement` in questo frammento non equivale a `IShape` UML. Per ridurre il rischio di collocare il modello UML e diagrammi in uno stato incoerente, è preferibile evitare di usare i metodi su queste classi di implementazione, a eccezione dei casi in cui non è disponibile alcuna alternativa.
 
-## <a name="code-sample"></a>Esempio di codice
- Il progetto deve fare riferimento agli assembly di [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] seguenti:
+## <a name="code-sample"></a>Codice di esempio
+ Il progetto deve fare riferimento agli [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] assembly seguenti:
 
- **Microsoft. VisualStudio. Modeling. Sdk. versione**
+ **Microsoft.VisualStudio.Modeling.Sdk.[versione]**
 
- **Microsoft. VisualStudio. Modeling. Sdk. Diagrams. versione**
+ **Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]**
 
- **System. Windows. Forms**
+ **System.Windows.Forms**
 
 ```
 using Microsoft.VisualStudio.Modeling;

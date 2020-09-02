@@ -1,5 +1,5 @@
 ---
-title: Scelte rapide da tastiera
+title: Tasti di scelta rapida
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332232"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Scelte rapide da tastiera in Blend per Visual Studio
@@ -46,7 +46,7 @@ ms.locfileid: "85332232"
 |Taglia|**CTRL** + **X**|
 |Copia|**CTRL** + **C**|
 |Incolla|**CTRL** + **V**|
-|Elimina|**Elimina**|
+|Delete|**Elimina**|
 |Trovare testo (solo visualizzazione XAML o editor JavaScript)|**CTRL** + **F**|
 |Trovare l'occorrenza successiva del testo (solo visualizzazione XAML o editor JavaScript)|**F3** o **Ctrl**+**H**|
 

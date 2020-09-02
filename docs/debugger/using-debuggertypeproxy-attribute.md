@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85347963"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicare al debugger quale tipo visualizzare usando l'attributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
@@ -43,7 +43,7 @@ Per ridurre gli effetti negativi sulle prestazioni, l'analizzatore di espression
 
 È opportuno che il proxy del tipo sia una classe annidata privata all'interno della classe di destinazione dell'attributo. In questo modo l'attributo può accedere facilmente ai membri interni.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute>può essere ereditato, pertanto se un proxy di tipo viene specificato in una classe di base, verrà applicato a tutte le classi derivate, a meno che tali classi derivate non specifichino il proprio proxy di tipo.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> può essere ereditato, pertanto se un proxy di tipo viene specificato in una classe di base, verrà applicato a tutte le classi derivate, a meno che tali classi derivate non specifichino il proprio proxy di tipo.
 
 Se <xref:System.Diagnostics.DebuggerTypeProxyAttribute> viene utilizzato a livello di assembly, il parametro `Target` specifica il tipo che verrà sostituito dal proxy.
 
@@ -65,7 +65,7 @@ In Visual Basic non è disponibile la sintassi dei tipi aperti, pertanto non è 
 
 `"Namespace.TypeName'2"`
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Utilizzo dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
 - [Creazione di visualizzazioni personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md)
