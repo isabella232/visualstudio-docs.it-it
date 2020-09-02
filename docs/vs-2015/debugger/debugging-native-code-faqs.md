@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti sul codice nativo debug | Microsoft Docs
+title: Domande frequenti sul debug di codice nativo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63055cf443f20e353ac87ca3226e9f8208587fb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190487"
 ---
 # <a name="debugging-native-code-faqs"></a>Domande frequenti sul debug del codice nativo
@@ -36,7 +36,7 @@ Nei seguenti argomenti sono disponibili le risposte ad alcune domande frequenti:
   
 - [Come è possibile effettuare il debug di violazioni di accesso quando si esegue un programma in modo autonomo?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
   
-- [Come è possibile eseguire il debug di una violazione di accesso?](../debugger/how-can-i-debug-an-access-violation-q.md)  
+- [Come è possibile effettuare il debug di una violazione di accesso?](../debugger/how-can-i-debug-an-access-violation-q.md)  
   
 - [Come è possibile stabilire se i puntatori danneggino un indirizzo di memoria?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
   
@@ -48,7 +48,7 @@ Nei seguenti argomenti sono disponibili le risposte ad alcune domande frequenti:
   
 - [Come è possibile mantenere lo stato attivo quando si esegue un programma istruzione per istruzione?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)  
   
-- [Come è possibile usare le finestre debugger mentre si esegue il debug di un programma in primo piano?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
+- [Come è possibile utilizzare le finestre debugger mentre si esegue il debug di un programma in primo piano?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
   
 - [Se si verifica un blocco in MFC, come è possibile tornare alla funzione che ha chiamato MFC?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   

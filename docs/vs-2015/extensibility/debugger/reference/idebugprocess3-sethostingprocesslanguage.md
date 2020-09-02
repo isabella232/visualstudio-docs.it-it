@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
+title: 'IDebugProcess3:: SetHostingProcessLanguage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 86dc6de573dc5dc81a758535018feffd7b0ce662
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202850"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo imposta la lingua che verrà ospitato il processo sotto. Questo linguaggio è quindi utilizzabile per caricare l'analizzatore di espressioni appropriato dal motore di debug (DE).  
+Questo metodo imposta la lingua in cui verrà ospitato il processo. Questa lingua può quindi essere utilizzata dal motore di debug (DE) per caricare l'analizzatore di espressioni appropriato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,12 +40,12 @@ int SetHostingProcessLanguage(
   
 #### <a name="parameters"></a>Parametri  
  `guidLang`  
- [in] `GUID` del linguaggio che deve usare la Germania. Specificare `GUID_NULL` (C++) o `Guid.Empty` (c#) per disporre il DE utilizzare la lingua predefinita.  
+ [in] `GUID` della lingua che deve essere utilizzata dal DE. Specificare `GUID_NULL` (C++) o `Guid.Empty` (C#) affinché il de usi la lingua predefinita.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) può essere utilizzato per recuperare l'impostazione della lingua corrente.  
   
 ## <a name="see-also"></a>Vedere anche  

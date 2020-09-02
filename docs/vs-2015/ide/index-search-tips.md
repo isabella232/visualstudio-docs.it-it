@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7994f1c0c7281fc9902e15a3fd60293905abc4f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670445"
 ---
 # <a name="index-search-tips"></a>Suggerimenti per la ricerca nell'indice
@@ -29,7 +29,7 @@ ms.locfileid: "72670445"
 ## <a name="index-search-tips"></a>Suggerimenti per la ricerca nell'indice
  Usare l'indice è semplice, ma conoscere il modo migliore per immettere le parole chiave può rendere più efficaci le ricerche nell'indice.
 
-### <a name="general-guidelines"></a>Indicazioni generali
+### <a name="general-guidelines"></a>Linee guida generali
 
 - Scorrere le voci dell'indice. Non tutti gli argomenti sono indicizzati nello stesso modo e quello che può essere più utile potrebbe essere elencato più in alto o più in basso di quanto ci si aspetterebbe.
 

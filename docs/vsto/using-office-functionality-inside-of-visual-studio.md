@@ -1,5 +1,5 @@
 ---
-title: Usare funzionalità Office in Visual Studio
+title: Usare le funzionalità di Office all'interno di Visual Studio
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,28 +15,28 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62982337"
 ---
-# <a name="use-office-functionality-inside-of-visual-studio"></a>Usare funzionalità Office in Visual Studio
-  Quando si crea un progetto a livello di documento, documento e l'applicazione associato sono ospitati all'interno di Visual Studio in modo che sia possibile progettare e modificare direttamente il documento. Quando si dispone di un'applicazione aperta in Visual Studio di Microsoft Office, in genere funzioni come previsto. Tuttavia, alcune delle funzionalità dell'applicazione è diversa o non accessibile.
+# <a name="use-office-functionality-inside-of-visual-studio"></a>Usare le funzionalità di Office all'interno di Visual Studio
+  Quando si crea un progetto a livello di documento, il documento e l'applicazione associata sono ospitati all'interno di Visual Studio in modo da poter progettare e utilizzare direttamente il documento. Quando si dispone di un'applicazione Microsoft Office aperta in Visual Studio, in genere funziona come previsto. Tuttavia, alcune delle funzionalità dell'applicazione sono diverse o inaccessibili.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="document-protection"></a>Protezione di documenti
- Microsoft Office Word e Microsoft Office Excel offrono le funzionalità di protezione che è possibile usare nei progetti di documento. Ma, se è abilitata la protezione del documento mentre il documento è aperto in Visual Studio, può impedire di apportare alcune modifiche di progettazione. Per altre informazioni, vedere [documentare la protezione nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md).
+ Microsoft Office Word e Microsoft Office Excel offrono funzionalità di protezione dei documenti che è possibile usare nei progetti. Tuttavia, se la protezione dei documenti è abilitata mentre il documento è aperto in Visual Studio, può impedire di apportare alcune modifiche alla progettazione. Per altre informazioni, vedere [protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md).
 
-## <a name="information-rights-management"></a>Servizio Information rights management
- Information Rights Management (IRM) è disponibile in Microsoft Office Word e Microsoft Office Excel. IRM contribuisce a impedire agli utenti non autorizzati di visualizzare o modificare le informazioni riservate. Tuttavia, IRM può inoltre impedire il codice in esecuzione. Per altre informazioni, vedere [Information rights management e panoramica sulle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md).
+## <a name="information-rights-management"></a>Information Rights Management
+ Information Rights Management (IRM) è disponibile in Microsoft Office Word e Microsoft Office Excel. IRM consente di impedire a utenti non autorizzati di visualizzare o modificare le informazioni riservate. Tuttavia, IRM può anche impedire l'esecuzione del codice. Per ulteriori informazioni, vedere la [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md).
 
-## <a name="password-protection"></a>Protezione con password
- Documenti di Microsoft Office Word e cartelle di lavoro di Microsoft Office Excel possono essere impostati in modo che non può essere aperto da chi non conosce la password. La protezione con password viene gestita in modo diverso in Word ed Excel e può influire sul processo di sviluppo. Per altre informazioni, vedere [Password di protezione nei documenti di Office](../vsto/password-protection-on-office-documents.md).
+## <a name="password-protection"></a>Password di protezione
+ È possibile impostare Microsoft Office documenti di Word e Microsoft Office cartelle di lavoro di Excel in modo che non possano essere aperti da un utente che non conosce la password. La protezione con password viene gestita in modo diverso in Word ed Excel e può influire sul processo di sviluppo. Per ulteriori informazioni, vedere la pagina [relativa alla protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Protezione dei documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
-- [Information rights management e panoramica sulle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [Password di protezione nei documenti di Office](../vsto/password-protection-on-office-documents.md)
-- [Procedura: Aprire soluzioni Office senza eseguire codice](../vsto/how-to-open-office-solutions-without-running-code.md)
+- [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
+- [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md)
+- [Procedura: aprire soluzioni Office senza eseguire codice](../vsto/how-to-open-office-solutions-without-running-code.md)

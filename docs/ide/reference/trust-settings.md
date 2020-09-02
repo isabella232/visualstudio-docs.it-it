@@ -14,10 +14,10 @@ helpviewer_keywords:
 - trusted files
 - trusted folders
 ms.openlocfilehash: 492a94962d255a9d18dcabdababf7fa6a540ada1
-ms.sourcegitcommit: 935e1388281df0f04147802606b5cb7f513d45ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88197390"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Configurare le impostazioni di attendibilità per file e cartelle
@@ -33,7 +33,7 @@ Per modificare le impostazioni di attendibilità, seguire questa procedura:
 
 1. Aprire **strumenti**  >  **Opzioni**  >  **attendibilità impostazioni** e selezionare il collegamento **Configura impostazioni di attendibilità** nel riquadro di destra.
 
-2. Scegliere il livello di controllo per i file e le cartelle. Si possono usare controlli diversi per ognuno di essi. Le opzioni disponibili sono le seguenti:
+2. Scegliere il livello di controllo per i file e le cartelle. Si possono usare controlli diversi per ognuno di essi. Le opzioni sono:
 
    * **Nessuna verifica**: Visual Studio non esegue alcun controllo.
 

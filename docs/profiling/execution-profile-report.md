@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62969992"
 ---
 # <a name="execution-profile-report"></a>Report del profilo di esecuzione
@@ -37,7 +37,7 @@ Il rapporto del profilo di esecuzione è un profilo di campionamento tradizional
 |% esclusivi|La percentuale di campioni totali visualizzata nella colonna dei campioni esclusivi. Le percentuali vengono arrotondate a due cifre decimali.|
 |Dettagli|Nome completo della funzione. Include il conteggio delle righe, se disponibile.|
 
- Questa tabella del report può essere visualizzata nella visualizzazione Tempo di [esecuzione (visualizzazione Thread).](../profiling/execution-time-threads-view.md)
+ Questa tabella report può essere visualizzata nella visualizzazione [tempo di esecuzione (visualizzazione thread)](../profiling/execution-time-threads-view.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

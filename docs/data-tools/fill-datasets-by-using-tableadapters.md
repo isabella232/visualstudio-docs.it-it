@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282436"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
@@ -35,7 +35,7 @@ Un componente TableAdapter compila un set di dati con i dati del database, in ba
 
 Per informazioni dettagliate sulle operazioni TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Creare e configurare oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md)|Come utilizzare le finestre di progettazione per creare e configurare TableAdapter|
 |[Creare query TableAdapter con parametri](../data-tools/create-parameterized-tableadapter-queries.md)|Come consentire agli utenti di fornire argomenti per le query o le procedure TableAdapter|
@@ -52,7 +52,7 @@ Gli oggetti TableAdapter sono componenti generati dalla finestra di progettazion
 
 ![Flusso dei dati in un'applicazione client](../data-tools/media/clientdatadiagram.gif)
 
-Sebbene gli oggetti TableAdapter siano progettati con la **Progettazione DataSet**, le classi TableAdapter non vengono generate come classi annidate di <xref:System.Data.DataSet> . Si trovano in spazi dei nomi distinti specifici di ogni set di dati. Se, ad esempio, si dispone di un set di dati denominato `NorthwindDataSet` , gli oggetti TableAdapter associati a in si trovano <xref:System.Data.DataTable> `NorthwindDataSet` nello `NorthwindDataSetTableAdapters` spazio dei nomi. Per accedere a un determinato TableAdapter a livello di codice, è necessario dichiarare una nuova istanza del TableAdapter. Ad esempio:
+Sebbene gli oggetti TableAdapter siano progettati con la **Progettazione DataSet**, le classi TableAdapter non vengono generate come classi annidate di  <xref:System.Data.DataSet> . Si trovano in spazi dei nomi distinti specifici di ogni set di dati. Se, ad esempio, si dispone di un set di dati denominato `NorthwindDataSet` , gli oggetti TableAdapter associati a in si trovano  <xref:System.Data.DataTable> `NorthwindDataSet` nello `NorthwindDataSetTableAdapters` spazio dei nomi. Per accedere a un determinato TableAdapter a livello di codice, è necessario dichiarare una nuova istanza del TableAdapter. Ad esempio:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -89,7 +89,7 @@ La classe TableAdapter non è un tipo .NET. Ciò significa che non è possibile 
 
 Di seguito sono riportati i metodi e le proprietà di uso comune degli oggetti TableAdapter:
 
-|Membro|Description|
+|Membro|Descrizione|
 |------------|-----------------|
 |`TableAdapter.Fill`|Popola la tabella dati associata del TableAdapter con i risultati del comando del TableAdapter `SELECT` .|
 |`TableAdapter.Update`|Invia nuovamente le modifiche al database e restituisce un Integer che rappresenta il numero di righe interessate dall'aggiornamento. Per altre informazioni, vedere [aggiornare i dati tramite un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -126,17 +126,17 @@ La classe TableAdapterManager non è un tipo .NET. Pertanto, non è possibile ce
 
 Di seguito sono riportati i metodi e le proprietà di uso frequente della `TableAdapterManager` classe:
 
-|Membro|Description|
+|Membro|Descrizione|
 |------------|-----------------|
 |Metodo `UpdateAll`|Salva tutti i dati di tutte le tabelle di dati.|
 |Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` metodo. Boolean.|
 |*TableName* `TableAdapter` Proprietà|Rappresenta un TableAdapter. Il TableAdapterManager generato contiene una proprietà per ogni oggetto `TableAdapter` gestito. Ad esempio, un set di dati con una tabella Customers e Orders genera con un TableAdapterManager che contiene `CustomersTableAdapter` le `OrdersTableAdapter` proprietà e.|
 |Proprietà `UpdateOrder`|Controlla l'ordine dei singoli comandi INSERT, Update e DELETE. Impostare questa impostazione su uno dei valori dell' `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, la `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che gli inserimenti, gli aggiornamenti e le eliminazioni vengono eseguiti per tutte le tabelle nel set di dati.|
 
-## <a name="security"></a>Security
+## <a name="security"></a>Sicurezza
 
 Quando si usano i comandi dati con una proprietà CommandType impostata su <xref:System.Data.CommandType.Text> , controllare attentamente le informazioni inviate da un client prima di passarle al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire l'input dell'utente in un database, verificare sempre che le informazioni siano valide. Una procedura consigliata consiste nell'utilizzare sempre query con parametri o stored procedure, quando possibile.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti DataSet](../data-tools/dataset-tools-in-visual-studio.md)

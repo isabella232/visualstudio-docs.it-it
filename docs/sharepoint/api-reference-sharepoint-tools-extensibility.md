@@ -1,5 +1,5 @@
 ---
-title: Riferimento all'API (estensibilità degli strumenti di SharePoint) | Microsoft Docs
+title: Informazioni di riferimento sulle API (estendibilità degli strumenti di SharePoint) | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,35 +13,35 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62987993"
 ---
-# <a name="api-reference-sharepoint-tools-extensibility"></a>Riferimento all'API (estensibilità degli strumenti di SharePoint)
-  In questa sezione contiene la documentazione di riferimento API per l'estensione strumenti di SharePoint in Visual Studio.
+# <a name="api-reference-sharepoint-tools-extensibility"></a>Riferimento API (estendibilità degli strumenti di SharePoint)
+  Questa sezione contiene la documentazione di riferimento sulle API per l'estensione degli strumenti di SharePoint in Visual Studio.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  <xref:Microsoft.VisualStudio.SharePoint>
 
- Contiene tipi utilizzabili per estendere il sistema di progetto SharePoint. Ad esempio, è possibile estendere i progetti e gli elementi del progetto SharePoint predefiniti oppure crearne di personalizzati.
+ Contiene i tipi utilizzati per estendere il sistema del progetto SharePoint. Ad esempio, è possibile estendere i progetti e gli elementi del progetto SharePoint predefiniti oppure crearne di personalizzati.
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- Contiene tipi che è possibile utilizzare per la creazione personalizzata *comandi SharePoint*. Un comando di SharePoint è un metodo che chiama il modello a oggetti server di SharePoint da un'estensione degli strumenti di SharePoint.
+ Contiene i tipi che è possibile utilizzare per creare *comandi*personalizzati di SharePoint. Un comando di SharePoint è un metodo che chiama il modello a oggetti server di SharePoint da un'estensione degli strumenti di SharePoint.
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 
- Contiene tipi utilizzabili per estendere il processo di distribuzione per progetti SharePoint.
+ Contiene i tipi utilizzati per estendere il processo di distribuzione per i progetti SharePoint.
 
  <xref:Microsoft.VisualStudio.SharePoint.Explorer>
 
- Contiene tipi utilizzabili per estendere i nodi di SharePoint in **Esplora Server** o per definire i propri tipi di nodi.
+ Contiene i tipi utilizzati per estendere i nodi di SharePoint in **Esplora server** o per definire tipi di nodi personalizzati.
 
  <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>
 
- Contiene tipi che è possibile usare per ottenere informazioni sul integrato **Esplora Server** nodi che rappresentano componenti individuali in un sito di SharePoint, ad esempio un nodo che rappresenta un elenco, un campo o un tipo di contenuto.
+ Contiene i tipi che è possibile utilizzare per ottenere informazioni sui nodi **Esplora server** predefiniti che rappresentano singoli componenti in un sito di SharePoint, ad esempio un nodo che rappresenta un elenco, un campo o un tipo di contenuto.
 
  <xref:Microsoft.VisualStudio.SharePoint.Features>
 
@@ -49,7 +49,7 @@ ms.locfileid: "62987993"
 
  <xref:Microsoft.VisualStudio.SharePoint.Packages>
 
- Contiene tipi utilizzabili per accedere alla definizione del pacchetto in un progetto SharePoint.
+ Contiene i tipi utilizzati per accedere alla definizione del pacchetto in un progetto SharePoint.
 
  <xref:Microsoft.VisualStudio.SharePoint.Remote.Authentication>
 
@@ -61,16 +61,16 @@ ms.locfileid: "62987993"
 
  <xref:Microsoft.VisualStudio.SharePoint.Tasks>
 
- Contiene i tipi utilizzati da Visual Studio come attività di compilazione per creare i pacchetti ed eseguire il debug di progetti SharePoint, applicazioni per Office e applicazioni per SharePoint. Questa API supporta l'infrastruttura Office e SharePoint e non è destinata a essere utilizzato direttamente dal codice.
+ Contiene i tipi utilizzati da Visual Studio come attività di compilazione per creare i pacchetti ed eseguire il debug di progetti SharePoint, applicazioni per Office e applicazioni per SharePoint. Questa API supporta l'infrastruttura Office e SharePoint e non può essere utilizzata direttamente dal codice.
 
  <xref:Microsoft.VisualStudio.SharePoint.Validation>
 
  Contiene i tipi utilizzati per personalizzare il comportamento della convalida della funzionalità e del pacchetto per un progetto SharePoint.
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento &#40;estendibilità degli strumenti di SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
-- [Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Estendere il sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
-- [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Estendere la distribuzione e creazione di pacchetti di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
-- [Chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- [Riferimento &#40;estensibilità degli strumenti di SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
+- [Panoramica del modello di programmazione delle estensioni degli strumenti di SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [Estendere il sistema del progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Estendere il nodo connessioni di SharePoint in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Estensione della creazione di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [Chiamare nei modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)

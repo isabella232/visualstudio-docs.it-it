@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 382d5dc5ee416d901e1b73b7b2fb346e83abbef6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545574"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
@@ -59,7 +59,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 #### <a name="to-create-the-project"></a>Per creare il progetto
 
-1. Creare un progetto Finestra di progettazione Domain-Specific Language. Denomina tale elemento `TrackingPropertyDSL`.
+1. Creare un progetto Finestra di progettazione Domain-Specific Language. Denominarlo `TrackingPropertyDSL`.
 
 2. Nella **procedura guidata finestra di progettazione Domain-Specific Language**impostare le opzioni seguenti:
 
@@ -724,7 +724,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 1. Nel menu **Compila** fare clic su **Ricompila soluzione**.
 
-2. Scegliere **Avvia debug**dal menu **debug** .
+2. Scegliere **Avvia debug** dal menu **Debug**.
 
      La build sperimentale di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] apre la soluzione di **debug** , che contiene un file di test vuoto.
 

@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
 ms.openlocfilehash: 144580b0ebe0eb3615c5cf55c1bee03ff2a614fa
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938972"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
@@ -69,7 +69,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![Dettagli del nuovo account di archiviazione](media/azure-functions-lab-image6.png)
 
-1. Fare clic su **Crea**. La creazione dell'account di archiviazione può richiedere alcuni minuti. Al completamento si riceve una notifica.
+1. Scegliere **Crea**. La creazione dell'account di archiviazione può richiedere alcuni minuti. Al completamento si riceve una notifica.
 
     ![Notifica di distribuzione riuscita](media/azure-functions-lab-image7.png)
 
@@ -413,6 +413,6 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
     ![](https://user-images.githubusercontent.com/3944468/29033725-be9d5a5e-7b4a-11e7-8b55-df0a200b6320.png)
 -->
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>Riepilogo
 
 In questa esercitazione si è appreso come iniziare a creare le funzioni di Azure tramite Visual Studio per Mac.

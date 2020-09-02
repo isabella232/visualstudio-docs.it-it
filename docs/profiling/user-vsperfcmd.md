@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779961"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
@@ -35,7 +35,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **User** può essere usata solo con l'opzione **Start**.
 
- **Start:** `Method` inizializza il profiler al metodo di profilatura specificato.
+ **Inizio:** `Method` Inizializza il profiler sul metodo di profilatura specificato.
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra l'uso dell'opzione **User**.

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40772919031200466999df2dfbf651fae3ee01e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670565"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: visualizzare e modificare il codice utilizzando la finestra Visualizza definizione (ALT+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare il comando **Visualizza definizione** per visualizzare e modificare il codice senza uscire dal codice in fase di scrittura. **Visualizza definizione** e **Vai a definizione** visualizzano le stesse informazioni, ma **Visualizza definizione** mostra il codice in una finestra popup e **Vai a definizione** mostra il codice in una finestra separata. **Vai a definizione** determina il passaggio del contesto (ovvero la finestra di codice attiva, la riga corrente e la posizione del cursore) alla finestra del codice della definizione. Tramite **Visualizza definizione** è possibile visualizzare e modificare la definizione e spostarsi all'interno del file di definizione, mantenendo la stessa posizione nel file di codice originale.
+È possibile usare il comando **Visualizza definizione** per visualizzare e modificare il codice senza uscire dal codice in fase di scrittura. **Visualizza definizione** e **Vai a definizione** visualizzano le stesse informazioni, ma **Visualizza definizione** mostra il codice in una finestra popup e **Vai a definizione** mostra il codice in una finestra separata. **Vai a definizione** determina il passaggio del contesto (ovvero la finestra di codice attiva, la riga corrente e la posizione del cursore) alla finestra del codice della definizione. Utilizzando **Visualizza definizione**, è possibile visualizzare e modificare la definizione e spostarsi all'interno del file di definizione mantenendo la posizione nel file di codice originale.
 
  È possibile usare **Visualizza definizione** con codice C#, Visual Basic e C++. In Visual Basic **Visualizza definizione** contiene un collegamento a **Visualizzatore oggetti** per i simboli sprovvisti di metadati di definizione, ad esempio tipi .NET Framework predefiniti.
 
@@ -34,7 +34,7 @@ ms.locfileid: "72670565"
 
      Questa illustrazione mostra la finestra **Visualizza definizione** per un metodo denominato `Print()`:
 
-     ![Visualizza finestra](../ide/media/peekwindow.png "PeekWindow")
+     ![Finestra di anteprima](../ide/media/peekwindow.png "PeekWindow")
 
      La finestra di definizione appare sotto la riga `printer.Print(“Hello World!”)` nel file originale. La finestra non nasconde alcuna sezione di codice nel file originale. Le righe che seguono la chiamata `printer.Print(“Hello World!”)` vengono visualizzate al di sotto della finestra di definizione.
 
@@ -42,19 +42,19 @@ ms.locfileid: "72670565"
 
 3. È possibile copiare una stringa dalla finestra di definizione e incollarla nel codice originale. È inoltre possibile trascinare e rilasciare la stringa dalla finestra di definizione nel codice originale senza eliminarla dalla finestra di definizione.
 
-4. È possibile chiudere la finestra di definizione usando ESC o il pulsante **Chiudi** nella scheda della finestra di definizione.
+4. È possibile chiudere la finestra di definizione usando il tasto ESC o il pulsante **Chiudi** nella scheda della finestra di definizione.
 
 #### <a name="to-open-a-peek-definition-window-from-within-a-peek-definition-window"></a>Per aprire una finestra Visualizza definizione all'interno di una finestra Visualizza definizione
 
 - Se è già aperta una finestra **Visualizza definizione**, è possibile chiamare di nuovo **Visualizza definizione** per il codice in tale finestra. Verrà visualizzata un'altra finestra di definizione. Accanto alla scheda della finestra di definizione verrà visualizzato un set di punti di navigazione, che è possibile utilizzare per spostarsi tra le finestre di definizione. La descrizione comando in ciascun punto indica il nome e il percorso del file di definizione rappresentato dal punto.
 
-     ![Visualizza finestra in una finestra di anteprima](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+     ![Finestra di anteprima in una finestra di anteprima](../ide/media/peekwithinpeek.png "PeekWithinPeek")
 
 #### <a name="to-use-peek-definition-with-multiple-results"></a>Per utilizzare Visualizza definizione con più risultati
 
 - Se si usa **Visualizza definizione** per codice con più definizioni, ad esempio codice di classi parziali, a destra della visualizzazione della definizione del codice viene visualizzato un elenco di risultati. È possibile scegliere qualsiasi risultato nell'elenco per visualizzarne la definizione.
 
-     ![Visualizza finestra da più risultati](../ide/media/peekmultiple.png "PeekMultiple")
+     ![Finestra di anteprima di più risultati](../ide/media/peekmultiple.png "PeekMultiple")
 
 #### <a name="to-edit-inside-the-peek-definition-window"></a>Per apportare modifiche all'interno della finestra Visualizza Definizione
 

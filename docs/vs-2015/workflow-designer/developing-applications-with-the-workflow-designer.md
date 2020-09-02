@@ -18,14 +18,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848300c54800e229ee1f487fc415bad45d982a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656820"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Sviluppo di applicazioni con Progettazione flussi di lavoro
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] consiste in un debugger e una finestra di progettazione visiva per il debug e la costruzione grafica di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] nella versione [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] ospitata nell'ambiente di sviluppo di [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Consente di creare un'applicazione di flussi di lavoro compositi, una libreria attività o un servizio [!INCLUDE[indigo1](../includes/indigo1-md.md)] tramite l'uso di modelli e ActivityDesigner. [!INCLUDE[crabout](../includes/crabout-md.md)] i flussi di lavoro, [vedere &#91;Windows Workflow Foundation .NET Framework&#93;4](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] consiste in un debugger e una finestra di progettazione visiva per il debug e la costruzione grafica di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] nella versione [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] ospitata nell'ambiente di sviluppo di [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Consente di creare un'applicazione di flussi di lavoro compositi, una libreria attività o un servizio [!INCLUDE[indigo1](../includes/indigo1-md.md)] tramite l'uso di modelli e ActivityDesigner. [!INCLUDE[crabout](../includes/crabout-md.md)] i flussi di lavoro, vedere la [Windows Workflow Foundation &#91; .NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
 
  Di seguito sono indicate diverse nuove funzionalità di progettazione che fanno la distinzione tra questa nuova versione di [!INCLUDE[wfd2](../includes/wfd2-md.md)] e le versioni precedenti di [!INCLUDE[wfd2](../includes/wfd2-md.md)]:
 
@@ -43,7 +43,7 @@ ms.locfileid: "72656820"
 
 - La riallocazione di [!INCLUDE[wfd2](../includes/wfd2-md.md)] esternamente a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene semplificata in modo significativo rispetto alle versioni precedenti dal momento che ora è sufficiente specificare solo alcune righe di codice.
 
-- La nuova attività <xref:System.Activities.Statements.Flowchart> e il relativo [diagramma](../workflow-designer/flowchart-activity-designer.md) di flusso consentono di visualizzare il flusso del programma usando lo stile di modellazione del diagramma di flusso noto.
+- La nuova <xref:System.Activities.Statements.Flowchart> attività e il relativo [diagramma](../workflow-designer/flowchart-activity-designer.md) di flusso consentono di visualizzare il flusso del programma usando lo stile di modellazione del diagramma di flusso noto.
 
 - Le attività di messaggistica sono state migliorate per consentire la scrittura di servizi [!INCLUDE[indigo1](../includes/indigo1-md.md)] completamente dichiarativi (senza codice).
 
@@ -56,10 +56,10 @@ ms.locfileid: "72656820"
 
  [Debug dei flussi di lavoro con il progettazione flussi di lavoro](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) Viene descritto come eseguire le tradizionali procedure di debug, nonché come eseguire il debug di XAML ed espressioni.
 
- [Guida dell'interfaccia utente di progettazione flussi di lavoro](../workflow-designer/workflow-designer-ui-help.md) Contiene argomenti della Guida sensibili al contesto per le finestre di dialogo fornite da [!INCLUDE[wfd1](../includes/wfd1-md.md)], nonché indicazioni sulle funzionalità della shell della finestra di progettazione, tasti di scelta rapida e messaggi di errore.
+ [Guida dell'interfaccia utente di progettazione flussi di lavoro](../workflow-designer/workflow-designer-ui-help.md) Contiene argomenti della Guida sensibili al contesto per le finestre di dialogo fornite da [!INCLUDE[wfd1](../includes/wfd1-md.md)] , nonché indicazioni sulle funzionalità della shell della finestra di progettazione, tasti di scelta rapida e messaggi di errore.
 
- [Sviluppo di applicazioni flusso di lavoro destinate a .net 3,0 o .net 3,5 Framework](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md) Contiene informazioni aggiuntive sull'utilizzo della finestra di progettazione legacy destinata al [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o al [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+ [Sviluppo di applicazioni flusso di lavoro destinate a .net 3,0 o .net 3,5 Framework](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md) Contiene informazioni aggiuntive sull'utilizzo della finestra di progettazione legacy destinata a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] .
 
- [ &#91;Esempi&#93; di riallocazione WF di progettazione](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d) In questo esempio viene illustrato come creare il layout WPF per contenere la finestra di progettazione.
+ [Riallocazione della finestra di progettazione &#91;esempi WF&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d) In questo esempio viene illustrato come creare il layout WPF per contenere la finestra di progettazione.
 
  ActivityDesigner [personalizzati](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075) Questa sezione contiene esempi di attività che usano finestre di progettazione personalizzate per la visualizzazione in Progettazione flussi di lavoro.

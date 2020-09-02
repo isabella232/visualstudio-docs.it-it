@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugSettingsCallback2::GetEEMetricString . Documenti Microsoft
+title: 'IDebugSettingsCallback2:: GetEEMetricString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ec2d8d321045900ac208297f7b007ce5266953f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720032"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-Recupera la stringa di valore di una metrica dell'analizzatore di espressioni dato il nome.
+Recupera la stringa di valore di una metrica dell'analizzatore di espressioni in base al nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ private int GetEEMetricString(
 
 ## <a name="parameters"></a>Parametri
 `guidLang`\
-[in] Identificatore univoco del linguaggio di programmazione.
+in Identificatore univoco del linguaggio di programmazione.
 
 `guidVendor`\
-[in] Identificatore univoco del fornitore.
+in Identificatore univoco del fornitore.
 
 `pszMetric`\
-[in] Nome della metrica.
+in Nome della metrica.
 
 `pbstrValue`\
-[fuori] Restituisce la stringa del valore della metrica.
+out Restituisce la stringa del valore della metrica.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

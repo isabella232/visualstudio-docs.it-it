@@ -8,10 +8,10 @@ ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88186226"
 ---
 Con Visual Studio è possibile creare, eseguire il debug ed eseguire app .NET, ASP.NET e ASP.NET Core in contenitori e pubblicarli in Azure Container Registry (ACR), nell'hub Docker, nel servizio app Azure o nel registro contenitori. In questo articolo verrà pubblicata un'app ASP.NET Core in ACR.
@@ -110,7 +110,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     | Impostazione      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Prefisso DNS** | Nome univoco a livello globale | Nome che identifica in modo univoco il registro contenitori. |
+    | **Prefisso DNS** | Nome globalmente univoco | Nome che identifica in modo univoco il registro contenitori. |
     | **Sottoscrizione** | Scegliere la sottoscrizione | Sottoscrizione di Azure da usare. |
     | **[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome del gruppo di risorse in cui creare il registro contenitori. Per creare un nuovo gruppo di risorse scegliere **Nuovo**.|
     | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Livello di servizio del registro contenitori  |
@@ -118,7 +118,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio][0]
 
-1. Fare clic su **Crea**. Nella finestra di dialogo **pubblica** è ora visualizzato il registro di sistema creato.
+1. Scegliere **Crea**. Nella finestra di dialogo **pubblica** è ora visualizzato il registro di sistema creato.
 
    ![Screenshot della finestra di dialogo di pubblicazione che mostra la creazione Container Registry di Azure](../../media/container-tools/vs-2019/created-azure-container-registry.png)
 

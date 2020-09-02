@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: c4daf3d92aa08e6dbbb81eac79112772900d08d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964035"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Creazione di un progetto di servizio cloud di Azure con Visual Studio
@@ -26,7 +26,7 @@ In questa sezione viene illustrata la creazione di un progetto di servizio cloud
 
 1. Avviare Visual Studio come amministratore.
 
-1. Nel menu principale, selezionare **File** > **Nuovo** > **Progetto**.
+1. Nel menu principale, selezionare **file**  >  **nuovo**  >  **progetto**.
 
 1. Selezionare **Cloud** dai nodi del modello del progetto di Visual C# o Visual Basic e selezionare **Servizio cloud di Azure** dall'elenco dei modelli.
 
@@ -36,7 +36,7 @@ In questa sezione viene illustrata la creazione di un progetto di servizio cloud
 
 1. Immettere un nome e un percorso per il progetto e un nome per la soluzione.
 
-1. Scegliere **OK**.
+1. Selezionare **OK**.
 
 1. Nella finestra di dialogo **Nuovo servizio cloud Microsoft Azure** scegliere i ruoli che si desidera aggiungere e fare clic sul pulsante con la freccia destra per aggiungerli alla soluzione.
 

@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e181500beefd32dffb9c0e8a7572a198cc9ff1f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852188"
 ---
-# <a name="working-with-3-d-assets-for-games-and-apps"></a>Uso di risorse tridimensionali per giochi e app
+# <a name="working-with-3-d-assets-for-games-and-apps"></a>Utilizzo di risorse tridimensionali per giochi e app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo documento descrive gli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che è possibile usare per creare o modificare modelli 3D, trame e shader per app e giochi DirectX.
@@ -34,7 +34,7 @@ Questo documento descrive gli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-
  È possibile usare l'Editor immagini di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con immagini e trame nei numerosi tipi e formati comuni.
 
 ### <a name="3-d-models"></a>3D (modelli)
- I modelli 3D creano spazio e forma in giochi e app. I modelli codificano la posizione dei punti nello spazio 3D, noti come *vertici*, insieme all'indicizzazione dati, per definire linee o triangoli che rappresentano la forma del modello. A questi vertici è possibile aggiungere dati aggiuntivi, ad esempio informazioni sul colore, vettori normali o attributi specifici dell'applicazione. Ogni modello può anche definire attributi a livello di oggetto, ad esempio quali shader usare per definire l'aspetto dell'area dell'oggetto o quale trama applicare.
+ I modelli 3D creano spazio e forma in giochi e app. I modelli codificano la posizione dei punti nello spazio 3D, noti come *vertici*, insieme ai dati di indicizzazione per definire linee o triangoli che rappresentano la forma del modello. A questi vertici è possibile aggiungere dati aggiuntivi, ad esempio informazioni sul colore, vettori normali o attributi specifici dell'applicazione. Ogni modello può anche definire attributi a livello di oggetto, ad esempio quali shader usare per definire l'aspetto dell'area dell'oggetto o quale trama applicare.
 
  È possibile usare l'Editor modello di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con modelli 3D in diversi formati comuni.
 
@@ -54,6 +54,6 @@ Questo documento descrive gli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di trame e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con immagini e texture.|
-|[Uso dei modelli tridimensionali](../designers/working-with-3-d-models.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con modelli 3D.|
-|[Uso degli shader](../designers/working-with-shaders.md)|Viene descritto come usare la finestra di progettazione shader di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per creare e modificare gli effetti di shader personalizzati.|
+|[Utilizzo dei modelli tridimensionali](../designers/working-with-3-d-models.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con modelli 3D.|
+|[Utilizzo degli shader](../designers/working-with-shaders.md)|Viene descritto come usare la finestra di progettazione shader di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per creare e modificare gli effetti di shader personalizzati.|
 |[Uso delle risorse tridimensionali nel gioco o nell'app](../designers/using-3-d-assets-in-your-game-or-app.md)|Viene descritto come usare le risorse, quali risorse sono state create con l'Editor immagini, l'Editor modello o la finestra di progettazione shader nel gioco o nell'app.|

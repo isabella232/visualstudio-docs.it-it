@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162325"
 ---
 # <a name="logging-in-msbuild"></a>Registrazione a MSBuild
@@ -23,7 +23,7 @@ ms.locfileid: "68162325"
 
 La registrazione consente di monitorare lo stato di avanzamento di una compilazione. La registrazione acquisisce eventi di compilazione, messaggi, avvisi ed errori in un file di log.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)  
  Descrive i diversi aspetti della registrazione in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
@@ -36,7 +36,7 @@ La registrazione consente di monitorare lo stato di avanzamento di una compilazi
  [Scrittura di logger compatibili con più processori](../msbuild/writing-multi-processor-aware-loggers.md)  
  Illustra come creare logger compatibili con più processori e come usare ConfigurableForwardingLogger.  
   
- [Creazione di logger di inoltro](../msbuild/creating-forwarding-loggers.md)  
+ [Creazione di logger di Inoltring](../msbuild/creating-forwarding-loggers.md)  
  Illustra come creare logger di inoltro personalizzati.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
