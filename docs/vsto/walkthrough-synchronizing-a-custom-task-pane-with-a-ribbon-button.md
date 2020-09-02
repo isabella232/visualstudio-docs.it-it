@@ -1,5 +1,5 @@
 ---
-title: Sincronizza riquadro attività personalizzato con il pulsante della barra multifunzione
+title: Sincronizzare il riquadro attività personalizzato con il pulsante della barra multifunzione
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -24,20 +24,20 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67328329"
 ---
-# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione
-  Questa procedura dettagliata viene illustrato come creare un riquadro attività personalizzato che gli utenti possono nascondere o visualizzare facendo clic su un interruttore nella barra multifunzione. È consigliabile creare sempre un elemento dell'interfaccia utente, ad esempio un pulsante, che gli utenti possono usare per visualizzare o nascondere il riquadro attività personalizzato, perché le applicazioni di Microsoft Office non forniscono una modalità predefinita per visualizzare o nascondere i riquadri attività personalizzati.
+# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procedura dettagliata: sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione
+  In questa procedura dettagliata viene illustrato come creare un riquadro attività personalizzato che gli utenti possono nascondere o visualizzare facendo clic su un interruttore nella barra multifunzione. È consigliabile creare sempre un elemento dell'interfaccia utente, ad esempio un pulsante, che gli utenti possono usare per visualizzare o nascondere il riquadro attività personalizzato, perché le applicazioni di Microsoft Office non forniscono una modalità predefinita per visualizzare o nascondere i riquadri attività personalizzati.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
  Benché questa procedura dettagliata usi Excel in modo specifico, i concetti illustrati sono applicabili a tutte le applicazioni elencate in precedenza.
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Progettazione dell'interfaccia utente del riquadro attività personalizzato.
 
@@ -46,32 +46,32 @@ ms.locfileid: "67328329"
 - Sincronizzazione dell'interruttore con il riquadro attività personalizzato.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - Microsoft Excel o Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)].
 
 ## <a name="create-the-add-in-project"></a>Creare il progetto di componente aggiuntivo
- In questo passaggio si creerà un progetto di componente aggiuntivo VSTO per Excel.
+ In questo passaggio verrà creato un progetto di componente aggiuntivo VSTO per Excel.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto di componente aggiuntivo per Excel con il nome **SynchronizeTaskPaneAndRibbon**, usando il modello di progetto di componente aggiuntivo per Excel. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto di componente aggiuntivo per Excel con il nome **SynchronizeTaskPaneAndRibbon**, usando il modello di progetto di componente aggiuntivo per Excel. Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice **ThisAddIn.cs** o **ThisAddIn.vb** e aggiunge il progetto **SynchronizeTaskPaneAndRibbon** a **Esplora soluzioni**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice **ThisAddIn.cs** o **ThisAddIn. vb** e aggiunge il progetto **SynchronizeTaskPaneAndRibbon** a **Esplora soluzioni**.
 
 ## <a name="add-a-toggle-button-to-the-ribbon"></a>Aggiungere un interruttore alla barra multifunzione
  Per la progettazione di applicazioni di Office, è necessario che gli utenti abbiano sempre il controllo dell'interfaccia utente dell'applicazione di Office. Per permettere agli utenti di controllare il riquadro attività personalizzato, è possibile aggiungere un interruttore della barra multifunzione che consente di visualizzare e nascondere il riquadro attività. Per creare un interruttore, aggiungere un elemento **Barra multifunzione (finestra di progettazione visiva)** al progetto. La finestra di progettazione consente di aggiungere e posizionare controlli, impostarne le proprietà e gestirne gli eventi. Per altre informazioni, vedere [finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md).
 
 ### <a name="to-add-a-toggle-button-to-the-ribbon"></a>Per aggiungere un interruttore alla barra multifunzione
 
-1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+1. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)** .
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
 
 3. Modificare il nome della nuova barra multifunzione in **ManageTaskPaneRibbon**e fare clic su **Aggiungi**.
 
@@ -101,7 +101,7 @@ ms.locfileid: "67328329"
 3. Nella scheda **Controlli comuni** della **casella degli strumenti**trascinare un controllo **TextBox** nel controllo utente.
 
 ## <a name="create-the-custom-task-pane"></a>Creare il riquadro attività personalizzato
- Per creare il riquadro attività personalizzato quando viene avviato il componente aggiuntivo VSTO, aggiungere il controllo utente al riquadro attività nel gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> del componente aggiuntivo VSTO. Per impostazione predefinita, il riquadro attività personalizzato non è visibile. Più avanti in questa procedura dettagliata si aggiungerà codice che consente di visualizzare o nascondere il riquadro attività quando l'utente fa clic sul pulsante Attiva/Disattiva che è stato aggiunto alla barra multifunzione.
+ Per creare il riquadro attività personalizzato quando viene avviato il componente aggiuntivo VSTO, aggiungere il controllo utente al riquadro attività nel gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> del componente aggiuntivo VSTO. Per impostazione predefinita, il riquadro attività personalizzato non è visibile. Più avanti in questa procedura dettagliata verrà aggiunto il codice che consente di visualizzare o nascondere il riquadro attività quando l'utente fa clic sull'interruttore aggiunto alla barra multifunzione.
 
 ### <a name="to-create-the-custom-task-pane"></a>Per creare il riquadro attività personalizzato
 
@@ -119,7 +119,7 @@ ms.locfileid: "67328329"
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]
 
-5. Aggiungere il metodo seguente alla classe `ThisAddIn` . Questo metodo gestisce l'evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> . Quando l'utente chiude il riquadro attività facendo clic sul pulsante **Chiudi** (X), questo metodo aggiorna lo stato dell'interruttore nella barra multifunzione.
+5. Aggiungere il metodo seguente alla classe `ThisAddIn`. Questo metodo gestisce l'evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> . Quando l'utente chiude il riquadro attività facendo clic sul pulsante **Chiudi** (X), questo metodo aggiorna lo stato dell'interruttore nella barra multifunzione.
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]
@@ -129,7 +129,7 @@ ms.locfileid: "67328329"
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]
 
-## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>Nascondere e mostrare il riquadro attività personalizzato con il pulsante di attivazione/disattivazione
+## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>Nascondere e visualizzare il riquadro attività personalizzato con l'interruttore
  L'ultimo passaggio consiste nell'aggiungere il codice che visualizza o nasconde il riquadro attività personalizzato quando l'utente fa clic sull'interruttore nella barra multifunzione.
 
 ### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>Per visualizzare e nascondere il riquadro attività personalizzato con l'interruttore
@@ -144,15 +144,15 @@ ms.locfileid: "67328329"
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]
 
 ## <a name="test-the-add-in"></a>Testare il componente aggiuntivo
- Quando si esegue il progetto, Excel viene aperto senza visualizzare il riquadro attività personalizzato. Fare clic sul pulsante di attivazione/disattivazione della barra multifunzione per testare il codice.
+ Quando si esegue il progetto, Excel viene aperto senza visualizzare il riquadro attività personalizzato. Fare clic sull'interruttore nella barra multifunzione per testare il codice.
 
 ### <a name="to-test-your-vsto-add-in"></a>Per testare il componente aggiuntivo VSTO
 
 1. Premere **F5** per eseguire il progetto.
 
-     Verificare che Excel si apra e il **Add-Ins** verrà visualizzata la scheda della barra multifunzione.
+     Verificare che Excel si apra e che la scheda **componenti** aggiuntivi sia visualizzata sulla barra multifunzione.
 
-2. Scegliere il **Add-Ins** scheda della barra multifunzione.
+2. Fare clic sulla scheda **componenti** aggiuntivi nella barra multifunzione.
 
 3. Nel gruppo **Task Pane Manager** fare clic sull'interruttore **Mostra riquadro attività** .
 
@@ -165,15 +165,15 @@ ms.locfileid: "67328329"
 ## <a name="next-steps"></a>Passaggi successivi
  Per altre informazioni su come creare i riquadri attività personalizzati, vedere gli argomenti seguenti:
 
-- Creare un riquadro attività personalizzato in un componente aggiuntivo VSTO per un'altra applicazione. Per altre informazioni sulle applicazioni che supportano i riquadri attività personalizzati, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
+- Creare un riquadro attività personalizzato in un componente aggiuntivo VSTO per un'applicazione diversa. Per ulteriori informazioni sulle applicazioni che supportano i riquadri attività personalizzati, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
-- Automatizzare un'applicazione da un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
+- Automatizzare un'applicazione da un riquadro attività personalizzato. Per ulteriori informazioni, vedere [procedura dettagliata: automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
 
-- Creare un riquadro attività personalizzato per ogni messaggio di posta elettronica aperto in Outlook. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare i riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
+- Creare un riquadro attività personalizzato per ogni messaggio di posta elettronica aperto in Outlook. Per altre informazioni, vedere [procedura dettagliata: visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Riquadri attività personalizzati](../vsto/custom-task-panes.md)
-- [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [Procedura dettagliata: Visualizzare i riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [Procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Procedura dettagliata: automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [Procedura dettagliata: visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)

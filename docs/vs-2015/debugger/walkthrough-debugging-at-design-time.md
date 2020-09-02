@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Debug in fase di progettazione | Microsoft Docs'
+title: 'Procedura dettagliata: debug in fase di progettazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,20 +24,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149421"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Procedura dettagliata: Debug in fase di progettazione
+# <a name="walkthrough-debugging-at-design-time"></a>Procedura dettagliata: debug in fase di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare Visual Studio **Immediate** finestra per eseguire una funzione o subroutine mentre l'applicazione non è in esecuzione. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio si interromperà l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è denominata debug in fase di progettazione.  
+È possibile usare la finestra **controllo immediato** di Visual Studio per eseguire una funzione o una subroutine mentre l'applicazione non è in esecuzione. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio interrompe l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è denominata debug in fase di progettazione.  
   
- La procedura seguente illustra come è possibile usare questa funzionalità.  
+ Nella procedura seguente viene illustrato come è possibile utilizzare questa funzionalità.  
   
-### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Per raggiungere punti di interruzione dalla finestra di controllo immediato  
+### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Per raggiungere i punti di interruzione dalla finestra di controllo immediato  
   
 1. Incollare il codice seguente in un'applicazione console Visual Basic:  
   
@@ -63,24 +63,24 @@ ms.locfileid: "68149421"
     End Module  
     ```  
   
-2. Impostare un punto di interruzione sulla riga che legge, `s="Add BreakPoint Here"`.  
+2. Impostare un punto di interruzione sulla riga che legge, `s="Add BreakPoint Here"` .  
   
-3. Digitare il comando seguente nel **Immediate** finestra: `?MyFunction<enter>`  
+3. Nella finestra di **controllo immediato** Digitare quanto segue: `?MyFunction<enter>`  
   
-4. Verificare che è stato raggiunto il punto di interruzione e che lo stack di chiamate è accurato.  
+4. Verificare che il punto di interruzione sia stato raggiunto e che lo stack di chiamate sia accurato.  
   
-5. Nel **Debug** menu, fare clic su **continua**e verificare che sia ancora in modalità progettazione.  
+5. Scegliere **continua**dal menu **debug** e verificare che l'utente sia ancora in modalità progettazione.  
   
-6. Digitare il comando seguente nel **Immediate** finestra: `?MyFunction<enter>`  
+6. Nella finestra di **controllo immediato** Digitare quanto segue: `?MyFunction<enter>`  
   
-7. Digitare il comando seguente nel **Immediate** finestra: `?MySub<enter>`  
+7. Nella finestra di **controllo immediato** Digitare quanto segue: `?MySub<enter>`  
   
-8. Verificare che sia stato raggiunto il punto di interruzione ed esamina il valore della variabile statica `i` nella **variabili locali** finestra. Deve avere il valore di 3.  
+8. Verificare di aver raggiunto il punto di interruzione ed esaminare il valore della variabile statica `i` nella finestra variabili **locali** . Il valore deve essere 3.  
   
-9. Verificare che lo stack di chiamate è accurato.  
+9. Verificare che lo stack di chiamate sia accurato.  
   
-10. Nel **Debug** menu, fare clic su **continua**e verificare che sia ancora in modalità progettazione.  
+10. Scegliere **continua**dal menu **debug** e verificare che l'utente sia ancora in modalità progettazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
+ [Nozioni di base sul debugger](../debugger/debugger-basics.md)

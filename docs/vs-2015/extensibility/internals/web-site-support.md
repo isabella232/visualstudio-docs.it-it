@@ -11,32 +11,32 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1a96504783de466551c6fb9d055b95ba38df760
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687684"
 ---
 # <a name="web-site-support"></a>Supporto per siti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un sistema di progetto sito Web è un sistema di progetto che consente di creare progetti Web. I progetti Web consentono di creare applicazioni Web. Un progetto sito Web genera un file eseguibile per ogni pagina Web che contiene il codice associato. File eseguibile aggiuntivi vengono generati da file di codice sorgente nella cartella /App_Code.  
+Un sistema di progetto di sito Web è un sistema di progetto che consente di creare progetti Web. I progetti Web a loro volta creano applicazioni Web. Un progetto di sito Web genera un file eseguibile per ogni pagina Web a cui è associato il codice. I file eseguibili aggiuntivi vengono generati dai file di codice sorgente nella cartella/App_Code.  
   
- Sistemi di progetto sito Web vengono creati tramite l'aggiunta di modelli e gli attributi di registrazione in un sistema di progetto esistente. Uno di questi attributi consente di selezionare il provider di IntelliSense per la lingua. L'implementazione del provider IntelliSense gestisce riferimenti e il compilatore di linguaggio viene chiamato quando viene richiesta una pagina Web intelligente non memorizzato nella cache.  
+ I sistemi di progetto del sito Web vengono creati aggiungendo modelli e attributi di registrazione a un sistema di progetto esistente. Uno di questi attributi seleziona il provider IntelliSense per la lingua. L'implementazione del provider IntelliSense gestisce i riferimenti e chiama il compilatore del linguaggio quando viene richiesta una pagina Web intelligente non memorizzata nella cache.  
   
- Il compilatore di linguaggio usato per compilare le pagine Web deve essere registrato con [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. È possibile usare la [ \<compilatore > elemento](https://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) in un file Web. config per registrare il compilatore, come nell'esempio seguente:  
+ Il compilatore di linguaggio utilizzato per compilare le pagine Web deve essere registrato con [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] . È possibile usare l' [ \<compiler> elemento](https://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) in un file di Web.config per registrare il compilatore, come nell'esempio seguente:  
   
 ```  
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Modelli di supporto per siti Web](../../extensibility/internals/web-site-support-templates.md)  
- Vengono elencati i modelli che è possibile usare per creare nuovi progetti di siti Web e degli elementi associati.  
+ Elenca i modelli che è possibile utilizzare per creare nuovi progetti di siti Web e elementi associati.  
   
  [Attributi di supporto per siti Web](../../extensibility/internals/web-site-support-attributes.md)  
- Presenta gli attributi di registrazione che si connettono un progetto sito Web per [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)].  
+ Visualizza gli attributi di registrazione che connettono un progetto di sito Web a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] .  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Progetti Web](../../extensibility/internals/web-projects.md)  
- Viene presentata una panoramica dei due tipi di progetti Web, progetti di siti Web e progetti di applicazione Web.
+ Viene presentata una panoramica dei due tipi di progetti web, progetti di siti Web e progetti di applicazione Web.

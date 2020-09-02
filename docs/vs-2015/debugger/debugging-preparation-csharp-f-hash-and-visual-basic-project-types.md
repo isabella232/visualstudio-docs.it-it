@@ -1,5 +1,5 @@
 ---
-title: 'Debug della preparazione: C#, F#e tipi di progetto Visual Basic | Microsoft Docs'
+title: 'Preparazione al debug: tipi di progetto C#, F # e Visual Basic | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,37 +24,37 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195322"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Debug della preparazione: Tipi di progetto C#, F# e Visual Basic
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparazione al debug: tipi di progetto C#, F# e Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Negli argomenti di questa sezione viene descritto come eseguire il debug dei tipi di progetto C#, F# e [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] creati mediante i modelli di progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Si noti che questi tipi di progetto che consentono di creare DLL come output sono stati raggruppati all'interno [debug di progetti DLL](../debugger/debugging-dll-projects.md) a causa di presentano le caratteristiche comuni.  
+ Si noti che i tipi di progetto che creano dll come output sono stati raggruppati in [progetti di dll di debug](../debugger/debugging-dll-projects.md) a causa delle funzionalità comuni condivise.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Impostazioni consigliate delle proprietà](../debugger/managed-debugging-recommended-property-settings.md)  
  In questa sezione vengono descritte le impostazioni consigliate delle proprietà correlate al debug per progetti C#, F# e Visual Basic.  
   
- [Applicazioni Windows Form](../debugger/debugging-preparation-windows-forms-applications.md)  
+ [Applicazioni Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  
  Viene descritto un progetto di applicazione Windows e vengono fornite istruzioni per il debug, la modifica della configurazione di debug predefinita, l'avvio dell'applicazione all'esterno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e la connessione all'applicazione.  
   
- [Progetti di console](../debugger/debugging-preparation-console-projects.md)  
+ [Progetti console](../debugger/debugging-preparation-console-projects.md)  
  Vengono fornite ulteriori considerazioni per il debug di applicazioni console C# o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], tra cui: la specifica degli argomenti della riga di comando, l'avvio dell'applicazione dal prompt dei comandi, la scrittura nella finestra di output e la risoluzione dei problemi della finestra Console.  
   
- [Servizi Windows](../debugger/debugging-preparation-windows-services.md)  
+ [servizi Windows](../debugger/debugging-preparation-windows-services.md)  
  Viene descritto un servizio Windows e viene fornito un collegamento a Esecuzione del debug delle applicazioni di servizio Windows.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)  
  Vengono illustrate le impostazioni e la preparazione necessarie per eseguire il debug del programma utilizzando il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Debug di codice gestito](../debugger/debugging-managed-code.md)  
+ [Debug del codice gestito](../debugger/debugging-managed-code.md)  
  Vengono illustrati i problemi e le tecniche comuni di debug nelle applicazioni scritte in codice gestito.  
   
 ## <a name="see-also"></a>Vedere anche  

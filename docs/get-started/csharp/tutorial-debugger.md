@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82153088"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C# tramite Visual Studio
@@ -61,7 +61,7 @@ Se Visual Studio non è ancora installato, passare alla pagina dei [download di 
 
 ::: moniker-end
 
-Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **strumenti** > **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **sviluppo multipiattaforma .NET Core** , quindi scegliere **modifica**.
+Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **sviluppo multipiattaforma .NET Core** , quindi scegliere **modifica**.
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -85,7 +85,7 @@ In primo luogo, verrà creato un progetto di applicazione console .NET Core. Il 
 
 1. Aprire Visual Studio 2019.
 
-   Se la finestra di avvio non è aperta, scegliere **finestra di avvio** **file** > .
+   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
 
 1. Nella finestra Start scegliere **Crea un nuovo progetto**.
 
@@ -153,7 +153,7 @@ In primo luogo, verrà creato un progetto di applicazione console .NET Core. Il 
 
      In questa esercitazione viene esaminata l'app usando il debugger e vengono descritte le funzionalità del debugger.
 
-2. Arrestare il debugger premendo il pulsante di arresto del ![debug](../../debugger/media/dbg-tour-stop-debugging.png "Debug") rosso (**MAIUSC** + **F5**).
+2. Arrestare il debugger premendo il pulsante di arresto del ![debug](../../debugger/media/dbg-tour-stop-debugging.png "Debug") rosso (**MAIUSC**  +  **F5**).
 
 3. Nella finestra della console premere un tasto per chiudere la finestra della console.
 
@@ -181,7 +181,7 @@ In primo luogo, verrà creato un progetto di applicazione console .NET Core. Il 
 
 In questa esercitazione nella maggior parte dei casi vengono usati tasti di scelta rapida che rappresentano un modo rapido per eseguire l'app nel debugger (i comandi equivalenti, ad esempio i comandi di menu, sono indicati tra parentesi).
 
-1. Mentre viene sospesa sull' `name += letters[i]` istruzione, passare il puntatore `letters` del mouse sulla variabile e viene visualizzato il valore predefinito, ovvero il valore del primo elemento nella matrice `char[10]`.
+1. Mentre viene sospesa sull' `name += letters[i]` istruzione, passare il puntatore del mouse sulla `letters` variabile e viene visualizzato il valore predefinito, ovvero il valore del primo elemento nella matrice `char[10]` .
 
      Le funzionalità che consentono di esaminare le variabili sono tra le funzionalità più utili del debugger e sono disponibili diversi modi per eseguire questa operazione. Spesso quando si tenta di eseguire il debug di un problema, si tenta di determinare se le variabili includono i valori previsti in un determinato momento.
 
@@ -189,21 +189,21 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
      ![Visualizzare un suggerimento dati](../csharp/media/get-started-view-data-tip.png "Visualizzare un suggerimento dati")
 
-1. Posizionare quindi il puntatore del `name` mouse sulla variabile e visualizzare il relativo valore corrente, una stringa vuota.
+1. Posizionare quindi il puntatore del mouse sulla `name` variabile e visualizzare il relativo valore corrente, una stringa vuota.
 
-1. Premere **F10** (oppure scegliere **debug > Esegui istruzione/** routine) due volte per `SendMessage` passare alla chiamata al metodo, quindi premere **F10** una volta.
+1. Premere **F10** (oppure scegliere **debug > Esegui istruzione/** routine) due volte per passare alla `SendMessage` chiamata al metodo, quindi premere **F10** una volta.
 
      F10 sposta il debugger all'istruzione successiva senza eseguire istruzioni in funzioni o metodi nel codice dell'app (il codice viene ancora eseguito). Premendo F10 sulla chiamata al `SendMessage` metodo, è stato ignorato il codice di implementazione per `SendMessage` (che potrebbe non essere interessato al momento).
 
-1. Premere **F10** (o **eseguire** > il `for` debug di un'**istruzione/** routine) alcune volte per eseguire un'iterazione più volte nel ciclo, sospendendo nuovamente il punto di `name` interruzione e passando il puntatore del mouse sulla variabile ogni volta per verificarne il valore.
+1. Premere **F10** (o **eseguire**  >  il debug di un'**istruzione/** routine) alcune volte per eseguire un'iterazione più volte nel `for` ciclo, sospendendo nuovamente il punto di interruzione e passando il puntatore del mouse sulla `name` variabile ogni volta per verificarne il valore.
 
      ![Visualizzare un suggerimento dati](../csharp/media/get-started-data-tip.gif "Visualizzare un suggerimento dati")
 
-     Il valore della variabile viene modificato a ogni iterazione del `for` ciclo, mostrando i valori `f`, quindi `fr` `fre`, quindi e così via. Per far avanzare il debugger attraverso il ciclo più velocemente in questo scenario, è possibile premere **F5** (oppure scegliere **debug** > **continua**), che consente di passare al punto di interruzione anziché all'istruzione successiva.
+     Il valore della variabile viene modificato a ogni iterazione del `for` ciclo, mostrando i valori `f` , quindi, quindi `fr` `fre` e così via. Per far avanzare il debugger attraverso il ciclo più velocemente in questo scenario, è possibile premere **F5** (oppure scegliere **debug**  >  **continua**), che consente di passare al punto di interruzione anziché all'istruzione successiva.
 
      Spesso, durante il debug, è necessario controllare rapidamente i valori delle proprietà sulle variabili, per vedere se si stanno archiviando i valori previsti, e i suggerimenti dati costituiscono un valido strumento per questa operazione.
 
-1. Mentre è ancora in pausa nel `for` ciclo nel `Main` metodo, premere **F11** (oppure scegliere **debug > Esegui istruzione**) finché non si sospende alla chiamata `SendMessage` al metodo.
+1. Mentre è ancora in pausa nel `for` ciclo nel `Main` metodo, premere **F11** (oppure scegliere **debug > Esegui istruzione**) finché non si sospende alla `SendMessage` chiamata al metodo.
 
      Si dovrebbe essere a questa riga di codice:
 
@@ -219,7 +219,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
      Supponiamo di aver terminato di esaminare il `SendMessage` metodo e di voler uscire dal metodo ma rimanere nel debugger. Questa operazione può essere eseguita usando il comando **Esci da istruzione/routine**.
 
-1. Premere **MAIUSC** + **F11** (o **debug > Esci da istruzione/uscita**).
+1. Premere **MAIUSC**  +  **F11** (o **debug > Esci da istruzione/uscita**).
 
      Questo comando riprende l'esecuzione dell'app (e sposta il debugger) finché il metodo o la funzione corrente non restituisce.
 
@@ -229,7 +229,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 1. Premere **F5** per passare di nuovo al punto di interruzione.
 
-1. Nell'editor di codice scorrere verso il basso e passare il `Console.WriteLine` puntatore del mouse `SendMessage` sul metodo nel metodo fino a quando non **si fa clic** sul pulsante verde Esegui per fare clic su ![Visualizza a sinistra](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") . La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
+1. Nell'editor di codice scorrere verso il basso e passare il puntatore del mouse sul `Console.WriteLine` metodo nel `SendMessage` Metodo fino a quando non **si fa clic** sul pulsante verde Esegui per fare clic su ![Visualizza a](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") sinistra. La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
 
      ![Utilizzare la funzionalità Esegui fino al clic](../csharp/media/get-started-run-to-click.png "Esegui fino alla riga selezionata")
 
@@ -244,17 +244,17 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 ## <a name="restart-your-app-quickly"></a>Riavviare rapidamente l'app
 
-Fare clic sul pulsante **Riavvia** ![app riavvia](../../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
+Fare clic sul pulsante **Riavvia** ![app riavvia](../../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL**  +  **MAIUSC**  +  **F5**).
 
 Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene messo in pausa in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 
-Il debugger si interrompe nuovamente in corrispondenza del punto di interruzione impostato `for` in precedenza all'interno del ciclo.
+Il debugger si interrompe nuovamente in corrispondenza del punto di interruzione impostato in precedenza all'interno del `for` ciclo.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Esaminare le variabili con le finestre Auto e Variabili locali
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **debug** > **Windows** > **auto**di Windows.
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **debug**  >  **Windows**  >  **auto**di Windows.
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. La finestra **Auto** mostra tutte le variabili usate nella riga corrente o nella riga precedente (vedere la documentazione per il comportamento specifico del linguaggio).
 
@@ -268,19 +268,19 @@ Il debugger si interrompe nuovamente in corrispondenza del punto di interruzione
 
 ## <a name="set-a-watch"></a>Impostare un'espressione di controllo
 
-1. Nella finestra principale dell'editor di codice fare clic con il `name` pulsante destro del mouse sulla variabile e scegliere Aggiungi espressione di **controllo**.
+1. Nella finestra principale dell'editor di codice fare clic con il pulsante destro del mouse sulla `name` variabile e scegliere Aggiungi espressione di **controllo**.
 
     Viene visualizzata la finestra **Espressione di controllo** nella parte inferiore dell'editor di codice. È possibile usare una finestra **Espressione di controllo** per specificare una variabile (o un'espressione) che si vuole controllare.
 
-    A questo punto è disponibile un set di espressioni `name` di controllo per la variabile ed è possibile visualizzarne il valore durante lo spostamento nel debugger. A differenza di altre finestre delle variabili, la finestra **Espressione di controllo** mostra sempre le variabili controllate (che appaiono disattivate quando sono fuori ambito).
+    A questo punto è disponibile un set di espressioni di controllo per la `name` variabile ed è possibile visualizzarne il valore durante lo spostamento nel debugger. A differenza di altre finestre delle variabili, la finestra **Espressione di controllo** mostra sempre le variabili controllate (che appaiono disattivate quando sono fuori ambito).
 
 ## <a name="examine-the-call-stack"></a>Esaminare lo stack di chiamate
 
 1. Mentre l'esecuzione è in pausa nel ciclo `for`, fare clic sulla finestra **Stack di chiamate**, visualizzata per impostazione predefinita nel riquadro inferiore destro.
 
-    Se è chiuso, aprirlo mentre è sospeso nel debugger scegliendo **debug** > **Windows** > **stack di chiamate**Windows.
+    Se è chiuso, aprirlo mentre è sospeso nel debugger scegliendo **debug**  >  **Windows**  >  **stack di chiamate**Windows.
 
-2. Fare clic su **F11** alcune volte fino a quando non viene visualizzata la `SendMessage` pausa del debugger nel metodo. Osservare la finestra **Stack di chiamate**.
+2. Fare clic su **F11** alcune volte fino a quando non viene visualizzata la pausa del debugger nel `SendMessage` metodo. Osservare la finestra **Stack di chiamate**.
 
     ![Esaminare lo stack di chiamate](../csharp/media/get-started-call-stack.png "ExamineCallStack")
 
@@ -297,9 +297,9 @@ Il debugger si interrompe nuovamente in corrispondenza del punto di interruzione
 
 ## <a name="change-the-execution-flow"></a>Modificare il flusso di esecuzione
 
-1. Premere due volte **F11** per eseguire `Console.WriteLine` il metodo.
+1. Premere due volte **F11** per eseguire il `Console.WriteLine` metodo.
 
-1. Con il debugger sospeso nella chiamata al `SendMessage` metodo, utilizzare il mouse per estrarre la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, `Console.WriteLine`quindi di nuovo in.
+1. Con il debugger sospeso nella chiamata al `SendMessage` metodo, utilizzare il mouse per estrarre la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla verso l'alto di una riga, quindi di nuovo in `Console.WriteLine` .
 
 1. Premere **F11**.
 

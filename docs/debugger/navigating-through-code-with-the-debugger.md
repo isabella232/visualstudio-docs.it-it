@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348249"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Esplorare il codice con il debugger di Visual Studio
@@ -49,7 +49,7 @@ La maggior parte delle finestre del debugger, come i **moduli** e le finestre **
 
 I comandi dei passaggi del debugger consentono di esaminare lo stato dell'app o di ottenere altre informazioni sul flusso di esecuzione.
 
-### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a>Esegui istruzione codice riga per riga
+### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a> Esegui istruzione codice riga per riga
 
 Per arrestare l'esecuzione di ogni istruzione durante il **Debug**debug, utilizzare Esegui  >  **istruzione**debug oppure premere **F11**.
 
@@ -74,16 +74,16 @@ In una chiamata di funzione annidata, scegliendo **Esegui istruzione** verrà es
 >[!TIP]
 >Quando si esegue ogni riga di codice, è possibile passare il mouse sulle variabili per visualizzarne i valori oppure utilizzare le finestre variabili [locali](autos-and-locals-windows.md) e [espressioni di controllo](watch-and-quickwatch-windows.md) per controllare la modifica dei valori. È inoltre possibile tracciare visivamente lo [stack di chiamate](how-to-use-the-call-stack-window.md) durante l'esecuzione di funzioni. (Solo per Visual Studio Enterprise, vedere [eseguire il mapping dei metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
-### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a>Eseguire il codice un'istruzione alla volta e ignorare alcune funzioni
+### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a> Eseguire il codice un'istruzione alla volta e ignorare alcune funzioni
 
 È possibile che non si sia interessati a una funzione durante il debug o si sappia che funziona, come il codice di libreria testato correttamente. È possibile usare i comandi seguenti per ignorare il codice durante l'esecuzione del codice. Le funzioni sono ancora in esecuzione, ma il debugger ne ignora.
 
 |Comando tastiera|Comando del menu Debug|Descrizione|
 |----------------------|------------------|-----------------|
 |**F10**|**Esegui istruzione/routine**|Se la riga corrente contiene una chiamata di funzione, Esegui **istruzione/** routine esegue il codice, quindi sospende l'esecuzione in corrispondenza della prima riga di codice dopo la restituzione della funzione chiamata.|
-|**Sposta** + **F11**|**Esci da istruzione/uscita**|Esci **da istruzione/uscita** continua a eseguire il codice e sospende l'esecuzione quando restituisce la funzione corrente. Il debugger ignora la funzione corrente.|
+|**Sposta** + **F11**|**Esci da istruzione/routine**|Esci **da istruzione/uscita** continua a eseguire il codice e sospende l'esecuzione quando restituisce la funzione corrente. Il debugger ignora la funzione corrente.|
 
-## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Eseguire fino a una posizione o una funzione specifica
+## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Eseguire fino a una posizione o una funzione specifica
 
 È possibile che si preferisca eseguire direttamente una posizione o una funzione specifica quando si conosce esattamente il codice da ispezionare o si conosce la posizione in cui si desidera avviare il debug.
 
@@ -107,7 +107,7 @@ I punti di interruzione in Visual Studio forniscono un'ampia gamma di funzionali
 
    ![Finestra di dialogo nuovo punto di interruzione della funzione](../debugger/media/dbg_execution_newbreakpoint.png "Nuovo punto di interruzione della funzione")
 
-1. Fare clic su **OK**.
+1. Selezionare **OK**.
 
 Se la funzione è in overload o in più di uno spazio dei nomi, è possibile scegliere quella desiderata nella finestra punti di **interruzione** .
 
@@ -138,7 +138,7 @@ Mentre è sospesa nel debugger, è possibile passare il puntatore del mouse su u
 
 Per interrompere la successiva riga di codice disponibile in un'app in esecuzione, selezionare **debug**  >  **Interrompi tutto**oppure premere **CTRL** + **ALT** + **INTERR**.
 
-## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a>Spostare il puntatore per modificare il flusso di esecuzione
+## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a> Spostare il puntatore per modificare il flusso di esecuzione
 
 Mentre il debugger viene sospeso, una freccia gialla nel margine della finestra del codice sorgente o del **Disassembly** contrassegna la posizione dell'istruzione successiva da eseguire. È possibile modificare l'istruzione successiva per l'esecuzione spostando la freccia. È possibile ignorare una parte del codice oppure tornare a una riga precedente. Lo stato di un puntatore è utile per situazioni come ignorare una sezione di codice che contiene un bug noto.
 
@@ -183,7 +183,7 @@ Per caricare i simboli Microsoft, vedere [configurare i percorsi dei simboli e l
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito
  Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di un'istruzione in proprietà o operatori, scegliere Opzioni di **debug**  >  **Options**. Nella pagina **debug**  >  **generale** deselezionare la casella di controllo Esegui istruzione/routine di **proprietà e operatori (solo gestito)** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)
 - [Esaminare prima di tutto il debug](../debugger/debugger-feature-tour.md)

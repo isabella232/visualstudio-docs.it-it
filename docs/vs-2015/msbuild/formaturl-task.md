@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bb870bcc3c4297d5d1b403176f931f75e418d423
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149716"
 ---
 # <a name="formaturl-task"></a>Attività FormatUrl
@@ -32,7 +32,7 @@ Converte un URL in un formato URL corretto.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `FormatUrl` .  
   
-|Parametro|DESCRIZIONE|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`InputUrl`|Parametro `String` facoltativo.<br /><br /> Specifica l'URL da formattare.|  
 |`OutputUrl`|Parametro di ouput facoltativo `String`.<br /><br /> Specifica l'URL formattato.|  
@@ -42,4 +42,4 @@ Converte un URL in un formato URL corretto.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

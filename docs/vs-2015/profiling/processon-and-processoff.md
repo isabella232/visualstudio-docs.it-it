@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180198"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
@@ -31,7 +31,7 @@ I sottocomandi **ProcessOff** e **ProcessOn** di VSPerfCmd.exe sospendono e ripr
   
 - **ProcessOn** imposta immediatamente il conteggio Start/Stop per il processo su 1 e riprende quindi la profilatura.  
   
-  Per altre informazioni, vedere [API per strumenti di profilatura](../profiling/profiling-tools-apis.md).  
+  Per altre informazioni, vedere [api strumenti di profilatura](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,24 +45,24 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  Identificatore integer del processo da avviare o arrestare. Gli ID di processo sono elencati nella scheda Processi di Gestione attività di Windows.  
   
 ## <a name="required-subcommands"></a>Sottocomandi obbligatori  
- nessuno  
+ Nessuno  
   
 ## <a name="valid-subcommands"></a>Sottocomandi validi  
  **ProcessOn** e **ProcessOff** possono essere specificati su righe di comando che contengono anche i sottocomandi seguenti.  
   
- **Start:** `Method`  
+ **Inizio:**`Method`  
  Inizializza la sessione di profilatura da riga di comando e imposta il metodo di profilatura specificato.  
   
- **Launch:** `AppName`  
+ **Avvia:**`AppName`  
  Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.  
   
- **Attach:** `PID`  
+ **Connetti:**`PID`  
  Avvia la profilatura del processo specificato.  
   
  **GlobalOff**&#124;**GlobalOn**  
  Arresta o avvia la profilatura per tutti i processi in una sessione di profilatura da riga di comando.  
   
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:**`TID`  
  Arresta o avvia la profilatura per il thread specificato (solo metodo di strumentazione).  
   
 ## <a name="example"></a>Esempio  

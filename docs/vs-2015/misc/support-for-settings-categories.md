@@ -11,14 +11,14 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689091"
 ---
 # <a name="support-for-settings-categories"></a>Supporto per le categorie di impostazioni
-Una categoria di impostazioni è costituita da un gruppo di opzioni che consentono di personalizzare l'ambiente di sviluppo integrato (IDE). Ad esempio, le impostazioni possono controllare il layout delle finestre di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il contenuto del menu. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Una categoria di impostazioni è costituita da un gruppo di opzioni che consentono di personalizzare l'ambiente di sviluppo integrato (IDE). Ad esempio, le impostazioni possono controllare il layout delle finestre di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il contenuto del menu. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Nel menu **Strumenti** fare clic su **Importa/Esporta impostazioni** per avviare l' **Importazione/Esportazione guidata delle impostazioni**. La procedura guidata offre tre opzioni: esportazione, importazione o reimpostazione delle impostazioni. Selezionando l'esportazione, ad esempio, si apre la pagina **Scegliere le impostazioni da esportare** della procedura guidata.  
   
@@ -51,7 +51,7 @@ Una categoria di impostazioni è costituita da un gruppo di opzioni che consento
 > Il nome canonico non compare in un'interfaccia utente (UI). Viene usato per associare un nome leggibile con la categoria di impostazioni, analogamente a un identificatore a livello di codice (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Attributo di categoria di impostazioni  
- Il <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina il mapping delle categorie per i punti di impostazioni personalizzate nel **importazione / esportazione guidata delle impostazioni** associando una categoria con il pacchetto VSPackage che lo fornisce. Si consideri il frammento di codice riportato di seguito.  
+ Il <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina il mapping delle categorie ai punti di impostazioni personalizzati nell' **importazione/esportazione guidata delle impostazioni** associando una categoria al pacchetto VSPackage che lo fornisce. Si consideri il frammento di codice riportato di seguito.  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
@@ -63,5 +63,5 @@ Una categoria di impostazioni è costituita da un gruppo di opzioni che consento
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di una pagina di opzioni](../extensibility/creating-an-options-page.md)   
  [Esempi di VSSDK](../misc/vssdk-samples.md)   
- [Lo stato del VSPackage](../misc/vspackage-state.md)   
+ [Stato VSPackage](../misc/vspackage-state.md)   
  [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

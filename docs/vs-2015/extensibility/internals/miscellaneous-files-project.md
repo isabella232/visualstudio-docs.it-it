@@ -1,5 +1,5 @@
 ---
-title: Progetto file esterni | Microsoft Docs
+title: Progetto di file esterni | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,34 +14,34 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9c128475ad9f5cb71b98325bbece4e524507a08b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179791"
 ---
 # <a name="miscellaneous-files-project"></a>Progetto di file esterni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Quando un utente apre gli elementi del progetto, l'IDE assegna al progetto file esterni tutti gli elementi che non sono membri di tutti i progetti in una soluzione.  
+Quando un utente apre gli elementi del progetto, l'IDE assegna al progetto di file esterni tutti gli elementi che non sono membri di alcun progetto in una soluzione.  
   
- I progetti svolgono un ruolo significativo nel determinare quale editor da utilizzare quando un utente apre un elemento del progetto. Un progetto può essere progettato per aprire determinati file usando un editor specifico del progetto o un editor standard.  
+ I progetti svolgono un ruolo significativo nella determinazione dell'editor da utilizzare quando un utente apre un elemento del progetto. Un progetto può essere progettato per aprire determinati file utilizzando un editor standard o un editor specifico del progetto.  
   
- In genere, un editor specifico del progetto richiede che l'utente dispone di conoscenze specializzate o utilizzare interfacce speciale dal progetto. Per altre informazioni, vedere [Procedura: Aprire Editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md).  
+ Un editor specifico del progetto richiede in genere che l'utente disponga di una conoscenza speciale o utilizzi interfacce speciali dal progetto. Per altre informazioni, vedere [procedura: aprire editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md).  
   
- Un editor standard è possibile aprire qualsiasi file con un'estensione specifica in qualsiasi progetto. L'utente può personalizzare alcuni editor standard, ad esempio il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor di testo, per i progetti ancora, mantenendo tuttavia il carattere pubblico. Editor standard vengono create utilizzando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> (metodo).  
+ Un editor standard può aprire qualsiasi file di un'estensione specifica in qualsiasi progetto. L'utente può personalizzare alcuni editor standard, ad esempio l' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor di testo, per i progetti, mantenendo comunque il carattere pubblico. Gli editor standard vengono creati tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo.  
   
- Se nessun progetto nella soluzione risponde che è possibile aprire un elemento del progetto, l'IDE fornisce un progetto speciale denominato il progetto file esterni che consente di aprire qualsiasi file.  
+ Se nessun progetto nella soluzione risponde che è in grado di aprire un elemento del progetto, l'IDE fornisce un progetto speciale denominato progetto di file esterni che apre un file.  
   
- Questo progetto speciale fornisce per l'apertura di un file all'esterno del contesto di un progetto. Durante l'elaborazione del <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> metodo, il progetto file esterni è sempre risponde con una priorità molto bassa. Di conseguenza, i vari file progetto sempre rese a qualsiasi progetto con priorità più alta che è possibile aprire i file.  
+ Questo progetto speciale fornisce l'apertura di un file al di fuori del contesto di un progetto. Durante l'elaborazione del <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> metodo, il progetto di file esterni risponde sempre con una priorità molto bassa. Il progetto di file esterni restituisce pertanto sempre un progetto con priorità più alta in grado di aprire i file.  
   
- Il progetto file esterni non richiede all'utente di creare in modo esplicito con la **nuovo progetto** nella finestra di dialogo. Inoltre, il progetto file esterni non gestisce in modo permanente un elenco di membri del progetto. Per registrare un elenco dei file utilizzati di recente per ogni utente usa una funzionalità facoltativa.  
+ Per il progetto di file esterni non è necessario che l'utente lo crei in modo esplicito con la finestra di dialogo **nuovo progetto** . Inoltre, il progetto di file esterni non gestisce in modo permanente un elenco di membri del progetto. Usa una funzionalità facoltativa per registrare un elenco dei file usati di recente per ogni utente.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>   
- [Procedura: Apri editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)   
- [Procedura: Aprire gli editor Standard](../../extensibility/how-to-open-standard-editors.md)   
- [Aggiunta di progetto e modelli di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [Aggiunta di modelli di progetto e di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
+ [Procedura: aprire editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)   
+ [Aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+ [Aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)

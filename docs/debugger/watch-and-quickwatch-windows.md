@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348028"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Osservare le variabili con le finestre espressioni di controllo e controllo immediato
@@ -68,7 +68,7 @@ int main()
 
 1. Nella finestra **espressioni di controllo** selezionare una riga vuota e digitare Variable `a` . Eseguire la stessa operazione per `b` e `c` .
 
-   ![Variabili delle espressioni di controllo](../debugger/media/watchvariables.png "WatchVariables")
+   ![Controllare le variabili](../debugger/media/watchvariables.png "WatchVariables")
 
 1. Continuare il debug selezionando **debug**  >  **Esegui istruzione** o premendo **F11** secondo le necessità per avanzare. I valori delle variabili nella finestra **espressioni di controllo** cambiano durante l'iterazione del `for` ciclo.
 
@@ -116,7 +116,7 @@ Per rendere la ricerca più o meno completa, usare l'elenco a discesa Cerca più
 
 ::: moniker-end
 
-### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Aggiornare i valori delle espressioni di controllo
+### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a> Aggiornare i valori delle espressioni di controllo
 
 Quando viene valutata un'espressione, è possibile che venga visualizzata un'icona di aggiornamento (freccia circolare) nella finestra **espressioni di controllo** . L'icona di aggiornamento indica un errore o un valore non aggiornato.
 
@@ -153,7 +153,7 @@ Per illustrare l'uso dell'icona di aggiornamento:
 
 1. Per aggiornare il valore, selezionare l'icona di aggiornamento o premere la barra spaziatrice. Il debugger rivaluterà l'espressione.
 
-### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Effetti collaterali dell'espressione
+### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a> Effetti collaterali dell'espressione
 
 La valutazione di alcune espressioni può modificare il valore di una variabile o influire in altro modo sullo stato dell'app. La valutazione della seguente espressione, ad esempio, comporta la modifica del valore di `var1`:
 
@@ -169,7 +169,7 @@ Un modo per evitare la designazione degli effetti collaterali consiste nel disat
 
 Solo per C#, quando la valutazione delle proprietà o delle chiamate di funzione implicite è disattivata, è possibile forzare la valutazione aggiungendo il modificatore di formato **AC** a un **nome** di variabile nella finestra **espressioni di controllo** . Vedere [identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md).
 
-## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Usare gli ID oggetto nel finestra Espressioni di controllo (C# e Visual Basic)
+## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a> Usare gli ID oggetto nel finestra Espressioni di controllo (C# e Visual Basic)
 
 A volte si vuole osservare il comportamento di un oggetto specifico. Ad esempio, potrebbe essere necessario tenere traccia di un oggetto a cui fa riferimento una variabile locale dopo che la variabile è uscita dall'ambito. In C# e Visual Basic è possibile creare ID oggetto per istanze specifiche dei tipi di riferimento e usarle nella finestra **espressioni di controllo** e nelle condizioni del punto di interruzione. L'ID oggetto viene generato dai servizi di debug di Common Language Runtime (CLR) e associato all'oggetto.
 
@@ -302,7 +302,7 @@ Per osservare la `a` variabile,
 
 1. Continuare il debug. È possibile osservare la variabile nella finestra **espressioni di controllo** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)
 - [Esaminare prima di tutto il debug](../debugger/debugger-feature-tour.md)

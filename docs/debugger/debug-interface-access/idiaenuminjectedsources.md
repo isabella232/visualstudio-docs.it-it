@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ecd669e546f12972c2a11c3b038322ceaf18fc1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468245"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
@@ -41,7 +41,7 @@ La tabella seguente illustra i metodi di `IDiaEnumInjectedSources` .
 |[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Riporta all'inizio la sequenza di enumerazione.|
 |[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Questa interfaccia viene ottenuta chiamando il metodo [IDiaSession:: findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) con il nome di un file di origine specifico oppure chiamando il metodo [IDiaSession:: GETENUMTABLES](../../debugger/debug-interface-access/idiasession-getenumtables.md) con il GUID dell' `IDiaEnumInjectedSources` interfaccia.
@@ -112,7 +112,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)

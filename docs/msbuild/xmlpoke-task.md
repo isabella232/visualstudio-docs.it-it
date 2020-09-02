@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82072502"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (attività)
@@ -40,7 +40,7 @@ Imposta i valori come specificato da una query XPath in un file XML.
 
 ## <a name="remarks"></a>Osservazioni
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
@@ -82,4 +82,4 @@ In questo esempio, se si vuole modificare `/Package/mp:PhoneIdentity/PhoneProduc
 ## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

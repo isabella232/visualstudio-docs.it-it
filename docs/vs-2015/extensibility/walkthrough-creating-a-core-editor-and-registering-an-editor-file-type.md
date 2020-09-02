@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Creazione di un Editor di base e la registrazione di un tipo di File dell'Editor | Microsoft Docs"
+title: "Procedura dettagliata: creazione di un editor principale e registrazione di un tipo di file dell'editor | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,19 +11,19 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14296aa335ba6710d4d9eac8e5338af7463c0aac
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687640"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creazione di un editor principale e registrazione di un tipo di file dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage che inizia il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale di quando un file con l'estensione .myext viene caricato.  
+Questa procedura dettagliata illustra come creare un pacchetto VSPackage che avvia l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale quando viene caricato un file con estensione myext.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Percorsi per il modello di progetto di pacchetto di Visual Studio  
  Il modello di progetto di pacchetto di Visual Studio si trova in tre posizioni diverse nella finestra di dialogo **Nuovo progetto** :  
@@ -36,13 +36,13 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
   
 ### <a name="to-create-the-vspackage"></a>Per creare il pacchetto VSPackage  
   
-- Avviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e creare un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage denominato `MyPackage`, come descritto in [procedura dettagliata: Creazione di un VSPackage di comando di Menu](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Avviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e creare un [!INCLUDE[csprcs](../includes/csprcs-md.md)] pacchetto VSPackage denominato `MyPackage` , come descritto in [procedura dettagliata: creazione di un comando di menu VSPackage](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Per aggiungere la factory dell'editor  
   
-1. Fare doppio clic il **MyPackage** , scegliere **Add** e quindi fare clic su **classe**.  
+1. Fare clic con il pulsante destro del mouse sul progetto di **pacchetto** , scegliere **Aggiungi** e quindi fare clic su **classe**.  
   
-2. Nel **Aggiungi nuovo elemento** finestra di dialogo verificare che il **classe** modello è selezionato, tipo `EditorFactory.cs` per il nome e quindi fare clic su **Aggiungi** per aggiungere la classe al progetto.  
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** verificare che sia selezionato il modello di **classe** , digitare `EditorFactory.cs` per il nome e quindi fare clic su **Aggiungi** per aggiungere la classe al progetto.  
   
      Il file EditorFactory.cs deve essere aperto automaticamente.  
   
@@ -69,9 +69,9 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
   
     ```  
   
-4. Aggiungere un GUID per il `EditorFactory` classe aggiungendo il `Guid` attributo immediatamente prima della dichiarazione di classe.  
+4. Aggiungere un GUID alla `EditorFactory` classe aggiungendo l' `Guid` attributo immediatamente prima della dichiarazione di classe.  
   
-     È possibile generare un nuovo GUID usando il programma guidgen.exe nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prompt dei comandi, oppure facendo **Crea GUID** sul **strumenti** menu. Il GUID usato qui è solo un esempio; non utilizzarlo nel progetto.  
+     È possibile generare un nuovo GUID utilizzando il programma guidgen.exe al prompt dei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comandi oppure scegliendo **Crea GUID** dal menu **strumenti** . Il GUID usato qui è solo un esempio. non utilizzarlo nel progetto.  
   
     ```vb  
     <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
@@ -81,7 +81,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5. Nella definizione della classe, aggiungere due variabili private per contenere il pacchetto padre e un provider di servizi.  
+5. Nella definizione della classe aggiungere due variabili private che contengano il pacchetto padre e un provider di servizi.  
   
     ```vb  
     Class EditorFactory  
@@ -98,7 +98,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
   
     ```  
   
-6. Aggiungere un costruttore di classe pubblica che accetta un parametro di tipo <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Aggiungere un costruttore di classe pubblico che accetta un parametro di tipo <xref:Microsoft.VisualStudio.Shell.Package> :  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -113,7 +113,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     }  
     ```  
   
-7. Modificare il `EditorFactory` derivare dalla dichiarazione di classe di <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia.  
+7. Modificare la `EditorFactory` dichiarazione della classe in modo che derivi dall' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia.  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -124,11 +124,11 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
   
     ```  
   
-8. Fare doppio clic su <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, fare clic su **implementa l'interfaccia**, quindi fare clic su **implementa interfaccia in modo esplicito**.  
+8. Fare clic con il pulsante destro del mouse <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> , scegliere **implementa interfaccia**, quindi fare clic su **implementa interfaccia in modo esplicito**.  
   
-     Ciò consente di aggiungere i quattro metodi che devono essere implementati nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia.  
+     In questo modo vengono aggiunti i quattro metodi che devono essere implementati nell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia.  
   
-9. Sostituire il contenuto del metodo `IVsEditorFactory.Close` con il codice riportato di seguito.  
+9. Sostituire il contenuto del metodo `IVsEditorFactory.Close` con il codice seguente.  
   
     ```vb  
     Return VSConstants.S_OK  
@@ -138,7 +138,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     return VSConstants.S_OK;  
     ```  
   
-10. Sostituire il contenuto del `IVsEditorFactory.SetSite` con il codice seguente.  
+10. Sostituire il contenuto di `IVsEditorFactory.SetSite` con il codice seguente.  
   
     ```vb  
     Me.serviceProvider = psp  
@@ -150,7 +150,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     return VSConstants.S_OK;  
     ```  
   
-11. Sostituire il contenuto del metodo `IVsEditorFactory.MapLogicalView` con il codice riportato di seguito.  
+11. Sostituire il contenuto del metodo `IVsEditorFactory.MapLogicalView` con il codice seguente.  
   
     ```vb  
     Dim retval As Integer = VSConstants.E_NOTIMPL  
@@ -173,7 +173,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     return retval;  
     ```  
   
-12. Sostituire il contenuto del metodo `IVsEditorFactory.CreateEditorInstance` con il codice riportato di seguito.  
+12. Sostituire il contenuto del metodo `IVsEditorFactory.CreateEditorInstance` con il codice seguente.  
   
     ```vb  
     Dim retval As Integer = VSConstants.E_FAIL          
@@ -316,24 +316,24 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     return retval;   
     ```  
   
-13. Compilare il progetto e assicurarsi che non siano presenti errori.  
+13. Compilare il progetto e verificare che non siano presenti errori.  
   
 ### <a name="to-register-the-editor-factory"></a>Per registrare la factory dell'editor  
   
-1. Nella **Esplora soluzioni**, fare doppio clic il file resources. resx per aprirlo e alla tabella di stringhe, in cui la voce **String1 è** selezionato.  
+1. In **Esplora soluzioni**fare doppio clic sul file resources. resx per aprirlo alla tabella delle stringhe in cui è selezionata la voce **String1** .  
   
-2. Modificare il nome dell'identificatore da `IDS_EDITORNAME` e il testo da **MyPackage Editor.** Questa stringa verrà visualizzata come nome dell'editor.  
+2. Modificare il nome dell'identificatore in `IDS_EDITORNAME` e il testo nell' **editor di pacchetti.** Questa stringa verrà visualizzata come nome dell'editor.  
   
-3. Aprire il file VSPackage.resx e aggiungere una nuova stringa, impostare il nome su **101** e il valore da `IDS_EDITORNAME`. In questo modo il pacchetto con un ID di risorsa per accedere alla stringa che appena creato.  
+3. Aprire il file VSPackage. resx e aggiungere una nuova stringa, impostare il nome su **101** e il valore su `IDS_EDITORNAME` . In questo modo, il pacchetto contiene un ID risorsa per accedere alla stringa appena creata.  
   
     > [!NOTE]
-    > Se il file VSPackage.resx contiene un'altra stringa di cui il `name` attributo impostato su **101**, sostituire con un altro valore univoco, numeric, qui e nei passaggi seguenti.  
+    > Se il file VSPackage. resx contiene un'altra stringa che l' `name` attributo ha impostato su **101**, sostituire con un altro valore numerico univoco, qui e nei passaggi seguenti.  
   
-4. Nelle **Esplora soluzioni**, aprire il file MyPackagePackage.cs.  
+4. In **Esplora soluzioni**aprire il file MyPackagePackage.cs.  
   
-     Si tratta del file del pacchetto principale.  
+     Questo è il file di pacchetto principale.  
   
-5. Aggiungere gli attributi utente seguente subito prima di `Guid` attributo.  
+5. Aggiungere gli attributi utente seguenti immediatamente prima dell' `Guid` attributo.  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -347,9 +347,9 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
           ".myext", 32, NameResourceID = 101)]   
     ```  
   
-     Il <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> attributo associa l'estensione di file .myext la factory dell'editor in modo che ogni volta che un file che l'estensione viene caricata, viene richiamata la factory dell'editor.  
+     L' <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> attributo associa l'estensione di file myext alla factory dell'editor in modo che ogni volta che viene caricato un file con tale estensione, viene richiamata la factory dell'editor.  
   
-6. Aggiungere una variabile privata per il `MyPackage` classe, appena prima del costruttore e assegnarle il tipo `EditorFactory`.  
+6. Aggiungere una variabile privata alla `MyPackage` classe, immediatamente prima del costruttore, e assegnarle il tipo `EditorFactory` .  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -359,7 +359,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
     private EditorFactory editorFactory;  
     ```  
   
-7. Trovare il `Initialize` metodo (potrebbe essere necessario aprire la `Package Members` area nascosta) e aggiungere il codice seguente dopo la chiamata a `base.Initialize()`.  
+7. Trovare il `Initialize` Metodo (potrebbe essere necessario aprire l' `Package Members` area nascosta) e aggiungere il codice seguente dopo la chiamata a `base.Initialize()` .  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -376,25 +376,25 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
   
 8. Compilare il programma e assicurarsi che non ci siano errori.  
   
-     Questo passaggio registra la factory dell'editor nell'hive del Registro di sistema sperimentale per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se viene chiesto per sostituire il file Resource. h, fare clic su **OK**.  
+     Questo passaggio registra la factory dell'editor nell'hive del registro di sistema sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Se viene richiesto di eseguire l'override del file Resource. h, fare clic su **OK**.  
   
-9. Creare un file di esempio denominato TextFile1.myext.  
+9. Creare un file di esempio denominato TextFile1. myext.  
   
-10. Premere **F5** per aprire un'istanza dell'istanza sperimentale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+10. Premere **F5** per aprire un'istanza del sperimentale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-11. Nell'istanza sperimentale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]via il **File** dal menu **Open** e quindi fare clic su **File**.  
+11. Nell'oggetto sperimentale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] scegliere **Apri** dal menu **file** , quindi fare clic su **file**.  
   
-12. Trovare TextFile1.myext e quindi fare clic su **aperto**.  
+12. Trovare TextFile1. myext e quindi fare clic su **Apri**.  
   
-     Il file deve ora essere caricato.  
+     Il file verrà ora caricato.  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
- Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale gestisce un'ampia gamma di tipi di file di testo e collabora strettamente con servizi di linguaggio per fornire un set completo di funzionalità quali l'evidenziazione della sintassi, corrispondenza parentesi graffe e gli elenchi di completamento delle parole e il membro completamento IntelliSense. Se si lavora con file di testo, è possibile usare l'editor principale insieme a un servizio di linguaggio personalizzato che supporta i tipi di file specifici.  
+ L' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale gestisce un'ampia gamma di tipi di file basati su testo e opera a stretto contatto con i servizi di linguaggio per offrire un set completo di funzionalità quali l'evidenziazione della sintassi, la corrispondenza delle parentesi graffe e gli elenchi di completamento delle parole IntelliSense e di completamento dei membri. Se si utilizzano file basati su testo, è possibile utilizzare l'editor principale insieme a un servizio di linguaggio personalizzato che supporta i tipi di file specifici.  
   
- Un pacchetto VSPackage può richiamare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale, fornendo una factory dell'editor. La factory dell'editor viene utilizzata ogni volta che viene caricato un file che è associato. Se il file fa parte di un progetto, l'editor principale viene richiamato automaticamente a meno che non viene sottoposto a override dal pacchetto VSPackage. Tuttavia, se il file viene caricato all'esterno di un progetto, quindi l'editor principale deve essere richiamata in modo esplicito dal pacchetto VSPackage.  
+ Un pacchetto VSPackage può richiamare l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale fornendo una factory dell'editor. Questa factory dell'editor viene utilizzata ogni volta che viene caricato un file associato. Se il file fa parte di un progetto, l'editor principale viene richiamato automaticamente a meno che non venga sottoposto a override dal pacchetto VSPackage. Tuttavia, se il file viene caricato all'esterno di un progetto, l'editor principale deve essere richiamato in modo esplicito dal pacchetto VSPackage.  
   
- Per altre informazioni sull'editor core, vedere [all'interno l'Editor principale di](../extensibility/inside-the-core-editor.md).  
+ Per ulteriori informazioni sull'editor principale, vedere [all'interno dell'editor principale](../extensibility/inside-the-core-editor.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [All'interno l'Editor principale](../extensibility/inside-the-core-editor.md)   
+ [All'interno dell'editor principale](../extensibility/inside-the-core-editor.md)   
  [Creazione di un'istanza dell'editor principale tramite l'API legacy](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)

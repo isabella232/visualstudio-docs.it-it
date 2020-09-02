@@ -9,10 +9,10 @@ author: angelosp
 ms.author: angelpe
 manager: jillfra
 ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67587022"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Annidamento file in Esplora soluzioni
@@ -62,7 +62,7 @@ Si esamineranno ora il nodo **dependentFileProviders** e i suoi nodi figlio. Ogn
 
 ### <a name="the-extensiontoextension-provider"></a>Provider extensionToExtension
 
-Questo provider consente di definire regole di annidamento file usando estensioni file specifiche. Prendere in considerazione gli esempi seguenti:
+Questo provider consente di definire regole di annidamento file usando estensioni file specifiche. Si consideri l'esempio seguente:
 
 ![Regole dell'esempio extentionToExtension](media/filenesting_extensiontoextension.png) ![Effetto dell'esempio extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
@@ -76,7 +76,7 @@ Questo provider consente di definire regole di annidamento file usando estension
 
 ### <a name="the-filesuffixtoextension-provider"></a>Provider fileSuffixToExtension
 
-Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'unica differenza che la regola esamina il suffisso del file anziché la sola l'estensione. Prendere in considerazione gli esempi seguenti:
+Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'unica differenza che la regola esamina il suffisso del file anziché la sola l'estensione. Si consideri l'esempio seguente:
 
 ![Regole dell'esempio fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Effetto dell'esempio fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
@@ -88,7 +88,7 @@ Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'un
 
 Questo provider annida i file con un'estensione aggiuntiva nel file senza l'estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo alla fine del nome file completo.
 
-Prendere in considerazione gli esempi seguenti:
+Si consideri l'esempio seguente:
 
 ![Regole dell'esempio addedExtension](media/filenesting_addedextension.png) ![Effetto dell'esempio addedExtension](media/filenesting_addedextension_effect.png)
 
@@ -101,7 +101,7 @@ Prendere in considerazione gli esempi seguenti:
 
 Questo provider annida i file con un'estensione aggiuntiva in un file senza estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo al centro del nome file completo.
 
-Prendere in considerazione gli esempi seguenti:
+Si consideri l'esempio seguente:
 
 ![Regole dell'esempio pathSegment](media/filenesting_pathsegment.png) ![Effetto dell'esempio pathSegment](media/filenesting_pathsegment_effect.png)
 
@@ -126,7 +126,7 @@ Prendere in considerazione gli esempi seguenti:
 
 ### <a name="the-allextensions-provider"></a>Provider allExtensions
 
-Questo provider consente di definire regole di annidamento file per i file con qualsiasi estensione ma con lo stesso nome file di base. Prendere in considerazione gli esempi seguenti:
+Questo provider consente di definire regole di annidamento file per i file con qualsiasi estensione ma con lo stesso nome file di base. Si consideri l'esempio seguente:
 
 ![Regole dell'esempio allExtensions](media/filenesting_allextensions.png) ![Effetto dell'esempio allExtensions](media/filenesting_allextensions_effect.png)
 
@@ -134,7 +134,7 @@ Questo provider consente di definire regole di annidamento file per i file con q
 
 ### <a name="the-filetofile-provider"></a>Provider fileToFile
 
-Questo provider consente di definire regole di annidamento file in base a nomi file interi. Prendere in considerazione gli esempi seguenti:
+Questo provider consente di definire regole di annidamento file in base a nomi file interi. Si consideri l'esempio seguente:
 
 ![Regole dell'esempio fileToFile](media/filenesting_filetofile.png) ![Effetto dell'esempio fileToFile](media/filenesting_filetofile_effect.png)
 
@@ -181,4 +181,4 @@ Le impostazioni specifiche di progetto e di soluzione vengono combinate con le i
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Soluzioni e progetti in Visual StudioSolutions and projects in Visual Studio](solutions-and-projects-in-visual-studio.md)
+- [Soluzioni e progetti in Visual Studio](solutions-and-projects-in-visual-studio.md)

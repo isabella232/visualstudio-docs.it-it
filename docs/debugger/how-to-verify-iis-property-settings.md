@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348470"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procedura: verificare le impostazioni delle proprietà di IIS
@@ -77,6 +77,6 @@ ms.locfileid: "85348470"
 
 9. Fare clic su **OK** per chiudere le finestre di dialogo **Gestione Internet Information Services (IIS)**, **Gestione servizi Internet** o **Internet Information Services**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Risoluzione dei problemi](../debugger/debugging-web-applications-troubleshooting.md)

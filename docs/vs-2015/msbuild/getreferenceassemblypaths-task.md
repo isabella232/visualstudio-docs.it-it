@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f771f3c769ea41979210058a58dc1d0d125a4ffe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149471"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Attività GetReferenceAssemblyPaths
@@ -29,7 +29,7 @@ Restituisce i percorsi degli assembly di riferimento dei vari framework.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `GetReferenceAssemblyPaths` .  
   
-|Parametro|DESCRIZIONE|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`ReferenceAssemblyPaths`|Parametro di ouput facoltativo `String[]`.<br /><br /> Restituisce il percorso, in base al parametro `TargetFrameworkMoniker`. Se `TargetFrameworkMoniker` è null o vuoto, il percorso sarà `String.Empty`.|  
 |`FullFrameworkReferenceAssemblyPaths`|Parametro di ouput facoltativo `String[]`.<br /><br /> Restituisce il percorso, in base al parametro `TargetFrameworkMoniker`, senza considerare la parte del profilo del moniker. Se `TargetFrameworkMoniker` è null o vuoto, il percorso sarà `String.Empty`.|  
@@ -43,4 +43,4 @@ Restituisce i percorsi degli assembly di riferimento dei vari framework.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

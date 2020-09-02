@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c7325c861e8e5186faa4056edd9b282ab47e64d
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468364"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
@@ -38,5 +38,5 @@ out Restituisce un oggetto [IDiaEnumFrameData](../../debugger/debug-interface-ac
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

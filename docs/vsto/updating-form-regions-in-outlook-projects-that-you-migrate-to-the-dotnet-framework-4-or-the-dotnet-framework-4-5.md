@@ -1,5 +1,5 @@
 ---
-title: Aree del modulo di Outlook di aggiornamento nei progetti di migrazione a .NET Framework 4, 4.5
+title: Aggiornare le aree del modulo di Outlook nei progetti migrati a .NET Framework 4, 4,5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66836051"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aggiornare aree del modulo nei progetti di Outlook che si esegue la migrazione a .NET Framework 4 o .NET Framework 4.5
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aggiornare le aree del modulo nei progetti Outlook di cui si esegue la migrazione al .NET Framework 4 o al .NET Framework 4,5
   Se il framework di destinazione di un progetto di componente aggiuntivo VSTO per Outlook contenente un'area del modulo viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario apportare modifiche all'area del modulo generato e a qualsiasi codice che crea istanze di alcune classi di aree del modulo in fase di esecuzione.
 
-## <a name="update-the-generated-form-region-code"></a>Aggiornare il codice di area del modulo generato
- Se il framework di destinazione del progetto viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario modificare il codice generato dell'area del modulo. Le modifiche da apportare cambiano a seconda che le aree del modulo siano progettate in Visual Studio o importate da Outlook. Per altre informazioni sulle differenze tra questi tipi di aree del modulo, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).
+## <a name="update-the-generated-form-region-code"></a>Aggiornare il codice dell'area del modulo generato
+ Se il framework di destinazione del progetto viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario modificare il codice generato dell'area del modulo. Le modifiche da apportare cambiano a seconda che le aree del modulo siano progettate in Visual Studio o importate da Outlook. Per altre informazioni sulle differenze tra questi tipi di aree del modulo, vedere [creare aree](../vsto/creating-outlook-form-regions.md)del modulo di Outlook.
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Per aggiornare il codice generato per un'area del modulo progettata in Visual Studio
 
@@ -103,13 +103,13 @@ ms.locfileid: "66836051"
     }
     ```
 
-5. Aggiungere un nuovo elemento Area del modulo di Outlook al progetto. Aprire il file code-behind per la nuova area del modulo, trovare le classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` nel file, quindi copiare queste classi negli Appunti.
+5. Aggiungere un nuovo elemento Area del modulo di Outlook al progetto. Aprire il file code-behind per la nuova area del modulo, individuare i *YourNewFormRegion* `Factory` e le `WindowFormRegionCollection` classi nel file e copiare le classi negli Appunti.
 
 6. Eliminare la nuova area del modulo aggiunta al progetto.
 
-7. Nel file code-behind dell'area del modulo che si vuole aggiornare per lavorare nel progetto con la nuova destinazione, trovare le classi *YourOriginalFormRegion*`Factory` e `WindowFormRegionCollection` e sostituirle con il codice copiato dalla nuova area del modulo.
+7. Nel file code-behind dell'area del modulo che si sta aggiornando per lavorare nel progetto ridestinato, individuare le classi e *YourOriginalFormRegion* `Factory` `WindowFormRegionCollection` e sostituirle con il codice copiato dall'area del nuovo modulo.
 
-8. Nelle classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` cercare tutti i riferimenti alla classe *YourNewFormRegion* e modificarli in modo che facciano riferimento alla classe *YourOriginalFormRegion* . Ad esempio, se l'area del modulo che si vuole aggiornare è denominata `SalesDataFormRegion` e la nuova area del modulo creata nel passaggio 5 è denominata `FormRegion1`, impostare tutti i riferimenti di `FormRegion1` a `SalesDataFormRegion`.
+8. Nelle classi *YourNewFormRegion* `Factory` e `WindowFormRegionCollection` cercare tutti i riferimenti alla classe *YourNewFormRegion* e modificare in alternativa ogni riferimento alla classe *YourOriginalFormRegion* . Ad esempio, se l'area del modulo che si vuole aggiornare è denominata `SalesDataFormRegion` e la nuova area del modulo creata nel passaggio 5 è denominata `FormRegion1`, impostare tutti i riferimenti di `FormRegion1` a `SalesDataFormRegion`.
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Per aggiornare il codice generato per un'area del modulo importata da Outlook
 
@@ -175,27 +175,27 @@ ms.locfileid: "66836051"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5. Aggiungere un nuovo elemento Area del modulo di Outlook al progetto. Aprire il file code-behind per la nuova area del modulo, trovare le classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` nel file, quindi copiare queste classi negli Appunti.
+5. Aggiungere un nuovo elemento Area del modulo di Outlook al progetto. Aprire il file code-behind per la nuova area del modulo, individuare i *YourNewFormRegion* `Factory` e le `WindowFormRegionCollection` classi nel file e copiare le classi negli Appunti.
 
 6. Eliminare la nuova area del modulo aggiunta al progetto.
 
-7. Nel file code-behind dell'area del modulo che si vuole aggiornare per lavorare nel progetto con la nuova destinazione, trovare le classi *YourOriginalFormRegion*`Factory` e `WindowFormRegionCollection` e sostituirle con il codice copiato dalla nuova area del modulo.
+7. Nel file code-behind dell'area del modulo che si sta aggiornando per lavorare nel progetto ridestinato, individuare le classi e *YourOriginalFormRegion* `Factory` `WindowFormRegionCollection` e sostituirle con il codice copiato dall'area del nuovo modulo.
 
-8. Nelle classi *YourNewFormRegion*`Factory` e `WindowFormRegionCollection` cercare tutti i riferimenti alla classe *YourNewFormRegion* e modificarli in modo che facciano riferimento alla classe *YourOriginalFormRegion* . Ad esempio, se l'area del modulo che si vuole aggiornare è denominata `SalesDataFormRegion` e la nuova area del modulo creata nel passaggio 5 è denominata `FormRegion1`, impostare tutti i riferimenti di `FormRegion1` a `SalesDataFormRegion`.
+8. Nelle classi *YourNewFormRegion* `Factory` e `WindowFormRegionCollection` cercare tutti i riferimenti alla classe *YourNewFormRegion* e modificare in alternativa ogni riferimento alla classe *YourOriginalFormRegion* . Ad esempio, se l'area del modulo che si vuole aggiornare è denominata `SalesDataFormRegion` e la nuova area del modulo creata nel passaggio 5 è denominata `FormRegion1`, impostare tutti i riferimenti di `FormRegion1` a `SalesDataFormRegion`.
 
-## <a name="instantiate-form-region-classes"></a>Creare un'istanza di classi di aree del modulo
+## <a name="instantiate-form-region-classes"></a>Creazione di istanze delle classi di aree del modulo
  È necessario modificare il codice che crea dinamicamente istanze di alcune classi di aree del modulo. Nei progetti destinati a .NET Framework 3.5, è possibile creare direttamente istanze di classi di aree del modulo come `Microsoft.Office.Tools.Outlook.FormRegionManifest`. Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, queste classi sono interfacce di cui non è possibile creare istanze direttamente.
 
- Se il framework di destinazione del progetto viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario creare istanze delle interfacce usando i metodi forniti dalla proprietà di `Globals.Factory`. Per altre informazioni sul `Globals.Factory` proprietà, vedere [globale accedere agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Se il framework di destinazione del progetto viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, è necessario creare istanze delle interfacce usando i metodi forniti dalla proprietà di `Globals.Factory`. Per altre informazioni sulla `Globals.Factory` proprietà, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).
 
  La tabella seguente elenca i tipi di area del modulo e il metodo da usare per creare istanze dei tipi nei progetti destinati [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive.
 
-|Tipo|Metodo factory da usare|
+|Type|Metodo factory da usare|
 |----------|---------------------------|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionCustomAction>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionCustomAction%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
 ## <a name="see-also"></a>Vedere anche
-- [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versioni successive](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
-- [Creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
+- [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)

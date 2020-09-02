@@ -24,19 +24,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5019547d2e06684b51f1513445521eca0e5143e1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702867"
 ---
 # <a name="exception-assistant-dialog-box"></a>Finestra di dialogo Informazioni sulle eccezioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il **informazioni sulle eccezioni** verrà visualizzata la finestra di dialogo quando viene generata un'eccezione in fase di esecuzione. Il **informazioni sulle eccezioni** Visualizza il tipo di eccezione, vengono fornite informazioni aggiuntive e collegamenti alla risoluzione dei problemi di suggerimenti, fornisce un modo per eseguire la ricerca di informazioni aggiuntive online e consente all'utente di eseguire determinate azioni, ad esempio visualizzazione dei dettagli dell'eccezione.  
+La finestra di dialogo informazioni sulle **eccezioni** viene visualizzata quando viene generata un'eccezione in fase di esecuzione. In informazioni sulle **eccezioni** viene visualizzato il tipo di eccezione, vengono fornite informazioni aggiuntive e collegamenti ai suggerimenti per la risoluzione dei problemi, viene fornito un modo per cercare la Guida aggiuntiva online e si consente all'utente di eseguire determinate azioni, ad esempio la visualizzazione dei dettagli dell'eccezione.  
   
 ## <a name="task-list"></a>Elenco attività  
- Per visualizzare un argomento relativo alla risoluzione del tipo di eccezione rilevato, fare clic su uno dei suggerimenti visualizzati nei **Troubleshooting Tips** riquadro.  
+ Per visualizzare un argomento relativo alla risoluzione dei problemi relativi al tipo di eccezione riscontrato, fare clic su uno dei messaggi del suggerimento visualizzati nel riquadro suggerimenti per la **risoluzione dei problemi** .  
   
  Per eseguire le azioni associate all'eccezione, fare clic su delle azioni visualizzate nel riquadro relativo.  
   
@@ -52,14 +52,14 @@ Il **informazioni sulle eccezioni** verrà visualizzata la finestra di dialogo q
  **Suggerimenti per la risoluzione dei problemi**  
  Visualizza collegamenti a suggerimenti per la risoluzione dei problemi che possono essere utili per individuare l'origine dell'eccezione.  
   
- **Azioni**  
+ **Actions**  
  Visualizza l'elenco delle azioni che è possibile eseguire, ad esempio visualizzare ulteriori informazioni sull'oggetto dell'eccezione.  
   
- **Visualizza la Guida**  
+ **Ottenere la guida online**  
  Consente di cercare altre informazioni online.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Usare le informazioni sulle eccezioni](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
- [Procedura: Correggere gli errori di Run-Time con informazioni sulle eccezioni](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
+ [Procedura: correggere gli errori di run-time con le informazioni sulle eccezioni](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
  [Tipi di errore](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

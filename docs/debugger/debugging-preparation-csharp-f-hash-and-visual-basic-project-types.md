@@ -1,5 +1,5 @@
 ---
-title: Preparare il debug C#di F#progetti, e VB | Microsoft Docs
+title: 'Preparare il debug di progetti C#, F # e VB | Microsoft Docs'
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 90e108ddd64a9b520c8ae1d0c86e416dea64e5be
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738124"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparazione al debug: tipi di progetto C#, F# e Visual Basic
@@ -34,16 +34,16 @@ Negli argomenti di questa sezione viene descritto come eseguire il debug dei tip
  Si noti che i tipi di progetto che creano dll come output sono stati raggruppati in [progetti di dll di debug](../debugger/debugging-dll-projects.md) a causa delle funzionalità comuni condivise.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Impostazioni delle proprietà consigliate](../debugger/managed-debugging-recommended-property-settings.md) In questa sezione vengono descritte le impostazioni consigliate delle proprietà C#correlate F#al debug per i progetti, e Visual Basic.
+ [Impostazioni delle proprietà consigliate](../debugger/managed-debugging-recommended-property-settings.md) In questa sezione vengono descritte le impostazioni consigliate delle proprietà correlate al debug per i progetti C#, F # e Visual Basic.
 
- [Applicazioni Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) Viene descritto un progetto di applicazione Windows e vengono fornite istruzioni per il debug, la modifica della configurazione di debug predefinita e l'avvio dell'applicazione all'esterno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e la relativa connessione.
+ [Applicazioni Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) Viene descritto un progetto di applicazione Windows e vengono fornite istruzioni per il debug, la modifica della configurazione di debug predefinita e l'avvio dell'applicazione all'esterno di e la relativa [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] connessione.
 
- [Progetti console](../debugger/debugging-preparation-console-projects.md) Vengono fornite considerazioni aggiuntive per C# il debug o la [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] delle applicazioni console. tra cui: la specifica degli argomenti della riga di comando, l'avvio dell'applicazione dal prompt dei comandi, la scrittura nella finestra di output e la risoluzione dei problemi della finestra Console.
+ [Progetti console](../debugger/debugging-preparation-console-projects.md) Vengono fornite considerazioni aggiuntive per il debug di applicazioni C# o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Console. tra cui: la specifica degli argomenti della riga di comando, l'avvio dell'applicazione dal prompt dei comandi, la scrittura nella finestra di output e la risoluzione dei problemi della finestra Console.
 
  [Servizi Windows](../debugger/debugging-preparation-windows-services.md) Viene descritto un servizio Windows e viene fornito un collegamento al debug delle applicazioni di servizio Windows.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md) Vengono illustrate le impostazioni e la preparazione che è necessario eseguire per eseguire il debug del programma con il debugger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md) Vengono illustrate le impostazioni e la preparazione che è necessario eseguire per eseguire il debug del programma con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger.
 
  [Debug del codice gestito](../debugger/debugging-managed-code.md) Vengono illustrati i problemi e le tecniche comuni di debug per le applicazioni scritte in codice gestito.
 

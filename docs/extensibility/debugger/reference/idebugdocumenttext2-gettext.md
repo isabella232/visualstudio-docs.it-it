@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText . Documenti Microsoft
+title: 'IDebugDocumentText2:: GetText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731580"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
@@ -47,22 +47,22 @@ int GetText(
 
 ## <a name="parameters"></a>Parametri
 `pos`\
-[in] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che indica la posizione del testo da recuperare.
+in Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che indica la posizione del testo da recuperare.
 
 `cMaxChars`\
-[in] Numero massimo di caratteri del testo da recuperare.
+in Numero massimo di caratteri del testo da recuperare.
 
 `pText`\
-[in, out] Puntatore a un buffer che deve essere compilato con il testo desiderato. Questo buffer deve essere in `cMaxChars` grado di contenere almeno il numero di caratteri di tipo "wide".
+[in, out] Puntatore a un buffer che deve essere compilato con il testo desiderato. Questo buffer deve essere in grado di contenere almeno un `cMaxChars` numero di caratteri wide.
 
 `pcNumChars`\
-[fuori] Restituisce il numero di caratteri effettivamente recuperati.
+out Restituisce il numero di caratteri effettivamente recuperati.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-In questo esempio viene illustrato come questo metodo può essere chiamato da C .
+Questo esempio mostra in che modo questo metodo può essere chiamato da C#.
 
 ```csharp
 using System.Runtime.Interop.Services;

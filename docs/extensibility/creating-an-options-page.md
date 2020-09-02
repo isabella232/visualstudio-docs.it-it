@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903813"
 ---
 # <a name="create-an-options-page"></a>Creare una pagina di opzioni
@@ -245,7 +245,7 @@ In questa procedura dettagliata viene creata una semplice pagina strumenti/opzio
 
     ```
 
-     Questo codice chiama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> per creare o recuperare un' `OptionPageGrid` istanza di. `OptionPageGrid`chiama <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> per caricare le opzioni, che sono proprietà pubbliche.
+     Questo codice chiama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> per creare o recuperare un' `OptionPageGrid` istanza di. `OptionPageGrid` chiama <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> per caricare le opzioni, che sono proprietà pubbliche.
 
 2. A questo punto, aggiungere un modello di elemento di comando personalizzato denominato **MyToolsOptionsCommand** per visualizzare il valore. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#**  >  **estensibilità** di Visual C# e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *MyToolsOptionsCommand.cs*.
 

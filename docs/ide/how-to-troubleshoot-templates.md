@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591385"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedura: Risolvere i problemi relativi ai modelli
@@ -36,7 +36,7 @@ Se il file con estensione *vstemplate* di un modello non rispetta lo schema di m
 
 1. Individuare il file con estensione *zip* che contiene il modello.
 
-1. Estrarre il file *.zip.*
+1. Estrarre il file *zip* .
 
 1. Nel menu **File** di Visual Studio scegliere **Apri** > **File**.
 
@@ -49,7 +49,7 @@ Se il file con estensione *vstemplate* di un modello non rispetta lo schema di m
 
 1. Salvare e chiudere il file con estensione *vstemplate*.
 
-1. Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse e **scegliere Invia a** > **cartella compressa (compressa).** I file selezionati vengono compressi in un file *.zip.*
+1. Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse e scegliere **Invia a**  >  **cartella compressa**. I file selezionati vengono compressi in un file con *estensione zip* .
 
 1. Inserire il nuovo file *zip* nella stessa directory del file *zip* precedente.
 
@@ -63,5 +63,5 @@ Se il file con estensione *vstemplate* di un modello non rispetta lo schema di m
 
 - [Risoluzione dei problemi di individuazione dei modelli (estendibilità)](../extensibility/troubleshooting-template-discovery.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
-- [Creare modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
-- [Informazioni di riferimento sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)

@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691272"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
@@ -36,45 +36,45 @@ Un thread è una sequenza di istruzioni in base alla quale il sistema operativo 
 
  I computer multiprocessore, i processori multicore e i processi hyperthreading sono in grado di eseguire contemporaneamente più thread. Se da un lato l'elaborazione parallela di più thread può migliorare notevolmente le prestazioni dei programmi, dall'altro può rendere il debug più difficoltoso poiché introduce la necessità di tenere traccia di più thread.
 
- Il multithreading introduce inoltre nuovi tipi di possibili bug. Accade spesso, ad esempio, che due o più thread debbano accedere alla stessa risorsa, alla quale però può accedere un solo thread alla volta. Deve necessariamente esistere una qualche forma di esclusione reciproca per garantire l'accesso alla risorsa di un solo thread alla volta. Se l'esclusione reciproca viene eseguita in modo non corretto, è possibile creare un *deadlock* condizione in cui è possibile eseguire alcun thread. I deadlock possono rappresentare un problema particolarmente difficile da risolvere con il debug.
+ Il multithreading introduce inoltre nuovi tipi di possibili bug. Accade spesso, ad esempio, che due o più thread debbano accedere alla stessa risorsa, alla quale però può accedere un solo thread alla volta. Deve necessariamente esistere una qualche forma di esclusione reciproca per garantire l'accesso alla risorsa di un solo thread alla volta. Se l'esclusione reciproca viene eseguita in modo non corretto, è possibile creare una condizione di *deadlock* in cui non è possibile eseguire alcun thread. I deadlock possono rappresentare un problema particolarmente difficile da risolvere con il debug.
 
- Visual Studio offre un' **thread** finestra, una finestra thread GPU, una finestra Espressioni di controllo parallelo e altre funzionalità che rendono il debug multithreading. Il modo migliore per acquisire ulteriori informazioni sulle nuove funzionalità dell'interfaccia di threading consiste nell'eseguire le procedure dettagliate. Vedere [Procedura dettagliata: Debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md) e [procedura dettagliata: Debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ Visual Studio fornisce una finestra **thread** , una finestra thread GPU, una finestra espressioni di controllo parallela e altre funzionalità che semplificano il debug multithreading. Il modo migliore per acquisire ulteriori informazioni sulle nuove funzionalità dell'interfaccia di threading consiste nell'eseguire le procedure dettagliate. Vedere [procedura dettagliata: debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md) e [procedura dettagliata: debug di un'applicazione C++ amp](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
- Visual Studio offre anche potenti punti di interruzione e punti di analisi che possono rivelarsi molto utili per il debug di applicazioni multithreading. È possibile applicare filtri dei punti di interruzione per inserire punti di interruzione in corrispondenza di singoli thread. Vedere [usando i punti di interruzione](../debugger/using-breakpoints.md)
+ Visual Studio offre anche potenti punti di interruzione e punti di analisi che possono rivelarsi molto utili per il debug di applicazioni multithreading. È possibile applicare filtri dei punti di interruzione per inserire punti di interruzione in corrispondenza di singoli thread. Vedere [utilizzo](../debugger/using-breakpoints.md) di punti di interruzione
 
- Il debug di un'applicazione multithreading dotata di un'interfaccia utente può essere particolarmente complesso. In tal caso, potrebbe essere necessario eseguire l'applicazione in un secondo computer e utilizzare il debug remoto. Per informazioni, vedere [debug remoto](../debugger/remote-debugging.md).
+ Il debug di un'applicazione multithreading dotata di un'interfaccia utente può essere particolarmente complesso. In tal caso, potrebbe essere necessario eseguire l'applicazione in un secondo computer e utilizzare il debug remoto. Per informazioni, vedere [Remote Debugging](../debugger/remote-debugging.md).
 
-## <a name="in-this-section"></a>In questa sezione
- [Eseguire il debug di thread e processi](../debugger/debug-threads-and-processes.md) illustra le nozioni fondamentali di debug di thread e processi.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Debug di thread e processi](../debugger/debug-threads-and-processes.md) Illustra le nozioni di base per il debug di thread e processi.
 
- [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md) spiega come eseguire il debug di più processi.
+ [Debug di più processi](../debugger/debug-multiple-processes.md) Viene illustrato come eseguire il debug di più processi.
 
- [Procedura: Utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md) procedure utili per il debug dei thread con il **thread** finestra.
+ [Procedura: usare la finestra thread](../debugger/how-to-use-the-threads-window.md) Procedure utili per il debug dei thread con la finestra **thread** .
 
- [Procedura: Passare a un altro Thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md) tre modi per passare il contesto di debug a un altro thread.
+ [Procedura: passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md) Tre modi per passare il contesto di debug a un altro thread.
 
- [Procedura: Rimuovi flag del thread e flag](../debugger/how-to-flag-and-unflag-threads.md) contrassegno o flag ai thread che si desidera prestare particolare attenzione durante il debug.
+ [Procedura: contrassegnare e decontrassegnare i thread](../debugger/how-to-flag-and-unflag-threads.md) Contrassegnare o contrassegnare i thread a cui si desidera prestare particolare attenzione durante il debug.
 
- [Procedura: Impostare il nome di un Thread in codice nativo](../debugger/how-to-set-a-thread-name-in-native-code.md) attribuzione di un nome da visualizzare nel **thread** finestra.
+ [Procedura: impostare il nome di un thread in codice nativo](../debugger/how-to-set-a-thread-name-in-native-code.md) Assegnare al thread un nome da visualizzare nella finestra **thread** .
 
- [Procedura: Impostare il nome di un Thread in codice gestito](../debugger/how-to-set-a-thread-name-in-managed-code.md) attribuzione di un nome da visualizzare nel **thread** finestra.
+ [Procedura: impostare il nome di un thread nel codice gestito](../debugger/how-to-set-a-thread-name-in-managed-code.md) Assegnare al thread un nome da visualizzare nella finestra **thread** .
 
- [Procedura dettagliata: Debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md).
+ [Procedura dettagliata: debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md).
 Presentazione guidata delle funzionalità di debug dei thread, con particolare attenzione alle funzionalità procedura [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].
 
- [Procedura: Eseguire il debug in un Cluster ad alte prestazioni](../debugger/how-to-debug-on-a-high-performance-cluster.md) tecniche per il debug di un'applicazione che viene eseguito in un cluster ad alte prestazioni.
+ [Procedura: eseguire il debug in un cluster ad alte prestazioni](../debugger/how-to-debug-on-a-high-performance-cluster.md) Tecniche per il debug di un'applicazione in esecuzione in un cluster ad alte prestazioni.
 
- [Suggerimenti per il debug di thread in codice nativo](../debugger/tips-for-debugging-threads-in-native-code.md) semplici tecniche che possono essere utili per il debug di thread nativi.
+ [Suggerimenti per il debug dei thread in codice nativo](../debugger/tips-for-debugging-threads-in-native-code.md) Tecniche semplici che possono essere utili per il debug di thread nativi.
 
- [Uso della finestra attività](../debugger/using-the-tasks-window.md) Mostra un elenco di tutti gli oggetti attività gestiti o nativi incluso il relativo stato e altre informazioni utili.
+ [Uso della finestra attività](../debugger/using-the-tasks-window.md) Mostra un elenco di tutti gli oggetti attività gestiti o nativi, inclusi lo stato e altre informazioni utili.
 
- [Usando la finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md) chiamata Mostra gli stack di più thread (o attività) in un'unica visualizzazione e riunisce inoltre i segmenti dello stack comuni ai vari thread (o attività).
+ [Uso della finestra stack in parallelo](../debugger/using-the-parallel-stacks-window.md) Mostra gli stack di chiamate di più thread (o attività) in un'unica visualizzazione e unisce anche segmenti dello stack comuni tra i thread (o attività).
 
- [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) procedura dettagliata che illustra come usare le finestre attività in parallelo e stack in parallelo.
+ [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) Procedura dettagliata che illustra come utilizzare le finestre attività in parallelo e stack in parallelo.
 
- [Procedura: Utilizzare la finestra Espressioni di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md) ispezionare Value ed espressioni in più thread.
+ [Procedura: usare la finestra espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md) Controllare i valori e le espressioni in più thread.
 
- [Procedura: Utilizzare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md) esaminare e utilizzare i thread in esecuzione sulla GPU durante il debug.
+ [Procedura: usare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md) Esaminare e utilizzare i thread in esecuzione sulla GPU durante il debug.
 
 ## <a name="related-sections"></a>Sezioni correlate
 
@@ -83,11 +83,11 @@ Presentazione guidata delle funzionalità di debug dei thread, con particolare a
 
 - I punti di traccia consentono di tracciare l'esecuzione dei programmi senza interruzioni. Ciò può risultare utile nello studio di problemi quali i deadlock.
 
-  [Threading](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) concetti di Threading [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programmazione, inclusi esempi di codice.
+  [Threading](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) Concetti relativi al threading nella [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programmazione, incluso il codice di esempio.
 
-  [Multithreading nei componenti](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) come usare il multithreading nel [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] componenti.
+  [Multithreading nei componenti](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) Come utilizzare il multithreading nei [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] componenti di.
 
-  [Supporto del multithreading per il codice precedente (Visual C++)](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) informazioni sul Threading ed esempio di codice per i programmatori C++ con MFC.
+  [Supporto del multithreading per il codice precedente (Visual C++)](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) Concetti relativi al threading e codice di esempio per i programmatori C++ che utilizzano MFC.
 
 ## <a name="see-also"></a>Vedere anche
- [Eseguire il debug di thread e processi](../debugger/debug-threads-and-processes.md) [debug remoto](../debugger/remote-debugging.md)
+ [Debug di thread ed elabora](../debugger/debug-threads-and-processes.md) il [debug remoto](../debugger/remote-debugging.md)

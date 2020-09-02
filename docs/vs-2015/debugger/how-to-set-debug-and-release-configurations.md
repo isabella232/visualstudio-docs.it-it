@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Set di configurazioni di Debug e rilascio | Microsoft Docs'
+title: 'Procedura: impostare le configurazioni di debug e di versione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -36,13 +36,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4984355c12a92529a943fe6778740ac2d7f522f8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703651"
 ---
-# <a name="how-to-set-debug-and-release-configurations"></a>Procedura: Impostare configurazioni di debug e di rilascio
+# <a name="how-to-set-debug-and-release-configurations"></a>Procedura: impostare le configurazioni di debug e rilascio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Progetti di Visual Studio installata versione separata e configurazioni per il programma di debug. Come indicato dai nomi, la versione di debug viene compilata per eseguire il debug, mentre quella di rilascio viene compilata per la distribuzione finale.  
@@ -51,24 +51,24 @@ Progetti di Visual Studio installata versione separata e configurazioni per il p
   
  La configurazione di rilascio del programma non contiene alcuna informazione di debug sui simboli ed è perfettamente ottimizzata. Le informazioni di debug possono essere generate in file PDB, in base alle opzioni del compilatore utilizzate. La creazione di file PDB può essere molto utile se successivamente sarà necessario eseguire il debug della versione di rilascio.  
   
- Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).  
+ Per ulteriori informazioni sulle configurazioni della build, vedere [informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).  
   
- È possibile modificare la configurazione della build dal **compilazione** dal menu nella barra degli strumenti o nelle pagine delle proprietà del progetto. Pagine delle proprietà del progetto sono specifici del linguaggio. La procedura riportata di seguito viene illustrato come modificare la configurazione di compilazione dal menu e barra degli strumenti. Per ulteriori informazioni su come modificare la configurazione di compilazione nei progetti in linguaggi diversi, vedere la sezione Argomenti correlati.  
+ È possibile modificare la configurazione della build dal menu **Compila** , dalla barra degli strumenti o nelle pagine delle proprietà del progetto. Pagine delle proprietà del progetto sono specifici del linguaggio. La procedura riportata di seguito viene illustrato come modificare la configurazione di compilazione dal menu e barra degli strumenti. Per ulteriori informazioni su come modificare la configurazione di compilazione nei progetti in linguaggi diversi, vedere la sezione Argomenti correlati.  
   
 ### <a name="to-change-the-build-configuration"></a>Per modificare la configurazione di compilazione  
   
-1. Dal menu Compila: fare clic su **compilare / Configuration Manager**, quindi selezionare **Debug** oppure **versione**.  
+1. Dal menu Compila: fare clic su **Compila/Configuration Manager**, quindi selezionare **debug** o **rilascia**.  
   
-2. Sulla barra degli strumenti, scegliere **eseguire il Debug** oppure **versione** dal **configurazioni soluzione** casella di riepilogo.  
+2. Sulla barra degli strumenti scegliere **debug** o **rilascia** dalla casella di riepilogo **configurazioni soluzione** .  
   
-     ![configurazione di compilazione sulla barra degli strumenti](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
+     ![configurazione di compilazione per la barra degli strumenti](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
-     Questa procedura guidata non è disponibile nelle edizioni Express. È possibile usare la **Compila soluzione F6** e **Avvia debug F5** voci di menu per scegliere la configurazione.  
+     Questa procedura guidata non è disponibile nelle edizioni Express. È possibile utilizzare le voci di menu **Compila soluzione F6** e **Avvia debug F5** per scegliere la configurazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
+ [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)   
  [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)   
+ [Procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)   
  [Eseguire il debug e il rilascio delle configurazione del progetto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

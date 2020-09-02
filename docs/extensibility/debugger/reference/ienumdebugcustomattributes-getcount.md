@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::GetCount . Documenti Microsoft
+title: 'IEnumDebugCustomAttributes:: GetCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c06ddf3d87c88003ad227edfbe3437a342667b2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717248"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametri
 `pcelt`\
-[fuori] Restituisce il numero di elementi nell'enumerazione.
+out Restituisce il numero di elementi nell'enumerazione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo non fa parte dell'interfaccia di enumerazione `Clone` `Skip`COM `Reset` consueta che specifica che solo `Next`, , e devono essere implementati.
+ Questo metodo non fa parte dell'interfaccia di enumerazione com personalizzata che specifica che solo `Next` ,, `Clone` `Skip` e `Reset` devono essere implementati.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

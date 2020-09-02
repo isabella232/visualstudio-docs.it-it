@@ -1,5 +1,5 @@
 ---
-title: '&lt;Le stringhe&gt; elemento (programma di avvio automatico) | Microsoft Docs'
+title: '&lt;Elemento Strings &gt; (Bootstrapper) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747417"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Le stringhe&gt; elemento (programma di avvio automatico)
-Definisce le stringhe localizzate per i nomi dei prodotti, nomi dei pacchetti e i messaggi di errore di installazione.
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Elemento Strings &gt; (programma di avvio automatico)
+Definisce le stringhe localizzate per i nomi dei prodotti, i nomi dei pacchetti e i messaggi di errore di installazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,19 +40,19 @@ Definisce le stringhe localizzate per i nomi dei prodotti, nomi dei pacchetti e 
 ```
 
 ## <a name="elements-and-attributes"></a>Elementi e attributi
- Il `Strings` elemento è figlio di `Package` elemento. Non dispone di attributi.
+ L' `Strings` elemento è un elemento figlio dell' `Package` elemento. Non ha attributi.
 
-## <a name="string"></a>Stringa
- Il `String` elemento è figlio di `Strings` elemento. Oggetto `Strings` elemento può avere uno o più `String` elementi.
+## <a name="string"></a>string
+ L' `String` elemento è un elemento figlio dell' `Strings` elemento. Un `Strings` elemento può contenere uno o più `String` elementi.
 
  `String` ha l'attributo seguente.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Name`|Obbligatorio. Il nome della stringa.|
+|`Name`|Obbligatorio. Nome della stringa.|
 
 ## <a name="example"></a>Esempio
- Esempio di codice seguente specifica tutte le stringhe in inglese per il programma di installazione di .NET Framework.
+ Nell'esempio di codice seguente vengono specificate tutte le stringhe inglesi per il programma di installazione .NET Framework.
 
 ```xml
 <Strings>
@@ -74,4 +74,4 @@ Definisce le stringhe localizzate per i nomi dei prodotti, nomi dei pacchetti e 
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [\<Pacchetto > elemento](../deployment/package-element-bootstrapper.md)
+- [\<Package> elemento](../deployment/package-element-bootstrapper.md)

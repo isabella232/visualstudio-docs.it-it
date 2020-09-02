@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugDynamicField . Documenti Microsoft
+title: IDebugDynamicField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15f0ddf70849377d37ec74839550de6057b3450c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731310"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
@@ -29,18 +29,18 @@ IDebugDynamicField : IDebugField
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia viene implementata dai provider di simboli come classe base per qualsiasi tipo che può essere determinato in fase di esecuzione. Questo è solo per il codice gestito.
+ Questa interfaccia viene implementata dai provider di simboli come classe di base per qualsiasi tipo che può essere determinato in fase di esecuzione. Si tratta solo di codice gestito.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Questa interfaccia rappresenta una classe base da cui è possibile derivare interfacce più specializzate.
+ Questa interfaccia rappresenta una classe di base da cui è possibile derivare interfacce più specializzate.
 
-## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
- Questa interfaccia non fornisce metodi diversi da `IDebugField`quelli ereditati da .
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
+ Questa interfaccia non fornisce metodi diversi da quelli ereditati da `IDebugField` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: sh.h
+ Intestazione: sh. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821609"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Procedura: Escludere file dalla compilazione
+# <a name="how-to-exclude-files-from-the-build"></a>Procedura: escludere file dalla compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In un file di progetto è possibile usare caratteri jolly per includere tutti i file in una sola directory o in un set annidato di directory come input per una compilazione. Potrebbe tuttavia essere presente un file nella directory o una directory in un set annidato di directory che non si vuole includere come input per una compilazione. È possibile escludere in modo esplicito tale file o directory dall'elenco di input. In un progetto potrebbe anche essere presente un file che si vuole includere solo in determinate condizioni. È possibile dichiarare in modo esplicito le condizioni in cui un file viene incluso in una compilazione.  
@@ -45,7 +45,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     \- oppure -  
+     \- - oppure -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     \- oppure -  
+     \- - oppure -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
@@ -127,4 +127,4 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
   
 ## <a name="see-also"></a>Vedere anche  
  [Elementi](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [come: selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md)

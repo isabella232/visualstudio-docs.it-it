@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+title: 'IDebugExpressionEvaluator2:: secallback | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d6f715bb33afe051cdccffbf3219e062b606f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179931"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Abilita l'analizzatore di espressioni (EE) specificare l'interfaccia di callback che verrà utilizzato il motore di debugger (DE) per leggere le impostazioni di metrica.  
+Consente all'analizzatore di espressioni di specificare l'interfaccia di callback che il motore del debugger (DE) utilizzerà per leggere le impostazioni della metrica.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,16 +39,16 @@ int SetCallback (
   
 #### <a name="parameters"></a>Parametri  
  `pCallback`  
- [in] Interfaccia da utilizzare per il callback di impostazioni.  
+ in Interfaccia da utilizzare per il callback delle impostazioni.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo fornisce un'interfaccia per il gestore di sessione di debug che un analizzatore di espressioni è possibile usare per leggere le impostazioni di metrica. È utile nel debug remoto per continuare a leggere le metriche di [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] computer.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo fornisce un'interfaccia alla gestione del debug della sessione che può essere utilizzata da un analizzatore di espressioni per leggere le impostazioni della metrica. È utile nel debug remoto per leggere le metriche nel [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] computer.  
   
 ## <a name="example"></a>Esempio  
- Negli esempi seguenti viene illustrato come implementare questo metodo per un **CEE** oggetto che espone le [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interfaccia.  
+ Negli esempi seguenti viene illustrato come implementare questo metodo per un oggetto **CEE** che espone l'interfaccia [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) .  
   
 ```cpp#  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  

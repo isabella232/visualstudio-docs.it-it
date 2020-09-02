@@ -34,10 +34,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348457"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger in Visual Studio
@@ -220,7 +220,7 @@ Per aggiungere eccezioni condizionali:
 
 4. Se è necessario eliminare una condizione, scegliere la **X** alla fine della riga della condizione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Continuare l'esecuzione dopo un'eccezione](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [Procedura: Esaminare il codice di sistema dopo un'eccezione](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>

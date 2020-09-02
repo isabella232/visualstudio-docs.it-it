@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302637"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315213"
 ---
 # <a name="exploration-bounds"></a>Limiti di esplorazione
 
@@ -35,7 +35,7 @@ public partial class FooTest {...}
   * [MaxCalls](#maxcalls): numero massimo di chiamate che si possono effettuare durante un percorso di esecuzione singola.
   * [MaxStack](#maxstack): dimensione massima dello stack in qualsiasi momento durante un percorso di esecuzione singola, misurata come numero di frame di chiamata attivi.
   * [MaxConditions](#maxconditions): numero massimo di condizioni sugli input che possono essere controllati durante un percorso di esecuzione singola.
-* **Limiti di esplorazioneExploration Bounds**
+* **Limiti di esplorazione**
   * [MaxRuns](#maxruns): numero massimo di esecuzioni che verranno tentate durante un'esplorazione.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests): numero massimo di esecuzioni consecutive senza che venga generato un nuovo test.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths): numero massimo di esecuzioni con percorsi di esecuzione singola che verranno tentate durante un'esplorazione.
@@ -57,7 +57,7 @@ In genere, il timeout è dovuto al fatto che IntelliTest sta tentando di trovare
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-Numero di megabyte che il [risolutore di vincoli](input-generation.md#constraint-solver) ha a disposizione per calcolare gli input che determinano l'uso di un nuovo e diverso percorso di esecuzione. Si tratta di un'opzione del *PexSettingsAttributeBase*e dei relativi tipi derivati.
+Numero di megabyte che il [risolutore di vincoli](input-generation.md#constraint-solver) ha a disposizione per calcolare gli input che determinano l'uso di un nuovo e diverso percorso di esecuzione. Si tratta di un'opzione di *PexSettingsAttributeBase** e dei relativi tipi derivati.
 
 Maggiore è la profondità dell'esplorazione di IntelliTest nei percorsi di esecuzione di un programma, più complessi sono i sistemi di vincoli creati da IntelliTest dal flusso di controllo e dal flusso di dati del programma. In base alla memoria disponibile nel computer, è possibile impostare questo valore in modo da consentire a IntelliTest di affrontare i sistemi di vincolo più complessi.
 

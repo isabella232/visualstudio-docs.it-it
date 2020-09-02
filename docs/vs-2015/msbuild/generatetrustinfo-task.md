@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ccbe11cefa730264e523390a0844086d6fb03ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149587"
 ---
 # <a name="generatetrustinfo-task"></a>Attività GenerateTrustInfo
@@ -32,9 +32,9 @@ Genera l'attendibilità dell'applicazione dal manifesto di base e dai parametri 
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `GenerateTrustInfo` .  
   
-|Parametro|DESCRIZIONE|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
-|`ApplicationDependencies`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica gli assembly dipendenti.|  
+|`ApplicationDependencies`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica gli assembly dipendenti.|  
 |`BaseManifest`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il manifesto di base da cui generare l'attendibilità dell'applicazione.|  
 |`ExcludedPermissions`|Parametro `String` facoltativo.<br /><br /> Specifica uno o più valori di identità di autorizzazione separati da un punto e virgola da escludere dal set di autorizzazioni predefinito per l'area.|  
 |`TargetZone`|Parametro `String` facoltativo.<br /><br /> Specifica un set di autorizzazioni predefinito per l'area, ottenuto dai criteri del computer.|  
@@ -45,4 +45,4 @@ Genera l'attendibilità dell'applicazione dal manifesto di base e dai parametri 
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dac8022970384d4fd2c205d3553cd02b9cbf1856
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468378"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
@@ -38,5 +38,5 @@ in Numero di flussi di debug nella sequenza di enumerazione da ignorare.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` se non sono presenti altri record da ignorare.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

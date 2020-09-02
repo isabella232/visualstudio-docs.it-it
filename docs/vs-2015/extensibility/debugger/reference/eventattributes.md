@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3026845be9aa6623d6c5cd42406385e8c5c2a11e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149368"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
@@ -51,37 +51,37 @@ public enum enum_EVENTATTRIBUTES { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  EVENT_ASYNCHRONOUS  
- Indica che l'evento è asincrona e non necessita di alcuna risposta all'evento.  
+ Indica che l'evento è asincrono e non è necessaria alcuna risposta all'evento.  
   
  EVENT_SYNCHRONOUS  
- Indica che l'evento è sincrona; per mezzo di rispondere [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
+ Indica che l'evento è sincrono; rispondere per mezzo di [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
   
  EVENT_STOPPING  
- Indica che si tratta di un evento di arresto. Deve essere combinato con `EVENT_ASYNCHRONOUS` o `EVENT_SYNCHRONOUS`.  
+ Indica che si tratta di un evento di arresto. Deve essere combinato con `EVENT_ASYNCHRONOUS` o `EVENT_SYNCHRONOUS` .  
   
  EVENT_ASYNC_STOP  
- Indica un evento di arresto asincrona. Non è attualmente alcun evento di questo tipo. Questo flag è solo un segnaposto.  
+ Indica un evento di arresto asincrono. Attualmente non esiste alcun evento di questo tipo. Questo flag è solo un segnaposto.  
   
  EVENT_SYNC_STOP  
- Indica un evento di arresto sincrono (una combinazione di `EVENT_SYNCHRONOUS` e `EVENT_STOPPING`). Questo valore viene utilizzato da un motore di debug (DE) quando si invia un evento di arresto. La risposta viene effettuata mediante una chiamata a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md), o [continua](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+ Indica un evento di arresto sincrono, ovvero una combinazione di `EVENT_SYNCHRONOUS` e `EVENT_STOPPING` . Questo valore viene usato da un motore di debug (DE) quando invia un evento di arresto. La risposta viene effettuata per mezzo di una chiamata a [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)o [continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
  EVENT_IMMEDIATE  
- Indica un evento che viene inviato immediatamente e in modo sincrono all'IDE. Questo flag viene combinato con altri flag Analogamente `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, o `EVENT_SYNC_STOP` per indicare il tipo di evento e il fatto che il meccanismo di risposta (se presente) è noto.  
+ Indica un evento inviato immediatamente e in modo sincrono all'IDE. Questo flag è combinato con altri flag `EVENT_ASYNCHRONOUS` , ad esempio, `EVENT_SYNCHRONOUS` o, `EVENT_SYNC_STOP` per indicare il tipo di evento e il fatto che il meccanismo di risposta (se presente) è noto.  
   
  EVENT_EXPRESSION_EVALUATION  
  L'evento è il risultato della valutazione dell'espressione.  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono passati il `dwAttrib` parametro del [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono passati nel `dwAttrib` parametro del metodo dell' [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) .  
   
- Questi valori possono essere combinati con un bit per bit `OR`.  
+ Questi valori possono essere combinati con un bit per bit `OR` .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

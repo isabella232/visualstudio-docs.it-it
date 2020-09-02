@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::IsPositionInDocument . Documenti Microsoft
+title: 'IDebugDocumentPosition2:: IsPositionInDocument | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4d92dddda8fd9831f5d66b602cd48fdbbc3dbcf1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731648"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
@@ -41,13 +41,13 @@ int IsPositionInDocument( 
 
 ## <a name="parameters"></a>Parametri
 `pDoc`\
-[in] Oggetto [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) che rappresenta il candidato al documento che lo contiene.
+in Oggetto [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) che rappresenta il candidato del documento contenitore.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo viene utilizzato principalmente nell'impostazione di punti di interruzione in [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfacce. Quando i documenti vengono caricati, la posizione del punto di interruzione viene chiamata per determinare se il documento contiene questa posizione.
+ Questo metodo viene utilizzato principalmente per l'impostazione di punti di interruzione nelle interfacce [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) . Quando vengono caricati i documenti, viene chiamata la posizione del punto di interruzione per determinare se il documento contiene questa posizione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
