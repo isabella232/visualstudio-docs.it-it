@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/25/2020
+ms.date: 08/31/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: fb9fbc548af552c2704033888d0fffe5d7e7a43c
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.openlocfilehash: c836c101280da1884345dd5e95def383226942fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88893385"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285736"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,6 +29,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Preview 2.1 | 31 agosto 2020 | 16.8.30428.66 |
 | 16.8.0 | Preview 2 | 25 agosto 2020 | 16.8.30420.98 |
 | 16.7.2 | Versione | 18 agosto 2020 | 16.7.30413.136 |
 | 16.7.1 | Versione | 11 agosto 2020 | 16.7.30406.217 |
