@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592373"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>Viste dell'area di lavoro di progettazione XML Schema
@@ -47,4 +47,4 @@ Per cambiare visualizzazioni, usare uno degli elementi seguenti:
 
 - Le filigrane sulla pagina della visualizzazione iniziale o la filigrana sulla visualizzazione modello di contenuto vuota o sulla visualizzazione grafico.
 
-- Tasti di scelta rapida: **ctrl**+**1** per la visualizzazione iniziale, **CTRL**+**2** per la visualizzazione grafico e **CTRL**+**3** per la visualizzazione modello di contenuto.
+- Tasti di scelta rapida: **CTRL** + **1** per la visualizzazione iniziale, **CTRL** + **2** per la visualizzazione grafico e **CTRL** + **3** per la visualizzazione modello di contenuto.

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8378ebaccefaedfcc3d83f23bcab56f7417264dd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592503"
 ---
 # <a name="search-the-schema-set"></a>Eseguire ricerche nel set di schemi
@@ -43,11 +43,11 @@ In **XML Schema Explorer** sono inoltre incluse ricerche predefinite a cui è po
 
 ## <a name="display-and-navigate-search-results"></a>Visualizzare ed esplorare i risultati della ricerca
 
-Dopo aver terminato la ricerca, il riquadro dei risultati di riepilogo viene aggiunto alla barra degli strumenti con i risultati della ricerca. I risultati della ricerca sono evidenziati anche in **XML Schema Explorer** e contrassegnati con i segni di avanzamento sulla barra di scorrimento verticale. È possibile esplorare i risultati della ricerca usando i pulsanti **Vai al** risultato della ricerca successivo e **Vai ai risultati della ricerca precedente** nel riquadro dei risultati di riepilogo della barra degli strumenti di **XML Schema Explorer** . utilizzando i tasti **F3** e **MAIUSC**+**F3**; oppure facendo clic sui segni di graduazione nella barra di scorrimento.
+Dopo aver terminato la ricerca, il riquadro dei risultati di riepilogo viene aggiunto alla barra degli strumenti con i risultati della ricerca. I risultati della ricerca sono evidenziati anche in **XML Schema Explorer** e contrassegnati con i segni di avanzamento sulla barra di scorrimento verticale. È possibile esplorare i risultati della ricerca usando i pulsanti **Vai al** risultato della ricerca successivo e **Vai ai risultati della ricerca precedente** nel riquadro dei risultati di riepilogo della barra degli strumenti di **XML Schema Explorer** . utilizzando i tasti **F3** e **MAIUSC** + **F3**oppure facendo clic sui segni di graduazione nella barra di scorrimento.
 
 È possibile aggiungere i risultati della ricerca all'area di lavoro facendo clic sul pulsante **Aggiungi nodi evidenziati all'area di lavoro** nel riquadro dei risultati di riepilogo.
 
-![Risultato della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
+![Risultati della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Cancella risultati della ricerca
 

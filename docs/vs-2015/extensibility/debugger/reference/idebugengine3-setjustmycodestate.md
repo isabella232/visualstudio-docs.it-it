@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
+title: 'IDebugEngine3:: SetJustMyCodeState | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ebaf697bfdfff435c12eee1002ff93f4eba7ed65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195857"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Le informazioni di stato JustMyCode, questo metodo indica al motore di debug.  
+Questo metodo indica al motore di debug le informazioni sullo stato di JustMyCode.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,19 +44,19 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>Parametri  
  `fUpdate`  
- [in] Diverso da zero (`TRUE`) per aggiornare le informazioni correnti, zero (`FALSE`) per reimpostare tutte le informazioni (ignorando qualsiasi tipo impostato in precedenza).  
+ in Diverso da zero ( `TRUE` ) per aggiornare le informazioni correnti, zero ( `FALSE` ) per reimpostare tutte le informazioni (ignorando qualsiasi elemento precedentemente impostato).  
   
  `dwModules`  
- [in] Numero di strutture di informazioni in `rgJMCSpec.`  
+ in Numero di strutture di informazioni in `rgJMCSpec.`  
   
  `rgJMCSpec`  
- [in] Matrice di [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) strutture da usare.  
+ in Matrice di strutture di [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) da utilizzare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.  
   
-## <a name="remarks"></a>Note  
- JustMyCode è il concetto di debug solo del codice a cui appartiene un utente e ignorare tutto il codice intermedio, ad esempio il codice di sistema, anche se il codice sorgente è disponibile per tale codice di sistema.  
+## <a name="remarks"></a>Osservazioni  
+ JustMyCode è il concetto di debug solo del codice che appartiene a un utente e che ignora tutto il codice intermedio, ad esempio il codice di sistema, anche se il codice sorgente è disponibile per il codice di sistema.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   

@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4e8c1b438cd2fa2721e81f055695e5836c26d12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179936"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
+# <a name="context_info"></a>CONTEXT_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa struttura descrive un contesto in memoria o il contesto del codice.  
+Questa struttura descrive un contesto di memoria o un contesto di codice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -50,37 +50,37 @@ public struct CONTEXT_INFO {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  dwFields  
- Una combinazione di flag da egli [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumerazione che specifica quali campi vengono compilati<strong>.</strong>  
+ Combinazione di flag di [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumerazione che specifica i campi che vengono compilati<strong>.</strong>  
   
  bstrModuleUrl  
- Il nome del modulo in cui si trova il contesto.  
+ Nome del modulo in cui si trova il contesto.  
   
  bstrFunction  
- Il nome della funzione in cui si trova il contesto.  
+ Nome della funzione in cui si trova il contesto.  
   
  posFunctionOffset  
- Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura che identifica l'offset di riga e alla colonna della funzione associata al contesto del codice.  
+ Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che identifica l'offset di riga e di colonna della funzione associata al contesto del codice.  
   
  bstrAddress  
- L'indirizzo nel codice in cui si trova nel contesto specificato.  
+ Indirizzo nel codice in cui si trova il contesto specificato.  
   
  bstrAddressOffset  
- L'offset dell'indirizzo nel codice in cui si trova nel contesto specificato.  
+ Offset dell'indirizzo nel codice in cui si trova il contesto specificato.  
   
  bstrAddressAbsolute  
- L'indirizzo assoluto in memoria in cui si trova nel contesto specificato.  
+ Indirizzo assoluto in memoria in cui si trova il contesto specificato.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene restituita da una chiamata per il [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene restituita da una chiamata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) .  
   
- Un utilizzo tipico per questa struttura è supportare una **memoria** finestra di debug.  
+ Un uso tipico di questa struttura è il supporto di una finestra di debug della **memoria** .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

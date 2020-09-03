@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata | Microsoft Docs"
+title: "Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,16 +19,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ff519416d874462a86f7e615822d15139fc4726
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697641"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. Per pubblicare l'applicazione, usare la Pubblicazione guidata. Altre proprietà relative alla pubblicazione sono disponibili nella pagina **Pubblica** di **Creazione progetti**. Per altre informazioni, vedere [pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).  
+Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. Per pubblicare l'applicazione, usare la Pubblicazione guidata. Altre proprietà relative alla pubblicazione sono disponibili nella pagina **Pubblica** di **Creazione progetti**. Per ulteriori informazioni, vedere [pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).  
   
  Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni di pubblicazione. Ad esempio, se si vuole designare una chiave per la firma dell'applicazione ClickOnce, accedere alla pagina **Firma** di **Creazione progetti**. Per altre informazioni, vedere [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).  
   
@@ -36,13 +36,13 @@ Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pub
 > Quando si installa più di una versione di un'applicazione tramite ClickOnce, l'installazione sposta le versioni precedenti dell'applicazione in una cartella denominata Archivio, nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Per pubblicare in una condivisione file o in un percorso  
   
 1. In **Esplora soluzioni** selezionare il progetto di applicazione.  
   
-2. Nel **compilare** menu, fare clic su **Publish**`Projectname`.  
+2. Scegliere **pubblica**dal menu **Compila** `Projectname` .  
   
     Verrà visualizzata la Pubblicazione guidata.  
   
@@ -50,9 +50,9 @@ Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pub
   
 4. Nella pagina **Specificare la modalità di installazione dell'applicazione utilizzata dagli utenti** selezionare il percorso a cui accederanno gli utenti per installare l'applicazione:  
   
-   - Se gli utenti eseguiranno l'installazione da un sito Web, fare clic su **Da un sito Web** e immettere un URL corrispondente al percorso file specificato nel passaggio precedente. Scegliere **Avanti**. In genere questa opzione viene usata quando si specifica un indirizzo FTP come percorso di pubblicazione. Il download diretto da FTP non è supportato, di conseguenza, è necessario specificare un URL.  
+   - Se gli utenti eseguiranno l'installazione da un sito Web, fare clic su **Da un sito Web** e immettere un URL corrispondente al percorso file specificato nel passaggio precedente. Fare clic su **Avanti**. In genere questa opzione viene usata quando si specifica un indirizzo FTP come percorso di pubblicazione. Il download diretto da FTP non è supportato, di conseguenza, è necessario specificare un URL.  
   
-   - Se gli utenti installeranno l'applicazione direttamente dalla condivisione file, fare clic su **Da un percorso UNC o condivisione file** e quindi scegliere **Avanti**. (Si tratta di pubblicazione di percorsi di c:\deploy\myapp il form o \\\server\myapp.)  
+   - Se gli utenti installeranno l'applicazione direttamente dalla condivisione file, fare clic su **Da un percorso UNC o condivisione file** e quindi scegliere **Avanti**. (Per i percorsi di pubblicazione nel formato c:\deploy\myapp o \\ \server\myapp.)  
   
    - Se gli utenti eseguiranno l'installazione da un supporto rimovibile, fare clic su **Da CD-ROM o DVD-ROM** e quindi scegliere **Avanti**.  
   
@@ -72,13 +72,13 @@ Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pub
   
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di applicazione e scegliere **Proprietà**.  
   
-    Viene visualizzata la finestra **Creazione progetti**.  
+    Verrà visualizzato **Progettazione progetti** .  
   
 2. Fare clic sulla scheda **Pubblica** per aprire la pagina **Pubblica** in **Creazione progetti** e quindi fare clic sul pulsante **Pubblicazione guidata**.  
   
     Verrà visualizzata la Pubblicazione guidata.  
   
-3. Nel **in cui si desidera pubblicare l'applicazione?** pagina, immettere il percorso del file o percorso FTP in cui verrà pubblicata l'applicazione, ad esempio d:\deploy. Per continuare, fare clic su **Avanti**.  
+3. Nella pagina specificare la posizione in **cui pubblicare l'applicazione** immettere il percorso del file o il percorso FTP in cui verrà pubblicata l'applicazione, ad esempio d:\deploy. Quindi, fare clic su **Avanti** per continuare.  
   
 4. Nella pagina **Specificare la modalità di installazione dell'applicazione usata dagli utenti** fare clic su **Da CD-ROM o DVD-ROM** e quindi fare clic su **Avanti**.  
   
@@ -102,5 +102,5 @@ Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pub
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Distribuzione di una soluzione Office mediante ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)
+ [Protezione delle applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Distribuzione di una soluzione Office utilizzando ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)

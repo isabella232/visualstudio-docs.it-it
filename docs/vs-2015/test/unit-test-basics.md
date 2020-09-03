@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543780"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
@@ -40,9 +40,9 @@ Per controllare che il codice funzioni come previsto, creare ed eseguire unit te
 
 - [Eseguire e visualizzare i test](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>Panoramica degli unit test
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a> Panoramica degli unit test
 
-### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>Avvio rapido
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a> Avvio rapido
  Per un'introduzione agli unit test che mostra direttamente la creazione di codice, vedere uno degli argomenti seguenti:
 
 - [Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ Per controllare che il codice funzioni come previsto, creare ed eseguire unit te
 
 - [Unit test di codice nativo con Esplora test](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>Esempio di soluzione My Bank
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a> Esempio di soluzione My Bank
  In questo argomento si usa lo sviluppo di un'applicazione fittizia denominata `MyBank` come esempio. Per seguire le spiegazioni disponibili in questo argomento non è necessario il codice effettivo. I metodi di test sono scritti in C# e sono presentati tramite il framework per unit test Microsoft per codice gestito. I concetti possono essere tuttavia trasferiti facilmente ad altri linguaggi e altri framework.
 
  ![Soluzione MyBank](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - La classe`CheckingAccountTests` contiene i metodi di unit test per la classe `CheckingAccount` .
 
-## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>Scrivere i test
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a> Scrivere i test
  Il framework di unit test usato e Visual Studio IntelliSense forniranno indicazioni per la scrittura del codice per gli unit test per un progetto di codice. Per l'esecuzione in Esplora test, la maggior parte dei framework richiede l'aggiunta di attributi specifici per identificare i metodi di unit test. I framework offrono anche un modo, in genere tramite istruzioni Assert o attributi di metodo, per indicare se un metodo di test ha avuto esito positivo o negativo. Altri attributi identificano metodi di configurazione facoltativi che si trovano in corrispondenza dell'inizializzazione delle classi e prima di ogni metodo di test e dei metodi di disinstallazione eseguiti dopo ogni metodo di test e prima dell'eliminazione della classe.
 
  Lo schema AAA (Arrange, Act, Assert) è un modo comune per scrivere unit test per un metodo da testare.
@@ -217,7 +217,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Eseguire test in Esplora test
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Eseguire test in Esplora test
  Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
 
  ![Esplora unit test](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -226,7 +226,7 @@ public void My_Test ()
 
  È anche possibile filtrare i test in qualsiasi visualizzazione in base alla corrispondenza con il testo nella casella di ricerca a livello globale oppure tramite la selezione di uno dei filtri predefiniti. È possibile eseguire qualsiasi selezione di test in qualsiasi momento. I risultati di un'esecuzione dei test sono visualizzati immediatamente nella barra relativa alle operazioni riuscite/non riuscite nella parte superiore della finestra di Esplora test. I dettagli relativi al risultato di un metodo di test vengono visualizzati quando si seleziona il test.
 
-### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>Eseguire e visualizzare i test
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Eseguire e visualizzare i test
  La barra degli strumenti di Esplora test permette di individuare, organizzare ed eseguire i test a cui si è interessati.
 
  ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute-toolbar.png "UTE_ToolBar")
@@ -244,7 +244,7 @@ public void My_Test ()
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Per eseguire unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** nella barra degli strumenti di Esplora test.|
 
-### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>Filtrare e raggruppare l'elenco dei test
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filtrare e raggruppare l'elenco dei test
  Quando è disponibile un numero elevato di test, è possibile digitare nella casella di testo di Esplora test per filtrare l'elenco in base alla stringa specificata. È possibile limitare ulteriormente i risultati scegliendo uno dei filtri disponibili nell'elenco.
 
  ![Categorie di filtri di ricerca](../test/media/ute-searchfilter.png "UTE_SearchFilter")

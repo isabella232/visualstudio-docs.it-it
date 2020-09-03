@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Microsoft Docs
+title: 'IDebugObject:: SetReferenceValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b1da0e152d536e9bed47dfb3964df60634c017bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180509"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
@@ -40,13 +40,13 @@ int SetReferenceValue(
   
 #### <a name="parameters"></a>Parametri  
  `pObject`  
- [in] Un' [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto che rappresenta il nuovo valore di riferimento.  
+ in Oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta il nuovo valore di riferimento.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo rende questa [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) sul valore dell'oggetto specificato in un riferimento a un oggetto di `pObject` parametro, generando un'eccezione qualsiasi riferimento precedente. Si noti che questo `IDebugObject` oggetto deve essere già un tipo di riferimento.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo fa in modo che questo oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) un riferimento al valore dell'oggetto specificato nel `pObject` parametro, eliminando eventuali riferimenti precedenti. Si noti che questo `IDebugObject` oggetto deve essere già un tipo riferimento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

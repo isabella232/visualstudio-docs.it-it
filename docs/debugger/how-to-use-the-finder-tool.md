@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348730"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedura: utilizzare lo strumento di ricerca
@@ -49,7 +49,7 @@ ms.locfileid: "85348730"
 
     Se si seleziona **Proprietà**, viene visualizzata la [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) . Se sono stati selezionati **messaggi**, viene visualizzata una finestra [visualizzazione messaggi](../debugger/messages-view.md) .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)
 - [Utilizzo di Spy++](../debugger/using-spy-increment.md)
 - [Riferimenti per Spy++](../debugger/spy-increment-reference.md)

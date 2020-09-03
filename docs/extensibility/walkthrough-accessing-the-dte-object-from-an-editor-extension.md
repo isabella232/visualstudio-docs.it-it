@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e37bdb21b7c8132f0dfb166d19e03d36e838245d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697654"
 ---
-# <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>Procedura dettagliata: accedere all'oggetto DTE da un'estensione dell'editorWalkthrough: Access the DTE object from an editor extension
+# <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>Procedura dettagliata: accesso all'oggetto DTE da un'estensione dell'editor
 
-In VSPackage, è possibile ottenere l'oggetto DTE chiamando il <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metodo con il tipo dell'oggetto DTE. Nelle estensioni di Managed Extensibility Framework <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (MEF) <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> è possibile <xref:EnvDTE.DTE>importare e quindi chiamare il metodo con un tipo di .
+Nei pacchetti VSPackage è possibile ottenere l'oggetto DTE chiamando il <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> metodo con il tipo dell'oggetto DTE. Nelle estensioni Managed Extensibility Framework (MEF) è possibile importare <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> metodo con un tipo di <xref:EnvDTE.DTE> .
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -27,32 +27,32 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 ## <a name="get-the-dte-object"></a>Ottiene l'oggetto DTE
 
-1. Creare un progetto VSIX di C' e denominarlo **DTETest**. Aggiungere un modello di elemento **Classificatore editor** e denominarlo **DTETest**.
+1. Creare un progetto VSIX C# e denominarlo **DTETest**. Aggiungere un modello di elemento di **classificazione editor** e denominarlo **DTETest**.
 
-   Per ulteriori informazioni, consultate [Creare un'estensione con un modello di elemento dell'editor.](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+   Per altre informazioni, vedere [creare un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
 ::: moniker range=">=vs-2019"
 
-2. Aggiungere i seguenti riferimenti all'assembly al progetto:
+2. Aggiungere al progetto i riferimenti ad assembly seguenti:
 
-    - Microsoft.VisualStudio.Shell.Framework
-    - Microsoft.VisualStudio.Shell.Immutable.10.0
+    - Microsoft. VisualStudio. Shell. Framework
+    - Microsoft. VisualStudio. Shell. Immutable. 10.0
 
-3. Nel file *DTETestProvider.cs* aggiungere `using` le direttive seguenti:In the DTETestProvider.cs file, add the following directives:
+3. Nel file *DTETestProvider.cs* aggiungere le `using` direttive seguenti:
 
     ```csharp
     using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     ```
 
-4. Nella `DTETestProvider` classe , <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>importare un file .
+4. Nella `DTETestProvider` classe importare un oggetto <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> .
 
     ```csharp
     [Import]
     internal SVsServiceProvider ServiceProvider = null;
     ```
 
-5. Nel `GetClassifier()` metodo aggiungere il codice `return` seguente prima dell'istruzione :
+5. Nel `GetClassifier()` metodo aggiungere il codice seguente prima dell' `return` istruzione:
 
     ```csharp
    ThreadHelper.ThrowIfNotOnUIThread();
@@ -63,26 +63,26 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 ::: moniker range="vs-2017"
 
-2. Aggiungere i seguenti riferimenti all'assembly al progetto:
+2. Aggiungere al progetto i riferimenti ad assembly seguenti:
 
    - EnvDTE
-   - Microsoft.VisualStudio.Shell.Framework
+   - Microsoft. VisualStudio. Shell. Framework
 
-3. Nel file *DTETestProvider.cs* aggiungere `using` le direttive seguenti:In the DTETestProvider.cs file, add the following directives:
+3. Nel file *DTETestProvider.cs* aggiungere le `using` direttive seguenti:
 
     ```csharp
     using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     ```
 
-4. Nella `DTETestProvider` classe , <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>importare un file .
+4. Nella `DTETestProvider` classe importare un oggetto <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> .
 
     ```csharp
     [Import]
     internal SVsServiceProvider ServiceProvider = null;
     ```
 
-5. Nel `GetClassifier()` metodo aggiungere il codice `return` seguente prima dell'istruzione :
+5. Nel `GetClassifier()` metodo aggiungere il codice seguente prima dell' `return` istruzione:
 
     ```csharp
    DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));
@@ -92,5 +92,5 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Punti di estensione del servizio di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)
+- [Punti di estensione Editor e servizio di linguaggio](../extensibility/language-service-and-editor-extension-points.md)
 - [Avviare Visual Studio tramite DTE](launch-visual-studio-dte.md)

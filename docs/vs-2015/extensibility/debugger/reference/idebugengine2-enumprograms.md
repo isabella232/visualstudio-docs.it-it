@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::EnumPrograms | Microsoft Docs
+title: 'IDebugEngine2:: EnumPrograms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc004de59b6ae219f47dc0874913c8e6e6ceb0f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196001"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera un elenco di tutti i programmi in fase di debug da un motore di debug (DE).  
+Recupera un elenco di tutti i programmi di cui è in corso il debug da un motore di debug (DE).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,10 +40,10 @@ int EnumPrograms( 
   
 #### <a name="parameters"></a>Parametri  
  `ppEnum`  
- [out] Restituisce un [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) oggetto che contiene un elenco di tutti i programmi in fase di debug da un CRI.  
+ out Restituisce un oggetto [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) che contiene un elenco di tutti i programmi di cui è in corso il debug da un valore de.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

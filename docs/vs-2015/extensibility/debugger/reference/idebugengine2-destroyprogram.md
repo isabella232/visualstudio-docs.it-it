@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::DestroyProgram | Microsoft Docs
+title: IDebugEngine2::D estroyProgram | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9faacd80b036282a088b006a15eb9500e8606c5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196022"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Informa un motore di debug (DE) che il programma specificato è stato terminato insolitamente e che la Germania Pulisce tutti i riferimenti al programma e un programma invia un evento di eliminazione.  
+Informa un motore di debug (DE) che il programma specificato è stato interrotto in modo atipico e che il DE dovrebbe pulire tutti i riferimenti al programma e inviare un evento di eliminazione del programma.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,15 +40,15 @@ int DestroyProgram( 
   
 #### <a name="parameters"></a>Parametri  
  `pProgram`  
- [in] Un' [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma di cui è stato terminato insolitamente.  
+ in Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma che è stato interrotto in modo atipico.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Dopo che questo metodo viene chiamato, la Germania invia successivamente una [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) evento al gestore di sessione di debug (SDM).  
+## <a name="remarks"></a>Osservazioni  
+ Dopo la chiamata a questo metodo, il DE invia successivamente un evento [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) al gestore di debug della sessione (SDM).  
   
- Questo metodo non è implementato (restituisce `E_NOTIMPL`) se la Germania è in esecuzione nello stesso processo del programma in fase di debug. Questo metodo viene implementato solo se la Germania viene eseguito nello stesso processo come il modello SDM.  
+ Questo metodo non è implementato (restituisce `E_NOTIMPL` ) se il de viene eseguito nello stesso processo del programma di cui è in corso il debug. Questo metodo viene implementato solo se il DE viene eseguito nello stesso processo del SDM.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

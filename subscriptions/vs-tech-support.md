@@ -2,17 +2,17 @@
 title: Vantaggio Supporto tecnico
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 03/26/2020
+ms.date: 09/02/2020
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 247a2b9d4649aae6f3a32a6156e2f9558c481e68
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 3081836b94fbc5fdda277d694086acc18db6eb44
+ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387291"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89365846"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -31,6 +31,9 @@ Strumenti di sviluppo come l'IDE di Visual Studio e la Azure DevOps Server ricev
 I prodotti non per sviluppatori (ad esempio SQL, Windows, SharePoint) scaricati dalle sottoscrizioni di Visual Studio sono idonei solo per il supporto mainstream. Questi prodotti sono concessi in licenza solo per gli ambienti di sviluppo per la progettazione, lo sviluppo, il test e la dimostrazione delle applicazioni. Questi prodotti non sono concessi in licenza per gli ambienti di produzione.
 
 Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili**. Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)**, non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
+
+> [!IMPORTANT]
+> Gli interventi di supporto sono disponibili per il supporto per la correzione delle interruzioni.  Non possono essere usati per assistenza per problemi di codifica/sviluppo che coinvolgono Microsoft teams, Microsoft Office, Microsoft SharePoint o Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>Come attivare il vantaggio
 1. Passare a <https://my.visualstudio.com/Benefits>, scorrere verso il basso fino alla sezione Supporto e nel riquadro Supporto tecnico fare clic su **Chat to activate** (Chatta per attivare).
@@ -83,7 +86,7 @@ Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Aggiungere il contratto](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. Immettere l' **ID di accesso** e l' **ID del contratto**.  Fare clic su **Aggiungi**.
+4. Immettere l' **ID di accesso** e l' **ID del contratto**.  Scegliere **Aggiungi**.
 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Aggiungere l'ID contratto](_img/vs-tech-support/vs-tech-support-add-contract-id.png)

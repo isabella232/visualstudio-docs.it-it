@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugDocumentTextEvents2::onReplaceText . Documenti Microsoft
+title: 'IDebugDocumentTextEvents2:: onReplaceText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 812c77522213791519057d43ca3e725b6660612d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731405"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
@@ -43,10 +43,10 @@ int onReplaceText( 
 
 ## <a name="parameters"></a>Parametri
 `pos`\
-[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) indica dove è stato sostituito il testo.
+in Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) indica dove è stato sostituito il testo.
 
 `dwNumToReplace`\
-[in] Specifica il numero di caratteri di testo che sono stati sostituiti.
+in Specifica il numero di caratteri del testo sostituito.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

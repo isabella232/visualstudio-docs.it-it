@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738259"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informazioni sulla finestra registri in Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informazioni sulla finestra registri in Visual Studio (C#, C++, Visual Basic, F #)
 
 La finestra **Registri** è disponibile solo se il debug a livello di indirizzo è stato attivato nella finestra di dialogo **Opzioni**, nodo **Debug**.
 
@@ -40,9 +40,9 @@ La finestra **Registri** è disponibile solo se il debug a livello di indirizzo 
 
  Per altre informazioni sulla visualizzazione della finestra **Registri**, vedere [Uso della finestra Registri](../debugger/how-to-use-the-registers-window.md).
 
- Quando si esamina la finestra **registri** , vengono visualizzate voci come `EAX = 003110D8`.
+ Quando si esamina la finestra **registri** , vengono visualizzate le voci, ad esempio `EAX = 003110D8` .
 
- Il simbolo a sinistra del segno di `=` è il nome del registro `EAX`, in questo caso. Il numero alla destra del segno `=` rappresenta il contenuto del registro.
+ Il simbolo a sinistra del `=` segno è il nome del registro, `EAX` , in questo caso. Il numero alla destra del segno `=` rappresenta il contenuto del registro.
 
  Oltre a esaminare il contenuto di un registro, nella finestra **Registri** è possibile eseguire altre attività. Se si sta utilizzando codice nativo in modalità di interruzione, è possibile fare clic sul contenuto di un registro e modificarne il valore. Si tratta di un'operazione che deve essere eseguita con criterio. Se non si comprende la funzione del registro che si sta modificando e quali dati esso contenga, un'incauta modifica provocherà, con molta probabilità, un arresto anomalo del programma o altri effetti indesiderati. Una spiegazione dettagliata degli insiemi di registri dei vari processori Intel e compatibili, tuttavia, eccede l'ambito di questa breve introduzione.
 
@@ -54,7 +54,7 @@ Per evitare confusione, nella finestra **Registri** i registri sono organizzati 
 
 Per i processori Intel x86, nella finestra **registri** è possibile che vengano visualizzati i flag seguenti. Durante una sessione di debug, è anche possibile modificare questi flag.
 
-|Flag|Imposta valore|
+|Flag|Impostare il valore|
 |-|-|
 |Overflow|OV = 1|
 |Direzione|MASSIMO = 1|
@@ -62,9 +62,9 @@ Per i processori Intel x86, nella finestra **registri** è possibile che vengano
 |Sign|PL = 1|
 |Zero|ZR = 1|
 |Porta ausiliaria|AC = 1|
-|Parità|PE = 1|
-|Portare|CY = 1|
+|Parity|PE = 1|
+|Carry|CY = 1|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
+- [Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

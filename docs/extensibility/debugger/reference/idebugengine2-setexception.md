@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugEngine2::SetException . Documenti Microsoft
+title: 'IDebugEngine2:: seexception | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7398db3c15c58821e05eff839a1022276401d569
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730943"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
-Specifica il modo in cui il motore di debug (DE) deve gestire una determinata eccezione.
+Specifica il modo in cui il motore di debug (DE) deve gestire un'eccezione specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int SetException( 
 
 ## <a name="parameters"></a>Parametri
 `pException`\
-[in] Struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) che descrive l'eccezione e come eseguirne il debug.
+in Struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) che descrive l'eccezione e come eseguirne il debug.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Un DE potrebbe essere istruito per interrompere il programma generando un'eccezione a prima possibilità, seconda possibilità, o non a tutti.
+ È possibile che venga richiesto all'utente di arrestare il programma che genera un'eccezione al primo tentativo, alla seconda possibilità o non a tutti.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

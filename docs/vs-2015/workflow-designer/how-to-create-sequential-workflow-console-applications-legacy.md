@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9e3f97021e742db7b22a400dee0682669b07e4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662723"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Procedura: creare applicazioni console del flusso di lavoro sequenziale (legacy)
@@ -27,7 +27,7 @@ Seguire questi passaggi per creare un progetto Applicazione console flusso di la
 
 1. Avviare Visual Studio.
 
-2. Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
+2. Scegliere **Nuovo** dal menu **File**e quindi selezionare **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -36,7 +36,7 @@ Seguire questi passaggi per creare un progetto Applicazione console flusso di la
     > [!NOTE]
     > L'opzione predefinita in [!INCLUDE[vs2010](../includes/vs2010-md.md)] è **.NET Framework 4**. Questa opzione viene usata per creare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] che vengono destinate a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e non usa la finestra di progettazione legacy.
 
-4. Nel riquadro **Tipi progetto** selezionare progetti visivi C# o progetti Visual Basic (in **altri linguaggi**), quindi selezionare flusso di **lavoro**.
+4. Nel riquadro **Tipi progetto** selezionare progetti Visual C# o progetti Visual Basic (in **altri linguaggi**), quindi selezionare **flusso di lavoro**.
 
 5. Nel riquadro **modelli** selezionare **applicazione console flusso di lavoro sequenziale**.
 

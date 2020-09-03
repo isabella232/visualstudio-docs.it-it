@@ -1,5 +1,5 @@
 ---
-title: Features1 servizio di linguaggio legacy | Microsoft Docs
+title: Servizio di linguaggio legacy Features1 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,72 +11,72 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9506c6756c785741c40f86ae5839101bf0079854
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196135"
 ---
-# <a name="legacy-language-service-features"></a>Funzionalità del servizio di linguaggio legacy
+# <a name="legacy-language-service-features"></a>Funzionalità dei servizi di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un servizio di linguaggio managed package framework (MPF) può supportare uno o più [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] funzionalità, ad esempio l'evidenziazione della sintassi, IntelliSense e convalida di punto di interruzione. Ogni funzionalità possono essere implementata indipendente dagli altri, ma tutti richiedono un parser e uno scanner tranne l'evidenziazione della sintassi, che richiede solo uno scanner.  
+Un servizio di linguaggio del Framework di pacchetto gestito (MPF) può supportare una o più [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] funzionalità, ad esempio l'evidenziazione della sintassi, IntelliSense e la convalida del punto di interruzione. Ogni funzionalità può essere implementata indipendentemente dagli altri, ma tutti richiedono un parser e uno scanner, ad eccezione dell'evidenziazione della sintassi, che richiede solo uno scanner.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Corrispondenza parentesi graffe in un servizio di linguaggio legacy](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessarie per supportare la coppia di linguaggi corrispondenti, noto anche come corrispondenza parentesi graffe.  
+ Vengono descritti gli elementi necessari per supportare la corrispondenza delle coppie di lingue, nota anche come corrispondenza delle parentesi graffe.  
   
  [Aggiunta di commenti al codice in un servizio di linguaggio legacy](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessarie per supportare l'aggiunta di commenti e rimozione di commenti del codice selezionato.  
+ Descrive gli elementi necessari per supportare i commenti e rimuovere i commenti del codice selezionato.  
   
  [Proprietà personalizzate dei documenti in un servizio di linguaggio legacy](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessarie per supportare le proprietà del documento sono incorporate in un file di origine.  
+ Vengono descritti gli elementi necessari per supportare le proprietà del documento incorporate in un file di origine.  
   
- [Definizione della struttura in un servizio di linguaggio legacy](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessarie per supportare la struttura tramite l'implementazione di aree nascoste.  
+ [Struttura in un servizio di linguaggio legacy](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+ Descrive gli elementi necessari per supportare la struttura tramite l'implementazione di aree nascoste.  
   
  [Riformattazione del codice in un servizio di linguaggio legacy](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessari per supportare codice riformattazione.  
+ Descrive gli elementi necessari per il supporto della riformattazione del codice.  
   
  [Supporto per i frammenti di codice in un servizio di linguaggio legacy](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessarie per supportare i frammenti di codice, ovvero i segmenti di codice inserite e che possono essere modificati.  
+ Vengono descritti gli elementi necessari per supportare i frammenti di codice, ovvero i segmenti di codice che vengono inseriti e che è possibile modificare.  
   
  [Informazioni sui parametri in un servizio di linguaggio legacy](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
- Vengono descritte le funzionalità necessarie per supportare l'operazione di informazioni sul parametro di IntelliSense per la visualizzazione di una firma del metodo com'è digitato il metodo.  
+ Vengono descritti gli elementi necessari per supportare l'operazione informazioni sul parametro IntelliSense per la visualizzazione di una firma del metodo durante la digitazione del metodo.  
   
  [Informazioni rapide in un servizio di linguaggio legacy](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessarie per supportare l'operazione di informazioni rapide di IntelliSense per la visualizzazione di informazioni su un identificatore.  
+ Descrive gli elementi necessari per supportare l'operazione di informazioni rapide di IntelliSense per la visualizzazione di informazioni su un identificatore.  
   
  [Completamento dei membri in un servizio di linguaggio legacy](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
- Descrive la procedura necessaria per supportare l'operazione di completamento IntelliSense dei membri per la selezione di un membro di uno spazio dei nomi da un elenco.  
+ Vengono descritti gli elementi necessari per supportare l'operazione di completamento del membro IntelliSense per la selezione di un membro di uno spazio dei nomi da un elenco.  
   
  [Completamento delle parole in un servizio di linguaggio legacy](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessarie per supportare l'operazione completa parola di IntelliSense per il completamento delle parole digitate parzialmente.  
+ Descrive gli elementi necessari per supportare l'operazione di Word completa di IntelliSense per il completamento di parole parzialmente tipizzate.  
   
  [Supporto per la finestra Auto in un servizio di linguaggio legacy](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
- Descrive le operazioni possa eseguire un servizio di linguaggio per supportare le **Auto** finestra durante il debug.  
+ Descrive le operazioni che un servizio di linguaggio può eseguire per supportare la finestra **auto** durante il debug.  
   
  [Supporto per la barra di spostamento in un servizio di linguaggio legacy](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
- Viene descritto come utilizzare il **sulla barra di navigazione** nella parte superiore della visualizzazione dell'editor per consentire la navigazione rapida in qualsiasi tipo o membro nel file in tale visualizzazione...  
+ Viene descritto come utilizzare la **barra di navigazione** nella parte superiore della visualizzazione dell'editor per fornire una navigazione rapida a qualsiasi tipo o membro nel file visualizzato in tale visualizzazione.  
   
  [Colorazione della sintassi in un servizio di linguaggio legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
- Vengono descritte le funzionalità necessarie per supportare l'evidenziazione della sintassi del codice sorgente.  
+ Descrive gli elementi necessari per supportare l'evidenziazione della sintassi del codice sorgente.  
   
  [Convalida dei punti di interruzione in un servizio di linguaggio legacy](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
- Viene descritto cosa può fare un servizio di linguaggio per supportare i punti di interruzione durante la convalida di fuori di un debugger.  
+ Descrive le operazioni che un servizio di linguaggio può eseguire per supportare la convalida di punti di interruzione all'esterno di un debugger.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Scanner e parser dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Viene descritto il parser e analisi che sono necessari per implementare tutte le funzionalità di un servizio di linguaggio che usa il framework di pacchetto gestito.  
+ Vengono descritti il parser e lo scanner necessari per implementare tutte le funzionalità di un servizio di linguaggio che utilizza il Framework di pacchetto gestito.  
   
  [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- Descrive cosa è necessaria implementare un servizio di linguaggio tramite MPF.  
+ Vengono descritti gli elementi necessari per implementare un servizio di linguaggio tramite MPF.  
   
  [Registrazione di un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- Vengono descritti i passaggi necessari per registrare un servizio di linguaggio basato su MPF con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+ Vengono descritti i passaggi necessari per registrare un servizio di linguaggio basato su MPF con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
  [Utilizzo di IntelliSense](../../ide/using-intellisense.md)  
- Spiega come IntelliSense rende più semplice l'accesso ai riferimenti al linguaggio.  
+ Viene illustrato come IntelliSense semplifica l'accesso ai riferimenti al linguaggio.  
   
  [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Fornisce informazioni su come usare il framework di pacchetto gestito (MPF) per implementare un servizio di linguaggio completo nel codice gestito.
+ Vengono fornite informazioni su come utilizzare il Framework di pacchetto gestito (MPF) per implementare un servizio di linguaggio completo nel codice gestito.

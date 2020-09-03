@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4fa284a44f75503a2890a15981d2b4f9947be2fa
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348678"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Visualizzare le dll e gli eseguibili nella finestra moduli (C#, C++, Visual Basic, F #)
@@ -69,7 +69,7 @@ Nella colonna **stato simbolo** della finestra **moduli** vengono visualizzati i
 
 1. Selezionare **carica tutti i simboli**oppure selezionare i moduli da includere o escludere.
 
-1. Fare clic su **OK**. Le modifiche diventano effettive nella successiva sessione di debug.
+1. Selezionare **OK**. Le modifiche diventano effettive nella successiva sessione di debug.
 
 **Per modificare il comportamento di caricamento dei simboli per un modulo specifico:**
 
@@ -77,7 +77,7 @@ Nella colonna **stato simbolo** della finestra **moduli** vengono visualizzati i
 
 1. Nel menu di scelta rapida selezionare o deselezionare **carica sempre automaticamente**. Le modifiche diventano effettive nella successiva sessione di debug.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interruzione dell'esecuzione](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

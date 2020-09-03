@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592425"
 ---
 # <a name="xml-document-properties-properties-window"></a>Proprietà del documento XML, Finestra Proprietà
@@ -22,13 +22,13 @@ Nella finestra **Proprietà** vengono fornite informazioni di base sul documento
 > [!NOTE]
 > Tutte le proprietà del documento XML vengono salvate nella soluzione. Di conseguenza, non sarà necessario immettere nuovamente tali valori alla successiva apertura della soluzione.
 
-**Codifica**
+**Encoding**
 
 La codifica dei caratteri per il file. Modificando questa proprietà si modifica anche l'attributo della codifica nella dichiarazione XML e viceversa. La nuova codifica viene utilizzata per codificare il file quando si salva il file.
 
 **Input**
 
-Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio **XML** > **avviare XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia ( **..** .).
+Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio, **XML**  >  **Start XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia (**..**.).
 
 Questa proprietà è visibile solo quando un file XSLT è aperto nell'editor.
 
@@ -36,7 +36,7 @@ Questa proprietà è visibile solo quando un file XSLT è aperto nell'editor.
 
 Il file che viene generato durante la trasformazione di un documento XML.
 
-Se non si specifica un file, viene generato un nome file predefinito basato sull'attributo `method` sull'elemento `xsl:output`, che determina l'estensione del file. Il file predefinito si trova nella directory temporanea dell'utente corrente.
+Se non viene specificato alcun file, viene generato un nome file predefinito in base all' `method` attributo dell' `xsl:output` elemento, che determina l'estensione del file. Il file predefinito si trova nella directory temporanea dell'utente corrente.
 
 **Schemi**
 
@@ -46,7 +46,7 @@ Gli schemi da usare per la convalida. Il pulsante consente di aprire la finestra
 
 **StyleSheet**
 
-Il file XSLT utilizzato per trasformare il documento quando vengono utilizzati i comandi **Avvia XSLT debug** e **Avvia XSLT senza debug** . Se questo campo è vuoto, l'editor utilizzerà il valore fornito nell'`xml-stylesheet` istruzione di elaborazione del documento oppure verrà richiesto di specificare un nome file.
+Il file XSLT utilizzato per trasformare il documento quando vengono utilizzati i comandi **Avvia XSLT debug** e **Avvia XSLT senza debug** . Se questo campo è vuoto, l'editor utilizzerà il valore specificato nell' `xml-stylesheet` istruzione di elaborazione del documento oppure verrà richiesto di specificare un nome file.
 
 Quando si modifica un file XSLT, questa proprietà può essere usata per specificare che è necessario usare un foglio di stile diverso quando si seleziona il comando **Avvia il debug XSLT** o **Avvia XSLT senza debug** . Questa operazione può essere eseguita, ad esempio, quando si modifica un foglio di stile incluso in un foglio di stile padre.
 

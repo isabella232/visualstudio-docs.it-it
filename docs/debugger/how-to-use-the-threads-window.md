@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348652"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procedura dettagliata: eseguire il debug di un'app multithread usando la finestra thread (C#, Visual Basic, C++)
@@ -62,7 +62,7 @@ Creare il progetto di app multithread seguente da usare in questa esercitazione:
 
    Digitare quindi un nome come *MyThreadWalkthroughApp* e fare clic su **OK**.
 
-   Fare clic su **OK**.
+   Selezionare **OK**.
    ::: moniker-end
 
    Verrà visualizzato un nuovo progetto console. Una volta creato il progetto, viene visualizzato un file di origine. A seconda della lingua scelta, il file di origine potrebbe essere denominato *Program.cs*, *MyThreadWalkthroughApp. cpp*o *Module1. vb*.
@@ -168,7 +168,7 @@ Oltre ai **flag**, Rimuovi **flag**e Rimuovi **flag di tutti i thread**, il menu
 - **Rinominare**, che consente di modificare il nome del thread.
 - [Blocca e sblocca](#bkmk_freeze) i comandi.
 
-## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Blocca e sblocca l'esecuzione del thread
+## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> Blocca e sblocca l'esecuzione del thread
 
 È possibile bloccare e sbloccare, oppure sospendere e riprendere, i thread per controllare l'ordine in cui i thread eseguono il lavoro. Il blocco e lo sblocco dei thread possono aiutare a risolvere i problemi di concorrenza, ad esempio deadlock e race condition.
 
@@ -207,6 +207,6 @@ Con il marcatore del thread nel codice sorgente, è possibile passare solo a thr
 
 A questo punto sono state apprese le nozioni di base per il debug di app multithread. È possibile osservare, contrassegnare e annotare e bloccare e sbloccare i thread utilizzando la finestra **thread** , l'elenco **thread** nella barra degli strumenti **posizione di debug** o i marcatori di thread nell'editor del codice sorgente.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: Passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md)

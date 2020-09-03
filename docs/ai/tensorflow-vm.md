@@ -12,10 +12,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80638760"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Eseguire il training di un modello TensorFlow nel cloud
@@ -52,7 +52,7 @@ Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for
 
    ![Aprire il progetto](media/tensorflow-local/open-project.png)
 
-   ![Apertura della soluzione](media/tensorflow-local/open-solution.png)
+   ![Aprire la soluzione](media/tensorflow-local/open-solution.png)
 
 ## <a name="add-azure-remote-vm"></a>Aggiungere una macchina virtuale remota di Azure
 
@@ -69,9 +69,9 @@ Nella finestra di invio:
 
 - Nell'elenco **Usa cluster** selezionare la macchina virtuale remota (con prefisso "rm:") a cui inviare il processo.
 
-- Immettere un **Nome lavoro**.
+- Immettere un **nome di processo**.
 
-- Fare clic su **Submit**.
+- Fare clic su **Submit** (Invia).
 
 ## <a name="check-status-of-job"></a>Controllare lo stato del processo
 Per visualizzare lo stato e i dettagli dei processi, espandere la macchina virtuale a cui è stato inviato il processo in **Esplora server**. Fare doppio clic su **Processi**.

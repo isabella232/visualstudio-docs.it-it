@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1edb7ceae1ba187b01b92d64ca33d41d83364e72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662377"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opzioni, Editor di testo, Base (Visual Basic)
@@ -50,7 +50,7 @@ La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della ca
 
   **Abilita modalità struttura** Quando si apre un file nell'editor di codice, è possibile visualizzare il documento in modalità struttura. Per altre informazioni, vedere [Struttura](../../ide/outlining.md). Quando questa opzione è selezionata, la funzionalità di struttura viene attivata all'apertura di un file.
 
-  **Inserimento automatico di membri Interface e MustOverride** Quando si esegue il commit di un'istruzione `Implements` o di un'istruzione `Inherits` per una classe, l'editor di testo inserisce i prototipi per i membri che devono essere implementati o sottoposti a override, rispettivamente.
+  **Inserimento automatico di membri Interface e MustOverride** Quando si esegue il commit di un' `Implements` istruzione o `Inherits` di un'istruzione per una classe, l'editor di testo inserisce i prototipi per i membri che devono essere implementati o sottoposti a override, rispettivamente.
 
   **Mostra separatori di riga routine** L'editor di testo indica l'ambito visivo delle procedure. Viene tracciata una linea nei file di origine con estensione vb del progetto nelle posizioni indicate nella tabella seguente:
 
@@ -62,7 +62,7 @@ La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della ca
 
  **Abilita suggerimenti** per la correzione degli errori L'editor di testo può suggerire soluzioni agli errori comuni e consentire di selezionare la correzione appropriata, che verrà quindi applicata al codice.
 
- **Abilita evidenziazione di riferimenti e parole chiave** L'editor di testo può evidenziare tutte le istanze di un simbolo o tutte le parole chiave in una clausola, ad esempio `If..Then`, `While...End While` o `Try...Catch...Finally`. È possibile spostarsi tra le parole chiave o i riferimenti evidenziati premendo CTRL+MAIUSC+freccia GIÙ o CTRL+MAIUSC+freccia SU.
+ **Abilita evidenziazione di riferimenti e parole chiave** L'editor di testo può evidenziare tutte le istanze di un simbolo o tutte le parole chiave in una clausola `If..Then` , ad esempio, `While...End While` o `Try...Catch...Finally` . È possibile spostarsi tra le parole chiave o i riferimenti evidenziati premendo CTRL+MAIUSC+freccia GIÙ o CTRL+MAIUSC+freccia SU.
 
 ## <a name="see-also"></a>Vedere anche
  [Generale, ambiente, opzioni della finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md) [, editor di testo, tutti i linguaggi, schede](../../ide/reference/options-text-editor-all-languages-tabs.md)

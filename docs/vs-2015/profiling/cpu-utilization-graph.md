@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180497"
 ---
 # <a name="cpu-utilization-graph"></a>Grafico Utilizzo CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il grafico di utilizzo della CPU visualizza il livello di utilizzo in un'app nel tempo. L'asse X rappresenta la durata della traccia e l'asse Y rappresenta il numero di core logici nel sistema. Il grafico non indica quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene utilizzato un solo core logico.  
+Il grafico di utilizzo della CPU visualizza il livello di utilizzo in un'app nel tempo. L'asse X rappresenta la durata della traccia e l'asse Y rappresenta il numero di core logici nel sistema. Il grafico non indica quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene usato un solo core logico.  
   
 ## <a name="cpu-utilization-graph-colors"></a>Colori del grafico di utilizzo della CPU  
   
@@ -36,5 +36,5 @@ Il grafico di utilizzo della CPU visualizza il livello di utilizzo in un'app nel
 - Il colore bianco indica la disponibilità di core logici non usati nel sistema. Tali core sono disponibili per il processo se è possibile trovare altre opportunità di parallelismo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Utilizzo](../profiling/utilization-view.md)   
- [Utilizzo medio della CPU](../profiling/average-cpu-utilization.md)
+ [Visualizzazione utilizzo](../profiling/utilization-view.md)   
+ [Utilizzo CPU medio](../profiling/average-cpu-utilization.md)

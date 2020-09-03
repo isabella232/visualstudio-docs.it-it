@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507989"
 ---
 # <a name="first-look-at-profiling-tools"></a>Presentazione degli strumenti di profilatura
@@ -89,7 +89,7 @@ Quando si seleziona uno dei collegamenti a freccia, viene fornita una visualizza
 
 Se invece si fa clic sul collegamento a sinistra nella visualizzazione **Utilizzo memoria**, la visualizzazione dell'heap è organizzata in base al numero di oggetti. Gli oggetti di un tipo particolare il cui numero è aumentato maggiormente appaiono in cima all'elenco (ordinati in base alla colonna **Diff. conteggio**).
 
-## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a>Compilazioni di rilascio del profilo senza il debugger
+## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Compilazioni di rilascio del profilo senza il debugger
 
 Gli strumenti di profilatura come Utilizzo CPU e Utilizzo memoria possono essere usati con il debugger (vedere le sezioni precedenti) oppure è possibile eseguire gli strumenti di profilatura per la relazione finale con il profiler delle prestazioni, progettato per l'analisi delle build di **rilascio**. Nel profiler delle prestazioni è possibile raccogliere informazioni di diagnostica durante l'esecuzione dell'applicazione e quindi esaminare le informazioni raccolte dopo l'interruzione dell'applicazione. Per altre informazioni sui diversi approcci, vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Nel profiler delle prestazioni sono disponibili anche strumenti aggiuntivi come lo [strumento di allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md) .
 
@@ -202,34 +202,34 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 ::: moniker range=">=vs-2019"
 |Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[PerfTips](../profiling/perftips.md)|Sì|Sì|sì|
-|[Utilizzo CPU](../profiling/cpu-usage.md)|Sì|Sì|sì|
-|[Utilizzo memoria](../profiling/memory-usage.md)|Sì|Sì|sì|
-|[Allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)|Sì (solo .NET)|Sì|sì|
-|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|Sì|sì|no|
-|[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì|sì|no|
-|[Visualizzatore eventi](../profiling/events-viewer.md)|Sì|Sì|sì|
-|[.NET Async](../profiling/analyze-async.md)|Sì (solo .NET)|Sì|sì|
-|[Database](../profiling/analyze-database.md)|Sì (solo .NET Core)|no|Sì (solo ASP.NET Core)|
-|[Esplora prestazioni](../profiling/performance-explorer.md)|no|no|no|
+|[PerfTips](../profiling/perftips.md)|sì|sì|sì|
+|[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
+|[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
+|[Allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)|Sì (solo .NET)|sì|sì|
+|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|No|
+|[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|
+|[Visualizzatore eventi](../profiling/events-viewer.md)|sì|sì|sì|
+|[.NET Async](../profiling/analyze-async.md)|Sì (solo .NET)|sì|sì|
+|[Database](../profiling/analyze-database.md)|Sì (solo .NET Core)|No|Sì (solo ASP.NET Core)|
+|[Esplora prestazioni](../profiling/performance-explorer.md)|No|No|No|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 |Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Utilizzo CPU](../profiling/cpu-usage.md)|Sì|Sì|Sì|
-|[Utilizzo memoria](../profiling/memory-usage.md)|Sì|Sì|Sì|
-|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|Sì|sì|no|
-|[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì|sì|no|
+|[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
+|[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
+|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|No|
+|[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|
-|[Esplora prestazioni](../profiling/performance-explorer.md)|sì|no|sì|
+|[Esplora prestazioni](../profiling/performance-explorer.md)|sì|No|sì|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
-|[Utilizzo rete](../profiling/network-usage.md)|no|sì|no|
-|[Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md)|no|Sì per HTML, no per XAML|no|
-|[Memoria JavaScript](../profiling/javascript-memory.md)|no|Sì per HTML, no per XAML|no|
+|[Utilizzo rete](../profiling/network-usage.md)|No|sì|No|
+|[Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md)|No|Sì per HTML, no per XAML|No|
+|[Memoria JavaScript](../profiling/javascript-memory.md)|No|Sì per HTML, no per XAML|No|
 ::: moniker-end
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug in Visual Studio](../debugger/debugger-feature-tour.md)

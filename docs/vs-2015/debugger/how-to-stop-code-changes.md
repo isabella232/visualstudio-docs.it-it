@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Arrestare le modifiche al codice | Microsoft Docs'
+title: 'Procedura: arrestare le modifiche al codice | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690051"
 ---
-# <a name="how-to-stop-code-changes"></a>Procedura: Arrestare le modifiche al codice
+# <a name="how-to-stop-code-changes"></a>Procedura: interrompere l'applicazione di modifiche al codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Modifica e continuazione è possibile scegliere di interrompere l'applicazione delle modifiche al codice.  

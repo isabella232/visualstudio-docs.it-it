@@ -9,10 +9,10 @@ ms.topic: conceptual
 robots: noindex, nofollow
 description: Informazioni su come usare gli account Microsoft e le identità Azure Active Directory connesse
 ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87805611"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Come usare le identità connesse nelle sottoscrizioni di Visual Studio
@@ -24,7 +24,7 @@ Le organizzazioni si spostano sempre più in identità basate su Azure AD per of
 Se l'amministratore connette le identità di MSA e Azure AD, si riceverà un messaggio di posta elettronica che informa di iniziare ad accedere alla sottoscrizione di Visual Studio con l'identità del Azure AD anziché il servizio MSA. 
 
 ## <a name="how-to-access-benefits-using-azure-ad-identities"></a>Come accedere ai vantaggi usando identità Azure AD
-Dopo che l'amministratore ha connesso il servizio MSA alla propria identità di Azure AD, è necessario accedere al portale per gli abbonati all'indirizzo https://my.visualstudio.com con l'identità del Azure ad per accedere ai vantaggi che si basano su Azure ad.  incluse le seguenti:
+Dopo che l'amministratore ha connesso il servizio MSA alla propria identità di Azure AD, è necessario accedere al portale per gli abbonati all'indirizzo https://my.visualstudio.com con l'identità del Azure ad per accedere ai vantaggi che si basano su Azure ad.  Sono inclusi:
 - IDE di Visual Studio
 - Azure DevOps
 - Credito individuale per Azure DevTest
