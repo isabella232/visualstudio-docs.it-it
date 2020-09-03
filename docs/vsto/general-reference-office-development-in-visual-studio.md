@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551509"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Riferimenti generali (sviluppo per Office in Visual Studio)
@@ -27,7 +27,7 @@ ms.locfileid: "69551509"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Contenuto della sezione
-- [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
+- [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
 
  Elenca gli assembly di interoperabilità primari disponibili per l'installazione con Office e fornisce una breve descrizione di ognuno di essi.
 
@@ -39,16 +39,16 @@ ms.locfileid: "69551509"
 
  Descrive in che modo vengono usati i manifesti di distribuzione per le soluzioni Office.
 
-- [Guida di riferimento &#40;all'interfaccia utente sviluppo per Office in Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Guida di riferimento all'interfaccia utente &#40;sviluppo per Office in Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
  Vengono elencati gli argomenti che illustrano le opzioni visualizzate in varie finestre di dialogo, finestre e altre interfacce utente.
 
-- [Messaggi &#40;di errore sviluppo per Office in Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Messaggi di errore &#40;sviluppo per Office in Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
  Elenca gli argomenti che illustrano i messaggi di errore per i progetti di Office.
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Introduzione &#40;allo sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Introduzione &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
  Vengono forniti collegamenti alle informazioni sull'installazione, i modelli di progetto, gli assembly di interoperabilità primari di Office e sulle novità dello sviluppo per Office.
 

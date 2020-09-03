@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532041"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilizzo memoria senza debug
@@ -34,7 +34,7 @@ ms.locfileid: "85532041"
   
   Questo argomento descrive come usare lo strumento Utilizzo memoria per analizzare un'app XAML universale di Windows. Se si vuole analizzare l'uso della memoria nelle app universali di Windows che usano JavaScript e HTML, vedere [Analizzare l'utilizzo della memoria (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>Avviare una sessione di diagnostica utilizzo memoria  
+## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Avviare una sessione di diagnostica utilizzo memoria  
   
 1. Aprire un progetto universale di Windows C# in Visual Studio.  
   
@@ -44,7 +44,7 @@ ms.locfileid: "85532041"
   
      ![Avviare una sessione diagnostica di Utilizzo memoria](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a>Monitorare l'utilizzo della memoria  
+## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> Monitorare l'utilizzo della memoria  
  Oltre a usare lo strumento **Utilizzo memoria** per generare rapporti dettagliati con cui trovare e correggere errori, è possibile usarlo anche per studiare gli effetti in tempo reale sulla memoria di uno scenario che si sta sviluppando attivamente.  
   
  Quando si avvia una sessione di diagnostica, l'app viene avviata e nella finestra **Strumenti di diagnostica** viene visualizzato un grafico della sequenza temporale dell'uso della memoria dell'app.  
@@ -63,7 +63,7 @@ ms.locfileid: "85532041"
   
  Per raccogliere snapshot, avvia una nuova sessione di diagnostica. Scegliere **Crea snapshot** quando si vogliono acquisire i dati di memoria. Per generare un rapporto, scegliere **Arresta**.  
   
-## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a>Pagina Panoramica utilizzo memoria  
+## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> Pagina Panoramica utilizzo memoria  
  Una volta completata la raccolta dei dati, lo strumento Utilizzo memoria arresta l'app e visualizza un report con informazioni generali.  
   
  ![Pagina delle informazioni generali dello strumento Utilizzo memoria](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
@@ -112,13 +112,13 @@ ms.locfileid: "85532041"
   
  ![Opzioni di Ordina e filtra](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
-#### <a name="filter"></a><a name="BKMK_Filter"></a>Filtro  
+#### <a name="filter"></a><a name="BKMK_Filter"></a> Filtro  
  Immettere una stringa nella casella **Filtro** per limitare la visualizzazione dell'albero ai tipi che contengono il testo specificato. Il filtro non fa distinzione tra maiuscole e minuscole e riconosce la stringa specificata in ogni parte dei nomi di tipo.  
   
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> Comprimi oggetti piccoli  
  Quando questo filtro è applicato, i tipi per cui l'impostazione **Dimensione (byte)** è minore dello 0,5% della dimensione totale della memoria dello snapshot vengono nascosti nell'elenco **Heap gestito**.  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>Just My Code  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> Just My Code  
  Il filtro **Just My Code** nasconde la maggior parte delle istanze generate da codice esterno. I tipi esterni sono di proprietà del sistema operativo o di componenti .NET Framework oppure sono generati dal compilatore.  
   
 ## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a> Rapporti dettagli degli snapshot  
@@ -135,7 +135,7 @@ ms.locfileid: "85532041"
   
  ![Albero Heap gestito](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |-|-|  
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|  
 |**Numero**|Numero di istanze di oggetto del tipo. Il numero è sempre 1 per un'istanza.|  
@@ -154,7 +154,7 @@ ms.locfileid: "85532041"
   
  ![Albero Oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |-|-|  
 |**Tipo di oggetto / Istanza**|Nome dell'istanza di tipo o di oggetto.|  
 |**Dimensioni (byte)**|Per un tipo, dimensione di tutte le istanze del tipo, esclusa la dimensione degli oggetti contenuti nel tipo.<br /><br /> Per un'istanza, dimensione dell'oggetto, esclusa la dimensione degli oggetti contenuti nell'oggetto.|  
@@ -176,7 +176,7 @@ ms.locfileid: "85532041"
   
  Si noti che le colonne **Conteggio**, **Dimensione (byte)** e **Dimensione inclusiva (byte)** sono state compresse nell'immagine.  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |-|-|  
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|  
 |**Numero**|Numero di istanze di un tipo nello snapshot principale. **Count** è sempre 1 per un'istanza.|  
@@ -196,7 +196,7 @@ ms.locfileid: "85532041"
   
  ![Albero Oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |-|-|  
 |**Tipo di oggetto / Istanza**|Nome dell'istanza di tipo o di oggetto.|  
 |**Dimensioni (byte)**|Per un'istanza, dimensione dell'oggetto nello snapshot principale, esclusa la dimensione degli oggetti contenuti nell'istanza.<br /><br /> Per un tipo, dimensione totale di tutte le istanze del tipo nello snapshot principale, esclusa la dimensione degli oggetti contenuti nell'istanza.|  

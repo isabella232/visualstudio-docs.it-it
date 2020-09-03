@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277837"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C++
@@ -24,13 +24,13 @@ In Visual Studio, è possibile usare frammenti di codice per aggiungere il codic
 
 ## <a name="insert-a-code-snippet"></a>Inserire un frammento di codice
 
-Per inserire un frammento di codice, aprire un file di codice (*cpp* o *h),* fare clic in un punto qualsiasi all'interno del file ed eseguire una delle operazioni seguenti:
+Per inserire un frammento di codice, aprire un file di codice C++ (*. cpp* o *. h*), fare clic in un punto qualsiasi all'interno del file ed eseguire una delle operazioni seguenti:
 
 - Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Inserisci frammento di codice**
 
 - Nel menu**Modifica/IntelliSense** selezionare **Inserisci frammento di codice**
 
-- Utilizzare i tasti di scelta rapida: **Ctrl**+**K**+**X**
+- Usare i tasti di scelta rapida: **CTRL** + **K** + **X**
 
 Verrà visualizzato un elenco di opzioni che iniziano con **#if**. Quando si seleziona **#if** il codice seguente viene aggiunto al file:
 
@@ -40,19 +40,19 @@ Verrà visualizzato un elenco di opzioni che iniziano con **#if**. Quando si sel
 #endif // 0
 ```
 
-È quindi possibile sostituire **lo 0** con la condizione corretta.
+È quindi possibile sostituire **0** con la condizione corretta.
 
 ## <a name="use-a-code-snippet-to-surround-selected-code"></a>Usare un frammento di codice per racchiudere il codice selezionato
 
 Per usare un frammento di codice per racchiudere il codice selezionato, selezionare una riga (o più righe) ed eseguire una delle operazioni seguenti:
 
-- Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Circonda con**
+- Fare clic con il pulsante destro del mouse per ottenere il menu di scelta rapida e selezionare **Racchiudi tra**
 
-- Dal menu **Modifica** > **IntelliSense,** selezionare **Circonda con**
+- Dal menu **modifica**  >  **IntelliSense** selezionare **Racchiudi tra**
 
-- Utilizzando una tastiera, premere: **Ctrl**+**K**+**S**
+- Utilizzando una tastiera, premere: **CTRL** + **K** + **S**
 
-Selezionare **#if**. Verrà visualizzata una schermata analoga alla seguente:
+Selezionare **#if**. L'output dovrebbe essere simile al seguente:
 
 ```cpp
 #if 0
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-Il **for** frammento `for` for fornisce un ciclo in cui `size_t`la condizione è basata sulla lunghezza (in ) di un oggetto.
+Il frammento **for** fornisce un `for` ciclo in cui la condizione è basata sulla lunghezza (in `size_t` ) di un oggetto.
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -133,7 +133,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-Il frammento **forr** fornisce un ciclo inverso `for` in cui la condizione è basata sulla lunghezza (in numeri interi) di un oggetto.
+Il frammento **Forr** fornisce un `for` ciclo inverso in cui la condizione è basata sulla lunghezza (in numeri interi) di un oggetto.
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>Frammento distruttore (~)
 
-Il frammento di**~** distruttore ( ) mostra un comportamento diverso in contesti diversi. Se si inserisce questo frammento di codice all'interno di una classe, esso fornisce un distruttore per quella classe. Si consideri, ad esempio, il codice seguente:
+Il frammento distruttore ( **~** ) Mostra un comportamento diverso in contesti diversi. Se si inserisce questo frammento di codice all'interno di una classe, esso fornisce un distruttore per quella classe. Si consideri, ad esempio, il codice seguente:
 
 ```cpp
 class SomeClass {

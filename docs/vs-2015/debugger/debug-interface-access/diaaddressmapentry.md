@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67c0a3e297f3eebfbf44724e64c4989d9bb979fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164348"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Descrive una voce in una mappa di indirizzo.  
+Descrive una voce in una mappa indirizzi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,26 +36,26 @@ struct DiaAddressMapEntry { 
   
 ## <a name="elements"></a>Elementi  
  `rva`  
- Un indirizzo virtuale relativo (RVA) nell'immagine A.  
+ Un indirizzo RVA (relativo Virtual Address) nell'immagine A.  
   
  `rvaTo`  
- L'indirizzo virtuale relativo `rva` viene mappato a nella figura B.  
+ Viene eseguito il mapping dell'indirizzo virtuale relativo `rva` a nell'immagine B.  
   
-## <a name="remarks"></a>Note  
- Una mappa indirizzo fornisce una conversione dal layout di un'immagine (A) in un'altra (B). Matrice di `DiaAddressMapEntry` strutture vengono ordinate `rva` definisce un mapping di indirizzi.  
+## <a name="remarks"></a>Osservazioni  
+ Una mappa indirizzi fornisce una traduzione da un layout immagine (A) a un altro (B). Una matrice di `DiaAddressMapEntry` strutture ordinate in base a `rva` definisce una mappa degli indirizzi.  
   
- Per convertire un indirizzo `addrA`, nell'immagine A un indirizzo, `addrB`, nella figura B, eseguire la procedura seguente:  
+ Per tradurre un indirizzo,, `addrA` nell'immagine a in un indirizzo, `addrB` , nell'immagine B, seguire questa procedura:  
   
-1. Eseguire la ricerca della mappa per la voce `e`, con la più grande `rva` minore o uguale a `addrA`.  
+1. Eseguire una ricerca nella mappa per la voce, `e` , con il più grande `rva` minore o uguale a `addrA` .  
   
 2. Impostare `delta = addrA – e.rva`.  
   
 3. Impostare `addrB = e.rvaTo + delta`.  
   
-   Matrice di `DiaAddressMapEntry` strutture viene passato per il [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (metodo).  
+   Una matrice di `DiaAddressMapEntry` strutture viene passata al metodo [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: dia2.h  
+ Intestazione: dia2. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   

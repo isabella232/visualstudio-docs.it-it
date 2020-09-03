@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c04ef8f015b081e29891d7439b783e3851376210
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531548"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Tasti di scelta rapida (visualizzatore della Guida)
@@ -76,17 +76,17 @@ ms.locfileid: "85531548"
 |Contenuto, Indice, Cerca e Preferiti|CTRL+P|Stampare l'argomento specificato.|
 |Contenuto, Indice, Cerca e Preferiti|CTRL+F2|Visualizzare un'anteprima di stampa dell'argomento specificato.|
 |Contenuto, Indice, Cerca e Preferiti|CTRL+clic|Aprire l'argomento in una nuova scheda.|
-|Cerca|ESC|Deselezionare la casella di testo di ricerca.|
+|Ricerca|ESC|Deselezionare la casella di testo di ricerca.|
 |Opzioni di visualizzazione|ALT+T|Passare lo stato attivo all'elenco **Dimensione testo**.|
 |Opzioni di visualizzazione|ALT+S|Passare lo stato attivo all'elenco **Numero massimo di risultati di ricerca**.|
 |Opzioni di visualizzazione|ALT+H|Passare lo stato attivo all'elenco **Numero massimo di voci della cronologia salvate**.|
 |Opzioni di visualizzazione|ALT+E|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1** se è abilitata.|
 |Opzioni di visualizzazione|ALT+O|Selezionare o deselezionare la casella di controllo **Connetti per recuperare il contenuto e verificare la disponibilità di aggiornamenti**.|
-|Trova|Immettere|Passare lo stato attivo all'elemento successivo.|
-|Trova|MAIUSC+INVIO|Passare lo stato attivo all'elemento precedente.|
-|Trova|ESC|Nascondere la casella di testo **Trova**.|
-|Barra di stato|ALT+E|Aprire la finestra di dialogo **Errore** se la barra di stato indica che si è verificato un errore.|
-|Barra di stato|ALT+U|Scaricare il contenuto se la barra di stato indica che sono disponibili aggiornamenti|
+|Find|Immettere|Passare lo stato attivo all'elemento successivo.|
+|Find|MAIUSC+INVIO|Passare lo stato attivo all'elemento precedente.|
+|Find|ESC|Nascondere la casella di testo **Trova**.|
+|Status bar|ALT+E|Aprire la finestra di dialogo **Errore** se la barra di stato indica che si è verificato un errore.|
+|Status bar|ALT+U|Scaricare il contenuto se la barra di stato indica che sono disponibili aggiornamenti|
 
  **Gestione finestre**
 

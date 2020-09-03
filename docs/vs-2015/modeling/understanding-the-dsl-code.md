@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e8d82712a2fb8e30b13f9f369bf87be5292c199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659494"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
@@ -31,17 +31,17 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 
  Premere F5 e, se non si ha familiarità con questo modello di soluzione, fare delle prove. Si noti in particolare che, per creare le porte, è necessario trascinare uno strumento porta su un componente e che è possibile collegare le porte.
 
- ![Componenti e porte interconnesse](../modeling/media/componentsample.png "ComponentSample")
+ ![Progetti e porte interconnesse](../modeling/media/componentsample.png "ComponentSample")
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struttura della soluzione DSL
- Il progetto **DSL** definisce l'API per il linguaggio DSL. Il progetto **DslPackage** definisce il modo in cui si integra con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È anche possibile aggiungere i propri progetti, che possono anche contenere codice generato dal modello.
+ Il progetto **DSL** definisce l'API per il linguaggio DSL. Il progetto **DslPackage** definisce il modo in cui si integra con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . È anche possibile aggiungere i propri progetti, che possono anche contenere codice generato dal modello.
 
 ### <a name="the-code-directories"></a>Directory di codice
  La maggior parte del codice in ognuno di questi progetti viene generata da **Dsl\DslDefinition.DSL**. Il codice generato si trova nella cartella del **codice generato** . Per visualizzare un file generato, fare clic su **[+]** accanto al file con **estensione TT** di generazione.
 
  È consigliabile esaminare il codice generato per poter comprendere il linguaggio DSL. Per visualizzare i file generati, espandere i file *.tt in Esplora soluzioni.
 
- I file con estensione TT \* contengono pochissimi codici di generazione. Invece, usano le direttive `<#include>` per includere i file dei modelli condivisi. I file condivisi si trovano in **\Programmi\microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
+ I \* file con estensione tt contengono pochissimi codici di generazione. Invece, usano le direttive `<#include>` per includere i file dei modelli condivisi. I file condivisi si trovano in **\Programmi\microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  Quando si aggiunge il proprio codice programma alla soluzione DSL, aggiungerlo in un file separato, al di fuori della cartella del codice generato. Potrebbe essere necessario creare una cartella di **codice personalizzata** . Quando si aggiunge un nuovo file di codice a una cartella personalizzata, ricordare di correggere lo spazio dei nomi nello scheletro del codice iniziale.
 
@@ -60,7 +60,7 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 ## <a name="generated-files-in-dsl"></a>File generati in DSL
  I file generati seguenti vengono visualizzati nel progetto **DSL** .
 
- @No__t_1 *dslutente*
+ *Dslutente*`Schema.xsd`
 
  Schema per i file contenenti le istanze del linguaggio DSL. Questo file viene copiato nella directory di compilazione (**bin**). Quando si installa il linguaggio DSL, è possibile copiare questo file in **\Programmi\microsoft Visual Studio 11.0 \ Xml\Schemas** in modo che i file di modello possano essere convalidati. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
@@ -72,7 +72,7 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 
  Nell'esempio di soluzione componente, uno dei generatori di connessione si chiama ConnectionBuilder, ma è una coincidenza, perché la relazione di dominio è denominata Connection.
 
- La relazione viene creata nel metodo `Builder.Connect()` *relazione* . La versione predefinita verifica che gli elementi modello di origine e di destinazione siano accettabili e quindi crea l'istanza della relazione. Esempio:
+ La relazione viene creata nel metodo di *relazione* `Builder.Connect()` . La versione predefinita verifica che gli elementi modello di origine e di destinazione siano accettabili e quindi crea l'istanza della relazione. Ad esempio:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -124,7 +124,7 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 
 - Metodi del gestore EGP (Element Group Prototype). Questi sono necessari se l'utente può *unire* (aggiungere) un altro elemento nelle istanze di questa classe. L'utente in genere esegue questa operazione trascinando da uno strumento elemento o da un'altra forma oppure incollando.
 
-   Nel linguaggio DSL di esempio, è possibile unire una porta di input o una porta di output in un componente. Anche componenti e commenti possono essere uniti nel modello. Alla classe
+   Nel linguaggio DSL di esempio, è possibile unire una porta di input o una porta di output in un componente. Anche componenti e commenti possono essere uniti nel modello. Il valore di
 
    I metodi del gestore EGP nella classe dei componenti consentono a un componente di accettare le porte, ma non i commenti. Il gestore EGP nella classe radice del modello accetta commenti e componenti, ma non le porte.
 
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Per personalizzare questo file, modificare il file `.tt`.
 
 > [!WARNING]
-> Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e assicurarsi che la proprietà **Includi in VSIX** sia `True`.
+> Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e assicurarsi che la proprietà **Includi in VSIX** sia `True` .
 
  Questo file controlla come il linguaggio DSL viene incluso nel pacchetto in un'estensione VSIX (Visual Studio Integration Extension). Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).
 

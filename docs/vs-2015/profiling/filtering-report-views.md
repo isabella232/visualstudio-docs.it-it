@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164063"
 ---
 # <a name="filtering-report-views"></a>Filtrare visualizzazioni rapporto
@@ -37,11 +37,11 @@ ms.locfileid: "68164063"
   
 2. Per ogni clausola da aggiungere a un filtro, selezionare o immettere i valori nei campi seguenti di una riga.  
   
-    |Campo|DESCRIZIONE|  
+    |Campo|Descrizione|  
     |-----------|-----------------|  
     |**And/Or**|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|  
     |**Campo**|Selezionare il campo del report da usare nella clausola del filtro dall'elenco di campi dati visualizzato.|  
-    |**Operator**|Selezionare l'operatore che specifica la relazione da impostare nella clausola tra il campo e il valore.<br /><br /> =    Uguale a<br /><br /> <>  Non uguale a<br /><br /> <    Minore di<br /><br /> >    Maggiore di<br /><br /> <=  Minore o uguale a<br /><br /> >=  Maggiore o uguale a|  
+    |**Operatore**|Selezionare l'operatore che specifica la relazione da impostare nella clausola tra il campo e il valore.<br /><br /> =    Uguale a<br /><br /> <>  Non uguale a<br /><br /> <    Minore di<br /><br /> >    Maggiore di<br /><br /> <=  Minore o uguale a<br /><br /> >=  Maggiore o uguale a|  
     |**Valore**|Selezionare o immettere il valore da cercare. Per alcuni campi è presente l'elenco dei valori disponibili.|  
   
 3. 
@@ -95,4 +95,4 @@ ms.locfileid: "68164063"
 2. Specificare il percorso e il nome del file del filtro (VSPF) da salvare.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Personalizzazione delle visualizzazioni dei rapporti degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
+ [Personalizzazione delle visualizzazioni dei report sugli strumenti delle prestazioni](../profiling/customizing-performance-tools-report-views.md)

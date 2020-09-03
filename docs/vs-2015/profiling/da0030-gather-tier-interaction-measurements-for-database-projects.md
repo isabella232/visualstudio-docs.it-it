@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di database | Microsoft Docs'
+title: 'DA0030: Raccogli misurazioni di interazione tra livelli per i progetti di database | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152632"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id regola | DA0030 |  
-| Categoria | Utilizzo degli strumenti di profilatura |  
+ID regola | DA0030 |  
+| Categoria | Utilizzo Strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | La raccolta di misurazioni per le applicazioni multilivello consente di comprendere i modelli di utilizzo di database e i dati chiave accederà ritardi. Usare l'opzione Abilita profilatura interazione tra livelli per ripetere la profilatura dell'applicazione.|  
+| Messaggio | La raccolta delle misure di interazione per le applicazioni multilivello consente di comprendere i modelli di utilizzo del database e i ritardi di accesso ai dati principali. Usare l'opzione Abilita profilatura interazione tra livelli per ripetere la profilatura dell'applicazione.|  
 | Tipo di regola | Informazioni |  
   
 ## <a name="cause"></a>Causa  

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660861"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
@@ -26,7 +26,7 @@ ms.locfileid: "72660861"
 
 Contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice. Lo strumento restituisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  Abilitare l'analisi codice consente di abilitare o disabilitare l'analisi del codice per il progetto.
 
  Le regole di progettazione abilitano o disabilitano le regole di progettazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.

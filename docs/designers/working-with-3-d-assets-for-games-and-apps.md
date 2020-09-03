@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589799"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Usare risorse 3D per giochi e app
@@ -46,17 +46,17 @@ Gli shader sono piccoli programmi specifici di dominio che vengono eseguiti nell
 È possibile usare la progettazione shader di Visual Studio, ovvero uno strumento di progettazione shader basato su grafico, per creare effetti visivi personalizzati senza conoscere la programmazione HLSL.
 
 > [!NOTE]
-> Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](/windows/win32/directx). Per altre informazioni su come eseguire il debug di un'app basata su DirectX, vedere Diagnostica grafica (debug di [grafica DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
+> Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](/windows/win32/directx). Per altre informazioni su come eseguire il debug di un'app basata su DirectX, vedere [diagnostica della grafica (debug della grafica DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilità tra versioni DirectX
 
-Visual Studio usa DirectX per eseguire il rendering degli asset 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per ulteriori informazioni su WARP, vedere [la guida di Windows Advanced Rasterization Platform (WARP).](/windows/win32/direct3darticles/directx-warp)
+Visual Studio usa DirectX per eseguire il rendering degli asset 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per ulteriori informazioni su WARP, vedere la [Guida di Windows Advanced rasterizzation Platform (Warp)](/windows/win32/direct3darticles/directx-warp).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Operazioni con texture e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare Visual Studio per lavorare con immagini e trame.|
+|[Uso di trame e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare Visual Studio per lavorare con immagini e trame.|
 |[Utilizzo di modelli 3D](../designers/working-with-3-d-models.md)|Viene descritto come usare Visual Studio per lavorare con i modelli 3D.|
-|[Lavorare con gli shader](../designers/working-with-shaders.md)|Viene descritto come usare la progettazione shader di Visual Studio per creare e modificare gli effetti di shader personalizzati.|
-|[Uso delle risorse 3D nel gioco o nell'app](../designers/using-3-d-assets-in-your-game-or-app.md)|Viene descritto come usare le risorse, quali risorse sono state create con l'Editor immagini, l'Editor modello o la finestra di progettazione shader nel gioco o nell'app.|
+|[Utilizzo degli shader](../designers/working-with-shaders.md)|Viene descritto come usare la progettazione shader di Visual Studio per creare e modificare gli effetti di shader personalizzati.|
+|[Uso di asset 3D nel gioco o nell'app](../designers/using-3-d-assets-in-your-game-or-app.md)|Viene descritto come usare le risorse, quali risorse sono state create con l'Editor immagini, l'Editor modello o la finestra di progettazione shader nel gioco o nell'app.|

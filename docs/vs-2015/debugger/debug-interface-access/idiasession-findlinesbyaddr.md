@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4658075c61a06c3616a4d9a42e9d3e37c0166e98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165541"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera le righe che contengono un indirizzo specificato in un modulo specificato.  
+Recupera le righe in un modulo specificato che contengono un indirizzo specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,22 +38,22 @@ HRESULT findLinesByAddr ( 
   
 #### <a name="parameters"></a>Parametri  
  `seg`  
- [in] Specifica il componente di sezione dell'indirizzo specifico.  
+ in Specifica il componente della sezione dell'indirizzo specifico.  
   
  `offset`  
- [in] Specifica il componente di offset di indirizzo specifico.  
+ in Specifica il componente di offset dell'indirizzo specifico.  
   
  `length`  
- [in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.  
+ in Specifica il numero di byte dell'intervallo di indirizzi da coprire con questa query.  
   
  `ppResult`  
- [out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.  
+ out Restituisce un oggetto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) che contiene un elenco di tutti i numeri di riga che coprono l'intervallo di indirizzi specificato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga inclusi in una funzione usando l'indirizzo e la lunghezza della funzione.  
+ In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga contenuti in una funzione utilizzando l'indirizzo e la lunghezza della funzione.  
   
 ```cpp#  
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,  

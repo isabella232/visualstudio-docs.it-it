@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugCoreServer3::CreateInstanceInServer . Documenti Microsoft
+title: 'IDebugCoreServer3:: CreateInstanceInServer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733012"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
@@ -49,19 +49,19 @@ int CreateInstanceInServer(
 
 ## <a name="parameters"></a>Parametri
 `szDll`\
-[in] Percorso della dll che implementa il CLSID specificato nel `clsidObject` parametro. Se si `NULL`tratta di `CoCreateInstance` , viene chiamata la funzione di COM.
+in Percorso della dll che implementa il CLSID specificato nel `clsidObject` parametro. Se è `NULL` , `CoCreateInstance` viene chiamata la funzione com.
 
 `wLangId`\
-[in] Impostazioni locali del motore di debug. Può essere 0 se il [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) metodo non deve essere chiamato.
+in Impostazioni locali del motore di debug. Può essere 0 se il metodo [setlocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) non deve essere chiamato.
 
 `clsidObject`\
-[in] CLSID del motore di debug da creare.
+in CLSID del motore di debug da creare.
 
 `riid`\
-[in] ID di interfaccia dell'interfaccia specifica da recuperare dall'oggetto classe.
+in ID di interfaccia dell'interfaccia specifica da recuperare dall'oggetto classe.
 
 `ppvObject`\
-[fuori] `IUnknown` dall'oggetto di cui è stata creata un'istanza. Eseguire il cast o il marshalling di questo oggetto nell'interfaccia desiderata.
+[out] `IUnknown` interfaccia dall'oggetto di cui è stata creata un'istanza. Eseguire il cast o il marshalling di questo oggetto nell'interfaccia desiderata.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

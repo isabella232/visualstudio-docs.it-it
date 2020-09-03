@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress . Documenti Microsoft
+title: 'IDebugSymbolProvider:: GetNextAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719203"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Ottiene l'indirizzo di debug che segue un determinato indirizzo di debug in un metodo.
+Ottiene l'indirizzo di debug che segue un indirizzo di debug specificato in un metodo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ int GetNextAddress( 
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-[in] Dato l'indirizzo di debug.
+in Indirizzo di debug specificato.
 
 `fStatementOnly`\
-[in] Se TRUE, limita gli indirizzi di debug a una singola istruzione.
+in Se TRUE, limita gli indirizzi di debug a una singola istruzione.
 
 `ppAddress`\
-[fuori] Restituisce l'indirizzo di debug successivo.
+out Restituisce l'indirizzo di debug successivo.
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce `HRESULT`un valore , in genere S_OK.
+ Restituisce un `HRESULT` S_OK valido, in genere.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6114a31701e5abc4714f315b4e4f1ecf022c401c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163818"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa interfaccia viene utilizzata dal motore di debug (DE) per inviare gli eventi di debug al gestore di sessione di debug (SDM).  
+Questa interfaccia viene utilizzata dal motore di debug (DE) per inviare eventi di debug a gestione debug sessione (SDM).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,24 +34,24 @@ IDebugEventCallback2 : IUnknown
  [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] implementa questa interfaccia per ricevere eventi da un motore di debug.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Un motore di debug riceve in genere questa interfaccia quando chiama il modello SDM [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md), o [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Un motore di debug invia eventi per il modello SDM chiamando [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+ In genere, un motore di debug riceve questa interfaccia quando SDM chiama [alleghi](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Connetti](../../../extensibility/debugger/reference/idebugengine2-attach.md)o [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Un motore di debug invia eventi a SDM chiamando l' [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi di `IDebugEventCallback2`.  
+ La tabella seguente illustra i metodi di `IDebugEventCallback2` .  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Invia una notifica di eventi per il modello SDM di debug.|  
+|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Invia la notifica di eventi di debug a SDM.|  
   
-## <a name="remarks"></a>Note  
- Sebbene [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) e [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) specificare che richiedono un `IDebugEventCallback2` interfaccia, non è questo il caso e il puntatore a interfaccia sarà sempre un valore null. In alternativa, è necessario usare il motore di debug la `IDebugEventCallback2` interfaccia ricevuto nella chiamata a [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md), o [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
+## <a name="remarks"></a>Osservazioni  
+ Sebbene [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) e [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) specifichino che accettano un' `IDebugEventCallback2` interfaccia, questo non è il caso e il puntatore di interfaccia sarà sempre un valore null. Al contrario, il motore di debug deve usare l' `IDebugEventCallback2` interfaccia ricevuta nella chiamata a [alleghi](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Connetti](../../../extensibility/debugger/reference/idebugengine2-attach.md)o [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
- Se un pacchetto implementa [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) nel codice gestito, è consigliabile che <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> essere richiamato su varie interfacce che vengono passate al [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+ Se un pacchetto implementa [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) nel codice gestito, è consigliabile <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> richiamarlo sulle varie interfacce passate all' [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

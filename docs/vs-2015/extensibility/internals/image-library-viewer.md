@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f6423c569fd1909539de9460ab3dcde0bcf753c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532028"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
@@ -55,7 +55,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 </ImageManifest>  
 ```  
   
- **Simboli**  
+ **Symbols**  
   
  Per facilitare la leggibilità e la manutenzione, il manifesto dell'immagine può utilizzare i simboli per i valori di attributo. I simboli sono definiti come segue:  
   
@@ -68,7 +68,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 </Symbols>  
 ```  
   
-|**Sottoelemento**|**Definizione**|  
+|**Sottoelemento**|**Definition**|  
 |-|-|  
 |Importa|Importa i simboli del file manifesto specificato per l'utilizzo nel manifesto corrente.|  
 |Guid|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione del GUID.|  
@@ -92,7 +92,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 |ManifestFolder|Cartella contenente il file manifesto|  
 |MyDocuments|Percorso completo della cartella documenti dell'utente corrente|  
 |ProgramFiles|Valore della variabile di ambiente% ProgramFiles%|  
-|System|Cartella Windows\System32|  
+|Sistema|Cartella Windows\System32|  
 |WinDir|Valore della variabile di ambiente% WinDir%|  
   
  **Immagine**  
@@ -108,7 +108,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 </Image>  
 ```  
     
-|**Attributo**|**Definizione**|  
+|**Attributo**|**Definition**|  
 |-|-|
 |Guid|Necessaria Parte GUID del moniker dell'immagine|  
 |ID|Necessaria Parte relativa all'ID del moniker dell'immagine|  
@@ -124,16 +124,16 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
  </Source>  
 ```  
   
-|**Attributo**|**Definizione**|  
+|**Attributo**|**Definition**|  
 |-|-|  
 |Uri|Necessaria URI che definisce dove è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> : [URI di pacchetto](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) che usa l'autorità Application:///<br /><br /> -Riferimento a una risorsa componente assoluto<br /><br /> : Percorso di un file che contiene una risorsa nativa|  
-|Background|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> - *Light*: l'origine può essere usata su uno sfondo chiaro.<br /><br /> - *Dark*: l'origine può essere usata su uno sfondo scuro.<br /><br /> - *HighContrast*: l'origine può essere usata in qualsiasi background in modalità contrasto elevato.<br /><br /> - *HighContrastLight*: l'origine può essere usata in uno sfondo chiaro in modalità contrasto elevato.<br /><br /> -*HighContrastDark*: l'origine può essere usata su uno sfondo scuro in modalità contrasto elevato.<br /><br /> Se l'attributo **background** viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se **background** è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **background** viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|  
+|Sfondo|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> - *Light*: l'origine può essere usata su uno sfondo chiaro.<br /><br /> - *Dark*: l'origine può essere usata su uno sfondo scuro.<br /><br /> - *HighContrast*: l'origine può essere usata in qualsiasi background in modalità contrasto elevato.<br /><br /> - *HighContrastLight*: l'origine può essere usata in uno sfondo chiaro in modalità contrasto elevato.<br /><br /> -*HighContrastDark*: l'origine può essere usata su uno sfondo scuro in modalità contrasto elevato.<br /><br /> Se l'attributo **background** viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se **background** è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **background** viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|  
   
  Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi seguenti:  
   
-|**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
+|**elemento**|**Attributi (tutti necessari)**|**Definition**|  
 |-|-|-|  
-|\<Size>|valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|  
+|\<Size>|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|  
 |\<SizeRange>|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|  
 |\<Dimensions>|Larghezza, altezza|L'origine verrà usata per le immagini della larghezza e dell'altezza specificate (in unità dispositivo).|  
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà usata per le immagini dalla larghezza/altezza minima alla larghezza/altezza massima (in unità dispositivo), inclusi.|  
@@ -144,7 +144,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 <NativeResource Type="type" ID="int" />  
 ```  
   
-|**Attributo**|**Definizione**|  
+|**Attributo**|**Definition**|  
 |-|-|  
 |Type|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|  
 |ID|Necessaria Parte relativa all'ID integer della risorsa nativa|  
@@ -160,7 +160,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
  </ImageList>  
 ```  
   
-|**Attributo**|**Definizione**|  
+|**Attributo**|**Definition**|  
 |-|-|  
 |Guid|Necessaria Parte GUID del moniker dell'immagine|  
 |ID|Necessaria Parte relativa all'ID del moniker dell'immagine|  

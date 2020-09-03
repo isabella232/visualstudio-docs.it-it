@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589864"
 ---
 # <a name="work-with-textures-and-images"></a>Usare trame e immagini
@@ -52,5 +52,5 @@ Le mappe di cubo possono contenere tipi diversi di dati, ad esempio colori o nor
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini con trame e immagini.|
-|[Esempi dell'editor di immagini](../designers/how-to-create-a-basic-texture.md)|Contiene i collegamenti ad alcuni argomenti che descrivono come usare l'editor di immagini per eseguire attività comuni di elaborazione delle immagini.|
+|[Editor di immagini](../designers/image-editor.md)|Descrive come usare l'editor di immagini con trame e immagini.|
+|[Esempi di editor di immagini](../designers/how-to-create-a-basic-texture.md)|Contiene i collegamenti ad alcuni argomenti che descrivono come usare l'editor di immagini per eseguire attività comuni di elaborazione delle immagini.|

@@ -11,22 +11,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 749b7a8da2cbdf8377e7f2e1fcb39787e2f42303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149066"
 ---
-# <a name="mchildren-field"></a>Campo m_children
+# <a name="m_children-field"></a>Campo m_children
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-L'elenco delle attività figlio che sono registrati con questa attività.  
+Elenco di attività figlio registrate con questa attività.  
   
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché non è possibile accedere a questo membro interno dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,10 +34,10 @@ L'elenco delle attività figlio che sono registrati con questa attività.
 .field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
 ```  
   
-## <a name="remarks"></a>Note  
- Durante l'esecuzione dell'attività, solo il thread che esegue l'attività deve accedere a questa matrice.  
+## <a name="remarks"></a>Osservazioni  
+ Mentre l'attività è in esecuzione, solo il thread che esegue l'attività deve accedere a questa matrice.  
   
- Se l'attività è stata completata, altri thread possa accedere a questo campo, purché non aggiunge nulla ad esso né rimuovere qualsiasi elemento da quest'ultimo.  
+ Se l'attività viene completata, gli altri thread possono accedere a questo campo purché non aggiungano nulla o non rimuovano nulla.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Classe ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

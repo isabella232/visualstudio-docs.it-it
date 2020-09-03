@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85279880"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
@@ -94,9 +94,9 @@ Quando si esegue lo zoom indietro delle sequenze temporali nella parte superiore
 
 Per trovare ciò che si sta cercando, filtrare il report sull'utilizzo della GPU in base ai nomi dei processi, agli ID dei thread e al nome dell'evento. È anche possibile scegliere la frequenza di aggiornamento dello schermo che determina le linee di vysnc. Se l'app usa l'interfaccia [ID3DUserDefinedAnnotation](/windows/desktop/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) per raggruppare i comandi di rendering, è anche possibile ordinare gli eventi gerarchicamente.
 
- Di seguito sono disponibili maggiori dettagli:
+ Di seguito sono riportate informazioni dettagliate:
 
-|Controllo filtro|Description|
+|Controllo filtro|Descrizione|
 |--------------------|-----------------|
 |**Processo**|Nome del processo a cui si è interessati. Tutti i processi che hanno utilizzato la GPU durante la sessione di diagnostica sono inclusi in questo elenco a discesa. Il colore associato al processo è il colore dell'attività del thread nelle sequenze temporali.|
 |**Thread**|ID del thread a cui si è interessati. In un'app multithread, queste informazioni consentono di isolare thread specifici che appartengono al processo a cui si è interessati. Gli eventi associati al thread selezionato sono evidenziati in ogni sequenza temporale.|

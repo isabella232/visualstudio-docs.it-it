@@ -15,16 +15,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196988"
 ---
 # <a name="createexpinstance-utility"></a>Utilità CreateExpInstance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Usare l'utilità CreateExpInstance per creare, reimpostare, o eliminare un'istanza sperimentale di Visual Studio. È possibile utilizzare l'istanza sperimentale per eseguire il debug e testare le estensioni di Visual Studio senza modificare il prodotto sottostante.  
+Usare l'utilità CreateExpInstance per creare, reimpostare o eliminare un'istanza sperimentale di Visual Studio. È possibile utilizzare l'istanza sperimentale di per eseguire il debug e il test di estensioni di Visual Studio senza modificare il prodotto sottostante.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -33,33 +33,33 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ```  
   
 #### <a name="parameters"></a>Parametri  
- / Creazione  
+ /Create  
  Crea l'istanza sperimentale.  
   
- / Reset  
- Elimina l'istanza sperimentale e quindi ne crea uno nuovo.  
+ /Reset  
+ Elimina l'istanza sperimentale e ne crea una nuova.  
   
  /Clean  
  Elimina l'istanza sperimentale.  
   
  /VSInstance  
- Il nome della directory che contiene l'istanza di Visual Studio di base da copiare.  
+ Nome della directory che contiene l'istanza di base di Visual Studio da copiare.  
   
  /RootSuffix  
- Suffisso da aggiungere al nome della directory istanza sperimentale.  
+ Suffisso da accodare al nome della directory dell'istanza sperimentale.  
   
-## <a name="remarks"></a>Note  
- Quando si lavora in un'estensione di Visual Studio, è possibile premere F5 per aprire l'istanza sperimentale predefinita e installare l'estensione corrente. Se non è disponibile alcuna istanza sperimentale, Visual Studio crea una con le impostazioni predefinite.  
+## <a name="remarks"></a>Osservazioni  
+ Quando si utilizza un'estensione di Visual Studio, è possibile premere F5 per aprire l'istanza sperimentale predefinita e installare l'estensione corrente. Se non è disponibile alcuna istanza sperimentale, Visual Studio ne crea una con le impostazioni predefinite.  
   
- Il percorso predefinito dell'istanza sperimentale dipende dal numero di versione di Visual Studio. Ad esempio, per Visual Studio 2015, il percorso è %localappdata%\Microsoft\VisualStudio\14.0Exp\ tutti i file nel percorso della directory sono considerati parte di tale istanza. Eventuali altre istanze sperimentali non verranno caricate da Visual Studio a meno che non viene modificato il nome della directory nel percorso predefinito.  
+ Il percorso predefinito dell'istanza sperimentale dipende dal numero di versione di Visual Studio. Per Visual Studio 2015, ad esempio, il percorso è%localappdata%\Microsoft\VisualStudio\14.0Exp\ tutti i file nel percorso della directory sono considerati parte di tale istanza. Eventuali istanze sperimentali aggiuntive non verranno caricate da Visual Studio, a meno che il nome della directory non venga modificato nel percorso predefinito.  
   
- Visual Studio non accedere Registro di sistema quando si apre l'istanza sperimentale. Questo comportamento differisce dalle versioni precedenti di Visual Studio, che è usata una versione sperimentale dell'hive del Registro di sistema.  
+ Visual Studio non accede al registro di sistema quando apre l'istanza sperimentale. Questo comportamento è diverso rispetto alle versioni precedenti di Visual Studio, che hanno usato una versione sperimentale dell'hive del registro di sistema.  
   
  L'utilità CreateExpInstance sostituisce l'utilità VsRegEx.  
   
- L'esempio seguente ripristina l'istanza sperimentale predefinita di Visual Studio.  
+ Nell'esempio seguente viene reimpostata l'istanza sperimentale predefinita di Visual Studio.  
   
- **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix Exp =**  
+ **CreateExpInstance.exe/Reset/VSInstance = 14.0/RootSuffix = Exp**  
   
 ## <a name="see-also"></a>Vedere anche  
- [Il rilascio di un prodotto](../../misc/releasing-a-visual-studio-integration-product.md)
+ [Rilascio di un prodotto](../../misc/releasing-a-visual-studio-integration-product.md)

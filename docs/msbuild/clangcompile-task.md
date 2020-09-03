@@ -18,15 +18,15 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: c1526fbd3c2c0822781f0e011999ddcb9c679170
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275471"
 ---
 # <a name="clangcompile-task"></a>Attività ClangCompile
 
-Esegue il wrapping dello strumento del compilatore di Microsoft C, clang.exe.
+Esegue il wrapping dello strumento compilatore Microsoft C++ clang.exe.
 
 ## <a name="parameters"></a>Parametri
 
@@ -51,7 +51,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**FunctionLevelLinking**|Parametro **bool** facoltativo.<br/><br/>Consente al compilatore di assemblare le singole funzioni sotto forma di funzioni incluse nel pacchetto (COMDAT). Impostazione necessaria per le operazioni di modifica e continuazione.<br/><br/>Usare `ffunction-sections`.|
 |**GccToolChain**|Parametro **stringa** facoltativo.<br/><br/>Percorso della cartella della catena di strumenti GCC.|
 |**GNUMode**|Parametro **bool** facoltativo.<br/><br/>|
-|**MSCompatibility**|Parametro **bool** facoltativo.<br/><br/>Abilitare la compatibilità completa di Microsoft C.|
+|**MSCompatibility**|Parametro **bool** facoltativo.<br/><br/>Abilita la compatibilità completa con Microsoft C++.|
 |**MSCompatibilityVersion**|Parametro **stringa** facoltativo.<br/><br/>Valore delimitato da punti che rappresenta il numero di versione del compilatore Microsoft da restituire in _MSC_VER (0 = non definito; impostazione predefinita).|
 |**MSExtensions**|Parametro **bool** facoltativo.<br/><br/>Accetta alcuni costrutti non standard supportati dal compilatore Microsoft.|
 |**MSCompilerVersion**|Parametro **stringa** facoltativo.<br/><br/>Numero di versione del compilatore Microsoft da restituire in _MSC_VER (0 = non definito; impostazione predefinita).|
@@ -61,8 +61,8 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**Ottimizzazione**|Parametro **stringa** facoltativo.<br/><br/>Specifica il livello di ottimizzazione per l'applicazione.<br/><br/>**Custom**: consente di personalizzare l'ottimizzazione.<br/>**Disabled**: disabilita l'ottimizzazione (usare `O0`).<br/>**MinSize**: ottimizza in base alla dimensione (usare `Os`).<br/>**MaxSpeed**: ottimizza in base alla velocità (usare `O2`).<br/>**Full**: ottimizzazioni onerose (usare `O3`).|
 |**PositionIndependentCode**|Parametro **bool** facoltativo.<br/><br/>Genera codice indipendente dalla posizione per l'uso in una libreria condivisa.|
 |**PrecompiledHeader**|Parametro **stringa** facoltativo.<br/><br/>Abilita la creazione o l'uso di un'intestazione precompilata durante la compilazione.|
-|**PrecompiledHeaderFile**|Parametro **stringa** facoltativo.<br/><br/>Specifica un nome di file di intestazione da usare come file di intestazione precompilato. Questo file verrà aggiunto anche a File di **inclusione forzata** durante la compilazione.|
-|**PrecompiledHeaderOutputFileDirectory**|Parametro **stringa** facoltativo.<br/><br/>Specifica la directory per l'intestazione precompilato generato. Questa directory verrà aggiunta anche alle directory di **inclusione aggiuntive** durante la compilazione.|
+|**PrecompiledHeaderFile**|Parametro **stringa** facoltativo.<br/><br/>Specifica un nome di file di intestazione da usare come file di intestazione precompilato. Questo file verrà aggiunto anche ai **file di inclusione forzata** durante la compilazione.|
+|**PrecompiledHeaderOutputFileDirectory**|Parametro **stringa** facoltativo.<br/><br/>Specifica la directory per l'intestazione precompilato generato. Questa directory verrà aggiunta anche a **directory di inclusione aggiuntive** durante la compilazione.|
 |**PrecompiledHeaderCompileAs**|Parametro **stringa** facoltativo.<br/><br/>Selezionare l'opzione del linguaggio di compilazione per il file di intestazione precompilato.<br/><br/>Usare `-x c-header`, `-x c++-header`.|
 |**PreprocessorDefinitions**|Parametro **string[]** facoltativo.<br/><br/>Definisce i simboli di pre-elaborazione per il file di origine.<br/><br/>Usare `-D`.|
 |**RuntimeLibrary**|Parametro **stringa** facoltativo.<br/><br/>Specifica la libreria di runtime per il collegamento.<br/><br/>Usare le opzioni `MSVC /MT`, `/MTd`, `/MD`, `/MDd`.<br/><br/>**MultiThreaded** fa in modo che l'applicazione usi la versione statica multithread della libreria di runtime.<br/>**MultiThreadedDebug** definisce _DEBUG e _MT. Fa inoltre in modo che il compilatore inserisca il nome della libreria LIBCMTD.lib nel file .obj affinché il linker utilizzi LIBCMTD.lib per risolvere i simboli esterni.<br/>**MultiThreadedDLL** fa in modo che l'applicazione usi la versione specifica per multithread e DLL della libreria di runtime. Definisce _MT e _DLL e fa inoltre in modo che il compilatore inserisca il nome della libreria MSVCRT.lib nel file con estensione obj.<br/>**MultiThreadedDebugDLL** definisce _DEBUG, _MT e _DLL e fa in modo che l'applicazione usi la versione specifica per multithread e DLL di debug della libreria di runtime. Fa inoltre in modo che il compilatore inserisca il nome della libreria MSVCRTD.lib nel file .obj.|
@@ -79,9 +79,9 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**UndefineAllPreprocessorDefinitions**|Parametro **bool** facoltativo.<br/><br/>Rimuove tutti i valori precedentemente definiti per il preprocessore.<br/><br/>Usare `-undef`.|
 |**UseMultiToolTask**|Parametro **bool** facoltativo.<br/><br/>Compilazione a più processori.|
 |**UseShortEnums**|Parametro **bool** facoltativo.<br/><br/>Il tipo enum usa solo il numero di byte richiesti dall'insieme di possibili valori di input.|
-|**Dettagliato**|Parametro **bool** facoltativo.<br/><br/>Visualizza i comandi da eseguire e usa l'output dettagliato.|
-|**WarningLevel**|Parametro **stringa** facoltativo.<br/><br/>Specifica il grado di severità del controllo effettuato dal compilatore per trovare gli errori del codice. Altri flag devono essere aggiunti direttamente `/w` `/Weverything`a **Opzioni aggiuntive** (se , ).<br/><br/>**TurnOffAllWarnings**, disabilita tutti gli avvisi del compilatore (usare `w`).<br/>**EnableAllWarnings**, abilita tutti gli avvisi, inclusi quelli disabilitati per impostazione predefinita (usare `Wall`).|
+|**Verbose**|Parametro **bool** facoltativo.<br/><br/>Visualizza i comandi da eseguire e usa l'output dettagliato.|
+|**WarningLevel**|Parametro **stringa** facoltativo.<br/><br/>Specifica il grado di severità del controllo effettuato dal compilatore per trovare gli errori del codice. È necessario aggiungere altri flag direttamente a **Opzioni aggiuntive** (se `/w` , `/Weverything` ).<br/><br/>**TurnOffAllWarnings**, disabilita tutti gli avvisi del compilatore (usare `w`).<br/>**EnableAllWarnings**, abilita tutti gli avvisi, inclusi quelli disabilitati per impostazione predefinita (usare `Wall`).|
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+[Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728883"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossibile connettersi al processo
@@ -46,7 +46,7 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 
 2. Nel Pannello di controllo fare doppio clic sull'icona **Strumenti di amministrazione**.
 
-3. Nella finestra Strumenti di amministrazione fare doppio clic su **Criteri di sicurezza locali**.
+3. Nella finestra strumenti di amministrazione fare doppio clic su **criteri di sicurezza locali**.
 
 4. Nella finestra Criteri di sicurezza locali selezionare **Criteri locali**.
 
@@ -55,7 +55,7 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 6. Nella finestra di dialogo **Accesso di rete: modello di condivisione e sicurezza per gli account locali** impostare la sicurezza locale su **Classico**, quindi scegliere **OK**.
 
     > [!CAUTION]
-    > L'impostazione del modello di sicurezza su Classico può determinare l'accesso imprevisto a file condivisi e componenti DCOM. In questo caso, un utente remoto può eseguire l'autenticazione con l'account utente locale anziché come Guest. Se un utente remoto corrisponde al nome utente e alla password, l'utente potrà accedere a qualsiasi cartella o oggetto DCOM che è stato condiviso. Se si usa questo modello di sicurezza, assicurarsi che tutti gli account utente nel computer dispongano di password complesse oppure configurare un'isola di rete isolata per il debug e i computer sottoposti a debug per impedire l'accesso non autorizzato.
+    >   L'impostazione del modello di sicurezza su Classico può determinare l'accesso imprevisto a file condivisi e componenti DCOM. In questo caso, un utente remoto può eseguire l'autenticazione con l'account utente locale anziché come Guest. Se un utente remoto corrisponde al nome utente e alla password, l'utente potrà accedere a qualsiasi cartella o oggetto DCOM che è stato condiviso. Se si usa questo modello di sicurezza, assicurarsi che tutti gli account utente nel computer dispongano di password complesse oppure configurare un'isola di rete isolata per il debug e i computer sottoposti a debug per impedire l'accesso non autorizzato.
 
 7. Chiudere tutte le finestre.
 

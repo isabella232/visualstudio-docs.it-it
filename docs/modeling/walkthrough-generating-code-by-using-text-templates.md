@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532060"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
@@ -408,7 +408,7 @@ Quando lo schema XML cambia, è possibile generare facilmente nuove classi. Il c
 
 Per rigenerare le classi quando viene modificato il file XML di esempio, fare clic su **trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** .
 
-## <a name="conclusion"></a>Conclusioni
+## <a name="conclusion"></a>Conclusione
 
 Questa procedura dettagliata illustra diverse tecniche e vantaggi della generazione del codice:
 

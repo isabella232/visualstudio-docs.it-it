@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState . Documenti Microsoft
+title: 'IDebugSymbolProviderDirect:: GetCurrentModulesState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719080"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-Recupera informazioni sul gruppo di simboli di cui il provider di simboli è membro.
+Recupera le informazioni sul gruppo di simboli di cui è membro il provider di simboli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ int GetCurrentModulesState(
 
 ## <a name="parameters"></a>Parametri
 `pState`\
-[fuori] Stato del gruppo di provider di simboli.
+out Stato del gruppo di provider di simboli.
 
 `count`\
-[fuori] Numero di moduli nel gruppo.
+out Numero di moduli nel gruppo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

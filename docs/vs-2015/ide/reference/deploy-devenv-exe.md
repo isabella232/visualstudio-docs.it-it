@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 620be9ea458d55a8c9610079b357cc9466a03f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660777"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
@@ -46,7 +46,7 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 
  Racchiudere le stringhe che includono spazi tra virgolette doppie.
 
- Le informazioni di riepilogo per le compilazioni, compresi gli errori, vengono visualizzate nella finestra **Comando** o in qualsiasi file di log specificato con l'opzione `/out`.
+ Le informazioni di riepilogo sulle compilazioni, compresi gli errori, possono essere visualizzate nella finestra **Comando** o in qualsiasi file di log specificato con l'opzione `/out`.
 
 ## <a name="example"></a>Esempio
  In questo esempio viene distribuito il progetto `CSharpConsoleApp` usando la configurazione della build del progetto `Release` all'interno della configurazione della soluzione `Release` di `MySolution`.
@@ -56,4 +56,4 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md) [/Project (devenv. exe)](../../ide/reference/project-devenv-exe.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md) [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+ [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md) [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 15
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3ebb18aaff78d9782b6210e25bcd697d21c8570
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660757"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
@@ -20,14 +20,14 @@ ms.locfileid: "72660757"
 
 I log dei test codificati dell'interfaccia utente filtrano e registrano informazioni importanti sulle esecuzioni dei test codificati dell'interfaccia utente.
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
 ## <a name="why-should-i-do-this"></a>Perché si deve eseguire questa operazione?
  I log sono presentati in un formato che consente il debug rapido degli errori.
 
-## <a name="how-do-i-do-this"></a>Quali operazioni si devono eseguire?
+## <a name="how-do-i-do-this"></a>Come deve procedere?
 
 ### <a name="step-1-enable-logging"></a>Passaggio 1: Abilitare la registrazione
  A seconda dello scenario in uso, abilitare la registrazione usando uno dei metodi seguenti.
@@ -36,7 +36,7 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
 
   - Aprire il file **QTAgent32_40.exe.config**.
 
-    Per impostazione predefinita, il file si trova in **\<drive>:\Programmi (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.
+    Per impostazione predefinita, il file si trova in ** \<drvie> : \Program Files (x86) \Microsoft Visual Studio 12.0 \ Common7\IDE**.
 
     Modificare il valore per EqtTraceLevel e impostarlo sul livello di log desiderato.
 
@@ -46,7 +46,7 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
 
   - Aprire il file **QTAgent32.exe.config**.
 
-    Per impostazione predefinita, il file si trova in **\<drive>:\Programmi (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.
+    Per impostazione predefinita, il file si trova in ** \<drvie> : \Program Files (x86) \Microsoft Visual Studio 12.0 \ Common7\IDE**.
 
     Modificare il valore di EqtTraceLevel e impostarlo sul livello di log desiderato.
 
@@ -67,11 +67,11 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Passaggio 2: eseguire il test codificato dell'interfaccia utente e visualizzare il log
  Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato le modifiche appropriate al file **QTAgent32.exe.config**, verrà visualizzato un collegamento di output nei risultati di Esplora test. I file di log vengono generati sia per i test con esito negativo, sia per quelli con esito positivo quando il livello di traccia è impostato su "dettagliato".
 
-1. Dal menu **TEST** scegliere **Windows**, quindi selezionare **Esplora test**.
+1. Scegliere **finestre** dal menu **test** , quindi selezionare **Esplora test**.
 
-2. Scegliere **Compila soluzione** dal menu **Compila**.
+2. Scegliere **Compila soluzione**dal menu **Compila** .
 
-3. In Esplora test selezionare il test codificato dell'interfaccia utente che si vuole eseguire, aprire il relativo menu di scelta rapida e quindi scegliere **Esegui test selezionati**.
+3. In Esplora test selezionare il test codificato dell'interfaccia utente che si vuole eseguire, aprire il menu di scelta rapida e quindi scegliere **Esegui test selezionati**.
 
      I test automatizzati verranno eseguiti e segnaleranno se sono stati superati o se hanno avuto esito negativo.
 
@@ -84,7 +84,7 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
 
      Verrà visualizzato l'output del test in cui è incluso un collegamento al log azioni.
 
-     ![Risultati e collegamenti di output da test codificato dell'interfaccia utente](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Risultati e collegamenti di output del test codificato dell'interfaccia utente](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")
 
 5. Scegliere il collegamento UITestActionLog.html.
 

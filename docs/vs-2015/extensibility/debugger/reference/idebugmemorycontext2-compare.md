@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Compare | Microsoft Docs
+title: 'IDebugMemoryContext2:: compare | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3eb48c324b5a1a918ab864c5eb4c4ca39eae41ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163436"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Confronta il contesto di memoria per ogni contesto nella matrice specificata nel modo indicato dai flag di confronto, la restituzione di un indice del primo contesto corrispondente.  
+Confronta il contesto di memoria con ogni contesto nella matrice specificata nel modo indicato dai flag di confronto, restituendo un indice del primo contesto corrispondente a.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,22 +47,22 @@ int Compare(
   
 #### <a name="parameters"></a>Parametri  
  `compare`  
- [in] Un valore compreso il [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) enumerazione che determina il tipo di confronto.  
+ in Valore dell'enumerazione [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) che determina il tipo di confronto.  
   
  `rgpMemoryContextSet`  
- [in] Una matrice di riferimenti per il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) oggetti da confrontare.  
+ in Matrice di riferimenti agli oggetti [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) da confrontare.  
   
  `dwMemoryContextSetLen`  
- [in] Il numero di contesti di `rgpMemoryContextSet` matrice.  
+ in Il numero di contesti nella `rgpMemoryContextSet` matrice.  
   
  `pdwMemoryContext`  
- [out] Restituisce l'indice del primo contesto di memoria che soddisfa il confronto.  
+ out Restituisce l'indice del primo contesto di memoria che soddisfa il confronto.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_COMPARE_CANNOT_COMPARE` se non è possibile confrontare i due contesti.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_COMPARE_CANNOT_COMPARE` se i due contesti non possono essere confrontati.  
   
-## <a name="remarks"></a>Note  
- Non dispone di un motore di debug (DE) supportare tutti i tipi di confronti, ma deve supportare almeno `CONTEXT_EQUAL`, `CONTEXT_LESS_THAN`, `CONTEXT_GREATER_THAN` e `CONTEXT_SAME_SCOPE`.  
+## <a name="remarks"></a>Osservazioni  
+ Un motore di debug (de) non deve supportare tutti i tipi di confronto, ma deve supportare almeno `CONTEXT_EQUAL` , `CONTEXT_LESS_THAN` `CONTEXT_GREATER_THAN` e `CONTEXT_SAME_SCOPE` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   

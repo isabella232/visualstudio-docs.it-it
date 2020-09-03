@@ -1,5 +1,5 @@
 ---
-title: Proprietà PromptForSaveOnCreation (modelli di Visual Studio) Documenti Microsoft
+title: Elemento PromptForSaveOnCreation (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701785"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelli di Visual Studio)
 
-Specifica se all'utente viene richiesto di specificare un percorso di salvataggio del progetto tramite la finestra di dialogo **Nuovo progetto** durante la creazione di un progetto. Se questo elemento `true`è impostato su , all'utente viene richiesto di specificare un percorso di salvataggio. Se `false`, non viene richiesto, ovvero viene creato un progetto temporaneo.
+Specifica se all'utente viene richiesto di specificare un percorso di salvataggio del progetto tramite la finestra di dialogo **nuovo progetto** durante la creazione di un progetto. Se questo elemento è impostato su `true` , all'utente viene richiesto di specificare un percorso di salvataggio. Se `false` , non viene richiesto, ovvero viene creato un progetto temporaneo.
 
 ```xml
 \<VSTemplate>
@@ -40,11 +40,11 @@ Specifica se all'utente viene richiesto di specificare un percorso di salvataggi
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- No.
+### <a name="attributes"></a>Attributes
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -55,15 +55,15 @@ Specifica se all'utente viene richiesto di specificare un percorso di salvataggi
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve `true` `false`essere `true` o , che indica che all'utente verrà richiesto di specificare un percorso di salvataggio durante la creazione di un nuovo progetto.
+ Il testo deve essere `true` o `false` , a `true` indicare che all'utente verrà richiesto di specificare un percorso di salvataggio quando si crea un nuovo progetto.
 
 ## <a name="remarks"></a>Osservazioni
  `PromptForSaveOnCreation` è un elemento facoltativo. Il valore predefinito è `false`.
 
- I progetti temporanei sono progetti che è possibile creare e modificare senza salvare il contenuto di tale progetto su disco.
+ I progetti temporanei sono progetti che è possibile creare e modificare senza salvare il contenuto del progetto su disco.
 
 ## <a name="example"></a>Esempio
- Nell'esempio riportato `PromptForSaveOnCreation` di `false`seguito viene impostato il valore di uguale a , che specifica di consentire la creazione del progetto come progetto temporaneo.
+ Nell'esempio seguente il valore di `PromptForSaveOnCreation` è uguale a `false` , che specifica di consentire la creazione del progetto come progetto temporaneo.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,5 +92,5 @@ Specifica se all'utente viene richiesto di specificare un percorso di salvataggi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

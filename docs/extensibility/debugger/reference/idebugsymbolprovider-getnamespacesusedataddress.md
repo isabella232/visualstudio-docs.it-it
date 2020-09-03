@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress . Documenti Microsoft
+title: 'IDebugSymbolProvider:: GetNamespacesUsedAtAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719217"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
@@ -43,16 +43,16 @@ int GetNamespacesUsedAtAddress(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-[in] Indirizzo di debug.
+in Indirizzo di debug.
 
 `ppEnum`\
-[fuori] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumeratore per gli spazi dei nomi.
+out Restituisce un enumeratore [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) per gli spazi dei nomi.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Possono essere presenti diversi spazi dei nomi associati a un determinato `using` indirizzo di debug, ad esempio spazi dei nomi annidati o più istruzioni.
+ È possibile che siano presenti diversi spazi dei nomi associati a un determinato indirizzo di debug, ad esempio spazi dei nomi annidati o più `using` istruzioni.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

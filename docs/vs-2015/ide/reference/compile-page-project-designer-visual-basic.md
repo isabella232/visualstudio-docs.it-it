@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db830e04388b7465c941e2fdf069b49f98951a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660830"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
@@ -82,7 +82,7 @@ Usare la pagina **Compilazione** in Creazione progetti per specificare le istruz
 
   Quando si crea un progetto, l'impostazione **Option Strict** nella **pagina Compilazione** viene impostata sul valore dell'impostazione **Option Strict** nella finestra di dialogo **Opzioni**. Per visualizzare o modificare l'impostazione in questa finestra di dialogo scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, quindi fare clic su **Impostazioni predefinite di Visual Basic**. L'impostazione predefinita iniziale di **Option Strict** in **Impostazioni predefinite di Visual Basic** è **Off**.
 
-  **Singoli avvisi di Option Strict.** La sezione **Configurazioni avvisi** della **pagina Compilazione** include impostazioni corrispondenti alle tre condizioni che causano un errore in fase di compilazione quando `Option Strict` è On. Queste impostazioni sono le seguenti:
+  **Opzione Strict Single Warnings.** La sezione **Configurazioni avvisi** della **pagina Compilazione** include impostazioni corrispondenti alle tre condizioni che causano un errore in fase di compilazione quando `Option Strict` è On. Queste impostazioni sono le seguenti:
 
 - **Conversione implicita**
 
@@ -92,7 +92,7 @@ Usare la pagina **Compilazione** in Creazione progetti per specificare le istruz
 
   Quando si imposta **Option Strict** su **On**, tutte e tre queste impostazioni di configurazione degli avvisi vengono impostate su **Errore**. Quando si imposta **Option Strict** su **Off**, tutte e tre le impostazioni vengono impostate su **Nessuno**.
 
-  È possibile modificare singolarmente ogni impostazione di configurazione degli avvisi su **Nessuno**, **Avviso** o **Errore**. Se tutte e tre le impostazioni di configurazione degli avvisi vengono impostate su **Errore**, nella casella `Option strict` viene visualizzato `On`. Se tutte e tre sono impostate su **Nessuno**, nella casella viene visualizzato `Off`. Per qualsiasi altra combinazione di queste impostazioni, viene visualizzato **(personalizzato)** .
+  È possibile modificare singolarmente ogni impostazione di configurazione degli avvisi su **Nessuno**, **Avviso** o **Errore**. Se tutte e tre le impostazioni di configurazione degli avvisi sono impostate su **errore**, `On` viene visualizzato nella `Option strict` casella. Se tutti e tre sono impostati su **None**, `Off` viene visualizzato in questa casella. Per qualsiasi altra combinazione di queste impostazioni, viene visualizzato **(personalizzato)**.
 
   **Option Compare** Specifica il tipo di confronto di stringhe da usare. Selezionare **Binario** per indicare al compilatore di usare confronti di stringhe binari con distinzione tra maiuscole e minuscole. Selezionare **Testo** per usare confronti di stringhe di testo specifici delle impostazioni locali senza distinzione tra maiuscole e minuscole.
 

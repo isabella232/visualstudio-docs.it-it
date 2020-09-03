@@ -16,10 +16,10 @@ ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: def581f547db19a8db4cebc4d63739ff09bb5fab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531664"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizzare l'utilizzo della CPU in un'app universale di Windows
@@ -47,7 +47,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "
   
 4. Compilare l'app e provarla. L'app è abbastanza semplice per illustrare alcuni casi comuni di analisi dei dati di utilizzo della CPU.  
   
-## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a>Raccogli dati di utilizzo della CPU  
+## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> Raccogli dati di utilizzo della CPU  
  ![Eseguire una build di rilascio dell'app nel simulatore](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. In Visual Studio impostare la destinazione della distribuzione su **Simulatore** e la configurazione della soluzione su **Release**.  
@@ -92,7 +92,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "
   
  Questo metodo viene completato in circa un secondo in meno rispetto a `GetMaxNumberButton_Click`, ma il significato delle voci dell'albero delle chiamate è meno ovvio.  
   
-### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a>Albero delle chiamate di utilizzo CPU  
+### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a> Albero delle chiamate di utilizzo CPU  
  Per iniziare a comprendere le informazioni dell'albero delle chiamate, selezionare di nuovo il segmento `GetMaxNumberButton_Click` e analizzare i dettagli dell'albero.  
   
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate  
@@ -105,7 +105,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "
 |![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|  
 |![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|I nodi figlio di un metodo contengono i dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Codice esterno  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> Codice esterno  
  Il codice esterno è costituito da funzioni nei componenti del sistema e del framework che vengono eseguite dal codice scritto. Include funzioni che avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e forniscono altri servizi di basso livello all'app. Nella maggior parte dei casi, non si è interessati al codice esterno, quindi l'albero delle chiamate di utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[codice esterno]** .  
   
  Se vuoi visualizzare i percorsi delle chiamate del codice esterno, scegli **Mostra codice esterno** nell'elenco **Visualizzazione filtro** e quindi scegli **Applica**.  
@@ -156,7 +156,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "
   
      Crea una nuova sessione nell'hub Prestazioni e diagnostica e aggiungi sia lo strumento Velocità di risposta interfaccia utente XAML sia lo strumento Utilizzo CPU. Esegui lo scenario di raccolta. Probabilmente il report non conterrà informazioni non note, ma sarà possibile osservare le notevoli differenze nel grafico della sequenza temporale di **Utilizzo thread UI** per i due metodi. Con le app complesse reali, la combinazione di strumenti può essere molto utile.  
   
-## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a>MainPage. XAML  
+## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a> MainPage. XAML  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "
   
 ```  
   
-## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a>MainPage.xaml.cs  
+## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

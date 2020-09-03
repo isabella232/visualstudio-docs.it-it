@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Fakes: generare & codice di compilazione; convenzioni di denominazione'
+title: 'Microsoft Fakes: genera codice di compilazione &; convenzioni di denominazione'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589331"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
@@ -44,7 +44,7 @@ L'esempio seguente illustra i tipi stub definiti in *FileSystem.dll*:
 
 Per limitare i tipi per i quali è necessario generare stub, è possibile impostare filtri nel file *FAKES*. È possibile aggiungere un numero illimitato di elementi Clear, Add e Remove nell'elemento StubGeneration per creare l'elenco dei tipi selezionati.
 
-Ad esempio, il file *.fakes* seguente genera stub per i tipi negli spazi dei nomi System e System.IO, ma esclude qualsiasi tipo contenente "Handle" nel sistema:
+Il file con *estensione Fakes* seguente, ad esempio, genera stub per i tipi negli spazi dei nomi System e System.io, ma esclude qualsiasi tipo che contiene "handle" nel sistema:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -102,7 +102,7 @@ Per impostazione predefinita, vengono generati tipi stub per tutte le classi non
 
 ### <a name="internal-types"></a>Tipi interni
 
-Il generatore di codice Fakes genera tipi shim e stub per i tipi visibili nell'assembly Fakes generato. Per fare in modo che i tipi interni di un assembly sottoposto a shim siano visibili per Fakes e l'assembly di test, aggiungere attributi <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> al codice dell'assembly sottoposto a shim per dare visibilità all'assembly Fakes generato e all'assembly di test. Ad esempio:
+Il generatore di codice Fakes genera tipi shim e stub per i tipi visibili nell'assembly Fakes generato. Per fare in modo che i tipi interni di un assembly sottoposto a shim siano visibili per Fakes e l'assembly di test, aggiungere attributi <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> al codice dell'assembly sottoposto a shim per dare visibilità all'assembly Fakes generato e all'assembly di test. Ecco un esempio:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -126,7 +126,7 @@ Se l'assembly sottoposto a shim ha un nome sicuro e si vuole accedere ai tipi in
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Se l'assembly sottoposto a shim ha un nome sicuro, il framework Fakes firma automaticamente in modo sicuro l'assembly Fakes generato. È necessario firmare in modo sicuro l'assembly di test. Vedere [Assembly con nome sicuro](/dotnet/framework/app-domains/strong-named-assemblies).
+Se l'assembly sottoposto a shim ha un nome sicuro, il framework Fakes firma automaticamente in modo sicuro l'assembly Fakes generato. È necessario firmare in modo sicuro l'assembly di test. Vedere [assembly con nome sicuro](/dotnet/framework/app-domains/strong-named-assemblies).
 
 Il framework Fakes usa la stessa chiave per firmare tutti gli assembly generati. È pertanto possibile usare questo frammento di codice come punto di partenza per aggiungere l'attributo **InternalsVisibleTo** per l'assembly Fakes al codice dell'assembly sottoposto a shim.
 
@@ -134,7 +134,7 @@ Il framework Fakes usa la stessa chiave per firmare tutti gli assembly generati.
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-È possibile specificare una chiave pubblica diversa per l'assembly Fakes, ad esempio una chiave creata per l'assembly con shipati, specificando `Fakes` \\ `Compilation` il percorso completo del file *snk* che contiene la chiave alternativa come valore `KeyFile` dell'attributo nell'elemento del file *.fakes.* Ad esempio:
+È possibile specificare una chiave pubblica diversa per l'assembly Fakes, ad esempio una chiave creata per l'assembly sottoposto a shim, specificando il percorso completo del file con *estensione snk* che contiene la chiave alternativa come valore dell' `KeyFile` attributo nell' `Fakes` \\ `Compilation` elemento del file *. Fakes* . Ad esempio:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -161,7 +161,7 @@ La compilazione di assembly Fakes può comportare un aumento significativo del t
 
 Dai progetti di unit test aggiungere un riferimento agli assembly Fakes compilati che si trovano in FakesAssemblies nella cartella del progetto.
 
-1. Creare una nuova libreria di classi con la versione del runtime .NET corrispondente ai progetti di test. Verrà usato il nome Fakes.Prebuild. Rimuovere il file *di class1.cs* dal progetto, non necessario.
+1. Creare una nuova libreria di classi con la versione del runtime .NET corrispondente ai progetti di test. Verrà usato il nome Fakes.Prebuild. Rimuovere il file *Class1.cs* dal progetto, non necessario.
 
 2. Aggiungere un riferimento a tutti gli assembly di sistema e di terze parti per i quali è necessario Fakes.
 
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Convenzioni di denominazione dei tipi shim e stub
 
-**Spazi dei nomi**
+**Namespaces** (Spazi dei nomi)
 
 - Viene aggiunto il suffisso .Fakes allo spazio dei nomi.
 
@@ -235,7 +235,7 @@ attribute of the Assembly element in the .fakes:
 
 |Se il metodo è un/una…|Esempio|Nome del metodo aggiunto|
 |-|-|-|
-|Un **costruttore**|`.ctor`|`Constructor`|
+|Un **Costruttore**|`.ctor`|`Constructor`|
 |**Costruttore** statico|`.cctor`|`StaticConstructor`|
 |**Funzione di accesso** con nome di metodo composto da due parti separate da "_" (ad esempio getter proprietà)|*kind_name* (caso comune, ma non applicato da ECMA)|*NameKind*, dove entrambe le parti iniziano con una maiuscola e la loro posizione è stata scambiata|
 ||Getter della proprietà `Prop`|`PropGet`|
@@ -249,22 +249,22 @@ attribute of the Assembly element in the .fakes:
 > [!NOTE]
 > - **Getter e setter di indicizzatori** vengono trattati in modo analogo a quelli di proprietà. Il nome predefinito per un indicizzatore è `Item`.
 > - I nomi dei **tipi di parametro** vengono trasformati e concatenati.
-> - **Il tipo restituito** viene ignorato a meno che non esista un'ambiguità di overload. Se esiste un'ambiguità di overload, il tipo restituito viene aggiunto alla fine del nome.
+> - Il **tipo restituito** viene ignorato a meno che non esista un'ambiguità di overload. Se esiste un'ambiguità di overload, il tipo restituito viene aggiunto alla fine del nome.
 
 ### <a name="parameter-type-naming-conventions"></a>Convenzioni di denominazione dei tipi di parametro
 
 |Dato un|La stringa aggiunta è...|
 |-|-|
-|Un **tipo**`T`|T<br /><br /> Lo spazio dei nomi, la struttura annidata e i tipi generici vengono eliminati.|
+|**Tipo**`T`|T<br /><br /> Lo spazio dei nomi, la struttura annidata e i tipi generici vengono eliminati.|
 |Un **parametro out**`out T`|`TOut`|
 |**Parametro Ref** `ref T`|`TRef`|
-|Un **tipo di matrice**`T[]`|`TArray`|
+|**Tipo di matrice**`T[]`|`TArray`|
 |Tipo di **matrice multidimensionale**`T[ , , ]`|`T3`|
 |Tipo di **puntatore**`T*`|`TPtr`|
 |Un **tipo generico**`T<R1, ...>`|`TOfR1`|
-|Argomento **generic type argument** `!i` di tipo generico di tipo`C<TType>`|`Ti`|
-|Argomento **generic method argument** `!!i` del metodo generico`M<MMethod>`|`Mi`|
-|Un **tipo annidato**`N.T`|Vengono aggiunti `N` e quindi `T`.|
+|**Argomento di tipo generico** `!i` di tipo`C<TType>`|`Ti`|
+|Argomento di metodo **generico** `!!i` del metodo`M<MMethod>`|`Mi`|
+|**Tipo annidato**`N.T`|Vengono aggiunti `N` e quindi `T`.|
 
 ### <a name="recursive-rules"></a>Regole ricorsive
 
