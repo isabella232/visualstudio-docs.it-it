@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74292327"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Aggiungere stereotipi a elementi del modello UML
@@ -63,15 +63,15 @@ ms.locfileid: "74292327"
 
     - In un diagramma classi UML fare clic sullo strumento per un elemento e quindi fare clic all'interno del pacchetto nel diagramma.
 
-         \- oppure -
+         \- - oppure -
 
     - In Esplora modelli UML fare clic con il pulsante destro del mouse sul pacchetto, scegliere **Aggiungi**, quindi fare clic su un tipo di elemento.
 
-         \- oppure -
+         \- - oppure -
 
     - In Esplora modelli UML trascinare un elemento esistente nel pacchetto.
 
-         \- oppure -
+         \- - oppure -
 
     - Collegare un diagramma al pacchetto e quindi creare gli elementi nel diagramma.
 

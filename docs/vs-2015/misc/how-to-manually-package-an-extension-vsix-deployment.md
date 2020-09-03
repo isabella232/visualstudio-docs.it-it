@@ -8,10 +8,10 @@ ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
 ms.openlocfilehash: a615aea75ec00e49ee4d2837b8b4e2b1d20d3306
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293614"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedura: Creare manualmente il pacchetto di un'estensione (distribuzione VSIX)
@@ -29,7 +29,7 @@ ms.locfileid: "74293614"
  Per creare manualmente un pacchetto di un'estensione, aggiungere un file extension.manifest e un file [Content_Types].xml al progetto di estensione, inserirli in un file compresso con l'output di compilazione e rinominare il file compresso assegnandogli un'estensione di file vsix. L'estensione di cui creare il pacchetto deve essere di un tipo supportato dallo [schema VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
-> I nomi dei file nei pacchetti VSIX non devono includere spazi, né caratteri riservati in Uniform Resource Identifier (URI), come definito in [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
+> I nomi dei file nei pacchetti VSIX non devono includere spazi, né caratteri riservati in Uniform Resource Identifier (URI), come definito in [ \[ rfc2396 \] ](https://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>Per creare manualmente un pacchetto VSIX  
   
@@ -41,7 +41,7 @@ ms.locfileid: "74293614"
   
 4. Creare un secondo file XML e assegnargli il nome `[Content_Types].xml`.  
   
-5. Compilare il file [Content_Types]. XML come specificato nella [struttura del file Content_types\]. XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. Compilare il file [Content_Types]. XML come specificato nella [struttura del \] file Content_Types. XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
 6. Inserire entrambi i file XML in una directory con l'estensione da distribuire.  
   

@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95b2aa636b63523e06e3c931381e4506a0a03bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655175"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Scheda System.Activities, finestra di dialogo Scegli elementi della Casella degli strumenti
-Questa scheda della finestra di dialogo **Scegli elementi della casella degli strumenti** Visualizza un elenco di [!INCLUDE[wf](../includes/wf-md.md)] attività, modelli ed elementi disponibili. Per visualizzare l'elenco, **scegliere Scegli elementi della casella degli** strumenti dal menu **strumenti** oppure fare clic con il pulsante destro del mouse sulla **casella degli** strumenti e selezionare **Scegli elementi** per visualizzare la finestra di dialogo **Scegli elementi della casella degli strumenti** e quindi selezionare la relativa  **Scheda System. Activities** . predefinita, l'elenco contiene le attività del flusso di lavoro dagli assembly System. Activities, System. ServiceModel. Activities e System. Activities. Core. Presentation; Tuttavia, per impostazione predefinita vengono controllate solo le attività fornite dal sistema indicate e le attività aggiunte tramite altri assembly visualizzati nella **casella degli strumenti** . Le attività aggiunte di recente vengono controllate automaticamente e visualizzate nella casella **degli strumenti** quando si fa clic su **OK** nella finestra di dialogo. Inoltre, questi elementi vengono visualizzati nella **casella degli strumenti** in una nuova categoria corrispondente allo spazio dei nomi in cui risiede l'attività, l'elemento o il modello.
+Questa scheda della finestra di dialogo **Scegli elementi della casella degli strumenti** Visualizza un elenco di [!INCLUDE[wf](../includes/wf-md.md)] attività, modelli ed elementi disponibili. Per visualizzare questo elenco, **scegliere Scegli elementi della casella degli** strumenti dal menu **strumenti** oppure fare clic con il pulsante destro del mouse sulla **casella degli** strumenti e **scegliere Scegli elementi** per visualizzare la finestra di dialogo **Scegli elementi della casella degli strumenti** , quindi selezionare la scheda **System. Activities** . L'elenco contiene le attività del flusso di lavoro dagli assembly System. Activities, System. ServiceModel. Activities e System. Activities. Core. Presentation; Tuttavia, per impostazione predefinita vengono controllate solo le attività fornite dal sistema indicate e le attività aggiunte tramite altri assembly visualizzati nella **casella degli strumenti** . Le attività aggiunte di recente vengono controllate automaticamente e visualizzate nella casella **degli strumenti** quando si fa clic su **OK** nella finestra di dialogo. Inoltre, questi elementi vengono visualizzati nella **casella degli strumenti** in una nuova categoria corrispondente allo spazio dei nomi in cui risiede l'attività, l'elemento o il modello.
 
 > [!WARNING]
 > Se si prova ad aggiungere un assembly che non contiene attività del flusso di lavoro, viene visualizzata una finestra di errore in cui si segnala che l'assembly non contiene attività.
@@ -29,7 +29,7 @@ Questa scheda della finestra di dialogo **Scegli elementi della casella degli st
 
  Il filtro viene eseguito in ogni scheda. Ciò significa che non è possibile aggiungere attività del flusso di lavoro tramite la scheda **componente .NET** . Devono essere aggiunti tramite la scheda **System. Activities** .
 
- È possibile deselezionare gli elementi che non si desidera visualizzare nella **casella degli strumenti** da questa scheda della finestra di dialogo oppure, in alternativa, è possibile utilizzare l'opzione del menu di scelta rapida **Elimina** nella **casella degli strumenti** e dereferenziare un assembly non rimuove l'elemento dal  **Casella degli strumenti**.
+ È possibile deselezionare gli elementi che non si desidera visualizzare nella **casella degli strumenti** da questa scheda della finestra di dialogo oppure, in alternativa, è possibile utilizzare l'opzione del menu di scelta rapida **Elimina** nella **casella degli** strumenti e dereferenziare un assembly non rimuove l'elemento dalla **casella degli strumenti**.
 
  Quando si crea un'istanza dell'attività trascinandola e rilasciandola nella finestra di progettazione, si aggiunge automaticamente all'elenco degli assembly di riferimento l'assembly che contiene l'elemento. Se inoltre l'attività fa riferimento a un assembly C, C non viene aggiunto all'elenco di assembly di riferimento. L'assembly C deve trovarsi nella GAC o nella stessa directory dell'attività B. Nel caso autonomo, l'assembly deve trovarsi nella GAC o nei percorsi di probe di VS. È quindi solo possibile trascinare e rilasciare le attività nell'area di progettazione flussi di lavoro.
 

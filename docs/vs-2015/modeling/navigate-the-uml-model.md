@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74289854"
 ---
 # <a name="navigate-the-uml-model"></a>Esplorare il modello UML
@@ -24,7 +24,7 @@ ms.locfileid: "74289854"
 Questo argomento introduce i principali tipi di modello UML.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Elementi del modello, modello e archivio modelli
- I tipi definiti nell'assembly **Microsoft. VisualStudio. Uml. Interfaces. dll** corrispondono ai tipi definiti nella [specifica UML, versione 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ I tipi definiti nell'assembly **Microsoft.VisualStudio.Uml.Interfaces.dll** corrispondono ai tipi definiti nella [specifica UML, versione 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
  I tipi nella specifica UML vengono rappresentati come interfacce in Visual Studio. La lettera "I" viene anteposta al nome di ogni tipo. Ad esempio: [IElement](/previous-versions/dd516035(v=vs.140)), [iCLASS](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
@@ -45,16 +45,16 @@ Questo argomento introduce i principali tipi di modello UML.
 
  Se si elimina un elemento dal modello, viene automaticamente eliminata qualsiasi relazione di cui fa parte e la proprietà all'altra estremità viene aggiornata.
 
- Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che la proprietà .NET è di tipo: `IEnumerable<`*tipo*`>`.
+ Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che la proprietà .NET è di tipo: `IEnumerable<` *Type* `>` .
 
  Per altre informazioni sull'attraversamento delle relazioni, vedere [esplorare le relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Albero di proprietà
  Un modello contiene una struttura ad albero di oggetti [IElement](/previous-versions/dd516035(v=vs.140)) . Ogni elemento dispone delle proprietà `OwnedElements` e `Owner`.
 
- Nella maggior parte dei casi, alle destinazioni delle proprietà `Owner` e `OwnedElements` viene fatto riferimento anche da altre proprietà con nomi più specifici. Ad esempio, ogni operazione UML è di proprietà di una classe UML. Di conseguenza, [IOperation](/previous-versions/dd481186(v=vs.140)) dispone di una proprietà denominata [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)e in ogni oggetto [IOperation](/previous-versions/dd481186(v=vs.140)) `Class == Owner`.
+ Nella maggior parte dei casi, alle destinazioni delle proprietà `Owner` e `OwnedElements` viene fatto riferimento anche da altre proprietà con nomi più specifici. Ad esempio, ogni operazione UML è di proprietà di una classe UML. Di conseguenza, [IOperation](/previous-versions/dd481186(v=vs.140)) dispone di una proprietà denominata [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)e in ogni oggetto [IOperation](/previous-versions/dd481186(v=vs.140)) `Class == Owner` .
 
- L'elemento più in alto della struttura ad albero, senza proprietario, è un `AuxiliaryConstructs.IModel`. IModel è contenuto all'interno di un `IModelStore`, in cui è [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
+ L'elemento più in alto della struttura ad albero, senza proprietario, è un `AuxiliaryConstructs.IModel` . IModel è contenuto all'interno di un oggetto `IModelStore` , in cui è [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
 
  Ogni elemento del modello viene creato con un proprietario. Per altre informazioni, vedere [creare elementi e relazioni nei modelli UML](../modeling/create-elements-and-relationships-in-uml-models.md).
 
@@ -120,7 +120,7 @@ foreach (IShape<IInterface> in
 ```
 
 ## <a name="accessing-another-model-or-diagrams"></a>Accesso a un altro modello o ai diagrammi
- È possibile:
+ È possibile scegliere:
 
 - Usare il bus di modelli di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per creare collegamenti tra elementi in modelli diversi. Per altre informazioni, vedere [integrare modelli UML con altri modelli e strumenti](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 

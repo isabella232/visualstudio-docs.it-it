@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7b0c54975cdd5bc86f77dddbd5ca1a56c1896394
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655322"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Aggiunta di comandi e movimenti a diagrammi livello
@@ -49,13 +49,13 @@ ms.locfileid: "72655322"
 
 4. Chiudere l'istanza sperimentale e modificare il codice di esempio. Per altre informazioni, vedere [esplorare e aggiornare i modelli di livello nel codice programma](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
-5. È possibile aggiungere più gestori comandi o movimenti allo stesso progetto. Per altre informazioni vedere una delle sezioni seguenti:
+5. È possibile aggiungere più gestori comandi o movimenti allo stesso progetto. Per altre informazioni, vedere una delle sezioni seguenti:
 
     [Definizione di un comando di menu](#command)
 
     [Definizione di un gestore movimenti](#gesture)
 
-6. Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in *bin\\* . Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .
+6. Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in *bin\\*. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Aggiunta di un comando o movimento a un progetto VSIX separato
  Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori. Per informazioni sugli altri tipi di estensione di modellazione, vedere [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md).
@@ -69,7 +69,7 @@ ms.locfileid: "72655322"
 
 2. Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Per aggiungere un progetto VSIX:
 
-    1. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#** , fare clic su **Extensibility**e quindi fare clic su **Progetto VSIX**.
+    1. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Extensibility**e quindi fare clic su **Progetto VSIX**.
 
     2. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.
 
@@ -87,7 +87,7 @@ ms.locfileid: "72655322"
 
 4. Tornare al progetto del gestore comandi o movimenti e aggiungere i riferimenti seguenti al progetto.
 
-|**Reference**|**Operazioni consentite**|
+|**Riferimento**|**Operazioni consentite**|
 |-------------------|------------------------------------|
 |Programmi\Microsoft Visual Studio [versione]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Creare e modificare livelli|
 |Microsoft.VisualStudio.Uml.Interfaces|Creare e modificare livelli|
@@ -96,7 +96,7 @@ ms.locfileid: "72655322"
 |Microsoft.VisualStudio.Modeling.Sdk.[versione]|Definire le estensioni di modellazione|
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]|Aggiornare forme e diagrammi|
 
-1. Modificare il file di classe nel progetto di libreria di classi C# contenente il codice per l'estensione. Per altre informazioni vedere una delle sezioni seguenti:
+1. Modificare il file di classe nel progetto di libreria di classi C# contenente il codice per l'estensione. Per altre informazioni, vedere una delle sezioni seguenti:
 
      [Definizione di un comando di menu](#command)
 
@@ -110,7 +110,7 @@ ms.locfileid: "72655322"
 
      Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .
 
-## <a name="command"></a> Definizione di un comando di menu
+## <a name="defining-a-menu-command"></a><a name="command"></a> Definizione di un comando di menu
  È possibile aggiungere altre definizioni dei comandi di menu a un progetto di comandi o movimenti esistente. Ogni comando viene definito da una classe che ha le caratteristiche seguenti:
 
 - La classe viene dichiarata nel modo seguente:
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> Definizione di un gestore movimenti
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Definizione di un gestore movimenti
  Un gestore movimenti risponde quando l'utente trascina elementi nel diagramma livello e quando l'utente fa doppio clic in un punto qualsiasi del diagramma.
 
  È possibile aggiungere al progetto VSIX del gestore comandi o movimenti esistente un file di codice che definisce un gestore movimenti:
@@ -247,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
 
    **OnDragDrop** : viene chiamato quando l'utente rilascia un elemento nel diagramma.
 
-- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Esempio:
+- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Ad esempio:
 
   ```
   public void OnDragDrop(IShape target, IDataObject data)

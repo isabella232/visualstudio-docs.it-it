@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655141"
 ---
 # <a name="automatic-feature-suspension"></a>Sospensione funzionalità automatica
@@ -29,9 +29,9 @@ Se la memoria di sistema disponibile è inferiore a 200 MB, Visual Studio visual
 
  In una condizione di memoria insufficiente, si verifica quanto segue:
 
-- L'analisi completa della soluzione C# per oggetti visivi e Visual Basic è disabilitata.
+- L'analisi completa della soluzione per Visual C# e Visual Basic è disabilitata.
 
-- La modalità di bassa latenza di [Garbage Collection](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC C# ) per gli oggetti visivi e Visual Basic è disabilitata.
+- La modalità di bassa latenza di [Garbage Collection](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) per Visual C# e Visual Basic è disabilitata.
 
 - Le cache di Visual Studio vengono scaricate.
 
@@ -39,10 +39,10 @@ Se la memoria di sistema disponibile è inferiore a 200 MB, Visual Studio visual
  Per suggerimenti e consigli su come migliorare le prestazioni di Visual Studio quando si gestiscono soluzioni di grandi dimensioni o condizioni di memoria insufficiente, vedere [considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 ## <a name="full-solution-analysis-suspended"></a>Analisi completa della soluzione sospesa
- Per impostazione predefinita, l'analisi della soluzione completa è abilitata per Visual Basic C#e disabilitata per Visual. Tuttavia, in una condizione di memoria insufficiente, l'analisi della soluzione completa viene disabilitata automaticamente C#sia per Visual Basic sia per l'oggetto visivo, indipendentemente dalle impostazioni nella finestra di dialogo Opzioni. Tuttavia, è possibile riabilitare l'analisi completa della soluzione scegliendo il pulsante **riabilita** nella barra informazioni quando viene visualizzato, selezionando la casella di controllo **Abilita analisi della soluzione completa** nella finestra di dialogo Opzioni o riavviando Visual Studio. Nella finestra di dialogo Opzioni vengono sempre visualizzate le impostazioni di analisi della soluzione completa correnti. Per altre informazioni, vedere [procedura: abilitare e disabilitare l'analisi della soluzione completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+ Per impostazione predefinita, l'analisi della soluzione completa è abilitata per Visual Basic e disabilitata per Visual C#. Tuttavia, in una condizione di memoria insufficiente, l'analisi della soluzione completa viene disabilitata automaticamente per Visual Basic e Visual C#, indipendentemente dalle impostazioni nella finestra di dialogo Opzioni. Tuttavia, è possibile riabilitare l'analisi completa della soluzione scegliendo il pulsante **riabilita** nella barra informazioni quando viene visualizzato, selezionando la casella di controllo **Abilita analisi della soluzione completa** nella finestra di dialogo Opzioni o riavviando Visual Studio. Nella finestra di dialogo Opzioni vengono sempre visualizzate le impostazioni di analisi della soluzione completa correnti. Per altre informazioni, vedere [procedura: abilitare e disabilitare l'analisi della soluzione completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC a bassa latenza disabilitata
- Per abilitare nuovamente la modalità a bassa latenza GC, riavviare Visual Studio.  Per impostazione predefinita, Visual Studio Abilita la modalità GC a bassa latenza ogni volta che si digita per assicurarsi che la digitazione non blocchi le operazioni GC. Tuttavia, se una condizione di memoria insufficiente fa in modo che Visual Studio visualizzi l'avviso di sospensione automatica, la modalità di bassa latenza GC viene disabilitata per tale sessione. Il riavvio di Visual Studio consentirà di riabilitare il comportamento GC predefinito. Per ulteriori informazioni, vedere <xref:System.Runtime.GCLatencyMode>.
+ Per abilitare nuovamente la modalità a bassa latenza GC, riavviare Visual Studio.  Per impostazione predefinita, Visual Studio Abilita la modalità GC a bassa latenza ogni volta che si digita per assicurarsi che la digitazione non blocchi le operazioni GC. Tuttavia, se una condizione di memoria insufficiente fa in modo che Visual Studio visualizzi l'avviso di sospensione automatica, la modalità di bassa latenza GC viene disabilitata per tale sessione. Il riavvio di Visual Studio consentirà di riabilitare il comportamento GC predefinito. Per altre informazioni, vedere <xref:System.Runtime.GCLatencyMode>.
 
 ## <a name="visual-studio-caches-flushed"></a>Cache di Visual Studio scaricate
 
@@ -62,5 +62,5 @@ Vengono inoltre cancellate le cache utilizzate per le operazioni interne di Visu
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Abilitare e disabilitare l'analisi completa della soluzione](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Principi fondamentali di Garbage Collection](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Nozioni fondamentali di Garbage Collection](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

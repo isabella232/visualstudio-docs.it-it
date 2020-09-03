@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b7eb229c5938165607b797205b94a318e3303b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655182"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui
@@ -28,8 +28,8 @@ ms.locfileid: "72655182"
 
 In questa finestra di dialogo, è possibile specificare il numero massimo di progetti Visual C++ o Visual C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione. Per aprire la finestra di dialogo **Opzioni**, scegliere **Strumenti**, **Opzioni** nella barra dei menu. Per accedere a questo set di opzioni, espandere **Progetti e soluzioni**, quindi scegliere **Compila ed esegui**.
 
-## <a name="uielement-list"></a>Elenco UIElement
- **numero massimo di compilazioni di progetto parallele** Specifica il numero massimo di progetti C++ visivi C# e visivi che è possibile compilare contemporaneamente. Per ottimizzare il processo di compilazione, il numero massimo di compilazioni di progetti in parallelo viene impostato automaticamente sul numero di CPU del computer. Il numero massimo è 32.
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
+ **numero massimo di compilazioni di progetto parallele** Specifica il numero massimo di progetti Visual C++ e Visual C# che possono essere compilati nello stesso momento. Per ottimizzare il processo di compilazione, il numero massimo di compilazioni di progetti in parallelo viene impostato automaticamente sul numero di CPU del computer. Il valore massimo è 32.
 
  **Compila solo i progetti di avvio e le dipendenze dall'esecuzione** Se questa casella di controllo è selezionata quando si sceglie il tasto F5, vengono compilati solo il progetto di avvio e le relative dipendenze. scegliere **debug**, **Avvia** sulla barra dei menu; in alternativa, scegliere **Compila**, **Compila** sulla barra dei menu. Se si seleziona questa casella di controllo quando si preme il tasto F5, vengono compilati tutti i progetti, le dipendenze e i file di soluzione. Scegliere **Debug**, **Avvia** oppure **Compila**, **Compila** nella barra dei menu. Per impostazione predefinita, questa opzione è deselezionata.
 
@@ -64,7 +64,7 @@ In questa finestra di dialogo, è possibile specificare il numero massimo di pro
  > [!NOTE]
 > Questa opzione si applica solo ai progetti Visual C++.
 
- Determina la quantità di informazioni scritta nel file di log di compilazione che si trova in \\...\\*ProjectName*\Debug\\*ProjectName*.log.
+ Determina la quantità di informazioni scritte nel file di log di compilazione, disponibile in \\ ... \\ *NomeProgetto*\Debug \\ *NomeProgetto*. log.
 
 ## <a name="see-also"></a>Vedere anche
- [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)
+ [Compilazione e creazione](../../ide/compiling-and-building-in-visual-studio.md)
