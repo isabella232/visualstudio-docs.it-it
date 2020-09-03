@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772202"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
@@ -35,17 +35,17 @@ Queste impostazioni consentono di selezionare il metodo di profilatura, aggiunge
 
 Per altre informazioni, vedere:
 
-[Procedura: scegliere i metodi di raccoltaHow to: Choose collection methods](../profiling/how-to-choose-collection-methods.md)
+[Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
 
 [Raccogliere dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-- [Procedura: impostare le opzioni relative al nome del file di dati sulle prestazioniHow to: Set performance data file name options](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Procedura: impostare le opzioni relative ai nomi file dei dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
 Queste impostazioni consentono di effettuare una selezione da un elenco di file binari e specificare il relativo ordine di avvio.
 
-Per altre informazioni, vedere [procedura: specificare il file binario da avviareFor](../profiling/how-to-specify-the-binary-to-start.md) more information, see How to: Specify the binary to start
+Per altre informazioni, vedere [procedura: specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="sampling"></a>campionamento
 
@@ -57,12 +57,12 @@ Queste impostazioni consentono di selezionare l'evento e l'intervallo di campion
 - Contatori di prestazioni per i problemi di prestazioni ridotte
 - È possibile specificare eventi di campionamento aggiuntivi in base ai contatori delle prestazioni disponibili.
 
-Per altre informazioni, vedere Procedura: Scegliere gli eventi di [campionamentoFor more information,](../profiling/how-to-choose-sampling-events.md) see How to: Choose sampling events
+Per altre informazioni, vedere [procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>Binary
-Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si profila *My.DLL* e si sceglie di non spostare il file binario instrumentato, viene creata una copia di backup di *My.DLL* denominata *My.Orig.DLL.* Successivamente, *My.DLL* viene modificato inserendo probe per raccogliere dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.
+Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Se, ad esempio, si sta profilando *My.DLL* e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di *My.DLL* denominata *My.Orig.DLL* . Successivamente, *My.DLL* viene modificata inserendo Probe per raccogliere i dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.
 
-Per altre informazioni, vedere [procedura: specificare il file binario da avviareFor](../profiling/how-to-specify-the-binary-to-start.md) more information, see How to: Specify the binary to start
+Per altre informazioni, vedere [procedura: specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interazioni tra livelli
 
@@ -74,7 +74,7 @@ Queste impostazioni consentono di raccogliere i dati sulle prestazioni per il co
 
 Per altre informazioni, vedere:
 
-[Procedura: profilare il codice JavaScript nelle pagine WebHow to: Profile JavaScript code in web pages](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[Procedura: profilare codice JavaScript nelle pagine Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
 [Procedura: Specificare comandi pre- e post-strumentazione](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
@@ -98,9 +98,9 @@ Per altre informazioni, vedere:
 
 Questa opzione consente di raccogliere i dati dai contatori di Windows Performance Monitor. Per raccogliere questi dati, selezionare la casella di controllo **Raccogliere contatori Windows**. L'intervallo di raccolta può essere impostato nella casella **Intervallo di raccolta**. Potrebbero essere inoltre disponibili le opzioni **Categoria contatori** e **Istanza**. Sono disponibili alcuni contatori predefiniti di Windows Performance Monitor.
 
- Per ulteriori informazioni, vedere [Procedura: raccogliere dati sui contatori](../profiling/how-to-collect-windows-counter-data.md)di Windows .
+ Per altre informazioni, vedere [procedura: raccogliere i dati dei contatori di Windows](../profiling/how-to-collect-windows-counter-data.md).
 
-## <a name="advanced"></a>Avanzate
+## <a name="advanced"></a>Avanzato
 
 Queste impostazioni consentono di aggiungere opzioni al processo di strumentazione specificando una o più opzioni dello strumento di profilatura da riga di comando [VSInstr](../profiling/vsinstr.md). È inoltre possibile specificare la versione di Common Runtime di cui eseguire la profilatura quando l'applicazione usa più di una versione.
 
@@ -108,10 +108,10 @@ Per altre informazioni, vedere:
 
 [Procedura: Specificare il runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Procedura: specificare opzioni di strumentazione aggiuntiveHow to: Specify additional instrumentation options](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Procedura: specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramiche](../profiling/overviews-performance-tools.md)
-[Configurare le sessioni](../profiling/configuring-performance-sessions.md)
-di prestazioni[Controllare la raccolta dei dati](../profiling/controlling-data-collection.md)
+[Panoramica](../profiling/overviews-performance-tools.md) 
+ [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni [Raccolta dati di controllo](../profiling/controlling-data-collection.md)

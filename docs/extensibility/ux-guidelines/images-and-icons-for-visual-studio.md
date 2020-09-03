@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906115"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Immagini e icone per Visual Studio
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Uso delle immagini in Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Uso delle immagini in Visual Studio
  Prima di creare grafica, provare a usare le immagini 1000 + nella [libreria di immagini di Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Tipi di immagini
@@ -34,7 +34,7 @@ ms.locfileid: "85906115"
 
 - **Cursori.** Utilizzato per indicare se un'operazione è consentita utilizzando il mouse, in cui un oggetto può essere eliminato e così via.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Progettazione dell'icona
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Progettazione dell'icona
 
 ### <a name="overview"></a>Panoramica
  Visual Studio USA icone in stile moderno, con geometria pulita e un saldo 50/50 positivo/negativo (chiaro/scuro) e usa metafore dirette e comprensibili. Icona cruciale punti di progettazione Centra intorno a chiarezza, semplificazione e contesto.
@@ -234,7 +234,7 @@ ms.locfileid: "85906115"
 
  Per altre informazioni sull'uso del colore nelle icone di Visual Studio, vedere [uso dei colori nelle immagini](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Uso del colore nelle immagini
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Uso del colore nelle immagini
 
 ### <a name="overview"></a>Panoramica
  Le icone in Visual Studio sono principalmente monocromatiche. Il colore è riservato per fornire informazioni specifiche e mai per la decorazione. Viene usato il colore:
@@ -262,7 +262,7 @@ ms.locfileid: "85906115"
 |-----------|----------|---------------------------|------------|-------------|
 |Sfondo/scuro|VS BG|424242/66, 66, 66|![Campione 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Esempio di tavolozza di base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Primo piano/chiaro|VS FG|F0EFF1/240.239.241|![Campione F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
-|Bordo|Visual Studio|F6F6F6/246.246.246|![Campione F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||
+|Riquadro|Visual Studio|F6F6F6/246.246.246|![Campione F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||
 
  Oltre ai colori di base, ogni icona può contenere un colore aggiuntivo dalla tavolozza estesa.
 
@@ -273,8 +273,8 @@ ms.locfileid: "85906115"
 
 |Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
-|Positive|Verde azione VS|388A34/56138, 52|![Campione 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
-|Negative|Rosso azione VS|A1260D/161, 38, 13|![Campione A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
+|Positivo|Verde azione VS|388A34/56138, 52|![Campione 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
+|Negativo|Rosso azione VS|A1260D/161, 38, 13|![Campione A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
 |Neutralità|Blu azione VS|00539C/0, 83156|![Campione 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |Crea/nuovo|Arancio azione VS|C27D1A/194156, 26|![Campione C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 
@@ -306,7 +306,7 @@ ms.locfileid: "85906115"
 #### <a name="special-cases"></a>Casi speciali
  In casi speciali, un modificatore di azione colorato può essere usato in modo indipendente come icona autonoma. Il colore utilizzato per l'icona riflette le azioni a cui è associata l'icona. Questo utilizzo è limitato a un piccolo subset di icone, tra cui:
 
-|Esegui|Arresto|Delete|Salvare|Esplora indietro|
+|Esegui|Arresto|Delete|Salva|Esplora indietro|
 |-|-|-|-|-|
 |![Icona Esegui](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Icona Arresta](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Icona Elimina](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Icona Esplora indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 

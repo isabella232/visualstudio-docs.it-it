@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPointerField::GetDereferencedField . Documenti Microsoft
+title: 'IDebugPointerField:: GetDereferencedField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725618"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Questo metodo restituisce il tipo di oggetto a cui punta questo oggetto puntatore.
+Questo metodo restituisce il tipo di oggetto a cui punta l'oggetto puntatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>Parametri
 `ppField`\
-[fuori] Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive il tipo di oggetto di destinazione.
+out Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive il tipo di oggetto di destinazione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Se, ad esempio, il [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) oggetto punta a un numero intero, il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) tipo restituito da questo metodo descrive tale tipo integer.
+ Se, ad esempio, l'oggetto [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) punta a un Integer, il tipo [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) restituito da questo metodo descrive tale tipo Integer.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)

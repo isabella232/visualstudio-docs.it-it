@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugObject::IsNullReference . Documenti Microsoft
+title: 'IDebugObject:: IsNullReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726523"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Verifica se questo oggetto è un riferimento null.
+Verifica se l'oggetto è un riferimento null.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ int IsNullReference(
 
 ## <a name="parameters"></a>Parametri
 `pfIsNull`\
-[fuori] Restituisce diverso`TRUE`da zero ( ) se questo oggetto è un riferimento null; in caso contrario, restituisce zero (`FALSE`).
+out Restituisce un valore diverso da zero ( `TRUE` ) se l'oggetto è un riferimento null; in caso contrario, restituisce zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.

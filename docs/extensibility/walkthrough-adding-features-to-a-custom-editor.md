@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905942"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: aggiungere funzionalità a un editor personalizzato
@@ -51,7 +51,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
         > [!NOTE]
         > Chiamare `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> per ottenere un puntatore a `IVsFileChangeEx` .
 
-7. Coordina gli eventi di modifica del documento con il controllo del codice sorgente. A tale scopo, seguire questa procedura:
+7. Coordina gli eventi di modifica del documento con il controllo del codice sorgente. Seguire questa procedura:
 
     1. Ottenere un puntatore a chiamando `IVsQueryEditQuerySave2` `QueryService` il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -63,13 +63,13 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
          Questo metodo richiede all'utente di salvare il file se non è stato salvato o se è stato modificato dopo l'ultimo salvataggio.
 
-8. Abilitare la finestra **Proprietà** per visualizzare le proprietà per il testo selezionato nell'editor. A tale scopo, seguire questa procedura:
+8. Abilitare la finestra **Proprietà** per visualizzare le proprietà per il testo selezionato nell'editor. Seguire questa procedura:
 
     1. Chiamare <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> ogni volta che la selezione del testo viene modificata, passando l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .
 
     2. Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> servizio per ottenere un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Consentire agli utenti di trascinare e rilasciare elementi tra l'editor e la **casella degli strumenti**oppure tra editor esterni (come Microsoft Word) e la **casella degli strumenti**. A tale scopo, seguire questa procedura:
+9. Consentire agli utenti di trascinare e rilasciare elementi tra l'editor e la **casella degli strumenti**oppure tra editor esterni (come Microsoft Word) e la **casella degli strumenti**. Seguire questa procedura:
 
     1. Implementare nell' `IDropTarget` Editor per avvisare l'IDE che l'editor è un obiettivo di rilascio.
 
@@ -142,7 +142,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
 - Per evitare che il comando di menu venga affollato nell'interfaccia utente, è necessario usare i comandi esistenti nell'IDE prima di inventare nuovi comandi. I comandi condivisi sono definiti in *SharedCmdDef. vsct* e *ShellCmdDef. vsct*. Questi file vengono installati per impostazione predefinita nella sottodirectory VisualStudioIntegration\Common\Inc dell' [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installazione.
 
-- `ISelectionContainer`consente di esprimere selezioni singole e multiple. Ogni oggetto selezionato viene implementato come un `IDispatch` oggetto.
+- `ISelectionContainer` consente di esprimere selezioni singole e multiple. Ogni oggetto selezionato viene implementato come un `IDispatch` oggetto.
 
 - L'IDE implementa `IOleUndoManager` come servizio accessibile da <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> o come oggetto di cui è possibile creare un'istanza tramite <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> . L'editor implementa l' `IOleUndoUnit` interfaccia per ogni `Undo` azione.
 

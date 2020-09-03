@@ -16,13 +16,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74302836"
 ---
-# <a name="uml-use-case-diagrams-guidelines"></a>Diagrammi caso di utilizzo UML: linee guida
+# <a name="uml-use-case-diagrams-guidelines"></a>Diagrammi casi di utilizzo UML: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilogare chi usa l'applicazione o il sistema e quali operazioni è possibile eseguire. Per creare un diagramma caso di utilizzo UML, scegliere **nuovo diagramma livello o UML**dal menu **architettura** .
@@ -47,7 +47,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
   Gli esempi usati in questo argomento si riferiscono a un sito Web in cui i clienti possono ordinare pasti dai ristoranti locali.
 
-  ![Elementi in un diagramma caso di utilizzo](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
+  ![Elementi in un diagramma di caso di utilizzo](../modeling/media/uml-ucovactor.png "UML_UCOvActor")
 
 - Un *attore* (1) è una classe di persona, organizzazione, dispositivo o componente software esterno che interagisce con il sistema. Esempi di attori sono **cliente**, **ristorante**, **sensore di temperatura**, **autorizzatore della carta di credito.**
 
@@ -59,7 +59,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
    Un diagramma caso di utilizzo è in grado di mostrare quali casi di utilizzo sono supportati dal sistema o dai relativi sottosistemi.
 
-## <a name="BasicSteps"></a>Passaggi di base per la creazione di diagrammi caso di utilizzo
+## <a name="basic-steps-for-drawing-use-case-diagrams"></a><a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi caso di utilizzo
 
 > [!NOTE]
 > I passaggi dettagliati per la creazione di uno dei diagrammi di modellazione sono descritti in [modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md).
@@ -110,7 +110,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
 7. Creare diagrammi separati per concentrarsi su sottosistemi o gruppi diversi di casi di utilizzo correlati. Tutti i diagrammi in un progetto di modellazione sono viste dello stesso modello.
 
-## <a name="Actors"></a>Disegno di attori e casi d'uso
+## <a name="drawing-actors-and-use-cases"></a><a name="Actors"></a> Disegno di attori e casi d'uso
  Lo scopo principale di un diagramma caso di utilizzo è mostrare che interagisce con il sistema e gli obiettivi principali raggiunti.
 
 - Creare **attori** per rappresentare le classi di persone, organizzazioni, altri sistemi, software o dispositivi che interagiscono con il sistema o il sottosistema.
@@ -126,7 +126,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 - Usare le **associazioni** per collegare gli attori ai casi di utilizzo.
 
 ### <a name="inheritance-between-actors"></a>Ereditarietà tra attori
- ![Diagramma caso di utilizzo che mostra l'ereditarietà](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")
+ ![Diagramma di caso di utilizzo che mostra l'ereditarietà](../modeling/media/uml-ucguideinherit.png "UML_UCGuideInherit")
 
  È possibile creare un collegamento di **generalizzazione** tra gli attori. L'attore specializzato, come Cliente del club nell'esempio, eredita i casi di utilizzo dell'attore generalizzato, ad esempio Cliente. La freccia deve puntare all'attore più generale, ad esempio Cliente. Quando si crea il collegamento, puntare prima all'attore più specializzato.
 
@@ -157,7 +157,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 ### <a name="multiplicities-between-actors-and-use-cases"></a>Molteplicità tra attori e casi di utilizzo
  L'associazione tra un attore e un caso di utilizzo può mostrare una *molteplicità* a ogni estremità.
 
- ![Caso d'uso uno a uno con Actor](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
+ ![Caso di utilizzo uno a uno con attore](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")
 
 > [!NOTE]
 > I molteplicità di un'associazione in un diagramma caso di utilizzo sono nascosti se sono entrambi **1**.
@@ -168,13 +168,13 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
  Ad esempio:
 
- ![Caso d'uso che mostra molteplicità a molti](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
+ ![Caso di utilizzo che mostra la molteplicità molti a molti](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Per indicare che più attori della stessa classe possono partecipare a una singola occorrenza di un caso di utilizzo, impostare la molteplicità all'estremità dell'attore dell'associazione su **1..\*** .
+- Per indicare che più attori della stessa classe possono partecipare a una singola occorrenza di un caso di utilizzo, impostare la molteplicità all'estremità dell'attore dell'associazione su **1.. \* **.
 
    Nell'illustrazione uno o più i ristoranti possono partecipare all'evasione della stessa ordinazione pasto.
 
-- Per indicare che ogni attore può partecipare contemporaneamente a diverse occorrenze di un caso di utilizzo, impostare la molteplicità nell'entità finale del caso d'uso dell'associazione per **\*** .
+- Per indicare che ogni attore può partecipare contemporaneamente a diverse occorrenze di un caso di utilizzo, impostare la molteplicità nell'entità finale del caso d'uso dell'associazione su **\*** .
 
    Nella figura ogni ristorante può cercare di soddisfare più ordini alla volta.
 
@@ -190,11 +190,11 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
    - **1** per dichiarare che una sola istanza di questo ruolo partecipa a ogni collegamento.
 
-   - **1..\*** per indicare che una o più istanze di questo ruolo fanno parte di ogni collegamento.
+   - **1.. \* ** per dichiarare che una o più istanze di questo ruolo fanno parte di ogni collegamento.
 
    - **0.. 1** per indicare che la partecipazione è facoltativa.
 
-   - **\*** per indicare che zero o più istanze di questo ruolo partecipano al collegamento.
+   - **\*** per dichiarare che zero o più istanze di questo ruolo partecipano al collegamento.
 
 > [!NOTE]
 > Molti team non inseriscono informazioni sulla molteplicità nei diagrammi caso di utilizzo, lasciando le molteplicità impostate sul valore predefinito 1. Al contrario, forniscono informazioni in descrizioni separate dei casi di utilizzo. In questo caso, verranno nascoste tutte le molteplicità nei diagrammi caso di utilizzo.
@@ -217,7 +217,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
     > [!NOTE]
     > Se si inserisce nel nuovo diagramma un attore e un caso di utilizzo già associati, l'associazione tra di loro verrà visualizzata automaticamente nel nuovo diagramma.
 
-## <a name="Details"></a>Descrizione dettagliata di casi d'uso
+## <a name="describing-use-cases-in-detail"></a><a name="Details"></a> Descrizione dettagliata di casi d'uso
  Un caso di utilizzo rappresenta:
 
 - Obiettivo di un attore nell'utilizzo del sistema, ad esempio l' **acquisto di un pasto**; e
@@ -270,7 +270,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Per eseguire il collegamento a un documento condiviso, un elemento OneNote o una pagina Web
 
-1. Ottenere l'URL dell'elemento condiviso. Questo può essere, ad esempio, un percorso di file di rete che inizia con '\\\\' o una pagina Web o un URL di SharePoint che inizia con ' http://' o un collegamento a una sezione, pagina o paragrafo di OneNote con inizio ' OneNote:'.
+1. Ottenere l'URL dell'elemento condiviso. Questo può essere, ad esempio, un percorso di file di rete che inizia con ' \\ \\ ' o una pagina Web o un URL di SharePoint che inizia con ' http://' o un collegamento a una sezione, pagina o paragrafo di OneNote con inizio ' OneNote:'.
 
 2. Nella casella degli strumenti fare clic su **artefatto** , quindi fare clic nel diagramma caso di utilizzo.
 
@@ -280,9 +280,9 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 > Fare doppio clic su un elemento per aprire il diagramma o il documento a cui è collegato.
 
 ### <a name="linking-use-cases-to-work-items"></a>Collegamento di casi di utilizzo a elementi di lavoro
- Se il progetto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] e si dispone di [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], è possibile collegare ogni caso di utilizzo a un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per informazioni su come creare questi collegamenti, vedere [collegare elementi del modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).
+ Se il progetto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] e si dispone [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] di, è possibile collegare ogni caso di utilizzo a un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)] . Per informazioni su come creare questi collegamenti, vedere [collegare elementi del modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).
 
- In questo modo è possibile:
+ Ciò consente di:
 
 - Descrivere il caso di utilizzo nell'elemento di lavoro collegato. In particolare, se il progetto usa il modello di processo formale di Visual Studio, è possibile collegarsi a un elemento di lavoro del caso di utilizzo. Questo tipo di elemento di lavoro fornisce campi per descrivere gli obiettivi e scenari del caso di utilizzo.
 
@@ -290,7 +290,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
 - Collegare le attività al caso di utilizzo in modo da consentire il monitoraggio dell'avanzamento del lavoro di sviluppo.
 
-## <a name="Structuring"></a>Strutturazione di casi d'uso
+## <a name="structuring-use-cases"></a><a name="Structuring"></a> Strutturazione di casi d'uso
  È consigliabile provare a descrivere il comportamento del sistema con pochi casi di utilizzo principali. Ogni caso di utilizzo di grandi dimensioni definisce un obiettivo principale che un attore raggiunge, ad esempio l'acquisto di un prodotto oppure, dal punto di vista del fornitore, l'offerta di prodotti in vendita.
 
  Dopo aver chiarito questi obiettivi, è possibile passare informazioni più dettagliate su come raggiungere ogni obiettivo e sulle variazioni negli obiettivi di base.
@@ -299,13 +299,13 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
  È possibile riepilogare in un diagramma caso di utilizzo le relazioni tra i casi di utilizzo principali e più dettagliati. Le seguenti sezioni descrivono quanto segue:
 
-- [Visualizzazione dei dettagli di un caso di utilizzo con inclusione](#Include)
+- [Visualizzazione dei dettagli di un caso di utilizzo con Includi](#Include)
 
-- [Condivisione degli obiettivi con generalizzazione](#Inheritance)
+- [Condivisione degli obiettivi con Generalizzazione](#Inheritance)
 
-- [Separazione di casi Variant con Extend](#Extend)
+- [Separazione dei casi varianti con Estendi](#Extend)
 
-### <a name="Include"></a>Visualizzazione dei dettagli di un caso di utilizzo con inclusione
+### <a name="showing-the-details-of-a-use-case-with-include"></a><a name="Include"></a> Visualizzazione dei dettagli di un caso di utilizzo con inclusione
  Usare una relazione di **inclusione** per mostrare che un caso d'uso descrive alcuni dei dettagli di un altro. Nell'illustrazione, **ordinare un pasto** include il **pagamento**, **scegliere menu**e **scegliere voce di menu**. Ognuno dei casi di utilizzo più dettagliati inclusi è un passaggio che l'attore o gli attori dovrebbero poter eseguire per raggiungere l'obiettivo complessivo del caso di utilizzo incluso. La freccia deve puntare al caso di utilizzo incluso più dettagliato.
 
 > [!CAUTION]
@@ -313,7 +313,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
  È possibile condividere casi di utilizzo inclusi. Nell'esempio, i casi d'uso **Order a meal** e **Subscribe to reviews** includono entrambi i **costi**.
 
- ![Casi d'uso scomposti con Includi](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
+ ![Casi di utilizzo scomposti con Includi](../modeling/media/uml-ucguideinclude.png "UML_UCGuideInclude")
 
  L'obiettivo e scenari di un caso di utilizzo incluso devono essere usati in modo indipendente in modo da poter essere inclusi in casi di utilizzo progettati in un secondo momento.
 
@@ -323,7 +323,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
 - Evitare di ripetere scenari condivisi in diversi casi di utilizzo.
 
-#### <a name="Steps"></a>Definizione dell'ordine dei passaggi dettagliati
+#### <a name="defining-the-order-of-the-detailed-steps"></a><a name="Steps"></a> Definizione dell'ordine dei passaggi dettagliati
  Il diagramma caso di utilizzo non indica l'ordine in cui è necessario eseguire i passaggi più dettagliati, né se ognuno di essi è sempre necessario.
 
  Per cancellare l'ordine dei passaggi, è possibile usare un **artefatto** per allineare un documento separato al caso di utilizzo incluso. Nell'esempio seguente viene riportato un diagramma di attività associato al caso di utilizzo di ordinazione di un pasto. In alternativa, è possibile usare un documento di testo contenente un elenco di passaggi o una sequenza di schermate. Per ulteriori informazioni, vedere [Descrizione dettagliata dei casi di utilizzo](#Details).
@@ -336,12 +336,12 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
   Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).
 
-  ![Passaggi del caso d'uso mostrati nel diagramma di attività collegato](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
+  ![Passaggi del caso di utilizzo mostrati in diagramma di attività collegato](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
 
-### <a name="Inheritance"></a>Condivisione degli obiettivi con generalizzazione
+### <a name="sharing-goals-with-generalization"></a><a name="Inheritance"></a> Condivisione degli obiettivi con generalizzazione
  Usare una relazione generalizzazione per dimostrare che un caso di utilizzo *specializzato* è un modo specifico per raggiungere gli obiettivi espressi da un altro caso d'uso *generale* . La freccia aperta deve puntare al caso di utilizzo più generale.
 
- ![Casi d'uso che mostrano la relazione generalizzazione](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
+ ![Casi di utilizzo che mostrano la relazione generalizzazione](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
 
  Ad esempio, **pay** generalizza il **pagamento tramite carta di credito** e **paga in contanti**.
 
@@ -368,10 +368,10 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
 4. È possibile spostare gli attori condivisi tra i casi di utilizzo specializzati al caso di utilizzo generale.
 
-### <a name="Extend"></a>Separazione di casi Variant con Extend
+### <a name="separating-variant-cases-with-extend"></a><a name="Extend"></a> Separazione di casi Variant con Extend
  Usare e un collegamento Estendi per indicare che un caso di utilizzo può aggiungere funzionalità a un altro caso di utilizzo in determinate circostanze. La freccia deve puntare al caso di utilizzo esteso principale.
 
- ![Un caso d'uso che ne estende un altro](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
+ ![Un caso di utilizzo che ne estende un altro](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
 
 > [!CAUTION]
 > È consigliabile non apportare cicli di relazioni di estensione che comportano la generalizzazione di se stesso da parte di un attore. I cicli possono generare errori.
@@ -407,7 +407,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
 - Questa estensione sarà disponibile solo in versioni specifiche del sistema. È possibile visualizzare ogni versione come sottosistema separato nel diagramma caso di utilizzo.
 
-## <a name="Subsystems"></a>Uso dei limiti del sottosistema
+## <a name="using-subsystem-boundaries"></a><a name="Subsystems"></a> Uso dei limiti del sottosistema
  Usare un limite del sottosistema per mostrare quali casi di utilizzo sono compresi nell'ambito del sistema.
 
 #### <a name="to-draw-a-subsystem-boundary"></a>Per creare un limite del sottosistema
@@ -420,7 +420,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
 3. Trascinare i casi di utilizzo esistenti all'interno o all'esterno del sottosistema per modificarne il contenuto.
 
-   \- oppure -
+   \- - oppure -
 
    Per creare un nuovo caso di utilizzo direttamente in un sottosistema, fare clic su **caso di utilizzo** nella casella degli strumenti, quindi fare clic all'interno del sottosistema.
 
@@ -438,7 +438,7 @@ In Visual Studio è possibile creare un *diagramma caso di utilizzo* per riepilo
 
  Utilizzare le relazioni di **dipendenza** per collegare sottosistemi che rappresentano varianti o versioni diverse.
 
- ![I sottosistemi mostrano diverse versioni di un sistema](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
+ ![I sottosistemi mostrano le diverse versioni di un sistema](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
 ## <a name="see-also"></a>Vedere anche
  [Modellare i requisiti utente](../modeling/model-user-requirements.md) [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md) [modificare modelli e diagrammi](../modeling/edit-uml-models-and-diagrams.md) [UML diagrammi caso d'uso: riferimento](../modeling/uml-use-case-diagrams-reference.md) [diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md) [diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md) [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md) [video: organizzazione delle funzionalità nei casi d'uso](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

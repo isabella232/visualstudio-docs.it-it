@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284958"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Trovare argomenti tramite l'indice del visualizzatore della Guida
@@ -77,7 +77,7 @@ Se non si trova una voce per la parola o la frase immessa, provare a eseguire le
 
     Se ad esempio si è immesso il termine "compilazione", provare invece "creazione".
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: trovare argomenti nel sommario](../help-viewer/find-topics-toc.md)
 - [Procedura: Eseguire la ricerca di argomenti](../help-viewer/find-topics.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetEngineFilter | Microsoft Docs
+title: 'IDebugProcess3:: GetEngineFilter | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9ebcec7a26bac7126d97c14f330664924da959cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200994"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
@@ -39,10 +39,10 @@ public int GetEngineFilter(
   
 #### <a name="parameters"></a>Parametri  
  `pEngineArray`  
- [out] Riferimento a una struttura che contiene gli identificatori univoci per i motori di debug.  
+ out Riferimento a una struttura che contiene identificatori univoci per i motori di debug.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

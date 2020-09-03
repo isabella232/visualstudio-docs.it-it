@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c83367881b7ed6a69fe10af8b7c68eb1692e3e6
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74706887"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Distribuzione di componenti COM con ClickOnce
@@ -31,7 +31,7 @@ ms.locfileid: "74706887"
 
 La distribuzione di componenti COM legacy è stata tradizionalmente un'attività difficile. I componenti devono essere registrati a livello globale e quindi possono causare effetti collaterali indesiderati tra le applicazioni sovrapposte. In genere, questa situazione non è un problema nelle applicazioni .NET Framework perché i componenti sono completamente isolati in un'applicazione o sono compatibili side-by-side. Visual Studio consente di distribuire componenti COM isolati sul sistema operativo Windows XP o versione successiva.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fornisce un meccanismo semplice e sicuro per la distribuzione di applicazioni .NET. Tuttavia, se le applicazioni utilizzano componenti COM legacy, sarà necessario eseguire passaggi aggiuntivi per la relativa distribuzione. In questo argomento viene descritto come distribuire componenti COM isolati e riferimenti a componenti nativi (ad esempio, da Visual Basic 6,0 C++o Visual).  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fornisce un meccanismo semplice e sicuro per la distribuzione di applicazioni .NET. Tuttavia, se le applicazioni utilizzano componenti COM legacy, sarà necessario eseguire passaggi aggiuntivi per la relativa distribuzione. In questo argomento viene descritto come distribuire componenti COM isolati e riferimenti a componenti nativi (ad esempio, da Visual Basic 6,0 o Visual C++).  
   
  Per altre informazioni sulla distribuzione di componenti COM isolati, vedere [semplificare la distribuzione di app con ClickOnce e com senza registrazione](/archive/msdn-magazine/2005/april/simplify-app-deployment-with-clickonce-and-registration-free-com).  
   
@@ -40,21 +40,21 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
   
  Per isolare un componente COM è necessario che venga registrato nel computer dello sviluppatore, ma non è necessario che sia registrato nel computer dell'utente finale. Per isolare un componente COM, è sufficiente impostare la proprietà **isolata** del riferimento su **true**. Per impostazione predefinita, questa proprietà è impostata su **false**, a indicare che deve essere considerata come un riferimento com registrato. Se questa proprietà è **true**, viene generato un manifesto per il componente in fase di compilazione. Causa inoltre la copia dei file corrispondenti nella cartella dell'applicazione durante l'installazione.  
   
- Quando il generatore di manifesti rileva un riferimento COM isolato, enumera tutte le voci `CoClass` nella libreria dei tipi del componente, associando ogni voce con i dati di registrazione corrispondenti e generando definizioni di manifesto per tutte le classi COM nel file della libreria dei tipi.  
+ Quando il generatore di manifesti rileva un riferimento COM isolato, enumera tutte le `CoClass` voci nella libreria dei tipi del componente, associando ogni voce con i dati di registrazione corrispondenti e generando definizioni di manifesto per tutte le classi com nel file della libreria dei tipi.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Distribuzione di componenti COM senza registrazione tramite ClickOnce  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tecnologia di distribuzione è particolarmente adatta per la distribuzione di componenti COM isolati, perché sia la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] che la registrazione gratuita richiedono che un componente disponga di un manifesto per poter essere distribuito.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] la tecnologia di distribuzione è particolarmente adatta per la distribuzione di componenti COM isolati, perché per la distribuzione è necessario [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] che un componente disponga di un manifesto.  
   
- In genere, l'autore del componente deve fornire un manifesto. In caso contrario, Visual Studio è in grado di generare automaticamente un manifesto per un componente COM. La generazione del manifesto viene eseguita durante il processo di pubblicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]; Per ulteriori informazioni, vedere [pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md). Questa funzionalità consente inoltre di sfruttare i componenti legacy creati negli ambienti di sviluppo precedenti, ad esempio Visual Basic 6,0.  
+ In genere, l'autore del componente deve fornire un manifesto. In caso contrario, Visual Studio è in grado di generare automaticamente un manifesto per un componente COM. La generazione del manifesto viene eseguita durante il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] processo di pubblicazione. per ulteriori informazioni, vedere [pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md). Questa funzionalità consente inoltre di sfruttare i componenti legacy creati negli ambienti di sviluppo precedenti, ad esempio Visual Basic 6,0.  
   
- Esistono due modi in cui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuisce i componenti COM:  
+ Esistono due modi per [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuire i componenti com:  
   
 - Usare il programma di avvio automatico per distribuire i componenti COM. Questa operazione funziona su tutte le piattaforme supportate.  
   
 - Usare l'isolamento del componente nativo (noto anche come distribuzione COM senza registrazione). Tuttavia, questo funzionerà solo su un sistema operativo Windows XP o versione successiva.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Esempio di isolamento e distribuzione di un semplice componente COM  
- Per dimostrare la distribuzione di componenti COM senza registrazione, questo esempio creerà un'applicazione basata su Windows in Visual Basic che fa riferimento a un componente COM nativo isolato creato con Visual Basic 6,0 e lo distribuisce usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+ Per dimostrare la distribuzione di componenti COM senza registrazione, questo esempio creerà un'applicazione basata su Windows in Visual Basic che fa riferimento a un componente COM nativo isolato creato con Visual Basic 6,0 e lo distribuisce usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
  Per prima cosa sarà necessario creare il componente COM nativo:  
   
@@ -69,7 +69,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
   
 3. In **Esplora soluzioni**fare doppio clic su **Class1. vb** per aprire l'editor di testo.  
   
-4. In Class1. vb aggiungere il codice seguente dopo il codice generato per il metodo `New`:  
+4. In Class1. vb aggiungere il codice seguente dopo il codice generato per il `New` Metodo:  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
     End Sub  
     ```  
   
-5. Compilare il componente. Scegliere **Compila soluzione**dal menu **Compila** .  
+5. Compilare il componente. Dal menu **Compila** scegliere **Compila soluzione**.  
   
 > [!NOTE]
 > COM senza registrazione supporta solo i tipi di progetto DLL e controlli COM. Non è possibile usare gli exe con COM senza registrazione.  
@@ -94,7 +94,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
   
 4. Fare clic con il pulsante destro del mouse sul nodo **riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.  
   
-5. Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **Sfoglia** , passare a VB6Hello. dll, quindi selezionarla.  
+5. Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **Sfoglia** , passare a VB6Hello.dll, quindi selezionarla.  
   
     Un riferimento **VB6Hello** viene visualizzato nell'elenco riferimenti.  
   
@@ -111,7 +111,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
    End Sub  
    ```  
   
-9. Eseguire l'applicazione. Scegliere **Avvia debug**dal menu **debug** .  
+9. Eseguire l'applicazione. Scegli **Avvia debug** dal menu **Debug**.  
   
    Successivamente, è necessario isolare il controllo. Ogni componente COM utilizzato dall'applicazione viene rappresentato nel progetto come riferimento COM. Questi riferimenti sono visibili nel nodo **riferimenti** della finestra **Esplora soluzioni** . Si noti che è possibile aggiungere riferimenti direttamente usando il comando **Aggiungi riferimento** nel menu **progetto** o indirettamente trascinando un controllo ActiveX nel form.  
   
@@ -123,20 +123,20 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
   
 2. Nella finestra **Proprietà** modificare il valore della proprietà **isolated** da **false** a **true**.  
   
-3. Scegliere **Compila soluzione**dal menu **Compila** .  
+3. Dal menu **Compila** scegliere **Compila soluzione**.  
   
-   A questo punto, quando si preme F5, l'applicazione funziona come previsto, ma ora è in esecuzione in COM senza registrazione. Per dimostrare questo problema, provare a annullare la registrazione del componente VB6Hello. dll ed eseguire RegFreeComDemo1. exe all'esterno dell'IDE di Visual Studio. Questa volta, quando si fa clic sul pulsante, funziona ancora. Se si rinomina temporaneamente il manifesto dell'applicazione, l'operazione avrà esito negativo.  
+   A questo punto, quando si preme F5, l'applicazione funziona come previsto, ma ora è in esecuzione in COM senza registrazione. Per dimostrare questo problema, provare a annullare la registrazione del componente VB6Hello.dll ed eseguire RegFreeComDemo1.exe all'esterno dell'IDE di Visual Studio. Questa volta, quando si fa clic sul pulsante, funziona ancora. Se si rinomina temporaneamente il manifesto dell'applicazione, l'operazione avrà esito negativo.  
   
 > [!NOTE]
-> È possibile simulare l'assenza di un componente COM eseguendo temporaneamente la registrazione. Aprire un prompt dei comandi, passare alla cartella del sistema digitando `cd /d %windir%\system32`, quindi annullare la registrazione del componente digitando `regsvr32 /u VB6Hello.dll`. È possibile registrarlo di nuovo digitando `regsvr32 VB6Hello.dll`.  
+> È possibile simulare l'assenza di un componente COM eseguendo temporaneamente la registrazione. Aprire un prompt dei comandi, passare alla cartella del sistema digitando `cd /d %windir%\system32` , quindi annullare la registrazione del componente digitando `regsvr32 /u VB6Hello.dll` . È possibile registrarlo di nuovo digitando `regsvr32 VB6Hello.dll` .  
   
- Il passaggio finale consiste nel pubblicare l'applicazione usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
+ Il passaggio finale consiste nel pubblicare l'applicazione usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] :  
   
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>Per pubblicare un aggiornamento di un'applicazione con un componente COM isolato  
   
 1. Scegliere **Pubblica RegFreeComDemo**dal menu **Compila** .  
   
-    Verrà visualizzata la pubblicazione guidata.  
+    Verrà visualizzata la Pubblicazione guidata.  
   
 2. Nella pubblicazione guidata, specificare un percorso sul disco del computer locale a cui è possibile accedere ed esaminare i file pubblicati.  
   
@@ -145,7 +145,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
    Se si esaminano i file pubblicati, si noterà che il file Sysmon. ocx è incluso. Il controllo è completamente isolato a questa applicazione, vale a dire che se il computer dell'utente finale dispone di un'altra applicazione che utilizza una versione diversa del controllo, non può interferire con l'applicazione.  
   
 ## <a name="referencing-native-assemblies"></a>Riferimento a assembly nativi  
- Visual Studio supporta riferimenti a Visual Basic 6,0 o C++ assembly nativi; tali riferimenti sono detti riferimenti nativi. È possibile stabilire se un riferimento è nativo verificando che la proprietà relativa al **tipo di file** sia impostata su **native** o **ActiveX**.  
+ Visual Studio supporta riferimenti a assembly nativi Visual Basic 6,0 o C++. tali riferimenti sono detti riferimenti nativi. È possibile stabilire se un riferimento è nativo verificando che la proprietà relativa al **tipo di file** sia impostata su **native** o **ActiveX**.  
   
  Per aggiungere un riferimento nativo, utilizzare il comando **Aggiungi riferimento** , quindi selezionare il manifesto. Alcuni componenti inseriscono il manifesto all'interno della DLL. In questo caso, è possibile scegliere semplicemente la DLL e Visual Studio lo aggiungerà come riferimento nativo se rileva che il componente contiene un manifesto incorporato. Visual Studio includerà anche automaticamente eventuali file o assembly dipendenti elencati nel manifesto se si trovano nella stessa cartella del componente a cui si fa riferimento.  
   
@@ -172,7 +172,7 @@ La distribuzione di componenti COM legacy è stata tradizionalmente un'attività
   
   Un componente COM può essere isolato una sola volta per ogni applicazione. Ad esempio, non è possibile isolare lo stesso componente COM da due progetti di **libreria di classi** diversi che fanno parte della stessa applicazione. In questo modo verrà generato un avviso di compilazione e l'applicazione non verrà caricata in fase di esecuzione. Per evitare questo problema, Microsoft consiglia di incapsulare i componenti COM in un'unica libreria di classi.  
   
-  Esistono diversi scenari in cui è richiesta la registrazione COM nel computer dello sviluppatore, anche se la distribuzione dell'applicazione non richiede la registrazione. Per la proprietà `Isolated` è necessario che il componente COM sia registrato nel computer dello sviluppatore per generare automaticamente il manifesto durante la compilazione. Non sono disponibili funzionalità di acquisizione delle registrazioni che richiamano la registrazione automatica durante la compilazione. Inoltre, le classi non definite in modo esplicito nella libreria dei tipi non verranno riflesse nel manifesto. Quando si utilizza un componente COM con un manifesto preesistente, ad esempio un riferimento nativo, potrebbe non essere necessario registrare il componente in fase di sviluppo. Tuttavia, la registrazione è obbligatoria se il componente è un controllo ActiveX e si desidera includerlo nella **casella degli strumenti** e nella finestra di progettazione Windows Forms.  
+  Esistono diversi scenari in cui è richiesta la registrazione COM nel computer dello sviluppatore, anche se la distribuzione dell'applicazione non richiede la registrazione. `Isolated`Per la proprietà è necessario che il componente COM sia registrato nel computer dello sviluppatore per generare automaticamente il manifesto durante la compilazione. Non sono disponibili funzionalità di acquisizione delle registrazioni che richiamano la registrazione automatica durante la compilazione. Inoltre, le classi non definite in modo esplicito nella libreria dei tipi non verranno riflesse nel manifesto. Quando si utilizza un componente COM con un manifesto preesistente, ad esempio un riferimento nativo, potrebbe non essere necessario registrare il componente in fase di sviluppo. Tuttavia, la registrazione è obbligatoria se il componente è un controllo ActiveX e si desidera includerlo nella **casella degli strumenti** e nella finestra di progettazione Windows Forms.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)

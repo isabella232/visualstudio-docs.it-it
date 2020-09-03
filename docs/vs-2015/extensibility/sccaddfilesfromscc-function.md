@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200917"
 ---
 # <a name="sccaddfilesfromscc-function"></a>Funzione SccAddFilesFromSCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzione consente di aggiungere un elenco di file dal controllo del codice sorgente al progetto attualmente aperto.  
+Questa funzione aggiunge un elenco di file dal controllo del codice sorgente al progetto attualmente aperto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,42 +42,42 @@ SCCRTN SccAddFilesFromSCC(
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto del plug-in controllo di origine.  
+ in Puntatore al contesto del plug-in del controllo del codice sorgente.  
   
  hWnd  
- [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
+ in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.  
   
  lpUser  
- [in, out] Il nome utente (fino a SCC_USER_SIZE, incluso il carattere di terminazione null).  
+ [in, out] Nome utente (fino a SCC_USER_SIZE, incluso il carattere di terminazione null).  
   
  lpAuxProjPath  
- [in, out] Stringa ausiliario che identifica il progetto (fino a `SCC_PRJPATH_`dimensione, incluso il carattere di terminazione null).  
+ [in, out] Stringa ausiliaria che identifica il progetto (fino alla `SCC_PRJPATH_` dimensione, incluso il carattere di terminazione null).  
   
  cFiles  
- [in] Numero di file specificato da `lpFilePaths`.  
+ in Numero di file specificati da `lpFilePaths` .  
   
  lpFilePaths  
  [in, out] Matrice di nomi di file da aggiungere al progetto corrente.  
   
  lpDestination  
- [in] Il percorso di destinazione in cui devono essere scritti i file.  
+ in Percorso di destinazione in cui devono essere scritti i file.  
   
  lpComment  
- [in] Il commento da applicare a ogni file da aggiungere.  
+ in Commento da applicare a ognuno dei file aggiunti.  
   
  pbResults  
- [in, out] Matrice di flag di set per indicare l'esito positivo (diverso da zero o TRUE) o negativo (zero o FALSE) per ogni file (dimensione della matrice deve essere almeno `cFiles` long).  
+ [in, out] Matrice di flag impostati per indicare l'esito positivo (valore diverso da zero o TRUE) o errore (zero o FALSE) per ogni file (la dimensione della matrice deve essere almeno `cFiles` Long).  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_E_PROJNOTOPEN|Progetto non è aperto.|  
-|SCC_E_OPNOTPERFORMED|La connessione non è presente nello stesso progetto come specificato da `lpAuxProjPath.`|  
-|SCC_E_NOTAUTHORIZED|Utente non è autorizzato ad aggiornare il database.|  
+|SCC_E_PROJNOTOPEN|Il progetto non è aperto.|  
+|SCC_E_OPNOTPERFORMED|La connessione non è allo stesso progetto specificata da `lpAuxProjPath.`|  
+|SCC_E_NOTAUTHORIZED|L'utente non è autorizzato ad aggiornare il database.|  
 |SCC_E_NONSPECIFICERROR|Errore sconosciuto.|  
-|SCC_I_RELOADFILE|Un progetto o il file deve essere ricaricato.|  
+|SCC_I_RELOADFILE|È necessario ricaricare un file o un progetto.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284932"
 ---
 # Procedura: Trovare argomenti nel sommario
@@ -31,7 +31,7 @@ Nella scheda **Contenuto** è possibile usare il sommario per trovare le informa
 
 ## Filtrare il sommario
 
-È possibile filtrare il sommario per limitare l'ambito degli argomenti visualizzati nella scheda **contenuto** . i titoli vengono visualizzati nell'elenco solo se contengono la radice del termine specificato. Ad esempio, se si specifica la parola "risoluzione" come filtro, verranno visualizzati solo i titoli contenenti la parola "risolvere" o "risoluzione". I nodi i cui titoli non contengono il termine verranno compressi in un unico nodo con i puntini di sospensione (**...**).
+È possibile filtrare il sommario per limitare l'ambito degli argomenti visualizzati nella scheda **contenuto** . I titoli vengono visualizzati nell'elenco solo se contengono la radice del termine specificato. Ad esempio, se si specifica la parola "risoluzione" come filtro, verranno visualizzati solo i titoli contenenti la parola "risolvere" o "risoluzione". I nodi i cui titoli non contengono il termine verranno compressi in un unico nodo con i puntini di sospensione (**...**).
 
 1. Scegliere la scheda **Contenuto**.
 
@@ -50,7 +50,7 @@ Se un argomento è stato aperto tramite l'indice o le funzionalità di ricerca f
 
      Viene aperta la scheda **Contenuto** in cui viene visualizzata la posizione dell'argomento nel sommario.
 
-## Vedi anche
+## Vedere anche
 
 - [Procedura: trovare argomenti nell'indice](../help-viewer/find-topics-index.md)
 - [Procedura: Eseguire la ricerca di argomenti](../help-viewer/find-topics.md)

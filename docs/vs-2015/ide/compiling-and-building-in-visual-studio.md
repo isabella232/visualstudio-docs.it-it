@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300264"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilazione e creazione in Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "74300264"
 ## <a name="choosing-a-build-method"></a>Scelta di un metodo di compilazione
  È possibile compilare un'applicazione utilizzando le opzioni di compilazione predefinite nell'IDE, in un prompt dei comandi o tramite Team Foundation Build. Ognuna di queste opzioni utilizza MSBuild come tecnologia sottostante e ogni approccio presenta vantaggi specifici, come illustrato nella tabella seguente.
 
-|Metodo di compilazione|Vantaggi|Per altre informazioni|
+|Metodo di compilazione|Vantaggi|Per ulteriori informazioni|
 |------------------|--------------|--------------------------|
 |Utilizzo di IDE|- È più semplice creare ed eseguire compilazioni immediatamente.<br />- È possibile eseguire compilazioni multiprocessore per progetti C++ e C#.<br />- È possibile personalizzare alcuni aspetti del sistema di compilazione.|[Building and Cleaning Projects and Solutions in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) (Compilazione e pulizia di progetti e soluzioni in Visual Studio)|
 |Esecuzione di una riga di comando di MSBuild|- È possibile compilare progetti senza installare Visual Studio.<br />- È possibile eseguire compilazioni multiprocessore per tutti i tipi di progetto.<br />- È possibile personalizzare la maggior parte delle aree del sistema di compilazione.|[MSBuild](../msbuild/msbuild.md)|
@@ -40,7 +40,7 @@ ms.locfileid: "74300264"
 
  Nell'IDE è possibile eseguire le attività aggiuntive seguenti:
 
-- [Modificare la directory di output della build](../ide/how-to-change-the-build-output-directory.md).
+- [Modificare la directory dell'output di compilazione](../ide/how-to-change-the-build-output-directory.md).
 
 - [Identificare i progetti dipendenti dall'output di un altro progetto per eseguire correttamente la compilazione](../ide/how-to-create-and-remove-project-dependencies.md).
 

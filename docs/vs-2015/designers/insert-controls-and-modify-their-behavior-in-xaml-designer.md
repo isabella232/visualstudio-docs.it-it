@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02d51c5799391863262d285e1cda209a3b7938d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300843"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Inserire i controlli e modificarne il comportamento in XAML Designer
@@ -27,14 +27,14 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
 
 - [Impostare i controlli per l'esecuzione di operazioni](#Modify)
 
-## <a name="Insert"></a> Aggiungere controlli alla tavola da disegno
+## <a name="add-controls-to-the-artboard"></a><a name="Insert"></a> Aggiungere controlli alla tavola da disegno
  È possibile trascinare controlli dal pannello **Asset** nella **tavola da disegno**e quindi modificarli nella finestra **Proprietà** .
 
- ![Asset &#45; &#45; di Blend FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
+ ![Blend &#45; asset &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
 
  Questi video illustrano come usare alcuni dei controlli più comuni.
 
-|Control|Breve video:|
+|Controllo|Guarda un breve video|
 |-------------|-------------------------|
 |`Menu` ![](../designers/media/015a263c-0b2b-4253-ac57-b86fcb8c9591.png "015a263c-0b2b-4253-ac57-b86fcb8c9591")|![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [aggiungere i controlli](https://www.youtube.com/watch?v=ra4AHfgD4Ys&list=PLBDF977B2F1DAB358&index=45)|
 |`Button` ![](../designers/media/05df1779-a68f-436b-b834-a91b7995a3ec.png "05df1779-a68f-436b-b834-a91b7995a3ec")|![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [progettare un pulsante](http://www.popscreen.com/v/6A4gb/Microsoft-Expression-Blend-Designing-a-Button)|
@@ -45,7 +45,7 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
 ### <a name="make-a-control-out-of-an-image-shape-or-path"></a>Creare un controllo da un'immagine, una forma o un percorso
  È possibile trasformare qualsiasi oggetto in un controllo.
 
- ![Finestra di dialogo Crea controllo Blend](../designers/media/blend-makeintocontrol-xaml.png "blend_MakeIntoControl_XAML")
+ ![Finestra di dialogo Crea controllo di Blend](../designers/media/blend-makeintocontrol-xaml.png "blend_MakeIntoControl_XAML")
 
  Immaginare, ad esempio, l'immagine di un televisore al centro di una pagina. È possibile creare controlli da piccole immagini simili ai pulsanti del televisore per consentire agli utenti di cambiare canale facendo clic su questi pulsanti
 
@@ -53,7 +53,7 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
 
  Per creare un controllo, selezionare un oggetto. Scegliere quindi **Crea controllo** dal menu **Strumenti**.
 
-## <a name="Modify"></a> Impostare i controlli per l'esecuzione di operazioni
+## <a name="make-controls-do-things"></a><a name="Modify"></a> Eseguire operazioni sui controlli
  I controlli possono eseguire azioni durante le interazioni degli utenti, ad esempio possono avviare un'animazione, aggiornare un'origine dati o riprodurre un video.
 
  Per impostare i controlli per l'esecuzione di operazioni, usare *trigger*, *comportamenti*ed *eventi* .
@@ -65,14 +65,14 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
 
  **Guarda un breve video:** ![Configura le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Aggiungi un trigger di proprietà](http://www.popscreen.com/v/6A4gO/Microsoft-Expression-Blend-Adding-a-Property-Trigger).
 
-### <a name="behaviors"></a>comportamenti
+### <a name="behaviors"></a>Comportamenti
  Un *comportamento* è un pacchetto di codice riutilizzabile che consente di eseguire altre operazioni oltre alla modifica delle proprietà, ad esempio di eseguire query su un servizio dati. Blend include una piccola raccolta di comportamenti, ma è possibile aggiungerne altri. Trascinare un comportamento su un oggetto qualsiasi nella tavola da disegno e quindi personalizzare il comportamento impostando le proprietà.
 
- ![Controllo FluidMoveBehavior nel pannello Proprietà](../designers/media/b4-fluidmovebehaviorproperties-sample.png "b4_FluidMoveBehaviorProperties_Sample")
+ ![FluidMoveBehavior nel pannello Proprietà](../designers/media/b4-fluidmovebehaviorproperties-sample.png "b4_FluidMoveBehaviorProperties_Sample")
 
  **Guardare un breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Suggerimenti per Blend: Introduzione all'uso dei comportamenti parte 1](https://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
-### <a name="events"></a>Events
+### <a name="events"></a>Eventi
  Per la massima flessibilità è possibile gestire un *evento*. In tal caso però sarà necessario scrivere codice.
 
  **Breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [aggiungere un evento del mouse](https://www.youtube.com/watch?v=2PMxAlb-x_E).

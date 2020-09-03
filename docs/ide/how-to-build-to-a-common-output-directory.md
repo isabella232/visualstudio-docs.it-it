@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a499b5ca5ea64dd9ded10f82b1af43258f346d3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284776"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Procedura: Compilare in una directory di output comune
@@ -34,7 +34,7 @@ Per impostazione predefinita, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 
 4. Ripetere i passaggi da 1 a 3 per tutti i progetti della soluzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
 - [Procedura: modificare la directory dell'output di compilazione](../ide/how-to-change-the-build-output-directory.md)

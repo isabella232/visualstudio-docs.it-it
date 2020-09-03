@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+title: 'IDebugProcessEx2:: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: faca728144bde572d8a1d3424fbfcf908403d679
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202825"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
@@ -44,19 +44,19 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>Parametri  
  `guidLaunchingEngine`  
- [in] Il `GUID` di un CRI che deve essere utilizzato per avviare programmi (e si presuppone per aggiungere nodi di un proprio programma).  
+ in `GUID` Di un de da usare per avviare i programmi (si presuppone che aggiunga i propri nodi del programma).  
   
  `rgguidSpecificEngines`  
- [in] Matrice di `GUID`s di DEs per il programma che verranno aggiunti i nodi.  
+ in Matrice di `GUID` des per cui verranno aggiunti i nodi del programma.  
   
  `celtSpecificEngines`  
- [in] I numerosi `GUID`s nel `rgguidSpecificEngines` matrice.  
+ in Numero di `GUID` s nella `rgguidSpecificEngines` matrice.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- [I nodi di programma](../../../extensibility/debugger/program-nodes.md) verranno aggiunti per ogni Germania elencati nella `rgguidSpecificEngines`, escluso il motore che esegue l'applicazione (come specificato in `guidLaunchingEngine`), che vengono utilizzati per aggiungere il proprio nodo programma quando avvia un programma.  
+## <a name="remarks"></a>Osservazioni  
+ I [nodi del programma](../../../extensibility/debugger/program-nodes.md) verranno aggiunti per ogni de elencato in, `rgguidSpecificEngines` escluso il motore di avvio (come indicato in `guidLaunchingEngine` ), che si presuppone aggiungere il proprio nodo di programma all'avvio di un programma.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   

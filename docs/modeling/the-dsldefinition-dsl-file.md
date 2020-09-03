@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114926"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
-Questo argomento descrive la struttura del file DslDefinition. DSL nel progetto DSL di una soluzione [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], che definisce un *linguaggio specifico di dominio*. Il file DslDefinition. DSL descrive le classi e le relazioni di un linguaggio specifico di dominio, insieme al diagramma, alle forme, ai connettori, al formato di serializzazione e alla **casella degli strumenti** del linguaggio specifico di dominio e dei relativi strumenti di modifica. In una soluzione di linguaggio specifico di dominio, il codice che definisce tali strumenti viene generato in base alle informazioni presenti nel file DslDefinition.dsl.
+Questo argomento descrive la struttura del file DslDefinition. DSL nel progetto DSL di una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] soluzione, che definisce un *linguaggio specifico di dominio*. Il file DslDefinition. DSL descrive le classi e le relazioni di un linguaggio specifico di dominio, insieme al diagramma, alle forme, ai connettori, al formato di serializzazione e alla **casella degli strumenti** del linguaggio specifico di dominio e dei relativi strumenti di modifica. In una soluzione di linguaggio specifico di dominio, il codice che definisce tali strumenti viene generato in base alle informazioni presenti nel file DslDefinition.dsl.
 
 In genere, si usa il *finestra di progettazione Domain-Specific Language* per modificare il file DslDefinition. DSL. Poiché il formato del file DslDefinition.dsl non elaborato è XML, è possibile aprirlo in un editor XML. Può risultare utile comprendere quali informazioni sono contenute nel file e come sono organizzate per eseguire il debug ed estendere le funzionalità.
 
@@ -26,9 +26,9 @@ Gli esempi riportati in questo argomento provengono dal modello di soluzione Dia
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sezioni del file DslDefinition.dsl
 
-L'elemento radice è \<> DSL e i relativi attributi identificano il nome del linguaggio specifico di dominio, lo spazio dei nomi e i numeri di versione principale e secondario per il controllo delle versioni. Lo schema `DslDefinitionModel` definisce il contenuto e la struttura di un file DslDefinition.dsl valido.
+L'elemento radice è \<Dsl> e i relativi attributi identificano il nome del linguaggio specifico di dominio, lo spazio dei nomi e i numeri di versione principale e secondario per il controllo delle versioni. Lo schema `DslDefinitionModel` definisce il contenuto e la struttura di un file DslDefinition.dsl valido.
 
-Gli elementi figlio dell'elemento \<DSL > radice sono i seguenti:
+Gli elementi figlio dell' \<Dsl> elemento radice sono i seguenti:
 
 ### <a name="classes"></a>Classi
 
@@ -40,7 +40,7 @@ Questa sezione definisce le relazioni incluse nel modello. L'origine e la destin
 
 ### <a name="types"></a>Tipi
 
-Questa sezione definisce i tipi ed elenca i relativi spazi dei nomi. Le proprietà di dominio sono di due tipi. `DomainEnumerations` sono definiti nel modello e generano i tipi in DomainModel.cs. `ExternalTypes` fanno riferimento a tipi definiti altrove (ad esempio `String` o `Int32`) e non generano nulla.
+Questa sezione definisce i tipi ed elenca i relativi spazi dei nomi. Le proprietà di dominio sono di due tipi. `DomainEnumerations` sono definiti nel modello e generano i tipi in DomainModel.cs. `ExternalTypes` fare riferimento ai tipi definiti altrove (ad esempio `String` o `Int32` ) e non generare alcun elemento.
 
 ### <a name="shapes"></a>Forme
 
@@ -148,7 +148,7 @@ Ogni classe ha un set di proprietà e può avere una classe base. Nell'esempio D
 </DomainClass>
 ```
 
-`NamedElement` è la base di molte altre classi, ad esempio `Component`, che ha proprietà proprie oltre alla proprietà `Name`, ereditata da `NamedElement`. Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
+`NamedElement` è la base di molte altre classi, ad esempio `Component` , che ha proprietà proprie oltre alla `Name` proprietà, da cui eredita `NamedElement` . Il nodo figlio BaseClass contiene un riferimento a un moniker. Poiché la classe di riferimento si trova nello stesso spazio dei nomi, nel moniker è necessario solo il suo nome:
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -168,13 +168,13 @@ Ogni classe di dominio, incluse le relazioni, le forme, i connettori e i diagram
 
 - **ID.** Questo attributo è un GUID. Se non si specifica un valore nel file, la finestra di progettazione del linguaggio specifico di dominio crea un valore (nelle figure di questo documento, questo attributo è in genere omesso per questioni di spazio).
 
-- **Nome e spazio dei nomi.** Questi attributi specificano il nome e lo spazio dei nomi della classe nel codice generato. Entrambi devono essere be univoci nel linguaggio specifico di dominio.
+- **Name e Namespace.**  Questi attributi specificano il nome e lo spazio dei nomi della classe nel codice generato. Entrambi devono essere be univoci nel linguaggio specifico di dominio.
 
 - **InheritanceModifier.** Questo attributo è "abstract", "sealed" o non specificato.
 
 - **DisplayName.** Questo attributo è il nome visualizzato nella finestra **Proprietà** . L'attributo DisplayName può contenere spazi e altri segni di punteggiatura.
 
-- **GeneratesDoubleDerived.** Se questo attributo è impostato su True, vengono generate due classi, di cui una è una sottoclasse dell'altra. Tutti i metodi generati si trovano nella classe base e i costruttori nella sottoclasse. Impostando questo attributo, è possibile eseguire l'override di qualsiasi metodo generato nel codice personalizzato.
+- **GeneratesDoubleDerived.**  Se questo attributo è impostato su True, vengono generate due classi, di cui una è una sottoclasse dell'altra. Tutti i metodi generati si trovano nella classe base e i costruttori nella sottoclasse. Impostando questo attributo, è possibile eseguire l'override di qualsiasi metodo generato nel codice personalizzato.
 
 - **HasCustomConstructor**. Se questo attributo è impostato su True, il costruttore viene omesso dal codice generato per poter scrivere una versione personalizzata.
 
@@ -261,7 +261,7 @@ Ogni relazione contiene ruoli di origine e di destinazione con i seguenti attrib
 
 Oltre agli attributi e ai nodi figlio disponibili per tutte le classi, ogni relazione ha i seguenti attributi:
 
-- **IsEmbedding**. Questo attributo booleano specifica se la relazione fa parte dell'albero di incorporamento. Ogni modello deve formare un albero con le relative relazioni di incorporamento. Ogni classe di dominio deve quindi essere la destinazione di almeno una relazione di incorporamento, a meno che non sia la radice di un modello.
+- **Incorporamento**. Questo attributo booleano specifica se la relazione fa parte dell'albero di incorporamento. Ogni modello deve formare un albero con le relative relazioni di incorporamento. Ogni classe di dominio deve quindi essere la destinazione di almeno una relazione di incorporamento, a meno che non sia la radice di un modello.
 
 - **AllowsDuplicates**. Questo attributo booleano, impostato su False per impostazione predefinita, si applica solo alle relazioni con una molteplicità "molti" sia come origine che come destinazione. Determina se gli utenti del linguaggio possono connettere una coppia di elementi di origine e destinazione con più collegamenti della stessa relazione.
 
@@ -293,7 +293,7 @@ L'esempio Diagramma dei componenti contiene un percorso nell'elemento ParentElem
 
 In questo esempio, InPort è una sottoclasse di ComponentPort e ha una relazione ComponentHasPorts. La proprietà è denominata Component.
 
-Quando si C# scrive in questo modello, è possibile passare attraverso un collegamento in un unico passaggio usando la proprietà generata dalla relazione su ciascuna delle classi correlate:
+Quando si scrive codice C# per questo modello, è possibile attraversare un collegamento in un unico passaggio tramite la proprietà che la relazione genera su ciascuna delle classi che collega:
 
 ```
      InPort port; ...  Component c = port.Component;
@@ -488,7 +488,7 @@ Il file DslDefinition.dsl è un file serializzato e risulta conforme a una defin
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
-- L'attributo **XmlSerializationBehavior** è incorporato nell'attributo `Dsl`, ma l'attributo **ometteelement** è stato impostato sulla relazione di incorporamento. Quindi, nessun attributo `RoleElementName` interviene. Al contrario, un attributo **ClassData** è l'attributo `RoleElementName` della relazione di incorporamento tra un attributo **XmlSerializationBehavior** e un attributo **XmlClassData** .
+- L'attributo **XmlSerializationBehavior** è incorporato nell' `Dsl` attributo, ma l'attributo **omettielement** è stato impostato sulla relazione di incorporamento. Quindi, nessun attributo `RoleElementName` interviene. Al contrario, un attributo **ClassData** è l' `RoleElementName` attributo della relazione di incorporamento tra un attributo **XmlSerializationBehavior** e un attributo **XmlClassData** .
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...

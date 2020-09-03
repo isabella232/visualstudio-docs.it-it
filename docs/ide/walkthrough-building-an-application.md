@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Compilare un'applicazione"
+title: "Procedura dettagliata: Creare un'applicazione"
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115403"
 ---
-# <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Compilare un'applicazione
+# <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Creare un'applicazione
 
 Completando questa procedura dettagliata è possibile acquisire familiarità con numerose opzioni che possono essere configurate quando si compilano applicazioni con Visual Studio. Verrà illustrato come creare una configurazione della build personalizzata, nascondere alcuni messaggi di avviso e aumentare le informazioni di output di compilazione per un'applicazione di esempio.
 
@@ -35,15 +35,15 @@ Quando si crea una soluzione, le configurazioni della build di versione e di deb
 
    ![Menu Compila, comando Gestione configurazione](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Nell'elenco **Configurazione soluzione attiva** scegliere ** \<Nuovo... \>**.
+1. Nell'elenco **Configurazione soluzione attiva** scegliere **\<New...\>** .
 
 1. Nella finestra di dialogo **Nuova configurazione soluzione** assegnare il nome `Test` alla nuova configurazione, copiare le impostazioni dalla configurazione **Debug** esistente e quindi scegliere **OK**.
 
    ![Finestra di dialogo Nuova configurazione soluzione](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Nell'elenco **Piattaforma soluzione attiva** scegliere **\<Nuova...\>**.
+1. Nell'elenco **piattaforma soluzione attiva** scegliere **\<New...\>** .
 
-1. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64**e non copiare le impostazioni dalla piattaforma x86.
+1. Nella finestra di dialogo **nuova piattaforma soluzione** scegliere **x64**e non copiare le impostazioni dalla piattaforma x86.
 
    ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -65,7 +65,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 ### <a name="build-the-solution"></a>Compilare la soluzione
 
-- Nella barra dei menu scegliere **Compila** > **soluzione**oppure premere **CTRL**+**MAIUSC B**+**B**.
+- Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**oppure premere **CTRL** + **MAIUSC** + **B**.
 
     Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata.
 
@@ -75,7 +75,7 @@ A questo punto viene presentata la parte del codice che determina un avviso gene
 
 1. Nel progetto C# aprire il file *ExpenseReportPage.xaml.cs*. Nel metodo **ExpenseReportPage** aggiungere il codice seguente: `int i;`.
 
-    o
+    OR
 
     Nel progetto Visual Basic aprire il file *ExpenseReportPage.xaml.vb*. Nel costruttore personalizzato **Public Sub New... ** aggiungere il codice seguente: `Dim i`.
 
@@ -93,7 +93,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-1. Nella barra dei menu scegliere **Visualizza** > **pagine delle proprietà.**
+1. Sulla barra dei menu scegliere **Visualizza**  >  **pagine delle proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
@@ -113,7 +113,7 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Scegliere il nodo di progetto di primo livello in **Esplora soluzioni**.
 
-2. Nella barra dei menu scegliere **Visualizza** > **pagine delle proprietà.**
+2. Sulla barra dei menu scegliere **Visualizza**  >  **pagine delle proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
@@ -148,15 +148,15 @@ Nella finestra **Output** vengono visualizzati i risultati della compilazione. L
 
 1. Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere **Normale** e quindi **OK**.
 
-1. Nella barra dei menu scegliere **Compila** > **soluzione pulita**.
+1. Sulla barra dei menu scegliere **Compila**  >  **soluzione pulita**.
 
 1. Compilare la soluzione e quindi esaminare le informazioni nella finestra **Output**.
 
      Le informazioni sulla compilazione includono l'ora di inizio della compilazione (indicata all'inizio) e l'ordine in cui i file sono stati elaborati. Queste informazioni includono anche la sintassi del compilatore effettiva che Visual Studio esegue durante la compilazione.
 
-     Ad esempio, nella compilazione in C, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso, **0168**, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
+     Ad esempio, nella compilazione C#, l'opzione [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) elenca il codice di avviso, **0168**, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
 
-     Nella build di Visual Basic/ [nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, pertanto non vengono visualizzati avvisi.
+     In Visual Basic Build [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) non include avvisi specifici da escludere, pertanto non viene visualizzato alcun avviso.
 
     > [!TIP]
     > È possibile cercare il contenuto della finestra **Output** se si visualizza la finestra di dialogo **Trova** scegliendo i tasti **CTRL**+**F**.
@@ -186,7 +186,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
      Ad esempio, è possibile specificare `\\myserver\builds`.
 
     > [!IMPORTANT]
-    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere **il** OK pulsante nella finestra di messaggio.
+    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere il pulsante **OK** nella finestra di messaggio.
 
 1. Compilare l'applicazione.
 
@@ -209,7 +209,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
      Ad esempio è possibile specificare `\\myserver\builds`.
 
     > [!IMPORTANT]
-    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere **il** OK pulsante nella finestra di messaggio.
+    > Potrebbe essere visualizzata una finestra di messaggio che informa che la condivisione di rete specificata potrebbe non essere una posizione attendibile. Se si considera attendibile il percorso specificato, scegliere il pulsante **OK** nella finestra di messaggio.
 
 1. Nella **barra degli strumenti Standard** impostare le opzioni Configurazioni soluzione su **Release** e Piattaforme soluzione su **x86**.
 
@@ -223,6 +223,6 @@ Congratulazioni! Questa procedura dettagliata è stata completata correttamente.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Compilare un progetto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Procedura dettagliata: compilare un progetto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Panoramica della precompilazione del progetto di applicazione Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Procedura dettagliata: Usare MSBuild](../msbuild/walkthrough-using-msbuild.md)

@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3cf7308b3302c682f32a2db9837f86cd0173260
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203296"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Il debug in modalità mista per i processi IA64 non è supportato.
@@ -28,11 +28,11 @@ ms.locfileid: "68203296"
 
 Visual Studio non supporta debug in modalità mista di codice gestito e nativo nei processi IA64. Questo significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.  
   
-### <a name="workarounds"></a>Soluzioni  
+### <a name="workarounds"></a>Soluzioni alternative  
   
 - Eseguire il debug del codice gestito e del codice nativo in sessioni di debug separate.  
   
-     \- oppure -  
+     –oppure–  
   
      Eseguire il debug del codice misto come processo a 32 bit, come descritto nelle procedure che seguono.  
   
@@ -50,7 +50,7 @@ Visual Studio non supporta debug in modalità mista di codice gestito e nativo n
   
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, quindi fare clic su **Proprietà** nel menu di scelta rapida.  
   
-2. Nelle pagine delle proprietà fare clic su **Piattaforma** e selezionare Win32 dall'elenco di piattaforme.  
+2. Nelle pagine delle proprietà fare clic su **piattaforma** e selezionare Win32 dall'elenco di piattaforme.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Eseguire il debug di applicazioni a 64 Bit](../debugger/debug-64-bit-applications.md)
+ [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)

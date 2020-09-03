@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905201"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementazione della colorazione della sintassi
-Quando il servizio di linguaggio fornisce la colorazione della sintassi, il parser converte una riga di testo in una matrice di elementi colorabili e restituisce i tipi di token corrispondenti a tali elementi colorabili. Il parser deve restituire i tipi di token che appartengono a un elenco di elementi colorabili. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Visualizza ogni elemento colorabile nella finestra del codice in base agli attributi assegnati dall'oggetto Colorer al tipo di token appropriato.
+Quando il servizio di linguaggio fornisce la colorazione della sintassi, il parser converte una riga di testo in una matrice di elementi colorabili e restituisce i tipi di token corrispondenti a tali elementi colorabili. Il parser deve restituire i tipi di token che appartengono a un elenco di elementi colorabili. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Visualizza ogni elemento colorabile nella finestra del codice in base agli attributi assegnati dall'oggetto Colorer al tipo di token appropriato.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]non specifica un'interfaccia del parser e l'implementazione del parser è completa. Viene tuttavia fornita un'implementazione del parser predefinita nel progetto di pacchetto del linguaggio di Visual Studio. Per il codice gestito, il Framework di pacchetto gestito (MPF) fornisce il supporto completo per la colorazione del testo.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non specifica un'interfaccia del parser e l'implementazione del parser è completa. Viene tuttavia fornita un'implementazione del parser predefinita nel progetto di pacchetto del linguaggio di Visual Studio. Per il codice gestito, il Framework di pacchetto gestito (MPF) fornisce il supporto completo per la colorazione del testo.
 
  I servizi di linguaggio legacy sono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per ulteriori informazioni sul nuovo modo per implementare la colorazione della sintassi, vedere [procedura dettagliata: evidenziazione del testo](../../extensibility/walkthrough-highlighting-text.md).
 

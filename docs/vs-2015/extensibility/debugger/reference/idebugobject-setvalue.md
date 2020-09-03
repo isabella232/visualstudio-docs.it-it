@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Microsoft Docs
+title: 'IDebugObject:: SetValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d898852c6bcca42cb0df1e7fab1597df74427a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203270"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Imposta il valore dell'oggetto da una serie consecutiva di byte.  
+Imposta il valore dell'oggetto da una serie di byte consecutivi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int SetValue(
   
 #### <a name="parameters"></a>Parametri  
  `pValue`  
- [in] Matrice di byte che rappresenta il nuovo valore.  
+ in Matrice di byte che rappresenta il nuovo valore.  
   
  `nSize`  
- [in] Le dimensioni del valore in byte.  
+ in Dimensioni in byte del valore.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- I valori nella matrice vengono copiati [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto, sostituendo i valori esistenti. Le dimensioni del nuovo valore possono essere maggiore o minore di quello esistente. Ciò `IDebugObject` non può essere un riferimento null.  
+## <a name="remarks"></a>Osservazioni  
+ I valori nella matrice vengono copiati in questo oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , sostituendo qualsiasi valore esistente. La dimensione del nuovo valore può essere maggiore o minore del valore esistente. `IDebugObject`Non può essere un riferimento null.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

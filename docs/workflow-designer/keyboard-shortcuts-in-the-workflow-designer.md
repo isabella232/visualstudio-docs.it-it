@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115394"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
@@ -29,7 +29,7 @@ All'interno di Visual Studio, i collegamenti globali e i collegamenti di debug s
 
 Nella tabella seguente vengono riepilogati i tasti di scelta rapida predefiniti assegnati ai comandi Progettazione flussi di lavoro.
 
-|Collegamento|Scopo|
+|Tasto di scelta rapida|Scopo|
 |-|-------------|
 |CTRL+E, A|Mostra o nasconde Progettazione argomenti.|
 |CTRL+E, C|Comprime l'attività selezionata sul posto.|
@@ -84,6 +84,6 @@ Per impostazione predefinita, i tasti di scelta rapida predefiniti per Visual Ba
   - Incolla
   - Seleziona tutto
   - Annulla
-  - Ripristina
+  - Ripristinare
 
 - Per modificare il mapping dei tasti di scelta rapida per i comandi di modifica delle espressioni all'interno Progettazione flussi di lavoro in Visual Studio, modificare i collegamenti nell'ambito del Progettazione flussi di lavoro. Le modifiche apportate nell'ambito dell'editor di testo non vengono applicate automaticamente ai Progettazione flussi di lavoro. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.

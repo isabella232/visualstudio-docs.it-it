@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPointerObject::Dereference . Documenti Microsoft
+title: IDebugPointerObject::D ereference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725569"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
@@ -43,13 +43,13 @@ int Dereference(
 
 ## <a name="parameters"></a>Parametri
 `dwIndex`\
-[in] Offset di byte semplice dall'inizio dell'oggetto a cui punta.
+in Offset di byte semplice dall'inizio dell'oggetto a cui punta.
 
 `ppObject`\
-[fuori] Restituisce un [Oggetto IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto a cui punta, più l'offset, se presente.
+out Restituisce un oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto a cui punta, più l'offset, se presente.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se questo oggetto non punta a un altro oggetto.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se l'oggetto non punta a un altro oggetto.
 
 ## <a name="remarks"></a>Osservazioni
  L'oggetto a cui punta può essere un tipo primitivo o più complesso, ad esempio una classe o una struttura.

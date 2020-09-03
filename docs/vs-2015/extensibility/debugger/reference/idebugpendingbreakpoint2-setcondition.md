@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: secondition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d9db02ada04b236ec190d11568eb1f4f35db6244
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201036"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Imposta o modifica la condizione associata con il punto di interruzione in sospeso.  
+Imposta o modifica la condizione associata al punto di interruzione in sospeso.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,13 +41,13 @@ int SetCondition( 
   
 #### <a name="parameters"></a>Parametri  
  `bpCondition`  
- [in] Oggetto [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struttura che specifica la condizione da impostare.  
+ in Struttura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) che specifica la condizione da impostare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Tutte le condizioni che è stato precedentemente associata il punto di interruzione in sospeso vengono perse. Tutti i punti di interruzione associati da questo oggetto in sospeso punto di interruzione vengono chiamati per impostare le relative condizioni sul valore specificato nel `bpCondition` parametro.  
+## <a name="remarks"></a>Osservazioni  
+ Tutte le condizioni precedentemente associate al punto di interruzione in sospeso vengono perse. Vengono chiamati tutti i punti di interruzione associati da questo punto di interruzione in sospeso per impostare la relativa condizione sul valore specificato nel `bpCondition` parametro.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

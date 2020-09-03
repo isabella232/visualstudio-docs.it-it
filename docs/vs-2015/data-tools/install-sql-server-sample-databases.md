@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299628"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installare i database di esempio di SQL Server
@@ -27,7 +27,7 @@ I database di esempio sono utili per sperimentare query SQL e LINQ, associazione
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Per ripristinare un database da un file con estensione bak in Visual Studio
 
-1. Quando si esegue il backup di un database di Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere il file con estensione bak utilizzabile di nuovo come file di database, è necessario *ripristinarlo*. Nel menu principale selezionare **visualizza** > **Esplora oggetti di SQL Server**. Se non viene visualizzato, potrebbe essere necessario installarlo. Passare a **Pannello di controllo** > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015, quindi fare clic sul pulsante **Cambia** . Quando viene visualizzato l'elenco dei componenti installati nella finestra del programma di installazione, selezionare la casella di controllo **Esplora oggetti di SQL Server** , quindi continuare l'installazione.
+1. Quando si esegue il backup di un database di Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere il file con estensione bak utilizzabile di nuovo come file di database, è necessario *ripristinarlo*. Nel menu principale selezionare **Visualizza**  >  **Esplora oggetti di SQL Server**. Se non viene visualizzato, potrebbe essere necessario installarlo. Passare a **Pannello di controllo**  >  **programmi e funzionalità**, trovare Microsoft Visual Studio 2015, quindi fare clic sul pulsante **Cambia** . Quando viene visualizzato l'elenco dei componenti installati nella finestra del programma di installazione, selezionare la casella di controllo **Esplora oggetti di SQL Server** , quindi continuare l'installazione.
 
 2. In Esplora oggetti di SQL Server fare clic con il pulsante destro del mouse su un motore di database SQL Server (ad esempio, local DB) e scegliere**nuova query**.
 

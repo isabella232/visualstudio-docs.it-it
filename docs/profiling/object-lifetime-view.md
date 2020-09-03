@@ -18,14 +18,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772624"
 ---
 # <a name="object-lifetime-view"></a>Visualizzazione Durata oggetti
-La visualizzazione Durata oggetti è disponibile quando anche raccogliere i dati sulla durata degli **oggetti .NET** viene controllato nelle pagine delle proprietà **sessione di prestazioni.**
+La visualizzazione Durata oggetti è disponibile quando vengono **raccolti anche i dati di durata degli oggetti .NET** nelle pagine delle proprietà della **sessione di prestazioni** .
 
  Il Garbage Collector di .NET Framework gestisce l'allocazione e il rilascio di memoria per l'applicazione. Per ottimizzare le prestazioni del Garbage Collector, l'heap gestito è diviso in tre generazioni: 0, 1 e 2. Il Garbage Collector del runtime archivia i nuovi oggetti nella generazione 0. Gli oggetti non raccolti vengono promossi e archiviati nelle generazioni 1 e 2.
 
@@ -35,9 +35,9 @@ La visualizzazione Durata oggetti è disponibile quando anche raccogliere i dati
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome della classe**|Nome della classe del tipo allocato.|
-|**ID di processo**|ID di processo dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo.|
+|**Nome classe**|Nome della classe del tipo allocato.|
+|**ID processo**|ID di processo dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 

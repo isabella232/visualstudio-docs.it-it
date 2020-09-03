@@ -21,17 +21,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772120"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Eseguire la profilatura su cluster HPC (High Performance Computing)
 
 È possibile eseguire la profilatura sui nodi di calcolo di cluster Microsoft Windows HPC tramite il metodo di campionamento degli strumenti di profilatura di Visual Studio. Per altre informazioni su HPC, vedere [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) nel sito Web Microsoft.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le operazioni seguenti:
 
@@ -47,13 +47,13 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*% Nodo head%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
 | | |
 |------------------| - |
-| *%HeadNode%* | Nome del nodo head del cluster. |
+| *Nodo head* | Nome del nodo head del cluster. |
 | *%FxPath%* | Percorso del programma di installazione di .NET Framework 4. Nel supporto di installazione di Visual Studio il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel supporto di installazione di Visual Studio il percorso è: Standalone Profiler\x64\vs_profiler.exe |
 
@@ -138,7 +138,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 | Proprietà | Descrizione |
 |---------------------------------------| - |
-| **Nome del progetto** | Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] corrente. |
+| **Nome progetto** | Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] corrente. |
 | **Esegui pulizia all'arresto del profiler** | Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE. |
 | **File aggiuntivi da distribuire** | Specifica un elenco di file aggiuntivi separati da punto e virgola da distribuire sul nodo di calcolo. È possibile fare clic sul pulsante con i puntini di sospensione (**...**) per selezionare più file usando una finestra di dialogo. |
 | **Comando Mpiexec** | Specifica l'applicazione che avvia l'applicazione MPI. Il valore predefinito è **mpiexec.exe**. |

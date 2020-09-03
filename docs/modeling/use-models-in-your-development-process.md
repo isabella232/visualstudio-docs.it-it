@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115049"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
@@ -86,7 +86,7 @@ All'approcciarsi di ogni iterazione, è possibile usare modelli per definire cos
 
 - Verso la fine di ogni iterazione indire un workshop dei requisiti per definire in dettaglio i requisiti o le storie utente che verranno sviluppate nell'iterazione successiva. Invitare gli utenti e le parti interessate dell'azienda che sono in grado di decidere le priorità, nonché gli sviluppatori e i tester di sistema. Vengono consentite tre ore per definire i requisiti per un'iterazione di 2 settimane.
 
-- Per ogni partecipante l'obiettivo del workshop è accettare ciò che verrà effettuato entro la fine dell'iterazione successiva. Usare i modelli come uno degli strumenti che consentono di chiarire i requisiti. L'output del workshop è un backlog di iterazione: ovvero un elenco di attività di sviluppo in Team Foundation e gruppi di test in [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- Per ogni partecipante l'obiettivo del workshop è accettare ciò che verrà effettuato entro la fine dell'iterazione successiva. Usare i modelli come uno degli strumenti che consentono di chiarire i requisiti. L'output del workshop è un backlog di iterazione: ovvero un elenco di attività di sviluppo in Team Foundation e gruppi di test in [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .
 
 - Nel workshop dei requisiti discutere la progettazione solo nella misura in cui è necessario determinare le stime per le attività di sviluppo. In caso contrario, discutere sul comportamento del sistema che gli utenti possono sperimentare direttamente. Mantenere il modello requisiti separato dal modello dell'architettura.
 
@@ -122,23 +122,23 @@ Diversi tipi di diagramma sono utili per descrivere la progettazione a diversi l
 
 |Livello di progettazione|Tipi di diagramma|
 |-|-|
-|Processo di business<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi classi concettuali descrivono i concetti aziendali utilizzati all'interno del processo di business.|
+|Processo aziendale<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi classi concettuali descrivono i concetti aziendali utilizzati all'interno del processo di business.|
 |Requisiti utente<br /><br /> La definizione di ciò che gli utenti richiedono al sistema.|-Le regole di business e i requisiti di qualità del servizio possono essere descritti in documenti distinti.|
 |Progettazione ad alto livello<br /><br /> La struttura generale del sistema: i componenti principali e la modalità con cui vengono accoppiati.|-I diagrammi delle dipendenze descrivono come il sistema è strutturato in parti interdipendenti. È possibile convalidare il codice del programma in base ai diagrammi di dipendenza per assicurarsi che sia conforme all'architettura.|
 |Analisi codice<br /><br /> I diagrammi possono essere generati dal codice.|-I diagrammi di dipendenza mostrano le dipendenze tra le classi. Il codice aggiornato può essere convalidato in base a un diagramma delle dipendenze.<br />-I diagrammi classi mostrano le classi nel codice.|
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Categoria**|**Links**|
+|**Categoria**|**Collegamenti**|
 |-|-|
-|**Video**|![collegamento a video](../data-tools/media/playvideo.gif) [video sulle procedure di MSDN: come creare e usare diagrammi e modelli UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif) [serie di procedure su MSDN: strumenti ed estendibilità UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Video**|![collegamento ai video sulle procedure per I video su ](../data-tools/media/playvideo.gif) [MSDN: come creare e usare i modelli e I diagrammi UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![collegamento a video ](../data-tools/media/playvideo.gif) [Channel 9: UML con Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![collegamento a video sulle serie di informazioni su ](../data-tools/media/playvideo.gif) [MSDN: strumenti ed estendibilità UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**Forum**|- [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blog**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Usare i modelli nello sviluppo agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usare i modelli nello sviluppo Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Creare modelli per l'app](../modeling/create-models-for-your-app.md)
 - [Modellare i requisiti utente](../modeling/model-user-requirements.md)
 - [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)

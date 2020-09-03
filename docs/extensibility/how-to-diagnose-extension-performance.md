@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - bertaygu
 ms.openlocfilehash: 542d8a6d6d90091aa7a800ef18f847fea6b1a81c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905907"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Misurazione dell'effetto dell'estensione all'avvio
@@ -176,6 +176,6 @@ Una delle altre viste della traccia che saranno utili per determinare l'effetto 
 
 È importante ridurre al minimo il numero di assembly caricati all'interno di una routine di inizializzazione del pacchetto, in quanto ogni assembly aggiuntivo implica operazioni di I/O su disco aggiuntive che possono rallentare notevolmente l'avvio in computer più lenti.
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>Riepilogo
 
 L'avvio di Visual Studio è una delle aree in cui si ricevono continuamente commenti. L'obiettivo indicato in precedenza è che tutti gli utenti hanno un'esperienza di avvio coerente indipendentemente dai componenti e dalle estensioni installate. Microsoft vuole collaborare con i proprietari delle estensioni per aiutarli a raggiungere questo obiettivo. Le linee guida riportate sopra dovrebbero essere utili per comprendere l'effetto di un'estensione all'avvio ed evitare la necessità di caricarli automaticamente o di caricarli in modo asincrono per ridurre al minimo l'effetto sulla produttività degli utenti.
