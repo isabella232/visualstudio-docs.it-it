@@ -17,19 +17,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633837"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedura: Fare riferimento al nome o al percorso del file di progetto
 
-È possibile usare il nome o il percorso del progetto nel file di progetto senza dover creare una proprietà. MSBuild fornisce proprietà riservate che fanno riferimento al nome del file di progetto e altre proprietà correlate al progetto. Per altre informazioni sulle proprietà riservate, vedere [Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md).
+È possibile usare il nome o il percorso del progetto nel file di progetto senza dover creare una proprietà. MSBuild fornisce proprietà riservate che fanno riferimento al nome del file di progetto e ad altre proprietà correlate al progetto. Per altre informazioni sulle proprietà riservate, vedere [Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Usare le proprietà del progetto
 
- MSBuild fornisce alcune proprietà riservate che è possibile utilizzare nei file di progetto senza definirle ogni volta. La proprietà riservata `MSBuildProjectName`, ad esempio, fornisce un riferimento al nome file di progetto. La proprietà riservata `MSBuildProjectDirectory` specifica un riferimento al percorso del file di progetto.
+ MSBuild fornisce alcune proprietà riservate che è possibile usare nei file di progetto senza definirle ogni volta. La proprietà riservata `MSBuildProjectName`, ad esempio, fornisce un riferimento al nome file di progetto. La proprietà riservata `MSBuildProjectDirectory` specifica un riferimento al percorso del file di progetto.
 
 #### <a name="to-use-the-project-properties"></a>Per usare le proprietà di progetto
 
@@ -43,7 +43,7 @@ ms.locfileid: "77633837"
 
   Uno dei vantaggi dell'uso di una proprietà riservata è che eventuali modifiche apportate al nome file di progetto vengono incorporate automaticamente. La volta successiva in cui si compila il progetto, il file di output assumerà il nuovo nome senza nessuna altra azione da parte dell'utente.
 
-  Per altre info sull'uso di caratteri speciali nei riferimenti a file o progetti, vedi [Caratteri speciali MSBuild](../msbuild/msbuild-special-characters.md).
+  Per altre informazioni sull'uso di caratteri speciali nei riferimenti a file o progetti, vedere [caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md).
 
 > [!NOTE]
 > Le proprietà riservate non possono essere ridefinite nel file di progetto.
@@ -91,9 +91,9 @@ ms.locfileid: "77633837"
 </Project>
 ```
 
-Nell'esempio viene utilizzata la sintassi della <xref:System.IO.Path.Combine*?displayProperty=fullName>funzione [Property](property-functions.md) per chiamare il metodo statico .NET Framework .
+Nell'esempio viene utilizzata la sintassi della [funzione Property](property-functions.md) per chiamare il metodo statico .NET Framework <xref:System.IO.Path.Combine*?displayProperty=fullName> .
 
 ## <a name="see-also"></a>Vedere anche
 
 - [MSBuild](../msbuild/msbuild.md)
-- [Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md)
+- [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

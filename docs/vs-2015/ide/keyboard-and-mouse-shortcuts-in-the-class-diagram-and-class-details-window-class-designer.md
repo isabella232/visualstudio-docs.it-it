@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543117"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi)
@@ -36,7 +36,7 @@ ms.locfileid: "85543117"
 
 - [Uso della tastiera nella Finestra Dettagli classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>Uso del mouse in Progettazione classi
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a> Uso del mouse in Progettazione classi
  Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 
 |Combinazione del mouse|Context|Descrizione|
@@ -62,7 +62,7 @@ ms.locfileid: "85543117"
 
 - La finestra Dettagli classe contiene diversi pulsanti che consentono di creare nuovi membri nella classe corrente e di spostarsi tra i raggruppamenti dei membri nella griglia della finestra.  Per altre informazioni, vedere la sezione relativa ai pulsanti della finestra Dettagli classe
 
-## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>Uso della tastiera in Progettazione classi
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a> Uso della tastiera in Progettazione classi
  Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 
 |Chiave|Context|Descrizione|
@@ -99,7 +99,7 @@ ms.locfileid: "85543117"
 |Chiave|Risultato|
 |-|-|
 |, (virgola)|Se il cursore è posizionato in una riga di parametri, viene spostato nel campo Nome del parametro successivo. Se il cursore si trova nell'ultima riga di parametri di un metodo, il cursore viene spostato nel \<add parameter> campo, che può essere usato per creare un nuovo parametro.<br /><br /> Se il cursore è posizionato in un altro punto della finestra Dettagli classe, viene effettivamente aggiunta una virgola nel campo corrente.|
-|; (punto e virgola)<br /><br /> oppure<br /><br /> ) (parentesi di chiusura)|Sposta il cursore nel campo Nome della riga di membri successiva nella griglia della finestra Dettagli classe.|
+|; (punto e virgola)<br /><br /> Oppure<br /><br /> ) (parentesi di chiusura)|Sposta il cursore nel campo Nome della riga di membri successiva nella griglia della finestra Dettagli classe.|
 |Scheda|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore viene spostato da un campo in cui è stato digitato del testo, nella finestra Dettagli classe il testo viene elaborato e memorizzato se non genera un errore.<br /><br /> Se il cursore si trova in un campo vuoto, ad esempio \<add parameter> , TAB lo sposta nel primo campo della riga successiva.|
 |\<space>|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore si trova in un campo vuoto, ad esempio \<add parameter> , viene spostato nel primo campo della riga successiva. Si noti che \<space> digitato immediatamente dopo la virgola viene ignorato.<br /><br /> Se il cursore si trova nel campo Riepilogo, viene aggiunto uno spazio.<br /><br /> Se il cursore si trova nella colonna Nascondi di una determinata riga, il valore della casella di controllo Nascondi viene attivato/disattivato.|
 |CTRL+TAB|Passa a un'altra finestra del documento, ad esempio dalla finestra Dettagli classe a un file di codice aperto.|

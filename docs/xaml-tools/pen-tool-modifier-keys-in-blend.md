@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328367"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Penna in Blend per Visual Studio
@@ -36,7 +36,7 @@ Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile u
 |Creare un angolo arrotondato quando si congiungono due tracciati|Selezionare due tracciati, fare clic sullo strumento **Penna**, fare clic su un punto finale di uno dei tracciati e quindi trascinare un punto finale dell'altro tracciato|![Creare un angolo arrotondato quando si congiungono due tracciati](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Puntatore penna di giunzione|
 |Creare un nuovo tracciato|Tenendo premuto **CTRL**, fare clic su un punto fuori dal tracciato precedente per interrompere l'aggiunta di punti al tracciato e quindi fare clic o trascinare nella posizione in cui deve iniziare il nuovo tracciato|![Creare un nuovo tracciato](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Puntatore penna di inizio|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Tasti di modifica della tavola da disegno](artboard-modifier-keys-in-blend.md)
 - [Tasti di modifica strumento Selezione diretta](direct-selection-tool-modifier-keys-in-blend.md)

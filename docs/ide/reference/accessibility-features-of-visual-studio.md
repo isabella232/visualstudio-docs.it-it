@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76113796"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
@@ -40,15 +40,15 @@ Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disp
 
 Per altre informazioni, vedere gli argomenti seguenti:
 
-- [Procedura: impostare le opzioni di accessibilità dell'IDEHow to: Set IDE accessibility options](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Procedura: impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Procedura: Utilizzare la tastiera in modo esclusivoHow to: Use the keyboard exclusively](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Procedura: utilizzare esclusivamente la tastiera](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
-- [Suggerimenti e trucchi per l'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [Procedura: Modificare tipi di carattere e coloriHow to: Change fonts and colors](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Procedura: modificare i tipi di carattere e i colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
 > Le informazioni contenute in questa pagina potrebbero essere applicabili solo agli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, visitare il sito Web [Accessibilità in Microsoft](https://www.microsoft.com/accessibility/) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa pagina sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili anche in altre lingue.

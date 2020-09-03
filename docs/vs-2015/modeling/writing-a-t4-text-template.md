@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c3e970ac2d6f7de86908a88aff6235c598ead810
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918470"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà "\<HTML >..." e tutte le altre parti standard di una pagina HTML. I *blocchi di controllo*inseriti nel modello sono frammenti del codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
+Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà " \<html> ..." e tutte le altre parti standard di una pagina HTML. I *blocchi di controllo*inseriti nel modello sono frammenti del codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
 
  Questa struttura facilita lo sviluppo di un modello, perché consente di partire da un prototipo del file generato inserendo in modo incrementale i blocchi di controllo che variano il risultato.
 
@@ -184,7 +184,7 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>Uso di definizioni esterne
 
-### <a name="assemblies"></a>Assemblies
+### <a name="assemblies"></a>Assembly
  I blocchi di codice del modello possono usare i tipi definiti negli assembly .NET usati più di frequente come ad esempio System.dll. Inoltre, è possibile fare riferimento ad altri assembly .NET o ad assembly personalizzati. È possibile fornire un percorso o il nome sicuro di un assembly:
 
 ```
@@ -214,7 +214,7 @@ private void WriteSquareLine(int i)
 
  Per altre informazioni, vedere [direttiva import T4](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a>Inclusione di codice e testo
+### <a name="including-code-and-text"></a><a name="Include"></a> Inclusione di codice e testo
  La direttiva `include` inserisce il testo da un altro file di modello. Ad esempio, questa direttiva inserisce il contenuto del file `test.txt`.
 
  `<#@ include file="c:\test.txt" #>`
@@ -242,14 +242,14 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Caricare un file come modello esplorabile**. Un metodo più efficace è leggere i dati come un modello, in cui è possibile spostarsi con il codice del modello di testo. Ad esempio, è possibile caricare un file XML e spostarsi al suo interno con espressioni XPath. È inoltre possibile utilizzare [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) per creare un set di classi con cui è possibile leggere i dati XML.
+ **Caricare un file come modello esplorabile**. Un metodo più efficace è leggere i dati come un modello, in cui è possibile spostarsi con il codice del modello di testo. Ad esempio, è possibile caricare un file XML e spostarsi al suo interno con espressioni XPath. È inoltre possibile utilizzare [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) per creare un set di classi con cui è possibile leggere i dati XML.
 
  **Modificare il file del modello in un diagramma o in un form.** [!INCLUDE[dsl](../includes/dsl-md.md)] fornisce strumenti che consentono di modificare un modello come diagramma o Windows Form. In questo modo diventa più semplice illustrare il modello agli utenti dell'applicazione generata. [!INCLUDE[dsl](../includes/dsl-md.md)] crea anche un set di classi fortemente tipizzate che riflettono la struttura del modello. Per ulteriori informazioni, vedere [generazione di codice da un Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
  **Usare un modello UML**. È possibile generare il codice da un modello UML. Il vantaggio consiste nel fatto che il modello può essere modificato come diagramma in una notazione familiare. Inoltre, non è necessario progettare il diagramma. Per altre informazioni, vedere [generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Percorsi di file relativi in modelli della fase di progettazione
- In un [modello di testo della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se si desidera fare riferimento a un file in un percorso relativo al modello di testo, utilizzare `this.Host.ResolvePath()`. È inoltre necessario impostare `hostspecific="true"` nella direttiva `template`:
+ In un [modello di testo della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se si vuole fare riferimento a un file in un percorso relativo al modello di testo, usare `this.Host.ResolvePath()` . È inoltre necessario impostare `hostspecific="true"` nella direttiva `template`:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

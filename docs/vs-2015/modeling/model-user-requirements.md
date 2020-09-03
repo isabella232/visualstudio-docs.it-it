@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918262"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
@@ -53,7 +53,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
 |Diagramma o documento|Informazioni descritte in un modello di requisiti|Sezione|
 |-------------------------|-----------------------------------------------|-------------|
-|Diagramma caso di utilizzo|Utenti che usano il sistema e le relative attività svolte.|[Descrizione della modalità di utilizzo del sistema](#UseCases)|
+|Diagramma caso di utilizzo|Utenti che usano il sistema e le relative attività svolte.|[Descrizione del modo in cui viene usato il sistema](#UseCases)|
 |Diagramma classi concettuali|Glossario dei tipi usati per descrivere i requisiti, ovvero dei tipi visibili nell'interfaccia del sistema.|[Definizione dei termini usati per descrivere i requisiti](#RequirementsClasses)|
 |Diagramma di attività|Flusso di lavoro e informazioni tra le attività eseguite dagli utenti e dal sistema o dalle relative parti.|[Visualizzazione del flusso di lavoro tra gli utenti e il sistema](#Workflow)|
 |Diagramma sequenza|Sequenza di interazioni tra gli utenti e il sistema o le relative parti. Una visualizzazione alternativa al diagramma di attività.|[Visualizzazione delle interazioni tra gli utenti e il sistema](#Sequences)|
@@ -62,16 +62,16 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
  La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per una panoramica dei tipi di diagramma, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md). Per informazioni di base sui diagrammi di disegno, vedere [modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md).
 
-## <a name="UseCases"></a>Descrizione della modalità di utilizzo del sistema
+## <a name="describing-how-your-system-is-used"></a><a name="UseCases"></a> Descrizione della modalità di utilizzo del sistema
  Creare diagrammi caso di utilizzo per descrivere chi usa il sistema e le relative attività svolte. Un caso di utilizzo rappresenta un obiettivo di un utente del sistema e la procedura eseguita per raggiungere l'obiettivo.
 
  Si consideri ad esempio un sistema di vendita di pasti online che deve consentire ai clienti di scegliere elementi da un menu e ai ristoranti di aggiornare il menu. È possibile riepilogare questa condizione in un diagramma caso di utilizzo:
 
- ![Casi d'uso per il cliente e il ristorante](../modeling/media/uml-reqmuc1.png "UML_ReqmUC1")
+ ![Casi di utilizzo per il cliente e il ristorante](../modeling/media/uml-reqmuc1.png "UML_ReqmUC1")
 
  È anche possibile illustrare come un caso di utilizzo sia costituito da casi più piccoli. Ad esempio, l'ordinazione di un pasto fa parte del processo di acquisto di un pasto, che comprende anche il pagamento e la consegna:
 
- ![Il sistema partecipa al pagamento, ma non al recapito.](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
+ ![Il sistema partecipa al pagamento ma non al recapito.](../modeling/media/uml-reqmuc2.png "UML_ReqmUC2")
 
  È anche possibile illustrare i casi di utilizzo inclusi nell'ambito del sistema che si sta sviluppando. Ad esempio, il sistema raffigurato nell'illustrazione non fa parte del caso di utilizzo Consegna pasto. In questo modo è possibile impostare il contesto per il lavoro di sviluppo. In un diagramma caso di utilizzo i contenitori del sottosistema possono essere usati per rappresentare il sistema o i relativi componenti.
 
@@ -85,15 +85,15 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
 - Discutere l'ambito del sistema o le particolari versioni del sistema.
 
-  Per altre informazioni, vedere gli argomenti seguenti:
+  Per ulteriori informazioni, vedere gli argomenti indicati di seguito.
 
-|Per ulteriori informazioni su|Lettura|
+|Informazioni|Lettura|
 |--------------------|----------|
-|Informazioni più dettagliate su come creare casi di utilizzo|[Diagrammi casi d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)|
+|Informazioni più dettagliate su come creare casi di utilizzo|[Diagrammi casi di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)|
 |Elementi in un diagramma caso di utilizzo|[Diagrammi casi d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)|
 |Come sviluppare codice dai casi di utilizzo|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="RequirementsClasses"></a>Definizione dei termini usati per descrivere i requisiti
+## <a name="defining-terms-used-to-describe-requirements"></a><a name="RequirementsClasses"></a> Definizione dei termini usati per descrivere i requisiti
  È possibile usare i diagrammi classi UML per sviluppare un vocabolario coerente dei concetti aziendali utilizzati per gli scopi seguenti:
 
 - Dagli utenti stessi per presentare l'azienda in cui il sistema è in funzione.
@@ -110,7 +110,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
   Provare ad esempio a creare le classi concettuali per il sistema Dinner Now:
 
-  ![Menu classi, ordine, voce di menu, elemento ordine.](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
+  ![Menu delle classi, ordine, voce di menu, elemento ordine.](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")
 
   Un diagramma classi concettuali fornisce il vocabolario dei termini usati in tutto il modello dei requisiti. Ad esempio, nella descrizione dettagliata del caso di utilizzo Ordinazione pasto, è possibile scrivere:
 
@@ -130,9 +130,9 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
 - Chiarire le relazioni tra questi termini.
 
-  Per altre informazioni, vedere gli argomenti seguenti:
+  Per ulteriori informazioni, vedere gli argomenti indicati di seguito.
 
-|Per ulteriori informazioni su|Lettura|
+|Informazioni|Lettura|
 |--------------------|----------|
 |Altre informazioni su come trovare le classi di requisiti|[Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|
 |Elementi in un diagramma classi concettuali|[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|
@@ -140,12 +140,12 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
  In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali.
 
-## <a name="BusinessRules"></a> Showing Business Rules
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Visualizzazione delle regole di business
  Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
 
  Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle classi pertinenti in un diagramma classi concettuali. Ad esempio:
 
- ![Regola nel commento collegata alla classe Order.](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
+ ![Regola nel commento associato alla classe Order.](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
  Le*regole di business dinamiche* vincolano le sequenze di eventi consentite. È possibile ad esempio usare un diagramma di attività o di sequenza per mostrare che un utente deve accedere prima di eseguire altre operazioni nel sistema.
 
@@ -153,20 +153,20 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
  Si noti che la scelta in questo caso riguarda la modalità di definizione dei requisiti ed è indipendente dal modo in cui vengono implementati i requisiti nel codice programma.
 
- Per altre informazioni, vedere gli argomenti seguenti:
+ Per ulteriori informazioni, vedere gli argomenti indicati di seguito.
 
-|Per ulteriori informazioni su|Lettura|
+|Informazioni|Lettura|
 |--------------------|----------|
 |Altre informazioni su come trovare e registrare regole di business statiche|[Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|
 |Elementi in un diagramma classi concettuali|[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|
 |Come sviluppare codice che soddisfi le regole di business|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Descrizione dei requisiti di qualità del servizio
  Esistono diverse categorie di requisiti per la qualità del servizio. Essi includono quanto segue:
 
 - Prestazioni
 
-- Sicurezza -
+- Sicurezza
 
 - Usabilità
 
@@ -178,14 +178,14 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
   Se un Ristorante elimina un Elemento menu mentre un Cliente ordina un pasto, tutti gli Elementi ordine che fanno riferimento all'Elemento menu verranno visualizzati in rosso.
 
-  Per altre informazioni, vedere gli argomenti seguenti:
+  Per ulteriori informazioni, vedere gli argomenti indicati di seguito.
 
-|Per ulteriori informazioni su|Lettura|
+|Informazioni|Lettura|
 |--------------------|----------|
 |Associazione di documenti aggiuntivi ai casi di utilizzo|[Collegare un caso d'uso a documenti e diagrammi](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
 |Come sviluppare codice che soddisfi i requisiti di qualità del servizio|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="Workflow"></a>Visualizzazione del flusso di lavoro tra gli utenti e il sistema
+## <a name="showing-work-flow-between-users-and-your-system"></a><a name="Workflow"></a> Visualizzazione del flusso di lavoro tra gli utenti e il sistema
  È possibile usare un diagramma di attività per mostrare il flusso di lavoro tra diversi casi di utilizzo. Spesso è utile iniziare un modello di requisiti creando un diagramma di attività che illustri le attività principali eseguite dagli utenti, sia con il sistema che all'esterno.
 
  Ad esempio:
@@ -194,19 +194,19 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
  È possibile creare diagrammi caso di utilizzo e diagrammi di attività per mostrare visualizzazioni diverse delle stesse informazioni.  Il diagramma caso di utilizzo è più efficace perché mostra l'annidamento delle azioni più piccole all'interno dell'attività più grande, ma non mostra il flusso di lavoro. Ad esempio:
 
- ![Casi d'uso per le azioni precedenti](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
+ ![Casi di utilizzo per le azioni precedenti](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
  Si noti che è possibile usare i diagrammi di attività anche per rappresentare gli algoritmi all'interno del software, ma quando si usano i diagrammi per il processo aziendale, l'attenzione è incentrata sulle azioni visibili all'esterno del sistema.
 
- Per altre informazioni, vedere gli argomenti seguenti:
+ Per ulteriori informazioni, vedere gli argomenti indicati di seguito.
 
-|Per ulteriori informazioni su|Lettura|
+|Informazioni|Lettura|
 |--------------------|----------|
 |Altre informazioni sulla definizione di flussi di lavoro aziendali|[Diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md)|
 |Elementi in un diagramma di attività|[Diagrammi di attività UML: riferimento](../modeling/uml-activity-diagrams-reference.md)|
 |Come sviluppare codice dai diagrammi di attività|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="Sequences"></a>Visualizzazione delle interazioni tra gli utenti e il sistema
+## <a name="showing-interactions-between-users-and-your-system"></a><a name="Sequences"></a> Visualizzazione delle interazioni tra gli utenti e il sistema
  È possibile usare un diagramma di sequenza per mostrare l'interscambio di messaggi tra il sistema e gli attori esterni o tra le parti del sistema. In questo modo vengono visualizzati i passaggi di un caso di utilizzo che mostra molto chiaramente la sequenza di interazioni. I diagrammi di sequenza sono particolarmente utili nelle situazioni in cui sono presenti molte parti che interagiscono tra di loro in un caso di utilizzo e anche quando nel sistema è disponibile un'API.
 
  Ad esempio:
@@ -215,9 +215,9 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
  Un vantaggio dei diagrammi di sequenza è dato dal fatto che è facile vedere quali messaggi arrivano al sistema che si sta creando. Per progettare il sistema, è possibile sostituire la singola linea di vita del sistema con una linea di vita separata per ognuno dei componenti e quindi mostrare le interazioni tra di essi in risposta a ogni messaggio in arrivo.
 
- Per altre informazioni, vedere gli argomenti seguenti:
+ Per ulteriori informazioni, vedere gli argomenti indicati di seguito.
 
-|Per ulteriori informazioni su|Lettura|
+|Informazioni|Lettura|
 |--------------------|----------|
 |Altre informazioni sulla definizione delle interazioni|[Diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md)|
 |Elementi in un diagramma di sequenza|[Diagrammi di sequenza UML: riferimenti](../modeling/uml-sequence-diagrams-reference.md)|

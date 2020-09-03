@@ -15,10 +15,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918729"
 ---
 # <a name="signing-vsix-packages"></a>Firma di pacchetti VSIX
@@ -38,15 +38,15 @@ Gli assembly di estensione non devono essere firmati prima di poter essere esegu
   
 1. Aggiungere il progetto VSIX a un progetto.  
   
-2. Fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni, quindi scegliere **Aggiungi &#124; Gestisci pacchetti NuGet**.  Per altre informazioni su NuGet e sull'aggiunta di pacchetti NuGet, vedere [Panoramica di NuGet](/nuget/) e [gestire i pacchetti NuGet usando la finestra di dialogo](/nuget/consume-packages/install-use-packages-visual-studio).  
+2. Fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni, quindi scegliere **aggiungi &#124; Gestisci pacchetti NuGet**.  Per altre informazioni su NuGet e sull'aggiunta di pacchetti NuGet, vedere [Panoramica di NuGet](/nuget/) e [gestire i pacchetti NuGet usando la finestra di dialogo](/nuget/consume-packages/install-use-packages-visual-studio).  
   
 3. Cercare VSIXSignTool da VisualStudioExtensibility e installare il pacchetto NuGet.  
   
-4. È ora possibile eseguire VSIXSignTool dal percorso dei pacchetti locali del progetto. Consultare la guida della riga di comando dello strumento per lo scenario di firma (VSIXSignTool. exe/?).  
+4. È ora possibile eseguire VSIXSignTool dal percorso dei pacchetti locali del progetto. Consultare la guida della riga di comando dello strumento per lo scenario di firma (VSIXSignTool.exe/?).  
   
    Ad esempio, per firmare con un file di certificato protetto da password:  
   
-   VSIXSignTool. exe sign/f \<CertFile >/p \<password > \<VSIXfile >  
+   Segno di VSIXSignTool.exe/f \<certfile> /p \<password>\<VSIXfile>  
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuzione delle estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

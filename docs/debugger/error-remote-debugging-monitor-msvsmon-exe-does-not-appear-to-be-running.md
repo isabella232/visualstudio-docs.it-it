@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460611"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.
@@ -70,9 +70,9 @@ Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza cor
  Provare a eseguire il debug remoto in un altro momento oppure pianificare il lavoro sulla rete per un altro orario.
 
 ## <a name="more-help"></a>Altre informazioni
- Per ottenere ulteriori informazioni sulla guida del debugger remoto, incluse le opzioni della riga di comando, fare clic su **guida > utilizzo** nella finestra del debugger remoto. Se non è disponibile, è possibile visualizzare la pagina Web copiando la riga seguente in una finestra di **Esplora file** . È necessario sostituire \<Visual Studio installation directory> con il percorso dell'installazione di Visual Studio.
+ Per ottenere ulteriori informazioni sulla guida del debugger remoto, incluse le opzioni della riga di comando, fare clic su **guida > utilizzo** nella finestra del debugger remoto. Se non è disponibile, è possibile visualizzare la pagina Web copiando la riga seguente in una finestra di  **Esplora file** . È necessario sostituire \<Visual Studio installation directory> con il percorso dell'installazione di Visual Studio.
 
  res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote% 20Debugger\x64\msvsmon.exe/help.htm
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

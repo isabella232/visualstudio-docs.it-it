@@ -7,10 +7,10 @@ caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 98925402b91bea62e10b47312e7834ed92a1a178
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918747"
 ---
 # <a name="verify-your-xamarin-environment"></a>Verificare l'ambiente Xamarin
@@ -29,7 +29,7 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
  Creare quindi una nuova soluzione Xamarin in Visual Studio usando **File > Nuovo progetto**, quindi nella finestra di dialogo espandere **Modelli > Altri linguaggi > Visual C# > Multipiattaforma**, selezionare **App vuota (nativa portatile)** e fare clic su OK. Verrà creata una soluzione con un progetto di libreria di classi portabile condiviso e singoli progetti per Android, iOS e Windows:  
   
- ![Risultati della creazione di un nuovo progetto dal modello portatile &#40;&#41; nativo dell'app vuota](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Novell verifica 1")  
+ ![Risultati della creazione di un nuovo progetto dall'app vuota &#40;modello di&#41; portatile nativo](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Novell verifica 1")  
   
 > [!NOTE]
 > Se i modelli non vengono visualizzati, vedere [Are the Xamarin project templates missing? Try this](#missing) nella parte inferiore della pagina.  
@@ -46,7 +46,7 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
     - Fare clic con il pulsante destro del mouse sul progetto Android in Esplora soluzioni e scegliere **Imposta come progetto di avvio**.  
   
-         ![Opzione imposta come progetto di avvio di Visual Studio](../cross-platform/media/crossplat-xamarin-verify-2.png "CrossPlat Novell verifica 2")  
+         ![Visual Studio impostato come opzione Progetto di avvio](../cross-platform/media/crossplat-xamarin-verify-2.png "CrossPlat Novell verifica 2")  
   
     - Selezionare l'emulatore appropriato in base al sistema Android di destinazione. Se è disponibile un dispositivo di sviluppo Android collegato al computer, sarà incluso nell'elenco insieme agli emulatori:  
   
@@ -72,7 +72,7 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
     - Selezionare una destinazione **Emulator 8.1** o un dispositivo collegato nell'elenco a discesa di debug di Visual Studio, come illustrato di seguito, e avviare il debugger premendo F5.  
   
-         ![Selezione di un emulatore di Windows Phone come destinazione di debug](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Novell verifica 4")  
+         ![Selezionare un emulatore Windows Phone come destinazione di debug](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Novell verifica 4")  
   
     - In caso di problemi di funzionamento dell'emulatore, vedere [Risoluzione dei problemi relativi all'emulatore Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx).  
   
@@ -86,11 +86,11 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
     1. Fare clic con il pulsante destro del mouse sul progetto iOS in Esplora soluzioni e scegliere **Imposta come progetto di avvio**.  
   
-    2. Selezionare la destinazione **iPhoneSimulator** nell'elenco a discesa di compilazione di Visual Studio, come illustrato di seguito, oppure la destinazione **iPhone** per un dispositivo con tethering. Se non è elencato alcun simulatore, avviare Xcode nel Mac, selezionare **Xcode->Preferences** e fare clic su **Download**. In **Components** dovrebbero essere visualizzate le versioni del simulatore disponibili per il download. Ulteriori istruzioni per il debug sono disponibili nella pagina relativa al [debug](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) di Xamarin (xamarin.com).  
+    2. Selezionare la destinazione **iPhoneSimulator** dall'elenco a discesa Compila di Visual Studio come illustrato di seguito oppure la destinazione **iPhone** se si dispone di un dispositivo con tethering. Se non è elencato alcun simulatore, avviare Xcode nel Mac, selezionare **Xcode->Preferences**e fare clic su **download**. In **Components** dovrebbero essere visualizzate le versioni del simulatore disponibili per il download. Altre istruzioni per il debug sono disponibili nella pagina di [debug](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) di novell (Xamarin.com).  
   
-         ![Selezione della destinazione di compilazione iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Novell verifica 5")  
+         ![Selezione della destinazione compilazione di iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Novell verifica 5")  
   
-    3. Selezionare una destinazione iPhone dall'elenco a discesa di debug di Visual Studio, come illustrato di seguito, e avviare il debugger premendo F5. Verrà avviato il simulatore nel Mac, in cui è possibile interagire con l'app, mentre viene eseguito il debug in Visual Studio. Se un iPhone o iPad fisico è connesso al Mac, il dispositivo verrà visualizzato qui e potrà essere selezionato. Se non è elencato alcun dispositivo o simulatore, verificare la connessione al Mac facendo riferimento all'argomento indicato nel passaggio 1 sopra o passando a **Strumenti** >**iOS** >**Xamarin Mac Agent**  
+    3. Selezionare una destinazione iPhone dall'elenco a discesa di debug di Visual Studio, come illustrato di seguito, e avviare il debugger premendo F5. Verrà avviato il simulatore nel Mac, in cui è possibile interagire con l'app, mentre viene eseguito il debug in Visual Studio. Se un iPhone o iPad fisico è connesso al Mac, il dispositivo verrà visualizzato qui e potrà essere selezionato. Se non è elencato alcun dispositivo o simulatore, verificare la connessione al Mac esaminando l'argomento collegato nel passaggio 1 precedente oppure passando a **strumenti**  > **iOS**  > **Novell Mac Agent**  
   
          ![Selezione di una destinazione di debug iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Novell verifica 6")  
   
@@ -100,11 +100,11 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
         - Verificare che l'account Id Apple sia aggiunto in Xcode nel Mac come descritto nell'articolo relativo all' [aggiunta dell'account personale a Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Dopo aver aggiunto l'account, assicurarsi di riavviare sia Visual Studio che Xcode.  
   
-             ![CrossPlat Novell verifica 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin Verify 8")  
+             ![CrossPlat Xamarin Verify 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin Verify 8")  
   
         - Nella scheda relativa alla firma del bundle iOS nelle proprietà del progetto iOS verificare che il campo Custom Entitlement sia vuoto per la configurazione di debug attiva.  Nota: è consigliabile provare a rimuovere questa impostazione solo se viene segnalato l'errore precedente.  
   
-## <a name="missing"></a> Come trovare i modelli di progetto Xamarin mancanti  
+## <a name="are-the-xamarin-project-templates-missing-try-this"></a><a name="missing"></a> Come trovare i modelli di progetto Xamarin Soluzione  
  I modelli possono risultare mancanti se si installa Xamarin direttamente dal sito Web e si dispone di Visual Studio 2013 e Visual Studio 2015 installati side-by-side. Per risolvere il problema, è sufficiente installare la funzionalità **Xamarin per Visual Studio 2015** nel programma di installazione di Xamarin.  
   
 1. Nel Pannello di controllo aprire **Programmi e funzionalità**, scegliere l'elemento **Xamarin** e quindi fare clic su **Cambia**.  

@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672253"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Guida introduttiva allo sviluppo basato su test con Esplora test
@@ -22,7 +22,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
  Esplora test sostituisce le finestre di unit test presenti nelle versioni precedenti di Visual Studio. I vantaggi comprendono:
 
-- Eseguire .NET, unmanaged, database e altri tipi di test utilizzando una singola interfaccia.
+- Possibilità di eseguire test .NET, non gestiti, di database e di altro tipo usando una singola interfaccia.
 
 - Possibilità di usare il framework di unit test preferito, ad esempio NUnit o MSTest.
 
@@ -43,7 +43,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
         Selezionare **Progetto unit test**.
 
-   2. Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]` .
+   2. Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]`.
 
 2. Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-Small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
@@ -67,7 +67,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 > [!NOTE]
 > Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [usare un Framework di test diverso](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
-## <a name="walkthrough"></a> Procedura dettagliate: Utilizzare unit test per sviluppare un metodo
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> Procedura dettagliata: utilizzo di unit test per sviluppare un metodo
  In questa procedura dettagliata viene illustrato come sviluppare un metodo testato in C# utilizzando il framework per unit test di Microsoft. È possibile adattarlo in modo semplice per altri linguaggi e per utilizzare altri framework di test come NUnit. Per altre informazioni, vedere [usare un Framework di test diverso](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
 #### <a name="creating-the-test-and-method"></a>Creare il test e il metodo
@@ -76,7 +76,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 2. Creare un progetto di test.
 
-   - Nella finestra di dialogo **Nuovo progetto** , scegliere **Visual C#** , **Test** e quindi scegliere **Progetto unit test**.
+   - Nella finestra di dialogo **Nuovo progetto** , scegliere **Visual C#**, **Test** e quindi scegliere **Progetto unit test**.
 
         ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
 
@@ -143,9 +143,9 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
      Il codice verrà compilato e i test verranno eseguiti.
 
-     Il test ha esito positivo.
+     Il test viene superato.
 
-     ![Esplora unit test che mostra un test superato.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Esplora unit test con test superato.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Aggiungere test per estendere l'intervallo degli input
 

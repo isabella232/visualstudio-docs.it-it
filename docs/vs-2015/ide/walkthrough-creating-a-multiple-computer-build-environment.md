@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d0fccb5694e538cdf71844d2cc18640114ec735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672304"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più computer
@@ -28,13 +28,13 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
 ||
 |-|
-|Dichiarazione di non responsabilità<br /><br /> Questo documento viene fornito di base "così com'è". Mentre sono stati testati tutti i passi descritti, non è possibile testare in modo esaustivo ogni configurazione. Il documento verrà tenuto aggiornato il più possibile man mano che nuove informazioni saranno disponibili. Le informazioni contenute nel presente documento, inclusi gli URL e altri riferimenti a siti Web, possono essere soggette a modifiche senza preavviso. Microsoft non offre alcuna garanzia, esplicita o implicita, riguardo alle informazioni fornite in questo documento. L'utente le utilizza a proprio rischio.<br /><br /> Questo documento non fornisce alcun diritto legale su qualsiasi proprietà intellettuale di un qualsiasi prodotto Microsoft. È possibile copiare e utilizzare questo documento per scopi personali o come riferimento.<br /><br /> Non vi è alcun obbligo di fornire a Microsoft suggerimenti, commenti o altri feedback ("Feedback") relativi al documento. Le informazioni immesse volontariamente possono tuttavia essere utilizzate per prodotti Microsoft e specifiche correlate o altre documentazioni ("Opzioni di Microsoft") che a loro volta possono essere utilizzate da terze parti per compilare i propri prodotti. Pertanto, se vengono forniti feedback a Microsoft su qualsiasi versione di questo documento o sulle opzioni Microsoft a cui questi si riferiscono, si accettano le condizioni seguenti: (a) Microsoft può liberamente utilizzare, riprodurre, distribuire, concedere in licenza o commercializzare i feedback in ogni opzione Microsoft; (b) si concedono inoltre a terze parti, senza spese, i diritti necessari per utilizzare o interfacciare altri prodotti con le opzioni Microsoft che incorporano i feedback; e (c) non dovranno mai essere forniti a Microsoft feedback (i) che violano qualsiasi brevetto, copyright o altre proprietà o diritti intellettuali di terze parti o (ii) altri termini di licenza che impongano di incorporare o derivare tali feedback nelle opzioni Microsoft o in altre proprietà intellettuali Microsoft, per concederne una licenza o condividerle con terze parti.|
+|Dichiarazione di non responsabilità<br /><br /> Questo documento viene fornito di base "così com'è". Mentre sono stati testati tutti i passi descritti, non è possibile testare in modo esaustivo ogni configurazione. Il documento verrà tenuto aggiornato il più possibile man mano che nuove informazioni saranno disponibili. Le informazioni e le indicazioni riportate nel presente documento, inclusi URL e altri riferimenti a siti Internet, sono soggette a modifica senza preavviso. Microsoft non offre alcuna garanzia, esplicita o implicita, relativamente alle informazioni fornite. L'utente accetta di usarle a proprio rischio.<br /><br /> Il presente documento non implica la concessione di alcun diritto di proprietà intellettuale in relazione ai prodotti Microsoft. Sono consentiti la copia e l'uso del presente documento a fini di riferimento interno.<br /><br /> Non vi è alcun obbligo di fornire a Microsoft suggerimenti, commenti o altri feedback ("Feedback") relativi al documento. Le informazioni immesse volontariamente possono tuttavia essere utilizzate per prodotti Microsoft e specifiche correlate o altre documentazioni ("Opzioni di Microsoft") che a loro volta possono essere utilizzate da terze parti per compilare i propri prodotti. Pertanto, se vengono forniti feedback a Microsoft su qualsiasi versione di questo documento o sulle opzioni Microsoft a cui questi si riferiscono, si accettano le condizioni seguenti: (a) Microsoft può liberamente utilizzare, riprodurre, distribuire, concedere in licenza o commercializzare i feedback in ogni opzione Microsoft; (b) si concedono inoltre a terze parti, senza spese, i diritti necessari per utilizzare o interfacciare altri prodotti con le opzioni Microsoft che incorporano i feedback; e (c) non dovranno mai essere forniti a Microsoft feedback (i) che violano qualsiasi brevetto, copyright o altre proprietà o diritti intellettuali di terze parti o (ii) altri termini di licenza che impongano di incorporare o derivare tali feedback nelle opzioni Microsoft o in altre proprietà intellettuali Microsoft, per concederne una licenza o condividerle con terze parti.|
 
  Questa procedura è stata convalidata per i sistemi operativi indicati di seguito, eseguendo MSBuild dalla riga di comando e utilizzando Team Foundation Build.
 
 - Windows 8 (x86 e x64)
 
-- Windows 7 Ultimate
+- Windows 7 Ultimate
 
 - Windows Server 2008 R2 Standard
 
@@ -54,13 +54,13 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
 - [Installazione del software nei computer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)
 
-- [Copia dei file dal computer host nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
+- [Copia di file dal computer host nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
 
 - [Creazione delle impostazioni del Registro di sistema](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
 
 - [Impostazione delle variabili di ambiente nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
 
-- [Installazione degli assembly di MSBuild nella Global Assembly Cache (GAC) nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
+- [Installazione degli assembly di MSBuild nella global assembly cache (GAC) nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
 
 - [Compilazione di progetti](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
 
@@ -72,7 +72,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
 - Una copia di .NET Framework 4.5.1, scaricabile dal sito Web di [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779).
 
-## <a name="InstallingSoftware"></a> Installazione del software nei computer
+## <a name="installing-software-on-the-computers"></a><a name="InstallingSoftware"></a> Installazione del software nei computer
  Innanzitutto, configurare il computer host e quindi configurare il computer di compilazione.
 
  Installando Visual Studio nel computer host, vengono creati i file e le impostazioni che verranno successivamente copiate nel computer di compilazione. È possibile installare Visual Studio in un computer x86 o x64, ma l'architettura del computer di compilazione deve corrispondere a quella del computer host.
@@ -83,7 +83,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
 2. Nel computer di compilazione installare .NET Framework 4.5. Per verificare la corretta installazione, assicurarsi che il valore della chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version inizi con "4.5".
 
-## <a name="CopyingFiles"></a> Copia dei file dal computer host nel computer di compilazione
+## <a name="copying-files-from-the-host-computer-to-the-build-computer"></a><a name="CopyingFiles"></a> Copia dei file dal computer host nel computer di compilazione
  In questa sezione viene descritta la copia di file specifici, compilatori, strumenti di compilazione, risorse di MSBuild e impostazioni del Registro di sistema dal computer host nel computer di compilazione. Queste istruzioni presuppongono che sia stato installato Visual Studio nel percorso predefinito nel computer host. In caso contrario, modificare i passaggi di conseguenza.
 
 - In un computer x86 il percorso predefinito è C:\Programmi\Microsoft Visual Studio 11.0\
@@ -215,7 +215,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
    - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-## <a name="CreatingRegistry"></a> Creazione delle impostazioni del Registro di sistema
+## <a name="creating-registry-settings"></a><a name="CreatingRegistry"></a> Creazione delle impostazioni del registro di sistema
  È necessario creare voci nel Registro di sistema per configurare le impostazioni di MSBuild.
 
 #### <a name="to-create-registry-settings"></a>Per creare impostazioni del Registro di sistema
@@ -277,7 +277,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
 
-## <a name="SettingEnvVariables"></a> Impostazione delle variabili di ambiente nel computer di compilazione
+## <a name="setting-environment-variables-on-the-build-computer"></a><a name="SettingEnvVariables"></a> Impostazione delle variabili di ambiente nel computer di compilazione
  Per usare MSBuild nel computer di compilazione, è necessario impostare le variabili di ambiente PATH. È possibile utilizzare vcvarsall.bat per impostare le variabili oppure configurarle manualmente.
 
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>Per utilizzare vcvarsall.bat per impostare le variabili di ambiente
@@ -289,8 +289,8 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
     |Argomento di vcvarsall.bat|Compilatore|Architettura del computer di compilazione|Architettura dell'output di compilazione|
     |----------------------------|--------------|---------------------------------|-------------------------------|
     |x86 (valore predefinito)|Nativo a 32 bit|x86, x64|x86|
-    |x86_amd64|x64 incrociato|x86, x64|X64|
-    |amd64|x64 nativo|X64|X64|
+    |x86_amd64|x64 incrociato|x86, x64|x64|
+    |amd64|x64 nativo|x64|x64|
 
      Se vcvarsall.bat viene eseguito correttamente, ovvero se non viene visualizzato alcun messaggio di errore, è possibile ignorare il passaggio successivo e passare alla sezione [Installazione degli assembly di MSBuild nella Global Assembly Cache (GAC) nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) di questo documento.
 
@@ -314,7 +314,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> Installazione degli assembly di MSBuild nella Global Assembly Cache (GAC) nel computer di compilazione
+## <a name="installing-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="InstallingMSBuildToGAC"></a> Installazione degli assembly di MSBuild nella Global Assembly Cache (GAC) nel computer di compilazione
  MSBuild richiede che siano installati assembly aggiuntivi nella GAC del computer di compilazione.
 
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>Per copiare gli assembly dal computer host e installarli nel computer di compilazione
@@ -331,26 +331,26 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
      Aprire una finestra del prompt dei comandi con diritti amministrativi ed eseguire questo comando per ogni file:
 
-     **gacutil -i \<file>**
+     **gacutil-i \<file>**
 
     > [!NOTE]
     > Affinché un assembly venga installato completamente nella GAC, potrebbe essere necessario riavviare il computer.
 
-## <a name="BuildingProjects"></a> Compilazione di progetti
+## <a name="building-projects"></a><a name="BuildingProjects"></a> Compilazione di progetti
  È possibile utilizzare Team Foundation Build per compilare progetti e soluzioni [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] oppure è possibile compilarli dalla riga di comando. Quando si utilizza Team Foundation Build per compilare i progetti, viene richiamato il file eseguibile di MSBuild che corrisponde all'architettura di sistema.  Nella riga di comando è possibile usare MSBuild a 32 bit oppure a 64 bit ed è possibile scegliere l'architettura di MSBuild impostando la variabile di ambiente PATH o richiamando direttamente il file eseguibile specifico per l'architettura di MSBuild.
 
  Per usare msbuild.exe al prompt dei comandi, eseguire il comando seguente, dove *soluzione.sln* è un segnaposto per il nome della soluzione.
 
  **msbuild** *soluzione.sln*
 
- Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
+ Per ulteriori informazioni sull'utilizzo di MSBuild nella riga di comando, vedere [riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Per compilare progetti [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], è necessario utilizzare il set di strumenti della piattaforma "v110". Se non si desidera modificare i file di progetto [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], è possibile impostare il set di strumenti della piattaforma utilizzando questo argomento dalla riga di comando:
 >
 > **msbuild** *soluzione.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl"></a> Creazione dell'ambiente di compilazione in modo che possa essere verificato nel controllo del codice sorgente
+## <a name="creating-the-build-environment-so-that-it-can-be-checked-into-source-control"></a><a name="CreatingForSourceControl"></a> Creazione dell'ambiente di compilazione in modo che possa essere archiviato nel controllo del codice sorgente
  È possibile creare un ambiente di compilazione che può essere assegnato a diversi computer e non richiede i file di GAC né di modificare le impostazioni del Registro di sistema. I seguenti passaggi sono solo uno dei modi per eseguire questa operazione. Questi passaggi devono essere adattati alle caratteristiche univoche del proprio ambiente di compilazione.
 
 > [!NOTE]
@@ -424,4 +424,4 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
          Per una compilazione nativa a 64 bit, puntare a MSBuild a 64 bit.
 
 ## <a name="see-also"></a>Vedere anche
- [Preparazione di un computer di test per l'esecuzione di un file eseguibile di debug ](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) [Command-Line Reference](../msbuild/msbuild-command-line-reference.md)
+ [Preparazione di un computer di test per l'esecuzione di un riferimento alla riga di comando eseguibile di debug](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) [Command-Line Reference](../msbuild/msbuild-command-line-reference.md)

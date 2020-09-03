@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: a292b37a50bbf667fa5b23f18879cd79c3f76805
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85292132"
 ---
 Distribuzione Web 3.6 per server di hosting offre funzionalità di configurazione aggiuntive che consentono la creazione del file di impostazioni di pubblicazione dall'interfaccia utente.
@@ -24,7 +24,7 @@ Distribuzione Web 3.6 per server di hosting offre funzionalità di configurazion
 
     Gli script e gli strumenti sono necessari per consentire la generazione del file delle impostazioni di pubblicazione.
 
-4. Opzionale Verificare che Distribuzione Web venga eseguito correttamente aprendo il **Pannello di controllo > sistema e sicurezza > strumenti di amministrazione > Servizi**, quindi verificare che:
+4. Opzionale Verificare che Distribuzione Web venga eseguito correttamente aprendo il  **Pannello di controllo > sistema e sicurezza > strumenti di amministrazione > Servizi**, quindi verificare che:
 
     * Il **servizio Deployment Agent Web** è in esecuzione (il nome del servizio è diverso nelle versioni precedenti).
 
