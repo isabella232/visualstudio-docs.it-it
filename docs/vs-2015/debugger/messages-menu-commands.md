@@ -1,5 +1,5 @@
 ---
-title: I messaggi di comandi di Menu | Microsoft Docs
+title: Comandi del menu messaggi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 689ae78a5409a37fa6251044172f9108f296235b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206124"
 ---
 # <a name="messages-menu-commands"></a>comandi del menu Messaggi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il **messaggi** menu sono disponibili comandi per il controllo delle visualizzazioni dei messaggi.  
+Il menu **messaggi** fornisce comandi per il controllo delle visualizzazioni dei messaggi.  
   
- **Avvia/Arresta registrazione**  
- Avvia o arresta la visualizzazione dei messaggi.  
+ **Avviare/arrestare la registrazione**  
+ Avvia o arresta la visualizzazione del messaggio.  
   
  **Opzioni di registrazione**  
- Apre la **Opzioni messaggio** della finestra di dialogo in cui è possibile specificare i criteri di ricerca di messaggi.  
+ Apre la finestra di dialogo **MessageOptions** in cui è possibile specificare i criteri di ricerca dei messaggi.  
   
  **Cancella log**  
- Cancella il contenuto della visualizzazione dei messaggi attivo.
+ Cancella il contenuto della visualizzazione messaggi attivi.

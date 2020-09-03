@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3dfc40b8489e774572b5ac157ebdaec9c71ad5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659234"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilizzo di soluzioni per un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Questa sezione illustra come configurare e personalizzare la soluzione.
+Un linguaggio specifico di dominio (DSL) viene creato usando una [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione. Questa sezione illustra come configurare e personalizzare la soluzione.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
  [Informazioni sui linguaggi specifici del dominio](../modeling/about-domain-specific-languages.md) Viene descritto come sviluppare DSLs e come applicarli.
 
  [Panoramica di strumenti Domain-Specific Language](../modeling/overview-of-domain-specific-language-tools.md) Illustra le attività principali per lo sviluppo e la distribuzione di un linguaggio DSL.

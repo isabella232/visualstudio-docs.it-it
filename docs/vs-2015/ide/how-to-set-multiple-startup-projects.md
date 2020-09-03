@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f751ef8ecc884c0e0b338d70f9e198fdc07807cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660144"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procedura: impostare più progetti di avvio
@@ -27,7 +27,7 @@ Visual Studio consente di specificare la modalità di esecuzione di più progett
 
 1. Selezionare la soluzione in **Esplora soluzioni** (il primo nodo in alto). Fare clic con il pulsante destro del mouse sul nodo selezionato per accedere al menu di scelta rapida.
 
-2. Selezionare **Proprietà**. Viene visualizzata la finestra di dialogo **Pagine delle proprietà di soluzione**.
+2. Selezionare **Proprietà**. Viene visualizzata la finestra di dialogo **Pagine delle proprietà** della soluzione.
 
 3. Espandere il nodo **Proprietà comuni** e fare clic su **Progetto di avvio**.
 

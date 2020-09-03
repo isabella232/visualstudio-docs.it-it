@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId . Documenti Microsoft
+title: 'IDebugDocumentChecksum2:: GetChecksumAndAlgorithmId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731937"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Recupera il checksum del documento e l'identificatore dell'algoritmo dato il numero massimo di byte da utilizzare.
+Recupera il checksum del documento e l'identificatore dell'algoritmo dato il numero massimo di byte da usare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,22 +46,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>Parametri
 `pRetVal`\
-[fuori] Identificatore univoco dell'algoritmo di checksum.
+out Identificatore univoco per l'algoritmo di checksum.
 
 `cMaxBytes`\
-[in] Numero massimo di byte da utilizzare per il checksum.
+in Numero massimo di byte da utilizzare per il checksum.
 
 `pChecksum`\
-[fuori] Valore del checksum.
+out Valore del checksum.
 
 `pcNumBytes`\
-[fuori] Numero effettivo di byte utilizzati per il checksum.
+out Numero effettivo di byte utilizzati per il checksum.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene utilizzato questo metodo per ottenere il checksum e l'algoritmo per un documento.
+Nell'esempio seguente viene usato questo metodo per ottenere il checksum e l'algoritmo per un documento.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)

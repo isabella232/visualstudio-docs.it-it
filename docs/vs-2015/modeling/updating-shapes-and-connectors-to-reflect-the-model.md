@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c31d54a87ff305504496eac6ae02900334c0966a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659452"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aggiornamento di forme e di connettori per riflettere il modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In un linguaggio specifico di dominio in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile fare in modo che l'aspetto di una forma rispecchi lo stato del modello sottostante.
+In un linguaggio specifico di dominio in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , è possibile fare in modo che l'aspetto di una forma rispecchi lo stato del modello sottostante.
 
- Gli esempi di codice in questo argomento devono essere aggiunti a un file di `.cs` nel progetto `Dsl`. Queste istruzioni sono necessarie in ogni file:
+ Gli esempi di codice in questo argomento devono essere aggiunti a un `.cs` file nel `Dsl` progetto. Queste istruzioni sono necessarie in ogni file:
 
 ```
 using Microsoft.VisualStudio.Modeling;
@@ -30,9 +30,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Impostare le proprietà della mappa di forme per controllare la visibilità di un elemento Decorator
- È possibile controllare la visibilità di un elemento Decorator senza scrivere codice programma, configurando il mapping tra la forma e la classe di dominio nella definizione DSL. Per altre informazioni, vedere i seguenti argomenti:
+ È possibile controllare la visibilità di un elemento Decorator senza scrivere codice programma, configurando il mapping tra la forma e la classe di dominio nella definizione DSL. Per altre informazioni, vedere gli argomenti seguenti:
 
-- [Procedura: Controllare la visibilità di un elemento Decorator (reindirizzamento)](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)
+- [Procedura: controllare la visibilità di un elemento Decorator (reindirizzamento)](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)
 
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
 
@@ -43,7 +43,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  `shape.FillColor = System.Drawing.Color.Red;`
 
- Se si desidera rendere la variabile della proprietà solo sotto il controllo del programma e non dall'utente, selezionare la nuova proprietà del dominio, ad esempio **colore riempimento** nel diagramma di definizione DSL. Quindi, nel Finestra Proprietà, il set **è visualizzabile** in `false` o set **è l'interfaccia utente ReadOnly** per `true`.
+ Se si desidera rendere la variabile della proprietà solo sotto il controllo del programma e non dall'utente, selezionare la nuova proprietà del dominio, ad esempio **colore riempimento** nel diagramma di definizione DSL. Quindi, nel Finestra Proprietà, il set **è esplorabile** `false` o impostato **è UI ReadOnly** su `true` .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definire le regole di modifica per impostare il colore, lo stile o la posizione dipendono dalle proprietà degli elementi del modello
  È possibile definire regole che aggiornano l'aspetto della forma dipendente da altre parti del modello. Ad esempio, è possibile definire una regola di modifica su un elemento del modello che aggiorna il colore della relativa forma dipendente dalle proprietà dell'elemento del modello. Per ulteriori informazioni sulle regole di modifica, vedere la pagina relativa [alla propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
@@ -90,7 +90,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Usare OnChildConfigured per inizializzare le proprietà di una forma
- Per impostare le proprietà di una forma quando viene creata per la prima volta, l'override `OnChildConfigured()` in una definizione parziale della classe del diagramma. La classe Diagram è specificata nella definizione DSL e il codice generato è in **Dsl\Generated Code\Diagram.cs**. Esempio:
+ Per impostare le proprietà di una forma quando viene creata per la prima volta, l'override `OnChildConfigured()` in una definizione parziale della classe del diagramma. La classe Diagram è specificata nella definizione DSL e il codice generato è in **Dsl\Generated Code\Diagram.cs**. Ad esempio:
 
 ```csharp
 partial class MyLanguageDiagram
@@ -115,10 +115,10 @@ partial class MyLanguageDiagram
 
  Questo metodo può essere utilizzato sia per le proprietà del dominio che per le funzionalità non di archivio, ad esempio la dimensione della forma.
 
-## <a name="OnAssociatedProperty"></a>Utilizzare AssociateValueWith () per aggiornare altre funzionalità di una forma
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> Utilizzare AssociateValueWith () per aggiornare altre funzionalità di una forma
  Per alcune funzionalità di una forma, ad esempio se presenta un'ombreggiatura o lo stile della freccia di un connettore, non esiste alcun metodo incorporato per esporre la funzionalità come proprietà di dominio.  Le modifiche apportate a tali funzionalità non sono sotto il controllo del sistema di transazione. Non è pertanto appropriato aggiornarle utilizzando le regole, perché le regole non vengono richiamate quando l'utente esegue il comando Annulla.
 
- In alternativa, è possibile aggiornare tali funzionalità usando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Nell'esempio seguente lo stile della freccia di un connettore è controllato da un valore di una proprietà di dominio nella relazione visualizzata dal connettore:
+ In alternativa, è possibile aggiornare tali funzionalità usando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> . Nell'esempio seguente lo stile della freccia di un connettore è controllato da un valore di una proprietà di dominio nella relazione visualizzata dal connettore:
 
 ```
 public partial class ArrowConnector // My connector class.
@@ -159,6 +159,6 @@ public partial class ArrowConnector // My connector class.
 
 ```
 
- `AssociateValueWith()` deve essere chiamato una volta per ogni proprietà del dominio che si desidera registrare. Una volta chiamato, qualsiasi modifica apportata alla proprietà specificata chiamerà `OnAssociatedPropertyChanged()` in tutte le forme che presentano l'elemento del modello della proprietà.
+ `AssociateValueWith()` deve essere chiamato una volta per ogni proprietà del dominio che si desidera registrare. Una volta chiamato, qualsiasi modifica apportata alla proprietà specificata chiamerà `OnAssociatedPropertyChanged()` in qualsiasi forma che presenta l'elemento del modello della proprietà.
 
  Non è necessario chiamare `AssociateValueWith()` per ogni istanza. Sebbene InitializeResources sia un metodo di istanza, viene richiamato solo una volta per ogni classe Shape.

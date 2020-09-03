@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586796"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding di ricerca
@@ -36,11 +36,11 @@ Quando si creano controlli da usare negli scenari di data binding, è necessario
 |Implementare <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.DataGridView>, che visualizzano elenchi, o tabelle, di dati. Per ulteriori informazioni, vedere la pagina relativa alla [creazione di un Windows Forms controllo utente che supporta data binding complessi](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementare <xref:System.ComponentModel.LookupBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.ComboBox>, che visualizzano elenchi, o tabelle, di dati ma che devono anche presentare una singola colonna o proprietà. Il processo è descritto in questa pagina di procedura dettagliata.|
 
-Questa procedura dettagliata crea un controllo di ricerca che effettua l'associazione ai dati di due tabelle. Questo esempio usa le tabelle `Customers` e `Orders` del database di esempio Northwind. Il controllo di ricerca viene associato al campo `CustomerID` della tabella `Orders`. Usa questo valore per cercare la `CompanyName` dalla tabella `Customers`.
+Questa procedura dettagliata crea un controllo di ricerca che effettua l'associazione ai dati di due tabelle. Questo esempio usa le tabelle `Customers` e `Orders` del database di esempio Northwind. Il controllo di ricerca è associato al `CustomerID` campo della `Orders` tabella. Usa questo valore per cercare `CompanyName` dalla `Customers` tabella.
 
 Durante questa procedura dettagliata si apprenderà come:
 
-- Creare una nuova applicazione **Windows Forms Application**.
+- Creare una nuova **applicazione Windows Forms**.
 
 - Aggiungere un nuovo **controllo utente** al progetto.
 
@@ -78,7 +78,7 @@ Il primo passaggio consiste nel creare un progetto di **applicazione Windows For
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
@@ -98,7 +98,7 @@ Dal momento che questa procedura dettagliata crea un controllo di ricerca da un 
 
 ## <a name="design-the-lookupbox-control"></a>Progettare il controllo LookupBox
 
-Per progettare il controllo LookupBox, trascinare un <xref:System.Windows.Forms.ComboBox> dalla **casella degli strumenti** nell'area di progettazione del controllo utente.
+Per progettare il controllo LookupBox, trascinare un oggetto <xref:System.Windows.Forms.ComboBox> dalla **casella degli strumenti** nell'area di progettazione del controllo utente.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Aggiungere l'attributo obbligatorio di associazione dati
 
@@ -111,7 +111,7 @@ Per controlli di ricerca che supportano il data binding, è possibile implementa
      [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
      [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
 
-3. Scegliere **Compila soluzione** dal menu **Compila**.
+3. Scegliere **Compila soluzione**dal menu **Compila** .
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
@@ -119,7 +119,7 @@ Questo passaggio crea un'origine dati usando la **Configurazione guidata origine
 
 1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
@@ -163,7 +163,7 @@ Nella finestra **Origini dati** è possibile impostare il controllo da creare pr
 
 È possibile creare i controlli associati ai dati trascinando elementi dalla finestra **Origini dati** in **Form1**.
 
-Per creare controlli associati a dati in Windows Form, trascinare il nodo **Orders** dalla finestra **origini dati** in Windows Form e verificare che il controllo **LookupBox** venga utilizzato per visualizzare i dati nella colonna `CustomerID`.
+Per creare controlli associati a dati in Windows Form, trascinare il nodo **Orders** dalla finestra **origini dati** in Windows Form e verificare che il controllo **LookupBox** sia usato per visualizzare i dati nella `CustomerID` colonna.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Associare il controllo per cercare CompanyName dalla tabella Customers
 
@@ -171,7 +171,7 @@ Per configurare le associazioni di ricerca, selezionare il nodo **Customers** pr
 
 Viene in questo modo impostato il data binding per visualizzare `CompanyName` dalla tabella `Customers`, mantenendo al contempo il valore `CustomerID` della tabella `Orders`.
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 - Premere **F5** per eseguire l'applicazione.
 

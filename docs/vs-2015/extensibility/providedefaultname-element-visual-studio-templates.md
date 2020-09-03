@@ -13,19 +13,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193881"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica se il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema di progetto verrà generato un nome predefinito per il modello nella **Aggiungi nuovo elemento** o **nuovo progetto** nella finestra di dialogo.  
+Specifica se il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema del progetto genererà un nome predefinito per il modello nella finestra di dialogo **Aggiungi nuovo elemento** o **nuovo progetto** .  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<ProvideDefaultName>  
   
 ## <a name="syntax"></a>Sintassi  
@@ -52,17 +52,17 @@ Specifica se il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema di progetto
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false`, che indica se generare un nome predefinito per il modello nella o meno la **Aggiungi nuovo elemento** o **nuovo progetto** nella finestra di dialogo.  
+ Il testo deve essere `true` o `false` , che indica se generare o meno un nome predefinito per il modello nella finestra di **dialogo Aggiungi nuovo elemento** o **nuovo progetto** .  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `ProvideDefaultName` è un elemento facoltativo. Il valore predefinito è `true`.  
   
- Se il `ProvideDefaultName` elemento viene `false`, il **nome** caselle del **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo contengono il valore `<Enter_name>`.  
+ Se l' `ProvideDefaultName` elemento è `false` , le caselle **nome** della finestra di dialogo **Aggiungi nuovo elemento** e **nuovo progetto** contengono il valore `<Enter_name>` .  
   
- Usare il [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento per specificare il nome predefinito del progetto o elemento il **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo.  
+ Usare l'elemento [defaultName](../extensibility/defaultname-element-visual-studio-templates.md) per specificare il nome predefinito del progetto o dell'elemento nelle finestre di dialogo **Aggiungi nuovo elemento** e **nuovo progetto** .  
   
 ## <a name="example"></a>Esempio  
- I seguente esempio di codice impostare il `ProvideDefaultName` elemento `false`.  
+ Nell'esempio di codice seguente l' `ProvideDefaultName` elemento viene impostato su `false` .  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -81,5 +81,5 @@ Specifica se il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sistema di progetto
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

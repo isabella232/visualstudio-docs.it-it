@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetAlias | Microsoft Docs
+title: 'IDebugObject2:: getAlias | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b05d416da41265f6727df843b1b686fcfe5107f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194604"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene l'alias associato all'oggetto, se presente.  
+Ottiene l'alias associato a questo oggetto, se presente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int GetAlias(
   
 #### <a name="parameters"></a>Parametri  
  `ppAlias`  
- [out] Restituisce un [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) dell'oggetto che rappresenta l'alias per questo oggetto; in caso contrario, restituisce un valore null.  
+ out Restituisce un oggetto [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) che rappresenta l'alias per questo oggetto. in caso contrario, restituisce un valore null.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Un alias per un oggetto viene creato con una chiamata per il [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Viene creato un alias per un oggetto con una chiamata al metodo [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

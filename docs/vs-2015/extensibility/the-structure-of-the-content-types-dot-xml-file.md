@@ -1,5 +1,5 @@
 ---
-title: Il file Structure of the Content_types].xml Documenti Microsoft
+title: Struttura del file Content_types]. XML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,19 +14,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2d6eca44c08cf35e7b2075965c1b6139e7fb95bc
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80395362"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struttura del file [Content_types].xml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio utilizza il file [Content_Types].xml per installare il pacchetto, ma non installa il file stesso.  
+Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio usa il file [Content_Types]. XML per installare il pacchetto, ma non installa il file stesso.  
   
 > [!NOTE]
-> Anche se questo argomento si applica solo ai file [Content_Type].xml utilizzati nei pacchetti VSIX, il tipo di file [Content_Types].xml fa parte dello standard *Open Packaging Conventions (OPC).* Per ulteriori informazioni, vedere [OPC: A New Standard For Packaging Your Data](https://msdn.microsoft.com/magazine/cc163372.aspx) sul sito Web MSDN (informazioni in lingua inglese).  
+> Sebbene questo argomento si riferisca solo ai file [Content_Type]. XML usati nei pacchetti VSIX, il tipo di file [Content_Types]. XML fa parte dello standard *OPC (Open Packaging Conventions)* . Per ulteriori informazioni, vedere [OPC: nuovo standard per la creazione di pacchetti di dati](https://msdn.microsoft.com/magazine/cc163372.aspx) nel sito Web MSDN.  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
  Nelle sezioni seguenti vengono descritti l'elemento radice e i relativi attributi ed elementi figlio.  
@@ -35,17 +35,17 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|`Types`|Contiene elementi figlio che enumerano i tipi di file nel pacchetto VSIX.|  
+|`Types`|Contiene gli elementi figlio che enumerano i tipi di file nel pacchetto VSIX.|  
   
-### <a name="attributes"></a>Attributi  
+### <a name="attributes"></a>Attributes  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Xmlns`|(Obbligatorio.) Percorso dello schema utilizzato per questo file [Content_Types].xml.|  
+|`Xmlns`|(Obbligatorio). Percorso dello schema utilizzato per il file [Content_Types]. XML.|  
   
-### <a name="attribute-name-attribute"></a>"Nome dell'attributo" Attributo  
+### <a name="attribute-name-attribute"></a>{Nome attributo} Attributo  
   
-|                           valore                           |                Descrizione                |
+|                           Valore                           |                Descrizione                |
 |-----------------------------------------------------------|-------------------------------------------|
 | `http://schemas.openformats.org/package/2006/content-types` | Percorso dello schema dei tipi di contenuto. |
   
@@ -54,17 +54,17 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|`Default`|Descrive un tipo di contenuto nel pacchetto VSIX. Ogni tipo di file nel `Default` pacchetto deve avere un proprio elemento.|  
+|`Default`|Descrive un tipo di contenuto nel pacchetto VSIX. Ogni tipo di file nel pacchetto deve avere un proprio `Default` elemento.|  
   
-### <a name="attributes"></a>Attributi  
+### <a name="attributes"></a>Attributes  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Extension`|Estensione di un file nel pacchetto VSIX.|  
+|`Extension`|Estensione del nome file di un file nel pacchetto VSIX.|  
 |`ContentType`|Descrive il tipo di contenuto associato all'estensione del nome file.|  
   
-### <a name="attribute-name-attribute"></a>"Nome dell'attributo" Attributo  
- Visual Studio riconosce `ContentType` i valori `Extension` seguenti per i tipi associati.  
+### <a name="attribute-name-attribute"></a>{Nome attributo} Attributo  
+ Visual Studio riconosce i `ContentType` valori seguenti per i `Extension` tipi associati.  
   
 |Estensione|ContentType|  
 |---------------|-----------------|  
@@ -72,11 +72,11 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 |pkgdef|text/plain|  
 |Xml|text/xml|  
 |vsixmanifest|text/xml|  
-|htm o html|text/html|  
-|Rtf|applicazione/rtf|  
-|pdf|applicazione/pdf|  
+|htm o HTML|text/html|  
+|RTF|applicazione/RTF|  
+|pdf|applicazione/PDF|  
 |GIF|image/gif|  
-|jpg o jpeg|immagine/jpg|  
+|jpg o JPEG|immagine/jpg|  
 |tiff|image/tiff|  
 |vsix|applicazione/zip|  
 |zip|applicazione/zip|  
@@ -86,7 +86,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 ## <a name="example"></a>Esempio  
   
 ### <a name="description"></a>Descrizione  
- Il file [Content_Types].xml seguente descrive un tipico pacchetto VSIX.  
+ Il seguente file [Content_Types]. XML descrive un tipico pacchetto VSIX.  
   
 ### <a name="code"></a>Codice  
   
@@ -103,5 +103,5 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
   
 ## <a name="see-also"></a>Vedere anche  
  [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [VSIX Extension Schema 1.0 Reference](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: un nuovo standard per l'imballaggio dei dati](https://msdn.microsoft.com/magazine/cc163372.aspx)
+ [Riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [OPC: nuovo standard per il packaging dei dati](https://msdn.microsoft.com/magazine/cc163372.aspx)

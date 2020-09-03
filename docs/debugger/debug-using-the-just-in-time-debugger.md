@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350576"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il debugger JIT in Visual Studio
@@ -26,7 +26,7 @@ Il debug JIT funziona per le applicazioni desktop di Windows. Non funziona per l
 > [!TIP]
 > Se si vuole semplicemente arrestare la visualizzazione della finestra di dialogo del debugger JIT, ma non è installato Visual Studio, vedere [disabilitare il debugger JIT](../debugger/just-in-time-debugging-in-visual-studio.md). Se è stato installato Visual Studio, potrebbe essere necessario [disabilitare il debug JIT dal registro di sistema di Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-## <a name="enable-or-disable-just-in-time-debugging-in-visual-studio"></a><a name="BKMK_Enabling"></a>Abilitare o disabilitare il debug JIT in Visual Studio
+## <a name="enable-or-disable-just-in-time-debugging-in-visual-studio"></a><a name="BKMK_Enabling"></a> Abilitare o disabilitare il debug JIT in Visual Studio
 
 >[!NOTE]
 >Per abilitare o disabilitare il debug JIT, è necessario eseguire Visual Studio come amministratore. L'abilitazione o la disabilitazione del debug just-in-Time imposta una chiave del registro di sistema e i privilegi di amministratore potrebbero essere necessari per modificare tale chiave. Per aprire Visual Studio come amministratore, fare clic con il pulsante destro del mouse sull'app Visual Studio e scegliere **Esegui come amministratore**.
@@ -41,7 +41,7 @@ Il debug JIT funziona per le applicazioni desktop di Windows. Non funziona per l
 
 1. Nella casella **Abilita debug JIT per questi tipi di codice** selezionare i tipi di codice per cui si vuole eseguire il debug JIT: **gestito**, **nativo**e/o **script**.
 
-1. Fare clic su **OK**.
+1. Selezionare **OK**.
 
 Se si Abilita il debugger JIT, ma non si apre quando si verifica un arresto anomalo o un errore dell'app, vedere [risolvere i problemi relativi al debug](#jit_errors)JIT.
 
@@ -136,7 +136,7 @@ Per questo esempio, si renderà un'app console C# in Visual Studio che genera un
 
    In **debugger disponibili**selezionare **nuova istanza di \<your preferred Visual Studio version/edition> **, se non è già selezionata.
 
-1. Fare clic su **OK**.
+1. Selezionare **OK**.
 
    Il progetto ThrowsNullException viene aperto in una nuova istanza di Visual Studio, con l'esecuzione arrestata alla riga che ha generato l'eccezione:
 
@@ -147,7 +147,7 @@ A questo punto è possibile avviare il debug. Se si esegue il debug di un'app re
 > [!CAUTION]
 > Se l'app contiene codice non attendibile, viene visualizzata una finestra di dialogo di avviso di sicurezza che consente di decidere se procedere con il debug. Prima di continuare il debug, decidere se considerare attendibile il codice. Se il codice è stato scritto da altri, Se l'applicazione è in esecuzione in un computer remoto, assicurarsi di riconoscere il nome del processo. Se l'app è in esecuzione localmente, prendere in considerazione la possibilità di eseguire codice dannoso nel computer. Se si decide che il codice è attendibile, fare clic su **OK**. In caso contrario, selezionare **Annulla**.
 
-## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a>Risolvere i problemi di debug just-in-Time
+## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a> Risolvere i problemi di debug just-in-Time
 
 Se il debug JIT non viene avviato quando un'app si arresta in modo anomalo, anche se è abilitata in Visual Studio:
 
@@ -189,7 +189,7 @@ Durante il debug JIT potrebbero essere visualizzati i messaggi di errore seguent
 
     Per risolvere il problema, usare la Programma di installazione di Visual Studio per reinstallare o ripristinare l'installazione di Visual Studio.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824872"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
@@ -40,7 +40,7 @@ ms.locfileid: "67824872"
 
 - Visualizzare e stampare gli argomenti, nonché contrassegnarli con un segnalibro.
 
-Per installare Help Viewer, vedere [Installazione di Microsoft Help Viewer](../help-viewer/installation.md). Per iniziare a leggere gli argomenti della Guida in Help Viewer anziché online, accedere al menu **?** di Visual Studio e quindi scegliere **Imposta preferenza Guida** > **Avvia in Help Viewer**.
+Per installare Help Viewer, vedere [Microsoft Help Viewer installazione](../help-viewer/installation.md). Per iniziare a leggere gli argomenti della Guida in Help Viewer anziché online, accedere al menu **?** di Visual Studio e quindi scegliere **Imposta preferenza Guida** > **Avvia in Help Viewer**.
 
 > [!TIP]
 > Per scaricare il contenuto in locale e visualizzarlo quando non è disponibile una connessione a Internet, è anche possibile scaricare una versione PDF del contenuto. Molte documentazioni in docs.microsoft.com includono un collegamento nella parte inferiore del sommario (TOC) per scaricare un file PDF contenente tutti gli articoli del sommario.
@@ -49,24 +49,24 @@ Per installare Help Viewer, vedere [Installazione di Microsoft Help Viewer](../h
 
 ## <a name="help-viewer-tour"></a>Presentazione di Help Viewer
 
-È possibile cercare informazioni nel contenuto installato usando le schede di navigazione, visualizzare il contenuto installato nella scheda o nelle schede dell'argomento e gestire il contenuto usando la scheda **Gestisci contenuto**. È anche possibile eseguire attività aggiuntive mediante i pulsanti della barra degli strumenti e trovare altre informazioni nell'angolo inferiore destro della finestra.
+È possibile trovare informazioni nel contenuto installato usando le schede di navigazione, visualizzare il contenuto installato nella scheda o nelle schede dell'argomento e gestire il contenuto usando la scheda **Gestisci contenuto** . È anche possibile eseguire ulteriori attività usando i pulsanti sulla barra degli strumenti e trovare altre informazioni nell'angolo inferiore destro della finestra.
 
 ### <a name="navigation-tabs"></a>Schede di spostamento
 
-|Scheda|DESCRIZIONE|
+|Scheda|Descrizione|
 |---|-----------|
-|Sommario|Visualizza il contenuto installato come una gerarchia (sommario). È possibile specificare criteri per filtrare i titoli visualizzati.|
+|Contenuto|Visualizza il contenuto installato come una gerarchia (sommario). È possibile specificare criteri per filtrare i titoli visualizzati.|
 |Indice|Visualizza un elenco alfabetico di termini indicizzati. È possibile eseguire ricerche nell'indice, specificare i criteri per filtrare le voci e specificare che le voci di indice contengano o inizino con il testo desiderato.|
-|Preferiti|È possibile contrassegnare argomenti come "Preferiti" scegliendo il pulsante **Aggiungi a Preferiti**. Gli argomenti così contrassegnati vengono visualizzati in questa scheda. Nella sezione **Cronologia** viene visualizzato un elenco di argomenti visualizzati di recente.|
-|Cerca|In questa scheda è disponibile una casella di testo per cercare i termini in tutto il contenuto, inclusi il codice e i titoli degli argomenti.|
+|Preferiti|Per gli argomenti "Preferiti" è possibile scegliere il pulsante **Aggiungi a Preferiti** . gli argomenti vengono visualizzati in questa scheda. Nella sezione **cronologia** viene visualizzato un elenco di argomenti visualizzati di recente.|
+|Ricerca|In questa scheda è disponibile una casella di testo per cercare i termini in tutto il contenuto, inclusi il codice e i titoli degli argomenti.|
 
 ### <a name="view-topics"></a>Visualizza gli argomenti
 
 Ogni argomento viene visualizzato in una scheda a parte ed è possibile aprire più argomenti contemporaneamente.
 
-### <a name="manage-content"></a>Gestisci contenuto
+### <a name="manage-content"></a>Gestione del contenuto
 
-È possibile installare, aggiornare, spostare ed eliminare il contenuto usando la scheda **Gestisci contenuto**. Nella parte superiore della scheda è possibile usare il controllo **Origine dell'installazione** per specificare se installare i libri da un percorso di rete, da un disco o da un URI. Nella casella **Percorso archivio locale** viene visualizzato il percorso in cui vengono installati i libri nel computer locale. Per spostare i libri in un percorso diverso, scegliere il pulsante **Sposta**.
+È possibile installare, aggiornare, spostare ed eliminare il contenuto usando la scheda **Gestisci contenuto** . Nella parte superiore della scheda è possibile usare il controllo del **codice sorgente di installazione** per specificare se installare i libri da un percorso di rete o da un disco o un URI. Nella casella **Percorso archivio locale** viene visualizzato il percorso in cui vengono installati i libri nel computer locale. Per spostare i libri in un percorso diverso, scegliere il pulsante **Sposta**.
 
 L'elenco del contenuto visualizza i libri che è possibile installare o quelli già installati, se è disponibile un aggiornamento e le dimensioni di ciascun libro. È possibile installare o rimuovere uno o più libri scegliendo i collegamenti appropriati **Aggiungi** o **Rimuovi** e quindi scegliendo il pulsante **Aggiorna** nel riquadro **Modifiche in sospeso**. Se sono disponibili aggiornamenti per la documentazione già installata, è possibile aggiornare il contenuto scegliendo il collegamento **Fare clic qui per scaricare ora** nella parte inferiore della finestra. Inoltre, tutti i libri installati vengono aggiornati se sono disponibili aggiornamenti quando si installano altri libri.
 
@@ -89,10 +89,10 @@ La barra degli strumenti nella finestra **Help Viewer** contiene i pulsanti segu
 
 - Il pulsante **Gestisci contenuto** rende attiva la scheda **Gestisci contenuto**.
 
-- Il piccolo triangolo sul lato destro apre un elenco di schede, incluse le schede degli argomenti e la scheda **Gestisci contenuto**. È possibile scegliere un nome di scheda per renderla attiva.
+- Il piccolo triangolo sul lato destro apre un elenco di schede, incluse le schede degli argomenti e la scheda **Gestisci contenuto** . È possibile scegliere un nome di scheda per impostarlo come scheda attiva.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Installazione di Microsoft Help Viewer](../help-viewer/installation.md)
+- [Installazione Microsoft Help Viewer](../help-viewer/installation.md)
 - [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md)
 - [Installare e gestire il contenuto locale](../help-viewer/install-manage-local-content.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586809"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
@@ -71,7 +71,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
@@ -91,7 +91,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella **Customers** viene visualizzata nella finestra **Origini dati**.
 
-## <a name="create-the-form"></a>Creare il modulo
+## <a name="create-the-form"></a> Creare il modulo
 
 È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form:
 
@@ -121,13 +121,13 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
      ```
 
     > [!NOTE]
-    > L'accesso e OLE DB origini dati usano il punto interrogativo ('?') per indicare i parametri, quindi la clausola WHERE sarà simile alla seguente: `WHERE City = ?`.
+    > L'accesso e OLE DB origini dati usano il punto interrogativo ('?') per indicare i parametri, quindi la clausola WHERE sarà simile alla seguente: `WHERE City = ?` .
 
 4. Fare clic su **OK** per chiudere la finestra di dialogo **Generatore di criteri per la ricerca**.
 
      Al form viene aggiunto un elemento **FillByCityToolStrip**.
 
-## <a name="test-the-application"></a>Testare l'applicazione
+## <a name="test-the-application"></a>Test dell'applicazione
 
 L'esecuzione dell'applicazione apre il form e lo rende pronto per assumere il parametro come input:
 

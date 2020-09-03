@@ -1,5 +1,5 @@
 ---
-title: Nome elemento (modelli di Visual Studio) | Microsoft Docs
+title: Elemento Name (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194193"
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento Name (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica il nome del modello così come appare nel **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
+Specifica il nome del modello visualizzato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Nome >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Name>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,8 +45,8 @@ Specifica il nome del modello così come appare nel **nuovo progetto** oppure **
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Package`|Attributo facoltativo, per scenari avanzati.<br /><br /> GUID che specifica l'ID del pacchetto di Visual Studio.|  
-|`ID`|Attributo facoltativo, per scenari avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|  
+|`Package`|Attributo facoltativo, per gli scenari utente avanzati.<br /><br /> GUID che specifica l'ID del pacchetto di Visual Studio.|  
+|`ID`|Attributo facoltativo, per gli scenari utente avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  
@@ -62,11 +62,11 @@ Specifica il nome del modello così come appare nel **nuovo progetto** oppure **
   
  Il testo fornisce il nome del modello.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `Name` è un elemento figlio obbligatorio di `TemplateData`.  
   
 ## <a name="example"></a>Esempio  
- L'esempio seguente mostra i metadati per un modello di progetto per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] dell'applicazione.  
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -93,5 +93,5 @@ Specifica il nome del modello così come appare nel **nuovo progetto** oppure **
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

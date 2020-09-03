@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Microsoft Docs
+title: 'IDebugContainerField:: EnumFields | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 485de4bdc9ff5b17c056c0db4e2930f5c6986fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205307"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
@@ -48,25 +48,25 @@ int EnumFields(
   
 #### <a name="parameters"></a>Parametri  
  `dwKindFilter`  
- [in] Una combinazione di [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) le costanti che selezionano i campi da enumerare. Tipi di campo possono descrivere i tipi di archiviazione, ad esempio informazioni primitive o specifiche o classe, ad esempio locale, un parametro o puntatore "this".  
+ in Combinazione di [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) costanti che selezionano i campi da enumerare. I tipi di campo possono descrivere i tipi di archiviazione, ad esempio la classe o la primitiva, o informazioni specifiche, ad esempio il puntatore locale, il parametro o il puntatore "This".  
   
  `dwModifiersFilter`  
- [in] Una combinazione di [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) le costanti che selezionano i campi da enumerare. Modificatori di campo possono essere le autorizzazioni di accesso, ad esempio pubblico o privato o informazioni sull'archiviazione, ad esempio virtual, static o finale.  
+ in Combinazione di [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) costanti che selezionano i campi da enumerare. I modificatori di campo possono essere autorizzazioni di accesso, ad esempio pubbliche o private, o informazioni di archiviazione, ad esempio virtuale, statica o finale.  
   
  `pszNameFilter`  
- [in] Il nome del campo da enumerare. Può trattarsi di un valore null se tutti i campi devono essere restituiti.  
+ in Nome del campo da enumerare. Può trattarsi di un valore null se devono essere restituiti tutti i campi.  
   
  `nameMatch`  
- [in] Un valore compreso il [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione che controlla se la ricerca è distinzione maiuscole/minuscole o No.  
+ in Valore dell'enumerazione [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) che controlla se la ricerca fa distinzione tra maiuscole e minuscole.  
   
  `ppEnum`  
- [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che rappresenta l'elenco dei campi. Restituisce un valore null se non sono presenti campi.  
+ out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) che rappresenta l'elenco dei campi. Restituisce un valore null se non sono presenti campi.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK o S_FALSE se non sono presenti campi. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce S_OK o S_FALSE se non sono presenti campi. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Il `dwKindFilter`, `dwModifiersFilter`, e `pszNameFilter` parametri possono essere combinati, ad esempio, per selezionare tutti i metodi pubblici virtuali denominati "MyMethod".  
+## <a name="remarks"></a>Osservazioni  
+ `dwKindFilter` `dwModifiersFilter` `pszNameFilter` È possibile combinare i parametri, e, ad esempio, per selezionare tutti i metodi virtuali pubblici denominati "MyMethod".  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   

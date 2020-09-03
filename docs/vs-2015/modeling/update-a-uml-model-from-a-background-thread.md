@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659459"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aggiornare un modello UML da un thread in background
@@ -23,7 +23,7 @@ A volte può essere utile apportare modifiche a un modello in un thread in backg
 
  È tuttavia necessario tenere presente che l'archivio UML non è thread-safe. Ecco alcune precauzioni importanti:
 
-- Ogni aggiornamento a un modello o a un diagramma deve essere eseguito nel thread dell'interfaccia utente. Il thread in background deve usare <xref:System.Windows.Forms.Control.Invoke%2A> o `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> per fare in modo che il thread dell'interfaccia utente esegua gli aggiornamenti effettivi.
+- Ogni aggiornamento a un modello o a un diagramma deve essere eseguito nel thread dell'interfaccia utente.  Il thread in background deve usare <xref:System.Windows.Forms.Control.Invoke%2A> o `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> per fare in modo che il thread dell'interfaccia utente esegua gli aggiornamenti effettivi.
 
 - Se si raggruppa una serie di modifiche in un'unica transazione, è consigliabile impedire all'utente di modificare il modello mentre la transazione è in corso. In caso contrario, qualsiasi modifica apportata dall'utente diventerà parte della stessa transazione. È possibile impedire all'utente di apportare modifiche visualizzando una finestra di dialogo modale. Eventualmente, è possibile visualizzare un pulsante Annulla nella finestra di dialogo. L'utente può visualizzare le modifiche man mano che si verificano.
 
@@ -32,7 +32,7 @@ A volte può essere utile apportare modifiche a un modello in un thread in backg
 
 #### <a name="to-run-the-example"></a>Per eseguire l'esempio
 
-1. Creare un gestore di comandi in C# un progetto come descritto in [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+1. Creare un gestore di comandi in un progetto C# come descritto in [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 2. Verificare che il progetto includa riferimenti a questi assembly:
 

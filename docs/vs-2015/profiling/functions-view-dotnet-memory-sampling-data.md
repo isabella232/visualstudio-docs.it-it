@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e77c6c2b3bf079e8aae88c9779c3b487ff97fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141863"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Visualizzazione Funzioni: dati di campionamento di memoria .NET
@@ -23,11 +23,11 @@ ms.locfileid: "68141863"
 
 La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di campionamento elenca le funzioni che hanno allocato memoria durante l'esecuzione della profilatura e indica le dimensione e il numero delle allocazioni.  
   
-|Colonna|DESCRIZIONE|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione.|  
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|  
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|  
 |**Nome funzione**|Nome completo della funzione.|  
@@ -43,6 +43,6 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che rappresentavano byte esclusivi di questa funzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Funzioni: strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)   
+ [Visualizzazione funzioni-strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Visualizzazione funzioni](../profiling/functions-view-sampling-data.md)   
  [Visualizzazione Funzioni](../profiling/functions-view-instrumentation-data.md)

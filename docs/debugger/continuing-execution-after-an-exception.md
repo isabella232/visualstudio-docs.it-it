@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350680"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
@@ -43,6 +43,6 @@ Quando il debugger interrompe l'esecuzione a causa di un'eccezione, per impostaz
 ## <a name="mixed-code"></a>Codice misto
  Se si rileva un'eccezione non gestita durante il debug di codice misto nativo e gestito, i vincoli del sistema operativo impediscono la rimozione dello stack di chiamate. Se si tenta di rimuovere lo stack di chiamate utilizzando il menu di scelta rapida, un messaggio di errore indica che il debugger non può eseguire la rimozione da un'eccezione non gestita durante il debug di codice misto.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)

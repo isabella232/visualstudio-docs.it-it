@@ -10,14 +10,14 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9ccb870f3b65d54da7d8aebd161a8be8a0f9baf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660128"
 ---
 # <a name="state-machine-activity-designers"></a>ActivityDesigner della macchina a stati
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] include alcuni ActivityDesigner che è possibile usare per la costruzione di flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e vengono fornite indicazioni sulle relative modalità di utilizzo.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] in sono inclusi diversi ActivityDesigner che è possibile utilizzare per la creazione di flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e vengono fornite indicazioni sulle relative modalità di utilizzo.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [StateMachine](../workflow-designer/statemachine-activity-designer.md) Contiene una raccolta di Stati e modelli di flussi di lavoro utilizzando il paradigma della macchina a stati familiare.
@@ -28,7 +28,7 @@ ms.locfileid: "72660128"
 
  [Transizione](../workflow-designer/transition-activity-designer.md) Rappresenta la transizione tra due Stati.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informazioni di riferimento
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>
@@ -44,9 +44,9 @@ ms.locfileid: "72660128"
 
  [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
 
- [Uso degli Activity Designer](../workflow-designer/using-the-activity-designers.md)
+ [Utilizzo degli ActivityDesigner](../workflow-designer/using-the-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Messaggistica](../workflow-designer/messaging-activity-designers.md)
 
  [Runtime](../workflow-designer/runtime-activity-designers.md)
 

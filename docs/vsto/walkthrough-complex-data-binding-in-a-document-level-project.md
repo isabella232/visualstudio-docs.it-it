@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Data binding complesso in un progetto a livello di documento'
+title: 'Procedura dettagliata: data binding complesse in un progetto a livello di documento'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,214 +16,214 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67692347"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding complesso in un progetto a livello di documento
-  Questa procedura dettagliata illustra le nozioni di base di data binding complesso in un progetto a livello di documento. È possibile associare più celle in un foglio di lavoro di Microsoft Office Excel a campi nel database Northwind di SQL Server.
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: data binding complesse in un progetto a livello di documento
+  In questa procedura dettagliata vengono illustrate le nozioni di base di data binding complesse in un progetto a livello di documento. È possibile associare più celle di un foglio di lavoro Microsoft Office Excel ai campi del database di SQL Server Northwind.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
-- Aggiunta di un'origine dati al progetto cartella di lavoro.
+- Aggiunta di un'origine dati al progetto di cartella di lavoro.
 
-- Aggiunta di controlli con associazione a dati a un foglio di lavoro.
+- Aggiunta di controlli con associazione a dati a un foglio di foglio.
 
 - Salvataggio delle modifiche dei dati nel database.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Accesso a un server con il database di esempio Northwind di SQL Server.
+- Accesso a un server con il database di esempio Northwind SQL Server.
 
-- Autorizzazioni per leggere e scrivere nel database di SQL Server.
+- Autorizzazioni per la lettura e la scrittura nel database SQL Server.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
- Il primo passaggio consiste nel creare un progetto cartella di lavoro di Excel.
+ Il primo passaggio consiste nel creare un progetto di cartella di lavoro di Excel.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto cartella di lavoro di Excel con il nome **My Data Binding complesso**. Nella procedura guidata, selezionare **creare un nuovo documento**.
+1. Creare un progetto di cartella di lavoro di Excel con il nome **Data Binding complesso**. Nella procedura guidata selezionare **Crea un nuovo documento**.
 
-     Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio verrà visualizzata la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il **My Data Binding complesso** progetto al **Esplora soluzioni**.
+     Visual Studio apre la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il progetto di **Data Binding complesso** al **Esplora soluzioni**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
  Usare la finestra **Origini dati** per aggiungere un DataSet tipizzato al progetto.
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
-1. Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.
+1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows.
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Selezionare **Database** e quindi fare clic su **successivo**.
+3. Selezionare **database** e quindi fare clic su **Avanti**.
 
-4. Selezionare una connessione dati al database di SQL Server di esempio Northwind, oppure aggiungere una nuova connessione usando il **nuova connessione** pulsante.
+4. Selezionare una connessione dati all'esempio Northwind SQL Server database oppure aggiungere una nuova connessione usando il pulsante **nuova connessione** .
 
-5. Dopo che una connessione è stata selezionata o creata, fare clic su **successivo**.
+5. Dopo aver selezionato o creato una connessione, fare clic su **Avanti**.
 
-6. Deselezionare l'opzione per salvare la connessione, se è selezionata, quindi scegliere **successivo**.
+6. Deselezionare l'opzione per salvare la connessione, se selezionata, quindi fare clic su **Avanti**.
 
-7. Espandere la **tabelle** nodo il **degli oggetti di Database** finestra.
+7. Espandere il nodo **tabelle** nella finestra **oggetti di database** .
 
-8. Selezionare la casella di controllo accanto al **dipendenti** tabella.
+8. Selezionare la casella di controllo accanto alla tabella **Employees** .
 
-9. Scegliere **Fine**.
+9. Fare clic su **Fine**.
 
-   La procedura guidata aggiunge i **dipendenti** alla tabella il **Zdroje dat** finestra. Aggiunge anche un set di dati tipizzato al progetto che è visibile nel **Esplora soluzioni**.
+   La procedura guidata consente di aggiungere la tabella **Employees** alla finestra **origini dati** . Aggiunge anche un set di dati tipizzato al progetto che è visibile in **Esplora soluzioni**.
 
-## <a name="add-controls-to-the-worksheet"></a>Aggiungere controlli al foglio di lavoro
- Verrà visualizzato un foglio di lavoro di **dipendenti** tabella quando viene aperta la cartella di lavoro. Gli utenti saranno in grado di apportare modifiche ai dati e quindi salvare le modifiche al database facendo clic su un pulsante.
+## <a name="add-controls-to-the-worksheet"></a>Aggiungere controlli al foglio di controllo
+ Quando la cartella di lavoro viene aperta, un foglio di lavoro visualizzerà la tabella **Employees** . Gli utenti saranno in grado di apportare modifiche ai dati e di salvare di nuovo le modifiche nel database facendo clic su un pulsante.
 
- Per associare automaticamente il foglio di lavoro per la tabella, è possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo nel foglio di lavoro dal **Zdroje dat** finestra. Per consentire all'utente la possibilità di salvare le modifiche, aggiungere un <xref:System.Windows.Forms.Button> controllare dal **casella degli strumenti**.
+ Per associare automaticamente il foglio di comando alla tabella, è possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo al foglio di controllo dalla finestra **origini dati** . Per fornire all'utente l'opzione per salvare le modifiche, aggiungere un <xref:System.Windows.Forms.Button> controllo dalla **casella degli strumenti**.
 
 #### <a name="to-add-a-list-object"></a>Per aggiungere un oggetto elenco
 
-1. Verificare che il **My Binding.xlsx dati complessi** cartella di lavoro è aperta nella finestra di progettazione di Visual Studio, con **Sheet1** visualizzato.
+1. Verificare che la cartella di lavoro **dati complessi Binding.xlsx** sia aperta nella finestra di progettazione di Visual Studio, con **Sheet1** visualizzato.
 
-2. Aprire il **Zdroje dat** finestra e selezionare il **dipendenti** nodo.
+2. Aprire la finestra **origini dati** e selezionare il nodo **Employees (dipendenti** ).
 
-3. Fare clic sulla freccia giù visualizzata.
+3. Fare clic sulla freccia a discesa visualizzata.
 
 4. Selezionare **ListObject** nell'elenco a discesa.
 
-5. Trascinare il **dipendenti** alla cella **A6**.
+5. Trascinare la tabella **Employees** nella cella **a6**.
 
-     Oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato `EmployeesListObject` viene memorizzato nella cella **A6**. Allo stesso tempo, un <xref:System.Windows.Forms.BindingSource> denominate `EmployeesBindingSource`, un adattatore di tabella e un <xref:System.Data.DataSet> istanza vengono aggiunte al progetto. Il controllo viene associato ai <xref:System.Windows.Forms.BindingSource>, che a sua volta è associato ai <xref:System.Data.DataSet> istanza.
+     <xref:Microsoft.Office.Tools.Excel.ListObject>Viene creato un controllo denominato `EmployeesListObject` nella cella **a6**. Allo stesso tempo, <xref:System.Windows.Forms.BindingSource> `EmployeesBindingSource` al progetto vengono aggiunti un oggetto denominato, un adattatore di tabella e un' <xref:System.Data.DataSet> istanza. Il controllo è associato a <xref:System.Windows.Forms.BindingSource> , che a sua volta viene associato all' <xref:System.Data.DataSet> istanza di.
 
 ### <a name="to-add-a-button"></a>Per aggiungere un pulsante
 
-1. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **A4** del foglio di lavoro.
+1. Dalla scheda **controlli comuni** della **casella degli strumenti**aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **a4** del foglio di foglio.
 
-   Il passaggio successivo consiste nell'aggiungere testo al pulsante quando si apre il foglio di lavoro.
+   Il passaggio successivo consiste nell'aggiungere testo al pulsante quando si apre il foglio di esecuzione.
 
 ## <a name="initialize-the-control"></a>Inizializzare il controllo
- Aggiungere testo al pulsante nel <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> gestore dell'evento.
+ Aggiungere testo al pulsante nel <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> gestore eventi.
 
 ### <a name="to-initialize-the-control"></a>Per inizializzare il controllo
 
-1. Nella **Esplora soluzioni**, fare doppio clic su **Sheet1.vb** oppure **Sheet1.cs**, quindi fare clic su **Visualizza codice** menu di scelta rapida.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
 
-2. Aggiungere il codice seguente per il `Sheet1_Startup` metodo per impostare il testo per b`utton`.
+2. Aggiungere il codice seguente al `Sheet1_Startup` metodo per impostare il testo per b `utton` .
 
     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
 
-3. Solo per c#, aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> dell'evento di `Sheet1_Startup` (metodo).
+3. Solo per C#, aggiungere un gestore eventi per l' <xref:System.Windows.Forms.Control.Click> evento al `Sheet1_Startup` metodo.
 
     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
 
-   A questo punto aggiungere il codice per gestire il <xref:System.Windows.Forms.Control.Click> evento del pulsante.
+   A questo punto, aggiungere il codice per gestire l' <xref:System.Windows.Forms.Control.Click> evento del pulsante.
 
-## <a name="save-changes-to-the-database"></a>Salvare le modifiche al database
- Sono state apportate modifiche per i dati disponibili solo nel set di dati locale fino a quando non vengono salvati in modo esplicito nel database.
+## <a name="save-changes-to-the-database"></a>Salvare le modifiche apportate al database
+ Tutte le modifiche apportate ai dati esistono solo nel set di dati locale fino a quando non vengono salvate di nuovo in modo esplicito nel database.
 
 ### <a name="to-save-changes-to-the-database"></a>Per salvare le modifiche apportate al database
 
-1. Aggiungere un gestore eventi per il <xref:System.Windows.Forms.Control.Click> eventi del `button`e aggiungere il codice seguente per eseguire il commit di tutte le modifiche apportate nel set di dati nel database.
+1. Aggiungere un gestore eventi per l' <xref:System.Windows.Forms.Control.Click> evento di `button` e aggiungere il codice seguente per eseguire il commit di tutte le modifiche apportate nel set di dati al database.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
 
-## <a name="test-the-application"></a>Testare l'applicazione
- È ora possibile testare la cartella di lavoro per verificare che i dati vengono visualizzati come previsto e che sia possibile modificare i dati nell'oggetto elenco.
+## <a name="test-the-application"></a>Test dell'applicazione
+ A questo punto è possibile testare la cartella di lavoro per verificare che i dati vengano visualizzati come previsto e che sia possibile modificare i dati nell'oggetto elenco.
 
-### <a name="to-test-the-data-binding"></a>Per testare il data binding
+### <a name="to-test-the-data-binding"></a>Per testare la data binding
 
 - Premere **F5**.
 
-     Verificare che quando si apre la cartella di lavoro, il controllo ListObject con dati provenienti dal **dipendenti** tabella.
+     Verificare che, quando viene aperta la cartella di lavoro, l'oggetto elenco venga compilato con i dati della tabella **Employees** .
 
 ### <a name="to-modify-data"></a>Per modificare i dati
 
-1. Fare clic sulla cella **B7**, che deve contenere il nome **Davolio**.
+1. Fare clic sulla cella **B7**, che dovrebbe contenere il nome **Davolio**.
 
 2. Digitare il nome **Anderson**, quindi premere **invio**.
 
 ### <a name="to-modify-a-column-header"></a>Per modificare un'intestazione di colonna
 
-1. Fare clic sulla cella che contiene l'intestazione di colonna **LastName**.
+1. Fare clic sulla cella che contiene il **Cognome**dell'intestazione di colonna.
 
-2. Tipo di **Last Name**, tra cui uno spazio tra le due parole e quindi premere **invio**.
+2. Digitare **Last Name**, incluso uno spazio tra le due parole, quindi premere **invio**.
 
 ### <a name="to-save-data"></a>Per salvare i dati
 
-1. Fare clic su **salvare** nel foglio di lavoro.
+1. Fare clic su **Salva** nel foglio di foglio.
 
-2. Uscire da Excel. Fare clic su **No** quando viene richiesto di salvare le modifiche apportate.
+2. Uscire da Excel. Quando viene richiesto di salvare le modifiche apportate, fare clic su **No** .
 
-3. Premere **F5** a eseguire nuovamente il progetto.
+3. Premere **F5** per eseguire nuovamente il progetto.
 
-     Il controllo ListObject con dati provenienti dal **dipendenti** tabella.
+     L'oggetto elenco viene compilato con i dati della tabella **Employees** .
 
-4. Si noti che il nome nella cella **B7** resta **Anderson**, ovvero i dati di modifica apportate e salvate nel database. L'intestazione di colonna **LastName** è stato modificato al formato originale senza spazio, perché l'intestazione di colonna non è associato al database e le modifiche apportate al foglio di lavoro non è stato salvato.
+4. Si noti che il nome nella cella **B7** è ancora **Anderson**, ovvero la modifica dei dati apportata e salvata di nuovo nel database. Il **Cognome** dell'intestazione di colonna è stato modificato nel formato originale senza spazio, perché l'intestazione di colonna non è associata al database e le modifiche apportate al foglio di foglio non sono state salvate.
 
 ### <a name="to-add-new-rows"></a>Per aggiungere nuove righe
 
 1. Selezionare una cella all'interno dell'oggetto elenco.
 
-    Verrà visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco ( **\*** ) nella prima cella della nuova riga.
+    Viene visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco ( **\*** ) nella prima cella della nuova riga.
 
 2. Aggiungere le informazioni seguenti nella riga vuota.
 
    |EmployeeID|LastName|FirstName|Titolo|
    |----------------|--------------|---------------|-----------|
-   |10|Greco|Shu|Responsabile vendite|
+   |10|Ito|Shu|Direttore commerciale|
 
 ### <a name="to-delete-rows"></a>Per eliminare righe
 
-- Fare doppio clic il numero di 16 (riga 16) sul lato sinistro del foglio di lavoro e quindi fare clic su **Elimina**.
+- Fare clic con il pulsante destro del mouse sul numero 16 (riga 16) all'estrema sinistra del foglio di lavori, quindi scegliere **Elimina**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Per ordinare le righe nell'elenco
 
 1. Selezionare una cella all'interno dell'elenco.
 
-     In ogni intestazione di colonna vengono visualizzati i pulsanti freccia.
+     I pulsanti freccia vengono visualizzati in ogni intestazione di colonna.
 
-2. Fare clic sul pulsante freccia nel **cognome** intestazione di colonna.
+2. Fare clic sul pulsante freccia nell'intestazione della colonna **Last Name** .
 
 3. Fare clic su **ordinamento crescente**.
 
-     Le righe vengono ordinate in ordine alfabetico in base al cognome.
+     Le righe vengono ordinate alfabeticamente in base ai cognomi.
 
 ### <a name="to-filter-information"></a>Per filtrare le informazioni
 
 1. Selezionare una cella all'interno dell'elenco.
 
-2. Fare clic sul pulsante freccia nel **titolo** intestazione di colonna.
+2. Fare clic sul pulsante freccia nell'intestazione della colonna **titolo** .
 
-3. Fare clic su **rappresentante di vendita**.
+3. Fare clic su **Sales Representative**.
 
-     L'elenco Mostra solo le righe che contengono **addetto alle vendite** nel **titolo** colonna.
+     Nell'elenco vengono visualizzate solo le righe con **rappresentante vendite** nella colonna **titolo** .
 
-4. Fare clic sul pulsante freccia nel **titolo** anche in questo caso l'intestazione di colonna.
+4. Fare di nuovo clic sul pulsante freccia nell'intestazione della colonna **titolo** .
 
-5. Fare clic su **(tutti)** .
+5. Fare clic su **(tutti)**.
 
      Il filtro viene rimosso e vengono visualizzate tutte le righe.
 
 ## <a name="next-steps"></a>Passaggi successivi
- Questa procedura dettagliata illustra le nozioni di base di associazione di una tabella in un database a un oggetto elenco. Ecco alcune possibili attività successive:
+ In questa procedura dettagliata vengono illustrate le nozioni di base sull'associazione di una tabella in un database a un oggetto elenco. Ecco alcune possibili attività successive:
 
-- Memorizzare nella cache i dati in modo che possa essere usata offline. Per altre informazioni, vedere [Procedura: Memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Memorizzare nella cache i dati in modo che possano essere usati offline. Per altre informazioni, vedere [procedura: memorizzare nella cache i dati per l'uso offline o in un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
-- Distribuire la soluzione. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
+- Distribuzione della soluzione. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-- Creare una relazione master/dettaglio tra un campo e una tabella. Per altre informazioni, vedere [Procedura dettagliata: Creare una relazione master/dettaglio mediante un dataset memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Creare una relazione Master-Details tra un campo e una tabella. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di una relazione Master Detail utilizzando un set di dati memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
-- [Procedura dettagliata: Data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [Procedura dettagliata: data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

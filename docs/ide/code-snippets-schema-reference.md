@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183678"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
@@ -104,13 +104,13 @@ Di seguito è riportata la struttura dell'elemento Code:
 
 È necessario specificare un valore di testo. Il testo specifica il codice, insieme ai valori letterali e agli oggetti, che è possibile usare in caso di inserimento di questo frammento di codice in un file di codice.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 Sono disponibili tre attributi per l'elemento Code:
 
 - **Lingua**  -  di Attributo _obbligatorio_ che specifica la lingua del frammento di codice. I possibili valori sono i seguenti:
 
-   |valore|Description|
+   |Valore|Descrizione|
    |-----|-----------|
    |`VB`|Identifica un frammento di codice di Visual Basic.|
    |`CSharp`|Identifica un frammento di codice di C#.|
@@ -124,7 +124,7 @@ Sono disponibili tre attributi per l'elemento Code:
 
 - **Tipo**  -  Attributo _facoltativo_ che specifica il tipo di codice contenuto nel frammento. I possibili valori sono i seguenti:
 
-   |valore|Description|
+   |Valore|Descrizione|
    |-----|-----------|
    |`method body`|Specifica che il frammento di codice è il corpo di un metodo e deve pertanto essere inserito all'interno di una dichiarazione di metodo.|
    |`method decl`|Specifica che il frammento di codice è un metodo e deve pertanto essere inserito all'interno di una classe o un modulo.|

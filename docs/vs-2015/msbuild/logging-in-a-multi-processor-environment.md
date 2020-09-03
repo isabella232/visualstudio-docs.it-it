@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205970"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrazione in un ambiente a più processori
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  Per inoltrare gli eventi in un logger di inoltro, chiamare il metodo <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> dell'interfaccia <xref:Microsoft.Build.Framework.IEventRedirector>. Passare il valore <xref:Microsoft.Build.Framework.BuildEventArgs> appropriato, o un derivato, come parametro.  
   
- Per altre informazioni, vedere l'articolo relativo alla [creazione dei logger di inoltro](../msbuild/creating-forwarding-loggers.md).  
+ Per ulteriori informazioni, vedere [creazione di logger di inoltri](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Allegare un logger distribuito  
  Per allegare un logger distribuito a una build da riga di comando, usare l'opzione `/distributedlogger` (o la forma breve `/dl`). I formati da usare per specificare i nomi dei tipi e delle classi del logger sono identici a quelli usati per l'opzione `/logger`, ad eccezione del fatto che un logger distribuito è costituito da due classi di registrazione: un logger di inoltro e un logger centrale. L'esempio seguente illustra come allegare un logger distribuito:  
@@ -75,4 +75,4 @@ Culture=neutral
   
 ## <a name="see-also"></a>Vedere anche  
  [Logger di compilazione](../msbuild/build-loggers.md)   
- [Creazione di logger di inoltro](../msbuild/creating-forwarding-loggers.md)
+ [Creazione di logger di Inoltring](../msbuild/creating-forwarding-loggers.md)

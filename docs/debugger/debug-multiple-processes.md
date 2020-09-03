@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350602"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Eseguire il debug di più processi (C#, Visual Basic, C++)
@@ -69,7 +69,7 @@ Per ulteriori informazioni, vedere [Connetti a processi in esecuzione](../debugg
 >[!NOTE]
 >Il debugger non si connette automaticamente a un processo figlio che viene avviato da un processo sottoposto a debug, anche se il progetto figlio si trova nella stessa soluzione. Per eseguire il debug di un processo figlio, connettersi al processo figlio dopo l'avvio oppure configurare l'editor del registro di sistema di Windows per avviare il processo figlio in una nuova istanza del debugger.
 
-### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>Utilizzare l'editor del registro di sistema per avviare automaticamente un processo nel debugger
+### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Utilizzare l'editor del registro di sistema per avviare automaticamente un processo nel debugger
 
 In alcuni casi potrebbe essere necessario eseguire il debug del codice di avvio per un'app avviata da un altro processo. Può ad esempio trattarsi di servizi o operazioni di installazione personalizzate. È possibile avviare il debugger e connettersi automaticamente all'app.
 
@@ -93,7 +93,7 @@ In alcuni casi potrebbe essere necessario eseguire il debug del codice di avvio 
 
    ![Voce di avvio automatico del debug in regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "Voce di avvio automatico del debug in regedit.exe")
 
-## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>Eseguire il debug con più processi
+## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Eseguire il debug con più processi
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 Quando si esegue il debug di un'app con diversi processi, i comandi di interruzione, esecuzione di istruzioni e continuazione del debugger hanno effetto su tutti i processi per impostazione Ad esempio, quando un processo viene sospeso in corrispondenza di un punto di interruzione, viene sospesa anche l'esecuzione di tutti gli altri processi. È possibile modificare questo comportamento predefinito per ottenere un maggiore controllo sulle destinazioni dei comandi di esecuzione.
@@ -106,7 +106,7 @@ Quando si esegue il debug di un'app con diversi processi, i comandi di interruzi
 
 La tabella seguente descrive i comportamenti dei comandi di debug quando la casella di controllo **Interrompi tutti i processi quando si interrompe un processo** è selezionata o deselezionata:
 
-|**Comando**|Selezionato|Deselezionato|
+|**Comando**|Opzione selezionata|Deselezionato|
 |-|-|-|
 |**Esegui debug**   >  **Interrompi tutto**|Interruzione di tutti i processi.|Interruzione di tutti i processi.|
 |**Esegui debug**  >  **Continua**|Ripresa di tutti i processi.|Ripresa di tutti i processi sospesi.|
@@ -172,7 +172,7 @@ La tabella seguente descrive i comportamenti del debugger arrestare, terminare e
 |Finestra **processi** > **Termina processo**|Il processo selezionato è terminato.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|
 |Finestra **processi** > **scollegare quando si arresta il debug**|Se questa opzione è selezionata, **debug**  >  **Interrompi debug** disconnette dal processo selezionato. <br />Se questa opzione non è **selezionata,**  >  il debug**Interrompi debug** termina il processo selezionato. |
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [Connetti a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

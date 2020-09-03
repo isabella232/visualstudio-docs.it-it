@@ -1,5 +1,5 @@
 ---
-title: '&lt;Le pianificazioni&gt; elemento (programma di avvio automatico) | Microsoft Docs'
+title: '&lt;Elemento Schedules (programma di &gt; avvio automatico) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85ffab2272a55bfe77c5f2a73c6e25967a203c85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206089"
 ---
-# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Le pianificazioni&gt; elemento (programma di avvio automatico)
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Elemento Schedules (programma di &gt; avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il `Schedules` elemento contiene `Schedule` gli elementi, che definiscono l'ora specifica a quali comandi definiti dal `Command` elemento deve essere eseguito.  
+L' `Schedules` elemento contiene `Schedule` elementi che definiscono orari specifici in cui devono essere eseguiti i comandi definiti dall' `Command` elemento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,28 +43,28 @@ Il `Schedules` elemento contiene `Schedule` gli elementi, che definiscono l'ora 
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `Schedules` elemento è figlio di `Product` elemento. Ciascuna `Product` potrebbe avere al massimo un elemento `Schedules` elemento. L'elemento `Schedules` non ha attributi.  
+ L' `Schedules` elemento è un elemento figlio dell' `Product` elemento. Ogni `Product` elemento può contenere al massimo un `Schedules` elemento. L'elemento `Schedules` non ha attributi.  
   
-## <a name="schedule"></a>Pianificazione  
- Il `Schedule` elemento è figlio di `Schedules` elemento. Oggetto `Schedules` deve avere almeno un elemento `Schedule` elemento.  
+## <a name="schedule"></a>Pianifica  
+ L' `Schedule` elemento è un elemento figlio dell' `Schedules` elemento. Un `Schedules` elemento deve contenere almeno un `Schedule` elemento.  
   
  `Schedule` ha l'attributo seguente.  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Name`|Richiesto. Il nome dell'elemento di pianificazione. Ciò corrisponde alla `ScheduleName` proprietà del `Command` elemento. Quando un `Command` fa riferimento alla pianificazione specificata, verrà eseguito solo nell'orario indicato da tale `Schedule` elemento. Le pianificazioni inoltre possono essere associate le `FailIf` e `BypassIf` elementi, che limitano l'esecuzione in base alla pianificazione specificata questi test condizionale. Per altre informazioni, vedere [ \<comandi > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Obbligatorio. Nome dell'elemento di pianificazione. Corrisponde alla `ScheduleName` proprietà dell' `Command` elemento. Quando un oggetto `Command` fa riferimento alla pianificazione denominata, viene eseguita solo nel momento indicato da tale `Schedule` elemento. Le pianificazioni possono anche essere associate agli `FailIf` `BypassIf` elementi e, che limitano l'esecuzione di questi test condizionali alla pianificazione specificata. Per ulteriori informazioni, vedere [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md).|  
   
- Una determinata `Schedule` elemento può avere uno dei seguenti elementi figlio.  
+ Un dato `Schedule` elemento può avere esattamente uno dei seguenti elementi figlio.  
   
 ## <a name="buildlist"></a>BuildList  
- Il `BuildList` elemento indica il programma di installazione per eseguire un comando immediatamente dopo l'avvio automatico dell'applicazione viene avviata.  
+ L' `BuildList` elemento indica al programma di installazione di eseguire un comando immediatamente dopo l'avvio dell'applicazione.  
   
 ## <a name="beforepackage"></a>BeforePackage  
- Il `BeforePackage` elemento indica il programma di installazione per eseguire un comando prima di installata il pacchetto specificato.  
+ L' `BeforePackage` elemento indica al programma di installazione di eseguire un comando prima di installare il pacchetto specificato.  
   
 ## <a name="afterpackage"></a>AfterPackage  
- Il `AfterPackage` elemento indica il programma di installazione per eseguire un comando dopo aver installato il pacchetto specificato.  
+ L' `AfterPackage` elemento indica al programma di installazione di eseguire un comando dopo l'installazione del pacchetto specificato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [\<Product > elemento](../deployment/product-element-bootstrapper.md)   
+ [\<Product> Elemento](../deployment/product-element-bootstrapper.md)   
  [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)

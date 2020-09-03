@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5426c6f8e9c4a932430a0c3bd3df6d98400c3562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659551"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
@@ -26,15 +26,15 @@ Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione 
  In questo argomento vengono illustrate le funzionalità centrali della definizione DSL.
 
 ## <a name="the-dsl-definition"></a>Definizione DSL
- Quando si apre `Dsl\DslDefinition.dsl`, la finestra di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è simile all'immagine seguente.
+ Quando si apre `Dsl\DslDefinition.dsl` , la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finestra è simile all'immagine seguente.
 
- ![finestra di progettazione DSL](../modeling/media/dsl-designer.png "dsl_designer")
+ ![finestra di progettazione dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
  Le informazioni più importanti nella definizione DSL vengono visualizzate nel diagramma di definizione DSL. Informazioni aggiuntive, che fanno parte anche di DslDefinition. DSL, vengono visualizzate in DSL Explorer, che in genere viene visualizzato sul lato del diagramma. Si lavora con il diagramma per le attività più frequenti e con DSL Explorer per le personalizzazioni più avanzate.
 
  Il diagramma di definizione DSL Mostra le classi di dominio che definiscono gli elementi del modello e le relazioni che definiscono i collegamenti tra gli elementi del modello. Vengono inoltre illustrate le forme e i connettori utilizzati per visualizzare gli elementi del modello all'utente.
 
- ![finestra di progettazione DSL con corsia](../modeling/media/dsl-desinger.png "dsl_desinger")
+ ![finestra di progettazione dsl con corsia](../modeling/media/dsl-desinger.png "dsl_desinger")
 
  Quando si seleziona un elemento nella definizione DSL, nel diagramma o in Esplora DSL, le relative informazioni vengono visualizzate nel Finestra Proprietà. Nella finestra Dettagli DSL potrebbero essere visualizzate informazioni aggiuntive.
 
@@ -48,13 +48,13 @@ Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione 
 
  Questa illustrazione mostra un modello creato dall'utente di un linguaggio DSL della raccolta musicale. Gli album musicali sono rappresentati da caselle contenenti elenchi di canzoni. Gli artisti sono rappresentati da caselle con angoli arrotondati e sono connessi agli album a cui hanno contribuito.
 
- ![Modello di istanza del linguaggio DSL generato](../modeling/media/music-instance.png "Music_Instance")
+ ![Modello di istanza generato di DSL](../modeling/media/music-instance.png "Music_Instance")
 
  La definizione DSL separa due aspetti. L'aspetto degli elementi del modello nel diagramma del modello viene definito usando le classi di forme e le classi del connettore. Le informazioni trasferite nel modello vengono definite utilizzando le classi di dominio e le relazioni di dominio.
 
  Nella figura seguente sono illustrate le classi di dominio e le relazioni nella definizione DSL della raccolta musicale.
 
- ![Incorporamento e relazioni di riferimento](../modeling/media/music-classes.png "Music_Classes")
+ ![Relazioni di incorporamento e riferimento](../modeling/media/music-classes.png "Music_Classes")
 
  Nella figura sono illustrate quattro classi di dominio: musica, album, artista e brano. Le classi di dominio definiscono le proprietà del dominio, ad esempio il nome, il titolo e così via. Nel modello di istanza, i valori di alcune di queste proprietà vengono visualizzati nel diagramma.
 
@@ -107,7 +107,7 @@ Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione 
 ### <a name="the-explorer-displays-the-embedding-tree"></a>La finestra di esplorazione Visualizza l'albero di incorporamento
  La definizione DSL crea anche un visualizzatore, che gli utenti vedono insieme al diagramma del modello.
 
- ![Esplorazione di DSL generata](../modeling/media/music-explorer.png "Music_Explorer")
+ ![Finestra di esplorazione generata di DSL](../modeling/media/music-explorer.png "Music_Explorer")
 
  La finestra di esplorazione Mostra tutti gli elementi del modello, anche quelli per i quali non sono state definite forme. Mostra gli elementi e le relazioni di incorporamento, ma non le relazioni di riferimento.
 
@@ -132,9 +132,9 @@ Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione 
  Quando si crea una relazione in una definizione DSL, al nome della proprietà e della relazione vengono assegnati i valori predefiniti. Tuttavia, è possibile modificarli.
 
 ## <a name="multiplicities"></a>Molteplicità
- Molteplicità specificare il numero di elementi che possono avere lo stesso ruolo in una relazione di dominio. Nell'esempio, l'impostazione di molteplicità zero-a-molti (0.. \*) nel ruolo del **Catalogo** specifica che qualsiasi istanza della classe di dominio del **server di pubblicazione** può avere tutti i collegamenti alla relazione di **PublisherCatalog** che si desidera assegnare.
+ Molteplicità specificare il numero di elementi che possono avere lo stesso ruolo in una relazione di dominio. Nell'esempio, l'impostazione di molteplicità zero-a-molti (0.. \* ) nel ruolo **del catalogo** specifica che qualsiasi istanza della classe di dominio del **server di pubblicazione** può avere tutti i collegamenti alla relazione di **PublisherCatalog** che si desidera assegnare.
 
- Configurare la molteplicità di un ruolo digitando nel diagramma o modificando la proprietà `Multiplicity` nella finestra **Proprietà** . Nella tabella seguente vengono descritte le impostazioni per questa proprietà.
+ Configurare la molteplicità di un ruolo digitando nel diagramma o modificando la `Multiplicity` proprietà nella finestra **Proprietà** . Nella tabella seguente vengono descritte le impostazioni per questa proprietà.
 
 |Tipo di molteplicità|Descrizione|
 |-----------------------|-----------------|

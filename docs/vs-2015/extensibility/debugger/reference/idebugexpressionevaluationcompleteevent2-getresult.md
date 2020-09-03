@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetResult | Microsoft Docs
+title: 'IDebugExpressionEvaluationCompleteEvent2:: GetResult | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73227762270fe4e22e6edc2643ede2d1e7a9bd70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148722"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
@@ -40,13 +40,13 @@ int GetResult( 
   
 #### <a name="parameters"></a>Parametri  
  `ppResult`  
- [out] Restituisce un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che rappresenta il risultato della valutazione dell'espressione.  
+ out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta il risultato della valutazione dell'espressione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- L'oggetto restituito [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto contiene il valore dell'espressione valutata. Si noti che questo valore potrebbe essere un valore complesso, ad esempio una matrice, ma il risultato finale deve essere un tipo numerico o valore stringa che viene visualizzato all'utente.  
+## <a name="remarks"></a>Osservazioni  
+ L'oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) restituito contiene il valore dell'espressione valutata. Si noti che questo valore può essere un valore complesso, ad esempio una matrice, ma il risultato finale deve essere un valore numerico o stringa che viene visualizzato all'utente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350641"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Eseguire il debug di un controllo WebView in un'app UWP
@@ -83,6 +83,6 @@ ms.locfileid: "85350641"
 
 6. Visualizzare e modificare le variabili nell'app o usare i comandi della console, come descritto in [Guida introduttiva: eseguire il debug](../debugger/quickstart-debug-javascript-using-the-console.md) dei [comandi della console](../debugger/javascript-console-commands.md?view=vs-2017)JavaScript e JavaScript.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

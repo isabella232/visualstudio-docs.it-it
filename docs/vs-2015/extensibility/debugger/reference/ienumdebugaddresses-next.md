@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Next | Microsoft Docs
+title: 'IEnumDebugAddresses:: Next | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1275fe1f1daaa8bd512251480e7c87a71512523e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191982"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
@@ -44,16 +44,16 @@ int Next(
   
 #### <a name="parameters"></a>Parametri  
  `celt`  
- [in] Il numero di elementi da recuperare. Specifica inoltre la dimensione massima del `rgelt` matrice.  
+ [in] Numero di elementi da recuperare. Specifica inoltre la dimensione massima della `rgelt` matrice.  
   
  `rgelt`  
- [in, out] Matrice di [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elementi da compilare.  
+ [in, out] Matrice di elementi [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) da compilare.  
   
  `pceltFetched`  
- [out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.  
+ out Restituisce il numero di elementi effettivamente restituiti in `rgelt` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è possibile che venga restituito un numero di elementi inferiore al numero richiesto; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   

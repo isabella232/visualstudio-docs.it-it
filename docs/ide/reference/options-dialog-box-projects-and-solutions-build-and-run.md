@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461389"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Finestra di dialogo \> Opzioni: Compilazione ed esecuzione di progetti e soluzioni
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> Compila ed Esegui
 
-In questa finestra di dialogo è possibile specificare il numero massimo di progetti C++ o C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione. Per accedere a queste opzioni, selezionare**Opzioni** **degli strumenti** > espandi **Progetti e soluzioni**, quindi selezionare **Compila ed esegui**.
+In questa finestra di dialogo è possibile specificare il numero massimo di progetti C++ o C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione. Per accedere a queste opzioni, selezionare **strumenti**  >  **Opzioni** espandere **progetti e soluzioni**, quindi selezionare **Compila ed Esegui**.
 
 **Numero massimo di compilazioni di progetto parallele**
 
@@ -58,10 +58,10 @@ Determina la quantità di informazioni del processo di compilazione che viene vi
 
 *Si applica solo ai progetti C++.*
 
-Determina la quantità di informazioni che vengono scritte nel file di log di compilazione, che si trova in * \\ \<NomeProgetto> , NomeProgetto\\\<debug>.log*.
+Determina la quantità di informazioni scritte nel file di log di compilazione, disponibile in * \\ \<ProjectName> \Debug \\ \<ProjectName> . log*.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Compilazione ed edificio](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilazione e creazione](../../ide/compiling-and-building-in-visual-studio.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni](projects-and-solutions-options-dialog-box.md)
 - [Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web](options-dialog-box-projects-and-solutions-web-projects.md)

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250169"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compila codice TypeScript (Node.js)
@@ -63,7 +63,7 @@ Il [pacchetto NPM typescript](https://www.npmjs.com/package/typescript) aggiunge
    }
    ```
 
-   In questo esempio:
+   Esempio:
    - *include* indica al compilatore dove trovare i file typescript (*. TS).
    - l'opzione *outDir* specifica la cartella di output per i file JavaScript semplici che vengono traspilati dal compilatore typescript.
    - l'opzione *sourceMap* indica se il compilatore genera file *sourceMap* .
