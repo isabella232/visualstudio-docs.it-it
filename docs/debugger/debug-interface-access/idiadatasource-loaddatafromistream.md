@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a6a19d926ead4c2c38ff69544311caa1f726b3e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468511"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
@@ -33,18 +33,18 @@ HRESULT loadDataFromIStream ( 
 #### <a name="parameters"></a>Parametri
  pIStream
 
-in <xref:IStream>Oggetto che rappresenta il flusso di dati da utilizzare.
+in <xref:IStream> Oggetto che rappresenta il flusso di dati da utilizzare.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. La tabella seguente illustra i possibili valori restituiti per questo metodo.
 
-|valore|Descrizione|
+|Valore|Descrizione|
 |-----------|-----------------|
 |E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Questo metodo consente di ottenere i dati di debug di un eseguibile dalla memoria tramite un <xref:IStream> oggetto.
 
  Per caricare un file con estensione pdb senza convalida, usare il metodo [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
@@ -53,7 +53,7 @@ in <xref:IStream>Oggetto che rappresenta il flusso di dati da utilizzare.
 
  Per ottenere l'accesso al processo di caricamento dei dati (tramite un meccanismo di callback), usare il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)

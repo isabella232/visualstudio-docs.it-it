@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4af506da822a7f8e38a8952d7c1d0d15fc1995d2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468553"
 ---
 # <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
@@ -43,15 +43,15 @@ in Matrice di strutture di [struttura DiaAddressMapEntry](../../debugger/debug-i
 
  `imagetoSymbols`
 
-[in] `TRUE` Se il `data` parametro definisce una mappa dal nuovo layout dell'immagine al layout originale (come descritto dai simboli di debug). `FALSE`Se `data` è un mapping al nuovo layout dell'immagine tratto dal layout originale.
+[in] `TRUE` Se il `data` parametro definisce una mappa dal nuovo layout dell'immagine al layout originale (come descritto dai simboli di debug). `FALSE` Se `data` è un mapping al nuovo layout dell'immagine tratto dal layout originale.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  In genere, il diametro recupera le mappe degli indirizzi da un file di database di programma (con estensione pdb). Se questi valori sono mancanti, il metodo [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) viene chiamato due volte, una volta con il `imagetoSymbols` parametro impostato su `TRUE` e una volta con il `imagetoSymbols` parametro impostato su `FALSE` . Non è possibile abilitare le traduzioni della mappa indirizzi usando il metodo [IDiaAddressMap::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , a meno che non vengano fornite entrambe le mappe di traduzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)

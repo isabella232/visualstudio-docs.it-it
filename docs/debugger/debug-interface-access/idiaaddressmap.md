@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ddf4b1c2a6a22170fb52da200bbd53c2b6b96e62
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468532"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
@@ -42,7 +42,7 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Imposta le intestazioni dell'immagine per abilitare la conversione degli indirizzi virtuali relativi.|
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fornisce una mappa degli indirizzi per supportare le traduzioni del layout dell'immagine.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Il controllo fornito da questa interfaccia è incapsulato in due set di dati forniti: intestazioni di immagine e mappe di indirizzi. La maggior parte dei client usa il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) per trovare le informazioni di debug appropriate per un'immagine e il metodo può in genere individuare tutte le intestazioni necessarie e mappare i dati stessi. Tuttavia, alcuni client implementano l'elaborazione specializzata e la ricerca di dati. Tali client utilizzano i metodi dell' `IDiaAddressMap` interfaccia per fornire la DIA SDK con i risultati della ricerca.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -55,7 +55,7 @@ IDiaAddressMap : IUnknown
 
  DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

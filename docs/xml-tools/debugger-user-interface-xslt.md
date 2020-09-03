@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592880"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
@@ -33,7 +33,7 @@ Questa colonna contiene i nomi di tutte le variabili locali nell'ambito corrente
 
 In questa colonna è visualizzato il valore contenuto da ciascuna variabile. Nei nodi Attribute, processing instruction, comment, text e CData viene visualizzato il valore di testo del nodo. Nei nodi Namespace viene visualizzato l'URI dello spazio dei nomi.
 
-**Type**
+**Tipo**
 
 In questa colonna viene identificato il tipo di dati di ogni variabile elencata nella colonna **nome** .
 
@@ -45,7 +45,7 @@ Nella finestra Variabili locali vengono inoltre visualizzate le variabili di con
 |`position()`|Posizione, ossia il numero di indice, del nodo di contesto, in base alla dimensione del contesto.|
 |`self::node()`|Il valore del nodo di contesto.|
 
-## <a name="output-window"></a>finestra Output
+## <a name="output-window"></a>Output (finestra)
 
 Nella finestra di output vengono visualizzati eventuali messaggi di errore o eccezioni di sicurezza che si verificano durante il debug. Viene inoltre visualizzato l'output del debugger.
 
@@ -58,13 +58,13 @@ Il **elenco attività** include tutti gli errori che si verificano nei blocchi d
 > [!NOTE]
 > Il debugger XSLT non contiene avvisi, quindi non vengono mai visualizzati nella **elenco attività**.
 
-## <a name="breakpoints-window"></a>Finestra Punti di interruzione
+## <a name="breakpoints-window"></a>finestra Punti di interruzione
 
 Nella finestra Punti di interruzione vengono visualizzati tutti i punti di interruzione impostati nel progetto corrente. Se si aggiunge un punto di interruzione mentre la finestra è visualizzata, la finestra viene aggiornata automaticamente per mostrare il nuovo punto di interruzione.
 
 La finestra Punto di interruzione dovrebbe comportarsi allo stesso modo degli altri debugger di Visual Studio.
 
-## <a name="watch-window"></a>Finestra di controllo
+## <a name="watch-window"></a>Finestra Espressioni di controllo
 
 La finestra Espressioni di controllo viene usata per valutare le variabili. È anche possibile modificare i valori delle variabili.
 
@@ -88,7 +88,7 @@ Nell'elenco seguente vengono descritte le restrizioni relative alla valutazione 
 
 - Sono consentite solo le funzioni XPath incorporate.
 
-- Non sono consentite funzioni XSLT predefinite, ad esempio `document()` e `key()`.
+- Le funzioni XSLT predefinite, ad esempio `document()` e, `key()` non sono consentite.
 
 - Non sono consentite funzioni definite dall'utente.
 

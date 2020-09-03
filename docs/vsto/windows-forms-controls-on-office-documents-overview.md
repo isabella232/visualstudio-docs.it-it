@@ -28,16 +28,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a101f22bccb3624eccff1edcea502c9350991392
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254906"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Cenni preliminari sui controlli Windows Forms nei documenti di Office
   I controlli Windows Form sono oggetti con cui gli utenti possono interagire per immettere o modificare i dati. Nei progetti a livello di documento per Microsoft Office Excel e Microsoft Office Word è possibile aggiungere controlli Windows Form al documento o alla cartella di lavoro nel progetto in fase di progettazione oppure aggiungere questi controlli a livello di codice in fase di esecuzione. È possibile aggiungere questi controlli a livello di codice a qualsiasi documento o foglio di lavoro aperto in fase di esecuzione in un componente aggiuntivo VSTO per Excel o Word.
 
- Per altre informazioni, vedere [Procedura: Aggiungere controlli Windows Forms ai documenti](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)di Office.
+ Per altre informazioni, vedere [procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -119,7 +119,7 @@ In un Windows Form
  In determinate condizioni, il codice non viene caricato e viene visualizzata solo la bitmap, ad esempio quando l'utente apre la cartella di lavoro in modalità di progettazione. Inoltre, se l'utente apre la cartella di lavoro in un computer in cui non è installato [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , non viene eseguita la personalizzazione per caricare i caricare i controlli e pertanto è visibile solo la bitmap del controllo. È consigliabile rimuovere sempre le informazioni personali dai controlli nelle cartelle di lavoro prima di salvare una cartella di lavoro e inviarla a un altro utente per assicurarsi che le informazioni personali non vengano accidentalmente divulgate.
 
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Corrispondenza delle dimensioni del controllo con le dimensioni della cella in un foglio di lavoro di Excel
- È possibile impostare il ridimensionamento automatico del controllo quando vengono modificate le dimensioni della cella padre. Per altre informazioni, vedere [Procedura: Ridimensionare i controlli nelle](../vsto/how-to-resize-controls-within-worksheet-cells.md)celle del foglio di controllo.
+ È possibile impostare il ridimensionamento automatico del controllo quando vengono modificate le dimensioni della cella padre. Per altre informazioni, vedere [procedura: ridimensionare i controlli all'interno di celle del foglio di comando](../vsto/how-to-resize-controls-within-worksheet-cells.md).
 
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Aggiungere componenti condivisi da tutti i fogli di foglio
  I componenti da condividere in tutti i fogli di lavoro, ad esempio un oggetto <xref:System.Data.DataSet>, possono essere aggiunti alla finestra di progettazione delle cartelle di lavoro anziché ai fogli di lavoro. Il componente verrà visualizzato nella barra dei componenti.
@@ -130,7 +130,7 @@ In un Windows Form
 ### <a name="layout-style-of-controls-on-a-word-document"></a>Stile di layout dei controlli in un documento di Word
  Quando si aggiunge un controllo al documento di Word in un progetto a livello di documento usando la finestra di progettazione di Visual Studio, il controllo viene aggiunto in linea con il testo. Per modificare lo stile di layout del controllo, fare clic con il pulsante destro del mouse sul controllo e scegliere **Formato controllo**. Selezionare uno stile nella pagina **Layout** della finestra di dialogo **Formato oggetto** .
 
- Quando si aggiunge un controllo a un documento di Word in fase di esecuzione, è possibile specificare lo stile di layout del nuovo controllo utilizzando `Add`una *classe di controllo*diversa <xref:Microsoft.Office.Tools.Word.ControlCollection> \<> overload del metodo della classe:
+ Quando si aggiunge un controllo a un documento di Word in fase di esecuzione, è possibile specificare lo stile di layout del nuovo controllo utilizzando diversi `Add` \<*control class*> Overload del metodo della <xref:Microsoft.Office.Tools.Word.ControlCollection> classe:
 
 - Per aggiungere il controllo in linea con testo, usare un overload che accetta un oggetto <xref:Microsoft.Office.Interop.Word.Range> che specifica la posizione del controllo.
 
@@ -153,13 +153,13 @@ In un Windows Form
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Controlli Windows Form](/dotnet/framework/winforms/controls/index)
 - [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
-- [Procedura: Aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [Procedura: Ridimensionare i controlli nelle celle del foglio di controllo](../vsto/how-to-resize-controls-within-worksheet-cells.md)
-- [Procedura: Nascondi controlli nei fogli di foglio durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [Procedura dettagliata: Modificare la formattazione del foglio di controllo tramite i controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
-- [Procedura dettagliata: Modificare la formattazione del documento utilizzando i controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
-- [Procedura dettagliata: Visualizzare il testo in una casella di testo di un foglio di un foglio di testo utilizzando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
-- [Procedura dettagliata: Visualizzare il testo in una casella di testo in un documento utilizzando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
+- [Procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Procedura: ridimensionare i controlli all'interno di celle del foglio di comando](../vsto/how-to-resize-controls-within-worksheet-cells.md)
+- [Procedura: nascondere i controlli nei fogli di foglio durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Procedura dettagliata: modificare la formattazione del foglio di controllo tramite i controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
+- [Procedura dettagliata: modificare la formattazione del documento utilizzando i controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
+- [Procedura dettagliata: visualizzare il testo in una casella di testo di un foglio di testo utilizzando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
+- [Procedura dettagliata: visualizzare il testo in una casella di testo in un documento utilizzando un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
 - [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
-- [Procedura dettagliata: Aggiornare un grafico in un documento usando i pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
-- [Procedura dettagliata: Aggiornare un grafico in un foglio di comando utilizzando pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)
+- [Procedura dettagliata: aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
+- [Procedura dettagliata: aggiornare un grafico in un foglio di comando utilizzando pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)

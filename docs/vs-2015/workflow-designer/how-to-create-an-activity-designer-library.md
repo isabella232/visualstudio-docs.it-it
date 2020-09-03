@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 63404d3d81c44ac4b8308d949cdb87df419f2e04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662863"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Procedura: creare una libreria ActivityDesigner
@@ -25,7 +25,7 @@ Gli ActivityDesigner personalizzati consentono di creare un'interfaccia utente p
 
 2. Scegliere **nuovo**dal menu **file** , quindi selezionare **progetto...** per aprire la finestra di dialogo **nuovo progetto** .
 
-3. Nel riquadro **Tipi progetto** selezionare flusso di **lavoro** dal raggruppamento **visuale C#**  o **Visual Basic** a seconda del linguaggio preferito.
+3. Nel riquadro **Tipi progetto** selezionare flusso di **lavoro** da **Visual C#** o **Visual Basic** raggruppamenti a seconda del linguaggio preferito.
 
 4. Nel riquadro **modelli** selezionare **libreria Activity Designer**.
 
@@ -36,14 +36,14 @@ Gli ActivityDesigner personalizzati consentono di creare un'interfaccia utente p
 7. Nella casella **soluzione** Digitare un nome descrittivo per la soluzione, quindi fare clic su **OK**.
 
     > [!NOTE]
-    > Se si desidera aggiungere un'applicazione console del flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)], fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e selezionare **Aggiungi**, quindi **nuovo progetto.** per aprire la finestra di dialogo **nuovo progetto** . Procedere come descritto sopra in questa procedura.
+    > Se si desidera aggiungere un'applicazione console del flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)] , fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e selezionare **Aggiungi**, quindi **nuovo progetto.** per aprire la finestra di dialogo **nuovo progetto** . Procedere come descritto sopra in questa procedura.
 
 8. Il modello di progetto crea una definizione dell'ActivityDesigner in XAML mentre il file di implementazione code-behind è in codice sorgente. [!INCLUDE[wfd1](../includes/wfd1-md.md)] verrà visualizzato con l'area di disegno per l'ActivityDesigner.
 
-9. Trascinare [!INCLUDE[avalon1](../includes/avalon1-md.md)] controlli dalla **casella degli strumenti** nell'area di progettazione per utilizzarli nell'ActivityDesigner personalizzato.  Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [procedura: creare un ActivityDesigner personalizzato](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).
+9. Trascinare [!INCLUDE[avalon1](../includes/avalon1-md.md)] i controlli dalla **casella degli strumenti** nell'area di progettazione per utilizzarli nell'ActivityDesigner personalizzato.  Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [procedura: creare un ActivityDesigner personalizzato](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).
 
     > [!WARNING]
-    > Gli ActivityDesigner personalizzati possono essere utilizzati per le attività personalizzate e per le [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]activities predefinite.
+    > Gli ActivityDesigner personalizzati possono essere utilizzati per le attività personalizzate e per le [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] attività predefinite.
 
 ## <a name="see-also"></a>Vedere anche
  [Creazione di un progetto flusso di lavoro](../workflow-designer/creating-a-workflow-project.md)

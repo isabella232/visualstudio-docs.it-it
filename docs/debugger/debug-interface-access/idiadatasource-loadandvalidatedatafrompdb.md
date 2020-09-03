@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e3a4b73cbbfe16cb87108c5f157dada135e71ee
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468539"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
@@ -53,7 +53,7 @@ in Valore Age da verificare. L'età non corrisponde necessariamente a un valore 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. La tabella seguente illustra i possibili valori restituiti per questo metodo.
 
-|valore|Descrizione|
+|Valore|Descrizione|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Non è stato possibile aprire il file o il formato del file non è valido.|
 |E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
@@ -62,7 +62,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 Un file con estensione PDB contiene sia la firma che i valori di età. Questi valori vengono replicati nel file con estensione exe o dll che corrisponde al file con estensione pdb. Prima di preparare l'origine dati, questo metodo verifica che la firma del file con estensione PDB denominata e l'età corrispondano ai valori specificati.
 
 Per caricare un file con estensione pdb senza convalida, usare il metodo [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .

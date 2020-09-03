@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23a9220d84e2fb1a15545d1a880b0084952da77f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592581"
 ---
 # <a name="integration-with-xml-editor"></a>Integrazione con l'editor XML
@@ -27,7 +27,7 @@ Nella schermata seguente viene illustrato un XML schema aperto in **XML Schema E
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
-A volte è utile visualizzare il codice nell'editor XML e la finestra di progettazione grafica affiancata. Per visualizzare entrambi i file nello stesso momento, fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor XML e scegliere **Visualizza finestra di progettazione**. Nel menu Windows di Visual Studio selezionare **nuovo gruppo di schede orizzontale (o verticale)** .
+A volte è utile visualizzare il codice nell'editor XML e la finestra di progettazione grafica affiancata. Per visualizzare entrambi i file nello stesso momento, fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor XML e scegliere **Visualizza finestra di progettazione**. Nel menu Windows di Visual Studio selezionare **nuovo gruppo di schede orizzontale (o verticale)**.
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 

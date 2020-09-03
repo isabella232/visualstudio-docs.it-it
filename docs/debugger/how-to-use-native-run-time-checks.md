@@ -38,10 +38,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5fccf510719aa5e960c12fdc807d6375ee31d3d0
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348847"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: utilizzare controlli runtime nativi
@@ -77,7 +77,7 @@ In un progetto Visual Studio C++ è possibile usare [runtime_checks](/cpp/prepro
 
 - Usare il pragma `runtime_checks` .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)

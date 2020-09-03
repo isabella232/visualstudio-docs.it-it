@@ -1,13 +1,13 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 47c390fbc7a6f84c25d4bde0317985bd149cae2f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68159593"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89326098"
 ---
-1. Avviare Visual Studio e selezionare **File** > **nuovo** > **progetto**.
+1. Avviare Visual Studio e selezionare **file**  >  **nuovo**  >  **progetto**.
 
 1. Nella finestra di dialogo **Nuovo progetto** cercare "Python", selezionare il modello **Da codice Python esistente**, assegnare al progetto il nome e una posizione e selezionare **OK**.
 
@@ -15,7 +15,7 @@ ms.locfileid: "68159593"
 
     ![Nuovo progetto da codice esistente, passaggio 1](../media/projects-from-existing-1.png)
 
-1. Nella finestra di dialogo successiva selezionare il file di avvio per il progetto e selezionare **Avanti**. Se lo si desidera, selezionare un ambiente; accettare in caso contrario le impostazioni predefinite. Si noti che la finestra di dialogo mostra solo i file nella cartella principale; se il file desiderato si trova in una sottocartella, lasciare vuoto il file di avvio e impostarlo in un secondo momento in **Esplora soluzioni** (descritto di seguito).
+1. Nella finestra di dialogo successiva selezionare il file di avvio per il progetto e selezionare **Avanti**. Se si desidera, selezionare un ambiente. in caso contrario, accettare le impostazioni predefinite. Si noti che nella finestra di dialogo vengono visualizzati solo i file nella cartella radice. Se il file desiderato si trova in una sottocartella, lasciare vuoto il file di avvio e impostarlo in un secondo momento in **Esplora soluzioni** (descritto di seguito).
 
     ![Nuovo progetto da codice esistente, passaggio 2](../media/projects-from-existing-2.png)
 

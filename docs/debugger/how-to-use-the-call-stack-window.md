@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348743"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Visualizzare lo stack di chiamate e utilizzare la finestra stack di chiamate nel debugger
@@ -66,7 +66,7 @@ Il codice non utente è un codice non visualizzato quando [Just My Code](../debu
 
 `[<External Code>]`
 
-## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a>Passare a un'altra stack frame (modificare il contesto del debugger)
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a> Passare a un'altra stack frame (modificare il contesto del debugger)
 
 1. Nella finestra **stack di chiamate** fare clic con il pulsante destro del mouse sul stack frame di cui si desidera visualizzare il codice e i dati.
 
@@ -110,7 +110,7 @@ In Visual Studio Enterprise (solo), è possibile visualizzare le mappe codice pe
 
 - Fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** e impostare o deselezionare **Mostra \<**_the information that you want_**> **.
 
-## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a>Caricare i simboli per un modulo (C#, C++, Visual Basic, F #)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Caricare i simboli per un modulo (C#, C++, Visual Basic, F #)
 
 Nella finestra **Stack di chiamate** è possibile caricare i simboli di debug per un codice che non ne dispone. Questi simboli possono essere simboli di sistema o .NET scaricati dai server dei simboli pubblici Microsoft o simboli in un percorso di simboli nel computer in cui si esegue il debug.
 
@@ -138,7 +138,7 @@ Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debu
 
 5. Selezionare **OK** per chiudere la finestra di dialogo **Opzioni** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Codice misto e informazioni mancanti nella finestra stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

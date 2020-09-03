@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592516"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordinamento, filtro e raggruppamento (XML Schema Explorer)
@@ -27,7 +27,7 @@ Sono disponibili le seguenti opzioni del filtro. Per impostazione predefinita, s
 
 - **Mostra file di schema**.
 
-- **Mostra compositor (sequence/choice/all)** .
+- **Mostra compositor (sequence/choice/all)**.
 
 ## <a name="sorting-options"></a>Opzioni di ordinamento
 

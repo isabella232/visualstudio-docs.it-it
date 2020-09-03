@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 582b211b83ed519470100b7c5b47184c2256894f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468497"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
@@ -38,14 +38,14 @@ in Percorso del file con estensione pdb.
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. La tabella seguente illustra i possibili valori restituiti per questo metodo.
 
-|valore|Descrizione|
+|Valore|Descrizione|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Non è stato possibile aprire il file oppure è stato rilevato che il formato del file non è valido.|
 |E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 Questo metodo carica i dati di debug direttamente da un file con estensione pdb.
 
 Per convalidare il file con estensione PDB rispetto a criteri specifici, usare il metodo [IDiaDataSource:: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .

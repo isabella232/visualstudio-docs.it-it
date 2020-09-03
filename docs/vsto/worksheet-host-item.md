@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 301b0a62efae4674432b1051451e5d982899c1b3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254876"
 ---
 # <a name="worksheet-host-item"></a>Elemento host Worksheet
@@ -47,7 +47,7 @@ ms.locfileid: "71254876"
  In un progetto a livello di documento è possibile rinominare i fogli di lavoro nella finestra di progettazione di Visual Studio, ma in tal modo viene modificato solo il nome visualizzato del foglio di lavoro. Il nome a livello di codice rimane il nome predefinito del foglio di lavoro. Se si rinomina il foglio di lavoro nella finestra **Proprietà** , viene modificato solo il nome a livello di codice.
 
 ### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Limitazioni dell'elemento host Worksheet nei progetti a livello di documento
- Non è possibile creare nuovi elementi host <xref:Microsoft.Office.Tools.Excel.Worksheet> in fase di esecuzione in un progetto a livello di documento. Se si crea un nuovo foglio di lavoro Excel in fase di esecuzione, sarà di tipo <xref:Microsoft.Office.Interop.Excel.Worksheet>. Dal momento che non si tratta di un elemento host, non può contenere alcun controllo host o controllo Windows Form. Per ulteriori informazioni sulla creazione di documenti in fase di esecuzione [, vedere Procedura: Aggiungere nuovi fogli di lavoro a livello di codice](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)alle cartelle di lavoro di.
+ Non è possibile creare nuovi elementi host <xref:Microsoft.Office.Tools.Excel.Worksheet> in fase di esecuzione in un progetto a livello di documento. Se si crea un nuovo foglio di lavoro Excel in fase di esecuzione, sarà di tipo <xref:Microsoft.Office.Interop.Excel.Worksheet>. Dal momento che non si tratta di un elemento host, non può contenere alcun controllo host o controllo Windows Form. Per ulteriori informazioni sulla creazione di documenti in fase di esecuzione, vedere [procedura: aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).
 
 ## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Informazioni sugli elementi host Worksheet nei progetti di componente aggiuntivo VSTO
  Nei progetti a livello di applicazione è possibile generare un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> in fase di esecuzione per qualsiasi foglio di lavoro in Excel. È possibile usare l'elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> per aggiungere controlli al foglio di lavoro associato oppure per gestire eventi che non sono disponibili su oggetti <xref:Microsoft.Office.Interop.Excel.Worksheet> .

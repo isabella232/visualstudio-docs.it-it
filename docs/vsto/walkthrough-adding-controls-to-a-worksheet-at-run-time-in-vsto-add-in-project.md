@@ -16,18 +16,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253900"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+# <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procedura dettagliata: aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi foglio di lavoro aperto mediante un componente aggiuntivo VSTO per Excel. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti l'aggiunta di oggetti <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro. Per informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  **Si applica a:** Le informazioni contenute in questo argomento sono valide per i progetti di componente aggiuntivo VSTO per Excel. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Creazione di un'interfaccia utente per l'aggiunta di controlli al foglio di lavoro.
 
@@ -38,7 +38,7 @@ ms.locfileid: "71253900"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -49,44 +49,44 @@ ms.locfileid: "71253900"
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Per creare un nuovo progetto di componente aggiuntivo VSTO per Excel
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]creare un progetto di componente aggiuntivo VSTO per Excel con il nome **ExcelDynamicControls**. Per altre informazioni, vedere [Procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creare un progetto di componente aggiuntivo VSTO per Excel con il nome **ExcelDynamicControls**. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Aggiungere un riferimento all'assembly **Microsoft. Office. Tools. Excel. v 4.0. Utilities. dll** . Tale riferimento è necessario per aggiungere a livello di codice un controllo Windows Form al foglio di lavoro più avanti in questa procedura dettagliata.
+2. Aggiungere un riferimento all'assembly **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** . Tale riferimento è necessario per aggiungere a livello di codice un controllo Windows Form al foglio di lavoro più avanti in questa procedura dettagliata.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Fornire un'interfaccia utente per aggiungere controlli a un foglio di foglio
  Aggiungere una scheda personalizzata alla barra multifunzione di Excel. Gli utenti possono selezionare caselle di controllo nella scheda per aggiungere i controlli a un foglio di lavoro.
 
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>Per creare un'interfaccia utente per l'aggiunta di controlli a un foglio di lavoro
 
-1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+1. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **barra multifunzione (finestra di progettazione visiva)** , quindi fare clic su **Aggiungi**.
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **barra multifunzione (finestra di progettazione visiva)**, quindi fare clic su **Aggiungi**.
 
      Un file denominato **Ribbon1.cs** o **Ribbon1. vb** viene aperto nella finestra di progettazione della barra multifunzione e visualizza una scheda e un gruppo predefiniti.
 
-3. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti**trascinare un controllo CheckBox su **Group1**.
+3. Dalla scheda **Controlli barra multifunzione di Office** della **Casella degli strumenti**trascinare un controllo ToggleButton in **group1**.
 
 4. Fare clic su **CheckBox1** per selezionarlo.
 
 5. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
-    |**Name**|**Pulsante**|
-    |**Etichetta**|**Pulsante**|
+    |**Nome**|**Button**|
+    |**Etichetta**|**Button**|
 
 6. Aggiungere una seconda casella di controllo a **group1**e quindi modificare le proprietà seguenti.
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
-    |**Name**|**NamedRange**|
+    |**Nome**|**NamedRange**|
     |**Etichetta**|**NamedRange**|
 
 7. Aggiungere una terza casella di controllo a **Group1**, quindi modificare le proprietà seguenti.
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
-    |**Name**|**ListObject**|
+    |**Nome**|**ListObject**|
     |**Etichetta**|**ListObject**|
 
 ## <a name="add-controls-to-the-worksheet"></a>Aggiungere controlli al foglio di controllo
@@ -139,14 +139,14 @@ ms.locfileid: "71253900"
 
 1. In **Esplora soluzioni**selezionare *ThisAddIn.cs* o *ThisAddIn. vb*.
 
-2. Scegliere **codice**dal menu **Visualizza** .
+2. Scegliere **Codice** dal menu **Visualizza**.
 
-3. Aggiungere il metodo seguente alla classe `ThisAddIn` . In questo codice si ottiene il primo foglio di lavoro della cartella di lavoro e viene usato il metodo `HasVstoObject` per controllare se il foglio di lavoro dispone di un oggetto foglio di lavoro generato. Se l'oggetto foglio di lavoro generato dispone di controlli, il codice ottiene tale oggetto ed esegue l'iterazione della raccolta di controlli rimuovendo questi ultimi.
+3. Aggiungere il metodo seguente alla classe `ThisAddIn`. In questo codice si ottiene il primo foglio di lavoro della cartella di lavoro e viene usato il metodo `HasVstoObject` per controllare se il foglio di lavoro dispone di un oggetto foglio di lavoro generato. Se l'oggetto foglio di lavoro generato dispone di controlli, il codice ottiene tale oggetto ed esegue l'iterazione della raccolta di controlli rimuovendo questi ultimi.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
 
-4. In C# è necessario creare un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>. Questo codice può essere inserito nel metodo `ThisAddIn_Startup`. Per ulteriori informazioni sulla creazione di gestori eventi, vedere [procedura: Creazione di gestori eventi nei progetti](../vsto/how-to-create-event-handlers-in-office-projects.md)di Office. Sostituire il metodo `ThisAddIn_Startup` con il codice seguente.
+4. In C# è necessario creare un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave>. Questo codice può essere inserito nel metodo `ThisAddIn_Startup`. Per altre informazioni sulla creazione di gestori eventi, vedere [procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md). Sostituire il metodo `ThisAddIn_Startup` con il codice seguente.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
 

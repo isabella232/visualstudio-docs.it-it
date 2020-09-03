@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9f8730fb864a70e7f649d5e8b4920d916c07c11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468490"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
@@ -40,7 +40,7 @@ La tabella seguente illustra i metodi di `IDiaDataSource` .
 |[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prepara i dati di debug archiviati in un file di database di programma (con estensione pdb) a cui si accede tramite un flusso di dati in memoria.|
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Apre una sessione per l'esecuzione di query sui simboli.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 Una chiamata a uno dei metodi Load dell' `IDiaDataSource` interfaccia apre l'origine del simbolo. Una chiamata riuscita al metodo [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) restituisce un'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) che supporta l'esecuzione di query sull'origine dati. Se il metodo Load restituisce un errore relativo al file, il valore restituito dal metodo [IDiaDataSource:: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) contiene il nome file associato all'errore.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -69,5 +69,5 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
