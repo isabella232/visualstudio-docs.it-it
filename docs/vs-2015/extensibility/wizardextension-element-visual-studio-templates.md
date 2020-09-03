@@ -14,20 +14,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69e35d4bebf7a16a1429be674ba3533b4f082b05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201920"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contiene gli elementi di registrazione per la creazione guidata modello di personalizzazione.  
+Contiene gli elementi di registrazione per personalizzare la creazione guidata modello.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  ...  
- \<WizardExtension >  
+ \<WizardExtension>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,20 +48,20 @@ Contiene gli elementi di registrazione per la creazione guidata modello di perso
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Specifica il nome o un nome sicuro di un assembly che viene visualizzato nella global assembly cache. Deve essere presente almeno un `Assembly` elemento in un `WizardExtension` elemento.|  
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Il nome completo della classe che implementa il `IWizard` interfaccia. Deve essere presente almeno un `FullClassName` elemento in un `WizardExtension` elemento.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Specifica il nome o il nome sicuro di un assembly visualizzato nell'Global Assembly Cache. È necessario che sia presente almeno un `Assembly` elemento in un `WizardExtension` elemento.|  
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento obbligatorio.<br /><br /> Nome completo della classe che implementa l' `IWizard` interfaccia. È necessario che sia presente almeno un `FullClassName` elemento in un `WizardExtension` elemento.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contiene tutti i metadati per il modello di progetto, un modello di elemento o lo starter kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contiene tutti i metadati per il modello di progetto, il modello di elemento o starter kit.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `WizardExtension` è un elemento figlio facoltativo di `VSTemplate`.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
+ Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -92,6 +92,6 @@ Contiene gli elementi di registrazione per la creazione guidata modello di perso
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Procedura: utilizzare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

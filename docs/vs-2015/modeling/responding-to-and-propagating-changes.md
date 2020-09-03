@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b216e89e6a04fb38537f9c45336d07cf6df4abdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671267"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Risposta alle modifiche e propagazione delle modifiche
@@ -26,7 +26,7 @@ Quando viene creato, eliminato o aggiornato un elemento, è possibile scrivere c
 ## <a name="in-this-section"></a>Contenuto della sezione
  Come linea guida, prendere in considerazione queste tecniche nell'ordine seguente:
 
-|Tecnica|Scenari|Per altre informazioni|
+|Tecnica|Scenari|Per ulteriori informazioni|
 |---------------|---------------|--------------------------|
 |Definire una proprietà del dominio calcolato.|Proprietà di dominio il cui valore viene calcolato da altre proprietà nel modello. Ad esempio, un prezzo che corrisponde alla somma dei prezzi degli elementi correlati.|[Proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md)|
 |Definire una proprietà del dominio di archiviazione personalizzato.|Proprietà di dominio archiviata in altre parti del modello o esternamente. Ad esempio, è possibile analizzare una stringa di espressione in un albero del modello.|[Proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md)|
@@ -47,11 +47,11 @@ Quando viene creato, eliminato o aggiornato un elemento, è possibile scrivere c
 
 - **Creazione di regole personalizzate** Si crea una regola personalizzata come classe derivata da una regola astratta. È inoltre necessario inviare una notifica al Framework sulla regola personalizzata. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
 
-- **Sottoscrizione di eventi** Prima di poter sottoscrivere un evento, creare un gestore eventi e un delegato. Usare quindi il <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property per sottoscrivere l'evento. Per ulteriori informazioni, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Sottoscrizione di eventi** Prima di poter sottoscrivere un evento, creare un gestore eventi e un delegato. Usare quindi la <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A> proprietà per sottoscrivere l'evento. Per ulteriori informazioni, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 - **Anmutazione delle modifiche** Quando si annulla una transazione, vengono generati gli eventi, ma le regole non vengono applicate. Se una regola modifica un valore e si annulla tale modifica, il valore viene reimpostato sul valore originale durante l'operazione di annullamento. Quando viene generato un evento, è necessario modificare manualmente il valore con il valore originale. Per altre informazioni su transactons e Undo, vedere [procedura: usare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).
 
-- **Passaggio di argomenti di evento a regole ed eventi** A entrambi gli eventi e le regole viene passato un parametro di `EventArgs` con informazioni sul modo in cui il modello è stato modificato.
+- **Passaggio di argomenti di evento a regole ed eventi** A entrambi gli eventi e le regole viene passato un `EventArgs` parametro con informazioni sul modo in cui il modello è stato modificato.
 
 ## <a name="see-also"></a>Vedere anche
  [Procedura: intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) [scrivere codice per personalizzare un Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md)

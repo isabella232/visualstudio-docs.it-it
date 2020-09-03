@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585297"
 ---
 # <a name="miscellaneous-files"></a>File esterni
@@ -33,12 +33,12 @@ L'apertura di file in modo indipendente da un progetto o una soluzione è utile 
 
 ![Progetti di soluzioni](../../ide/reference/media/projects_solutions_misc.gif)
 
-Esplora soluzioni può visualizzare una cartella **File esterni** per i file se le opzioni per la cartella sono abilitate. È possibile impostare le opzioni da [Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md). Dopo la chiusura di un file esterno, esso non è associato ad alcuna soluzione o progetto particolare a meno che non sia stata abilitata un'opzione a tale scopo.
+Esplora soluzioni possibile visualizzare una cartella di **file esterni** per i file se sono abilitate le opzioni per la cartella. È possibile impostare le opzioni da [Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md). Dopo la chiusura di un file esterno, esso non è associato ad alcuna soluzione o progetto particolare a meno che non sia stata abilitata un'opzione a tale scopo.
 
-La cartella **File esterni** rappresenta i file come collegamenti. Sebbene questa cartella non faccia parte di una soluzione, all'apertura di una soluzione vengono aperti di nuovo alcuni o tutti i file esterni aperti quando la soluzione è stata chiusa l'ultima volta, in base alle impostazioni per la cartella.
+La cartella **file esterni** rappresenta i file come collegamenti. Sebbene questa cartella non faccia parte di una soluzione, all'apertura di una soluzione vengono aperti di nuovo alcuni o tutti i file esterni aperti quando la soluzione è stata chiusa l'ultima volta, in base alle impostazioni per la cartella.
 
 > [!NOTE]
-> Alcuni dei file che non vengono **visualizzati** nella cartella File esterni sono file che non è possibile modificare all'interno dell'IDE, ad esempio file con estensione zip e doc. L'IDE non rileva i file che possono essere modificati solo tramite un editor esterno.
+> Alcuni dei file che non vengono visualizzati nella cartella **file esterni** sono file che non è possibile modificare all'interno dell'IDE, ad esempio i file con estensione zip e doc. L'IDE non rileva i file che possono essere modificati solo tramite un editor esterno.
 
 ## <a name="commands-available-in-the-ide"></a>Comandi disponibili nell'IDE
 
@@ -52,4 +52,4 @@ I menu, le barre degli strumenti e i comandi in essi contenuti cambiano a second
 
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Soluzioni e progetti](../../ide/solutions-and-projects-in-visual-studio.md)
-- [Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)
+- [Documenti, ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)

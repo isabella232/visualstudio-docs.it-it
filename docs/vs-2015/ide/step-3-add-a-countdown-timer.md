@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bae5b4a81864cc591491c21218a5d8253dfc61bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671836"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: aggiungere un timer per il conto alla rovescia
@@ -33,7 +33,7 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
 
      A questo punto è necessario un metodo che conti effettivamente i secondi, ad esempio un timer, e generi un evento dopo il periodo di tempo specificato.
 
-2. Nella finestra di progettazione spostare un controllo `Timer` dalla categoria **Componenti** della casella degli strumenti nel form.
+2. Nella finestra di progettazione spostare un controllo `Timer` dalla categoria **Componenti** della casella degli strumenti nel modulo.
 
      Il controllo viene visualizzato nell'area grigia nella parte inferiore della finestra di progettazione.
 
@@ -106,6 +106,6 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 4: aggiungere il metodo CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 4: aggiungere il metodo metodo CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 2: creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770615"
 ---
 # <a name="list-source-command"></a>Comando Elenca origine
@@ -31,26 +31,26 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 [/Line:number] [/ShowLineNumbers:yes|no]
 ```
 
-## <a name="switches"></a>Switch
+## <a name="switches"></a>Commutatori
 /Count:`number`
 
-Facoltativa. Specifica il numero di righe da visualizzare.
+facoltativo. Specifica il numero di righe da visualizzare.
 
 /Current
 
-Facoltativa. Visualizza la riga corrente.
+facoltativo. Visualizza la riga corrente.
 
 /File:`filename`
 
-Facoltativa. Percorso del file da visualizzare. Se non viene specificato alcun nome file, il comando visualizza il codice sorgente per la riga dell'istruzione corrente.
+facoltativo. Percorso del file da visualizzare. Se non viene specificato alcun nome file, il comando visualizza il codice sorgente per la riga dell'istruzione corrente.
 
 /Line:`number`
 
-Facoltativa. Visualizza un numero di riga specifico.
+facoltativo. Visualizza un numero di riga specifico.
 
 /ShowLineNumbers:`yes|no`
 
-Facoltativa. Specifica se visualizzare i numeri di riga.
+facoltativo. Specifica se visualizzare i numeri di riga.
 
 ## <a name="example"></a>Esempio
 In questo esempio viene elencato il codice sorgente dalla riga 4 del file Form1.vb, con i numeri di riga visibili.

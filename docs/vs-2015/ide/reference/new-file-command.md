@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8e0d25d585f518c854ad6176ae4ae7a5f27b22ad
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671954"
 ---
 # <a name="new-file-command"></a>Comando Nuovo file
@@ -35,7 +35,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ## <a name="arguments"></a>Argomenti
  `filename` Facoltativo. Nome del file. Se non viene specificato alcun nome, viene indicato un nome predefinito. Se non viene elencato alcun nome di modello, viene creato un file di testo.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /t:`templatename` Facoltativo. Specifica il tipo di file da creare.
 
  La sintassi dell'argomento /t:`templatename` riflette le informazioni riportate nella finestra di dialogo Nuovo file. Immettere il nome categoria seguito da una barra rovesciata (`\`) e il nome del modello e racchiudere l'intera stringa tra virgolette.

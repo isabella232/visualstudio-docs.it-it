@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugBreakpointChecksumRequest2 . Documenti Microsoft
+title: IDebugBreakpointChecksumRequest2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 632c3611f6c03a47a7d46e985eb6aa2685864a7f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735121"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
-Rappresenta un checksum del documento per una richiesta di punto di interruzione.
+Rappresenta un checksum del documento per una richiesta del punto di interruzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -27,19 +27,19 @@ IDebugBreakpointChecksumRequest2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Implementato dal [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pacchetto Debug e utilizzato dai motori di debug.
+ Implementato dal [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pacchetto di debug e utilizzato dai motori di debug.
 
 ## <a name="methods"></a>Metodi
- Nella tabella seguente vengono `IDebugBreakpointChecksumRequest2`illustrati i metodi di .
+ La tabella seguente illustra i metodi di `IDebugBreakpointChecksumRequest2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Recupera il checksum del documento per una richiesta di punto di interruzione in base all'identificatore univoco dell'algoritmo di checksum da utilizzare.|
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Recupera il checksum del documento per una richiesta del punto di interruzione in base all'identificatore univoco dell'algoritmo di checksum da utilizzare.|
 |[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|Determina se il checksum è abilitato per questo documento.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
