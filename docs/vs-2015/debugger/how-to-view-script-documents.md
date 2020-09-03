@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Visualizzare documenti Script | Microsoft Docs'
+title: 'Procedura: visualizzare documenti script | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189594"
 ---
-# <a name="how-to-view-script-documents"></a>Procedura: Visualizzare documenti script
+# <a name="how-to-view-script-documents"></a>Procedura: visualizzare documenti script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i file script sul lato client generati da uno script sul lato server venivano visualizzati nella finestra Esplora script. La finestra Esplora script era spesso nascosta, per cui la disponibilità di script sul lato client non era sempre ovvia.  
@@ -32,11 +32,11 @@ Nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i file
   
  I file script sul lato client sono visibili solo in modalità di debug o in modalità interruzione. Vengono visualizzati nel nodo **Documenti script**.  
   
- I file script sul lato server sono sempre visibili. Vengono visualizzati nel nodo **\<Percorso sito Web>** . Il nome del nodo è simile a questo esempio: `c:\...\Website2\`  
+ I file script sul lato server sono sempre visibili. Vengono visualizzati nel **\<Website Pathname>** nodo. Il nome del nodo è simile a questo esempio: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Per visualizzare un documento script sul lato server  
   
-1. In **Esplora soluzioni** aprire il nodo **\<Percorso sito Web>** .  
+1. In **Esplora soluzioni**aprire il **\<Website Pathname>** nodo.  
   
 2. Fare doppio clic sul file script che si desidera visualizzare.  
   

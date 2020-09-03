@@ -11,33 +11,33 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a29071035ccdd8a94b4ae26323780bcb24e8e23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155661"
 ---
 # <a name="source-control"></a>Controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In questa sezione vengono illustrate le opzioni per l'implementazione del controllo del codice sorgente come una funzionalità integrata di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], usando un plug-in del controllo del codice sorgente o di un pacchetto VSPackage di controllo di origine.  
+In questa sezione vengono illustrate le opzioni per implementare il controllo del codice sorgente come funzionalità integrata di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , tramite un plug-in del controllo del codice sorgente o un VSPackage del controllo del codice sorgente.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Nozioni fondamentali](../../extensibility/internals/source-control-integration-essentials.md)  
- Visualizza le informazioni importanti che è necessario disporre per iniziare a lavorare con controllo del codice sorgente.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Informazioni di base](../../extensibility/internals/source-control-integration-essentials.md)  
+ Vengono presentate le informazioni importanti necessarie per iniziare a utilizzare il controllo del codice sorgente.  
   
  [Panoramica](../../extensibility/internals/source-control-integration-overview.md)  
  Panoramica delle due opzioni disponibili per l'implementazione del controllo del codice sorgente.  
   
  [Creazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- Viene illustrato come creare un controllo del codice sorgente del plug-in che fornisce funzionalità di controllo di origine tramite il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfaccia utente del controllo origine (UI).  
+ Viene illustrato come creare un plug-in del controllo del codice sorgente che fornisce funzionalità di controllo del codice sorgente tramite l' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfaccia utente del controllo del codice sorgente.  
   
  [Creazione di un pacchetto VSPackage di controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Viene illustrato come creare un controllo del codice sorgente VSPackage che non solo fornisce funzionalità di controllo di origine ma può essere usato per personalizzare il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] controllo dell'interfaccia utente del codice sorgente.  
+ Viene illustrato come creare un VSPackage del controllo del codice sorgente che non solo fornisce la funzionalità del controllo del codice sorgente, ma può essere utilizzato per personalizzare l' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfaccia utente del controllo del codice sorgente  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Plug-in del controllo del codice sorgente](../../extensibility/source-control-plug-ins.md)  
- Informazioni di riferimento per l'API del plug-in del controllo origine.  
+ Riferimento per l'API del plug-in del controllo del codice sorgente.  
   
  [Estensione dei progetti](../../extensibility/extending-projects.md)  
  Descrive come usare i progetti e le soluzioni di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per organizzare file di codice e file di risorse e come implementare il controllo del codice sorgente.

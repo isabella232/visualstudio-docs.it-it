@@ -1,5 +1,5 @@
 ---
-title: 'Area di test 4: Verificare nella | Microsoft Docs'
+title: 'Area di test 4: archivia | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,61 +12,61 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155953"
 ---
 # <a name="test-area-4-check-in"></a>Area di test 4: Archiviare
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Quest'area del plug-in test di controllo del codice sorgente illustra l'invio di elementi aggiornati nell'archivio versioni tramite il **Archivia** comando.  
+Questa area di test del plug-in del controllo del codice sorgente illustra l'invio di elementi aggiornati all'archivio delle versioni tramite il comando **Archivia** .  
   
-## <a name="command-menu-access"></a>Accesso a comandi di Menu  
- Nell'esempio [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nei test case vengono usati percorsi di menu ambiente di sviluppo integrato.  
+## <a name="command-menu-access"></a>Accesso al menu dei comandi  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]Nei test case vengono utilizzati i percorsi dei menu Integrated Development Environment seguenti.  
   
-##### <a name="check-in"></a>Si collegano:  
- **File**, **controllo del codice sorgente**, **Archivia**.  
+##### <a name="check-in"></a>Archivia:  
+ **File**, **controllo del codice sorgente**, **archiviazione**.  
   
- **File**, **archiviare**.  
+ **,** **Archiviare**.  
   
- Menu di scelta rapida **Archivia**.  
+ Menu di scelta rapida, **archiviare**.  
   
 ## <a name="common-expected-behavior"></a>Comportamento previsto comune  
   
-- Vengono visualizzati i progetti e i file aggiunti a una soluzione o progetto incluso nel controllo del codice sorgente nel **Archivia** finestra di dialogo e il **archiviazioni in sospeso** finestra.  
+- I progetti e i file aggiunti a una soluzione o a un progetto nel controllo del codice sorgente vengono visualizzati nella finestra di dialogo **Archivia** e nella finestra **archiviazioni in sospeso** .  
   
-- Dopo il check-in, gli elementi aggiunti vengono visualizzati nel controllo del codice sorgente.  
+- Dopo l'archiviazione, gli elementi aggiunti vengono visualizzati nel controllo del codice sorgente.  
   
-- Dopo il check-in, gli elementi aggiornati sono versioni correttamente nell'archivio.  
+- Dopo l'archiviazione, gli elementi aggiornati vengono correttamente sottoposte a Versioning nell'archivio.  
   
 ## <a name="test-cases"></a>Test case  
- Di seguito sono specifici test case per l'area di test di archiviazione.  
+ Di seguito sono riportati i test case specifici per l'area di test di archiviazione.  
   
-### <a name="case-4a-modified-items"></a>Case 4a: Elementi modificati  
- Viene descritto l'utilizzo di controllo in azione per aggiornare un file di controllo del codice sorgente che è stato modificato.  
+### <a name="case-4a-modified-items"></a>Caso 4a: elementi modificati  
+ Viene descritto come usare l'azione Archivia per aggiornare un file nel controllo del codice sorgente che è stato modificato.  
   
-|Azione|Passi del test|Per verificare i risultati previsti|  
+|Action|Passi del test|Risultati previsti da verificare|  
 |------------|----------------|--------------------------------|  
-|Modificare un file di testo che è stato estratto, archiviare solo i file (**Archivia** nella finestra di dialogo)|1.  Creare un nuovo progetto con un file di testo.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrarre e modificare il file di testo.<br />4.  Archiviare tramite la finestra di dialogo Archivia (**File**, **controllo del codice sorgente**, **Archivia**).|Comportamento previsto comune.|  
-|Modificare un file di testo che è stato estratto, archiviare solo i file (**archiviazioni in sospeso** finestra)|1.  Creare un nuovo progetto con un file di testo.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrarre e modificare il file di testo.<br />4.  Archiviare tramite il **archiviazioni in sospeso** finestra.|Comportamento previsto comune.|  
+|Modificare un file di testo che è stato estratto, archiviare solo file (finestra**di dialogo Archivia** )|1. creare un nuovo progetto con un file di testo.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. Estrarre e modificare il file di testo.<br />4. archiviare tramite la finestra di dialogo Archivia (**file**, **controllo del codice sorgente**, **Archivia**).|Comportamento previsto comune.|  
+|Modificare un file di testo che è stato estratto, archiviare solo file (finestra**archiviazioni in sospeso** )|1. creare un nuovo progetto con un file di testo.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. Estrarre e modificare il file di testo.<br />4. archiviare tramite la finestra **archiviazioni in sospeso** .|Comportamento previsto comune.|  
   
-### <a name="case-4b-adding-files"></a>Case 4b: Aggiunta di file  
- Quando si aggiunge un file a un progetto o un elemento a una soluzione, necessario modificare anche il progetto o soluzione. In questo modo il file padre è anche stato estratto e deve essere archiviato per completare l'aggiunta.  
+### <a name="case-4b-adding-files"></a>Caso 4B: aggiunta di file  
+ Quando si aggiunge un file a un progetto o a un elemento a una soluzione, il progetto o la soluzione deve essere modificata. Quindi, anche il file padre viene estratto e deve essere archiviato per completare l'aggiunta.  
   
-|Azione|Passi del test|Per verificare i risultati previsti|  
+|Action|Passi del test|Risultati previsti da verificare|  
 |------------|----------------|--------------------------------|  
-|Aggiungere un file di testo e archivia i file (**Archivia** nella finestra di dialogo)|1.  Creare un nuovo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un file di testo al progetto.<br />4.  Se richiesto, accettare check-out del progetto.<br />5.  Selezionare la soluzione in **Esplora soluzioni**.<br />6.  Archivia dal **Archivia** nella finestra di dialogo.|Comportamento previsto comune.|  
-|Aggiungere un file di testo e archivia i file (**archiviazioni in sospeso** finestra)|1.  Creare un nuovo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un file di testo al progetto.<br />4.  Se richiesto, accettare check-out del progetto.<br />5.  Controllare nella soluzione dal **archiviazioni in sospeso** finestra.|Comportamento previsto comune|  
+|Aggiungere un file di testo e archiviare tutti gli elementi (finestra**di dialogo Archivia** )|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. aggiungere un file di testo al progetto.<br />4. se richiesto, accettare il controllo dal progetto.<br />5. Selezionare la soluzione in **Esplora soluzioni**.<br />6. archiviare nella finestra di dialogo **Archivia** .|Comportamento previsto comune.|  
+|Aggiungere un file di testo e archiviare tutti gli elementi (finestra**archiviazioni in sospeso** )|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. aggiungere un file di testo al progetto.<br />4. se richiesto, accettare il controllo dal progetto.<br />5. archiviare la soluzione dalla finestra **archiviazioni in sospeso** .|Comportamento previsto comune|  
   
-### <a name="case-4c-adding-projects"></a>Caso 4c: Aggiunta di progetti  
- Quando si aggiunge un progetto a una soluzione, necessario modificare anche la soluzione. In questo modo il file della soluzione è anche stato estratto e deve essere archiviato per completare l'aggiunta.  
+### <a name="case-4c-adding-projects"></a>Caso 4C: aggiunta di progetti  
+ Quando si aggiunge un progetto a una soluzione, è necessario modificare anche la soluzione. Quindi, anche il file della soluzione viene estratto e deve essere archiviato per completare l'aggiunta.  
   
-|Azione|Passi del test|Per verificare i risultati previsti|  
+|Action|Passi del test|Risultati previsti da verificare|  
 |------------|----------------|--------------------------------|  
-|Aggiungere un progetto a una soluzione vuota nel controllo del codice sorgente (**Archivia** nella finestra di dialogo)|1.  Creare una soluzione vuota.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un nuovo progetto.<br />4.  Se richiesto, accettare check-out della soluzione.<br />5.  Archivia dal **Archivia** nella finestra di dialogo.|Comportamento previsto comune.|  
-|Aggiungere un progetto a una soluzione vuota nel controllo del codice sorgente (**archiviazioni in sospeso** finestra)|1.  Creare una soluzione vuota.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un nuovo progetto.<br />4.  Se richiesto, accettare check-out della soluzione.<br />5.  Controllare nella soluzione dal **archiviazioni in sospeso** finestra.|Comportamento previsto comune.|  
+|Aggiungere un progetto a una soluzione vuota sotto controllo del codice sorgente (finestra**di dialogo Archivia** )|1. creare una soluzione vuota.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. aggiungere un nuovo progetto.<br />4. se richiesto, confermare l'estrazione della soluzione.<br />5. archiviare nella finestra di dialogo **Archivia** .|Comportamento previsto comune.|  
+|Aggiungere un progetto a una soluzione vuota sotto il controllo del codice sorgente (finestra**archiviazioni in sospeso** )|1. creare una soluzione vuota.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. aggiungere un nuovo progetto.<br />4. se richiesto, confermare l'estrazione della soluzione.<br />5. archiviare la soluzione dalla finestra **archiviazioni in sospeso** .|Comportamento previsto comune.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286306"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C\#
@@ -56,7 +56,7 @@ Per creare un visualizzatore, seguire le attività riportate di seguito.
 2. Modificare il nome da Class1.cs a qualcosa di significativo, ad esempio DebuggerSide.cs.
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]modifica automaticamente la dichiarazione di classe in DebuggerSide.cs in modo che corrisponda al nuovo nome file.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifica automaticamente la dichiarazione di classe in DebuggerSide.cs in modo che corrisponda al nuovo nome file.
 
 3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
@@ -206,7 +206,7 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
 2. Modificare il nome da Program.cs a qualcosa di più significativo, ad esempio TestConsole.cs.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]modifica automaticamente la dichiarazione di classe in TestConsole.cs in modo che corrisponda al nuovo nome file.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifica automaticamente la dichiarazione di classe in TestConsole.cs in modo che corrisponda al nuovo nome file.
 
 3. In TestConsole.cs aggiungere il codice seguente alle `using` direttive:
 
@@ -272,7 +272,7 @@ Prima di tutto, è necessario creare un nuovo progetto libreria di classi.
    Questo è tutto. Esaminare il file SecondVisualizer.cs e visualizzare il codice aggiunto dal modello. Procedere e sperimentare il codice. Ora che si conoscono le nozioni di base, è possibile creare visualizzatori più complessi e utili.
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Architettura del visualizzatore](../debugger/visualizer-architecture.md)
 - [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)

@@ -1,5 +1,5 @@
 ---
-title: Debug di Script e applicazioni Web | Microsoft Docs
+title: Debug di applicazioni Web e script | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155908"
 ---
 # <a name="debugging-web-applications-and-script"></a>Debug di script e applicazioni Web
@@ -34,16 +34,16 @@ ms.locfileid: "68155908"
 
 Legenda tabella:  
   
- In questa sezione vengono descritte le comuni tecniche di debug per applicazioni Web. Per altre informazioni, vedere [nozioni fondamentali di debug](../debugger/debugger-basics.md).  
+ In questa sezione vengono descritte le comuni tecniche di debug per applicazioni Web. Per ulteriori informazioni, vedere [nozioni di base sul debugger](../debugger/debugger-basics.md).  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Debug di applicazioni ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
  Vengono forniti prerequisiti e istruzioni relativi all'esecuzione del debug di un'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] durante lo sviluppo o dopo la distribuzione.  
   
- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Vengono elencati gli errori riscontrabili durante il debug di applicazioni Web e vengono suggerite le soluzioni.  
   
- [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Viene descritto come usare le finestre degli strumenti **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
