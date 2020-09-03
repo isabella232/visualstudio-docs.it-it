@@ -1,5 +1,5 @@
 ---
-title: proprietà BSTR_ARRAY . Documenti Microsoft
+title: BSTR_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737714"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
@@ -41,22 +41,22 @@ struct BSTR_ARRAY {
 }
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `dwCount`\
-Numero di `Members` stringhe nella matrice.
+Numero di stringhe nella `Members` matrice.
 
 `Members`\
 Matrice di stringhe.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene restituita dal [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) metodo.
+Questa struttura viene restituita dal metodo [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .
 
- [Solo C) Ogni singola stringa deve `SysFreeString`essere liberata utilizzando e la `Members` matrice deve essere liberata con `CoTaskMemFree`.
+ [Solo C++] Ogni singola stringa deve essere liberata usando `SysFreeString` e la `Members` matrice deve essere liberata con `CoTaskMemFree` .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

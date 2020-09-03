@@ -8,15 +8,15 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594214"
 ---
 # <a name="visual-c-intellisense-features"></a>Funzionalità IntelliSense per Visual C++
 
-IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. IntelliSense per C++ è disponibile per i file autonomi e per i file che fanno parte di un progetto C++. Nei progetti multipiattaforma, alcune funzionalità di IntelliSense sono disponibili nei file con estensione cpp e c nel progetto di codice condiviso, anche quando ci si trova in un contesto Android o iOS.In cross-platform projects, some IntelliSense features are available in *.cpp* and *.c* files in the shared code project, even when you are in an Android or iOS context.
+IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. IntelliSense per C++ è disponibile per i file autonomi e per i file che fanno parte di un progetto C++. Nei progetti multipiattaforma alcune funzionalità di IntelliSense sono disponibili nei file con *estensione cpp* e *c* del progetto di codice condiviso, anche quando ci si trova in un contesto Android o iOS.
 
 Questo articolo offre una panoramica delle funzionalità di IntelliSense per C++. Per informazioni su come configurare il progetto per IntelliSense e come risolvere eventuali problemi, vedere [Configure a C++ project for IntelliSense](visual-cpp-intellisense-configuration.md) (Configurare un progetto C++ per IntelliSense).
 
@@ -34,11 +34,11 @@ Per accedere a IntelliSense, è possibile utilizzare le voci di menu e i tasti d
 
 Quando si inizia a digitare una parola chiave, un tipo, una funzione, un nome di variabile o un altro elemento del programma che viene riconosciuto dal compilatore, l'editor visualizza un elenco di suggerimenti per completare la parola.
 
-Per un elenco delle icone e dei relativi significati, vedere [Icone Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md).
+Per un elenco delle icone e dei relativi significati, vedere [Visualizzazione classi e Visualizzatore oggetti icone](../ide/class-view-and-object-browser-icons.md).
 
 ![Finestra Completa parola di Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-La prima volta che viene richiamato, l'elenco dei membri mostra solo i membri accessibili per il contesto corrente. Se si preme **Ctrl**+**J** dopo, vengono visualizzati tutti i membri indipendentemente dall'accessibilità. Se viene richiamato per la terza volta, viene visualizzato un elenco di elementi del programma ancora più ampio. È possibile disattivare l'elenco dei membri nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Generale** > **Elenco membri automatico**.
+La prima volta che viene richiamato, l'elenco dei membri mostra solo i membri accessibili per il contesto corrente. Se successivamente si preme **CTRL** + **J** , vengono visualizzati tutti i membri indipendentemente dall'accessibilità. Se viene richiamato per la terza volta, viene visualizzato un elenco di elementi del programma ancora più ampio. È possibile disattivare l'elenco dei membri nella finestra di dialogo **Opzioni** in **Editor di testo** > **C/C++** > **Generale** > **Elenco membri automatico**.
 
 ![Elenco di membri di Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
@@ -106,5 +106,5 @@ Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono e
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Using IntelliSense](../ide/using-intellisense.md)
-- [Configure a C++ project for IntelliSense](visual-cpp-intellisense-configuration.md) (Configurare un progetto C++ per IntelliSense)
+- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Configurare un progetto C++ per IntelliSense](visual-cpp-intellisense-configuration.md)

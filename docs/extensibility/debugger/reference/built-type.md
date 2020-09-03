@@ -1,5 +1,5 @@
 ---
-title: proprietà BUILT_TYPE . Documenti Microsoft
+title: BUILT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 885f17b0841a39672c87be5bc7c947b2e0d9c7e0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737693"
 ---
 # <a name="built_type"></a>BUILT_TYPE
-Questa struttura specifica le informazioni su un tipo di campo derivato dai metadati.
+Questa struttura specifica le informazioni su un tipo di campo tratto dai metadati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,9 +43,9 @@ public struct BUILT_TYPE {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `ulAppDomainID`\
-ID dell'applicazione da cui proveniva il simbolo. Viene utilizzato per identificare in modo univoco un'istanza dell'applicazione.
+ID dell'applicazione da cui è arrivato il simbolo. Viene utilizzato per identificare in modo univoco un'istanza dell'applicazione.
 
 `guidModule`\
 GUID del modulo che contiene questo campo.
@@ -54,12 +54,12 @@ GUID del modulo che contiene questo campo.
 Oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che identifica il campo sottostante associato a questo campo compilato.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene visualizzata come parte dell'unione `TYPE_INFO` nella struttura `TYPE_KIND_BUILT` [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il `dwKind` campo della struttura è impostato su (un valore dell'enumerazione [dwTYPE_KIND).](../../../extensibility/debugger/reference/dwtype-kind.md)
+Questa struttura viene visualizzata come parte dell'Unione nella struttura [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) quando il `dwKind` campo della `TYPE_INFO` struttura è impostato su `TYPE_KIND_BUILT` (un valore dell'enumerazione [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: sh.h
+Intestazione: sh. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

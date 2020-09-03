@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f87f5cdd937c0e172e7b96cf0858423b14686d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190745"
 ---
-# <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
+# <a name="idiasourcefileget_checksum"></a>IDiaSourceFile::get_checksum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera i byte di checksum.  
@@ -37,23 +37,23 @@ HRESULT get_checksum ( 
   
 #### <a name="parameters"></a>Parametri  
  `cbData`  
- [in] Dimensioni del buffer di dati, in byte.  
+ in Dimensioni in byte del buffer di dati.  
   
  `pcbData`  
- [out] Restituisce il numero di byte di checksum. Questo parametro non può essere `NULL`.  
+ out Restituisce il numero di byte di checksum. Questo parametro non può essere `NULL`.  
   
  `data`  
- [in, out] Un buffer che viene riempito con i byte di checksum. Se questo parametro è `NULL`, quindi `pcbData` restituisce il numero di byte necessari.  
+ [in, out] Buffer riempito con i byte di checksum. Se questo parametro è `NULL` , `pcbData` restituisce il numero di byte necessari.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Per determinare il tipo di algoritmo di checksum utilizzata per generare i byte di checksum, chiamare il [Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Per determinare il tipo di algoritmo di checksum utilizzato per generare i byte di checksum, chiamare il metodo [IDiaSourceFile:: get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) .  
   
- Il valore di checksum viene solitamente generato dall'immagine del file di origine in modo che le modifiche nel file di origine vengono applicate le modifiche nei byte checksum. Se i byte di checksum non corrispondono a un checksum generato dall'immagine del file, caricare quindi il file deve essere considerato danneggiato o manomesso.  
+ Il checksum viene in genere generato dall'immagine del file di origine in modo che le modifiche apportate al file di origine vengano riflesse nelle modifiche dei byte di checksum. Se i byte di checksum non corrispondono a un checksum generato dall'immagine caricata del file, il file deve essere considerato danneggiato o manomesso.  
   
- I tipici valori di checksum non sono mai più di 32 byte le dimensioni ma non presupporre che sia la dimensione massima di un checksum. Impostare il `data` parametro per `NULL` per ottenere il numero di byte necessari per recuperare il valore di checksum. Quindi allocare un buffer di dimensione appropriata e chiamare questo metodo, ancora una volta con il nuovo buffer.  
+ I checksum tipici non sono mai di dimensioni superiori a 32 byte, ma non presuppongono che sia la dimensione massima di un checksum. Impostare il `data` parametro su `NULL` per ottenere il numero di byte necessari per recuperare il checksum. Allocare quindi un buffer delle dimensioni appropriate e chiamare questo metodo una volta al nuovo buffer.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

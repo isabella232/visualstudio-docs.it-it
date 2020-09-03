@@ -1,5 +1,5 @@
 ---
-title: proprietà COMPUTER_INFO . Documenti Microsoft
+title: COMPUTER_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 27794dff51646b72dbbfda81ead02e5206ade78b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737664"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
@@ -43,26 +43,26 @@ public struct COMPUTER_INFO
 }
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `wProcessorArchitecture`\
 Identifica l'architettura del microprocessore.
 
 `wSuiteMask`\
-Identifica la maschera suite.
+Identifica la maschera del gruppo.
 
 `dwOperatingSystemVersion`\
 Numero di versione del sistema operativo.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene restituita dal [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) metodo.
+Questa struttura viene restituita dal metodo [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [Informazioni su GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+- [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

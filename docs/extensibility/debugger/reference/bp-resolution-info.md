@@ -1,5 +1,5 @@
 ---
-title: proprietà BP_RESOLUTION_INFO . Documenti Microsoft
+title: BP_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 70e66a936ec1eaf1f818ad249aa4eb14b0b63749
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737831"
 ---
 # <a name="bp_resolution_info"></a>BP_RESOLUTION_INFO
-Vengono descritte le informazioni sui punti di interruzione associati per un punto di interruzione del codice o un punto di interruzione di dati.
+Descrive le informazioni sul punto di interruzione associato per un punto di interruzione del codice o un punto di interruzione dei dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,9 +45,9 @@ public struct BP_RESOLUTION_INFO {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `dwFields`\
-Raccolta di flag [dall'BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumerazioni che specifica quali campi vengono compilati.
+Raccolta di flag dalle enumerazioni [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) che specificano i campi da compilare.
 
 `bpResLocation`\
 Struttura [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) che specifica la posizione del punto di interruzione nel codice o nei dati.
@@ -62,9 +62,9 @@ Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.
 Questa struttura viene restituita da [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

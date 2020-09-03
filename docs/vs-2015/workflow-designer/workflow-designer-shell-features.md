@@ -12,14 +12,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c59dc8232713d4126b2c37693a1e241735eb163
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606593"
 ---
 # <a name="workflow-designer-shell-features"></a>Caratteristiche della shell di Progettazione flussi di lavoro
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] è formato da tre principali aree dell'interfaccia utente, ovvero l'area della finestra di progettazione, la barra di navigazione al di sopra di essa e la shell al di sotto di essa. La barra di navigazione, posizionata nella parte superiore dello schermo, viene usata per visualizzare l'elenco di predecessori dell'attività radice corrente. [!INCLUDE[crdefault](../includes/crdefault-md.md)][procedura: usare l'esplorazione di navigazione](../workflow-designer/how-to-use-breadcrumb-navigation.md). L'area della finestra di progettazione, posizionata al centro dello schermo, viene usata per creare flussi di lavoro. La shell, posizionata nella parte inferiore dello schermo, contiene alcuni pulsanti per la gestione della visualizzazione corrente.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] è costituito da tre aree principali dell'interfaccia utente: l'area di progettazione, la barra di navigazione sopra e la shell sotto di essa. La barra di navigazione, posizionata nella parte superiore dello schermo, viene usata per visualizzare l'elenco di predecessori dell'attività radice corrente. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Procedura: utilizzare l'esplorazione di navigazione](../workflow-designer/how-to-use-breadcrumb-navigation.md). L'area della finestra di progettazione, posizionata al centro dello schermo, viene usata per creare flussi di lavoro. La shell, posizionata nella parte inferiore dello schermo, contiene alcuni pulsanti per la gestione della visualizzazione corrente.
 
 ## <a name="shell-features"></a>Caratteristiche della shell
  La shell presenta dei pulsanti sul lato destro della barra che è possibile usare per eseguire lo zoom avanti o indietro del flusso di lavoro, adattare il contenuto del flusso di lavoro alla dimensione dello schermo e mostrare o nascondere la carta panoramica. È possibile eseguire lo zoom avanti o indietro di un flusso di lavoro usando i tasti di scelta rapida CTRL++ e CTRL+ -.

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287285"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: Specificare i periodi di timeout per controller e agenti di test
@@ -28,7 +28,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 - Controller di test: *QTController.exe.config*
 
-    |Nome della chiave|Descrizione|valore|
+    |Nome chiave|Descrizione|Valore|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Numero di secondi di attesa per la richiesta di ping dell'agente prima che la connessione venga considerata persa.|"n" secondi.|
     |AgentSyncTimeoutInSeconds|Quando si avvia l'esecuzione di un test di sincronizzazione, il numero di secondi di attesa per la sincronizzazione di tutti gli agenti prima di interrompere l'esecuzione.|"n" secondi.|
@@ -37,7 +37,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 - Agente di test: *QTAgentService.exe.config*
 
-    |Nome della chiave|Descrizione|valore|
+    |Nome chiave|Descrizione|Valore|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Numero di secondi tra tentativi di connessione al controller.|"n" secondi. Predefinito: "30" (trenta secondi).|
     |RemotingTimeoutSeconds|Tempo massimo che una chiamata remota può durare in secondi.|"n" secondi. Predefinito: "600" (dieci minuti).|
@@ -112,7 +112,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
     </appSettings>
     ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
 - [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)

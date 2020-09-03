@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541075"
 ---
 Visual Studio può avviare ed eseguire il debug di applicazioni Python in locale e in remoto in un computer Windows (vedere [Remote Debugging](../../../debugger/remote-debugging.md)). È anche possibile eseguire il debug in modalità remota su un sistema operativo, un dispositivo o un'implementazione di Python diversi da CPython usando la [libreria debugpy](https://pypi.org/project/debugpy/).

@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON . Documenti Microsoft
+title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737780"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Indica il motivo per cui un punto di interruzione non è stato associato.
+Indica il motivo per cui un punto di interruzione non è associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,18 +54,18 @@ Il motivo è sconosciuto.
 Il codice che contiene il punto di interruzione è stato scaricato.
 
 `BPUR_BREAKPOINT_REBIND`\
-Il punto di interruzione è stato riassociato in una posizione diversa. Ciò può verificarsi dopo le operazioni di modifica e continuazione quando si sposta il punto di interruzione o quando il punto di interruzione è associato a un file con un percorso che non è più valido.
+Il punto di interruzione è stato riassociato a una posizione diversa. Questo problema può verificarsi dopo le operazioni di modifica e continuazione quando il punto di interruzione si sposta o quando il punto di interruzione è associato a un file con un percorso non più valido.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Il punto di interruzione viene determinato come in errore dopo l'associazione. Ciò accade ai punti di interruzione gestiti le cui condizioni non sono più valide.
+Il punto di interruzione viene determinato come errore dopo l'associazione. Questa situazione si verifica nei punti di interruzione gestiti le cui condizioni non sono più valide.
 
 ## <a name="remarks"></a>Osservazioni
-Restituito dal metodo [GetReason.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+Restituito dal metodo [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

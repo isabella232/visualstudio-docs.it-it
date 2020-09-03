@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984509"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint
@@ -31,7 +31,7 @@ ms.locfileid: "72984509"
 ## <a name="site-columns"></a>Colonne del sito
  Le colonne del sito sono uno degli elementi più semplici che si possono aggiungere a un progetto di SharePoint. Una colonna del sito rappresenta un tipo di dati, ad esempio un numero di telefono, un commento o il nome della città di un contatto in un elenco di contatti.
 
- Grazie al nuovo modello per gli elementi di progetto delle colonne del sito, la creazione di queste colonne è più semplice rispetto alle versioni precedenti di Visual Studio. Dopo aver creato una nuova colonna del sito, è possibile modificare il codice XML nel file *Elements. XML* della colonna del sito per includere le informazioni desiderate, ad esempio il nome visualizzato, il tipo di dati e il gruppo in cui si desidera che la colonna del sito venga visualizzata in SharePoint. Per ulteriori informazioni sulle colonne del sito, vedere [Introduzione alle colonne](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14)).
+ Grazie al nuovo modello per gli elementi di progetto delle colonne del sito, la creazione di queste colonne è più semplice rispetto alle versioni precedenti di Visual Studio. Dopo aver creato una nuova colonna del sito, è possibile modificare il codice XML nel file di *Elements.xml* della colonna del sito per includere le informazioni desiderate, ad esempio il nome visualizzato, il tipo di dati e il gruppo in cui si desidera che la colonna del sito venga visualizzata in SharePoint. Per ulteriori informazioni sulle colonne del sito, vedere [Introduzione alle colonne](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14)).
 
 ## <a name="content-types-and-lists"></a>Tipi di contenuto ed elenchi
  I tipi di contenuto e gli elenchi sono tra gli elementi più frequentemente utilizzati in SharePoint.

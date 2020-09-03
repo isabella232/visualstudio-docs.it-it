@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 624fffb9c86a7ad874f27797dfd5251c8585870f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664031"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure
@@ -21,16 +21,16 @@ ms.locfileid: "72664031"
 
 È possibile usare Windows Presentation Foundation (WPF) per creare rapidamente un'applicazione desktop moderna che usa un servizio mobile di Azure per archiviare e fornire i dati.
 
-## <a name="Requirements"></a> Prerequisiti
+## <a name="prerequisites"></a><a name="Requirements"></a> Prerequisiti
  Per completare questa procedura dettagliata, sono necessari gli elementi seguenti:
 
 - Visual Studio 2015: qualsiasi versione che supporta lo sviluppo WPF.
 
-- Un account Microsoft Azure attivo.
+- Account Microsoft Azure attivo.
 
   - È possibile iscriversi per un account di prova gratuito [qui](https://azure.microsoft.com/pricing/free-trial/).
 
-  - È possibile attivare i [benefici per sottoscrittori MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). La sottoscrizione MSDN offre ogni mese dei crediti che è possibile usare per i servizi di Azure a pagamento.
+  - È possibile attivare i [benefici per sottoscrittori MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). con l'abbonamento MSDN ogni mese si accumulano crediti che è possibile usare per i servizi di Azure a pagamento.
 
 ## <a name="create-a-project-and-add-references"></a>Creare un progetto e aggiungere i riferimenti
  Il primo passaggio consiste nel creare un progetto WPF e aggiungere un pacchetto NuGet che consente di connettersi ai servizi mobili di Azure.
@@ -49,7 +49,7 @@ ms.locfileid: "72664031"
 
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Per aggiungere un riferimento a Servizi mobili di Windows Azure SDK
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **Riferimenti** e scegliere **Gestisci pacchetti NuGet**.
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **riferimenti** e scegliere **Gestisci pacchetti NuGet**.
 
 2. Nella finestra di dialogo **Gestione pacchetti NuGet**scegliere il campo **Cerca** e immettere `mobileservices`.
 
@@ -204,9 +204,9 @@ ms.locfileid: "72664031"
 
 #### <a name="to-create-and-modify-the-main-window"></a>Per creare e modificare la finestra principale
 
-1. In **Esplora soluzioni**aprire il file **MainWindow.xaml** .
+1. In **Esplora soluzioni** apri il file **MainWindow.xaml**.
 
-2. **Importante**: questo passaggio è solo per C#. Se si usa Visual Basic, andare al passaggio successivo. Nel riquadro inferiore della finestra di progettazione trovare la riga `xmlns:local=”clr-namespace:WPFQuickStart”` e sostituirla con il codice XAML seguente:
+2. **Importante**. questo passaggio è solo per C#. Se si usa Visual Basic, andare al passaggio successivo. Nel riquadro inferiore della finestra di progettazione trovare la riga `xmlns:local=”clr-namespace:WPFQuickStart”` e sostituirla con il codice XAML seguente:
 
     ```xaml
     xmlns:local=”clr-namespace:WPFQuickStart.Common”
@@ -484,7 +484,7 @@ ms.locfileid: "72664031"
     > [!NOTE]
     > Potrebbe essere necessario modificare la parte numerica dell'URL. Microsoft Azure richiede un URL univoco per ogni servizio mobile.
 
-     In questo modo l'URL per il servizio verrà impostato su `https://wpfquickstart01.azure-mobile.net/`.
+     In questo modo viene impostato l'URL del servizio su `https://wpfquickstart01.azure-mobile.net/` .
 
 4. Nell'elenco **DATABASE** scegliere un'opzione di database. Poiché si tratta di un'applicazione che probabilmente non sarà molto usata, è possibile scegliere l'opzione **Crea un database SQL 20 MB gratuito** o scegliere il database gratuito già associato alla sottoscrizione.
 
@@ -542,12 +542,12 @@ ms.locfileid: "72664031"
 
      Questo codice consente all'applicazione di accedere al servizio mobile in esecuzione in Microsoft Azure.
 
-## <a name="test-the-application"></a>Testare l'applicazione
+## <a name="test-the-application"></a>Test dell'applicazione
  La procedura è stata completata. È stata creata un'applicazione desktop WPF con accesso a un servizio mobile di Azure. A questo punto è possibile eseguire l'applicazione e provarla.
 
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione
 
-1. Nella barra dei menu scegliere **Debug**, **Avvia debug** (o premere F5).
+1. Sulla barra dei menu scegliere **debug**, **Avvia debug** (o premere F5).
 
 2. Nella finestra di dialogo **Insert a TodoItem** immettere `Do something`, quindi scegliere il pulsante **Salva** .
 
@@ -555,7 +555,7 @@ ms.locfileid: "72664031"
 
      Verranno aggiunte due voci per l'elenco **Query and Update Data** , come illustrato nella figura seguente.
 
-     ![Gli elementi todo vengono aggiunti all'elenco.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
+     ![Gli elementi ToDo vengono aggiunti all'elenco.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
 
 4. Selezionare la casella di controllo per la voce **Do something else** nell'elenco.
 

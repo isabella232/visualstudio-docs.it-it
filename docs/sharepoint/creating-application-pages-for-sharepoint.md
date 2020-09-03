@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981105"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Creazione di pagine applicazione per SharePoint
@@ -43,8 +43,8 @@ ms.locfileid: "72981105"
 
 |Cartella|Descrizione|
 |------------|-----------------|
-|Layout|Esegue il mapping alla directory virtuale _layouts del file system di SharePoint.|
-|Sottocartella layout|Contiene i file che costituiscono la pagina dell'applicazione. Per impostazione predefinita, questa cartella ha lo stesso nome del progetto. È possibile rinominare questa cartella in qualsiasi momento. Quando si esegue il progetto, Visual Studio distribuisce questa cartella nella directory virtuale _layouts del file system di SharePoint.|
+|Layout|Esegue il mapping alla directory virtuale _layouts della file system di SharePoint.|
+|Sottocartella layout|Contiene i file che costituiscono la pagina dell'applicazione. Per impostazione predefinita, questa cartella ha lo stesso nome del progetto. È possibile rinominare questa cartella in qualsiasi momento. Quando si esegue il progetto, Visual Studio distribuisce questa cartella nella directory virtuale _layouts della file system di SharePoint.|
 
  Visual Studio aggiunge i file seguenti al progetto:
 
@@ -62,16 +62,16 @@ ms.locfileid: "72981105"
 
  È possibile eseguire il debug di una pagina dell'applicazione come se si eseguisse il debug di altri elementi di progetto SharePoint in Visual Studio. Quando si avvia il debugger di Visual Studio, Visual Studio apre il sito di SharePoint.
 
- Per visualizzare la pagina dell'applicazione, è necessario passare manualmente al percorso della pagina dell'applicazione, ad esempio: http://<em>nome_server</em>/_layouts/*Project_Name*/ApplicationPage1.aspx.
+ Per visualizzare la pagina dell'applicazione, è necessario passare manualmente al percorso della pagina dell'applicazione, ad esempio: http://<em>server_name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
 
  Per ulteriori informazioni su come eseguire il debug di progetti SharePoint, vedere [risolvere i problemi di soluzioni SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
 ## <a name="choose-a-master-page"></a>Scegliere una pagina master
  Per impostazione predefinita, un elemento della **pagina dell'applicazione** fa riferimento alla pagina master del sito che si sta usando per eseguire il debug del progetto. Questa pagina è denominata v4. master ed è disponibile nella **raccolta di pagine master** del sito di SharePoint.
 
- È possibile modificare in modo esplicito la pagina master utilizzata dalla pagina dell'applicazione impostando l'attributo `MasterPageFile` dell'elemento `Page` dell'applicazione. Ad esempio: `MasterPageFile="~/_layouts/applicationv4.master"`. In realtà, è necessario impostare questo attributo se le pagine master dinamiche non sono abilitate nel server SharePoint. Per ulteriori informazioni sulle pagine master in SharePoint, vedere la pagina relativa alle [pagine master](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
+ È possibile modificare in modo esplicito la pagina master utilizzata dalla pagina dell'applicazione impostando l' `MasterPageFile` attributo dell' `Page` elemento Application. (Ad esempio: `MasterPageFile="~/_layouts/applicationv4.master"` ). In realtà, è necessario impostare questo attributo se le pagine master dinamiche non sono abilitate nel server SharePoint. Per ulteriori informazioni sulle pagine master in SharePoint, vedere la pagina relativa alle [pagine master](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
 ## <a name="see-also"></a>Vedere anche
 - [Sviluppo di SharePoint Foundation in dettaglio](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Panoramica di ASP.NET](/aspnet/overview)
-- [ASP.NET Web Pages](/aspnet/web-pages/index)
+- [Pagine Web ASP.NET](/aspnet/web-pages/index)

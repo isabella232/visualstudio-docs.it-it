@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY . Documenti Microsoft
+title: CONST_GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737631"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-Struttura che contiene un `GUID`elenco di s.
+Struttura che include un elenco di oggetti `GUID` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ public struct CONST_GUID_ARRAY {
 }
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `dwCount`\
-Numero `GUID`di s `Members` nella matrice.
+Numero di `GUID` s nella `Members` matrice.
 
 `Members`\
-Matrice `GUID`di s.
+Matrice di `GUID` s.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene passata al [metodo PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) e viene restituita dai metodi [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents.](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
+Questa struttura viene passata al metodo [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) e viene restituita dai metodi [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .
 
-Il proprietario di un'istanza di questa struttura è responsabile della liberazione di qualsiasi memoria allocata.
+Il proprietario di un'istanza di questa struttura è responsabile della liberazione della memoria allocata.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

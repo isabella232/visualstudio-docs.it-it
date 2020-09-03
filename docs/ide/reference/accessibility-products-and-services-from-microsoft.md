@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79e9ead07e58a1b359e67289913581a533185a45
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72919093"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Prodotti e servizi Microsoft per l'accessibilità
@@ -35,7 +35,7 @@ Microsoft cerca di sviluppare prodotti e servizi che siano facili da utilizzare 
 > [!IMPORTANT]
 > Le informazioni contenute in questa pagina potrebbero essere applicabili solo agli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, visitare il sito Web [Accessibilità in Microsoft](https://www.microsoft.com/accessibility/) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa pagina sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue.
 
-## <a name="accessibility-features-of-windows"></a><a name="windows"></a>Funzionalità di accessibilità di Windows
+## <a name="accessibility-features-of-windows"></a><a name="windows"></a> Funzionalità di accessibilità di Windows
 
 Il sistema operativo Windows ha molte funzionalità di accessibilità integrate, che sono utili per gli utenti con difficoltà di digitazione o uso del mouse, affetti da cecità o ipovisione o affetti da sordità o problemi di udito. Le funzionalità vengono installate durante l'installazione. Per altre informazioni su queste funzionalità, vedere la Guida in Windows e il sito Web [Accessibilità in Microsoft](https://www.microsoft.com/accessibility/).
 
@@ -51,18 +51,18 @@ Sono disponibili diversi prodotti Assistive Technology per facilitare l'uso dei 
 
 Se si usa la Assistive Technology, assicurarsi di contattare il fornitore prima di aggiornare il software o l'hardware per verificare la presenza di possibili problemi di compatibilità.
 
-## <a name="documentation-in-alternative-formats"></a><a name="altfortmats"></a>Documentazione in formati alternativi
+## <a name="documentation-in-alternative-formats"></a><a name="altfortmats"></a> Documentazione in formati alternativi
 
 In caso di difficoltà di lettura o di uso del materiale stampato, è possibile ottenere la documentazione di diversi prodotti Microsoft in formati più accessibili. Per visualizzare l'indice della documentazione di prodotti in formato accessibile, visitare il sito Web [Accessibilità in Microsoft](https://www.microsoft.com/accessibility/).
 
 Le pubblicazioni Microsoft possono inoltre essere richieste a Learning Ally. Learning Ally distribuisce i documenti ai membri idonei registrati nel servizio di distribuzione. Per informazioni sulla disponibilità di libri e documentazione dei prodotti Microsoft in Microsoft Press, contattare:
 
 > Learning Ally<br />
-> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Sito web di Learning Ally:[http://www.learningally.org](https://learningally.org/)
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Sito Web Learning Ally: [http://www.learningally.org](https://learningally.org/)
 
 Poiché gli indirizzi Web possono cambiare, è possibile che il sito o i siti Web menzionati in questo documento non risultino disponibili.
 
-## <a name="customer-service-for-people-with-hearing-impairments"></a><a name="hearing"></a>Servizio clienti per persone con problemi di udito
+## <a name="customer-service-for-people-with-hearing-impairments"></a><a name="hearing"></a> Servizio clienti per persone con problemi di udito
 
 Gli utenti affetti da sordità o problemi di udito possono effettuare l'accesso ai servizi di supporto tecnico e clienti Microsoft tramite un servizio DTS (TTY/TDD):
 
@@ -72,7 +72,7 @@ Gli utenti affetti da sordità o problemi di udito possono effettuare l'accesso 
 
 Il Servizio supporto tecnico Microsoft è soggetto a prezzi, termini e condizioni in vigore al momento dell'utilizzo del servizio.
 
-## <a name="for-more-information"></a><a name="moreinfo"></a>Per ulteriori informazioni
+## <a name="for-more-information"></a><a name="moreinfo"></a> Per ulteriori informazioni
 
 Per altre informazioni sui vantaggi offerti dai computer con assistive technology agli utenti con disabilità, vedere il sito Web [Accessibilità in Microsoft](https://www.microsoft.com/accessibility/).
 

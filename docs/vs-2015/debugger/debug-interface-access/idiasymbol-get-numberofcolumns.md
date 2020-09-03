@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d389e34e8028961e2769c04a6c4a2561bcd0729
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183189"
 ---
-# <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
+# <a name="idiasymbolget_numberofcolumns"></a>IDiaSymbol::get_numberOfColumns
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera il numero di colonne nella matrice.  
@@ -32,10 +32,10 @@ HRESULT get_numberOfColumns(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Un puntatore a un `DWORD` che contiene il numero di colonne nella matrice.  
+ out Puntatore a un oggetto `DWORD` che include il numero di colonne nella matrice.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

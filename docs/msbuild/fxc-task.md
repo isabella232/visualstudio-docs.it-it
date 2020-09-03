@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 67958a1a1ebb2ff382d0896e2fbaec6105c0c785
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279293"
 ---
 # <a name="fxc-task"></a>Attività FXC
@@ -53,12 +53,12 @@ Nella tabella seguente vengono descritti i parametri dell'attività **FXC**.
 |**SetRootSignature**|Parametro **stringa** facoltativo.<br/><br/>Associa la firma radice al bytecode dello shader. Disponibile per Modello shader 5.0 e versioni successive.<br/><br/>Usare `/setrootsignature`.|
 |**ShaderModel**|Parametro **stringa** facoltativo.<br/><br/>Specifica il modello di shader. Alcuni tipi di shader possono essere usati solo con modelli di shader recenti.<br/><br/>Usare `/T [type]_[model]`.|
 |**ShaderType**|Parametro **stringa** facoltativo.<br/><br/>Specifica il tipo di shader.<br/><br/>Usare `/T [type]_[model]`.<br/><br/>**Effect**, usare `fx`.<br/>**Vertex**, usare `vs`.<br/>**Pixel**, usare `ps`.<br/>**Geometry**, usare `gs`.<br/>**Hull**, usare `hs`.<br/>**Domain**, usare `ds`.<br/>**Compute**, usare `cs`.<br/>**Library**, usare `lib`.<br/>**RootSignature**, genera oggetto firma radice.|
-|**origine**|Parametro **ITaskItem** obbligatorio.|
+|**Origine**|Parametro **ITaskItem** obbligatorio.|
 |**SuppressStartupBanner**|Parametro **bool** facoltativo.<br/><br/>Evita la visualizzazione del messaggio di avvio e dei messaggi informativi.<br/><br/>Usare `/nologo`.|
 |**TrackerLogDirectory**|Parametro **stringa** facoltativo.|
 |**TreatWarningAsError**|Parametro **bool** facoltativo.<br/><br/>Considera tutti gli avvisi del compilatore come errori.<br/><br/>Per un nuovo progetto, potrebbe essere preferibile usare `/WX` in tutte le compilazioni. La risoluzione degli avvisi garantirà il minor numero possibile di errori del codice di difficile individuazione.|
-|**NomeVariabile**|Parametro **stringa** facoltativo.<br/><br/>Specifica un nome per la variabile nel file di intestazione.<br/><br/>Usare `/Vn [name]`.|
+|**VariableName**|Parametro **stringa** facoltativo.<br/><br/>Specifica un nome per la variabile nel file di intestazione.<br/><br/>Usare `/Vn [name]`.|
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+[Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

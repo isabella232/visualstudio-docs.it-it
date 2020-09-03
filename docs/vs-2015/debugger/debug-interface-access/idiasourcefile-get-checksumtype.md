@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f859bce63e2976b23ab613e249dad41b2bc63486
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190708"
 ---
-# <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
+# <a name="idiasourcefileget_checksumtype"></a>IDiaSourceFile::get_checksumType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera il tipo di checksum.  
@@ -35,23 +35,23 @@ HRESULT get_checksumType ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il tipo di checksum.  
+ out Restituisce il tipo di checksum.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Il tipo di checksum è un valore che può essere mappato a un algoritmo di checksum. Ad esempio, il formato di file PDB standard in genere può avere uno dei valori seguenti:  
+## <a name="remarks"></a>Osservazioni  
+ Il tipo di checksum è un valore di cui è possibile eseguire il mapping a un algoritmo di checksum. Ad esempio, il formato di file PDB standard può in genere avere uno dei valori seguenti:  
   
 |Tipo di checksum|Etichetta CryptoAPI|Descrizione|  
 |-------------------|---------------------|-----------------|  
-|0|\<nessuno>|Checksum non presente.|  
+|0|\<none>|Nessun checksum presente.|  
 |1|`CALG_MD5`|checksum generato con l'algoritmo hash MD5.|  
-|2|`CALG_SHA1`|checksum generato con l'algoritmo di hash SHA1.|  
+|2|`CALG_SHA1`|checksum generato con l'algoritmo hash SHA1.|  
   
- Il `CryptoAPI` le etichette sono compresi il `ALG_ID` enumerazione. Per altre informazioni su algoritmi di hash, consultare il `CryptoAPI` sezione di Microsoft [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)].  
+ Le `CryptoAPI` etichette sono dall' `ALG_ID` enumerazione. Per ulteriori informazioni sugli algoritmi di hashing, consultare la `CryptoAPI` sezione di Microsoft [!INCLUDE[winsdkshort](../../includes/winsdkshort-md.md)] .  
   
- Per ottenere i byte di valore di checksum effettivo per il file di origine, chiamare il [Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) (metodo).  
+ Per ottenere i byte di checksum effettivi per il file di origine, chiamare il metodo [IDiaSourceFile:: get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

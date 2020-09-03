@@ -1,5 +1,5 @@
 ---
-title: Getenumtables | Microsoft Docs
+title: 'IDiaSession:: getEnumTables | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f2196da51a92d79a302c4efcd04eccbcf38a7ad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190723"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un enumeratore per tutte le tabelle incluse nell'archivio simboli.  
+Recupera un enumeratore per tutte le tabelle contenute nell'archivio dei simboli.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT getEnumTables ( 
   
 #### <a name="parameters"></a>Parametri  
  `ppEnumTables`  
- [out] Restituisce un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) oggetto. Utilizzare questa interfaccia per enumerare le tabelle nell'archivio simboli.  
+ out Restituisce un oggetto [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Utilizzare questa interfaccia per enumerare le tabelle nell'archivio simboli.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio presenta una funzione generica che utilizza il `getEnumTables` metodo per ottenere un oggetto enumeratore specifico. Se l'enumeratore viene trovato, la funzione restituisce un puntatore che è possibile eseguire il cast all'interfaccia desiderata. in caso contrario, la funzione restituisce `NULL`.  
+ Questo esempio presenta una funzione generale che usa il `getEnumTables` metodo per ottenere un oggetto enumeratore specifico. Se l'enumeratore viene trovato, la funzione restituisce un puntatore di cui è possibile eseguire il cast all'interfaccia desiderata. in caso contrario, la funzione restituisce `NULL` .  
   
 ```cpp#  
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  

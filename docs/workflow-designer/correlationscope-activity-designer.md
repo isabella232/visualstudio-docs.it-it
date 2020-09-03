@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 135acfbbaf9fdcbbf219fd50a504cf9262fe4d24
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876099"
 ---
 # <a name="correlationscope-activity-designer"></a>ActivityDesigner CorrelationScope
@@ -45,7 +45,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.
 |<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|Falso|Consente di specificare l'oggetto <xref:System.ServiceModel.Activities.CorrelationHandle> usato per gestire le attività di messaggistica figlio. Se non si imposta questa proprietà, <xref:System.ServiceModel.Activities.CorrelationScope> crea automaticamente un oggetto <xref:System.ServiceModel.Activities.CorrelationHandle> implicito.|
 |<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|Falso|Consente di specificare le attività all'interno dell'ambito della correlazione.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [Ricevere](../workflow-designer/receive-activity-designer.md)

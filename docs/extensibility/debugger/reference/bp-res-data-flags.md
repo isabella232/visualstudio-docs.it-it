@@ -1,5 +1,5 @@
 ---
-title: BP_RES_DATA_FLAGS . Documenti Microsoft
+title: BP_RES_DATA_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d0b687a54ddc1ed111b664a819dacfed6709196d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737872"
 ---
 # <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
@@ -42,15 +42,15 @@ public enum enum_BP_RES_DATA_FLAGS {
 
 ## <a name="fields"></a>Campi
 `BP_RES_DATA_EMULATED`\
-Specifica che è in corso l'emulazione del punto di interruzione dei dati.
+Specifica che il punto di interruzione dei dati viene emulato.
 
 ## <a name="remarks"></a>Osservazioni
-Utilizzato per `dwFlags` il membro della [struttura BP_RESOLUTION_DATA.](../../../extensibility/debugger/reference/bp-resolution-data.md)
+Utilizzato per il `dwFlags` membro della struttura [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ad06dfb32c301985eb4976f6c89c7be1e0e68da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662337"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opzioni, Editor di testo, C/C++, Formattazione
@@ -28,23 +28,23 @@ ms.locfileid: "72662337"
 
 Consente di modificare il comportamento predefinito dell'editor di codice in fase di programmazione in C o C++.
 
- Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++** , quindi fare clic su **Formattazione**.
+ Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++**, quindi fare clic su **Formattazione**.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="cc-options"></a>Opzioni C/C++
  **Abilitare le descrizioni comandi delle informazioni rapide automatiche** Abilita o Disabilita la funzionalità di IntelliSense per informazioni rapide.
 
 ## <a name="inactive-code"></a>Codice inattivo
- **Mostra blocchi di codice inattivi** Il codice inattivo a causa di dichiarazioni `#ifdef` viene colorato in modo diverso per facilitarne l'identificazione.
+ **Mostra blocchi di codice inattivi** Il codice inattivo a causa di `#ifdef` dichiarazioni è colorato in modo diverso per facilitarne l'identificazione.
 
  **Disabilitare l'opacità del codice inattivo** Il codice inattivo può essere identificato usando il colore anziché la trasparenza.
 
  **Percentuale di opacità del codice inattivo** È possibile personalizzare il grado di opacità per i blocchi di codice inattivi.
 
 ## <a name="indentation"></a>Rientro
- **Rientro parentesi graffe** È possibile configurare la modalità di allineamento delle parentesi graffe quando si preme INVIO dopo aver avviato un blocco di codice, ad esempio una funzione o un ciclo `for`. Le parentesi graffe possono essere allineate al primo carattere del blocco di codice oppure rientrate.
+ **Rientro parentesi graffe** È possibile configurare la modalità di allineamento delle parentesi graffe quando si preme INVIO dopo aver avviato un blocco di codice, ad esempio una funzione o un `for` ciclo. Le parentesi graffe possono essere allineate al primo carattere del blocco di codice oppure rientrate.
 
  **Rientro automatico nella scheda** È possibile configurare cosa accade nella riga di codice corrente quando si preme TAB. La riga viene rientrata oppure viene inserito un carattere di tabulazione.
 

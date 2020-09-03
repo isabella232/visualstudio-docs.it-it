@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL . Documenti Microsoft
+title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 29ac287462149a20f52a1affdeab7fa6b8333711
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737643"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
-Indica il protocollo utilizzato per comunicare tra un server di debug e il pacchetto di debug (DE).
+Indica il protocollo utilizzato per la comunicazione tra un server di debug e il pacchetto di debug (DE).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,33 +53,33 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>Campi
 `CONNECTION_NONE`\
-Non è stata stabilita alcuna connessione a un server.
+Non è stata effettuata alcuna connessione a un server.
 
 `CONNECTION_UNKNOWN`\
-È stata stabilita una connessione, ma è di tipo sconosciuto.
+È stata effettuata una connessione, ma è di tipo sconosciuto.
 
 `CONNECTION_LOCAL`\
-La connessione è a un server locale.
+Connessione a un server locale.
 
 `CONNECTION_PIPE`\
-La connessione è tramite una named pipe.
+La connessione viene stnamed pipe.
 
 `CONNECTION_TCPIP`\
 La connessione utilizza TCP/IP.
 
 `CONNECTION_HTTP`\
-La connessione utilizza HTTP (tramite un server Web).
+La connessione Usa HTTP (tramite un server Web).
 
 `CONNECTION_OTHER`\
-È stato stabilito un altro tipo di connessione (questo valore non è attualmente utilizzato).
+È stato stabilito un altro tipo di connessione (questo valore non è attualmente in uso).
 
 ## <a name="remarks"></a>Osservazioni
-Questi valori vengono restituiti dal [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metodo.
+Questi valori vengono restituiti dal metodo [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

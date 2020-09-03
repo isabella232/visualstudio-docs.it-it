@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b56170ce1551f4443d511d4b6fde6c5d177d9c21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182523"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
@@ -32,26 +32,26 @@ IDiaEnumDebugStreams : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi di `IDiaEnumDebugStreams`.  
+ La tabella seguente illustra i metodi di `IDiaEnumDebugStreams` .  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Recupera il `IEnumVARIANT` versione l'enumeratore.|  
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Recupera la `IEnumVARIANT` versione dell'enumeratore.|  
 |[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|Recupera il numero di flussi di debug.|  
-|[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Recupera un flusso di debug tramite un indice.|  
-|[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|Recupera un determinato numero di flussi di debug nella sequenza di enumerazione.|  
-|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|Ignora un determinato numero di flussi di debug in una sequenza di enumerazione.|  
-|[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
+|[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Recupera un flusso di debug per mezzo di un indice.|  
+|[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|Recupera un numero specificato di flussi di debug nella sequenza di enumerazione.|  
+|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|Ignora un numero specificato di flussi di debug in una sequenza di enumerazione.|  
+|[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Riporta all'inizio la sequenza di enumerazione.|  
 |[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|  
   
-## <a name="remarks"></a>Note  
- Il contenuto di debug flussi dipende dall'implementazione e i formati di dati non sono documentati.  
+## <a name="remarks"></a>Osservazioni  
+ Il contenuto dei flussi di debug è dipendente dall'implementazione e i formati di dati non sono documentati.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Chiamare il [Getenumdebugstreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) metodo per ottenere un `IDiaEnumDebugStreams` oggetto.  
+ Chiamare il metodo [IDiaSession:: getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) per ottenere un `IDiaEnumDebugStreams` oggetto.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come accedere i flussi di dati disponibili da questa interfaccia. Vedere le [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) per un'implementazione dell'interfaccia di `PrintStreamData` (funzione).  
+ Questo esempio illustra come accedere ai flussi di dati disponibili da questa interfaccia. Vedere l'interfaccia [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) per un'implementazione della `PrintStreamData` funzione.  
   
 ```cpp#  
 void DumpAllDebugStreams( IDiaSession* pSession)  
@@ -81,11 +81,11 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 ```  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: DIA2.h  
+ Intestazione: dia2. h  
   
- Libreria: diaguids.lib  
+ Libreria: diaguids. lib  
   
- DLL: MSDIA80  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

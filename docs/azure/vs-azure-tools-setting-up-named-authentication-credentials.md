@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911676"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurare le credenziali di autenticazione denominate
@@ -38,6 +38,6 @@ Se si vuole creare un certificato, vedere le istruzioni contenute in [Creare e c
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Panoramica di App Web](/azure/app-service/)
-- [Distribuire l'app nel Servizio app di Azure](/azure/app-service/app-service-deploy-local-git)
+- [Distribuire l'app nel servizio app Azure](/azure/app-service/app-service-deploy-local-git)
 - [Distribuzione di processi Web usando Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Creare e distribuire un servizio cloud](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

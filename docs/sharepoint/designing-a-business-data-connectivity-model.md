@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984458"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Progettare un modello di integrazione applicativa dei dati
   È possibile sviluppare un modello per il servizio di integrazione applicativa dei dati mediante l'aggiunta di entità e metodi a un file di modello. Un'entità descrive una raccolta di campi di dati. Un'entità, ad esempio, può rappresentare una tabella in un database. Un metodo esegue un'attività, ad esempio l'aggiunta, l'eliminazione o l'aggiornamento dei dati rappresentati dalle entità. Per altre informazioni, vedere [integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
 
-## <a name="add-entities"></a>Aggiungere entità
+## <a name="add-entities"></a>Aggiungi entità
  È possibile aggiungere un'entità trascinando o copiando un' **entità** dalla **casella degli strumenti** di Visual Studio nella finestra di progettazione dell'integrazione applicativa dei dati. Per altre informazioni, vedere [procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
- Definire i campi dell'entità in una classe. Ad esempio, è possibile aggiungere un campo denominato `Address` a una classe `Customer`. È possibile aggiungere una nuova classe al progetto o usare una classe esistente creata usando altri strumenti, ad esempio la Object Relational Designer (O/R Designer). Il nome dell'entità e il nome della classe che rappresenta l'entità non devono corrispondere. La classe viene correlata all'entità quando si definiscono i metodi nel modello.
+ Definire i campi dell'entità in una classe. Ad esempio, è possibile aggiungere un campo denominato `Address` a una `Customer` classe. È possibile aggiungere una nuova classe al progetto o usare una classe esistente creata usando altri strumenti, ad esempio la Object Relational Designer (O/R Designer). Il nome dell'entità e il nome della classe che rappresenta l'entità non devono corrispondere. La classe viene correlata all'entità quando si definiscono i metodi nel modello.
 
 ## <a name="add-methods"></a>Aggiungi metodi
  Il servizio BDC chiama i metodi nel modello quando gli utenti visualizzano, aggiungono, aggiornano o eliminano informazioni in un elenco o in una Web part basata sul modello. È necessario aggiungere un metodo al modello per ogni attività che l'utente può eseguire. Creare metodi selezionando uno dei cinque tipi di metodo di base dalla finestra **Dettagli metodo di integrazione applicativa dei dati** . Nella tabella seguente vengono descritti i cinque metodi di base di un modello di integrazione applicativa dei dati.
@@ -35,14 +35,14 @@ ms.locfileid: "72984458"
 |------------|-----------------|
 |Finder|Restituisce una raccolta di istanze di entità. Chiamato quando l'utente apre l'elenco o la Web part. Per altre informazioni, vedere [procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md).|
 |Finder specifico|Restituisce un'istanza di entità specifica. Chiamato quando un utente Visualizza i dettagli di un elemento specifico in un elenco. Per altre informazioni, vedere [procedura: aggiungere un metodo di ricerca specifico](../sharepoint/how-to-add-a-specific-finder-method.md).|
-|Creator|Aggiunge nuovi dati all'origine dati di un'entità. Chiamato quando gli utenti scelgono il pulsante **nuovo elemento** sulla barra multifunzione di un elenco basato sul modello. Per altre informazioni, vedere [procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md).|
+|Autore|Aggiunge nuovi dati all'origine dati di un'entità. Chiamato quando gli utenti scelgono il pulsante **nuovo elemento** sulla barra multifunzione di un elenco basato sul modello. Per altre informazioni, vedere [procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md).|
 |Updater|Modifica i dati in un elenco. Chiamato quando gli utenti aggiornano le informazioni in un elenco. Per altre informazioni, vedere [procedura: aggiungere un metodo di aggiornamento](../sharepoint/how-to-add-an-updater-method.md).|
 |Deleter|Rimuove i dati. Chiamato quando gli utenti eliminano un elemento dall'elenco. Per altre informazioni, vedere [procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md).|
 
 ## <a name="define-method-parameters"></a>Definire i parametri del metodo
  Quando si crea un metodo, Visual Studio aggiunge i parametri di input e output appropriati per il tipo di metodo. Questi parametri sono solo segnaposto. Nella maggior parte dei casi, è necessario modificare i parametri in modo che possano passare o restituire il tipo di dati corretto. Per impostazione predefinita, ad esempio, un metodo di ricerca restituisce una stringa. Nella maggior parte dei casi, si vuole modificare il parametro return del metodo Finder in modo che restituisca una raccolta di entità. A tale scopo, è possibile modificare il descrittore di tipo del parametro. Un descrittore di tipo è una raccolta di attributi che descrive il tipo di dati di un parametro. Per altre informazioni, vedere [procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
- Visual Studio consente di copiare i descrittori di tipo tra i parametri nel modello. È possibile, ad esempio, definire un descrittore di tipo denominato `CustomerTD` per il parametro return del metodo `GetCustomer`. È possibile copiare il descrittore di tipo `CustomerTD` in **Esplora integrazione applicativa**dei dati e quindi incollare il descrittore di tipo nel parametro di input del metodo `CreateCustomer`. In questo modo si evita di dover definire più volte lo stesso descrittore di tipo.
+ Visual Studio consente di copiare i descrittori di tipo tra i parametri nel modello. Ad esempio, è possibile definire un descrittore `CustomerTD` di tipo denominato per il parametro return del `GetCustomer` metodo. È possibile copiare il `CustomerTD` descrittore di tipo in **Esplora integrazione applicativa**dei dati e quindi incollare il descrittore di tipo nel parametro di input del `CreateCustomer` metodo. In questo modo si evita di dover definire più volte lo stesso descrittore di tipo.
 
 ## <a name="method-instances"></a>Istanze di metodo
  Quando si crea un metodo, Visual Studio aggiunge un'istanza del metodo predefinito. Un'istanza del metodo è un riferimento a un metodo, oltre ai valori predefiniti per i parametri. Un singolo metodo può avere più istanze di metodo. Ogni istanza è una combinazione della firma del metodo e di un set di valori predefiniti. Per altre informazioni, vedere [procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
@@ -71,7 +71,7 @@ ms.locfileid: "72984458"
 ## <a name="validate-the-model"></a>Convalidare il modello
  È possibile convalidare il modello durante lo sviluppo. Visual Studio identifica i problemi che possono impedire il comportamento del modello come previsto. Questi problemi vengono visualizzati nel **Elenco errori**di Visual Studio.
 
- È possibile convalidare un modello aprendo il menu di scelta rapida per la finestra di progettazione BDC e scegliendo **convalida**. Se il modello contiene errori, questi vengono visualizzati nel **Elenco errori**. È possibile spostare rapidamente il cursore sul codice contenente un errore facendo doppio clic sull'errore nell'elenco. In alternativa, è possibile scegliere i tasti **F8** o **MAIUSC**+**F8** ripetutamente per scorrere in avanti o indietro gli errori nell'elenco.
+ È possibile convalidare un modello aprendo il menu di scelta rapida per la finestra di progettazione BDC e scegliendo **convalida**. Se il modello contiene errori, questi vengono visualizzati nel **Elenco errori**. È possibile spostare rapidamente il cursore sul codice contenente un errore facendo doppio clic sull'errore nell'elenco. In alternativa, è possibile scegliere i tasti **F8** o **MAIUSC** + **F8** ripetutamente per spostarsi avanti o indietro negli errori dell'elenco.
 
  Gli errori di convalida possono verificarsi quando le regole del modello vengono violate in qualche modo. Se, ad esempio, la proprietà **myCollection** di un descrittore di tipo è impostata su **true**, ma non esistono descrittori di tipo figlio, verrà visualizzato un errore di convalida. Potrebbe essere necessario fare riferimento alle regole di un modello di integrazione applicativa dei dati per comprendere alcuni errori visualizzati nel **Elenco errori**di Visual Studio. Per ulteriori informazioni sulle regole di un modello di integrazione applicativa dei dati, vedere [Schema BDCMetadata](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
@@ -87,9 +87,9 @@ ms.locfileid: "72984458"
 
 |Attività|Opzione|
 |----------|------------|
-|Per distribuire modelli al servizio integrazione applicativa dei dati.|Edit|
+|Per distribuire modelli al servizio integrazione applicativa dei dati.|Modifica|
 |Per creare elenchi e Web part utilizzando i tipi di contenuto esterni (entità) nel modello.|Selezionabile nei client|
-|Per creare, leggere, aggiornare ed eliminare dati di entità.|Esegui|
+|Per creare, leggere, aggiornare ed eliminare dati di entità.|Execute|
 
  Per ulteriori informazioni su queste impostazioni, vedere [Business Data Connectivity Service Management](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14)).
 

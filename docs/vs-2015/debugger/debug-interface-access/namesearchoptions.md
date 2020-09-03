@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6d721ebc5849fc459d24173ad0500b4b1c12260f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182972"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Specifica le opzioni di ricerca per i nomi dei simboli e file.  
+Specifica le opzioni di ricerca per i nomi di simboli e file.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -50,21 +50,21 @@ enum NameSearchOptions { 
  Non è stata specificata alcuna opzione.  
   
  `nsfCaseSensitive`  
- Si applica una corrispondenza tra maiuscole e minuscole del nome.  
+ Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole.  
   
  `nsfCaseInsensitive`  
- Si applica una corrispondenza tra maiuscole e minuscole del nome.  
+ Applica una corrispondenza con il nome senza distinzione tra maiuscole e minuscole.  
   
  `nsfFNameExt`  
- I nomi vengono considerati percorsi e si applica una corrispondenza di nome nomefile. ext.  
+ Considera i nomi come percorsi e applica un nome nomefile. EXT corrispondente.  
   
  `nsfRegularExpression`  
- Si applica una corrispondenza tra nomi distinzione maiuscole/minuscole con un asterisco (*) e punti interrogativi (?) come caratteri jolly.  
+ Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole utilizzando asterischi (*) e punti interrogativi (?) come caratteri jolly.  
   
  `nsfUndecoratedName`  
- Si applica solo ai simboli che hanno entrambe non decorati e i nomi decorati.  
+ Si applica solo ai simboli con nomi non decorati e decorati.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  I valori di questa enumerazione vengono passati ai metodi seguenti:  
   
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
@@ -74,10 +74,10 @@ enum NameSearchOptions { 
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: dia2.h  
+ Intestazione: dia2. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession:: findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession:: findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

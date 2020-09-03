@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279257"
 ---
 # <a name="parallelcustombuild-task"></a>Attività ParallelCustomBuild
@@ -36,9 +36,9 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ParallelCu
 |---------------|-----------------|
 |**BreakOnFirstFailure**|Parametro **bool** facoltativo.|
 |**MaxItemsInBatch**|Parametro **int** facoltativo.|
-|**Maxprocesses**|Parametro **int** facoltativo.|
+|**MaxProcesses**|Parametro **int** facoltativo.|
 |**recenti**|Parametro **ITaskItem[]** obbligatorio.|
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+[Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
