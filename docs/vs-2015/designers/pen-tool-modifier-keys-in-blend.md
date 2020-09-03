@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5f69969ac60e7476e2d9430266acca41c0745f3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664184"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Tasti di modifica strumento Penna in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile usare per modificare un tracciato durante la creazione con ![ ](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a")lo strumento penna. È possibile usare lo strumento **Penna** anche per aggiungere o rimuovere punti su un tracciato esistente oppure per congiungere due tracciati.
+La tabella seguente elenca i tasti di scelta rapida che è possibile per modificare un tracciato mentre viene creato con lo strumento **Penna**![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). È possibile usare lo strumento **Penna** anche per aggiungere o rimuovere punti su un tracciato esistente oppure per congiungere due tracciati.
 
-|Per|Seguire questa procedura|Puntatore|
+|Per|Procedere nel modo seguente|Puntatore|
 |-----------------------|-------------|-------------|
 |Creare un punto iniziale di un segmento di linea retta|Fai clic per creare il nuovo punto|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Puntatore penna|
 |Creare un punto iniziale di un segmento di linea curva|Fai clic per creare il nuovo punto e quindi trascina per regolare i punti di controllo della tangente prima di rilasciare il pulsante del mouse|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Puntatore penna|

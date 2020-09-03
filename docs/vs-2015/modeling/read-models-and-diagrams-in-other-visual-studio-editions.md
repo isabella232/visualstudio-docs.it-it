@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6a7c944eb3d5378ad0fc1542b90ad182f7eb976
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671285"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
@@ -26,7 +26,7 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
  Per informazioni sulle versioni di Visual Studio che supportano la creazione del modello, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Accesso a un modello e ai diagrammi
- Per leggere un diagramma UML o un diagramma livello, è necessario innanzitutto utilizzare Visual Studio per aprire il progetto di modello e quindi aprire il diagramma al suo interno.
+ Per leggere un diagramma UML o un diagramma livello, è necessario usare prima Visual Studio per aprire il progetto di modellazione e quindi aprire il diagramma all'intero del progetto.
 
  Per questo motivo, se si vuole leggere un diagramma UML o un diagramma livello, è necessario avere accesso anche al progetto di modellazione nel quale è stato creato. Per eseguire questa operazione, è possibile accedere al progetto da [!INCLUDE[esprscc](../includes/esprscc-md.md)] oppure ottenere una copia dei file di progetto.
 
@@ -38,7 +38,7 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
 - I due file di diagramma per il diagramma che si desidera leggere, ad esempio, **Diagram. classdiagram e Diagram. classdiagram. layout**.
 
     > [!NOTE]
-    > Per i diagrammi livello, è necessario disporre anche del file denominato _Diagram_ **. layerdiagram.** requests.
+    > Per i diagrammi livello, è necessario disporre anche del file denominato _Diagram_**. layerdiagram.** requests.
 
 - File di progetto di modello (**modelproj**)
 
@@ -55,7 +55,7 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
 
   Queste modifiche possono essere salvate. Se si desidera rendere le modifiche visibili ad altri utenti, è necessario inviare almeno i file con **estensione layout** aggiornati.
 
-## <a name="RelatedTopics"></a> Argomenti correlati
+## <a name="related-topics"></a><a name="RelatedTopics"></a> Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|

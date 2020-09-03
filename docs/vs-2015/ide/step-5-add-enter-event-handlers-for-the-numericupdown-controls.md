@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 566bcf10d681b9ea81ee78601bf8536e9e6d9985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671754"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Passaggio 5: aggiungere gestori di eventi Enter per i controlli NumericUpDown
@@ -28,7 +28,7 @@ Nella quinta parte di questa esercitazione si aggiungeranno i gestori eventi Ent
 
 1. Eseguire il programma e avviare il quiz.
 
-     Nel controllo NumericUpDown per il problema relativo all'addizione, il cursore lampeggia accanto al valore **0** (zero).
+     Nel controllo NumericUpDown per il problema di addizione il cursore lampeggia accanto al valore **0** (zero).
 
 2. Se si immette `3`, è possibile notare che il controllo indica **30**.
 
@@ -40,17 +40,17 @@ Nella quinta parte di questa esercitazione si aggiungeranno i gestori eventi Ent
 
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Per aggiungere un gestore eventi Enter per un controllo NumericUpDown
 
-1. Scegliere il primo controllo NumericUpDown (denominato "somma") nel form, quindi scegliere l'icona **Eventi** sulla barra degli strumenti nella finestra di dialogo **Proprietà**.
+1. Scegliere il primo controllo NumericUpDown (denominato "sum") nel modulo e quindi nella finestra di dialogo **Proprietà** scegliere l'icona **Eventi** sulla barra degli strumenti.
 
      La scheda **Eventi** nella finestra di dialogo **Proprietà** visualizza tutti gli eventi a cui è possibile rispondere (che è possibile gestire) per l'elemento scelto nel form. Poiché è stato scelto il controllo NumericUpDown, tutti gli eventi elencati sono relativi a esso.
 
-2. Scegliere l'evento **Enter**, immettere `answer_Enter`, quindi premere INVIO.
+2. Scegliere l'evento **Enter**, immettere `answer_Enter` e quindi premere INVIO.
 
      Finestra di ![dialogo Proprietà](../ide/media/express-answerenter.png "Express_AnswerEnter") Finestra di dialogo Proprietà
 
      Si è appena aggiunto un gestore eventi Enter per il controllo NumericUpDown della somma e il gestore è stato denominato **answer_Enter**.
 
-3. Nel metodo per il gestore eventi **answer_Enter** aggiungere il codice seguente.
+3. Nel metodo per il gestore dell'evento **answer_Enter** aggiungere il codice seguente.
 
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]
@@ -71,6 +71,6 @@ Nella quinta parte di questa esercitazione si aggiungeranno i gestori eventi Ent
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 6: aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 6: aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 4: aggiungere il metodo CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 4: aggiungere il metodo metodo CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).

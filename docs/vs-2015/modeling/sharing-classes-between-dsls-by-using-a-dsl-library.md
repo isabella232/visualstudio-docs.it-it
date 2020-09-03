@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 093cc277fa1cbe1915099fd9663fc1ccb797ca3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671174"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Condivisione di classi tra DSL utilizzando una libreria DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nell'SDK di visualizzazione e modellazione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è possibile creare una definizione DSL incompleta che è possibile importare in un altro linguaggio DSL. In questo modo è possibile fattorizzare parti comuni di modelli simili.
+Nell' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK di visualizzazione e modellazione è possibile creare una definizione DSL incompleta che è possibile importare in un altro linguaggio DSL. In questo modo è possibile fattorizzare parti comuni di modelli simili.
 
 ## <a name="creating-and-using-dsl-libraries"></a>Creazione e utilizzo di librerie DSL
 
@@ -35,7 +35,7 @@ Nell'SDK di visualizzazione e modellazione [!INCLUDE[vsprvs](../includes/vsprvs-
 
      Per definire una relazione che può essere utilizzata dagli utilità di importazione, creare due classi di dominio e creare la relazione tra di esse.
 
-     Si consiglia di impostare il **modificatore di ereditarietà** delle classi di dominio su `Abstract`.
+     Si consiglia di impostare il **modificatore di ereditarietà** delle classi di dominio su `Abstract` .
 
 3. È possibile aggiungere elementi definiti in DSL Explorer, ad esempio i generatori di connessioni.
 
@@ -45,7 +45,7 @@ Nell'SDK di visualizzazione e modellazione [!INCLUDE[vsprvs](../includes/vsprvs-
 
 6. Compilare il progetto.
 
-7. Quando si distribuisce il linguaggio DSL per l'uso da parte di altri utenti, è necessario specificare sia l'assembly compilato (DLL) che il file `DslDefinition.dsl`. È possibile trovare l'assembly compilato in una cartella `Dsl\bin\*`
+7. Quando si distribuisce il linguaggio DSL per l'uso da parte di altri utenti, è necessario specificare sia l'assembly compilato (DLL) che il file `DslDefinition.dsl` . È possibile trovare l'assembly compilato in una cartella in `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Per importare una libreria DSL
 
@@ -57,7 +57,7 @@ Nell'SDK di visualizzazione e modellazione [!INCLUDE[vsprvs](../includes/vsprvs-
 
 3. È possibile utilizzare le classi importate come classi di base. Creare una classe di dominio nel DSL di importazione e, nel Finestra Proprietà, impostare la **classe di base** su una classe importata.
 
-4. Fare clic su trasforma tutti i modelli.
+4. Fare clic su Trasforma tutti i modelli.
 
 5. Aggiungere al progetto DSL un riferimento all'assembly (DLL) compilato dal progetto libreria DSL.
 

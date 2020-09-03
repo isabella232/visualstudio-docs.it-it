@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d591595c65f00e0198ded9492ae0b8399e363e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670105"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio data tools per .NET
@@ -21,11 +21,11 @@ ms.locfileid: "72670105"
 
 Visual Studio e i .NET Framework insieme offrono un ampio supporto di API e strumenti per la connessione ai database, la modellazione dei dati in memoria e la visualizzazione dei dati nell'interfaccia utente.  Le classi .NET Framework che forniscono funzionalità di accesso ai dati sono note come [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, insieme agli strumenti dati in Visual Studio, è stato originariamente progettato principalmente per supportare i database relazionali e XML. In questi giorni, molti fornitori di database NoSQL o terze parti offrono provider ADO.NET.
 
- Visual Studio 2015 Update 2 include gli aggiornamenti più recenti di [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), che abilitano il supporto per le funzionalità più recenti nel [database SQL](https://azure.microsoft.com/services/sql-database/) di Azure e [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) supporta ADO.NET, eccetto i set di elementi e i tipi correlati. Se si fa riferimento a .NET Core e si richiede un livello ORM (Object-Relational Mapping), usare [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).
+ Visual Studio 2015 Update 2 include gli aggiornamenti più recenti di            [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), che abilitano il supporto per le funzionalità più recenti nel [database SQL](https://azure.microsoft.com/services/sql-database/) di Azure e [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) supporta ADO.NET, eccetto i set di elementi e i tipi correlati. Se si fa riferimento a .NET Core e si richiede un livello ORM (Object-Relational Mapping), usare [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).
 
  Il diagramma seguente mostra una vista semplificata dell'architettura di base:
 
- ![Architettura di ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png "Diagramma dell'architettura di raddata ADO.NET")
+ ![Architettura ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png "Diagramma dell'architettura di raddata ADO.NET")
 
  Il flusso di lavoro tipico è il seguente:
 
@@ -41,7 +41,7 @@ Visual Studio e i .NET Framework insieme offrono un ampio supporto di API e stru
 
    È possibile ignorare il passaggio 3 e programmare un'applicazione .NET per inviare comandi direttamente a un database, anziché usare un modello. In questo caso, è possibile trovare la relativa documentazione: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Si noti che è comunque possibile usare la configurazione guidata origine dati e le finestre di progettazione per generare codice di data binding quando si popolano oggetti personalizzati in memoria e quindi si associano i controlli dell'interfaccia utente a tali oggetti.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Creare un'applicazione dati semplice tramite ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)
 
@@ -53,7 +53,7 @@ Visual Studio e i .NET Framework insieme offrono un ampio supporto di API e stru
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 
-- [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 

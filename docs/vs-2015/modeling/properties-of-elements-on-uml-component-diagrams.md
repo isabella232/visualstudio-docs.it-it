@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 39350a9e1d340651f8e15de109ecf61eb98996bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671453"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>Proprietà degli elementi nei diagrammi dei componenti UML
@@ -31,20 +31,20 @@ In un diagramma dei componenti UML ogni elemento nel diagramma include propriet�
 
 ## <a name="properties-of-elements"></a>Proprietà degli elementi
 
-|proprietà|Impostazione predefinita|Elemento|Descrizione|
+|Proprietà|Predefinito|Elemento|Descrizione|
 |--------------|-------------|-------------|-----------------|
-|**Nome**|Nome predefinito|All|Identifica l'elemento.|
-|**Nome completo**|Spazio dei nomi :: Nome|All|Identifica l'elemento in modo univoco.<br /><br /> Il nome di un componente o di un tipo è preceduto dal nome qualificato del pacchetto che lo contiene.<br /><br /> Il nome di una parte o di una porta è preceduto dal nome qualificato del componente che lo possiede.|
-|**Elementi di lavoro**|0 elementi associati|All|Numero di elementi di lavoro associati a questo elemento. Per associare elementi di lavoro, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).|
-|**Descrizione**|(nessuno)|All|Qui è possibile inserire note generali sull'elemento.|
+|**Name**|Nome predefinito|Tutti|Identifica l'elemento.|
+|**Nome completo**|Spazio dei nomi :: Nome|Tutti|Identifica l'elemento in modo univoco.<br /><br /> Il nome di un componente o di un tipo è preceduto dal nome qualificato del pacchetto che lo contiene.<br /><br /> Il nome di una parte o di una porta è preceduto dal nome qualificato del componente che lo possiede.|
+|**Elementi di lavoro**|0 elementi associati|Tutti|Numero di elementi di lavoro associati a questo elemento. Per associare elementi di lavoro, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).|
+|**Descrizione**|(nessuna)|Tutti|Qui è possibile inserire note generali sull'elemento.|
 |**Colore**|(impostazione predefinita per il tipo)|Componente, parte, delega, assembly parti|Colore della forma. A differenza delle altre proprietà, si tratta del colore della forma anziché dell'elemento di modello visualizzato dalla forma.|
-|**Viene creata indirettamente**|True|Componente|Il componente esiste solo come elemento di progettazione. In fase di esecuzione esistono solo le relative parti.|
-|**È astratto**|False|Componente|La definizione del componente può essere usata solo come generalizzazione da cui possono essere specializzati altri componenti.|
-|**Visibilità**|Public|Componente, parte, porta|**Public** -visibile globalmente.<br /><br /> **Pacchetto** : visibile all'interno del pacchetto.<br /><br /> **Privato** : visibile all'interno del componente proprietario.<br /><br /> **Protected** : visibile ai componenti derivati dal proprietario.|
-|**Type**|Tipo alla creazione|Parte<br /><br /> Porta|Il tipo di una parte è un componente o una classe.<br /><br /> Il tipo di una porta è un'interfaccia.|
-|**Molteplicità**|1|Parte<br /><br /> Porta|Indica il numero di istanze del tipo specificato che fanno parte del componente padre.<br /><br /> `1`: esattamente una.<br /><br /> `0..1`: una o nessuna.<br /><br /> `*`: una raccolta di un numero qualsiasi di istanze.<br /><br /> `n..m`: una raccolta di n-m istanze.|
-|**Comportamento**|False|Porta|Se true, i messaggi a questa porta vengono gestiti da attività o operazioni descritte come parte del componente, invece che delle parti.|
-|**Servizio is**|False|Porta|Se true, la porta fa parte dell'interfaccia pubblicata di questo componente.|
+|**Is Indirectly Instantiated**|Vero|Componente|Il componente esiste solo come elemento di progettazione. In fase di esecuzione esistono solo le relative parti.|
+|**Astratto**|Falso|Componente|La definizione del componente può essere usata solo come generalizzazione da cui possono essere specializzati altri componenti.|
+|**Visibilità**|Pubblico|Componente, parte, porta|**Public** -visibile globalmente.<br /><br /> **Pacchetto** : visibile all'interno del pacchetto.<br /><br /> **Privato** : visibile all'interno del componente proprietario.<br /><br /> **Protected** : visibile ai componenti derivati dal proprietario.|
+|**Tipo**|Tipo alla creazione|Parte<br /><br /> Porta|Il tipo di una parte è un componente o una classe.<br /><br /> Il tipo di una porta è un'interfaccia.|
+|**Molteplicità**|1|Parte<br /><br /> Porta|Indica il numero di istanze del tipo specificato che fanno parte del componente padre.<br /><br /> `1` -esattamente uno.<br /><br /> `0..1` -uno o nessuno.<br /><br /> `*` : una raccolta di qualsiasi numero.<br /><br /> `n..m` : raccolta di istanze da n a m.|
+|**Is Behavior**|Falso|Porta|Se true, i messaggi a questa porta vengono gestiti da attività o operazioni descritte come parte del componente, invece che delle parti.|
+|**Is Service**|Falso|Porta|Se true, la porta fa parte dell'interfaccia pubblicata di questo componente.|
 |**LinkedPackage**|Modello|Diagramma|Spazio dei nomi predefinito per gli elementi aggiunti a questo diagramma.|
 
 ## <a name="see-also"></a>Vedere anche

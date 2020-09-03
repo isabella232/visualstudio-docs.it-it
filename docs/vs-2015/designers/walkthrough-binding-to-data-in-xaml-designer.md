@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 38434d89544ed290f9adfd077593d7de9bdc1231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664007"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Procedura dettagliata: data binding nella finestra di progettazione XAML
@@ -25,7 +25,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Per creare una classe da utilizzare come origine dati
 
-1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
 2. Nella finestra di dialogo **Nuovo progetto** scegliere il nodo **Visual C#** o **Visual Basic**, espandere il nodo **Desktop di Windows** e scegliere il modello **Applicazione WPF**.
 
@@ -84,7 +84,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
      ![Finestra di dialogo Seleziona oggetto](../designers/media/blendselectobject.PNG "BlendSelectObject")
 
-5. Nella **casella degli strumenti`TextBlock` scegliere un controllo**  e aggiungerlo al modulo.
+5. Nella **casella degli strumenti`TextBlock` scegliere un controllo ** e aggiungerlo al modulo.
 
 6. Dopo aver selezionato il controllo `TextBlock`, scegliere il marcatore della proprietà a destra della proprietà **Text** e scegliere **Crea associazione dati**. Tale marcatore ha l'aspetto di una piccola casella.
 
@@ -92,7 +92,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
      La figura seguente illustra la finestra di dialogo **Crea associazione dati** con la proprietà **ItemCount** selezionata.
 
-     ![Finestra di dialogo Crea Data Binding](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")
+     ![Finestra di dialogo Crea associazione dati](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")
 
 8. Premere F5 per eseguire l'app.
 

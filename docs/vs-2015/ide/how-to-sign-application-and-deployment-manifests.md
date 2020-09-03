@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7924201f4cf58e1066434707a8453b0fe1913bc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670728"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: firmare manifesti dell'applicazione e di distribuzione
@@ -30,11 +30,11 @@ ms.locfileid: "72670728"
 
 Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i manifesti dell'applicazione e di distribuzione devono essere firmati con una coppia di chiavi pubblica/privata e tramite la tecnologia Authenticode. È possibile firmare i manifesti con un certificato dall'archivio certificati di Windows o un file di chiave.
 
- Per altre informazioni sulla distribuzione ClickOnce, vedere [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md) (Sicurezza e distribuzione ClickOnce).
+ Per ulteriori informazioni sulla distribuzione ClickOnce, vedere [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
 
  La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su file con estensione EXE. Per altre informazioni, vedere la sezione "Creazione di manifesti non firmati" di questo documento.
 
- Per altre informazioni sulla creazione di file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
+ Per informazioni sulla creazione di file di chiave, vedere [procedura: creare una coppia di chiavi pubblica/privata](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta solo file di chiave Scambio informazioni personali con estensione PFX. È possibile tuttavia selezionare altri tipi di certificati dall'archivio certificati di Windows dell'utente corrente, facendo clic su **Seleziona da archivio** nella pagina **Firma** delle proprietà del progetto.
@@ -48,7 +48,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
      Viene visualizzata la finestra di dialogo **Seleziona un certificato** con il contenuto dell'archivio certificati di Windows.
 
     > [!TIP]
-    > Se si fa clic su **Fare clic qui per le proprietà del certificato**, viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. È possibile fare clic su **Certificati** per visualizzare altre informazioni della Guida.
+    > Se si fa clic su **Fare clic qui per le proprietà del certificato**, viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. È possibile fare clic su **certificati** per visualizzare altre informazioni della guida.
 
 3. Selezionare il certificato che si vuole usare per firmare i manifesti.
 
@@ -62,7 +62,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 
      Verrà visualizzata la finestra di dialogo **Seleziona file**.
 
-3. Nella finestra di dialogo **Seleziona file** individuare la posizione del file di chiave (PFX) che si vuole usare e scegliere **Apri**.
+3. Nella finestra di **dialogo Seleziona file** passare al percorso del file di chiave (PFX) che si desidera utilizzare, quindi fare clic su **Apri**.
 
     > [!NOTE]
     > Questa opzione supporta solo file con estensione PFX. Se il file di chiave o il certificato sono in un altro formato, archiviarlo nell'archivio certificati di Windows e selezionare il certificato come illustrato nella procedura precedente. Nei requisiti del certificato selezionato deve essere inclusa la firma del codice.
@@ -93,7 +93,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 
 2. Nella pagina **Firma** deselezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
-3. Reimpostare la versione di pubblicazione in modo che solo una versione dell'applicazione sia disponibile. Per impostazione predefinita, Visual Studio incrementa automaticamente il numero di revisione della versione di pubblicazione ogni volta che si pubblica un'applicazione. Per altre informazioni vedere [How to: Set the ClickOnce Publish Version](../deployment/how-to-set-the-clickonce-publish-version.md) (Procedura: Reimpostare la versione di pubblicazione ClickOnce).
+3. Reimpostare la versione di pubblicazione in modo che solo una versione dell'applicazione sia disponibile. Per impostazione predefinita, Visual Studio incrementa automaticamente il numero di revisione della versione di pubblicazione ogni volta che si pubblica un'applicazione. Per altre informazioni, vedere [procedura: impostare la versione di pubblicazione ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Pubblicare l'applicazione.
 
