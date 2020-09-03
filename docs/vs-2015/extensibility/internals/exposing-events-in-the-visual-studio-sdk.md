@@ -12,71 +12,71 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196699"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Esposizione di eventi in Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ti l'origine degli eventi tramite l'automazione. È consigliabile che l'origine degli eventi per progetti ed elementi di progetto.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] consente di usare l'automazione per gli eventi di origine. Si consiglia di usare eventi di origine per progetti ed elementi di progetto.  
   
- Gli eventi vengono recuperati dai consumer di automazione dal <xref:EnvDTE.DTEClass.Events%2A> oggetto o <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). L'ambiente chiama `IDispatch::Invoke` usando il `DISPATCH_METHOD` o `DISPATCH_PROPERTYGET` flag per restituire un evento.  
+ Gli eventi vengono recuperati dai consumer di automazione dall' <xref:EnvDTE.DTEClass.Events%2A> oggetto o <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). L'ambiente chiama `IDispatch::Invoke` usando i `DISPATCH_METHOD` flag o `DISPATCH_PROPERTYGET` per restituire un evento.  
   
- Il processo seguente viene illustrato come vengono restituiti gli eventi specifico del VSPackage.  
+ Il processo seguente illustra come vengono restituiti gli eventi specifici di VSPackage.  
   
-1. Avvio dell'ambiente.  
+1. Viene avviato l'ambiente.  
   
-2. Legge dal Registro di sistema tutti i nomi di valore in corrispondenza delle chiavi di automazione, AutomationEvents e AutomationProperties di tutti i pacchetti VSPackage e archivia tali nomi in una tabella.  
+2. Esegue la lettura dal registro di sistema di tutti i nomi dei valori nelle chiavi di automazione, AutomationEvents e AutomationProperties di tutti i pacchetti VSPackage e archivia tali nomi in una tabella.  
   
-3. Un consumer di automazione chiama, in questo esempio `DTE.Events.AutomationProjectsEvents` o `DTE.Events.AutomationProjectItemsEvents`.  
+3. Un consumer di automazione chiama, in questo esempio, `DTE.Events.AutomationProjectsEvents` o `DTE.Events.AutomationProjectItemsEvents` .  
   
-4. L'ambiente consente di trovare il parametro della stringa nella tabella e carica il pacchetto VSPackage corrispondente.  
+4. L'ambiente trova il parametro di stringa nella tabella e carica il pacchetto VSPackage corrispondente.  
   
-5. L'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodo utilizzando il nome passato nella chiamata; in questo esempio, AutomationProjectsEvents o AutomationProjectItemsEvents.  
+5. L'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Metodo usando il nome passato nella chiamata, in questo esempio, AutomationProjectsEvents o AutomationProjectItemsEvents.  
   
-6. Il pacchetto VSPackage crea un oggetto principale che dispone di metodi, ad esempio `get_AutomationProjectsEvents` e `get_AutomationProjectItemEvents` e quindi restituisce un puntatore IDispatch all'oggetto.  
+6. Il pacchetto VSPackage crea un oggetto radice con metodi quali `get_AutomationProjectsEvents` e `get_AutomationProjectItemEvents` e quindi restituisce un puntatore IDispatch all'oggetto.  
   
 7. L'ambiente chiama il metodo appropriato in base al nome passato nella chiamata di automazione.  
   
-8. Il `get_` metodo crea un altro oggetto di eventi basato su IDispatch che implementa sia il `IConnectionPointContainer` interfaccia e `IConnectionPoint` interfaccia e restituisce un IDispatchpointer all'oggetto.  
+8. Il `get_` metodo crea un altro oggetto evento basato su IDispatch che implementa l' `IConnectionPointContainer` interfaccia e l' `IConnectionPoint` interfaccia e restituisce un IDispatchpointer all'oggetto.  
   
-   Per esporre un evento usando l'automazione, è necessario rispondere a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> ed espressioni di controllo per le stringhe che aggiungono al Registro di sistema. Nell'esempio di progetto di base, le stringhe sono "BscProjectsEvents" e "BscProjectItemsEvents".  
+   Per esporre un evento tramite l'automazione, è necessario rispondere <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> e controllare le stringhe aggiunte al registro di sistema. Nell'esempio di progetto di base le stringhe sono "BscProjectsEvents" e "BscProjectItemsEvents".  
   
-## <a name="registry-entries-from-the-basic-project-sample"></a>Voci del Registro di sistema dall'esempio di progetto di base  
- In questa sezione viene illustrato come aggiungere i valori di evento di automazione nel Registro di sistema.  
+## <a name="registry-entries-from-the-basic-project-sample"></a>Voci del registro di sistema dell'esempio di progetto di base  
+ Questa sezione illustra come aggiungere i valori degli eventi di automazione al registro di sistema.  
   
- [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]  
+ [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<PkgGUID \> \AutomationEvents]  
   
- "AutomationProjectEvents"="restituisce l'oggetto AutomationProjectEvents"  
+ "AutomationProjectEvents" = "restituisce l'oggetto AutomationProjectEvents"  
   
- "AutomationProjectItemEvents"="restituisce l'oggetto AutomationProjectItemsEvents"  
+ "AutomationProjectItemEvents" = "restituisce l'oggetto AutomationProjectItemsEvents"  
   
-|Name|Type|Intervallo|Descrizione|  
+|Nome|Tipo|Range|Descrizione|  
 |----------|----------|-----------|-----------------|  
-|Predefinito (@)|REG_SZ|non usato|Non usato. È possibile usare il campo dati per la documentazione.|  
-|AutomationProjectsEvents|REG_SZ|Nome dell'oggetto dell'evento.|Solo il nome della chiave è rilevante. È possibile usare il campo dati per la documentazione.<br /><br /> In questo esempio proviene dall'esempio di progetto di base.|  
-|AutomationProjectItemEvents|REG_SZ|Nome dell'oggetto dell'evento|Solo il nome della chiave è rilevante. È possibile usare il campo dati per la documentazione.<br /><br /> In questo esempio proviene dall'esempio di progetto di base.|  
+|Impostazione predefinita (@)|REG_SZ|Non utilizzato|Non utilizzato. È possibile usare il campo dati per la documentazione.|  
+|AutomationProjectsEvents|REG_SZ|Nome dell'oggetto evento.|Solo il nome della chiave è pertinente. È possibile usare il campo dati per la documentazione.<br /><br /> Questo esempio deriva dall'esempio di progetto di base.|  
+|AutomationProjectItemEvents|REG_SZ|Nome dell'oggetto evento|Solo il nome della chiave è pertinente. È possibile usare il campo dati per la documentazione.<br /><br /> Questo esempio deriva dall'esempio di progetto di base.|  
   
- Quando uno qualsiasi degli oggetti evento sono richiesto da un consumer di automazione, creare un oggetto principale che dispone di metodi per qualsiasi evento che supporta il pacchetto VSPackage. L'ambiente chiama l'oggetto appropriato `get_` metodo tohoto objektu. Ad esempio, se `DTE.Events.AutomationProjectsEvents` viene chiamato, il `get_AutomationProjectsEvents` metodo sull'oggetto radice viene richiamato.  
+ Quando uno degli oggetti evento viene richiesto da un consumer di automazione, creare un oggetto radice che disponga di metodi per qualsiasi evento supportato dal pacchetto VSPackage. L'ambiente chiama il `get_` metodo appropriato per questo oggetto. Se, ad esempio, `DTE.Events.AutomationProjectsEvents` viene chiamato, viene `get_AutomationProjectsEvents` richiamato il metodo sull'oggetto radice.  
   
- ![Eventi di progetto di Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents")  
+ ![Eventi di progetto Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents")  
 Modello di automazione per gli eventi  
   
  La classe `CProjectEventsContainer` rappresenta l'oggetto di origine per BscProjectsEvents, mentre `CProjectItemsEventsContainer` rappresenta l'oggetto di origine per BscProjectItemsEvents.  
   
- Nella maggior parte dei casi, è necessario restituire un nuovo oggetto per ogni richiesta di eventi perché la maggior parte degli oggetti evento accettano un oggetto di filtro. Quando si genera l'evento, controllare il filtro seguente per verificare che viene richiamato il gestore dell'evento.  
+ Nella maggior parte dei casi, è necessario restituire un nuovo oggetto per ogni richiesta di evento perché la maggior parte degli oggetti evento accetta un oggetto Filter. Quando si genera l'evento, controllare questo filtro per verificare che il gestore eventi venga chiamato.  
   
- AutomationEvents.h e AutomationEvents.cpp contengono dichiarazioni e implementazioni delle classi nella tabella seguente.  
+ AutomationEvents. h e AutomationEvents. cpp contengono le dichiarazioni e le implementazioni delle classi nella tabella seguente.  
   
 |Classe|Descrizione|  
 |-----------|-----------------|  
-|`CAutomationEvents`|Implementa un oggetto radice di eventi, recuperato dal `DTE.Events` oggetto.|  
-|`CProjectsEventsContainer` e `CProjectItemsEventsContainer`|Implementare gli oggetti di origine di eventi che attivano gli eventi corrispondenti.|  
+|`CAutomationEvents`|Implementa un oggetto radice evento, recuperato dall' `DTE.Events` oggetto.|  
+|`CProjectsEventsContainer` e `CProjectItemsEventsContainer`|Implementare gli oggetti origine evento che generano gli eventi corrispondenti.|  
   
- Esempio di codice seguente illustra come rispondere a una richiesta per un oggetto evento.  
+ Nell'esempio di codice riportato di seguito viene illustrato come rispondere a una richiesta per un oggetto evento.  
   
 ```cpp#  
 STDMETHODIMP CVsPackage::GetAutomationObject(  
@@ -107,9 +107,9 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 }  
 ```  
   
- Nel codice precedente, `g_wszAutomationProjects` è il nome della raccolta di progetti ("FigProjects"), `g_wszAutomationProjectsEvents` ("FigProjectsEvents") e `g_wszAutomationProjectItemsEvents` ("FigProjectItemEvents") sono i nomi degli eventi di progetto e gli eventi che vengono originati da elementi di progetto di Implementazione di VSPackage.  
+ Nel codice precedente `g_wszAutomationProjects` è il nome della raccolta di progetti ("FigProjects"), `g_wszAutomationProjectsEvents` ("FigProjectsEvents") e `g_wszAutomationProjectItemsEvents` ("FigProjectItemEvents") sono i nomi degli eventi del progetto e gli eventi degli elementi di progetto originati dall'implementazione di VSPackage.  
   
- Vengono recuperati oggetti evento dalla stessa posizione centrale, il `DTE.Events` oggetto. In questo modo, tutti gli oggetti evento sono raggruppati in modo che un utente finale non è necessario esplorare l'intero modello a oggetti per trovare un evento specifico. Ciò consente inoltre di fornire gli oggetti VSPackage specifici, anziché richiedere di implementare codice personalizzato per gli eventi a livello di sistema. Tuttavia, per l'utente finale, che deve trovare un evento per il `ProjectItem` interfaccia, non è immediatamente chiaro da cui viene recuperato l'oggetto evento.  
+ Gli oggetti evento vengono recuperati dalla stessa posizione centrale, ovvero l' `DTE.Events` oggetto. In questo modo, tutti gli oggetti evento vengono raggruppati in modo che un utente finale non debba esplorare l'intero modello a oggetti per trovare un evento specifico. Questo consente anche di fornire oggetti VSPackage specifici, anziché richiedere di implementare il proprio codice per gli eventi a livello di sistema. Tuttavia, per l'utente finale, che deve trovare un evento per l' `ProjectItem` interfaccia, non è immediatamente chiaro dal punto in cui viene recuperato l'oggetto evento.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   

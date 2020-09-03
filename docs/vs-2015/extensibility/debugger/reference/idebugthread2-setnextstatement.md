@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetNextStatement | Microsoft Docs
+title: 'IDebugThread2:: SetNextStatement | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 755044ec1d713075c1c1fd3165254ba192943288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152970"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Imposta il puntatore all'istruzione corrente nel contesto del codice di errore specificati.  
+Imposta il puntatore all'istruzione corrente sul contesto del codice specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,22 +42,22 @@ int SetNextStatement ( 
   
 #### <a name="parameters"></a>Parametri  
  `pStackFrame`  
- Riservato per utilizzi futuri; Impostare su un valore null.  
+ Riservato per un utilizzo futuro; impostare su un valore null.  
   
  `pCodeContext`  
- [in] Un' [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che descrive la posizione del codice sta per essere eseguita e il relativo contesto.  
+ in Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che descrive la posizione del codice che sta per essere eseguita e il relativo contesto.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra altri valori possibili.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati altri valori possibili.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|L'istruzione successiva non può essere in uno stack frame più approfondito sullo stack frame.|  
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|L'istruzione successiva non è associato a qualsiasi frame nello stack.|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Alcuni motori di debug non è possibile impostare l'istruzione successiva dopo un'eccezione.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|L'istruzione successiva non può trovarsi in un stack frame più in alto nello stack di frame.|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|L'istruzione successiva non è associata ad alcun frame nello stack.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Alcuni motori di debug non possono impostare l'istruzione successiva dopo un'eccezione.|  
   
-## <a name="remarks"></a>Note  
- Il puntatore all'istruzione indica la successiva istruzione o l'istruzione da eseguire. Questo metodo viene utilizzato per ripetere una riga di codice sorgente o per forzare l'esecuzione di continuare in un'altra funzione, ad esempio.  
+## <a name="remarks"></a>Osservazioni  
+ Il puntatore all'istruzione indica l'istruzione o l'istruzione successiva da eseguire. Questo metodo viene usato per ritentare una riga di codice sorgente o per forzare l'esecuzione a continuare in un'altra funzione, ad esempio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

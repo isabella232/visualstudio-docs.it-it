@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72806836"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
@@ -36,7 +36,7 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
 
 |Oggetto o ruolo|Descrizione|
 |--------------------|-----------------|
-|amministratore|Entità dell'organizzazione responsabile dell'aggiornamento e della gestione dei computer client|
+|entità|Entità dell'organizzazione responsabile dell'aggiornamento e della gestione dei computer client|
 |gestore di attendibilità|Sottosistema all'interno di Common Language Runtime (CLR) responsabile dell'applicazione della sicurezza delle applicazioni client.|
 |publisher|Entità che scrive e gestisce l'applicazione.|
 |deployer|Entità che crea pacchetti e distribuisce l'applicazione agli utenti.|
@@ -66,7 +66,7 @@ Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione d
 5. Pubblicare la distribuzione dell'applicazione nei computer client.
 
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Ottenere un certificato per l'editore
- I certificati digitali sono un componente principale del sistema di sicurezza e autenticazione Microsoft Authenticode. Authenticode è una parte standard del sistema operativo Windows. Tutte le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] devono essere firmate con un certificato digitale, a prescindere se partecipano alla distribuzione di applicazioni attendibili. Per una spiegazione completa del funzionamento di Authenticode con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vedere [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md).
+ I certificati digitali sono un componente principale del sistema di sicurezza e autenticazione Microsoft Authenticode. Authenticode è una parte standard del sistema operativo Windows. Tutte le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] devono essere firmate con un certificato digitale, a prescindere se partecipano alla distribuzione di applicazioni attendibili. Per una spiegazione completa del funzionamento di Authenticode con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , vedere [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md).
 
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Aggiungere l'editore all'archivio Editori attendibili
  Affinché l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] riceva un livello di attendibilità superiore, è necessario aggiungere il certificato come editore attendibile a ogni computer client in cui verrà eseguita l'applicazione. Si tratta di una configurazione che si esegue una sola volta. Dopo il completamento, è possibile distribuire tutte le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmate con il certificato editore desiderate, che verranno eseguite con un livello di attendibilità elevato.
@@ -75,12 +75,12 @@ Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione d
 
  Se non si distribuisce l'applicazione in un ambiente desktop gestito, sono disponibili le seguenti opzioni per aggiungere un certificato all'archivio Editori attendibili:
 
-- Spazio dei nomi <xref:System.Security.Cryptography?displayProperty=fullName> .
+- Spazio dei nomi <xref:System.Security.Cryptography?displayProperty=fullName>.
 
-- *CertMgr.exe*, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per ulteriori informazioni, vedere [certmgr. exe (strumento Gestione certificati)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per ulteriori informazioni, vedere [Certmgr.exe (strumento Gestione certificati)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Creare un'applicazione ClickOnce
- Un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è un'applicazione client .NET Framework combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, vedere [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è un .NET Framework applicazione client combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, vedere [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
  La distribuzione di applicazioni attendibili è specifica per [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]è può essere usata solo con le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
@@ -90,7 +90,7 @@ Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione d
 > [!CAUTION]
 > Non si consiglia di distribuire l'applicazione con un certificato di prova.
 
- È anche possibile firmare l'applicazione usando gli strumenti SDK *Mage.exe* o *MageUI.exe*. Per ulteriori informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Per un elenco completo delle opzioni della riga di comando relative alla firma della distribuzione, vedere [Mage. exe (strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+ È anche possibile firmare l'applicazione usando gli strumenti SDK *Mage.exe* o *MageUI.exe*. Per ulteriori informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Per un elenco completo delle opzioni della riga di comando relative alla firma della distribuzione, vedere [Mage.exe (strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ### <a name="publish-the-application"></a>Pubblicare l'applicazione
  Dopo aver firmato i manifesti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , l'applicazione è pronta per la pubblicazione nel percorso di installazione. Il percorso di installazione può essere un server Web, una condivisione file o il disco locale. Quando un client accede al manifesto della distribuzione per la prima volta, il gestore di attendibilità deve determinare se all'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono state concesse le autorizzazioni per l'esecuzione con un livello di trust superiore da un editore attendibile installato. Per effettuare questa scelta, il gestore di attendibilità confronta il certificato usato per firmare la distribuzione con i certificati archiviati nell'archivio Editori attendibili del client. Se il gestore di attendibilità trova una corrispondenza, l'applicazione viene eseguita con un livello di attendibilità elevato.

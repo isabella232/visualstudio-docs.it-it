@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetExpression | Microsoft Docs
+title: 'IDebugExpressionEvaluationCompleteEvent2:: GetExpression | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f33c374d8aa4087ca90d7c2a4fa1d26f9a0842b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148753"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
@@ -40,13 +40,13 @@ int GetExpression( 
   
 #### <a name="parameters"></a>Parametri  
  `ppExpr`  
- [out] Restituisce un [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) oggetto che rappresenta l'espressione che è stato analizzato.  
+ out Restituisce un oggetto [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) che rappresenta l'espressione analizzata.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo restituisce l'oggetto che è stato creato in una chiamata per il [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo restituisce l'oggetto creato in una chiamata al metodo [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   

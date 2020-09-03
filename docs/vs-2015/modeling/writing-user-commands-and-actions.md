@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1042a1ee21a288f0e74dc881109b65a331b53c94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662996"
 ---
 # <a name="writing-user-commands-and-actions"></a>Scrittura di azioni e comandi utente
@@ -21,7 +21,7 @@ ms.locfileid: "72662996"
 
 È possibile personalizzare un linguaggio specifico di dominio aggiungendo comandi al diagramma e rispondendo a movimenti quali gli eventi di trascinamento della selezione, scelta e doppio clic.
 
-## <a name="user-actions"></a>Azioni dell'utente
+## <a name="user-actions"></a>Azioni utente
 
 - [Procedura: modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) : è possibile personalizzare il comportamento dei comandi come la copia e la stampa.
 

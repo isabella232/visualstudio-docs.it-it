@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creare un modello usando i controlli contenuto'
+title: 'Procedura dettagliata: creare un modello usando i controlli contenuto'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255594"
 ---
-# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procedura dettagliata: Creare un modello usando i controlli contenuto
+# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procedura dettagliata: creare un modello usando i controlli contenuto
   Questa procedura dettagliata mostra come creare una personalizzazione a livello di documento che usa i controlli contenuto per creare contenuti strutturati e riutilizzabili in un modello di Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "71255594"
 
  Dopo aver creato un documento dal modello, è possibile aggiungere una delle tabelle al documento usando diversi oggetti <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>, che visualizzano i blocchi predefiniti disponibili nel modello.
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Creazione di una tabella contenente i controlli contenuto in un modello di Word in fase di progettazione.
 
@@ -45,7 +45,7 @@ ms.locfileid: "71255594"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -56,9 +56,9 @@ ms.locfileid: "71255594"
 
 ### <a name="to-create-a-new-word-template-project"></a>Per creare un nuovo progetto di modello di Word
 
-1. Creare un progetto di modello di Word con il nome **ModelloBloccoPredefinito**. Nella procedura guidata creare un nuovo documento nella soluzione. Per altre informazioni, vedere [Procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+1. Creare un progetto di modello di Word con il nome **ModelloBloccoPredefinito**. Nella procedura guidata creare un nuovo documento nella soluzione. Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]apre il nuovo modello di Word nella finestra di progettazione e aggiunge il progetto **ModelloBloccoPredefinito** a **Esplora soluzioni**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il nuovo modello di Word nella finestra di progettazione e aggiunge il progetto **ModelloBloccoPredefinito** a **Esplora soluzioni**.
 
 ## <a name="create-the-employee-table"></a>Creare la tabella Employee
  Creare una tabella che contiene quattro tipi differenti di controlli contenuto in cui un utente può immettere le informazioni su un dipendente.
@@ -73,9 +73,9 @@ ms.locfileid: "71255594"
 
    ||
    |-|
-   |**Nome del dipendente**|
-   |**Data di assunzione**|
-   |**Titolo**|
+   |**Nome dipendente**|
+   |**Data assunzione**|
+   |**Title**|
    |**Immagine**|
 
 4. Fare clic nella prima cella della seconda colonna (accanto a **nome dipendente**).
@@ -83,9 +83,9 @@ ms.locfileid: "71255594"
 5. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
    > [!NOTE]
-   > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Mostra la scheda Developer sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per ulteriori informazioni, vedere [procedura: visualizzare la scheda Developer sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-6. Nel gruppo **controlli** fare clic sul pulsante di testo ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> alla prima cella.
+6. Nel gruppo **controlli** fare clic sul pulsante **Text** di testo ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> alla prima cella.
 
 7. Fare clic sulla seconda cella della seconda colonna (accanto a **Data assunzione**).
 
@@ -97,7 +97,7 @@ ms.locfileid: "71255594"
 
 11. Fare clic sull'ultima cella della seconda colonna (accanto a **immagine**).
 
-12. Nel gruppo **controlli** fare clic sul pulsante di **controllo contenuto immagine** ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PictureContentControl> oggetto all'ultima cella.
+12. Nel gruppo **controlli** fare clic sul pulsante di **controllo contenuto immagine** ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") per aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.PictureContentControl> all'ultima cella.
 
 ## <a name="create-the-customer-feedback-table"></a>Creare la tabella dei suggerimenti dei clienti
  Creare una tabella che contiene tre tipi differenti di controlli contenuto in cui un utente può immettere le informazioni relative ai suggerimenti dei clienti.
@@ -115,25 +115,25 @@ ms.locfileid: "71255594"
    ||
    |-|
    |**Nome del cliente**|
-   |**Classificazione di soddisfazione**|
+   |**Valutazione soddisfazione**|
    |**Commenti**|
 
 5. Fare clic nella prima cella della seconda colonna (accanto a **nome cliente**).
 
 6. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
-7. Nel gruppo **controlli** fare clic sul pulsante di testo ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> alla prima cella.
+7. Nel gruppo **controlli** fare clic sul pulsante **Text** di testo ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> alla prima cella.
 
 8. Fare clic nella seconda cella della seconda colonna (accanto a **classificazione di soddisfazione**).
 
-9. Nel gruppo **controlli** fare clic sul pulsante **dell'elenco a discesa** ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> alla seconda cella.
+9. Nel gruppo **controlli** fare clic sul pulsante dell' **elenco a discesa** ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> alla seconda cella.
 
 10. Fare clic nell'ultima cella della seconda colonna (accanto a **Commenti**).
 
-11. Nel gruppo **controlli** fare clic sul pulsante con il **testo completo** ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") per aggiungere <xref:Microsoft.Office.Tools.Word.RichTextContentControl> un oggetto all'ultima cella.
+11. Nel gruppo **controlli** fare clic sul pulsante **RTF** per aggiungere ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") un oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> all'ultima cella.
 
 ## <a name="populate-the-combo-box-and-drop-down-list-programmatically"></a>Popola la casella combinata e l'elenco a discesa a livello di codice
- È possibile inizializzare i controlli contenuto in fase di progettazione utilizzando la finestra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]proprietà in. È anche possibile inizializzarli in fase di esecuzione. In questo caso gli stati iniziali possono essere impostati dinamicamente. Per questa procedura dettagliata, usare il codice per popolare le voci <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> in <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> e in fase di esecuzione in modo che sia possibile visualizzare il funzionamento di questi oggetti.
+ È possibile inizializzare i controlli contenuto in fase di progettazione utilizzando la finestra **Proprietà** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . È anche possibile inizializzarli in fase di esecuzione. In questo caso gli stati iniziali possono essere impostati dinamicamente. Per questa procedura dettagliata, usare il codice per popolare le voci in e in fase di <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> esecuzione in modo che sia possibile visualizzare il funzionamento di questi oggetti.
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Per modificare l'interfaccia utente dei controlli contenuto a livello di codice
 
@@ -164,7 +164,7 @@ ms.locfileid: "71255594"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Per aggiungere le tabelle ai blocchi predefiniti nel modello
 
-1. Aggiungere il codice seguente al metodo `ThisDocument_Startup` della classe `ThisDocument` dopo il codice aggiunto nel passaggio precedente. Questo codice aggiunge nuovi blocchi predefiniti che contengono le tabelle alla raccolta Microsoft. Office. Interop. Word. BuildingBlockEntries, che contiene tutti i blocchi predefiniti riutilizzabili nel modello. I nuovi blocchi predefiniti vengono definiti in una nuova categoria denominata **Employee e Customer Information** e a cui viene assegnato il tipo `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`di blocco predefinito.
+1. Aggiungere il codice seguente al metodo `ThisDocument_Startup` della classe `ThisDocument` dopo il codice aggiunto nel passaggio precedente. Questo codice aggiunge nuovi blocchi predefiniti che contengono le tabelle alla raccolta Microsoft. Office. Interop. Word. BuildingBlockEntries, che contiene tutti i blocchi predefiniti riutilizzabili nel modello. I nuovi blocchi predefiniti vengono definiti in una nuova categoria denominata **Employee e Customer Information** e a cui viene assegnato il tipo di blocco predefinito `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
@@ -179,7 +179,7 @@ ms.locfileid: "71255594"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Per creare un controllo contenuto che visualizza i blocchi predefiniti
 
-1. Aggiungere il codice seguente al metodo `ThisDocument_Startup` della classe `ThisDocument` dopo il codice aggiunto nel passaggio precedente. Il codice inizializza l'oggetto <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> dichiarato in precedenza. Visualizza tutti i blocchi predefiniti definiti nella categoria **informazioni sui dipendenti e sui clienti** e con il tipo `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`di blocco predefinito. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>
+1. Aggiungere il codice seguente al metodo `ThisDocument_Startup` della classe `ThisDocument` dopo il codice aggiunto nel passaggio precedente. Il codice inizializza l'oggetto <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> dichiarato in precedenza. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>Visualizza tutti i blocchi predefiniti definiti nella categoria **informazioni sui dipendenti e sui clienti** e con il tipo di blocco predefinito `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
@@ -232,13 +232,13 @@ ms.locfileid: "71255594"
 ## <a name="next-steps"></a>Passaggi successivi
  Per altre informazioni sull'utilizzo dei controlli contenuto, vedere l'argomento seguente:
 
-- Associare controlli contenuto a parti del codice XML, chiamate anche parti XML personalizzate, incorporate in un documento. Per altre informazioni, vedere [Procedura dettagliata: Associare controlli contenuto a parti](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)XML personalizzate.
+- Associare controlli contenuto a parti del codice XML, chiamate anche parti XML personalizzate, incorporate in un documento. Per ulteriori informazioni, vedere [procedura dettagliata: associare controlli contenuto a parti XML personalizzate](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Controlli contenuto](../vsto/content-controls.md)
-- [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Procedura: Proteggere parti di documenti usando i controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
+- [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Procedura: proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)

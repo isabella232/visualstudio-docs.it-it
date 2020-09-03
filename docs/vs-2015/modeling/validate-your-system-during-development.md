@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1beeef572282a642e4a989086ac0fd228409fec
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586274"
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
@@ -43,5 +43,5 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
 |**Blog**|-   [Blog di Visual Studi ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
  [Test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [modellare i requisiti degli utenti](../modeling/model-user-requirements.md) [analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)

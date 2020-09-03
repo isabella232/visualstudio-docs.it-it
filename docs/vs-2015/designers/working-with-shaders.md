@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a22be61d5f4c05720a5ff223806f2e14a8bfbc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663952"
 ---
 # <a name="working-with-shaders"></a>Utilizzo degli shader
@@ -39,4 +39,4 @@ ms.locfileid: "72663952"
 |-----------|-----------------|
 |[Finestra di progettazione shader](../designers/shader-designer.md)|Descrive come utilizzare Progettazione shader di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con shader.|
 |[Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)|Vengono descritti i tipi di nodi della finestra di progettazione shader che è possibile usare per realizzare effetti grafici.|
-|[Esempi della finestra di progettazione shader](../designers/shader-designer-examples.md)|Vengono forniti collegamenti ad argomenti che illustrano come usare la finestra di progettazione shader per realizzare comuni effetti di grafica.|
+|[Esempi di progettazione shader](../designers/shader-designer-examples.md)|Vengono forniti collegamenti ad argomenti che illustrano come usare la finestra di progettazione shader per realizzare comuni effetti di grafica.|

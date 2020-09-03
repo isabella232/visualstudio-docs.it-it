@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetServer | Microsoft Docs
+title: 'IDebugDefaultPort2:: GetServer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a74a9e846532b119c5b72495c39226effdc94f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196267"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo ottiene un'interfaccia per il server su questa porta.  
+Questo metodo ottiene un'interfaccia per il server su cui si trova la porta.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int GetServer(
   
 #### <a name="parameters"></a>Parametri  
  `ppServer`  
- [out] Restituisce un oggetto che implementa il [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) interfaccia.  
+ out Restituisce un oggetto che implementa l'interfaccia [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Il [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) viene implementata da Visual Studio e rappresenta il server che la porta si trova in.  
+## <a name="remarks"></a>Osservazioni  
+ [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) viene implementato da Visual Studio e rappresenta il server in cui si trova la porta.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   

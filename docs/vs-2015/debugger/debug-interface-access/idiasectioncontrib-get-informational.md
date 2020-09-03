@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60ca5a57fd2b8921c3fc3c140bf1fdf5c0277f21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151903"
 ---
-# <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
+# <a name="idiasectioncontribget_informational"></a>IDiaSectionContrib::get_informational
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che indica se una sezione contiene informazioni simili o commenti.  
+Recupera un flag che indica se una sezione contiene commenti o informazioni simili.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT get_informational(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se la sezione contiene i commenti o altre informazioni; in caso contrario restituisce `FALSE`.  
+ out Restituisce `TRUE` se la sezione contiene commenti o altre informazioni; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- La sezione .directive contiene in genere informazioni.  
+## <a name="remarks"></a>Osservazioni  
+ In genere la sezione. Directive contiene informazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -19,19 +19,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14e365d6bbe99634135bfad133d840b98e22e3b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663044"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilizzo del diagramma di definizione DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il diagramma di una definizione [!INCLUDE[dsl](../includes/dsl-md.md)] è uno strumento importante per la definizione del linguaggio specifico di dominio. Consente di aggiungere elementi al modello di dominio e definire relazioni sul diagramma ed è possibile modificare il layout del diagramma per renderlo più leggibile.
+Il diagramma di una [!INCLUDE[dsl](../includes/dsl-md.md)] definizione è uno strumento importante per la definizione del linguaggio specifico di dominio. Consente di aggiungere elementi al modello di dominio e definire relazioni sul diagramma ed è possibile modificare il layout del diagramma per renderlo più leggibile.
 
 ## <a name="the-layout-of-the-diagram"></a>Layout del diagramma
- Il diagramma di definizione [!INCLUDE[dsl](../includes/dsl-md.md)] dispone di due partizioni, la partizione **classi e relazioni** e la partizione **elementi diagramma** . Nella partizione **classi e relazioni** vengono visualizzate le classi di dominio, le relazioni di dominio e l'ereditarietà. Nella partizione **elementi diagramma** vengono visualizzate le classi di forme, le classi del connettore, le classi di corsie e il diagramma della finestra di progettazione generata.
+ Il [!INCLUDE[dsl](../includes/dsl-md.md)] diagramma di definizione include due partizioni, la partizione **classi e relazioni** e la partizione **elementi diagramma** . Nella partizione **classi e relazioni** vengono visualizzate le classi di dominio, le relazioni di dominio e l'ereditarietà. Nella partizione **elementi diagramma** vengono visualizzate le classi di forme, le classi del connettore, le classi di corsie e il diagramma della finestra di progettazione generata.
 
  Le classi di dominio possono apparire in più posizioni nelle partizioni **classi e relazioni** . In una definizione di classe di dominio viene visualizzato un albero di ereditarietà se si tratta della classe di base per altre classi di dominio e un albero delle relazioni se si tratta dell'origine delle relazioni di incorporamento o riferimento. I segnaposto delle classi di dominio vengono visualizzati come le destinazioni delle relazioni di incorporamento o riferimento. Per impostazione predefinita, gli elementi segnaposto vengono visualizzati con il raggruppamento delle **proprietà del dominio** compresso. Per questi elementi, non vengono mostrati l'ereditarietà o le relazioni di incorporamento o riferimento.
 

@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745746"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Impossibile modificare il valore (finestra di dialogo)
-## <a name="error"></a>Error
- `The value of this variable cannot be changed` &#124; `The name` *nome* `does not exist in the current context` &#124; *diversi altri messaggi*
+## <a name="error"></a>Errore
+ `The value of this variable cannot be changed``The name` *Nome* &#124; `does not exist in the current context` &#124; *diversi altri messaggi*
 
  Questa finestra di messaggio viene visualizzata quando si tenta di modificare il contenuto di una variabile in un valore non consentito in una finestra del debugger (finestre Auto, Espressioni di controllo o Variabili locali) o nella finestra di dialogo Controllo immediato. Se, ad esempio, si tenta di impostare il valore di una variabile Integer in una stringa di caratteri, viene visualizzata questa finestra di messaggio.
 

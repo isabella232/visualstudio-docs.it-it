@@ -9,30 +9,30 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f570d665ddbc97ccddf058e1bb424c62e23912cb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825274"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Modelli di interazione per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ## <a name="overview"></a>Panoramica
- Un modello di progettazione, in generale, è la base di una progettazione che può essere applicata in situazioni specifiche per risolvere i problemi con i set analogo di vincoli. Finestre di progettazione di funzionalità e sistema di usare questi schemi progettuali come punti, che quindi possono essere adattati alle loro esigenze di partenza.
+ Uno schema progettuale, in generale, è il nucleo di una progettazione che può essere applicata in situazioni specifiche per risolvere i problemi relativi a set di vincoli simili. I progettisti di funzionalità e di sistema utilizzano questi modelli di progettazione come punti di partenza, che possono essere adattati alla situazione specifica.
 
- Visual Studio include una libreria di modelli di interazione comune da considerare durante la creazione di nuove funzionalità. Esistono due contesti di core per i modelli di progettazione: Client (devenv) di Visual Studio e Visual Studio Online. Per alcuni problemi di progettazione, è disponibile un modello comune che funziona correttamente in tutte le situazioni. In molti casi, tuttavia, la soluzione potrebbe essere diversa per l'interfaccia utente che viene presentata all'interno di un browser e di cui è ospitato in un'applicazione client.
+ Visual Studio include una libreria di modelli di interazione comuni che devono essere presi in considerazione quando si compilano nuove funzionalità. Sono disponibili due contesti di base per i modelli di progettazione seguenti: Visual Studio client (devenv) e Visual Studio online. Per alcuni problemi di progettazione, è disponibile un modello onnipresente che funziona correttamente in tutte le situazioni. In molti casi, tuttavia, la soluzione potrebbe essere diversa per l'interfaccia utente presentata in un browser e ospitata in un'applicazione client.
 
-### <a name="visual-studio-client-pattern-types"></a>Tipi di modelli Visual Studio Client
+### <a name="visual-studio-client-pattern-types"></a>Tipi di modelli client di Visual Studio
 
 |Tipo di modello|Descrizione|Esempi|
 |------------------|-----------------|--------------|
-|**Modelli a livello di applicazione**|Modelli di alto livello comuni per l'applicazione, che determina o visualizzazione di contesto dell'applicazione e contenente composita e pattern di controllo al loro interno|-Finestre degli strumenti<br />: Le finestre dei documenti|
-|**Pattern compositi**|Modelli comuni che possono estendersi tra i modelli di applicazione o un modello riconosciuto costituito da diversi controlli in una configurazione distinct|-Altra vista<br />-I generatori list<br />-Visualizzazione di dati<br />-Notifiche<br />-Convalida<br />-Modelli selezione|
-|**Pattern di controllo**|Informazioni specifiche sui controlli a basso livello come si prevede un comportamento|: Visualizzazioni dell'albero<br />-Modifica all'interno di un controllo griglia|
+|**Modelli a livello di applicazione**|Modelli di alto livello comuni all'applicazione, determinazione o visualizzazione del contesto dell'applicazione e contenente i pattern di controllo e compositi al loro interno|-Finestre degli strumenti<br />-Finestre documenti|
+|**Modelli compositi**|Modelli comuni che possono estendersi tra modelli di applicazione o un modello riconosciuto costituito da diversi controlli in una configurazione distinta|-Visualizzazione cambio<br />-Elenca i generatori<br />-Visualizzazione dei dati<br />-Notifiche<br />-Convalida<br />-Modelli di selezione|
+|**Pattern di controllo**|Specifiche relative al comportamento previsto per i controlli di basso livello|-Visualizzazioni albero<br />-Modifica all'interno di un controllo Grid|
 
 ## <a name="application-patterns"></a>Modelli di applicazione
- A livello generale, l'interfaccia di Visual Studio è costituito da più finestre, finestre di dialogo, comandi e le barre degli strumenti all'interno di un unico IDE. La gerarchia di Visual Studio determina i menu di contesto e le unità. I punti di integrazione principali nell'interfaccia utente dell'IDE sono finestre dei documenti, finestre degli strumenti, progetti, la struttura del comando, l'editor di testo, casella degli strumenti, la finestra proprietà e gli strumenti > Opzioni.
+ A livello generale, l'interfaccia di Visual Studio comprende più finestre, finestre di dialogo, comandi e barre degli strumenti all'interno di un singolo IDE. La gerarchia di Visual Studio determina i menu del contesto e delle unità. I punti di integrazione principali nell'interfaccia utente dell'IDE sono le finestre dei documenti, le finestre degli strumenti, i progetti, la struttura del comando, l'editor di testo, la casella degli strumenti, il Finestra Proprietà e gli strumenti > opzioni.
 
  Sono disponibili modelli di utilizzo di base per ognuno dei punti di integrazione principali nell'interfaccia utente dell'IDE:
 
@@ -40,40 +40,40 @@ ms.locfileid: "67825274"
 
 - [Modelli delle applicazioni per Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 
-  - [Interazioni di finestra](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
+  - [Interazioni finestra](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
 
   - [Finestre degli strumenti](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
-  - [Convenzioni dell'editor di documento](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
+  - [Convenzioni dell'editor di documenti](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 
-  - [Dialogs](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs) (Finestre di dialogo)
+  - [Dialoghi](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
 
   - [Progetti](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
 
 ## <a name="common-control-patterns"></a>Pattern di controllo comuni
- I pattern di controllo sono principalmente sui controlli dei singoli sono previsti un comportamento. Si tratta di un'area in cui è più importante della coerenza.
+ I pattern di controllo prevedono principalmente il comportamento dei singoli controlli. Si tratta di un'area in cui la coerenza è più critica.
 
- Controlli più comuni in Visual Studio devono seguire le linee guida per Windows Desktop. Le linee guida includono solo le aree in cui è necessario aumentare le convenzioni comuni con le interazioni di specifiche di Visual Studio o posizioni in cui si sostituiscono le linee guida interamente per personalizzare Visual Studio per soddisfare le esigenze dei nostri utenti sofisticate.
+ I controlli più comuni in Visual Studio devono seguire le linee guida di Windows desktop. Le linee guida includono solo aree in cui è necessario aumentare le convenzioni comuni con interazioni specifiche di Visual Studio o posizioni in cui le linee guida vengono sostituite interamente per adattare Visual Studio in modo da soddisfare le esigenze degli utenti sofisticati.
 
 - [Modelli dei controlli comuni per Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)
 
   - [Controlli comuni](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CommonControls)
 
-  - [Controlli testo](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
+  - [Controlli di testo](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
-  - [I collegamenti ipertestuali e pulsanti](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+  - [Pulsanti e collegamenti ipertestuali](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
-## <a name="composite-patterns"></a>Pattern compositi
- Esistono numerosi modi in cui gli utenti si aspettano per eseguire le attività. Laddove possibile, le funzionalità devono essere progettate per utilizzare tali modelli per l'interazione e progettazione visiva.
+## <a name="composite-patterns"></a>Modelli compositi
+ Esistono diversi modi in cui gli utenti si aspettano di eseguire le attività. Laddove possibile, le funzionalità devono essere progettate in modo da usare tali modelli per l'interazione e la progettazione visiva.
 
- Sebbene esistano numerosi modelli compositi all'interno di Visual Studio, alcuni dei più importanti per quanto riguarda la coerenza sono:
+ Sebbene esistano molti modelli compositi all'interno di Visual Studio, alcuni dei più importanti per quanto riguarda la coerenza sono:
 
 - [Modelli compositi per Visual Studio](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)
 
-  - [Per gli oggetti dell'interfaccia utente e la lettura](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+  - [Interfaccia utente e visualizzazione in oggetto](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
   - [Modelli di selezione](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
-  - [Persistenza e il salvataggio delle impostazioni](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+  - [Persistenza e salvataggio delle impostazioni](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
   - [Input tocco](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)

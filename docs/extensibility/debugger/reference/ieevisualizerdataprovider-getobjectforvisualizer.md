@@ -1,5 +1,5 @@
 ---
-title: Proprietà IEEVisualizerDataProvider::GetObjectForVisualizer . Documenti Microsoft
+title: 'IEEVisualizerDataProvider:: GetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2aa1e20dd8639ce089ebe851116a15bf61e35ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718115"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
@@ -41,13 +41,13 @@ int GetObjectForVisualizer(
 
 ## <a name="parameters"></a>Parametri
 `ppObject`\
-[fuori] Oggetto rappresentato da questo visualizzatore
+out Oggetto rappresentato da questo visualizzatore
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- `GetObjectForVisualizer`può restituire una versione memorizzata nella cache dell'oggetto. Se il chiamante desidera assicurarsi che l'oggetto sia aggiornato, verrà chiamato [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
+ `GetObjectForVisualizer` è consentita la restituzione di una versione memorizzata nella cache dell'oggetto. Se il chiamante vuole assicurarsi che l'oggetto sia aggiornato, chiamerà [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

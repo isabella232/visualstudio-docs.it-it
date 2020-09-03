@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543923"
 ---
 # <a name="intellitrace"></a>IntelliTrace
@@ -57,7 +57,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](/vi
   
 |Livello di supporto|Tipi di app|  
 |-|-|  
-|**Supportato**|-Applicazioni Visual Basic e Visual C# che usano .NET Framework 2,0 o versioni successive.<br />     È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br />     Per eseguire il debug di applicazioni SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Per eseguire il debug di app Microsoft Azure con IntelliTrace, vedere [debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Supporto**|-Applicazioni Visual Basic e Visual C# che usano .NET Framework 2,0 o versioni successive.<br />     È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br />     Per eseguire il debug di applicazioni SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Per eseguire il debug di app Microsoft Azure con IntelliTrace, vedere [debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Supporto limitato**|-App F # su base sperimentale<br />-App di Windows Store supportate solo per gli eventi|  
 |**Non supportato**|-C++, altri linguaggi e script<br />-Servizi Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] app|  
   
@@ -146,7 +146,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](/vi
   
   - [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Raccolta delle informazioni sulle chiamate di funzione**  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Debug ASP.NET: Requisiti di sistema | Microsoft Docs'
+title: 'Debug di ASP.NET: requisiti di sistema | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826252"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>Debug ASP.NET: Requisiti di sistema
+# <a name="aspnet-debugging-system-requirements"></a>Requisiti di sistema per il debug di ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo argomento vengono descritti i requisiti software e di sicurezza per gli scenari di debug di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
@@ -42,9 +42,9 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
   
  Per eseguire il debug del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , è necessario disporre delle autorizzazioni appropriate. Per impostazione predefinita, le applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] vengono eseguite come utente **ASPNET** . Se il processo di lavoro è in esecuzione come **ASPNET**o come **SERVIZIO DI RETE**, per eseguirne il debug è necessario disporre dei privilegi di amministratore.  
   
- Il nome del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni, vedere [Procedura: Trovare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ Il nome del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni, vedere [Procedura: individuare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- È possibile modificare l'account utente con cui il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] viene eseguito modificando il file machine.config nel server su cui è in esecuzione IIS. Il modo migliore per eseguire questa operazione è usare **Gestione Internet Information Services (IIS)** . Per altre informazioni, vedere [Procedura: Eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ È possibile modificare l'account utente con cui il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] viene eseguito modificando il file machine.config nel server su cui è in esecuzione IIS. Il modo migliore per eseguire questa operazione è usare **Gestione Internet Information Services (IIS)**. Per altre informazioni, vedere [procedura: eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Se si modifica il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] affinché venga eseguito con il proprio account utente, non è necessario essere un amministratore nel server che esegue IIS.  
   
@@ -53,4 +53,4 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Procedura: Eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+ [Procedura: eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

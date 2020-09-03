@@ -21,20 +21,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffc9cae027a078a62b1ef7bab16994a418d76763
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745836"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
 Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nelle situazioni seguenti:
 
-- Il debugger è impostato sulla **modalità di compatibilità nativa** oppure è selezionata l'opzione **Modalità di compatibilità gestita** nella pagina **Strumenti > Opzioni > Debug**
+- Il debugger è impostato sulla **modalità di compatibilità nativa** o la **modalità di compatibilità gestita** è selezionata nella pagina **strumenti > opzioni > debug**
 
 - Si esegue il debug di codice C++ (C++ /CLI) gestito.
 
-- In Visual Studio 2013, quando è selezionata l'opzione **Abilita Modifica e continuazione nativo** nella pagina **Strumenti > Opzioni > Debug**
+- In Visual Studio 2013, quando l'opzione **Abilita modifica e continuazione nativa** è selezionata nella pagina **strumenti > opzioni > debug**
 
 - Alcuni scenari di debug di terze parti
 
@@ -51,4 +51,4 @@ Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nel
 ## <a name="see-also"></a>Vedere anche
 
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Debug remoto](../debugger/remote-debugging.md)

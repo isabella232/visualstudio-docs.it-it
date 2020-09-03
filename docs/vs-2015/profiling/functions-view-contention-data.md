@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141904"
 ---
 # <a name="functions-view---contention-data"></a>Visualizzazione Funzioni: dati sui conflitti
@@ -25,7 +25,7 @@ La visualizzazione report Funzioni dei dati sui conflitti elenca le funzioni nel
   
  La tabella seguente descrive i valori presenti nella visualizzazione Funzioni di un file di dati di profilatura raccolti tramite il metodo di concorrenza.  
   
-|Colonna|DESCRIZIONE|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|La quantità di tempo durante la quale è stata impedita l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.|  
 |**% tempo blocco esclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per questa funzione.|  
@@ -38,16 +38,16 @@ La visualizzazione report Funzioni dei dati sui conflitti elenca le funzioni nel
 |**Conflitti inclusivi**|Numero di volte in cui l'esecuzione di questa funzione o di una funzione chiamata da questa è stata bloccata.|  
 |**% conflitti inclusivi**|Percentuale di tutti i conflitti nell'esecuzione della profilatura che rappresentano conflitti inclusivi di questa funzione o di questo modulo.|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione.|  
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|  
 |**ID processo**|ID del processo (PID) del processo in cui era in esecuzione la funzione.|  
 |**Nome processo**|Nome del processo.|  
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Funzioni](../profiling/functions-view.md)   
- [Visualizzazione Funzioni: strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione Funzioni - Campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Visualizzazione Funzioni](../profiling/functions-view-instrumentation-data.md)   
+ [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Visualizzazione funzioni](../profiling/functions-view.md)   
+ [Visualizzazione funzioni-strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Visualizzazione funzioni-campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Visualizzazione funzioni](../profiling/functions-view-instrumentation-data.md)   
  [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)

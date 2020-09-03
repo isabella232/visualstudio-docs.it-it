@@ -1,5 +1,5 @@
 ---
-title: Proprietà IEEVisualizerDataProvider::SetObjectForVisualizer . Documenti Microsoft
+title: 'IEEVisualizerDataProvider:: SetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718085"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
@@ -45,19 +45,19 @@ int SetObjectForVisualizer(
 
 ## <a name="parameters"></a>Parametri
 `pNewObject`\
-[in] Oggetto da impostare.
+in Oggetto da impostare.
 
 `error`\
-[fuori] Se si è verificato un errore durante l'impostazione dell'oggetto, questa stringa contiene il messaggio di errore.
+out Se si è verificato un errore durante l'impostazione dell'oggetto, questa stringa contiene il messaggio di errore.
 
 `pException`\
-[fuori] Se si è verificato un errore, questo oggetto contiene le informazioni sull'eccezione.
+out Se si è verificato un errore, questo oggetto contiene le informazioni sull'eccezione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Spetta all'implementatore determinare come vengono restituite le informazioni sugli errori. Tuttavia, è possibile che alcuni chiamanti possano solo cercare se un oggetto eccezione è stato restituito per sapere che si è verificato un errore, pertanto questo metodo deve sempre restituire un oggetto eccezione se si è verificato un errore. La stringa di errore deve essere fornita anche nel caso in cui il chiamante desideri utilizzarla.
+ Spetta all'implementatore determinare il modo in cui vengono restituite le informazioni sugli errori. Tuttavia, è possibile che alcuni chiamanti possano controllare solo se è stato restituito un oggetto eccezione per sapere che si è verificato un errore, pertanto questo metodo deve restituire sempre un oggetto eccezione se si è verificato un errore. È necessario specificare anche la stringa di errore nel caso in cui il chiamante voglia utilizzarlo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

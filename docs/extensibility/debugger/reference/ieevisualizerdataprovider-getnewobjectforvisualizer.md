@@ -1,5 +1,5 @@
 ---
-title: Proprietà IEEVisualizerDataProvider::GetNewObjectForVisualizer . Documenti Microsoft
+title: 'IEEVisualizerDataProvider:: GetNewObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c478ca3fc913f5ab79f37a957b05ff1d665f8aa5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718110"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
@@ -41,13 +41,13 @@ int GetNewObjectForVisualizer(
 
 ## <a name="parameters"></a>Parametri
 `ppObject`\
-[fuori] Nuovo oggetto.
+out Nuovo oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- `This method`rivaluta l'oggetto che rappresenta attualmente e restituisce il risultato come nuovo oggetto. L'oggetto esistente verrà aggiornato in seguito alla valutazione.
+ `This method` valuta nuovamente l'oggetto attualmente rappresentato e restituisce il risultato come un nuovo oggetto. L'oggetto esistente verrà aggiornato in seguito alla valutazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

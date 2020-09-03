@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa4097280ae388a9a941c017697e0a5e3daa44cd
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349120"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Procedura: eseguire istruzioni nei servizi WCF
@@ -40,7 +40,7 @@ In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], è pos
 
 5. Eseguire il debug nel punto d'interruzione, quindi iniziare a eseguire le istruzioni. Il debugger eseguirà automaticamente le istruzioni nel servizio.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug dei servizi WCF](../debugger/debugging-wcf-services.md)
 - [Limitazioni del debug di WCF](../debugger/limitations-on-wcf-debugging.md)
 - [Procedura: eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -37,10 +37,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c349756eb12fe66800e209bd6a1aad5b8d2337ab
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255921"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Cenni preliminari sugli elementi e sui controlli host
@@ -102,13 +102,13 @@ ms.locfileid: "71255921"
 
 - [XMLNode (controllo)](../vsto/xmlnode-control.md)
 
-- [Controllo XMLNodes](../vsto/xmlnodes-control.md)
+- [XMLNodes (controllo)](../vsto/xmlnodes-control.md)
 
   I controlli host aggiunti ai documenti di Office si comportano come gli oggetti nativi di Office, ma dispongono di funzionalità aggiuntive che includono eventi e funzionalità di data binding. Ad esempio, per acquisire gli eventi di un oggetto <xref:Microsoft.Office.Interop.Excel.Range> nativo in Excel, è necessario per prima cosa gestire l'evento di modifica del foglio di lavoro. Quindi, è necessario determinare se la modifica è avvenuta all'interno di <xref:Microsoft.Office.Interop.Excel.Range>. Il controllo host <xref:Microsoft.Office.Tools.Excel.NamedRange> contiene invece un evento <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> che è possibile gestire direttamente.
 
   La relazione tra un elemento host e i controlli host è simile alla relazione tra un Windows Form e controlli Windows Forms. Posizionare un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in un elemento host <xref:Microsoft.Office.Tools.Excel.Worksheet> esattamente come si posiziona un controllo casella di testo in un oggetto Windows Form. L'illustrazione seguente mostra la relazione tra elementi host e controlli host.
 
-  ![Relazione tra elementi host e controlli host](../vsto/media/hostitemscontrols.png "Relazione tra elementi host e controlli host")
+  ![Relazione tra elementi e controlli host](../vsto/media/hostitemscontrols.png "Relazione tra elementi e controlli host")
 
   È anche possibile usare i controlli Windows Form nelle soluzioni Office aggiungendoli direttamente nell'area del documento di Word ed Excel. Per ulteriori informazioni, vedere [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
@@ -128,21 +128,21 @@ ms.locfileid: "71255921"
 
   Per altre informazioni su come aggiungere i controlli host ai documenti, vedere gli argomenti seguenti:
 
-- [Procedura: Aggiungere controlli Chart a fogli di foglio](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [Procedura: aggiungere controlli Chart a fogli di foglio](../vsto/how-to-add-chart-controls-to-worksheets.md)
 
-- [Procedura: Aggiungere controlli ListObject a fogli di foglio](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [Procedura: aggiungere controlli ListObject a fogli di foglio](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 
-- [Procedura: Aggiungere controlli NamedRange a fogli di foglio](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
+- [Procedura: aggiungere controlli NamedRange a fogli di foglio](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 
-- [Procedura: Aggiungere controlli XMLMappedRange a fogli di foglio](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [Procedura: aggiungere controlli XMLMappedRange a fogli di foglio](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
 
-- [Procedura: Aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Procedura: aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 
-- [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
+- [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 
-- [Procedura: Aggiungere controlli XMLNode ai documenti di Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
+- [Procedura: aggiungere controlli XMLNode ai documenti di Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
 
-- [Procedura: Aggiungere controlli XMLNodes ai documenti di Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
+- [Procedura: aggiungere controlli XMLNodes ai documenti di Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
 
 ### <a name="name-host-controls"></a>Controlli host del nome
  Quando si trascina un controllo host dalla **Casella degli strumenti** nel documento, il controllo viene automaticamente denominato usando il tipo del controllo con un numero incrementale alla fine. I segnalibri saranno, ad esempio, denominati **bookmark1**, **bookmark2**e così via. Se si usa la funzionalità nativa di Word o Excel per aggiungere il controllo, è possibile assegnare un nome specifico al momento della creazione. È anche possibile rinominare i controlli modificando il valore della proprietà **Name** nella finestra **Proprietà** .
@@ -163,7 +163,7 @@ ms.locfileid: "71255921"
 > Non rimuovere i controlli a livello di codice usando il gestore eventi `Shutdown` del documento o del foglio di lavoro. Gli elementi dell'interfaccia utente non sono più disponibili quando si verifica l'evento `Shutdown` . Se si vogliono rimuovere i controlli prima della chiusura dell'applicazione, aggiungere il codice a un altro gestore eventi, ad esempio `BeforeClose` o `BeforeSave`.
 
 ### <a name="program-against-host-control-events"></a>Programma per eventi di controllo host
- Uno dei modi in cui i controlli host estendono gli oggetti Office è tramite l'aggiunta di eventi. Ad esempio, anche se l'oggetto <xref:Microsoft.Office.Interop.Excel.Range> in Excel e l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> in Word non contengono eventi, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estende tali oggetti aggiungendo eventi programmabili. È possibile accedere a questi eventi e codificarli nello stesso modo in cui si accede agli eventi dei controlli presenti in Windows Form, ovvero tramite l'elenco a discesa degli eventi di Visual Basic e la pagina delle proprietà degli eventi in C#. Per altre informazioni, vedere [Procedura dettagliata: Programma per gli eventi di un controllo](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)NamedRange.
+ Uno dei modi in cui i controlli host estendono gli oggetti Office è tramite l'aggiunta di eventi. Ad esempio, anche se l'oggetto <xref:Microsoft.Office.Interop.Excel.Range> in Excel e l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> in Word non contengono eventi, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estende tali oggetti aggiungendo eventi programmabili. È possibile accedere a questi eventi e codificarli nello stesso modo in cui si accede agli eventi dei controlli presenti in Windows Form, ovvero tramite l'elenco a discesa degli eventi di Visual Basic e la pagina delle proprietà degli eventi in C#. Per ulteriori informazioni, vedere [procedura dettagliata: programma per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 > [!NOTE]
 > Non è necessario impostare la proprietà <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> dell'oggetto <xref:Microsoft.Office.Interop.Excel.Application> in Excel su **false**. Impostando questa proprietà su **false** si impedisce a Excel di generare eventi, inclusi gli eventi dei controlli host.

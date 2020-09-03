@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f72b403d4c6c9cc71bc2a3fdbff8f778a44b3b55
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663066"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
@@ -60,7 +60,7 @@ Specifica informazioni di documentazione per una variabile.
 
   `helpKeyword` Facoltativo. Parola chiave per Guida F1.
 
-  `locid` Facoltativo. Identificatore per le informazioni di localizzazione sulla variabile. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nel tag [\<loc>](../ide/loc-javascript.md).
+  `locid` Facoltativo. Identificatore per le informazioni di localizzazione sulla variabile. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nel [\<loc>](../ide/loc-javascript.md) tag.
 
   `description` Facoltativo. Descrizione della variabile.
 

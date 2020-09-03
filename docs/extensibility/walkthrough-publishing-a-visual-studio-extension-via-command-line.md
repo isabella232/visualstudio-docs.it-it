@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904678"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procedura dettagliata: pubblicazione di un'estensione di Visual Studio tramite la riga di comando
@@ -24,13 +24,13 @@ Questa procedura dettagliata illustra come pubblicare un'estensione di Visual St
 
 VsixPublisher.exe è lo strumento da riga di comando per la pubblicazione di estensioni di Visual Studio nel Marketplace. È possibile accedervi da $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. I comandi disponibili in questo strumento sono: **Publish**, **createPublisher**, **deletePublisher**, **deleteExtension**, **login**, **Logout**.
 
-## <a name="commands"></a>Comandi
+## <a name="commands"></a>Comandi:
 
 ### <a name="publish"></a>Pubblica
 
 Pubblica un'estensione nel Marketplace. L'estensione può essere VSIX, un file exe/MSI o un collegamento. Se l'estensione esiste già con la stessa versione, l'estensione verrà sovrascritta. Se l'estensione non esiste già, verrà creata una nuova estensione.
 
-|Opzioni del comando |Description |
+|Opzioni del comando |Descrizione |
 |---------|---------|
 |payload (obbligatorio) | Un percorso del payload da pubblicare o un collegamento da usare come "URL più informazioni". |
 |publishManifest (obbligatorio) | Percorso del file manifesto di pubblicazione da usare. |
@@ -45,7 +45,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Consente di creare un server di pubblicazione nel Marketplace. Registra anche il server di pubblicazione nel computer per azioni future, ad esempio l'eliminazione o la pubblicazione di un'estensione.
 
-|Opzioni del comando |Description |
+|Opzioni del comando |Descrizione |
 |---------|---------|
 |displayName (obbligatorio) | Nome visualizzato del server di pubblicazione. |
 |PublisherName (obbligatorio) | Nome del server di pubblicazione (ad esempio, l'identificatore). |
@@ -61,7 +61,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Elimina un server di pubblicazione nel Marketplace.
 
-|Opzioni del comando |Description |
+|Opzioni del comando |Descrizione |
 |---------|---------|
 |PublisherName (obbligatorio) | Nome del server di pubblicazione (ad esempio, l'identificatore). |
 |personalAccessToken (obbligatorio) | Token di accesso personale usato per autenticare il server di pubblicazione. |
@@ -74,7 +74,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Elimina un'estensione dal Marketplace.
 
-|Opzioni del comando |Description |
+|Opzioni del comando |Descrizione |
 |---------|---------|
 |ExtensionName (obbligatorio) | Nome dell'estensione da eliminare. |
 |PublisherName (obbligatorio) | Nome del server di pubblicazione (ad esempio, l'identificatore). |
@@ -88,7 +88,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Registra un server di pubblicazione nel computer.
 
-|Opzioni del comando |Description |
+|Opzioni del comando |Descrizione |
 |---------|---------|
 |personalAccessToken (obbligatorio | Token di accesso personale usato per autenticare il server di pubblicazione. |
 |PublisherName (obbligatorio) | Nome del server di pubblicazione (ad esempio, l'identificatore). |
@@ -102,7 +102,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Registra un server di pubblicazione fuori dal computer.
 
-|Opzioni del comando |Description |
+|Opzioni del comando |Descrizione |
 |---------|---------|
 |PublisherName (obbligatorio) | Nome del server di pubblicazione (ad esempio, l'identificatore). |
 |ignoreMissingPublisher | Specifica che lo strumento non dovrebbe essere in errore se il server di pubblicazione specificato non è già connesso. |
@@ -266,7 +266,7 @@ Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il
 
 2. Fare clic su **online** e quindi cercare TestPublish.
 
-3. Fare clic su **Download**. L'estensione verrà quindi pianificata per l'installazione.
+3. Fare clic su **Scarica**. L'estensione verrà quindi pianificata per l'installazione.
 
 4. Per completare l'installazione, chiudere tutte le istanze di Visual Studio.
 

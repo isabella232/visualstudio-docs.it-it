@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 23e1d2dafc570e31d8fa4a1dcbe84b575ce851cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152010"
 ---
-# <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
+# <a name="idialinenumberget_sourcefileid"></a>IDiaLineNumber::get_sourceFileId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un identificatore di file di origine univoco per il file di origine che ha contribuito con questa riga.  
+Recupera un identificatore univoco del file di origine per il file di origine che ha contribuito a questa riga.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,7 +35,7 @@ HRESULT get_sourceFileId ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce l'identificatore di file di origine univoco per il file di origine che ha contribuito con questa riga.  
+ out Restituisce l'identificatore univoco del file di origine per il file di origine che ha contribuito a questa riga.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5707ef277892c37cab16f78ac11113194a95e190
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663506"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
@@ -64,9 +64,9 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
 
  Per firmare l'assembly, questa opzione usa lo strumento Al.exe fornito da [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)]. Per altre informazioni su Al.exe, vedere [Procedura: firmare un assembly con un nome sicuro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).
 
- **Scegliere un elenco di file di chiave con nome sicuro** consente di specificare un file di chiave con nome sicuro nuovo o esistente usato per firmare l'assembly. Selezionare **\<Sfoglia...>** per selezionare un file di chiave esistente.
+ **Scegliere un elenco di file di chiave con nome sicuro** consente di specificare un file di chiave con nome sicuro nuovo o esistente usato per firmare l'assembly. Selezionare **\<Browse...>** per selezionare un file di chiave esistente.
 
- Selezionare **\<Nuovo...>** per creare un nuovo file di chiave con cui firmare l'assembly. Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**, che è possibile usare per specificare il nome di un file di chiave e proteggere il file con una password. La password deve avere una lunghezza di almeno 6 caratteri. Se si specifica una password, viene creato un file di scambio di informazioni personali (con estensione pfx, Personal inFormation eXchange). Se non si specifica una password, viene creato un file di chiave con nome sicuro (con estensione snk).
+ Selezionare **\<New...>** questa operazione per creare un nuovo file di chiave con cui firmare l'assembly. Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**, che è possibile usare per specificare il nome di un file di chiave e proteggere il file con una password. La password deve avere una lunghezza di almeno 6 caratteri. Se si specifica una password, viene creato un file di scambio di informazioni personali (con estensione pfx, Personal inFormation eXchange). Se non si specifica una password, viene creato un file di chiave con nome sicuro (con estensione snk).
 
  Il pulsante **Cambia password** modifica la password per il file di chiave di scambio di informazioni personali (con estensione pfx) usato per firmare l'assembly.
 
@@ -80,4 +80,4 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
 > Quando si firma un assembly, non sempre è possibile accedere a una chiave privata. Un'organizzazione, ad esempio, può avere una coppia di chiavi ben protetta a cui gli sviluppatori non hanno accesso su base giornaliera. La chiave pubblica è disponibile ma l'accesso alla chiave privata è limitato a poche persone. In un caso del genere, è possibile usare una firma *ritardata* o *parziale*. Questa funzione consente di fornire la chiave pubblica, rimandando l'aggiunta della chiave privata al momento della consegna dell'assembly.
 
 ## <a name="see-also"></a>Vedere anche
- Guida di [riferimento alle proprietà del progetto](../../ide/reference/project-properties-reference.md) [gestione dell'assembly e](../../ide/managing-assembly-and-manifest-signing.md) firma del manifesto firma [con nome sicuro per le applicazioni gestite](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [procedura: firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md) [procedura: firmare un assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [Procedura: firmare un assembly con un nome sicuro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [assembly](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) con nome sicuro
+ Guida di [riferimento alle proprietà del progetto](../../ide/reference/project-properties-reference.md) [gestione dell'assembly e](../../ide/managing-assembly-and-manifest-signing.md) firma del manifesto firma con [nome sicuro per le applicazioni gestite](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [procedura: firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md) [procedura: firmare un assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [procedura: firmare un assembly con un nome sicuro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [assembly](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) con nome sicuro

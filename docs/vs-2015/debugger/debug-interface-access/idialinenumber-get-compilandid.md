@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1210276728e40e43f8ae40eef78de4d53cf6262d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152085"
 ---
-# <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
+# <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un identificatore univoco per il modulo che ha contribuito con questa riga.  
+Recupera un identificatore univoco per il modulo che ha contribuito a questa riga.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,7 +35,7 @@ HRESULT get_compilandId ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `DWORD` che contiene l'identificatore univoco per il modulo che ha contribuito con questa riga.  
+ out Restituisce `DWORD` un oggetto che contiene l'identificatore univoco per modulo che ha contribuito a questa riga.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

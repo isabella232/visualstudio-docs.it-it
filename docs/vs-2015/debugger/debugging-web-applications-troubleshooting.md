@@ -1,5 +1,5 @@
 ---
-title: 'Debug di applicazioni Web: Risoluzione dei problemi | Microsoft Docs'
+title: 'Debug di applicazioni Web: risoluzione dei problemi | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac45b72b97a759e79a984f62421997125c5f1a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152856"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Debug di applicazioni Web: risoluzione dei problemi
@@ -30,12 +30,12 @@ ms.locfileid: "68152856"
 
 In questa sezione sono contenute le procedure comuni utilizzabili per risolvere gli errori.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Verificare le impostazioni delle proprietà IIS](../debugger/how-to-verify-iis-property-settings.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: verificare le impostazioni delle proprietà IIS](../debugger/how-to-verify-iis-property-settings.md)  
  Viene spiegato come impostare correttamente le proprietà in IIS per attivare il debug.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Viene spiegato come risolvere gli errori.  
   
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)  
