@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff263ace06e529c625d78daaa7055dbf70bd0fd
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463309"
 ---
 # <a name="idiasymbolget_isnaked"></a>IDiaSymbol::get_isNaked
@@ -48,6 +48,6 @@ out Restituisce `TRUE` se la funzione dispone dell' `naked` attributo; in caso c
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Chiamate di funzioni naked](/cpp/cpp/naked-function-calls)

@@ -1,5 +1,5 @@
 ---
-title: Il debug, finestra di dialogo Opzioni | Microsoft Docs
+title: Debug, finestra di dialogo Opzioni | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b1ab0f4875dcafc14b4b9fb8d3922d26e394c22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190477"
 ---
 # <a name="debugging-options-dialog-box"></a>Debug, finestra di dialogo Opzioni
@@ -47,5 +47,5 @@ Nella cartella **Debug** della finestra di dialogo **Opzioni** accessibile dal m
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  
+ [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [Riferimenti dell'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md)

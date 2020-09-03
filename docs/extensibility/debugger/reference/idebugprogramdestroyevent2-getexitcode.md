@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgramDestroyEvent2::GetExitCode . Documenti Microsoft
+title: 'IDebugProgramDestroyEvent2:: GetExitCode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc887cdcd2975bdfb4042acb1831a7482baa52c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722608"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
@@ -41,7 +41,7 @@ int GetExitCode( 
 
 ## <a name="parameters"></a>Parametri
 `pdwExit`\
-[fuori] Restituisce il codice di uscita del programma.
+out Restituisce il codice di uscita del programma.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

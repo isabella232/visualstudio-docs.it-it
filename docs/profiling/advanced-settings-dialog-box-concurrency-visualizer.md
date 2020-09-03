@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911217"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente di controllare quali tracce vengono raccolte.  Nella finestra sono presenti le schede seguenti: Simboli, Just My Code, Buffer, Filtro, Eventi CLR, Marcatori, Provider e File.
 
-## <a name="symbols"></a>Symbols
+## <a name="symbols"></a>Simboli
  Il visualizzatore di concorrenza usa le stesse impostazioni dei simboli del debugger di Visual Studio. Queste impostazioni vengono usate per risolvere gli stack di chiamate associati ai dati relativi alle prestazioni.  Quando elabora le tracce, il visualizzatore di concorrenza accede ai server di simboli specificati nella pagina delle impostazioni.  Quando si accede a questi dati in una rete, l'elaborazione delle tracce subisce un rallentamento.  Per ridurre il tempo necessario per risolvere simboli, è possibile memorizzarli nella cache in locale. Se i simboli sono stati scaricati, Visual Studio li caricherà dalla cache locale.
 
 ## <a name="just-my-code"></a>Just My Code
@@ -52,13 +52,13 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
 ### <a name="file-io-events"></a>Eventi di I/O dei file
  Gli eventi di I/O su file rappresentano gli accessi al disco per conto del processo corrente.  Se la raccolta di eventi di I/O su file viene disabilitata, la dimensione della traccia raccolta risulta ridotta, ma nella visualizzazione Thread non sarà riportata alcuna informazione sui canali o le operazioni del disco.
 
-## <a name="markers"></a>Indicatori
+## <a name="markers"></a>Marcatori
  Nella scheda **Marcatori** è possibile configurare il set di provider ETW mostrati come marcatori nel visualizzatore di concorrenza.  È anche possibile filtrare la raccolta di marcatori in base al livello di importanza e alla categoria ETW.  Se si usa l'[SDK del visualizzatore di concorrenza ](../profiling/concurrency-visualizer-sdk.md) e il proprio provider marcatori, è possibile registrare qui quest'ultimo in modo che venga mostrato nella visualizzazione Thread.
 
 ### <a name="add-a-new-provider"></a>Aggiungi nuovo provider
  Se il codice usa l'[SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md) o genera gli eventi ETW che seguono la convenzione <xref:System.Diagnostics.Tracing.EventSource>, è possibile visualizzare questi eventi nel visualizzatore di concorrenza registrandoli in questa finestra di dialogo.
 
- Nel campo **Nome** immettere un nome che descriva i tipi di eventi generati dal provider.  Nel campo **GUID** immettere il GUID associato a questo provider. A ogni provider ETW è associato un GUID.
+ Nel campo **nome** immettere un nome che descriva i tipi di eventi generati dal provider.  Nel campo **GUID** immettere il GUID associato a questo provider. A ogni provider ETW è associato un GUID.
 
  Facoltativamente, è possibile specificare se filtrare gli eventi da questo provider, in base alla categoria o al livello di importanza.  È possibile usare il campo categoria per applicare un filtro in base alle categorie dell'SDK del visualizzatore di concorrenza.  A questo scopo, immettere una stringa, delimitata da virgole, di categorie o di intervalli di categorie.  Con questa operazione vengono specificate le categorie di eventi del processo corrente da visualizzare.  Se si aggiunge un provider <xref:System.Diagnostics.Tracing.EventSource>, è possibile usare il campo relativo alla categoria per applicare un filtro in base alla parola chiave ETW.  Poiché la parola chiave è una maschera di bit, è possibile usare una stringa di interi, delimitata da virgole, per specificare i bit della maschera impostati. Ad esempio, "1,2" imposta il primo e il secondo bit e si traduce in 6 in formato decimale.
 
@@ -84,5 +84,5 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
   Nei due file con estensione etl vengono archiviati i dati di traccia non elaborati, mentre nei due file del visualizzatore di concorrenza vengono archiviati i dati elaborati.  I file con estensione etl non elaborati non vengono usati dopo l'elaborazione di una traccia.  La selezione della casella di controllo **Elimina i file di log traccia eventi (ETL) dopo l'analisi** riduce la quantità di dati di traccia archiviati nel disco.
 
 ## <a name="see-also"></a>Vedere anche
-- [Just my code](../profiling/just-my-code-threads-view.md)
-- [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)
+- [Just My Code](../profiling/just-my-code-threads-view.md)
+- [Marcatori del Visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)

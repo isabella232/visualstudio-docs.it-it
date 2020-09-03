@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591235"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisi dell'attività utente virtuale del test di carico nella visualizzazione Dettagli dell'Analizzatore test di carico
@@ -29,7 +29,7 @@ ms.locfileid: "75591235"
 La visualizzazione **Dettagli** consente di visualizzare il **Grafico attività utente virtuale**, usato per analizzare visivamente le attività eseguite dai singoli utenti virtuali durante il test di carico. Il **Grafico attività utente virtuale** consente di visualizzare modelli dell'attività utente, modelli di carico, test non riusciti o lenti correlati e richieste con altra attività utente virtuale. Il **Grafico attività utente virtuale** consente anche di determinare i picchi di utilizzo della CPU, le cadute di richieste al secondo e i test o le pagine in esecuzione durante tali picchi o cadute.
 
 > [!NOTE]
-> Prima di eseguire il test di carico per il quale si desidera utilizzare il **grafico dettagli attività utente virtuale**, è necessario verificare che la proprietà **Intervallo archiviazione dettagli** sia impostata sull'opzione **AllIndividualDetails** utilizzando l'Editor test prestazioni di carico.
+> Prima di eseguire il test di carico per il quale si desidera utilizzare il **grafico dei dettagli dell'attività utente virtuale**, è necessario verificare che la proprietà **Intervallo archiviazione dettagli** sia impostata sull'opzione **AllIndividualDetails** utilizzando l'Editor test di carico.
 
 **Riquadro Legenda dettagli**
 
@@ -55,11 +55,11 @@ Il riquadro Risultati filtro è visibile nel **Grafico attività utente virtuale
 
 |Attività|Argomenti correlati|
 |-|-|
-|**Eseguire il test** di carico: Dopo aver creato un test di carico e averlo configurato per abilitare la raccolta dei dati dell'attività utente virtuale, è necessario eseguire il test fino al completamento per visualizzare il **Grafico attività utente virtuale.**||
-|Visualizzare i risultati del test di **carico che contengono i dati dell'attività utente virtuale:View the load test results that contain the virtual user activity data:** Dopo che il test di carico è stato creato, configurato e completato l'esecuzione, è possibile visualizzare i dati dell'attività utente virtuale utilizzando il **Grafico attività utente virtuale.**|-   [Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Procedura: analizzare le operazioni eseguite dagli utenti virtuali durante un test di caricoHow to: Analyze what virtual users are doing during a load test](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Isolare i problemi di prestazioni nei test di carico:Isolate performance issues in load tests:** È possibile utilizzare il **Grafico attività utente virtuale** per isolare i problemi di prestazioni nel test di carico.|-   [Procedura dettagliata: utilizzo dell'area attività utente virtuale per isolare i problemiWalkthrough: Using the virtual user activity chart to isolate issues](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Eseguire il test di carico:** Dopo aver creato un test di carico e averlo configurato per abilitare la raccolta dati dell'attività utente virtuale, è necessario eseguire il test fino al completamento per poter visualizzare il **grafico attività utente virtuale**.||
+|**Visualizzare i risultati del test di carico contenenti i dati dell'attività utente virtuale:** Una volta che il test di carico è stato creato, configurato e l'esecuzione è stata completata, è possibile visualizzare i dati dell'attività utente virtuale utilizzando il **grafico attività utente virtuale**.|-   [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Procedura: analizzare le operazioni svolte dagli utenti virtuali durante un test di carico](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Isolare i problemi di prestazioni nei test di carico:** È possibile utilizzare il **grafico attività utente virtuale** per isolare i problemi di prestazioni nel test di carico.|-   [Procedura dettagliata: uso del grafico attività utente virtuale per isolare i problemi](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

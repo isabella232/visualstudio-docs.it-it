@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541258"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procedura: riabilitare un componente aggiuntivo VSTO disabilitato
@@ -47,7 +47,7 @@ ms.locfileid: "85541258"
 
 6. Selezionare il componente aggiuntivo VSTO e fare clic su **Attiva**.
 
-7. Fare clic su **Close**.
+7. Fare clic su **Chiudi**.
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO con disabilitazione soft
  La disabilitazione di tipo "soft" può verificarsi quando un componente aggiuntivo VSTO genera un errore che non causa la chiusura imprevista dell'applicazione. Ad esempio, un'applicazione potrebbe eseguire la disabilitazione di tipo "soft" di un componente aggiuntivo VSTO se viene generata un'eccezione non gestita durante l'esecuzione del gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> .

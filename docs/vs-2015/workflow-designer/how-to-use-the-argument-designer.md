@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a436d33bbb7c791f3f192357fded779fa77d148d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659107"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Procedura: utilizzare la finestra di progettazione argomenti
@@ -28,7 +28,7 @@ Se confrontata con le versioni precedenti di [!INCLUDE[dnprdnshort](../includes/
 
 2. Aprire la finestra di progettazione degli argomenti facendo clic sul pulsante **argomenti** nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione argomenti.
 
-3. Fare clic sulla riga vuota con etichetta **Crea argomento**. Verrà aggiunta una nuova riga con un nuovo argomento usando i valori predefiniti seguenti: argomentox per il **nome** dove x è un numero intero con un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di argomento univoci, **in** per la **direzione**, e **stringa** per il **tipo di argomento**. Per il **valore predefinito**non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
+3. Fare clic sulla riga vuota con etichetta **Crea argomento**. Verrà aggiunta una nuova riga con un nuovo argomento usando i valori predefiniti seguenti: argomentox per il **nome** dove x è un numero intero con un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di argomento univoci, **in** per la **direzione**e **stringa** per il **tipo di argomento**. Per il **valore predefinito**non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
 
     > [!NOTE]
     > Per eliminare un argomento, selezionarlo facendo clic su di esso e quindi premere il tasto **Canc** .

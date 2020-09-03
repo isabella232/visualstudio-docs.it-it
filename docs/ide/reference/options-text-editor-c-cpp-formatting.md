@@ -17,10 +17,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596255"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opzioni, Editor di testo, C/C++, Formattazione
@@ -32,7 +32,7 @@ Usare queste pagine delle proprietà per modificare il comportamento predefinito
 Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++**, quindi fare clic su **Formattazione**.
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per ulteriori informazioni, vedere [Personalizzare l'IDE](../../ide/personalizing-the-visual-studio-ide.md)di Visual Studio.
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="general-page"></a>Pagina Generale
 
@@ -40,7 +40,7 @@ Questa pagina include opzioni di formattazione di istruzioni e blocchi durante l
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 versione 15.7 e successive:**
+**Visual Studio 2017 versione 15,7 e successive**:
 
 ::: moniker-end
 
@@ -50,7 +50,7 @@ la pagina include anche opzioni per la configurazione del supporto di [ClangForm
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 versione 15.7 e successive:**
+**Visual Studio 2017 versione 15,7 e successive**:
 
 ::: moniker-end
 
@@ -64,5 +64,5 @@ Queste pagine consentono di personalizzare la formattazione in vari modi, ma ven
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)

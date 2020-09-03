@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7468fbd6422248f2f15bf74e70cdf9c5bee849c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593629"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -34,17 +34,17 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 ## <a name="arguments"></a>Argomenti
 
-- *Solutionname*
+- *NomeSoluzione*
 
   Percorso completo e nome del file di soluzione.
 
-- *Projectname*
+- *Nome progetto*
 
   Percorso completo e nome del file di progetto.
 
-- `/Out`*OutputFilename*
+- `/Out`*OutputFileName*
 
-  Facoltativa. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
+  facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
 ## <a name="remarks"></a>Osservazioni
 

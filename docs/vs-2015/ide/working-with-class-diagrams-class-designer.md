@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ff02c3aeab131c0b9a2423c2cb2376d9f0ee618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602394"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Utilizzo dei diagrammi classi (Progettazione classi)
@@ -50,15 +50,15 @@ I diagrammi classi consentono di comprendere la struttura delle classi dei proge
 
  Illustra come eseguire una copia da un diagramma classi a un documento di Office.
 
- [Procedura: Esportare diagrammi classi come immagini (Progettazione classi)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+ [Procedura: esportare diagrammi classi come immagini (Progettazione classi)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
 
  Descrive come esportare i diagrammi classi come immagini.
 
- [Procedura: Stampare diagrammi classi (Progettazione classi)](../ide/how-to-print-class-diagrams-class-designer.md)
+ [Procedura: stampare diagrammi classi (Progettazione classi)](../ide/how-to-print-class-diagrams-class-designer.md)
 
  Illustra come stampare i diagrammi classi.
 
- [Procedura: Aggiungere commenti a diagrammi classi (Progettazione classi)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
+ [Procedura: aggiungere commenti a diagrammi classi (Progettazione classi)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
 
  Descrive come aggiungere commenti a un diagramma classi.
 

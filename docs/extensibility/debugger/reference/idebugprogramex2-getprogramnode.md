@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgramEx2::GetProgramNode . Documenti Microsoft
+title: 'IDebugProgramEx2:: GetProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 13fea906a0234186050fc51a8f23c903778fb055
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722339"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
-Ottiene il nodo del programma associato a un programma.
+Ottiene il nodo di programma associato a un programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ int GetProgramNode( 
 
 ## <a name="parameters"></a>Parametri
 `ppProgramNode`\
-[fuori] Restituisce un oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il nodo del programma associato a questo programma.
+out Restituisce un oggetto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il nodo di programma associato al programma.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

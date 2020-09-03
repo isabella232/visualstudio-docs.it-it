@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 42bb554f8e57c036d41a89fdc2657a25ecc74e20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540283"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Contrassegnare i punti di ingresso del Windows Form con STAThread
@@ -36,10 +36,10 @@ ms.locfileid: "85540283"
  Un assembly fa riferimento allo <xref:System.Windows.Forms> spazio dei nomi e il punto di ingresso non è contrassegnato con l' <xref:System.STAThreadAttribute?displayProperty=fullName> attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.STAThreadAttribute>indica che il modello di threading COM per l'applicazione è un Apartment a thread singolo. Questo attributo deve essere presente sul punto di ingresso di qualsiasi applicazione che utilizza Windows Form; se omesso è possibile che il componente Windows non funzioni correttamente. Se l'attributo non è presente, l'applicazione utilizza il modello di Apartment a thread multipli, che non è supportato per Windows Forms.
+ <xref:System.STAThreadAttribute> indica che il modello di threading COM per l'applicazione è un Apartment a thread singolo. Questo attributo deve essere presente sul punto di ingresso di qualsiasi applicazione che utilizza Windows Form; se omesso è possibile che il componente Windows non funzioni correttamente. Se l'attributo non è presente, l'applicazione utilizza il modello di Apartment a thread multipli, che non è supportato per Windows Forms.
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]i progetti che usano il Framework dell'applicazione non devono contrassegnare il metodo **Main** con STAThread. Il [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilatore lo esegue automaticamente.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i progetti che usano il Framework dell'applicazione non devono contrassegnare il metodo **Main** con STAThread. Il [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilatore lo esegue automaticamente.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, aggiungere l' <xref:System.STAThreadAttribute> attributo al punto di ingresso. Se l' <xref:System.MTAThreadAttribute?displayProperty=fullName> attributo è presente, rimuoverlo.

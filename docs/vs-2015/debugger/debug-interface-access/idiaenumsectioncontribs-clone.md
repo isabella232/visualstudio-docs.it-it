@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsectioncontribs | Microsoft Docs
+title: 'IDiaEnumSectionContribs:: Clone | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 56267cbbffd6b5ff123dcf08ee71200a9b343fac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190028"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
@@ -35,10 +35,10 @@ HRESULT Clone( 
   
 #### <a name="parameters"></a>Parametri  
  ppenum  
- [out] Restituisce un [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) oggetto che contiene un duplicato dell'enumeratore. La sezione contributi non sono duplicati, solo l'enumeratore.  
+ out Restituisce un oggetto [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) che contiene un duplicato dell'enumeratore. I contributi della sezione non vengono duplicati, ma solo l'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

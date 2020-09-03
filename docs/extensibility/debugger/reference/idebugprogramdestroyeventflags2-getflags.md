@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgramDestroyEventFlags2::GetFlags . Documenti Microsoft
+title: 'IDebugProgramDestroyEventFlags2:: GetFlags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0a590fa78769f75fe1689f233361beb963d9ccf0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722518"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
-Recupera i flag di eliminazione del programma.
+Recupera i flag del programma Destroy.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ public int GetFlags(
 
 ## <a name="parameters"></a>Parametri
 `pdwFlags`\
-[fuori] Rappresenta i flag di eliminazione del programma.
+out Rappresenta il programma Distruggi flag.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

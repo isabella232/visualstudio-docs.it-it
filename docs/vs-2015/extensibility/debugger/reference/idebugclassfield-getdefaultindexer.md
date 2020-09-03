@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Microsoft Docs
+title: 'IDebugClassField:: GetDefaultIndexer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6be0a1925a1e5d48941c1c0e13ac1b4789687229
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191026"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene il nome dell'indicizzatore predefinita.  
+Ottiene il nome dell'indicizzatore predefinito.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrIndexer`  
- [out] Restituisce una stringa contenente il nome dell'indicizzatore predefinita.  
+ out Restituisce una stringa contenente il nome dell'indicizzatore predefinito.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se non esiste alcun indicizzatore predefinito. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non è presente alcun indicizzatore predefinito. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- L'indicizzatore predefinito di una classe è la proprietà che è contrassegnata come il `Default` proprietà per gli accessi alla matrice. Questo è specifico di [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]. Di seguito è riportato un esempio di un indicizzatore predefinito dichiarato in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] e modalità di utilizzo.  
+## <a name="remarks"></a>Osservazioni  
+ L'indicizzatore predefinito di una classe è la proprietà contrassegnata come `Default` proprietà per gli accessi alla matrice. Questa operazione è specifica di [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] . Di seguito è riportato un esempio di un indicizzatore predefinito dichiarato in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] e del modo in cui viene usato.  
   
 ```vb  
 Imports System.Collections;  

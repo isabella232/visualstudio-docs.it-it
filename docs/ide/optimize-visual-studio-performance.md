@@ -13,10 +13,10 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596996"
 ---
 # <a name="optimize-visual-studio-performance"></a>Ottimizzare le prestazioni di Visual Studio
@@ -49,9 +49,9 @@ Non eseguire la soluzione da un'unità USB. Copiarla nell'unità disco rigido o 
 
 ## <a name="help-us-improve"></a>Consigli per miglioramenti
 
-Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la funzione **Segnala un problema** per "registrare" un'analisi e inviarla a Microsoft. Selezionare l'icona del feedback accanto ad **Avvio veloce** o scegliere **Guida** > **Commenti e suggerimenti** > **Segnala un problema** dalla barra dei menu. Per ulteriori informazioni, vedere [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+Il feedback degli utenti ci permette di migliorare i nostri prodotti. Usare la funzione **Segnala un problema** per "registrare" un'analisi e inviarla a Microsoft. Selezionare l'icona del feedback accanto ad **Avvio veloce** o scegliere **Guida** > **Commenti e suggerimenti** > **Segnala un problema** dalla barra dei menu. Per ulteriori informazioni, vedere [come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Suggerimenti e trucchi per le prestazioni](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Suggerimenti sulle prestazioni](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Blog su Visual Studio - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Caricamento più rapido delle soluzioni con Visual Studio 2017 Versione 15.6)

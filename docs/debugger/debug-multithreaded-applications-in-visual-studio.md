@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72431802"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
@@ -42,7 +42,7 @@ Visual Studio offre diversi strumenti da usare per il debug di app multithread.
 
 - Per i thread, gli strumenti principali per il debug dei thread sono la finestra **thread** , i marcatori dei thread nelle finestre di origine, la finestra **stack in parallelo** , la finestra espressione di **controllo in parallelo** e la barra degli strumenti posizione di **debug** . Per ulteriori informazioni sulla finestra **thread** e sulla barra degli strumenti **posizione di debug** , vedere [procedura dettagliata: eseguire il debug utilizzando la finestra thread](../debugger/how-to-use-the-threads-window.md). Per informazioni su come usare le finestre **stack in parallelo** e espressioni di controllo in **parallelo** , vedere [Introduzione al debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md). Entrambi gli argomenti illustrano come usare i marcatori di thread.
 
-- Per il codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o il [runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime/), gli strumenti principali per il debug sono la finestra **stack in parallelo** , la finestra espressioni di controllo in **parallelo** e la finestra **attività** , che supporta anche JavaScript. Per iniziare, vedere [procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) e [procedura dettagliata C++ : debug di un'applicazione amp](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
+- Per il codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o il [runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime/), gli strumenti principali per il debug sono la finestra **stack in parallelo** , la finestra espressioni di controllo in **parallelo** e la finestra **attività** , che supporta anche JavaScript. Per iniziare, vedere [procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) e [procedura dettagliata: debug di un'applicazione C++ amp](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
 
 - Per il debug dei thread sulla GPU, lo strumento principale è la finestra **thread GPU** . Vedere [procedura: usare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md).
 
@@ -62,11 +62,11 @@ Panoramica delle funzionalità di debug dei thread, evidenziando le funzionalit�
 
 Elenca le funzionalità degli strumenti per il debug di thread e processi.
 
- [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)
+ [Debug di più processi](../debugger/debug-multiple-processes.md)
 
 Spiega la procedura per eseguire il debug di più processi
 
- [Procedura dettagliata: Eseguire il debug con la finestra Thread](../debugger/how-to-use-the-threads-window.md).
+ [Procedura dettagliata: eseguire il debug utilizzando la finestra thread](../debugger/how-to-use-the-threads-window.md).
 
 Procedura dettagliata in cui viene illustrato come utilizzare la finestra **thread** e la barra degli strumenti **posizione di debug** .
 
@@ -82,7 +82,7 @@ Diversi modi per passare il contesto di debug a un altro thread.
 
 Aggiunta di contrassegni o flag ai thread a cui è opportuno prestare particolare attenzione durante il debug.
 
- [Procedura: Eseguire il debug su un cluster ad alte prestazioni](../debugger/how-to-debug-on-a-high-performance-cluster.md)
+ [Procedura: eseguire il debug in un cluster ad alte prestazioni](../debugger/how-to-debug-on-a-high-performance-cluster.md)
 
 Tecniche per il debug di applicazioni in esecuzione su un cluster ad alte prestazioni.
 
@@ -94,7 +94,7 @@ Semplici tecniche utili per il debug di thread nativi.
 
 Attribuzione di un nome da visualizzare nella finestra **Thread**.
 
- [Procedura: Impostare il nome di un thread in codice gestito](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Procedura: impostare il nome di un thread nel codice gestito](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
 Attribuzione di un nome da visualizzare nella finestra **Thread**.
 

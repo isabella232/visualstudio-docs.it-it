@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4744864824da5efb238e9af1a5a12fcef79ea4ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659071"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Procedura: utilizzare la finestra di progettazione variabili
@@ -31,7 +31,7 @@ La finestra di progettazione variabili consente di creare variabili da usare in 
 
 3. Aprire la finestra di progettazione variabili facendo clic sul pulsante **variabili** nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione variabili.
 
-4. Fare clic sulla riga vuota con etichetta **Crea variabile**. Verrà aggiunta una nuova riga con una nuova variabile usando i valori predefiniti seguenti: VariableX per il **nome** dove x è un numero intero con un valore iniziale di 1 che viene incrementato automaticamente per creare nomi di variabile univoci, **stringa** per la **variabile tipo**e **sequenza** per l' **ambito**. Per **impostazione predefinita**, non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
+4. Fare clic sulla riga vuota con etichetta **Crea variabile**. Verrà aggiunta una nuova riga con una nuova variabile usando i valori predefiniti seguenti: VariableX per il **nome** dove x è un numero intero con un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di variabile univoci, **stringa** per il **tipo di variabile**e **sequenza** per l' **ambito**. Per **impostazione predefinita**, non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
 
     > [!NOTE]
     > Per eliminare una variabile, selezionarla facendo clic su di essa e quindi premere il tasto **Canc** .

@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593785"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
 I comandi **Vai a** di Visual Studio consentono di eseguire una ricerca mirata nel codice allo scopo di individuare rapidamente elementi specifici. Da una semplice interfaccia unificata è possibile passare a una riga, a un tipo, a un simbolo o a un file specifico e ad altro ancora.
 
-## <a name="how-to-use-it"></a>Come usarlo
+## <a name="how-to-use-it"></a>Modo d'uso
 
 Input | Funzione
 ------------ | ---
-**Tastiera** | Premere **Ctrl**+**T** o **Ctrl**+**,**
-**Mouse** | Selezionare **Modifica** > **Vai a** > **tutti**
+**Tastiera** | Premere **CTRL** + **T** o **CTRL** + **,**
+**Mouse** | Selezionare **modifica**  >  **Vai a**  >  **Vai a tutti**
 
 Viene visualizzata una piccola finestra nella parte superiore destra dell'editor del codice.
 
@@ -44,7 +44,7 @@ Durante la digitazione nella casella di testo i risultati vengono visualizzati i
 
 ## <a name="filtered-searches"></a>Ricerche con filtri
 
-Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli elementi della soluzione. È però possibile limitare la ricerca nel codice a tipi di elementi specifici anteponendo determinati caratteri di prefisso ai termini di ricerca. È inoltre possibile modificare rapidamente il filtro di ricerca scegliendo i pulsanti sulla barra degli strumenti della finestra di dialogo **Vai a.** I pulsanti per la modifica dei filtri relativi al tipo si trovano sul lato sinistro, mentre quelli per la modifica dell'ambito della ricerca sono sul lato destro.
+Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli elementi della soluzione. È però possibile limitare la ricerca nel codice a tipi di elementi specifici anteponendo determinati caratteri di prefisso ai termini di ricerca. È anche possibile modificare rapidamente il filtro di ricerca scegliendo i pulsanti nella barra degli strumenti della finestra **di dialogo Vai a** . I pulsanti per la modifica dei filtri relativi al tipo si trovano sul lato sinistro, mentre quelli per la modifica dell'ambito della ricerca sono sul lato destro.
 
 ![Passare a membri](../ide/media/vside_navigation_toolbar.png)
 
@@ -54,12 +54,12 @@ Per limitare la ricerca a un tipo specifico di elemento di codice, è possibile 
 
 Prefisso | Icona | Tasto di scelta rapida | Descrizione
 :-: | - | - | -
-:| ![Icona Riga](media/gotoall-line-icon.png) | **Ctrl**+**G** | Consente di passare al numero di riga specificato
-f| ![Icona File](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Consente di passare al file specificato
-r| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Consente di passare al file specificato, visitato di recente
-t| ![Icona Tipi](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Consente di passare al tipo specificato
-m| ![Icona Membri](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Consente di passare al membro specificato
-\#| ![Icona Simboli](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Consente di passare al simbolo specificato
+:| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL** + **G** | Consente di passare al numero di riga specificato
+f| ![Icona File](media/gotoall-files-icon.png) | **CTRL** + **1**, **CTRL** + **F** | Consente di passare al file specificato
+r| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **CTRL** + **1**, **CTRL** + **R** | Consente di passare al file specificato, visitato di recente
+t| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL** + **1**, **CTRL** + **T** | Consente di passare al tipo specificato
+m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL** + **1**, **CTRL** + **M** | Consente di passare al membro specificato
+\#| ![Icona Simboli](media/gotoall-symbols-icon.png) | **CTRL** + **1**, **CTRL** + **S** | Consente di passare al simbolo specificato
 
 ### <a name="filter-to-a-specific-location"></a>Filtrare in base a una posizione specifica
 

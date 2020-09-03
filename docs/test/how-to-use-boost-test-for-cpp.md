@@ -9,10 +9,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 34c593469a586d1314c7ee52f3aeb3ab6faf334c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287272"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Come usare Boost.Test per C++ in Visual Studio
@@ -156,6 +156,6 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 
 È ora possibile scrivere ed eseguire i Boost Test. Per informazioni sulle macro di test, vedere la [documentazione della libreria Boost test](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html) . Per informazioni sull'individuazione, l'esecuzione e il raggruppamento dei test usando **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)

@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594409"
 ---
-# <a name="manage-extensions-for-visual-studio"></a>Gestire le estensioni per Visual StudioManage extensions for Visual Studio
+# <a name="manage-extensions-for-visual-studio"></a>Gestire le estensioni per Visual Studio
 
-Le estensioni sono pacchetti di codice che vengono eseguiti all'interno di Visual Studio e forniscono funzionalità nuove o migliorate. Le estensioni possono essere controlli, esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a Visual Studio, ad esempio [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs) o Visual [Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode).
+Le estensioni sono pacchetti di codice eseguiti in Visual Studio e forniscono funzionalità nuove o migliorate. Le estensioni possono essere controlli, esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a Visual Studio, ad esempio [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsls-vs) o [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode).
 
-Per informazioni sulla creazione di estensioni di Visual Studio, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Per informazioni sull'utilizzo delle estensioni, vedere la pagina delle singole estensioni in [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+Per informazioni sulla creazione di estensioni di Visual Studio, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Per informazioni sull'uso delle estensioni, vedere la pagina relativa all'estensione singola in [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 ::: moniker range="vs-2017"
 
@@ -51,11 +51,11 @@ Il riquadro a sinistra suddivide le estensioni in categorie in base a quelle ins
 
 ::: moniker range="vs-2017"
 
-È possibile installare le estensioni da Visual Studio Marketplace o la finestra di dialogo Estensioni e aggiornamenti in Visual Studio.You can install extensions from [Visual Studio Marketplace](https://marketplace.visualstudio.com) or the Extensions and Updates dialog box in Visual Studio.
+È possibile installare le estensioni da [Visual Studio Marketplace](https://marketplace.visualstudio.com) o dalla finestra di dialogo estensioni e aggiornamenti in Visual Studio.
 
-Per installare le estensioni da Visual Studio:
+Per installare le estensioni in Visual Studio:
 
-1. In**Estensioni e aggiornamenti** **degli strumenti** > individuare l'estensione che si desidera installare. Se si conosce il nome o parte del nome dell'estensione, è possibile eseguire la ricerca nella finestra **Cerca.**
+1. Da **strumenti**  >  **estensioni e aggiornamenti**, trovare l'estensione che si vuole installare. Se si conosce il nome o parte del nome dell'estensione, è possibile eseguire la ricerca nella finestra di **ricerca** .
 
 2. Selezionare **Download**.
 
@@ -65,21 +65,21 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Installare senza usare la finestra di dialogo Estensioni e aggiornamenti
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo**Estensioni e aggiornamenti** degli **strumenti** > non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **INVIO**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra **Tools**  >  di dialogo strumenti**estensioni e aggiornamenti** non consente di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
 
 > [!NOTE]
-> - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo Estensioni e aggiornamenti non può abilitare o disabilitare le estensioni basate su MSI.
+> - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo estensioni e aggiornamenti non consente di abilitare o disabilitare le estensioni basate su MSI.
 > - Se un'estensione basata su MSI include un file *extension.vsixmanifest*, tale estensione viene visualizzata nella finestra di dialogo **Estensioni e aggiornamenti**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-È possibile installare estensioni da Visual Studio Marketplace o dalla finestra di dialogo Gestisci estensioni in Visual Studio.You can install extensions from [Visual Studio Marketplace](https://marketplace.visualstudio.com) or the Manage Extensions dialog box in Visual Studio.
+È possibile installare le estensioni da [Visual Studio Marketplace](https://marketplace.visualstudio.com) o dalla finestra di dialogo Gestisci estensioni in Visual Studio.
 
-Per installare le estensioni da Visual Studio:
+Per installare le estensioni in Visual Studio:
 
-1. In **Extensions** > **Manage Extensions**individuare l'estensione che si desidera installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di**ricerca**).
+1. Da **estensioni**  >  **Gestisci estensioni**trovare l'estensione che si vuole installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di**ricerca**).
 
 2. Selezionare **Download**.
 
@@ -89,7 +89,7 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Installare senza usare la finestra di dialogo Gestisci estensioni
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace.  > La **Extensions**finestra di dialogo**Gestisci estensioni** non è in grado di rilevare questi file, ma è possibile installare un file *Con estensione vsix* facendo doppio clic sul file o selezionando il file e premendo **INVIO**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra **Extensions**  >  di dialogo estensioni**Gestione estensioni** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
 
 > [!NOTE]
 > - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo Gestisci estensioni non può abilitare o disabilitare le estensioni basate su MSI.
@@ -102,19 +102,19 @@ Le estensioni che sono state incluse in file con estensione *vsix* possono esser
 Se si desidera interrompere l'utilizzo di un'estensione, è possibile disabilitarla o disinstallarla. Disabilitandola, un'estensione rimarrà installata ma non caricata. Trovare l'estensione e fare clic su **Disinstalla** o **Disabilita**. Per scaricare un'estensione disabilitata, è necessario riavviare Visual Studio.
 
 > [!NOTE]
-> È possibile disabilitare le estensioni VSIX ma non le estensioni installate tramite un file MSI. Le estensioni installate con MSI possono essere disinstallate solo.
+> È possibile disabilitare le estensioni VSIX ma non le estensioni installate usando un file MSI. Le estensioni installate con MSI possono essere disinstallate solo.
 
 ## <a name="per-user-and-administrative-extensions"></a>Estensioni amministrative e per utente
 
-La maggior parte delle estensioni sono per utente e vengono installate nella cartella *%LocalAppData\\ \><%.\\ * Alcune estensioni sono estensioni amministrative e vengono installate nella cartella di installazione di * \<Visual Studio>\\ * cartella di installazione di Visual Studio.
+La maggior parte delle estensioni è per singolo utente e sono installate nella cartella *%LocalAppData%\Microsoft\VisualStudio \\<Visual Studio versione \> \Extensions \\ * . Alcune estensioni sono estensioni amministrative e sono installate nella cartella * \<Visual Studio installation folder> \Common7\IDE\Extensions \\ * .
 
-Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente vengono disabilitate quando Visual Studio viene eseguito con autorizzazioni elevate.
+Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente sono disabilitate quando Visual Studio viene eseguito con autorizzazioni elevate.
 
 Per limitare il caricamento delle estensioni per utente:
 
-1. Aprire la pagina delle opzioni delle estensioni (**Estensioni** > **ambiente** > opzioni**degli strumenti** > **).**
+1. Aprire la pagina Opzioni estensioni (**strumenti**  >  **Opzioni**  >  **Environment**  >  **estensioni**di ambiente).
 
-2. Deselezionare la casella di controllo **Carica estensioni per utente durante l'esecuzione come amministratore.**
+2. Deselezionare la casella **di controllo carica estensioni per utente quando viene eseguito come amministratore** .
 
 3. Riavviare Visual Studio.
 
@@ -122,7 +122,7 @@ Per limitare il caricamento delle estensioni per utente:
 
 Le estensioni vengono aggiornate automaticamente quando è disponibile una nuova versione in Visual Studio Marketplace. Dopo essere stata rilevata, la nuova versione dell'estensione viene installata in background. Alla successiva apertura di Visual Studio, verrà eseguita la nuova versione dell'estensione.
 
-Se si desidera disabilitare gli aggiornamenti automatici, è possibile disattivare la funzionalità per tutte le estensioni o solo per estensioni specifiche.
+Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilitare la funzionalità per tutte le estensioni o solo per estensioni specifiche.
 
 ::: moniker range="vs-2017"
 
@@ -140,7 +140,7 @@ Se si desidera disabilitare gli aggiornamenti automatici, è possibile disattiva
 
 ::: moniker-end
 
-## <a name="crash-and-unresponsiveness-notifications"></a>Notifiche di arresto anomalo e mancata risposta
+## <a name="crash-and-unresponsiveness-notifications"></a>Notifiche di arresto anomalo e non risposta
 
 Visual Studio invia una notifica all'utente se sospetta che un'estensione è stata coinvolta in un arresto anomalo del sistema durante una sessione precedente. Quando Visual Studio subisce un arresto anomalo del sistema, memorizza lo stack dell'eccezione. Al successivo avvio di Visual Studio, viene esaminato lo stack, a partire dal nodo foglia e procedendo verso la base. Se Visual Studio determina che un frame appartiene a un modulo che fa parte di un'estensione installata e abilitata, visualizza una notifica.
 
@@ -150,27 +150,27 @@ Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica 
 
 ::: moniker range="vs-2017"
 
-- Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera, è possibile riattivare l'estensione nella finestra di dialogo**Estensioni e aggiornamenti** degli **strumenti.** > 
+- Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera, è possibile riabilitare l'estensione nella finestra di dialogo **strumenti**  >  **estensioni e aggiornamenti** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera, è possibile riattivare l'estensione nella finestra di dialogo**Gestione estensioni.** **Extensions** > 
+- Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera, è possibile riabilitare l'estensione nella finestra di dialogo **estensioni**  >  **Gestione estensioni** .
 
 ::: moniker-end
 
 - Scegliere **Non visualizzare più questo messaggio**.
 
   - Se la notifica riguarda un arresto anomalo in una sessione precedente, Visual Studio non visualizza più una notifica quando si verifica un arresto anomalo associato a questa estensione. Visual Studio visualizzerà comunque le notifiche in caso di blocco associabile all'estensione o per arresti anomali o blocchi che possono essere associati ad altre estensioni.
-  - Se la notifica non viene risposta, l'ambiente di sviluppo integrato (IDE) non visualizza più una notifica quando questa estensione è associata a mancata risposta. Visual Studio continuerà a visualizzare le notifiche relative all'arresto anomalo del sistema per questa estensione e le notifiche relative all'arresto anomalo e alla mancata risposta per altre estensioni.
+  - Se la notifica riguarda la mancata risposta, il Integrated Development Environment (IDE) non Visualizza più una notifica quando questa estensione è associata alla mancata risposta. Visual Studio visualizzerà comunque le notifiche relative all'arresto anomalo per questa estensione e le notifiche relative all'arresto anomalo e non rispondenti per altre estensioni.
 
-- Scegliere **Ulteriori informazioni** per passare a questa pagina.
+- Scegliere **altre informazioni** per passare a questa pagina.
 
 - Scegliere il pulsante **X** al termine della notifica per ignorarla. Verrà visualizzata una nuova notifica per le istanze future dell'estensione associata a un arresto anomalo o al blocco dell'interfaccia utente.
 
 > [!NOTE]
-> Una notifica di blocco dell'interfaccia utente o di arresto anomalo significa solo che uno dei moduli dell'estensione si trovava nello stack quando si è verificato il blocco dell'interfaccia utente o l'arresto anomalo. Ciò non significa necessariamente che l'estensione stessa sia la causa. È possibile che l'estensione abbia chiamato codice che fa parte di Visual Studio, che a sua volta ha provocato un'interfaccia utente non risponde o un arresto anomalo. Tuttavia, la notifica può rivelarsi ancora utile se l'estensione che ha causato il blocco dell'interfaccia utente o l'arresto anomalo non è importante. In questo caso, la disabilitazione dell'estensione evita il blocco dell'interfaccia utente o l'arresto anomalo in futuro senza influire sulla produttività.
+> Una notifica di blocco dell'interfaccia utente o di arresto anomalo significa solo che uno dei moduli dell'estensione si trovava nello stack quando si è verificato il blocco dell'interfaccia utente o l'arresto anomalo. Ciò non significa necessariamente che l'estensione stessa sia la causa. È possibile che l'estensione abbia chiamato codice che fa parte di Visual Studio, che a sua volta ha comportato la mancata risposta dell'interfaccia utente o un arresto anomalo. Tuttavia, la notifica può rivelarsi ancora utile se l'estensione che ha causato il blocco dell'interfaccia utente o l'arresto anomalo non è importante. In questo caso, la disabilitazione dell'estensione evita il blocco dell'interfaccia utente o l'arresto anomalo in futuro senza influire sulla produttività.
 
 ## <a name="samples"></a>Esempi
 
@@ -207,4 +207,4 @@ Quando si installa un esempio online, la soluzione viene memorizzata in due posi
 ## <a name="see-also"></a>Vedere anche
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com)
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+- [SDK di Visual Studio](../extensibility/visual-studio-sdk.md)

@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593486"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
-Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà "\<HTML >..." e tutte le altre parti standard di una pagina HTML. I *blocchi di controllo*inseriti nel modello sono frammenti del codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
+Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà " \<html> ..." e tutte le altre parti standard di una pagina HTML. I *blocchi di controllo*inseriti nel modello sono frammenti del codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
 
  Questa struttura facilita lo sviluppo di un modello, perché consente di partire da un prototipo del file generato inserendo in modo incrementale i blocchi di controllo che variano il risultato.
 
@@ -178,7 +178,7 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>Uso di definizioni esterne
 
-### <a name="assemblies"></a>Assemblies
+### <a name="assemblies"></a>Assembly
  I blocchi di codice del modello possono usare i tipi definiti negli assembly .NET usati più di frequente come ad esempio System.dll. Inoltre, è possibile fare riferimento ad altri assembly .NET o ad assembly personalizzati. È possibile fornire un percorso o il nome sicuro di un assembly:
 
 ```
@@ -206,7 +206,7 @@ private void WriteSquareLine(int i)
 
  Per altre informazioni, vedere [direttiva import T4](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a>Inclusione di codice e testo
+### <a name="including-code-and-text"></a><a name="Include"></a> Inclusione di codice e testo
  La direttiva `include` inserisce il testo da un altro file di modello. Ad esempio, questa direttiva inserisce il contenuto del file `test.txt`.
 
 ```
@@ -236,12 +236,12 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Caricare un file come modello esplorabile**. Un metodo più efficace è leggere i dati come un modello, in cui è possibile spostarsi con il codice del modello di testo. Ad esempio, è possibile caricare un file XML e spostarsi al suo interno con espressioni XPath. È inoltre possibile utilizzare [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) per creare un set di classi con cui è possibile leggere i dati XML.
+ **Caricare un file come modello esplorabile**. Un metodo più efficace è leggere i dati come un modello, in cui è possibile spostarsi con il codice del modello di testo. Ad esempio, è possibile caricare un file XML e spostarsi al suo interno con espressioni XPath. È inoltre possibile utilizzare [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) per creare un set di classi con cui è possibile leggere i dati XML.
 
  **Modificare il file del modello in un diagramma o in un form.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce strumenti che consentono di modificare un modello come diagramma o Windows Form. In questo modo diventa più semplice illustrare il modello agli utenti dell'applicazione generata. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crea anche un set di classi fortemente tipizzate che riflettono la struttura del modello. Per ulteriori informazioni, vedere [generazione di codice da un Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Percorsi di file relativi in modelli della fase di progettazione
- In un [modello di testo della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se si desidera fare riferimento a un file in un percorso relativo al modello di testo, utilizzare `this.Host.ResolvePath()`. È inoltre necessario impostare `hostspecific="true"` nella direttiva `template`:
+ In un [modello di testo della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se si vuole fare riferimento a un file in un percorso relativo al modello di testo, usare `this.Host.ResolvePath()` . È inoltre necessario impostare `hostspecific="true"` nella direttiva `template`:
 
 ```
 <#@ template hostspecific="true" language="C#" #>
@@ -272,7 +272,7 @@ Content of MyFile.txt is:
 |-|-|
 |Scrivere un modello.|[Linee guida per la scrittura di modelli di testo T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Generare testo usando il codice programma.|[Struttura del modello di testo](../modeling/writing-a-t4-text-template.md)|
-|Generare i file in una soluzione di Visual Studio.|[Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Genera i file in una soluzione di Visual Studio.|[Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Eseguire la generazione di testo all'esterno di Visual Studio.|[Generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Trasformare i dati nel formato di un linguaggio specifico di dominio.|[Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Scrivere processori di direttive per trasformare le origini dati.|[Personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md)|

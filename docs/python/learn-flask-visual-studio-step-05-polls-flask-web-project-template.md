@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154901"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello di progetto Web Flask di sondaggi
@@ -36,15 +36,15 @@ Visual Studio include anche il modello "Progetto Web Flask/Jade di sondaggi" che
 
 ## <a name="step-5-1-create-the-project"></a>Passaggio 5-1: Creare il progetto
 
-1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningFlask** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si desidera utilizzare una nuova soluzione, selezionare **File** > **nuovo** > **progetto.**
+1. In Visual Studio passare a **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione **LearningFlask** creata in precedenza in questa esercitazione e scegliere **Aggiungi** > **Nuovo progetto**. In alternativa, se si vuole usare una nuova soluzione, selezionare **file**  >  **Nuovo**  >  In alternativa, **progetto** ).
 
-1. Nella finestra di dialogo del nuovo progetto, cercare e selezionare il modello **Polls Flask Web Project,** chiamare il progetto "FlaskPolls" e scegliere **OK**.
+1. Nella finestra di dialogo nuovo progetto cercare e selezionare il modello di **progetto Web di polling Flask** , chiamare il progetto "FlaskPolls" e fare clic su **OK**.
 
 1. Come gli altri modelli di progetto in Visual Studio, il modello "Progetto Web Flask di sondaggi" include un file *requirements.txt* e Visual Studio chiede dove installare le dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite. Questo modello richiede l'uso di Flask nonché dei pacchetti azure-storage e pymongo. Il "Progetto Web Flask/Jade di sondaggi" richiede anche pyjade.
 
-1. Impostare il progetto **FlaskPolls** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse su tale progetto in **Esplora soluzioni** e selezionando Imposta come progetto di **avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
+1. Impostare il progetto **FlaskPolls** come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionando **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 
-1. Selezionare **Debug** > di**avvio debug** (**F5**) o utilizzare il pulsante **Server Web** sulla barra degli strumenti per eseguire il server:
+1. Selezionare **debug**  >  **Avvia debug** (**F5**) o usare il pulsante **server Web** sulla barra degli strumenti per eseguire il server:
 
     ![Pulsante di esecuzione del server Web della barra degli strumenti in Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -76,7 +76,7 @@ Come accennato prima, molte parti di un progetto creato dal modello "Progetto We
 
 ## <a name="step-5-2-understand-the-data-models"></a>Passaggio 5-2: Comprendere i modelli di dati
 
-I modelli di dati per l'app sono classi Python denominate Poll e Choice, definite in *models/\_\_\_\_init .py*. La classe Poll rappresenta una domanda, per la quale una raccolta di istanze di Choice rappresenta l'insieme delle risposte disponibili. Poll gestisce inoltre il numero totale di voti (per ogni scelta) e un metodo per calcolare le statistiche usate per la generazione di visualizzazioni:
+I modelli di dati per l'app sono classi Python denominate polling e Choice, definite in *models/ \_ \_ init \_ \_ . py*. La classe Poll rappresenta una domanda, per la quale una raccolta di istanze di Choice rappresenta l'insieme delle risposte disponibili. Poll gestisce inoltre il numero totale di voti (per ogni scelta) e un metodo per calcolare le statistiche usate per la generazione di visualizzazioni:
 
 ```python
 class Poll(object):
@@ -187,7 +187,7 @@ I passaggi seguenti aggiungono il supporto per un archivio dati diverso dai tre 
 
 ### <a name="seed-the-data-store-from-samplesjson"></a>Assegnare valori di inizializzazione all'archivio dati da samples.json
 
-Inizialmente, qualsiasi archivio dati scelto non contiene sondaggi, quindi la home page dell'app mostra il messaggio **Nessun sondaggio disponibile** insieme al pulsante **Crea sondaggi di esempio.** Quando si seleziona il pulsante, tuttavia, la visualizzazione cambia e appaiono i sondaggi disponibili. Questo cambiamento è dovuto ai tag condizionali in *templates\index.html* (alcune righe vuote sono state omesse per brevità):
+Inizialmente, l'archivio dati scelto non contiene sondaggi, quindi il home page dell'app mostra il messaggio **non sono disponibili polling** insieme al pulsante **Crea polling di esempio** . Quando si seleziona il pulsante, tuttavia, la visualizzazione cambia e appaiono i sondaggi disponibili. Questo cambiamento è dovuto ai tag condizionali in *templates\index.html* (alcune righe vuote sono state omesse per brevità):
 
 ```html
 {% extends "layout.html" %}
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-La chiamata a `repository.add_sample_polls()` termina in una delle implementazioni specifiche di `Repository` per l'archivio dati scelto. Ogni implementazione `_load_samples_json` chiama il metodo trovato nei *\_\_modelli init\_\_.py* per caricare il file *models.samples.json* in memoria, quindi scorre i dati per creare gli oggetti necessari `Poll` e `Choice` gli oggetti nell'archivio dati.
+La chiamata a `repository.add_sample_polls()` termina in una delle implementazioni specifiche di `Repository` per l'archivio dati scelto. Ogni implementazione chiama il `_load_samples_json` Metodo trovato nei *modelli \_ \_ init \_ \_ . py* per caricare il *models\samples.js* nel file in memoria, quindi scorre i dati per creare gli `Poll` oggetti e necessari `Choice` nell'archivio dati.
 
 Al termine del processo, l'istruzione `redirect('/')` nel metodo `seed` torna alla home page. Poiché `repository.get_polls` ora restituisce un oggetto dati, i tag condizionali in *templates\index.html* eseguono il rendering di una tabella che contiene i sondaggi.
 
@@ -242,7 +242,7 @@ La maggior parte delle visualizzazioni generate dal modello "Progetto Web Flask/
 
 A questo punto non resta che esaminare i voti (dettagli) e la visualizzazione dei risultati di un singolo sondaggio.
 
-Quando si seleziona un sondaggio dalla home page l'app passa all'URL /poll/\<key\> dove *key* è l'identificatore univoco per un sondaggio. In *views.py* si può vedere che la funzione `details` viene assegnata per gestire il routing di tale URL sia per GET che per le richieste. È anche possibile vedere che l'uso di `<key>` nel routing dell'URL consente di eseguire il mapping di tutte le route di quel modulo alla stessa funzione e genera un argomento alla funzione con lo stesso nome:
+Quando si seleziona un polling dalla home page, l'app passa all'URL/poll/ \<key\> dove *Key* è il identificatore univoco per un sondaggio. In *views.py* si può vedere che la funzione `details` viene assegnata per gestire il routing di tale URL sia per GET che per le richieste. È anche possibile vedere che l'uso di `<key>` nel routing dell'URL consente di eseguire il mapping di tutte le route di quel modulo alla stessa funzione e genera un argomento alla funzione con lo stesso nome:
 
 ```python
 @app.route('/poll/<key>', methods=['GET', 'POST'])
@@ -296,9 +296,9 @@ Per visualizzare un sondaggio (richieste GET), questa funzione chiama sempliceme
 {% endblock %}
 ```
 
-Poiché il pulsante di **voto** ha `type="submit"`, selezionandolo si genera una richiesta POST allo stesso URL, che viene di nuovo indirizzato alla funzione `details`. Questa volta, tuttavia, estrae la scelta dai dati del modulo e reindirizza a /results/\<choice\>.
+Poiché il pulsante di **voto** ha `type="submit"`, selezionandolo si genera una richiesta POST allo stesso URL, che viene di nuovo indirizzato alla funzione `details`. Questa volta, tuttavia, estrae la scelta dai dati del modulo e reindirizza a/results/ \<choice\> .
 
-L'URL /results/\<key\> viene indirizzato alla funzione `results` in *views.py*, che quindi chiama il metodo `calculate_stats` del sondaggio e usa *templates\results.html* per il rendering:
+L' \<key\> URL/Results/viene quindi indirizzato alla `results` funzione in *views.py*, che quindi chiama il metodo del polling `calculate_stats` e USA *templates\results.html* per il rendering:
 
 ```python
 @app.route('/results/<key>')

@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156600"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Procedura: Ignorare gli errori nelle attività
@@ -29,7 +29,7 @@ A volte è necessario che una compilazione sia a tolleranza di errore in determi
   
  L'attributo `ContinueOnError` può contenere uno dei valori seguenti:  
   
-- **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.  
+- **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori dall'attività vengono considerati avvisi.  
   
 - **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.  
   
@@ -66,5 +66,5 @@ A volte è necessario che una compilazione sia a tolleranza di errore in determi
   
 ## <a name="see-also"></a>Vedere anche
 [MSBuild](msbuild.md)  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)   
  [Attività](../msbuild/msbuild-tasks.md)

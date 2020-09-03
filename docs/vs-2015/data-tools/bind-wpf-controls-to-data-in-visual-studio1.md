@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25b144409ae58f006602706a5b5cb498c0535ea2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540166"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
@@ -39,7 +39,7 @@ ms.locfileid: "85540166"
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Attività coinvolte nell'associazione di controlli WPF a dati
  Nella tabella seguente vengono elencate le attività che possono essere eseguite trascinando gli elementi dalla finestra **Origini dati** a [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)].
 
-|Attività|Ulteriori informazioni|
+|Attività|Altre informazioni|
 |----------|----------------------|
 |Creare nuovi controlli associati a dati.<br /><br /> Associare controlli esistenti a dati.|[Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [associare controlli WPF a un DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Creare controlli che visualizzano i dati correlati in una relazione padre-figlio: quando l'utente seleziona un record di dati padre in un controllo, un altro controllo visualizza i dati figlio correlati per il record selezionato.|[Visualizzare dati correlati in applicazioni WPF](../data-tools/display-related-data-in-wpf-applications.md)|
@@ -68,7 +68,7 @@ ms.locfileid: "85540166"
 
 - Crea un data binding per un controllo. Se si trascina l'elemento in un controllo esistente della finestra di progettazione, XAML associa il controllo all'elemento. Se si trascina l'elemento in un contenitore, il codice XAML crea il controllo selezionato per l'elemento trascinato e associa il controllo all'elemento. Il controllo viene creato all'interno di un nuovo oggetto <xref:System.Windows.Controls.Grid>.
 
-  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]apporta inoltre le modifiche seguenti al file code-behind:
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apporta inoltre le modifiche seguenti al file code-behind:
 
 - Crea un gestore dell'evento <xref:System.Windows.FrameworkElement.Loaded> per l'elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] contenente il controllo. Il gestore dell'evento inserisce i dati nella tabella, recupera l'oggetto <xref:System.Windows.Data.CollectionViewSource> dalle risorse del contenitore, quindi imposta come elemento corrente il primo elemento di dati. Se un <xref:System.Windows.FrameworkElement.Loaded> gestore eventi esiste già, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiunge questo codice al gestore eventi esistente.
 
@@ -100,7 +100,7 @@ ms.locfileid: "85540166"
 > [!NOTE]
 > Le classi personalizzate devono essere pubbliche e, per impostazione predefinita, hanno un costruttore senza parametri. Non possono essere classi annidate con "punto" nella sintassi. Per ulteriori informazioni, vedere [XAML e classi personalizzate per WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] che esegue le operazioni seguenti:
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] che esegue le operazioni seguenti:
 
 - Aggiunge un nuovo oggetto <xref:System.Windows.Data.CollectionViewSource> alle risorse del contenitore in cui è stato trascinato l'elemento. <xref:System.Windows.Data.CollectionViewSource> è un oggetto che può essere utilizzato per esplorare e visualizzare i dati nell'oggetto.
 

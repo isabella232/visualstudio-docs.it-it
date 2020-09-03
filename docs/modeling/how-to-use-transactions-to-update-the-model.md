@@ -8,21 +8,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594604"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: utilizzare le transazioni per aggiornare il modello
 Le transazioni assicurano che le modifiche apportate all'archivio vengano considerate come un gruppo. È possibile eseguire il commit o il rollback delle modifiche raggruppate come singola unità.
 
- Ogni volta che il codice del programma modifica, aggiunge o Elimina qualsiasi elemento nell'archivio nell'SDK di visualizzazione e modellazione di Visual Studio, questa operazione deve essere eseguita all'interno di una transazione. Quando si verifica la modifica, deve essere presente un'istanza attiva di <xref:Microsoft.VisualStudio.Modeling.Transaction> associato all'archivio. Questo vale per tutti gli elementi del modello, le relazioni, le forme, i diagrammi e le relative proprietà.
+ Ogni volta che il codice del programma modifica, aggiunge o Elimina qualsiasi elemento nell'archivio nell'SDK di visualizzazione e modellazione di Visual Studio, questa operazione deve essere eseguita all'interno di una transazione. Quando si verifica la modifica, deve essere presente un'istanza attiva di <xref:Microsoft.VisualStudio.Modeling.Transaction> associata all'archivio. Questo vale per tutti gli elementi del modello, le relazioni, le forme, i diagrammi e le relative proprietà.
 
  Il meccanismo di transazione consente di evitare gli stati incoerenti. Se si verifica un errore durante una transazione, viene eseguito il rollback di tutte le modifiche. Se l'utente esegue un comando Undo, ogni transazione recente viene considerata come un singolo passaggio. L'utente non può annullare parti di una modifica recente, a meno che non vengano esplicitamente inserite in transazioni separate.
 
 ## <a name="opening-a-transaction"></a>Apertura di una transazione
- Il metodo più pratico per gestire una transazione è costituito da un'istruzione `using` racchiusa in un'istruzione `try...catch`:
+ Il metodo più pratico per gestire una transazione è costituito da un' `using` istruzione racchiusa in un' `try...catch` istruzione:
 
 ```csharp
 Store store; ...
@@ -48,13 +48,13 @@ catch (Exception ex)
 }
 ```
 
- Se un'eccezione che impedisce l'`Commit()` finale si verifica durante le modifiche, l'archivio verrà reimpostato sullo stato precedente. Ciò consente di verificare che gli errori non lascino il modello in uno stato incoerente.
+ Se si verifica un'eccezione che impedisce l'esecuzione finale `Commit()` durante le modifiche, verrà ripristinato lo stato precedente dell'archivio. Ciò consente di verificare che gli errori non lascino il modello in uno stato incoerente.
 
- È possibile apportare un numero qualsiasi di modifiche all'interno di una transazione. È possibile aprire nuove transazioni all'interno di una transazione attiva. È necessario eseguire il commit o il rollback delle transazioni nidificate prima della fine della transazione contenitore. Per ulteriori informazioni, vedere l'esempio per la proprietà <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>.
+ È possibile apportare un numero qualsiasi di modifiche all'interno di una transazione. È possibile aprire nuove transazioni all'interno di una transazione attiva. È necessario eseguire il commit o il rollback delle transazioni nidificate prima della fine della transazione contenitore. Per ulteriori informazioni, vedere l'esempio relativo alla <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> Proprietà.
 
- Per rendere permanenti le modifiche, è necessario `Commit` la transazione prima che venga eliminata. Se si verifica un'eccezione non rilevata all'interno della transazione, l'archivio verrà reimpostato sullo stato prima delle modifiche.
+ Per rendere permanenti le modifiche, è necessario che `Commit` la transazione sia stata eliminata. Se si verifica un'eccezione non rilevata all'interno della transazione, l'archivio verrà reimpostato sullo stato prima delle modifiche.
 
-## <a name="rolling-back-a-transaction"></a>Esecuzione del rollback di una transazione
+## <a name="rolling-back-a-transaction"></a>Rollback di una transazione
  Per assicurarsi che lo stato dell'archivio rimanga o venga ripristinato prima della transazione, è possibile usare una di queste tattiche:
 
 1. Genera un'eccezione non rilevata nell'ambito della transazione.

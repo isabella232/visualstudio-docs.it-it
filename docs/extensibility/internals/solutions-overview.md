@@ -11,39 +11,39 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 767db749d953855cd5c6f81f356a195c830aa838
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705304"
 ---
 # <a name="solutions-overview"></a>Panoramica delle soluzioni
 
-Una soluzione è un raggruppamento di uno o più progetti che lavorano insieme per creare un'applicazione. Le informazioni sul progetto e sullo stato relative alla soluzione vengono archiviate in due file di soluzione diversi. Il file di [soluzione (sln)](solution-dot-sln-file.md) è basato su testo e può essere inserito nel controllo del codice sorgente e condiviso tra gli utenti. Il file dell'opzione utente della [soluzione (con estensione suo)](solution-user-options-dot-suo-file.md) è binario. Di conseguenza, il file con estensione suo non può essere inserito nel controllo del codice sorgente e contiene informazioni specifiche dell'utente.
+Una soluzione è un raggruppamento di uno o più progetti che interagiscono tra loro per creare un'applicazione. Le informazioni sul progetto e sullo stato relative alla soluzione vengono archiviate in due diversi file di soluzione. Il [file della soluzione (. sln)](solution-dot-sln-file.md) è basato su testo e può essere inserito nel controllo del codice sorgente e condiviso tra gli utenti. Il [file delle opzioni utente della soluzione (. suo)](solution-user-options-dot-suo-file.md) è binario. Di conseguenza, il file con estensione suo non può essere inserito nel controllo del codice sorgente e contiene informazioni specifiche dell'utente.
 
-Qualsiasi VSPackage può scrivere in entrambi i tipi di file di soluzione. A causa della natura dei file, ci sono due diverse interfacce implementate per scrivere su di loro. L'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> scrive informazioni di testo nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> file sln e l'interfaccia scrive flussi binari nel file con estensione suo.
-
-> [!NOTE]
-> Un progetto non deve scrivere in modo esplicito una voce per se stesso nel file di soluzione; l'ambiente gestisce che per il progetto. Pertanto, a meno che non si desidera aggiungere contenuto aggiuntivo in modo specifico al file di soluzione, non è necessario registrare il pacchetto VSPackage in questo modo.
-
-Ogni VSPackage che supporta la persistenza della soluzione utilizza tre interfacce, l'interfaccia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> che viene implementata dall'ambiente e chiamata dal pacchetto VSPackage e `IVsPersistSolutionProps` e `IVsPersistSolutionOpts`, che sono entrambi implementati dal pacchetto VSPackage. L'interfaccia `IVsPersistSolutionOpts` deve essere implementata solo se le informazioni private devono essere scritte dal pacchetto VSPackage nel file con estensione suo.
-
-Quando viene aperta una soluzione, viene eseguito il processo seguente.
-
-1. L'ambiente legge la soluzione.
-
-2. Se l'ambiente `CLSID`trova un , carica il pacchetto VSPackage corrispondente.
-
-3. Se viene caricato un pacchetto `QueryInterface` VSPackage, l'ambiente chiama l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> per l'interfaccia necessaria per il pacchetto VSPackage.
-
-   - Durante la lettura da un file sln, l'ambiente richiede `QueryInterface` `IVsPersistSolutionProps`.
-
-   - Durante la lettura da un file `QueryInterface` `IVsPersistSolutionOpts`con estensione suo, l'ambiente richiede .
-
-   Informazioni specifiche relative all'uso di questi file sono disponibili in [Soluzione (. Sln) Opzioni](../../extensibility/internals/solution-dot-sln-file.md) utente file e [soluzione (. Suo) File](../../extensibility/internals/solution-user-options-dot-suo-file.md).
+Qualsiasi pacchetto VSPackage può scrivere in entrambi i tipi di file di soluzione. A causa della natura dei file, esistono due interfacce diverse implementate per la scrittura. L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interfaccia scrive le informazioni di testo nel file con estensione sln e l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfaccia scrive i flussi binari nel file con estensione suo.
 
 > [!NOTE]
-> Se si vuole creare una nuova configurazione di soluzione costituita da configurazioni di due progetti ed escluderne un terzo dalla compilazione, è necessario usare l'interfaccia utente o l'automazione delle pagine delle proprietà. Non è possibile modificare direttamente le configurazioni del gestore di compilazione `SolutionBuild` della soluzione e le relative proprietà, ma è possibile modificare il gestore di compilazione della soluzione usando la classe da DTE nel modello di automazione. Per ulteriori informazioni sulla configurazione delle soluzioni, vedere [Configurazione della soluzione](../../extensibility/internals/solution-configuration.md).
+> Un progetto non deve scrivere in modo esplicito una voce per se stesso nel file di soluzione. l'ambiente gestisce quello per il progetto. Pertanto, a meno che non si desideri aggiungere contenuti aggiuntivi in modo specifico al file della soluzione, non è necessario registrare il pacchetto VSPackage in questo modo.
+
+Ogni VSPackage che supporta la persistenza della soluzione USA tre interfacce, l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfaccia, che viene implementata dall'ambiente e chiamata dal pacchetto VSPackage, e `IVsPersistSolutionProps` e `IVsPersistSolutionOpts` , che sono entrambi implementati dal pacchetto VSPackage. L' `IVsPersistSolutionOpts` interfaccia deve essere implementata solo se le informazioni private devono essere scritte dal pacchetto VSPackage nel file con estensione suo.
+
+Quando si apre una soluzione, si verifica il processo seguente.
+
+1. La soluzione viene letta dall'ambiente.
+
+2. Se l'ambiente rileva un oggetto `CLSID` , carica il pacchetto VSPackage corrispondente.
+
+3. Se viene caricato un pacchetto VSPackage, l'ambiente chiama l' `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfaccia per l'interfaccia richiesta dal pacchetto VSPackage.
+
+   - Quando si esegue la lettura da un file con estensione sln, l'ambiente chiama `QueryInterface` `IVsPersistSolutionProps` .
+
+   - Quando si esegue la lettura da un file con estensione suo, l'ambiente chiama `QueryInterface` `IVsPersistSolutionOpts` .
+
+   Informazioni specifiche relative all'utilizzo di questi file sono disponibili nella [soluzione (. Sln)](../../extensibility/internals/solution-dot-sln-file.md) [Opzioni utente file e soluzione (. Suo) file](../../extensibility/internals/solution-user-options-dot-suo-file.md).
+
+> [!NOTE]
+> Se si vuole creare una nuova configurazione di soluzione costituita da due configurazioni di progetti ed escludendo un terzo dalla compilazione, è necessario usare l'interfaccia utente delle pagine delle proprietà o l'automazione. Non è possibile modificare direttamente le configurazioni del gestore di compilazione della soluzione e le relative proprietà, ma è possibile modificare il gestore di compilazione della soluzione usando la `SolutionBuild` classe da DTE nel modello di automazione. Per altre informazioni sulla configurazione delle soluzioni, vedere [configurazione della soluzione](../../extensibility/internals/solution-configuration.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,5 +1,5 @@
 ---
-title: Persistenza del progetto Documenti Microsoft
+title: Persistenza progetto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706464"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
-La persistenza è una considerazione di progettazione chiave per il progetto. La maggior parte dei progetti utilizza elementi di progetto che rappresentano i file; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta anche progetti i cui dati non sono basati su file. Sia i file di proprietà del progetto che il file di progetto devono essere resi persistenti. L'IDE indica al progetto di salvare se stesso o un elemento di progetto.
+La persistenza è una considerazione della progettazione chiave per il progetto. La maggior parte dei progetti utilizza gli elementi del progetto che rappresentano i file; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta inoltre progetti i cui dati non sono basati su file. È necessario che i file di proprietà del progetto e il file di progetto siano salvati in permanenza. L'IDE indica al progetto di salvare se stesso o un elemento del progetto.
 
- I modelli per i progetti vengono passati alla factory del progetto. I modelli devono supportare l'inizializzazione di tutti gli elementi di progetto in base ai requisiti del tipo di progetto specifico. Questi modelli possono essere salvati in un secondo momento come file di progetto e gestiti dall'IDE tramite la soluzione. Per ulteriori informazioni, vedere Creazione di istanze di [progetto tramite soluzioni](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) [e](../../extensibility/internals/solutions-overview.md)factory di progetto .
+ I modelli per i progetti vengono passati alla factory del progetto. I modelli devono supportare l'inizializzazione di tutti gli elementi del progetto in base ai requisiti del tipo di progetto specifico. Questi modelli possono essere salvati in un secondo momento come file di progetto e gestiti dall'IDE tramite la soluzione. Per altre informazioni, vedere [Creating Project Instances by using Project factorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) and [Solutions](../../extensibility/internals/solutions-overview.md).
 
- Gli elementi di progetto possono essere basati su file o non basati su file:Project items can be file-based or non-file-based:
+ Gli elementi del progetto possono essere basati su file o non basati su file:
 
-- Gli elementi basati su file possono essere locali o remoti. Nei progetti Web in C, ad esempio, le connessioni ai file in un sistema remoto vengono mantenute localmente, mentre i file stessi vengono mantenuti nel sistema remoto.
+- Gli elementi basati su file possono essere locali o remoti. Nei progetti Web in C#, ad esempio, le connessioni ai file in un sistema remoto vengono mantenute localmente, mentre i file stessi vengono mantenuti nel sistema remoto.
 
-- Gli elementi non basati su file possono salvare gli elementi in un database o in un repository.
+- Gli elementi non basati su file possono salvare elementi in un database o in un repository.
 
-## <a name="commit-models"></a>Modelli di commitCommit Models
- Dopo aver deciso dove si trovano gli elementi di progetto, è necessario scegliere il modello di commit appropriato. Ad esempio, in un modello basato su file con file locali, ogni progetto può essere salvato in modo autonomo. In un modello di repository, è possibile salvare più elementi in una transazione. Per ulteriori informazioni, consultate [Decisioni di progettazione dei](../../extensibility/internals/project-type-design-decisions.md)tipi di progetto .
+## <a name="commit-models"></a>Esegui commit modelli
+ Dopo aver deciso dove si trovano gli elementi del progetto, è necessario scegliere il modello di commit appropriato. Ad esempio, in un modello basato su file con file locali, ogni progetto può essere salvato in modo autonomo. In un modello di repository è possibile salvare più elementi in una transazione. Per altre informazioni, vedere [decisioni di progettazione dei tipi di progetto](../../extensibility/internals/project-type-design-decisions.md).
 
- Per determinare le estensioni <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> di file, i progetti implementano l'interfaccia, che fornisce informazioni che consentono al client di un oggetto di implementare la finestra di dialogo **Salva con** nome, ovvero di compilare l'elenco a discesa **Tipo** file e gestire l'estensione di file iniziale.
+ Per determinare le estensioni dei nomi di file, i progetti implementano l' <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaccia, che fornisce informazioni che consentono al client di un oggetto di implementare la finestra di dialogo **Salva con** nome, ovvero di compilare l'elenco a discesa **Salva come tipo** e gestire l'estensione del nome file iniziale.
 
- L'IDE `IPersistFileFormat` chiama l'interfaccia sul progetto per indicare che il progetto deve rendere persistenti i relativi elementi di progetto in base alle esigenze. Pertanto, l'oggetto possiede tutti gli aspetti del relativo file e formato. Ciò include il nome del formato dell'oggetto.
+ L'IDE chiama l' `IPersistFileFormat` interfaccia nel progetto per indicare che il progetto deve salvare in modo permanente gli elementi del progetto nel modo appropriato. Pertanto, l'oggetto è proprietario di tutti gli aspetti del relativo file e del relativo formato. Include il nome del formato dell'oggetto.
 
- Nel caso in cui gli `IPersistFileFormat` elementi non sono file, è ancora come gli elementi non basati su file vengono resi persistenti. Anche i file di progetto, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ad esempio i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] file con estensione vbp per i progetti o i file con estensione vcproj per i progetti, devono essere mantenuti.
+ Nel caso in cui gli elementi non siano file, `IPersistFileFormat` rimane comunque il modo in cui gli elementi non basati su file sono persistenti. Anche i file di progetto, ad esempio i file con estensione vbp per [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] i progetti o i file VCPROJ per i [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] progetti, devono essere salvati in modo permanente.
 
- Per le azioni di salvataggio, l'IDE esamina la tabella documenti in <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> esecuzione <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> (RDT) e la gerarchia passa i comandi alle interfacce e . Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> metodo viene implementato per determinare se l'elemento è stato modificato. Se l'elemento <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> ha, il metodo viene implementato per salvare l'elemento modificato.
+ Per le azioni di salvataggio, l'IDE esamina la tabella documenti in esecuzione (RDT) e la gerarchia passa i comandi alle <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> interfacce e. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> metodo viene implementato per determinare se l'elemento è stato modificato. Se l'elemento ha, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> metodo viene implementato per salvare l'elemento modificato.
 
- I metodi `IVsPersistHierarchyItem2` sull'interfaccia vengono utilizzati per determinare se un elemento può essere ricaricato e, se l'elemento può essere, per ricaricarlo. Inoltre, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> metodo può essere implementato per fare in modo che gli elementi modificati vengano eliminati senza essere salvati.
+ I metodi sull' `IVsPersistHierarchyItem2` interfaccia vengono usati per determinare se un elemento può essere ricaricato e, se l'elemento può essere, per ricaricarlo. Inoltre, è <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> possibile implementare il metodo per fare in modo che gli elementi modificati vengano eliminati senza essere salvati.
 
 ## <a name="see-also"></a>Vedere anche
 - [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)

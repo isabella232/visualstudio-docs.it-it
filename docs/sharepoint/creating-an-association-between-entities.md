@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981084"
 ---
 # <a name="create-an-association-between-entities"></a>Creare un'associazione tra entità
@@ -47,7 +47,7 @@ ms.locfileid: "72981084"
 ### <a name="foreign-key-based-association"></a>Associazione basata su chiavi esterne
  È possibile creare un'associazione basata su chiavi esterne correlando un identificatore nell'entità di origine ai descrittori di tipo definiti nell'entità di destinazione. Questa relazione consente ai consumer del modello di fornire un'interfaccia utente avanzata per gli utenti. Ad esempio, un modulo in Outlook che consente a un utente di creare un ordine di vendita in grado di visualizzare i clienti in un elenco a discesa; o un elenco di ordini di vendita in SharePoint che consente agli utenti di aprire una pagina del profilo per un cliente.
 
- Per creare un'associazione basata su chiave esterna, correlare gli identificatori e i descrittori di tipo che condividono lo stesso nome e tipo. Ad esempio, è possibile creare un'associazione basata su chiave esterna tra un'entità `Contact` e un'entità `SalesOrder`. L'entità `SalesOrder` restituisce un descrittore di tipo `ContactID` come parte del parametro restituito di Finder o di metodi di ricerca specifici. Entrambi i descrittori di tipo vengono visualizzati nell' **editor di associazione**. Per creare una relazione basata su chiave esterna tra l'entità `Contact` e `SalesOrder` entità, scegliere l'identificatore `ContactID` accanto a ognuno di questi campi.
+ Per creare un'associazione basata su chiave esterna, correlare gli identificatori e i descrittori di tipo che condividono lo stesso nome e tipo. Ad esempio, è possibile creare un'associazione basata su chiave esterna tra un' `Contact` entità e un' `SalesOrder` entità. L' `SalesOrder` entità restituisce un `ContactID` descrittore di tipo come parte del parametro restituito di Finder o di metodi di ricerca specifici. Entrambi i descrittori di tipo vengono visualizzati nell' **editor di associazione**. Per creare una relazione basata su chiave esterna tra `Contact` entità ed `SalesOrder` entità, scegliere l' `ContactID` identificatore accanto a ognuno di questi campi.
 
  Aggiungere codice al metodo dello strumento di spostamento dell'associazione dell'entità di origine che restituisce una raccolta di entità di destinazione. Nell'esempio seguente vengono restituiti gli ordini di vendita per un contatto.
 
@@ -60,18 +60,18 @@ ms.locfileid: "72981084"
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
 ### <a name="foreign-keyless-association"></a>Associazione di chiave esterna
- È possibile creare un'associazione senza eseguire il mapping degli identificatori ai descrittori di tipo di campo. Creare questo tipo di associazione quando l'entità di origine non dispone di una relazione diretta con l'entità di destinazione. Ad esempio, una tabella `SalesOrderDetail` non dispone di una chiave esterna che esegue il mapping a una chiave primaria in una tabella `Contact`.
+ È possibile creare un'associazione senza eseguire il mapping degli identificatori ai descrittori di tipo di campo. Creare questo tipo di associazione quando l'entità di origine non dispone di una relazione diretta con l'entità di destinazione. Ad esempio, una `SalesOrderDetail` tabella non dispone di una chiave esterna che esegue il mapping a una chiave primaria in una `Contact` tabella.
 
- Se si desidera visualizzare le informazioni nella tabella `SalesOrderDetail` che si riferisce a una `Contact`, è possibile creare un'associazione di chiave esterna non consentita tra l'entità `Contact` e l'entità `SalesOrderDetail`.
+ Se si desidera visualizzare le informazioni nella `SalesOrderDetail` tabella che è correlata a un `Contact` , è possibile creare un'associazione di chiave esterna non consentita tra `Contact` entità ed `SalesOrderDetail` entità.
 
- Nel metodo di navigazione dell'associazione dell'entità `Contact`, restituire le entità `SalesOrderDetail` creando un join di tabelle oppure chiamando un stored procedure.
+ Nel metodo di navigazione di associazione dell' `Contact` entità, restituire le `SalesOrderDetail` entità mediante l'Unione di tabelle o chiamando un stored procedure.
 
  Nell'esempio seguente vengono restituiti i dettagli di tutti gli ordini di vendita mediante l'Unione di tabelle.
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- Nel metodo di navigazione dell'associazione dell'entità `SalesOrderDetail`, restituire la `Contact`correlata. Nell'esempio che segue viene illustrato quanto descritto.
+ Nel metodo di navigazione dell'associazione dell' `SalesOrderDetail` entità, restituire l'oggetto correlato `Contact` . L'esempio seguente illustra questa operazione.
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]

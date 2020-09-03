@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594630"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammi di dipendenza: linee guida
@@ -57,7 +57,7 @@ Nei passaggi seguenti viene fornita una panoramica dell'utilizzo dei diagrammi d
 
 9. [Includere la convalida dei livelli nel processo di compilazione](#BuildValidation) per garantire che il codice continui a rispettare la progettazione.
 
-## <a name="Create"></a>Creazione di un diagramma delle dipendenze
+## <a name="create-a-dependency-diagram"></a><a name="Create"></a> Creazione di un diagramma delle dipendenze
 
 È necessario creare un diagramma delle dipendenze all'interno di un progetto di modello. È possibile aggiungere un nuovo diagramma delle dipendenze a un progetto di modello esistente, creare un nuovo progetto di modello per il diagramma delle dipendenze oppure copiare un diagramma delle dipendenze esistente nello stesso progetto di modello.
 
@@ -66,11 +66,11 @@ Nei passaggi seguenti viene fornita una panoramica dell'utilizzo dei diagrammi d
 
 Vedere [creare diagrammi di dipendenza dal codice](../modeling/create-layer-diagrams-from-your-code.md).
 
-## <a name="CreateLayers"></a>Definire i livelli per rappresentare aree funzionali o componenti
+## <a name="define-layers-to-represent-functional-areas-or-components"></a><a name="CreateLayers"></a> Definire i livelli per rappresentare aree funzionali o componenti
 
-I livelli rappresentano gruppi logici di *artefatti*, ad esempio progetti, file di codice, spazi dei nomi, classi e metodi. È possibile creare livelli da artefatti da progetti C# visivi e Visual Basic oppure è possibile collegare specifiche o piani a un livello collegando documenti, ad esempio file di Word o presentazioni di PowerPoint. Ogni livello viene visualizzato come un rettangolo nel diagramma e viene indicato il numero di artefatti collegati a ogni livello. Un livello può contenere livelli annidati che descrivono attività più specifiche.
+I livelli rappresentano gruppi logici di *artefatti*, ad esempio progetti, file di codice, spazi dei nomi, classi e metodi. È possibile creare livelli da artefatti da progetti Visual C# e Visual Basic oppure è possibile collegare specifiche o piani a un livello collegando documenti, ad esempio file di Word o presentazioni di PowerPoint. Ogni livello viene visualizzato come un rettangolo nel diagramma e viene indicato il numero di artefatti collegati a ogni livello. Un livello può contenere livelli annidati che descrivono attività più specifiche.
 
-È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli artefatti sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per informazioni sui modelli di livello, visitare il sito modelli & Practices [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch).
+È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli artefatti sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per informazioni sui modelli di livello, visitare il sito modelli & Practices all'indirizzo [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch) .
 
 > [!TIP]
 > Esistono alcuni tipi di artefatti che è possibile collegare ai livelli ma che non supportano la convalida rispetto al diagramma delle dipendenze. Per verificare se l'artefatto supporta la convalida, aprire **Esplora livello** per esaminare la proprietà **convalida supportata** del collegamento dell'elemento. Vedere [individuare le dipendenze esistenti tra i livelli](#Generate).
@@ -85,7 +85,7 @@ Vedere:
 
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
 
-## <a name="Generate"></a>Individuare le dipendenze esistenti tra i livelli
+## <a name="discover-existing-dependencies-between-layers"></a><a name="Generate"></a> Individuare le dipendenze esistenti tra i livelli
 
 È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. Per individuare le dipendenze esistenti, è possibile decompilarle.
 
@@ -98,20 +98,20 @@ Selezionare un livello o più livelli, fare clic con il pulsante destro del mous
 
 In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È possibile modificare queste dipendenze per allinearle con la progettazione desiderata.
 
-## <a name="EditArchitecture"></a>Modificare i livelli e le dipendenze per visualizzare la progettazione desiderata
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditArchitecture"></a> Modificare i livelli e le dipendenze per visualizzare la progettazione desiderata
 
 Per descrivere le modifiche da apportare al sistema o all'architettura desiderata, attenersi alla procedura seguente per modificare il diagramma delle dipendenze. È anche possibile prendere in considerazione alcune modifiche relative al refactoring per migliorare la struttura del codice prima di estenderlo. Vedere [miglioramento della struttura del codice](#Improving).
 
-|**Per**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
 |Eliminare una dipendenza che non dovrebbe essere presente|Fare clic sulla dipendenza, quindi premere **Canc**.|
 |Modificare o limitare la direzione di una dipendenza|Impostarne la proprietà **Direction** .|
 |Creare nuove dipendenze|Usare gli **strumenti di dipendenza e dipendenza** **bidirezionale** .<br /><br /> Per disegnare più dipendenze, fare doppio clic sullo strumento. Al termine, fare clic sullo strumento **puntatore** o premere **ESC** .|
-|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà delle **dipendenze dello spazio dei nomi non consentito** del livello. Utilizzare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
-|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Forbidden Namespaces** del livello. Utilizzare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
-|Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi nella proprietà **obbligatoria Namespaces** del livello. Utilizzare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà delle **dipendenze dello spazio dei nomi non consentito** del livello. Utilizzare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Forbidden Namespaces** del livello. Utilizzare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi nella proprietà **obbligatoria Namespaces** del livello. Utilizzare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 
-### <a name="Improving"></a>Miglioramento della struttura del codice
+### <a name="improving-the-structure-of-the-code"></a><a name="Improving"></a> Miglioramento della struttura del codice
 
 Le modifiche relative al refactoring sono miglioramenti che non influiscono sul comportamento dell'applicazione, ma contribuiscono a rendere il codice più semplice da modificare ed estendere nel futuro. Il codice ben strutturato ha una progettazione facile da astrarre in un diagramma delle dipendenze.
 
@@ -119,7 +119,7 @@ Ad esempio, se si crea un livello per ogni spazio dei nomi nel codice e quindi s
 
 In caso contrario, il codice sarà più difficile da modificare per tutta la sua vita e sarà meno adatto per la convalida usando i diagrammi delle dipendenze.
 
-## <a name="NewAreas"></a>Progettare nuove aree dell'applicazione
+## <a name="design-new-areas-of-your-application"></a><a name="NewAreas"></a> Progettare nuove aree dell'applicazione
 
 Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo progetto, è possibile tracciare livelli e dipendenze per semplificare l'identificazione dei componenti principali prima di iniziare a sviluppare il codice.
 
@@ -133,7 +133,7 @@ Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo pro
 
      Quando si compila l'applicazione, il codice verrà convalidato rispetto al diagramma complessivo e al diagramma più dettagliato relativo alle funzionalità.
 
-## <a name="EditLayout"></a>Modificare il layout per la presentazione e la discussione
+## <a name="edit-the-layout-for-presentation-and-discussion"></a><a name="EditLayout"></a> Modificare il layout per la presentazione e la discussione
 
 Per semplificare l'identificazione di livelli e dipendenze o per esaminarli con i membri del team, modificare l'aspetto e il layout del diagramma nei modi seguenti:
 
@@ -143,7 +143,7 @@ Per semplificare l'identificazione di livelli e dipendenze o per esaminarli con 
 
   - Selezionare uno o più livelli o dipendenze, fare clic con il pulsante destro del mouse su, quindi scegliere **Proprietà**. Nella finestra **Proprietà** modificare la proprietà **color** .
 
-## <a name="Validate"></a>Convalidare il codice rispetto al diagramma
+## <a name="validate-the-code-against-the-diagram"></a><a name="Validate"></a> Convalidare il codice rispetto al diagramma
 
 Una volta modificato il diagramma, è possibile convalidarlo manualmente in qualsiasi momento o automaticamente a ogni compilazione.
 
@@ -153,7 +153,7 @@ Vedere:
 
 - [Includere la convalida dei livelli nel processo di compilazione](#BuildValidation)
 
-## <a name="UpdateCode"></a>Aggiornare il codice per conformità alla nuova architettura
+## <a name="update-the-code-to-conform-to-the-new-architecture"></a><a name="UpdateCode"></a> Aggiornare il codice per conformità alla nuova architettura
 
 In genere, gli errori vengono visualizzati la prima volta che si convalida il codice rispetto a un diagramma delle dipendenze aggiornato. Gli errori possono avere cause diverse:
 
@@ -168,7 +168,7 @@ Per risolvere gli errori, aggiornare il codice finché non verranno più visuali
 
 Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni conflitti segnalati durante la convalida. Ad esempio, è possibile eliminare gli errori che sono già stati corretti o che non sono attinenti allo scenario in questione. Quando si elimina un errore, è consigliabile registrare un elemento di lavoro in Team Foundation. Per eseguire questa attività, vedere [convalidare il codice con diagrammi di dipendenza](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="BuildValidation"></a>Includere la convalida dei livelli nel processo di compilazione
+## <a name="include-layer-validation-in-the-build-process"></a><a name="BuildValidation"></a> Includere la convalida dei livelli nel processo di compilazione
 
 Per assicurarsi che le modifiche future nel codice siano conformi ai diagrammi di dipendenza, includere la convalida dei livelli nel processo di compilazione standard della soluzione. Ogni volta che altri membri del team compilano la soluzione, eventuali differenze tra le dipendenze nel codice e il diagramma delle dipendenze verranno segnalate come errori di compilazione. Per altre informazioni sull'inclusione della convalida dei livelli nel processo di compilazione, vedere [convalidare il codice con diagrammi di dipendenza](../modeling/validate-code-with-layer-diagrams.md).
 

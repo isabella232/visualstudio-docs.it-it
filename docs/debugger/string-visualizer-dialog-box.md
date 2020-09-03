@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 10e7e50ffc0cb61bd036bef65c554e8147eecc09
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72430825"
 ---
 # <a name="string-visualizer-dialog-box"></a>Finestra di dialogo Visualizzatore stringhe
@@ -38,7 +38,7 @@ Il Visualizzatore di stringhe incorporato include le opzioni testo normale, XML,
 
 Per aprire il Visualizzatore di stringhe, è necessario sospendere l'oggetto durante il debug. Passare il puntatore del mouse su una variabile con un valore di stringa testo normale, XML, HTML o JSON e selezionare l'icona della lente di ingrandimento ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icona del Visualizzatore").
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
 Il campo **espressione** Mostra la variabile o l'espressione su cui si sta passando il puntatore del mouse.
 

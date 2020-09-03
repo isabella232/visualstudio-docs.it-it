@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672981"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
@@ -39,7 +39,7 @@ ms.locfileid: "72672981"
 
  Per informazioni generali su come creare controlli associati a dati in Visual Studio, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Per ulteriori informazioni su data binding in Windows Forms, vedere [Windows Forms Data Binding](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Associare controlli Windows Form ai dati](../data-tools/bind-windows-forms-controls-to-data.md)
 
@@ -58,11 +58,11 @@ ms.locfileid: "72672981"
 - [Passare dati da un form all'altro](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource (componente)
- Il componente <xref:System.Windows.Forms.BindingSource> ha due scopi. In primo luogo, fornisce un livello di astrazione durante l'associazione dei controlli nel form ai dati. I controlli nel form sono associati al componente <xref:System.Windows.Forms.BindingSource>, anziché essere associati direttamente a un'origine dati.
+ Il componente <xref:System.Windows.Forms.BindingSource> ha due scopi. In primo luogo, fornisce un livello di astrazione durante l'associazione dei controlli nel form ai dati. I controlli nel form sono associati al <xref:System.Windows.Forms.BindingSource> componente, anziché essere associati direttamente a un'origine dati.
 
- In secondo luogo, è in grado di gestire una raccolta di oggetti. Se si aggiunge un tipo all'<xref:System.Windows.Forms.BindingSource> viene creato un elenco di tale tipo.
+ In secondo luogo, è in grado di gestire una raccolta di oggetti. Se si aggiunge un tipo a <xref:System.Windows.Forms.BindingSource> , viene creato un elenco di tale tipo.
 
- Per ulteriori informazioni sul componente <xref:System.Windows.Forms.BindingSource>, vedere:
+ Per ulteriori informazioni sul <xref:System.Windows.Forms.BindingSource> componente, vedere:
 
 - [Componente BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
@@ -74,7 +74,7 @@ ms.locfileid: "72672981"
  Questo componente fornisce un'interfaccia utente per spostarsi tra i dati visualizzati da un'applicazione Windows. Per altre informazioni, vedere [Controllo BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView (controllo)
- Per visualizzare e modificare dati tabulari da molti tipi diversi di origini dati, utilizzare il controllo <xref:System.Windows.Forms.DataGridView>. È possibile associare i dati a un <xref:System.Windows.Forms.DataGridView> usando la proprietà <xref:System.Windows.Forms.DataGridView.DataSource%2A>. Per altre informazioni, vedere [Cenni preliminari sul controllo DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Per visualizzare e modificare dati tabulari da molti tipi diversi di origini dati, utilizzare il <xref:System.Windows.Forms.DataGridView> controllo. È possibile associare dati a un oggetto <xref:System.Windows.Forms.DataGridView> utilizzando la <xref:System.Windows.Forms.DataGridView.DataSource%2A> Proprietà. Per altre informazioni, vedere [Cenni preliminari sul controllo DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
 ## <a name="see-also"></a>Vedere anche
  [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
