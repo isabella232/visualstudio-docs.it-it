@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569663"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
@@ -41,7 +41,7 @@ La finestra **Elenco errori** consente di eseguire le attività seguenti:
 
 - Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.
 
-Per visualizzare l'Elenco **errori**, scegliere **Visualizza** > **elenco errori**o premere **CTRL**+**\\**+**E**.
+Per visualizzare il **Elenco errori**, scegliere **Visualizza**  >  **Elenco errori**oppure premere **CTRL** + **\\** + **E**.
 
 È possibile scegliere le schede **Errori**, **Avvisi** e **Messaggi** per visualizzare diversi livelli di informazioni.
 
@@ -70,7 +70,7 @@ L'elenco sul lato destro della barra degli strumenti specifica se visualizzare e
 
 Usare la casella di testo **Elenco errori di ricerca** sul lato destro della barra degli strumenti **Elenco errori** per trovare errori specifici nell'elenco errori. È possibile cercare una colonna visibile nell'elenco errori e i risultati di ricerca vengono sempre ordinati in base alla colonna con priorità di ordinamento anziché alla query o al filtro applicato. Se si sceglie il tasto **Esc** mentre è attivo l'**Elenco errori**, è possibile cancellare il termine di ricerca e i risultati di ricerca filtrati. È anche possibile fare clic sulla **X** sul lato destro della casella di testo per cancellare il contenuto.
 
-## <a name="save"></a>Salvare
+## <a name="save"></a>Salva
 
 È possibile copiare l'elenco errori e salvarlo in un file. Selezionare gli errori da copiare e fare clic con il pulsante destro del mouse sulla selezione, quindi nel menu di scelta rapida selezionare **Copia**. È quindi possibile incollare gli errori in un file. Se si incollano gli errori in un foglio di calcolo di Excel, i campi vengono visualizzati come diverse colonne.
 
@@ -88,7 +88,7 @@ Descrizione
 
 Visualizza il testo della voce.
 
-Project
+Progetto
 
 Visualizza il nome del progetto corrente.
 

@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570557"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 
-Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, scegliere **Scegli elementi della Casella degli strumenti** dal menu **Strumenti** per visualizzare la finestra di dialogo Scegli elementi della Casella **degli strumenti** e quindi selezionare la relativa scheda Componenti **WPF** . Per ordinare i componenti elencati, selezionare un'intestazione di colonna.
+Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, **scegliere Scegli elementi della casella degli** strumenti dal menu **strumenti** per visualizzare la finestra di dialogo **Scegli elementi della casella degli strumenti** e quindi selezionare la scheda **Componenti WPF** . Per ordinare i componenti elencati, selezionare un'intestazione di colonna.
 
 - Quando la casella di controllo accanto a un componente è selezionata, l'icona di tale componente viene visualizzata nella **casella degli strumenti**.
 
@@ -35,11 +35,11 @@ Questa scheda della finestra di dialogo **Scegli elementi della Casella degli st
 
 Le colonne della scheda **Componenti WPF** contengono le informazioni seguenti:
 
-**Nome**
+**Name**
 
 Elenca i nomi dei controlli WPF per i quali sono presenti voci nel Registro di sistema del computer.
 
-**Namespace**
+**Spazio dei nomi**
 
 Visualizza la gerarchia dello spazio dei nomi [API di .NET](/dotnet/api/?view=netframework-4.7) che definisce la struttura del componente. Ordinare in base a questa colonna per elencare i componenti disponibili in ogni spazio dei nomi .NET installato nel computer in uso.
 
@@ -57,7 +57,7 @@ Visualizza il percorso dell'assembly .NET. Gli assembly si trovano, per impostaz
 
 Filtra l'elenco dei controlli WPF in base alla stringa immessa nella casella di testo. Vengono visualizzate tutte le corrispondenze presenti in una qualsiasi delle quattro colonne.
 
-**Chiaro**
+**Cancella**
 
 Cancella la stringa del filtro.
 

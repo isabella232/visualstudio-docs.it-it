@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570349"
 ---
 # <a name="command-window"></a>Finestra di comando
@@ -52,7 +52,7 @@ Il simbolo di maggiore (`>`) viene visualizzato sul lato sinistro della finestra
 
 I collegamenti seguenti consentono l'esplorazione in modalità di comando.
 
-|Azione|Posizione del cursore|Tasto di scelta rapida|
+|Action|Posizione del cursore|Tasto di scelta rapida|
 |------------| - |----------------|
 |Scorrere l'elenco dei comandi immessi in precedenza.|Riga di input|FRECCIA GIÙ o FRECCIA SU|
 |Scorrere la finestra verso l'alto.|Contenuto della finestra Comando|CTRL+freccia SU|
@@ -98,7 +98,7 @@ Esistono due formati per quasi tutte le opzioni supportate da un comando: un for
 Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale valore viene applicato a ogni opzione. Ad esempio, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se una delle opzioni del gruppo non accetta un valore, si verifica un errore.
 
 ## <a name="escape-characters"></a>Caratteri di escape
-Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
+Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```cmd
 >Edit.Find ^^t /regex
@@ -111,5 +111,5 @@ Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è nec
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)

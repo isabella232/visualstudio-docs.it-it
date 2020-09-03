@@ -12,22 +12,22 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7ed2ce924b22827a82a67664e3e473f0930a87e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199401"
 ---
 # <a name="servers-visual-studio-sdk"></a>Server (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In termini di architettura del debugger, un **server**:  
+In termini di architettura del debugger, **Server**:  
   
-- È un contenitore delle porte e fornitori di porte e viene usato per comunicare le porte e fornitori di porte al gestore di sessione di debug (SDM) e motori di debug.  
+- È un contenitore di porte e fornitori di porte e viene utilizzato per comunicare porte e fornitori di porte a gestione debug sessione (SDM) e motori di debug.  
   
-- Può identificarsi in base al nome ed enumerare le porte e i fornitori di porte.  
+- Può identificare se stesso in base al nome ed enumerare le porte e i fornitori di porte.  
   
-- È rappresentato da un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interfaccia, che viene implementato solo da Visual Studio (un'istanza di un server per ogni istanza di esecuzione di Visual Studio).  
+- È rappresentato da un'interfaccia [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , che viene implementata solo da Visual Studio (un'istanza di un server per ogni istanza di Visual Studio in esecuzione).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Porte](../../extensibility/debugger/ports.md)   

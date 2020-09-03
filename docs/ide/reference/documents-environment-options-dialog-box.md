@@ -32,13 +32,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570063"
 ---
-# <a name="options-dialog-box-environment--documents"></a>Finestra di dialogo Opzioni: Documenti ambiente \>
+# <a name="options-dialog-box-environment--documents"></a>Finestra di dialogo Opzioni: \> documenti ambiente
 
 Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei documenti nell'ambiente di sviluppo integrato (IDE) e gestire le modifiche esterne apportate a documenti e file. Per accedere a questa finestra di dialogo fare clic su **Opzioni** nel menu **Strumenti** e quindi selezionare **Ambiente** > **Documenti**.
 
@@ -71,7 +71,7 @@ Selezionare questa opzione per visualizzare una finestra di messaggio quando il 
 Selezionare questa opzione per il nodo **File esterni** in **Esplora soluzioni**. I file esterni sono file non associati a un progetto o a una soluzione, che possono tuttavia essere visualizzati in **Esplora soluzioni** per comodità.
 
 > [!NOTE]
-> Selezionare questa opzione per attivare il comando **Visualizza nel browser** del menu **File** per i documenti Web non inclusi nell'applicazione Web attiva.
+> Selezionare questa opzione per abilitare il comando **Visualizza nel browser** dal menu **file** per i documenti Web non inclusi nell'applicazione Web attiva.
 
 **Elementi salvati nel progetto File esterni**
 
@@ -85,5 +85,5 @@ Se si seleziona questa opzione, i file contenenti informazioni non compatibili c
 
 ## <a name="see-also"></a>Vedere anche
 
-- [File esterni](../../ide/reference/miscellaneous-files.md)
+- [file esterni](../../ide/reference/miscellaneous-files.md)
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)

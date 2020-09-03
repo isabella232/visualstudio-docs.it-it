@@ -20,9 +20,9 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Funzioni delle proprietà
               href: property-functions.md
-        - name: Elementi
+        - name: Items
           items:
-            - name: Elementi
+            - name: Items
               href: msbuild-items.md
             - name: Selezionare i file da compilare
               href: how-to-select-the-files-to-build.md
@@ -56,9 +56,9 @@
                   href: writealltlogs.md
                 - name: WriteContextTLogs
                   href: writecontexttlogs.md
-        - name: Destinazioni
+        - name: Server di destinazione
           items:
-            - name: Destinazioni
+            - name: Server di destinazione
               href: msbuild-targets.md
             - name: Ordine di compilazione delle destinazioni
               href: target-build-order.md
@@ -100,13 +100,13 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Usare caratteri XML riservati nei file di progetto
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Concetti avanzati relativi
+    - name: Concetti avanzati
       items:
-        - name: Concetti avanzati relativi
+        - name: Concetti avanzati
           href: msbuild-advanced-concepts.md
-        - name: Batch
+        - name: Creazione di batch
           items:
-            - name: Batch
+            - name: Creazione di batch
               href: msbuild-batching.md
             - name: Metadati degli elementi nella suddivisione in batch delle attività
               href: item-metadata-in-task-batching.md
@@ -114,9 +114,9 @@
               href: item-metadata-in-target-batching.md
         - name: Trasformazioni
           href: msbuild-transforms.md
-        - name: Integrazione con Visual Studio
+        - name: Visual Studio Integration
           items:
-            - name: Integrazione con Visual Studio
+            - name: Visual Studio Integration
               href: visual-studio-integration-msbuild.md
             - name: Estendere il processo di compilazione di Visual Studio
               href: how-to-extend-the-visual-studio-build-process.md
@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrazione di estensioni di .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Compilazione di più progetti in parallelo
+        - name: Creazione di più progetti in parallelo
           items:
-            - name: Compilazione di più progetti in parallelo
+            - name: Creazione di più progetti in parallelo
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Utilizzo di più processori per la compilazione di progetti
               href: using-multiple-processors-to-build-projects.md
@@ -156,7 +156,7 @@
                   href: how-to-configure-targets-and-tasks.md
             - name: Risoluzione dei problemi relativi agli errori di impostazione di .NET Framework come destinazione
               href: troubleshooting-dotnet-framework-targeting-errors.md
-        - name: Suggerimenti
+        - name: Procedure consigliate
           href: msbuild-best-practices.md
     - name: Registrazione a MSBuild
       items:
@@ -180,9 +180,9 @@
       items:
         - name: Riferimenti a MSBuild
           href: msbuild-reference.md
-        - name: Riferimenti dello schema del file di progetto
+        - name: Informazioni di riferimento sullo schema dei file di progetto
           items:
-            - name: Riferimenti dello schema del file di progetto
+            - name: Informazioni di riferimento sullo schema dei file di progetto
               href: msbuild-project-file-schema-reference.md
             - name: Elemento Choose (MSBuild)
               href: choose-element-msbuild.md
@@ -226,9 +226,9 @@
               href: usingtask-element-msbuild.md
             - name: Elemento When (MSBuild)
               href: when-element-msbuild.md
-        - name: Riferimenti alle attività
+        - name: Informazioni di riferimento sulle attività
           items:
-            - name: Riferimenti alle attività
+            - name: Informazioni di riferimento sulle attività
               href: msbuild-task-reference.md
             - name: Attività di Visual C++
               items:
@@ -392,7 +392,7 @@
           href: common-msbuild-project-properties.md
         - name: Elementi di progetto MSBuild comuni
           href: common-msbuild-project-items.md
-        - name: Riferimenti alla riga di comando
+        - name: Informazioni di riferimento sulla riga di comando
           href: msbuild-command-line-reference.md
         - name: File con estensione targets
           href: msbuild-dot-targets-files.md
@@ -408,9 +408,9 @@
               href: wpf-msbuild-reference.md
             - name: File con estensione targets
               href: wpf-dot-targets-files.md
-            - name: Riferimenti alle attività
+            - name: Informazioni di riferimento sulle attività
               items:
-                - name: Riferimenti alle attività
+                - name: Informazioni di riferimento sulle attività
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier
                   href: fileclassifier-task.md

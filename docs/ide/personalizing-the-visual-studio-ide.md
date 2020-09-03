@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585743"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
@@ -29,22 +29,22 @@ ms.locfileid: "75585743"
 
 Molte opzioni di personalizzazione sono esposte tramite la finestra di dialogo [Opzioni ambiente](../ide/reference/general-environment-options-dialog-box.md). È possibile accedere a questa finestra di dialogo in due modi:
 
-- Nella barra dei menu scegliere**Opzioni** **degli strumenti** > e, se non è già espanso, espandere il nodo **Ambiente.**
+- Nella barra dei menu scegliere **strumenti**  >  **Opzioni**e, se non è già espanso, espandere il nodo **ambiente** .
 
-- Premere **CTRL**+**Q**, digitare **environment** nella casella di ricerca e quindi scegliere Ambiente **> Generale** dai risultati.
+- Premere **CTRL** + **Q**, digitare **Environment** nella casella di ricerca, quindi scegliere **ambiente > generale** dai risultati.
 
 > [!TIP]
 > Quando viene visualizzata la finestra di dialogo Opzioni, è possibile premere **F1** per le informazioni della Guida sulle diverse impostazioni nella pagina.
 
 ## <a name="environment-color-themes"></a>Temi colore dell'ambiente
 
-Per modificare il tema del colore tra chiaro, scuro e blu, digitare **ambiente** nella casella di ricerca e quindi scegliere **Ambiente > Generale**. Nella finestra di dialogo **Opzioni** modificare l'opzione **Tema colori**.
+Per modificare il tema colori tra chiaro, scuro e blu, digitare **Environment** nella casella di ricerca, quindi scegliere **ambiente > generale**. Nella finestra di dialogo **Opzioni** modificare l'opzione **Tema colori**.
 
-Per modificare le opzioni di colorazione nell'editor, digitare **environment** nella casella di ricerca, quindi scegliere **Ambiente > tipi di carattere e colori**. Vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Per modificare le opzioni di colorazione nell'editor, digitare **Environment** nella casella di ricerca, quindi scegliere **Environment > Fonts and Colors**. Vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Utilizzo di maiuscole e minuscole nel menu principale
 
-È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare **environment** nella casella di ricerca , selezionare **Ambiente > Generale**, quindi modificare l'opzione Applica stile **maiuscole/minuscole alla barra dei menu** .
+È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare **Environment** nella casella di ricerca, selezionare **ambiente > generale**e quindi modificare l'opzione **Applica stile maiuscole e minuscole alla barra dei menu** .
 
 ### <a name="customize-menus-and-toolbars"></a>Personalizzare menu e barre degli strumenti
 
@@ -68,7 +68,7 @@ Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Pe
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Impostazioni di ambiente](environment-settings.md)
+- [Impostazioni dell'ambiente](environment-settings.md)
 - [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalizzare l'IDE di Visual Studio per Mac](/visualstudio/mac/customizing-the-ide)
