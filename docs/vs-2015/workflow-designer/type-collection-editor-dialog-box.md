@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dae99166b8b811df75f2e2777d176e6778b60c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670153"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Finestra di dialogo Editor raccolta di tipi
@@ -28,7 +28,7 @@ La finestra di dialogo **Editor raccolta di tipi** viene utilizzata per aggiunge
 
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
-|**Elenco dei tipi**|Un elenco dei tipi che sono stati aggiunti o rimossi.|
+|**Type List**|Un elenco dei tipi che sono stati aggiunti o rimossi.|
 
 ## <a name="to-bring-up-the-type-collection-editor"></a>Per visualizzare Editor raccolta di tipi
 

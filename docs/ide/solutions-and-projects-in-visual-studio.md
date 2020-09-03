@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468730"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
@@ -81,7 +81,7 @@ Per i progetti ASP.NET Core, è possibile personalizzare la modalità di annidam
 
 Per visualizzare un elenco di alcune delle icone visualizzate in Esplora soluzioni, vedere [Visualizzazione classi e Visualizzatore oggetti icone](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Portabilità, migrazione e aggiornamento dei progetti](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

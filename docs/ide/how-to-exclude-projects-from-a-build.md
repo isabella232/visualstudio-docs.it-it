@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284321"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procedura: escludere progetti da una compilazione
@@ -67,7 +67,7 @@ Nel riquadro **compilazione** della finestra di **output** , Visual Studio ripor
 
 Per individuare il motivo per cui un progetto è stato ignorato, prendere nota della configurazione attiva ( `Debug x86` nell'esempio precedente) e scegliere **Compila**  >  **Configuration Manager**. È possibile visualizzare o modificare i progetti che vengono ignorati per ogni configurazione, come descritto in questo articolo.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)

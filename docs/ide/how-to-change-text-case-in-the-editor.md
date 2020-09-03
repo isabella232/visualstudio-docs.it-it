@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284633"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procedura: Modificare maiuscole/minuscole nell'editor
@@ -36,6 +36,6 @@ ms.locfileid: "85284633"
 > [!TIP]
 > Per ripristinare l'uso di maiuscole e minuscole precedente la modifica, scegliere **Annulla** dal menu **Modifica**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

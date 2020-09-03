@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284477"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
@@ -133,7 +133,7 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)

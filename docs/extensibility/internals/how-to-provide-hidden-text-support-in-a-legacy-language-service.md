@@ -1,5 +1,5 @@
 ---
-title: Fornire supporto per il testo nascosto nel servizio di linguaggio legacyProvide hidden text support in legacy language service
+title: Fornire supporto per testo nascosto nel servizio di linguaggio legacy
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,35 +13,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707934"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedura: fornire supporto per testo nascosto in un servizio di linguaggio legacyHow to: Provide hidden text support in a legacy language service
-È possibile creare aree di testo nascoste oltre alle aree della struttura. Le aree di testo nascoste possono essere controllate dal client o dall'editor e vengono utilizzate per nascondere completamente un'area di testo. L'editor visualizza un'area nascosta come linee orizzontali. Un esempio è la visualizzazione **Solo script** nell'editor HTML.
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedura: fornire il supporto per testo nascosto in un servizio di linguaggio legacy
+Oltre alle aree della struttura, è possibile creare aree di testo nascoste. Le aree del testo nascosto possono essere controllate dal client o dall'editor e vengono usate per nascondere completamente un'area di testo. L'editor visualizza un'area nascosta come linee orizzontali. Un esempio è la visualizzazione **solo script** nell'editor HTML.
 
-## <a name="to-implement-a-hidden-text-region"></a>Per implementare un'area di testo nascostaTo implement a hidden text region
+## <a name="to-implement-a-hidden-text-region"></a>Per implementare un'area di testo nascosta
 
-1. Chiamare `QueryService` <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>per .
+1. Chiamare `QueryService` per <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> .
 
-     Restituisce un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>puntatore a .
+     Viene restituito un puntatore a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 
-2. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, passando un puntatore per un buffer di testo specificato. Questo determina se esiste già una sessione di testo nascosto per il buffer.
+2. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A> , passando un puntatore per un buffer di testo specificato. Determina se una sessione di testo nascosto esiste già per il buffer.
 
-3. Se ne esiste già uno, non è necessario crearne <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> uno e viene restituito un puntatore all'oggetto esistente. Utilizzare questo puntatore per enumerare e creare aree di testo nascoste. In caso <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> contrario, chiamare per creare una sessione di testo nascosto per il buffer.
+3. Se ne esiste già uno, non è necessario crearne uno e viene restituito un puntatore all' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> oggetto esistente. Utilizzare questo puntatore per enumerare e creare aree del testo nascosto. In caso contrario, chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> per creare una sessione di testo nascosta per il buffer.
 
-     Viene restituito <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> un puntatore all'oggetto.
+     Viene restituito un puntatore all' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> oggetto.
 
     > [!NOTE]
-    > Quando si `CreateHiddenTextSession`chiama , è possibile specificare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>un client di testo nascosto, ovvero . Il client di testo nascosto invia una notifica quando il testo nascosto o la struttura viene espansa o compressa dall'utente.
+    > Quando si chiama `CreateHiddenTextSession` , è possibile specificare un client di testo nascosto, ovvero <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> . Il client di testo nascosto invia una notifica quando il testo nascosto o la struttura viene espansa o compressa dall'utente.
 
-4. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> per aggiungere una o più nuove aree di struttura `reHidReg` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>alla volta, specificando le seguenti informazioni nel parametro ( ):
+4. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> per aggiungere una o più nuove aree della struttura alla volta, specificando le informazioni seguenti nel `reHidReg` <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> parametro ():
 
-    1. Specificare un `hrtConcealed` valore `iType` di <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> nel membro della struttura per indicare che si sta creando un'area nascosta, anziché un'area della struttura.
+    1. Specificare il valore `hrtConcealed` nel `iType` membro della <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struttura per indicare che si sta creando un'area nascosta, anziché un'area del contorno.
 
         > [!NOTE]
-        > Quando le aree nascoste sono nascoste, l'editor visualizza automaticamente le linee intorno alle aree nascoste per indicarne la presenza.
+        > Quando le aree nascoste sono nascoste, nell'editor vengono visualizzate automaticamente le linee intorno alle aree nascoste per indicare la loro presenza.
 
-    2. Specificare se l'area è controllata `dwBehavior` dal client <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> o dall'editor nei membri della struttura. L'implementazione della struttura intelligente può contenere una combinazione di aree di struttura e testo nascosto controllate dall'editor e dal client.
+    2. Consente di specificare se l'area è controllata dal client o dall'editor nei `dwBehavior` membri della <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struttura. L'implementazione intelligente della struttura può contenere una combinazione di aree di testo nascosto e di editor e controllo client.

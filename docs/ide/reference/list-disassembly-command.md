@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770641"
 ---
 # <a name="list-disassembly-command"></a>Comando Elenca disassembly
@@ -31,32 +31,32 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 [/linenumbers:yes|no]
 ```
 
-## <a name="switches"></a>Switch
+## <a name="switches"></a>Commutatori
 Ogni opzione può essere richiamata usando la forma completa o una forma breve.
 
 /count: `number` [or] /c: `number` [or] /length: `number` [or] /l: `number`
 
-Facoltativa. Numero di istruzioni da visualizzare. Il valore predefinito è 8.
+facoltativo. Numero di istruzioni da visualizzare. Il valore predefinito è 8.
 
 /endaddress: `expression` [or] /e: `expression`
 
-Facoltativa. Indirizzo in corrispondenza del quale interrompere il disassembly.
+facoltativo. Indirizzo in corrispondenza del quale interrompere il disassembly.
 
 /codebytes:`yes`&#124;`no` [or] /bytes:`yes`&#124;`no` [or] /b:`yes`&#124;`no`
 
-Facoltativa. Indica se visualizzare i byte di codice. Il valore predefinito è `no`.
+facoltativo. Indica se visualizzare i byte di codice. Il valore predefinito è `no`.
 
 /source:`yes`&#124;`no` [or] /s:`yes`&#124;`no`
 
-Facoltativa. Indica se visualizzare il codice sorgente. Il valore predefinito è `no`.
+facoltativo. Indica se visualizzare il codice sorgente. Il valore predefinito è `no`.
 
 /symbolnames:`yes`&#124;`no` [or] /names:`yes`&#124;`no` [or] /n:`yes`&#124;`no`
 
-Facoltativa. Indica se visualizzare i nomi dei simboli. Il valore predefinito è `yes`.
+facoltativo. Indica se visualizzare i nomi dei simboli. Il valore predefinito è `yes`.
 
  [/linenumbers:`yes`&#124;`no`]
 
-Facoltativa. Abilita la visualizzazione dei numeri di riga associati al codice sorgente. L'opzione /source deve avere un valore di `yes` per usare l'opzione /linenumbers.
+facoltativo. Abilita la visualizzazione dei numeri di riga associati al codice sorgente. L'opzione /source deve avere un valore di `yes` per usare l'opzione /linenumbers.
 
 ## <a name="example"></a>Esempio
 

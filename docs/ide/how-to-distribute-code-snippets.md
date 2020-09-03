@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284373"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: Distribuire frammenti di codice
@@ -123,6 +123,6 @@ In questa procedura si userà lo stesso frammento di codice Hello World creato i
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Frammenti di codice](../ide/code-snippets.md)

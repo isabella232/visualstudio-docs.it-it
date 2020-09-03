@@ -13,67 +13,67 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12f865e7d4c44cfa4002b330ed85ec95f95a8ef9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200657"
 ---
 # <a name="debugger-components"></a>Componenti del debugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugger viene implementato come un pacchetto VSPackage e gestisce la sessione di debug intero. La sessione di debug è costituito dai seguenti elementi:  
+Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugger viene implementato come pacchetto VSPackage e gestisce l'intera sessione di debug. La sessione di debug include gli elementi seguenti:  
   
-- **Eseguire il debug del pacchetto:** Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugger fornisce la stessa interfaccia utente indipendentemente da ciò che viene eseguito il debug.  
+- **Pacchetto di debug:** Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugger fornisce la stessa interfaccia utente indipendentemente dall'oggetto di cui è in corso il debug.  
   
-- **Gestione sessioni di debug (SDM):** Fornisce un'interfaccia coerente a livello di codice per il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugger per la gestione di numerosi motori di debug. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Gestione debug sessione (SDM):** Fornisce un'interfaccia a livello di codice coerente al [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugger per la gestione di un'ampia gamma di motori di debug. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-- **Gestione di debug di processi (PDM):** Consente di gestire, per tutte le istanze in esecuzione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], un elenco di tutti i programmi che possono essere o sottoposti a debug. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Gestione debug processo (PDM):** Gestisce, per tutte le istanze in esecuzione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , un elenco di tutti i programmi che possono essere o di cui è in corso il debug. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-- **Eseguire il debug del motore (DE):** È responsabile del monitoraggio di un programma in fase di debug, comunica lo stato del programma in esecuzione per il modello SDM e PDM e l'interazione con l'analizzatore di espressioni e i provider di simboli per fornire analisi in tempo reale dello stato della memoria del programma e variabili. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (per i linguaggi supportati) e fornitori di terze parti che desiderano supportare le proprie fase di esecuzione.  
+- **Motore di debug (de):** È responsabile del monitoraggio di un programma di cui è in corso il debug, della comunicazione dello stato del programma in esecuzione con SDM e del PDM e dell'interazione con l'analizzatore di espressioni e il provider di simboli per fornire l'analisi in tempo reale dello stato della memoria e delle variabili di un programma. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (per le lingue supportate) e da fornitori di terze parti che desiderano supportare il proprio tempo di esecuzione.  
   
-- **Analizzatore di espressioni (EE):** Fornisce il supporto per la valutazione in modo dinamico di variabili ed espressioni fornite dall'utente quando un programma è stato arrestato un momento particolare. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (per i linguaggi supportati) e fornitori di terze parti che desiderano supportare la propria lingua.  
+- **Analizzatore di espressioni (EE):** Fornisce supporto per la valutazione dinamica di variabili ed espressioni fornite dall'utente quando un programma è stato interrotto in un determinato punto. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (per le lingue supportate) e da fornitori di terze parti che desiderano supportare le proprie lingue.  
   
-- **Provider di simboli (SP):** Anche chiamato un gestore di simboli, esegue il mapping i simboli di debug di un programma per un'istanza in esecuzione del programma in modo che è possibile fornire informazioni significative (ad esempio debug a livello di codice sorgente e valutazione delle espressioni). Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (per Common Language Runtime [Common Language Runtime] simboli e il DataBase di programma [in] simbolo formato file) e da fornitori di terze parti che hanno il proprio metodo proprietario di archiviare le informazioni di debug.  
+- **Provider di simboli (SP):** Detto anche gestore di simboli, esegue il mapping dei simboli di debug di un programma a un'istanza in esecuzione del programma in modo che possano essere fornite informazioni significative, ad esempio il debug a livello di codice sorgente e la valutazione dell'espressione. Viene implementato da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (per i simboli Common Language Runtime [CLR] e il formato di file di simboli del database di programma [PDB]) e da fornitori di terze parti che hanno un metodo proprietario per archiviare le informazioni di debug.  
   
-  Il diagramma seguente mostra la relazione tra questi elementi del debugger di Visual Studio.  
+  Il diagramma seguente illustra la relazione tra questi elementi del debugger di Visual Studio.  
   
   ![Panoramica dei componenti di debug](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Pacchetto di debug](../../extensibility/debugger/debug-package.md)  
- Viene illustrato il pacchetto di debug, che viene eseguito nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] della shell e provvede a tutto l'interfaccia utente.  
+ Viene illustrato il pacchetto di debug, che viene eseguito nella [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Shell e gestisce tutte le interfacce utente.  
   
  [Gestione del debug dei processi](../../extensibility/debugger/process-debug-manager.md)  
- Viene fornita una panoramica delle funzionalità di PDM, ovvero la gestione dei processi che è possibile eseguire il debug.  
+ Viene fornita una panoramica delle funzionalità di PDM, ovvero la gestione dei processi di cui è possibile eseguire il debug.  
   
  [Gestione del debug delle sessioni](../../extensibility/debugger/session-debug-manager.md)  
- Definisce il modello SDM, che fornisce una visualizzazione unificata della sessione di debug all'IDE. Il modello SDM gestisce il DE.  
+ Definisce SDM, che fornisce una visualizzazione unificata della sessione di debug all'IDE. SDM gestisce il DE.  
   
  [Motore di debug](../../extensibility/debugger/debug-engine.md)  
- Documenta i servizi di debug che fornisce la Germania.  
+ Documenta i servizi di debug forniti da.  
   
  [Modalità operative](../../extensibility/debugger/operational-modes.md)  
- Viene fornita una panoramica delle tre modalità in cui può operare nell'IDE: progettare la modalità, modalità di esecuzione e la modalità di interruzione. Vengono illustrati anche i meccanismi di transizione.  
+ Viene fornita una panoramica delle tre modalità di funzionamento dell'IDE: modalità di progettazione, modalità di esecuzione e modalità di interruzioni. Vengono inoltre illustrati i meccanismi di transizione.  
   
  [Analizzatore di espressioni](../../extensibility/debugger/expression-evaluator.md)  
- Viene illustrato lo scopo dell'analizzatore di Espressioni in fase di esecuzione.  
+ Viene illustrato lo scopo di EE in fase di esecuzione.  
   
  [Provider di simboli](../../extensibility/debugger/symbol-provider.md)  
- Viene illustrato come fare, al momento dell'implementazione, il provider di simbolo valuta variabili ed espressioni.  
+ Viene illustrato come, in fase di implementazione, il provider di simboli valuta le variabili e le espressioni.  
   
  [Visualizzatore di tipi e visualizzatore personalizzato](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
- Vengono illustrate le caratteristiche sono un visualizzatore di tipi e Visualizzatore personalizzato e quale ruolo svolge l'analizzatore di espressioni nel supporto di entrambi.  
+ Vengono illustrati un visualizzatore di tipi e un visualizzatore personalizzato e il ruolo che l'analizzatore di espressioni svolge per supportare entrambi.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)  
- Descrive i principali concetti dell'architettura di debug.  
+ Vengono descritti i principali concetti dell'architettura di debug.  
   
  [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)  
- Viene illustrato come la Germania agisce contemporaneamente all'interno di codice, documentazione e contesti di valutazione di espressioni. Viene descritto, per ognuno dei tre contesti, il percorso, posizione o valutazione pertinente a esso.  
+ Spiega in che modo il DE opera simultaneamente nei contesti di codice, documentazione e valutazione delle espressioni. Viene descritto, per ognuno dei tre contesti, la posizione, la posizione o la valutazione pertinente.  
   
  [Attività di debug](../../extensibility/debugger/debugging-tasks.md)  
- Contiene collegamenti alle varie attività di debug, ad esempio l'avvio di un programma e la valutazione delle espressioni.  
+ Contiene collegamenti a diverse attività di debug, ad esempio l'avvio di un programma e la valutazione delle espressioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Introduzione](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
+ [Per iniziare](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

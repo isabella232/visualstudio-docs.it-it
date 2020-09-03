@@ -1,5 +1,5 @@
 ---
-title: '&lt;Prodotto&gt; elemento (programma di avvio automatico) | Microsoft Docs'
+title: '&lt;&gt;Elemento Product (programma di avvio automatico) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3c1304a0ff93c58add65f20aa417bb547f5bb31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200652"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Prodotto&gt; elemento (programma di avvio automatico)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Elemento Product (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il `Product` elemento è l'elemento XML di primo livello all'interno di un file di prodotto.  
+L' `Product` elemento è l'elemento XML di primo livello all'interno di un file di prodotto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -141,14 +141,14 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `Product` elemento è obbligatorio in un file di prodotto. Include l'attributo seguente.  
+ L' `Product` elemento è obbligatorio in un file di prodotto. Ha l'attributo seguente.  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`ProductCode`|Identificatore univoco per il prodotto.|  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente viene illustrato un file di prodotto completo per l'installazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ Nell'esempio di codice seguente viene illustrato un file di prodotto completo per l'installazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  

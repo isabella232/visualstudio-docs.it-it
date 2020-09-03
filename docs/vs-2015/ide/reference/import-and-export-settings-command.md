@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e3ee8549fd8cf1a4551818c013551ba24128f95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671043"
 ---
 # <a name="import-and-export-settings-command"></a>Importa/Esporta impostazioni (comando)
@@ -32,7 +32,7 @@ Consente di importare, esportare o reimpostare le impostazioni di [!INCLUDE[vspr
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /export:`filename` Facoltativo. Esporta le impostazioni correnti nel file specificato.
 
  /Import: `filename` facoltativo. Importa le impostazioni correnti nel file specificato.

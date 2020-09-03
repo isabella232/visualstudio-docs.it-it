@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::DoesInterfaceExist Documenti Microsoft
+title: IDebugClassField::D oesInterfaceExist | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ba732b698f7372772142fda73e71d9e22aa443a6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734503"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
-Determina se un'interfaccia specifica è definita nella classe.
+Determina se una specifica interfaccia è definita nella classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int DoesInterfaceExist(
 
 ## <a name="parameters"></a>Parametri
 `pszInterfaceName`\
-[in] Stringa contenente il nome dell'interfaccia da cercare.
+in Stringa contenente il nome dell'interfaccia da ricercare.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK, restituisce S_FALSE se l'interfaccia non esiste; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo ottiene un'enumerazione di tutte le interfacce e cerca nell'elenco un'interfaccia corrispondente.
+ Questo metodo ottiene un'enumerazione di tutte le interfacce e cerca l'interfaccia corrispondente nell'elenco.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

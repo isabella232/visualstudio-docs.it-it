@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585418"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
@@ -31,17 +31,17 @@ I frammenti di codice sono piccoli blocchi di codice riutilizzabili che possono 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Frammenti di codice (Visual Studio per Mac)](/visualstudio/mac/snippets).
 
-Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti installati disponibili per una lingua, aprire **Gestione frammenti** di codice dal menu **Strumenti** (oppure, premere **Ctrl**+**K**, **Ctrl**+**B**) e scegliere la lingua dal menu a discesa nella parte superiore.
+Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti di codice installati disponibili per una lingua, aprire **Gestione frammenti di codice** dal menu **strumenti** (oppure premere **CTRL** + **K**, **CTRL** + **B**) e scegliere la lingua dal menu a discesa nella parte superiore.
 
 ![Finestra di dialogo Gestione frammenti di codice](media/code-snippets-manager.png)
 
 I frammenti di codice sono accessibili nei modi generali seguenti:
 
-- Nella barra dei menu scegliere **Modifica** > **frammento di codice** **IntelliSense** > 
+- Sulla barra dei menu scegliere **modifica**  >  **IntelliSense**  >  **Inserisci frammento** di codice
 
-- Dal menu di scelta rapida o dal menu di scelta rapida nell'editor di codice, scegliere **Snippet** > **Insert Snippet**
+- Nel menu di scelta rapida o nell'editor di codice scegliere **frammento**  >  **Inserisci frammento** di codice
 
-- Dalla tastiera, premere **Ctrl**+**K**,**Ctrl**+**X**
+- Dalla tastiera premere **CTRL** + **K**,**CTRL** + **X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Frammenti di espansione e frammenti Racchiudi tra
 
@@ -60,9 +60,9 @@ finally
 }
 ```
 
-È possibile inserire questo frammento di codice facendo clic su **Inserisci frammento** di codice nel `tryf`menu di scelta rapida (menu di scelta rapida) della finestra del codice, quindi in Visual Basic , quindi in Visual **Basic**, digitare , quindi premere **TAB**. In alternativa, `tryf` è possibile digitare e premere **TAB** due volte.
+Per inserire questo frammento di codice, fare clic su **Inserisci frammento** di codice nel menu di scelta rapida della finestra del codice, quindi su **Visual C#**, digitare `tryf` e quindi premere **Tab**. In alternativa, è possibile digitare `tryf` e premere due volte **Tab** .
 
-Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se selezionate una riga di `return FALSE;`codice (ad esempio ) e scegliete **Circonda con** > **se**, il frammento di codice viene espanso intorno alla riga:
+Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio `return FALSE;` ) e quindi si sceglie **Racchiudi tra**  >  **if**, il frammento viene espanso intorno alla riga:
 
 ```cpp
 if (true)
@@ -75,7 +75,7 @@ if (true)
 
 I frammenti di codice possono contenere parametri di sostituzione, cioè segnaposto che è necessario sostituire per adattare il codice preciso che si scrive. Nell'esempio precedente `true` è un parametro di sostituzione, che è possibile sostituire con la condizione appropriata. La sostituzione effettuata viene ripetuta per ogni istanza dello stesso parametro di sostituzione nel frammento.
 
-Ad esempio, in Visual Basic è presente un frammento di codice che inserisce una proprietà. Per inserire il frammento di codice, scegliere **Frammento** > di**codice Inserisci frammento** di codice dal menu di scelta rapida o con scelta rapida in un file di codice Visual Basic.To insert the snippet, choose Snippet Insert Snippet from the right-click or context menu in a Visual Basic code file. Scegliere quindi **Proprietà modelli** > di**codice, Procedure, Eventi** > **Definizione proprietà**.
+Ad esempio, in Visual Basic è presente un frammento di codice che inserisce una proprietà. Per inserire il frammento di codice, scegliere **frammento**  >  **Inserisci frammento** dal menu di scelta rapida o dal menu di scelta rapida in un file di codice Visual Basic. Quindi, scegliere i **modelli di codice**  >  **proprietà, procedure, eventi**  >  **definiscono una proprietà**.
 
 ![Menu del frammento di codice per Definisci una proprietà](media/code-snippets-vb-property.png)
 
@@ -97,11 +97,11 @@ Se si modifica `newPropertyValue` in `m_property`, tutte le istanze di `newPrope
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: creazione di un frammento di codiceWalkthrough: Creating a code snippet](../ide/walkthrough-creating-a-code-snippet.md)
-- [Procedura: distribuire frammenti di codiceHow to: Distribute code snippets](../ide/how-to-distribute-code-snippets.md)
-- [Procedure consigliate per l'utilizzo di frammenti di codiceBest practices for using code snippets](../ide/best-practices-for-using-code-snippets.md)
-- [Risoluzione dei problemi relativi agli snippetTroubleshooting snippets](../ide/troubleshooting-snippets.md)
-- [Frammenti di codice di C](../ide/visual-csharp-code-snippets.md)
-- [Frammenti di codice di C](../ide/visual-cpp-code-snippets.md)
-- [Informazioni di riferimento sullo schema dei frammenti di codiceCode snippets schema reference](../ide/code-snippets-schema-reference.md)
+- [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procedura: distribuire frammenti di codice](../ide/how-to-distribute-code-snippets.md)
+- [Procedure consigliate per l'uso dei frammenti di codice](../ide/best-practices-for-using-code-snippets.md)
+- [Risoluzione dei problemi relativi ai frammenti](../ide/troubleshooting-snippets.md)
+- [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)
+- [Frammenti di codice C++](../ide/visual-cpp-code-snippets.md)
+- [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)
 - [Frammenti di codice (Visual Studio per Mac)](/visualstudio/mac/snippets)

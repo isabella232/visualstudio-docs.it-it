@@ -1,5 +1,5 @@
 ---
-title: Documento di Windows Documenti Microsoft
+title: Finestre documento | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,35 +11,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 711033a4ad2e782ecbe509595266426d186bed8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708508"
 ---
 # <a name="document-windows"></a>Finestre dei documenti
-In Visual Studio, una finestra di *documento* è una finestra figlio con frame associata a una finestra di interfaccia a documenti multipli (MDI). Le finestre di documento vengono in genere utilizzate per la visualizzazione e la modifica del codice sorgente o del testo, ma possono anche ospitare altri tipi di funzionalità. Finestre documento:
+In Visual Studio una *finestra del documento* è una finestra figlio incorniciata associata a una finestra interfaccia a documenti multipli (MDI). Le finestre di documento vengono in genere usate per la visualizzazione e la modifica del codice sorgente o del testo, ma possono anche ospitare altri tipi funzionali. Finestre di documento:
 
-- Può essere organizzato in gruppi di schede orizzontali o verticali separati nell'unità MDI padre in modo che più file possano essere visualizzati contemporaneamente.
+- Può essere organizzato in gruppi di schede orizzontali o verticali distinti nell'MDI padre, in modo che più file possano essere visualizzati contemporaneamente.
 
-- Può essere ancorato in qualsiasi ordine nell'mDI padre.
+- Può essere ancorato in qualsiasi ordine nell'elemento MDI padre.
 
-- Può essere galleggiato liberamente.
+- È possibile fluttuare liberamente.
 
 - Sono collegati in ordine di tabulazione ad altre finestre MDI.
 
-  I comandi per il raggruppamento, l'ancoraggio e la modalità mobile sono disponibili nel menu di scelta rapida per una scheda della finestra del documento.
+  I comandi per il raggruppamento, l'ancoraggio e la virgola mobile sono disponibili nel menu di scelta rapida per una scheda della finestra del documento.
 
-  Per ulteriori informazioni sul comportamento delle finestre in Visual Studio, consultate [Personalizzare i layout delle finestre.](../../ide/customizing-window-layouts-in-visual-studio.md)
+  Per altre informazioni sul comportamento delle finestre in Visual Studio, vedere [personalizzare il layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ## <a name="document-window-implementation"></a>Implementazione della finestra del documento
- Le finestre di documento vengono create implementando un editor. L'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> crea finestre di documento come parte della creazione di un'istanza di un editor. Per ulteriori informazioni, vedere [Interfacce legacy nell'editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015).
+ Le finestre di documento vengono create implementando un editor. L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia crea le finestre del documento come parte della creazione di un'istanza di un editor. Per ulteriori informazioni, vedere [interfacce legacy nell'editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015).
 
 > [!NOTE]
-> Per fornire punti di spostamento avanti e <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> indietro in una finestra, implementare l'interfaccia. L'editor di testo utilizza marcatori di testo per identificare i punti di navigazione nel documento.
+> Per fornire punti di navigazione indietro e avanti in una finestra, implementare l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interfaccia. Nell'editor di testo vengono utilizzati marcatori di testo per identificare i punti di navigazione nel documento.
 
 ## <a name="the-running-document-table"></a>Tabella documenti in esecuzione
- L'IDE utilizza la tabella documenti in esecuzione (RDT) per tenere traccia dello stato di ogni finestra del documento. RDT è il meccanismo tramite il quale le finestre di documento vengono notificate agli eventi, ad esempio quando una soluzione viene chiusa o quando un file è stato modificato. Per ulteriori informazioni, vedere [Esecuzione della tabella documenti.](../../extensibility/internals/running-document-table.md)
+ L'IDE utilizza la tabella documenti in esecuzione (RDT) per tenere traccia dello stato di ogni finestra del documento. RDT è il meccanismo tramite il quale le finestre del documento ricevono notifiche di eventi, ad esempio quando una soluzione viene chiusa o quando un file è stato modificato. Per ulteriori informazioni, vedere [esecuzione della tabella documenti](../../extensibility/internals/running-document-table.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Caricamento ritardato dei documenti](../../extensibility/internals/delayed-document-loading.md)

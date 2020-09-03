@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85f52873f52a822a6f6a79ebea545569dc40bf73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671017"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Importa/Esporta impostazioni, Ambiente, finestra di dialogo Opzioni
@@ -24,4 +24,4 @@ ms.locfileid: "72671017"
 Usare questa pagina per specificare dove viene salvato il file delle impostazioni utente e se usare un file di impostazioni team. Per altre informazioni sulle impostazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="see-also"></a>Vedere anche
- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
+ [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md) (Ambiente, finestra di dialogo Opzioni)

@@ -10,27 +10,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 962321a1ab1a1ca5332300eea0d21781a9e4bbf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670965"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formattazione, XML, Editor di testo, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa finestra di dialogo consente di specificare le impostazioni di formattazione dell'editor XML. È possibile accedere alla finestra di dialogo **Opzioni** dal menu **strumenti** .
+Questa finestra di dialogo consente di specificare le impostazioni di formattazione per l'editor XML. È possibile accedere alla finestra di dialogo **Opzioni** dal menu **Strumenti**.
 
 > [!NOTE]
-> Queste impostazioni sono disponibili quando si seleziona la cartella **editor di testo** , la cartella **XML** e quindi l'opzione **formattazione** nella finestra di dialogo **Opzioni** .
+> Queste impostazioni sono disponibili quando si selezionano la cartella **Editor di testo**, la cartella **XML** e quindi l'opzione **Formattazione** nella finestra di dialogo **Opzioni**.
 
 ## <a name="attributes"></a>Attributi
  **Mantieni la formattazione manuale degli attributi** Gli attributi non vengono riformattati. Questa è l'impostazione predefinita.
 
 > [!NOTE]
-> Se gli attributi si trovano su più righe, l'editor fa rientrare ogni riga degli attributi in base al rientro dell'elemento padre.
+> Se gli attributi sono disposti su più righe, a ogni riga di attributi verrà applicato un rientro corrispondente al rientro dell'elemento padre.
 
- **Allinea ogni attributo su una riga a se stante** Allinea il secondo e gli attributi successivi verticalmente in modo da corrispondere al rientro del primo attributo. Il testo XML seguente è un esempio di come vengono allineati gli attributi.
+ **Allinea ogni attributo su una riga a se stante** Allinea il secondo e gli attributi successivi verticalmente in modo da corrispondere al rientro del primo attributo. Il testo XML seguente rappresenta un esempio del modo in cui gli attributi vengono allineati.
 
 ```
 <item id = "123-A"
@@ -47,7 +47,7 @@ Questa finestra di dialogo consente di specificare le impostazioni di formattazi
 ## <a name="mixed-content"></a>Contenuto misto
  **Mantieni contenuto misto per impostazione predefinita** Determina se l'editor riformatta il contenuto misto. Per impostazione predefinita l'editor tenta di riformattare il contenuto misto, a meno che il contenuto non venga rilevato in un ambito `xml:space="preserve"`.
 
- Se un elemento contiene una combinazione di testo e markup, il contenuto viene considerato misto. Di seguito viene riportato un esempio di elemento con contenuto misto.
+ Se un elemento contiene testo e markup, il contenuto viene considerato misto. Di seguito viene riportato un esempio di elemento con contenuto misto.
 
 ```
 <dir>c:\data\AlphaProject\

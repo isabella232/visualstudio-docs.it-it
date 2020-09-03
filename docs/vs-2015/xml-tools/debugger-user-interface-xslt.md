@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d35ec92a76c9ecbf933256229b64ce06a03a4fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670983"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
@@ -23,7 +23,7 @@ In questo argomento vengono descritte le finestre di dialogo e altre finestre de
 
  Per ulteriori informazioni, vedere la Guida di [riferimento all'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md).
 
-## <a name="locals-window"></a>Finestra Variabili locali
+## <a name="locals-window"></a>finestra Variabili locali
  Nella finestra Variabili locali vengono visualizzate le informazioni sulle variabili definite nel foglio di stile. La finestra Variabili locali contiene tre colonne di informazioni:
 
  **Nome** Questa colonna contiene i nomi di tutte le variabili locali nell'ambito corrente. I set di nodi dispongono di un controllo albero in cui è possibile eseguire il drill-down per visualizzare le sottocartelle.
@@ -34,7 +34,7 @@ In questo argomento vengono descritte le finestre di dialogo e altre finestre de
 
  Nella finestra Variabili locali vengono inoltre visualizzate le variabili di contesto predefinite che tengono traccia del contesto della trasformazione XSLT. Nella tabella seguente vengono descritte le variabili di contesto predefinite usate dal debugger XSLT.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
 |`last()`|La dimensione del contesto.|
 |`position()`|Posizione, ossia il numero di indice, del nodo di contesto, in base alla dimensione del contesto.|
@@ -42,7 +42,7 @@ In questo argomento vengono descritte le finestre di dialogo e altre finestre de
 
  Per ulteriori informazioni, vedere [procedura: modificare il contesto del debugger](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).
 
-## <a name="output-window"></a>Output (finestra)
+## <a name="output-window"></a>Finestra di output
  Nella finestra di output vengono visualizzati eventuali messaggi di errore o eccezioni di sicurezza che si verificano durante il debug.
 
  Nel debugger XSLT viene usata una finestra separata per visualizzare l'output del debugger. Si tratta della stessa finestra utilizzata per visualizzare l'output di un comando **Show XSL output** .
@@ -63,7 +63,7 @@ In questo argomento vengono descritte le finestre di dialogo e altre finestre de
 ## <a name="command-windowimmediate-window"></a>Finestra di comando e finestra di controllo immediato
  Non implementate in questa versione del debugger XSLT.
 
-## <a name="watch-window"></a>Finestra Espressioni di controllo
+## <a name="watch-window"></a>finestra Espressioni di controllo
  La finestra Espressioni di controllo viene usata per valutare le variabili. È anche possibile modificare i valori delle variabili.
 
  Le variabili visualizzate nella finestra Espressioni di controllo sono relative al contesto corrente (l'elemento in primo piano nello stack di chiamate). Se si modifica il contesto, la finestra viene aggiornata e vengono visualizzate le variabili impostate per quel determinato contesto.

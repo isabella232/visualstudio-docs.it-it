@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetNameFromToken . Documenti Microsoft
+title: 'IDebugComPlusSymbolProvider:: GetNameFromToken | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 544bb2ed8a5526c04c46c6609c6bca3b6bf57bdf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733788"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-Restituisce il nome associato al token specificato in base al relativo oggetto metadati.
+Restituisce il nome associato al token specificato dato il relativo oggetto di metadati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,19 +44,19 @@ int GetNameFromToken (
 
 ## <a name="parameters"></a>Parametri
 `pMetadataImport`\
-[in] Oggetto che contiene le informazioni sui metadati.
+in Oggetto che contiene le informazioni sui metadati.
 
 `dwToken`\
-[in] Token da nominare.
+in Token da denominare.
 
 `pbstrName`\
-[fuori] Nome che corrisponde al token.
+out Nome che corrisponde al token.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetNameFromToken(

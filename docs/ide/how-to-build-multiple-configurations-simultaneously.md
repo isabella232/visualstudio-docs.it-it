@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7820d56bcb266e8361f36cb5350475f31445800
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284762"
 ---
 # <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>Procedura: compilare più configurazioni in una singola richiesta di compilazione
@@ -41,7 +41,7 @@ Se una soluzione contiene un progetto di questi due tipi di progetto, la **compi
 
 3. Scegliere i pulsanti **Compila** o **Ricompila** per compilare il progetto con le configurazioni specificate.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
