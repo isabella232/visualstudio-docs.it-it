@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40f48891107c2eb3250b6b050e00c3650812d386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669808"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrivere il flusso di controllo con frammenti in diagrammi di sequenza UML
@@ -34,7 +34,7 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
 > [!NOTE]
 > Questo argomento descrive i frammenti nei diagrammi di sequenza. Per altre informazioni su come leggere i diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: riferimenti](../modeling/uml-sequence-diagrams-reference.md). Per altre informazioni su come creare diagrammi di sequenza UML, vedere [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
- ![Frammento combinato con due operandi interazione](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
+ ![Frammento combinato con due operandi di interazione](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
 
  Gli elementi mostrati nella figura sono i seguenti.
 
@@ -102,17 +102,17 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
     > [!NOTE]
     > Tipi diversi di frammento combinato hanno proprietà diverse.
 
-## <a name="KindsOfFragment"></a>Tipi di frammenti combinati
+## <a name="kinds-of-combined-fragment"></a><a name="KindsOfFragment"></a> Tipi di frammenti combinati
 
 ### <a name="fragments-describing-control-flow"></a>Frammenti che descrivono il flusso di controllo
  Un diagramma di sequenza semplice mostra solo una sequenza tipica. È possibile usare i tipi di frammenti combinati indicati di seguito per descrivere le variazioni che possono verificarsi in occasioni diverse.
 
 |Tipo di frammento|Descrizione|
 |-------------------|-----------------|
-|**Consenso esplicito**|Parametro facoltativo. Racchiude una sequenza che può verificarsi o non verificarsi. È possibile specificare nella clausola guard la condizione in cui si verifica.|
+|**Consenso esplicito**|facoltativo. Racchiude una sequenza che può verificarsi o non verificarsi. È possibile specificare nella clausola guard la condizione in cui si verifica.|
 |**ALT**|Contiene un elenco di frammenti che includono sequenze alternative di messaggi. In ogni occasione si verifica una sola sequenza.<br /><br /> È possibile inserire una clausola guard in ogni frammento per indicare la condizione in cui può essere eseguito. Una clausola guard **else** indica un frammento che deve essere eseguito se nessun'altra clausola guard è true. Se tutte le clausole guard sono false e non è presente alcuna clausola guard **else**, non viene eseguito alcun frammento.|
-|**Loop**|Il frammento viene ripetuto un certo numero di volte. È possibile indicare nella clausola guard la condizione in cui si deve ripetere.<br /><br /> I frammenti combinati Loop includono le proprietà **Min** e **Max**, che indicano i numeri minimo e massimo di volte in cui il frammento può essere ripetuto. Il valore predefinito non prevede alcuna restrizione.|
-|**Break**|Se viene eseguito questo frammento, il resto della sequenza viene abbandonato. È possibile usare una clausola guard per indicare la condizione in cui si verificherà l'interruzione.|
+|**Ciclo**|Il frammento viene ripetuto un certo numero di volte. È possibile indicare nella clausola guard la condizione in cui si deve ripetere.<br /><br /> I frammenti combinati Loop includono le proprietà **Min** e **Max**, che indicano i numeri minimo e massimo di volte in cui il frammento può essere ripetuto. Il valore predefinito non prevede alcuna restrizione.|
+|**Interruzione**|Se viene eseguito questo frammento, il resto della sequenza viene abbandonato. È possibile usare una clausola guard per indicare la condizione in cui si verificherà l'interruzione.|
 |**Par**|Parallelo. Gli eventi nei frammenti possono essere interfogliati.|
 |**Critico**|Usato in un frammento Par o Seq. Indica che i messaggi in questo frammento non devono essere interfogliati con altri messaggi.|
 |**Seq**|Sono presenti due o più frammenti dell'operando. I messaggi che interessano la stessa linea di vita devono verificarsi nell'ordine dei frammenti. Nei casi in cui non interessano le stesse linee di vita, i messaggi da frammenti diversi possono essere interfogliati in parallelo.|

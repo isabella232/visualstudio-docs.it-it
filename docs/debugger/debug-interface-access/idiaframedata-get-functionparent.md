@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef646016433ecfe19106a17dff391c2dd8ce8382
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467386"
 ---
 # <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
@@ -38,5 +38,5 @@ out Restituisce un oggetto [IDiaFrameData](../../debugger/debug-interface-access
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

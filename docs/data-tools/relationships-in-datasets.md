@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281760"
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra set di dati
@@ -55,7 +55,7 @@ Come parte del vincolo FOREIGN KEY, è possibile specificare le regole di integr
 
 Le regole che è possibile apportare sono specificate nell' <xref:System.Data.Rule> enumerazione e sono elencate nella tabella seguente.
 
-|Regola vincolo di chiave esterna|Azione|
+|Regola vincolo di chiave esterna|Action|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|La modifica (aggiornamento o eliminazione) apportata al record padre viene inoltre apportata in record correlati nella tabella figlio.|
 |<xref:System.Data.Rule.SetNull>|I record figlio non vengono eliminati, ma la chiave esterna nei record figlio viene impostata su <xref:System.DBNull> . Con questa impostazione, i record figlio possono essere lasciati come "orfani", ovvero non hanno alcuna relazione con i record padre. **Nota:** L'utilizzo di questa regola può generare dati non validi nella tabella figlio.|
@@ -104,6 +104,6 @@ Le relazioni tra le tabelle di dati vengono visualizzate come righe nel **Proget
 
 2. Dal menu **dati** selezionare il comando **Mostra etichette di relazione** per visualizzare il nome della relazione. Deselezionare il comando per nascondere il nome della relazione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creare e configurare i set di dati in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

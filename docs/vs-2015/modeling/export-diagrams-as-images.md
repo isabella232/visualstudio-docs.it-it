@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14c8b88d295d1a11fd68841c45233ac7edc04c22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669665"
 ---
 # <a name="export-diagrams-as-images"></a>Esportare diagrammi come immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio è possibile salvare i diagrammi di modellazione in formati di sola lettura, in modo che sia possibile condividerli con parti interessate, utenti o membri del team di progetto che non utilizzano la stessa versione di Visual Studio.
+In Visual Studio, è possibile salvare diagrammi di modellazione in formati di sola lettura, per poterli condividere con parti interessate, utenti o membri del team di progetto che non usano la stessa versione di Visual Studio.
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -45,7 +45,7 @@ In Visual Studio è possibile salvare i diagrammi di modellazione in formati di 
 
 2. Nell'elenco **nome** selezionare **Microsoft XPS Document Writer**, quindi fare clic su **OK**.
 
-3. Nella finestra di dialogo **Salva file con nome** , salvare il file come file di **documento XPS (\*. Xps)** .
+3. Nella finestra di dialogo **Salva file con nome** , salvare il file come file di **documento XPS ( \* XPS)** .
 
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework
 

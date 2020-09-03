@@ -8,14 +8,14 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dettagli sulle sottoscrizioni offerte tramite il programma Microsoft for Startups.
 ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233252"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Sottoscrizioni di Visual Studio offerte alle startup
-Le startup qualificate che si uniscono al programma Microsoft for Startups possono ottenere 5 [abbonamenti cloud mensili](https://visualstudio.microsoft.com/vs/pricing/)di Visual Studio Enterprise. 
+Le startup qualificate che partecipano al programma Microsoft for startups possono guadagnare 5 Visual Studio Enterprise [sottoscrizioni cloud mensili](https://visualstudio.microsoft.com/vs/pricing/). 
 
 ## <a name="subscription-details"></a>Dettagli della sottoscrizione 
 Le sottoscrizioni sono le stesse disponibili in commercio, senza limitazioni o restrizioni speciali. Ogni sottoscrizione deve essere assegnata a un utente finale (ovvero l'utente con licenza) prima che l'utente possa eseguire Visual Studio ed essere riconosciuto come sottoscrittore di Visual Studio Enterprise in Azure DevOps Services.
@@ -42,7 +42,7 @@ Per le sottoscrizioni cloud annuali, gli annullamenti diventano effettivi il pri
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

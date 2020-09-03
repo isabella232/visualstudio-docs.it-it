@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 657bb91295134352fb00649ad06f59e34593c578
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669907"
 ---
 # <a name="define-packages-and-namespaces"></a>Definire pacchetti e spazi dei nomi
@@ -30,24 +30,24 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="in-this-topic"></a>In questo argomento
- [Spazi dei nomi](#Namespaces)
+## <a name="in-this-topic"></a>Contenuto dell'argomento
+ [Namespaces](#Namespaces) (Spazi dei nomi)
 
  [Creazione e visualizzazione di pacchetti](#Packages)
 
  [Creazione di elementi del modello all'interno di pacchetti](#Elements)
 
- [Trasferimento di elementi all'interno o all'esterno di un pacchetto](#Moving)
+ [Spostamento di elementi all'interno o all'esterno di un pacchetto](#Moving)
 
- [Incollare elementi in un pacchetto](#Pasting)
+ [Operazione Incolla di elementi in un pacchetto](#Pasting)
 
- [Importa relazioni tra pacchetti](#Import)
+ [Importare relazioni tra pacchetti](#Import)
 
  [Riferimenti da uno spazio dei nomi a un altro](#References)
 
  [Proprietà dei pacchetti](#Properties)
 
-## <a name="Namespaces"></a>Namespaces
+## <a name="namespaces"></a><a name="Namespaces"></a> Namespaces
  I pacchetti sono utili per suddividere il lavoro in aree diverse. Ogni pacchetto definisce uno spazio dei nomi, in modo che i nomi definiti in pacchetti diversi non siano in conflitto tra loro.
 
  La proprietà del nome completo di ogni elemento è il nome completo del pacchetto a cui appartiene, seguito dal nome dell'elemento stesso. Ad esempio, se il pacchetto si chiama `MyPackage`, una classe nel pacchetto avrà un nome completo come `MyPackage::MyClass`. Poiché ogni elemento è contenuto in un modello, ogni nome completo inizia con il nome del modello.
@@ -58,7 +58,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 
  I pacchetti sono contenitori. Se si sposta o si elimina un pacchetto, vengono spostati o eliminati anche le classi, i pacchetti e gli altri elementi definiti al suo interno. Lo stesso vale per altri elementi che definiscono gli spazi dei nomi.
 
-## <a name="Packages"></a>Creazione e visualizzazione di pacchetti
+## <a name="creating-and-viewing-packages"></a><a name="Packages"></a> Creazione e visualizzazione di pacchetti
  È possibile creare un pacchetto in un diagramma classi UML o in Esplora modelli UML.
 
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>Per creare un pacchetto in un diagramma classi UML
@@ -97,7 +97,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
     > [!NOTE]
     > Questo crea una visualizzazione del pacchetto nel diagramma. Non mostrerà necessariamente tutti gli elementi contenuti nel pacchetto. Per assicurarsi che sia visibile tutto il contenuto di un pacchetto, visualizzarlo in Esplora modelli UML.
 
-## <a name="Elements"></a>Creazione di elementi del modello all'interno di pacchetti
+## <a name="creating-model-elements-inside-packages"></a><a name="Elements"></a> Creazione di elementi del modello all'interno di pacchetti
  È possibile inserire gli elementi del modello all'interno di un pacchetto in quattro modi:
 
 - Aggiungere un nuovo elemento a un pacchetto in Esplora modelli UML.
@@ -155,7 +155,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 
     - In **Esplora modelli UML**ogni elemento verrà visualizzato sotto il pacchetto.
 
-## <a name="Moving"></a>Trasferimento di elementi all'interno e all'esterno dei pacchetti
+## <a name="moving-elements-into-and-out-of-packages"></a><a name="Moving"></a> Trasferimento di elementi all'interno e all'esterno dei pacchetti
  È possibile spostare uno o più elementi all'interno o all'esterno di un pacchetto.
 
  Se si sposta un pacchetto, si sposta anche il relativo contenuto.
@@ -166,7 +166,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 
      Il nome completo dell'elemento cambierà e indicherà il nuovo pacchetto o modello proprietario.
 
-     \- oppure -
+     \- - oppure -
 
 - In un diagramma classi trascinare l'elemento in una forma pacchetto.
 
@@ -175,7 +175,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
     > [!NOTE]
     > Se si trascina un elemento all'esterno di un pacchetto in una parte vuota del diagramma, il pacchetto proprietario non cambia. In questo modo è possibile creare un diagramma che mostra gli elementi di diversi pacchetti senza dover visualizzare i pacchetti stessi.
 
-## <a name="Pasting"></a>Incollare elementi in un pacchetto
+## <a name="pasting-elements-into-a-package"></a><a name="Pasting"></a> Incollare elementi in un pacchetto
  È possibile incollare un elemento in un pacchetto. Se si incolla un gruppo di elementi correlati in un pacchetto, verranno incollate anche le relazioni tra di essi.
 
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>Per incollare elementi in un pacchetto in un diagramma classi UML
@@ -187,31 +187,31 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
     > [!NOTE]
     > Il pacchetto può trovarsi in un diagramma diverso.
 
-## <a name="Import"></a>Importa relazioni tra pacchetti
+## <a name="import-relationships-between-packages"></a><a name="Import"></a> Importa relazioni tra pacchetti
  È possibile definire una relazione di importazione tra i pacchetti, usando lo strumento di **importazione** .
 
  Con l'importazione gli elementi definiti nel pacchetto importato, ovvero gli elementi all'estremità freccia della relazione, vengono effettivamente definiti anche nel pacchetto da importare. Tutti gli elementi la cui visibilità è definita come **pacchetto** saranno visibili anche nel pacchetto di importazione.
 
  Evitare di creare cicli nelle relazioni di importazione.
 
-## <a name="References"></a>Riferimenti da uno spazio dei nomi a un altro
+## <a name="references-from-one-namespace-to-another"></a><a name="References"></a> Riferimenti da uno spazio dei nomi a un altro
  Per fare riferimento a un elemento di un pacchetto da un altro, è necessario usare il nome completo dell'elemento.
 
  Ad esempio, si supponga che il pacchetto `SalesCommon` definisca il tipo `CustomerAddress`. In un altro pacchetto `RestaurantSales`, si vuole definire un tipo `MealOrder`, con un attributo di tipo Customer Address. Sono disponibili due opzioni:
 
-- Specificare il tipo dell'attributo usando il nome completo `SalesCommon::CustomerAddress`. Questa operazione può essere eseguita solo se la proprietà **visibility** di `CustomerAddress` è impostata su **public**.
+- Specificare il tipo dell'attributo usando il nome completo `SalesCommon::CustomerAddress`. Questa operazione può essere eseguita solo se `CustomerAddress` la relativa proprietà **visibility** è impostata su **public**.
 
 - Creare una relazione di importazione dal pacchetto `RestaurantSales` al pacchetto `SalesCommon`. Si potrà quindi usare `CustomerAddress` senza usare il nome completo.
 
-## <a name="Properties"></a>Proprietà dei pacchetti
+## <a name="properties-of-packages"></a><a name="Properties"></a> Proprietà dei pacchetti
  Ogni pacchetto presenta le proprietà seguenti. Per visualizzare le proprietà, fare clic con il pulsante destro del mouse sul pacchetto, in un diagramma o in Esplora modelli UML, quindi fare clic su **Proprietà**.
 
-|proprietà|Valore predefinito|Descrizione|
+|Proprietà|Valore predefinito|Descrizione|
 |--------------|-------------------|-----------------|
-|**Nome**|(nuovo nome)|Nome del pacchetto. È possibile modificarlo nel diagramma o nella finestra Proprietà.|
+|**Name**|(nuovo nome)|Nome del pacchetto. È possibile modificarlo nel diagramma o nella finestra Proprietà.|
 |**Nome completo**|Nome *contenitore* :: *Package*|Nome completo, preceduto dal nome del pacchetto o del modello contenente questo pacchetto. Per altre informazioni, vedere [Spazi dei nomi](#Namespaces).|
 |**Profili**|(vuoto)|Elenco dei profili collegati a questo pacchetto. Questi profili forniscono gli stereotipi che possono essere applicati agli elementi all'interno del pacchetto. Per altre informazioni, vedere [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
-|**Visibilità**|**Public**|Visibilità del pacchetto all'esterno del pacchetto padre.|
+|**Visibilità**|**Pubblica**|Visibilità del pacchetto all'esterno del pacchetto padre.|
 |**Elementi di lavoro**|(vuoto)|Elenco di elementi di lavoro collegati. Per altre informazioni, vedere [collegare elementi del modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).|
 |**Percorso definizione**|(un nome)|Nome file in cui sono archiviati i dettagli del pacchetto. I file si trovano all'interno della cartella di progetto **ModelDefinition** . Queste informazioni possono essere utili a scopo di controllo del codice sorgente.|
 |**Descrizione**|(vuoto)|Descrizione del pacchetto.|

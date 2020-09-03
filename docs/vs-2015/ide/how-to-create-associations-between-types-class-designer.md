@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb46d3bf7096d0a7e14ce3926514d946d7536e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668120"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Procedura: Creare associazioni tra tipi (Progettazione classi)
@@ -46,7 +46,7 @@ Le linee di associazione in Progettazione classi mostrano le relazioni tra le cl
 
 - Sulla superficie del diagramma fare clic sull'etichetta della linea di associazione e modificarla.
 
-  \- oppure -
+  \- - oppure -
 
 1. Fare clic sulla forma che contiene la proprietà visualizzata come associazione.
 
@@ -54,7 +54,7 @@ Le linee di associazione in Progettazione classi mostrano le relazioni tra le cl
 
 2. Nella finestra Dettagli classe o nella finestra Proprietà modificare il campo del nome relativo alla proprietà e premere Invio.
 
-     Il nome verrà aggiornato nella finestra **Dettagli classe**, sulla linea di associazione, nella finestra Proprietà e nel codice.
+     Il nome viene aggiornato nella finestra **Dettagli classe**, sulla linea di associazione, nella finestra Proprietà e nel codice.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Passare dalla notazione membro alla notazione associazione (Progettazione classi)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+ [Procedura: passare dalla notazione membro alla notazione associazione (Progettazione classi)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

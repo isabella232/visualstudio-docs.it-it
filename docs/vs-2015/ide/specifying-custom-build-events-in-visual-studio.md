@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667132"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Specifica di eventi di compilazione personalizzati in Visual Studio
@@ -50,7 +50,7 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
 
 - Includere i caratteri jolly, se necessario.
 
-     Esempio: `for %I in (*.txt *.doc *.html) do copy %I c:\`*directory*`\`
+     Esempio: `for %I in (*.txt *.doc *.html) do copy %I c:\` *directory*`\`
 
     > [!NOTE]
     > `%I` nel codice sopra riportato deve essere `%%I` negli script batch.

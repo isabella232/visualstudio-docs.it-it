@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f358d5b95349fe99b2a2e01df5158d2c0aa10a11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668055"
 ---
 # <a name="how-to-create-project-templates"></a>Procedura: creare modelli di progetto
@@ -46,15 +46,15 @@ Questa procedura consente di creare un modello tramite l'**Esportazione guidata 
 
 6. Se la soluzione corrente contiene più progetti, selezionare i progetti da esportare in un modello.
 
-7. Scegliere **Avanti**.
+7. Fare clic su **Avanti**.
 
 8. Selezionare un'icona e un'immagine di anteprima per il modello. Queste verranno visualizzate nella finestra di dialogo **Nuovo progetto**.
 
 9. Immettere un nome e una descrizione per il modello.
 
-10. Scegliere **Fine**. Il progetto verrà esportato in un file con estensione zip, inserito nel percorso di output specificato e, se questa azione è stata selezionata, importato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+10. Fare clic su **Fine**. Il progetto verrà esportato in un file con estensione zip, inserito nel percorso di output specificato e, se questa azione è stata selezionata, importato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-     Se [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] è installato, è possibile eseguire il wrapping del modello finito in un file con estensione vsix per la distribuzione tramite il modello **Progetto VSIX**. Per altre informazioni, vedere [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
+     Se [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] è installato, è possibile eseguire il wrapping del modello finito in un file con estensione vsix per la distribuzione tramite il modello **Progetto VSIX**. Per altre informazioni, vedere [Introduzione con il modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
 ## <a name="see-also"></a>Vedere anche
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md) [procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)

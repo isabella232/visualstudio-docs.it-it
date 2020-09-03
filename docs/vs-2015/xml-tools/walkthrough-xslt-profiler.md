@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7ee6665aea98edf7cb701f5fdfe07d293887bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669530"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Procedura dettagliata: XSLT Profiler
@@ -21,7 +21,7 @@ ms.locfileid: "72669530"
 
 Il Profiler XSLT crea rapporti di prestazioni XSLT dettagliati utili per misurare, valutare e trattare problemi correlati alle prestazioni nel codice XSLT. Il Profiler XSLT include suggerimenti utili per le ottimizzazioni dei fogli di stile XSL e XSLT. Per applicazioni XSLT che richiedono massime prestazioni, questo strumento potrebbe essere essenziale.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Le operazioni descritte nella seguente procedura dettagliata richiedono Visual Studio 2010 e .NET Framework versione 4. Il Profiler XSLT è disponibile solo con Microsoft Visual Studio Team System con gli strumenti di analisi installati.
 
 ### <a name="create-the-performance-report"></a>Creare il rapporto di prestazioni

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568620"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
@@ -33,35 +33,35 @@ La tabella seguente contiene alcuni caratteri, operatori, costrutti ed esempi di
 
 |Scopo|Expression|Esempio|
 |-------------|----------------|-------------|
-|Trovare la corrispondenza con qualsiasi carattere singolo (ad eccezione di un'interruzione di riga). Per altre informazioni, vedere [Qualsiasi carattere](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o`corrisponde a "aro" in "around" e "abo" in "about" ma non "acro" in "across"|
+|Trovare la corrispondenza con qualsiasi carattere singolo (ad eccezione di un'interruzione di riga). Per altre informazioni, vedere [Qualsiasi carattere](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` trova la corrispondenza di "Aro" in "Around" e "ABO" in "about", ma non in "acro" in "across"|
 |Trovare la corrispondenza con zero o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza zero o più volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` trova "r" in "rack", "ar" in "ark" e "aar" in "aardvark"|
-|Trova la corrispondenza di qualsiasi carattere zero o più volte.|.*|`c.*e` trova "cke" in "racket", "comme" in "comment" e "code" in "code"|
-|Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza una o più volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d`corrisponde a "eed" in "feeder" ed "ed" in|
-|Trova la corrispondenza con qualsiasi carattere uno o più volte.|.+|`e.+e`corrisponde a "eede" in "feeder" ma non trova corrispondenze in "feed"|
-|Trovare la corrispondenza con zero o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza zero o più volte (corrispondenza lazy)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`\w*?d`corrisponde a "fad" ed "ed" in "faded" ma non all'intera parola "faded" a causa della corrispondenza lazy|
-|Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza una o più volte (corrispondenza lazy)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e\w+?`corrisponde a "ee" in "asleep" ed "ed" in "faded" ma non trova corrispondenze in "fade"|
-|Ancorare la stringa di corrispondenza all'[inizio di una riga o stringa](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car`corrisponde alla parola "car" solo quando appare all'inizio di una riga|
-|Ancorare la stringa di corrispondenza alla [fine di una riga o stringa](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`car\r?$`corrisponde a "car" solo quando appare alla fine di una linea|
-|Ancorare la stringa di corrispondenza alla fine del file|$|`car$`corrisponde a "car" solo quando appare alla fine del file|
-|Trovare la corrispondenza con qualsiasi carattere singolo in un set|[abc]|`b[abc]`corrisponde a "ba", "bb" e "bc"|
-|Trovare la corrispondenza con qualsiasi carattere in un intervallo di caratteri|[a-f]|`be[n-t]`corrisponde a "bet" in "between", "ben" in "below" e "bes" in "beside", ma non trova corrispondenze in "below"|
+|Corrisponde a qualsiasi carattere zero o più volte.|.*|`c.*e` trova "cke" in "racket", "comme" in "comment" e "code" in "code"|
+|Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza una o più volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d` trova la corrispondenza con "eed" in "feeder" e "ed" in "Faded"|
+|Trova la corrispondenza con qualsiasi carattere uno o più volte.|.+|`e.+e` corrisponde a "eede" in "feeder" ma non trova corrispondenze in "feed"|
+|Trovare la corrispondenza con zero o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza zero o più volte (corrispondenza lazy)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`\w*?d` trova "FAD" e "ed" in "Faded" ma non l'intera parola "Faded" a causa della corrispondenza Lazy|
+|Trovare la corrispondenza con una o più occorrenze dell'espressione precedente (trovare quanti meno caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza una o più volte (corrispondenza lazy)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e\w+?` trova "EE" in "dormente" e "ed" in "sbiadito" ma non trova corrispondenze in "dissolvenza"|
+|Ancorare la stringa di corrispondenza all'[inizio di una riga o stringa](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car` corrisponde alla parola "Car" solo quando viene visualizzata all'inizio di una riga|
+|Ancorare la stringa di corrispondenza alla [fine di una riga o stringa](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`car\r?$` corrisponde a "Car" solo quando viene visualizzato alla fine di una riga|
+|Ancorare la stringa di corrispondenza alla fine del file|$|`car$` corrisponde a "Car" solo quando viene visualizzato alla fine del file|
+|Trovare la corrispondenza con qualsiasi carattere singolo in un set|[abc]|`b[abc]` corrisponde a "BA", "BB" e "BC"|
+|Trovare la corrispondenza con qualsiasi carattere in un intervallo di caratteri|[a-f]|`be[n-t]` trova "Bet" in "between", "ben" in "Under" e "BES" in "beside", ma non trova corrispondenze in "below".|
 |Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]". Per altre informazioni, vedere [Gruppi Capture e criteri di sostituzione](#capture-groups-and-replacement-patterns). |
 |Invalidare una corrispondenza|(?!abc)|`real(?!ity)` trova "real" in "realty" e "really", ma non in "reality". Trova anche il secondo "real" (ma non il primo "real") in "realityreal".|
-|Trovare la corrispondenza con qualsiasi carattere non presente in un determinato set di caratteri. Per altre informazioni, vedere [Gruppo di caratteri negativi](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]`corrisponde a "bef" in "prima", "beh" in "dietro" e "bel" in "sotto", ma non trova corrispondenze in "sotto"|
-|Trovare la corrispondenza con l'espressione prima o dopo il simbolo|&#124;|`(sponge|mud) bath`corrisponde a "bagno di spugna" e "bagno di fango"|
-|[Far precedere dai caratteri di escape il carattere](/dotnet/standard/base-types/character-escapes-in-regular-expressions) che segue la barra rovesciata| \\ |`\^`corrisponde al carattere|
-|Specificare il numero di occorrenze del gruppo o del carattere precedente. Per altre informazioni, vedere [Trova la corrispondenza esatta n volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, dove 'n' è il numero di occorrenze|`x(ab){2}x`corrisponde a "xababx"<br/>`x(ab){2,3}x`corrisponde a "xababx" e "xabababx" ma non a "xababababx"|
-|[Trovare la corrispondenza con un testo in una categoria Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Per altre informazioni sulle classi di caratteri Unicode, vedere [Proprietà dei caratteri Unicode standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, dove "X" è il numero Unicode.|`\p{Lu}`corrisponde a "T" e "D" in "Thomas Doe"|
-|[Trovare la corrispondenza con un confine di parola](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (all'esterno di una classe di caratteri `\b` specifica un confine di parola e all'interno di una classe di caratteri `\b` specifica un backspace).|`\bin`corrisponde a "in" in "inside" ma non trova corrispondenze in "pinto"|
-|Trovare la corrispondenza con un'interruzione di riga (ovvero un ritorno a capo seguito da una nuova riga)|\r?\n|`End\r?\nBegin`corrisponde a "End" e "Begin" solo quando "End" è l'ultima stringa in una riga e "Begin" è la prima stringa nella riga successiva|
-|Trovare la corrispondenza con qualsiasi [carattere alfabetico](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd`corrisponde a "add" e "a1d" ma non a "a d"|
-|Trovare la corrispondenza con qualsiasi [carattere spazio vuoto](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface`corrisponde alla frase "Interfaccia pubblica"|
-|Trovare la corrispondenza con qualsiasi [carattere cifra decimale](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d`corrisponde a "4" e "0" in "wd40"|
+|Trovare la corrispondenza con qualsiasi carattere non presente in un determinato set di caratteri. Per altre informazioni, vedere [Gruppo di caratteri negativi](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` corrisponde a "BEF" in "before", "Beh" in "Behind" e "bel" in "below", ma non trova corrispondenze in "below".|
+|Trovare la corrispondenza con l'espressione prima o dopo il simbolo|&#124;|`(sponge|mud) bath` corrisponde a "Sponge Bath" e a "Mud Bath"|
+|[Far precedere dai caratteri di escape il carattere](/dotnet/standard/base-types/character-escapes-in-regular-expressions) che segue la barra rovesciata| \\ |`\^` corrisponde al carattere ^|
+|Specificare il numero di occorrenze del gruppo o del carattere precedente. Per altre informazioni, vedere [Trova la corrispondenza esatta n volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, dove 'n' è il numero di occorrenze|`x(ab){2}x` trova la corrispondenza con "xababx"<br/>`x(ab){2,3}x` trova "xababx" e "xabababx" ma non "xababababx"|
+|[Trovare la corrispondenza con un testo in una categoria Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Per altre informazioni sulle classi di caratteri Unicode, vedere [Proprietà dei caratteri Unicode standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, dove "X" è il numero Unicode.|`\p{Lu}` trova la corrispondenza di "T" e "D" in "Thomas Doe"|
+|[Trovare la corrispondenza con un confine di parola](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (all'esterno di una classe di caratteri `\b` specifica un confine di parola e all'interno di una classe di caratteri `\b` specifica un backspace).|`\bin` trova "in" in "interno" ma non trova corrispondenze in "Pinto"|
+|Trovare la corrispondenza con un'interruzione di riga (ovvero un ritorno a capo seguito da una nuova riga)|\r?\n|`End\r?\nBegin` trova "end" e "Begin" solo quando "end" è l'ultima stringa in una riga e "Begin" è la prima stringa nella riga successiva|
+|Trovare la corrispondenza con qualsiasi [carattere alfabetico](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` corrisponde a "Add" e "A1D" ma non a "a d"|
+|Trovare la corrispondenza con qualsiasi [carattere spazio vuoto](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` corrisponde alla frase "Public Interface"|
+|Trovare la corrispondenza con qualsiasi [carattere cifra decimale](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` trova la corrispondenza di "4" e "0" in "WD40"|
 
-Un'espressione regolare di esempio che combina alcuni degli operatori e `\b0[xX]([0-9a-fA-F]+\)\b`dei costrutti in modo che corrisponda a un numero esadecimale è . Questa espressione corrisponde a "0xc67f" ma non a "0xc67g".
+Un'espressione regolare di esempio che combina alcuni operatori e costrutti per trovare la corrispondenza con un numero esadecimale è `\b0[xX]([0-9a-fA-F]+\)\b` . Questa espressione corrisponde a "0xc67f" ma non a "0xc67g".
 
 > [!TIP]
-> Nei sistemi operativi Windows la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio di espressione regolare .NET.
+> Nei sistemi operativi Windows la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio delle espressioni regolari di .NET.
 
 ## <a name="capture-groups-and-replacement-patterns"></a>Gruppi Capture e criteri di sostituzione
 
@@ -69,9 +69,9 @@ Un gruppo Capture delinea una sottoespressione di un'espressione regolare e acqu
 
 Per creare un gruppo Capture numerato, racchiudere la sottoespressione tra parentesi nel criterio dell'espressione regolare. Le acquisizioni sono numerate automaticamente da sinistra verso destra in base alla posizione delle parentesi di apertura nell'espressione regolare. Per accedere al gruppo Capture:
 
-- **all'interno dell'espressione regolare**: utilizzare `\number`. Ad esempio, `\1` nell'espressione regolare `(\w+)\s\1` fa riferimento al primo gruppo Capture `(\w+)`.
+- **all'interno dell'espressione regolare**: usare `\number` . Ad esempio, `\1` nell'espressione regolare `(\w+)\s\1` fa riferimento al primo gruppo Capture `(\w+)`.
 
-- **in un modello** `$number`di sostituzione : Utilizzare . Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` definisce due gruppi: il primo gruppo contiene una singola cifra decimale e il secondo gruppo contiene un carattere singolo compreso tra **a** e **z**. L'espressione trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` fa riferimento solo al primo gruppo (`$1`) e converte la stringa in **z1 z2 z3 z4**.
+- **in un modello di sostituzione**: usare `$number` . Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` definisce due gruppi: il primo gruppo contiene una singola cifra decimale e il secondo gruppo contiene un carattere singolo compreso tra **a** e **z**. L'espressione trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` fa riferimento solo al primo gruppo (`$1`) e converte la stringa in **z1 z2 z3 z4**.
 
 L'immagine seguente mostra un'espressione regolare `(\w+)\s\1` e una stringa di sostituzione `$1`. Sia l'espressione regolare che il criterio di sostituzione fanno riferimento al primo gruppo Capture numerato automaticamente 1. Quando si sceglie **Sostituisci tutto** nella finestra di dialogo **Sostituzione veloce** in Visual Studio, le parole ripetute vengono rimosse dal testo.
 
@@ -86,9 +86,9 @@ Anziché usare la numerazione automatica di un gruppo Capture, è possibile asse
 
 I gruppi Capture denominati, come i gruppi Capture numerati, possono essere usati all'interno dell'espressione regolare stessa o in un criterio di sostituzione. Per accedere al gruppo Capture denominato:
 
-- **all'interno dell'espressione regolare**: utilizzare `\k<name>`. Ad esempio, `\k<repeated>` nell'espressione regolare `(?<repeated>\w+)\s\k<repeated>` fa riferimento al gruppo Capture denominato `repeated` la cui sottoespressione è `\w+`.
+- **all'interno dell'espressione regolare**: usare `\k<name>` . Ad esempio, `\k<repeated>` nell'espressione regolare `(?<repeated>\w+)\s\k<repeated>` fa riferimento al gruppo Capture denominato `repeated` la cui sottoespressione è `\w+`.
 
-- **in un modello** `${name}`di sostituzione : Utilizzare . Ad esempio: `${repeated}`.
+- **in un modello di sostituzione**: usare `${name}` . Ad esempio, `${repeated}`
 
 A titolo di esempio, l'immagine seguente mostra un'espressione regolare `(?<repeated>\w+)\s\k<repeated>` e una stringa di sostituzione `${repeated}`. Sia l'espressione regolare che il criterio di sostituzione fanno riferimento al primo gruppo Capture denominato `repeated`. Quando si sceglie **Sostituisci tutto** nella finestra di dialogo **Sostituzione veloce** in Visual Studio, le parole ripetute vengono rimosse dal testo.
 
@@ -102,4 +102,4 @@ Per altre informazioni sui gruppi Capture denominati, vedere [Sottoespressioni c
 ## <a name="see-also"></a>Vedere anche
 
 - [Linguaggio di espressioni regolari](/dotnet/standard/base-types/regular-expression-language-quick-reference)
-- [Trovare e sostituire testo](../ide/finding-and-replacing-text.md)
+- [Cercare e sostituire testo](../ide/finding-and-replacing-text.md)

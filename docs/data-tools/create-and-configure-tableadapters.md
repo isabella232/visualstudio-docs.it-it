@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282672"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
@@ -115,6 +115,6 @@ Nell'esempio seguente viene illustrato come chiamare una query aggiuntiva denomi
     > [!NOTE]
     > Il trascinamento di un oggetto **query** direttamente sul **Progettazione DataSet** crea un metodo che restituisce solo un valore scalare (singolo). Mentre la query o la stored procedure selezionata potrebbe restituire più di un valore singolo, il metodo creato dalla procedura guidata restituisce solo un valore singolo. Ad esempio, la query potrebbe restituire la prima colonna della prima riga dei dati restituiti.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

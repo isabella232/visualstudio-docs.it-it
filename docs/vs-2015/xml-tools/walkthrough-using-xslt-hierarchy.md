@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46e6acc8f65a9c9589348508f57cc75b04c61ccc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669555"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Procedura dettagliata: utilizzo della gerarchia XSLT
@@ -115,4 +115,4 @@ Lo strumento di gerarchia XSLT semplifica molte attività di sviluppo XML. Un fo
 6. Quando il debugger viene arrestato all'istruzione `<xsl:include href="xslincludefile.xsl" />`, premere il pulsante di esecuzione dell'istruzione. Notare che l'esecuzione del debug può proseguire nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura dettagliata: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+ [Procedura dettagliata: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)

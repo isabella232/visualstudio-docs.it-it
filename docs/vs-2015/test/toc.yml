@@ -32,7 +32,7 @@
               href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
             - name: Sviluppo basato su test con Esplora test
               href: quick-start-test-driven-development-with-test-explorer.md
-            - name: Utilizzo di membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
+            - name: Uso di membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
               href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
             - name: Utilizzo di classi Assert
               href: using-the-assert-classes.md
@@ -76,7 +76,7 @@
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Risoluzione dei problemi di code coverage
               href: troubleshooting-code-coverage.md
-        - name: Utilizzo di emulatori per isolare gli unit test di SharePoint 2010
+        - name: Uso di emulatori per isolare gli unit test di SharePoint 2010
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
     - name: Usare l'automazione dell'interfaccia utente per testare il codice
       items:
@@ -156,9 +156,9 @@
           items:
             - name: Creare ed eseguire unit test
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
-            - name: Testing unità di una DLL di C++
+            - name: Unit test di una DLL C++
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: 'Unit test di codice C#'
+            - name: Unit test di codice C#
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: Eseguire unit test in Esplora test
               href: run-unit-tests-for-store-apps-in-visual-studio.md
@@ -166,7 +166,7 @@
           items:
             - name: Analizzare la qualità del codice tramite analisi statica del codice
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
-            - name: 'Analizzare la qualità del codice Visual Basic e C#'
+            - name: Analizzare la qualità del codice Visual Basic e C#
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
             - name: Analizzare la qualità del codice C++
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md

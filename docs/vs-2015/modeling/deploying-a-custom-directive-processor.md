@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6cce0a918b1b3e029846176832ab2feb74e3e9e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669843"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
@@ -50,31 +50,31 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
 
 1. Creare un progetto VSIX in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-    - Nella finestra di dialogo **nuovo progetto** espandere **Visual Basic** o **C#Visual**, quindi espandere **estensibilità**. Fare clic su **progetto VSIX**.
+    - Nella finestra di dialogo **nuovo progetto** espandere **Visual Basic** o **Visual C#**, quindi espandere **estensibilità**. Fare clic su **progetto VSIX**.
 
 2. In **source. Extension. vsixmanifest**impostare il tipo di contenuto e le edizioni supportate.
 
     1. Nell'editor del manifesto VSIX, nella scheda **Asset** , scegliere **nuovo** e impostare le proprietà del nuovo elemento:
 
-         **Tipo di contenuto**  = **VSPackage**
+         **Tipo**  =  di contenuto **Pacchetto VSPackage**
 
-         **Progetto di origine**  =  \<*progetto corrente* >
+         **Progetto di origine** = \<*the current project*>
 
     2. Fare clic su **edizioni selezionate** e controllare i tipi di installazione in cui si desidera che il processore di direttiva sia utilizzabile.
 
 3. Aggiungere un file .pkgdef e impostarne le proprietà da includere in VSIX.
 
-    1. Creare un file di testo e denominarlo \<*assemblyName*>. pkgdef.
+    1. Creare un file di testo e denominarlo \<*assemblyName*> . pkgdef.
 
          \<*assemblyName*> corrisponde in genere al nome del progetto.
 
     2. Selezionarlo in Esplora soluzioni e impostarne le proprietà come segue:
 
-         **Azione di compilazione**  = **contenuto**
+         **Azione**  =  di compilazione **Contenuto** di
 
-         **Copia nella directory di Output**  = **copia sempre**
+         **Copia nella directory**  =  di output **Copia sempre**
 
-         **Includi in VSIX**  = **true**
+         **Includi in VSIX**  =  Valore **true**
 
     3. Impostare il nome del pacchetto VSIX e assicurarsi che l'ID sia univoco.
 
@@ -93,11 +93,11 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
 
 5. Aggiungere i riferimenti seguenti al progetto:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . 0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \* . 0**
 
-    - **Microsoft. VisualStudio. TextTemplating. VSHost. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. VSHost. \* . 0**
 
 6. Aggiungere la classe del processore di direttiva personalizzato al progetto.
 
@@ -117,7 +117,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
 
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Per disinstallare o disabilitare temporaneamente il processore di direttiva personalizzato
 
-1. Nel menu **strumenti** di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fare clic su **Gestione estensioni**.
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Scegliere **Gestione estensioni**dal menu **strumenti** .
 
 2. Selezionare il progetto VSIX che contiene il processore di direttiva, quindi fare clic su **Disinstalla** o **Disabilita**.
 
@@ -128,7 +128,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
 
 - Il metodo `IsDirectiveSupported` deve restituire `true` quando viene passato il nome di `CustomDirective`.
 
-- Se non è possibile visualizzare l'estensione in Gestione estensioni, ma il sistema non consentirà di installarlo, eliminare l'estensione da **%localappdata%\Microsoft\VisualStudio \\ \*.0 \ Extensions \\** .
+- Se l'estensione non è visibile in Gestione estensioni, ma il sistema non consentirà di installarlo, eliminare l'estensione da **%LocalAppData%\Microsoft\VisualStudio \\ \* . 0 \ Extensions \\ **.
 
 - Aprire il file .vsix ed esaminarne il contenuto. Per aprirlo, impostare l'estensione del file su .zip. Verificare che contenga i file .dll, .pkgdef ed extension.vsixmanifest. Il file extension.vsixmanifest deve contenere l'elenco adatto nel nodo SupportedProducts e deve contenere anche un nodo Package VS sotto il nodo Contenuto:
 
@@ -160,7 +160,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
  Questo metodo per installare un processore di direttiva personalizzato è il meno preferito. Non fornisce un modo comodo per abilitare e disabilitare il processore di direttiva e non fornisce un metodo per distribuire il processore di direttiva ad altri utenti.
 
 > [!CAUTION]
-> Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.
+> Se il Registro di sistema viene modificato in modo non appropriato, il sistema potrebbe venire gravemente danneggiato. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Per registrare un processore di direttiva impostando una chiave del Registro di sistema
 
@@ -168,7 +168,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
 
 2. In regedit passare a
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
     Se si desidera installare il processore di direttiva nella versione sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], inserire "Exp" dopo "11.0".
 
@@ -186,19 +186,19 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
 
    Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|Name|Digitare|Dati|
+|Nome|Type|Dati|
 |----------|----------|----------|
-|(Predefinito)|REG_SZ|(valore non impostato)|
-|Class|REG_SZ|**Nome \<Namespace >. Nome \<Class >**|
-|CodeBase|REG_SZ|**\<Your percorso > \\ < il nome dell'assembly \>**|
+|Valore predefinito.|REG_SZ|(valore non impostato)|
+|Classe|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|CodeBase|REG_SZ|**\<Your Path>\\<il nome dell'assembly\>**|
 
  Se l'assembly è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|Name|Digitare|Dati|
+|Nome|Type|Dati|
 |----------|----------|----------|
-|(Predefinito)|REG_SZ|(valore non impostato)|
-|Class|REG_SZ|\<**il nome** completo della classe >|
-|Assembly|REG_SZ|\<**il nome dell'assembly nella GAC** >|
+|Valore predefinito.|REG_SZ|(valore non impostato)|
+|Classe|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|Assembly|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
 ## <a name="see-also"></a>Vedere anche
  [Creazione di processori di direttiva di modelli di testo T4 personalizzati](../modeling/creating-custom-t4-text-template-directive-processors.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d637cb3c25772685d5a782eb74bf94878ded36c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669426"
 ---
 # <a name="xml-schemas-dialog-box"></a>Finestra di dialogo Schemi XML
@@ -23,7 +23,7 @@ La finestra di dialogo **schemi XML** consente di selezionare gli schemi XML Sch
 
  È possibile accedere alla finestra di dialogo **schemi XML** facendo clic sul pulsante **schemi** nella finestra proprietà del documento oppure selezionando **schemi** dal menu **XML** .
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  **USA** Consente di selezionare la modalità di utilizzo dello schema XML.
 
 - **Automatico**. Questo schema non è usato dal documento corrente ma è disponibile per l'associazione automatica. Se il documento XML dichiara uno spazio di nomi che corrisponde al `targetNamespace` di questo schema, lo schema viene automaticamente associato e incluso nel set di schemi.

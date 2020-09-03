@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568659"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 
-Copia tutto l'input e l'output dalla finestra **di comando** in un file.
+Copia tutti i dati di input e output dalla finestra di **comando** in un file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,21 +33,21 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="arguments"></a>Argomenti
 
 `filename`\
-Facoltativa. Nome del file di log. Per impostazione predefinita, il file viene creato nella cartella del profilo dell'utente. Se il nome del file specificato esiste già, il log viene accodato alla fine del file esistente. Se non viene specificato alcun file, viene usato l'ultimo file specificato. Se non esiste alcun file precedente, viene creato un file di log predefinito, denominato cmdline.log.
+facoltativo. Nome del file di log. Per impostazione predefinita, il file viene creato nella cartella del profilo dell'utente. Se il nome del file specificato esiste già, il log viene accodato alla fine del file esistente. Se non viene specificato alcun file, viene usato l'ultimo file specificato. Se non esiste alcun file precedente, viene creato un file di log predefinito, denominato cmdline.log.
 
 > [!TIP]
 > Per modificare il percorso in cui viene salvato il file di log, immettere il percorso completo del file, racchiuso tra virgolette se il percorso contiene spazi.
 
-## <a name="switches"></a>Switch
+## <a name="switches"></a>Commutatori
 
 /on\
-Facoltativa. Avvia la registrazione per la finestra di **comando** nel file specificato e accoda il file con le nuove informazioni.
+facoltativo. Avvia la registrazione per la finestra di **comando** nel file specificato e accoda il file con le nuove informazioni.
 
 /off\
-Facoltativa. Interrompe la registrazione per la finestra di **comando**.
+facoltativo. Interrompe la registrazione per la finestra di **comando**.
 
 /overwrite\
-Facoltativa. Se il file specificato nell'argomento `filename` corrisponde a un file esistente, il file viene sovrascritto.
+facoltativo. Se il file specificato nell'argomento `filename` corrisponde a un file esistente, il file viene sovrascritto.
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -77,5 +77,5 @@ Questo esempio consente di riprendere la registrazione dei comandi nel file di l
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
 - [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

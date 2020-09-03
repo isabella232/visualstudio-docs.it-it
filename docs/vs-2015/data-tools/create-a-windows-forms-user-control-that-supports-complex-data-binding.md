@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99c4a20939ed2e3a036831930749bb59b5a42315
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670045"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding complesso
@@ -58,8 +58,8 @@ Quando si visualizzano dati nei form delle applicazioni Windows, è possibile sc
 
 - Aggiungere il nuovo controllo trascinandolo dalla **finestra Origini dati** in **Form1**.
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare questa procedura dettagliata, è necessario:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questo scenario, saranno necessari gli elementi seguenti:
 
 - Accedere al database di esempio Northwind.
 
@@ -106,16 +106,16 @@ Quando si visualizzano dati nei form delle applicazioni Windows, è possibile sc
      [!code-csharp[VbRaddataDisplaying#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/ComplexDataGridView.cs#4)]
      [!code-vb[VbRaddataDisplaying#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/ComplexDataGridView.vb#4)]
 
-3. Scegliere **Compila soluzione** dal menu **Compila**.
+3. Scegliere **Compila soluzione**dal menu **Compila** .
 
 ## <a name="creating-a-data-source-from-your-database"></a>Creazione di un'origine dati dal database
- Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Customers` contenuta nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sull'impostazione del database di esempio Northwind, vedere [Install SQL Server database di esempio](../data-tools/install-sql-server-sample-databases.md).
+ In questo passaggio viene utilizzata la **Configurazione guidata origine dati** per creare un'origine dati basata sulla `Customers` tabella nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sull'impostazione del database di esempio Northwind, vedere [Install SQL Server database di esempio](../data-tools/install-sql-server-sample-databases.md).
 
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
 1. Scegliere **Mostra origini dati** dal menu **Dati**.
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
@@ -133,7 +133,7 @@ Quando si visualizzano dati nei form delle applicazioni Windows, è possibile sc
 
 8. Selezionare la tabella `Customers`, quindi fare clic su **Fine**.
 
-     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Customers` viene visualizzata nella finestra **Origini dati**.
+     Il **NorthwindDataSet** viene aggiunto al progetto e la `Customers` tabella viene visualizzata nella finestra **origini dati** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Impostare la tabella Customers per usare il controllo ComplexDataGridView
  Nella finestra **Origini dati** è possibile impostare il controllo da creare prima di trascinare elementi nel modulo.
@@ -151,7 +151,7 @@ Quando si visualizzano dati nei form delle applicazioni Windows, è possibile sc
 5. Fare clic sulla freccia a discesa nella tabella `Customers` e scegliere **ComplexDataGridView** nell'elenco di controllo.
 
 ## <a name="addcontrols-to-the-form"></a>Addcontrols al form
- È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.
+ È possibile creare i controlli associati a dati trascinando gli elementi dalla finestra **origini dati** nel form.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Per creare controlli associati a dati nel form
 

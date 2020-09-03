@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669696"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Incorporamento di un diagramma in Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile incorporare un diagramma DSL in un controllo Windows, che viene visualizzato nella finestra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+È possibile incorporare un diagramma DSL in un controllo Windows, che viene visualizzato nella [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] finestra.
 
 ## <a name="embedding-a-diagram"></a>Incorporamento di un diagramma
 
@@ -75,7 +75,7 @@ ms.locfileid: "72669696"
 
 #### <a name="updating-the-form-using-store-events"></a>Aggiornamento del modulo tramite gli eventi di archiviazione
 
-1. Nella finestra di progettazione del form aggiungere una **casella di riepilogo** denominata `listBox1`. Verrà visualizzato un elenco degli elementi nel modello. Verrà mantenuta in sincronia con il modello utilizzando *gli eventi di archiviazione*. Per ulteriori informazioni, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. Nella finestra di progettazione del form aggiungere una **casella di riepilogo** denominata `listBox1` . Verrà visualizzato un elenco degli elementi nel modello. Verrà mantenuta in sincronia con il modello utilizzando *gli eventi di archiviazione*. Per ulteriori informazioni, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. Nel file di codice personalizzato, eseguire l'override di altri metodi per la classe DocView:
 

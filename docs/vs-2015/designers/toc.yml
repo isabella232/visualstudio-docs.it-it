@@ -38,13 +38,13 @@
               items:
                 - name: Tasti di scelta rapida e tasti di modifica
                   href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-                - name: Scelte rapide da tastiera
+                - name: Tasti di scelta rapida
                   href: keyboard-shortcuts-in-blend.md
                 - name: Tasti di modifica della tavola da disegno
                   href: artboard-modifier-keys-in-blend.md
                 - name: Tasti di modifica strumento Penna
                   href: pen-tool-modifier-keys-in-blend.md
-                - name: Tasti di modifica strumento Selezione diretta
+                - name: Tasti di modifica dello strumento Selezione diretta
                   href: direct-selection-tool-modifier-keys-in-blend.md
             - name: Servizi e prodotti per l'accessibilità
               href: accessibility-products-and-services-blend.md
@@ -82,7 +82,7 @@
                       items:
                         - name: Proprietà dinamiche della classe XAttribute
                           href: xattribute-class-dynamic-properties.md
-                        - name: Value
+                        - name: valore
                           href: value-xattribute-dynamic-property.md
                     - name: Proprietà dinamiche della classe XElement
                       items:
@@ -96,7 +96,7 @@
                           href: elements-xelement-dynamic-property.md
                         - name: Discendenti
                           href: descendants-xelement-dynamic-property.md
-                        - name: Value
+                        - name: Valore
                           href: value-xelement-dynamic-property.md
                         - name: Xml
                           href: xml-xelement-dynamic-property.md
@@ -122,7 +122,7 @@
           items:
             - name: Uso di trame e immagini
               href: working-with-textures-and-images.md
-            - name: Editor di immagini
+            - name: Editor immagini
               href: image-editor.md
             - name: Esempi dell'editor immagini
               items:

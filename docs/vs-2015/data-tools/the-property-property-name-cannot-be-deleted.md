@@ -1,5 +1,5 @@
 ---
-title: Non è possibile eliminare il nome della proprietà &lt;property &gt; | Microsoft Docs
+title: '&lt;Non è possibile eliminare il nome della proprietà della proprietà &gt; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aca36919cb4c82d6ca76e0f3eecbbacd48cde768
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667246"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Impossibile eliminare il nome della proprietà &lt;property &gt;
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>&lt;Impossibile eliminare il nome della proprietà della proprietà &gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Impossibile eliminare la proprietà \<property nome > perché è impostata come proprietà Discriminator per l'ereditarietà tra nome \<class > e nome \<class >
+\<property name>Impossibile eliminare la proprietà perché è impostata come proprietà Discriminator per l'ereditarietà tra \<class name> e\<class name>
 
  La proprietà selezionata è impostata come **Proprietà Discriminator** per l'ereditarietà tra le classi indicate nel messaggio di errore. Le proprietà non possono essere eliminate se partecipano alla configurazione dell'ereditarietà tra le classi di dati.
 

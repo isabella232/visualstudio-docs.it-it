@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7370bf956fd79f5568737af5d9a96b9c64a5316b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667306"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Passaggio 2: aggiungere un oggetto casuale e un elenco di icone
@@ -47,7 +47,7 @@ In questo passaggio verrà creato un set di simboli corrispondenti per il gioco.
 
 4. Considerare il perché in Visual Basic sia necessario innanzitutto creare una matrice temporanea, mentre in Visual C# è possibile creare l'elenco con un'unica istruzione. Questo perché il linguaggio Visual C# include *inizializzatori di raccolta*, che preparano l'accettazione dei valori nell'elenco. In Visual Basic è possibile utilizzare un inizializzatore di raccolta. Tuttavia, per motivi di compatibilità con la versione precedente di Visual Basic, si consiglia di utilizzare il codice precedente.
 
-     Quando si utilizza un inizializzatore di raccolta con un'istruzione `new`, una volta creato il nuovo oggetto `List`, il programma vi collocherà i dati forniti dall'utente racchiusi tra parentesi graffe. In questo caso, si ottiene un elenco di stringhe denominate **icone** e l'elenco sarà inizializzato in modo da contenere sedici stringhe. Ognuna di quelle stringhe è una singola lettera, e insieme corrispondono alle icone che saranno nelle etichette. Il gioco conterrà quindi una coppia di punti esclamativi, una coppia di lettere N maiuscole, una coppia di virgole e così via. Quando questi caratteri sono impostati sul tipo di carattere Webdings, verranno visualizzati come simboli, ad esempio un bus, una bicicletta, un ragno e così via. L'oggetto `List` avrà a disposizione sedici stringhe, una per ogni cella nel pannello TableLayoutPanel.
+     Quando si utilizza un inizializzatore di raccolta con un'istruzione `new`, una volta creato il nuovo oggetto `List`, il programma vi collocherà i dati forniti dall'utente racchiusi tra parentesi graffe. In questo caso, si ottiene un elenco di stringhe denominate **icone** e l'elenco sarà inizializzato in modo da contenere sedici stringhe. Ognuna di quelle stringhe è una singola lettera, e insieme corrispondono alle icone che saranno nelle etichette. Il gioco conterrà quindi una coppia di punti esclamativi, una coppia di lettere N maiuscole, una coppia di virgole e così via. Quando questi caratteri sono impostati sul tipo di carattere Webdings, verranno visualizzati come simboli, ad esempio un bus, una bicicletta, un ragno e così via. L' `List` oggetto avrà in tutto sedici stringhe, una per ogni cella nel pannello TableLayoutPanel.
 
     > [!NOTE]
     > In Visual Basic si ottiene lo stesso risultato, ma prima le stringhe vengono inserite in una matrice temporanea, quindi questa viene convertita in un oggetto `List`. Una matrice è simile a un elenco, salvo ad esempio che le matrici vengono create con una dimensione fissa. Gli elenchi possono essere ridotti o ingranditi in base alle necessità, caratteristica importante in questo programma.

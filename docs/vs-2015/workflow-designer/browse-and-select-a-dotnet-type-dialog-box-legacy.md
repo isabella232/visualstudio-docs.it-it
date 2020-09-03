@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1e5045a62d0a654af968d50e0c309bcf8104b5cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668981"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Finestra di dialogo Cerca e seleziona un tipo .NET (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo **Cerca e seleziona un tipo .NET** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Cerca e seleziona un tipo .NET** in legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Quando si selezionano proprietà che accettano un .NET Framework tipo in un assembly a cui si fa riferimento, nella finestra **Proprietà** vengono visualizzati i puntini di sospensione **[...]** alla fine della casella di testo della proprietà. Fare clic su **[...]** per aprire la finestra di dialogo **Cerca e seleziona un tipo .NET** . In questa finestra di dialogo, è possibile scegliere un tipo dalla visualizzazione albero degli assembly a cui si fa riferimento. Ad esempio, quando si utilizza l'ActivityDesigner, nella finestra **Proprietà** fare clic sui puntini di sospensione **[...]** della **classe** di base per selezionare un'altra classe di base per un'attività nell'albero degli assembly a cui si fa riferimento.
 
@@ -30,7 +30,7 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Cer
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
 |**Nome tipo:**|Nome del tipo correntemente selezionato.|
-|**Type**|Nel riquadro sinistro viene visualizzata una visualizzazione struttura degli Assembly a cui si fa riferimento. Nel riquadro di destra vengono visualizzati i tipi disponibili per la selezione dall’Assembly cui si fa riferimento selezionato nel riquadro sinistro.|
+|**Tipo**|Nel riquadro sinistro viene visualizzata una visualizzazione struttura degli Assembly a cui si fa riferimento. Nel riquadro di destra vengono visualizzati i tipi disponibili per la selezione dall’Assembly cui si fa riferimento selezionato nel riquadro sinistro.|
 
 ## <a name="see-also"></a>Vedere anche
- [Uso dell'Activity Designer legacy](../workflow-designer/using-the-legacy-activity-designer.md)
+ [Utilizzo dell'ActivityDesigner legacy](../workflow-designer/using-the-legacy-activity-designer.md)

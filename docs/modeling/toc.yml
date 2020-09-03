@@ -317,7 +317,7 @@
           href: text-template-utility-methods.md
         - name: Accedere a Visual Studio o ad altri host da un modello di testo
           href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
-        - name: Sequenze di escape
+        - name: Sequenza di escape
           items:
             - name: Usare sequenze di escape in modelli di testo
               href: using-escape-sequences-in-text-templates.md

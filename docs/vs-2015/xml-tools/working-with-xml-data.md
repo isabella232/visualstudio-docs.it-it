@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1692403d61c99febd30fe3829e5fadd7dd1c51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669505"
 ---
 # <a name="working-with-xml-data"></a>Utilizzo di dati XML
@@ -24,7 +24,7 @@ Nella gestione dei dati in [!INCLUDE[msCoName](../includes/msconame-md.md)] Visu
 ## <a name="xml-editor"></a>Editor XML
  L'editor XML viene usato per modificare i documenti XML. Offre la verifica completa della sintassi XML 1.0, la convalida dello schema durante l'immissione, la codifica a colori e IntelliSense. Se viene fornita una definizione dello schema o del tipo di documento, essa verrà usata da IntelliSense per elencare gli elementi e gli attributi disponibili.
 
- Le funzionalità aggiuntive comprendono:
+ Le altre funzionalità includono:
 
 - Supporto dei frammenti di codice XML, inclusi i frammenti generati da uno schema.
 

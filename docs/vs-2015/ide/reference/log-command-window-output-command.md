@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9a5a29cd63f9d51f86d41d2f0f5986a77666318
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666872"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Copia interamente l'input e l'output della finestra di **comando** in un file.
+Copia tutti i dati di input e output dalla finestra di **comando** in un file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 > [!TIP]
 > Per modificare il percorso in cui viene salvato il file di log, immettere il percorso completo del file, racchiuso tra virgolette se il percorso contiene spazi.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /on facoltativo. Avvia la registrazione per la finestra di **comando** nel file specificato e accoda il file con le nuove informazioni.
 
  /off Facoltativo. Interrompe la registrazione per la finestra di **comando**.

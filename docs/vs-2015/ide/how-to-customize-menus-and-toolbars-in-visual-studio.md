@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668000"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: personalizzare menu e barre degli strumenti in Visual Studio
@@ -45,15 +45,15 @@ ms.locfileid: "72668000"
 
  **Contenuto dell'argomento:**
 
-- [Aggiunta, rimozione o spostamento di un menu nella barra dei menu](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)
+- [Aggiunta, rimozione o trasferimento di un menu nella barra dei menu](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addmenu)
 
-- [Aggiunta, rimozione o spostamento di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addtoolbar)
+- [Aggiunta, rimozione o trasferimento di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_addtoolbar)
 
 - [Personalizzazione di un menu o di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_customize)
 
 - [Reimpostazione di un menu o di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)
 
-## <a name="bkmk_addmenu"></a>Aggiunta, rimozione o spostamento di un menu nella barra dei menu
+## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a><a name="bkmk_addmenu"></a>Aggiunta, rimozione o spostamento di un menu nella barra dei menu
 
 1. Nella barra dei menu scegliere**Strumenti**, **Personalizza**.
 
@@ -63,13 +63,13 @@ ms.locfileid: "72668000"
 
     - Per aggiungere un menu, selezionare il pulsante **Aggiungi nuovo menu** e il pulsante **Modifica selezione** e quindi assegnare un nome al menu che si vuole aggiungere.
 
-         ![Finestra di dialogo Personalizza che Mostra come aggiungere un menu](../ide/media/addmenu.png "AggiungiMenu")
+         ![Finestra di dialogo Personalizza che mostra come aggiungere un menu](../ide/media/addmenu.png "AggiungiMenu")
 
     - Per rimuovere un menu, selezionarlo nell'elenco **Controlli** e fare clic sul pulsante **Elimina**.
 
     - Per spostare un menu all'interno della barra dei menu, selezionarlo nell'elenco **Controlli** e fare clic sul pulsante **Sposta su** o **Sposta giù**.
 
-## <a name="bkmk_addtoolbar"></a>Aggiunta, rimozione o spostamento di una barra degli strumenti
+## <a name="adding-removing-or-moving-a-toolbar"></a><a name="bkmk_addtoolbar"></a>Aggiunta, rimozione o spostamento di una barra degli strumenti
 
 1. Nella barra dei menu scegliere**Strumenti**, **Personalizza**.
 
@@ -79,7 +79,7 @@ ms.locfileid: "72668000"
 
     - Per aggiungere una barra degli strumenti, selezionare il pulsante **Nuovo**, specificare un nome per la barra degli strumenti da aggiungere e quindi fare clic sul pulsante **OK**.
 
-         ![Finestra di dialogo Personalizza che Mostra come aggiungere una barra degli strumenti](../ide/media/addtoolbar.png "AddToolbar")
+         ![Finestra di dialogo Personalizza che mostra come aggiungere una barra degli strumenti](../ide/media/addtoolbar.png "AddToolbar")
 
     - Per rimuovere una barra degli strumenti personalizzata, selezionarla nell'elenco **Barre degli strumenti**e fare clic sul pulsante **Elimina**.
 
@@ -91,9 +91,9 @@ ms.locfileid: "72668000"
          È inoltre possibile trascinare una barra degli strumenti per il bordo sinistro e spostarla in qualsiasi punto dell'area di ancoraggio principale.
 
         > [!NOTE]
-        > Per altre informazioni su come migliorare l'uso e l'accessibilità delle barre degli strumenti, vedere [Procedura: Impostare le opzioni di accessibilità IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Per altre informazioni su come migliorare l'usabilità e l'accessibilità delle barre degli strumenti, vedere [procedura: impostare le opzioni di accessibilità IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="bkmk_customize"></a> Personalizzazione di un menu o di una barra degli strumenti
+## <a name="customizing-a-menu-or-a-toolbar"></a><a name="bkmk_customize"></a> Personalizzazione di un menu o di una barra degli strumenti
 
 1. Nella barra dei menu scegliere**Strumenti**, **Personalizza**.
 
@@ -115,7 +115,7 @@ ms.locfileid: "72668000"
 
     - Per separare i comandi in gruppi, selezionarne uno nell'elenco **Controlli**, fare clic sul pulsante **Modifica selezione**e quindi scegliere **Inizia un gruppo** nel menu visualizzato.
 
-## <a name="bkmk_reset"></a> Reimpostazione di un menu o una barra degli strumenti
+## <a name="resetting-a-menu-or-a-toolbar"></a><a name="bkmk_reset"></a> Reimpostazione di un menu o una barra degli strumenti
 
 1. Nella barra dei menu scegliere**Strumenti**, **Personalizza**.
 

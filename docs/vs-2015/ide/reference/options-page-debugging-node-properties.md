@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668833"
 ---
 # <a name="options-page-debugging-node-properties"></a>Pagina delle opzioni, proprietà del nodo Debug
@@ -24,7 +24,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="general"></a>Generale
  `DTE.Properties("Debugging", "General")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Determina se il debugger richiede l'autorizzazione prima di eliminare tutti i punti di interruzione in un progetto.|
 |BreakAllProcesses|Get/Set (Boolean)|Determina se il debugger interrompe tutti i processi ogni volta che un singolo processo si interrompe.|
@@ -54,7 +54,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="edit-and-continue"></a>Modifica e continuazione
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|Determina se è abilitata la funzionalità Modifica e continuazione. Questa opzione si applica a tutti i linguaggi che supportano Modifica e continuazione.|
 |InvokedByCommands|Get/Set (Boolean)|Determina se la funzionalità Modifica e continuazione applica automaticamente le modifiche al codice quando l'utente seleziona un comando di debug, ad esempio **Passaggio** o **Continua**. Questa opzione si applica solo al codice nativo.|
@@ -66,7 +66,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="just-in-time"></a>JIT
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice gestito.|
 |JitNative|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice nativo.|
@@ -75,10 +75,10 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="native"></a>Nativo
  `DTE.Properties("Debugging", "Native")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|Determina se il debugger carica le tabelle di esportazione DLL.|
 |EnableRPC|Get/Set (Boolean)|Determina se il debugger è in grado di eseguire istruzioni per le chiamate a procedure remote (RPC) COM.|
 
 ## <a name="see-also"></a>Vedere anche
- [Controllo delle impostazioni delle opzioni](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [determinazione dei nomi degli elementi delle proprietà nella](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) pagina Opzioni pagine opzioni [, proprietà nodo tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [pagina Opzioni, proprietà nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md) [generale, debug, finestra di dialogo Opzioni ](../../debugger/general-debugging-options-dialog-box.md) [Modifica e continuazione, debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) JIT [, debug, finestra di dialogo Opzioni](../../debugger/just-in-time-debugging-options-dialog-box.md)
+ [Controllo delle impostazioni delle opzioni](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [determinazione dei nomi degli elementi delle proprietà nella](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) pagina Opzioni pagina Opzioni, pagina Opzioni [Proprietà nodo tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [, proprietà nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md) [generale, debug, finestra di dialogo Opzioni](../../debugger/general-debugging-options-dialog-box.md) [modifica e continuazione, debug,](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) finestra di dialogo Opzioni JIT [, debug, finestra di dialogo Opzioni](../../debugger/just-in-time-debugging-options-dialog-box.md)

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: be93ac7b8bc0659da522abcf6000d97ec05d46b9
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801334"
 ---
 # <a name="refactor-python-code"></a>Effettuare il refactoring del codice Python
@@ -26,7 +26,7 @@ Visual Studio offre diversi comandi per la trasformazione e la pulizia automatic
 - [Aggiungi importazione](#add-import) fornisce uno smart tag per aggiungere un'importazione mancante
 - [Rimuovi importazioni](#remove-unused-imports) consente di rimuovere le importazioni inutilizzate
 
-## <a name="rename"></a>Rinomina
+## <a name="rename"></a>Rinominare
 
 1. Fare clic con il pulsante destro del mouse sull'identificatore che si vuole rinominare e scegliere **Rinomina** oppure posizionare il cursore su tale identificatore e selezionare il comando di menu **Modifica** > **Refactoring** > **Rinomina** (**F2**).
 2. Nella finestra di dialogo **Rinomina** visualizzata immettere il nuovo nome per l'identificatore e selezionare **OK**:

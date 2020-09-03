@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4afa0d376366b154501e1a0e4488af57b4448a32
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281656"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvare dati da un oggetto in un database
@@ -33,7 +33,7 @@ Per impostazione predefinita, i `DBDirect` metodi vengono creati in un TableAdap
 > [!NOTE]
 > Quando si configura un TableAdapter, la query principale deve fornire informazioni sufficienti per la `DBDirect` creazione dei metodi. Se, ad esempio, un TableAdapter è configurato per eseguire query sui dati di una tabella in cui non è definita una colonna chiave primaria, non genera `DBDirect` metodi.
 
-|Metodo DBDirect di TableAdapter|Description|
+|Metodo DBDirect di TableAdapter|Descrizione|
 | - |-----------------|
 |`TableAdapter.Insert`|Aggiunge nuovi record a un database e consente di passare i singoli valori di colonna come parametri del metodo.|
 |`TableAdapter.Update`|Aggiorna i record esistenti in un database. Il `Update` metodo accetta i valori di colonna originali e nuovi come parametri del metodo. I valori originali vengono usati per individuare il record originale e i nuovi valori vengono usati per aggiornare il record.<br /><br /> Il `TableAdapter.Update` metodo viene inoltre utilizzato per riconciliare le modifiche in un set di dati al database di utilizzando <xref:System.Data.DataSet> , <xref:System.Data.DataTable> , <xref:System.Data.DataRow> o una matrice di <xref:System.Data.DataRow> s come parametri del metodo.|
@@ -76,6 +76,6 @@ Per impostazione predefinita, i `DBDirect` metodi vengono creati in un TableAdap
 
 È necessario disporre dell'autorizzazione per eseguire l'oggetto selezionato `INSERT` , `UPDATE` o nella tabella del `DELETE` database.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

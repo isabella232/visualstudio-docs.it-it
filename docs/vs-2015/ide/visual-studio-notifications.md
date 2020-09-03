@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10cc00fb3067727f2f7ec58182e7b5cf5215e91b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667082"
 ---
 # <a name="visual-studio-notifications"></a>Notifiche di Visual Studio
@@ -31,7 +31,7 @@ Visual Studio è un sistema di notifica che segnala a vari eventi:
 
    È possibile scegliere di ignorare sempre una notifica, che quindi non verrà più visualizzata da Visual Studio. È possibile reimpostare l'elenco delle notifiche ignorate in [Notifiche, Ambiente, finestra di dialogo Opzioni](../ide/reference/notifications-environment-options-dialog-box.md).
 
-   ![Icona di notifica di Visual Studio](../ide/media/vs2015-notificationicon.png "|::ref1::|")
+   ![Icona di notifica di Visual Studio](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")
 
 ## <a name="see-also"></a>Vedere anche
  [IDE di Visual Studio](../ide/visual-studio-ide.md)

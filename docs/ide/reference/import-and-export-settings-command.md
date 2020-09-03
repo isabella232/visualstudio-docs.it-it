@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568828"
 ---
 # <a name="import-and-export-settings-command"></a>Importa/Esporta impostazioni (comando)
@@ -30,19 +30,19 @@ Consente di importare, esportare o reimpostare le impostazioni di Visual Studio.
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>Switch
+## <a name="switches"></a>Commutatori
 
 /export:`filename`
 
-Facoltativa. Esporta le impostazioni correnti nel file specificato.
+facoltativo. Esporta le impostazioni correnti nel file specificato.
 
 /import:`filename`
 
-Facoltativa. Importa le impostazioni correnti nel file specificato.
+facoltativo. Importa le impostazioni correnti nel file specificato.
 
 /reset
 
-Facoltativa. Reimposta le impostazioni correnti.
+facoltativo. Reimposta le impostazioni correnti.
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -58,7 +58,7 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Impostazioni di ambiente](../../ide/environment-settings.md)
+- [Impostazioni dell'ambiente](../../ide/environment-settings.md)
 - [Sincronizzare le impostazioni](../../ide/synchronized-settings-in-visual-studio.md)
 - [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)

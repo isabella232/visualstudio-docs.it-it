@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Strumenti di Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: DataSet
+    - name: DataSets
       items:
         - name: Strumenti dei set di dati
           href: dataset-tools-in-visual-studio.md
@@ -34,9 +34,9 @@
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
     - name: Panoramica delle applicazioni dati a più livelli
       href: n-tier-data-applications-overview.md
-- name: 'Guide pratiche:'
+- name: Guide pratiche
   items:
-    - name: Creare un database
+    - name: Creazione di un database
       href: create-a-sql-database-by-using-a-designer.md
     - name: Connessioni
       items:
@@ -164,7 +164,7 @@
               href: display-related-data-in-wpf-applications.md
             - name: Associare controlli alle immagini di un database
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Controlli Windows Forms
+        - name: Controlli Windows Form
           items:
             - name: Associare controlli Windows Form ai dati
               href: bind-windows-forms-controls-to-data-in-visual-studio.md
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: Risolvere i problemi relativi agli errori di accesso ai dati
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: Reference
+- name: Informazioni di riferimento
   items:
     - name: Object Relational Designer (LINQ to SQL)
       items:

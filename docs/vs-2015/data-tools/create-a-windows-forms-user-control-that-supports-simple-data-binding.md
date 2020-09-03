@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf30a38384863c9ba5a8af35af3326a51058d831
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668763"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding semplice
@@ -57,8 +57,8 @@ Quando si visualizzano dati nei form delle applicazioni Windows, è possibile sc
 
 - Creare un form per visualizzare i dati nel controllo.
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare questa procedura dettagliata, è necessario:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questo scenario, saranno necessari gli elementi seguenti:
 
 - Accedere al database di esempio Northwind.
 
@@ -109,16 +109,16 @@ Quando si visualizzano dati nei form delle applicazioni Windows, è possibile sc
      [!code-csharp[VbRaddataDisplaying#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/PhoneNumberBox.cs#3)]
      [!code-vb[VbRaddataDisplaying#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/PhoneNumberBox.vb#3)]
 
-3. Scegliere **Compila soluzione** dal menu **Compila**.
+3. Scegliere **Compila soluzione**dal menu **Compila** .
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
- Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Customers` contenuta nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind.
+ In questo passaggio viene utilizzata la **Configurazione guidata origine dati** per creare un'origine dati basata sulla `Customers` tabella nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind.
 
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
 1. Scegliere **Mostra origini dati** dal menu **Dati**.
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Nella pagina **Seleziona un tipo di origine dati** selezionare **Database**, quindi fare clic su **Avanti**.
 
@@ -136,7 +136,7 @@ Quando si visualizzano dati nei form delle applicazioni Windows, è possibile sc
 
 8. Selezionare la tabella `Customers`, quindi fare clic su **Fine**.
 
-     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Customers` viene visualizzata nella finestra **Origini dati**.
+     Il **NorthwindDataSet** viene aggiunto al progetto e la `Customers` tabella viene visualizzata nella finestra **origini dati** .
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Impostare la colonna Phone per l'uso del controllo PhoneNumberBox
  Nella finestra **Origini dati** è possibile impostare il controllo da creare prima di trascinare elementi nel modulo.
@@ -160,11 +160,11 @@ Quando si visualizzano dati nei form delle applicazioni Windows, è possibile sc
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Per creare controlli associati a dati nel form
 
-- Trascinare il nodo **Customers** principale dalla finestra **origini dati** nel form e verificare che il controllo `PhoneNumberBox` venga utilizzato per visualizzare i dati nella colonna `Phone`.
+- Trascinare il nodo **Customers** principale dalla finestra **origini dati** nel form e verificare che il `PhoneNumberBox` controllo venga utilizzato per visualizzare i dati nella `Phone` colonna.
 
      Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione
 

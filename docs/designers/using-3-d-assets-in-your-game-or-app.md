@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3821262a456f9e3e764555fce5fc883b42d4ae9e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768656"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedura: Usare asset 3D nel gioco o nell'app
@@ -71,7 +71,7 @@ Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i 
 
 |Item Type|Tipi di file di origine|Tipi di file di output|
 |---------------| - | - |
-|**Pipeline di contenuti immagine**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*BMP*, *DIB*)<br /><br /> Tagged Image File Format (*. TIF*, *. TIFF*)<br /><br /> Targa (*.tga*)|Superficie DirectDraw (*. DDS*)|
+|**Pipeline di contenuti immagine**|Portable Network Graphics (*. png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*. gif*)<br /><br /> Bitmap (*BMP*, *DIB*)<br /><br /> Tagged Image File Format (*. TIF*, *. TIFF*)<br /><br /> Targa (*.tga*)|Superficie DirectDraw (*. DDS*)|
 |**Pipeline di contenuti mesh**|AutoDesk FBX Interchange File (*.fbx*)<br /><br /> Collada DAE File (*.dae*)<br /><br /> Wavefront OBJ File (*.obj*)|file mesh 3D (*. OCM*)|
 |**Pipeline di contenuti shader**|Visual Shader Graph (*.dgsl*)|Output shader compilato (*. cso*)|
 

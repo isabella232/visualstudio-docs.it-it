@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e9f61c56dd7ff2a9c6c19afc20ed279a7fdf855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669368"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
@@ -47,7 +47,7 @@ XML Schema Explorer è integrato con Microsoft Visual Studio e con l'editor XML 
 
 - È possibile accedere a XML Schema Explorerfrom un file con estensione VB che dispone di un Visual Basic valore letterale XML associato a un file XSD. Per visualizzare il set di schemi in XML Schema Explorer, fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o su un'importazione di spazi dei nomi XML e selezionare il comando **Mostra in Esplora schema** . Per ulteriori informazioni, vedere [integrazione di valori letterali XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
-## <a name="tree-view"></a>Visualizzazione albero
+## <a name="tree-view"></a>Visualizzazione ad albero
  In XML Schema Explorer le informazioni sul set di schemi precompilati vengono visualizzate in una struttura ad albero. La struttura ad albero è organizzata come segue:
 
 - Al livello principale è presente il nodo del set di schemi.
@@ -91,4 +91,4 @@ XML Schema Explorer è integrato con Microsoft Visual Studio e con l'editor XML 
 - [Integrazione di valori letterali XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Aggiungere nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+ [Procedura: aggiungere nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
