@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e3cb3f832f308edb42967d2fe4485b3d6885022a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282020"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Procedura: Salvare e modificare stringhe di connessione
@@ -28,7 +28,7 @@ Nella **Configurazione guidata origine dati**selezionare l'opzione per salvare l
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Per salvare una stringa di connessione direttamente nelle impostazioni dell'applicazione
 1. In **Esplora soluzioni** fare doppio clic sull'icona **Progetto** (Visual Basic) o **Proprietà** (C#) per aprire **Progettazione progetti**.
-1. Selezionare la scheda **Impostazioni** .
+1. Selezionare la scheda **Settings** (Impostazioni).
 1. Nella casella **Nome** immettere un nome per la stringa di connessione. Fare riferimento a questo nome per l'accesso alla stringa di connessione nel codice.
 1. Impostare **Tipo** su (**Stringa di connessione**).
 1. Lasciare l'opzione **Ambito** impostata su **Applicazione**.
@@ -39,7 +39,7 @@ Per modificare le informazioni sulla connessione salvate nelle impostazioni dell
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Per modificare una stringa di connessione archiviata nelle impostazioni dell'applicazione
 1. In **Esplora soluzioni** fare doppio clic sull'icona **Progetto** (Visual Basic) o **Proprietà** (C#) per aprire **Progettazione progetti**.
-1. Selezionare la scheda **Impostazioni** .
+1. Selezionare la scheda **Settings** (Impostazioni).
 1. Individuare la connessione che si desidera modificare e selezionare il testo nel campo **valore** .
 1. Modificare la stringa di connessione nel campo **valore** oppure fare clic sul pulsante con i **puntini** di sospensione (...) nel campo del **valore** per modificare la connessione con la finestra di dialogo **Proprietà connessione** .
 
@@ -52,10 +52,10 @@ Per modificare le informazioni sulla connessione salvate nelle impostazioni dell
 1. Nella finestra **Proprietà** espandere il **nodo connessione**.
 1. Per modificare rapidamente la stringa di connessione, modificare la proprietà **ConnectionString** oppure fare clic sulla freccia verso il basso nella proprietà di **connessione** e scegliere **nuova connessione**.
 
-## <a name="security"></a>Security
+## <a name="security"></a>Sicurezza
 L'archiviazione delle informazioni riservate, ad esempio la password, nella stringa di connessione può avere implicazioni sulla sicurezza dell'applicazione. La sicurezza integrata di Windows consente di controllare l'accesso a un database in modo più sicuro.
 Per ulteriori informazioni, vedere [protezione delle informazioni di connessione](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Aggiunta di connessioni](../data-tools/add-new-connections.md)

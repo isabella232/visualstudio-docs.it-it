@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281786"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
@@ -141,10 +141,10 @@ L'interfaccia utente per questa applicazione è costituita dagli elementi seguen
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**BarreScorrimento**|**Vertical**|
-    |`Button1`|**Nome**|`ReadXmlButton`|
-    ||**Testo**|`Read XML`|
-    |`Button2`|**Nome**|`ShowSchemaButton`|
-    ||**Testo**|`Show Schema`|
+    |`Button1`|**Name**|`ReadXmlButton`|
+    ||**Text**|`Read XML`|
+    |`Button2`|**Name**|`ShowSchemaButton`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Creare il set di dati che riceve i dati XML
 
@@ -214,7 +214,7 @@ In questa procedura dettagliata vengono illustrate le nozioni di base per la let
 
 - Modificare i dati nel set di dati e scriverli in un database.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Accedere ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

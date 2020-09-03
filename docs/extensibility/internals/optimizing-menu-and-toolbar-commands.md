@@ -1,5 +1,5 @@
 ---
-title: Ottimizzazione dei comandi dei menu e della barra degli strumenti Documenti Microsoft
+title: Ottimizzazione dei comandi di menu e barre degli strumenti | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,19 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706915"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Ottimizzazione dei comandi di menu e barre degli strumenti
-L'aggiunta di VSPackage e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i comandi corrispondenti a può causare un'interfaccia utente affollata. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce modi per ridurre al minimo la confusione dei comandi dell'interfaccia utente.
+L'aggiunta dei pacchetti VSPackage e dei comandi corrispondenti a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può causare un'interfaccia utente affollata. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce modi per ridurre al minimo la confusione del comando dell'interfaccia utente.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Miglioramento della disponibilità dei comandi](../../extensibility/internals/making-commands-available.md)
 
- Fornisce linee guida generali per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ridurre al minimo l'affollamento dell'interfaccia utente quando si aggiungono vsPackage.
+ Vengono fornite linee guida generali per ridurre al minimo il crowding dell' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaccia utente quando si aggiungono i pacchetti VSPackage.
 
 - [Linee guida per il posizionamento](../../extensibility/internals/command-placement-guidelines.md)
 

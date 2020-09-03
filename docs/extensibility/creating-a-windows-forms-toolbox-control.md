@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801867"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Creare un controllo della casella degli strumenti Windows Forms
@@ -56,10 +56,10 @@ Il `Counter` controllo richiede due controlli figlio: un oggetto <xref:System.Wi
 
 5. Nella finestra **Proprietà** impostare i valori seguenti per i controlli nell'area di progettazione.
 
-    |Controllo|Proprietà|valore|
+    |Controllo|Proprietà|Valore|
     |-------------|--------------|-----------|
     |`Label1`|**Text**|""|
-    |`Button1`|**Nome**|btnReset|
+    |`Button1`|**Name**|btnReset|
     |`Button1`|**Text**|Reset|
 
 ### <a name="code-the-user-control"></a>Codificare il controllo utente

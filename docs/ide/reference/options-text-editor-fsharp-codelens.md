@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568477"
 ---
 # <a name="options-text-editor-f-codelens"></a>Opzioni, Editor di testo - F#, CodeLens
 
-Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di CodeLens dell'editor di testo per F#. Per accedere a questa pagina delle opzioni, scegliere**Opzioni** **degli strumenti** > , quindi scegliere Editor **di** > testo**F ,** > **CodeLens**.
+Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di CodeLens dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni**e quindi scegliere **editor di testo**  >  **F #**  >  **CodeLens**.
 
 ## <a name="codelens"></a>CodeLens
 
@@ -40,5 +40,5 @@ Usare la pagina delle opzioni **CodeLens** per modificare le impostazioni di Cod
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281747"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
@@ -41,7 +41,7 @@ Quando si associano le tabelle del set di dati ai controlli in una pagina di Win
 
 Se si ha familiarità con gli oggetti TableAdapter, è possibile passare direttamente a uno di questi argomenti:
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Inserire nuovi record in un database](../data-tools/insert-new-records-into-a-database.md)|Come eseguire aggiornamenti e inserimenti usando oggetti TableAdapter o oggetti Command|
 |[Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Come eseguire gli aggiornamenti con i TableAdapter|
@@ -125,7 +125,7 @@ La <xref:System.Data.DataRow.RowState%2A> proprietà di un <xref:System.Data.Dat
 
 Nella tabella seguente vengono illustrati in dettaglio i possibili valori dell' <xref:System.Data.DataRowState> enumerazione:
 
-|Valore DataRowState|Description|
+|Valore DataRowState|Descrizione|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|La riga è stata aggiunta come elemento a un <xref:System.Data.DataRowCollection> . Una riga in questo stato non ha una versione originale corrispondente perché non esisteva al momento della chiamata dell'ultimo <xref:System.Data.DataRow.AcceptChanges%2A> metodo.|
 |<xref:System.Data.DataRowState.Deleted>|La riga è stata eliminata utilizzando l' <xref:System.Data.DataRow.Delete%2A> oggetto di un <xref:System.Data.DataRow> oggetto.|
@@ -139,7 +139,7 @@ I set di dati gestiscono più versioni di record. I <xref:System.Data.DataRowVer
 
 Nella tabella seguente vengono illustrati in dettaglio i possibili valori dell' <xref:System.Data.DataRowVersion> enumerazione:
 
-|Valore di DataRowVersion|Description|
+|Valore di DataRowVersion|Descrizione|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|La versione corrente di un record contiene tutte le modifiche apportate al record dopo la chiamata dell'ultima volta <xref:System.Data.DataRow.AcceptChanges%2A> . Se la riga è stata eliminata, non esiste alcuna versione corrente.|
 |<xref:System.Data.DataRowVersion.Default>|Il valore predefinito di un record, come definito dallo schema del set di dati o dall'origine dati.|
@@ -162,7 +162,7 @@ Anche se i record sono stati modificati, non sono sempre presenti versioni origi
 
 È possibile creare subset di record modificati usando il `GetChanges` metodo della tabella dati ( <xref:System.Data.DataTable.GetChanges%2A> ) o del set di dati ( <xref:System.Data.DataSet.GetChanges%2A> ). Se si chiama il metodo per la tabella dati, viene restituita una copia della tabella con solo i record modificati. Analogamente, se si chiama il metodo sul set di dati, si ottiene un nuovo set di dati con solo i record modificati al suo interno.
 
-`GetChanges`Restituisce tutti i record modificati. Al contrario, passando l'oggetto desiderato <xref:System.Data.DataRowState> come parametro al `GetChanges` metodo, è possibile specificare quale subset di record modificati si desidera: i record appena aggiunti, i record contrassegnati per l'eliminazione, i record scollegati o i record modificati.
+`GetChanges` Restituisce tutti i record modificati. Al contrario, passando l'oggetto desiderato <xref:System.Data.DataRowState> come parametro al `GetChanges` metodo, è possibile specificare quale subset di record modificati si desidera: i record appena aggiunti, i record contrassegnati per l'eliminazione, i record scollegati o i record modificati.
 
 Ottenere un subset di record modificati è utile quando si desidera inviare record a un altro componente per l'elaborazione. Anziché inviare l'intero set di dati, è possibile ridurre l'overhead di comunicazione con l'altro componente ottenendo solo i record necessari per il componente.
 
@@ -272,7 +272,7 @@ In un'istruzione UPDATE è necessario specificare sia i nuovi valori (quelli che
 > [!NOTE]
 > È inoltre possibile impostare i valori nella `Parameters` raccolta manualmente nel codice, che in genere si esegue in un gestore eventi per l'evento dell'adattatore dati <xref:System.Data.DataTable.RowChanging> .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Creare e configurare oggetti TableAdapter](create-and-configure-tableadapters.md)

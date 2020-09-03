@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570089"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
@@ -41,11 +41,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceDisplayName*
 
-  Facoltativa. Nome visualizzato del primo file.
+  facoltativo. Nome visualizzato del primo file.
 
 - *TargetDisplayName*
 
-  Facoltativa. Nome visualizzato del secondo file.
+  facoltativo. Nome visualizzato del secondo file.
 
 ## <a name="remarks"></a>Osservazioni
 

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugExceptionEvent2::CanPassToDebuggee . Documenti Microsoft
+title: 'IDebugExceptionEvent2:: CanPassToDebuggee | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab57f599214cfbd7a1f5fcca15fa104b072d1d48
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729877"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-Determina se il motore di debug (DE) supporta l'opzione di passare questa eccezione al programma sottoposto a debug alla ripresa dell'esecuzione.
+Determina se il motore di debug (DE) supporta l'opzione di passaggio di questa eccezione al programma di cui è in corso il debug al riavvio dell'esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,11 +38,11 @@ int CanPassToDebuggee();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce `S_OK` (l'eccezione può essere `S_FALSE` passata al programma) o (l'eccezione non può essere passata).
+ Restituisce `S_OK` (l'eccezione può essere passata al programma) o `S_FALSE` (non è possibile passare l'eccezione).
 
 ## <a name="remarks"></a>Osservazioni
- Il DE deve avere un'azione predefinita per il passaggio all'oggetto del debug. L'IDE può ricevere il [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) evento e `CanPassToDebuggee` chiamare il [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) metodo senza chiamare il metodo. Pertanto, il DE deve avere un caso predefinito per il passaggio dell'eccezione o meno.
+ Il DE deve avere un'azione predefinita per passare all'oggetto del debug. L'IDE può ricevere l'evento [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) e chiamare il metodo [continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) senza chiamare il `CanPassToDebuggee` metodo. Pertanto, il valore di DE deve avere un caso predefinito per il passaggio dell'eccezione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
-- [Continuare](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Continua](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

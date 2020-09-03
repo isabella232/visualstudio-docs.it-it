@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094597"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Effettuare il refactoring per convertire un ciclo for in un'istruzione foreach e viceversa
@@ -42,11 +42,11 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 
 - Si vuole semplificare il codice e ridurre la probabilità di errori logici nelle sezioni di inizializzatore, condizione e iteratore.
 
-### <a name="how-to-use-it"></a>Come usarlo
+### <a name="how-to-use-it"></a>Modo d'uso
 
 1. Posizionare il punto di inserimento nella parola chiave `for`.
 
-1. Premere **CTRL**+**.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
+1. Premere **CTRL** + **.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
 
    ![Menu Converti in foreach](media/convert-to-foreach.png)
 
@@ -70,11 +70,11 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 
 - Si [scorre una matrice multidimensionale](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) e si vuole avere un maggiore controllo sugli elementi della matrice.
 
-### <a name="how-to-use-it"></a>Come usarlo
+### <a name="how-to-use-it"></a>Modo d'uso
 
 1. Posizionare il punto di inserimento nella parola chiave `foreach` o `For Each`.
 
-1. Premere **CTRL**+**.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
+1. Premere **CTRL** + **.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
 
    ![Menu Converti in for](media/convert-to-for.png)
 
@@ -83,9 +83,9 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 1. Poiché il refactoring introduce una nuova variabile Numero di iterazioni, la casella **Rinomina** appare nell'angolo superiore destro dell'editor. Se si vuole scegliere un nome diverso per la variabile, digitarlo in e quindi premere **INVIO** oppure selezionare **Applica** nella casella **Rinomina**. Se non si vuole scegliere un nuovo nome, premere **ESC** oppure selezionare **Applica** per chiudere la casella **Rinomina**.
 
 > [!NOTE]
-> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per il tipo degli elementi nella raccolta. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste particolari impostazioni di stile del codice vengono configurate a livello di computer in **Strumenti** > **Opzioni** > Editor di testo Per**Code Style** > **General** > **l'editor** > **di codice** > generale**\'var**o a livello di soluzione in un file [EditorConfig.](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
+> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per il tipo degli elementi nella raccolta. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste specifiche impostazioni di stile di codice sono configurate a livello di computer in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  >  **stile di codice**  >  **generale**  >  ** \' var ' preferenze**o a livello di soluzione in un file [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)

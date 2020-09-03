@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::SetResponse . Documenti Microsoft
+title: 'IDebugMessageEvent2:: seresponse | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc0ca743deac3e7e635d378f8172ddb4c7e39c72
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727385"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
@@ -42,7 +42,7 @@ int SetResponse( 
 
 ## <a name="parameters"></a>Parametri
 `dwResponse`\
-[in] Specifica la risposta, utilizzando le convenzioni `MessageBox` della funzione Win32. Vedere la funzione [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) per i dettagli.
+in Specifica la risposta, usando le convenzioni della `MessageBox` funzione Win32. Per informazioni dettagliate, vedere la funzione [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

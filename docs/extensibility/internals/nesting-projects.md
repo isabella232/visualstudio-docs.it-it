@@ -1,5 +1,5 @@
 ---
-title: Nidificazione di progetti Documenti Microsoft
+title: Annidamento di progetti | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,23 +14,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 814780fa8e7e57a022a75b2e09115cfa55a1b8be
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707037"
 ---
 # <a name="nesting-projects"></a>Annidamento dei progetti
-Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VS possono raggruppare in modo pratico tipi di progetti simili utilizzando la *nidificazione dei progetti*. Ad esempio, il progetto Modello organizzazione utilizza progetti nidificati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti web UI e così via sono raggruppati in un'unica categoria.
+Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto VS possono raggruppare in modo pratico tipi simili di progetti in utilizzando l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *annidamento del progetto*. Il progetto modello Enterprise, ad esempio, USA i progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti dell'interfaccia utente Web e così via sono raggruppati in un'unica categoria.
 
- In questo scenario, non esiste alcun limite al numero di progetti che lo sviluppatore può annidare in ogni progetto padre, anche se lo sviluppatore può fornire a livello di codice i limiti. Questo tipo di raggruppamento può anche essere reso ricorsivo, nel qual caso i progetti dello stesso tipo di un progetto figlio possono essere annidati sotto l'elemento figlio per diventare un sottoprogetto dell'elemento figlio, che è un sottoprogetto dell'elemento padre.
+ In questo scenario non esiste alcun limite al numero di progetti che lo sviluppatore può annidare in ogni progetto padre, sebbene lo sviluppatore possa fornire i limiti a livello di codice. Questo tipo di raggruppamento può anche essere reso ricorsivo, nel qual caso i progetti dello stesso tipo di un progetto figlio possono essere annidati sotto l'elemento figlio per diventare un sottoprogetto del figlio, che è un sottoprogetto dell'elemento padre.
 
- La nidificazione dei progetti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]non è una parte intrinseca di . È necessario scrivere il codice per abilitare la nidificazione e l'annidamento di sottoprogetti all'interno di progetti figlio. Il progetto padre è un VSPackage speciale, o tipo di progetto, creato e registrato con il proprio GUID che include il codice necessario per implementare la nidificazione del progetto.
+ L'annidamento del progetto non è una parte intrinseca di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . È necessario scrivere il codice per abilitare l'annidamento e la nidificazione del sottoprogetto nei progetti figlio. Il progetto padre è un VSPackage speciale o un tipo di progetto, creato e registrato con il proprio GUID che include il codice necessario per implementare l'annidamento del progetto.
 
- È possibile trovare un esempio su come nidificare i progetti in [Procedura: implementare progetti annidati](../../extensibility/internals/how-to-implement-nested-projects.md).
+ È possibile trovare un esempio su come annidare i progetti in [procedura: implementare progetti annidati](../../extensibility/internals/how-to-implement-nested-projects.md).
 
 ## <a name="nested-projects-example"></a>Esempio di progetti annidati
- ![Soluzione di progetti annidatiNested Projects Solution](../../extensibility/internals/media/vsnestedprojects.gif "VsNestedProjects") Esempio di progetti annidati
+ ![Soluzione di progetti annidati](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Esempio di progetti annidati
 
 ## <a name="see-also"></a>Vedere anche
 - [Considerazioni per lo scaricamento e il ricaricamento di progetti annidati](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1de155b71e82bb7561030cae2e1d0d4d777c9586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668067"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: creare modelli basati su più progetti
@@ -49,14 +49,14 @@ I modelli multiprogetto fungono da contenitori per due o più progetti. Quando u
 
   Il file radice con estensione vstemplate per un modello per più progetti differisce da un modello per progetto singolo nei modi seguenti:
 
-- L'attributo `Type` dell'elemento `VSTemplate` contiene il valore `ProjectGroup`. Esempio:
+- L'attributo `Type` dell'elemento `VSTemplate` contiene il valore `ProjectGroup`. Ad esempio:
 
   ```
   <VSTemplate Version="2.0.0" Type="ProjectGroup"
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   ```
 
-- L'elemento `TemplateContent` contiene un elemento `ProjectCollection` che ha uno o più elementi `ProjectTemplateLink` che definiscono i percorsi dei file con estensione vstemplate dei progetti inclusi. Esempio:
+- L'elemento `TemplateContent` contiene un elemento `ProjectCollection` che ha uno o più elementi `ProjectTemplateLink` che definiscono i percorsi dei file con estensione vstemplate dei progetti inclusi. Ad esempio:
 
   ```
   <TemplateContent>
@@ -150,4 +150,4 @@ I modelli multiprogetto fungono da contenitori per due o più progetti. Quando u
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Creazione di modelli di progetto e modelli di elemento](../ide/creating-project-and-item-templates.md) [Visual Studio riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md) [procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md) [Visual Studio riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md) [elemento SolutionFolder (modelli di Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ Elemento ProjectTemplateLink (modelli di Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+ [Creazione di modelli di progetto e modelli di elemento](../ide/creating-project-and-item-templates.md) [Visual Studio riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md) [procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md) [Visual Studio riferimento allo schema di modello](../extensibility/visual-studio-template-schema-reference.md) [elemento SolutionFolder (modelli di Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [elemento ProjectTemplateLink (modelli di Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
