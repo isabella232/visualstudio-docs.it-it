@@ -60,7 +60,7 @@ Il visualizzatore mostra un oggetto `NSBezierPath`:
 
 ![Visualizzazione delle curve di Bézier](media/data-visualizations-image16.png)
 
-## <a name="string"></a>Stringa
+## <a name="string"></a>string
 
 Una stringa di meno di 100 caratteri viene visualizzata completamente, senza anteprima. Le stringhe più lunghe verranno visualizzate completamente nell'anteprima. Le stringhe sono modificabili e il visualizzatore include un pulsante di modifica, che permette la modifica del valore della stringa nell'anteprima o nell'editor dei valori delle stringhe, mostrato di seguito:
 

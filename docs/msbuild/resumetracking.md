@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 248bb5e5e01b8209f826478e90b2c60b70922987
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632498"
 ---
 # <a name="resumetracking"></a>ResumeTracking
@@ -34,7 +34,7 @@ HRESULT WINAPI ResumeTracking();
 
 ## <a name="return-value"></a>Valore restituito
 
- **HRESULT** con il bit **SUCCEEDED** impostato se il rilevamento è stato ripreso. **E_FAIL** viene restituito se non è possibile riprendere il rilevamento perché il contesto non era disponibile.
+ **HRESULT** con il bit **succeeded** impostato se il rilevamento è stato ripreso. Viene restituito **E_FAIL** se non è possibile riprendere il rilevamento perché il contesto non è disponibile.
 
 ## <a name="requirements"></a>Requisiti
 

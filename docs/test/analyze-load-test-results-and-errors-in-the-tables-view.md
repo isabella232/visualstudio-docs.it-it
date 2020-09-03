@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565175"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
@@ -34,7 +34,7 @@ Quando si visualizzano i risultati dell'esecuzione di un test di carico, è poss
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Per passare alla visualizzazione tabella, scegliere **Tabelle** sulla barra degli strumenti del test di **carico.** Per passare da una tabella all'altra usare l'elenco a discesa **Tabella** nella barra degli strumenti sopra la griglia della tabella. In visualizzazione tabella è possibile visualizzare fino a cinque tabelle alla volta. Per ulteriori informazioni, vedere [Affiancare tabelle di un test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) in questo argomento.
+Per passare alla visualizzazione tabella, scegliere **tabelle** sulla barra degli strumenti del **test di carico** . Per passare da una tabella all'altra usare l'elenco a discesa **Tabella** nella barra degli strumenti sopra la griglia della tabella. In visualizzazione tabella è possibile visualizzare fino a cinque tabelle alla volta. Per ulteriori informazioni, vedere [Affiancare tabelle di un test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) in questo argomento.
 
 La maggior parte di valori numerici visualizzata in una tabella per i contatori delle prestazioni è cumulativa per l'intera esecuzione di test di carico. Le colonne denominate **Ultimo** sono un'eccezione e rappresentano il valore dell'intervallo di campionamento più recente.
 
@@ -52,19 +52,19 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 
 |Nome tabella|Descrizione|
 |-|-|
-|Errors|Visualizza un elenco di errori generati durante l'esecuzione del test di carico. Per ulteriori informazioni, vedere [La tabella Errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in questo argomento e Analizzare i risultati dei test di [carico.](../test/analyze-load-test-results-using-the-load-test-analyzer.md)|
-|Pagine|Visualizza un elenco di pagine visitate durante l'esecuzione di un test di carico. Alcuni dati di questa tabella sono disponibili solo al termine di un test di carico. Per ulteriori informazioni, vedere [Procedura: visualizzare la risposta alle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
-|Requests|Visualizza dettagli relativi alle singole richieste emesse durante un test di carico, tra cui tutte le richieste HTTP e le richieste dipendenti, ad esempio immagini. Per altre informazioni, vedere [la tabella Richieste](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) in questo argomento.|
-|Traccia SQL|Visualizza i risultati della traccia SQL. Questa tabella è disponibile solo al termine di un test di carico e soltanto se durante il test è stata usata la traccia SQL. Per altre informazioni, vedere [La tabella di dati di traccia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) in questo argomento.|
-|Test|Visualizza dettagli relativi ai singoli test eseguiti durante un test di carico. Per altre informazioni, vedere [la tabella Test](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) in questo argomento.|
-|Soglie|Visualizza un elenco di violazioni delle regole di soglia verificatesi durante l'esecuzione del test di carico. Per ulteriori informazioni, vedere [Analisi delle violazioni delle regole](../test/analyze-threshold-rule-violations-in-load-tests.md)di soglia .|
-|Transazioni|Visualizza un elenco delle transazioni effettuate durante un'esecuzione di test di carico. Per altre informazioni, vedere [la tabella Transazioni](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) in questo argomento.|
+|Errors|Visualizza un elenco di errori generati durante l'esecuzione del test di carico. Per ulteriori informazioni, vedere [la tabella degli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in questo argomento e [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
+|.NET|Visualizza un elenco di pagine visitate durante l'esecuzione di un test di carico. Alcuni dati di questa tabella sono disponibili solo al termine di un test di carico. Per altre informazioni, vedere [procedura: visualizzare la risposta della pagina Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Requests|Visualizza dettagli relativi alle singole richieste emesse durante un test di carico, tra cui tutte le richieste HTTP e le richieste dipendenti, ad esempio immagini. Per ulteriori informazioni, vedere [la tabella richieste](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) in questo argomento.|
+|Traccia SQL|Visualizza i risultati della traccia SQL. Questa tabella è disponibile solo al termine di un test di carico e soltanto se durante il test è stata usata la traccia SQL. Per ulteriori informazioni, vedere [la tabella dati di traccia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) in questo argomento.|
+|Test|Visualizza dettagli relativi ai singoli test eseguiti durante un test di carico. Per ulteriori informazioni, vedere [la tabella test](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) in questo argomento.|
+|Soglie|Visualizza un elenco di violazioni delle regole di soglia verificatesi durante l'esecuzione del test di carico. Per altre informazioni, vedere [analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md).|
+|Transazioni|Visualizza un elenco delle transazioni effettuate durante un'esecuzione di test di carico. Per ulteriori informazioni, vedere [la tabella delle transazioni](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) in questo argomento.|
 |Agenti|Vengono visualizzati dettagli solo se per il test di carico vengono usati un controller di test e agenti di test. Viene visualizzato un elenco degli agenti usati durante l'esecuzione dei test di carico. Nella tabella Agenti è incluso il numero di richieste testate dall'agente nonché, di tali richieste, il numero che non ha superato il test. Nella tabella Agenti è anche incluso il numero di test della combinazione dei test di carico completato dall'agente nonché, di tali test, il numero che non ha avuto esito positivo.|
 |Dettagli test|Vengono visualizzati i dettagli per i test inclusi nella combinazione di test per il test di carico. Tra i dettagli sono inclusi il nome del test, lo scenario in cui ha avuto luogo il test, l'ora di avvio, il tempo impiegato per l'esecuzione e i risultati dell'operazione con l'indicazione del superamento o meno del test. Se il test non è stato superato, viene visualizzato un collegamento nella colonna **Dettagli**. È possibile scegliere il collegamento per visualizzare l'Editor test prestazioni Web con la richiesta non riuscita evidenziata.|
 
 ## <a name="collect-percentile-data"></a>Raccogliere i dati percentili
 
-Alcune tabelle di test di carico possono contenere colonne aggiuntive, che includono i dati percentili e i tempi di risposta suddivisi in gruppi in base all'emulazione della rete. Per impostazione predefinita, questi dati non vengono raccolti. I dai percentili sono disponibili solo quando si salvano i risultati in un database e non quando si esegue il salvataggio in locale. Per ulteriori informazioni, vedere Gestione dei risultati dei test di [carico nel repository dei risultati](../test/manage-load-test-results-in-the-load-test-results-repository.md)del test di carico . Inoltre, per raccogliere questi dati, nell'**editor test di carico**, sotto il nodo **Impostazioni di esecuzione**, selezionare il nodo dell'impostazione di esecuzione specifico da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **StatisticsOnly** o **AllIndividualDetails**. Per ulteriori informazioni, vedere [Procedura: visualizzare la risposta alle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Alcune tabelle di test di carico possono contenere colonne aggiuntive, che includono i dati percentili e i tempi di risposta suddivisi in gruppi in base all'emulazione della rete. Per impostazione predefinita, questi dati non vengono raccolti. I dai percentili sono disponibili solo quando si salvano i risultati in un database e non quando si esegue il salvataggio in locale. Per altre informazioni, vedere [gestione dei risultati dei test di carico nel repository load risultati test](../test/manage-load-test-results-in-the-load-test-results-repository.md). Inoltre, per raccogliere questi dati, nell'**editor test di carico**, sotto il nodo **Impostazioni di esecuzione**, selezionare il nodo dell'impostazione di esecuzione specifico da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **StatisticsOnly** o **AllIndividualDetails**. Per altre informazioni, vedere [procedura: visualizzare la risposta della pagina Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Tabella Richieste
 
@@ -78,10 +78,10 @@ Nella tabella seguente sono elencate le colonne della tabella **Richieste**:
 |**Scenario**|Nome dello scenario.|Sì|
 |**Test**|Nome del test.|Sì|
 |**Totale**|Numero totale relativo a questa richiesta di test delle prestazioni Web emessa durante l'esecuzione del test di carico. Il totale include le richieste riuscite e non riuscite, ma non le richieste memorizzate nella cache, perché non vengono inviate al server Web.|Sì|
-|**Passed**|Numero di volte in cui la richiesta è stata emessa ed è riuscita.|No|
-|**Operazione non riuscita**|Numero di volte in cui la richiesta è stata emessa e non è riuscita. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per ulteriori informazioni, vedere [Analizzare i risultati](../test/analyze-load-test-results-using-the-load-test-analyzer.md)dei test di carico.|Sì|
-|**Memorizzati nella cache**|Numero totale di volte in cui la richiesta è già stata memorizzata nella cache.|No|
-|**Richieste/secRequests/Sec**|Frequenza al secondo della richiesta durante l'esecuzione del test di carico.|No|
+|**Riuscito**|Numero di volte in cui la richiesta è stata emessa ed è riuscita.|No|
+|**Non riuscito**|Numero di volte in cui la richiesta è stata emessa e non è riuscita. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
+|**Cache**|Numero totale di volte in cui la richiesta è già stata memorizzata nella cache.|No|
+|**Richieste/sec**|Frequenza al secondo della richiesta durante l'esecuzione del test di carico.|No|
 |**Richieste riuscite/sec**|Frequenza al secondo di questa richiesta durante l'esecuzione del test di carico, per le istanze della richiesta che sono riuscite.|No|
 |**Richieste non riuscite/sec**|Frequenza al secondo di questa richiesta durante l'esecuzione del test di carico, per le istanze della richiesta che non sono riuscite.|No|
 |**Tempo primo byte**|Tempo medio impiegato per ricevere il primo byte della risposta, misurato dal momento in cui la richiesta è stata inviata al server Web. Le unità sono espresse in secondi.|No|
@@ -99,12 +99,12 @@ Nella tabella seguente sono elencate le colonne della tabella **Test**.
 |**Test**|Nome del test.|Sì|
 |**Scenario**|Nome dello scenario.|Sì|
 |**Totale**|Numero totale di volte in cui il test è stato eseguito nello scenario. Include il numero di volte in cui il test è stato superato e non superato.|Sì|
-|**Passed**|Numero totale di volte in cui il test è stato eseguito nello scenario ed è stato superato.|Sì|
-|**Operazione non riuscita**|Numero totale di volte in cui il test è stato eseguito nello scenario e non è stato superato. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per ulteriori informazioni, vedere [Analizzare i risultati](../test/analyze-load-test-results-using-the-load-test-analyzer.md)dei test di carico.|Sì|
+|**Riuscito**|Numero totale di volte in cui il test è stato eseguito nello scenario ed è stato superato.|Sì|
+|**Non riuscito**|Numero totale di volte in cui il test è stato eseguito nello scenario e non è stato superato. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
 |**Test/sec**|Frequenza al secondo del test durante l'esecuzione del test di carico.|Sì|
 |**Richieste riuscite/sec**|Frequenza al secondo di questo test durante l'esecuzione del test di carico, per le istanze del test che sono state superate.|No|
 |**Richieste non riuscite/sec**|Frequenza al secondo di questo test durante l'esecuzione del test di carico, per le istanze del test che non sono state superate.|No|
-|**Tempo di test**|Tempo medio impiegato per eseguire il test durante il test di carico. Le unità sono espresse in secondi.|Sì|
+|**Tempo test**|Tempo medio impiegato per eseguire il test durante il test di carico. Le unità sono espresse in secondi.|Sì|
 |**Tempo test 90%**|Il novantesimo valore percentile per Tempo test.|No|
 |**Tempo test 95%**|Il novantacinquesimo valore percentile per Tempo test.|Sì|
 |**Richieste/Test**|Numero medio di richieste nel test se si tratta di un test delle prestazioni Web.|No|
@@ -116,7 +116,7 @@ Nella tabella **Transazioni** viene visualizzato un elenco delle transazioni eff
 Nella tabella seguente sono elencate le colonne della tabella **Transazioni**.
 
 > [!NOTE]
-> Per visualizzare tutte le colonne, è necessario abilitare la proprietà Intervallo archiviazione dettagli associata all'impostazione esecuzione test attiva. Per ulteriori informazioni, vedere [Procedura: specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Per visualizzare tutte le colonne, è necessario abilitare la proprietà Intervallo archiviazione dettagli associata all'impostazione esecuzione test attiva. Per altre informazioni, vedere [procedura: specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Colonna|Descrizione|Visibile senza i dettagli dell'intervallo|
 |-|-|-|
@@ -126,8 +126,8 @@ Nella tabella seguente sono elencate le colonne della tabella **Transazioni**.
 |**Totale**|Numero totale di transazioni eseguite durante il test di carico.|Sì|
 |**Tempo transazione**|Tempo impiegato per eseguire la transazione durante un'esecuzione dei test di carico. Per i test delle prestazioni Web, il tempo interazione utente è incluso nel calcolo. Le unità sono espresse in secondi.|No|
 |**Tempo di risposta**|Tempo di risposta per la transazione del test delle prestazioni Web nell'esecuzione di un test di carico. Tempo di risposta è diverso da Tempo transazione, in quanto il primo non include gli eventuali tempi interazione utente presenti durante la transazione. Le unità sono espresse in secondi.|No|
-|**Ave. Tempo transazione**|Tempo medio della transazione. Sono inclusi i tempi di interazione utente. Ad esempio, se si dispone di tre richieste, ognuna con un tempo di interazione utente, nella durata saranno inclusi tali tempi di interazione utente nonché l'ora effettiva di esecuzione delle richieste.|No|
-|**Tempo di risposta**|Tempo di risposta medio per la transazione di un test delle prestazioni Web nell'esecuzione di un test di carico. Tempo di risposta è diverso da Tempo transazione, in quanto il primo non include gli eventuali tempi interazione utente presenti durante la transazione. Le unità sono espresse in secondi.|No|
+|**Tempo di transazione Ave**|Tempo medio della transazione. Sono inclusi i tempi di interazione utente. Ad esempio, se si dispone di tre richieste, ognuna con un tempo di interazione utente, nella durata saranno inclusi tali tempi di interazione utente nonché l'ora effettiva di esecuzione delle richieste.|No|
+|**Tempo di risposta Ave.**|Tempo di risposta medio per la transazione di un test delle prestazioni Web nell'esecuzione di un test di carico. Tempo di risposta è diverso da Tempo transazione, in quanto il primo non include gli eventuali tempi interazione utente presenti durante la transazione. Le unità sono espresse in secondi.|No|
 |**Tempo di risposta minimo**|Non sono inclusi i tempi di interazione utente.|No|
 |**Tempo di risposta massimo**|Non sono inclusi i tempi di interazione utente.|No|
 |**Mediana tempo di risposta**|Non sono inclusi i tempi di interazione utente.|No|
@@ -149,9 +149,9 @@ La tabella degli errori contiene le seguenti colonne:
 |Type|Il tipo di errore, ad esempio HttpError.|Sì|
 |Sottotipo|Il sottotipo di errore, ad esempio LoadTestException.|Sì|
 |Conteggio|Il numero di errori di questo tipo che si sono verificati durante il test di carico. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile fare clic su qualsiasi collegamento ipertestuale per visualizzare un elenco dei singoli errori.|Sì|
-|Ultimo messaggio|Messaggio che descrive l'errore. ad esempio 404 - NotFound.|Sì|
+|Ultimo messaggio|Messaggio in cui viene descritto l'errore, ad esempio 404 - NotFound.|Sì|
 
-Per ulteriori informazioni, vedere [Utilizzo delle tabelle del test](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)di carico .
+Per altre informazioni, vedere [uso delle tabelle di test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ### <a name="drill-down-to-the-error-list"></a>Drill-down nell'elenco degli errori
 
@@ -164,16 +164,16 @@ La tabella **Errori test di carico** contiene le seguenti colonne:
 
 |Colonna|Descrizione|
 |-|-|
-|**Tempo**|L'ora durante il test di carico in cui si è verificato l'errore.|
-|**Agente**|Il nome del computer agente in cui si è verificato l'errore. Questo è importante quando si eseguono test di carico usando controller di test e agenti di test. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|
+|**Time**|L'ora durante il test di carico in cui si è verificato l'errore.|
+|**Agent**|Il nome del computer agente in cui si è verificato l'errore. Questo è importante quando si eseguono test di carico usando controller di test e agenti di test. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Nome del test delle prestazioni Web in cui si è verificato l'errore.|
 |**Scenario**|Il nome dello scenario in cui si è verificato l'errore.|
 |**Richiesta**|L'URL della richiesta in cui si è verificato l'errore.|
 |**Tipo**|Il tipo di errore, ad esempio HttpError.|
 |**Sottotipo**|Il sottotipo di errore, ad esempio LoadTestException.|
-|**Testo**|Il testo del messaggio di errore, ad esempio 404 - NotFound.|
-|**Stack**|Le voci di questa colonna sono vuote o contengono la parola **Stack** in formato collegamento ipertestuale. È possibile scegliere il collegamento ipertestuale per visualizzare la traccia dello stack dell'errore.|
-|**Dettagli**|Le voci di questa colonna sono vuote o contengono la parola **TestLog** in formato collegamento ipertestuale. Questo collegamento può consentire di isolare errori nel test di carico. Ad esempio, scegliendo il collegamento **TestLog** in un errore di richiesta del test delle prestazioni Web verranno aperti i risultati per il test delle prestazioni Web nel Visualizzatore risultati test prestazioni Web ed evidenziato l'errore di richiesta.|
+|**Text**|Il testo del messaggio di errore, ad esempio 404 - NotFound.|
+|**Tra elementi sovrapposti**|Le voci di questa colonna sono vuote o contengono la parola **Stack** in formato collegamento ipertestuale. È possibile scegliere il collegamento ipertestuale per visualizzare la traccia dello stack dell'errore.|
+|**Informazioni dettagliate**|Le voci di questa colonna sono vuote o contengono la parola **TestLog** in formato collegamento ipertestuale. Questo collegamento può consentire di isolare errori nel test di carico. Se, ad esempio, si sceglie il collegamento **TestLog** in un errore di richiesta del test delle prestazioni Web, i risultati per il test delle prestazioni Web vengono aperti nel Visualizzatore risultati test prestazioni Web e viene evidenziato l'errore di richiesta.|
 
 > [!NOTE]
 > È possibile ordinare la tabella scegliendo le intestazioni delle colonne.
@@ -186,7 +186,7 @@ Se la traccia SQL è attivata, durante l'esecuzione del test di carico viene cre
 
 ### <a name="to-view-sql-trace-data"></a>Per visualizzare i dati di traccia SQL
 
-1. Nell'Analizzatore test di carico scegliere **Tabelle** sulla barra degli strumenti per assicurarsi che la griglia della tabella sia visualizzata.
+1. Nell'analizzatore test di carico scegliere **tabelle** sulla barra degli strumenti per assicurarsi che venga visualizzata la griglia della tabella.
 
 2. Nella casella di riepilogo **Tabella** selezionare **Traccia SQL**.
 
@@ -196,31 +196,31 @@ Se la traccia SQL è attivata, durante l'esecuzione del test di carico viene cre
 
     - **Event Class**
 
-    - **Durata**
+    - **Duration**
 
     - **CPU**
 
-    - **Legge**
+    - **Reads**
 
     - **Writes**
 
     - **TextData**
 
-    - **Starttime**
+    - **StartTime**
 
-    - **Endtime**
+    - **EndTime**
 
    Se si vuole tracciare eventi SQL diversi dai dati identificati in queste colonne, è possibile configurare una traccia SQL personalizzata tramite SQL Profiler, uno strumento separato da Visual Studio.
 
 ## <a name="tile-load-test-tables"></a>Affiancare tabelle di un test di carico
 
-Quando si visualizzano i risultati di un'esecuzione di test di carico, è possibile visualizzare i dati sotto forma di tabelle dettagliate. Per passare alla visualizzazione tabella, scegliere **Tabelle** sulla barra degli strumenti del test di **carico.** Le tabelle disponibili sono le seguenti: **Errori**, **Pagine**, **Richieste**, **Traccia SQL**, **Test**, **Soglie** e **Transazioni**. Per ulteriori informazioni, vedere [Utilizzo delle tabelle del test](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)di carico .
+Quando si visualizzano i risultati di un'esecuzione di test di carico, è possibile visualizzare i dati sotto forma di tabelle dettagliate. Per passare alla visualizzazione tabella, scegliere **tabelle** sulla barra degli strumenti del **test di carico** . Le tabelle disponibili sono le seguenti: **Errori**, **Pagine**, **Richieste**, **Traccia SQL**, **Test**, **Soglie** e **Transazioni**. Per altre informazioni, vedere [uso delle tabelle di test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 In visualizzazione tabella è possibile visualizzare fino a quattro tabelle non sovrapposte alla volta.
 
 ### <a name="to-tile-tables"></a>Per affiancare le tabelle
 
-1. Nella barra degli strumenti **dell'analizzatore test di carico** scegliere **Tabelle**.
+1. Sulla barra degli strumenti dell' **analizzatore test di carico** scegliere **tabelle**.
 
      Verrà aperta la visualizzazione tabella. Il layout predefinito è costituito da due pannelli orizzontali.
 
@@ -241,9 +241,9 @@ In visualizzazione tabella è possibile visualizzare fino a quattro tabelle non 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Analizzare i risultati dei test di caricoAnalyze load test results](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Procedura: accedere ai risultati dei test di carico per l'analisiHow to: Access load test results for analysis](../test/how-to-access-load-test-results-for-analysis.md)
-- [Analizzare i risultati dei test di carico nella visualizzazione GraficiAnalyze load test results in the Graphs view](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Procedura: accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
+- [Analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Gestire i risultati dei test di carico nel repository dei risultati del test di caricoManage load test results in the Load Test Results Repository](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gestire i risultati dei test di carico nel repository del Risultati test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Cenni preliminari sul riepilogo dei risultati dei test di carico](../test/load-test-results-summary-overview.md)

@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75405813"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -25,16 +25,16 @@ La finestra di completamento offre anche il supporto per filtrare i completament
 
 | Icona                         | Nome          | Parola chiave    | Tasto di scelta rapida |
 | -----------------------------|---------------| -----------|--------|
-| ![Icona di classe](media/classes-icon.png)  | class         | `class`    |  ⌥C
+| ![Icona di classe](media/classes-icon.png)  | classe         | `class`    |  ⌥C
 | ![Icona Costante](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![Icona di delegato](media/delegate-icon.png) | delegato      | `delegate` |  ⌥D
 | ![Icona di enumerazione](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![Icona di evento](media/event-icon.png)    | evento         |            |  ⌥V
+| ![Icona di evento](media/event-icon.png)    | event         |            |  ⌥V
 | ![Icona Campo](media/fields-icon.png)   | campo         |            |  ⌥F
 | ![Icona di interfaccia](media/interface-icon.png)| interfaccia     | `interface`|  ⌥I
 | ![Icona di parola chiave](media/keyword-icon.png)  | parola chiave       |            |  ⌥K
 | ![Icona di metodo](media/method-icon.png)   | method        |            |  ⌥M
-| ![Icona di spazio dei nomi](media/namespace-icon.png)| spazio dei nomi     | `namespace`|  ⌥N
+| ![Icona di spazio dei nomi](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
 | ![Icona di proprietà](media/props-icon.png)    | proprietà      |            |  ⌥P
 | ![Icona di frammento di codice](media/snippet-icon.png)  | frammento di codice       | `class`    |  ⌥S
 | ![Icona di struct](media/struct-icon.png)   | structure     | `struct`   |  ⌥S

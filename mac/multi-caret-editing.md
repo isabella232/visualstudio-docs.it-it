@@ -1,44 +1,44 @@
 ---
 title: Modifica di più punti di inserimento
-description: Inserisci testo in più posizioni quando modifichi il codice in Visual Studio per Mac.
+description: Inserire il testo in più posizioni quando si modifica il codice in Visual Studio per Mac.
 author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75451447"
 ---
 # <a name="multi-caret-editing"></a>Modifica di più punti di inserimento
 
-La modifica con cursore multiplo consente di aggiungere _n_ numero di punti di inserimento in una sola volta. In modalità con più cursori, è possibile aggiungere altri punti di inserimento al documento tramite clic del mouse o tramite comandi da tastiera. Il cursore primario è indicato da un cursore rosso, mentre i punti di inserimento secondari sono presenti in un colore azzurro. La modalità di modifica con `ESC` più elementi di sicurezza può essere disattivata tramite il tasto .
+La funzionalità di modifica di più punti di inserimento consente _di aggiungere un_ numero di punti di inserimento in una sola volta. Quando si usa la modalità a più cursore, è possibile aggiungere ulteriori carriere al documento usando i clic del mouse o i comandi da tastiera. Il punto di inserimento primario è indicato da un cursore rosso, mentre quelli secondari sono presenti in un colore blu chiaro. La modalità di modifica del punto di inserimento può essere disabilitata tramite la `ESC` chiave.
 
-## <a name="enabling-multi-caret-editing"></a>Abilitazione della modifica con supporto e l'altro
+## <a name="enabling-multi-caret-editing"></a>Abilitazione della modifica del punto di inserimento
 
 ### <a name="keyboard"></a>Tastiera
 
-È possibile abilitare la modalità con più elementi di posta elettronica tramite la tastiera in diversi modi. Nella tabella seguente sono riportate le scelte rapide da tastiera disponibili per immettere modalità specifiche di modifica con cuore di posta elettronica:
+È possibile abilitare la modalità a più punti di inserimento tramite la tastiera in diversi modi. Nella tabella seguente sono riportati i tasti di scelta rapida disponibili per l'immissione di modalità specifiche di modifica del punto di inserimento:
 
-| Tasto di scelta rapida  | Azione                        | 
+| Tasto di scelta rapida  | Action                        | 
 |---------| ------------------------------|
-|  ⌥⇧.   | Inserisci il custode corrispondente successivo    | 
-|  ⌥⇧;   | Inserisci i dati di inserimento | 
-|  ⌥⇧,   | Rimuovere l'ultimo inserimento             | 
-|  ⌥⇧/   | Sposta l'ultimo clic verso il basso          | 
+|  ⌥⇧.   | Inserisci punto di inserimento corrispondente successivo    | 
+|  ⌥⇧;   | Inserisci i punto di inserimento in corrispondenza di tutte le corrispondenze | 
+|  ⌥⇧,   | Rimuovi ultimo punto di inserimento             | 
+|  ⌥⇧/   | Sposta ultimo punto di inserimento in basso          | 
 
-Ognuno di questi comportamenti è ancorato alla posizione corrente del livello di inserimento quando si richiama il comando. Ad esempio, se il punto di inserimento si trova all'inizio della parola "nome" e si richiama "Inserisci punti di inserimento in corrispondenza" (sezione ;) ogni istanza della parola "nome" nel documento corrente avrà un punto di inserimento all'inizio della parola. Allo stesso modo, se si richiama il comando "Inserisci il successivo accento di posizione corrispondente" (Sezione ,) , un accento di posizione verrà inserito nell'istanza successiva della parola "nome". Questo comando può essere richiamato più volte.
+Ognuno di questi comportamenti è ancorato alla posizione corrente del punto di inserimento quando si richiama il comando. Ad esempio, se il punto di inserimento si trova all'inizio della parola "Name" e si richiama "Insert Caren all matching" (⌥ ⇧;) ogni istanza della parola "nome" nel documento corrente avrà un accento circonflesso inserito all'inizio della parola. Analogamente, se si richiama il comando "Insert Next matching" (⌥ ⇧), verrà inserito un accento circonflesso nell'istanza successiva della parola "Name". Questo comando può essere richiamato più volte.
 
-![tastiera con più punciere](media/multi-caret-keyboard.gif)
+![tastiera a più cursore](media/multi-caret-keyboard.gif)
 
 ## <a name="mousetouchpad"></a>Mouse/touchpad
 
-Utilizzando il cursore, è possibile selezionare punti di inserimento specifici per i punti di inserimento multipli. Mentre i tasti di scelta rapida sono associati a stringhe corrispondenti, potete inserire manualmente un punto di inserimento in qualsiasi punto del documento con il cursore. Una volta impostati i punti di inserimento, ognuno riecheggia le voci dei tasti digitate sulla tastiera.
+Utilizzando il cursore, è possibile selezionare punti di inserimento specifici per più punti di inserimento. Mentre i tasti di scelta rapida sono associati alle stringhe corrispondenti, è possibile inserire manualmente un punto di inserimento nel documento con il cursore. Una volta impostati i set di lavoro, ciascuno restituirà le voci chiave digitate sulla tastiera.
 
-Per utilizzare il mouse per inserire più punti di inserimento, è necessario tenere premuto il tasto cancelletto e fare clic nel punto in cui si desidera inserire il cursore. Sarete in modalità di inserimento fino a quando i tasti di sè sono tenuti. Se si inserisce un punto di inserimento in una posizione errata, è possibile rimuovere il punto di inserimento continuando a tenere premuto il segno di sè e facendo di nuovo clic nella stessa area. Una volta che hai tutti i punti di inserimento dove vorresti che si desidera, smettere di premere i tasti di cancelletto e iniziare a digitare. La gif seguente dimostra sia la selezione di un set di punti di inserimento che la rimozione di punti erroneamente impostati.
+Per usare il mouse per inserire più punti di inserimento, è necessario tenere premuto ⌘ ⌥ e fare clic su dove si desidera inserire i punti di inserimento. Si sarà in modalità di inserimento finché verranno mantenute le chiavi ⌘ ⌥. Se si inserisce un accento circonflesso in una posizione non corretta, è possibile rimuovere il cursore continuando a tenere ⌘ ⌥ e facendo nuovamente clic nella stessa area. Una volta che tutti i punti di inserimento si trovano nel punto in cui si desidera, interrompere la pressione dei tasti ⌘ ⌥ e iniziare a digitare. Il GIF seguente illustra sia la selezione di un set di punti di inserimento che la rimozione dei punti impostati erroneamente.
 
-![mouse con più scontrammi](media/multi-caret-mouse.gif)
+![mouse con più cursore](media/multi-caret-mouse.gif)
 
 ## <a name="see-also"></a>Vedere anche
 

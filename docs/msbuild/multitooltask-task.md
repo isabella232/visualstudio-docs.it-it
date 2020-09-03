@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d9e8b23492f23d39977b4eb26f8ee633b8463f27
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565214"
 ---
 # <a name="multitooltask-task"></a>Attività MultiToolTask
@@ -40,9 +40,9 @@ Nella tabella seguente vengono descritti i parametri dell'attività **MultiToolT
 |**SchedulerVerbose**|Parametro **bool** facoltativo.|
 |**recenti**|Parametro **ITaskItem[]** obbligatorio.|
 |**TaskAssemblyName**|Parametro **stringa** facoltativo.|
-|**TaskName**|Parametro **di stringa** obbligatorio.|
-|**TrackerLogDirectory**|Parametro **di stringa** obbligatorio.|
+|**TaskName**|Parametro di **stringa** obbligatorio.|
+|**TrackerLogDirectory**|Parametro di **stringa** obbligatorio.|
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+[Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

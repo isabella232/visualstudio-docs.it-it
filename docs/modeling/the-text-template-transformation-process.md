@@ -10,20 +10,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565864"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
-Il processo di trasformazione del modello di testo accetta un file modello di testo come input e genera un nuovo file di testo come output. È ad esempio possibile utilizzare modelli di testo per generare Visual Basic o C# codice oppure generare un report HTML.
+Il processo di trasformazione del modello di testo accetta un file modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o C# oppure è possibile generare un report HTML.
 
  Tre componenti fanno parte di questo processo: il motore, l'host e i processori di direttiva. Il motore controlla il processo; interagisce con l'host e il processore di direttiva per produrre il file di output. L'host fornisce qualsiasi interazione con l'ambiente, ad esempio l'individuazione di file e assembly. Il processore di direttiva aggiunge funzionalità, ad esempio la lettura di dati da un file XML o da un database.
 
  Il processo di trasformazione del modello di testo viene eseguito in due passaggi. In primo luogo, il motore crea una classe temporanea, nota come classe Transformation generata. Questa classe contiene il codice generato dalle direttive e dai blocchi di controllo. Successivamente, il motore compila ed esegue la classe Transformation generata per produrre il file di output.
 
-## <a name="components"></a>Components
+## <a name="components"></a>Componenti
 
 |Componente|Descrizione|Personalizzabile (sì/no)|
 |-|-|-|
@@ -56,8 +56,8 @@ Il processo di trasformazione del modello di testo accetta un file modello di te
 
  Un processore di direttiva può elaborare una o più direttive. Quando si trasforma un modello, è necessario avere installato un processore di direttiva che possa gestire le direttive nel modello.
 
- Le direttive funzionano aggiungendo codice nella classe Transformation generata. È possibile chiamare le direttive da un modello di testo e il motore elabora tutte le chiamate di direttiva quando crea la classe Transformation generata. Dopo aver chiamato correttamente una direttiva, il resto del codice scritto nel modello di testo può basarsi sulla funzionalità fornita dalla direttiva. Ad esempio, è possibile effettuare la chiamata seguente alla direttiva `import` nel modello:
+ Le direttive funzionano aggiungendo codice nella classe Transformation generata. È possibile chiamare le direttive da un modello di testo e il motore elabora tutte le chiamate di direttiva quando crea la classe Transformation generata. Dopo aver chiamato correttamente una direttiva, il resto del codice scritto nel modello di testo può basarsi sulla funzionalità fornita dalla direttiva. Ad esempio, è possibile effettuare la chiamata seguente alla `import` direttiva nel modello:
 
  `<#@ import namespace="System.Text" #>`
 
- Il processore di direttiva standard converte questo oggetto in un'istruzione `using` nella classe Transformation generata. È quindi possibile usare la classe `StringBuilder` nel resto del codice del modello senza qualificarla come `System.Text.StringBuilder`.
+ Il processore di direttiva standard converte questo oggetto in un' `using` istruzione della classe Transformation generata. È quindi possibile usare la `StringBuilder` classe nel resto del codice del modello senza qualificarla come `System.Text.StringBuilder` .

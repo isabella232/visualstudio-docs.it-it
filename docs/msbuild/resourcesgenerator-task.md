@@ -18,27 +18,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632511"
 ---
 # <a name="resourcesgenerator-task"></a>Attività ResourcesGenerator
 
-L'attività <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpora una o più risorse (*.jpg*, *.ico*, *.bmp,* XAML in formato binario e altri tipi di estensione) in un file *con estensione resources.*
+L' <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> attività incorpora una o più risorse (*jpg*, *ico*, *BMP*, XAML in formato binario e altri tipi di estensione) in un file con estensione *Resources* .
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`OutputPath`|Parametro **String** obbligatorio.<br /><br /> Specifica il percorso della directory di output. Se il percorso non è assoluto, verrà trattato come percorso relativo alla directory di progetto radice.|
-|`OutputResourcesFile`|Parametro di output **ITaskItem[]** obbligatorio.<br /><br /> Specifica il percorso e il nome del file *con estensione resources* generato. Se il percorso non è assoluto, il file * resources* verrà generato come percorso relativo alla directory di progetto radice.|
-|`ResourcesFiles`|Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica una o più risorse da incorporare nel file *con estensione resources* generato.|
+|`OutputResourcesFile`|Parametro di output **ITaskItem[]** obbligatorio.<br /><br /> Specifica il percorso e il nome del file con *estensione resources* generato. Se il percorso non è assoluto, il file * resources* verrà generato come percorso relativo alla directory di progetto radice.|
+|`ResourcesFiles`|Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica una o più risorse da incorporare nel file con *estensione resources* generato.|
 
 ## <a name="example"></a>Esempio
 
- Nell'esempio seguente viene generato un file *con estensione resources* con una singola risorsa *bmp.* La risorsa *bmp* viene generata in una directory relativa alla directory radice del progetto.
+ Nell'esempio seguente viene generato un file con *estensione resources* con una singola risorsa *BMP* . La risorsa *BMP* viene generata in una directory relativa alla directory radice del progetto.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -57,7 +57,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpora un
 ## <a name="see-also"></a>Vedere anche
 
 - [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
-- [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)
-- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/wpf-msbuild-task-reference.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

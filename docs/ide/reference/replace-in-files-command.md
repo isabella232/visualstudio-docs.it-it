@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565474"
 ---
 # <a name="replace-in-files-command"></a>Comando Sostituisci nei file
@@ -41,42 +41,42 @@ Obbligatorio. Testo da cercare.
 
 Obbligatorio. Il testo di sostituzione per il testo corrispondente.
 
-## <a name="switches"></a>Switch
+## <a name="switches"></a>Commutatori
 /all o /a
 
-Facoltativa. Sostituisce tutte le occorrenze del testo di ricerca con il testo di sostituzione.
+facoltativo. Sostituisce tutte le occorrenze del testo di ricerca con il testo di sostituzione.
 
 /case o /c
 
-Facoltativa. Vengono rilevate corrispondenze solo se i caratteri maiuscoli e minuscoli corrispondono esattamente a quelli specificati nell'argomento `findwhat`.
+facoltativo. Vengono rilevate corrispondenze solo se i caratteri maiuscoli e minuscoli corrispondono esattamente a quelli specificati nell'argomento `findwhat`.
 
 /ext: `extensions`
 
-Facoltativa. Specifica l'estensione dei file nei quali eseguire la ricerca.
+facoltativo. Specifica l'estensione dei file nei quali eseguire la ricerca.
 
 /keep o /k
 
-Facoltativa. Indica che tutti i file modificati vengono lasciati aperti.
+facoltativo. Indica che tutti i file modificati vengono lasciati aperti.
 
 /lookin: `searchpath`
 
-Facoltativa. Directory in cui eseguire la ricerca. Se il percorso contiene spazi, racchiudere l'intero percorso tra virgolette.
+facoltativo. Directory in cui eseguire la ricerca. Se il percorso contiene spazi, racchiudere l'intero percorso tra virgolette.
 
 /options o /t
 
-Facoltativa. Visualizza l'elenco delle impostazioni correnti dell'opzione di ricerca e non esegue una ricerca.
+facoltativo. Visualizza l'elenco delle impostazioni correnti dell'opzione di ricerca e non esegue una ricerca.
 
 /regex o /r
 
-Facoltativa. Usa caratteri speciali predefiniti nell'argomento `findwhat` come notazioni che rappresentano modelli di testo anziché i caratteri letterali. Per l'elenco completo dei caratteri espressione regolare, vedere [Espressioni regolari](../../ide/using-regular-expressions-in-visual-studio.md).
+facoltativo. Usa caratteri speciali predefiniti nell'argomento `findwhat` come notazioni che rappresentano modelli di testo anziché i caratteri letterali. Per l'elenco completo dei caratteri espressione regolare, vedere [Espressioni regolari](../../ide/using-regular-expressions-in-visual-studio.md).
 
 /reset o /e
 
-Facoltativa. Ripristina le impostazioni predefinite delle opzioni di ricerca e non esegue la ricerca.
+facoltativo. Ripristina le impostazioni predefinite delle opzioni di ricerca e non esegue la ricerca.
 
 /stop
 
-Facoltativa. Se è in corso un'operazione di ricerca, la interrompe. Quando viene specificato `/stop` la sostituzione ignora tutti gli altri argomenti. Ad esempio, per interrompere la sostituzione corrente immettere quanto segue:
+facoltativo. Se è in corso un'operazione di ricerca, la interrompe. Quando viene specificato `/stop` la sostituzione ignora tutti gli altri argomenti. Ad esempio, per interrompere la sostituzione corrente immettere quanto segue:
 
 ```
 >Edit.ReplaceinFiles /stop
@@ -84,19 +84,19 @@ Facoltativa. Se è in corso un'operazione di ricerca, la interrompe. Quando vien
 
 /sub o /s
 
-Facoltativa. Effettua la ricerca nelle sottocartelle incluse nella directory specificata nell'argomento /lookin:`searchpath`.
+facoltativo. Effettua la ricerca nelle sottocartelle incluse nella directory specificata nell'argomento /lookin:`searchpath`.
 
 /text2 o /2
 
-Facoltativa. Visualizza i risultati della sostituzione nella finestra **Risultati ricerca 2**.
+facoltativo. Visualizza i risultati della sostituzione nella finestra **Risultati ricerca 2**.
 
 /wild o /l
 
-Facoltativa. Usa caratteri speciali predefiniti nell'argomento `findwhat` come notazioni per rappresentare un carattere o una sequenza di caratteri.
+facoltativo. Usa caratteri speciali predefiniti nell'argomento `findwhat` come notazioni per rappresentare un carattere o una sequenza di caratteri.
 
 /word o /w
 
-Facoltativa. Cerca solo parole intere.
+facoltativo. Cerca solo parole intere.
 
 ## <a name="example"></a>Esempio
 In questo esempio `btnCancel` viene cercato e sostituito con `btnReset` in tutti i file CLS presenti nella cartella "my visual studio projects" e le informazioni relative alle sostituzioni vengono visualizzate nella finestra **Risultati ricerca 2**.
@@ -110,6 +110,6 @@ In questo esempio `btnCancel` viene cercato e sostituito con `btnReset` in tutti
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)
 - [Sostituisci nei file](../../ide/replace-in-files.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

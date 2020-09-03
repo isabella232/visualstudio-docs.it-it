@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632329"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
@@ -40,7 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 
 ## <a name="return-value"></a>Valore restituito
 
- **HRESULT** con il bit **SUCCEEDED** impostato se il numero di thread è stato aggiornato.
+ **HRESULT** con il bit **succeeded** impostato se il conteggio dei thread è stato aggiornato.
 
 ## <a name="requirements"></a>Requisiti
 
