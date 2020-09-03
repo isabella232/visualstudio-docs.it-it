@@ -12,9 +12,9 @@
       items:
         - name: Introduzione allo sviluppo con Visual Studio
           href: get-started-developing-with-visual-studio.md
-        - name: 'Guida introduttiva a Visual C# e Visual Basic'
+        - name: Guida introduttiva a Visual C# e Visual Basic
           items:
-            - name: 'Guida introduttiva a Visual C# e Visual Basic'
+            - name: Guida introduttiva a Visual C# e Visual Basic
               href: getting-started-with-visual-csharp-and-visual-basic.md
             - name: Creare un'applicazione semplice
               href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
@@ -192,7 +192,7 @@
           items:
             - name: Suggerimenti per la produttività
               href: productivity-tips-for-visual-studio.md
-            - name: Suggerimenti
+            - name: Suggerimenti e consigli
               href: tips-and-tricks-for-visual-studio.md
             - name: Identificazione e personalizzazione dei tasti di scelta rapida
               items:
@@ -212,7 +212,7 @@
                   href: visual-basic-specific-intellisense.md
                 - name: Elenchi di completamento filtrati in Visual Basic
                   href: filtered-completion-lists-in-visual-basic.md
-            - name: 'IntelliSense per Visual C#'
+            - name: IntelliSense per Visual C#
               href: visual-csharp-intellisense.md
             - name: Supporto di test preventivi con la funzionalità di generazione dall'utilizzo
               href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<valore>
+                    - name: \<value>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -280,13 +280,13 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: Distribuire frammenti di codice
               href: how-to-distribute-code-snippets.md
-            - name: 'Frammenti di codice Visual C#'
+            - name: Frammenti di codice Visual C#
               href: visual-csharp-code-snippets.md
-            - name: 'Frammenti di codice Visual C#'
+            - name: Frammenti di codice Visual C#
               href: visual-cpp-code-snippets.md
             - name: Funzioni dei frammenti di codice
               href: code-snippet-functions.md
-            - name: 'Ripristinare frammenti di codice di refactoring C#'
+            - name: Ripristinare frammenti di codice di refactoring C#
               href: how-to-restore-csharp-refactoring-snippets.md
             - name: Usare frammenti di codice racchiusi
               href: how-to-use-surround-with-code-snippets.md
@@ -390,29 +390,29 @@
               href: find-code-changes-and-other-history-with-codelens.md
             - name: Comando CodeIndex
               href: codeindex-command.md
-        - name: 'Uso dell''ambiente di sviluppo di Visual Studio per C#'
+        - name: Uso dell'ambiente di sviluppo di Visual Studio per C#
           items:
-            - name: 'Uso dell''ambiente di sviluppo di Visual Studio per C#'
+            - name: Uso dell'ambiente di sviluppo di Visual Studio per C#
               href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
-            - name: 'Aggiungere un file di configurazione dell''applicazione a un progetto C#'
+            - name: Aggiungere un file di configurazione dell'applicazione a un progetto C#
               href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
             - name: Metadati come origine
               href: ../csharp-ide/metadata-as-source.md
-            - name: 'Refactoring (C#)'
+            - name: Refactoring (C#)
               items:
-                - name: 'Refactoring (C#)'
+                - name: Refactoring (C#)
                   href: ../csharp-ide/refactoring-csharp.md
-                - name: 'Refactoring Estrai Metodo (C#)'
+                - name: Refactoring Estrai Metodo (C#)
                   href: ../csharp-ide/extract-method-refactoring-csharp.md
-                - name: 'Refactoring di ridenominazione (C#)'
+                - name: Refactoring di ridenominazione (C#)
                   href: ../csharp-ide/rename-refactoring-csharp.md
-                - name: 'Refactoring Incapsula campo (C#)'
+                - name: Refactoring Incapsula campo (C#)
                   href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
-                - name: 'Refactoring Estrai interfaccia (C#)'
+                - name: Refactoring Estrai interfaccia (C#)
                   href: ../csharp-ide/extract-interface-refactoring-csharp.md
-                - name: 'Refactoring Rimuovi parametri (C#)'
+                - name: Refactoring Rimuovi parametri (C#)
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
-                - name: 'Refactoring Riordina parametri (C#)'
+                - name: Refactoring Riordina parametri (C#)
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Debug in Visual Studio
       href: ../debugger/debugging-in-visual-studio.md
@@ -470,7 +470,7 @@
               href: how-to-configure-projects-to-target-multiple-platforms.md
         - name: Specificare gli eventi di compilazione (Visual Basic)
           href: how-to-specify-build-events-visual-basic.md
-        - name: 'Specificare gli eventi di compilazione (C#)'
+        - name: Specificare gli eventi di compilazione (C#)
           href: how-to-specify-build-events-csharp.md
         - name: Configurazione degli avvisi in Visual Basic
           href: configuring-warnings-in-visual-basic.md
@@ -616,7 +616,7 @@
               href: how-to-save-and-open-files-with-encoding.md
     - name: Aggiunta del supporto di altri linguaggi all'editor di Visual Studio
       href: adding-visual-studio-editor-support-for-other-languages.md
-    - name: Reference
+    - name: Informazioni di riferimento
       items:
         - name: Elementi generali dell'interfaccia utente (Visual Studio)
           items:
@@ -630,7 +630,7 @@
               href: reference/code-snippet-picker.md
             - name: Finestra di comando
               href: reference/command-window.md
-            - name: Converti (finestra di dialogo)
+            - name: Finestra di dialogo Converti
               href: reference/convert-dialog-box.md
             - name: Finestra Elenco errori
               href: reference/error-list-window.md
@@ -638,9 +638,9 @@
               href: reference/file-properties-javascript.md
             - name: Vai alla riga
               href: reference/go-to-line.md
-            - name: Controllo immediato (finestra)
+            - name: Finestra di controllo immediato
               href: reference/immediate-window.md
-            - name: File esterni
+            - name: file esterni
               href: reference/miscellaneous-files.md
             - name: Finestra di dialogo Opzioni
               href: reference/options-dialog-box-visual-studio.md
@@ -718,7 +718,7 @@
                   href: reference/options-text-editor-csharp-advanced.md
                 - name: 'Opzioni, Editor di testo, C#, IntelliSense'
                   href: reference/options-text-editor-csharp-intellisense.md
-                - name: 'Opzioni, Editor di testo, JavaScript, Formattazione'
+                - name: 'Options, Text Editor, JavaScript, Formatting'
                   href: reference/options-text-editor-javascript-formatting.md
                 - name: 'Opzioni, Editor di testo, JavaScript, IntelliSense'
                   href: reference/options-text-editor-javascript-intellisense.md
@@ -754,7 +754,7 @@
                   items:
                     - name: 'Pagina Compilazione, Progettazione progetti (C#)'
                       href: reference/build-page-project-designer-csharp.md
-                    - name: 'Finestra di dialogo Impostazioni di compilazione avanzate (C#)'
+                    - name: Finestra di dialogo Impostazioni di compilazione avanzate (C#)
                       href: reference/advanced-build-settings-dialog-box-csharp.md
                 - name: 'Analisi del codice, Progettazione progetti'
                   href: reference/code-analysis-project-designer.md
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: 'Pagina Debug, Progettazione progetti'
                   href: reference/debug-page-project-designer.md
-                - name: 'Pagina Estensioni My, Progettazione progetti'
+                - name: 'Pagina Estensioni My, Creazione progetti'
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: 'Pagina Pubblica, Progettazione progetti'
                   items:
@@ -956,11 +956,11 @@
           href: reference/visual-studio-for-applications-reference.md
         - name: MSBuild
           href: ../msbuild/msbuild.md
-        - name: Risorse per la risoluzione dei problemi relativi a errori IDE
+        - name: Risorse per la risoluzione dei problemi relativi all'IDE
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-        - name: Accessibilità per utenti con particolari esigenze
+        - name: Accessibilità per utenti disabili
           items:
-            - name: Accessibilità per utenti con particolari esigenze
+            - name: Accessibilità per utenti disabili
               href: reference/accessibility-for-people-with-disabilities.md
             - name: Funzionalità di accessibilità di Visual Studio
               items:

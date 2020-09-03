@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535941"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilizzo di ModelBus di Visual Studio in un modello di testo
@@ -257,7 +257,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 1. Creare un nuovo linguaggio DSL usando il modello di soluzione per il linguaggio minimo. Assegnare al linguaggio il nome MBConsumer e impostare l'estensione del nome file su ". consume".
 
-2. Nel progetto DSL aggiungere un riferimento all'assembly DSL MBProvider. Fare clic con il pulsante destro del mouse `MBConsumer\Dsl\References` e scegliere **Aggiungi riferimento**. Nella scheda **Sfoglia** individuare`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. Nel progetto DSL aggiungere un riferimento all'assembly DSL MBProvider. Fare clic con il pulsante destro del mouse  `MBConsumer\Dsl\References` e scegliere **Aggiungi riferimento**. Nella scheda **Sfoglia** individuare `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     In questo modo è possibile creare codice che usa l'altro DSL. Se si desidera creare riferimenti a diversi DSLs, aggiungerli anche.
 

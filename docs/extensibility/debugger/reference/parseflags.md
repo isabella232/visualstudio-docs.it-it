@@ -1,5 +1,5 @@
 ---
-title: METODO PARSEFLAGS . Documenti Microsoft
+title: PARSEFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0cc70fdd9fe1279e4d419a422b970eb3d3b07c65
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714112"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-Specifica come analizzare un'espressione.
+Specifica la modalità di analisi di un'espressione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,19 +52,19 @@ public enum enum_PARSEFLAGS { 
  Indica che l'espressione deve essere analizzata (e successivamente valutata) come indirizzo.
 
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
- Indica che l'espressione viene analizzata durante la fase di progettazione, ovvero quando una finestra di progettazione è aperta.
+ Indica che l'espressione viene analizzata in fase di progettazione, ovvero quando è aperta una finestra di progettazione.
 
 ## <a name="remarks"></a>Osservazioni
- Passato come parametro per il [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) e [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metodi.
+ Passato come parametro ai metodi [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) e [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
-- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+- [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md).

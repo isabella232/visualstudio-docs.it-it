@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565942"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
@@ -39,7 +39,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
  È consigliabile esaminare il codice generato per poter comprendere il linguaggio DSL. Per visualizzare i file generati, espandere i file *.tt in Esplora soluzioni.
 
- I file con estensione TT \*contengono pochissimi codici di generazione. Invece, usano le direttive `<#include>` per includere i file dei modelli condivisi. I file condivisi si trovano in **\Programmi\microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
+ I \* file con estensione tt contengono pochissimi codici di generazione. Invece, usano le direttive `<#include>` per includere i file dei modelli condivisi. I file condivisi si trovano in **\Programmi\microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  Quando si aggiunge il proprio codice programma alla soluzione DSL, aggiungerlo in un file separato, al di fuori della cartella del codice generato. Potrebbe essere necessario creare una cartella di **codice personalizzata** . Quando si aggiunge un nuovo file di codice a una cartella personalizzata, ricordare di correggere lo spazio dei nomi nello scheletro del codice iniziale.
 
@@ -58,7 +58,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 ## <a name="generated-files-in-dsl"></a>File generati in DSL
  I file generati seguenti vengono visualizzati nel progetto **DSL** .
 
- `Schema.xsd` *dslutente*
+ *Dslutente*`Schema.xsd`
 
  Schema per i file contenenti le istanze del linguaggio DSL. Questo file viene copiato nella directory di compilazione (**bin**). Quando si installa il linguaggio DSL, è possibile copiare questo file in **\Programmi\microsoft Visual Studio 11.0 \ Xml\Schemas** in modo che i file di modello possano essere convalidati. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
@@ -70,7 +70,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
  Nell'esempio di soluzione componente, uno dei generatori di connessione si chiama ConnectionBuilder, ma è una coincidenza, perché la relazione di dominio è denominata Connection.
 
- La relazione viene creata nel metodo`Builder.Connect()` *relazione* . La versione predefinita verifica che gli elementi modello di origine e di destinazione siano accettabili e quindi crea l'istanza della relazione. Ad esempio:
+ La relazione viene creata nel metodo di *relazione* `Builder.Connect()` . La versione predefinita verifica che gli elementi modello di origine e di destinazione siano accettabili e quindi crea l'istanza della relazione. Ad esempio:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -122,7 +122,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
 - Metodi del gestore EGP (Element Group Prototype). Questi sono necessari se l'utente può *unire* (aggiungere) un altro elemento nelle istanze di questa classe. L'utente in genere esegue questa operazione trascinando da uno strumento elemento o da un'altra forma oppure incollando.
 
-   Nel linguaggio DSL di esempio, è possibile unire una porta di input o una porta di output in un componente. Anche componenti e commenti possono essere uniti nel modello. L'operazione
+   Nel linguaggio DSL di esempio, è possibile unire una porta di input o una porta di output in un componente. Anche componenti e commenti possono essere uniti nel modello. Il valore di
 
    I metodi del gestore EGP nella classe dei componenti consentono a un componente di accettare le porte, ma non i commenti. Il gestore EGP nella classe radice del modello accetta commenti e componenti, ma non le porte.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Per personalizzare questo file, modificare il file `.tt`.
 
 > [!WARNING]
-> Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e assicurarsi che la proprietà **Includi in VSIX** sia `True`.
+> Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e assicurarsi che la proprietà **Includi in VSIX** sia `True` .
 
  Questo file controlla come il linguaggio DSL viene incluso nel pacchetto in un'estensione VSIX (Visual Studio Integration Extension). Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 

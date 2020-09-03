@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 081e897b0ff76dd97d2c174bf8c6fbfa2334f8ff
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350121"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedura: eseguire il debug da un progetto di DLL in Visual Studio (C#, C++, Visual Basic, F #)
@@ -49,7 +49,7 @@ I progetti DLL nativi e gestiti hanno impostazioni diverse per specificare le ap
 
 1. Aggiungere tutti gli argomenti del programma necessari nella casella **Argomenti del comando**.
 
-1. Fare clic su **OK**.
+1. Selezionare **OK**.
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Specificare un'app chiamante in un progetto DLL gestito
 
@@ -81,7 +81,7 @@ I progetti DLL nativi e gestiti hanno impostazioni diverse per specificare le ap
 
 Se il debug non raggiunge i punti di interruzione, assicurarsi che l'output della DLL (per impostazione predefinita, la cartella * \<project> \Debug* ) sia il percorso chiamato dall'app chiamante.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di progetti DLL](../debugger/debugging-dll-projects.md)
 - [Impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)

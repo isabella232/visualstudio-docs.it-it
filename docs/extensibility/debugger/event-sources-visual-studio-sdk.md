@@ -1,5 +1,5 @@
 ---
-title: Origini degli eventi (Visual Studio SDK) Documenti Microsoft
+title: Origini eventi (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738779"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Origini evento (Visual Studio SDK)Event sources (Visual Studio SDK)
-Esistono due origini di eventi: il motore di debug (DE) e Gestione debug sessione (SDM). Gli eventi inviati da un DE hanno un motore non NULL, mentre gli eventi inviati dal server SDM hanno un motore NULL.
+# <a name="event-sources-visual-studio-sdk"></a>Origini eventi (Visual Studio SDK)
+Esistono due origini di eventi: il motore di debug (DE) e la gestione del debug della sessione (SDM). Gli eventi inviati da un DE hanno un motore non NULL, mentre gli eventi inviati da SDM hanno un motore NULL.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come inviare il **IDebugProgramCreateEvent2** dal DE al modello SDM.
+Nell'esempio seguente viene illustrato come inviare **IDebugProgramCreateEvent2** da de a SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

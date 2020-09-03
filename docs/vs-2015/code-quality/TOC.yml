@@ -8,15 +8,15 @@
           href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: Panoramica dell'analisi codice gestito
           href: code-analysis-for-managed-code-overview.md
-        - name: 'Procedura: Abilitare e disabilitare l''analisi codice automatica'
+        - name: 'Procedura: abilitare e disabilitare l''analisi automatica del codice'
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
         - name: 'Procedura: Abilitare e disabilitare l''analisi completa della soluzione'
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Sospensione funzionalità automatica
           href: automatic-feature-suspension.md
-        - name: 'Procedura: Eseguire manualmente l''analisi del codice'
+        - name: 'Procedura: eseguire manualmente l''analisi del codice'
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 'Procedura dettagliata: Analisi del codice gestito per individuarne i difetti'
+        - name: 'Procedura dettagliata: Analisi del codice gestito per l''identificazione di errori del codice'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Rimuovere avvisi tramite l'attributo SuppressMessage
           items:
@@ -26,15 +26,15 @@
               href: in-source-suppression-overview.md
             - name: 'Procedura: Eliminare gli avvisi tramite una voce di menu'
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-            - name: 'Procedura: Eliminare gli avvisi per il codice generato'
+            - name: 'Procedura: eliminare gli avvisi per il codice generato'
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-            - name: 'Procedura: Personalizzare il dizionario di analisi codice'
+            - name: 'Procedura: Personalizzare il dizionario di analisi del codice'
               href: how-to-customize-the-code-analysis-dictionary.md
             - name: Metodi anonimi e analisi del codice
               href: anonymous-methods-and-code-analysis.md
             - name: 'Procedura: Visualizzare gli errori del codice gestito'
               href: how-to-view-managed-code-defects.md
-            - name: 'Procedura: Creare un elemento di lavoro per un difetto del codice gestito'
+            - name: 'Procedura: Creare un elemento di lavoro per un errore del codice gestito'
               href: how-to-create-a-work-item-for-a-managed-code-defect.md
             - name: Analisi del codice per gli avvisi del codice gestito
               items:
@@ -164,7 +164,7 @@
                   href: ca1058-types-should-not-extend-certain-base-types.md
                 - name: 'CA1059: I membri non devono esporre tipi concreti specifici'
                   href: ca1059-members-should-not-expose-certain-concrete-types.md
-                - name: 'CA1060: Spostare P/Invoke nella classe NativeMethods'
+                - name: 'CA1060: Spostare i P/Invoke nella classe NativeMethods'
                   href: ca1060-move-p-invokes-to-nativemethods-class.md
                 - name: 'CA1061: Non nascondere i metodi di una classe base'
                   href: ca1061-do-not-hide-base-class-methods.md
@@ -350,9 +350,9 @@
                           href: ca1823-avoid-unused-private-fields.md
                         - name: 'CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute'
                           href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-                    - name: avvisi di portabilità
+                    - name: Portability Warnings
                       items:
-                        - name: avvisi di portabilità
+                        - name: Portability Warnings
                           href: portability-warnings.md
                         - name: 'CA1900: I campi dei tipi di valore devono essere portabili'
                           href: ca1900-value-type-fields-should-be-portable.md
@@ -566,13 +566,13 @@
                           href: ca2242-test-for-nan-correctly.md
                         - name: 'CA2243: I valori letterali stringa di attributo devono essere analizzati correttamente'
                           href: ca2243-attribute-string-literals-should-parse-correctly.md
-                - name: Errori dei criteri per l'analisi del codice
+                - name: Code Analysis Policy Errors
                   href: code-analysis-policy-errors.md
 - name: Analisi della qualità del codice C/C++
   items:
     - name: Analisi della qualità del codice C/C++
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
-    - name: 'Avvio rapido: Analisi codice per C/C++'
+    - name: Guida introduttiva all'analisi del codice per C/C++
       href: quick-start-code-analysis-for-c-cpp.md
     - name: Utilizzo di set di regole per specificare le regole C++ da eseguire
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -580,11 +580,11 @@
       href: using-the-cpp-core-guidelines-checkers.md
     - name: Cenni preliminari sull'analisi del codice per C/C++
       href: code-analysis-for-c-cpp-overview.md
-    - name: 'Procedura: Impostare le proprietà di analisi codice per progetti C/C++'
+    - name: 'Procedura: impostare le proprietà di analisi del codice per progetti C/C++'
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-    - name: 'Procedura dettagliata: Analisi del codice C/C++ per l''identificazione degli errori'
+    - name: 'Procedura guidata: analisi del codice C/C++ per l''identificazione degli errori'
       items:
-        - name: 'Procedura dettagliata: Analisi del codice C/C++ per l''identificazione degli errori'
+        - name: 'Procedura guidata: analisi del codice C/C++ per l''identificazione degli errori'
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: Esempio dimostrativo
           href: demo-sample.md
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: Suggerimenti ed esempi
           href: best-practices-and-examples-sal.md
-        - name: 'Procedura: Specificare informazioni aggiuntive sul codice usando __analysis_assume'
+        - name: 'Procedura: specificare informazioni aggiuntive sul codice utilizzando __analysis_assume'
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: Avvisi dell'analisi codice per il linguaggio C/C++
           items:
@@ -1194,11 +1194,11 @@
               href: walkthrough-configuring-and-using-a-custom-rule-set.md
             - name: 'Procedura: Configurare l''analisi codice per un progetto di codice gestito'
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: 'Procedura: Configurare l''analisi codice per un''applicazione Web ASP.NET'
+            - name: 'Procedura: configurare l''analisi del codice per un''applicazione Web ASP.NET'
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-            - name: 'Procedura: Sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto team'
+            - name: 'Procedura: sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto team'
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-            - name: 'Procedura: Specificare set di regole per più progetti in una soluzione'
+            - name: 'Procedura: specificare set di regole per più progetti in una soluzione'
               href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
             - name: Creazione di set di regole personalizzate
               items:
@@ -1304,11 +1304,11 @@
               items:
                 - name: Creazione e utilizzo di criteri di archiviazione di analisi codice
                   href: creating-and-using-code-analysis-check-in-policies.md
-                - name: 'Procedura: Creare o aggiornare i criteri di archiviazione standard di analisi codice'
+                - name: 'Procedura: Creare o aggiornare criteri di archiviazione standard dell''analisi del codice'
                   href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
                 - name: Implementazione di criteri di archiviazione personalizzati per codice gestito
                   href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-                - name: 'Procedura: Applicare codice di facile manutenibilità con i criteri di archiviazione per l''analisi codice'
+                - name: 'Procedura: Applicare codice di facile manutenibilità con criteri di archiviazione dell''analisi del codice'
                   href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
                 - name: Criteri di archiviazione relativi alla compatibilità delle versioni per l'analisi del codice
                   href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -1318,7 +1318,7 @@
       href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: Valori della metrica del codice
       href: code-metrics-values.md
-    - name: 'Procedura: Generare dati di metrica del codice'
+    - name: 'Procedura: generare dati di metrica codice'
       href: how-to-generate-code-metrics-data.md
     - name: Uso di dati di metrica del codice
       href: working-with-code-metrics-data.md

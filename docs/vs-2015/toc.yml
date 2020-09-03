@@ -10,15 +10,15 @@
       href: porting/porting-migrating-and-upgrading-visual-studio-projects.md
     - name: IDE di Visual Studio
       href: ide/visual-studio-ide.md
-    - name: Extensibility
+    - name: Estendibilità
       href: extensibility/visual-studio-sdk.md
-    - name: Accesso ai dati
+    - name: Accesso dati
       href: data-tools/accessing-data-in-visual-studio.md
     - name: Sviluppo di app per dispositivi mobili multipiattaforma
       href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
     - name: Visual Basic
       href: /dotnet/visual-basic
-    - name: 'Visual C#'
+    - name: Visual C#
       href: /dotnet/csharp
     - name: Visual C++
       href: /cpp/visual-cpp-in-visual-studio
@@ -26,7 +26,7 @@
       href: javascript/javascript-in-visual-studio.md
     - name: Python
       href: python/getting-started-with-python.md
-    - name: 'Visual F#'
+    - name: Visual F#
       href: /dotnet/fsharp/
     - name: Talk to Us
       items:

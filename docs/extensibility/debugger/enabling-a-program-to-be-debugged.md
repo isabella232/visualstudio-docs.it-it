@@ -1,5 +1,5 @@
 ---
-title: Abilitazione di un programma per il debug Documenti Microsoft
+title: Abilitazione del debug di un programma | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738889"
 ---
-# <a name="enable-a-program-to-be-debugged"></a>Abilitare il debug di un programmaEnable a program to be debugged
-Prima che il motore di debug (DE) possa eseguire il debug di un programma, è necessario avviare il DE o collegarlo a un programma esistente.
+# <a name="enable-a-program-to-be-debugged"></a>Abilitare un programma di cui eseguire il debug
+Prima che il motore di debug (DE) possa eseguire il debug di un programma, è necessario prima avviare il DE o collegarlo a un programma esistente.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Ottenere una portaGet a port](../../extensibility/debugger/getting-a-port.md) Viene illustrato come ottenere una porta come primo passaggio per consentire il debug di un programma.
+ [Ottenere una porta](../../extensibility/debugger/getting-a-port.md) Viene illustrato come ottenere una porta come primo passaggio per consentire il debug di un programma.
 
- [Registrare il programma](../../extensibility/debugger/registering-the-program.md) Viene illustrato il passaggio successivo nell'abilitazione di un programma da sottoporre a debug: la registrazione con la porta. Una volta registrato, il programma può essere sottoposto a debug dal processo di collegamento o jIT (Just-In-Time) di debug.
+ [Registrare il programma](../../extensibility/debugger/registering-the-program.md) Viene illustrato il passaggio successivo per abilitare un programma di cui eseguire il debug: registrazione con la porta. Una volta registrato, il programma può essere sottoposto a debug dal processo di connessione o debug JIT (just-in-Time).
 
- [Collegamento al programma](../../extensibility/debugger/attaching-to-the-program.md) Viene illustrato il passaggio successivo: collegamento del debugger al programma.
+ [Connetti al programma](../../extensibility/debugger/attaching-to-the-program.md) Viene illustrato il passaggio successivo: associazione del debugger al programma.
 
- [Collegamento basato sul lancio](../../extensibility/debugger/launch-based-attachment.md) Descrive l'allegato basato sul lancio di un programma, che viene automatico all'avvio da parte del modello SDM.
+ [Connessione basata su avvio](../../extensibility/debugger/launch-based-attachment.md) Descrive l'allegato basato sul lancio a un programma, che è automatico all'avvio da parte di SDM.
 
- [Inviare gli eventi richiesti](../../extensibility/debugger/sending-the-required-events.md) Vengono dettagliati gli eventi necessari durante la creazione di un motore di debug (DE) e il collegamento a un programma.
+ [Invia gli eventi necessari](../../extensibility/debugger/sending-the-required-events.md) Vengono illustrati gli eventi necessari durante la creazione di un motore di debug (DE) e la relativa associazione a un programma.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Creazione di un motore di debug personalizzatoCreating a custom debug engine](../../extensibility/debugger/creating-a-custom-debug-engine.md) Definisce un motore di debug (DE) e descrive i servizi implementati tramite le interfacce DE e come possono causare la transizione del debugger tra diverse modalità operative.
+ [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md) Definisce un motore di debug (DE) e descrive i servizi implementati tramite le interfacce DE e il modo in cui possono determinare la transizione del debugger tra diverse modalità operative.

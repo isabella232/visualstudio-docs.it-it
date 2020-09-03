@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPortPicker::DisplayPortPicker . Documenti Microsoft
+title: IDebugPortPicker::D isplayPortPicker | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e0a02169b37bba804034990ed5d972f973244769
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724897"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
@@ -42,13 +42,13 @@ public int DisplayPortPicker(
 
 ## <a name="parameters"></a>Parametri
 `hwndParentDialog`\
-[in] Handle per la finestra di dialogo padre.
+in Handle per la finestra di dialogo padre.
 
 `pbstrPortId`\
-[fuori] Stringa dell'identificatore di porta.
+out Stringa dell'identificatore di porta.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Un valore `S_FALSE` restituito di (o `S_OK` un `BSTR` valore `NULL`restituito di con il impostato su ) indica che l'utente ha fatto clic su **Annulla**.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Un valore restituito di `S_FALSE` (o un valore restituito `S_OK` con `BSTR` impostato su `NULL` ) indica che l'utente ha fatto clic su **Annulla**.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

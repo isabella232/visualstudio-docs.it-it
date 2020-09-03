@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugManagedObject::GetManagedObject . Documenti Microsoft
+title: 'IDebugManagedObject:: GetManagedObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727745"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
@@ -41,13 +41,13 @@ int GetManagedObject(
 
 ## <a name="parameters"></a>Parametri
 `ppManagedObject`\
-[fuori] Restituisce un'interfaccia che rappresenta l'oggetto gestito.
+out Restituisce un'interfaccia che rappresenta l'oggetto gestito.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- L'interfaccia restituita da questo metodo può essere eseguita una query per qualsiasi interfaccia implementata dalla classe gestita, consentendo la chiamata dei relativi metodi.
+ L'interfaccia restituita da questo metodo può essere sottoposta a query per qualsiasi interfaccia implementata dalla classe gestita, consentendo la chiamata dei metodi.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

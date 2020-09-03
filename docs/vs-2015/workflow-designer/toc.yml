@@ -56,13 +56,13 @@
               href: parallel-activity-designer.md
             - name: ParallelForEach\<T>
               href: parallelforeach-t-activity-designer.md
-            - name: Pick
+            - name: Seleziona
               href: pick-activity-designer.md
             - name: PickBranch
               href: pickbranch-activity-designer.md
-            - name: Sequence
+            - name: Sequenza
               href: sequence-activity-designer.md
-            - name: Switch\<T>
+            - name: Commutatore\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
@@ -82,7 +82,7 @@
               href: state-machine-activity-designers.md
             - name: StateMachine
               href: statemachine-activity-designer.md
-            - name: Stato
+            - name: State
               href: state-activity-designer.md
             - name: FinalState
               href: finalstate-activity-designer.md
@@ -96,11 +96,11 @@
               href: correlationscope-activity-designer.md
             - name: InitializeCorrelation
               href: initializecorrelation-activity-designer.md
-            - name: Receive
+            - name: Ricevere
               href: receive-activity-designer.md
             - name: ReceiveAndSendReply
               href: receiveandsendreply-template-designer.md
-            - name: Invia
+            - name: Send
               href: send-activity-designer.md
             - name: SendAndReceiveReply
               href: sendandreceivereply-template-designer.md
@@ -114,9 +114,9 @@
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
-        - name: Primitives
+        - name: Primitive
           items:
-            - name: Primitives
+            - name: Primitive
               href: primitives-activity-designers.md
             - name: Assegna
               href: assign-activity-designer.md
@@ -136,7 +136,7 @@
               href: cancellationscope-activity-designer.md
             - name: CompensableActivity
               href: compensableactivity-activity-designer.md
-            - name: Compensate
+            - name: Compensa
               href: compensate-activity-designer.md
             - name: Confirm
               href: confirm-activity-designer.md
@@ -206,7 +206,7 @@
           href: workflow-designer-shell-features.md
         - name: Tasti di scelta rapida
           href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: Messaggi di errore
+        - name: messaggi di errore
           href: error-messages-in-workflow-designer.md
     - name: Sviluppo di applicazioni flusso di lavoro destinate a Framework .NET 3.0 o Framework .NET 3.5
       items:
@@ -286,7 +286,7 @@
               items:
                 - name: Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: Associare a una finestra di dialogo delle proprietà dell’attività (legacy)
+                - name: Eseguire l'associazione a una finestra di dialogo delle proprietà dell'attività (legacy)
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: Finestra di dialogo Cerca e seleziona un tipo .NET (legacy)
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md

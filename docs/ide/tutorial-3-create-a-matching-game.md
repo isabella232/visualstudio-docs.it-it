@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579713"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
@@ -21,13 +21,13 @@ ms.locfileid: "77579713"
 In questa esercitazione si compila un gioco delle coppie, in cui il giocatore deve riuscire ad accoppiare icone nascoste.
 
 > [!NOTE]
-> In questa esercitazione vengono illustrati sia il linguaggio C , sia Visual Basic, concentrandosi sulle informazioni specifiche del linguaggio di programmazione in uso.
+> Questa esercitazione illustra sia C# che Visual Basic, quindi concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.
 
-Questa esercitazione illustra le attività seguenti:This tutorial walks you through the following tasks:
+Questa esercitazione illustra le attività seguenti:
 
 - Archiviare oggetti, ad esempio icone, in un oggetto <xref:System.Collections.Generic.List%601>.
 
-- Usare `foreach` un ciclo in `For Each` C , o un ciclo in Visual Basic per scorrere gli elementi in un elenco.
+- Usare un `foreach` ciclo in C# o un `For Each` ciclo in Visual Basic per scorrere gli elementi di un elenco.
 
 - Tenere traccia dello stato di un form utilizzando variabili di riferimento.
 
@@ -35,7 +35,7 @@ Questa esercitazione illustra le attività seguenti:This tutorial walks you thro
 
 - Creare un timer con conto alla rovescia e quindi generare un evento subito dopo l'avvio.
 
-Al termine, l'app dovrebbe essere simile all'immagine seguente:
+Al termine, l'app dovrebbe avere un aspetto simile all'immagine seguente:
 
 ![Gioco che si creerà in questa esercitazione](../ide/media/express_finishedgame.png)
 
@@ -44,23 +44,23 @@ Al termine, l'app dovrebbe essere simile all'immagine seguente:
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Passaggio 1: Creare un progetto e aggiungere una tabella al modulo](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Per iniziare, creare il progetto e aggiungere un controllo `TableLayoutPanel` per mantenere allineati i controlli.|
-|[Passaggio 2: Aggiungere un oggetto casuale e un elenco di iconeStep 2: Add a random object and a list of icons](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Aggiungere un oggetto `Random` e un oggetto `List` per creare un elenco di icone.|
+|[Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Aggiungere un oggetto `Random` e un oggetto `List` per creare un elenco di icone.|
 |[Passaggio 3: Assegnare un'icona casuale a ogni etichetta](../ide/step-3-assign-a-random-icon-to-each-label.md)|Assegnare le icone in modo casuale ai controlli `Label`, in modo che ogni gioco sia diverso.|
-|[Passaggio 4: Aggiungere un gestore dell'evento click a ogni etichettaStep 4: Add a click event handler to each label](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Aggiungere un gestore dell'evento `Click` che modifica il colore dell'etichetta sulla quale viene fatto clic.|
-|[Passaggio 5: Aggiungere riferimenti alle etichetteStep 5: Add label references](../ide/step-5-add-label-references.md)|Aggiungere variabili di riferimento per tenere traccia delle etichette sulle quali viene fatto clic.|
-|[Passaggio 6: Aggiungere un timerStep 6: Add a timer](../ide/step-6-add-a-timer.md)|Aggiungere un timer al form per tenere traccia del tempo trascorso durante il gioco.|
-|[Passo 7: Mantenere visibili le coppie](../ide/step-7-keep-pairs-visible.md)|Mantenere le coppie di icone visibili se viene selezionata una coppia corrispondente.|
-|[Passo 8: Aggiungi un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.|
+|[Passaggio 4: Aggiungere un gestore dell'evento Click a ogni etichetta](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Aggiungere un gestore dell'evento `Click` che modifica il colore dell'etichetta sulla quale viene fatto clic.|
+|[Passaggio 5: Aggiungere riferimenti alle etichette](../ide/step-5-add-label-references.md)|Aggiungere variabili di riferimento per tenere traccia delle etichette sulle quali viene fatto clic.|
+|[Passaggio 6: Aggiungere un timer](../ide/step-6-add-a-timer.md)|Aggiungere un timer al form per tenere traccia del tempo trascorso durante il gioco.|
+|[Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md)|Mantenere le coppie di icone visibili se viene selezionata una coppia corrispondente.|
+|[Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.|
 |[Passaggio 9: Provare altre funzionalità](../ide/step-9-try-other-features.md)|Provare altre funzionalità, ad esempio modificare le icone e i colori oppure aggiungere una griglia e i suoni. Provare a ingrandire la lavagna e a regolare il timer.|
 
-Ci sono anche grandi risorse di apprendimento video gratuite a vostra disposizione. Per ulteriori informazioni sulla programmazione in C, vedere Nozioni di base su [C: Sviluppo per principianti assoluti.](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
+Sono disponibili anche eccezionali risorse di formazione video gratuite. Per altre informazioni sulla programmazione in C#, vedere [nozioni fondamentali su c#: sviluppo per principianti assoluti](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per iniziare l'esercitazione, iniziare con **[Passaggio 1: Creare un progetto e aggiungere una tabella al modulo.](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**
+Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto e aggiungere una tabella al form](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**.
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Altre esercitazioni su C](/visualstudio/get-started/csharp/)
-* [Esercitazioni su Visual Basic](/visualstudio/get-started/visual-basic/)
-* [Esercitazioni in C](/cpp/get-started/tutorial-console-cpp)
+* [Altre esercitazioni su C#](/visualstudio/get-started/csharp/)
+* [Esercitazioni Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Esercitazioni su C++](/cpp/get-started/tutorial-console-cpp)

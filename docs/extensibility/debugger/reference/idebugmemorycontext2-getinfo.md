@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo . Documenti Microsoft
+title: 'IDebugMemoryContext2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c190710afc9231662fa12c5552d6f73e0268b643
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727472"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
-Recupera una [struttura CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) che descrive il contesto.
+Recupera una struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) che descrive il contesto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ int GetInfo(
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag dell'enumerazione [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) che indicano i campi della struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) da compilare.
+in Combinazione di flag dell'enumerazione [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) che indicano i campi della struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) da compilare.
 
 `pInfo`\
-[in, out] Struttura `CONTEXT_INFO` compilata.
+[in, out] `CONTEXT_INFO` Struttura compilata.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

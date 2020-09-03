@@ -512,9 +512,9 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Gestione delle associazioni di file side-by-side
               href: managing-side-by-side-file-associations.md
-- name: Archivio
+- name: Archiviazione
   items:
-    - name: Archivio
+    - name: Archiviazione
       href: archive.md
     - name: Interfacce legacy nell'editor
       items:
@@ -840,13 +840,13 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: Enumeratori
+        - name: Enumerators
           items:
-            - name: Enumeratori
+            - name: Enumerators
               href: enumerators.md
             - name: Codice dei comandi
               href: command-code-enumerator.md
-            - name: Messaggio
+            - name: Message
               href: message-enumerator.md
             - name: Codice di stato dei file
               href: file-status-code-enumerator.md
@@ -856,7 +856,7 @@
           href: capability-flags.md
         - name: Flag di bit usati da comandi specifici
           href: bitflags-used-by-specific-commands.md
-        - name: Codici di errore
+        - name: Codici errore
           href: error-codes.md
         - name: Stringhe usate come chiavi per la ricerca di un plug-in del controllo del codice sorgente
           href: strings-used-as-keys-for-finding-a-source-control-plug-in.md
@@ -898,7 +898,7 @@
   items:
     - name: Creazione di un Software Development Kit
       href: creating-a-software-development-kit.md
-    - name: 'Creazione di un SDK con C# o Visual Basic'
+    - name: Creazione di un SDK con C# o Visual Basic
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: Creazione di un SDK con C++
       href: walkthrough-creating-an-sdk-using-cpp.md

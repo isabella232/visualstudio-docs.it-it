@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418847"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Finestra di dialogo Impostazioni di compilazione avanzate (C#)
@@ -68,7 +68,7 @@ Specifica il tipo di informazioni di debug generate dal compilatore. Per informa
 
    Specifica che non saranno generate informazioni di debug.
 
-- **completo**
+- **full**
 
    Consente di associare un debugger al programma in esecuzione.
 
@@ -80,7 +80,7 @@ Specifica il tipo di informazioni di debug generate dal compilatore. Per informa
 
    Crea un file con estensione pdb, vale a dire un file di simboli di tipo PE non specifico per la piattaforma che offre altri strumenti, soprattutto debugger, informazioni su cosa contiene il file eseguibile principale e come è stato generato. Vedere [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (PDB portatile) per altre informazioni.
 
-- **incorporata**
+- **Embedded**
 
    Incorpora informazioni sui simboli di tipo PE nell'assembly. Non vengono generati file con estensione pdb esterni.
 
@@ -94,7 +94,7 @@ Specifica le dimensioni delle sezioni nel file di output. I valori validi sono *
 
 Specifica l'indirizzo di base preferenziale in cui caricare una DLL. L'indirizzo di base predefinito per una DLL viene impostato dal Common Language Runtime di .NET Framework. Per altre informazioni, vedere [/BaseAddress (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index)
 - [Pagina Compila, Progettazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md)

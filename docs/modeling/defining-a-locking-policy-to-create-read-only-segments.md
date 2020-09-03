@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536084"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
@@ -75,12 +75,12 @@ partition.SetLocks(Locks.Delete);
 
   Non è possibile impostare un blocco su una partizione o un archivio e contemporaneamente disabilitare il blocco su un singolo elemento.
 
-|valore|Indica se `IsLocked(Value)` è true|
+|Valore|Indica se `IsLocked(Value)` è true|
 |-|-|
-|nessuno|Nessuna restrizione.|
+|Nessuno|Nessuna restrizione.|
 |Proprietà|Impossibile modificare le proprietà di dominio degli elementi. Questa operazione non si applica alle proprietà generate dal ruolo di una classe di dominio in una relazione.|
-|Aggiunta|Non è possibile creare nuovi elementi e collegamenti in una partizione o in un archivio.<br /><br /> Non applicabile a `ModelElement` .|
-|Sposta|Non è possibile spostare l'elemento tra partizioni se `element.IsLocked(Move)` è true o se `targetPartition.IsLocked(Move)` è true.|
+|Add|Non è possibile creare nuovi elementi e collegamenti in una partizione o in un archivio.<br /><br /> Non applicabile a `ModelElement` .|
+|Spostamento|Non è possibile spostare l'elemento tra partizioni se `element.IsLocked(Move)` è true o se `targetPartition.IsLocked(Move)` è true.|
 |Delete|Non è possibile eliminare un elemento se questo blocco è impostato sull'elemento stesso o su uno degli elementi a cui l'eliminazione propagherà, ad esempio elementi e forme incorporati.<br /><br /> È possibile utilizzare `element.CanDelete()` per individuare se un elemento può essere eliminato.|
 |Riordinare|Non è possibile modificare l'ordine dei collegamenti in un RolePlayer.|
 |RolePlayer|Il set di collegamenti originati in questo elemento non può essere modificato. Ad esempio, non è possibile incorporare nuovi elementi in questo elemento. Questa operazione non influisce sui collegamenti per i quali questo elemento è la destinazione.<br /><br /> Se questo elemento è un collegamento, l'origine e la destinazione non sono interessate.|
@@ -100,7 +100,7 @@ partition.SetLocks(Locks.Delete);
 - Aggiungere questa classe ai servizi disponibili tramite DocData del linguaggio DSL.
 
 ### <a name="to-define-a-locking-policy"></a>Per definire un criterio di blocco
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>ha la definizione seguente:
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> ha la definizione seguente:
 
 ```csharp
 public interface ILockingPolicy
@@ -142,7 +142,7 @@ namespace Company.YourDsl.DslPackage // Change
     }
 ```
 
- Per assicurarsi che gli utenti possano sempre eliminare gli elementi, anche se altre chiamate al codice`SetLocks(Lock.Delete):`
+ Per assicurarsi che gli utenti possano sempre eliminare gli elementi, anche se altre chiamate al codice `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f232446ed699bd7cc034e4b6d6148b665830cf2d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535525"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurare Windows Firewall per il debug remoto
@@ -99,11 +99,11 @@ Questo argomento illustra come configurare il firewall per abilitare il debug re
   
 3. Nella pagina **tipo di regola** selezionare **porta** e quindi fare clic su **Avanti**.  
   
-4. Nella pagina **Protocollo e porte** selezionare il protocollo di porta (TCP o UDP). Selezionare **Porte locali specifiche** e immettere uno o più numeri di porta da abilitare per il protocollo. Separare i numeri con virgole. Quindi fare clic su **Next**.  
+4. Nella pagina **Protocollo e porte** selezionare il protocollo di porta (TCP o UDP). Selezionare **Porte locali specifiche** e immettere uno o più numeri di porta da abilitare per il protocollo. Separare i numeri con virgole. Fare quindi clic su **Avanti**.  
   
 5. Nella pagina **Azione** selezionare **Consenti la connessione** e quindi fare clic su **Avanti**.  
   
-6. Nella pagina **Profilo** selezionare uno o più tipi di rete da abilitare per la porta. Il tipo selezionato deve includere la rete a cui è connesso il computer remoto. Quindi fare clic su **Next**.  
+6. Nella pagina **Profilo** selezionare uno o più tipi di rete da abilitare per la porta. Il tipo selezionato deve includere la rete a cui è connesso il computer remoto. Fare quindi clic su **Avanti**.  
   
 7. Nella pagina **Nome** digitare un nome per la regola e quindi fare clic su **Fine**.  
   

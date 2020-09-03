@@ -1,5 +1,5 @@
 ---
-title: Valutazione delle espressioni Documenti Microsoft
+title: Valutazione di espressioni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738824"
 ---
-# <a name="evaluate-expressions"></a>Valutare le espressioni
-Le espressioni vengono create da stringhe passate dalle finestre **Autos**, **Watch**, **QuickWatch**o **Immediate** . Quando un'espressione viene valutata, genera una stringa stampabile che contiene il nome e il tipo della variabile o dell'argomento e il relativo valore. Questa stringa viene visualizzata nella finestra dell'IDE corrispondente.
+# <a name="evaluate-expressions"></a>Espressioni di valutazione
+Le espressioni vengono create dalle stringhe passate dalle finestre **auto**, **espressioni di controllo, controllo** **immediato**o **immediate** . Quando viene valutata un'espressione, viene generata una stringa stampabile che contiene il nome e il tipo di variabile o argomento e il relativo valore. Questa stringa viene visualizzata nella finestra IDE corrispondente.
 
 ## <a name="implementation"></a>Implementazione
- Le espressioni vengono valutate quando un programma si è arrestato in corrispondenza di un punto di interruzione. L'espressione stessa è rappresentata da un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaccia, che rappresenta un'espressione analizzata che è pronto per l'associazione e la valutazione all'interno del contesto di valutazione dell'espressione specificato. Lo stack frame determina il contesto di valutazione dell'espressione, che il motore di debug (DE) fornisce implementando il [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaccia.
+ Le espressioni vengono valutate quando un programma si arresta in corrispondenza di un punto di interruzione. L'espressione stessa è rappresentata da un'interfaccia [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , che rappresenta un'espressione analizzata pronta per l'associazione e la valutazione all'interno del contesto di valutazione dell'espressione specificato. Il stack frame determina il contesto di valutazione dell'espressione, che il motore di debug (DE) fornisce implementando l'interfaccia [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .
 
- Dato una stringa utente e un [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaccia, un motore di debug (DE) può ottenere un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaccia passando la stringa utente per il [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) metodo. Il IDebugExpression2 interfaccia restituita contiene l'espressione analizzata pronta per la valutazione.
+ Data una stringa utente e un'interfaccia [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) , un motore di debug (de) può ottenere un'interfaccia [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) passando la stringa utente al metodo [IDebugExpressionContext2::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) . L'interfaccia IDebugExpression2 restituita contiene l'espressione analizzata pronta per la valutazione.
 
- Con `IDebugExpression2` l'interfaccia, il DE può ottenere il valore dell'espressione tramite la valutazione sincrona o asincrona dell'espressione, utilizzando [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Questo valore, insieme al nome e al tipo della variabile o dell'argomento, viene inviato all'IDE per la visualizzazione. Il valore, il nome e il tipo sono rappresentati da un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfaccia.
+ Con l' `IDebugExpression2` interfaccia, il de può ottenere il valore dell'espressione tramite la valutazione di espressioni sincrone o asincrone, usando [IDebugExpression2:: EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Questo valore, insieme al nome e al tipo della variabile o dell'argomento, viene inviato all'IDE per la visualizzazione. Il valore, il nome e il tipo sono rappresentati da un'interfaccia [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) .
 
- Per abilitare la valutazione delle espressioni, un DE deve implementare il [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) e [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfacce. Sia la valutazione sincrona che la valutazione asincrona richiedono l'implementazione del [metodo IDebugProperty2::GetPropertyInfo.](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
+ Per abilitare la valutazione dell'espressione, un DE deve implementare le interfacce [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) e [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Per la valutazione sincrona e asincrona è richiesta l'implementazione del metodo [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [Stack frame](../../extensibility/debugger/stack-frames.md)

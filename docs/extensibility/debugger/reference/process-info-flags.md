@@ -1,5 +1,5 @@
 ---
-title: proprietà PROCESS_INFO_FLAGS . Documenti Microsoft
+title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713957"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
@@ -52,25 +52,25 @@ enum enum_PROCESS_INFO_FLAGS { 
 Indica che il processo è un processo di sistema.
 
 `PIFLAG_DEBUGGER_ATTACHED`\
-Indica che il processo viene sottoposto a debug da un debugger. Può essere [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] un debugger o può essere un altro debugger, ad esempio WinDbg.
+Indica che il processo viene sottoposto a debug da un debugger. Potrebbe trattarsi di un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger o di un altro debugger, ad esempio WinDbg.
 
 `PIFLAG_PROCESS_STOPPED`\
-Indica che il processo è stato arrestato. Valido solo `PIFLAG_DEBUGGER_ATTACHED` se specificato. Disponibile in Visual Studio 2005 e versioni successive.
+Indica che il processo è stato interrotto. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene specificato anche. Disponibile in Visual Studio 2005 e versioni successive.
 
 `PIFLAG_PROCESS_RUNNING`\
-Indica che il processo è in esecuzione. Valido solo `PIFLAG_DEBUGGER_ATTACHED` se specificato. Disponibile in Visual Studio 2005 e versioni successive.
+Indica che il processo è in esecuzione. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene specificato anche. Disponibile in Visual Studio 2005 e versioni successive.
 
 ## <a name="remarks"></a>Osservazioni
 
-Utilizzato per `Flags` il membro della [struttura PROCESS_INFO.](../../../extensibility/debugger/reference/process-info.md)
+Utilizzato per il `Flags` membro della struttura [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .
 
-Questi flag possono essere combinati `OR`con un oggetto .
+Questi flag possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
 
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

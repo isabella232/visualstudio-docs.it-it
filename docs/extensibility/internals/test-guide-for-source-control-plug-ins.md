@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905151"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guida per il test dei plug-in del controllo del codice sorgente
@@ -51,7 +51,7 @@ In questa sezione vengono fornite indicazioni per testare il plug-in del control
 
 ## <a name="test-areas-covered-in-this-section"></a>Aree di test descritte in questa sezione
 
-- [Area di test 1: aggiunta/apertura dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Area di test 1: aggiungere o aprire elementi dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
   - Caso 1a: aggiungere una soluzione al controllo del codice sorgente
 
@@ -59,9 +59,9 @@ In questa sezione vengono fornite indicazioni per testare il plug-in del control
 
   - Caso 1C: aggiungere una soluzione dal controllo del codice sorgente
 
-- [Area di test 2: Recuperare elementi dal controllo del codice sorgente](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Area di test 2: Caricare dal controllo del codice sorgente](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Area di test 3: Estrai/Annulla estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Area di test 3: estrarre o annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
   - Caso 3: Estrai/Annulla estrazione
 
@@ -93,7 +93,7 @@ In questa sezione vengono fornite indicazioni per testare il plug-in del control
 
 - [Area di test 6: Eliminare](../../extensibility/internals/test-area-6-delete.md)
 
-- [Area di test 7: Condividere](../../extensibility/internals/test-area-7-share.md)
+- [Area di test 7: Condividi](../../extensibility/internals/test-area-7-share.md)
 
 - [Area di test 8: Cambio di plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 

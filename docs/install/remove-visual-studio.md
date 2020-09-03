@@ -23,10 +23,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418925"
 ---
 # <a name="remove-visual-studio"></a>Rimuovere Visual Studio
@@ -40,7 +40,7 @@ Se si verifica un errore irreversibile e non è possibile ripristinare o disinst
 
 Con lo strumento è possibile usare una delle opzioni della riga di comando seguenti `InstallCleanup.exe` :
 
-| Opzione | Comportamento |
+| Commutatore | Comportamento |
 | ------ | -------- |
 | `-i`   | Questa opzione è l'impostazione predefinita se non viene passata nessun'altra opzione. Rimuove solo la directory di installazione principale e le informazioni sul prodotto. Usare questa opzione se si prevede di reinstallare la stessa versione di Visual Studio dopo aver eseguito lo `InstallCleanup.exe` strumento. |
 | `-f`   | Questa opzione rimuove la directory di installazione principale, le informazioni sul prodotto e la maggior parte delle altre funzionalità installate all'esterno della directory di installazione, che potrebbero anche essere condivise con altre installazioni di Visual Studio o altri prodotti. Usare questa opzione se si intende rimuovere Visual Studio senza reinstallarlo in un secondo momento. |
@@ -62,9 +62,9 @@ Ecco come eseguire lo `InstallCleanup.exe` strumento:
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Installa Visual Studio](install-visual-studio.md)
 * [Aggiornare Visual Studio](update-visual-studio.md)
 * [Modificare Visual Studio](modify-visual-studio.md)
 * [Disinstallare Visual Studio](uninstall-visual-studio.md)

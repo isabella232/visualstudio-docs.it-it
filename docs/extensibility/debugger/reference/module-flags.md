@@ -1,5 +1,5 @@
 ---
-title: proprietà MODULE_FLAGS . Documenti Microsoft
+title: MODULE_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714261"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
-Utilizzato per descrivere un modulo.
+Usato per descrivere un modulo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,26 +58,26 @@ public enum enum_MODULE_FLAGS { 
  Specifica un modulo di sistema.
 
  `MODULE_FLAG_SYMBOLS`\
- Specifica un modulo di simbolo.
+ Specifica un modulo di simboli.
 
  `MODULE_FLAG_64BIT`\
  Specifica un modulo a 64 bit.
 
  `MODULE_FLAG_OPTIMIZED`\
- Specifica che il modulo è stato ottimizzato. Questo stato si riflette nella finestra **Moduli.**
+ Specifica che il modulo è stato ottimizzato. Questo stato viene riflesso nella finestra **moduli** .
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Specifica che il modulo non è stato ottimizzato. Questo stato si riflette nella finestra **Moduli.** Questo è lo stato predefinito.
+ Specifica che il modulo non è stato ottimizzato. Questo stato viene riflesso nella finestra **moduli** . Questo è lo stato predefinito.
 
 ## <a name="remarks"></a>Osservazioni
- Utilizzato per `m_dwModuleFlags` il membro della [struttura MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
+ Utilizzato per il `m_dwModuleFlags` membro della struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
- Questi flag possono essere combinati `OR`con un oggetto .
+ Questi flag possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

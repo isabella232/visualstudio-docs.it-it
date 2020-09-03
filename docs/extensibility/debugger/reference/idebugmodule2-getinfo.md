@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugModule2::GetInfo . Documenti Microsoft
+title: 'IDebugModule2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726958"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
@@ -44,7 +44,7 @@ int GetInfo( 
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag dell'enumerazione [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) `pInfo` che specificano i campi di da compilare.
+in Combinazione di flag dell'enumerazione [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) che specificano i campi da `pInfo` compilare.
 
 `pInfo`\
 [in, out] Struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) compilata con una descrizione del modulo.
@@ -53,7 +53,7 @@ int GetInfo( 
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- La struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) contiene il nome del modulo visualizzato nella finestra **Moduli.**
+ La struttura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) contiene il nome del modulo che viene visualizzato nella finestra **moduli** .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

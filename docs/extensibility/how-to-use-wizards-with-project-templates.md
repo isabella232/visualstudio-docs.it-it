@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905512"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: utilizzare procedure guidate con modelli di progetto
@@ -68,7 +68,7 @@ Questa procedura illustra come creare una procedura guidata personalizzata che a
 
 3. Aggiungere l'assembly come asset al progetto VSIX. Aprire il file *source. Extension. vsixmanifest* e selezionare la scheda **Asset** . Nella finestra **Aggiungi nuovo asset** , per **tipo** selezionare **Microsoft. VisualStudio. assembly**, per **origine** selezionare **un progetto nella soluzione corrente**e per **progetto** selezionare **MyProjectWizard**.
 
-4. Aggiungere i riferimenti seguenti al progetto VSIX. (In **Esplora soluzioni**, nel nodo progetto VSIX selezionare **riferimenti**, fare clic con il pulsante destro del mouse e scegliere **Aggiungi riferimento**. Nella scheda **Framework** della finestra di dialogo **Aggiungi riferimento** individuare l'assembly **System. Windows Forms** e selezionarlo. Trovare e selezionare anche gli assembly **System** e **System. Drawing** . A questo punto, selezionare la scheda **estensioni** . individuare l'assembly **EnvDTE** e selezionarlo. Trovare anche l'assembly **Microsoft. VisualStudio. TemplateWizardInterface** e selezionarlo. Fare clic su **OK**.
+4. Aggiungere i riferimenti seguenti al progetto VSIX. (In **Esplora soluzioni**, nel nodo progetto VSIX selezionare **riferimenti**, fare clic con il pulsante destro del mouse e scegliere **Aggiungi riferimento**. Nella scheda **Framework** della finestra di dialogo **Aggiungi riferimento** individuare l'assembly **System. Windows Forms** e selezionarlo. Trovare e selezionare anche gli assembly **System** e **System. Drawing** . A questo punto, selezionare la scheda **estensioni** . Individuare l'assembly **EnvDTE** e selezionarlo. Trovare anche l'assembly **Microsoft. VisualStudio. TemplateWizardInterface** e selezionarlo. Fare clic su **OK**.
 
 5. Aggiungere una classe per l'implementazione della procedura guidata al progetto VSIX. (In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo del progetto VSIX e scegliere **Aggiungi**, quindi **nuovo elemento**, quindi **classe**). Denominare la classe **WizardImplementation**.
 
@@ -242,7 +242,7 @@ Per fare in modo che il modello di progetto personalizzato usi la procedura guid
 
      Anche in questo caso, non dimenticare le virgolette. Nell'output dovrebbe essere visualizzata una riga simile alla seguente.
 
-     **Il token di chiave pubblica è\<token>**
+     **Il token di chiave pubblica è \<token>**
 
      Prendere nota di questo valore.
 

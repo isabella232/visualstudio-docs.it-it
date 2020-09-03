@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567216"
 ---
 # <a name="customize-startup"></a>Personalizzare l'avvio
@@ -32,7 +32,7 @@ ms.locfileid: "75567216"
 
 ## <a name="to-change-the-startup-item"></a>Per modificare l'elemento di avvio
 
-1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > .
+1. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni**.
 
 2. Espandere **Ambiente**, quindi scegliere **Avvio**.
 

@@ -22,13 +22,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666854"
 ---
-# <a name="miscellaneous-files"></a>File esterni
+# <a name="miscellaneous-files"></a>file esterni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 È consigliabile usare gli editor [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per lavorare in modo indipendente sui file di un progetto o di una soluzione. Mentre si ha una soluzione aperta, è possibile aprire e modificare i file senza aggiungerli a una soluzione o a un progetto. I file che si intende usare in modo indipendente dai contenitori sono chiamati file esterni. I file esterni sono esterni a soluzioni e progetti, non sono inclusi nelle compilazioni e non possono essere inclusi in una soluzione sotto il controllo del codice sorgente.

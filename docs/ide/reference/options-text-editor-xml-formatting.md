@@ -9,17 +9,17 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568139"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opzioni, Editor di testo, XML, Formattazione
 
-Usare la pagina delle opzioni **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XML. Per accedere alle opzioni di formattazione XML, scegliere **Strumenti** > **Opzioni** > Editor > **testo****XML**, quindi **Formattazione**.
+Usare la pagina delle opzioni **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XML. Per accedere alle opzioni di formattazione XML, scegliere **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **XML**, quindi scegliere **formattazione**.
 
-## <a name="attributes"></a>Attributes
+## <a name="attributes"></a>Attributi
 
 **Mantieni la formattazione manuale degli attributi**
 
@@ -41,7 +41,7 @@ Il secondo attributo e i successivi vengono allineati verticalmente in modo da c
 
 ## <a name="auto-reformat"></a>Riformatta automaticamente
 
-**In cui incollare dagli Appunti**
+**Quando si incolla dagli Appunti**
 
 Consente di riformattare il testo XML incollato dagli Appunti.
 

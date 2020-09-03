@@ -12,10 +12,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904974"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: creare un SDK usando C# o Visual Basic
@@ -29,7 +29,7 @@ In questa procedura dettagliata verrà illustrato come creare un semplice SDK de
 ## <a name="prerequisites"></a>Prerequisiti
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>Per creare il componente Windows Runtime SimpleMath
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> Per creare il componente Windows Runtime SimpleMath
 
 1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**.
 
@@ -57,7 +57,7 @@ In questa procedura dettagliata verrà illustrato come creare un semplice SDK de
 
 9. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto **SimpleMath** , quindi scegliere **Compila**.
 
-## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a>Per creare il progetto di estensione SimpleMathVSIX
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> Per creare il progetto di estensione SimpleMathVSIX
 
 1. Nel menu di scelta rapida per il nodo della **soluzione ' SimpleMath '** scegliere **Aggiungi**  >  **nuovo progetto**.
 
@@ -154,7 +154,7 @@ In questa procedura dettagliata verrà illustrato come creare un semplice SDK de
 
 30. Scegliere il pulsante **Installa** , attendere il completamento dell'installazione, quindi riavviare Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Per creare un'app di esempio che usa la libreria di classi
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Per creare un'app di esempio che usa la libreria di classi
 
 1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**.
 

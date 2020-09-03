@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugMessageEvent2::GetMessage . Documenti Microsoft
+title: 'IDebugMessageEvent2:: GetMessage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 819b796a656f0ef8775fbb1c9e800e3019b81729
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727406"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
@@ -50,24 +50,24 @@ int GetMessage( 
 
 ## <a name="parameters"></a>Parametri
 `pMessageType`\
-[fuori] Restituisce un valore dall'enumerazione [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) che descrive il tipo del messaggio.
+out Restituisce un valore dall'enumerazione [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) che descrive il tipo del messaggio.
 
 `pbstrMessage`\
-[fuori] Restituisce il messaggio.
+out Restituisce il messaggio.
 
 `pdwType`\
-[fuori] Restituisce il tipo del messaggio, utilizzando le `MessageBox` convenzioni della funzione Win32. Vedere la funzione [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) per i dettagli.
+out Restituisce il tipo del messaggio, utilizzando le convenzioni della funzione Win32 `MessageBox` . Per informazioni dettagliate, vedere la funzione [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) .
 
 `pbstrHelpFileName`\
-[in, out] Restituisce il nome del file della Guida. Può essere un valore null (C) o vuoto (C) se non è presente alcun file della Guida.
+[in, out] Restituisce il nome del file della guida. Può essere un valore null (C++) o vuoto (C#) se non è presente alcun file della guida.
 
 `pdwHelpId`\
-[in, out] Restituisce l'identificatore della Guida. Può essere 0 se non vi è alcuna Guida associata a questo messaggio.
+[in, out] Restituisce l'identificatore della guida. Può essere 0 se non è presente alcuna guida associata a questo messaggio.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
-- [Messagetype](../../../extensibility/debugger/reference/messagetype.md)
+- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

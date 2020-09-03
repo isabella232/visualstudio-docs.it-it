@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801581"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
@@ -65,7 +65,7 @@ Ogni modello di Cookiecutter definisce un set proprio di opzioni e specifica un 
 
 Se il modello specifica attività specifiche di Visual Studio da eseguire dopo la generazione del codice, viene visualizzata un'ulteriore opzione **Run additional tasks on completion** (Esegui attività aggiuntive al completamento) che consente di rifiutare esplicitamente tali attività. Le attività vengono usate più comunemente per aprire un Web browser, aprire file nell'editor, installare dipendenze e così via.
 
-### <a name="create"></a>Creazione
+### <a name="create"></a>Create
 
 Dopo aver impostato le opzioni, selezionare **Create** (Crea) per generare il codice. Se la cartella di output non è vuota viene visualizzato un messaggio di avviso. Se si ha familiarità con l'output del modello e non è un problema sovrascrivere file, è possibile ignorare l'avviso. In caso contrario, selezionare **Cancel** (Annulla), specificare una cartella vuota e quindi copiare manualmente i file creati nella cartella di output non vuota.
 
@@ -82,7 +82,7 @@ Le opzioni tagliatore sono disponibili tramite **strumenti**  >  **Opzioni**  > 
 | Opzione | Descrizione |
 | --- | --- |
 | **URL feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
-| **Show Help (Mostra Guida)** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
+| **Mostra la guida** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Ottimizzare i modelli di Cookiecutter per Visual Studio
 

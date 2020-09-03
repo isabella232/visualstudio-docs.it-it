@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugModOpt . Documenti Microsoft
+title: IDebugModOpt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e142ed1229f59cfc22ff33cba48e9e35eb4e4406
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726991"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
@@ -27,18 +27,18 @@ IDebugModOpt : IUnknown
 ```
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Ottenuto da un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che rappresenta una classe o un metodo.
+ Ottenuta da un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta una classe o un metodo.
 
 ## <a name="methods"></a>Metodi
- Questa interfaccia implementa il metodo seguente:This interface implements the following method:
+ Questa interfaccia implementa il metodo seguente:
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Recupera un elenco di modificatori facoltativi.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Sh.h
+ Intestazione: sh. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

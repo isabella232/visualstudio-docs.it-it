@@ -6,10 +6,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e14e23f9820301374bd435484ba784edf50294bb
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331950"
 ---
 # <a name="overview-of-xaml"></a>Panoramica di XAML
@@ -44,7 +44,7 @@ Per informazioni aggiornate, fare riferimento alle risorse seguenti:
 - Post **[di Blog sulle novità di strumenti di sviluppo XAML in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)**
 - **[Nuove funzionalità XAML nel video di Visual Studio](https://youtu.be/yI9OyA4ZM2E)** su YouTube
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [XAML in all WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML in all UWP](/windows/uwp/xaml-platform/xaml-overview)

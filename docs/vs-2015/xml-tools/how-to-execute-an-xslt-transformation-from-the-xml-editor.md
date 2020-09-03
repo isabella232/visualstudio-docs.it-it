@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b305d88779603b374e5f95842d7a5271a657268
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666541"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: eseguire una trasformazione XSLT dall'editor XML
@@ -23,7 +23,7 @@ L'editor XML consente di associare un foglio di stile XSLT a un documento XML, e
 
  La proprietà **output** specifica il nome file per l'output. Se la proprietà **output** è vuota, nella directory temporanea viene generato un nome file. L'estensione del file è basata sull'elemento `xsl:output` del foglio di stile e può essere .xml, .txt o .htm.
 
- Se la proprietà **output** specifica un nome di file con estensione. htm o. html, l'output XSLT viene visualizzato in anteprima usando [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto da [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio. Ad esempio, se l'estensione del file è .xml, Visual Studio utilizzerà l'editor XML.
+ Se la proprietà **output** specifica un nome di file con estensione htm o HTML, l'output XSLT viene visualizzato in anteprima tramite [!INCLUDE[msCoName](../includes/msconame-md.md)] Internet Explorer. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto da [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio. Ad esempio, se l'estensione del file è .xml, Visual Studio utilizzerà l'editor XML.
 
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Per eseguire una trasformazione XSLT da un documento XML
 
@@ -33,7 +33,7 @@ L'editor XML consente di associare un foglio di stile XSLT a un documento XML, e
 
     - Aggiungere un'istruzione di elaborazione `xml-stylesheet` al documento XML. Ad esempio, aggiungere la seguente riga `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` al prologo del documento.
 
-         oppure
+         -oppure-
 
     - Aggiungere il foglio di stile XSLT utilizzando la finestra **Proprietà** . Nella **finestra Proprietà**del documento fare clic sul pulsante **Sfoglia** per il campo **foglio** di stile, selezionare il foglio di stile XSLT, quindi fare clic su **Apri**.
 

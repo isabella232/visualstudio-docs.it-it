@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419055"
 ---
 # <a name="build-events-page-project-designer-c"></a>Pagina Eventi di compilazione, Progettazione progetti (C#)
@@ -29,11 +29,11 @@ Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specifi
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
-**Configuration**
+**Configurazione**
 
 Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
-**Platform**
+**Piattaforma**
 
 Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
@@ -96,7 +96,7 @@ Per un evento di post-compilazione, utilizzare il nome `PostBuild` e impostare l
 > [!NOTE]
 > Queste modifiche al file di progetto sono state apportate per supportare i progetti in stile SDK. Se si esegue la migrazione manuale di un file di progetto dal formato precedente al formato di tipo SDK, è necessario eliminare `PreBuildEvent` le `PostBuildEvent` proprietà e e sostituirle con le `PreBuild` `PostBuild` destinazioni e come illustrato nel codice precedente. Per informazioni su come stabilire se il progetto è un progetto di tipo SDK, vedere [controllare il formato del progetto](/nuget/resources/check-project-format).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Procedura: specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)
