@@ -40,7 +40,7 @@
   items:
     - name: Apri cartella
       href: open-folder.md
-    - name: Workspaces
+    - name: Aree di lavoro
       href: workspaces.md
     - name: Contesti di file
       href: workspace-file-contexts.md
@@ -48,7 +48,7 @@
       href: workspace-indexing.md
     - name: Servizi di linguaggio
       href: workspace-language-services.md
-    - name: Compilazione
+    - name: Compilare
       href: workspace-build.md
 - name: Estendere menu e comandi
   items:
@@ -768,9 +768,9 @@
               href: popdirlistfunc.md
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
-        - name: Enumeratori
+        - name: Enumerators
           items:
-            - name: Enumeratori
+            - name: Enumerators
               href: enumerators.md
             - name: Enumeratore di codice di comando
               href: command-code-enumerator.md
@@ -784,7 +784,7 @@
           href: capability-flags.md
         - name: Flag di bit usati da comandi specifici
           href: bitflags-used-by-specific-commands.md
-        - name: Codici di errore
+        - name: Codici errore
           href: error-codes.md
         - name: Stringhe usate come chiavi per la ricerca di un plug-in del controllo del codice sorgente
           href: strings-used-as-keys-for-finding-a-source-control-plug-in.md

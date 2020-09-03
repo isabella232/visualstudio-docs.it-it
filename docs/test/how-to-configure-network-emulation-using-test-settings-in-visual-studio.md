@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 55daa1e16af45c153efced3736c46c3c27d748ac
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288182"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Procedura: Configurare l'emulazione di rete usando le impostazioni test in Visual Studio
@@ -90,7 +90,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
     > [!TIP]
     > È anche possibile installare il driver di emulazione di rete dalla riga di comando nel computer locale senza installare l'agente di test di Visual Studio tramite il comando seguente: **VSTestConfig NETWORKEMULATION /install**
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Eseguire test manuali (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

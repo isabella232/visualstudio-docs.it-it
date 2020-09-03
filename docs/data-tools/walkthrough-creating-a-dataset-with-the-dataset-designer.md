@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586029"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: creare un set di dati con l'Progettazione DataSet
@@ -46,7 +46,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
@@ -56,9 +56,9 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Aggiungere un nuovo set di dati all'applicazione
 
-1. Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
+1. Nel menu **Progetto** selezionare **Aggiungi nuovo elemento**.
 
-     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
+     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
 2. Nel riquadro a sinistra selezionare **dati**, quindi selezionare **DataSet** nel riquadro centrale.
 
@@ -106,7 +106,7 @@ In questa sezione viene illustrato come aggiungere tabelle al set di dati.
 
 - Aggiungere altre query agli oggetti TableAdapter.
 
-- Aggiungere la logica di convalida agli eventi <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> delle tabelle dati nel DataSet. Per altre informazioni, vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md).
+- Aggiungere la logica di convalida <xref:System.Data.DataTable.ColumnChanging> agli <xref:System.Data.DataTable.RowChanging> eventi o delle tabelle dati nel DataSet. Per altre informazioni, vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -9,13 +9,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917327"
 ---
-# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>&#39;Novità di Visual Studio 2015 SDK
+# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Novità di Visual Studio 2015 SDK&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio SDK include le seguenti funzionalità nuove e aggiornate per Visual Studio 2015, Visual Studio 2015 aggiornato e Visual Studio 2017.
@@ -50,10 +50,10 @@ A partire da Visual Studio 2017, l'analisi dei modelli di progetto e di elemento
 
 - [Creazione di un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     La procedura guidata VSPackage non crea più estensioni C# in o Visual Basic.
+     La procedura guidata VSPackage non crea più estensioni in C# o Visual Basic.
 
 ### <a name="c"></a>C++
- Per C++, i comandi di menu, le finestre degli strumenti e gli editor personalizzati sono supportati dalla procedura guidata VSPackage. Cercarla nella finestra di dialogo **nuovo progetto** in **Visual C++ /Extensibility**.
+ Per C++, la procedura guidata VSPackage supporta i comandi di menu, le finestre degli strumenti e gli editor personalizzati. Cercarla nella finestra di dialogo **nuovo progetto** in **Visual C++/extensibility**.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Assembly di riferimento di Visual Studio SDK tramite NuGet
  Per migliorare la portabilità e la condivisione di progetti di estendibilità, è possibile usare le versioni NuGet degli assembly di riferimento di Visual Studio SDK.  Questi sono disponibili in [NuGet.org](https://www.nuget.org/) pubblicati da [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) e possono essere facilmente aggiunti al progetto o alla soluzione tramite la finestra di dialogo riferimenti di Visual Studio **/Gestisci pacchetti NuGet** . È possibile aggiungere singoli riferimenti a assembly di estensibilità specifici o aggiungere contemporaneamente tutti gli assembly di riferimento di Visual Studio SDK usando il [metapacchetto](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)di vs SDK. Per altre informazioni su NuGet, vedere [Panoramica di NuGet](/nuget/) e [gestire i pacchetti NuGet usando la finestra di dialogo](/nuget/consume-packages/install-use-packages-visual-studio).
@@ -63,7 +63,7 @@ A partire da Visual Studio 2017, l'analisi dei modelli di progetto e di elemento
  I modelli di elemento di Visual Studio SDK usano NuGet per i riferimenti e gli strumenti di compilazione, in modo da ottenere i vantaggi di NuGet per impostazione predefinita.
 
 > [!NOTE]
-> È possibile continuare a usare gli assembly di riferimento di VS SDK installati con i progetti (che si trovano in \<percorso di installazione di Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) e non è necessario aggiornare i progetti di estensibilità esistenti per usare i pacchetti NuGet.  La finestra di dialogo riferimenti al progetto **/Aggiungi riferimento** continua a usare gli assembly di riferimento di vs SDK installati.
+> È possibile continuare a usare gli assembly di riferimento di VS SDK installati con i progetti (situati in \<Visual Studio Install Location> \ VSSDK\VisualStudioIntegration\Common\Assemblies) e non è necessario aggiornare i progetti di estensibilità esistenti per usare i pacchetti NuGet.  La finestra di dialogo riferimenti al progetto **/Aggiungi riferimento** continua a usare gli assembly di riferimento di vs SDK installati.
 >
 > Per modificare i progetti esistenti per l'uso di NuGet, vedere [procedura: eseguire la migrazione dei pacchetti VSPackage a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) che include una sezione sull'aggiornamento di progetti di estendibilità ai pacchetti NuGet.
 

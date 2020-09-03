@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetReason ??? Documenti Microsoft
+title: 'IDebugCanStopEvent2:: GetReason | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 59e611c3ed69528f92a6085cf74aa44efed09144
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734531"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
@@ -41,15 +41,15 @@ int GetReason( 
 
 ## <a name="parameters"></a>Parametri
 `pcr`\
-[fuori] Restituisce un valore dall'enumerazione [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) che descrive il motivo di questo evento.
+out Restituisce un valore dall'enumerazione [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) che descrive il motivo di questo evento.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo viene in genere chiamato prima di [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) metodo in`TRUE`modo `IDebugCanStopEvent2::CanStop` che il chiamante può determinare se passare diverso da zero ( ) al metodo.
+ Questo metodo viene in genere chiamato prima del metodo [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) in modo che il chiamante possa determinare se passare un valore diverso da zero ( `TRUE` ) al `IDebugCanStopEvent2::CanStop` metodo.
 
- Il motivo dell'arresto può essere `CANSTOP_ENTRYPOINT`, il che `CANSTOP_STEPIN`significa che il DE ha raggiunto un punto di ingresso, o , il che significa che il DE ha eseguito l'eseguito l'eseguito l'eseguito l'operazione in una funzione.
+ Il motivo dell'arresto può essere `CANSTOP_ENTRYPOINT` , che indica che il de ha raggiunto un punto di ingresso o `CANSTOP_STEPIN` , il che significa che l'istruzione de è stata rientrata in una funzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

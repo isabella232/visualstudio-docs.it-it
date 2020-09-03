@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533068"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
@@ -230,7 +230,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
          **Progetto**  =  di *Progetto di libreria di classi*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Esecuzione del gestore movimenti
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> Esecuzione del gestore movimenti
  Per scopi di test, eseguire il gestore movimenti in modalità debug.
 
 #### <a name="to-test-the-gesture-handler"></a>Per testare il gestore movimenti
@@ -265,7 +265,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 - Per questo tipo di elemento rilasciato e di destinazione non sia già stata definita alcuna funzionalità incorporata.
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implementazione del gestore movimenti
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> Implementazione del gestore movimenti
 
 ### <a name="the-gesture-handler-methods"></a>Metodi del gestore movimenti
  La classe del gestore movimenti implementa ed esporta <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Ecco i metodi che è necessario definire:
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Per altre informazioni, vedere [esplorare il modello UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installazione e disinstallazione di un'estensione
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installazione e disinstallazione di un'estensione
  È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.
 
 #### <a name="to-install-an-extension"></a>Per installare un'estensione

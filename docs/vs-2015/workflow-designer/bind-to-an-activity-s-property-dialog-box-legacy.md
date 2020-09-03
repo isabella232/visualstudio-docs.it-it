@@ -1,5 +1,5 @@
 ---
-title: Finestra di dialogo associa&#39;a una proprietà dell'attività (legacy) | Microsoft Docs
+title: Finestra di dialogo Associa a una proprietà di&#39;attività (legacy) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f88d7ebe714fcdc9bf404e1cf58c4c86cf37047d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851459"
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Finestra di dialogo associa&#39;a una proprietà dell'attività (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo **associa a proprietà di un'attività** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Finestra di dialogo Associa a una proprietà di&#39;attività (legacy)
+In questo argomento viene descritto come utilizzare la finestra di dialogo **associa a una proprietà dell'attività** in legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Un tipo di istanza di proprietà di dipendenza può essere associato alla proprietà pubblica di un'altra attività o evento. Per ulteriori informazioni sull'associazione di attività, vedere [utilizzo delle proprietà di dipendenza](https://msdn2.microsoft.com/library/bb675255.aspx).
 
@@ -31,8 +31,8 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **ass
 
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
-|**Associa a un membro esistente**|Selezionare un membro che si desidera associare nel riquadro di visualizzazione albero. Il riquadro al di sotto della visualizzazione albero visualizza un messaggio che indica se il membro è un tipo valido per l'associazione o no. Fare clic su **OK** per eseguire il binding al membro valido selezionato.|
-|**Associa a un nuovo membro**|Creare un campo o una proprietà per il membro nuovo da associare. Immettere un **nuovo nome di membro**. Scegliere se si desidera creare una proprietà di dipendenza o un campo pubblico selezionando **Crea campo** o **Crea proprietà**. Fare clic su **OK** per creare il nuovo membro.|
+|**Associazione a un membro esistente**|Selezionare un membro che si desidera associare nel riquadro di visualizzazione albero. Il riquadro al di sotto della visualizzazione albero visualizza un messaggio che indica se il membro è un tipo valido per l'associazione o no. Fare clic su **OK** per eseguire il binding al membro valido selezionato.|
+|**Associazione a un membro nuovo**|Creare un campo o una proprietà per il membro nuovo da associare. Immettere un **nuovo nome di membro**. Scegliere se si desidera creare una proprietà di dipendenza o un campo pubblico selezionando **Crea campo** o **Crea proprietà**. Fare clic su **OK** per creare il nuovo membro.|
 
 ## <a name="see-also"></a>Vedere anche
  [Uso](https://msdn2.microsoft.com/library/bb628510.aspx) delle proprietà delle attività [con le proprietà di dipendenza](https://msdn2.microsoft.com/library/bb675255.aspx) [progettazione legacy per Windows Workflow Foundation Guida dell'interfaccia utente](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

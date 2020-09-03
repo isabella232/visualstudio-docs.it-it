@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c0e54f68ab7e34f1cfb6abb228f552cc3792a8b7
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476923"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
@@ -49,12 +49,12 @@ Quando si trascinano elementi dalla [finestra Origini dati](https://msdn.microso
 
 |Elemento del registro di sistema|Valore predefinito|Spiegazione|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124;_+|Corrisponde a un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|
+|**SmartCaptionExpression**|( \\ \p{ll}) ( \\ \p{Lu}) &#124;_ +|Corrisponde a un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|
 |**SmartCaptionReplacement**|$1 $2|$1 rappresenta tutti i caratteri corrispondenti nelle prime parentesi dell'espressione e il $2 rappresenta tutti i caratteri corrispondenti nella seconda parentesi. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
-|**SmartCaptionSuffix**|:|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, il suffisso lo rende `Company Name:`|
+|**SmartCaptionSuffix**|:|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name` , il suffisso lo rende `Company Name:`|
 
 > [!CAUTION]
-> È necessario prestare molta attenzione quando si esegue qualsiasi operazione nell'editor del registro di sistema. Eseguire il backup del registro di sistema prima di modificarlo. Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che i problemi causati dall'utilizzo errato dell'editor del registro di sistema possano essere risolti. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
+> È necessario prestare molta attenzione quando si esegue qualsiasi operazione nell'editor del registro di sistema. Eseguire il backup del registro di sistema prima di modificarlo. Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che i problemi causati dall'utilizzo errato dell'editor del registro di sistema possano essere risolti. L'uso dell'editor del Registro di sistema è di sola responsabilità dell'utente.
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Per modificare il comportamento di Smart Caption della finestra Origini dati
 
@@ -70,13 +70,13 @@ Quando si trascinano elementi dalla [finestra Origini dati](https://msdn.microso
 
 6. Espandere il nodo **VisualStudio** .
 
-7. Fare clic con il pulsante destro del mouse sul nodo **10,0** e creare una nuova **chiave** denominata `Data Designers`.
+7. Fare clic con il pulsante destro del mouse sul nodo **10,0** e creare una nuova **chiave** denominata `Data Designers` .
 
-8. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionExpression`.
+8. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionExpression` .
 
-9. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionReplacement`.
+9. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionReplacement` .
 
-10. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionSuffix`.
+10. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionSuffix` .
 
 11. Fare clic con il pulsante destro del mouse sull'elemento **SmartCaptionExpression** e scegliere **modifica**.
 
@@ -106,13 +106,13 @@ Quando si trascinano elementi dalla [finestra Origini dati](https://msdn.microso
 
 6. Espandere il nodo **VisualStudio** .
 
-7. Fare clic con il pulsante destro del mouse sul nodo **10,0** e creare una nuova **chiave** denominata `Data Designers`.
+7. Fare clic con il pulsante destro del mouse sul nodo **10,0** e creare una nuova **chiave** denominata `Data Designers` .
 
-8. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionExpression`.
+8. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionExpression` .
 
-9. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionReplacement`.
+9. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionReplacement` .
 
-10. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionSuffix`.
+10. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare un nuovo **valore stringa** denominato `SmartCaptionSuffix` .
 
 11. Fare clic con il pulsante destro del mouse sull'elemento **SmartCaptionExpression** e scegliere **modifica**.
 

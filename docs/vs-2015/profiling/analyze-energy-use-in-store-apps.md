@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82f5e6401ba65a0dfaffc268890ece0166432c08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532951"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizzare il consumo di energia nelle app dello Store
@@ -26,7 +26,7 @@ ms.locfileid: "85532951"
 
 Il profiler **Utilizzo di energia** consente di analizzare il consumo di energia e potenza delle applicazioni Windows Store su dispositivi tablet a bassa potenza alimentati completamente o in parte dalle batterie integrate. In un dispositivo alimentato a batteria, un'applicazione che utilizza una quantità eccessiva di energia può causare l'insoddisfazione del cliente al punto tale da comportarne, alla fine, la disinstallazione. L'ottimizzazione del consumo di energia può aumentare l'adozione e l'utilizzo dell'applicazione da parte dei clienti.  
   
-## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a><a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a>Che cos'è il profiler consumo di energia, come funziona e cosa misura  
+## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a><a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Che cos'è il profiler consumo di energia, come funziona e cosa misura  
  Il profiler Utilizzo di energia acquisisce le attività dello schermo, della CPU e delle connessioni di rete di un dispositivo durante una sessione di profilatura. Genera quindi stime della potenza utilizzata per tali attività e la quantità totale di energia per una sessione di profilatura.  
   
 > [!NOTE]
@@ -83,7 +83,7 @@ if (performance && performance.mark) {
 >   - Eseguire la profilatura sul dispositivo di destinazione mentre è alimentato dalle batterie.  
 >   - Chiudere le altre applicazioni che potrebbero utilizzare le stesse risorse (rete, CPU o schermo).  
   
-## <a name="collect-energy-profile-data-for-your-app"></a><a name="BKMK_Collect_energy_profile_data_for_your_app"></a>Raccogliere dati relativi al profilo energetico per l'app  
+## <a name="collect-energy-profile-data-for-your-app"></a><a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Raccogliere dati relativi al profilo energetico per l'app  
   
 1. Scegliere **Avvia strumenti di diagnostica senza debug** dal menu **Debug**.  
   
@@ -102,7 +102,7 @@ if (performance && performance.mark) {
   
      Visual Studio consente di analizzare i dati raccolti e visualizzare i risultati.  
   
-## <a name="collect-energy-profile-data-for-an-installed-app"></a><a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a>Raccogliere i dati del profilo energetico per un'app installata  
+## <a name="collect-energy-profile-data-for-an-installed-app"></a><a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Raccogliere i dati del profilo energetico per un'app installata  
  Lo strumento Utilizzo di energia può essere eseguito solo su applicazioni Windows Store 8.1 avviate da una soluzione di Visual Studio o installate da Windows Store. Se una soluzione è aperta in Visual Studio, la destinazione predefinita è **Progetto di avvio**. Per impostare come destinazione un'applicazione installata:  
   
 1. Scegliere **Cambia destinazione** , quindi **Applicazione installata**.  
@@ -115,7 +115,7 @@ if (performance && performance.mark) {
   
    Per interrompere la profilatura, passa di nuovo a Visual Studio (ALT+TAB) e nella pagina dell'hub di diagnostica scegli **Arresta raccolta** .  
   
-## <a name="analyze-energy-profile-data"></a><a name="BKMK_Analyze_energy_profile_data"></a>Analizzare i dati del profilo energetico  
+## <a name="analyze-energy-profile-data"></a><a name="BKMK_Analyze_energy_profile_data"></a> Analizzare i dati del profilo energetico  
  I dati relativi al profilo energetico vengono visualizzati in una finestra di documento di Visual Studio:  
   
  ![Pagina del report del profiler energia](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
@@ -133,7 +133,7 @@ if (performance && performance.mark) {
   
  Individua un'area in cui la potenza delle risorse ha raggiunto il massimo livello. Correlare l'area di picco alla funzionalità dell'applicazione. Utilizzare quindi le barre di controllo della sequenza temporale per eseguire lo zoom avanti sull'area. Se sei concentrato sull'utilizzo della rete, espandi il nodo **Rete** del grafico **Risorse (On/Off)**  per confrontare l'ora di apertura della connessione di rete col momento in cui l'app stava ricevendo e trasferendo dati sulla rete. La riduzione del tempo durante il quale la rete rimane inutilmente aperta costituisce un'ottimizzazione particolarmente efficace.  
   
-## <a name="optimize-energy-use"></a><a name="BKMK_Optimize_energy_use"></a>Ottimizzare l'utilizzo di energia  
+## <a name="optimize-energy-use"></a><a name="BKMK_Optimize_energy_use"></a> Ottimizzare l'utilizzo di energia  
  Oltre alla trasmissione di dati, le connessioni di rete comportano un costo in termini di energia per l'inizializzazione, la gestione e la chiusura della connessione. Alcune reti mantengono aperta la connessione per un certo periodo successivo all'invio o alla ricezione dei dati per consentire la trasmissione di più dati tramite una singola connessione. Puoi utilizzare il riquadro **Risorse (On/Off)** per esaminare la modalità di interazione dell'app con la connessione.  
   
  ![&#40;risorse nel riquadro&#41;&#47;disattivato](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
@@ -144,7 +144,7 @@ if (performance && performance.mark) {
   
  Hai un controllo minore sui costi energetici dello schermo. La maggior parte degli schermi richiede più energia per visualizzare i colori chiari rispetto a quelli più scuri, quindi l'utilizzo di uno sfondo scuro è un modo per ridurre i costi.  
   
-## <a name="other-resources"></a><a name="BKMK_Other_resources"></a>Altre risorse  
+## <a name="other-resources"></a><a name="BKMK_Other_resources"></a> Altre risorse  
   
 - Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) e per [HTML e JavaScript](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) nel Centro sviluppatori Windows vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'applicazione per ridurre il costo del traffico di rete.  
   

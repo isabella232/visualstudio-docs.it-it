@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284906"
 ---
 # <a name="install-and-manage-local-content"></a>Installare e gestire il contenuto locale
@@ -129,6 +129,6 @@ I tempi di aggiornamento possono variare ma è possibile visualizzare lo stato d
 
 3. Scegliere **Chiudi** dopo che il contenuto è stato spostato.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

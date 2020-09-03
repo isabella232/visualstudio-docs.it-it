@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778596"
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
@@ -51,12 +51,12 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 |**% tempo blocco inclusivo**|Percentuale di tutto il tempo di blocco nel processo che costituiva il tempo di blocco inclusivo dell'istruzione.|
 |**Conflitti inclusivi**|Numero di volte in cui è stata impedita l'esecuzione di questa istruzione e delle funzioni chiamate nell'istruzione.|
 |**% conflitti inclusivi**|Percentuale di tutti gli eventi di conflitto nel processo che costituivano conflitti inclusivi di questa istruzione.|
-|**Nome riga**|Identificatore generato dal profiler della riga. L'identificatore utilizza`SourceFile`la sintassi seguente:**;[** `LineNumberStart` **,**,`CharacterStart`**]->; [**`LineNumberEnd`**,**`CharacterEnd`**]**|
+|**Nome riga**|Identificatore generato dal profiler della riga. L'identificatore utilizza la sintassi seguente: `SourceFile` **; [** `LineNumberStart` **,**`CharacterStart` **]->; [**`LineNumberEnd`**,**`CharacterEnd`**]**|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Nome del modulo**|Nome del modulo che contiene l'istruzione.|
 |**Percorso modulo**|Percorso del modulo che contiene l'istruzione.|
-|**ID di processo**|ID di processo (PID) del processo profilato.|
-|**Process Name**|Nome del processo.|
+|**ID processo**|ID di processo (PID) del processo profilato.|
+|**Nome processo**|Nome del processo.|
 |**Inizio carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale inizia questa istruzione.|
 |**Fine carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale termina questa istruzione.|
 |**File di origine**|Nome del file di origine che contiene l'istruzione della funzione.|
@@ -64,7 +64,7 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: personalizzare le colonne della visualizzazione reportHow to: Customize Report View columns](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Righe](../profiling/lines-view.md)
-- [Visualizzazione Righe - Campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione righe-campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)

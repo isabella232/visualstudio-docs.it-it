@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition . Documenti Microsoft
+title: 'IDebugComPlusSymbolProvider:: GetAddressesInModuleFromPosition | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7295d49faa8799731a13f500b31d436df6dc66a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734026"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
@@ -50,28 +50,28 @@ int GetAddressesInModuleFromPosition(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-[in] Identificatore di dominio dell'applicazione.
+in Identificatore del dominio dell'applicazione.
 
 `guidModule`\
-[in] Identificatore univoco del modulo.
+in Identificatore univoco del modulo.
 
 `pDocPos`\
-[in] Posizione del documento.
+in Posizione del documento.
 
 `fStatmentOnly`\
-[in] Se `TRUE`, limita gli indirizzi di debug a una singola istruzione.
+in Se `TRUE` , limita gli indirizzi di debug a una singola istruzione.
 
 `ppEnumBegAddresses`\
-[fuori] Restituisce un enumeratore per gli indirizzi di debug iniziali associati a questa istruzione o riga.
+out Restituisce un enumeratore per gli indirizzi di debug iniziali associati all'istruzione o alla riga.
 
 `ppEnumEndAddresses`\
-[fuori] Restituisce un enumeratore per gli indirizzi di debug finali associati a questa istruzione o riga.
+out Restituisce un enumeratore per gli indirizzi di debug finali associati all'istruzione o alla riga.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(

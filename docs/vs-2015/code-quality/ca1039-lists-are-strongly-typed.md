@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4e485375c12564b5416c79bd3a41dedb1da76dc0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533445"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Gli elenchi sono fortemente tipizzati
@@ -50,7 +50,7 @@ ms.locfileid: "85533445"
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola richiede <xref:System.Collections.IList> che le implementazioni forniscano membri fortemente tipizzati in modo che agli utenti non venga richiesto di eseguire il cast di argomenti al <xref:System.Object?displayProperty=fullName> tipo quando usano la funzionalità fornita dall'interfaccia. L' <xref:System.Collections.IList> interfaccia viene implementata da raccolte di oggetti a cui è possibile accedere tramite indice. Questa regola presuppone che il tipo che implementa <xref:System.Collections.IList> esegue questa operazione per gestire una raccolta di istanze di un tipo maggiore di <xref:System.Object> .
 
- <xref:System.Collections.IList>implementa le <xref:System.Collections.ICollection?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName> interfacce e. Se si implementa <xref:System.Collections.IList> , è necessario fornire i membri fortemente tipizzati necessari per <xref:System.Collections.ICollection> . Se gli oggetti nella raccolta si estendono <xref:System.ValueType?displayProperty=fullName> , è necessario fornire un membro fortemente tipizzato per <xref:System.Collections.IEnumerable.GetEnumerator%2A> per evitare la riduzione delle prestazioni causata dalla conversione boxing. questa operazione non è necessaria se gli oggetti della raccolta sono un tipo di riferimento.
+ <xref:System.Collections.IList> implementa le <xref:System.Collections.ICollection?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName> interfacce e. Se si implementa <xref:System.Collections.IList> , è necessario fornire i membri fortemente tipizzati necessari per <xref:System.Collections.ICollection> . Se gli oggetti nella raccolta si estendono <xref:System.ValueType?displayProperty=fullName> , è necessario fornire un membro fortemente tipizzato per <xref:System.Collections.IEnumerable.GetEnumerator%2A> per evitare la riduzione delle prestazioni causata dalla conversione boxing. questa operazione non è necessaria se gli oggetti della raccolta sono un tipo di riferimento.
 
  Per conformarsi a questa regola, implementare i membri di interfaccia in modo esplicito usando i nomi nel formato interfacet. NomeMembroInterfaccia, ad esempio <xref:System.Collections.IList.Add%2A> . I membri di interfaccia espliciti usano i tipi di dati dichiarati dall'interfaccia. Implementare i membri fortemente tipizzati utilizzando il nome del membro di interfaccia, ad esempio `Add` . Dichiarare i membri fortemente tipizzati come Public e dichiarare i parametri e i valori restituiti in modo che siano del tipo sicuro gestito dalla raccolta. I tipi Strong sostituiscono i tipi più vulnerabili, ad esempio <xref:System.Object> e, <xref:System.Array> dichiarati dall'interfaccia.
 

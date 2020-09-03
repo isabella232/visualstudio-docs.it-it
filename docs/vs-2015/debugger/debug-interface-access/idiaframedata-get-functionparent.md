@@ -1,5 +1,5 @@
 ---
-title: Get_functionparent | Microsoft Docs
+title: 'IDiaFrameData:: get_functionParent | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 218a1df4f700ad33aa0af0aa453de84cbdae1752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203645"
 ---
-# <a name="idiaframedatagetfunctionparent"></a>IDiaFrameData::get_functionParent
+# <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un'interfaccia frame di dati per la funzione contenitore.  
+Recupera un'interfaccia dati frame per la funzione contenitore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,10 +35,10 @@ HRESULT get_functionParent ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto per la funzione contenitore.  
+ out Restituisce un oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) per la funzione contenitore.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

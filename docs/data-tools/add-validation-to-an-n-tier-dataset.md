@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283021"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
@@ -58,7 +58,7 @@ End Sub
 2. Fare doppio clic sulla colonna che si desidera convalidare. Questa azione crea il <xref:System.Data.DataTable.ColumnChanging> gestore eventi.
 
     > [!NOTE]
-    > Il Progettazione DataSet non crea automaticamente un gestore eventi per l'evento C#. Il codice necessario per gestire l'evento in C# è incluso nella sezione successiva. `SampleColumnChangingEvent`viene creato e quindi associato all' <xref:System.Data.DataTable.ColumnChanging> evento nel <xref:System.Data.DataTable.EndInit%2A> metodo.
+    > Il Progettazione DataSet non crea automaticamente un gestore eventi per l'evento C#. Il codice necessario per gestire l'evento in C# è incluso nella sezione successiva. `SampleColumnChangingEvent` viene creato e quindi associato all' <xref:System.Data.DataTable.ColumnChanging> evento nel <xref:System.Data.DataTable.EndInit%2A> metodo.
 
 3. Aggiungere il codice per verificare che `e.ProposedValue` contenga i dati che soddisfano i requisiti dell'applicazione. Se il valore proposto non è accettabile, impostare la colonna per indicare che contiene un errore.
 
@@ -166,7 +166,7 @@ Creare un gestore eventi per l' <xref:System.Data.DataTable.RowChanging> evento 
     }
     ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md)
 - [Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

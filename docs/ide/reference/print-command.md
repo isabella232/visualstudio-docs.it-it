@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567840"
 ---
-# <a name="print-command"></a>Comando Print
+# <a name="print-command"></a>Stampa (comando)
 
 Valuta un'espressione o visualizza il testo specificato.
 
@@ -61,8 +61,8 @@ Entrambe le versioni di questo comando restituiscono il valore corrente dell'esp
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Comando Valuta istruzione](../../ide/reference/evaluate-statement-command.md)
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comando valuta istruzione](../../ide/reference/evaluate-statement-command.md)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

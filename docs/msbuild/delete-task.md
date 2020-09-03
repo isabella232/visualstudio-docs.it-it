@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288910"
 ---
 # <a name="delete-task"></a>Delete (attività)
@@ -33,13 +33,13 @@ Elimina i file specificati.
 
 Nella tabella che segue vengono descritti i parametri dell'attività `Delete` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`DeletedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i file che sono stati eliminati correttamente.|
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da eliminare.|
 |`TreatErrorsAsWarnings`|Parametro `Boolean` facoltativo<br /><br /> Se `true`, gli errori vengono registrati come avvisi. Il valore predefinito è `false`.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -99,7 +99,7 @@ L' `Delete` attività non fornisce un'opzione per eliminare i file di sola lettu
 
 In generale, quando si scrivono script di compilazione, valutare se l'eliminazione è logicamente parte di un' `Clean` operazione. Se è necessario impostare alcuni file da pulire come parte di un' `Clean` operazione normale, è possibile aggiungerli all' `@(FileWrites)` elenco e verranno eliminati al successivo `Clean` . Se è necessaria una maggiore elaborazione personalizzata, definire una destinazione e specificarne l'esecuzione impostando l'attributo `BeforeTargets="Clean"` o oppure `AfterTargets="Clean"` definire la versione personalizzata delle `BeforeClean` `AfterClean` destinazioni o. Vedere [personalizzare la compilazione](customize-your-build.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [RemoveDir (attività)](removedir-task.md)
 - [Attività](../msbuild/msbuild-tasks.md)

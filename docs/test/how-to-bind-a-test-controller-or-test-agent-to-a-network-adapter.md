@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 925df819b903be3de3d44127243f3b18d1e9aff5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288249"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
@@ -128,7 +128,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
     `net start vsttagent`
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
 - [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)

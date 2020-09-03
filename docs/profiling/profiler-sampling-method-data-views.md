@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772162"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
@@ -30,27 +30,27 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Elenca le funzioni eseguite più di frequente al momento della raccolta dei campioni e le funzioni che eseguivano la maggior parte del lavoro individuale.
 
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
 
  Visualizza i percorsi di esecuzione delle funzioni in un albero gerarchico.
 
-- [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
+- [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)
 
  Organizza i dati di profilatura in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni in esecuzione al momento della raccolta dei campioni.
 
-- [Visualizzazione Chiamante/chiamato - Dati di campionamentoCaller / Callee view - Sampling Data](../profiling/caller-callee-view-sampling-data.md)
+- [Visualizzazione chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
 
  Visualizza i dati di profilatura per una funzione selezionata e le funzioni che hanno chiamato e sono state chiamate dalla funzione selezionata.
 
-- [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)
+- [Visualizzazione funzioni](../profiling/functions-view-sampling-data.md)
 
  Organizza la profilatura in base alle funzioni ed elenca le funzioni in esecuzione al momento della raccolta dei campioni.
 
-- [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)
+- [Visualizzazione righe](../profiling/lines-view-sampling-data.md)
 
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.
 
-- [Visualizzazione Puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Visualizzazione puntatori all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)
 
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.
 

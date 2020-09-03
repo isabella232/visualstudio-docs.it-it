@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579374"
 ---
 # <a name="step-8-customize-the-quiz"></a>Passaggio 8: Personalizzare il quiz
@@ -25,11 +25,11 @@ ms.locfileid: "77579374"
 Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per personalizzare il quiz ed espandere ciò che è stato appreso. Ad esempio, si consideri la modalità mediante la quale tramite il programma vengono creati problemi di divisione casuali per cui la risposta non è mai una frazione. Per esercitarsi ulteriormente, modificare il colore del controllo `timeLabel` e offrire un suggerimento all'utente.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz di matematica a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-customize-the-quiz"></a>Per personalizzare il quiz
 
-- Quando rimangono solo cinque secondi in un quiz, trasformare il controllo **timeLabel** in rosso impostando la relativa proprietà **BackColor.**
+- Quando rimangono solo cinque secondi in un quiz, attivare il controllo **timeLabel** in rosso impostando la relativa proprietà **BackColor** .
 
   ```csharp
   timeLabel.BackColor = Color.Red;
@@ -47,6 +47,6 @@ Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per person
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per passare all'esercitazione successiva, vedere **[Esercitazione 3: Creare un gioco corrispondente.](../ide/tutorial-3-create-a-matching-game.md)**
+- Per passare all'esercitazione successiva, vedere **[esercitazione 3: creare un gioco di abbinamenti](../ide/tutorial-3-create-a-matching-game.md)**.
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 7: aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md).

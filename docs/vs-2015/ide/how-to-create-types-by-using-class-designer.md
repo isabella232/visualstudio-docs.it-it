@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533146"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procedura: creare tipi utilizzando Progettazione classi
@@ -36,7 +36,7 @@ Per progettare nuovi tipi per progetti Visual C# .NET e Visual Basic .NET, crear
 
 - [Applicare un attributo personalizzato a un membro di un tipo](#CustAttributeMember)
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>Crea un nuovo tipo
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Crea un nuovo tipo
 
 1. In Progettazione classi di Casella degli strumenti trascinare uno dei seguenti elementi in un diagramma di classi:
 
@@ -84,7 +84,7 @@ Per progettare nuovi tipi per progetti Visual C# .NET e Visual Basic .NET, crear
 
      Al termine, gli attributi personalizzati verranno applicati al tipo.
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Applicare un attributo personalizzato a un membro di tipo
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Applicare un attributo personalizzato a un membro di tipo
 
 1. Fare clic sul nome del membro nella forma del relativo tipo in un diagramma classi oppure nella relativa riga nella finestra Dettagli classe.
 

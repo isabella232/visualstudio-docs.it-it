@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772714"
 ---
 # <a name="modules-view---sampling-data"></a>Visualizzazione Moduli: dati di campionamento
@@ -29,9 +29,9 @@ Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i da
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo del puntatore all'istruzione.|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo.|
+|**Name**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo del puntatore all'istruzione.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|
 |**Percorso modulo**|Percorso del modulo che contiene il modulo, la funzione, la riga o il puntatore all'istruzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
@@ -44,4 +44,4 @@ Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i da
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
-- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)

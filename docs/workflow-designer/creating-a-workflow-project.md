@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597074"
 ---
 # <a name="workflow-project-templates"></a>Modelli di progetto flusso di lavoro
@@ -36,14 +36,14 @@ Visual Studio fornisce quattro diversi modelli di progetto del flusso di lavoro:
 
 Per accedere a questi modelli, installare prima il componente **Windows Workflow Foundation** di Visual Studio. Per istruzioni dettagliate, vedere [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Dopo aver installato il componente **Windows Workflow Foundation** , selezionare **File** > **nuovo** > **progetto**.
+1. Dopo aver installato il componente **Windows Workflow Foundation** , selezionare **file**  >  **nuovo**  >  **progetto**.
 
 1. Cercare e selezionare un modello di progetto flusso di lavoro, ad esempio il modello **applicazione console flusso** di lavoro.
 
 1. Continuare con per creare il progetto.
 
    > [!NOTE]
-   > Se si desidera aggiungere un nuovo progetto a una soluzione esistente, aprire la soluzione in Visual Studio, fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e selezionare **Aggiungi** > **nuovo progetto**.
+   > Se si vuole aggiungere un nuovo progetto a una soluzione esistente, aprire la soluzione in Visual Studio, fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e scegliere **Aggiungi**  >  **nuovo progetto**.
 
 ## <a name="workflow-console-app"></a>App console flusso di lavoro
 
@@ -51,14 +51,14 @@ Se si sceglie il modello **applicazione console flusso di lavoro** , Visual Stud
 
 ## <a name="wcf-workflow-service-app"></a>App del servizio flusso di lavoro WCF
 
-Se si sceglie il modello **applicazione del servizio flusso di lavoro WCF** , Visual Studio crea una definizione di servizio come XAML. Il Progettazione flussi di lavoro viene aperto nella visualizzazione progettazione con un'attività <xref:System.Activities.Statements.Sequence> contenente un set di attività di <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply>.
+Se si sceglie il modello **applicazione del servizio flusso di lavoro WCF** , Visual Studio crea una definizione di servizio come XAML. Il Progettazione flussi di lavoro si apre alla visualizzazione progettazione con un' <xref:System.Activities.Statements.Sequence> attività che contiene un set di <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> attività e.
 
 ## <a name="activity-library"></a>Libreria attività
 
 Se si sceglie il modello di **libreria di attività** , Visual Studio crea una definizione di attività in XAML. Progettazione flussi di lavoro viene aperto e viene visualizzata l'area di disegno per l'attività personalizzata. Trascinare un'attività dalla **casella degli strumenti** nell'area di progettazione per includerla nell'attività personalizzata.
 
 > [!NOTE]
-> Si è consentita una sola attività figlio nel corpo dell'attività personalizzata. Tuttavia, tale attività figlio potrebbe essere un'attività composita, ad esempio un'attività <xref:System.Activities.Statements.Sequence> o un'attività <xref:System.Activities.Statements.Flowchart>.
+> Si è consentita una sola attività figlio nel corpo dell'attività personalizzata. Tuttavia, tale attività figlio potrebbe essere un'attività composita, ad esempio un'attività o un'attività <xref:System.Activities.Statements.Sequence> <xref:System.Activities.Statements.Flowchart> .
 
 ## <a name="activity-designer-library"></a>Libreria ActivityDesigner
 
@@ -71,5 +71,5 @@ Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Usare il Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)
+- [Utilizzare Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)
 - [Flussi di lavoro di progettazione (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

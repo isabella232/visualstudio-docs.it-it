@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 521c884a0a25d7fa975a4039e6ec3e36ff4dc020
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778544"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Visualizzazione Moduli: dati di strumentazione di memoria .NET
@@ -25,14 +25,14 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome**|Nome della funzione o del modulo.|
+|**Name**|Nome della funzione o del modulo.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione o modulo.|
 |**File di origine**|File di origine che contiene la definizione di questa funzione.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo in cui era in esecuzione il modulo o la funzione.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo in cui era in esecuzione il modulo o la funzione.|
 |**Sovraccarico temporale per probe esclusivi**|Sovraccarico temporale per questa funzione o per questo modulo causato dalla strumentazione.|
 |**Sovraccarico temporale per probe inclusivi**|Sovraccarico temporale per questa funzione o per questo modulo e per le relative funzioni figlio causato dalla strumentazione.|
 
@@ -100,5 +100,5 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)
-- [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)

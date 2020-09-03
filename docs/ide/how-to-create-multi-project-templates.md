@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284412"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
@@ -88,7 +88,7 @@ Il file *vstemplate* radice per un modello per più progetti differisce da un mo
 2. Personalizzare i progetti fino a quando non sono pronti per essere esportati in un modello.
 
    > [!TIP]
-   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio: `$ext_safeprojectname$`. Impostare inoltre l'attributo **CopyParameters** dell'elemento **ProjectTemplateLink** su **true**.
+   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio, `$ext_safeprojectname$` Impostare inoltre l'attributo **CopyParameters** dell'elemento **ProjectTemplateLink** su **true**.
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
@@ -186,7 +186,7 @@ Questo esempio usa l'elemento **SolutionFolder** per suddividere i progetti in d
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
 - [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)

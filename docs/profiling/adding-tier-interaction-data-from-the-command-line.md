@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779870"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Aggiungere dati di interazione tra livelli dalla riga di comando
@@ -32,7 +32,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccogliere dati TIP in un computer remoto**
 
-Per raccogliere i dati di interazione tra livelli in un computer remoto, è necessario copiare **vs_profiler\_** **\_** _ \< __\< _il file platform>Language>**.exe** della cartella _%VSInstallDir%_,**Strumenti di team, Strumenti** di prestazioni e Impostazioni di installazione nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file ** \_ vs_profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 **Report TIP**
 
@@ -155,4 +155,4 @@ Per aggiungere l'interazione tra livelli ai dati di profilatura raccolti tramite
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Per ulteriori informazioni su VSPerfASPNETCmd, vedere Profiling di [siti Web rapid con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Per ulteriori informazioni su VSPerfASPNETCmd, vedere [profilatura rapida di siti Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

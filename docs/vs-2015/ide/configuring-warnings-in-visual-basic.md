@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d09a251dc5f98080b317e1560423dcb7c8bf0805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619318"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
@@ -38,7 +38,7 @@ Il compilatore di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] include un set di
 
  L'opzione della riga di comando **/warnaserror** del compilatore consente anche di specificare se gli avvisi vengono considerati come errori. È possibile aggiungere un elenco delimitato da virgole a questa opzione per specificare mediante i segni + o - gli avvisi da considerare come errori o come avvisi. La seguente tabella elenca le opzioni possibili.
 
-|Opzione della riga di comando|Specifica|
+|Opzione da riga di comando|Specifica|
 |--------------------------|---------------|
 |`/warnaserror+`|Considera tutti gli avvisi come errori.|
 |`/warnsaserror`-|Non considera gli avvisi come errori. Questa è l'impostazione predefinita.|
@@ -90,7 +90,7 @@ Il compilatore di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] include un set di
  ID: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Avviso di variabile locale non usata
- Viene generato quando una variabile locale viene dichiarata ma non dispone di nessun riferimento. L'impostazione predefinita è On (attivato).
+ Viene generato quando una variabile locale viene dichiarata ma non dispone di nessun riferimento. Per impostazione predefinita questa opzione è abilitata.
 
  ID: 42024
 

@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d0763f2cf86d94f96f6f9c907ee306c731994f22
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852095"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti
@@ -54,13 +54,13 @@ ms.locfileid: "75852095"
 - Visualizzazione, con il sottogruppo Recenti.
 
 ## <a name="assemblies-tab"></a>Scheda Assembly
- La scheda **Assembly** elenca tutti gli assembly di .NET Framework disponibili per riferimento. Nella scheda **Assembly** non vengono elencati gli assembly della Global Assembly Cache (GAC) in quanto questi assembly fanno parte dell'ambiente di runtime. Se si distribuisce o si copia un'applicazione che contiene un riferimento a un assembly registrato nella Global Assembly Cache, tale assembly non verrà distribuito o copiato con l'applicazione, indipendentemente dall'impostazione dell'opzione Copia localmente. Per altre informazioni, vedere [Riferimenti a progetti](https://msdn.microsoft.com/library/ez524kew.aspx).
+ La scheda **Assembly** elenca tutti gli assembly di .NET Framework disponibili per riferimento. Nella scheda **assembly** non vengono elencati gli assembly della Global Assembly Cache (GAC) perché gli assembly nella GAC fanno parte dell'ambiente di Runtime. Se si distribuisce o si copia un'applicazione che contiene un riferimento a un assembly registrato nella Global Assembly Cache, tale assembly non verrà distribuito o copiato con l'applicazione, indipendentemente dall'impostazione dell'opzione Copia localmente. Per altre informazioni, vedere [Riferimenti a progetti](https://msdn.microsoft.com/library/ez524kew.aspx).
 
  Quando si aggiunge manualmente un riferimento a uno qualsiasi degli spazi dei nomi (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a, or EnvDTE100), impostare la proprietà Incorpora tipi di interoperabilità del riferimento su False nella finestra Proprietà. L'impostazione di questa proprietà su True può causare problemi di compilazione a causa di determinate proprietà che non possono essere incorporate.
 
  Tutti i progetti desktop contengono un riferimento implicito a mscorlib. I progetti di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] contengono un riferimento implicito a Microsoft.VisualBasic. In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], tutti i progetti contengono un riferimento implicito a System.Core, anche se viene rimosso dall'elenco di riferimenti.
 
- Se un tipo di progetto non supporta gli assembly, la scheda non verrà visualizzata nella finestra di dialogo **Gestione riferimenti**.
+ Se un tipo di progetto non supporta gli assembly, la scheda non verrà visualizzata nella finestra di dialogo **Gestione riferimenti** .
 
  La scheda Assembly è costituita da due sottoschede:
 
@@ -109,7 +109,7 @@ ms.locfileid: "75852095"
 
   - Altre directory di progetto nella stessa soluzione. È possibile trovare questi assembly tramite la scheda **Progetti**.
 
-    \- oppure -
+    \- - oppure -
 
 - Impostare una chiave del Registro di sistema che specifica il percorso degli assembly da visualizzare:
 
@@ -136,12 +136,12 @@ ms.locfileid: "75852095"
 ## <a name="com-tab"></a>Scheda COM
  Nella scheda COM sono elencati tutti i componenti COM a cui è possibile fare riferimento. Se si desidera aggiungere un riferimento a una DLL COM registrata che contiene un manifesto interno, annullare prima di tutto la registrazione della DLL. In caso contrario, Visual Studio aggiungerà il riferimento all'assembly come controllo ActiveX e non come DLL nativa.
 
- Se un tipo di progetto non supporta il modello COM, la scheda non verrà visualizzata nella finestra di dialogo **Gestione riferimenti**.
+ Se un tipo di progetto non supporta COM, la scheda non verrà visualizzata nella finestra di dialogo **Gestione riferimenti** .
 
 ## <a name="solution-tab"></a>Scheda Soluzione
  Nella scheda Soluzione sono elencati tutti i progetti compatibili all'interno della soluzione corrente, nella sottoscheda Progetti.
 
- Un progetto può fare riferimento a un altro progetto destinato a una versione differente di .NET Framework. Ad esempio, è possibile creare un progetto destinato a [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] ma che fa riferimento a un assembly compilato per .NET Framework 2. Tuttavia, il progetto di .NET Framework 2 non può fare riferimento a un progetto per [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Per altre informazioni, vedere [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Un progetto può fare riferimento a un altro progetto destinato a una versione differente di .NET Framework. Ad esempio, è possibile creare un progetto destinato a [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] ma che fa riferimento a un assembly compilato per .NET Framework 2. Tuttavia, il progetto di .NET Framework 2 non può fare riferimento a un progetto per [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Per ulteriori informazioni, vedere la pagina relativa alla [destinazione di una specifica .NET Framework versione](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  Un progetto destinato a [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] è incompatibile con un progetto destinato a [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)].
 
@@ -154,9 +154,9 @@ ms.locfileid: "75852095"
 
  È possibile generare un file WinMD in Visual Studio in due modi:
 
-- **Progetti gestiti per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]** : i progetti di app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] possono generare file binari WinMD impostando Proprietà progetto &#124; Output Type = WinMD File. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi A.B e A.B.C, i nomi possibili per il file WinMD generato saranno A.winmd e A.B.winmd. Se un utente immette un valore Proprietà progetti &#124; Nome assembly o Proprietà progetti &#124; Spazio dei nomi che è disgiunto dal set di spazi dei nomi nel progetto o non è presente alcuno spazio dei nomi superset all'interno di un progetto, verrà generato un avviso di compilazione: "A.winmd" non è un nome di file winmd valido per l'assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. I tipi che non esistono in uno spazio dei nomi secondario del nome file non potranno essere individuati in fase di esecuzione. In questo assembly, lo spazio dei nomi comune più piccolo è "CSWSClassLibrary1". Un progetto desktop Visual Basic o Visual C# può utilizzare solo file WinMD che sono generati utilizzando i [!INCLUDE[win8](../includes/win8-md.md)] SDK, noti come WinMD del produttore, e non può generare WinMD.
+- ** [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] progetti gestiti da app**: i [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] progetti di app possono generare file binari WinMD impostando le proprietà del progetto &#124; tipo di output = file winmd. Il nome del file WinMD deve essere lo spazio dei nomi superset di tutti gli spazi dei nomi in esso contenuti. Ad esempio, se un progetto è costituito dagli spazi dei nomi A.B e A.B.C, i nomi possibili per il file WinMD generato saranno A.winmd e A.B.winmd. Se un utente immette un valore Proprietà progetti &#124; Nome assembly o Proprietà progetti &#124; Spazio dei nomi che è disgiunto dal set di spazi dei nomi nel progetto o non è presente alcuno spazio dei nomi superset all'interno di un progetto, verrà generato un avviso di compilazione: "A.winmd" non è un nome di file winmd valido per l'assembly. Tutti i tipi presenti in un file di metadati di Windows devono esistere in uno spazio dei nomi secondario del nome file. I tipi che non esistono in uno spazio dei nomi secondario del nome file non potranno essere individuati in fase di esecuzione. In questo assembly, lo spazio dei nomi comune più piccolo è "CSWSClassLibrary1". Un progetto desktop Visual Basic o Visual C# può utilizzare solo file WinMD che sono generati utilizzando i [!INCLUDE[win8](../includes/win8-md.md)] SDK, noti come WinMD del produttore, e non può generare WinMD.
 
-- **Progetti nativi per app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]** : un file WinMD nativo è costituito solo da metadati. L'implementazione esiste in un file DLL distinto. È possibile produrre i file binari nativi scegliendo il modello di progetto del componente Windows Runtime nella finestra di dialogo **Nuovo progetto** o iniziando da un progetto vuoto e modificando le proprietà del progetto per generare un file WinMD. Se il progetto è costituito da spazi dei nomi disgiunti, un errore di compilazione indicherà all'utente di combinare gli spazi dei nomi o di eseguire lo strumento MSMerge.
+- ** [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] progetti nativi delle app**: un file WinMD nativo è costituito solo da metadati. L'implementazione esiste in un file DLL distinto. È possibile produrre i file binari nativi scegliendo il modello di progetto del componente Windows Runtime nella finestra di dialogo **Nuovo progetto** o iniziando da un progetto vuoto e modificando le proprietà del progetto per generare un file WinMD. Se il progetto è costituito da spazi dei nomi disgiunti, un errore di compilazione indicherà all'utente di combinare gli spazi dei nomi o di eseguire lo strumento MSMerge.
 
   La scheda Windows è costituita da due sottogruppi.
 
@@ -183,12 +183,12 @@ ms.locfileid: "75852095"
 > [!NOTE]
 > Se un progetto fa riferimento a un SDK che dipende da un altro SDK, in Visual Studio non verrà utilizzato il secondo SDK a meno che l'utente non aggiunga manualmente un riferimento al secondo SDK. Quando un utente sceglie un SDK nella scheda **Estensioni**, la finestra di dialogo **Gestione riferimenti** consente di identificare le dipendenze dall'SDK elencando non solo il nome e la versione dell'SDK ma anche il nome di tutte le dipendenze dell'SDK nel riquadro dei dettagli. Se un utente non annota le dipendenze e aggiunge solo l'SDK, tramite MSBuild verrà chiesto di aggiungere le dipendenze.
 
- Se un tipo di progetto non supporta **Estensioni**, la scheda non verrà visualizzata nella finestra di dialogo **Gestione riferimenti**.
+ Se un tipo di progetto non supporta le **estensioni**, la scheda non viene visualizzata nella finestra di dialogo **Gestione riferimenti** .
 
-## <a name="browse-button"></a>Pulsante Sfoglia
+## <a name="browse-button"></a>Pulsante Sfoglia (...)
  È possibile usare il pulsante **Sfoglia** per passare a un componente nel file system.
 
- Un progetto può fare riferimento a un componente destinato a una versione differente di .NET Framework. Ad esempio, è possibile creare un'applicazione destinata a .NET Framework 4 Client Profile, che fa riferimento a un componente destinato a .NET Framework 2. Per altre informazioni, vedere [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Un progetto può fare riferimento a un componente destinato a una versione differente di .NET Framework. Ad esempio, è possibile creare un'applicazione destinata a .NET Framework 4 Client Profile, che fa riferimento a un componente destinato a .NET Framework 2. Per ulteriori informazioni, vedere la pagina relativa alla [destinazione di una specifica .NET Framework versione](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  Evitare di aggiungere riferimenti di file agli output di un altro progetto della stessa soluzione, poiché questa tattica potrebbe causare errori di compilazione. Usare invece la scheda **Soluzione** della finestra di dialogo **Gestione riferimenti** per creare riferimenti da progetto a progetto. Questa strategia facilita lo sviluppo in team, consentendo una migliore gestione delle librerie di classi create nei progetti. Per altre informazioni, vedere [Risoluzione dei problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md).
 
@@ -198,7 +198,7 @@ ms.locfileid: "75852095"
 
 - **Componente nativo**: un progetto nativo crea un WinMD per ogni set di spazi dei nomi disgiunto e una sola DLL costituita dall'implementazione. I file WinMD avranno nomi diversi. Durante la creazione del riferimento a questo file di componente nativo, MSBuild non sarà in grado di riconoscere che i WinMD diversamente denominati sono in realtà un unico componente. Di conseguenza, saranno copiati solo i file *NomeFile*.dll e *NomeFile*.winmd con lo stesso nome e si verificheranno errori di runtime. Per risolvere questo problema, creare un SDK di estensione. Per altre informazioni, vedere [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Creazione di un Software Development Kit).
 
-- **Uso di controlli**: un controllo XAML consiste minimo di *NomeFile*.winmd, *NomeFile*.dll, *NomeFile*.pri, *NomeXaml*.xaml e *NomeImmagine*.jpg. Quando il progetto viene compilato, i file di risorse associati al riferimento di file non vengono copiati nella directory di output del progetto. Verranno copiati solo i file *NomeFile*.winmd, *NomeFile*.dll e *NomeFile*.pri. Verrà registrato un errore di compilazione per informare l'utente dell'assenza delle risorse *NomeXaml*.xaml e *NomeImmagine*.jpg. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Creazione di un Software Development Kit) o modificare il file di progetto per aggiungere la proprietà seguente:
+- **Utilizzo di controlli**: come minimo, un controllo XAML è costituito da *filename*. winmd, *nomefile*. dll, *nomefile*. pri, *XamlName*. XAML e *ImageName*. jpg. Quando il progetto viene compilato, i file di risorse associati al riferimento di file non vengono copiati nella directory di output del progetto e vengono copiati solo *filename*. winmd, *nomefile*. dll e *filename*. pri. Viene registrato un errore di compilazione per informare l'utente che le risorse *XamlName*. XAML e *ImageName*. jpg risultano mancanti. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Creazione di un Software Development Kit) o modificare il file di progetto per aggiungere la proprietà seguente:
 
     ```
     <PropertyGroup>
@@ -209,11 +209,11 @@ ms.locfileid: "75852095"
     > [!NOTE]
     > Se si aggiunge la proprietà, la compilazione potrebbe essere eseguita più lentamente.
 
-## <a name="recent"></a>Recenti
+## <a name="recent"></a>Recente
  Le schede Assembly, COM, Windows e Sfoglia supportano tutte una scheda Recenti nella quale viene enumerato l'elenco di componenti aggiunti ai progetti di recente.
 
-## <a name="search"></a>Cerca
- La barra di ricerca della finestra di dialogo **Gestione riferimenti** viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, non verrà restituito alcun risultato a meno che la soluzione non sia costituita da un nome di progetto contenente il termine "sistema".
+## <a name="search"></a>Ricerca
+ La barra di ricerca nella finestra di dialogo **Gestione riferimenti viene** eseguita sulla scheda attiva. Se, ad esempio, un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **soluzione** , la ricerca non restituirà alcun risultato a meno che la soluzione non sia costituita da un nome di progetto che contiene "sistema".
 
 ## <a name="see-also"></a>Vedere anche
  [Procedura: aggiungere o rimuovere riferimenti tramite la finestra di dialogo Aggiungi riferimento per la](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7497f455ad3868f53758555aa28d305b6068e30d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773511"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione
@@ -33,11 +33,11 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome assegnato al processo.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome assegnato al processo.|
 |**Sovraccarico temporale per probe esclusivi**|Sovraccarico temporale per questa funzione causato dalla strumentazione. Il sovraccarico per probe è stato sottratto da tutti i valori di tempo esclusivo.|
 |**Sovraccarico temporale per probe inclusivi**|Sovraccarico temporale per questa funzione e per le relative funzioni figlio causato dalla strumentazione. Il sovraccarico per probe è stato sottratto da tutti i tempi inclusivi.|
-|**Livello**|Profondità della funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|Profondità della funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso
  I valori di tempo inclusivo trascorso indicano il tempo nello stack di chiamate delle istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. Il tempo include il tempo dedicato alle funzioni figlio chiamate dalla funzione e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
@@ -84,7 +84,7 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione in questo contesto.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: personalizzare le colonne della visualizzazione reportHow to: Customize report view columns](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
-- [Visualizzazione Struttura ad albero delle chiamate - strumentazioneCall Tree view - instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
+- [Visualizzazione albero delle chiamate-Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

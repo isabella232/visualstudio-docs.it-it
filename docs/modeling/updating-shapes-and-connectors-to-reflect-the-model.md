@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115031"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aggiornare forme e connettori per riflettere il modello
 
 In un linguaggio specifico di dominio in Visual Studio, è possibile fare in modo che l'aspetto di una forma rispecchi lo stato del modello sottostante.
 
-Gli esempi di codice in questo argomento devono essere aggiunti a un file di `.cs` nel progetto `Dsl`. Queste direttive sono necessarie in ogni file:
+Gli esempi di codice in questo argomento devono essere aggiunti a un `.cs` file nel `Dsl` progetto. Queste direttive sono necessarie in ogni file:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -37,7 +37,7 @@ La forma dispone ora di una proprietà di dominio che è possibile impostare nel
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Se si desidera rendere la variabile della proprietà solo sotto il controllo del programma e non dall'utente, selezionare la nuova proprietà del dominio, ad esempio **colore riempimento** nel diagramma di definizione DSL. Quindi, nel Finestra Proprietà, il set **è visualizzabile** in `false` o set **è l'interfaccia utente ReadOnly** per `true`.
+Se si desidera rendere la variabile della proprietà solo sotto il controllo del programma e non dall'utente, selezionare la nuova proprietà del dominio, ad esempio **colore riempimento** nel diagramma di definizione DSL. Quindi, nel Finestra Proprietà, il set **è esplorabile** `false` o impostato **è UI ReadOnly** su `true` .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definire le regole di modifica per impostare il colore, lo stile o la posizione dipendono dalle proprietà degli elementi del modello
  È possibile definire regole che aggiornano l'aspetto della forma dipendente da altre parti del modello. Ad esempio, è possibile definire una regola di modifica su un elemento del modello che aggiorna il colore della relativa forma dipendente dalle proprietà dell'elemento del modello. Per ulteriori informazioni sulle regole di modifica, vedere la pagina relativa [alla propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
@@ -108,11 +108,11 @@ partial class MyLanguageDiagram
 
 Questo metodo può essere utilizzato sia per le proprietà del dominio che per le funzionalità non di archivio, ad esempio la dimensione della forma.
 
-## <a name="OnAssociatedProperty"></a>Utilizzare AssociateValueWith () per aggiornare altre funzionalità di una forma
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> Utilizzare AssociateValueWith () per aggiornare altre funzionalità di una forma
 
 Per alcune funzionalità di una forma, ad esempio se presenta un'ombreggiatura o lo stile della freccia di un connettore, non esiste alcun metodo incorporato per esporre la funzionalità come proprietà di dominio.  Le modifiche apportate a tali funzionalità non sono sotto il controllo del sistema di transazione. Non è pertanto appropriato aggiornarle utilizzando le regole, perché le regole non vengono richiamate quando l'utente esegue il comando Annulla.
 
-In alternativa, è possibile aggiornare tali funzionalità usando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Nell'esempio seguente lo stile della freccia di un connettore è controllato da un valore di una proprietà di dominio nella relazione visualizzata dal connettore:
+In alternativa, è possibile aggiornare tali funzionalità usando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> . Nell'esempio seguente lo stile della freccia di un connettore è controllato da un valore di una proprietà di dominio nella relazione visualizzata dal connettore:
 
 ```csharp
 public partial class ArrowConnector // My connector class.
@@ -153,6 +153,6 @@ public partial class ArrowConnector // My connector class.
 }
 ```
 
-`AssociateValueWith()` deve essere chiamato una volta per ogni proprietà del dominio che si desidera registrare. Una volta chiamato, qualsiasi modifica apportata alla proprietà specificata chiamerà `OnAssociatedPropertyChanged()` in tutte le forme che presentano l'elemento del modello della proprietà.
+`AssociateValueWith()` deve essere chiamato una volta per ogni proprietà del dominio che si desidera registrare. Una volta chiamato, qualsiasi modifica apportata alla proprietà specificata chiamerà `OnAssociatedPropertyChanged()` in qualsiasi forma che presenta l'elemento del modello della proprietà.
 
 Non è necessario chiamare `AssociateValueWith()` per ogni istanza. Sebbene InitializeResources sia un metodo di istanza, viene richiamato solo una volta per ogni classe Shape.

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851972"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
@@ -54,7 +54,7 @@ Stili e modelli per gli elementi nella finestra di progettazione XAML vengono ar
 
 1. Nella finestra Struttura documento scegliere l'elemento a cui si vuole applicare una risorsa.
 
-2. Effettuare una delle seguenti operazioni:
+2. Eseguire una delle operazioni seguenti:
 
    - Applicare una risorsa a una proprietà. Nella finestra Proprietà scegliere il marcatore della proprietà accanto al valore della proprietà, quindi scegliere **Risorsa locale** o **Risorsa di sistema** e infine selezionare una risorsa disponibile dall'elenco visualizzato.
 
@@ -76,4 +76,4 @@ Stili e modelli per gli elementi nella finestra di progettazione XAML vengono ar
 3. Modificare le opzioni per la risorsa.
 
 ## <a name="see-also"></a>Vedere anche
- [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [Creazione di un'interfaccia utente tramite XAML Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
