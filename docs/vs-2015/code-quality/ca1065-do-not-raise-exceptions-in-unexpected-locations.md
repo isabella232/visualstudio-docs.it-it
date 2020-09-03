@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539256"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Non generare eccezioni in posizioni non previste
@@ -65,24 +65,24 @@ ms.locfileid: "85539256"
 
  Le eccezioni seguenti possono essere generate da un metodo Get della proprietà:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>e tutti i derivati
+- <xref:System.NotSupportedException?displayProperty=fullName> e tutti i derivati
 
-- <xref:System.ArgumentException?displayProperty=fullName>(solo da Get indicizzato)
+- <xref:System.ArgumentException?displayProperty=fullName> (solo da Get indicizzato)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(solo da Get indicizzato)
+- <xref:System.Collections.Generic.KeyNotFoundException> (solo da Get indicizzato)
 
 ### <a name="event-accessor-methods"></a>Metodi della funzione di accesso agli eventi
  Le funzioni di accesso agli eventi devono essere semplici operazioni che non generano eccezioni. Un evento non deve generare un'eccezione quando si tenta di aggiungere o rimuovere un gestore eventi.
 
  Le eccezioni seguenti possono essere generate da un accesore eventi:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>e tutti i derivati
+- <xref:System.NotSupportedException?displayProperty=fullName> e tutti i derivati
 
-- <xref:System.ArgumentException>e derivati
+- <xref:System.ArgumentException> e derivati
 
 ### <a name="equals-methods"></a>Metodi Equals
  I seguenti metodi **Equals** non devono generare eccezioni:

@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
 ms.openlocfilehash: da7f4cccab1354d0ab563868f3a874539f63c7c6
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387148"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
@@ -32,7 +32,7 @@ Quando un partner ottiene una competenza, sia di livello Silver che Gold, ottien
 
 | Competenza                                  | Sottoscrizioni aggiuntive ottenute per la competenza **Silver** | Sottoscrizioni aggiuntive ottenute per la competenza **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
-| Sviluppo applicazioni                     | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
+| Sviluppo di applicazioni                     | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | Cloud Customer Relationship Management      | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | Piattaforma cloud                              | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |
 | Cloud Productivity                          | 5 sottoscrizioni di Visual Studio Enterprise                  | 25 sottoscrizioni di Visual Studio Enterprise               |

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156606"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: estendere il processo di compilazione di Visual Studio
@@ -55,7 +55,7 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 
    Nella tabella seguente sono indicate tutte le destinazioni in Microsoft.Common.targets di cui è possibile eseguire l'override in totale sicurezza.
 
-|Target Name|DESCRIZIONE|
+|Nome destinazione|Descrizione|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo la compilazione principale. La maggior parte delle personalizzazioni avviene in una di queste due destinazioni.|
 |`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:** le destinazioni `BeforeBuild` e `AfterBuild` sono già definite nei commenti alla fine della maggior parte dei file di progetto. Questo agevola l'aggiunta di eventi di pre-compilazione e post-compilazione al file di progetto.|
@@ -68,7 +68,7 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 ## <a name="overriding-dependson-properties"></a>Override delle proprietà "DependsOn"
  L'override delle destinazioni predefinite costituisce uno dei modi più semplici per estendere il processo di compilazione. Tuttavia, poiché [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] valuta la definizione delle destinazioni in modo sequenziale, non è possibile evitare che un altro progetto in cui viene importato il progetto in questione esegua l'override delle destinazioni di cui è già stato eseguito l'override. Di conseguenza, ad esempio, l'ultima destinazione `AfterBuild` definita nel file di progetto, al termine dell'importazione di tutti gli altri progetti, sarà quella usata durante la compilazione.
 
- Per evitare override indesiderati di destinazioni, è possibile eseguire l'override delle proprietà "DependsOn" usate negli attributi `DependsOnTargets` del file Microsoft.Common.targets. Nella destinazione `Build`, ad esempio, il valore dell'attributo `DependsOnTargets` è `"$(BuildDependsOn)"`. Tenere presente quanto segue:
+ Per evitare override indesiderati di destinazioni, è possibile eseguire l'override delle proprietà "DependsOn" usate negli attributi `DependsOnTargets` del file Microsoft.Common.targets. Nella destinazione `Build`, ad esempio, il valore dell'attributo `DependsOnTargets` è `"$(BuildDependsOn)"`. Tenere in considerazione:
 
 ```
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -119,7 +119,7 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 
 ### <a name="commonly-overridden-dependson-properties"></a>Proprietà "DependsOn" comunemente sottoposte a override
 
-|Nome proprietà|DESCRIZIONE|
+|Nome proprietà|Descrizione|
 |-------------------|-----------------|
 |`BuildDependsOn`|Proprietà di cui eseguire l'override se si vuole inserire destinazioni personalizzate prima o dopo l'intero processo di compilazione.|
 |`CleanDependsOn`|Proprietà di cui eseguire l'override se si vuole pulire l'output del processo di compilazione personalizzato.|

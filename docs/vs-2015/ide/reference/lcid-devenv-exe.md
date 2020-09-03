@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672705"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -49,7 +49,7 @@ devenv {/LCID|/l} LocaleID
 |--------------|----------|
 |Cinese (semplificato)|2052|
 |Cinese (tradizionale)|1028|
-|Inglese|1040|
+|Inglese|1033|
 |Francese|1036|
 |Tedesco|1031|
 |Italiano|1040|

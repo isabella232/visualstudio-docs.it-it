@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aea1205abf5c7a4bf7e4fd6b035651cc7ad52be6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464205"
 ---
 # <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
@@ -41,7 +41,7 @@ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FAL
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 Il tipo di base per un simbolo può essere determinato ottenendo innanzitutto il tipo del simbolo e quindi interrogando il tipo restituito per il tipo di base. Si noti che alcuni simboli non possono avere un tipo di base, ad esempio un nome di struttura.
 
 ## <a name="example"></a>Esempio
@@ -66,7 +66,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione BasicType](../../debugger/debug-interface-access/basictype.md)
 - [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

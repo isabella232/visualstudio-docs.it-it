@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE . Documenti Microsoft
+title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737263"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
-Specifica l'ambito del flusso di disassembly.
+Specifica l'ambito del flusso di Disassembly.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,26 +48,26 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 
 ## <a name="fields"></a>Campi
 `DSS_HUGE`\
-Specifica che il disassemblaggio del contesto del codice genererebbe più output di quello che un client in genere desidera recuperare in una singola chiamata.
+Specifica che il disassemblaggio del contesto del codice genererebbe un output maggiore di quello che un client in genere vuole recuperare in un'unica chiamata.
 
 `DSS_FUNCTION`\
-Specifica che la funzione contenuta nel contesto del codice deve essere disassemblata. Specifica che il flusso di disassembly rappresenta una funzione, quando viene restituito dal [Metodo GetScope.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)
+Specifica che la funzione contenuta nel contesto del codice deve essere disassemblata. Specifica che il flusso di Disassembly rappresenta una funzione, se restituita dal metodo [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
 `DSS_MODULE`\
-Quando viene restituito `IDebugDisassemblyStream2::GetScope` dal metodo , specifica che il flusso di disassembly rappresenta un modulo.
+Quando viene restituito dal `IDebugDisassemblyStream2::GetScope` metodo, specifica che il flusso di Disassembly rappresenta un modulo.
 
 `DSS_ALL`\
-Specifica il disassemblaggio per l'intero spazio degli indirizzi.
+Specifica il disassembly per l'intero spazio degli indirizzi.
 
 ## <a name="remarks"></a>Osservazioni
-Passato come argomento per il [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) metodo e restituito dal [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) metodo.
+Passato come argomento al metodo [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) e restituito dal metodo [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
-Questi valori possono essere combinati `OR`con un oggetto .
+Questi valori possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

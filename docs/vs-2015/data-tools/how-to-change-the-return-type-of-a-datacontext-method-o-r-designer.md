@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 351a2f53d8ad8c5f29821d905c292cd988390869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658833"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procedura: Modificare il tipo restituito di un metodo DataContext (Object Relational Designer)
@@ -30,7 +30,7 @@ Il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> (creato in b
 
 1. Selezionare il metodo <xref:System.Data.Linq.DataContext> nel riquadro dei metodi.
 
-2. Selezionare **Return Type** nella finestra **Proprietà** e quindi selezionare una classe di entità disponibile nell'elenco **Return Type**. Se la classe di entità desiderata non è presente nell'elenco, aggiungerla o crearla nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] per aggiungerla all'elenco.
+2. Selezionare **Return Type** nella finestra **Proprietà** e quindi selezionare una classe di entità disponibile nell'elenco **Return Type**. Se la classe di entità desiderata non è presente nell'elenco, aggiungerla o crearla in [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] per aggiungerla all'elenco.
 
 3. Salvare il file .dbml.
 
@@ -38,7 +38,7 @@ Il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> (creato in b
 
 1. Selezionare il metodo <xref:System.Data.Linq.DataContext> nel riquadro dei metodi ed eliminarlo.
 
-2. Trascinare l'oggetto di database da **Esplora server** /**Esplora database** su un'area vuota della finestra di progettazione di O/R.
+2. Trascinare l'oggetto di database da **Esplora server** / **Esplora database** su un'area vuota della finestra di progettazione di O/R.
 
 3. Salvare il file .dbml.
 

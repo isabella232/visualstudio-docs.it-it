@@ -1,5 +1,5 @@
 ---
-title: Riferimenti dello Schema di pacchetto e del prodotto | Microsoft Docs
+title: Informazioni di riferimento sullo schema del prodotto e del pacchetto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -27,36 +27,36 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188951"
 ---
 # <a name="product-and-package-schema-reference"></a>Riferimenti dello schema di prodotti e package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Oggetto *del file di prodotto* è un manifesto XML che descrive tutte le dipendenze esterne richieste da un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione. Esempi di dipendenze esterne di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e Microsoft Data Access Components (MDAC). Un file del pacchetto è simile a un file di prodotto ma viene usato per installare i componenti dipendenti dalla lingua di una dipendenza, ad esempio gli assembly localizzati, i contratti di licenza e documentazione.  
+Un *file di prodotto* è un manifesto XML che descrive tutte le dipendenze esterne richieste da un' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione. Tra gli esempi di dipendenze esterne sono inclusi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e Microsoft Data Access Components (MDAC). Un file di pacchetto è simile a un file di prodotto, ma viene utilizzato per installare i componenti dipendenti dalle impostazioni cultura di una dipendenza, ad esempio gli assembly localizzati, i contratti di licenza e la documentazione.  
   
- Il file di prodotto e i pacchetti è costituito da uno un livello superiore `Product` o `Package` elemento, ognuno dei quali contiene gli elementi seguenti.  
+ Il file del prodotto e del pacchetto è costituito da un `Product` elemento o di primo livello `Package` , ognuno dei quali contiene gli elementi seguenti.  
   
 |Elemento|Descrizione|Attributi|  
 |-------------|-----------------|----------------|  
-|[\<Product> Element](../deployment/product-element-bootstrapper.md)|Elemento di primo livello necessario per i file di prodotto.|Nessuna|  
-|[\<Package> Element](../deployment/package-element-bootstrapper.md)|Elemento di primo livello obbligatorio per i file di pacchetto.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts> Element](../deployment/relatedproducts-element-bootstrapper.md)|Elemento facoltativo per i file di prodotto. Gli altri prodotti che questo prodotto consente di installare o dipende dalla fase.|Nessuna|  
-|[\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)|Elemento obbligatorio. Elenca i controlli delle dipendenze per eseguire nel computer locale durante l'installazione.|Nessuna|  
-|[\<Commands> Element](../deployment/commands-element-bootstrapper.md)|Elemento obbligatorio.  Esegue uno o più controlli per l'installazione come descritto dalla `InstallChecks`e segnala il pacchetto di installazione se il controllo non riuscire.|Nessuna|  
-|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Elemento obbligatorio. Elenca i pacchetti che potrebbero essere installati da questo processo di installazione.|Nessuna|  
-|[\<Strings> Element](../deployment/strings-element-bootstrapper.md)|Elemento obbligatorio. Archivia le versioni localizzate delle stringhe di errore e nome prodotto.|Nessuna|  
+|[\<Product> Elemento](../deployment/product-element-bootstrapper.md)|Elemento di livello principale obbligatorio per i file di prodotto.|Nessuno|  
+|[\<Package> Elemento](../deployment/package-element-bootstrapper.md)|Elemento di livello principale obbligatorio per i file del pacchetto.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts> Elemento](../deployment/relatedproducts-element-bootstrapper.md)|Elemento facoltativo per i file di prodotto. Gli altri prodotti da cui questo prodotto installa o dipende.|Nessuno|  
+|[\<InstallChecks> Elemento](../deployment/installchecks-element-bootstrapper.md)|Elemento obbligatorio. Elenca i controlli delle dipendenze da eseguire nel computer locale durante l'installazione.|Nessuno|  
+|[\<Commands> Elemento](../deployment/commands-element-bootstrapper.md)|Elemento obbligatorio.  Esegue uno o più controlli di installazione come descritto da `InstallChecks` e indica il pacchetto da installare se il controllo ha esito negativo.|Nessuno|  
+|[\<PackageFiles> Elemento](../deployment/packagefiles-element-bootstrapper.md)|Elemento obbligatorio. Elenca i pacchetti che potrebbero essere installati da questo processo di installazione.|Nessuno|  
+|[\<Strings> Elemento](../deployment/strings-element-bootstrapper.md)|Elemento obbligatorio. Archivia le versioni localizzate del nome del prodotto e delle stringhe di errore.|nessuno|  
   
-## <a name="remarks"></a>Note  
- Lo schema del pacchetto viene usato da Setup.exe, un programma stub generato da attività di avvio automatico di MS Build contenente minimo per la logica a livello di codice proprio. Lo schema di cui si basa ogni aspetto del processo di installazione.  
+## <a name="remarks"></a>Osservazioni  
+ Lo schema del pacchetto viene utilizzato da Setup.exe, un programma stub generato dall'attività di bootstrap di compilazione di Microsoft che contiene una logica di codice hardcoded. Lo schema guida ogni aspetto del processo di installazione.  
   
- `InstallChecks` i test che setup.exe deve eseguire l'esistenza di un determinato pacchetto. `PackageFiles` Elenca tutti i pacchetti che il processo di installazione potrebbe essere necessario installare, avrà esito negativo di un determinato test. Ogni voce di comando in comandi esegue uno dei test descritto dal `InstallChecks`e specifica quali `PackageFile` per eseguire il test di verificherà un errore. È possibile usare il `Strings` elemento localizzare i nomi dei prodotti e i messaggi di errore, in modo che è possibile usare una singola installazione binaria per installare l'applicazione per diversi linguaggi.  
+ `InstallChecks` i test che setup.exe devono essere eseguiti per l'esistenza di un pacchetto specifico. `PackageFiles` Elenca tutti i pacchetti che il processo di installazione potrebbe dover installare, in caso di esito negativo di un test specifico. Ogni voce di comando sotto comandi esegue uno dei test descritti da `InstallChecks` e specifica quale `PackageFile` eseguire in caso di esito negativo del test. È possibile utilizzare l' `Strings` elemento per localizzare i nomi dei prodotti e i messaggi di errore, in modo che sia possibile utilizzare un unico file binario di installazione per installare l'applicazione per un numero qualsiasi di lingue.  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente illustra un file di un prodotto completo per l'installazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ Nell'esempio di codice riportato di seguito viene illustrato un file di prodotto completo per l'installazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -162,4 +162,4 @@ Oggetto *del file di prodotto* è un manifesto XML che descrive tutte le dipende
   
 ## <a name="see-also"></a>Vedere anche  
  [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

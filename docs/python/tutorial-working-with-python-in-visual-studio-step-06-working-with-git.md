@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72289712"
 ---
 # <a name="step-6-work-with-git"></a>Passaggio 6: Utilizzo di Git
@@ -32,7 +32,7 @@ Questo articolo offre una panoramica di base sulla creazione di un repository Gi
 
     ![Le informazioni aggiuntive vengono visualizzate quando si posiziona un controllo Git nella finestra di Visual Studio](media/working-with-git-01.png)
 
-1. Quando si crea un nuovo repository o si seleziona uno dei controlli Git, Visual Studio apre la finestra **Team Explorer**. È possibile aprire la finestra in qualsiasi momento con il comando di menu **Visualizza** > **Team Explorer.** La finestra dispone di tre riquadri principali, tra cui l'utilizzo dell'elenco a discesa nell'intestazione **di Team Explorer.** Il riquadro **di sincronizzazione,** che fornisce operazioni di pubblicazione, viene visualizzato anche quando si seleziona il controllo **Push** (l'icona della freccia su):
+1. Quando si crea un nuovo repository o si seleziona uno dei controlli Git, Visual Studio apre la finestra **Team Explorer**. (È possibile aprire la finestra in qualsiasi momento con la **visualizzazione**  >  Comando di menu **Team Explorer** .) La finestra dispone di tre riquadri principali, che è possibile passare dall'elenco a discesa nell'intestazione **Team Explorer** . Il riquadro di **sincronizzazione** , che fornisce le operazioni di pubblicazione, viene visualizzato anche quando si seleziona il controllo **push** (l'icona freccia su):
 
     ![Team Explorer in Visual Studio dopo la creazione di un repository locale](media/working-with-git-02.png)
 
@@ -48,13 +48,13 @@ Questo articolo offre una panoramica di base sulla creazione di un repository Gi
 
     ![Team Explorer in Visual Studio per la visualizzazione dei rami](media/working-with-git-04.png)
 
-1. Selezionando il controllo Git con il nome del repository (**CosineWave** in un'immagine precedente), **Team Explorer** mostra un'interfaccia **Connect** con cui è possibile passare rapidamente a un altro repository interamente.
+1. Selezionando il controllo Git con il nome del repository (**CosineWave** in un'immagine precedente), **Team Explorer** Mostra un'interfaccia **Connect** con la quale è possibile passare rapidamente a un altro repository.
 
-1. Quando si usa un repository locale, le modifiche sottoposte a commit passano direttamente al repository. Se si è connessi a un repository remoto, selezionare l'intestazione a discesa in **Team Explorer,** scegliere **Sincronizza** per passare alla sezione **Sincronizzazione** e utilizzare i comandi **Pull** e **Fetch** presentati in questa posizione.
+1. Quando si usa un repository locale, le modifiche sottoposte a commit passano direttamente al repository. Se si è connessi a un repository remoto, selezionare l'intestazione a discesa in **Team Explorer**, scegliere **Sincronizza** per passare alla sezione **sincronizzazione** e usare i comandi **pull** e **Fetch** presentati qui.
 
 ## <a name="go-deeper"></a>Approfondimento
 
-Per una breve procedura dettagliata della creazione di un progetto da un repository Git remoto, vedere [Guida introduttiva: Clonare un repository di codice Python in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+Per una breve procedura dettagliata sulla creazione di un progetto da un repository GIT remoto, vedere [Guida introduttiva: clonare un repository di codice Python in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 Per un'esercitazione molto più completa, comprendente la gestione dei conflitti di unione, la revisione di codice con richieste pull, la riassegnazione e il cherry-pick delle modifiche tra rami, vedere [Get started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart) (Introduzione a Git e Azure Repos).
 
@@ -72,6 +72,6 @@ Per un'esercitazione molto più completa, comprendente la gestione dei conflitti
 Da qui è possibile esaminare i concetti e le procedure dettagliate, inclusi gli articoli seguenti:
 
 - [Creare un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md)
-- [Pubblicare in Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Profilatura](profiling-python-code-in-visual-studio.md)
 - [Testing unità](unit-testing-python-in-visual-studio.md)

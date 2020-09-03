@@ -12,17 +12,17 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278684"
 ---
 # <a name="options-text-editor-cc-view"></a>Opzioni, Editor di testo, C/C++, Visualizza
 
 Usare queste pagine delle proprietà per modificare il comportamento predefinito dell'editor di codice in fase di programmazione in C o C++.
 
-Per accedere a questa pagina delle proprietà, scegliere**Opzioni** **degli strumenti** > ed espandere Editor di **testo**, quindi **C/C**, quindi **Scegliere Visualizza**.
+Per accedere a questa pagina delle proprietà, scegliere **strumenti**  >  **Opzioni** , espandere **editor di testo**, **C/C++**, quindi scegliere **Visualizza**.
 
 ## <a name="code-squiggles"></a>Controllo ortografia codice
 
@@ -46,7 +46,7 @@ Per gestire la modalità di gestione del controllo ortografia codice per C e C++
 
 - **Evidenzia token corrispondenti**: evidenzia le parentesi o la sintassi di inclusione corrispondente alla posizione del cursore.
 
-## <a name="outlining"></a>Struttura
+## <a name="outlining"></a>struttura
 
 - **Abilita struttura**: abilita la modalità struttura all'apertura di un file.
 

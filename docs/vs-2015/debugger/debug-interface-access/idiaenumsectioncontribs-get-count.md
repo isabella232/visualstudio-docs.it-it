@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 978d88996b917857dfdf79dd176a1194293764eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189991"
 ---
-# <a name="idiaenumsectioncontribsgetcount"></a>IDiaEnumSectionContribs::get_Count
+# <a name="idiaenumsectioncontribsget_count"></a>IDiaEnumSectionContribs::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera il numero dei contributi di sezione.  
+Recupera il numero di contributi alla sezione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,10 +35,10 @@ HRESULT get_Count ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il numero dei contributi di sezione.  
+ out Restituisce il numero di contributi alla sezione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   

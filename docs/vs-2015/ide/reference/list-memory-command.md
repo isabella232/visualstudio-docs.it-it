@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2630402e03d1256f63e542818a9066745206d2c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672754"
 ---
 # <a name="list-memory-command"></a>Comando Elenca memoria
@@ -37,14 +37,14 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Argomenti
  `expression` Facoltativo. L'indirizzo di memoria da cui iniziare la visualizzazione della memoria.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /ANSI&#124;Unicode facoltativo. Visualizza la memoria come caratteri corrispondenti ai byte di memoria, ANSI o Unicode.
 
  /Count: `number` facoltativo. Determina il numero di byte di memoria da visualizzare, a partire da `expression`.
 
  /Format: `formattype` facoltativo. Tipo di formato per la visualizzazione di informazioni sulla memoria nella finestra **Memoria**; può essere OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) o Double (64 bit). Se viene usato il formato OneByte, `/Unicode` non è disponibile.
 
- /Hex&#124;non&#124;firmato facoltativo. Specifica il formato per la visualizzazione dei numeri: con segno, senza segno o esadecimale.
+ /Hex&#124;firmato&#124;facoltativo senza segno. Specifica il formato per la visualizzazione dei numeri: con segno, senza segno o esadecimale.
 
 ## <a name="remarks"></a>Osservazioni
  Invece di scrivere un comando **Debug.ListMemory** completo con tutte le opzioni, è possibile richiamare il comando tramite alias predefiniti con alcune opzioni preimpostate su valori specificati. Ad esempio, anziché immettere:
@@ -65,11 +65,11 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |-----------|--------------------------|
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
-|**db**|Debug.ListMemory /Format:OneByte|
-|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**dd**|Debug.ListMemory /Format:FourBytes|
-|**df**|Debug.ListMemory /Format:Float|
-|**dq**|Debug.ListMemory /Format:EightBytes|
+|**DB**|Debug.ListMemory /Format:OneByte|
+|**DC**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**gg**|Debug.ListMemory /Format:FourBytes|
+|**DF**|Debug.ListMemory /Format:Float|
+|**DQ**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
 ## <a name="example"></a>Esempio

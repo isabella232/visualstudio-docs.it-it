@@ -11,10 +11,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 2158c889aefc85c908aa9ee42d45858fd11d557e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590813"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
@@ -196,4 +196,4 @@ namespace TestProject1
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Eseguire unit test del codiceUnit test your code](../test/unit-test-your-code.md)
+- [Eseguire unit test del codice](../test/unit-test-your-code.md)

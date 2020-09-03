@@ -1,5 +1,5 @@
 ---
-title: GETHOSTNAME_TYPE . Documenti Microsoft
+title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5a7da1486f0edf52f3f0d96db699f60f24e36827
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736780"
 ---
 # <a name="gethostname_type"></a>GETHOSTNAME_TYPE
@@ -53,9 +53,9 @@ Specifica un nome file dell'host.
 Questi valori vengono passati come argomento al metodo [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) per recuperare un nome host in formati diversi.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE . Documenti Microsoft
+title: EXCEPTION_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736952"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
@@ -78,61 +78,61 @@ public enum enum_EXCEPTION_STATE {
 
 ## <a name="fields"></a>Campi
 `EXCEPTION_NONE`\
-Non arrestarsi in corrispondenza dell'eccezione.
+Non arrestare in corrispondenza dell'eccezione.
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-Stop al primo sputo di eccezione. Quando si descrive un evento di eccezione, questo flag indica che l'evento di eccezione è un evento di eccezione first-chance.
+Arresta alla prima attivazione dell'eccezione. Quando si descrive un evento Exception, questo flag indica che l'evento Exception è un evento di eccezione first-chance.
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-Arresto al secondo attivazione di eccezione. Quando si descrive un evento di eccezione, indica che l'evento di eccezione è un evento di eccezione second-chance.
+Arresta alla seconda generazione dell'eccezione. Quando si descrive un evento Exception, indica che l'evento Exception è un evento di eccezione second-chance.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-Interrompere la prima generazione di un'eccezione in modalità utente. Quando si descrive un evento di eccezione, indica che l'evento di eccezione è un evento di eccezione utente di prima possibilità.
+Arresta alla prima attivazione di un'eccezione in modalità utente. Quando si descrive un evento di eccezione, indica che l'evento di eccezione è un evento di eccezione utente first-chance.
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-Interrompere quando non viene rilevata un'eccezione in modalità utente. Quando si descrive un evento di eccezione, indica che l'evento di eccezione è un evento di eccezione non rilevata dalla modalità utente.
+Arrestare quando un'eccezione in modalità utente non viene rilevata. Quando si descrive un evento Exception, indica che l'evento Exception è un evento di eccezione in modalità utente non rilevata.
 
 `EXCEPTION_STOP_ALL`\
-Interrompere in caso di qualsiasi eccezione. Non utilizzato durante la descrizione di un evento di eccezione.
+Arrestare in qualsiasi eccezione. Non utilizzato per la descrizione di un evento di eccezione.
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-Quando si descrive un evento di eccezione, indica che l'eccezione non può continuare da.
+Quando si descrive un evento di eccezione, indica che non è possibile continuare l'eccezione da.
 
 `EXCEPTION_CODE_SUPPORTED`\
-Indica che l'eccezione contiene codice che lo supporta. Utilizzato nella visualizzazione di un'eccezione
+Indica che l'eccezione dispone di codice che lo supporta. Utilizzato per la visualizzazione di un'eccezione
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-Indica che il codice di eccezione deve essere visualizzato in esadecimale. Utilizzato nella visualizzazione di un'eccezione.
+Indica che il codice di eccezione deve essere visualizzato in formato esadecimale. Utilizzato per la visualizzazione di un'eccezione.
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-Indica che il codice di eccezione supporta JustMyCode. Utilizzato nella visualizzazione di un'eccezione.
+Indica che il codice di eccezione supporta JustMyCode. Utilizzato per la visualizzazione di un'eccezione.
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-Indica che il debugger del codice gestito deve gestire le eccezioni. Se non è impostato, il debugger predefinito gestisce le eccezioni. Viene passato al metodo [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) e non utilizzato nella struttura [EXCEPTION_INFO.](../../../extensibility/debugger/reference/exception-info.md)
+Indica che il debugger del codice gestito deve gestire le eccezioni. Se non è impostato, il debugger predefinito gestisce le eccezioni. Viene passato al metodo [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) e non viene utilizzato nella struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) .
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
-OBSOLETO, NON UTILIZZARE.
+OBSOLETO, NON USARE.
 
 `EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
-OBSOLETO, NON UTILIZZARE.
+OBSOLETO, NON USARE.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
-OBSOLETO, NON UTILIZZARE.
+OBSOLETO, NON USARE.
 
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
-OBSOLETO, NON UTILIZZARE.
+OBSOLETO, NON USARE.
 
 ## <a name="remarks"></a>Osservazioni
-Utilizzato come `dwState` membro della struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) per indicare lo stato dell'eccezione e le operazioni che è possibile eseguire al riguardo.
+Utilizzato come `dwState` membro della struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) per indicare lo stato dell'eccezione e le operazioni che possono essere eseguite.
 
-Questi valori vengono inoltre passati al metodo [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) per impostare lo stato di tutte le eccezioni.
+Questi valori vengono passati anche al metodo [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) per impostare lo stato di tutte le eccezioni.
 
 Questi flag possono essere combinati con un OR bit per bit.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

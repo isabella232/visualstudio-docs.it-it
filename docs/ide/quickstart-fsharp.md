@@ -12,25 +12,25 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70180318"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Guida introduttiva: Usare Visual Studio per creare il primo servizio Web ASP.NET Core in F\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Guida introduttiva: usare Visual Studio per creare il primo servizio Web di ASP.NET Core in F\#
 
 In questa introduzione di 5-10 minuti a F# in Visual Studio verrà creata un'applicazione Web ASP.NET Core F#.
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Per prima cosa, verrà creato un progetto API Web ASP:NET Core. Il tipo di proge
 
 1. Aprire Visual Studio.
 
-2. Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**.
+2. Dalla barra dei menu in alto scegliere **file** > **nuovo** > **progetto**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual F#** e quindi scegliere **Web**. Nel riquadro centrale, scegliere **Applicazione Web ASP.NET Core**, quindi scegliere **OK**.
 
@@ -50,7 +50,7 @@ Per prima cosa, verrà creato un progetto API Web ASP:NET Core. Il tipo di proge
 
      ![Carico di lavoro ASP.NET nel programma di installazione di Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
-4.Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** selezionare **ASP.NET Core 2.1** nel menu a discesa in alto. Se non viene visualizzato **ASP.NET Core 2.1** nell'elenco, installarlo seguendo il collegamento **Download** che dovrebbe essere visualizzato in una barra gialla nella parte superiore della finestra di dialogo. Scegliere **OK**.
+4.Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** selezionare **ASP.NET Core 2.1** nel menu a discesa in alto. Se nell'elenco non viene visualizzato **ASP.NET Core 2,1** , installarlo seguendo il collegamento di **download** che dovrebbe essere visualizzato in una barra gialla nella parte superiore della finestra di dialogo. Scegliere **OK**.
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Per prima cosa, verrà creato un progetto API Web ASP:NET Core. Il tipo di proge
 
 1. Aprire Visual Studio.
 
-2. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
+2. Nella finestra Start scegliere **Crea un nuovo progetto**.
 
 3. Nella pagina **Crea un nuovo progetto** digitare **f# web** nella casella di ricerca e quindi scegliere il modello di progetto **Applicazione Web ASP.NET Core**. Scegliere **Avanti**.
 
@@ -91,7 +91,7 @@ Il codice dovrebbe essere simile al seguente nell'editor:
 
 ## <a name="run-the-application"></a>Eseguire l'applicazione
 
-1. Premere **CTRL**+**F5** per eseguire l'applicazione e aprirla in un browser Web.
+1. Premere **CTRL** + **F5** per eseguire l'applicazione e aprirla in un Web browser.
 
 2. La pagina dovrebbe passare alla route `/api/values`, ma in caso contrario, immettere `https://localhost:44396/api/values` nel browser.
 

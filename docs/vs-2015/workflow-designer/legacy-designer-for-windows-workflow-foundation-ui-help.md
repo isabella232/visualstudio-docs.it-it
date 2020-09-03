@@ -14,19 +14,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2ad067adf79a2a7d08c6a45e7c205480621abf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658960"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation
 Contenuto della sezione sono inclusi gli argomenti della Guida sensibile al contesto per la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy di [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Usare la finestra di progettazione legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- È possibile accedere a questi argomenti dalla [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] interfaccia utente premendo **F1** quando viene aperta una finestra di dialogo [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy.
+ È possibile accedere a questi argomenti dall' [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] interfaccia utente premendo **F1** quando è aperta una finestra di [!INCLUDE[wfd2](../includes/wfd2-md.md)] dialogo legacy.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Associare a una finestra di dialogo delle proprietà dell’attività (legacy)](../workflow-designer/bind-to-an-activity-s-property-dialog-box-legacy.md)
+ [Eseguire l'associazione a una finestra di dialogo delle proprietà dell'attività (legacy)](../workflow-designer/bind-to-an-activity-s-property-dialog-box-legacy.md)
 
  [Finestra di dialogo Seleziona set di regole (legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md)
 

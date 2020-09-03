@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 742328802af7097fa0c48c82b35688ed0784ce34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205176"
 ---
-# <a name="namematch"></a>NAME_MATCH
+# <a name="name_match"></a>NAME_MATCH
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Seleziona l'opzione maiuscole per i nomi corrispondenti.  
+Seleziona l'opzione case per i nomi corrispondenti.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,18 +42,18 @@ public enum NameMatchOptions { 
 }  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  nmNone  
  Non è stata specificata alcuna opzione.  
   
  nmCaseSensitive  
- Indica che i nomi per cui trovare una corrispondenza tra maiuscole e minuscole.  
+ Indica che i nomi di cui trovare una corrispondenza fanno distinzione tra maiuscole e minuscole.  
   
  nmCaseInsensitive  
- Indica che i nomi per cui trovare una corrispondenza non sono tra maiuscole e minuscole.  
+ Indica che i nomi di cui trovare una corrispondenza non fanno distinzione tra maiuscole e minuscole.  
   
-## <a name="remarks"></a>Note  
- Passato come argomento per i metodi seguenti:  
+## <a name="remarks"></a>Osservazioni  
+ Passato come argomento ai metodi seguenti:  
   
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   
@@ -64,9 +64,9 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

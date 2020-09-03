@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO_FIELDS . Documenti Microsoft
+title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737600"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
@@ -54,34 +54,34 @@ public enum enum_CONTEXT_INFO_FIELDS {
 
 ## <a name="fields"></a>Campi
 `CIF_MODULEURL`\
-Inizializzare/utilizzare `bstrModuleUrl` il campo della [struttura CONTEXT_INFO.](../../../extensibility/debugger/reference/context-info.md)
+Inizializza/usa il `bstrModuleUrl` campo della struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) .
 
 `CIF_FUNCTION`\
-Inizializzare/utilizzare `bstrFunction` il `CONTEXT_INFO` campo della struttura.
+Inizializza/usa il `bstrFunction` campo della `CONTEXT_INFO` struttura.
 
 `CIF_FUNCTIONOFFSET`\
-Inizializzare/utilizzare `posFunctionOffset` il `CONTEXT_INFO` campo della struttura.
+Inizializza/usa il `posFunctionOffset` campo della `CONTEXT_INFO` struttura.
 
 `CIF_ADDRESS`\
-Inizializzare/utilizzare `bstrAddress` il `CONTEXT_INFO` campo della struttura.
+Inizializza/usa il `bstrAddress` campo della `CONTEXT_INFO` struttura.
 
 `CIF_ADDRESSOFFSET`\
-Inizializzare/utilizzare `bstrAddressOffset` il `CONTEXT_INFO` campo della struttura.
+Inizializza/usa il `bstrAddressOffset` campo della `CONTEXT_INFO` struttura.
 
 `CIF_ALLFIELDS`\
-Inizializzare/utilizzare tutti `CONTEXT_INFO` i campi della struttura.
+Inizializza/usa tutti i campi della `CONTEXT_INFO` struttura.
 
 ## <a name="remarks"></a>Osservazioni
-A questi valori viene passato un parametro al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) per indicare i campi della struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) da inizializzare.
+A questi valori viene passato un parametro al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) per indicare quali campi della struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) devono essere inizializzati.
 
-Questi flag vengono utilizzati anche `CONTEXT_INFO` per indicare quali campi della struttura vengono utilizzati e validi quando viene restituita la struttura.
+Questi flag vengono usati anche per indicare quali campi della `CONTEXT_INFO` struttura vengono usati e validi quando viene restituita la struttura.
 
 Questi valori possono essere combinati con un OR bit per bit.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

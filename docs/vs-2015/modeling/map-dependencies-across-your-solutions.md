@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d70016229ad9599c7ededbefaf08744f2bb6f351
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548083"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
@@ -51,7 +51,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
 - [Informazioni sul codice complesso con mappe codice](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
-## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a>Introduzione alle mappe codice
+## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a> Introduzione alle mappe codice
  **Per usare le mappe codice saranno necessari**:
 
 - Visual Studio Enterprise per creare mappe codice tramite l'editor di codice, Esplora soluzioni, Visualizzazione classi o Visualizzatore oggetti.
@@ -115,9 +115,9 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
      Ora si ha una mappa vuota, che non viene visualizzata nelle cartelle della soluzione.
 
-## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a>Visualizza le dipendenze complessive
+## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a> Visualizza le dipendenze complessive
 
-### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a>Visualizzare le dipendenze nella soluzione
+### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a> Visualizzare le dipendenze nella soluzione
 
 1. Aprire il menu **Architettura** e scegliere **Genera mappa codici per la soluzione senza compilazione**.
 
@@ -298,7 +298,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
      ![Primo grafico dipendenze a livello di&#45;per il file. h](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
 
-### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a>Risolvere i problemi relativi alle mappe per il codice C e C++
+### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a> Risolvere i problemi relativi alle mappe per il codice C e C++
  Gli elementi seguenti non sono supportati nel codice C e C++:
 
 - I tipi di base non vengono visualizzati nelle mappe che includono la gerarchia padre.

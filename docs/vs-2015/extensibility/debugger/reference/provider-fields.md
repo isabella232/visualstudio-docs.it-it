@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba0f7cb33ef0bf7fde63d53997d014536e46a85b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204970"
 ---
-# <a name="providerfields"></a>PROVIDER_FIELDS
+# <a name="provider_fields"></a>PROVIDER_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica le proprietà associate a un provider di programma.  
+Specifica le proprietà associate a un provider di programmi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,22 +41,22 @@ public enum enum_PROVIDER_FIELDS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  PFIELD_PROGRAM_NODES  
  Il `ProgramNodes` campo è valido.  
   
  PFIELD_IS_DEBUGGER_PRESENT  
  Il `fIsDebuggerPresent` campo è valido.  
   
-## <a name="remarks"></a>Note  
- Questi valori vengono restituiti nel `Fields` membro della [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura per indicare quali campi della struttura sono stati compilati in modo esplicito.  
+## <a name="remarks"></a>Osservazioni  
+ Questi valori vengono restituiti nel `Fields` membro della struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) per indicare quali campi della struttura sono stati compilati in modo esplicito.  
   
- Questi valori possono essere combinati con un bit per bit `OR`.  
+ Questi valori possono essere combinati con un bit per bit `OR` .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

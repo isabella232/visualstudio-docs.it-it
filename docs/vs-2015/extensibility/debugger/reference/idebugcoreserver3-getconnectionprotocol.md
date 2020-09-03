@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetConnectionProtocol | Microsoft Docs
+title: 'IDebugCoreServer3:: GetConnectionProtocol | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0572cdb622da2425cf21cd925e3022611861f2b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205246"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Restituisce un valore che indica il protocollo viene usato per stabilire la comunicazione tra il server e il pacchetto di debug.  
+Restituisce un valore che indica il protocollo utilizzato per la comunicazione tra il server e il pacchetto di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,10 +40,10 @@ int GetConnectionProtocol(
   
 #### <a name="parameters"></a>Parametri  
  `pProtocol`  
- [out] Restituisce uno dei valori di [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) enumerazione.  
+ out Restituisce uno dei valori dell'enumerazione [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

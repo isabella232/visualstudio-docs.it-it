@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154885"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installare il supporto per l'analisi scientifica in Visual Studio
@@ -80,15 +80,15 @@ SQL Server supporta l'uso di Python per eseguire attività di analisi avanzate d
 
 L'esecuzione del codice nella posizione in cui si trovano già i dati offre i vantaggi seguenti:
 
-- **Eliminazione dello spostamento dei dati:** anziché spostare i dati dal database all'applicazione o al modello, è possibile compilare applicazioni nel database. Questa funzionalità consente di evitare le barriere a livello di sicurezza, conformità, governance e integrità, oltre a una serie di problemi simili correlati allo spostamento di grandi quantità di dati. È anche possibile usare set di dati che non potrebbero essere gestiti con la memoria di un computer client.
+- **Eliminazione dello spostamento dei dati**: anziché spostare dati dal database all'applicazione o al modello, è possibile compilare applicazioni nel database. Questa funzionalità consente di evitare le barriere a livello di sicurezza, conformità, governance e integrità, oltre a una serie di problemi simili correlati allo spostamento di grandi quantità di dati. È anche possibile usare set di dati che non potrebbero essere gestiti con la memoria di un computer client.
 
-- **Facile distribuzione**: Una volta che si dispone di un modello pronto, distribuirlo nell'ambiente di produzione è una semplice questione di incorporarlo in uno script T-SQL. Qualsiasi applicazione client SQL scritta in qualsiasi linguaggio può quindi sfruttare modelli e intelligence tramite una chiamata di stored procedure. Non sono necessarie integrazioni specifiche del linguaggio.
+- **Facilità di distribuzione**: quando è pronto un modello, la distribuzione nell'ambiente di produzione è una semplice operazione di incorporamento in uno script T-SQL. Qualsiasi applicazione client SQL scritta in qualsiasi linguaggio può quindi sfruttare modelli e intelligence tramite una chiamata di stored procedure. Non sono necessarie integrazioni specifiche del linguaggio.
 
-- **Prestazioni e scalabilità di livello**enterprise: è possibile usare le funzionalità avanzate di SQL Server, ad esempio gli indici delle tabelle in memoria e dell'archivio colonne con le API scalabili ad alte prestazioni nei pacchetti RevoScale.Enterprise-grade performance and scale : You can use SQL Server's advanced capabilities like in-memory table and column store indexes with the high-performance scalable APIs in the RevoScale packages. Evitare gli spostamenti di dati significa anche evitare i vincoli di memoria client man mano che aumentano le dimensioni dei dati oppure se si desidera aumentare le prestazioni dell'applicazione.
+- **Scalabilità e prestazioni di livello aziendale**: è possibile usare le funzionalità avanzate di SQL Server come gli indici di tabella e di archivio colonne in memoria con le API scalabili ad alte prestazioni nei pacchetti RevoScale. Evitare gli spostamenti di dati significa anche evitare i vincoli di memoria client man mano che aumentano le dimensioni dei dati oppure se si desidera aumentare le prestazioni dell'applicazione.
 
-- **Estendibilità avanzata**: È possibile installare ed eseguire uno qualsiasi dei più recenti pacchetti open source in SQL Server per creare applicazioni di deep learning e AI su enormi quantità di dati in SQL Server. Installare un pacchetto in SQL Server è semplice come l'installazione di un pacchetto nel computer locale.
+- **Estendibilità avanzata**: è possibile installare ed eseguire uno qualsiasi dei pacchetti open source più recenti in SQL Server per creare applicazioni di apprendimento avanzato e intelligenza artificiale su grandi quantità di dati in SQL Server. Installare un pacchetto in SQL Server è semplice come l'installazione di un pacchetto nel computer locale.
 
-- **Disponibilità ampia senza costi aggiuntivi:** le integrazioni di lingua sono disponibili in tutte le edizioni di SQL Server 2017SQL Server 2017 e versioni successive, inclusa l'edizione Express.
+- **Disponibilità ampia senza costi aggiuntivi**: le integrazioni di linguaggi sono disponibili in tutte le edizioni di SQL Server 2017 e versioni successive, inclusa la versione Express Edition.
 
 Per sfruttare al meglio l'integrazione in SQL Server, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Elaborazione ed archiviazione dati** con l'opzione **SQL Server Data Tools**. Questa opzione abilita SQL IntelliSense, l'evidenziazione della sintassi e la distribuzione.
 

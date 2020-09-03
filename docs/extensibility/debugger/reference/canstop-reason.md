@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON . Documenti Microsoft
+title: CANSTOP_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737691"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
-Utilizzato per determinare se un programma può interrompere l'esecuzione dopo aver raggiunto un determinato punto dell'esecuzione.
+Utilizzato per determinare se un programma può arrestare l'esecuzione dopo aver raggiunto un punto specifico dell'esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,15 +47,15 @@ public enum enum_CANSTOP_REASON {
 Specifica il punto di ingresso del programma specificato.
 
 `CANSTOP_STEPIN`\
-Specifica l'esecuzione di istruzioni in una funzione.
+Specifica l'esecuzione di un'istruzione in una funzione.
 
 ## <a name="remarks"></a>Osservazioni
-Passato come argomento per il [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodo per confermare con il gestore di debug di sessione (SDM) se è possibile interrompere dopo aver raggiunto il punto di ingresso del programma o dopo l'istruzione in una funzione o un metodo.
+Passato come argomento al metodo [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) per confermare con la gestione del debug della sessione (SDM) se è opportuno arrestarsi dopo il raggiungimento del punto di ingresso del programma o dopo l'esecuzione di un'istruzione in una funzione o un metodo.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

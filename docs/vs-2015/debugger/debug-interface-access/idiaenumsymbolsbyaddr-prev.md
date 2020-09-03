@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f7a5debb0ffccffed4077c367d5b008a2a2a7cc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189632"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
@@ -37,19 +37,19 @@ HRESULT Prev ( 
   
 #### <a name="parameters"></a>Parametri  
  celt  
- [in] Il numero di simboli nell'enumeratore deve essere recuperato.  
+ in Numero di simboli nell'enumeratore da recuperare.  
   
  rgelt  
- [out] Matrice che deve essere compilata con [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) gli oggetti che rappresentano i simboli desiderati.  
+ out Matrice che deve essere compilata con gli oggetti [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresentano i simboli desiderati.  
   
  pceltFetched  
- [out] Restituisce il numero di simboli nell'enumeratore recuperata.  
+ out Restituisce il numero di simboli nell'enumeratore recuperato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti simboli precedenti. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo aggiorna la posizione di enumeratore per il numero di elementi recuperati.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo aggiorna la posizione dell'enumeratore in base al numero di elementi recuperati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   

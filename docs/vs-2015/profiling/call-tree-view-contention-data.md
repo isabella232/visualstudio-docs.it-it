@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189356"
 ---
 # <a name="call-tree-view---contention-data"></a>Visualizzazione Albero delle chiamate: dati su conflitti
@@ -28,14 +28,14 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 ## <a name="highlighting-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
  Nella visualizzazione Albero delle chiamate è possibile espandere ed evidenziare il percorso di esecuzione del processo o della funzione che ha determinato il maggior numero di conflitti.  
   
-- Per visualizzare il percorso più attivo fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
+- Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
   
 ## <a name="setting-the-call-tree-root-node"></a>Impostare il nodo radice dell'albero delle chiamate  
  Ogni processo nell'esecuzione della profilatura viene visualizzato come nodo radice. Per impostare il nodo di inizio della visualizzazione Albero delle chiamate, fare clic con il pulsante destro del mouse sul nodo che si vuole impostare come nodo iniziale e fare clic su **Imposta radice**.  
   
  Quando si imposta il nodo radice si eliminano dalla visualizzazione tutte le altre voci ad eccezione del sottoalbero del nodo selezionato. Per reimpostare il nodo radice sul nodo originale, fare clic con il pulsante destro del mouse nella visualizzazione Albero delle chiamate e fare clic su **Reimposta radice**.  
   
-|Colonna|DESCRIZIONE|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Tempo blocco esclusivo**|Tempo per il quale l'esecuzione delle istanze della funzione in questo percorso di esecuzione è stata bloccata nell'esecuzione della profilatura. Il tempo non include il tempo di blocco delle funzioni figlio chiamate dalla funzione.|  
 |**% tempo blocco esclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco esclusivo per questa funzione in questo percorso di esecuzione.|  
@@ -47,18 +47,18 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 |**% tempo blocco inclusivo**|Percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco inclusivo per le istanze di questa funzione in questo percorso di esecuzione.|  
 |**Conflitti inclusivi**|Numero totale di conflitti che hanno bloccato istanze di questa funzione in questo percorso di esecuzione. Il numero include i conflitti delle funzioni figlio chiamate dalla funzione.|  
 |**% conflitti inclusivi**|Percentuale del totale di conflitti nell'esecuzione della profilatura corrispondente ai conflitti inclusivi delle istanze di questa funzione in questo percorso di esecuzione.|  
-|**Livello**|Livello della funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di VSReport. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Level**|Livello della funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di VSReport. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione.|  
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)   
- [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)   
- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
+ [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)   
+ [Visualizzazione albero delle chiamate-Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Visualizzazione albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)   
+ [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 076ce3858774d44e2d6c4c25205ced74b7a41bf0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539763"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Non dichiarare campi di istanza visibili
@@ -47,7 +47,7 @@ ms.locfileid: "85539763"
  Non escludere un avviso da questa regola. I campi visibili esternamente non offrono alcun vantaggio non disponibile per le proprietà. Inoltre, i campi pubblici non possono essere protetti tramite [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Vedere [CA2112: i tipi protetti non devono esporre i campi](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo ( `BadPublicInstanceFields` ) che viola questa regola. `GoodPublicInstanceFields`Mostra il codice corretto.
+ Nell'esempio seguente viene illustrato un tipo ( `BadPublicInstanceFields` ) che viola questa regola. `GoodPublicInstanceFields` Mostra il codice corretto.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 
