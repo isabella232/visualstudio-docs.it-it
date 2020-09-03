@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 28267f705dd9a747d0e3f3ac5dc2869ab7de8f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656313"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedura: passare dalle visualizzazioni all'editor XML
@@ -29,7 +29,7 @@ In questo argomento viene illustrato come passare dalle visualizzazioni di Proge
 
 3. Per passare alla visualizzazione grafico con la filigrana, fare clic su **Usa la visualizzazione grafico per visualizzare la relazione tra il collegamento nodi** nella visualizzazione iniziale.
 
-4. Trascinare il nodo `USAddress` da XML Schema Explorer alla visualizzazione grafico. Fare clic con il pulsante destro del mouse sul nodo `USAddress` nella visualizzazione grafico e scegliere **Mostra in visualizzazione modello di contenuto** nel menu di scelta rapida.
+4. Trascinare il nodo `USAddress` da XML Schema Explorer alla visualizzazione grafico. Fare clic con il pulsante destro del mouse sul `USAddress` nodo nella visualizzazione grafico e scegliere **Mostra in visualizzazione modello di contenuto** nel menu di scelta rapida.
 
      Viene aperta la visualizzazione modello di contenuto con i dettagli del nodo `USAddress`.
 

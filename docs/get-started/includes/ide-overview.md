@@ -7,10 +7,10 @@ author: TerryGLee
 manager: jillfra
 ms.topic: include
 ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79082195"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
@@ -23,19 +23,19 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 ::: moniker range="vs-2019"
 
-[![L'IDE di Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+[![IDE di Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
 Questa immagine presenta Visual Studio con un progetto aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
-- [Esplora soluzioni](../../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consente di organizzare il codice raggruppando i file in [soluzioni e progetti](../tutorial-projects-solutions.md).
+- [Esplora soluzioni](../../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consentono di organizzare il codice raggruppando i file in [soluzioni e progetti](../tutorial-projects-solutions.md).
 
-- La [finestra dell'editor](../../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più utilizzati, visualizza il contenuto dei file. Nella finestra è possibile modificare il codice o progettare un'interfaccia utente, ad esempio una finestra con pulsanti e caselle di testo.
+- La [finestra dell'editor](../../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più usati, visualizza il contenuto dei file. Nella finestra è possibile modificare il codice o progettare un'interfaccia utente, ad esempio una finestra con pulsanti e caselle di testo.
 
 ::: moniker range="vs-2017"
 
-- La finestra [Output](../../ide/reference/output-window.md) (in basso al centro) è la finestra in cui Visual Studio invia le notifiche, ad esempio messaggi di errore e di debug, avvisi del compilatore, messaggi di stato di pubblicazione e altro. Ogni messaggio viene visualizzato in una scheda separata.
+- La finestra [Output](../../ide/reference/output-window.md) (in basso al centro) è la finestra in cui Visual Studio invia le notifiche, ad esempio messaggi di errore e di debug, avvisi del compilatore, messaggi di stato di pubblicazione e altro. Ogni origine dei messaggi ha una scheda separata.
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Questa immagine presenta Visual Studio con un progetto aperto e varie finestre d
 
 Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2017 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2017.
 
-Esistono tre edizioni di Visual Studio: Community, Professional ed Enterprise. Vedere [Confrontare le edizioni](https://visualstudio.microsoft.com/vs/compare/) di Visual Studio per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio: community, Professional ed Enterprise. Per informazioni sulle funzionalità supportate in ogni edizione, vedere [confrontare le edizioni di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) .
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Esistono tre edizioni di Visual Studio: Community, Professional ed Enterprise. V
 
 Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2019 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2019.
 
-Esistono tre edizioni di Visual Studio 2019: Community, Professional ed Enterprise. Vedere [Confrontare le edizioni](https://visualstudio.microsoft.com/vs/compare/) di Visual Studio per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio 2019: community, Professional ed Enterprise. Per informazioni sulle funzionalità supportate in ogni edizione, vedere [confrontare le edizioni di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) .
 
 ::: moniker-end
 
@@ -85,18 +85,18 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Effettuare il refactoring in Visual Studio](../media/refactoring-menu.png)
 
-- [Intellisense](../../ide/using-intellisense.md)
+- [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense è un termine che indica diverse funzionalità che visualizzano le informazioni sul codice direttamente nell'editor e, in alcuni casi, scrivono automaticamente piccole parti di codice. È come se si avesse a disposizione la documentazione di base all'interno dell'editor senza dover cercare le informazioni sul tipo altrove. Le funzionalità di IntelliSense variano a seconda del linguaggio. Per altre informazioni, vedere [IntelliSense per C#](../../ide/visual-csharp-intellisense.md), [IntelliSense per Visual C++](../../ide/visual-cpp-intellisense.md), [IntelliSense per JavaScript](../../ide/javascript-intellisense.md) e [IntelliSense per Visual Basic](../../ide/visual-basic-specific-intellisense.md). La figura seguente mostra come IntelliSense visualizza un elenco di membri per un tipo:
 
    ![Elenco dei membri di Visual Studio](../media/intellisense-list-members.png)
 
-- Casella Cerca
+- Casella di ricerca
 
    La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
 
    > [!TIP]
-   > Premere **Ctrl**+**Q** come collegamento alla casella di ricerca.
+   > Premere **CTRL** + **Q** come collegamento alla casella di ricerca.
 
    ::: moniker range="vs-2017"
 
@@ -116,7 +116,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    È possibile apportare modifiche ed eseguire il debug con altri utenti in tempo reale, indipendentemente dal tipo di app o dal linguaggio di programmazione. Si può condividere il progetto in modo immediato e sicuro e, in base alle esigenze, si possono condividere sessioni di debug, istanze dei terminali, app Web localhost, chiamate vocali e molto altro ancora.
 
-- [Gerarchia di chiamata](../../ide/reference/call-hierarchy.md)
+- [Gerarchia delle chiamate](../../ide/reference/call-hierarchy.md)
 
    La finestra **Gerarchia di chiamata** mostra i metodi che chiamano un metodo selezionato. Si tratta di informazioni che possono risultare utili quando si prevede di cambiare o rimuovere il metodo o quando si tenta di rilevare un bug.
 
@@ -134,7 +134,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Vai a definizione](../media/go-to-definition-menu.png)
 
-- [Definizione di sbircia](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Visualizza definizione](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    La finestra **Visualizza definizione** mostra la definizione di un metodo o un tipo senza aprire un file separato.
 
@@ -160,7 +160,7 @@ Per iniziare, [scaricare Visual Studio](https://visualstudio.microsoft.com/downl
 
 Quando si apre per la prima volta Visual Studio, è possibile scegliere facoltativamente di [accedere](../../ide/signing-in-to-visual-studio.md) con l'account Microsoft o con l'account aziendale o dell'istituto di istruzione.
 
-## <a name="create-a-program"></a>Creare un programma.
+## <a name="create-a-program"></a>Creare un programma
 
 In questa sezione viene descritta in dettaglio la procedura per creare un programma semplice.
 
@@ -168,11 +168,11 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Aprire Visual Studio.
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **progetto**.
+1. Sulla barra dei menu scegliere **file** > **nuovo** > **progetto**.
 
    ![File > Nuovo progetto sulla barra dei menu](../media/file-new-project-menu.png)
 
-   Nella finestra di dialogo **Nuovo progetto** vengono visualizzati diversi *modelli*di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   La finestra di dialogo **nuovo progetto** Mostra diversi *modelli*di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
 1. Scegliere la categoria di modello **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
@@ -193,7 +193,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Sono disponibili altri menu e finestre degli strumenti, ma per il momento si procederà con la creazione del programma.
 
-1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **Ctrl**+**F5**.
+1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL** + **F5**.
 
    ![Menu Debug > Avvia senza eseguire debug](../media/overview-start-without-debugging.png)
 
@@ -236,7 +236,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Viene visualizzata la finestra iniziale con varie opzioni per clonare un repository, aprire un progetto recente o creare un nuovo progetto.
 
-1. Scegliere **Crea un nuovo progetto.**
+1. Scegliere **Crea un nuovo progetto**.
 
    ![Finestra iniziale di Visual Studio - Crea un nuovo progetto](../media/vs-2019/start-window-create-new-project.png)
 
@@ -262,7 +262,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Sono disponibili altri menu e finestre degli strumenti, ma per il momento si procederà con la creazione del programma.
 
-1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **Ctrl**+**F5**.
+1. Avviare l'app. È possibile farlo scegliendo **Avvia senza eseguire debug** dal menu **Debug** sulla barra dei menu. È anche possibile premere **CTRL** + **F5**.
 
    ![Menu Debug > Avvia senza eseguire debug](../media/overview-start-without-debugging.png)
 
@@ -339,7 +339,7 @@ In primo luogo, rinominare la variabile `name`:
 
    ![Membri dell'elenco di IntelliSense in Visual Studio](../media/intellisense-list-members.png)
 
-5. Selezionare il membro denominato **Now**, che è una proprietà della classe, facendo doppio clic su di esso o premendo **TAB**. Completare la riga di codice aggiungendo un punto e virgola alla fine.
+5. Selezionare il membro denominato **Now**, ovvero una proprietà della classe, facendo doppio clic su di esso o premendo **Tab**. Completare la riga di codice aggiungendo un punto e virgola alla fine.
 
 6. Sotto questa riga digitare o incollare le righe di codice seguenti:
 
@@ -365,7 +365,7 @@ In primo luogo, rinominare la variabile `name`:
 
 ::: moniker range="vs-2017"
 
-10. Eseguire nuovamente il programma premendo **Ctrl**+**F5**. L'output è simile al seguente:
+10. Eseguire di nuovo il programma premendo **CTRL** + **F5**. L'output è simile al seguente:
 
     ![Finestra della console con output del programma](../media/overview-console-final.png)
 
@@ -373,7 +373,7 @@ In primo luogo, rinominare la variabile `name`:
 
 ::: moniker range=">=vs-2019"
 
-10. Eseguire nuovamente il programma premendo **Ctrl**+**F5**. L'output è simile al seguente:
+10. Eseguire di nuovo il programma premendo **CTRL** + **F5**. L'output è simile al seguente:
 
     ![Finestra della console con output del programma](../media/vs-2019/overview-console-final.png)
 
@@ -391,7 +391,7 @@ Impostare un punto di interruzione per visualizzare il valore della variabile `u
 
    ![Punto di interruzione nella riga di codice in Visual Studio](../media/breakpoint.png)
 
-1. Avviare il debug selezionando **Debug** > di**avvio** o premendo **F5**.
+1. Avviare il debug selezionando **debug**  >  **Avvia debug** o premendo **F5**.
 
 1. Quando viene visualizzata la finestra della console e viene chiesto di immettere il nome, digitarlo e premere **INVIO**.
 
@@ -409,7 +409,7 @@ Per altri dettagli sul debug in Visual Studio, vedere [Tour delle funzionalità 
 
 È possibile personalizzare l'interfaccia utente di Visual Studio, ad esempio modificare il tema colori predefinito. Per modificare il tema **Scuro**:
 
-1. Nella barra dei menu, scegliere**Opzioni** **degli strumenti** > per aprire la finestra di dialogo **Opzioni.**
+1. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** .
 
 ::: moniker range="vs-2017"
 

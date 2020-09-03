@@ -13,36 +13,36 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295513"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nell'SDK di visualizzazione e modellazione è possibile definire i gestori eventi di archiviazione per propagare le modifiche alle risorse all'esterno dell'archivio, ad esempio le variabili non di archivio, i file, i modelli in altri archivi o altre estensioni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. I gestori eventi dell'archivio vengono eseguiti dopo la fine della transazione in cui si è verificato l'evento di attivazione. Vengono inoltre eseguite in un'operazione di annullamento o ripetizione. Pertanto, a differenza delle regole di archiviazione, gli eventi di archiviazione sono particolarmente utili per aggiornare i valori che non rientrano nell'archivio. Diversamente dagli eventi .NET, i gestori eventi di archiviazione sono registrati per l'ascolto di una classe: non è necessario registrare un gestore separato per ogni istanza. Per ulteriori informazioni su come scegliere tra diversi modi per gestire le modifiche, vedere [risposta alle modifiche e propagazione delle](../modeling/responding-to-and-propagating-changes.md)modifiche.
+Nell'SDK di visualizzazione e modellazione è possibile definire i gestori eventi di archiviazione per propagare le modifiche alle risorse esterne all'archivio, ad esempio le variabili non di archivio, i file, i modelli in altri archivi o altre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensioni. I gestori eventi dell'archivio vengono eseguiti dopo la fine della transazione in cui si è verificato l'evento di attivazione. Vengono inoltre eseguite in un'operazione di annullamento o ripetizione. Pertanto, a differenza delle regole di archiviazione, gli eventi di archiviazione sono particolarmente utili per aggiornare i valori che non rientrano nell'archivio. Diversamente dagli eventi .NET, i gestori eventi di archiviazione sono registrati per l'ascolto di una classe: non è necessario registrare un gestore separato per ogni istanza. Per ulteriori informazioni su come scegliere tra diversi modi per gestire le modifiche, vedere [risposta alle modifiche e propagazione delle](../modeling/responding-to-and-propagating-changes.md)modifiche.
 
  La superficie grafica e altri controlli dell'interfaccia utente sono esempi di risorse esterne che possono essere gestite dagli eventi di archiviazione.
 
 ### <a name="to-define-a-store-event"></a>Per definire un evento di archivio
 
-1. Scegliere il tipo di evento che si desidera monitorare. Per un elenco completo, esaminare le proprietà di <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Ogni proprietà corrisponde a un tipo di evento. I tipi di evento usati più di frequente sono:
+1. Scegliere il tipo di evento che si desidera monitorare. Per un elenco completo, esaminare le proprietà di <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> . Ogni proprietà corrisponde a un tipo di evento. I tipi di evento usati più di frequente sono:
 
-   - `ElementAdded`: attivato quando viene creato un elemento del modello, un collegamento alla relazione, una forma o un connettore.
+   - `ElementAdded` : attivato quando viene creato un elemento del modello, un collegamento alla relazione, una forma o un connettore.
 
-   - ElementPropertyChanged: attivato quando viene modificato il valore di una proprietà del dominio `Normal`. L'evento viene attivato solo se i valori nuovi e precedenti non sono uguali. Non è possibile applicare l'evento alle proprietà di archiviazione calcolate e personalizzate.
+   - ElementPropertyChanged: attivato quando viene modificato il valore di una `Normal` proprietà di dominio. L'evento viene attivato solo se i valori nuovi e precedenti non sono uguali. Non è possibile applicare l'evento alle proprietà di archiviazione calcolate e personalizzate.
 
         Non può essere applicato alle proprietà del ruolo che corrispondono ai collegamenti delle relazioni. Usare invece `ElementAdded` per monitorare la relazione di dominio.
 
-   - `ElementDeleted`: attivato dopo l'eliminazione di un elemento del modello, una relazione, una forma o un connettore. È comunque possibile accedere ai valori delle proprietà dell'elemento, ma non avrà alcuna relazione con altri elementi.
+   - `ElementDeleted` : attivato dopo l'eliminazione di un elemento del modello, una relazione, una forma o un connettore. È comunque possibile accedere ai valori delle proprietà dell'elemento, ma non avrà alcuna relazione con altri elementi.
 
 2. Aggiungere una definizione di classe parziale per _dslutente_**DocData** in un file di codice separato nel progetto **DslPackage** .
 
-3. Scrivere il codice dell'evento come metodo, come nell'esempio seguente. Può essere `static`, a meno che non si desideri accedere a `DocData`.
+3. Scrivere il codice dell'evento come metodo, come nell'esempio seguente. Può essere `static` , a meno che non si desideri accedere a `DocData` .
 
-4. Eseguire l'override `OnDocumentLoaded()` per registrare il gestore. Se è presente più di un gestore, è possibile registrarli tutti nella stessa posizione.
+4. Eseguire l'override `OnDocumentLoaded()` di per registrare il gestore. Se è presente più di un gestore, è possibile registrarli tutti nella stessa posizione.
 
    Il percorso del codice di registrazione non è critico. `DocView.LoadView()` è un percorso alternativo.
 
@@ -175,7 +175,7 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="store-event-types"></a>Tipi di eventi di archiviazione
  Ogni tipo di evento corrisponde a una raccolta in Store. EventManagerDirectory. È possibile aggiungere o rimuovere i gestori eventi in qualsiasi momento, ma è normale aggiungerli quando il documento viene caricato.
 
-|nome della proprietà `EventManagerDirectory`|Eseguito quando|
+|`EventManagerDirectory` Nome proprietà|Eseguito quando|
 |-------------------------------------------|-------------------|
 |ElementAdded|Viene creata un'istanza di una classe di dominio, una relazione di dominio, una forma, un connettore o un diagramma.|
 |ElementDeleted|Un elemento del modello è stato rimosso dalla directory degli elementi dell'archivio e non è più l'origine o la destinazione di una relazione. L'elemento non viene effettivamente eliminato dalla memoria, ma viene mantenuto in caso di un'operazione di annullamento futura.|

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b08035deec65c8c42fe875d380d9cc3d15533a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850274"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
@@ -30,7 +30,7 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
  Per scaricare e installare l'utilità riga di comando, passare a [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) e seguire le istruzioni. Per impostazione predefinita, CVCollectionCmd.exe è installato in %Programmi%\Microsoft Concurrency Visualizer Collection Tools\ (%Programmi(x86)%\Microsoft Concurrency Visualizer Collection Tools\ nei computer x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Raccogliere una traccia con CVCollectionCmd  
- È possibile raccogliere una traccia avviando l'app con CVCollectionCmd oppure tramite una connessione all'app. Per le opzioni disponibili, vedere i riferimenti ai comandi seguenti. Esempio:  
+ È possibile raccogliere una traccia avviando l'app con CVCollectionCmd oppure tramite una connessione all'app. Per le opzioni disponibili, vedere i riferimenti ai comandi seguenti. Ad esempio  
   
 ```  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
@@ -43,15 +43,15 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
   
 |Opzione|Descrizione|Parametri|Valori restituiti|  
 |------------|-----------------|----------------|-------------------|  
-|Query|Indica se è possibile avviare la raccolta.|nessuna|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non è in corso alcuna raccolta, ma sono già state abilitate una o più delle sessioni [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
-|Avvio|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
-|Attach|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|nessuna.|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
-|Detach|Arresta la raccolta.|nessuna.|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|  
-|Analizza|Analizza la traccia specificata.|Percorso completo del file CVTrace.|0 se l'analisi è riuscita.<br /><br /> 1 se non è possibile avviare l'analisi poiché la traccia specificata è a livello di sistema, ma non è stato specificato alcun processo di destinazione.<br /><br /> 2 se non è possibile avviare l'analisi poiché la traccia specificata non è a livello di sistema ed è stato specificato un processo.<br /><br /> 3  se l'analisi non è riuscita poiché il processo specificato non è valido.<br /><br /> 4 se l'analisi non è riuscita poiché il file CVTrace specificato non è valido.|  
-|LaunchArgs|Specifica gli argomenti eseguibili di destinazione. Questa opzione è applicabile solo al comando Launch.|Argomenti da riga di comando per l'applicazione.|nessuna.|  
-|Outdir|Specifica la directory in cui salvare i file di traccia. Applicabile ai comandi Launch e Attach.|Percorso di directory o percorso relativo.|nessuna.|  
-|Processo|Specifica il processo a cui connettersi quando si esegue il comando Attach o il processo in una traccia da analizzare quando si esegue il comando Analyze. Applicabile ai comandi Attach e Analyze.|PID o nome del processo.|nessuna.|  
-|Config|Specifica il percorso del file di configurazione, se si vogliono impostazioni di raccolta diverse da quelle predefinite.   Applicabile ai comandi Launch, Attach e Analyze.|Percorso di directory o percorso relativo del file di configurazione XML.|nessuna.|  
+|Query|Indica se è possibile avviare la raccolta.|Nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se la raccolta non è in corso, ma una o più delle sessioni [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie sono già abilitate.|  
+|Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
+|Collegamento|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|Nessuno.|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
+|Detach|Arresta la raccolta.|Nessuno.|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|  
+|Analisi|Analizza la traccia specificata.|Percorso completo del file CVTrace.|0 se l'analisi è riuscita.<br /><br /> 1 se non è possibile avviare l'analisi poiché la traccia specificata è a livello di sistema, ma non è stato specificato alcun processo di destinazione.<br /><br /> 2 se non è possibile avviare l'analisi poiché la traccia specificata non è a livello di sistema ed è stato specificato un processo.<br /><br /> 3  se l'analisi non è riuscita poiché il processo specificato non è valido.<br /><br /> 4 se l'analisi non è riuscita poiché il file CVTrace specificato non è valido.|  
+|LaunchArgs|Specifica gli argomenti eseguibili di destinazione. Questa opzione è applicabile solo al comando Launch.|Argomenti da riga di comando per l'applicazione.|Nessuno.|  
+|Outdir|Specifica la directory in cui salvare i file di traccia. Applicabile ai comandi Launch e Attach.|Percorso di directory o percorso relativo.|Nessuno.|  
+|Process|Specifica il processo a cui connettersi quando si esegue il comando Attach o il processo in una traccia da analizzare quando si esegue il comando Analyze. Applicabile ai comandi Attach e Analyze.|PID o nome del processo.|Nessuno.|  
+|File di configurazione|Specifica il percorso del file di configurazione, se si vogliono impostazioni di raccolta diverse da quelle predefinite.   Applicabile ai comandi Launch, Attach e Analyze.|Percorso di directory o percorso relativo del file di configurazione XML.|Nessuno.|  
   
 ## <a name="customizing-configuration-settings"></a>Personalizzazione delle impostazioni di configurazione  
  Se si usa CVCollectionCmd per raccogliere tracce e si vogliono personalizzare le impostazioni di raccolta, usare un file di configurazione per specificarle.  
@@ -66,18 +66,18 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
   
 |Tag|Descrizione|Valori|  
 |---------|-----------------|------------|  
-|Config|Delimita il file di configurazione complessivo.|Deve contenere gli elementi seguenti:<br /><br /> -   MinorVersion<br />-   MajorVersion|  
+|File di configurazione|Delimita il file di configurazione complessivo.|Deve contenere gli elementi seguenti:<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|Specifica la versione principale del file di configurazione.|Deve essere 1 per progetti [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Se è diverso da 1, l'utilità non funzionerà.|  
 |MinorVersion|Specifica la versione secondaria del file di configurazione.|Deve essere 0 per progetti [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Se è diverso da 0, l'utilità non funzionerà.|  
 |IncludeEnvSymbolPath|Imposta un valore che determina se è usato il percorso simboli di ambiente (_NT_SYMBOL_PATH).|-   True<br />-   False|  
 |DeleteEtlsAfterAnalysis|Imposta un valore che determina se i file ETL sono eliminati dopo il completamento dell'analisi.|-   True<br />-   False|  
 |SymbolPath|Specifica il percorso del server di simboli. Per altre informazioni, vedere [Usare il server di simboli Microsoft per ottenere il file di simboli di debug](https://support.microsoft.com/kb/311503).|Nome di directory o URL.|  
-|Markers|Include l'elenco di provider marcatori.|Può includere zero o più elementi MarkerProvider.|  
+|Marcatori|Include l'elenco di provider marcatori.|Può includere zero o più elementi MarkerProvider.|  
 |MarkerProvider|Specifica un singolo provider marcatori.|Deve contenere gli elementi seguenti:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Può includere questi elementi:<br /><br /> -   Categories<br />-   IsEnabled|  
-|Livello|Imposta il livello di importanza di un MarkerProvider.|-   Basso<br />-   Normale<br />-   Alto<br />-   Critico<br />-   Tutto|  
-|GUID|Identificatore univoco globale del provider marcatori ETW.|GUID.|  
-|Name|Specifica la descrizione del provider marcatori.|stringa.|  
-|Categories|Specifica le categorie raccolte per il provider marcatori.|Stringa delimitata da virgole che include numeri o intervalli di numeri.|  
+|Level|Imposta il livello di importanza di un MarkerProvider.|-   Basso<br />-   Normale<br />-   Alto<br />-   Critico<br />-   Tutto|  
+|Guid|Identificatore univoco globale del provider marcatori ETW.|Un valore GUID.|  
+|Nome|Specifica la descrizione del provider marcatori.|Stringa.|  
+|Categorie|Specifica le categorie raccolte per il provider marcatori.|Stringa delimitata da virgole che include numeri o intervalli di numeri.|  
 |IsEnabled|Imposta un valore che determina se il provider marcatori è abilitato per la raccolta.|-   True<br />-   False|  
 |FilterConfig|Specifica l'elenco di opzioni di configurazione degli eventi ETW filtrati dalla raccolta.|Può includere gli elementi seguenti:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  
 |CollectClrEvents|Imposta un valore che determina se gli eventi CLR sono raccolti.|-   True<br />-   False|  
@@ -87,7 +87,7 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 |CollectFileIO|Imposta un valore che determina se gli eventi I/O su file sono raccolti.|-   True<br />-   False|  
 |UserBufferSettings|Specifica l'elenco di parametri per impostazioni di buffer utente.|Deve contenere gli elementi seguenti:<br /><br /> -   BufferFlushTimer<br />-   BufferSize<br />-   MinimumBuffers<br />-   MaximumBuffers|  
 |KernelBufferSettings|Specifica l'elenco di parametri per impostazioni di buffer kernel.|Deve contenere gli elementi seguenti:<br /><br /> -   BufferFlushTimer<br />-   BufferSize<br />-   MinimumBuffers<br />-   MaximumBuffers|  
-|BufferFlushTimer|Specifica il timer di cancellazione dei buffer ETW.|Un numero intero positivo.|  
+|BufferFlushTimer|Specifica il timer di cancellazione dei buffer ETW.|Numero intero positivo.|  
 |BufferSize|Quantità di memoria allocata per ogni buffer di sessione di traccia di eventi, espressa in kilobyte.|Un numero compreso tra 0 e 1024.|  
 |MinimumBuffers|Il numero minimo di buffer allocati per il pool di buffer della sessione di traccia degli eventi.|Un numero intero positivo maggiore di o uguale al doppio del numero di core logici.|  
 |MaximumBuffers|Numero massimo di buffer allocati per il pool di buffer della sessione di traccia degli eventi.|Un numero maggiore di o uguale a MinimumBuffers.|  

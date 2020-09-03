@@ -1,5 +1,5 @@
 ---
-title: Elemento assembly (estensione della creazione guidata modello di Visual Studio) | Microsoft Docs
+title: Elemento assembly (estensione della creazione guidata modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184724"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (estensione della Creazione guidata modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` interfaccia.  
+Specifica il nome o il nome sicuro dell'assembly che implementa l' `IWizard` interfaccia.  
   
- \<VSTemplate >  
-\<WizardExtension >  
-\<Assembly >  
+ \<VSTemplate>  
+\<WizardExtension>  
+\<Assembly>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,20 +46,20 @@ Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` int
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per la creazione guidata modello di personalizzazione.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per personalizzare la creazione guidata modello.|  
   
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Tale testo specifica l'assembly che implementa il `IWizard` interfaccia. Questo nome dell'assembly deve essere specificato come un nome completo dell'assembly. Ad esempio `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
+ Questo testo specifica l'assembly che implementa l' `IWizard` interfaccia. Il nome dell'assembly deve essere specificato come nome di assembly completo. Ad esempio: `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `Assembly` è un elemento figlio obbligatorio di `WizardExtension`.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
+ Nell'esempio seguente vengono illustrati i metadati per il modello di progetto standard per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -90,6 +90,6 @@ Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` int
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Procedura: utilizzare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

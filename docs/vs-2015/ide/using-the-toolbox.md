@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295604"
 ---
 # <a name="using-the-toolbox"></a>Utilizzo della Casella degli strumenti
@@ -58,9 +58,9 @@ ms.locfileid: "74295604"
 
 - **Ordina elementi alfabeticamente**: ordina gli elementi per nome.
 
-- **Reimposta barra degli strumenti**: ripristina le impostazioni e gli elementi predefiniti della casella degli strumenti.
+- **Reimposta barra degli strumenti** : Ripristina le impostazioni e gli elementi predefiniti della casella degli strumenti.
 
-- **Aggiungi scheda**: aggiunge una nuova scheda della casella degli strumenti.
+- **Aggiungi scheda** : aggiunge una nuova scheda della casella degli strumenti.
 
 - **Sposta su**: sposta l'elemento selezionato verso l'alto.
 

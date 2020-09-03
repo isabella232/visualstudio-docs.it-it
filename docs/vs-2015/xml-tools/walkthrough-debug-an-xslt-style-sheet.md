@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c205ff68ebc51d0b0f5b32038763c1741855d7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656110"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: eseguire il debug di un foglio di stile XSLT
@@ -37,13 +37,13 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
 
     Il foglio di stile viene aperto nell'editor XML.
 
-3. Fare clic sul pulsante Sfoglia ( **...** ) nel campo di **input** della finestra proprietà del documento.
+3. Fare clic sul pulsante Sfoglia (**...**) nel campo di **input** della finestra proprietà del documento.
 
-4. Individuare il file Books. XML e fare clic su **Apri**.
+4. Individuare il file di books.xml e fare clic su **Apri**.
 
     In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.
 
-5. Fare clic con il pulsante destro del mouse sul tag di inizio `xsl:if`, scegliere punto di **interruzione**e quindi Inserisci punto di **interruzione**.
+5. Fare clic con il pulsante destro del mouse sul `xsl:if` tag di inizio, scegliere punto di **interruzione**e quindi Inserisci punto di **interruzione**.
 
 6. Fare clic sul pulsante **debug XSL** sulla barra degli strumenti dell'editor XML.
 
@@ -55,7 +55,7 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
 
    Nella finestra **output XSL** viene visualizzato l'output della trasformazione XSL. Questa finestra è separata dalla finestra di **output di Visual Studio** .
 
-## <a name="watch-window"></a>Finestra Espressioni di controllo
+## <a name="watch-window"></a>finestra Espressioni di controllo
 
 #### <a name="to-use-the-watch-window"></a>Per usare la finestra Espressioni di controllo
 
@@ -69,7 +69,7 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
 
 3. Digitare `self::node()` nel campo **nome** e premere INVIO.
 
-     `self::node()` è un'espressione XPath che restituisce il nodo di contesto corrente. Il valore dell'espressione XPath `self::node()` costituisce il primo nodo libro. Il valore verrà modificato durante le fasi della trasformazione.
+     `self::node()` espressione XPath che restituisce il nodo di contesto corrente. Il valore dell'espressione XPath `self::node()` costituisce il primo nodo libro.  Il valore verrà modificato durante le fasi della trasformazione.
 
 4. Espandere il nodo `self::node()`, quindi il nodo `price`.
 

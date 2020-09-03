@@ -1,5 +1,5 @@
 ---
-title: Pulsanti elemento | Microsoft Docs
+title: Elemento Buttons | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8e0a17e3580b238c63a23e5943e98afbbb9268b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184562"
 ---
 # <a name="buttons-element"></a>Elemento Buttons
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I gruppi [pulsante](../extensibility/button-element.md) che rappresentano singoli comandi.  
+Elementi del [pulsante](../extensibility/button-element.md) gruppi, che rappresentano i singoli comandi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,20 +37,20 @@ I gruppi [pulsante](../extensibility/button-element.md) che rappresentano singol
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento Buttons](../extensibility/buttons-element.md)|Raggruppa gli elementi di pulsante.|  
-|[Elemento Button](../extensibility/button-element.md)|Definisce un comando che l'utente può interagire con.|  
+|[Elemento Buttons](../extensibility/buttons-element.md)|Elementi del pulsante gruppi.|  
+|[Elemento Button](../extensibility/button-element.md)|Definisce un comando con cui l'utente può interagire.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage.|  
   

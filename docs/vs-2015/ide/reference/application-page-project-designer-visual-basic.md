@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850844"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
@@ -27,7 +27,7 @@ ms.locfileid: "75850844"
 
 Usare la pagina **Applicazione** di Creazione progetti per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 
- Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Progetto**, **Proprietà** sulla barra dei menu. Quando compare Creazione progetti, fare clic sulla scheda **Applicazione**.
+ Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Progetto**, **Proprietà** sulla barra dei menu. Quando si apre **Creazione progetti**, fare clic sulla scheda Applicazione.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
@@ -41,7 +41,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
  Se si deseleziona **Spazio dei nomi radice**, è possibile specificare nel codice la struttura dello spazio dei nomi del progetto.
 
 > [!NOTE]
-> Se si usa la parola chiave Global in un'[istruzione Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona l'opzione **Spazio dei nomi radice**, `Global` diventa lo spazio dei nomi principale. Ciò elimina la necessità della parola chiave `Global` nelle istruzioni `Namespace`. Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88) (Spazi dei nomi in Visual Basic).
+> Se si usa la parola chiave Global in un'[istruzione Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona lo **spazio dei nomi radice**, `Global` diventa lo spazio dei nomi di primo livello, che rimuove la necessità della `Global` parola chiave in un' `Namespace` istruzione. Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88) (Spazi dei nomi in Visual Basic).
 
  Per informazioni su come creare spazi dei nomi nel codice, vedere [Namespace Statement](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) (Istruzione Namespace).
 
@@ -56,7 +56,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 > [!NOTE]
 > I pacchetti prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono installati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario specificare manualmente i prerequisiti in modo che vi sia corrispondenza.
 
- Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+ Per altre informazioni, vedere [How to: Target a Version of the .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) (Procedura: Destinare una versione di .NET Framework) e [Visual Studio Multi-Targeting Overview](../../ide/visual-studio-multi-targeting-overview.md) (Cenni preliminari sul multitargeting di Visual Studio).
 
  **Tipo di applicazione** Specifica il tipo di applicazione da compilare. Per app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] è possibile specificare **App di Windows Store**, **Libreria di classi** o **File WinMD**. Per la maggior parte degli altri tipi di applicazione, è possibile specificare **Applicazione Windows**, **Applicazione console**, **Libreria di classi**, **Servizio Windows** o **Libreria di controlli Web**.
 
@@ -69,7 +69,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 
  Per altre informazioni sulla proprietà **Tipo di applicazione**, vedere [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Per informazioni su come accedere a tale proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
- **Icona** Imposta il file con estensione ico che si vuole usare come icona di programma. Selezionare **\<Sfoglia...>** per individuare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) o [/win32icon (C# Compiler Options)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+ **Icona** Imposta il file con estensione ico che si vuole usare come icona di programma. Selezionare **\<Browse...>** per cercare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) o [/win32icon (C# Compiler Options)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
  **Form di avvio/oggetto di avvio/URI di avvio** Specifica il form di avvio o il punto di ingresso dell'applicazione.
 
@@ -79,11 +79,11 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 
  Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco diventa **Oggetto di avvio** e mostra sia moduli e classi o moduli con `Sub Main`.
 
- **Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)** . Per altre informazioni, vedere [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+ **Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)**. Per altre informazioni, vedere [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
  **Informazioni assembly** Fare clic su questo pulsante per visualizzare la finestra di [dialogo informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
 
- **Abilita framework applicazione** Specifica se un progetto utilizzerà il Framework applicazione. L'impostazione di questa opzione influisce sulle opzioni disponibili in **Modulo di avvio**/**Oggetto di avvio**.
+ **Abilita framework applicazione** Specifica se un progetto utilizzerà il Framework applicazione. L'impostazione di questa opzione influiscono sulle opzioni disponibili nell'oggetto di avvio del modulo di **avvio** / **Startup object**.
 
  Se questa casella di controllo è selezionata, l'applicazione usa la procedura `Sub Main` standard. Se si seleziona questa casella di controllo, vengono abilitate le funzionalità della sezione **Proprietà framework applicazione Windows** ed è anche necessario selezionare un modulo di avvio.
 
@@ -100,11 +100,11 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 ## <a name="windows-application-framework-properties"></a>Proprietà framework applicazione Windows
  Le impostazioni seguenti sono disponibili nella sezione **Proprietà framework applicazione Windows**. Queste opzioni sono disponibili solo se la casella di controllo **Abilita framework applicazione** è selezionata. Nella sezione successiva sono descritte le impostazioni **Proprietà framework applicazione Windows**per le applicazioni Windows Presentation Foundation (WPF).
 
- **Attiva stili di visualizzazione XP** Abilita o Disabilita gli stili di visualizzazione di Windows XP, noti anche come *temi di Windows XP*. Gli stili di visualizzazione di Windows XP consentono, ad esempio, i controlli con angoli arrotondati e colori dinamici. Per impostazione predefinita questi stili sono abilitati. Per altre informazioni sugli stili di visualizzazione di Windows XP, vedere [Windows XP Features and Windows Forms Controls](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0) (Funzionalità di Windows XP e controlli Windows Forms).
+ **Attiva stili di visualizzazione XP** Abilita o Disabilita gli stili di visualizzazione di Windows XP, noti anche come *temi di Windows XP*. Gli stili di visualizzazione di Windows XP consentono, ad esempio, i controlli con angoli arrotondati e colori dinamici. Il valore predefinito è Attivato. Per altre informazioni sugli stili di visualizzazione di Windows XP, vedere [Windows XP Features and Windows Forms Controls](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0) (Funzionalità di Windows XP e controlli Windows Forms).
 
  **Crea applicazione a istanza singola** Selezionare questa casella di controllo per impedire agli utenti di eseguire più istanze dell'applicazione. Per impostazione predefinita, questa casella di controllo è deselezionata. Questa impostazione consente l'esecuzione di più istanze dell'applicazione.
 
- **Salva My. Settings alla chiusura** Selezionare questa casella di controllo per specificare che le impostazioni di `My.Settings` dell'applicazione vengono salvate quando gli utenti arrestano i computer. Per impostazione predefinita questa opzione è abilitata. Se questa opzione è disabilitata, è possibile salvare manualmente le impostazioni dell'applicazione chiamando `My.Settings.Save`.
+ **Salva My. Settings alla chiusura** Selezionare questa casella di controllo per specificare che le impostazioni dell'applicazione `My.Settings` vengono salvate quando gli utenti arrestano i computer. Per impostazione predefinita questa opzione è abilitata. Se questa opzione è disabilitata, è possibile salvare manualmente le impostazioni dell'applicazione chiamando `My.Settings.Save`.
 
  **Modalità di autenticazione** Selezionare **Windows** (impostazione predefinita) per specificare l'utilizzo dell'autenticazione di Windows per identificare l'utente attualmente connesso. È possibile recuperare queste informazioni in fase di esecuzione tramite l'oggetto `My.User`. Selezionare **Definita dall'applicazione** se si intende fornire codice personalizzato per autenticare gli utenti anziché usare i metodi di autenticazione predefiniti di Windows.
 
@@ -112,13 +112,13 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 
  Selezionare **Alla chiusura esplicita** per specificare che l'applicazione deve terminare quando si chiama in modo esplicito `Shutdown`.
 
- Selezionare **Alla chiusura dell'ultima finestra** per specificare che l'applicazione deve terminare quando viene chiusa l'ultima finestra o quando si chiama in modo esplicito `Shutdown`. Questa è l'impostazione predefinita.
+ Selezionare **Alla chiusura dell'ultima finestra** per specificare che l'applicazione deve terminare quando viene chiusa l'ultima finestra o quando si chiama in modo esplicito `Shutdown`. Si tratta dell'impostazione predefinita.
 
  Selezionare **Alla chiusura della finestra principale** per specificare che l'applicazione deve terminare quando viene chiusa la finestra principale o quando si chiama in modo esplicito `Shutdown`.
 
- **Schermata iniziale** Selezionare il modulo che si desidera utilizzare come schermata iniziale. È necessario avere creato precedentemente una schermata iniziale tramite un modulo o un modello. L'impostazione predefinita è **(Nessuna)** .
+ **Schermata iniziale** Selezionare il modulo che si desidera utilizzare come schermata iniziale. È necessario avere creato precedentemente una schermata iniziale tramite un modulo o un modello. Il valore predefinito è **(nessuno)**.
 
- **Visualizza eventi applicazione** Fare clic su questo pulsante per visualizzare un file di codice eventi in cui è possibile scrivere eventi per gli eventi del Framework applicazione `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` e `NetworkAvailabilityChanged`. È anche possibile eseguire l'override di alcuni metodi del framework applicazione. Ad esempio, è possibile modificare il comportamento di visualizzazione della schermata iniziale eseguendo l'override di `OnInitialize`.
+ **Visualizza eventi applicazione** Fare clic su questo pulsante per visualizzare un file di codice eventi in cui è possibile scrivere eventi per gli eventi del Framework applicazione `Startup` ,, `Shutdown` `UnhandledException` `StartupNextInstance` e `NetworkAvailabilityChanged` . È anche possibile eseguire l'override di alcuni metodi del framework applicazione. Ad esempio, è possibile modificare il comportamento di visualizzazione della schermata iniziale eseguendo l'override di `OnInitialize`.
 
 ### <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Proprietà framework applicazione Windows per le applicazioni Windows Presentation Foundation (WPF)
  Queste opzioni sono disponibili nella sezione **Proprietà framework applicazione Windows** quando il progetto riguarda un'applicazione Windows Presentation Foundation. Queste opzioni sono disponibili solo se la casella di controllo **Abilita framework applicazione** è selezionata. Le opzioni elencate in questa tabella sono disponibili solo per le applicazioni WPF o per le applicazioni browser WPF. Non sono disponibili per le librerie di controlli utente o di controlli personalizzati WPF.
@@ -127,7 +127,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 
  Selezionare **Alla chiusura esplicita** per specificare che l'applicazione deve terminare quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>.
 
- Selezionare **Alla chiusura dell'ultima finestra** per specificare che l'applicazione deve terminare quando viene chiusa l'ultima finestra o quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>. Questa è l'impostazione predefinita.
+ Selezionare **Alla chiusura dell'ultima finestra** per specificare che l'applicazione deve terminare quando viene chiusa l'ultima finestra o quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>. Si tratta dell'impostazione predefinita.
 
  Selezionare **Alla chiusura della finestra principale** per specificare che l'applicazione deve terminare quando viene chiusa la finestra principale o quando si chiama in modo esplicito <xref:System.Windows.Application.Shutdown%2A>.
 
@@ -135,9 +135,9 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 
  **Modifica XAML** Fare clic su questo pulsante per aprire e modificare il file di definizione dell'applicazione (Application. Xaml) nell'editor XAML. Quando si fa clic su questo pulsante, Application.xaml viene aperto in corrispondenza del nodo di definizione dell'applicazione. Potrebbe essere necessario modificare questo file per eseguire determinate attività, ad esempio la definizione delle risorse. Se il file di definizione dell'applicazione non esiste, Creazione progetti ne crea uno.
 
- **Visualizza eventi applicazione** Fare clic su questo pulsante per visualizzare il file di classe parziale `Application` (Application. XAML. vb) in un editor di codice. Se il file non esiste, Creazione progetti ne crea uno con il nome della classe e dello spazio dei nomi appropriati.
+ **Visualizza eventi applicazione** Fare clic su questo pulsante per visualizzare il `Application` file di classe parziale (Application. XAML. vb) in un editor di codice. Se il file non esiste, Creazione progetti ne crea uno con il nome della classe e dello spazio dei nomi appropriati.
 
  L'oggetto <xref:System.Windows.Application> genera eventi quando si verificano determinate modifiche di stato dell'applicazione (ad esempio, all'avvio o all'arresto dell'applicazione). Per un elenco completo degli eventi esposti da questa classe, vedere <xref:System.Windows.Application>. Questi eventi vengono gestiti nella sezione del codice utente della classe parziale `Application`.
 
 ## <a name="see-also"></a>Vedere anche
-[Gestione delle proprietà dell'applicazione](../../ide/application-properties.md) [scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Gestione delle proprietà delle applicazioni](../../ide/application-properties.md) [Scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

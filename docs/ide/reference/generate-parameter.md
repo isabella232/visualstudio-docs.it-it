@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 372a3f705e5e85c0edb31a754105f61056402b9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094346"
 ---
 # <a name="generate-parameter"></a>Generare un parametro
@@ -27,13 +27,13 @@ Questo refactoring si applica a:
 
 **Cosa:** Genera automaticamente un parametro del metodo.
 
-**Quando:** Si fa riferimento a una variabile in un metodo che non esiste nel contesto corrente e viene visualizzato un errore; è possibile generare un parametro come correzione del codice. 
+**Quando:** Si fa riferimento a una variabile in un metodo che non esiste nel contesto corrente e si riceve un errore. è possibile generare un parametro come correzione del codice. 
 
-**Perché:** È possibile modificare rapidamente la firma di un metodo senza perdere il contesto.
+**Motivo:** È possibile modificare rapidamente una firma del metodo senza perdere il contesto.
 
 ## <a name="how-to"></a>Procedure
 
-1. Posizionare il cursore nel nome della variabile e premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+1. Posizionare il cursore nel nome della variabile e premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
 1. Selezionare **Generate parameter** (Genera parametro).
 
    ![Generare un parametro](media/generate-parameter.png) 

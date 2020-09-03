@@ -21,10 +21,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 3f0d17fcaf856799ded82ebe684d671b358cb8df
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88114271"
 ---
 # <a name="install-visual-studio"></a>Installare Visual Studio
@@ -170,7 +170,7 @@ Dopo aver installato il programma di installazione, è possibile usarlo per pers
 
 ## <a name="step-5---choose-individual-components-optional"></a>Passaggio 5: Scegliere singoli componenti (facoltativo)
 
-Se non si vuole usare la funzionalità carichi di lavoro per personalizzare l'installazione di Visual Studio o si vuole aggiungere altri componenti rispetto a un carico di lavoro, è possibile farlo installando o aggiungendo singoli componenti dalla scheda **singoli componenti** . scegliere quello desiderato e quindi seguire le istruzioni.
+Se non si vuole usare la funzionalità carichi di lavoro per personalizzare l'installazione di Visual Studio o si desidera aggiungere altri componenti rispetto a un carico di lavoro, è possibile eseguire questa operazione installando o aggiungendo singoli componenti dalla scheda **singoli componenti** . Scegliere l'elemento desiderato e quindi seguire le istruzioni.
 
 ::: moniker range="vs-2017"
 

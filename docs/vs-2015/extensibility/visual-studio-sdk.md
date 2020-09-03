@@ -15,10 +15,10 @@ caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850372"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
@@ -56,7 +56,7 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
  Sfrutta i vantaggi del [servizio immagini e del catalogo](../extensibility/image-service-and-catalog.md) per ottimizzare la gestione delle immagini e il supporto per valori dpi e temi elevati.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Ricerca e installazione di estensioni di Visual Studio esistenti  
- È possibile trovare le estensioni di Visual Studio nella finestra di dialogo **estensioni e aggiornamenti** del menu **strumenti** . Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). È anche possibile trovare estensioni nel [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
+ È possibile trovare le estensioni di Visual Studio nella finestra di dialogo **estensioni e aggiornamenti** del menu **strumenti** . Per altre informazioni, vedere [ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). È anche possibile trovare estensioni nel [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Informazioni di riferimento su Visual Studio SDK  
  Informazioni di riferimento sulle API di Visual Studio SDK sono disponibili in [riferimenti a Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  
@@ -76,25 +76,25 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
 - [Estensione di Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
+ [Creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
  [Domande frequenti: conversione di componenti aggiuntivi in estensioni VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Gestione di più thread nel codice gestito](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md)   
  [Aggiunta di comandi alle barre degli strumenti](../extensibility/adding-commands-to-toolbars.md)   
  [Estensione e personalizzazione delle finestre degli strumenti](../extensibility/extending-and-customizing-tool-windows.md)   
- [Editor ed estensioni del servizio di linguaggio](../extensibility/editor-and-language-service-extensions.md)   
+ [Editor e estensioni del servizio di linguaggio](../extensibility/editor-and-language-service-extensions.md)   
  [Estensione di progetti](../extensibility/extending-projects.md)   
- [Estensione delle impostazioni utente e delle opzioni](../extensibility/extending-user-settings-and-options.md)   
+ [Estensione delle impostazioni e delle opzioni utente](../extensibility/extending-user-settings-and-options.md)   
  [Creazione di modelli di progetto e di elemento personalizzati](../extensibility/creating-custom-project-and-item-templates.md)   
  [Estensione delle proprietà e della finestra delle proprietà](../extensibility/extending-properties-and-the-property-window.md)   
  [Estensione di altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Uso e fornitura di servizi](../extensibility/using-and-providing-services.md)   
- [Estensione Servizi connessi](../extensibility/extending-connected-services.md)   
- [Gestione dei pacchetti vspackage](../extensibility/managing-vspackages.md)   
-   della [Shell isolata di Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
+ [Estensione di Servizi connessi](../extensibility/extending-connected-services.md)   
+ [Gestione dei pacchetti VSPackage](../extensibility/managing-vspackages.md)   
+ [Shell isolata di Visual Studio](../extensibility/visual-studio-isolated-shell.md)   
  [Distribuzione delle estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [All'interno di Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Supporto per Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   
- [Archivia](../extensibility/archive.md)   
- [Riferimenti su Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)
+ [Archivio](../extensibility/archive.md)   
+ [Informazioni di riferimento su Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)

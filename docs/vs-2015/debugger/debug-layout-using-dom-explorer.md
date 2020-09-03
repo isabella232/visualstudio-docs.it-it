@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850070"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Eseguire il debug del layout usando DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "windows_and_phone_content")  
   
  La scheda **Layout** di DOM Explorer mostra il [modello di riquadro CSS](https://www.w3.org/TR/CSS2/box.html) per l'elemento selezionato in un'app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , un'app di Windows Phone Store o un'applicazione creata con Strumenti di Visual Studio per Apache Cordova. È possibile usare questa rappresentazione visiva del modello di riquadro per identificare e modificare i valori correlati al layout che hanno effetto sull'aspetto degli elementi.  
   
@@ -69,7 +69,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
   
 5. A seconda del progetto di avvio, seleziona **Emulator 8.1 WVGA 4 inch 512MB** o **Simulatore** nell'elenco a discesa sulla barra degli strumenti Debug (il valore predefinito è**Computer locale** ).  
   
-     ![Selezione di una destinazione di debug](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
+     ![Selezione di una destinazione per il debug](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
 6. Premere F5 per eseguire l'app in modalità debug.  
   
@@ -101,11 +101,11 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
   
 10. Fare clic sulla scheda **layout** . Questa scheda Mostra il modello di riquadro dell'elemento selezionato, come illustrato di seguito nell'emulatore Windows Phone.  
   
-     ![Scheda layout di DOM Explorer](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Scheda Layout di DOM Explorer](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
      In questa visualizzazione sono disponibili alcune informazioni utili sull'elemento:  
   
-    - I colori corrispondono all'evidenziazione della casella visualizzata nel simulatore al passaggio del mouse sugli elementi. Il colore blu rappresenta le dimensioni dell'elemento \<img >. Il colore marrone chiaro rappresenta i valori dei margini.  
+    - I colori corrispondono all'evidenziazione della casella visualizzata nel simulatore al passaggio del mouse sugli elementi. Il colore blu rappresenta le \<img> dimensioni dell'elemento. Il colore marrone chiaro rappresenta i valori dei margini.  
   
     - Il margine sinistro (margin-left) è impostato e questa può essere la causa del problema in quanto corrisponde al sintomo (nero sul lato sinistro delle immagini).  
   
@@ -114,15 +114,15 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
 11. Per scoprire come viene applicata la regola margin-left, fai clic sulla scheda **Calcolata** e guarda sotto la regola margin-left. Come si può notare, questa regola è impostata sul valore 5em, ma il valore calcolato è 66,66px o 146,66px, a seconda del dispositivo di destinazione.  
   
     > [!TIP]
-    > La scheda **calcolata** indica che la regola margin-left è impostata nel selettore CSS `..hubpage .hub. section4 .sub-image-row img`, disponibile in hub. CSS. In questa app demo è qui che occorre apportare la correzione.  
+    > La scheda **calcolata** indica che la regola margin-left è impostata nel `..hubpage .hub. section4 .sub-image-row img` selettore CSS, disponibile in hub. CSS. In questa app demo è qui che occorre apportare la correzione.  
   
      È anche possibile usare la scheda **Layout** per verificare le modifiche apportate ai valori del layout.  
   
 12. Nella scheda **Layout** scegli **66,66** o **146,66**, che viene visualizzato sul lato sinistro del riquadro **Margine** .  
   
-13. Digitare `0` e premere INVIO. È anche possibile anche usare i tasti FRECCIA SU e FRECCIA GIÙ per modificare il valore.  
+13. Digitare `0` e premere Invio. È anche possibile anche usare i tasti FRECCIA SU e FRECCIA GIÙ per modificare il valore.  
   
-14. Selezionare gli altri elementi \<img > in DOM Explorer e modificare i valori di margin-left su 0.  
+14. Selezionare gli altri \<img> elementi in Dom Explorer e modificare i valori di margin-left su 0.  
   
 15. Passa all'emulatore Windows Phone o al simulatore. I valori di margin-left aggiornati sono stati applicati alle immagini di Sezione 4. Questi valori vengono anche aggiornati nella scheda **Calcolata** sotto la regola margin-left.  
   

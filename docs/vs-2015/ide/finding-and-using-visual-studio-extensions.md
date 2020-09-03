@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655869"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Ricerca e uso delle estensioni di Visual Studio
@@ -43,20 +43,20 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
  Se si desidera interrompere l'utilizzo di un'estensione, è possibile disabilitarla o disinstallarla. Disabilitandola, un'estensione rimarrà installata ma non caricata. È possibile disabilitare solo le estensioni VSIX; le estensioni installate usando un file MSI possono solo essere disinstallate. Trovare l'estensione e fare clic su **Disinstalla** o **Disabilita**. Per scaricare un'estensione disabilitata, è necessario riavviare Visual Studio.
 
 ## <a name="per-user-and-administrative-extensions"></a>Estensioni amministrative e per utente
- La maggior parte delle estensioni sono per utente e sono installate nella cartella **%LocalAppData%\Microsoft\VisualStudio\\<Versione Visual Studio\>\Extensions\\** . Alcune estensioni sono amministrative e vengono installate nel percorso **\<Cartella di installazione Visual Studio>\Common7\IDE\Extensions\\** .
+ La maggior parte delle estensioni sono per utente e sono installate nella cartella **%LocalAppData%\Microsoft\VisualStudio\\<Versione Visual Studio\>\Extensions\\**. Alcune estensioni sono estensioni amministrative e sono installate nella cartella ** \<Visual Studio installation folder> \Common7\IDE\Extensions \\ ** .
 
  Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente sono disabilitate quando Visual Studio viene eseguito con autorizzazioni utente amministrative. A questo scopo, passare alla pagina delle opzioni **Estensioni e aggiornamenti** (**Strumenti / Opzioni**, **Ambiente**, **Estensioni e aggiornamenti**oppure digitare **Estensione** nella finestra **Avvio veloce** ). Deselezionare la casella di controllo **Carica estensioni per utente se eseguite come amministratore** , quindi riavviare Visual Studio.
 
-## <a name="automatic-extension-updates"></a>Aggiornamenti automatici delle estensioni
+## <a name="automatic-extension-updates"></a>Aggiornamenti di estensione automatica
  Le estensioni per utente vengono aggiornate automaticamente quando è disponibile una nuova versione in Visual Studio Gallery.  La nuova versione dell'estensione viene rilevata e installata in background e viene quindi eseguita al successivo riavvio di Visual Studio.
 
- Solo le estensioni per utente possono essere aggiornate automaticamente.  Le estensioni amministrative installate per tutti gli utenti non vengono aggiornate ed è necessario installare manualmente le nuove versioni tramite il nodo **Aggiornamenti** della finestra di dialogo **Estensioni e aggiornamenti** . È possibile visualizzare le estensioni che verranno aggiornate automaticamente nel riquadro dei dettagli dell'estensione nella finestra di dialogo **Estensioni e aggiornamenti** .
+ Solo le estensioni per utente possono essere aggiornate automaticamente.  Le estensioni amministrative installate per tutti gli utenti non vengono aggiornate ed è necessario installare manualmente le nuove versioni tramite il nodo **Aggiornamenti** della finestra di dialogo **Estensioni e aggiornamenti** . È possibile visualizzare le estensioni che verranno aggiornate automaticamente nel riquadro dei dettagli dell'estensione della finestra di dialogo **estensioni e aggiornamenti** .
 
  Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilitare la funzionalità per tutte le estensioni o solo per estensioni specifiche.
 
 - Per disabilitare gli aggiornamenti automatici per tutte le estensioni, fare clic sul collegamento **Modifica le impostazioni di estensioni e aggiornamenti** nella finestra di dialogo **Estensioni e aggiornamenti** e deselezionare **Aggiorna automaticamente le estensioni**.
 
-- Per disabilitare gli aggiornamenti automatici per un'estensione specifica, deselezionare l'opzione **Aggiorna automaticamente questa estensione** nel riquadro dei dettagli dell'estensione sul lato destro della finestra di dialogo **Estensioni e aggiornamenti** .
+- Per disabilitare gli aggiornamenti automatici per un'estensione specifica, deselezionare l'opzione **Aggiorna automaticamente questa estensione** nel riquadro dei dettagli dell'estensione sul lato destro della finestra di dialogo **estensioni e aggiornamenti** .
 
 > [!NOTE]
 > A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti / Opzioni / Ambiente / Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).

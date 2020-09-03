@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800944"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Sviluppo di Office e SharePoint in Visual Studio
@@ -59,7 +59,7 @@ ms.locfileid: "88800944"
 
  **Scopri di più**
 
-|A|Vedere|
+|Per|Vedere|
 |--------|---------|
 |Altre informazioni sui componenti aggiuntivi per Office e sulla relativa creazione.|[Componenti aggiuntivi di Office](/office/dev/add-ins/publish/publish)|
 |Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un'app o un componente aggiuntivo di Office.|[Roadmap per i componenti aggiuntivi di Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
@@ -75,14 +75,14 @@ ms.locfileid: "88800944"
 
  **Scopri di più**
 
-|A|Vedere|
+|Per|Vedere|
 |--------|---------|
 |Altre informazioni sui componenti aggiuntivi per SharePoint e sulla relativa creazione.|[Componenti aggiuntivi di SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|
 |Confrontare i componenti aggiuntivi per SharePoint con le soluzioni tradizionali di SharePoint.|[Confronto tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Scegliere se creare un componente aggiuntivo di SharePoint o una soluzione di SharePoint.|[Decidere tra i componenti aggiuntivi di SharePoint e le soluzioni SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
 ## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> Creare un componente aggiuntivo VSTO
- Creare un componente aggiuntivo VSTO per Office 2007 o Office 2010 oppure per estendere Office 2013 e Office 2016 oltre le possibilità offerte dai componenti aggiuntivi per Office. i componenti aggiuntivi VSTO vengono eseguiti solo sul desktop. Gli utenti devono installare i componenti aggiuntivi VSTO, quindi sono in genere più difficili da distribuire e supportare.  Tuttavia, un componente aggiuntivo VSTO può essere maggiormente integrato con Office. Ad esempio, può aggiungere schede e controlli alla barra multifunzione di Office ed eseguire attività di automazione avanzate come l'unione di documenti o la modifica di grafici. È possibile sfruttare .NET Framework e usare C# e Visual Basic per interagire con gli oggetti di Office.
+ Creare un componente aggiuntivo VSTO per Office 2007 o Office 2010 oppure per estendere Office 2013 e Office 2016 oltre le possibilità offerte dai componenti aggiuntivi per Office. I componenti aggiuntivi VSTO vengono eseguiti solo sul desktop. Gli utenti devono installare i componenti aggiuntivi VSTO, quindi sono in genere più difficili da distribuire e supportare.  Tuttavia, un componente aggiuntivo VSTO può essere maggiormente integrato con Office. Ad esempio, può aggiungere schede e controlli alla barra multifunzione di Office ed eseguire attività di automazione avanzate come l'unione di documenti o la modifica di grafici. È possibile sfruttare .NET Framework e usare C# e Visual Basic per interagire con gli oggetti di Office.
 
  Ecco un esempio di ciò che può fare un componente aggiuntivo VSTO. Questo componente aggiuntivo VSTO aggiunge alcuni controlli della barra multifunzione, un riquadro attività personalizzato e una finestra di dialogo a PowerPoint.
 
@@ -90,7 +90,7 @@ ms.locfileid: "88800944"
 
  **Scopri di più**
 
-|A|Lettura|
+|Per|Lettura|
 |--------|----------|
 |Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un componente aggiuntivo VSTO o un componente aggiuntivo di Office.|[Roadmap per i componenti aggiuntivi di Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |Creare un componente aggiuntivo VSTO.|[Componenti aggiuntivi VSTO creati con Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
@@ -102,7 +102,7 @@ ms.locfileid: "88800944"
 
  **Scopri di più**
 
-|A|Vedere|
+|Per|Vedere|
 |--------|---------|
 |Confrontare le soluzioni di SharePoint con i componenti aggiuntivi di SharePoint.|[Confronto tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Creare una soluzione di SharePoint.|[Creazione di soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)|

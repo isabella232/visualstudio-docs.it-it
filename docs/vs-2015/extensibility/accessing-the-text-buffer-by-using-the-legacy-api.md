@@ -1,5 +1,5 @@
 ---
-title: L'accesso ai Buffer di testo usando l'API Legacy | Microsoft Docs
+title: Accesso al buffer di testo tramite l'API legacy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,33 +11,33 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f2cfbd84bc4f9298358a2a2d1ba87f76d6e5303c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184991"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Accesso al buffer di testo tramite l'API legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il testo è responsabile della gestione dei flussi di testo e salvataggio permanente dei file. Anche se il buffer può leggere o scrivere altri formati, tutte le comunicazioni normali con il buffer viene eseguita utilizzando Unicode. Nelle API legacy, il buffer di testo può usare unidimensionale o un sistema di coordinate bidimensionale per identificare le posizioni di carattere nel buffer.  
+Il testo è responsabile della gestione dei flussi di testo e della persistenza dei file. Sebbene il buffer possa leggere o scrivere altri formati, tutte le comunicazioni ordinarie con il buffer vengono eseguite utilizzando Unicode. Nelle API legacy il buffer di testo può usare un sistema di coordinate uno o due dimensioni per identificare le posizioni dei caratteri nel buffer.  
   
-## <a name="one--and-two-dimension-coordinate-systems"></a>Dimensione di uno e due sistemi di Coordinate  
- Una posizione delle coordinate unidimensionale è basata sulla posizione di un carattere dal primo carattere nel buffer, ad esempio 147. Si utilizza il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfaccia per accedere a una posizione nel buffer unidimensionale. Un sistema di coordinate bidimensionale si basa sulla coppia di riga e indice. Ad esempio, un carattere nel buffer da 43, 5 sarebbe nella riga 43, cinque caratteri a destra del primo carattere nella riga. Si accede a una posizione nel buffer tramite bidimensionale il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfaccia. Sia la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> e il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfacce vengono implementate dall'oggetto del buffer di testo (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>) e sono accessibili tra loro usando `QueryInterface`. Il diagramma seguente illustra queste e altre interfacce principali in <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
+## <a name="one--and-two-dimension-coordinate-systems"></a>Sistemi di coordinate a una e due dimensioni  
+ Una posizione di coordinate unidimensionale è basata sulla posizione di un carattere dal primo carattere del buffer, ad esempio 147. Usare l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfaccia per accedere a una posizione unidimensionale nel buffer. Un sistema di coordinate bidimensionali si basa sulle coppie linea e indice. Ad esempio, un carattere nel buffer a 43, 5 sarà alla riga 43, a cinque caratteri a destra del primo carattere della riga. È possibile accedere a una posizione bidimensionale nel buffer usando l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfaccia. Entrambe le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfacce e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> vengono implementate dall'oggetto buffer di testo ( <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ) ed è possibile accedervi l'una dall'altra usando `QueryInterface` . Nel diagramma seguente vengono illustrate queste e altre interfacce chiave in <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> .  
   
- ![Oggetto TextBuffer](../extensibility/media/vstextbuffer.gif "oggetto vsTextBuffer")  
-Oggetto del buffer di testo  
+ ![Oggetto TextBuffer](../extensibility/media/vstextbuffer.gif "Oggetto VsTextBuffer")  
+Oggetto buffer di testo  
   
- Anche se uno dei due sistemi di coordinate funziona nel buffer di testo, è ottimizzato per utilizzare le coordinate bidimensionali. Un sistema di coordinate unidimensionale è possibile creare un overhead delle prestazioni. Pertanto, utilizzare il sistema di coordinate bidimensionale laddove possibile.  
+ Sebbene il sistema di coordinate funzioni nel buffer di testo, è ottimizzato per l'utilizzo di coordinate bidimensionali. Un sistema di coordinate unidimensionale può creare un sovraccarico delle prestazioni. Pertanto, quando possibile, utilizzare il sistema di coordinate bidimensionali.  
   
- Il responsabilità di secondo del buffer di testo è salvataggio permanente dei file. A tale scopo, l'oggetto del buffer di testo implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> e agisce come il componente di oggetti dati documenti per gli elementi del progetto e altri componenti dell'ambiente coinvolte nella persistenza. Per altre informazioni, vedere [di apertura e salvataggio di elementi di progetto](../extensibility/internals/opening-and-saving-project-items.md).  
+ La seconda responsabilità del buffer di testo è la persistenza dei file. A tale scopo, l'oggetto buffer di testo implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> e funge da componente oggetto dati documento per gli elementi di progetto e altri componenti dell'ambiente interessati dalla persistenza. Per ulteriori informazioni, vedere [apertura e salvataggio di elementi di progetto](../extensibility/internals/opening-and-saving-project-items.md).  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Modifica delle impostazioni di visualizzazione tramite l'API legacy](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- Viene illustrato come modificare le impostazioni di visualizzazione usando l'API legacy.  
+ Viene illustrato come modificare le impostazioni di visualizzazione tramite l'API legacy.  
   
  [Uso della gestione testi per monitorare le impostazioni globali](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- In questo articolo viene spiegato come usare la gestione di testo per monitorare le impostazioni globali...  
+ Viene illustrato come utilizzare Gestione testo per monitorare le impostazioni globali.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Componenti e funzionalità dell'editor principale](../extensibility/inside-the-core-editor.md)
+ [Analisi dell'editor principale](../extensibility/inside-the-core-editor.md)

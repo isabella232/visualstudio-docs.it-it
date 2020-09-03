@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99c28842a92ab598ff196e80fc96678c256e4db8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656154"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordinamento, filtro e raggruppamento (XML Schema Explorer)
@@ -28,7 +28,7 @@ In questo argomento vengono descritte le opzioni disponibili tramite il menu **O
 
 - **Mostra file di schema**.
 
-- **Mostra compositor (sequence/choice/all)** .
+- **Mostra compositor (sequence/choice/all)**.
 
 ## <a name="sorting-options"></a>Opzioni di ordinamento
  Sono disponibili le seguenti opzioni di ordinamento. Il valore predefinito è **Ordina per tipo**. Le opzioni Ordina per non si applicano ai file e agli spazi dei nomi.
@@ -63,7 +63,7 @@ In questo argomento vengono descritte le opzioni disponibili tramite il menu **O
 ### <a name="sort-by-name"></a>Ordina per nome
  Quando si seleziona l'opzione **Ordina per nome** , i nodi globali vengono ordinati nell'ordine seguente:
 
-1. Nodi `import` (in ordine alfabetico degli spazi dei nomi).
+1. `import` nodi (in ordine alfabetico degli spazi dei nomi).
 
 2. Nodi `include` (in ordine alfabetico degli attributi `schemaLocation`).
 

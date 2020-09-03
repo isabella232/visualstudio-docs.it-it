@@ -15,16 +15,16 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850224"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (Isolated o Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile creare un'applicazione personalizzata basata su Visual Studio in modalità integrata o isolata. In modalità integrata sono disponibili molte funzionalità di Visual Studio in aggiunta alla tua applicazione. In modalità isolata puoi scegliere un sottoinsieme di funzionalità di Visual Studio da distribuire insieme all'estensione.  
+È possibile creare un'applicazione personalizzata basata su Visual Studio in modalità integrata o isolata. In modalità integrata sono disponibili molte funzionalità di Visual Studio, oltre all'applicazione. In modalità isolata è possibile scegliere un subset di funzionalità di Visual Studio che si desidera distribuire insieme all'estensione.  
   
 ## <a name="integrated-mode"></a>Modalità integrata  
  La modalità integrata consente agli utenti di usare le funzionalità standard di Visual Studio insieme agli strumenti personalizzati. La shell integrata è progettata principalmente per ospitare i linguaggi di programmazione e gli strumenti di sviluppo software.  

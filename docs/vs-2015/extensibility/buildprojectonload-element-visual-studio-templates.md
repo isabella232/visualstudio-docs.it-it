@@ -1,5 +1,5 @@
 ---
-title: Elemento buildProjectOnload (modelli di Visual Studio) | Microsoft Docs
+title: Elemento BuildProjectOnload (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184661"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Compila solo i nuovi progetti durante la creazione e aggiungerle a una soluzione. Non viene compilato l'intera soluzione.  
+Compila solo i nuovi progetti durante la creazione e li aggiunge a una soluzione. L'intera soluzione non è compilata.  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Sintassi  
@@ -43,18 +43,18 @@ Compila solo i nuovi progetti durante la creazione e aggiungerle a una soluzione
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|TemplateData|Classifica il modello e definisce come viene visualizzato in entrambe le **nuovo progetto** e il **Aggiungi nuovo elemento** finestre di dialogo.|  
+|TemplateData|Categorizza il modello e ne definisce il modo in cui viene visualizzato nelle finestre di dialogo **nuovo progetto** e **Aggiungi nuovo elemento** .|  
   
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Il testo deve essere `true` o `false` per indicare se si vuole creare il nuovo progetto solo quando viene creato dal modello.  
+ Il testo deve essere `true` o `false` per indicare se compilare solo il nuovo progetto quando viene creato dal modello.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `BuildProjectOnLoad` è un elemento facoltativo. Il valore predefinito è `false`.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per un modello di Visual c#.  
+ Nell'esempio seguente vengono illustrati i metadati per un modello di Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

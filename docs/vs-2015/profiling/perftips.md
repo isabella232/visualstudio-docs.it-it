@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fa56b6731e359db486a111194a710069d41a2f1b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295860"
 ---
 # <a name="perftips"></a>PerfTips
@@ -26,14 +26,14 @@ Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di d
 ## <a name="perftips"></a>PerfTips  
  Quando il debugger interrompe l'esecuzione in un punto di interruzione o un'operazione passo a passo, il tempo trascorso tra l'interruzione e il precedente punto di interruzione viene visualizzato come un suggerimento nella finestra dell'editor. Per altre informazioni, vedere [PerfTips, informazioni immediate sulle prestazioni durante il debug in Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).  
   
- ![Perftip relativo al](../profiling/media/dbgdiag-perf-perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![PerfTip](../profiling/media/dbgdiag-perf-perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Finestra Strumenti di diagnostica  
  I punti di interruzione e i dati di intervallo associati vengono registrati nella finestra Strumenti di diagnostica  
   
  Il grafico seguente mostra la finestra Strumenti di diagnostica in Visual Studio 2015 Update 1:  
   
- ![Update1&#45;diagnostica](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+ ![Diagnostica&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 - La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .  
   

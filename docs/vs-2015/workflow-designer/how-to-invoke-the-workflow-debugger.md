@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849275"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Procedura: richiamare il debugger del flusso di lavoro.
@@ -26,7 +26,7 @@ Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si
 - Usare debug remoto. Per informazioni sull'uso del debug remoto, vedere [procedura: abilitare il debug remoto](https://msdn.microsoft.com/library/febz73k0.aspx).
 
     > [!NOTE]
-    > Se l'applicazione del flusso di lavoro è destinata all'architettura x86 ed è ospitata in un computer che esegue un sistema operativo a 64 bit, il debug remoto non funzionerà a meno che [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] non sia installato nel computer remoto o la destinazione dell'applicazione del flusso di lavoro venga modificata in **qualsiasi CPU**.
+    > Se l'applicazione del flusso di lavoro è destinata all'architettura x86 ed è ospitata in un computer che esegue un sistema operativo a 64 bit, il debug remoto non funzionerà a meno che non [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia installato nel computer remoto o la destinazione per l'applicazione del flusso di lavoro venga modificata in **qualsiasi CPU**.
 
 ### <a name="stepping-through-code"></a>Esecuzione di codice istruzione per istruzione
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850786"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
@@ -34,7 +34,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di solito
 ## <a name="compileroptions-attribute"></a>attributo compilerOptions
  Esempio: `compilerOptions="optimize+"`
 
- Valori validi: qualsiasi opzione del compilatore valida. Per ulteriori informazioni, vedere [ C# opzioni del compilatore elencate per categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [Visual Basic opzioni del compilatore elencate per categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valori validi: qualsiasi opzione del compilatore valida. Per ulteriori informazioni, vedere [Opzioni del compilatore C# elencate per categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [Visual Basic opzioni del compilatore elencate per categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignorato per i modelli (pre-elaborati) della fase di esecuzione.
 
@@ -45,7 +45,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di solito
 
  Valori validi: "", le impostazioni cultura invarianti, che è l'impostazione predefinita.
 
- Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per ulteriori informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+ Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per altre informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  L'attributo Culture specifica le impostazioni cultura da utilizzare quando un blocco di espressione viene convertito in testo.
 
@@ -56,7 +56,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di solito
 debug="true"
 ```
 
- Valori validi: `true, false`. False è l'impostazione predefinita.
+ Valori validi: `true, false` . False è l'impostazione predefinita.
 
  Se l'attributo `debug` ha valore `true`, il file di codice intermedio conterrà le informazioni che consentono al debugger di identificare in modo più accurato la posizione nel modello in cui si è verificata un'interruzione o un'eccezione.
 
@@ -71,7 +71,7 @@ debug="true"
 hostspecific="true"
 ```
 
- Valori validi: `true, false, trueFromBase`. False è l'impostazione predefinita.
+ Valori validi: `true, false, trueFromBase` . False è l'impostazione predefinita.
 
  Se si imposta il valore di questo attributo su `true`, viene aggiunta una proprietà denominata `Host` alla classe generata dal modello di testo. La proprietà è un riferimento all'host del motore di trasformazione e viene dichiarata come [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Se è stato definito un host personalizzato, è possibile eseguirne il cast sul tipo di host personalizzato.
 
@@ -108,7 +108,7 @@ Content of myFile is:
 
  `VB`
 
- L'attributo Language specifica il linguaggio ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)]) da usare per il codice sorgente nei blocchi di istruzione e di espressione. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
+ L'attributo Language specifica la lingua ( [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)] ) da usare per il codice sorgente nei blocchi di istruzione e di espressione. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
 
  Ad esempio:
 

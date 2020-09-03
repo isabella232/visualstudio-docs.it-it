@@ -14,22 +14,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184701"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica le informazioni relative a un assembly, che usa il modello per aggiungere un riferimento dell'assembly per i progetti.  
+Specifica le informazioni su un assembly utilizzato dal modello per aggiungere un riferimento a tale assembly ai progetti.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
- \<Riferimenti a >  
- \<Riferimento >  
- \<Assembly >  
+ \<References>  
+ \<Reference>  
+ \<Assembly>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -50,14 +50,14 @@ Specifica le informazioni relative a un assembly, che usa il modello per aggiung
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Reference](../extensibility/reference-element-visual-studio-templates.md)|Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.|  
+|[Riferimento](../extensibility/reference-element-visual-studio-templates.md)|Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.|  
   
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Questo testo specifica l'assembly da aggiungere a un progetto quando viene creata un'istanza del modello di elemento. Questo nome dell'assembly deve essere specificato in uno dei modi seguenti:  
+ Questo testo specifica l'assembly da aggiungere a un progetto quando viene creata un'istanza del modello di elemento. Il nome dell'assembly deve essere specificato in uno dei modi seguenti:  
   
-- Come un nome completo dell'assembly. Ad esempio:  
+- Come nome completo dell'assembly. Ad esempio:  
   
     ```  
     <Assembly>  
@@ -65,19 +65,19 @@ Specifica le informazioni relative a un assembly, che usa il modello per aggiung
     </Assembly>  
     ```  
   
-- Come riferimento in testo semplice. Ad esempio:  
+- Come riferimento di testo semplice. Ad esempio:  
   
     ```  
     <Assembly> System </Assembly>  
     ```  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `Assembly` è un elemento figlio obbligatorio di `Reference`.  
   
- Il `Reference`, `References,` e `Assembly` elementi possono essere utilizzati solo nei file con estensione vstemplate che hanno una `Type` valore dell'attributo `Item`.  
+ Gli `Reference` `References,` elementi, e `Assembly` possono essere utilizzati solo nei file con estensione vstemplate il cui `Type` valore di attributo è `Item` .  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato il `TemplateContent` elemento di un modello di elemento. Questo file XML vengono aggiunti riferimenti agli assembly System. dll e System.  
+ Nell'esempio seguente viene illustrato l' `TemplateContent` elemento di un modello di elemento. Il codice XML aggiunge riferimenti agli assembly System.dll e System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -98,5 +98,5 @@ Specifica le informazioni relative a un assembly, che usa il modello per aggiung
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846328"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Finestra di dialogo Editor condizione della regola (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo **Editor condizione della regola** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Editor condizione della regola** in legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Per creare e modificare condizioni della regola dichiarativa, utilizzare la finestra di dialogo **Editor condizione della regola** . Queste condizioni della regola sono esposte come proprietà nelle attività predefinite di Windows Workflow Foundation seguenti:
 
@@ -47,7 +47,7 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Edi
 |**OK**|Fare clic per salvare la condizione della regola.|
 
 ## <a name="entering-condition-expressions"></a>Immissione delle espressioni della condizione.
- Le espressioni della condizione vengono immesse in formato testo. È possibile digitare **questo.** nell'editor per fare riferimento a campi, proprietà e metodi usati nel flusso di lavoro usando un menu di tipo IntelliSense. In alternativa, è possibile digitare direttamente il nome di un membro del flusso di lavoro. È possibile aggiungere operatori logici alla condizione, ad esempio E, O e NON. È anche possibile aggiungere predicati. Un predicato è composto da un operatore binario e due operandi. Gli operatori binari supportati sono **==** , **>** , **\<** , **>=** e **<=** . Gli operandi supportati sono membri pubblici ai quali è stato assegnato un valore costante, una funzione aritmetica e un ambito.
+ Le espressioni della condizione vengono immesse in formato testo. È possibile digitare **questo.** nell'editor per fare riferimento a campi, proprietà e metodi usati nel flusso di lavoro usando un menu di tipo IntelliSense. In alternativa, è possibile digitare direttamente il nome di un membro del flusso di lavoro. È possibile aggiungere operatori logici alla condizione, ad esempio E, O e NON. È inoltre possibile aggiungere predicati. Un predicato è composto da un operatore binario e due operandi. Gli operatori binari supportati sono **==** , **>** , **\<**, **>=** e **<=** . Gli operandi supportati sono membri pubblici ai quali è stato assegnato un valore costante, una funzione aritmetica e un ambito.
 
  È possibile specificare il tipo per il confronto ed è possibile confrontarlo con un **valore null** o una stringa vuota. È possibile effettuare chiamate annidate ai membri su una variabile contenente un tipo complesso, ad esempio, `this.Address.State == "WA"`.
 
@@ -55,13 +55,13 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Edi
 
 - operatori relazionali: ==, =, !=
 
-- Operatori di confronto: <, \<=, >, > =
+- Operatori di confronto: <, \<=, > , >=
 
 - Operatori aritmetici: +, - , *, /, MOD
 
-- Operatori logici: and, & & o, &#124; &#124;, not,!
+- Operatori logici: AND,  && o,  &#124;&#124;, NOT,!
 
-- Operatori bit per bit: &,&#124;
+- Operatori bit per bit: &, &#124;
 
   La precedenza di operatori dell’espressione segue le regole di precedenza dell’operatore C#.
 

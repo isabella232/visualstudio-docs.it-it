@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5e41dbf3422374add68e351da1e4b703772a3a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74296854"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procedura dettagliata: creare un'applicazione semplice con Visual C# o Visual Basic
@@ -21,18 +21,18 @@ ms.locfileid: "74296854"
 
 Completando questa procedura dettagliata, si acquisirà familiarità con molti strumenti, finestre di dialogo e finestre di progettazione che è possibile usare quando si sviluppano applicazioni con Visual Studio. Durante la procedura gli utenti potranno creare una semplice applicazione in stile "Hello, World", progettare l'interfaccia utente, aggiungere codice ed eseguire il debug degli errori, acquisendo al contempo ulteriori informazioni su come lavorare in IDE (Integrated Development Environment).
 
- Di seguito sono elencate le diverse sezioni di questo argomento:
+ In questo argomento sono incluse le sezioni seguenti:
 
- [Configurare IDE](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)
+ [Configurare l'IDE](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)
 
- [Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)
+ [Creare un'applicazione semplice](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)
 
  [Eseguire il debug e il test dell'applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)
 
 > [!NOTE]
 > Questa procedura dettagliata è basata su Visual Studio Professional, che offre il modello Applicazione WPF in cui compilare il progetto. Il modello è disponibile anche in Visual Studio Express per Windows Desktop, ma non in Visual Studio Express per Windows e Visual Studio Express per il Web. Per informazioni introduttive su come usare Visual Studio Express per Windows, visitare il [Centro per sviluppatori per app di Windows Store](https://msdn.microsoft.com/windows/apps/br229519). Per informazioni introduttive su come usare Visual Studio Express per il Web, vedere [Get Started with ASP.NET](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro)(Introduzione ad ASP.NET). Inoltre, l'edizione di Visual Studio e le impostazioni usate determinano i nomi e le posizioni di alcuni elementi dell'interfaccia utente. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="BKMK_ConfigureIDE"></a> Configurare IDE
+## <a name="configure-the-ide"></a><a name="BKMK_ConfigureIDE"></a> Configurare IDE
  Quando si avvia Visual Studio per la prima volta, viene chiesto di effettuare l'accesso con un Account di servizio Microsoft (MSA). Per informazioni, vedere [Sign into Visual Studio](https://devblogs.microsoft.com/visualstudio/welcome-sign-in-to-visual-studio/)(Accedere a Visual Studio). Non è necessario accedere adesso ed è possibile farlo in seguito.
 
  All'avvio di Visual Studio, scegliere quindi una combinazione di impostazioni che applichi un set di personalizzazioni predefinite all'IDE. Ogni combinazione di impostazioni è stata progettata per semplificare lo sviluppo di applicazioni.
@@ -43,13 +43,13 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
  Figura 2: IDE di Visual Studio
 
- ![IDE con impostazioni generali applicate](../ide/media/exploreide-idewithgeneralsettings.png "|::ref1::|")
+ ![IDE con impostazioni generali applicate](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-Idewithgeneralsettingss")
 
  È possibile apportare personalizzazioni aggiuntive a Visual Studio, ad esempio modificare il tipo di carattere e la dimensione del testo nell'editor o il tema di colore di IDE, mediante la finestra di dialogo **Opzioni** . A seconda della combinazione di impostazioni applicata, alcuni elementi della finestra di dialogo potrebbero non essere visualizzati automaticamente. È possibile assicurarsi che tutte le opzioni possibili vengano visualizzate selezionando la casella di controllo **Mostra tutte le impostazioni** .
 
  Figura 3: finestra di dialogo Opzioni
 
- ![Finestra di dialogo Opzioni con l'opzione Mostra tutte le impostazioni](../ide/media/exploreide-optionsdialogbox.png "|::ref2::|")
+ ![Finestra di dialogo Opzioni con l'opzione Mostra tutte le impostazioni](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")
 
  In questo esempio verrà modificato il tema colori di IDE da chiaro a scuro.  È possibile passare direttamente alla creazione di un progetto.
 
@@ -57,46 +57,46 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
 1. Aprire la finestra di dialogo **Opzioni** scegliendo il menu **Strumenti** nella parte superiore e quindi l'elemento **Opzioni...** .
 
-    ![Comando Opzioni nel menu Strumenti](../ide/media/exploreide-toolsoptionsmenu.png "|::ref3::|")
+    ![Comando Opzioni nel menu Strumenti](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
 
 2. Modificare **Tema colori** in **Scuro**, quindi scegliere **OK**.
 
-    ![Tema colori Scuro selezionato](../ide/media/exploreide-darkthemeoptionsdlgbox.png "|::ref4::|")
+    ![Tema colori Scuro selezionato](../ide/media/exploreide-darkthemeoptionsdlgbox.png "ExploreIDE-Darkthemeoptionsdlgbox")
 
    I colori in Visual Studio devono corrispondere all'immagine seguente:
 
-   ![IDE con tema scuro applicato](../ide/media/exploreide-darkthemeide.png "|::ref5::|")
+   ![IDE con tema scuro applicato](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")
 
    Il tema colori usato per le immagini nel resto di questa procedura dettagliata è Chiaro. Per altre informazioni sulla personalizzazione dell'IDE, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="BKMK_CreateApp"></a> Creare una semplice applicazione
+## <a name="create-a-simple-application"></a><a name="BKMK_CreateApp"></a> Creare un'applicazione semplice
 
 ### <a name="create-the-project"></a>Creare il progetto
  Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario creare un progetto e una soluzione. In questo esempio verrà creata un progetto Windows Presentation Foundation (WPF).
 
 ##### <a name="to-create-the-wpf-project"></a>Per creare il progetto WPF
 
-1. Creare un nuovo progetto. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto...** .
+1. Creare un nuovo progetto. Sulla barra dei menu scegliere **file**, **nuovo**, **progetto...**.
 
-    ![Nella barra dei menu scegliere File, Nuovo, Progetto](../ide/media/exploreide-filenewproject.png "|::ref6::|")
+    ![Sulla barra dei menu scegliere file, nuovo, progetto](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
 
     È inoltre possibile digitare **Nuovo progetto** nella casella **Avvio veloce** per eseguire la stessa operazione.
 
-    ![Specificare il nuovo progetto nella casella Avvio veloce](../ide/media/exploreide-quicklaunchnewprojectsmall.png "|::ref7::|")
+    ![Specificare il nuovo progetto nella casella Avvio veloce](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE-QuickLaunchNewProjectsmall")
 
-2. Scegliere il modello applicazione WPF in Visual Basic o Visual C# selezionando nel riquadro a sinistra **Installato**, **Modelli**, **Visual C#** , **Windows**, ad esempio, e quindi selezionando Applicazione WPF nel riquadro centrale.  Denominare il progetto HelloWPFApp nella parte inferiore della finestra di dialogo Nuovo progetto.
+2. Scegliere il modello applicazione WPF in Visual Basic o Visual C# selezionando nel riquadro a sinistra **Installato**, **Modelli**, **Visual C#**, **Windows**, ad esempio, e quindi selezionando Applicazione WPF nel riquadro centrale.  Denominare il progetto HelloWPFApp nella parte inferiore della finestra di dialogo Nuovo progetto.
 
-    ![Creare un progetto WPF in Visual Basic denominato HelloWPFApp](../ide/media/exploreide-newprojectvb.png "|::ref8::|")
+    ![Creare un progetto WPF in Visual Basic denominato HelloWPFApp](../ide/media/exploreide-newprojectvb.png "ExploreIDE-NewProjectVB")
 
-    OR
+    OPPURE
 
-    ![Creare un progetto WPF&#35; Visual C, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "|::ref9::|")
+    ![Creare un progetto WPF Visual C&#35;, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")
 
-   Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. In WPF Designer vengono illustrate una visualizzazione Progettazione e una visualizzazione XAML suddivise di MainWindow.xaml. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione.  È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. Per altre informazioni, vedere [Progettazione WPF per gli sviluppatori di Windows Form](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca). In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
+   Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. In WPF Designer vengono illustrate una visualizzazione Progettazione e una visualizzazione XAML suddivise di MainWindow.xaml. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione.  È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. Per ulteriori informazioni, vedere [WPF Designer for Windows Forms Developers](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
 
    Figura 5: elementi di progetto
 
-   ![Esplora soluzioni con i file HelloWPFApp caricati](../ide/media/exploreide-hellowpfappfiles.png "|::ref10::|")
+   ![Esplora soluzioni con i file HelloWPFApp caricati](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")
 
    Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **Proprietà** (disponibile nel menu **Visualizzazione** ) è possibile visualizzare e modificare le opzioni per elementi di progetto, controlli e altri elementi in un'applicazione. Utilizzando le proprietà del progetto e le pagine delle proprietà, è possibile visualizzare e modificare le opzioni per progetti e soluzioni.
 
@@ -104,7 +104,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
 1. Nella procedura illustrata di seguito verrà assegnato a MainWindow un nome più specifico. In **Esplora soluzioni**selezionare MainWindow.xaml. Dovrebbe essere visualizzata la finestra **Proprietà** , ma qualora non lo fosse, scegliere il menu **Visualizzazione** e l'elemento **Finestra Proprietà** . Cambiare la proprietà **Nome file** in `Greetings.xaml`.
 
-    ![Finestra Proprietà con il nome file evidenziato](../ide/media/exploreide-filenameinpropertieswindow.png "|::ref11::|")
+    ![Finestra Proprietà con il nome file evidenziato](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")
 
     In**Esplora soluzioni** è possibile notare che il nome del file è ora Greetings.xaml e, se si espande il nodo di MainWindow.xaml (premendo il tasto freccia destra con il nodo attivo), il nome del file MainWindow.xaml.vb o MainWindow.xaml.cs è ora Greetings.xaml.vb o Greetings.xaml.cs. Questo file di codice è annidato sotto il nodo del file con estensione xaml per mostrare che sono strettamente correlati tra loro.
 
@@ -126,7 +126,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
 2. Nella **Casella degli strumenti**cercare il controllo TextBlock.
 
-    ![Casella degli strumenti con il controllo TextBlock evidenziato](../ide/media/exploreide-textblocktoolbox.png "|::ref12::|")
+    ![Casella degli strumenti con il controllo TextBlock evidenziato](../ide/media/exploreide-textblocktoolbox.png "ExploreIDE-TextBlockToolbox")
 
 3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento TextBlock e trascinandolo nell'area di progettazione nella finestra.  Centrare il controllo nella parte superiore della finestra.
 
@@ -134,7 +134,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
    Figura 7: finestra Greetings con il controllo TextBlock
 
-   ![Controllo TextBlock nel modulo di messaggi di apertura](../ide/media/exploreide-greetingswithtextblockonly.png "|::ref13::|")
+   ![Controllo TextBlock nel modulo di messaggi di apertura](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")
 
    Il markup XAML dovrebbe essere analogo a quello indicato di seguito.
 
@@ -150,13 +150,13 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
 3. Salvare le modifiche premendo CTRL + S oppure usando la voce di menu **File** .
 
-   Successivamente, verranno aggiunti due controlli [RadioButton](https://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) al modulo.
+   Successivamente, verranno aggiunti due controlli [RadioButton](https://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) al form.
 
 ##### <a name="to-add-radio-buttons"></a>Per aggiungere pulsanti di opzione
 
 1. Nella **Casella degli strumenti**cercare il controllo RadioButton.
 
-    ![Finestra Casella degli strumenti con il controllo RadioButton selezionato](../ide/media/exploreide-radiobuttontoolbox.png "|::ref14::|")
+    ![Finestra Casella degli strumenti con il controllo RadioButton selezionato](../ide/media/exploreide-radiobuttontoolbox.png "ExploreIDE-RadioButtonToolbox")
 
 2. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento RadioButton e trascinandolo nella finestra nell'area di progettazione due volte, quindi spostare i pulsanti (a tale scopo, selezionarli e usare i tasti di direzione) in modo che i pulsanti vengano visualizzati affiancati sotto il controllo TextBlock.
 
@@ -164,7 +164,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
     Figura 8: RadioButtons nella finestra Greetings.
 
-    ![Modulo Greetings con blocco di testo e due pulsanti di opzione](../ide/media/exploreide-greetingswithradiobuttons.png "|::ref15::|")
+    ![Modulo di messaggi di apertura con blocco di testo e due pulsanti di opzione](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")
 
 3. Nella finestra **Proprietà** per il controllo RadioButton sinistro modificare la proprietà **Nome** (la proprietà nella parte superiore della finestra **Proprietà** ) in `RadioButton1`.  Assicurarsi di aver selezionato il controllo RadioButton e non la griglia sullo sfondo nel modulo: nel campo Tipo della finestra Proprietà sotto il campo Nome si dovrà leggere RadioButton.
 
@@ -192,7 +192,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
    Figura 9: interfaccia utente finale di Greetings
 
-   ![Modulo Greetings con etichette del controllo](../ide/media/exploreide-greetingswithconrollabels.png "|::ref16::|")
+   ![Modulo Greetings con etichette del controllo](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")
 
 ### <a name="add-code-to-the-display-button"></a>Aggiungere codice al pulsante Visualizza
  Quando l'applicazione è in esecuzione, se un utente sceglie un pulsante di opzione e seleziona il pulsante **Visualizza** , verrà visualizzata una finestra di messaggio. Verranno visualizzate una finestra di messaggio per Hello e una per Goodbye. Per creare questo comportamento, è necessario aggiungere codice all'evento Button_Click in Greetings.xaml.vb o Greetings.xaml.cs.
@@ -247,7 +247,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
 3. Salvare l'applicazione.
 
-## <a name="BKMK_DebugTest"></a> Eseguire il debug e il test dell'applicazione
+## <a name="debug-and-test-the-application"></a><a name="BKMK_DebugTest"></a> Eseguire il debug e il test dell'applicazione
  Verrà quindi eseguito il debug dell'applicazione per rilevare eventuali errori e verificare che entrambe le finestre di messaggio vengano visualizzate correttamente. Le istruzioni seguenti indicano come compilare e avviare il debugger, ma in un secondo momento può essere utile leggere [Compilazione di un'applicazione WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) e [Debug di WPF](../debugger/debugging-wpf.md) per altre informazioni.
 
 ### <a name="find-and-fix-errors"></a>Trovare e correggere errori
@@ -257,13 +257,13 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
 1. Avviare il debugger selezionando **Debug**, quindi **Avvia debug**.
 
-    ![Comando Avvia Debug dal menu Debug](../ide/media/exploreide-startdebugging.png "|::ref17::|")
+    ![Comando Avvia Debug dal menu Debug](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
 
     Verrà visualizzata una finestra di dialogo in cui è indicato che si è verificata un'eccezione IOException: Impossibile individuare la risorsa 'mainwindow.xaml'.
 
 2. Scegliere il pulsante **OK** , quindi arrestare il debugger.
 
-    ![Comando Arresta debug dal menu Debug](../ide/media/exploreide-stopdebugging.png "|::ref18::|")
+    ![Interrompere il comando Debug dal menu Debug](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging alternativa")
 
    Il file Mainwindow.xaml è stato rinominato in Greetings.xaml all'inizio di questa procedura dettagliata, ma il codice fa ancora riferimento a Mainwindow.xaml come URI di avvio per l'applicazione. Il progetto non può pertanto essere avviato.
 
@@ -284,7 +284,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
 2. Aggiungere un punto di interruzione dal menu selezionando **Debug**, quindi **Imposta/Rimuovi punto di interruzione**.
 
-     ![Comando Imposta/Rimuovi punto di interruzione nel menu Debug](../ide/media/exploreide-togglebreakpoint.png "|::ref19::|")
+     ![Comando Imposta/Rimuovi punto di interruzione nel menu Debug](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint (")
 
      Accanto alla riga di codice nel margine di estrema sinistra della finestra dell'editor verrà visualizzato un cerchio rosso.
 
@@ -319,17 +319,17 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
 
 1. Nel menu principale, selezionare **Compila**, quindi **Pulisci soluzione** per eliminare i file intermedi e di output creati durante le compilazioni precedenti.  Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
-    ![Comando Pulisci soluzione del menu Compila](../ide/media/exploreide-cleansolution.png "|::ref20::|")
+    ![Comando Pulisci soluzione del menu Compila](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")
 
 2. Modificare la configurazione di compilazione per HelloWPFApp da **Debug** a **Rilascio** usando il controllo a discesa sulla barra degli strumenti (al momento è selezionato "Debug").
 
-    ![Barra degli strumenti Standard con l'opzione Rilascio](../ide/media/exploreide-releaseversion.png "|::ref21::|")
+    ![Barra degli strumenti standard con l'opzione Release](../ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")
 
 3. Compilare la soluzione scegliendo **Compila**, quindi **Compila soluzione** o premendo il tasto F6.
 
-    ![Comando Compila soluzione del menu Compila](../ide/media/exploreide-buildsolution.png "|::ref22::|")
+    ![Comando Compila soluzione del menu Compila](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-   La procedura dettagliata è stata completata. È possibile trovare il file con estensione exe compilato nella directory di progetto e soluzione (…\HelloWPFApp\HelloWPFApp\bin\Release\\). Per altri esempi, vedere [Visual Studio Samples](../ide/visual-studio-samples.md) (Esempi di Visual Studio).
+   La procedura dettagliata è stata completata. È possibile trovare il file con estensione exe compilato nella directory di progetto e soluzione (…\HelloWPFApp\HelloWPFApp\bin\Release\\). Per esaminare altri esempi, vedere [Visual Studio Samples](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Vedere anche
  [Novità di Visual studio 2015](../what-s-new-in-visual-studio-2015.md) [Introduzione allo sviluppo con](../ide/get-started-developing-with-visual-studio.md) [suggerimenti](../ide/productivity-tips-for-visual-studio.md) per la produttività in Visual Studio

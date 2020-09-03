@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88144688"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
@@ -101,20 +101,20 @@ Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzion
 |Funzionalità|Ambienti SCVMM|Ambienti standard|
 |-|------------------------|-|
 |**Test**|||
-|Eseguire test manuali|Funzionalità supportata|Funzionalità supportata|
-|Eseguire il test codificato dell'interfaccia utente e altri test automatizzati|Funzionalità supportata|Funzionalità supportata|
-|Archiviare bug dettagliati usando gli adattatori diagnostici|Funzionalità supportata|Funzionalità supportata|
+|Eseguire test manuali|Supportato|Supportato|
+|Eseguire il test codificato dell'interfaccia utente e altri test automatizzati|Supportato|Supportato|
+|Archiviare bug dettagliati usando gli adattatori diagnostici|Supportato|Supportato|
 |**Distribuzione della compilazione**|||
-|Flussi di lavoro compilazione, distribuzione e test automatici|Funzionalità supportata|Funzionalità supportata|
+|Flussi di lavoro compilazione, distribuzione e test automatici|Supportato|Supportato|
 |**Creazione e gestione dell'ambiente**|||
-|Usare computer fisici oltre alle macchine virtuali|Non supportate|Supportato|
-|Usare macchine virtuali di terze parti|Non supportate|Supportato|
-|Installazione automatica degli agenti di test nei computer nell'ambiente lab|Funzionalità supportata|Funzionalità supportata|
-|Salvare e distribuire lo stato di un ambiente lab tramite snapshot dell'ambiente|Supportato|Non supportate|
-|Creare ambienti lab dai modelli di macchina virtuale|Supportato|Non supportate|
-|Avviare, arrestare e creare lo snapshot dell'ambiente|Supportato|Non supportate|
-|Connettersi all'ambiente usando Visualizzatore ambiente|Funzionalità supportata|Funzionalità supportata|
-|Eseguire più copie di un ambiente nello stesso momento usando l'isolamento della rete|Supportato|Non supportate|
+|Usare computer fisici oltre alle macchine virtuali|Non supportato|Supportato|
+|Usare macchine virtuali di terze parti|Non supportato|Supportato|
+|Installazione automatica degli agenti di test nei computer nell'ambiente lab|Supportato|Supportato|
+|Salvare e distribuire lo stato di un ambiente lab tramite snapshot dell'ambiente|Supportato|Non supportato|
+|Creare ambienti lab dai modelli di macchina virtuale|Supportato|Non supportato|
+|Avviare, arrestare e creare lo snapshot dell'ambiente|Supportato|Non supportato|
+|Connettersi all'ambiente usando Visualizzatore ambiente|Supportato|Supportato|
+|Eseguire più copie di un ambiente nello stesso momento usando l'isolamento della rete|Supportato|Non supportato|
 
 ### <a name="lab-management-concepts"></a>Concetti di Lab Management
 
@@ -132,7 +132,7 @@ Per altre informazioni su Lab Management, vedere:
 * [Pianificare il lab](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
 * [Configurazione e amministrazione di Lab Management](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
 * [Configurazione di Lab Management per ambienti SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Gestire le autorizzazioni](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
+* [Gestione autorizzazioni](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
 * [Modifica della configurazione](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
 * [Risoluzione dei problemi](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 

@@ -12,10 +12,10 @@ ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850316"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Procedura: Creare un controllo della casella degli strumenti che usa Windows Form
@@ -67,7 +67,7 @@ Il modello di controllo della casella degli strumenti Windows Form incluso in [!
   
 #### <a name="to-build-and-test-the-control"></a>Per compilare e testare il controllo  
   
-1. Premi F5.  
+1. Premere F5.  
   
 2. Nella nuova istanza di Visual Studio creare un progetto Windows Forms Application.  
   

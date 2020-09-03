@@ -1,5 +1,5 @@
 ---
-title: Ordinare le direttive using
+title: Ordina using
 description: Come ordinare le direttive `using` all'inizio del file in modo da elencarle in ordine alfabetico.
 ms.date: 03/10/2020
 ms.topic: reference
@@ -12,13 +12,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d502abe583c09d6c117ed1083e87cded823bc386
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093791"
 ---
-# <a name="sort-usings"></a>Ordinare le direttive using
+# <a name="sort-usings"></a>Ordina using
 
 Questo refactoring si applica a:
 
@@ -26,18 +26,18 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Ordinare utilizzando.
+**Cosa:** Ordina using.
 
-**Quando:** Si desidera `using` ordinare le direttive all'inizio del file in modo che siano in ordine alfabetico. 
+**Quando:** Si desidera ordinare `using` le direttive all'inizio del file in modo che siano in ordine alfabetico. 
 
-**Perché:** Rende più facile trovare una direttiva using.
+**Motivo:** Consente di trovare più facilmente una direttiva using.
 
 ## <a name="how-to"></a>Procedure
 
 1. Selezionare **Modifica** dalla barra dei menu.
-2. Selezionare **Intellisense** > **Sort Usings**.
+2. Selezionare **IntelliSense**  >  **Ordina using**.
 
-   ![Ordinare le direttive using](media/sort-usings.png)
+   ![Ordina using](media/sort-usings.png)
 
 ## <a name="see-also"></a>Vedere anche
 

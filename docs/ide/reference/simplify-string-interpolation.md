@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094307"
 ---
-# <a name="simplify-string-interpolation-refactoring"></a>Semplifica il refactoring dell'interpolazione delle stringhe
+# <a name="simplify-string-interpolation-refactoring"></a>Semplificazione del refactoring dell'interpolazione di stringhe
 
 Questo refactoring si applica a:
 
@@ -25,19 +25,19 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Consente di semplificare [l'interpolazione](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation)di una stringa.
+**Cosa:** Consente di semplificare un' [interpolazione di stringhe](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
 
-**Quando:** Si dispone di un'interpolazione di stringa che può essere semplificata.
+**Quando:** Si dispone di un'interpolazione di stringhe che può essere semplificata.
 
-**Perché:** Semplificare l'interpolazione di stringa può fornire maggiore chiarezza e sintassi concisa. Questo strumento di refactoring eseguirà automaticamente l'attività anziché doverla eseguire manualmente.
+**Motivo:** La semplificazione di un'interpolazione di stringhe può fornire maggiore chiarezza e sintassi concisa. Questo strumento di refactoring eseguirà automaticamente l'attività invece di eseguirla manualmente.
 
 ## <a name="how-to"></a>Procedure
 
-1. Posizionare il punto di inserimento sull'interpolazione della stringa:
+1. Posizionare il cursore sull'interpolazione di stringhe:
 
-2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
 
-3. Selezionate **Semplifica interpolazione**
+3. Selezionare **semplifica l'interpolazione**
 
     ![Semplificare l'interpolazione di stringhe](media/simplify-string-interpolation.png)
 

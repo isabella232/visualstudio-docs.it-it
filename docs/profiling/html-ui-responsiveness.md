@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331420"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
@@ -71,7 +71,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 ## <a name="isolate-an-issue"></a>Isolare un problema
  Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni mediante un'app di esempio per la verifica delle prestazioni, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente](html-ui-responsiveness.md).
 
-### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a>Isolare un problema di velocità di risposta dell'interfaccia utente
+### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a> Isolare un problema di velocità di risposta dell'interfaccia utente
  Questi passaggi forniscono un flusso di lavoro consigliato che può aiutarti a usare il profiler della velocità di risposta dell'interfaccia utente in modo più efficace:
 
 1. Apri l'app in Visual Studio.
@@ -276,7 +276,7 @@ if (performance.mark && performance.measure) {
 
  ![Applicazione di filtri alla sequenza temporale per un evento](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
-### <a name="filter-events"></a><a name="FilterEvents"></a>Filtrare gli eventi
+### <a name="filter-events"></a><a name="FilterEvents"></a> Filtrare gli eventi
  Puoi filtrare alcuni eventi dal grafico dei dettagli cronologia per ridurre il rumore nei dati o eliminare i dati non attinenti allo scenario specifico. Puoi filtrare in base al nome o alla durata degli eventi oppure in base a filtri specifici descritti in questo argomento.
 
  Per filtrare la decodifica immagine, il download speculativo e gli eventi GC, deseleziona l'opzione **Attività in background** dall'icona filtro nel riquadro inferiore. Poiché questi eventi non sono molto utilizzabili, sono nascosti per impostazione predefinita.
@@ -357,5 +357,5 @@ if (performance.mark && performance.measure) {
 
 - Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](/previous-versions/windows/apps/hh781217\(v\=win.10\)).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

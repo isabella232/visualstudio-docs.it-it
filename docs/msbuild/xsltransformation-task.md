@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094542"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation (attività)
@@ -34,7 +34,7 @@ Consente di trasformare un input XML tramite un XSLT o un XSLT compilato e di cr
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`OutputPaths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file di output per la trasformazione XML.|
-|`Parameters`|Parametro `String` facoltativo.<br /><br /> Specifica i parametri per il documento di input XSLT.  Fornire il codice XML non `<Parameter Name="" Value="" Namespace="" />`elaborato che contiene ogni parametro come .|
+|`Parameters`|Parametro `String` facoltativo.<br /><br /> Specifica i parametri per il documento di input XSLT.  Fornire il codice XML non elaborato che include ogni parametro come `<Parameter Name="" Value="" Namespace="" />` .|
 |`XmlContent`|Parametro `String` facoltativo.<br /><br /> Specifica l'input XML sotto forma di stringa.|
 |`XmlInputPaths`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica i file di input XML.|
 |`XslCompiledDllPath`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il file XSLT compilato.|
@@ -43,11 +43,11 @@ Consente di trasformare un input XML tramite un XSLT o un XSLT compilato e di cr
 
 ## <a name="remarks"></a>Osservazioni
 
- Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
+ Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene utilizzato un file di trasformazione XSL `$(XmlInputFileName)` *transform.xslt* per modificare il file xml. Il codice XML trasformato `$(IntermediateOutputPath)output.xml`viene scritto in . La trasformazione `$(Parameter1)` XSL accetta come parametro di input.
+Nell'esempio seguente viene utilizzato un file di trasformazione XSL *Transform. XSLT* per modificare il file XML `$(XmlInputFileName)` . Il codice XML trasformato viene scritto in `$(IntermediateOutputPath)output.xml` . La trasformazione XSL accetta `$(Parameter1)` come parametro di input.
 
 ```xml
     <XslTransformation XslInputPath="transform.xslt"
@@ -60,4 +60,4 @@ Nell'esempio seguente viene utilizzato un file di trasformazione XSL `$(XmlInput
 
 - [Parametri XSLT](/dotnet/standard/data/xml/xslt-parameters)
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
 ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850015"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gestire le risorse associate agli account di Azure in Visual Studio Cloud Explorer
@@ -30,7 +30,7 @@ Cloud Explorer è basato sullo stack di Azure Resource Manager, proprio come il 
 * Account di Microsoft Azure: se non si ha un account, è possibile [iscriversi per ottenere una versione di valutazione gratuita](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) oppure [attivare i vantaggi della sottoscrizione di Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
 
 > [!NOTE]
-> Per visualizzare Cloud Explorer, selezionare **visualizza** > **Cloud Explorer** nella barra dei menu.
+> Per visualizzare Cloud Explorer, selezionare **Visualizza**  >  **Cloud Explorer** sulla barra dei menu.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Aggiungere un account di Azure a Cloud Explorer
 
@@ -103,8 +103,8 @@ L'azione **Open in portal**è disponibile per ogni risorsa. Quando si sceglie qu
 
 ## <a name="find-resources-in-cloud-explorer"></a>Cercare risorse in Cloud Explorer
 
-Per trovare risorse con un nome specifico nelle sottoscrizioni dell'account di Azure, immettere il nome nella casella **Cerca** di Cloud Explorer.
+Per individuare le risorse con un nome specifico nelle sottoscrizioni dell'account Azure, immettere il nome nella casella di **ricerca** in Cloud Explorer.
 
   ![Ricerca di risorse in Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-Quando si immettono caratteri nella casella **Cerca**, nell'albero delle risorse vengono visualizzate solo le risorse corrispondenti ai caratteri immessi.
+Quando si immettono caratteri nella casella di **ricerca** , nell'albero delle risorse vengono visualizzate solo le risorse corrispondenti a tali caratteri.

@@ -12,10 +12,10 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d62a4c6cc45681fe6a66ae57df2e1da1d1cc12e0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850589"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Sviluppo di estensioni di Visual Studio
@@ -58,10 +58,10 @@ Se non è mai stata scritta un'estensione di Visual Studio, è probabile che si 
 
 - [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
 
-## <a name="BKMK_ProjectTemplate"></a>Quali modelli di progetto sono forniti da VSSDK?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Quali modelli di progetto sono forniti da VSSDK?
  I due tipi principali di estensioni sono VSPackage ed estensioni MEF. In generale, le estensioni VSPackage vengono usate per le estensioni che usano o estendono i comandi, le finestre degli strumenti e i progetti. Le estensioni MEF vengono usate per estendere o personalizzare l'editor di Visual Studio.
 
- Per le C# estensioni Visual e Visual Basic, VSSDK fornisce un modello di progetto VSIX vuoto che è possibile usare insieme ai nuovi modelli di elemento che creano comandi di menu, finestre degli strumenti ed estensioni dell'editor. Per ulteriori informazioni, vedere Novità [di Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). È anche possibile usare questo modello per creare pacchetti di modelli di progetto, frammenti di codice e altri elementi da distribuire ad altri utenti.
+ Per le estensioni Visual C# ed Visual Basic, VSSDK fornisce un modello di progetto VSIX vuoto che è possibile usare insieme ai nuovi modelli di elemento che creano comandi di menu, finestre degli strumenti ed estensioni dell'editor. Per ulteriori informazioni, vedere Novità [di Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). È anche possibile usare questo modello per creare pacchetti di modelli di progetto, frammenti di codice e altri elementi da distribuire ad altri utenti.
 
  Per C++, la procedura guidata VSPackage fornisce il codice per aggiungere i comandi di menu, le finestre degli strumenti e gli editor personalizzati.
 

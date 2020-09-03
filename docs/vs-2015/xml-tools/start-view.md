@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e839f1a6231a3317c3932a0ca706123b58e772a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656116"
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
@@ -23,7 +23,7 @@ La visualizzazione iniziale è il punto di avvio per Progettazione XML Schema (X
 
  La visualizzazione iniziale contiene due sezioni principali, la *filigrana* e il riquadro dei **Dettagli del set di schemi** . Include anche la barra degli strumenti, disponibile in tutte le visualizzazioni di Progettazione XSD.
 
- ![Visualizzazione iniziale di progettazione XML Schema](../xml-tools/media/xsddesigner-startview.gif "XSDDesigner_StartView")
+ ![Visualizzazione iniziale di Progettazione XML Schema](../xml-tools/media/xsddesigner-startview.gif "XSDDesigner_StartView")
 
 ## <a name="watermark"></a>Filigrana
  Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni di Progettazione XSD, Editor XML e XML Schema Explorer. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
@@ -31,10 +31,10 @@ La visualizzazione iniziale è il punto di avvio per Progettazione XML Schema (X
 ## <a name="schema-set-details"></a>Dettagli set di schemi
  Il riquadro **Dettagli set di schemi** elenca i tipi di nodo dello schema globale e visualizza il numero di istanze di ogni tipo presenti nello schema. È possibile usare i collegamenti **Aggiungi** accanto ai tipi di nodo per aggiungere nuovi nodi all'area di lavoro.
 
-## <a name="toolbar"></a>ToolBar
+## <a name="toolbar"></a>Barra degli strumenti
  È possibile spostarsi tra la visualizzazione iniziale, la [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) e la [visualizzazione grafico](../xml-tools/graph-view.md) dalla barra degli strumenti di progettazione XML Schema.
 
- ![Barra degli strumenti di progettazione XML Schema](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+ ![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
 
  I seguenti pulsanti sono abilitati nella barra degli strumenti di Progettazione XSD quando è attiva la visualizzazione iniziale:
 

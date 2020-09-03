@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850628"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammi livello: linee guida
@@ -31,7 +31,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 ## <a name="what-is-a-layer-diagram"></a>Informazioni sul diagramma livello
  Analogamente a un diagramma architettura tradizionale, un diagramma livello identifica i componenti principali o le unità funzionali della progettazione e le relative interdipendenze. Ogni nodo del diagramma, denominato *livello*, rappresenta un gruppo logico di spazi dei nomi, progetti o altri artefatti. È possibile tracciare le dipendenze che devono esistere nella progettazione. A differenza di un diagramma architettura tradizionale, è possibile verificare che le dipendenze effettive nel codice sorgente siano conformi alle dipendenze desiderate specificate. Includendo la convalida nel normale processo di compilazione in [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], sarà possibile assicurare che il codice programma continui ad essere coerente con l'architettura del sistema anche in caso di modifiche future. Vedere [diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md).
 
-## <a name="Update"></a>Come progettare o aggiornare l'app con diagrammi livello
+## <a name="how-to-design-or-update-your-app-with-layer-diagrams"></a><a name="Update"></a> Come progettare o aggiornare l'app con diagrammi livello
  I passaggi seguenti offrono una panoramica di come usare i diagrammi livello nel processo di sviluppo. Le sezioni successive in questo argomento descrivono in modo più dettagliato ogni passaggio. Se si sviluppa una nuova progettazione, omettere i passaggi relativi al codice esistente.
 
 > [!NOTE]
@@ -39,7 +39,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
 1. [Creare un diagramma livello](#Create) per l'intera applicazione o per un livello al suo interno.
 
-2. [Definire i livelli per rappresentare aree funzionali primarie o componenti](#CreateLayers) dell'applicazione. Assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se si dispone di una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile associare ogni livello a una raccolta di *elementi*, ad esempio progetti, spazi dei nomi, file e così via.
+2. [Definire i livelli per rappresentare aree funzionali primarie o componenti](#CreateLayers) dell'applicazione. Assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se si dispone di una [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione, è possibile associare ogni livello a una raccolta di *elementi*, ad esempio progetti, spazi dei nomi, file e così via.
 
 3. [Individuare le dipendenze esistenti tra i](#Generate) livelli.
 
@@ -55,7 +55,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
 9. [Includere la convalida dei livelli nel processo di compilazione](#BuildValidation) per garantire che il codice continui a rispettare la progettazione.
 
-## <a name="Create"></a>Creare un diagramma livello
+## <a name="create-a-layer-diagram"></a><a name="Create"></a> Creare un diagramma livello
  Un diagramma livello deve essere creato in un progetto di modello. È possibile aggiungere un nuovo diagramma livello a un progetto di modello esistente, creare un nuovo progetto di modello per il diagramma livello oppure copiare un diagramma livello esistente nello stesso progetto di modello.
 
 > [!IMPORTANT]
@@ -63,10 +63,10 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
  Vedere [creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md).
 
-## <a name="CreateLayers"></a>Definire i livelli per rappresentare aree funzionali o componenti
+## <a name="define-layers-to-represent-functional-areas-or-components"></a><a name="CreateLayers"></a> Definire i livelli per rappresentare aree funzionali o componenti
  I livelli rappresentano gruppi logici di *artefatti*, ad esempio progetti, file di codice, spazi dei nomi, classi e metodi. È possibile creare livelli da artefatti da progetti Visual C# .NET e Visual Basic .NET oppure collegare specifiche o piani a un livello collegando documenti, quali file di Word o presentazioni di PowerPoint. Ogni livello viene visualizzato come un rettangolo nel diagramma e viene indicato il numero di artefatti collegati a ogni livello. Un livello può contenere livelli annidati che descrivono attività più specifiche.
 
- È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli artefatti sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per informazioni sui modelli di livello, visitare il sito modelli & Practices [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
+ È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli artefatti sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per informazioni sui modelli di livello, visitare il sito modelli & Practices all'indirizzo [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home) .
 
 > [!TIP]
 > Alcuni tipi di artefatti possono essere collegati ai livelli ma non supportano la convalida rispetto al diagramma livello. Per verificare se l'artefatto supporta la convalida, aprire **Esplora livello** per esaminare la proprietà **convalida supportata** del collegamento dell'elemento. Vedere [individuare le dipendenze esistenti tra i livelli](#Generate).
@@ -81,7 +81,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
 
-## <a name="Generate"></a>Individuare le dipendenze esistenti tra i livelli
+## <a name="discover-existing-dependencies-between-layers"></a><a name="Generate"></a> Individuare le dipendenze esistenti tra i livelli
  È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. Per individuare le dipendenze esistenti, è possibile decompilarle.
 
 > [!NOTE]
@@ -93,26 +93,26 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
   In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È possibile modificare queste dipendenze per allinearle con la progettazione desiderata.
 
-## <a name="EditArchitecture"></a>Modificare i livelli e le dipendenze per visualizzare la progettazione desiderata
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditArchitecture"></a> Modificare i livelli e le dipendenze per visualizzare la progettazione desiderata
  Per descrivere le modifiche da apportare al sistema o all'architettura desiderata, eseguire i passaggi seguenti per modificare il diagramma livello. È anche possibile prendere in considerazione alcune modifiche relative al refactoring per migliorare la struttura del codice prima di estenderlo. Vedere [miglioramento della struttura del codice](#Improving).
 
-|**Per**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |------------|-----------------------------|
 |Eliminare una dipendenza che non dovrebbe essere presente|Fare clic sulla dipendenza, quindi premere **Canc**.|
 |Modificare o limitare la direzione di una dipendenza|Impostarne la proprietà **Direction** .|
 |Creare nuove dipendenze|Usare gli **strumenti di dipendenza e dipendenza** **bidirezionale** .<br /><br /> Per disegnare più dipendenze, fare doppio clic sullo strumento. Al termine, fare clic sullo strumento **puntatore** o premere **ESC** .|
-|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà delle **dipendenze dello spazio dei nomi non consentito** del livello. Utilizzare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
-|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Forbidden Namespaces** del livello. Utilizzare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
-|Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi nella proprietà **obbligatoria Namespaces** del livello. Utilizzare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà delle **dipendenze dello spazio dei nomi non consentito** del livello. Utilizzare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Forbidden Namespaces** del livello. Utilizzare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi nella proprietà **obbligatoria Namespaces** del livello. Utilizzare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 
-### <a name="Improving"></a>Miglioramento della struttura del codice
+### <a name="improving-the-structure-of-the-code"></a><a name="Improving"></a> Miglioramento della struttura del codice
  Le modifiche relative al refactoring sono miglioramenti che non influiscono sul comportamento dell'applicazione, ma contribuiscono a rendere il codice più semplice da modificare ed estendere nel futuro. Il codice ben strutturato è progettato in modo da facilitarne l'astrazione in un diagramma livello.
 
  Ad esempio, se si crea un livello per ogni spazio dei nomi nel codice e quindi si decompilano le dipendenze, dovrebbe essere presente un insieme minimo di dipendenze unidirezionali tra i livelli. Se si crea un diagramma più dettagliato usando classi o metodi come livelli, il risultato dovrebbe avere le stesse caratteristiche.
 
  In caso contrario, la modifica del codice risulterà più difficile e il codice sarà meno idoneo alla convalida tramite i diagrammi livello.
 
-## <a name="NewAreas"></a>Progettare nuove aree dell'applicazione
+## <a name="design-new-areas-of-your-application"></a><a name="NewAreas"></a> Progettare nuove aree dell'applicazione
  Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo progetto, è possibile tracciare livelli e dipendenze per semplificare l'identificazione dei componenti principali prima di iniziare a sviluppare il codice.
 
 - **Mostra i modelli di architettura identificabili** nei diagrammi livello, se possibile. Ad esempio, un diagramma livello che descrive un'applicazione desktop può includere livelli quali Presentazione, Logica di dominio e Archivio dati. Un diagramma livello che riguarda una singola funzionalità in un'applicazione può includere livelli quali Modello, Visualizzazione e Controller. Per ulteriori informazioni su tali modelli, vedere [patterns & Practices: Application Architecture](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
@@ -127,7 +127,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
      Quando si compila l'applicazione, il codice verrà convalidato rispetto al diagramma complessivo e al diagramma più dettagliato relativo alle funzionalità.
 
-## <a name="EditLayout"></a>Modificare il layout per la presentazione e la discussione
+## <a name="edit-the-layout-for-presentation-and-discussion"></a><a name="EditLayout"></a> Modificare il layout per la presentazione e la discussione
  Per semplificare l'identificazione di livelli e dipendenze o per esaminarli con i membri del team, modificare l'aspetto e il layout del diagramma nei modi seguenti:
 
 - Modificare le dimensioni, le forme e le posizioni dei livelli.
@@ -136,7 +136,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
   - Selezionare uno o più livelli o dipendenze, fare clic con il pulsante destro del mouse su, quindi scegliere **Proprietà**. Nella finestra **Proprietà** modificare la proprietà **color** .
 
-## <a name="Validate"></a>Convalidare il codice rispetto al diagramma
+## <a name="validate-the-code-against-the-diagram"></a><a name="Validate"></a> Convalidare il codice rispetto al diagramma
  Dopo avere modificato il diagramma, sarà possibile convalidarlo manualmente rispetto al codice in qualsiasi momento oppure automaticamente ogni volta che si esegue una compilazione locale o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
 
  Vedere:
@@ -145,7 +145,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
 - [Includere la convalida dei livelli nel processo di compilazione](#BuildValidation)
 
-## <a name="UpdateCode"></a>Aggiornare il codice per conformità alla nuova architettura
+## <a name="update-the-code-to-conform-to-the-new-architecture"></a><a name="UpdateCode"></a> Aggiornare il codice per conformità alla nuova architettura
  In genere, alla prima convalida del codice rispetto a un diagramma livello aggiornato vengono visualizzati errori. Gli errori possono avere cause diverse:
 
 - Un artefatto viene assegnato al livello errato. In questo caso, spostare l'elemento.
@@ -159,7 +159,7 @@ Descrivere l'architettura dell'app a un livello elevato creando *diagrammi livel
 
  Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni conflitti segnalati durante la convalida. Ad esempio, è possibile eliminare gli errori che sono già stati corretti o che non sono attinenti allo scenario in questione. Quando si elimina un errore, è buona norma registrare un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per eseguire questa attività, vedere [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="BuildValidation"></a>Includere la convalida dei livelli nel processo di compilazione
+## <a name="include-layer-validation-in-the-build-process"></a><a name="BuildValidation"></a> Includere la convalida dei livelli nel processo di compilazione
  Per assicurare che eventuali modifiche future al codice siano conformi ai diagrammi livello, includere la convalida dei livelli nel processo di compilazione standard della soluzione. Quando altri membri del team compilano la soluzione, eventuali differenze tra le dipendenze nel codice e il diagramma livello verranno segnalate come errori di compilazione. Per altre informazioni sull'inclusione della convalida dei livelli nel processo di compilazione, vedere [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md).
 
 ## <a name="see-also"></a>Vedere anche

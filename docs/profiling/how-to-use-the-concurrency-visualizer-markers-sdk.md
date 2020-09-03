@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0782744236777fb84a6d87f93f59697275df1c11
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331390"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procedura: Usare l'SDK degli indicatori del visualizzatore di concorrenza
@@ -166,5 +166,5 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
      ![Visualizzatore di concorrenza con 3 serie di marcatori personalizzati](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)

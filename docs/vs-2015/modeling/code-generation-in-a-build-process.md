@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850706"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generazione di codice in un processo di compilazione
@@ -27,7 +27,7 @@ Esistono alcune differenze in ciò che le attività di compilazione possono fare
 
 Ciò significa che non è possibile accedere a elementi quali i nomi dei file di progetto allo stesso modo di quando si compila un modello di testo in MSBuild. Tuttavia, è possibile [passare informazioni sull'ambiente in modelli di testo e processori di direttiva utilizzando parametri di compilazione](#parameters).
 
-## <a name="buildserver"></a>Configurare i computer
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Configurare i computer
 
 Per abilitare le attività di compilazione nel computer di sviluppo, installare [Modeling SDK per Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
@@ -67,7 +67,7 @@ Nel file con estensione csproj o vbproj, individuare una riga simile alla seguen
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- oppure -
+\- - oppure -
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -128,7 +128,7 @@ Per trasformare un modello di testo specifico:
 
 `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
-## <a name="source-control"></a>Controllo codice sorgente
+## <a name="source-control"></a>Controllo del codice sorgente
 
 Non esiste un'integrazione incorporata specifica con un sistema di controllo del codice sorgente. Tuttavia è possibile aggiungere estensioni personalizzate, ad esempio per estrarre o archiviare un file generato. Per impostazione predefinita l'attività di trasformazione del testo evita sovrascrivere un file contrassegnato come di sola lettura e quando viene incontrato questo tipo di file, viene registrato un errore nell'elenco errori di Visual Studio e l'attività non viene completata.
 
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Passare i dati del contesto di compilazione nei modelli
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Passare i dati del contesto di compilazione nei modelli
 
 È possibile impostare i valori dei parametri nel file di progetto. Ad esempio, è possibile passare le proprietà di compilazione e le [variabili di ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ In un modello di testo, impostare `hostspecific` nella direttiva del modello. Us
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>Utilizzo delle proprietà del progetto nelle direttive assembly e include
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Utilizzo delle proprietà del progetto nelle direttive assembly e include
 
 Le macro di Visual Studio, ad esempio $(SolutionDir), non funzionano in MSBuild. È possibile utilizzare le proprietà del progetto.
 
@@ -269,7 +269,7 @@ Modificare il file con estensione csproj o vbproj per definire una proprietà de
 
 Se si aggiorna un file incluso oppure un altro file letto dal modello, Visual Studio non trasforma il file automaticamente. Trasformare modelli come parte della compilazione garantisce che tutto sia aggiornato.
 
-**Quali altre opzioni sono disponibili per trasformare i modelli di testo?**
+**Quali altre opzioni ci sono per trasformare i modelli di testo?**
 
 - L' [utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) può essere usata negli script di comando. Nella maggior parte dei casi è più facile utilizzare MSBuild.
 

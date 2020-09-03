@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0519c3ab19e7d36aa26ea2f462c8a4571b9f8b32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656299"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Procedura: utilizzare i punti di interruzione con XSLT
@@ -32,7 +32,7 @@ ms.locfileid: "72656299"
 
 2. Posizionare il cursore nella posizione del punto di interruzione, fare clic con il pulsante destro del mouse, scegliere punto di **interruzione**, quindi scegliere Inserisci punto di **interruzione**.
 
-3. Fare clic sul pulsante Sfoglia ( **...** ) nel campo di **input** della finestra proprietà del documento.
+3. Fare clic sul pulsante Sfoglia (**...**) nel campo di **input** della finestra proprietà del documento.
 
 4. Individuare il documento di origine XML e fare clic su **Apri**.
 
@@ -49,7 +49,7 @@ ms.locfileid: "72656299"
 
 2. Posizionare il cursore nella posizione del punto di interruzione, fare clic con il pulsante destro del mouse, scegliere punto di **interruzione**, quindi scegliere Inserisci punto di **interruzione**.
 
-3. Fare clic sul pulsante Sfoglia ( **...** ) nel campo **foglio di stile** della finestra proprietà del documento.
+3. Fare clic sul pulsante Sfoglia (**...**) nel campo **foglio di stile** della finestra proprietà del documento.
 
 4. Individuare il documento di origine XML e fare clic su **Apri**.
 

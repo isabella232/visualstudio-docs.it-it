@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f6ec76e79cc1c4759cbe05d8bdcacc1297b655b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655438"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separare set di dati e TableAdapter in progetti diversi
@@ -29,10 +29,10 @@ ms.locfileid: "72655438"
 
 I DataSet tipizzati sono stati migliorati in modo che le classi [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e DataSet possano essere generate in progetti distinti. Ciò consente di separare rapidamente i livelli dell'applicazione e generare applicazioni dati a più livelli.
 
- Nella procedura riportata di seguito viene descritto il processo di utilizzo del Progettazione DataSet per generare il codice del set di dati in un progetto separato dal progetto che contiene il codice `TableAdapter` generato.
+ Nella procedura riportata di seguito viene descritto il processo di utilizzo del Progettazione DataSet per generare il codice del set di dati in un progetto separato dal progetto che contiene il `TableAdapter` codice generato.
 
 ## <a name="separatedatasets-and-tableadapters"></a>Separatedatasets e TableAdapters
- Quando si separa il codice del set di dati da `TableAdapter` codice, il progetto che contiene il codice del set di dati deve trovarsi nella soluzione corrente. Se il progetto non si trova nella soluzione corrente, non sarà disponibile nell'elenco **progetto DataSet** nella finestra **Proprietà** .
+ Quando si separa il codice del set di dati dal `TableAdapter` codice, il progetto che contiene il codice del set di dati deve trovarsi nella soluzione corrente. Se il progetto non si trova nella soluzione corrente, non sarà disponibile nell'elenco **progetto DataSet** nella finestra **Proprietà** .
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -60,10 +60,10 @@ I DataSet tipizzati sono stati migliorati in modo che le classi [TableAdapters](
 
     Il codice del set di dati viene generato nel progetto selezionato nella proprietà del **progetto DataSet** e il codice **TableAdapter** viene generato nel progetto corrente.
 
-   Per impostazione predefinita, dopo aver separato il set di dati e `TableAdapter` codice, il risultato è un file di classe discreto in ogni progetto. Il progetto originale include un file denominato DataSetName. designer. vb (o DatasetName.Designer.cs) che contiene il codice `TableAdapter`. Il progetto designato nella proprietà del **progetto DataSet** include un file denominato DataSetName. DataSet. designer. vb (o DataSetName.DataSet.designer.cs) che contiene il codice del set di dati.
+   Per impostazione predefinita, dopo aver separato il set di dati e il `TableAdapter` codice, il risultato è un file di classe discreto in ogni progetto. Il progetto originale include un file denominato DataSetName. designer. vb (o DatasetName.Designer.cs) che contiene il `TableAdapter` codice. Il progetto designato nella proprietà del **progetto DataSet** include un file denominato DataSetName. DataSet. designer. vb (o DataSetName.DataSet.designer.cs) che contiene il codice del set di dati.
 
 > [!NOTE]
-> Per visualizzare il file di classe generato, selezionare il set di dati o il progetto `TableAdapter`. Quindi, in **Esplora soluzioni**, selezionare **Mostra tutti i file** .
+> Per visualizzare il file di classe generato, selezionare il set di dati o il `TableAdapter` progetto. Quindi, in  **Esplora soluzioni**, selezionare **Mostra tutti i file** .
 
 ## <a name="see-also"></a>Vedere anche
  [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md) [procedura dettagliata: creazione di un](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [aggiornamento gerarchico](../data-tools/hierarchical-update.md) di un'applicazione dati a più livelli [accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md) [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)

@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a59f9f2cb2548d6d40670832e66d4df5c83680df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295917"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
@@ -42,9 +42,9 @@ Per la documentazione più recente di Visual Studio, vedere la [Guida dell'ammin
   
 |Stato dell'installazione|Riavvio non richiesto|Riavvio richiesto|Descrizione|  
 |------------------|--------------------------|----------------------|-----------------|  
-|Success|0x00000000 [0]|0x00000bc2 [3010]|Installazione riuscita.|  
-|Blocco|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Se l'unico blocco da segnalare è "Riavvio in sospeso", il valore restituito è il valore Incompleto-Richiesto riavvio (0x80048bc7).|  
-|Cancel|0x00000642 [1602]|0x80048642 [-2147187134]|Quando viene restituito il valore di riavvio, il codice restituito è 1602.|  
+|Operazione completata|0x00000000 [0]|0x00000bc2 [3010]|Installazione riuscita.|  
+|Blocca|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Se l'unico blocco da segnalare è "Riavvio in sospeso", il valore restituito è il valore Incompleto-Richiesto riavvio (0x80048bc7).|  
+|Annulla|0x00000642 [1602]|0x80048642 [-2147187134]|Quando viene restituito il valore di riavvio, il codice restituito è 1602.|  
 |Incompleto-Richiesto riavvio|N/D|0x80048bc7 [-2147185721]|Per completare l'installazione, è necessario riavviare.|  
 |Errore|0x00000643 [1603]|0x80048643 [-2147187133]|Quando viene restituito il valore di riavvio, il codice restituito è 1603.|  
   
@@ -69,8 +69,8 @@ Ad esempio, modificare il valore in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microso
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
-|[Procedura: Installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Viene descritto come installare configurazioni specifiche della versione corrente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Procedura: Creare ed eseguire un'installazione automatica di Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Viene descritto come installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità automatica.|  
+|[Procedura: Installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Viene descritto come installare configurazioni specifiche della versione corrente di  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|[Procedura: creare ed eseguire un'installazione automatica di Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Viene descritto come installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità automatica.|  
 |[Procedura: Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Viene descritto come applicare i codici Product Key durante la distribuzione in più computer.|  
 |[Guida dell'amministratore di Help Viewer](../ide/help-viewer-administrator-guide.md)|Fornisce informazioni su come gestire le installazioni della guida locale per gli ambienti di rete che dispongono o non dispongono di accesso a Internet.|  
-|[Installare Visual Studio](../install/install-visual-studio-2015.md)|Vengono fornite istruzioni e collegamenti ad argomenti in cui viene descritto come installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Installa Visual Studio](../install/install-visual-studio-2015.md)|Vengono fornite istruzioni e collegamenti ad argomenti in cui viene descritto come installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

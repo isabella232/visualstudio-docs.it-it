@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 24aac8ade6bdc01958cf2c206d48bd18b751d898
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850822"
 ---
 # <a name="convert-dialog-box"></a>Finestra di dialogo Converti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La finestra di dialogo **Converti** consente di selezionare uno strumento di conversione per creare un progetto da un progetto precedente, ad esempio un progetto [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] da un progetto di Visual Basic 6. È inoltre possibile usare lo strumento [Visual Studio Project Converter](https://vsprojectconverter.codeplex.com/), disponibile sul sito Web CodePlex, per aggiornare i progetti creati in versioni precedenti di Visual Studio.
+La finestra di dialogo **Converti** consente di selezionare uno strumento di conversione per creare un nuovo progetto da uno precedente, ad esempio un progetto [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] da un progetto di Visual Basic 6. È inoltre possibile usare lo strumento [Visual Studio Project Converter](https://vsprojectconverter.codeplex.com/), disponibile sul sito Web CodePlex, per aggiornare i progetti creati in versioni precedenti di Visual Studio.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 

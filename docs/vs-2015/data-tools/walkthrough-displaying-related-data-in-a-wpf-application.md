@@ -20,29 +20,29 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850246"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza i dati da tabelle di database che dispongono di una relazione padre/figlio. I dati vengono incapsulati in entità in un Entity Data Model. L'entità padre contiene informazioni generali per un set di ordini. Ogni proprietà di questa entità è associata a un controllo diverso nell'applicazione. L'entità figlio contiene i dettagli per ogni ordine. Questo set di dati è associato a un controllo <xref:System.Windows.Controls.DataGrid>.
+In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza i dati da tabelle di database che dispongono di una relazione padre/figlio. I dati vengono incapsulati in entità in un Entity Data Model. L'entità padre contiene informazioni generali per un set di ordini. Ogni proprietà di questa entità è associata a un controllo diverso nell'applicazione. L'entità figlio contiene i dettagli per ogni ordine. Questo set di dati è associato a un <xref:System.Windows.Controls.DataGrid> controllo.
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Creazione di un'applicazione WPF e di una Entity Data Model generata dai dati nel database di esempio AdventureWorksLT.
 
 - Creazione di un set di controlli associati a dati che visualizzano informazioni generali per un set di ordini. Per creare i controlli, trascinare un'entità padre dalla finestra **origini dati** a **WPF Designer**.
 
-- Creazione di un controllo <xref:System.Windows.Controls.DataGrid> che Visualizza i dettagli correlati per ogni ordine selezionato. Per creare i controlli, trascinare un'entità figlio dalla finestra **origini dati** a una finestra di **Progettazione WPF**.
+- Creazione di un <xref:System.Windows.Controls.DataGrid> controllo che Visualizza i dettagli correlati per ogni ordine selezionato. Per creare i controlli, trascinare un'entità figlio dalla finestra **origini dati** a una finestra di **Progettazione WPF**.
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
@@ -54,7 +54,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 - Uso di WPF Designer. Per ulteriori informazioni, vedere [Cenni preliminari su WPF e Silverlight Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).
 
-- Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+- Data binding WPF. Per altre informazioni, vedere [Cenni preliminari sul data binding](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="creating-the-project"></a>Creazione del progetto
  Creare un nuovo progetto WPF per visualizzare i record degli ordini.
@@ -63,11 +63,11 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 1. Avviare Visual Studio.
 
-2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
 
-3. Espandere **Visual C#**  o **Visual Basic**, quindi selezionare **Windows**.
+3. Espandere **Visual C#** o **Visual Basic**, quindi selezionare **Windows**.
 
-4. Assicurarsi che **.NET Framework 4** sia selezionato nella casella combinata nella parte superiore della finestra di dialogo. Il controllo <xref:System.Windows.Controls.DataGrid> usato in questa procedura dettagliata è disponibile solo nella .NET Framework 4.
+4. Assicurarsi che **.NET Framework 4** sia selezionato nella casella combinata nella parte superiore della finestra di dialogo. Il <xref:System.Windows.Controls.DataGrid> controllo usato in questa procedura dettagliata è disponibile solo nella .NET Framework 4.
 
 5. Selezionare il modello di progetto **Applicazione WPF**.
 
@@ -75,7 +75,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 7. Fare clic su **OK**.
 
-     Visual Studio crea il progetto `AdventureWorksOrdersViewer`.
+     Visual Studio crea il `AdventureWorksOrdersViewer` progetto.
 
 ## <a name="creating-an-entity-data-model-for-the-application"></a>Creazione di un Entity Data Model per l'applicazione
  Prima di poter creare i controlli associati a dati, è necessario definire un modello di dati per l'applicazione e aggiungerlo alla finestra **Origini dati**. In questa procedura dettagliata il modello di dati è un Entity Data Model.
@@ -94,11 +94,11 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - Selezionare la connessione dati al database di esempio AdventureWorksLT nell'elenco a discesa, se presente.
 
-      oppure
+      -oppure-
 
    - Fare clic su **nuova connessione** e creare una connessione al database AdventureWorksLT.
 
-     Assicurarsi che l'opzione **Salva le impostazioni di connessione dell'entità in app. config come** sia selezionata, quindi fare clic su **Avanti**.
+     Verificare che l'opzione **Salva le impostazioni di connessione dell'entità in App.Config come** sia selezionata, quindi fare clic su **Avanti**.
 
 6. Nella pagina **Seleziona oggetti di database** espandere **tabelle**e quindi selezionare le tabelle seguenti:
 
@@ -106,12 +106,12 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - **SalesOrderHeader**
 
-7. Scegliere **Fine**.
+7. Fare clic su **Fine**.
 
-8. Compilazione del progetto.
+8. Compilare il progetto.
 
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Creazione di controlli associati a dati che visualizzano gli ordini
- Creare controlli che consentono di visualizzare i record degli ordini trascinando l'entità `SalesOrderHeaders` dalla finestra **origini dati** a WPF Designer.
+ Creare controlli che consentono di visualizzare i record degli ordini trascinando l' `SalesOrderHeaders` entità dalla finestra **origini dati** a WPF Designer.
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Per creare controlli associati a dati che visualizzano i record degli ordini
 
@@ -139,7 +139,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - **CreditCardApprovalCode**
 
-   - **SubTotal**
+   - **Subtotale**
 
    - **TaxAmt**
 
@@ -160,7 +160,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 9. Nella finestra **Proprietà** selezionare la casella di controllo accanto alla proprietà **IsReadOnly**.
 
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Creazione di un DataGrid che Visualizza i dettagli dell'ordine
- Creare un controllo <xref:System.Windows.Controls.DataGrid> che Visualizza i dettagli dell'ordine trascinando l'entità `SalesOrderDetails` dalla finestra **origini dati** a WPF Designer.
+ Creare un <xref:System.Windows.Controls.DataGrid> controllo che Visualizza i dettagli dell'ordine trascinando l' `SalesOrderDetails` entità dalla finestra **origini dati** a WPF Designer.
 
 #### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>Per creare un DataGrid che Visualizza i dettagli dell'ordine
 
@@ -173,7 +173,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 3. Per ognuno dei seguenti nodi figlio del nodo **SalesOrderDetails** , fare clic sul menu a discesa accanto al nodo e selezionare **nessuno**:
 
-   - **SalesOrderID**
+   - **ID ordine vendita**
 
    - **SalesOrderDetailID**
 
@@ -181,24 +181,24 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - **ModifiedDate**
 
-     Questa azione impedisce a Visual Studio di includere questi dati nel controllo <xref:System.Windows.Controls.DataGrid> creato nel passaggio successivo. Per questa procedura dettagliata, si presume che l'utente finale non debba visualizzare questi dati.
+     Questa azione impedisce a Visual Studio di includere questi dati nel <xref:System.Windows.Controls.DataGrid> controllo creato nel passaggio successivo. Per questa procedura dettagliata, si presume che l'utente finale non debba visualizzare questi dati.
 
 4. Dalla finestra **origini dati** trascinare il nodo **SalesOrderDetails** figlio nella finestra di **Progettazione WPF**.
 
-    Visual Studio genera XAML per definire un nuovo controllo <xref:System.Windows.Controls.DataGrid> associato a dati e il controllo viene visualizzato nella finestra di progettazione. Visual Studio aggiorna anche il metodo di `GetSalesOrderHeadersQuery` generato nel file code-behind per includere i dati nell'entità **SalesOrderDetails** .
+    Visual Studio genera XAML per definire un nuovo controllo con associazione a dati <xref:System.Windows.Controls.DataGrid> e il controllo viene visualizzato nella finestra di progettazione. Visual Studio aggiorna anche il `GetSalesOrderHeadersQuery` metodo generato nel file code-behind per includere i dati nell'entità **SalesOrderDetails** .
 
-## <a name="testing-the-application"></a>Verifica dell'applicazione
+## <a name="testing-the-application"></a>Test dell'applicazione
  Compilare ed eseguire l'applicazione per verificare che vengano visualizzati i record degli ordini.
 
-#### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione
+#### <a name="to-test-the-application"></a>Per testare l'applicazione
 
 1. Premere **F5**.
 
-     L'applicazione verrà compilata ed eseguita. Verificare quanto segue:
+     L'applicazione verrà compilata ed eseguita. Verificare gli elementi seguenti:
 
     - Nella casella combinata **ID ordine vendita** viene visualizzato **71774**. Si tratta dell'ID del primo ordine nell'entità.
 
-    - Per ogni ordine selezionato nella casella combinata **Sales Order ID** , le informazioni dettagliate sugli ordini vengono visualizzate nel <xref:System.Windows.Controls.DataGrid>.
+    - Per ogni ordine selezionato nella casella combinata **Sales Order ID** , le informazioni dettagliate sugli ordini vengono visualizzate nella <xref:System.Windows.Controls.DataGrid> .
 
 2. Chiudere l'applicazione.
 
