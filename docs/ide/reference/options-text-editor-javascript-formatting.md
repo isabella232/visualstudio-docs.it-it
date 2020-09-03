@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605996"
 ---
-# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Finestra di dialogo \> Opzioni: Formattazione JavaScript \> dell'editor di testo
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Finestra di dialogo Opzioni: \> formattazione JavaScript editor di testo \>
 
-Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, sulla barra dei menu scegliere **Opzioni degli strumenti** > **Options**, quindi espandere**Formattazione****JavaScript/TypeScript** >  **dell'editor** > di testo .
+Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**e quindi espandere **editor di testo**  >  **JavaScript/typescript**  >  **Formatting**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -54,7 +54,7 @@ Queste opzioni determinano se l'editor di codice inserisce una parentesi graffa 
 |**Inserisci parentesi graffa aperta su nuova riga per le funzioni**|Quando questa opzione è selezionata, l'editor di codice sposta la parentesi graffa aperta associata a una funzione in una nuova riga.|
 |**Inserisci parentesi graffa aperta su nuova riga per i blocchi di controllo**|Quando questa opzione è selezionata, l'editor di codice sposta in una nuova riga la parentesi graffa aperta associata a un blocco di controllo, ad esempio ai blocchi `if` e `while`.|
 
-## <a name="spacing"></a>Spacing (Spaziatura)
+## <a name="spacing"></a>Spaziatura
 
 Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella visualizzazione **Origine**.
 
@@ -71,4 +71,4 @@ Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

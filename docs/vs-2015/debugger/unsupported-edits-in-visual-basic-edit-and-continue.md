@@ -1,5 +1,5 @@
 ---
-title: Modifica e continuazione di modifiche non supportate in Visual Basic | Microsoft Docs
+title: Modifiche non supportate in Visual Basic modifica e continuazione | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94a151a7adab5c8246cec38c2e62d76788beb6e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155443"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Modifiche non supportate in Modifica e continuazione di Visual Basic
@@ -31,10 +31,10 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
  Se è necessario apportare una modifica non supportata, terminare il debug, apportare le modifiche e avviare una nuova sessione di debug.  
   
-### <a name="BKMK_MethodandPropertyBodyEdits"></a> Modifiche al corpo di proprietà e metodi  
- **Modifiche non supportate per le variabili locali statiche**: Aggiunta o l'aggiornamento di una variabile locale o la rimozione di una variabile locale statica se tale provocherebbe un errore di compilazione.  
+### <a name="method-and-property-body-edits"></a><a name="BKMK_MethodandPropertyBodyEdits"></a> Modifiche al corpo di proprietà e metodi  
+ **Modifiche non supportate alle variabili locali statiche**: aggiunta o aggiornamento di una variabile locale o rimozione di una variabile locale statica se si verificherebbe un errore di compilazione.  
   
- **Modifiche non supportate per i Generics**: Le modifiche al metodo generico stesso o al relativo corpo non sono supportate. È possibile aggiungere, eliminare o modificare istanze di un tipo generico o chiamate a metodi generici esistenti.  
+ **Modifiche non supportate ai generics**: le modifiche al metodo generico stesso o al corpo del metodo generico non sono supportate. È possibile aggiungere, eliminare o modificare istanze di un tipo generico o chiamate a metodi generici esistenti.  
   
  **Altre modifiche non supportate**  
   
@@ -42,13 +42,13 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Aggiunta di un blocco `Try...Catch` quando il puntatore all'istruzione viene a trovarsi nel blocco `Catch` o nel blocco `Finally`.  
   
-- Rimozione di un `Try...Catch` blocco, quando il puntatore dell'istruzione è in un `Catch`blocco o `Finally` blocco.  
+- Rimozione di un `Try...Catch` blocco quando il puntatore all'istruzione si trova in un `Catch` blocco o nel `Finally` blocco.  
   
 - Aggiunta di un blocco `Using` intorno al puntatore all'istruzione corrente.  
   
 - Aggiunta di un blocco `SynchLock` intorno al puntatore all'istruzione corrente.  
   
-### <a name="BKMK_AttributeEdits"></a> Modifiche agli attributi  
+### <a name="attribute-edits"></a><a name="BKMK_AttributeEdits"></a> Modifiche degli attributi  
  La funzionalità Modifica e continuazione non supporta la modifica degli attributi. In modo specifico, non supporta le modifiche seguenti:  
   
 - Definizione, modifica o eliminazione di una classe dell'attributo.  
@@ -57,7 +57,7 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Modifica o rimozione di un attributo esistente.  
   
-### <a name="BKMK_ClassDeclarationEdits"></a> Modifiche alle dichiarazioni di classe  
+### <a name="class-declaration-edits"></a><a name="BKMK_ClassDeclarationEdits"></a> Modifiche alle dichiarazioni di classe  
  La funzionalità Modifica e continuazione non consente di apportare la maggior parte delle modifiche alle dichiarazioni di classe quando è attivata la modalità di interruzione. In modo specifico, non supporta le modifiche seguenti:  
   
 - Ridenominazione, eliminazione o modifica dell'ereditarietà di una classe esistente.  
@@ -70,7 +70,7 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Modifica di qualsiasi dichiarazione di classe generica.  
   
-### <a name="BKMK_ClassMemberDeclarationEdits"></a> Modifiche alle dichiarazioni di membro di classe  
+### <a name="class-member-declaration-edits"></a><a name="BKMK_ClassMemberDeclarationEdits"></a> Modifiche alle dichiarazioni di membri di classe  
  Le modifiche alle dichiarazioni dei membri sono proibite nella maggior parte dei casi con la funzionalità Modifica e continuazione. Ad esempio, non è possibile modificare la firma o il livello di accesso di un membro né rimuovere completamente membri se questi possono provocare un errore di compilazione. In modo specifico, non supporta le modifiche seguenti:  
   
 - Shadowing di una variabile membro esistente mediante dichiarazione di una variabile membro o globale con lo stesso nome nel blocco che la contiene.  
@@ -103,7 +103,7 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Modifica di un campo pubblico.  
   
-### <a name="BKMK_CompilerOptionEdits"></a> Modifiche alle opzioni del compilatore  
+### <a name="compiler-option-edits"></a><a name="BKMK_CompilerOptionEdits"></a> Modifiche alle opzioni del compilatore  
  Quando si utilizza la funzionalità Modifica e continuazione in modalità di interruzione, non è possibile modificare, aggiungere o rimuovere le seguenti opzioni del compilatore:  
   
 - **Option Strict**  
@@ -112,7 +112,7 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - **Option Compare**  
   
-### <a name="BKMK_ConstantsEdits"></a> Modifiche alle costanti  
+### <a name="constants-edits"></a><a name="BKMK_ConstantsEdits"></a> Modifiche alle costanti  
  Le modifiche che è possibile apportare alle costanti con la funzionalità Modifica e continuazione sono soggette a numerose limitazioni. In modo specifico, non supporta le modifiche seguenti:  
   
 - Aggiunta o aggiornamento di una variabile costante.  
@@ -121,14 +121,14 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Rimozione di una costante.  
   
-### <a name="BKMK_DelegateandEventDeclarationEdits"></a> Modifiche alle dichiarazioni di evento e delegato  
+### <a name="delegate-and-event-declaration-edits"></a><a name="BKMK_DelegateandEventDeclarationEdits"></a> Modifiche alle dichiarazioni di eventi e delegati  
  L'applicazione di modifiche a delegati ed eventi non è consentita dalla funzionalità Modifica e continuazione quando è attiva la modalità interruzione. In modo specifico, non supporta le modifiche seguenti:  
   
 - Modifica o eliminazione di una definizione di delegato.  
   
 - Eliminazione di un evento.  
   
-### <a name="BKMK_EnumerationEdits"></a> Modifiche alle enumerazioni  
+### <a name="enumeration-edits"></a><a name="BKMK_EnumerationEdits"></a> Modifiche di enumerazione  
  Le modifiche alle enumerazioni (`Enums`) non sono consentite con la funzionalità Modifica e continuazione quando è attivata la modalità di interruzione. In modo specifico, non supporta le modifiche seguenti:  
   
 - Modifica del tipo sottostante di una `Enum`.  
@@ -137,17 +137,17 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Modifica del modificatore di accesso di una `Enum`.  
   
-### <a name="BKMK_ExternalDeclarationsEdits"></a> Modifiche alle dichiarazioni esterne  
+### <a name="external-declarations-edits"></a><a name="BKMK_ExternalDeclarationsEdits"></a> Modifiche alle dichiarazioni esterne  
  In generale, non è consentito modificare le dichiarazioni di metodi esterni con la funzionalità Modifica e continuazione. In modo specifico, non supporta le modifiche seguenti:  
   
 - Aggiunta o rimozione di una dichiarazione esterna.  
   
 - Modifica degli attributi di firma o marshalling di una dichiarazione esterna.  
   
-### <a name="BKMK_ImportsEdits"></a> Modifiche a Imports  
+### <a name="imports-edits"></a><a name="BKMK_ImportsEdits"></a> Importazioni modifiche  
  La funzionalità Modifica e continuazione non consente di aggiungere, modificare o rimuovere istruzioni `Imports` quando è attivata la modalità di interruzione.  
   
-### <a name="BKMK_InterfaceDefinitionEdits"></a> Modifiche alle definizioni di interfaccia  
+### <a name="interface-definition-edits"></a><a name="BKMK_InterfaceDefinitionEdits"></a> Modifiche alle definizioni di interfaccia  
  Sebbene sia spesso possibile apportare modifiche a membri che implementano interfacce, le modifiche alle definizioni delle interfacce in genere non sono consentite con la funzionalità Modifica e continuazione. In modo specifico, non supporta le modifiche seguenti:  
   
 - Aggiunta, modifica o rimozione di membri di interfaccia.  
@@ -158,7 +158,7 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Modifica della gerarchia di ereditarietà di un'interfaccia.  
   
-### <a name="BKMK_ModuleDeclarationEdits"></a> Modifiche alle dichiarazioni di modulo  
+### <a name="module-declaration-edits"></a><a name="BKMK_ModuleDeclarationEdits"></a> Modifiche alle dichiarazioni di modulo  
  La funzionalità Modifica e continuazione non supporta la maggior parte delle modifiche alle dichiarazioni di modulo quando è attivata la modalità di interruzione. In modo specifico, non supporta le modifiche seguenti:  
   
 - Creazione di un nuovo modulo.  
@@ -167,7 +167,7 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Modifica del modificatore di accesso di un modulo.  
   
-### <a name="BKMK_ModuleMemberDeclarationEdits"></a> Modifiche alle dichiarazioni di membri di modulo  
+### <a name="module-member-declaration-edits"></a><a name="BKMK_ModuleMemberDeclarationEdits"></a> Modifiche alle dichiarazioni di membri del modulo  
  La funzionalità Modifica e continuazione consente di apportare varie modifiche ai membri di modulo, ovvero proprietà, metodi e campi quando è attivata la modalità di interruzione. Alcune modifiche non sono, tuttavia supportate. In particolare, la funzionalità Modifica e continuazione non supporta l'aggiunta, l'eliminazione o la modifica del tipo o della firma di alcun membro.  
   
  In modo specifico, non supporta le modifiche seguenti:  
@@ -186,11 +186,11 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Eliminazione o modifica del tipo di un campo esistente.  
   
-### <a name="BKMK_NestedTypeDeclarationEdits"></a> Modifiche alle dichiarazioni di tipo annidato  
+### <a name="nested-type-declaration-edits"></a><a name="BKMK_NestedTypeDeclarationEdits"></a> Modifiche alle dichiarazioni di tipo annidato  
  La funzionalità Modifica e continuazione non supporta lo spostamento di un tipo annidato in un altro spazio dei nomi o tipo.  
   
-### <a name="BKMK_StructureDeclarationEdits"></a> Modifiche alle dichiarazioni di struttura  
- La maggior parte delle modifiche alle dichiarazioni di struttura non sono consentite dalla modifica e continuazione durante **Interrompi** modalità. In modo specifico, non supporta le modifiche seguenti:  
+### <a name="structure-declaration-edits"></a><a name="BKMK_StructureDeclarationEdits"></a> Modifiche alle dichiarazioni di struttura  
+ La maggior parte delle modifiche alle dichiarazioni di struttura non è consentita in modifica e continuazione in modalità di **interruzioni** . In modo specifico, non supporta le modifiche seguenti:  
   
 - Ridenominazione o eliminazione di una struttura esistente.  
   
@@ -198,7 +198,7 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Modifica del modificatore di accesso di una struttura.  
   
-### <a name="BKMK_StructureMemberDeclarationEdits"></a> Modifiche alle dichiarazioni di membro di struttura  
+### <a name="structure-member-declaration-edits"></a><a name="BKMK_StructureMemberDeclarationEdits"></a> Modifiche alle dichiarazioni di membri di struttura  
  La funzionalità Modifica e continuazione consente di apportare varie modifiche ai membri di struttura, ovvero proprietà, metodi e campi, quando è attivata la modalità di interruzione. Alcune modifiche, tuttavia, tra cui quelle che influiscono sulla dichiarazione dei membri di struttura, non sono consentite. In modo specifico, non supporta le modifiche seguenti:  
   
 - Rimozione di una proprietà o di un metodo.  
@@ -211,12 +211,12 @@ La funzionalità Modifica e continuazione consente di arrestare l'esecuzione del
   
 - Modifica dell'impostazione in base alla quale una dichiarazione di proprietà o metodo implementa o meno un'interfaccia.  
   
-- Modifica dei modificatori di accesso di una proprietà o metodo (ad esempio, modificando `Public` per **privato**).  
+- Modifica dei modificatori di accesso di una proprietà o di un metodo (ad esempio, la modifica `Public` a **private**).  
   
 - Rimozione di un campo.  
   
 - Modifica del tipo di un campo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Procedura: applicare modifiche in modalità di interruzioni con modifica e continuazione](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Modifica e continuazione (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381730"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedura: Specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce
@@ -65,7 +65,7 @@ Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzi
      </dependency>
    ```
 
-5. Facoltativa. Per le applicazioni destinate a .NET Framework 4, aprire il manifesto di distribuzione (il file dell' *applicazione* ) per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in un editor di testo.
+5. facoltativo. Per le applicazioni destinate a .NET Framework 4, aprire il manifesto di distribuzione (il file dell' *applicazione* ) per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in un editor di testo.
 
 6. Per un prerequisito di .NET Framework 4, aggiungere l' `supportUrl` attributo all' `compatibleFrameworks` elemento:
 
@@ -81,9 +81,9 @@ Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzi
 ## <a name="net-framework-security"></a>.NET Framework (sicurezza)
  L'URL di supporto non viene visualizzato nella finestra di dialogo se l'applicazione è contrassegnata per l'esecuzione con attendibilità parziale.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Mage.exe (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks>elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)

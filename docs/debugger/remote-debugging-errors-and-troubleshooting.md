@@ -25,7 +25,7 @@ ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312717"
+ms.locfileid: "89316137"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errori e risoluzione dei problemi relativi al debug remoto
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184211"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
@@ -37,7 +37,7 @@ Premere **F5** (**debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia](
 
 I punti di interruzione sono una funzionalità utile quando si conosce la riga di codice o la sezione di codice che si vuole esaminare nel dettaglio.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a>Esplorare il codice nel debugger usando i comandi Step
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> Esplorare il codice nel debugger usando i comandi Step
 
 Per la maggior parte dei comandi è possibile usare tasti di scelta rapida per esplorare velocemente il codice dell'app. I comandi equivalenti, ad esempio i comandi di menu, sono visualizzati tra parentesi.
 

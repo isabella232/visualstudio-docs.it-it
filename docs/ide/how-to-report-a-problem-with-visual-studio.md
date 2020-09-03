@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e5f64ebdf93384b7def728ac5d01bcbaf6b0271
-ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88584575"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
@@ -85,7 +85,7 @@ Se non si vuole o non si può usare Visual Studio per segnalare un problema, ten
 
 Se non si ha un problema da segnalare ma si vuole suggerire una funzionalità, è disponibile un posto anche per questa operazione. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Linee guida della community degli sviluppatori](https://docs.microsoft.com/visualstudio/ide/developer-community-guidelines)
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)

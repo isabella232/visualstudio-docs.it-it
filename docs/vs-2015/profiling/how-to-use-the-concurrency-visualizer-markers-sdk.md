@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Usare l'SDK degli indicatori del visualizzatore di concorrenza | Microsoft Docs"
+title: "Procedura: Usare l'SDK del visualizzatore di concorrenza per creare marcatori | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68870041"
 ---
-# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procedura: Usare l'SDK dei marcatori del visualizzatore di concorrenza
+# <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procedura: utilizzare l'SDK dei marcatori del visualizzatore di concorrenza
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -52,7 +52,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
 4. Nella barra dei menu scegliere **Analizza**, **Visualizzatore di concorrenza**, **Avvio con progetto corrente** per eseguire l'app e visualizzare il visualizzatore di concorrenza. La figura seguente mostra i tre intervalli e i tre marcatori nel visualizzatore di concorrenza.
 
-     ![Visualizzatore di concorrenza con tre marcatori e avvisi](../profiling/media/cvmarkersnative.png "CvMarkersNative")
+     ![Visualizzatore di concorrenza con 3 marcatori e avvisi](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
 5. Aggiungere il codice per creare un'altra serie di marcatori personalizzati chiamando il costruttore per `marker_series` che accetta un nome di stringa per la serie di marcatori.
 
@@ -74,7 +74,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
 6. Avviare il progetto corrente per visualizzare il visualizzatore di concorrenza. Le due serie di marcatori vengono visualizzate nelle rispettive corsie nella visualizzazione Thread. La figura seguente mostra i due nuovi intervalli.
 
-     ![Visualizzatore di concorrenza con tre serie di marcatori personalizzati](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![Visualizzatore di concorrenza con 3 serie di marcatori personalizzati](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Per usare Visual Basic o C\#
 
@@ -90,7 +90,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Aggiungere il codice per creare tre intervalli nella serie di marcatori predefiniti e scrivere un flag, un messaggio e un avviso, uno per ogni intervallo. Si crea un oggetto [span](/previous-versions/hh694189(v=vs.140)) chiamando il metodo statico `EnterSpan` . Per scrivere nella serie predefinita, usare i metodi di scrittura statici della classe [markers](/previous-versions/hh694099(v=vs.140)) .
+3. Aggiungere il codice per creare tre intervalli nella serie di marcatori predefiniti e scrivere un flag, un messaggio e un avviso, uno per ogni intervallo. Viene creato un oggetto [Span](/previous-versions/hh694189(v=vs.140)) tramite la chiamata del metodo statico `EnterSpan`. Per scrivere nella serie predefinita, vengono usati i metodi statici di scrittura della classe [Markers](/previous-versions/hh694099(v=vs.140)).
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -132,7 +132,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
      ![Visualizzatore di concorrenza con marcatori e avvisi](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. Aggiungere il codice per creare una serie di marcatori del cliente usando il metodo statico [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) . La classe [MarkerSeries](/previous-versions/hh694127(v=vs.140)) contiene metodi per la creazione di intervalli e la scrittura di flag, messaggi e avvisi.
+5. Aggiungere codice per creare una serie di marcatori dei clienti tramite il metodo statico [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)). La classe [MarkerSeries](/previous-versions/hh694127(v=vs.140)) contiene metodi per la creazione di espansioni e la scrittura di flag, messaggi e avvisi.
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")
@@ -166,7 +166,7 @@ Questo argomento illustra come usare l'SDK del visualizzatore di concorrenza per
 
 6. Avviare il progetto corrente per visualizzare il visualizzatore di concorrenza. Le tre serie di marcatori vengono visualizzate nelle rispettive corsie nella visualizzazione Thread. La figura seguente mostra i tre nuovi intervalli.
 
-     ![Visualizzatore di concorrenza con tre serie di marcatori personalizzati](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![Visualizzatore di concorrenza con 3 serie di marcatori personalizzati](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>Vedere anche
 

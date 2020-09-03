@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014616"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procedura dettagliata: creare ed eseguire il debug di una soluzione flusso di lavoro SharePoint
@@ -161,7 +162,7 @@ ms.locfileid: "86014616"
 
 12. Nella finestra **Proprietà** impostare le proprietà come illustrato nella tabella seguente.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**CorrelationToken**|**workflowToken**|
     |**Chiamata**|**onWorkflowItemChanged**|

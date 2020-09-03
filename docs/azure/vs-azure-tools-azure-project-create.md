@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
 ms.openlocfilehash: ef5acada89d48ed91dbf5b0f5fe7c9801337d47f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280375"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Creare un progetto di servizio cloud di Azure con Visual Studio
@@ -36,7 +36,7 @@ In questa sezione viene illustrata la creazione di un progetto di servizio cloud
 
 1. Immettere un nome e un percorso per il progetto e un nome per la soluzione.
 
-1. Fare clic su **OK**.
+1. Selezionare **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.

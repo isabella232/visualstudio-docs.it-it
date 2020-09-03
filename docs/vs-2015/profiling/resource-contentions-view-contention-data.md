@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149271"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Visualizzazione dei conflitti di risorse: dati sui conflitti
@@ -44,7 +44,7 @@ Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conf
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Nome**|Nome della risorsa o della funzione.|  
+|**Name**|Nome della risorsa o della funzione.|  
 |**Tempo blocco esclusivo**|- Per una risorsa, il tempo totale per cui è stato bloccato l'accesso alla risorsa con conseguente attesa di un thread.<br />- Per una funzione, il tempo per cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.|  
 |**% tempo blocco esclusivo**|- Per una risorsa, la percentuale del tempo totale di blocco nei dati di profilatura corrispondente al tempo di blocco di questa risorsa<br />- Per una funzione, la percentuale del tempo totale di blocco nei dati di profilatura corrispondente al tempo di blocco esclusivo di queste istanze della funzione.|  
 |**Conflitti esclusivi**|- Per una risorsa, il numero totale di volte in cui è stato bloccato l'accesso alla risorsa con conseguente attesa di un thread.<br />- Per una funzione, il numero di volte in cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. Non sono inclusi gli eventi di blocco in funzioni chiamate dalla funzione.|  
@@ -53,9 +53,9 @@ Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conf
 |**% tempo blocco inclusivo**|- Per una risorsa, la percentuale del tempo totale di blocco nei dati di profilatura corrispondente al tempo di blocco di questa risorsa<br />- Per una funzione, la percentuale del tempo totale di blocco nell'esecuzione della profilatura corrispondente al tempo di blocco inclusivo di queste istanze della funzione.|  
 |**Conflitti inclusivi**|- Per una risorsa, il numero totale di volte in cui è stato bloccato l'accesso alla risorsa con conseguente attesa di un thread.<br />- Per una funzione, la percentuale di tutti gli eventi di conflitto nell'esecuzione della profilatura che rappresentano eventi di conflitto inclusivi di queste istanze della funzione per la risorsa padre.|  
 |**% conflitti inclusivi**|- Per una risorsa, la percentuale di tutti gli eventi di conflitto nell'esecuzione della profilatura che rappresentano eventi di conflitto per l'accesso a questa risorsa.<br />- Per una funzione, il numero di volte in cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. Non sono inclusi gli eventi di blocco in funzioni chiamate dalla funzione.|  
-|**Livello**|Profondità di questa funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Level**|Profondità di questa funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
-|**Nome modulo**|Nome del modulo che contiene la funzione.|  
+|**Nome del modulo**|Nome del modulo che contiene la funzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|  
 |**ID processo**|ID del processo (PID) del processo in cui era in esecuzione la funzione.|  
 |**Nome processo**|Nome del processo.|  

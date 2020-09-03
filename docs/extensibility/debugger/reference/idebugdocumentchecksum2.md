@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugDocumentChecksum2 . Documenti Microsoft
+title: IDebugDocumentChecksum2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03cfb29cc54a2f0ab18bce3ec0761cfab62e20df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731906"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
-Rappresenta un checksum per un documento di debug e consente il passaggio del checksum tra i componenti.
+Rappresenta un checksum per un documento di debug e consente di passare il checksum tra i componenti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -27,18 +27,18 @@ IDebugDocumentChecksum2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Questa interfaccia può essere implementata da qualsiasi componente che espone il [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaccia. Tuttavia, viene implementato principalmente dai motori di debug in modo che il checksum incorporato in un file di simboli (con estensione pdb) può essere passato all'IDE e utilizzato durante la ricerca di un'origine.
+ Questa interfaccia può essere implementata da qualsiasi componente che espone l'interfaccia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) . Tuttavia, viene implementata principalmente dai motori di debug in modo che il checksum incorporato in un file di simboli (*. pdb) possa essere passato nuovamente all'IDE e utilizzato per la ricerca di un'origine.
 
 ## <a name="methods"></a>Metodi
- Nella tabella seguente vengono `IDebugDocumentChecksum2`illustrati i metodi di .
+ La tabella seguente illustra i metodi di `IDebugDocumentChecksum2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Recupera il checksum del documento e l'identificatore dell'algoritmo dato il numero massimo di byte da utilizzare.|
+|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Recupera il checksum del documento e l'identificatore dell'algoritmo dato il numero massimo di byte da usare.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,5 +1,5 @@
 ---
-title: Semplifica espressione LINQ
+title: Semplificare l'espressione LINQ
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -10,13 +10,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04485d6ce67c822fd0620bd63f3557851db6dbb9
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88251318"
 ---
-# <a name="simplify-linq-expression"></a>Semplifica espressione LINQ
+# <a name="simplify-linq-expression"></a>Semplificare l'espressione LINQ
 
 Questo refactoring si applica a:
 
@@ -34,7 +34,7 @@ Questo refactoring si applica a:
 2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **semplifica espressione LINQ**
 
-   ![Converti typeof in NameOf](media/simplify-linq-expression.png)
+   ![Convertire typeof in nameof](media/simplify-linq-expression.png)
 
 ## <a name="see-also"></a>Vedere anche
 

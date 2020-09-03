@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData | Microsoft Docs
+title: 'IEEDataStorage:: GetData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a58f644a71601b16317c4fe63271f4f816da77d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149290"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
@@ -44,19 +44,19 @@ int GetData(
   
 #### <a name="parameters"></a>Parametri  
  `dataSize`  
- [in] Il numero di byte da recuperare (il `data` matrice deve contenere almeno questo numero di byte).  
+ in Numero di byte da recuperare (la `data` matrice deve avere almeno questo numero di byte).  
   
  `sizeGotten`  
- [out] Restituisce il numero di byte effettivamente recuperati.  
+ out Restituisce il numero di byte effettivamente recuperati.  
   
  `data`  
- [in, out] Matrice da riempire con i dati richiesti.  
+ [in, out] Matrice da compilare con i dati richiesti.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- L'uso consigliato di questo metodo consiste nel recuperare tutti i byte di dati in una matrice locale, poiché non esiste alcuna possibilità di ignorare i byte nel processo di recupero. In questo caso, il parametro `dataSize` deve essere il valore restituito per il [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ L'uso consigliato di questo metodo consiste nel recuperare tutti i byte di dati in una matrice locale, poiché non esiste alcun modo per ignorare i byte nel processo di recupero. In questo caso, il parametro `dataSize` deve essere il valore restituito dal metodo [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   

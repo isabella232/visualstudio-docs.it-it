@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154762"
 ---
 # <a name="launch"></a>Launch
@@ -36,7 +36,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Opzioni valide  
  Le seguenti opzioni di VSPerfCmd possono essere combinate con l'opzione **Launch** in una singola riga di comando.  
   
- **Start:** `Method`  
+ **Inizio:**`Method`  
  Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.  
   
  **GlobalOn** e **GlobalOff**  
@@ -54,25 +54,25 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Console**  
  Avvia l'applicazione della riga di comando specificata in una nuova finestra.  
   
- **Args:** `ArgList`  
+ **Argomenti:**`ArgList`  
  Specifica l'elenco di argomenti da passare all'applicazione.  
   
  **LineOff**  
  Disabilita la raccolta dei dati di profilatura a livello di riga.  
   
 ## <a name="sampling-options"></a>Opzioni di campionamento  
- È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di **Launch**. L'intervallo di campionamento predefinito è 10.000.000 cicli di clock del processore.  
+ È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di **Launch**. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.  
   
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**sys**[**:** `Events` ]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ]**GC**[:**allocation**&#124;**Lifetime**]  
  Specifica il numero e tipo di intervallo di campionamento.  
   
 - **Timer**: esegue il campionamento di ogni `Cycles` dei cicli di clock del processore non interrotti. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.  
   
 - **PF**: esegue il campionamento di ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.  
   
-- **Sys**: esegue il campionamento di ogni `Events` chiamate del sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.  
+- **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.  
   
-- **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei report del profiler.  
+- **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei rapporti del profiler.  
   
 - **GC**: raccoglie dati di memoria .NET. Per impostazione predefinita, (**allocation**), i dati vengono raccolti in corrispondenza di ogni evento di allocazione di memoria. Quando si specifica il parametro **lifetime**, i dati vengono raccolti anche in corrispondenza di ogni evento di Garbage Collection.  
   

@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588798"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opzioni, Editor di testo, Tutti i linguaggi, Barre di scorrimento
@@ -53,7 +53,7 @@ Quando questa opzione è selezionata, viene visualizzata una barra di scorriment
 
 Quando questa opzione è selezionata, viene visualizzata una barra di scorrimento verticale che consente di scorrere verso l'alto e verso il basso per visualizzare gli elementi al di fuori dell'area di visualizzazione dell'editor. Se non sono disponibili barre di scorrimento verticali, per scorrere è possibile usare i tasti PGSU e PGGIÙ e i tasti di direzione.
 
-## <a name="display"></a>Visualizzazione
+## <a name="display"></a>Schermo
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>Mostra annotazioni su barra di scorrimento verticale
 

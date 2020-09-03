@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461530"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creare un ambiente di compilazione con più computer
@@ -24,12 +24,12 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
 Questo documento non conferisce il diritto di ridistribuire il software esternamente o di fornire ambienti di compilazione a terze parti.
 
-> Dichiarazione di non responsabilità<br /><br /> Questo documento viene offerto di base "così com'è". Mentre sono stati testati tutti i passi descritti, non è possibile testare in modo esaustivo ogni configurazione. Il documento verrà tenuto aggiornato il più possibile man mano che nuove informazioni saranno disponibili. Le informazioni e le indicazioni riportate nel presente documento, inclusi URL e altri riferimenti a siti Internet, sono soggette a modifica senza preavviso. Microsoft non offre alcuna garanzia, esplicita o implicita, riguardo alle informazioni fornite in questo documento. L'utente accetta di usarle a proprio rischio.<br /><br />  Il presente documento non fornisce all'utente alcun diritto legale rispetto a qualsiasi proprietà intellettuale in qualsiasi prodotto Microsoft. È possibile copiare e usare il presente documento per scopi interni e di riferimento.<br /><br /> Non vi è alcun obbligo di fornire a Microsoft suggerimenti, commenti o altri feedback ("Feedback") relativi al documento. Le informazioni immesse volontariamente possono tuttavia essere utilizzate per prodotti Microsoft e specifiche correlate o altre documentazioni ("Opzioni di Microsoft") che a loro volta possono essere utilizzate da terze parti per compilare i propri prodotti. Pertanto, se vengono forniti feedback a Microsoft su qualsiasi versione di questo documento o sulle opzioni Microsoft a cui questi si riferiscono, si accettano le condizioni seguenti: (a) Microsoft può liberamente utilizzare, riprodurre, distribuire, concedere in licenza o commercializzare i feedback in ogni opzione Microsoft; (b) si concedono inoltre a terze parti, senza spese, i diritti necessari per utilizzare o interfacciare altri prodotti con le opzioni Microsoft che incorporano i feedback; e (c) non dovranno mai essere forniti a Microsoft feedback (i) che violano qualsiasi brevetto, copyright o altre proprietà o diritti intellettuali di terze parti o (ii) altri termini di licenza che impongano di incorporare o derivare tali feedback nelle opzioni Microsoft o in altre proprietà intellettuali Microsoft, per concederne una licenza o condividerle con terze parti.
+> Dichiarazione di non responsabilità<br /><br /> Questo documento viene offerto di base "così com'è". Mentre sono stati testati tutti i passi descritti, non è possibile testare in modo esaustivo ogni configurazione. Il documento verrà tenuto aggiornato il più possibile man mano che nuove informazioni saranno disponibili. Le informazioni e le indicazioni riportate nel presente documento, inclusi URL e altri riferimenti a siti Internet, sono soggette a modifica senza preavviso. Microsoft non offre alcuna garanzia, esplicita o implicita, relativamente alle informazioni fornite. L'utente accetta di usarle a proprio rischio.<br /><br /> Il presente documento non implica la concessione di alcun diritto di proprietà intellettuale in relazione ai prodotti Microsoft. Sono consentiti la copia e l'uso del presente documento a fini di riferimento interno.<br /><br /> Non vi è alcun obbligo di fornire a Microsoft suggerimenti, commenti o altri feedback ("Feedback") relativi al documento. Le informazioni immesse volontariamente possono tuttavia essere utilizzate per prodotti Microsoft e specifiche correlate o altre documentazioni ("Opzioni di Microsoft") che a loro volta possono essere utilizzate da terze parti per compilare i propri prodotti. Pertanto, se vengono forniti feedback a Microsoft su qualsiasi versione di questo documento o sulle opzioni Microsoft a cui questi si riferiscono, si accettano le condizioni seguenti: (a) Microsoft può liberamente utilizzare, riprodurre, distribuire, concedere in licenza o commercializzare i feedback in ogni opzione Microsoft; (b) si concedono inoltre a terze parti, senza spese, i diritti necessari per utilizzare o interfacciare altri prodotti con le opzioni Microsoft che incorporano i feedback; e (c) non dovranno mai essere forniti a Microsoft feedback (i) che violano qualsiasi brevetto, copyright o altre proprietà o diritti intellettuali di terze parti o (ii) altri termini di licenza che impongano di incorporare o derivare tali feedback nelle opzioni Microsoft o in altre proprietà intellettuali Microsoft, per concederne una licenza o condividerle con terze parti.
 
 Questa procedura dettagliata è stata convalidata per i sistemi operativi seguenti:
 
 - Windows 8 (x86 e x64)
-- Windows 7 Ultimate
+- Windows 7 Ultimate
 - Windows Server 2008 R2 Standard
 
 Dopo aver completato i passaggi di questa procedura, è possibile utilizzare un ambiente multicomputer per compilare questi tipi di applicazioni:
@@ -42,7 +42,7 @@ L'ambiente multicomputer non può essere utilizzato per compilare questi tipi di
 - App UWP. Per compilare app UWP, è necessario installare Visual Studio nel computer di compilazione.
 - Applicazioni desktop destinate a .NET Framework 4 o versioni precedenti. Per compilare questi tipi di applicazioni, è necessario installare Visual Studio o gli assembly e gli strumenti di riferimento di .NET (da Windows 7.1 SDK) nel computer di compilazione.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Visual Studio con il carico di lavoro **Sviluppo per desktop .NET** installato.
 
@@ -102,9 +102,9 @@ Si noti che il nome della cartella *Programmi* dipende dal sistema operativo ins
 
     - %Programmi%\Common Files\Merge Modules\
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\VC\
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\Tools\ProjectComponents\
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\Tools\ProjectComponents\
 
     - %Programmi%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
@@ -114,23 +114,23 @@ Si noti che il nome della cartella *Programmi* dipende dal sistema operativo ins
 
 3. Copiare questi file dal computer host nel computer di compilazione:
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE\msobj110.dll
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msobj110.dll
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE\mspdb110.dll
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdb110.dll
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE\mspdbcore.dll
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbcore.dll
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE\mspdbsrv.exe
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbsrv.exe
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE\msvcdis110.dll
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msvcdis110.dll
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\Tools\makehm.exe
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\makehm.exe
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\Tools\VCVarsQueryRegistry.bat
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\Tools\vsvars32.bat
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\vsvars32.bat
 
-4. Le librerie di runtime di Visual C++ seguenti sono necessarie solo se si eseguono output di compilazione nel computer di compilazione, ad esempio come parte di un test automatizzato. I file si trovano in genere nelle sottocartelle della cartella *%ProgramFiles%, Microsoft\\\<Visual Studio>\\ \<versione>, ad esempio , VC , redist , x86* o *%ProgramFiles%, versione di Microsoft Visual Studio\\\<>\\ \<edizione>, VC, redist, x64,* a seconda dell'architettura del sistema. Nei sistemi x86 copiare i file binari x86 nella cartella *\Windows\System32*. Nei sistemi x64 copiare i file binari x86 nella cartella *Windows\SysWOW64* e i file binari x64 nella cartella *Windows\System32*.
+4. Le librerie di runtime di Visual C++ seguenti sono necessarie solo se si eseguono output di compilazione nel computer di compilazione, ad esempio come parte di un test automatizzato. I file si trovano in genere nelle sottocartelle della cartella *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x86* o *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x64* , a seconda dell'architettura del sistema. Nei sistemi x86 copiare i file binari x86 nella cartella *\Windows\System32*. Nei sistemi x64 copiare i file binari x86 nella cartella *Windows\SysWOW64* e i file binari x64 nella cartella *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -192,7 +192,7 @@ Si noti che il nome della cartella *Programmi* dipende dal sistema operativo ins
 
 È necessario creare voci nel Registro di sistema per configurare le impostazioni di MSBuild.
 
-1. Identificare la cartella padre per le voci del Registro di sistema. Tutte le voci del Registro di sistema vengono create nella stessa chiave padre. In un computer x86 la chiave padre è **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. In un computer x64, la chiave padre è **HKEY_LOCAL_MACHINE SOFTWARE Wow6432Node Microsoft**. Indipendentemente dall'architettura di sistema, in questa procedura dettagliata si fa riferimento alla chiave padre come %RegistryRoot%.
+1. Identificare la cartella padre per le voci del Registro di sistema. Tutte le voci del Registro di sistema vengono create nella stessa chiave padre. In un computer x86 la chiave padre è **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. In un computer x64 la chiave padre è **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft**. Indipendentemente dall'architettura di sistema, in questa procedura dettagliata si fa riferimento alla chiave padre come %RegistryRoot%.
 
     > [!NOTE]
     > Se l'architettura del computer host differisce da quella del computer di compilazione, assicurarsi di utilizzare la chiave padre appropriata in ogni computer. Ciò è particolarmente importante se viene automatizzato il processo di esportazione.
@@ -255,7 +255,7 @@ Per usare MSBuild nel computer di compilazione, è necessario impostare le varia
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Usare vcvarsall.bat per impostare le variabili di ambiente
 
-Aprire una finestra **del prompt dei comandi** nel computer di compilazione ed eseguire *%Program Files%\\\<Microsoft Visual Studio versione>\\ \<edizione> .* È possibile utilizzare un argomento della riga di comando per specificare il set di strumenti che si desidera utilizzare, ad esempio x86, x64 nativo o compilatore incrociato x64. Se non si specifica un argomento della riga di comando, viene utilizzato il set di strumenti x86.
+Aprire una finestra del **prompt dei comandi** nel computer di compilazione ed eseguire *%Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\VC\vcvarsall.bat*. È possibile utilizzare un argomento della riga di comando per specificare il set di strumenti che si desidera utilizzare, ad esempio x86, x64 nativo o compilatore incrociato x64. Se non si specifica un argomento della riga di comando, viene utilizzato il set di strumenti x86.
 
 Nella tabella seguente vengono descritti gli argomenti supportati di *vcvarsall.bat*:
 
@@ -271,7 +271,7 @@ Se *vcvarsall.bat* viene eseguito correttamente, ovvero se non viene visualizzat
 
 1. Per configurare manualmente l'ambiente dalla riga di comando, aggiungere il seguente percorso alla variabile di ambiente PATH:
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE
 
 2. Facoltativamente, è possibile aggiungere i seguenti percorsi alla variabile di ambiente PATH per rendere più facile l'utilizzo di MSBuild per compilare le soluzioni.
 
@@ -295,15 +295,15 @@ MSBuild richiede che siano installati assembly aggiuntivi nella GAC del computer
 
     - %Programmi%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %Programmi%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %Programmi%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
 2. Per installare assembly nella GAC, trovare *gacutil.exe* nel computer di compilazione. Tale file in genere si trova in %Programmi%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Se questa cartella non viene trovata, ripetere i passaggi illustrati nella sezione [Copiare i file dal computer host al computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) di questa procedura dettagliata.
 
      Aprire una finestra del **prompt dei comandi** con diritti amministrativi ed eseguire questo comando per ogni file:
 
-     **gacutil -i \<file>**
+     **gacutil-i \<file>**
 
     > [!NOTE]
     > Affinché un assembly venga installato completamente nella GAC, potrebbe essere necessario riavviare il computer.
@@ -339,7 +339,7 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         to
+         in
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -349,7 +349,7 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         to
+         in
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -409,4 +409,4 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 ## <a name="see-also"></a>Vedere anche
 
 - [Preparare un computer di test per l'esecuzione di un file eseguibile di debug](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
-- [Informazioni di riferimento sulla riga di comando](../msbuild/msbuild-command-line-reference.md)
+- [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes Documenti Microsoft
+title: 'IDebugCustomAttribute:: GetAttributeBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732793"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Ottiene le informazioni sull'attributo come BLOB di byte.
+Ottiene le informazioni sugli attributi come BLOB di byte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,18 +43,18 @@ int GetAttributeBytes(
 
 ## <a name="parameters"></a>Parametri
 `ppBlob`\
-[in, out] Matrice compilata con l'attributo bytes.
+[in, out] Matrice compilata con i byte dell'attributo.
 
 `pdwLen`\
-[in, out] Specifica il numero massimo di byte `ppBlob` da restituire nella matrice e restituisce il numero di byte effettivamente scritti nella matrice.
+[in, out] Specifica il numero massimo di byte da restituire nella `ppBlob` matrice e restituisce il numero di byte effettivamente scritti nella matrice.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Impostare `ppBlob` il parametro su un valore null per restituire il numero di byte di attributi disponibili. Quindi allocare una matrice e `ppBlob` passare tale matrice per il parametro.
+ Impostare il `ppBlob` parametro su un valore null per restituire il numero di byte degli attributi disponibili. Quindi allocare una matrice e passare la matrice in per il `ppBlob` parametro.
 
- I byte dell'attributo rappresentano i dati non elaborati dell'attributo personalizzato.
+ I byte degli attributi rappresentano i dati non elaborati dell'attributo personalizzato.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

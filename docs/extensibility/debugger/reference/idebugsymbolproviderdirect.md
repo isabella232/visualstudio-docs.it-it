@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugSymbolProviderDirect . Documenti Microsoft
+title: IDebugSymbolProviderDirect | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd1201007b27d3c7c51b5b0d862b36ba0549429b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718911"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
-Rappresenta un provider di simboli che ha accesso diretto ai metadati e alle interfacce dei simboli principali.
+Rappresenta un provider di simboli che ha accesso diretto a metadati e interfacce di simboli di base.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -27,23 +27,23 @@ IDebugSymbolProviderDirect: IUnknown
 ```
 
 ## <a name="methods"></a>Metodi
- Questa interfaccia implementa i metodi seguenti:This interface implements the following methods:
+ Questa interfaccia implementa i metodi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Recupera l'identificatore di dominio dell'applicazione dato l'indirizzo di debug.|
-|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Recupera informazioni sui moduli nel gruppo di simboli.|
-|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Recupera informazioni sul gruppo di simboli di cui il provider di simboli è membro.|
+|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Recupera l'identificatore del dominio dell'applicazione in base all'indirizzo di debug.|
+|[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Recupera le informazioni sui moduli nel gruppo di simboli.|
+|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Recupera le informazioni sul gruppo di simboli di cui è membro il provider di simboli.|
 |[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|Recupera le informazioni di importazione dei metadati.|
-|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Recupera informazioni sul metodo in corrispondenza dell'indirizzo di debug specificato.|
+|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Recupera le informazioni sul metodo in corrispondenza dell'indirizzo di debug specificato.|
 |[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Recupera un lettore di simboli per il codice non gestito.|
 
 ## <a name="remarks"></a>Osservazioni
- Questa interfaccia può essere utilizzata al posto della maggior parte delle altre interfacce del provider di simboli. Fornisce accesso diretto ai `CorSym` metadati e alle interfacce.
+ Questa interfaccia può essere utilizzata al posto della maggior parte delle altre interfacce del provider di simboli. Consente l'accesso diretto ai metadati e alle `CorSym` interfacce.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Sh.h
+ Intestazione: sh. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

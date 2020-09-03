@@ -23,14 +23,14 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db7cc513c4c96a8b60cc6471280bb837a7b9a248
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72730895"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalizzazione dei controlli runtime nativi
-Quando si esegue la compilazione con **/RTC** (controlli Runtime) o si usa il `runtime_checks` pragma, la libreria di runtime C fornisce i controlli runtime nativi. In alcuni casi può essere necessario personalizzare il controllo runtime:
+Quando si esegue la compilazione con **/RTC** (controlli Runtime) o si usa il `runtime_checks` pragma, la libreria di runtime del linguaggio C fornisce controlli run-time nativi. In alcuni casi può essere necessario personalizzare il controllo runtime:
 
 - Per indirizzare i messaggi del controllo runtime a un file o una destinazione diversa da quella predefinita.
 
@@ -55,6 +55,6 @@ Quando si esegue la compilazione con **/RTC** (controlli Runtime) o si usa il `r
  `_RTC_NumErrors` restituisce il numero di tipi di errore rilevati dai controlli degli errori di runtime. Per ottenere una breve descrizione di ciascun errore, è possibile creare un ciclo da 0 al valore restituito da `_RTC_NumErrors` passando il valore di iterazione a `_RTC_GetErrDesc` in ciascun ciclo. Per ulteriori informazioni, vedere [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) e [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Usare controlli runtime nativi](../debugger/how-to-use-native-run-time-checks.md)
+- [Procedura: utilizzare i controlli runtime nativi](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

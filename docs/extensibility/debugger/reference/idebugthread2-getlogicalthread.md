@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugThread2::GetLogicalThread . Documenti Microsoft
+title: 'IDebugThread2:: GetLogicalThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e148fb0b9b043fc1717effca00d698ee14beb2f1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718849"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
@@ -43,13 +43,13 @@ int GetLogicalThread( 
 
 ## <a name="parameters"></a>Parametri
 `pStackFrame`\
-[in] Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta lo stack frame.
+in Oggetto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) che rappresenta l'stack frame.
 
 `ppLogicalThread`\
-[fuori] Restituisce `IDebugLogicalThread2` un'interfaccia che rappresenta il thread logico associato. Un'implementazione del motore di debug deve impostare questo valore su un valore null.
+out Restituisce un' `IDebugLogicalThread2` interfaccia che rappresenta il thread logico associato. Un'implementazione del motore di debug deve impostare questa impostazione su un valore null.
 
 ## <a name="return-value"></a>Valore restituito
- Le implementazioni del `E_NOTIMPL`motore di debug restituiscono sempre .
+ Le implementazioni del motore di debug restituiscono sempre `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
