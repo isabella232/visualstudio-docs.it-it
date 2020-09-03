@@ -1,5 +1,5 @@
 ---
-title: Riferimento all'interfaccia utente di debug | Microsoft Docs
+title: Informazioni di riferimento sull'interfaccia utente di debug | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 59cc4e96630be23ee864e3d5a03cbb6dde709695
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191223"
 ---
 # <a name="debugging-user-interface-reference"></a>Riferimenti dell'interfaccia utente di debug
@@ -44,10 +44,10 @@ Quando si esegue il debug di un'applicazione è possibile che vengano visualizza
   
 - [Finestra di dialogo Modifica e continuazione](../debugger/edit-and-continue-dialog-box.md)  
   
-- [Finestra di dialogo Terminazione debug in corso](../debugger/stop-debugging-in-progress-dialog-box.md)  
+- [Terminazione debug in corso (finestra di dialogo)](../debugger/stop-debugging-in-progress-dialog-box.md)  
   
 - [Finestre di dialogo di errore e di avviso per il debug](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  
+ [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [Finestra di comando](../ide/reference/command-window.md)

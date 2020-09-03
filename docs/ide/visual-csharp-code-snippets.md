@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594162"
 ---
 # <a name="c-code-snippets"></a>Frammenti di codice C#
@@ -25,7 +25,7 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 
 È possibile inserire un frammento di codice nella posizione del cursore o un frammento di codice racchiuso intorno al codice attualmente selezionato. Lo strumento per l'inserimento dei frammenti di codice viene richiamato usando i comandi **Inserisci frammento di codice** o **Racchiudi tra** del menu **IntelliSense** o usando rispettivamente i tasti di scelta rapida **CTRL**+**K**,**X** o **CTRL**+**K**,**S**.
 
-**L'Inserimento frammento** di codice visualizza il nome del frammento di codice per tutti i frammenti di codice disponibili. Lo strumento include anche una finestra di dialogo di input in cui è possibile digitare il nome del frammento di codice o parte del nome del frammento di codice. Lo strumento per l'inserimento dei frammenti di codice evidenzia la corrispondenza più prossima al nome di un frammento di codice. Quando si preme **TAB** in qualsiasi momento, lo strumento per l'inserimento dei frammenti di codice viene chiuso e viene inserito il frammento di codice attualmente selezionato. Se si preme **ESC** o si fa clic con il mouse nell'editor del codice, lo strumento per l'inserimento di frammenti di codice viene chiuso senza inserire un frammento di codice.
+L' **Accodatore dei frammenti di codice** Visualizza il nome del frammento di codice per tutti i frammenti di codice disponibili. Lo strumento include anche una finestra di dialogo di input in cui è possibile digitare il nome del frammento di codice o parte del nome del frammento di codice. Lo strumento per l'inserimento dei frammenti di codice evidenzia la corrispondenza più prossima al nome di un frammento di codice. Quando si preme **TAB** in qualsiasi momento, lo strumento per l'inserimento dei frammenti di codice viene chiuso e viene inserito il frammento di codice attualmente selezionato. Se si preme **ESC** o si fa clic con il mouse nell'editor del codice, lo strumento per l'inserimento di frammenti di codice viene chiuso senza inserire un frammento di codice.
 
 ## <a name="default-code-snippets"></a>Frammenti di codice predefiniti
 
@@ -36,9 +36,9 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |#if|Crea una direttiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e una direttiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Ovunque.|
 |#region|Crea una direttiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e una direttiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Ovunque.|
 |~|Crea un [finalizzatore](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (distruttore) per la classe contenitore.|All'interno di una classe.|
-|attributo|Crea una dichiarazione per una classe che deriva da <xref:System.Attribute>.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
-|selezionata|Crea un blocco [checked](/dotnet/csharp/language-reference/keywords/checked).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|class|Crea una dichiarazione di classe.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
+|Attributo|Crea una dichiarazione per una classe che deriva da <xref:System.Attribute>.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
+|checked|Crea un blocco [checked](/dotnet/csharp/language-reference/keywords/checked).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|classe|Crea una dichiarazione di classe.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |ctor|Crea un costruttore per la classe contenitore.|All'interno di una classe.|
 |cw|Crea una chiamata a <xref:System.Console.WriteLine%2A>.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |do|Crea un ciclo [do](/dotnet/csharp/language-reference/keywords/do) `while`.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
@@ -46,7 +46,7 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |enum|Crea una dichiarazione [enum](/dotnet/csharp/language-reference/keywords/enum).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |equals|Crea una dichiarazione di metodo che esegue l'override del metodo <xref:System.Object.Equals%2A> definito nella classe <xref:System.Object>.|All'interno di una classe o uno struct.|
 |exception|Crea una dichiarazione per una classe che deriva da un'eccezione (<xref:System.Exception> per impostazione predefinita).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
-|for|Crea un ciclo [for](/dotnet/csharp/language-reference/keywords/for).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|per|Crea un ciclo [for](/dotnet/csharp/language-reference/keywords/for).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |foreach|Crea un ciclo [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |forr|Crea un ciclo [for](/dotnet/csharp/language-reference/keywords/for) che decrementa la variabile di ciclo dopo ogni iterazione.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |if|Crea un blocco [if](/dotnet/csharp/language-reference/keywords/if-else).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
@@ -57,24 +57,24 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |iterindex|Crea una coppia iteratore/indicizzatore "denominata" usando una classe annidata.|All'interno di una classe o uno struct.|
 |lock|Crea un blocco [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |mbox|Crea una chiamata a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Può essere necessario aggiungere un riferimento a *System.Windows.Forms.dll*.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|spazio dei nomi|Crea una dichiarazione [namespace](/dotnet/csharp/language-reference/keywords/namespace).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
+|namespace|Crea una dichiarazione [namespace](/dotnet/csharp/language-reference/keywords/namespace).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
 |prop|Crea una dichiarazione di [proprietà implementata automaticamente](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|All'interno di una classe o uno struct.|
 |propfull|Crea una dichiarazione di proprietà con le funzioni di accesso `get` e `set`.|All'interno di una classe o uno struct.|
 |propg|Crea una [proprietà implementata automaticamente](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) di sola lettura con una funzione di accesso `set` privata.|All'interno di una classe o uno struct.|
 |sim|Crea una dichiarazione [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) del metodo Main.|All'interno di una classe o uno struct.|
 |struct|Crea una dichiarazione [struct](/dotnet/csharp/language-reference/keywords/struct).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |svm|Crea una dichiarazione [static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void) del metodo Main.|All'interno di una classe o uno struct.|
-|opzione|Crea un blocco [switch](/dotnet/csharp/language-reference/keywords/switch).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|switch|Crea un blocco [switch](/dotnet/csharp/language-reference/keywords/switch).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |provare|Crea un blocco [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |tryf|Crea un blocco [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|non selezionata|Crea un blocco [unchecked](/dotnet/csharp/language-reference/keywords/unchecked).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|unchecked|Crea un blocco [unchecked](/dotnet/csharp/language-reference/keywords/unchecked).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |unsafe|Crea un blocco [unsafe](/dotnet/csharp/language-reference/keywords/unsafe).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|Con|Crea una direttiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
-|mentre|Crea un ciclo [while](/dotnet/csharp/language-reference/keywords/while).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|using|Crea una direttiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
+|while|Crea un ciclo [while](/dotnet/csharp/language-reference/keywords/while).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Funzioni dei frammenti di codiceCode snippet functions](../ide/code-snippet-functions.md)
+- [Funzioni dei frammenti di codice](../ide/code-snippet-functions.md)
 - [Frammenti di codice](../ide/code-snippets.md)
-- [Parametri del modello](../ide/template-parameters.md)
-- [Procedura: utilizzare frammenti di codice con elementi surroundHow to: Use surround-with code snippets](../ide/how-to-use-surround-with-code-snippets.md)
+- [Parametri di modelli](../ide/template-parameters.md)
+- [Procedura: usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md)

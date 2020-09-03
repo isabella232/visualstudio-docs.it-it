@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b27189b27fef22a3fe5b3926ded324e75081547
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466217"
 ---
 # <a name="idiasectioncontribget_nopad"></a>IDiaSectionContrib::get_nopad
@@ -38,8 +38,8 @@ out Restituisce `TRUE` se la sezione non deve essere riempita al limite di memor
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Si tratta di una proprietà in genere visibile solo in file meno recenti.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

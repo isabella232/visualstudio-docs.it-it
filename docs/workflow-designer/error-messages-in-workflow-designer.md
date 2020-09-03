@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597048"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messaggi di errore in Progettazione flussi di lavoro
@@ -35,7 +35,7 @@ Gli errori nelle Progettazione flussi di lavoro si verificano nelle situazioni s
 
 4. Sono presenti errori nel file XAML che impediscono il caricamento del flusso di lavoro.
 
-Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro ha esito positivo, ma viene generata un'<xref:System.Activities.InvalidWorkflowException> in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.
+Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro ha esito positivo, ma <xref:System.Activities.InvalidWorkflowException> viene generata un'eccezione in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.
 
 All'interno di Visual Studio, quando viene caricato un flusso di lavoro, gli errori vengono visualizzati nel **Elenco errori**. Per passare all'attività che rappresenta l'origine dell'errore, fare doppio clic sull'errore nel **Elenco errori**.
 

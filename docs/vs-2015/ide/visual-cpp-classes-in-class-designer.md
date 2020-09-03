@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fc312736508a11d43cadf789b08aae77c528d35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608683"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classi Visual C++ in Progettazione classi
@@ -52,11 +52,11 @@ class Penguin : public Bird, public Swimmer {};
  Facendo clic con il pulsante destro del mouse su una forma classe e scegliendo **Mostra classi base** vengono visualizzate le classi di base per la classe selezionata.
 
 > [!NOTE]
-> Il comando **Mostra classi derivate** non è supportato per il codice C++. Per visualizzare le classi derivate, scegliere Visualizzazione classi, espandere il nodo dei tipi, espandere la sottocartella **Tipi derivati** e trascinare tali tipi sul diagramma classi.
+> Il comando **Mostra classi derivate** non è supportato per il codice C++. È possibile visualizzare le classi derivate passando a Visualizzazione classi, espandendo il nodo del tipo, espandendo la sottocartella **tipi derivati** , quindi trascinando tali tipi nel diagramma classi.
 
  Per altre informazioni sulle ereditarietà da classi multiple, vedere [(NOTINBUILD) Ereditarietà multipla](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Più classi base](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).
 
-## <a name="abstract-classes"></a>Classi astratte
+## <a name="abstract-classes"></a>classi astratte
  Progettazione classi supporta le classi astratte, note anche come "classi di base astratte". Si tratta di classi per le quali non viene mai creata un'istanza, ma da cui è possibile derivare altre classi. Usando un esempio citato in "Ereditarietà multipla" più indietro in questo documento, è possibile creare un'istanza della classe `Bird` come singoli oggetti, come illustrato di seguito:
 
 ```
@@ -152,7 +152,7 @@ typedef struct
 
 |Elemento del codice|Visualizzazione di Progettazione classi|
 |------------------|-------------------------|
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 overload)|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> Func \<T, U> (overload + 1)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Classe modello<br /><br /> `B<T2>`<br /><br /> Classe modello<br /><br /> (B è contenuto all'interno della classe A in **Tipi annidati**)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Classe<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Classe modello|
 
@@ -170,4 +170,4 @@ typedef struct
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
 ## <a name="see-also"></a>Vedere anche
- [Utilizzo di classi C++ di codice Visual (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md) [e struct di tipi di](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [classe anonima](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [(NOTINBUILD)](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) più [modelli](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872) di [classi base di ereditarietà multipla](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)
+ [Utilizzo di classi di Visual C++ Code (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md) [e struct di tipi di](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [classe anonimi](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [(NOTINBUILD)](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) più [classi di base ereditarietà multipla](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740) [Templates](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

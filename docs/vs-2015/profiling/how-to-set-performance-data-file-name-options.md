@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 71ac053a24b3f765a58fc050ceec84115e1a4e3d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548395"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni
@@ -40,14 +40,14 @@ Per impostazione predefinita, un file dei dati di profilatura (con estensione vs
   
 1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi fare clic su **Proprietà**.  
   
-2. Fare clic su **General**.  
+2. Fare clic su **Generale**.  
   
 3. In **Rapporto** modificare le impostazioni seguenti:  
   
-    |Nome|Descrizione|  
+    |Name|Descrizione|  
     |-|-|  
     |**Percorso report**|Specificare una directory per archiviare i file di dati di profilatura.|  
-    |**Nome report**|Specificare un nome di base per i file.|  
+    |**Nome del report**|Specificare un nome di base per i file.|  
     |**Aggiungere automaticamente nuovi rapporti alla sessione**|Selezionare la casella di controllo per aggiungere automaticamente il file di dati alla sessione di prestazioni.|  
     |**Accodare un numero incrementale ai rapporti generati**|Selezionare la casella di controllo per aggiungere un numero incrementale al nome del file quando esiste più di un file con lo stesso nome. Deselezionare la casella di controllo per sovrascrivere un file esistente.|  
     |**Utilizzare un timestamp per il numero**|Selezionare la casella di controllo per aggiungere un datestamp al nome del file.|

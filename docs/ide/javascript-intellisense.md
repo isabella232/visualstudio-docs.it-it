@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593720"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
@@ -49,7 +49,7 @@ Per ottenere le informazioni necessarie, TypeScript usa diverse fonti:
 
 - [IntelliSense basato sull'inferenza del tipo](#TypeInference)
 - [IntelliSense basato su JSDoc](#JsDoc)
-- [IntelliSense basato sui file di dichiarazione TypeScript](#TsDeclFiles)
+- [IntelliSense basato su file di dichiarazione TypeScript](#TsDeclFiles)
 - [Acquisizione automatica delle definizioni dei tipi](#Auto)
 
 <a name="TypeInference"></a>
@@ -143,5 +143,5 @@ Se non si vuole usare l'acquisizione automatica, disattivarla mediante l'aggiunt
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Using IntelliSense](../ide/using-intellisense.md)
+- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
 - [JavaScript support (Supporto per JavaScript) (Visual Studio per Mac)](/visualstudio/mac/javascript)

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2054a55f0633d5d4add51fee2e933d9f4d829fcf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609973"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile aggiungere a Progettazione relazionale oggetti stored procedure ed eseguirle come metodi <xref:System.Data.Linq.DataContext> tipici. Possono inoltre essere utilizzati per eseguire l'override del comportamento predefinito del runtime [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] che esegue inserimenti, aggiornamenti ed eliminazioni quando le modifiche vengono salvate dalle classi di entità in un database, ad esempio quando si chiama il metodo di <xref:System.Data.Linq.DataContext.SubmitChanges%2A>.
+È possibile aggiungere a Progettazione relazionale oggetti stored procedure ed eseguirle come metodi <xref:System.Data.Linq.DataContext> tipici. Possono inoltre essere utilizzati per eseguire l'override del [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] comportamento di runtime predefinito che esegue inserimenti, aggiornamenti ed eliminazioni quando le modifiche vengono salvate dalle classi di entità in un database, ad esempio quando si chiama il <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metodo.
 
 > [!NOTE]
 > Se le stored procedure restituiscono valori che devono essere inviati al client, ad esempio valori calcolati nelle stesse stored procedure, creare parametri di output all'interno di esse. Se non è possibile usare parametri di output, è preferibile scrivere l'implementazione di un metodo parziale anziché basarsi sugli override generati da Progettazione relazionale oggetti. I membri con mapping ai valori generati dal database devono essere impostati su valori appropriati dopo il completamento delle operazioni INSERT o UPDATE. Per altre informazioni, vedere [responsabilità dello sviluppatore nell'override del comportamento predefinito](https://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).
@@ -34,9 +34,9 @@ ms.locfileid: "72609973"
 
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Per assegnare stored procedure per l'override del comportamento predefinito di una classe di entità
 
-1. Aprire il file **LINQ to SQL** nella finestra di progettazione. (Fare doppio clic sul file. dbml in **Esplora soluzioni**).
+1. Aprire il file **LINQ to SQL** nella finestra di progettazione. (Fare doppio clic sul file .dbml in **Esplora soluzioni**.)
 
-2. In **Esplora server** /**Esplora database**espandere **stored procedure** e individuare le stored procedure che si desidera utilizzare per i comandi di inserimento, aggiornamento e/o eliminazione della classe di entità.
+2. In **Esplora server** / **Esplora database**espandere **stored procedure** e individuare le stored procedure che si desidera utilizzare per i comandi di inserimento, aggiornamento e/o eliminazione della classe di entità.
 
 3. Trascinare la stored procedure in Progettazione relazionale oggetti.
 
@@ -52,12 +52,12 @@ ms.locfileid: "72609973"
 
 8. Selezionare la stored procedure desiderata nell'elenco **Personalizza**.
 
-9. Controllare l'elenco di **Argomenti metodo** e **Proprietà classe** per verificare che venga eseguito il mapping degli **Argomenti metodo** alle **Proprietà classe** appropriate. Eseguire il mapping degli argomenti del metodo originali (Original_*ArgumentName*) alle proprietà originali (*NomeProprietà* (Original)) per i comandi Update e DELETE.
+9. Controllare l'elenco di **Argomenti metodo** e **Proprietà classe** per verificare che venga eseguito il mapping degli **Argomenti metodo** alle **Proprietà classe** appropriate. Eseguire il mapping degli argomenti del metodo originali (Original_*ArgumentName*) alle proprietà originali (*PropertyName* (originale)) per i comandi Update e DELETE.
 
     > [!NOTE]
     > Per impostazione predefinita, viene eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se non vi è più corrispondenza tra i nomi modificati nella tabella e nella classe di entità, potrebbe essere necessario selezionare la proprietà di classe equivalente a cui eseguire il mapping nel caso in cui la finestra di progettazione non sia in grado di determinare il mapping corretto.
 
-10. Fare clic su **OK** o **Applica**.
+10. Fare clic su **OK** o su **Applica**.
 
     > [!NOTE]
     > È possibile continuare a configurare il comportamento per ogni combinazione di classe/comportamento purché si faccia clic su **Applica** dopo ogni modifica apportata. Se si modifica la classe o il comportamento prima di fare clic su **applica**, viene visualizzata una finestra di dialogo di avviso che consente di applicare le modifiche apportate.

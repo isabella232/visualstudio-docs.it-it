@@ -49,10 +49,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662255"
 ---
 # <a name="options-text-editor-general"></a>Opzioni, Editor di testo, Generale
@@ -61,7 +61,7 @@ ms.locfileid: "72662255"
 Questa finestra di dialogo consente di modificare le impostazioni globali di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Code e dell'editor di testo. Per visualizzare questa finestra di dialogo, fare clic su **Opzioni** nel menu **Strumenti**, espandere la cartella **Editor di testo** e quindi fare clic su **Generale**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="settings"></a>Impostazioni
  Trascinamento della selezione del testo quando selezionato consente di spostare il testo selezionandolo e trascinandolo con il mouse in un'altra posizione all'interno del documento corrente o di qualsiasi altro documento aperto.
@@ -72,12 +72,12 @@ Questa finestra di dialogo consente di modificare le impostazioni globali di [!I
 
  Rileva automaticamente la codifica UTF-8 senza firma per impostazione predefinita, l'Editor rileva la codifica cercando gli indicatori per l'ordine dei byte o i tag del set di caratteri. Se nel documento corrente non vengono trovati indicatori o tag di questo tipo, l'editor di codice tenterà di rilevare automaticamente la codifica UTF-8 analizzando le sequenze di byte. Per disabilitare il rilevamento automatico della codifica, deselezionare questa opzione.
 
-## <a name="display"></a>Visualizzazione
+## <a name="display"></a>Schermo
  Margine di selezione, se selezionato, Visualizza un margine verticale lungo il bordo sinistro dell'area di testo dell'editor. È possibile fare clic nel margine per selezionare un'intera riga di testo oppure fare clic e trascinare per selezionare righe di testo consecutive.
 
 |Margine di selezione attivato|Margine di selezione disattivato|
 |-------------------------|--------------------------|
-|![Screenshot HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "|::ref1::|")|![Screenshot HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "|::ref2::|")|
+|![Schermata HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![Schermata HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
 
  Indicatore margin quando selezionato, Visualizza un margine verticale all'esterno del bordo sinistro dell'area di testo dell'editor. Quando si fa clic su questo margine vengono visualizzate un'icona e un tooltip relativi al testo. Ad esempio, nel margine indicatore vengono visualizzati punti di interruzione o collegamenti dell'Elenco attività. Le informazioni del margine indicatore non vengono stampate.
 
@@ -88,4 +88,4 @@ Questa finestra di dialogo consente di modificare le impostazioni globali di [!I
  Evidenzia riga corrente quando è selezionata, Visualizza una casella grigia intorno alla riga di codice in cui si trova il cursore.
 
 ## <a name="see-also"></a>Vedere anche
- Opzioni [, editor di testo, opzioni tutti i linguaggi](../../ide/reference/options-text-editor-all-languages.md) [, editor di testo, tutti i linguaggi, opzioni tabulazioni](../../ide/reference/options-text-editor-all-languages-tabs.md) [, editor di testo, estensione di file](../../ide/reference/options-text-editor-file-extension.md) [identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [personalizzazione dell'editor](../../ide/customizing-the-editor.md) [con IntelliSense](../../ide/using-intellisense.md)
+ [Opzioni, editor di testo, opzioni tutti i linguaggi](../../ide/reference/options-text-editor-all-languages.md) [, editor di testo, tutti i linguaggi, opzioni tabulazioni](../../ide/reference/options-text-editor-all-languages-tabs.md) [, editor di testo, estensione di file](../../ide/reference/options-text-editor-file-extension.md) [identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [personalizzazione dell'editor](../../ide/customizing-the-editor.md) [con IntelliSense](../../ide/using-intellisense.md)

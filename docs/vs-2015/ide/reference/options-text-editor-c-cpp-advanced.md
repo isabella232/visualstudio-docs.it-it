@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 236135cd4b4f813471ece7a0eeb1b221c7242df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662356"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
@@ -96,9 +96,9 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
 
  **Disabilitare controllo ortografia durante** Disabilita controllo ortografia durante errore IntelliSense. Le "righe rosse a zigzag" non vengono visualizzate nella finestra dell'editor, ma l'errore verrà comunque visualizzato nella finestra Elenco errori.
 
- **Disabilitare #include completamento automatico** Disabilita il completamento automatico delle istruzioni `#include`.
+ **Disabilitare #include completamento automatico** Disabilita il completamento automatico delle `#include` istruzioni.
 
- **Usa barra in #include completamento automatico** Attiva il completamento automatico delle istruzioni `#include` quando viene utilizzato "/". Il delimitatore predefinito è una barra rovesciata '\'. Il compilatore può accettarle entrambe, pertanto usare questa opzione per specificare il carattere usato dalla base codice.
+ **Usa barra in #include completamento automatico** Attiva il completamento automatico delle `#include` istruzioni quando viene utilizzato "/". Il delimitatore predefinito è una barra rovesciata '\'. Il compilatore può accettarle entrambe, pertanto usare questa opzione per specificare il carattere usato dalla base codice.
 
  **Numero massimo unità di conversione memorizzate nella cache** Numero massimo di unità di conversione che verranno mantenute attive in un momento qualsiasi per le richieste IntelliSense. Il valore deve essere compreso tra 2 e 15. Questo numero è direttamente correlato al numero massimo di processi VCPkgSrv.exe che verrà eseguito (per una determinata istanza di Visual Studio). Il valore predefinito è 2, ma in presenza di memoria disponibile è possibile aumentare questo valore e verosimilmente garantire prestazioni leggermente migliori in IntelliSense.
 
@@ -106,7 +106,7 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
 
  **Disabilita elenco di membri aggressivi** L'elenco dei membri non viene visualizzato durante la digitazione del nome di un tipo o di una variabile. L'elenco viene visualizzato solo dopo aver digitato uno dei caratteri di commit, come definito nell'opzione **Caratteri commit elenco membri**.
 
- **Disabilita parole chiave elenco membri** Le parole chiave del linguaggio, ad esempio `void`, `class` `switch` non vengono visualizzate nei suggerimenti degli elenchi di membri.
+ **Disabilita parole chiave elenco membri** Le parole chiave del linguaggio, ad esempio `void` , `class` , `switch` non vengono visualizzate nei suggerimenti degli elenchi di membri.
 
  **Disabilitare i frammenti di codice dell'elenco dei membri** I frammenti di codice non vengono visualizzati nei suggerimenti degli elenchi di membri.
 

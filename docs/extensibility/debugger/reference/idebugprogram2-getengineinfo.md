@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgram2::GetEngineInfo . Documenti Microsoft
+title: 'IDebugProgram2:: GetEngineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 53f16a3ef6bd1328d73c8a6c71c666968d5564d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722821"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
@@ -43,10 +43,10 @@ int GetEngineInfo( 
 
 ## <a name="parameters"></a>Parametri
 `pbstrEngine`\
-[fuori] Restituisce il nome del DE che esegue il programma.
+out Restituisce il nome del DE che esegue questo programma.
 
 `pguidEngine`\
-[fuori] Restituisce il GUID del DE che esegue il programma.
+out Restituisce il GUID del DE che esegue questo programma.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

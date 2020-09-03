@@ -8,10 +8,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279309"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurare un progetto C++ per IntelliSense
@@ -38,7 +38,7 @@ Se le compilazioni vengono eseguite all'esterno dell'IDE di Visual Studio e ries
 
 ![Directory di inclusione di VC++](media/vcpp-intellisense-include-paths.png)
 
-Per visualizzare i valori correnti per compilare macro come **VC_IncludePath**, selezionare la riga Directory di inclusione e fare clic sull'elenco a discesa a destra. Quindi ** \<** scegliere Modifica>e fare clic sul pulsante **Macro.**
+Per visualizzare i valori correnti per compilare macro come **VC_IncludePath**, selezionare la riga Directory di inclusione e fare clic sull'elenco a discesa a destra. Quindi scegliere **\<Edit>** e fare clic sul pulsante **macro** .
 
 ### <a name="makefile-projects"></a>progetti Makefile
 
@@ -122,4 +122,4 @@ Per altre informazioni sulla variabile di ambiente TRACEDESIGNTIME, vedere [Rosl
 
 ## <a name="see-also"></a>Vedere anche
 
-- [IntelliSense di Visual C](visual-cpp-intellisense.md)
+- [IntelliSense per Visual C++](visual-cpp-intellisense.md)

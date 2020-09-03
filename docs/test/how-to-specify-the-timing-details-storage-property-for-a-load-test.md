@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0225ae23ed141b317d4424da573593d446766f43
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287311"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedura: Specificare la proprietà Intervallo archiviazione dettagli per un'impostazione di esecuzione test di carico
@@ -59,7 +59,7 @@ Usando l'Editor test di carico, è possibile modificare un valore della propriet
 
      Dopo aver configurato l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** è possibile eseguire il test di carico e visualizzare il **Grafico attività utente virtuale**. Per ulteriori informazioni, vedere [procedura: analizzare le operazioni svolte dagli utenti virtuali durante un test di carico](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Analisi dell'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Procedura dettagliata: uso del grafico attività utente virtuale per isolare i problemi](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

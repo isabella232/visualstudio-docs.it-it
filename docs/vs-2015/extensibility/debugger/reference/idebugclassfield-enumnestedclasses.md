@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses | Microsoft Docs
+title: 'IDebugClassField:: EnumNestedClasses | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7745eea3f5b3264016a25defd696a9b85f2e9fb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191080"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Crea un enumeratore per le classi annidate di questa classe.  
+Crea un enumeratore per le classi annidate in questa classe.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int EnumNestedClasses(
   
 #### <a name="parameters"></a>Parametri  
  `ppEnum`  
- [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) oggetto che rappresenta l'elenco di classi annidate. Restituisce un valore null se non esistono Nessun classi annidate.  
+ out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) che rappresenta l'elenco di classi annidate. Restituisce un valore null se non sono presenti classi annidate.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se nessuna classe annidata. In caso contrario, verrà restituito un codice di errore.  
+ Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non sono presenti classi annidate. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Ogni elemento dell'enumerazione è un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) oggetto che descrive una classe annidata.  
+## <a name="remarks"></a>Osservazioni  
+ Ogni elemento dell'enumerazione è un oggetto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che descrive una classe annidata.  
   
  Una classe annidata è una classe definita all'interno di un'altra classe. Ad esempio:  
   
@@ -56,7 +56,7 @@ class RootClass {
 };  
 ```  
   
- Il [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerazione contiene un oggetto che rappresenta il `NestedClass` classe.  
+ L'enumerazione [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) conterrà un oggetto che rappresenta la `NestedClass` classe.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

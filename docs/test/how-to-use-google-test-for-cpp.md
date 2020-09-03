@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287246"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Come usare Google Test per C++ in Visual Studio
@@ -67,6 +67,6 @@ Nel file test *. cpp* aggiungere le `#include` direttive necessarie per rendere 
 
 È ora possibile scrivere ed eseguire i Google Test. Per informazioni sulle macro dei test, vedere [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per informazioni sull'individuazione, l'esecuzione e il raggruppamento dei test usando **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)

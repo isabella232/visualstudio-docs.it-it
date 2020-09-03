@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179071"
 ---
 # <a name="net-memory-allocations-view"></a>Visualizzazione Allocazioni per la memoria .NET
@@ -43,14 +43,14 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Nome**|Nome della funzione o del tipo allocato.|  
+|**Name**|Nome della funzione o del tipo allocato.|  
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|  
 |**Nome processo**|Nome del processo.|  
-|**Nome modulo**|Nome del modulo che contiene il tipo o la funzione.|  
+|**Nome del modulo**|Nome del modulo che contiene il tipo o la funzione.|  
 |**Percorso modulo**|Percorso del modulo che contiene il tipo o la funzione.|  
 |**File di origine**|File di origine che contiene la definizione per il tipo o la funzione.|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa definizione di tipo o funzione nel file di origine.|  
-|**Livello**|Indica se i dati sono per un tipo o una funzione.|  
+|**Level**|Indica se i dati sono per un tipo o una funzione.|  
 |**Allocazioni inclusive**|- Per una funzione, il numero totale di oggetti del tipo padre creati dalla funzione. Il numero include gli oggetti creati nelle funzioni figlio.<br />- Per un tipo, il numero totale di istanze create per quel tipo.|  
 |**% allocazioni inclusive**|- Per una funzione, la percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che rappresentano allocazioni del tipo padre da parte della funzione.<br />- Per un tipo, la percentuale del numero totale di oggetti creati nell'esecuzione della profilatura corrispondenti a istanze del tipo.|  
 |**Allocazioni esclusive**|- Per una funzione, il numero di oggetti creati durante l'esecuzione diretta della funzione nella parte superiore dello stack di chiamate. Questo numero non include gli oggetti creati nelle funzioni figlio.<br />- Per un tipo, il numero totale di istanze create per quel tipo.|  

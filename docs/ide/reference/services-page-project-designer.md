@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593564"
 ---
 # <a name="services-page-project-designer"></a>Pagina Servizi, Progettazione progetti
@@ -69,7 +69,7 @@ Specifica il percorso del servizio ruoli.
 
 Specifica il percorso del servizio profili (impostazioni Web).
 
- **Avanzate**
+ **Funzionalità avanzate**
 
 Apre la [finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md), che è possibile usare per eseguire l'override del comportamento predefinito. Ad esempio, è possibile usare questa finestra di dialogo per specificare un database per l'archiviazione offline anziché usare il file system locale. Per altre informazioni, vedere [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
@@ -78,5 +78,5 @@ Apre la [finestra di dialogo Impostazioni avanzate per i servizi](../../ide/refe
 - [Servizi applicazioni client](/dotnet/framework/common-client-technologies/client-application-services)
 - [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md)
 - [Procedura: configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
-- [Pagina Compila, Progettazione progetti (Visual Basic)Compile Page, Project Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Build Page, Project Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md) (Pagina Compilazione, Progettazione progetti (C#))
+- [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Pagina Compilazione, Progettazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md)

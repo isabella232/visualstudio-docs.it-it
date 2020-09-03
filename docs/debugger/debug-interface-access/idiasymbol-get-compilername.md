@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 49491d2d9934a20e9d40c0dcd5aadeed3ef27ca7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464079"
 ---
 # <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
@@ -31,7 +31,7 @@ HRESULT get_compilerName (
 ```
 
 #### <a name="parameters"></a>Parametri
- `pName`Puntatore a un BSTR che conterrà il nome Unicode del compilatore.
+ `pName` Puntatore a un BSTR che conterrà il nome Unicode del compilatore.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
@@ -48,5 +48,5 @@ HRESULT get_compilerName (
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

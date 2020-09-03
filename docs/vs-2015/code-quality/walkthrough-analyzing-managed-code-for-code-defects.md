@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9478394162051fc08c33047cf1ac24275aff75e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609329"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Analisi del codice gestito per l'identificazione di errori del codice
@@ -27,23 +27,23 @@ In questa procedura dettagliata si analizza un progetto gestito per i difetti de
 
  In questa procedura dettagliata viene illustrato il processo di utilizzo dell'analisi del codice per analizzare gli assembly di codice gestito .NET per conformità con le linee guida di progettazione di Microsoft .NET Framework.
 
- In questa procedura dettagliata vengono illustrate le operazioni seguenti:
+ Questa procedura dettagliata è costituita dai passaggi seguenti:
 
 - Analizzare e correggere gli avvisi di errore del codice.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
-- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].
 
 ## <a name="create-a-class-library"></a>Creare una libreria di classi
 
 #### <a name="to-create-a-class-library"></a>Per creare una libreria di classi
 
-1. Scegliere **nuovo** dal menu **file** di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], quindi fare clic su **progetto**.
+1. Scegliere nuovo **File** dal menu file [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , quindi **New** fare clic su **progetto**.
 
-2. Nella finestra di dialogo **nuovo progetto** , in **Tipi progetto**, fare clic su oggetto **visivo C#** .
+2. Nella finestra di dialogo **nuovo progetto** , in **Tipi progetto**, fare clic su **Visual C#**.
 
-3. In **modelli**selezionare **libreria di classi**.
+3. In **Modelli** selezionare **Libreria di classi**.
 
 4. Nella casella di testo **nome** digitare **CodeAnalysisManagedDemo** e quindi fare clic su **OK**.
 
@@ -67,7 +67,7 @@ In questa procedura dettagliata si analizza un progetto gestito per i difetti de
 
 3. Fare clic su **CodeAnalysis**.
 
-4. Assicurarsi che l'opzione **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS**) sia selezionata.
+4. Assicurarsi che l'opzione  **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS**) sia selezionata.
 
 5. Dall'elenco a discesa **Esegui questo set di regole** selezionare **Microsoft all Rules**.
 
@@ -83,7 +83,7 @@ In questa procedura dettagliata si analizza un progetto gestito per i difetti de
 
 #### <a name="to-correct-code-analysis-rule-violations"></a>Per correggere le violazioni delle regole di analisi del codice
 
-1. Scegliere **Elenco errori**dal menu **Visualizza** .
+1. Scegliere **Elenco errori** dal menu **Visualizza**.
 
      A seconda del profilo dello sviluppatore scelto, potrebbe essere necessario puntare ad **altre finestre** dal menu **Visualizza** , quindi fare clic su **Elenco errori**.
 
@@ -103,11 +103,11 @@ In questa procedura dettagliata si analizza un progetto gestito per i difetti de
 
 - [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il costruttore seguente alla classe: public demo (String)
 
-  - Aggiungere il costruttore `public demo (String s) : base(s) { }` alla classe `demo`.
+  - Aggiungere il costruttore `public demo (String s) : base(s) { }` alla classe `demo` .
 
 - [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il costruttore seguente alla classe: public demo (String, Exception)
 
-  - Aggiungere il costruttore `public demo (String s, Exception e) : base(s, e) { }` alla classe `demo`.
+  - Aggiungere il costruttore `public demo (String s, Exception e) : base(s, e) { }` alla classe `demo` .
 
 - [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il costruttore seguente alla classe: protected demo (SerializationInfo, StreamingContext)
 
@@ -125,19 +125,19 @@ In questa procedura dettagliata si analizza un progetto gestito per i difetti de
 
 - [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: correggere la combinazione di maiuscole e minuscole del nome dello spazio dei nomi ' testCode ' cambiandola in ' testCode '.
 
-  - Modificare la combinazione di maiuscole e minuscole dello spazio dei nomi `testCode` `TestCode`.
+  - Modificare le maiuscole e minuscole dello spazio dei nomi `testCode` in `TestCode` .
 
 - [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: correggere la combinazione di maiuscole e minuscole del nome di tipo "demo" cambiandola in "demo".
 
-  - Modificare il nome del membro in `Demo`.
+  - Modificare il nome del membro in `Demo` .
 
 - [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: correggere la combinazione di maiuscole e minuscole del nome del membro ' Item ' cambiandola in ' Item '.
 
-  - Modificare il nome del membro in `Item`.
+  - Modificare il nome del membro in `Item` .
 
 - [CA1710: gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming: rinominare ' TestCode. demo ' per terminare con ' Exception '.
 
-  - Modificare il nome della classe e i relativi costruttori in `DemoException`.
+  - Modificare il nome della classe e i relativi costruttori in `DemoException` .
 
 - [CA2210: gli assembly devono avere nomi sicuri validi](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Sign ' ManagedDemo ' con una chiave con nome sicuro.
 
@@ -149,9 +149,9 @@ In questa procedura dettagliata si analizza un progetto gestito per i difetti de
 
        Selezionare la casella di controllo **Firma assembly** .
 
-       Nell'elenco **Scegli un file chiave con nome stringa** selezionare **\<New... >** .
+       Nell'elenco **scegliere un file di chiave con nome stringa** selezionare **\<New…>** .
 
-       Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro** .
+       Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**.
 
        Nel **nome del file di chiave**digitare TestKey.
 
@@ -163,7 +163,7 @@ In questa procedura dettagliata si analizza un progetto gestito per i difetti de
 
 - [CA2237: contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: aggiungere un attributo [Serializable] al tipo "demo" poiché questo tipo implementa ISerializable.
 
-  - Aggiungere l'attributo `[Serializable ()]` alla classe `demo`.
+  - Aggiungere l' `[Serializable ()]` attributo alla classe `demo` .
 
        Ricompilare il progetto.
 

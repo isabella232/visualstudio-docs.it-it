@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876047"
 ---
 # <a name="parallelforeach-activity-designer"></a>Activity Designer ParallelForEach
@@ -25,7 +25,7 @@ L' <xref:System.Activities.Statements.ParallelForEach%601> attività dispone di 
 
 ## <a name="the-parallelforeacht-activity"></a>Attività ActivityDesigner ParallelForEach<T \>
 
-<xref:System.Activities.Statements.ParallelForEach%601>Enumera i valori e pianifica l'oggetto <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> per ogni valore su cui viene enumerato. Esegue la pianificazione solo per l'elemento <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. La modalità di esecuzione del corpo varia a seconda che <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> diventi o meno inattivo.
+<xref:System.Activities.Statements.ParallelForEach%601> Enumera i valori e pianifica l'oggetto <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> per ogni valore su cui viene enumerato. Esegue la pianificazione solo per l'elemento <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. La modalità di esecuzione del corpo varia a seconda che <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> diventi o meno inattivo.
 
 Se <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> non diventa inattivo, viene eseguito in ordine inverso in quanto le attività pianificate vengono gestite come uno stack, con l'ultima attività pianificata eseguita per prima. Ad esempio, se si dispone di una raccolta di {1,2,3,4} in <xref:System.Activities.Statements.ParallelForEach%601> e si usa un oggetto **WriteLine** come corpo per scrivere il valore. Si dispone di 4, 3, 2, 1 stampato nella console. Questo perché **WriteLine** non viene inattivo, quindi dopo che sono state pianificate 4 attività **WriteLine** sono state eseguite utilizzando un comportamento dello stack (primo nell'ultimo).
 
@@ -51,7 +51,7 @@ Nella tabella seguente sono elencate le proprietà più utili dell'attività <xr
 
 Per impostazione predefinita, l'iteratore del ciclo è denominato item. È possibile modificare il nome della variabile iteratore nella casella **foreach** in **ActivityDesigner ParallelForEach \<T> ** Activity Designer. L'iteratore del ciclo può essere usato nelle espressioni contenute in elementi figlio dell'attività <xref:System.Activities.Statements.ParallelForEach%601>.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Sequenza](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

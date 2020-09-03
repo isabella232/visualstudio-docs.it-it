@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593603"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
@@ -31,17 +31,17 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 ## <a name="arguments"></a>Argomenti
 
-- *Solutionname*
+- *NomeSoluzione*
 
   Percorso completo e nome del file di soluzione.
 
-- *Projectname*
+- *Nome progetto*
 
   Percorso completo e nome del file di progetto.
 
-- `/Out`*OutputFilename*
+- `/Out`*OutputFileName*
 
-  Facoltativa. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
+  facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
 ## <a name="remarks"></a>Osservazioni
 

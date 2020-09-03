@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ecf86bdc7516f05935bd944f23633b3baad2c7c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663513"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
@@ -35,7 +35,7 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="arguments"></a>Argomenti
  `URL` Obbligatorio. URL (Uniform Resource Locator) per il sito Web.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /New facoltativo. Specifica che la pagina venga visualizzata in una nuova istanza del Web browser.
 
  /ext Facoltativo. Specifica che la pagina venga visualizzata nel Web browser predefinito all'esterno dell'IDE.

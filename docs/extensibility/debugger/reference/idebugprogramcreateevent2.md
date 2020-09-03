@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgramCreateEvent2 . Documenti Microsoft
+title: IDebugProgramCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 78088d6e5da61c32302c13b08143c9ed902452e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722637"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
-Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando un programma è collegato a.
+Questa interfaccia viene inviata dal motore di debug (DE) a gestione debug sessione (SDM) quando un programma è collegato a.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,18 +29,18 @@ IDebugProgramCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il DE o il fornitore della porta personalizzata implementa questa interfaccia per segnalare che un programma è stato creato, in genere nel momento in cui il programma è collegato. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata sullo stesso oggetto di questa interfaccia. Il protocollo SDM utilizza `QueryInterface` `IDebugEvent2` il metodo per accedere all'interfaccia.
+ Il fornitore DE o la porta personalizzata implementa questa interfaccia per segnalare che è stato creato un programma, in genere nel momento in cui il programma è collegato a. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM usa il `QueryInterface` metodo per accedere all' `IDebugEvent2` interfaccia.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il DE o il fornitore della porta personalizzata crea e invia questo oggetto evento per segnalare la creazione di un programma. Il DE invia questo evento utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) che viene fornita dal modello SDM quando collegato al programma in fase di debug. Il fornitore della porta personalizzata invia questo evento utilizzando il [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interfaccia.
+ Il fornitore della porta DE o Custom crea e invia questo oggetto evento per segnalare la creazione di un programma. Il DE Invia questo evento usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug. Il fornitore della porta personalizzata invia questo evento usando l'interfaccia [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) .
 
 ## <a name="remarks"></a>Osservazioni
- Il DE o il fornitore di porta personalizzata pubblica una nuova [interfaccia IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) chiamando [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
+ Il fornitore della porta DE o Custom pubblica una nuova interfaccia [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) chiamando [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -10,26 +10,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b44e30648e2be9bcf77ce6847ac88673e714d3be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72607007"
 ---
 # <a name="transaction-activity-designers"></a>ActivityDesigner Transazione
 Gli ActivityDesigner Transaction vengono usati per creare e configurare attività transazionali quali compensazione e conferma. Gli argomenti contenuti in questa sezione, ed elencati nella tabella seguente, forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner e dei modelli di progettazione in [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [ActivityDesigner CancellationScope t](../workflow-designer/cancellationscope-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.CancellationScope>.
+ [ActivityDesigner CancellationScope t](../workflow-designer/cancellationscope-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.CancellationScope> attività.
 
- [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.CompensableActivity>.
+ [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.CompensableActivity> attività.
 
- [Compensate](../workflow-designer/compensate-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Compensate>.
+ [Compensate](../workflow-designer/compensate-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.Compensate> attività.
 
- [Conferma](../workflow-designer/confirm-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Confirm>.
+ [Conferma](../workflow-designer/confirm-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.Confirm> attività.
 
- [TransactionScope](../workflow-designer/transactionscope-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.TransactionScope>.
+ [TransactionScope](../workflow-designer/transactionscope-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.TransactionScope> attività.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informazioni di riferimento
 
 ## <a name="related-sections"></a>Sezioni correlate

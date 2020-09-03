@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595800"
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
@@ -54,10 +54,10 @@ Quando si seleziona un membro figlio nel riquadro della visualizzazione struttur
 
 - Il riquadro dei dettagli **Gerarchia di chiamata** visualizza tutte le righe di codice in cui tale membro figlio viene chiamato dal membro padre.
 
-- Nella finestra **Definizione codice,** se aperta, viene visualizzato il codice per il membro selezionato (solo in C. Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
+- La finestra **definizione codice** , se aperta, Visualizza il codice per il membro selezionato (solo C++). Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> La funzionalità **Gerarchia** di chiamata non trova i riferimenti al gruppo di metodi, incluse le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.
+> La funzionalità **gerarchia di chiamata** non trova riferimenti ai gruppi di metodi, che includono le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.
 
 ## <a name="shortcut-menu-items"></a>Comandi del menu di scelta rapida
 

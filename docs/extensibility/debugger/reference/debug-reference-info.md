@@ -1,5 +1,5 @@
 ---
-title: proprietà DEBUG_REFERENCE_INFO . Documenti Microsoft
+title: DEBUG_REFERENCE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e31205f52151679f932877c9c4fdc56907ea59e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737409"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
@@ -51,12 +51,12 @@ public struct DEBUG_REFERENCE_INFO {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `dwFields`\
-Combinazione di flag dell'enumerazione [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica quali campi vengono compilati.
+Combinazione di flag dell'enumerazione [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) che specifica i campi che vengono compilati.
 
 `bstrName`\
-Nome specificato dall'utente dell'oggetto [IDebugReference2.](../../../extensibility/debugger/reference/idebugreference2.md)
+Nome dell'oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) specificato dall'utente.
 
 `bstrType`\
 Tipo di riferimento come stringa formattata.
@@ -74,12 +74,12 @@ Valore dell'enumerazione [REFERENCE_TYPE](../../../extensibility/debugger/refere
 Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che specifica le informazioni di riferimento.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene passata a una chiamata al [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) metodo da compilare. Questa struttura viene restituita anche come parte di un elenco dal [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) interfaccia che, a sua volta, viene restituito da una chiamata al [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) metodo.
+Questa struttura viene passata a una chiamata al metodo [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) da compilare. Questa struttura viene restituita anche come parte di un elenco dall'interfaccia [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) che, a sua volta, viene restituita da una chiamata al metodo [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

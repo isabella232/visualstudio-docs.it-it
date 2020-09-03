@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS . Documenti Microsoft
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737358"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
-Specifica le informazioni da recuperare su un campo di sassieme.
+Specifica le informazioni da recuperare su un campo Disassembly.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,60 +66,60 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Campi
 `DSF_ADDRESS`\
-Inizializzare/utilizzare `bstrAddress` il campo.
+Inizializzare/usare il `bstrAddress` campo.
 
 `DSF_ADDRESSOFFSET`\
-Inizializzare/utilizzare `bstrAddressOffset` il campo.
+Inizializzare/usare il `bstrAddressOffset` campo.
 
 `DSF_CODEBYTES`\
-Inizializzare/utilizzare `bstrCodeBytes` il campo.
+Inizializzare/usare il `bstrCodeBytes` campo.
 
 `DSF_OPCODE`\
-Inizializzare/utilizzare `bstrOpCode` il campo.
+Inizializzare/usare il `bstrOpCode` campo.
 
 `DSF_OPERANDS`\
-Inizializzare/utilizzare `bstrOperands` il campo.
+Inizializzare/usare il `bstrOperands` campo.
 
 `DSF_SYMBOL`\
-Inizializzare/utilizzare `bstrSymbol` il campo.
+Inizializzare/usare il `bstrSymbol` campo.
 
 `DSF_CODELOCATIONID`\
-Inizializzare/utilizzare `uCodeLocationId` il campo.
+Inizializzare/usare il `uCodeLocationId` campo.
 
 `DSF_POSITION`\
-Inizializzare/utilizzare `posBeg` `posEnd` i campi e .
+Inizializzare/usare `posBeg` i `posEnd` campi e.
 
 `DSF_DOCUMENTURL`\
-Inizializzare/utilizzare `bstrDocumentUrl` il campo.
+Inizializzare/usare il `bstrDocumentUrl` campo.
 
 `DSF_BYTEOFFSET`\
-Inizializzare/utilizzare `dwByteOffset` il campo.
+Inizializzare/usare il `dwByteOffset` campo.
 
 `DSF_FLAGS`\
-Inizializzare/utilizzare `dwFlags` il campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
+Inizializza/usa il `dwFlags` campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
-Includere i nomi `bstrOperands` dei simboli nel campo.
+Includere i nomi dei simboli nel `bstrOperands` campo.
 
 `DSF_ALL`\
-Specifica tutti i campi per il flusso di disassembly.
+Specifica tutti i campi per il flusso Disassembly.
 
 ## <a name="remarks"></a>Osservazioni
-Passato come parametro al metodo [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) per indicare i campi della struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) da inizializzare.
+Passato come parametro al metodo [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) per indicare quali campi della struttura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) devono essere inizializzati.
 
-Utilizzato per `dwFields` il `DisassemblyData` membro della struttura per indicare i campi utilizzati e validi quando viene restituita la struttura.
+Utilizzato per il `dwFields` membro della `DisassemblyData` struttura per indicare quali campi vengono utilizzati e validi quando viene restituita la struttura.
 
-Questi valori possono essere combinati `OR`con un oggetto .
+Questi valori possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
-- [Leggere](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+- [Lettura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

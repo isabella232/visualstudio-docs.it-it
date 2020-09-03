@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548421"
 ---
 # <a name="network-usage"></a>Utilizzo rete
@@ -58,7 +58,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 |-|-|  
 |**Intestazioni**|Informazioni sulle intestazioni della richiesta dell'evento.|  
 |**Corpo**|Dati relativi ai payload di richiesta e risposta.|  
-|**Parameters**|Nomi e valori dei parametri delle stringhe di query.|  
+|**Parametri**|Nomi e valori dei parametri delle stringhe di query.|  
 |**Cookie**|Dati relativi ai cookie di richiesta e risposta.|  
 |**Timings**|Grafico delle fasi di acquisizione delle risorse selezionate.|  
   

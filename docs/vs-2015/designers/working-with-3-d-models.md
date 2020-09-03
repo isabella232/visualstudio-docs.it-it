@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 555a9065e76d93a4c8dfbfc1acae30bfe4ea2a5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663955"
 ---
 # <a name="working-with-3-d-models"></a>Utilizzo dei modelli tridimensionali
@@ -32,5 +32,5 @@ ms.locfileid: "72663955"
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'Editor modello per lavorare con modelli 3D.|
-|[Esempi dell'editor di modello](../designers/model-editor-examples.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor modello per eseguire attività comuni di modellazione 3D.|
+|[Editor modelli](../designers/model-editor.md)|Descrive come usare l'Editor modello per lavorare con modelli 3D.|
+|[Esempi di editor di modelli](../designers/model-editor-examples.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor modello per eseguire attività comuni di modellazione 3D.|

@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a33c7cbaef473e75631bb4ac6c0d217198cbf250
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662091"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
@@ -40,11 +40,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 ```
 
 ## <a name="arguments"></a>Argomenti
- /Build compila il progetto specificato da `/project` `ProjName`.
+ /Build compila il progetto specificato da `/project` `ProjName` .
 
  /Clean pulisce tutti i file intermedi e le directory di output creati durante una compilazione.
 
- /Rebuild pulisce quindi compila il progetto specificato da `/project` `ProjName`.
+ /Rebuild pulisce quindi compila il progetto specificato da `/project` `ProjName` .
 
  /Deploy specifica che il progetto deve essere distribuito dopo una compilazione o una ricompilazione.
 
@@ -62,7 +62,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
 - Racchiudere le stringhe che includono spazi tra virgolette doppie.
 
-- Le informazioni di riepilogo per le compilazioni, compresi gli errori, vengono visualizzate nella finestra **Comando** o in qualsiasi file di log specificato con l'opzione `/out`.
+- Le informazioni di riepilogo sulle compilazioni, compresi gli errori, possono essere visualizzate nella finestra **Comando** o in qualsiasi file di log specificato con l'opzione `/out`.
 
 ## <a name="example"></a>Esempio
  Questo esempio compila il progetto `CSharpConsoleApp` usando la configurazione di compilazione del progetto `Debug` all'interno della configurazione della soluzione `Debug` di `MySolution`.
@@ -72,4 +72,4 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md) [/Project (devenv. exe)](../../ide/reference/project-devenv-exe.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md) [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/Deploy (devenv. exe)](../../ide/reference/deploy-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+ [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md) [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

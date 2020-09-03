@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596658"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
@@ -115,7 +115,7 @@ Assert (countAfter == countBefore = 1);
  In entrambi i casi è possibile stabilire una relazione tra gli elementi del modello e i test di sottosistema, in modo analogo all'operazione eseguita per stabilire una relazione tra il modello di requisiti e i test di sistema.
 
 ### <a name="isolate-components-with-provided-and-required-interfaces"></a>Isolare i componenti con interfacce fornite e richieste
- È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste. Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.
+ È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste.  Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.
 
  Un vantaggio costituito da questa separazione è la possibilità di eseguire il test del componente sostituendo i servizi usati generalmente con oggetti fittizi. Si tratta di componenti configurati a scopo di test. Un componente fittizio fornisce l'interfaccia richiesta dal componente, rispondendo alle query con dati simulati. I componenti fittizi fanno parte di un test harness completo che è possibile connettere a tutte le interfacce del componente.
 
@@ -128,10 +128,10 @@ Assert (countAfter == countBefore = 1);
 
  Da un punto di vista del test, un modello di requisiti può essere considerato un metodo abbreviato per i test. È quindi importante gestire la relazione tra i test e il modello in tutto il progetto.
 
-## <a name="Attaching"></a>Associazione di test case agli elementi del modello
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Associazione di test case agli elementi del modello
  Se il progetto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.
 
- È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:
+ È possibile collegare i test a tutti i tipi di elemento. Di seguito sono riportati alcuni esempi:
 
 - Collegare un caso di utilizzo ai test che ne eseguono la verifica.
 

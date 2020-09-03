@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f2d11e78c2402a6541bc87748ed6ba348ba80fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662327"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
@@ -33,7 +33,7 @@ ms.locfileid: "72662327"
 Usare questa finestra di dialogo per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti della documentazione XML per Visual C#. Per accedere a questa finestra di dialogo, fare clic su **Opzioni** nel menu **Strumenti**, spandere la cartella **Editor di testo**, espandere **C#** e quindi fare clic su **Avanzate**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="outlining"></a>struttura
  Attiva modalità struttura all'apertura dei file quando viene selezionata, descrive automaticamente il file di codice, che crea blocchi comprimibili di codice. Alla prima apertura di un file, i blocchi #regions e i blocchi di codice inattivi vengono compressi.
@@ -61,13 +61,13 @@ Usare questa finestra di dialogo per modificare le impostazioni di formattazione
  Avvisa in caso di membri con riferimenti generati dal compilatore Visualizza una finestra di dialogo di avviso quando si tenta di effettuare il refactoring di un membro con lo stesso nome di un riferimento generato dal compilatore.
 
 ## <a name="xml-documentation-comments"></a>Commenti relativi alla documentazione XML
- Genera commenti in formato documentazione XML per///se selezionato, inserisce i tag di inizio e di fine > automaticamente per \<summary i commenti relativi alla documentazione XML dopo aver digitato l'introduzione del commento. Per altre informazioni sulla documentazione XML, vedere [Commenti relativi alla documentazione XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).
+ Genera commenti in formato documentazione XML per///se selezionato, inserisce i \<summary> tag di inizio e di fine automaticamente per i commenti relativi alla documentazione XML dopo aver digitato l'introduzione del commento. Per altre informazioni sulla documentazione XML, vedere [Commenti relativi alla documentazione XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).
 
 ## <a name="implement-interface"></a>Implementa interfaccia
- Il codice generato da Racchiudi con #region inserisce una #region \<*nome dell'interfaccia*> membro attorno ai metodi quando viene usata l'interfaccia implementa interfaccia o implementa l'interfaccia in modo esplicito.
+ Il codice generato da Racchiudi con #region inserisce un \<*interface name*> membro #region intorno ai metodi quando si usa l'interfaccia implementa interfaccia o implementa interfaccia in modo esplicito.
 
 ## <a name="organize-usings"></a>Organizza using
- Inserire prima le direttive ' System ' durante l'ordinamento delle direttive using, `System` le direttive using vengono visualizzate prima delle altre direttive using. Per altre informazioni, vedere [Ordina using](../../misc/sort-usings.md).
+ Inserire prima le direttive ' System ' durante l'ordinamento delle direttive using quando è selezionato, le `System` direttive using vengono visualizzate prima delle altre direttive using. Per altre informazioni, vedere [Ordina using](../../misc/sort-usings.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Commenti relativi alla documentazione XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199) [impostazione delle opzioni dell'editor specifiche del linguaggio](../../ide/reference/setting-language-specific-editor-options.md) [ C# Visual IntelliSense](../../ide/visual-csharp-intellisense.md)
+ [Commenti relativi alla documentazione XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199) [impostazione delle opzioni dell'editor specifiche del linguaggio](../../ide/reference/setting-language-specific-editor-options.md) [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)

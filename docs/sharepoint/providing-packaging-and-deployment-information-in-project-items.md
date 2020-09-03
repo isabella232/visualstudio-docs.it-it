@@ -25,16 +25,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984211"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto
   Tutti gli elementi del progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispongono di proprietà che è possibile utilizzare per fornire dati aggiuntivi quando il progetto viene distribuito in SharePoint. Di seguito sono riportate le proprietà:
 
-- Proprietà funzionalità
+- Proprietà di funzionalità
 
 - Ricevitori di funzionalità
 
@@ -57,7 +57,7 @@ ms.locfileid: "72984211"
 
  I valori delle proprietà di funzionalità identici di tutti gli elementi del progetto vengono uniti nel manifesto della funzionalità. Tuttavia, se due elementi del progetto specificano la stessa chiave di proprietà della funzionalità con valori non corrispondenti, si verificherà un errore di convalida.
 
- Per aggiungere direttamente le proprietà della funzionalità al file di funzionalità ( *. feature*), chiamare il metodo del modello a oggetti di SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Se si utilizza questo metodo, tenere presente che la stessa regola sull'aggiunta di valori di proprietà di funzionalità identiche nelle proprietà della funzionalità si applica anche alle proprietà aggiunte direttamente al file di funzionalità.
+ Per aggiungere direttamente le proprietà della funzionalità al file di funzionalità (*. feature*), chiamare il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] metodo del modello a oggetti di SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A> . Se si utilizza questo metodo, tenere presente che la stessa regola sull'aggiunta di valori di proprietà di funzionalità identiche nelle proprietà della funzionalità si applica anche alle proprietà aggiunte direttamente al file di funzionalità.
 
 ## <a name="feature-receiver"></a>Ricevitore di funzionalità
  I ricevitori di funzionalità sono codice eseguito quando si verificano determinati eventi nella funzionalità che contiene un elemento di progetto. Ad esempio, è possibile definire i ricevitori di funzionalità che vengono eseguiti quando la funzionalità viene installata, attivata o aggiornata. Un modo per aggiungere un ricevitore di funzionalità consiste nell'aggiungerlo direttamente a una funzionalità, come descritto in [procedura dettagliata: aggiungere ricevitori di eventi di funzionalità](../sharepoint/walkthrough-add-feature-event-receivers.md). Un altro modo consiste nel fare riferimento a un nome della classe del ricevitore di funzionalità e a un assembly nella proprietà **Receiver feature** .
@@ -70,7 +70,7 @@ ms.locfileid: "72984211"
 
  Al momento della compilazione della soluzione, i valori delle proprietà del ricevitore di funzionalità nella funzionalità e i relativi progetti si uniscono per impostare gli attributi ReceiverAssembly e ReceiverClass dell'elemento Feature nel manifesto della funzionalità del file della soluzione SharePoint (con*estensione wsp*). Pertanto, se i valori delle proprietà assembly e nome classe di un elemento di progetto e di una funzionalità sono entrambi specificati, i valori delle proprietà elemento progetto e funzionalità devono corrispondere. Se i valori non corrispondono, verrà visualizzato un errore di convalida. Se si vuole che un elemento del progetto faccia riferimento a un assembly del ricevitore di funzionalità diverso da quello usato dalla funzionalità, spostarlo in un'altra funzionalità.
 
- Se si fa riferimento a un assembly del ricevitore di funzionalità che non è già presente nel server, è necessario includere anche il file di assembly nel pacchetto. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non lo aggiunge. Quando si distribuisce la funzionalità, il file di assembly viene copiato nel [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] del sistema o nella cartella bin nella directory fisica di SharePoint. Per altre informazioni, vedere Procedura: [aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+ Se si fa riferimento a un assembly del ricevitore di funzionalità che non è già presente nel server, è necessario includere anche il file di assembly nel pacchetto. non [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] lo aggiunge. Quando si distribuisce la funzionalità, il file di assembly viene copiato [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] nella cartella del sistema o nella cartella bin nella directory fisica di SharePoint. Per altre informazioni, vedere Procedura: [aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
  Per ulteriori informazioni sui ricevitori di funzionalità, vedere [funzionalità di ricevitore di eventi](/previous-versions/office/developer/sharepoint-2007/bb862634(v=office.12)) e eventi di [funzionalità](/previous-versions/office/developer/sharepoint-2010/ms469501(v=office.14)).
 
