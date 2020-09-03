@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1b1a54d8be5ab4aa9703d318d0b537deff53b6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652875"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
@@ -38,11 +38,11 @@ ms.locfileid: "72652875"
 
 Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è consigliabile salvare di nuovo le modifiche nel database. Questa operazione viene eseguita in uno dei tre modi seguenti:
 
-- Chiamando uno dei metodi `Update` di un TableAdapter
+- Chiamando uno dei `Update` metodi di un TableAdapter
 
 - Chiamando uno dei metodi DBDirect del TableAdapter
 
-- Chiamando il metodo UpdateAll sul `TableAdapterManager` generato automaticamente da Visual Studio quando il set di dati contiene tabelle correlate ad altre tabelle nel set di dati
+- Chiamando il metodo UpdateAll sull'oggetto `TableAdapterManager` generato da Visual Studio quando il set di dati contiene tabelle correlate ad altre tabelle nel set di dati
 
   Quando si associano le tabelle del set di dati ai controlli in una pagina di Windows Form o XAML, l'architettura data binding esegue tutte le operazioni.
 
@@ -73,21 +73,21 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 ## <a name="merge-datasets"></a>Unisci set di impostazioni
  È possibile aggiornare il contenuto di un *set di dati unendolo* a un altro set di dati. Ciò comporta la copia del contenuto di un set di dati di *origine* nel set di dati chiamante (denominato set di dati di *destinazione* ). Quando si uniscono i set di dati, i nuovi record nel set di dati di origine vengono aggiunti al set di dati di destinazione. Inoltre, le colonne aggiuntive nel set di dati di origine vengono aggiunte al set di dati di destinazione. L'Unione dei set di dati è utile quando si dispone di un set di dati locale e si ottiene un secondo set di dati da un'altra applicazione. È utile anche quando si ottiene un secondo set di dati da un componente, ad esempio un servizio Web XML, o quando è necessario integrare dati da più set di dati.
 
- Quando si uniscono set di dati, è possibile passare un argomento booleano (`preserveChanges`) che indica al metodo <xref:System.Data.DataSet.Merge%2A> se mantenere le modifiche esistenti nel set di dati di destinazione. Poiché i set di dati gestiscono più versioni dei record, è importante tenere presente che è in corso il merge di più di una versione dei record. La tabella seguente illustra come viene eseguito il merge di un record in due set di dati:
+ Quando si uniscono set di dati, è possibile passare un argomento booleano ( `preserveChanges` ) che indica al <xref:System.Data.DataSet.Merge%2A> metodo se mantenere le modifiche esistenti nel set di dati di destinazione. Poiché i set di dati gestiscono più versioni dei record, è importante tenere presente che è in corso il merge di più di una versione dei record. La tabella seguente illustra come viene eseguito il merge di un record in due set di dati:
 
 |DataRowVersion|DataSet di destinazione|Set di dati di origine|
 |--------------------|--------------------|--------------------|
 |Originale|James Wilson|James C. Wilson|
 |Corrente|Jim Wilson|James C. Wilson|
 
- La chiamata del metodo <xref:System.Data.DataSet.Merge%2A> nella tabella precedente con `preserveChanges=false targetDataset.Merge(sourceDataset)` comporta quanto segue:
+ Chiamando il <xref:System.Data.DataSet.Merge%2A> metodo nella tabella precedente con i `preserveChanges=false targetDataset.Merge(sourceDataset)` risultati seguenti:
 
 |DataRowVersion|DataSet di destinazione|Set di dati di origine|
 |--------------------|--------------------|--------------------|
 |Originale|James C. Wilson|James C. Wilson|
 |Corrente|James C. Wilson|James C. Wilson|
 
- La chiamata del metodo <xref:System.Data.DataSet.Merge%2A> con `preserveChanges = true targetDataset.Merge(sourceDataset, true)` comporta quanto segue:
+ La chiamata al <xref:System.Data.DataSet.Merge%2A> metodo con `preserveChanges = true targetDataset.Merge(sourceDataset, true)` produce i risultati seguenti:
 
 |DataRowVersion|DataSet di destinazione|Set di dati di origine|
 |--------------------|--------------------|--------------------|
@@ -95,12 +95,12 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 |Corrente|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
-> Nello scenario `preserveChanges = true`, se il metodo <xref:System.Data.DataSet.RejectChanges%2A> viene chiamato su un record nel set di dati di destinazione, viene ripristinato il valore originale del set di dati di *origine* . Ciò significa che se si tenta di aggiornare l'origine dati originale con il set di dati di destinazione, potrebbe non essere possibile trovare la riga originale da aggiornare. È possibile impedire una violazione della concorrenza compilando un altro set di dati con i record aggiornati dall'origine dati e quindi eseguendo un'operazione di merge per impedire una violazione della concorrenza. Una violazione della concorrenza si verifica quando un altro utente modifica un record nell'origine dati dopo che il set di dati è stato compilato.
+> Nello `preserveChanges = true` scenario, se il <xref:System.Data.DataSet.RejectChanges%2A> metodo viene chiamato su un record nel set di dati di destinazione, viene ripristinato il valore originale del set di dati di *origine* . Ciò significa che se si tenta di aggiornare l'origine dati originale con il set di dati di destinazione, potrebbe non essere possibile trovare la riga originale da aggiornare. È possibile impedire una violazione della concorrenza compilando un altro set di dati con i record aggiornati dall'origine dati e quindi eseguendo un'operazione di merge per impedire una violazione della concorrenza. Una violazione della concorrenza si verifica quando un altro utente modifica un record nell'origine dati dopo che il set di dati è stato compilato.
 
 ## <a name="update-constraints"></a>Aggiornare i vincoli
  Per apportare modifiche a una riga di dati esistente, aggiungere o aggiornare i dati nelle singole colonne. Se il set di dati contiene vincoli, ad esempio chiavi esterne o vincoli non nullable, è possibile che il record possa essere temporaneamente in uno stato di errore durante l'aggiornamento. In altre termini, può trovarsi in uno stato di errore dopo aver completato l'aggiornamento di una colonna, ma prima di raggiungere quella successiva.
 
- Per evitare violazioni dei vincoli prematuri, è possibile sospendere temporaneamente i vincoli di aggiornamento. Questa operazione ha due scopi:
+ Per evitare violazioni dei vincoli prematuri, è possibile sospendere temporaneamente i vincoli di aggiornamento. Tale differenza viene usata per due scopi:
 
 - Evita che venga generato un errore dopo aver completato l'aggiornamento di una colonna, ma non aver iniziato ad aggiornarne un altro.
 
@@ -109,9 +109,9 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
   Al termine di un aggiornamento, è possibile riabilitare il controllo dei vincoli, che riabilita anche gli eventi di aggiornamento e li genera.
 
 > [!NOTE]
-> In Windows Forms, l'architettura data binding incorporata nel DataGrid sospende il controllo dei vincoli fino a quando lo stato attivo viene spostato fuori da una riga e non è necessario chiamare in modo esplicito i metodi <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> o <xref:System.Data.DataRow.CancelEdit%2A>.
+> In Windows Forms, l'architettura data binding incorporata nel DataGrid sospende il controllo dei vincoli fino a quando lo stato attivo non viene spostato in una riga e non è necessario chiamare in modo esplicito i <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataRow.EndEdit%2A> metodi, o <xref:System.Data.DataRow.CancelEdit%2A> .
 
- I vincoli vengono disabilitati automaticamente quando viene richiamato il metodo <xref:System.Data.DataSet.Merge%2A> su un set di dati. Al termine dell'Unione, se nel set di dati sono presenti vincoli che non possono essere abilitati, viene generata un'<xref:System.Data.ConstraintException>. In questa situazione, la proprietà <xref:System.Data.DataSet.EnforceConstraints%2A> è impostata su `false,` e tutte le violazioni dei vincoli devono essere risolte prima di reimpostare la proprietà <xref:System.Data.DataSet.EnforceConstraints%2A> su `true`.
+ I vincoli vengono disabilitati automaticamente quando il <xref:System.Data.DataSet.Merge%2A> metodo viene richiamato su un set di dati. Al termine dell'Unione, se nel set di dati sono presenti vincoli che non possono essere abilitati, <xref:System.Data.ConstraintException> viene generata un'eccezione. In questa situazione, la <xref:System.Data.DataSet.EnforceConstraints%2A> proprietà viene impostata su `false,` e tutte le violazioni dei vincoli devono essere risolte prima di reimpostare la <xref:System.Data.DataSet.EnforceConstraints%2A> proprietà su `true` .
 
  Al termine di un aggiornamento, è possibile riabilitare il controllo dei vincoli, che riabilita anche gli eventi di aggiornamento e li genera.
 
@@ -121,32 +121,32 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
  Quando si aggiorna un record in un set di dati, è possibile che si verifichi un errore. È possibile, ad esempio, scrivere inavvertitamente dati di tipo errato in una colonna o dati troppo lunghi oppure dati con un altro problema di integrità. In alternativa, potrebbero essere presenti controlli di convalida specifici dell'applicazione che possono generare errori personalizzati durante qualsiasi fase di un evento di aggiornamento. Per altre informazioni, vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md).
 
 ## <a name="maintaining-information-about-changes"></a>Gestione delle informazioni sulle modifiche
- Le informazioni sulle modifiche apportate a un set di dati vengono mantenute in due modi: contrassegnando le righe che indicano che sono state modificate (<xref:System.Data.DataRow.RowState%2A>) e mantenendo più copie di un record (<xref:System.Data.DataRowVersion>). Utilizzando queste informazioni, i processi possono determinare le modifiche apportate al set di dati e possono inviare aggiornamenti appropriati all'origine dati.
+ Le informazioni sulle modifiche apportate a un set di dati vengono mantenute in due modi: contrassegnando le righe che indicano che sono state modificate ( <xref:System.Data.DataRow.RowState%2A> ) e mantenendo più copie di un record ( <xref:System.Data.DataRowVersion> ). Utilizzando queste informazioni, i processi possono determinare le modifiche apportate al set di dati e possono inviare aggiornamenti appropriati all'origine dati.
 
 ### <a name="rowstate-property"></a>RowState (proprietà)
- La proprietà <xref:System.Data.DataRow.RowState%2A> di un oggetto <xref:System.Data.DataRow> è un valore che fornisce informazioni sullo stato di una particolare riga di dati.
+ La <xref:System.Data.DataRow.RowState%2A> proprietà di un <xref:System.Data.DataRow> oggetto è un valore che fornisce informazioni sullo stato di una particolare riga di dati.
 
- Nella tabella seguente vengono illustrati i valori possibili dell'enumerazione <xref:System.Data.DataRowState>:
+ Nella tabella seguente vengono illustrati in dettaglio i possibili valori dell' <xref:System.Data.DataRowState> enumerazione:
 
 |Valore DataRowState|Descrizione|
 |------------------------|-----------------|
-|<xref:System.Data.DataRowState>|La riga è stata aggiunta come elemento a un <xref:System.Data.DataRowCollection>. Una riga in questo stato non ha una versione originale corrispondente perché non esisteva al momento della chiamata dell'ultimo <xref:System.Data.DataRow.AcceptChanges%2A> metodo).|
-|<xref:System.Data.DataRowState>|La riga è stata eliminata utilizzando la <xref:System.Data.DataRow.Delete%2A> di un oggetto <xref:System.Data.DataRow>.|
-|<xref:System.Data.DataRowState>|La riga è stata creata ma non fa parte di alcun <xref:System.Data.DataRowCollection>. Un oggetto <xref:System.Data.DataRow> si trova in questo stato subito dopo che è stato creato, prima che sia stato aggiunto a una raccolta e dopo che è stato rimosso da una raccolta.|
+|<xref:System.Data.DataRowState>|La riga è stata aggiunta come elemento a un <xref:System.Data.DataRowCollection> . Una riga in questo stato non ha una versione originale corrispondente perché non esisteva al momento della chiamata dell'ultimo <xref:System.Data.DataRow.AcceptChanges%2A> metodo.|
+|<xref:System.Data.DataRowState>|La riga è stata eliminata utilizzando l' <xref:System.Data.DataRow.Delete%2A> oggetto di un <xref:System.Data.DataRow> oggetto.|
+|<xref:System.Data.DataRowState>|La riga è stata creata ma non fa parte di alcun insieme <xref:System.Data.DataRowCollection>. Un <xref:System.Data.DataRow> oggetto si trova in questo stato subito dopo la creazione, prima che sia stato aggiunto a una raccolta e dopo che è stato rimosso da una raccolta.|
 |<xref:System.Data.DataRowState>|Un valore di colonna nella riga è stato modificato in qualche modo.|
-|<xref:System.Data.DataRowState>|La riga non è stata modificata dall'ultima chiamata a <xref:System.Data.DataRow.AcceptChanges%2A>.|
+|<xref:System.Data.DataRowState>|La riga non è stata modificata dal momento dell'ultima chiamata del metodo <xref:System.Data.DataRow.AcceptChanges%2A>.|
 
 ### <a name="datarowversion-enumeration"></a>DataRowVersion (enumerazione)
- I set di dati gestiscono più versioni di record. L'enumerazione <xref:System.Data.DataRowVersion> di un oggetto <xref:System.Data.DataRow> è un valore che può essere utilizzato per restituire una versione specifica di un oggetto <xref:System.Data.DataRow>.
+ I set di dati gestiscono più versioni di record. L' <xref:System.Data.DataRowVersion> enumerazione di un <xref:System.Data.DataRow> oggetto è un valore che può essere utilizzato per restituire una versione specifica di un <xref:System.Data.DataRow> oggetto.
 
- Nella tabella seguente vengono illustrati i valori possibili dell'enumerazione <xref:System.Data.DataRowVersion>:
+ Nella tabella seguente vengono illustrati in dettaglio i possibili valori dell' <xref:System.Data.DataRowVersion> enumerazione:
 
 |Valore di DataRowVersion|Descrizione|
 |--------------------------|-----------------|
-|<xref:System.Data.DataRowVersion>|La versione corrente di un record contiene tutte le modifiche apportate al record dall'ultima volta in cui è stato chiamato <xref:System.Data.DataRow.AcceptChanges%2A>. Se la riga è stata eliminata, non esiste alcuna versione corrente.|
+|<xref:System.Data.DataRowVersion>|La versione corrente di un record contiene tutte le modifiche apportate al record dopo la chiamata dell'ultima volta <xref:System.Data.DataRow.AcceptChanges%2A> . Se la riga è stata eliminata, non esiste alcuna versione corrente.|
 |<xref:System.Data.DataRowVersion>|Il valore predefinito di un record, come definito dallo schema del set di dati o dall'origine dati.|
 |<xref:System.Data.DataRowVersion>|La versione originale di un record è una copia del record, perché è stata completata l'ultima volta in cui è stato eseguito il commit delle modifiche nel set di dati. In pratica, si tratta in genere della versione di un record come letto da un'origine dati.|
-|<xref:System.Data.DataRowVersion>|Versione proposta di un record disponibile temporaneamente durante l'aggiornamento, ovvero tra il momento in cui è stato chiamato il metodo <xref:System.Data.DataRow.BeginEdit%2A> e il metodo <xref:System.Data.DataRow.EndEdit%2A>. In genere si accede alla versione proposta di un record in un gestore per un evento, ad esempio <xref:System.Data.DataTable.RowChanging>. Richiamando il metodo <xref:System.Data.DataRow.CancelEdit%2A> vengono invertite le modifiche ed eliminata la versione proposta della riga di dati.|
+|<xref:System.Data.DataRowVersion>|Versione proposta di un record disponibile temporaneamente durante l'aggiornamento, ovvero tra il momento in cui è stato chiamato il <xref:System.Data.DataRow.BeginEdit%2A> metodo e il <xref:System.Data.DataRow.EndEdit%2A> metodo. In genere si accede alla versione proposta di un record in un gestore per un evento, ad esempio <xref:System.Data.DataTable.RowChanging> . La chiamata al <xref:System.Data.DataRow.CancelEdit%2A> metodo inverte le modifiche ed elimina la versione proposta della riga di dati.|
 
  Le versioni originale e corrente sono utili quando le informazioni sugli aggiornamenti vengono trasmesse a un'origine dati. In genere, quando un aggiornamento viene inviato all'origine dati, le nuove informazioni per il database sono nella versione corrente di un record. Le informazioni della versione originale vengono usate per individuare il record da aggiornare.
 
@@ -154,21 +154,21 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 
  La versione proposta è utile quando è necessario eseguire la convalida prima di eseguire effettivamente il commit delle modifiche nel set di dati.
 
- Anche se i record sono stati modificati, non sono sempre presenti versioni originali o correnti di tale riga. Quando si inserisce una nuova riga nella tabella, non esiste una versione originale, bensì solo una versione corrente. Analogamente, se si elimina una riga chiamando il metodo `Delete` della tabella, esiste una versione originale, ma nessuna versione corrente.
+ Anche se i record sono stati modificati, non sono sempre presenti versioni originali o correnti di tale riga. Quando si inserisce una nuova riga nella tabella, non esiste una versione originale, bensì solo una versione corrente. Analogamente, se si elimina una riga chiamando il metodo della tabella `Delete` , esiste una versione originale, ma nessuna versione corrente.
 
- Per verificare se esiste una versione specifica di un record, è possibile eseguire una query sul metodo <xref:System.Data.DataRow.HasVersion%2A> della riga di dati. È possibile accedere a entrambe le versioni di un record passando un <xref:System.Data.DataRowVersion> valore di enumerazione come argomento facoltativo quando si richiede il valore di una colonna.
+ È possibile testare per verificare se esiste una versione specifica di un record eseguendo una query sul metodo di una riga di dati <xref:System.Data.DataRow.HasVersion%2A> . È possibile accedere a entrambe le versioni di un record passando un <xref:System.Data.DataRowVersion> valore di enumerazione come argomento facoltativo quando si richiede il valore di una colonna.
 
 ## <a name="getting-changed-records"></a>Recupero di record modificati
- È prassi comune non aggiornare ogni record in un set di dati. È ad esempio possibile che un utente stia utilizzando un Windows Forms controllo <xref:System.Windows.Forms.DataGridView> che visualizza molti record. Tuttavia, l'utente potrebbe aggiornare solo alcuni record, eliminarne uno e inserirne uno nuovo. I set di dati e le tabelle di dati forniscono un metodo (`GetChanges`) per restituire solo le righe che sono state modificate.
+ È prassi comune non aggiornare ogni record in un set di dati. Un utente potrebbe, ad esempio, utilizzare un controllo Windows Forms <xref:System.Windows.Forms.DataGridView> che visualizza molti record. Tuttavia, l'utente potrebbe aggiornare solo alcuni record, eliminarne uno e inserirne uno nuovo. I set di dati e le tabelle di dati forniscono un metodo ( `GetChanges` ) per restituire solo le righe che sono state modificate.
 
- È possibile creare subset di record modificati usando il metodo `GetChanges` della tabella dati (<xref:System.Data.DataTable.GetChanges%2A>) o del set di dati (<xref:System.Data.DataSet.GetChanges%2A>). Se si chiama il metodo per la tabella dati, viene restituita una copia della tabella con solo i record modificati. Analogamente, se si chiama il metodo sul set di dati, si ottiene un nuovo set di dati con solo i record modificati al suo interno.
+ È possibile creare subset di record modificati usando il `GetChanges` metodo della tabella dati ( <xref:System.Data.DataTable.GetChanges%2A> ) o del set di dati ( <xref:System.Data.DataSet.GetChanges%2A> ). Se si chiama il metodo per la tabella dati, viene restituita una copia della tabella con solo i record modificati. Analogamente, se si chiama il metodo sul set di dati, si ottiene un nuovo set di dati con solo i record modificati al suo interno.
 
- `GetChanges` da solo restituisce tutti i record modificati. Al contrario, passando il <xref:System.Data.DataRowState> desiderato come parametro al metodo `GetChanges`, è possibile specificare quale subset di record modificati si desidera: i record appena aggiunti, i record contrassegnati per l'eliminazione, i record scollegati o i record modificati.
+ `GetChanges` Restituisce tutti i record modificati. Al contrario, passando l'oggetto desiderato <xref:System.Data.DataRowState> come parametro al `GetChanges` metodo, è possibile specificare quale subset di record modificati si desidera: i record appena aggiunti, i record contrassegnati per l'eliminazione, i record scollegati o i record modificati.
 
  Ottenere un subset di record modificati è utile quando si desidera inviare record a un altro componente per l'elaborazione. Anziché inviare l'intero set di dati, è possibile ridurre l'overhead di comunicazione con l'altro componente ottenendo solo i record necessari per il componente. Per altre informazioni, vedere [procedura: recuperare le righe modificate](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).
 
 ## <a name="committing-changes-in-the-dataset"></a>Commit delle modifiche nel set di dati
- Quando vengono apportate modifiche nel set di dati, viene impostata la proprietà <xref:System.Data.DataRow.RowState%2A> delle righe modificate. Le versioni originale e corrente dei record vengono stabilite, gestite e rese disponibili dalla proprietà <xref:System.Data.DataRowView.RowVersion%2A>. I metadati archiviati nelle proprietà di queste righe modificate sono necessari per l'invio degli aggiornamenti corretti all'origine dati.
+ Quando vengono apportate modifiche nel set di dati, <xref:System.Data.DataRow.RowState%2A> viene impostata la proprietà delle righe modificate. Le versioni originale e corrente dei record vengono stabilite, gestite e rese disponibili dalla <xref:System.Data.DataRowView.RowVersion%2A> Proprietà. I metadati archiviati nelle proprietà di queste righe modificate sono necessari per l'invio degli aggiornamenti corretti all'origine dati.
 
  Se le modifiche riflettono lo stato corrente dell'origine dati, non è più necessario gestire queste informazioni. In genere, esistono due volte quando il set di dati e la relativa origine sono sincronizzati:
 
@@ -176,12 +176,12 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 
 - Dopo aver inviato le modifiche dal set di dati all'origine dati, ma non prima, poiché si perderanno le informazioni sulle modifiche necessarie per inviare le modifiche al database.
 
-  È possibile eseguire il commit delle modifiche in sospeso nel DataSet chiamando il metodo <xref:System.Data.DataSet.AcceptChanges%2A>. In genere, <xref:System.Data.DataSet.AcceptChanges%2A> viene chiamato durante i momenti seguenti nell'applicazione.
+  È possibile eseguire il commit delle modifiche in sospeso nel DataSet chiamando il <xref:System.Data.DataSet.AcceptChanges%2A> metodo. In genere, <xref:System.Data.DataSet.AcceptChanges%2A> viene chiamato durante i momenti seguenti nell'applicazione.
 
-- Dopo aver caricato il set di dati. Se si carica un set di dati chiamando il metodo `Fill` di un TableAdapter, l'adapter esegue automaticamente il commit delle modifiche. Tuttavia, se si carica un set di dati unendovi un altro set di dati, è necessario eseguire manualmente il commit delle modifiche.
+- Dopo aver caricato il set di dati. Se si carica un set di dati chiamando il metodo di un TableAdapter `Fill` , l'adapter esegue automaticamente il commit delle modifiche. Tuttavia, se si carica un set di dati unendovi un altro set di dati, è necessario eseguire manualmente il commit delle modifiche.
 
   > [!NOTE]
-  > È possibile impedire all'adapter di eseguire automaticamente il commit delle modifiche quando si chiama il metodo `Fill` impostando la proprietà `AcceptChangesDuringFill` dell'adapter su `false`. Se è impostato su `false`, il <xref:System.Data.DataRow.RowState%2A> di ogni riga inserita durante il riempimento viene impostato su <xref:System.Data.DataRowState>.
+  > È possibile impedire all'adapter di eseguire automaticamente il commit delle modifiche quando si chiama il metodo impostando `Fill` la `AcceptChangesDuringFill` proprietà dell'adapter su `false` . Se è impostato su `false` , l'oggetto <xref:System.Data.DataRow.RowState%2A> di ogni riga inserita durante il riempimento è impostato su <xref:System.Data.DataRowState> .
 
 - Dopo l'invio delle modifiche apportate al set di dati a un altro processo, ad esempio un servizio Web XML.
 
@@ -190,13 +190,13 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 
   Questo metodo consente di eseguire le operazioni seguenti:
 
-- Scrive la versione <xref:System.Data.DataRowVersion> di un record nella relativa versione <xref:System.Data.DataRowVersion> e sovrascrive la versione originale.
+- Scrive la versione <xref:System.Data.DataRowVersion> di un record nella relativa <xref:System.Data.DataRowVersion> versione e sovrascrive la versione originale.
 
-- Rimuove tutte le righe in cui la proprietà <xref:System.Data.DataRow.RowState%2A> è impostata su <xref:System.Data.DataRowState>.
+- Rimuove tutte le righe in cui la <xref:System.Data.DataRow.RowState%2A> proprietà è impostata su <xref:System.Data.DataRowState> .
 
-- Imposta la proprietà <xref:System.Data.DataRow.RowState%2A> di un record su <xref:System.Data.DataRowState>.
+- Imposta la <xref:System.Data.DataRow.RowState%2A> proprietà di un record su <xref:System.Data.DataRowState> .
 
-  Il metodo <xref:System.Data.DataSet.AcceptChanges%2A> è disponibile a tre livelli. È possibile chiamarlo su un oggetto <xref:System.Data.DataRow> per eseguire il commit delle modifiche solo per tale riga. È inoltre possibile chiamarlo su un oggetto <xref:System.Data.DataTable> per eseguire il commit di tutte le righe di una tabella. Infine, è possibile chiamarlo sull'oggetto <xref:System.Data.DataSet> per eseguire il commit di tutte le modifiche in sospeso in tutti i record di tutte le tabelle del set di dati.
+  Il <xref:System.Data.DataSet.AcceptChanges%2A> metodo è disponibile a tre livelli. È possibile chiamarlo su un <xref:System.Data.DataRow> oggetto per eseguire il commit delle modifiche solo per tale riga. È inoltre possibile chiamarlo su un <xref:System.Data.DataTable> oggetto per eseguire il commit di tutte le righe di una tabella. Infine, è possibile chiamarlo sull' <xref:System.Data.DataSet> oggetto per eseguire il commit di tutte le modifiche in sospeso in tutti i record di tutte le tabelle del set di dati.
 
   Nella tabella seguente vengono descritte le modifiche di cui viene eseguito il commit in base all'oggetto su cui viene chiamato il metodo.
 
@@ -207,12 +207,12 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Viene eseguito il commit delle modifiche in tutte le righe di tutte le tabelle del set di dati.|
 
 > [!NOTE]
-> Se si carica un set di dati chiamando il metodo `Fill` di un TableAdapter, non è necessario accettare in modo esplicito le modifiche. Per impostazione predefinita, il metodo `Fill` chiama il metodo `AcceptChanges` dopo aver completato il popolamento della tabella di dati.
+> Se si carica un set di dati chiamando il metodo di un TableAdapter `Fill` , non è necessario accettare in modo esplicito le modifiche. Per impostazione predefinita, il `Fill` metodo chiama il `AcceptChanges` metodo dopo aver completato il popolamento della tabella di dati.
 
- Un metodo correlato, `RejectChanges`, Annulla l'effetto delle modifiche copiando di nuovo la versione di <xref:System.Data.DataRowVersion> nella versione <xref:System.Data.DataRowVersion> dei record. Imposta anche il <xref:System.Data.DataRow.RowState%2A> di ogni record su <xref:System.Data.DataRowState>.
+ Un metodo correlato, `RejectChanges` , Annulla l'effetto delle modifiche copiando <xref:System.Data.DataRowVersion> nuovamente la versione nella <xref:System.Data.DataRowVersion> versione dei record. Viene inoltre impostato il <xref:System.Data.DataRow.RowState%2A> di ogni record di nuovo su <xref:System.Data.DataRowState> .
 
 ## <a name="data-validation"></a>Convalida dei dati
- Per verificare che i dati nell'applicazione soddisfino i requisiti dei processi a cui viene passato, è spesso necessario aggiungere la convalida. Questo potrebbe comportare la verifica della correttezza di una voce utente in un modulo, la convalida dei dati inviati all'applicazione da un'altra applicazione o anche il controllo delle informazioni calcolate all'interno del componente entro i vincoli dell'origine dati e requisiti dell'applicazione.
+ Per verificare che i dati nell'applicazione soddisfino i requisiti dei processi a cui viene passato, è spesso necessario aggiungere la convalida. Questo potrebbe comportare la verifica della correttezza di una voce utente in un modulo, la convalida dei dati inviati all'applicazione da un'altra applicazione o anche il controllo delle informazioni calcolate all'interno del componente entro i limiti dell'origine dati e dei requisiti dell'applicazione.
 
  È possibile convalidare i dati in diversi modi:
 
@@ -223,9 +223,9 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 - Nel back-end dei dati, inviando i dati all'origine dati, ad esempio il database, e consentendogli di accettare o rifiutare i dati. Se si utilizza un database con funzionalità sofisticate per la convalida dei dati e la fornitura di informazioni sugli errori, questo approccio può essere pratico perché è possibile convalidare i dati indipendentemente da dove provengono. Tuttavia, questo approccio potrebbe non soddisfare i requisiti di convalida specifici dell'applicazione. Inoltre, la convalida dei dati da parte dell'origine dati può causare numerosi round trip all'origine dati, a seconda del modo in cui l'applicazione facilita la risoluzione degli errori di convalida generati dal back-end.
 
   > [!IMPORTANT]
-  > Quando si usano i comandi dati con una proprietà <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> impostata su <xref:System.Data.CommandType>, controllare attentamente le informazioni inviate da un client prima di passarle al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire l'input dell'utente in un database, verificare sempre che le informazioni siano valide. Quando possibile, è consigliabile utilizzare sempre query con parametri o stored procedure. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
+  > Quando si usano i comandi dati con una <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà impostata su <xref:System.Data.CommandType> , controllare attentamente le informazioni inviate da un client prima di passarle al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire l'input dell'utente in un database, verificare sempre che le informazioni siano valide. Quando possibile, è consigliabile utilizzare sempre query con parametri o stored procedure. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
 
-  Dopo aver apportato le modifiche in un set di dati, è possibile trasmettere le modifiche a un'origine dati. In genere, questa operazione viene eseguita chiamando il metodo `Update` di un TableAdapter (o adattatore dati). Il metodo esegue il ciclo di ogni record in una tabella di dati, determina il tipo di aggiornamento necessario (Update, INSERT o DELETE), se presente, e quindi esegue il comando appropriato.
+  Dopo aver apportato le modifiche in un set di dati, è possibile trasmettere le modifiche a un'origine dati. In genere, questa operazione viene eseguita chiamando il `Update` metodo di un TableAdapter (o adattatore dati). Il metodo esegue il ciclo di ogni record in una tabella di dati, determina il tipo di aggiornamento necessario (Update, INSERT o DELETE), se presente, e quindi esegue il comando appropriato.
 
 ## <a name="transmitting-updates-to-the-data-source"></a>Trasmissione di aggiornamenti all'origine dati
  Come illustrazione del modo in cui vengono eseguiti gli aggiornamenti, si supponga che l'applicazione utilizzi un set di dati che contiene una singola tabella di dati. L'applicazione recupera due righe dal database. Dopo il recupero, la tabella di dati in memoria è simile alla seguente:
@@ -236,7 +236,7 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 (Unchanged)    c400         Nancy Buchanan    Pending
 ```
 
- L'applicazione cambia lo stato di Nancy Buchanan in "preferito". In seguito a questa modifica, il valore della proprietà <xref:System.Data.DataRow.RowState%2A> per tale riga cambia da <xref:System.Data.DataRowState> a <xref:System.Data.DataRowState>. Il valore della proprietà <xref:System.Data.DataRow.RowState%2A> per la prima riga rimane <xref:System.Data.DataRowState>. La tabella dati ha ora un aspetto simile al seguente:
+ L'applicazione cambia lo stato di Nancy Buchanan in "preferito". In seguito a questa modifica, il valore della <xref:System.Data.DataRow.RowState%2A> proprietà per tale riga viene modificato da <xref:System.Data.DataRowState> a <xref:System.Data.DataRowState> . Il valore della <xref:System.Data.DataRow.RowState%2A> proprietà per la prima riga rimane <xref:System.Data.DataRowState> . La tabella dati ha ora un aspetto simile al seguente:
 
 ```
 (RowState)     CustomerID   Name             Status
@@ -246,28 +246,28 @@ Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è con
 
  Tramite l'applicazione in uso viene ora chiamato il metodo `Update` per trasmettere il dataset al database. Il metodo esamina ogni riga a turno. Per la prima riga, il metodo non trasmette alcuna istruzione SQL al database perché tale riga non è stata modificata dal momento in cui è stata recuperata in origine dal database.
 
- Per la seconda riga, tuttavia, il metodo `Update` richiama automaticamente il comando dati corretto e lo trasmette al database. La sintassi specifica dell'istruzione SQL dipende dal dialetto di SQL supportato dall'archivio dati sottostante. Tuttavia, di seguito sono riportate le seguenti caratteristiche generali dell'istruzione SQL trasmessa:
+ Per la seconda riga, tuttavia, il `Update` metodo richiama automaticamente il comando dati corretto e lo trasmette al database. La sintassi specifica dell'istruzione SQL dipende dal dialetto di SQL supportato dall'archivio dati sottostante. Tuttavia, di seguito sono riportate le seguenti caratteristiche generali dell'istruzione SQL trasmessa:
 
-- L'istruzione SQL trasmessa è un'istruzione UPDATE. L'adapter sa utilizzare un'istruzione UPDATE perché il valore della proprietà <xref:System.Data.DataRow.RowState%2A> è <xref:System.Data.DataRowState>.
+- L'istruzione SQL trasmessa è un'istruzione UPDATE. L'adapter sa utilizzare un'istruzione UPDATE perché il valore della <xref:System.Data.DataRow.RowState%2A> proprietà è <xref:System.Data.DataRowState> .
 
-- L'istruzione SQL trasmessa include una clausola WHERE che indica che la destinazione dell'istruzione UPDATE è la riga in cui `CustomerID = 'c400'`. Questa parte dell'istruzione SELECT consente di distinguere la riga di destinazione da tutte le altre perché il `CustomerID` è la chiave primaria della tabella di destinazione. Le informazioni per la clausola WHERE sono derivate dalla versione originale del record (`DataRowVersion.Original`), nel caso in cui i valori necessari per identificare la riga siano stati modificati.
+- L'istruzione SQL trasmessa include una clausola WHERE che indica che la destinazione dell'istruzione UPDATE è la riga in cui `CustomerID = 'c400'` . Questa parte dell'istruzione SELECT consente di distinguere la riga di destinazione da tutte le altre perché `CustomerID` è la chiave primaria della tabella di destinazione. Le informazioni per la clausola WHERE sono derivate dalla versione originale del record ( `DataRowVersion.Original` ), nel caso in cui i valori necessari per identificare la riga siano stati modificati.
 
 - L'istruzione SQL trasmessa include la clausola SET per impostare i nuovi valori delle colonne modificate.
 
     > [!NOTE]
-    > Se la proprietà `UpdateCommand` del TableAdapter è stata impostata sul nome di un stored procedure, l'adapter non costruisce un'istruzione SQL. Richiama invece il stored procedure con i parametri appropriati passati.
+    > Se la proprietà del TableAdapter `UpdateCommand` è stata impostata sul nome di un stored procedure, l'adapter non costruisce un'istruzione SQL. Richiama invece il stored procedure con i parametri appropriati passati.
 
 ## <a name="passing-parameters"></a>Passaggio di parametri
- In genere si usano i parametri per passare i valori per i record che verranno aggiornati nel database.  Quando il metodo `Update` del TableAdapter esegue un'istruzione UPDATE, deve inserire i valori dei parametri. Ottiene questi valori dalla raccolta di `Parameters` per il comando dati appropriato, in questo caso l'oggetto `UpdateCommand` nell'oggetto TableAdapter.
+ In genere si usano i parametri per passare i valori per i record che verranno aggiornati nel database.  Quando il metodo del TableAdapter `Update` esegue un'istruzione Update, è necessario specificare i valori dei parametri. Ottiene questi valori dalla `Parameters` raccolta per il comando dati appropriato, in questo caso l' `UpdateCommand` oggetto nel TableAdapter.
 
- Se sono stati usati gli strumenti di Visual Studio per generare un adattatore dati, l'oggetto `UpdateCommand` contiene una raccolta di parametri che corrispondono a ogni segnaposto di parametro nell'istruzione.
+ Se sono stati usati gli strumenti di Visual Studio per generare un adattatore dati, l' `UpdateCommand` oggetto contiene una raccolta di parametri che corrispondono a ogni segnaposto di parametro nell'istruzione.
 
- La proprietà <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> di ogni parametro punta a una colonna nella tabella dati. Ad esempio, la proprietà `SourceColumn` per i parametri `au_id` e `Original_au_id` è impostata su qualsiasi colonna della tabella dati contiene l'ID autore. Quando viene eseguito il `Update` metodo dell'adapter, viene letta la colonna Author ID dal record aggiornato e vengono inseriti i valori nell'istruzione.
+ La <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> proprietà di ogni parametro punta a una colonna nella tabella dati. Ad esempio, la `SourceColumn` proprietà per i `au_id` `Original_au_id` parametri e viene impostata su qualsiasi colonna della tabella dati contenente l'ID autore. Quando `Update` viene eseguito il metodo dell'adapter, viene letta la colonna Author ID dal record aggiornato e vengono inseriti i valori nell'istruzione.
 
  In un'istruzione UPDATE è necessario specificare sia i nuovi valori (quelli che verranno scritti nel record) sia i valori precedenti, in modo che il record possa trovarsi nel database. Sono pertanto disponibili due parametri per ogni valore: uno per la clausola SET e uno diverso per la clausola WHERE. Entrambi i parametri leggono i dati dal record che viene aggiornato, ma ottengono versioni diverse del valore della colonna in base alla [Proprietà SqlParameter. SourceVersion](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)del parametro. Il parametro per la clausola SET ottiene la versione corrente e il parametro della clausola WHERE ottiene la versione originale.
 
 > [!NOTE]
-> È anche possibile impostare i valori nella raccolta `Parameters` manualmente nel codice, che in genere si esegue in un gestore eventi per l'evento <xref:System.Data.DataTable.RowChanging> dell'adattatore dati.
+> È inoltre possibile impostare i valori nella `Parameters` raccolta manualmente nel codice, che in genere si esegue in un gestore eventi per l'evento dell'adattatore dati <xref:System.Data.DataTable.RowChanging> .
 
 ## <a name="see-also"></a>Vedere anche
  [Aggiornare i dati usando un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) [preparare l'applicazione per ricevere](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad) i [controlli di associazione dati ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md) [convalida dei dati](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f13689b6e3ac4db2d58c1def3a5d0dd05c219f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672326"
 ---
 # <a name="list-source-command"></a>Comando Elenca origine
@@ -34,7 +34,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 [/Line:number] [/ShowLineNumbers:yes|no]
 ```
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /Count: `number` facoltativo. Specifica il numero di righe da visualizzare.
 
  /Current. facoltativo. Visualizza la riga corrente.

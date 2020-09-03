@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49da7d5e7f6a7731a708accb3d52fb6383ff1017
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652217"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Metodi anonimi e analisi del codice
@@ -67,7 +67,7 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Metodi anonimi inline
- Gli avvisi e le metriche per un metodo anonimo dichiarato come assegnazione inline a un campo sono associati al costruttore. Se il campo viene dichiarato come `static` (`Shared` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), gli avvisi e le metriche sono associati al costruttore della classe; in caso contrario, vengono associati al costruttore di istanza.
+ Gli avvisi e le metriche per un metodo anonimo dichiarato come assegnazione inline a un campo sono associati al costruttore. Se il campo viene dichiarato come `static` ( `Shared` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), gli avvisi e le metriche sono associati al costruttore della classe; in caso contrario, sono associati al costruttore di istanza.
 
  Nella classe seguente, ad esempio, eventuali avvisi presenti nella dichiarazione di **anonymousMethod1** verranno generati in base al costruttore predefinito generato in modo implicito della **classe**. Mentre quelli presenti in **anonymousMethod2** verranno applicati al costruttore della classe generata in modo implicito.
 
@@ -108,7 +108,7 @@ class Class
 
  Una classe può contenere un metodo anonimo inline che assegna un valore a un campo che dispone di più costruttori. In questo caso, gli avvisi e le metriche sono associati a tutti i costruttori, a meno che il costruttore non venga concatenato a un altro costruttore nella stessa classe.
 
- Nella classe seguente, ad esempio, tutti gli avvisi presenti nella dichiarazione di **anonymousMethod** devono essere generati sulla classe **(int)** e sulla **classe (String)** ma non sulla classe ( **)** .
+ Nella classe seguente, ad esempio, tutti gli avvisi presenti nella dichiarazione di **anonymousMethod** devono essere generati sulla classe **(int)** e sulla **classe (String)** ma non sulla classe ( **)**.
 
 ```vb
 

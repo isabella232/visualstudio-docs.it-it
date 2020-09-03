@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bffb1f7fe6449f078c21c14b0a070cbd23db539
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652132"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
@@ -29,7 +29,7 @@ Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Langua
 
  La tabella seguente spiega come vengono usate le diverse parti dell'interfaccia utente.
 
-|**Elemento**|**Definizione**|
+|**elemento**|**Definition**|
 |-----------------|--------------------|
 |Diagramma|Il diagramma visualizza il modello di dominio.<br /><br /> Il diagramma presenta due lati. Un lato definisce i tipi degli elementi nei modelli. L'altro lato definisce il modo in cui i modelli verranno visualizzati sullo schermo.|
 |Casella degli strumenti|Trascinare gli strumenti dalla casella degli strumenti per aggiungere classi di dominio e tipi di forma al diagramma. Per aggiungere relazioni, connettori e mapping di forme, fare clic sullo strumento, sul nodo di origine sul diagramma e quindi sul nodo di destinazione.|
@@ -43,7 +43,7 @@ Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Langua
 
  La tabella seguente spiega alcuni elementi del diagramma del modello di dominio.
 
-|**Termine**|**Definizione**|
+|**Termine**|**Definition**|
 |--------------|--------------------|
 |Classe di dominio|Le classi di dominio sono i tipi degli elementi nei modelli.<br /><br /> Una classe di dominio può comparire più volte in un diagramma, se è la destinazione di più relazioni.<br /><br /> Per aggiungere una classe di dominio, trascinare lo strumento Classe di dominio dalla **Casella degli strumenti** al lato **Classi e relazioni** del diagramma.|
 |Relazione di dominio|Le relazioni di dominio sono i tipi dei collegamenti tra gli elementi nei modelli.<br /><br /> Una *relazione di incorporamento* indica che l'elemento di destinazione è di proprietà dell'elemento di origine o è contenuto all'interno di esso. Tale relazione viene visualizzata con una linea continua. Ogni elemento in un modello deve essere la destinazione di una relazione di incorporamento, in modo che il modello abbia l'aspetto di un albero. Una *relazione di riferimento* indica un collegamento generale tra elementi del modello generale e viene visualizzata con una linea tratteggiata. Tutti gli elementi possono avere un numero qualsiasi di collegamenti di riferimento.<br /><br /> Creare una relazione facendo clic sullo strumento nella **Casella degli strumenti**, sulla classe di dominio di origine e quindi sulla classe di destinazione.|
@@ -51,4 +51,4 @@ Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Langua
 |Mappe delle forme|Un mapping di forme ha l'aspetto di una linea che, nel diagramma del modello di dominio, collega una forma alla classe di dominio che visualizza, o un connettore alla relazione di dominio che visualizza.|
 
 ## <a name="see-also"></a>Vedere anche
- [Panoramica del](../modeling/overview-of-domain-specific-language-tools.md) glossario degli strumenti di [linguaggio specifico](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) di dominio per la [personalizzazione e l'estensione](../modeling/customizing-and-extending-a-domain-specific-language.md) di un linguaggio specifico di dominio
+ [Panoramica di Strumenti Domain-Specific Language](../modeling/overview-of-domain-specific-language-tools.md) [strumenti Domain-Specific Language il Glossario](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [per la personalizzazione e l'estensione di un Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md)

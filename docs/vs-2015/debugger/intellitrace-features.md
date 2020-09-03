@@ -23,16 +23,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e386277c56f7da50e55e077620cbf649ec6a0c9e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546250"
 ---
 # <a name="intellitrace-features"></a>Funzionalità di IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto. IntelliTrace è attivato per impostazione predefinita ed è possibile visualizzare le informazioni che IntelliTrace sta registrando nella nuova finestra **strumenti di diagnostica** nella scheda **eventi** . Selezionare un evento e fare clic su **Attiva debug cronologico** per visualizzare lo stack di chiamate e le variabili locali registrate per questo evento.  
+È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto. IntelliTrace è attivato per impostazione predefinita ed è possibile visualizzare le informazioni che IntelliTrace sta registrando nella nuova finestra di **strumenti di diagnostica** nella scheda **eventi** . Selezionare un evento e fare clic su **Attiva debug cronologico** per visualizzare lo stack di chiamate e le variabili locali registrate per questo evento.  
   
  Per una descrizione dettagliata, vedere [procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
@@ -43,12 +43,12 @@ ms.locfileid: "85546250"
 > [!NOTE]
 > L'ambito di tutte le impostazioni nella pagina delle opzioni di **IntelliTrace** è Visual Studio nel suo insieme, non i singoli progetti o le singole soluzioni. Una modifica di queste impostazioni si applica a tutte le istanze di Visual Studio, le sessioni di debug tutti e tutti i progetti o soluzioni.  
   
-## <a name="choose-the-events-that-intellitrace-records"></a><a name="ChooseEvents"></a>Scegliere gli eventi registrati da IntelliTrace  
+## <a name="choose-the-events-that-intellitrace-records"></a><a name="ChooseEvents"></a> Scegliere gli eventi registrati da IntelliTrace  
  È possibile attivare o disattivare la registrazione di eventi di IntelliTrace specifici.  
   
  Se il debug è in corso, interromperlo. Passare a **Strumenti/Opzioni/IntelliTrace/eventi IntelliTrace**. Scegliere gli eventi di IntelliTrace per registrare.  
   
-## <a name="collect-intellitrace-events-and-call-information"></a><a name="GoingFurther"></a>Raccogli eventi IntelliTrace e informazioni sulle chiamate  
+## <a name="collect-intellitrace-events-and-call-information"></a><a name="GoingFurther"></a> Raccogli eventi IntelliTrace e informazioni sulle chiamate  
  Questo non è abilitato per impostazione predefinita, ma IntelliTrace è in grado di registrare le chiamate di metodo insieme agli eventi. Per abilitare la raccolta di chiamate al metodo, passare a **Strumenti/Opzioni/IntelliTrace/generale**e selezionare **eventi IntelliTrace e informazioni sulle chiamate**.  
   
  In tal modo è possibile visualizzare la cronologia dello stack di chiamate e scorrere in avanti e indietro le chiamate nel codice. IntelliTrace registra i dati, ad esempio nomi delle funzioni, punti di ingresso e uscita delle funzioni e alcuni valori di parametri e valori restituiti.  
@@ -63,7 +63,7 @@ ms.locfileid: "85546250"
   
  La barra di navigazione consente di spostarsi avanti e indietro tra chiamate ai metodi e gli eventi in modalità di debug cronologico. Per altre informazioni sul debug cronologico, vedere [Debug cronologico](../debugger/historical-debugging.md). Dispone di una serie di comandi:  
   
-|Name|Descrizione|  
+|Nome|Descrizione|  
 |-|-|  
 |**Imposta contesto debugger**|Consente di impostare il contesto di debug sull'intervallo di tempo della chiamata dove viene visualizzato.<br /><br /> Questa icona compare solo sullo stack di chiamate corrente.|  
 |**Torna al sito di chiamata**|Spostare il puntatore e il contesto di debug indietro nel momento in cui è stata chiamata la funzione corrente.<br /><br /> Se si è in modalità debug attivo, questo comando attiva il debug cronologico. Se si passa nuovamente all'interruzione dell'esecuzione originale, il debug cronologico è disattivato e Live debug è attivato.|  
@@ -82,7 +82,7 @@ ms.locfileid: "85546250"
   
  Provare a ridurre al minimo il numero di moduli. È possibile ottenere prestazioni migliori perché non ci sono meno dati da raccogliere. Si ottiene anche meno rumore nell'interfaccia utente perché non ci sono meno dati passino attraverso.  
   
-## <a name="saving-intellitrace-data-to-file"></a><a name="SaveSession"></a>Salvataggio dei dati IntelliTrace in un file  
+## <a name="saving-intellitrace-data-to-file"></a><a name="SaveSession"></a> Salvataggio dei dati IntelliTrace in un file  
  È possibile salvare i dati raccolti da IntelliTrace per la **sessione debug/IntelliTrace/Save IntelliTrace** durante il debug e l'applicazione si trova in uno stato di interruzioni. La voce di menu è disabilitata e non sarà in grado di salvare i dati che raccolti da IntelliTrace se l'applicazione è ancora in esecuzione o se si interrompe il debug.  
   
  È possibile configurare IntelliTrace per il salvataggio automatico in un file passando a **Strumenti/Opzioni/IntelliTrace/avanzate** e selezionando **Archivia registrazioni IntelliTrace in questa directory**. È inoltre possibile configurare una dimensione fissa per il file generato, provocando IntelliTrace per sovrascrivere i dati meno recenti quando si esaurisce lo spazio. Visual Studio crea due file per ogni sessione di IntelliTrace quando vengono salvati automaticamente e il processo di hosting di Visual Studio (vshost.exe) è attivato.  

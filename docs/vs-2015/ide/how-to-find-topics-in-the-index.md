@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4de007ef262304d570ec8ebed39e6b14a2730833
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651931"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Procedura: Trovare argomenti nell'indice
@@ -44,4 +44,4 @@ L'indice contiene un elenco di parole chiave associate agli argomenti del conten
      Se la parola chiave specificata è associata a un solo argomento, l'argomento viene visualizzato. In caso contrario, viene visualizzato un elenco di tutti gli argomenti associati alla parola chiave.
 
 ## <a name="see-also"></a>Vedere anche
- [Index Search Tips](../ide/index-search-tips.md) (Suggerimenti per la ricerca nell'indice)
+ [Suggerimenti per la ricerca nell'indice](../ide/index-search-tips.md)

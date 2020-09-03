@@ -10,32 +10,32 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90794b658204fb955e6dfaebed0377f91d9792ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672537"
 ---
 # <a name="primitives-activity-designers"></a>ActivityDesigner Primitive
 Gli ActivityDesigner primitivi consentono di creare e configurare diverse attività nello spazio dei nomi <xref:System.Activities.Statements>, quali Assign e Delay. Gli argomenti contenuti in questa sezione forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Assegna](../workflow-designer/assign-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Assign>.
+ [Assegna](../workflow-designer/assign-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.Assign> attività.
 
- [Ritardo](../workflow-designer/delay-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Delay>.
+ [Ritardo](../workflow-designer/delay-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.Delay> attività.
 
- [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.InvokeMethod>.
+ [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.InvokeMethod> attività.
 
- [WriteLine](../workflow-designer/writeline-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.WriteLine>.
+ [WriteLine](../workflow-designer/writeline-activity-designer.md) Utilizzato per creare e configurare un' <xref:System.Activities.Statements.WriteLine> attività.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informazioni di riferimento
 
 ## <a name="related-sections"></a>Sezioni correlate
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)
 
  [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Messaggistica](../workflow-designer/messaging-activity-designers.md)
 
  [Runtime](../workflow-designer/runtime-activity-designers.md)
 
@@ -47,4 +47,4 @@ Gli ActivityDesigner primitivi consentono di creare e configurare diverse attivi
 
 ## <a name="see-also"></a>Vedere anche
 
--[usando gli](../workflow-designer/using-the-activity-designers.md) ActivityDesigner
+-[Utilizzo dell'ActivityDesigner](../workflow-designer/using-the-activity-designers.md)

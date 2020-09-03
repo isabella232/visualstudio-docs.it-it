@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 149370bfee1b142876dff881625d08083afadea4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652307"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
@@ -21,7 +21,7 @@ ms.locfileid: "72652307"
 
 Nei modelli di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la direttiva `output` viene usata per definire l'estensione di file e la codifica del file trasformato.
 
- Ad esempio, se il progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] include un file modello denominato **MyTemplate.TT** che contiene la direttiva seguente:
+ Ad esempio, se il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto include un file modello denominato **MyTemplate.TT** che contiene la direttiva seguente:
 
  `<#@output extension=".cs"#>`
 
@@ -53,7 +53,7 @@ Nei modelli di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la direttiv
  Valori accettabili: qualsiasi estensione di file valida.
 
 ## <a name="encoding-attribute"></a>attributo di codifica
- Specifica la codifica da usare quando viene generato il file di output. Esempio:
+ Specifica la codifica da usare quando viene generato il file di output. Ad esempio:
 
  `<#@ output encoding="utf-8"#>`
 
@@ -71,6 +71,6 @@ Nei modelli di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la direttiv
 
  `utf-32`
 
- `0` (valore predefinito del sistema)
+ `0` (Impostazione predefinita di sistema)
 
  In generale, è possibile usare la stringa WebName o il numero CodePage di tutte le codifiche restituite da <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

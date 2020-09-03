@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2301ce14fcd3d2d8a9c5d003a05186513d950cd4
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330119"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
@@ -73,6 +73,6 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Wind
 
 3. Modificare le opzioni per la risorsa.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creazione di un'interfaccia utente tramite XAML Designer](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

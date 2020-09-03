@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985462"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procedura dettagliata: progettare un'area del modulo di Outlook
@@ -24,7 +24,7 @@ ms.locfileid: "72985462"
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Creazione di un nuovo progetto di componente aggiuntivo VSTO per Outlook.
 
@@ -37,10 +37,10 @@ ms.locfileid: "72985462"
 - Test dell'area del modulo di Outlook.
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "72985462"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Per creare un nuovo progetto di componente aggiuntivo VSTO di Outlook
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]creare un progetto di componente aggiuntivo VSTO di Outlook con il nome **MapItAddIn**.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creare un progetto di componente aggiuntivo VSTO per Outlook con il nome **MapItAddIn**.
 
 2. Nella finestra di dialogo **Nuovo progetto** selezionare **Crea directory per soluzione**.
 
@@ -68,7 +68,7 @@ ms.locfileid: "72985462"
 
 1. In **Esplora soluzioni**selezionare il progetto **MapItAddIn** .
 
-2. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+2. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
 3. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **area del modulo di Outlook**, assegnare al file il nome **MapIt**, quindi fare clic su **Aggiungi**.
 
@@ -122,12 +122,12 @@ ms.locfileid: "72985462"
 
     La classe della factory area del modulo denominata `MapItFactory` viene esposta.
 
-3. Aggiungere il codice seguente al gestore eventi `MapItFactory_FormRegionInitializing`. Questo gestore eventi viene chiamato quando l'utente apre un contatto. Il codice seguente determina se il contatto contiene un indirizzo. Se l'elemento contatto non contiene un indirizzo, il codice imposta la proprietà <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> della classe <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> su **true** e l'area del modulo non viene visualizzata. In alternativa, il componente aggiuntivo VSTO genere l'evento <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> e visualizza l'area del modulo.
+3. Aggiungere il codice seguente al gestore eventi `MapItFactory_FormRegionInitializing`. Questo gestore eventi viene chiamato quando l'utente apre un contatto. Il codice seguente determina se il contatto contiene un indirizzo. Se l'elemento contatto non contiene un indirizzo, il codice imposta la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> proprietà della <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe su **true** e l'area del modulo non viene visualizzata. In alternativa, il componente aggiuntivo VSTO genere l'evento <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> e visualizza l'area del modulo.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
 
-4. Aggiungere il codice seguente al gestore eventi <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Mediante il codice vengono effettuate le seguenti attività:
+4. Aggiungere il codice seguente al gestore eventi <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Il codice esegue queste operazioni:
 
    - Concatena ogni indirizzo nel contatto e crea una stringa URL.
 
@@ -155,7 +155,7 @@ ms.locfileid: "72985462"
     |------------------|-------------|
     |**Business**|**4567 Main St. Buffalo, NY**|
     |**Home**|**1234 North St. Buffalo, NY**|
-    |**Altro**|**3456 Main St. Seattle, WA**|
+    |**Altri**|**3456 Main St. Seattle, WA**|
 
 4. Salvare e chiudere il contatto.
 

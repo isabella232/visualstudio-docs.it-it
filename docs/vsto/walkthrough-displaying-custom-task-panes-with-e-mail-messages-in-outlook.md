@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985459"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procedura dettagliata: visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook
@@ -33,7 +33,7 @@ ms.locfileid: "72985459"
 > [!NOTE]
 > Questa procedura dettagliata presenta il codice del componente aggiuntivo VSTO in sezioni di piccole dimensioni per semplificare la descrizione della logica su cui si basa il codice.
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Progettazione dell'interfaccia utente del riquadro attività personalizzato.
 
@@ -48,17 +48,17 @@ ms.locfileid: "72985459"
 - Sincronizzazione dell'interruttore della barra multifunzione con il riquadro attività personalizzato.
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o Microsoft Outlook 2010.
 
 ## <a name="create-the-project"></a>Creare il progetto
- I riquadri attività personalizzati vengono implementati nei componenti aggiuntivi VSTO. iniziare creando un progetto di componente aggiuntivo VSTO per Outlook.
+ I riquadri attività personalizzati vengono implementati nei componenti aggiuntivi VSTO. Iniziare creando un progetto di componente aggiuntivo VSTO per Outlook.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
@@ -86,9 +86,9 @@ ms.locfileid: "72985459"
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>Per creare un'interfaccia utente della barra multifunzione personalizzata
 
-1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+1. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)** .
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
 
 3. Modificare il nome della nuova barra multifunzione in **ManageTaskPaneRibbon**e fare clic su **Aggiungi**.
 
@@ -122,7 +122,7 @@ ms.locfileid: "72985459"
 
 - Quando l'utente fa clic sull'interruttore nella barra multifunzione. In questo caso, il componente aggiuntivo VSTO deve nascondere o visualizzare il riquadro attività corrispondente.
 
-  Per consentire al componente aggiuntivo VSTO di tenere traccia del riquadro attività personalizzato associato a ogni messaggio di posta elettronica aperto, creare una classe personalizzata che esegue il wrapping di coppie di <xref:Microsoft.Office.Interop.Outlook.Inspector> e oggetti <xref:Microsoft.Office.Tools.CustomTaskPane>. Questa classe crea un nuovo oggetto riquadro attività personalizzato per ogni messaggio di posta elettronica ed Elimina il riquadro attività personalizzato quando il messaggio di posta elettronica corrispondente viene chiuso.
+  Per consentire al componente aggiuntivo VSTO di tenere traccia del riquadro attività personalizzato associato a ogni messaggio di posta elettronica aperto, creare una classe personalizzata che esegue il wrapping di coppie <xref:Microsoft.Office.Interop.Outlook.Inspector> di <xref:Microsoft.Office.Tools.CustomTaskPane> oggetti e. Questa classe crea un nuovo oggetto riquadro attività personalizzato per ogni messaggio di posta elettronica ed Elimina il riquadro attività personalizzato quando il messaggio di posta elettronica corrispondente viene chiuso.
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Per creare una classe per gestire le finestre di controllo e i riquadri attività personalizzati
 
@@ -148,7 +148,7 @@ ms.locfileid: "72985459"
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6. Aggiungere il metodo seguente dopo il codice aggiunto nel passaggio precedente. Questo metodo è un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> dell'oggetto <xref:Microsoft.Office.Interop.Outlook.Inspector> che contiene il messaggio di posta elettronica corrente. Il gestore eventi libera risorse quando il messaggio di posta elettronica viene chiuso. Il gestore eventi rimuove anche il riquadro attività personalizzato corrente dalla raccolta `CustomTaskPanes` . Ciò consente di evitare più istanze del riquadro attività personalizzato quando viene aperto il messaggio di posta elettronica successivo.
+6. Aggiungere il metodo seguente dopo il codice aggiunto nel passaggio precedente. Questo metodo è un gestore eventi per l' <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> evento dell' <xref:Microsoft.Office.Interop.Outlook.Inspector> oggetto che contiene il messaggio di posta elettronica corrente. Il gestore eventi libera risorse quando il messaggio di posta elettronica viene chiuso. Il gestore eventi rimuove anche il riquadro attività personalizzato corrente dalla raccolta `CustomTaskPanes` . Ciò consente di evitare più istanze del riquadro attività personalizzato quando viene aperto il messaggio di posta elettronica successivo.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
@@ -159,7 +159,7 @@ ms.locfileid: "72985459"
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
 
 ## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>Inizializzare e pulire le risorse usate dal componente aggiuntivo
- Aggiungere il codice alla classe `ThisAddIn` per inizializzare il componente aggiuntivo VSTO quando viene caricato e per pulire le risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Inizializzare il componente aggiuntivo VSTO configurando un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> e passando tutti i messaggi di posta elettronica esistenti a questo gestore eventi. Quando il componente aggiuntivo VSTO viene scaricato, rimuovere il gestore eventi e pulire gli oggetti usati dal componente aggiuntivo VSTO.
+ Aggiungere il codice alla classe `ThisAddIn` per inizializzare il componente aggiuntivo VSTO quando viene caricato e per pulire le risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Inizializzare il componente aggiuntivo VSTO configurando un gestore eventi per l' <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento e passando tutti i messaggi di posta elettronica esistenti a questo gestore eventi. Quando il componente aggiuntivo VSTO viene scaricato, rimuovere il gestore eventi e pulire gli oggetti usati dal componente aggiuntivo VSTO.
 
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Per inizializzare e pulire le risorse usate dal componente aggiuntivo VSTO
 
@@ -184,7 +184,7 @@ ms.locfileid: "72985459"
     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
 
-5. Aggiungere il gestore eventi <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> seguente alla classe `ThisAddIn` . Se un nuovo <xref:Microsoft.Office.Interop.Outlook.Inspector> contiene un messaggio di posta elettronica, il metodo crea un'istanza di un nuovo oggetto `InspectorWrapper` per gestire la relazione tra il messaggio di posta elettronica e il riquadro attività corrispondente.
+5. Aggiungere il gestore eventi <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> seguente alla classe `ThisAddIn` . Se un nuovo <xref:Microsoft.Office.Interop.Outlook.Inspector> contiene un messaggio di posta elettronica, il metodo crea un'istanza di un nuovo `InspectorWrapper` oggetto per gestire la relazione tra il messaggio di posta elettronica e il riquadro attività corrispondente.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]

@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330014"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -31,7 +31,7 @@ VSPerfCmd [/U] [/options]
 
  Le tabelle seguenti descrivono le opzioni dello strumento *VSPerfCmd.exe*.
 
-|Opzione|Description|
+|Opzione|Descrizione|
 |------------|-----------------|
 |**U**|L'output di console reindirizzato viene scritto come Unicode. Deve essere la prima opzione specificata.|
 |[Inizio](../profiling/start.md) **:**`mode`|Avvia il servizio di profilatura nella modalità specificata.|
@@ -44,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[WinCounter](../profiling/wincounter.md) **:** *percorso*|Specifica un evento contatore delle prestazioni di Windows da includere con i dati contrassegnati di profilatura. Usare solo con **Start**.|
 |[Contrassegno automark](../profiling/automark.md) **:** *n*|Specifica l'intervallo di tempo (in millisecondi) tra gli eventi di raccolta di dati dei contatori delle prestazioni di Windows. Usare con **WinCounter**.|
 |[Eventi](../profiling/events-vsperfcmd.md) **:**`option`|Controlla la raccolta degli eventi ETW (Event Tracing for Windows) specificati. I dati ETW vengono raccolti in un file con estensione *itl* diverso dal file di dati di profilatura (con estensione *vsp*).|
-|[Status](../profiling/status.md)|Visualizza lo stato del profiler, informazioni sui processi attualmente in corso di profilatura e gli account che dispongono dell'autorità per controllare il profiler.|
+|[Stato](../profiling/status.md)|Visualizza lo stato del profiler, informazioni sui processi attualmente in corso di profilatura e gli account che dispongono dell'autorità per controllare il profiler.|
 |[Arresto](../profiling/shutdown.md)[**:** `n` ]|Chiude il file di dati di profilatura e disattiva il profiler.|
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Riprende la raccolta di dati dopo una chiamata a **VSPerfCmdGlobalOff**.|
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|Arresta la raccolta di tutti i dati, ma non termina la sessione di profilatura.|
@@ -57,7 +57,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="sample-method-options"></a>Opzioni del metodo di campionamento
  Le opzioni seguenti sono disponibili solo quando si usa il metodo di campionamento per la profilatura.
 
-|Opzione|Description|
+|Opzione|Descrizione|
 |------------|-----------------|
 |[Launch](../profiling/launch.md) **:** *eseguibile*|Avvia l'applicazione specificata e inizia la profilatura.|
 |[Args](../profiling/args.md) **:** *argomenti*|Specifica gli argomenti della riga di comando da passare all'applicazione avviata.|
@@ -69,7 +69,7 @@ VSPerfCmd [/U] [/options]
 ### <a name="sample-interval-options"></a>Opzioni per l'intervallo di campionamento
  Le opzioni seguenti specificano il tipo e la durata degli intervalli di campionamento. L'opzione predefinita è **Timer**. È possibile specificare anche un contatore CPU come intervallo tramite l'opzione **Counter**. Queste opzioni possono essere specificate solo con **Launch** o con la prima operazione **Attach** di una sessione di profilatura.
 
-|Opzione|Description|
+|Opzione|Descrizione|
 |------------|-----------------|
 |[PF](../profiling/pf.md)[**:**_n_]|Esegue il campionamento ogni n errori di pagina (valore predefinito=10).|
 |[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Esegue il campionamento ogni n chiamate di sistema (valore predefinito=10).|
@@ -80,9 +80,9 @@ VSPerfCmd [/U] [/options]
 
  Le opzioni di amministrazione devono essere eseguite in un prompt dei comandi in esecuzione con credenziali amministrative.
 
-|Opzione|Description|
+|Opzione|Descrizione|
 |------------|-----------------|
-|**Admin: Security**, \<**ALLOW&#124;DENY**> , *right*[ *right*],\<*User*&#124;*Group*>|Consente o nega l'accesso ai servizi di profilatura all'utente o al gruppo specificato.<br /><br /> `Right` può essere:<br /><br /> CrossSession: consente all'utente l'accesso al servizio per la profilatura tra sessioni.<br /><br /> SampleProfiling: consente all'utente di accedere al driver per abilitare la profilatura di campionamento. Usato anche per accedere alle informazioni di transizione del kernel durante la profilatura di traccia.<br /><br /> FullAccess: consente all'utente sia l'accesso CrossSession che l'accesso SampleProfiling.|
+|**Admin: Security**, \<**ALLOW&#124;DENY**> , *right*[ *right*], \<*User*&#124;*Group*>|Consente o nega l'accesso ai servizi di profilatura all'utente o al gruppo specificato.<br /><br /> `Right` può essere:<br /><br /> CrossSession: consente all'utente l'accesso al servizio per la profilatura tra sessioni.<br /><br /> SampleProfiling: consente all'utente di accedere al driver per abilitare la profilatura di campionamento. Usato anche per accedere alle informazioni di transizione del kernel durante la profilatura di traccia.<br /><br /> FullAccess: consente all'utente sia l'accesso CrossSession che l'accesso SampleProfiling.|
 |**Admin:Security, List**|Elenca lo stato corrente dei servizi di profilatura e le autorizzazioni utente.|
 |**Amministratore:**\<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Avvia, arresta, installa o disinstalla il componente del servizio di profilatura (Servizio) o il driver del dispositivo in modalità kernel (Driver).|
 |**Amministratore:** \<*Service*&#124;*Driver*> **Avvio automatico**\<**ON**&#124;**OFF**>|Abilita o disabilita l'avvio automatico del servizio di profilatura (Servizio) o del driver del dispositivo in modalità kernel (Driver) dopo un riavvio.|
@@ -90,7 +90,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver
  L'opzione **VSPerfCmd /Driver** è obsoleta. Usare le opzioni di **VsPerfCmd Admin** per questa funzionalità.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfMon](../profiling/vsperfmon.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

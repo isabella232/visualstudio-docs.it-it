@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985443"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procedura dettagliata: importare un'area del modulo progettata in Outlook
@@ -25,7 +25,7 @@ ms.locfileid: "72985443"
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Progettazione di un'area del modulo usando Progettazione aree di form in Outlook.
 
@@ -35,15 +35,15 @@ ms.locfileid: "72985443"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
-> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Progettare un'area del modulo usando progettazione aree di form in Outlook
  In questo passaggio si progetterà un'area del modulo in Outlook. L'area del modulo verrà quindi salvata in un percorso facilmente accessibile e successivamente importata in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -136,7 +136,7 @@ ms.locfileid: "72985443"
 
      Viene avviata la procedura guidata **area del modulo NewOutlook** .
 
-3. Nella pagina **Selezionare la modalità di creazione dell'area del modulo** , scegliere **Importa un file OFS (Outlook Form Storage)** , quindi fare clic su **Sfoglia**.
+3. Nella pagina **Selezionare la modalità di creazione dell'area del modulo** , scegliere **Importa un file OFS (Outlook Form Storage)**, quindi fare clic su **Sfoglia**.
 
 4. Nella finestra di dialogo **Percorso del file di area del modulo di Outlook esistente** passare alla posizione di *TaskFormRegion.ofs*, selezionare **TaskFormRegion.ofs**, fare clic su **Apri**, quindi su **Avanti**.
 
@@ -166,7 +166,7 @@ ms.locfileid: "72985443"
     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
 
-3. Aggiungere il codice seguente alla classe `TaskFormRegion` . Mediante il codice vengono effettuate le seguenti attività:
+3. Aggiungere il codice seguente alla classe `TaskFormRegion` . Il codice esegue queste operazioni:
 
    - Ricerca di `Microsoft.Office.Interop.Outlook.TaskItem` nella cartella delle attività chiamando il metodo di supporto `FindTaskBySubjectName` e passando l'oggetto dell'attività desiderata. Nel prossimo passaggio verrà aggiunto il metodo di supporto `FindTaskBySubjectName` .
 
@@ -182,18 +182,18 @@ ms.locfileid: "72985443"
     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
 
-5. Aggiungere il codice seguente alla classe `TaskFormRegion` . Mediante il codice vengono effettuate le seguenti attività:
+5. Aggiungere il codice seguente alla classe `TaskFormRegion` . Il codice esegue queste operazioni:
 
    - Aggiornamento della casella di riepilogo sull'area del modulo con lo stato di completamento corrente di ogni attività dipendente.
 
-   - Analisi del campo di testo nascosto per ottenere l'oggetto di ogni attività dipendente. Individua quindi ogni `Microsoft.Office.Interop.Outlook.TaskItem` nella cartella delle *attività* chiamando il metodo helper `FindTaskBySubjectName` e passando l'oggetto di ogni attività.
+   - Analisi del campo di testo nascosto per ottenere l'oggetto di ogni attività dipendente. Quindi individua ogni `Microsoft.Office.Interop.Outlook.TaskItem` nella cartella delle *attività* chiamando il `FindTaskBySubjectName` metodo di supporto e passando l'oggetto di ogni attività.
 
    - Aggiunta dei valori `Microsoft.Office.Interop.Outlook.TaskItem.Subject` e `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` alla casella di riepilogo dell'attività dipendente.
 
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
 
-6. Sostituire il gestore eventi `TaskFormRegion_FormRegionShowing` con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
+6. Sostituire il gestore eventi `TaskFormRegion_FormRegionShowing` con il codice seguente. Il codice esegue queste operazioni:
 
    - Inserimento degli oggetti delle attività nella casella combinata sull'area del modulo quando l'area del modulo viene visualizzata.
 
@@ -233,7 +233,7 @@ ms.locfileid: "72985443"
 
 10. Riaprire l'elemento Attività dipendente in Outlook.
 
-11. Nel modulo Attività dipendente, impostare il campo **% completato** su **50%** .
+11. Nel modulo Attività dipendente, impostare il campo **% completato** su **50%**.
 
 12. Nella scheda **attività** della barra multifunzione attività dipendente, nel gruppo **azioni** , fare clic su **Salva & Chiudi**.
 

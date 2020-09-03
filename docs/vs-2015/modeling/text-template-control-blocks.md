@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d78f20116552c34d36def4eaf28e5e5bc56f7875
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652335"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
@@ -122,7 +122,7 @@ Some text.
 > [!NOTE]
 > Un blocco di controllo della funzionalità di classe non deve essere seguito da blocchi di controllo standard nello stesso file modello. Questa restrizione, tuttavia, non si applica al risultato dell'uso di direttive `<#@include#>`. Ogni file incluso può contenere blocchi standard seguiti da blocchi della funzionalità di classe.
 
- È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Esempio:
+ È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Ad esempio:
 
 ```
 <#+
@@ -146,11 +146,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Come usare i blocchi di controllo
- Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. Per ulteriori informazioni sull'inclusione di altri modelli di testo con la direttiva `include`, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
+ Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. Per ulteriori informazioni sull'inclusione di altri modelli di testo con la `include` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
 
  Quando si usano i blocchi di controllo, è necessario tenere presenti le considerazioni seguenti:
 
-- **Linguaggio.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. Per ulteriori informazioni sulla direttiva `template`, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
+- **Linguaggio.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. Per ulteriori informazioni sulla `template` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
 
      Il linguaggio usato nei blocchi di controllo non ha nulla a che fare con il linguaggio o il formato del testo generato in un modello di testo. È possibile generare codice C# usando codice Visual Basic o viceversa.
 

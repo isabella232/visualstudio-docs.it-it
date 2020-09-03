@@ -1,5 +1,5 @@
 ---
-title: Casella degli strumenti, scheda Componenti
+title: Casella degli strumenti, Scheda Componenti
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597308"
 ---
 # <a name="toolbox-components-tab"></a>Casella degli strumenti, scheda Componenti
 
 Visualizza i componenti che è possibile aggiungere alle finestre di progettazione di Visual Basic e C# per Windows Form. Oltre ai componenti .NET inclusi in Visual Studio, ad esempio i componenti <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, in questa scheda è possibile aggiungere componenti personalizzati o di terze parti.
 
-Per visualizzare la scheda, aprire una finestra di progettazione di Windows Form. Selezionare **Visualizza** > **casella degli strumenti**. In **Casella degli strumenti** selezionare la scheda **Componenti**.
+Per visualizzare la scheda, aprire una finestra di progettazione di Windows Form. Selezionare **Visualizza**  >  **casella degli strumenti**. In **Casella degli strumenti** selezionare la scheda **Componenti**.
 
 ## <a name="components"></a>Componenti
 
@@ -56,7 +56,7 @@ Crea un'istanza del componente <xref:System.IO.FileSystemWatcher> che consente d
 
 Crea un'istanza del componente <xref:System.Windows.Forms.HelpProvider> che offre informazioni della Guida, anche in finestre popup. Per altre informazioni, vedere [Componente HelpProvider](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms).
 
-**Imagelist**
+**ImageList**
 
 Crea un'istanza del componente <xref:System.Windows.Forms.ImageList> che rende disponibili metodi per la gestione di una raccolta di oggetti <xref:System.Drawing.Image>. Per altre informazioni, vedere [Componente ImageList](/dotnet/framework/winforms/controls/imagelist-component-windows-forms).
 
@@ -64,7 +64,7 @@ Crea un'istanza del componente <xref:System.Windows.Forms.ImageList> che rende d
 
 Crea un'istanza del componente <xref:System.Messaging.MessageQueue> che consente di interagire con le code di messaggi, leggendo e scrivendo messaggi nelle code, elaborando transazioni ed eseguendo attività di amministrazione delle code.
 
-**Performancecounter**
+**PerformanceCounter**
 
 Crea un'istanza del componente <xref:System.Diagnostics.PerformanceCounter> che consente di interagire con i contatori delle prestazioni di Windows, creando nuove categorie e istanze, leggendo valori dai contatori ed eseguendo calcoli sui dati dei contatori stessi.
 
@@ -82,13 +82,13 @@ Crea un'istanza del componente <xref:System.ServiceProcess.ServiceController> ch
 
 **Timer**
 
-Crea un'istanza del componente <xref:System.Windows.Forms.Timer> che consente di aggiungere funzionalità basate sull'ora alle applicazioni basate su Windows. Per ulteriori informazioni, vedere [Componente Timer](/dotnet/framework/winforms/controls/timer-component-windows-forms).
+Crea un'istanza del componente <xref:System.Windows.Forms.Timer> che consente di aggiungere funzionalità basate sull'ora alle applicazioni basate su Windows. Per ulteriori informazioni, vedere [componente Timer](/dotnet/framework/winforms/controls/timer-component-windows-forms).
 
 > [!NOTE]
 > È disponibile anche un componente <xref:System.Timers.Timer> basato su sistema che è possibile aggiungere alla **Casella degli strumenti**. Il componente <xref:System.Timers.Timer> è ottimizzato per le applicazioni server mentre il componente <xref:System.Windows.Forms.Timer> di Windows Forms è più adatto all'uso con Windows Forms.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Controlli da utilizzare in Windows Form](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
+- [Controlli da usare in Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Scegli elementi della Casella degli strumenti, Componenti WPF](choose-toolbox-items-wpf-components.md)
 - [Casella degli strumenti](../../ide/reference/toolbox.md)

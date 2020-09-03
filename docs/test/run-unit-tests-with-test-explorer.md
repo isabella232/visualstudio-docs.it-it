@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386641"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
@@ -88,7 +88,7 @@ Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte su
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 ::: moniker range="vs-2017"
-|Button|Descrizione|
+|Pulsante|Descrizione|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
@@ -171,7 +171,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 |**Framework di destinazione** | Raggruppa i test in base al framework di destinazione dei progetti |
 |**Spazio dei nomi**|Raggruppa i test in base allo spazio dei nomi contenitore.|
 |**Progetto**|Raggruppa i test in base al progetto contenitore.|
-|**Class**|Raggruppa i test in base alla classe contenitore.|
+|**Classe**|Raggruppa i test in base alla classe contenitore.|
 ::: moniker-end
 
 ### <a name="traits"></a>Tratti
@@ -300,7 +300,7 @@ Per filtrare in base a un criterio diverso:
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
 |**Framework di destinazione**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Spazio dei nomi**|Cerca le corrispondenze negli spazi dei nomi di test.|
-|**Class**|Cerca le corrispondenze nei nomi delle classi di test.|
+|**Classe**|Cerca le corrispondenze nei nomi delle classi di test.|
 ::: moniker-end
 
 Per escludere un subset dei risultati di un filtro, usare la sintassi seguente:

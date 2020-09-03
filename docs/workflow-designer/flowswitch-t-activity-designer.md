@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6637682bd6ba649f27c1a53f3b1448629f03736
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711573"
 ---
 # <a name="flowswitcht-activity-designer"></a>Activity Designer\<T> FlowSwitch
@@ -40,7 +40,7 @@ Passare il puntatore del mouse sull'ActivityDesigner **FlowSwitch \<T> ** per fa
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.FlowSwitch%601> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Vero|Specifica l'espressione valutata per identificare l'oggetto <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> cui passare nel percorso di esecuzione.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|Falso|Specifica un mapping univoco tra i possibili risultati ottenuti dalla valutazione di <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> e un set di oggetti <xref:System.Activities.Statements.FlowNode>.|

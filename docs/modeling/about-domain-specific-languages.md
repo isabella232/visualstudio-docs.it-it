@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597269"
 ---
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 
-A differenza di un linguaggio generico come C# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere istruzioni in un particolare spazio di problemi o dominio.
+A differenza di un linguaggio generico, ad esempio C# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere istruzioni in un particolare spazio di problemi o dominio.
 
 DSLs noti includono le espressioni regolari e SQL. Ogni DSL è molto migliore di un linguaggio generico per la descrizione delle operazioni su stringhe di testo o un database, ma molto peggio per descrivere idee che esulano dal proprio ambito. I singoli settori hanno anche il proprio DSLs. Nel settore delle telecomunicazioni, ad esempio, le lingue per la descrizione delle chiamate vengono ampiamente usate per specificare la sequenza di stati in una telefonata e nel settore aereo viaggi viene usato un linguaggio DSL standard per descrivere le prenotazioni dei voli.
 
@@ -74,7 +74,7 @@ Un linguaggio grafico specifico di dominio deve includere le funzionalità segue
 
 ### <a name="notation"></a>Notation
 
-Un linguaggio specifico di dominio deve avere un set ragionevolmente ridotto di elementi che possono essere facilmente definiti ed estesi per rappresentare costrutti specifici del dominio. Una notazione è costituita da forme, che rappresentano gli elementi e i connettori, che rappresentano le relazioni tra gli elementi, in una superficie di un diagramma grafico. In [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], le forme possono essere estese e perfezionate per rappresentare gli elementi del linguaggio specifico di dominio.
+Un linguaggio specifico di dominio deve avere un set ragionevolmente ridotto di elementi che possono essere facilmente definiti ed estesi per rappresentare costrutti specifici del dominio. Una notazione è costituita da forme, che rappresentano gli elementi e i connettori, che rappresentano le relazioni tra gli elementi, in una superficie di un diagramma grafico. In [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , le forme possono essere estese e perfezionate per rappresentare gli elementi del linguaggio specifico di dominio.
 
 ### <a name="domain-model"></a>Modello di dominio
 
@@ -86,7 +86,7 @@ Uno degli scopi principali di un linguaggio specifico di dominio è quello di ge
 
 ### <a name="serialization"></a>Serializzazione
 
-Un linguaggio specifico di dominio deve essere salvato in modo permanente in un formato che può essere modificato, salvato, chiuso e ricaricato. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utilizza un formato XML che consente di definire e personalizzare la modalità di serializzazione o salvataggio permanente del linguaggio specifico di dominio.
+Un linguaggio specifico di dominio deve essere salvato in modo permanente in un formato che può essere modificato, salvato, chiuso e ricaricato. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Usa un formato XML che consente di definire e personalizzare la modalità di serializzazione o salvataggio permanente del linguaggio specifico di dominio.
 
 ### <a name="integration-with-visual-studio"></a>Integrazione con Visual Studio
 

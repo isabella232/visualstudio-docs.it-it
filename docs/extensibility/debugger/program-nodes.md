@@ -1,5 +1,5 @@
 ---
-title: Nodi di programma Documenti Microsoft
+title: Nodi del programma | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,29 +14,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738212"
 ---
-# <a name="program-nodes"></a>Nodi di programma
+# <a name="program-nodes"></a>Nodi del programma
 Nell'architettura del debugger, un *nodo di programma*:
 
-- È una descrizione leggera di un programma.
+- È una descrizione semplificata di un programma.
 
-- Può identificare se stesso e il processo in cui è in esecuzione. Un nodo di programma può essere collegato, essere scollegato da e descrivere il motore di debug (DE) che lo ha creato, se presente.
+- Consente di identificare se stesso e il processo in cui è in esecuzione. Un nodo del programma può essere collegato a, essere scollegato da e descrivere il motore di debug (DE) che l'ha creata, se disponibile.
 
-- È rappresentato da un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia, in genere creato da un DE o una porta. I nodi di programma vengono aggiunti a una porta chiamando [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Quando un nodo di programma viene aggiunto a una porta, viene aggiunto al processo contenente il programma rappresentato da questo nodo di programma.
+- È rappresentato da un'interfaccia [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) , in genere creata da un de o una porta. I nodi di programma vengono aggiunti a una porta chiamando [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Quando si aggiunge un nodo di programma a una porta, questo viene aggiunto al processo che contiene il programma rappresentato da questo nodo del programma.
 
-  Qualche volta dopo l'avvio di una sessione di debug, a seconda dell'implementazione del pacchetto di debug, i nodi di programma vengono utilizzati per creare i programmi corrispondenti. Quando un processo viene interrogato per i suoi programmi, i programmi vengono enumerati, uno per ogni nodo di programma.
+  Una volta avviata una sessione di debug, a seconda dell'implementazione del pacchetto di debug, i nodi di programma vengono utilizzati per creare i programmi corrispondenti. Quando viene eseguita una query su un processo per i relativi programmi, vengono enumerati i programmi, uno per ogni nodo del programma.
 
-  Prima di un programma è collegato, l'IDE richiede solo una descrizione leggera del programma. Queste informazioni possono essere ottenute dal nodo del programma. Una volta collegato il programma, l'IDE visualizza informazioni più dettagliate, ad esempio un elenco di tutti i thread in esecuzione nel programma. Queste informazioni vengono ottenute dal programma stesso.
+  Prima che un programma venga collegato a, l'IDE necessita solo di una descrizione semplice del programma. Queste informazioni possono essere ottenute dal nodo del programma. Una volta che il programma è collegato a, nell'IDE vengono visualizzate informazioni più dettagliate, ad esempio un elenco di tutti i thread in esecuzione nel programma. Queste informazioni vengono ottenute dal programma stesso.
 
 ## <a name="see-also"></a>Vedere anche
 - [Programmi](../../extensibility/debugger/programs.md)
 - [Processi](../../extensibility/debugger/processes.md)
 - [Motore di debug](../../extensibility/debugger/debug-engine.md)
-- [Concetti del debuggerDebugger concepts](../../extensibility/debugger/debugger-concepts.md)
+- [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

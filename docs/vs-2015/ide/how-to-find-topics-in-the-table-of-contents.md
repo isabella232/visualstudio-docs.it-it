@@ -17,22 +17,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651879"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Procedura: trovare argomenti nel sommario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nella scheda **Contenuto** è possibile usare il sommario per trovare le informazioni. Il sommario è un elenco espandibile che contiene tutti argomenti dei libri installati. Per informazioni sull'accessibilità relative a come spostarsi nel sommario, vedere [Tasti di scelta rapida (Help Viewer)](../ide/shortcut-keys-help-viewer.md).
+Nella scheda **Contenuto** è possibile usare il sommario per trovare le informazioni. Il sommario è un elenco espandibile che contiene tutti argomenti dei libri installati. Per informazioni sull'accessibilità relative a come spostarsi nel sommario, vedere [tasti di scelta rapida (Visualizzatore della guida)](../ide/shortcut-keys-help-viewer.md).
 
 > [!IMPORTANT]
 > L'ambito degli argomenti disponibili nel sommario dipende dal filtro selezionato.
 
 ## <a name="filter-the-toc"></a>Filtrare il sommario
- È possibile filtrare il sommario per limitare l'ambito degli argomenti visualizzati nella scheda **contenuto** . i titoli vengono visualizzati nell'elenco solo se contengono la radice del termine specificato. Ad esempio, se si specifica la parola "risoluzione" come filtro, verranno visualizzati solo i titoli contenenti la parola "risolvere" o "risoluzione". I nodi i cui titoli non contengono il termine verranno compressi in un unico nodo con i puntini di sospensione (...).
+ È possibile filtrare il sommario per limitare l'ambito degli argomenti visualizzati nella scheda **contenuto** . I titoli vengono visualizzati nell'elenco solo se contengono la radice del termine specificato. Ad esempio, se si specifica la parola "risoluzione" come filtro, verranno visualizzati solo i titoli contenenti la parola "risolvere" o "risoluzione". I nodi i cui titoli non contengono il termine verranno compressi in un unico nodo con i puntini di sospensione (...).
 
 #### <a name="to-filter-the-toc"></a>Per filtrare il sommario
 
@@ -50,7 +50,7 @@ Nella scheda **Contenuto** è possibile usare il sommario per trovare le informa
 
 1. Visualizzare un argomento.
 
-2. Fare clic sul pulsante **Mostra argomento nel contenuto** nella barra degli strumenti oppure premere CTRL+S.
+2. Fare clic sul pulsante **Mostra argomento nel contenuto** nella barra degli strumenti oppure premere CTRL + S.
 
      Viene aperta la scheda **Contenuto** in cui viene visualizzata la posizione dell'argomento nel sommario.
 

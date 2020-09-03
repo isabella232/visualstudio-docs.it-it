@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985383"
 ---
 # <a name="word-object-model-overview"></a>Panoramica del modello a oggetti di Word
@@ -37,9 +37,9 @@ ms.locfileid: "72985383"
 
 - [Usare il testo nei documenti](../vsto/working-with-text-in-documents.md)
 
-- [Usare le tabelle](../vsto/working-with-tables.md)
+- [Utilizzare le tabelle](../vsto/working-with-tables.md)
 
-## <a name="understanding"></a>Informazioni sul modello a oggetti di Word
+## <a name="understand-the-word-object-model"></a><a name="understanding"></a> Informazioni sul modello a oggetti di Word
  In Word sono disponibili centinaia di oggetti con cui interagire. Questi oggetti sono organizzati in una gerarchia che corrisponde strettamente all'interfaccia utente. All'inizio della gerarchia vi è l'oggetto <xref:Microsoft.Office.Interop.Word.Application> . Questo oggetto rappresenta l'istanza corrente di Word. L'oggetto <xref:Microsoft.Office.Interop.Word.Application> contiene gli oggetti <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>e <xref:Microsoft.Office.Interop.Word.Range> . Ciascuno di questi oggetti dispone di numerosi metodi e proprietà che è possibile modificare e usare con l'oggetto.
 
  La figura seguente mostra una visualizzazione di questi oggetti nella gerarchia del modello a oggetti di Word.
@@ -50,7 +50,7 @@ ms.locfileid: "72985383"
 
  Le sezioni riportate di seguito forniscono una breve descrizione degli oggetti di livello superiore e della loro reciproca interazione. Tali oggetti comprendono i cinque seguenti:
 
-- Oggetto Application
+- Oggetto applicazione
 
 - Oggetto Document
 
@@ -62,7 +62,7 @@ ms.locfileid: "72985383"
 
   Oltre al modello a oggetti di Word, i progetti di Office in Visual Studio forniscono *elementi host* e *controlli host* che estendono alcuni oggetti nel modello a oggetti di Word. Gli elementi e i controlli host si comportano come gli oggetti di Word che vengono estesi, ma dispongono anche di funzionalità aggiuntive, ad esempio funzionalità di data binding ed eventi aggiuntivi. Per altre informazioni, vedere [automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md) e [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
 
-### <a name="application-object"></a>Oggetto Application
+### <a name="application-object"></a>Oggetto applicazione
  L'oggetto <xref:Microsoft.Office.Interop.Word.Application> rappresenta l'applicazione Word e costituisce l'elemento padre di tutti gli altri oggetti. I membri vengono in genere applicati a Word nel suo complesso. È possibile usare le proprietà e i metodi di questo oggetto per controllare l'ambiente Word.
 
  Nei progetti di componente aggiuntivo VSTO è possibile accedere all'oggetto <xref:Microsoft.Office.Interop.Word.Application> usando il campo `Application` della classe `ThisAddIn` . Per altre informazioni, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
@@ -115,7 +115,7 @@ ms.locfileid: "72985383"
 
   In Visual Studio l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> viene esteso fornendo il controllo host <xref:Microsoft.Office.Tools.Word.Bookmark> . Il controllo host <xref:Microsoft.Office.Tools.Word.Bookmark> si comporta come un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark>nativo, ma dispone di ulteriori eventi e funzionalità di data binding. È possibile associare dati a un controllo Bookmark contenuto in un documento nello stesso modo in cui si associano dati a un controllo casella di testo di un Windows Form. Per altre informazioni, vedere [Bookmark Control](../vsto/bookmark-control.md).
 
-## <a name="WordOMDocumentation"></a>Usare la documentazione del modello a oggetti di Word
+## <a name="use-the-word-object-model-documentation"></a><a name="WordOMDocumentation"></a> Usare la documentazione del modello a oggetti di Word
  Per informazioni complete sul modello a oggetti di Word, è possibile usare il riferimento dell'assembly di interoperabilità primario (PIA) di Word e il riferimento del modello a oggetti Visual Basic, Applications Edition (VBA).
 
 ### <a name="primary-interop-assembly-reference"></a>Riferimento all'assembly di interoperabilità primario
@@ -126,14 +126,14 @@ ms.locfileid: "72985383"
 ### <a name="vba-object-model-reference"></a>Riferimento del modello a oggetti VBA
  Nel riferimento del modello a oggetti VBA è illustrato il modello a oggetti di Word esposto al codice VBA. Per altre informazioni, vedere [riferimento del modello a oggetti di Word 2010](/office/vba/api/overview/Word/object-model).
 
- Tutti gli oggetti e i membri nel riferimento del modello a oggetti VBA corrispondono a tipi e membri nell'assembly di interoperabilità primario (PIA) di Word. Ad esempio, l'oggetto documento nel riferimento del modello a oggetti VBA corrisponde all'oggetto <xref:Microsoft.Office.Interop.Word.Document> nella parola PIA. Sebbene il riferimento del modello a oggetti VBA fornisca esempi di codice per la maggior parte delle proprietà, dei metodi e degli eventi, è necessario convertire il codice VBA di questo riferimento per Visual Basic o Visual C# se si vuole usarlo in un progetto di Word che è possibile creare tramite Visual Studio.
+ Tutti gli oggetti e i membri nel riferimento del modello a oggetti VBA corrispondono a tipi e membri nell'assembly di interoperabilità primario (PIA) di Word. Ad esempio, l'oggetto documento nel riferimento del modello a oggetti VBA corrisponde all' <xref:Microsoft.Office.Interop.Word.Document> oggetto nell'assembly di interoperabilità primario di Word. Sebbene il riferimento del modello a oggetti VBA fornisca esempi di codice per la maggior parte delle proprietà, dei metodi e degli eventi, è necessario convertire il codice VBA di questo riferimento per Visual Basic o Visual C# se si vuole usarlo in un progetto di Word che è possibile creare tramite Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
-- [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
+- [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Usare i documenti](../vsto/working-with-documents.md)
 - [Usare il testo nei documenti](../vsto/working-with-text-in-documents.md)
-- [Usare le tabelle](../vsto/working-with-tables.md)
+- [Utilizzare le tabelle](../vsto/working-with-tables.md)
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

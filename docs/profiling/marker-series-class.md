@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f7df74624ea602b5c996d5523a45826137119f5
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330708"
 ---
 # <a name="marker_series-class"></a>Classe marker_series
@@ -28,18 +28,18 @@ Rappresenta un canale seriale di eventi generati da un singolo provider.
 class marker_series;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
 ### <a name="public-constructors"></a>Costruttori pubblici
 
-|Nome|Description|
+|Name|Descrizione|
 |----------|-----------------|
 |[Costruttore marker_series:: marker_series](../profiling/marker-series-marker-series-constructor.md)|Inizializza una nuova istanza della classe `marker_series`.|
 |[Distruttore marker_series:: ~ marker_series](../profiling/marker-series-tilde-marker-series-destructor.md)|Elimina l'oggetto marker_series e rilascia tutte le risorse allocate.|
 
 ### <a name="public-methods"></a>Metodi pubblici
 
-|Nome|Description|
+|Name|Descrizione|
 |----------|-----------------|
 |[Metodo marker_series:: is_enabled](../profiling/marker-series-is-enabled-method.md)|Determina se il provider è stato abilitato da una sessione.|
 |[Metodo marker_series:: write_alert](../profiling/marker-series-write-alert-method.md)|Scrive un avviso nel file di traccia del visualizzatore di concorrenza.|
@@ -54,5 +54,5 @@ class marker_series;
 
  **Spazio dei nomi:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [spazio dei nomi Diagnostic](../profiling/diagnostic-namespace.md)

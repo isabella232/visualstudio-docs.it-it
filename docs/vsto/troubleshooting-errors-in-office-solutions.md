@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234692"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Risolvere gli errori nelle soluzioni Office
@@ -40,7 +40,7 @@ ms.locfileid: "87234692"
 
 - [Debug di progetti](#debugging)
 
-## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Creazione, aggiornamento e apertura di progetti
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> Creazione, aggiornamento e apertura di progetti
  Gli errori seguenti possono verificarsi quando si creano o si aprono progetti di Office.
 
 ### <a name="the-project-cannot-be-created"></a>Non è possibile creare il progetto
@@ -84,7 +84,7 @@ ms.locfileid: "87234692"
 
  Dopo aver completato l'aggiornamento del progetto, è possibile disinstallare Visual Studio 2005 Tools per Office Second Edition Runtime dal computer di sviluppo se non viene usato da altre soluzioni Office.
 
-## <a name="use-the-designers"></a><a name="designers"></a>Usare le finestre di progettazione
+## <a name="use-the-designers"></a><a name="designers"></a> Usare le finestre di progettazione
  Gli errori seguenti possono verificarsi quando si lavora con la finestra di progettazione di documenti, cartelle di lavoro o fogli di lavoro nei progetti a livello di documento.
 
 ### <a name="designer-failed-to-load-correctly"></a>Impossibile caricare correttamente la finestra di progettazione
@@ -105,7 +105,7 @@ ms.locfileid: "87234692"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Il comando Inserisci clip art non esegue alcuna operazione nella finestra di progettazione di Visual Studio
  Quando Excel o Word è aperto nella finestra di progettazione di Visual Studio, facendo clic sul pulsante **clip art** nella scheda **illustrazioni** della barra multifunzione non viene aperto il riquadro attività **clip art** . Per aggiungere ClipArt, è necessario aprire la copia della cartella di lavoro o del documento che si trova nella cartella principale del progetto (non la copia presente nella cartella *\bin* ) al di fuori di Visual Studio, aggiungere la clip art e quindi salvare la cartella di lavoro o il documento.
 
-## <a name="write-code"></a><a name="code"></a>Scrivi codice
+## <a name="write-code"></a><a name="code"></a> Scrivi codice
  Gli errori seguenti possono verificarsi quando si scrive codice nei progetti di Office.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Alcuni eventi degli oggetti di Office non sono accessibili quando si usa C\#
@@ -123,7 +123,7 @@ ms.locfileid: "87234692"
 
  Per ulteriori informazioni sulle interfacce eventi negli [assembly di interoperabilità primari di Office, vedere Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Non è possibile fare riferimento alle classi di interoperabilità primario di Office nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Non è possibile fare riferimento alle classi di interoperabilità primario di Office nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
  Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] il codice che fa riferimento a una classe definita in un assembly di interoperabilità primario di Office non verrà compilato per impostazione predefinita. Nelle classi degli assembly di interoperabilità primari viene utilizzata la convenzione di denominazione *ObjectName*Class, ad esempio <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Ad esempio, il codice seguente di un progetto di componente aggiuntivo VSTO di Word non verrà compilato.
 
 ```vb
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Gli errori del compilatore si verificano dopo l'eliminazione di un controllo NamedRange
  Se si elimina un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> da un foglio di lavoro che non è il foglio di lavoro attivo nella finestra di progettazione, il codice generato automaticamente potrebbe non venire rimosso dal progetto e potrebbero verificarsi errori del compilatore. Per assicurarsi che il codice venga rimosso, è consigliabile selezionare sempre il foglio di lavoro contenente il controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> per renderlo attivo prima di eliminare il controllo. Se il codice generato automaticamente non viene eliminato quando si elimina il controllo, è possibile fare in modo che venga eliminato dalla finestra di progettazione attivando il foglio di lavoro e apportando una modifica, in modo che il foglio di lavoro venga contrassegnato come modificato. Quando si ricompila il progetto, il codice viene rimosso.
 
-## <a name="debug-projects"></a><a name="debugging"></a>Debug di progetti
+## <a name="debug-projects"></a><a name="debugging"></a> Debug di progetti
  Gli errori seguenti possono verificarsi quando si esegue il debug di progetti di Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>La richiesta di disinstallazione viene visualizzata quando si pubblica e si installa una soluzione nel computer di sviluppo

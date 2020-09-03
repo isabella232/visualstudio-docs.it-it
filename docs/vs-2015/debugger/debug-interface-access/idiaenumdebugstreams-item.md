@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e7559ffe33c5e53ef882962d04e0e6f69b49a6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182573"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flusso di debug tramite un indice o nome.  
+Recupera un flusso di debug per mezzo di un indice o un nome.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,13 +36,13 @@ HRESULT Item ( 
   
 #### <a name="parameters"></a>Parametri  
  index  
- [in] Indice o nome del flusso di debug da recuperare. Se si usa una variante dell'integer, deve essere compreso nell'intervallo da 0 a `count`-1, dove `count` viene restituito dalle [Idiaenumdebugstreams](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) (metodo).  
+ in Indice o nome del flusso di debug da recuperare. Se viene usata una variante Integer, deve essere compresa nell'intervallo da 0 a `count` -1, dove `count` viene restituito dal metodo [IDiaEnumDebugStreams:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) .  
   
  flusso  
- [out] Restituisce un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) oggetto che rappresenta il flusso di debug specificato.  
+ out Restituisce un oggetto [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) che rappresenta il flusso di debug specificato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="example"></a>Esempio  
   

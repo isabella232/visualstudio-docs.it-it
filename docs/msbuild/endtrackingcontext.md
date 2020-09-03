@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf982200b8e65e404325bdbd189ff3b0f2daebac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634240"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
@@ -34,7 +34,7 @@ HRESULT WINAPI EndTrackingContext();
 
 ## <a name="return-value"></a>Valore restituito
 
-**HRESULT** con il bit **SUCCEEDED** impostato se il contesto di rilevamento è stato terminato.
+**HRESULT** con il bit **succeeded** impostato se il contesto di rilevamento è terminato.
 
 ## <a name="requirements"></a>Requisiti
 

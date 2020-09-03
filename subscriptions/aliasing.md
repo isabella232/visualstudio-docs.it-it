@@ -8,10 +8,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Si possono verificare errori di accesso se si usano alias o nomi descrittivi
 ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234640"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>L'accesso alle sottoscrizioni di Visual Studio potrebbe non riuscire quando si usano gli alias
@@ -40,7 +40,7 @@ Una mancata corrispondenza UPN può essere rilevata quando una società dispone 
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Come correggere un UPN non corrispondente
 
-1. Accedere al portale di gestione dell'amministrazione di Visual Studio[https://manage.visualstudio.com](https://manage.visualstudio.com) 
+1. Accedere al portale di gestione dell'amministrazione di Visual Studio [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 2. Individuare il Sottoscrittore con il problema di mancata corrispondenza UPN. La funzionalità [filtro](search-license.md) può semplificare la ricerca di un Sottoscrittore.
 
@@ -56,7 +56,7 @@ Gli account di sottoscrizione personali possono anche riscontrare problemi se l'
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Come rilevare se il proprio account di sottoscrizione personale è influenzato da un problema di aliasing
 
-1. Accedi a[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
+1. Accedi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
 0. Verificare che l'indirizzo di posta elettronica di accesso elencato nella parte superiore destra della pagina corrisponda all'indirizzo usato per l'accesso.  Se l'indirizzo di posta elettronica connesso non corrisponde a quello usato per accedere al sito Web, si verifica un conflitto tra l'account e l'alias.
 
@@ -82,7 +82,7 @@ In qualità di amministratore, sono disponibili due opzioni per garantire che i 
 - La seconda opzione (meno sicura) consiste nel consentire ai sottoscrittori di accedere con un indirizzo di posta elettronica diverso da quello dell'indirizzo di posta elettronica della directory.
 
 Entrambe le opzioni sono configurate nel portale di amministrazione completando i passaggi seguenti:  
-1. Accedi[https://manage.visualstudio.com](https://manage.visualstudio.com) 
+1. Accedi [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 0. Se si modifica un singolo utente, selezionare l'utente nella tabella e fare clic con il pulsante destro del mouse per modificare. Verrà aperto un pannello in cui è possibile modificare l'indirizzo di posta elettronica di accesso. Apportare gli aggiornamenti necessari nel campo indirizzo di posta elettronica di accesso. Fare clic su Save (Salva) per rendere effettive le modifiche.  
 

@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87115337"
 ---
 # <a name="program-vsto-add-ins"></a>Componenti aggiuntivi VSTO di programma
@@ -105,7 +105,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 - [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)
 
-### <a name="access-a-document-when-the-office-application-starts"></a><a name="AccessingDocuments"></a>Accedere a un documento all'avvio dell'applicazione di Office
+### <a name="access-a-document-when-the-office-application-starts"></a><a name="AccessingDocuments"></a> Accedere a un documento all'avvio dell'applicazione di Office
  Non tutte le applicazioni di [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aprono automaticamente un documento all'avvio e nessuna applicazione di [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] apre un documento all'avvio. Pertanto, non aggiungere il codice nel `ThisAdd-In_Startup` gestore eventi se il codice richiede l'apertura di un documento. Al contrario, aggiungere tale codice a un evento generato dall'applicazione di Office quando un utente crea o apre un documento. In questo modo, è possibile garantire che un documento venga aperto prima che il codice esegua le relative operazioni.
 
  Nell'esempio di codice seguente si usa un documento di Word solo quando l'utente crea un documento o si apre un documento esistente.

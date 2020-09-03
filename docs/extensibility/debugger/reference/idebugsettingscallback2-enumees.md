@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugSettingsCallback2::EnumEEs . Documenti Microsoft
+title: 'IDebugSettingsCallback2:: enums | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19e0763ad74b3486b8bc2548ec129d9e95feb771
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720233"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Enumera gli analizzatori di espressioni disponibili in base alla lingua e agli identificatori fornitore.
+Enumera gli analizzatori di espressioni disponibili in base agli identificatori di lingua e fornitore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ public int EnumEEs(
 
 ## <a name="parameters"></a>Parametri
 `celtBuffer`\
-[in] Numero di elementi `pceltEEs` nel buffer.
+in Numero di elementi nel `pceltEEs` buffer.
 
 `rgguidLang`\
-[in, out] Identificatore univoco del linguaggio di programmazione.
+[in, out] Identificatore univoco per il linguaggio di programmazione.
 
 `rgguidVendor`\
-[in, out] Identificatore univoco del fornitore.
+[in, out] Identificatore univoco per il fornitore.
 
 `pceltEEs`\
-[in, out] Matrice di valutatori di espressioni.
+[in, out] Matrice di analizzatori di espressioni.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
