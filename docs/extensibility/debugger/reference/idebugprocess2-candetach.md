@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProcess2::CanDetach . Documenti Microsoft
+title: 'IDebugProcess2:: CanDetach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2bfb7b7b586f9c8b86e75d453389525c61a63bc4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724184"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
-Determina se il gestore di sessione di debug (SDM) può scollegare il processo.
+Determina se la gestione del debug della sessione (SDM) può scollegare il processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ int CanDetach();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se ha `S_OK.` esito positivo, restituisce Restituisce `S_FALSE` se il debugger non può disconnettersi dal processo. In caso contrario, verrà restituito un codice di errore.
+ Se l'operazione riesce, restituisce `S_OK.` restituisce `S_FALSE` se il debugger non è in grado di disconnettersi dal processo. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)

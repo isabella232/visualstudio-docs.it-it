@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d2db5bbfa4f34d86d3bf20cfe6bcc42b3dc00d0
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876125"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Finestra di dialogo Definizione di CorrelatesOn
@@ -34,7 +34,7 @@ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente (U
 
 È possibile trascinare l'ActivityDesigner **Receive** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro, laddove le attività vengono in genere posizionate. Se si elimina l'ActivityDesigner, viene creata un' <xref:System.ServiceModel.Activities.Receive> attività con il valore predefinito <xref:System.Activities.Activity.DisplayName%2A> Receive. Per aprire la finestra di dialogo **definizione CorrelatesOn** , selezionare l'ActivityDesigner **Receive** , quindi nella griglia delle proprietà selezionare il pulsante con i puntini di sospensione accanto al testo della raccolta per la proprietà **CorrelatesOn** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [Finestra di dialogo Aggiungi inizializzatori di correlazione](../workflow-designer/add-correlationinitializers-dialog-box.md)

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProcessEx2::Detach . Documenti Microsoft
+title: IDebugProcessEx2::D etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723354"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-Questo metodo informa il processo che una sessione non esegue più il debug del processo.
+Questo metodo informa il processo che una sessione non sta più eseguendo il debug del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>Parametri
 `pSession`\
-[in] Valore che identifica in modo univoco la sessione da cui scollegare il processo.
+in Valore che identifica in modo univoco la sessione da cui scollegare il processo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- L'interfaccia `pSession` passata deve essere trattata solo come cookie, un valore che identifica in modo univoco il gestore di debug della sessione originariamente collegato a questo processo. nessuno dei metodi sull'interfaccia fornita è funzionale.
+ L'interfaccia passata deve `pSession` essere considerata solo come un cookie, un valore che identifica in modo univoco la gestione del debug della sessione che originariamente era collegata a questo processo; nessuno dei metodi nell'interfaccia fornita è funzionante.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

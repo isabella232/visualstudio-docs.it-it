@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77416396"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
@@ -54,7 +54,7 @@ Prima si analizzare un bug o un errore, riflettere sui presupposti che hanno fat
 * Si è a conoscenza della finalità del codice? Eseguire il debug del codice di un altro sviluppatore è spesso più difficile. Se non si tratta del proprio codice, può essere necessario dedicare un po' di tempo a conoscere il codice prima di poterne eseguire il debug in modo efficace.
 
     > [!TIP]
-    > Quando si scrive il codice, iniziare con un codice semplice che funzioni. (Un buon codice di esempio è utile qui.) In alcuni casi, è più semplice correggere un set di codice di grandi dimensioni o complicato iniziando con una piccola parte di codice che illustra l'attività principale che si sta tentando di ottenere. È quindi possibile modificare o aggiungere codice in modo incrementale, testando l'eventuale presenza di errori in corrispondenza di ogni punto.
+    > Quando si scrive il codice, iniziare con un codice semplice che funzioni. (Il codice di esempio è utile qui). In alcuni casi, è più facile correggere un set di codice di grandi dimensioni o complesse iniziando con una piccola parte di codice che illustra l'attività di base che si sta tentando di realizzare. È quindi possibile modificare o aggiungere codice in modo incrementale, testando l'eventuale presenza di errori in corrispondenza di ogni punto.
 
 Riflettendo sui presupposti, si può ridurre il tempo necessario per individuare un problema nel codice e quello necessario per risolverlo.
 
@@ -64,7 +64,7 @@ Quando si esegue un'app normalmente, errori e risultati non corretti sono visibi
 
 L'esecuzione di un'app all'interno di un debugger, o in *modalità di debug*, consente al debugger di monitorare attivamente tutto ciò che accade durante l'esecuzione del programma. Consente anche di sospendere l'app in un punto qualsiasi per esaminarne lo stato e di eseguire quindi il codice riga per riga per controllare ogni dettaglio durante l'esecuzione.
 
-In Visual Studio, si entra in modalità di debug utilizzando **F5** (o **il** > debug**di debug** comando di menu o il ![pulsante](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") **Avvia debug** nella barra degli strumenti di debug). In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
+In Visual Studio è possibile attivare la modalità di debug tramite **F5** (oppure **Debug**il  >  comando di menu debug**Avvia debug** o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug). In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 Se non è stata restituita un'eccezione, probabilmente si ha già un'idea di dove cercare il problema nel codice. In questi casi si usano i *punti di interruzione* con il debugger per avere l'opportunità di esaminare il codice più attentamente. I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio deve sospendere il codice in esecuzione in modo da consentire di esaminare i valori delle variabili, il comportamento della memoria o la sequenza di esecuzione del codice.
 
@@ -76,22 +76,22 @@ Per illustrare questi concetti si userà un codice di esempio che contiene già 
 
 Verrà creata un'applicazione con alcuni bug.
 
-1. È necessario che sia installato Visual Studio e il carico di lavoro di **sviluppo desktop .NET** o il carico di lavoro di **sviluppo multipiattaforma .NET Core,** a seconda del tipo di app che si desidera creare.
+1. È necessario che Visual Studio sia installato e che il carico di lavoro **sviluppo per desktop .NET** o il carico di lavoro **sviluppo multipiattaforma .NET Core** sia installato, a seconda del tipo di app che si vuole creare.
 
-    Se Visual Studio non è già stato installato, passare alla pagina dei [download](https://visualstudio.microsoft.com/downloads/) di Visual Studio per installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
 
-    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, fare clic su **Strumenti** > **Get Tools and Features**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **di sviluppo desktop .NET** (o **sviluppo multipiattaforma .NET Core),** quindi scegliere **Modifica**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, fare clic su **strumenti**  >  **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo di applicazioni **desktop .NET** (o **sviluppo multipiattaforma .NET Core**), quindi scegliere **modifica**.
 
 1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Nella finestra di avvio scegliere **Crea un nuovo progetto.** Digitare **console** nella casella di ricerca e quindi scegliere **App console (.NET Core)** o **App console (.NET Framework)**. Scegliere **Avanti**. Digitare un nome di progetto, ad esempio **ConsoleApp-FirstApp** e fare clic su **Crea**.
+    Nella finestra Start scegliere **Crea un nuovo progetto**. Digitare **console** nella casella di ricerca e quindi scegliere **app console (.NET Core)** o **app console (.NET Framework)**. Scegliere **Avanti**. Digitare un nome di progetto, ad esempio **ConsoleApp-FirstApp** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **App console** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)**. Digitare un nome, ad esempio **ConsoleApp-FirstApp** e fare clic su **OK**.
+    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **App console** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)**. Digitare un nome, ad esempio **ConsoleApp-FirstApp** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **App console (.NET Framework)** o **App console (.NET Core)** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità**. Viene aperto il programma di installazione di Visual Studio. Scegliere **lo sviluppo multipiattaforma .NET Core** o il carico di lavoro di sviluppo desktop **.NET,** quindi scegliere **Modifica**.
+    Se il modello di progetto **App console (.NET Framework)** o **App console (.NET Core)** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità**. Viene aperto il programma di installazione di Visual Studio. Scegliere lo **sviluppo multipiattaforma .NET Core** o il carico di lavoro sviluppo di applicazioni **desktop .NET** , quindi scegliere **modifica**.
 
     Visual Studio crea il progetto della console che viene visualizzato nel riquadro destro di Esplora soluzioni.
 
@@ -182,7 +182,7 @@ Verrà creata un'applicazione con alcuni bug.
 
 ### <a name="run-the-app"></a>Eseguire l'app
 
-1. Premere **F5** o il ![pulsante](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") **Avvia debug** nella barra degli strumenti Debug, che si trova sopra l'editor di codice.
+1. Premere **F5** o il pulsante **Avvia debug** per ![avviare il debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti debug, che si trova sopra l'editor di codice.
 
     L'app viene avviata e il debugger non visualizza alcuna eccezione. Tuttavia, l'output visualizzato nella finestra della console è diverso da quanto ci si aspetta. Ecco l'output previsto:
 
@@ -223,7 +223,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     Poiché si è riscontrato un problema nell'output, il debug verrà avviato esaminando il codice precedente che imposta l'output nel debugger.
 
-1. Fare clic sul pulsante **Riavvia** ![app di riavvio](../debugger/media/dbg-tour-restart.png "App di riavvio") nella barra degli strumenti Debug **(CTRL** + **Maiusc** + **F5**).
+1. Fare clic sul pulsante **Riavvia** ![app riavvia](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL**  +  **MAIUSC**  +  **F5**).
 
     L'app verrà sospesa in corrispondenza del punto di interruzione impostato. L'evidenziazione di colore giallo indica il punto in cui il debugger viene sospeso (la riga di codice gialla non è ancora stata eseguita).
 
@@ -255,11 +255,11 @@ Verrà creata un'applicazione con alcuni bug.
     public GType GalaxyType { get; set; }
     ```
 
-1. Fare clic sul pulsante **Riavvia** ![app riavvia](../debugger/media/dbg-tour-restart.png "App di riavvio") nella barra degli strumenti Debug (**Ctrl** + **Maiusc** + **F5**) per ricompilare il codice e riavviare.
+1. Fare clic sul pulsante **Riavvia** l' ![app](../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL**  +  **MAIUSC**  +  **F5**) per ricompilare il codice e riavviare.
 
     Ora, quando il debugger viene sospeso in corrispondenza di `Console.WriteLine`, passando il puntatore su `theGalaxy.GalaxyType.MyGType` si noterà che il valore è impostato correttamente.
 
-1. Rimuovere il punto di interruzione facendo clic sul cerchio del punto di interruzione nel margine sinistro oppure fare clic con il pulsante destro del mouse e scegliere **Elimina** > punto di**interruzione**), quindi premere **F5** per continuare.
+1. Rimuovere il punto di interruzione facendo clic sul cerchio del punto di interruzione nel margine sinistro (oppure facendo clic **Breakpoint**con il pulsante destro del mouse e scegliendo punto di interruzione  >  **Elimina**punto di interruzione), quindi premere **F5** per continuare.
 
     L'app viene eseguita e visualizza l'output. Ora sembra tutto corretto, ma si nota qualcosa. Ci si aspettava che la galassia "Small Magellanic Cloud" venisse indicata nell'output della console come galassia di tipo "Irregular", ma il tipo di galassia non viene indicato affatto.
 
@@ -280,7 +280,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     Il tipo di galassia viene impostato in questo codice. Esaminarlo quindi in dettaglio.
 
-1. Fare clic sul pulsante **Riavvia** ![app di riavvio](../debugger/media/dbg-tour-restart.png "App di riavvio") nella barra degli strumenti Debug **(Ctrl** + **Shift** + **F5**) per riavviare.
+1. Fare clic sul pulsante **Riavvia** ![app](../debugger/media/dbg-tour-restart.png "RestartApp") riavvia sulla barra degli strumenti Debug (**CTRL**  +  **MAIUSC**  +  **F5**) per riavviare.
 
     Il debugger viene sospeso sulla riga di codice in cui è stato impostato il punto di interruzione.
 
@@ -298,7 +298,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     ![Individuare un errore di digitazione](../debugger/media/beginners-typo.png)
 
-    Esaminando il codice, si nota un errore di digitazione nell'istruzione `case 'l'`. Quella corretta è `case 'I'`.
+    Esaminando il codice, si nota un errore di digitazione nell'istruzione `case 'l'`. Il valore dovrebbe essere `case 'I'`.
 
 1. Fare clic sul codice per `case 'l'` e sostituirla con `case 'I'`.
 
@@ -308,7 +308,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     Premere un tasto qualsiasi per terminare l'app.
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>Riepilogo
 
 Quando si nota un problema, usare il debugger e i [comandi di esecuzione](../debugger/navigating-through-code-with-the-debugger.md), ad esempio **F10** e **F11**, per trovare l'area di codice con il problema.
 
@@ -329,4 +329,4 @@ Dopo aver trovato l'area di codice con il problema, usare il debugger per analiz
 In questo articolo si sono appresi alcuni concetti di debug generali. In seguito, è possibile apprendere di più sul debugger.
 
 > [!div class="nextstepaction"]
-> [Primo sguardo al debugger](../debugger/debugger-feature-tour.md)
+> [Presentazione del debugger](../debugger/debugger-feature-tour.md)

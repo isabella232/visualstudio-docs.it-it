@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPrimitiveTypeField . Documenti Microsoft
+title: IDebugPrimitiveTypeField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 07cd3d1a1f80d1c5e816877b7e70a9e65d24d650
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724265"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
-Rappresenta un valore di enumerazione di tipo primitivo da un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia.
+Rappresenta un valore di enumerazione di tipo primitivo da un'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -27,15 +27,15 @@ IDebugPrimitiveTypeField : IDebugField
 ```
 
 ## <a name="methods"></a>Metodi
- Oltre ai metodi sul IDebugField interfaccia, questa interfaccia implementa il metodo seguente:In addition to the methods on the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface, this interface implements the following method:
+ Oltre ai metodi sull'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , questa interfaccia implementa il metodo seguente:
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|Recupera il tipo primitivo associato a questo campo.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Sh.h
+ Intestazione: sh. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

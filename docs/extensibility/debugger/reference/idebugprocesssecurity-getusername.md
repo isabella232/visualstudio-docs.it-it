@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProcessSecurity::NomeUtente.IDebugProcessSecurity::GetUserName . Documenti Microsoft
+title: 'IDebugProcessSecurity:: GetUserName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef00a0b7489c3e5cb709520546f3d3f26c8a4eba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723254"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
@@ -39,13 +39,13 @@ int GetUserName (
 
 ## <a name="parameters"></a>Parametri
 `pbstrUserName`\
-[fuori] Stringa contenente il nome utente.
+out Stringa che contiene il nome utente.
 
 ## <a name="return-value"></a>Valore restituito
  Se il metodo ha esito positivo, viene restituito `S_OK`. In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- `GetUserName`restituisce il nome utente visualizzato nella colonna **Nome utente** della finestra di dialogo Connetti **a processo.** Per visualizzare la finestra di dialogo **Connetti a processo** , scegliere Connetti a **processo** dal menu **Strumenti** nell'ambiente [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] di sviluppo integrato (IDE).
+ `GetUserName` Restituisce il nome utente visualizzato nella colonna **nome utente** della finestra di dialogo **Connetti a processo** . Per visualizzare la finestra di dialogo **Connetti a processo** , scegliere **Connetti a processo** dal menu **strumenti** nel [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE).
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProcessEx2::AddImplicitProgramNodes . Documenti Microsoft
+title: 'IDebugProcessEx2:: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723400"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>Parametri
 `guidLaunchingEngine`\
-[in] Il `GUID` di un DE che deve essere utilizzato per avviare i programmi (e si presume di aggiungere i propri nodi di programma).
+in `GUID` Di un de da usare per avviare i programmi (si presuppone che aggiunga i propri nodi del programma).
 
 `rgguidSpecificEngines`\
-[in] Matrice `GUID`di dE s per i quali verranno aggiunti i nodi del programma.
+in Matrice di `GUID` des per cui verranno aggiunti i nodi del programma.
 
 `celtSpecificEngines`\
-[in] Numero di `GUID`s `rgguidSpecificEngines` nella matrice.
+in Numero di `GUID` s nella `rgguidSpecificEngines` matrice.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
-- [I nodi](../../../extensibility/debugger/program-nodes.md) di programma verranno aggiunti per ogni DE elencato in `rgguidSpecificEngines`, escluso il motore di avvio (come indicato in `guidLaunchingEngine`), che si presuppone di aggiungere il proprio nodo di programma all'avvio di un programma.
+- I [nodi del programma](../../../extensibility/debugger/program-nodes.md) verranno aggiunti per ogni de elencato in, `rgguidSpecificEngines` escluso il motore di avvio (come indicato in `guidLaunchingEngine` ), che si presuppone aggiungere il proprio nodo di programma all'avvio di un programma.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

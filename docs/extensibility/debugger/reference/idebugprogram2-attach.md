@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgram2::Attach . Documenti Microsoft
+title: 'IDebugProgram2:: alleghi | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7d0b182ba7a873816e3a7aa32d39beb2c63cc5ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723144"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
-Si collega al programma.
+Si connette al programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,19 +41,19 @@ int Attach( 
 
 ## <a name="parameters"></a>Parametri
 `pCallback`\
-[in] Oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) da utilizzare per la notifica degli eventi di debug.
+in Oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) da utilizzare per la notifica degli eventi di debug.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. La tabella seguente mostra alcuni possibili codici di errore.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Nella tabella seguente vengono illustrati alcuni possibili codici di errore.
 
-|valore|Descrizione|
+|Valore|Descrizione|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Il programma specificato è già collegato al debugger.|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Si è verificata una violazione della sicurezza durante la procedura di collegamento.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programma desktop non può essere collegato al debugger.|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Si è verificata una violazione della sicurezza durante la procedura di associazione.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Non è possibile collegare un programma desktop al debugger.|
 
 ## <a name="remarks"></a>Osservazioni
- Un motore di debug (DE) non chiama mai questo metodo per connettersi a un programma. Se il DE viene eseguito nello spazio degli indirizzi del programma, il [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) viene chiamato il metodo. Se il DE viene eseguito nello spazio degli indirizzi del gestore di debug della sessione (SDM), il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) viene chiamato il metodo.
+ Un motore di debug (DE) non chiama mai questo metodo per la connessione a un programma. Se il DE viene eseguito nello spazio degli indirizzi del programma, viene chiamato il metodo [Onattribute](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) . Se il DE viene eseguito nello spazio degli indirizzi SDM (Session Debug Manager), viene chiamato il metodo di [associazione](../../../extensibility/debugger/reference/idebugengine2-attach.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

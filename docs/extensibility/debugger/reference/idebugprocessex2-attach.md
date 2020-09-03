@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProcessEx2::Attach . Documenti Microsoft
+title: 'IDebugProcessEx2:: alleghi | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d70da2530a1677367a22968436a17eba809fd24a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723391"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Questo metodo informa il processo che una sessione sta eseguendo il debug del processo.
+Questo metodo informa il processo che una sessione sta ora eseguendo il debug del processo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int Attach(
 
 ## <a name="parameters"></a>Parametri
 `pSession`\
-[in] Valore che identifica in modo univoco la sessione che si connette a questo processo.
+in Valore che identifica in modo univoco la sessione che si connette al processo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- L'interfaccia `pSession` passata deve essere trattata solo come un cookie, un valore che identifica in modo univoco il gestore di debug della sessione che si connette a questo processo. nessuno dei metodi sull'interfaccia fornita è funzionale.
+ L'interfaccia passata deve `pSession` essere considerata solo come un cookie, un valore che identifica in modo univoco la gestione del debug della sessione che si connette al processo; nessuno dei metodi nell'interfaccia fornita è funzionante.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541245"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: aggiornare un'origine dati con i dati di un controllo host
@@ -90,7 +90,7 @@ ms.locfileid: "85541245"
 6. Chiudere la finestra di dialogo **Formattazione e associazione avanzata** .
 
 ## <a name="update-the-database"></a>Aggiornare il database
- Se l'origine dati in memoria è associata a un database, è necessario aggiornare il database in base alle modifiche apportate all'origine dati. Per ulteriori informazioni sull'aggiornamento di un database, vedere [salvare i dati nel database](../data-tools/save-data-back-to-the-database.md) e [aggiornare i dati utilizzando un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
+ Se l'origine dati in memoria è associata a un database, è necessario aggiornare il database in base alle modifiche apportate all'origine dati. Per ulteriori informazioni sull'aggiornamento di un database, vedere [salvare i dati nel database](../data-tools/save-data-back-to-the-database.md)  e [aggiornare i dati utilizzando un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Per aggiornare il database
 

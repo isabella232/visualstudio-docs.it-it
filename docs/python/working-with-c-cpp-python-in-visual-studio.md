@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972361"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creare un'estensione C++ per Python
@@ -120,7 +120,7 @@ Seguire le istruzioni in questa sezione per creare due progetti C++ identici den
 
 1. Impostare le proprietà specifiche, come descritto nella tabella seguente e quindi selezionare **OK**.
 
-    | Scheda | Proprietà | valore |
+    | Scheda | Proprietà | Valore |
     | --- | --- | --- |
     | **Generale** | **Informazioni generali**  >  **Nome di destinazione** | Specificare il nome del modulo quando si vuole fare riferimento a esso da Python in istruzioni `from...import`. Questo stesso nome viene usato in C++ quando si definisce il modulo per Python. Se si vuole usare il nome del progetto come nome del modulo, lasciare il valore predefinito di **$(ProjectName)**. |
     | | **Informazioni generali**  >  **Estensione di destinazione** | **.pyd** |

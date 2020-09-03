@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProcessQueryProperties . Documenti Microsoft
+title: IDebugProcessQueryProperties | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 08abf401b4e8f0e7a33d882e8178d77e6f248318
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723287"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
-Questa interfaccia è un'interfaccia di estensione implementata dagli implementatori [di IDebugProcess2.This](../../../extensibility/debugger/reference/idebugprocess2.md) interface is an extension interface implemented by IDebugProcess2 implementers. Consente all'implementatore di ottenere informazioni sull'ambiente del processo di debug.
+Questa interfaccia è un'interfaccia di estensione implementata dagli implementatori [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) . Consente all'implementatore di ottenere informazioni sull'ambiente del processo di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ IDebugProcessQueryProperties: IUnknown
  Implementare questa interfaccia per ottenere informazioni sull'ambiente di esecuzione di un processo di debug.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente vengono `IDebugProcessQueryProperties`illustrati i metodi di .
+ La tabella seguente illustra i metodi di `IDebugProcessQueryProperties` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -41,12 +41,12 @@ IDebugProcessQueryProperties: IUnknown
 |[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Esegue una query per i valori delle proprietà.|
 
 ## <a name="remarks"></a>Osservazioni
- Questa interfaccia viene implementata raramente.
+ Questa interfaccia viene raramente implementata.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Portpriv.h
+ Intestazione: Portpriv. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

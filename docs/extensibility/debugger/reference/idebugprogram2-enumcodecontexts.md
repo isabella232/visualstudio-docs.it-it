@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts ??? Documenti Microsoft
+title: 'IDebugProgram2:: EnumCodeContexts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c22a5ce398e76ee97b2f0448900fd4e38f996615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723046"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-Recupera un elenco dei contesti di codice per una posizione specificata in un file di origine.
+Recupera un elenco dei contesti di codice per una determinata posizione in un file di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,15 +43,15 @@ int EnumCodeContexts( 
 
 ## <a name="parameters"></a>Parametri
 `pDocPos`\
-[in] Oggetto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) che rappresenta una posizione astratta in un file di origine noto all'IDE.
+in Oggetto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) che rappresenta una posizione astratta in un file di origine noto all'IDE.
 
-`ppEnum`[fuori] Restituisce un [oggetto IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) che contiene un elenco dei contesti del codice.
+`ppEnum` out Restituisce un oggetto [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) che contiene un elenco dei contesti di codice.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo consente al gestore di sessione di debug (SDM) o IDE per eseguire il mapping di una posizione del file di origine in una posizione di codice. Se l'origine genera più blocchi di codice, viene restituito più di un contesto di codice.
+ Questo metodo consente a gestione debug sessione (SDM) o IDE di eseguire il mapping di una posizione del file di origine in una posizione di codice. Se l'origine genera più blocchi di codice, ad esempio i modelli C++, viene restituito più di un contesto di codice.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
