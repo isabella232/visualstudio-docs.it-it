@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288416"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
@@ -70,6 +70,6 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
 6. Scegliere quali impostazioni esecuzione test devono essere attive. Aprire il menu di scelta rapida nelle impostazioni esecuzione test e scegliere **Imposta come attivo**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)

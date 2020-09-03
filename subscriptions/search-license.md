@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono individuare singoli sottoscrittori o gruppi nel portale di amministrazione.
 ms.openlocfilehash: c7ef5cd61a689be1757793b223ebc1a9295bf8bd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906170"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio

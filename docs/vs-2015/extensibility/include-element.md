@@ -1,5 +1,5 @@
 ---
-title: L'elemento di inclusione | Microsoft Docs
+title: Elemento include | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1bdc56c9d0b488bdbe24a8534ab516cc0fc831df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203938"
 ---
 # <a name="include-element"></a>Elemento Include
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'elemento di inclusione specifica un file che può essere individuato fornito percorso per l'inserimento nel file corrente di inclusione.  Tutti i simboli e i tipi definiti diventerà parte del risultato compilato.  
+L'elemento include specifica un file che può trovarsi nel percorso di inclusione fornito per l'inserimento nel file corrente.  Tutti i simboli e i tipi definiti diventeranno parte del risultato compilato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,20 +38,20 @@ L'elemento di inclusione specifica un file che può essere individuato fornito p
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|href|Richiesto. Il percorso del file di intestazione:<br /><br /> href="stdidcmd.h"|  
-|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|href|Obbligatorio. Percorso del file di intestazione:<br /><br /> href = "Stdidcmd. h"|  
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|No.|No.|  
+|Nessuno.|Nessuno.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi, vale a dire, voci di menu, menu, barre degli strumenti e caselle combinate, ovvero che un pacchetto VSPackage fornisce all'IDE.|  
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi, ovvero le voci di menu, i menu, le barre degli strumenti e le caselle combinate, fornite da un pacchetto VSPackage all'IDE.|  
   
 ## <a name="example"></a>Esempio  
   
@@ -60,4 +60,4 @@ L'elemento di inclusione specifica un file che può essere individuato fornito p
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

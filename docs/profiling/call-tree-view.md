@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773335"
 ---
 # <a name="call-tree-view"></a>Visualizzazione albero delle chiamate
@@ -41,15 +41,15 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 
  Per altre informazioni sulle definizioni delle colonne nella visualizzazione Albero delle chiamate, vedere gli argomenti seguenti:
 
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
 
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
 
 - [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-contention-data.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-contention-data.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)
+- [Visualizzazioni rapporto di prestazioni](../profiling/performance-report-views.md)
 - [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)
 - [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

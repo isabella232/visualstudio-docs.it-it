@@ -15,10 +15,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852224"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associazione di scelte rapide da tastiera a voci di menu
@@ -52,16 +52,16 @@ Per associare un tasto di scelta rapida a un comando di menu personalizzato, è 
   
 1. Aprire il file con estensione vsct per il pacchetto.  
   
-2. Crea una sezione di `<KeyBindings>` vuota dopo l'`<Commands>` se non è già presente.  
+2. Creare una `<KeyBindings>` sezione vuota dopo `<Commands>` se non è già presente.  
   
    > [!WARNING]
    > Per ulteriori informazioni sui tasti di scelta, vedere la pagina relativa all' [associazione](../extensibility/keybinding-element.md)di tasti.  
   
-    Nella sezione `<KeyBindings>` creare una voce di `<KeyBinding>`.  
+    Nella `<KeyBindings>` sezione creare una `<KeyBinding>` voce.  
   
-    Impostare gli attributi `guid` e `id` su quelli del comando che si desidera richiamare.  
+    Impostare gli `guid`  `id` attributi e su quelli del comando che si desidera richiamare.  
   
-    Impostare l'attributo `mod1` per **controllare**, **ALT**o **MAIUSC**.  
+    Impostare l' `mod1` attributo su **Control**, **ALT**o **Shift**.  
   
     La sezione delle combinazioni di tasti dovrebbe avere un aspetto simile al seguente:  
   
@@ -73,18 +73,18 @@ Per associare un tasto di scelta rapida a un comando di menu personalizzato, è 
   
    ```  
   
-   Se il tasto di scelta rapida richiede più di due chiavi, impostare gli attributi `mod2` e `key2`.  
+   Se il tasto di scelta rapida richiede più di due chiavi, impostare gli `mod2` `key2` attributi e.  
   
    Nella maggior parte dei casi, lo **spostamento** non deve essere usato senza un secondo modificatore perché la pressione della maggior parte delle chiavi alfanumeriche consente di digitare una lettera maiuscola o un simbolo.  
   
    I codici a chiave virtuale consentono di accedere a tasti speciali a cui non è associato alcun carattere, ad esempio i tasti funzione e il tasto **BACKSPACE** . Per ulteriori informazioni, vedere [codici chiave virtuale](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
-   Per rendere il comando disponibile nell'editor di Visual Studio, impostare l'attributo `editor` su `guidVSStd97`.  
+   Per rendere il comando disponibile nell'editor di Visual Studio, impostare l' `editor` attributo su `guidVSStd97` .  
   
-   Per rendere il comando disponibile solo in un editor personalizzato, impostare l'attributo `editor` sul nome dell'editor personalizzato generato dal modello di pacchetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando è stato creato il pacchetto VSPackage che include l'editor personalizzato. Per trovare il valore del nome, esaminare la sezione `<Symbols>` per un nodo `<GuidSymbol>` il cui attributo `name` termina con "`editorfactory`". Si tratta del nome dell'editor personalizzato.  
+   Per rendere il comando disponibile solo in un editor personalizzato, impostare l' `editor` attributo sul nome dell'editor personalizzato generato dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modello di pacchetto quando è stato creato il pacchetto VSPackage che include l'editor personalizzato. Per trovare il valore del nome, esaminare la `<Symbols>` sezione per un `<GuidSymbol>` nodo il cui `name` attributo termina con " `editorfactory` ." Si tratta del nome dell'editor personalizzato.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio il tasto di scelta rapida CTRL + ALT + C viene associato a un comando denominato `cmdidMyCommand` in un pacchetto denominato `MyPackage`.  
+ Questo esempio associa il tasto di scelta rapida CTRL + ALT + C a un comando denominato `cmdidMyCommand` in un pacchetto denominato `MyPackage` .  
   
 ```  
 <CommandTable>  
@@ -101,7 +101,7 @@ Per associare un tasto di scelta rapida a un comando di menu personalizzato, è 
 ```  
   
 ## <a name="example"></a>Esempio  
- In questo esempio il tasto di scelta rapida CTRL + B viene associato a un comando denominato `cmdidBold` in un progetto denominato `TestEditor`. Il comando è disponibile solo nell'editor personalizzato e non in altri editor.  
+ In questo esempio il tasto di scelta rapida CTRL + B viene associato a un comando denominato `cmdidBold` in un progetto denominato `TestEditor` . Il comando è disponibile solo nell'editor personalizzato e non in altri editor.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  

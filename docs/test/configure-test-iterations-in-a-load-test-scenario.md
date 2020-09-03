@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6adbdedf8a71319877c5527e00e0e7c5e73fa6b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288780"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurare le iterazioni di test in uno scenario di test di carico
@@ -89,7 +89,7 @@ La proprietà **Tempo interazione utente tra due iterazioni test** viene usata p
 
 5. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Tempo iterazione utente tra due iterazioni test**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Configurare agenti di test e test controller per i test di carico](../test/configure-test-agents-and-controllers-for-load-tests.md)

@@ -1,5 +1,5 @@
 ---
-title: Aggiunta di directory di dialogo Aggiungi nuovo elemento | Microsoft Docs
+title: Aggiunta di directory alla finestra di dialogo Aggiungi nuovo elemento | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,18 +11,18 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f370d208cb8f7aad88f806983983ccee9f584625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203920"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Aggiunta di directory nella finestra di dialogo Aggiungi nuovo elemento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Esempio di codice seguente viene illustrato come registrare un nuovo set di directory per il **Aggiungi nuovo elemento** nella finestra di dialogo. Directory per il **Aggiungi nuovo elemento** nella finestra di dialogo sono diverse per ogni progetto. Di conseguenza, le directory vengono registrate nella sottochiave progetti, disponibili in \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  
+Nell'esempio di codice riportato di seguito viene illustrato come registrare un nuovo set di directory per la finestra di dialogo **Aggiungi nuovo elemento** . Le directory per la finestra di dialogo **Aggiungi nuovo elemento** sono diverse per ogni progetto. Pertanto, le directory vengono registrate nella sottochiave Projects, disponibile in \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects> :  
   
-## <a name="the-registry-script"></a>Lo Script del Registro di sistema  
+## <a name="the-registry-script"></a>Script del registro di sistema  
   
 ```  
 NoRemove Projects  
@@ -47,16 +47,16 @@ NoRemove Projects
 }  
 ```  
   
- Il valore Template_Path specifica il percorso completo della directory che contiene i modelli di progetto. Questi modelli possono essere VSZ (file) o file di modello prototipo da clonare.  
+ Il valore Template_Path specifica il percorso completo della directory che contiene i modelli di progetto. Questi modelli possono essere clonati con i file con estensione vsz o i file modello di prototipo.  
   
  Il valore SortPriority specifica una priorità di ordinamento.  
   
 ## <a name="adding-items-to-an-existing-project"></a>Aggiunta di elementi a un progetto esistente  
- È anche possibile aggiungere elementi a un progetto esistente. Ad esempio, per un [!INCLUDE[csprcs](../../includes/csprcs-md.md)] progetto, è possibile aggiungere elementi per il \<radice > cartella \VC#\CSharpProjectItems\LocalProjectItems \Programmi\Microsoft Visual Studio. In questo caso il `%GUID_Project%` GUID di un progetto c# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
+ È anche possibile aggiungere elementi a un progetto esistente. Per un [!INCLUDE[csprcs](../../includes/csprcs-md.md)] progetto, ad esempio, è possibile aggiungere elementi alla \<root> cartella \Programmi\microsoft Visual Studio \VC # \CSharpProjectItems\LocalProjectItems In questo caso `%GUID_Project%` è il GUID di un progetto C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
   
- È anche possibile estendere un progetto esistente da un sottotipo di progetto di programmazione. Con un sottotipo di progetto, è possibile estendere un progetto senza dover scrivere un nuovo tipo di progetto. Per altre informazioni sulle sottotipi di progetto, vedere [sottotipi di progetto](../../extensibility/internals/project-subtypes.md).  
+ È anche possibile estendere un progetto esistente tramite la programmazione di un sottotipo di progetto. Con un sottotipo di progetto, è possibile estendere un progetto senza scrivere un nuovo tipo di progetto. Per ulteriori informazioni sui sottotipi di progetto, vedere [sottotipi di progetto](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [La registrazione di progetto e modelli di elemento](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Aggiunta di elementi di Aggiungi nuovo elemento di finestre di dialogo](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Registrazione di modelli di progetti e di elementi](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Aggiunta di elementi alle finestre di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Aggiunta di directory nella finestra di dialogo Nuovo progetto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

@@ -1,5 +1,5 @@
 ---
-title: proprietà ATTACH_REASON . Documenti Microsoft
+title: ATTACH_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca871d9dac2b6f37018af925eece5c1a6f3d1585
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738131"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
-Specifica il motivo per cui il motore di debug (DE) deve connettersi a un nodo di programma.
+Specifica il motivo per cui il motore di debug (DE) deve connettersi a un nodo del programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,21 +46,21 @@ public enum enum_ATTACH_REASON {
 
 ## <a name="fields"></a>Campi
 `ATTACH_REASON_AUTO`\
-Connettersi perché il processo è attualmente in modalità di debug.
+Connetti perché il processo è attualmente in modalità di debug.
 
 `ATTACH_REASON_LAUNCH`\
 Connettersi perché il processo è stato avviato.
 
 `ATTACH_REASON_USER`\
-Allegare a causa di una richiesta dell'utente.
+Connessione a causa di una richiesta dell'utente.
 
 ## <a name="remarks"></a>Osservazioni
-Questi valori vengono utilizzati come parametro per il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) e [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metodi.
+Questi valori vengono usati come parametro per i metodi di [connessione](../../../extensibility/debugger/reference/idebugengine2-attach.md) e di [associazione](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

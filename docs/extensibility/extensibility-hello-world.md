@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905938"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Esercitazione: creare la prima estensione: Hello World
@@ -160,7 +160,7 @@ Passaggio 2: Nel menu **strumenti** dell' **istanza sperimentale**fare clic su *
 
 ![risultato finale](media/hello-world-final-result.png)
 
-Verrà visualizzato l'output del nuovo comando personalizzato, in questo caso la finestra di dialogo al centro dello schermo che fornisce il **Hello World.** criteri.).
+Verrà visualizzato l'output del nuovo comando personalizzato, in questo caso la finestra di dialogo al centro dello schermo che fornisce il **Hello World.** il messaggio "Hello World!".
 
 ## <a name="next-steps"></a>Passaggi successivi
 

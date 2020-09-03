@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630847"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informazioni di riferimento sulle attività MSBuild WPF
@@ -37,7 +37,7 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)
 
- Genera un assembly se almeno una pagina XAML in un progetto fa riferimento a un tipo dichiarato localmente in tale progetto. L'assembly generato viene rimosso dopo il completamento del processo di compilazione o in caso di esito negativo del processo.
+ Genera un assembly se almeno una pagina XAML in un progetto fa riferimento a un tipo dichiarato localmente nel progetto. L'assembly generato viene rimosso dopo il completamento del processo di compilazione o in caso di esito negativo del processo.
 
 - [GetWinFXPath](../msbuild/getwinfxpath-task.md)
 
@@ -53,11 +53,11 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
 
- Unisce gli attributi di localizzazione e i commenti di uno o più file di formato binario XAML in un singolo file per l'intero assembly.
+ Unisce gli attributi di localizzazione e i commenti di uno o più file in formato binario XAML in un singolo file per l'intero assembly.
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Incorpora una o più risorse (*.jpg*, *.ico*, *.bmp,* XAML in formato binario e altri tipi di estensione) in un file *con estensione resources.*
+ Incorpora una o più risorse (*jpg*, *ico*, *BMP*, XAML in formato binario e altri tipi di estensione) in un file con estensione *Resources* .
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,7 +65,7 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Aggiunge l'elemento ** \<hostInBrowser />** al manifesto dell'applicazione (*\<nomeprogetto>.exe.manifest*) quando viene compilato un progetto XBAP (XAML Browser Application).
+ Aggiunge l' **\<hostInBrowser />** elemento al manifesto dell'applicazione (* \<projectname> . exe. manifest*) quando viene compilato un progetto di applicazione browser XAML (XBAP).
 
 ## <a name="see-also"></a>Vedere anche
 

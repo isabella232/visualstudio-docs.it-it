@@ -1,5 +1,5 @@
 ---
-title: proprietà BP_LOCATION_DATA_STRING . Documenti Microsoft
+title: BP_LOCATION_DATA_STRING | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 75f881feaaa2068abd98d771a63024f20435d98f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737976"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
-Utilizzato per l'impostazione di punti di interruzione di dati basati su una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).
+Usato per impostare i punti di interruzione dei dati basati su una stringa che l'utente può immettere dall'Integrated Development Environment (IDE).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,26 +35,26 @@ typedef struct _BP_LOCATION_DATA_STRING {
 } BP_LOCATION_DATA_STRING;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `pThread`\
 Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread in cui si verifica il punto di interruzione.
 
 `bstrContext`\
-Contesto del punto di interruzione all'interno del codice, in genere un nome di metodo o funzione come illustrato in uno stack di chiamate.
+Contesto del punto di interruzione all'interno del codice, in genere un metodo o un nome di funzione come visualizzato in uno stack di chiamate.
 
 `bstrDataExpr`\
-Stringa di dati immessa dall'utente per impostare il punto di interruzione.
+Stringa di dati che l'utente immette per impostare il punto di interruzione.
 
 `dwNumElements`\
 Numero di elementi nella stringa di dati in cui si verifica il punto di interruzione.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'unione.
+Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d425b457056e256c5c9ed927c99adf002b78dd9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288793"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurare ritardi di avvio di uno scenario nei test di carico
@@ -83,7 +83,7 @@ La proprietà **Disabilita durante riscaldamento** viene usata per indicare se e
 
 4. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Disabilita durante riscaldamento**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Configurare agenti di test e test controller per i test di carico](../test/configure-test-agents-and-controllers-for-load-tests.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916792"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
@@ -26,11 +26,11 @@ ms.locfileid: "75916792"
 
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Per creare una soluzione di estensione Finestra di progettazione DSL
 
-1. Creare un nuovo progetto usando il modello di progetto libreria di classi. Nella finestra di dialogo **nuovo progetto** fare clic su oggetto  **C# visivo** , quindi nella finestra centrale fare clic su **libreria di classi**.
+1. Creare un nuovo progetto usando il modello di progetto libreria di classi. Nella finestra di dialogo **nuovo progetto** fare clic su **Visual C#** , quindi nella finestra centrale fare clic su **libreria di classi**.
 
      Questo progetto conterrà il codice delle estensioni.
 
-2. Creare un nuovo progetto usando il modello di progetto VSIX. Nella finestra di dialogo **nuovo progetto** espandere oggetto **visivo C#** , fare clic su **estendibilità**, quindi nella finestra centrale selezionare **progetto VSIX**.
+2. Creare un nuovo progetto usando il modello di progetto VSIX. Nella finestra di dialogo **nuovo progetto** espandere **Visual C#**, fare clic su **estensibilità**, quindi nella finestra centrale selezionare **progetto VSIX**.
 
      Selezionare **Aggiungi a soluzione**.
 
@@ -46,13 +46,13 @@ ms.locfileid: "75916792"
 
 7. Nel progetto libreria di classi aggiungere riferimenti agli assembly seguenti:
 
-     Microsoft.VisualStudio.CoreUtility
+     Microsoft. VisualStudio. CoreUtility
 
-     Microsoft.VisualStudio.Modeling.Sdk.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. DslDefinition. 11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -67,24 +67,24 @@ ms.locfileid: "75916792"
 ## <a name="testing-and-deployment"></a>Test e distribuzione
  Per testare le estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza aprire una soluzione DSL. Modificare il diagramma di DslDefinition. Il comportamento dell'estensione può essere visualizzato.
 
- Per distribuire le estensioni nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]principale e in altri computer, attenersi alla seguente procedura:
+ Per distribuire le estensioni in principale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e in altri computer, seguire questa procedura:
 
-1. Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX
+1. Trovare il file di installazione VSIX nel progetto VSIX in bin \\ * \\ \* . vsix
 
 2. Copiare questo file nel computer di destinazione, quindi in Esplora risorse (o Esplora file) fare doppio clic su di esso.
 
-    Verrà aperto Gestione estensioni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per verificare che l'estensione sia stata installata.
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Verrà aperto Gestione estensioni per verificare che l'estensione sia stata installata.
 
    Per disinstallare l'estensione, attenersi alla procedura seguente:
 
-3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]scegliere **Gestione estensioni**dal menu **strumenti** .
+3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] scegliere **Gestione estensioni**dal menu **strumenti** .
 
 4. Selezionare l'estensione ed eliminarla.
 
 ## <a name="adding-a-shortcut-menu-command"></a>Aggiunta di un comando di menu di scelta rapida
  Per visualizzare un comando di menu di scelta rapida nell'area Finestra di progettazione DSL o nella finestra DSL Explorer, scrivere una classe simile alla seguente.
 
- La classe deve implementare `ICommandExtension` e deve avere l'attributo `DslDefinitionModelCommandExtension`.
+ La classe deve implementare `ICommandExtension` e deve avere l'attributo `DslDefinitionModelCommandExtension` .
 
 ```
 using System.Collections.Generic;

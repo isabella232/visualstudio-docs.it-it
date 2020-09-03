@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4f82f8f4c518a9c72399b6e28a01d112f5678c9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288208"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procedura: Configurare il profiler ASP.NET per i test di carico usando le impostazioni test in Visual Studio
@@ -58,7 +58,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
 
 Con l'adattatore dati di diagnostica del profiler ASP.NET configurato nell'impostazione test, è ora possibile raccogliere dati di profilatura ASP.NET nell'applicazione Web ASP.NET.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Procedura: Creare un'impostazione test per un test di carico distribuito](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)

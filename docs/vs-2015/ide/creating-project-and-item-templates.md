@@ -19,16 +19,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 995696dafce64cdcb1fbb11d0788bbe13453c440
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619293"
 ---
 # <a name="creating-project-and-item-templates"></a>Creazione di modelli di progetti e di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I modelli di progetto e di elemento di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] forniscono stub riutilizzabili che supportano gli utenti con codice e strutture di base che è possibile utilizzare per gli scopi desiderati.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i modelli di progetto e di elemento forniscono stub riutilizzabili che forniscono agli utenti alcuni codici e strutture di base che possono usare per i propri scopi.
 
 ## <a name="visual-studio-templates"></a>Modelli di Visual Studio
  Durante l'installazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono installati vari modelli di progetto e di elemento predefiniti. I modelli Windows Forms Application e Libreria di classi di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../includes/csprcs-md.md)] disponibili nella finestra di dialogo **Nuovo progetto** sono esempi di modelli di progetto. I modelli di elemento installati sono disponibili nella finestra di dialogo **Aggiungi nuovo elemento** e comprendono elementi come file di codice, file XML, pagine HTML e fogli di stile.
@@ -42,7 +42,7 @@ I modelli di progetto e di elemento di [!INCLUDE[vsprvs](../includes/vsprvs-md.m
 
 - I file da creare quando viene usato il modello, tra cui i file del codice sorgente, le risorse incorporate, i file di progetto e così via.
 
-- Un file VSTEMPLATE. Questo file contiene i metadati che offrono a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] le informazioni necessarie per visualizzare il modello nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento** e per creare un progetto o un elemento dal modello. Per altre informazioni sui file con estensione vstemplate, vedere [Parametri di modello](../ide/template-parameters.md).
+- Un file VSTEMPLATE. Questo file contiene i metadati che offrono a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] le informazioni necessarie per visualizzare il modello nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento** e per creare un progetto o un elemento dal modello. Per ulteriori informazioni sui file con estensione vstemplate, vedere [parametri di modello](../ide/template-parameters.md).
 
   Quando questi file vengono compressi in un file ZIP e inseriti nella cartella corretta, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] li visualizza automaticamente. I modelli di progetto sono disponibili nella sezione **Modelli personali** della finestra di dialogo **Nuovo progetto** e i modelli di elemento sono disponibili nella finestra di dialogo **Aggiungi nuovo elemento**. Per altre informazioni sulle cartelle dei modelli, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 

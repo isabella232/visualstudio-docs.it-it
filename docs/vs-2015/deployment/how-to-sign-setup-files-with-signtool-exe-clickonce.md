@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Firmare con SignTool.exe (ClickOnce) i file di installazione | Microsoft Docs'
+title: 'Procedura: firmare i file di installazione con SignTool.exe (ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202174"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: Firmare i file di installazione con SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: firmare i file di installazione con SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare SignTool.exe per firmare un programma di installazione (setup.exe). Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.  
@@ -41,7 +41,7 @@ ms.locfileid: "68202174"
   
 2. Selezionare il progetto in **Esplora soluzioni**.  
   
-3. Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.  
+3. Scegliere **Proprietà***Nome progetto dal menu * **Progetto**.  
   
 4. Nella pagina **Firma** deselezionare l'opzione **Firma i manifesti ClickOnce**.  
   
@@ -80,4 +80,4 @@ ms.locfileid: "68202174"
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Procedura: ripetere la firma dei manifesti dell'applicazione e della distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

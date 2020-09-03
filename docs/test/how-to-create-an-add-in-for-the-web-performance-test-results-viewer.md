@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287831"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: creare un componente aggiuntivo per il Visualizzatore Risultati test prestazioni Web
@@ -334,7 +334,7 @@ Le impostazioni disponibili nella pagina delle opzioni relative alla sicurezza d
 
 - **Consenti caricamento componenti aggiuntivi da URL.** Non selezionato per impostazione predefinita. Se selezionata, questa opzione consente il caricamento di componenti aggiuntivi da siti Web esterni. In caso contrario, non è possibile caricare componenti aggiuntivi remoti in Visual Studio. Se per qualche motivo non è possibile eseguire il caricamento di un componente aggiuntivo, non potrà essere caricato dal Web. Questa impostazione controlla solo il caricamento della DLL del componente aggiuntivo. I file di registrazione *ADDIN* devono trovarsi sempre nel sistema locale.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>

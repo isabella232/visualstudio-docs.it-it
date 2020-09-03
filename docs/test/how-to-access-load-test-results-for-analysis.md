@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288533"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Procedura: Accedere ai risultati dei test di carico per l'analisi
@@ -52,6 +52,6 @@ I risultati relativi al test di carico completato contengono gli esempi di conta
 
      È possibile gestire altri aspetti dei risultati del test di carico nella finestra di dialogo **Apri e gestisci risultati**, incluse le operazioni di importazione, esportazione e rimozione dei risultati del test di carico. Per altre informazioni, vedere [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

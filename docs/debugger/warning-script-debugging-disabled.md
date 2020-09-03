@@ -1,5 +1,5 @@
 ---
-title: 'Avvertenza: Debug di script disabilitato Documenti Microsoft'
+title: 'Avviso: debug degli script disabilitato | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81648497"
 ---
 # <a name="warning-script-debugging-disabled"></a>Avviso: debug degli script disabilitato
@@ -44,4 +44,4 @@ Il debug degli script è attualmente disabilitato in Internet Explorer
      Le nuove impostazioni risulteranno ora attive.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: associare a scriptHow to: Attach to Script](attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Procedura: connettersi allo script](attach-to-running-processes-with-the-visual-studio-debugger.md)

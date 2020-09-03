@@ -12,10 +12,10 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 033e682344cbd255c8cbf41d7527ec7d08a5db20
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915616"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debug di un servizio cloud di Azure pubblicato con Visual Studio e IntelliTrace
@@ -32,7 +32,7 @@ In alternativa, è possibile usare il [debug remoto](vs-azure-tools-debugging-cl
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Configurare un'applicazione Azure per IntelliTrace
 Per abilitare IntelliTrace per un'applicazione Azure, è necessario creare e pubblicare l'applicazione da un progetto Azure di Visual Studio. È necessario configurare IntelliTrace per l'applicazione Azure prima di pubblicarla in Azure. Se si pubblica l'applicazione senza configurare IntelliTrace, è necessario ripubblicare il progetto. Per altre informazioni, vedere [Pubblicazione di progetti di servizi cloud di Azure con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-1. Quando si è pronti distribuire l'applicazione Azure, verificare che le destinazioni di compilazione del progetto siano impostate su **Debug**.
+1. Quando si è pronti a distribuire l'applicazione Azure, assicurarsi che le destinazioni di compilazione del progetto siano impostate su **Debug**.
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** dal menu di scelta rapida.
    

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774256"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Visualizzazione dei puntatori all'istruzione: dati di campionamento
@@ -26,8 +26,8 @@ Nella visualizzazione Puntatore all'istruzione dei dati di campionamento sono el
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo contenente l'istruzione.|
 |**Percorso modulo**|Percorso del modulo contenente l'istruzione.|
 |**File di origine**|File di origine che contiene l'istruzione.|
@@ -43,4 +43,4 @@ Nella visualizzazione Puntatore all'istruzione dei dati di campionamento sono el
 |**% esempi esclusivi**|Percentuale di tutti i campioni nell'esecuzione della profilatura che sono stati raccolti durante l'esecuzione dell'istruzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione Puntatori all'istruzione (IP) - campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione puntatori all'istruzione-campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

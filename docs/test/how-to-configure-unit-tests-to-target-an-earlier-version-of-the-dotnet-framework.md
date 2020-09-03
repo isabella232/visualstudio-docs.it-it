@@ -8,10 +8,10 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288169"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
@@ -104,8 +104,8 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 6. In **Esplora soluzioni** selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test C++.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Creare soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Creazione di soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Finestra di dialogo impostazioni del compilatore avanzate (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9fb22471cea7cd717b8969682a0e1f643f912150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202387"
 ---
 # <a name="udtkind"></a>UdtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Descrive la varietà di tipo definito dall'utente (UDT).  
+Descrive la varietà di tipi definiti dall'utente (UDT).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,22 +38,22 @@ enum UdtKind { 
   
 ## <a name="elements"></a>Elementi  
  UdtStruct  
- Tipo definito dall'utente è una struttura.  
+ UDT è una struttura.  
   
  UdtClass  
- Tipo definito dall'utente è una classe.  
+ UDT è una classe.  
   
  UdtUnion  
- Tipo definito dall'utente è un'unione.  
+ UDT è un'Unione.  
   
  UdtInterface  
- Tipo definito dall'utente è un'interfaccia.  
+ UDT è un'interfaccia.  
   
-## <a name="remarks"></a>Note  
- I valori di questa enumerazione vengono restituiti per il [Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: cvconst.h  
+ Intestazione: cvconst. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   

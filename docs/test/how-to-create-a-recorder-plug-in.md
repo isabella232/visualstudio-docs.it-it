@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288007"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedura: Creare un plug-in di registrazione
@@ -52,7 +52,7 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 6. Scrivere il codice per il plug-in di registrazione. Creare innanzitutto una nuova classe pubblica derivata dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-7. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
+7. Eseguire l'override del metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -243,7 +243,7 @@ namespace RecorderPlugin
 }
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*>

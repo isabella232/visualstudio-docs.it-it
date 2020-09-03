@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287493"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedura: Specificare agenti di test da usare negli scenari di test di carico
@@ -39,7 +39,7 @@ Per altre informazioni, vedere [Test controller e agenti di test](configure-test
 
 Un altro motivo è legato al fatto che in alcuni agenti, ma non in tutti, potrebbe essere installato software necessario per uno scenario specifico.
 
-È possibile controllare la selezione degli agenti per un'esecuzione del test specifica utilizzando i ruoli nelle impostazioni di test. Per altre informazioni, vedere [raccogliere informazioni di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+È possibile controllare la selezione degli agenti per un'esecuzione del test specifica utilizzando i ruoli nelle impostazioni di test. Per altre informazioni, vedere  [raccogliere informazioni di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
 
 Se nel computer di un agente di test l'utilizzo della CPU è oltre il 75% o se la quantità di memoria fisica disponibile è inferiore al 10%, aggiungere più agenti al test di carico per assicurarsi che il computer dell'agente non diventi il collo di bottiglia nel test di carico.
 
@@ -64,7 +64,7 @@ Se nel computer di un agente di test l'utilizzo della CPU è oltre il 75% o se l
 
 5. Dopo aver modificato la proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Agenti da utilizzare**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)

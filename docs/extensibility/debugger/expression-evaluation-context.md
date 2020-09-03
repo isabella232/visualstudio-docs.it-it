@@ -1,5 +1,5 @@
 ---
-title: Contesto di valutazione dell'espressione Documenti Microsoft
+title: Contesto di valutazione dell'espressione | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e939a4fa5f4673e2f701206c96599c54bc0c3b51
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738743"
 ---
 # <a name="expression-evaluation-context"></a>Contesto di valutazione dell'espressione
-Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, un contesto di **valutazione dell'espressione:**
+In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, un **contesto di valutazione dell'espressione**:
 
-- Rappresenta un contesto per la valutazione dell'espressione. In genere, un contesto di valutazione corrisponde all'ambito lessicale all'interno del quale valutare variabili, parametri, funzioni e metodi. Ad esempio, un contesto di valutazione dell'espressione associato a uno stack frame fornirà il contesto per la valutazione di variabili locali, parametri di metodo e membri di classe (se applicabile).
+- Rappresenta un contesto per la valutazione dell'espressione. In genere, un contesto di valutazione corrisponde all'ambito lessicale in cui valutare variabili, parametri, funzioni e metodi. Ad esempio, un contesto di valutazione dell'espressione associato a un stack frame fornirà il contesto per la valutazione di variabili locali, parametri di metodo e membri di classe (se applicabile).
 
-- Esiste quando un programma è stato arrestato in corrispondenza di un punto di interruzione. L'espressione stessa è una struttura di dati che rappresenta un'espressione analizzata pronta per l'associazione e la valutazione all'interno del contesto specificato.
+- Esiste quando un programma è stato interrotto in corrispondenza di un punto di interruzione. L'espressione stessa è una struttura di dati che rappresenta un'espressione analizzata pronta per l'associazione e la valutazione all'interno del contesto specificato.
 
-     In modo più dettagliato, le espressioni vengono create utilizzando il [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) metodo. Quando un'espressione viene valutata, genera una stringa stampabile contenente il nome e il tipo della variabile o dell'argomento e il relativo valore. Questa stringa viene visualizzata nella finestra Espressioni di controllo o nella finestra Variabili locali dell'IDE.
+     In modo più dettagliato, le espressioni vengono create usando il metodo [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) . Quando viene valutata un'espressione, viene generata una stringa stampabile contenente il nome e il tipo di variabile o argomento e il relativo valore. Questa stringa viene visualizzata nella finestra Espressioni di controllo o nella finestra variabili locali dell'IDE.
 
-     Dato `BSTR` un e un [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfaccia, un motore di debug (DE) può creare un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfaccia analizzando un'espressione. Dato `IDebugExpression2` un'interfaccia, il DE può ottenere un valore tramite la valutazione sincrona o asincrona dell'espressione. Questo valore, insieme al nome e al tipo della variabile o dell'argomento, viene inviato all'IDE per la visualizzazione.
+     Dato un oggetto `BSTR` e un'interfaccia [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) , un motore di debug (de) può creare un'interfaccia [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) analizzando un'espressione. Data un' `IDebugExpression2` interfaccia, il de può ottenere un valore tramite la valutazione di espressioni sincrone o asincrone. Questo valore, insieme al nome e al tipo della variabile o dell'argomento, viene inviato all'IDE per la visualizzazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Interfacce di valutazione delle espressioni](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
-- [Contesti del debuggerDebugger contexts](../../extensibility/debugger/debugger-contexts.md)
+- [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586726"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estendere modelli e diagrammi UML
@@ -38,7 +38,7 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
 
 - [SDK di modellazione per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
-## <a name="profiles"></a>Profili
+## <a name="profiles"></a>Profiles
  I profili consentono di definire gli stereotipi e le proprietà aggiuntive negli elementi UML.
 
  Gli sviluppatori di strumenti di Fabrikam definiscono gli stereotipi nei nodi oggetto dei diagrammi di attività, ad esempio "nastro trasportatore" e "banco check-in". Quando un membro del team crea uno schema per la gestione bagagli usando un diagramma di attività, può impostare gli stereotipi per indicare il tipo di attrezzatura rappresentato da ciascun nodo. Gli sviluppatori di strumenti definiscono le proprietà aggiuntive in alcuni stereotipi, in modo da consentire agli utenti di registrare valori come la capacità di un nastro trasportatore e il lato operativo del banco check-in.
@@ -118,5 +118,5 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
 |**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://msdn.microsoft.com/architecture/default.aspx)|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
  [Creare modelli per le](../modeling/create-models-for-your-app.md) informazioni di [riferimento sulle API per l'estendibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

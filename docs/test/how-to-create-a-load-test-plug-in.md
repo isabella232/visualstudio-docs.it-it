@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288026"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedura: Creare un plug-in test di carico
@@ -157,7 +157,7 @@ A un test di carico sono associati otto eventi che possono essere gestiti nel pl
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)

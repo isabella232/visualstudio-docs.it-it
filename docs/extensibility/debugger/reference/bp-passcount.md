@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT . Documenti Microsoft
+title: BP_PASSCOUNT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737906"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
@@ -41,22 +41,22 @@ public struct BP_PASSCOUNT {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `dwPassCount`\
-Numero di passaggi precedenti al punto di interruzione prima dell'attivazione.
+Il numero di volte in cui passare il punto di interruzione prima di attivarlo.
 
 `stylePassCount`\
 Valore dell'enumerazione [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) che specifica lo stile del numero di passaggi del punto di interruzione.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura è un membro della [struttura BP_REQUEST_INFO.](../../../extensibility/debugger/reference/bp-request-info.md)
+Questa struttura è un membro della struttura [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) .
 
-Questa struttura viene passata anche come parametro per il[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) e[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) metodi.
+Questa struttura viene passata anche come parametro ai metodi[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) e[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

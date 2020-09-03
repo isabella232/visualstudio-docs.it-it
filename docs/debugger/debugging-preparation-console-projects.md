@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916279"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparazione al debug: progetti consoleC#( C++,, Visual Basic F#,)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparazione al debug: progetti Console (C#, C++, Visual Basic, F #)
 
 Preparare il debug di un progetto console è simile alla preparazione per il debug di un progetto Windows, con alcune considerazioni aggiuntive, ad esempio l'impostazione degli argomenti della riga di comando e la modalità di sospensione dell'app per il debug. Per altre informazioni, vedere [Windows Forms Application](../debugger/debugging-preparation-windows-forms-applications.md), e [preparazione al debug:  Applicazioni Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
 
-- C#, Visual Basic e F# applicazione console
+- Applicazione console C#, Visual Basic e F #
 
 - Applicazione console C++ (.NET)
 
@@ -39,9 +39,9 @@ Preparare il debug di un progetto console è simile alla preparazione per il deb
 
 ## <a name="set-command-line-arguments"></a>Imposta argomenti della riga di comando
 
-Potrebbe essere necessario specificare gli argomenti della riga di comando per l'applicazione console. Per altre informazioni, vedere [impostazioni di progetto per C++ una configurazione di debug](../debugger/project-settings-for-a-cpp-debug-configuration.md), [impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)o [impostazioni di progetto per le configurazioni di C# debug](../debugger/project-settings-for-csharp-debug-configurations.md).
+Potrebbe essere necessario specificare gli argomenti della riga di comando per l'applicazione console. Per altre informazioni, vedere [impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [impostazioni di progetto per una configurazione](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)di debug Visual Basic o [impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le sessioni di debug e tra le sessioni di Visual Studio. Se in precedenza si è eseguito il debug dell'applicazione console, si tenga quindi presente che alcuni argomenti nella finestra di dialogo **Pagine delle proprietà di \<Progetto>** potrebbero essere stati ricavati dalle sessioni precedenti.
+Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le sessioni di debug e tra le sessioni di Visual Studio. Pertanto, se l'applicazione console è già stata sottoposta a debug, tenere presente che potrebbero essere presenti argomenti delle sessioni precedenti immesse nella finestra di dialogo ** \<Project> pagine delle proprietà** .
 
 ## <a name="start-the-application"></a>Avviare l'applicazione
 
@@ -49,7 +49,7 @@ Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le s
 
 - Impostare un punto di interruzione nel codice e avviare l'applicazione.
 
-- Avviare l'applicazione tramite **F10** (**debug** > Esegui **istruzione**/routine) o **F11** (**debug** > **Esegui istruzione**), quindi spostarsi nel codice utilizzando altre opzioni, ad esempio **Esegui fino a fare clic su**.
+- Avviare l'applicazione con **F10** (**debug**  >  **istruzione/** routine) o **F11** (eseguire il**debug**  >  di**istruzioni**), quindi esplorare il codice usando altre opzioni, ad esempio **Esegui fino a fare clic su**.
 
 - Nell'editor di codice fare clic con il pulsante destro del mouse su una riga e scegliere **Esegui fino al cursore**.
 
@@ -59,8 +59,8 @@ Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le s
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug del codice nativo](../debugger/debugging-native-code.md)
-- [Debug di codice gestito](../debugger/debugging-managed-code.md)
-- [Preparare il debug C++ di progetti](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Debug del codice gestito](../debugger/debugging-managed-code.md)
+- [Preparare il debug di progetti C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

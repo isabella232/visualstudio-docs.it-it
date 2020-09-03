@@ -12,20 +12,20 @@ ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: e34c51db062528c83e08e2cb463a1cc44ab476f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915751"
 ---
-# <a name="optimizing-your-azure-code"></a>Ottimizzazione del codice di Azure
+# <a name="optimizing-your-azure-code"></a>Ottimizzare il codice Azure
 Quando si programmano app che utilizzano Microsoft Azure, esistono alcune procedure consigliate da seguire per evitare problemi con la scalabilità di app, il comportamento e le prestazioni in un ambiente cloud. Microsoft fornisce uno strumento di analisi del codice di Azure che riconosce molti di questi problemi comunemente riscontrati e aiuta a risolverli. È possibile scaricare lo strumento in Visual Studio tramite NuGet.
 
 ## <a name="azure-code-analysis-rules"></a>Regole di analisi codice di Azure
 Lo strumento di analisi del codice di Azure utilizza le regole seguenti per contrassegnare automaticamente il codice di Azure quando rileva i problemi noti che influiscono sulle prestazioni. I problemi rilevati vengono visualizzati come avvisi o errori del compilatore. Correzioni del codice o suggerimenti per risolvere l'avviso o l’errore vengono spesso forniti tramite un'icona a forma di lampadina.
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>Evitare di utilizzare la modalità stato sessione (in-process) predefinita
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP0000
 
 ### <a name="description"></a>Descrizione
@@ -40,7 +40,7 @@ Lo stato della sessione ASP.NET supporta diverse opzioni di archiviazione per i 
 Una soluzione consigliata consiste nell'archiviare lo stato della sessione in un servizio cache gestito. Informazioni su come utilizzare [il provider di stato della sessione di Azure per Redis](https://blogs.msdn.com/b/webdev/archive/2014/05/12/announcing-asp-net-session-state-provider-for-redis-preview-release.aspx) per archiviare lo stato della sessione. È anche possibile archiviare lo stato della sessione in altre posizioni per garantire che l'applicazione sia scalabile nel cloud. Per ulteriori informazioni sulle soluzioni alternative, leggere [Modalità dello stato di sessione](https://msdn.microsoft.com/library/ms178586).
 
 ## <a name="run-method-should-not-be-async"></a>L’esecuzione del metodo non deve essere asincrona
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP1000
 
 ### <a name="description"></a>Descrizione
@@ -49,7 +49,7 @@ Creare metodi asincroni, ad esempio [await](https://msdn.microsoft.com/library/h
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-La chiamata di metodi asincroni all'interno del metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) fa sì che il runtime del servizio cloud ricicli il ruolo di lavoro. Quando viene avviato un ruolo di lavoro, l'esecuzione del programma ha luogo all'interno del metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx). Chiudere il metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) fa sì che il ruolo di lavoro venga riavviato. Quando il runtime di ruolo di lavoro raggiunge il metodo asincrono, invia tutte le operazioni dopo il metodo asincrono e poi ritorna In questo modo, il ruolo di lavoro esce dal metodo [[[[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e si riavvia. Nell'iterazione successiva dell'esecuzione, il ruolo di lavoro raggiunge nuovamente il metodo asincrono e viene riavviato, causando nuovamente il riciclo anche del ruolo di lavoro.
+La chiamata di metodi asincroni all'interno del metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) fa sì che il runtime del servizio cloud ricicli il ruolo di lavoro. Quando viene avviato un ruolo di lavoro, l'esecuzione del programma ha luogo all'interno del metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx). Chiudere il metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) fa sì che il ruolo di lavoro venga riavviato. Quando il runtime di ruolo di lavoro raggiunge il metodo asincrono, invia tutte le operazioni dopo il metodo asincrono e poi ritorna  In questo modo, il ruolo di lavoro esce dal metodo [[[[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e si riavvia. Nell'iterazione successiva dell'esecuzione, il ruolo di lavoro raggiunge nuovamente il metodo asincrono e viene riavviato, causando nuovamente il riciclo anche del ruolo di lavoro.
 
 ### <a name="solution"></a>Soluzione
 Posizionare tutte le operazioni asincrone fuori dal metodo [Run](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Quindi, chiamare il metodo asincrono refactoring dall'interno del metodo [[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) , ad esempio RunAsync().wait. Lo strumento di analisi del codice di Azure può aiutare a risolvere il problema.
@@ -85,7 +85,7 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>Autenticazione della firma di accesso condiviso con il bus di servizio
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2000
 
 ### <a name="description"></a>Descrizione
@@ -108,7 +108,7 @@ Per altre informazioni, vedere gli argomenti seguenti.
 * [Come usare l'autenticazione della firma di accesso condiviso con il bus di servizio](/azure/service-bus-messaging/service-bus-sas)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>È consigliabile utilizzare il metodo OnMessage per evitare il "ciclo di ricezione"
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2002
 
 ### <a name="description"></a>Descrizione
@@ -210,7 +210,7 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Si consideri l'utilizzo di metodi asincroni del Bus di servizio
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2003
 
 ### <a name="description"></a>Descrizione
@@ -225,7 +225,7 @@ Vedere [QueueClient class (Microsoft.ServiceBus.Messaging)](https://msdn.microso
 Per migliorare le prestazioni dell'infrastruttura di messaggistica di Azure, vedere il modello di progettazione [Nozioni di base di messaggistica asincrona](https://msdn.microsoft.com/library/dn589781.aspx).
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Prendere in considerazione il partizionamento delle code e degli argomenti del bus di servizio.
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2004
 
 ### <a name="description"></a>Descrizione
@@ -248,7 +248,7 @@ ns.CreateTopic(td);
 Per altre informazioni, vedere il blog di Microsoft Azure [Partitioned Service Bus Queues and Topics](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/) (Code e argomenti partizionati del bus di servizio) e l'esempio [Microsoft Azure Service Bus Partitioned Queue](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f) (Coda partizionata del bus di servizio di Microsoft Azure).
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>Non impostare SharedAccessStartTime
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP3001
 
 ### <a name="description"></a>Descrizione
@@ -277,8 +277,8 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 });
 ```
 
-## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>L’ora di scadenza del criterio di accesso condiviso deve essere più di cinque minuti
-### <a name="id"></a>Id
+## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>L’ora di scadenza del criterio di accesso condiviso deve essere più di cinque minuti 
+### <a name="id"></a>ID
 AP3002
 
 ### <a name="description"></a>Descrizione
@@ -328,7 +328,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Per ulteriori informazioni, [Creare e usare una firma di accesso condiviso](https://msdn.microsoft.com/library/azure/jj721951.aspx).
 
 ## <a name="use-cloudconfigurationmanager"></a>Utilizzare CloudConfigurationManager
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP4000
 
 ### <a name="description"></a>Descrizione
@@ -342,11 +342,11 @@ CloudConfigurationManager legge il file di configurazione appropriato per l'ambi
 ### <a name="solution"></a>Soluzione
 Effettuare il refactoring del codice per utilizzare il [CloudConfigurationManager classe](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). Una correzione del codice per questo problema viene fornita dallo strumento di analisi del codice di Azure.
 
-Il seguente frammento di codice dimostra la correzione del codice per questo problema. Sostituire
+Il seguente frammento di codice dimostra la correzione del codice per questo problema. Sostituisci
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 
-Con
+con
 
 `var settings = CloudConfigurationManager.GetSetting("mySettings");`
 
@@ -363,7 +363,7 @@ Di seguito è riportato un esempio di come archiviare l'impostazione di configur
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Evitare di utilizzare stringhe di connessione hardcoded
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP4001
 
 ### <a name="description"></a>Descrizione
@@ -382,7 +382,7 @@ Archiviare le stringhe di connessione nel file di configurazione o negli ambient
 Per informazioni sull'uso di file di configurazione, ad esempio web.config o app. config, vedere [Linee guida configurazione di ASP.NET Web](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Per informazioni su come funzionano le variabili di ambiente di Azure, vedere [Azure Web Sites: How Application Strings and Connection Strings Work](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/) (Siti Web di Microsoft Azure sul funzionamento delle stringhe di applicazione e di connessione). Per informazioni sull'archiviazione della stringa di connessione nel codice sorgente, vedere [evitare di inserire informazioni riservate come le stringhe di connessione nei file archiviati nel repository del codice sorgente](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Utilizzo del file di configurazione di Diagnostica.
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP5000
 
 ### <a name="description"></a>Descrizione
@@ -396,16 +396,16 @@ A partire da 1.3 WAD (incluso in Azure SDK 2.5), non è più possibile utilizzar
 ### <a name="solution"></a>Soluzione
 Usare la finestra di progettazione di configurazione di diagnostica per spostare le impostazioni di diagnostica nel file di configurazione di diagnostica (diagnositcs.wadcfg o diagnostics.wadcfgx per SDK 2.5 e versioni successive). È inoltre consigliabile installare [Azure SDK 2.5](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2015AzurePack.appids) e utilizzare la funzionalità di diagnostica più recente.
 
-1. Nel menu di scelta rapida del ruolo desiderato, scegliere Proprietà, quindi fare clic sulla scheda Configurazione.
-2. Nella sezione **Diagnostica** verificare che la casella di controllo **Abilita diagnostica** sia selezionata.
-3. Scegliere il pulsante **Configura** .
+1. Dal menu di scelta rapida per il ruolo desiderato scegliere Proprietà, quindi selezionare la scheda Configurazione.
+2. Nella sezione **Diagnostica** assicurarsi che la casella di controllo **Abilita diagnostica** sia selezionata.
+3. Fare clic sul pulsante **Configura**.
 
    ![Accesso all'opzione Abilita diagnostica](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
    Vedere [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) .per ulteriori informazioni.
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>Evitare di dichiarare gli oggetti DbContext come static
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP6000
 
 ### <a name="description"></a>Descrizione

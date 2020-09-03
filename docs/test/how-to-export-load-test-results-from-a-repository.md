@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f9b20915d5c320ff8db4da849d20267355c26590
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287753"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Procedura: Esportare i risultati di un test di carico da un repository
@@ -53,7 +53,7 @@ Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzion
     > [!NOTE]
     > La finestra di dialogo **Apri e gestisci risultati del test di carico** rimane aperta dopo la visualizzazione dei risultati.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Gestire i risultati dei test di carico nel repository del Risultati test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Procedura: eliminare i risultati di un test di carico da un repository](../test/how-to-delete-load-test-results-from-a-repository.md)

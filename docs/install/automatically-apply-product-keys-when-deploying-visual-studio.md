@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: e7f331536de264186bc2977cc4acaaab02147e13
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115226"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio
@@ -100,11 +100,11 @@ Se `StorePID.exe` applica correttamente il codice Product Key, restituisce un `%
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Quando si esegue un'istanza virtuale di Visual Studio, assicurarsi di virtualizzare anche la cartella AppData locale e il Registro di sistema. Per risolvere i `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`problemi relativi alle istanze virtuali, eseguire .  
+> Quando si esegue un'istanza virtuale di Visual Studio, assicurarsi di virtualizzare anche la cartella AppData locale e il registro di sistema. Per risolvere i problemi relativi alle istanze virtuali, eseguire `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe` .  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](../install/install-visual-studio.md)
-* [Creare un'installazione offline di Visual StudioCreate an offline installation of Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)
+* [Installa Visual Studio](../install/install-visual-studio.md)
+* [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)

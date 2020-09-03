@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 070106dc4db0f5200c1346bbbf8c0b653aa104e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619671"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
@@ -27,7 +27,7 @@ Usare il comando **CodeIndex** per gestire l'indicizzazione del codice in Team F
 
  **Autorizzazioni necessarie**
 
- Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators** . Vedere [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6) (Informazioni di riferimento relative alle autorizzazioni per Team Foundation Server).
+ Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators **. Vedere [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6) (Informazioni di riferimento relative alle autorizzazioni per Team Foundation Server).
 
 > [!NOTE]
 > Anche se si accede con le credenziali amministrative, per eseguire questo comando, è necessario aprire una finestra del prompt dei comandi con privilegi elevati. È inoltre necessario eseguire questo comando dal livello applicazione di Team Foundation.
@@ -40,7 +40,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 #### <a name="parameters"></a>Parametri
 
-|**Argomento**|**Descrizione**|
+|**Argument**|**Descrizione**|
 |------------------|---------------------|
 |`CollectionName`|Specifica il nome della raccolta di progetti team. Se il nome contiene spazi, racchiuderlo tra virgolette, ad esempio, "Sito Web di Fabrikam".|
 |`CollectionId`|Specifica il numero di identificazione della raccolta di progetti team.|
@@ -49,20 +49,20 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Opzione**|**Descrizione**|
 |----------------|---------------------|
 |**/indexingStatus**|Mostrare lo stato e la configurazione del servizio di indicizzazione del codice.|
-|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**: avvia l'indicizzazione di tutti gli insiemi di modifiche.<br />-   **off**: arresta l'indicizzazione di tutti gli insiemi di modifiche.<br />-   **keepupOnly**: interrompe l'indicizzazione degli insiemi di modifiche creati in precedenza e avvia l'indicizzazione solo dei nuovi insiemi di modifiche.|
-|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> È possibile usare il carattere jolly (*) all'inizio, alla fine, oppure a entrambe le estremità del percorso server.|Specifica l'elenco di file di codice e i rispettivi percorsi da non indicizzare.<br /><br /> -   **add**: aggiunge il file da non indicizzare all'elenco di file ignorati.<br />-   **remove**: rimuove il file da indicizzare dall'elenco di file ignorati.<br />-   **removeAll**: cancella l'elenco dei file ignorati e avvia l'indicizzazione di tutti i file.<br />-   **view**: visualizza tutti i file non sottoposti a indicizzazione.|
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: avvia l'indicizzazione di tutti gli insiemi di modifiche.<br />-   **off**: arresta l'indicizzazione di tutti gli insiemi di modifiche.<br />-   **keepupOnly**: interrompe l'indicizzazione degli insiemi di modifiche creati in precedenza e avvia l'indicizzazione solo dei nuovi insiemi di modifiche.|
+|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> È possibile usare il carattere jolly (*) all'inizio, alla fine, oppure a entrambe le estremità del percorso server.|Specifica l'elenco di file di codice e i rispettivi percorsi da non indicizzare.<br /><br /> -   **add**: aggiunge il file da non indicizzare all'elenco di file ignorati.<br />-   **remove**: rimuove il file da indicizzare dall'elenco di file ignorati.<br />-   **removeAll**: cancella l'elenco dei file ignorati e avvia l'indicizzazione di tutti i file.<br />-   **view**: visualizza tutti i file non sottoposti a indicizzazione.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Mostra il numero specificato di file che supera la dimensione specificata in KB. È quindi possibile usare l'opzione **/ignoreList** per escludere questi file dall'indicizzazione.|
 |**/reindexAll**|Cancellare i dati indicizzati in precedenza e riavviare l'indicizzazione.|
 |**/destroyCodeIndex [/noPrompt]**|Eliminare l'indice del codice e rimuovere tutti i dati indicizzati. Non è richiesta conferma se si usa l'opzione **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Controllare la quantità di dati temporanei creati da CodeLens durante l'elaborazione degli insiemi di modifiche. Il limite predefinito è 2 GB.<br /><br /> -   **view**: mostra il limite di dimensioni attuale.<br />-   `SizeInGBs`: modifica il limite di dimensioni.<br />-   **disable**: rimuove il limite di dimensioni.<br /><br /> Questo limite viene verificato prima dell'elaborazione di un nuovo insieme di modifiche con CodeLens. Se i dati temporanei superano questo limite, CodeLens sospende l'elaborazione degli insiemi di modifiche precedenti, non di quelli nuovi. CodeLens riavvia l'elaborazione dopo che i dati sono stati puliti e sono tornati sotto il limite. La pulizia viene eseguita automaticamente una volta al giorno. Questo implica che i dati temporanei potrebbero superare questo limite prima dell'esecuzione del processo di pulizia.|
 |**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Controllare la lunghezza dell'intervallo di indicizzazione della cronologia delle modifiche. Ciò incide sulla quantità di cronologia che CodeLens mostra all'utente. Il limite predefinito è di 12 mesi. Questo significa che CodeLens mostra la cronologia delle modifiche solo degli ultimi 12 mesi.<br /><br /> -   **view**: mostra il numero di mesi corrente.<br />-   **all**: indicizza tutta la cronologia delle modifiche.<br />-   `NumberOfMonths`: modifica il numero di mesi usato per indicizzare la cronologia delle modifiche.|
-|**/collectionName:** `CollectionName`|Specifica il nome dell'insieme di progetti team sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
-|**/collectionId:** `CollectionId`|Specifica il numero di identificazione dell'insieme di progetti team sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
+|**/CollectionName:**`CollectionName`|Specifica il nome dell'insieme di progetti team sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
+|**/CollectionId:**`CollectionId`|Specifica il numero di identificazione dell'insieme di progetti team sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
 
 ## <a name="examples"></a>Esempi
 
 > [!NOTE]
-> Ogni riferimento a società, organizzazioni, prodotti, nomi di dominio, indirizzi di posta elettronica, logo, persone, luoghi ed eventi è puramente casuale.  Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.
+> Società, organizzazioni, prodotti, nomi di dominio, indirizzi di posta elettronica, logo, persone, luoghi ed eventi citati nell'esempio sono puramente immaginari.  Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.
 
  Per vedere la configurazione e lo stato di indicizzazione del codice:
 

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa5d3239e3b096a2018d6ef9c9b3c6666dcd31c3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288273"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Procedura: Applicare la distribuzione al ritardo velocità per un modello di combinazione di test basato sulla velocità dell'utente
@@ -52,7 +52,7 @@ La proprietà **Applica distribuzione a ritardo** velocità viene impostata tram
 
 5. Selezionare **file**  >  **Salva**. È ora possibile eseguire il test di carico usando il nuovo valore di **Applica distribuzione a ritardo velocità**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)

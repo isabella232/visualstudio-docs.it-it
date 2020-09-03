@@ -1,5 +1,5 @@
 ---
-title: proprietà BP_LOCATION_RESOLUTION . Documenti Microsoft
+title: BP_LOCATION_RESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 5f33f01d0c2b8465bbb417b56576118349234970
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737963"
 ---
 # <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
-Viene descritta la risoluzione di un punto di interruzione in una posizione specifica.
+Descrive la risoluzione di un punto di interruzione in una posizione specifica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,17 +32,17 @@ typedef struct _BP_LOCATION_RESOLUTION {
 } BP_LOCATION_RESOLUTION;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `pResolution`\
-Il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) oggetto che determina il tipo del punto di interruzione e le relative informazioni sulla risoluzione.
+Oggetto [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) che determina il tipo di punto di interruzione e le informazioni sulla risoluzione.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'unione.
+Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

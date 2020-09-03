@@ -19,17 +19,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633031"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 
 Archivia i valori di output dell'attività in elementi e proprietà.
 
- \<Project> \<Target> \<Task> \<Output>
+ \<Project> \<Target>
+ \<Task>
+ \<Output>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,13 +50,13 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`TaskParameter`|Attributo obbligatorio.<br /><br /> Nome del parametro di output dell'attività.|
-|`PropertyName`|È obbligatorio l'attributo `PropertyName` o l'attributo `ItemName`.<br /><br /> Proprietà che riceve il valore del parametro di output dell'attività. Il progetto può quindi fare riferimento alla proprietà con la sintassi $(\<NomeProprietà>). Questo nome di proprietà può essere il nome di una nuova proprietà o un nome già definito nel progetto.<br /><br /> Non è possibile usare questo attributo se si usa anche `ItemName`.|
-|`ItemName`|È obbligatorio l'attributo `PropertyName` o l'attributo `ItemName`.<br /><br /> Elemento che riceve il valore del parametro di output dell'attività. Il progetto può quindi fare riferimento all'elemento con la sintassi @(\<NomeElemento>). Il nome dell'elemento può essere il nome di un nuovo elemento o un nome già definito nel progetto. Quando il nome dell'elemento è un elemento esistente, i valori dei parametri di output vengono aggiunti all'elemento esistente. <br /><br /> Non è possibile usare questo attributo se si usa anche `PropertyName`.|
+|`PropertyName`|È obbligatorio l'attributo `PropertyName` o l'attributo `ItemName`.<br /><br /> Proprietà che riceve il valore del parametro di output dell'attività. Il progetto può quindi fare riferimento alla proprietà con la sintassi $ ( \<PropertyName> ). Questo nome di proprietà può essere il nome di una nuova proprietà o un nome già definito nel progetto.<br /><br /> Non è possibile usare questo attributo se si usa anche `ItemName`.|
+|`ItemName`|È obbligatorio l'attributo `PropertyName` o l'attributo `ItemName`.<br /><br /> Elemento che riceve il valore del parametro di output dell'attività. Il progetto può quindi fare riferimento all'elemento con la sintassi @ ( \<ItemName> ). Il nome dell'elemento può essere il nome di un nuovo elemento o un nome già definito nel progetto. Quando il nome dell'elemento è un elemento esistente, i valori dei parametri di output vengono aggiunti all'elemento esistente. <br /><br /> Non è possibile usare questo attributo se si usa anche `PropertyName`.|
 |`Condition`|Attributo facoltativo.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -85,5 +87,5 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
+- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916500"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procedura dettagliata: creare un'applicazione dati a più livelli
@@ -68,7 +68,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
        Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Creazione della soluzione a più livelli e della libreria di classi per l'attesa del set di dati (DataEntityTier)
-Il primo passaggio di questa procedura dettagliata prevede la creazione di una soluzione e di due progetti di libreria di classi. La prima libreria di classi include il set di dati, ovvero la classe `DataSet` tipizzata generata e le DataTable che contengono i dati dell'applicazione. Il progetto viene usato come livello di entità di dati dell'applicazione e di norma si trova nel livello intermedio. Il set di dati crea il set di dati iniziale e separa automaticamente il codice nelle due librerie di classi.
+Il primo passaggio di questa procedura dettagliata prevede la creazione di una soluzione e di due progetti di libreria di classi. La prima libreria di classi include il set di dati, ovvero la classe tipizzata generata `DataSet` e le DataTable che contengono i dati dell'applicazione. Il progetto viene usato come livello di entità di dati dell'applicazione e di norma si trova nel livello intermedio. Il set di dati crea il set di dati iniziale e separa automaticamente il codice nelle due librerie di classi.
 
 > [!NOTE]
 > Assicurarsi di assegnare il nome corretto al progetto e alla soluzione prima di fare clic su **OK**. In tal modo sarà più semplice completare questa procedura dettagliata.
@@ -77,7 +77,7 @@ Il primo passaggio di questa procedura dettagliata prevede la creazione di una s
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **libreria di classi** .
 
@@ -101,12 +101,12 @@ Il passaggio successivo alla creazione del progetto DataEntityTier prevede la cr
      Il progetto DataAccessTier viene creato e aggiunto alla soluzione NTierWalkthrough.
 
 ## <a name="create-the-dataset"></a>Creare il set di dati
-Il passaggio successivo consiste nella creazione di un dataset tipizzato. I set di dati tipizzati vengono creati con la classe DataSet (incluse le classi `DataTables`) e le classi `TableAdapter` in un singolo progetto. Tutte le classi vengono generate in un unico file. Quando si separano il set di dati e i TableAdapter in progetti diversi, si tratta della classe DataSet spostata nell'altro progetto, lasciando le classi `TableAdapter` nel progetto originale. Quindi, creare il set di dati nel progetto che conterrà infine gli oggetti TableAdapter (il progetto DataAccessTier). Il set di dati viene creato utilizzando la **Configurazione guidata origine dati**.
+Il passaggio successivo consiste nella creazione di un dataset tipizzato. I set di dati tipizzati vengono creati con la classe DataSet (incluse le `DataTables` classi) e le `TableAdapter` classi in un singolo progetto. Tutte le classi vengono generate in un unico file. Quando si separano il set di dati e i TableAdapter in progetti diversi, si tratta della classe DataSet spostata nell'altro progetto, lasciando le `TableAdapter` classi nel progetto originale. Quindi, creare il set di dati nel progetto che conterrà infine gli oggetti TableAdapter (il progetto DataAccessTier). Il set di dati viene creato utilizzando la **Configurazione guidata origine dati**.
 
 > [!NOTE]
 > Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni su come configurare il database di esempio Northwind, vedere [procedura: installare database di](../data-tools/installing-database-systems-tools-and-samples.md)esempio.
 
-### <a name="to-create-the-dataset"></a>Per creare il dataset
+### <a name="to-create-the-dataset"></a>Per creare il set di dati
 
 1. Selezionare il **DataAccessTier** in **Esplora soluzioni**.
 
@@ -122,7 +122,7 @@ Il passaggio successivo consiste nella creazione di un dataset tipizzato. I set 
 
      Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-     oppure
+     -oppure-
 
      Selezionare **nuova connessione** per aprire la finestra di dialogo **Aggiungi connessione** .
 
@@ -133,7 +133,7 @@ Il passaggio successivo consiste nella creazione di un dataset tipizzato. I set 
 
 7. Selezionare **Avanti** nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** .
 
-8. Espandere il nodo **Tabelle** nella pagina **Seleziona oggetti di database** .
+8. Espandere il nodo **tabelle** nella pagina **Seleziona oggetti di database** .
 
 9. Selezionare le caselle di controllo per le tabelle **Customers** e **Orders** , quindi scegliere **fine**.
 
@@ -154,7 +154,7 @@ Dopo avere creato il dataset, separare la classe DataSet generata dagli oggetti 
 
 5. Scegliere **Compila soluzione** dal menu **Compila**.
 
-   Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che conteneva originariamente l'intero set di dati (`DataAccessTier`) ora contiene solo gli oggetti TableAdapter. Il progetto designato nella proprietà del **progetto DataSet** (`DataEntityTier`) contiene il DataSet tipizzato: *NorthwindDataSet. DataSet. designer. vb* (o *NorthwindDataSet.DataSet.designer.cs*).
+   Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che conteneva originariamente l'intero set di dati ( `DataAccessTier` ) ora contiene solo gli oggetti TableAdapter. Il progetto designato nella proprietà del **progetto DataSet** ( `DataEntityTier` ) contiene il DataSet tipizzato: *NorthwindDataSet. DataSet. designer. vb* (o *NorthwindDataSet.DataSet.designer.cs*).
 
 > [!NOTE]
 > Quando si separano i dataset e gli oggetti TableAdapter (impostando la proprietà **Progetto DataSet**), le classi parziali del dataset presenti nel progetto non vengono spostate automaticamente. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.
@@ -173,7 +173,7 @@ In questa procedura dettagliata viene illustrato come accedere al livello di acc
      Il progetto DataService viene creato e aggiunto alla soluzione NTierWalkthrough.
 
 ## <a name="create-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>Creare metodi nel livello di accesso ai dati per restituire i dati dei clienti e degli ordini
-Il servizio dati deve chiamare due metodi nel livello di accesso ai dati: `GetCustomers` e `GetOrders`. Questi metodi restituiscono le tabelle Northwind `Customers` e `Orders`. Creare i metodi `GetCustomers` e `GetOrders` nel progetto `DataAccessTier`.
+Il servizio dati deve chiamare due metodi nel livello di accesso ai dati: `GetCustomers` e `GetOrders` . Questi metodi restituiscono Northwind `Customers` e le `Orders` tabelle. Creare i `GetCustomers` `GetOrders` metodi e nel `DataAccessTier` progetto.
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Per creare un metodo nel livello di accesso ai dati per restituire la tabella Customers
 
@@ -189,7 +189,7 @@ Il servizio dati deve chiamare due metodi nel livello di accesso ai dati: `GetCu
 
 6. Nella sezione **Restituisci un DataTable** della pagina **Scegliere i metodi per generare** digitare **GetCustomers** in **Nome metodo**.
 
-7. Scegliere **Fine**.
+7. Fare clic su **Fine**.
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Per creare un metodo nel livello di accesso ai dati per restituire la tabella Orders
 
@@ -203,9 +203,9 @@ Il servizio dati deve chiamare due metodi nel livello di accesso ai dati: `GetCu
 
 5. Nella sezione **Restituisci un DataTable** della pagina **Scegliere i metodi** per generare digitare **GetOrders** in **Nome metodo**.
 
-6. Scegliere **Fine**.
+6. Fare clic su **Fine**.
 
-7. Scegliere **Compila soluzione** dal menu **Compila**.
+7. Nel menu **Compila** scegliere **Compila soluzione**.
 
 ## <a name="add-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Aggiungere un riferimento all'entità dati e ai livelli di accesso ai dati al servizio dati
 Dal momento che il servizio dati richiede le informazioni dal dataset e dagli oggetti TableAdapter, è necessario aggiungere riferimenti ai progetti **DataEntityTier** e **DataAccessTier**.
@@ -248,9 +248,9 @@ Ora che il livello di accesso ai dati contiene i metodi per restituire i dati, c
     DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders();
     ```
 
-3. Nel progetto DataService fare doppio clic su **Service1.vb** o **Service1.cs**.
+3. Nel progetto DataService fare doppio clic su **Service1. vb** (o **Service1.cs**).
 
-4. Aggiungere il codice seguente alla classe **Service1**:
+4. Aggiungere il codice seguente alla classe **Service1** :
 
     ```vb
     Public Function GetCustomers() As DataEntityTier.NorthwindDataSet.CustomersDataTable Implements IService1.GetCustomers
@@ -281,7 +281,7 @@ Ora che il livello di accesso ai dati contiene i metodi per restituire i dati, c
     }
     ```
 
-5. Scegliere **Compila soluzione** dal menu **Compila**.
+5. Nel menu **Compila** scegliere **Compila soluzione**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Creare un livello di presentazione per visualizzare i dati dal servizio dati
 Ora che la soluzione contiene il servizio dati con metodi che effettuano chiamate nel livello di accesso ai dati, creare un altro progetto che chiama il servizio dati e presentare i dati agli utenti. In questa procedura dettagliata, creare un'applicazione Windows Form; si tratta del livello di presentazione dell'applicazione a più livelli.
@@ -323,7 +323,7 @@ Per accedere ai metodi nel servizio, l'applicazione client PresentationTier rich
 3. Selezionare **Service1** e scegliere **OK**.
 
     > [!NOTE]
-    > Se nel computer corrente sono presenti più servizi, selezionare il servizio creato in precedenza in questa procedura dettagliata (il servizio che contiene i metodi `GetCustomers` e `GetOrders`).
+    > Se nel computer corrente sono presenti più servizi, selezionare il servizio creato in precedenza in questa procedura dettagliata, ovvero il servizio che contiene i `GetCustomers` `GetOrders` metodi e.
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Aggiungere i controlli GridView al modulo per visualizzare i dati restituiti dal servizio dati
 Dopo l'aggiunta del riferimento a un servizio dati, i dati restituiti dal servizio vengono popolati automaticamente nella finestra **Origini dati**.
@@ -358,10 +358,10 @@ Dopo l'aggiunta del riferimento a un servizio dati, i dati restituiti dal serviz
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>Aumentare le dimensioni massime del messaggio consentite dal servizio
-Il valore predefinito per `maxReceivedMessageSize` non è sufficiente per conservare i dati recuperati dalle tabelle `Customers` e `Orders`. Nei passaggi seguenti si aumenterà il valore di 6553600. Si modifica il valore nel client, che aggiorna automaticamente il riferimento al servizio.
+Il valore predefinito per `maxReceivedMessageSize` non è sufficiente per conservare i dati recuperati dalle `Customers` tabelle e `Orders` . Nei passaggi seguenti si aumenterà il valore di 6553600. Si modifica il valore nel client, che aggiorna automaticamente il riferimento al servizio.
 
 > [!NOTE]
-> La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per ulteriori informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per altre informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Per aumentare il valore di maxReceivedMessageSize
 
@@ -369,8 +369,8 @@ Il valore predefinito per `maxReceivedMessageSize` non è sufficiente per conser
 
 2. Trovare l'attributo di dimensione **maxReceivedMessage** e impostare il valore su `6553600`.
 
-## <a name="test-the-application"></a>Testare l'applicazione
-Eseguire l'applicazione premendo **F5**. I dati delle tabelle `Customers` e `Orders` vengono recuperati dal servizio dati e visualizzati nel form.
+## <a name="test-the-application"></a>Test dell'applicazione
+Eseguire l'applicazione premendo **F5**. I dati delle `Customers` tabelle e `Orders` vengono recuperati dal servizio dati e visualizzati nel form.
 
 ## <a name="next-steps"></a>Passaggi successivi
 A seconda dei requisiti dell'applicazione, è possibile eseguire diverse operazioni dopo il salvataggio dei dati correlati nell'applicazione basata su Windows. È possibile ad esempio apportare i seguenti miglioramenti a questa applicazione:
@@ -381,6 +381,6 @@ A seconda dei requisiti dell'applicazione, è possibile eseguire diverse operazi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso dei set di dati nelle applicazioni a più livelli](../data-tools/work-with-datasets-in-n-tier-applications.md)
+- [Usare i set di impostazioni in applicazioni a più livelli](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Aggiornamento gerarchico](../data-tools/hierarchical-update.md)
 - [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

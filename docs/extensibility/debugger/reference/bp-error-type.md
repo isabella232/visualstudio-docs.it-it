@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE . Documenti Microsoft
+title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738075"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
@@ -65,44 +65,44 @@ public enum enum_BP_ERROR_TYPE {
 Non specifica alcun errore del punto di interruzione.
 
 `BPET_TYPE_WARNING`\
-Specifica un errore del punto di interruzione di tipo avviso.
+Specifica un errore di interruzione dello stile di avviso.
 
 `BPET_TYPE_ERROR`\
-Specifica un errore del punto di interruzione di tipo errore.
+Specifica un errore di interruzione dello stile di errore.
 
 `BPET_SEV_HIGH`\
-Specifica un errore del punto di interruzione ad alta gravità.
+Specifica un errore di interruzione della gravità elevata.
 
 `BPET_SEV_GENERAL`\
-Specifica un errore del punto di interruzione di media gravità.
+Specifica un errore di punto di interruzione di gravità medio.
 
 `BPET_SEV_LOW`\
-Specifica un errore del punto di interruzione con bassa gravità.
+Specifica un errore di punto di interruzione di gravità basso.
 
 `BPET_TYPE_MASK`\
 Specifica un errore del punto di interruzione in stile maschera.
 
 `BPET_SEV_MASK`\
-Specifica un errore del punto di interruzione di tipo severity-mask.
+Specifica un errore di interruzione del punto di interruzione dello stile della maschera di gravità.
 
 `BPET_GENERAL_WARNING`\
-Specifica un errore generale del punto di interruzione di tipo avviso.
+Specifica un errore di punto di interruzione generale in stile avviso.
 
 `BPET_GENERAL_ERROR`\
-Specifica un errore generale del punto di interruzione di tipo errore.
+Specifica un errore di interruzione generale di tipo errore.
 
 `BPET_ALL`\
-Specifica tutti i tipi di errore dei punti di interruzione.
+Specifica tutti i tipi di errore del punto di interruzione.
 
 ## <a name="remarks"></a>Osservazioni
-Questi valori possono essere combinati `OR` con un `dwType` bit per bit e utilizzati per il membro della struttura [BP_ERROR_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Passato come parametro al metodo [EnumErrorBreakpoints.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+Questi valori possono essere combinati con un operatore `OR` and bit per bit utilizzati per il `dwType` membro della struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Passato come parametro al metodo [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
-Un tipo di errore del punto di interruzione è composto da un tipo e da una gravità. Ciò significa che un tipo di errore del `BPET_TYPE_ERROR`punto di interruzione non è `BPET_SEV_GENERAL`mai solo un tipo (ad esempio, ,) o un livello di gravità (ad esempio, ) da solo. `BPET_GENERAL_WARNING`e `BPET_GENERAL_ERROR` fornire valori predefiniti per i punti di interruzione di avviso ed errore generali.
+Un tipo di errore del punto di interruzione è costituito da un tipo e da una gravità. Questo significa che un tipo di errore del punto di interruzione non è mai solo un tipo (ad esempio, `BPET_TYPE_ERROR` ) o un livello di gravità (ad esempio, `BPET_SEV_GENERAL` ). `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` forniscono valori predefiniti per i punti di interruzione di avviso e di errore generali.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

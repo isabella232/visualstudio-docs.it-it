@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77558182"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Pubblicazione guidata (sviluppo per Office in Visual Studio)
@@ -39,14 +39,14 @@ ms.locfileid: "77558182"
 
 - Percorso relativo o assoluto in formato Windows standard, ad esempio *c:\distribuzione\applicazione* o *\applicazione*.
 
-- Un percorso di Universal Naming Convention (UNC), ad esempio *\\\ServerName\MyApplication\\* .
+- Un percorso di Universal Naming Convention (UNC), ad esempio * \\ \ServerName\MyApplication \\ *.
 
-- URL di un sito Web, ad esempio `http://www.contoso.com/MyApplication`.
+- URL di un sito Web, ad esempio `http://www.contoso.com/MyApplication` .
 
-  Per impostazione predefinita, il percorso di pubblicazione viene *http://localhost/projectname/* se IIS è installato o la directory publish \ se IIS non è installato.
+  Per impostazione predefinita, il percorso di pubblicazione è *http://localhost/projectname/* se IIS è installato o la directory publish \ se IIS non è installato.
 
 > [!NOTE]
-> Se nel computer di destinazione è in esecuzione Windows Vista, sono presenti ulteriori considerazioni. Per utilizzare l'opzione di pubblicazione locale, è necessario essere un amministratore del computer con Windows Vista. Inoltre, il percorso predefinito è sempre la directory *\\di pubblicazione* , indipendentemente dal fatto che sia installato IIS.
+> Se nel computer di destinazione è in esecuzione Windows Vista, sono presenti ulteriori considerazioni. Per utilizzare l'opzione di pubblicazione locale, è necessario essere un amministratore del computer con Windows Vista. Inoltre, il percorso predefinito è sempre la directory *di \\ pubblicazione* , indipendentemente dal fatto che sia installato IIS.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qual è il percorso di installazione predefinito nei computer degli utenti finali?
  Il percorso di installazione è facoltativo. Se si preferisce, è possibile impostare il percorso di installazione in un secondo momento. Per informazioni dettagliate, vedere [procedura: modificare il percorso di installazione di una soluzione Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
@@ -63,5 +63,5 @@ ms.locfileid: "77558182"
 
 ## <a name="see-also"></a>Vedere anche
 - [Distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Pagina pubblica, sviluppo per &#40;Office Progettazione progetti in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Pagina pubblica, Progettazione progetti &#40;sviluppo per Office in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)

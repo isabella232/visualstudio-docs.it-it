@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774080"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Visualizzazione Righe: dati di campionamento di memoria .NET
@@ -43,8 +43,8 @@ La visualizzazione Righe dei dati di profilatura sull'allocazione di memoria .NE
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene l'istruzione.|
 |**Percorso modulo**|Percorso del modulo che contiene l'istruzione.|
 |**File di origine**|File di origine che contiene l'istruzione.|
@@ -55,7 +55,7 @@ La visualizzazione Righe dei dati di profilatura sull'allocazione di memoria .NE
 |**Fine riga di origine**|Numero di riga finale nel file di origine in corrispondenza del quale si è verificata l'allocazione.|
 |**Inizio carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|
 |**Fine carattere di origine**|Offset del carattere finale nella riga del file di origine in corrispondenza del quale si è verificata l'allocazione.|
-|**Nome riga**|Un identificatore generato dal profiler della`Source File`riga con la sintassi seguente:**;[** `Line Number Start` **,**,`Character Start`**]->; [**`Line Number Start,Character Start`**]**|
+|**Nome riga**|Identificatore generato dal profiler della riga con la sintassi seguente: `Source File` **; [** `Line Number Start` **,**`Character Start` **]->; [**`Line Number Start,Character Start`**]**|
 |**Allocazioni esclusive**|Numero totale di oggetti creati in questa riga.|
 |**% allocazioni esclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che sono stati allocati in questa riga.|
 |**Byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che sono stati allocati in questa riga.|

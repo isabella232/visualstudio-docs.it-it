@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 3d56cfce70b0723b636b9b8ef7c6f3917015bf66
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915551"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script di Windows PowerShell)
@@ -32,67 +32,67 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Configurazione di
+## <a name="configuration"></a>Configurazione
 Percorso del file di configurazione JSON che descrive i dettagli della distribuzione.
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |nessuno |
-| Necessario? |true |
-| Posizione |denominato |
-| Valore predefinito |nessuno |
-| Input pipeline accettato? |false |
-| Caratteri jolly accettati? |false |
+| Alias |Nessuno |
+| Necessaria? |true |
+| Posizione |denominata |
+| Valore predefinito |Nessuno |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 Nome della sottoscrizione di Azure in cui si vuole creare il sito Web.
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |nessuno |
-| Necessario? |false |
-| Posizione |denominato |
-| Valore predefinito |nessuno |
-| Input pipeline accettato? |false |
-| Caratteri jolly accettati? |false |
+| Alias |Nessuno |
+| Necessaria? |false |
+| Posizione |denominata |
+| Valore predefinito |Nessuno |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
 Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Per ulteriori informazioni, vedere [Introduzione a Servizi cloud di Azure e ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md).
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |nessuno |
-| Necessario? |false |
-| Posizione |denominato |
-| Valore predefinito |nessuno |
-| Input pipeline accettato? |false |
-| Caratteri jolly accettati? |false |
+| Alias |Nessuno |
+| Necessaria? |false |
+| Posizione |denominata |
+| Valore predefinito |Nessuno |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Nome utente e password per il database SQL di Azure.
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |nessuno |
-| Necessario? |false |
-| Posizione |denominato |
-| Valore predefinito |nessuno |
-| Input pipeline accettato? |false |
-| Caratteri jolly accettati? |false |
+| Alias |Nessuno |
+| Necessaria? |false |
+| Posizione |denominata |
+| Valore predefinito |Nessuno |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Se impostato su true, stampa i messaggi dallo script al flusso di output.
 
 | Parametro | Valore predefinito |
 | --- | --- |
-| Alias |nessuno |
-| Necessario? |false |
-| Posizione |denominato |
+| Alias |Nessuno |
+| Necessaria? |false |
+| Posizione |denominata |
 | Valore predefinito |false |
-| Input pipeline accettato? |false |
-| Caratteri jolly accettati? |false |
+| Accettare input da pipeline? |false |
+| Accettare caratteri jolly? |false |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 Per una spiegazione completa sull'uso dello script per creare ambienti di sviluppo e test, vedere [Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 Il file di configurazione JSON specifica i dettagli degli elementi da distribuire. Include le informazioni specificate al momento della creazione del progetto, ad esempio il nome e il nome utente per il sito Web. Se esiste, include anche il database di cui eseguire il provisioning. Il codice seguente mostra un esempio di file di configurazione JSON:
@@ -121,7 +121,7 @@ Il file di configurazione JSON specifica i dettagli degli elementi da distribuir
 }
 ```
 
-È possibile modificare il file di configurazione JSON per cambiare gli elementi da distribuire. È necessaria una sezione webSite, mentre la sezione database è facoltativa.
+È possibile modificare il file di configurazione JSON per cambiare gli elementi da distribuire. La sezione webSite è obbligatoria, ma la sezione del database è facoltativa.
 
 ## <a name="next-steps"></a>Passaggi successivi
 Per ulteriori informazioni, vedere [Publish-WebApplicationVM (script di Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)

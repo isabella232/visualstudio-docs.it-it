@@ -1,5 +1,5 @@
 ---
-title: Debug di XAML in Blend . Documenti Microsoft
+title: Eseguire il debug di XAML in Blend | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e032f9f99087df26c82b4984c2267a35236bf6e
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81444609"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
@@ -57,9 +57,9 @@ Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../includes/blend
   
 2. Nell'elenco dei tipi di progetto fare clic su **XAML (Windows Store)**.  
   
-3. Nell'elenco dei modelli di progetto fare clic su **Applicazione vuota**.  
+3. Nell'elenco dei modelli di progetto fare clic su **app vuota**.  
   
-4. Nella **Name** casella di testo `DebuggingSample`Nome digitare .  
+4. Nella casella di testo **nome** Digitare `DebuggingSample` .  
   
 5. Nella casella di testo **Percorso** verifica il percorso del progetto.  
   
@@ -99,22 +99,22 @@ Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../includes/blend
   
     Un messaggio di errore ti avvisa che il progetto non può essere compilato e nella parte superiore dell'app appare il pannello **Risultati**, che elenca gli errori.  
   
-    ![Debug di XAML in Blend per Visual Studio](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
+    ![Eseguire il debug di XAML in Blend per Visual Studio](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
   
 ### <a name="resolving-xaml-errors"></a>Risoluzione degli errori XAML  
  Quando vengono rilevati errori XAML, nell'area di progettazione viene visualizzato un avviso che indica che il progetto contiene markup non valido. Mentre risolvi gli errori, il relativo elenco nel pannello **Risultati** si aggiorna automaticamente. Dopo che avrai risolto tutti gli errori, l'area di progettazione sarà abilitata e visualizzerà l'app.  
   
 ##### <a name="to-resolve-the-xaml-errors"></a>Per risolvere gli errori XAML  
   
-1. Fai doppio clic sul primo errore nell'elenco. La descrizione è "Il valore '<' non è valido in un attributo". Quando fai doppio clic sull'errore, il puntatore trova la posizione corrispondente nel codice. Il valore `<` che precede `Button` è valido e non è un attributo come suggerito nel messaggio di errore. Se osservi la riga di codice precedente, noterai che le virgolette di chiusura per l'attributo `Top` sono mancanti. Digita le virgolette di chiusura. L'elenco degli errori presente nel pannello **Risultati** si aggiorna automaticamente per riflettere le modifiche.  
+1. Fai doppio clic sul primo errore nell'elenco. La descrizione è "il valore ' <' non è valido in un attributo". Quando fai doppio clic sull'errore, il puntatore trova la posizione corrispondente nel codice. Il valore `<` che precede `Button` è valido e non è un attributo come suggerito nel messaggio di errore. Se osservi la riga di codice precedente, noterai che le virgolette di chiusura per l'attributo `Top` sono mancanti. Digita le virgolette di chiusura. L'elenco degli errori presente nel pannello **Risultati** si aggiorna automaticamente per riflettere le modifiche.  
   
-2. Fare doppio clic sulla descrizione "'0' non è valido all'inizio di un nome." `Margin="0,149,0,0"`sembra essere ben formato. Nota che la codifica colori di `Margin` non corrisponde alle altre istanze di `Margin` nel codice. Poiché le virgolette di chiusura mancano nella coppia nome/valore precedente (`VerticalAlignment="Top`), `Margin="` viene letto come parte del valore dell'attributo precedente e 0 viene letto come carattere iniziale di una coppia nome/valore. Digita le virgolette di chiusura per `Top`. L'elenco degli errori presente nel pannello **Risultati** si aggiorna automaticamente per riflettere le modifiche.  
+2. Fare doppio clic sulla descrizione "' 0' non è valido all'inizio di un nome". `Margin="0,149,0,0"` sembra essere ben formato. Nota che la codifica colori di `Margin` non corrisponde alle altre istanze di `Margin` nel codice. Poiché le virgolette di chiusura mancano nella coppia nome/valore precedente (`VerticalAlignment="Top`), `Margin="` viene letto come parte del valore dell'attributo precedente e 0 viene letto come carattere iniziale di una coppia nome/valore. Digita le virgolette di chiusura per `Top`. L'elenco degli errori presente nel pannello **Risultati** si aggiorna automaticamente per riflettere le modifiche.  
   
 3. Fai doppio clic sull'errore rimanente, "Tag XML di chiusura 'Button' non corrispondente". Il puntatore si trova in corrispondenza del tag **Grid** di chiusura (`</Grid>`), suggerendo che l'errore si trova all'interno dell'oggetto `Grid`. Nota che il secondo oggetto `Button` è privo del tag di chiusura. Dopo aver aggiunto il tag `/` di chiusura, l'elenco del pannello **Risultati** viene aggiornato. Ora che questi errori iniziali sono stati risolti, ne vengono identificati altri due.  
   
 4. Fai doppio clic su "Membro 'content' non riconosciuto o non accessibile". `c` in `content` deve essere maiuscolo. Sostituisci la lettera "c" minuscola con una "c" maiuscola.  
   
-5. Fare doppio clic su "La proprietà 'Mame' non esiste nello `https://schemas.microsoft.com/winfx/2006/xaml` spazio dei nomi." La "M" di "Mame" dovrebbe essere una "N". Sostituisci la lettera "M" con una "N". Ora che il codice XAML può essere analizzato, l'app compare nell'area di progettazione.  
+5. Fare doppio clic su "la proprietà' MAME ' non esiste nello `https://schemas.microsoft.com/winfx/2006/xaml` spazio dei nomi". La "M" di "Mame" dovrebbe essere una "N". Sostituisci la lettera "M" con una "N". Ora che il codice XAML può essere analizzato, l'app compare nell'area di progettazione.  
   
     ![Debug di XAML in Blend per Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
@@ -123,7 +123,7 @@ Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../includes/blend
 ## <a name="debugging-in-visual-studio"></a>Debug in Visual Studio  
  Puoi aprire progetti [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto di [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] in Visual Studio, fai clic con il pulsante destro del mouse sul progetto nel pannello **Progetti**, quindi scegli **Modifica in Visual Studio**. Una volta completata la sessione di debug in Visual Studio, premi CTRL+MAIUSC+S per salvare tutte le modifiche e poi torna a [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Ti verrà chiesto di ricaricare il progetto. Fai clic su **Sì tutti** per continuare a lavorare in [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Per altre informazioni sul debug dell'app, vedere Eseguire il debug delle app di [Windows Store in Visual Studio.](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx)  
+ Per altre informazioni sul debug dell'app, vedere [eseguire il debug di app di Windows Store in Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
   
 ## <a name="getting-help"></a>Risorse della Guida  
- Se hai bisogno di [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] ulteriore assistenza per il debug della tua app, puoi cercare nei forum della community di app di [Windows Store](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) i post correlati al problema o pubblicare una domanda.
+ Per ulteriori informazioni sul debug dell' [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] app, è possibile cercare nei [Forum della community di app di Windows Store](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) i post correlati al problema o pubblicare una domanda.

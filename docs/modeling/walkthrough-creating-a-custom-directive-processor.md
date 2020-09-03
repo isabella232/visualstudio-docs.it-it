@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532236"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
@@ -654,7 +654,7 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      La chiave del Registro di sistema deve contenere i valori seguenti:
 
-   | Nome | Type | Data |
+   | Nome | Type | Dati |
    |-|-|-|
    | Valore predefinito. | REG_SZ | (valore non impostato) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -662,7 +662,7 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      Se si è inserito l'assembly nella GAC, i valori appariranno come indicato di seguito:
 
-   | Nome | Type | Data |
+   | Nome | Type | Dati |
    |-|-|-|
    | Valore predefinito. | REG_SZ | (valore non impostato) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |

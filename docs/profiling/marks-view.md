@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773968"
 ---
 # <a name="marks-view"></a>Visualizzazione Contrassegni
@@ -26,7 +26,7 @@ Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campiona
 
  I contrassegni predefiniti preinseriti nel report indicano l'inizio e la fine del programma.
 
- In questa visualizzazione vengono presentati anche i dati dei contatori di Windows ottenuti da contrassegni generati automaticamente. Per ulteriori informazioni, vedere [Procedura: raccogliere dati sui contatori](../profiling/how-to-collect-windows-counter-data.md)di Windows .
+ In questa visualizzazione vengono presentati anche i dati dei contatori di Windows ottenuti da contrassegni generati automaticamente. Per altre informazioni, vedere [procedura: raccogliere i dati dei contatori di Windows](../profiling/how-to-collect-windows-counter-data.md).
 
  Per creare un filtro tra due contrassegni, selezionare i contrassegni, fare clic con il pulsante destro del mouse sui contrassegni e quindi scegliere **Aggiungi filtro in contrassegni** o **Aggiungi filtro in timestamp**.
 
@@ -41,6 +41,6 @@ Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campiona
  Dati del contatore delle prestazioni di Windows Quando vengono raccolti dati del contatore delle prestazioni di Windows, i valori vengono visualizzati in una colonna che ha il nome del contatore.
 
 ## <a name="see-also"></a>Vedere anche
-- [Panoramica del rapporto sul rendimento](../profiling/performance-report-overview.md)
+- [Panoramica del rapporto di prestazioni](../profiling/performance-report-overview.md)
 - [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;finestra NiB&#93; Data Collection Control](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [&#91;&#93; finestra del controllo raccolta dati](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

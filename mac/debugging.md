@@ -8,10 +8,10 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
 ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939081"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debug con Visual Studio per Mac
@@ -40,7 +40,7 @@ Per impostare un punto di interruzione nell'IDE, fare clic sull'area del margine
 
 ![Impostazione di un punto di interruzione nel margine](media/debugging-image0.png)
 
-È possibile visualizzare tutti i punti di interruzione impostati nel codice passando al riquadro punti di **interruzione**:
+È possibile visualizzare tutti i punti di interruzione impostati nel codice passando al riquadro punti di  **interruzione**:
 
 ![Elenco dei punti di interruzione](media/debugging-image0a.png)
 

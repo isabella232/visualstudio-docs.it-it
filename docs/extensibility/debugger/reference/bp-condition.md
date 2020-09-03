@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION . Documenti Microsoft
+title: BP_CONDITION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738098"
 ---
 # <a name="bp_condition"></a>BP_CONDITION
-Descrive le condizioni in cui viene generato un punto di interruzione.
+Descrive le condizioni in cui un punto di interruzione viene attivato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ public struct BP_CONDITION {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `pThread`\
 Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread attivo per l'applicazione che contiene il punto di interruzione.
 
@@ -61,17 +61,17 @@ Posizione del punto di interruzione.
 Condizione di attivazione del punto di interruzione.
 
 `nRadix`\
-Radix da utilizzare nella valutazione di qualsiasi informazione numerica.
+Radice da usare per la valutazione di qualsiasi informazione numerica.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.
+Questa struttura è un membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
-Questa struttura viene passata anche come parametro per il [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) metodi.
+Questa struttura viene passata anche come parametro ai metodi [secondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [secondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

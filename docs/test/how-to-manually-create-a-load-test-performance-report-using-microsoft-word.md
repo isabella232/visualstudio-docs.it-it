@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f630c0e5c054185dcc0dcb87f553dff8dd2ad8f7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287597"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word
@@ -55,7 +55,7 @@ ms.locfileid: "85287597"
     > [!WARNING]
     > Non è possibile copiare il grafico da un desktop remoto e incollarlo in un altro computer, perché verranno copiate solo le informazioni della tabella associata al grafico e non l'immagine del grafico. L'immagine del grafico viene archiviata nella directory temporanea del computer dal quale è stata copiata e il secondo computer non è in grado di dereferenziare tale directory.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md)
 - [Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

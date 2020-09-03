@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288078"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
@@ -263,7 +263,7 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 
     Il file di dati specificato verrà allegato ai risultati del test.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>

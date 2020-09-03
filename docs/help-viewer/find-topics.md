@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284919"
 ---
 # <a name="how-to-search-for-topics"></a>Procedura: Eseguire la ricerca di argomenti
@@ -76,7 +76,7 @@ L'algoritmo di ricerca applica determinati criteri per consentire la classificaz
 
 Alcune parole o numeri molto comuni, definiti a volte parole non significative, vengono ignorati automaticamente durante la ricerca full-text. Ad esempio, se si cerca la frase "passare a", i risultati visualizzeranno gli argomenti contenenti la parola "passare" ma non "a".
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Operatori logici e avanzati](../help-viewer/logical-operators-search-expressions.md)
 - [Procedura: trovare argomenti nell'indice](../help-viewer/find-topics-index.md)

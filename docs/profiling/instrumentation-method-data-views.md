@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774163"
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
@@ -27,15 +27,15 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Elenca le funzioni che hanno richiesto la maggiore quantità di tempo e le funzioni che hanno eseguito la maggior parte del lavoro individuale.
 
-- [Visualizzazione Struttura ad albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
 
  Visualizza i percorsi di esecuzione delle funzioni in un albero gerarchico.
 
-- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)
 
  Organizza i dati di profilatura per modulo e li elenca per le funzioni nel modulo.
 
-- [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
+- [Visualizzazione chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)
 
  Visualizza i dati di profilatura per le funzioni padre e figlio di una funzione selezionata.
 
