@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4a8ed3f52a6e4709aa9553b0d7cc906069c9bcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202576"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera la posizione di memoria in cui deve basarsi l'immagine.  
+Recupera la posizione di memoria in cui deve essere basata l'immagine.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT get_imageBase ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il valore di base dell'immagine suggerita.  
+ out Restituisce il valore di base dell'immagine suggerito.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- A causa di conflitti di base di immagine, un'immagine può essere riassegnata automaticamente in una posizione di memoria inutilizzata al momento del caricamento. Questo metodo restituisce l'hint di base (percorso consigliato per la memoria) che è stato archiviato nel modulo in fase di compilazione.  
+## <a name="remarks"></a>Osservazioni  
+ A causa dei conflitti di base dell'immagine, un'immagine potrebbe essere riassegnata automaticamente a una posizione di memoria inutilizzata quando viene caricata. Questo metodo restituisce l'hint di base (posizione di memoria suggerita) archiviato nel modulo in fase di compilazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

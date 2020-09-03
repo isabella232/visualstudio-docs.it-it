@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114893"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generare e configurare l'app da modelli
@@ -37,11 +37,11 @@ ms.locfileid: "76114893"
 ## <a name="configuring-your-application-from-a-model"></a>Configurazione dell'applicazione in base a un modello
  Se si vuole variare il comportamento dell'applicazione in fase di esecuzione, non è possibile usare la generazione di codice, poiché genera il codice sorgente prima che venga compilata l'applicazione. In alternativa, è possibile progettare l'applicazione in modo che legga il modello e per variare il comportamento di conseguenza. Per altre informazioni, vedere:
 
-- [Procedura: Aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Procedura: aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Questo metodo può anche essere applicato in modo incrementale, ma ciò comporta maggiore impegno nelle fasi iniziali. Sarà infatti necessario scrivere il codice che leggerà il modello e configurare un framework che ne renda i valori accessibili alle parti variabili. La generalizzazione delle parti variabili è un approccio più dispendioso rispetto alla generazione di codice.
 
-  Il livello di prestazioni garantito da un'applicazione generica è solitamente inferiore a quello delle controparti specifiche. Se le prestazioni sono cruciali, è opportuno che il piano del progetto includa una valutazione di questo rischio.
+  Il livello di prestazioni garantito da un'applicazione generica è solitamente inferiore a quello delle controparti specifiche.  Se le prestazioni sono cruciali, è opportuno che il piano del progetto includa una valutazione di questo rischio.
 
 ## <a name="developing-a-derived-application"></a>Sviluppo di un'applicazione derivata
  Per lo sviluppo di un'applicazione derivata potranno rivelarsi utili le linee guida descritte di seguito.
@@ -73,5 +73,5 @@ ms.locfileid: "76114893"
 ## <a name="see-also"></a>Vedere anche
 
 - [Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Procedura: Aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Procedura: aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

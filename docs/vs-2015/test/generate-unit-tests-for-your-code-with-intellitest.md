@@ -11,10 +11,10 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f03490fc7ea3513a006254e3931cc1113f3bc159
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74302588"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generare unit test per il codice con IntelliTest
@@ -36,15 +36,15 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
 
 2. Fare clic con il pulsante destro del mouse nel codice e scegliere **Esegui IntelliTest** per generare gli unit test per il codice nel metodo.
 
-     ![Fare&#45;clic con il pulsante destro del mouse nel metodo per generare unit test](../test/media/runpex.png "RunPEX")
+     ![Right&#45;fare clic nel metodo per generare unit test](../test/media/runpex.png "RunPEX")
 
      IntelliTest esegue il codice più volte con input diversi. Ogni esecuzione viene rappresentata nella tabella che mostra i dati di test di input e l'output o l'eccezione risultante.
 
-     ![La finestra risultati esplorazione viene visualizzata con i test](../test/media/pexexplorationresults.png "PEXExplorationResults")
+     ![Viene visualizzata la finestra Risultati dell'esplorazione contenente i test](../test/media/pexexplorationresults.png "PEXExplorationResults")
 
      Per generare unit test per tutti i metodi pubblici di una classe, è sufficiente fare clic con il pulsante destro del mouse nella classe invece che in un metodo specifico. Quindi, scegliere **Esegui IntelliTest**. Usare l'elenco a discesa nella finestra Risultati esplorazione per visualizzare gli unit test e i dati di input per ogni metodo della classe.
 
-     ![Selezionare i risultati del test da visualizzare nell'elenco](../test/media/selectpextest.png "SelectPEXTest")
+     ![Selezionare i risultati del test per visualizzarli nell'elenco](../test/media/selectpextest.png "SelectPEXTest")
 
      Per i test che vengono superati verificare che i risultati indicati nella colonna dei risultati corrispondano a quanto previsto per il codice. Per i test che non vengono superati correggere il codice nel modo appropriato. Eseguire quindi di nuovo IntelliTest per verificare le correzioni.
 
@@ -52,7 +52,7 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
 
 1. Selezionare le righe dei dati da salvare con lo unit test con parametri in un progetto di test.
 
-     ![Selezionare i test; fare&#45;clic con il pulsante destro del mouse e scegliere Salva](../test/media/savepextests.png "SavePEXTests")
+     ![Selezionare i test; fare clic con il pulsante&#45;destro del mouse e scegliere Salva](../test/media/savepextests.png "SavePEXTests")
 
      È possibile visualizzare il progetto di test e lo unit test con parametri creato. I singoli unit test, corrispondenti alle singole righe, vengono salvati nel file con estensione g.cs nel progetto di test e uno unit test con parametri viene salvato nel file con estensione cs corrispondente. È possibile eseguire gli unit test e visualizzare i risultati da Esplora test come se si trattasse di unit test creati manualmente.
 
@@ -72,7 +72,7 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
 
 2. Dopo aver esaminato il codice e aver compreso le parti da testare, è possibile correggere l'avviso per consentire la scelta delle classi da usare per testare l'interfaccia.
 
-     ![Fare&#45;clic con il pulsante destro del mouse e scegliere Correggi](../test/media/pexfixwarning.png "PEXFixWarning")
+     ![Right&#45;fare clic sull'avviso e scegliere Correggi](../test/media/pexfixwarning.png "PEXFixWarning")
 
      La scelta viene quindi aggiunta nel file PexAssemblyInfo.cs.
 
@@ -80,12 +80,12 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
 
 3. A questo punto è possibile eseguire di nuovo IntelliTest per generare uno unit test con parametri e dati di test usando solo la classe che è stata corretta.
 
-     ![Eseguire di nuovo IntelliTest per generare i dati di test](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
+     ![Riesecuzione di IntelliTest per generare i dati di test](../test/media/pexwarningsfixed.png "PEXWarningsFixed")
 
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Specificare: usare IntelliTest per convalidare le proprietà di correttezza specificate nel codice
  Specificare la relazione generale tra input e output da verificare con gli unit test generati. Questa specifica viene incapsulata in un metodo simile a un metodo di test, ma universalmente quantificato. Si tratta del metodo di unit test con parametri e tutte le asserzioni effettuate devono essere mantenute per tutti i possibili valori di input che IntelliTest può generare.
 
-## <a name="QandALink"></a> Domande e risposte
+## <a name="q--a"></a><a name="QandALink"></a> D & A
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>D: È possibile usare IntelliTest per il codice non gestito?
  **R:** No, IntelliTest funziona solo con codice gestito.
@@ -104,7 +104,7 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
 - **PexAllowedExceptionFromAssemblyAttribute**
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>D: È possibile aggiungere presupposti allo unit test con parametri?
- **R:** Sì, usare i presupposti per specificare quali dati di test non sono obbligatori per lo unit test relativo a un metodo specifico. Per aggiungere presupposti, usare la classe <xref:Microsoft.Pex.Framework.PexAssume>. Ad esempio, è possibile aggiungere un presupposto per indicare che la variabile lengths è non Null come nell'esempio seguente.
+ **R:** Sì, usare i presupposti per specificare quali dati di test non sono obbligatori per lo unit test relativo a un metodo specifico. Per aggiungere presupposti, usare la classe <xref:Microsoft.Pex.Framework.PexAssume> . Ad esempio, è possibile aggiungere un presupposto per indicare che la variabile lengths è non Null come nell'esempio seguente.
 
  `PexAssume.IsNotNull(lengths);`
 
@@ -117,19 +117,19 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
 
  Se si aggiunge un'asserzione e si esegue di nuovo IntelliTest, verrà verificata la validità dell'asserzione e il test verrà considerato non superato se l'asserzione non è valida.
 
-### <a name="NoRun"></a> D: È possibile generare unit test con parametri senza eseguire prima IntelliTest?
+### <a name="q-can-i-generate-parameterized-unit-tests-without-running-intellitest-first"></a><a name="NoRun"></a> D: È possibile generare unit test con parametri senza eseguire prima IntelliTest?
  **R:** Sì, fare clic con il pulsante destro del mouse nella classe o nel metodo, quindi scegliere **Crea IntelliTest**.
 
- ![Fare&#45;clic con il pulsante destro del mouse su Editor e scegliere](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
+ ![Fare clic con il pulsante&#45;destro del mouse su Editor, scegliere Crea IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")
 
  Accettare il formato predefinito per generare i test o modificare la modalità di denominazione del progetto e dei test. È possibile creare un nuovo progetto di test o salvare i test in un progetto esistente.
 
- ![Creare IntelliTest con MSTest default](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
+ ![Creare IntelliTest con valori predefiniti di MSTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")
 
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>D: È possibile usare altri framework di unit test con IntelliTest?
  **R:** Sì, seguire questa procedura per [trovare e installare altri framework](../test/install-third-party-unit-test-frameworks.md). Dopo aver riavviato Visual Studio e riaperto la soluzione, fare doppio clic nella classe o nel metodo, quindi scegliere **Crea IntelliTest**. Selezionare qui il framework installato:
 
- ![Selezionare altri unit test Framework per IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
+ ![Selezionare altri framework unit test per IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")
 
  Eseguire quindi IntelliTest per generare i singoli unit test nei relativi file con estensione g.cs.
 

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288403"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedura: Analizzare le attività degli utenti virtuali durante un test di carico usando il grafico attività utente virtuale
@@ -57,7 +57,7 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
 
    - **Network**
 
-   - **Ora di Inizio**
+   - **Start Time**
 
    - **Duration**
 
@@ -99,11 +99,11 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
    - **Mostra risultati con errori** Vengono visualizzati i risultati in cui sono presenti errori, che possono risultare utili per l'esecuzione del debug.
 
      > [!NOTE]
-     > È possibile analizzare ulteriormente l'elenco dei tipi di errore elencati nel nodo **Mostra risultati con errori** scegliendo il pulsante **tabelle** nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web** . Per ulteriori informazioni, vedere [analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > È possibile analizzare ulteriormente l'elenco dei tipi di errore elencati nel nodo **Mostra risultati con errori** scegliendo il pulsante **tabelle** nella barra degli strumenti del **Visualizzatore risultati test prestazioni Web** . Per ulteriori informazioni, vedere  [analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      Il **Grafico attività utente virtuale** verrà aggiornato di conseguenza.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Analisi dell'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Procedura dettagliata: uso del grafico attività utente virtuale per isolare i problemi](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

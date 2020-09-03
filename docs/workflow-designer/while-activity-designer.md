@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77954925533c51885a056f7156121e68851ad769
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115171"
 ---
 # <a name="while-activity-designer"></a>ActivityDesigner While
 
-L'attività <xref:System.Activities.Statements.While> esegue l'attività contenuta nel relativo <xref:System.Activities.Statements.While.Body%2A> mentre il <xref:System.Activities.Statements.While.Condition%2A> specificato restituisce **true**. L'attività contenuta potrebbe non essere mai eseguita. Se si desidera eseguirla almeno una volta, usare l'attività <xref:System.Activities.Statements.DoWhile>.
+L' <xref:System.Activities.Statements.While> attività esegue l'attività contenuta in <xref:System.Activities.Statements.While.Body%2A> mentre l'oggetto specificato <xref:System.Activities.Statements.While.Condition%2A> restituisce **true**. L'attività contenuta potrebbe non essere mai eseguita. Se si desidera eseguirla almeno una volta, usare l'attività <xref:System.Activities.Statements.DoWhile>.
 
 ## <a name="while-properties-in-workflow-designer"></a>Proprietà di While in Progettazione flussi di lavoro
 
 Nella tabella seguente sono elencate le proprietà più utili dell'attività <xref:System.Activities.Statements.While> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
-|Nome proprietà:|Richiesto|Usage|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.While> nell'intestazione. Il valore predefinito è While. Il valore può essere modificato nella finestra **Proprietà** o direttamente nell'intestazione Activity Designer.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.While.Body%2A>|Falso|Contiene l'attività da eseguire mentre l'<xref:System.Activities.Statements.While.Condition%2A> restituisce **true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|True|Contiene l'espressione Visual Basic che viene valutata per determinare se l'attività nel <xref:System.Activities.Statements.While.Body%2A> deve essere eseguita.|
+|<xref:System.Activities.Statements.While.Body%2A>|Falso|Contiene l'attività da eseguire mentre l'oggetto <xref:System.Activities.Statements.While.Condition%2A> restituisce **true**.|
+|<xref:System.Activities.Statements.While.Condition%2A>|Vero|Contiene l'espressione Visual Basic che viene valutata per determinare se l'attività nell'oggetto <xref:System.Activities.Statements.While.Body%2A> deve essere eseguita.|
 
 ## <a name="see-also"></a>Vedere anche
 

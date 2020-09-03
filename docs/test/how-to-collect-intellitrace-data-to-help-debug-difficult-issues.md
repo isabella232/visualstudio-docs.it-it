@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0983967d42c6daa89b9a690b93fb97872e98603
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288258"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
@@ -89,7 +89,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
 
 6. Per raccogliere dati dall'applicazione ASP.NET in esecuzione su Internet Information Services, selezionare **Raccogli dati da applicazioni ASP.NET in esecuzione su Internet Information Services**. Impostare e configurare l'agente di test sul ruolo del server Web. Vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
-7. Scegliere la scheda **moduli** . Selezionare **Raccogli dati da tutti i moduli tranne i seguenti** e utilizzare **Aggiungi** per aggiungere all'elenco dei moduli e **rimuovere** per rimuovere un modulo. Questa opzione consente di includere tutti i moduli in esecuzione nel sistema, ad eccezione di quelli specificati.
+7. Scegliere la scheda **moduli** . Selezionare **Raccogli dati da tutti i moduli tranne i seguenti** e usare **Aggiungi** per aggiungere all'elenco dei moduli e **rimuovere** per rimuovere un modulo. Questa opzione consente di includere tutti i moduli in esecuzione nel sistema, ad eccezione di quelli specificati.
 
      -oppure-
 
@@ -124,7 +124,7 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
     > Per reimpostare la configurazione per l'adattatore dati di diagnostica, scegliere **Reimposta configurazione predefinita** in Visual Studio.
     ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Raccogliere dati di diagnostica durante i test (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)

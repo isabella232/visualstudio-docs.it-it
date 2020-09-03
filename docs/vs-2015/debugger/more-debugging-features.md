@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300539"
 ---
 # <a name="more-debugging-features"></a>Ulteriori funzionalità di debug
@@ -49,5 +49,5 @@ Questa sezione contiene funzionalità aggiuntive che è possibile usare con il d
   
  [Uso dei file di dump](../debugger/using-dump-files.md) Descrive i file di dump, incluse le istruzioni per il salvataggio e l'apertura. I file dump contengono uno snapshot dello stato del programma in un determinato momento, in genere dopo un arresto anomalo. Se si testa il programma in un computer in cui non sono installati file di origine o PDB, è possibile salvare un file dump quando si verifica un arresto anomalo e usare tale file per eseguire il debug dell'arresto anomalo nel computer di compilazione in cui sono disponibili i file di origine e i PDB. 
   
- [Procedura: Ripristinare comandi nascosti del debugger](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Procedura: ripristinare comandi nascosti del debugger](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Spiega come rendere visibili i comandi del debugger che sono stati nascosti dalle impostazioni predefinite di IDE.

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b0140ea2e1b894754b0cf35bc75676f277b12a0a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905471"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Procedura: generare le informazioni del registro di sistema per un programma di installazione
@@ -184,4 +184,4 @@ L'utilità *RegPkg.exe* può essere usata per generare un manifesto di registraz
 ## <a name="see-also"></a>Vedere anche
 
 - [Registra VSPackage](../../extensibility/registering-and-unregistering-vspackages.md)
-- [Pacchetti VSPackage](../../extensibility/internals/vspackages.md)
+- [VSPackages](../../extensibility/internals/vspackages.md)

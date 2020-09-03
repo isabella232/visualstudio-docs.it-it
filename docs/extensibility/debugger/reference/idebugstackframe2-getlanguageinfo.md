@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugStackFrame2::GetLanguageInfo . Documenti Microsoft
+title: 'IDebugStackFrame2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cefb4bdd9d0c85311c63e6a988956301a6c2cc14
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719709"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 
-Ottiene il linguaggio associato a questo stack frame.
+Ottiene la lingua associata a questo stack frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +45,10 @@ int GetLanguageInfo ( 
 ## <a name="parameters"></a>Parametri
 
 `pbstrLanguage`\
-[fuori] Restituisce il nome del linguaggio che implementa il metodo associato a questo stack frame.
+out Restituisce il nome della lingua che implementa il metodo associato a questo stack frame.
 
 `pguidLanguage`\
-[fuori] Restituisce `GUID` l'oggetto della lingua. Per [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] le lingue, ad esempio, è possibile restituire quanto segue:
+out Restituisce l'oggetto `GUID` del linguaggio. Per le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] lingue, ad esempio, è possibile che vengano restituiti i seguenti elementi:
 
 - `guidVBScriptLang`\
 

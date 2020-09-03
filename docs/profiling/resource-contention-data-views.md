@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74771530"
 ---
 # <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
@@ -27,15 +27,15 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Visualizza una sequenza temporale grafica dei dati di profilatura ed elenca le funzioni e le risorse che hanno partecipato alla maggior parte degli eventi di blocco.
 
-- [Visualizzazione Struttura ad albero delle chiamate](../profiling/call-tree-view-contention-data.md)
+- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-contention-data.md)
 
  Visualizza un albero gerarchico che rappresenta i percorsi di esecuzione e i dati sui conflitti di risorse delle funzioni nella profilatura.
 
-- [Visualizzazione moduli](../profiling/modules-view-contention-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-contention-data.md)
 
  Organizza i dati sui conflitti di thread e risorse in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni che erano in esecuzione quando si sono verificati gli eventi di blocco.
 
-- [Visualizzazione Chiamante/chiamato: dati sui conflitti](../profiling/caller-callee-view-contention-data.md)
+- [Visualizzazione chiamante/chiamato: dati sui conflitti](../profiling/caller-callee-view-contention-data.md)
 
  Elenca i dati sui conflitti di thread e risorse per una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.
 
@@ -59,7 +59,7 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Elenca i dati sui conflitti di risorse in base alla riga del codice sorgente.
 
-- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-contention-data.md)
+- [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view-contention-data.md)
 
  Elenca i conflitti di risorse in base all'istruzione.
 

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772439"
 ---
 # <a name="performance-explorer-window"></a>Finestra Esplora prestazioni
@@ -52,6 +52,6 @@ La finestra **Esplora prestazioni** contiene un controllo albero che visualizza 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramiche](../profiling/overviews-performance-tools.md)
-sulla configurazione delle sessioni di prestazioni per il controllo della raccolta dei datiOverviews[Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)
-[Controlling Data Collection](../profiling/controlling-data-collection.md)
+[Panoramica](../profiling/overviews-performance-tools.md) 
+ [Configurazione di sessioni](../profiling/configuring-performance-sessions.md) 
+ di prestazioni [Controllo della raccolta dati](../profiling/controlling-data-collection.md)

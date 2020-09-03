@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetDebugReason | Microsoft Docs
+title: 'IDebugProcess3:: GetDebugReason | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6223f72530b549e087511a3f26b7b864972a4dd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202860"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo restituisce il motivo che è stato avviato il processo per eseguire il debug.  
+Questo metodo restituisce il motivo per cui il processo è stato avviato per il debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,10 +40,10 @@ int GetDebugReason(
   
 #### <a name="parameters"></a>Parametri  
  `pReason`  
- [out] Restituisce un valore di [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) enumerazione.  
+ out Restituisce un valore dall'enumerazione [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773981"
 ---
 # <a name="lines-view"></a>Visualizzazione Righe
@@ -45,5 +45,5 @@ La visualizzazione Righe è disponibile solo per i dati del profiler raccolti tr
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)
-- [Visualizzazione Righe - Campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione righe-campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Righe](../profiling/lines-view-contention-data.md)
