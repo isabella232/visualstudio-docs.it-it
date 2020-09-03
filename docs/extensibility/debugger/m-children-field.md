@@ -1,5 +1,5 @@
 ---
-title: m_children Campo . Documenti Microsoft
+title: Campo m_children | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738420"
 ---
-# <a name="m_children-field"></a>m_children campo
+# <a name="m_children-field"></a>Campo m_children
 Elenco di attività figlio registrate con questa attività.
 
- **Spazio dei nomi:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Assembly:** mscorlib (in *mscorlib.dll*)
 
- Poiché non è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente è disponibile in Common Intermediate Language (CIL).
+ Poiché non è possibile accedere a questo membro interno dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,7 +35,7 @@ Elenco di attività figlio registrate con questa attività.
 ## <a name="remarks"></a>Osservazioni
  Mentre l'attività è in esecuzione, solo il thread che esegue l'attività deve accedere a questa matrice.
 
- Se l'attività viene completata, altri thread possono accedere a questo campo purché non vi aggiustano o rimuovano nulla.
+ Se l'attività viene completata, gli altri thread possono accedere a questo campo purché non aggiungano nulla o non rimuovano nulla.
 
 ## <a name="see-also"></a>Vedere anche
 - [Classe ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

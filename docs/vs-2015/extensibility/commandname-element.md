@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 113f420aa4cbbed9454df1ee0c0dd8aafd09a548
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184323"
 ---
 # <a name="commandname-element"></a>Elemento CommandName
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il `CommandName` elemento specifica il testo visualizzato nella categoria della tastiera nel **opzioni** della finestra di dialogo e nel **comandi** nell'elenco il **Personalizza** finestra di dialogo casella.  
+L' `CommandName` elemento specifica il testo visualizzato nella categoria tastiera della finestra di dialogo **Opzioni** e nell'elenco **comandi** della finestra di dialogo **Personalizza** .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,7 +42,7 @@ Il `CommandName` elemento specifica il testo visualizzato nella categoria della 
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento Strings](../extensibility/strings-element.md)|Raggruppa gli elementi di testo, ad esempio `ButtonText` e `CommandName`.|  
+|[Elemento Strings](../extensibility/strings-element.md)|Raggruppa gli elementi di testo, ad esempio `ButtonText` e `CommandName` .|  
   
 ## <a name="see-also"></a>Vedere anche  
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

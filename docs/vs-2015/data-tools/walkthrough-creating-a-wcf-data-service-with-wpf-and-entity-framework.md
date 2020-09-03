@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844279"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa procedura dettagliata viene illustrato come creare un semplice [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] ospitato in un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e quindi accedervi da una Windows Forms Application.
+In questa procedura dettagliata viene illustrato come creare un semplice [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] ospitato in un' [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applicazione Web e quindi accedervi da un Windows Forms Application.
 
  In questa procedura dettagliata vengono illustrate le seguenti operazioni:
 
@@ -32,7 +32,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 - Creazione di un modello [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] che rappresenta la tabella Customers nel database Northwind.
 
-- Creare un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
+- Creare un oggetto [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
 - Creare un'applicazione client e aggiungere un riferimento al servizio [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
@@ -41,7 +41,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 - Aggiunta facoltativa di funzionalità di filtraggio all'applicazione.
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Il database di esempio Northwind.
 
@@ -56,7 +56,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 #### <a name="to-create-the-web-project"></a>Per creare il progetto Web
 
-1. Sulla barra dei menu scegliere **file**, **nuovo**, **progetto**.
+1. Sulla barra dei menu scegliere **file**, **nuovo**,  **progetto**.
 
 2. Nella finestra di dialogo **Nuovo progetto** espandere i nodi **Visual Basic** o **Visual C#** e **Web**, quindi scegliere il modello **Applicazione Web ASP.NET**.
 
@@ -72,9 +72,9 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere il nodo **Dati** e quindi scegliere la voce **ADO.NET Entity Data Model**.
 
-3. Nella casella di testo **nome** immettere `NorthwindModel`, quindi scegliere il pulsante **Aggiungi** .
+3. Nella casella di testo **nome** immettere `NorthwindModel` , quindi scegliere il pulsante **Aggiungi** .
 
-    Viene visualizzata la procedura guidata Entity Data Model.
+    Verrà visualizzata la procedura guidata Entity Data Model.
 
 4. Nella pagina **Scegli contenuto del modello** della procedura guidata Entity Data Model scegliere l'elemento **Entity Framework Designer da database**, quindi fare clic sul pulsante **Avanti**.
 
@@ -82,7 +82,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
    - Nell'elenco a discesa scegliere una connessione dati al database di esempio Northwind, se disponibile.
 
-        oppure
+        -oppure-
 
    - Scegliere il pulsante **Nuova connessione** per configurare una nuova connessione dati. Per altre informazioni, vedere [aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 
@@ -108,9 +108,9 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere il nodo **Web**, quindi scegliere la voce **WCF Data Service 5.6**.
 
-3. Nella casella di testo **nome** immettere `NorthwindCustomers`, quindi scegliere il pulsante **Aggiungi** .
+3. Nella casella di testo **nome** immettere `NorthwindCustomers` , quindi scegliere il pulsante **Aggiungi** .
 
-    Il file NorthwindCustomers. svc viene visualizzato nell' **editor di codice**.
+    Il file NorthwindCustomers.svc verrà visualizzato nell'**editor di codice**.
 
 4. Nell'**editor di codice** trovare il primo commento `TODO:` e sostituire il codice con il seguente:
 
@@ -144,7 +144,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 1. Sulla barra dei menu scegliere file, **Aggiungi**, **nuovo progetto**.
 
-2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **oggetto C# visivo** , scegliere il nodo **Windows** , quindi scegliere **Windows Forms applicazione**.
+2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **Visual C#** e scegliere il nodo **Windows** , quindi scegliere **Windows Forms applicazione**.
 
 3. Nella casella di testo **Nome** immettere `NorthwindClient` e quindi scegliere il pulsante **OK**.
 
@@ -219,7 +219,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
    ```
 
-6. In **Esplora soluzioni**aprire il menu di scelta rapida per il file NorthwindCustomers. svc e scegliere **Visualizza nel browser**. Verrà aperto Internet Explorer e verrà visualizzato l'XML Schema per il servizio.
+6. In **Esplora soluzioni** aprire il menu di scelta rapida per il file NorthwindCustomers.svc e scegliere **Visualizza nel browser**. Verrà aperto Internet Explorer e verrà visualizzato l'XML Schema per il servizio.
 
 7. Copiare l'URL dalla barra degli indirizzi di Internet Explorer.
 
@@ -240,7 +240,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 2. Aggiungere al form un controllo <xref:System.Windows.Forms.TextBox> e un controllo <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti**.
 
-3. Aprire il menu di scelta rapida per il controllo <xref:System.Windows.Forms.Button> e scegliere **Visualizza codice**, quindi aggiungere il codice seguente nel gestore eventi `Button1_Click`:
+3. Aprire il menu di scelta rapida per il <xref:System.Windows.Forms.Button> controllo e scegliere **Visualizza codice**, quindi aggiungere il codice seguente nel `Button1_Click` gestore eventi:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

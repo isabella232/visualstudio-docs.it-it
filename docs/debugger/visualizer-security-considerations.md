@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187151"
 ---
 # <a name="visualizer-security-considerations"></a>Considerazioni sulla sicurezza del visualizzatore
@@ -39,6 +39,6 @@ La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. At
 
 ## <a name="see-also"></a>Vedere anche
 - [Architettura del visualizzatore](../debugger/visualizer-architecture.md)
-- [Procedura: Scrivere un visualizzatore](create-custom-visualizers-of-data.md)
-- [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
+- [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)
+- [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

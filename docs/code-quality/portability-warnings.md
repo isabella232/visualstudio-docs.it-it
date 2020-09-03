@@ -1,5 +1,5 @@
 ---
-title: avvisi di portabilità
+title: Portability Warnings
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f48cef7ffaf08fc26566fdd04bee15a3e3e1b85f
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78167573"
 ---
-# <a name="portability-warnings"></a>avvisi di portabilità
+# <a name="portability-warnings"></a>Portability Warnings
 Gli avvisi di portabilità supportano la portabilità tra diversi sistemi operativi.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
@@ -29,5 +29,5 @@ Gli avvisi di portabilità supportano la portabilità tra diversi sistemi operat
 |Regola|Descrizione|
 |----------|-----------------|
 |[CA1900: I campi dei tipi di valore devono essere portabili](../code-quality/ca1900.md)|Questa regola consente di verificare che le strutture dichiarate tramite un attributo di layout esplicito vengano allineate correttamente quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 64 bit.|
-|[CA1901: Le dichiarazioni P/Invoke devono essere portabili](../code-quality/ca1901.md)|Questa regola valuta la dimensione di ciascun parametro e il valore restituito di P/Invoke e verifica che le relative dimensioni siano corrette quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 32 bit e a 64 bit.|
+|[CA1901: le dichiarazioni P/Invoke devono essere portabili](../code-quality/ca1901.md)|Questa regola valuta la dimensione di ciascun parametro e il valore restituito di P/Invoke e verifica che le relative dimensioni siano corrette quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 32 bit e a 64 bit.|
 |[CA1903: Usare solo API della versione di .NET Framework di destinazione](../code-quality/ca1903.md)|Un membro o un tipo sta utilizzando un membro o un tipo introdotto in un service pack non incluso con la versione di .NET Framework di destinazione del progetto.|

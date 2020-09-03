@@ -10,19 +10,19 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187308"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Registrare le informazioni nella finestra di output usando punti in Visual Studio
 
-Punti consentono di registrare le informazioni nella finestra di output in condizioni configurabili senza modificare o arrestare il codice. Questa funzionalità è supportata sia per i linguaggi gestitiC#(, Visual Basic F#,) sia per il codice nativo, nonché per linguaggi quali JavaScript e Python.
+Punti consentono di registrare le informazioni nella finestra di output in condizioni configurabili senza modificare o arrestare il codice. Questa funzionalità è supportata sia per i linguaggi gestiti (C#, Visual Basic, F #) sia per il codice nativo, nonché per linguaggi quali JavaScript e Python.
 
-## <a name="let39s-take-an-example"></a>Diamo&#39;un esempio
+## <a name="let39s-take-an-example"></a>Consentire a&#39;s di eseguire un esempio
 
-Il programma di esempio seguente è un semplice ciclo di `for` con una variabile contatore che aumenta di uno ogni volta che il ciclo esegue un'altra iterazione.
+Il programma di esempio seguente è un semplice `for` ciclo con una variabile contatore che aumenta di uno ogni volta che il ciclo esegue un'altra iterazione.
 
 ![Esempio di contatore](../debugger/media/counterexample.png "Esempio di contatore")
 
@@ -47,7 +47,7 @@ Il programma di esempio seguente è un semplice ciclo di `for` con una variabile
 
 5. Immettere il messaggio per cui si vuole accedere alla casella di testo **Mostra un messaggio nella finestra di output** . per informazioni dettagliate, vedere le sezioni successive di questo articolo.
 
-   Il punto di analisi è ora impostato. Fare clic sul pulsante &quot;Close &quot; se si desidera eseguire la registrazione di alcune informazioni all'Finestra di output.
+   Il punto di analisi è ora impostato. Premere il &quot; &quot; pulsante Chiudi se si desidera eseguire la registrazione di alcune informazioni nella finestra di output.
 
 6. Se si desidera aggiungere condizioni che determinano se il messaggio è visualizzato, selezionare la casella di controllo **condizioni** .
 
@@ -55,11 +55,11 @@ Il programma di esempio seguente è un semplice ciclo di `for` con una variabile
 
    Sono disponibili tre opzioni per le condizioni: **espressione condizionale**, **filtro**e **numero di passaggi**.
 
-## <a name="actions-menu"></a>Menu azioni
+## <a name="actions-menu"></a>Menu Azioni
 
 Questo menu consente di registrare un messaggio nella finestra di output. Digitare le stringhe che si desidera visualizzare nella finestra di messaggio (non sono necessarie virgolette). Se si desidera visualizzare i valori delle variabili, assicurarsi di racchiuderlo tra parentesi graffe.
 
-Se, ad esempio, si desidera visualizzare il valore della variabile `counter` nella console di output, digitare {Counter} nella casella di testo del messaggio.
+Se ad esempio si desidera visualizzare il valore della `counter` variabile nella console di output, digitare {Counter} nella casella di testo del messaggio.
 
 ![Messaggio di output del contatore](../debugger/media/counteroutputmessage.png "Messaggio di output del contatore")
 
@@ -75,10 +75,10 @@ Se si fa clic su **Chiudi** e quindi si esegue il debug del programma (**F5**), 
 | $CALLER | Scegliere il nome della funzione |
 | $CALLSTACK | Stack di chiamate |
 | $FUNCTION | Nome della funzione corrente |
-| $PID | ID processo |
-| $PNAME | Nome processo |
-| $TID | ID thread |
-| $TNAME   | Nome thread |
+| $PID | ID di processo |
+| $PNAME | Nome del processo |
+| $TID | ID del thread |
+| $TNAME   | Nome del thread |
 | $TICK | Conteggio dei cicli (da Windows GetTickCount) |
 
 ## <a name="conditions-menu"></a>Menu condizioni
@@ -88,18 +88,18 @@ Le condizioni consentono di filtrare i messaggi di output, in modo che vengano v
 ### <a name="conditional-expression"></a>Espressione condizionale
 Per un'espressione condizionale, un messaggio di output viene visualizzato solo quando vengono soddisfatte determinate condizioni.
 
-Per le espressioni condizionali, è possibile impostare il punto di analisi in modo che restituisca un messaggio quando una determinata condizione è true o quando è stata modificata. Se, ad esempio, si desidera visualizzare il valore del contatore solo durante le iterazioni del ciclo di `for`, è possibile selezionare l'opzione **è true** , quindi digitare `i%2 == 0` nella casella di testo del messaggio.
+Per le espressioni condizionali, è possibile impostare il punto di analisi in modo che restituisca un messaggio quando una determinata condizione è true o quando è stata modificata. Se, ad esempio, si desidera visualizzare il valore del contatore solo durante le iterazioni del `for` ciclo, è possibile selezionare l'opzione **è true** e quindi digitare `i%2 == 0` nella casella di testo del messaggio.
 
 ![L'espressione condizionale è true](../debugger/media/conditionalexpressionistrue.png "L'espressione condizionale è true")
 
-Se si desidera stampare il valore del contatore quando viene modificata l'iterazione del ciclo di `for`, selezionare l'opzione **When Changed** e digitare `i` nella casella di testo del messaggio.
+Se si desidera stampare il valore del contatore quando viene modificata l'iterazione del `for` ciclo, selezionare l'opzione **When Changed** e digitare `i` nella casella di testo del messaggio.
 
 ![Espressione condizionale quando viene modificata](../debugger/media/conditionalexpressionwhenchanged.png "Espressione condizionale quando viene modificata")
 
-Il comportamento dell'opzione **When Changed** è diverso per i diversi linguaggi di programmazione.
+Il comportamento dell'opzione  **When Changed**  è diverso per i diversi linguaggi di programmazione.
 
 - Per il codice nativo, il debugger non considera la prima valutazione della condizione come una modifica, quindi non raggiunge il punto di analisi alla prima valutazione.
-- Per il codice gestito, il debugger raggiunge il punto di analisi alla prima valutazione dopo la selezione di **modificato** .
+- Per il codice gestito, il debugger raggiunge il punto di analisi alla prima valutazione dopo la selezione di **modificato**  .
 
 Per informazioni più complete sulle espressioni valide che è possibile usare durante l'impostazione delle condizioni, vedere [espressioni nel debugger](expressions-in-the-debugger.md).
 
@@ -123,7 +123,7 @@ Elenco di espressioni di filtro:
 - ThreadId = value
 - ThreadName = "name"
 
-Racchiudere le stringhe, ad esempio i nomi, tra virgolette doppie. I valori possono essere immessi senza virgolette. È possibile combinare clausole usando `&` (`AND`), `||` (`OR`), `!` (`NOT`) e le parentesi.
+Racchiudere le stringhe, ad esempio i nomi, tra virgolette doppie. I valori possono essere immessi senza virgolette. È possibile combinare clausole usando `&` ( `AND` ), `||` (), `OR` `!` ( `NOT` ) e le parentesi.
 
 ## <a name="considerations"></a>Considerazioni
 
@@ -131,14 +131,14 @@ Anche se punti è progettato per semplificare l'esperienza di debug e più sempl
 
 In alcuni casi, quando si ispeziona una proprietà o un attributo di un oggetto, il relativo valore può cambiare. Se il valore viene modificato durante l'ispezione, non si tratta di un bug causato dalla funzionalità del punto di analisi. Tuttavia, l'uso di punti per controllare gli oggetti non evita queste modifiche accidentali.
 
-Il modo in cui le espressioni vengono valutate nella finestra di messaggio **azione** può essere diverso dalla lingua attualmente utilizzata per lo sviluppo. Per restituire una stringa, ad esempio, non è necessario eseguire il wrapping di un messaggio tra virgolette anche se si utilizza normalmente `Debug.WriteLine()` o `console.log()`. Inoltre, la sintassi di parentesi graffe (`{ }`) per le espressioni di output può essere diversa rispetto alla convenzione per l'output dei valori nel linguaggio di sviluppo. Tuttavia, il contenuto racchiuso tra parentesi graffe (`{ }`) deve comunque essere scritto utilizzando la sintassi del linguaggio di sviluppo.
+Il modo in cui le espressioni vengono valutate nella finestra di messaggio **azione** può essere diverso dalla lingua attualmente utilizzata per lo sviluppo. Per restituire una stringa, ad esempio, non è necessario eseguire il wrapping di un messaggio tra virgolette anche se normalmente si usa `Debug.WriteLine()` o `console.log()` . Inoltre, la sintassi per le parentesi graffe ( `{ }` ) per le espressioni di output può essere diversa rispetto alla convenzione per l'output dei valori nel linguaggio di sviluppo. (Tuttavia, il contenuto all'interno delle parentesi graffe ( `{ }` ) deve essere comunque scritto usando la sintassi del linguaggio di sviluppo.
 
 Se si sta provando a eseguire il debug di un'applicazione in tempo reale e di cercare una funzionalità simile, vedere la funzionalità punto nel Snapshot Debugger. Snapshot debugger è uno strumento utilizzato per analizzare i problemi nelle applicazioni di produzione. Punti consentono inoltre di inviare messaggi al Finestra di output senza dover modificare il codice sorgente e non influiscano sull'applicazione in esecuzione. Per ulteriori informazioni, vedere [debug di un'applicazione Azure Live](../debugger/debug-live-azure-applications.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
-- [Scrivere codice C# migliore con Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Scrivi codice C# migliore con Visual Studio](../debugger/write-better-code-with-visual-studio.md)
 - [Esaminare prima di tutto il debug](../debugger/debugger-feature-tour.md)
 - [Espressioni nel debugger](expressions-in-the-debugger.md)
 - [Usare i punti di interruzione](../debugger/using-breakpoints.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187166"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
@@ -77,7 +77,7 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 
  Si tenga presente che il provider di oggetti può usare due API. I dati vengono sempre inviati dal provider di oggetti all'origine oggetto come oggetto `Stream`, ma il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> richiede la serializzazione dell'oggetto in un oggetto `Stream`.
 
- Il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> prende l'oggetto specificato, lo serializza in un oggetto `Stream`, quindi chiama il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> per inviare l'oggetto `Stream` al metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.
+ Il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceObject%2A> accetta l'oggetto specificato, lo serializza in un oggetto `Stream`, quindi chiama il metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.ReplaceData%2A> per inviare l'oggetto `Stream` al metodo <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.CreateReplacementObject%2A>.
 
  L'utilizzo di uno dei metodi di sostituzione consente di creare un oggetto dati nuovo nel lato oggetto del debug che sostituisce l'oggetto visualizzato. Se si desidera modificare il contenuto dell'oggetto originale senza sostituirlo, utilizzare uno dei metodi di trasferimento illustrati nella tabella seguente. Queste API trasferiscono contemporaneamente i dati in entrambe le direzioni, senza sostituire l'oggetto visualizzato:
 
@@ -86,8 +86,8 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> -oppure-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Scrivere un visualizzatore](create-custom-visualizers-of-data.md)
-- [Procedura dettagliata: scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)
+- [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)

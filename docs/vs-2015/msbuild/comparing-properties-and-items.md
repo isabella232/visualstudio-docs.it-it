@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184099"
 ---
 # <a name="comparing-properties-and-items"></a>Confronto di proprietà ed elementi
@@ -23,9 +23,9 @@ ms.locfileid: "68184099"
 
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.  
   
-- Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).  
+- Le proprietà sono coppie nome-valore. Per altre informazioni, vedere [proprietà di MSBuild](msbuild-properties1.md).  
   
-- Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
+- Gli elementi sono oggetti che rappresentano in genere i file. Agli oggetti elemento possono essere associate raccolte di metadati. I metadati sono coppie nome-valore. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Valori scalari e vettori  
  Poiché le proprietà MSBuild sono coppie nome-valore con un solo valore di stringa, sono spesso descritte come *valori scalari*. I tipi di elemento MSBuild sono invece elenchi di elementi e sono pertanto spesso descritti come *vettori*. In realtà le proprietà possono comunque rappresentare più valori, mentre i tipi di elemento possono non avere elementi o aver uno.  
@@ -43,7 +43,7 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
 </PropertyGroup>  
 ```  
   
- La proprietà `BuildDependsOn` viene in genere usata come argomento di un attributo di destinazione `DependsOnTargets` che lo converte in modo efficace in un elenco di elementi. Questa proprietà può essere sottoposta a override per aggiungere una destinazione o per modificare l'ordine di esecuzione della destinazione. Ad esempio,  
+ La proprietà `BuildDependsOn` viene in genere usata come argomento di un attributo di destinazione `DependsOnTargets` che lo converte in modo efficace in un elenco di elementi. Questa proprietà può essere sottoposta a override per aggiungere una destinazione o per modificare l'ordine di esecuzione della destinazione. Ad esempio:  
   
 ```  
 <PropertyGroup>  
@@ -56,7 +56,7 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
   
  La destinazione CustomBuild viene aggiunta all'elenco di destinazione, attribuendo `BuildDependsOn` al valore `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- A partire da MSBuild 4.0, l'inserimento delle dipendenze di destinazione è deprecato. Al suo posto usare gli attributi `AfterTargets` e `BeforeTargets`. Per altre informazioni, vedere [Target Build Order](../msbuild/target-build-order.md) (Ordine di compilazione delle destinazioni).  
+ A partire da MSBuild 4.0, l'inserimento delle dipendenze di destinazione è deprecato. Al suo posto usare gli attributi `AfterTargets` e `BeforeTargets`. Per altre informazioni, vedere [ordine di compilazione di destinazione](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversioni fra stringhe ed elenchi di elementi  
  Se necessario MSBuild esegue la conversione da e in tipi di elemento e valori stringa. Per vedere come un elenco di elementi può diventare un valore stringa, considerare cosa succede quando un tipo di elemento viene usato come valore di una proprietà MSBuild:  
@@ -182,4 +182,4 @@ KeyFileVersion: 1.0.0.3
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Concetti avanzati)
+ [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

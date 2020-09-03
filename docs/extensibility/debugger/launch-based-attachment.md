@@ -1,5 +1,5 @@
 ---
-title: Allegato basato sul lancio Documenti Microsoft
+title: Allegato basato su avvio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4910a97350366500b56593ec0076fdf0990b6d8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738468"
 ---
-# <a name="launch-based-attachment"></a>Allegato basato sul lancio
-L'attacco basato sul lancio a un programma è automatico. Quando il processo che ospita il programma viene avviato dal modello SDM, l'allegato basato sul lancio segue un percorso simile a quello del metodo di allegato manuale. Per informazioni, consultate [Allegare al programma.](../../extensibility/debugger/attaching-to-the-program.md)
+# <a name="launch-based-attachment"></a>Allegato basato su avvio
+L'allegato basato su avvio a un programma è automatico. Quando il processo che ospita il programma viene avviato da SDM, l'allegato basato su avvio segue un percorso simile a quello del metodo allegato manuale. Per informazioni, vedere [Connetti al programma](../../extensibility/debugger/attaching-to-the-program.md).
 
-## <a name="the-attaching-process"></a>Il processo di collegamento
- La differenza principale è la sequenza di eventi che seguono la chiamata **Attach,** come indicato di seguito:
+## <a name="the-attaching-process"></a>Processo di associazione
+ La differenza principale è la sequenza di eventi che seguono la chiamata di **connessione** , come indicato di seguito:
 
-1. Inviare un oggetto evento **IDebugEngineCreateEvent2** al modello SDM. Per informazioni dettagliate, vedere [Inviare eventi](../../extensibility/debugger/sending-events.md).
+1. Inviare un oggetto evento **IDebugEngineCreateEvent2** a SDM. Per informazioni dettagliate, vedere [inviare eventi](../../extensibility/debugger/sending-events.md).
 
-2. Chiamare `IDebugProgram2::GetProgramId` il metodo sull'interfaccia **IDebugProgram2** passata al metodo **Attach.**
+2. Chiamare il `IDebugProgram2::GetProgramId` metodo sull'interfaccia **IDebugProgram2** passata al metodo di **connessione** .
 
-3. Inviare un **IDebugProgramCreateEvent2** oggetto evento per notificare il modello SDM che l'oggetto **locale IDebugProgram2** è stato creato per rappresentare il programma al DE.
+3. Inviare un oggetto evento **IDebugProgramCreateEvent2** per notificare a SDM che l'oggetto **IDebugProgram2** locale è stato creato per rappresentare il programma alla de.
 
-4. Inviare un oggetto evento [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) per notificare al modello SDM che viene creato un nuovo thread per il processo avviato.
+4. Inviare un oggetto evento [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) per notificare a SDM che è stato creato un nuovo thread per il processo avviato.
 
 ## <a name="see-also"></a>Vedere anche
-- [Inviare gli eventi richiesti](../../extensibility/debugger/sending-the-required-events.md)
-- [Abilitare il debug di un programmaEnable a program to be debugged](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Invia gli eventi necessari](../../extensibility/debugger/sending-the-required-events.md)
+- [Abilitare un programma di cui eseguire il debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

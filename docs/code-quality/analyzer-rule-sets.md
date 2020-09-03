@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b99bb08c82725f19f7985a97656edf65f112d5
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800216"
 ---
 # <a name="enable-a-category-of-rules"></a>Abilitare una categoria di regole
@@ -38,7 +38,7 @@ Il pacchetto NuGet dell'analizzatore FxCop include set di regole e file EditorCo
 - Portata da FxCop
 - Affidabilità
 - Sicurezza
-- Uso
+- Utilizzo
 
 Ognuna di queste categorie di regole ha un file EditorConfig o set di regole per:
 

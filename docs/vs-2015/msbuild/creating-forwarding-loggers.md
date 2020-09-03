@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184023"
 ---
 # <a name="creating-forwarding-loggers"></a>Creazione di logger di inoltro
@@ -42,6 +42,6 @@ I logger di inoltro migliorano l'efficienza della registrazione, perché consent
  Quando si compila un progetto in un sistema multiprocessore, i messaggi di compilazione di ogni processore non vengono disposti automaticamente in una sequenza unificata. È necessario stabilire una priorità di raggruppamento dei messaggi usando la classe <xref:Microsoft.Build.Framework.BuildEventContext> associata a ogni messaggio. Per altre informazioni sulla compilazione in ambienti a più processori, vedere [Registrazione in un ambiente a più processori](../msbuild/logging-in-a-multi-processor-environment.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)  (Recupero di log di compilazione)  
+ [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Logger di compilazione](../msbuild/build-loggers.md)   
  [Registrazione in un ambiente a più processori](../msbuild/logging-in-a-multi-processor-environment.md)

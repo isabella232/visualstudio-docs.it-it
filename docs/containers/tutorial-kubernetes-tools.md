@@ -9,10 +9,10 @@ ms.technology: vs-azure
 ms.workload:
 - azure
 ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87913307"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Inizia a usare gli strumenti di Visual Studio Kubernetes
@@ -145,7 +145,7 @@ A tale scopo, è prima di tutto necessario verificare di aver installato tutti g
 
    ![Screenshot della voce di menu Publish to Azure AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. Scegliere la sottoscrizione e il cluster AKS insieme al profilo di pubblicazione ACR appena creato. Quindi fare clic su **OK**.
+4. Scegliere la sottoscrizione e il cluster AKS insieme al profilo di pubblicazione ACR appena creato. Fare quindi clic su **OK**.
 
    ![Screenshot della schermata Publish to AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
@@ -165,7 +165,7 @@ A tale scopo, è prima di tutto necessario verificare di aver installato tutti g
 
 ::: moniker-end
 
-La procedura è stata completata. È ora possibile sfruttare tutte le potenzialità di Visual Studio per lo sviluppo di app Kubernetes.
+Congratulazioni! È ora possibile sfruttare tutte le potenzialità di Visual Studio per lo sviluppo di app Kubernetes.
 
 ## <a name="remove-kubernetes-support"></a>Rimuovi supporto Kubernetes
 

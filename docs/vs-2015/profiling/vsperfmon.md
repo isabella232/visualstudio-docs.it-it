@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4a06a6632d62f853eef33cad00ad766e0d1aab87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184017"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
@@ -35,22 +35,22 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
   
  Nella tabella seguente vengono descritte le opzioni dello strumento VSPerfMon:  
   
-|Opzioni|DESCRIZIONE|  
+|Opzioni|Descrizione|  
 |-------------|-----------------|  
 |**U**|L'output di console reindirizzato viene scritto come Unicode.  Deve essere la prima opzione specificata.|  
 |**OUTPUT:** `<` *nome file* `>`|Reindirizza l'output nel nome file specificato.|  
-|**TRACE**|Avvia il monitoraggio delle prestazioni per la profilatura instrumentata.|  
+|**TRACCIA**|Avvia il monitoraggio delle prestazioni per la profilatura instrumentata.|  
 |**SAMPLE**|Avvia il monitoraggio delle prestazioni per la profilatura tramite campionamento.|  
-|**COVERAGE**|Avvia il monitoraggio delle prestazioni per la raccolta dei dati di code coverage.|  
-|**CONCURRENCY**|Avvia il monitoraggio delle prestazioni per la profilatura dei conflitti di risorse.|  
+|**COPERTURA**|Avvia il monitoraggio delle prestazioni per la raccolta dei dati di code coverage.|  
+|**CONCORRENZA**|Avvia il monitoraggio delle prestazioni per la profilatura dei conflitti di risorse.|  
 |**USER:** `[` *dominio* `\]` *nomeutente*|Consente l'accesso client al monitoraggio delle prestazioni dall'account specificato.|  
 |**CROSSSESSION**|Abilita la profilatura tra sessioni.|  
-|**COUNTER** `:cfg`|Quando viene usato il metodo di profilatura tramite strumentazione (TRACE), specifica un contatore CPU da raccogliere a ogni punto di strumentazione. È possibile raccogliere i dati di più contatori specificando più opzioni Counter.<br /><br /> Usare la seguente sintassi per specificare i dati del contatore (*cfg*):<br /><br /> **CounterName** [ **,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** è il nome di un contatore restituito dal comando VSPerfCmd /QueryCounters.<br />-   **Reload** è l'intervallo di campionamento degli eventi del contatore. Non usare *Reload* con il metodo di strumentazione.<br />Quando specificato, **FriendlyName** sostituisce **CounterName** nei nomi di colonna dei report degli strumenti di profilatura.|  
-|**WINCOUNTER** `:path`|Specifica un contatore delle prestazioni di Windows da includere con i dati contrassegnati. `path` è una stringa del contatore delle prestazioni di Windows nel formato del percorso del contatore PDH. Ad esempio:<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
-|**AUTOMARK** `:n`|Specifica l'intervallo di tempo (in millisecondi) tra i contrassegni automatici quando si usa /WINCOUNTER. Arrotondato per eccesso al più vicino multiplo di 500 ms.<br /><br /> Usare 0 per disabilitare i contrassegni automatici. Se non si specifica alcun valore, l'impostazione predefinita è 500 ms.|  
+|**Contatore** di `:cfg`|Quando viene usato il metodo di profilatura tramite strumentazione (TRACE), specifica un contatore CPU da raccogliere a ogni punto di strumentazione. È possibile raccogliere i dati di più contatori specificando più opzioni Counter.<br /><br /> Usare la seguente sintassi per specificare i dati del contatore (*cfg*):<br /><br /> **CounterName** [**,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** è il nome di un contatore restituito dal comando VSPerfCmd /QueryCounters.<br />-   **Reload** è l'intervallo di campionamento degli eventi del contatore. Non usare *Reload* con il metodo di strumentazione.<br />Quando specificato, **FriendlyName** sostituisce **CounterName** nei nomi di colonna dei report degli strumenti di profilatura.|  
+|**WinCounter**`:path`|Specifica un contatore delle prestazioni di Windows da includere con i dati contrassegnati. `path` è una stringa del contatore delle prestazioni di Windows nel formato del percorso del contatore PDH. Ad esempio:<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
+|**Contrassegno AUTOmark**`:n`|Specifica l'intervallo di tempo (in millisecondi) tra i contrassegni automatici quando si usa /WINCOUNTER. Arrotondato per eccesso al più vicino multiplo di 500 ms.<br /><br /> Usare 0 per disabilitare i contrassegni automatici. Se non si specifica alcun valore, l'impostazione predefinita è 500 ms.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
- [Performance Report Views](../profiling/performance-report-views.md)(Visualizzazioni dei rapporti di prestazioni)
+ [Visualizzazioni dei rapporti di prestazioni](../profiling/performance-report-views.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78167611"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Errori dello strumento FxCopCmd
@@ -27,7 +27,7 @@ La tabella seguente descrive i codici di errore restituiti da FxCopCmd:
 |-----------|-------------------|
 |Nessun errore|0x0|
 |Errore di analisi|0x1|
-|Eccezioni regola|0x2|
+|Eccezioni alle regole|0x2|
 |Errore di caricamento del progetto|0x4|
 |Errore di caricamento dell'assembly|0x8|
 |Errore di caricamento della libreria regole|0x10|

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655017"
 ---
 # <a name="customizing-element-tools"></a>Personalizzazione di strumenti elemento
@@ -24,7 +24,7 @@ In alcune definizioni DSL, rappresenta un singolo concetto come gruppo di elemen
  È anche possibile eseguire l'override di ciò che accade quando lo strumento viene trascinato nel diagramma o in un elemento.
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>Personalizzazione del contenuto di uno strumento elemento
- Ogni strumento elemento archivia un'istanza di un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), che contiene una versione serializzata di uno o più elementi e collegamenti del modello. Per impostazione predefinita, il EGP di uno strumento elemento contiene un'istanza della classe specificata per lo strumento. È possibile modificare questa impostazione eseguendo l'override di *linguaggioutente* `ToolboxHelper.CreateElementToolPrototype`. Questo metodo viene chiamato quando viene caricato il pacchetto DSL.
+ Ogni strumento elemento archivia un'istanza di <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), che contiene una versione serializzata di uno o più elementi e collegamenti del modello. Per impostazione predefinita, il EGP di uno strumento elemento contiene un'istanza della classe specificata per lo strumento. È possibile modificare questa impostazione eseguendo l'override di *linguaggioutente* `ToolboxHelper.CreateElementToolPrototype` . Questo metodo viene chiamato quando viene caricato il pacchetto DSL.
 
  Un parametro del metodo è l'ID della classe specificata nella definizione DSL. Quando il metodo viene chiamato con la classe a cui si è interessati, è possibile aggiungere elementi aggiuntivi in EGP.
 

@@ -14,19 +14,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184120"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se `false`, specifica che il modello verrà visualizzato solo con il nome specificato [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
+Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)specificato.  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<ShowByDefault>  
   
 ## <a name="syntax"></a>Sintassi  
@@ -55,7 +55,7 @@ Se `false`, specifica che il modello verrà visualizzato solo con il nome specif
   
  Questo testo deve essere `true` o `false`. Se true, specifica che il modello verrà visualizzato per tutti i tipi di progetto. Se false, il modello verrà visualizzato solo nel `TemplateGroupID` specificato.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  `ShowByDefault` è un elemento facoltativo. Il valore predefinito è `true`.  
   
 ## <a name="example"></a>Esempio  
@@ -88,5 +88,5 @@ Se `false`, specifica che il modello verrà visualizzato solo con il nome specif
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Elemento TemplateGroupID (modelli di Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)
