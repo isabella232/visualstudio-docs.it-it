@@ -8,10 +8,10 @@ ms.date: 04/17/2020
 ms.topic: how-to
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: b5c47c6b484d5b74f31ab8569f3895ae9ce0f984
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904441"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
@@ -78,7 +78,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Se serve assistenza per l'IDE di Visual Studio, vedere queste risorse:
-  - Supporto tecnico:[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - Supporto tecnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Documentazione](/visualstudio/)
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
 

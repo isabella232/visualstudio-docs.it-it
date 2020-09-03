@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1cc9c5bab7601a62bacfbbb155227bd5b632f93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287805"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedura: Creare grafici personalizzati nei risultati del test di carico
@@ -40,7 +40,7 @@ ms.locfileid: "85287805"
 
 3. Personalizzare il nuovo grafico aggiungendo i contatori. Per altre informazioni, vedere [procedura: aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

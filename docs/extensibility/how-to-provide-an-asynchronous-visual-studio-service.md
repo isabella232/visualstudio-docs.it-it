@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905739"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Procedura: fornire un servizio di Visual Studio asincrono
@@ -130,7 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
-    Per rendere il servizio visibile all'esterno del pacchetto, impostare il valore di innalzamento di livello su *true* come ultimo parametro:`this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
+    Per rendere il servizio visibile all'esterno del pacchetto, impostare il valore di innalzamento di livello su *true* come ultimo parametro:  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. Aggiungere un riferimento a *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
 
@@ -173,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 1. Aggiungere un comando di menu al progetto. Nella **Esplora soluzioni**selezionare il nodo del progetto, fare clic con il pulsante destro del mouse e scegliere **Aggiungi**  >  . **Nuovo elemento**  >  **Estendibilità**  >  **Comando personalizzato**.) Denominare il file di comando *TestAsyncCommand.cs*.
 
-2. Il modello di comando personalizzato aggiunge nuovamente il `Initialize()` metodo al file *TestAsyncPackage.cs* per inizializzare il comando. Nel `Initialize()` Metodo copiare la riga che inizializza il comando. L'aspetto dovrebbe risultare simile al seguente:
+2. Il modello di comando personalizzato aggiunge nuovamente il `Initialize()` metodo al file *TestAsyncPackage.cs* per inizializzare il comando. Nel `Initialize()` Metodo copiare la riga che inizializza il comando. Avrà un aspetto simile al seguente:
 
     ```csharp
     TestAsyncCommand.Initialize(this);

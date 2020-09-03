@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51b652adcc482d6e326c0b64eda3a9d32efab309
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532289"
 ---
 # <a name="properties-of-compartment-shapes"></a>Proprietà delle forme di raggruppamento
@@ -28,20 +28,20 @@ Le forme raggruppamento sono una delle forme che è possibile utilizzare per vis
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
 |Espandi stato di compressione predefinito|Se `Expanded` , i raggruppamenti vengono visualizzati durante la creazione. Se `Collapsed` , non lo sono.|Esteso|
-|Colore riempimento|Colore di riempimento di questa forma.|bianco|
+|Colore riempimento|Colore di riempimento di questa forma.|White|
 |Modalità gradiente riempimento|Modalità di sfumatura riempimento di questa forma.|Ridimensionamento orizzontale|
-|Geometry|Geometria di questa forma (rettangolo o rettangolo arrotondato).|Rettangolo|
-|Con punti di connessione predefiniti|Se `True` , la forma utilizzerà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|False|
-|Intestazione a raggruppamento singolo visibile|Se `False` , e la forma hanno un unico raggruppamento, l'intestazione del raggruppamento non è visibile.|True|
-|Colore del contorno|Colore del contorno di questa forma.|Nero|
+|Geometria|Geometria di questa forma (rettangolo o rettangolo arrotondato).|Rectangle|
+|Con punti di connessione predefiniti|Se `True` , la forma utilizzerà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
+|Intestazione a raggruppamento singolo visibile|Se `False` , e la forma hanno un unico raggruppamento, l'intestazione del raggruppamento non è visibile.|Vero|
+|Colore del contorno|Colore del contorno di questa forma.|Black|
 |Stile tratteggiato contorno|Stile di tratteggio del contorno di questa forma (tinta unita, trattino, punto, DashDot, TrattoPuntoPunto, personalizzata).|Tinta unita|
 |Spessore del contorno|Spessore del contorno di questa forma.|0,03125|
-|Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Nero|
+|Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Black|
 |Modificatore di accesso|Livello di accesso della forma raggruppamento ( `public` o `internal` ).|Pubblico|
 |Attributi personalizzati|Utilizzato per aggiungere attributi alla classe di codice sorgente generata da questa forma di raggruppamento|\<none>|
-|Genera il doppio derivato|Se `True` , verranno generate sia una classe di base che una classe parziale (per supportare la personalizzazione tramite override). Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dalla forma raggruppamento ( `none` , `abstract` o `sealed` ).|nessuno|
+|Genera il doppio derivato|Se `True` , verranno generate sia una classe di base che una classe parziale (per supportare la personalizzazione tramite override). Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
+|Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dalla forma raggruppamento ( `none` , `abstract` o `sealed` ).|Nessuno|
 |Forma raggruppamento di base|Classe di base di questa forma.|(nessuna)|
 |Nome|Nome di questa forma.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questa forma.|Spazio dei nomi corrente|
@@ -49,7 +49,7 @@ Le forme raggruppamento sono una delle forme che è possibile utilizzare per vis
 |Note|Note informali associate a questa forma.|\<none>|
 |Altezza iniziale|Altezza iniziale di questa forma, in pollici. Per le forme di raggruppamento, si tratta dell'altezza della sezione dell'intestazione e non può essere ridimensionata.|1|
 |Larghezza iniziale|Larghezza iniziale di questa forma, in pollici.|1.5|
-|Colore riempimento esposto come proprietà<br /><br /> Modalità di sfumatura riempimento esposta<br /><br /> Colore struttura esposto come proprietà<br /><br /> Stile tratteggiato del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà dichiarata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposti**.|False|
+|Colore riempimento esposto come proprietà<br /><br /> Modalità di sfumatura riempimento esposta<br /><br /> Colore struttura esposto come proprietà<br /><br /> Stile tratteggiato del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà dichiarata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposti**.|Falso|
 |Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<none>|
 |Testo della descrizione comando fisso|Testo utilizzato per una descrizione comando fissa.|\<none>|

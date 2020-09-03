@@ -48,10 +48,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586718"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
@@ -59,11 +59,11 @@ ms.locfileid: "75586718"
 > [!NOTE]
 > I set di dati e le classi correlate sono tecnologie .NET legacy dei primi 2000 che consentono alle applicazioni di utilizzare i dati in memoria mentre le applicazioni sono disconnesse dal database. Sono particolarmente utili per le applicazioni che consentono agli utenti di modificare i dati e salvare nuovamente le modifiche nel database. Sebbene i set di risultati abbiano dimostrato una tecnologia molto efficace, è consigliabile che le nuove applicazioni .NET usino Entity Framework. Entity Framework offre un metodo più naturale per lavorare con i dati tabulari come modelli a oggetti e dispone di un'interfaccia di programmazione più semplice.
 
-Un oggetto `DataSet` è un oggetto in memoria che essenzialmente è un mini-database. Contiene gli oggetti `DataTable`, `DataColumn`e `DataRow` in cui è possibile archiviare e modificare i dati da uno o più database senza dover gestire una connessione aperta. Il set di dati mantiene le informazioni sulle modifiche apportate ai dati, quindi gli aggiornamenti possono essere rilevati e restituiti al database quando l'applicazione viene riconnessa.
+Un `DataSet` oggetto è un oggetto in memoria che è essenzialmente un mini-database. Contiene `DataTable` `DataColumn` gli oggetti, e `DataRow` in cui è possibile archiviare e modificare i dati da uno o più database senza dover mantenere una connessione aperta. Il set di dati mantiene le informazioni sulle modifiche apportate ai dati, quindi gli aggiornamenti possono essere rilevati e restituiti al database quando l'applicazione viene riconnessa.
 
-I set di impostazioni e le classi correlate sono definiti nello spazio dei nomi <xref:System.Data?displayProperty=fullName> nell'API .NET. È possibile creare e modificare i set di impostazioni in modo dinamico nel codice usando ADO.NET. La documentazione in questa sezione illustra come usare i set di impostazioni usando le finestre di progettazione di Visual Studio. I set di dati creati mediante le finestre di progettazione utilizzano oggetti **TableAdapter** per interagire con il database. I set di impostazioni creati a livello di codice utilizzano oggetti **DataAdapter** . Per informazioni sulla creazione di set di dati a livello di codice, vedere [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+I set di impostazioni e le classi correlate sono definiti nello <xref:System.Data?displayProperty=fullName> spazio dei nomi nell'API .NET. È possibile creare e modificare i set di impostazioni in modo dinamico nel codice usando ADO.NET. La documentazione in questa sezione illustra come usare i set di impostazioni usando le finestre di progettazione di Visual Studio. I set di dati creati mediante le finestre di progettazione utilizzano oggetti **TableAdapter** per interagire con il database. I set di impostazioni creati a livello di codice utilizzano oggetti **DataAdapter** . Per informazioni sulla creazione di set di dati a livello di codice, vedere [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-Se l'applicazione deve solo leggere dati da un database e non eseguire aggiornamenti, aggiunte o eliminazioni, in genere è possibile ottenere prestazioni migliori usando un oggetto `DataReader` per recuperare i dati in un oggetto generico `List` o in un altro oggetto Collection. Se si visualizzano i dati, è possibile associare i dati all'interfaccia utente alla raccolta.
+Se l'applicazione deve solo leggere dati da un database e non eseguire aggiornamenti, aggiunte o eliminazioni, in genere è possibile ottenere prestazioni migliori usando un `DataReader` oggetto per recuperare i dati in un oggetto generico `List` o in un altro oggetto Collection. Se si visualizzano i dati, è possibile associare i dati all'interfaccia utente alla raccolta.
 
 ## <a name="dataset-workflow"></a>Flusso di lavoro DataSet
 
@@ -83,7 +83,7 @@ Visual Studio offre strumenti per semplificare l'uso dei set di impostazioni. Il
 
   - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 
-- Eseguire una query e cercare i dati nel set di dati. Per altre informazioni, vedere [query DataSets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] Abilita [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sui dati in un oggetto <xref:System.Data.DataSet>. Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+- Eseguire una query e cercare i dati nel set di dati. Per altre informazioni, vedere [query DataSets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] Abilita [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sui dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 
 - Utilizzare la finestra **origini dati** per associare i controlli dell'interfaccia utente al set di dati o alle singole colonne e per specificare quali colonne sono modificabili dall'utente. Per altre informazioni, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
@@ -97,4 +97,4 @@ Per informazioni sulla conversione di set di dati in e da XML, vedere [leggere i
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

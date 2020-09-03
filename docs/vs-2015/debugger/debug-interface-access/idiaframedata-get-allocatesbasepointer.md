@@ -1,5 +1,5 @@
 ---
-title: Get_allocatesbasepointer | Microsoft Docs
+title: 'IDiaFrameData:: get_allocatesBasePointer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 90a32930c51caad61e07b0e6fdfe5b164a5515bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203666"
 ---
-# <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
+# <a name="idiaframedataget_allocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che indica se il puntatore di base viene allocato per il codice in questo intervallo di indirizzi. Metodo deprecato.  
+Recupera un flag che indica se il puntatore di base è allocato per il codice in questo intervallo di indirizzi. Questo metodo è deprecato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT get_allocatesBasePointer ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se viene allocato un base puntatore; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se viene allocato un puntatore di base. in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Questa proprietà deve essere usata solo dal codice che in precedenza l'accesso FPO_DATA o quando la stringa viene restituita dal [Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) metodo `NULL`. In caso contrario, la stringa nel programma contiene tutte le informazioni necessarie per il calcolo dei valori di registro precedente.  
+## <a name="remarks"></a>Osservazioni  
+ Questa proprietà deve essere usata solo dal codice che ha avuto accesso in precedenza FPO_DATA o quando la stringa di programma restituita dal metodo [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) è `NULL` . In caso contrario, la stringa di programma contiene tutte le informazioni necessarie per calcolare i valori di registro precedenti.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

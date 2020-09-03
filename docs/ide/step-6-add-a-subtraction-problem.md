@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b6dd2b572074265cca62a45b962c604abf5c849
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579825"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Passaggio 6: Aggiungere un problema di sottrazione
@@ -32,7 +32,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 - Aggiornare il gestore dell'evento <xref:System.Windows.Forms.Timer.Tick> del timer in modo che inserisca la risposta corretta quando il tempo scade.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz di matematica a tempo.](../ide/tutorial-2-create-a-timed-math-quiz.md)
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-subtraction-problem"></a>Per aggiungere un problema di sottrazione
 
@@ -59,13 +59,13 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
      È possibile chiamare in più modi il metodo `Next()` della classe Random, a cui in precedenza in questa esercitazione è stato assegnato il nome "randomizer". I metodi che è possibile chiamare in più modi sono denominati metodi di overload ed è possibile utilizzare IntelliSense per esplorarli. Esaminare nuovamente la descrizione comando della finestra di IntelliSense per il metodo `Next()`.
 
-     ![Descrizione comando della finestra IntelliSense](../ide/media/express_overloads.png)<br/>
-*Descrizione comando della finestra* ***IntelliSense***
+     ![Descrizione comando della finestra di IntelliSense](../ide/media/express_overloads.png)<br/>
+***IntelliSense*** *Descrizione comando della finestra* di IntelliSense
 
      La dicitura **(+ 2 overload(s))** della descrizione comando indica che è possibile chiamare il metodo `Next()` in altri due modi. Gli overload contengono numeri o tipi di argomenti diversi, pertanto funzionano in modo leggermente diverso l'uno dall'altro. Ad esempio, un metodo potrebbe accettare un singolo argomento Integer, mentre uno degli overload potrebbe accettare un Integer e una stringa. Scegliere l'overload corretto in base all'operazione da eseguire. Quando si aggiunge codice al metodo `StartTheQuiz()`, nella finestra di IntelliSense vengono visualizzate altre informazioni non appena si immette `randomizer.Next(`. Per scorrere gli overload, usare i tasti **freccia SU** e **freccia GIÙ**, come illustrato nella figura seguente:
 
      ![Overload per il metodo Next&#40;&#41; in IntelliSense](../ide/media/express_nextoverload.png)<br/>
-*Overload per* il metodo ***Next()*** *in* ***IntelliSense***
+*Overload per* il metodo ***Next ()*** *in* ***IntelliSense***
 
      In questo caso, si desidera scegliere l'ultimo overload, perché consente di specificare i valori minimo e massimo.
 
@@ -74,7 +74,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     L'operatore `&&` è `logical and` presente nel linguaggio C. In Visual Basic l'operatore equivalente è `AndAlso`. Questi operatori indicano "Se la somma di addendo1 e addendo2 è uguale al valore NumericUpDown della somma e se minuendo meno sottraendo è uguale al valore NumericUpDown della differenza". Il metodo `CheckTheAnswer()` restituisce `true` solo se le risposte ai problemi dell'addizione e della sottrazione sono corrette.
+     In C# `&&` è l' `logical and` operatore. In Visual Basic l'operatore equivalente è `AndAlso`. Questi operatori indicano "Se la somma di addendo1 e addendo2 è uguale al valore NumericUpDown della somma e se minuendo meno sottraendo è uguale al valore NumericUpDown della differenza". Il metodo `CheckTheAnswer()` restituisce `true` solo se le risposte ai problemi dell'addizione e della sottrazione sono corrette.
 
 4. Sostituire l'ultima parte del gestore eventi Tick del timer con il codice seguente in modo che inserisca la risposta corretta alla scadenza del tempo.
 
@@ -86,10 +86,10 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
      Il programma include un problema di sottrazione, come illustrato nella figura seguente:
 
      ![Quiz matematico con sottrazione](../ide/media/express_addsubtract.png)<br/>
-***Quiz di matematica*** *con problema di sottrazione*
+***Quiz matematico*** *con problema di sottrazione*
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[Passaggio 7: Aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md)**.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 7: aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md)**.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

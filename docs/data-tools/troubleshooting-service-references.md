@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586120"
 ---
 # <a name="troubleshoot-service-references"></a>Risolvere i problemi relativi ai riferimenti al servizio
@@ -29,19 +29,19 @@ In questo argomento vengono elencati i problemi comuni che possono verificarsi q
 
 ## <a name="error-returning-data-from-a-service"></a>Errore durante la restituzione di dati da un servizio
 
-Quando si restituisce un `DataSet` o `DataTable` da un servizio, è possibile che venga visualizzata un'eccezione "la quota di dimensioni massime per i messaggi in arrivo è stata superata". Per impostazione predefinita, la proprietà `MaxReceivedMessageSize` per alcune associazioni è impostata su un valore relativamente piccolo per limitare l'esposizione agli attacchi Denial of Service. È possibile aumentare questo valore per evitare l'eccezione. Per ulteriori informazioni, vedere <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Quando si restituisce un oggetto `DataSet` o `DataTable` da un servizio, è possibile che venga visualizzata un'eccezione "la quota di dimensioni massime per i messaggi in ingresso è stata superata". Per impostazione predefinita, la `MaxReceivedMessageSize` proprietà per alcune associazioni è impostata su un valore relativamente piccolo per limitare l'esposizione agli attacchi Denial of Service. È possibile aumentare questo valore per evitare l'eccezione. Per altre informazioni, vedere <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
-Per correggere l'errore:
+Per correggere l'errore: 
 
-1. In **Esplora soluzioni**fare doppio clic sul file *app. config* per aprirlo.
+1. In **Esplora soluzioni**fare doppio clic sul file *app.config* per aprirlo.
 
-2. Individuare la proprietà `MaxReceivedMessageSize` e impostarla su un valore più grande.
+2. Individuare la `MaxReceivedMessageSize` proprietà e impostarla su un valore più grande.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Impossibile trovare un servizio nella soluzione
 
 Quando si fa clic sul pulsante **individua** nella finestra di dialogo **Aggiungi riferimenti al servizio** , uno o più progetti della libreria di servizi WCF nella soluzione non vengono visualizzati nell'elenco dei servizi. Questo problema può verificarsi se una libreria di servizi è stata aggiunta alla soluzione, ma non è ancora stata compilata.
 
-Per correggere l'errore:
+Per correggere l'errore: 
 
 - In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto libreria di servizi WCF e scegliere **Compila**.
 
@@ -49,20 +49,20 @@ Per correggere l'errore:
 
 Quando un utente accede a un servizio WCF ospitato sul Web tramite una connessione Desktop remoto e l'utente non dispone di autorizzazioni amministrative, viene utilizzata l'autenticazione NTLM. Se l'utente non dispone di autorizzazioni amministrative, l'utente potrebbe ricevere il messaggio di errore seguente: "la richiesta HTTP non è autorizzata con lo schema di autenticazione client ' Anonymous '. L'intestazione di autenticazione ricevuta dal server è' NTLM ' ".
 
-Per correggere l'errore:
+Per correggere l'errore: 
 
 1. Nel progetto sito Web, aprire le pagine delle **Proprietà** .
 
 2. Nella scheda **Opzioni di avvio** deselezionare la casella di controllo **autenticazione NTLM** .
 
     > [!NOTE]
-    > È consigliabile disattivare l'autenticazione NTLM solo per i siti Web che contengono esclusivamente servizi WCF. La protezione per i servizi WCF viene gestita tramite la configurazione nel file *Web. config* . Questa operazione rende superflua l'autenticazione NTLM.
+    > È consigliabile disattivare l'autenticazione NTLM solo per i siti Web che contengono esclusivamente servizi WCF. La sicurezza per i servizi WCF viene gestita tramite la configurazione nel file di *web.config* . Questa operazione rende superflua l'autenticazione NTLM.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>L'impostazione del livello di accesso per le classi generate non ha alcun effetto
 
-L'impostazione dell'opzione **livello di accesso per le classi generate** nella finestra di dialogo **Configura riferimenti al servizio** su **interno** o su **Friend** potrebbe non funzionare sempre. Anche se l'opzione sembra essere impostata nella finestra di dialogo, le classi di supporto risultanti vengono generate con un livello di accesso di `Public`.
+L'impostazione dell'opzione **livello di accesso per le classi generate** nella finestra di dialogo **Configura riferimenti al servizio** su **interno** o su **Friend** potrebbe non funzionare sempre. Anche se l'opzione sembra essere impostata nella finestra di dialogo, le classi di supporto risultanti vengono generate con un livello di accesso `Public` .
 
-Si tratta di un limite noto di determinati tipi, ad esempio quelli serializzati utilizzando la <xref:System.Xml.Serialization.XmlSerializer>.
+Si tratta di un limite noto di determinati tipi, ad esempio quelli serializzati tramite <xref:System.Xml.Serialization.XmlSerializer> .
 
 ## <a name="error-debugging-service-code"></a>Errore durante il debug del codice del servizio
 
@@ -90,7 +90,7 @@ Per correggere l'errore, è necessario ricompilare manualmente il progetto di se
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services non vengono visualizzati nel browser
 
-Quando tenta di visualizzare una rappresentazione XML dei dati in una [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], Internet Explorer può interpretare erroneamente i dati come feed RSS. Assicurarsi che l'opzione per visualizzare i feed RSS sia disabilitata.
+Quando tenta di visualizzare una rappresentazione XML dei dati in un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , Internet Explorer può interpretare erroneamente i dati come feed RSS. Assicurarsi che l'opzione per visualizzare i feed RSS sia disabilitata.
 
 Per correggere l'errore, disabilitare i feed RSS:
 
@@ -100,7 +100,7 @@ Per correggere l'errore, disabilitare i feed RSS:
 
 3. Nella finestra di dialogo **Impostazioni feed** deselezionare la casella di controllo **Attiva visualizzazione di lettura feed** , quindi fare clic su **OK**.
 
-4. Scegliere **OK** per chiudere la finestra di dialogo **Opzioni Internet**.
+4. Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni Internet** .
 
 ## <a name="see-also"></a>Vedere anche
 

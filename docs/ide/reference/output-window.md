@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567983"
 ---
-# <a name="output-window"></a>Finestra Output
+# <a name="output-window"></a>Output (finestra)
 
 Nella finestra **Output** vengono visualizzati messaggi di stato per diverse funzionalità dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per aprire la finestra **Output**, nella barra dei menu scegliere **Visualizza** > **Output** oppure premere **CTRL**+**ALT**+**O**.
 
@@ -71,12 +71,12 @@ In C++ è possibile creare istruzioni ed eventi di compilazione personalizzati i
 
 ## <a name="scroll-behavior"></a>Comportamento dello scorrimento
 
-Se si usa lo scorrimento automatico nella finestra **Output** e quindi si naviga usando il mouse o i tasti di direzione, lo scorrimento automatico viene arrestato. Per riprendere lo scorrimento automatico, premere **CTRL**+**Fine**.
+Se si usa lo scorrimento automatico nella finestra **Output** e quindi si naviga usando il mouse o i tasti di direzione, lo scorrimento automatico viene arrestato. Per riprendere lo scorrimento automatico, premere **CTRL** + **fine**.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Messaggi di diagnostica nella finestra Output](../../debugger/diagnostic-messages-in-the-output-window.md)
+- [Messaggi di diagnostica nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Procedura: Controllare la finestra di output](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
-- [Compilazione e creazione](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilare](../../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../../ide/understanding-build-configurations.md)
 - [Panoramica della libreria di classi](/dotnet/standard/class-library-overview)

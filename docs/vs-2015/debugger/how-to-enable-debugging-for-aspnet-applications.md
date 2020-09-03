@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5726e964a0db2fae1b902f54a14e206dbc03a148
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477004"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Come fare per: Attivare il debug per applicazioni ASP.NET
@@ -31,7 +31,7 @@ ms.locfileid: "77477004"
 Per abilitare il debug, è necessario abilitarlo sia nella pagina **Proprietà progetto** sia nel file web.config dell'applicazione.  
   
 > [!NOTE]  
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](/previous-versions/zbhkx167(v=vs.140)).  
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](/previous-versions/zbhkx167(v=vs.140)).  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Per abilitare il debug di ASP.NET nelle proprietà del progetto (Visual Basic/C#)  
   
@@ -48,7 +48,7 @@ Per abilitare il debug, è necessario abilitarlo sia nella pagina **Proprietà p
     > [!NOTE]  
     > Tuttavia, non è possibile accedere al file in remoto usando un Web browser. Per motivi di sicurezza, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configura Microsoft IIS per prevenire l'accesso diretto del browser ai file Web.config. Se si prova ad accedere a un file di configurazione usando un browser, viene restituito l'errore di accesso HTTP 403 (accesso non consentito).  
   
-2. Web.config è un file XML e di conseguenza contiene sezioni annidate contrassegnate da tag. Individuare l'elemento `configuration/system.web/compilation` . Se l'elemento di compilazione non esiste, è necessario crearlo.  
+2. Web.config è un file XML e di conseguenza contiene sezioni annidate contrassegnate da tag. Individuare l'elemento `configuration/system.web/compilation`. Se l'elemento di compilazione non esiste, è necessario crearlo.  
   
 3. Se l'elemento `compilation` non contiene un attributo `debug` , aggiungere l'attributo all'elemento.  
   
@@ -83,7 +83,7 @@ Il file web.config dovrebbe essere analogo a quello dell'esempio seguente. Si no
   
 Un sito Web può contenere più directory e sottodirectory virtuali, ognuna delle quali può includere file Web.config. Le applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ereditano le impostazioni dai file Web.config a livelli superiori nel percorso URL. I file di configurazione gerarchici permettono di modificare le impostazioni per diverse applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] contemporaneamente, ad esempio per tutte le applicazioni sottostanti nella gerarchia. Tuttavia, se `debug` è impostato in un file di livello inferiore nella gerarchia, eseguirà l'override del valore di livello superiore.  
   
-Ad esempio, è possibile specificare `debug="true"` in `www.microsoft.com/aaa/Web.config`e qualsiasi applicazione nella cartella AAA o in qualsiasi sottocartella di aaa erediterà tale impostazione. Quindi, se l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] si trova in `www.microsoft.com/aaa/bbb`, erediterà tale impostazione, così come tutte le applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in `www.microsoft.com/aaa/ccc`, `www.microsoft.com/aaa/ddd`e così via. L'unica eccezione si verifica se una di queste applicazioni esegue l'ovveride dell'impostazione per mezzo del proprio file Web.config di livello inferiore.  
+Ad esempio, è possibile specificare `debug="true"` in `www.microsoft.com/aaa/Web.config` e qualsiasi applicazione nella cartella AAA o in qualsiasi sottocartella di aaa erediterà tale impostazione. Quindi, se l' [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applicazione si trova in `www.microsoft.com/aaa/bbb` , erediterà questa impostazione, così come tutte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] le applicazioni in `www.microsoft.com/aaa/ccc` , `www.microsoft.com/aaa/ddd` e così via. L'unica eccezione si verifica se una di queste applicazioni esegue l'ovveride dell'impostazione per mezzo del proprio file Web.config di livello inferiore.  
   
 L'abilitazione della modalità di debug ha un notevole effetto sulle prestazioni dell'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Ricordare di disabilitare la modalità di debug prima di distribuire un'applicazione commerciale o di condurre misurazioni delle prestazioni.  
   

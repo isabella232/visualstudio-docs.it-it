@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAssemblyName . Documenti Microsoft
+title: 'IDebugComPlusSymbolProvider:: GetAssemblyName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ad546e3cde5106a966ce4533ee059f0ba1e2565d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733985"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-Recupera il nome dell'assembly dato il modulo e il dominio applicazione.
+Recupera il nome dell'assembly in base al modulo e al dominio dell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,19 +44,19 @@ int GetAssemblyName(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-[in] Identificatore per il dominio applicazione.
+in Identificatore del dominio dell'applicazione.
 
 `guidModule`\
-[in] Identificatore univoco del modulo.
+in Identificatore univoco per il modulo.
 
 `pbstrName`\
-[fuori] Restituisce il nome dell'assembly.
+out Restituisce il nome dell'assembly.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAssemblyName(

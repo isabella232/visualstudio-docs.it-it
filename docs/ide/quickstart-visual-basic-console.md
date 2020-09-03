@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 34f3dc8642e2cf8e965e2ad303bed79931d2645c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579505"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic
@@ -27,13 +27,13 @@ In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) d
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Aprire Visual Studio 2017.
 
-2. Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**.
+2. Dalla barra dei menu in alto scegliere **file** > **nuovo** > **progetto**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al progetto il nome *HelloWorld*.
 
@@ -68,7 +68,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Aprire Visual Studio 2019.
 
-1. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
+1. Nella finestra Start scegliere **Crea un nuovo progetto**.
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -89,7 +89,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
    >
    > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
-1. Nella finestra **Configura il nuovo progetto** digitare o immettere *WhatIsYourName* nella casella **Nome del progetto**. Scegliere quindi **Crea,** quindi Crea .
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *WhatIsYourName* nella casella **Nome del progetto**. Quindi scegliere **Crea**.
 
    ![Nella finestra Configura il nuovo progetto assegnare al progetto il nome "WhatIsYourName"](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -122,7 +122,7 @@ Ora si aggiungerà del codice per sospendere l'applicazione e richiedere l'input
 
     Questo codice sospende l'esecuzione del programma fino a quando non si preme un tasto.
 
-2. Nella barra dei menu selezionare **Compila** > **soluzione**.
+2. Nella barra dei menu selezionare **Compila**  >  **Compila soluzione**.
 
    Il programma viene compilato in un linguaggio intermedio (IL) che viene successivamente convertito in codice binario da un compilatore JIT (Just-In-Time).
 

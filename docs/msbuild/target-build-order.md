@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585457"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
@@ -23,7 +23,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 - `InitialTargets`. Questo attributo `Project` specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.
 
-- `DefaultTargets`. Questo `Project` attributo specifica quali destinazioni vengono eseguite se una destinazione non viene specificata in modo esplicito nella riga di comando.
+- `DefaultTargets`. Questo `Project` attributo specifica le destinazioni da eseguire se una destinazione non viene specificata in modo esplicito nella riga di comando.
 
 - `DependsOnTargets`. Questo attributo `Target` specifica le destinazioni che devono essere eseguite prima di poter eseguire questa destinazione.
 
@@ -31,7 +31,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 Una destinazione non viene mai eseguita due volte durante una compilazione, anche se ne dipende una destinazione successiva nella compilazione. Dopo che una destinazione è stata eseguita, il contributo alla compilazione è completo.
 
-Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per ulteriori informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).
+Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per ulteriori informazioni sulle condizioni, vedere [condizioni](../msbuild/msbuild-conditions.md).
 
 ## <a name="initial-targets"></a>Destinazioni iniziali
 
@@ -57,7 +57,7 @@ Il valore dell'attributo `DefaultTargets` può essere un elenco ordinato di dest
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
-È possibile sostituire le destinazioni predefinite utilizzando l'opzione **-target** nella riga di comando. L'esempio seguente specifica che viene eseguita la destinazione `Build` e quindi la destinazione `Report`. Quando si specificano le destinazioni in questo modo, le destinazioni predefinite vengono ignorate.
+È possibile eseguire l'override delle destinazioni predefinite usando l'opzione **-target** nella riga di comando. L'esempio seguente specifica che viene eseguita la destinazione `Build` e quindi la destinazione `Report`. Quando si specificano le destinazioni in questo modo, le destinazioni predefinite vengono ignorate.
 
  `msbuild -target:Build;Report`
 
@@ -73,7 +73,7 @@ Se non sono presenti destinazioni iniziali, destinazioni predefinite o destinazi
 
 ## <a name="target-dependencies"></a>Dipendenze tra destinazioni
 
-Le destinazioni possono descrivere relazioni di dipendenza reciproche. L'attributo `DependsOnTargets` indica che una destinazione dipende da altre destinazioni. Ad esempio,
+Le destinazioni possono descrivere relazioni di dipendenza reciproche. L'attributo `DependsOnTargets` indica che una destinazione dipende da altre destinazioni. Ad esempio:
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
@@ -113,7 +113,7 @@ MSBuild determina l'ordine di compilazione delle destinazioni, come segue:
 
 1. Vengono eseguite le destinazioni `InitialTargets`.
 
-2. Vengono eseguite le destinazioni specificate nella riga di comando dall'opzione **-target.** Se non si specifica alcuna destinazione nella riga di comando, vengono eseguite le destinazioni `DefaultTargets`. Se nessuna delle due destinazioni è presente, viene eseguita la prima destinazione rilevata.
+2. Vengono eseguite le destinazioni specificate nella riga di comando mediante l'opzione **-target** . Se non si specifica alcuna destinazione nella riga di comando, vengono eseguite le destinazioni `DefaultTargets`. Se nessuna delle due destinazioni è presente, viene eseguita la prima destinazione rilevata.
 
 3. Viene valutato l'attributo `Condition` della destinazione. Se l'attributo `Condition` è presente e restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione.
 

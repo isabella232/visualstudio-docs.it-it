@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 29dac6cca7936dde8be2ebc57366f6370b8bcbc6
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904940"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Procedura dettagliata: creare un SDK usando JavaScript
@@ -27,7 +27,7 @@ In questa procedura dettagliata viene illustrato come utilizzare JavaScript per 
 ## <a name="prerequisites"></a>Prerequisiti
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a>Per creare il progetto SDK dell'estensione SimpleMathVSIX
+## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> Per creare il progetto SDK dell'estensione SimpleMathVSIX
 
 1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**.
 
@@ -138,7 +138,7 @@ In questa procedura dettagliata viene illustrato come utilizzare JavaScript per 
 
 21. Riavviare Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a>Per creare un'app di esempio che usa l'SDK
+## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> Per creare un'app di esempio che usa l'SDK
 
 1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**.
 

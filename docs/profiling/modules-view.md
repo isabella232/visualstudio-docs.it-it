@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 89d9146b3f724b4883f21a43689a495eef252777
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778518"
 ---
 # <a name="modules-view"></a>Visualizzazione Moduli
@@ -32,8 +32,8 @@ La visualizzazione Moduli elenca i moduli dei dati di profilatura. Ogni modulo Ã
  Le colonne disponibili nella visualizzazione Moduli dipendono dal metodo di profilatura (campionamento o strumentazione) usato per raccogliere i dati e dal fatto che i dati della memoria .NET siano stati raccolti o meno durante l'esecuzione della profilatura.
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)
-- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)
 - [Visualizzazione Moduli - Strumentazione](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione moduli](../profiling/modules-view-contention-data.md)
+- [Visualizzazione Moduli](../profiling/modules-view-contention-data.md)

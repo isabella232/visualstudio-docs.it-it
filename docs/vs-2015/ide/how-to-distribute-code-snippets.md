@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476978"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: distribuire i frammenti di codice
@@ -30,7 +30,7 @@ ms.locfileid: "77476978"
 
 1. Creare un nuovo progetto VSIX denominato **TestSnippet**. (**File / Nuovo / Progetto / Visual C# (o Visual Basic / Extensibility**)
 
-2. Nel progetto **TestSnippet** aggiungere un nuovo file XML e denominarlo **VBCodeSnippet.snippet**. Sostituire il contenuto con quanto riportato di seguito.
+2. Nel progetto **TestSnippet** aggiungere un nuovo file XML e denominarlo **VBCodeSnippet.snippet**. Sostituire il contenuto con i contenuti seguenti:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -58,11 +58,11 @@ ms.locfileid: "77476978"
 
 #### <a name="setting-up-the-directory-structure"></a>Configurazione della struttura di directory
 
-1. In Esplora soluzioni selezionare il nodo del progetto e aggiungere una cartella contenente il nome che si vuole assegnare al frammento di codice in Gestione frammenti di codice. In questo caso, dovrebbe essere **HelloWorldVB**.
+1. In Esplora soluzioni selezionare il nodo del progetto e aggiungere una cartella contenente il nome che si vuole assegnare al frammento di codice in Gestione frammenti di codice. In questo caso dovrebbe essere **HelloWorldVB**.
 
-2. Spostare il file SNIPPET nella cartella **HelloWorldVB**.
+2. Spostare il file con estensione snippet nella cartella **HelloWorldVB**.
 
-3. Selezionare il file SNIPPET in Esplora soluzioni e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.
+3. Selezionare il file con estensione snippet nell'Esplora soluzioni e nella finestra **Proprietà** assicurarsi che azione di **compilazione** sia impostato su **contenuto**, copia nella **directory di output** sia impostato su **copia sempre**e **Includi in VSIX** sia impostato su **true**.
 
 #### <a name="adding-the-pkgdef-file"></a>Aggiunta del file .pkgdef
 
@@ -80,7 +80,7 @@ ms.locfileid: "77476978"
 
      Se si esamina questa chiave, è possibile visualizzare come specificare diverse lingue.
 
-3. Selezionare il file PKGDEF in Esplora soluzioni e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.
+3. Selezionare il file con estensione pkgdef nel Esplora soluzioni e nella finestra **Proprietà** assicurarsi che azione di **compilazione** sia impostato su **contenuto**, copia nella **directory di output** sia impostato su **copia sempre**e **Includi in VSIX** sia impostato su **true**.
 
 4. Aggiungere il file pkgdef come una risorsa nel manifesto VSIX. Nel file source.extension.vsixmanifest passare alla scheda **Asset** e fare clic su **Nuovo**.
 
@@ -92,7 +92,7 @@ ms.locfileid: "77476978"
 
 2. Compilare il progetto e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.
 
-3. Nell'istanza sperimentale, passare a **Strumenti / Gestione frammenti di codice** e impostare il **linguaggio** su **Basic**. HelloWorldVB verrà visualizzato come una delle cartelle e dovrebbe essere possibile espandere la cartella per visualizzare il frammento HelloWorldVB.
+3. Nell'istanza sperimentale, passare a **Strumenti/Gestione frammenti di codice** e impostare il **linguaggio** su **Basic**. HelloWorldVB verrà visualizzato come una delle cartelle e dovrebbe essere possibile espandere la cartella per visualizzare il frammento HelloWorldVB.
 
 4. Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.
 

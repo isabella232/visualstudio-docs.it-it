@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: eba1f0d1434d253aaca698d3ae582e3c507c2d23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779233"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Visualizzazione Funzioni: dati di strumentazione di memoria .NET
@@ -32,8 +32,8 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 |**File di origine**|File di origine che contiene la definizione di questa funzione.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
 |**Sovraccarico temporale per probe esclusivi**|Sovraccarico temporale per questa funzione causato dalla strumentazione. Il sovraccarico per probe è stato sottratto da tutti i valori di tempo esclusivo.|
 |**Sovraccarico temporale per probe inclusivi**|Sovraccarico temporale per questa funzione e per le relative funzioni figlio causato dalla strumentazione. Il sovraccarico per probe è stato sottratto da tutti i tempi inclusivi.|
 
@@ -98,7 +98,7 @@ La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria 
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: personalizzare le colonne della visualizzazione reportHow to: Customize Report View columns](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Funzioni: campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Funzioni](../profiling/functions-view-instrumentation-data.md)
 - [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)

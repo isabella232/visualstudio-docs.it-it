@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532704"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
@@ -41,7 +41,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
  ![Debug con stack di chiamate nelle mappe codici](../debugger/media/debuggermap_overview.png)
 
- Sono necessari gli elementi seguenti:
+ Saranno necessari gli elementi seguenti:
 
  ::: moniker range="vs-2017"
 
@@ -71,7 +71,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
 - [Individuare i bug usando la mappa](#FindBugs)
 
-- [D & A](#QA)
+- [DOMANDE E RISPOSTE](#QA)
 
   Per informazioni dettagliate sui comandi e sulle azioni che è possibile usare quando si usano le mappe codice, vedere [esplorare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -140,7 +140,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
  ![Aggiungere una nuova chiamata di metodo allo stack di chiamate nella mappa codici](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-## <a name="q--a"></a><a name="QA"></a>D & A
+## <a name="q--a"></a><a name="QA"></a> D & A
 
 - **Non tutte le chiamate vengono visualizzate nella mappa. Perché?**
 

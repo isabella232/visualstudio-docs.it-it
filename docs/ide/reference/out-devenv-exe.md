@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568011"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -37,7 +37,7 @@ devenv /Out FileName
 
 ## <a name="arguments"></a>Argomenti
 
-- *Filename*
+- *FileName*
 
   Obbligatorio. Percorso e nome del file per ricevere l'output quando si compila un eseguibile.
 
