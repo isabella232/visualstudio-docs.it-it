@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593863"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -39,19 +39,19 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  Facoltativa. Percorso completo e nome del file di impostazioni da applicare a Visual Studio.
+  facoltativo. Percorso completo e nome del file di impostazioni da applicare a Visual Studio.
 
 - *DefaultCollectionSpecifier*
 
-  Facoltativa. Identificatore che rappresenta una raccolta predefinita di impostazioni da ripristinare. Scegliere uno degli identificatori delle raccolte predefinite elencati nella tabella.
+  facoltativo. Identificatore che rappresenta una raccolta predefinita di impostazioni da ripristinare. Scegliere uno degli identificatori delle raccolte predefinite elencati nella tabella.
 
   | Nome della raccolta predefinita | Identificatore della raccolta |
   | --- | --- |
   | **Generale** | `General` |
-  | **Javascript** | `JavaScript` |
+  | **JavaScript** | `JavaScript` |
   | **Visual Basic** | `VB` |
-  | **Visuale C #** | `CSharp` |
-  | **Visual C** | `VC` |
+  | **Visual C #** | `CSharp` |
+  | **Visual C++** | `VC` |
   | **Sviluppo Web** | `Web` |
   | **Sviluppo Web (solo codice)** | `WebCode` |
 
@@ -73,6 +73,6 @@ devenv /resetsettings CSharp
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Impostazioni di ambiente](../environment-settings.md)
+- [Impostazioni dell'ambiente](../environment-settings.md)
 - [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)

@@ -45,7 +45,7 @@ Le configurazioni della soluzione archiviano le proprietà a livello di soluzion
 
    Se un progetto non supporta le piattaforme, la colonna della piattaforma per il progetto Visualizza None ed è disabilitata.
 
-- Compilazione
+- Compilare
 
    Specifica se il progetto viene compilato o meno dalla configurazione della soluzione corrente. I progetti non selezionati non vengono compilati quando vengono richiamati i comandi di compilazione a livello di soluzione nonostante le dipendenze del progetto in essi contenute. I progetti non selezionati per la compilazione sono ancora inclusi in debug, esecuzione, creazione di pacchetti e distribuzione della soluzione.
 

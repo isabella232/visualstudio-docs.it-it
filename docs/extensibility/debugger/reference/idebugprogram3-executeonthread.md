@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgram3::ExecuteOnThread . Documenti Microsoft
+title: 'IDebugProgram3:: ExecuteOnThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722653"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-Esegue il programma debugger. Il thread viene restituito per fornire al debugger informazioni su quale thread l'utente sta visualizzando durante l'esecuzione del programma.
+Esegue il programma del debugger. Il thread viene restituito per fornire al debugger le informazioni sul thread visualizzato dall'utente durante l'esecuzione del programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,21 +38,21 @@ int ExecuteOnThread(
 
 ## <a name="parameters"></a>Parametri
 `pThread`\
-[in] Oggetto [IDebugThread2.](../../../extensibility/debugger/reference/idebugthread2.md)
+in Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Esistono tre modi diversi in cui un debugger può riprendere l'esecuzione dopo l'arresto:There are three different ways that a debugger can resume execution after stopping:
+ Un debugger può riprendere l'esecuzione dopo l'arresto in tre modi diversi:
 
-- Esegui: consente di annullare qualsiasi passaggio precedente ed eseguire fino al punto di interruzione successivo e così via.
+- Execute: Annulla qualsiasi passaggio precedente e viene eseguito fino al punto di interruzione successivo e così via.
 
-- Passaggio: Annullare qualsiasi passaggio precedente ed eseguilo fino al completamento del nuovo passaggio.
+- Passaggio: annullare tutti i passaggi precedenti ed eseguire fino al completamento del nuovo passaggio.
 
-- Continua: eseguire di nuovo e lasciare attivo qualsiasi passaggio precedente.
+- Continua: Esegui di nuovo e lascia attivo il passaggio precedente.
 
-  Il thread `ExecuteOnThread` passato a è utile per decidere quale passaggio annullare. Se non si conosce il thread, l'esecuzione di execute annulla tutti i passaggi. Con la conoscenza del thread, è sufficiente annullare il passaggio sul thread attivo.
+  Il thread passato a `ExecuteOnThread` è utile quando si decide quale passaggio annullare. Se non si conosce il thread, l'esecuzione di Execute Annulla tutti i passaggi. Con la conoscenza del thread, è sufficiente annullare il passaggio nel thread attivo.
 
 ## <a name="see-also"></a>Vedere anche
 - [Eseguire](../../../extensibility/debugger/reference/idebugprogram2-execute.md)

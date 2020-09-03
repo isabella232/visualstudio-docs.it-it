@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594240"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
@@ -158,4 +158,4 @@ In questo esempio viene illustrato come usare la funzione `SimpleTypeName`. Quan
 ## <a name="see-also"></a>Vedere anche
 
 - [Elemento Function](../ide/code-snippets-schema-reference.md#function-element)
-- [Informazioni di riferimento sullo schema dei frammenti di codiceCode snippets schema reference](../ide/code-snippets-schema-reference.md)
+- [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)

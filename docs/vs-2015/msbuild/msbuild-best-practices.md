@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e597b10913ad495193545ab304b3b324d8f66b41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181111"
 ---
 # <a name="msbuild-best-practices"></a>Procedure consigliate di MSBuild
@@ -35,4 +35,4 @@ Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni
 - Evitare i caratteri jolly quando si selezionano elementi. Al contrario, specificare i file in modo esplicito. Ciò semplifica l'individuazione degli errori che possono verificarsi quando si aggiungono o si eliminano file.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Concetti avanzati)
+ [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f400135fab95925384947488b5582b2f3d996928
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190587"
 ---
-# <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
+# <a name="idiastackframeget_cplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che indica se la gestione delle eccezioni C++ è attivo.  
+Recupera un flag che indica se la gestione delle eccezioni C++ è attiva.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,15 +35,15 @@ HRESULT get_cplusplusExceptionHandling ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se C++ gestione delle eccezioni è attivo per questo frame; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se la gestione delle eccezioni C++ è attiva per questo frame. in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Gestione delle eccezioni C++ non è uguale a strutturato o la gestione delle eccezioni di sistema.  
+## <a name="remarks"></a>Osservazioni  
+ La gestione delle eccezioni C++ non è uguale alla gestione delle eccezioni strutturata o di sistema.  
   
- Per determinare se è strutturata delle eccezioni sono attivo, chiamare il [IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) (metodo).  
+ Per determinare se la gestione strutturata delle eccezioni è attiva, chiamare il metodo [IDiaStackFrame:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

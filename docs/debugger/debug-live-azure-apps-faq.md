@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911401"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Domande frequenti per il debug di snapshot in Visual Studio
@@ -99,7 +99,7 @@ Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'est
          - Disinstallare l'estensione Microsoft. VisualStudio. Azure. RemoteDebug. VSRemoteDebugger
 
          > [!NOTE]
-         > Set di scalabilità di macchine virtuali: il portale non consente di rimuovere le porte DebuggerListener. Sarà necessario usare Azure PowerShell. Di seguito sono riportate informazioni dettagliate.
+         > Set di scalabilità di macchine virtuali: il portale non consente di rimuovere le porte DebuggerListener. Sarà necessario usare Azure PowerShell. Vedere di seguito per altri dettagli.
 
 2. Rimuovere i certificati e l'insieme di credenziali delle credenziali di Azure
 
@@ -125,7 +125,7 @@ Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'est
 
    - Certificato del server
       - L'identificazione personale del certificato server corrispondente viene distribuita come chiave privata nell'insieme di credenziali delle credenziali di Azure. VS tenterà di trovare o creare un insieme di credenziali delle credenziali con prefisso MSVSAZ * nell'area corrispondente alla risorsa della macchina virtuale o dei set di scalabilità di macchine virtuali. Tutte le risorse della macchina virtuale o del set di scalabilità di macchine virtuali distribuite in tale area condividono pertanto lo stesso insieme di credenziali delle credenziali.
-      - Per eliminare il segreto di identificazione personale del certificato del server, passare alla portale di Azure e trovare l'insieme di credenziali delle MSVSAZ * nella stessa area in cui è ospitata la risorsa. Eliminare il segreto che dovrebbe essere etichettato `remotedebugcert<<ResourceName>>`
+      - Per eliminare il segreto di identificazione personale del certificato del server, passare alla portale di Azure e trovare l'insieme di credenziali delle MSVSAZ * nella stessa area in cui è ospitata la risorsa. Elimina il segreto che dovrebbe essere etichettato `remotedebugcert<<ResourceName>>`
       - Sarà anche necessario eliminare il segreto server dalla risorsa tramite PowerShell.
 
       Per le macchine virtuali:
@@ -199,7 +199,7 @@ Esistono diversi modi per disabilitare la Snapshot Debugger:
 ## <a name="see-also"></a>Vedere anche
 
 - [Debug in Visual Studio](../debugger/index.yml)
-- [Eseguire il debug di app ASP.NET Live usando il Snapshot Debugger](../debugger/debug-live-azure-applications.md)
+- [Eseguire il debug di app ASP.NET attive con Snapshot Debugger](../debugger/debug-live-azure-applications.md)
 - [Eseguire il debug dei set di scalabilità di macchine virtuali ASP.NET Snapshot Debugger di Azure in Live](../debugger/debug-live-azure-virtual-machines.md)
-- [Eseguire il debug di Live ASP.NET Azure Kubernetes usando il Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
+- [Eseguire il debug di servizi Azure Kubernetes ASP.NET attivi con Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)
 - [Risoluzione dei problemi e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md)

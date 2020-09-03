@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Connettere il Profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando | Microsoft Docs"
+title: "Procedura: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179274"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per connettere il profiler a un'applicazione ASP.NET e raccogliere dati di concorrenza di thread e processi.  
@@ -31,29 +31,29 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 1. Avviare il profiler digitando il comando seguente:  
 
-    [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency /output:** `OutputFile` [`Options`]  
+    [VSPerfCmd](../profiling/vsperfcmd.md) **/Start: concorrenza/output:** `OutputFile` [ `Options` ]  
 
    - L'opzione [/start](../profiling/start.md) consente di inizializzare il profiler per la raccolta dei dati su conflitti tra risorse.  
 
-   - L'opzione [/output](../profiling/output.md) **:** `OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).  
+   - L'opzione [/output](../profiling/output.md)**:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).  
 
      È possibile usare qualsiasi opzione nella tabella seguente con l'opzione **/start**.  
 
    |                               Opzione                               |                                                                     Descrizione                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` |                           Specifica il dominio facoltativo e il nome utente dell'account a cui concedere l'accesso al profiler.                           |
-   |           [/crosssession](../profiling/crosssession.md)            |                                               Abilita la profilatura dei processi in altre sessioni di accesso.                                                |
-   |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura.                                       |
-   |       [/automark](../profiling/automark.md) **:** `Interval`       | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500. |
-   |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.       |
+   | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain\` ]`UserName` |                           Specifica il dominio facoltativo e il nome utente dell'account a cui concedere l'accesso al profiler.                           |
+   |           [/CrossSession](../profiling/crosssession.md)            |                                               Abilita la profilatura dei processi in altre sessioni di accesso.                                                |
+   |  [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath`  |                                      Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura.                                       |
+   |       [/AutoMark](../profiling/automark.md) **:**`Interval`       | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500. |
+   |     [/Events](../profiling/events-vsperfcmd.md) **:**`Config`     |       Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.       |
 
 2. Avviare l'applicazione ASP.NET nel modo usuale.  
 
-3. Connettere il profiler al processo di lavoro ASP.NET digitando il comando seguente: **VSPerfCmd /attach:** `PID` [ **/targetclr:** `Version`]  
+3. Collega il profiler al processo di lavoro ASP.NET digitando il comando seguente:**VSPerfCmd/Attach:** `PID` [**/targetclr:** `Version` ]  
 
    - `PID` specifica l'ID o il nome del processo di lavoro ASP.NET. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.  
 
-   - [/targetclr](../profiling/targetclr.md) **:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Questo parametro è facoltativo.  
+   - [/TargetCLR](../profiling/targetclr.md) **:** `Version` specifica la versione del Common Language Runtime (CLR) da profilare quando più di una versione del runtime viene caricata in un'applicazione. Questo parametro è facoltativo.  
 
 ## <a name="controlling-data-collection"></a>Controllo della raccolta di dati  
  Mentre è in esecuzione l'applicazione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni VSPerfCmd.exe. Per controllare la raccolta dei dati, è possibile raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o arresto dell'applicazione.  
@@ -64,9 +64,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     |Opzione|Descrizione|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
-    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID di processo (`PID`) o dal nome di processo (*ProcName*). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo.|  
+    |[/GlobalOff/GlobalOn](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|  
+    |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [ProcessOff](../profiling/processon-and-processoff.md) **:**  `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
+    |[/Attach](../profiling/attach.md) **:**{ `PID`&#124;`ProcName` } [/Detach.](../profiling/detach.md)[**:**{ `PID`&#124;`ProcName` }]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID di processo (`PID`) o dal nome di processo (*ProcName*). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo.|  
 
 ## <a name="ending-the-profiling-session"></a>Arresto della sessione di profilatura  
  Per terminare una sessione di profilatura, non deve essere in corso una raccolta di dati dal profiler. È possibile interrompere la raccolta dei dati da un'applicazione profilata con il metodo di concorrenza riavviando il processo di lavoro ASP.NET oppure richiamando l'opzione **VSPerfCmd /detach**. È quindi possibile richiamare l'opzione **VSPerfCmd /shutdown** per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura, ma la configurazione di sistema non viene reimpostata fino al riavvio del computer.  
@@ -79,8 +79,8 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 2. Arrestare il profiler digitando il comando seguente al prompt dei comandi:  
 
-     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
+     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd    
 
 ## <a name="see-also"></a>Vedere anche  
  [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilatura rapida di sito Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
+ [Profilatura rapida di siti Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)

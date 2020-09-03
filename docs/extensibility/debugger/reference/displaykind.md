@@ -1,5 +1,5 @@
 ---
-title: Proprietà DisplayKind . Documenti Microsoft
+title: DisplayKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737259"
 ---
 # <a name="displaykind"></a>DisplayKind
-Enumera i valori validi che rappresentano i tipi di informazioni da accettare da un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto e visualizzare all'utente.
+Enumera i valori validi che rappresentano i tipi di informazioni da ottenere da un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e visualizzabili all'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,9 +55,9 @@ Nome del campo.
 Tipo di campo.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Ee.h
+Intestazione: EE. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

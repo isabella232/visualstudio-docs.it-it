@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 66af4d95707be99865df3df32751215cf5eb10b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181180"
 ---
-# <a name="exceptioninfo"></a>EXCEPTION_INFO
+# <a name="exception_info"></a>EXCEPTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descrive un'eccezione o errore di run-time generato dal programma in fase di debug.  
+Descrive un'eccezione o un errore di Run-Time generato dal programma di cui è in corso il debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,32 +48,32 @@ public struct EXCEPTION_INFO { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  pProgram  
- Il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma in cui si è verificata l'eccezione.  
+ Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma in cui si è verificata l'eccezione.  
   
  bstrProgramName  
- Il nome del programma in cui si è verificata l'eccezione.  
+ Nome del programma in cui si è verificata l'eccezione.  
   
  bstrExceptionName  
- Il nome dell'eccezione.  
+ Nome dell'eccezione.  
   
  dwCode  
- Il codice di identificazione per errore eccezione o di run-time.  
+ Codice di identificazione per l'eccezione o l'errore di run-time.  
   
  dwState  
- Un valore compreso il [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) enumerazione che definisce lo stato dell'eccezione.  
+ Valore dell'enumerazione [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) che definisce lo stato dell'eccezione.  
   
  guidType  
- L'identificatore di lingua GUID, ad esempio `guidLang` o `guidEng`.  
+ Identificatore della lingua del GUID, `guidLang` ovvero o `guidEng` .  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene passata come parametro per il [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) e il [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metodi. Questa struttura viene inoltre passata per il [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) metodo deve essere compilato.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene passata come parametro ai metodi [seexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md) e [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) . Questa struttura viene passata anche al metodo [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) da compilare.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

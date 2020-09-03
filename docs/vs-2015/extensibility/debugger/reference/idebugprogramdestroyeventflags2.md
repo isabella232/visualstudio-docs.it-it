@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 86f7e211c742e4d95f3459d058139854874e7d85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182208"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Consente a un motore di debug eseguire l'override del comportamento predefinito del [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] dell'interfaccia utente quando si termina una sessione di debug.  
+Consente a un motore di debug di eseguire l'override del comportamento predefinito dell' [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] interfaccia utente quando si termina una sessione di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -29,21 +29,21 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Questa interfaccia viene implementata dai motori di debug. È utile per gli host che potrebbero creare ed eliminare più programmi in base alla durata di un processo.  
+ Questa interfaccia viene implementata dai motori di debug. È utile per gli host che potrebbero creare ed eliminare più programmi durante il ciclo di vita di un processo.  
   
 ## <a name="methods"></a>Metodi  
- Nella tabella seguente sono illustrati i metodi di `IDebugProgramDestroyEventFlags2`.  
+ La tabella seguente illustra i metodi di `IDebugProgramDestroyEventFlags2` .  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Recupera il programma di eliminare definitivamente i flag.|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Recupera i flag del programma Destroy.|  
   
-## <a name="remarks"></a>Note  
- Il comportamento predefinito del [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] dell'interfaccia utente consiste nel tornare alla modalità progettazione dopo che tutti i programmi sono inviate a un programma un evento di eliminazione. Questa interfaccia consente a un motore di debug modificare tale comportamento.  
+## <a name="remarks"></a>Osservazioni  
+ Il comportamento predefinito dell' [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] interfaccia utente è tornare alla modalità progettazione dopo che tutti i programmi hanno inviato un evento di eliminazione del programma. Questa interfaccia consente a un motore di debug di modificare tale comportamento.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

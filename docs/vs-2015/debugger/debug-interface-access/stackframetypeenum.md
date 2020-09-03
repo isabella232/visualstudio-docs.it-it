@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 655911bac1efbafe1838e24e2056282f9036479b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179198"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Specifica il tipo di frame dello stack.  
+Specifica il tipo di stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,28 +40,28 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>Elementi  
  `FrameTypeFPO`  
- Puntatore ai frame omessi. Info FPO disponibile.  
+ Puntatore al frame omesso; Informazioni sulla Polinesia disponibili.  
   
  `FrameTypeTrap`  
- Frame Trap kernel.  
+ Frame trap del kernel.  
   
  `FrameTypeTSS`  
- Frame Trap kernel.  
+ Frame trap del kernel.  
   
  `FrameTypeStandard`  
- Frame dello stack EBP standard.  
+ Stack frame EBP standard.  
   
  `FrameTypeFrameData`  
- Puntatore ai frame omessi. Informazioni sui dati di intervallo disponibile.  
+ Puntatore al frame omesso; Informazioni sui dati dei frame disponibili.  
   
  `FrameTypeUnknown`  
- Frame che non ha le informazioni di debug.  
+ Frame senza informazioni di debug.  
   
-## <a name="remarks"></a>Note  
- I valori di questa enumerazione vengono restituiti da una chiamata per il [Idiastackframe](../../debugger/debug-interface-access/idiastackframe-get-type.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaStackFrame:: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: cvconst.h  
+ Intestazione: cvconst. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   

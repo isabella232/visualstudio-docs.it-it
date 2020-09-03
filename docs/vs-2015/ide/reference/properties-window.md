@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 959bd36995ca4086bf64020816b00aee6f777fbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662080"
 ---
 # <a name="properties-window"></a>Finestra Proprietà
@@ -33,12 +33,12 @@ ms.locfileid: "72662080"
 
 Usare questa finestra per visualizzare e modificare in fase di progettazione le proprietà e gli eventi degli oggetti selezionati presenti in editor e finestre di progettazione. È anche possibile usare la finestra **Proprietà** per modificare e visualizzare le proprietà di file, progetto e soluzione. La finestra **Proprietà** può essere selezionata dal menu **Visualizza**. È anche possibile aprirla premendo F4 o digitando **Proprietà** nella finestra **Avvio veloce**.
 
- Nella finestra **Proprietà** vengono visualizzati diversi tipi di campi di modifica, a seconda delle esigenze di una determinata proprietà. I campi di modifica comprendono caselle di modifica, elenchi a discesa e collegamenti a finestre di dialogo dell'editor personalizzato. Le proprietà visualizzate in grigio sono di sola lettura.
+ La finestra **Proprietà** visualizza diversi tipi di campi di modifica, a seconda dei requisiti di una determinata proprietà. I campi di modifica comprendono caselle di modifica, elenchi a discesa e collegamenti a finestre di dialogo dell'editor personalizzato. Le proprietà visualizzate in grigio sono di sola lettura.
 
-## <a name="uielement-list"></a>Elenco UIElement
- Nome oggetto elenca l'oggetto o gli oggetti attualmente selezionati. Sono visibili solo gli oggetti dell'editor o della finestra di progettazione attivi. Quando si selezionano più oggetti vengono visualizzate solo le proprietà comuni a tutti gli oggetti selezionati.
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
+ Nome oggetto elenca l'oggetto o gli oggetti attualmente selezionati. Saranno visibili solo gli oggetti dell'editor attivo o della finestra di progettazione attiva. Quando si selezionano più oggetti vengono visualizzate solo le proprietà comuni a tutti gli oggetti selezionati.
 
- Categorizzato elenca tutte le proprietà e i valori delle proprietà per l'oggetto selezionato, per categoria. È possibile comprimere una categoria per ridurre il numero di proprietà visualizzate. Quando si espande o si comprime una categoria, viene visualizzato un segno più (+) o meno (-) a sinistra del nome della categoria. Le categorie sono elencate in ordine alfabetico.
+ Categorizzato elenca tutte le proprietà e i valori delle proprietà per l'oggetto selezionato, per categoria. È possibile comprimere una categoria per ridurre il numero di proprietà visualizzate. Quando una categoria viene espansa o compressa, accanto al nome verrà visualizzato un segno più (+) o un segno meno (-). Le categorie sono elencate in ordine alfabetico.
 
  Ordina alfabeticamente tutti gli eventi e le proprietà della fase di progettazione per gli oggetti selezionati. Per modificare una proprietà attiva, fare clic nella cella a destra della proprietà e immettere le modifiche.
 
