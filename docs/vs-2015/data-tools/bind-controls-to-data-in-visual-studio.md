@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31e2086126e9a17554c80b53858205e83fd504fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673041"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
@@ -38,12 +38,12 @@ ms.locfileid: "72673041"
 
 |Origine dati|Supporto del trascinamento della selezione in **Progettazione Windows Form**|Supporto del trascinamento della selezione in **WPF Designer**|Supporto del trascinamento della selezione in **Silverlight Designer**|
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Set di dati|Yes|Yes|No|
-|Entity Data Model|Sì<sup>1</sup>|Yes|Yes|
-|Classi LINQ to SQL|Non<sup>2</sup>|Non<sup>2</sup>|Non<sup>2</sup>|
-|Servizi (inclusi [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], servizi WCF e servizi Web)|Yes|Yes|Yes|
-|Oggetto|Yes|Yes|Yes|
-|SharePoint|Yes|Yes|Yes|
+|Set di dati|Sì|Sì|No|
+|Entity Data Model|Sì<sup>1</sup>|Sì|Sì|
+|Classi LINQ to SQL|No<sup>2</sup>|No<sup>2</sup>|No<sup>2</sup>|
+|Servizi (inclusi [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], servizi WCF e servizi Web)|Sì|Sì|Sì|
+|Oggetto|Sì|Sì|Sì|
+|SharePoint|Sì|Sì|Sì|
 
  1. Generare il modello utilizzando la procedura guidata **Entity Data Model** , quindi trascinare tali oggetti nella finestra di progettazione.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72673041"
 
 |Attività|Altre informazioni|
 |----------|----------------------|
-|Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **visualizza**  > **origini dati**.|
+|Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **Visualizza**  >  **origini dati**.|
 |Aggiungere un'origine dati al progetto.|[Aggiungi nuova origine dati](../data-tools/add-new-data-sources.md)|
 |Impostare il controllo che viene creato quando si trascina un elemento dalla finestra **Origini dati** alla finestra di progettazione.|[Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modificare l'elenco dei controlli associati agli elementi nella finestra **Origini dati**.|[Aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

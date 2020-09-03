@@ -1,5 +1,5 @@
 ---
-title: Utilizzo degli assembly di interoperabilità di Visual Studio . Documenti Microsoft
+title: Uso di assembly di interoperabilità di Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5926b2cce217565c889c7ef2eeef877691101ed6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704127"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Uso degli assembly di interoperabilità di Visual Studio
-Gli assembly di interoperabilità di Visual Studio consentono alle applicazioni gestite di accedere alle interfacce COM che forniscono l'estensibilità di Visual Studio.Visual Studio interop assemblies allow managed applications to access the COM interfaces that provide Visual Studio extensibility. Esistono alcune differenze tra le interfacce COM dirette e le relative versioni di interoperabilità. Ad esempio, gli HRESULT sono generalmente rappresentati come valori int e devono essere gestiti nello stesso modo delle eccezioni e i parametri (in particolare i parametri out) vengono trattati in modo diverso.
+Gli assembly di interoperabilità di Visual Studio consentono alle applicazioni gestite di accedere alle interfacce COM che forniscono l'estendibilità di Visual Studio. Esistono alcune differenze tra le interfacce COM diritte e le relative versioni di interoperabilità. Gli HRESULT, ad esempio, vengono in genere rappresentati come valori int e devono essere gestiti in modo analogo alle eccezioni e i parametri (in particolare i parametri out) vengono trattati in modo diverso.
 
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Gestione di valori HRESULT restituiti al codice gestito da COM
  Quando si chiama un'interfaccia COM dal codice gestito, esaminare il valore HRESULT e generare un'eccezione, se necessario. La classe <xref:Microsoft.VisualStudio.ErrorHandler> contiene il metodo <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, che genera un'eccezione COM, a seconda del valore HRESULT passato.
@@ -28,7 +28,7 @@ Gli assembly di interoperabilità di Visual Studio consentono alle applicazioni 
  Per impostazione predefinita, <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> genera un'eccezione ogni volta che viene passato un valore HRESULT minore di zero. Nei casi in cui tali valori HRESULT sono valori accettabili e non deve essere generata alcuna eccezione, i valori HRESULT aggiuntivi devono essere passati a <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> dopo essere stati testati. Se il valore HRESULT testato corrisponde a qualsiasi valore HRESULT passato in modo esplicito a <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, non viene generata alcuna eccezione.
 
 > [!NOTE]
-> La <xref:Microsoft.VisualStudio.VSConstants> classe contiene costanti per HRESULTS <xref:Microsoft.VisualStudio.VSConstants.S_OK> comuni, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ad esempio , <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> e <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT> <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, e HRESULTS, ad esempio, e . <xref:Microsoft.VisualStudio.VSConstants> fornisce inoltre i metodi <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> e <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>, che corrispondono alle macro SUCCEEDED e FAILED in COM.
+> La <xref:Microsoft.VisualStudio.VSConstants> classe contiene costanti per HRESULT comuni, ad esempio, e e <xref:Microsoft.VisualStudio.VSConstants.S_OK> <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULT, ad esempio <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> e <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT> . <xref:Microsoft.VisualStudio.VSConstants> fornisce inoltre i metodi <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> e <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A>, che corrispondono alle macro SUCCEEDED e FAILED in COM.
 
  Si consideri, ad esempio, la seguente chiamata di funzione, in cui <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> è un valore restituito accettabile, ma qualsiasi altro valore HRESULT minore di zero rappresenta un errore.
 
@@ -48,17 +48,17 @@ Gli assembly di interoperabilità di Visual Studio consentono alle applicazioni 
 > [!NOTE]
 > Le eccezioni compromettono le prestazioni e servono per indicare condizioni anomale dei programmi. Le condizioni che si verificano spesso devono essere gestite inline, invece di generare un'eccezione.
 
-## <a name="iunknown-parameters-passed-as-type-void"></a>Parametri IUnknown passati come Tipo void
- Cercare i parametri [out] definiti `void **` come tipo nell'interfaccia COM, ma definiti come `[``iid_is``]` nel prototipo del metodo dell'assembly [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di interoperabilità.
+## <a name="iunknown-parameters-passed-as-type-void"></a>Parametri IUnknown passati come tipo void * *
+ Cercare i parametri [out] definiti come tipo `void **` nell'interfaccia com, ma che sono definiti come `[``iid_is``]` nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipo del metodo di assembly di interoperabilità.
 
- In alcuni stati, `IUnknown` un'interfaccia COM genera un oggetto `void **`e l'interfaccia COM lo passa quindi come tipo . Queste interfacce sono particolarmente importanti perché se la variabile è definita `IUnknown` come [out] nel `AddRef` file IDL, l'oggetto viene conteggiato con il metodo. Se l'oggetto non viene gestito correttamente, si verifica una perdita di memoria.
+ In alcuni casi, un'interfaccia COM genera un `IUnknown` oggetto e l'interfaccia com la passa quindi come tipo `void **` . Queste interfacce sono particolarmente importanti perché se la variabile è definita come [out] nell'IDL, l' `IUnknown` oggetto viene conteggiato come riferimento con il `AddRef` metodo. Si verifica una perdita di memoria se l'oggetto non è gestito correttamente.
 
 > [!NOTE]
-> Un `IUnknown` oggetto creato dall'interfaccia COM e restituito in una variabile [out] causa una perdita di memoria se non viene rilasciato in modo esplicito.
+> Un `IUnknown` oggetto creato dall'interfaccia com e restituito in una variabile [out] causa una perdita di memoria se non viene rilasciata in modo esplicito.
 
- I metodi gestiti che <xref:System.IntPtr> gestiscono tali `IUnknown` oggetti devono essere <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> considerati come puntatore a un oggetto e chiamare il metodo per ottenere l'oggetto. Il chiamante deve quindi eseguire il cast del valore restituito al tipo appropriato. Quando l'oggetto non è <xref:System.Runtime.InteropServices.Marshal.Release%2A> più necessario, chiamare per rilasciarlo.
+ I metodi gestiti che gestiscono tali oggetti devono <xref:System.IntPtr> essere trattati come un puntatore a un `IUnknown` oggetto e chiamare il <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodo per ottenere l'oggetto. Il chiamante deve quindi eseguire il cast del valore restituito a qualsiasi tipo appropriato. Quando l'oggetto non è più necessario, chiamare <xref:System.Runtime.InteropServices.Marshal.Release%2A> per rilasciarlo.
 
- Di seguito è riportato un esempio di chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> metodo e gestione corretta dell'oggetto: `IUnknown`
+ Di seguito è riportato un esempio di chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> metodo e di gestione `IUnknown` corretta dell'oggetto:
 
 ```
 MyClass myclass;
@@ -85,7 +85,7 @@ else
 ```
 
 > [!NOTE]
-> I metodi riportati `IUnknown` di seguito sono <xref:System.IntPtr>noti per passare puntatori a oggetti come tipo . Maneggiarli come descritto in questa sezione.
+> I metodi seguenti sono noti per passare i `IUnknown` puntatori all'oggetto come tipo <xref:System.IntPtr> . Gestirli come descritto in questa sezione.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 
@@ -100,35 +100,35 @@ else
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
 ## <a name="optional-out-parameters"></a>Parametri [out] facoltativi
- Cercare i parametri definiti come tipo di`int`dati `object`[out] ( , , e così via) nell'interfaccia COM, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ma definiti come matrici dello stesso tipo di dati nel prototipo del metodo dell'assembly di interoperabilità.
+ Cercare i parametri definiti come tipo di dati [out] ( `int` , `object` e così via) nell'interfaccia com, ma che sono definiti come matrici con lo stesso tipo di dati nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipo del metodo di assembly di interoperabilità.
 
- Alcune interfacce COM, <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>ad esempio , considerano i parametri [out] come facoltativi. Se un oggetto non è necessario, `null` queste interfacce COM restituiscono un puntatore come valore di tale parametro anziché creare l'oggetto [out]. Questo si verifica per motivi strutturali. Per queste interfacce, `null` i puntatori vengono considerati come parte del comportamento corretto del pacchetto VSPackage e non viene restituito alcun errore.
+ Alcune interfacce COM, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> , considerano i parametri [out] come facoltativi. Se un oggetto non è necessario, queste interfacce COM restituiscono un `null` puntatore come valore di tale parametro anziché creare l'oggetto [out]. Questo si verifica per motivi strutturali. Per queste interfacce, i `null` puntatori vengono considerati come parte del comportamento corretto del pacchetto VSPackage e non viene restituito alcun errore.
 
- Poiché CLR non consente che il valore di `null`un parametro [out] sia , parte del comportamento progettato di queste interfacce non è direttamente disponibile all'interno del codice gestito. I [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] metodi dell'assembly di interoperabilità per le interfacce interessate risolvere il `null` problema definendo i parametri rilevanti come matrici perché CLR consente il passaggio di matrici.
+ Poiché CLR non consente il valore di un parametro [out] `null` , parte del comportamento progettato di queste interfacce non è direttamente disponibile all'interno del codice gestito. I [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] metodi di assembly di interoperabilità per le interfacce interessate aggirano il problema definendo i parametri pertinenti come matrici perché CLR consente il passaggio di `null` matrici.
 
- Le implementazioni gestite di `null` questi metodi devono inserire una matrice nel parametro quando non vi è nulla da restituire. In caso contrario, creare una matrice a un elemento del tipo corretto e inserire il valore restituito nella matrice.
+ Le implementazioni gestite di questi metodi devono inserire una `null` matrice nel parametro quando non è presente alcun elemento da restituire. In caso contrario, creare una matrice a un elemento del tipo corretto e inserire il valore restituito nella matrice.
 
- I metodi gestiti che ricevono informazioni dalle interfacce con parametri [out] facoltativi ricevono il parametro come matrice. Basta esaminare il valore del primo elemento della matrice. In caso `null`contrario, considerare il primo elemento come se fosse il parametro originale.
+ I metodi gestiti che ricevono informazioni dalle interfacce con i parametri [out] facoltativi ricevono il parametro come matrice. Esaminare semplicemente il valore del primo elemento della matrice. In caso contrario `null` , considerare il primo elemento come se fosse il parametro originale.
 
-## <a name="passing-constants-in-pointer-parameters"></a>Passaggio di costanti nei parametri del puntatorePassing Constants in Pointer Parameters
- Cercare i parametri definiti come puntatori [in] nell'interfaccia COM, <xref:System.IntPtr> ma [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che sono definiti come tipo nel prototipo del metodo dell'assembly di interoperabilità.
+## <a name="passing-constants-in-pointer-parameters"></a>Passaggio di costanti nei parametri del puntatore
+ Cercare i parametri definiti come [in] puntatori nell'interfaccia COM, ma che sono definiti come <xref:System.IntPtr> tipo nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipo del metodo di assembly di interoperabilità.
 
- Un problema simile si verifica quando un'interfaccia COM passa un valore speciale, ad esempio 0, -1 o -2, anziché un puntatore a oggetto. A [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]differenza di , CLR non consente il cast delle costanti come oggetti. Al contrario, l'assembly [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di <xref:System.IntPtr> interoperabilità definisce il parametro come tipo.
+ Un problema simile si verifica quando un'interfaccia COM passa un valore speciale, ad esempio 0,-1 o-2, anziché un puntatore a un oggetto. Diversamente da [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] , CLR non consente il cast delle costanti come oggetti. Al contrario, l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] assembly di interoperabilità definisce il parametro come <xref:System.IntPtr> tipo.
 
- Le implementazioni gestite di questi metodi <xref:System.IntPtr> devono sfruttare il fatto che la classe dispone di entrambi `int` e `void *` costruttori per creare un <xref:System.IntPtr> da un oggetto o una costante integer, a seconda dei casi.
+ Le implementazioni gestite di questi metodi dovrebbero sfruttare il fatto che la <xref:System.IntPtr> classe dispone di entrambi `int` i `void *` costruttori e per creare un <xref:System.IntPtr> oggetto da un oggetto o da una costante Integer, a seconda dei casi.
 
- I metodi <xref:System.IntPtr> gestiti che ricevono <xref:System.IntPtr> parametri di questo tipo devono utilizzare gli operatori di conversione dei tipi per gestire i risultati. Convertire innanzitutto il <xref:System.IntPtr> in `int` e testarlo rispetto alle costanti integer rilevanti. Se nessun valore corrisponde, convertirlo in un oggetto del tipo richiesto e continuare.
+ I metodi gestiti che ricevono <xref:System.IntPtr> parametri di questo tipo devono usare gli <xref:System.IntPtr> operatori di conversione dei tipi per gestire i risultati. Convertire innanzitutto <xref:System.IntPtr> in `int` e testarlo rispetto alle costanti Integer pertinenti. Se nessun valore corrisponde, convertirlo in un oggetto del tipo richiesto e continuare.
 
- Per esempi, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>e .
+ Per esempi, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A> .
 
 ## <a name="ole-return-values-passed-as-out-parameters"></a>Valori restituiti OLE passati come parametri [out]
- Cercare i metodi `retval` che hanno un valore restituito nell'interfaccia COM, ma che hanno `int` [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] un valore restituito e un parametro di matrice [out] aggiuntivo nel prototipo del metodo dell'assembly di interoperabilità. Deve essere chiaro che questi metodi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] richiedono una gestione speciale perché i prototipi di metodo dell'assembly di interoperabilità hanno un parametro in più rispetto ai metodi dell'interfaccia COM.
+ Cercare i metodi che hanno un `retval` valore restituito nell'interfaccia com, ma che hanno un `int` valore restituito e un parametro di matrice [out] aggiuntivo nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipo del metodo di assembly di interoperabilità. Dovrebbe essere chiaro che questi metodi richiedono una gestione speciale perché i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototipi dei metodi di assembly di interoperabilità hanno un parametro maggiore rispetto ai metodi dell'interfaccia com.
 
- Molte interfacce COM che gestiscono l'attività OLE inviano informazioni sullo `retval` stato OLE al programma chiamante archiviato nel valore restituito dell'interfaccia. Anziché utilizzare un valore [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] restituito, i metodi dell'assembly di interoperabilità corrispondente inviano le informazioni al programma chiamante archiviato in un parametro di matrice [out].
+ Molte interfacce COM che gestiscono l'attività OLE inviano informazioni sullo stato OLE al programma chiamante archiviato nel `retval` valore restituito dell'interfaccia. Anziché utilizzare un valore restituito, i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] metodi di assembly di interoperabilità corrispondenti inviano le informazioni al programma chiamante archiviato in un parametro di matrice [out].
 
- Le implementazioni gestite di questi metodi devono creare una matrice a elemento singolo dello stesso tipo del parametro [out] e inserirla nel parametro. Il valore dell'elemento della matrice deve `retval`essere lo stesso del COM appropriato.
+ Le implementazioni gestite di questi metodi devono creare una matrice a elemento singolo dello stesso tipo del parametro [out] e inserirla nel parametro. Il valore dell'elemento di matrice deve essere uguale a quello dell'elemento COM appropriato `retval` .
 
- I metodi gestiti che chiamano interfacce di questo tipo devono estrarre il primo elemento dalla matrice [out]. Questo elemento può essere considerato `retval` come se fosse un valore restituito dall'interfaccia COM corrispondente.
+ I metodi gestiti che chiamano interfacce di questo tipo devono estrarre il primo elemento dalla matrice [out]. Questo elemento può essere considerato come se fosse un `retval` valore restituito dall'interfaccia com corrispondente.
 
 ## <a name="see-also"></a>Vedere anche
 - [Interoperabilità con codice non gestito](/dotnet/framework/interop/index)

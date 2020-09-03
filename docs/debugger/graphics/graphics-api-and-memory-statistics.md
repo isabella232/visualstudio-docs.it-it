@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735568"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API grafica e statistiche di memoria
@@ -36,11 +36,11 @@ Questo strumento visualizzerà la quantità di memoria allocata dal driver di gr
 
 ![Statistiche memoria](media/gfx_diag_memory_statistics.png)
 
-Nella colonna **allocazione GPU** viene visualizzata la quantità di memoria utilizzata dall'evento visualizzato nella colonna **evento** .  È anche possibile selezionare l'icona espressioni di controllo ![watch icona ](media/gfx_watch.png) per visualizzare la [cronologia delle risorse](graphics-event-list.md#resource-history) per l'evento selezionato.
+Nella colonna **allocazione GPU** viene visualizzata la quantità di memoria utilizzata dall'evento visualizzato nella colonna **evento** .  È anche possibile selezionare l'icona espressioni ![ di controllo ](media/gfx_watch.png) per visualizzare la [cronologia delle risorse](graphics-event-list.md#resource-history) per l'evento selezionato.
 
 Come per lo strumento Statistiche API, è possibile fare clic con il pulsante destro del mouse nella finestra per copiare tutti i dati come CSV, che possono essere incollati in un elemento come Excel per un'ulteriore analisi.
 
 ## <a name="see-also"></a>Vedere anche
-- [Diagnostica della grafica (debug della grafica DirectX)](visual-studio-graphics-diagnostics.md)
+- [Diagnostica della grafica (Debug grafica DirectX)](visual-studio-graphics-diagnostics.md)
 - [Cronologia risorse](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

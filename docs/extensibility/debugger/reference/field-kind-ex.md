@@ -1,5 +1,5 @@
 ---
-title: proprietà FIELD_KIND_EX . Documenti Microsoft
+title: FIELD_KIND_EX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736884"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
-Enumera i tipi aggiuntivi di campi che un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto può contenere. Questa enumerazione estende l'enumerazione [FIELD_KIND.](../../../extensibility/debugger/reference/field-kind.md)
+Enumera i tipi aggiuntivi di campi che possono essere contenuti in un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) . Questa enumerazione estende l'enumerazione [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ public enum enum_FIELD_KIND_EX
 
 ## <a name="fields"></a>Campi
 `FIELD_KIND_EX_NONE`\
-Campo non contiene un tipo esteso.
+Il campo non contiene un tipo esteso.
 
 `FIELD_TYPE_EX_METHODVAR`\
 Il campo contiene una variabile di metodo.
@@ -55,9 +55,9 @@ Il campo contiene una variabile di metodo.
 Il campo contiene una variabile di classe.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Sh.h
+Intestazione: sh. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

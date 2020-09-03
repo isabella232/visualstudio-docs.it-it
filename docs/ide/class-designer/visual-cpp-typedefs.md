@@ -1,5 +1,5 @@
 ---
-title: Typedef di C, in Progettazione classi
+title: Typedef C++ in Progettazione classi
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590696"
 ---
-# <a name="c-typedefs-in-class-designer"></a>Typedef di C, in Progettazione classi
+# <a name="c-typedefs-in-class-designer"></a>Typedef C++ in Progettazione classi
 
 Le istruzioni [typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) creano uno o più livelli di riferimento indiretto tra un nome e il relativo tipo sottostante. **Progettazione classi** supporta i tipi typedef di C++, che vengono dichiarati con la parola chiave `typedef`, ad esempio:
 
@@ -68,7 +68,7 @@ typedef struct mystructtag
 
 ## <a name="unnamed-typedefs"></a>Typedef senza nome
 
-Sebbene sia possibile dichiarare un typedef senza nome, **Progettazione classi** non usa il nome del tag specificato. **Progettazione classi** usa il nome generato da **Visualizzazione classi**. Ad esempio, la dichiarazione seguente è valida, ma viene visualizzata in **Visualizzazione classi** e **Progettazione classi** come oggetto denominato **__unnamed**:
+Sebbene sia possibile dichiarare un typedef senza nome, **Progettazione classi** non usa il nome del tag specificato. **Progettazione classi** usa il nome generato da **Visualizzazione classi**. La dichiarazione seguente, ad esempio, è valida, ma viene visualizzata in **Visualizzazione classi** e **Progettazione classi** come oggetto denominato **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Lavorare con il codice C](working-with-visual-cpp-code.md)
+- [Usare il codice C++](working-with-visual-cpp-code.md)
 - [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

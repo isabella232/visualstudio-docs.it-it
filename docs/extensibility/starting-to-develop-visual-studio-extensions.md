@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286193"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Sviluppo di estensioni di Visual Studio
@@ -63,7 +63,7 @@ In pratica, è stato rilevato che le funzionalità che la maggior parte degli ut
 
 - [Visual Studio Isolated Shell](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a>Quali modelli di progetto sono forniti da VSSDK?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Quali modelli di progetto sono forniti da VSSDK?
  I due tipi principali di estensioni sono VSPackage ed estensioni MEF. In generale, le estensioni VSPackage vengono usate per le estensioni che usano o estendono i comandi, le finestre degli strumenti e i progetti. Le estensioni MEF vengono usate per estendere o personalizzare l'editor di Visual Studio.
 
  Per le estensioni Visual C# ed Visual Basic, VSSDK fornisce un modello di progetto VSIX vuoto che è possibile usare insieme ai nuovi modelli di elemento che creano comandi di menu, finestre degli strumenti ed estensioni dell'editor. È anche possibile usare questo modello per creare pacchetti di modelli di progetto, frammenti di codice e altri elementi da distribuire ad altri utenti.
@@ -93,7 +93,7 @@ In pratica, è stato rilevato che le funzionalità che la maggior parte degli ut
 
  È anche possibile pubblicare l'estensione nella Visual Studio Marketplace, rendendola visibile a un numero elevato di clienti di Visual Studio. Per un esempio di creazione di pacchetti di un'estensione per il Marketplace, vedere [procedura dettagliata: pubblicazione di un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Per altre informazioni su ciò che è necessario fare per pubblicare nel Marketplace, vedere [prodotti ed estensioni per Visual Studio](/azure/devops/extend/overview?view=vsts).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Estensione di Visual Studio per Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [Estensione di Visual Studio Code](https://code.visualstudio.com/api)

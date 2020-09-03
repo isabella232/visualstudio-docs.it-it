@@ -61,10 +61,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa647d8a8d52588481d18347cb3400141978bd20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548031"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Scrittura di codice nell'Editor di testo e del codice
@@ -82,7 +82,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 
 ## <a name="editor-features"></a>Funzionalità dell'editor
 
-|Funzionalità|Descrizione|
+|Feature|Descrizione|
 |-|-|
 |Colorazione della sintassi|Alcuni elementi della sintassi del codice e dei file di markup sono colorati in modo diverso per distinguerli. Ad esempio, le parole chiave (ad esempio `using` in C# e `Imports` in Visual Basic) sono di un colore, mentre i tipi (ad esempio `Console` e `Uri`) sono di un altro colore. Anche altri elementi della sintassi sono colorati, ad esempio i valori letterali stringa e i commenti. C++ usa i colori per distinguere i tipi, le enumerazioni e le macro dagli altri token.<br /><br /> È possibile visualizzare il colore predefinito per ogni tipo e modificare il colore per ogni specifico elemento della sintassi nella finestra di dialogo [Opzioni, Ambiente, Tipi di carattere](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), che può essere aperta dal menu **Strumenti**.|
 |Contrassegni di errore e di avviso|Quando si aggiunge codice e si compila la soluzione, vengono visualizzate (a) sottolineature ondulate con diversi colori (note come sottolineature a zigzag) o (b) lampadine nel codice. Le sottolineature rosse denotano errori di sintassi, quelle blu errori del compilatore, quelle verdi gli avvisi e quelle viola altri tipi di errore. Le [lampadine](../ide/perform-quick-actions-with-light-bulbs.md) suggeriscono correzioni dei problemi e ne semplificano l'applicazione.<br /><br /> I colori predefiniti per ogni sottolineatura di errore e di avviso possono essere visualizzati nella finestra di dialogo **Strumenti/Opzioni/Ambiente/Tipi di carattere e colori**. Cercare **Errore di sintassi**, **Errore del compilatore**, **Avviso**e **Altro errore**.|
@@ -98,7 +98,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 ## <a name="advanced-editing-features"></a>Funzionalità di modifica avanzate
  Diverse funzionalità avanzate sono disponibili nel sottomenu **Modifica/Avanzate**. Non tutte le funzionalità sono disponibili per tutti i tipi di file di codice.
 
-|Funzionalità|Descrizione|
+|Feature|Descrizione|
 |-|-|
 |Formatta documento|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nel documento.|
 |Formatta selezione|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nella selezione.|
@@ -128,7 +128,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
 
 |Comando|Descrizione|
 |-|-|
-|Vai a\<line number>|(**Modifica/Vai a** o CTRL + G): spostarsi a uno specifico numero di riga nel documento attivo.|
+|Vai a \<line number>|(**Modifica/Vai a** o CTRL + G): spostarsi a uno specifico numero di riga nel documento attivo.|
 |Passa a|(**Modifica/Passa a** o CTRL + ,): trova un simbolo o un file nella soluzione attiva. Consente di ottenere un buon numero di risultati corrispondenti da una query. È possibile cercare parole chiave contenute in un simbolo usando la convenzione Camel e i caratteri di sottolineatura per dividere il simbolo in parole chiave.|
 |Trova tutti i riferimenti|(Menu di scelta rapida): trova tutti i riferimenti all'elemento selezionato nella soluzione|
 |Vai a definizione|(Menu di scelta rapida o F12): trova la definizione dell'elemento selezionato.|
@@ -206,7 +206,7 @@ Questa funzionalità è particolarmente utile se il codice contiene nomi lunghi.
 
 - [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)
 
-- [Using IntelliSense](../ide/using-intellisense.md)
+- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
 
 - [Personalizzazione dell'editor](../ide/customizing-the-editor.md)
 

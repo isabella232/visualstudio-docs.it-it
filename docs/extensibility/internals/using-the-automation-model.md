@@ -1,5 +1,5 @@
 ---
-title: Utilizzo del modello di automazione Documenti Microsoft
+title: Uso del modello di automazione | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2b9d7bd789a41f7a5e801552ca07f9f228921867
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704228"
 ---
 # <a name="using-the-automation-model"></a>Uso del modello di automazione
-Dopo aver connesso il pacchetto VSPackage all'automazione, è <xref:EnvDTE.DTEClass.GetObject%2A> possibile <xref:EnvDTE._DTE> ottenere le proprietà e metodi chiamando il metodo sull'oggetto, passando una stringa che rappresenta l'oggetto che si desidera recuperare.
+Dopo aver connesso il pacchetto VSPackage a automazione, è possibile ottenere le proprietà e i metodi chiamando il <xref:EnvDTE.DTEClass.GetObject%2A> metodo sull' <xref:EnvDTE._DTE> oggetto, passando una stringa che rappresenta l'oggetto che si vuole recuperare.
 
-## <a name="obtaining-project-objects"></a>Recupero di oggetti di progettoObtaining Project Objects
- Di seguito sono riportati due esempi di codice che illustrano come un consumer di automazione ottiene gli oggetti di automazione del progetto. Per informazioni su come ottenere l'oggetto DTE, vedere [Procedura: ottenere riferimenti agli oggetti DTE e DTE2](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
+## <a name="obtaining-project-objects"></a>Recupero di oggetti progetto
+ Di seguito sono riportati due esempi di codice che illustrano il modo in cui un consumer di automazione ottiene gli oggetti di automazione del progetto. Per informazioni su come ottenere l'oggetto DTE, vedere [How to: get references to the DTE and DTE2 Objects](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
 
 ```vb
 Sub DoAutomation()
@@ -43,9 +43,9 @@ void DoAutomation(void)
 
 ```
 
- A questo punto, è possibile utilizzare gli oggetti di progetto standard che fanno parte di un VSPackage specifico per spostarsi verso il basso nel modello di gerarchia.
+ A questo punto, è possibile usare gli oggetti di progetto standard che fanno parte di un VSPackage specifico per spostare il modello di gerarchia.
 
- Esempio di codice seguente viene illustrato come ottenere un oggetto personalizzato che è una proprietà di un tipo di progetto personalizzato.:
+ Nell'esempio di codice seguente viene illustrato come ottenere un oggetto personalizzato che è una proprietà di un tipo di progetto personalizzato.:
 
 ```vb
 Dim MyPrj As Project
@@ -58,7 +58,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- Il codice seguente elenca i nomi di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tutte le proprietà nell'opzione **Generale** dell'ambiente del menu **Strumenti:**
+ Il codice seguente elenca i nomi di tutte le proprietà nell' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] opzione **generale** dell'ambiente nel menu **strumenti** :
 
 ```vb
 dim objDTE

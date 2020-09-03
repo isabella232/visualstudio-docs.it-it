@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d6c6ebe39cf0d32480aee1019aa5ea47496bd793
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548135"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
@@ -22,7 +22,7 @@ ms.locfileid: "85548135"
 
 Esplora Test consente di eseguire unit test da Visual Studio o progetti unit test di terze parti, raggruppare i test in categorie, filtrare l'elenco dei test, nonché creare, salvare ed eseguire playlist di test. È anche possibile eseguire il debug dei test e analizzare code coverage e prestazioni dei test.
 
-## <a name="contents"></a><a name="BKMK_Contents"></a>Contenuto
+## <a name="contents"></a><a name="BKMK_Contents"></a> Contenuto
  [Framework unit test e progetti di test](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Eseguire test in Esplora test](#BKMK_Run_tests_in_Test_Explorer)
@@ -44,7 +44,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
  ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a>Eseguire test in Esplora test
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Run_tests_in_Test_Explorer"></a> Eseguire test in Esplora test
  [Eseguire i test](#BKMK_Run_tests) **&#124;** [Eseguire i test dopo ogni compilazione](#BKMK_Run_tests_after_every_build)
 
  Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
@@ -59,7 +59,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
  ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
-### <a name="run-tests"></a><a name="BKMK_Run_tests"></a>Esegui test
+### <a name="run-tests"></a><a name="BKMK_Run_tests"></a> Esegui test
  È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
@@ -85,7 +85,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
  ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
-## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a>Visualizzare i risultati dei test
+## <a name="view-test-results"></a><a name="BKMK_View_test_results"></a> Visualizzare i risultati dei test
  [Visualizzare i dettagli dei test](#BKMK_View_test_details) **&#124;** [Visualizzare il codice sorgente di un metodo di test](#BKMK_View_the_source_code_of_a_test_method)
 
  Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. Il riquadro dei dettagli nella parte inferiore della finestra Esplora Test mostra un riepilogo dell'esecuzione dei test.
@@ -219,7 +219,7 @@ TEST_METHOD(Method1)
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
- Ad esempio,
+ Ad esempio:
 
 ```
 FullName:"MyClass" - FullName:"PerfTest"
@@ -229,7 +229,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
  ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
-## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a>Creare playlist personalizzate
+## <a name="create-custom-playlists"></a><a name="BKMK_Create_custom_playlists"></a> Creare playlist personalizzate
  È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco saranno visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
 
  ![Scegliere una playlist](../test/media/ute-playlist.png "UTE_Playlist")
@@ -287,9 +287,9 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
-## <a name="external-resources"></a><a name="BKMK_External_resources"></a>Risorse esterne
+## <a name="external-resources"></a><a name="BKMK_External_resources"></a> Risorse esterne
 
-### <a name="guidance"></a><a name="BKMK_Guidance"></a>Guida
+### <a name="guidance"></a><a name="BKMK_Guidance"></a> Guida
  [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Vedere anche

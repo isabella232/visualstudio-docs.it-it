@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284972"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizzare Help Viewer
@@ -45,6 +45,6 @@ Per aprire la finestra di dialogo **Opzioni Help Viewer** scegliere il pulsante 
 |Modificare il numero massimo di voci della cronologia visualizzate nella finestra **Preferiti**|Scegliere un valore nell'elenco **Numero massimo di voci della cronologia salvate**.|
 |Includere o escludere contenuto in inglese quando si visualizza il contenuto per una versione non inglese di un prodotto.|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**. **Attenzione:** da questa funzionalità dipende anche la possibilità di scaricare contenuto in inglese nella scheda **Gestisci contenuto**.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

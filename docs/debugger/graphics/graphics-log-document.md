@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735524"
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
@@ -24,7 +24,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
  Ecco l'aspetto di un documento di log della grafica in Analizzatore grafica:
 
- ![Un log di grafica contenente due frame acquisiti.](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")
+ ![Log grafico con due frame acquisiti.](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")
 
 ## <a name="understanding-graphics-log-documents"></a>Informazioni sui documenti di log della grafica
  Se si usa Analizzatore grafica per esaminare un documento di log della grafica, è possibile visualizzare gli effetti degli eventi Direct3D che si sono verificati durante l'acquisizione sulla destinazione di rendering. È possibile individuare aree della destinazione di rendering che contengono un output non previsto. Quando si seleziona un pixel nell'area interessata, è possibile usare gli strumenti di Diagnostica grafica per esaminarlo, per analizzare gli shader e gli eventi Direct3D che hanno influito su di esso, gli stack di chiamate dell'applicazione che hanno generato tali eventi e gli oggetti DirectX che supportano tali eventi. È possibile usare queste informazioni per diagnosticare i problemi di rendering nel gioco o nell'app.
@@ -49,7 +49,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
  **Informazioni su Direct3D** Elenca le informazioni sulle funzionalità hardware e driver della scheda video utilizzata durante la sessione di acquisizione.
 
-|proprietà|Descrizione|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Formato High Color 10 bit XR**|**True** se il formato High Color 10 bit XR è supportato; in caso contrario, **False**.|
 |**DirectCompute CS 4.x**|**True** se Compute Shader 4.0 è supportato; in caso contrario, **False**.|
@@ -61,49 +61,49 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
  **Visualizza informazioni** Elenca le informazioni sulla scheda di visualizzazione utilizzata durante la sessione di acquisizione.
 
-|proprietà|Descrizione|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Descrizione**|Stringa di descrizione della scheda video.|
 |**Memoria visualizzazione**|Quantità di memoria installata nella scheda video grafica.|
-|**Nome driver**|Nome del driver della scheda video grafica.|
+|**Nome del driver**|Nome del driver della scheda video grafica.|
 |**Versione driver**|Versione del driver della scheda video grafica.|
-|**Nome**|Nome della scheda video grafica.|
+|**Name**|Nome della scheda video grafica.|
 
  **File esperimento** Elenca le informazioni sul file di esperimento associato alla sessione di acquisizione.
 
-|proprietà|Descrizione|
+|Proprietà|Descrizione|
 |--------------|-----------------|
-|**Path**|Percorso del file con estensione vsglog. **Nota:**  In acquisizione legacy questa proprietà è inutilizzata.|
+|**Percorso**|Percorso del file con estensione vsglog. **Nota:**  In acquisizione legacy questa proprietà è inutilizzata.|
 
  **Informazioni sul modulo** Elenca il nome e la versione delle librerie di collegamento dinamico (dll) caricate dall'app durante la sessione di acquisizione.
 
  **Informazioni di sistema** Elenca le informazioni relative all'hardware e al sistema operativo che ospitavano l'app durante la sessione di acquisizione.
 
-|proprietà|Descrizione|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Memoria**|Quantità di memoria installata nel computer.|
-|**Architettura sistema operativo**|L'architettura della CPU di destinazione del sistema operativo.|
-|**Versione del sistema operativo**|Versione del sistema operativo.|
+|**Architettura del sistema operativo**|L'architettura della CPU di destinazione del sistema operativo.|
+|**Versione sistema operativo**|Versione del sistema operativo.|
 |**Processore**|Processore installato nel computer.|
 |**Architettura applicazione di destinazione**|L'architettura della CPU di destinazione dell'app. Può essere diversa da **Architettura sistema operativo**.|
 
  **Applicazione di destinazione** Elenca le informazioni sull'app che è l'oggetto della sessione di acquisizione.
 
-|proprietà|Descrizione|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Data/ora ultima modifica**|Data e ora in cui è stata compilata l'app.|
-|**Path**|Percorso dell'app.|
+|**Percorso**|Percorso dell'app.|
 |**ID processo**|ID processo assegnato all'app.|
-|**Version**|Versione dell'app.|
+|**Versione**|Versione dell'app.|
 
  **File di log VSG** Elenca le informazioni sul documento del log di grafica.
 
-| proprietà | Descrizione |
+| Proprietà | Descrizione |
 |------------------------| - |
 | **Creato da** | Nome dell'app che ha creato il documento di log della grafica. Ad esempio, se la sessione di acquisizione è stata avviata da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (acquisizione manuale), il valore di questa proprietà è [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
-| **Ora inizio sessione** | Data e ora in cui è stata iniziata la sessione di acquisizione. |
-| **Size** | Dimensione del documento log grafica. |
+| **Ora di inizio della sessione** | Data e ora in cui è stata iniziata la sessione di acquisizione. |
+| **Dimensione** | Dimensione del documento log grafica. |
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)

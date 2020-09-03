@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285146"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
 In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate le icone che rappresentano le entità di codice, ad esempio spazi dei nomi, classi, funzioni e variabili. Nella tabella seguente vengono illustrate e descritte le icone.
 
-|Icona|Descrizione|Icona|Description|
+|Icona|Descrizione|Icona|Descrizione|
 |----------|-----------------|----------|-----------------|
 |![Simbolo dello spazio dei nomi](../ide/media/vxnamespace_icon.gif)|Spazio dei nomi|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif)|Metodo o funzione|
 |![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
@@ -52,7 +52,7 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 
 Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne indicano l'accessibilità.
 
-|Icona|Description|
+|Icona|Descrizione|
 |----------|-----------------|
 |\<No Signal Icon>|Pubblica. Accessibile ovunque in questo componente e da qualsiasi componente che vi fa riferimento.|
 |![Simbolo segnale protetto](../ide/media/vxsignal_icon_key.gif)|Protetto. Accessibile dalla classe o dal tipo contenitore o da quelli da essi derivati.|
@@ -64,6 +64,6 @@ Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne 
 > [!NOTE]
 > Se il progetto è incluso in un database di controllo del codice sorgente potrebbero essere visualizzate altre icone di segnalazione per indicare lo stato di controllo del codice sorgente, ad esempio se il codice è stato archiviato o estratto.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Visualizzazione della struttura del codice](../ide/viewing-the-structure-of-code.md)

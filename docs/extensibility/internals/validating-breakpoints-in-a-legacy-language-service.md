@@ -1,5 +1,5 @@
 ---
-title: Convalida dei punti di interruzione in un servizio di linguaggio Legacy Documenti Microsoft
+title: Convalida di punti di interruzione in un servizio di linguaggio legacy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,31 +12,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704088"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Convalida dei punti di interruzione in un servizio di linguaggio legacy
-Un punto di interruzione indica che l'esecuzione del programma deve interrompersi in un determinato punto durante l'esecuzione in un debugger. Un utente può inserire un punto di interruzione in qualsiasi riga del file di origine, poiché l'editor non ha alcuna conoscenza di ciò che costituisce una posizione valida per un punto di interruzione. Quando viene avviato il debugger, tutti i punti di interruzione contrassegnati (denominati punti di interruzione in sospeso) vengono associati alla posizione appropriata nel programma in esecuzione. Allo stesso tempo, i punti di interruzione vengono convalidati per garantire che contrassegnino percorsi di codice validi. Ad esempio, un punto di interruzione in un commento non è valido, perché non è presente codice in tale posizione nel codice sorgente. Il debugger disabilita i punti di interruzione non validi.
+Un punto di interruzione indica che l'esecuzione del programma dovrebbe arrestarsi in un determinato punto mentre è in esecuzione in un debugger. Un utente può inserire un punto di interruzione in qualsiasi riga del file di origine, poiché l'editor non è a conoscenza di ciò che costituisce una posizione valida per un punto di interruzione. Quando viene avviato il debugger, tutti i punti di interruzione contrassegnati (detti punti di interruzione in sospeso) vengono associati alla posizione appropriata nel programma in esecuzione. Allo stesso tempo, i punti di interruzione vengono convalidati per assicurarsi di contrassegnare percorsi di codice validi. Ad esempio, un punto di interruzione in un commento non è valido perché non esiste alcun codice in tale posizione nel codice sorgente. Il debugger Disabilita i punti di interruzione non validi.
 
- Poiché il servizio di linguaggio conosce il codice sorgente visualizzato, può convalidare i punti di interruzione prima dell'avvio del debugger. È possibile <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> eseguire l'override del metodo per restituire un intervallo che specifica una posizione valida per un punto di interruzione. La posizione del punto di interruzione viene comunque convalidata all'avvio del debugger, ma l'utente riceve una notifica dei punti di interruzione non validi senza attendere il caricamento del debugger.
+ Poiché il servizio di linguaggio è a conoscenza del codice sorgente visualizzato, può convalidare i punti di interruzione prima di avviare il debugger. È possibile eseguire l'override del <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo per restituire un intervallo che specifica una posizione valida per un punto di interruzione. Il percorso del punto di interruzione viene ancora convalidato all'avvio del debugger, ma l'utente riceve una notifica dei punti di interruzione non validi senza attendere il caricamento del debugger.
 
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementazione del supporto per la convalida dei punti di interruzioneImplementing Support for Validating Breakpoints
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementazione del supporto per la convalida dei punti di interruzione
 
 - Al <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo viene assegnata la posizione del punto di interruzione. L'implementazione deve decidere se il percorso è valido e indicarlo restituendo un intervallo di testo che identifica il codice associato alla posizione della riga del punto di interruzione.
 
-- Restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> se il percorso <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> è valido o se non è valido.
+- Restituisce <xref:Microsoft.VisualStudio.VSConstants.S_OK> se il percorso è valido o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se non è valido.
 
 - Se il punto di interruzione è valido, l'intervallo di testo viene evidenziato insieme al punto di interruzione.
 
-- Se il punto di interruzione non è valido, viene visualizzato un messaggio di errore nella barra di stato.
+- Se il punto di interruzione non è valido, nella barra di stato viene visualizzato un messaggio di errore.
 
 ### <a name="example"></a>Esempio
- In questo esempio viene <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> illustrata un'implementazione del metodo che chiama il parser per ottenere l'intervallo di codice (se presente) nella posizione specificata.
+ In questo esempio viene illustrata un'implementazione del <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo che chiama il parser per ottenere l'intervallo di codice, se presente, nella posizione specificata.
 
- In questo esempio si presuppone `GetCodeSpan` che <xref:Microsoft.VisualStudio.Package.AuthoringSink> sia stato aggiunto un metodo `true` alla classe che convalida l'intervallo di testo e restituisce se si tratta di una posizione di punto di interruzione valida.
+ In questo esempio si presuppone che sia stato aggiunto un `GetCodeSpan` metodo alla <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe che convalida l'intervallo di testo e restituisce `true` se si tratta di una posizione di punto di interruzione valida.
 
 ```csharp
 using Microsoft VisualStudio;

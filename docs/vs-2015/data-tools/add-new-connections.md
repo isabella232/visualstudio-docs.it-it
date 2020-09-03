@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 44146613fb43b6fc4269741ba09b94629f888d5f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673080"
 ---
 # <a name="add-new-connections"></a>Aggiungere nuove connessioni
@@ -23,7 +23,7 @@ ms.locfileid: "72673080"
 
  Esplora server installati per impostazione predefinita in Visual Studio. Può essere usato per testare le connessioni e visualizzare SQL Server database, tutti gli altri database in cui è installato un provider ADO.NET e alcuni servizi di Azure. Vengono inoltre visualizzati oggetti di basso livello, ad esempio contatori delle prestazioni del sistema, log eventi e code di messaggi. Se un'origine dati non ha un provider ADO.NET, non verrà visualizzata qui, ma è comunque possibile usarla da Visual Studio tramite la connessione a livello di codice.
 
- Cloud Explorer installare questa finestra manualmente come estensione di Visual Studio selezionando **strumenti**  > **estensioni e aggiornamenti**  > **online**  > **raccolta di Visual Studio**. Fornisce funzionalità specializzate per l'esplorazione e la connessione ai servizi di Azure.
+ Cloud Explorer installare questa finestra manualmente come estensione di Visual Studio selezionando **strumenti**  >  **estensioni e aggiornamenti**  >  **online**  >  **Visual Studio Gallery**. Fornisce funzionalità specializzate per l'esplorazione e la connessione ai servizi di Azure.
 
  Esplora oggetti di SQL Server installato con SQL Server Data Tools e visibile dal menu **Visualizza** . Se non viene visualizzata, passare a **programmi e funzionalità** nel pannello di controllo, trovare Visual Studio, quindi selezionare **Cambia** per eseguire di nuovo il programma di installazione dopo aver selezionato la casella di controllo SQL Server Data Tools. Utilizzare **Esplora oggetti di SQL Server** per visualizzare i database SQL (se hanno un provider ADO.NET), creare nuovi database, modificare schemi, creare stored procedure, recuperare stringhe di connessione, visualizzare i dati e altro ancora. I database SQL che non hanno un provider ADO.NET installato non vengono visualizzati qui, ma è comunque possibile connettersi a essi a livello di codice.
 
@@ -34,7 +34,7 @@ ms.locfileid: "72673080"
 
  Verrà visualizzata la finestra di dialogo **Aggiungi connessione** . Qui è stato immesso il nome dell'istanza di SQL Server database locale.
 
- ![Aggiungi nuova connessione](../data-tools/media/raddata-add-new-connection-dialog.png "Finestra di dialogo Aggiungi nuova connessione di raddata")
+ ![Aggiungere una nuova connessione](../data-tools/media/raddata-add-new-connection-dialog.png "Finestra di dialogo Aggiungi nuova connessione di raddata")
 
 ## <a name="change-the-provider"></a>Modificare il provider
  Se l'origine dati non è quella desiderata, fare clic sul pulsante **Cambia** per scegliere una nuova origine dati e/o un nuovo provider di dati ADO.NET. Il nuovo provider potrebbe richiedere le credenziali, a seconda di come è stato configurato.
@@ -49,4 +49,4 @@ ms.locfileid: "72673080"
  Se il test ha esito positivo, si è pronti per creare un' *origine dati*, ovvero un termine di Visual Studio che significa realmente un *modello di dati* basato sul database o sul servizio sottostante.
 
 ## <a name="see-also"></a>Vedere anche
- [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

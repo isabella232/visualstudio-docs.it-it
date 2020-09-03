@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6429f9d9a94d74be48bd1a6305f1bb109a173b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189352"
 ---
 # <a name="overviews-performance-tools"></a>Panoramiche (strumenti di prestazioni)
@@ -21,8 +21,8 @@ ms.locfileid: "68189352"
 
 Questa sezione fornisce una panoramica dei concetti e della terminologia per gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], utilizzabili per misurare le caratteristiche delle prestazioni di un'applicazione in fase di sviluppo.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Panoramica della sessione di prestazioni](../profiling/performance-session-overview.md)  
  Vengono fornite informazioni di base sulla profilatura delle prestazioni con gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)  
@@ -34,10 +34,10 @@ Questa sezione fornisce una panoramica dei concetti e della terminologia per gli
  [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)  
  Vengono fornite informazioni sui valori dei dati restituiti quando si usa il metodo di profilatura della strumentazione.  
   
- [Informazioni sull'allocazione di memoria e i valori dei dati di durata di un oggetto](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [Informazioni sui valori dei dati di allocazione di memoria e durata degli oggetti](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
  Vengono fornite informazioni sui valori dei dati restituiti quando si usa il metodo di profilatura della memoria .NET.  
   
- [Informazioni sui valori dei dati su conflitti di risorse](../profiling/understanding-resource-contention-data-values.md)  
+ [Informazioni sui valori dei dati sui conflitti di risorse](../profiling/understanding-resource-contention-data-values.md)  
  Vengono fornite informazioni sui valori dei dati restituiti quando si usa il metodo di profilatura della concorrenza.  
   
  [Finestra Esplora prestazioni](../profiling/performance-explorer-window.md)  

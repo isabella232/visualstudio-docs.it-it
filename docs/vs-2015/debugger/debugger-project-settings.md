@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di progetto correlate al debugger | Microsoft Docs
+title: Impostazioni progetto debugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189576"
 ---
 # <a name="debugger-project-settings"></a>Impostazioni di progetto correlate al debugger
@@ -34,11 +34,11 @@ Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste im
   
  In questa sezione vengono descritte le opzioni disponibili e viene illustrato come impostarle.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Specificare le impostazioni del debugger](../debugger/how-to-specify-debugger-settings.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: specificare le impostazioni del debugger](../debugger/how-to-specify-debugger-settings.md)  
  Vengono descritte le impostazioni del debugger disponibili nella finestra di dialogo **Opzioni** .  
   
- [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Procedura: impostare le configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md)  
  Vengono descritte le impostazioni **Debug** e **Release** e viene illustrato come passare dall'una all'altra.  
   
  [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  

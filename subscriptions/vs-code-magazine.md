@@ -8,10 +8,10 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio della rivista del codice incluso nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387174"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Rivista di codice inclusa nelle sottoscrizioni di Visual Studio
@@ -21,7 +21,7 @@ CODE Magazine è uno degli sviluppatori di software indipendente leader del sett
 ## <a name="activation-steps"></a>Passaggi di attivazione
 Il processo di configurazione della sottoscrizione di CODE Magazine è semplice.  È sufficiente seguire questa procedura:
 
-1. Visitare[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+1. Visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 2. Individuare il riquadro Magazine del codice nella sezione sviluppo professionale o istruzione del portale e fare clic su **Ottieni codice**.
    > [!div class="mx-imgBorder"]
    > ![Riquadro Magazine del codice](_img/vs-code-magazine/vs-code-magazine-tile.png "Riquadro Magazine del codice")

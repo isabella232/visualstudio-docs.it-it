@@ -1,5 +1,5 @@
 ---
-title: C++app di archivio di analisi del codice statico
+title: App di archivio di analisi del codice statico C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,23 +12,23 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672715"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "windows_and_phone_content")
 
  Lo strumento di analisi del codice disponibile nelle edizioni di Visual Studio Express esamina il codice alla ricerca di un set di errori comuni e di violazioni delle procedure di programmazione ottimali. Gli avvisi di analisi del codice sono diversi rispetto agli errori e agli avvisi del compilatore in quanto durante l'analisi del codice vengono cercati modelli di codice specifici che risultano validi ma che potrebbero causare problemi a te o ad altre persone che usano il codice. L'analisi del codice può inoltre trovare difetti all'interno del codice che di solito sono difficili da individuare tramite l'esecuzione di test. L'esecuzione dello strumento di analisi del codice a intervalli regolari durante il processo di sviluppo può migliorare la qualità dell'app completata.
 
 > [!NOTE]
 > In Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional puoi usare le funzionalità complete degli strumenti di analisi del codice. Vedere [Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice](https://msdn.microsoft.com/library/dd264897.aspx) in MSDN Library.
 
-## <a name="BKMK_Run"></a> Esecuzione dell'analisi del codice
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> Esecuzione dell'analisi del codice
  Per eseguire l'analisi del codice nella soluzione di Visual Studio:
 
 - Dal menu **Genera** scegliere **Esegui analisi del codice sulla soluzione**.
@@ -41,12 +41,12 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
    La soluzione viene compilata e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.
 
-   ![Finestra analisi codice](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![Finestra Analisi codice](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-## <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice
  Per analizzare un avviso specifico, scegliere il titolo dell'avviso nella finestra Analisi codice. L'avviso si espande per visualizzare le informazioni dettagliate sul problema. Quando possibile, l'analisi del codice mostra il numero di riga e la logica dell'analisi che ha portato all'avviso.
 
- ![Avviso di analisi del codice espanso](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
+ ![Avviso analisi codice espanso](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
  Quando espandi un avviso, le righe di codice che hanno provocato l'avviso sono evidenziate nell'editor di Visual Studio Code.
 
@@ -57,7 +57,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 > [!TIP]
 > Puoi rieseguire l'analisi del codice dalla finestra Analisi codice. Scegliere il pulsante **Analizza**, quindi scegliere l'ambito dell'analisi. Puoi rieseguire l'analisi dell'intera soluzione o di un progetto selezionato.
 
-## <a name="BKMK_Suppress"></a> Eliminazione degli avvisi di analisi del codice
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Eliminazione degli avvisi di analisi del codice
  In alcuni casi potresti decidere di non correggere un avviso di analisi del codice. Puoi decidere che risolvere il problema richiede un'eccessiva ricodificazione relativamente alla probabilità che il problema si ripresenti in qualsiasi implementazione realistica del codice. Oppure potresti ritenere che l'analisi utilizzata nell'avviso sia inadeguata per il contesto specifico. Puoi eliminare gli avvisi in modo che non vengano più visualizzati nella finestra Analisi codice.
 
  Per eliminare un avviso:
@@ -68,14 +68,14 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
 3. Scegliere **Elimina messaggio** e quindi scegliere **In origine**.
 
-   L'eliminazione di un messaggio inserisce un `#pragma(warning:`*WarningId*`)` che elimina l'avviso per la riga di codice.
+   L'eliminazione di un messaggio inserisce `#pragma(warning:` *idavviso* `)` che evita l'avviso per la riga di codice.
 
-## <a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice
  Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.
 
- ![Cercare e filtrare la finestra analisi codice](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Finestra Cerca e filtra analisi codice](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-## <a name="Warnings"></a> Avvisi di analisi del codice C++
+## <a name="c-code-analysis-warnings"></a><a name="Warnings"></a> Avvisi di analisi del codice C++
  L'analisi del codice genera gli avvisi seguenti per il codice C++:
 
 |                                      Regola                                      |                                                  Descrizione                                                  |
