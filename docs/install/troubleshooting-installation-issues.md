@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350810"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio
@@ -120,9 +120,9 @@ Se le procedure indicate sopra non consentono di installare o aggiornare corrett
 
 Ecco una tabella dei problemi noti e delle soluzioni alternative che potrebbero essere utili quando si crea un' [installazione offline](create-an-offline-installation-of-visual-studio.md) e quindi si esegue l'installazione da un layout locale.
 
-| Problema       | Elemento                   | Soluzione |
+| Problema       | Item                   | Soluzione |
 | ----------- | ---------------------- | -------- |
-| Gli utenti non anno accesso ai file. | Autorizzazioni (ACL) | Assicurarsi di modificare le autorizzazioni (ACL) in modo da concedere l'accesso in lettura ad altri utenti *prima* di condividere l'installazione offline. |
+| Gli utenti non anno accesso ai file. | Autorizzazioni (ACL) | Assicurarsi di modificare le autorizzazioni (ACL) in modo da concedere l'accesso in lettura ad altri utenti  *prima* di condividere l'installazione offline. |
 | Non è possibile installare nuovi carichi di lavoro, componenti o lingue.  | `--layout`  | Assicurarsi che sia disponibile l'accesso a Internet se si esegue l'installazione da un layout parziale e si selezionano carichi di lavoro, componenti o lingue non scaricati precedentemente nel layout parziale. |
 
 Per altre informazioni su come risolvere i problemi relativi all' [installazione di rete](create-a-network-installation-of-visual-studio.md), vedere [risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
@@ -147,7 +147,7 @@ Per raccogliere i log:
 
 Se le soluzioni fornite in questa Guida alla risoluzione dei problemi non consentono di installare o aggiornare correttamente Visual Studio, è possibile usare l'opzione di supporto [**Chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese) per ottenere ulteriore assistenza.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Ripristinare Visual Studio](repair-visual-studio.md)
 * [Remove Visual Studio ](remove-visual-studio.md) (Rimuovere Visual Studio)

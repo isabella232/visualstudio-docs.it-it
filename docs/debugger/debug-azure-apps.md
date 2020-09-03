@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: fad1a7d1f07009b169480a9e071c5cae8498f600
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350758"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Eseguire il debug dei servizi di Azure in Visual Studio
@@ -33,6 +33,6 @@ ms.locfileid: "85350758"
 
 - Per eseguire il debug remoto di ASP.NET in Azure Service Fabric, vedere [eseguire il debug di un'applicazione Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug in Visual Studio](../debugger/index.yml)

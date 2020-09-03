@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587082"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usare la finestra Risultati metrica codice
@@ -30,9 +30,9 @@ La finestra **Risultati metrica codice** viene visualizzata automaticamente quan
 
 È possibile visualizzare la finestra Risultati metrica codice utilizzando una delle seguenti sequenze di menu:
 
-- Dal menu **analizza** scegliere **Windows** > risultati della **metrica del codice**.
+- Nel menu **analizza** scegliere **Windows**  >  **i risultati della metrica del codice**di Windows.
 
-- Dal menu **Visualizza** scegliere **altre finestre** > risultati della **metrica del codice**.
+- Scegliere **altri**risultati della metrica del codice di Windows dal menu **Visualizza**  >  **Code Metrics Results**.
 
 Viene visualizzata la finestra **Risultati metrica codice** , anche se non contiene alcun risultato.
 
@@ -109,4 +109,4 @@ Per altre informazioni sugli elementi di lavoro Azure Boards, vedere [elementi d
 ## <a name="see-also"></a>Vedere anche
 
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)
-- [Procedura: generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md)
+- [Procedura: generare dati di metrica del codice](../code-quality/how-to-generate-code-metrics-data.md)

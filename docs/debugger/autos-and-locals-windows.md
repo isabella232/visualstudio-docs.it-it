@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350745"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Esaminare le variabili nelle finestre auto e variabili locali
@@ -97,7 +97,7 @@ Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il 
 
 ![Barra degli strumenti posizione di debug](../debugger/media/debuglocationtoolbar.png "Barra degli strumenti Posizione di debug")
 
-## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a>Variabili nella finestra auto (C#, C++, Visual Basic, Python)
+## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a> Variabili nella finestra auto (C#, C++, Visual Basic, Python)
 
 Diversi linguaggi di codice visualizzano variabili diverse nella finestra **auto** .
 
@@ -175,7 +175,7 @@ Per visualizzare i valori restituiti delle `sumVars()` chiamate al `subtractVars
 
   ![Auto valore restituito C #](../debugger/media/autosreturnvaluecsharp2.png "Auto valore restituito C #")
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)

@@ -225,17 +225,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587043"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Risolvere gli errori di accesso ai dati nei forum
 
 È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Di seguito sono riportati alcuni forum relativi ai dati disponibili in MSDN:
 
-- [Controlli dati e data binding di Windows Form](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows Forms i controlli dati e l'associazione dati](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [Forum del set di dati ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
@@ -243,7 +243,7 @@ ms.locfileid: "75587043"
 
 - [Forum di WCF Data Services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [Forum sull'accesso ai dati di SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [Forum di accesso ai dati SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
 - [Forum LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
@@ -253,4 +253,4 @@ Per informazioni su come risolvere i problemi di connettività ai SQL Server, ve
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

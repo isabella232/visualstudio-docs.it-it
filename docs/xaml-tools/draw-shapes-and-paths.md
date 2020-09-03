@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350823"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
@@ -99,7 +99,7 @@ Per modificare una forma in modo analogo alla modifica di un tracciato, converti
 
 ![Combinare tracciati](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|Azione|
+|Number|Action|
 |-|-|
 |![Due forme prima della combinazione](../designers/media/b1_1.png)|Due forme prima della combinazione|
 |![Unisci](../designers/media/b1_2.png)|Unisci|

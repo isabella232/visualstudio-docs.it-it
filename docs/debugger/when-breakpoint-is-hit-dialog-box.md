@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728136"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Finestra di dialogo Quando il punto di interruzione viene raggiunto
 Con questa finestra di dialogo è possibile personalizzare l'azione che si verifica quando viene raggiunto un punto di interruzione.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  **Stampa un messaggio** Stampa un messaggio usando la sintassi DebuggerDisplay. Per ulteriori informazioni, vedere [utilizzo dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
 
  Questa casella di testo supporta anche parole chiave speciali, ad esempio $ADDRESS, che possono essere usate da soli o tra parentesi graffe di un'espressione DebuggerDisplay. Le parole chiave disponibili sono elencate nella finestra di dialogo.
@@ -36,4 +36,4 @@ Con questa finestra di dialogo è possibile personalizzare l'azione che si verif
 
 ## <a name="see-also"></a>Vedere anche
 - [Uso di punti di interruzione](../debugger/using-breakpoints.md)
-- [Uso dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Utilizzo dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
