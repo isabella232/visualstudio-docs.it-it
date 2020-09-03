@@ -1,5 +1,5 @@
 ---
-title: Elemento LocationFieldMRUPrefix (modelli di Visual Studio) Documenti Microsoft
+title: Elemento LocationFieldMRUPrefix (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce86eecbab8c31f16ece4628eff28dc40416a0a9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702817"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelli di Visual Studio)
-Specifica i percorsi utilizzati più di recente (MRU) nella finestra di dialogo **Nuovo progetto** e Aggiungi **nuovo elemento.**
+Specifica i percorsi utilizzati più di recente nella finestra di dialogo **nuovo progetto** e **Aggiungi nuovo elemento** .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,10 +34,10 @@ Specifica i percorsi utilizzati più di recente (MRU) nella finestra di dialogo 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- No.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -46,8 +46,8 @@ Specifica i percorsi utilizzati più di recente (MRU) nella finestra di dialogo 
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|
 
 ## <a name="remarks"></a>Osservazioni
- Questo elemento deve essere utilizzato solo [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)]per i modelli prodotti tramite l'oggetto .
+ Questo elemento deve essere usato solo per i modelli prodotti tramite [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

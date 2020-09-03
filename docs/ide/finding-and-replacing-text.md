@@ -31,10 +31,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590345"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
@@ -53,14 +53,14 @@ La funzionalità di ricerca e sostituzione è disponibile nell'editor, in alcune
 
 ## <a name="find-and-replace-control"></a>Controllo Trova e sostituisci
 
-- Premere **Ctrl**+**F** come collegamento per *trovare* una stringa nel file corrente.
-- Premere **Ctrl**+**H** come collegamento per trovare *e sostituire* una stringa nel file corrente.
+- Premere **CTRL** + **F** come tasto di scelta rapida per *trovare* una stringa nel file corrente.
+- Premere **CTRL** + **H** come collegamento per *trovare e sostituire* una stringa nel file corrente.
 
 Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore destro della finestra dell'editor di codice. Evidenzia immediatamente tutte le occorrenze della stringa di ricerca specificata nel documento corrente. È possibile spostarsi da un'occorrenza all'altra scegliendo il pulsante **Trova successivo** o **Trova precedente** nel controllo di ricerca.
 
 ![Trova e sostituisci in Visual Studio](media/find-and-replace-box.png)
 
-È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto.**
+È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto** .
 
 Per modificare il colore di evidenziazione per le corrispondenze, scegliere il menu **Strumenti**, selezionare **Opzioni**, quindi scegliere **Ambiente** e selezionare **Tipi di carattere e colori**. Nell'elenco **Show settings for** (Mostra impostazioni per), selezionare **Editor di testo**, quindi nell'elenco **Elementi visualizzati**, selezionare **Trova evidenziato (estensione)**.
 
@@ -68,12 +68,12 @@ Per modificare il colore di evidenziazione per le corrispondenze, scegliere il m
 
 È possibile usare il controllo **Trova** nelle finestre di codice o del testo, ad esempio le finestre **Output** e **Risultati ricerca**, selezionando **Modifica** > **Trova e sostituisci** o premendo **CTRL+F**.
 
-Una versione del controllo **Find** è disponibile anche in alcune finestre degli strumenti. Ad esempio, è possibile filtrare l'elenco di controlli nella finestra **Casella degli strumenti** immettendo il testo nella casella di ricerca. Tra le altre finestre degli strumenti che consentono di cercare il relativo contenuto sono incluse **Esplora soluzioni**, **Proprietà** e **Team Explorer**.
+Una versione del controllo di **ricerca** è disponibile anche in alcune finestre degli strumenti. Ad esempio, è possibile filtrare l'elenco di controlli nella finestra **Casella degli strumenti** immettendo il testo nella casella di ricerca. Tra le altre finestre degli strumenti che consentono di cercare il relativo contenuto sono incluse **Esplora soluzioni**, **Proprietà** e **Team Explorer**.
 
 ## <a name="find-in-files-and-replace-in-files"></a>Cerca nei file e Sostituisci nei file
 
-- Premere **Ctrl**+**Maiusc**+**F** come scorciatoia per *trovare* una stringa in più file.
-- Premere **Ctrl**+**Maiusc**+**H** come scorciatoia per trovare e *sostituire* una stringa in più file.
+- Premere **CTRL** + **MAIUSC** + **F** come tasto di scelta rapida per *trovare* una stringa in più file.
+- Premere **CTRL** + **MAIUSC** + **H** come collegamento per *trovare e sostituire* una stringa in più file.
 
 **Find/Replace in Files** (Trova/Sostituisci nei file) funziona come il controllo **Trova e sostituisci**, con la differenza che è possibile definire un ambito per la ricerca. Non solo è possibile cercare il file aperto corrente nell'editor, ma anche tutti i documenti aperti, l'intera soluzione, il progetto corrente e gli insiemi di cartelle selezionati. È inoltre possibile eseguire la ricerca in base all'estensione del nome file. Per accedere alla finestra di dialogo **Find/Replace in Files** (Trova/Sostituisci nei file), selezionare **Trova e sostituisci** dal menu **Modifica** o premere **CTRL**+**MAIUSC**+**F**.
 
@@ -85,7 +85,7 @@ Quando si sceglie **Find All ** (Trova tutti), si apre una finestra **Risultati 
 
 ### <a name="create-custom-search-folder-sets"></a>Creare set personalizzati di cartelle di ricerca
 
-È possibile definire un ambito di ricerca scegliendo il pulsante **Scegli cartelle di ricerca** (sembra **...**) accanto alla casella **Cerca in.** Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca nonché salvare la specifica in modo da poterla usare di nuovo in un secondo tempo.
+È possibile definire un ambito di ricerca scegliendo il pulsante **Seleziona cartelle di ricerca** (simile a **...**) accanto alla casella **Cerca in** . Nella finestra di dialogo **Seleziona cartelle di ricerca**, è possibile specificare un set di cartelle in cui eseguire la ricerca nonché salvare la specifica in modo da poterla usare di nuovo in un secondo tempo.
 
 > [!TIP]
 > Se è stato eseguito il mapping dell'unità di un computer remoto nel computer locale, è possibile specificare cartelle in cui eseguire la ricerca nel computer remoto.
@@ -116,15 +116,15 @@ Per selezionare più punti di inserimento, fare clic o effettuare la prima selez
 
 Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punti di inserimento:
 
-|Tasto di scelta rapida|Azione|
+|Tasto di scelta rapida|Action|
 |-|-|
-|**Premere CTRL**+**ALT** e fare clic su|Aggiungere un punto di inserimento secondario|
-|**Ctrl**+**Alt** : fare doppio clic su|Aggiungere una selezione di parola secondaria|
-|**Premere CTRL**+**Alt** e fare clic e trascinare|Aggiungere una selezione secondaria|
-|**Maiusc**+**Alt**+**.**|Aggiungere il testo successivo corrispondente come selezione|
-|**Ctrl**+**Maiusc**+**Alt**+**,**|Aggiungere tutto il testo corrispondente come selezione|
-|**Maiusc**+**alt**+**,**|Rimuovere l'ultima occorrenza selezionata|
-|**Ctrl**+**Maiusc**+**Alt**+**.**|Ignorare l'occorrenza corrispondente successiva|
+|**CTRL** + **ALT** + clic|Aggiungere un punto di inserimento secondario|
+|**CTRL** + **ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
+|**CTRL** + **ALT** + clic + trascina|Aggiungere una selezione secondaria|
+|**Sposta** + **ALT** + **.**|Aggiungere il testo successivo corrispondente come selezione|
+|**CTRL** + **Sposta** + **ALT** + **,**|Aggiungere tutto il testo corrispondente come selezione|
+|**Sposta** + **ALT** + **,**|Rimuovere l'ultima occorrenza selezionata|
+|**CTRL** + **Sposta** + **ALT** + **.**|Ignorare l'occorrenza corrispondente successiva|
 |**ALT** + clic|Aggiungere una selezione di casella|
 |**ESC** oppure clic|Cancellare tutte le selezioni|
 

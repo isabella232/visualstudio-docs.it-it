@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590254"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
@@ -39,8 +39,8 @@ Per passare direttamente alla pagina di riferimento di .NET per un componente, p
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Accedere ai dati in Visual StudioAccess Data in Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
-- [Visual Studio Data Tools per .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Accedere ai dati in Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
+- [Visual Studio data tools per .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Strumenti di set di dati in Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Associare controlli ai dati in Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

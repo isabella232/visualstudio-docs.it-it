@@ -1,5 +1,5 @@
 ---
-title: Proprietà VSPackages . Documenti Microsoft
+title: Pacchetti VSPackage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 24dec363d261b8dbfa2135dec34e28c247c47251
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703818"
 ---
 # <a name="vspackages"></a>VSPackages
-VSPackage sono moduli software [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che estendono l'ambiente di sviluppo integrato (IDE) fornendo elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione.
+I pacchetti VSPackage sono moduli software che estendono il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) fornendo elementi dell'interfaccia utente, servizi, progetti, editor e finestre di progettazione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Definizione del percorso di file VSPackage nella shell di Visual Studio](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)
@@ -27,7 +27,7 @@ VSPackage sono moduli software [!INCLUDE[vsprvs](../../code-quality/includes/vsp
 
 - [Risorse nei pacchetti VSPackage](../../extensibility/internals/resources-in-vspackages.md)
 
- Viene illustrato come gestire le risorse in VSPackage.Explains how to manage resources in VSPackages.
+ Viene illustrato come gestire le risorse nei pacchetti VSPackage.
 
 - [Procedure consigliate per la sicurezza nei pacchetti VSPackage](../../extensibility/internals/best-practices-for-security-in-vspackages.md)
 
