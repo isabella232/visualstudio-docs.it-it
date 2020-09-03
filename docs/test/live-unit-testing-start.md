@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287012"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introduzione a Live Unit Testing
@@ -273,7 +273,7 @@ In questo modo vengono specificate informazioni sufficienti per un'analisi preli
 
    Live Unit Testing Mostra i risultati aggiornati, che vengono visualizzati anche nella finestra dell'editor di codice.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Live Unit Testing con Visual Studio 2017](live-unit-testing.md)
 - [Domande frequenti su Live Unit Testing](live-unit-testing-faq.md)

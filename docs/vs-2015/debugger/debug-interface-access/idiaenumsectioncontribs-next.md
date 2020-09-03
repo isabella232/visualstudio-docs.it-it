@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18bee6cf8f47aeeadd41c7accc1f33566f564898
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189966"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un determinato numero di contributi vengano effettuati sezione nella sequenza di enumerazione.  
+Recupera un numero specificato di contributi di sezione nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,16 +37,16 @@ HRESULT Next( 
   
 #### <a name="parameters"></a>Parametri  
  celt  
- [in] Il numero di contributi vengano effettuati sezione nell'enumeratore deve essere recuperato.  
+ in Numero di contributi di sezione nell'enumeratore da recuperare.  
   
  rgelt  
- [out] Matrice che deve essere compilato con il [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) gli oggetti che rappresentano i contributi di sezione desiderata.  
+ out Matrice che deve essere riempita con gli oggetti [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) che rappresentano i contributi della sezione desiderata.  
   
  pceltFetched  
- [out] Restituisce il numero di contributi vengano effettuati sezione nell'enumeratore recuperato.  
+ out Restituisce il numero di contributi di sezione nell'enumeratore recuperato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono Nessun più contributi di sezione. In caso contrario, verrà restituito un codice di errore.  
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori contributi alla sezione. In caso contrario, verrà restituito un codice di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   

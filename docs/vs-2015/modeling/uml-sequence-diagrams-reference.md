@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f9b02bbad4fa897404f6c20e12b1705a3ae9ac8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661708"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Diagrammi di sequenza UML: riferimenti
@@ -40,23 +40,23 @@ In Visual Studio un *diagramma di sequenza* Mostra un'interazione, che rappresen
 
  ![Parti di un diagramma di sequenza](../modeling/media/uml-sequence.png "UML_Sequence")
 
-|**Forma**|**Elemento**|**Descrizione**|
+|**Con forme**|**elemento**|**Descrizione**|
 |---------------|-----------------|---------------------|
-|1|**Vita**|Linea verticale che rappresenta la sequenza di eventi che si verificano in un partecipante durante un'interazione, mentre il tempo avanza lungo la linea. Questo partecipante può essere un'istanza di una classe, un componente o un attore.|
-|2|**Attore**|Partecipante esterno al sistema in fase di sviluppo.<br /><br /> È possibile fare in modo che un simbolo attore venga visualizzato nella parte superiore di una linea di vita impostando la relativa proprietà **Actor** .|
-|3\.|**Messaggio sincrono**|Il mittente attende una risposta a un messaggio sincrono prima di continuare. Il diagramma mostra sia la chiamata che il risultato della chiamata. I messaggi sincroni vengono usati per rappresentare chiamate di funzione comuni all'interno di un programma, oltre ad altri tipi di messaggio con un comportamento analogo.|
+|1|**Linea di vita**|Linea verticale che rappresenta la sequenza di eventi che si verificano in un partecipante durante un'interazione, mentre il tempo avanza lungo la linea. Questo partecipante può essere un'istanza di una classe, un componente o un attore.|
+|2|**Actor**|Partecipante esterno al sistema in fase di sviluppo.<br /><br /> È possibile fare in modo che un simbolo attore venga visualizzato nella parte superiore di una linea di vita impostando la relativa proprietà **Actor** .|
+|3|**Messaggio sincrono**|Il mittente attende una risposta a un messaggio sincrono prima di continuare. Il diagramma mostra sia la chiamata che il risultato della chiamata. I messaggi sincroni vengono usati per rappresentare chiamate di funzione comuni all'interno di un programma, oltre ad altri tipi di messaggio con un comportamento analogo.|
 |4|**Messaggio asincrono**|Messaggio che non richiede una risposta prima che il mittente continui. Un messaggio asincrono mostra solo una chiamata dal mittente. Usarlo per rappresentare la comunicazione tra thread separati o la creazione di un nuovo thread.|
-|5|**Occorrenza esecuzione**|Rettangolo ombreggiato verticale che viene visualizzato sulla linea di vita di un partecipante e rappresenta il periodo durante il quale il partecipante esegue un'operazione.<br /><br /> L'esecuzione inizia nel punto in cui il partecipante riceve un messaggio. Se il messaggio di avvio è un messaggio sincrono, l'esecuzione terminerà con una freccia di «ritorno» al mittente.|
+|5|**Occorrenza dell'esecuzione**|Rettangolo ombreggiato verticale che viene visualizzato sulla linea di vita di un partecipante e rappresenta il periodo durante il quale il partecipante esegue un'operazione.<br /><br /> L'esecuzione inizia nel punto in cui il partecipante riceve un messaggio. Se il messaggio di avvio è un messaggio sincrono, l'esecuzione terminerà con una freccia di «ritorno» al mittente.|
 |6|**Messaggio di callback**|Messaggio restituito a un partecipante in attesa del risultato di una chiamata precedente. L'occorrenza dell'esecuzione risultante viene visualizzata sopra quella esistente.|
-|7|**Messaggio automatico**|Messaggio da un partecipante a se stesso. L'occorrenza dell'esecuzione risultante viene visualizzata sopra quella di invio.|
+|7|**Auto-messaggio**|Messaggio da un partecipante a se stesso. L'occorrenza dell'esecuzione risultante viene visualizzata sopra quella di invio.|
 |8|**Crea messaggio**|Messaggio che crea un partecipante. Se un partecipante riceve un messaggio di creazione, dovrebbe essere il primo a riceverlo.|
 |9|**Messaggio trovato**|Messaggio asincrono da un partecipante sconosciuto o non specificato.|
 |10|**Messaggio perso**|Messaggio asincrono a un partecipante sconosciuto o non specificato.|
-|11|**Commentoo**|È possibile allegare un commento a qualsiasi punto di una linea di vita.|
-|12|**Uso interazione**|Include una sequenza di messaggi definiti in un altro diagramma.<br /><br /> Per creare un **uso interazione**, fare clic sullo strumento, quindi trascinare tra le linee di vita che si desidera includere.|
+|11|**Commento**|È possibile allegare un commento a qualsiasi punto di una linea di vita.|
+|12|**Utilizzo interazione**|Include una sequenza di messaggi definiti in un altro diagramma.<br /><br /> Per creare un **uso interazione**, fare clic sullo strumento, quindi trascinare tra le linee di vita che si desidera includere.|
 |13|**Frammento combinato**|Raccolta di frammenti. Ogni frammento può includere uno o più messaggi. Esistono diversi tipi di frammenti combinati. Per altre informazioni, vedere [descrivere il flusso di controllo con frammenti nei diagrammi di sequenza UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).<br /><br /> Per creare un frammento, fare clic con il pulsante destro del mouse su un messaggio, scegliere **Racchiudi tra**e quindi fare clic su un tipo di frammento.|
-|14|**Protezione frammenti**|Può essere usato per dichiarare una condizione rilevante per l'eventuale esecuzione della frammentazione.<br /><br /> Per impostare una protezione, selezionare un frammento, quindi selezionare la protezione e digitare un valore.|
-|**X**|**Evento di distruzione**|Rappresenta il punto in cui l'oggetto viene eliminato o non più accessibile. Viene visualizzato nella parte inferiore di ogni linea di vita.|
+|14|**Protezione del frammento**|Può essere usato per dichiarare una condizione rilevante per l'eventuale esecuzione della frammentazione.<br /><br /> Per impostare una protezione, selezionare un frammento, quindi selezionare la protezione e digitare un valore.|
+|**X**|**Evento di eliminazione**|Rappresenta il punto in cui l'oggetto viene eliminato o non più accessibile. Viene visualizzato nella parte inferiore di ogni linea di vita.|
 ||**Interazione**|Raccolta di messaggi e linee di vita visualizzata nel diagramma di sequenza. Per visualizzare le proprietà di un'interazione, è necessario selezionarla in **Esplora modelli UML**.|
 ||**Diagramma sequenza**|Diagramma che visualizza un'interazione. Per visualizzare le proprietà, fare clic su una parte vuota del diagramma. **Nota:**  I nomi del diagramma di sequenza, l'interazione visualizzata e il file che contiene il diagramma possono essere tutti diversi.|
 

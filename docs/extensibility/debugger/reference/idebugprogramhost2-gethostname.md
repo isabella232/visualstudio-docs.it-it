@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgramHost2::GetHostName . Documenti Microsoft
+title: 'IDebugProgramHost2:: GetHostName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f1bd63d6b53359cf3b86f5e3849cb18bd8367f7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722224"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
-Ottiene il titolo, il nome descrittivo o il nome file del processo di hosting di questo programma.
+Ottiene il titolo, il nome descrittivo o il nome file del processo di hosting del programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int GetHostName( 
 
 ## <a name="parameters"></a>Parametri
 `dwType`\
-[in] Valore dell'enumerazione [GETHOSTNAME_TYPE.](../../../extensibility/debugger/reference/gethostname-type.md)
+in Valore dell'enumerazione [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) .
 
 `pbstrHostName`\
-[fuori] Restituisce il nome richiesto del processo di hosting.
+out Restituisce il nome richiesto del processo di hosting.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- In un'implementazione tipica `dwType` di questo metodo, il parametro viene ignorato e viene restituito un nome descrittivo del computer host. Un'altra possibile implementazione consiste nel passare il `dwType` parametro a una chiamata al [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodo per ottenere il nome.
+ In un'implementazione tipica di questo metodo, il `dwType` parametro viene ignorato e viene restituito un nome descrittivo del computer host. Un'altra possibile implementazione consiste nel passare il `dwType` parametro a una chiamata al metodo [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) per ottenere il nome.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)

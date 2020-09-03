@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2918826d6923efa3db42f4f572c416b9668513a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660894"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
@@ -31,7 +31,7 @@ L'editor del codice di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] include l
 
 - [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.
 
-- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento** o **Racchiudi tra**.
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] -Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e scegliere **Inserisci frammento** o **Racchiudi tra**.
 
 - [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] - La **Selezione frammento di codice** non è disponibile.
 
@@ -45,9 +45,9 @@ L'editor del codice di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] include l
 
 - SQL - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.
 
-  Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'**Elenco cartelle** in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [Procedura dettagliata: creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).
+  Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all' **elenco di cartelle** in cui la **selezione frammenti di codice** analizza i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [Procedura dettagliata: creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  Nome elemento un campo di testo modificabile che Visualizza il nome dell'elemento selezionato nell' **elenco di elementi**. Per eseguire una ricerca incrementale per l'elemento desiderato, iniziare a digitarne il nome in questo campo. Continuare aggiungendo lettere fino a quando l'elemento desiderato non viene selezionato nell'**Elenco elementi**.
 
  Elenco elementi elenco di frammenti di codice disponibili per l'inserimento o un elenco di cartelle contenenti frammenti di codice. Per inserire un frammento di codice o espandere una cartella, selezionare l'elemento desiderato e premere INVIO.

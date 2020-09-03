@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f093cf93c2f67c91fa9eee0085a566a15289684
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602342"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: Visualizzare i numeri di riga nell'editor
@@ -27,16 +27,16 @@ ms.locfileid: "72602342"
 È possibile visualizzare o nascondere la numerazione delle righe nel codice.
 
 > [!NOTE]
-> A seconda delle impostazioni attive, è possibile che le finestre di dialogo e i comandi di menu visualizzati siano diversi da quelli descritti qui. Per modificare le impostazioni, aprire **Strumenti / Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> A seconda delle impostazioni attive, è possibile che le finestre di dialogo e i comandi di menu visualizzati siano diversi da quelli descritti qui. Per modificare le impostazioni, aprire **Strumenti / Importa/Esporta impostazioni**. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="display-line-numbers-in-code"></a>Visualizzare i numeri di riga nel codice
  I numeri di riga non vengono aggiunti al codice; servono solo da riferimento. Se si vogliono stampare i numeri di riga, selezionare la casella di controllo **Includi numeri di riga** nella finestra di dialogo **Stampa**.
 
 #### <a name="to-display-line-numbers-in-code"></a>Per visualizzare i numeri di riga nel codice
 
-1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**. Espandere il nodo **Editor di testo** e selezionare il nodo per il linguaggio in uso o **Tutti i linguaggi** per attivare i numeri di riga in tutti i linguaggi, oppure è possibile digitare il **numero di riga** nella casella **Avvio veloce**.
+1. Sulla barra dei menu scegliere **strumenti**, **Opzioni**. Espandere il nodo **Editor di testo** e selezionare il nodo per il linguaggio in uso o **Tutti i linguaggi** per attivare i numeri di riga in tutti i linguaggi, In alternativa, è possibile digitare il **numero di riga** nella casella **avvio veloce** .
 
-2. ![Opzioni per la visualizzazione di numeri di riga nell'editor](../../ide/reference/media/vs-displaylinenumbers.png "|::ref1::|")
+2. ![Opzioni per la visualizzazione di numeri di riga nell'editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")
 
 > [!NOTE]
 > A seconda del linguaggio o delle impostazioni, è possibile che sia necessario selezionare la casella di controllo **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni** per visualizzare il sottonodo **Tutti i linguaggi**.

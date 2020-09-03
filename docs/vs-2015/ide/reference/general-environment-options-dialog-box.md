@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83fc6adeba0529be03a9a982713d0584a2a7bc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661267"
 ---
 # <a name="general-environment-options-dialog-box"></a>Generale, Ambiente, finestra di dialogo Opzioni
@@ -40,7 +40,7 @@ ms.locfileid: "72661267"
 Usare questa pagina per modificare i temi di colori, le impostazioni della barra di stato e le associazioni dell'estensione di file, tra le altre opzioni, per l'ambiente di sviluppo integrato (IDE). Per accedere alla finestra di dialogo **Opzioni**, aprire il menu **Strumenti**, scegliere **Opzioni**, aprire la cartella **Ambiente** e scegliere la pagina **Generale**. Se la pagina non viene visualizzata nell'elenco, selezionare la casella di controllo **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, aprire il menu **Strumenti** e quindi scegliere **Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, aprire il menu **Strumenti** e quindi scegliere **Importa/Esporta impostazioni**. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="visual-experience"></a>Esperienza visiva
  **Tema colori** Scegliere il tema colorato **blu**, **chiaro** o **scuro** per l'IDE.
@@ -56,7 +56,7 @@ Usare questa pagina per modificare i temi di colori, le impostazioni della barra
  **Usa accelerazione grafica hardware se disponibile** Usa l'accelerazione grafica hardware, se disponibile, piuttosto che l'accelerazione software.
 
 ## <a name="other"></a>Altro
- **Elementi nel menu Finestra**  Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10.
+ **Elementi nel menu Finestra ** Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10.
 
  **Elementi negli elenchi degli ultimi file usati** Consente di personalizzare il numero dei file e dei progetti usati più di recente visualizzati nel menu **File**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10. Questa funzionalità offre un modo semplice per recuperare progetti e file usati di recente.
 
@@ -71,4 +71,4 @@ Usare questa pagina per modificare i temi di colori, le impostazioni della barra
  Questa opzione può essere utile se sono installate due versioni di Visual Studio nello stesso computer e successivamente viene disinstallata una delle versioni. Dopo aver effettuato la disinstallazione, le icone per i file di Visual Studio non vengono più visualizzate in Esplora file. Inoltre, Windows non rileva più Visual Studio come applicazione predefinita per la modifica di questi file. Questa opzione consente di ripristinare tali associazioni.
 
 ## <a name="see-also"></a>Vedere anche
- Finestra di [dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md) [personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)
+ [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md) [Personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -10,10 +10,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84f74b4718a7f976b386197a79692256ab49caa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659129"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procedura: utilizzare la ricerca in Progettazione del flusso di lavoro
@@ -26,7 +26,7 @@ Per facilitare la creazione di flussi di lavoro più ampi e complessi, è possib
 
 - Variabili
 
-- argomenti
+- Argomenti
 
 - Espressioni
 
@@ -38,7 +38,7 @@ Per facilitare la creazione di flussi di lavoro più ampi e complessi, è possib
 
 3. Il termine di ricerca è posizionato nel flusso di lavoro corrente. Nella schermata seguente viene illustrato un nome visualizzato dell'attività che si trova nella finestra di progettazione.
 
-     ![Risultato della ricerca nella Progettazione flussi di lavoro](../workflow-designer/media/designersearch.png "DesignerSearch")
+     ![Risultato della ricerca nella finestra di progettazione flussi di lavoro](../workflow-designer/media/designersearch.png "DesignerSearch")
 
 ## <a name="find-in-files"></a>Cercare nei file
  Tramite l'uso di Cerca nei file è possibile trovare le stringhe nei file del flusso di lavoro, inclusi i file XAML.
@@ -49,4 +49,4 @@ Per facilitare la creazione di flussi di lavoro più ampi e complessi, è possib
 
 2. Immettere l'elemento di ricerca nella casella di testo **trova** e fare clic su **trova tutto**
 
-3. Il risultato della ricerca verrà visualizzato nella visualizzazione dei**Risultati della ricerca** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Facendo doppio clic su un elemento del risultato verrà visualizzata l'attività contenente la corrispondenza nella finestra di progettazione del flusso di lavoro.
+3. Il risultato della ricerca verrà visualizzato nella visualizzazione dei [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Risultati della ricerca** . Facendo doppio clic su un elemento del risultato verrà visualizzata l'attività contenente la corrispondenza nella finestra di progettazione del flusso di lavoro.

@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsegments | Microsoft Docs
+title: 'IDiaEnumSegments:: Clone | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1def1f595b1b6afcedc36612f4e1c9cf33882b02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189938"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
@@ -35,10 +35,10 @@ HRESULT Clone ( 
   
 #### <a name="parameters"></a>Parametri  
  ppenum  
- [out] Restituisce un [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md) oggetto che contiene un duplicato dell'enumeratore. I segmenti non vengano duplicati, solo l'enumeratore.  
+ out Restituisce un oggetto [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md) che contiene un duplicato dell'enumeratore. I segmenti non vengono duplicati, ma solo l'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

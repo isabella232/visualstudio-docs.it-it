@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ff5e620d4c53889afe17274364d6f92936025d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672733"
 ---
 # <a name="list-disassembly-command"></a>Comando Elenca disassembly
@@ -34,20 +34,20 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 [/linenumbers:yes|no]
 ```
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  Ogni opzione può essere richiamata usando la forma completa o una forma breve.
 
  /Count: `number` [o]/c: `number` [o]/length: `number` [o]/l: `number` facoltativo. Numero di istruzioni da visualizzare. Il valore predefinito è 8.
 
- /endaddress: `expression` [o]/e: `expression` facoltativa. Indirizzo in corrispondenza del quale interrompere il disassembly.
+ /endaddress: `expression` [o]/e: `expression` facoltativo. Indirizzo in corrispondenza del quale interrompere il disassembly.
 
- /codebytes: `yes`&#124; `no` [o]/bytes: `yes`&#124; `no` [o]/B: `yes`&#124; `no` facoltativo. Indica se visualizzare i byte di codice. Il valore predefinito è `no`.
+ /codebytes: `yes`&#124;`no` [o]/bytes: `yes`&#124;`no` [o]/b: `yes`&#124;`no` facoltativo. Indica se visualizzare i byte di codice. Il valore predefinito è `no`.
 
- /Source: `yes`&#124; `no` [o]/s: `yes`&#124; `no` facoltativo. Indica se visualizzare il codice sorgente. Il valore predefinito è `no`.
+ /Source: `yes`&#124;`no` [o]/s: `yes`&#124;`no` facoltativa. Indica se visualizzare il codice sorgente. Il valore predefinito è `no`.
 
- /SymbolNames: `yes`&#124; `no` [o]/names: `yes`&#124; `no` [o]/N: `yes`&#124; `no` facoltativo. Indica se visualizzare i nomi dei simboli. Il valore predefinito è `yes`.
+ /SymbolNames: `yes`&#124;`no` [o]/names: `yes`&#124;`no` [o]/n: `yes`&#124;`no` facoltativo. Indica se visualizzare i nomi dei simboli. Il valore predefinito è `yes`.
 
- [opzione/linenumbers: `yes`&#124; `no`] Opzionale. Abilita la visualizzazione dei numeri di riga associati al codice sorgente. L'opzione /source deve avere un valore di `yes` per usare l'opzione /linenumbers.
+ [opzione/linenumbers: `yes`&#124;`no` ] facoltativo. Abilita la visualizzazione dei numeri di riga associati al codice sorgente. L'opzione /source deve avere un valore di `yes` per usare l'opzione /linenumbers.
 
 ## <a name="example"></a>Esempio
 

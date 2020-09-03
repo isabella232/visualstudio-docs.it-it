@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8a999ca11427533690628fb92f28e93d22cf0971
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255910"
 ---
 # <a name="create-outlook-form-regions"></a>Creazione di aree del modulo di Outlook
@@ -28,7 +28,7 @@ ms.locfileid: "71255910"
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- In questo argomento vengono fornite le seguenti informazioni:
+ Questo argomento contiene informazioni sui seguenti aspetti:
 
 - [Vantaggi dell'uso delle aree del modulo](#Enhance)
 
@@ -46,7 +46,7 @@ ms.locfileid: "71255910"
 
 - [Distribuire un'area del modulo](#Deploying)
 
-## <a name="Enhance"></a>Vantaggi dell'uso delle aree del modulo
+## <a name="advantages-of-using-form-regions"></a><a name="Enhance"></a> Vantaggi dell'uso delle aree del modulo
  Le aree del modulo offrono numerosi miglioramenti rispetto allo sviluppo di moduli Outlook tradizionali:
 
 - Personalizzare la pagina predefinita di qualsiasi modulo standard.
@@ -59,10 +59,10 @@ ms.locfileid: "71255910"
 
   Per altre informazioni, vedere [personalizzare le pagine del modulo e le aree del modulo](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).
 
-## <a name="Adding"></a>Aggiungere un'area del modulo di Outlook al progetto
+## <a name="add-an-outlook-form-region-to-your-project"></a><a name="Adding"></a> Aggiungere un'area del modulo di Outlook al progetto
  È possibile utilizzare la procedura guidata **nuova area del modulo di Outlook** per progettare una nuova area del modulo o importare un'area del modulo progettata in Outlook. È anche possibile riutilizzare un'area del modulo esistente, precedentemente usata in un altro progetto di componente aggiuntivo VSTO di Outlook.
 
-### <a name="CreatingFormRegion"></a>Creare una nuova area del modulo usando la procedura guidata
+### <a name="create-a-new-form-region-by-using-the-wizard"></a><a name="CreatingFormRegion"></a> Creare una nuova area del modulo usando la procedura guidata
  Per creare un'area del modulo, aggiungere un elemento **area del modulo di Outlook** a un progetto di componente aggiuntivo VSTO di Outlook. Viene avviata la procedura guidata **nuova area del modulo di Outlook** .
 
  Usare la procedura guidata per indicare se si vuole progettare una nuova area del modulo o importare un'area del modulo progettata in Outlook. Per altre informazioni sulla progettazione di una nuova area del modulo, vedere [usare la finestra di progettazione dell'area del modulo](#UsingFormRegionDesigner). Per altre informazioni sull'uso di un'area del modulo progettata in Outlook, vedere [importare un'area del modulo progettata in Outlook](#UsingFormRegionDesignedOutlook).
@@ -76,9 +76,9 @@ ms.locfileid: "71255910"
 |Sostituzione|Aggiunge l'area del modulo come una nuova pagina che sostituisce la pagina predefinita di un modulo di Outlook.|
 |Sostituzione completa|Sostituisce l'intero modulo di Outlook con l'area del modulo.|
 
- È anche possibile usare la procedura guidata per specificare le condizioni di visualizzazione e selezionare il tipo di modulo da estendere. Per altre informazioni, vedere [Procedura: Aggiungere un'area del modulo a un progetto](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)di componente aggiuntivo di Outlook.
+ È anche possibile usare la procedura guidata per specificare le condizioni di visualizzazione e selezionare il tipo di modulo da estendere. Per altre informazioni, vedere [procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
- Le selezioni effettuate nella procedura guidata influiscono sulle opzioni disponibili in altre pagine della procedura guidata. Ad esempio, se si seleziona **adiacente** o **separato** nella pagina **Crea una nuova area del modulo di Outlook** , i campi **titolo** e **Descrizione** non sono disponibili nel **testo descrittivo e selezionare la visualizzazione pagina Preferenze** . Questo avviene perché Outlook non usa questi campi quando viene visualizzata un'area del modulo adiacente o separata.
+ Le selezioni effettuate nella procedura guidata influiscono sulle opzioni disponibili in altre pagine della procedura guidata. Ad esempio, se si seleziona **adiacente** o **separato** nella pagina **Crea una nuova area del modulo di Outlook** , i campi **titolo** e **Descrizione** non saranno disponibili nella pagina **fornire un testo descrittivo e selezionare le preferenze di visualizzazione** . Questo avviene perché Outlook non usa questi campi quando viene visualizzata un'area del modulo adiacente o separata.
 
 #### <a name="form-region-files"></a>File dell'area del modulo
  Quando si completa la procedura guidata **nuova area del modulo di Outlook** , Visual Studio aggiunge automaticamente i file seguenti al progetto:
@@ -101,12 +101,12 @@ ms.locfileid: "71255910"
 
  La maggior parte della classe factory dell'area del modulo è implementata nel file di Progettazione aree di form. Tuttavia, il gestore eventi `FormRegionInitializing` è esposto nel file di codice dell'area del modulo e può essere usato per specificare se l'area del modulo deve essere visualizzata in Outlook. Per altre informazioni, vedere [gestire gli eventi dell'area del modulo](#HandlingFormRegionEvents).
 
-### <a name="AddingExistingFormRegion"></a>Aggiungere un'area del modulo esistente al progetto
+### <a name="add-an-existing-form-region-to-your-project"></a><a name="AddingExistingFormRegion"></a> Aggiungere un'area del modulo esistente al progetto
  Un'area del modulo di Outlook di un altro progetto di Outlook può essere riutilizzata nel progetto corrente di componente aggiuntivo VSTO per Outlook con la finestra di dialogo **Aggiungi elemento esistente** .
 
- L'area del modulo esistente deve avere un file di codice ( *. vb* o *. cs*); non è possibile aggiungere file con*estensione OFS*(Outlook Form Storage) tramite la finestra di dialogo **Aggiungi elemento esistente** . Tuttavia, è possibile creare un'area del modulo nuova importando un file ofs (Outlook From Storage). Per altre informazioni, vedere [Procedura: Aggiungere un'area del modulo a un progetto](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)di componente aggiuntivo di Outlook.
+ L'area del modulo esistente deve avere un file di codice (*. vb* o *. cs*); non è possibile aggiungere file con*estensione OFS*(Outlook Form Storage) tramite la finestra di dialogo **Aggiungi elemento esistente** . Tuttavia, è possibile creare un'area del modulo nuova importando un file ofs (Outlook From Storage). Per altre informazioni, vedere [procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-## <a name="UsingFormRegionDesigner"></a>Usare la finestra di progettazione dell'area del modulo
+## <a name="use-the-form-region-designer"></a><a name="UsingFormRegionDesigner"></a> Usare la finestra di progettazione dell'area del modulo
  Progettazione aree di form consente di configurare il layout e l'aspetto di un'area del modulo. È possibile trascinare i controlli gestiti sulla superficie della finestra di progettazione, fare doppio clic su controlli per aprire i gestori eventi e impostare le proprietà nella finestra **Proprietà** .
 
 > [!NOTE]
@@ -124,16 +124,16 @@ ms.locfileid: "71255910"
 
   Progettazione aree di form supporta solo i controlli gestiti. Non è possibile aggiungere controlli nativi di Outlook.
 
-## <a name="UsingFormRegionDesignedOutlook"></a>Importare un'area del modulo progettata in Outlook
+## <a name="import-a-form-region-designed-in-outlook"></a><a name="UsingFormRegionDesignedOutlook"></a> Importare un'area del modulo progettata in Outlook
  Quando si progetta in Outlook, è possibile aggiungere all'area del modulo i controlli nativi di Outlook che consentono di effettuare associazioni ai dati di Outlook in fase di progettazione. Tuttavia, non si potrà usare in seguito Progettazione aree di form per aggiungere i controlli gestiti o modificare la progettazione dell'area del modulo.
 
- È possibile importare aree del modulo in un progetto di componente aggiuntivo VSTO di Outlook usando la procedura guidata **nuova area del modulo di Outlook** . Nella pagina **selezionare la modalità di creazione dell'area del modulo** selezionare **Importa un file OFS (Outlook Form Storage)** . È quindi possibile passare al percorso di un file*OFS*(Outlook Form Storage file). Outlook salva le aree del modulo come file *OFS* .
+ È possibile importare aree del modulo in un progetto di componente aggiuntivo VSTO di Outlook usando la procedura guidata **nuova area del modulo di Outlook** . Nella pagina **selezionare la modalità di creazione dell'area del modulo** selezionare **Importa un file OFS (Outlook Form Storage)**. È quindi possibile passare al percorso di un file*OFS*(Outlook Form Storage file). Outlook salva le aree del modulo come file *OFS* .
 
  La procedura guidata **nuova area del modulo di Outlook** copia il file *OFS* nella directory del progetto e aggiunge i riferimenti al controllo al file di progettazione dell'area del modulo. È possibile quindi gestire gli eventi di controllo nel file di codice dell'area del modulo.
 
  Per gestire gli eventi in un progetto Visual Basic, selezionare un evento dall'elenco dei nomi di metodo nella parte superiore dell'editor di codice.
 
- Per gestire gli eventi in un progetto C#, sottoscrivere gli eventi di controllo nel metodo <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Per altre informazioni, vedere [Procedura: Sottoscrivere e annullare la sottoscrizione di &#40;eventi&#35; C Guida&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)alla programmazione.
+ Per gestire gli eventi in un progetto C#, sottoscrivere gli eventi di controllo nel metodo <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Per ulteriori informazioni, vedere [procedura: sottoscrivere e annullare la sottoscrizione di eventi &#40;&#35; Guida di programmazione di C&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).
 
  È possibile modificare le proprietà dell'area del modulo nel metodo `InitializeManifest` della classe factory dell'area del modulo.
 
@@ -143,21 +143,21 @@ ms.locfileid: "71255910"
 ### <a name="update-an-imported-form-regions-design"></a>Aggiornare la progettazione di un'area del modulo importata
  È possibile aggiungere, rimuovere o modificare i controlli dell'area del modulo. Prima di eseguire queste operazioni, effettuare il backup del codice aggiunto al file di codice dell'area del modulo. Aprire quindi il file *OFS* in Outlook, modificare l'area del modulo e quindi salvare le modifiche. Usare la procedura guidata **nuova area del modulo di Outlook** per importare il file *OFS* modificato. È quindi possibile incollare il codice nel file di codice della nuova area del modulo.
 
-## <a name="AddingCustomCode"></a>Aggiungere codice personalizzato a un'area del modulo
+## <a name="add-custom-code-to-a-form-region"></a><a name="AddingCustomCode"></a> Aggiungere codice personalizzato a un'area del modulo
  Lo spazio dei nomi <xref:Microsoft.Office.Tools.Outlook> fornisce l'accesso alle classi che rappresentano l'area del modulo, all'elemento di Outlook che visualizza l'area del modulo e ad altri elementi utili. L'elemento **area del modulo di Outlook** aggiunge automaticamente un riferimento a questo assembly nel progetto e inserisce l'istruzione **using** o **Imports** appropriata all'inizio del file di codice dell'area del modulo.
 
  È possibile usare classi, metodi e proprietà nello spazio dei nomi `Microsoft.Office.Interop.Outlook` per eseguire la maggior parte delle attività di programmazione di Outlook. Per ulteriori informazioni sul modello a oggetti di Outlook, vedere [Cenni preliminari sul modello](../vsto/outlook-object-model-overview.md)a oggetti di Outlook. Per esempi di attività tipiche che usano il modello a oggetti di Outlook, vedere [soluzioni di Outlook](../vsto/outlook-solutions.md).
 
-### <a name="HandlingFormRegionEvents"></a>Gestisci eventi area del modulo
+### <a name="handle-form-region-events"></a><a name="HandlingFormRegionEvents"></a> Gestisci eventi area del modulo
  L'elemento **area del modulo di Outlook** aggiunge automaticamente i tre gestori eventi seguenti al file di codice dell'area del modulo.
 
-|event|Descrizione|
+|Event|Descrizione|
 |-----------|-----------------|
-|FormRegionInitializing|Si verifica prima dell'inizializzazione dell'area del form. È possibile selezionare le condizioni di questo gestore eventi per determinare se l'area del modulo deve essere visualizzata in Outlook. Per altre informazioni, vedere [Procedura: Impedire a Outlook di visualizzare un'area](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)del modulo.|
+|FormRegionInitializing|Si verifica prima dell'inizializzazione dell'area del form. È possibile selezionare le condizioni di questo gestore eventi per determinare se l'area del modulo deve essere visualizzata in Outlook. Per altre informazioni, vedere [procedura: impedire la visualizzazione di un'area del modulo in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|
 |FormRegionShowing|Si verifica dopo la creazione di un'istanza dell'area del modulo, ma prima della visualizzazione dell'area del modulo.|
 |FormRegionClosed|Si verifica prima della chiusura dell'area del modulo.|
 
-## <a name="Building"></a>Compilare il progetto
+## <a name="build-the-project"></a><a name="Building"></a> Compilare il progetto
  Quando si compila un progetto di componente aggiuntivo VSTO per Outlook contenente un'area del modulo, Visual Studio aggiunge le informazioni seguenti al Registro di sistema:
 
 - Una chiave per ogni classe di messaggi associata a una o più aree del modulo.
@@ -166,12 +166,12 @@ ms.locfileid: "71255910"
 
   Outlook usa queste informazioni per caricare le aree del modulo.
 
-## <a name="Debugging"></a>Eseguire il debug di un'area del modulo
+## <a name="debug-a-form-region"></a><a name="Debugging"></a> Eseguire il debug di un'area del modulo
  È possibile eseguire il debug di un componente aggiuntivo VSTO di Outlook contenente un'area del modulo proprio come se si trattasse del debug di altri progetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. All'avvio del debugger di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Visual Studio avvia automaticamente Outlook.
 
  Per visualizzare l'area del modulo è necessario aprire l'elemento di Outlook appropriato. Ad esempio, se un'area del modulo adiacente viene aggiunta alla fine di un elemento di posta, aprire un elemento di posta.
 
-## <a name="Deploying"></a>Distribuire un'area del modulo
+## <a name="deploy-a-form-region"></a><a name="Deploying"></a> Distribuire un'area del modulo
  Le aree del modulo sono distribuite automaticamente con il componente aggiuntivo VSTO di Outlook associato. Non è quindi necessario eseguire un'attività particolare per distribuire un'area del modulo. Per altre informazioni sulla distribuzione di componenti aggiuntivi VSTO, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -179,11 +179,11 @@ ms.locfileid: "71255910"
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Linee guida per la creazione di aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)|Fornisce informazioni che consentono di ottimizzare le aree del modulo ed evitare eventuali problemi.|
-|[Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Viene illustrato come creare un'area del modulo per estendere un modulo standard o personalizzato Microsoft Office Outlook tramite la procedura guidata **nuova area del modulo di Outlook** .|
+|[Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Viene illustrato come creare un'area del modulo per estendere un modulo standard o personalizzato Microsoft Office Outlook tramite la procedura guidata **nuova area del modulo di Outlook** .|
 |[Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Illustra come specificare quali elementi di Microsoft Office Outlook consentono di visualizzare un'area del modulo associando l'area del modulo alla classe di messaggio di ogni elemento.|
-|[Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)|Mostra come progettare un'area del modulo personalizzata che viene visualizzata come una nuova pagina nella finestra di controllo di un contatto.|
-|[Procedura dettagliata: Importare un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Illustra come progettare un'area del modulo in Microsoft Office Outlook e quindi importare l'area del modulo in un progetto di componente aggiuntivo VSTO di Outlook usando la procedura guidata **nuova area del modulo di Outlook** .|
+|[Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)|Mostra come progettare un'area del modulo personalizzata che viene visualizzata come una nuova pagina nella finestra di controllo di un contatto.|
+|[Procedura dettagliata: importare un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Illustra come progettare un'area del modulo in Microsoft Office Outlook e quindi importare l'area del modulo in un progetto di componente aggiuntivo VSTO di Outlook usando la procedura guidata **nuova area del modulo di Outlook** .|
 |[Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)|Descrive come scrivere codice per mostrare, nascondere o modificare i controlli presenti in un'area del modulo e consentire agli utenti di eseguire il codice da altre aree del progetto usando la classe `Globals`.|
-|[Procedura: Impedisci a Outlook di visualizzare un'area del modulo](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Illustra come impedire a Microsoft Office Outlook di visualizzare un'area del modulo per un particolare elemento.|
+|[Procedura: impedire la visualizzazione di un'area del modulo in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Illustra come impedire a Microsoft Office Outlook di visualizzare un'area del modulo per un particolare elemento.|
 |Illustra come accedere all'elemento di Outlook in cui viene visualizzata un'area del modulo.|
 |[Azioni personalizzate nelle aree del modulo di Outlook](../vsto/custom-actions-in-outlook-form-regions.md)|Descrive come consentire agli utenti di rispondere a un elemento di Outlook.|

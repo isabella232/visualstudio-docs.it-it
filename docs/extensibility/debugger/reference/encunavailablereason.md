@@ -1,5 +1,5 @@
 ---
-title: Proprietà EncUnavailableReason . Documenti Microsoft
+title: EncUnavailableReason | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737164"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!`Rappresenta i motivi per cui **Modifica e continuazione** non è disponibile.
+`This is for internal use only!` Rappresenta i motivi per cui la **modifica e la continuazione** non sono disponibili.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,33 +54,33 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>Campi
 `ENCUN_NONE`\
-Nessun motivo specifico per cui Modifica e continuazione non è disponibile.
+Nessun motivo specifico per cui modifica e continuazione non è disponibile.
 
 `ENCUN_INTEROP`\
-Modifica e continuazione non è disponibile durante una chiamata InterOp.
+La funzionalità modifica e continuazione non è disponibile durante una chiamata di interoperabilità.
 
 `ENCUN_SQLCLR`\
-Modifica e continuazione non è disponibile durante una chiamata di procedura SQL che utilizza Common Language Runtime (CLR).
+La funzionalità modifica e continuazione non è disponibile durante una chiamata di procedura SQL che utilizza Common Language Runtime (CLR).
 
 `ENCUN_MINIDUMP`\
-Modifica e continuazione non è disponibile durante l'elaborazione di un minidump.
+La funzionalità modifica e continuazione non è disponibile durante l'elaborazione di un mini dump.
 
 `ENCUN_EMBEDDED`\
-Modifica e continuazione non è disponibile durante l'elaborazione del codice incorporato.
+La funzionalità modifica e continuazione non è disponibile durante l'elaborazione di codice incorporato.
 
 `ENCUN_ATTACH`\
-Modifica e continuazione non è disponibile perché la sessione è stata collegata al debugger non avviata dal debugger.
+La funzionalità modifica e continuazione non è disponibile perché la sessione è stata collegata a, non avviata dal debugger.
 
 `ENCUN_WIN64`\
-Modifica e continuazione non è disponibile durante l'elaborazione di codice Windows a 64 bit.
+La funzionalità modifica e continuazione non è disponibile durante l'elaborazione del codice Windows a 64 bit.
 
 ## <a name="remarks"></a>Osservazioni
-Questa enumerazione è per [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]uso interno solo da parte di . I metodi [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implementati da `E_NOTIMPL`un fornitore di porte personalizzato devono sempre restituire .
+Questa enumerazione è per uso interno solo da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . I metodi [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implementati da un fornitore di porte personalizzato devono sempre restituire `E_NOTIMPL` .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.idl
+Intestazione: msdbg. idl
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

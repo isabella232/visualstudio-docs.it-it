@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5bc4566c1ea520ac1050227ac8e4c0aee22e617
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604955"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Procedura: creare una libreria di attività del flusso di lavoro (legacy)
@@ -27,7 +27,7 @@ Seguire questi passaggi per creare un progetto libreria attività flussi di lavo
 
 1. Avviare Visual Studio.
 
-2. Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
+2. Scegliere **Nuovo** dal menu **File**e quindi selezionare **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 

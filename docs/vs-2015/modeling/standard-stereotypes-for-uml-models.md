@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a16c68b3b14be57fb0a6a45c740e5420a82c2ddf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661044"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Stereotipi standard per modelli UML
@@ -27,13 +27,13 @@ ms.locfileid: "72661044"
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="the-standard-profiles"></a>Profili standard
- I profili seguenti sono disponibili in un'edizione supportata di Visual Studio non appena viene installata.
+ I seguenti profili sono disponibili in un'edizione supportata di Visual Studio subito dopo l'installazione.
 
 |Profilo|Scopo|
 |-------------|-------------|
 |[Profilo standard UML L2](#L2)|Set standard di stereotipi che possono essere usati per aggiungere altre informazioni su un elemento o una relazione.|
 |[Profilo standard UML L3](#L3)|Set standard di stereotipi che possono essere usati per aggiungere altre informazioni su un elemento o una relazione.|
-|[C#Profilo](#NetProfile)|Se si vuole che una classe o un altro elemento in un modello UML rappresenti il codice programma, è possibile indicarlo applicando uno degli stereotipi del profilo C#.<br /><br /> Questi stereotipi inoltre aggiungono le proprietà agli elementi del modello.|
+|[Profilo C#](#NetProfile)|Se si vuole che una classe o un altro elemento in un modello UML rappresenti il codice programma, è possibile indicarlo applicando uno degli stereotipi del profilo C#.<br /><br /> Questi stereotipi inoltre aggiungono le proprietà agli elementi del modello.|
 
  Quando si crea un nuovo modello UML, i profili standard UML L2 e L3 vengono collegati al modello, a meno che non si rimuovano i collegamenti.
 
@@ -71,47 +71,47 @@ ms.locfileid: "72661044"
 
 3. Alcuni stereotipi consentono di impostare i valori di altre proprietà per l'elemento del modello. Per visualizzare queste proprietà, espandere la proprietà **stereotipi** .
 
-### <a name="L2"></a>Profilo standard UML L2
+### <a name="uml-standard-profile-l2"></a><a name="L2"></a> Profilo standard UML L2
  I seguenti stereotipi possono essere usati per specializzare il significato degli elementi del modello UML, a meno che il collegamento al profilo non sia stato rimosso dal modello.
 
  Il significato esatto di questi stereotipi è determinato dalle convenzioni locali e dagli strumenti che potrebbero essere usati per elaborare il modello.
 
 |Stereotipo|Si applica a|Significato|
 |----------------|----------------|-------------|
-|ausiliario|Class|Classe che supporta un'altra classe, in genere implementando la logica aggiuntiva. L'altra classe potrebbe avere lo stereotipo «focus».|
-|chiama|Dipendenza|La classe client chiama le operazioni del fornitore.|
-|crea|Dipendenza|La classe client crea le istanze del fornitore.|
-|crea|Messaggio|Il mittente crea il ricevitore.|
-|crea|Operazione|Questa operazione è un costruttore.|
+|ausiliario|Classe|Classe che supporta un'altra classe, in genere implementando la logica aggiuntiva. L'altra classe potrebbe avere lo stereotipo «focus».|
+|chiamare|Dipendenza|La classe client chiama le operazioni del fornitore.|
+|create|Dipendenza|La classe client crea le istanze del fornitore.|
+|create|Message|Il mittente crea il ricevitore.|
+|create|Operazione|Questa operazione è un costruttore.|
 |deriva|Dipendenza|L'elemento client viene calcolato completamente o parzialmente dal fornitore.|
 |elimina|Operazione|L'operazione elimina l'istanza.|
 |documento|Elemento|«file» che non è un'origine o un eseguibile.|
-|entità|Componente|Il componente rappresenta un concetto di business.|
+|Entità|Componente|Il componente rappresenta un concetto di business.|
 |eseguibile|Elemento|«file» eseguibile.|
 |file|Elemento|File fisico.|
-|stato attivo|Class|Classe che definisce la logica di business principale, supportata da diverse classi «auxiliary».|
+|stato attivo|Classe|Classe che definisce la logica di business principale, supportata da diverse classi «auxiliary».|
 |framework|Pacchetto|Questo pacchetto definisce uno schema progettuale riutilizzabile.|
 |implementa|Componente|Implementazione di uno stereotipo «specification».|
-|implementationClass|Class|La classe descrive un'implementazione e ogni istanza di runtime dispone di una classe di implementazione fissa. Si differenzia da «type».|
+|implementationClass|Classe|La classe descrive un'implementazione e ogni istanza di runtime dispone di una classe di implementazione fissa. Si differenzia da «type».|
 |crea istanza|Dipendenza|Il client crea le istanze del fornitore.|
-|libreria|Elemento|«file» di libreria.|
-|metaclass|Class|Anche le istanze di questa classe sono classi.|
+|library|Elemento|«file» di libreria.|
+|metaclass|Classe|Anche le istanze di questa classe sono classi.|
 |modelLibrary|Pacchetto|Contiene gli elementi del modello che devono essere riutilizzati dai pacchetti da importare. In genere è definito come parte di un profilo e importato automaticamente dall'applicazione del profilo.|
 |processo|Componente|Componente basato sulle transazioni o che contiene un thread.|
 |realizzazione|Classe, interfaccia, componente|Descrive un'implementazione.|
 |rifinisci|Dipendenza|La classe, il componente o il pacchetto client offre più informazioni del fornitore sulla specifica o sulla progettazione.|
 |responsabilità|Dipendenza|Il commento dal lato fornitore della dipendenza definisce le responsabilità della classe o del componente client.|
 |script|Elemento|«file» interpretabile.|
-|invia|Dipendenza|L'operazione di origine invia il segnale di destinazione.|
-|servizio|Componente|Componente senza stato.|
-|origine|Elemento|«file» compilabile.|
-|specification|Classe, interfaccia, componente|Definisce il comportamento di un componente o di un oggetto senza definire come funziona internamente.|
+|trasmissione|Dipendenza|L'operazione di origine invia il segnale di destinazione.|
+|service|Componente|Componente senza stato.|
+|source|Elemento|«file» compilabile.|
+|specifica|Classe, interfaccia, componente|Definisce il comportamento di un componente o di un oggetto senza definire come funziona internamente.|
 |sottosistema|Componente|Parte di un sistema di grandi dimensioni. Un sottosistema in un diagramma caso di utilizzo è un componente con lo stereotipo subsystem.|
 |traccia|Dipendenza|L'elemento client fa parte della progettazione che realizza il fornitore. Le due estremità di questa dipendenza sono in genere in modelli diversi. Uno di questi modelli è una realizzazione dell'altro.|
-|tipo|Class|Specifica il comportamento di un oggetto senza indicare come viene implementato. Un oggetto è un membro di un tipo se è conforme alla specifica.|
-|utilità|Class|Raccolta di funzioni statiche. La classe non dispone di istanze.|
+|type|Classe|Specifica il comportamento di un oggetto senza indicare come viene implementato. Un oggetto è un membro di un tipo se è conforme alla specifica.|
+|utility|Classe|Raccolta di funzioni statiche. La classe non dispone di istanze.|
 
-### <a name="L3"></a>Profilo standard UML L3
+### <a name="uml-standard-profile-l3"></a><a name="L3"></a> Profilo standard UML L3
  I seguenti stereotipi possono essere usati per specializzare il significato degli elementi del modello UML, a meno che il profilo non sia stato scollegato dal modello.
 
  Il significato esatto di questi stereotipi è determinato dalle convenzioni locali e dagli strumenti che potrebbero essere usati per elaborare il modello.
@@ -122,7 +122,7 @@ ms.locfileid: "72661044"
 |metaModel|Modello|Definisce un linguaggio di modellazione, ad esempio una variante di UML, o un linguaggio specifico del dominio.|
 |systemModel|Modello|Modello che è una raccolta di modelli che si applicano allo stesso sistema, ad esempio una specifica, una realizzazione e le relazioni di traccia reciproche.|
 
-## <a name="NetProfile"></a>C# Profilo di
+## <a name="c-profile"></a><a name="NetProfile"></a> Profilo C#
  Gli stereotipi definiti in questo profilo consentono di indicare che un elemento del modello verrà tradotto in codice programma. Ogni stereotipo definisce proprietà aggiuntive che è possibile impostare nell'elemento del modello.
 
  Per rendere disponibili questi stereotipi, collegare un modello o un pacchetto al profilo C#. È quindi possibile applicare gli stereotipi agli elementi del modello in tale modello o pacchetto.
@@ -131,12 +131,12 @@ ms.locfileid: "72661044"
 
 |Stereotipo|Si applica a|Proprietà|
 |----------------|----------------|----------------|
-|**C#Classe**|Classe UML<br /><br /> Componente|**Attributi CLR**<br /><br /> **Parziale**<br /><br /> **Sealed**<br /><br /> **Statico**<br /><br /> **Non è sicuro**<br /><br /> **Visibilità del pacchetto**|
-|**C#struct**|Classe UML<br /><br /> Componente|**Attributi CLR**<br /><br /> **Parziale**<br /><br /> **Non è sicuro**<br /><br /> **Visibilità del pacchetto**|
-|**C#membri globali**|Classe UML<br /><br /> Componente|**Attributi CLR**|
-|**C#Interfaccia**|Interfaccia UML|**Attributi CLR**<br /><br /> **Parziale**<br /><br /> **Visibilità del pacchetto**|
-|**C#enum**|Enumerazione UML|**ClrAttributes**<br /><br /> **Tipo di base**|
-|**C#namespace**|Pacchetto UML|**Attributi CLR**<br /><br /> **Nome di base**<br /><br /> **Uso degli spazi dei nomi**|
+|**Classe C#**|Classe UML<br /><br /> Componente|**Attributi CLR**<br /><br /> **Is Partial**<br /><br /> **Sealed**<br /><br /> **Is Static**<br /><br /> **Is Unsafe**<br /><br /> **Visibilità del pacchetto**|
+|**Struct C#**|Classe UML<br /><br /> Componente|**Attributi CLR**<br /><br /> **Is Partial**<br /><br /> **Is Unsafe**<br /><br /> **Visibilità del pacchetto**|
+|**Membri globali C#**|Classe UML<br /><br /> Componente|**Attributi CLR**|
+|**Interfaccia C#**|Interfaccia UML|**Attributi CLR**<br /><br /> **Is Partial**<br /><br /> **Visibilità del pacchetto**|
+|**C# enum**|Enumerazione UML|**ClrAttributes**<br /><br /> **Base Type**|
+|**Spazio dei nomi C#**|Pacchetto UML|**Attributi CLR**<br /><br /> **Base Name**<br /><br /> **Using Namespaces**|
 
 ## <a name="see-also"></a>Vedere anche
  [Aggiungere stereotipi agli elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md)

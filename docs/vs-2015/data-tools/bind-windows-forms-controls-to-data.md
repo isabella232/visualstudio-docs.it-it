@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf93d96594b65b06670567e8c23cd83ccb7f1ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672968"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Associare controlli Windows Form ai dati
@@ -36,7 +36,7 @@ ms.locfileid: "72672968"
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Eseguire l'associazione ai dati in un controllo DataGridView
- Per DataGridView, l'intera tabella è associata a quel singolo controllo. Quando si trascina un oggetto DataGridView nel form, viene visualizzata anche una striscia di strumenti per spostarsi tra i record (<xref:System.Windows.Forms.BindingNavigator>). Un [set di dati](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti. Nell'illustrazione seguente viene aggiunto anche un TableAdapterManager perché la tabella Customers ha una relazione con la tabella Orders. Queste variabili sono tutte dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per il riempimento di DataGridView si trova nel gestore eventi Form_Load. Il codice per il salvataggio dei dati per aggiornare il database si trova nel gestore eventi Save per BindingNavigator. È possibile spostare o modificare il codice in base alle esigenze.
+ Per DataGridView, l'intera tabella è associata a quel singolo controllo. Quando si trascina un oggetto DataGridView nel form, viene visualizzata anche una barra degli strumenti per spostarsi tra i record ( <xref:System.Windows.Forms.BindingNavigator> ). Un [set di dati](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> e viene <xref:System.Windows.Forms.BindingNavigator> visualizzato nella barra dei componenti. Nell'illustrazione seguente viene aggiunto anche un TableAdapterManager perché la tabella Customers ha una relazione con la tabella Orders. Queste variabili sono tutte dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per il riempimento del DataGridView si trova nel gestore dell'evento form_load. Il codice per il salvataggio dei dati per aggiornare il database si trova nel gestore eventi Save per BindingNavigator. È possibile spostare o modificare il codice in base alle esigenze.
 
  ![GridView con BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView con BindingNavigator")
 
@@ -46,7 +46,7 @@ ms.locfileid: "72672968"
 
  Se i controlli necessari per l'applicazione non sono disponibili nella finestra **origini dati** , è possibile aggiungere controlli. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
- È anche possibile trascinare elementi dalla finestra **origini dati** nei controlli già presenti in un form per associare il controllo ai dati. Un controllo già associato ai dati ha le associazioni dati reimpostate sull'elemento trascinato più di recente. Per essere destinazioni di rilascio valide, i controlli devono essere in grado di visualizzare il tipo di dati sottostante dell'elemento trascinato nella finestra **origini dati** . Non è ad esempio possibile trascinare un elemento con un tipo di dati <xref:System.DateTime> in un <xref:System.Windows.Forms.CheckBox>, perché il <xref:System.Windows.Forms.CheckBox> non è in grado di visualizzare una data.
+ È anche possibile trascinare elementi dalla finestra **origini dati** nei controlli già presenti in un form per associare il controllo ai dati. Un controllo già associato ai dati ha le associazioni dati reimpostate sull'elemento trascinato più di recente. Per essere destinazioni di rilascio valide, i controlli devono essere in grado di visualizzare il tipo di dati sottostante dell'elemento trascinato nella finestra **origini dati** . Ad esempio, non è possibile trascinare un elemento con tipo di dati in <xref:System.DateTime> <xref:System.Windows.Forms.CheckBox> , perché <xref:System.Windows.Forms.CheckBox> non è in grado di visualizzare una data.
 
 ## <a name="bind-to--data-in-individual-controls"></a>Eseguire l'associazione ai dati nei singoli controlli
  Quando si associa un'origine dati a "Details", ogni colonna del set di dati viene associata a un controllo separato.

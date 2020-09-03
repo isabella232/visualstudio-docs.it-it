@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c53af4a8e0f42708ab94d7206a9c0cc54819798
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72573543"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Generale, Debug, finestra di dialogo Opzioni
@@ -43,7 +43,7 @@ La pagina**strumenti/opzioni/debug/generale** consente di impostare le opzioni s
  **Interrompi quando le eccezioni superano AppDomain o i limiti gestiti/nativi**  
  Durante il debug in modalità gestita o mista, Common Language Runtime è in grado di rilevare eccezioni che superano i limiti del dominio applicazione o i limiti gestiti/nativi quando sono vere le seguenti condizioni:  
   
- 1 \) quando il codice nativo chiama il codice gestito utilizzando l'interoperabilità COM e il codice gestito genera un'eccezione. Visualizzare [Introduzione all'interoperabilità COM](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1 \) quando il codice nativo chiama il codice gestito utilizzando l'interoperabilità COM e il codice gestito genera un'eccezione. Vedere [Introduzione all'interoperabilità COM](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
  2 \) quando il codice gestito in esecuzione nel dominio applicazione 1 chiama il codice gestito nel dominio applicazione 2 e il codice nel dominio applicazione 2 genera un'eccezione. Vedere [programmazione con i domini applicazione](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
@@ -66,10 +66,10 @@ La pagina**strumenti/opzioni/debug/generale** consente di impostare le opzioni s
  **Rimuovi stack di chiamate su eccezioni non gestite**  
  La finestra **Stack di chiamate** esegue il rollback dello stack di chiamate al punto precedente l'eccezione non gestita.  
   
- **Abilitare Just My Code**  
+ **Abilita Just My Code**  
  Il debugger visualizza ed esegue solo il codice utente ("My Code"), ignorando il codice di sistema e altro codice ottimizzato o privo di simboli di debug.  
   
- **Mostra tutti i membri per gli oggetti non utente nelle finestre delle variabili (solo Visual Basic)**  
+ **Mostra tutti i membri per gli oggetti non utente nelle finestre delle variabile (solo Visual Basic)**  
  Attiva la visualizzazione dei membri non pubblici per gli oggetti presenti nel codice non utente (non "My Code").  
   
  **Avvisa se all'avvio non è presente codice utente**  
@@ -84,10 +84,10 @@ La pagina**strumenti/opzioni/debug/generale** consente di impostare le opzioni s
  **Abilitare la valutazione delle proprietà e altre chiamate di funzioni implicite**  
  Attiva la valutazione automatica di proprietà e altre chiamate di funzioni implicite nelle finestre delle variabili e nella finestra di dialogo **Controllo immediato**.  
   
- **Chiama la funzione di conversione delle stringhe sugli oggetti nelleC# finestre delle variabili (solo e JavaScript)**  
+ **Chiama la funzione di conversione delle stringhe su oggetti nelle finestre delle variabili (solo C# e JavaScript)**  
  Esegue una chiamata di conversione delle stringhe implicita durante la valutazione di oggetti nelle finestre delle variabili. Pertanto, il risultato viene visualizzato come stringa anziché come nome del tipo. Questa opzione è applicabile solo al debug in codice C#. Questa impostazione può essere sottoposta a override dall'attributo DebuggerDisplay (vedere [uso dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
- **Abilita il supporto del server di origine**  
+ **Abilita supporto del server di origine**  
  Indica al debugger di Visual Studio di ottenere i file di origine da server di origine che implementano il protocollo di SrcSrv (`srcsrv.dll`). Team Foundation Server e gli strumenti di debug per Windows sono due server di origine che implementano il protocollo. Per altre informazioni sull'installazione di SrcSrv, vedere la documentazione relativa agli Strumenti di debug per Windows. Vedere inoltre [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
@@ -99,7 +99,7 @@ La pagina**strumenti/opzioni/debug/generale** consente di impostare le opzioni s
  **Consenti il server di origine per gli assembly parzialmente attendibili (solo gestito)**  
  Quando il supporto del server di origine è abilitato, questa impostazione esegue l'override del comportamento predefinito che non recupera le origini per gli assembly parzialmente attendibili.  
   
- **Evidenziare la riga intera per i punti di interruzione e l'istruzione corrente**  
+ **Evidenzia la riga completa per i punti di interruzione e l'istruzione corrente**  
  Quando il debugger evidenzia un punto di interruzione o l'istruzione corrente, estende l'evidenziazione all'intera riga.  
   
  **Richiedi corrispondenza esatta dei file di origine con la versione originale**  
@@ -114,7 +114,7 @@ La pagina**strumenti/opzioni/debug/generale** consente di impostare le opzioni s
  **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)**  
  Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato al momento della connessione al debugger. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code").  
   
- **Avvisa se non ci sono simboli all'avvio (solo nativo)**  
+ **Avvisa se non vi sono simboli all'avvio (solo nativo)**  
  Visualizza una finestra di dialogo di avviso ogni volta che si prova a eseguire il debug di un programma per il quale il debugger non ha informazioni sui simboli.  
   
  **Avvisa se il debug degli script è disabilitato all'avvio**  
@@ -123,7 +123,7 @@ La pagina**strumenti/opzioni/debug/generale** consente di impostare le opzioni s
  **Carica esportazioni dll**  
  Carica le tabelle di esportazione DLL. Le informazioni sui simboli delle tabelle di esportazione DLL possono essere utili se usano messaggi Windows, routine Windows (WindowProc), oggetti COM, marshalling o qualsiasi DLL per cui non sono disponibili simboli. La lettura di informazioni di esportazione DLL comporta un sovraccarico. Pertanto questa funzionalità è disattivata per impostazione predefinita.  
   
- Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, usare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports` , è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [Dump Bin/exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, usare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports` , è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [Dump Bin/exports.](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Mostra diagramma degli stack in parallelo dal basso verso l'alto**  
  Controlla la direzione in cui vengono visualizzati gli stack nella finestra **Stack in parallelo**.  
@@ -145,7 +145,7 @@ La pagina**strumenti/opzioni/debug/generale** consente di impostare le opzioni s
   
   Usare questa opzione quando si esegue il debug di codice C++ .NET perché il nuovo motore di debug non supporta la valutazione delle espressioni C++ .NET. Tuttavia, l'abilitazione della modalità di compatibilità nativa disabilita molte funzionalità che dipendono dall'implementazione corrente del debugger per il funzionamento. Il motore legacy, ad esempio, non dispone di molti visualizzatori per i tipi incorporati come `std::string` nei progetti di Visual Studio 2015.  In questi casi, utilizzare Visual Studio 2013 progetti per un'esperienza di debug ottimale.  
   
-  **Usare gli analizzatori di espressioni legacy C# e VB**  
+  **Usare gli analizzatori di espressioni C# e VB legacy**  
   Il debugger userà gli analizzatori di espressioni di Visual Studio 2013 C#/VB anziché quelli basati su Visual Studio 2015 Roslyn.  
   
   **Avvisa quando si usano i visualizzatori del debugger personalizzati in caso di processi potenzialmente non sicuri (solo gestito)**  
@@ -173,7 +173,7 @@ La pagina**strumenti/opzioni/debug/generale** consente di impostare le opzioni s
   È possibile usare la funzionalità Modifica e continuazione durante il debug.  
   
   **Abilita modifica e continuazione nativa**  
-  È possibile usare la funzionalità Modifica e continuazione durante il debug del codice C++ nativo. Per ulteriori informazioni, vedere [modifica e continuazione ( C++Visual)](../debugger/edit-and-continue-visual-cpp.md).  
+  È possibile usare la funzionalità Modifica e continuazione durante il debug del codice C++ nativo. Per ulteriori informazioni, vedere [modifica e continuazione (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
   **Applica le modifiche durante la continuazione (solo nativo)**  
   Visual Studio compila e applica automaticamente le modifiche di codice in sospeso apportate quando il processo viene ripreso da uno stato di interruzione. Se non è selezionato, è possibile scegliere di applicare le modifiche usando l'elemento "Applica modifiche del codice" nel menu Debug.  

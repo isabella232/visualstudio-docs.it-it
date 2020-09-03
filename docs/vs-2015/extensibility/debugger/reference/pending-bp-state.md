@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 15ac788bf81ce83c2658b8a88a68ac5281020373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205078"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Specifica lo stato di un punto di interruzione in sospeso (un punto di interruzione che non è ancora stata associata).  
+Specifica lo stato di un punto di interruzione in sospeso, ovvero un punto di interruzione che non è ancora stato associato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,7 +45,7 @@ public enum enum_PENDING_BP_STATE { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  PBPS_NONE  
  Segnaposto per zero. Questo valore non viene mai restituito.  
   
@@ -53,18 +53,18 @@ public enum enum_PENDING_BP_STATE { 
  Indica che il punto di interruzione in sospeso è stato eliminato.  
   
  PBPS_DISABLED  
- Indica che il punto di interruzione in sospeso è disabilitata.  
+ Indica che il punto di interruzione in sospeso è disabilitato.  
   
  PBPS_ENABLED  
- Indica che il punto di interruzione in sospeso è abilitata.  
+ Indica che il punto di interruzione in sospeso è abilitato.  
   
-## <a name="remarks"></a>Note  
- Usare come le `state` membro della [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura.  
+## <a name="remarks"></a>Osservazioni  
+ Utilizzare come `state` membro della struttura [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

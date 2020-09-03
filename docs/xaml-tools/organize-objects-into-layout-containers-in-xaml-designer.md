@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86459294"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
@@ -29,11 +29,11 @@ Per definire inizialmente la pagina, scegliere uno dei seguenti pannelli di layo
 
 I seguenti pannelli di layout sono quelli più usati, ma ne esistono altri. Tutti i pannelli sono disponibili nella **casella degli strumenti** in Visual Studio o nel pannello **Asset** in Blend per Visual Studio.
 
-### <a name="grid"></a>Grid
+### <a name="grid"></a>Griglia
 
 Consente di disporre gli oggetti in righe e colonne.
 
-![Pannello di layout di tipo Grid](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
+![Pannello di layout della griglia](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>UniformGrid
 
@@ -47,7 +47,7 @@ Consente di disporre gli oggetti in aree della griglia uguali o uniformi. Questo
 
 Consente di disporre gli oggetti nel modo desiderato. Quando gli utenti eseguono l'app, a questi elementi verranno assegnate posizioni fisse sullo schermo.
 
-![Pannello di layout di tipo canvas](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
+![Pannello di layout del canvas](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 

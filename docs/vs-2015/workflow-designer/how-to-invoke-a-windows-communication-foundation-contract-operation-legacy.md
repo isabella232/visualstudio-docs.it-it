@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f42600a739561a27a6dd8f6caa237027bac4554
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603694"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Procedura: richiamare un'operazione del contratto Windows Communication Foundation (legacy)
@@ -41,7 +41,7 @@ In questo argomento viene descritto come richiamare un'operazione di contratto [
 
 1. Selezionare l'attività <xref:System.Workflow.Activities.SendActivity> nella finestra di progettazione.
 
-2. Nel riquadro **Proprietà** specificare un nome per il <xref:System.Workflow.Activities.ChannelToken>. Questo nome identifica in modo univoco il token del canale.
+2. Nel riquadro **Proprietà** specificare un nome per il <xref:System.Workflow.Activities.ChannelToken> . Questo nome identifica in modo univoco il token del canale.
 
 3. Espandere il nodo del token del canale e specificare un nome per l'endpoint client che si desidera usare nel campo <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A>. La configurazione di endpoint con lo stesso nome nel file di configurazione verrà usata per configurare il canale.
 

@@ -51,10 +51,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661186"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
@@ -70,7 +70,7 @@ Quando si crea un’app, un’applicazione, un sito Web, uno script, un plug-in 
 
  Nel diagramma seguente viene illustrata la relazione tra progetti e soluzioni e gli elementi in essi contenuti dal punto di vista logico.
 
- ![Progetti e soluzioni di Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
+ ![Progetti e soluzioni di Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
  È inoltre possibile creare modelli di progetto e modelli di elemento personalizzati. Per altre informazioni, vedere [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
 
@@ -80,9 +80,9 @@ Quando si crea un’app, un’applicazione, un sito Web, uno script, un plug-in 
 ## <a name="managing-projects-in-solution-explorer"></a>Gestione di progetti in Esplora soluzioni
  Dopo aver creato un nuovo progetto, viene utilizzato **Esplora soluzioni** per visualizzare e gestire progetti e soluzioni e i relativi articoli associati. Nella figura seguente viene illustrato Esplora Server con una soluzione C# contenente due progetti.
 
- ![Esplora soluzioni](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
+ ![Esplora soluzioni](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Creazione di soluzioni e progetti](../ide/creating-solutions-and-projects.md)
 
@@ -96,7 +96,7 @@ Quando si crea un’app, un’applicazione, un sito Web, uno script, un plug-in 
 
 - [Gestione delle firme di assembly e manifesti](../ide/managing-assembly-and-manifest-signing.md)
 
-- [Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Procedura: specificare l'icona di un'applicazione (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 - [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 

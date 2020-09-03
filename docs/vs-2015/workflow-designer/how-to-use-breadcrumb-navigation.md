@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659146"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procedura: utilizzare l'esplorazione tramite la barra di navigazione
@@ -47,7 +47,7 @@ Il set delle attività visualizzate in [!INCLUDE[wfd1](../includes/wfd1-md.md)] 
 2. Dopo aver applicato uno stato Espandi tutto o Comprimi tutto, è possibile fare clic sul pulsante **Ripristina** che sembra tornare a esaminare lo stato applicato in precedenza a ogni attività.
 
     > [!WARNING]
-    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart>, ha rifiutato l'espansione sul posto, la funzionalità associata ai pulsanti **Espandi tutto** e **Comprimi tutto** è disabilitata nella finestra di progettazione **diagramma di flusso** . [!INCLUDE[crabout](../includes/crabout-md.md)] la finestra di progettazione **diagramma** di flusso, vedere l'argomento [diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) .
+    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart> , ha rifiutato l'espansione sul posto, la funzionalità associata ai pulsanti **Espandi tutto** e **Comprimi tutto** è disabilitata nella finestra di progettazione **diagramma di flusso** . [!INCLUDE[crabout](../includes/crabout-md.md)] nella finestra di progettazione del **diagramma** di flusso, vedere l'argomento [diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Expand all ha un effetto speciale anche negli ActivityDesigner **Switch** e **TryCatch** . Quando si fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Se si fa clic su **Ripristina** o **Comprimi tutto** , le finestre di progettazione vengono restituite allo stato predefinito, da cui è possibile fare clic su un singolo case/blocco per visualizzarne il contenuto.

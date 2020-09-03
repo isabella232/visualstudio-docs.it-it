@@ -10,14 +10,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1334655f2a8b8587922628664e43784b54ce971
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604923"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Procedura: creare un'applicazione console flusso di lavoro
-[!INCLUDE[wf](../includes/wf-md.md)] consente di creare flussi di lavoro per l'esecuzione di processi di utenti o di sistema. [!INCLUDE[wfd1](../includes/wfd1-md.md)] fornisce l'area di progettazione per la creazione di tali flussi. La [!INCLUDE[wfd2](../includes/wfd2-md.md)] può essere usata per creare flussi di lavoro dall'interno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o può essere integrata in altre applicazioni che riallocano la finestra di progettazione.
+[!INCLUDE[wf](../includes/wf-md.md)] consente di creare flussi di lavoro per l'esecuzione di processi di sistema o umane. [!INCLUDE[wfd1](../includes/wfd1-md.md)] fornisce l'area di progettazione per la creazione di tali flussi. La [!INCLUDE[wfd2](../includes/wfd2-md.md)] può essere usata per creare flussi di lavoro dall'interno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o può essere integrata in altre applicazioni che riallocano la finestra di progettazione.
 
  In questo argomento viene descritto come usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] in [!INCLUDE[vs2010](../includes/vs2010-md.md)] per creare un flusso di lavoro in un'applicazione console.
 
@@ -29,7 +29,7 @@ ms.locfileid: "72604923"
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-3. Nel riquadro **modelli installati** selezionare flusso di **lavoro** dal raggruppamento **visuale C#**  o **Visual Basic** , a seconda del linguaggio preferito.
+3. Nel riquadro **modelli installati** selezionare flusso di **lavoro** da **Visual C#** o **Visual Basic** raggruppamenti, a seconda del linguaggio preferito.
 
 4. Nel riquadro centrale selezionare **applicazione console flusso di lavoro**.
 
@@ -40,7 +40,7 @@ ms.locfileid: "72604923"
 7. Nella casella **soluzione** immettere il nome per la nuova soluzione. Fare clic su **OK** per creare l'applicazione.
 
     > [!NOTE]
-    > Se si desidera aggiungere un'applicazione console del flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)], fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e scegliere **Aggiungi**, quindi **nuovo progetto.** per aprire la finestra di dialogo **nuovo progetto** . Procedere come descritto sopra in questa procedura.
+    > Se si desidera aggiungere un'applicazione console del flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)] , fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e selezionare **Aggiungi**, quindi **nuovo progetto.** per aprire la finestra di dialogo **nuovo progetto** . Procedere come descritto sopra in questa procedura.
 
 8. Il modello di progetto crea una definizione del flusso di lavoro in XAML mentre la definizione dell'applicazione console è in codice sorgente. In [!INCLUDE[wfd2](../includes/wfd2-md.md)] verrà visualizzata l'area di disegno per il flusso di lavoro creato.
 

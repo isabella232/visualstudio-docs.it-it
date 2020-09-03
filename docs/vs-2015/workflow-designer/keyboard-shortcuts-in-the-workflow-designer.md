@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658965"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
@@ -27,7 +27,7 @@ ms.locfileid: "72658965"
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
  Nella tabella seguente vengono riepilogati i tasti di scelta rapida predefiniti assegnati ai comandi di [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
-|Metodo rapido|Scopo|
+|Tasto di scelta rapida|Scopo|
 |--------------|-------------|
 |CTRL+E, A|Mostra o nasconde Progettazione argomenti.|
 |CTRL+E, C|Comprime l'attività selezionata sul posto.|
@@ -85,6 +85,6 @@ ms.locfileid: "72658965"
 
     5. Annulla
 
-    6. Ripristina
+    6. Ripristinare
 
 - Per modificare il mapping dei tasti di scelta rapida per i comandi di modifica delle espressioni all'interno di [!INCLUDE[wfd2](../includes/wfd2-md.md)] in [!INCLUDE[vs2010](../includes/vs2010-md.md)], modificare i collegamenti nell'ambito di [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Le modifiche apportate nell'ambito dell'Editor di testo non si applicano automaticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.

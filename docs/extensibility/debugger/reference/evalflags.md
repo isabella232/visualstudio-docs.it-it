@@ -1,5 +1,5 @@
 ---
-title: Proprietà EVALFLAGS . Documenti Microsoft
+title: EVALFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737118"
 ---
 # <a name="evalflags"></a>EVALFLAGS
@@ -60,29 +60,29 @@ Specifica che il valore restituito, se presente, deve essere valutato.
 Specifica che gli effetti collaterali non sono consentiti.
 
 `EVAL_ALLOWBPS`\
-Specifica l'arresto in corrispondenza dei punti di interruzione.
+Specifica l'arresto in corrispondenza di punti di interruzione.
 
 `EVAL_ALLOWERRORREPORT`\
-Specifica la segnalazione degli errori all'host da consentire. Utilizzato principalmente per la valutazione delle espressioni nello script in Internet Explorer.
+Specifica la segnalazione degli errori all'host da consentire. Utilizzato principalmente per la valutazione di espressioni nello script in Internet Explorer.
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-Forza le funzioni da valutare come indirizzi, anziché richiamare la funzione.
+Impone la valutazione delle funzioni come indirizzi, anziché richiamare la funzione.
 
 `EVAL_NOFUNCEVAL`\
-Impedisce la valutazione della funzione. Si consideri `int` ad esempio `myExpression(int) + 10`il token nell'espressione . Questa funzione può essere valutata correttamente come indirizzo, ma non come valore.
+Impedisce la valutazione della funzione. Si consideri, ad esempio, il `int` token nell'espressione `myExpression(int) + 10` . Questa funzione può essere valutata correttamente come un indirizzo, ma non come valore.
 
 `EVAL_NOEVENTS`\
-Flag per indicare che gli eventi che si verificano durante la valutazione dell'espressione non devono essere inviati al gestore di sessione di debug (SDM) o all'IDE.
+Flag che indica che gli eventi che si verificano durante la valutazione dell'espressione non devono essere inviati a gestione debug sessione (SDM) o all'IDE.
 
 ## <a name="remarks"></a>Osservazioni
-Questi flag vengono passati come argomento per il [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) e [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metodi.
+Questi flag vengono passati come argomento ai metodi [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) e [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .
 
 Questi flag possono essere combinati con un OR bit per bit.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

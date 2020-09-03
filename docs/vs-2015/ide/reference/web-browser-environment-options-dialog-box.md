@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a58fc57ca840f064e7d32b830133f0d909af7585
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604770"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Browser, Ambiente, finestra di dialogo Opzioni
@@ -37,7 +37,7 @@ ms.locfileid: "72604770"
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 > [!IMPORTANT]
 > L'apertura di determinati file o componenti dal Web può determinare l'esecuzione del codice nel computer in uso.
@@ -50,7 +50,7 @@ Consente di impostare le opzioni per il Web browser interno e per Internet Explo
 
 - **Editor standard** Selezionare questa opzione per visualizzare l'origine nella [scrittura del codice](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.
+- **Editor HTML** Selezionare per visualizzare l'origine nella [finestra di progettazione HTML](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.
 
 - **Editor esterno** Selezionare questa opzione per visualizzare l'origine in un altro editor. Specificare il percorso dell'editor scelto, ad esempio notepad.exe.
 

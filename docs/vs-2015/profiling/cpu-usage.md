@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7732a5757281e83c501a8258dd1d44b4f329a87a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548057"
 ---
 # <a name="cpu-usage"></a>Utilizzo CPU
@@ -27,7 +27,7 @@ Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, �
   
  L'hub Prestazioni e diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. È ad esempio possibile eseguire lo strumento **Utilizzo CPU** in computer locali o remoti oppure in un simulatore o in un emulatore. È possibile analizzare le prestazioni di un progetto aperto in Visual Studio o collegato a un'app in esecuzione oppure avviare un'app installata da Windows Store. Per altre informazioni, vedere [eseguire gli strumenti di profilatura senza debug](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a>Raccogli dati di utilizzo della CPU  
+## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> Raccogli dati di utilizzo della CPU  
   
 1. In Visual Studio impostare la configurazione della soluzione su **Versione** e scegliere la destinazione di distribuzione.  
   
@@ -59,7 +59,7 @@ Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, �
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analizzare il report di Utilizzo CPU  
   
-### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a>Albero delle chiamate di utilizzo CPU  
+### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a> Albero delle chiamate di utilizzo CPU  
  Per iniziare a comprendere le informazioni dell'albero delle chiamate, selezionare di nuovo il segmento `GetMaxNumberButton_Click` e analizzare i dettagli dell'albero.  
   
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate  
@@ -72,7 +72,7 @@ Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, �
 |![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|  
 |![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|I nodi figlio di un metodo contengono i dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Codice esterno  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> Codice esterno  
  Il codice esterno rappresenta funzioni nei componenti del sistema e del framework che vengono eseguite dal codice scritto. Include funzioni che avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e forniscono altri servizi di basso livello all'app. Nella maggior parte dei casi, non si è interessati al codice esterno, quindi l'albero delle chiamate di utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[codice esterno]** .  
   
  Se vuoi visualizzare i percorsi delle chiamate del codice esterno, scegli **Mostra codice esterno** nell'elenco **Visualizzazione filtro** e quindi scegli **Applica**.  

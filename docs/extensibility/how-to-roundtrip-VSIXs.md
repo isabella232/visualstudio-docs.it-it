@@ -9,10 +9,10 @@ manager: justinclareburt
 ms.workload:
 - willbrown
 ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387278"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Procedura: rendere compatibili le estensioni con Visual Studio 2019/2017 e Visual Studio 2015
@@ -69,12 +69,12 @@ Se il progetto contiene un *project.jssu* file:
 
 Per compilare e distribuire un VSIXv3 in Visual Studio 2015 e 2019/2017, sono necessari i pacchetti NuGet seguenti:
 
-Versione | Strumenti compilati
+Version | Strumenti compilati
 --- | ---
 Visual Studio 2015 | Microsoft. VisualStudio. Sdk. BuildTasks. 14.0
 Visual Studio 2019 o 2017 | Microsoft. VSSDK. BuildTool
 
-A tale scopo, procedere come indicato di seguito:
+A tale scopo, procedere nel seguente modo:
 
 * Aggiungere il pacchetto NuGet Microsoft. VisualStudio. Sdk. BuildTasks. 14.0 al progetto.
 * Se il progetto non contiene Microsoft. VSSDK. BuildTools, aggiungerlo.

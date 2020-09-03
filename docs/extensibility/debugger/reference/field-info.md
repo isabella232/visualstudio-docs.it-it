@@ -1,5 +1,5 @@
 ---
-title: PROPRIETÀ FIELD_INFO . Documenti Microsoft
+title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736892"
 ---
 # <a name="field_info"></a>FIELD_INFO
@@ -47,9 +47,9 @@ public struct FIELD_INFO {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `dwFields`\
-Combinazione di flag dell'enumerazione [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) che specifica quali membri vengono compilati.
+Combinazione di flag dell'enumerazione [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) che specifica i membri che vengono compilati.
 
 `bstrFullName`\
 Nome completo del campo.
@@ -64,12 +64,12 @@ Tipo del campo.
 Combinazione di flag dell'enumerazione [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) che descrive il campo.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene passata al [metodo GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) in cui viene compilata.
+Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) dove viene compilata.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: sh.h
+Intestazione: sh. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

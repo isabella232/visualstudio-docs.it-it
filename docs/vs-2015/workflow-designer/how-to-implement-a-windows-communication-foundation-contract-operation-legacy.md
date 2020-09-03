@@ -10,26 +10,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f6f54e781dfae15b4b1c1159d73ac3495b35c21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603871"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Procedura: implementare un'operazione del contratto di Windows Communication Foundation (legacy)
 In questo argomento viene descritto come implementare un'operazione di contratto [!INCLUDE[indigo1](../includes/indigo1-md.md)] usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy che fa riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Dopo avere trascinato un'attività **ReceiveActivity** dalla casella degli strumenti all'area di progettazione del flusso di lavoro, sarà possibile creare un nuovo contratto di [!INCLUDE[indigo2](../includes/indigo2-md.md)] o importare un contratto esistente e implementare le operazioni. Selezionare e/o creare il contratto e le relative operazioni tramite la finestra di [dialogo Seleziona operazione (legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+ Dopo avere trascinato un'attività **ReceiveActivity** dalla casella degli strumenti all'area di progettazione del flusso di lavoro, sarà possibile creare un nuovo [!INCLUDE[indigo2](../includes/indigo2-md.md)] contratto o importare un contratto esistente e implementare le operazioni. Selezionare e/o creare il contratto e le relative operazioni tramite la finestra di [dialogo Seleziona operazione (legacy)](../workflow-designer/choose-operation-dialog-box-legacy.md).
 
 ### <a name="to-implement-a-wcf-contract-operation"></a>Per implementare un'operazione del contratto WCF
 
 1. Fare doppio clic sull'attività **ReceiveActivity** nella finestra di progettazione o fare clic sui puntini di sospensione accanto alla proprietà **ServiceOperationInfo** nel riquadro **proprietà** .
 
-2. Effettuare una delle operazioni riportate di seguito:
+2. Eseguire una delle operazioni seguenti:
 
    - Fare clic su **Aggiungi contratto** nell'angolo superiore destro della finestra di dialogo. Vengono creati un nuovo contratto e una nuova operazione [!INCLUDE[indigo2](../includes/indigo2-md.md)].
 
-      oppure
+      -oppure-
 
    - Fare clic su **Importa** nell'angolo superiore destro della finestra di dialogo. Verrà visualizzata la finestra di [dialogo Cerca e seleziona un tipo .NET (legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) . Cercare un assembly o un progetto contenente il contratto desiderato. Selezionare il contratto e fare clic su **OK**.
 

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591294"
 ---
 # <a name="manage-external-tools"></a>Gestire strumenti esterni
@@ -47,9 +47,9 @@ Il menu **Strumenti** include alcuni comandi predefiniti, tra cui:
 
 È possibile aggiungere uno strumento esterno per visualizzarlo nel menu **Strumenti**.
 
-1. Aprire la finestra di dialogo **Strumenti esterni** scegliendo **Strumenti** > **esterni .**
+1. Aprire la finestra di dialogo **strumenti** esterni scegliendo **strumenti**  >  **strumenti esterni**.
 
-1. Fare clic su **Aggiungi** e quindi compilare le informazioni. Ad esempio, la seguente voce fa sì che **Esplora risorse** si apra nella directory del file attualmente aperto in Visual Studio:
+1. Fare clic su **Aggiungi** e quindi compilare le informazioni. Ad esempio, la voce seguente causa l'apertura di **Esplora risorse** nella directory del file attualmente aperto in Visual Studio:
 
    * Titolo: `Open File Location`
 
@@ -81,8 +81,8 @@ Di seguito è riportato un elenco completo di argomenti che possono essere usati
 |Nome file soluzione|$(SolutionFileName)|Nome file della soluzione corrente (unità + percorso + nome file).|
 
 > [!NOTE]
-> Nella barra di stato dell'IDE vengono visualizzate le variabili **Riga corrente** e **Colonna corrente** per indicare la posizione del punto di inserimento nell'editor **di codice**attivo. La variabile **Testo corrente** restituisce il testo o il codice selezionato in tale posizione.
+> La barra di stato IDE Visualizza le variabili di **riga corrente** e **colonna corrente** per indicare dove si trova il punto di inserimento nell' **Editor del codice**attivo. La variabile di **testo corrente** restituisce il testo o il codice selezionato in quella posizione.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Strumenti di compilazione C/C](/cpp/build/reference/c-cpp-build-tools)
+- [Strumenti per la compilazione in C/C++](/cpp/build/reference/c-cpp-build-tools)
