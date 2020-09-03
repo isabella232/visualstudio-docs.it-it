@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745670"
 ---
 # <a name="com-server-and-container-debugging"></a>Debug dei server e dei contenitori COM
@@ -33,12 +33,12 @@ Le applicazioni COM eseguono alcune attività che non sono sotto il controllo di
 
  Il debugger di Visual Studio supporta l'esecuzione delle istruzioni attraverso i contenitori e i server e all'interno di essi. Tale supporto include la capacità di eseguire le istruzioni RPC (Remote Procedure Call, chiamata a procedura remota).
 
-## <a name="BKMK_COMServerandContainerintheSameSolution"></a>Debug di un server COM e di un contenitore nella stessa soluzione
+## <a name="debugging-a-com-server-and-container-in-the-same-solution"></a><a name="BKMK_COMServerandContainerintheSameSolution"></a>Debug di un server COM e di un contenitore nella stessa soluzione
  È possibile eseguire il debug di un server e di un contenitore COM utilizzando due progetti all'interno della stessa soluzione. Impostare i punti di interruzione appropriati in ogni progetto e procedere al debug. Quando il contenitore effettua una chiamata nel codice del server in cui è stato impostato un punto di interruzione, il contenitore resta in attesa della fine dell'esecuzione del codice del server ovvero il termine del relativo debug.
 
  Il debug di un contenitore COM è simile a quello di un programma standard. Presenta invece delle differenze quando si riferisce a un evento che genera un callback, ad esempio il trascinamento di dati in un'applicazione contenitore. In questo caso, è necessario impostare un punto di interruzione nella funzione di callback.
 
-## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a>Debug di un'applicazione server senza informazioni sul contenitore
+## <a name="debugging-a-server-application-without-container-information"></a><a name="BKMK_ServerApplicationWithoutContainerInformation"></a>Debug di un'applicazione server senza informazioni sul contenitore
  Quando le informazioni di debug relative all'applicazione contenitore non vengono utilizzate o non sono disponibili, l'avvio del debug di un'applicazione server si suddivide in tre passaggi:
 
 1. Avviare il debug del server come applicazione normale.
@@ -47,7 +47,7 @@ Le applicazioni COM eseguono alcune attività che non sono sotto il controllo di
 
 3. Avviare l'applicazione contenitore.
 
-## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a>Debug di un'applicazione di isolamento server e dominio (SDI)
+## <a name="debugging-a-server-and-domain-isolation-sdi-application"></a><a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a>Debug di un'applicazione di isolamento server e dominio (SDI)
  Se si esegue il debug di un'applicazione server SDI, è necessario specificare `/Embedding` o `/Automation` nella proprietà **Argomenti della riga di comando** disponibile nella finestra di dialogo Pagine delle proprietà di *Progetto* per i progetti C/C++, C# o Visual Basic.
 
  Grazie a questi argomenti della riga di comando, il debugger è in grado di avviare l'applicazione server come se tale avvio venisse eseguito da un contenitore. In seguito all'avvio del contenitore da Program Manager o File Manager, il contenitore utilizzerà l'istanza del server già avviata dal debugger.

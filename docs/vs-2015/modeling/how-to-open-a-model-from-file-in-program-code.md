@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c98bec69631b852521f682a24dd1b5ce6ddf0424
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662564"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: aprire un modello da file nel codice del programma
@@ -21,14 +21,14 @@ ms.locfileid: "72662564"
 
 È possibile aprire modelli DSL in qualsiasi applicazione.
 
- Da un'estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è possibile utilizzare ModelBus a questo scopo. ModelBus fornisce un meccanismo standard per fare riferimento a un modello o a elementi in un modello e per individuare il modello se è stato spostato. Per altre informazioni, vedere [integrazione di modelli tramite ModelBus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ Da un' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione, è possibile utilizzare ModelBus a questo scopo. ModelBus fornisce un meccanismo standard per fare riferimento a un modello o a elementi in un modello e per individuare il modello se è stato spostato. Per altre informazioni, vedere [integrazione di modelli tramite ModelBus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Framework di destinazione
  Impostare il **Framework di destinazione** del progetto di applicazione su **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Per impostare il Framework di destinazione
 
-1. Aprire il progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per l'applicazione in cui si desidera leggere un modello DSL.
+1. Aprire il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto per l'applicazione in cui si desidera leggere un modello DSL.
 
 2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
@@ -38,24 +38,24 @@ ms.locfileid: "72662564"
 > Potrebbe essere necessario eseguire questa operazione anche se è stata selezionata l'opzione **.NET Framework 4** nella finestra di dialogo Creazione progetto. Il Framework di destinazione non deve essere **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Riferimenti
- È necessario aggiungere questi riferimenti al progetto di applicazione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
+ È necessario aggiungere questi riferimenti al [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto dell'applicazione:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - Se non viene visualizzato nella scheda **.NET** della finestra di dialogo **Aggiungi riferimenti** , fare clic sulla scheda **Sfoglia** e passare a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+  - Se non viene visualizzato nella scheda **.NET** della finestra di dialogo **Aggiungi riferimenti** , fare clic sulla scheda **Sfoglia** e passare a `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` .
 
-- L'assembly DSL, disponibile nella cartella bin del progetto DSL. Il nome è in genere nel formato seguente: *impresa*. @No__t_2 *progettoutente* .
+- L'assembly DSL, disponibile nella cartella bin del progetto DSL. Il nome è in genere nel formato seguente: *impresa*. *Progettoutente* `.Dsl.dll` .
 
 ## <a name="important-classes-in-the-dsl"></a>Classi importanti nel linguaggio DSL
  Prima di poter scrivere il codice che legge il linguaggio DSL, è necessario essere a conoscenza dei nomi di alcune classi generate dal DSL. Nella soluzione DSL aprire il progetto **DSL** ed esaminare la cartella **GeneratedCode** . In alternativa, fare doppio clic sull'assembly DSL nei **riferimenti**del progetto e aprire lo spazio dei nomi dsl in **Visualizzatore oggetti**.
 
  Queste sono le classi che è necessario identificare:
 
-- *YourDslRootClass* : si tratta del nome della classe radice nell'`DslDefinition.dsl`.
+- *YourDslRootClass* : si tratta del nome della classe radice in `DslDefinition.dsl` .
 
-- *Proprionomedsl* `SerializationHelper`: questa classe è definita in `SerializationHelper.cs` nel progetto DSL.
+- *Proprionomedsl* `SerializationHelper` : Questa classe è definita in `SerializationHelper.cs` nel progetto DSL.
 
-- *Proprionomedsl* `DomainModel`: questa classe è definita in `DomainModel.cs` nel progetto DSL.
+- *Proprionomedsl* `DomainModel` : Questa classe è definita in `DomainModel.cs` nel progetto DSL.
 
 ## <a name="reading-from-a-file"></a>Lettura da un file
  L'esempio seguente è progettato per leggere un linguaggio DSL in cui le classi importanti sono le seguenti:

@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586329"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Uso di Web browser diversi con test codificati dell'interfaccia utente
@@ -20,7 +20,7 @@ ms.locfileid: "82586329"
 
 I test codificati dell'interfaccia utente possono automatizzare il test delle applicazioni Web registrando i test tramite Internet Explorer. È quindi possibile personalizzare il test e riprodurlo usando Internet Explorer o un altro tipo di browser per queste applicazioni Web.
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
@@ -109,7 +109,7 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 
 - ![Prerequisito](../test/media/prereq.png "Prereq") L'automazione di azioni dell'interfaccia utente basate su browser specifiche come ingrandire, ridurre a icona e ripristinare non è supportata.
 
-  **Suggerimenti**
+  **Consigli**
 
 - ![Suggerimento](../test/media/tip.png "Suggerimento") È possibile configurare l'output per includere le schermate nei log codificati dell'interfaccia utente. A tale scopo, è necessario impostare alcune impostazioni di configurazione nel file QTAgent32.exe.config. Per impostazione predefinita, questo file è installato nel percorso seguente:
 
@@ -151,5 +151,5 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 ### <a name="forum"></a>Forum
  [Test di automazione dell'interfaccia utente di Visual Studio (include test codificati dell'interfaccia utente)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
  [Usare automazione interfaccia utente per testare le](../test/use-ui-automation-to-test-your-code.md) [configurazioni e le piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni analisi dei](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

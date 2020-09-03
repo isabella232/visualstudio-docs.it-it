@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255333"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Chiamata di codice nei componenti aggiuntivi VSTO da altre soluzioni Office
@@ -74,7 +74,7 @@ ms.locfileid: "71255333"
 
    - Impostare la proprietà **Registra per interoperabilità COM** nel progetto in cui si definisce l'interfaccia. Questa proprietà è necessaria solo se si vuole consentire ai client di usare l'associazione anticipata per effettuare chiamate nel componente aggiuntivo VSTO.
 
-   L'esempio di codice seguente illustra una classe `AddInUtilities` con un metodo `ImportData` che è possibile chiamare da altre soluzioni. Per visualizzare il codice nel contesto di una procedura dettagliata più ampia, [vedere Procedura dettagliata: Chiamare il codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
+   L'esempio di codice seguente illustra una classe `AddInUtilities` con un metodo `ImportData` che è possibile chiamare da altre soluzioni. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere [procedura dettagliata: chiamare il codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
@@ -82,9 +82,9 @@ ms.locfileid: "71255333"
 ### <a name="expose-classes-to-vba"></a>Esporre le classi a VBA
  Quando si esegue la procedura riportata sopra, il codice VBA può chiamare solo i metodi dichiarati nell'interfaccia. Il codice VBA non può chiamare altri metodi della classe, inclusi i metodi che la classe ottiene dalle classi base, ad esempio <xref:System.Object>.
 
- In alternativa, è possibile esporre l'interfaccia [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) impostando <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> l'attributo sul valore AutoDispatch o sul valore <xref:System.Runtime.InteropServices.ClassInterfaceType> autoduale dell'enumerazione. Se si espone l'interfaccia, non è necessario dichiarare i metodi in un'interfaccia separata. Il codice VBA può tuttavia chiamare qualsiasi metodo pubblico e non statico della classe, inclusi i metodi ottenuti dalle classi base, ad esempio <xref:System.Object>. Inoltre, i client out-of-process che usano l'associazione anticipata non possono chiamare la classe.
+ In alternativa, è possibile esporre l'interfaccia [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) impostando l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo sul valore AutoDispatch o sul valore autoduale dell' <xref:System.Runtime.InteropServices.ClassInterfaceType> enumerazione. Se si espone l'interfaccia, non è necessario dichiarare i metodi in un'interfaccia separata. Il codice VBA può tuttavia chiamare qualsiasi metodo pubblico e non statico della classe, inclusi i metodi ottenuti dalle classi base, ad esempio <xref:System.Object>. Inoltre, i client out-of-process che usano l'associazione anticipata non possono chiamare la classe.
 
-### <a name="outofproc"></a>Esporre le classi ai client out-of-process
+### <a name="expose-classes-to-out-of-process-clients"></a><a name="outofproc"></a> Esporre le classi ai client out-of-process
  Per esporre una classe del componente aggiuntivo VSTO a client out-of-process, è necessario derivare la classe da <xref:System.Runtime.InteropServices.StandardOleMarshalObject> per assicurarsi che i client out-of-process possano chiamare l'oggetto componente aggiuntivo VSTO esposto. In caso contrario, i tentativi di ottenere un'istanza dell'oggetto esposto in un client out-of-process potrebbero non riuscire in modo imprevisto.
 
  Questo errore si verifica perché tutte le chiamate nel modello a oggetti di un'applicazione di Office devono essere effettuate nel thread principale dell'interfaccia utente, ma le chiamate da un client out-of-process all'oggetto arriveranno a un thread RPC (Remote Procedure Call) arbitrario. Il meccanismo di marshalling COM in .NET Framework non cambia thread e tenta invece di effettuare il marshalling della chiamata all'oggetto nel thread RPC in ingresso anziché nel thread principale dell'interfaccia utente. Se l'oggetto è un'istanza di una classe che deriva da <xref:System.Runtime.InteropServices.StandardOleMarshalObject>, viene effettuato automaticamente il marshalling delle chiamate in ingresso all'oggetto in relazione al thread in cui è stato creato l'oggetto esposto, che sarà il thread principale dell'interfaccia utente dell'applicazione host.
@@ -92,7 +92,7 @@ ms.locfileid: "71255333"
  Per altre informazioni sull'uso dei thread nelle soluzioni Office, vedere [supporto del threading in Office](../vsto/threading-support-in-office.md).
 
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Eseguire l'override del metodo RequestComAddInAutomationService
- L'esempio di codice seguente illustra come eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> nella classe `ThisAddIn` del componente aggiuntivo VSTO. Nell'esempio si presuppone che sia stata definita una classe `AddInUtilities` denominata che si desidera esporre ad altre soluzioni. Per visualizzare il codice nel contesto di una procedura dettagliata più ampia, [vedere Procedura dettagliata: Chiamare il codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
+ L'esempio di codice seguente illustra come eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> nella classe `ThisAddIn` del componente aggiuntivo VSTO. Nell'esempio si presuppone che sia stata definita una classe denominata `AddInUtilities` che si desidera esporre ad altre soluzioni. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere [procedura dettagliata: chiamare il codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
@@ -111,7 +111,7 @@ ms.locfileid: "71255333"
    Il modo in cui si usa il valore restituito della proprietà COMAddIn. Object è diverso per i client VBA e i client non VBA. Per i client out-of-process, il codice aggiuntivo è necessario per evitare una possibile race condition.
 
 ### <a name="access-objects-from-vba-solutions"></a>Accesso agli oggetti da soluzioni VBA
- Nell'esempio di codice riportato di seguito viene illustrato come utilizzare VBA per chiamare un metodo esposto da un componente aggiuntivo VSTO. Questa macro VBA chiama un metodo denominato `ImportData` definito in un componente aggiuntivo VSTO denominato **ExcelImportData**. Per visualizzare il codice nel contesto di una procedura dettagliata più ampia, [vedere Procedura dettagliata: Chiamare il codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
+ Nell'esempio di codice riportato di seguito viene illustrato come utilizzare VBA per chiamare un metodo esposto da un componente aggiuntivo VSTO. Questa macro VBA chiama un metodo denominato `ImportData` definito in un componente aggiuntivo VSTO denominato **ExcelImportData**. Per visualizzare questo codice nel contesto di una procedura dettagliata più ampia, vedere [procedura dettagliata: chiamare il codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
 ```vb
 Sub CallVSTOMethod()
@@ -140,12 +140,12 @@ ExcelImportData.IAddInUtilities utilities = (ExcelImportData.IAddInUtilities)add
 utilities.ImportData();
 ```
 
- In questo esempio, se si tenta di eseguire il cast del valore della proprietà COMAddIn. Object alla `AddInUtilities` classe invece che all' `IAddInUtilities` interfaccia, il codice genererà un' <xref:System.InvalidCastException>eccezione.
+ In questo esempio, se si tenta di eseguire il cast del valore della proprietà COMAddIn. Object alla `AddInUtilities` classe invece che all' `IAddInUtilities` interfaccia, il codice genererà un'eccezione <xref:System.InvalidCastException> .
 
 ## <a name="see-also"></a>Vedere anche
 - [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
-- [Procedura dettagliata: Chiamare il codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+- [Procedura dettagliata: chiamare codice in un componente aggiuntivo VSTO da VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
-- [Procedura: Creazione di progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

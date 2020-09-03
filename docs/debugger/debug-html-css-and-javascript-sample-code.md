@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745551"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Eseguire il debug del codice di esempio HTML e CSS
@@ -26,7 +26,7 @@ ms.locfileid: "72745551"
 Il codice in questo argomento è il file di esempio per la [Guida introduttiva: eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.
 
 ## <a name="sample-code"></a>Codice di esempio
-Il codice HTML seguente viene usato nel tag \<body> della guida introduttiva.
+Il codice HTML seguente viene usato nel \<body> tag nella Guida introduttiva.
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745772"
 ---
 # <a name="assertion-failed-dialog-box"></a>Asserzione non riuscita (finestra di dialogo)
@@ -33,8 +33,8 @@ Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia val
 |Fare clic su|Per|
 |-----------|--------|
 |Riprova|Effettuare il debug dell'asserzione o visualizzare la Guida relativa alle asserzioni.|
-|Ignore|Ignorare l'asserzione e continuare l'esecuzione del programma.|
-|Abort|Interrompere l'esecuzione del programma e terminare la sessione di debug.|
+|Ignora|Ignorare l'asserzione e continuare l'esecuzione del programma.|
+|Interruzione|Interrompere l'esecuzione del programma e terminare la sessione di debug.|
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c57fab57b4f9baf24212e2806d6d4acd913dff91
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586743"
 ---
 # <a name="debugging-gpu-code"></a>Debug del codice GPU
@@ -52,9 +52,9 @@ ms.locfileid: "82586743"
 ## <a name="debugging-windows"></a>Debug di Windows  
  L'utilizzo di alcune finestre di debug consente di esaminare, contrassegnare e bloccare i thread della GPU. Per altre informazioni, vedere:  
   
-- [Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)  
+- [Utilizzo della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)  
   
-- [Uso della finestra Attività](../debugger/using-the-tasks-window.md)  
+- [Utilizzo della finestra Attività](../debugger/using-the-tasks-window.md)  
   
 - [Procedura: usare la finestra espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)  
   
@@ -82,7 +82,7 @@ ms.locfileid: "82586743"
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Errore: Timeout Detection and Recovery (TDR) deve essere disabilitato nel sito remoto.  
  È possibile che i calcoli di C++ AMP superino l'intervallo predefinito impostato tramite il processo Timeout Detection and Recovery (TDR) di Windows. In tal caso, il calcolo viene annullato e i dati vengono persi. Per ulteriori informazioni, vedere [Gestione di TDR in C++ AMP](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/07/handling-tdrs-in-c-amp.aspx).  
   
-## <a name="see-also"></a>Vedi anche  
+## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Avviare il debug della GPU in Visual Studio](https://docs.microsoft.com/archive/blogs/nativeconcurrency/start-gpu-debugging-in-visual-studio-2012)

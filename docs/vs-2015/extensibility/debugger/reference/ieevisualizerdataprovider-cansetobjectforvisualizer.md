@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::CanSetObjectForVisualizer | Microsoft Docs
+title: 'IEEVisualizerDataProvider:: CanSetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af1569e315b2010ad734c8776bd8436110365c40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196174"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo determina se il visualizzatore può avere l'oggetto dati rappresenta aggiornato.  
+Questo metodo determina se il visualizzatore può avere l'oggetto dati che rappresenta aggiornato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int CanSetObjectForVisualizer(
   
 #### <a name="parameters"></a>Parametri  
  `b`  
- [out] Diverso da zero (`TRUE`) se l'oggetto nel visualizzatore può essere aggiornato, zero (`FALSE`) se non è possibile.  
+ out Diverso da zero ( `TRUE` ) se l'oggetto nel visualizzatore può essere aggiornato, zero ( `FALSE` ) se non è possibile.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Un oggetto potrebbe non essere modificabile se sono associato alla memoria di sola lettura, ad esempio.  
+## <a name="remarks"></a>Osservazioni  
+ Un oggetto potrebbe non essere modificabile se è associato alla memoria di sola lettura, ad esempio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

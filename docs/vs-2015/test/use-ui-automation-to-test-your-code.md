@@ -18,10 +18,10 @@ caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e054909bb8f020ed496185f0ba64aafec016358b
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586457"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
@@ -39,7 +39,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
  L'editor specializzato e il Generatore di test codificati dell'interfaccia utente agevolano la creazione e la modifica di test codificati dell'interfaccia utente, anche se proprie competenze principali sono orientate al testing piuttosto che alla scrittura di codice. Per gli sviluppatori che vogliono estendere i test in modo più avanzato, tuttavia, il codice è strutturato in modo da essere estremamente semplice da copiare e adattare. Ad esempio, si può registrare un test per l'acquisto di un articolo in un sito Web e quindi modificare il codice generato per aggiungere un ciclo che acquista molti articoli.
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
@@ -65,7 +65,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
 - [Passaggi successivi](#VerifyCodeUsingCUITWhatsNext)
 
-## <a name="creating-coded-ui-tests"></a><a name="VerifyingCodeUsingCUITCreate"></a>Creazione di test codificati dell'interfaccia utente
+## <a name="creating-coded-ui-tests"></a><a name="VerifyingCodeUsingCUITCreate"></a> Creazione di test codificati dell'interfaccia utente
 
 1. **Creare un progetto di test codificato dell'interfaccia utente.**
 
@@ -154,7 +154,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
    Le sezioni rimanenti di questo argomento offrono informazioni più dettagliate sui passaggi di questa procedura.
 
-   Per un esempio più dettagliato, vedere [procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In questa procedura dettagliata verrà creata una semplice applicazione Windows Presentation Foundation (WPF) per dimostrare come creare, modificare e gestire un test codificato dell'interfaccia utente. Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring del controllo.
+   Per un esempio più dettagliato, vedere  [procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In questa procedura dettagliata verrà creata una semplice applicazione Windows Presentation Foundation (WPF) per dimostrare come creare, modificare e gestire un test codificato dell'interfaccia utente. Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring del controllo.
 
 ### <a name="starting-and-stopping-the-application-under-test"></a><a name="starting"></a> Avvio e arresto dell'applicazione sottoposta a test
  *Non voglio avviare e arrestare l'applicazione, il browser o il database separatamente per ogni test. Ricerca per categorie evitare questo?*
@@ -288,7 +288,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
-## <a name="customizing-your-coded-ui-test"></a><a name="VerifyingCodeCUITModify"></a>Personalizzazione del test codificato dell'interfaccia utente
+## <a name="customizing-your-coded-ui-test"></a><a name="VerifyingCodeCUITModify"></a> Personalizzazione del test codificato dell'interfaccia utente
  Dopo aver creato il test codificato dell'interfaccia utente, è possibile modificarlo usando uno qualsiasi degli strumenti seguenti in Visual Studio:
 
 - **Generatore di test codificati dell'interfaccia utente:** usare il Generatore di test codificati dell'interfaccia utente per aggiungere controlli e convalida ai test. Vedere la sezione [Aggiunta di controlli e la convalida delle proprietà](#VerifyingCodeUsingCUITGenerateAssertions) in questo argomento.
@@ -315,7 +315,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
-### <a name="the-generated-code"></a><a name="generatedCode"></a>Codice generato
+### <a name="the-generated-code"></a><a name="generatedCode"></a> Codice generato
  Quando si sceglie **Genera codice**, vengono create diverse parti di codice:
 
 - **Una riga nel metodo di test.**
@@ -383,7 +383,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
   Per altre informazioni sul codice generato, vedere [anatomia di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).
 
-### <a name="coding-ui-control-actions-and-properties"></a><a name="actions"></a>Codifica di azioni e proprietà del controllo dell'interfaccia utente
+### <a name="coding-ui-control-actions-and-properties"></a><a name="actions"></a> Codifica di azioni e proprietà del controllo dell'interfaccia utente
  Quando si usano i controlli di test dell'interfaccia utente nei test codificati dell'interfaccia utente, questi sono suddivisi in due parti: azioni e proprietà.
 
 - La prima parte consiste in azioni che è possibile eseguire sui controlli di test dell'interfaccia utente. Ad esempio, i test codificati dell'interfaccia utente possono simulare i clic del mouse su un controllo di test dell'interfaccia utente o i tasti premuti sulla tastiera per agire su un controllo di test dell'interfaccia utente.
@@ -439,17 +439,17 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-### <a name="debugging"></a><a name="debugging"></a>Debug
+### <a name="debugging"></a><a name="debugging"></a> Debug
  È possibile analizzare i test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente. I log dei test codificati dell'interfaccia utente filtrano e registrano informazioni importanti sulle esecuzioni dei test codificati dell'interfaccia utente. Il formato dei log consente di eseguire rapidamente il debug dei problemi. Per altre informazioni, vedere [Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-## <a name="whats-next"></a><a name="VerifyCodeUsingCUITWhatsNext"></a>Passaggi successivi
+## <a name="whats-next"></a><a name="VerifyCodeUsingCUITWhatsNext"></a> Passaggi successivi
  **Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:** come descritto in precedenza in questo argomento, è possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio. In più, è possibile eseguire test automatizzati dell'interfaccia utente da [!INCLUDE[TCMext](../includes/tcmext-md.md)] o da [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
 
 - [Procedura: eseguire test da Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
 - [Esecuzione di test automatizzati in Microsoft Test Manager](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Procedura: configurare ed eseguire test pianificati dopo la compilazione dell'applicazione](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Procedura: Configurare ed eseguire test pianificati dopo la compilazione dell'applicazione](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [Eseguire test nel processo di compilazione](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 

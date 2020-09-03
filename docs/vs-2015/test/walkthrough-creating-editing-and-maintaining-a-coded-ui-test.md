@@ -9,10 +9,10 @@ caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586913"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente
@@ -49,11 +49,11 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 9. Nella sezione **Tutti i controlli di WPF** trascinare i controlli **Button**, **CheckBox** e **ProgressBar** su MainWindow nell'area di progettazione.
 
-10. Selezionare il controllo Button. Nella finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a button1. Modificare quindi il valore della proprietà **Content** da Button a Start.
+10. Selezionare il controllo Button. Nella Finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a Button1. Modificare quindi il valore della proprietà **Content** da Button a Start.
 
-11. Selezionare il controllo ProgressBar. Nella finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a progressBar1. Modificare quindi il valore della proprietà **Maximum** da **100** a **10000**.
+11. Selezionare il controllo ProgressBar. Nella Finestra Proprietà modificare il valore per il valore della proprietà **Name** da \<No Name> a ProgressBar1. Modificare quindi il valore della proprietà **Maximum** da **100** a **10000**.
 
-12. Selezionare il controllo Checkbox. Nella finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a checkBox1 e quindi deselezionare la proprietà **IsEnabled**.
+12. Selezionare il controllo Checkbox. Nella Finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a CheckBox1 e deselezionare la proprietà **IsEnabled** .
 
      ![Applicazione WPF semplice](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
@@ -118,7 +118,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 ### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Creare ed eseguire un test codificato dell'interfaccia utente per SimpleWPFApp
 
-1. Individuare l'applicazione SimpleWPFApp creata precedentemente. Per impostazione predefinita, l'applicazione viene salvata in C:\Users\\\<nomeutente\>\Documenti\Visual Studio \<versione>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1. Individuare l'applicazione SimpleWPFApp creata precedentemente. Per impostazione predefinita, l'applicazione si trova in C:\Users \\<nomeutente \> \documenti\visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
 
 2. Creare un collegamento sul desktop all'applicazione SimpleWPFApp. Fare clic con il pulsante destro del mouse su SimpleWPFApp.exe e scegliere **Copia**. Sul desktop fare clic con il pulsante destro del mouse e scegliere **Incolla collegamento**.
 
@@ -386,5 +386,5 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 ### <a name="forum"></a>Forum
  [Test di automazione dell'interfaccia utente di Visual Studio (include CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
  [Usare automazione interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) [Introduzione con le](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [configurazioni e le piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [modifica dei test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

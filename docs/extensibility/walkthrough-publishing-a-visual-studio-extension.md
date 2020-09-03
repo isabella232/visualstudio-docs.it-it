@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904742"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: pubblicare un'estensione di Visual Studio
@@ -68,7 +68,7 @@ Questo articolo usa un'estensione VSPackage predefinita, ma i passaggi sono vali
 
 6. Scegliere il server di pubblicazione che si vuole usare per caricare l'estensione. È possibile modificare i server di pubblicazione facendo clic sui nomi dei server di pubblicazione elencati a sinistra. Fare clic su **nuova estensione** e selezionare **Visual Studio**.
 
-7. In **1: caricare l'estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o semplicemente aggiungere un collegamento al proprio sito Web. In questo esempio viene caricata l'estensione *TestPublish. vsix* . Trascinare e rilasciare l'estensione o usare il collegamento **fare clic** per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Fare clic su **Continue**.
+7. In **1: caricare l'estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o semplicemente aggiungere un collegamento al proprio sito Web. In questo esempio viene caricata l'estensione *TestPublish. vsix* . Trascinare e rilasciare l'estensione o usare il collegamento **fare clic** per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Fare clic su **Continua**.
 
 8. In **2: specificare i dettagli dell'estensione**. alcuni campi vengono popolati automaticamente dal file *source. Extension. vsixmanifest* dall'estensione. Per ulteriori dettagli, vedere:
 
@@ -90,7 +90,7 @@ Questo articolo usa un'estensione VSPackage predefinita, ma i passaggi sono vali
 
     * * * L'edizione di Visual Studio supportata consente di scegliere le edizioni di Visual Studio su cui funzionerà l'estensione. L'estensione viene installata solo in queste edizioni.
 
-    * **Tipo**. Il tipo più comune di estensioni sono **gli strumenti**di.
+    * **Type**. Il tipo più comune di estensioni sono **gli strumenti**di.
 
     * **Categorie**. È possibile scegliere un massimo di tre adatta per l'estensione.
 
@@ -136,7 +136,7 @@ Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il
 
 2. Fare clic su **online** e quindi cercare **TestPublish**.
 
-3. Fare clic su **Download**. L'estensione viene quindi pianificata per l'installazione.
+3. Fare clic su **Scarica**. L'estensione viene quindi pianificata per l'installazione.
 
 4. Per completare l'installazione, chiudere tutte le istanze di Visual Studio.
 

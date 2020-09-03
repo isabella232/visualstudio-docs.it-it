@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904554"
 ---
 # <a name="localize-menu-commands"></a>Comandi di menu Localize
@@ -147,7 +147,7 @@ Per incorporare le risorse localizzate, è necessario modificare il file *Assemb
     </EmbeddedResource>
     ```
 
-8. Per ogni lingua localizzata, copiare l' `EmbeddedResource` elemento per `VsPackage.en-US` e impostare l'attributo **include** e l'elemento **LogicalName** della copia nelle impostazioni locali di destinazione.
+8. Per ogni lingua localizzata, copiare l'  `EmbeddedResource` elemento per `VsPackage.en-US` e impostare l'attributo **include** e l'elemento **LogicalName** della copia nelle impostazioni locali di destinazione.
 
 9. Per ogni elemento localizzato `VSCTCompile` , aggiungere un `ResourceName` elemento a cui punta `Menus.ctmenu` , come illustrato nell'esempio seguente:
 

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745801"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Requisiti di sistema per il debug di ASP.NET
@@ -34,17 +34,17 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
 
 - Il debug remoto in cui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è in esecuzione in un computer client ed esegue il debug di un'applicazione Web in esecuzione in un computer server remoto.
 
-## <a name="security-requirements"></a>Requisiti di sicurezza
+## <a name="security-requirements"></a>Requisiti si sicurezza
  Per il debug remoto, i computer locale e remoto devono appartenere a una configurazione di dominio o di gruppo di lavoro.
 
- Per eseguire il debug del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (ospitato da un pool di applicazioni), è necessario disporre dell'autorizzazione per eseguire il debug del processo. Per impostazione predefinita, le applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] prima di IIS 6,0 vengono eseguite come utente **ASPNET** . In IIS 6,0 e IIS 7,0, l'account **servizio di rete** è il valore predefinito. Se il processo di lavoro è in esecuzione come **ASPNET**o come **SERVIZIO DI RETE**, per eseguirne il debug è necessario disporre dei privilegi di amministratore.
+ Per eseguire il debug del [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processo di lavoro (ospitato da un pool di applicazioni), è necessario disporre dell'autorizzazione per eseguire il debug del processo. Per impostazione predefinita, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le applicazioni precedenti a IIS 6,0 vengono eseguite come utente **ASPNET** . In IIS 6,0 e IIS 7,0, l'account **servizio di rete** è il valore predefinito. Se il processo di lavoro è in esecuzione come **ASPNET**o come **SERVIZIO DI RETE**, per eseguirne il debug è necessario disporre dei privilegi di amministratore.
 
  > [!IMPORTANT]
  > A partire da Windows Server 2008 R2, è consigliabile usare [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
 
  Il nome del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni, vedere [Procedura: individuare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
 
- È possibile modificare l'account utente con cui il processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] viene eseguito modificando il file machine.config nel server su cui è in esecuzione IIS. Il modo migliore per eseguire questa operazione è usare **Gestione Internet Information Services (IIS)** . Per altre informazioni, vedere [procedura: eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
+ È possibile modificare l'account utente con cui il processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] viene eseguito modificando il file machine.config nel server su cui è in esecuzione IIS. Il modo migliore per eseguire questa operazione è usare **Gestione Internet Information Services (IIS)**. Per altre informazioni, vedere [procedura: eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
 
  Se si modifica il processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] affinché venga eseguito con il proprio account utente, non è necessario essere un amministratore nel server che esegue IIS.
 
@@ -54,4 +54,4 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
 ## <a name="see-also"></a>Vedere anche
 
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Procedura: Eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+- [Procedura: eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

@@ -1,5 +1,5 @@
 ---
-title: Debug F# | Microsoft Docs
+title: 'Debug di F # | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7bc3934136f0966439bec2e4368488e52099602
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738261"
 ---
 # <a name="debugging-f"></a>Debug di F\#
@@ -33,4 +33,4 @@ Il debug di F #è simile al debug di qualsiasi linguaggio gestito, con alcune ec
 - Il debugger non riconosce le espressioni F#. Per immettere un'espressione in una finestra o una finestra di dialogo del debugger durante il debug di F#, è necessario tradurre l'espressione nella sintassi C#. Quando si traduce un'espressione F# in C#, ricordare che C# utilizza == come operatore di confronto per uguaglianza e che F# utilizza un solo =.
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+- [Debug del codice gestito](../debugger/debugging-managed-code.md)

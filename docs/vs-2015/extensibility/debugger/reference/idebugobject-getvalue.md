@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue | Microsoft Docs
+title: 'IDebugObject:: GetValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de6e6888cfce338ebcee90e722f07e900ce25d0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180525"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene il valore dell'oggetto come una serie consecutiva di byte.  
+Ottiene il valore dell'oggetto come una serie di byte consecutivi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int GetValue(
   
 #### <a name="parameters"></a>Parametri  
  `pValue`  
- [in, out] Matrice che viene compilata con una serie consecutiva di byte che rappresenta il valore dell'oggetto.  
+ [in, out] Matrice compilata con una serie di byte consecutivi che rappresenta il valore dell'oggetto.  
   
  `nSize`  
- [in] Il numero massimo di byte da recuperare.  
+ in Numero massimo di byte da recuperare.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Ottenere il numero totale di byte di valore che può essere recuperato chiamando il [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Ottenere il numero totale di byte del valore che possono essere recuperati chiamando il metodo [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

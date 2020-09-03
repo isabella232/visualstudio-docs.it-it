@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586975"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente
@@ -20,7 +20,7 @@ ms.locfileid: "82586975"
 
 Includendo i test codificati dell'interfaccia utente in un'applicazione SharePoint è possibile verificare che l'intera applicazione, inclusi i controlli per l'interfaccia utente, siano correttamente funzionanti. I test codificati dell'interfaccia utente possono inoltre convalidare i valori e la logica dell'interfaccia utente.
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
@@ -60,7 +60,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- Se si eseguono azioni di registrazione su una cella non vuota, la registrazione diviene leggermente più complessa perché quando si aggiunge il testo in una cella, viene aggiunto un nuovo controllo \<div> come elemento figlio della cella. Il nuovo controllo \<div> contiene il testo appena immesso. Il registratore deve registrare le azioni nel nuovo controllo \<div>, ma non può perché il controllo \<div> non esiste finché il test non viene immesso. È necessario apportare manualmente le seguenti modifiche al codice per ovviare a questo problema.
+ Se si registrano azioni su una cella non vuota, la registrazione diventa leggermente più complicata, perché il momento in cui si aggiunge il testo a una cella, \<div> viene aggiunto un nuovo controllo come elemento figlio della cella. Il nuovo \<div> controllo contiene il testo appena immesso. Il registratore deve registrare le azioni sul nuovo \<div> controllo. Tuttavia, non può perché il nuovo \<div> controllo non esiste finché non viene immesso il test. È necessario apportare manualmente le seguenti modifiche al codice per ovviare a questo problema.
 
 1. Passare all'inizializzazione della cella e rendere primarie le proprietà `RowIndex` e `ColumnIndex` :
 
@@ -114,7 +114,7 @@ uiGridKeyboardInputEdit.Text=value;
 
 #### <a name="testing-silverlight-web-parts"></a>Test delle web part Silverlight
 
-1. Avviare Fiddler
+1. Avviare Fiddler.
 
 2. Cancellare la cache del browser. Questa operazione è necessaria perché il file web.config XAP, contenente la DLL di supporto dell'automazione dell'interfaccia utente di Silverlight, in genere viene memorizzato nella cache. È necessario assicurarsi dell'effettiva selezione del file XAP modificato e pertanto viene rimossa la cache del browser.
 
@@ -143,5 +143,5 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>Forum
  [Blog di Visual Studi ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
  [Usare l'automazione dell'interfaccia utente per testare le prestazioni Web del codice e i](../test/use-ui-automation-to-test-your-code.md) [test di carico per le applicazioni sharepoint 2010 e 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [creare soluzioni SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifica e debug di codice SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [compilazione e debug di soluzioni SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [profilatura delle prestazioni delle applicazioni SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

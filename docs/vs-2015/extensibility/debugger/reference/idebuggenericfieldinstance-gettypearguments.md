@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments | Microsoft Docs
+title: 'IDebugGenericFieldInstance:: GetTypeArguments | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bef4d6c0d36eafd0279d97ecad2d1d2cc0656e2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180823"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera gli argomenti di parametro di tipo per questa istanza.  
+Recupera gli argomenti del parametro di tipo per questa istanza.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,16 +43,16 @@ int GetTypeArguments(
   
 #### <a name="parameters"></a>Parametri  
  `cArgs`  
- [in] Numero di parametri di tipo.  
+ in Numero di parametri di tipo.  
   
  `ppArgs`  
- [out] Restituisce una matrice di parametri di tipo.  
+ out Restituisce una matrice di parametri di tipo.  
   
  `pcArgs`  
- [in, out] Numero di membri di `ppArgs` matrice.  
+ [in, out] Numero di membri nella `ppArgs` matrice.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

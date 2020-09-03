@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254446"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Azioni personalizzate nelle aree del modulo di Outlook
@@ -28,7 +28,7 @@ ms.locfileid: "71254446"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Aggiungere azioni personalizzate a un'area del modulo
- Per aggiungere un'azione personalizzata a un'area del modulo, utilizzare la finestra di dialogo **azioni personalizzate** . È possibile aprire la finestra di dialogo **azioni personalizzate** selezionando l'area del modulo in **Esplora soluzioni**, espandendo il nodo **manifesto** nella **finestra Proprietà**, selezionando la proprietà **CustomActions** e quindi facendo clic sul pulsante pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer")).
+ Per aggiungere un'azione personalizzata a un'area del modulo, utilizzare la finestra di dialogo **azioni personalizzate** . È possibile aprire la finestra di dialogo **azioni personalizzate** selezionando l'area del modulo in **Esplora soluzioni**, espandendo il nodo **manifesto** nella **finestra Proprietà**, selezionando la proprietà **CustomActions** , quindi facendo clic sul pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")).
 
  È possibile utilizzare la finestra di dialogo **azioni personalizzate** per specificare un *modulo di destinazione*. Un modulo di destinazione è il modulo che viene visualizzato quando l'utente esegue l'azione personalizzata.
 
@@ -40,18 +40,18 @@ ms.locfileid: "71254446"
 |--------------|-----------------|
 |**AddressLike**|Consente di specificare la modalità di indirizzamento del modulo di destinazione.|
 |**Corpo**|Specifica il modo in cui il corpo dell'elemento originale viene aggiunto al form di destinazione.|
-|**Enabled**|Indica se l'azione personalizzata è abilitata. Se questa proprietà è impostata su **false**, l'azione personalizzata è disabilitata.|
+|**Attivata**|Indica se l'azione personalizzata è abilitata. Se questa proprietà è impostata su **false**, l'azione personalizzata è disabilitata.|
 |**Metodo**|Specifica il tipo di risposta disponibile quando viene eseguita l'azione personalizzata. L'azione personalizzata può inviare il modulo, aprire il modulo o richiedere all'utente se vuole inviare o aprire il modulo.|
 |**Name**|Specifica il nome interno che è possibile usare per fare riferimento a questa azione personalizzata nel codice.|
 |**ShowOnRibbon**|Indica se visualizzare l'azione personalizzata sulla barra multifunzione dell'elemento originale.|
 |**SubjectPrefix**|Specifica il testo che viene inserito all'inizio della riga dell'oggetto del form di destinazione.|
 |**TargetForm**|Specifica il nome della classe del messaggio del form di destinazione. Inserire, ad esempio, **IPM. Attività** per l'apertura di un form attività.|
-|**Titolo**|Specifica l'etichetta del pulsante di azione personalizzato.|
+|**Title**|Specifica l'etichetta del pulsante di azione personalizzato.|
 
 ## <a name="customize-a-custom-action-at-run-time"></a>Personalizzare un'azione personalizzata in fase di esecuzione
  È anche possibile aggiungere il comportamento all'azione personalizzata usando il codice. Ad esempio, è possibile aggiungere il codice che accetta i nomi dei destinatari di posta elettronica e aggiunge tali nomi come partecipanti in un nuovo elemento appuntamento. A tale scopo, gestire l'evento [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) dell' [oggetto MailItem](/office/vba/api/Outlook.MailItem).
 
 ## <a name="see-also"></a>Vedere anche
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
-- [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

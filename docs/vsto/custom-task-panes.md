@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254386"
 ---
 # <a name="custom-task-panes"></a>Riquadri attività personalizzati
@@ -56,7 +56,7 @@ ms.locfileid: "71254386"
 
 2. Creare un'istanza del riquadro attività personalizzato passando il controllo utente all'oggetto <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> nel componente aggiuntivo VSTO. Questa raccolta restituisce un nuovo oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> che può essere usato per modificare l'aspetto del riquadro attività e per rispondere agli eventi utente.
 
-   Per altre informazioni, vedere [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+   Per altre informazioni, vedere [procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 ### <a name="create-the-user-interface"></a>Creare l'interfaccia utente
  Tutti i riquadri attività personalizzati creati tramite gli strumenti di sviluppo di Office in Visual Studio contengono un oggetto <xref:System.Windows.Forms.UserControl>. Tale controllo utente fornisce l'interfaccia utente del riquadro attività personalizzato e può essere creato in fase di progettazione o di esecuzione. Se viene creato in fase di progettazione, è possibile usare Progettazione Windows Form per costruire l'interfaccia utente del riquadro attività.
@@ -83,7 +83,7 @@ ms.locfileid: "71254386"
 ## <a name="access-the-application-from-the-task-pane"></a>Accedere all'applicazione dal riquadro attività
  Per automatizzare l'applicazione dal controllo utente, è possibile accedere direttamente al modello a oggetti usando la classe `Globals.ThisAddIn.Application` nel codice. La classe statica `Globals` consente di accedere all'oggetto `ThisAddIn`. Il campo `Application` di questo oggetto rappresenta il punto di ingresso nel modello a oggetti dell'applicazione.
 
- Per ulteriori informazioni sul `Application` campo `ThisAddIn` dell'oggetto, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Per una procedura dettagliata che illustra come automatizzare un'applicazione da un riquadro attività personalizzato, vedere [procedura dettagliata: Automatizzare un'applicazione da un riquadro](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)attività personalizzato. Per ulteriori informazioni sulla `Globals` classe, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Per ulteriori informazioni sul `Application` campo dell' `ThisAddIn` oggetto, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Per una procedura dettagliata che illustra come automatizzare un'applicazione da un riquadro attività personalizzato, vedere [procedura dettagliata: automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Per ulteriori informazioni sulla `Globals` classe, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).
 
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Gestire l'interfaccia utente del riquadro attività
  Dopo aver creato il riquadro attività è possibile usare le proprietà e gli eventi dell'oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> per controllare l'interfaccia utente del riquadro attività e per definire il comportamento in risposta alle modifiche apportate dall'utente al riquadro attività.
@@ -93,7 +93,7 @@ ms.locfileid: "71254386"
 
  Gli utenti possono chiudere un riquadro attività in qualsiasi momento facendo clic sul pulsante **Chiudi** (X) nell'angolo del riquadro attività. Non esiste, tuttavia, una modalità predefinita per riaprire il riquadro attività personalizzato. Se un utente chiude un riquadro attività personalizzato, potrà visualizzarlo di nuovo solo se viene fornito uno strumento che consente di eseguire tale operazione.
 
- Se si crea un riquadro attività personalizzato nel componente aggiuntivo VSTO, è consigliabile creare anche un elemento dell'interfaccia utente, ad esempio un pulsante, selezionabile dagli utenti per visualizzare o nascondere il riquadro stesso. Se il riquadro attività personalizzato viene creato in un'applicazione di Microsoft Office che supporta la personalizzazione della barra multifunzione, è possibile aggiungere un gruppo di controlli alla barra multifunzione contenente un pulsante che consente di visualizzare o nascondere il riquadro attività personalizzato. Per una procedura dettagliata che illustra come eseguire questa operazione, [vedere Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)della barra multifunzione.
+ Se si crea un riquadro attività personalizzato nel componente aggiuntivo VSTO, è consigliabile creare anche un elemento dell'interfaccia utente, ad esempio un pulsante, selezionabile dagli utenti per visualizzare o nascondere il riquadro stesso. Se il riquadro attività personalizzato viene creato in un'applicazione di Microsoft Office che supporta la personalizzazione della barra multifunzione, è possibile aggiungere un gruppo di controlli alla barra multifunzione contenente un pulsante che consente di visualizzare o nascondere il riquadro attività personalizzato. Per una procedura dettagliata che illustra come eseguire questa operazione, vedere [procedura dettagliata: sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
  Se si crea un riquadro attività personalizzato in un'applicazione di Microsoft Office che non supporta la personalizzazione della barra multifunzione, è possibile aggiungere un oggetto <xref:Microsoft.Office.Core.CommandBarButton> che consente di visualizzare o nascondere tale riquadro.
 
@@ -114,7 +114,7 @@ ms.locfileid: "71254386"
 
  Nella tabella seguente sono elencati gli eventi che è possibile gestire per rispondere alle modifiche apportate dall'utente al riquadro attività personalizzato.
 
-|Attività|event|
+|Attività|Evento|
 |----------|-----------|
 |Per definire il comportamento quando l'utente modifica la posizione del riquadro attività.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |Per definire il comportamento quando l'utente nasconde o rende visibile il riquadro attività.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|
@@ -124,9 +124,9 @@ ms.locfileid: "71254386"
 
  Per pulire le risorse usate dal riquadro attività mentre il componente aggiuntivo VSTO è ancora in esecuzione, usare i metodi <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Tali metodi rimuovono l'oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> specificato dalla raccolta `CustomTaskPanes` ed effettuano quindi la chiamata al metodo <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> dell'oggetto.
 
- In [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene effettuata la pulizia automatica delle risorse usate dal riquadro attività personalizzato quando il componente aggiuntivo VSTO viene scaricato. Non chiamare i <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> metodi o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> nel `ThisAddIn_Shutdown` gestore eventi nel progetto. Tali metodi generano un'eccezione <xref:System.ObjectDisposedException>, perché in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene effettuata la pulizia delle risorse usate dall'oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> prima della chiamata a `ThisAddIn_Shutdown`. Per altre informazioni su `ThisAddIn_Shutdown`, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md).
+ In [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene effettuata la pulizia automatica delle risorse usate dal riquadro attività personalizzato quando il componente aggiuntivo VSTO viene scaricato. Non chiamare i <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> metodi o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> nel `ThisAddIn_Shutdown` gestore eventi nel progetto. Tali metodi generano un'eccezione <xref:System.ObjectDisposedException>, perché in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene effettuata la pulizia delle risorse usate dall'oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> prima della chiamata a `ThisAddIn_Shutdown`. Per altre informazioni su `ThisAddIn_Shutdown` , vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md).
 
-## <a name="Managing"></a>Gestire i riquadri attività personalizzati in più finestre dell'applicazione
+## <a name="manage-custom-task-panes-in-multiple-application-windows"></a><a name="Managing"></a> Gestire i riquadri attività personalizzati in più finestre dell'applicazione
  Quando si crea un riquadro attività personalizzato in un'applicazione che usa più finestre per visualizzare documenti e altri elementi, è necessario effettuare altre azioni per assicurarsi che il riquadro attività sia visibile quando l'utente si aspetta che lo sia.
 
  I riquadri attività personalizzati in tutte le applicazioni sono associati a una finestra cornice del documento che presenta una visualizzazione di un documento o di un elemento all'utente. Il riquadro attività è visibile solo quando la finestra associata è visibile. Non tutte le applicazioni usano tuttavia le finestre cornice del documento nello stesso modo.
@@ -137,12 +137,12 @@ ms.locfileid: "71254386"
 
 - [Word, InfoPath e PowerPoint](#WordAndInfoPath)
 
-## <a name="Outlook"></a> Outlook
+## <a name="outlook"></a><a name="Outlook"></a> Outlook
  Quando si crea un riquadro attività personalizzato per Outlook, tale riquadro viene associato a una finestra di esplorazione o a una finestra di controllo specifica. Gli esploratori sono finestre che visualizzano il contenuto di una cartella e i controlli sono finestre che visualizzano un elemento, ad esempio un messaggio di posta elettronica o un'attività.
 
  Per visualizzare un riquadro attività personalizzato con più finestre di esplorazione o di controllo, è necessario creare una nuova istanza del riquadro attività personalizzato quando viene aperta una nuova finestra di esplorazione o di controllo. A questo scopo, gestire un evento generato quando viene creata una finestra di esplorazione o di controllo, quindi creare il riquadro attività nel gestore eventi. È anche possibile gestire gli eventi relativi alle finestre di esplorazione e di controllo per nascondere o visualizzare i riquadri attività a seconda di quale finestra è visibile.
 
- Per associare il riquadro attività a una finestra di esplorazione o a un controllo <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> specifico, utilizzare il metodo per creare il riquadro attività <xref:Microsoft.Office.Interop.Outlook.Explorer> e <xref:Microsoft.Office.Interop.Outlook.Inspector> passare l'oggetto o al parametro della *finestra* . Per ulteriori informazioni sulla creazione di riquadri attività personalizzati, vedere [Cenni preliminari sui riquadri attività personalizzati](../vsto/custom-task-panes.md).
+ Per associare il riquadro attività a una finestra di esplorazione o a un controllo specifico, utilizzare il <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metodo per creare il riquadro attività e passare l' <xref:Microsoft.Office.Interop.Outlook.Explorer> <xref:Microsoft.Office.Interop.Outlook.Inspector> oggetto o al parametro della *finestra* . Per ulteriori informazioni sulla creazione di riquadri attività personalizzati, vedere [Cenni preliminari sui riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
 - <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>
 
@@ -167,12 +167,12 @@ ms.locfileid: "71254386"
 
  Se non si rimuove esplicitamente il riquadro attività personalizzato, nelle finestre di Outlook potrebbero essere visualizzate più istanze di tale riquadro. In Outlook le finestre vengono talvolta riciclate e pertanto possono conservare riferimenti ai riquadri attività personalizzati a esse associati.
 
-## <a name="WordAndInfoPath"></a>Word, InfoPath e PowerPoint
+## <a name="word-infopath-and-powerpoint"></a><a name="WordAndInfoPath"></a> Word, InfoPath e PowerPoint
  Word, InfoPath e PowerPoint visualizzano ogni documento in una finestra cornice documento diversa. Quando si crea un riquadro attività personalizzato per queste applicazioni, tale riquadro viene associato solo a un documento specifico. Se l'utente apre un documento diverso, il riquadro attività personalizzato viene nascosto fino a che il documento precedente non è nuovamente visibile.
 
  Per visualizzare un riquadro attività personalizzato con più documenti, creare una nuova istanza del riquadro attività personalizzato quando l'utente crea un nuovo documento o ne apre uno esistente. A questo scopo, gestire gli eventi generati quando viene creato o aperto un documento, quindi creare il riquadro attività nei gestori di eventi. È inoltre possibile gestire gli eventi del documento per nascondere o visualizzare i riquadri attività a seconda del documento visibile.
 
- Per associare il riquadro attività a una finestra del documento specifica, usare <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> il metodo per creare il riquadro attività e passare un <xref:Microsoft.Office.Interop.Word.Window> (per Word), <xref:Microsoft.Office.Interop.InfoPath.WindowObject> (per InfoPath) o [DocumentWindow](/previous-versions/office/developer/office-2010/ff762047(v=office.14)) (per PowerPoint) al parametro della *finestra* .
+ Per associare il riquadro attività a una finestra del documento specifica, usare il <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metodo per creare il riquadro attività e passare un <xref:Microsoft.Office.Interop.Word.Window> (per Word),  <xref:Microsoft.Office.Interop.InfoPath.WindowObject> (per InfoPath) o [DocumentWindow](/previous-versions/office/developer/office-2010/ff762047(v=office.14)) (per PowerPoint) al parametro *Window* .
 
 ### <a name="word-events"></a>Eventi di Word
  Per monitorare lo stato delle finestre di documento in Word, è possibile gestire gli eventi seguenti:
@@ -203,20 +203,20 @@ ms.locfileid: "71254386"
 ### <a name="powerpoint-events"></a>Eventi di PowerPoint
  Per monitorare lo stato delle finestre di documento in PowerPoint, è possibile gestire gli eventi seguenti:
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
-- [Procedura dettagliata: Visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [Procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Procedura dettagliata: automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [Procedura dettagliata: sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [Procedura dettagliata: visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
