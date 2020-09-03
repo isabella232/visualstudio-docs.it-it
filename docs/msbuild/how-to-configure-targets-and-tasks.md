@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288897"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Procedura: Configurare destinazioni e attività
@@ -112,7 +112,7 @@ I parametri `MSBuildRuntime` e `MSBuildArchitecture` offrono il metodo più fles
 > [!NOTE]
 > I parametri dell'attività vengono valutati nel contesto del nodo padre, non nel contesto dell'host dell'attività. Le variabili di ambiente dipendenti dal runtime o dall'architettura, come ad esempio, il percorso di *Programmi*, restituiranno il valore che corrisponde al nodo padre. Tuttavia, se la stessa variabile di ambiente viene letta direttamente dall'attività, verrà valutata correttamente nel contesto dell'host di attività.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Configurare destinazioni e attività](../msbuild/configuring-targets-and-tasks.md)
 - [Elemento UsingTask](../msbuild/usingtask-element-msbuild.md)

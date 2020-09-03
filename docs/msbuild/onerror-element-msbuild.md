@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633083"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 
 Fa in modo che vengano eseguite una o più destinazioni se l'attributo `ContinueOnError` è `false` per un'attività non riuscita.
 
- \<Project> \<Target> \<OnError>
+ \<Project> \<Target>
+ \<OnError>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,23 +52,23 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 
 ### <a name="child-elements"></a>Elementi figlio
 
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Destinazione](../msbuild/target-element-msbuild.md) | Elemento contenitore per le attività MSBuild.Container element for MSBuild tasks. |
+| [Destinazione](../msbuild/target-element-msbuild.md) | Elemento contenitore per le attività di MSBuild. |
 
 ## <a name="remarks"></a>Osservazioni
 
- MSBuild esegue `OnError` l'elemento se `Target` una delle attività `ContinueOnError` dell'elemento `ErrorAndStop` ha `false`esito negativo con l'attributo impostato su (or ). Quando l'attività ha esito negativo, vengono eseguite le destinazioni specificate nell'attributo `ExecuteTargets`. Se la destinazione include più di un elemento `OnError`, gli elementi `OnError` vengono eseguiti in sequenza quando l'attività ha esito negativo.
+ MSBuild esegue l' `OnError` elemento se una delle attività dell' `Target` elemento ha esito negativo con l' `ContinueOnError` attributo impostato su `ErrorAndStop` (o `false` ). Quando l'attività ha esito negativo, vengono eseguite le destinazioni specificate nell'attributo `ExecuteTargets`. Se la destinazione include più di un elemento `OnError`, gli elementi `OnError` vengono eseguiti in sequenza quando l'attività ha esito negativo.
 
  Per altre informazioni sull'attributo `ContinueOnError`, vedere [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). Per informazioni sulle destinazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).
 
 ## <a name="example"></a>Esempio
 
- Il codice seguente esegue le attività `TaskOne` e `TaskTwo`. Se `TaskOne` ha esito negativo, MSBuild valuta l'elemento `OnError` ed esegue la `OtherTarget` destinazione.
+ Il codice seguente esegue le attività `TaskOne` e `TaskTwo`. Se ha `TaskOne` esito negativo, MSBuild valuta l' `OnError` elemento ed esegue la `OtherTarget` destinazione.
 
 ```xml
 <Target Name="ThisTarget">
@@ -81,5 +82,5 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
+- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Server di destinazione](../msbuild/msbuild-targets.md)

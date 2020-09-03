@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632966"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 
-Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qualsiasi elemento `ProjectExtensions` all'interno di un elemento verrà ignorato da MSBuild.Anything inside of a element will be ignored by MSBuild.
+Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qualsiasi elemento all'interno di un `ProjectExtensions` elemento verrà ignorato da MSBuild.
 
  \<Project> \<ProjectExtensions>
 
@@ -45,21 +45,21 @@ Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qual
 
 ### <a name="attributes"></a>Attributes
 
- nessuno
+ Nessuno
 
 ### <a name="child-elements"></a>Elementi figlio
 
- nessuno
+ Nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 
 | Elemento | Descrizione |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
 ## <a name="remarks"></a>Osservazioni
 
- In `ProjectExtensions` un progetto MSBuild è possibile utilizzare un solo elemento.
+ `ProjectExtensions`È possibile utilizzare un solo elemento in un progetto MSBuild.
 
 ## <a name="example"></a>Esempio
 
@@ -79,5 +79,5 @@ Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qual
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
+- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

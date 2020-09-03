@@ -62,10 +62,10 @@ caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850966"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Errori e avvisi di Modifica e continuazione (C#)
@@ -81,7 +81,7 @@ ms.locfileid: "75850966"
   
 1. Scegliere **Annulla** dal menu **Debug** per annullare la modifica.  
   
-     oppure  
+     -oppure-  
   
 2. Terminare la sessione di debug, apportare le modifiche, quindi avviare una nuova sessione di debug.  
   

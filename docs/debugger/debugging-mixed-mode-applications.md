@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ba41447af829a378f70d2286ed7a7b9295ed109
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916285"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debug delle applicazioni in modalità mista
@@ -33,7 +33,7 @@ Un'applicazione in modalità mista combina codice nativo (C++) con codice gestit
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Abilitare la funzione di modifica e continuazione di C++ nel debug in modalità mista
 
-Per abilitare modifica e continuazione C++per, vedere [come abilitare e disabilitare modifica e continuazione](../debugger/how-to-enable-and-disable-edit-and-continue.md).
+Per abilitare modifica e continuazione per C++, vedere [come abilitare e disabilitare modifica e continuazione](../debugger/how-to-enable-and-disable-edit-and-continue.md).
 
 > [!NOTE]
 > Per utilizzare Modifica e continuazione per C++ in Visual Studio 2013, è necessario ripristinare il motore di debug legacy. Vedere [Passaggio alla modalità di compatibilità gestita in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/) nel blog Microsoft Application Lifecycle Management.
@@ -42,7 +42,7 @@ Per abilitare modifica e continuazione C++per, vedere [come abilitare e disabili
  In un'applicazione in modalità mista la valutazione delle proprietà tramite il debugger è un'operazione complessa. Di conseguenza, alcune operazioni di debug, ad esempio il debug passo a passo, possono risultare lente. Per altre informazioni, vedere [Esecuzione di un'istruzione del codice alla volta](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)). Se nel debug in modalità mista le prestazioni non risultano soddisfacenti, disattivare la valutazione delle proprietà nelle finestre del debugger.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 ### <a name="to-turn-off-property-evaluation"></a>Per disattivare la valutazione delle proprietà
 
@@ -56,4 +56,4 @@ Per abilitare modifica e continuazione C++per, vedere [come abilitare e disabili
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+- [Debug del codice gestito](../debugger/debugging-managed-code.md)

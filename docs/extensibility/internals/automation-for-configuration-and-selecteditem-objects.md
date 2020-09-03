@@ -1,5 +1,5 @@
 ---
-title: Automazione per gli oggetti Configuration e SelectedItem . Documenti Microsoft
+title: Automazione per gli oggetti Configuration e SelectedItem | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0341cdf56b32b8b1ac77104b3f3e813ae0610767
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709963"
 ---
-# <a name="automation-for-configuration-and-selecteditem-objects"></a>Automazione per gli oggetti Configuration e SelectedItem
+# <a name="automation-for-configuration-and-selecteditem-objects"></a>Automazione per oggetti Configuration e SelectedItem
 
-È possibile automatizzare i processi di compilazione e di elemento selezionati in Visual Studio.You can automate the build and selected item processes in Visual Studio.
+È possibile automatizzare i processi di compilazione e di elementi selezionati in Visual Studio.
 
 ## <a name="automation-for-builds"></a>Automazione per le compilazioni
 
-La compilazione o la configurazione dispone <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>di un modello di automazione fornito quando si implementa . Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../../ide/understanding-build-configurations.md).
+La compilazione o la configurazione ha un modello di automazione fornito quando si implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider> . Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../../ide/understanding-build-configurations.md).
 
 Se si crea un pacchetto VSPackage e si desidera controllare le opzioni di configurazione, è necessario utilizzare il modello di automazione.
 
 ## <a name="automation-for-selecteditem"></a>Automazione per SelectedItem
 
-Non è necessario fornire un'implementazione per l'oggetto `SelectedItem` perché Visual Studio contiene un'implementazione standard. Tuttavia, è `SelectedItem` possibile implementare l'oggetto, se si preferisce. È necessario implementare un `SelectedItem` oggetto che contiene l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> e `VSITEMID` restituire una risposta a una chiamata al metodo con impostato su [__VSHPROPID. VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>).
+Non è necessario fornire un'implementazione per l' `SelectedItem` oggetto perché Visual Studio contiene un'implementazione standard. Tuttavia, è possibile implementare l' `SelectedItem` oggetto se lo si preferisce. È necessario implementare un oggetto che contiene l' `SelectedItem` interfaccia e restituire una risposta a una chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metodo con `VSITEMID` impostato su [__VSHPROPID. VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>).
 
 ## <a name="see-also"></a>Vedere anche
 

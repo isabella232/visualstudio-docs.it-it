@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852122"
 ---
 # <a name="programming-with-the-uml-api"></a>Programmazione con l'API UML
@@ -53,10 +53,10 @@ L'API UML di Visual Studio consente di scrivere codice per creare, leggere e agg
 
 |Assembly|Spazi dei nomi|Consente di accedere a:|
 |--------------|----------------|-------------------------|
-|Microsoft.VisualStudio.Uml.Interfaces|(Tutte)|Tipi UML.|
+|Microsoft.VisualStudio.Uml.Interfaces|(Tutto)|Tipi UML.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. ArchitectureTools. Extensibility. Uml|[Metodi di creazione](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagrammi e forme](../modeling/display-a-uml-model-on-diagrams.md)|
-||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[Progetto di modello](../modeling/read-a-uml-model-in-program-code.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[Progetto di modellazione](../modeling/read-a-uml-model-in-program-code.md)|
 |Microsoft.VisualStudio.Modeling.Sdk.[versione]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Estensione del comando di menu](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Transazioni di annullamento collegate](../modeling/link-uml-model-updates-by-using-transactions.md).|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[Convalida](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(altri spazi dei nomi)|Opzione consigliata solo per utenti esperti.|
@@ -65,7 +65,7 @@ L'API UML di Visual Studio consente di scrivere codice per creare, leggere e agg
 |Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Collegamenti a elementi di lavoro](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Elementi di lavoro e relativi campi](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Elementi di lavoro e relativi campi](../modeling/define-a-work-item-link-handler.md).|
-|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Esportare e importare per i componenti MEF](../modeling/define-and-install-a-modeling-extension.md)|
+|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Esportazione e importazione per i componenti MEF](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[Manipolazione semplificata delle raccolte, soprattutto quando si gestiscono le relazioni](../modeling/navigate-relationships-with-the-uml-api.md).|
 
 ## <a name="see-also"></a>Vedere anche

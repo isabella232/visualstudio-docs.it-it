@@ -17,19 +17,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9a9ec5f83a6df3dab262e24aac5c36b2d65ef00
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852370"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: Usare esclusivamente la tastiera
+# <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: utilizzare esclusivamente la tastiera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prevede molte combinazioni di tasti predefinite per semplificare lo spostamento e la programmazione all'interno dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per un elenco completo delle combinazioni di tasti usate in Visual Studio, vedere [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni sui tasti di scelta rapida disponibili per altri prodotti Microsoft, vedere [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prevede molte combinazioni di tasti predefinite per semplificare lo spostamento e la programmazione all'interno dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per un elenco completo dei tasti di scelta rapida usati in Visual Studio, vedere Tasti di scelta rapida [predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni sui tasti di scelta rapida disponibili per altri prodotti Microsoft, vedere [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx) .
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="toolbox-controls"></a>Controlli della casella degli strumenti
  È possibile aggiungere controlli della casella degli strumenti a un form o a una finestra di progettazione tramite la tastiera.
@@ -59,11 +59,11 @@ ms.locfileid: "75852370"
 
     - Per selezionare o deselezionare una casella di controllo, usare la **BARRA SPAZIATRICE**.
 
-    - Per un elenco a discesa, usare **ALT** + **FRECCIA GIÙ** per visualizzare le voci e quindi usare **FRECCIA SU** e **FRECCIA GIÙ** per selezionare un'altra voce.
+    - Per gli elenchi a discesa, utilizzare **ALT**  +  **FrecciaGIÙ** per visualizzare gli elementi, quindi utilizzare la **freccia rivolta** e **FrecciaGIÙ** per modificare l'elemento selezionato.
 
-    - Per azionare un pulsante, premere **INVIO**.
+    - Per i pulsanti premere **invio** per richiamare.
 
-    - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per un elenco a discesa all'interno di una griglia, usare **MAIUSC** + **ALT** + **FRECCIA GIÙ** per visualizzare le voci e quindi usare **FRECCIA SU** e **FRECCIA GIÙ** per selezionare un'altra voce.
+    - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per gli elenchi a discesa nelle griglie, usare **MAIUSC**  +  **ALT**  +  **FrecciaGIÙ** per visualizzare gli elementi e quindi usare **freccia** su e **FrecciaGIÙ** per modificare l'elemento selezionato.
 
 ## <a name="window-and-file-navigation"></a>Spostamento tra finestre e file
  L'IDE prevede diversi modi per spostarsi tra le finestre aperte di documenti e strumenti tramite la tastiera. Con la tastiera è anche possibile spostare e ancorare le finestre degli strumenti in posizioni diverse.
@@ -80,13 +80,13 @@ ms.locfileid: "75852370"
 
 2. Nel menu **Finestra** fare clic su **Finestra ancorata**.
 
-3. Premere **ALT** + **Spazio** e quindi scegliere **Sposta**.
+3. Premere **ALT +**  +  **barra spaziatrice** , quindi scegliere **Sposta**.
 
      Verrà visualizzata la guida a forma di rombo per l'ancoraggio.
 
-4. Usare i tasti di **DIREZIONE** per spostare la finestra in una nuova posizione.
+4. Usare i **tasti di** direzione per spostare la finestra in una nuova posizione.
 
-     Durante l'uso dei tasti di **DIREZIONE** il puntatore del mouse si sposta con la finestra.
+     Il puntatore del mouse viene spostato con la finestra quando si utilizzano **i tasti di** direzione.
 
 5. Quando si raggiunge la nuova posizione, usare i tasti di **DIREZIONE** per spostare il puntatore del mouse sulla parte corretta della guida a forma di rombo.
 

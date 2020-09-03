@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916214"
 ---
 # <a name="jit-optimization-and-debugging"></a>Debug e ottimizzazione JIT
@@ -30,14 +30,14 @@ Se si sta provando a eseguire il debug del codice, è più facile quando il codi
 > Per ulteriori informazioni sul debug JIT (just-in-Time), leggere [questa documentazione](../debugger/debug-using-the-just-in-time-debugger.md).
 
 ## <a name="how-optimizations-work-in-net"></a>Funzionamento delle ottimizzazioni in .NET 
-In genere, la configurazione della build di rilascio crea codice ottimizzato e la configurazione della build di debug non lo è. Il `Optimize` proprietà MSBuild controlla se il compilatore viene informato per ottimizzare il codice.
+In genere, la configurazione della build di rilascio crea codice ottimizzato e la configurazione della build di debug non lo è. La `Optimize` Proprietà MSBuild controlla se il compilatore viene informato per ottimizzare il codice.
 
-Nell'ecosistema .NET, il codice viene convertito dalle istruzioni di origine a CPU in un processo in due passaggi: innanzitutto C# , il compilatore converte il testo digitato in un formato binario intermedio denominato MSIL e scrive il codice MSIL in file con estensione dll. Successivamente, il Runtime .NET converte il codice MSIL in istruzioni per la CPU. Entrambi i passaggi possono essere ottimizzati a un certo livello, ma il secondo passaggio eseguito dal runtime .NET esegue le ottimizzazioni più significative.
+Nell'ecosistema .NET, il codice viene convertito dalle istruzioni di origine a CPU in un processo in due passaggi: innanzitutto, il compilatore C# converte il testo digitato in un formato binario intermedio denominato MSIL e scrive il codice MSIL in file con estensione dll. Successivamente, il Runtime .NET converte il codice MSIL in istruzioni per la CPU. Entrambi i passaggi possono essere ottimizzati a un certo livello, ma il secondo passaggio eseguito dal runtime .NET esegue le ottimizzazioni più significative.
 
 ## <a name="the-suppress-jit-optimization-on-module-load-managed-only-option"></a>Opzione ' non visualizzare l'ottimizzazione JIT al caricamento del modulo (solo gestito)'
 Il debugger espone un'opzione che controlla cosa accade quando una DLL compilata con ottimizzazioni abilitate viene caricata all'interno del processo di destinazione. Se questa opzione è deselezionata (stato predefinito), quando il Runtime .NET compila il codice MSIL nel codice della CPU, lascia le ottimizzazioni abilitate. Se l'opzione è selezionata, il debugger richiede che le ottimizzazioni siano disabilitate.
 
-Per trovare l' **opzione Disattiva ottimizzazione JIT al caricamento del modulo (solo gestito)** , selezionare **strumenti** > **Opzioni**e quindi selezionare la pagina **generale** nel nodo **debug** .
+Per trovare l'opzione **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)** , selezionare **strumenti**  >  **Opzioni**e quindi selezionare la pagina **generale** nel nodo **debug** .
 
 ![Disattiva l'ottimizzazione JIT](../debugger/media/suppress-jit-tool-options.png "Disattiva l'ottimizzazione JIT")
 
@@ -53,7 +53,7 @@ Se si vuole solo eseguire il debug del codice che si sta compilando localmente, 
 Ci sono due situazioni in cui l'attivazione di questa opzione **non** funziona:
 
 1. Nei casi in cui si connette il debugger a un processo già in esecuzione, questa opzione non avrà alcun effetto sui moduli che erano già stati caricati nel momento in cui il debugger è stato collegato.
-2. Questa opzione non ha alcun effetto sulle DLL precompilate (a. k. a ngen'ed) in codice nativo. Tuttavia, è possibile disabilitare l'utilizzo del codice precompilato avviando il processo con la variabile di ambiente **"COMPlus_ReadyToRun"** impostata su **"0"** . In questo modo si indica al runtime di .NET Core di disabilitare l'uso di immagini precompilate, forzando il runtime a compilare il codice del Framework. 
+2. Questa opzione non ha alcun effetto sulle DLL precompilate (a. k. a ngen'ed) in codice nativo. Tuttavia, è possibile disabilitare l'utilizzo del codice precompilato avviando il processo con la variabile di ambiente **"COMPlus_ReadyToRun"** impostata su **"0"**. In questo modo si indica al runtime di .NET Core di disabilitare l'uso di immagini precompilate, forzando il runtime a compilare il codice del Framework. 
 
     > [!IMPORTANT]
     > Se la destinazione è .NET Framework o una versione precedente di .NET Core (2. x o inferiore), aggiungere anche la variabile di ambiente ' COMPlus_ZapDisable ' e impostarla su' 1'
@@ -67,7 +67,7 @@ Ci sono due situazioni in cui l'attivazione di questa opzione **non** funziona:
 
 ## <a name="see-also"></a>Vedere anche
 - [Come eseguire il debug dell'origine DotNet Framework](../debugger/how-to-debug-dotnet-framework-source.md)
-- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+- [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)
 - [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Processo di esecuzione gestita](/dotnet/standard/managed-execution-process)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633551"
 ---
 # <a name="logging-in-msbuild"></a>Registrazione a MSBuild
@@ -27,11 +27,11 @@ La registrazione consente di monitorare lo stato di avanzamento di una compilazi
 
  Vengono descritti i vari aspetti della registrazione in MSBuild.
 
-- [Costruisci logger](../msbuild/build-loggers.md)
+- [Logger di compilazione](../msbuild/build-loggers.md)
 
  Delinea i passaggi necessari per creare un logger a processore singolo.
 
-- [Registrazione in un ambiente multiprocessoreLogging in a multi-processor environment](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Registrazione in un ambiente a più processori](../msbuild/logging-in-a-multi-processor-environment.md)
 
  Descrive come funziona la registrazione in un ambiente a più processori e i due modelli di registrazione a più processori.
 

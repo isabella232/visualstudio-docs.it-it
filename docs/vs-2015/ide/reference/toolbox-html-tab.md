@@ -16,33 +16,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851666"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, Scheda HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La scheda **HTML** della casella degli strumenti contiene componenti utili nelle pagine Web e nei Web Form. Per visualizzare questa scheda, aprire un documento per la modifica nella finestra di progettazione HTML. Scegliere **Casella degli strumenti** dal menu **Visualizza** e quindi fare clic sulla scheda **HTML** della casella degli strumenti.
+Nella scheda **HTML** della casella degli strumenti sono disponibili componenti utili per le pagine Web e i Web Form. Per visualizzare questa scheda, aprire un documento per la modifica nella finestra di progettazione HTML. Scegliere **Casella degli strumenti** dal menu **Visualizza** e quindi fare clic sulla scheda **HTML** della casella degli strumenti.
 
  Per creare un'istanza di uno strumento nella scheda **HTML**, fare doppio clic sullo strumento per aggiungerlo al documento nel punto di inserimento corrente o selezionare lo strumento e trascinarlo nella posizione voluta nell'area di modifica.
 
 ## <a name="tasks"></a>Attività
 
-- [Procedura: gestire la finestra Casella degli strumenti](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)
+- [Procedura: Gestire la finestra della casella degli strumenti](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)
 
 - [Procedura: modificare le schede della Casella degli strumenti](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)
 
 ## <a name="ui-elements"></a>Elementi dell'interfaccia utente
  Per impostazione predefinita, nella scheda HTML sono disponibili i seguenti strumenti.
 
- **Puntatore** ![puntatore pagina HTML di ASP.NET Mobile Designer](../../ide/reference/media/vxpointer.gif "|::ref1::|")
+ **Pointer** ![Puntatore pagina HTML puntatore ASP.NET Mobile Designer](../../ide/reference/media/vxpointer.gif "vxPointer")
 
  Questo strumento viene selezionato per impostazione predefinita quando si fa clic su una delle schede della casella degli strumenti e non è possibile eliminarlo. Il puntatore consente di trascinare oggetti nell'area di visualizzazione Progettazione, ridimensionarli e riposizionarli nella pagina o nel form. Per altre informazioni, vedere [Procedura: gestire la finestra Casella degli strumenti](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Procedura: modificare le schede della Casella degli strumenti](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
 
- ![Pulsante della pagina Web HTML](../../ide/reference/media/vxbutton.gif "|::ref2::|") di **input (Button)**
+ ![Pulsante della pagina Web HTML](../../ide/reference/media/vxbutton.gif "vxButton") di **input (Button)**
 
  Consente di inserire un elemento `input` di `type="button"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante viene inserito `id="Button1"`, come secondo pulsante `id="Button2"` e così via.
 
@@ -52,9 +52,9 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa) e [NIB: Procedura: creare script e modificare gestori eventi](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sui controlli server Web pulsante](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> e <xref:System.Web.UI.WebControls.Button>.
+ Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [Procedura: creare script e modificare gestori eventi](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sui controlli server Web pulsante](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> e <xref:System.Web.UI.WebControls.Button>.
 
- Schermata di **input (reset)** ![HTMLpageResetButton](../../ide/reference/media/vxreset.gif "|::ref3::|")
+ Schermata di **input (reset)** ![HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")
 
  Consente di inserire un elemento `input` di `type="reset"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di reimpostazione viene inserito `id="Reset1"`, come secondo `id="Reset2"` e così via.
 
@@ -66,7 +66,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputReset](https://msdn.microsoft.com/cfc1f1fb-d33a-464d-9bb5-204e66174979), <xref:System.Web.UI.HtmlControls.HtmlInputButton> e <xref:System.Web.UI.WebControls.Button>.
 
- Schermata di **input (invio)** ![HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "|::ref4::|")
+ Schermata di **input (invio)** ![HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")
 
  Consente di inserire un elemento `input` di `type="submit"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di invio viene inserito `id="Submit1"`, come secondo `id="Submit2"` e così via.
 
@@ -78,7 +78,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputSubmit](https://msdn.microsoft.com/eef2a157-f184-4ce9-b256-d1eacc7930f2), <xref:System.Web.UI.HtmlControls.HtmlInputButton> e <xref:System.Web.UI.WebControls.Button>.
 
- Schermata di **input (testo)** ![HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "|::ref5::|")
+ Schermata di **input (testo)** ![HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")
 
  Consente di inserire un elemento `input` di `type="text"` nel documento. Per modificare il testo predefinito visualizzato, modificare l'attributo `value`. Per impostazione predefinita, come primo campo di testo viene inserito `id="Text1"`, come secondo `id="Text2"` e così via.
 
@@ -93,7 +93,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 > [!IMPORTANT]
 > È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
- **Input (file)** ![campo file di pagine HTML](../../ide/reference/media/vxfilefield.gif "|::ref6::|")
+ **Input (file)** ![campo file di pagine HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")
 
  Consente di inserire un elemento `input` di `type="file"` nel documento. Per impostazione predefinita, come primo campo file viene inserito `id="File1"`, come secondo `id="File2"` e così via.
 
@@ -108,7 +108,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 > [!IMPORTANT]
 > È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
- Campo password di **input (password)** di ![Visual Studio](../../ide/reference/media/vxpassword.gif "|::ref7::|")
+ Campo password di **input (password)** di ![Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")
 
  Consente di inserire un elemento `input` di `type="password"`. Per impostazione predefinita, come primo campo file password viene inserito `id="Password1"`, come secondo `id="Password2"` e così via.
 
@@ -118,12 +118,12 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <input id="Password1" type="password" name="Password1">
 ```
 
- Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f) e [Procedura: impostare un controllo server Web TextBox per l'immissione di una password](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) e [Procedura dettagliata: convalida dell'input dell'utente in una pagina Web Form](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
+ Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Procedura: impostare un controllo server Web TextBox per l'immissione di una password](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) e [Procedura dettagliata: convalida dell'input dell'utente in una pagina Web Form](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
 
 > [!IMPORTANT]
 > Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere "Securing Connections with SSL" (Protezione delle connessioni con SSL) in [IIS Operations Guide](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx) (Guida operativa di IIS). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
- Opzione casella di controllo casella ![degli strumenti pagina Web HTML](../../ide/reference/media/vxcheckbox.gif "|::ref8::|") **input (casella di controllo)**
+ Opzione casella di controllo casella ![degli strumenti pagina Web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox") **input (casella di controllo)**
 
  Consente di inserire un elemento `input` di `type="checkbox"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come prima casella di controllo viene inserito `id="Checkbox1"`, come seconda `id="Checkbox2"` e così via.
 
@@ -135,7 +135,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputCheckBox](https://msdn.microsoft.com/4a509586-89d8-4ccf-a0b8-b9160ce6e4a6), [Cenni preliminari sul controllo server Web CheckBox e CheckBoxList](https://msdn.microsoft.com/library/3028dfd3-e2c5-451d-9150-d02c8ffb92bf), <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox> e <xref:System.Web.UI.WebControls.CheckBox>.
 
- Schermata di **input (radio)** ![VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "|::ref9::|")
+ Schermata di **input (radio)** ![VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")
 
  Consente di inserire un elemento `input` di `type="radio"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di opzione viene inserito `id="Radio1"`, come secondo `id="Radio2"` e così via.
 
@@ -147,7 +147,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputRadioButton](https://msdn.microsoft.com/6e60ff63-cc57-46ef-bf96-e829e204ba33), [Cenni preliminari sul controllo server Web RadioButton e RadioButtonList](https://msdn.microsoft.com/library/20eb383c-4b59-432b-bba3-e9d785107747), <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton> e <xref:System.Web.UI.WebControls.RadioButton>.
 
- ![Elemento nascosto della pagina HTML](../../ide/reference/media/vxhidden.gif "|::ref10::|") di **input (nascosto)**
+ ![Elemento nascosto della pagina HTML](../../ide/reference/media/vxhidden.gif "vxhidden") di **input (nascosto)**
 
  Consente di inserire un elemento `input` di `type="hidden"`. Per impostazione predefinita, come primo campo nascosto viene inserito `id="Hidden1"`, come secondo `id="Hidden2"` e così via.
 
@@ -159,7 +159,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputHidden](https://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) e <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.
 
- ![Area di testo della barra degli strumenti pagina HTML](../../ide/reference/media/vxtextarea.gif "|::ref11::|") **textarea**
+ **Textarea** ![Area di testo della barra degli strumenti pagina HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea") textarea
 
  Consente di inserire un elemento `textarea`. È possibile ridimensionare l'area di testo oppure usare le barre di scorrimento per visualizzare il testo che si estende oltre l'area di visualizzazione. Per modificare il testo predefinito visualizzato, modificare l'attributo `value`. Per impostazione predefinita, come prima area di testo viene inserito `id="textarea1"`, come seconda `id=" textarea 2"` e così via.
 
@@ -169,12 +169,12 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>
 ```
 
- Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlTextArea](https://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> e <xref:System.Web.UI.WebControls.TextBox>.
+ Per ulteriori informazioni, vedere [sintassi dichiarativa per il controllo server HtmlTextArea](https://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> e <xref:System.Web.UI.WebControls.TextBox> .
 
 > [!IMPORTANT]
 > È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
- ![Schermata HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "|::ref12::|") **tabella**
+ **Table** ![Schermata HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable") tabella
 
  Consente di inserire un elemento `table`.
 
@@ -186,7 +186,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlTable](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Cenni preliminari sui controlli server Web Table, TableRow e TableCell](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable> e <xref:System.Web.UI.WebControls.Table>.
 
- ![Elemento immagine pagina HTML](../../ide/reference/media/vximage.gif "|::ref13::|") **immagine**
+ **Image** ![Elemento immagine pagina HTML](../../ide/reference/media/vximage.gif "vxImage") immagine
 
  Consente di inserire un elemento `img`. Modificare questo elemento per specificare il testo `src` e `alt`.
 
@@ -196,9 +196,9 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 <img alt="" src="">
 ```
 
- Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlImage](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Cenni preliminari sul controllo server Web Image](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> e <xref:System.Web.UI.WebControls.Image>.
+ Per altre informazioni, vedere [sintassi dichiarativa per il controllo server HtmlImage](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Cenni preliminari sul controllo del server Web Image](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9),, <xref:System.Web.UI.HtmlControls.HtmlImage> <xref:System.Web.UI.HtmlControls.HtmlInputImage> e <xref:System.Web.UI.WebControls.Image> .
 
- **Seleziona** ![elenco a discesa casella degli strumenti pagina HTML](../../ide/reference/media/vxdropdown.gif "|::ref14::|")
+ **Seleziona** ![elenco a discesa casella degli strumenti pagina HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")
 
  Consente di inserire un elemento `select` a discesa senza attributo `size`. Per impostazione predefinita, come prima casella di riepilogo viene inserito `id="select1"`, come seconda `id="select2"` e così via.
 
@@ -210,9 +210,9 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  È possibile creare un elemento `select` aumentando il valore della proprietà Size.
 
- Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: Procedura: creare script e modificare gestori eventi](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sul controllo server Web DropDownList](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Cenni preliminari sul controllo server Web ListBox](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> e <xref:System.Web.UI.WebControls.DropDownList>.
+ Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [Procedura: creare script e modificare gestori eventi](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Cenni preliminari sul controllo server Web DropDownList](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Cenni preliminari sul controllo server Web ListBox](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> e <xref:System.Web.UI.WebControls.DropDownList>.
 
- ![Elemento regola orizzontale della pagina HTML](../../ide/reference/media/vxhorizontal.gif "|::ref15::|") della **regola orizzontale**
+ ![Elemento regola orizzontale della pagina HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal") della **regola orizzontale**
 
  Consente di inserire un elemento `hr`. Per aumentare lo spessore della linea, modificare l'attributo `size`.
 
@@ -224,7 +224,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Controllo Righello orizzontale HTML](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- ![Etichetta pagina HTML](../../ide/reference/media/vxlabel.gif "|::ref16::|") **div**
+ **Div** ![Etichetta pagina HTML](../../ide/reference/media/vxlabel.gif "vxLabel") div
 
  Consente di inserire un elemento `div` che include un attributo `ms_positioning="FlowLayout"`. Tranne che per i valori relativi a larghezza e altezza, questo elemento è identico a un pannello di layout flusso. Per formattare il testo contenuto nell'elemento `div`, aggiungere un attributo `class="stylename"` al tag di apertura.
 

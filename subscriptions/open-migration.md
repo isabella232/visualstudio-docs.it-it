@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come i partner gestiscono le sottoscrizioni di Visual Studio per i clienti.
 ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289027"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partner che gestiscono le sottoscrizioni per conto dei clienti
@@ -51,7 +51,7 @@ Questo vale per i nuovi partner che inseriscono nuovi ordini di licenza aperti, 
 
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nuovi partner che visitano direttamente il portale di amministrazione delle sottoscrizioni di Visual Studio
-Questo scenario si applica ai nuovi partner che hanno già inserito nuovi ordini di licenza aperti, ma che non hanno eseguito la registrazione in [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passano direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).  A tale scopo, seguire questa procedura:
+Questo scenario si applica ai nuovi partner che hanno già inserito nuovi ordini di licenza aperti, ma che non hanno eseguito la registrazione in [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passano direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).  Seguire questa procedura:
 - Visitare <https://manage.visualstudio.com>.
 - Viene visualizzato un errore di utente non riconosciuto.
 - Selezionare l'opzione di registrazione per **partner OLP** e immettere il numero di autorizzazione, il numero di licenza e l'indirizzo di posta elettronica del cliente usato nell'ordine, selezionare la casella di controllo e quindi fare clic su **Invia**.
@@ -64,7 +64,7 @@ Questo scenario si applica ai nuovi partner che hanno già inserito nuovi ordini
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)

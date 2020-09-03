@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532964"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: connessione di un host a un processore di direttiva generato
@@ -70,7 +70,7 @@ ms.locfileid: "85532964"
    > [!IMPORTANT]
    > Questo passaggio genera il processore di direttiva e ne aggiunge la chiave nel registro di sistema.
 
-3. Scegliere **Avvia debug**dal menu **debug** .
+3. Scegliere **Avvia debug** dal menu **Debug**.
 
     Viene aperta una seconda istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 

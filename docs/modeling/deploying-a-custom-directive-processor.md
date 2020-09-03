@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536019"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
@@ -62,7 +62,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
     1. Creare un file di testo e denominarlo \<*assemblyName*> . pkgdef.
 
-         \<*assemblyName*>corrisponde in genere al nome del progetto.
+         \<*assemblyName*> corrisponde in genere al nome del progetto.
 
     2. Selezionarlo in Esplora soluzioni e impostarne le proprietà come segue:
 
@@ -182,7 +182,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
    Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|Nome|Type|Data|
+|Nome|Type|Dati|
 |-|-|-|
 |Valore predefinito.|REG_SZ|(valore non impostato)|
 |Classe|REG_SZ|**\<Namespace Name>.\<Class Name>**|
@@ -190,7 +190,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
  Se l'assembly è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|Nome|Type|Data|
+|Nome|Type|Dati|
 |-|-|-|
 |Valore predefinito.|REG_SZ|(valore non impostato)|
 |Classe|REG_SZ|\<**Your Fully Qualified Class Name**>|

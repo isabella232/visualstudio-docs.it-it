@@ -13,21 +13,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621101"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funzionalità di accessibilità del visualizzatore della Guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i servizi offerti, in modo che tutti gli utenti siano in grado di usarli. Questo argomento fornisce le informazioni sulle funzionalità, i prodotti e i servizi in grado di rendere Microsoft Help Viewer 2.2 accessibile agli utenti con diverse abilità:
+Microsoft cerca di sviluppare prodotti e servizi che siano facili da utilizzare per chiunque. Questo argomento fornisce le informazioni sulle funzionalità, i prodotti e i servizi in grado di rendere Microsoft Help Viewer 2.2 accessibile agli utenti con diverse abilità:
 
 ## <a name="keyboard-access"></a>Accesso da tastiera
  È possibile accedere a tutte le funzionalità di Help Viewer tramite la tastiera. Per altre informazioni, vedere [Tasti di scelta rapida (Help Viewer)](../ide/shortcut-keys-help-viewer.md).
 
-## <a name="font-size"></a>Dimensione carattere
+## <a name="font-size"></a>Dimensioni del carattere
  È possibile modificare la dimensione del carattere in cui viene visualizzato il testo dell'argomento nella finestra del documento. Per altre informazioni, vedere [Personalizzare Help Viewer](../ide/customize-the-help-viewer.md).
 
 ## <a name="window-size"></a>Dimensioni finestra

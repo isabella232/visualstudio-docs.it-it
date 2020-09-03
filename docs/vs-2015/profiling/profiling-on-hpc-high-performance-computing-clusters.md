@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535538"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilatura su cluster HPC (High Performance Computing)
@@ -139,7 +139,7 @@ ms.locfileid: "85535538"
   
 |Proprietà|Descrizione|  
 |--------------|-----------------|  
-|**Project name (Nome progetto)**|Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] corrente.|  
+|**Nome progetto**|Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] corrente.|  
 |**Esegui pulizia all'arresto del profiler**|Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE.|  
 |**File aggiuntivi da distribuire**|Specifica un elenco di file aggiuntivi separati da punto e virgola da distribuire sul nodo di calcolo. È possibile fare clic sul pulsante con i puntini di sospensione (**...**) per selezionare più file usando una finestra di dialogo.|  
 |**Comando Mpiexec**|Specifica l'applicazione che avvia l'applicazione MPI. Il valore predefinito è **mpiexec.exe**.|  

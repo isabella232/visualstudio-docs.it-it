@@ -12,7 +12,7 @@
   items:
     - name: Presentazione del debugger
       href: debugger-feature-tour.md
-    - name: 'Eseguire il debug di un''app C# o Visual Basic'
+    - name: Eseguire il debug di un'app C# o Visual Basic
       href: quickstart-debug-with-managed.md
     - name: Eseguire il debug di un'app C++
       href: quickstart-debug-with-cplusplus.md
@@ -20,9 +20,9 @@
       href: quickstart-debug-aspnet.md
 - name: Esercitazioni
   items:
-    - name: 'Informazioni su come eseguire il debug di C#'
+    - name: Informazioni su come eseguire il debug di C#
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
-    - name: 'Informazioni su come eseguire il debug di C#++'
+    - name: Informazioni su come eseguire il debug di C#++
       href: getting-started-with-the-debugger-cpp.md
     - name: Informazioni su come eseguire il debug di Visual Basic
       href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
@@ -30,7 +30,7 @@
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Eseguire il debug di un'app Azure attiva
       href: debug-live-azure-applications.md
-    - name: 'Eseguire il debug di codice C# e C++'
+    - name: Eseguire il debug di codice C# e C++
       href: how-to-debug-managed-and-native-code.md
     - name: Controllare gli stati dell'app precedenti
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: Risoluzione dei problemi dei punti di interruzione
           href: troubleshooting-breakpoints.md
-        - name: 'Risoluzione dei problemi dei punti di interruzione dei dati C#'
+        - name: Risoluzione dei problemi dei punti di interruzione dei dati C#
           href: troubleshoot-data-breakpoint-errors.md
     - name: Ispezione dei dati
       items:
@@ -68,7 +68,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Operatore di contesto (C++)
                   href: context-operator-cpp.md
-                - name: 'Identificatori di formato in C#'
+                - name: Identificatori di formato in C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudo variabili
                   href: pseudovariables.md
@@ -118,11 +118,11 @@
               href: edit-and-continue-visual-cpp.md
             - name: Modifiche al codice supportate (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Modifica e continuazione (Visual C#)'
+        - name: Modifica e continuazione (Visual C#)
           items:
-            - name: 'Modifica e continuazione per C#'
+            - name: Modifica e continuazione per C#
               href: edit-and-continue-visual-csharp.md
-            - name: 'Usare Modifica e continuazione (C#)'
+            - name: Usare Modifica e continuazione (C#)
               href: how-to-use-edit-and-continue-csharp.md
             - name: Modifiche al codice supportate
               href: supported-code-changes-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Risoluzione dei problemi relativi al ricaricamento rapido XAML
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'Modifica e continuazione non supportate per F#'
+        - name: Modifica e continuazione non supportate per F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Registrare nella finestra di output
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Impostazioni di pagine delle proprietà per progetti Web
                   href: property-pages-settings-for-web-projects.md
-                - name: 'Impostazioni di progetto per configurazioni di debug C#'
+                - name: Impostazioni di progetto per configurazioni di debug C#
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Impostazioni di progetto per una configurazione di debug Visual Basic
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: Eseguire il debug remoto di ASP.NET Core in Azure
           href: remote-debugging-azure.md
-        - name: 'Eseguire il debug remoto di un progetto C# o Visual Basic'
+        - name: Eseguire il debug remoto di un progetto C# o Visual Basic
           href: remote-debugging-csharp.md
         - name: Eseguire il debug remoto di un progetto C++
           href: remote-debugging-cpp.md
@@ -512,7 +512,7 @@
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Visualizzare le informazioni di traccia WPF
                   href: how-to-display-wpf-trace-information.md
-            - name: 'Eseguire il debug di F#'
+            - name: Eseguire il debug di F#
               href: debugging-f-hash.md
         - name: Codice C/C++
           items:

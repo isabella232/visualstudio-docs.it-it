@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852201"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Informazioni aggiuntive sugli errori di Progettazione classi
@@ -43,7 +43,7 @@ Progettazione classi non tiene traccia del percorso dei file di origine. Di cons
 
  Nelle risorse seguenti è possibile trovare assistenza per altri errori e avvisi:
 
- [L'utilizzo di C++ codice visuale (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md) include informazioni sulla risoluzione C++ dei problemi di visualizzazione in un diagramma classi.
+ [Utilizzo del codice Visual C++ (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md) Include informazioni sulla risoluzione dei problemi relativi alla visualizzazione di C++ in un diagramma classi.
 
  [Forum su Progettazione classi di Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) Forum dedicato a domande su Progettazione classi.
 

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851473"
 ---
 # <a name="activity-views-legacy"></a>Visualizzazioni delle attività (legacy)
@@ -30,10 +30,10 @@ Per molte delle attività fornite da [!INCLUDE[wf](../includes/wf-md.md)], dalle
 |Opzione di menu/scheda|Descrizione|
 |----------------------|-----------------|
 |**Visualizzazione [tipo di attività]**|Selezionare questo menu o opzione della scheda per visualizzare la rappresentazione grafica predefinita dell'attività selezionata.|
-|**Visualizza gestore Annulla**|Selezionare il menu o la visualizzazione delle opzioni di tabulazione per visualizzare il [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) associato all'attività selezionata.|
+|**Visualizza gestore annullamento**|Selezionare il menu o la visualizzazione delle opzioni di tabulazione per visualizzare il [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) associato all'attività selezionata.|
 |**Visualizza gestore errori**|Selezionare il menu o la visualizzazione delle opzioni di tabulazione per visualizzare il [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) associato all'attività selezionata.|
-|**Visualizza gestore compensazione**|Selezionare il menu o la visualizzazione delle opzioni di tabulazione per visualizzare il [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) associato al [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)selezionato.|
-|**Visualizza gestore eventi**|Selezionare il menu o la visualizzazione delle opzioni di tabulazione per visualizzare il [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) associato al [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)selezionato.|
+|**Visualizza gestore di compensazione**|Selezionare il menu o la visualizzazione delle opzioni di tabulazione per visualizzare il [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) associato al [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)selezionato.|
+|**Visualizzazione del gestore di eventi**|Selezionare il menu o la visualizzazione delle opzioni di tabulazione per visualizzare il [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) associato al [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)selezionato.|
 
  Per informazioni su visualizzazioni simili, vedere [visualizzazioni del flusso di lavoro sequenziale (legacy)](../workflow-designer/sequential-workflow-views-legacy.md).
 

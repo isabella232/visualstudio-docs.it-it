@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633915"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
@@ -105,7 +105,7 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Attività MakeDir](../msbuild/makedir-task.md)
-- [Attività RemoveDir](../msbuild/removedir-task.md)
-- [Attività Csc](../msbuild/csc-task.md)
+- [MakeDir (attività)](../msbuild/makedir-task.md)
+- [RemoveDir (attività)](../msbuild/removedir-task.md)
+- [Csc (attività)](../msbuild/csc-task.md)
 - [Server di destinazione](../msbuild/msbuild-targets.md)

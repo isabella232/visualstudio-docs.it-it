@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c84105387c708fa16e0b1d5c3294ef909466524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72631199"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Creare e configurare i set di dati in Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "72631199"
 
 Un *set di dati è un* set di oggetti che archivia i dati da un database in memoria e supporta il rilevamento delle modifiche per abilitare le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD) su tali dati senza la necessità di essere sempre connessi al database. I set di dati sono stati progettati per semplici *forme su* applicazioni aziendali di dati. Per le nuove applicazioni, è consigliabile usare Entity Framework per archiviare e modellare i dati in memoria. Per utilizzare i set di dati, è necessario disporre di una conoscenza di base dei concetti relativi ai database.
 
- Per creare una classe <xref:System.Data.DataSet> tipizzata in Visual Studio in fase di progettazione, utilizzare la **Configurazione guidata origine dati**. Per informazioni sulla creazione di set di dati a livello di codice, vedere [creazione di un set di dati](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
+ È possibile creare una <xref:System.Data.DataSet> classe tipizzata in Visual Studio in fase di progettazione tramite la **Configurazione guidata origine dati**. Per informazioni sulla creazione di set di dati a livello di codice, vedere [creazione di un set di dati](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Creare un nuovo set di dati tramite la configurazione guidata origine dati
 
@@ -45,9 +45,9 @@ Un *set di dati è un* set di oggetti che archivia i dati da un database in memo
 
 4. Scegliere le tabelle (o singole colonne), le stored procedure, le funzioni e le viste del database che si desidera rappresentare nel set di dati.
 
-     ![Selezione oggetti di database](../data-tools/media/raddata-chose-objects.png "raddata sceglie oggetti")
+     ![Scegliere gli oggetti di database](../data-tools/media/raddata-chose-objects.png "raddata sceglie oggetti")
 
-5. Scegliere **Fine**.
+5. Fare clic su **Fine**.
 
 6. Il set di dati viene visualizzato come nodo in **Esplora soluzioni**:
 
@@ -88,8 +88,8 @@ Un *set di dati è un* set di oggetti che archivia i dati da un database in memo
 
 1. Aprire il set di dati in **Progettazione DataSet**.
 
-2. Trascinare una classe <xref:System.Data.DataTable> dalla scheda **DataSet** della **casella degli strumenti** nel **Progettazione DataSet**.
+2. Trascinare una <xref:System.Data.DataTable> classe dalla scheda **DataSet** della **casella degli strumenti** nel **Progettazione DataSet**.
 
 3. Aggiungere colonne per definire la tabella di dati. Per altre informazioni, vedere [procedura: aggiungere colonne a un oggetto DataTable](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Le tabelle autonome devono implementare `Fill` logica in tabelle autonome in modo da poterle inserire i dati. Per informazioni sul riempimento di tabelle di dati autonome, vedere [popolamento di un DataSet da un oggetto DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Le tabelle autonome devono implementare la `Fill` logica in tabelle autonome in modo che sia possibile riempirle con i dati. Per informazioni sul riempimento di tabelle di dati autonome, vedere [popolamento di un DataSet da un oggetto DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290666"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analizzare le prestazioni del database tramite lo strumento database
@@ -52,6 +52,6 @@ Dopo aver individuato una query che si desidera analizzare, fare clic con il pul
 
 Se si seleziona un intervallo di tempo in un grafico, nella tabella query vengono mostrate solo le query che si sono verificate durante tale intervallo di tempo. Questo comportamento è particolarmente utile quando si esegue anche lo [strumento utilizzo CPU](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md)

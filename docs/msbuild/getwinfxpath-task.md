@@ -19,23 +19,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633967"
 ---
 # <a name="getwinfxpath-task"></a>Attività GetWinFXPath
 
-L'attività <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> restituisce la directory del runtime .NET corrente.
+L' <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> attività restituisce la directory del runtime .NET corrente.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 
 | Parametro | Descrizione |
 |-------------------| - |
-| `WinFXPath` | Parametro di output **String** facoltativo.<br /><br /> Specifica il percorso reale del runtime .NET. |
+| `WinFXPath` | Parametro di output **stringa** facoltativo.<br /><br /> Specifica il percorso reale del runtime .NET. |
 | `WinFXNativePath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso del runtime .NET nativo. |
-| `WinFXWowPath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso degli assembly .NET nel modulo **Windows su Windows** a 32 bit nei sistemi a 64 bit. |
+| `WinFXWowPath` | Parametro **String** obbligatorio.<br /><br /> Specifica il percorso degli assembly .NET nel modulo Windows a 32 bit per **Windows** su sistemi a 64 bit. |
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -62,7 +62,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> restituisce la dir
 ## <a name="see-also"></a>Vedere anche
 
 - [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
-- [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)
-- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/wpf-msbuild-task-reference.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Creazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

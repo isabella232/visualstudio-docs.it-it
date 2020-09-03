@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per la sicurezza in VSPackage . Documenti Microsoft
+title: Procedure consigliate per la sicurezza nei pacchetti VSPackage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709898"
 ---
-# <a name="best-practices-for-security-in-vspackages"></a>Procedure consigliate per la sicurezza nei pacchetti VSPackageBest practices for security in VSPackages
-Per installare [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] il nel computer, è necessario essere in esecuzione in un contesto con credenziali amministrative. L'unità di base di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sicurezza e distribuzione di un'applicazione è il [pacchetto VSPackage](../../extensibility/internals/vspackages.md). Un pacchetto VSPackage deve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]essere registrato utilizzando , che richiede anche credenziali amministrative.
+# <a name="best-practices-for-security-in-vspackages"></a>Procedure consigliate per la sicurezza nei pacchetti VSPackage
+Per installare nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] computer, è necessario che sia in esecuzione in un contesto con credenziali amministrative. L'unità di base di sicurezza e distribuzione di un' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] applicazione è il [pacchetto VSPackage](../../extensibility/internals/vspackages.md). Un pacchetto VSPackage deve essere registrato tramite [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , che richiede anche credenziali amministrative.
 
- Gli amministratori dispongono di autorizzazioni complete per scrivere nel Registro di sistema e nel file system ed eseguire qualsiasi codice. È necessario disporre di queste autorizzazioni per sviluppare, distribuire o installare un pacchetto VSPackage.You must have these permissions to develop, deploy, or install a VSPackage.
+ Gli amministratori dispongono di autorizzazioni complete per scrivere nel registro di sistema e file system e per eseguire il codice. È necessario disporre di queste autorizzazioni per sviluppare, distribuire o installare un pacchetto VSPackage.
 
- Non appena viene installato, un vsPackage è completamente attendibile. A causa di questo alto livello di autorizzazione associato a un VSPackage, è possibile installare inavvertitamente un pacchetto VSPackage con finalità dannose.
+ Non appena viene installato, un pacchetto VSPackage è completamente attendibile. A causa di questo elevato livello di autorizzazioni associato a un VSPackage, è possibile installare inavvertitamente un VSPackage con finalità dannose.
 
- Gli utenti devono assicurarsi di installare VSPackage solo da fonti attendibili. Le aziende che sviluppano VSPackage devono denominarli e firmarli con forza, per assicurare all'utente che la manomissione è impedita. Le aziende che sviluppano package VS devono esaminare le dipendenze esterne, ad esempio i servizi Web e l'installazione remota, per valutare e correggere eventuali problemi di sicurezza.
+ Gli utenti devono assicurarsi di installare i pacchetti VSPackage solo da origini attendibili. Le aziende che sviluppano pacchetti VSPackage dovrebbero assegnare un nome sicuro e firmarle, per garantire che l'utente possa manomettere. Le aziende che sviluppano pacchetti VSPackage devono esaminare le dipendenze esterne, ad esempio i servizi Web e l'installazione remota, per valutare e correggere eventuali problemi di sicurezza.
 
- Per ulteriori informazioni, vedere Linee guida per [la codifica sicura per .NET Framework.](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))
+ Per ulteriori informazioni, vedere [linee guida per la codifica sicura per la .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
 
 ## <a name="see-also"></a>Vedere anche
-- [Sicurezza dei componenti aggiuntivi](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
-- [Sicurezza DDEX](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+- [Sicurezza del componente aggiuntivo](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
+- [Sicurezza di DDEX](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)

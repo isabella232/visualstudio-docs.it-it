@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289287"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concetti avanzati relativi a MSBuild
@@ -32,7 +32,7 @@ Nei documenti di questa sezione viene descritto come utilizzare le tecniche avan
 |[Multitargeting](../msbuild/msbuild-multitargeting-overview.md)|Viene descritto come compilare un'applicazione da eseguire in una qualunque delle tante versioni di .NET Framework.|
 |[Procedure consigliate](../msbuild/msbuild-best-practices.md)|Vengono indicate le procedure consigliate per la scrittura di script MSBuild.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [Registrazione a MSBuild](../msbuild/logging-in-msbuild.md)

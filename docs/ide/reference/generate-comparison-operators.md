@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 31e33b562a5a11ff77c1d610fbce9e90506b036d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290337"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Genera operatori di confronto per i tipi che implementano IComparable
@@ -36,13 +36,13 @@ Questa generazione di codice si applica a:
 
    - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
 
-   - Fare clic su ![cacciavite](../media/screwdriver-icon.png) che viene visualizzato nel margine sinistro.
+   - Fare clic sull'icona ![cacciavite](../media/screwdriver-icon.png) che viene visualizzato nel margine sinistro.
 
    ![Generare gli operatori di confronto](media/generate-comparison-operators.png)
 
 3. Selezionare **genera Equals (oggetto)** dal menu a discesa.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Generazione di codice](../code-generation-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

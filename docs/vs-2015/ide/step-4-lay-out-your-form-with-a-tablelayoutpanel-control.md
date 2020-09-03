@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f61a308fcd68b03852176087438c22c245078693
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851539"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: creare il layout del form con un controllo TableLayoutPanel
@@ -21,17 +21,17 @@ ms.locfileid: "75851539"
 
 In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLayoutPanel consente di allineare in modo corretto i controlli nel form che si aggiungerà successivamente.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore immagini in Visual Basic-video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) o [esercitazione 1: creare un visualizzatore immagini in C#-video 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Per creare il layout del form con un controllo TableLayoutPanel
 
-1. Sul lato sinistro dell'IDE di Visual Studio individuare la scheda **casella degli strumenti** . scegliere la scheda **casella degli strumenti** . verrà visualizzata la casella degli strumenti. In alternativa, nella barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.
+1. Sul lato sinistro dell'IDE di Visual Studio individuare la scheda **casella degli strumenti** . Scegliere la scheda **casella degli strumenti** . verrà visualizzata la casella degli strumenti. In alternativa, nella barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.
 
 2. Scegliere il piccolo simbolo del triangolo accanto al gruppo **Contenitori** per aprirlo, come mostrato nell'immagine seguente.
 
      ![Gruppo di contenitori](../ide/media/express-toolbox.png "Express_Toolbox") Gruppo di contenitori
 
-3. È possibile aggiungere al form controlli quali pulsanti, caselle di controllo ed etichette. Fare doppio clic sul controllo `TableLayoutPanel` nella casella degli strumenti. In alternativa, è possibile trascinare il controllo dalla casella degli strumenti nel form. Quando si esegue questa operazione, l'IDE aggiunge un controllo `TableLayoutPanel` al form, come illustrato nell'immagine seguente.
+3. È possibile aggiungere al form controlli quali pulsanti, caselle di controllo ed etichette. Fare doppio clic sul controllo `TableLayoutPanel` nella casella degli strumenti. In alternativa, è possibile trascinare il controllo dalla casella degli strumenti nel form. Quando si esegue questa operazione, l'IDE aggiunge un `TableLayoutPanel` controllo al form, come illustrato nell'immagine seguente.
 
      ![Controllo TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout") Controllo TableLayoutPanel
 
@@ -69,18 +69,18 @@ In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLa
 
      ![Attività di TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel") Attività di TableLayoutPanel
 
-10. Scegliere l'attività **Modifica righe e colonne** per visualizzare la finestra **Stili di riga e colonna**. Fare clic su **Column1** e impostare le dimensioni su 15% verificando che il pulsante **%** sia selezionato e immettendo `15` nella casella **%** . Si tratta di un controllo `NumericUpDown`, che sarà utilizzato in un'esercitazione successiva. Scegliere **Column2** e impostarlo su 85 percent. Non scegliere ancora il pulsante **OK** per non chiudere la finestra. Se tuttavia si fa clic su OK, è possibile riaprire la finestra utilizzando l'elenco attività.
+10. Scegliere l'attività **Modifica righe e colonne** per visualizzare la finestra **Stili di riga e colonna**. Fare clic su **Column1** e impostare le dimensioni su 15% verificando che il pulsante **%** sia selezionato e immettendo `15` nella casella **%**. Si tratta di un `NumericUpDown` controllo, che sarà utilizzato in un'esercitazione successiva. Scegliere **Column2** e impostarlo su 85 percent. Non scegliere ancora il pulsante **OK** per non chiudere la finestra. Se tuttavia si fa clic su OK, è possibile riaprire la finestra utilizzando l'elenco attività.
 
      ![Stili di riga e colonna di TableLayoutPanel](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") Stili di riga e colonna di TableLayoutPanel
 
 11. Dall'elenco a discesa **Mostra** nella parte superiore della finestra scegliere **Righe**. Impostare **Row1** su 90% e **Row2** su 10%.
 
-12. Fare clic sul pulsante **OK** . Il controllo TableLayoutPanel dispone ora di una riga grande nella parte superiore, una riga piccola nella parte inferiore, una colonna piccola a sinistra e una colonna grande a destra. È possibile ridimensionare righe e colonne in TableLayoutPanel scegliendo tableLayoutPanel1 nel form e trascinando quindi i bordi di righe e colonne.
+12. Fare clic su **OK** . Il controllo TableLayoutPanel dispone ora di una riga grande nella parte superiore, una riga piccola nella parte inferiore, una colonna piccola a sinistra e una colonna grande a destra. È possibile ridimensionare righe e colonne in TableLayoutPanel scegliendo tableLayoutPanel1 nel form e trascinando quindi i bordi di righe e colonne.
 
      ![Form1 con TableLayoutPanel ridimensionato](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Form1 con TableLayoutPanel ridimensionato
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 5: aggiungere controlli al form](../ide/step-5-add-controls-to-your-form.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 5: aggiungere controlli al form](../ide/step-5-add-controls-to-your-form.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: impostare le proprietà del form](../ide/step-3-set-your-form-properties.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 3: impostare le proprietà del form](../ide/step-3-set-your-form-properties.md).

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81638042"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
@@ -52,7 +52,7 @@ Le attività MSBuild vengono in genere create tramite la compilazione di una cla
 
 - L'attributo `TaskFactory` assegna un nome alla classe che implementa la factory dell'attività inline.
 
-- L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è `AssemblyName` possibile utilizzare l'attributo per specificare il nome completo `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`della classe task factory inline, che in genere si trova in .
+- L'attributo `AssemblyFile` assegna la posizione della factory dell'attività inline. In alternativa, è possibile usare l' `AssemblyName` attributo per specificare il nome completo della classe factory dell'attività inline, che in genere si trova in `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` .
 
 Gli elementi rimanenti dell'attività `DoNothing` sono vuoti e vengono specificati per illustrare l'ordine e la struttura di un'attività inline. Un esempio più concreto è riportato più avanti in questo argomento.
 
@@ -83,7 +83,7 @@ Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programma
 
 - Se il valore di `Type` è `Fragment`, il codice definisce il contenuto del metodo `Execute` ma non la firma o l'istruzione `return`.
 
-Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice è in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape di caratteri riservati, ad esempio "\<" o ">".
+Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice si trova in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape dei caratteri riservati, ad esempio " \<" or "> ".
 
 In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.
 
@@ -146,7 +146,7 @@ Log.LogError("Hello, world!");
 
 - `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.
 
-Ad esempio,
+Ad esempio:
 
 ```xml
 <ParameterGroup>
