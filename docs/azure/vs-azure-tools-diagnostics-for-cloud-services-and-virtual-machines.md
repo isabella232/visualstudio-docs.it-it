@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911860"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426733"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
 Per risolvere gli errori di un servizio cloud o di una macchina virtuale di Azure, è possibile usare Visual Studio per configurare con maggiore facilità Diagnostica di Azure. Diagnostica di Azure acquisisce i dati di sistema e i dati di registrazione nelle macchine virtuali e nelle istanze di macchine virtuali che eseguono il servizio cloud. I dati di diagnostica vengono trasferiti all'account di archiviazione scelto. Per altre informazioni sulla registrazione diagnostica in Azure, vedere [Abilitare la registrazione diagnostica per le app Web nel servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -28,7 +28,7 @@ Per configurare Diagnostica di Azure, è possibile usare una delle opzioni segue
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Modifiche alla diagnostica in Azure SDK 2.6
 Le modifiche seguenti riguardano i progetti Azure SDK 2.6 e successivi in Visual Studio:
 
-* L'emulatore locale supporta ora la diagnostica. È quindi possibile raccogliere dati di diagnostica e assicurarsi che l'applicazione crei le tracce corrette durante lo sviluppo e il testing in Visual Studio. La stringa di connessione `UseDevelopmentStorage=true` attiva la raccolta di dati di diagnostica durante l'esecuzione del progetto servizio cloud in Visual Studio mediante l'emulatore di archiviazione di Azure. Tutti i dati di diagnostica vengono raccolti nell'account di archiviazione Archivio di sviluppo.
+* L'emulatore locale supporta ora la diagnostica. È quindi possibile raccogliere dati di diagnostica e assicurarsi che l'applicazione crei le tracce corrette durante lo sviluppo e il testing in Visual Studio. La stringa `UseDevelopmentStorage=true` di connessione attiva la raccolta dei dati di diagnostica durante l'esecuzione del progetto di servizio cloud in Visual Studio usando l'emulatore di archiviazione di Azure. Tutti i dati di diagnostica vengono raccolti nell'account di archiviazione Archivio di sviluppo.
 * La stringa di connessione dell'account di archiviazione per la diagnostica `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` è archiviata nel file di configurazione (con estensione cscfg) del servizio. In Azure SDK 2.5 l'account di archiviazione di diagnostica viene specificato nel file diagnostics.wadcfgx.
 
 La stringa di connessione funziona in modo diverso per alcuni aspetti chiave in Azure SDK 2.6 e versioni successive rispetto ad Azure SDK 2.4 e versioni precedenti:
@@ -73,11 +73,11 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per i ruoli eseg
 3. Per specificare l'account di archiviazione per i dati di diagnostica, selezionare il pulsante con i puntini di sospensione (...).
 
     ![Specificare l'account di archiviazione da usare](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. Nella finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione** specificare se ci si vuole connettere usando l'emulatore di archiviazione di Azure, una sottoscrizione di Azure o credenziali immesse manualmente.
+4. Nella finestra di dialogo **Crea stringa di connessione di archiviazione** specificare se si vuole connettersi usando l'emulatore di archiviazione di Azure, una sottoscrizione di Azure o credenziali immesse manualmente.
 
     ![Finestra di dialogo Account di archiviazione](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * Se si seleziona **Emulatore di archiviazione di Microsoft Azure** la stringa di connessione viene impostata su `UseDevelopmentStorage=true`.
+   * Se si seleziona **emulatore di archiviazione di Microsoft Azure**, la stringa di connessione viene impostata su `UseDevelopmentStorage=true` .
    * Se si seleziona **Sottoscrizione**, è possibile selezionare la sottoscrizione di Azure che si vuole usare e immettere un nome di account. Per gestire le sottoscrizioni di Azure, selezionare **Gestisci account**.
    * Se si seleziona **Credenziali immesse manualmente**, immettere il nome e la chiave dell'account di Azure che si vuole usare.
 5. Per visualizzare la finestra di dialogo **Configurazione di diagnostica**, selezionare **Configura**. Ad eccezione di **Generale** e **Directory log**, ogni scheda rappresenta un'origine di dati di diagnostica che è possibile raccogliere. La scheda predefinita, **Generale**, offre le opzioni di raccolta di dati di diagnostica seguenti: **Solo errori**, **Tutte le informazioni** e **Personalizza piano**. L'opzione predefinita, **Solo errori**, richiede la quantità minima di spazio di archiviazione, perché non trasferisce messaggi di avviso o di traccia. L'opzione **Tutte le informazioni** trasferisce la quantità più elevata di informazioni e usa la quantità maggiore di spazio di archiviazione, quindi è l'opzione più costosa.

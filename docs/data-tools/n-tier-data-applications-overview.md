@@ -1,5 +1,5 @@
 ---
-title: Cenni preliminari sull'applicazione dati a più livelli
+title: Panoramica delle applicazioni dati a più livelli
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14527e84d5bbd2d06b2d091ba7a9d4daa9763462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281955"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426863"
 ---
 # <a name="n-tier-data-applications-overview"></a>Panoramica delle applicazioni dati a più livelli
-Le applicazioni dati a più *livelli* sono applicazioni dati separate in più *livelli*. Denominate anche "applicazioni distribuite" e "applicazioni multilivello", le applicazioni a più livelli sono separate dall'elaborazione in livelli discreti distribuiti tra il client e il server. Quando si sviluppano applicazioni che accedono ai dati, è necessario avere una netta separazione tra i vari livelli che costituiscono l'applicazione.
+Le applicazioni dati a più *livelli* sono applicazioni dati separate in più *livelli*. Dette anche "applicazioni distribuite" e "applicazioni a più livelli", le applicazioni a più livelli dipendono dall'elaborazione in livelli discreti distribuiti tra il client e il server. Quando si sviluppano applicazioni che accedono ai dati, è necessario avere una netta separazione tra i vari livelli che costituiscono l'applicazione.
 
 Una tipica applicazione a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il modo più semplice per separare i vari livelli in un'applicazione a più livelli consiste nel creare progetti discreti per ogni livello che si desidera includere nell'applicazione. Ad esempio, il livello di presentazione potrebbe essere un Windows Forms Application, mentre la logica di accesso ai dati potrebbe essere una libreria di classi che si trova nel livello intermedio. Inoltre, il livello di presentazione potrebbe comunicare con la logica di accesso ai dati nel livello intermedio tramite un servizio, ad esempio un servizio Web. La separazione dei componenti dell'applicazione in livelli aumenta la gestibilità e la manutenibilità dell'applicazione, Questo consente di semplificare l'adozione di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. Inoltre, le applicazioni a più livelli in genere archiviano informazioni riservate nel livello intermedio, che mantiene l'isolamento dal livello di presentazione.
 

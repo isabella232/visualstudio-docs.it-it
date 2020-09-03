@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250557"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426902"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installare Visual Studio 2019 per Mac
 
@@ -24,7 +24,7 @@ Per iniziare a sviluppare app .NET native e multipiattaforma in macOS, installar
 
 ## <a name="requirements"></a>Requisiti
 
-- Mac con macOS High Sierra 10.12 o versione successiva.
+- Mac con macOS High Sierra 10.13 o versione successiva.
 
 Per compilare app Xamarin per iOS o macOS, è anche necessario:
 

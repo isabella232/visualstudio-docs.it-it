@@ -2,21 +2,23 @@
 title: Introduzione al portale di amministrazione delle sottoscrizioni | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: overview
 description: Informazioni su come iniziare a gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale di amministrazione delle sottoscrizioni.
-ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249868"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426876"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual Studio
 
 Il portale di amministrazione delle sottoscrizioni di Visual Studio offre gli strumenti necessari per gestire le sottoscrizioni dell'organizzazione in un'unica posizione. 
+
+Presentazione del portale.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
@@ -34,15 +36,15 @@ Una volta assegnate le sottoscrizioni, la scheda Gestisci sottoscrittori fornisc
 - Il livello di sottoscrizione assegnato.
 - La data in cui è stata assegnata la sottoscrizione.
 - La data di scadenza della sottoscrizione.
-- Una descrizione facoltativa in formato testo.
-- Indicazione relativa all'abilitazione/disabilitazione del download per il sottoscrittore.
+- Campo di riferimento per ulteriori note.
+- Indica se il download del Sottoscrittore è abilitato o disabilitato.
 - Il paese in cui si trovano.
 - Le preferenze della lingua per la posta elettronica per le comunicazioni relative all'assegnazione da parte del portale degli amministratori.
 - Un campo facoltativo per un altro indirizzo e-mail usato per le comunicazioni di accesso.
 
 Nella parte superiore sinistra della pagina sono disponibili diverse icone che è possibile selezionare per visualizzare una panoramica dell'assegnazione della sottoscrizione, i dettagli del contratto e il report di utilizzo massimo.
 
-Per visualizzare informazioni aggiuntive sul numero di licenze di sottoscrizione acquistate, assegnate e ancora disponibili nell'organizzazione per ogni contratto, selezionare l'icona superiore per abilitare il pannello di scorrimento.
+Per visualizzare informazioni aggiuntive sul numero di licenze di sottoscrizione acquistate, assegnate e ancora disponibili nell'organizzazione per ogni contratto, fare clic sull'icona superiore per abilitare il pannello di scorrimento.
 > [!div class="mx-imgBorder"]
 > ![Pagina relativa ai sottoscrittori del portale di amministrazione sottoscrizioni di Visual Studio](_img/using-admin-portal/subscribers-page.png)
 

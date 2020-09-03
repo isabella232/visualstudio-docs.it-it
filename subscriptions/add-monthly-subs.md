@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 06/23/2020
+ms.date: 09/03/2020
 ms.topic: how-to
 description: Scopri come acquistare nuove sottoscrizioni mensili di Visual Studio nel portale di amministrazione delle sottoscrizioni
-ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 209484968e85613da7cf38af3dce6944413c678a
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904704"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426830"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Aggiungere nuove sottoscrizioni mensili di Visual Studio al portale di amministrazione delle sottoscrizioni
 Quando si acquistano nuove sottoscrizioni mensili di Visual Studio usando una sottoscrizione di Azure, potrebbe essere necessario aggiungerle al portale di amministrazione delle sottoscrizioni per assegnarle agli utenti.  
@@ -25,7 +25,7 @@ I passaggi per aggiungere sottoscrizioni mensili dipendono dai tipi di sottoscri
 
 ## <a name="how-to-add-monthly-subscriptions"></a>Come aggiungere sottoscrizioni mensili
 1. Accedere al portale di amministrazione delle sottoscrizioni all'indirizzo <https://manage.visualstudio.com>
-1. Nella scheda **Gestisci sottoscrittori** scegliere l'elenco a discesa **nuovo contratto** 
+1. Nella scheda **Gestisci sottoscrittori** scegliere l'elenco a discesa **Aggiungi contratto** 
 1. Scegliere **nuove sottoscrizioni mensili** nell'elenco a discesa
    > [!div class="mx-imgBorder"]
    > ![Elenco a discesa Aggiungi nuove sottoscrizioni mensili](_img/add-monthly-subs/add-subs-drop-down.png)
