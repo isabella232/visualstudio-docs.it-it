@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b70e3a24cd4cb05dc1a28ff855498496f5665ddc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542857"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Eseguire unit test per le app dello Store in Visual Studio
@@ -29,7 +29,7 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 >
 >   Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md) in MSDN Library.
 
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>Contenuto dell'argomento
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Contenuto dell'argomento
  [Framework unit test e progetti di test](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Esecuzione di test in Esplora test](#BKMK_Running_tests_in_Test_Explorer)
@@ -53,7 +53,7 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 ## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Framework unit test e progetti di test
  Visual Studio Express per app di Windows Store include i framework di testing unità Microsoft per il codice C++ gestito e nativo. Esplora test può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono essere costituiti da una combinazione qualsiasi di framework di unit test in Visual C++ o Visual C# e Visual Basic. Quando il codice sottoposto a test è scritto per .NET Framework, il progetto di test può essere scritto in qualsiasi linguaggio .NET Framework, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++.
 
-## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Esecuzione di test in Esplora test
+## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Esecuzione di test in Esplora test
  Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
 
  ![Esplora unit test](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,7 +64,7 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 
  ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-### <a name="running-tests"></a><a name="BKMK_Running_tests"></a>Esecuzione di test
+### <a name="running-tests"></a><a name="BKMK_Running_tests"></a> Esecuzione di test
  È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
@@ -75,7 +75,7 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 
   Mentre il test viene eseguito, la barra Superato/Non superato nella parte superiore della finestra Esplora test mostra un'animazione. Al termine dell'esecuzione del test, la barra Superato/Non superato diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 
-## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a>Visualizzazione dei risultati dei test
+## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a> Visualizzazione dei risultati dei test
  Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. Il riquadro dei dettagli nella parte inferiore della finestra Esplora Test mostra un riepilogo dell'esecuzione dei test.
 
 ### <a name="viewing-test-details"></a><a name="BKMK_Viewing_test_details"></a> Visualizzazione dei dettagli dei test

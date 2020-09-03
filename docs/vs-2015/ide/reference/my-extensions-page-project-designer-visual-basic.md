@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ada9e1f9eaa63e2158bd3d6a117946e90924461d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672003"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Pagina Estensioni My, Progettazione progetti (Visual Basic)
@@ -28,14 +28,14 @@ Usare la pagina **Estensioni My** di **Progettazione progetti** per gestire le e
 
  Per accedere alla pagina **Estensioni My**, fare doppio clic su **Progetto personale** per il nodo del progetto in **Esplora soluzioni**. Quando appare **Progettazione progetti** fare clic sulla scheda **Estensioni My**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  Le opzioni seguenti consentono di aggiungere o rimuovere estensioni dello spazio dei nomi `My` nel progetto. Un'estensione dello spazio dei nomi `My` deve prima essere installata come modello di elemento di Visual Studio per essere disponibile per l'aggiunta. Per informazioni sulla pubblicazione e l'installazione delle estensioni dello spazio dei nomi `My`, vedere [Assemblaggio e distribuzione delle estensioni My personalizzate](https://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21).
 
- **Estensioni spazio dei nomi My** Questo elenco Mostra tutte le estensioni dello spazio dei nomi `My` installate nel progetto.
+ **Estensioni spazio dei nomi My** Questo elenco Mostra tutte le `My` estensioni dello spazio dei nomi installate nel progetto.
 
- **Aggiungi estensione** Fare clic su questo pulsante per aggiungere un'estensione dello spazio dei nomi `My` installata al progetto. Verrà visualizzato un elenco di tutte le possibili estensioni dello spazio dei nomi `My`. Selezionare l'estensione dello spazio dei nomi `My` che si vuole aggiungere al progetto e fare clic su **OK** per aggiungerla.
+ **Aggiungi estensione** Fare clic su questo pulsante per aggiungere un' `My` estensione dello spazio dei nomi installata al progetto. Verrà visualizzato un elenco di tutte le possibili estensioni dello spazio dei nomi `My`. Selezionare l'estensione dello spazio dei nomi `My` che si vuole aggiungere al progetto e fare clic su **OK** per aggiungerla.
 
- **Rimuovi estensione** Selezionare uno o più riferimenti nell'elenco **estensioni spazio dei nomi My** , quindi fare clic su questo pulsante per rimuovere l'estensione dello spazio dei nomi `My` dal progetto.
+ **Rimuovi estensione** Selezionare uno o più riferimenti nell'elenco **estensioni spazio dei nomi My** , quindi fare clic su questo pulsante per rimuovere l' `My` estensione dello spazio dei nomi dal progetto.
 
 ## <a name="see-also"></a>Vedere anche
  [Estensione dello spazio dei nomi My in Visual Basic creazione di](https://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e) [pacchetti e distribuzione delle estensioni My personalizzate](https://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21) [estensione del modello di applicazione Visual Basic](https://msdn.microsoft.com/library/e91d3bed-4c27-40e3-871d-2be17467c72c) [personalizzazione degli oggetti disponibili in My](https://msdn.microsoft.com/library/4e8279c2-ed5b-4681-8903-8a6671874000)

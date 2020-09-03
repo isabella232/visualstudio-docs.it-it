@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3e7cc942550c979ca4b3f3138da252321b4c983
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619692"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per la Gestione contenuto della Guida
@@ -44,7 +44,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 ## <a name="switches-and-arguments"></a>Opzioni e argomenti
  La tabella seguente definisce le opzioni e gli argomenti che è possibile usare per lo strumento da riga di comando per Gestione contenuto della Guida:
 
-|Switch|Obbligatorio?|Argomenti|
+|Commutatore|Necessaria?|Argomenti|
 |------------|---------------|---------------|
 |/operation|Sì|-   **Install**: aggiunge i libri dell'origine dell'installazione specificata all'archivio del contenuto locale.<br />     Questa opzione richiede l'argomento /booklist, l'argomento /sourceURI o entrambi. Se non si specifica l'argomento /sourceURI, come origine dell'installazione viene usato l'URI predefinito di Visual Studio. Se non si specifica l'argomento /booklist, vengono installati tutti i libri in /sourceUri.<br />-   **Uninstall**: rimuove dall'archivio del contenuto locale i libri specificati.<br />     Questa opzione richiede l'argomento /booklist o l'argomento /sourceURI.  Se si specifica l'argomento /sourceURI, vengono rimossi tutti i libri e l'argomento /booklist viene ignorato.<br />-   **Move**: sposta l'archivio locale nel percorso specificato. Il percorso dell'archivio locale predefinito viene impostato dal programma di installazione della Guida in % PROGRAMDATA %<br />     Questa opzione richiede gli argomenti /locationPath e /catalogName. Verranno registrati messaggi di errore nel registro eventi se si specifica un percorso non valido o se l'unità non dispone di spazio libero sufficiente per il contenuto.<br />-   **Refresh**: aggiorna gli argomenti modificati dopo l'installazione o aggiornati più di recente.<br />     Questa opzione richiede l'argomento /sourceURI.|
 |/catalogName|Sì|Specifica il nome del catalogo del contenuto.|
@@ -59,7 +59,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/locationpath|No|Specifica la cartella predefinita per il contenuto della Guida locale. Questa opzione deve essere usata solo per installare o rimuovere il contenuto. Se si specifica questa opzione, è necessario specificare anche l'opzione /silent.|
 |/silent|No|Installa o rimuove il contenuto della Guida senza chiedere conferma all'utente o visualizzare l'interfaccia utente, nemmeno l'icona nell'area di notifica dello stato. L'output viene registrato in un file nella directory %Temp%. **Importante:**  per installare automaticamente il contenuto, è necessario usare file con firma digitale con estensione cab, anziché file con estensione mshc.|
 |/launchingApp|No|Definisce il contesto dell'applicazione e del catalogo quando viene avviato il visualizzatore della Guida senza l'applicazione padre. Gli argomenti per questa opzione sono *CompanyName*, *ProductName* e *VersionNumber* (ad esempio `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Questa opzione è necessaria per l'installazione del contenuto con il parametro /silent.|
-|/wait *secondi*|No|Sospende le operazioni di installazione, disinstallazione e aggiornamento. Se un'operazione è già in corso per il catalogo, il processo attenderà il numero specificato di secondi per continuare. Usare 0 per restare in attesa in modo indefinito.|
+|/wait *secondi*|No|Sospende le operazioni di installazione, disinstallazione e aggiornamento. Se un'operazione è già in corso per il catalogo, il processo attenderà il numero specificato di secondi per continuare. Usare 0 per l'attesa indefinita.|
 |/?|No|Elenca le opzioni e le relative descrizioni per lo strumento da riga di comando per Gestione contenuto della Guida.|
 
 ### <a name="exit-codes"></a>Codici di uscita

@@ -19,17 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633044"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 
 Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gli elementi `When` restituiscono `false`.
 
- \<Progetto \<> \<scegliere \<> quando> sceglie> ... \<Altrimenti \<> Scegli> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +52,7 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 
 ### <a name="attributes"></a>Attributes
 
- No.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -121,4 +126,4 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 ## <a name="see-also"></a>Vedere anche
 
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
-- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
+- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

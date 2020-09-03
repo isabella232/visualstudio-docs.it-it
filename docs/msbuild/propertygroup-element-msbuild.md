@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632927"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 
-Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni `Property` elemento utilizzato in un progetto MSBuild `PropertyGroup` deve essere un elemento figlio di un elemento.
+Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) definiti dall'utente. Ogni `Property` elemento usato in un progetto MSBuild deve essere figlio di un `PropertyGroup` elemento.
 
  \<Project> \<PropertyGroup>
 
@@ -60,7 +60,7 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 
 | Elemento | Descrizione |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
 ## <a name="example"></a>Esempio
 
@@ -76,5 +76,5 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
-- [Proprietà di MSBuild](../msbuild/msbuild-properties.md)
+- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
+- [proprietà di MSBuild](../msbuild/msbuild-properties.md)

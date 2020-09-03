@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630782"
 ---
 # <a name="xsd-task"></a>XSD (attività)
@@ -40,33 +40,33 @@ Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera
 
 - **AdditionalOptions**
 
-     Parametro **String** facoltativo.
+     Parametro **stringa** facoltativo.
 
-     Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD**.
+     Un elenco di opzioni come specificato sulla riga di comando. Ad esempio,/ \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD**.
 
 - **GenerateFromSchema**
 
-  Parametro **String** facoltativo.
+  Parametro **stringa** facoltativo.
 
   Specifica i tipi generati dallo schema specificato.
 
   Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione XSD.
 
-  - **classes** - **classi/classi**
+  - **classi**  -  **/Classes**
 
-  - **set di dati** - **/dataset**
+  - **set di dati**  -  **/DataSet**
 
 - **Lingua**
 
-     Parametro **String** facoltativo.
+     Parametro **stringa** facoltativo.
 
      Specifica il linguaggio di programmazione da usare per il codice generato.
 
      È possibile scegliere tra **CS** (C#, il linguaggio predefinito), **VB** (Visual Basic) o **JS** (JScript). È anche possibile specificare un nome completo per una classe che implementa `System.CodeDom.Compiler.CodeDomProvider Class`.
 
-- **Namespace**
+- **Spazio dei nomi**
 
-     Parametro **String** facoltativo.
+     Parametro **stringa** facoltativo.
 
      Specifica lo spazio dei nomi del runtime per i tipi generati.
 
@@ -84,10 +84,10 @@ Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera
 
 - **TrackerLogDirectory**
 
-     Parametro **String** facoltativo.
+     Parametro **stringa** facoltativo.
 
      Specifica la directory per il log di Tracker.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

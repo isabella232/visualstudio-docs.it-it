@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542740"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizzare l'archiviazione dei file e la serializzazione XML
@@ -270,10 +270,10 @@ Questi elementi sono disponibili in Esplora DSL in **dati di serializzazione XML
 |-|-|
 |Con schema di elemento personalizzato|Se true, indica che la classe di dominio ha uno schema di elemento personalizzato|
 |Personalizzato|Impostare su **true** se si desidera scrivere codice di serializzazione e deserializzazione personalizzato per questa classe di dominio.<br /><br /> Compilare la soluzione ed esaminare gli errori per individuare istruzioni dettagliate.|
-|Classe di dominio|Classe di dominio a cui si applica questo nodo dati della classe. Di sola lettura.|
+|Classe di dominio|Classe di dominio a cui si applica questo nodo dati della classe. Sola lettura.|
 |Nome dell'elemento|Nome del nodo XML per gli elementi di questa classe. Il valore predefinito è una versione minuscola del nome della classe di dominio.|
-|Nome dell'attributo del moniker|Nome dell'attributo utilizzato negli elementi del moniker per contenere il riferimento. Se vuoto, viene utilizzato il nome o l'ID della proprietà chiave.<br /><br /> In questo esempio è "Name":`<personMoniker name="/Mike Nash"/>`|
-|Nome dell'elemento moniker|Nome dell'elemento XML usato per i moniker che fanno riferimento agli elementi di questa classe.<br /><br /> Il valore predefinito è una versione minuscola del nome della classe con suffisso "moniker". Ad esempio: `personMoniker`.|
+|Nome dell'attributo del moniker|Nome dell'attributo utilizzato negli elementi del moniker per contenere il riferimento. Se vuoto, viene utilizzato il nome o l'ID della proprietà chiave.<br /><br /> In questo esempio è "Name":  `<personMoniker name="/Mike Nash"/>`|
+|Nome dell'elemento moniker|Nome dell'elemento XML usato per i moniker che fanno riferimento agli elementi di questa classe.<br /><br /> Il valore predefinito è una versione minuscola del nome della classe con suffisso "moniker". Ad esempio, `personMoniker`|
 |Nome del tipo di moniker|Nome del tipo XSD generato per i moniker a elementi di questa classe. XSD è in **Dsl\Generated Code \\ \* schema. xsd**|
 |ID serializzazione|Se true, il GUID dell'elemento è incluso nel file. Questo deve essere true se non è presente alcuna proprietà contrassegnata come **chiave del moniker** e il DSL definisce le relazioni di riferimento a questa classe.|
 |Nome tipo|Nome del tipo XML generato in XSD dalla classe di dominio designata.|
@@ -285,7 +285,7 @@ I nodi di proprietà XML si trovano nei nodi della classe.
 
 |Proprietà|Descrizione|
 |-|-|
-|Proprietà di dominio|Proprietà a cui si applicano i dati di configurazione della serializzazione XML. Di sola lettura.|
+|Proprietà di dominio|Proprietà a cui si applicano i dati di configurazione della serializzazione XML. Sola lettura.|
 |Chiave moniker|Se true, la proprietà viene utilizzata come chiave per la creazione di moniker che fanno riferimento a istanze di questa classe di dominio.|
 |Qualificatore del moniker|Se True, la proprietà viene utilizzata per la creazione del qualificatore nei moniker. Se false e se SerializeId non è true per questa classe di dominio, i moniker vengono qualificati dal moniker dell'elemento padre nell'albero di incorporamento.|
 |Rappresentazione|Se Attribute, la proprietà viene serializzata come attributo XML, se Element, viene serializzata come elemento; se Ignore, non viene serializzata.|
@@ -299,7 +299,7 @@ I nodi dati del ruolo si trovano nei nodi della classe di origine.
 |Proprietà|Descrizione|
 |-|-|
 |Con moniker personalizzato|Impostare su true se si desidera fornire il proprio codice per la generazione e la risoluzione dei moniker che attraversano questa relazione.<br /><br /> Per istruzioni dettagliate, compilare la soluzione, quindi fare doppio clic sui messaggi di errore.|
-|Relazione di dominio|Specifica la relazione a cui si applicano queste opzioni. Di sola lettura.|
+|Relazione di dominio|Specifica la relazione a cui si applicano queste opzioni. Sola lettura.|
 |Ometti (elemento)|Se true, il nodo XML che corrisponde al ruolo di origine viene omesso dallo schema.<br /><br /> Se esiste più di una relazione tra le classi di origine e di destinazione, questo nodo del ruolo distingue tra i collegamenti che appartengono alle due relazioni. Si consiglia pertanto di non impostare questa opzione in questo caso.|
 |Nome elemento ruolo|Specifica il nome dell'elemento XML derivato dal ruolo di origine. Il valore predefinito è il nome della proprietà Role.|
 |Usa formato completo|Se true, ogni elemento o moniker di destinazione è racchiuso in un nodo XML che rappresenta la relazione. Questo valore deve essere impostato su true se la relazione ha proprietà del dominio personalizzate.|

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 403415eaf8a882efdd63fdb9a73b5489b91f2529
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651090"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
@@ -34,9 +34,9 @@ Questo procedura dettagliata Mostra come creare un'applicazione "Forms over data
 
 ## <a name="configure-the-project"></a>Configurare il progetto
 
-1. In Visual Studio scegliere **file &#124; nuovo progetto** e quindi creare una nuova C# applicazione WPF.
+1. In Visual Studio scegliere **File &#124; nuovo progetto** , quindi creare una nuova applicazione WPF C#.
 
-2. Si aggiungerà quindi il pacchetto NuGet per Entity Framework 6. In Esplora soluzioni selezionare il nodo del progetto. Nel menu principale scegliere  **&#124; progetto Gestisci pacchetti NuGet...**
+2. Si aggiungerà quindi il pacchetto NuGet per Entity Framework 6. In Esplora soluzioni selezionare il nodo del progetto. Nel menu principale scegliere **progetto &#124; Gestisci pacchetti NuGet...**
 
      ![Voce di menu Gestisci pacchetti NuGet](../data-tools/media/raddata-vs2015-manage-nuget-packages.png "raddata_vs2015_manage_nuget_packages")
 
@@ -48,7 +48,7 @@ Questo procedura dettagliata Mostra come creare un'applicazione "Forms over data
 
 ## <a name="create-the-model"></a>Creare il modello
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere  **&#124; Aggiungi nuovo elemento**. Nel riquadro sinistro, sotto il C# nodo, scegliere **dati** e nel riquadro centrale scegliere **ADO.NET Entity Data Model**.
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere **aggiungi &#124; nuovo elemento**. Nel riquadro sinistro, sotto il nodo C#, scegliere **dati** e nel riquadro centrale scegliere **ADO.NET Entity Data Model**.
 
     ![Nuovo elemento del progetto del modello di Entity Framework](../data-tools/media/raddata-ef-new-project-item.png "Nuovo elemento del progetto raddata EF")
 
@@ -62,7 +62,7 @@ Questo procedura dettagliata Mostra come creare un'applicazione "Forms over data
 
     ![Scegliere gli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png "raddata scegliere oggetti EF")
 
-5. Tramite la procedura guidata C# vengono generate le classi che rappresentano il modello di Entity Framework. Si tratta di classi C# semplici obsolete, che sono quelle che verranno restituite all'interfaccia utente WPF. Il file con estensione edmx descrive le relazioni e altri metadati che associano le classi agli oggetti nel database.  I file con estensione tt sono modelli T4 che generano il codice che funzionerà sul modello e salveranno le modifiche apportate al database. È possibile visualizzare tutti questi file in Esplora soluzioni nel nodo Northwind_model:
+5. Tramite la procedura guidata vengono generate le classi C# che rappresentano il modello di Entity Framework. Si tratta di classi C# semplici e sono quelle che verranno restituite all'interfaccia utente WPF. Il file con estensione edmx descrive le relazioni e altri metadati che associano le classi agli oggetti nel database.  I file con estensione tt sono modelli T4 che generano il codice che funzionerà sul modello e salveranno le modifiche apportate al database. È possibile visualizzare tutti questi file in Esplora soluzioni nel nodo Northwind_model:
 
     ![Esplora soluzioni i file di modello EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata Esplora soluzioni i file di modello EF")
 
@@ -70,11 +70,11 @@ Questo procedura dettagliata Mostra come creare un'applicazione "Forms over data
 
 6. I file con estensione tt sono di uso generico ed è necessario modificarne uno per lavorare con l'associazione dati WPF, che richiede ObservableCollections.  In Esplora soluzioni espandere il nodo Northwind_model fino a trovare Northwind_model. TT. Verificare che l'utente **non** sia presente nel *. File context. TT che si trova direttamente sotto il file con estensione edmx.
 
-   - Sostituire le due occorrenze di <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601>.
+   - Sostituire le due occorrenze di <xref:System.Collections.ICollection> con <xref:System.Collections.ObjectModel.ObservableCollection%601> .
 
-   - Sostituire la prima occorrenza di <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> alla riga 51. Non sostituire la seconda occorrenza di HashSet
+   - Sostituire la prima occorrenza di <xref:System.Collections.Generic.HashSet%601> con <xref:System.Collections.ObjectModel.ObservableCollection%601> intorno alla riga 51. Non sostituire la seconda occorrenza di HashSet
 
-   - Sostituire l'unica occorrenza di <xref:System.Collections.Generic> (intorno alla riga 334) con <xref:System.Collections.ObjectModel>.
+   - Sostituire l'unica occorrenza di <xref:System.Collections.Generic> (intorno alla riga 334) con <xref:System.Collections.ObjectModel> .
 
 7. Premere **CTRL + MAIUSC + B** per compilare il progetto. Al termine della compilazione, le classi del modello sono visibili alla creazione guidata origine dati.
 
@@ -87,11 +87,11 @@ Questo procedura dettagliata Mostra come creare un'applicazione "Forms over data
 
      ![Configurazione guidata origine dati con origine oggetto](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png "Configurazione guidata origine dati raddata con origine oggetto")
 
-2. Selezionare Customer.  (Le origini per gli ordini verranno generate automaticamente dalla proprietà di navigazione Orders del cliente).
+2. Seleziona Cliente.  (Le origini per gli ordini verranno generate automaticamente dalla proprietà di navigazione Orders del cliente).
 
      ![Aggiungere classi di entità come origini dati](../data-tools/media/raddata-add-entity-classes-as-data-sources.png "raddata aggiungere classi di entità come origini dati")
 
-3. Fare clic su **fine**
+3. Fare clic su **Fine**
 
 4. Passare a MainWindow. XAML nella visualizzazione codice. Il codice XAML verrà mantenuto molto semplice per gli scopi di questo esempio. Modificare il titolo di MainWindow in un elemento più descrittivo e aumentare l'altezza e la larghezza a 600 x 800 per il momento. È sempre possibile modificarlo in un secondo momento. Aggiungere quindi queste tre definizioni di riga alla griglia principale, una riga per i pulsanti di spostamento, una per i dettagli del cliente, una per la griglia che Mostra gli ordini:
 
@@ -103,11 +103,11 @@ Questo procedura dettagliata Mostra come creare un'applicazione "Forms over data
            </Grid.RowDefinitions>
     ```
 
-5. Aprire MainWindow. XAML in modo che venga visualizzato nella finestra di progettazione. In questo modo la finestra Origini dati verrà visualizzata come opzione nel margine della finestra di Visual Studio accanto alla casella degli strumenti. Fare clic sulla scheda per aprire la finestra. in caso contrario, premere **MAIUSC + ALT + D** o scegliere  **&#124; Visualizza &#124; altre origini dati di Windows**. Ogni proprietà della classe customers verrà visualizzata nella propria casella di testo. Fare prima clic sulla freccia nella casella combinata Customers e scegliere **Details**. Trascinare quindi il nodo sulla parte centrale dell'area di progettazione in modo che la finestra di progettazione sappia che si desidera che venga posizionata nella riga intermedia.  Se non si posiziona il mouse, è possibile specificare la riga manualmente in un secondo momento nel codice XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento Grid, ma a questo punto è possibile disporli nel form.  Ad esempio, potrebbe essere utile inserire la casella di testo nome in alto, sopra l'indirizzo. L'applicazione di esempio per questo articolo Riordina i campi e li ridispone in due colonne.
+5. Aprire MainWindow. XAML in modo che venga visualizzato nella finestra di progettazione. In questo modo la finestra Origini dati verrà visualizzata come opzione nel margine della finestra di Visual Studio accanto alla casella degli strumenti. Fare clic sulla scheda per aprire la finestra. in alternativa, premere **MAIUSC + ALT + D** o scegliere **Visualizza &#124; altre origini dati &#124; Windows**. Ogni proprietà della classe customers verrà visualizzata nella propria casella di testo. Fare prima clic sulla freccia nella casella combinata Customers e scegliere **Details**. Trascinare quindi il nodo sulla parte centrale dell'area di progettazione in modo che la finestra di progettazione sappia che si desidera che venga posizionata nella riga intermedia.  Se non si posiziona il mouse, è possibile specificare la riga manualmente in un secondo momento nel codice XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento Grid, ma a questo punto è possibile disporli nel form.  Ad esempio, potrebbe essere utile inserire la casella di testo nome in alto, sopra l'indirizzo. L'applicazione di esempio per questo articolo Riordina i campi e li ridispone in due colonne.
 
      ![Associazione all'origine dati dei clienti ai singoli controlli](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "associazione all'origine dati dei clienti raddata ai singoli controlli")
 
-     Nella visualizzazione codice è ora possibile visualizzare un nuovo elemento `Grid` nella riga 1, ovvero la riga intermedia, della griglia padre. La griglia padre dispone di un attributo `DataContext` che fa riferimento a un oggetto CollectionViewSource che è stato aggiunto all'elemento `Windows.Resources`. Dato il contesto dei dati, quando la prima casella di testo, ad esempio, viene associata a "Address", il nome viene mappato alla proprietà `Address` nell'oggetto `Customer` corrente in CollectionViewSource.
+     Nella visualizzazione codice è ora possibile visualizzare un nuovo `Grid` elemento nella riga 1, ovvero la riga intermedia, della griglia padre. La griglia padre dispone di un `DataContext` attributo che fa riferimento a un oggetto CollectionViewSource che è stato aggiunto all' `Windows.Resources` elemento. Dato il contesto dei dati, quando la prima casella di testo, ad esempio, viene associata a "Address", il nome viene mappato alla `Address` proprietà nell' `Customer` oggetto corrente in CollectionViewSource.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -142,13 +142,13 @@ Questo procedura dettagliata Mostra come creare un'applicazione "Forms over data
            }
     ```
 
-     Aggiungere una direttiva `using` per System. Data. Entity per portare il metodo di estensione del carico nell'ambito:
+     Aggiungere una `using` direttiva per System. Data. Entity per portare il metodo di estensione del carico nell'ambito:
 
     ```csharp
     using System.Data.Entity;
     ```
 
-     Scorrere ora verso il basso e trovare il gestore dell'evento Window_Loaded. Si noti che Visual Studio ha aggiunto un oggetto CollectionViewSource per noi. Rappresenta l'oggetto NorthwindEntities selezionato al momento della creazione del modello. Aggiungere il codice a Window_loaded in modo che l'intero metodo sia ora simile al seguente:
+     Scorrere ora verso il basso e trovare il gestore dell'evento Window_Loaded. Si noti che Visual Studio ha aggiunto un oggetto CollectionViewSource per noi. Rappresenta l'oggetto NorthwindEntities selezionato al momento della creazione del modello. Aggiungere il codice per Window_loaded in modo che l'intero metodo sia ora simile al seguente:
 
     ```csharp
     private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -170,7 +170,7 @@ Questo procedura dettagliata Mostra come creare un'applicazione "Forms over data
 8. Premere **F5**. Verranno visualizzati i dettagli per il primo cliente recuperato in CollectionViewSource e i relativi ordini nella griglia dei dati. La formattazione non è eccezionale, quindi è consigliabile risolverla. e un modo per visualizzare gli altri record e per eseguire operazioni CRUD di base.
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Modificare la progettazione della pagina e aggiungere griglie per i nuovi clienti e ordini
- La disposizione predefinita prodotta da Visual Studio non è ideale per l'applicazione, quindi le modifiche verranno apportate manualmente nel codice XAML. Sono necessari anche alcuni "moduli", che sono effettivamente griglie, per consentire all'utente di aggiungere un nuovo cliente o un nuovo ordine.    Per poter aggiungere un nuovo cliente e un ordine, è necessario un set separato di caselle di testo che non sono associate a dati al `CollectionViewSource`. Verrà controllata la griglia visualizzata dall'utente in un determinato momento impostando la proprietà Visible nei metodi del gestore.
+ La disposizione predefinita prodotta da Visual Studio non è ideale per l'applicazione, quindi le modifiche verranno apportate manualmente nel codice XAML. Sono necessari anche alcuni "moduli", che sono effettivamente griglie, per consentire all'utente di aggiungere un nuovo cliente o un nuovo ordine.    Per poter aggiungere un nuovo cliente e un ordine, è necessario un set separato di caselle di testo che non sono associate a dati a `CollectionViewSource` . Verrà controllata la griglia visualizzata dall'utente in un determinato momento impostando la proprietà Visible nei metodi del gestore.
 
  Infine, si aggiungerà un pulsante Delete a ogni riga della griglia Orders per consentire a un utente di eliminare un singolo ordine.
 

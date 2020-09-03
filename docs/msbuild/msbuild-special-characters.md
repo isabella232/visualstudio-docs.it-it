@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fdc9024db06fe27fab5dfdf9589300a6eb671368
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633213"
 ---
 # <a name="msbuild-special-characters"></a>Caratteri speciali di MSBuild
 
-MSBuild riserva alcuni caratteri per un utilizzo speciale in contesti specifici. L'escape di tali caratteri è necessario solo se devono essere usati letteralmente nel contesto in cui sono riservati. Ad esempio, un asterisco ha un significato speciale solo negli attributi `Include` e `Exclude` di una definizione di elemento e nelle chiamate a `CreateItem`. Se un asterisco deve apparire come asterisco in uno di questi contesti, è necessario eseguirne l'escape. In ogni altro contesto, è sufficiente digitare l'asterisco nel punto in cui deve essere visualizzato.
+MSBuild riserva alcuni caratteri per usi speciali in contesti specifici. L'escape di tali caratteri è necessario solo se devono essere usati letteralmente nel contesto in cui sono riservati. Ad esempio, un asterisco ha un significato speciale solo negli attributi `Include` e `Exclude` di una definizione di elemento e nelle chiamate a `CreateItem`. Se un asterisco deve apparire come asterisco in uno di questi contesti, è necessario eseguirne l'escape. In ogni altro contesto, è sufficiente digitare l'asterisco nel punto in cui deve essere visualizzato.
 
- Per eseguire l'escape di un carattere speciale, usare la sintassi %\<xx>, dove \<xx> rappresenta il valore esadecimale ASCII del carattere. Per altre informazioni, vedere [Procedura: eseguire l'escape di caratteri speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
+ Per eseguire l'escape di un carattere speciale, usare la sintassi% \<xx> , dove \<xx> rappresenta il valore esadecimale ASCII del carattere. Per altre informazioni, vedere [procedura: eseguire l'escape dei caratteri speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 ## <a name="special-characters"></a>Caratteri speciali
 
- Nella tabella seguente sono elencati i caratteri speciali MSBuild:
+ Nella tabella seguente sono elencati i caratteri speciali di MSBuild:
 
-|**Carattere**|**Ascii**|**Utilizzo riservato**|
+|**Carattere**|**ASCII**|**Utilizzo riservato**|
 |-------------------|---------------|------------------------|
 |%|%25|Riferimento ai metadati|
 |$|%24|Riferimento alle proprietà|

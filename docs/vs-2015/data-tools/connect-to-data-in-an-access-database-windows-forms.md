@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8426e9fcaa29bef36b6701c78d622f6f42fd1171
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651137"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Connettersi ai dati in un database di Access (Windows Form)
@@ -32,19 +32,19 @@ ms.locfileid: "72651137"
 
 È possibile connettersi a un database di Access, ovvero un file con estensione MDF o accdb, usando Visual Studio. Dopo avere definito la connessione, i dati vengono visualizzati nella finestra **Origine dati** da cui è possibile trascinare tabelle o visualizzazioni nei form.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per utilizzare queste procedure, è necessario disporre di un progetto Windows Forms Application e di un database di Access (file con estensione accdb) o di un database di Access 2000-2003 (file con estensione mdb). Attenersi alla procedura che corrisponde al tipo di file utilizzato.
 
 ## <a name="creating-the-dataset-for-an-accdb-file"></a>Creazione del set di dati per un file con estensione accdb
  È possibile connettersi ai database creati tramite Access 2013, Office 365, Access 2010 o Access 2007 utilizzando la procedura riportata di seguito.
 
-#### <a name="to-create-the-dataset"></a>Per creare il dataset
+#### <a name="to-create-the-dataset"></a>Per creare il set di dati
 
 1. Aprire l'applicazione Windows Forms a cui si vuole connettere i dati.
 
-2. Scegliere **altre finestre**  > **origini dati**dal menu **Visualizza** .
+2. Scegliere altre **View** **Other Windows**  >  **origini dati**di Windows dal menu Visualizza.
 
-     ![Visualizza altre origini dati di Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png "ViewDataSources")
 
 3. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
@@ -58,14 +58,14 @@ ms.locfileid: "72651137"
 
 7. Modificare l' **origine dati** in **.NET Framework provider di dati per OLE DB**.
 
-     ![Modificare provider di dati in OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")
+     ![Modificare il provider di dati in OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")
 
     > [!IMPORTANT]
     > Sebbene un'origine dati del **file di database di Microsoft Access (OLE DB)** possa sembrare la scelta corretta, è possibile utilizzare tale tipo di origine dati solo per i file di database con estensione mdb.
 
 8. In **OLE DB provider**selezionare **Microsoft Office 12,0 Access motore di database provider OLE DB**.
 
-     ![Provider di OLE DB Microsoft Office l'accesso 12,0](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![Provider OLE DB Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
 
 9. In **nome server o file**specificare il percorso e il nome del file con estensione accdb a cui si desidera connettersi, quindi selezionare **OK**.
 
@@ -85,13 +85,13 @@ ms.locfileid: "72651137"
 ## <a name="creating-the-dataset-for-an-mdb-file"></a>Creazione del set di dati per un file con estensione mdb
  Il set di dati viene creato mediante l'esecuzione della **Configurazione guidata origine dati**.
 
-#### <a name="to-create-the-dataset"></a>Per creare il dataset
+#### <a name="to-create-the-dataset"></a>Per creare il set di dati
 
 1. Aprire l'applicazione Windows Forms a cui si vuole connettere i dati.
 
-2. Scegliere **altre finestre**  > **origini dati**dal menu **Visualizza** .
+2. Scegliere altre **View** **Other Windows**  >  **origini dati**di Windows dal menu Visualizza.
 
-     ![Visualizza altre origini dati di Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png "ViewDataSources")
 
 3. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
@@ -101,11 +101,11 @@ ms.locfileid: "72651137"
 
 6. Nella pagina **Seleziona connessione dati** selezionare **Nuova connessione** per configurare una nuova connessione dati.
 
-7. Se l'origine dati non è **un file di database Microsoft Access (OLE DB)** , selezionare **Cambia** per aprire la finestra di dialogo **Modifica origine dati** e selezionare **file di database Microsoft Access**, quindi scegliere **OK**.
+7. Se l'origine dati non è **un file di database Microsoft Access (OLE DB)**, selezionare **Cambia** per aprire la finestra di dialogo **Modifica origine dati** e selezionare **file di database Microsoft Access**, quindi scegliere **OK**.
 
 8. Nel **nome del file di database**specificare il percorso e il nome del file con estensione mdb a cui si desidera connettersi, quindi selezionare **OK**.
 
-     ![Aggiungi file di database di accesso alla connessione](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Aggiunta della connessione al file di database di Access](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
 
 9. Nella pagina **scegliere la connessione dati** selezionare **Avanti** .
 
@@ -125,9 +125,9 @@ ms.locfileid: "72651137"
 
 - Selezionare gli elementi nella finestra **origini dati** e trascinarli nel form. vedere [associare Windows Forms controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-- Aprire l'origine dati nel Progettazione DataSet per aggiungere o modificare gli oggetti che compongono il set di dati.
+- Aprire l'origine dati in Progettazione DataSet per aggiungere o modificare gli oggetti che costituiscono il dataset.
 
-- Aggiungere la logica di convalida all'evento <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> delle tabelle dati nel DataSet. vedere [convalidare i dati nei set](../data-tools/validate-data-in-datasets.md)di dati.
+- Aggiungere la logica di convalida <xref:System.Data.DataTable.ColumnChanging> all' <xref:System.Data.DataTable.RowChanging> evento o delle tabelle dati nel DataSet (vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md)).
 
 ## <a name="see-also"></a>Vedere anche
 

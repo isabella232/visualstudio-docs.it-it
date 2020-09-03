@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 36803dfbba7ea6d6d2a869fb94c05105ed4af15d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643344"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C#
@@ -40,13 +40,13 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
 
   L’Elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati in C#](../misc/filtered-completion-lists-in-csharp.md) e [Elementi dell'elenco di completamento preselezionati in C#](../misc/pre-selected-completion-list-items-in-csharp.md).
 
-### <a name="CodeSnippets"></a> Frammenti di codice negli elenchi di completamento
+### <a name="code-snippets-in-completion-lists"></a><a name="CodeSnippets"></a> Frammenti di codice negli elenchi di completamento
  In Visual C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [Elemento Shortcut (frammenti di codice IntelliSense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) del frammento.  Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in Visual C#, vedere [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md).
 
-### <a name="Keywords"></a> Parole chiave del linguaggio negli elenchi di completamento
+### <a name="language-keywords-in-completion-lists"></a><a name="Keywords"></a> Parole chiave del linguaggio negli elenchi di completamento
  In Visual C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).
 
-### <a name="ExtensionMethods"></a> Metodi di estensione negli elenchi di completamento
+### <a name="extension-methods-in-completion-lists"></a><a name="ExtensionMethods"></a> Metodi di estensione negli elenchi di completamento
  In Visual C#, l'elenco di completamento include i metodi estensione che appartengono a un ambito.
 
 > [!NOTE]
@@ -67,11 +67,11 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
 
 - **Clausole catch.**
 
-- **Inizializzatori di oggetto:** solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.
+- **Inizializzatori di oggetto:** Solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.
 
 - **Nuova parola chiave**: quando si digita `new` e si preme la BARRA SPAZIATRICE, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Per le dichiarazioni e per le istruzioni return nei metodi, ad esempio, vengono selezionate automaticamente delle voci nell'elenco di completamento.
 
-- **Operatori as e is**: quando si preme la BARRA SPAZIATRICE dopo aver digitato la parola chiave `as` o `is`, viene visualizzato automaticamente un elenco di completamento filtrato.
+- **gli operatori As e is:** Quando si preme la barra SPAZIAtrice dopo aver digitato la `as` parola chiave o, viene visualizzato automaticamente un elenco di completamento filtrato `is` .
 
 - Event: quando si digita la parola chiave `event`, l'elenco di completamento contiene solo tipi delegati.
 
@@ -80,7 +80,7 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
 ## <a name="most-recently-used-members"></a>Membri utilizzati più di recente
  IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. La volta successiva che si utilizza l'elenco dei membri, i membri utilizzati di recente vengono visualizzati nella parte superiore. La cronologia dei membri utilizzati più di recente viene cancellata tra ogni sessione nell'ambiente di sviluppo integrato.
 
-## <a name="override"></a>ignora
+## <a name="override"></a>override
  Quando si digita [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) e si preme BARRA SPAZIATRICE, IntelliSense visualizza in una casella di riepilogo popup tutti i membri validi della classe di base di cui è possibile eseguire l'override. Digitando il tipo restituito del metodo dopo `override`, IntelliSense visualizzerà soltanto i metodi che restituiscono lo stesso tipo. Se non vengono trovate corrispondenze, IntelliSense visualizzerà tutti i membri della classe base.
 
 ## <a name="automatic-code-generation"></a>Generazione automatica di codice
@@ -90,14 +90,14 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
 
  Per avviare l'operazione di aggiunta della direttiva using, posizionare il cursore sul riferimento a un tipo che non può essere risolto. Quando, ad esempio, si crea un'applicazione console e quindi si aggiunge `XmlTextReader` al corpo del metodo `Main`, viene visualizzato uno smart tag al di sotto dell'ultimo carattere a destra di `XmlTextReader` perché costituisce un riferimento a un tipo che non può essere risolto.
 
- ![Aggiungi usando l'immagine smart tag](../ide/media/addusesmart.gif "AddUseSmart")
+ ![Aggiungi using, immagine smart tag](../ide/media/addusesmart.gif "AddUseSmart")
 
  È quindi possibile richiamare l'operazione di aggiunta della direttiva using scegliendo tale comando dal sottomenu **Risolvi** del menu **IntelliSense** o dal menu di scelta rapida oppure richiamando l'operazione tramite lo smart tag. Lo smart tag viene visualizzato soltanto quando il cursore è posizionato in corrispondenza o in prossimità del tipo non associato.
 
- ![Aggiungi con, immagine espansa smart tag](../ide/media/addusesmartexp.gif "AddUseSmartExp")
+ ![Aggiungi using, immagine smart tag espansa](../ide/media/addusesmartexp.gif "AddUseSmartExp")
 
 ### <a name="organize-usings"></a>Organizza using
- L'opzione **Organizza using** consente di ordinare e rimuovere le dichiarazioni `using` e `extern` senza modificare il comportamento del codice sorgente. Nel tempo i file di origine possono diventare troppo grandi e difficili da leggere a causa di direttive `using` superflue e non organizzate. Le opzioni **Organizza using`using` compattano il codice sorgente rimuovendo le direttive**  inutilizzate e migliorano la leggibilità mettendole in ordine.
+ L'opzione **Organizza using** consente di ordinare e rimuovere le dichiarazioni `using` e `extern` senza modificare il comportamento del codice sorgente. Nel tempo i file di origine possono diventare troppo grandi e difficili da leggere a causa di direttive `using` superflue e non organizzate. Le opzioni **Organizza using`using` compattano il codice sorgente rimuovendo le direttive ** inutilizzate e migliorano la leggibilità mettendole in ordine.
 
  Per visualizzare le opzioni disponibili nell'ambiente di sviluppo integrato (IDE) di Visual Studio, nel menu **Modifica** scegliere **IntelliSense** e quindi selezionare **Organizza using**. IDE fornisce le seguenti opzioni per l'organizzazione e la rimozione delle direttive `usings`:
 
@@ -141,11 +141,11 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
 
  Quando si digita l'operatore `+=` dopo un campo evento in un file con estensione cs, IntelliSense chiede di premere il tasto TAB. Questa operazione consente di inserire una nuova istanza di un delegato che punta al metodo che gestisce l'evento.
 
- ![Hook automatico pulsante](../ide/media/vxautohookup.gif "vxAutoHookUp")
+ ![Associazione automatica dei pulsanti](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
  Se si preme TAB, IntelliSense termina automaticamente l'istruzione per l'utente e visualizza il riferimento al gestore eventi come testo selezionato nell'editor del codice. Per completare l'associazione automatica dell'evento, IntelliSense chiede di premere di nuovo il tasto TAB per creare uno stub vuoto per il gestore eventi.
 
- ![Genera gestore eventi](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+ ![Gestore eventi di generazione](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
 
 > [!NOTE]
 > Se un nuovo delegato creato da IntelliSense fa riferimento a un gestore eventi esistente, IntelliSense comunica queste informazioni nella descrizione comando. È quindi possibile modificare questo riferimento. Il testo è già selezionato nell'editor del codice. In caso contrario, l'associazione automatica dell'evento è a questo punto completata.

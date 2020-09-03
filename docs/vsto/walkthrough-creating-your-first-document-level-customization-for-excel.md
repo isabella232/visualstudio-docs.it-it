@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566968"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procedura dettagliata: creare la prima personalizzazione a livello di documento per Excel
@@ -27,7 +27,7 @@ ms.locfileid: "74566968"
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Creazione di un progetto cartella di lavoro di Excel.
 
@@ -41,9 +41,9 @@ ms.locfileid: "74566968"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -55,7 +55,7 @@ ms.locfileid: "74566968"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
 ::: moniker range="vs-2017"
 3. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 
@@ -74,23 +74,23 @@ ms.locfileid: "74566968"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Scegliere **Avanti**.
+4. Fare clic su **Avanti**.
 
 5. Digitare **FirstWorkbookCustomization** nella casella **nome** della finestra di dialogo **Configura nuovo progetto** e fare clic su **Crea**.
 
 6. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office**e fare clic su **OK**.
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea il progetto **FirstWorkbookCustomization** e aggiunge i file seguenti al progetto.
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il progetto **FirstWorkbookCustomization** e aggiunge i file seguenti al progetto.
 
    - *FirstWorkbookCustomization*. xlsx: rappresenta la cartella di lavoro di Excel nel progetto. Contiene tutti i fogli di lavoro e i grafici.
 
-   - Sheet1 (file*VB* per Visual Basic o file *CS* per Visual C#): un foglio di lavoro che fornisce l'area di progettazione e il codice per il primo foglio di lavoro della cartella di lavoro. Per ulteriori informazioni, vedere [elemento host Worksheet](../vsto/worksheet-host-item.md).
+   - Sheet1 (file*VB* per Visual Basic o file *CS* per Visual C#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il primo foglio di lavoro della cartella di lavoro. Per ulteriori informazioni, vedere [elemento host Worksheet](../vsto/worksheet-host-item.md).
 
-   - Sheet2 (file con estensione*VB* per Visual Basic o file *CS* per l' C#oggetto visivo): un foglio di lavoro che fornisce l'area di progettazione e il codice per il secondo foglio di lavoro della cartella di lavoro.
+   - Sheet2 (file *. vb* per Visual Basic o file *CS* per Visual C#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il secondo foglio di lavoro della cartella di lavoro.
 
-   - Sheet3 (file con estensione*VB* per Visual Basic o file *CS* per l' C#oggetto visivo): un foglio di lavoro che fornisce l'area di progettazione e il codice per il terzo foglio di lavoro della cartella di lavoro.
+   - Sheet3 (file con estensione*VB* per Visual Basic o file *CS* per Visual C#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il terzo foglio di lavoro della cartella di lavoro.
 
-   - ThisWorkbook (file *. vb* per Visual Basic o file *CS* per Visual C#): contiene l'area di progettazione e il codice per le personalizzazioni a livello di cartella di lavoro. Per ulteriori informazioni, vedere [elemento host Workbook](../vsto/workbook-host-item.md).
+   - ThisWorkbook (file *. vb* per Visual Basic o file *CS* per Visual C#)-contiene l'area di progettazione e il codice per le personalizzazioni a livello di cartella di lavoro. Per ulteriori informazioni, vedere [elemento host Workbook](../vsto/workbook-host-item.md).
 
      Il file di codice Sheet1 viene aperto automaticamente nella finestra di progettazione.
 
@@ -104,7 +104,7 @@ ms.locfileid: "74566968"
 
 2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file di codice **Sheet1** , quindi scegliere **Visualizza finestra di progettazione**.
 
-     \- oppure -
+     \- - oppure -
 
      In **Esplora soluzioni**fare doppio clic sul file di codice **Sheet1** .
 
@@ -116,7 +116,7 @@ ms.locfileid: "74566968"
 
 1. Nel foglio di comando aperto nella finestra di progettazione selezionare la cella **a1**, quindi digitare il testo seguente.
 
-     **Questo testo è stato aggiunto tramite la finestra di progettazione.**
+     **This text was added by using the designer.**
 
 > [!WARNING]
 > Se si aggiunge questa riga di testo alla cella **a2**, verrà sovrascritta da altro codice in questo esempio.
@@ -150,7 +150,7 @@ ms.locfileid: "74566968"
 
 2. Nella cartella di lavoro verificare che sia visualizzato il testo seguente.
 
-     **Questo testo è stato aggiunto tramite la finestra di progettazione.**
+     **This text was added by using the designer.**
 
      **This text was added by using code.**
 
@@ -184,7 +184,7 @@ ms.locfileid: "74566968"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica &#40;dello sviluppo di soluzioni Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluzioni Excel](../vsto/excel-solutions.md)
 - [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 - [Panoramica del modello a oggetti di Excel](../vsto/excel-object-model-overview.md)

@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567645"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo \> Opzioni: Progetti e soluzioni generali
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> generale
 
-Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni, selezionare**Opzioni** **degli strumenti** > , **Progetti e soluzioni**, quindi **generale**.
+Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni, selezionare **strumenti**  >  **Opzioni**, espandere **progetti e soluzioni**e quindi selezionare **generale**.
 
 Le opzioni seguenti sono disponibili nella pagina **Generale**.
 
@@ -98,6 +98,6 @@ Se questa opzione non è selezionata e si vuole modificare un file di progetto i
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Finestra di dialogo \> Opzioni: Percorsi progetti e soluzioni](projects-solutions-locations-options.md)
+- [Finestra di dialogo Opzioni: percorsi di progetti e soluzioni \>](projects-solutions-locations-options.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

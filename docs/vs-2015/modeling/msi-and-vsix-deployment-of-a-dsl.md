@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: be9d3d44bfceaae1f2912086c3d20c90ce1e094b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916552"
 ---
 # <a name="vsix-deployment-of-a-dsl"></a>Distribuzione VSIX di un linguaggio DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile installare un linguaggio specifico di dominio nel computer in uso o in altri computer. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] necessario che sia già installato nel computer di destinazione.
+È possibile installare un linguaggio specifico di dominio nel computer in uso o in altri computer. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deve essere già installato nel computer di destinazione.
 
-## <a name="Installing"></a>Installazione e disinstallazione di un linguaggio DSL tramite il VSX
- Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire un file DSL dall'interno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ma il file non può essere aperto da Esplora risorse.
+## <a name="installing-and-uninstalling-a-dsl-by-using-the-vsx"></a><a name="Installing"></a> Installazione e disinstallazione di un linguaggio DSL tramite il VSX
+ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire un file DSL dall'interno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ma il file non può essere aperto da Esplora risorse.
 
 #### <a name="to-install-a-dsl-by-using-the-vsix"></a>Per installare un linguaggio DSL usando il progetto VSIX
 
@@ -30,7 +30,7 @@ ms.locfileid: "75916552"
 
     1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DslPackage** , quindi scegliere **Apri cartella in Esplora risorse**.
 
-    2. Individuare il file **bin\\\*\\** _progettoutente_ **. DslPackage. vsix**
+    2. Individuare il file **bin \\ \* \\ **_progettoutente_**. DslPackage. vsix**
 
 2. Copiare il file **VSIX** nel computer di destinazione in cui si vuole installare il linguaggio DSL. Può trattarsi del computer in uso o di un altro computer.
 
@@ -56,4 +56,4 @@ ms.locfileid: "75916552"
 
    Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file da:
 
-   **\Microsoft\VisualStudio\10.0\Extensions** LocalAppData
+   *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions** LocalAppData

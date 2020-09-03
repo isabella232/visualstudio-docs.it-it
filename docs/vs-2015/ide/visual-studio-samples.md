@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0662506ab9ea19a033e6af2a26b495725fe5b838
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918093"
 ---
 # <a name="visual-studio-samples"></a>Visual Studio Samples
@@ -34,7 +34,7 @@ ms.locfileid: "75918093"
 |[Esempi di .NET Framework](/samples/browse/?products=dotnet)|Illustra i vari aspetti di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in C# e Visual Basic.|
 |[Esempi di C#](/samples/browse/?languages=csharp)|Illustra come usare diverse funzionalità di C#.|
 |[Esempi di Visual Basic](/samples/browse/?languages=vb)|Illustra come usare diverse funzionalità di Visual Basic.|
-|[Esempi di F#](/samples/browse/?languages=fsharp)|Illustra come usare diverse funzionalità di F#.|
+|[Esempi di F #](/samples/browse/?languages=fsharp)|Illustra come usare diverse funzionalità di F#.|
 |[Esempi di JavaScript](/samples/browse/?languages=javascript)|Illustra come usare diverse funzionalità in JavaScript.|
 |[Esempi di C++](/samples/browse/?languages=cpp)|Illustra come usare diverse funzionalità in C++.|
 |[Esempi di DirectX](/samples/browse/?products=xbox)|Illustra come usare DirectX.|

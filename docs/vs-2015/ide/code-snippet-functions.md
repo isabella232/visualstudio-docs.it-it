@@ -14,21 +14,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 92533b90e6a2da9f29a67d13c6e0eee2c31dbcfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620224"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Con i frammenti di codice [!INCLUDE[csprcs](../includes/csprcs-md.md)] è possibile usare tre funzioni. Le funzioni sono specificate nell'elemento [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) del frammento di codice. Per informazioni sulla creazione di frammenti di codice, vedere [Frammenti di codice](../ide/code-snippets.md).
+Con i frammenti di codice [!INCLUDE[csprcs](../includes/csprcs-md.md)] è possibile usare tre funzioni. Le funzioni sono specificate nell'elemento [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) del frammento di codice. Per informazioni sulla creazione di frammenti di codice, vedere [frammenti di codice](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Funzioni
  Nella tabella seguente vengono descritte le funzioni disponibili per l'uso con l'elemento `Function` nei frammenti di codice.
 
-|Funzione|DESCRIZIONE|Linguaggio|
+|Funzione|Descrizione|Linguaggio|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera un'istruzione switch e un set di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`. Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale di enumerazione o un tipo di enumerazione.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`ClassName()`|Restituisce il nome della classe che contiene il frammento inserito.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|

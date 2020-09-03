@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542597"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Più soluzioni DSL in una soluzione unica
@@ -44,9 +44,9 @@ Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per a
 
    2. Per ogni DSL, scegliere **Aggiungi contenuto** e aggiungere:
 
-       - `Dsl*`progetto come **componente MEF**
+       - `Dsl*` progetto come **componente MEF**
 
-       - `DslPackage*`progetto come **componente MEF**
+       - `DslPackage*` progetto come **componente MEF**
 
        - `DslPackage*`progetto come **pacchetto di Visual** Studio
 

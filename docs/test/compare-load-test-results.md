@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2390b7efde62d475008dcb17aa24ed69ebf4bf5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288845"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze
@@ -44,6 +44,6 @@ Inoltre, il file del foglio di calcolo può essere condiviso con parti interessa
 |**Creazione di un report di prestazioni e stress:** È possibile creare report sui test di carico e delle prestazioni Web utilizzando Microsoft Excel.|- [Procedura: creare report di prestazioni dei test di carico utilizzando Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Creare manualmente un report di prestazioni e stress usando Microsoft Word:** È possibile creare manualmente report sui test di carico e delle prestazioni Web copiando e incollando dati di riepilogo, tabelle e grafici in un documento di Microsoft Word.|- [Procedura: creare manualmente un report di prestazioni di un test di carico usando Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182872"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
@@ -37,7 +37,7 @@ Seguire questa procedura:
 * Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **debug**  >  **Connetti snapshot debugger...**  >  **Risorsa**  >  di Azure **Selezionare esistente**o in Cloud Explorer.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
-Se è stata abilitata l'autenticazione/autorizzazione (EasyAuth) nel servizio app, è possibile che venga visualizzato un errore 401 con LaunchAgentAsync nel messaggio di errore dello stack di chiamate. Assicurarsi che l' **azione da eseguire quando la richiesta non è autenticata** sia impostata in modo da **consentire richieste anonime (nessuna azione)** nell'portale di Azure e fornire un file Authorization. JSON in D:\Home\sites\wwwroot con il contenuto seguente. 
+Se è stata abilitata l'autenticazione/autorizzazione (EasyAuth) nel servizio app, è possibile che venga visualizzato un errore 401 con LaunchAgentAsync nel messaggio di errore dello stack di chiamate. Assicurarsi che l' **azione da eseguire quando la richiesta non è autenticata** sia impostata in modo da **consentire richieste anonime (nessuna azione)** nell'portale di Azure e fornire un authorization.jsin D:\Home\sites\wwwroot con il contenuto seguente. 
 
 ```
 {
@@ -59,7 +59,7 @@ Se è stata abilitata l'autenticazione/autorizzazione (EasyAuth) nel servizio ap
 }
 ```
 
-La prima route protegge in modo efficace il dominio dell'app in modo analogo all' **accesso con [IdentityProvider]**. La seconda route espone l'endpoint AgentLaunch di debugger snapshot al di fuori dell'autenticazione, che esegue l'azione predefinita di avvio dell'agente di diagnostica debugger snapshot *solo se* l'estensione del sito preinstallato debugger snapshot è abilitata per il servizio app. Per altri dettagli sulla configurazione authorization. JSON, vedere regole di [autorizzazione URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
+La prima route protegge in modo efficace il dominio dell'app in modo analogo all' **accesso con [IdentityProvider]**. La seconda route espone l'endpoint AgentLaunch di debugger snapshot al di fuori dell'autenticazione, che esegue l'azione predefinita di avvio dell'agente di diagnostica debugger snapshot *solo se* l'estensione del sito preinstallato debugger snapshot è abilitata per il servizio app. Per altri dettagli sull'authorization.jsdi configurazione, vedere regole di [autorizzazione URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
 
 ### <a name="403-forbidden"></a>(403) Non consentito
 

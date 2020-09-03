@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f25cc5a5f56c20f6a1696baa5aa3e9ee5ebdf2fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621514"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Utilizzo dell'editor set di regole di analisi del codice
@@ -23,11 +23,11 @@ ms.locfileid: "72621514"
 
 Editor set di regole di analisi codice consente di specificare le regole incluse in un set di regole personalizzate e di specificare l'azione. È inoltre possibile specificare l'azione da eseguire quando l'analisi del codice rileva una violazione della regola.
 
-|Operazione|Descrizione|
+|Azione|Descrizione|
 |------------|-----------------|
-|**Avviso**|Genera un avviso nella finestra **Elenco errori** .|
+|**Warning**|Genera un avviso nella finestra **Elenco errori** .|
 |**Erroree**|Genera un errore nella finestra di **Elenco errori** .|
-|**None**|Disabilita la regola.|
+|**Nessuno**|Disabilita la regola.|
 
  Nell'editor vengono visualizzate le regole in una struttura ad albero che raggruppa le regole in base a un campo del set di regole specificato. Per aggiungere o rimuovere regole da un set di regole, eseguire uno o più dei passaggi seguenti:
 
@@ -46,7 +46,7 @@ Editor set di regole di analisi codice consente di specificare le regole incluse
 |---------------------|-----------------|
 |**Espandi tutto**|Mostra le regole in tutti i gruppi.|
 |**Comprimi tutto**|Nasconde le regole in tutti i gruppi.|
-|**Group By**|Specifica il campo in base al quale vengono raggruppate le regole. Fare clic su **\<None >** per visualizzare le regole senza gruppi.|
+|**Raggruppa per**|Specifica il campo in base al quale vengono raggruppate le regole. Fare clic **\<None>** per visualizzare le regole senza gruppi.|
 |**Opzioni colonne**|Specifica i campi della regola da visualizzare.|
 |**Nascondi regole che non si applicano alla soluzione corrente**|Consente di visualizzare o nascondere regole che non sono dello stesso tipo di destinazione della soluzione.|
 |**Mostra regole che possono generare errori di analisi del codice**|Consente di visualizzare o nascondere le regole a cui è stata assegnata l'azione di errore.|
@@ -64,8 +64,8 @@ Editor set di regole di analisi codice consente di specificare le regole incluse
 |-----------|-----------------|
 |**ID**|Identificatore della regola.|
 |**Categoria**|Oltre all'appartenenza ai set di regole, le regole di analisi del codice sono raggruppate per categoria. Per ulteriori informazioni, vedere l' [analisi del codice per gli avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Nome**|Titolo della regola.|
-|**Namespace**|Spazio dei nomi della regola.|
+|**Name**|Titolo della regola.|
+|**Spazio dei nomi**|Spazio dei nomi della regola.|
 |**Tipo di destinazione**|Indica se la regola è per il codice nativo, gestito o del database.|
 |**Azione**|Azione eseguita quando la regola viene violata in un'esecuzione dell'analisi del codice.<br /><br /> **Avviso** : genera un avviso.<br /><br /> **Errore** : genera un errore.<br /><br /> **None** : Disabilita la regola.<br /><br /> È possibile modificare il campo azione. L'impostazione del valore su None equivale alla cancellazione della casella di controllo per la regola.|
 |**Set di regole di origine**|Set di regole che contiene la regola.|

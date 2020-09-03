@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917791"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
@@ -29,16 +29,16 @@ Se si dispone di più account Microsoft e/o di account aziendali o dell’istitu
 
 1. Accedere a Visual Studio 2015 con un account Microsoft o un account aziendale. Il nome utente dovrebbe essere visualizzato nell’angolo in alto a destra nella finestra, come illustrato nella figura seguente:
 
-     ![Utente connesso attualmente](../ide/media/vs2015-username.png "VS2015_UserName")
+     ![Utente attualmente connesso](../ide/media/vs2015-username.png "VS2015_UserName")
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Accedere all'account Azure in Esplora server
  Premere **CTRL+ALT+S** per aprire **Esplora server**. Fare clic sull'icona di Azure per espanderla e visualizzare le risorse disponibili nell'account Azure associato all'ID da usare per accedere a Visual Studio 2015. L'aspetto della finestra visualizzata è simile al seguente, ma le risorse visualizzate saranno quelle personali e non quelle dell'utente specificato:
 
- ![Esplora server visualizzazione del nodo strumenti di Azure espanso](../ide/media/vs2015-serverexplorer.png "VS2015_ServerExplorer")
+ ![Esplora server con nodo Strumenti di Azure espanso](../ide/media/vs2015-serverexplorer.png "VS2015_ServerExplorer")
 
- La prima volta che si usa Visual Studio su qualsiasi dispositivo specifico, la finestra di dialogo visualizzerà solo le sottoscrizioni registrate con l'ID di accesso all'IDE. È possibile accedere alle risorse per tutti gli altri account direttamente da **Esplora Server** facendo clic sul nodo di Azure e scegliendo **Gestisci e filtra sottoscrizioni** e aggiungendo gli account dal controllo selezione account. È possibile scegliere un altro account, se necessario, facendo clic sulla freccia giù, sceglierlo dall'elenco di account collegati. Dopo aver scelto l'account, è possibile scegliere le sottoscrizioni con tale account che si desidera visualizzare in Esplora Server.
+ La prima volta che si usa Visual Studio su qualsiasi dispositivo specifico, la finestra di dialogo visualizzerà solo le sottoscrizioni registrate con l'ID di accesso all'IDE. Per accedere alle risorse di altri account direttamente da **Esplora server**, fare clic con il pulsante destro del mouse sul nodo Azure, scegliere **Gestisci e filtra sottoscrizioni** e aggiungere gli account dal controllo di selezione account. È possibile scegliere un altro account, se necessario, facendo clic sulla freccia giù, sceglierlo dall'elenco di account collegati. Dopo aver scelto l'account, è possibile scegliere le sottoscrizioni con tale account che si desidera visualizzare in Esplora Server.
 
- ![Finestra di dialogo Gestisci sottoscrizioni di Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
+ ![Finestra di dialogo Gestisci sottoscrizioni Microsoft Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
 
  Alla successiva apertura di Esplora Server, vengono visualizzate le risorse per tale sottoscrizioni.
 
@@ -49,12 +49,12 @@ Se si dispone di più account Microsoft e/o di account aziendali o dell’istitu
 2. Fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni e scegliere **Aggiungi > Servizio connesso**. Verrà visualizzata la procedura guidata Aggiungi servizio connesso in cui viene presentato l'elenco dei servizi dell'account Azure associato all'ID di accesso di Visual Studio. Notare che non è necessario effettuare separatamente l'accesso ad Azure. Tuttavia, è necessario accedere ad altri account la prima volta che si tenta di accedere alle risorse da un determinato computer.
 
     > [!WARNING]
-    > Se è la prima volta che si crea un'app dello Store in Visual Studio 2015 in un computer specifico, verrà richiesto di abilitare il dispositivo per la modalità di sviluppo passando a **impostazioni &#124; . Aggiornamenti e sicurezza &#124; per gli sviluppatori** nel computer. Per altre informazioni, vedere [Abilitare il dispositivo per lo sviluppo](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
+    > Se è la prima volta che si crea un'app dello Store in Visual Studio 2015 in un computer specifico, verrà richiesto di abilitare il dispositivo per la modalità di sviluppo passando a **impostazioni &#124;. Aggiornamenti e sicurezza &#124; per gli sviluppatori** nel computer. Per altre informazioni, vedere [abilitare il dispositivo per lo sviluppo](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
 
-### <a name="access_azure"></a> Accedere ad Azure Active Directory in un progetto Web
- Con Azure AD viene abilitato il supporto per end-user Single Sign-On in applicazioni Web ASP.NET o per Autenticazione di AD in servizi API Web. L'autenticazione di dominio è diverso da autenticazione degli account utente singoli; gli utenti che dispongono dell'accesso al dominio Active Directory è possono utilizzare gli account di Windows Azure esistenti per connettersi alle applicazioni web. Le applicazioni di Office 365 inoltre possono utilizzare l'autenticazione di dominio. Per un esempio, creare un'applicazione Web (**File > Nuovo progetto > C# > Cloud > Applicazione Web ASP.NET**). Nella finestra di dialogo Nuovo progetto ASP.NET scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.
+### <a name="access-azure-active-directory-in-a-web-project"></a><a name="access_azure"></a> Accedere ad Azure Active Directory in un progetto Web
+ Con Azure AD viene abilitato il supporto per end-user Single Sign-On in applicazioni Web ASP.NET o per Autenticazione di AD in servizi API Web. L'autenticazione di dominio è diverso da autenticazione degli account utente singoli; gli utenti che dispongono dell'accesso al dominio Active Directory è possono utilizzare gli account di Windows Azure esistenti per connettersi alle applicazioni web. Le applicazioni di Office 365 inoltre possono utilizzare l'autenticazione di dominio. Per un esempio, creare un'applicazione Web (**File > Nuovo progetto > C# > Cloud > Applicazione Web ASP.NET**). Nella finestra di dialogo nuovo progetto ASP.NET scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.
 
- ![Finestra di dialogo Cambia autenticazione per ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
+ ![Finestra di dialogo Modifica autenticazione per ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
  Per altre informazioni sui diversi tipi di autenticazione in ASP.NET, vedere [Creazione di progetti Web ASP.NET in Visual Studio 2013](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (le informazioni sull'autenticazione sono ancora rilevanti per Visual Studio 2015).
 
@@ -64,11 +64,11 @@ Se si dispone di più account Microsoft e/o di account aziendali o dell’istitu
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Aggiungere un secondo account utente a Visual Studio
  Fare clic sulla freccia GIÙ accanto al nome utente nell'angolo in alto a destra della finestra di Visual Studio. Fare clic sulla voce di menu **Impostazioni account** . Verrà visualizzata la finestra **Gestione account** con l'account usato per accedere. Fare clic sul collegamento **Aggiungi nuovo account** in basso a sinistra nella finestra di dialogo per aggiungere un nuovo account Microsoft oppure un nuovo account aziendale o dell'istituto di istruzione.
 
- ![Selezione account di Visual Studio](../ide/media/vs2015-acct-picker.png "VS2015_acct_picker")
+ ![Selezione di account di Visual Studio](../ide/media/vs2015-acct-picker.png "VS2015_acct_picker")
 
  Seguire i prompt visualizzati per immettere le credenziali del nuovo account. La figura seguente mostra Gestione account dopo che un utente ha aggiunto il proprio account aziendale Contoso.com.
 
  ![Gestione account](../ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Accedere nuovamente alla procedura guidata Aggiungi servizio connesso e a Esplora server
- Passare a **Esplora Server** destro del mouse sul nodo di Azure e scegliere Nuovo, **sottoscrizioni Gestisci e filtro**. Scegliere il nuovo account facendo clic sulla freccia accanto al conto corrente a discesa e quindi scegliere le sottoscrizioni che si desidera visualizzare in Esplora Server. Si noterà che tutti i servizi associati alla sottoscrizione specificata. Anche se non attualmente connessi all'IDE di Visual Studio con il secondo account, connesso a tale account servizi e risorse. Lo stesso vale per **Progetto> Aggiungi servizio connesso** e per **Team> Connetti a Team Foundation Server**.
+ Passare ora di nuovo a **Esplora server**, fare clic con il pulsante destro del mouse sul nodo Azure e scegliere **Gestisci e filtra sottoscrizioni**. Scegliere il nuovo account facendo clic sulla freccia accanto al conto corrente a discesa e quindi scegliere le sottoscrizioni che si desidera visualizzare in Esplora Server. Si noterà che tutti i servizi associati alla sottoscrizione specificata. Anche se non attualmente connessi all'IDE di Visual Studio con il secondo account, connesso a tale account servizi e risorse. Lo stesso vale per **Progetto> Aggiungi servizio connesso** e per **Team> Connetti a Team Foundation Server**.

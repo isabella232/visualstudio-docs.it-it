@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f5e52bf174e5a41d79fa23bfca39121db668e40e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643863"
 ---
 # <a name="statement-completion-for-identifiers"></a>Completamento delle istruzioni per gli identificativi
@@ -52,11 +52,11 @@ JavaScript non consente la tipizzazione esplicita per le dichiarazioni di variab
 
    Se il motore IntelliSense è in grado di determinare che l'evento deve essere chiamato, in genere tramite l'utilizzo di `addEventListener` per l'evento nel documento attivo, vengono fornite informazioni di IntelliSense più accurate.
 
-  Quando IntelliSense non è in grado di identificare un oggetto, il motore di IntelliSense compila l'elenco di completamento con le entità denominate o gli identificatori presenti nel documento attivo. Quando l'elenco di completamento contiene questi identificatori, le icone delle informazioni vengono visualizzate accanto. Inoltre, una descrizione comando per ogni identificatore indica che l'espressione è sconosciuta. Nella figura seguente sono illustrate le opzioni di completamento delle istruzioni per un oggetto di tipo `light` che non è possibile identificare perché l'oggetto e le relative proprietà non sono definiti. Tuttavia, la proprietà `intensity` è disponibile nell'elenco di identificatori perché è stata usata nella funzione di `illuminate`.
+  Quando IntelliSense non è in grado di identificare un oggetto, il motore di IntelliSense compila l'elenco di completamento con le entità denominate o gli identificatori presenti nel documento attivo. Quando l'elenco di completamento contiene questi identificatori, le icone delle informazioni vengono visualizzate accanto. Inoltre, una descrizione comando per ogni identificatore indica che l'espressione è sconosciuta. Nella figura seguente sono illustrate le opzioni di completamento delle istruzioni per un oggetto di tipo `light` che non è possibile identificare perché l'oggetto e le relative proprietà non sono definiti. Tuttavia, la `intensity` proprietà è disponibile nell'elenco di identificatori perché è stata usata nella `illuminate` funzione.
 
   **Opzioni di completamento per un oggetto che non è possibile identificare**
 
-  ![JavaScript IntelliSense per identificatori](../ide/media/js-intellisense-identifiers.png "|::ref1::|")
+  ![JavaScript IntelliSense per identificatori](../ide/media/js-intellisense-identifiers.png "js_intellisense_identifiers")
 
   È possibile eseguire l'override dell'elenco di completamento per un oggetto usando i commenti della documentazione XML o le funzionalità di estensibilità IntelliSense per JavaScript. Utilizzando queste funzionalità, è possibile fornire informazioni sul tipo e informazioni IntelliSense più descrittive quando potrebbero non essere disponibili in altro modo. Per ulteriori informazioni, vedere [estensione di JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) e [creazione di commenti alla documentazione XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 

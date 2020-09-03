@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536228"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
@@ -27,8 +27,8 @@ Lo strumento Manifest from Resources è un'applicazione console che accetta un e
 
 |**Nome dell'opzione**|**Note**|**Obbligatorio o facoltativo**|
 |-|-|-|
-|/resources|Elenco delimitato da punti e virgola di immagini o directory. Questo elenco deve sempre contenere l'elenco completo delle immagini che saranno presenti nel manifesto. Se viene fornito solo un elenco parziale, le voci non incluse andranno perse.<br /><br /> Se un file di risorse specificato è un elenco di immagini, lo strumento lo suddividerà in immagini separate prima di aggiungere ogni sottoimmagine al manifesto.<br /><br /> Se l'immagine è un file con estensione png, è consigliabile formattare il nome in modo che lo strumento possa inserire gli attributi corretti per l'immagine: \<Name> . \<Width> . \<Height> . png.|Obbligatoria|
-|/assembly|Nome dell'assembly gestito (esclusa l'estensione) o percorso di runtime dell'assembly nativo che ospita le risorse (relative al percorso di runtime del manifesto).|Obbligatoria|
+|/resources|Elenco delimitato da punti e virgola di immagini o directory. Questo elenco deve sempre contenere l'elenco completo delle immagini che saranno presenti nel manifesto. Se viene fornito solo un elenco parziale, le voci non incluse andranno perse.<br /><br /> Se un file di risorse specificato è un elenco di immagini, lo strumento lo suddividerà in immagini separate prima di aggiungere ogni sottoimmagine al manifesto.<br /><br /> Se l'immagine è un file con estensione png, è consigliabile formattare il nome in modo che lo strumento possa inserire gli attributi corretti per l'immagine: \<Name> . \<Width> . \<Height> . png.|Necessario|
+|/assembly|Nome dell'assembly gestito (esclusa l'estensione) o percorso di runtime dell'assembly nativo che ospita le risorse (relative al percorso di runtime del manifesto).|Necessario|
 |/manifest|Nome da assegnare al file con estensione imagemanifest generato. Può inoltre includere un percorso assoluto o relativo per creare il file in un percorso diverso. Il nome predefinito corrisponde al nome dell'assembly.<br /><br /> Impostazione predefinita: \<Current Directory> \\<assembly \> . imagemanifest|Facoltativo|
 |/guidName|Nome da assegnare al simbolo GUID per tutte le immagini nel manifesto generato.<br /><br /> Impostazione predefinita: AssetsGuid|Facoltativo|
 |/rootPath|Percorso radice che deve essere rimosso prima di creare gli URI delle risorse gestite. Questo flag è utile nei casi in cui lo strumento ottiene il percorso URI relativo errato, causando il mancato caricamento delle risorse.<br /><br /> Valore predefinito: \<Current Directory>|Facoltativo|

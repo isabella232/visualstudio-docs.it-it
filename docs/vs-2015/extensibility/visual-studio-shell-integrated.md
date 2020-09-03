@@ -12,10 +12,10 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 907b71d82a3c630bedc48209e735d9cf817432ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543156"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
@@ -32,15 +32,15 @@ La shell integrata di Visual Studio include il Integrated Development Environmen
   
 ## <a name="features-in-the-integrated-shell"></a>Funzionalità della shell integrata  
   
-|Area di funzionalità|Funzionalità|  
+|Area di funzionalità|Feature|  
 |-|-|  
 |Supporto delle lingue|-Nessuno|  
 |IDE|<ul><li>Impostazioni<br /><br /> <ul><li>Crea impostazioni</li><li>Importare ed esportare le impostazioni</li><li>Reimpostare le impostazioni</li></ul></li><li>Integrazione della **casella degli strumenti**</li><li>Integrazione di **elenco attività**</li><li>Integrazione della Guida</li><li>Finestra di dialogo **Opzioni**</li><li>Gestione di tipi di carattere e colori</li><li>Finestra di **output**</li><li>Finestra di **comando**</li><li>Gestione delle finestre</li><li>Comandi, menu e tasti di scelta rapida</li><li>Runtime del linguaggio specifico di dominio (DSL)</li></ul>|  
 |Tipi di progetto e di sistema del progetto|-Soluzioni e cartelle soluzione<br />-Gestione configurazione soluzioni<br />-Gestione degli elementi<br />-Soluzioni a progetto singolo e multiprogetto<br />-Progettazione applicazioni (proprietà del progetto semplificate)<br />-Aggiungi riferimento Web<br />-Aggiungi riferimento al servizio<br />-Singolo progetto<br />-Tipi di progetto di sito Web<br />-Progetti di applicazione Web|  
 |Compilare|-Passaggi di compilazione personalizzati nell'IDE<br />-Pre-compilazione per la protezione della proprietà intellettuale (IP)<br />-Firma codice<br />     MSBuild|  
 |Editor|-Strumenti di esplorazione del codice (ricerca unificata, definizione di origine, ereditarietà)<br />-Navigazione del codice<br />-IntelliSense<br />-Degli smart tag<br />-Refactoring<br />-Bell'elenco<br />-Filtro IntelliSense<br />-   Finestra **definizione codice**|  
-|Finestra di progettazione|-Windows Presentation Foundation Designer<br />-Progettazione Windows Form<br />-Finestra di progettazione Web e editor HTML|  
-|Data|-   **Esplora server** (semplificata: solo dati). Vedere la nota 1.<br />-   Finestra **origini dati**<br />-Set completo di controlli dati<br />-Editor XML<br />-I dati vengono associati a un'origine dati locale (. MDF o. MDB<br />-Associazione dati a oggetto<br />-Associazione dati al servizio Web<br />-Data binding al server di database locale<br />-Data binding al server di database remoto<br />-Strumenti DDL per dati remoti<br />-   Estensibilità **Esplora server** ( [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] esempi)|  
+|Designer|-Windows Presentation Foundation Designer<br />-Progettazione Windows Form<br />-Finestra di progettazione Web e editor HTML|  
+|Dati|-   **Esplora server** (semplificata: solo dati). Vedere la nota 1.<br />-   Finestra **origini dati**<br />-Set completo di controlli dati<br />-Editor XML<br />-I dati vengono associati a un'origine dati locale (. MDF o. MDB<br />-Associazione dati a oggetto<br />-Associazione dati al servizio Web<br />-Data binding al server di database locale<br />-Data binding al server di database remoto<br />-Strumenti DDL per dati remoti<br />-   Estensibilità **Esplora server** ( [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] esempi)|  
 |Debugger|-Debug locale. Vedere la nota 2.<br />-Debug gestito<br />-Debug locale<br />-Connetti a processo locale<br />-Connetti a processo remoto<br />-Delegato anonimo<br />-Domini applicazione<br />-Debug ASPX<br />-Attributi<br />-Break durante Func-EVAL<br />-Punti di interruzione<br />-Vincoli del punto di interruzione<br />-Stack<br />-   Finestra di **comando**<br />-Debug tra thread<br />-Suggerimenti dati<br />-Visualizzatore dati<br />-Supporto del debugger per gli assistenti al debug gestito (MDA)<br />-Supporto del debugger per il server d'avanzamento del tipo<br />-Supporto DTEEvents per OTB<br />-Stepper Stepper<br />-Test AppID del debugger (DBGCLR)<br />-Profilo debugger<br />-Strumenti e opzioni del debugger<br />-Iteratore di debug<br />-Valutazione delle espressioni in fase di progettazione<br />-Analizzatore di espressioni C#<br />-Disassembly<br />-Modifica e continuazione<br />-Finestre dell'analizzatore di espressioni (espressioni di controllo, variabili locali, auto)<br />-Helper eccezioni<br />-Eccezioni<br />-Esecuzione<br />- Generics<br />-Recupero origine destra<br />-Debug HPC/cluster<br />-Debug multilingua integrato<br />-Debug di interoperabilità<br />-Debug just-in-Time<br />-Debug locale<br />-Debug gestito<br />-Controllo manuale (finestra processi)<br />-Memoria<br />-Supporto MiniDump<br />-Moduli<br />-Debug a più processi<br />-Debug nativo<br />-Nuovo supporto del motore di debug<br />-Debug del codice ottimizzato<br />-Filtro di output di Windows<br />-Processo di hosting per il debug gestito<br />-Processi<br />-Controllo immediato<br />-Registri<br />-Registri nello stack<br />-Debug remoto<br />-Valori restituiti<br />-Debug di script<br />-Supporto per il servizio di origine<br />-Sicurezza<br />-Side-by-side<br />-SQL<br />-Server di simboli<br />-Punti di traccia<br />-Thread<br />-Visualizzazioni<br />-Extensible Stylesheet Language Transformations debugger (XSLT)|  
 |Supporto a 64 bit|-debug a 64 bit per codice gestito e nativo, tutti i linguaggi<br />-supporto nativo x64|  
 |Controllo del codice sorgente (SCC)|-Integrazione SCC di base. Vedere la nota 3.<br />-Verifica strumenti e opzioni|  

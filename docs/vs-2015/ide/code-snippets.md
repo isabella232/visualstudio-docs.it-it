@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b41b6e4d4a7635b32edb5697c89ecb1249fb9da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619732"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
@@ -48,7 +48,7 @@ finally
 
 ```
 
- Per inserire questo frammento di codice fare clic su **Inserisci frammento di codice** nel menu di scelta rapida della finestra del codice, scegliere **Visual C#** , quindi digitare `tryf` e premere il tasto TAB oppure è possibile digitare `tryf` e premere TAB + TAB.
+ Per inserire questo frammento di codice fare clic su **Inserisci frammento di codice** nel menu di scelta rapida della finestra del codice, scegliere **Visual C#**, quindi digitare `tryf` e premere il tasto TAB oppure è possibile digitare `tryf` e premere TAB + TAB.
 
  Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio `return FALSE;`) e si fa clic su **Racchiudi tra**, quindi su **if**, il frammento viene espanso intorno alla riga:
 
@@ -86,4 +86,4 @@ End Property
  È possibile aggiungere e rimuovere le directory del frammento di codice con i pulsanti **Aggiungi** e **Rimuovi** nella finestra di dialogo **Gestione frammenti di codice**. Per aggiungere singoli frammenti di codice usare il pulsante **Importa**.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md) [procedura: distribuire frammenti di codice](../ide/how-to-distribute-code-snippets.md) [procedure consigliate per l'uso di frammenti di codice](../ide/best-practices-for-using-code-snippets.md) [risoluzione dei problemi frammenti](../ide/troubleshooting-snippets.md) di codice [Visual C# ](../ide/visual-csharp-code-snippets.md) frammenti di codice [Visual C++ ](../ide/visual-cpp-code-snippets.md) snippet [Riferimenti allo schema di frammenti di codice](../ide/code-snippets-schema-reference.md)
+ [Procedura dettagliata: creazione di un frammento](../ide/walkthrough-creating-a-code-snippet.md) [di codice procedura: distribuire frammenti](../ide/how-to-distribute-code-snippets.md) [di codice procedure consigliate per l'uso di frammenti di codice](../ide/best-practices-for-using-code-snippets.md) [risoluzione dei problemi frammenti](../ide/troubleshooting-snippets.md) di [codice Visual C#](../ide/visual-csharp-code-snippets.md) [Visual C++](../ide/visual-cpp-code-snippets.md) frammenti di codice frammenti di codice [riferimento allo schema](../ide/code-snippets-schema-reference.md)

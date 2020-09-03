@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ee7ce7c4e9edad9d941b4a70b2a199a37130e43
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543988"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Gli identificatori devono contenere il suffisso corretto
@@ -56,7 +56,7 @@ ms.locfileid: "85543988"
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dizionario|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Raccolta o DataTable|
-|<xref:System.IO.Stream?displayProperty=fullName>|STREAM|
+|<xref:System.IO.Stream?displayProperty=fullName>|Flusso|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Autorizzazione|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condizione|
 |Delegato del gestore eventi.|EventHandler|

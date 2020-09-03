@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633343"
 ---
 # <a name="msbuild-glossary"></a>Glossario di MSBuild
@@ -61,10 +61,10 @@ elemento\
 Gli elementi sono input nel sistema di compilazione e vengono raggruppati in tipi di elemento in base ai nomi degli elementi. Gli elementi rappresentano in genere file. Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini *elemento* e *valore dell'elemento* sono interscambiabili. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 definizione di un elemento\
-I gruppi di definizioni di elementi contengono definizioni di elementi che aggiungono metadati predefiniti a qualsiasi tipo di elemento. Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Per ulteriori informazioni, consultate [Definizioni di articoli.](../msbuild/item-definitions.md)
+I gruppi di definizioni di elementi contengono definizioni di elementi che aggiungono metadati predefiniti a qualsiasi tipo di elemento. Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Per altre informazioni, vedere [definizioni di elementi](../msbuild/item-definitions.md).
 
 funzione dell'elemento\
-Le funzioni Item ottengono informazioni sugli elementi nel progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi. Queste funzioni servono a modificare le stringhe e i percorsi degli elementi. Per ulteriori informazioni, consultate [Funzioni articolo](../msbuild/item-functions.md).
+Le funzioni Item ottengono informazioni sugli elementi nel progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi. Queste funzioni servono a modificare le stringhe e i percorsi degli elementi. Per altre informazioni, vedere [funzioni di elemento](../msbuild/item-functions.md).
 
 metadati degli elementi\
 Vedere *metadati, elemento*.
@@ -88,10 +88,10 @@ file di progetto\
 Un file di progetto contiene lo script di MSBuild che controlla la compilazione. I file di progetto hanno generalmente un'estensione che termina con *proj*, ad esempio *csproj* o *vbproj*. I file di progetto possono importare file di proprietà e file di destinazione.
 
 proprietà\
-Una proprietà è una coppia chiave-valore usata per controllare il processo di compilazione. Per ulteriori informazioni, vedere [Proprietà MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà è una coppia chiave-valore usata per controllare il processo di compilazione. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
 proprietà, ambiente\
-Una proprietà dell'ambiente è una proprietà che viene automaticamente inizializzata sul valore di una variabile di ambiente di sistema con lo stesso nome. Per ulteriori informazioni, vedere [Proprietà MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà dell'ambiente è una proprietà che viene automaticamente inizializzata sul valore di una variabile di ambiente di sistema con lo stesso nome. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
 file di proprietà\
 Un file di proprietà è un file di progetto che contiene principalmente gruppi di proprietà e gruppi di elementi che forniscono indicazioni per la compilazione. Per convenzione, l'estensione di file è *props*. I file di proprietà vengono in genere importati all'inizio dei file di progetto associati.
@@ -100,23 +100,23 @@ proprietà, funzione\
 Una funzione di proprietà è una proprietà di sistema o un metodo che si può usare per valutare gli script di MSBuild. I metodi di proprietà possono essere usati per leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni. Per altre informazioni, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
 funzione di proprietà, annidata\
-Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio,
+Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio:
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
 Per altre informazioni, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
 proprietà, globale\
-Una proprietà globale è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà globali vengono impostate al prompt dei comandi oppure usando l'attributo `Properties` di un'[attività di MSBuild](../msbuild/msbuild-task.md) e non possono essere modificate durante la fase di valutazione di una compilazione. Per ulteriori informazioni, vedere [Proprietà MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà globale è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà globali vengono impostate al prompt dei comandi oppure usando l'attributo `Properties` di un'[attività di MSBuild](../msbuild/msbuild-task.md) e non possono essere modificate durante la fase di valutazione di una compilazione. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
 proprietà, locale\
 Una proprietà locale è una coppia chiave-valore usata per controllare il processo di compilazione. Questo termine viene usato solo per distinguere una proprietà che non è una proprietà globale.
 
 proprietà, Registro di sistema\
-Una proprietà del Registro di sistema ha un valore che viene impostato usando una speciale sintassi che legge il valore di una sottochiave del Registro di sistema. Per ulteriori informazioni, vedere [Proprietà MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà del Registro di sistema ha un valore che viene impostato usando una speciale sintassi che legge il valore di una sottochiave del Registro di sistema. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
 proprietà, riservata\
-Una proprietà riservata è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà riservate vengono automaticamente inizializzate su valori predefiniti. Per ulteriori informazioni, vedere [Proprietà MSBuild](../msbuild/msbuild-properties.md).
+Una proprietà riservata è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà riservate vengono automaticamente inizializzate su valori predefiniti. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
 ambito di progetto\
 L'ambito del progetto descrive un oggetto di MSBuild, ad esempio una proprietà locale, visibile solo nel file di progetto contenitore e ai progetti importati.
@@ -140,7 +140,7 @@ destinazione, compilazione\
 Vedere destinazione, esecuzione.
 
 destinazione, valutazione\
-A causa della compilazione incrementale, le destinazioni devono essere analizzate per trovare le potenziali modifiche alle proprietà e agli elementi. Anche se la destinazione viene ignorata, è necessario effettuare queste modifiche. Valutare una destinazione significa eseguire questa analisi e apportare tali modifiche. Per ulteriori informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md).
+A causa della compilazione incrementale, le destinazioni devono essere analizzate per trovare le potenziali modifiche alle proprietà e agli elementi. Anche se la destinazione viene ignorata, è necessario effettuare queste modifiche. Valutare una destinazione significa eseguire questa analisi e apportare tali modifiche. Per altre informazioni, vedere [compilazioni incrementali](../msbuild/incremental-builds.md).
 
 destinazione, esecuzione\
 Eseguire una destinazione significa valutarla ed eseguire tutte le attività che non hanno condizioni o le cui condizioni restituiscono true. Durante la compilazione incrementale, le destinazioni possono essere ignorate o eseguite, ma vengono sempre valutate. Per altre informazioni, vedere destinazione, valutazione.
@@ -161,7 +161,7 @@ file di destinazioni\
 Un file di destinazioni è un file di progetto contenente principalmente destinazioni e attività che forniscono indicazioni per la compilazione. Per convenzione, l'estensione di file è *targets*. I file di destinazione vengono in genere importati alla fine dei file di progetto associati.
 
 attività\
-Le attività sono unità di codice eseguibile utilizzate da progetti MSBuild per eseguire operazioni di compilazione. Ad esempio, un'attività potrebbe compilare file di input o eseguire uno strumento esterno. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
+Le attività sono unità di codice eseguibile usate dai progetti MSBuild per eseguire operazioni di compilazione. Ad esempio, un'attività potrebbe compilare file di input o eseguire uno strumento esterno. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 trasformazione\
 Una trasformazione è una conversione uno a uno di una raccolta di elementi in un'altra. Oltre a consentire a un progetto di convertire le raccolte di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).

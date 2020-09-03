@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917547"
 ---
 # <a name="deploying-applications-services-and-components"></a>Distribuzione di applicazioni, servizi e componenti
@@ -36,7 +36,7 @@ Mediante la distribuzione, un'applicazione, un servizio o un componente viene di
   
  Nella tabella seguente sono riportate descrizioni di diversi scenari di distribuzione e collegamenti a informazioni aggiuntive sulla corretta attuazione di questi scenari.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
   
 |Scenario di distribuzione|Contenuto di supporto|  
 |-------------------------|------------------------|  
@@ -52,6 +52,6 @@ Mediante la distribuzione, un'applicazione, un servizio o un componente viene di
 |**Distribuire un'applicazione desktop:** Utilizzando la distribuzione ClickOnce, è possibile pubblicare un'applicazione desktop in un server Web o in una condivisione file di rete. Gli utenti possono quindi installare l'applicazione con un solo clic.|[Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
 |**Creare un programma di installazione:** È possibile creare un programma di installazione tramite InstallShield Limited Edition, che è gratuito.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Mantenere un programma di installazione esistente:** Continuare a usare un programma di installazione creato in una versione precedente di Visual Studio installando l'estensione di progetti Programma di installazione di Visual Studio.|[Estensione di progetti Programma di installazione di Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> La documentazione per i progetti Installer è disponibile qui: [distribuzione programma di installazione di Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Distribuire un'applicazione C++ visiva:** è possibile distribuire Visual C++ Runtime con un'applicazione tramite la distribuzione centrale, la distribuzione locale o il collegamento statico.|[Distribuzione di applicazioni desktop native (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**Distribuire un'applicazione Visual C++:** È possibile distribuire il runtime di Visual C++ con un'applicazione tramite la distribuzione centrale, la distribuzione locale o il collegamento statico.|[Distribuzione di applicazioni desktop native (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Distribuire un'applicazione per il testing:** È possibile abilitare sviluppo e test più sofisticati distribuendo le applicazioni in ambienti virtuali.|[Eseguire test in un ambiente lab](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**Installare i prerequisiti:** È possibile installare i componenti dei prerequisiti per le applicazioni desktop configurando un programma di installazione generico, noto come programma di avvio automatico.|[Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)|

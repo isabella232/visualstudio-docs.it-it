@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633122"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 
-Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti MSBuild include un file *microsoft.common.tasks,* un file *microsoft.common.targets* e compilatori quali *csc.exe* e *vbc.exe*. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.
+Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file *Microsoft. Common. Tasks* , un file *Microsoft. Common. targets* e compilatori come *csc.exe* e *vbc.exe*. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Attributo ToolsVersion
 
@@ -61,7 +61,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- È possibile modificare il valore di `MSBuildToolsPath` definendo un set di strumenti personalizzato. Per ulteriori informazioni, consultate Configurazioni del set di [strumenti standard e personalizzate.](../msbuild/standard-and-custom-toolset-configurations.md)
+ È possibile modificare il valore di `MSBuildToolsPath` definendo un set di strumenti personalizzato. Per altre informazioni, vedere [configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md).
 
  Quando si compila una soluzione dalla riga di comando e si specifica un attributo `ToolsVersion` per *msbuild.exe*, tutti i progetti e le dipendenze tra progetti vengono compilati secondo tale attributo `ToolsVersion`, anche se ogni progetto della soluzione contiene un attributo `ToolsVersion` specifico. Per definire il valore `ToolsVersion` in base al progetto, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
@@ -134,5 +134,5 @@ I subset di strumenti sono stati introdotti in .NET Framework 4.5.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Configurazioni del set di strumenti standard e personalizzate](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md)
 - [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

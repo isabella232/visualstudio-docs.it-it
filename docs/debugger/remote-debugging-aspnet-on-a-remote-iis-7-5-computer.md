@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173915"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il debug remoto di ASP.NET in un computer IIS remoto
@@ -66,9 +66,9 @@ Questo articolo include i passaggi per configurare una configurazione di base di
     Per eseguire questa operazione in Visual Studio 2017, scegliere **File > nuovo progetto >**, quindi selezionare **Visual C# > Web > ASP.NET Web Application**. Nella sezione modelli **ASP.NET 4.5.2** selezionare **MVC**. Assicurarsi che l'opzione **Abilita supporto Docker** non sia selezionata e che **l'autenticazione** sia impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.
     ::: moniker-end
 
-2. Aprire il file *HomeController.cs* e impostare un punto di interruzione nel `About()` metodo.
+2. Aprire il file  *HomeController.cs* e impostare un punto di interruzione nel `About()` metodo.
 
-## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a>Installare e configurare IIS in Windows Server
+## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a> Installare e configurare IIS in Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -83,7 +83,7 @@ Se in Internet Explorer è abilitata la configurazione della sicurezza avanzata 
 
 Quando si Scarica il software, è possibile ottenere richieste per concedere l'autorizzazione per caricare varie risorse e script del sito Web. Alcune di queste risorse non sono necessarie, ma per semplificare il processo fare clic su **Aggiungi** quando richiesto.
 
-## <a name="install-aspnet-45-on-windows-server"></a><a name="BKMK_deploy_asp_net"></a>Installare ASP.NET 4,5 in Windows Server
+## <a name="install-aspnet-45-on-windows-server"></a><a name="BKMK_deploy_asp_net"></a> Installare ASP.NET 4,5 in Windows Server
 
 Per informazioni più dettagliate sull'installazione di ASP.NET in IIS, vedere [iis 8,0 con ASP.NET 3,5 e ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -132,7 +132,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 1. Nella finestra di dialogo **Impostazioni** abilitare il debug facendo clic su **Avanti**, scegliere una configurazione di **debug** , quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto le opzioni di **pubblicazione file** .
 
     > [!IMPORTANT]
-    > Se si sceglie una configurazione di versione, si disabilita il debug nel file *Web. config* durante la pubblicazione.
+    > Se si sceglie una configurazione di versione, si disabilita il debug nel file di *web.config* durante la pubblicazione.
 
 1. Fare clic su **Save (Salva** ) e quindi pubblicare nuovamente l'app.
 
@@ -140,7 +140,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 È possibile usare questa opzione per distribuire l'app se si vuole copiare l'app in IIS usando PowerShell, RoboCopy o si desidera copiare manualmente i file.
 
-### <a name="configure-the-aspnet-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Configurare il sito Web ASP.NET nel computer Windows Server
+### <a name="configure-the-aspnet-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Configurare il sito Web ASP.NET nel computer Windows Server
 
 1. Aprire Esplora risorse e creare una nuova cartella, **C:\publish**, in cui si distribuirà successivamente il progetto ASP.NET.
 
@@ -162,7 +162,7 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 È anche possibile pubblicare e distribuire l'app usando il file system o altri strumenti.
 
-1. (ASP.NET 4.5.2) Verificare che nel file Web. config sia elencata la versione corretta di .NET.  Ad esempio, se la destinazione è ASP.NET 4.5.2, verificare che questa versione sia elencata in Web. config.
+1. (ASP.NET 4.5.2) Verificare che nel file di web.config sia elencata la versione corretta di .NET.  Ad esempio, se la destinazione è ASP.NET 4.5.2, verificare che questa versione sia elencata in web.config.
 
     ```xml
     <system.web>
@@ -179,13 +179,13 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Scaricare e installare Remote Tools in Windows Server
+## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Scaricare e installare Remote Tools in Windows Server
 
 Scaricare la versione di Remote Tools corrispondente alla versione di Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Configurare il debugger remoto in Windows Server
+## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Configurare il debugger remoto in Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -194,7 +194,7 @@ Scaricare la versione di Remote Tools corrispondente alla versione di Visual Stu
 
 Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseguire il debugger remoto come servizio](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Connettersi all'applicazione ASP.NET dal computer che esegue Visual Studio
+## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a> Connettersi all'applicazione ASP.NET dal computer che esegue Visual Studio
 
 1. Nel computer di Visual Studio aprire la soluzione di cui si sta provando a eseguire il debug (**MyASPApp** se si seguono i passaggi descritti in questo articolo).
 2. In Visual Studio fare clic su **Debug > Connetti a processo** (CTRL + ALT + P).
@@ -221,9 +221,9 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
 5. Selezionare  **Mostra i processi di tutti gli utenti**.
 
-6. Digitare la prima lettera del nome di un processo per trovare rapidamente **w3wp. exe** per ASP.NET 4,5.
+6. Digitare la prima lettera del nome di un processo per trovare rapidamente **w3wp.exe** per ASP.NET 4,5.
 
-    Se sono presenti più processi che mostrano **w3wp. exe**, controllare la colonna **nome utente** . In alcuni scenari, nella colonna **nome utente** viene visualizzato il nome del pool di applicazioni, ad esempio **IIS APPPOOL\DefaultAppPool**. Se il pool di app viene visualizzato, un modo semplice per identificare il processo corretto consiste nel creare un nuovo pool di app denominato per l'istanza dell'app di cui si vuole eseguire il debug, quindi è possibile trovarlo facilmente nella colonna **nome utente** .
+    Se sono presenti più processi che mostrano **w3wp.exe**, controllare la colonna **nome utente** . In alcuni scenari, nella colonna **nome utente** viene visualizzato il nome del pool di applicazioni, ad esempio **IIS APPPOOL\DefaultAppPool**. Se il pool di app viene visualizzato, un modo semplice per identificare il processo corretto consiste nel creare un nuovo pool di app denominato per l'istanza dell'app di cui si vuole eseguire il debug, quindi è possibile trovarlo facilmente nella colonna **nome utente** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")

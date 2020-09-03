@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c3d97185446560343b36b22f73e0b320b5a28d6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289222"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Proprietà riservate e note MSBuild
@@ -48,7 +48,7 @@ Nella tabella in questa sezione vengono illustrate le proprietà predefinite di 
 | `MSBuildExtensionsPath` | Nota | Introdotta in .NET Framework 4: nessuna differenza tra i valori predefiniti di `MSBuildExtensionsPath` e `MSBuildExtensionsPath32`. È possibile impostare la variabile di ambiente `MSBUILDLEGACYEXTENSIONSPATH` su un valore non Null per abilitare il comportamento del valore predefinito di `MSBuildExtensionsPath` nelle versioni precedenti.<br /><br /> In .NET Framework 3.5 e versioni precedenti il valore predefinito di `MSBuildExtensionsPath` fa riferimento al percorso della sottocartella MSBuild nella cartella *\Programmi\\* o *\Programmi (x86)*, in base al numero di bit del processo corrente. Ad esempio, per un processo a 32 bit in un computer a 64 bit, la proprietà fa riferimento alla cartella *\Programmi (x86)*. Per un processo a 64 bit in un computer a 64 bit, questa proprietà fa riferimento alla cartella *\Programmi*.<br /><br /> Non includere la barra rovesciata finale in questa proprietà.<br /><br /> Questo percorso è ideale per contenere i file di destinazione personalizzati. È ad esempio possibile installare i file di destinazione in *\Programmi\MSBuild\MyFiles\Northwind.targets*, quindi importarli nei file di progetto usando il codice XML seguente:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild`|
 | `MSBuildExtensionsPath32` | Nota | Percorso della sottocartella MSBuild nella cartella *\Program Files* o *\Program Files (x86)* . Il percorso fa sempre riferimento alla cartella *\Programmi (x86)* per un computer a 32 bit e alla cartella *\Programmi* per un computer a 64 bit.". Vedere anche `MSBuildExtensionsPath` e `MSBuildExtensionsPath64`.<br /><br /> Non includere la barra rovesciata finale in questa proprietà. | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild`|
 | `MSBuildExtensionsPath64` | Nota | Percorso della sottocartella MSBuild nella cartella *\Program Files* . Per un computer a 64 bit, questo percorso fa sempre riferimento alla cartella *\Programmi*. Per un computer a 32 bit, questo percorso è vuoto. Vedere anche `MSBuildExtensionsPath` e `MSBuildExtensionsPath32`.<br /><br /> Non includere la barra rovesciata finale in questa proprietà. | `C:\Program Files\MSBuild`|
-| `MSBuildInteractive` | Riservato | `true`se MSBuild viene eseguito in modo interattivo, consentendo l'input dell'utente. Questa impostazione è controllata dall' `-interactive` opzione della riga di comando. | `false` |
+| `MSBuildInteractive` | Riservato | `true` se MSBuild viene eseguito in modo interattivo, consentendo l'input dell'utente. Questa impostazione è controllata dall' `-interactive` opzione della riga di comando. | `false` |
 | `MSBuildLastTaskResult` | Riservato | `true` se l'attività precedente è stata completata senza errori (anche se erano presenti avvisi) o `false` se l'attività precedente ha generato errori. In genere, quando si verifica un errore in un'attività, l'errore è l'ultimo elemento che si verifica nel progetto. Pertanto, il valore di questa proprietà non è mai `false`, tranne negli scenari seguenti:<br /><br /> - Quando l'attributo `ContinueOnError` dell'[elemento Task (MSBuild)](../msbuild/task-element-msbuild.md) è impostato su `WarnAndContinue` (o `true`) o su `ErrorAndContinue`.<br /><br /> - Quando `Target` ha un [elemento OnError (MSBuild)](../msbuild/onerror-element-msbuild.md) come elemento figlio. | `true` |
 | `MSBuildNodeCount` | Riservato | Numero massimo di processi simultanei usati durante la compilazione. Si tratta del valore specificato per **-maxcpucount** nella riga di comando. Se l'opzione **-maxcpucount** è stata specificata senza un valore, `MSBuildNodeCount` specifica il numero di processori nel computer. Per altre informazioni, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md) e [Compilazione di più progetti in parallelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md). | 1 |
 | `MSBuildProgramFiles32` | Riservato | Percorso della cartella del programma a 32 bit, ad esempio *C:\Programmi (x86)*.<br /><br /> Non includere la barra rovesciata finale in questa proprietà. | `C:\Program Files (x86)`|
@@ -88,7 +88,7 @@ Oltre a quanto sopra, i nomi corrispondenti a elementi del linguaggio MSBuild no
 * Se
 * Otherwise
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 

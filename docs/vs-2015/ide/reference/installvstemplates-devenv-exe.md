@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2f019af21beba231a5f135c49fb00dcb463e110
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671005"
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Consente di registrare modelli di progetto o di elemento che si trovano in *\<percorso di installazione di Visual Studio>* \Common7\IDE\ProjectTemplates\ o *\<percorso di installazione di Visual Studio>* \Common7\IDE\ItemTemplates\ per potervi accedere dalle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento**.
+Registra i modelli di progetto o di elemento che si trovano in *\<Visual Studio installation path>* \Common7\IDE\ProjectTemplates\ o *\<Visual Studio installation path>* \Common7\IDE\ItemTemplates\ potervi in modo che sia possibile accedervi tramite le finestre di dialogo **nuovo progetto** e **Aggiungi nuovo elemento** .
 
 > [!WARNING]
 > Questa opzione è supportata solo per lo sviluppo partner di Visual Studio e non è disponibile nelle edizioni Express. Per poter usare le opzioni [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) è necessario eseguire devenv come amministratore. Per altre informazioni, vedere [User Permissions](../../ide/user-permissions-and-visual-studio.md) (Autorizzazioni utente).

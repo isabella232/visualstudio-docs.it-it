@@ -8,16 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542616"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
 È possibile installare un linguaggio specifico di dominio nel computer in uso o in altri computer. Visual Studio deve essere già installato nel computer di destinazione.
 
-## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a>Scelta tra la distribuzione VSIX e MSI
+## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a> Scelta tra la distribuzione VSIX e MSI
  Esistono due metodi per distribuire un linguaggio specifico di dominio:
 
 |Metodo|Vantaggi|
@@ -25,7 +25,7 @@ ms.locfileid: "85542616"
 |VSX (estensione di Visual Studio)|Facile da distribuire: copiare ed eseguire il file con **estensione VSIX** dal progetto DslPackage.<br /><br /> Per ulteriori informazioni, vedere [installazione e disinstallazione di un linguaggio DSL utilizzando VSX](#Installing).|
 |MSI (file del programma di installazione)|-Consente all'utente di aprire Visual Studio facendo doppio clic su un file DSL.<br />-Associa un'icona al tipo di file DSL nel computer di destinazione.<br />-Associa un XSD (XML Schema) al tipo di file DSL. In questo modo si evitano gli avvisi quando il file viene caricato in Visual Studio.<br /><br /> Per creare un'identità del servizio gestito, è necessario aggiungere un progetto di installazione alla soluzione.<br /><br /> Per ulteriori informazioni, vedere [distribuzione di un linguaggio DSL utilizzando un file MSI](#msi).|
 
-## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a>Installare e disinstallare un linguaggio DSL usando il VSX
+## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a> Installare e disinstallare un linguaggio DSL usando il VSX
 
 Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire un file DSL da Visual Studio, ma il file non può essere aperto da Esplora risorse.
 
@@ -63,7 +63,7 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions** LocalAppData
 
-## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a>Distribuzione di un linguaggio DSL in un file MSI
+## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a> Distribuzione di un linguaggio DSL in un file MSI
  Definendo un file MSI (Windows Installer) per il linguaggio DSL, è possibile consentire agli utenti di aprire i file DSL da Esplora risorse. È anche possibile associare un'icona e una breve descrizione all'estensione del nome file. Inoltre, l'identità del servizio gestito può installare un XSD che può essere utilizzato per convalidare i file DSL. Se lo si desidera, è possibile aggiungere altri componenti nell'identità del servizio gestito che verranno installati nello stesso momento.
 
  Per ulteriori informazioni sui file MSI e altre opzioni di distribuzione, vedere [distribuzione di applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md).

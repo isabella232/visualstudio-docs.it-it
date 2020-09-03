@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a94a44d0a826cbda1d50b212f61bef86ad29f05c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287818"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
@@ -148,6 +148,6 @@ Nella figura seguente è illustrato un esempio di report in cui viene mostrata u
 
 I risultati e i report del test di carico contengono informazioni potenzialmente riservate che potrebbero essere utilizzate per realizzare un attacco al computer o alla rete. I risultati e i report del test di carico contengono nomi di computer e stringhe di connessione. Quando si condividono i report del test di carico con altre persone, è necessario tenere in considerazione tali rischi.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md)

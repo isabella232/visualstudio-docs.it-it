@@ -10,10 +10,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: fffa4cec6a2bd7a340b90776ac20dc486f28045b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173556"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
@@ -51,7 +51,7 @@ I Linee guida di base di C++ sono un set di linee guida, regole e procedure cons
   
    ![Pagina delle proprietà per le impostazioni delle estensioni di analisi del codice](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Per abilitare o disabilitare i set di regole Regole di base di C++, aprire la finestra di dialogo **pagine delle proprietà** per il progetto. In **proprietà di configurazione**espandere **analisi codice**, **estensioni**. Nel controllo a discesa accanto a **abilita regole di base di C++ (rilasciato)** o **Abilita regole di base di C++ (sperimentale)**, scegliere **Sì** o **No**. Scegliere **OK** o **applica** per salvare le modifiche.  
+   Per abilitare o disabilitare i set di regole Regole di base di C++, aprire la finestra di dialogo **pagine delle proprietà** per il progetto. In **proprietà di configurazione**espandere  **analisi codice**, **estensioni**. Nel controllo a discesa accanto a **abilita regole di base di C++ (rilasciato)** o **Abilita regole di base di C++ (sperimentale)**, scegliere **Sì** o **No**. Scegliere **OK** o **applica** per salvare le modifiche.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Tipi di controllo, limiti e durate  
  Il pacchetto di Regole di base di C++ contiene attualmente i controlli per i profili indipendenza dai [tipi](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [sicurezza dei limiti](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)e [sicurezza della durata](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) .  
@@ -83,7 +83,7 @@ int main()
   
 - C26485 è associato alle regole. 3: nessun decadimento da matrice a puntatore.  
   
-- C26481 è associato alle regole. 1: non usare l'aritmetica dei puntatori. Usare invece `span`.  
+- C26481 è associato alle regole. 1: non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.  
   
   Se i set di regole di analisi del codice Regole di base di C++ sono installati e abilitati quando si compila questo codice, vengono restituiti i primi due avvisi, ma il terzo viene eliminato. Ecco l'output di compilazione del codice di esempio:  
   
@@ -96,7 +96,7 @@ int main()
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (PDB completo)**  
 **c:\utenti\nomeutente\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6): Warning C26494: la variabile ' arr ' è uninitializ**  
-**ed. inizializzare sempre un oggetto. (Type. 5: https: \/ /go.Microsoft.com/fwlink/p/?link**  
+**ed. Inizializzare sempre un oggetto. (Type. 5: https: \/ /go.Microsoft.com/fwlink/p/?link**  
 **ID = 620421)**  
 **c:\utenti\nomeutente\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7): Warning C26485: espressione ' arr ': nessuna matrice**  

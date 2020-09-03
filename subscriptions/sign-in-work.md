@@ -8,10 +8,10 @@ ms.date: 03/11/2020
 ms.topic: how-to
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione.
 ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906131"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione 
@@ -28,7 +28,7 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
    > [!NOTE]
    > Questo indirizzo viene anche indicato nel messaggio di posta elettronica di benvenuto al sottoscrittore ricevuto. In caso di problemi a individuare il messaggio di benvenuto, controllare le cartelle della posta indesiderata.
 
-3. Fare clic su **Continue**.
+3. Fare clic su **Continua**.
 4. Si verrà reindirizzati alla pagina di accesso aziendale.
 5. Immettere la password.
 6. Fare clic su **Accedi**
@@ -46,7 +46,7 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
    > [!NOTE]
    > Questo indirizzo è anche indicato nella Lettera di benvenuto al sottoscrittore. Se la Lettera di benvenuto non è stata ricevuta, controllare nelle cartelle di posta indesiderata.
 
-3. Fare clic su **Continue**.
+3. Fare clic su **Continua**.
 4. Si verrà reindirizzati a una pagina di decisione.
     - Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è associata a un account aziendale o dell'istituto di istruzione associato a un tenant di Azure Active Directory (AAD).
     - Selezionare **personale** se la sottoscrizione è associata a un indirizzo di posta elettronica "aziendale", ma è stata anche convertita in un account Microsoft "personale" (MSA).

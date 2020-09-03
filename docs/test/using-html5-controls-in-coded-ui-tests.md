@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 3519d1cc030c69880bcc047b4b4123785c4fb8b2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289339"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
@@ -36,7 +36,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 
 ![Controllo audio HTML5](../test/media/codedui_html5_audio.png)
 
-|Azione|Registrazione|Codice generato|
+|Action|Registrazione|Codice generato|
 |-|---------------|-|
 |**Riproduzione audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riprodurre l' \<name> audio da 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Ricercare un punto specifico dell'audio**|Cerca \<name> audio su 00:01:48|HtmlAudio.Seek(TimeSpan)|
@@ -59,7 +59,7 @@ Vedere [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
 
 ![Controllo video HTML5](../test/media/codedui_html5_video.png)
 
-|Azione|Registrazione|Codice generato|
+|Action|Registrazione|Codice generato|
 |-|---------------|-|
 |**PlayVideo**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riprodurre \<name> video da 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Ricercare un punto specifico nel video**|Cerca il \<name> video a 00:01:48|HtmlVideo.Seek(TimeSpan)|
@@ -82,7 +82,7 @@ Vedere [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/vi
 
 ![Controllo ProgressBar HTML5](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Elementi HTML](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)

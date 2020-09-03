@@ -11,22 +11,22 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: ec68d54ced85737d66c64ca2dbf7942ca81e5314
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621214"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools per C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I C++ nativi possono spesso fornire le prestazioni più veloci quando si accede alle origini dati. Tuttavia, gli strumenti per i C++ dati per le applicazioni in Visual Studio non sono così ricchi come per le applicazioni .NET. Le finestre origini dati, ad esempio, non possono essere utilizzate per trascinare le origini dati su C++ un'area di progettazione. Se è necessario un livello relazionale a oggetti, sarà necessario scrivere un prodotto personalizzato oppure utilizzare un prodotto di terze parti.  Lo stesso vale per le funzionalità di data binding, sebbene le applicazioni che utilizzano la libreria Microsoft Foundation Class possano utilizzare alcune classi di database, insieme a documenti e visualizzazioni, per archiviare i dati in memoria e visualizzarli all'utente. Per altre informazioni, vedere [accesso ai dati in C++ Visual](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .
+Il linguaggio C++ nativo può spesso fornire le prestazioni più veloci quando si accede alle origini dati. Tuttavia, gli strumenti per i dati per le applicazioni C++ in Visual Studio non sono così ricchi come per le applicazioni .NET. Le finestre origini dati, ad esempio, non possono essere utilizzate per trascinare le origini dati in un'area di progettazione C++. Se è necessario un livello relazionale a oggetti, sarà necessario scrivere un prodotto personalizzato oppure utilizzare un prodotto di terze parti.  Lo stesso vale per le funzionalità di data binding, sebbene le applicazioni che utilizzano la libreria Microsoft Foundation Class possano utilizzare alcune classi di database, insieme a documenti e visualizzazioni, per archiviare i dati in memoria e visualizzarli all'utente. Per ulteriori informazioni, vedere [accesso ai dati in Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .
 
- Per connettersi ai database SQL, le C++ applicazioni native possono utilizzare i driver ODBC e OLE DB e il provider ADO inclusi in Windows.     Questi possono connettersi a qualsiasi database che supporti tali interfacce. Il driver ODBC è lo standard. OLE DB viene fornito per compatibilità con le versioni precedenti. Per ulteriori informazioni su queste tecnologie dati, vedere [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx) .
+ Per connettersi ai database SQL, le applicazioni C++ native possono usare i driver ODBC e OLE DB e il provider ADO inclusi in Windows.     Questi possono connettersi a qualsiasi database che supporti tali interfacce. Il driver ODBC è lo standard. OLE DB viene fornito per compatibilità con le versioni precedenti. Per ulteriori informazioni su queste tecnologie dati, vedere [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx) .
 
  Per sfruttare le funzionalità personalizzate di SQL Server 2005 e versioni successive, usare il [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733). Native Client contiene anche il driver ODBC SQL Server e il provider di OLE DB SQL Server in una libreria a collegamento dinamico (DLL) nativa. Supportano le applicazioni che utilizzano API in codice nativo (ODBC, OLE DB e ADO) per Microsoft SQL Server.  SQL Server Native Client viene installato con SQL Server Data Tools. La guida alla programmazione è disponibile qui: [SQL Server Native Client Programming](https://msdn.microsoft.com/library/ms130892.aspx).
 
-## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Per connettersi al database locale tramite ODBC e SQL Native Client da C++ un'applicazione
+## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Per connettersi al database locale tramite ODBC e SQL Native Client da un'applicazione C++
 
 1. Installare SQL Server Data Tools.
 
@@ -40,11 +40,11 @@ I C++ nativi possono spesso fornire le prestazioni più veloci quando si accede 
 
     ![Database di connessione SSMS](../data-tools/media/raddata-ssms-attach-database.png "database di associazione di raddata SSMS")
 
-4. Scaricare l'esempio ODBC Windows SDK e decomprimerlo in una nuova posizione. In questo esempio vengono illustrati i comandi ODBC di base utilizzati per connettersi a un database ed eseguire query e comandi. Per ulteriori informazioni su tali funzioni, vedere [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Quando si carica la soluzione per la prima volta (si C++ trova nella cartella), Visual Studio offrirà l'aggiornamento della soluzione alla versione corrente di Visual Studio. Scegliere **Sì**.
+4. Scaricare l'esempio ODBC Windows SDK e decomprimerlo in una nuova posizione. In questo esempio vengono illustrati i comandi ODBC di base utilizzati per connettersi a un database ed eseguire query e comandi. Per ulteriori informazioni su tali funzioni, vedere [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Quando si carica la soluzione per la prima volta (si trova nella cartella C++), Visual Studio offrirà l'aggiornamento della soluzione alla versione corrente di Visual Studio. Fare clic su **Sì**.
 
-5. Per usare native client, sono necessari il file di intestazione e il file lib. Questi file contengono funzioni e definizioni specifiche per SQL Server, oltre alle funzioni ODBC definite in SQL. h. Nelle**Proprietà** di **Project**  >   > **directory di VC + +** aggiungere la directory di inclusione seguente:
+5. Per usare native client, sono necessari il file di intestazione e il file lib. Questi file contengono funzioni e definizioni specifiche per SQL Server, oltre alle funzioni ODBC definite in SQL. h. In **Proprietà progetto**directory di  >  **Properties**  >  **VC + +** aggiungere la directory di inclusione seguente:
 
-   **unità \<system >: \Programmi\Microsoft SQL Server\110\SDK\Include**     E questa directory della libreria:
+   ** \<system drive> : \Programmi\microsoft SQL Server\110\SDK\Include** e questa directory della libreria:
 
    **C:\Programmi\Microsoft SQL Server\110\SDK\Lib**
 
@@ -55,9 +55,9 @@ I C++ nativi possono spesso fornire le prestazioni più veloci quando si accede 
    #include <sqlncli.h>
    ```
 
-    Si noti che l'esempio non usa effettivamente alcuna funzionalità client nativa, quindi i passaggi precedenti non sono necessari per la compilazione e l'esecuzione. Il progetto è ora configurato per l'uso di questa funzionalità. Per ulteriori informazioni, vedere [SQL Server Native Client Programming](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).
+    Si noti che l'esempio non usa effettivamente alcuna funzionalità client nativa, quindi i passaggi precedenti non sono necessari per la compilazione e l'esecuzione. Il progetto è ora configurato per l'uso di questa funzionalità. Per altre informazioni, vedere [Programmazione in SQL Server Native Client](https://msdn.microsoft.com/library/ms130892\(v=sql.130\).aspx).
 
-7. Consente di specificare il driver da utilizzare nel sottosistema ODBC. L'esempio passa l'attributo della stringa di connessione del DRIVER in come argomento della riga di comando. In **Project**  > **Properties**  > **debug**aggiungere questo argomento del comando:
+7. Consente di specificare il driver da utilizzare nel sottosistema ODBC. L'esempio passa l'attributo della stringa di connessione del DRIVER in come argomento della riga di comando. In debug delle proprietà del **progetto**  >  **Properties**  >  **Debugging**aggiungere questo argomento del comando:
 
    ```
    DRIVER="SQL Server Native Client 11.0"
