@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544846"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Procedura: esporre il codice a VBA in un progetto Visual Basic
@@ -36,7 +36,7 @@ ms.locfileid: "85544846"
 
 - [Esporre codice non presente in una classe di elementi host](#NonHostItem)
 
-## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a>Esporre il codice in una classe di elementi host
+## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> Esporre il codice in una classe di elementi host
  Per consentire al codice VBA di chiamare Visual Basic codice in una classe di elementi host, impostare la proprietà **EnableVbaCallers** dell'elemento host su **true**.
 
  Per una procedura dettagliata che illustra come esporre un metodo di una classe dell'elemento host e quindi chiamarlo da VBA, vedere [procedura dettagliata: chiamare il codice da VBA in un progetto Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Per ulteriori informazioni sugli elementi host, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
@@ -71,7 +71,7 @@ ms.locfileid: "85544846"
 
 6. Compilare il progetto.
 
-## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a>Esporre codice non presente in una classe di elementi host
+## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> Esporre codice non presente in una classe di elementi host
  Per consentire al codice VBA di chiamare Visual Basic codice che non si trova in una classe di elementi host, modificare il codice in modo che sia visibile a VBA.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Per esporre il codice che non si trova in una classe dell'elemento host a VBA

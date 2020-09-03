@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO . Documenti Microsoft
+title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d48c4bc888db0ad8be6a0d6e98eeea2223a27e8a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738094"
 ---
 # <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
-Viene descritta la risoluzione di un punto di interruzione di errore, inclusi percorso, programma e thread.
+Descrive la risoluzione di un punto di interruzione di errore, tra cui percorso, programma e thread.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,12 +49,12 @@ public struct BP_ERROR_RESOLUTION_INFO {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `dwFields`\
-Combinazione di valori dell'enumerazione [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) che specifica quali campi di questa struttura vengono compilati.
+Combinazione di valori dell'enumerazione [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) che specifica i campi della struttura da compilare.
 
 `bpResLocation`\
-Unione [BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) che specifica la posizione di risoluzione del punto di interruzione.
+Unione [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) che specifica la posizione di risoluzione del punto di interruzione.
 
 `pProgram`\
 Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta l'applicazione in cui si è verificato l'errore del punto di interruzione.
@@ -63,18 +63,18 @@ Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram
 Oggetto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) che rappresenta il thread in cui è in esecuzione l'applicazione che ha generato l'errore del punto di interruzione.
 
 `bstrMessage`\
-Stringa contenente qualsiasi messaggio di avviso o di errore risultante da questa risoluzione degli errori.
+Stringa contenente un messaggio di avviso o di errore risultante da questa risoluzione degli errori.
 
 `dwType`\
 Valore dell'enumerazione [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) che specifica il tipo di errore del punto di interruzione.
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene restituita dal [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) metodo.
+Questa struttura viene restituita dal metodo [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

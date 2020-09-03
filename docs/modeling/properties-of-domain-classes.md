@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544183"
 ---
 # <a name="properties-of-domain-classes"></a>Proprietà delle classi di dominio
@@ -27,7 +27,7 @@ Le classi di dominio hanno le proprietà riportate nella tabella seguente. Per i
 |Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generata dalla classe di dominio ( `none` `abstract` o `sealed` ).|`none`|
 |Classe di base|Se questa classe di dominio è derivata, il nome della classe di base.|\<none>|
-|Name|Nome di questa classe di dominio.|Nome corrente|
+|Nome|Nome di questa classe di dominio.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi di questa classe di dominio.|Spazio dei nomi corrente|
 |Note|Note informali associate a questa classe di dominio.|\<none>|
 |Descrizione|Descrizione utilizzata per documentare l'interfaccia utente della finestra di progettazione generata.|\<none>|

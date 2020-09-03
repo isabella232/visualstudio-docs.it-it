@@ -1,5 +1,5 @@
 ---
-title: Gestione delle eccezioni (Visual Studio SDK) Documenti Microsoft
+title: Gestione delle eccezioni (Visual Studio SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,42 +11,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 34b83c7181a7ba405e642d9911e2c53df3f4401d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738770"
 ---
-# <a name="exception-handling-visual-studio-sdk"></a>Gestione delle eccezioni (Visual Studio SDK)Exception handling (Visual Studio SDK)
+# <a name="exception-handling-visual-studio-sdk"></a>Gestione delle eccezioni (Visual Studio SDK)
 Di seguito viene descritto il processo che si verifica quando vengono generate eccezioni.
 
 ## <a name="exception-handling-process"></a>Processo di gestione delle eccezioni
 
-1. Quando un'eccezione viene generata per la prima volta, ma prima che venga gestita dal gestore di eccezioni nel programma sottoposto a debug, il motore di debug (DE) invia un [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) al gestore di sessione di debug (SDM) come evento di arresto. L'oggetto `IDebugExceptionEvent2` viene inviato se solo le impostazioni per l'eccezione (specificate nella finestra di dialogo Eccezioni nel pacchetto di debug) specificano che l'utente desidera interrompere le notifiche di eccezione first-chance.
+1. Quando viene generata prima un'eccezione, ma prima che venga gestita dal gestore di eccezioni nel programma di cui è in corso il debug, il motore di debug (DE) Invia un [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) al gestore di debug della sessione (SDM) come evento di arresto. `IDebugExceptionEvent2`Viene inviato se solo le impostazioni per l'eccezione (specificato nella finestra di dialogo eccezioni nel pacchetto di debug) specificano che l'utente desidera arrestare le notifiche di eccezioni first-chance.
 
-2. SDM chiama [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) per ottenere la proprietà dell'eccezione.
+2. SDM chiama [IDebugExceptionEvent2:: GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) per ottenere la proprietà dell'eccezione.
 
-3. Il pacchetto di debug chiama [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) per determinare le opzioni da presentare all'utente.
+3. Il pacchetto di debug chiama [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) per determinare le opzioni da presentare all'utente.
 
 4. Il pacchetto di debug chiede all'utente come gestire l'eccezione aprendo una finestra di dialogo di eccezione first-chance.
 
-5. Se l'utente sceglie di continuare, SDM chiama [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md).
+5. Se l'utente sceglie di continuare, SDM chiama [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md).
 
-    - Se il metodo restituisce S_OK, chiama [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).
+    - Se il metodo restituisce S_OK, chiama [IDebugExceptionEvent2::P asstodebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).
 
          -oppure-
 
-         Se il metodo restituisce S_FALSE, al programma in fase di debug viene data una seconda possibilità di gestire l'eccezione.
+         Se il metodo restituisce S_FALSE, il programma di cui è in corso il debug riceve una seconda possibilità per gestire l'eccezione.
 
-6. Se il programma in fase di debug non dispone di alcun `IDebugExceptionEvent2` gestore per un'eccezione second-chance, il DE invia un al file SDM come **EVENT_SYNC_STOP**.
+6. Se il programma di cui è in corso il debug non dispone di un gestore per un'eccezione di seconda probabilità, il DE Invia un oggetto `IDebugExceptionEvent2` a SDM come **EVENT_SYNC_STOP**.
 
 7. Il pacchetto di debug chiede all'utente come gestire l'eccezione aprendo una finestra di dialogo di eccezione first-chance.
 
-8. Il pacchetto di debug chiama [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) per determinare le opzioni da presentare all'utente.
+8. Il pacchetto di debug chiama [IDebugExceptionEvent2:: CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) per determinare le opzioni da presentare all'utente.
 
-9. Il pacchetto di debug chiede all'utente come gestire l'eccezione aprendo una finestra di dialogo di eccezione second-chance.
+9. Il pacchetto di debug chiede all'utente come gestire l'eccezione aprendo una finestra di dialogo di eccezione della seconda possibilità.
 
-10. Se il metodo restituisce S_OK, chiama `IDebugExceptionEvent2::PassToDebuggee`.
+10. Se il metodo restituisce S_OK, chiama `IDebugExceptionEvent2::PassToDebuggee` .
 
 ## <a name="see-also"></a>Vedere anche
-- [Chiamare eventi del debuggerCall debugger events](../../extensibility/debugger/calling-debugger-events.md)
+- [Chiama eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

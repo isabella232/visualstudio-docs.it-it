@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c93d69fb72d88c65e8037f8cec1e2747dbdbff95
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649331"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 
-Le regole minime miste Microsoft si concentrano sui problemi più critici nei progetti in c'è che supportano Common Language Runtime, tra cui potenziali falle di sicurezza e arresti anomali delle applicazioni.
+Le regole minime miste Microsoft si concentrano sui problemi più critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali dell'applicazione.
 
-Includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti in linguaggio C, che supportano Common Language Runtime.
+Includere questo set di regole in tutti i set di regole personalizzati creati per i progetti C++ che supportano Common Language Runtime.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -86,18 +86,18 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C28182](../code-quality/c28182.md)|Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.|
 |[C28202](../code-quality/c28202.md)|Riferimento non valido a membro non statico|
 |[C28203](../code-quality/c28203.md)|Riferimento ambiguo al membro di classe.|
-|[C28205](../code-quality/c28205.md)|\_Operazione\_ \_riuscita o In\_caso di errore\_ utilizzato in un contesto non valido|
+|[C28205](../code-quality/c28205.md)|\_Esito positivo \_ o \_ \_ negativo \_ utilizzato in un contesto non valido|
 |[C28206](../code-quality/c28206.md)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](../code-quality/c28207.md)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28210](../code-quality/c28210.md)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|
 |[C28211](../code-quality/c28211.md)|Previsto nome contesto statico per SAL_context|
 |[C28212](../code-quality/c28212.md)|Prevista espressione del puntatore per l'annotazione|
-|[C28213](../code-quality/c28213.md)|\_L'annotazione\_Usa\_ \_annotazioni decl deve essere utilizzata per fare riferimento, senza modifiche, a una dichiarazione precedente.|
+|[C28213](../code-quality/c28213.md)|L' \_ \_ annotazione use decl Annotations \_ \_ deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
 |[C28214](../code-quality/c28214.md)|I nomi di parametro di attributo devono essere p1...p9|
 |[C28215](../code-quality/c28215.md)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
 |[C28217](../code-quality/c28217.md)|Per la funzione, il numero di parametri per l'annotazione non corrisponde a quello trovato nel file|
-|[C28218](../code-quality/c28218.md)|Per il parametro di funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file|
+|[C28218](../code-quality/c28218.md)|Per il parametro della funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file|
 |[C28219](../code-quality/c28219.md)|Membro di enumerazione previsto per l'annotazione del parametro nell'annotazione|
 |[C28220](../code-quality/c28220.md)|Espressione integer prevista per l'annotazione del parametro nell'annotazione|
 |[C28221](../code-quality/c28221.md)|Prevista espressione di tipo String per il parametro nell'annotazione|
@@ -134,7 +134,7 @@ Includere questo set di regole in qualsiasi set di regole personalizzato creato 
 |[C28267](../code-quality/c28267.md)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|
 |[C28272](../code-quality/c28272.md)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|
 |[C28273](../code-quality/c28273.md)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|
-|[C28275](../code-quality/c28275.md)|Il parametro\_\_ per \_il valore Macro è null|
+|[C28275](../code-quality/c28275.md)|Il parametro per \_ il \_ valore della macro \_ è null|
 |[C28279](../code-quality/c28279.md)|Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'|
 |[C28280](../code-quality/c28280.md)|Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente|
 |[C28282](../code-quality/c28282.md)|Le stringhe di formato devono essere nelle precondizioni|

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81444947"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
@@ -23,13 +23,13 @@ In questa introduzione di 5-10 minuti a Visual Studio come ambiente di sviluppo 
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente. Verificare di selezionare il carico di lavoro **Sviluppo Python** nel programma di installazione.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente. Verificare di selezionare il carico di lavoro **Sviluppo Python** nel programma di installazione.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Se Visual Studio non è già stato installato, passare alla pagina dei download di [Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente. Verificare di selezionare il carico di lavoro **Sviluppo Python** nel programma di installazione.
+Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente. Verificare di selezionare il carico di lavoro **Sviluppo Python** nel programma di installazione.
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ La procedura seguente crea un progetto vuoto che funge da contenitore per l'appl
     ![Esplora soluzioni con il progetto vuoto appena creato](media/quickstart-python-01-empty-project-2019.png)
 ::: moniker-end
 
-**Domanda: Qual è il vantaggio della creazione di un progetto in Visual Studio per un'applicazione Python?**
+**Domanda: qual è il vantaggio di creare un progetto in Visual Studio per un'applicazione Python?**
 
 **Risposta**: per definire le applicazioni Python, si usano in genere solo file e cartelle, ma questa semplice struttura può diventare complessa se le dimensioni delle applicazioni aumentano e interessano magari anche file generati automaticamente, JavaScript per le applicazioni Web e così via. Un progetto di Visual Studio aiuta a gestire questa complessità. Il progetto, un file con estensione *pyproj*, identifica tutti i file di origine e di contenuto associati al progetto, contiene le informazioni di compilazione relative a ogni file, gestisce le informazioni per l'integrazione con sistemi di controllo del codice sorgente e consente di organizzare l'applicazione in componenti logici.
 
@@ -94,7 +94,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
     ![Ambiente predefinito visualizzato in Esplora soluzioni](media/quickstart-python-02-default-environment.png)
 
-2. Fare clic con il pulsante destro del mouse sull'ambiente e selezionare **Installa pacchetto Python**. Questo comando apre la finestra **Ambienti Python** nella scheda **Pacchetti**.
+2. Fare clic con il pulsante destro del mouse sull'ambiente e scegliere **Installa pacchetto python**. Questo comando apre la finestra **Ambienti Python** nella scheda **Pacchetti**.
 
 3. Immettere "flask" nel campo di ricerca e selezionare **pip install flask from PyPI**. Accettare le richieste relative ai privilegi di amministratore e osservare nella finestra **Output** di Visual Studio lo stato dell'operazione. (Un prompt dei comandi per l'elevazione dei privilegi viene visualizzato quando la cartella dei pacchetti per l'ambiente globale si trova all'interno di un'area protetta come *C:\Programmi*.)
 
@@ -105,7 +105,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
     ![Ambiente predefinito visualizzato in Esplora soluzioni](media/quickstart-python-02-default-environment-2019.png)
 
-2. Fare clic con il pulsante destro del mouse sull'ambiente e selezionare **Gestisci pacchetti Python...**. Questo comando apre la finestra **Ambienti Python** nella scheda **Pacchetti (PyPI).**
+2. Fare clic con il pulsante destro del mouse sull'ambiente e scegliere **Gestisci pacchetti Python.** Questo comando apre la finestra **ambienti Python** nella scheda **pacchetti (PyPI)** .
 
 3. Immettere "flask" nel campo di ricerca. Se **Flask** viene visualizzato sotto la casella di ricerca, è possibile ignorare questo passaggio. In caso contrario, selezionare **Esegui comando: pip install flask**. Accettare le richieste relative ai privilegi di amministratore e osservare nella finestra **Output** di Visual Studio lo stato dell'operazione. (Un prompt dei comandi per l'elevazione dei privilegi viene visualizzato quando la cartella dei pacchetti per l'ambiente globale si trova all'interno di un'area protetta come *C:\Programmi*.)
 
@@ -132,7 +132,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
 A questo punto si aggiunge un frammento di codice Python per implementare un'app Web elementare.
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e selezionare **Aggiungi > Nuovo elemento**.
+1. Fare clic con il pulsante destro del mouse sul progetto **Esplora soluzioni** e scegliere **Aggiungi > nuovo elemento**.
 
 1. Nella finestra di dialogo visualizzata selezionare **File Python vuoto**, assegnare al file il nome *app.py* e selezionare **Aggiungi**. Visual Studio apre automaticamente il file in una finestra dell'editor.
 
@@ -182,7 +182,7 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
 
 3. Selezionare **Debug > Avvia senza eseguire debug** (**CTRL**+**F5**) che consente di salvare le modifiche ai file ed esegue l'app.
 
-4. Viene visualizzata una finestra di comando con il messaggio **In esecuzione in https:\//localhost:4449**e verrà visualizzata una finestra del browser `localhost:4449` in cui viene visualizzato il messaggio "Hello, Python!" Nella finestra di comando viene visualizzata anche la richiesta GET con stato uguale a 200.
+4. Viene visualizzata una finestra di comando con il messaggio **in esecuzione in https: \/ /localhost: 4449**. una finestra del browser dovrebbe aprirsi `localhost:4449` dove viene visualizzato il messaggio "Hello, Python!" Nella finestra di comando viene visualizzata anche la richiesta GET con stato uguale a 200.
 
     Se il browser non si apre automaticamente, avviare un browser a scelta e passare a `localhost:4449`.
 

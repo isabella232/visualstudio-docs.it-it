@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS . Documenti Microsoft
+title: BP_LOCATION_CODE_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,10 +15,10 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: c215630e522adabdbd285e00d4bcd87cae22a931
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738033"
 ---
 # <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
@@ -35,9 +35,9 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 } BP_LOCATION_CODE_ADDRESS;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `bstrContext`\
-Contesto del punto di interruzione, in genere un nome di metodo o funzione come illustrato in uno stack di chiamate.
+Contesto del punto di interruzione, in genere un metodo o un nome di funzione come visualizzato in uno stack di chiamate.
 
 `bstrModuleUrl`\
 URL del modulo che contiene il punto di interruzione.
@@ -46,15 +46,15 @@ URL del modulo che contiene il punto di interruzione.
 Nome della funzione che contiene il punto di interruzione.
 
 `bstrAddress`\
-Indirizzo del punto di interruzione, analizzato da un analizzatore di espressioni per associarlo a un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto.
+Indirizzo del punto di interruzione, analizzato da un analizzatore di espressioni per associarlo a un oggetto [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'unione.
+Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

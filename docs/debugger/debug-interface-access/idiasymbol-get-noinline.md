@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74a2cd3daa2c1ca466b0e302c916a220fa31e7d0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462840"
 ---
 # <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
@@ -48,6 +48,6 @@ out Restituisce `TRUE` se la funzione dispone dell' `noinline` attributo; in cas
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [noinline](/cpp/cpp/noinline)
