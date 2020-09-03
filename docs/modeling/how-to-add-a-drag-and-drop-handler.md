@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545665"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: aggiungere un gestore di trascinamento della selezione
@@ -50,7 +50,7 @@ Nel nuovo file definire una classe parziale per la forma o la classe del diagram
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-Questo metodo viene chiamato se l'utente rilascia il pulsante del mouse mentre il puntatore del mouse viene posizionato sulla forma o sul diagramma, se `OnDragOver(DiagramDragEventArgs e)` in precedenza è stato impostato `e.Effect` su un valore diverso da `None` .
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -Questo metodo viene chiamato se l'utente rilascia il pulsante del mouse mentre il puntatore del mouse viene posizionato sulla forma o sul diagramma, se `OnDragOver(DiagramDragEventArgs e)` in precedenza è stato impostato `e.Effect` su un valore diverso da `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ Nel nuovo file definire una classe parziale per la forma o la classe del diagram
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-Questo metodo viene chiamato quando l'utente fa doppio clic sulla forma o sul diagramma.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -Questo metodo viene chiamato quando l'utente fa doppio clic sulla forma o sul diagramma.
 
      Per altre informazioni, vedere [procedura: intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -124,11 +124,11 @@ Quando l'utente trascina un elemento sul diagramma o da una parte del diagramma 
 
 Per individuare i formati in cui sono disponibili le informazioni sull'origine del trascinamento, eseguire il codice in modalità di debug, impostando un punto di interruzione all'inizio su `OnDragOver()` o `CanDragDrop()`. Esaminare i valori del parametro `DiagramDragEventArgs`. Le informazioni sono disponibili in due formati:
 
-- <xref:System.Windows.Forms.IDataObject>  `Data`-Questa proprietà contiene le versioni serializzate degli oggetti di origine, in genere in più di un formato. Le funzioni più utili sono:
+- <xref:System.Windows.Forms.IDataObject>  `Data` -Questa proprietà contiene le versioni serializzate degli oggetti di origine, in genere in più di un formato. Le funzioni più utili sono:
 
   - diagramEventArgs. Data. GetDataFormats (): elenca i formati in cui è possibile decodificare l'oggetto trascinato. Se, ad esempio, l'utente trascina un file dal desktop, i formati disponibili includono il nome file ("`FileNameW`").
 
-  - `diagramEventArgs.Data.GetData(format)`: Decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Ad esempio:
+  - `diagramEventArgs.Data.GetData(format)` : Decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Ad esempio:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ Per individuare i formati in cui sono disponibili le informazioni sull'origine d
 
      Per accettare forme UML, determinare i GUID delle classi di forme UML per esperimento. Tenere presente che in genere in ogni diagramma ci sono più tipi di elemento. Tenere anche presente che un oggetto trascinato da un diagramma DSL o UML è la forma, non l'elemento del modello.
 
-`DiagramDragEventArgs`dispone inoltre di proprietà che indicano la posizione corrente del puntatore del mouse e se l'utente preme i tasti CTRL, ALT o MAIUSC.
+`DiagramDragEventArgs` dispone inoltre di proprietà che indicano la posizione corrente del puntatore del mouse e se l'utente preme i tasti CTRL, ALT o MAIUSC.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Come ottenere l'originale di un elemento trascinato
 

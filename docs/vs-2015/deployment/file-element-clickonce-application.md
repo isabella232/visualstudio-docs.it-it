@@ -1,5 +1,5 @@
 ---
-title: '&lt;file&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento file (applicazione ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148770"
 ---
-# <a name="ltfilegt-element-clickonce-application"></a>&lt;file&gt; elemento (applicazione ClickOnce)
+# <a name="ltfilegt-element-clickonce-application"></a>&lt;&gt;elemento file (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identifica tutti i file scaricata e usata dall'applicazione.  
+Identifica tutti i file non di assembly scaricati e utilizzati dall'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -91,103 +91,103 @@ Identifica tutti i file scaricata e usata dall'applicazione.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`name`|Richiesto. Identifica il nome del file.|  
-|`size`|Richiesto. Specifica la dimensione, espressa in byte, del file.|  
-|`group`|Facoltativo, se il `optional` attributo viene omesso o impostato su `false`; se necessario `optional` è `true`. Il nome del gruppo a cui appartiene questo file. Il nome può essere qualsiasi valore di stringa Unicode scelta dallo sviluppatore e viene usato per il download dei file su richiesta con il <xref:System.Deployment.Application.ApplicationDeployment> classe.|  
-|`optional`|facoltativo. Specifica se il file deve essere download quando l'applicazione è la prima esecuzione, o se il file deve risiedere solo nel server fino a quando non viene richiesto dall'applicazione su richiesta. Se `false` o non definito, il file viene scaricato quando l'applicazione o della prima esecuzione installata. Se `true`, un `group` deve essere specificato per il manifesto dell'applicazione sia valido. `optional` non può essere true se `writeableType` viene specificato con il valore `applicationData`.|  
-|`writeableType`|facoltativo. Specifica che questo file è un file di dati. Attualmente, l'unico valore valido è `applicationData`.|  
+|`name`|Obbligatorio. Identifica il nome del file.|  
+|`size`|Obbligatorio. Specifica la dimensione, in byte, del file.|  
+|`group`|Facoltativo, se l' `optional` attributo non è specificato o impostato su `false` ; obbligatorio se `optional` è `true` . Nome del gruppo a cui appartiene il file. Il nome può essere qualsiasi valore stringa Unicode scelto dallo sviluppatore e viene usato per il download di file su richiesta con la <xref:System.Deployment.Application.ApplicationDeployment> classe.|  
+|`optional`|facoltativo. Specifica se il file deve essere scaricato quando l'applicazione viene eseguita per la prima volta o se il file deve risiedere solo sul server fino a quando l'applicazione lo richiede su richiesta. Se `false` o non definito, il file viene scaricato quando l'applicazione viene eseguita per la prima volta o installata. Se `true` , è `group` necessario specificare un oggetto affinché il manifesto dell'applicazione sia valido. `optional` non può essere true se `writeableType` viene specificato con il valore `applicationData` .|  
+|`writeableType`|facoltativo. Specifica che il file è un file di dati. Attualmente, l'unico valore valido è `applicationData`.|  
   
 ## <a name="typelib"></a>typelib  
- Il `typelib` elemento è un elemento figlio facoltativo dell'elemento file. L'elemento descrive la libreria dei tipi a cui appartiene il componente COM. L'elemento presenta gli attributi seguenti.  
+ L' `typelib` elemento è un elemento figlio facoltativo dell'elemento file. L'elemento descrive la libreria dei tipi che appartiene al componente COM. L'elemento presenta gli attributi seguenti.  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
-|`tlbid`|Richiesto. GUID assegnato alla libreria dei tipi.|  
-|`version`|Richiesto. Il numero di versione della libreria dei tipi.|  
-|`helpdir`|Richiesto. La directory che contiene i file della Guida per il componente. Potrebbe essere a lunghezza zero.|  
-|`resourceid`|facoltativo. Rappresentazione di stringa esadecimale dell'identificatore delle impostazioni locali (LCID). È uno a quattro cifre esadecimali senza il prefisso 0x e senza zeri iniziali. L'identificatore LCID può avere un identificatore di varietà di lingua neutra.|  
-|`flags`|facoltativo. La rappresentazione di stringa dei flag della libreria di tipo per questa libreria dei tipi. In particolare, deve essere uno dei "RESTRICTED", "Controllo", "HIDDEN" e "HASDISKIMAGE".|  
+|`tlbid`|Obbligatorio. GUID assegnato alla libreria dei tipi.|  
+|`version`|Obbligatorio. Numero di versione della libreria dei tipi.|  
+|`helpdir`|Obbligatorio. Directory che contiene i file della Guida per il componente. Può essere di lunghezza zero.|  
+|`resourceid`|facoltativo. Rappresentazione in forma di stringa esadecimale dell'identificatore delle impostazioni locali (LCID). Si tratta di una a quattro cifre esadecimali senza prefisso 0x e senza zeri iniziali. L'identificatore LCID può avere un identificatore di sottolingua neutro.|  
+|`flags`|facoltativo. Rappresentazione di stringa dei flag della libreria dei tipi per questa libreria dei tipi. In particolare, deve essere uno dei "Restricted", "CONTROL", "HIDDEN" e "HASDISKIMAGE".|  
   
 ## <a name="comclass"></a>comClass  
- Il `comClass` costituisce un elemento figlio facoltativo di `file` elemento, ma è obbligatorio se il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento presenta gli attributi seguenti.  
+ L' `comClass` elemento è un elemento figlio facoltativo dell' `file` elemento, ma è obbligatorio se l' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che intende distribuire utilizzando com senza registrazione. L'elemento presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`clsid`|Richiesto. L'ID di classe del componente COM espresso come GUID.|  
+|`clsid`|Obbligatorio. ID di classe del componente COM espresso come GUID.|  
 |`description`|facoltativo. Nome della classe.|  
-|`threadingModel`|facoltativo. Il modello di threading utilizzato dalle classi COM nel processo. Se questa proprietà è null, non viene utilizzato alcun modello di threading. Il componente viene creato nel thread principale del client e vengono effettuato il marshalling di chiamate da altri thread per questo thread. L'elenco seguente mostra i valori validi:<br /><br /> `Apartment`, `Free`, `Both`e `Neutral`.|  
+|`threadingModel`|facoltativo. Modello di threading utilizzato dalle classi COM in-process. Se questa proprietà è null, non viene utilizzato alcun modello di Threading. Il componente viene creato nel thread principale del client e viene effettuato il marshalling di chiamate da altri thread a questo thread. Nell'elenco seguente sono riportati i valori validi:<br /><br /> `Apartment`, `Free`, `Both` e `Neutral`.|  
 |`tlbid`|facoltativo. GUID della libreria dei tipi per il componente COM.|  
-|`progid`|facoltativo. Identificatore a livello di codice dipendente dalla versione associati al componente COM. Il formato di un `ProgID` è `<vendor>.<component>.<version>`.|  
-|`miscStatus`|facoltativo. I duplicati nell'assembly manifesto le informazioni fornite dal `MiscStatus` chiave del Registro di sistema. Se i valori per il `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint`, o `miscStatusThumbnail` gli attributi non vengono trovati, il corrispondente valore predefinito elencato nella `miscStatus` viene usato per gli attributi mancanti. Il valore può essere un elenco delimitato da virgole dei valori dell'attributo nella tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del Registro di sistema.|  
-|`miscStatusIcon`|facoltativo. I duplicati nell'assembly del manifesto le informazioni fornite da DVASPECT_ICON. Fornisce un'icona di un oggetto. Il valore può essere un elenco delimitato da virgole dei valori dell'attributo nella tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede `Miscstatus` valori di chiave del Registro di sistema.|  
-|`miscStatusContent`|facoltativo. I duplicati nell'assembly del manifesto le informazioni fornite da DVASPECT_CONTENT. È possibile fornire un documento composito visualizzabile per un monitor o una stampante. Il valore può essere un elenco delimitato da virgole dei valori dell'attributo nella tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del Registro di sistema.|  
-|`miscStatusDocPrint`|facoltativo. I duplicati nell'assembly del manifesto le informazioni fornite da DVASPECT_DOCPRINT. Fornisce una rappresentazione di oggetto visualizzabile sullo schermo come se inviato a una stampante. Il valore può essere un elenco delimitato da virgole dei valori dell'attributo nella tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del Registro di sistema.|  
-|`miscStatusThumbnail`|facoltativo. I duplicati in un assembly manifesto le informazioni fornite da DVASPECT_THUMBNAIL. Fornisce un'anteprima di un oggetto visualizzabile in uno strumento di esplorazione. Il valore può essere un elenco delimitato da virgole dei valori dell'attributo nella tabella seguente. È possibile usare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del Registro di sistema.|  
+|`progid`|facoltativo. Identificatore a livello di codice dipendente dalla versione associato al componente COM. Il formato di un oggetto `ProgID` è `<vendor>.<component>.<version>` .|  
+|`miscStatus`|facoltativo. I duplicati nell'assembly manifesteranno le informazioni fornite dalla `MiscStatus` chiave del registro di sistema. Se i valori degli `miscStatusIcon` `miscStatusContent` attributi,, `miscStatusDocprint` o `miscStatusThumbnail` non vengono trovati, `miscStatus` per gli attributi mancanti viene usato il valore predefinito corrispondente elencato in. Il valore può essere un elenco delimitato da virgole dei valori di attributo della tabella seguente. È possibile utilizzare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del registro di sistema.|  
+|`miscStatusIcon`|facoltativo. Duplicati nel manifesto dell'assembly le informazioni fornite da DVASPECT_ICON. Può fornire un'icona di un oggetto. Il valore può essere un elenco delimitato da virgole dei valori di attributo della tabella seguente. È possibile utilizzare questo attributo se la classe COM è una classe OCX che richiede `Miscstatus` valori di chiave del registro di sistema.|  
+|`miscStatusContent`|facoltativo. Duplicati nel manifesto dell'assembly le informazioni fornite da DVASPECT_CONTENT. Può fornire un documento composito visualizzabile per una schermata o una stampante. Il valore può essere un elenco delimitato da virgole dei valori di attributo della tabella seguente. È possibile utilizzare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del registro di sistema.|  
+|`miscStatusDocPrint`|facoltativo. Duplicati nel manifesto dell'assembly le informazioni fornite da DVASPECT_DOCPRINT. Può fornire una rappresentazione dell'oggetto visualizzabile sullo schermo come se fosse stampata su una stampante. Il valore può essere un elenco delimitato da virgole dei valori di attributo della tabella seguente. È possibile utilizzare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del registro di sistema.|  
+|`miscStatusThumbnail`|facoltativo. Duplicati nel manifesto di un assembly le informazioni fornite da DVASPECT_THUMBNAIL. Può fornire un'anteprima di un oggetto visualizzabile in uno strumento di esplorazione. Il valore può essere un elenco delimitato da virgole dei valori di attributo della tabella seguente. È possibile utilizzare questo attributo se la classe COM è una classe OCX che richiede `MiscStatus` valori di chiave del registro di sistema.|  
   
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub  
- Il `comInterfaceExternalProxyStub` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento contiene gli attributi seguenti.  
+ L' `comInterfaceExternalProxyStub` elemento è un elemento figlio facoltativo dell' `file` elemento, ma può essere necessario se l' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che intende distribuire utilizzando com senza registrazione. L'elemento contiene gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`iid`|Richiesto. L'ID interfaccia (IID) che verrà servita da questo proxy. IID deve avere tra parentesi quadre.|  
-|`baseInterface`|facoltativo. IID dell'interfaccia da cui l'interfaccia fa `iid` è derivato.|  
-|`numMethods`|facoltativo. Il numero di metodi implementati dall'interfaccia.|  
-|`name`|facoltativo. Il nome dell'interfaccia che verrà visualizzato nel codice.|  
-|`tlbid`|facoltativo. La libreria dei tipi che contiene la descrizione dell'interfaccia specificata per il `iid` attributo.|  
-|`proxyStubClass32`|facoltativo. Esegue il mapping di un IID a un CLSID nelle DLL proxy a 32 bit.|  
+|`iid`|Obbligatorio. ID di interfaccia (IID) servito dal proxy. L'IID deve contenere parentesi graffe.|  
+|`baseInterface`|facoltativo. IID dell'interfaccia da cui deriva l'interfaccia a cui fa riferimento `iid` .|  
+|`numMethods`|facoltativo. Numero di metodi implementati dall'interfaccia.|  
+|`name`|facoltativo. Nome dell'interfaccia come verrà visualizzato nel codice.|  
+|`tlbid`|facoltativo. Libreria dei tipi che contiene la descrizione dell'interfaccia specificata dall' `iid` attributo.|  
+|`proxyStubClass32`|facoltativo. Esegue il mapping di un IID a un CLSID in DLL proxy a 32 bit.|  
   
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
- Il `comInterfaceProxyStub` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento contiene gli attributi seguenti.  
+ L' `comInterfaceProxyStub` elemento è un elemento figlio facoltativo dell' `file` elemento, ma può essere necessario se l' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che intende distribuire utilizzando com senza registrazione. L'elemento contiene gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`iid`|Richiesto. L'ID interfaccia (IID) che verrà servita da questo proxy. IID deve avere tra parentesi quadre.|  
-|`baseInterface`|facoltativo. IID dell'interfaccia da cui l'interfaccia fa `iid` è derivato.|  
-|`numMethods`|facoltativo. Il numero di metodi implementati dall'interfaccia.|  
-|`Name`|facoltativo. Il nome dell'interfaccia che verrà visualizzato nel codice.|  
-|`Tlbid`|facoltativo. La libreria dei tipi che contiene la descrizione dell'interfaccia specificata per il `iid` attributo.|  
-|`proxyStubClass32`|facoltativo. Esegue il mapping di un IID a un CLSID nelle DLL proxy a 32 bit.|  
-|`threadingModel`|facoltativo. facoltativo. Il modello di threading utilizzato dalle classi COM nel processo. Se questa proprietà è null, non viene utilizzato alcun modello di threading. Il componente viene creato nel thread principale del client e vengono effettuato il marshalling di chiamate da altri thread per questo thread. L'elenco seguente mostra i valori validi:<br /><br /> `Apartment`, `Free`, `Both`e `Neutral`.|  
+|`iid`|Obbligatorio. ID di interfaccia (IID) servito dal proxy. L'IID deve contenere parentesi graffe.|  
+|`baseInterface`|facoltativo. IID dell'interfaccia da cui deriva l'interfaccia a cui fa riferimento `iid` .|  
+|`numMethods`|facoltativo. Numero di metodi implementati dall'interfaccia.|  
+|`Name`|facoltativo. Nome dell'interfaccia come verrà visualizzato nel codice.|  
+|`Tlbid`|facoltativo. Libreria dei tipi che contiene la descrizione dell'interfaccia specificata dall' `iid` attributo.|  
+|`proxyStubClass32`|facoltativo. Esegue il mapping di un IID a un CLSID in DLL proxy a 32 bit.|  
+|`threadingModel`|facoltativo. facoltativo. Modello di threading utilizzato dalle classi COM in-process. Se questa proprietà è null, non viene utilizzato alcun modello di Threading. Il componente viene creato nel thread principale del client e viene effettuato il marshalling di chiamate da altri thread a questo thread. Nell'elenco seguente sono riportati i valori validi:<br /><br /> `Apartment`, `Free`, `Both` e `Neutral`.|  
   
 ## <a name="windowclass"></a>windowClass  
- Il `windowClass` costituisce un elemento figlio facoltativo di `file` elemento, ma potrebbe essere necessario se il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che si desidera distribuire mediante COM senza registrazione. L'elemento fa riferimento a una classe di finestra definita dal componente COM che deve essere installata una versione applicato. L'elemento contiene gli attributi seguenti.  
+ L' `windowClass` elemento è un elemento figlio facoltativo dell' `file` elemento, ma può essere necessario se l' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione contiene un componente COM che intende distribuire utilizzando com senza registrazione. L'elemento fa riferimento a una classe di finestra definita dal componente COM a cui è necessario applicare una versione. L'elemento contiene gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`versioned`|facoltativo. Controlla se la finestra interna classe nome usato nella registrazione contiene la versione dell'assembly che contiene la classe della finestra. Il valore di questo attributo può essere `yes` o `no`. Il valore predefinito è `yes`. Il valore `no` deve essere utilizzato solo se la stessa classe della finestra è definita da un componente side-by-side ed un'equivalente non-side-by-side e si desidera trattarli come la classe della finestra stessa. Si noti che si applicano le regole normali sulla registrazione delle classi di finestra, ovvero solo il primo componente che registra la classe di finestra saranno in grado di registrare, perché non dispone di una versione applicata.|  
+|`versioned`|Facoltativa. Controlla se il nome della classe interna della finestra utilizzato nella registrazione contiene la versione dell'assembly che contiene la classe della finestra. Il valore di questo attributo può essere `yes` o `no` . Il valore predefinito è `yes`. Il valore `no` deve essere usato solo se la stessa classe di finestra è definita da un componente affiancato e da un componente non affiancato equivalente e si desidera considerarli come la stessa classe di finestra. Si noti che le normali regole relative alla registrazione della classe di finestra sono valide. solo il primo componente che registra la classe di finestra sarà in grado di registrarlo, perché non è stata applicata una versione.|  
   
 ## <a name="hash"></a>hash  
- Il `hash` costituisce un elemento figlio facoltativo di `file` elemento. L'elemento `hash` non ha attributi.  
+ L' `hash` elemento è un elemento figlio facoltativo dell' `file` elemento. L'elemento `hash` non ha attributi.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza, per assicurarsi che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non è incluso, questo controllo non verrà eseguito. Pertanto, l'omissione di `hash` elemento non è consigliato.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Usa un hash algoritmico di tutti i file di un'applicazione come controllo di sicurezza, per garantire che nessuno dei file sia stato modificato dopo la distribuzione. Se l' `hash` elemento non è incluso, questo controllo non verrà eseguito. Non è pertanto consigliabile omettere l' `hash` elemento.  
   
- Se un manifesto contiene un file che non è stato eseguito l'hashing, tale manifesto non può essere digitale firmato, perché gli utenti non è possibile verificare il contenuto di un file senza hash.  
+ Se un manifesto contiene un file di cui non è stato eseguito l'hashing, il manifesto non può essere firmato digitalmente, perché gli utenti non possono verificare il contenuto di un file senza hash.  
   
 ## <a name="dsigtransforms"></a>dsig:Transforms  
- Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:Transforms` non ha attributi.  
+ L' `dsig:Transforms` elemento è un figlio obbligatorio dell' `hash` elemento. L'elemento `dsig:Transforms` non ha attributi.  
   
 ## <a name="dsigtransform"></a>dsig:Transform  
- Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.  
+ L' `dsig:Transform` elemento è un figlio obbligatorio dell' `dsig:Transforms` elemento. L'elemento `dsig:Transform` presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+|`Algorithm`|Algoritmo utilizzato per calcolare il digest per il file. Attualmente l'unico valore utilizzato da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity` .|  
   
 ## <a name="dsigdigestmethod"></a>dsig: DigestMethod  
- Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestMethod` presenta gli attributi seguenti.  
+ L' `dsig:DigestMethod` elemento è un figlio obbligatorio dell' `hash` elemento. L'elemento `dsig:DigestMethod` presenta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+|`Algorithm`|Algoritmo utilizzato per calcolare il digest per il file. Attualmente l'unico valore utilizzato da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1` .|  
   
-## <a name="dsigdigestvalue"></a>dsig:  
- Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
+## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+ L' `dsig:DigestValue` elemento è un figlio obbligatorio dell' `hash` elemento. L'elemento `dsig:DigestValue` non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
   
-## <a name="remarks"></a>Note  
- Questo elemento identifica tutti gli i file che costituiscono l'applicazione e, in particolare, i valori hash per la verifica dei file. Questo elemento può includere anche i dati sull'isolamento modello COM (Component Object) associati al file. Se viene modificato un file, file manifesto dell'applicazione deve inoltre essere aggiornato per riflettere la modifica.  
+## <a name="remarks"></a>Osservazioni  
+ Questo elemento identifica tutti i file non di assembly che costituiscono l'applicazione e, in particolare, i valori hash per la verifica dei file. Questo elemento può includere anche Component Object Model dati di isolamento (COM) associati al file. Se un file viene modificato, è necessario aggiornare anche il file manifesto dell'applicazione in modo da riflettere la modifica.  
   
 ## <a name="example"></a>Esempio  
- L'esempio di codice seguente illustra `file` elementi in un'applicazione del manifesto per un'applicazione distribuita usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+ Nell'esempio di codice seguente vengono illustrati `file` gli elementi in un manifesto dell'applicazione per un'applicazione distribuita tramite [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
 ```  
 <file name="Icon.ico" size="9216">  
@@ -202,4 +202,4 @@ Identifica tutti i file scaricata e usata dall'applicazione.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

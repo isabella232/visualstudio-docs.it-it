@@ -1,32 +1,32 @@
 ---
 title: Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
-ms.date: 03/17/2020
+ms.date: 09/02/2020
 ms.topic: reference
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
 - language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 41d183a757aefd198c282ec84cd6cbe0ef37c933
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f383b173e012a7836d67a916ad9c16132e984602
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508953"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402283"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
-È possibile definire e mantenere uno stile di codice coerente nella codebase utilizzando un file [EditorConfig.You](../ide/create-portable-custom-editor-options.md) can define and maintain consistent code style in your codebase by using an EditorConfig file. EditorConfig include diverse proprietà di formattazione di base, ad esempio `indent_style` e `indent_size`. In Visual Studio è possibile configurare le impostazioni delle convenzioni per la scrittura del codice .NET anche usando un file EditorConfig. È possibile abilitare o disabilitare singole convenzioni per la scrittura del codice .NET e di configurare il livello in base al quale applicare ogni regola tramite un livello di gravità.
+È possibile definire e mantenere uno stile di codice coerente nella codebase usando un file [EditorConfig](../ide/create-portable-custom-editor-options.md) . EditorConfig include diverse proprietà di formattazione di base, ad esempio `indent_style` e `indent_size`. In Visual Studio è possibile configurare le impostazioni delle convenzioni per la scrittura del codice .NET anche usando un file EditorConfig. È possibile abilitare o disabilitare singole convenzioni per la scrittura del codice .NET e di configurare il livello in base al quale applicare ogni regola tramite un livello di gravità.
 
 > [!TIP]
-> - Quando si definiscono convenzioni di codifica in un file EditorConfig, si configura la modalità di configurazione degli [analizzatori](../code-quality/roslyn-analyzers-overview.md) di stili di codice incorporati in Visual Studio per analizzare il codice. Il file EditorConfig è il file di configurazione per questi analizzatori.
-> - Le preferenze di stile per il codice di Visual Studio si possono impostate anche nella finestra di dialogo [Opzioni dell'editor di testo](code-styles-and-code-cleanup.md). Tuttavia, le impostazioni EditorConfig hanno la precedenza e le preferenze impostate in **Opzioni** non sono associate a un particolare progetto.
+> - Quando si definiscono le convenzioni di codifica in un file EditorConfig, si sta configurando come si desidera che gli [analizzatori di stile del codice](../code-quality/roslyn-analyzers-overview.md) incorporati in Visual Studio analizzino il codice. Il file EditorConfig è il file di configurazione per questi analizzatori.
+> - Le preferenze di stile per il codice di Visual Studio si possono impostate anche nella finestra di dialogo [Opzioni dell'editor di testo](code-styles-and-code-cleanup.md). Tuttavia, le impostazioni di EditorConfig hanno la precedenza e le preferenze impostate nelle **Opzioni** non sono associate a un progetto specifico.
 
 ## <a name="convention-categories"></a>Categorie di convenzioni
 
@@ -46,7 +46,7 @@ Esistono tre categorie di convenzioni per la scrittura del codice .NET supportat
 
 ## <a name="example-editorconfig-file"></a>Esempio di file EditorConfig
 
-Per aiutarti a iniziare, ecco un esempio di file *.editorconfig* con le opzioni predefinite. In Visual Studio, è possibile generare questo file e salvarlo in un progetto in **Strumenti** > **Opzioni** > **Editor di testo** > [ C **'** o **Basic**] > **Code Style** > **General**. Quindi, fare clic sul **pulsante Genera file .editorconfig dalle impostazioni** . Per ulteriori informazioni, consultate [Preferenze stile codice](code-styles-and-code-cleanup.md).
+Per iniziare, di seguito è riportato un file con *estensione EditorConfig* con le opzioni predefinite. In Visual Studio è possibile generare questo file e salvarlo in un progetto in **strumenti**  >  **Opzioni**  >  **editor di testo** > [**C#** o **Basic**] > **stile di codice**  >  **generale**. Fare quindi clic sul pulsante **genera il file con estensione EditorConfig da impostazioni** . Per altre informazioni, vedere [Preferenze di stile del codice](code-styles-and-code-cleanup.md).
 
 ```ini
 # Remove the line below if you want to inherit .editorconfig settings from higher directories
@@ -71,6 +71,7 @@ insert_final_newline = false
 # Organize usings
 dotnet_separate_import_directive_groups = false
 dotnet_sort_system_directives_first = false
+file_header_template = unset
 
 # this. and Me. preferences
 dotnet_style_qualification_for_event = false:silent
@@ -97,6 +98,7 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_object_initializer = true:suggestion
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
 dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_compound_assignment = true:suggestion
 dotnet_style_prefer_conditional_expression_over_assignment = true:silent
@@ -104,6 +106,7 @@ dotnet_style_prefer_conditional_expression_over_return = true:silent
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
 dotnet_style_prefer_simplified_interpolation = true:suggestion
 
 # Field preferences
@@ -111,6 +114,9 @@ dotnet_style_readonly_field = true:suggestion
 
 # Parameter preferences
 dotnet_code_quality_unused_parameters = all:suggestion
+
+# Suppression preferences
+dotnet_remove_unnecessary_suppression_exclusions = none
 
 #### C# Coding Conventions ####
 
@@ -132,6 +138,8 @@ csharp_style_expression_bodied_properties = true:silent
 # Pattern matching preferences
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_prefer_not_pattern = true:suggestion
+csharp_style_prefer_pattern_matching = true:silent
 csharp_style_prefer_switch_expression = true:suggestion
 
 # Null-checking preferences
@@ -157,7 +165,7 @@ csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 csharp_style_unused_value_expression_statement_preference = discard_variable:silent
 
 # 'using' directive preferences
-csharp_using_directive_placement = outside_namespace:silent
+csharp_using_directive_placement = inside_namespace:silent
 
 #### C# Formatting Rules ####
 
@@ -226,35 +234,36 @@ dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
 
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.interface.required_modifiers =
+dotnet_naming_symbols.interface.required_modifiers = 
 
 dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
 dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.types.required_modifiers =
+dotnet_naming_symbols.types.required_modifiers = 
 
 dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
 dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.non_field_members.required_modifiers =
+dotnet_naming_symbols.non_field_members.required_modifiers = 
 
 # Naming styles
 
-dotnet_naming_style.pascal_case.required_prefix =
-dotnet_naming_style.pascal_case.required_suffix =
-dotnet_naming_style.pascal_case.word_separator =
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
 dotnet_naming_style.pascal_case.capitalization = pascal_case
 
 dotnet_naming_style.begins_with_i.required_prefix = I
-dotnet_naming_style.begins_with_i.required_suffix =
-dotnet_naming_style.begins_with_i.word_separator =
+dotnet_naming_style.begins_with_i.required_suffix = 
+dotnet_naming_style.begins_with_i.word_separator = 
 dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
 ```
 
 > [!NOTE]
-> Per ulteriori informazioni sulle categorie di convenzioni di codifica .NET supportate, vedere le pagine [Convenzioni relative](../ide/editorconfig-language-conventions.md)alla lingua, [Formattazione](../ide/editorconfig-formatting-conventions.md)e Convenzioni di [denominazione.](../ide/editorconfig-naming-conventions.md)
+> Per ulteriori informazioni sulle categorie della convenzione di codifica .NET supportate, vedere le pagine relative alle convenzioni del [linguaggio](../ide/editorconfig-language-conventions.md), alle convenzioni di [formattazione](../ide/editorconfig-formatting-conventions.md)e alle [convenzioni di denominazione](../ide/editorconfig-naming-conventions.md) .
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Azioni rapide](../ide/quick-actions.md)
 - [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
-- [File di piattaforma del compilatore .NET "Roslyn" .editorconfig](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
-- [File .editorconfig di Platform Runtime del compilatore .NET](https://github.com/dotnet/runtime/blob/master/.editorconfig)
+- [.NET Compiler Platform file "Roslyn". EditorConfig](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [File .NET Compiler Platform Runtime. EditorConfig](https://github.com/dotnet/runtime/blob/master/.editorconfig)

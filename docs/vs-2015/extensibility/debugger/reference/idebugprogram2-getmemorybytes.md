@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetMemoryBytes | Microsoft Docs
+title: 'IDebugProgram2:: GetMemoryBytes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f4c160799a48e7c548425ed18809bbf9cb381ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148679"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
@@ -40,13 +40,13 @@ int GetMemoryBytes( 
   
 #### <a name="parameters"></a>Parametri  
  `ppMemoryBytes`  
- [out] Restituisce un [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) oggetto che rappresenta i byte di memoria del programma.  
+ out Restituisce un oggetto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) che rappresenta i byte di memoria del programma.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- I byte di memoria come rappresentata dai [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) oggetto è per l'immagine del programma in memoria e non la memoria allocata quando è stato eseguito il programma.  
+## <a name="remarks"></a>Osservazioni  
+ I byte di memoria rappresentati dall'oggetto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) sono per l'immagine del programma in memoria e non per la memoria allocata al momento dell'esecuzione del programma.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

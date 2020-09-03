@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826182"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
@@ -41,17 +41,17 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
 - [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
-- [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [GetDirectoryNameOfFileAbove MSBuild](#BKMK_GetDirectoryNameOfFileAbove)  
   
-- [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
+- [GetRegistryValue MSBuild](#BKMK_GetRegistryValue)  
   
-- [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
+- [GetRegistryValueFromView MSBuild](#BKMK_GetRegistryValueFromView)  
   
 - [MSBuild MakeRelative](#BKMK_MakeRelative)  
   
-- [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
+- [ValueOrDefault MSBuild](#BKMK_ValueOrDefault)  
   
-## <a name="BKMK_Syntax"></a> Sintassi delle funzioni di proprietà  
+## <a name="property-function-syntax"></a><a name="BKMK_Syntax"></a> Sintassi delle funzioni di proprietà  
  Di seguito sono elencati tre tipi di funzioni di proprietà. Ogni funzione presenta una sintassi diversa:  
   
 - Funzioni di proprietà stringa (istanza)  
@@ -60,12 +60,12 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
 - Funzioni di proprietà MSBuild  
   
-### <a name="BKMK_String"></a> Funzioni di proprietà stringa  
+### <a name="string-property-functions"></a><a name="BKMK_String"></a> Funzioni di proprietà stringa  
  Tutti i valori delle proprietà di compilazione sono soltanto valori stringa. Per agire su qualsiasi valore di proprietà è possibile usare i metodi stringa (istanza). Ad esempio, è possibile estrarre il nome di unità, ovvero i primi tre caratteri, da una proprietà di compilazione che rappresenta un percorso completo con questo codice:  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-### <a name="BKMK_Static"></a> Funzioni di proprietà statiche  
+### <a name="static-property-functions"></a><a name="BKMK_Static"></a> Funzioni di proprietà statiche  
  Nello script di compilazione è possibile accedere alle proprietà e ai metodi statici di molte classi di sistema. Per ottenere il valore di una proprietà statica, usare la sintassi seguente, dove *Class* è il nome della classe di sistema e *Property* è il nome della proprietà.  
   
  `$([Class]::Property)`  
@@ -74,7 +74,7 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
  `<Today>$([System.DateTime]::Now)</Today>`  
   
- Per chiamare un metodo statico, usare la sintassi seguente, dove *Class* è il nome della classe di sistema, *Method* è il nome del metodo e *(Parameters)* è l'elenco di parametri del metodo:  
+ Per chiamare un metodo statico, usare la sintassi seguente, dove *Class* è il nome della classe di sistema, *Method* è il nome del metodo e *(Parameters)* è l'elenco di parametri per il metodo:  
   
  `$([Class]::Method(Parameters))`  
   
@@ -166,8 +166,8 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
 - System.IO.File::ReadAllText  
   
-### <a name="BKMK_InstanceMethods"></a> Chiamata di metodi di istanza su proprietà statiche  
- Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza usare la sintassi seguente, dove *Class* è il nome della classe di sistema, *Property* è il nome della proprietà, *Method* è il nome del metodo e *(Parameters)* è l'elenco di parametri del metodo:  
+### <a name="calling-instance-methods-on-static-properties"></a><a name="BKMK_InstanceMethods"></a> Chiamata di metodi di istanza su proprietà statiche  
+ Se si accede a una proprietà statica che restituisce un'istanza di un oggetto, è possibile richiamare i metodi di istanza di tale oggetto. Per richiamare un metodo di istanza, usare la sintassi seguente, dove *Class* è il nome della classe di sistema, *Property* è il nome della proprietà, *Method* è il nome del metodo e *(Parameters)* è l'elenco di parametri per il metodo:  
   
  `$([Class]::Property.Method(Parameters))`  
   
@@ -177,8 +177,8 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-### <a name="BKMK_PropertyFunctions"></a> Funzioni di proprietà MSBuild  
- È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. Per accedere a questi metodi usare la sintassi seguente, dove *Method* è il nome del metodo e *Parameters* è l'elenco di parametri del metodo.  
+### <a name="msbuild-property-functions"></a><a name="BKMK_PropertyFunctions"></a> Funzioni di proprietà MSBuild  
+ È possibile accedere a diversi metodi statici nella compilazione per supportare funzionalità aritmetiche, operazioni logiche bit per bit nonché la gestione dei caratteri di escape. Per accedere a questi metodi, usare la sintassi seguente, dove *Method* è il nome del metodo e *Parameters* è l'elenco di parametri per il metodo.  
   
  `$([MSBuild]::Method(Parameters))`  
   
@@ -188,7 +188,7 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
  Di seguito è riportato un elenco di funzioni di proprietà MSBuild:  
   
-|Firma funzione|DESCRIZIONE|  
+|Firma funzione|Descrizione|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Esegue l'addizione di due valori Double.|  
 |long Add(long a, long b)|Esegue l'addizione di due valori Long.|  
@@ -207,7 +207,7 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
 |int BitwiseXor(int first, int second)|Esegue un'operazione `XOR` bit per bit tra il primo e il secondo valore (primo ^ secondo).|  
 |int BitwiseNot(int first)|Esegue un'operazione `NOT` bit per bit (~primo).|  
   
-## <a name="BKMK_Nested"></a> Funzioni di proprietà annidate  
+## <a name="nested-property-functions"></a><a name="BKMK_Nested"></a> Funzioni di proprietà annidate  
  È possibile combinare le funzioni di proprietà per formare funzioni più complesse, come mostrato nell'esempio seguente.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,7 +216,7 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
  Nelle funzioni di proprietà annidate è possibile specificare anche i metadati. Per altre informazioni, vedere [Batch](../msbuild/msbuild-batching.md).  
   
-## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="msbuild-doestaskhostexist"></a><a name="BKMK_DoesTaskHostExist"></a> DoesTaskHostExist MSBuild  
  La funzione di proprietà `DoesTaskHostExist` in MSBuild restituisce un valore che indica se un host attività è attualmente installato per i valori di architettura e runtime specificati.  
   
  Questa funzione di proprietà presenta la seguente sintassi:  
@@ -225,7 +225,7 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="msbuild-getdirectorynameoffileabove"></a><a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  La funzione di proprietà MSBuild `GetDirectoryNameOfFileAbove` cerca un file nelle directory al di sopra della directory corrente nel percorso.  
   
  Questa funzione di proprietà presenta la seguente sintassi:  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="msbuild-getregistryvalue"></a><a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  La funzione di proprietà MSBuild `GetRegistryValue` restituisce il valore di una chiave del Registro di sistema. Questa funzione accetta due argomenti, il nome della chiave e il nome del valore e restituisce il valore dal Registro di sistema. Se non si specifica un nome del valore, viene restituito il valore predefinito.  
   
  Gli esempi seguenti mostrano come viene usata questa funzione:  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="msbuild-getregistryvaluefromview"></a><a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  La funzione di proprietà MSBuild `GetRegistryValueFromView` ottiene i dati del Registro di sistema in base alla chiave e al valore del Registro di sistema forniti, nonché a una o più visualizzazioni ordinate del Registro di sistema. La chiave e il valore vengono cercati in ogni visualizzazione del Registro di sistema in ordine, finché non vengono trovati.  
   
  Di seguito è indicata la sintassi per la funzione della proprietà:  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  Ottiene i dati SLRuntimeInstallPath della chiave ReferenceAssemblies, cercandoli in primo luogo nella visualizzazione del Registro di sistema a 64 bit, quindi in quella a 32 bit.  
   
-## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="msbuild-makerelative"></a><a name="BKMK_MakeRelative"></a> MakeRelative MSBuild  
  La funzione di proprietà MSBuild `MakeRelative` restituisce il percorso relativo del secondo percorso relativo al primo percorso. Ogni percorso può essere un file o una cartella.  
   
  Questa funzione di proprietà presenta la seguente sintassi:  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="msbuild-valueordefault"></a><a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  La funzione di proprietà MSBuild `ValueOrDefault` restituisce il primo argomento, a meno che non sia null o vuoto. Se il primo argomento è null o vuoto, la funzione restituisce il secondo argomento.  
   
  Gli esempi seguenti mostrano come viene usata questa funzione.  

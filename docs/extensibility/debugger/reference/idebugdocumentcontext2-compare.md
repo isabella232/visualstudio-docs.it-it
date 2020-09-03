@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Compare Documenti Microsoft
+title: 'IDebugDocumentContext2:: compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0e46f765c8e4c0e12c3bb9447e0713919fae7b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731887"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
-Confronta questo contesto del documento con una matrice specificata di contesti del documento.
+Confronta questo contesto del documento con una matrice specificata di contesti di documento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,22 +47,22 @@ int Compare( 
 
 ## <a name="parameters"></a>Parametri
 `compare`\
-[in] Valore dell'enumerazione [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) che specifica il tipo di confronto.
+in Valore dell'enumerazione [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) che specifica il tipo di confronto.
 
 `rgpDocContextSet`\
-[in] Matrice di [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) oggetti che rappresentano i contesti del documento confrontati.
+in Matrice di oggetti [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) che rappresentano i contesti di documento confrontati con.
 
 `dwDocContextSetLen`\
-[in] Lunghezza della matrice di contesti di documento da confrontare.
+in Lunghezza della matrice dei contesti di documento da confrontare.
 
 `pdwDocContext`\
-[fuori] Restituisce l'indice nella `rgpDocContextSet` matrice del primo contesto del documento che soddisfa il confronto.
+out Restituisce l'indice nella `rgpDocContextSet` matrice del primo contesto del documento che soddisfa il confronto.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK` se è stata trovata una corrispondenza. Restituisce `S_FALSE` se non è stata trovata alcuna corrispondenza. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Gli oggetti [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) passati nella matrice devono essere implementati `IDebugDocumentContext2` dallo stesso motore di debug che implementa l'oggetto su cui viene chiamato; in caso contrario, il confronto non è valido.
+ Gli oggetti [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) passati nella matrice devono essere implementati dallo stesso motore di debug che implementa l' `IDebugDocumentContext2` oggetto su cui viene chiamato il metodo; in caso contrario, il confronto non è valido.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

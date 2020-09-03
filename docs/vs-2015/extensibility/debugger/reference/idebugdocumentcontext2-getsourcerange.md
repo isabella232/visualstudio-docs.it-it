@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetSourceRange | Microsoft Docs
+title: 'IDebugDocumentContext2:: GetSourceRange | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bcec6af2b8e7b1acfdc9c3cf38cb18654be78c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145010"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene l'intervallo di codice sorgente del contesto di documento.  
+Ottiene l'intervallo di codice sorgente di questo contesto del documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,18 +42,18 @@ int GetSourceRange( 
   
 #### <a name="parameters"></a>Parametri  
  `pBegPosition`  
- [in, out] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura compilata con la posizione iniziale. Impostare questo argomento con un valore null se questa informazione non è necessaria.  
+ [in, out] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) compilata con la posizione iniziale. Se queste informazioni non sono necessarie, impostare questo argomento su un valore null.  
   
  `pEndPosition`  
- [in, out] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura compilata con la posizione finale. Impostare questo argomento con un valore null se questa informazione non è necessaria.  
+ [in, out] Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) compilata con la posizione finale. Se queste informazioni non sono necessarie, impostare questo argomento su un valore null.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Un intervallo di origine è l'intero intervallo del codice sorgente, dall'oggetto istruzione corrente a subito dopo l'istruzione precedente che ha contribuito con codice. L'intervallo di origine è in genere usato per la combinazione di istruzioni di origine, inclusi i commenti, con il codice nella finestra disassembly.  
+## <a name="remarks"></a>Osservazioni  
+ Un intervallo di origine è l'intero intervallo di codice sorgente, dall'istruzione corrente di nuovo a subito dopo l'istruzione precedente che ha fornito il codice. L'intervallo di origine viene in genere usato per combinare le istruzioni di origine, inclusi i commenti, con il codice nella finestra Disassembly.  
   
- Per ottenere l'intervallo per solo le istruzioni di codice contenute in questo contesto di documento, chiamare il [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) (metodo).  
+ Per ottenere l'intervallo solo per le istruzioni di codice contenute in questo contesto del documento, chiamare il metodo [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

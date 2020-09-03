@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetName | Microsoft Docs
+title: 'IDebugDocumentContext2:: GetName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1186b3b7d821be6861b992dfc6f2b744e8f722e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144941"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ottiene il nome visualizzabile del documento che contiene il contesto di questo documento.  
+Ottiene il nome visualizzabile del documento che contiene questo contesto del documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,19 +42,19 @@ int GetName( 
   
 #### <a name="parameters"></a>Parametri  
  `gnType`  
- [in] Un valore compreso il [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumerazione che specifica il tipo del nome da restituire.  
+ in Valore dell'enumerazione [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) che specifica il tipo di nome da restituire.  
   
  `pbstrFileName`  
  [out] Restituisce il nome del file.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo in genere inoltra la chiamata per il [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) (metodo), a meno che il contesto del documento è scritto per archiviare il nome del documento stesso (come il programma di esempio).  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo in genere trasmette la chiamata al metodo [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) , a meno che il contesto del documento non venga scritto per archiviare il nome del documento stesso (come illustrato nell'esempio).  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un semplice `CDebugContext` oggetto che espone il [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un `CDebugContext` oggetto semplice che espone l'interfaccia [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .  
   
 ```cpp#  
 HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)    

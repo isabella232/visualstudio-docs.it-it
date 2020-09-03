@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161347"
 ---
 # <a name="special-characters-to-escape"></a>Caratteri speciali di escape
@@ -40,11 +40,11 @@ I caratteri speciali devono essere preceduto da un carattere di escape solo se h
 |@|Chiocciola, usata per fare riferimento agli elenchi di elementi.|  
 |(|Parentesi di apertura, usata negli elenchi.|  
 |)|Parentesi di chiusura, usata negli elenchi.|  
-|`|Apostrofo o segno di graduazione, usato in condizioni e in altre espressioni.|  
+|`|Apostrofo o segno di graduazione, usato in condizioni e altre espressioni.|  
 |;|Punto e virgola, separatore di elenco.|  
 |?|Punto interrogativo, un carattere jolly usato nel descrivere le specifiche di un file nella sezione Include/Exclude di un elemento.|  
 |*|Asterisco, un carattere jolly usato nel descrivere le specifiche di un file nella sezione Include/Exclude di un elemento.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Caratteri di escape speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+ [Procedura: eseguire l'escape di caratteri speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

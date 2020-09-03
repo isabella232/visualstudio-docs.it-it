@@ -1,5 +1,5 @@
 ---
-title: 'Debug di applicazioni Web: Gli errori e risoluzione dei problemi | Microsoft Docs'
+title: 'Debug di applicazioni Web: errori e risoluzione dei problemi | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,32 +28,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141917"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debug di applicazioni Web: Errori e risoluzione dei problemi
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debug di applicazioni Web: errori e risoluzione dei problemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile che si verifichino i seguenti errori durante il tentativo di eseguire il debug di applicazioni Web.  
   
 - [Risoluzione dei problemi](../debugger/debugging-web-applications-troubleshooting.md)  
   
-- [Errore: Il sito usa un indirizzo IP](../debugger/error-site-uses-ip-address.md)  
+- [Errore: il sito usa l'indirizzo IP](../debugger/error-site-uses-ip-address.md)  
   
-- [Errore: Controllo di sicurezza non riuscito. Il servizio di amministrazione IIS non ha risposto](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+- [Errore: controllo di sicurezza non riuscito. il servizio di amministrazione IIS non ha risposto](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
-- [Errore: ASP.NET non è installato](../debugger/error-aspnet-not-installed.md)  
+- [Errore: ASP.NET non installato](../debugger/error-aspnet-not-installed.md)  
   
-- [Errore: Errore di debug. L'autenticazione integrata di Windows non è abilitata](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+- [Errore: debug non riuscito perché l'autenticazione integrata di Windows non è abilitata](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
-- [Errore: Il server Web non è configurato in modo corretto](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+- [Errore: il server Web non è configurato in modo corretto](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
-- [Errore: Il verbo DEBUG è bloccato dal server Web, che è stato a sua volta bloccato](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+- [Errore: il server Web è stato bloccato e blocca il verbo di DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
-- [Errore: Timeout durante il debug dei servizi Web](../debugger/error-timeout-while-debugging-web-services.md)  
+- [Errore: timeout durante il debug dei servizi Web](../debugger/error-timeout-while-debugging-web-services.md)  
   
 - [Errore: Impossibile avviare il debug sul server Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   

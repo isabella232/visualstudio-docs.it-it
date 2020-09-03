@@ -1,22 +1,22 @@
 ---
 title: Impostazioni EditorConfig
-ms.date: 08/01/2018
+ms.date: 09/02/2020
 ms.topic: how-to
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 30c2ce8a10a6a1001f8fb7c21ba7db7db7243fe4
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770755"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402257"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
-È possibile aggiungere un file [EditorConfig](https://editorconfig.org/) al progetto o alla codebase per applicare stili di codifica coerenti per tutti gli utenti che operano nella codebase. Le impostazioni di EditorConfig hanno la precedenza sulle impostazioni dell'editor di testo di Visual Studio globali. Ciò significa che è possibile personalizzare ogni codebase in modo che vengano usate le impostazioni dell'editor di testo specifiche del progetto. È comunque possibile impostare preferenze personali per l'editor nella finestra di dialogo **Opzioni** di Visual Studio. Queste impostazioni si applicano ogni volta che si usa una codebase priva di file con estensione *editorconfig* o quando il file con estensione *editorconfig* non esegue l'override di un'impostazione specifica. Un esempio di tale preferenza è lo stile del rientro&mdash;caratteri di tabulazione o spazi.
+È possibile aggiungere un file EditorConfig al progetto o alla codebase per applicare stili di codifica coerenti per tutti gli utenti che operano nella codebase. Le impostazioni di EditorConfig hanno la precedenza sulle impostazioni dell'editor di testo di Visual Studio globali. Ciò significa che è possibile personalizzare ogni codebase in modo che vengano usate le impostazioni dell'editor di testo specifiche del progetto. È comunque possibile impostare preferenze personali per l'editor nella finestra di dialogo **Opzioni** di Visual Studio. Queste impostazioni si applicano ogni volta che si usa una codebase priva di file con estensione *editorconfig* o quando il file con estensione *editorconfig* non esegue l'override di un'impostazione specifica. Un esempio di tale preferenza è lo stile del rientro&mdash;caratteri di tabulazione o spazi.
 
 Le impostazioni di EditorConfig sono supportate da numerosi editor di codice e molti ambienti IDE, tra cui Visual Studio. Si tratta di un componente portatile che viene trasferito con il codice ed è in grado di imporre stili di codice anche all'esterno di Visual Studio.
 

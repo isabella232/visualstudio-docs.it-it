@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
+title: 'IEEVisualizerDataProvider:: GetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88562ae2238f33f1f46913a42df44fcb482cc8fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192074"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo ottiene l'oggetto che rappresenta questo visualizzatore.  
+Questo metodo ottiene l'oggetto rappresentato da questo visualizzatore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,13 +40,13 @@ int GetObjectForVisualizer(
   
 #### <a name="parameters"></a>Parametri  
  `ppObject`  
- [out] L'oggetto rappresentato da questo visualizzatore  
+ out Oggetto rappresentato da questo visualizzatore  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- `GetObjectForVisualizer` è consentito restituire una versione memorizzata nella cache dell'oggetto. Se il chiamante desidera assicurarsi che l'oggetto è aggiornato, quindi chiamerà [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
+## <a name="remarks"></a>Osservazioni  
+ `GetObjectForVisualizer` è consentita la restituzione di una versione memorizzata nella cache dell'oggetto. Se il chiamante vuole assicurarsi che l'oggetto sia aggiornato, chiamerà [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

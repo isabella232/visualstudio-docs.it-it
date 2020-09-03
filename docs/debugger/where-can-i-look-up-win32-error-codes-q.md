@@ -19,16 +19,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8e3dda1b728cd631efe8a84913af3d5c475138d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728030"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Come è possibile accedere ai codici di errore di Win32?
 Il file WINERROR.H nella directory INCLUDE della directory di installazione di sistema predefinita contiene le definizioni dei codici di errore per le funzioni API Win32.
 
- È possibile cercare un codice di errore digitando tale codice nella finestra **Espressioni di controllo** o nella finestra di dialogo **Controllo immediato**. Esempio:
+ È possibile cercare un codice di errore digitando tale codice nella finestra **Espressioni di controllo** o nella finestra di dialogo **Controllo immediato**. Ad esempio:
 
 `0x80000004,hr`
 

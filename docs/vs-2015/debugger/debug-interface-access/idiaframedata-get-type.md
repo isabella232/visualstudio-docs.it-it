@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 95232ab69d6f30435807764e1177d15d6e4622d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161435"
 ---
-# <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
+# <a name="idiaframedataget_type"></a>IDiaFrameData::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera il tipo di frame specifici del compilatore.  
+Recupera il tipo di frame specifico del compilatore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,7 +35,7 @@ HRESULT get_type ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un valore di [enumerazione StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) enumerazione che indica il tipo di frame specifici del compilatore.  
+ out Restituisce un valore dall'enumerazione Enumerazione [StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) che indica il tipo di frame specifico del compilatore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.  

@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79303295"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315317"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Uso di Visual Studio per Mac Tools per Unity
 
@@ -29,7 +29,7 @@ In alternativa, Visual Studio per Mac può essere aperto senza aprire alcuno scr
 Visual Studio per Mac Tools per Unity include un collegamento per accedere alla documentazione dell'API Unity. Per accedere alla documentazione dell'API Unity da Visual Studio per Mac, posizionare il cursore sull'API Unity per cui si desiderano informazioni e premere **command ⌘ + ‘**.
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense per messaggi di Unity
-Il motore Unity trasmette messaggi agli script MonoBehaviour, consentendo agli sviluppatori di scrivere codice che reagisce a messaggi come OnMouseDown, OnTriggerEnter e così via. Poiché non si tratta di metodi virtuali nella classe MonoBehaviour di base, alcuni IDE, ad esempio MonoDevelop non dispongono di funzionalità di completamento del codice per i messaggi Unity.
+Il motore Unity trasmette i messaggi agli script monobehavior, consentendo agli sviluppatori di scrivere codice che reagisce ai messaggi, ad esempio OnMouseDown, OnTriggerEnter e così via. Poiché non si tratta di metodi virtuali nella classe monobehavior di base, alcuni IDE come MonoDevelop non hanno funzionalità di completamento del codice per i messaggi di Unity.
 
 Tuttavia, Visual Studio per Mac Tools per Unity estende la propria funzionalità IntelliSense ai messaggi Unity. Ciò semplifica l'implementazione di messaggi Unity negli script MonoBehaviour e assiste nell'apprendimento dell'API Unity. Per usare IntelliSense per i messaggi Unity:
 
@@ -71,7 +71,7 @@ Per aggiungere un nuovo script C# MonoBehaviour, **fare clic con il pulsante des
 
 ### <a name="add-a-new-unity-shader"></a>Aggiungere un nuovo shader Unity
 
-Per aggiungere un nuovo shader Unity, fate clic con **il pulsante destro** del mouse sulla cartella Assets o su una sottodirectory nel riquadro Soluzione e selezionate **Aggiungi > nuovo shader**.
+Per aggiungere un nuovo shader Unity, **fare clic con il pulsante destro del mouse sulla cartella assets o su** una sottodirectory nel riquadro della soluzione e scegliere **Aggiungi > nuovo shader**.
 
 ### <a name="add-a-new-folder"></a>Aggiungere una nuova cartella
 

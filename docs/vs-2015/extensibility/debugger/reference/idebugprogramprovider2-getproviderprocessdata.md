@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
+title: 'IDebugProgramProvider2:: GetProviderProcessData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a50faf4531a098dde544adcffe535ed26e9c5cd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148513"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
@@ -48,32 +48,32 @@ int GetProviderProcessData(
   
 #### <a name="parameters"></a>Parametri  
  `Flags`  
- [in] Una combinazione di flag dal [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumerazione. I flag seguenti sono più comuni per questa chiamata:  
+ in Combinazione di flag dell'enumerazione [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Per questa chiamata sono tipici i flag seguenti:  
   
 |Flag|Descrizione|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Chiamante è in esecuzione nel computer remoto.|  
-|`PFLAG_DEBUGGEE`|Chiamante è in corso il debug (verranno restituite informazioni aggiuntive sul marshalling per ogni nodo).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Chiamante è stato collegato a ma non avviare dal debugger.|  
-|`PFLAG_GET_PROGRAM_NODES`|Chiamante è richiesto un elenco dei nodi di programma da restituire.|  
+|`PFLAG_REMOTE_PORT`|Il chiamante è in esecuzione nel computer remoto.|  
+|`PFLAG_DEBUGGEE`|Il chiamante è attualmente in fase di debug. verranno restituite informazioni aggiuntive sul marshalling per ogni nodo.|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Il chiamante è stato associato a ma non avviato dal debugger.|  
+|`PFLAG_GET_PROGRAM_NODES`|Il chiamante chiede un elenco di nodi del programma da restituire.|  
   
  `pPort`  
- [in] La porta del processo chiamante è in corso.  
+ in Porta su cui è in esecuzione il processo chiamante.  
   
  `processId`  
- [in] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.  
+ in Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) che contiene l'ID del processo che contiene il programma in questione.  
   
  `EngineFilter`  
- [in] Una matrice di GUID per i motori di debug assegnato per il debug del processo (questi verrà utilizzati per filtrare i programmi che sono effettivamente restituiti basati su ciò che supportano i motori di fornito; se nessun motore vengono specificato, quindi verranno restituiti tutti i programmi).  
+ in Matrice di GUID per i motori di debug assegnati per eseguire il debug del processo. questi verranno utilizzati per filtrare i programmi effettivamente restituiti in base al supporto dei motori forniti. se non viene specificato alcun motore, verranno restituiti tutti i programmi.  
   
  `pProcess`  
- [out] Oggetto [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura compilata con le informazioni richieste.  
+ out Struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) compilata con le informazioni richieste.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Questo metodo viene chiamato in genere da un processo per ottenere un elenco di programmi in esecuzione in tale processo. Le informazioni restituite sono elencate [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetti.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo viene in genere chiamato da un processo per ottenere un elenco di programmi in esecuzione in tale processo. Le informazioni restituite sono un elenco di oggetti [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   

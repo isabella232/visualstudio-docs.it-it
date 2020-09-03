@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350693"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurare Windows Firewall per il debug remoto
@@ -121,7 +121,7 @@ Se non è possibile connettersi all'app con il debugger remoto, assicurarsi che 
   - Per visualizzare o modificare le impostazioni delle regole, fare clic con il pulsante destro del mouse sull'app **debugger remoto** nell'elenco e scegliere **Proprietà**. Utilizzare le schede **Proprietà** per abilitare o disabilitare la regola oppure modificare i numeri di porta, i protocolli o i tipi di rete.
   - Se l'app del debugger remoto non viene visualizzata nell'elenco regole, [aggiungere e configurare le porte corrette](#configure-ports-for-remote-debugging).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug remoto](../debugger/remote-debugging.md)
 - [Assegnazioni delle porte del debugger remoto di Visual Studio](../debugger/remote-debugger-port-assignments.md)

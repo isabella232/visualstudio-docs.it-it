@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586823"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding semplice
@@ -39,7 +39,7 @@ Questa procedura dettagliata crea un controllo semplice che visualizza i dati di
 
 Durante questa procedura dettagliata, si apprenderà come:
 
-- Creare una nuova applicazione **Windows Forms Application**.
+- Creare una nuova **applicazione Windows Forms**.
 
 - Aggiungere un nuovo **controllo utente** al progetto.
 
@@ -77,7 +77,7 @@ Il primo passaggio consiste nel creare un' **applicazione Windows Forms**:
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
-2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
+2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
@@ -97,7 +97,7 @@ Questa procedura dettagliata crea un controllo associabile ai dati semplice da u
 
 ## <a name="design-the-phonenumberbox-control"></a>Progettare il controllo PhoneNumberBox
 
-Questa procedura dettagliata espande il <xref:System.Windows.Forms.MaskedTextBox> esistente per creare il controllo **PhoneNumberBox** :
+In questa procedura dettagliata viene espansa la esistente <xref:System.Windows.Forms.MaskedTextBox> per creare il controllo **PhoneNumberBox** :
 
 1. Trascinare un oggetto <xref:System.Windows.Forms.MaskedTextBox> dalla **Casella degli strumenti** nell'area di progettazione del controllo utente.
 
@@ -116,15 +116,15 @@ Per controlli semplici che supportano il data binding, implementare l'attributo 
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3. Scegliere **Compila soluzione** dal menu **Compila**.
+3. Scegliere **Compila soluzione**dal menu **Compila** .
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
-Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Customers` contenuta nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database Northwind di esempio, vedere [procedura: installare database di](../data-tools/installing-database-systems-tools-and-samples.md)esempio.
+In questo passaggio viene utilizzata la **Configurazione guidata origine dati** per creare un'origine dati basata sulla `Customers` tabella nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database Northwind di esempio, vedere [procedura: installare database di](../data-tools/installing-database-systems-tools-and-samples.md)esempio.
 
 1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Nella pagina **Seleziona un tipo di origine dati** selezionare **Database**, quindi fare clic su **Avanti**.
 
@@ -142,11 +142,11 @@ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'or
 
 8. Selezionare la tabella `Customers`, quindi fare clic su **Fine**.
 
-     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Customers` viene visualizzata nella finestra **Origini dati**.
+     Il **NorthwindDataSet** viene aggiunto al progetto e la `Customers` tabella viene visualizzata nella finestra **origini dati** .
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Impostare la colonna Phone per l'uso del controllo PhoneNumberBox
 
-Nella finestra **Origini dati** è possibile impostare il controllo da creare prima di trascinare elementi nel form:
+All'interno della finestra **origini dati** è possibile impostare il controllo da creare prima di trascinare gli elementi nel form:
 
 1. Aprire **Form1** nella finestra di progettazione.
 
@@ -168,7 +168,7 @@ Per creare controlli associati a dati nel form, trascinare il nodo **Customers**
 
 Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 Premere **F5** per eseguire l'applicazione.
 

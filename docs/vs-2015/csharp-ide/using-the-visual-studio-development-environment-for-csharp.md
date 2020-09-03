@@ -1,5 +1,5 @@
 ---
-title: Uso dell'ambiente di sviluppo C# per | Microsoft Docs
+title: Uso dell'ambiente di sviluppo per C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0cd8d8f2be0a653189130de6b38c8586957948d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673149"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>Uso dell'ambiente di sviluppo di Visual Studio per C \#
+# <a name="using-the-visual-studio-development-environment-for-c"></a>Uso dell'ambiente di sviluppo di Visual Studio per C\#
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -42,10 +42,10 @@ Visual Studio Integrated Development Environment (IDE) è una raccolta di strume
 |[Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md)|Viene fornita una panoramica dell'utilizzo dei frammenti di codice in Visual C# per aggiungere automaticamente costrutti di codice comuni all'applicazione.|
 |[Scrittura di codice](../ide/writing-code-in-the-code-and-text-editor.md)|Vengono forniti i collegamenti alle procedure sull'utilizzo della finestra Trova e sostituisci, Segnalibri, Elenco attività ed Elenco errori per individuare le righe di codice.|
 |[Visualizzazione della struttura del codice](../ide/viewing-the-structure-of-code.md)|Viene illustrato come esaminare le gerarchie di classi, membri di classe e risorse.|
-|[Procedura: Aggiungere un file di configurazione dell'applicazione a un progetto C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Viene descritto come aggiungere un file di configurazione (app.config) a un progetto C#.|
+|[Procedura: aggiungere un file di configurazione dell'applicazione a un progetto C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Viene descritto come aggiungere un file di configurazione (app.config) a un progetto C#.|
 |[Metadati come origine](../csharp-ide/metadata-as-source.md)|Viene descritto in che modo l'IDE consente di visualizzare i metadati come codice sorgente.|
 |[Refactoring (C#)](../csharp-ide/refactoring-csharp.md)|Viene fornito un elenco delle operazioni di refactoring che permettono di modificare il codice senza influire sul comportamento dell'applicazione.|
-|[Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)|Viene spiegato come configurare il debug, la versione e speciali build della soluzione di Visual Studio.|
+|[Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)|Viene spiegato come configurare il debug, la versione e speciali build della soluzione di Visual Studio.|
 |[Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)|Viene descritto come eseguire il Debugger di Visual Studio per risolvere errori semantici e logici.|
 |[Gestione delle risorse delle applicazioni (.NET)](../ide/managing-application-resources-dotnet.md)|Viene illustrato come aggiungere o modificare le risorse del progetto, ad esempio stringhe, immagini, icone, audio e file.|
 

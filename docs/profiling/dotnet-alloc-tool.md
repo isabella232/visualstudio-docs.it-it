@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247797"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analizzare l'utilizzo della memoria mediante lo strumento di allocazione oggetti .NET
@@ -36,7 +36,7 @@ Dopo aver eseguito lo strumento, è possibile visualizzare i percorsi di esecuzi
 
    ![Finestra che mostra la raccolta di arresti](../profiling/media/stopcollectionlighttheme.png "Finestra che mostra la raccolta di arresti")
 
-1. Selezionare la scheda **allocazione** . contenuto della finestra simile alla schermata seguente.
+1. Selezionare la scheda **allocazione** . Viene visualizzato il contenuto della finestra simile alla schermata seguente.
 
    ![Scheda allocazione](../profiling/media/allocationview.png "Scheda allocazione")
 

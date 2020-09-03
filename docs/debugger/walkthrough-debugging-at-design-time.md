@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183561"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Eseguire il debug in fase di progettazione in Visual Studio (C#, C++/CLI, Visual Basic, F #)
@@ -69,7 +69,7 @@ Nell'esempio seguente viene Visual Basic. È anche possibile usare la finestra *
 
 1. Senza selezionare **continua**, digitare `?MySub()` nella finestra di **controllo immediato** , quindi premere **invio**. Il punto di interruzione viene raggiunto e il valore di **funzione** nella finestra **variabili locali** è **3**. È possibile esaminare lo stato dell'app mentre l'app è in modalità di interruzioni.
 
-1. Seleziona **Continua**. Il punto di interruzione viene nuovamente raggiunto e il valore di **funzione** nella finestra **variabili locali** è ora **2**. La finestra **controllo immediato** restituisce l' **espressione è stata valutata e non ha alcun valore**.
+1. Selezionare **Continua**. Il punto di interruzione viene nuovamente raggiunto e il valore di **funzione** nella finestra **variabili locali** è ora **2**. La finestra **controllo immediato** restituisce l' **espressione è stata valutata e non ha alcun valore**.
 
 1. Selezionare di nuovo **continua** . L'app termina e **2** viene restituita nella finestra di **controllo immediato** . Assicurarsi di essere ancora in modalità progettazione.
 
@@ -83,13 +83,13 @@ Nell'esempio seguente viene Visual Basic. È anche possibile usare la finestra *
 
 1. Aprire la pagina XAML contenente il controllo personalizzato di cui si desidera eseguire il debug.
 
-   Per i progetti UWP destinati a Windows Build 16299 o versione successiva, questo passaggio avvierà il processo *UwpSurface. exe* . Per i progetti WPF destinati a Windows Build 16299 o versione successiva, questo passaggio avvierà il processo *WpfSurface. exe* . Per le versioni WPF o UWP precedenti a Windows Build 16299, questo passaggio avvierà il processo *XDesProc. exe* . 
+   Per i progetti UWP destinati a Windows Build 16299 o versione successiva, questo passaggio avvierà il processo di *UwpSurface.exe* . Per i progetti WPF destinati a Windows Build 16299 o versione successiva, questo passaggio avvierà il processo di *WpfSurface.exe* . Per le versioni WPF o UWP precedenti a Windows Build 16299, questo passaggio avvierà il processo di *XDesProc.exe* . 
 
 1. Aprire una seconda istanza di Visual Studio. Non aprire una soluzione o un progetto nella seconda istanza.
 
 1. Nella seconda istanza di Visual Studio aprire il menu **debug** e scegliere **Connetti a processo...**.
 
-1. A seconda del tipo di progetto (vedere passaggi precedenti), selezionare il processo *UwpSurface. exe*, *WpfSurface. exe*o *XDesProc. exe* dall'elenco dei processi disponibili.
+1. A seconda del tipo di progetto (vedere i passaggi precedenti), selezionare il *UwpSurface.exe*, *WpfSurface.exe*o il processo *XDesProc.exe* dall'elenco dei processi disponibili.
 
 1. Nel campo **Connetti a** della finestra di dialogo **Connetti a processo** scegliere il tipo di codice corretto per il controllo personalizzato di cui si vuole eseguire il debug.
 

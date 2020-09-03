@@ -1,5 +1,5 @@
 ---
-title: Variante di dimensioni di trama di metà trimestre | Microsoft Docs
+title: Variante delle dimensioni della trama a metà trimestre | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161161"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante delle dimensioni della trama ridotte a metà o un quarto
@@ -30,7 +30,7 @@ Riduce le dimensioni della trama per trame che non sono destinazioni di renderin
   
  Se le trame occupano più memoria di quella disponibile, considerarne la riduzione delle dimensioni, ma solo dopo avere previsto la compressione delle trame appropriate. Come accade per le trame più piccole, le trame compresse occupano meno memoria e riducono la necessità di paging nella memoria di sistema, tuttavia la fedeltà dei colori risulterà ridotta. A seconda del contenuto delle trame, la compressione può non sempre rappresentare la soluzione appropriata, ad esempio nel caso di trame con variazioni di colore significative. Per molte trame, tuttavia, la compressione può permettere di conservare una migliore qualità complessiva dell'immagine rispetto alla loro riduzione.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Le dimensioni della trama vengono ridotte a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, le dimensioni della trama vengono ridotte quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una trama che viene usata nel rendering, ovvero:  
   
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183652"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
@@ -151,7 +151,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 Di seguito è riportato un elenco di funzioni di proprietà MSBuild:
 
-|Firma funzione|Descrizione|
+|Firma della funzione|Descrizione|
 |------------------------|-----------------|
 |double Add(double a, double b)|Esegue l'addizione di due valori Double.|
 |long Add(long a, long b)|Esegue l'addizione di due valori Long.|
@@ -346,6 +346,6 @@ Le funzioni `Exists` e `HasTrailingSlash` non sono funzioni di proprietà. Sono 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Proprietà di MSBuild](../msbuild/msbuild-properties.md)
+- [proprietà di MSBuild](../msbuild/msbuild-properties.md)
 
 - [Panoramica di MSBuild](../msbuild/msbuild.md)

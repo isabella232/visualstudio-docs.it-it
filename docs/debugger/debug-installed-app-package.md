@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350732"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Eseguire il debug di un pacchetto dell'app UWP installato in Visual Studio
@@ -54,7 +54,7 @@ Per altre informazioni sul debug di app UWP, vedere il post di Blog sul [debug d
 > [!NOTE]
 > È anche possibile connettersi a qualsiasi UWP in esecuzione o a un altro processo dell'app selezionando **debug**  >  **Connetti a processo** in Visual Studio. Non è necessario il progetto di Visual Studio originale per connettersi a un processo in esecuzione, ma il caricamento dei simboli dell'app contribuirà in modo significativo durante il debug di un processo per cui non si ha il codice originale. Vedere [specificare i file di simboli e di origine nel debugger](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a>Eseguire il debug di un'app UWP installata in un computer o dispositivo remoto
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a> Eseguire il debug di un'app UWP installata in un computer o dispositivo remoto
 
 La prima volta che Visual Studio esegue il debug di un'app UWP installata in un dispositivo Windows 10 o in un computer Windows 10 con aggiornamento di un post-autore remoto, installa gli strumenti di debug remoto sul dispositivo di destinazione.
 
@@ -94,7 +94,7 @@ Quando si avvia il debug di un pacchetto dell'app installato in un dispositivo X
 
 Per altre informazioni sulla distribuzione remota di app UWP, vedere [distribuire ed eseguire il debug](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) di app UWP ed [eseguire il debug di app UWP in computer remoti](run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350550"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debug di applicazioni ASP.NET distribuite
@@ -38,7 +38,7 @@ La connessione al processo di lavoro [!INCLUDE[vstecasp](../code-quality/include
 > [!NOTE]
 > Molte applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] fanno riferimento a DLL contenenti logica di business o altro codice utile. Un riferimento di questo tipo copia la DLL dal computer locale alla cartella \bin della directory virtuale dell'applicazione Web quando si distribuisce l'app. Quando si esegue il debug, tenere presente che l'applicazione Web fa riferimento a tale copia della DLL e non alla copia presente sul computer locale.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Come fare per: Attivare il debug per applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Procedura: trovare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)

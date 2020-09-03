@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugTypeFieldBuilder2 . Documenti Microsoft
+title: IDebugTypeFieldBuilder2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed34284e373a7d96761aabe5a7f179367649bc0f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718297"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
-Estende il **IDebugTypeFieldBuilder** per essere in grado di creare tipi di matrice.
+Estende **IDebugTypeFieldBuilder** per poter creare tipi di matrici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,15 +30,15 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
  Questa interfaccia può essere ottenuta dal provider di simboli.
 
 ## <a name="methods"></a>Metodi
- Oltre ai metodi sul IDebugTypeFieldBuilder interfaccia, questa interfaccia implementa il metodo seguente:In addition to the methods on the [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) interface, this interface implements the following method:
+ Oltre ai metodi sull'interfaccia [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) , questa interfaccia implementa il metodo seguente:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crea una matrice del tipo e della dimensione specificati.|
+|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|Crea una matrice del tipo e delle dimensioni specificati.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Sh.h
+ Intestazione: sh. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

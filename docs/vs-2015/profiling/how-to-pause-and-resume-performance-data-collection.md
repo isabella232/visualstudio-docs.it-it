@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826152"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dati sulle prestazioni
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dei dati sulle prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dalla finestra pagina della sessione di profilatura è possibile controllare interattivamente la raccolta dei dati di profilatura.  
@@ -41,5 +41,5 @@ Dalla finestra pagina della sessione di profilatura è possibile controllare int
   - Scegliere **Interrompere la profilatura** per terminare la sessione di profilatura e generare i rapporti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   
- [Procedura: Iniziare e terminare la raccolta dei dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [Controllo della raccolta dati](../profiling/controlling-data-collection.md)   
+ [Procedura: iniziare e terminare la raccolta dei dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659274"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
@@ -46,7 +46,7 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
 2. Aggiungere un file di testo denominato `DebugTest.tt` al progetto di debug.
 
-3. Verificare che la proprietà **strumento personalizzato** di DebugTest.tt sia impostata su `TextTemplatingFileGenerator`.
+3. Verificare che la proprietà **strumento personalizzato** di DebugTest.tt sia impostata su `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Direttive di debug che accedono a un modello da un modello di testo
  Prima di poter accedere a un modello dalle istruzioni e dalle espressioni in un modello di testo, è prima necessario chiamare un processore di direttiva generato. La chiamata del processore di direttiva generato rende le classi del modello disponibili per il codice del modello di testo come proprietà. Per altre informazioni, vedere [accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md).
@@ -97,11 +97,11 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
      **Il processore denominato ' DebuggingTestLanguageDirectiveProcessor ' non supporta la direttiva denominata ' modelRoot '. La trasformazione non verrà eseguita.**
 
-     In questo caso, la chiamata alla direttiva contiene un nome di direttiva errato. È stato specificato `modelRoot` come nome della direttiva, ma è `DebuggingTestLanguage` il nome della direttiva corretto.
+     In questo caso, la chiamata alla direttiva contiene un nome di direttiva errato. Il nome della direttiva è stato specificato `modelRoot` , ma il nome della direttiva è corretto `DebuggingTestLanguage` .
 
 3. Fare doppio clic sull'errore nella finestra **Elenco errori** per passare al codice.
 
-4. Per correggere il codice, modificare il nome della direttiva in `DebuggingTestLanguage`.
+4. Per correggere il codice, modificare il nome della direttiva in `DebuggingTestLanguage` .
 
      La modifica è evidenziata.
 
@@ -161,13 +161,13 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
      (C#)
 
-     **Compilazione della trasformazione: Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation ' non contiene una definizione per ' ExampleModel '**
+     **Compilazione della trasformazione: Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation ' non contiene una definizione per ' ExampleModel '**
 
      (Visual Basic)
 
-     **Compilazione della trasformazione:' ExampleModel ' non è un membro di ' Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation ".**
+     **Compilazione della trasformazione:' ExampleModel ' non è un membro di ' Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation ".**
 
-     In questo caso, il codice del modello di testo contiene un nome di proprietà non corretto. È stato specificato `ExampleModel` come nome della proprietà, ma il nome della proprietà corretto è `LibraryModel`. È possibile trovare il nome di proprietà corretto nel parametro fornisce, come illustrato nel codice seguente:
+     In questo caso, il codice del modello di testo contiene un nome di proprietà non corretto. È stato specificato `ExampleModel` come nome della proprietà, ma il nome di proprietà corretto è `LibraryModel` . È possibile trovare il nome di proprietà corretto nel parametro fornisce, come illustrato nel codice seguente:
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -175,9 +175,9 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 
 3. Fare doppio clic sull'errore nella finestra Elenco errori per passare al codice.
 
-4. Per correggere il codice, modificare il nome della proprietà in `LibraryModel` nel codice del modello di testo.
+4. Per correggere il codice, impostare il nome della proprietà su `LibraryModel` nel codice del modello di testo.
 
-     Le modifiche vengono evidenziate.
+     Le modifiche sono evidenziate.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>

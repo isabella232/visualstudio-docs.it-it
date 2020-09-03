@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586926"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
@@ -41,9 +41,9 @@ Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare
 
 - Per disabilitare la condivisione dei tipi, deselezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**. Per abilitare la condivisione di tipi per un sottoinsieme di assembly di riferimento, selezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**, selezionare **Riutilizza tipi negli assembly di riferimento specificati** e selezionare i riferimenti desiderati nell'elenco **Assembly di riferimento**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
-**Address**
+**Indirizzo**
 
 Aggiorna l'indirizzo Web in cui un riferimento al servizio Cerca un servizio. Ad esempio, durante lo sviluppo, il servizio può essere ospitato in un server di sviluppo e successivamente spostato in un server di produzione, rendendo necessario un cambio di indirizzo.
 

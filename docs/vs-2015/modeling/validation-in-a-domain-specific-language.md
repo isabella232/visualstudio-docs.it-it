@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9a19ebab7b0c820e336965b4020eff2c2f9726cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659359"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
@@ -62,7 +62,7 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
 
    2. In DSL Explorer espandere il nodo **Editor** e selezionare **convalida**.
 
-   3. Nella Finestra Proprietà impostare le proprietà **USA** su `true`. È più pratico impostare tutte queste proprietà.
+   3. Nella Finestra Proprietà impostare le proprietà **utilizza**  su `true` . È più pratico impostare tutte queste proprietà.
 
    4. Fare clic su **trasforma tutti i modelli** nella barra degli strumenti Esplora soluzioni.
 
@@ -86,7 +86,7 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
 
     Gli attributi ValidationCategories indicano quando viene eseguito il metodo.
 
-   Esempio:
+   Ad esempio:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -129,7 +129,7 @@ public partial class ParentsHaveChildren
 
  Notare gli aspetti seguenti su questo codice:
 
-- È possibile aggiungere metodi di convalida a classi di dominio o relazioni di dominio. Il codice per questi tipi si trova in **Dsl\Generated Code\Domain \*. cs**.
+- È possibile aggiungere metodi di convalida a classi di dominio o relazioni di dominio. Il codice per questi tipi è in **Dsl\Generated Code\Domain \* . cs**.
 
 - Ogni metodo di convalida viene applicato a ogni istanza delle relative classi e sottoclassi. Nel caso di una relazione di dominio ogni istanza è un collegamento tra due elementi del modello.
 
@@ -143,7 +143,7 @@ public partial class ParentsHaveChildren
 
   L'esempio si applica al seguente modello di dominio. La relazione ParentsHaveChildren include ruoli denominati Child e Parent.
 
-  ![Modello di albero &#45; genealogico del diagramma di definizione DSL](../modeling/media/familyt-person.png "FamilyT_Person")
+  ![Diagramma di definizione DSL &#45; modello di albero genealogico](../modeling/media/familyt-person.png "FamilyT_Person")
 
 ## <a name="validation-categories"></a>Categorie di convalida
  Nell'attributo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> viene specificato quando eseguire il metodo di convalida.
@@ -178,11 +178,11 @@ public partial class Person
 
 ```
 
- **Aggregazione di vincoli di convalida.** Per applicare la convalida in un ordine prevedibile, definire un singolo metodo di convalida su una classe Owner, ad esempio l'elemento radice del modello. Questa tecnica consente inoltre di aggregare più segnalazioni in un unico messaggio.
+ **Aggregazione dei vincoli di convalida.**  Per applicare la convalida in un ordine prevedibile, definire un singolo metodo di convalida in una classe proprietario, ad esempio l'elemento radice del modello. Questa tecnica consente inoltre di aggregare più segnalazioni in un unico messaggio.
 
  Presenta però alcuni svantaggi, in quanto il metodo combinato è più difficile da gestire e i vincoli devono includere tutti gli stessi attributi `ValidationCategories`. Se possibile, è quindi consigliabile mantenere ogni vincolo in un metodo separato.
 
- **Passaggio di valori nella cache del contesto.** Il parametro context include un dizionario in cui è possibile inserire valori arbitrari. Il dizionario viene mantenuto per tutta la durata della convalida. Un particolare metodo di convalida potrebbe, ad esempio, mantenere un conteggio degli errori nel contesto e usarlo per evitare di visualizzare nella finestra degli errori un numero elevato di messaggi ripetuti. Esempio:
+ **Passaggio di valori nella cache del contesto.**  Il parametro del contesto include un dizionario in cui è possibile inserire valori arbitrari. Il dizionario viene mantenuto per tutta la durata della convalida. Un particolare metodo di convalida potrebbe, ad esempio, mantenere un conteggio degli errori nel contesto e usarlo per evitare di visualizzare nella finestra degli errori un numero elevato di messaggi ripetuti. Ad esempio:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -199,7 +199,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Se si imposta la molteplicità di un ruolo di una relazione di dominio su 1..* o 1..1, ma l'utente non crea un collegamento di questa relazione, verrà visualizzato un messaggio di errore di convalida.
 
- Se, ad esempio, nel linguaggio DSL sono presenti le classi Person e Town e una relazione PersonLivesInTown con una relazione **1.. \\** * al ruolo Town, per ogni persona che non ha un paese, verrà visualizzato un messaggio di errore.
+ Ad esempio, se il linguaggio DSL presenta le classi Person e Town e una relazione PersonLivesInTown con una relazione **1. \\ ** * nel ruolo della città, per ogni persona che non ha un paese, verrà visualizzato un messaggio di errore.
 
 ## <a name="running-validation-from-program-code"></a>Esecuzione della convalida dal codice programma
  È possibile eseguire la convalida creando o accedendo a un oggetto ValidationController. Se si vuole che gli errori vengano visualizzati nella finestra degli errori, usare il controller ValidationController allegato al documento DocData del diagramma. Ad esempio, se si intende scrivere un comando di menu, `CurrentDocData.ValidationController` è disponibile nella classe del set di comandi:
@@ -220,7 +220,7 @@ partial class MyLanguageCommandSet
 
  Per altre informazioni, vedere [procedura: aggiungere un comando al menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- È anche possibile creare un controller di convalida separato e gestire gli errori manualmente. Esempio:
+ È anche possibile creare un controller di convalida separato e gestire gli errori manualmente. Ad esempio:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
 
  I gestori vengono inoltre chiamati dopo operazioni Undo o Redo che influiscono su collegamenti o elementi.
 
-## <a name="custom"></a>Categorie di convalida personalizzate
+## <a name="custom-validation-categories"></a><a name="custom"></a> Categorie di convalida personalizzate
  Oltre alle categorie di convalida standard, come Menu e Open, è possibile definire categorie personalizzate e richiamarle dal codice programma. L'utente non può invece richiamarle direttamente.
 
  Le categorie personalizzate vengono in genere usate per definire una categoria che verifica se il modello soddisfa le precondizioni di un determinato strumento.
@@ -332,14 +332,14 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-## <a name="alternatives"></a>Alternative alla convalida
+## <a name="alternatives-to-validation"></a><a name="alternatives"></a> Alternative alla convalida
  I vincoli di convalida segnalano gli errori, ma non modificano il modello. Se, invece, si vuole evitare che il modello non sia più valido, è possibile usare altre tecniche,
 
  che però non sono consigliate. È in genere preferibile lasciare che sia l'utente a decidere come correggere un modello non valido.
 
- **Modificare la modifica per ripristinare la validità del modello.** Se, ad esempio, l'utente imposta una proprietà superiore al massimo consentito, è possibile reimpostare la proprietà sul valore massimo. definendo a tale scopo una regola. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+ **Adattare la modifica per ottenere nuovamente un modello valido.**  Se ad esempio un utente imposta una proprietà su un valore superiore a quello massimo consentito, è possibile ripristinare la proprietà sul valore massimo, definendo a tale scopo una regola. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Eseguire il rollback della transazione se viene tentata una modifica non valida.** È anche possibile definire una regola per questo scopo, ma in alcuni casi è possibile eseguire l'override di un gestore di proprietà **OnValueChanging ()** o per eseguire l'override di un metodo, ad esempio `OnDeleted().` per eseguire il rollback di una transazione, usare `this.Store.TransactionManager.CurrentTransaction.Rollback().` per ulteriori informazioni, vedere [proprietà del dominio Gestori delle modifiche del valore](../modeling/domain-property-value-change-handlers.md).
+ **Eseguire il rollback della transazione se si prova a effettuare una modifica non valida.** È anche possibile definire una regola per questo scopo, ma in alcuni casi è possibile eseguire l'override di un gestore di proprietà **OnValueChanging ()** o per eseguire l'override di un metodo come `OnDeleted().` per eseguire il rollback di una transazione, usare `this.Store.TransactionManager.CurrentTransaction.Rollback().` per ulteriori informazioni, vedere [gestori delle modifiche dei valori delle proprietà del dominio](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Assicurarsi di informare l'utente dell'adattamento della modifica o del rollback. Ad esempio, usare `System.Windows.Forms.MessageBox.Show("message").`

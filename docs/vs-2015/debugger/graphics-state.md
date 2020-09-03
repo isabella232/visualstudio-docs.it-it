@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825583"
 ---
 # <a name="graphics-state"></a>Stato grafica
@@ -29,7 +29,7 @@ La finestra Stato in Diagnostica grafica di Visual Studio consente di comprender
 ### <a name="state-views"></a>Visualizzazioni stato  
  Si può visualizzare la tabella di stato in vari modi:  
   
-|Visualizza|Descrizione|  
+|Visualizzazione|Descrizione|  
 |----------|-----------------|  
 |Visualizzazione stato di input API|Questa visualizzazione presenta lo stato con un layout simile a quello degli oggetti Direct3D che compongono lo stato.|  
 |Visualizzazione stato di input logico|Presenta lo stato in una visualizzazione logica che non rispecchia il layout degli oggetti Direct3D che compongono lo stato.|  
@@ -53,8 +53,8 @@ La finestra Stato in Diagnostica grafica di Visual Studio consente di comprender
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|NOME|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> In **Visualizzazione stato di input API** e **Visualizzazione stato logico**, i nomi sono rientrati per mostrare la relazione gerarchica tra gli stati.<br /><br /> In **Visualizzazione stato bloccato** vengono visualizzati i nomi completi in un elenco semplice.|  
-|Value|Valore dell'elemento di stato.|  
+|Nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> In **Visualizzazione stato di input API** e **Visualizzazione stato logico**, i nomi sono rientrati per mostrare la relazione gerarchica tra gli stati.<br /><br /> In **Visualizzazione stato bloccato** vengono visualizzati i nomi completi in un elenco semplice.|  
+|Valore|Valore dell'elemento di stato.|  
 |Type|Tipo dell'elemento di stato.|  
   
 ### <a name="changed-state"></a>Stato modificato  

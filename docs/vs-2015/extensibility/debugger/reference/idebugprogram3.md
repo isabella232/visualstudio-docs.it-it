@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6de25108cf93314db17a2ac8de9ce8b1dcaed2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148602"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questa interfaccia rappresenta un programma è in esecuzione in un processo che si estende [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornendo informazioni relative al thread.  
+Questa interfaccia rappresenta un programma in esecuzione in un processo ed estende l' [esecuzione](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornendo informazioni sul thread.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -29,33 +29,33 @@ IDebugProgram3 : IDebugProgram3
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Il motore di debug (DE) e un fornitore di porte personalizzate implementano questa interfaccia per rappresentare un programma in un processo. Gestore di sessione di debug (SDM) implementa anche questa interfaccia per fornire informazioni al [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
+ Il motore di debug (DE) e un fornitore di porta personalizzato implementano questa interfaccia per rappresentare un programma in un processo. Il gestore di debug della sessione implementa anche questa interfaccia per fornire informazioni da [collegare](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Il [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) evento restituisce questa interfaccia per un nuovo programma. Questa interfaccia viene inoltre utilizzata come parametro per molti metodi in più interfacce.  
+ L'evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) restituisce questa interfaccia per un nuovo programma. Questa interfaccia viene usata anche come parametro per molti metodi su più interfacce.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
- Nella tabella seguente sono illustrati i metodi di `IDebugProgram3`.  
+ La tabella seguente illustra i metodi di `IDebugProgram3` .  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Esegue il programma. Il thread viene restituito per fornire le informazioni sui debugger thread in cui l'utente visualizza durante l'esecuzione.|  
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Esegue il programma. Il thread viene restituito per fornire al debugger le informazioni sul thread visualizzato dall'utente durante l'esecuzione.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="remarks"></a>Note  
- Un programma è un contenitore di thread in esecuzione in una particolare architettura di runtime, mentre un processo è costituito da uno o più programmi.  
+## <a name="remarks"></a>Osservazioni  
+ Un programma è un contenitore di thread in esecuzione in un'architettura di runtime particolare, mentre un processo è costituito da uno o più programmi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   
- [Avanti](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   
+ [Prossimo](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   
  [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [Collegare](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)   
