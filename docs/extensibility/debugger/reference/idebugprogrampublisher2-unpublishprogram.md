@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgramPublisher2::UnpublishProgram . Documenti Microsoft
+title: 'IDebugProgramPublisher2:: UnpublishProgram | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fa3d111559a2c82fe36def202e5c1cf120c5202
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721594"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-Rende non disponibile un programma per il debug.
+Rende non disponibile un programma di cui eseguire il debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int UnpublishProgram(
 
 ## <a name="parameters"></a>Parametri
 `pDebuggeeInterface`\
-[in] Un'interfaccia `IUnknown` al programma. Si tratta dello stesso valore fornito per il [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metodo e identifica in modo univoco il programma da rimuovere (vale a dire, viene utilizzato come cookie).
+in `IUnknown` Interfaccia al programma. Si tratta dello stesso valore fornito al metodo [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) e identifica in modo univoco il programma da rimuovere, ovvero viene usato come cookie.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Per rendere un programma disponibile per i motori di debug e il gestore di debug delle sessioni, utilizzare il [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metodo.
+ Per rendere disponibile un programma ai motori di debug e a gestione debug sessione, utilizzare il metodo [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)

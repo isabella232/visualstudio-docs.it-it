@@ -24,16 +24,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b8f6ee192399c8af8a508b2f9c2817db954bb36
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673007"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associare controlli alle immagini di un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile utilizzare la finestra **origini dati** per associare un'immagine di un database a un controllo nell'applicazione. Ad esempio, è possibile associare un'immagine a un controllo <xref:System.Windows.Controls.Image> in un'applicazione WPF o a un controllo <xref:System.Windows.Forms.PictureBox> in un Windows Forms Application.
+È possibile utilizzare la finestra **origini dati** per associare un'immagine di un database a un controllo nell'applicazione. Ad esempio, è possibile associare un'immagine a un <xref:System.Windows.Controls.Image> controllo in un'applicazione WPF o a un <xref:System.Windows.Forms.PictureBox> controllo in un Windows Forms Application.
 
  Le immagini in un database vengono in genere archiviate come matrici di byte. Per impostazione predefinita, gli elementi della finestra **origini dati** archiviati come matrici di byte hanno il tipo di controllo impostato su **None** , perché le matrici di byte possono contenere qualsiasi elemento di una semplice matrice di byte nel file eseguibile di un'applicazione di grandi dimensioni. Per creare un controllo con associazione a dati per un elemento della matrice di byte nella finestra **origini dati** che rappresenta un'immagine, è necessario selezionare il controllo da creare.
 

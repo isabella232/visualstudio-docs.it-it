@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cdd069e8b17bcc26e067e0927ceef8cd9b1125a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658002"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Tasti di modifica della tavola da disegno in Blend
@@ -21,7 +21,7 @@ ms.locfileid: "72658002"
 
 Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertanto non è possibile usare l'interfaccia utente [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] per individuarli. La tabella seguente elenca i tasti di scelta rapida che modificano un'azione, ad esempio il ridimensionamento di un oggetto.
 
-|Per|Seguire questa procedura|
+|Per|Procedere nel modo seguente|
 |-----------------------|-------------|
 |Selezionare temporaneamente **Selezione** mentre rimane selezionato uno strumento diverso (ciò consente di ridurre il numero di volte in cui è necessario fare clic su un elemento nel pannello **Strumenti**, passando da **Selezione** ad altri strumenti)|Tenere premuto CTRL|
 |Spostare gli oggetti selezionati mentre è selezionato **Selezione**|Premere i tasti freccia|

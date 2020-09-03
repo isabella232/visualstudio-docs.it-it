@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590800"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usare la legenda della visualizzazione Grafici per analizzare i test di carico
@@ -59,5 +59,5 @@ La selezione di un elemento nella legenda consente di effettuare le operazioni s
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: ingrandire un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
-- [Analizzare i risultati dei test di carico nella visualizzazione GraficiAnalyze load test results in the Graphs view](../test/analyze-load-test-results-in-the-graphs-view.md)
+- [Procedura: eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md)

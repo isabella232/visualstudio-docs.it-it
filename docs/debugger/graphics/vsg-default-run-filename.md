@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734836"
 ---
 # <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
@@ -27,17 +27,17 @@ Definisce il nome file predefinito del file di log di grafica.
 #### <a name="parameters"></a>Parametri
  `filename` Nome file assegnato per impostazione predefinita al file di log di grafica quando le informazioni grafiche vengono acquisite a livello di codice.
 
-## <a name="value"></a>Value
+## <a name="value"></a>Valore
  Valore letterale stringa che rappresenta il nome del file di log di grafica. Per impostazione predefinita, L"default.vsglog".
 
 ```C++
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Se viene definito il simbolo del preprocessore `DONT_SAVE_VSGLOG_TO_TEMP`, il nome del file è relativo alla directory corrente dell'applicazione acquisita o è un percorso assoluto; in caso contrario, è relativo alla directory dei file temporanei dell'utente e non può essere un percorso assoluto.
 
- Per modificare il nome file definito, è necessario ridefinirlo prima di includere `vsgcapture.h` nel programma.
+ Per modificare il nome del file definito, è necessario ridefinirlo prima `vsgcapture.h` di includere nel programma.
 
 ## <a name="example"></a>Esempio
  In questo esempio viene illustrato come modificare il nome file predefinito del file di acquisizione:

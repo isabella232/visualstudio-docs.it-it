@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 943436a64f50523905a03ed2a87e91508d1b7471
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911475"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
@@ -37,7 +37,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 ## <a name="using-frame-analysis"></a>Uso dell'analisi dei frame
  Prima di potere usare l'analisi dei frame è necessario acquisire informazioni sugli elementi grafici dall'app durante l'esecuzione, esattamente come si farebbe con gli altri strumenti di Analizzatore grafica. Selezionare quindi la scheda **Analisi dei frame** nella finestra del documento del registro elementi grafici (con estensione vsglog).
 
- ![Selezionare la scheda analisi dei frame.](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")
+ ![Selezionare la scheda Analisi dei frame.](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")
 
  Al termine dell'analisi saranno visualizzati i risultati. Nella parte superiore della scheda Analisi dei frame sono visualizzate la sequenza temporale e la tabella Riepilogo. Nella parte superiore sono disponibili le tabelle di dettaglio. Se durante la riproduzione sono stati generati errori o avvisi, il riepilogo corrispondente sarà disponibile sopra la sequenza temporale. Per ottenere altre informazioni su errori e avvisi, selezionare i collegamenti disponibili nel riepilogo.
 
@@ -70,11 +70,11 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 #### <a name="timeline"></a>Sequenza temporale
  La sequenza temporale mostra una panoramica dei tempi reciproci di chiamata di disegno. Poiché le barre più larghe corrispondono a tempi di disegno più lunghi, è possibile usarla per individuare rapidamente le chiamate di disegno più dispendiose nel frame. Se il frame acquisito include un numero elevato di chiamate di disegno, più chiamate di disegno saranno combinate in un'unica barra, la cui lunghezza corrisponde alla somma delle chiamate di disegno specifiche.
 
- ![La sequenza temporale Mostra&#45;i costi delle chiamate di pesca.](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")
+ ![La sequenza temporale Mostra i costi delle chiamate&#45;di estrazione.](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")
 
  È possibile posizionare il puntatore su una barra per verificare l'evento di chiamata di disegno a cui corrisponde la barra. Se si seleziona la barra, l'elenco di eventi sarà sincronizzato in base all'evento specifico.
 
-#### <a name="table"></a>Table
+#### <a name="table"></a>Tabella
  La tabella numerica sotto la sequenza temporale mostra le prestazioni relative di ogni variante di rendering per ogni chiamata di disegno rispetto al rendering predefinito dell'app. Ogni colonna mostra una diversa variante di rendering e ogni riga rappresenta una chiamata di disegno diversa, identificata nella colonna più a sinistra. È possibile seguire i collegamenti relativi a un evento per visualizzarlo nella finestra Elenco eventi grafici.
 
  ![La tabella di riepilogo Mostra varianti diverse.](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")
@@ -106,7 +106,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 #### <a name="platforms-that-support-hardware-counters"></a>Piattaforme che supportano i contatori hardware
  Per le piattaforme che supportano i contatori GPU hardware, ad esempio nVidia T40 SOC e tutti i SOC Qualcomm, sono visualizzate alcune tabelle Dettagli, una per ogni variante. Ogni contatore hardware disponibile è raccolto per ogni variante di rendering ed è visualizzato nella tabella Dettagli specifica.
 
- ![I contatori hardware vengono visualizzati quando supportati.](media/pix_frame.png "pix_frame")
+ ![I contatori hardware vengono visualizzati se supportati.](media/pix_frame.png "pix_frame")
 
  Le informazioni relative ai contatori hardware offrono una visualizzazione molto dettagliata del comportamento specifico della piattaforma hardware per ogni chiamata di disegno, che possono aiutare a identificare con grande precisione la causa dei colli di bottiglia relativi alle prestazioni.
 
@@ -127,12 +127,12 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 
  Gli errori indicano in genere che nell'implementazione dell'analisi dei frame sono presenti bug, che in un driver sono presenti bug, che il supporto hardware è carente e non sono possibili soluzioni alternative oppure che l'app prova a eseguire operazioni non supportate dalla riproduzione.
 
-### <a name="retries"></a>Nuovi tentativi
+### <a name="retries"></a>Tentativi
  Se la GPU attraversa una transizione di stato di potenza durante l'analisi dei frame, eseguire di nuovo il passaggio di analisi interessato, poiché la velocità di clock della GPU ha subito modifiche e ha quindi reso non validi i risultati di durata relativa.
 
  L'analisi dei frame limita il numero di nuovi tentativi a 10. Se le impostazioni di risparmio di energia o controllo del clock della piattaforma sono molto rigide, è possibile che l'analisi dei frame abbia esito negativo e che sia segnalato un errore a causa del superamento del limite di nuovi tentativi consentiti. Per ridurre questo problema, è possibile provare a modificare le impostazioni del risparmio energia e della limitazione della velocità del clock della piattaforma in modo che siano meno rigide, se la piattaforma lo permette.
 
-## <a name="HardwareSupport"></a> Supporto hardware
+## <a name="hardware-support"></a><a name="HardwareSupport"></a> Supporto hardware
 
 ### <a name="timestamps-and-occlusion-queries"></a>Timestamp e query di occlusione
  I timestamp sono supportati in tutte le piattaforme che supportano l'analisi dei frame. Le query di occlusione della profondità, necessarie per il contatore relativo ai pixel bloccati, sono supportate sulle piattaforme che supportano funzionalità di livello 9.2 o superiori.
@@ -168,12 +168,12 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 > Questa situazione è applicabile solo alle chiamate alle API Direct3D in uso, non ai livelli di funzionalità.
 
 ### <a name="warp"></a>WARP
- L'analisi dei frame deve essere usata per la profilatura e per il miglioramento delle prestazioni di rendering in hardware effettivo. L'esecuzione dell'analisi dei frame nei dispositivi WARP non è stata impedita, ma in genere non è un'operazione utile perché la DISTORSIONe in esecuzione su una CPU di fascia alta è più bassa rispetto alla GPU moderna più idonea e le prestazioni di DISTORSIONe possono variare molto a seconda della CPU specifica viene eseguito in.
+ L'analisi dei frame deve essere usata per la profilatura e per il miglioramento delle prestazioni di rendering in hardware effettivo. L'esecuzione dell'analisi dei frame nei dispositivi di DISTORSIONe non è impedita, ma non è in genere un inconveniente perché la DISTORSIONe in esecuzione su una CPU di fascia alta è più lenta rispetto alla GPU moderna meno idonea e, poiché le prestazioni di DISTORSIONe possono variare in modo significativo a seconda della specifica CPU in cui è in esecuzione.
 
-## <a name="Variants"></a> Varianti
+## <a name="variants"></a><a name="Variants"></a> Varianti
  Ogni modifica apportata dall'analisi dei frame al modo in cui è eseguito il rendering di un frame durante la riproduzione è definita *variante*. Le varianti esaminate dall'analisi dei frame corrispondono a modifiche comuni e relativamente semplici che possono essere apportate per migliorare le prestazioni di rendering o la qualità visiva dell'app, ad esempio riducendo la dimensione delle trame, usando la compressione della trame o abilitando tipi diversi di anti-aliasing. Le varianti eseguono l'override del contesto di rendering normale e dei parametri dell'app. Di seguito è disponibile un riepilogo:
 
-|Variante|Descrizione|
+|Variant|Descrizione|
 |-------------|-----------------|
 |**Dimensione riquadro di visualizzazione 1x1**|Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [Variante delle dimensioni del viewport 1x1](1x1-viewport-size-variant.md)|
 |**0x MSAA**|Disabilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [Varianti di MSAA 0x/2x/4x](0x-2x-4x-msaa-variants.md)|
@@ -182,7 +182,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 |**Filtraggio punti della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtraggio punti della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere la pagina relativa alle [varianti di filtro di trama a punti, bilineare, trilineare e anisotropico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
 |**Filtraggio bilineare della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtraggio bilineare della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere la pagina relativa alle [varianti di filtro di trama a punti, bilineare, trilineare e anisotropico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
 |**Filtraggio trilineare della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtraggio trilineare della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere la pagina relativa alle [varianti di filtro di trama a punti, bilineare, trilineare e anisotropico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
-|**Filtraggio anisotropo della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` su `16` (filtraggio anisotropo della trama 16x) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere la pagina relativa alle [varianti di filtro di trama a punti, bilineare, trilineare e anisotropico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
+|**Filtro di trama anisotropico**|Imposta la modalità di filtraggio su `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` su `16` (filtraggio anisotropo della trama 16x) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere la pagina relativa alle [varianti di filtro di trama a punti, bilineare, trilineare e anisotropico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|
 |**Formato di destinazione di rendering 16bpp**|Imposta il formato di pixel su `DXGI_FORMAT_B5G6R5_UNORM` (16bpp, formato 565) per tutte le destinazioni di rendering e i buffer nascosti.<br /><br /> Per altre informazioni, vedere [Variante del formato di destinazione di rendering 16bpp](16bpp-render-target-format-variant.md)|
 |**Generazione di mappe MIP**|Abilita le mappe MIP in tutte le trame che non corrispondono a destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [Variante di generazione di mappe MIP](mip-map-generation-variant.md).|
 |**Dimensioni trama - Metà**|Riduce le dimensioni di trama di tutte le trame che non corrispondono a destinazioni di rendering alla metà della dimensione originale in ogni dimensione. Ad esempio, una trama con dimensioni 256x128 è ridotta a 128x64 texel.<br /><br /> Per altre informazioni, vedere [Variante delle dimensioni della trama ridotte a metà o un quarto](half-quarter-texture-dimensions-variant.md).|

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgramDestroyEvent2 . Documenti Microsoft
+title: IDebugProgramDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc83e15372a15cefccc47ea60db5ba451546ecba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722587"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
-Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando un programma è stato eseguito fino al completamento.
+Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug della sessione (SDM) quando un programma viene eseguito fino al completamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,22 +29,22 @@ IDebugProgramDestroyEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- Il DE o il fornitore della porta personalizzata implementa questa interfaccia per segnalare che un programma è stato terminato e non è più disponibile per il debug. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata sullo stesso oggetto di questa interfaccia. Il modello SDM utilizza `IDebugEvent2` [QueryInterface](/cpp/atl/queryinterface) per accedere all'interfaccia.
+ Il fornitore DE o la porta personalizzata implementa questa interfaccia per segnalare che un programma è stato terminato e non è più disponibile per il debug. L'interfaccia [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve essere implementata nello stesso oggetto di questa interfaccia. SDM utilizza [QueryInterface](/cpp/atl/queryinterface) per accedere all' `IDebugEvent2` interfaccia.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- Il DE o il fornitore della porta personalizzata crea e invia questo oggetto evento per segnalare la chiusura di un programma. Il DE invia questo evento utilizzando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) che viene fornita dal modello SDM quando collegato al programma in fase di debug. Il fornitore della porta personalizzata invia questo evento utilizzando il [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interfaccia.
+ Il fornitore della porta DE o Custom crea e invia questo oggetto evento per segnalare la chiusura di un programma. Il DE Invia questo evento usando la funzione di callback [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornita da SDM quando è collegata al programma di cui è in corso il debug. Il fornitore della porta personalizzata invia questo evento usando l'interfaccia [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) .
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente viene `IDebugProgramDestroyEvent2`illustrato il metodo di .
+ Nella tabella seguente viene illustrato il metodo di `IDebugProgramDestroyEvent2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[GetExitCode](../../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)|Ottiene il codice di uscita del programma.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590280"
 ---
 # <a name="start-command"></a>Comando Avvia
@@ -32,7 +32,7 @@ Debug.Start [address]
 ## <a name="arguments"></a>Argomenti
 `address`
 
-Facoltativa. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
+facoltativo. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
 
 ## <a name="remarks"></a>Osservazioni
 Il comando **Avvia**, quando eseguito, esegue un'operazione RunToCursor sull'indirizzo specificato.
@@ -46,7 +46,7 @@ In questo esempio viene avviato il debugger e le eccezioni vengono ignorate.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Casella Trova/comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

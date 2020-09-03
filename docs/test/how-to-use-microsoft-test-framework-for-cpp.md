@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287116"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio
@@ -23,7 +23,7 @@ Per impostazione predefinita il framework di testing unità Microsoft per C++ è
 
 In genere, il codice di test viene eseguito nel relativo progetto nella stessa soluzione del codice da testare. Per impostare e configurare un nuovo progetto di test, vedere [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md).
 
-## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a>Per scrivere unit test nello stesso progetto
+## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a> Per scrivere unit test nello stesso progetto
 
 In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL, può essere necessario creare i test nello stesso progetto del programma che si sta testando. Per scrivere unit test nello stesso progetto:
 
@@ -110,12 +110,12 @@ TEST_METHOD(Method1)
 
 I tratti predefiniti seguenti sono disponibili in `CppUnitTest.h`. Per altre informazioni, vedere le [informazioni di riferimento sulle API del framework di testing unità Microsoft per C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Macro|Description|
+|Macro|Descrizione|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Usare la macro TEST_METHOD_ATTRIBUTE per definire un tratto.|
 |`TEST_OWNER(ownerAlias)`|Usare il tratto Owner predefinito per specificare un proprietario del metodo di test.|
 |`TEST_PRIORITY(priority)`|Usare il tratto Priority predefinito per assegnare priorità relative ai metodi di test.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)

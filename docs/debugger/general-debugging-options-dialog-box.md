@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286557"
 ---
 # <a name="general-debugging-options"></a>Opzioni generali di debug
@@ -193,7 +193,7 @@ Se si usa una versione precedente di Visual Studio, potrebbero essere presenti a
 
 - Usare questa opzione quando si esegue il debug del codice .NET C++, perché il nuovo motore di debug non supporta la valutazione delle espressioni C++ .NET. Tuttavia, l'abilitazione della modalità di compatibilità nativa disabilita molte funzionalità che dipendono dall'implementazione corrente del debugger per il funzionamento. Il motore legacy, ad esempio, non dispone di molti visualizzatori per i tipi incorporati come `std::string` nei progetti di Visual Studio 2015.   In questi casi, utilizzare Visual Studio 2013 progetti per un'esperienza di debug ottimale.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

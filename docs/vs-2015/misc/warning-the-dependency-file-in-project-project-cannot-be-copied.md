@@ -1,5 +1,5 @@
 ---
-title: 'Avviso: Impossibile copiare &#39;il&#39; file delle &#39;dipendenze nel progetto&#39; di progetto nella directory di esecuzione perché sovrascriverebbe &#39;il file di riferimento. &#39; | Microsoft Docs'
+title: 'Avviso: Impossibile copiare il file di &#39;di dipendenza&#39; in Project &#39;Project&#39; nella directory di esecuzione perché sovrascriverebbe il file di &#39;di riferimento. &#39; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a619168bd07fde5d27e5c3d87dc46f505cf5268d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672812"
 ---
-# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Avviso: Impossibile copiare &#39;il&#39; file delle &#39;dipendenze nel progetto&#39; di progetto nella directory di esecuzione perché sovrascriverebbe &#39;il file di riferimento.&#39;
+# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Avviso: Impossibile copiare il file di &#39;di dipendenza&#39; in Project &#39;Project&#39; nella directory di esecuzione perché sovrascriverebbe il file di &#39;di riferimento. &#39;
 Esiste un conflitto tra le dipendenze. Per eseguire l'applicazione, è necessario copiare più di un file di assembly distinto con lo stesso nome nella directory bin. La directory di esecuzione è in grado di risolvere il conflitto, poiché una delle dipendenze è un riferimento primario.
 
  Facendo doppio clic sull'elemento Elenco attività si passerà al nodo del riferimento primario in conflitto.

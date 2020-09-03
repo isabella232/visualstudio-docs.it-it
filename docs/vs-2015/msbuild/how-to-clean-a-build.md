@@ -15,16 +15,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156651"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: pulire una compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. La libreria di attività comuni fornita con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] include un'attività [Exec](../msbuild/exec-task.md) che è possibile usare per eseguire i comandi di sistema. Per altre informazioni sulla libreria di attività, vedere [Riferimenti delle attività](../msbuild/msbuild-task-reference.md).  
+Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. La libreria di attività comuni fornita con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] include un'attività [Exec](../msbuild/exec-task.md) che è possibile usare per eseguire i comandi di sistema. Per ulteriori informazioni sulla libreria di attività, vedere [riferimento alle attività](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="creating-a-directory-for-output-items"></a>Creazione di una directory per gli elementi di output  
  Per impostazione predefinita, il file con estensione exe creato quando si compila un progetto viene inserito nella stessa directory dei file di progetto e di origine. Gli elementi di output invece vengono in genere creati in una directory distinta.  
@@ -53,11 +53,11 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 ## <a name="example"></a>Esempio  
  Il progetto di esempio di codice seguente contiene una nuova destinazione, `Clean`, che usa l'attività `RemoveDir` per eliminare una directory e tutti i file e le directory in essa contenute. Anche in questo esempio, la destinazione `Compile` crea una directory distinta per gli elementi di output che vengono eliminati durante la pulizia della compilazione.  
   
- `Compile` è definito come destinazione predefinita che viene usata automaticamente se non vengono specificate una o più destinazioni diverse. Usare l'opzione della riga di comando **/target** per specificare una destinazione diversa. Ad esempio:  
+ `Compile` è definito come destinazione predefinita che viene usata automaticamente se non vengono specificate una o più destinazioni diverse. Usare l'opzione della riga di comando **/target** per specificare un'altra destinazione. Ad esempio:  
   
  `msbuild <file name>.proj /target:Clean`  
   
- L'opzione **/target** può essere abbreviata in **/t** e può specificare più di una destinazione. Ad esempio, per usare la destinazione `Clean` e quindi la destinazione `Compile`, digitare:  
+ Il parametro **/target** può essere abbreviato in **/t** e può specificare più di una destinazione. Ad esempio, per usare la destinazione `Clean` e quindi la destinazione `Compile`, digitare:  
   
  `msbuild <file name>.proj /t:Clean;Compile`  
   
@@ -106,4 +106,4 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
  [Attività MakeDir](../msbuild/makedir-task.md)   
  [Attività RemoveDir](../msbuild/removedir-task.md)   
  [Attività Csc](../msbuild/csc-task.md)   
- [Destinazioni](../msbuild/msbuild-targets.md)
+ [Server di destinazione](../msbuild/msbuild-targets.md)

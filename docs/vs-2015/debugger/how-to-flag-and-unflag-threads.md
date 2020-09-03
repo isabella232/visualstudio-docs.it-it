@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Impostare e rimuovere i flag dei thread | Microsoft Docs'
+title: 'Procedura: contrassegnare e decontrassegnare i thread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,22 +17,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189432"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Procedura: Impostare e rimuovere i flag dei thread
+# <a name="how-to-flag-and-unflag-threads"></a>Procedura: impostare e rimuovere i flag dei thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile contrassegnare un thread che si desidera prestare particolare attenzione mediante un'icona nella **thread**, **stack in parallelo**, **espressioni di controllo parallela**, e **GPU Thread** windows. Questa icona può essere d'aiuto all'utente e ad altri per distinguere i thread con flag dagli altri thread.  
+È possibile contrassegnare un thread che si desidera prestare particolare attenzione contrassegnando l'icona con un'icona nelle finestre **thread**, **stack in parallelo**, espressione di controllo in **parallelo**e **thread GPU** . Questa icona può essere d'aiuto all'utente e ad altri per distinguere i thread con flag dagli altri thread.  
   
- Thread con flag ricevono inoltre un trattamento speciale nel **Thread** elenco le **posizione di Debug** sulla barra degli strumenti. In questo elenco possono essere visualizzati tutti i thread o soltanto i thread con flag. Quando si contrassegna un thread, il **Thread** elenco automaticamente cambia per mostrare solo thread con flag, ma è possibile tornare indietro per mostrare tutti i thread come appropriato.  
+ I thread contrassegnati ricevono anche un trattamento speciale nell'elenco dei **thread** sulla barra degli strumenti **posizione di debug** . In questo elenco possono essere visualizzati tutti i thread o soltanto i thread con flag. Quando si contrassegna un thread, l'elenco dei **thread** passa automaticamente a visualizzare solo i thread contrassegnati, ma è possibile tornare indietro per visualizzare tutti i thread nel modo appropriato.  
   
 ### <a name="to-flag-or-unflag-a-thread-by-using-the-threads-window"></a>Per impostare o rimuovere un flag di un thread utilizzando la finestra Thread  
   
-- Nel **thread** finestra, trovare il thread si è interessati e fare clic sull'icona del flag per selezionare o deselezionare il flag.  
+- Nella finestra **thread** trovare il thread a cui si è interessati e fare clic sull'icona del flag per selezionare o deselezionare il flag.  
   
 ### <a name="to-unflag-all-threads"></a>Per rimuovere i flag di tutti thread  
   
@@ -61,5 +61,5 @@ ms.locfileid: "68189432"
 5. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Procedura dettagliata: Debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+ [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Procedura dettagliata: debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md)

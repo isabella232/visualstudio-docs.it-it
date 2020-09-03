@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285049"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gestire i pacchetti npm in Visual Studio
@@ -42,12 +42,12 @@ Queste funzionalità interagiscono e si sincronizzano con il sistema di progetto
 
 ### <a name="prerequisites"></a>Prerequisiti
 
-Per aggiungere il supporto NPM al progetto sono necessari il carico di lavoro di **sviluppoNode.js** e il runtime di Node.js installato. Per i passaggi dettagliati, vedere [creare un Node.js progetto](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
+Per aggiungere il supporto NPM al progetto sono necessari il carico di lavoro di ** sviluppoNode.js** e il runtime di Node.js installato. Per i passaggi dettagliati, vedere [creare un Node.js progetto](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
 
 > [!NOTE]
 > Per i progetti di Node.js esistenti, usare il modello **di soluzione da codice Node.js esistente** o il tipo di progetto [cartella aperta (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) per abilitare NPM nel progetto.
 
-### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a>Installare i pacchetti da Esplora soluzioni (Node.js)
+### <a name="install-packages-from-solution-explorer-nodejs"></a><a name="npmInstallWindow"></a> Installare i pacchetti da Esplora soluzioni (Node.js)
 
 Per i progetti Node.js, il modo più semplice per installare i pacchetti NPM è tramite la finestra di installazione dei pacchetti NPM. Per accedere a questa finestra, fare clic con il pulsante destro del mouse sul nodo **npm** nel progetto e selezionare **Installa nuovi pacchetti npm**.
 
@@ -128,7 +128,7 @@ Per progetti come ASP.NET Core progetti, è possibile integrare il supporto NPM 
 >[!NOTE]
 > Per ASP.NET Core progetti, è anche possibile usare [Gestione librerie](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o Yarn anziché NPM per installare i file CSS e JavaScript sul lato client.
 
-### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a>Aggiungere il supporto NPM a un progetto (ASP.NET Core)
+### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> Aggiungere il supporto NPM a un progetto (ASP.NET Core)
 
 Se il progetto non include già un *package.jssu* file, è possibile aggiungerne uno per abilitare il supporto di NPM aggiungendo un *package.jssul* file al progetto.
 
@@ -140,7 +140,7 @@ Se il progetto non include già un *package.jssu* file, è possibile aggiungerne
 
    ![Aggiungere package.jsal progetto](../javascript/media/npm-add-package-json.png)
 
-   Se il file di configurazione NPM non è elencato, non sono installati Node.js strumenti di sviluppo. È possibile utilizzare il Programma di installazione di Visual Studio per aggiungere il carico di lavoro di **sviluppoNode.js** . Ripetere quindi il passaggio precedente.
+   Se il file di configurazione NPM non è elencato, non sono installati Node.js strumenti di sviluppo. È possibile utilizzare il Programma di installazione di Visual Studio per aggiungere il carico di lavoro di ** sviluppoNode.js** . Ripetere quindi il passaggio precedente.
 
 1. Includere uno o più pacchetti NPM nella `dependencies` sezione o `devDependencies` di *package.json*. Ad esempio, è possibile aggiungere il codice seguente al file:
 
@@ -151,7 +151,7 @@ Se il progetto non include già un *package.jssu* file, è possibile aggiungerne
    }
    ```
 
-Quando si salva il file, Visual Studio aggiunge il pacchetto nel nodo **dipendenze/NPM** in Esplora soluzioni. Se il nodo non è visibile, fare clic con il pulsante destro **del mouse supackage.js** e scegliere **Ripristina pacchetti**.
+Quando si salva il file, Visual Studio aggiunge il pacchetto nel nodo **dipendenze/NPM** in Esplora soluzioni. Se il nodo non è visibile, fare clic con il pulsante destro ** del mouse supackage.js** e scegliere **Ripristina pacchetti**.
 
 >[!NOTE]
 > In alcuni scenari Esplora soluzioni possibile che non venga visualizzato lo stato corretto per i pacchetti NPM installati. Per altre informazioni, vedere [Risoluzione dei problemi](#troubleshooting-npm-packages).
@@ -166,7 +166,7 @@ IntelliSense in *package.json* consente di selezionare una particolare versione 
 
 :::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Selezionare la versione del pacchetto NPM" border="true":::
 
-Quando si salva il file, Visual Studio aggiunge il pacchetto nel nodo **dipendenze/NPM** in Esplora soluzioni. Se il nodo non è visibile, fare clic con il pulsante destro **del mouse supackage.js** e scegliere **Ripristina pacchetti**.
+Quando si salva il file, Visual Studio aggiunge il pacchetto nel nodo **dipendenze/NPM** in Esplora soluzioni. Se il nodo non è visibile, fare clic con il pulsante destro ** del mouse supackage.js** e scegliere **Ripristina pacchetti**.
 
 L'installazione di un pacchetto potrebbe richiedere alcuni minuti. Controllare l'avanzamento dell'installazione del pacchetto passando all'output di **NPM** nella finestra **output** .
 
@@ -176,7 +176,7 @@ L'installazione di un pacchetto potrebbe richiedere alcuni minuti. Controllare l
 
 * NPM richiede Node.js se non è stato installato Node.js, è consigliabile installare la versione LTS dal sito Web di [Node.js](https://nodejs.org/en/download/) per la migliore compatibilità con le librerie e i framework esterni.
 
-* Per Node.js progetti, è necessario avere installato il carico di lavoro di **sviluppoNode.js** per il supporto di NPM.
+* Per Node.js progetti, è necessario avere installato il carico di lavoro di ** sviluppoNode.js** per il supporto di NPM.
 
 * In alcuni scenari Esplora soluzioni possibile che non venga visualizzato lo stato corretto per i pacchetti NPM installati a causa di un problema noto descritto [qui](https://github.com/aspnet/Tooling/issues/479). È ad esempio possibile che il pacchetto venga visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *package.js*, riavviando Visual Studio e aggiungendo nuovamente il *package.jssul* file come descritto in precedenza in questo articolo. In alternativa, quando si installano i pacchetti, è possibile usare la finestra di output NPM per verificare lo stato dell'installazione.
 

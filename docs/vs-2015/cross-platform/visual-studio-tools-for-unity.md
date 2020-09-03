@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155260"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity
@@ -24,7 +24,7 @@ In questa sezione verrà illustrato Visual Studio Tools per Utility, un’estens
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity  
  **Unity** è un motore di gioco e un ambiente di sviluppo per la creazione di giochi multipiattaforma. Il motore Unity viene eseguito su decine di piattaforme a partire da potenti PC, alle console di gioco, ai tablet e ai cellulari touchscreen, fino al Web. L'editor di Unity offre un'interfaccia intuitiva per la creazione di scenari di gioco avanzati. La funzionalità, la semplicità d'uso e la portata di Unity contribuiscono a renderlo estremamente popolare tra gli odierni sviluppatori di giochi.  
   
- L'editor di Unity è la scelta ideale per comporre scenari di gioco, ma non è possibile usarlo per scriverci codice. Con **Visual Studio Tools per Unity** è possibile usare le funzionalità di produttività e di modifica e debug del codice di Visual Studio già note per creare script di editor e di gioco per i progetti Unity con C# ed eseguirne il debug con le potenti funzionalità di debug di Visual Studio.  
+ L'editor di Unity è la scelta ideale per comporre scenari di gioco, ma non è possibile usarlo per scriverci codice. Con **Visual Studio Tools per Unity**, è possibile usare le funzionalità note di modifica del codice, debug e produttività di Visual Studio per creare script di editor e di gioco per il progetto Unity con C# ed è possibile eseguirne il debug con le potenti funzionalità di debug di Visual Studio.  
   
  Ma Visual Studio Tools per Unity non è solo questo. È infatti strettamente integrato con l'editor di Unity, di conseguenza non è necessario passare dall'uno all'altro per eseguire semplici attività. Include inoltre funzionalità per ottimizzare la produttività specifiche di Unity e permette di accedere rapidamente alla documentazione di Unity.  
   
@@ -34,7 +34,7 @@ In questa sezione verrà illustrato Visual Studio Tools per Utility, un’estens
  [Panoramica](../cross-platform/overview-of-visual-studio-tools-for-unity.md)  
  In questa sezione si apprenderà sulle funzionalità offerte da Visual Studio Tools per Unity in maggiore dettaglio.  
   
- [Introduzione](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)  
+ [Per iniziare](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)  
  In questa sezione verrà illustrato come installare Visual Studio Tools per Unity per la versione di Visual Studio corrente e come iniziare a usare Visual Studio con il progetto Unity.  
   
  [Uso di Visual Studio Tools per Unity](../cross-platform/using-visual-studio-tools-for-unity.md)  

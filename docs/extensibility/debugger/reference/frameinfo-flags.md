@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO_FLAGS . Documenti Microsoft
+title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736805"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
@@ -102,70 +102,70 @@ public enum enum_FRAMEINFO_FLAGS {
 
 ## <a name="fields"></a>Campi
 `FIF_FUNCNAME`\
-Inizializzare/utilizzare `m_bstrFuncName` il campo.
+Inizializzare/usare il `m_bstrFuncName` campo.
 
 `FIF_RETURNTYPE`\
-Inizializzare/utilizzare `m_bstrReturnType` il campo.
+Inizializzare/usare il `m_bstrReturnType` campo.
 
 `FIF_ARGS`\
-Inizializzare/utilizzare `m_bstrArgs` il campo.
+Inizializzare/usare il `m_bstrArgs` campo.
 
 `FIF_LANGUAGE`\
-Inizializzare/utilizzare `m_bstrLanguage` il campo.
+Inizializzare/usare il `m_bstrLanguage` campo.
 
 `FIF_MODULE`\
-Inizializzare/utilizzare `m_bstrModule` il campo.
+Inizializzare/usare il `m_bstrModule` campo.
 
 `FIF_STACKRANGE`\
-Inizializzare/utilizzare `m_addrMin` `m_addrMax` i campi e (intervallo di stack).
+Inizializza/usa i `m_addrMin` `m_addrMax` campi e (intervallo stack).
 
 `FIF_FRAME`\
-Inizializzare/utilizzare `m_pFrame` il campo.
+Inizializzare/usare il `m_pFrame` campo.
 
 `FIF_DEBUGINFO`\
-Inizializzare/utilizzare `m_fHasDebugInfo` il campo.
+Inizializzare/usare il `m_fHasDebugInfo` campo.
 
 `FIF_STALECODE`\
-Inizializzare/utilizzare `m_fStaleCode` il campo.
+Inizializzare/usare il `m_fStaleCode` campo.
 
 `FIF_ANNOTATEDFRAME`\
-Inizializzare/utilizzare `m_fAnnotatedFrame` il campo.
+Inizializzare/usare il `m_fAnnotatedFrame` campo.
 
 `FIF_DEBUG_MODULEP`\
-Inizializzare/utilizzare `m_pModule` il campo.
+Inizializzare/usare il `m_pModule` campo.
 
 `FIF_FUNCNAME_FORMAT`\
-Formatta il nome della funzione. Il risultato viene `m_bstrFunName` restituito nel campo e non vengono compilati altri campi.
+Formatta il nome della funzione. Il risultato viene restituito nel `m_bstrFunName` campo e nessun altro campo viene compilato.
 
 `FIF_FUNCNAME_RETURNTYPE`\
-Aggiunge il tipo `m_bstrFuncName` restituito al campo.
+Aggiunge il tipo restituito al `m_bstrFuncName` campo.
 
 `FIF_FUNCNAME_ARGS`\
-Aggiunge gli argomenti `m_bstrFuncName` al campo.
+Aggiunge gli argomenti al `m_bstrFuncName` campo.
 
 `FIF_FUNCNAME_LANGUAGE`\
-Aggiunge la lingua `m_bstrFuncName` al campo.
+Aggiunge la lingua al `m_bstrFuncName` campo.
 
 `FIF_FUNCNAME_MODULE`\
-Aggiunge il nome `m_bstrFuncName` del modulo al campo.
+Aggiunge il nome del modulo al `m_bstrFuncName` campo.
 
 `FIF_FUNCNAME_LINES`\
-Aggiunge il numero di `m_bstrFuncName` righe al campo.
+Aggiunge il numero di righe al `m_bstrFuncName` campo.
 
 `FIF_FUNCNAME_OFFSET`\
-Aggiunge al `m_bstrFuncName` campo l'offset in byte dall'inizio della riga, se `FIF_FUNCNAME_LINES` specificato. Se `FIF_FUNCNAME_LINES` non viene specificato o se i numeri di riga non sono disponibili, aggiunge l'offset in byte dall'inizio della funzione.
+Aggiunge al `m_bstrFuncName` campo l'offset in byte dall'inizio della riga se `FIF_FUNCNAME_LINES` è specificato. Se `FIF_FUNCNAME_LINES` non è specificato o se i numeri di riga non sono disponibili, aggiunge l'offset in byte dall'inizio della funzione.
 
 `FIF_FUNCNAME_ARGS_TYPES`\
-Aggiunge il tipo di ogni `m_bstrFuncName` argomento di funzione al campo.
+Aggiunge al campo il tipo di ogni argomento della funzione `m_bstrFuncName` .
 
 `FIF_FUNCNAME_ARGS_NAMES`\
-Aggiunge il nome di ogni `m_bstrFuncName` argomento di funzione al campo.
+Aggiunge il nome di ogni argomento di funzione al `m_bstrFuncName` campo.
 
 `FIF_FUNCNAME_ARGS_VALUES`\
-Aggiunge il valore di ogni `m_bstrFuncName` argomento di funzione al campo.
+Aggiunge il valore di ogni argomento della funzione al `m_bstrFuncName` campo.
 
 `FIF_FUNCNAME_ARGS_ALL`\
-Aggiunge il tipo, il nome e `m_bstrFuncName` il valore di tutti gli argomenti al campo.
+Aggiunge il tipo, il nome e il valore di tutti gli argomenti al `m_bstrFuncName` campo.
 
 `FIF_ARGS_TYPES`\
 I tipi di argomento vengono recuperati e formattati.
@@ -180,29 +180,29 @@ I valori degli argomenti vengono recuperati e formattati.
 Recuperare e formattare il tipo, il nome e il valore di tutti gli argomenti.
 
 `FIF_ARGS_NOFORMAT`\
-Specifica che gli argomenti non vengono formattati (ad esempio, non aggiungere parentesi di apertura e chiusura intorno all'elenco di argomenti né aggiungere un separatore tra gli argomenti).
+Specifica che gli argomenti non devono essere formattati, ad esempio non aggiungere parentesi di apertura e chiusura intorno all'elenco di argomenti né aggiungere un separatore tra gli argomenti.
 
 `FIF_ARGS_NO_FUNC_EVAL`\
 Specifica che la valutazione della funzione (proprietà) non deve essere utilizzata durante il recupero dei valori degli argomenti.
 
 `FIF_FILTER_NON_USER_CODE`\
-Il motore di debug consente di filtrare i frame di codice non utente in modo che non siano inclusi.
+Il motore di debug prevede di filtrare i frame del codice non utente, in modo che non siano inclusi.
 
 `FIF_ARGS_NO_TOSTRING`\
-Non consentire `ToString()` la valutazione o la formattazione della funzione quando si restituiscono argomenti di funzione.
+Non consentire la `ToString()` valutazione o la formattazione della funzione quando vengono restituiti argomenti della funzione.
 
 `FIF_DESIGN_TIME_EXPR_EVAL`\
-Le informazioni sui frame devono essere ottenute dal dominio dell'app ospitata anziché dal processo di hosting.
+Le informazioni sul frame devono essere ottenute dal dominio dell'app ospitata, anziché dal processo di hosting.
 
 ## <a name="remarks"></a>Osservazioni
-Questi flag vengono passati ai metodi [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) e [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) per indicare i campi da inizializzare nella struttura o nelle strutture [FRAMEINFO.](../../../extensibility/debugger/reference/frameinfo.md)
+Questi flag vengono passati ai metodi [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) e [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) per indicare quali campi devono essere inizializzati nella struttura o nelle strutture [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) .
 
-Questi flag vengono utilizzati anche per indicare quali campi della struttura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) vengono utilizzati e validi quando viene restituita la struttura. Questi valori possono essere combinati `OR`con un oggetto .
+Questi flag vengono usati anche per indicare quali campi della struttura [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) vengono usati e validi quando viene restituita la struttura. Questi valori possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

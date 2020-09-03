@@ -1,5 +1,5 @@
 ---
-title: proprietà FIELD_MODIFIERS . Documenti Microsoft
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736850"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
@@ -109,13 +109,13 @@ public enum enum_FIELD_MODIFIERS {
 Indica che non è possibile accedere al campo.
 
 `FIELD_MOD_ACCESS_PUBLIC`\
-Indica che il campo ha accesso pubblico.
+Indica che il campo dispone di accesso pubblico.
 
 `FIELD_MOD_ACCESS_PROTECTED`\
-Indica che il campo ha accesso protetto.
+Indica che il campo dispone di accesso protetto.
 
 `FIELD_MOD_ACCESS_PRIVATE`\
-Indica che il campo ha accesso privato.
+Indica che il campo dispone di accesso privato.
 
 `FIELD_MOD_NOMODIFIERS`\
 Indica che il campo non dispone di modificatori.
@@ -151,7 +151,7 @@ Indica che il campo è un'interfaccia.
 Indica che il campo è finale.
 
 `FIELD_MOD_SENTINEL`\
-Indica che il campo è una sentinella.
+Indica che il campo è un Sentinel.
 
 `FIELD_MOD_INNERCLASS`\
 Indica che il campo è una classe interna.
@@ -166,32 +166,32 @@ Indica che il campo è un argomento di riferimento. Questo è specifico per gli 
 Indica che il campo deve essere nascosto o presentato in un altro contesto; ad esempio, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variabili locali statiche.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Indica che il campo rappresenta `IUnknown` un oggetto con un'interfaccia.
+Indica che il campo rappresenta un oggetto con un' `IUnknown` interfaccia.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Indica che il campo ha un nome `.ctor` speciale,[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] ad esempio per un costruttore (solo).
+Indica che il campo ha un nome speciale, ad esempio `.ctor` per un costruttore ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
 
 `FIELD_MOD_HIDEBYSIG`\
-Indica che al campo `Overloads` è applicata[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] la parola chiave (solo).
+Indica che al campo è stata `Overloads` applicata la parola chiave ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] solo).
 
 `FIELD_MOD_WRITEONLY`\
-Indica che il campo è di sola scrittura. Questo valore non `FIELD_MOD_ALL`è incluso in , poiché l'unico utilizzo di tali campi di sola scrittura è per la valutazione della funzione. Un utente deve `FIELD_MOD_WRITEONLY` richiedere esplicitamente i campi.
+Indica che il campo è di sola scrittura. Questo valore non è incluso in `FIELD_MOD_ALL` , poiché l'unico utilizzo di questi campi di sola scrittura è per la valutazione della funzione. Un utente deve richiedere in modo esplicito i `FIELD_MOD_WRITEONLY` campi.
 
 `FIELD_MOD_ACCESS_MASK`\
-Indica una maschera per l'accesso ai campi.
+Indica una maschera per l'accesso al campo.
 
 `FIELD_MOD_MASK`\
 Indica una maschera per i modificatori di campo.
 
 ## <a name="remarks"></a>Osservazioni
-Utilizzato per `dwModifiers` il membro della [struttura FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
+Utilizzato per il `dwModifiers` membro della struttura [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .
 
-Questi valori vengono inoltre passati al metodo [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) per filtrare campi specifici.
+Questi valori vengono passati anche al metodo [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) per filtrare campi specifici.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: sh.h
+Intestazione: sh. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

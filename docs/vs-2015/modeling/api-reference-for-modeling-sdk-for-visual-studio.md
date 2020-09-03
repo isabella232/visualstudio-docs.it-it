@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 65f8703597d6297afde6e2685594784fdd1d755c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672840"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Riferimento API per SDK di modellazione per Visual Studio
@@ -26,7 +26,7 @@ Visual Studio Visualization and Modeling SDK fornisce la piattaforma in cui veng
 
  Questa sezione contiene materiale di riferimento per gli spazi dei nomi con nomi che iniziano con "Microsoft. VisualStudio. Modeling".
 
-|Spazio dei nomi|Contenuto|
+|Spazio dei nomi|Content|
 |---------------|-------------|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|Classi come ModelElement, che è la classe di base di tutte le classi di dominio definite in un linguaggio DSL.|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|Classi che fanno parte di una definizione DSL.|
@@ -42,9 +42,9 @@ Visual Studio Visualization and Modeling SDK fornisce la piattaforma in cui veng
 |[Microsoft. VisualStudio. Modeling. Integration](/previous-versions/ee904412(v=vs.140))|API ModelBus, che consente di integrare modelli diversi.|
 |[Microsoft. VisualStudio. Modeling. Integration. Picker](/previous-versions/ee904394(v=vs.140))|La finestra di dialogo che consente agli utenti di passare a modelli ed elementi per creare riferimenti ModelBus.|
 |`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|Il servizio di selezione.|
-|[Microsoft. VisualStudio. Modeling. Integration. Shell](/previous-versions/ee869435(v=vs.140))|Framework dell'adattatore ModelBus per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Microsoft. VisualStudio. Modeling. Integration. Shell](/previous-versions/ee869435(v=vs.140))|Framework dell'adattatore ModelBus per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|
 |[Microsoft. VisualStudio. Modeling. Integration. Shell. Picker](/previous-versions/ee886769(v=vs.140))|La finestra di dialogo di selezione che consente agli utenti di passare a modelli ed elementi per creare riferimenti ModelBus.|
-|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Interfaccia tra DSLs e [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Interfaccia tra DSLs e [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Consente di definire i comandi di menu di scelta rapida.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Consente di definire vincoli di convalida.|
 

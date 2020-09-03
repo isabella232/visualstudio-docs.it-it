@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE Documenti Microsoft
+title: GETNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736668"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
@@ -69,7 +69,7 @@ Specifica un nome univoco del documento o del contesto sotto forma di moniker.
 Specifica un nome URL del documento o del contesto.
 
 `GN_TITLE`\
-Specifica un titolo del documento, se presente.
+Specifica un titolo del documento, se disponibile.
 
 `GN_STARTPAGEURL`\
 Ottiene l'URL della pagina iniziale per i processi.
@@ -78,9 +78,9 @@ Ottiene l'URL della pagina iniziale per i processi.
 Questi valori vengono passati come parametri ai metodi [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) per specificare il tipo di nome da restituire.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

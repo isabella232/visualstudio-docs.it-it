@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9ab05d85b55fd293b648603f067d135f703aff5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205011"
 ---
-# <a name="processinfo"></a>PROCESS_INFO
+# <a name="process_info"></a>PROCESS_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Contiene informazioni sul processo.  
+Contiene informazioni su un processo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -54,41 +54,41 @@ public struct PROCESS_INFO { 
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  Campi  
- Una combinazione di flag dal [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) enumerazione che specificano quali campi vengono compilati.  
+ Combinazione di flag dell'enumerazione [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) che specificano i campi da compilare.  
   
  bstrFileName  
- Nome e percorso completo del processo. Equivalente alla chiamata di [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metodo con il parametro `GN_FILENAME`.  
+ Nome del percorso completo del processo. Equivale a chiamare il metodo [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) con il parametro `GN_FILENAME` .  
   
  bstrBaseName  
- Il nome del file e l'estensione del processo. Equivalente alla chiamata di `IDebugProcess2::Getname` metodo con il parametro `GN_BASENAME`.  
+ Il nome file e l'estensione del processo. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_BASENAME` .  
   
  bstrTitle  
- Il titolo del processo, se presente. Equivalente alla chiamata di `IDebugProcess2::Getname` metodo con il parametro `GN_TITLE`.  
+ Titolo del processo, se ne esiste uno. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_TITLE` .  
   
  ProcessId  
- Il [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che identifica il processo. Equivalente alla chiamata di [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) (metodo).  
+ Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) che identifica il processo. Equivale a chiamare il metodo [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) .  
   
  dwSessionId  
- L'identificatore della sessione di debug che questo processo è in esecuzione in.  
+ Identificatore della sessione di debug in cui è in esecuzione il processo.  
   
  bstrAttachedSessionName  
- Nome della sessione associata. Equivalente alla chiamata di [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) (metodo).  
+ Nome della sessione associata. Equivale a chiamare il metodo [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) .  
   
  CreationTime  
- Ora che il processo è stato creato.  
+ Ora di creazione del processo.  
   
- Flag  
- Una combinazione di flag dal [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) enumerazione che specificano le proprietà del processo.  
+ Flags  
+ Combinazione di flag dell'enumerazione [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) che specificano le proprietà del processo.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene passata per il [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) in cui viene compilato nel metodo.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) dove viene compilata.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

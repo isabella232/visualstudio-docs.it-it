@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590241"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
@@ -56,7 +56,7 @@ Un modello di requisiti offre un vantaggio maggiore se viene usato per concentra
 
 La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per una panoramica dei tipi di diagramma, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).
 
-## <a name="BusinessRules"></a> Showing Business Rules
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Visualizzazione delle regole di business
 
 Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
 
@@ -70,19 +70,19 @@ Tuttavia, molte regole dinamiche possono essere illustrate più efficacemente e 
 
 Si noti che la scelta in questo caso riguarda la modalità di definizione dei requisiti ed è indipendente dal modo in cui vengono implementati i requisiti nel codice programma.
 
-Per altre informazioni, vedere gli argomenti seguenti:
+Per ulteriori informazioni, vedere gli argomenti indicati di seguito.
 
-|Per ulteriori informazioni su|Lettura|
+|Informazioni|Lettura|
 |-|-|
 |Come sviluppare codice che soddisfi le regole di business|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Descrizione dei requisiti di qualità del servizio
 
 Esistono diverse categorie di requisiti per la qualità del servizio. Essi includono quanto segue:
 
 - Prestazioni
 
-- Sicurezza -
+- Sicurezza
 
 - Usabilità
 

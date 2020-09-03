@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278709"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
@@ -28,7 +28,7 @@ In questo articolo vengono descritte le opzioni di Visual Studio 2017. Per Visua
 
 ::: moniker-end
 
-Per accedere a questa pagina delle proprietà, premere **CTRL**+**Q** per attivare la casella di ricerca e quindi **digitare experimental**. La ricerca trova la pagina dopo le prime lettere. È inoltre possibile osali scegliendo**Opzioni** **degli** > strumenti ed espandendo **l'editor**di testo , quindi **C/C,** quindi fare clic su **Sperimentale**.
+Per accedere a questa pagina delle proprietà, premere **CTRL** + **Q** per attivare la casella di ricerca e quindi digitare **Experimental**. La ricerca trova la pagina dopo le prime lettere. È anche possibile accedervi scegliendo **strumenti**  >  **Opzioni** ed espandendo **editor di testo**, **C/C++** e quindi scegliendo **sperimentale**.
 
 In un'installazione di Visual Studio sono disponibili queste funzionalità.
 
@@ -61,7 +61,7 @@ Questa opzione consente a Visual Studio di memorizzare nella cache i dati di pro
 
 - **Guida in linea**: cercare informazioni online per i messaggi di errore
 
-- E molto altro ancora.
+- E altro ancora
 
 ## <a name="see-also"></a>Vedere anche
 

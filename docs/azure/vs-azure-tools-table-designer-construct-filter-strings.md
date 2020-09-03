@@ -10,32 +10,32 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 13ca51a6c7b505605409cbb6bb2f17e618c45179
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911654"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Creazione di stringhe di filtro per Progettazione tabelle
 ## <a name="overview"></a>Panoramica
 Per filtrare i dati in una tabella di Azure visualizzata in **Progettazione tabelle**di Visual Studio, creare una stringa di filtro e immetterla nel campo del filtro. La sintassi della stringa di filtro è definita da WCF Data Services ed è simile a una clausola WHERE SQL, ma viene inviata al servizio tabelle con una richiesta HTTP. **Progettazione tabelle** gestisce automaticamente la codifica appropriata, quindi per filtrare in base a un valore di proprietà desiderato, è necessario immettere solo il nome della proprietà, l'operatore di confronto, il valore dei criteri e, facoltativamente, l'operatore booleano nel campo del filtro. Non è necessario includere l'opzione di query $filter come quando si crea un URL per eseguire la query della tabella in base alle [Informazioni di riferimento sulle API REST dei servizi di archiviazione](/rest/api/storageservices/).
 
-WCF Data Services si basa su [Open Data Protocol](https://www.odata.org/) (OData). Per i dettagli sull'opzione di query del sistema di filtro ( **$filter**), vedere la [specifica sulle convenzioni URI OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+WCF Data Services si basa su [Open Data Protocol](https://www.odata.org/) (OData). Per i dettagli sull'opzione di query del sistema di filtro (**$filter**), vedere la [specifica sulle convenzioni URI OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operatori di confronto
 Gli operatori logici seguenti sono supportati per tutti i tipi di proprietà:
 
 | Operatore logico | Descrizione | Stringa di filtro di esempio |
 | --- | --- | --- |
-| eq |Uguale |Città eq "Redmond" |
+| eq |Uguale a |Città eq "Redmond" |
 | gt |Maggiore di |Prezzo gt 20 |
 | ge |Maggiore o uguale a |Prezzo ge 10 |
 | lt |Minore di |Prezzo lt 20 |
 | le |Minore o uguale a |Prezzo le 100 |
-| ne |Non uguaglianza |Città ne "Londra" |
+| ne |Diverso da |Città ne "Londra" |
 | e |e |Prezzo le 200 and Prezzo gt 3,5 |
 | Oppure |Oppure |Prezzo le 3,5 or Prezzo gt 200 |
-| not |not |not isAvailable |
+| not |Not |not isAvailable |
 
 Quando si crea una stringa di filtro, tenere presente le regole seguenti:
 

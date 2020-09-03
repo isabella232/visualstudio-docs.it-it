@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734894"
 ---
 # <a name="mip-map-generation-variant"></a>Variante di generazione di mappe MIP
@@ -25,8 +25,8 @@ Per le scene 3D, è consigliabile usare le mappe MIP quando è disponibile memor
 
 Se questa variante mostra un aumento delle prestazioni significativo, indica che si stanno usando trame senza abilitare le mappe MIP e pertanto senza sfruttare al massimo la cache delle trame.
 
-## <a name="remarks"></a>Note
-La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, la generazione di mappe MIP viene forzata quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una risorsa shader che non cambia. Cioè:
+## <a name="remarks"></a>Osservazioni
+La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, la generazione di mappe MIP viene forzata quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una risorsa shader che non cambia, ovvero:
 
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.
 
@@ -70,4 +70,4 @@ Ricordare che quando vengono forniti i dati iniziali a `CreateTexture2D`, è nec
 > Se si vuole fornire contenuto di livello MIP personalizzato anziché generarlo automaticamente, è necessario creare le proprie trame tramite un editor di immagini che supporta trame con mappe MIP, caricare il file e passare i livelli MIP a `CreateTexture2D`.
 
 ## <a name="see-also"></a>Vedere anche
-[Variante delle dimensioni della trama ridotte a metà o un quarto](half-quarter-texture-dimensions-variant.md)
+[Variante delle dimensioni della trama metà/trimestre](half-quarter-texture-dimensions-variant.md)

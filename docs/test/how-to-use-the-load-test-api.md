@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1fc3ff1aa238249f7425c61b5b28d2a96e299fec
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287103"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Procedura: Usare l'API del test di carico
@@ -59,7 +59,7 @@ Visual Studio supporta plug-in di test di carico che consentono di controllare o
 
      Per un'implementazione di <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> , vedere [procedura: creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)

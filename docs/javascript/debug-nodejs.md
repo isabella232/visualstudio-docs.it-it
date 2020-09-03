@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285192"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
@@ -58,7 +58,7 @@ Se l'origine è minimizzata o creata da un transpiler come TypeScript o Babel, �
 
 Per informazioni sulla generazione di mappe di origine, vedere [generare mappe di origine per il debug](#generate_source_maps).
 
-### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a>Preparare il browser per il debug
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a> Preparare il browser per il debug
 
 ::: moniker range=">=vs-2019"
 Per questo scenario, usare Microsoft Edge (cromo), attualmente denominato **Microsoft Edge beta** nell'IDE o Chrome.
@@ -162,7 +162,7 @@ Per allungare il debugger da Visual Studio e raggiungere i punti di interruzione
 
    * Se è necessario suddividere il codice in un file JavaScript transpiled (ad esempio *app-bundle.js*) e non è possibile eseguire questa operazione, rimuovere il file di mapping di origine *filename.js. map*.
 
-### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a>Risoluzione dei problemi relativi a punti di interruzione e mappe di origine
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a> Risoluzione dei problemi relativi a punti di interruzione e mappe di origine
 
 Se è necessario suddividere il codice in un file di origine TypeScript o JSX e non è possibile eseguire questa operazione, usare **Connetti a processo** come descritto nei passaggi precedenti per la connessione del debugger. Assicurarsi che l'ambiente sia configurato correttamente:
 
@@ -210,7 +210,7 @@ Si tratta di un'impostazione di solo sviluppo per abilitare il debug del codice 
 
 Per gli scenari complessi, gli strumenti del browser (**F12**) a volte funzionano meglio per il debug, in quanto non richiedono modifiche ai prefissi personalizzati.
 
-### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a>Configurare i mapping di origine usando un tsconfig.jssu file
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a> Configurare i mapping di origine usando un tsconfig.jssu file
 
 Se si aggiunge al progetto un file *tsconfig.json*, Visual Studio considera la directory radice come un progetto TypeScript. Per aggiungere il file, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, quindi scegliere **aggiungi > nuovo elemento > file di configurazione JSON di typescript**. Viene aggiunto al progetto un file *tsconfig.json* simile al seguente.
 

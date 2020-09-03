@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreatePrimitiveObject | Microsoft Docs
+title: 'IDebugFunctionObject:: CreatePrimitiveObject | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3531483c113c37587b253bed90a9985541b2e526
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179451"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Crea un oggetto di dati primitivi, ad esempio un semplice numero intero.  
+Crea un oggetto dati primitivo, ad esempio un intero semplice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int CreatePrimitiveObject(
   
 #### <a name="parameters"></a>Parametri  
  `ot`  
- [in] Un valore compreso il [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumerazione che rappresenta il tipo della primitiva da creare.  
+ in Valore dell'enumerazione [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) che rappresenta il tipo di primitiva da creare.  
   
  `ppObject`  
- [out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto appena creato.  
+ out Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto appena creato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Chiamare questo metodo per creare un oggetto che rappresenta un oggetto primitivo che rappresenta un parametro alla funzione che è rappresentato dal [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaccia. Ad esempio, se la stringa di espressione è "myString(5)", questo metodo viene utilizzato per creare un oggetto che rappresenta il valore intero 5.  
+## <a name="remarks"></a>Osservazioni  
+ Chiamare questo metodo per creare un oggetto che rappresenta un oggetto primitivo che è un parametro per la funzione rappresentata dall'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) . Se, ad esempio, la stringa dell'espressione è "stringa (5)", questo metodo verrà usato per creare un oggetto che rappresenta il numero intero 5.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

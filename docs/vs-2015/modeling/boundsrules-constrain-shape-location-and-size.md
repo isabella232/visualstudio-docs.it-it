@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d660189ede0848216eb44d6ef49fe9c93a06ec8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672723"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme
@@ -25,7 +25,7 @@ Una *regola dei limiti* è una classe che definisce i limiti per le dimensioni e
 
  L'esempio seguente vincola una forma rettangolare a una barra di dimensioni fisse, orizzontale o verticale. Quando l'utente trascina gli angoli o i lati, il contorno viene invertito tra le due configurazioni consentite di altezza e larghezza.
 
- La regola dei limiti è una classe derivata da <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Viene creata un'istanza della regola nella forma:
+ La regola dei limiti è una classe derivata da <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> . Viene creata un'istanza della regola nella forma:
 
 ```
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -68,4 +68,4 @@ public class BarBoundsRule: BoundsRules
  Si noti che, se si desidera, è possibile limitare la posizione e le dimensioni.
 
 ## <a name="see-also"></a>Vedere anche
- <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> la [risposta e la propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md)
+ <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [Risposta alle modifiche e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md)

@@ -12,27 +12,27 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: de5df4c55feba8c9aaba0def7585029cc71426b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189421"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Scheda Spazio, finestra di dialogo Proprietà processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usare la **spazio** pressione di tab per esaminare lo spazio degli indirizzi di un processo. Per visualizzare il [finestra di dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo su un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.  
+Utilizzare la scheda **spazio** per esaminare lo spazio degli indirizzi di un processo. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .  
   
- Le impostazioni seguenti sono disponibili sul **spazio** scheda:  
+ Nella scheda **spazio** sono disponibili le impostazioni seguenti:  
   
-|Voce|DESCRIZIONE|  
+|Voce|Descrizione|  
 |-----------|-----------------|  
-|**Mostra per lo spazio di memoria di tipo**|Utilizzare questa casella di riepilogo per selezionare la categoria di spazio (immagine, il mapping, riservati o non assegnati).|  
-|**Byte eseguibili**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che usa questo processo. File eseguibile è la memoria che possono essere eseguita da programmi, ma potrebbe non essere letto o scritta.|  
-|**Byte eseguibili sola lettura**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi in uso con le proprietà di sola lettura che utilizza questo processo. Exec-sola lettura è la memoria che può essere eseguita, nonché leggere.|  
-|**Byte eseguibili lettura/scrittura**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi in uso con le proprietà di lettura / scrittura che usa questo processo. Exec-lettura-scrittura è la memoria che può essere eseguita dai programmi, nonché leggere e modificata.|  
-|**Byte copia / scrittura Exec**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che può essere l'esecuzione dei programmi, nonché leggere e scritta. Questo tipo di protezione viene utilizzato quando la memoria deve essere condivisa tra processi. Se i processi di condivisione lettura solo la memoria, quindi tutti usino la stessa memoria. Se dei processi richiede l'accesso in scrittura, verrà creata una copia di tale memoria per il processo.|  
-|**Byte senza accesso**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che impedisce l'uso di un processo. Se la scrittura, viene generata una violazione di accesso o si tenta di leggere.|  
-|**Byte sola lettura**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che può essere eseguita, nonché leggere.|  
-|**Byte lettura/scrittura**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che consente la lettura e scrittura.|  
-|**Byte copia/scrittura**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che consente la condivisione della memoria per la lettura, ma non per la scrittura. Quando si leggono questa memoria processi, possono condividere la stessa memoria. Tuttavia, quando un processo di condivisione deve avere accesso in lettura/scrittura alla memoria condivisa, viene creata una copia di tale memoria per la scrittura.|
+|**Mostra per lo spazio di memoria di tipo**|Usare questa casella di riepilogo per selezionare la categoria di spazio (immagine, mappata, riservata o non assegnata).|  
+|**Byte eseguibili**|Per la categoria selezionata, somma di tutti gli spazi degli indirizzi utilizzati da questo processo. La memoria eseguibile è memoria che può essere eseguita dai programmi, ma non può essere letta o scritta.|  
+|**Byte eseguibili sola lettura**|Per la categoria selezionata, somma di tutto lo spazio degli indirizzi utilizzato con proprietà di sola lettura utilizzate da questo processo. Exec: la memoria di sola lettura è memoria che può essere eseguita e letta.|  
+|**Byte eseguibili lettura/scrittura**|Per la categoria selezionata, somma di tutti gli spazi di indirizzi usati con le proprietà di lettura/scrittura utilizzate da questo processo. La memoria Exec-Read-Write è memoria che può essere eseguita da programmi, nonché da lettura e modifica.|  
+|**Exec-scrittura byte copia**|Per la categoria selezionata, somma di tutto lo spazio di indirizzi che può essere eseguito da programmi, nonché da lettura e scrittura. Questo tipo di protezione viene utilizzato quando la memoria deve essere condivisa tra i processi. Se i processi di condivisione leggono solo la memoria, tutti utilizzeranno la stessa memoria. Se un processo di condivisione desidera l'accesso in scrittura, verrà creata una copia della memoria per il processo.|  
+|**Byte senza accesso**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che impedisce a un processo di utilizzarla. Se si tenta di scrivere o leggere, viene generata una violazione di accesso.|  
+|**Byte sola lettura**|Per la categoria selezionata, somma di tutti gli spazi di indirizzi che possono essere eseguiti e letti.|  
+|**Byte lettura/scrittura**|Per la categoria selezionata, somma di tutto lo spazio di indirizzi che consente la lettura e la scrittura.|  
+|**Byte copia/scrittura**|Per la categoria selezionata, somma di tutto lo spazio di indirizzi che consente la condivisione della memoria per la lettura, ma non per la scrittura. Quando i processi leggono questa memoria, possono condividere la stessa memoria. Tuttavia, quando un processo di condivisione vuole avere accesso in lettura/scrittura a questa memoria condivisa, viene creata una copia di tale memoria per la scrittura.|

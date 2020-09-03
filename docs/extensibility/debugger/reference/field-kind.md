@@ -1,5 +1,5 @@
 ---
-title: proprietà FIELD_KIND . Documenti Microsoft
+title: FIELD_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736870"
 ---
 # <a name="field_kind"></a>FIELD_KIND
-Specifica il tipo di campo contenuto in un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.
+Specifica il tipo di campo contenuto in un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -126,7 +126,7 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>Campi
 `FIELD_KIND_TYPE`\
-Indica che il campo è solo di tipo.
+Indica che il campo è solo un tipo.
 
 `FIELD_KIND_SYMBOL`\
 Indica che il campo è un simbolo, con tipo, nome e altre informazioni.
@@ -144,7 +144,7 @@ Indica che il campo è una classe.
 Indica che il campo è un'interfaccia.
 
 `FIELD_TYPE_UNION`\
-Indica che il campo è un'unione.
+Indica che il campo è un'Unione.
 
 `FIELD_TYPE_ARRAY`\
 Indica che il campo è una matrice.
@@ -168,7 +168,7 @@ Indica che il campo è un'etichetta.
 Indica che il campo è un typedef.
 
 `FIELD_TYPE_BITFIELD`\
-Indica che il campo è un campo di bit.
+Indica che il campo è un bit.
 
 `FIELD_TYPE_NAMESPACE`\
 Indica che il campo è uno spazio dei nomi.
@@ -189,7 +189,7 @@ Indica che il campo è una classe interna.
 Indica che il campo è un riferimento.
 
 `FIELD_TYPE_EXTENDED`\
-Riservato per utilizzi futuri.
+Riservato per usi futuri.
 
 `FIELD_SYM_MEMBER`\
 Indica che il campo è un membro.
@@ -201,7 +201,7 @@ Indica che il campo è locale.
 Indica che il campo è un parametro.
 
 `FIELD_SYM_THIS`\
-Indica che il campo è il puntatore "this".
+Indica che il campo è il puntatore "This".
 
 `FIELD_SYM_GLOBAL`\
 Indica che il campo è globale.
@@ -213,7 +213,7 @@ Indica che il campo recupera le proprietà.
 Indica che il campo imposta le proprietà.
 
 `FIELD_SYM_EXTENDED`\
-Riservato per utilizzi futuri.
+Riservato per usi futuri.
 
 `FIELD_KIND_MASK`\
 Indica una maschera per i tipi di campo.
@@ -225,14 +225,14 @@ Indica una maschera per i tipi di campo.
 Indica una maschera per le informazioni sui simboli.
 
 ## <a name="remarks"></a>Osservazioni
-Restituito da una chiamata al [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metodo.
+Restituito da una chiamata al metodo [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .
 
-A seconda del tipo di campo, [QueryInterface](/cpp/atl/queryinterface) può essere chiamato sul [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia per una forma più specifica di interfaccia. Ad esempio, se `FIELD_TYPE_METHOD` [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `QueryInterface` ,`DebugField` è possibile chiamare su I per ottenere il [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfaccia.
+A seconda del tipo di campo, è possibile chiamare [QueryInterface](/cpp/atl/queryinterface) sull'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) per un tipo di interfaccia più specifico. Se, ad esempio, [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) restituisce `FIELD_TYPE_METHOD` , è possibile chiamare `QueryInterface` su I `DebugField` per ottenere l'interfaccia [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: sh.h
+Intestazione: sh. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetPassCount | Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: SetPassCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9711ae6d9048b1de953d8a090b8e11b22c640345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156184"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Imposta o modifica il numero di sessione associato a questo punto di interruzione associato.  
+Imposta o modifica il numero di Pass associato al punto di interruzione associato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,15 +41,15 @@ int SetPassCount( 
   
 #### <a name="parameters"></a>Parametri  
  `bpPassCount`  
- [in] Il [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) struttura che specifica il conteggio di pass.  
+ in Struttura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) che specifica il numero di passaggi.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato viene impostato su `BPS_DELETED` (in parte il [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumerazione).  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).  
   
-## <a name="remarks"></a>Note  
- Il conteggio pass determina quando viene attivato il punto di interruzione. Il passaggio corrente o il numero di passaggi può essere ottenuto chiamando il [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) (metodo).  
+## <a name="remarks"></a>Osservazioni  
+ Il numero di passaggi determina quando viene attivato il punto di interruzione. Il numero corrente di passaggi o passaggi può essere ottenuto chiamando il metodo [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) .  
   
- Qualsiasi numero di passaggio che era precedentemente associato a questo punto di interruzione viene perso.  
+ Il numero di pass precedentemente associato a questo punto di interruzione viene perso.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

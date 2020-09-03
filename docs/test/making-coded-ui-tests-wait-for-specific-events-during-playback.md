@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286778"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
@@ -105,7 +105,7 @@ Playback.Wait() chiama internamente Thread.Sleep() (dopo il calcolo precedente) 
 > [!TIP]
 > L'Editor di test codificati dell'interfaccia utente consente di modificare facilmente i test. Con l'Editor di test codificati dell'interfaccia utente è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [modificare i test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)

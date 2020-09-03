@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156639"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedura: visualizzare un elenco di elementi separati da virgole
@@ -46,7 +46,7 @@ Quando si usano gli elementi elencati in [!INCLUDE[vstecmsbuildengine](../includ
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Esempio  
- In questo esempio, l'attività [Exec](../msbuild/exec-task.md) esegue lo strumento findstr per trovare le stringhe di testo specificate nel file Phrases.txt. Nel comando findstr le stringhe di ricerca letterali sono indicate dall'opzione **/c:** , pertanto il separatore di elementi `/c:` viene inserito tra gli elementi nell'elenco di elementi `@(Phrase)`.  
+ In questo esempio, l'attività [Exec](../msbuild/exec-task.md) esegue lo strumento findstr per trovare le stringhe di testo specificate nel file Phrases.txt. Nel comando findstr le stringhe di ricerca letterali sono indicate dall'opzione **/c:**, pertanto il separatore di elementi `/c:` viene inserito tra gli elementi nell'elenco di elementi `@(Phrase)`.  
   
  Per questo esempio, la riga di comando equivalente è:  
   
@@ -70,5 +70,5 @@ Quando si usano gli elementi elencati in [!INCLUDE[vstecmsbuildengine](../includ
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
  [Elementi](../msbuild/msbuild-items.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId . Documenti Microsoft
+title: 'IDebugProgram2:: GetProgramId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8bb172f48b63ef2ec182f1a83d599a91eff1e2ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722769"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
-Ottiene un GUID per questo programma.
+Ottiene un GUID per il programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetProgramId( 
 
 ## <a name="parameters"></a>Parametri
 `pguidProgramId`\
-[fuori] Restituisce `GUID` l'oggetto per questo programma.
+out Restituisce l'oggetto `GUID` per questo programma.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Un motore di debug (DE) deve restituire l'identificatore di programma originariamente passato ai metodi [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) o [Attach.](../../../extensibility/debugger/reference/idebugengine2-attach.md) Ciò consente l'identificazione del programma tra i componenti del debugger.
+ Un motore di debug (de) deve restituire l'identificatore del programma passato originariamente ai metodi [alleghi](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) o [Connetti](../../../extensibility/debugger/reference/idebugengine2-attach.md) . In questo modo è possibile identificare il programma tra i componenti del debugger.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

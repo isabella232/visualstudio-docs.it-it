@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285205"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
@@ -89,7 +89,7 @@ Alcune impostazioni, ad esempio il layout delle finestre degli strumenti, non ve
 
 Per reimpostare le impostazioni predefinite per tutte le impostazioni, accedere a Visual Studio, quindi selezionare **strumenti**  >  **Importa/Esporta impostazioni** per aprire **importazione/esportazione guidata delle impostazioni**. Selezionare **Reimposta tutte le impostazioni** e quindi seguire i passaggi rimanenti della procedura guidata.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Impostazioni dell'ambiente](../ide/environment-settings.md)

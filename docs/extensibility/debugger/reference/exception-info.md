@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO . Documenti Microsoft
+title: EXCEPTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737024"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
-Viene descritta un'eccezione o un errore di run-time generato dal programma in fase di debug.
+Descrive un'eccezione o un errore di Run-Time generato dal programma di cui è in corso il debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ public struct EXCEPTION_INFO {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 `pProgram`\
 Oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) che rappresenta il programma in cui si è verificata l'eccezione.
 
@@ -66,15 +66,15 @@ Codice di identificazione per l'eccezione o l'errore di run-time.
 Valore dell'enumerazione [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) che definisce lo stato dell'eccezione.
 
 `guidType`\
-Identificatore della lingua `guidLang` `guidEng`GUID, o .
+Identificatore della lingua del GUID, `guidLang` ovvero o `guidEng` .
 
 ## <a name="remarks"></a>Osservazioni
-Questa struttura viene passata come parametro per il [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) e [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metodi. Questa struttura viene passata anche al metodo [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) da compilare.
+Questa struttura viene passata come parametro ai metodi [seexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md) e [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) . Questa struttura viene passata anche al metodo [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) da compilare.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

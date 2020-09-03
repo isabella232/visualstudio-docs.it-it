@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a2d6215887512f2e0c1410688b2bc924dc1fe3a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387057"
 ---
 # <a name="using-dump-files"></a>Uso di file dump
@@ -37,7 +37,7 @@ ms.locfileid: "86387057"
 
 File dump con o senza heap; creare un file dump; aprire un file dump; individuare i file binari, i file pdb e il file di origine di un file dump. 
   
-## <a name="contents"></a><a name="BKMK_Contents"></a>Contenuto  
+## <a name="contents"></a><a name="BKMK_Contents"></a> Contenuto  
  [Definizione di un file dump](#BKMK_What_is_a_dump_file_)  
   
  [File dump, con o senza heap](#BKMK_Dump_files__with_or_without_heaps)  
@@ -50,14 +50,14 @@ File dump con o senza heap; creare un file dump; aprire un file dump; individuar
   
  [Individuare i file binari, i file di simboli (con estensione pdb) e i file di origine](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a>Che cos'è un file dump?  
+## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a> Che cos'è un file dump?  
  Un *file dump* è uno snapshot di un'app nel momento in cui viene eseguito il dump. Indica il processo in esecuzione e i moduli caricati. Se il dump è stato salvato con informazioni heap, contiene uno snapshot delle attività svolte nella memoria dell'app in quel momento. L'apertura di un file dump con un heap in Visual Studio è simile all'arresto in corrispondenza di un punto di interruzione in una sessione di debug. Sebbene non sia possibile continuare l'esecuzione, è possibile esaminare gli stack, i thread e i valori delle variabili dell'app al momento in cui si è verificato il dump.  
   
  I dump vengono utilizzati principalmente per il debug di problemi che si verificano nei computer a cui lo sviluppatore non ha accesso. Ad esempio, è possibile utilizzare un file dump dal computer di un cliente quando non è possibile riprodurre il programma di arresto anomalo o non risponde del cliente nel computer. I dump vengono inoltre creati dai tester per salvare l'arresto anomalo o i dati del programma che non rispondono, in modo che il computer di test possa essere utilizzato per altri test. Il debugger di Visual Studio può salvare i file dump per il codice gestito o nativo. Il debugger può caricare i file dump creati da Visual Studio o da altri programmi che salvano i file nel formato *minidump* .  
   
  ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale  
   
-## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a>File dump, con o senza heap  
+## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a> File dump, con o senza heap  
  È possibile creare file dump con o senza informazioni heap.  
   
 - **I file dump con heap** contengono uno snapshot della memoria dell'app. Sono inclusi i valori delle variabili al momento della creazione del dump. Se si carica un file dump salvato con un heap, Visual Studio potrà caricare i simboli anche se il file binario dell'applicazione non è disponibile. Visual Studio salva inoltre i file binari dei moduli nativi caricati nel file dump, che possono semplificare il debug.  
@@ -107,7 +107,7 @@ File dump con o senza heap; creare un file dump; aprire un file dump; individuar
   
 4. Per avviare il debug, andare alla sezione **azioni** e scegliere **Esegui debug con solo nativo** o **Esegui debug con misto**.  
   
-## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Trovare i file binari, i file di simboli (con estensione pdb) e i file di origine  
+## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Trovare i file binari, i file di simboli (con estensione pdb) e i file di origine  
  Per utilizzare le funzionalità complete di Visual Studio per eseguire il debug di un file dump, è necessario accedere a:  
   
 - File exe per cui il dump è stato creato e altri file binari (DLL e così via) utilizzati nel processo del dump.  

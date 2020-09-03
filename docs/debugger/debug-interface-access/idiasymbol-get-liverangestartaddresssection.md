@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b8ba63eb1b68cc5e630e650bff80d86d6fb0b3f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463029"
 ---
 # <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
@@ -41,7 +41,7 @@ out Restituisce la parte della sezione dell'intervallo di indirizzi iniziale.
 > [!NOTE]
 > Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo Live.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  L'indirizzo formato dalla sezione e dall'offset è l'inizio dell'intervallo in cui il simbolo è valido.
 
  Per ottenere la parte di offset dell'indirizzo, utilizzare [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
@@ -53,5 +53,5 @@ out Restituisce la parte della sezione dell'intervallo di indirizzi iniziale.
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

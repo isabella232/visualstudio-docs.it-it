@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1d697313289bbf00234764cc04603b7bc256f174
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735472"
 ---
 # <a name="graphics-pipeline-stages"></a>Fasi pipeline grafica
@@ -114,5 +114,5 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
  ![Anteprima dei risultati delle fasi del vertex shader](media/gfx_diag_vertex_shader_preview.png)
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)

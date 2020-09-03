@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156524"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
@@ -52,5 +52,5 @@ Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nel
 - Se il debug remoto richiede l'immissioni di credenziali, selezionare l'opzione per salvarle.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Debug remoto](../debugger/remote-debugging.md)
