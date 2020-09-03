@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: efdbf1b96e1dc49f5b9c48cebe6cededc9ea7c6e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534147"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
@@ -125,7 +125,7 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
 
    Si noti che le istruzioni sono racchiuse tra `<#...#>` e le singole espressioni tra `<#=...#>`. Per altre informazioni, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
-   Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la direttiva `template` deve includere `language="VB"`. Il valore predefinito è `"C#"`.
+   Se si scrive il codice di generazione in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], la direttiva `template` deve includere `language="VB"`. `"C#"` è l'impostazione predefinita.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debug di un modello di testo T4 in fase di progettazione
  Per eseguire il debug di un modello di testo:
@@ -141,7 +141,7 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
   Il modello sarà eseguito e si interromperà in corrispondenza dei punti di interruzione. È possibile esaminare le variabili ed eseguire il codice un'istruzione alla volta usando le procedure normali.
 
 > [!TIP]
-> `debug="true"`rende il mapping del codice generato in modo più accurato al modello di testo, inserendo più direttive di numerazione delle righe nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.
+> `debug="true"` rende il mapping del codice generato in modo più accurato al modello di testo, inserendo più direttive di numerazione delle righe nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.
 >
 > È comunque possibile lasciare la clausola nella direttiva del modello anche quando non si esegue il debug. Ciò provoca solo un minimo calo nelle prestazioni.
 
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Un modello di testo è eseguito nel rispettivo dominio di app e l'accesso ai servizi è effettuato tramite marshalling. In questa circostanza, GetCOMService() è più affidabile di GetService().
 
-## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Rigenerazione automatica del codice
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Rigenerazione automatica del codice
  In genere, più file in una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sono generati con un modello di input. Ogni file è generato dal modello corrispondente, ma i modelli fanno tutti riferimento allo stesso modello.
 
  In caso di modifica al modello di origine, è consigliabile eseguire di nuovo tutti i modelli della soluzione. Per eseguire questa operazione manualmente, scegliere **trasforma tutti i modelli** dal menu **Compila** .
@@ -320,7 +320,7 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Conversione di un file esistente in un modello
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> Conversione di un file esistente in un modello
  Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è molto simile a quello dei file generati, anche se includono codice programma. Ciò suggerisce un metodo utile per la creazione di un modello. Creare innanzitutto un file comune come prototipo, ad esempio un [!INCLUDE[csprcs](../includes/csprcs-md.md)] file, e quindi introdurre gradualmente il codice di generazione che varia il file risultante.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Per convertire un file esistente in un modello in fase di esecuzione
@@ -333,7 +333,7 @@ Warning("A warning message");
 
 4. Verificare le seguenti proprietà del file con **estensione TT** :
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |-|-|
     |**Strumento personalizzato =**|**TextTemplatingFileGenerator**|
     |**Operazione di compilazione =**|**Nessuno**|

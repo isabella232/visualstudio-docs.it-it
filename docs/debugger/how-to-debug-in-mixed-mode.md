@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53a40c4dc615b5e1b6a3caef3a99be5ab0b56327
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350108"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Procedura: eseguire il debug in modalità mista (C#, C++, Visual Basic)
@@ -47,7 +47,7 @@ Se non si ha accesso a un progetto di app chiamante, è possibile eseguire il de
 
 1. Impostare **Tipo debugger** su **Misto** o **Automatico**.
 
-1. Fare clic su **OK**.
+1. Selezionare **OK**.
 
    ![Abilitare il debug in modalità mista](../debugger/media/dbg-mixed-mode-from-native.png "Abilitare il debug in modalità mista")
 
@@ -64,6 +64,6 @@ Se non si ha accesso a un progetto di app chiamante, è possibile eseguire il de
 > [!NOTE]
 > Nella maggior parte delle versioni di Visual Studio a partire da Visual Studio 2017 è necessario usare il file *launchSettings.json*, anziché le proprietà del progetto, per abilitare il debug in modalità mista per il codice nativo in un'app .NET Core. Per informazioni dettagliate, vedere [eseguire il debug di codice nativo e gestito](../debugger/how-to-debug-managed-and-native-code.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Eseguire il debug da un progetto DLL](../debugger/how-to-debug-from-a-dll-project.md)

@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76bc982db167624e567f88a1cf139b41cad9feb7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350212"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procedura: eseguire il debug di un controllo ActiveX
@@ -56,10 +56,10 @@ Per effettuare il debug di un controllo ActiveX, è necessario specificare un co
 
      Se non si specifica alcun contenitore nella finestra di dialogo **Project Property Pages** (Pagine delle proprietà del progetto), sarà possibile specificarlo all'avvio del debug. Quando si seleziona un comando per avviare il debug, viene visualizzata la finestra di dialogo [Eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md). Nella finestra di dialogo specificare il nome percorso del contenitore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Controlli ActiveX](/cpp/mfc/activex-controls)
-- [Test di proprietà ed eventi con Test Container](/cpp/mfc/testing-properties-and-events-with-test-container)
+- [Test di proprietà ed eventi con test container](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

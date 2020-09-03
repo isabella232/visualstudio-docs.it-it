@@ -42,10 +42,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bbe2ecf89f94cc75ff9036285ae9acbf9cf3b657
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534498"
 ---
 # <a name="using-breakpoints"></a>Uso di punti di interruzione
@@ -90,7 +90,7 @@ ms.locfileid: "85534498"
   
 2. Fare clic sul margine sinistro dell'istruzione che si desidera interrompere o impostare il cursore nell'istruzione e premere **F9**.  
   
-## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Impostazione di un punto di interruzione dei dati (solo C++ nativo)  
+## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Impostazione di un punto di interruzione dei dati (solo C++ nativo)  
  I punti di interruzione dei dati interrompono l'esecuzione quando un valore archiviato in un indirizzo di memoria specificato viene modificato. Se il valore viene letto ma non modificato, l'esecuzione non viene interrotta. Per impostare i punti di interruzione dei dati, è necessario che il debugger sia in modalità di interruzione.  
   
 1. Avviare il debug dell'applicazione e attendere che venga raggiunto un punto di interruzione. Nel menu **Debug** scegliere **Nuovo punto di interruzione/Punto di interruzione dei dati** (o aprire la finestra **Punti di interruzione** e scegliere **Nuovo/Punto di interruzione dei dati**.  
@@ -114,7 +114,7 @@ ms.locfileid: "85534498"
 - La posizione di memoria viene aggiornata all'interno del kernel. Ad esempio, se passata alla funzione `ReadFile` di Windows a 32 bit, la memoria viene aggiornata dalla modalità kernel e il debugger non viene interrotto durante la scrittura nella memoria.  
   
 ## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Impostazione di un punto di interruzione con un indirizzo di memoria (solo C++ nativo)  
- È possibile anche usare l'indirizzo di un oggetto per impostare un punto di interruzione in un metodo chiamato per un'istanza specifica di una classe.  Ad esempio:  
+ È possibile anche usare l'indirizzo di un oggetto per impostare un punto di interruzione in un metodo chiamato per un'istanza specifica di una classe.  Ecco un esempio:  
   
  Si consideri ad esempio un oggetto di tipo `my_class` con l'indirizzo, è possibile impostare un punto di interruzione della funzione in un metodo denominato `my_method` chiamato da tale istanza.  
   
@@ -192,7 +192,7 @@ ms.locfileid: "85534498"
   
  ![Numero di passaggi del punto di interruzione](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
-## <a name="filter"></a>Filtra  
+## <a name="filter"></a>Filtro  
  È possibile limitare un punto di interruzione da attivare solo su dispositivi specificati o in thread e processi specificati.  
   
  Nella finestra **Impostazioni del punto di interruzione**impostare la condizione su **Filtro**. Immettere una o più delle espressioni seguenti.  

@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 735f93b2f900b8681a1e9fee490de8e4b697f9e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656452"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
@@ -44,9 +44,9 @@ IntelliSense è il termine generale per numerose funzionalità: Elenca membri, I
 
  Dopo avere selezionato un elemento, è possibile inserirlo nel codice premendo TAB o digitando uno spazio. Se si seleziona un elemento e si digita un punto, l'elemento viene visualizzato seguito dal punto; questa condizione comporta la visualizzazione di un altro elenco di membri. Quando si seleziona un elemento ma prima di inserirlo, vengono visualizzate informazioni rapide per l'elemento.
 
- Nell'elenco dei membri, l'icona a sinistra rappresenta il tipo del membro, ad esempio spazio dei nomi, classe, funzione o variabile. Per un elenco di icone, vedere [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md). L'elenco può essere piuttosto lungo, pertanto è possibile premere PGSU e PGGIÙ per spostarsi rispettivamente verso l'alto o verso il basso nell'elenco.
+ Nell'elenco dei membri, l'icona a sinistra rappresenta il tipo del membro, ad esempio spazio dei nomi, classe, funzione o variabile. Per un elenco di icone, vedere [Visualizzazione classi e Visualizzatore oggetti icone](../ide/class-view-and-object-browser-icons.md). L'elenco può essere piuttosto lungo, pertanto è possibile premere PGSU e PGGIÙ per spostarsi rispettivamente verso l'alto o verso il basso nell'elenco.
 
- ![Elenco dei membri di Visual Studio](../ide/media/vs2015-intellisense.png "|::ref1::|")
+ ![Elenco dei membri di Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
  È possibile chiamare la funzionalità **Elenca membri** manualmente digitando CTRL+J, facendo clic su **Modifica/Intellisense/Elenca membri** o sul pulsante **Elenca membri** sulla barra degli strumenti dell'editor. Se richiamato in una riga vuota o al di fuori di un ambito riconoscibile, l'elenco conterrà simboli dello spazio dei nomi globale.
 
@@ -59,7 +59,7 @@ IntelliSense è il termine generale per numerose funzionalità: Elenca membri, I
 
  Il parametro in grassetto indica il parametro successivo richiesto durante la digitazione della funzione. Per le funzioni in overload, è possibile utilizzare i tasti FRECCIA SU e FRECCIA GIÙ per visualizzare informazioni sui parametri alternativi per gli overload della funzione.
 
- ![Informazioni sui parametri](../ide/media/vs2015-param-info.png "|::ref2::|")
+ ![Informazioni sul parametro](../ide/media/vs2015-param-info.png "VS2015_param_Info")
 
  Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserimento di commenti al codice XML](../ide/supplying-xml-code-comments.md).
 
@@ -68,11 +68,11 @@ IntelliSense è il termine generale per numerose funzionalità: Elenca membri, I
 ## <a name="quick-info"></a>Informazioni rapide
  Informazioni rapide visualizza la dichiarazione completa per ogni identificatore incluso nel codice.
 
- ![Informazioni rapide di Visual Studio](../ide/media/vs2015-quick-info.png "|::ref3::|")
+ ![Informazioni rapide di Visual Studio](../ide/media/vs2015-quick-info.png "VS2015_Quick_info")
 
  Quando si seleziona un membro nella casella **Elenca membri**, vengono visualizzate anche le informazioni rapide.
 
- ![Informazioni sui parametri in un file di codice C&#35;](../ide/media/vs2015-paraminfo.png "|::ref4::|")
+ ![Informazioni sui parametri in un file di codice C&#35;](../ide/media/vs2015-paraminfo.png "VS2015_ParamInfo")
 
  È possibile chiamare manualmente le informazioni rapide facendo clic su **Modifica/IntelliSense/Informazioni rapide**, digitando CTRL+I, oppure facendo clic sul pulsante **Informazioni rapide** sulla barra degli strumenti dell'editor.
 
@@ -86,7 +86,7 @@ IntelliSense è il termine generale per numerose funzionalità: Elenca membri, I
 ## <a name="intellisense-options"></a>Opzioni IntelliSense
  Le opzioni IntelliSense sono attive per impostazione predefinita. Per disattivarli, fare clic su **Strumenti/Opzioni/Editor di testo** e deselezionare **Informazioni parametri** o **Elenco membri automatico** se non si vuole usare la funzionalità Elenca membri.
 
-## <a name="troubleshooting-intellisense"></a>Risoluzione dei problemi relativi a IntelliSense
+## <a name="troubleshooting-intellisense"></a>Risoluzione dei problemi di IntelliSense
  Le opzioni IntelliSense potrebbero non funzionare come previsto, in alcuni casi.
 
  **Il cursore si trova sotto un errore del codice.** Non è possibile usare IntelliSense se una funzione incompleta o un altro errore esiste nel codice sopra il cursore perché IntelliSense potrebbe non essere in grado di analizzare gli elementi di codice. È possibile risolvere questo problema commentando il codice applicabile.
@@ -102,4 +102,4 @@ MessageBox( hWnd, "String literal|") )
  **Le opzioni automatiche sono disattivate.** Per impostazione predefinita, il funzionamento di IntelliSense è automatico, ma è possibile disabilitarlo. Anche se il completamento automatico delle istruzioni è disabilitato, è possibile richiamare una funzionalità IntelliSense.
 
 ## <a name="see-also"></a>Vedere anche
- IntelliSense [Visual C# ](../ide/visual-csharp-intellisense.md) IntelliSense [JavaScript](../ide/javascript-intellisense.md) IntelliSense [specifico per Visual Basic](../ide/visual-basic-specific-intellisense.md) che [fornisce commenti al codice XML](../ide/supplying-xml-code-comments.md)
+ IntelliSense [specifico per Visual Basic](../ide/visual-basic-specific-intellisense.md) [Visual C#](../ide/visual-csharp-intellisense.md) IntelliSense [JavaScript](../ide/javascript-intellisense.md) INTELLISENSE che [fornisce commenti al codice XML](../ide/supplying-xml-code-comments.md)

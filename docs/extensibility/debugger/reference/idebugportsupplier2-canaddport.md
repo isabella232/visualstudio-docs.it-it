@@ -1,5 +1,5 @@
 ---
-title: Metodo IDebugPortSupplier2::CanAddPort . Documenti Microsoft
+title: 'IDebugPortSupplier2:: CanAddPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5d0c67d62f57076f29f2c2ef60d456f517ae97fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724755"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
@@ -38,10 +38,10 @@ int CanAddPort();
 ```
 
 ## <a name="return-value"></a>Valore restituito
- Se è possibile aggiungere `S_OK`la porta, restituisce ; in caso `S_FALSE` contrario, restituisce per indicare che non è possibile aggiungere porte a questo fornitore di porte.
+ Se è possibile aggiungere la porta, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` per indicare che non è possibile aggiungere porte al fornitore della porta.
 
 ## <a name="remarks"></a>Osservazioni
- Chiamare questo metodo prima di chiamare il [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) metodo poiché quest'ultimo metodo crea la porta e aggiungerlo, che potrebbe essere un'operazione che richiede molto tempo.
+ Chiamare questo metodo prima di chiamare il metodo [addport](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) poiché quest'ultimo crea la porta e la aggiunge, operazione che può richiedere molto tempo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

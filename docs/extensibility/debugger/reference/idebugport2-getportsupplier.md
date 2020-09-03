@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPort2::GetPortSupplier . Documenti Microsoft
+title: 'IDebugPort2:: GetPortSupplier | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9e0cc5f037631193b371078639ba3078be5b3fa4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725321"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
@@ -41,7 +41,7 @@ int GetPortSupplier( 
 
 ## <a name="parameters"></a>Parametri
 `ppSupplier`\
-[fuori] Restituisce un [oggetto IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) rappresenta il fornitore della porta per una porta.
+out Restituisce un oggetto [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) che rappresenta il fornitore della porta per una porta.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769587"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelli di progetto di Visual Studio)
@@ -39,7 +39,7 @@ Specifica una cartella che verrà aggiunta al progetto.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -50,7 +50,7 @@ Specifica una cartella che verrà aggiunta al progetto.
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|`Folder`|Specifica una cartella da aggiungere al progetto. `Folder`gli elementi possono contenere `Folder` elementi figlio.|
+|`Folder`|Specifica una cartella da aggiungere al progetto. `Folder` gli elementi possono contenere `Folder` elementi figlio.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Specifica un file da aggiungere al progetto.|
 
 ### <a name="parent-elements"></a>Elementi padre
@@ -60,7 +60,7 @@ Specifica una cartella che verrà aggiunta al progetto.
 |[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo di [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
 ## <a name="remarks"></a>Osservazioni
- `Folder`è un elemento figlio facoltativo di `Project` .
+ `Folder` è un elemento figlio facoltativo di `Project` .
 
  È possibile utilizzare uno dei metodi seguenti per organizzare gli elementi di progetto in cartelle in un modello:
 

@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74538580"
 ---
 # <a name="team-explorer-reference"></a>Informazioni di riferimento su Team Explorer
@@ -98,11 +98,11 @@ Vedere:
 - [Install continuous delivery (CD) tools for Visual Studio](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017) (Installare strumenti di recapito continuo per Visual Studio)
 - [Configure and execute continuous delivery (CD) for your app](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app) (Configurare ed eseguire il recapito continuo per l'app)
 
-## <a name="settings-page"></a>Pagina Impostazioni
+## <a name="settings-page"></a>Pagina delle impostazioni
 
 La pagina **Impostazioni** consente di configurare le funzionalità amministrative per un progetto o una raccolta di progetti. Vedere gli articoli seguenti:
 
-| Project | Raccolta di progetti | Altri |
+| Progetto | Raccolta di progetti | Altro |
 | - | - | - |
 | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sicurezza, Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Aree elementi di lavoro](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterazioni elementi di lavoro](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Impostazioni portale](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Avvisi di progetto](/azure/devops/notifications/howto-manage-team-notifications) | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestione modelli di processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Impostazioni globali GIT](/azure/devops/repos/git/git-config)<br/>[Impostazioni del repository GIT](/azure/devops/repos/git/git-config) |
 

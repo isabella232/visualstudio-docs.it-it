@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88214671"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
@@ -129,7 +129,7 @@ Selezionare queste caselle di controllo per visualizzare le linee verticali punt
 
 ## <a name="editor-help"></a>Guida Editor
 ::: moniker range=">=vs-2019"
-- Hint per i nomi di parametri inline 
+- Suggerimenti per i nomi di parametri inline 
     
     Quando questa opzione è selezionata, inserisce gli hint per i nomi di parametro per i valori letterali, i valori letterali sottoposta a cast e le creazioni di istanze degli oggetti prima di ogni argomento  
     

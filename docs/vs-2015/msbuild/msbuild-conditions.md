@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 71bb48290d0eb64f91b918d22624755c2edb6153
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74303122"
 ---
 # <a name="msbuild-conditions"></a>Condizioni di MSBuild
@@ -37,12 +37,12 @@ ms.locfileid: "74303122"
 |Exists('`stringA`')|Restituisce `true` se esiste un file o una cartella con il nome `stringA`.<br /><br /> Ad esempio:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti.|  
 |HasTrailingSlash('`stringA`')|Restituisce `true` se la stringa specificata contiene un carattere di barra (/) o di barra rovesciata (\\) finale.<br /><br /> Ad esempio:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Le virgolette non sono necessarie per stringhe alfanumeriche semplici o valori booleani. Sono tuttavia obbligatorie per i valori vuoti.|  
 |!|Restituisce `true` se l'operando restituisce `false`.|  
-|E|Restituisce `true` se entrambi gli operandi restituiscono `true`.|  
-|Or|Restituisce `true` se almeno uno degli operandi restituisce `true`.|  
+|e|Restituisce `true` se entrambi gli operandi restituiscono `true`.|  
+|Oppure|Restituisce `true` se almeno uno degli operandi restituisce `true`.|  
 |()|Meccanismo di raggruppamento che restituisce `true` se le espressioni contenute all'interno restituiscono `true`.|  
 |$if$ ( %expression% ), $else$, $endif$|Controlla se l'oggetto `%expression%` specificato corrisponde al valore stringa del parametro di modello personalizzato passato. Se la condizione `$if$` restituisce `true`, le istruzioni vengono eseguite. In caso contrario, viene controllata la condizione `$else$`. Se la condizione `$else$` è `true`, le istruzioni vengono eseguite. In caso contrario, la condizione `$endif$` termina la valutazione dell'espressione.<br /><br /> Per esempi di utilizzo, vedere [Visual Studio Project/Item Template Parameter Logic](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic) (Logica dei parametri dei modelli di elemento/progetto di Visual Studio).|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
  [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)   
- [Procedura dettagliata: creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+ [Procedura dettagliata: creazione di un file di progetto MSBuild da zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

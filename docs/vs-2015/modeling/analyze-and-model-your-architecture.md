@@ -33,10 +33,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e00735a180ec951a8afced0f5c74f7a9466e50b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534095"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizzare e modellare l'architettura
@@ -48,7 +48,7 @@ Assicurarsi che l'app soddisfi i requisiti usando gli strumenti di architettura 
 
  Per individuare le versioni di Visual Studio che supportano le singole funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
-## <a name="to"></a>A
+## <a name="to"></a>Per
 
 |Scenario|Articoli|
 |-|-|

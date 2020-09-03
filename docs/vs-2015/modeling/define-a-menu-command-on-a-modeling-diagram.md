@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534212"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definire un comando di menu in un diagramma di modellazione
@@ -166,13 +166,13 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 
          **Progetto**  =  di *Progetto di libreria di classi*
 
-## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>Implementazione del comando di menu
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a> Implementazione del comando di menu
  La classe del comando di menu implementa i metodi obbligatori per <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.
 
 |Firma|Descrizione|
 |-|-|
 |`string Text { get; }`|Restituisce l'etichetta della voce di menu.|
-|`void QueryStatus(IMenuCommand command);`|Chiamato quando l'utente fa clic con il pulsante destro del mouse nel diagramma.<br /><br /> Questo metodo non dovrebbe modificare il modello.<br /><br /> Usare `DiagramContext.CurrentDiagram.SelectedShapes` per determinare se si vuole visualizzare e abilitare il comando.<br /><br /> Impostare:<br /><br /> -   `command.Visible`su `true` se il comando deve essere visualizzato nel menu quando l'utente fa clic con il pulsante destro del mouse nel diagramma<br />-   `command.Enabled`su `true` se l'utente può fare clic sul comando nel menu<br />-   `command.Text`per impostare in modo dinamico l'etichetta del menu|
+|`void QueryStatus(IMenuCommand command);`|Chiamato quando l'utente fa clic con il pulsante destro del mouse nel diagramma.<br /><br /> Questo metodo non dovrebbe modificare il modello.<br /><br /> Usare `DiagramContext.CurrentDiagram.SelectedShapes` per determinare se si vuole visualizzare e abilitare il comando.<br /><br /> Impostare:<br /><br /> -   `command.Visible` su `true` se il comando deve essere visualizzato nel menu quando l'utente fa clic con il pulsante destro del mouse nel diagramma<br />-   `command.Enabled` su `true` se l'utente può fare clic sul comando nel menu<br />-   `command.Text` per impostare in modo dinamico l'etichetta del menu|
 |`void Execute (IMenuCommand command);`|Chiamato quando l'utente fa clic sulla voce di menu, se è visibile e abilitata.|
 
 ### <a name="accessing-the-model-in-code"></a>Accesso al modello nel codice
@@ -209,7 +209,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Tuttavia, è necessario sapere che l'archivio modelli non è thread-safe. È consigliabile usare sempre il thread dell'interfaccia utente per eseguire gli aggiornamenti e, se possibile, impedire all'utente di apportare modifiche mentre è in corso l'operazione in background. Per un esempio, vedere [aggiornare un modello UML da un thread in background](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="executing-the-menu-command"></a><a name="Executing"></a>Esecuzione del comando di menu
+## <a name="executing-the-menu-command"></a><a name="Executing"></a> Esecuzione del comando di menu
  A scopo di test, eseguire il comando in modalità di debug.
 
 #### <a name="to-test-the-menu-command"></a>Per testare il comando di menu
@@ -240,7 +240,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Il tipo di diagramma del modello in uso (classe UML, sequenza e così via) sia elencato come uno degli attributi della classe del comando di menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` e così via.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installazione e disinstallazione di un'estensione
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installazione e disinstallazione di un'estensione
  È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.
 
 #### <a name="to-install-an-extension"></a>Per installare un'estensione

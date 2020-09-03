@@ -32,31 +32,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851003"
 ---
 # <a name="link-task"></a>Attività Link
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione exe) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni linker](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
+Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione exe) o una libreria di collegamento dinamico (DLL). Per ulteriori informazioni, vedere [Opzioni del linker](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 ## <a name="parameters"></a>Parametri  
- Nella tabella che segue vengono descritti i parametri dell'attività  **Link**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
+ Nella tabella che segue vengono descritti i parametri dell'attività ** Link**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.  
   
 - **AdditionalDependencies**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Specifica un elenco di file di input da aggiungere al comando.  
   
-   Per altre informazioni, vedere [File di input LINK](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
+   Per altre informazioni, vedere [collegare i file di input](https://msdn.microsoft.com/library/bb26fcc5-509a-4620-bc3e-b6c6e603a412).  
   
 - **AdditionalLibraryDirectories**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Esegue l'override del percorso delle librerie dell'ambiente. Specificare un nome di directory.  
   
@@ -64,31 +64,31 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **AdditionalManifestDependencies**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Specifica gli attributi che verranno inseriti nella sezione `dependency` del file manifesto.  
   
-   Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Vedere anche "Publisher Configuration Files" (File di configurazione del server di pubblicazione) sul sito Web [MSDN](https://msdn.microsoft.com/).  
+   Per altre informazioni, vedere [/MANIFESTDEPENDENCY (specifica le dipendenze del manifesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Vedere anche "Publisher Configuration Files" (File di configurazione del server di pubblicazione) sul sito Web [MSDN](https://msdn.microsoft.com/).  
   
 - **AdditionalOptions**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
-   Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio, **"** _/opzione1 /opzione2 /opzione#_ ". Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.  
+   Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio, **"**_/opzione1/opzione2/opzione #_". Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.  
   
-   Per altre informazioni, vedere [Opzioni linker](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
+   Per ulteriori informazioni, vedere [Opzioni del linker](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 - **AddModuleNamesToAssembly**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Aggiunge un riferimento del modulo a un assembly.  
   
-   Per altre informazioni, vedere [/ASSEMBLYMODULE (Aggiunge un modulo MSIL all'assembly)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
+   Per altre informazioni, vedere [/ASSEMBLYMODULE (aggiungere un modulo MSIL all'assembly)](https://msdn.microsoft.com/library/67357da8-e4b6-49fd-932c-329a5777f143).  
   
 - **AllowIsolation**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, fa eseguire al sistema operativo ricerche e caricamenti del manifesto. Se `false`, indica che le DLL vengono caricate come se il manifesto non esistesse.  
   
@@ -96,7 +96,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **AssemblyDebug**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, crea l'attributo **DebuggableAttribute** con il rilevamento delle informazioni di debug e disabilita le ottimizzazioni JIT. Se `false`, crea l'attributo **DebuggableAttribute**, ma disabilita il rilevamento delle informazioni di debug e abilita le ottimizzazioni JIT.  
   
@@ -104,7 +104,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **AssemblyLinkResource**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Crea un collegamento a una risorsa .NET Framework nel file di output. Il file di risorse non viene inserito nel file di output. Specificare il nome della risorsa.  
   
@@ -118,7 +118,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **BaseAddress**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Imposta un indirizzo di base per il programma o la DLL da compilare. Specificare `{address[,size] | @filename,key}`.  
   
@@ -126,7 +126,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **BuildingInIDE**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se true, indica che MSBuild viene richiamato dall'ambiente IDE. In caso contrario, indica che MSBuild viene richiamato dalla riga di comando.  
   
@@ -134,57 +134,57 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **CLRImageType**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Imposta il tipo di un'immagine Common Language Runtime (CLR).  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.  
   
-  - **Default** -  *\<none>*  
+  - **Predefinita** - *\<none>*  
   
-  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage**  -  **/CLRIMAGETYPE: IJW**  
   
-  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage**  -  **/CLRIMAGETYPE: pure**  
   
-  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage**  -  **/CLRIMAGETYPE: safe**  
   
     Per altre informazioni, vedere [/CLRIMAGETYPE (Specifica il tipo di immagine CLR)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
   
 - **CLRSupportLastError**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Conserva l'ultimo codice di errore delle funzioni chiamate con il meccanismo P/Invoke.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.  
   
-  - **Enabled** -  **/CLRSupportLastError**  
+  - **Abilitato**  -  **/CLRSUPPORTLASTERROR**  
   
-  - **Disabled** -  **/CLRSupportLastError:NO**  
+  - **Disabilitato**  -  **/CLRSUPPORTLASTERROR: No**  
   
-  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls**  -  **/CLRSUPPORTLASTERROR: SYSTEMDLL**  
   
     Per altre informazioni, vedere [/CLRSUPPORTLASTERROR (Mantiene l'ultimo codice di errore per le chiamate PInvoke)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
   
 - **CLRThreadAttribute**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica in modo esplicito l'attributo threading per il punto di ingresso del programma CLR.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.  
   
-  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**  
+  - **DefaultThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: nessuna**  
   
-  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**  
+  - **MTAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: MTA**  
   
-  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: sta**  
   
     Per altre informazioni, vedere [/CLRTHREADATTRIBUTE (Imposta l'attributo thread CLR)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
   
 - **CLRUnmanagedCodeCheck**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Specifica se verrà applicato **SuppressUnmanagedCodeSecurityAttribute** alle chiamate P/Invoke generate dal linker effettuate dal codice gestito in DLL native.  
   
@@ -192,25 +192,25 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **CreateHotPatchableImage**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Prepara un'immagine per l'applicazione di una patch a caldo.  
   
    Specificare uno dei valori seguenti, che corrisponde a un'opzione del linker.  
   
-  - **Enabled** -  **/FUNCTIONPADMIN**  
+  - **Abilitato**  -  **/FUNCTIONPADMIN**  
   
-  - **X86Image** -  **/FUNCTIONPADMIN:5**  
+  - **X86Image**  -  **/FUNCTIONPADMIN: 5**  
   
-  - **X64Image** -  **/FUNCTIONPADMIN:6**  
+  - **X64Image**  -  **/FUNCTIONPADMIN: 6**  
   
-  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage**  -  **/FUNCTIONPADMIN: 16**  
   
     Per altre informazioni, vedere [/FUNCTIONPADMIN (Crea immagine con funzionalità di patch a caldo)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
   
 - **DataExecutionPrevention**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, indica che è stato eseguito il test di un eseguibile per verificarne la compatibilità con la funzionalità Protezione esecuzione programmi di Windows.  
   
@@ -218,41 +218,41 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **DelayLoadDLLs**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Questo parametro fa in modo che le DLL vengano *caricate in ritardo*. Specificare il nome di una DLL di cui ritardare il caricamento.  
   
-   Per altre informazioni, vedere [/DELAYLOAD (Importazione a caricamento ritardato)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
+   Per altre informazioni, vedere [/DELAYLOAD (importazione a caricamento ritardato)](https://msdn.microsoft.com/library/39ea0f1e-5c01-450f-9c75-2d9761ff9b28).  
   
 - **DelaySign**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, firma parzialmente un assembly. Per impostazione predefinita, il valore è `false`.  
   
-   Per altre informazioni, vedere [/DELAYSIGN (Firma parzialmente un assembly)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
+   Per altre informazioni, vedere [/delaysign (firma parzialmente un assembly)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
   
 - **Driver**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specificare questo parametro per compilare un driver in modalità kernel Windows NT.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.  
   
-  - **NotSet** -  *\<nessuno>*  
+  - **NotSet** - *\<none>*  
   
-  - **Driver** -  **/Driver**  
+  - **Driver**  -  di **/Driver**  
   
-  - **UpOnly** -  **/DRIVER:UPONLY**  
+  - **Solo**  -  in **/driver: solo**  
   
-  - **WDM** -  **/DRIVER:WDM**  
+  - **WDM**  -  **/driver: WDM**  
   
     Per altre informazioni, vedere [/DRIVER (Driver in modalità kernel di Windows NT)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
 - **EmbedManagedResourceFile**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Incorpora un file di risorse in un assembly. Specificare il nome file di risorse necessario. Facoltativamente, specificare il nome logico, che viene usato per caricare la risorsa, e l'opzione **PRIVATE**, che indica nel manifesto dell'assembly che il file di risorse è privato.  
   
@@ -260,7 +260,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **EnableCOMDATFolding**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, abilita la riduzione dei dati COMDAT identici.  
   
@@ -268,7 +268,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **EnableUAC**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, specifica che le informazioni di Controllo dell'account utente sono incorporate nel manifesto del programma.  
   
@@ -276,7 +276,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **EntryPointSymbol**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica una funzione del punto di ingresso come indirizzo iniziale per un file EXE o una DLL. Specificare un nome di funzione come valore del parametro.  
   
@@ -284,7 +284,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **FixedBaseAddress**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, crea un programma o una DLL caricabile solo nel relativo indirizzo di base preferito.  
   
@@ -292,31 +292,31 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **ForceFileOutput**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Indica al linker di creare un file EXE o una DLL valida anche se viene fatto riferimento a un simbolo che non è definito oppure è definito più volte.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Enabled** -  **/FORCE**  
+  - **Abilitato**  -  **/Force**  
   
-  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly**  -  **/Force: multiple**  
   
-  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
+  - **UndefinedSymbolOnly**  -  **/Force: non risolto**  
   
-    Per altre informazioni, vedere [/FORCE (Forza l'output del file)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
+    Per ulteriori informazioni, vedere [/Force (Force file output)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
 - **ForceSymbolReferences**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Questo parametro indica al linker di aggiungere un simbolo specificato alla tabella dei simboli.  
   
-   Per altre informazioni, vedere [/INCLUDE (Forza riferimenti al simbolo)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
+   Per ulteriori informazioni, vedere [/include (Force Reference Symbol)](https://msdn.microsoft.com/library/4a039677-360a-480f-bd0b-448e239b449c).  
   
 - **FunctionOrder**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Questo parametro ottimizza il programma inserendo le funzioni incluse nel pacchetto specificate (COMDATs) nell'immagine secondo un ordine predeterminato.  
   
@@ -324,7 +324,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **GenerateDebugInformation**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, crea informazioni di debug per il file EXE o per la DLL.  
   
@@ -332,15 +332,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **GenerateManifest**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, crea un file manifesto side-by-side.  
   
-   Per altre informazioni, vedere [/MANIFEST (Crea manifesto dell'assembly syde-by-side)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
+   Per altre informazioni, vedere [/manifest (Crea manifesto dell'assembly side-by-side)](https://msdn.microsoft.com/library/98c52e1e-712c-4f49-b149-4d0a3501b600).  
   
 - **GenerateMapFile**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, crea un *file di mappa*. L'estensione di file di mappa è map.  
   
@@ -348,7 +348,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **HeapCommitSize**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica la quantità di memoria fisica nellheap da allocare alla volta.  
   
@@ -356,7 +356,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **HeapReserveSize**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica il totale di allocazione dell'heap nella memoria virtuale.  
   
@@ -364,23 +364,23 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **IgnoreAllDefaultLibraries**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, indica al linker di rimuovere una o più librerie predefinite dall'elenco di librerie in cui effettua la ricerca quando risolve i riferimenti esterni.  
   
-   Per altre informazioni, vedere [/NODEFAULTLIB (ignorare le librerie)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Per ulteriori informazioni, vedere [/NODEFAULTLIB (Ignora librerie)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
 - **IgnoreEmbeddedIDL**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, specifica che gli eventuali attributi IDL presenti nel codice sorgente non devono essere elaborati in un file con estensione idl.  
   
-   Per altre informazioni, vedere [/IGNOREIDL (Non elabora gli attributi in MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
+   Per altre informazioni, vedere [/IGNOREIDL (non elaborare gli attributi in MIDL)](https://msdn.microsoft.com/library/29514098-6a1c-4317-af2f-1dc268972780).  
   
 - **IgnoreImportLibrary**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, specifica che la libreria di importazione generata da questa configurazione non deve essere importata nei progetti dipendenti.  
   
@@ -388,15 +388,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **IgnoreSpecificDefaultLibraries**  
   
-   Parametro **String[]** facoltativo.  
+   Parametro **String []** facoltativo.  
   
    Specifica il nome di una o più librerie predefinite da ignorare. Separare più librerie usando il punto e virgola.  
   
-   Per altre informazioni, vedere [/NODEFAULTLIB (ignorare le librerie)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
+   Per ulteriori informazioni, vedere [/NODEFAULTLIB (Ignora librerie)](https://msdn.microsoft.com/library/7270b673-6711-468e-97a7-c2925ac2be6e).  
   
 - **ImageHasSafeExceptionHandlers**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, il linker produce un'immagine solo se può produrre anche una tabella dei gestori di eccezioni sicuri dell'immagine.  
   
@@ -410,7 +410,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **KeyContainer**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Contenitore che contiene la chiave per un assembly firmato.  
   
@@ -418,7 +418,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **KeyFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica un file che contiene la chiave per un assembly firmato.  
   
@@ -426,15 +426,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **LargeAddressAware**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, l'applicazione può gestire indirizzi superiori a 2 gigabyte.  
   
-   Per altre informazioni, vedere [/LARGEADDRESSAWARE (Gestione di indirizzi di grandi dimensioni)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
+   Per ulteriori informazioni, vedere [/LARGEADDRESSAWARE (gestione di indirizzi di grandi dimensioni)](https://msdn.microsoft.com/library/a29756c8-e893-47a9-9750-1f0d25359385).  
   
 - **LinkDLL**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, compila una DLL come file di output principale.  
   
@@ -442,33 +442,33 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **LinkErrorReporting**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Consente di inviare informazioni sugli errori interni del compilatore direttamente a Microsoft.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NoErrorReport** -  **/ERRORREPORT:NONE**  
+  - **NoErrorReport**  -  **/errorreport: nessuna**  
   
-  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**  
+  - **PromptImmediately**  -  **/errorreport: prompt**  
   
-  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** -  **/ERRORREPORT:SEND**  
+  - **SendErrorReport** - **/ERRORREPORT:SEND**  
   
-    Per altre informazioni, vedere [/ERRORREPORT (Segnala gli errori interni del linker)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
+    Per ulteriori informazioni, vedere [/errorreport (segnala gli errori interni del linker)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
 - **LinkIncremental**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, abilita il collegamento incrementale.  
   
-   Per altre informazioni, vedere [/INCREMENTAL (collegamento incrementale)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
+   Per ulteriori informazioni, vedere [/Incremental (collegamento incrementale)](https://msdn.microsoft.com/library/135656ff-94fa-4ad4-a613-22e1a2a5d16b).  
   
 - **LinkLibraryDependencies**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, specifica che gli output della libreria dalle dipendenze del progetto vengono collegati automaticamente.  
   
@@ -476,7 +476,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **LinkStatus**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, specifica che il linker deve visualizzare un indicatore di stato che mostra la percentuale di completamento del collegamento.  
   
@@ -484,29 +484,29 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **LinkTimeCodeGeneration**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica le opzioni per l'ottimizzazione PGO.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Default** -  *\<none>*  
+  - **Predefinita** - *\<none>*  
   
-  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
+  - **UseLinkTimeCodeGeneration**  -  **/LTCG**  
   
-  - **PGInstrument** -  **/LTCG:PGInstrument**  
+  - **PGINSTRUMENT**  -  **/LTCG: PGINSTRUMENT**  
   
-  - **PGOptimization** -  **/LTCG:PGOptimize**  
+  - **PGOptimization**  -  **/LTCG: PGOptimize**  
   
   - **PGUpdate**  
   
      \- **/LTCG:PGUpdate**  
   
-    Per altre informazioni, vedere [/LTCG (Generazione di codice in fase di collegamento)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
+    Per altre informazioni, vedere [/LTCG (generazione di codice in fase di collegamento)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2).  
   
 - **ManifestFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Sostituisce il nome file manifesto predefinito con il nome file specificato.  
   
@@ -514,7 +514,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **MapExports**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, indica al linker di includere le funzioni esportate in un file di mappa.  
   
@@ -522,13 +522,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **MapFileName**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Sostituisce il nome file di mappa predefinito con il nome file specificato.  
   
 - **MergedIDLBaseFileName**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica il nome file e l'estensione di file del file IDL.  
   
@@ -536,7 +536,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **MergeSections**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Combina le sezioni in un'immagine. Specificare `from-section=to-section`.  
   
@@ -544,7 +544,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **MidlCommandFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specificare il nome di un file che contiene opzioni della riga di comando MIDL.  
   
@@ -552,13 +552,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **MinimumRequiredVersion**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica la versione minima richiesta del sottosistema. Gli argomenti sono numeri decimali compresi tra 0 e 65535.  
   
 - **ModuleDefinitionFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica il nome di un [file di definizione moduli](https://msdn.microsoft.com/library/08c0bc28-c5d2-47aa-9624-7fc68bcaa4d8).  
   
@@ -566,7 +566,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **MSDOSStubFileName**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Collega il programma stub MS-DOS specificato a un programma Win32.  
   
@@ -574,7 +574,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **NoEntryPoint**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, crea una DLL di sole risorse.  
   
@@ -588,7 +588,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **OptimizeReferences**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, elimina funzioni e/o dati a cui non viene mai fatto riferimento.  
   
@@ -596,7 +596,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **OutputFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Esegue l'override del nome e del percorso predefiniti del programma creato dal linker.  
   
@@ -604,7 +604,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **PerUserRedirection**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true` e se l'opzione Registra output è abilitata, forza il reindirizzamento su **HKEY_CURRENT_USER** delle scritture del Registro di sistema in **HKEY_CLASSES_ROOT**.  
   
@@ -616,39 +616,39 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **PreventDllBinding**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, indica a Bind.exe che l'immagine collegata non deve essere associata.  
   
    Per altre informazioni, vedere [/ALLOWBIND (prevenzione dell'associazione di DLL)](https://msdn.microsoft.com/library/30e37e24-12e4-407e-988a-39d357403598).  
   
-- **Profile**  
+- **Profilo**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, produce un file di output che può essere usato con il profiler di **strumenti per le prestazioni**.  
   
-   Per altre informazioni, vedere [/PROFILE (Profiler strumenti per le prestazioni)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
+   Per altre informazioni, vedere [/profile (Profiler degli strumenti per le prestazioni)](https://msdn.microsoft.com/library/e676baa1-5063-47a3-a357-ba0d1f0d1699).  
   
 - **ProfileGuidedDatabase**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica il nome del file PGD che verrà usato per salvare le informazioni sul programma in esecuzione.  
   
-   Per altre informazioni, vedere [/PGD (Specifica il database per le ottimizzazioni PGO)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
+   Per altre informazioni, vedere [/PGD (specifica il database per le ottimizzazioni PGO)](https://msdn.microsoft.com/library/9f312498-493b-461f-886f-92652257e443).  
   
 - **ProgramDatabaseFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica un nome per il database di programma (PDB) creato dal linker.  
   
-   Per altre informazioni, vedere [/PDB (Usa database di programma)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
+   Per ulteriori informazioni, vedere [/PDB (USA database di programma)](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d).  
   
 - **RandomizedBaseAddress**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, genera un'immagine eseguibile che può essere riassegnata in modo casuale in fase di caricamento usando la funzionalità *ASLR* (Address Space Layout Randomization) di Windows.  
   
@@ -656,7 +656,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **RegisterOutput**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, registra l'output primario di questa compilazione.  
   
@@ -666,11 +666,11 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specifica l'allineamento di ogni sezione nello spazio degli indirizzi lineare del programma. Il valore del parametro è un numero di unità di byte e una potenza di due.  
   
-   Per altre informazioni, vedere [/ALIGN (Allineamento sezione)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
+   Per ulteriori informazioni, vedere [/align (allineamento sezione)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
   
 - **SetChecksum**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, imposta il checksum nell'intestazione di un file EXE.  
   
@@ -678,29 +678,29 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **ShowProgress**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica il livello di dettaglio dei report di stato per l'operazione di collegamento.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NotSet** -  *\<nessuno>*  
+  - **NotSet** - *\<none>*  
   
-  - **LinkVerbose** -  **/VERBOSE**  
+  - **LinkVerbose**  -  **/Verbose**  
   
-  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
+  - **LinkVerboseLib**  -  **/Verbose: lib**  
   
-  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
+  - **LinkVerboseICF**  -  **/verbose: ICF**  
   
-  - **LinkVerboseREF** -  **/VERBOSE:REF**  
+  - **LinkVerboseREF**  -  **/verbose: Ref**  
   
-  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH**  -  **/verbose: SAFESEH**  
   
-  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
+  - **LinkVerboseCLR**  -  **/verbose: CLR**  
   
-    Per altre informazioni, vedere [/VERBOSE (stampa di messaggi sullo stato)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
+    Per ulteriori informazioni, vedere [/Verbose (Print Progress Messages)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
-- **Sources**  
+- **recenti**  
   
    Parametro `ITaskItem[]` obbligatorio.  
   
@@ -708,7 +708,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **SpecifySectionAttributes**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica gli attributi di una sezione. Esegue l'override degli attributi impostati quando è stato compilato il file OBJ per la sezione.  
   
@@ -716,61 +716,61 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **StackCommitSize**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica la quantità di memoria fisica in ogni allocazione quando viene allocata altra memoria.  
   
-   Per altre informazioni, vedere l'argomento `commit` di [/STACK (Allocazioni stack)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Per ulteriori informazioni, vedere l' `commit` argomento di [/Stack (Allocazioni stack)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StackReserveSize**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica la dimensione totale di allocazione dello stack nella memoria virtuale.  
   
-   Per altre informazioni, vedere l'argomento `reserve` di [/STACK (Allocazioni stack)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
+   Per ulteriori informazioni, vedere l' `reserve` argomento di [/Stack (Allocazioni stack)](https://msdn.microsoft.com/library/73283660-e4bd-47cc-b5ca-04c5d739034c).  
   
 - **StripPrivateSymbols**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Crea un secondo file database di programma (PDB) che omette i simboli che non si vuole distribuire ai clienti. Specificare il nome del secondo file PDB.  
   
    Per altre informazioni, vedere [/PDBSTRIPPED (Rimuove simboli privati)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
   
-- **SubSystem**  
+- **Sottosistema**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica l'ambiente per il file eseguibile.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NotSet** -  *\<nessuno>*  
+  - **NotSet** - *\<none>*  
   
-  - **Console** -  **/SUBSYSTEM:CONSOLE**  
+  - **Console**  -  di **/SUBSYSTEM: console**  
   
-  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
+  - **Windows**  -  **/SUBSYSTEM: Windows**  
   
-  - **Native** -  **/SUBSYSTEM:NATIVE**  
+  - **Native** - **/SUBSYSTEM:NATIVE**  
   
-  - **EFI Application** -  **/SUBSYSTEM:EFI_APPLICATION**  
+  - **Applicazione EFI**  -  **/SUBSYSTEM: EFI_APPLICATION**  
   
-  - **EFI Boot Service Driver** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - Driver del servizio di **avvio EFI**  -  **/SUBSYSTEM: EFI_BOOT_SERVICE_DRIVER**  
   
-  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**  
+  - **ROM EFI**  -  **/SUBSYSTEM: EFI_ROM**  
   
-  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **Runtime EFI**  -  **/SUBSYSTEM: EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
+  - **Windows**  -  **/SUBSYSTEM: WindowsCE**  
   
-  - **POSIX** -  **/SUBSYSTEM:POSIX**  
+  - **POSIX**  -  **/SUBSYSTEM: POSIX**  
   
-    Per altre informazioni, vedere [/SUBSYSTEM (Specifica il sottosistema)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
+    Per ulteriori informazioni, vedere [/Subsystem (specifica il sottosistema)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
   
 - **SupportNobindOfDelayLoadedDLL**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, indica al linker di non includere una tabella di indirizzi di importazione nell'immagine finale.  
   
@@ -778,7 +778,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **SupportUnloadOfDelayLoadedDLL**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, indica alla funzione dell'helper di caricamento ritardato di supportare lo scaricamento esplicito della DLL.  
   
@@ -786,15 +786,15 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **SuppressStartupBanner**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.  
   
-   Per altre informazioni, vedere [/NOLOGO (Non visualizza il messaggio di avvio) (Linker)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
+   Per altre informazioni, vedere [/nologo (non visualizzare il banner di avvio) (linker)](https://msdn.microsoft.com/library/3b20dddd-eca6-4545-a331-9f70bf720197).  
   
 - **SwapRunFromCD**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, indica al sistema operativo di copiare prima di tutto l'output del linker in un file di scambio per poi eseguire l'immagine da tale posizione.  
   
@@ -802,7 +802,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **SwapRunFromNET**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, indica al sistema operativo di copiare prima di tutto l'output del linker in un file di scambio per poi eseguire l'immagine da tale posizione.  
   
@@ -810,41 +810,41 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **TargetMachine**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica la piattaforma di destinazione per il programma o DLL.  
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NotSet** -  *\<nessuno>*  
+  - **NotSet** - *\<none>*  
   
-  - **MachineARM** -  **/MACHINE:ARM**  
+  - **MachineARM**  -  **/Machine: ARM**  
   
-  - **MachineEBC** -  **/MACHINE:EBC**  
+  - **MachineEBC** - **/MACHINE:EBC**  
   
-  - **MachineIA64** -  **/MACHINE:IA64**  
+  - **MachineIA64** - **/MACHINE:IA64**  
   
-  - **MachineMIPS** -  **/MACHINE:MIPS**  
+  - **MachineMIPS**  -  **/Machine: MIPS**  
   
-  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
+  - **MachineMIPS16**  -  **/Machine: MIPS16**  
   
-  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU**  -  **/Machine: MIPSFPU**  
   
-  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16**  -  **/Machine: MIPSFPU16**  
   
-  - **MachineSH4** -  **/MACHINE:SH4**  
+  - **MachineSH4**  -  **/Machine: SH4**  
   
-  - **MachineTHUMB** -  **/MACHINE:THUMB**  
+  - **MachineTHUMB**  -  **/Machine: Thumb**  
   
-  - **MachineX64** -  **/MACHINE:X64**  
+  - **MachineX64**  -  **/Machine: x64**  
   
-  - **MachineX86** -  **/MACHINE:X86**  
+  - **MachineX86**  -  **/Machine: x86**  
   
     Per altre informazioni, vedere [/MACHINE (Specifica la piattaforma di destinazione)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
   
 - **TerminalServerAware**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, imposta un flag nel campo IMAGE_OPTIONAL_HEADER DllCharacteristics nell'intestazione facoltativa dell'immagine del programma. Quando questo flag viene impostato, Terminal Server non apporta determinate modifiche all'applicazione.  
   
@@ -852,21 +852,21 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **TrackerLogDirectory**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica la directory del log di Tracker.  
   
 - **TreatLinkerWarningAsErrors**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, fa in modo che non venga generato alcun file di output se il linker genera un avviso.  
   
-   Per altre informazioni, vedere [/WX (Considera gli avvisi del linker come errori)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
+   Per altre informazioni, vedere [/WX (considera gli avvisi del linker come errori)](https://msdn.microsoft.com/library/e4ba97c7-93f7-43ae-a4bb-d866790926c9).  
   
 - **TurnOffAssemblyGeneration**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, crea un'immagine per il file di output corrente senza un assembly .NET Framework.  
   
@@ -874,11 +874,11 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **TypeLibraryFile**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Specifica il nome file e l'estensione di file del file TLB. Specificare un nome file o un percorso e un nome file.  
   
-   Per altre informazioni, vedere [/TLBOUT (Assegna un nome al file TLB)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
+   Per ulteriori informazioni, vedere [/TLBOUT (Name. File TLB)](https://msdn.microsoft.com/library/0df6d078-2e48-46c9-a1a5-02674d85dce8).  
   
 - **TypeLibraryResourceID**  
   
@@ -890,7 +890,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **UACExecutionLevel**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Indica il livello di esecuzione richiesto per l'applicazione quando viene eseguita con Controllo dell'account utente.  
   
@@ -906,7 +906,7 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **UACUIAccess**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, l'applicazione ignora i livelli di protezione dell'interfaccia utente e indirizza l'input verso finestre con un livello di autorizzazione superiore sul desktop; in caso contrario `false`.  
   
@@ -914,17 +914,17 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
 - **UseLibraryDependencyInputs**  
   
-   Parametro **Boolean** facoltativo.  
+   Parametro **booleano** facoltativo.  
   
    Se `true`, vengono usati gli input allo strumento Gestione librerie invece del file di libreria quando gli output di libreria delle dipendenze del progetto vengono collegati.  
   
-- **Version**  
+- **Versione**  
   
-   Parametro **String** facoltativo.  
+   Parametro **stringa** facoltativo.  
   
    Inserire un numero di versione nell'intestazione del file DLL o EXE. Specificare "`major[.minor]`". Gli argomenti `major` e `minor` sono numeri decimali compresi tra 0 e 65535.  
   
    Per altre informazioni, vedere [/VERSION (Informazioni sulla versione)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

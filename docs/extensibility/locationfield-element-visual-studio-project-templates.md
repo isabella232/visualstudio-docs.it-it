@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770020"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto di Visual Studio)
@@ -35,11 +35,11 @@ Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- No.
+### <a name="attributes"></a>Attributes
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 

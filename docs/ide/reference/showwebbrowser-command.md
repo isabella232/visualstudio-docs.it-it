@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8266a7c70544d8a320658fcd8b9f5ad249162fe
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769576"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
@@ -35,14 +35,14 @@ View.ShowWebBrowser URL [/new][/ext]
 
 Obbligatorio. URL (Uniform Resource Locator) per il sito Web.
 
-## <a name="switches"></a>Switch
+## <a name="switches"></a>Commutatori
 /new
 
-Facoltativa. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
+facoltativo. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
 
 /ext
 
-Facoltativa. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
+facoltativo. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
 
 ## <a name="remarks"></a>Osservazioni
 L'alias per il comando **ShowWebBrowser** è **navigate** o **nav**.

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPointerObject::SetBytes . Documenti Microsoft
+title: 'IDebugPointerObject:: sebytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dede3ee5291afbfbeab4d6e60dcbd56e205e4526
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725508"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
-Imposta il valore a cui punta da una serie di byte consecutivi.
+Imposta il valore a cui punta una serie di byte consecutivi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,22 +47,22 @@ int SetBytes(
 
 ## <a name="parameters"></a>Parametri
 `dwStart`\
-[in] Offset, in byte, dall'inizio dell'oggetto a cui punta.
+in Offset, in byte, dall'inizio dell'oggetto a cui puntava.
 
 `dwCount`\
-[in] Numero di byte da impostare.
+in Numero di byte da impostare.
 
 `pBytes`\
-[in] Matrice di byte che rappresenta il nuovo valore. Questo valore viene archiviato nell'oggetto, a partire dall'offset specificato.
+in Matrice di byte che rappresenta il nuovo valore. Questo valore viene archiviato nell'oggetto, a partire dall'offset specificato.
 
 `pdwBytes`\
-[fuori] Restituisce il numero di byte effettivamente impostati.
+out Restituisce il numero di byte effettivamente impostati.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo viene utilizzato se il puntatore come rappresentato da questo [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) punta a un tipo primitivo o una matrice semplice di tipi primitivi (vale a dire, una matrice che può essere rappresentata da una semplice sequenza di byte). Questo `IDebugPointerObject` oggetto non può essere un riferimento null (deve puntare a un indirizzo in memoria).
+ Questo metodo viene utilizzato se il puntatore rappresentato da questo [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) punta a un tipo primitivo o a una semplice matrice di tipi primitivi (ovvero una matrice che può essere rappresentata da una semplice sequenza di byte). Questo `IDebugPointerObject` oggetto non può essere un riferimento null (deve puntare a un indirizzo in memoria).
 
 ## <a name="see-also"></a>Vedere anche
 - [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)

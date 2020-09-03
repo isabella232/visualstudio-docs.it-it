@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce5b21f92eecf2e8929c142bc1ee32e20d386335
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299258"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Come è possibile eseguire il debug di violazioni di accesso quando si esegue un programma fuori dal debugger?
@@ -36,7 +36,7 @@ Descrizione del problema
 ## <a name="solution"></a>Soluzione  
  Impostare l'opzione [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md) ed eseguire il programma autonomamente finché non si verifica la violazione di accesso. Nella finestra di dialogo **Violazione di accesso** sarà quindi possibile fare clic su **Annulla** per avviare il debugger.  
   
- Vedere inoltre l'articolo Q133174 di Knowledge Base "How to Locate Where a General Protection (GP) Fault Occurs". Gli articoli della Knowledge base sono disponibili nel CD di MSDN Library oppure è possibile cercare [http://support.microsoft.com/](https://support.microsoft.com/).  
+ Vedere inoltre l'articolo Q133174 di Knowledge Base "How to Locate Where a General Protection (GP) Fault Occurs". È possibile trovare articoli della Knowledge base nel CD di MSDN Library o eseguendo una ricerca [http://support.microsoft.com/](https://support.microsoft.com/) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)   

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Organizzare e modificare il codice in Visual Studio
-summary: Informazioni sull'utilizzo dei progetti di codice, sull'utilizzo delle funzionalità dell'editor di codice e sul mantenimento di uno stile di codice coerente.
+summary: Informazioni sull'utilizzo dei progetti di codice, sull'utilizzo delle funzionalità dell'editor del codice e sulla gestione di uno stile di codice coerente.
 metadata:
   title: Funzionalità dell'editor del codice
-  description: Informazioni sulle funzionalità di modifica del codice in Visual Studio.Learn about code editing features in Visual Studio.
+  description: Informazioni sulle funzionalità di modifica del codice in Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
@@ -11,10 +11,10 @@ metadata:
   ms.author: jillfra
   ms.date: 10/15/2019
   ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
-  ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 03/18/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "74316433"
 landingContent:
 - title: Aprire o creare un progetto
@@ -29,7 +29,7 @@ landingContent:
     links:
     - text: Usare Visual Studio senza progetti o soluzioni
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: Utilizzare le funzioni di modifica
+- title: Usare le funzionalità di modifica
   linkLists:
   - linkListType: overview
     links:
@@ -39,9 +39,9 @@ landingContent:
       url: navigating-code.md
     - text: Generare e correggere il codice
       url: code-generation-in-visual-studio.md
-    - text: Usare IntelliSense per il completamento del codiceUse IntelliSense for code completion
+    - text: Usare IntelliSense per il completamento del codice
       url: using-intellisense.md
-    - text: Gestire le preferenze relative allo stile del codice
+    - text: Gestisci preferenze stile codice
       url: code-styles-and-code-cleanup.md
     - text: Analisi codice
       url: ../code-quality/roslyn-analyzers-overview.md

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349588"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: espandere e comprimere strutture ad albero di Spy++
@@ -27,7 +27,7 @@ ms.locfileid: "85349588"
 |**Espandi un livello**|Espande l'elemento attualmente selezionato al livello successivo.|
 |**Espandi ramo**|Espande completamente l'elemento attualmente selezionato.|
 |**Espandi tutto**|Espande completamente tutti gli elementi nella finestra.|
-|**Comprimi**|Comprime completamente l'elemento attualmente selezionato.|
+|**Collapse**|Comprime completamente l'elemento attualmente selezionato.|
 
 > [!TIP]
 > Se si espande un processo, vengono visualizzati tutti i thread di proprietà del processo. Se si espande un thread, viene visualizzato un elenco di tutte le finestre di cui è proprietario.
@@ -38,7 +38,7 @@ ms.locfileid: "85349588"
 
 2. Scegliere uno dei comandi Espandi o Comprimi dal menu **albero** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Utilizzo di Spy++](../debugger/using-spy-increment.md)
 - [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)
 - [Riferimenti per Spy++](../debugger/spy-increment-reference.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349757"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Eseguire il debug di app ASP.NET o ASP.NET Core in Visual Studio
@@ -138,9 +138,9 @@ I progetti ASP.NET hanno file *web.config* per impostazione predefinita, che con
    </configuration>
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]rileva automaticamente eventuali modifiche apportate ai file di *web.config* e applica le nuove impostazioni di configurazione. Non è necessario riavviare il computer o il server IIS per rendere effettive le modifiche.
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] rileva automaticamente eventuali modifiche apportate ai file di *web.config* e applica le nuove impostazioni di configurazione. Non è necessario riavviare il computer o il server IIS per rendere effettive le modifiche.
 
-Un sito Web può contenere diverse directory virtuali e sottodirectory, con *web.config* file in ognuno di essi. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]le app ereditano le impostazioni di configurazione da *web.config* file a livelli superiori nel percorso URL. Le impostazioni del file di *web.config* gerarchico si applicano a tutte le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] app sottostanti nella gerarchia. L'impostazione di una configurazione diversa in un file di *web.config* inferiore nella gerarchia sostituisce le impostazioni nel file di livello superiore.
+Un sito Web può contenere diverse directory virtuali e sottodirectory, con *web.config* file in ognuno di essi. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le app ereditano le impostazioni di configurazione da *web.config* file a livelli superiori nel percorso URL. Le impostazioni del file di *web.config* gerarchico si applicano a tutte le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] app sottostanti nella gerarchia. L'impostazione di una configurazione diversa in un file di *web.config* inferiore nella gerarchia sostituisce le impostazioni nel file di livello superiore.
 
 Se ad esempio si specifica `debug="true"` in <em>www.Microsoft.com/AAA/web.config</em>, qualsiasi app nella cartella *AAA* o in qualsiasi sottocartella di *AAA* eredita tale impostazione, tranne nel caso in cui una di queste app esegua l'override dell'impostazione con il proprio file di *web.config* .
 
@@ -171,7 +171,7 @@ Esistono diversi modi per pubblicare le app in IIS. Questi passaggi illustrano c
 
 1. In **configurazione**selezionare **debug** nell'elenco a discesa.
 
-1. Seleziona **Salva**.
+1. Selezionare **Salva**.
 
 1. Nella finestra di dialogo **pubblica** verificare che sia visualizzato **CustomProfile** (o il nome del profilo appena creato) e che **LastUsedBuildConfiguration** sia impostato su **debug**.
 
@@ -182,7 +182,7 @@ Esistono diversi modi per pubblicare le app in IIS. Questi passaggi illustrano c
 > [!IMPORTANT]
 > La modalità di debug riduce notevolmente le prestazioni dell'app. Per ottenere prestazioni ottimali, impostare `debug="false"` nell' *web.config* e specificare una build di rilascio quando si distribuisce un'app di produzione o si conducono le misurazioni delle prestazioni.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di ASP.NET: requisiti di sistema](aspnet-debugging-system-requirements.md)
 - [Procedura: Eseguire il processo di lavoro con un account utente](how-to-run-the-worker-process-under-a-user-account.md)
 - [Procedura: Trovare il nome del processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)

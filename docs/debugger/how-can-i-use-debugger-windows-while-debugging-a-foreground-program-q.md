@@ -23,19 +23,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c74ca2c01f55778930e2cab1ccf38011bba868d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350329"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Come è possibile utilizzare le finestre debugger mentre si esegue il debug di un programma in primo piano?
 ## <a name="problem-description"></a>Descrizione del problema
- Si sta tentando di effettuare il debug di un problema relativo a un disegno dello schermo. Per osservare questo problema è necessario mantenere il programma in primo piano, ma in questo modo è impossibile accedere alle finestre di debug. In che modo è possibile risolvere questo problema?
+ Si sta tentando di effettuare il debug di un problema relativo a un disegno dello schermo. Per osservare questo problema è necessario mantenere il programma in primo piano, ma in questo modo è impossibile accedere alle finestre di debug. Come posso procedere?
 
 ## <a name="solution"></a>Soluzione
  Se si dispone di un secondo computer, sarà possibile ricorrere al debug remoto. Con una configurazione su due computer sarà possibile osservare il disegno dello schermo sul computer remoto mentre si esegue il debugger sull'host. Per ulteriori informazioni sul debug remoto, vedere [Remote Debugging](../debugger/remote-debugging.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

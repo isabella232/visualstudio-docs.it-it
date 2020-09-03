@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772079"
 ---
 # <a name="profiling-tools-apis"></a>API per strumenti di profilatura
@@ -22,7 +22,7 @@ ms.locfileid: "74772079"
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-[Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+[Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
 
 Descrive i metodi degli strumenti di profilatura C++.
 

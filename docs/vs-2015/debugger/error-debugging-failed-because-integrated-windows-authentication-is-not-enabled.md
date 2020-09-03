@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851920"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata
@@ -39,7 +39,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
 2. Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.  
   
-3. Nel **Pannello di controllo** fare doppio clic sull'icona **Strumenti di amministrazione**.  
+3. Nel **Pannello di controllo**fare doppio clic su **strumenti di amministrazione**.  
   
 4. Fare doppio clic su **Internet Information Services**.  
   
@@ -61,7 +61,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
 10. Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.  
   
-11. Fare clic su **OK** per chiudere la finestra di dialogo **Proprietà**.  
+11. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà**.  
   
 12. Chiudere la finestra **Internet Information Services**.  
   
@@ -77,7 +77,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
          Verrà visualizzata la finestra di dialogo Controllo di accesso utente e verrà richiesto di immettere l'autorizzazione per continuare.  
   
-    3. Fare clic su **Continue**.  
+    3. Fare clic su **Continua**.  
   
          Verrà visualizzata la finestra di dialogo Funzionalità Windows.  
   
@@ -97,11 +97,11 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
     11. Per rendere effettive queste modifiche, riavviare il computer.  
   
-3. Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.  
+3. Fare clic sul pulsante **Start** , quindi scegliere **Pannello di controllo**.  
   
 4. Selezionare **Visualizzazione classica**, quindi fare doppio clic su **Strumenti di amministrazione**.  
   
-5. Nella colonna **Nome** fare doppio clic su **Gestione Internet Information Services (IIS)** .  
+5. Nella colonna **Nome** fare doppio clic su **Gestione Internet Information Services (IIS)**.  
   
 6. Nella colonna **Connessioni** espandere il nodo del server.  
   
@@ -115,9 +115,9 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
 9. Nella colonna **Nome** del riquadro **Autenticazione** fare clic con il pulsante destro del mouse su **Autenticazione di Windows**, quindi scegliere **Attiva**.  
   
-10. Chiudere la finestra **Gestione Internet Information Services (IIS)** .  
+10. Chiudere la finestra **Gestione Internet Information Services (IIS)**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Autenticazione digest Microsoft](https://msdn2.microsoft.com/library/Aa378744.aspx)   
+ [Autenticazione Microsoft Digest](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [Esecuzione di applicazioni Web in Windows Vista con IIS 7,0 e Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

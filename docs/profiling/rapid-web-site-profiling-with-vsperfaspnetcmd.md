@@ -12,18 +12,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74771692"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilatura rapida di sito Web con VSPerfASPNETCmd
 
-Lo strumento da riga di comando **VSPerfASPNETCmd** consente di profilare [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] facilmente le applicazioni Web. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [Procedura: Installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).
+Lo strumento da riga di comando **VSPerfASPNetCmd** consente di profilare facilmente [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le applicazioni Web. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [Procedura: Installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
  In alcuni scenari, quali la raccolta di dati di concorrenza o la sospensione e la ripresa della profilatura, **VSPerfCmd** costituisce il metodo di profilatura preferito.
 
@@ -42,7 +42,7 @@ Per profilare un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/include
 
  **vsperfaspnetcmd**  *websiteUrl*
 
- Un esempio di *websiteUrl* ospitato su server locale potrebbe essere *http://localhost/MySite/default.aspx*. Un esempio di sito *http://www.contoso.com*esterno è . Per altre informazioni, vedere gli URL di esempio nella sezione [Per profilare un sito Web senza aprire un progetto in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+ Un esempio di *websiteUrl* ospitato su server locale potrebbe essere *http://localhost/MySite/default.aspx*. Un esempio di sito esterno è *http://www.contoso.com* . Per altre informazioni, vedere gli URL di esempio nella sezione [Per profilare un sito Web senza aprire un progetto in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Per raccogliere dati di intervallo dettagliati tramite il metodo di strumentazione
 
@@ -50,7 +50,7 @@ Usare la riga di comando seguente per raccogliere dati di intervallo dettagliati
 
 **vsperfaspnetcmd /trace**  *websiteUrl*
 
-Se si desidera profilare la compilazione statica . *dll* nell'applicazione Web, è necessario instrumentare i file utilizzando lo strumento della riga di comando [VSInstr.](../profiling/vsinstr.md) Il comando vsperfaspnetcmd /trace includerà i dati dai file instrumentati.
+Se si desidera profilare compilati in modo statico. file *dll* nell'applicazione Web, è necessario instrumentare i file utilizzando lo strumento da riga di comando [VSInstr](../profiling/vsinstr.md) . Il comando vsperfaspnetcmd /trace includerà i dati dai file instrumentati.
 
 ## <a name="to-collect-net-memory-data"></a>Per raccogliere dati di memoria .NET
 

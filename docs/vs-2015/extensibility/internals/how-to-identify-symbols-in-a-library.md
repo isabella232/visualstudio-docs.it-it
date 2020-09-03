@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Identificare i simboli in una libreria | Microsoft Docs'
+title: 'Procedura: identificare i simboli in una libreria | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f154c63940189f1a6035246fb7f72ec27be677f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191865"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Procedura: Identificare i simboli in una libreria
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Strumenti di esplorazione dei simboli visualizzano le visualizzazioni gerarchiche di simboli. I simboli rappresentano gli spazi dei nomi, oggetti, classi, membri di classi e altri elementi del linguaggio.  
+Gli strumenti di esplorazione dei simboli visualizzano le visualizzazioni gerarchiche dei simboli. I simboli rappresentano spazi dei nomi, oggetti, classi, membri di classe e altri elementi del linguaggio.  
   
- Ogni simbolo nella gerarchia può essere identificata mediante le informazioni di navigazione passate dalla libreria di simboli per il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gestione degli oggetti tramite le interfacce seguenti:  
+ Ogni simbolo nella gerarchia può essere identificato dalle informazioni di navigazione passate dalla libreria dei simboli a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gestione oggetti tramite le interfacce seguenti:  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>  
   
@@ -31,11 +31,11 @@ Strumenti di esplorazione dei simboli visualizzano le visualizzazioni gerarchich
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
- La posizione del simbolo nella gerarchia consente di distinguere un simbolo. Consente gli strumenti di esplorazione dei simboli passare a un simbolo specifico. Il percorso completo univoco per il simbolo determina la posizione. Ogni elemento nel percorso è un nodo. Il percorso inizia con il nodo di primo livello e termina con il simbolo specifico. Ad esempio, se il metodo M1 è un membro della classe C1 e C1 è N1 dello spazio dei nomi, il percorso completo del metodo M1 viene N1. C1. M1. Questo percorso contiene tre nodi: N1, C1 e M1.  
+ La posizione del simbolo nella gerarchia distingue un simbolo. Consente agli strumenti di esplorazione simboli di passare a un simbolo specifico. Il percorso univoco completo del simbolo determina la posizione. Ogni elemento del percorso è un nodo. Il percorso inizia con il nodo di primo livello e termina con il simbolo specifico. Se, ad esempio, il metodo M1 è un membro della classe C1 e C1 si trova nello spazio dei nomi N1, il percorso completo del metodo M1 è N1. C1. M1. Questo percorso contiene tre nodi: N1, C1 e M1.  
   
- Le informazioni sulla navigazione consente di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] object manager per individuare, selezionare e mantenere selezionato i simboli nella gerarchia. Consente di passare da uno strumento di esplorazione a altra. Quando si usa **Visualizzatore oggetti** per individuare i simboli in un [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] progetto, è possibile fare clic con il pulsante destro un metodo e avviare la **Visualizzatore chiamate** strumento che mostra il metodo in un grafico delle chiamate.  
+ Le informazioni di navigazione consentono al [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gestore oggetti di individuare, selezionare e lasciare selezionati i simboli nella gerarchia. Consente lo spostamento da uno strumento di esplorazione a un altro. Quando si usa **Visualizzatore oggetti** per visualizzare i simboli in un [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] progetto, è possibile fare clic con il pulsante destro del mouse su un metodo e avviare lo strumento **Visualizzatore chiamate** per visualizzare il metodo in un grafico delle chiamate.  
   
- Due forme descrivono la posizione del simbolo. La forma canonica si basa su un percorso completo del simbolo. Rappresenta una posizione esclusiva del simbolo nella gerarchia. È indipendente dello strumento di esplorazione dei simboli. Per ottenere le informazioni sul formato canonico, il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] object manager chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> (metodo). Il formato di presentazione descrive la posizione del simbolo all'interno di uno strumento specifico per l'esplorazione del simbolo. La posizione del simbolo è rispetto alla posizione di altri simboli nel hierarchicy. Un determinato simbolo può avere diversi percorsi di presentazione, ma solo un percorso canonico. Ad esempio, se la classe C1 viene ereditata dalla classe C2 e sono entrambe le classi nello spazio dei nomi N1, il **Visualizzatore oggetti** consente di visualizzare lo struttura ad albero gerarchica seguente:  
+ Due form descrivono la posizione dei simboli. Il formato canonico è basato sul percorso completo del simbolo. Rappresenta una posizione univoca del simbolo nella gerarchia. È indipendente dallo strumento di esplorazione dei simboli. Per ottenere le informazioni sul formato canonico, il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gestore di oggetti chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> metodo. Il form di presentazione descrive la posizione del simbolo all'interno di uno strumento specifico di esplorazione dei simboli. La posizione del simbolo è relativa alla posizione di altri simboli nella gerarchia. Un simbolo specificato può includere diversi percorsi di presentazione, ma solo un percorso canonico. Se, ad esempio, la classe C1 viene ereditata dalla classe C2 ed entrambe le classi si trovano nello spazio dei nomi N1, il **Visualizzatore oggetti** Visualizza la struttura ad albero gerarchica seguente:  
   
 ```  
 N1  
@@ -48,17 +48,17 @@ N1
   
 ```  
   
- Il percorso canonico della classe C2, in questo esempio è N1 + C2. Percorso di presentazione del C2 include nodi C1 e "Basi e interfacce": N1 + C1 + "basi e interfacce" + C2.  
+ Il percorso canonico della classe C2, in questo esempio, è N1 + C2. Il percorso di presentazione di C2 include i nodi C1 e "basi e interfacce": N1 + C1 + "basi e interfacce" + C2.  
   
- Per ottenere le informazioni sul formato di presentazione, le chiamate di gestione di oggetti <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> (metodo).  
+ Per ottenere le informazioni sul form di presentazione, il gestore di oggetti chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> metodo.  
   
-## <a name="identifying-a-symbol-in-the-hierarchy"></a>Che identifica un simbolo nella gerarchia  
+## <a name="identifying-a-symbol-in-the-hierarchy"></a>Identificazione di un simbolo nella gerarchia  
   
-#### <a name="to-obtain-canonical-and-presentation-forms-information"></a>Per ottenere canonico e presentazione basata su form informazioni  
+#### <a name="to-obtain-canonical-and-presentation-forms-information"></a>Per ottenere informazioni sui moduli canonici e di presentazione  
   
 1. Implementare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>.  
   
-     Il gestore oggetti chiama questo metodo per ottenere l'elenco dei nodi contenuti nel percorso canonico del simbolo.  
+     Il gestore di oggetti chiama questo metodo per ottenere l'elenco di nodi contenuti nel percorso canonico del simbolo.  
   
     ```vb  
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer  
@@ -81,9 +81,9 @@ N1
   
 2. Implementare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>.  
   
-     Il gestore oggetti chiama questo metodo per ottenere l'elenco dei nodi contenuti nel percorso di presentazione del simbolo.  
+     Il gestore di oggetti chiama questo metodo per ottenere l'elenco di nodi contenuti nel percorso di presentazione del simbolo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Supporto di strumenti di esplorazione dei simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Procedura: Registrare una libreria con il gestore oggetti](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Procedura: esporre gli elenchi dei simboli offerti dalla libreria al gestore degli oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Supporto degli strumenti per l'esplorazione di simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [Procedura: registrare una libreria con gestione oggetti](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Procedura: Esporre gli elenchi dei simboli forniti dalla libreria al gestore degli oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

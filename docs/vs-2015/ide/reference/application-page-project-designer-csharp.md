@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2bf9c64a55f6f3b49cb1e0a50fa532f276394dac
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851994"
 ---
 # <a name="application-page-project-designer-c"></a>Applicazione (pagina), Creazione progetti (C#)
@@ -27,7 +27,7 @@ ms.locfileid: "75851994"
 
 Usare la pagina **Applicazione** di **Creazione progetti** per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 
- Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Progetto**, **Proprietà** sulla barra dei menu. Quando compare Creazione progetti, fare clic sulla scheda **Applicazione**.
+ Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Progetto**, **Proprietà** sulla barra dei menu. Quando si apre **Creazione progetti**, fare clic sulla scheda Applicazione.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
@@ -49,7 +49,7 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
 > [!NOTE]
 > I pacchetti dei prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono impostati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario selezionare manualmente i prerequisiti in modo che vi sia corrispondenza.
 
- Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+ Per altre informazioni, vedere [How to: Target a Version of the .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) (Procedura: Destinare una versione di .NET Framework) e [Visual Studio Multi-Targeting Overview](../../ide/visual-studio-multi-targeting-overview.md) (Cenni preliminari sul multitargeting di Visual Studio).
 
  **Tipo di applicazione** Specifica il tipo di applicazione da compilare. Per app di [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] è possibile specificare **App di Windows Store**, **Libreria di classi** o **File WinMD**. Per la maggior parte degli altri tipi di applicazione, è possibile specificare **Applicazione Windows**, **Applicazione console**, **Libreria di classi**, **Servizio Windows** o **Libreria di controlli Web**.
 
@@ -64,9 +64,9 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
 
  **Informazioni assembly**Se si sceglie questo pulsante viene visualizzata la [finestra di dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).
 
- **Oggetto di avvio** Definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Non impostato)** .
+ **Oggetto Startup** Definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Non impostato)**.
 
- Per impostazione predefinita, nel progetto di un'applicazione browser WPF, il valore di questa opzione è **(Non impostato)** . L'altra opzione è *NomeProgetto*.App. In questo tipo di progetto è necessario impostare l'URI di avvio per caricare una risorsa interfaccia utente all'avvio dell'applicazione. A tale scopo, aprire il file Application.xaml nel progetto e impostare la proprietà `StartupUri` su un file con estensione xaml del progetto, ad esempio Window1.xaml. Per un elenco di elementi radice accettabili, vedere <xref:System.Windows.Application.StartupUri%2A>. È anche necessario definire un metodo `public static void Main()` in una classe del progetto. Questa classe verrà visualizzata nell'elenco **Oggetto di avvio** come *NomeProgetto.NomeClasse*. Sarà quindi possibile selezionare la classe come oggetto di avvio.
+ Per impostazione predefinita, nel progetto di un'applicazione browser WPF, il valore di questa opzione è **(Non impostato)**. L'altra opzione è *NomeProgetto*.App. In questo tipo di progetto è necessario impostare l'URI di avvio per caricare una risorsa interfaccia utente all'avvio dell'applicazione. A tale scopo, aprire il file Application.xaml nel progetto e impostare la proprietà `StartupUri` su un file con estensione xaml del progetto, ad esempio Window1.xaml. Per un elenco di elementi radice accettabili, vedere <xref:System.Windows.Application.StartupUri%2A>. È anche necessario definire un metodo `public static void Main()` in una classe del progetto. Questa classe verrà visualizzata nell'elenco **Oggetto di avvio** come *NomeProgetto.NomeClasse*. Sarà quindi possibile selezionare la classe come oggetto di avvio.
 
  Per altre informazioni, vedere [/main (C# Compiler Options)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) (/main (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -77,7 +77,7 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
 
  **Icona** Imposta il file con estensione ico che si vuole usare come icona di programma. Fare clic sul pulsante con i puntini di sospensione per cercare un elemento grafico esistente o digitare il nome del file voluto. Per altre informazioni, vedere [/win32icon (C# Compiler Options)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
- **Manifesto** Seleziona un'opzione di generazione del manifesto quando l'applicazione viene eseguita in Windows Vista sotto Controllo dell'account utente. Questa opzione può avere i valori seguenti:
+ **Manifesto** Seleziona un'opzione di generazione del manifesto quando l'applicazione viene eseguita in Windows Vista sotto Controllo dell'account utente. L'opzione può avere i valori seguenti:
 
 - **Incorpora manifesto con impostazioni predefinite**. Supporta la modalità di funzionamento tipica di Visual Studio in Windows Vista, che prevede l'incorporazione delle informazioni di sicurezza nel file eseguibile dell'applicazione, specificando che `requestedExecutionLevel` deve essere `AsInvoker`. Questa è l'opzione predefinita.
 
@@ -87,7 +87,7 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
 
   **File di risorse** Selezionare questo pulsante di opzione se si specifica un file di risorse per il progetto. Se si seleziona questa opzione, le opzioni **Icona** e **Manifesto** vengono disabilitate.
 
-  Immettere un nome di percorso o usare il pulsante Sfoglia ( **...** ) per aggiungere un file di risorse Win32 al progetto.
+  Immettere un nome di percorso o usare il pulsante Sfoglia (**... **) per aggiungere un file di risorse Win32 al progetto.
 
 ## <a name="see-also"></a>Vedere anche
-[Gestione delle proprietà delle applicazioni](../../ide/application-properties.md)[Scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Gestione delle proprietà delle applicazioni](../../ide/application-properties.md) [Scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

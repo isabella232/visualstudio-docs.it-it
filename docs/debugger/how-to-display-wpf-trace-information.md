@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 362376176cfb95c4e285f6837c53d277110e3439
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349783"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Procedura: visualizzare le informazioni di traccia WPF
@@ -30,7 +30,7 @@ ms.locfileid: "85349783"
 
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Per abilitare o personalizzare le informazioni di traccia WPF
 
-1. Nel menu **Strumenti** selezionare **Opzioni**.
+1. Scegliere **Options** (Opzioni) dal menu **Tools** (Strumenti).
 
 2. Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.
 
@@ -66,7 +66,7 @@ ms.locfileid: "85349783"
 
 ### <a name="to-disable-wpf-trace-information"></a>Per disabilitare le informazioni di traccia WPF
 
-1. Nel menu **Strumenti** selezionare **Opzioni**.
+1. Scegliere **Options** (Opzioni) dal menu **Tools** (Strumenti).
 
 2. Nella finestra di dialogo **Opzioni** aprire il nodo **Debug** nella casella sulla sinistra.
 
@@ -84,5 +84,5 @@ ms.locfileid: "85349783"
 
 8. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di WPF](../debugger/debugging-wpf.md)

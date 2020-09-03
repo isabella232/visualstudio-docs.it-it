@@ -25,10 +25,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a63a593a907908205d6724f3faf2c06d405bf0e2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350043"
 ---
 # <a name="how-to-debug-injected-code"></a>Procedura: eseguire il debug di codice inserito
@@ -66,7 +66,7 @@ Nella finestra **Disassembly** vengono visualizzate le istruzioni in linguaggio 
 
 2. Scegliere **Finestre** dal menu **Debug** e fare clic su **Disassembly**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)
