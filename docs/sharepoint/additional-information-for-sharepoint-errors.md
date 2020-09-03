@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985072"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informazioni aggiuntive sugli errori di SharePoint
-  Per informazioni sulla risoluzione dei problemi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gli errori e gli avvisi degli strumenti di SharePoint, vedere gli argomenti relativi alla risoluzione dei problemi e i forum pubblici.
+  Per informazioni sulla risoluzione degli [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errori e degli avvisi degli strumenti di SharePoint, vedere gli argomenti relativi alla risoluzione dei problemi e i forum pubblici.
 
 ## <a name="troubleshoot-errors-and-issues"></a>Risolvere gli errori e i problemi
- Per assistenza con alcuni errori comuni e altri problemi in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gli strumenti di SharePoint, vedere gli argomenti seguenti:
+ Per assistenza con alcuni errori comuni e altri problemi negli [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di SharePoint, vedere gli argomenti seguenti:
 
 - [Risolvere i problemi relativi alle soluzioni SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
@@ -36,13 +36,13 @@ ms.locfileid: "72985072"
 - [Risolvere i problemi di distribuzione e creazione di pacchetti di SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Altre risorse
- Nella tabella seguente sono elencati i forum degli strumenti di SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e altre risorse disponibili.
+ Nella tabella seguente sono elencati i [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Forum degli strumenti di SharePoint e altre risorse disponibili.
 
 |Termine|Definizione|
 |----------|----------------|
-|[Sviluppo per SharePoint](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|Forum dedicato a domande sullo sviluppo di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Forum di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|Forum dedicato a domande su [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Guida e supporto tecnico Microsoft](https://support.microsoft.com/)|È possibile accedere agli articoli di Microsoft Knowledge Base (KB), a download e ad aggiornamenti, a servizi di supporto su Web e ad altri servizi.|
+|[Sviluppo per SharePoint](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|Forum dedicato a domande sullo sviluppo di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
+|[Forum di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|Viene fornito un forum per le domande su [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
+|[Supporto Tecnico Microsoft](https://support.microsoft.com/)|È possibile accedere agli articoli di Microsoft Knowledge Base (KB), a download e ad aggiornamenti, a servizi di supporto su Web e ad altri servizi.|
 
  Se non si riesce ancora a trovare le risposte necessarie, è possibile accedere alle opzioni di supporto online, ad esempio contattare il servizio supporto tecnico Microsoft o eseguire ricerche negli articoli della Knowledge base. Per ulteriori informazioni, vedere la pagina della [Guida e del supporto tecnico Microsoft](https://support.microsoft.com/) .
 

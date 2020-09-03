@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3d8649484178a537ed4af7bdde044a29893275
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619253"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creazione di applicazioni in lingue bidirezionali
@@ -32,7 +32,7 @@ ms.locfileid: "72619253"
 
 1. Applicazioni Windows. È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per altre informazioni, vedere [Supporto bidirezionale per le applicazioni Windows Forms](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
 
-2. Applicazioni Web. I servizi Web supportano l'invio e la ricezione di testo UTF-8 e Unicode, quindi sono adatti per applicazioni con lingue bidirezionali. L'interfaccia utente delle applicazioni Web client è basata sui browser, pertanto il livello di supporto bidirezionale di un'applicazione Web dipende dal grado di supporto delle funzionalità bidirezionali nel browser dell'utente. In Visual Studio è possibile creare applicazioni con supporto per testo in arabo o ebraico, ordine di lettura da destra a sinistra, codifica di file e impostazioni cultura locali. Per altre informazioni, vedere [Supporto bidirezionale per applicazioni Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+2. applicazioni Web. I servizi Web supportano l'invio e la ricezione di testo UTF-8 e Unicode, quindi sono adatti per applicazioni con lingue bidirezionali. L'interfaccia utente delle applicazioni Web client è basata sui browser, pertanto il livello di supporto bidirezionale di un'applicazione Web dipende dal grado di supporto delle funzionalità bidirezionali nel browser dell'utente. In Visual Studio è possibile creare applicazioni con supporto per testo in arabo o ebraico, ordine di lettura da destra a sinistra, codifica di file e impostazioni cultura locali. Per altre informazioni, vedere [Supporto bidirezionale per applicazioni Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 3. applicazioni console Le applicazioni console non includono il supporto del testo per le lingue bidirezionali. Questo fatto dipende dall'interazione tra Windows e le applicazioni console.
 
@@ -46,7 +46,7 @@ ms.locfileid: "72619253"
 - **Codifica file** È possibile salvare e aprire file con codifica Unicode o specifica della lingua. Per altre informazioni, vedere [Procedura: salvare e aprire file con codifica](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="features-with-limited-or-no-support"></a>Funzionalità con supporto limitato o non supportate
- Altre funzionalità comuni delle applicazioni in lingue bidirezionali non sono completamente supportate in Visual Studio, o in alcuni casi non lo sono affatto. tra cui:
+ Altre funzionalità comuni delle applicazioni in lingue bidirezionali non sono completamente supportate in Visual Studio, o in alcuni casi non lo sono affatto. Sono inclusi:
 
 - **Ordine di lettura da destra a sinistra** Per impostazione predefinita i controlli per l'immissione di testo usati in Visual Studio adottano l'ordine di lettura da sinistra a destra. Nella maggior parte dei casi è possibile cambiare l'ordine di lettura con operazioni standard di Windows. Ad esempio è possibile premere Ctrl+MAIUSC destro per impostare il supporto dell'ordine di lettura da destra a sinistra per i valori delle proprietà nella finestra Proprietà.
 
@@ -74,7 +74,7 @@ ms.locfileid: "72619253"
 
 - Attributi e metadati.
 
-- Valori delle proprietà. Nella finestra Proprietà è possibile usare testo in arabo o ebraico. La finestra consente di alternare tra l'ordine di lettura da destra a sinistra e da sinistra a destra con combinazioni di tasti standard di Windows (CTRL+MAIUSC destro per l'ordine da destra a sinistra e CTRL+MAIUSC sinistro per l'ordine da sinistra a destra).
+- Valori delle proprietà Nella finestra Proprietà è possibile usare testo in arabo o ebraico. La finestra consente di alternare tra l'ordine di lettura da destra a sinistra e da sinistra a destra con combinazioni di tasti standard di Windows (CTRL+MAIUSC destro per l'ordine da destra a sinistra e CTRL+MAIUSC sinistro per l'ordine da sinistra a destra).
 
 - Codice e testo letterale. Nell'editor di codice (che è anche l'editor di testo) è possibile usare l'arabo o l'ebraico per assegnare nomi a classi, funzioni, variabili, proprietà, valori letterali stringa, attributi e così via. Tuttavia l'editor non supporta l'ordine di lettura da destra a sinistra: il testo inizia sempre sul margine sinistro.
 

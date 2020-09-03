@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b974f3450b88ab22e58e284881f270c1b3d72298
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619266"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Creare commenti JSDoc per IntelliSense per JavaScript
@@ -26,17 +26,17 @@ IntelliSense in Visual Studio visualizza le informazioni aggiunte a uno script t
 
 |  Tag JSDoc   |                       Sintassi                        |                                                     Note                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| @deprecated  |              @deprecated *descrizione*              |                                   Specifica una funzione o un metodo deprecato.                                   |
-| @description |             @description *descrizione*              |                              Specifica la descrizione di una funzione o di un metodo.                               |
-|    @param    | <em>descrizione</em> @param {*Type*} *parameterName* | Specifica le informazioni relative a un parametro in una funzione o un metodo.<br /><br /> TypeScript supporta anche @paramTag. |
+| @deprecated  |              @deprecated*Descrizione* di              |                                   Specifica una funzione o un metodo deprecato.                                   |
+| @description |             @description*Descrizione* di              |                              Specifica la descrizione di una funzione o di un metodo.                               |
+|    @param    | @param{*Type*} <em>Descrizione</em> *parametroname* | Specifica le informazioni relative a un parametro in una funzione o un metodo.<br /><br /> TypeScript supporta anche @paramTag . |
 |  @property   |          @property {*type*} *propertyName*          |   Specifica le informazioni, inclusa una descrizione, relative a un campo o a un membro definito per un oggetto.    |
-|   @returns   |                  @returns {*type*}                  |           Specifica un valore restituito.<br /><br /> Per TypeScript, usare @returnType anziché @returns.           |
-|   @summary   |               @summary *descrizione*                |                   Specifica la descrizione di una funzione o di un metodo (uguale a @description).                   |
-|    @type     |                   @type {*type*}                    |                                Specifica il tipo di una costante o di una variabile.                                |
+|   @returns   |                  @returns {*Type*}                  |           Specifica un valore restituito.<br /><br /> Per TypeScript, usare @returnType anziché @returns .           |
+|   @summary   |               @summary*Descrizione* di                |                   Specifica la descrizione di una funzione o di un metodo (uguale a @description ).                   |
+|    @type     |                   @type {*Type*}                    |                                Specifica il tipo di una costante o di una variabile.                                |
 |   @typedef   |         @typedef {*type*} *customTypeName*          |                                            Specifica un tipo personalizzato.                                            |
 
 ### <a name="examples"></a>Esempi
- Nell'esempio seguente viene illustrato l'uso dei tag @description, @param e @return JSDoc per una funzione denominata `getArea`.
+ Nell'esempio seguente viene illustrato l'utilizzo dei @description @param @return tag JSDoc, e per una funzione denominata `getArea` .
 
 ```javascript
 /** @description Determines the area of a circle that has the specified radius parameter.
@@ -52,9 +52,9 @@ function getArea(radius) {
 
  Nell'esempio precedente IntelliSense mostra le informazioni su descrizione, parametri e valori restituiti quando si digita la parentesi di apertura per `getArea`.
 
- ![Informazioni IntelliSense per una funzione](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")
+ ![Informazioni di IntelliSense per una funzione](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")
 
- Nell'esempio seguente viene illustrato come utilizzare il tag @typedef con il tag @property.
+ Nell'esempio seguente viene illustrato come utilizzare il @typedef tag con il @property tag.
 
 ```javascript
 /**
@@ -67,7 +67,7 @@ function getForecast(Weather) {
 var w = new Weather();
 ```
 
- Nell'esempio seguente viene illustrato l'uso dei tag @type JSDoc. Come illustra questo esempio, gli asterischi singoli (*) che seguono la coppia di asterischi iniziale (\*\*) non sono obbligatori.
+ Nell'esempio seguente viene illustrato l'uso dei @type tag JSDoc. Come illustra questo esempio, gli asterischi singoli (*) che seguono la coppia di asterischi iniziale (\*\*) non sono obbligatori.
 
 ```javascript
 /**
@@ -77,7 +77,7 @@ const RED = 'FF0000';
 
 ```
 
- Nell'esempio seguente viene illustrato come utilizzare il @deprecated Tag JSDoc.
+ Nell'esempio seguente viene illustrato come utilizzare il @deprecated tag JSDoc.
 
 ```javascript
 /**
