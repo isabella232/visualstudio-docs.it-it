@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bf21286143b2b9543c834f00ed31ddaa4cef63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660367"
 ---
 # <a name="troubleshooting-code-coverage"></a>Risoluzione dei problemi di code coverage
@@ -20,7 +20,7 @@ ms.locfileid: "72660367"
 
 Lo strumento di analisi della copertura del codice in Visual Studio raccoglie dati per assembly nativo e gestito (file .dll o .exe). Tuttavia, in alcuni casi, nella finestra Risultati code coverage viene visualizzato un errore simile a "i risultati vuoti generati:...". Esistono diversi possibili motivi per cui questo potrebbe verificarsi. Questo argomento è progettato per aiutare a risolvere quei problemi.
 
-## <a name="what-you-should-see"></a>Cosa si dovrebbe vedere
+## <a name="what-you-should-see"></a>Elementi che dovrebbero essere visualizzati
  Se si sceglie un comando **Analizza code coverage** dal menu Test e se la compilazione e i test vengono eseguiti correttamente, nella finestra di code coverage verrà visualizzato un elenco di risultati. Potrebbe essere necessario espandere gli elementi per visualizzare il dettaglio.
 
  ![Risultati del code coverage con colorazione](../test/media/codecoverage1.png "CodeCoverage1")
@@ -58,7 +58,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  Se i file con estensione pdb e dll o exe sono in posizioni diverse, copiare il file con estensione pdb nella stessa directory. È inoltre possibile configurare il motore di code coverage per cercare i file con estensione pdb in un'altra posizione. Per altre informazioni, vedere [Personalizzazione dell'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="using-an-instrumented-or-optimized-binary"></a>Utilizzo di un binario instrumentato o ottimizzato
- L'analisi determina se il file binario è stato sottoposto a una qualsiasi forma di ottimizzazione avanzata, come l'ottimizzazione PGO, o è stato instrumentato da uno strumento di profilatura come VSInstr. exe o VSPerfMon. exe.
+ L'analisi determina se il file binario è stato sottoposto a una qualsiasi forma di ottimizzazione avanzata, come l'ottimizzazione PGO, o è stato instrumentato da uno strumento di profilatura, ad esempio vsinstr.exe o vsperfmon.exe.
 
  Spiegazione se un assembly è già stato instrumentato o ottimizzato da un altro strumento di profilatura, l'assembly viene omesso dall'analisi del code coverage.
 
@@ -67,9 +67,9 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  Risoluzione disattivare l'ottimizzazione e usare una nuova compilazione.
 
 ### <a name="code-is-not-managed-net-or-native-c-code"></a>Codice non gestito (.NET) o codice nativo (C++)
- Analisi verificare che vengano eseguiti alcuni test sul codice gestito o C++ .
+ Analisi verificare che vengano eseguiti alcuni test sul codice gestito o C++.
 
- La spiegazione dell'analisi del code coverage in Visual Studio è disponibile solo nelC++codice gestito e nativo (). Se si utilizzano strumenti di terze parti, il codice può essere eseguito parzialmente o totalmente su una piattaforma diversa.
+ La spiegazione dell'analisi del code coverage in Visual Studio è disponibile solo nel codice gestito e nativo (C++). Se si utilizzano strumenti di terze parti, il codice può essere eseguito parzialmente o totalmente su una piattaforma diversa.
 
  Risoluzione nessuno disponibile.
 
@@ -106,7 +106,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
 
  Spiegazione è possibile eseguire gli unit test con un file con estensione runsettings personalizzato per configurare le opzioni di code coverage. Le opzioni consentono di includere o escludere i file. Per altre informazioni, vedere [Personalizzazione dell'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
- Risoluzione rimuovere tutti i nodi `Include` dal file con estensione runsettings, quindi rimuovere tutti i nodi del `Exclude`. Se in tal modo si risolve il problema, riportare i nodi nelle fasi.
+ Risoluzione rimuovere tutti i `Include` nodi dal file con estensione runsettings, quindi rimuovere tutti i `Exclude` nodi. Se in tal modo si risolve il problema, riportare i nodi nelle fasi.
 
  Assicurarsi che il nodo DataCollectors specifichi Code coverage. Confrontarlo con l'esempio presente in [Personalizzazione dell'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 

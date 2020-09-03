@@ -1,5 +1,5 @@
 ---
-title: ProvideDefaultName (elemento) (modelli di Visual Studio) . Documenti Microsoft
+title: Elemento ProvideDefaultName (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701709"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName (elemento) (modelli di Visual Studio)
-Specifica se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] il sistema del progetto genererà un nome predefinito per il modello nella finestra di dialogo **Aggiungi nuovo elemento** o Nuovo **progetto.**
+# <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelli di Visual Studio)
+Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema del progetto genererà un nome predefinito per il modello nella finestra di dialogo **Aggiungi nuovo elemento** o **nuovo progetto** .
 
- \<VSTemplate \<> TemplateData> \<provideDefaultName>
+ \<VSTemplate> \<TemplateData>
+ \<ProvideDefaultName>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,11 +35,11 @@ Specifica se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] il sistem
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- No.
+### <a name="attributes"></a>Attributes
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -49,17 +50,17 @@ Specifica se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] il sistem
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve `true` `false`essere o , che indica se generare o meno un nome predefinito per il modello nella finestra di dialogo **Aggiungi nuovo elemento** o Nuovo **progetto** .
+ Il testo deve essere `true` o `false` , che indica se generare o meno un nome predefinito per il modello nella finestra di **dialogo Aggiungi nuovo elemento** o **nuovo progetto** .
 
 ## <a name="remarks"></a>Osservazioni
  `ProvideDefaultName` è un elemento facoltativo. Il valore predefinito è `true`.
 
- Se `ProvideDefaultName` `false`l'elemento è , le caselle **Nome** delle finestre `<Enter_name>`di dialogo Aggiungi nuovo **elemento** e Nuovo **progetto** contengono il valore .
+ Se l' `ProvideDefaultName` elemento è `false` , le caselle **nome** della finestra di dialogo **Aggiungi nuovo elemento** e **nuovo progetto** contengono il valore `<Enter_name>` .
 
- Utilizzare il [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento per specificare il nome predefinito del progetto o dell'elemento nelle finestre di dialogo **Aggiungi nuovo elemento** e Nuovo **progetto** . Quando il valore `ProvideDefaultName` dell'elemento è `true` `DefaultName` , l'omissione dell'elemento per i progetti popola la finestra di dialogo con il nome del modello, ovvero il valore dell'elemento [Name](../extensibility/name-element-visual-studio-templates.md) .
+ Usare l'elemento [defaultName](../extensibility/defaultname-element-visual-studio-templates.md) per specificare il nome predefinito del progetto o dell'elemento nelle finestre di dialogo **Aggiungi nuovo elemento** e **nuovo progetto** . Quando il valore dell' `ProvideDefaultName` elemento è `true` , l'omissione dell' `DefaultName` elemento per i progetti popola la finestra di dialogo con il nome del modello, ossia il valore dell'elemento [Name](../extensibility/name-element-visual-studio-templates.md) .
 
 ## <a name="example"></a>Esempio
- Nell'esempio di `ProvideDefaultName` codice `false`riportato di seguito l'elemento viene impostato su .
+ Nell'esempio di codice seguente l' `ProvideDefaultName` elemento viene impostato su `false` .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -78,5 +79,5 @@ Specifica se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] il sistem
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

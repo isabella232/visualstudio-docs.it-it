@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Uso delle API del profiler | Microsoft Docs'
+title: 'Procedura dettagliata: uso delle API del profiler | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5fc0f5a11d29fdb1ee570dc32066fdd492ed8db
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871546"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
+# <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: utilizzo delle API del profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso delle API di Strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le API del profiler consentono di limitare la quantità di dati raccolti durante la profilatura della strumentazione.
@@ -34,12 +34,12 @@ Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso 
 
  Per il codice nativo, le API del profiler di Visual Studio API si trovano in VSPerf.dll. Il file di intestazione VSPerf.h e la libreria di importazione VSPerf.lib si trovano nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni.
 
- Per il codice gestito, le API del profiler si trovano in Microsoft.VisualStudio.Profiler.dll. Questa DLL è disponibile nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni. Per ulteriori informazioni, vedere [Profiler](/previous-versions/ms242704(v=vs.140)).
+ Per il codice gestito, le API del profiler si trovano in Microsoft.VisualStudio.Profiler.dll. Questa DLL è disponibile nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni. Per altre informazioni, vedere [Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Questa procedura dettagliata presuppone che l'ambiente di sviluppo scelto sia configurato per supportare il debug e il campionamento. Gli argomenti seguenti offrono una panoramica di questi prerequisiti:
 
- [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
+ [Procedura: scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)
 
  [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)
 
@@ -147,9 +147,9 @@ DataCollection.CurrentId);
 
      **VsPefCLREnv /traceon**
 
-3. Digitare il comando seguente:**VSInstr \<filename>.exe**
+3. Digitare il comando seguente:**VSInstr \<filename> . exe**
 
-4. Digitare il comando seguente: **VSPerfCmd /start:trace /output:\<filename>.vsp**
+4. Digitare il comando seguente:**VSPerfCmd/start: trace/output: \<filename> . vsp**
 
 5. Digitare il comando seguente:**VSPerfCmd /globaloff**
 
@@ -157,13 +157,13 @@ DataCollection.CurrentId);
 
 7. Digitare il comando seguente:**VSPerfCmd /shutdown**
 
-8. Digitare il comando seguente: **VSPerfReport /calltrace:\<filename>.vsp**
+8. Digitare il comando seguente:**VSPerfReport/calltrace: \<filename> . vsp**
 
      Viene creato un file con estensione csv nella directory corrente con i dati sulle prestazioni risultanti.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
-- [Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
-- [Introduzione](../profiling/getting-started-with-performance-tools.md)
+- [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Per iniziare](../profiling/getting-started-with-performance-tools.md)
 - [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

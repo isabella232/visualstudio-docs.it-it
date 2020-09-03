@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f6d1e40b809f27292f2a808458584837913d881f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587303"
 ---
 # <a name="naming-warnings"></a>avvisi di denominazione
 
 Gli avvisi di denominazione supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione .NET.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 |Regola|Descrizione|
 |----------|-----------------|

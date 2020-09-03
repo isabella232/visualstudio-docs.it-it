@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodFromAddress . Documenti Microsoft
+title: 'IDebugSymbolProviderDirect:: GetMethodFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718928"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Recupera informazioni sul metodo in corrispondenza dell'indirizzo di debug specificato.
+Recupera le informazioni sul metodo in corrispondenza dell'indirizzo di debug specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,25 +52,25 @@ int GetMethodFromAddress(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-[in] Indirizzo di debug rappresentato dall'interfaccia [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+in Indirizzo di debug rappresentato dall'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pGuid`\
-[fuori] Identificatore univoco del modulo.
+out Identificatore univoco del modulo.
 
 `pAppID`\
-[fuori] Identificatore del dominio applicazione.
+out Identificatore del dominio dell'applicazione.
 
 `pTokenClass`\
-[fuori] Token che rappresenta la classe contenitore.
+out Token che rappresenta la classe che lo contiene.
 
 `pTokenMethod`\
-[fuori] Token che rappresenta il modulo.
+out Token che rappresenta il modulo.
 
 `pdwOffset`\
-[fuori] Offset in byte dall'inizio `pAddress` del parametro.
+out Offset in byte dall'inizio del `pAddress` parametro.
 
 `pdwVersion`\
-[fuori] Numero di versione del metodo.
+out Numero di versione del metodo.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

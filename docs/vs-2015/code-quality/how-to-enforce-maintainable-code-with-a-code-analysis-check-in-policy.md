@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660215"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: Applicare codice di facile manutenibilità con criteri di archiviazione dell'analisi del codice
@@ -25,7 +25,7 @@ Gli sviluppatori possono usare lo strumento metrica codice per misurare la compl
 
  Gli sviluppatori possono abilitare la profondità dell'ereditarietà, l'accoppiamento delle classi, l'indice di gestibilità e le regole di complessità per applicare codice gestibile attraverso i criteri di archiviazione dell'analisi del codice. Tutte e quattro queste regole sono disponibili nella categoria "regole di gestibilità" nell'editor dei criteri di analisi del codice.
 
- Gli amministratori del controllo della versione per [!INCLUDE[esprfound](../includes/esprfound-md.md)] possono aggiungere regole di gestibilità dell'analisi del codice ai requisiti dei criteri di archiviazione. Questi criteri di archiviazione richiedono agli sviluppatori di eseguire l'analisi del codice in base a queste modifiche della regola prima di avviare un'archiviazione.
+ Gli amministratori del controllo della versione per [!INCLUDE[esprfound](../includes/esprfound-md.md)] possono aggiungere le regole di gestibilità dell'analisi del codice ai requisiti dei criteri di archiviazione. Questi criteri di archiviazione richiedono agli sviluppatori di eseguire l'analisi del codice in base a queste modifiche della regola prima di avviare un'archiviazione.
 
 ### <a name="to-open-the-code-analysis-policy-editor"></a>Per aprire l'editor dei criteri di analisi del codice
 

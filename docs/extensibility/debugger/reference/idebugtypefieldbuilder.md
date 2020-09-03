@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugTypeFieldBuilder . Documenti Microsoft
+title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81532e2616eefb9cb584eae1a70371fd2f963be1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718391"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
@@ -30,7 +30,7 @@ IDebugTypeFieldBuilder : IUnknown
  Questa interfaccia viene ottenuta dal provider di simboli.
 
 ## <a name="methods"></a>Metodi
- Questa interfaccia implementa i metodi seguenti:This interface implements the following methods:
+ Questa interfaccia implementa i metodi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -38,8 +38,8 @@ IDebugTypeFieldBuilder : IUnknown
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Crea un puntatore al tipo specificato.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Sh.h
+ Intestazione: sh. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

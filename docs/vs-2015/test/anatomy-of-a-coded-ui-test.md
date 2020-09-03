@@ -11,10 +11,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 305c0b33b52c54e7d241b4e86e974d25e58d1e51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660703"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
@@ -34,9 +34,9 @@ Quando si crea un test codificato dell'interfaccia utente in un progetto di test
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sezione delle dichiarazioni](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parziale, generata automaticamente)<br /><br /> [Metodi](#UIMapMethods)<br /><br /> [Proprietà](#UIMapProperties)|No|
 |[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Sì|
 |[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Sì|
-|[UIMap.uitest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|
+|[UIMap. UITest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|
 
-### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs
+### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
  Questo file contiene il codice creato automaticamente dal **Generatore di test codificati dell'interfaccia utente** quando viene creato un test. Questo file viene ricreato ogni volta che un test viene modificato e quindi non è un file in cui si possa aggiungere o modificare il codice.
 
 #### <a name="declarations-section"></a>Sezione delle dichiarazioni
@@ -60,7 +60,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 
  Lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> viene incluso per un'interfaccia utente di Windows (UI). Per l'interfaccia utente di una pagina Web, lo spazio dei nomi sarebbe <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>, mentre per un'interfaccia utente di Windows Presentation Foundation, sarebbe <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.
 
-#### <a name="UIMapClass"></a> Classe UIMap
+#### <a name="uimap-class"></a><a name="UIMapClass"></a> Classe UIMap
  La sezione successiva del file è la classe [UIMap](/previous-versions/dd580454(v=vs.140)).
 
 ```
@@ -95,7 +95,7 @@ public UIStartWindow UIStartWindow
 public UIMathApplicationWindow UIMathApplicationWindow
 ```
 
-##### <a name="UIMapMethods"></a> Metodi UIMap
+##### <a name="uimap-methods"></a><a name="UIMapMethods"></a> Metodi UIMap
  Ogni metodo ha una struttura simile a quella del metodo `AddItems()`. Questo è illustrato più dettagliatamente nel codice, che viene presentato con le interruzioni di riga per maggiore chiarezza.
 
 ```
@@ -142,7 +142,7 @@ Assert.AreEqual(
 
  Il nome della casella di testo risulta sconosciuto perché lo sviluppatore dell'applicazione Windows Calculator non ha fornito un nome disponibile pubblicamente per il controllo. Il metodo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> ha esito negativo quando il valore effettivo non è uguale al valore previsto, il che potrebbe causare la mancata riuscita del test. Si noti inoltre che il valore previsto include un separatore decimale seguito da uno spazio. Se si dovesse modificare la funzionalità di questo particolare test, sarà necessario consentire il separatore decimale lo spazio.
 
-##### <a name="UIMapProperties"></a> Proprietà UIMap
+##### <a name="uimap-properties"></a><a name="UIMapProperties"></a> Proprietà UIMap
  Il codice per ogni proprietà è anche standard in tutta la classe. Il seguente codice per la proprietà `AddItemsParams` viene usato nel metodo `AddItems()`.
 
 ```
@@ -186,7 +186,7 @@ public class AddItemsParams
 
  Come tutte le classi nel file `UIMap.cs`, anche questa inizia con <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. In questa piccola classe è presente un'area `Fields` che definisce le stringhe da usare come parametri per il metodo <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> usato nel metodo `UIMap.AddItems()` illustrato in precedenza. È possibile scrivere il codice per sostituire i valori in questi campi delle stringhe prima che venga chiamato il metodo in cui sono usati questi parametri.
 
-### <a name="UIMapCS"></a> UIMap.cs
+### <a name="uimapcs"></a><a name="UIMapCS"></a> UIMap.cs
  Per impostazione predefinita, questo file contiene una classe `UIMap` parziale senza metodi o proprietà.
 
 #### <a name="uimap-class"></a>Classe UIMap
@@ -194,7 +194,7 @@ public class AddItemsParams
 
  Tutte le parti di [UIMap](/previous-versions/dd580454(v=vs.140)) possono usare i metodi e le proprietà di qualsiasi altra parte della classe [UIMap](/previous-versions/dd580454(v=vs.140)).
 
-### <a name="CodedUITestCS"></a> CodedUITest1.cs
+### <a name="codeduitest1cs"></a><a name="CodedUITestCS"></a> CodedUITest1.cs
  Questo file viene generato dal **Generatore di test codificati dell'interfaccia utente**, ma non viene ricreato ogni volta che il test viene modificato, di conseguenza il codice presente in questo file è modificabile. Il nome del file viene generato dal nome specificato per il test quando è stato creato.
 
 #### <a name="codeduitest1-class"></a>Classe CodedUITest1
@@ -207,7 +207,7 @@ public class CodedUITest1
 
  [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) viene automaticamente applicato alla classe. In questo modo il framework di test può riconoscerlo come estensione di test. Si noti inoltre che non si tratta di una classe parziale. Tutto il codice della classe è contenuto in questo file.
 
-##### <a name="CodedUITestProperties"></a> Proprietà di CodedUITest1
+##### <a name="codeduitest1-properties"></a><a name="CodedUITestProperties"></a> Proprietà di CodedUITest1
  La classe contiene due proprietà predefinite che si trovano nella parte inferiore del file. Non devono essere modificate.
 
 ```
@@ -219,7 +219,7 @@ public TestContext TestContext
 public UIMap UIMap
 ```
 
-##### <a name="CodedUITestMethods"></a> Metodi di CodedUITest1
+##### <a name="codeduitest1-methods"></a><a name="CodedUITestMethods"></a> Metodi di CodedUITest1
  Per impostazione predefinita, la classe contiene solo un metodo.
 
 ```
@@ -262,7 +262,7 @@ public void MyTestCleanup()
 
  Se si aggiungono altri metodi a questa classe usando [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)), il Framework di test chiamerà ogni metodo come parte del test.
 
-### <a name="UIMapuitest"></a> UIMap.uitest
+### <a name="uimapuitest"></a><a name="UIMapuitest"></a> UIMap.uitest
  Esiste un file XML che rappresenta la struttura della registrazione del test codificato dell'interfaccia utente e di tutte le sue parti, che includono le azioni e le classi oltre ai metodi e alle proprietà di tali classi. Il file [UIMap.Designer.cs](#UIMapDesignerFile) contiene il codice generato dal Generatore di test codificati dell'interfaccia utente per riprodurre la struttura del test e fornisce la connessione al framework di test.
 
  Il file `UIMap.uitest` non è modificabile direttamente. È però possibile usare il Generatore di test codificati dell'interfaccia utente per modificare il test, che modifica automaticamente il file `UIMap.uitest` e il file [UIMap.Designer.cs](#UIMapDesignerFile).

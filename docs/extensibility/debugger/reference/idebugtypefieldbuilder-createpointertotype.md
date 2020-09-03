@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugTypeFieldBuilder::CreatePointerToType . Documenti Microsoft
+title: 'IDebugTypeFieldBuilder:: CreatePointerToType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 871f061df1fdc60362f39fab36136eb71f5d7e50
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718435"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
@@ -42,10 +42,10 @@ int CreatePointerToType(
 
 ## <a name="parameters"></a>Parametri
 `pTypeField`\
-[in] Digitare a cui puntare. È rappresentato dal [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia.
+in Tipo a cui puntare. È rappresentato dall'interfaccia [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
 `pPtrToTypeField`\
-[fuori] Restituisce il puntatore rappresentato da un nuovo **IDebugField** oggetto.
+out Restituisce il puntatore rappresentato da un nuovo oggetto **IDebugField** .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -1,5 +1,5 @@
 ---
-title: Elemento ProjectSubType (modelli di Visual Studio) Documenti Microsoft
+title: Elemento ProjectSubType (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701836"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>Elemento ProjectSubType (modelli di Visual Studio)
-Classifica il modello in una sottocategoria del `ProjectType` valore specificato nell'elemento.
+Classifica il modello in una sottocategoria del valore specificato nell' `ProjectType` elemento.
 
- \<Template> \<TemplateData \<> ProjectSubType>
+ \<VSTemplate> \<TemplateData>
+ \<ProjectSubType>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ Classifica il modello in una sottocategoria del `ProjectType` valore specificato
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- No.
+### <a name="attributes"></a>Attributes
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -55,20 +56,20 @@ Classifica il modello in una sottocategoria del `ProjectType` valore specificato
 ## <a name="remarks"></a>Osservazioni
  `ProjectSubType` è un elemento figlio facoltativo di `TemplateData`.
 
- L'elemento `ProjectSubType` fornisce una sottocategoria per il [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) elemento. Questo valore può includere:
+ L' `ProjectSubType` elemento fornisce una sottocategoria all'elemento [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) . Questo valore può includere:
 
-- `SmartDevice-NETCFv1`: specifica che il [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] modello è destinato alla versione 1.0.
+- `SmartDevice-NETCFv1`: Specifica che il modello è destinato alla [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versione 1,0.
 
-- `SmartDevice-NETCFv2`: specifica che il [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] modello è destinato alla versione 2.0.
+- `SmartDevice-NETCFv2`: Specifica che il modello è destinato alla [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versione 2,0.
 
-  Se un modello `ProjectType` contiene un `Web`elemento `ProjectSubType` con un valore pari a , l'elemento specifica il linguaggio di programmazione del modello. Questo elemento può avere i seguenti valori:
+  Se un modello contiene un `ProjectType` elemento con un valore `Web` , l' `ProjectSubType` elemento specifica il linguaggio di programmazione del modello. Questo elemento può avere i valori seguenti:
 
-- `CSharp`: specifica che il [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modello crea un progetto Web o un elemento.
+- `CSharp`: Specifica che il modello crea un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] progetto Web o un elemento.
 
-- `VisualBasic`: specifica che il [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] modello crea un progetto Web o un elemento.
+- `VisualBasic`: Specifica che il modello crea un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] progetto Web o un elemento.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] metadati per [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] un modello di progetto per un'applicazione per dispositivi destinata alla versione 2.0.The following example shows the metadata for a project template for a device application targeting the version 2.0.
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione del dispositivo destinata alla [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] versione 2,0.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,6 +97,6 @@ Classifica il modello in una sottocategoria del `ProjectType` valore specificato
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
 - [Elemento ProjectType (modelli di Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)

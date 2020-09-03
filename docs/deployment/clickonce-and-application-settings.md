@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a72b5bc3f3645d9af1008f2c178ab285e8b45449
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184133"
 ---
 # <a name="clickonce-and-application-settings"></a>Impostazioni dell'applicazione e ClickOnce
@@ -27,11 +27,11 @@ Le impostazioni dell'applicazione per Windows Forms semplificano la creazione, l
  Le informazioni riportate di seguito si applicano solo al provider di impostazioni dell'applicazione predefinito, ovvero la <xref:System.Configuration.LocalFileSettingsProvider> classe. Se si fornisce un provider personalizzato, il provider determinerà il modo in cui archivia i dati e il modo in cui aggiorna le impostazioni tra le versioni. Per altre informazioni sui provider di impostazioni dell'applicazione, vedere [architettura delle impostazioni dell'applicazione](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
 ## <a name="application-settings-files"></a>File di impostazioni dell'applicazione
- Le impostazioni dell'applicazione utilizzano due file: * \<app> . exe. config* e *User. config*, dove *app* è il nome della Windows Forms Application. *User. config* viene creato nel client la prima volta che l'applicazione archivia le impostazioni con ambito di utente. * \<app> . exe. config*, al contrario, sarà presente prima della distribuzione se si definiscono i valori predefiniti per le impostazioni. Il file verrà incluso automaticamente in Visual Studio quando si usa il relativo comando di **pubblicazione** . Se si crea l'applicazione ClickOnce con *Mage. exe* o *MageUI. exe*, è necessario assicurarsi che questo file sia incluso negli altri file dell'applicazione quando si popola il manifesto dell'applicazione.
+ Impostazioni applicazione usa due file: * \<app>.exe.config* e *user.config*, dove *app* è il nome del Windows Forms Application. *user.config* viene creato nel client la prima volta che l'applicazione archivia le impostazioni con ambito di utente. * \<app>.exe.config*, al contrario, sarà presente prima della distribuzione se si definiscono i valori predefiniti per le impostazioni. Il file verrà incluso automaticamente in Visual Studio quando si usa il relativo comando di **pubblicazione** . Se si crea l'applicazione ClickOnce usando *Mage.exe* o *MageUI.exe*, è necessario assicurarsi che questo file sia incluso negli altri file dell'applicazione quando si popola il manifesto dell'applicazione.
 
- In una Windows Forms Application non distribuita mediante ClickOnce, il file con * \<app> estensione exe. config* di un'applicazione viene archiviato nella directory dell'applicazione, mentre il file *User. config* è archiviato nella cartella **Documents and Settings** dell'utente. In un'applicazione ClickOnce, * \<app> exe. config* si trova nella directory dell'applicazione all'interno della cache dell'applicazione ClickOnce e *User. config* risiede nella directory dei dati ClickOnce dell'applicazione.
+ In una Windows Forms Application non distribuita tramite ClickOnce, il file di * \<app>.exe.config* di un'applicazione viene archiviato nella directory dell'applicazione, mentre il file di *user.config* è archiviato nella cartella **Documents and Settings** dell'utente. In un'applicazione ClickOnce, * \<app>.exe.config* si trova nella directory dell'applicazione all'interno della cache dell'applicazione ClickOnce e *user.config* si trova nella directory dei dati ClickOnce per l'applicazione.
 
- Indipendentemente dalla modalità di distribuzione dell'applicazione, le impostazioni dell'applicazione garantiscono l'accesso in lettura sicuro a * \<app> . exe. config*e l'accesso in lettura/scrittura sicuro a *User. config*.
+ Indipendentemente dalla modalità di distribuzione dell'applicazione, le impostazioni dell'applicazione garantiscono l'accesso in lettura sicuro ai * \<app>.exe.config*e l'accesso sicuro in lettura/scrittura ai *user.config*.
 
  In un'applicazione ClickOnce, le dimensioni dei file di configurazione utilizzati dalle impostazioni dell'applicazione sono limitate dalle dimensioni della cache ClickOnce. Per altre informazioni, vedere [Panoramica della cache ClickOnce](../deployment/clickonce-cache-overview.md).
 
@@ -42,10 +42,10 @@ Le impostazioni dell'applicazione per Windows Forms semplificano la creazione, l
 
 |Tipo di modifica|Azione di aggiornamento|
 |--------------------|--------------------|
-|Impostazione aggiunta a * \<app> . exe. config*|La nuova impostazione viene unita nel * \<app> file. exe. config* della versione corrente|
-|Impostazione rimossa da * \<app> . exe. config*|L'impostazione precedente viene rimossa dal * \<app> file. exe. config* della versione corrente|
-|Impostazione predefinita dell'impostazione modificata; impostazione locale ancora impostata sul valore predefinito originale in *User. config*|L'impostazione viene unita al *file User. config* della versione corrente con il nuovo valore predefinito|
-|Impostazione predefinita dell'impostazione modificata; impostazione impostata su non predefinita in *User. config*|L'impostazione viene unita al *file User. config* della versione corrente con il valore non predefinito mantenuto|
+|Impostazione aggiunta a * \<app>.exe.config*|La nuova impostazione viene unita all' * \<app>.exe.config* della versione corrente|
+|Impostazione rimossa da * \<app>.exe.config*|L'impostazione precedente viene rimossa dalla * \<app>.exe.config* della versione corrente|
+|Impostazione predefinita dell'impostazione modificata; impostazione locale ancora impostata sul valore predefinito originale in *user.config*|L'impostazione viene unita all' *user.config* della versione corrente con il nuovo valore predefinito.|
+|Impostazione predefinita dell'impostazione modificata; impostazione impostata su un valore non predefinito in *user.config*|L'impostazione viene unita all' *user.config* della versione corrente con il valore non predefinito mantenuto|
 
 Se è stata creata la classe wrapper delle impostazioni dell'applicazione e si desidera personalizzare la logica di aggiornamento, è possibile eseguire l'override del <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> metodo.
 
@@ -54,6 +54,6 @@ Se è stata creata la classe wrapper delle impostazioni dell'applicazione e si d
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Cenni preliminari sulle impostazioni delle applicazioni](/dotnet/framework/winforms/advanced/application-settings-overview)
+- [Panoramica delle impostazioni dell'applicazione](/dotnet/framework/winforms/advanced/application-settings-overview)
 - [Panoramica della cache di ClickOnce](../deployment/clickonce-cache-overview.md)
 - [Accedere a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2a78c10b125379d1b4aa284d4b2ff6e999b80f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660591"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizzazione dell'analisi code coverage
@@ -53,9 +53,9 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 
 5. Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test**, **Impostazioni test**.
 
-   ![Menu impostazioni test con file di impostazioni personalizzato](../test/media/codecoverage-settingsfile.png "Codecover-settingsFile")
+   ![Menu Impostazioni test con file di impostazioni personalizzato](../test/media/codecoverage-settingsfile.png "Codecover-settingsFile")
 
-   Altri aspetti degli unit test possono essere configurati nello stesso file con estensione runsettings. Per altre informazioni, vedere [Unit Test Your Code](../test/unit-test-your-code.md).
+   Altri aspetti degli unit test possono essere configurati nello stesso file con estensione runsettings. Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md).
 
 ### <a name="specifying-symbol-search-paths"></a>Specifica dei percorsi di ricerca dei simboli
  Il code coverage richiede che siano presenti i simboli (file con estensione pdb) per gli assembly. Per gli assembly compilati dalla soluzione, i file di simboli sono solitamente presenti accanto ai file binari e il code coverage viene eseguito automaticamente. In alcuni casi invece è consigliabile includere assembly a cui si fa riferimento nell'analisi del code coverage. In tali casi, i file con estensione pdb non possono essere adiacenti ai binari, ma è possibile specificare il percorso di ricerca dei simboli nel file con estensione runsettings.
@@ -72,7 +72,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 > La risoluzione dei simboli può richiedere tempo, in particolare quando si usa un percorso di file remoto con molti assembly. Di conseguenza, si consiglia di copiare i file remoti con estensione pdb nello stesso percorso locale dei file binari (.dll ed .exe).
 
 ### <a name="excluding-and-including"></a>Esclusione ed inclusione
- È possibile escludere gli assembly specificati dall'analisi code coverage. Esempio:
+ È possibile escludere gli assembly specificati dall'analisi code coverage. Ad esempio:
 
 ```minterastlib
 <ModulePaths>
@@ -101,13 +101,13 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ### <a name="regular-expressions"></a>Espressioni regolari
  Includere ed escludere i nodi che usano le espressioni regolari. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Le espressioni regolari non equivalgono ai caratteri jolly. In particolare:
 
-1. **\.\\** * corrisponde a una stringa composta da caratteri qualsiasi
+1. **\.\\*** corrisponde a una stringa di qualsiasi carattere
 
 2. **\\.** corrisponde a un punto "."
 
-3. **\\(   \\)** corrisponde alle parentesi "(  )"
+3. ** \\ ( \\ )** corrisponde alle parentesi "()"
 
-4. **\\\\** corrisponde al delimitatore del percorso di file "\\"
+4. **\\\\** corrisponde a un delimitatore di percorso di file " \\ "
 
 5. **^** corrisponde all'inizio della stringa
 
@@ -115,7 +115,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 
    Tutte le corrispondenze fanno distinzione tra maiuscole e minuscole.
 
-   Esempio:
+   Ad esempio:
 
 ```xml
 <ModulePaths>
@@ -153,7 +153,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 
   **Corrispondenza di un nome di funzione**
 
-  L'espressione regolare deve corrispondere al nome completo della funzione, incluso lo spazio dei nomi, il nome della classe, il nome del metodo e l'elenco parametri. Di seguito è riportato un esempio:
+  L'espressione regolare deve corrispondere al nome completo della funzione, incluso lo spazio dei nomi, il nome della classe, il nome del metodo e l'elenco parametri. Ad esempio:
 
 - C# o Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`
 
@@ -194,7 +194,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ### <a name="to-customize-run-settings-in-a-build-definition"></a>Per personalizzare le impostazioni esecuzione test in una definizione di compilazione
  È possibile ottenere dati di code coverage da Team Build.
 
- ![Specifica di runsettings in una definizione di compilazione](../test/media/codecoverage-buildrunsettings.png "Codecover-buildRunsettings")
+ ![Specifica delle impostazioni di esecuzione in una definizione di compilazione](../test/media/codecoverage-buildrunsettings.png "Codecover-buildRunsettings")
 
 1. Assicurarsi che il file con estensione runsettings sia selezionato.
 
@@ -208,7 +208,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 
    I risultati vengono visualizzati nella sezione di riepilogo del report di compilazione.
 
-## <a name="sample"></a> File con estensione runsettings di esempio
+## <a name="sample-runsettings-file"></a><a name="sample"></a> File con estensione runsettings di esempio
  Copiare questo codice e modificarlo secondo le proprie esigenze. Questa è l'impostazione predefinita del file con estensione runsettings.
 
  Per altri usi del file con estensione runsettings, vedere [Configurare unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).

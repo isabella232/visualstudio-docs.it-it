@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589383"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
@@ -33,7 +33,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Argomenti
 `pathname`
 
-Facoltativa. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
+facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
 
 ## <a name="remarks"></a>Osservazioni
 Se non viene specificato un `pathname`, il comando elenca i percorsi dei simboli correnti.
@@ -55,4 +55,4 @@ Debug.SymbolPath
 ## <a name="see-also"></a>Vedere anche
 
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)

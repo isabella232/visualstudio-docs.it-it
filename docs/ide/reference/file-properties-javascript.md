@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926231"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
@@ -52,7 +52,7 @@ La proprietà **Azione pacchetto** indica ciò che realizza Visual Studio con un
 
 - **Contenuto** - Il file è incluso nel manifesto di pacchetto. Ad esempio, questa impostazione è il valore predefinito di un file .htm, .js, .css, immagine, audio o video.
 
-- **Manifesto:** il file non è incluso nel manifesto del pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.
+- **Manifesto** : il file non è incluso nel manifesto del pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.
 
 - **Risorsa** - Il file non è incluso nel manifesto di pacchetto. Il contenuto del file viene invece indicizzato nel file di indice risorse (PRI) che va inserito nel manifesto di pacchetto. Viene usato generalmente per i file di risorse.
 
@@ -67,7 +67,7 @@ Visualizza il percorso completo del file come valore di sola lettura. Per modifi
 ## <a name="reference-file-properties"></a>Proprietà File di riferimento
 In questa sezione vengono descritte le proprietà comuni ai file cui fa riferimento un'app UWP sviluppata con JavaScript. Quando si seleziona un riferimento come un file con estensione .winmd, un riferimento SDK, un riferimento da progetto a progetto o un riferimento ad assembly in Esplora soluzioni, le altre proprietà possono essere visualizzate nella finestra Proprietà, in base al tipo di file.
 
-### <a name="culture"></a>Impostazioni cultura
+### <a name="culture"></a>Cultura
 Visualizza la lingua associata al riferimento.
 
 ### <a name="file-type"></a>Tipo di file
@@ -91,7 +91,7 @@ Visualizza il percorso al file SDK cui viene fatto riferimento.
 ### <a name="uri"></a>Uri
 Visualizza l'URI che deve essere incluso nel file HTML o JavaScript del progetto per includere il file come file di origine.
 
-### <a name="version"></a>Versione
+### <a name="version"></a>Version
 Visualizza la versione del riferimento.
 
 ## <a name="see-also"></a>Vedere anche

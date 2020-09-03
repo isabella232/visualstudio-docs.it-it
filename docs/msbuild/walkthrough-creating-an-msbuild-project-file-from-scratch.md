@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184276"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creare un nuovo file di progetto MSBuild
@@ -49,7 +49,7 @@ Per completare la procedura dettagliata, è necessario che Visual Studio sia ins
 
 ## <a name="extend-the-path"></a>Estendere il percorso
 
-Prima di poter utilizzare MSBuild, è necessario estendere la variabile di ambiente PATH per includere tutti gli strumenti necessari. È possibile usare la **prompt dei comandi per gli sviluppatori per Visual Studio**. Cercarla in Windows 10 nella casella di ricerca della barra delle applicazioni di Windows. Per configurare l'ambiente in un prompt dei comandi normale o in un ambiente di scripting, eseguire *VSDevCmd. bat* nella sottocartella *Common7/Tools* di un'installazione di Visual Studio.
+Prima di poter utilizzare MSBuild, è necessario estendere la variabile di ambiente PATH per includere tutti gli strumenti necessari. È possibile usare la **prompt dei comandi per gli sviluppatori per Visual Studio**. Cercarla in Windows 10 nella casella di ricerca della barra delle applicazioni di Windows. Per configurare l'ambiente in un prompt dei comandi comune o in un ambiente di scripting, eseguire *VSDevCmd.bat* nella sottocartella *Common7/Tools* di un'installazione di Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Creare un'applicazione minima
 
@@ -234,7 +234,7 @@ Il file di progetto sarà ora simile al codice seguente:
 ```
 
 > [!NOTE]
-> Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputAssembly` dell'attività `Csc` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `OutputPath`. Di conseguenza:
+> Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputAssembly` dell'attività `Csc` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `OutputPath`. Quindi,
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
@@ -329,7 +329,7 @@ Il file di progetto sarà ora simile al codice seguente:
 
 1. Al prompt dei comandi digitare **msbuild helloworld. csproj-p:AssemblyName = Greetings**.
 
-     Poiché l'opzione **-t** non è stata usata per impostare in modo esplicito la destinazione, MSBuild esegue la destinazione di compilazione predefinita. L'opzione **-p** esegue l'override della `AssemblyName` proprietà e assegna al nuovo valore `Greetings` . In questo modo si crea una nuova applicazione, *Greetings. exe*, nella cartella *\bin \\ * .
+     Poiché l'opzione **-t** non è stata usata per impostare in modo esplicito la destinazione, MSBuild esegue la destinazione di compilazione predefinita. L'opzione **-p** esegue l'override della `AssemblyName` proprietà e assegna al nuovo valore `Greetings` . Ciò comporta la creazione di una nuova applicazione, *Greetings.exe*, nella cartella *\bin \\ * .
 
 2. Per verificare che la *cartella \\ \bin* contenga sia l'applicazione *MSBuildSample* che la nuova applicazione *Greetings* , digitare **dir bin**.
 
@@ -466,7 +466,7 @@ Nell'esempio seguente viene illustrato un file di progetto che compila un'applic
 </Project>
 ```
 
-## <a name="whats-next"></a>Quali sono le operazioni successive?
+## <a name="whats-next"></a>Passaggi successivi
 
  Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per informazioni su come usare Visual Studio per creare, modificare, compilare e testare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).
 

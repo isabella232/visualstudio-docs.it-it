@@ -16,24 +16,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731019"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
 Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto per il debug in modalità mista di processi x64. Ciò significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.
 
-### <a name="workarounds"></a>Soluzioni
+### <a name="workarounds"></a>Soluzioni alternative
 
 - Aggiornare il progetto per l'utilizzo di Microsoft .NET Framework 4 o versione successiva.
 
-     oppure
+     -oppure-
 
      Eseguire il debug del codice gestito e del codice nativo in sessioni di debug separate.
 
-     oppure
+     -oppure-
 
      Eseguire il debug del codice misto come processo a 32 bit, come descritto nelle procedure che seguono.
 
@@ -58,4 +58,4 @@ Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto pe
 - Vedere [configurazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Vedere anche
-- [Eseguire il debug di applicazioni a 64 Bit](../debugger/debug-64-bit-applications.md)
+- [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)

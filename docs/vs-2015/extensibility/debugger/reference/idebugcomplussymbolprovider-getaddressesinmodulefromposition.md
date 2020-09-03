@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: GetAddressesInModuleFromPosition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4471997a5497413869c3c4662592f4c585c2d76d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194830"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esegue il mapping di una posizione del documento nel modulo specificato in una matrice di indirizzi di debug.  
+Esegue il mapping di una posizione del documento nel modulo specificato a una matrice di indirizzi di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -51,28 +51,28 @@ int GetAddressesInModuleFromPosition(
   
 #### <a name="parameters"></a>Parametri  
  `ulAppDomainID`  
- [in] Identificatore del dominio applicazione.  
+ in Identificatore del dominio dell'applicazione.  
   
  `guidModule`  
- [in] Identificatore univoco del modulo.  
+ in Identificatore univoco del modulo.  
   
  `pDocPos`  
- [in] Posizione del documento.  
+ in Posizione del documento.  
   
  `fStatmentOnly`  
- [in] Se `TRUE`, limita gli indirizzi di debug per una singola istruzione.  
+ in Se `TRUE` , limita gli indirizzi di debug a una singola istruzione.  
   
  `ppEnumBegAddresses`  
- [out] Restituisce un enumeratore per gli indirizzi iniziali di debug che sono associati a questa istruzione o la riga.  
+ out Restituisce un enumeratore per gli indirizzi di debug iniziali associati all'istruzione o alla riga.  
   
  `ppEnumEndAddresses`  
- [out] Restituisce un enumeratore per gli indirizzi finale di debug che sono associati a questa istruzione o la riga.  
+ out Restituisce un enumeratore per gli indirizzi di debug finali associati all'istruzione o alla riga.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia.  
+ Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  

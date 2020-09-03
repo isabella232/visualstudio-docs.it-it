@@ -23,19 +23,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196417"
 ---
 # <a name="debugging-native-code"></a>Debug del codice nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per i meccanismi di uso del debugger di Visual Studio, vedere [orientamento al Debugger](../debugger/debugger-basics.md).  
+In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per i meccanismi di utilizzo del debugger di Visual Studio, vedere la Guida di [orientamento al debugger](../debugger/debugger-basics.md).  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Eseguire il debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: eseguire il debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md)  
  Vengono forniti suggerimenti per il debug del codice ottimizzato, in particolare sull'opportunità di eseguire il debug di una versione non ottimizzata del programma, sulle impostazioni di ottimizzazione predefinite per le configurazioni di debug e di rilascio e suggerimenti per la ricerca di bug visualizzati solo nel codice ottimizzato, attivando l'ottimizzazione nella configurazione di una build di debug.  
   
  [DebugBreak e __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
@@ -44,7 +44,7 @@ In questa sezione vengono discussi alcuni problemi di debug comuni, nonché vari
  [Asserzioni C/C++](../debugger/c-cpp-assertions.md)  
  Vengono discusse le istruzioni di asserzione, il loro funzionamento, i vantaggi derivanti dal loro utilizzo (rilevamento di errori logici, controllo dei risultati di un'operazione e verifica delle condizioni di errore), l'interazione con `_DEBUG` e i tipi di asserzioni supportati in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Procedura: Eseguire il debug di codice assembly inline](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Procedura: eseguire il debug di codice assembly inline](../debugger/how-to-debug-inline-assembly-code.md)  
  Vengono fornite brevi istruzioni sull'utilizzo della finestra Disassembly per visualizzare le istruzioni di assembly e della finestra Registri per visualizzare il contenuto del Registro di sistema e vengono forniti collegamenti agli argomenti relativi a tali finestre.  
   
  [Tecniche di debug MFC](../debugger/mfc-debugging-techniques.md)  
@@ -59,13 +59,13 @@ In questa sezione vengono discussi alcuni problemi di debug comuni, nonché vari
  [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)  
  Vengono fornite informazioni sul debug delle applicazioni COM e ActiveX, inclusi gli strumenti da utilizzare al riguardo.  
   
- [Procedura: Eseguire il debug di codice nativo](../debugger/how-to-debug-native-dlls.md)  
+ [Procedura: eseguire il debug di DLL native](../debugger/how-to-debug-native-dlls.md)  
  Viene descritto come impostare il debug delle DLL dal codice nativo.  
   
- [Procedura: Eseguire il debug di codice inserito](../debugger/how-to-debug-injected-code.md)  
+ [Procedura: eseguire il debug di codice inserito](../debugger/how-to-debug-injected-code.md)  
  Vengono fornite indicazioni sul debug del codice che utilizza gli attributi. Sono incluse istruzioni per l'attivazione del codice sorgente, la visualizzazione del codice inserito e del codice disassembly in corrispondenza del punto di esecuzione corrente.  
   
- [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Viene descritto come usare le finestre degli strumenti **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
