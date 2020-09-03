@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90f27e2359954e56a5b3d86bfc31883d4f29c44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664579"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedura: Creare uno shader con colore di base
@@ -21,7 +21,7 @@ ms.locfileid: "72664579"
 
 Questo documento illustra come usare la finestra di progettazione shader e il linguaggio DGSL (Directed Graph Shader Language) per creare uno shader con colore uniforme. Questo shader imposta il colore finale su un valore di colore RGB costante.
 
- Questo documento illustra le attività seguenti:
+ Questo documento illustra queste attività:
 
 - Rimozione di nodi da un grafico
 
@@ -53,7 +53,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 > [!NOTE]
 > Nella figura è stato specificato un colore arancione per illustrare meglio l'effetto dello shader.
 
- ![Grafico shader e risultato in un&#45;modello 3D](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
+ ![Grafico shader e risultato in un modello con 3&#45;D](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
 
  Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [Finestra di progettazione shader](../designers/shader-designer.md).
 

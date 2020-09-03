@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7ff759681ca3e4f48f264e00f9e376487dfe4d24
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817307"
 ---
 # <a name="expected-end"></a>Previsto ' \@ end '
-Si è provato a creare un blocco di codice compilato in modo condizionale, ma non è stata inclusa l' <strong>@end</strong> istruzione alla fine. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]le istruzioni possono essere compilate in modo condizionale tramite la loro inclusione all'interno di un <strong>@if/@end</strong> blocco.  
+Si è provato a creare un blocco di codice compilato in modo condizionale, ma non è stata inclusa l' <strong>@end</strong> istruzione alla fine. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] le istruzioni possono essere compilate in modo condizionale tramite la loro inclusione all'interno di un <strong>@if/@end</strong> blocco.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534238"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente in Visual Studio
@@ -44,18 +44,18 @@ ms.locfileid: "85534238"
 
 - [Visualizzare](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="build"></a><a name="bkmk_build"></a>Compilazione
+## <a name="build"></a><a name="bkmk_build"></a> Compilazione
 
-|Comandi|Tasti di scelta rapida [Contesti]|
+|Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Build.BuildSolution|CTRL+MAIUSC+B [Globale]|
 |Build.Cancel|CTRL+INTERR [Globale]|
 |Build.Compile|CTRL+F7 [Globale]|
 |Build.RunCodeAnalysisonSolution|ALT+F11 [Globale]|
 
-## <a name="debug"></a><a name="bkmk_debug"></a>Debug
+## <a name="debug"></a><a name="bkmk_debug"></a> Debug
 
-|Comandi|Tasti di scelta rapida [Contesti]|
+|Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Debug.BreakatFunction|CTRL+B [Globale]|
 |Debug.BreakAll|CTRL+ALT+INTERR [Globale]|
@@ -75,7 +75,7 @@ ms.locfileid: "85534238"
 
 ## <a name="edit"></a><a name="bkmk_edit"></a> Modifica
 
-|Comandi|Tasti di scelta rapida [Contesti]|
+|Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|INVIO [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br /> o MAIUSC+INVIO [Editor di testo]|
 |Edit.CollapsetoDefinitions|CTRL+M, CTRL+O [Editor di testo]|
@@ -124,9 +124,9 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 |Edit.WordDeleteToEnd|CTRL+CANC [Editor di testo]|
 |Edit.WordDeleteToStart|CTRL+BACKSPACE [Editor di testo]|
 
-## <a name="file"></a><a name="bkmk_file"></a>File
+## <a name="file"></a><a name="bkmk_file"></a> File
 
-|Comandi|Tasti di scelta rapida [Contesti]|
+|Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |File.Exit|ALT+F4 [Globale]|
 |File.NewFile|CTRL+N [Globale]|
@@ -142,12 +142,12 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 
 ## <a name="project"></a><a name="bkmk_project"></a> Progetto
 
-|Comandi|Tasti di scelta rapida [Contesti]|
+|Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|MAIUSC+ALT+A [Globale]|
 |Project.AddNewItem|CTRL+MAIUSC+A [Globale]|
 
-## <a name="refactor"></a><a name="bkmk_refactor"></a>Effettuare il refactoring
+## <a name="refactor"></a><a name="bkmk_refactor"></a> Effettuare il refactoring
 
 |Comando|Tasto di scelta rapida [Contesto]|
 |-------------|-----------------------------------|
@@ -159,9 +159,9 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|CTRL+Alt+P [Globale]|
 
-## <a name="view"></a><a name="bkmk_view"></a>Visualizzare
+## <a name="view"></a><a name="bkmk_view"></a> Visualizzare
 
-|Comandi|Tasti di scelta rapida [Contesti]|
+|Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |View.ClassView|CTRL+MAIUSC+C [Globale]|
 |View.EditLabel|F2 [Globale]|
@@ -180,9 +180,9 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Globale]|
 |View.ViewCode|INVIO [Diagramma classi]<br /><br /> o F7 [Progettazione impostazioni]|
 |View.ViewDesigner|MAIUSC+F7 [Visualizzazione Origine editor HTML]|
 
-## <a name="window"></a><a name="bkmk_window"></a>Finestra
+## <a name="window"></a><a name="bkmk_window"></a> Finestra
 
-|Comandi|Tasti di scelta rapida [Contesti]|
+|Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Window.ActivateDocumentWindow|ESC [Globale]|
 |Window.CloseDocumentWindow|CTRL+F4 [Globale]|

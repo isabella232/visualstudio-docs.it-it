@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349562"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
@@ -50,9 +50,9 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
     - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Framework* di
 
     dove *Framework* è uno dei seguenti:
-    - `net2.0`per i debug che eseguono il `.NET Framework` Runtime.
-    - `netstandard2.0`per i sottoposti a debug utilizzando un runtime che supporta `netstandard 2.0` ( `.NET Framework v4.6.1+` o `.NET Core 2.0+` ).
-    - `netcoreapp`per i debug che eseguono il `.NET Core` Runtime. (supporta `.NET Core 2.0+` )
+    - `net2.0` per i debug che eseguono il `.NET Framework` Runtime.
+    - `netstandard2.0` per i sottoposti a debug utilizzando un runtime che supporta `netstandard 2.0` ( `.NET Framework v4.6.1+` o `.NET Core 2.0+` ).
+    - `netcoreapp` per i debug che eseguono il `.NET Core` Runtime. (supporta `.NET Core 2.0+` )
 
    Una DLL sul lato oggetto del debug è necessaria se si desidera creare un visualizzatore autonomo. Questa DLL contiene il codice per l'oggetto dati, che può implementare metodi di <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
 
@@ -84,6 +84,6 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 > Se si desidera usare un visualizzatore gestito per il debug remoto, copiare la DLL nello stesso percorso nel computer remoto.
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
 - [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)

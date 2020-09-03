@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricGuid . Documenti Microsoft
+title: 'IDebugSettingsCallback2:: GetMetricGuid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 08f03e0d09db17e3dbcda30588191ff3efcb1c41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719983"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
-Recupera l'identificatore univoco di una metrica in base al nome.
+Recupera l'identificatore univoco di una metrica dato il relativo nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ private int GetMetricGuid(
 
 ## <a name="parameters"></a>Parametri
 `pszType`\
-[in] Tipo di metrica.
+in Tipo della metrica.
 
 `guidSection`\
-[in] Identificatore univoco della sezione.
+in Identificatore univoco della sezione.
 
 `pszMetric`\
-[in] Nome della metrica.
+in Nome della metrica.
 
 `pguidValue`\
-[fuori] Restituisce l'identificatore univoco della metrica.
+out Restituisce l'identificatore univoco della metrica.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

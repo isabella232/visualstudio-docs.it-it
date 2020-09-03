@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c6171a5dedfd6985a6f54e748011bf86e03f4d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664646"
 ---
 # <a name="element-xelement-dynamic-property"></a>Elemento (proprietà dinamica XElement)
@@ -34,8 +34,8 @@ elem.Element[{namespaceName}localName]
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito
  Indicizzatore del tipo `XElement Item(String expandedName)`. Questo indicizzatore accetta un parametro del nome espanso e restituisce l'oggetto <xref:System.Xml.Linq.XElement> corrispondente o `null` se non esiste nessun elemento con il nome specificato.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Questa proprietà è equivalente al metodo <xref:System.Xml.Linq.XContainer.Element%2A> della classe <xref:System.Xml.Linq.XContainer?displayProperty=fullName>.
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName> [elementi](../designers/elements-xelement-dynamic-property.md) [proprietà dinamiche della classe XElement](../designers/xelement-class-dynamic-properties.md)
+ <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>[Elementi](../designers/elements-xelement-dynamic-property.md) delle [proprietà dinamiche della classe XElement](../designers/xelement-class-dynamic-properties.md)

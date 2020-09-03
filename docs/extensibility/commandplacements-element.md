@@ -1,5 +1,5 @@
 ---
-title: CommandPlacements Elemento . Documenti Microsoft
+title: Elemento CommandPlacements | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a72b087652a654b563fd4e00bacc52290a29fe1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739705"
 ---
-# <a name="commandplacements-element"></a>CommandPlacements (elemento)
-L'elemento CommandPlacements raggruppa gli elementi CommandPlacement e altri raggruppamenti CommandPlacements.The CommandPlacements element groups CommandPlacement elements and other CommandPlacements groupings.
+# <a name="commandplacements-element"></a>Elemento CommandPlacements
+L'elemento CommandPlacements raggruppa gli elementi CommandPlacement e altri raggruppamenti CommandPlacements.
 
- L'elemento CommandPlacements è facoltativo. Se nessun comando, gruppi o menu deve essere incluso in una posizione secondaria, non è necessario includere questa sezione nel file *vsct.*
+ L'elemento CommandPlacements è facoltativo. Se non è necessario includere comandi, gruppi o menu in un percorso secondario, non è necessario includere questa sezione nel file con *estensione vsct* .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,18 +37,18 @@ L'elemento CommandPlacements raggruppa gli elementi CommandPlacement e altri rag
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
 |CommandPlacements|Raggruppa gli elementi CommandPlacement e altri raggruppamenti CommandPlacements.|
-|[CommandPlacement (elemento)](../extensibility/commandplacement-element.md)|Consente di includere pulsanti, gruppi e menu in più gruppi o menu.|
+|[Elemento CommandPlacement](../extensibility/commandplacement-element.md)|Consente di includere pulsanti, gruppi e menu in più di un gruppo o menu.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -68,5 +68,5 @@ L'elemento CommandPlacements raggruppa gli elementi CommandPlacement e altri rag
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [CommandPlacement (elemento)](../extensibility/commandplacement-element.md)
+- [Elemento CommandPlacement](../extensibility/commandplacement-element.md)
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

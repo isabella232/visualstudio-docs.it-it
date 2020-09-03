@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50f62704897d68b0e323b948b8f4ed7e96a10c9a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632108"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
@@ -44,7 +44,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 
 ## <a name="return-value"></a>Valore restituito
 
- **HRESULT** con il bit **SUCCEEDED** impostato se è stato creato il contesto di rilevamento.
+ **HRESULT** con il bit **succeeded** impostato se il contesto di rilevamento è stato creato.
 
 ## <a name="requirements"></a>Requisiti
 

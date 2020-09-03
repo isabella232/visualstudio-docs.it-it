@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9958e6e9a540dce1a405df8991780600b8f4a702
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665594"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
@@ -35,7 +35,7 @@ Devenv /ResetAddin AddIn
  `AddIn` Facoltativo. Nome del comando del componente aggiuntivo.
 
 ## <a name="remarks"></a>Osservazioni
- Per impostazione predefinita, il nome del comando del componente aggiuntivo è uguale a *\<NomeSoluzioneComponenteAggiuntivo>* .Connect<em>.\<NomeSoluzioneComponenteAggiuntivo></em> e viene visualizzato in Connect.cs come parametro `commandName` del metodo `Exec`. È anche possibile verificare il nome del comando digitando l'inizio del nome del componente aggiuntivo nella finestra dei comandi in Visual Studio e usando Intellisense per completarlo.
+ Per impostazione predefinita, il nome del comando del componente aggiuntivo è uguale a *\<AddInSolutionName>* . Connect<em>. \<AddInSolutionName> </em>e viene visualizzato in Connect.cs come `commandName` parametro del `Exec` metodo. È anche possibile verificare il nome del comando digitando l'inizio del nome del componente aggiuntivo nella finestra dei comandi in Visual Studio e usando Intellisense per completarlo.
 
 ## <a name="example"></a>Esempio
  L'esempio seguente avvia Visual Studio e impedisce l'esecuzione all'avvio del componente aggiuntivo `MyAddin`.

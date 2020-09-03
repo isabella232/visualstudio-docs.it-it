@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b0496a04219c88573b3b555ef879a046d90faa3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664776"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Discendenti (proprietà dinamica XElement)
@@ -30,7 +30,7 @@ elem.Descendants[{namespaceName}localName]
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito
  Indicizzatore del tipo `IEnumerable<XElement> Item(String expandedName)`. Questo indicizzatore accetta il nome espanso degli elementi discendente specificati e restituisce gli elementi figlio corrispondenti in una raccolta <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Questa proprietà è equivalente al metodo <xref:System.Xml.Linq.XContainer.Descendants%28System.Xml.Linq.XName%29?displayProperty=fullName> della classe <xref:System.Xml.Linq.XContainer>.
 
  Gli elementi della raccolta restituita sono in ordine del documento dell'origine XML.

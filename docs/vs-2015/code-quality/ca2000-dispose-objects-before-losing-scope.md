@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e3de3246980ead0b20d471321a9696451aed81ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534771"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminare gli oggetti prima che siano esterni all'ambito
@@ -50,7 +50,7 @@ ms.locfileid: "85534771"
 
 - L'inizializzazione dei membri di un oggetto Disposable non deve essere eseguita nel costruttore di un'istruzione using.
 
-- Costruttori di annidamento protetti solo da un gestore di eccezioni. Ad esempio,
+- Costruttori di annidamento protetti solo da un gestore di eccezioni. Ad esempio:
 
     ```
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))

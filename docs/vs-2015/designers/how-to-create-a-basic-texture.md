@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a19cd0b68927effc32b0480fdeb7286be8ad8dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664566"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
@@ -21,7 +21,7 @@ ms.locfileid: "72664566"
 
 Questo documento illustra come usare l'editor di immagini per creare una trama di base.
 
- Questo documento illustra le attività seguenti:
+ Questo documento illustra queste attività:
 
 - Impostazione della dimensione della trama
 
@@ -86,9 +86,9 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 
     La trama di destinazione "bullseye" è completa. Di seguito è riportata l'immagine finale, illustrata con la trasparenza.
 
-    ![Trama di destinazione "Bullseye" completa](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
+    ![Trama di destinazione "bullseye" completa](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
 
     Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Image Editor](../designers/image-editor.md)
+ [Editor di immagini](../designers/image-editor.md)

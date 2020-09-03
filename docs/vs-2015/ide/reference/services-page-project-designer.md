@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 11e1cd997c76974e7b4b8771c0579c175469eca6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665481"
 ---
 # <a name="services-page-project-designer"></a>Pagina Servizi, Progettazione progetti
@@ -31,12 +31,12 @@ I servizi delle applicazioni client offrono accesso semplificato a servizi di ac
  Per accedere alla pagina **Servizi**, selezionare un nodo di progetto in **Esplora soluzioni** e quindi fare clic su **Proprietà** nel menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Servizi**.
 
 > [!NOTE]
-> I servizi delle applicazioni client richiedono la versione completa di.NET Framework e non sono supportati in .NET Framework Client Profile. Se la casella di controllo **Attiva servizi applicazioni client** è disattivata, verificare che il **Framework di destinazione** sia impostato su.NET Framework 3.5 o versione successiva. Per visualizzare l'impostazione **Framework di destinazione** in C#, aprire Creazione progetti e quindi fare clic sulla pagina **Applicazione**. Per visualizzare l'impostazione **Framework di destinazione** in Visual Basic, aprire Creazione progetti, fare clic sulla pagina **Compilazione** e quindi fare clic su **Opzioni di compilazione avanzate**.
+> I servizi delle applicazioni client richiedono la versione completa di.NET Framework e non sono supportati in .NET Framework Client Profile. Se la casella di controllo** Attiva servizi applicazioni client** è disattivata, verificare che il **Framework di destinazione** sia impostato su.NET Framework 3.5 o versione successiva. Per visualizzare l'impostazione **Framework di destinazione** in C#, aprire Creazione progetti e quindi fare clic sulla pagina** Applicazione**. Per visualizzare l'impostazione **Framework di destinazione** in Visual Basic, aprire Creazione progetti, fare clic sulla pagina **Compilazione** e quindi fare clic su **Opzioni di compilazione avanzate**.
 
 ## <a name="task-list"></a>Elenco attività
- [Procedura: Configurare i servizi delle applicazioni client](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)
+ [Procedura: configurare i servizi delle applicazioni client](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  **Configurazione** di Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) o [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
  **Piattaforma**Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) o [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
@@ -58,4 +58,4 @@ I servizi delle applicazioni client offrono accesso semplificato a servizi di ac
  **Funzionalità avanzate** Apre la finestra di [dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md), che è possibile usare per eseguire l'override del comportamento predefinito. Ad esempio, è possibile usare questa finestra di dialogo per specificare un database per l'archiviazione offline anziché usare il file system locale. Per altre informazioni, vedere [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
 ## <a name="see-also"></a>Vedere anche
- Finestra di dialogo Impostazioni avanzate [client Servizi per le applicazioni](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md) [procedura: configurazione](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) della [pagina compilazione client Servizi per le applicazioni, Progettazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [, creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md) [Introduzione a Progettazione progetti](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)
+ Finestra di [dialogo Impostazioni avanzate](../../ide/reference/advanced-settings-for-services-dialog-box.md) [client Servizi per le applicazioni](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) per i servizi [procedura: configurare la pagina di compilazione client Servizi per le applicazioni](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) [, Progettazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [, creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md) [Introduzione a Progettazione progetti](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

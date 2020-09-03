@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43715ca8fa8174b2b8b9509a93e98cf15ad4611c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198857"
 ---
-# <a name="constguidarray"></a>CONST_GUID_ARRAY
+# <a name="const_guid_array"></a>CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Una struttura che contiene un elenco di `GUID`s.  
+Struttura che include un elenco di oggetti `GUID` .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,22 +40,22 @@ public struct CONST_GUID_ARRAY {
 }  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  dwCount  
- Numerosi `GUID`s nel `Members` matrice.  
+ Numero di `GUID` s nella `Members` matrice.  
   
- Members  
- Matrice di `GUID`s.  
+ Membri  
+ Matrice di `GUID` s.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene passata al [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metodo e viene restituito dalle [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) metodi.  
+## <a name="remarks"></a>Osservazioni  
+ Questa struttura viene passata al metodo [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) e viene restituita dai metodi [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) e [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .  
   
- Il proprietario di un'istanza di questa struttura è responsabile della liberazione di memoria allocata.  
+ Il proprietario di un'istanza di questa struttura è responsabile della liberazione della memoria allocata.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 43c42da3994d75329ced1eaa5b89c7aa6de360c6
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349393"
 ---
 # <a name="how-to-refresh-the-view"></a>Procedura: aggiornare la visualizzazione
@@ -24,7 +24,7 @@ Spy + + acquisisce uno "snapshot" delle tabelle di sistema e aggiorna una vista 
 
 - Scegliere **Aggiorna** dal menu **finestra** oppure fare clic sul pulsante **Aggiorna** sulla barra degli strumenti.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Utilizzo di Spy++](../debugger/using-spy-increment.md)
 - [Viste SSpy + +](../debugger/spy-increment-views.md)
 - [Riferimenti per Spy++](../debugger/spy-increment-reference.md)

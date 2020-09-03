@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7480f953e2fca57c296d6d1641059993bfa582c
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349627"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Procedura: contrassegnare e decontrassegnare i thread (C#, Visual Basic, C++)
@@ -60,7 +60,7 @@ I thread contrassegnati ricevono anche un trattamento speciale nell'elenco dei *
 
 5. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Procedura dettagliata: eseguire il debug di applicazioni multithread utilizzando la finestra thread](../debugger/how-to-use-the-threads-window.md)

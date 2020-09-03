@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 17ba5d143a5f4534b09b2aaff718af7ce99f2773
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664542"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
@@ -21,7 +21,7 @@ ms.locfileid: "72664542"
 
 Questo documento illustra come usare la finestra di progettazione shader e il linguaggio DGSL (Directed Graph Shader Language) per creare uno shader di illuminazione che implementa il modello di illuminazione Phong classico.
 
- Questo documento illustra le attività seguenti:
+ Questo documento illustra queste attività:
 
 - Aggiunta di nodi a un grafico shader
 
@@ -32,13 +32,13 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 ## <a name="the-phong-lighting-model"></a>Modello di illuminazione Phong
  Il modello di illuminazione Phong estende il modello di illuminazione Lambert con l'evidenziazione speculare, che simula le proprietà riflettenti di una superficie. Il componente speculare fornisce maggiore illuminazione dalle stesse sorgenti di luce direzionale usate nel modello di illuminazione Lambert, ma il contributo apportato al colore finale viene elaborato in modo diverso. L'evidenziazione speculare influenza ogni area della scena in modo diverso, in base alla relazione tra la direzione di visualizzazione, la direzione delle sorgenti di luce e l'orientamento della superficie. È un prodotto del colore speculare, della potenza speculare e dell'orientamento della superficie, nonché del colore, dell'intensità e della direzione delle sorgenti di luce. Le superfici che riflettono la sorgente di luce in direzione dell'osservatore ricevono il contributo speculare massimo, mentre le superfici che riflettono la sorgente di luce lontano dall'osservatore non ricevono alcun contributo. Nel modello di illuminazione Phong uno o più componenti speculari vengono combinati per determinare il colore e l'intensità di evidenziazione speculare di ogni punto sull'oggetto e quindi vengono aggiunti al risultato del modello di illuminazione Lambert per produrre il colore finale del pixel.
 
- Per altre informazioni sul modello di illuminazione Lambert, vedere [Procedura: Creare una ](../designers/how-to-create-a-basic-lambert-shader.md) di base di Lambert shader.
+ Per altre informazioni sul modello di illuminazione di Lambert, vedere [procedura: creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).
 
  Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
 #### <a name="to-create-a-phong-shader"></a>Per creare uno shader Phong
 
-1. Creare uno shader Lambert, come descritto in [Procedura: Creare una ](../designers/how-to-create-a-basic-lambert-shader.md) di base di Lambert shader.
+1. Creare uno shader Lambert, come descritto in [procedura: creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).
 
 2. Scollegare il nodo **Lambert** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Lambert** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
 
@@ -57,7 +57,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 
  ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
 
- Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).
+ Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per ulteriori informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione anteprima degli shader nella [finestra di progettazione shader](../designers/shader-designer.md) .
 
  La figura seguente illustra lo shader descritto in questo documento applicato a un modello 3D. La proprietà **MaterialSpecular** è impostata su (1.00, 0.50, 0.20, 0.00) e la proprietà **MaterialSpecularPower** è impostata su 16.
 
@@ -68,7 +68,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 
  ![Illuminazione Phong applicata a un modello](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")
 
- Per ulteriori informazioni su come applicare uno shader a un modello 3D, vedere [How: Applicare uno shader a un modello 3D ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Per altre informazioni su come applicare uno shader a un modello 3D, vedere [procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Applicare uno shader a un modello tridimensionale ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [How a: Esportare uno shader ](../designers/how-to-export-a-shader.md) [How a: Creare i nodi della finestra di [progettazione](../designers/shader-designer-nodes.md) shader di base di Lambert shader ](../designers/how-to-create-a-basic-lambert-shader.md) [shader](../designers/shader-designer.md)
+ [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [procedura: esportare uno shader](../designers/how-to-export-a-shader.md) [procedura: creare](../designers/how-to-create-a-basic-lambert-shader.md) [Shader Designer](../designers/shader-designer.md) i nodi della finestra di progettazione [shader](../designers/shader-designer-nodes.md) di base di Lambert Shader Shader

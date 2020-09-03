@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348938"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare eventi di sospensione, ripresa e background durante il debug di app UWP in Visual Studio
@@ -57,7 +57,7 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
  Il modo più realistico di generare un evento di attività in background si verifica quando l'app non è in esecuzione. È tuttavia supportata anche l'attivazione dell'evento in una sessione di debug standard.
 
-### <a name="trigger-a-background-task-event-from-a-standard-debug-session"></a><a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a>Attivare un evento di attività in background da una sessione di debug standard
+### <a name="trigger-a-background-task-event-from-a-standard-debug-session"></a><a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Attivare un evento di attività in background da una sessione di debug standard
 
 1. Imposta un punto di interruzione nel codice dell'attività in background di cui desideri eseguire il debug.
 
@@ -93,12 +93,12 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
      ![Sospensione, ripresa, fine e attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
 
-## <a name="trigger-process-lifetime-management-events-and-background-tasks-from-an-installed-app"></a><a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a>Attivare gli eventi di gestione della durata del processo e le attività in background da un'app installata
+## <a name="trigger-process-lifetime-management-events-and-background-tasks-from-an-installed-app"></a><a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Attivare gli eventi di gestione della durata del processo e le attività in background da un'app installata
  Usare la finestra di dialogo **debug pacchetto applicazione installato** per caricare un'app già installata nel debugger. Ad esempio, è possibile eseguire il debug di un'app installata da Microsoft Store o eseguire il debug di un'app quando si dispone dei file di origine per l'app, ma non di un progetto di Visual Studio per l'app. La finestra di dialogo **debug pacchetto app installato** consente di avviare un'app in modalità di debug nel computer Visual Studio o in un dispositivo remoto oppure di impostare l'app per l'esecuzione in modalità di debug, ma non per avviarla. Per altre informazioni, vedere [eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
 
  Una volta caricata l'app nel debugger, puoi utilizzare una qualsiasi tra le procedure descritte sopra.
 
-## <a name="diagnosing-background-task-activation-errors"></a><a name="BKMK_Diagnosing_background_task_activation_errors"></a>Diagnosi degli errori di attivazione dell'attività in background
+## <a name="diagnosing-background-task-activation-errors"></a><a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnosi degli errori di attivazione dell'attività in background
  I log di diagnostica in Windows Visualizzatore eventi per l'infrastruttura in background contengono informazioni dettagliate che è possibile utilizzare per diagnosticare e risolvere i problemi relativi agli errori delle attività in background. Per visualizzare il log:
 
 1. Aprire l'applicazione Visualizzatore eventi.
@@ -109,7 +109,7 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
 4. Scegli il log **Diagnostica** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Test delle app UWP con Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
 - [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Ciclo di vita dell'applicazione](/windows/uwp/launch-resume/app-lifecycle)

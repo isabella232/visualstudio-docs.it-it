@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b4db5b54f39a0be6de184b609e672b1f0173890
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664603"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Procedura: Creare un modello 3D di base
+# <a name="how-to-create-a-basic-3-d-model"></a>Procedura: Creare un modello tridimensionale di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo documento viene illustrato come utilizzare l'editor modello per creare un modello 3D di base.
 
- Questo documento illustra le attività seguenti:
+ Questo documento illustra queste attività:
 
 - Aggiunta di oggetti a una scena
 
@@ -44,7 +44,7 @@ In questo documento viene illustrato come utilizzare l'editor modello per creare
 
 #### <a name="to-create-a-simplified-3-d-model-of-a-house"></a>Per creare un modello 3D semplificato di una casa
 
-1. Creare un modello 3D da utilizzare. Per informazioni su come aggiungere un modello al progetto, vedere la sezione Introduzione in [Editor dei modelli](../designers/model-editor.md).
+1. Creare un modello 3D da utilizzare. Per informazioni su come aggiungere un modello al progetto, vedere la sezione Introduzione nell'editor dei [modelli](../designers/model-editor.md).
 
 2. Aggiungere un cubo alla scena. Nella finestra **Casella degli strumenti**, in **Forme**, selezionare **Cubo** e spostarlo nell'area di progettazione.
 
@@ -60,13 +60,13 @@ In questo documento viene illustrato come utilizzare l'editor modello per creare
 
 6. Estendere una delle estrusioni. Scegliere una delle facce appena estruse e nella barra degli strumenti dell'editor dei modelli scegliere lo strumento **Traslazione** e spostare il manipolatore della traslazione nella stessa direzione dell'estrusione.
 
-    ![Un lato del cubo è stato ulteriormente estruso.](../designers/media/gfx-model-demo-house-extend.png "gfx_model_demo_house_extend")
+    ![Una lato del cubo è stato ulteriormente estruso](../designers/media/gfx-model-demo-house-extend.png "gfx_model_demo_house_extend")
 
 7. Eseguire la triangolazione del modello. Nella barra degli strumenti dell'editor dei modelli scegliere **Avanzate**, **Strumenti**, **Triangolazione**.
 
 8. Creare il tetto della casa. Passare alla modalità di selezione bordo scegliendo **Seleziona bordo** nella barra degli strumenti dell'editor dei modelli e quindi scegliere il cubo per attivarlo. Durante la selezione dei bordi visualizzati qui, tenere premuto il tasto CTRL.
 
-    ![Bordi che formerà il picco del tetto](../designers/media/gfx-model-demo-house-edges.png "gfx_model_demo_house_edges")
+    ![Bordi che formeranno il picco del tetto](../designers/media/gfx-model-demo-house-edges.png "gfx_model_demo_house_edges")
 
     Una volta selezionati i bordi, nella barra degli strumenti dell'editor dei modelli scegliere lo strumento **Traslazione** e spostare il manipolatore della traslazione verso l'alto per creare il tetto della casa.
 
@@ -74,7 +74,7 @@ In questo documento viene illustrato come utilizzare l'editor modello per creare
 
    ![Modello completato della casa semplificata](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")
 
-   Come passaggio successivo, è possibile applicare uno shader a questo modello 3D. Per altre informazioni, vedere [Procedura: Applicare uno shader a un modello 3D ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Come passaggio successivo, è possibile applicare uno shader a questo modello 3D. Per informazioni, vedere [procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Modello tridimensionale ](../designers/how-to-model-3-d-terrain.md) di [Progettazione shader](../designers/shader-designer.md) [Editor modelli](../designers/model-editor.md)
+ [Procedura: modellare la finestra di](../designers/how-to-model-3-d-terrain.md) [Model Editor](../designers/model-editor.md) [Progettazione shader](../designers/shader-designer.md) dell'editor del modello di terreno 3D

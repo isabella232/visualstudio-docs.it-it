@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a3c707fef5562b932b6232300131f6e6e6efef6a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534563"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Non contrassegnare componenti serviti con WebMethod
@@ -36,7 +36,7 @@ ms.locfileid: "85534563"
  Un metodo in un tipo che eredita da <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> è contrassegnato con <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.Web.Services.WebMethodAttribute>si applica ai metodi all'interno di un servizio Web XML che sono stati creati tramite ASP.NET; rende il metodo chiamabile dai client Web remoti. Il metodo e la classe devono essere pubblici ed essere eseguiti in un'applicazione Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent>i tipi sono ospitati da applicazioni COM+ e possono utilizzare i servizi COM+. <xref:System.Web.Services.WebMethodAttribute>non viene applicato ai <xref:System.EnterpriseServices.ServicedComponent> tipi perché non sono destinati agli stessi scenari. In particolare, l'aggiunta dell'attributo al <xref:System.EnterpriseServices.ServicedComponent> metodo non rende il metodo chiamabile dai client Web remoti. Poiché <xref:System.Web.Services.WebMethodAttribute> e un <xref:System.EnterpriseServices.ServicedComponent> Metodo presentano comportamenti e requisiti in conflitto per il contesto e il flusso delle transazioni, il comportamento del metodo non sarà corretto in alcuni scenari.
+ <xref:System.Web.Services.WebMethodAttribute> si applica ai metodi all'interno di un servizio Web XML che sono stati creati tramite ASP.NET; rende il metodo chiamabile dai client Web remoti. Il metodo e la classe devono essere pubblici ed essere eseguiti in un'applicazione Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent> i tipi sono ospitati da applicazioni COM+ e possono utilizzare i servizi COM+. <xref:System.Web.Services.WebMethodAttribute> non viene applicato ai <xref:System.EnterpriseServices.ServicedComponent> tipi perché non sono destinati agli stessi scenari. In particolare, l'aggiunta dell'attributo al <xref:System.EnterpriseServices.ServicedComponent> metodo non rende il metodo chiamabile dai client Web remoti. Poiché <xref:System.Web.Services.WebMethodAttribute> e un <xref:System.EnterpriseServices.ServicedComponent> Metodo presentano comportamenti e requisiti in conflitto per il contesto e il flusso delle transazioni, il comportamento del metodo non sarà corretto in alcuni scenari.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, rimuovere l'attributo dal <xref:System.EnterpriseServices.ServicedComponent> metodo.

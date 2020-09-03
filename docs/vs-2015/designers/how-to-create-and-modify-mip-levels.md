@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99d2b07a64781929962ff37823ddcbf219598331
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664487"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Procedura: creare e modificare livelli MIP
@@ -28,7 +28,7 @@ Questo documento illustra come usare **Editor di immagini** per generare e modif
 
 1. Iniziare con una trama di base, come descritto in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per risultati ottimali, specificare una trama con larghezza e altezza equivalenti a una potenza di due nella dimensione, ad esempio 256, 512, 1024 e così via.
 
-2. Generare i livelli MIP. Sulla barra degli strumenti della **modalità dell'editor di immagini scegliere** **Avanzate** , **Strumenti** , **Genera MIP** .
+2. Generare i livelli MIP. Sulla barra degli strumenti della **modalità dell'editor di immagini scegliere****Avanzate** , **Strumenti** , **Genera MIP** .
 
      I pulsanti per **la visualizzazione del livello MIP precedente** o **successivo** sono ora visualizzati sulla barra degli strumenti della **modalità dell'editor di immagini** . Se è visualizzata la finestra **Proprietà**, si può anche notare che nelle proprietà dell'immagine sono ora incluse le proprietà di sola lettura **Livello MIP** e **Conteggio livelli MIP**.
 

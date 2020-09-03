@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59a926ab35e04aa120bc57250c3e5b2712858aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664492"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procedura: Creare uno shader con trama di base
@@ -21,7 +21,7 @@ ms.locfileid: "72664492"
 
 Questo documento illustra come usare la finestra di progettazione shader e il linguaggio DGSL (Directed Graph Shader Language) per creare uno shader a trama singola. Questo shader imposta il colore finale direttamente sui valori RGB e alfa campionati dalla trama.
 
- Questo documento illustra le attività seguenti:
+ Questo documento illustra queste attività:
 
 - Rimozione di nodi da un grafico shader
 
@@ -61,9 +61,9 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 > [!NOTE]
 > In questa illustrazione, viene utilizzato un piano come forma di anteprima ed è stata specificata una trama per illustrare meglio l'effetto dello shader.
 
- ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-texture-effect.png "|::ref1::|")
+ ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-texture-effect.png "Digit-texture-Effect")
 
- Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [Finestra di progettazione shader](../designers/shader-designer.md).
+ Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per ulteriori informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [finestra di progettazione shader](../designers/shader-designer.md) .
 
 ## <a name="see-also"></a>Vedere anche
  [Procedura: applicare uno shader a un](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [editor di immagini](../designers/image-editor.md) del modello 3D shader [progettazione](../designers/shader-designer.md) shader nodi della [finestra di progettazione shader](../designers/shader-designer-nodes.md)

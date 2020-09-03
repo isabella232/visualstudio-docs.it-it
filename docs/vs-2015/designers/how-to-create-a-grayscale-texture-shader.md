@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 554717d59a42bed15b37379d3bf7a5c4da727e95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664502"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procedura: Creare uno shader con trama in scala di grigi
@@ -28,7 +28,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 
 #### <a name="to-create-a-grayscale-texture-shader"></a>Per creare uno shader con trama in scala di grigi
 
-1. Creare uno shader con trama di base, come descritto in [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-texture-shader.md).
+1. Creare uno shader con trama di base, come descritto in [procedura: creare uno shader con trama di base](../designers/how-to-create-a-basic-texture-shader.md).
 
 2. Scollegare il terminale **RGB** del nodo **Campione trama** dal terminale **RGB** del nodo **Colore finale**. In modalità **Seleziona** scegliere il terminale **RGB** del nodo **Campione trama** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
 
@@ -37,7 +37,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 4. Calcolare il valore della scala di grigi usando il nodo **Desatura**. In modalità **Seleziona** spostare il terminale **RGB** del nodo **Campione trama** nel terminale **RGB** del nodo **Desatura**.
 
    > [!NOTE]
-   > Per impostazione predefinita, il nodo **Desatura** desatura completamente il colore di input e usa i valori di luminanza standard per la conversione in scala di grigi. È possibile modificare il comportamento del nodo**Desatura** modificando il valore della proprietà **Luminanza** o desaturando parzialmente il colore di input. Per desaturare parzialmente il colore di input, immettere un valore scalare compreso nell'intervallo [0,1) nel terminale **Percentuale**  del nodo **Desatura**.
+   > Per impostazione predefinita, il nodo **Desatura** desatura completamente il colore di input e usa i valori di luminanza standard per la conversione in scala di grigi. È possibile modificare il comportamento del nodo**Desatura** modificando il valore della proprietà **Luminanza** o desaturando parzialmente il colore di input. Per desaturare parzialmente il colore di input, immettere un valore scalare compreso nell'intervallo [0,1) nel terminale **Percentuale ** del nodo **Desatura**.
 
 5. Collegare il valore del colore in scala di grigi al colore finale. Spostare il terminale **Output** del nodo **Desatura** nel terminale **RGB** del nodo **Colore finale**.
 
@@ -48,7 +48,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 
  ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-grayscale-effect.png "Effetto di cifre-scala di grigi")
 
- Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [Finestra di progettazione shader](../designers/shader-designer.md).
+ Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per ulteriori informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [finestra di progettazione shader](../designers/shader-designer.md) .
 
 ## <a name="see-also"></a>Vedere anche
  [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [procedura: esportare](../designers/how-to-export-a-shader.md) i [nodi](../designers/shader-designer-nodes.md) della finestra di [Progettazione shader](../designers/shader-designer.md) di [editor di immagini](../designers/image-editor.md) shader

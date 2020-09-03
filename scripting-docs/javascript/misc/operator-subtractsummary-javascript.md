@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816787"
 ---
 # <a name="operator-summary-javascript"></a>Riepilogo degli operatori (JavaScript)
@@ -29,7 +29,7 @@ Nelle tabelle seguenti sono elencati [!INCLUDE[javascript](../../javascript/incl
 |[Oltre](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Operatore di conversione](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Divisione](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Incremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Incremento valore Identity](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Resto](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Moltiplicazione](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Sottrazione](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -39,7 +39,7 @@ Nelle tabelle seguenti sono elencati [!INCLUDE[javascript](../../javascript/incl
   
 |Operatore|Simbolo|  
 |--------------|------------|  
-|[Virgola](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[Virgole](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[Condizionale (ternario)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[Uguaglianza](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Maggiore di](../../javascript/reference/comparison-operators-javascript.md)|>|  

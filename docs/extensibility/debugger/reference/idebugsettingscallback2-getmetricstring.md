@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricString . Documenti Microsoft
+title: 'IDebugSettingsCallback2:: GetMetricString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e0c90f3261809bf41b3aa4bd3337a16c1190fcfc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719970"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
@@ -46,16 +46,16 @@ private int GetMetricString(
 
 ## <a name="parameters"></a>Parametri
 `pszType`\
-[in] Tipo di metrica.
+in Tipo della metrica.
 
 `guidSection`\
-[in] Identificatore univoco della sezione.
+in Identificatore univoco della sezione.
 
 `pszMetric`\
-[in] Nome della metrica.
+in Nome della metrica.
 
 `pbstrValue`\
-[fuori] Restituisce la stringa del valore della metrica.
+out Restituisce la stringa di valore della metrica.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

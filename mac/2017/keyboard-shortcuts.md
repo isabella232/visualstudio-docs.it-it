@@ -23,7 +23,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="code-navigation"></a>Esplorazione del codice
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Trova riferimenti|**⇧⌘R**, **F12**|
 |Vai a dichiarazione|**⌘D**, **F12**|
@@ -34,7 +34,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="debug"></a>Debug
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Abilita o disabilita punto di interruzione|**⌥ ⌘/**, **⌘ F9**|
 |Sospendi|**⌥⌘P**, **⌥⌘L5**|
@@ -50,24 +50,24 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="designer"></a>Designer
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Passa da un file correlato all'altro|**⌃ ⌘ ↑**|
 
 ## <a name="edit"></a>Modifica
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Modalità di modifica vincoli|**⌘ E**|
 |Copia|**⌘ C**|
 |Taglia|**⌘ X**|
-|Elimina|**⌫ ⌘**|
+|Delete|**⌫ ⌘**|
 |Formatta documento|**⌃**|
 |Imposta rientro per la selezione|**⌘**|
 |Incolla|**⌘ V**|
 |Preferenze|**⌘**|
 |Ripristinare|**⇧ ⌘ Z**|
-|Rinomina|**⌘R**, **F2**|
+|Rinominare|**⌘R**, **F2**|
 |Seleziona tutto|**⌘ A**|
 |Mostra generazione del codice|**⌘ I**|
 |Attiva/Disattiva tutte le riduzioni|**⌥ ⇧ ⌘ ↑**|
@@ -80,7 +80,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="f-integration"></a>Integrazione F#
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Cancella F# Interactive|**⌃ ⌥ C**|
 |F# Interactive|**⌃ ⌥ F**|
@@ -91,7 +91,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="file"></a>File
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Chiudi tutto|**⇧ ⌘ W**|
 |Chiudi file|**⌘ W**|
@@ -107,24 +107,24 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="help"></a>Guida
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Documentazione sull'API|**⌥ ⌘?**|
 |Riferimento per le API Unity|**⌘**|
 
 ## <a name="other"></a>Altro
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Implementa messaggi Unity|**⇧ ⌘ M**|
 |Controllare|**⌥ ⌘ I**|
 
 ## <a name="project"></a>Progetto
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Aggiungi file|**⌥ ⌘ A**|
-|Compilazione|**⌘K**, **⇧F6**|
+|Compilare|**⌘K**, **⇧F6**|
 |Compila tutto|**⌘B**, **F6**|
 |Clean|**⇧ ⌘ K**|
 |Ricompilazione|**⌃ ⌘ K**|
@@ -135,14 +135,14 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="refactoring"></a>Refactoring
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Importa simbolo|**⌃ ⌥ ␣**|
 |Correzione rapida|**⏎ ⌥**|
 
 ## <a name="search"></a>Ricerca
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Comando|**⇧ ⌘ P**|
 |Cerca nei file|**⇧ ⌘ F**|
@@ -160,7 +160,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="text-editor"></a>Editor di testo
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Completa parola|**⌃␣**|
 |Elimina carattere a sinistra|**⌃ H**|
@@ -211,7 +211,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="view"></a>Visualizzazione
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Centra documento e imposta stato attivo|**⌃ L**|
 |Imposta stato attivo per il documento|**F7**|
@@ -230,7 +230,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 ## <a name="window"></a>Finestra
 
-|Comandi|Tasti di scelta rapida|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Attiva 1|**⌘ 1**|
 |Attiva 2|**⌘ 2**|

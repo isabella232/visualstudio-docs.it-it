@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d9bfa9a6e9be1a97b3a606aa302defd12a8d062
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664516"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con sfumatura basata sulla geometria
@@ -21,7 +21,7 @@ ms.locfileid: "72664516"
 
 Questo documento illustra come usare la finestra di progettazione shader e il linguaggio DGSL (Directed Graph Shader Language) per creare uno shader con sfumatura basata sulla geometria. Questo shader ridimensiona un valore di colore RGB costante in base all'altezza di ogni punto di un oggetto nello spazio globale.
 
- Questo documento illustra le attività seguenti:
+ Questo documento illustra queste attività:
 
 - Aggiunta di nodi a un grafico shader
 
@@ -63,13 +63,13 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 
  ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")
 
- Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione **Anteprima degli shader** in [Finestra di progettazione shader](../designers/shader-designer.md).
+ Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere Anteprima degli **shader** nella [finestra di progettazione shader](../designers/shader-designer.md)
 
- La figura seguente illustra lo shader descritto in questo documento applicato alla scena 3D illustrata in [Procedura: Creare un modello di terreno 3D](../designers/how-to-model-3-d-terrain.md). L'intensità del colore aumenta con l'altezza del punto nello spazio globale.
+ La figura seguente illustra lo shader descritto in questo documento applicato alla scena 3D illustrata in [procedura: modellare il terreno 3D](../designers/how-to-model-3-d-terrain.md). L'intensità del colore aumenta con l'altezza del punto nello spazio globale.
 
- ![Effetto sfumatura applicato a un&#45;modello di terreno 3D](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-result")
+ ![Effetto sfumatura applicato a un modello di terreno 3&#45;D](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-result")
 
- Per altre informazioni su come applicare uno shader a un modello 3D, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Per altre informazioni su come applicare uno shader a un modello 3D, vedere [procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vedere anche
  [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [procedura: esportare uno shader](../designers/how-to-export-a-shader.md) [procedura: modellare il terreno 3D](../designers/how-to-model-3-d-terrain.md) [procedura: creare uno shader texture](../designers/how-to-create-a-grayscale-texture-shader.md) shader [progettazione](../designers/shader-designer.md) Shader Shader nodi della finestra di [Progettazione shader](../designers/shader-designer-nodes.md)

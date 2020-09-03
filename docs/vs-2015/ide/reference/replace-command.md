@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7ba633999925e86b753dbd815babe6e52c75ca53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665620"
 ---
 # <a name="replace-command"></a>Comando Sostituisci
@@ -39,7 +39,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
  `replacewith` Obbligatorio. Il testo di sostituzione per il testo corrispondente.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /o/a facoltativo. Sostituisce tutte le occorrenze del testo di ricerca con il testo di sostituzione.
 
  /case o /c Facoltativo. Vengono rilevate corrispondenze solo se i caratteri maiuscoli e minuscoli corrispondono esattamente a quelli specificati nell'argomento `findwhat`.

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 693ecf6e8fd4f0b55936bde371b7baa6975b8f2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198658"
 ---
-# <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
+# <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Fornisce un mapping di indirizzi per supportare le traduzioni di layout di immagine.  
+Fornisce una mappa degli indirizzi per supportare le traduzioni del layout dell'immagine.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,22 +37,22 @@ HRESULT set_addressMap ( 
   
 #### <a name="parameters"></a>Parametri  
  `cbData`  
- [in] Il numero di elementi nel `data` parametro.  
+ in Numero di elementi nel `data` parametro.  
   
  `data[]`  
- [in] Matrice di [struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md) strutture che definiscono il mapping per la conversione.  
+ in Matrice di strutture di [struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md) che definiscono la mappa di conversione.  
   
  `imagetoSymbols`  
- [in] `TRUE` se il `data` parametro definisce una mappa dal layout dell'immagine di nuovo il layout originale (come descritto per i simboli di debug). `FALSE` Se `data` è una mappa per il nuovo layout dell'immagine ricavato il layout originale.  
+ [in] `TRUE` Se il `data` parametro definisce una mappa dal nuovo layout dell'immagine al layout originale (come descritto dai simboli di debug). `FALSE` Se `data` è un mapping al nuovo layout dell'immagine tratto dal layout originale.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- In genere, il DIA recupera indirizzo traduzione mappe dal file di database (con estensione pdb) del programma. Se questi valori non sono presenti, il [Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) viene chiamato due volte, una volta con i `imagetoSymbols` parametro impostato su `TRUE` e una volta con il `imagetoSymbols` parametro impostato su `FALSE`. Conversioni di mapping di indirizzi non possono essere abilitate usando il [Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) metodo a meno che non vengono fornite entrambe le mappe di traduzione.  
+## <a name="remarks"></a>Osservazioni  
+ In genere, il diametro recupera le mappe degli indirizzi da un file di database di programma (con estensione pdb). Se questi valori sono mancanti, il metodo [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) viene chiamato due volte, una volta con il `imagetoSymbols` parametro impostato su `TRUE` e una volta con il `imagetoSymbols` parametro impostato su `FALSE` . Non è possibile abilitare le traduzioni della mappa indirizzi usando il metodo [IDiaAddressMap::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , a meno che non vengano fornite entrambe le mappe di traduzione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
+ [IDiaAddressMap: ut_addressMapEnabled:p](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

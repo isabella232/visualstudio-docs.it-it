@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6384ea963fe1da145cacc0be46b5989f7bc610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198761"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Enumera i tipi di campi aggiuntivi che un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto può contenere. Questa enumerazione estende la [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) enumerazione.  
+Enumera i tipi aggiuntivi di campi che possono essere contenuti in un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) . Questa enumerazione estende l'enumerazione [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,20 +43,20 @@ public enum enum_FIELD_KIND_EX
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  FIELD_KIND_EX_NONE  
- Campo non contiene un tipo esteso.  
+ Il campo non contiene un tipo esteso.  
   
  FIELD_TYPE_EX_METHODVAR  
- Campo contiene una variabile di metodo.  
+ Il campo contiene una variabile di metodo.  
   
  FIELD_TYPE_EX_CLASSVAR  
- Campo contiene una variabile di classe.  
+ Il campo contiene una variabile di classe.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

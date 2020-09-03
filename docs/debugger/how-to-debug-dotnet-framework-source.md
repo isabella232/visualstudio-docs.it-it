@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3f043aae44231608fb514e87a05717f4aeb924bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350095"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug del codice sorgente di .NET Framework
@@ -31,9 +31,9 @@ Per eseguire il debug di .NET Framework origine, è necessario:
 
 1. In **strumenti** (o **debug**) > **Opzioni**  >  di**debug**  >  **generale**selezionare **Abilita .NET Framework l'esecuzione**di un'istruzione all'origine.
 
-   - Se Just My Code è attivato, viene visualizzata una finestra di dialogo con un avviso indicante che Just My Code è stato disabilitato. Fare clic su **OK**.
+   - Se Just My Code è attivato, viene visualizzata una finestra di dialogo con un avviso indicante che Just My Code è stato disabilitato. Selezionare **OK**.
 
-   - Se non è stata impostata una cache di simboli locale, viene visualizzata una finestra di dialogo di avviso che indica che è stata impostata una cache di simboli predefinita. Fare clic su **OK**.
+   - Se non è stata impostata una cache di simboli locale, viene visualizzata una finestra di dialogo di avviso che indica che è stata impostata una cache di simboli predefinita. Selezionare **OK**.
 
 1. Selezionare **OK** per chiudere la finestra di dialogo **Opzioni** .
 
@@ -63,6 +63,6 @@ Per eseguire il debug di .NET Framework origine, è necessario:
 
    - Selezionare **Impostazioni simboli** per aprire la pagina **simboli** . Nella pagina **simboli** , in percorsi di file di simboli **(con estensione pdb)**, selezionare Server dei simboli **Microsoft** per accedere ai simboli dai server di simboli Microsoft pubblici. Selezionare i pulsanti della barra degli strumenti per aggiungere altre posizioni dei simboli e modificare l'ordine di caricamento. Selezionare **OK** per chiudere la finestra di dialogo.
 
-### <a name="see-also"></a>Vedi anche
+### <a name="see-also"></a>Vedere anche
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

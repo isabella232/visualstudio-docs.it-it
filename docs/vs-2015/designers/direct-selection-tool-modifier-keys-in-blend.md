@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d2973f4e1d775d1b71642ea60b8cf00b1430c77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664708"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Tasti di modifica strumento Selezione diretta in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile utilizzare per modificare la forma di un tracciato ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362")esistente con lo strumento selezione diretta. Per aggiungere o rimuovere punti in un tracciato esistente oppure per unire due tracciati esistenti, puoi usare lo strumento **Penna**.
+Nella tabella seguente sono elencati i tasti di scelta rapida che puoi usare per modificare la forma di un tracciato esistente con lo strumento **Selezione diretta**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362"). Per aggiungere o rimuovere punti in un tracciato esistente oppure per unire due tracciati esistenti, puoi usare lo strumento **Penna**.
 
-|Per|Seguire questa procedura|Puntatore|
+|Per|Procedere nel modo seguente|Puntatore|
 |-----------------------|-------------|-------------|
 |Visualizzare i punti di controllo di tangente per un punto di un tracciato|Fai clic su un punto di un tracciato|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Puntatore di spostamento del punto|
 |Spostare un punto di un tracciato|Trascina un punto di un tracciato|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Puntatore di spostamento del punto|

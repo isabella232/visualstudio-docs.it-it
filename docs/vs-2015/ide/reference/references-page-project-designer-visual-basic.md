@@ -18,20 +18,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8bb18ec8dd12431d650d844e3698c1986c8d8bd8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665635"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Usare la pagina **Riferimenti** di **Progettazione progetti** per gestire riferimenti, riferimenti Web e spazi dei nomi importati del progetto. I progetti possono contenere riferimenti a componenti COM, servizi Web XML, assembly o librerie di classi .NET Framework oppure altre librerie di classi. Per altre informazioni sull'uso dei riferimenti, vedere [Gestione dei riferimenti in un progetto](../../ide/managing-references-in-a-project.md).
+Utilizzare la pagina **riferimenti** di **Progettazione progetti** per gestire i riferimenti, i riferimenti Web e gli spazi dei nomi importati nel progetto. I progetti possono contenere riferimenti a componenti COM, servizi Web XML, assembly o librerie di classi .NET Framework oppure altre librerie di classi. Per altre informazioni sull'uso dei riferimenti, vedere [Gestione dei riferimenti in un progetto](../../ide/managing-references-in-a-project.md).
 
  Per accedere alla pagina **Riferimenti**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Progetto**, **Proprietà** sulla barra dei menu. Quando viene visualizzata la finestra Progettazione progetti fare clic sulla scheda **Riferimenti**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  Le opzioni seguenti consentono di selezionare o rimuovere riferimenti e spazi dei nomi importati del progetto.
 
  **Riferimenti inutilizzati** Fare clic su questo pulsante per accedere alla finestra di dialogo **Riferimenti inutilizzati** .
@@ -54,7 +54,7 @@ Usare la pagina **Riferimenti** di **Progettazione progetti** per gestire riferi
 
  Scegliere **Riferimento** per aggiungere un riferimento al progetto tramite la finestra di dialogo Aggiungi riferimento.
 
- Scegliere **Riferimento Web** per aggiungere un riferimento Web al progetto tramite la finestra di dialogo Aggiungi riferimento Web.
+ Scegliere **riferimento Web** per aggiungere un riferimento Web al progetto utilizzando la finestra di dialogo Aggiungi riferimento Web.
 
  **Rimuovi** Selezionare uno o più riferimenti nell'elenco **riferimenti** , quindi fare clic su questo pulsante per eliminarlo.
 
@@ -62,7 +62,7 @@ Usare la pagina **Riferimenti** di **Progettazione progetti** per gestire riferi
 
  **Spazi dei nomi importati** È possibile digitare lo spazio dei nomi in questa casella e fare clic su **Aggiungi importazione utente** per aggiungerlo all'elenco degli spazi dei nomi.
 
- È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nel formato *alias*=*spazio dei nomi*. Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+ È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nel formato *alias* = *spazio dei nomi*. Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Aggiungi importazione utente** Fare clic su questo pulsante per aggiungere lo spazio dei nomi specificato nella casella **spazi dei nomi importati** all'elenco degli spazi dei nomi importati. Il pulsante è attivo solo se lo spazio dei nomi specificato non è presente nell'elenco.
 
