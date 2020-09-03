@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926316"
 ---
 # <a name="blocking-time-profile-report"></a>Rapporto profili del tempo di blocco
@@ -31,23 +31,23 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
 ## <a name="blocking-time-report-columns"></a>Colonne del rapporto del tempo di blocco
  Nella tabella seguente sono riportate le colonne per ogni rapporto del tempo di blocco.
 
-|Nome colonna|Descrizione|
+|Nome della colonna|Descrizione|
 |-----------------|-----------------|
-|**Nome**|Nome della funzione per ogni livello dello stack di chiamate.|
+|**Name**|Nome della funzione per ogni livello dello stack di chiamate.|
 |**Istanze**|Numero di istanze della chiamata di blocco per il periodo di tempo visibile.|
 |**Tempo inclusivo di blocco**|Tempo di blocco totale impiegato per tutti gli stack con rollup a questo livello dell'albero degli stack di chiamate. Il numero inclusivo è la somma del tempo esclusivo di blocco per questa funzione e del tempo esclusivo di blocco per tutti i relativi nodi figlio.|
 |**Tempo esclusivo di blocco**|Tempo di blocco totale impiegato in cui questa funzione è il livello più basso dello stack di chiamate. Una voce univoca dello stack di chiamate con un tempo esclusivo di blocco elevato può essere una funzione di interesse.|
 |**API/Categoria di attesa**|Visualizzata solo per le funzioni al livello più basso dello stack di chiamate. Se la firma della chiamata di blocco viene riconosciuta, viene specificato il nome dell'API di blocco. Se la firma non viene riconosciuta, vengono specificate le informazioni segnalate dal kernel.|
-|**Dettagli**|Nome completo della funzione. Include il conteggio delle righe, se disponibile.|
+|**Informazioni dettagliate**|Nome completo della funzione. Include il conteggio delle righe, se disponibile.|
 
-### <a name="synchronization"></a>Synchronization
+### <a name="synchronization"></a>Sincronizzazione
  Il rapporto Sincronizzazione specifica le chiamate responsabili dei segmenti di blocco nel tempo di sincronizzazione e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Periodo di sincronizzazione](../profiling/synchronization-time.md).
 
 ### <a name="sleep"></a>Sospendi
  Il rapporto Sospensione specifica le chiamate responsabili del tempo di blocco attribuito al tempo trascorso in modalità di sospensione e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di sospensione](../profiling/sleep-time.md).
 
 ### <a name="io"></a>I/O
- Il rapporto I/O specifica le chiamate responsabili dei segmenti di blocco nel tempo di I/O e i tempi di blocco aggregati di ogni stack di chiamate. Per ulteriori informazioni, vedere [Tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md).
+ Il rapporto I/O specifica le chiamate responsabili dei segmenti di blocco nel tempo di I/O e i tempi di blocco aggregati di ogni stack di chiamate. Per ulteriori informazioni, vedere [tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md).
 
 ### <a name="memory-management"></a>Gestione della memoria
  Il rapporto Gestione della memoria specifica le chiamate responsabili dei segmenti di blocco nelle operazioni di gestione della memoria e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di gestione della memoria](../profiling/memory-management-time.md).
@@ -59,4 +59,4 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
  Il rapporto relativo all'elaborazione dell'interfaccia utente indica le chiamate responsabili dei segmenti di blocco nei blocchi di elaborazione dell'interfaccia utente, oltre ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+- [Visualizzazione thread](../profiling/threads-view-parallel-performance.md)

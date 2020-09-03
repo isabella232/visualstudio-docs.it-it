@@ -13,20 +13,20 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77e4701d3d8ec54fd37d6483f55b10a28af65b15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194058"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si tratta di una funzione di callback specificata per il [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) funzione per aggiornare un insieme di directory e, facoltativamente, i nomi di file per scoprire che si trovano sotto controllo del codice sorgente.  
+Si tratta di una funzione di callback assegnata alla funzione [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) per aggiornare una raccolta di directory e (facoltativamente) i nomi di file per scoprire quali sono inclusi nel controllo del codice sorgente.  
   
- Il `POPDIRLISTFUNC` callback deve essere chiamato solo per le directory e i nomi di file (nell'elenco specificato per il `SccPopulateDirList` (funzione)) inclusi effettivamente nel controllo del codice sorgente.  
+ Il `POPDIRLISTFUNC` callback deve essere chiamato solo per le directory e i nomi file (nell'elenco fornito alla `SccPopulateDirList` funzione) che sono effettivamente sotto il controllo del codice sorgente.  
   
-## <a name="signature"></a>Signature  
+## <a name="signature"></a>Firma  
   
 ```cpp#  
 typedef BOOL (*POPDIRLISTFUNC)(  
@@ -38,27 +38,27 @@ typedef BOOL (*POPDIRLISTFUNC)(
   
 ## <a name="parameters"></a>Parametri  
  pvCallerData  
- [in] Valore di utente passato [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
+ in Valore utente assegnato a [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
   
- bOpzioni cartella  
- [in] `TRUE` se il nome in `lpDirectoryOrFileName` è una directory; in caso contrario, il nome è un nome di file.  
+ bFolder  
+ [in] `TRUE` Se il nome in `lpDirectoryOrFileName` è una directory; in caso contrario, il nome è un nome file.  
   
  lpDirectoryOrFileName  
- [in] Percorso locale completo a un nome di file o directory che si trova sotto controllo del codice sorgente.  
+ in Percorso locale completo di una directory o di un nome file nel controllo del codice sorgente.  
   
 ## <a name="return-value"></a>Valore restituito  
- Nell'IDE viene restituito un codice di errore appropriato:  
+ L'IDE restituisce un codice di errore appropriato:  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Continuare l'elaborazione.|  
-|SCC_I_OPERATIONCANCELED|Arrestare l'elaborazione.|  
-|SCC_E_xxx|Qualsiasi errore di controllo di origine appropriato deve arrestare l'elaborazione.|  
+|SCC_I_OPERATIONCANCELED|Consente di arrestare l'elaborazione.|  
+|SCC_E_xxx|Qualsiasi errore appropriato del controllo del codice sorgente dovrebbe arrestare l'elaborazione.|  
   
-## <a name="remarks"></a>Note  
- Se il `fOptions` parametro del `SccPopulateDirList` funzione contiene il `SCC_PDL_INCLUDEFILES` flag, quindi l'elenco conterrà probabilmente i nomi di file, nonché i nomi di directory.  
+## <a name="remarks"></a>Osservazioni  
+ Se il `fOptions` parametro della `SccPopulateDirList` funzione contiene il `SCC_PDL_INCLUDEFILES` flag, l'elenco conterrà anche nomi di file e nomi di directory.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
- [Codici di errore](../extensibility/error-codes.md)
+ [Codici errore](../extensibility/error-codes.md)

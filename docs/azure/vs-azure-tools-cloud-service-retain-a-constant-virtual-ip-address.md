@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280850"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Mantenere un indirizzo IP virtuale costante per un servizio cloud di Azure
@@ -27,7 +27,7 @@ L'indirizzo VIP di un servizio cloud viene allocato alla prima distribuzione in 
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>Aggiornare un servizio cloud senza modifica dell'indirizzo VIP
 1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto. Dal menu di scelta rapida selezionare **Pubblicare**.
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto. Dal menu di scelta rapida selezionare **Pubblicare**.
 
     ![Menu Pubblica](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/solution-explorer-publish-menu.png)
 

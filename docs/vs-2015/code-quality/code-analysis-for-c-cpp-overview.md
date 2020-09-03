@@ -23,10 +23,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 1ce41cd1c0dabc94658b83aa5e2bcdc08d005fdb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275366"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Cenni preliminari sull'analisi del codice per C/C++
@@ -38,10 +38,10 @@ Lo strumento di analisi del codice C/C++ fornisce agli sviluppatori informazioni
  Per facilitarne l'uso agli sviluppatori, lo strumento di analisi è integrato nell'IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Durante il processo di compilazione, tutti gli avvisi generati a causa del codice sorgente vengono visualizzati nell'Elenco errori. È possibile passare al codice sorgente che ha causato l'avviso e visualizzare informazioni aggiuntive sulla causa e le possibili soluzioni del problema.  
   
 ## <a name="pragma-support"></a>Supporto di #pragma  
- Gli sviluppatori possono usare la direttiva `#pragma` per considerare gli avvisi come errori, abilitare o disabilitare gli avvisi e non visualizzare gli avvisi per alcune righe di codice. Per ulteriori informazioni, vedere [Procedura: abilitare e disabilitare l'analisi](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a)del codice per gli avvisi specifici di C/C  
+ Gli sviluppatori possono usare la direttiva `#pragma` per considerare gli avvisi come errori, abilitare o disabilitare gli avvisi e non visualizzare gli avvisi per alcune righe di codice. Per altre informazioni, vedere [procedura: abilitare e disabilitare l'analisi del codice per avvisi C/C++ specifici](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a).  
   
 ## <a name="annotation-support"></a>Supporto di annotazioni  
- Le annotazioni rendono più precisa l'analisi del codice, in quanto offrono informazioni aggiuntive sulle pre- e post-condizioni in parametri di funzione e tipi restituiti. Per ulteriori informazioni, vedere [Procedura: specificare informazioni aggiuntive sul codice tramite __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
+ Le annotazioni rendono più precisa l'analisi del codice, in quanto offrono informazioni aggiuntive sulle pre- e post-condizioni in parametri di funzione e tipi restituiti. Per altre informazioni, vedere [procedura: specificare informazioni aggiuntive sul codice usando __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
   
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Eseguire lo strumento di analisi come parte dei criteri di archiviazione  
  È possibile che tutte le archiviazioni del codice sorgente debbano soddisfare determinati criteri, in particolare, assicurarsi che l'analisi sia stata eseguita come parte del processo di compilazione locale più recente. Per altre informazioni su come abilitare i criteri di archiviazione dell'analisi codice, vedere [Creazione e uso di criteri di archiviazione di analisi codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  

@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a69defe75b80ef1f395931017dfc942398ca2710
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161488"
 ---
 # <a name="crt-debugging-techniques"></a>Tecniche di debug CRT
@@ -33,11 +33,11 @@ ms.locfileid: "68161488"
 
 Se si effettua il debug di un programma che utilizza la libreria di runtime del linguaggio C, possono essere utili le seguenti tecniche di debug.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Uso della libreria di debug CRT](../debugger/crt-debug-library-use.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Utilizzo della libreria di debug CRT](../debugger/crt-debug-library-use.md)  
  Viene descritto il supporto per il debug fornito dalla libreria di runtime del linguaggio C e vengono fornite le istruzioni per accedere agli strumenti.  
   
- [Macro per la creazione di report](../debugger/macros-for-reporting.md)  
+ [Macro per la creazione di rapporti](../debugger/macros-for-reporting.md)  
  Vengono fornite informazioni sulle macro **_RPTn** e **_RPTFn**, definite in CRTDBG.H, che sostituiscono l'utilizzo di istruzioni `printf` per il debug.  
   
  [Versioni di debug di funzioni di allocazione heap](../debugger/debug-versions-of-heap-allocation-functions.md)  

@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605960"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Finestra di dialogo \> Opzioni: Editor \> di testo JavaScript/TypeScript Linting
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Finestra di dialogo Opzioni: text editor \> JavaScript/typescript \>
 
-Usare la pagina **Linting** della finestra di dialogo **Opzioni** per impostare le opzioni per l'analisi del codice nell'editor del codice. Per accedere a questa pagina, sulla barra dei menu scegliere**Opzioni** **degli** > strumenti , quindi espandere **Editor** > di testo**JavaScript/TypeScript** > **Linting**.
+Usare la pagina **Linting** della finestra di dialogo **Opzioni** per impostare le opzioni per l'analisi del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**, quindi espandere **Text Editor**  >  **JavaScript/typescript**  >  **Linting**.
 
 ## <a name="eslint-settings"></a>Impostazioni ESLint
 
@@ -41,4 +41,4 @@ Questa opzione consente di copiare il percorso del file di configurazione global
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
+- [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)

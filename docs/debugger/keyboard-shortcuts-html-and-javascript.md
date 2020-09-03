@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731489"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Scelte rapide da tastiera (HTML e JavaScript)
@@ -28,20 +28,20 @@ Tasti di scelta rapida in Visual Studio per il debug di app UWP con HTML e JavaS
 
  Questi tasti di scelta rapida funzionano in tutti gli strumenti per le app UWP con HTML e JavaScript.
 
-|Operazione|Metodo rapido|
+|Action|Tasto di scelta rapida|
 |------------|--------------|
 |Aggiornare l'app di Windows|CTRL+MAIUSC+R|
 |Riavviare l'app di Windows|Ctrl+Maiusc+F5|
-|Arrestare il debug|MAIUSC+F5|
+|Arrestare l'esecuzione del debug|MAIUSC+F5|
 |Aprire l'hub Prestazioni e diagnostica|ALT+F2|
 
 ## <a name="javascript-console-shortcuts"></a>Tasti di scelta rapida della Console JavaScript
 
  Usa questi tasti di scelta rapida nella finestra Console JavaScript.
 
-|Operazione|Metodo rapido|
+|Action|Tasto di scelta rapida|
 |------------|--------------|
-|Eseguire un comando della console|INVIO|
+|Eseguire un comando della console|Immettere|
 |Chiudere la console|ESC|
 |Passare dalla modalità a riga singola a quella multiriga e viceversa|CTRL+ALT+M|
 
@@ -49,7 +49,7 @@ Tasti di scelta rapida in Visual Studio per il debug di app UWP con HTML e JavaS
 
  Usa questi tasti di scelta rapida in DOM Explorer.
 
-|Operazione|Metodo rapido|
+|Action|Tasto di scelta rapida|
 |------------|--------------|
 |Seleziona elemento|Ctrl+B|
 |Visualizzare/nascondere le caselle evidenziate della pagina Web quando si usa **Seleziona elemento**|CTRL+MAIUSC+I|
@@ -59,6 +59,6 @@ Tasti di scelta rapida in Visual Studio per il debug di app UWP con HTML e JavaS
 |Ridurre il valore CSS selezionato di 1|Freccia GIÙ|
 
 ## <a name="see-also"></a>Vedere anche
-- [Comandi della console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

@@ -16,10 +16,10 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9dc5ad44a73f517b91562209abfab8b0b3e8d4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660526"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
@@ -27,7 +27,7 @@ ms.locfileid: "72660526"
 
 Tramite il framework unit test Microsoft per il codice gestito, è possibile impostare un metodo di unit test per recuperare i valori usati nel metodo di test da un'origine dati. Il metodo viene eseguito in successione per ogni riga nell'origine dati, rendendo più semplice testare una un'ampia varietà di input con un singolo metodo.
 
- Di seguito sono elencate le diverse sezioni di questo argomento:
+ In questo argomento sono incluse le sezioni seguenti:
 
 - [Metodo sottoposto a test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)
 
@@ -53,7 +53,7 @@ Tramite il framework unit test Microsoft per il codice gestito, è possibile imp
 
 4. Usare la proprietà <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> dell'indicizzatore per recuperare i valori da usare in un test.
 
-## <a name="BKMK_The_method_under_test"></a> Metodo sottoposto a test
+## <a name="the-method-under-test"></a><a name="BKMK_The_method_under_test"></a> Metodo sottoposto a test
  Come esempio, si supponga di avere creato:
 
 1. Una soluzione denominata `MyBank` che accetta ed elabora transazioni per diversi tipi di account.
@@ -80,16 +80,16 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="BKMK_Creating_a_data_source"></a> Creazione di un'origine dati
+## <a name="creating-a-data-source"></a><a name="BKMK_Creating_a_data_source"></a> Creazione di un'origine dati
  Per testare il metodo `AddIntegers`, creiamo un'origine dati che specifica un intervallo di valori per i parametri e la somma restituita prevista. Nel nostro esempio, creiamo un database Sql Compact denominato `MathsData` e una tabella denominata `AddIntegersData` che contiene i nomi di colonna e i valori seguenti.
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-----------------|------------------|---------|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|
 
-## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Aggiunta di un oggetto TestContext alla classe di test
+## <a name="adding-a-testcontext-to-the-test-class"></a><a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Aggiunta di un TestContext alla classe di test
  Il framework unit test crea un oggetto `TestContext` per archiviare le informazioni sull'origine dati per un test basato sui dati. Il framework imposta quindi l'oggetto come valore della proprietà `TestContext` creata.
 
 ```
@@ -105,7 +105,7 @@ public TestContext TestContext
 
  Nel metodo di test si accede ai dati tramite la proprietà dell'indicizzatore `DataRow` di `TestContext`.
 
-## <a name="BKMK_Writing_the_test_method"></a> Scrittura del metodo di test
+## <a name="writing-the-test-method"></a><a name="BKMK_Writing_the_test_method"></a> Scrittura del metodo di test
  Il metodo di test per `AddIntegers` è piuttosto semplice. Per ogni riga nell'origine dati, chiamiamo `AddIntegers` con i valori della colonna **FirstNumber** e **SecondNumber** come parametri e verifichiamo il valore restituito rispetto al valore della colonna **Sum**:
 
 ```
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
 
  Si noti che il metodo `Assert` include un messaggio che visualizza i valori `x` e `y` di un'iterazione non riuscita. Per impostazione predefinita, i valori dichiarati `expected` e `actual` sono già inclusi nei dettagli di un test non riuscito.
 
-### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Specificazione di DataSourceAttribute
+### <a name="specifying-the-datasourceattribute"></a><a name="BKMK_Specifying_the_DataSourceAttribute"></a> Specificazione di DataSourceAttribute
  L'attributo `DataSource` specifica la stringa di connessione per l'origine dati e il nome della tabella usata nel metodo di test. Le informazioni esatte nella stringa di connessione variano a seconda del tipo di origine dati in uso. In questo esempio è stato usato un database SqlServerCe.
 
 ```
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]
 ```
 
-### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Uso di TestContext. DataRow per l'accesso ai dati
+### <a name="using-testcontextdatarow-to-access-the-data"></a><a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Uso di TestContext. DataRow per accedere ai dati
  Per accedere ai dati nella tabella `AddIntegersData`, usare l'indicizzatore `TestContext.DataRow`. `DataRow` è un oggetto <xref:System.Data.DataRow>, pertanto i valori delle colonne vengono recuperati in base all'indice o ai nomi delle colonne. Poiché i valori vengono restituiti come oggetti, è necessario convertirli nel tipo appropriato:
 
 ```
@@ -173,8 +173,8 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ```
 
-## <a name="BKMK_Running_the_test_and_viewing_results"></a> Esecuzione del test e visualizzazione dei risultati
- Al termine della scrittura di un metodo di test, compilare il progetto di test. Il metodo di test viene visualizzato nella finestra Esplora test, nel gruppo **Test non eseguiti**. Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi **Test non superati**, **Test superati** e **Test non eseguiti**. È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire.
+## <a name="running-the-test-and-viewing-results"></a><a name="BKMK_Running_the_test_and_viewing_results"></a> Esecuzione del test e visualizzazione dei risultati
+ Al termine della scrittura di un metodo di test, compilare il progetto di test. Il metodo di test viene visualizzato nella finestra Esplora test, nel gruppo **Test non eseguiti**. Quando si eseguono, si scrivono e si rieseguono i test, Esplora test visualizza i risultati nei gruppi **Test non superati**, **Test superati** e **Test non eseguiti**. È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire.
 
  La barra dei risultati dei test nella parte superiore della finestra di esplorazione viene animata durante l'esecuzione dei test. Al termine del test, la barra diventa verde se tutti i test sono stati superati oppure rossa se almeno uno dei test ha avuto esito negativo. Il riquadro dei dettagli nella parte inferiore della finestra Esplora test mostra un riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore.
 

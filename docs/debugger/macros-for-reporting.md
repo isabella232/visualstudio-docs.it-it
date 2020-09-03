@@ -23,14 +23,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731393"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
-Per il debug, è possibile usare le macro **_RPTn** e **_RPTFn** , definite in CRTDBG. H, per sostituire l'uso di istruzioni `printf`. Non è necessario inserirli nel **#ifdef**s, perché scompaiono automaticamente nella build di rilascio quando _ **debug** non è definito.
+Per il debug, è possibile usare le macro **_RPTn** e **_RPTFn** , definite in CRTDBG. H, per sostituire l'utilizzo delle `printf` istruzioni. Non è necessario inserirli nel **#ifdef**s, perché scompaiono automaticamente nella build di rilascio quando **_DEBUG** non è definito.
 
 |Macro|Descrizione|
 |-----------|-----------------|

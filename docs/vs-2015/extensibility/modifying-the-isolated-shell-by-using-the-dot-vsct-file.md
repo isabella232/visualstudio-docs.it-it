@@ -1,5 +1,5 @@
 ---
-title: Modifica della Shell isolata tramite il. File Vsct | Microsoft Docs
+title: Modifica della shell isolata tramite. File vsct | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c106a04e809e772ac3b8a77192fb2f101161e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194227"
 ---
-# <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modifica della Shell isolata tramite il. File Vsct
+# <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modifica della shell isolata tramite il file con estensione vsct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il progetto dell'interfaccia utente per un progetto di shell isolata di Visual Studio contiene un file vsct che consente di specificare quali gruppi di applicazioni e i singoli comandi sono disponibili nell'applicazione. Di seguito è riportato un estratto da un file con estensione vsct non modificato.  
+Il progetto dell'interfaccia utente per un progetto di Visual Studio Isolated Shell contiene un file con estensione vsct che consente di specificare quali gruppi di applicazioni e singoli comandi sono disponibili nell'applicazione. Di seguito è riportato un Estratto da un file con estensione vsct non modificato.  
   
 ```  
 <!-- <Define name="No_WindowListCommand"/> -->  
@@ -29,9 +29,9 @@ Il progetto dell'interfaccia utente per un progetto di shell isolata di Visual S
 <!-- <Define name="No_PanePrevPaneCommand"/> -->  
 ```  
   
- Per impostazione predefinita, la maggior parte dei comandi e i gruppi di comandi sono inclusi. Per escludere un comando o un gruppo di comando, è sufficiente rimuovere il commento tale comando o un gruppo.  
+ Per impostazione predefinita, sono inclusi la maggior parte dei comandi e dei gruppi di comandi. Per escludere un comando o un gruppo di comandi, è sufficiente rimuovere il commento dal comando o dal gruppo.  
   
- Ad esempio, per rimuovere il riquadro successivo e precedente comandi riquadro, rimuovere il commento il `No_PaneNextPaneCommand` e `No_PanePrevPaneCommand` voci:  
+ Ad esempio, per rimuovere i comandi riquadro successivo e riquadro precedente, rimuovere il commento `No_PaneNextPaneCommand` dalle `No_PanePrevPaneCommand` voci e:  
   
 ```  
   
@@ -39,22 +39,22 @@ Il progetto dell'interfaccia utente per un progetto di shell isolata di Visual S
   
 ```  
   
- Per una più dettagliate esempio queste personalizzazioni, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Per un esempio più dettagliato di queste personalizzazioni, vedere [procedura dettagliata: creazione di un'applicazione shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="referenced-files"></a>File di riferimento  
  Il file con estensione vsct predefinito per un'applicazione fa riferimento ai file seguenti. Questi file si trovano nella sottodirectory \VisualStudioIntegration\Common\Inc\ della directory di installazione di Visual Studio SDK.  
   
 |File|Descrizione|  
 |----------|-----------------|  
-|wbids.h|Identità dell'interfaccia utente per il pacchetto Web Sfoglia.|  
-|AppIDCmdUsed.vsct|Tabella di comandi per gli elementi dell'interfaccia utente di Visual Studio primari.|  
-|EmulatorCmdUsed.vsct|Tabella di comando per Emacs e Brief elementi dell'interfaccia utente di emulazione dell'editor.|  
-|Vsdebugguids.h|Definisce i GUID dei comandi, pagina delle opzioni e altre funzionalità del debugger di Visual Studio.|  
-|VsDbgCmdUsed.vsct|Tabella di comando per il debugger.|  
+|wbids. h|Identità dell'interfaccia utente per il pacchetto Web browse.|  
+|AppIDCmdUsed. vsct|Tabella dei comandi per gli elementi primari dell'interfaccia utente di Visual Studio.|  
+|EmulatorCmdUsed. vsct|Tabella dei comandi per gli elementi dell'interfaccia utente dell'emulazione di Emacs e Brief Editor.|  
+|Vsdebugguids. h|Definisce i GUID della pagina comandi, opzioni e altre funzionalità del debugger di Visual Studio.|  
+|VsDbgCmdUsed. vsct|Tabella dei comandi per il debugger.|  
   
- Il file AppIDCmdUsed.vsct include gli elementi dell'interfaccia utente di Visual Studio in base ai simboli definiti nel file con estensione vsct dell'applicazione.  
+ Il file AppIDCmdUsed. vsct include gli elementi dell'interfaccia utente di Visual Studio in base ai simboli definiti nel file Application. vsct.  
   
- Per altre informazioni, vedere [Progettazione tabella comandi XML (. File Vsct)](../extensibility/internals/designing-xml-command-table-dot-vsct-files.md) e il [riferimento allo Schema XML VSCT](../extensibility/vsct-xml-schema-reference.md).  
+ Per ulteriori informazioni, vedere [progettazione della tabella dei comandi XML (. Vsct)](../extensibility/internals/designing-xml-command-table-dot-vsct-files.md) e [vsct XML Schema Reference](../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)

@@ -11,10 +11,10 @@ caps.latest.revision: 41
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660679"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedure consigliate per i test codificati dell'interfaccia utente
@@ -26,14 +26,14 @@ Questo argomento descrive le procedure consigliate da seguire quando si sviluppa
 
 - Visual Studio Enterprise
 
-## <a name="best-practices"></a>Suggerimenti
+## <a name="best-practices"></a>Procedure consigliate
  Usare le linee guida seguenti per creare un test codificato dell'interfaccia utente flessibile.
 
 - Quando è possibile, usare sempre il **Generatore di test codificati dell'interfaccia utente**.
 
 - Non modificare direttamente il file `UIMap.designer.cs`. Così facendo, le modifiche apportate al file verrebbero sovrascritte.
 
-- Creare il test come sequenza di metodi registrati. Per altre informazioni sulla registrazione di un metodo, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
+- Creare il test come sequenza di metodi registrati. Per ulteriori informazioni su come registrare un metodo, vedere [creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
 - Ogni metodo registrato dovrebbe agire su una sola pagina, form o finestra di dialogo. Creare un nuovo metodo di test per ogni nuova pagina, form o finestra di dialogo.
 
@@ -45,11 +45,11 @@ Questo argomento descrive le procedure consigliate da seguire quando si sviluppa
 
 - Se l'interfaccia utente viene modificata, registrare nuovamente i metodi di test o i metodi di asserzione oppure registrare nuovamente le sezioni interessate di un metodo di test esistente.
 
-- Creare un file [UIMap](/previous-versions/dd580454(v=vs.140)) separato per ogni modulo nell'applicazione sottoposta a test. Per altre informazioni, vedere [Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Creare un file [UIMap](/previous-versions/dd580454(v=vs.140)) separato per ogni modulo nell'applicazione sottoposta a test. Per altre informazioni, vedere [test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - Nell'applicazione sottoposta a test usare nomi significativi quando si creano controlli dell'interfaccia utente. In questo modo i nomi dei controlli generati automaticamente risulteranno più significativi e facilmente utilizzabili.
 
-- Se si stanno creando asserzioni scrivendo codice con l'API, creare un metodo per ogni asserzione nella parte della classe [UIMap](/previous-versions/dd580454(v=vs.140)) presente nel file di `UIMap.cs`. Chiamare questo metodo dal metodo di test per eseguire l'asserzione.
+- Se si stanno creando asserzioni scrivendo codice con l'API, creare un metodo per ogni asserzione nella parte della classe [UIMap](/previous-versions/dd580454(v=vs.140)) presente nel `UIMap.cs` file. Chiamare questo metodo dal metodo di test per eseguire l'asserzione.
 
 - Se si sta scrivendo codice direttamente con l'API, usare il più possibile nel codice le proprietà e i metodi nelle classi generate nel file `UIMap.Designer.cs`. Queste classi renderanno il lavoro più semplice e più affidabile e consentiranno di aumentare la produttività.
 
@@ -70,7 +70,7 @@ Questo argomento descrive le procedure consigliate da seguire quando si sviluppa
 
   - Aggiungere una nuova asserzione trascinando il pulsante del selettore di precisione sul controllo dell'interfaccia utente, aprire la mappa dell'interfaccia utente e aggiungere la nuova asserzione.
 
-  Per altre informazioni su come registrare i test codificati dell'interfaccia utente, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).
+  Per altre informazioni su come registrare i test codificati dell'interfaccia utente, vedere [usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).
 
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Cosa fare se è necessario completare un processo in background prima che il test possa continuare
  Potrebbe essere necessario attendere fino al termine di un processo prima di poter procedere con la successiva azione dell'interfaccia utente. A tale scopo, è possibile usare <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> per attendere la continuazione del test, come nell'esempio seguente.

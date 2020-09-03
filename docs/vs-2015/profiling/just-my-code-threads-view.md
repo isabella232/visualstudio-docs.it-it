@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85126a7816fa583db94bb93659a7d4cbb29078ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154766"
 ---
 # <a name="just-my-code-threads-view"></a>Just My Code (Visualizzazione thread)
@@ -30,5 +30,5 @@ Se si seleziona questa opzione, lo stack di chiamate verrà filtrato per mostrar
  In alcuni casi, selezionando questa opzione la chiamata all'origine del blocco potrebbe risultare esclusa. Se sono necessari i dettagli dello stack di chiamate completo per determinare le cause, deselezionare questa opzione per esporre lo stack di chiamate completo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)   
+ [Visualizzazione thread](../profiling/threads-view-parallel-performance.md)   
  [Percentuale di riduzione del rumore](../profiling/noise-reduction-percentage.md)

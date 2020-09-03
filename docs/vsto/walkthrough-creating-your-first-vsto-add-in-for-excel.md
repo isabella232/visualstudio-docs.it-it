@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Excel'
+title: 'Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Excel'
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,20 +16,20 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69548010"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Excel
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Excel
   Questa procedura dettagliata introduttiva descrive come creare un componente aggiuntivo a livello di applicazione per Microsoft Office Excel. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali cartelle di lavoro siano aperte.
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
- Questa procedura dettagliata illustra le attività seguenti:
+ Vengono illustrate le attività seguenti:
 
 - Creazione di un progetto di componente aggiuntivo VSTO per Excel.
 
@@ -42,7 +42,7 @@ ms.locfileid: "69548010"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -54,7 +54,7 @@ ms.locfileid: "69548010"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
 
 3. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 
@@ -66,12 +66,12 @@ ms.locfileid: "69548010"
 
 7. Fare clic su **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] consente di creare il progetto **FirstExcelAddIn** e di aprire il file di codice ThisAddIn nell'editor.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il progetto **FirstExcelAddIn** e apre il file di codice ThisAddIn nell'editor.
 
 ## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Scrivere codice per aggiungere testo alla cartella di lavoro salvata
  Aggiungere quindi codice al file di codice ThisAddIn. Il nuovo codice usa il modello a oggetti di Excel al fine di inserire testo boilerplate nella prima riga del foglio di lavoro attivo. Il foglio di lavoro attivo è quello aperto quando l'utente salva la cartella di lavoro. Per impostazione predefinita, il file di codice ThisAddIn contiene il seguente codice generato:
 
-- Una definizione parziale della classe `ThisAddIn` . Questa classe fornisce un punto di ingresso per il codice e fornisce l'accesso al modello a oggetti di Excel. Per altre informazioni, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Il resto della classe `ThisAddIn` viene definito in un file di codice nascosto che l'utente non deve modificare.
+- Una definizione parziale della classe `ThisAddIn` . Questa classe fornisce un punto di ingresso per il codice e fornisce l'accesso al modello a oggetti di Excel. Per altre informazioni, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Il resto della `ThisAddIn` classe viene definito in un file di codice nascosto che non deve essere modificato.
 
 - I gestori eventi `ThisAddIn_Startup` e `ThisAddIn_Shutdown` . Questi gestori eventi vengono chiamati quando Excel carica e scarica il componente aggiuntivo VSTO. Usare questi gestori eventi per inizializzare il componente aggiuntivo VSTO quando viene caricato e per eseguire la pulizia delle risorse usate dal componente aggiuntivo quando viene scaricato. Per altre informazioni, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md).
 
@@ -94,7 +94,7 @@ ms.locfileid: "69548010"
 
 - Il parametro `Wb` del gestore eventi dell'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> . Il `Wb` parametro consiste in un oggetto <xref:Microsoft.Office.Interop.Excel.Workbook> che rappresenta la cartella di lavoro. Per altre informazioni, vedere [Panoramica del modello a oggetti di Excel](../vsto/excel-object-model-overview.md).
 
-## <a name="test-the-project"></a>Verificare il progetto
+## <a name="test-the-project"></a>Testare il progetto
 
 ### <a name="to-test-the-project"></a>Per testare il progetto
 
@@ -106,7 +106,7 @@ ms.locfileid: "69548010"
 
 3. Verificare che il seguente testo venga aggiunto alla cartella di lavoro.
 
-     **Questo testo è stato aggiunto tramite codice.**
+     **This text was added by using code.**
 
 4. Chiudere Excel.
 
@@ -120,20 +120,20 @@ ms.locfileid: "69548010"
 ## <a name="next-steps"></a>Passaggi successivi
  Dopo aver creato un componente aggiuntivo VSTO di base per Excel, è possibile visualizzare altre informazioni su come sviluppare componenti aggiuntivi VSTO in questi argomenti:
 
-- Attività di programmazione generali che è possibile eseguire nei componenti aggiuntivi VSTO: [Componenti aggiuntivi VSTO del programma](../vsto/programming-vsto-add-ins.md).
+- Attività di programmazione generali che è possibile eseguire nei componenti aggiuntivi VSTO: [programmi](../vsto/programming-vsto-add-ins.md)per i componenti aggiuntivi VSTO.
 
-- Attività di programmazione specifiche per i componenti aggiuntivi VSTO di Excel: [Soluzioni Excel](../vsto/excel-solutions.md).
+- Attività di programmazione specifiche per i componenti aggiuntivi VSTO di Excel: [soluzioni Excel](../vsto/excel-solutions.md).
 
 - Uso del modello a oggetti di Excel: [Panoramica del modello a oggetti di Excel](../vsto/excel-object-model-overview.md).
 
-- Personalizzazione dell'interfaccia utente di Excel, ad esempio tramite l'aggiunta di una scheda personalizzata alla barra multifunzione o la creazione di un riquadro attività personalizzato: [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md).
+- Personalizzazione dell'interfaccia utente di Excel, ad esempio tramite l'aggiunta di una scheda personalizzata alla barra multifunzione o la creazione di un riquadro attività personalizzato: [personalizzazione dell'interfaccia](../vsto/office-ui-customization.md)utente di Office.
 
-- Compilazione e debug di componenti aggiuntivi VSTO per Excel: [Compila soluzioni Office](../vsto/building-office-solutions.md).
+- Compilazione e debug di componenti aggiuntivi VSTO per Excel: [compilare soluzioni Office](../vsto/building-office-solutions.md).
 
-- Distribuzione dei componenti aggiuntivi VSTO per Excel: [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
+- Distribuzione dei componenti aggiuntivi VSTO per Excel: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Panoramica &#40;dello sviluppo di soluzioni Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluzioni Excel](../vsto/excel-solutions.md)
 - [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
 - [Panoramica del modello a oggetti di Excel](../vsto/excel-object-model-overview.md)

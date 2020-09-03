@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 960e9469290bca42abd252d497c2ce72e62e41a4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531534"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagrammi di attività UML: riferimento
@@ -56,7 +56,7 @@ Un *diagramma di attività* Mostra un processo aziendale o un processo software 
 
  ![Flusso di controllo semplice](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")
 
-|**Forma**|**Elemento**|**Descrizione e proprietà principali**|
+|**Con forme**|**elemento**|**Descrizione e proprietà principali**|
 |-|-|-|
 |1|**Azione**|Passaggio dell'attività in cui gli utenti o il software esegue un'attività.<br /><br /> L'azione può essere avviata quando un token è arrivato a tutti i relativi flussi in ingresso. Al termine, i token vengono inviati a tutti i flussi in uscita.<br /><br /> -   **Body** : specifica l'azione in dettaglio.<br />-   **Lingua** : linguaggio dell'espressione nel corpo.<br />-   **Postcondizioni locali** : vincoli che devono essere soddisfatti al termine dell'esecuzione. L'obiettivo raggiunto dall'azione.<br />-   **Precondizioni locali** : vincoli che devono essere soddisfatti prima dell'inizio dell'esecuzione.|
 |2|**Flusso di controllo**|Connettore che mostra il flusso del controllo tra le azioni. Per interpretare il diagramma, si immagini che un token un token passi da un'azione alla successiva.<br /><br /> Per creare un flusso di controllo, usare lo strumento **connettore** .|
@@ -76,21 +76,21 @@ Un *diagramma di attività* Mostra un processo aziendale o un processo software 
 
  ![Diagramma di attività che mostra un flusso simultaneo](../modeling/media/uml-actovconcurrent.png "UML_ActovConcurrent")
 
-|**Forma**|**Elemento**|**Descrizione**|
+|**Con forme**|**elemento**|**Descrizione**|
 |-|-|-|
 |11|**Nodo fork**|Divide un singolo flusso in flussi simultanei. Ogni token in ingresso produce un token su ogni connettore in uscita.|
 |12|**Nodo join**|Combina i flussi simultanei in un singolo flusso. Quando ogni flusso in ingresso ha un token in attesa, viene prodotto un token sull'output.|
 |13|**Azione invia segnale**|Azione che invia un messaggio o un segnale a un'altra attività o a un thread simultaneo nella stessa attività. Il tipo e il contenuto del messaggio sono dati dal titolo dell'azione o vengono specificati nei commenti aggiuntivi.<br /><br /> L'azione può inviare dati nel segnale che può essere passato all'azione in un flusso oggetto o un pin di input (16).|
 |14|**Azione accetta evento**|Azione che attende un messaggio o un segnale prima di poter continuare. Il tipo del messaggio che può essere ricevuto dall'azione è dato dal titolo dell'azione o specificato nei commenti aggiuntivi.<br /><br /> Se l'azione non ha un flusso di controllo in ingresso, produce un token quando riceve un messaggio.<br /><br /> L'azione può ricevere dati nel segnale che può essere passato su un flusso oggetto o un pin di input (17).<br /><br /> -   **IsUnmarshall** : Se true, possono essere presenti diversi pin di output tipizzati e viene eseguito il marshalling dei dati su di essi. Se false, tutti i dati vengono visualizzati in un unico pin.|
 
-### <a name="data-flows"></a><a name="DataFlow"></a>Flussi di dati
+### <a name="data-flows"></a><a name="DataFlow"></a> Flussi di dati
  È possibile descrivere il flusso di dati da un'azione a un altra. Per altre informazioni sugli elementi usati in questa sezione, vedere la sezione relativa alla creazione di flussi di dati dell'argomento Linee guida per la creazione di un diagramma di attività.
 
  ![Diagramma di attività che mostra un flusso di dati](../modeling/media/uml-actovdata.png "UML_ActOvData")
 
-|**Forma**|**Elemento**|**Descrizione**|
+|**Con forme**|**elemento**|**Descrizione**|
 |-|-|-|
-|15|**Nodo oggetto**|Rappresenta i dati che passano lungo un flusso.<br /><br /> -   **Ordinamento** -come vengono archiviati più token.<br />-   **Selection** : richiama un processo, che può essere definito in un altro diagramma, che filtra i dati.<br />-   **Limite superiore** -0 indica che i dati devono passare direttamente lungo il flusso; \*indica che i dati possono essere archiviati nel flusso.<br />-   **Type** : tipo di oggetti archiviati e trasmessi.|
+|15|**Nodo oggetto**|Rappresenta i dati che passano lungo un flusso.<br /><br /> -   **Ordinamento** -come vengono archiviati più token.<br />-   **Selection** : richiama un processo, che può essere definito in un altro diagramma, che filtra i dati.<br />-   **Limite superiore** -0 indica che i dati devono passare direttamente lungo il flusso; \* indica che i dati possono essere archiviati nel flusso.<br />-   **Type** : tipo di oggetti archiviati e trasmessi.|
 |16|**Pin di input**|Rappresenta i dati che può ricevere un'azione quando viene eseguita.<br /><br /> -   **Type** : tipo di oggetti trasmessi.|
 |17|**Pin di output**|Rappresenta i dati che un'azione produce quando viene eseguita.<br /><br /> -   **Type** : tipo di oggetti trasmessi.|
 |18|**Nodo parametro attività**|Nodo oggetto tramite il quale i dati possono essere ricevuti o prodotti dall'attività.<br /><br /> Usato quando l'attività rappresentata dal diagramma viene chiamata da un'altra attività o quando il diagramma descrive un'operazione o una funzione.<br /><br /> -   **Type** : tipo di oggetti trasmessi.|
