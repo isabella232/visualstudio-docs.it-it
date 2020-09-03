@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545730"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi delle dipendenze dal codice
@@ -29,7 +29,7 @@ Un diagramma di dipendenza consente di organizzare gli elementi della soluzione 
 
 [Video: convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
-## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a>Creazione di un diagramma delle dipendenze
+## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a> Creazione di un diagramma delle dipendenze
 
 Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione disponga di un progetto di modello.
 
@@ -78,7 +78,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione disp
 
 ![Diagramma delle dipendenze generato da una mappa codici](media/dependency-validation-01.png)
 
-## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a>Creare livelli da artefatti
+## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a> Creare livelli da artefatti
  È possibile creare livelli da elementi presenti in una soluzione di Visual Studio, ad esempio progetti, file di codice, spazi dei nomi, classi e metodi. In questo modo vengono creati automaticamente collegamenti tra livelli ed elementi, che vengono inclusi nel processo di convalida dei livelli.
 
  È inoltre possibile collegare livelli a elementi che non supportano la convalida, ad esempio documenti Word o presentazioni PowerPoint, in modo da associare un livello con specifiche o piani. È anche possibile collegare livelli a file di progetti condivisi tra più applicazioni, ma il processo di convalida non includerà tali livelli, che vengano visualizzati con nomi generici come "Livello 1" e "Livello 2".
@@ -107,7 +107,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione disp
 
 - Se un livello contiene altri livelli collegati a elementi, anche il livello contenitore sarà collegato a tali elementi nonostante il numero raffigurato sul livello contenitore non includa quegli elementi.
 
-## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a>Gestire i collegamenti tra livelli ed elementi
+## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a> Gestire i collegamenti tra livelli ed elementi
 
 1. Nel diagramma delle dipendenze aprire il menu di scelta rapida per il livello, quindi scegliere **Visualizza collegamenti**.
 
@@ -123,7 +123,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione disp
 |Creare un nuovo livello da un collegamento dell'elemento esistente|Trascinare il collegamento dell'artefatto in un'area vuota del diagramma.|
 |Verificare che un elemento collegato supporti la convalida rispetto al diagramma delle dipendenze.|Esaminare la colonna **Supports Validation** per il collegamento dell'artefatto.|
 
-## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a>Decodificare le dipendenze esistenti
+## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> Decodificare le dipendenze esistenti
  È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. È possibile decompilare dipendenze esistenti per elementi collegati a livelli nel diagramma.
 
 > [!NOTE]
@@ -133,7 +133,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione disp
 
   In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È possibile modificare queste dipendenze per allinearle con la progettazione desiderata.
 
-## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a>Modificare i livelli e le dipendenze per visualizzare la progettazione desiderata
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Modificare i livelli e le dipendenze per visualizzare la progettazione desiderata
  Per descrivere le modifiche che si intende apportare al sistema o all'architettura desiderata, modificare il diagramma delle dipendenze:
 
 |**To**|**Eseguire questi passaggi**|
@@ -144,10 +144,10 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione disp
 |Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi nella proprietà **Forbidden Namespaces** del livello. Utilizzare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 |Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi nella proprietà **obbligatoria Namespaces** del livello. Utilizzare un punto e virgola (**;**) per separare gli spazi dei nomi.|
 
-## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a>Modificare la modalità di visualizzazione degli elementi nel diagramma
+## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a> Modificare la modalità di visualizzazione degli elementi nel diagramma
  È possibile modificare la dimensione, la forma, il colore e la posizione dei livelli o il colore delle dipendenze modificandone le proprietà.
 
-## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a>Individuare modelli e dipendenze in una mappa codici
+## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a> Individuare modelli e dipendenze in una mappa codici
  Durante la creazione di diagrammi di dipendenza, è anche possibile creare **mappe codice**. Questi diagrammi consentono di individuare i motivi e le dipendenze durante l'esplorazione del codice. Usare Esplora soluzioni, Visualizzazione classi o Visualizzatore oggetti per esplorare assembly, spazi dei nomi e classi, che spesso corrispondono ai livelli esistenti. Per altre informazioni sulle mappe codice, vedere:
 
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)

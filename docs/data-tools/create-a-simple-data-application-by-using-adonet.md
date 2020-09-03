@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586874"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
-Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile scoprire come interagire con un database dall'interno di un'applicazione semplice Windows Forms "Forms over data" utilizzando Visual C# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi set di dati, LINQ to SQL e Entity Framework, eseguono infine passaggi molto simili a quelli illustrati in questo articolo.
+Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile scoprire come interagire con un database dall'interno di un'applicazione semplice Windows Forms "Forms over data" usando Visual C# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi set di dati, LINQ to SQL e Entity Framework, eseguono infine passaggi molto simili a quelli illustrati in questo articolo.
 
 In questo articolo viene illustrato un modo semplice per estrarre i dati da un database in modo rapido. Se l'applicazione deve modificare i dati in modi non semplici e aggiornare il database, è consigliabile utilizzare Entity Framework e utilizzare data binding per sincronizzare automaticamente i controlli dell'interfaccia utente con le modifiche nei dati sottostanti.
 
@@ -35,7 +35,7 @@ Per creare l'applicazione, è necessario disporre di:
 
 - LocalDB di SQL Server Express. Se non si dispone di SQL Server Express database locale, è possibile installarlo dalla [pagina di download del SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Questo argomento presuppone che si abbia familiarità con le funzionalità di base dell'IDE di Visual Studio e che sia possibile creare una Windows Forms Application, aggiungere moduli al progetto, inserire pulsanti e altri controlli nei moduli, impostare le proprietà dei controlli e scrivere codice per eventi semplici. Se non si ha familiarità con queste attività, è consigliabile completare l'argomento [Introduzione all'oggetto C# visivo e Visual Basic](../ide/quickstart-visual-basic-console.md) prima di iniziare questa procedura dettagliata.
+Questo argomento presuppone che si abbia familiarità con le funzionalità di base dell'IDE di Visual Studio e che sia possibile creare una Windows Forms Application, aggiungere moduli al progetto, inserire pulsanti e altri controlli nei moduli, impostare le proprietà dei controlli e scrivere codice per eventi semplici. Se non si ha familiarità con queste attività, è consigliabile completare l'argomento [Introduzione a Visual C# e Visual Basic](../ide/quickstart-visual-basic-console.md) prima di iniziare questa procedura dettagliata.
 
 ## <a name="set-up-the-sample-database"></a>Impostare il database di esempio
 
@@ -69,7 +69,7 @@ Creare il database di esempio attenendosi alla procedura seguente:
 
 2. Aggiungere due form Windows al progetto in modo da disporre di tre form e assegnare i nomi seguenti:
 
-   - **Navigazione**
+   - **Spostamento**
 
    - **NewCustomer**
 
@@ -86,9 +86,9 @@ Creare il database di esempio attenendosi alla procedura seguente:
 
 |Controlli per il form Navigazione|Proprietà|
 | - |----------------|
-|Button|Name = btnGoToAdd|
-|Button|Name = btnGoToFillOrCancel|
-|Button|Name = btnExit|
+|Pulsante|Name = btnGoToAdd|
+|Pulsante|Name = btnGoToFillOrCancel|
+|Pulsante|Name = btnExit|
 
 **Form NewCustomer**
 
@@ -98,12 +98,12 @@ Creare il database di esempio attenendosi alla procedura seguente:
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
-|Button|Name = btnCreateAccount|
+|Pulsante|Name = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|
 |DateTimePicker|Format = Short<br /><br /> Nome = dtpOrderDate|
-|Button|Name = btnPlaceOrder|
-|Button|Name = btnAddAnotherAccount|
-|Button|Name = btnAddFinish|
+|Pulsante|Name = btnPlaceOrder|
+|Pulsante|Name = btnAddAnotherAccount|
+|Pulsante|Name = btnAddFinish|
 
 **Form FillOrCancel**
 
@@ -112,24 +112,24 @@ Creare il database di esempio attenendosi alla procedura seguente:
 |Controlli del form FillOrCancel|Proprietà|
 | - |----------------|
 |TextBox|Name = txtOrderID|
-|Button|Name = btnFindByOrderID|
+|Pulsante|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|
-|Button|Name = btnCancelOrder|
-|Button|Name = btnFillOrder|
-|Button|Name = btnFinishUpdates|
+|Pulsante|Name = btnCancelOrder|
+|Pulsante|Name = btnFillOrder|
+|Pulsante|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Archiviare la stringa di connessione
-Quando l'applicazione tenta di aprire una connessione al database, l'applicazione deve disporre dell'accesso alla stringa di connessione. Per evitare di immettere manualmente la stringa in ogni form, archiviare la stringa nel file *app. config* nel progetto e creare un metodo che restituisca la stringa quando il metodo viene chiamato da qualsiasi form nell'applicazione.
+Quando l'applicazione tenta di aprire una connessione al database, l'applicazione deve disporre dell'accesso alla stringa di connessione. Per evitare di immettere manualmente la stringa in ogni form, archiviare la stringa nel file *App.config* nel progetto e creare un metodo che restituisca la stringa quando il metodo viene chiamato da qualsiasi form nell'applicazione.
 
-È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **vendite** in **Esplora server** e scegliendo **proprietà**. Individuare la proprietà **ConnectionString** , quindi premere **CTRL**+**a**, **CTRL**+**C** per selezionare e copiare la stringa negli Appunti.
+È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **vendite** in **Esplora server** e scegliendo **proprietà**. Individuare la proprietà **ConnectionString** , quindi premere **CTRL** + **a**, **CTRL** + **C** per selezionare e copiare la stringa negli Appunti.
 
-1. C#Se si usa, in **Esplora soluzioni**espandere il nodo **proprietà** sotto il progetto, quindi aprire il file **Settings. Settings** .
+1. Se si usa C#, in **Esplora soluzioni**espandere il nodo **Proprietà** sotto il progetto, quindi aprire il file **Settings. Settings** .
     Se si usa Visual Basic, in **Esplora soluzioni**fare clic su **Mostra tutti i file**, espandere il nodo **progetto** e quindi aprire il file **Settings. Settings** .
 
-2. Nella colonna **nome** immettere `connString`.
+2. Nella colonna **nome** immettere `connString` .
 
-3. Nell'elenco **tipo** selezionare **(stringa di connessione)** .
+3. Nell'elenco **tipo** selezionare **(stringa di connessione)**.
 
 4. Nell'elenco **ambito** selezionare **applicazione**.
 
@@ -175,7 +175,7 @@ Creare un gestore eventi Click vuoto per ogni pulsante nel form NewCustomer face
 
 Per completare la logica del modulo NewCustomer, attenersi alla seguente procedura.
 
-1. Portare lo spazio dei nomi `System.Data.SqlClient` nell'ambito in modo da non dover qualificare completamente i nomi dei relativi membri.
+1. Portare lo `System.Data.SqlClient` spazio dei nomi nell'ambito in modo da non dover qualificare completamente i nomi dei relativi membri.
 
      ```csharp
      using System.Data.SqlClient;
@@ -229,10 +229,10 @@ Per completare la logica del modulo FillOrCancel, attenersi alla seguente proced
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>Eseguire il test dell'applicazione
+## <a name="test-your-application"></a>Testare l'applicazione
 
 Premere il tasto **F5** per compilare e testare l'applicazione dopo aver inserito il codice in ogni gestore dell'evento Click e quindi dopo aver completato la scrittura del codice.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

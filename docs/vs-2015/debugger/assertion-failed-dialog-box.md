@@ -1,5 +1,5 @@
 ---
-title: Asserzione non riuscita nella finestra di dialogo | Microsoft Docs
+title: Finestra di dialogo asserzione non riuscita | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d665f51f2ec5d825dbac1533c82e3d15bf419ff2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161813"
 ---
 # <a name="assertion-failed-dialog-box"></a>Asserzione non riuscita (finestra di dialogo)
@@ -33,11 +33,11 @@ ms.locfileid: "68161813"
 
 Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia valore True in un dato punto del programma. Se questa condizione non restituisce True, l'asserzione ha esito negativo, l'esecuzione del programma viene interrotta e viene visualizzata questa finestra di dialogo.  
   
-|Fare clic su|A|  
+|Fare clic su|Per|  
 |-----------|--------|  
-|Retry|Effettuare il debug dell'asserzione o visualizzare la Guida relativa alle asserzioni.|  
+|Riprova|Effettuare il debug dell'asserzione o visualizzare la Guida relativa alle asserzioni.|  
 |Ignora|Ignorare l'asserzione e continuare l'esecuzione del programma.|  
-|Abort|Interrompere l'esecuzione del programma e terminare la sessione di debug.|  
+|Interruzione|Interrompere l'esecuzione del programma e terminare la sessione di debug.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Asserzioni C/C++](../debugger/c-cpp-assertions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetICorDebugValue | Microsoft Docs
+title: 'IDebugObject2:: GetICorDebugValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6fdf426058390aef2a0c8abf2590123572bbc3b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194599"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
@@ -40,13 +40,13 @@ int GetICorDebugValue(
   
 #### <a name="parameters"></a>Parametri  
  `ppUnk`  
- [out] `IUnknown` interfaccia che rappresenta l'alias. Questa interfaccia è possibile eseguire query per il `ICorDebugValue` interfaccia.  
+ [out] `IUnknown` interfaccia che rappresenta l'alias. È possibile eseguire query su questa interfaccia per l' `ICorDebugValue` interfaccia.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Il `ICorDebugValue` oggetto è un'interfaccia di Common Language Runtime che rappresenta un valore.  
+## <a name="remarks"></a>Osservazioni  
+ L' `ICorDebugValue` oggetto è un'interfaccia di Common Language Runtime che rappresenta un valore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

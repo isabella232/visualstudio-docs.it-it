@@ -15,10 +15,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275206"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
@@ -52,7 +52,7 @@ Il database di esplorazione del codice non raccoglierà dati per i file non spec
 
 **Disabilita pulizia implicita**
 
-Il database di esplorazione del codice non pulisce i file impliciti a cui non viene più fatto riferimento. Questa opzione impedisce la rimozione dei file impliciti dal database quando non vengono più usati. Ad esempio, se si aggiunge una direttiva `#include` che riconduce mapi.h a uno dei file di origine, mapi.h verrà trovato e indicizzato. Se in seguito si rimuove l'istruzione #include e al file non viene fatto riferimento altrove, le informazioni su di esso verranno infine rimosse a meno che non sia stata scelta questa opzione. Vedere l'opzione **Ripeti analisi intervallo soluzione.** Questa opzione viene ignorata quando si esegue nuovamente l'analisi esplicita della soluzione.
+Il database di esplorazione del codice non pulisce i file impliciti a cui non viene più fatto riferimento. Questa opzione impedisce la rimozione dei file impliciti dal database quando non vengono più usati. Ad esempio, se si aggiunge una direttiva `#include` che riconduce mapi.h a uno dei file di origine, mapi.h verrà trovato e indicizzato. Se in seguito si rimuove l'istruzione #include e al file non viene fatto riferimento altrove, le informazioni su di esso verranno infine rimosse a meno che non sia stata scelta questa opzione. Vedere l'opzione **Ripeti analisi intervallo soluzione** . Questa opzione viene ignorata quando si ripete l'analisi in modo esplicito della soluzione.
 
 **Disabilita cartelle dipendenze esterne**
 
@@ -64,13 +64,13 @@ Consente di ricreare da zero il database di esplorazione del codice la volta suc
 
 **Ripeti analisi intervallo soluzione**
 
-Viene pianificato un processo 'Ripeti analisi soluzione' per l'intervallo specificato. È necessario specificare tra 0 e 5000 minuti. Il valore predefinito è 60 minuti. Mentre viene ripetuta l'analisi della soluzione, i timestamp dei file vengono controllati per stabilire se un file sia stato modificato all'esterno dell'IDE. Le modifiche apportate nell'IDE vengono rilevate automaticamente e i file vengono aggiornati. I file inclusi in modo implicito vengono controllati per determinare se sono ancora tutti referenziati.
+Viene pianificato un processo 'Ripeti analisi soluzione' per l'intervallo specificato. È necessario specificare tra 0 e 5000 minuti. Il valore predefinito è 60 minuti. Mentre viene ripetuta l'analisi della soluzione, i timestamp dei file vengono controllati per stabilire se un file sia stato modificato all'esterno dell'IDE. Le modifiche apportate nell'IDE vengono rilevate automaticamente e i file vengono aggiornati. I file inclusi in modo implicito vengono controllati per determinare se sono sempre presenti riferimenti.
 
 ## <a name="diagnostic-logging"></a>Registrazione diagnostica
 
 Queste opzioni vengono offerte nel caso in cui Microsoft richieda di raccogliere informazioni avanzate per diagnosticare un problema. Le informazioni di registrazione non hanno utilità per gli utenti ed è consigliabile lasciarle disabilitate.
 
-**Abilita registrazione**
+**Abilitare la registrazione**
 
 Consente la registrazione diagnostica nella finestra di output.
 

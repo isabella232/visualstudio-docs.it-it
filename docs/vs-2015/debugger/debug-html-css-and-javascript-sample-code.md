@@ -1,5 +1,5 @@
 ---
-title: Il debug del codice di esempio HTML, CSS e JavaScript | Microsoft Docs
+title: Eseguire il debug del codice di esempio HTML, CSS e JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,21 +15,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161464"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Debug del codice di esempio HTML, CSS e JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "windows_and_phone_content")  
   
- Il codice in questo argomento è il file di esempio per [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.  
+ Il codice in questo argomento è il file di esempio per la [Guida introduttiva: eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Gli errori presenti nella guida introduttiva, in base alla progettazione, vengono corretti in questa versione del codice.  
   
 ## <a name="sample-code"></a>Codice di esempio  
- Il codice HTML seguente viene usato nel tag \<body> della guida introduttiva.  
+ Il codice HTML seguente viene usato nel \<body> tag nella Guida introduttiva.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -105,4 +105,4 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

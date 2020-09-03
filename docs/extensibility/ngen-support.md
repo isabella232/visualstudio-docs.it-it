@@ -1,5 +1,5 @@
 ---
-title: Supporto di Ngen in VSIX v3 Documenti Microsoft
+title: Supporto di NGen in VSIX V3 | Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
@@ -9,42 +9,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cb75b9256ca937106235fa7a7d66d9cec71c9c60
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702406"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Supporto di Ngen in VSIX v3
 
-Con Visual Studio 2017 e il nuovo formato di manifesto di estensione VSIX v3 (versione 3), gli sviluppatori di estensioni possono ora "ngen" i loro assembly in fase di installazione.
+Con Visual Studio 2017 e il nuovo formato manifesto di estensione VSIX V3 (versione 3), gli sviluppatori di estensioni possono ora "NGen" i rispettivi assembly al momento dell'installazione.
 
-Di seguito è riportato un estratto da MSDN che spiega cosa fa "ngen":
+Di seguito è riportato un Estratto di MSDN che spiega cosa fa "NGen":
 
->Il generatore di immagini native (*Ngen.exe*) è uno strumento che consente di migliorare le prestazioni delle applicazioni gestite. *Ngen.exe* crea immagini native, ovvero file contenenti codice computer specifico del processore compilato, e le installa nella cache delle immagini native nel computer locale. Il runtime può usare le immagini native della cache anziché il compilatore Just-In-Time (JIT) per compilare l'assembly originale.
+>Il generatore di immagini native (*Ngen.exe*) è uno strumento che migliora le prestazioni delle applicazioni gestite. *Ngen.exe* crea immagini native, ovvero file contenenti codice macchina compilato specifico del processore, e le installa nella cache delle immagini native nel computer locale. Il runtime può usare le immagini native della cache anziché il compilatore Just-In-Time (JIT) per compilare l'assembly originale.
 >
 >da [Ngen.exe (Generatore di immagini native)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
-Per "ngen" un assembly, il vSIX deve essere installato "per istanza per computer". Questo può essere abilitato selezionando la casella di `extension.vsixmanifest` controllo "tutti gli utenti" nella finestra di progettazione:
+Per "NGen" un assembly, VSIX deve essere installato "per istanza per computer". Questa operazione può essere abilitata selezionando la casella di controllo "tutti gli utenti" nella `extension.vsixmanifest` finestra di progettazione:
 
 ![controllare tutti gli utenti](media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>Come abilitare Ngen
 
-Per abilitare ngen per un assembly, è possibile utilizzare la finestra Proprietà in Visual Studio.To enable ngen for an assembly, you can use the **Properties** window in Visual Studio.
+Per abilitare NGen per un assembly, è possibile usare la finestra **Proprietà** in Visual Studio.
 
-Ci sono 4 proprietà che possono essere impostate:
+Sono disponibili 4 proprietà che è possibile impostare:
 
-1. **Ngen** (Boolean) - Se true, il programma di installazione di Visual Studio "ngen" l'assembly.
-2. **Applicazione Ngen** (stringa): Ngen offre l'opportunità di usare il file *app.config* di un'applicazione per risolvere le dipendenze dell'assembly. Questo valore deve essere impostato su un'applicazione il cui *file app.config* si desidera utilizzare (relativo alla directory di installazione di Visual Studio).
-3. **Architettura Ngen** (enum) - L'architettura per compilare in modo nativo l'assembly. Le opzioni sono: a. NotSpecified b. X86 c. X64 d. Tutti
-4. **Priorità Ngen** (integer compresa tra 1 e 3) - Il livello di priorità Ngen è documentato nei livelli di [priorità Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
+1. **NGen** (booleano): se è true, il programma di installazione di Visual Studio "NGen" l'assembly.
+2. **Applicazione NGen** (stringa): NGen consente di usare un file di *app.config* dell'applicazione per risolvere le dipendenze degli assembly. Questo valore deve essere impostato su un'applicazione di cui si desidera utilizzare *app.config* (rispetto alla directory di installazione di Visual Studio).
+3. **Architettura NGen** (enum): l'architettura per compilare in modo nativo l'assembly. Le opzioni sono: a. NotSpecified b. X86 c. X64 d. Tutti
+4. **Priorità NGen** (numero intero compreso tra 1 e 3): il livello di priorità di NGen è documentato a [Ngen.exe livelli di priorità](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
-Ecco uno sguardo alla finestra **Proprietà** in azione:
+Di seguito è riportato un aspetto della finestra **Proprietà** in azione:
 
-![ngen nelle proprietà](media/ngen-in-properties.png)
+![Ngen nelle proprietà](media/ngen-in-properties.png)
 
-In questo modo verranno aggiunti metadati al riferimento al progetto all'interno del file *con estensione csproj* del progetto VSIX:
+In questo modo, i metadati vengono aggiunti al riferimento del progetto all'interno del file con *estensione csproj* del progetto VSIX:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -62,4 +62,4 @@ In questo modo verranno aggiunti metadati al riferimento al progetto all'interno
 
 ## <a name="extra-information"></a>Informazioni aggiuntive
 
-Le modifiche apportate alla finestra di progettazione delle proprietà si applicano a più riferimenti al progetto; è possibile impostare i metadati Ngen per gli elementi all'interno del progetto (utilizzando gli stessi metodi descritti in precedenza) purché gli elementi siano assembly .NET.
+Le modifiche di progettazione proprietà si applicano solo a riferimenti a progetti. è possibile impostare anche i metadati NGen per gli elementi all'interno del progetto (usando gli stessi metodi descritti in precedenza), purché gli elementi siano assembly .NET.

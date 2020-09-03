@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dfaf19e358d96b7737b06880d6fa4581b5c54f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659378"
 ---
 # <a name="validate-your-uml-model"></a>Eseguire la convalida di un modello UML
@@ -58,11 +58,11 @@ Alcuni dei modelli UML che è possibile creare in Visual Studio potrebbero esser
 
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Per disabilitare o disinstallare un'estensione di Visual Studio
 
-1. Scegliere **estensioni e aggiornamenti**dal menu **strumenti** di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+1. Dal menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Strumenti** scegliere **Estensioni e aggiornamenti**.
 
 2. Insieme all'estensione, fare clic su **Disabilita** per disabilitare temporaneamente l'estensione. È possibile riabilitarlo in un secondo momento tornando alla finestra **estensioni e aggiornamenti** .
 
-     \- oppure -
+     \- - oppure -
 
      Fare clic su **Disinstalla** per rimuovere l'estensione.
 

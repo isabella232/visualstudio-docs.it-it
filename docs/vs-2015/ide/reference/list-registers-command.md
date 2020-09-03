@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659506"
 ---
 # <a name="list-registers-command"></a>Comando Elenca registri
@@ -35,8 +35,8 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]
 ```
 
-## <a name="switches"></a>Opzioni
- /Display [{`register`&#124; `registerGroup`}...] Consente di visualizzare i valori del `register` o `registerGroup` specificati. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Esempio:
+## <a name="switches"></a>Commutatori
+ /Display [{ `register`&#124;`registerGroup` }...] Visualizza i valori dell'oggetto `register` o specificato `registerGroup` . Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Ad esempio:
 
  `Debug.ListRegisters /Display eax`
 
@@ -46,15 +46,15 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  /List Visualizza tutti i gruppi di registrazione nell'elenco.
 
- /Watch [{`register`&#124; `registerGroup`}...] Aggiunge uno o più valori `register` o `registerGroup` all'elenco.
+ /Watch [{ `register`&#124;`registerGroup` }...] Aggiunge uno o più `register` `registerGroup` valori o all'elenco.
 
- /Unwatch [{`register`&#124; `registerGroup`}...] Rimuove uno o più valori `register` o `registerGroup` dall'elenco.
+ /Unwatch [{ `register`&#124;`registerGroup` }...] Rimuove uno o più `register` `registerGroup` valori o dall'elenco.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  L'alias `r` può essere usato al posto di `Debug.ListRegisters`.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene usato l'alias di `Debug.ListRegisters` `r` per visualizzare i valori del gruppo di registri `Flags`.
+ In questo esempio viene usato l'alias di `Debug.ListRegisters``r` per visualizzare i valori del gruppo di registri `Flags`.
 
 ```
 r /Display Flags

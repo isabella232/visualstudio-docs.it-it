@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205704"
 ---
 # <a name="how-to-set-the-current-session"></a>Procedura: Impostare la sessione corrente
@@ -42,7 +42,7 @@ ms.locfileid: "68205704"
      Il nome della sessione verrà visualizzato in grassetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
  [Finestra Esplora prestazioni](../profiling/performance-explorer-window.md)   
  [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)   
- [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)
+ [Panoramica della sessione di prestazioni](../profiling/performance-session-overview.md)

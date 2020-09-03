@@ -9,10 +9,10 @@ ms.topic: overview
 ms.workload:
 - multiple
 ms.openlocfilehash: c138d09ec229343e38edc8bbba50a5cac73e000a
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371508"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Panoramica di Visual Studio Tools for AI
@@ -39,5 +39,5 @@ Esaminare gli esempi nel [repository degli esempi](https://github.com/Microsoft/
 
 Per ulteriori informazioni su Visual Studio Tools for AI, inclusi i requisiti di sistema e le opzioni di supporto, vedere la pagina [informazioni su Visual Studio Tools for ai](about-ai-tools.md) .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 [Estendibilità di Visual Studio](/visualstudio/extensibility/?view=vs-2017)

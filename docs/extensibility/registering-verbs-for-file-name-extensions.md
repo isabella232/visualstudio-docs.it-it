@@ -1,5 +1,5 @@
 ---
-title: Registrazione dei verbi per le estensioni di file Documenti Microsoft
+title: Registrazione dei verbi per le estensioni di file | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701527"
 ---
-# <a name="register-verbs-for-file-name-extensions"></a>Registrare i verbi per le estensioni di fileRegister verbs for file name extensions
-L'associazione di un'estensione di file con un'applicazione ha in genere un'azione preferita che si verifica quando un utente fa doppio clic su un file. Questa azione preferita è collegata a un verbo, ad esempio open, che corrisponde all'azione.
+# <a name="register-verbs-for-file-name-extensions"></a>Registrare i verbi per le estensioni dei nomi di file
+L'associazione di un'estensione di file a un'applicazione in genere presenta un'azione preferenziale che si verifica quando un utente fa doppio clic su un file. Questa azione preferita è collegata a un verbo, ad esempio Open, che corrisponde all'azione.
 
- È possibile registrare i verbi associati a un identificatore a livello di codice (ProgID) per un'estensione utilizzando la chiave Shell che si trova in **\{HKEY_CLASSES_ROOT progid**. Per ulteriori informazioni, consultate [Tipi di file.](/windows/desktop/shell/fa-file-types)
+ È possibile registrare i verbi associati a un identificatore a livello di codice (ProgID) per un'estensione usando la chiave della shell situata in **HKEY_CLASSES_ROOT \{ ProgID} \Shell contiene**. Per ulteriori informazioni, vedere [tipi di file](/windows/desktop/shell/fa-file-types).
 
-## <a name="register-standard-verbs"></a>Registrare verbi standard
- Il sistema operativo riconosce i seguenti verbi standard:
+## <a name="register-standard-verbs"></a>Registra verbi standard
+ Il sistema operativo riconosce i verbi standard seguenti:
 
 - Apri
 
@@ -31,16 +31,16 @@ L'associazione di un'estensione di file con un'applicazione ha in genere un'azio
 
 - Esegui
 
-- Print
+- Stampa
 
 - Anteprima
 
-  Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Utilizzare il verbo Edit solo se esiste una chiara differenza tra l'apertura del file e la modifica del file. Ad esempio, l'apertura di un file *htm* lo visualizza nel browser, mentre la modifica di un file *htm* avvia un editor HTML. I verbi standard vengono localizzati con le impostazioni locali del sistema operativo.
+  Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Usare il verbo di modifica solo se esiste una differenza netta tra l'apertura del file e la modifica del file. Se ad esempio si apre un file con estensione *htm* , questo viene visualizzato nel browser, mentre la modifica di un file con *estensione htm* avvia un editor HTML. I verbi standard sono localizzati con le impostazioni locali del sistema operativo.
 
 > [!NOTE]
-> Quando si registrano verbi standard, non impostare il valore predefinito per il tasto Open. Il valore predefinito contiene la stringa di visualizzazione nel menu. Il sistema operativo fornisce questa stringa per i verbi standard.
+> Quando si registrano verbi standard, non impostare il valore predefinito per la chiave di apertura. Il valore predefinito contiene la stringa di visualizzazione nel menu. Il sistema operativo fornisce questa stringa per i verbi standard.
 
- I file di progetto devono essere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] registrati per avviare una nuova istanza di quando un utente apre il file. Nell'esempio seguente viene illustrata [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] la registrazione di un verbo standard per un progetto.
+ I file di progetto devono essere registrati per avviare una nuova istanza di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] quando un utente apre il file. Nell'esempio seguente viene illustrata la registrazione di un verbo standard per un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] progetto.
 
 ```
 [HKEY_CLASSES_ROOT\.csproj]
@@ -71,7 +71,7 @@ L'associazione di un'estensione di file con un'applicazione ha in genere un'azio
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""
 ```
 
- Per aprire un file in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]un'istanza esistente di , registrare una chiave DDEEXEC. Nell'esempio seguente viene illustrata [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] una registrazione dei verbi standard per un file *con estensione cs.*
+ Per aprire un file in un'istanza esistente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , registrare una chiave di DDEExec. Nell'esempio seguente viene illustrata la registrazione di un verbo standard per un file con [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *estensione cs* .
 
 ```
 [HKEY_CLASSES_ROOT\.cs]
@@ -105,11 +105,11 @@ L'associazione di un'estensione di file con un'applicazione ha in genere un'azio
 @="system"
 ```
 
-## <a name="set-the-default-verb"></a>Impostare il verbo predefinito
- Il verbo predefinito è l'azione che viene eseguita quando un utente fa doppio clic su un file in Esplora risorse. Il verbo predefinito è il verbo specificato come valore predefinito per la **\\*progid*** HKEY_CLASSES_ROOT chiave progid . Se non viene specificato alcun valore, il verbo predefinito è il primo verbo specificato nell'elenco **\\*progid*** di HKEY_CLASSES_ROOT chiave progid .
+## <a name="set-the-default-verb"></a>Imposta il verbo predefinito
+ Il verbo predefinito è l'azione che viene eseguita quando un utente fa doppio clic su un file in Esplora risorse. Il verbo predefinito è il verbo specificato come valore predefinito per la chiave **\Shell contiene \\ *ProgID*del HKEY_CLASSES_ROOT** . Se non viene specificato alcun valore, il verbo predefinito è il primo verbo specificato nell'elenco di chiavi ** \\ \shell contiene*ProgID*HKEY_CLASSES_ROOT** .
 
 > [!NOTE]
-> Se si prevede di modificare il verbo predefinito per un'estensione in una distribuzione side-by-side, considerare l'impatto sull'installazione e la rimozione. Durante l'installazione il valore predefinito originale viene sovrascritto.
+> Se si prevede di modificare il verbo predefinito per un'estensione in una distribuzione side-by-Side, considerare l'effetto sull'installazione e la rimozione. Durante l'installazione, il valore predefinito originale viene sovrascritto.
 
 ## <a name="see-also"></a>Vedere anche
-- [Gestire le associazioni di file side-by-side](../extensibility/managing-side-by-side-file-associations.md)
+- [Gestire le associazioni di file affiancati](../extensibility/managing-side-by-side-file-associations.md)

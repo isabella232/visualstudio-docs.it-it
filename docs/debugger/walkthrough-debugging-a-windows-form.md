@@ -24,14 +24,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728324"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: debug di un Windows Form
-Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea un'applicazione Windows standard. È possibile completare questa procedura dettagliata utilizzando Visual Basic C#, o C++.
+# <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
+Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea un'applicazione Windows standard. È possibile completare questa procedura dettagliata utilizzando Visual Basic, C# o C++.
 
  Prima di tutto, è necessario chiudere tutte le soluzioni aperte.
 
@@ -46,13 +46,13 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
 1. Scegliere **nuovo** dal menu **file** e fare clic su **progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-2. Nel riquadro tipi di progetto aprire il nodo **Visual Basic**, **Visual C#** o **Visual C++**  , quindi
+2. Nel riquadro Tipi progetto aprire il nodo **Visual Basic**, **Visual C#** o **Visual C++** , quindi
 
-    1. Per Visual Basic o visuale C#selezionare **Windows Desktop**  > **app Windows Form**.
+    1. Per Visual Basic o Visual C#, selezionare **Windows Desktop**  >  **app Windows Form**per desktop Windows.
 
-    2. Per visuale C++selezionare **applicazione desktop di Windows**.
+    2. Per Visual C++ selezionare **applicazione desktop di Windows**.
 
 3. Nella casella **nome** assegnare al progetto un nome univoco, ad esempio Walkthrough_SimpleDebug.
 
@@ -70,7 +70,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
 8. Nell'area di progettazione del form fare doppio clic sul pulsante.
 
-     Verrà quindi riportata la tabella codici. Il cursore deve essere `button1_Click`.
+     Verrà quindi riportata la tabella codici. Il cursore deve essere in `button1_Click` .
 
 10. Nella funzione `button1_Click`. aggiungere il codice seguente:
 
@@ -114,7 +114,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
     > [!NOTE]
     > È anche possibile fare clic con il pulsante destro del mouse su una qualsiasi riga di codice, scegliere punto di **interruzione**, quindi fare clic su Inserisci punto di **interruzione** per aggiungere un punto di interruzione nella riga.
 
-2. Scegliere **Avvia** dal menu **Debug**.
+2. Scegliere **Avvia**dal menu **debug** .
 
      Viene avviata l'esecuzione di Windows Form.
 
@@ -124,7 +124,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
 4. Scegliere **finestre**dal menu **debug** , quindi **guardare**e fare clic su **controllo1**.
 
-5. Nella finestra **controllo1** fare clic su una riga vuota. Nella colonna **nome** Digitare `textBox1.Text` (se si utilizza Visual Basic o oggetto visivo C#) oppure `textBox1->Text` (se si utilizza C++), quindi premere INVIO.
+5. Nella finestra **controllo1** fare clic su una riga vuota. Nella colonna **nome** Digitare `textBox1.Text` (se si utilizza Visual Basic o Visual C#) o `textBox1->Text` (se si utilizza C++), quindi premere INVIO.
 
      La finestra **controllo1** Mostra il valore di questa variabile tra virgolette come:
 
@@ -167,7 +167,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
     textBox1->Text = "Button was clicked!";
     ```
 
-2. Scegliere **Avvia senza eseguire debug**dal menu **debug** .
+2. Scegliere **Avvia senza eseguire debug** dal menu **Debug**.
 
      Windows Form viene avviato in Windows, come se fosse stato fatto doppio clic sul relativo eseguibile. Il debugger non è collegato.
 
@@ -175,7 +175,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
      Verrà visualizzata la finestra di dialogo **Connetti a processo** .
 
-4. Nel riquadro **processi disponibili** trovare il nome del processo (Walkthrough_SimpleDebug. exe) nella colonna **processo** e fare clic su di esso.
+4. Nel riquadro **processi disponibili** trovare il nome del processo (Walkthrough_SimpleDebug.exe) nella colonna **processo** e fare clic su di esso.
 
 5. Fare clic sul pulsante **Connetti** .
 
@@ -184,5 +184,5 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
      Il debugger interrompe l'esecuzione di Windows Form in corrispondenza del punto di interruzione.
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+- [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

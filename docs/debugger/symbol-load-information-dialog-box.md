@@ -16,16 +16,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c6bc7a795d45caf712b837f7d59e3ce6a0f9c8aa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72729005"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Finestra di dialogo Informazioni sul caricamento simboli
 La finestra di dialogo **Informazioni sul caricamento simboli** viene visualizzata quando si fa clic con il pulsante destro del mouse nella finestra **Moduli** e si sceglie **Informazioni sul caricamento simboli**.
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  **Informazioni** su Mostra le directory in cui vengono cercati i file di simboli (file PDB) in base alle impostazioni di installazione di Visual Studio e alle modifiche apportate alle impostazioni dei simboli nella finestra di dialogo **Opzioni** .
 
  **Impostazioni simboli** Fare clic su questo pulsante per modificare le impostazioni dei simboli nella finestra di dialogo **Opzioni** (categoria**debug** , pagina **simboli** ). In questa pagina è possibile aggiungere o rimuovere percorsi di simboli, specificare un percorso di cache locale se si utilizza un server di simboli e controllare quando vengono eseguite ricerche in tali percorsi.

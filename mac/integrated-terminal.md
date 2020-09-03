@@ -6,10 +6,10 @@ ms.author: jomatthi
 ms.date: 05/14/2020
 ms.assetid: EFD53CE9-8174-4FE4-8863-2984D22FD921
 ms.openlocfilehash: d362938e8f0075591ea5d4ed8461d11395680b5c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84185203"
 ---
 # <a name="integrated-terminal"></a>Terminale integrato
@@ -26,13 +26,13 @@ Per impostazione predefinita, quando viene avviato il terminale, viene eseguito 
 - Impostare la directory di lavoro sul percorso della soluzione corrente.
 - Caricare la shell di sistema predefinita.
 
-## <a name="search"></a>Cerca
+## <a name="search"></a>Ricerca
 È possibile cercare il contenuto della finestra del terminale utilizzando il menu **cerca > trova** .
 
 ![* Esperienza di ricerca nel terminale integrato Visual Studio per Mac *](media/integrated-terminal-search.png)
 
 ## <a name="terminal-keyboard-shortcuts"></a>Tasti di scelta rapida del terminale
-|Comandi|Scelte rapide da tastiera|
+|Comandi:|Tasti di scelta rapida|
 |-|-|
 |Mostra/Nascondi la finestra del terminale|**CTRL +'**|
 |Crea nuova istanza Terminal|**CTRL +'**|

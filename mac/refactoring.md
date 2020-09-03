@@ -1,17 +1,17 @@
 ---
 title: Refactoring del codice
 description: Ridefinizione del codice usando Visual Studio per Mac e le azioni rapide.
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691294"
+ms.locfileid: "89402586"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -31,9 +31,9 @@ Viene evidenziato il simbolo e tutti i relativi riferimenti. Quando si inizia a 
 
 ![Ridenominazione e identificatore](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>Azioni rapide
+## <a name="quick-actions-and-refactorings"></a>Azioni rapide e refactoring
 
-Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione.
+Azioni rapide e refactoring consentono di effettuare facilmente il refactoring, generare o modificare in altro modo il codice con una singola azione.
 
 È possibile usare le azioni rapide per:
 
@@ -55,7 +55,7 @@ L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di co
 
    ![Lampadina con passaggio del puntatore del mouse](media/refactoring-lightbulb-hover.png)
 
-- Le lampadine e i cacciavite vengono visualizzati nel margine sinistro dell'editor quando si sposta il punto di inserimento in una riga di codice per cui è disponibile un'azione rapida.
+- Le lampadine e i cacciaviti vengono visualizzati nel margine sinistro dell'editor quando si sposta il punto di inserimento in una riga di codice per la quale è disponibile un'azione rapida o un refactoring.
 
 - Premere l' **opzione (⌥)** + **Enter** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
 

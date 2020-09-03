@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161694"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante di compressione della trama BC
@@ -26,7 +26,7 @@ Abilita la compressione a blocchi in tutte le trame con un formato di pixel che 
   
  Se le trame sono adatte per la compressione basata su blocchi e non serve una fedeltà dei colori perfetta, valutare l'uso di un formato con compressione a blocchi per ridurre l'utilizzo della memoria e della larghezza di banda.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Per comprimere le trame, usare un formato di compressione basato su blocchi in ogni chiamata a `ID3DDevice::CreateTexture2D` che crea una trama di origine. In particolare, le trame vengono compresse quando:  
   
 - L'oggetto `D3D11_TEXTURE2D_DESC` passato a `pDesc` descrive una risorsa shader che non cambia, ovvero:  
@@ -57,11 +57,11 @@ Abilita la compressione a blocchi in tutte le trame con un formato di pixel che 
   
  Se il formato della trama non è presente in questo elenco, la trama non è modificata.  
   
-## <a name="restrictions-and-limitations"></a>Limiti e restrizioni  
+## <a name="restrictions-and-limitations"></a>Restrizioni e limitazioni  
  In alcuni casi, le trame create con una variante dei formati di immagine B8G8R8A8 o R8G8B8A8 non usano effettivamente il canale alfa, ma la variante non può verificare se sia usato o meno. Per mantenere la correttezza nel caso in cui il canale alfa sia usato, la variante codifica sempre questi formati nel formato BC3 meno efficiente. È possibile consentire all'analisi dei frame di grafica di ottenere informazioni sulle potenziali prestazioni di rendering con questa variante usando una variante del formato di immagine B8G8R8X8 quando non è presente il canale alfa, in modo da poter usare il formato BC1 più efficiente.  
   
 ## <a name="example"></a>Esempio  
  Questa variante esegue la compressione a blocchi delle trame in fase di esecuzione, prima della chiamata a `CreateTexture2D`. Per il codice di produzione, questo approccio è sconsigliato perché le trame a dimensioni intere occupano più spazio su disco e perché il passaggio aggiuntivo può aumentare in modo significativo i tempi di caricamento nell'app, perché la compressione basata su blocchi richiede risorse di elaborazione notevoli per la codifica. È invece consigliabile comprimere le trame offline usando un editor o programma per l'elaborazione di immagini che faccia parte della pipeline di compilazione. Questi approcci riducono i requisiti di spazio su disco ed eliminano sovraccarichi in fase di esecuzione nell'app, oltre a restituire una quantità di tempo di elaborazione che consente di mantenere la migliore qualità di immagine.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Variante delle dimensioni della trama ridotte a metà o un quarto](../debugger/half-quarter-texture-dimensions-variant.md)
+ [Variante delle dimensioni della trama metà/trimestre](../debugger/half-quarter-texture-dimensions-variant.md)

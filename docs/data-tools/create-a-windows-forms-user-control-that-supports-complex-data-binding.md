@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586848"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding complesso
@@ -85,7 +85,7 @@ Poiché in questa procedura dettagliata viene creato un controllo associabile a 
 
 ## <a name="design-the-complexdatagridview-control"></a>Progettare il controllo ComplexDataGridView
 
-Per aggiungere un <xref:System.Windows.Forms.DataGridView> al controllo utente, trascinare una <xref:System.Windows.Forms.DataGridView> dalla **casella degli strumenti** nell'area di progettazione del controllo utente.
+Per aggiungere un oggetto <xref:System.Windows.Forms.DataGridView> al controllo utente, trascinare un oggetto <xref:System.Windows.Forms.DataGridView> dalla **casella degli strumenti** nell'area di progettazione del controllo utente.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Aggiungere l'attributo obbligatorio di associazione dati
 
@@ -98,15 +98,15 @@ Per controlli semplici che supportano il data binding, è possibile implementare
     [!code-csharp[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]
     [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]
 
-1. Scegliere **Compila soluzione** dal menu **Compila**.
+1. Scegliere **Compila soluzione**dal menu **Compila** .
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
-Utilizzare la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Customers` nel database di esempio Northwind:
+Utilizzare la **Configurazione guidata origine dati** per creare un'origine dati basata sulla `Customers` tabella nel database di esempio Northwind:
 
 1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
@@ -124,11 +124,11 @@ Utilizzare la **Configurazione guidata origine dati** per creare un'origine dati
 
 8. Selezionare la tabella `Customers`, quindi fare clic su **Fine**.
 
-   L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Customers` viene visualizzata nella finestra **Origini dati**.
+   Il **NorthwindDataSet** viene aggiunto al progetto e la `Customers` tabella viene visualizzata nella finestra **origini dati** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Impostare la tabella Customers per usare il controllo ComplexDataGridView
 
-Nella finestra **Origini dati** è possibile impostare il controllo da creare prima di trascinare elementi nel form:
+All'interno della finestra **origini dati** è possibile impostare il controllo da creare prima di trascinare gli elementi nel form:
 
 1. Aprire **Form1** nella finestra di progettazione.
 
@@ -142,9 +142,9 @@ Nella finestra **Origini dati** è possibile impostare il controllo da creare pr
 
 ## <a name="add-controls-to-the-form"></a>Aggiungere controlli al form
 
-È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** al form. Verificare che il controllo **ComplexDataGridView** venga utilizzato per visualizzare i dati della tabella.
+È possibile creare i controlli associati a dati trascinando gli elementi dalla finestra **origini dati** nel form. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** al form. Verificare che il controllo **ComplexDataGridView** venga utilizzato per visualizzare i dati della tabella.
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 Premere **F5** per eseguire l'applicazione.
 
@@ -160,4 +160,4 @@ A seconda dei requisiti dell'applicazione, dopo la creazione di un controllo che
 
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Controlli Windows Form](/dotnet/framework/winforms/controls/index)
+- [Controlli di Windows Forms](/dotnet/framework/winforms/controls/index)

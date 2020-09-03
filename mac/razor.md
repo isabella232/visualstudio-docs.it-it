@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
 ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249543"
 ---
 # <a name="create-razor-web-apps"></a>Creare app Web Razor
@@ -57,7 +57,7 @@ I nomi dei file di supporto iniziano con un carattere di sottolineatura. Il file
 
 Il *launchSettings.jsnel* file contiene le impostazioni di IIS, l'URL dell'applicazione e altre impostazioni correlate.
 
-### <a name="app-settings"></a>Impostazioni dell'app
+### <a name="app-settings"></a>Impostazioni delle app
 
 Il *appSettings.jsnel* file contiene i dati di configurazione, ad esempio le stringhe di connessione.
 

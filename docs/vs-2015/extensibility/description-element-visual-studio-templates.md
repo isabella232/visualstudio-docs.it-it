@@ -11,20 +11,20 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162107"
 ---
 # <a name="description-element-visual-studio-templates"></a>Elemento Description (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica la descrizione del modello così come appare in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
+Specifica la descrizione del modello visualizzato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Descrizione >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Description>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,10 +43,10 @@ Specifica la descrizione del modello così come appare in entrambi i **nuovo pro
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Package`|Attributo facoltativo, per scenari avanzati.<br /><br /> GUID che specifica l'ID del pacchetto di Visual Studio.|  
-|`ID`|Attributo facoltativo, per scenari avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|  
+|`Package`|Attributo facoltativo, per gli scenari utente avanzati.<br /><br /> GUID che specifica l'ID del pacchetto di Visual Studio.|  
+|`ID`|Attributo facoltativo, per gli scenari utente avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  
@@ -62,11 +62,11 @@ Specifica la descrizione del modello così come appare in entrambi i **nuovo pro
   
  Il testo fornisce una descrizione del modello.  
   
-## <a name="remarks"></a>Note  
- `Description` è un elemento figlio obbligatorio dell'elemento `TemplateData`.  
+## <a name="remarks"></a>Osservazioni  
+ `Description` è un elemento figlio obbligatorio dell' `TemplateData` elemento.  
   
 ## <a name="example"></a>Esempio  
- L'esempio seguente mostra i metadati per un modello di progetto per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] dell'applicazione.  
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -93,5 +93,5 @@ Specifica la descrizione del modello così come appare in entrambi i **nuovo pro
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
