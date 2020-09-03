@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4306e030c2f48d87b12ba6338a847dc9e9aa892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179036"
 ---
 # <a name="execution-time-threads-view"></a>Tempo di esecuzione (visualizzazione Thread)
@@ -32,5 +32,5 @@ Questi segmenti nella sequenza temporale della visualizzazione thread rappresent
  Per visualizzare un profilo di campionamento tradizionale per tutti i segmenti di esecuzione nella visualizzazione corrente, fare clic su **Esecuzione** in Profilo cronologia visibile.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Rapporto profilo di esecuzione](../profiling/execution-profile-report.md)   
- [Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione thread)
+ [Rapporto Profilo di esecuzione](../profiling/execution-profile-report.md)   
+ [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

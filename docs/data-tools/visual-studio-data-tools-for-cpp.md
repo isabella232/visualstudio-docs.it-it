@@ -11,10 +11,10 @@ ms.workload:
 - data-storage
 - cplusplus
 ms.openlocfilehash: 063efeebff92698b8e5db66880360713c73fe150
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281097"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools per C++
@@ -68,6 +68,6 @@ Per sfruttare i vantaggi della funzionalità personalizzata in SQL Server 2005 e
 
    ![Output della query di esempio ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

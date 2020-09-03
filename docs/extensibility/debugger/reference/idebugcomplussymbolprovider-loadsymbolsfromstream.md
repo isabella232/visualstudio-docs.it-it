@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream . Documenti Microsoft
+title: 'IDebugComPlusSymbolProvider:: LoadSymbolsFromStream | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d208f8ce04e884c9dfb3b8b272271e686e3b2762
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733618"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
@@ -48,25 +48,25 @@ int LoadSymbolsFromStream(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-[in] Identificatore del dominio applicazione.
+in Identificatore del dominio dell'applicazione.
 
 `guidModule`\
-[in] Identificatore univoco del modulo.
+in Identificatore univoco del modulo.
 
 `baseAddress`\
-[in] Indirizzo di memoria di base.
+in Indirizzo di memoria di base.
 
 `pUnkMetadataImport`\
-[in] Oggetto che contiene i metadati del simbolo.
+in Oggetto che contiene i metadati del simbolo.
 
 `pStream`\
-[in] Flusso di dati che contiene i simboli.
+in Flusso di dati che contiene i simboli.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfaccia. Il metodo chiama il [metodo LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) .
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) . Il metodo chiama il metodo [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(

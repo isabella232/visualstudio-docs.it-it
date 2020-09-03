@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70107842"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
@@ -54,7 +54,7 @@ Altre informazioni sulle tecnologie che supportano la progettazione di applicazi
 
 ### <a name="third-party-resources"></a>Risorse di terze parti
 
-- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** Questo sito Web offre le linee guida e le tecniche per lo sviluppo di siti Web accessibili. Per ulteriori informazioni, vedere [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** Questo sito Web offre le linee guida e le tecniche per lo sviluppo di siti Web accessibili. Per altre informazioni, vedere [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint . Documenti Microsoft
+title: 'IDebugComPlusSymbolProvider2:: IsAddressSequencePoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5b9f1f3df8b96e9f9b25bf630206ce37bcd27635
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733413"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
@@ -40,13 +40,13 @@ int IsAddressSequencePoint(
 
 ## <a name="parameters"></a>Parametri
 `pAddress`\
-[in] Indirizzo di debug rappresentato dall'interfaccia [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+in Indirizzo di debug rappresentato dall'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 ## <a name="return-value"></a>Valore restituito
-Se l'indirizzo di debug `S_OK`è un punto di sequenza, restituisce ; in caso `S_FALSE`contrario, restituisce .
+Se l'indirizzo di debug è un punto di sequenza, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` .
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(

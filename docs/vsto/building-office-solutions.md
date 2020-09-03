@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551850"
 ---
 # <a name="build-office-solutions"></a>Compilazione di soluzioni Office
@@ -78,8 +78,8 @@ ms.locfileid: "69551850"
 
   Outlook necessita di queste informazioni per caricare le aree del modulo.
 
-## <a name="referenced-assemblies"></a>Assembly a cui viene fatto riferimento
- È possibile fare riferimento agli assembly (compresi i progetti Libreria di classi) dal progetto Compilazione di soluzioni Office. Ogni assembly di riferimento ha una proprietà chiamata **Copia localmente**. **Copia localmente** indica se l'assembly viene copiato o meno nella directory di output. Per impostazione predefinita, questa proprietà è impostata su **true**. Ogni assembly di riferimento con la proprietà **Copia localmente** impostata su **true** viene copiato nella directory di output.
+## <a name="referenced-assemblies"></a>Assembly di riferimento
+ È possibile fare riferimento agli assembly (compresi i progetti Libreria di classi) dal progetto Compilazione di soluzioni Office. Ogni assembly di riferimento ha una proprietà chiamata **Copia localmente**. **Copia localmente** indica se l'assembly viene copiato o meno nella directory di output. Per impostazione predefinita, è impostato su **true**. Ogni assembly di riferimento con la proprietà **Copia localmente** impostata su **true** viene copiato nella directory di output.
 
 ## <a name="security-during-the-build-process"></a>Sicurezza durante il processo di compilazione
  Visual Studio configura automaticamente le impostazioni di sicurezza nel computer di sviluppo per concedere l'attendibilità alla soluzione durante il processo di compilazione. Ciò consente alla soluzione di essere eseguita mentre se ne esegue il debug.
@@ -96,7 +96,7 @@ ms.locfileid: "69551850"
 ## <a name="change-the-platform-target"></a>Modificare la destinazione della piattaforma
  Per impostazione predefinita, la piattaforma di destinazione per i progetti di Office è **Qualsiasi CPU**. In genere, non è consigliabile modificare questa impostazione. Le soluzioni Office compilate con l'impostazione della destinazione della piattaforma impostata su **Qualsiasi CPU** vengono eseguite nelle versioni a 32 bit e a 64 bit di Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
- È consigliabile impostare la destinazione della piattaforma su x64 solo se si crea una soluzione che verrà eseguita esclusivamente nelle versioni a 64 bit di Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]e se la soluzione chiama API native a 64 bit. Per ulteriori informazioni sulla modifica dell'impostazione di destinazione della piattaforma [, vedere Procedura: Configurare i progetti per le](../ide/how-to-configure-projects-to-target-platforms.md)piattaforme di destinazione.
+ È consigliabile impostare la destinazione della piattaforma su x64 solo se si crea una soluzione che verrà eseguita esclusivamente nelle versioni a 64 bit di Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]e se la soluzione chiama API native a 64 bit. Per altre informazioni sulla modifica dell'impostazione di destinazione della piattaforma, vedere [procedura: configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).
 
  Se si imposta la destinazione della piattaforma su x64, la soluzione non verrà eseguita nelle versioni a 32 bit di Windows o di Office. Per la destinazione della piattaforma x64 è necessario che la soluzione venga eseguita in un processo a 64 bit.
 
@@ -108,6 +108,6 @@ ms.locfileid: "69551850"
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Debug di progetti di Office](../vsto/debugging-office-projects.md)|Descrive i problemi relativi al debug dei progetti di Office.|
-|[Procedura dettagliata: Creazione della prima personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Illustra come creare una personalizzazione di base a livello di documento per Excel.|
-|[Procedura: Abilitare di nuovo un componente aggiuntivo VSTO disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Viene descritto come riabilitare un componente aggiuntivo VSTO che è stato disabilitato a livello hardware o soft.|
+|[Procedura dettagliata: creare la prima personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Illustra come creare una personalizzazione di base a livello di documento per Excel.|
+|[Procedura: riabilitare un componente aggiuntivo VSTO disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Viene descritto come riabilitare un componente aggiuntivo VSTO che è stato disabilitato a livello hardware o soft.|
 |[Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)|Fornisce i collegamenti a informazioni sulla creazione di soluzioni Office e sul ruolo degli assembly all'interno della soluzione.|

@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa1d03b2f91cea03403f4893e61ec15bf5b82952
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733393"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-Caricare i simboli di debug da un flusso di dati dato il **ICorDebugModule** oggetto.
+Caricare i simboli di debug da un flusso di dati dato l'oggetto **ICorDebugModule** .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,28 +50,28 @@ int LoadSymbolsFromStreamWithCorModule(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-[in] Identificatore del dominio applicazione.
+in Identificatore del dominio dell'applicazione.
 
 `guidModule`\
-[in] Identificatore univoco del modulo.
+in Identificatore univoco del modulo.
 
 `baseAddress`\
-[in] Indirizzo di memoria di base.
+in Indirizzo di memoria di base.
 
 `pUnkMetadataImport`\
-[in] Oggetto che contiene i metadati del simbolo.
+in Oggetto che contiene i metadati del simbolo.
 
 `pUnkCorDebugModule`\
-[in] Oggetto che implementa [l'interfaccia ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+in Oggetto che implementa l' [interfaccia ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
 `pStream`\
-[in] Flusso di dati che contiene i simboli di debug da caricare.
+in Flusso di dati che contiene i simboli di debug da caricare.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(

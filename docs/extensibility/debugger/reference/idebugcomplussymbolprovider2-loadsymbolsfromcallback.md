@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback Documenti Microsoft
+title: 'IDebugComPlusSymbolProvider2:: LoadSymbolsFromCallback | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 738c9e24a8acfe33d7d3993da0eb5eb96ace1795
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733361"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
@@ -52,31 +52,31 @@ int LoadSymbolsFromCallback(
 
 ## <a name="parameters"></a>Parametri
 `ulAppDomainID`\
-[in] Identificatore del dominio applicazione.
+in Identificatore del dominio dell'applicazione.
 
 `guidModule`\
-[in] Identificatore univoco del modulo.
+in Identificatore univoco del modulo.
 
 `pUnkMetadataImport`\
-[in] Oggetto che contiene i metadati del simbolo.
+in Oggetto che contiene i metadati del simbolo.
 
 `pUnkCorDebugModule`\
-[in] Oggetto che implementa [l'interfaccia ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+in Oggetto che implementa l' [interfaccia ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
 `bstrModuleName`\
-[in] Nome del modulo.
+in Nome del modulo.
 
 `bstrSymSearchPath`\
-[in] Percorso per la ricerca del file di simboli.
+in Percorso in cui cercare il file di simboli.
 
 `pCallback`\
-[in] Oggetto che rappresenta il metodo di callback.
+in Oggetto che rappresenta il metodo di callback.
 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato come implementare questo metodo per un **CDebugSymbolProvider** oggetto che espone il [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaccia.
+Nell'esempio seguente viene illustrato come implementare questo metodo per un oggetto **CDebugSymbolProvider** che espone l'interfaccia [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(

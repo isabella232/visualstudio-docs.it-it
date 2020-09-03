@@ -1,5 +1,5 @@
 ---
-title: Proprietà Menus Documenti Microsoft
+title: Elemento menus | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702583"
 ---
-# <a name="menus-element"></a>Elemento Menus
+# <a name="menus-element"></a>Menu (elemento)
 Definisce tutti i menu e le barre degli strumenti implementati da un pacchetto VSPackage.
 
 ## <a name="syntax"></a>Sintassi
@@ -37,14 +37,14 @@ Definisce tutti i menu e le barre degli strumenti implementati da un pacchetto V
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu e le barre degli strumenti implementati da un pacchetto VSPackage.|
-|[Elemento di menu](../extensibility/menu-element.md)|Rappresenta un singolo menu o barra degli strumenti.|
+|[Menu (elemento)](../extensibility/menus-element.md)|Definisce tutti i menu e le barre degli strumenti implementati da un pacchetto VSPackage.|
+|[Elemento menu](../extensibility/menu-element.md)|Rappresenta un singolo menu o una barra degli strumenti.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -78,5 +78,5 @@ Definisce tutti i menu e le barre degli strumenti implementati da un pacchetto V
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Come VSPackage aggiungere elementi dell'interfaccia utenteHow VSPackages add user interface elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
