@@ -1,14 +1,14 @@
 - name: Panoramica
   items:
-    - name: Strumenti R per Visual Studio
+    - name: R Tools for Visual Studio
       href: index.md
     - name: Carico di lavoro delle applicazioni analitiche e di analisi scientifica dei dati
       href: ../python/data-science-and-analytical-applications-workload.md
-- name: Guide introduttive
+- name: Avvi rapidi
   items:
     - name: Installazione
       href: installing-r-tools-for-visual-studio.md
-    - name: Per ulteriori informazioni
+    - name: Risorse della Guida
       href: getting-started-help.md
 - name: Esercitazioni
   items:
@@ -16,13 +16,13 @@
       href: getting-started-with-r.md
 - name: Esempi
   href: getting-started-samples.md
-- name: 'Guide pratiche:'
+- name: Guide pratiche
   items:
     - name: Progetti R
       items:
         - name: Progetti R
           href: r-projects-in-visual-studio.md
-        - name: Gestione pacchetti
+        - name: Strumento di gestione pacchetti
           href: r-package-manager-in-visual-studio.md
         - name: Integrazione con SQL Server
           href: integrating-sql-server-with-r.md
@@ -56,7 +56,7 @@
       href: variable-explorer.md
     - name: Debug
       href: debugging-r-in-visual-studio.md
-- name: Reference
+- name: Informazioni di riferimento
   items:
     - name: Opzioni
       href: options-for-r-tools-in-visual-studio.md

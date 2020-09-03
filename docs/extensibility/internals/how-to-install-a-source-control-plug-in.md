@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905360"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedura: installare un plug-in del controllo del codice sorgente
@@ -28,7 +28,7 @@ La creazione di un plug-in del controllo del codice sorgente prevede tre passagg
 3. Registrare la DLL rendendo le voci del registro di sistema appropriate.
 
 ## <a name="integration-with-visual-studio"></a>Integrazione con Visual Studio
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]supporta i plug-in del controllo del codice sorgente conformi all'API del plug-in del controllo del codice sorgente.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta i plug-in del controllo del codice sorgente conformi all'API del plug-in del controllo del codice sorgente.
 
 ### <a name="register-the-source-control-plug-in"></a>Registrare il plug-in del controllo del codice sorgente
  Prima che un Integrated Development Environment di esecuzione (IDE) possa chiamare nel sistema di controllo del codice sorgente, deve innanzitutto trovare la DLL del plug-in del controllo del codice sorgente che esporta l'API.

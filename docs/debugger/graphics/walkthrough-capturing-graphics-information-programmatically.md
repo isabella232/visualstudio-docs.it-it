@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85835654"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice
 La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente di acquisire a livello di codice informazioni grafiche da un'app Direct3D.
 
 L'acquisizione a livello di codice è utile in scenari quali ad esempio:
@@ -115,6 +115,6 @@ In questa procedura dettagliata è stato illustrato come acquisire informazioni 
 - Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di diagnostica grafica. Vedere [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: cattura delle informazioni grafica](walkthrough-capturing-graphics-information.md)
+- [Procedura dettagliata: Acquisizione di informazioni grafiche](walkthrough-capturing-graphics-information.md)
 - [Acquisizione di informazioni grafiche](capturing-graphics-information.md)
 - [Strumento di acquisizione da riga di comando](command-line-capture-tool.md)

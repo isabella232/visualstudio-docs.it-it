@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418782"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicare al debugger cosa visualizzare usando l'attributo DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)
@@ -99,7 +99,7 @@ Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`
 |**Nome**|**Valore**|**Tipo**|
 |--------------|---------------|--------------|
 |Chiave|"three"|oggetto {string}|
-|valore|3|oggetto {int}|
+|Valore|3|oggetto {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -179,7 +179,7 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Utilizzo dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Creazione di visualizzazioni personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md)

@@ -26,7 +26,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
 |DisplayName|Nome dell'elemento Decorator che verrà visualizzato nella finestra di progettazione generata.|Espandi elemento Decorator compresso|
-|Nome|Nome dell'elemento Decorator.|ExpandCollapseDecorator|
+|Name|Nome dell'elemento Decorator.|ExpandCollapseDecorator|
 |Note|Note informali associate a questo elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|
@@ -40,7 +40,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 |-|-|-|
 |DefaultIcon|Percorso dell'icona o del file di immagine da visualizzare.|\<none>|
 |DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Elemento Decorator icona|
-|Nome|Nome dell'elemento Decorator.|IconDecorator|
+|Name|Nome dell'elemento Decorator.|IconDecorator|
 |Note|Note informali associate all'elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|
@@ -56,7 +56,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 |DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Etichetta|
 |FontSize|Dimensioni del carattere per il testo visualizzato nell'elemento Decorator.|8|
 |FontStyle|Stile del carattere per il testo visualizzato nell'elemento Decorator.|Normale|
-|Nome|Nome dell'elemento Decorator.|Etichetta|
+|Name|Nome dell'elemento Decorator.|Etichetta|
 |Note|Note informali associate all'elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|

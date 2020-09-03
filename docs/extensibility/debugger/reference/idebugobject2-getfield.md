@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugObject2::GetField . Documenti Microsoft
+title: 'IDebugObject2:: GetField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726218"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
@@ -41,7 +41,7 @@ int GetField(
 
 ## <a name="parameters"></a>Parametri
 `ppField`\
-[fuori] Restituisce un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto se non è un valore null.
+out Restituisce un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) se non è un valore null.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.

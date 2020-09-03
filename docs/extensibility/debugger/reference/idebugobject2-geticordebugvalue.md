@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugObject2::GetICorDebugValue . Documenti Microsoft
+title: 'IDebugObject2:: GetICorDebugValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d52701b916650bc142038ffd96dcab8b05ec6da
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726125"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
-Ottiene un oggetto di codice gestito che rappresenta il valore associato a questo oggetto.
+Ottiene un oggetto di codice gestito che rappresenta il valore associato all'oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>Parametri
 `ppUnk`\
-[fuori] `IUnknown` interfaccia che rappresenta questo alias. Questa interfaccia può essere interrogata per l'interfaccia. `ICorDebugValue`
+[out] `IUnknown` interfaccia che rappresenta l'alias. È possibile eseguire query su questa interfaccia per l' `ICorDebugValue` interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- L'oggetto `ICorDebugValue` è un'interfaccia Common Language Runtime che rappresenta un valore.
+ L' `ICorDebugValue` oggetto è un'interfaccia di Common Language Runtime che rappresenta un valore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

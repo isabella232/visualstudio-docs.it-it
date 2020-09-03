@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905346"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: implementare progetti annidati
@@ -37,7 +37,7 @@ Quando si crea un tipo di progetto annidato, è necessario implementare alcuni p
 
 4. Il progetto padre chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> il metodo o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> metodo su ognuno dei relativi progetti figlio.
 
-     Passare <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> al `AddVirtualProject` metodo per indicare che il progetto virtuale (annidato) deve essere aggiunto alla finestra del progetto, escluso dalla compilazione, aggiunto al controllo del codice sorgente e così via. `VSADDVPFLAGS`consente di controllare la visibilità del progetto annidato e indicare la funzionalità a essa associata.
+     Passare <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> al `AddVirtualProject` metodo per indicare che il progetto virtuale (annidato) deve essere aggiunto alla finestra del progetto, escluso dalla compilazione, aggiunto al controllo del codice sorgente e così via. `VSADDVPFLAGS` consente di controllare la visibilità del progetto annidato e indicare la funzionalità a essa associata.
 
      Se si ricarica un progetto figlio precedentemente esistente con un GUID di progetto archiviato nel file di progetto del progetto padre, il progetto padre chiama `AddVirtualProjectEx` . L'unica differenza tra `AddVirtualProject` e `AddVirtualProjectEX` è che `AddVirtualProjectEX` dispone di un parametro per consentire al progetto padre di specificare un oggetto per ogni istanza `guidProjectID` affinché il progetto figlio abiliti <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> funzioni correttamente.
 
@@ -45,7 +45,7 @@ Quando si crea un tipo di progetto annidato, è necessario implementare alcuni p
 
 5. L'IDE chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> metodo su ogni progetto figlio del progetto padre.
 
-     Il progetto padre deve implementare `IVsParentProject` se si desidera annidare i progetti. Il progetto padre non chiama mai `QueryInterface` `IVsParentProject` anche se contiene progetti padre. La soluzione gestisce la chiamata a `IVsParentProject` e, se è implementata, chiama `OpenChildren` per creare i progetti annidati. `AddVirtualProjectEX`viene sempre chiamato da `OpenChildren` . Non deve mai essere chiamato dal progetto padre per tenere in ordine gli eventi di creazione della gerarchia.
+     Il progetto padre deve implementare `IVsParentProject` se si desidera annidare i progetti. Il progetto padre non chiama mai `QueryInterface` `IVsParentProject` anche se contiene progetti padre. La soluzione gestisce la chiamata a `IVsParentProject` e, se è implementata, chiama `OpenChildren` per creare i progetti annidati. `AddVirtualProjectEX` viene sempre chiamato da `OpenChildren` . Non deve mai essere chiamato dal progetto padre per tenere in ordine gli eventi di creazione della gerarchia.
 
 6. L'IDE chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> metodo nel progetto figlio.
 
@@ -56,7 +56,7 @@ Quando si crea un tipo di progetto annidato, è necessario implementare alcuni p
      Se non esiste già, il progetto padre crea un GUID per ogni progetto annidato chiamando `CoCreateGuid` .
 
     > [!NOTE]
-    > `CoCreateGuid`è un'API COM chiamata quando è necessario creare un GUID. Per ulteriori informazioni, vedere `CoCreateGuid` e GUID in MSDN Library.
+    > `CoCreateGuid` è un'API COM chiamata quando è necessario creare un GUID. Per ulteriori informazioni, vedere `CoCreateGuid` e GUID in MSDN Library.
 
      Il progetto padre archivia il GUID nel file di progetto da recuperare alla successiva apertura nell'IDE. Per ulteriori informazioni relative alla chiamata di per `AddVirtualProjectEX` recuperare il `guidProjectID` per il progetto figlio, vedere il passaggio 4.
 

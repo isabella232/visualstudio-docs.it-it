@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905035"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procedura dettagliata: creare un'area di visualizzazione, comandi e impostazioni (guide di colonna)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`deve approfondire un po' per ottenere una <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> visualizzazione del codice.  Se si tracciano `GetActiveTextView` , `GetActiveView` e `GetTextViewFromVsTextView` , è possibile vedere come eseguire questa operazione. Il codice seguente è il codice pertinente astratto, a partire dalla selezione corrente, ottenendo quindi il frame della selezione, ottenendo il DocView del frame come <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , ottenendo un oggetto <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> da IVsTextView, ottenendo quindi un host di visualizzazione e infine IWpfTextView:
+`GetCurrentEditorColumn` deve approfondire un po' per ottenere una <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> visualizzazione del codice.  Se si tracciano `GetActiveTextView` , `GetActiveView` e `GetTextViewFromVsTextView` , è possibile vedere come eseguire questa operazione. Il codice seguente è il codice pertinente astratto, a partire dalla selezione corrente, ottenendo quindi il frame della selezione, ottenendo il DocView del frame come <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , ottenendo un oggetto <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> da IVsTextView, ottenendo quindi un host di visualizzazione e infine IWpfTextView:
 
 ```csharp
    IVsMonitorSelection selection =

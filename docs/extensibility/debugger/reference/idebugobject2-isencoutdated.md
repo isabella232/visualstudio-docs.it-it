@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugObject2::IsEncOutdated . Documenti Microsoft
+title: 'IDebugObject2:: IsEncOutdated | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a90ff97b87ec2abaab87dfece5b2a2ac1cabb28c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726106"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-Questo metodo determina se lo stato di modifica e continuazione di questo oggetto o del contenitore padre non è aggiornato. Un analizzatore di espressioni personalizzate non `E_NOTIMPL`implementa questo metodo e restituisce sempre .
+Questo metodo determina se lo stato di modifica e continuazione di questo oggetto o del contenitore padre è obsoleto. Un analizzatore di espressioni personalizzato non implementa questo metodo e restituisce sempre `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int IsEncOutdated(
 
 ## <a name="parameters"></a>Parametri
 `pfEncOutdated`\
-[fuori] Diverso da`TRUE`zero ( ) se lo stato Modifica`FALSE`e continuazione non è aggiornato, zero ( ) in caso contrario.
+out Diverso da zero ( `TRUE` ) se lo stato di modifica e continuazione non è aggiornato, in caso contrario, zero ( `FALSE` ).
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 > [!NOTE]
-> Un analizzatore di `E_NOTIMPL`espressioni personalizzate deve sempre restituire .
+> Un analizzatore di espressioni personalizzato deve sempre restituire `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

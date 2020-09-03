@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 832dc3f7fea959ff4d2834aba921cd16f1117b5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666139"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generare file da un modello UML
@@ -33,7 +33,7 @@ Da un modello UML, è possibile generare codice programma, schemi, documenti, ri
 
   Questo argomento termina con una discussione su [come usare la generazione di testo](#What). Per altre informazioni, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="Command"></a>Generazione di file da un comando di menu
+## <a name="generating-files-from-a-menu-command"></a><a name="Command"></a> Generazione di file da un comando di menu
  È possibile usare i modelli di testo pre-elaborati in un comando di menu UML. Nel codice del modello di testo o in una classe parziale separata, è possibile leggere il modello visualizzato dal diagramma.
 
  Per altre informazioni su queste funzionalità, leggere gli argomenti seguenti:
@@ -47,7 +47,7 @@ Da un modello UML, è possibile generare codice programma, schemi, documenti, ri
   L'approccio mostrato nell'esempio seguente è adatto per la generazione di testo da un singolo modello, quando si avvia l'operazione da uno dei diagrammi del modello. Per elaborare un modello in un contesto separato, provare a usare [ModelBus di Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md) per accedere al modello e ai relativi elementi.
 
 ### <a name="example"></a>Esempio
- Per eseguire questo esempio, creare un progetto con estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Il nome del progetto usato in questo esempio è `VdmGenerator`. Nel file **source. Extension. vsixmanifest** fare clic su **Aggiungi contenuto** e impostare il campo tipo sul **componente MEF** e il percorso di origine che fanno riferimento al progetto corrente. Per altre informazioni su come configurare questo tipo di progetto, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ Per eseguire questo esempio, creare un progetto con estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Il nome del progetto usato in questo esempio è `VdmGenerator` . Nel file **source. Extension. vsixmanifest** fare clic su **Aggiungi contenuto** e impostare il campo tipo sul **componente MEF** e il percorso di origine che fanno riferimento al progetto corrente. Per altre informazioni su come configurare questo tipo di progetto, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
  Aggiungere al progetto un file C# contenente il codice seguente. Questa classe definisce un comando di menu che verrà visualizzato in un diagramma classi UML.
 
@@ -124,7 +124,7 @@ namespace VdmGenerator
 }
 ```
 
- Per testare il progetto, premere **F5**. Viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questa istanza, aprire o creare un modello UML contenente un diagramma classi. Aggiungere alcune classi al diagramma e alcuni attributi a ogni classe. Fare clic con il pulsante destro del mouse nel diagramma, quindi fare clic sul comando di esempio `Generate VDM`. Il comando crea il file `C:\Generated.txt`. Esaminare il file. I contenuti dovrebbero somigliare al testo seguente, ma con le proprie classi e attributi:
+ Per testare il progetto, premere **F5**. Viene avviata una nuova istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In questa istanza, aprire o creare un modello UML contenente un diagramma classi. Aggiungere alcune classi al diagramma e alcuni attributi a ogni classe. Fare clic con il pulsante destro del mouse nel diagramma, quindi scegliere il comando di esempio `Generate VDM` . Il comando crea il file `C:\Generated.txt` . Esaminare il file. I contenuti dovrebbero somigliare al testo seguente, ma con le proprie classi e attributi:
 
 ```
 Type Class1 ::
@@ -134,12 +134,12 @@ Type Class2 ::
           Attribute3 : string
 ```
 
-## <a name="Application"></a>Generazione di file da un'applicazione
+## <a name="generating-files-from-an-application"></a><a name="Application"></a> Generazione di file da un'applicazione
  È possibile generare file da un'applicazione che legge un modello UML. A questo scopo, il metodo più flessibile e affidabile per accedere al modello e ai relativi elementi è [ModelBus di Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
  È anche possibile usare l'API di base per caricare il modello e passarlo ai modelli di testo usando le stesse tecniche della sezione precedente. Per altre informazioni sul caricamento di un modello, vedere [leggere un modello UML nel codice del programma](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Design"></a>Generazione di file in fase di progettazione
+## <a name="generating-files-at-design-time"></a><a name="Design"></a> Generazione di file in fase di progettazione
  Se il progetto ha un metodo standard di interpretazione di UML come codice, è possibile creare modelli di testo che consentono di generare il codice all'interno del progetto da un modello UML. In genere si ha una soluzione che contiene il progetto del modello UML e uno o più progetti per il codice dell'applicazione. Ogni progetto di codice può contenere diversi modelli che generano il codice del programma, le risorse e i file di configurazione in base al contenuto del modello. Lo sviluppatore può eseguire tutti i modelli facendo clic su **trasforma tutti i modelli** nella barra degli strumenti Esplora soluzioni. Il codice del programma viene generato in genere sotto forma di classi parziali per semplificare l'integrazione manuale delle parti scritte.
 
  Un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di questo tipo può essere distribuito sotto forma di modello, in modo che ogni membro di un team possa creare allo stesso modo progetti che generano codice da un modello. In genere, il modello fa parte di un pacchetto di estensioni che include vincoli di convalida relativi al modello per garantire che le precondizioni per il codice di generazione vengano soddisfatte.
@@ -185,17 +185,17 @@ Type Class2 ::
 
 2. Creare un progetto C# o Visual Basic nella stessa soluzione.
 
-   - In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**. In **modelli installati**fare clic su **Visual Basic** o oggetto  **C#visivo,** quindi selezionare un tipo di progetto, ad esempio **applicazione console**.
+   - In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**. In **modelli installati**fare clic su **Visual Basic** o **Visual C#,** quindi selezionare un tipo di progetto, ad esempio **applicazione console**.
 
 3. Aggiungere un file di testo normale al progetto C# o Visual Basic. Il file conterrà codice condiviso se si vogliono scrivere più modelli di testo.
 
-   - In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**, quindi fare clic su **nuovo elemento**. Selezionare **file di testo**.
+   - In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** e quindi **Nuovo elemento**. Selezionare **file di testo**.
 
      Inserire il testo visualizzato nella sezione seguente.
 
 4. Aggiungere un file del modello di testo al progetto C# o Visual Basic.
 
-   - In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**, quindi fare clic su **nuovo elemento**. Selezionare **modello di testo**.
+   - In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** e quindi **Nuovo elemento**. Selezionare **modello di testo**.
 
      Inserire il codice seguente nel file del modello di testo.
 
@@ -296,7 +296,7 @@ namespace Test{
 }
 ```
 
-## <a name="What"></a>Come usare la generazione di testo
+## <a name="how-to-use-text-generation"></a><a name="What"></a> Come usare la generazione di testo
  La reale potenza della modellazione viene raggiunta quando si usano i modelli per la progettazione a livello di requisiti o di architettura. È possibile usare i modelli di testo per eseguire alcune attività di trasformazione di concetti di alto livello in codice. In molti casi non si ottiene una corrispondenza univoca tra gli elementi nei modelli UML e nelle classi o in altre parti del codice del programma.
 
  Inoltre, la trasformazione dipende dal dominio del problema specifico. Non esiste un mapping universale tra modelli e codice.
@@ -314,7 +314,7 @@ namespace Test{
 
 - **Profili**. Anche in un'unica area aziendale, l'interpretazione di un tipo di elemento può variare. Ad esempio, in un diagramma sito Web alcune classi possono rappresentare le pagine Web, mentre altre i blocchi di contenuto. Per semplificare la registrazione di queste differenze per gli utenti, definire gli stereotipi. Gli stereotipi consentono anche di collegare altre proprietà da applicare agli elementi dello stesso tipo. Gli stereotipi vengono forniti all'interno dei profili. Per altre informazioni, vedere [definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md).
 
-     Nel codice del modello è facile accedere agli stereotipi definiti in un oggetto. Esempio:
+     Nel codice del modello è facile accedere agli stereotipi definiti in un oggetto. Ad esempio:
 
     ```
     public bool HasStereotype(IClass c, string profile, string stereo)

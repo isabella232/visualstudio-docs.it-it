@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631497"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly (attività)
@@ -66,6 +66,6 @@ Annulla la registrazione degli assembly specificati ai fini dell'interoperabilit
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Attività RegisterAssembly](../msbuild/registerassembly-task.md)
+- [RegisterAssembly (attività)](../msbuild/registerassembly-task.md)
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

@@ -125,7 +125,7 @@ Visual Studio include numerosi refactoring, azioni di generazione del codice e c
 
 Le correzioni rapide e i refactoring più comuni includono:
 
-- Rinomina
+- Rinominare
 - Estrai metodo
 - Cambia firma metodo
 - Genera costruttore

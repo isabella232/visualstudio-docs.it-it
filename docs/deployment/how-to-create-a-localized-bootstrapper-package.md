@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382562"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto localizzato del programma di avvio automatico
@@ -90,7 +90,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 
 6. Salvare il file di *package.xml* .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Creare pacchetti del programma di avvio automatico personalizzati](../deployment/creating-bootstrapper-packages.md)
 - [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)
 - [Procedura: Creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md)

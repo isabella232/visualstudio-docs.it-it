@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d41a1bf5f71624751fc94f4a72f06e6da5c39630
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350381"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Come è possibile rimanere concentrati quando si esegue l'istruzione nell'app?
@@ -35,7 +35,7 @@ ms.locfileid: "85350381"
 ## <a name="solution"></a>Soluzione
  Se si dispone di un secondo computer, ricorrere al debug remoto. È possibile eseguire il programma sul computer remoto mentre si esegue il debugger sull'host. Per ulteriori informazioni, vedere [procedura: selezionare un computer remoto](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
 - [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

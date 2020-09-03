@@ -22,7 +22,7 @@
               href: lexical-hierarchy-of-symbol-types.md
             - name: Annotazione
               href: annotation.md
-            - name: Blocco
+            - name: Blocca
               href: block.md
             - name: Compilando
               href: compiland.md
@@ -62,7 +62,7 @@
               href: basetype.md
             - name: CustomType
               href: customtype.md
-            - name: Dimensione
+            - name: Dimension
               href: dimension.md
             - name: Enum (Debug Interface Access SDK)
               href: enum-debug-interface-access-sdk.md
