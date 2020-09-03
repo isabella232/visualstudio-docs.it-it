@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769595"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (estensione della creazione guidata modelli di Visual Studio)
@@ -35,11 +35,11 @@ Nome completo della classe che implementa l' `IWizard` interfaccia.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- No.
+### <a name="attributes"></a>Attributes
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 

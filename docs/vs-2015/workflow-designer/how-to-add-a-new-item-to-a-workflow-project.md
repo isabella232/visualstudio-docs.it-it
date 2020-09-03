@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 004f079576b792fb76d596ee8ebac3f6f96f316e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656624"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procedura: aggiungere un nuovo elemento ad un progetto flusso di lavoro
@@ -21,12 +21,12 @@ Dopo aver creato un progetto flusso di lavoro, è possibile aggiungervi attivit�
 
  Nella tabella seguente sono elencati gli elementi [!INCLUDE[wf](../includes/wf-md.md)] che è possibile aggiungere a un progetto flusso di lavoro.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
-|Attività|Attività che deve essere composta da altre attività. Selezionando questo elemento viene aggiunto al progetto lo stesso file XAML ottenuto quando si seleziona il modello di **libreria attività** per un nuovo progetto. [!INCLUDE[crabout](../includes/crabout-md.md)] su questa procedura, vedere [procedura: creare una libreria di attività](../workflow-designer/how-to-create-an-activity-library.md).|
-|ActivityDesigner|Finestra di progettazione per personalizzare l'esperienza di progettazione di un'attività. Selezionando questo elemento vengono aggiunti al progetto gli stessi file ottenuti quando si seleziona il modello **libreria** ActivityDesigner per un nuovo progetto. [!INCLUDE[crabout](../includes/crabout-md.md)] su questa procedura, vedere [procedura: creare una libreria di](../workflow-designer/how-to-create-an-activity-designer-library.md)ActivityDesigner.|
+|Attività|Attività che deve essere composta da altre attività. Selezionando questo elemento viene aggiunto al progetto lo stesso file XAML ottenuto quando si seleziona il modello di **libreria attività** per un nuovo progetto. [!INCLUDE[crabout](../includes/crabout-md.md)] in questa procedura, vedere [procedura: creare una libreria di attività](../workflow-designer/how-to-create-an-activity-library.md).|
+|ActivityDesigner|Finestra di progettazione per personalizzare l'esperienza di progettazione di un'attività. Selezionando questo elemento vengono aggiunti al progetto gli stessi file ottenuti quando si seleziona il modello **libreria** ActivityDesigner per un nuovo progetto. [!INCLUDE[crabout](../includes/crabout-md.md)] in questa procedura, vedere [procedura: creare una libreria di](../workflow-designer/how-to-create-an-activity-designer-library.md)ActivityDesigner.|
 |Attività Code|Attività con la logica di esecuzione scritta nel codice. Un file di codice sorgente con un override del metodo <xref:System.Activities.CodeActivity.Execute%2A> è già generato automaticamente.|
-|Servizio flusso di lavoro WCF|Servizio [!INCLUDE[indigo2](../includes/indigo2-md.md)] compilato usando le attività del flusso di lavoro. Selezionando questo elemento vengono aggiunti al progetto gli stessi file ottenuti quando si seleziona il modello di **applicazione del servizio flusso di lavoro WCF** per un nuovo progetto. [!INCLUDE[crabout](../includes/crabout-md.md)] su questa procedura, vedere [procedura: creare un'applicazione del servizio flusso di lavoro WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|
+|Servizio flusso di lavoro WCF|Servizio [!INCLUDE[indigo2](../includes/indigo2-md.md)] compilato usando le attività del flusso di lavoro. Selezionando questo elemento vengono aggiunti al progetto gli stessi file ottenuti quando si seleziona il modello di **applicazione del servizio flusso di lavoro WCF** per un nuovo progetto. [!INCLUDE[crabout](../includes/crabout-md.md)] in questa procedura, vedere [procedura: creare un'applicazione del servizio flusso di lavoro WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|
 
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Per aggiungere un nuovo elemento a un progetto flusso di lavoro
 

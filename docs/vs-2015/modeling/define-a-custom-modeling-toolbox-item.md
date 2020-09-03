@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851513"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definire un elemento della casella degli strumenti di modellazione personalizzata
@@ -34,7 +34,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 > [!NOTE]
 > È possibile usare questo metodo per creare strumenti elemento. È quindi possibile creare strumenti che è possibile trascinare dalla casella degli strumenti in un diagramma. Non è possibile creare strumenti connettore.
 
-## <a name="DefineTool"></a>Definizione di uno strumento di modellazione personalizzato
+## <a name="defining-a-custom-modeling-tool"></a><a name="DefineTool"></a> Definizione di uno strumento di modellazione personalizzato
 
 #### <a name="to-define-a-custom-modeling-tool"></a>Per definire un strumento di modellazione personalizzato
 
@@ -83,7 +83,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
 - Connettore di routing. Se si instradano connettori manualmente, il routing non verrà mantenuto quando si usa lo strumento. Le posizioni di alcune forme annidate, come le porte, non vengono mantenute relativamente ai proprietari.
 
-## <a name="tbxinfo"></a>Come definire le proprietà degli strumenti personalizzati
+## <a name="how-to-define-the-properties-of-custom-tools"></a><a name="tbxinfo"></a> Come definire le proprietà degli strumenti personalizzati
  Un file di informazioni della casella degli strumenti (con**estensione tbxinfo**) consente di specificare un nome della casella degli strumenti, un'icona, una descrizione comando, una scheda e una parola chiave della Guida per uno o più strumenti personalizzati. Assegnargli un nome, ad esempio **tbxinfo**.
 
  Il formato generale del file è il seguente:
@@ -113,7 +113,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
 - Come illustrato nell'esempio, `<bmp fileName="…"/>` per l'icona della casella degli strumenti e `<value>string</value>` per gli altri elementi.
 
-  \- oppure -
+  \- - oppure -
 
 - `<resource fileName="Resources.dll"`
 
@@ -129,16 +129,16 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 |---------------|-------------|
 |displayName|Il nome dell'elemento della casella degli strumenti.|
 |tabName|La scheda casella degli strumenti in cui l'elemento verrà visualizzato. È possibile specificare il nome della scheda standard per questo tipo di diagramma o un nome distinto.|
-|immagine|Il percorso del file bitmap ( **. bmp**), che deve avere altezza e larghezza pari a 16 e una profondità di colore di 24 bit.|
+|image|Il percorso del file bitmap (**. bmp**), che deve avere altezza e larghezza pari a 16 e una profondità di colore di 24 bit.|
 |f1Keyword|La parola chiave che individua un argomento della Guida.|
-|descrizione comandi|Una descrizione comandi per questo strumento.|
+|descrizione comando|Una descrizione comandi per questo strumento.|
 
  È possibile modificare il file bitmap in Visual Studio e impostare l'altezza e larghezza su 16 nella finestra Proprietà.
 
 > [!NOTE]
 > Se si inizia a usare un file con estensione tbxinfo dopo qualche esperimento con l'utilizzo dei file diagramma in modo autonomo, si noterà che la casella degli strumenti contiene le versioni vecchie e nuove di un elemento della casella degli strumenti. È possibile che ciò si verifichi anche se il nome del file diagramma è stato digitato in modo errato nel file con estensione tbxinfo. In tal caso, scegliere **Reimposta casella**degli strumenti dal menu di scelta rapida della casella degli strumenti. Gli elementi della casella degli strumenti personalizzata verranno rimossi. Riavviare Visual Studio e verranno visualizzati gli elementi personalizzati corretti.
 
-## <a name="Extension"></a>Come distribuire elementi della casella degli strumenti in un'estensione di Visual Studio
+## <a name="how-to-distribute-toolbox-items-in-a-visual-studio-extension"></a><a name="Extension"></a> Come distribuire elementi della casella degli strumenti in un'estensione di Visual Studio
  È possibile distribuire gli elementi della casella degli strumenti ad altri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utenti creandone un pacchetto in un'estensione di Visual Studio (VSIX). È possibile comprimere comandi, profili e altre estensioni nello stesso file VSIX. Per ulteriori informazioni, vedere [distribuzione delle estensioni di Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  Il modo consueto per compilare un'estensione di Visual Studio consiste nell'usare il modello di progetto VSIX. A tale scopo, è necessario avere installato [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
@@ -151,13 +151,13 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
 3. Aprire un progetto di estensione di Visual Studio esistente.
 
-     \- oppure -
+     \- - oppure -
 
      Aprire un nuovo progetto di estensione di Visual Studio.
 
-    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+    1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
-    2. Nella finestra di dialogo **nuovo progetto** , in **modelli installati**, scegliere **Visual C#** , **Extensibility**, **progetto VSIX**.
+    2. Nella finestra di dialogo **nuovo progetto** , in **modelli installati**, scegliere **Visual C#**, **Extensibility**, **progetto VSIX**.
 
 4. Aggiungere le definizioni della casella degli strumenti al progetto. Includere il file con **estensione tbxinfo** , i file di diagramma, i file bitmap e tutti i file di risorse e assicurarsi che siano inclusi in VSIX.
 
@@ -168,11 +168,11 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
 5. Impostare le seguenti proprietà di tutti i file appena aggiunti. È possibile impostare le relative proprietà contemporaneamente selezionandole tutte in Esplora soluzioni. Prestare attenzione a non modificare le proprietà degli altri file nel progetto.
 
-     **Copia nella directory di Output** = **copia sempre**
+     **Copia nella directory**  =  di output **Copia sempre**
 
-     **Azione di compilazione** = **Contenuto**
+     **Azione**  =  di compilazione **Contenuto** di
 
-     **Includi in VSIX** = **true**
+     **Includi in VSIX**  =  valore **true**
 
 6. Aprire **source.extension.vsixmanifest**. Viene aperto nell'editor del manifesto dell'estensione.
 
@@ -180,18 +180,18 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
      In **Asset**scegliere **nuovo** e quindi impostare i campi nella finestra di dialogo come segue:
 
-    - **Digitare** = **tipo di estensione personalizzato**
+    - **Tipo**  =  di **Tipo di estensione personalizzato**
 
     - Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Questa opzione non è inclusa nell'elenco a discesa. È necessario immetterla mediante tastiera.
 
-    - **File di = di origine nel file System**.
+    - **Origine**  =  dati **Nel file System**.
 
     - **Path** = il file con **estensione tbxinfo** , ad esempio, **strumenti. tbxinfo**
 
-8. Compilazione del progetto.
+8. Compilare il progetto.
 
 9. **Per verificare il funzionamento dell'estensione**, premere F5. Viene avviata l'istanza sperimentale di Visual Studio.
 
@@ -214,7 +214,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
 1. Creare un progetto Visual Studio Extension che contiene uno o più strumenti personalizzati.
 
-    Nel file con **estensione tbxinfo** usare il metodo del file di risorse per definire la `displayName`dello strumento, la casella degli strumenti `tabName`e la descrizione comando. Creare un file di risorse in cui queste stringhe sono definite, compilarlo in un assembly e farvi riferimento dal file con estensione tbxinfo.
+    Nel file con **estensione tbxinfo** usare il metodo del file di risorse per definire la `displayName` casella degli strumenti, la casella degli strumenti `tabName` e la descrizione comando. Creare un file di risorse in cui queste stringhe sono definite, compilarlo in un assembly e farvi riferimento dal file con estensione tbxinfo.
 
 2. Creare assembly aggiuntivi che contengono file di risorse con stringhe di altre lingue.
 

@@ -20,16 +20,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 020535ac73c48be74e56100c7b6f9c49b69e50dc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851307"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilizzo del codice Visual C++ (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Progettazione classi usa un'area di progettazione visiva denominata *diagramma classi* per rappresentare visivamente gli elementi di codice nel progetto. Si possono usare i diagrammi classi per progettare e visualizzare le classi e gli altri tipi in un progetto.
+Progettazione classi mostra un'area di progettazione visiva denominata *diagramma classi* che fornisce una rappresentazione visiva degli elementi di codice nel progetto. Si possono usare i diagrammi classi per progettare e visualizzare le classi e gli altri tipi in un progetto.
 
  Progettazione classi supporta gli elementi di codice C++ seguenti:
 
@@ -41,14 +41,14 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 
 - Struct
 
-- Enum
+- Enumerazione
 
 - Macro (visualizza la prospettiva post-elaborata della macro)
 
 - Typedef
 
 > [!NOTE]
-> Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [Diagrammi classi UML: informazioni di riferimento](../modeling/uml-class-diagrams-reference.md).
+> Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) (Diagrammi classi UML: riferimenti)
 
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Risoluzione dei problemi relativi al tipo e alla visualizzazione
 
@@ -56,14 +56,14 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
  Progettazione classi non tiene traccia del percorso dei file di origine. Di conseguenza, se si modifica la struttura del progetto o si spostano file di origine nel progetto, Progettazione classi può perdere traccia del tipo (soprattutto il tipo di origine di un typedef, classi base o tipi di associazione). Si potrebbe ricevere un errore, ad esempio **Progettazione classi: impossibile visualizzare il tipo**. In tal caso, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo nuovamente.
 
 ### <a name="update-and-performance-issues"></a>Problemi di aggiornamento e di prestazioni
- Per i progetti Visual C++, potrebbero essere necessari dai 30 ai 60 secondi perché una modifica nel file di origine venga visualizzata nel diagramma classi. A causa di questo ritardo, Progettazione classi potrebbe anche generare l'errore **Nessun tipo trovato nella selezione**. Se viene visualizzato un messaggio di errore di questo tipo, scegliere **Annulla** nel messaggio di errore e attendere che l'elemento di codice venga visualizzato in Visualizzazione classi. A questo punto, Progettazione classi dovrebbe essere in grado di visualizzare il tipo.
+ Per i progetti Visual C++, potrebbero essere necessari dai 30 ai 60 secondi perché una modifica nel file di origine venga visualizzata nel diagramma classi. A causa di questo ritardo, Progettazione classi potrebbe anche generare l'errore **Nessun tipo trovato nella selezione**. Se viene visualizzato un errore simile al seguente, fare clic su **Annulla** nel messaggio di errore e attendere che l'elemento di codice venga visualizzato in visualizzazione classi. A questo punto, Progettazione classi dovrebbe essere in grado di visualizzare il tipo.
 
  Se il diagramma classi non viene aggiornato con le modifiche apportate nel codice, può essere necessario chiuderlo e riaprirlo.
 
 ### <a name="type-resolution-issues"></a>Problemi di risoluzione del tipo
  Progettazione classi potrebbe non essere in grado di risolvere i tipi per i motivi seguenti:
 
-- Il tipo si trova in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Il tipo si trova in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [NIB Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Il tipo non si trova nell'ambito corretto, di conseguenza Progettazione classi non è in grado di trovarlo. Verificare che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
@@ -71,24 +71,24 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 
 - Il tipo si trova in una libreria a cui fa riferimento una direttiva #import. Una possibile soluzione alternativa consiste nell'aggiungere manualmente il codice generato (il file con estensione tlh) a una direttiva #include nel file di intestazione.
 
-  Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è **Impossibile trovare il codice per una o più forme nel diagramma classi '\<elemento>'** . Questo messaggio di errore non indica necessariamente che il codice sia errato. Indica solo che Progettazione classi non è in grado di visualizzare il codice. Provare a eseguire le operazioni seguenti.
+  L'errore che si verifica più spesso per un problema di risoluzione del tipo è che **non è stato possibile trovare il codice per una o più forme nel diagramma classi ' \<element> '**. Questo messaggio di errore non indica necessariamente che il codice sia errato. Indica solo che Progettazione classi non è in grado di visualizzare il codice.  Provare a eseguire le operazioni seguenti.
 
 - Verificare l'esistenza del tipo. Verificare di non aver involontariamente eliminato o impostato come codice il codice sorgente.
 
 - Verificare che Progettazione classi supporti il tipo inserito. Vedere [Limitazioni per gli elementi di codice C++](#limitations).
 
-- Provare a risolvere il tipo. Il tipo potrebbe trovarsi in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Provare a risolvere il tipo. Il tipo potrebbe trovarsi in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [NIB Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Verificare che il tipo si trovi nell'ambito corretto in modo che Progettazione classi possa trovarlo. Assicurarsi che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
 ### <a name="troubleshooting-other-error-messages"></a>Risoluzione di altri messaggi di errore
  È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Vedere il [forum dedicato a Progettazione classi di Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1).
 
-## <a name="limitations"></a> Limitazioni per gli elementi di codice C++
+## <a name="limitations-for-c-code-elements"></a><a name="limitations"></a> Limitazioni per gli elementi di codice C++
 
 - Quando viene caricato un progetto Visual C++, Progettazione classi funziona in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.
 
-- Progettazione classi supporta solo semantica C++ nativa. Per i progetti Visual C++ compilati in codice gestito, Progettazione classi visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma Progettazione classi non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).
+- Progettazione classi supporta solo semantica C++ nativa.  Per i progetti Visual C++ compilati in codice gestito, Progettazione classi visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma Progettazione classi non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).
 
 - Per i progetti Visual C++, Progettazione classi legge soltanto la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), Progettazione classi non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, Progettazione classi analogamente non visualizzerà niente.
 
@@ -107,4 +107,4 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 - Progettazione classi non può visualizzare tipi void o che derivano da un tipo void.
 
 ## <a name="see-also"></a>Vedere anche
- [Progettazione e visualizzazione di classi e tipi](../ide/designing-and-viewing-classes-and-types.md) [uso di classi e altri tipi (Progettazione classi)](../ide/working-with-classes-and-other-types-class-designer.md) [uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md) [progettazione di classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md) [informazioni aggiuntive sulle](../ide/additional-information-about-class-designer-errors.md) [classi C++ visive](../ide/visual-cpp-classes-in-class-designer.md) degli errori progettazione classi in Progettazione classi [ C++ strutture visive in](../ide/visual-cpp-structures-in-class-designer.md) progettazione classi [ C++ enumerazioni](../ide/visual-cpp-enumerations-in-class-designer.md) visive in Progettazione classi i [ C++ typedef](../ide/visual-cpp-typedefs-in-class-designer.md) visivi in Progettazione classi
+ [Progettazione e visualizzazione di classi e tipi](../ide/designing-and-viewing-classes-and-types.md) [utilizzo di classi e altri tipi (Progettazione classi)](../ide/working-with-classes-and-other-types-class-designer.md) [utilizzo di diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md) [progettazione di classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md) [informazioni aggiuntive sugli errori progettazione classi](../ide/additional-information-about-class-designer-errors.md) [Visual C++ classi in](../ide/visual-cpp-classes-in-class-designer.md) progettazione classi [strutture Visual C++ nelle](../ide/visual-cpp-structures-in-class-designer.md) [enumerazioni](../ide/visual-cpp-enumerations-in-class-designer.md) progettazione classi Visual C++ in Progettazione classi i [typedef](../ide/visual-cpp-typedefs-in-class-designer.md) Visual C++

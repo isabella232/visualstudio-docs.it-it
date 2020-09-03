@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6188cc273cdea1755071e36f606fb8f041508d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297316"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>Come è possibile effettuare il debug di una violazione di accesso?

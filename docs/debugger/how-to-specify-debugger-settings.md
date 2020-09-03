@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349107"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedura: specificare le impostazioni del debugger
@@ -41,7 +41,7 @@ In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile config
 
 4. Selezionare o deselezionare l'opzione o le opzioni desiderate. Per visualizzare le informazioni della Guida sulle opzioni, premere F1
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
 - [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)

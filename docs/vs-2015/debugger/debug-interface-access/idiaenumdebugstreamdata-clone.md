@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreamdata | Microsoft Docs
+title: 'IDiaEnumDebugStreamData:: Clone | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c97018adad246674c672fc1b081944f05e5913c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198571"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
@@ -35,10 +35,10 @@ HRESULT Clone ( 
   
 #### <a name="parameters"></a>Parametri  
  ppenum  
- [out] Restituisce un [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) oggetto che contiene la sequenza duplicata dei record di flusso di dati di debug.  
+ out Restituisce un oggetto [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) che contiene la sequenza duplicata di record del flusso di dati di debug.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

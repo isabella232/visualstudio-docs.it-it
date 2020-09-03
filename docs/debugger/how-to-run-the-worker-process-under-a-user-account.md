@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349406"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
@@ -86,6 +86,6 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 13. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà file ASP.NET temporanei** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Debug di ASP.NET: requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f05e91c13b1a9c52b5afad6942e5847643aa9490
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851557"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: impostare le proprietà del form
@@ -21,7 +21,7 @@ ms.locfileid: "75851557"
 
 In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto del form.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore immagini in Visual Basic-video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) o [esercitazione 1: creare un visualizzatore immagini in C#-video 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-set-your-form-properties"></a>Per impostare le proprietà del form
 

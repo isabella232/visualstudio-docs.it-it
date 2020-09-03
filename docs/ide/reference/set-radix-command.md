@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e88dc1318e29ddf35073b78218eb113fe8952aac
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769652"
 ---
 # <a name="set-radix-command"></a>Comando Imposta radice
@@ -32,7 +32,7 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>Argomenti
 `10` o `16` o `hex` o `dec`
 
-Facoltativa. Indica un valore decimale (10 o dec) o esadecimale (16 o hex). Se un argomento viene omesso, viene restituito il valore della radice corrente.
+facoltativo. Indica un valore decimale (10 o dec) o esadecimale (16 o hex). Se un argomento viene omesso, viene restituito il valore della radice corrente.
 
 ## <a name="example"></a>Esempio
 Nell'esempio che segue, l'ambiente viene impostato per la visualizzazione dei valori integer in formato esadecimale.

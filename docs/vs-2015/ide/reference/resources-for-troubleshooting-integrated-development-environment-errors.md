@@ -95,10 +95,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 07a84648a24a709b47b60ee9e2a6e5d342777d77
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851644"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Risorse per la risoluzione dei problemi relativi agli errori dell'ambiente di sviluppo integrato
@@ -114,5 +114,5 @@ Non tutti i messaggi di errore hanno un argomento specifico della Guida associat
 
  È possibile accedere a forum, blog, chat e altre risorse dal sito Web delle [Community tecniche di Microsoft](https://techcommunity.microsoft.com/).
 
-## <a name="product-support"></a>Supporto tecnico
+## <a name="product-support"></a>Supporto tecnico clienti
  Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](https://support.microsoft.com/). Per informazioni sul supporto tecnico disponibile nella propria area, vedere [Comunicazioni con Microsoft](../../ide/talk-to-us.md).

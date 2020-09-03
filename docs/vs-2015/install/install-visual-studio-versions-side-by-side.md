@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851017"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare le versioni Visual Studio Side-by-Side
@@ -32,7 +32,7 @@ ms.locfileid: "75851017"
 
 - Se si usa Visual Studio 2015 per aprire una soluzione creata in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], successivamente è possibile aprire e modificare nuovamente la soluzione nella versione precedente purché non sia stata implementata alcuna funzionalità specifica di Visual Studio 2015.
 
-- Se si prova a usare Visual Studio 2015 per aprire una soluzione creata in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] o in una versione precedente, potrebbe essere necessario modificare i progetti e i file per renderli compatibili con Visual Studio 2015. Per altre informazioni vedere la pagina [Trasferire, migrare e aggiornare progetti di Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015).
+- Se si prova a usare Visual Studio 2015 per aprire una soluzione creata in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] o in una versione precedente, potrebbe essere necessario modificare i progetti e i file per renderli compatibili con Visual Studio 2015. Per ulteriori informazioni, vedere la pagina [porta, migrazione e aggiornamento dei progetti di Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) .
 
 - Se si disinstalla una versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] da un computer in cui sono installate più versioni, le associazioni di file per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verranno rimosse per tutte le versioni. È possibile eseguire di nuovo il mapping di queste associazioni di file tramite il pulsante **Ripristina associazioni file** in **Ambiente**nella pagina **Generale** della finestra di dialogo [Opzioni](../ide/reference/general-environment-options-dialog-box.md) .
 
@@ -48,15 +48,15 @@ ms.locfileid: "75851017"
 
     |Linguaggio|Argomento|
     |--------------|-----------|
-    |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
-    |Visual C#|[Pagina Applicazione, Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)|
+    |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
+    |Visual C#|[Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[Configurazione di progetti](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |C++|[Procedura: modificare il Framework di destinazione e il set di strumenti della piattaforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Esecuzione di un'applicazione JScript su una versione precedente di Common Language Runtime](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Installare Visual Studio](../install/install-visual-studio-2015.md)
-- [Conversione, migrazione e aggiornamento dei progetti di Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
+- [Installa Visual Studio](../install/install-visual-studio-2015.md)
+- [Porta, migrazione e aggiornamento dei progetti di Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
 - [Compilazione di applicazioni isolate C/C++ e di assembly side-by-side](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
 - [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

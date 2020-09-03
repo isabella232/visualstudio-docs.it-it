@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3f982372f0189871c4f3d294c07a9e3cfc44391
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656612"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Procedura: aggiungere attività nella Casella degli strumenti [legacy]
-Quando si compila una soluzione del flusso di lavoro con la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy destinata al [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o al [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], le attività personalizzate possono essere aggiunte al progetto flusso di lavoro e le relative finestre di progettazione inserite nella **casella degli strumenti** per semplificare l'accesso. È inoltre possibile aggiungere attività direttamente alla **casella degli strumenti** da una libreria di collegamento dinamico (dll).
+Quando si compila una soluzione del flusso di lavoro con la legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] che [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] fa riferimento [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] a o, le attività personalizzate possono essere aggiunte al progetto flusso di lavoro e alle finestre di progettazione inserite nella **casella degli strumenti** per semplificare l'accesso. È inoltre possibile aggiungere attività direttamente alla **casella degli strumenti** da una libreria di collegamento dinamico (dll).
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Per aggiungere un'attività nella Casella degli strumenti da una DLL
 

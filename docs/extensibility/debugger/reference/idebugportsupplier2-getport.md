@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPortSupplier2::GetPort . Documenti Microsoft
+title: 'IDebugPortSupplier2:: getPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: be3f53c12b5562377cd79267d6e216a1435859a5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724661"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
-Ottiene una porta da un fornitore di porta.
+Ottiene una porta da un fornitore di porte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ int GetPort( 
 
 ## <a name="parameters"></a>Parametri
 `guidPort`\
-[in] Identificatore univoco globale (GUID) della porta.
+in Identificatore univoco globale (GUID) della porta.
 
 `ppPort`\
-[fuori] Restituisce un [oggetto IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta.
+out Restituisce un oggetto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_PORTSUPPLIER_NO_PORT` se non esiste alcuna porta con l'identificatore specificato.

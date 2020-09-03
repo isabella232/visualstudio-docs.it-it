@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851563"
 ---
 # <a name="step-2-run-your-program"></a>Passaggio 2: eseguire il programma
@@ -21,7 +21,7 @@ ms.locfileid: "75851563"
 
 Quando è stata creata una nuova soluzione, si è effettivamente compilato un programma che è possibile eseguire. Il programma non fa ancora molto: visualizza semplicemente una finestra vuota con **Form1** nella barra del titolo. È tuttavia possibile eseguirlo, come illustrato di seguito.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore immagini in Visual Basic-video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) o [esercitazione 1: creare un visualizzatore immagini in C#-video 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-run-your-program"></a>Per eseguire il programma
 
@@ -52,10 +52,10 @@ Quando è stata creata una nuova soluzione, si è effettivamente compilato un pr
     - Scegliere il pulsante X nell'angolo superiore della finestra **Form1**.
 
     > [!NOTE]
-    > Quando si esegue il programma dall'interno dell'IDE, questa operazione viene denominata *debug* perché in genere la si esegue per rilevare e correggere bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Nozioni di base sul debugger](../debugger/debugger-basics.md).
+    > Quando si esegue il programma dall'interno dell'IDE, questo viene chiamato *debug* perché in genere viene eseguito per individuare e correggere i bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per ulteriori informazioni sul debug, vedere [nozioni di base sul debugger](../debugger/debugger-basics.md).
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del form](../ide/step-3-set-your-form-properties.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 3: impostare le proprietà del form](../ide/step-3-set-your-form-properties.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto di applicazione Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 1: creare un progetto di applicazione Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).

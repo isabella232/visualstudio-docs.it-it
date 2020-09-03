@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e0c8fe9d5ba8c096a03de7a9df85945f4aeb4a0a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656338"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedura: aggiungere nodi all'area di lavoro da XML Schema Explorer
@@ -38,7 +38,7 @@ In questo argomento viene illustrato come aggiungere nodi all' [area di lavoro d
 
      Il nodo viene evidenziato in XML Schema Explorer.
 
-2. Fare clic con il pulsante destro del mouse sul nodo `PurchaseOrderType` in XML Schema Explorer e scegliere **Mostra tutti i riferimenti**.
+2. Fare clic con il pulsante destro del mouse sul `PurchaseOrderType` nodo in XML Schema Explorer e scegliere **Mostra tutti i riferimenti**.
 
      Il nodo `purchaseOrder` viene evidenziato.
 
@@ -50,15 +50,15 @@ In questo argomento viene illustrato come aggiungere nodi all' [area di lavoro d
 
 1. Digitare "purchaseOrder" nella casella di testo Cerca della barra degli strumenti di [XML Explorer](../xml-tools/xml-schema-explorer.md) e fare clic sul pulsante Cerca.
 
-     ![Ricerca parole chiave di XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+     ![Ricerca di parole chiave in XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
      I risultati della ricerca sono evidenziati in XML Schema Explorer e contrassegnati con un segno di spunta sulla barra di scorrimento verticale.
 
 2. Aggiungere i risultati della ricerca all'area di lavoro facendo clic sul pulsante **Aggiungi nodi evidenziati all'area di lavoro** nel riquadro dei risultati di riepilogo.
 
-     ![Risultato della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+     ![Risultati della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
 
-     Il nodo `purchaseOrder` e il nodo `PurchaseOrderType` vengono visualizzati uno accanto all'altro nell'area di progettazione della [visualizzazione grafico](../xml-tools/graph-view.md). Poiché i due nodi sono correlati (l'elemento `purchaseOrder` è di tipo `PurchaseOrderType`), viene tracciata una freccia tra loro.
+     Il `purchaseOrder` nodo e il `PurchaseOrderType` nodo vengono visualizzati uno accanto all'altro nell'area di progettazione della [visualizzazione grafico](../xml-tools/graph-view.md). Poiché i due nodi sono correlati (l'elemento `purchaseOrder` è di tipo `PurchaseOrderType`), viene tracciata una freccia tra loro.
 
 ## <a name="see-also"></a>Vedere anche
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)

@@ -1,5 +1,5 @@
 ---
-title: Costanti COM nel codice gestito Documenti Microsoft
+title: Costanti COM nel codice gestito | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739832"
 ---
 # <a name="com-constants-in-managed-code"></a>Costanti COM nel codice gestito
-Il Framework di pacchetto gestito (MPF) rende disponibili alcune costanti COM standard per il codice gestito. Queste costanti sono elencate di seguito come riferimento.
+Il Framework di pacchetto gestito (MPF) rende disponibili alcune costanti COM standard per il codice gestito. Queste costanti sono elencate di seguito per riferimento.
 
 ## <a name="boolean-hresult-values"></a>Valori HRESULT booleani
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>

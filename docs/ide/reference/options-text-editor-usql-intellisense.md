@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91d2af8bfcd8c9d80b589e01aedd535afbd1a913
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769464"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opzioni, Editor di testo, U-SQL, IntelliSense
@@ -56,4 +56,4 @@ Selezionare una casella di controllo per abilitare **Informazioni rapide** oppur
 ## <a name="see-also"></a>Vedere anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [Utilizzo di IntelliSense](../../ide/using-intellisense.md)

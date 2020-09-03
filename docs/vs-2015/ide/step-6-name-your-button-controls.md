@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d4d703dbe28776cd93c7a438fc457d9f50ac4f7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851122"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: assegnare un nome ai pulsanti
@@ -26,7 +26,7 @@ Nel form esiste un solo controllo PictureBox. Quando è stato aggiunto, l'IDE lo
 
  Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button2**, **button3**e **button4**. Da un semplice sguardo ai nomi correnti non è possibile capire quale pulsante corrisponda al pulsante **Chiudi** e quale corrisponda al pulsante **Visualizza immagine** . È questo il motivo per cui è utile assegnare nomi più descrittivi ai pulsanti.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore immagini in Visual Basic-video 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) o [esercitazione 1: creare un visualizzatore immagini in C#-video 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Per assegnare un nome ai pulsanti
 
@@ -41,7 +41,7 @@ Nel form esiste un solo controllo PictureBox. Quando è stato aggiunto, l'IDE lo
 
 3. Fare doppio clic sul pulsante **Visualizza immagine** nel form. In alternativa, scegliere il pulsante **Visualizza immagine** nel form, quindi premere INVIO. Quando si esegue questa operazione, nell''IDE viene aperta una scheda aggiuntiva nella finestra principale denominata **Form1.cs** (**Form1.vb** se si usa Visual Basic). In questa scheda è riportato il file di codice sottostante del form, come illustrato nell'immagine seguente.
 
-     ![Scheda Form1.cs con Visual C&#35; code](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Form1.cs Tab con codice C# visivo
+     ![Scheda Form1.cs con codice Visual C&#35;](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Scheda Form1.cs con codice Visual C#
 
 4. Concentrare l'attenzione su questa parte del codice. Se si usa Visual Basic, scegliere la scheda **VB** nell'area sottostante per visualizzare la versione Visual Basic del codice.
 
@@ -71,7 +71,7 @@ Nel form esiste un solo controllo PictureBox. Quando è stato aggiunto, l'IDE lo
 
      Dopo aver aggiunto un gestore dell'evento per un controllo, è possibile tornarvi in qualsiasi momento da Progettazione Windows Form facendo doppio clic sul controllo o scegliendo **Visualizza**, **Codice**sulla barra dei menu.
 
-     I nomi sono importanti quando si compilano programmi e i metodi (inclusi i gestori di eventi) possono avere qualsiasi nome si desideri. Quando si aggiunge un gestore dell'evento con l'IDE, viene creato un nome basato sul nome del controllo e sull'evento gestito. Ad esempio, l'evento Click per un pulsante denominato **showButton** viene chiamato metodo del gestore dell'evento `showButton_Click()` . Inoltre, vengono generalmente aggiunte le parentesi di apertura e chiusura () dopo il nome del metodo, per indicare che si tratta di metodi. Se si decide di modificare il nome di una variabile di codice, fare clic con il pulsante destro del mouse sulla variabile nel codice, quindi scegliere **Refactoring**, **Rinomina**. Tutte le istanze della variabile nel codice vengono rinominate. Per ulteriori informazioni, vedere [rinominareC#il refactoring ()](../csharp-ide/rename-refactoring-csharp.md) o il [refactoring e rinominare la finestra di dialogo](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) .
+     I nomi sono importanti quando si compilano programmi e i metodi (inclusi i gestori di eventi) possono avere qualsiasi nome si desideri. Quando si aggiunge un gestore dell'evento con l'IDE, viene creato un nome basato sul nome del controllo e sull'evento gestito. Ad esempio, l'evento Click per un pulsante denominato **showButton** viene chiamato metodo del gestore dell'evento `showButton_Click()` . Inoltre, vengono generalmente aggiunte le parentesi di apertura e chiusura () dopo il nome del metodo, per indicare che si tratta di metodi. Se si decide di modificare il nome di una variabile di codice, fare clic con il pulsante destro del mouse sulla variabile nel codice, quindi scegliere **Refactoring**, **Rinomina**. Tutte le istanze della variabile nel codice vengono rinominate. Per ulteriori informazioni, vedere [rinominare il refactoring (C#)](../csharp-ide/rename-refactoring-csharp.md) o il [refactoring e rinominare la finestra di dialogo](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) .
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 

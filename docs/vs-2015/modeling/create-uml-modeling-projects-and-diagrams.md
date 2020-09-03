@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 52c55b2cfdf000d91a83071b53e8e9450187b720
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852025"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Creare diagrammi e progetti di modellazione UML
@@ -42,7 +42,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
 > [!NOTE]
 > Esiste un altro tipo di diagramma, il diagramma classi .NET, usato per visualizzare il codice programma. Per ulteriori informazioni, vedere [progettazione e visualizzazione di classi e tipi](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
-## <a name="CreatingModelingDiagrams"></a>Creazione di un diagramma in un progetto di modello
+## <a name="create-a-diagram-in-a-modeling-project"></a><a name="CreatingModelingDiagrams"></a> Creazione di un diagramma in un progetto di modello
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Per creare un diagramma e aggiungerlo a un progetto
@@ -59,13 +59,13 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
 
    - Selezionare un progetto di modello già esistente nella soluzione, quindi fare clic su **OK**.
 
-     \- oppure -
+     \- - oppure -
 
    1. Selezionare **Crea un nuovo progetto di modello**e quindi fare clic su **OK**.
 
    2. Nella finestra di dialogo **Crea nuovo progetto di modello** , digitare un nome e un percorso per il nuovo progetto, quindi fare clic su **OK**.
 
-        ![Finestra di dialogo Crea nuovo progetto di modello](../modeling/media/uml-createmodel.png "UML_CreateModel")
+        ![Finestra di dialogo Crea un nuovo progetto di modello](../modeling/media/uml-createmodel.png "UML_CreateModel")
 
         Se la soluzione è aperta, il nuovo progetto verrà aggiunto alla soluzione. Se non sono presenti soluzioni aperte, sarà possibile digitare un nome per una nuova soluzione.
 
@@ -78,9 +78,9 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
     > [!NOTE]
     > Il progetto di modellazione contiene una cartella di definizione del modello denominata **ModelDefinition**.
 
-2. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+2. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-3. Nella finestra di dialogo **Aggiungi nuovo elemento-** *nome progetto\<* , in **modelli**, fare clic sul tipo di diagramma di modellazione, ad esempio **diagramma dei componenti UML**.
+3. Nella finestra di dialogo **Aggiungi nuovo elemento-** *\<project name>* , in **modelli**, fare clic sul tipo di diagramma di modellazione, ad esempio **diagramma dei componenti UML**.
 
 4. Digitare un nome per il diagramma, quindi fare clic su **Aggiungi**.
 
@@ -91,7 +91,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
 
 #### <a name="to-create-a-blank-modeling-project"></a>Per creare un progetto di modello vuoto
 
-1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
+1. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
 
 2. Nella finestra di dialogo **nuovo progetto** , in **modelli installati**, fare clic su **progetti di modellazione**.
 
@@ -101,7 +101,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
 
 5. Nella casella **soluzione** selezionare **Aggiungi a soluzione** per aggiungere il nuovo progetto a una soluzione già aperta. in alternativa, **creare una nuova soluzione** per chiudere qualsiasi soluzione aperta e aggiungere il progetto a una nuova soluzione.
 
-## <a name="RemovingModelingDiagrams"></a>Rimozione di diagrammi di modellazione da un progetto
+## <a name="removing-modeling-diagrams-from-a-project"></a><a name="RemovingModelingDiagrams"></a> Rimozione di diagrammi di modellazione da un progetto
  È possibile eliminare un diagramma in modo definitivo oppure escludere temporaneamente un diagramma da un progetto e quindi ripristinarlo.
 
 #### <a name="to-permanently-delete-a-diagram-from-a-project"></a>Per eliminare un diagramma da un progetto in modo definitivo
@@ -138,7 +138,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
     > [!NOTE]
     > Ogni diagramma ha una coppia di file nel file system. Non selezionare un file con estensione `.layout`. Visual Studio non supporta inoltre l'aggiunta di diagrammi UML esistenti a più progetti di modellazione. Ogni file di diagramma deve essere aperto nel progetto di modello in cui è stato creato. Un diagramma UML mostra infatti una visualizzazione del modello di proprietà del rispettivo progetto di modello.
 
-## <a name="NonModelDiagrams"></a>Diagrammi che non richiedono progetti di modellazione
+## <a name="diagrams-that-do-not-require-modeling-projects"></a><a name="NonModelDiagrams"></a> Diagrammi che non richiedono progetti di modellazione
  I tipi di diagramma seguenti non fanno parte di un modello di progetto:
 
 - Diagramma classi creati come visualizzazioni del codice sorgente. Non sono correlati ai diagrammi classi UML. Per ulteriori informazioni, vedere [progettazione e visualizzazione di classi e tipi](../ide/designing-and-viewing-classes-and-types.md).
@@ -147,13 +147,13 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
 
 - Diagrammi che non sono diagrammi UML o diagrammi livello, ad esempio linguaggi specifici di dominio.
 
-## <a name="TroubleshootingModelingProjects"></a>Risoluzione dei problemi relativi a progetti e diagrammi di modellazione
+## <a name="troubleshooting-modeling-projects-and-diagrams"></a><a name="TroubleshootingModelingProjects"></a> Risoluzione dei problemi relativi a progetti e diagrammi di modellazione
  La tabella seguente illustra i problemi che si possono verificare con i progetti di modello o i diagrammi e come risolverli:
 
 |**Problema**|**Cause**|**Risoluzione**|
 |---------------|----------------|--------------------|
-|Non è possibile aprire o caricare il progetto di modello nella soluzione.<br /><br /> Viene visualizzato il seguente messaggio:<br /><br /> "Uno o più progetti della soluzione non sono stati caricati correttamente. Per dettagli, vedere la finestra di output".<br /><br /> Nella finestra di output viene visualizzato il messaggio seguente:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: errore: formato GUID non riconosciuto".|Un progetto di modello include riferimenti a progetti con lo stesso nome e nella stessa soluzione.<br /><br /> Ad esempio, un livello è collegato a progetti con lo stesso nome che si trovano nella stessa soluzione.|Usare un editor di testo per aprire il file del progetto di modello, rimuovere i riferimenti e quindi provare ad aprire di nuovo il progetto di modello.<br /><br /> Per evitare questo problema, non aggiungere riferimenti a progetti con lo stesso nome. Assicurarsi che i nomi dei progetti siano univoci.|
-|Elementi mancanti da diagrammi aggiunti, copiati o trascinati in altri progetti di modello o altre posizioni nella soluzione.<br /><br /> -oppure-<br /><br /> I messaggi seguenti vengono visualizzati quando si tenta di aprire un diagramma:<br /><br /> -"Alcune forme o connettori nel diagramma risultano mancanti perché le relative definizioni non esistono nel progetto. Le definizioni sono state eliminate dal modello durante la chiusura del diagramma oppure il diagramma è stato copiato in un progetto che non contiene tali definizioni".<br /><br /> -oppure-<br /><br /> -"Questo documento è aperto da un altro progetto".|Il file di diagramma è stato aggiunto, trascinato o copiato da un progetto di modello a un altro progetto di modello o in un'altra posizione nella soluzione.|Per copiare un file di diagramma, creare un nuovo diagramma e quindi copiare gli elementi dal diagramma di origine al nuovo diagramma.|
+|Non è possibile aprire o caricare il progetto di modello nella soluzione.<br /><br /> Viene visualizzato il messaggio seguente:<br /><br /> "Uno o più progetti della soluzione non sono stati caricati correttamente. Per dettagli, vedere la finestra di output".<br /><br /> Nella finestra di output viene visualizzato il messaggio seguente:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: errore: formato GUID non riconosciuto".|Un progetto di modello include riferimenti a progetti con lo stesso nome e nella stessa soluzione.<br /><br /> Ad esempio, un livello è collegato a progetti con lo stesso nome che si trovano nella stessa soluzione.|Usare un editor di testo per aprire il file del progetto di modello, rimuovere i riferimenti e quindi provare ad aprire di nuovo il progetto di modello.<br /><br /> Per evitare questo problema, non aggiungere riferimenti a progetti con lo stesso nome. Assicurarsi che i nomi dei progetti siano univoci.|
+|Elementi mancanti da diagrammi aggiunti, copiati o trascinati in altri progetti di modello o altre posizioni nella soluzione.<br /><br /> - oppure -<br /><br /> I messaggi seguenti vengono visualizzati quando si tenta di aprire un diagramma:<br /><br /> -"Alcune forme o connettori nel diagramma risultano mancanti perché le relative definizioni non esistono nel progetto. Le definizioni sono state eliminate dal modello durante la chiusura del diagramma oppure il diagramma è stato copiato in un progetto che non contiene tali definizioni".<br /><br /> - oppure -<br /><br /> -"Questo documento è aperto da un altro progetto".|Il file di diagramma è stato aggiunto, trascinato o copiato da un progetto di modello a un altro progetto di modello o in un'altra posizione nella soluzione.|Per copiare un file di diagramma, creare un nuovo diagramma e quindi copiare gli elementi dal diagramma di origine al nuovo diagramma.|
 
 ## <a name="see-also"></a>Vedere anche
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md) [strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)

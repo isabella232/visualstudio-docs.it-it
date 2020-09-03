@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPortSupplier2::EnumPorts . Documenti Microsoft
+title: 'IDebugPortSupplier2:: EnumPorts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 657d42647cd6c9ffdaa410c21522a5ed70807019
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724677"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
@@ -41,7 +41,7 @@ int EnumPorts( 
 
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
-[fuori] Restituisce un oggetto [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) contenente un elenco di porte fornite.
+out Restituisce un oggetto [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) contenente un elenco di porte fornite.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

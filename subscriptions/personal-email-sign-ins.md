@@ -8,14 +8,14 @@ ms.date: 04/10/2020
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
 ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81223684"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Sottoscrizioni di Visual Studio: perché vengono visualizzati gli account personali per i sottoscrittori?
-Dopo la migrazione delle società dal Volume Licensing Service Center (VLSC) al nuovo portale di [amministrazione delle sottoscrizioni](https://manage.visualstudio.com)di Visual Studio , gli amministratori sono stati sorpresi di scoprire che l'"Indirizzo di posta elettronica di accesso" per alcuni sottoscrittori mostra un indirizzo di posta elettronica personale come Hotmail o Outlook.  
+Dopo la migrazione delle aziende da Volume Licensing Service Center (VLSC) al nuovo portale di [amministrazione delle sottoscrizioni](https://manage.visualstudio.com)di Visual Studio, gli amministratori sono sorpresi di scoprire che l'indirizzo di posta elettronica di accesso per alcuni sottoscrittori Mostra un indirizzo di posta elettronica personale come Hotmail o Outlook.  
 
 ## <a name="cause"></a>Causa
 Questa situazione si verifica a causa dei processi di accesso associati all'esperienza legacy degli abbonati a MSDN. La migrazione degli utenti da Volume License Service Center (VLSC) al portale di amministrazione delle sottoscrizioni di Visual Studio è stata completata senza modifiche. Gli amministratori potrebbero non essere a conoscenza del fatto che gli utenti usavano account personali per accedere ai vantaggi della propria sottoscrizione. Prima delle migrazioni dei sottoscrittori di Visual Studio, completate nel 2016, erano necessarie due azioni per usare correttamente una sottoscrizione di Visual Studio:
@@ -25,33 +25,33 @@ Questa situazione si verifica a causa dei processi di accesso associati all'espe
 Durante il processo di attivazione del sottoscrittore, veniva richiesto un account Microsoft per eseguire l'accesso. Se il sottoscrittore non tentava di convertire l'account aziendale o dell'istituto di istruzione (ad esempio tasha@contoso.com) in un account Microsoft, poteva creare un nuovo account Microsoft o sfruttarne uno esistente. A causa di tutto ciò, l'indirizzo di posta elettronica di accesso può risultare diverso dall'indirizzo di posta elettronica di assegnazione.
 
 > [!NOTE]
-> La moderna esperienza [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) di sottoscrittore supporta i tipi di identità di lavoro, scuola e account Microsoft (MSA).
+> L'esperienza del Sottoscrittore moderna di [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) supporta sia i tipi di identità dell'account aziendale che dell'Istituto di istruzione Microsoft (MSA).
 
 ## <a name="solution"></a>Soluzione
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
 
-Per risolvere il problema, è sufficiente selezionare il pulsante Connetti messaggi di **posta elettronica** e il sistema tenterà di associare gli account con MSA agli utenti esistenti in Azure Active Directory (Azure AD) dell'organizzazione in base alla corrispondenza tra nome e cognome. Se c'è un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della partita.  
+Per risolvere il problema, è sufficiente selezionare il pulsante **Connetti messaggi di posta elettronica** e il sistema tenterà di associare gli account di MSAS agli utenti esistenti nell'Azure Active Directory dell'organizzazione (Azure ad) in base alla corrispondenza con il nome e il cognome. Se si verifica un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della corrispondenza.  
 
 > [!div class="mx-imgBorder"]
-> ![Pulsante Connetti e-mail](_img/connect-emails/connect-emails-button.png)
+> ![Pulsante Connetti messaggi di posta elettronica](_img/connect-emails/connect-emails-button.png)
 
-È anche possibile usare la **directory di ricerca** per correggere gli errori o immettere informazioni mancanti da Azure AD. Se tutte le corrispondenze sono corrette, puoi scegliere di "Selezionare tutti i sottoscrittori corrispondenti", invece di selezionarli uno alla volta.  
-
-> [!div class="mx-imgBorder"]
-> ![Connetti e-mail a comparsa](_img/connect-emails/connect-emails-flyout.png)
-
-Poi clicca su "continua" che ti porterà a una schermata che delinea le modifiche da prendere posto. Se si accetta, fare clic su "Salva" e le modifiche verranno apportate. Il sottoscrittore riceverai anche un messaggio che li informa della modifica al successivo accesso alla sottoscrizione.   
+È anche possibile usare la **directory di ricerca** per correggere gli errori o inserire le informazioni mancanti dal Azure ad. Se l'aspetto di tutte le corrispondenze è corretto, è possibile scegliere "Seleziona tutti i sottoscrittori corrispondenti", anziché selezionarli uno alla volta.  
 
 > [!div class="mx-imgBorder"]
-> ![Conferma del collegamento delle e-mail](_img/connect-emails/connect-emails-confirm.png) 
+> ![Connessione al volo](_img/connect-emails/connect-emails-flyout.png)
+
+Fare quindi clic su "continua" per passare a una schermata che descrive le modifiche da eseguire. Se si accetta, fare clic su "Salva" per apportare le modifiche. Il sottoscrittore riceverà anche un messaggio che li informa della modifica al successivo accesso alla sottoscrizione.   
+
+> [!div class="mx-imgBorder"]
+> ![Conferma connessione messaggi di posta elettronica](_img/connect-emails/connect-emails-confirm.png) 
 
 > [!NOTE]
-> Quando si modifica l'indirizzo di posta elettronica di accesso, viene aggiornato https://my.visualstudio.comsolo il messaggio di posta elettronica utilizzato dal sottoscrittore per accedere alla sottoscrizione in . Se il sottoscrittore ha già attivato i vantaggi, ad esempio Azure o Pluralsight usando l'altro indirizzo di posta elettronica, dovrà continuare a usare tali indirizzi di posta elettronica per accedervi. Per tutti i nuovi vantaggi a cui accedono, è necessario utilizzare il nuovo indirizzo di posta elettronica. 
+> Quando si modifica l'indirizzo di posta elettronica di accesso, questo aggiorna solo il messaggio di posta elettronica usato dal Sottoscrittore per accedere alla sottoscrizione in https://my.visualstudio.com . Se il Sottoscrittore ha già attivato vantaggi come Azure o Pluralsight usando l'altro indirizzo di posta elettronica, sarà necessario continuare a usare tali indirizzi di posta elettronica per accedervi. Per tutti i nuovi vantaggi a cui hanno accesso, è necessario usare il nuovo indirizzo di posta elettronica. 
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

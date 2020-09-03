@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e5333f6133dd3fd56077c14d6e56cd6fdada4404
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656416"
 ---
 # <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>Procedura: specificare set di regole di codice gestito per più progetti in una soluzione
@@ -28,7 +28,7 @@ Per impostazione predefinita, a tutti i progetti gestiti di una soluzione viene 
 
 ### <a name="to-specify-a-rule-set-for-multiple-projects-in-a-managed-code--solution"></a>Per specificare un set di regole per più progetti in una soluzione di codice gestito
 
-1. In [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Aprire la soluzione [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] o [!INCLUDE[vsPro](../includes/vspro-md.md)].
+1. In [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)] aprire la soluzione.
 
 2. Nel menu **analizza** fare clic su **Configura analisi codice per la soluzione**.
 

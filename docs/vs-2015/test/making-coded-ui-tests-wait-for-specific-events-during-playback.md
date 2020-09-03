@@ -9,23 +9,23 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbc83731cfc1c04f33fc4de05f28ffd1a54f3e4d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851777"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A tale scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato, come descritto nella tabella seguente. Per un esempio di test codificato dell'interfaccia utente in cui si attende che un controllo venga abilitato usando il metodo <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vedere [Procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A tale scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato, come descritto nella tabella seguente. Per un esempio di test codificato dell'interfaccia utente che attende che un controllo venga abilitato usando il <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> metodo, vedere [procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Requirements**
+ **Requisiti**
 
  Visual Studio Enterprise
 
 > [!TIP]
-> È inoltre possibile aggiungere ritardi prima delle azioni usando l'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> È inoltre possibile aggiungere ritardi prima delle azioni usando l'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere [procedura: inserire un ritardo prima di un'azione dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).
 
  **Metodi UITestControl.WaitForControlXXX()**
 
@@ -35,7 +35,7 @@ Nella riproduzione di un test codificato dell'interfaccia utente è possibile fa
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- Attende che il controllo venga abilitato quando la procedura guidata esegue una convalida asincrona dell'input effettuando chiamate al server. Ad esempio, è possibile fare in modo che un metodo attenda che il pulsante **Next** della procedura guidata venga abilitato (). Per un esempio di questo metodo, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+ Attende che il controllo venga abilitato quando la procedura guidata esegue una convalida asincrona dell'input effettuando chiamate al server. Ad esempio, è possibile fare in modo che un metodo attenda che il pulsante **Next** della procedura guidata venga abilitato (). Per un esempio di questo metodo, vedere [procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -107,7 +107,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 > [!TIP]
 > L'Editor di test codificati dell'interfaccia utente consente di modificare facilmente i test. Con l'Editor di test codificati dell'interfaccia utente è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [Modifica di test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
- **Linee guida**
+ **Indicazioni**
 
  Per altre informazioni, vedere [Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://msdn.microsoft.com/library/jj159335.aspx).
 

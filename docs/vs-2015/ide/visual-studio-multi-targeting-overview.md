@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9e8b53c5bd4d6045d7582c24be865ae216f1114
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851094"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Cenni preliminari sul multitargeting di Visual Studio
@@ -27,7 +27,7 @@ ms.locfileid: "75851094"
 In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile specificare la versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] necessaria per l'applicazione. Pertanto, se si intende usare questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per continuare a sviluppare un progetto che è stato avviato in una versione precedente, non è necessario modificare la destinazione del framework. È anche possibile creare una soluzione contenente progetti destinati a versioni diverse del framework. La definizione della destinazione del framework consente anche di garantire che l'applicazione usi solo le funzionalità disponibili nella versione specificata del framework.
 
 > [!TIP]
-> È anche possibile definire la destinazione delle applicazioni per piattaforme diverse. Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+> È anche possibile definire la destinazione delle applicazioni per piattaforme diverse. Per ulteriori informazioni, vedere [multitargeting](../msbuild/msbuild-multitargeting-overview.md)
 
 ## <a name="framework-targeting-features"></a>Funzionalità di definizione della destinazione del framework
  La definizione della destinazione del framework include le seguenti funzionalità:
@@ -44,7 +44,7 @@ In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile
 
   Quando si lavora su un progetto destinato a una versione precedente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio modifica in modo dinamico l'ambiente di sviluppo, come indicato di seguito:
 
-- Vengono filtrati gli elementi delle finestre di dialogo **Nuovo progetto**, **Aggiungi nuovo elemento**, **Aggiungi nuovo riferimento** **Aggiungi riferimento al servizio** per omettere scelte che non sono disponibili nella versione di destinazione.
+- Vengono filtrati gli elementi delle finestre di dialogo **Nuovo progetto**, **Aggiungi nuovo elemento**, **Aggiungi nuovo riferimento****Aggiungi riferimento al servizio** per omettere scelte che non sono disponibili nella versione di destinazione.
 
 - Vengono filtrati i controlli personalizzati nella **Casella degli strumenti** per rimuovere quelli che non sono disponibili nella versione di destinazione e per visualizzare solo i controlli più aggiornati quando sono disponibili più controlli.
 
@@ -60,7 +60,7 @@ In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile
 > La definizione della destinazione del framework non garantisce che l'applicazione verrà eseguita correttamente. È necessario testare l'applicazione per assicurarsi che venga eseguita la versione di destinazione. Non è possibile usare come destinazione versioni di framework precedenti a .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Selezione di una versione del framework di destinazione
- Quando si crea un progetto, selezionare la versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] di destinazione nella finestra di dialogo **Nuovo progetto**. L'elenco dei modelli di progetto disponibili viene filtrato in base alla selezione. In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Quando si crea un progetto, selezionare la versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] di destinazione nella finestra di dialogo **Nuovo progetto**. L'elenco dei modelli di progetto disponibili viene filtrato in base alla selezione. In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [How to: target a version of the .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 > Nelle edizioni Express di Visual Studio, non è possibile impostare il framework di destinazione nella finestra di dialogo **Nuovo progetto**.
@@ -71,7 +71,7 @@ In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile
 > [!NOTE]
 > Un profilo client di .NET Framework è un sottoinsieme di .NET Framework che offre un set limitato di librerie e funzionalità. Per altre informazioni sui profili di client, vedere [Profilo client .NET Framework](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
 
- La finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema non pertinenti alla versione di destinazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in modo che non possano essere aggiunti a un progetto inavvertitamente. (Gli assembly di sistema sono file con estensione dll inclusi in una versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].) I riferimenti che appartengono a una versione del framework successiva alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] del progetto su una in cui sia incluso il riferimento.  Per altre informazioni, vedere [Introduzione a Creazione progetti](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
+ La finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema non pertinenti alla versione di destinazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in modo che non possano essere aggiunti a un progetto inavvertitamente. Gli assembly di sistema sono file con estensione dll inclusi in una [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione. I riferimenti che appartengono a una versione del Framework successiva alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] del progetto su una in cui sia incluso il riferimento.  Per altre informazioni, vedere [Introduzione a Creazione progetti](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 
  Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -79,6 +79,6 @@ In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile
  Quando si definisce la destinazione di .NET Framework 3.5 o versioni successive, vengono aggiunti automaticamente un riferimento a System.Core e un'importazione a livello di progetto per System.Linq (solo in Visual Basic). Per usare le funzionalità LINQ, è necessario attivare anche Option Infer (solo in Visual Basic). Se si passa a una versione precedente di .NET Framework, il riferimento e l'importazione vengono rimossi automaticamente. Per altre informazioni, vedere [Procedura: Creare un progetto LINQ](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Vedere anche
-[Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
-[.NET Framework Multi-Targeting for ASP.NET Web Projects (Multitargeting di NET Framework per progetti Web ASP.NET)](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
-[Platform compatibility and system requirements (Compatibilità della piattaforma e requisiti di sistema)](/visualstudio/productinfo/vs2015-compatibility-vs)
+[Multitargeting](../msbuild/msbuild-multitargeting-overview.md) 
+ [.NET Framework la funzionalità multitargeting per i progetti](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) 
+ Web ASP.NET [Compatibilità della piattaforma e requisiti di sistema](/visualstudio/productinfo/vs2015-compatibility-vs)

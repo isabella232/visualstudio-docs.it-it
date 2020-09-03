@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770182"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Procedura: Personalizzare i diagrammi classi
@@ -37,7 +37,7 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 
 2. Nella barra degli strumenti di **Progettazione classi** fare clic sul pulsante **Zoom avanti** o **Zoom indietro** per modificare il livello di zoom dell'area di progettazione.
 
-     oppure
+     Oppure
 
      Specificare un particolare valore di zoom. È possibile usare l'elenco a discesa **Zoom** o digitare un livello di zoom valido (l'intervallo valido è compreso tra 10% e 400%).
 

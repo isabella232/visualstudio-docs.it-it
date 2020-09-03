@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b2e827b180ae218f3dd42b124500e01260e72d82
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297390"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
@@ -23,7 +23,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
  Questa è la finestra **Report Utilizzo GPU**:  
   
- ![Report sull'utilizzo della GPU, con sequenze temporali CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![Report Utilizzo GPU con sequenze temporali per CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Requisiti  
  Di seguito sono elencati i requisiti aggiuntivi per lo strumento Utilizzo GPU rispetto ai requisiti di Diagnostica grafica.  
@@ -44,7 +44,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
 2. Nell'hub Prestazioni e diagnostica selezionare la casella accanto a **Utilizzo GPU**. Facoltativamente, selezionare le caselle accanto agli altri strumenti a cui si è interessati. È possibile eseguire contemporaneamente svariati strumenti per le prestazioni e la diagnostica, per ottenere un quadro più completo delle prestazioni dell'app.  
   
-    ![Scegliere gli strumenti di diagnostica che si desidera utilizzare.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Scegliere lo strumento di diagnostica da usare.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
    > Non tutti gli strumenti per le prestazioni e la diagnostica possono essere eseguiti contemporaneamente.  
@@ -63,15 +63,15 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
 1. Nella parte inferiore della finestra della sessione di diagnostica scegliere il collegamento **Arresta raccolta** o premere **Arresta** nell'angolo superiore sinistro.  
   
-    ![Raccogliere le informazioni sull'intervallo di CPU e GPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Raccogliere informazioni sugli intervalli per GPU e CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. Nella parte superiore del report selezionare in uno dei grafici una sezione che mostra il problema da analizzare. La selezione può essere lunga fino a 3 secondi. Le sezioni più lunghe vengono troncate nella parte iniziale.  
   
-    ![Pubblica&#45;raccolta, selezionare un intervallo per visualizzare i dettagli](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Raccolta&#45;post, selezionare un intervallo per visualizzare i dettagli](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3. Nella parte inferiore del report scegliere il collegamento **Visualizza dettagli** nel messaggio **…Fare clic qui per visualizzare i dettagli sull'utilizzo della GPU in tale intervallo** per visualizzare una sequenza temporale dettagliata della selezione.  
+3. Nella parte inferiore del report scegliere il collegamento **Visualizza dettagli** nella **... fare clic qui per visualizzare i dettagli dell'utilizzo della GPU per** il messaggio di intervallo per visualizzare una sequenza temporale dettagliata della selezione.  
   
-    ![Post&#45;-raccolta, con intervallo selezionato](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Raccolta post&#45;con intervallo selezionato](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Viene aperto un nuovo documento a schede che contiene il report. Il report sull'utilizzo della GPU consente di vedere il momento in cui nella CPU viene avviato un evento di grafica, il momento in cui l'evento raggiunge la GPU e il tempo impiegato dalla GPU per eseguirlo. Queste informazioni sono utili per identificare i colli di bottiglia e le opportunità di aumentare il parallelismo nel codice.  
   
@@ -80,22 +80,22 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
  Nella parte inferiore viene visualizzato un elenco degli eventi di grafica che si sono verificati nel periodo di tempo esaminato nel report.  
   
- Di seguito è illustrata la finestra **Report Utilizzo GPU**:  
+ Di seguito è illustrata la finestra **report utilizzo GPU** :  
   
- ![Report sull'utilizzo della GPU, con sequenze temporali CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![Report Utilizzo GPU con sequenze temporali per CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  Selezionando uno degli eventi nella parte inferiore del report, nelle sequenze temporali pertinenti viene inserito un marcatore accanto agli eventi corrispondenti. In genere si tratta di un evento su un thread della CPU, che rappresenta la chiamata API, e di un secondo evento in una delle sequenze temporali della GPU, che rappresenta il punto in cui la GPU ha completato l'attività. Analogamente, se si seleziona uno degli eventi in una sequenza temporale, nella parte inferiore del report viene evidenziato l'evento corrispondente. Quando si riduce il livello di zoom sulle sequenze temporali nella parte superiore del report, sono visibili solo gli eventi che richiedono più tempo. Per visualizzare gli eventi di durata più breve, ingrandire le sequenze temporali premendo CTRL e la rotellina del dispositivo di puntamento oppure usando il controllo di ridimensionamento nell'angolo inferiore sinistro del riquadro superiore. È anche possibile trascinare il contenuto del pannello della sequenza temporale per spostarsi tra gli eventi registrati.  
   
  Per trovare più facilmente ciò che sta cercando, è possibile filtrare il report Utilizzo GPU in base a nomi di processo, ID dei thread e nome dell'evento. È anche possibile scegliere lo schermo la cui frequenza di aggiornamento determina le linee vysnc e, se l'app usa l'interfaccia ID3DUserDefinedAnnotation per raggruppare i comandi di rendering, ordinare gerarchicamente gli eventi.  
   
- Di seguito sono disponibili maggiori dettagli:  
+ Di seguito sono riportate informazioni dettagliate:  
   
 |Controllo filtro|Descrizione|  
 |--------------------|-----------------|  
 |**Processo**|Nome del processo a cui si è interessati. Questo elenco a discesa contiene tutti i processi che hanno utilizzato la GPU durante la sessione di diagnostica. Il colore associato al processo nell'elenco a discesa è il colore dell'attività del thread nelle sequenze temporali successive.|  
 |**Thread**|ID del thread a cui si è interessati. In un'app multithread, questo consente di isolare gli specifici thread che appartengono al processo a cui si è interessati. Gli eventi associati al thread selezionato sono evidenziati in ogni sequenza temporale.|  
-|**Visualizza**|Numero dello schermo di cui è visualizzata la frequenza di aggiornamento **Nota:** alcuni driver possono essere configurati in modo da presentare più schermi fisici come un unico schermo virtuale di grandi dimensioni. È possibile che nell'elenco sia presente un solo schermo, anche se al computer sono collegati più schermi.|  
-|**Filtro**|Parole chiave a cui si è interessati. Nella parte inferiore del report saranno visualizzati solo gli eventi che corrispondono completamente o parzialmente a una parola chiave. È possibile specificare più parole chiave separandole con un punto e virgola (;).|  
+|**Schermo**|Numero dello schermo di cui è visualizzata la frequenza di aggiornamento **Nota:** alcuni driver possono essere configurati in modo da presentare più schermi fisici come un unico schermo virtuale di grandi dimensioni. È possibile che nell'elenco sia presente un solo schermo, anche se al computer sono collegati più schermi.|  
+|**Filter**|Parole chiave a cui si è interessati. Nella parte inferiore del report saranno visualizzati solo gli eventi che corrispondono completamente o parzialmente a una parola chiave. È possibile specificare più parole chiave separandole con un punto e virgola (;).|  
 |**Hierarchy Sort** (Ordinamento gerarchia)|Casella di controllo che indica se le gerarchie degli eventi, definite mediante marcatori utente, vengono mantenute o ignorate.|  
   
  L'elenco eventi nella parte inferiore del report di utilizzo della GPU mostra i dettagli relativi a ogni evento.  
@@ -123,17 +123,17 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
 3. In **Configurazione Profilatura GPU** nella pagina delle proprietà **Generale** deselezionare la casella di controllo **Begin profiling at app start** (Inizia profilatura all'avvio dell'app) per posticipare la profilatura.  
   
-     ![Configura quando viene avviata la raccolta utilizzo GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![Configurare l'ora di inizio della raccolta Utilizzo GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > Il posticipo della profilatura non è attualmente supportato per le app Direct3D 12.  
   
  Se si posticipa la raccolta delle informazioni di profilatura con questa impostazione, quando si esegue l'app nello strumento Utilizzo GPU, nella parte inferiore della finestra dello strumento diventa disponibile un collegamento aggiuntivo. Per avviare la raccolta di informazioni di profilatura, scegliere il collegamento **Inizia** nel messaggio **Inizia a raccogliere altri dati dettagliati sull'utilizzo della GPU**.  
   
-## <a name="hwsupport"></a> Hardware e driver supportati  
+## <a name="hardware-and-driver-support"></a><a name="hwsupport"></a> Hardware e driver supportati  
  Di seguito è riportato un elenco delle GPU e dei driver supportati:  
   
-|Console|Descrizione GPU|Versione driver richiesta|  
+|Vendor|Descrizione GPU|Versione driver richiesta|  
 |------------|---------------------|-----------------------------|  
 |Intel®|Processori Intel® Core di quarta generazione (Haswell)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|-- (usare i driver più recenti)|  
 |AMD®|La maggior parte dalla serie AMD Radeon™ HD 7000 (escluso AMD Radeon™ HD 7350-7670)<br /><br /> GPU AMD Radeon™, GPU AMD FirePro™ e acceleratori grafici AMD FirePro con architettura Graphics Core Next (GCN).<br /><br /> APU (Accelerated Processing Unit) AMD® E-Series e AMD A-series con architettura Graphics Core Next (GCN) (Kaveri, Kabini, Temash, Beema, Mullins)|14.7 RC3 o versione successiva|  

@@ -1,5 +1,5 @@
 ---
-title: '&lt;value &gt; (JavaScript) | Microsoft Docs'
+title: '&lt;valore &gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aefe710cc730d5624abc01bbdfc54d9961788787
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656390"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica le informazioni sulla documentazione per le funzioni `get` e `set` per le proprietà ECMAScript 3.
+Specifica le informazioni sulla documentazione per le `get` `set` funzioni e per le proprietà ECMAScript 3.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Specifica le informazioni sulla documentazione per le funzioni `get` e `set` per
 ```
 
 #### <a name="parameters"></a>Parametri
- `type` Facoltativo. Il tipo di dati della proprietà. Il tipo può essere uno dei seguenti:
+ `type` Facoltativo. Tipo di dati della proprietà. Il tipo può essere uno dei seguenti:
 
 - Un tipo di linguaggio ECMAScript incluso nella specifica ECMAScript 5, ad esempio `Number` e `Object`.
 
@@ -44,11 +44,11 @@ Specifica le informazioni sulla documentazione per le funzioni `get` e `set` per
 
 - Una funzione costruttore JavaScript.
 
-  `integer` Facoltativo. Se `type` è `Number`, specifica se la proprietà è un numero intero. Impostare su `true` per indicare che la proprietà è un numero intero. in caso contrario, impostare su `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
+  `integer` Facoltativo. Se `type` è `Number` , specifica se la proprietà è un numero intero. Impostare su `true` per indicare che la proprietà è un intero; in caso contrario, impostare su `false` . Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
 
-  `domElement` Facoltativo. Questo attributo è deprecato. L'attributo `type` ha la precedenza su questo attributo. Questo attributo specifica se la proprietà documentata è un elemento DOM. Impostare su `true` per specificare che la proprietà è un elemento DOM; in caso contrario, impostare su `false`. Se l'attributo `type` non è impostato e `domElement` è impostato su `true`, IntelliSense considera la proprietà documentata come `HTMLElement` durante l'esecuzione del completamento delle istruzioni.
+  `domElement` Facoltativo. Questo attributo è deprecato. L'attributo `type` ha la precedenza su questo attributo. Questo attributo specifica se la proprietà documentata è un elemento DOM. Impostare su `true` per specificare che la proprietà è un elemento DOM; in caso contrario, impostare su `false` . Se l' `type` attributo non è impostato e `domElement` è impostato su `true` , IntelliSense considera la proprietà documentata come un oggetto `HTMLElement` durante l'esecuzione del completamento delle istruzioni.
 
-  `mayBeNull` Facoltativo. Specifica se la proprietà documentata può essere impostata su null. Impostare su `true` per indicare che la proprietà può essere impostata su null. in caso contrario, impostare su `false`. Il valore predefinito è `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
+  `mayBeNull` Facoltativo. Specifica se la proprietà documentata può essere impostata su null. Impostare su `true` per indicare che la proprietà può essere impostata su null; in caso contrario, impostare su `false` . Il valore predefinito è `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
 
   `elementType` Facoltativo. Se `type` è `Array`, questo attributo specifica il tipo degli elementi nella matrice.
 
@@ -58,17 +58,17 @@ Specifica le informazioni sulla documentazione per le funzioni `get` e `set` per
 
   `elementMayBeNull` Facoltativo. Se `type` è `Array`, specifica se gli elementi della matrice possono essere impostati su null. Impostare su `true` per indicare che gli elementi della matrice sono impostabili su null; in alternativa impostare su `false`. Il valore predefinito è `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.
 
-  `locid` Facoltativo. Identificatore per le informazioni di localizzazione sulla proprietà. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nell'elemento [\<loc>](../ide/loc-javascript.md).
+  `locid` Facoltativo. Identificatore per le informazioni di localizzazione sulla proprietà. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nell' [\<loc>](../ide/loc-javascript.md) elemento.
 
   `description` Facoltativo. Descrizione della proprietà.
 
 ## <a name="remarks"></a>Osservazioni
- Le proprietà ECMAScript 5 usano l'elemento [\<summary >](../ide/summary-javascript.md) .
+ Le proprietà ECMAScript 5 usano l' [\<summary>](../ide/summary-javascript.md) elemento.
 
- Usare l'elemento `<value>` immediatamente prima della funzione `get` o `set`.
+ Usare l' `<value>` elemento immediatamente prima della `get` `set` funzione o.
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice seguente viene illustrato come utilizzare l'elemento `<value>` in una funzione di `get`.
+ Nell'esempio di codice riportato di seguito viene illustrato come utilizzare l' `<value>` elemento su una `get` funzione.
 
 ```javascript
 function Sys$CancelEventArgs$get_cancel() {

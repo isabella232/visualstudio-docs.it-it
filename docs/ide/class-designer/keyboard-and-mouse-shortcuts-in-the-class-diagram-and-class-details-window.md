@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 30932a6c94bc6104aeea0244f06f471d0a639b21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533666"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
@@ -68,13 +68,13 @@ Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 |**Sposta** + **Pagina iniziale**|All'interno della forma del tipo|Seleziona gli elementi all'interno della forma a partire dall'elemento corrente e fino a quello in primo piano sulla stessa forma.|
 |**Sposta** + **Fine**|All'interno della forma del tipo|Uguale a **MAIUSC** + **Home** ma nella direzione dall'alto verso il basso.|
 |**Entrare**|Tutti i contesti|Richiama l'operazione predefinita sulla forma, che è disponibile anche tramite doppio clic. Nella maggior parte dei casi si tratta di Visualizza codice, ma per alcuni elementi la definizione è differente (simboli, intestazioni di raggruppamenti, etichette di simboli).|
-|**+** e**-**|Tutti i contesti|Se l'elemento con lo stato attivo è espandibile, questi tasti espandono o comprimono l'elemento.|
+|**+** e **-**|Tutti i contesti|Se l'elemento con lo stato attivo è espandibile, questi tasti espandono o comprimono l'elemento.|
 |**>**|Tutti i contesti|Per gli elementi con elementi figlio, espande l'elemento se è compresso e passa al primo figlio.|
 |**<**|Tutti i contesti|Passa all'elemento padre.|
 |**ALT** + **Sposta** + **L**|All'interno delle forme dei tipi + sulle forme dei tipi|Passa al simbolo della forma selezionata, se presente.|
 |**ALT** + **Sposta** + **B**|All'interno delle forme dei tipi + sulle forme dei tipi|Se l'elenco di tipi di base è visualizzato sulla forma del tipo e contiene più di un elemento, comprime o espande l'elenco.|
-|**Eliminazione**|Sulle forme dei tipi e le forme Commenti|Richiama il comando **Rimuovi dal diagramma**.|
-|**Eliminazione**|Su tutti gli altri elementi.|Richiama il comando **Delete from Code** (Elimina dal codice) (membri, parametri, associazioni, ereditarietà, etichette di simboli).|
+|**Elimina**|Sulle forme dei tipi e le forme Commenti|Richiama il comando **Rimuovi dal diagramma**.|
+|**Elimina**|Su tutti gli altri elementi.|Richiama il comando **Delete from Code** (Elimina dal codice) (membri, parametri, associazioni, ereditarietà, etichette di simboli).|
 |**CTRL** + **Elimina**|Tutti i contesti|Richiama il comando **Delete from Code** (Elimina dal codice) sulla selezione.|
 |**Scheda**|Tutti i contesti|Passa all'elemento figlio successivo all'interno dello stesso elemento padre (supporta il wrapping).|
 |**Sposta** + **Scheda**|Tutti i contesti|Passa all'elemento figlio precedente all'interno dello stesso elemento padre (supporta il wrapping).|

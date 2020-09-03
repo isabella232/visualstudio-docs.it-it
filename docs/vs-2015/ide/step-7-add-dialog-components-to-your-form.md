@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40b90096f768a7dd836507c83dff935261a99a25
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851134"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Passaggio 7: aggiungere componenti di finestra di dialogo al form
@@ -21,22 +21,22 @@ ms.locfileid: "75851134"
 
 Per consentire al programma di aprire i file di immagine e scegliere un colore di sfondo, in questo passaggio si aggiunge un componente **OpenFileDialog** e un componente **ColorDialog** al form.
 
- Un componente è per alcuni aspetti simile a un controllo. Si usa la Casella degli strumenti per aggiungere un componente al form e si impostano le relative proprietà usando la finestra **Proprietà**. A differenza di un controllo, tuttavia, l'aggiunta di un componente al form non aggiunge un elemento visibile da parte dell'utente sul form. Vengono invece forniti determinati comportamenti che è possibile attivare tramite codice. L'apertura della finestra di dialogo **Apri file** viene eseguita da un componente.
+ Un componente è per alcuni aspetti simile a un controllo. Si usa la casella degli strumenti per aggiungere un componente al modulo e si impostano le relative proprietà usando la finestra **Proprietà**. A differenza di un controllo, tuttavia, l'aggiunta di un componente al form non aggiunge un elemento visibile da parte dell'utente sul form. Vengono invece forniti determinati comportamenti che è possibile attivare tramite codice. L'apertura della finestra di dialogo **Apri file** viene eseguita da un componente.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore immagini in Visual Basic-video 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) o [esercitazione 1: creare un visualizzatore immagini in C#-video 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-add-dialog-components-to-your-form"></a>Per aggiungere componenti di finestra di dialogo al form
 
-1. Scegliere Progettazione Windows Form (Form1.cs [Design] o Form1.vb [Design]) e aprire il gruppo **Finestre di dialogo** nella casella degli strumenti.
+1. Scegliere il Progettazione Windows Form (Form1.cs [Design] o Form1. vb [Design]), quindi aprire il gruppo **finestre di dialogo** nella casella degli strumenti.
 
     > [!NOTE]
-    > Il gruppo **Finestre di dialogo** nella Casella degli strumenti ha componenti che aprono molte finestre di dialogo utili che possono essere usate per l'apertura e il salvataggio di file, l'esplorazione di cartelle e la scelta di tipi di carattere e colori. In questo progetto si usano due componenti di finestra di dialogo:**OpenFileDialog** e **ColorDialog**.
+    > Il gruppo **Finestre di dialogo** nella casella degli strumenti ha componenti che aprono molte finestre di dialogo utili che possono essere usate per l'apertura e il salvataggio di file, l'esplorazione di cartelle e la scelta di tipi di carattere e colori. In questo progetto si utilizzano due componenti di finestra di dialogo: **OpenFileDialog** e **ColorDialog**.
 
-2. Per aggiungere un componente denominato **openFileDialog1** al form, fare doppio clic su **OpenFileDialog**. Per aggiungere un componente denominato **colorDialog1** al form, fare doppio clic su **ColorDialog** nella Casella degli strumenti. Che verrà usato nel passaggio successivo dell'esercitazione. Verrà visualizzata un'area nella parte inferiore di Progettazione Windows Form (sotto il modulo Visualizzatore immagini) che dispone di un'icona per ognuno dei due componenti della finestra di dialogo aggiunti, come illustrato nell'immagine seguente.
+2. Per aggiungere un componente denominato **openFileDialog1** al form, fare doppio clic su **OpenFileDialog**. Per aggiungere un componente denominato **colorDialog1** al form, fare doppio clic su **ColorDialog** nella casella degli strumenti. Che verrà usato nel passaggio successivo dell'esercitazione. Verrà visualizzata un'area nella parte inferiore di Progettazione Windows Form (sotto il modulo Visualizzatore immagini) che dispone di un'icona per ognuno dei due componenti della finestra di dialogo aggiunti, come illustrato nell'immagine seguente.
 
      ![Componenti della finestra di dialogo](../ide/media/express-dialogsadded.png "Express_DialogsAdded") Componenti della finestra di dialogo
 
-3. Scegliere l'icona **openFileDialog1** nell'area nella parte inferiore di Progettazione Windows Form. Impostare due proprietà:
+3. Scegliere l'icona **OpenFileDialog1** nell'area nella parte inferiore del progettazione Windows Form. Impostare due proprietà:
 
     - Impostare la proprietà **Filtro** nel seguente modo (è possibile copiare e incollare quanto segue):
 
@@ -53,6 +53,6 @@ Per consentire al programma di aprire i file di immagine e scegliere un colore d
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per passare al passaggio successivo dell'esercitazione, vedere [Passaggio 8: Scrivere il codice gestore dell'evento relativo al pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 8: scrivere il codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: Assegnare un nome ai pulsanti](../ide/step-6-name-your-button-controls.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 6: assegnare un nome ai pulsanti](../ide/step-6-name-your-button-controls.md).

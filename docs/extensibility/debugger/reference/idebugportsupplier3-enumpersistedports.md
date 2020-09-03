@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts . Documenti Microsoft
+title: 'IDebugPortSupplier3:: EnumPersistedPorts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724449"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-Questo metodo recupera un oggetto che consente l'enumerazione dell'elenco di porte persistenti.
+Questo metodo recupera un oggetto che consente l'enumerazione dell'elenco di porte rese permanente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>Parametri
 `PortNames`\
-[in] Struttura [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) che contiene un elenco di nomi di porte da trovare e restituire tra le porte persistenti. Verranno restituite solo le porte persistenti con questi nomi.
+in Struttura di [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) contenente un elenco di nomi di porte da trovare e restituire tra le porte salvate in modo permanente. Verranno restituite solo le porte salvate in permanenza con questi nomi.
 
 `ppEnum`\
-[fuori] Oggetto che implementa il [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interfaccia.
+out Oggetto che implementa l'interfaccia [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) .
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Le porte persistenti vengono caricate quando viene creata un'istanza di un fornitore di porte e salvate quando il fornitore della porta viene eliminato.
+ Le porte rese disponibili vengono caricate quando viene creata un'istanza di un fornitore di porte e salvate quando il fornitore della porta viene eliminato definitivamente.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

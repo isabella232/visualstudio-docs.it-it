@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPortEx2::LaunchSuspended . Documenti Microsoft
+title: 'IDebugPortEx2:: LaunchSuspended | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 28ff6065bbe83852b5acc3ffe253a0bdabcc67ec
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725107"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
@@ -55,36 +55,36 @@ int LaunchSuspended( 
 
 ## <a name="parameters"></a>Parametri
 `pszExe`\
-[in] Nome dell'eseguibile da avviare. Può trattarsi di un percorso completo o `pszDir` relativo alla directory di lavoro specificata nel parametro .
+in Nome del file eseguibile da avviare. Può trattarsi di un percorso completo o relativo alla directory di lavoro specificata nel `pszDir` parametro.
 
 `pszArgs`\
-[in] Argomenti da passare all'eseguibile. Può essere un valore null se non sono presenti argomenti.
+in Argomenti da passare al file eseguibile. Può essere un valore null se non sono presenti argomenti.
 
 `pszDir`\
-[in] Nome della directory di lavoro utilizzata dall'eseguibile. Può essere un valore null se non è richiesta alcuna directory di lavoro.
+in Nome della directory di lavoro utilizzata dal file eseguibile. Può essere un valore null se non è richiesta alcuna directory di lavoro.
 
 `bstrEnv`\
-[in] Blocco di ambiente di stringhe con terminazione null, seguito da un carattere di terminazione NULL aggiuntivo.
+in Blocco dell'ambiente di stringhe con terminazione null, seguito da un carattere di terminazione NULL aggiuntivo.
 
 `hStdInput`\
-[in] Handle a un flusso di input alternativo. Può essere 0 se il reindirizzamento non è necessario.
+in Handle per un flusso di input alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
 
 `hStdOutput`\
-[in] Handle per un flusso di output alternativo. Può essere 0 se il reindirizzamento non è necessario.
+in Handle per un flusso di output alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
 
 `hStdError`\
-[in] Handle per un flusso di output degli errori alternativo. Può essere 0 se il reindirizzamento non è necessario.
+in Handle per un flusso di output degli errori alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
 
 `ppPortProcess`\
-[fuori] Restituisce un oggetto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il processo avviato.
+out Restituisce un oggetto [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) che rappresenta il processo avviato.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo deve avviare il processo in modo che venga sospeso e non eseguire alcun codice. Il [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) metodo viene chiamato per riprendere il processo.
+ Questo metodo deve avviare il processo in modo che venga sospeso e non esegua alcun codice. Per riprendere il processo, viene chiamato il metodo [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) .
 
- Un programma può anche essere avviato da un motore di debug. Per informazioni dettagliate, vedere [Avvio di un programma](../../../extensibility/debugger/launching-a-program.md).
+ Un programma può essere avviato anche da un motore di debug. Per informazioni dettagliate, vedere [avvio di un programma](../../../extensibility/debugger/launching-a-program.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

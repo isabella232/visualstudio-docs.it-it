@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierDescription2::GetDescription . Documenti Microsoft
+title: 'IDebugPortSupplierDescription2:: GetDescription | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2e99b55b89ef921c42fab582f65788923aa15c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724378"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
-Recupera i metadati di descrizione e descrizione per il fornitore della porta.
+Recupera i metadati della descrizione e della descrizione per il fornitore della porta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ public int GetDescription(
 
 ## <a name="parameters"></a>Parametri
 `pdwFlags`\
-[fuori] Flag di metadati per la descrizione.
+out Flag di metadati per la descrizione.
 
 `pbstrText`\
-[fuori] Descrizione del fornitore della porta.
+out Descrizione del fornitore della porta.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0335efcb0c42c6fce06df448a0503457e79ec345
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664230"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificare lo stile degli oggetti in Blend
@@ -23,7 +23,7 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
 
  Per riusare impostazioni o gruppi di impostazioni, creare una risorsa riutilizzabile, ovvero uno *stile*, un *modello* o qualcosa di semplice, come un colore personalizzato. È anche possibile impostare un controllo in modo che venga visualizzato in modo diverso a seconda dello stato, come ad esempio un pulsante che diventa verde quando viene selezionato dall'utente.
 
- **Contenuto dell'argomento**:
+ Contenuto **dell'argomento**:
 
 - [Pennelli: modificare l'aspetto di un oggetto](#Brushes)
 
@@ -33,7 +33,7 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
 
 - [Risorse: creare colori, stili e modelli e riutilizzarli in seguito](#Resources)
 
-## <a name="Brushes"></a> Pennelli: modificare l'aspetto di un oggetto
+## <a name="brushes-modify-the-appearance-of-an-object"></a><a name="Brushes"></a> Pennelli: modificare l'aspetto di un oggetto
  Per modificare l'aspetto di un oggetto, è possibile applicarvi un pennello.
 
  **Breve video:** ![Configura funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Editor pennelli](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).
@@ -45,11 +45,11 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
 
  Per creare un pennello immagine, usare un'immagine. Le illustrazioni seguenti mostrano il pennello immagine, il pennello immagine affiancato e il pennello immagine capovolto.
 
- ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906D-456B-8288-d77da1e01e31")![](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2")![](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")
+ ![](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png "81f84f56-906D-456B-8288-d77da1e01e31") ![](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png "d3782ca8-64da-47a4-a095-c6cdd0fa47a2") ![](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png "38ae3691-f3f1-4a1e-82ca-c7fa164bf56e")
 
  Per creare un pennello da disegno, usare un disegno vettoriale, ad esempio un tracciato o una forma. Le illustrazioni seguenti mostrano il pennello da disegno, il pennello da disegno affiancato e il pennello da disegno capovolto.
 
- ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5")![](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc")![](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")
+ ![](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png "197666ac-ef57-4c5c-9779-669e991a00a5") ![](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png "ba09cda3-4cee-40ba-b3d4-edc032158bdc") ![](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png "15bf6021-620c-4490-9eae-086153d3f14f")
 
  Per creare un pennello visivo, usare un controllo, ad esempio un pulsante. Le illustrazioni seguenti mostrano il pennello visivo e il pennello visivo affiancato.
 
@@ -57,7 +57,7 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
 
  **Guarda un breve video:** ![Configura le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pennelli affiancati](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).
 
-## <a name="Styles"></a> Stili e modelli: creare un aspetto coerente tra i vari controlli
+## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a><a name="Styles"></a> Stili e modelli: creare un aspetto coerente tra i vari controlli
  È possibile progettare l'aspetto e il comportamento di un controllo una volta e applicarne le caratteristiche ad altri controlli in modo che non sia necessario gestirle singolarmente.
 
  **Quando usare uno stile**: se si vogliono solo impostare le proprietà predefinite, come il colore di un pulsante, è preferibile usare uno *stile*. È possibile modificare un controllo anche dopo l'applicazione di uno stile.
@@ -79,7 +79,7 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
 
 - Scegliere **Crea vuoto** per partire da zero.
 
-  L'opzione **Modifica corrente** viene visualizzata solo se si modifica uno stile o un modello che è già stato creato. Non sarà invece visibile per un controllo che usa ancora un modello di sistema predefinito.
+  L'opzione **modifica corrente** viene visualizzata solo se si modifica uno stile o un modello già creato. Non sarà invece visibile per un controllo che usa ancora un modello di sistema predefinito.
 
   Nella finestra di dialogo **Create Style Resource** (Crea risorsa di stile) è possibile assegnare un nome allo stile o al modello per poterlo usare in seguito oppure applicare lo stile o il modello a tutti i controlli di tale tipo.
 
@@ -88,7 +88,7 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
 > [!NOTE]
 > Non è possibile creare stili o modelli per ogni tipo di controllo. Se questi non sono supportati in un controllo, il pulsante di navigazione non verrà visualizzato sopra la tavola da disegno.
 >
-> Per tornare all'ambito di modifica del documento principale, fare clic su **Reimposta l'ambito** ![ ](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").
+> Per tornare all'ambito di modifica del documento principale, fare clic su **Reimposta l'ambito** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").
 >
 > ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")
 
@@ -100,16 +100,16 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Ripristinare lo stile o il modello predefinito di un controllo
- Selezionare il controllo e nel pannello [Proprietà](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) individuare la proprietà **Stile** o **Modello**. Fare quindi clic su **Opzioni** ![ ](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")avanzate e quindi su **Reimposta** dal menu di scelta rapida.
+ Selezionare il controllo e nel pannello [Proprietà](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) individuare la proprietà **Stile** o **Modello**. Fare clic su **Opzioni avanzate** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") e quindi su **Reimposta** nel menu di scelta rapida.
 
-## <a name="Visual"></a> Stati di visualizzazione: modificare l'aspetto di un controllo in base al relativo stato
+## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a><a name="Visual"></a> Stati di visualizzazione: modificare l'aspetto di un controllo in base al relativo stato
  L'aspetto visivo dei controlli può essere diverso in base alle interazioni dell'utente. Ad esempio, è possibile impostare un pulsante in modo che diventi verde quando un utente lo seleziona oppure fare in modo che venga eseguita un'animazione. Per abbreviare o prolungare l'intervallo tra gli stati visivi, si possono usare le transizioni.
 
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")
 
  **Breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [gestiscono lo stato dei controlli WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-## <a name="Resources"></a> Risorse: creare colori, stili e modelli e riutilizzarli in seguito
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a><a name="Resources"></a> Risorse: creare colori, stili e modelli e riutilizzarli in seguito
  È possibile convertire in una risorsa qualsiasi elemento del progetto. Una risorsa è in pratica un oggetto che è possibile riusare in parti diverse dell'applicazione. Ad esempio, è possibile creare un colore una volta, convertirlo in risorsa e quindi usarlo per più oggetti. Per modificare il colore di tutti gli oggetti, sarà quindi sufficiente modificare la risorsa colore.
 
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-B153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")

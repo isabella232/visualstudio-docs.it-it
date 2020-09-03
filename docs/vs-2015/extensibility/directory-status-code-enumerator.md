@@ -1,5 +1,5 @@
 ---
-title: Enumeratore di codice di stato directory | Microsoft Docs
+title: Enumeratore del codice di stato della directory | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e082a691a389d5cb9a8fa307a627b11911e0db78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185249"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumeratore di codice di stato directory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il `SccDirStatus` enumeratore contiene denominati valori costanti che specificano lo stato di una directory nel sistema di controllo di origine. Questa enumerazione viene utilizzata per la [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Questa è stata introdotta nella versione 1.2 dell'API dei plug-in controllo di origine.  
+L' `SccDirStatus` enumeratore contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Questa operazione è stata introdotta nella versione 1,2 dell'API del plug-in del controllo del codice sorgente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,19 +34,19 @@ enum SccDirStatus {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Membri  
  SCC_DIRSTATUS_INVALID  
  Non è stato possibile ottenere lo stato; non fare affidamento su di esso.  
   
  SCC_DIRSTATUS_NOTCONTROLLED  
- Directory non è incluso nel controllo del codice sorgente.  
+ La directory non è sotto il controllo del codice sorgente.  
   
  SCC_DIRSTATUS_CONTROLLED  
- Directory è incluso nel controllo sorgente.  
+ La directory è sotto il controllo del codice sorgente.  
   
  SCC_DIRSTATUS_EMPTYPROJ  
- Progetto corrispondente a questa directory è vuota.  
+ Il progetto corrispondente a questa directory è vuoto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Plug-in controllo codice sorgente](../extensibility/source-control-plug-ins.md)   
+ [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

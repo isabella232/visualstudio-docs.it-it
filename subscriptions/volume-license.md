@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori di contratti multilicenza possono accedere al portale di amministrazione delle sottoscrizioni di Visual Studio
 ms.openlocfilehash: 2fd2ab46100cc8c7f968b35e6ae0103092e4e684
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233136"
 ---
 # <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>Accesso al portale di amministrazione come amministratore in un contratto multilicenza
@@ -23,14 +23,14 @@ Se si è il contatto principale o per le comunicazioni indicato nel contratto de
 
 Una volta eseguito l'accesso, si verrà automaticamente configurati come amministratore con privilegi avanzati e sarà possibile iniziare a gestire le sottoscrizioni e gli altri amministratori. Per informazioni sulle differenze tra amministratori con privilegi avanzati e amministratori, vedere l'articolo sui [ruoli di amministratore](admin-roles.md).
 
-Questo vale per tutti i tipi di contratti multilicenza, inclusi, ma non solo: contratti Enterprise, abbonamenti Enterprise, Seleziona, Seleziona Plus, Open, Open License, Govt. 
+Questo vale per tutti i tipi di contratto multilicenza, inclusi, a titolo esemplificativo: contratti Enterprise, sottoscrizioni Enterprise, Select, Select Plus, Open, Open License, Govt. e Academic agreements. 
 
 ## <a name="resources"></a>Risorse
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 

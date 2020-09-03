@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPortPicker::SetSite . Documenti Microsoft
+title: 'IDebugPortPicker:: SESITE | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 07dac3f407b6869dad90f06d778911fdd9cfed41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724864"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
@@ -39,13 +39,13 @@ public int SetSite(
 
 ## <a name="parameters"></a>Parametri
 `pSP`\
-[in] Riferimento all'interfaccia del provider di servizi.
+in Riferimento all'interfaccia del provider di servizi.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo verrà chiamato prima di qualsiasi altro metodo vengono chiamati.
+ Questo metodo verrà chiamato prima della chiamata di altri metodi.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

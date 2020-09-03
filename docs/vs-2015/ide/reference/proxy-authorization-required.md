@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297814"
 ---
-# <a name="proxy-authorization-required"></a>Necessaria autorizzazione proxy
+# <a name="proxy-authorization-required"></a>Autorizzazione del proxy richiesta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 L'errore di **autorizzazione del proxy richiesto** in genere si verifica quando gli utenti sono connessi alle risorse di Visual Studio online tramite un server proxy e il server proxy blocca le chiamate.
@@ -31,13 +31,13 @@ Per correggere l'errore, provare a eseguire uno o più dei passaggi seguenti:
 
   - *.microsoftonline.com
 
-  - *.visualstudio.com
+  - , ma non per gli indirizzi
 
   - *.microsoft.com
 
   - *.live.com
 
-- È possibile rimuovere l'indirizzo https://go.microsoft.com dall'elenco Consenti per visualizzare la finestra di dialogo di autenticazione del proxy per l'indirizzo di https://go.microsoft.com e gli endpoint server al riavvio di Visual Studio.
+- È possibile rimuovere l' https://go.microsoft.com indirizzo dall'elenco Consenti per visualizzare la finestra di dialogo di autenticazione del proxy per l' https://go.microsoft.com indirizzo e gli endpoint server al riavvio di Visual Studio.
 
 - Se si desidera usare le credenziali predefinite con il proxy, seguire questa procedura:
 
@@ -51,6 +51,6 @@ Per correggere l'errore, provare a eseguire uno o più dei passaggi seguenti:
       </defaultProxy>
       ```
 
-      Inserire l'indirizzo proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>`.
+      Inserire l'indirizzo proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>` .
 
 - Seguire le istruzioni in [questo post di Blog](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) per aggiungere il codice che consente di usare il proxy.

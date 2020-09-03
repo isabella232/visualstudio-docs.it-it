@@ -13,10 +13,10 @@ ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
 ms.openlocfilehash: 2e9fe1abb82d3d64232e3e5e2a6d117c1068aa1c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297698"
 ---
 # <a name="managed-package-framework-classes"></a>Classi del framework di pacchetto gestito
@@ -28,7 +28,7 @@ Le classi del framework di pacchetto gestito (MPF) possono essere usate per crea
 ## <a name="mpf-namespaces"></a>Spazi dei nomi MPF  
  La tabella seguente contiene l'elenco degli spazi dei nomi MPF forniti da [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
-|Spazio dei nomi|Sommario|  
+|Spazio dei nomi|Contenuto|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio>|Contiene le classi utili per la gestione degli errori COM, le costanti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e le finestre Win32.|  
 |<xref:Microsoft.VisualStudio.Package>|Include i wrapper di codice gestito per i progetti, gli editor e MSBuild di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
@@ -39,6 +39,6 @@ Le classi del framework di pacchetto gestito (MPF) possono essere usate per crea
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|Supporta sottotipi di progetto (noti anche come "versioni").|  
   
 ## <a name="see-also"></a>Vedere anche  
- Pacchetti [VSPackage e Framework di pacchetto gestito](../misc/vspackages-and-the-managed-package-framework.md)   
+ [Pacchetti VSPackage e Framework di pacchetto gestito](../misc/vspackages-and-the-managed-package-framework.md)   
  [Uso di assembly di interoperabilità di Visual Studio](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
  [Pacchetti VSPackage e framework del pacchetto gestito](../misc/vspackages-and-the-managed-package-framework.md)

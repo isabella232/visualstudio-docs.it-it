@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1a81a8d094999585620ab6ab412c3b0610caf517
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348899"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Procedura: testare un visualizzatore ed eseguirne il debug
@@ -53,7 +53,7 @@ Una soluzione più semplice per il debug di un visualizzatore consiste nell'eseg
 
     Per un esempio più completo, vedere [procedura dettagliata: scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

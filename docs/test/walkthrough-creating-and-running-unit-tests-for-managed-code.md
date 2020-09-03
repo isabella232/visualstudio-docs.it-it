@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81223671"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
@@ -32,9 +32,9 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 1. Aprire Visual Studio.
 
-2. Scegliere **Nuovo** > **Progetto** dal menu **File**
+2. Scegliere **nuovo** progetto dal menu **file** > **Project**.
 
-   Viene visualizzata la finestra di dialogo **Nuovo progetto**.
+   Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
 3. Nell categoria **Visual C#** > **.NET Core** scegliere il modello di progetto **App console (.NET Core)**.
 
@@ -51,7 +51,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 1. Aprire Visual Studio.
 
-2. Nella finestra di avvio scegliere **Crea un nuovo progetto.**
+2. Nella finestra Start scegliere **Crea un nuovo progetto**.
 
 3. Cercare e selezionare il modello di progetto **App console (.NET Core)** C# e quindi fare clic su **Avanti**.
 
@@ -149,7 +149,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 ::: moniker range="vs-2017"
 
-2. Nella finestra di dialogo **Nuovo progetto** , espandere **Installato**, Visual **C,** quindi scegliere **Test**.
+2. Nella finestra di dialogo **nuovo progetto** espandere **installato**, espandere **Visual C#**, quindi scegliere **test**.
 
 3. Nell'elenco dei modelli selezionare **Progetto di test MSTest (.NET Core)**.
 
@@ -165,7 +165,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 3. Denominare il progetto **BankTests**.
 
-4. Fare clic su **Crea**.
+4. Scegliere **Crea**.
 
    Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.
 
@@ -199,7 +199,7 @@ Creare una classe di test per verificare la classe `BankAccount`. È possibile u
 
 ::: moniker-end
 
-Il *file BankAccountTests.cs* contiene ora il codice seguente:The file now contains the following code:
+Il file *BankAccountTests.cs* contiene ora il codice seguente:
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -219,7 +219,7 @@ namespace BankTests
 
 ### <a name="add-a-using-statement"></a>Aggiungere un'istruzione using
 
-Aggiungere [ `using` un'istruzione](/dotnet/csharp/language-reference/keywords/using-statement) alla classe di test per poter chiamare il progetto sottoposto a test senza utilizzare nomi completi. All'inizio del file di classe aggiungere:
+Aggiungere un' [ `using` istruzione](/dotnet/csharp/language-reference/keywords/using-statement) alla classe di test per poter effettuare una chiamata nel progetto sottoposto a test senza usare nomi completi. All'inizio del file di classe aggiungere:
 
 ```csharp
 using BankAccountNS;
@@ -321,7 +321,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Eseguire nuovamente il test
 
-In **Esplora test**scegliere Esegui **tutto** per eseguire nuovamente il test. La barra verde/rossa diventa verde per indicare che il test è stato superato.
+In **Esplora test**scegliere **Esegui tutto** per rieseguire il test. La barra verde/rossa diventa verde per indicare che il test è stato superato.
 
 ![Esplora test in Visual Studio 2019 che indica che il test è stato superato](media/test-explorer-banktests-passed.png)
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Rieseguire il test, riscrivere e rianalizzare
 
-Attualmente, il metodo di test non gestisce tutti i casi che dovrebbe. Se il metodo sottoposto a test, il `Debit` metodo, non è riuscito a generare un <xref:System.ArgumentOutOfRangeException> quando `debitAmount` era maggiore del saldo (o minore di zero), il metodo di test sarebbe passato. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
+Attualmente, il metodo di test non gestisce tutti i casi in cui deve essere. Se il metodo sottoposto a test, il metodo `Debit` non è riuscito a generare un'eccezione <xref:System.ArgumentOutOfRangeException> quando `debitAmount` è maggiore del saldo (o minore di zero), il metodo di test passa. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
 
 È presente un bug nel metodo di test. Per risolvere il problema, aggiungere un'asserzione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> alla fine del metodo di test per gestire il caso in cui non viene generata alcuna eccezione.
 
@@ -462,12 +462,12 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-### <a name="conclusion"></a>Conclusioni
+### <a name="conclusion"></a>Conclusione
 
 I miglioramenti al codice di test hanno creato metodi di test più affidabili e informativi. Il risultato più importante, tuttavia, è il miglioramento del codice sottoposto a test.
 
 > [!TIP]
-> Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. **Esplora test** consente anche di eseguire test da framework di unit test di terze parti che possiedono adapter per **Esplora test**. Per ulteriori informazioni, vedere Installare framework di unit test di [terze parti](../test/install-third-party-unit-test-frameworks.md).
+> Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. **Esplora test** consente anche di eseguire test da framework di unit test di terze parti che possiedono adapter per **Esplora test**. Per altre informazioni, vedere [installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="see-also"></a>Vedere anche
 

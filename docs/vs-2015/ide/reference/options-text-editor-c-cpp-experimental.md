@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851694"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
@@ -23,7 +23,7 @@ ms.locfileid: "75851694"
 
 Modificando queste opzioni è possibile modificare il comportamento correlato a IntelliSense e il database di esplorazione quando si programma in C o C++.
 
- Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo**e **C/C++** , quindi fare clic su **Sperimentale**.
+ Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo**e **C/C++**, quindi fare clic su **Sperimentale**.
 
  Queste funzionalità sono disponibili in un'installazione di Visual Studio 2015 Update 1 RC.
 
@@ -59,4 +59,4 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
   È possibile passare il mouse su una sottolineatura ondulata per ottenere una lampadina oppure usare la combinazione di tasti predefinita Ctrl+punto (Ctrl+.). Per la combinazione di tasti, non è necessario che il punto di inserimento sia posizionato sull'errore specifico o token. È sufficiente trovarsi sulla stessa riga dell'errore per richiamare i suggerimenti per tutti gli elementi della riga.
 
 ## <a name="see-also"></a>Vedere anche
- [Impostazione](../../ide/reference/setting-language-specific-editor-options.md) [del refactoring delle opzioni dell'editor specifiche C++ della lingua in (Blog di VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+ [Impostazione](../../ide/reference/setting-language-specific-editor-options.md) [del refactoring delle opzioni dell'editor specifiche della lingua in C++ (Blog di VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

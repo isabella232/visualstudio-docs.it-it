@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8042b228a481dc3d720d8b422963db41abbddcd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533835"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -27,7 +27,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
   
    Per altre informazioni sulle opzioni di profilatura, vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>Contenuto dell'argomento  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
  In questo argomento vengono descritte le opzioni che è possibile usare con lo strumento della riga di comando `vsperf.exe`. Di seguito sono elencate le diverse sezioni di questo argomento:  
   
  [Solo app di Windows Store](#BKMK_windows_store_apps_only)  
@@ -44,7 +44,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |**/app:{AppName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|  
 |**/package:{PackageFullName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|  
 |**/JS**|Obbligatorio per la profilatura delle app JavaScript.<br /><br /> Raccogliere dati sulle prestazioni dalle app JavaScript.<br /><br /> Usare solo con /package o /attach.|  
-|**/noclr**|Facoltativa. Non raccogliere dati CLR.<br /><br /> Usare solo con /package o /attach.<br /><br /> Ottimizzazione, non verrà eseguita la risoluzione di simboli gestiti.|  
+|**/noclr**|facoltativo. Non raccogliere dati CLR.<br /><br /> Usare solo con /package o /attach.<br /><br /> Ottimizzazione, non verrà eseguita la risoluzione di simboli gestiti.|  
 |**/listapps**|Elencare i valori Name e PackageFullName delle app installate.|  
   
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a><a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Solo applicazioni desktop Windows 8 e applicazioni Windows Server 2012  
@@ -56,13 +56,13 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |**/args:{ExecutableArguments}**|Specifica gli argomenti della riga di comando da passare alla destinazione **/launch**.|  
 |**/Console**|Esegue la destinazione **/launch** in una nuova finestra di comando.|  
   
-## <a name="all-applications"></a><a name="BKMK_All_applications"></a>Tutte le applicazioni  
+## <a name="all-applications"></a><a name="BKMK_All_applications"></a> Tutte le applicazioni  
  Queste opzioni si applicano a tutte le applicazioni Windows 8 o Windows Server 2012.  
   
 |Opzione|Descrizione|  
 |-|-|  
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Raccoglie dati dai processi specificati.<br /><br /> Usare Gestione attività per visualizzare l'ID processo (PID) e i nomi dei processi delle app in esecuzione.|  
-|**/file:{ReportName}**|Facoltativa. Specifica il file di output (sovrascrive il file esistente).<br /><br /> Usare solo con /package o /attach.|  
+|**/file:{ReportName}**|facoltativo. Specifica il file di output (sovrascrive il file esistente).<br /><br /> Usare solo con /package o /attach.|  
 |**/pause**|Sospendere la raccolta dei dati.|  
 |**/Resume**|Riprendere la raccolta dei dati.|  
 |**/Stop**|Interrompere la raccolta dei dati e terminare i processi di destinazione.|  

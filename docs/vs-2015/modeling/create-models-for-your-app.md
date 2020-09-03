@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852016"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
@@ -68,34 +68,34 @@ I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le 
 |**Diagramma**|**Mostra**|
 |-----------------|---------------|
 |[Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md)|Architettura di alto livello del sistema|
-|Mappe codici<br /><br /> [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dipendenze e altre relazioni nel codice esistente|
+|Mappe codice<br /><br /> [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dipendenze e altre relazioni nel codice esistente|
 |Diagrammi classi generati dal codice<br /><br /> [Uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md)|Tipi e relative relazioni nel codice .NET|
 
 ## <a name="common-tasks"></a>Attività comuni
 
-|**Argomento**|**Task**|
+|**Argomento**|**Attività**|
 |---------------|--------------|
 |[Creare diagrammi e progetti di modellazione UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Creare modelli** e aggiungere diagrammi.|
 |[Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)|**Creare diagrammi** per modificare il modello.|
 |[Definire pacchetti e spazi dei nomi](../modeling/define-packages-and-namespaces.md)|**Creare pacchetti** per dividere un modello in unità su cui possono lavorare diversi membri del team.|
-|[Generare codice da diagrammi classi UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Generare C# codice dai diagrammi classi** per avviare l'implementazione.|
+|[Generare codice da diagrammi classi UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Generare codice C# dai diagrammi classi** per avviare l'implementazione.|
 |[Personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personalizzare gli elementi del modello** usando gli stereotipi, per estendere gli elementi del modello UML standard per scopi specifici.|
 |[Collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md)|**Creare collegamenti tra elementi del modello ed** elementi di lavoro per tenere traccia di attività, test case, bug, requisiti, problemi o altri tipi di lavoro associati a parti specifiche del modello.|
-|[Esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md)|**Salvare il modello e i diagrammi** in modo da poterli condividere con altri utenti, inclusi quelli che non usano [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
+|[Esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md)|**Salvare il modello e i diagrammi** in modo da poterli condividere con altri utenti, inclusi quelli che non usano [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] .|
 
 ## <a name="related-tasks"></a>Attività correlate
 
-|**Argomento**|**Task**|
+|**Argomento**|**Attività**|
 |---------------|--------------|
 |[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe codice e diagrammi livello per meglio comprendere il codice non conosciuto.|
 |[Modellare i requisiti utente](../modeling/model-user-requirements.md)|Usare modelli per chiarire e comunicare le esigenze degli utenti.|
 |[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|Usare i modelli per descrivere la struttura complessiva e il comportamento del sistema e per verificare che soddisfi esigenze degli utenti.|
 |[Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)|Verificare che il software continui a essere coerente con le esigenze degli utenti e con l'architettura complessiva del sistema.|
-|[Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usare i modelli nello sviluppo agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usare i modelli per comprendere e modificare il sistema durante lo sviluppo.|
+|[Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usare i modelli nello sviluppo Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usare i modelli per comprendere e modificare il sistema durante lo sviluppo.|
 |[Strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)|Organizzare i modelli in un progetto di medie o grandi dimensioni.|
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Categoria**|**Links**|
+|**Categoria**|**Collegamenti**|
 |------------------|---------------|
 |**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

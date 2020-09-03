@@ -11,10 +11,10 @@ caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1db35e1eb98ad23a4414a48389092a3b05485527
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851859"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Creazione di un test codificati dell'interfaccia utente basato sui dati
@@ -22,7 +22,7 @@ ms.locfileid: "75851859"
 
 Per testare condizioni diverse, è possibile eseguire il test più volte con valori di parametro diversi. I test codificati dell'interfaccia utente basati sui dati offrono un modo conveniente per effettuare questa operazione. È possibile definire i valori dei parametri in un'origine dati e ogni riga nell'origine dati è un'iterazione del test codificato dell'interfaccia utente. Il risultato complessivo del test si baserà sul risultato di tutte le iterazioni. Se, ad esempio, un'iterazione test non riesce, il risultato complessivo del test sarà errato.
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
@@ -41,11 +41,11 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
 3. Aprire l'app Calcolatrice e avviare la registrazione del test.
 
-     ![Azioni di registrazione](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![Registra azioni](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. Aggiungere 1 più 2, mettere in pausa la registrazione e generare il metodo di test. I valori di input dell'utente verranno in seguito sostituiti con valori di un file di dati.
 
-     ![Genera metodo di test](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
+     ![Generare il metodo di test](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
 
      Chiudere il generatore di test. Il metodo viene aggiunto al test:
 
@@ -61,7 +61,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
 5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (scelta rapida da tastiera: Ctrl + R, T).
 
-     Nella finestra Esplora test viene visualizzato il risultato del test che mostra se il test è stato superato o meno. Per aprire la finestra Esplora test, scegliere **Windows** dal menu **TEST** e quindi scegliere **Esplora test**.
+     Nella finestra Esplora test viene visualizzato il risultato del test che mostra se il test è stato superato o meno. Per aprire la finestra Esplora test, scegliere **finestre** dal menu **test** , quindi scegliere **Esplora test**.
 
 6. Poiché un'origine dati può essere usata anche per i valori di parametro di asserzione, che sono usati dal test per verificare i valori previsti, viene aggiunta un'asserzione per convalidare la somma dei due numeri. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida, scegliere **Genera codice per test codificato dell'interfaccia utente** e **Usa il generatore di test codificati dell'interfaccia utente**.
 
@@ -98,13 +98,13 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
 1. Aggiungere un file di testo al progetto dataDrivenSample denominato `data.csv`.
 
-     ![Aggiungere un file con valori separati da virgole al progetto](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![Aggiungere al progetto un file con valori separati da virgole](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. Popolare il file CSV con i dati seguenti:
 
-    |Num1|Num2|Sum|
+    |Num1|Num2|SUM|
     |----------|----------|---------|
-    |3\.|4|7|
+    |3|4|7|
     |5|6|11|
     |6|8|14|
 
@@ -112,7 +112,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
      ![Popolare. File CSV con dati](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
-3. È importante salvare il file CSV usando la codifica corretta. Scegliere **Opzioni di salvataggio avanzate** dal menu **FILE** e quindi scegliere **Unicode (UTF-8 senza firma digitale) – Codepage 65001** come codifica.
+3. È importante salvare il file CSV usando la codifica corretta. Scegliere **Opzioni di salvataggio avanzate** dal menu **file** e scegliere **Unicode (UTF-8 senza firma)-tabella codici 65001** come codifica.
 
 4. Il file CSV deve essere copiato nella directory di output; diversamente, non è possibile eseguire il test. Usare la finestra Proprietà per copiarlo.
 
@@ -189,11 +189,11 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
     - Scegliere l'azione dell'interfaccia utente e osservare il mapping di controllo dell'interfaccia utente corrispondente. Si noti come il mapping corrisponda al codice, ad esempio `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Usare l'editor di test codificati dell'interfaccia utente per semplificare il codice](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Usare l'editor di test codificati dell'interfaccia utente come supporto per il codice](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - Nella finestra Proprietà aprire **Proprietà di ricerca**. Il valore **Nome** delle proprietà di ricerca è costituito dagli elementi che sono stati modificati nel codice usando l'origine dati. Ad esempio, a `SearchProperties` vengono assegnati i valori della prima colonna di ciascuna riga di dati: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Per le tre iterazioni, questo test imposterà il valore **Nome** per la proprietà di ricerca su 3, quindi su 5 e infine su 6.
 
-         ![Usare le proprietà di ricerca per semplificare la codifica](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![Usare le proprietà di ricerca come supporto per la codifica](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. Salvare la soluzione.
 
@@ -203,13 +203,13 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
     Dovrebbe venire visualizzato il test eseguito tramite le tre iterazioni che usano i valori nel file con estensione csv. Anche la convalida dovrebbe funzionare e il test dovrebbe essere visualizzato come superato in Esplora test.
 
-   **Linee guida**
+   **Indicazioni**
 
-   Per altre informazioni, vedere [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](https://msdn.microsoft.com/library/jj159340.aspx) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 2: Unit test: test interni) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://msdn.microsoft.com/library/jj159335.aspx) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: Automazione dei test di sistema)
+   Per altre informazioni, vedere [test per il recapito continuo con Visual studio 2012-capitolo 2: unit testing: test di interno](https://msdn.microsoft.com/library/jj159340.aspx) e [test per il recapito continuo con Visual Studio 2012-capitolo 5: automazione dei test di sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ## <a name="q--a"></a>Domande e risposte
 
-### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>Quali sono gli attributi di origine dati per altri tipi di origine dati, ad esempio SQL Express o XML?
+### <a name="what-are-the-data-source-attributes-for-other-data-source-types-such-as-sql-express-or-xml"></a><a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>Quali sono gli attributi di origine dati per altri tipi di origine dati, ad esempio SQL Express o XML?
  È possibile usare le stringhe di origine dati di esempio nella tabella seguente copiandole nel codice e apportando le personalizzazioni necessarie.
 
  **Tipi di origini dati e attributi**
@@ -246,7 +246,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ```
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>D: Perché non è possibile modificare il codice nel file UIMap.Designer?
- **R**: Qualsiasi modifica del codice eseguita nel file UIMapDesigner.cs verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio, e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente (ovvero CodedUITest1.cs).
+ **R**: Qualsiasi modifica del codice apportata nel file UIMapDesigner.cs verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio, e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente (ovvero CodedUITest1.cs).
 
  Se è necessario modificare un metodo registrato, copiarlo nel file UIMap.cs e rinominarlo. Il file UIMap.cs può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file UIMapDesigner.cs. È necessario rimuovere il riferimento al metodo originale nel file Coded UITest.cs e sostituirlo con il nome del metodo rinominato.
 

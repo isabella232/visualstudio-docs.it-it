@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 091338e411369e40f19e028cd19b6cb2e697718c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299604"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Installazione di sistemi di database, strumenti ed esempi
@@ -31,7 +31,7 @@ Visual Studio non include alcun sistema di database diverso da quelli usati inte
 
  Per lo sviluppo di SQL, assicurarsi di avere SQL Server Data Tools installato in Visual Studio. Scegliere il menu **Visualizza** . Se non viene visualizzato Esplora oggetti di SQL Server, passare al pannello di controllo e modificare Visual Studio. Nel programma di installazione selezionare **Microsoft SQL Server Data Tools**.
 
- Se si usano le API di archiviazione di Azure, installare gli emulatori di archiviazione di Azure nel computer locale durante lo sviluppo per evitare addebiti fino a quando non si è pronti per la distribuzione nell'ambiente di produzione. Per altre informazioni, vedere [usare l'emulatore di archiviazione di Azure per sviluppo e test](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).
+ Se si usano le API di archiviazione di Azure, installare gli emulatori di archiviazione di Azure nel computer locale durante lo sviluppo per evitare addebiti fino a quando non si è pronti per la distribuzione nell'ambiente di produzione. Per altre informazioni, vedere [Usare l'emulatore di archiviazione di Azure per sviluppo e test](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).
 
  Nell'elenco seguente sono inclusi alcuni dei sistemi di database più diffusi che è possibile utilizzare nei progetti di Visual Studio. L'elenco non è esaustivo. Per un elenco di fornitori di terze parti che offrono provider di dati ADO.NET che consentono una profonda integrazione con gli strumenti di Visual Studio, vedere [provider di dati ADO.NET](https://msdn.microsoft.com/library/dd363565.aspx).
 
@@ -42,13 +42,13 @@ Visual Studio non include alcun sistema di database diverso da quelli usati inte
  È possibile scaricare un'edizione a pagamento o gratuita del database Oracle dalla pagina [rete della tecnologia Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) . Per il supporto in fase di progettazione per Entity Framework e TableAdapter, sarà necessario [Oracle strumenti di sviluppo per Visual Studio](https://www.oracle.com/database/technologies/developer-tools/visual-studio/). Altri prodotti Oracle ufficiali, incluso Oracle Instant client, sono disponibili tramite Gestione pacchetti NuGet.  È possibile scaricare gli schemi di esempio Oracle seguendo le istruzioni riportate nella [documentazione online di Oracle](https://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
 
 ### <a name="mysql"></a>MySQL
- MySQL è un diffuso sistema di database open source ampiamente usato in aziende e siti Web. I download per MySQL, MySQL per Visual Studio e i prodotti correlati si trovano in [MySQL in Windows](https://www.mysql.com/why-mysql/windows/).  Le terze parti offrono varie estensioni di Visual Studio e applicazioni di gestione autonoma per MySQL. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**).
+ MySQL è un diffuso sistema di database open source ampiamente usato in aziende e siti Web. I download per MySQL, MySQL per Visual Studio e i prodotti correlati si trovano in [MySQL in Windows](https://www.mysql.com/why-mysql/windows/).  Le terze parti offrono varie estensioni di Visual Studio e applicazioni di gestione autonoma per MySQL. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  >  **Gestione pacchetti NuGet**  >  **Gestisci pacchetti NuGet per la soluzione**).
 
 ### <a name="postgresql"></a>PostgreSQL
- PostgreSQL è un sistema di database relazionale a oggetti open source gratuito. Per installarlo in Windows, è possibile scaricarlo dalla [pagina di download di PostgreSQL](http://www.postgresql.org/download/windows/).  È anche possibile compilare PostgreSQL dal codice sorgente.  Il sistema di base PostgreSQL include un'interfaccia del linguaggio C. Molte terze parti forniscono pacchetti NuGet per l'uso di PostgreSQL dalle applicazioni .NET.  È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**). Probabilmente il pacchetto più diffuso è fornito da [npgsql.org](http://www.npgsql.org/).
+ PostgreSQL è un sistema di database relazionale a oggetti open source gratuito. Per installarlo in Windows, è possibile scaricarlo dalla [pagina di download di PostgreSQL](http://www.postgresql.org/download/windows/).  È anche possibile compilare PostgreSQL dal codice sorgente.  Il sistema di base PostgreSQL include un'interfaccia del linguaggio C. Molte terze parti forniscono pacchetti NuGet per l'uso di PostgreSQL dalle applicazioni .NET.  È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  >  **Gestione pacchetti NuGet**  >  **Gestisci pacchetti NuGet per la soluzione**). Probabilmente il pacchetto più diffuso è fornito da [npgsql.org](http://www.npgsql.org/).
 
 ### <a name="sqlite"></a>SQLite
- SQLite è un motore di database SQL incorporato che viene eseguito nel processo dell'applicazione. È possibile scaricarlo dalla [pagina di download di SQLite](http://www.sqlite.org/download.html). Sono disponibili anche molti pacchetti NuGet di terze parti per SQLite. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**).
+ SQLite è un motore di database SQL incorporato che viene eseguito nel processo dell'applicazione. È possibile scaricarlo dalla [pagina di download di SQLite](http://www.sqlite.org/download.html). Sono disponibili anche molti pacchetti NuGet di terze parti per SQLite. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  >  **Gestione pacchetti NuGet**  >  **Gestisci pacchetti NuGet per la soluzione**).
 
 ### <a name="firebird"></a>Firebird
  Firebird è un sistema open source per database SQL. È possibile scaricarlo dalla [pagina di download di Firebird](http://firebirdsql.org/en/downloads/). Un provider di dati ADO.NET è disponibile tramite Gestione pacchetti NuGet.

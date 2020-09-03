@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4cac9981a582d5ba9527e0f8dc47d14b6fba18b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851759"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Estensione di test codificati dell'interfaccia utente e registrazioni delle azioni per supportare Microsoft Excel
@@ -20,7 +20,7 @@ ms.locfileid: "75851759"
 
 Il framework di test per i test codificati dell'interfaccia utente e le registrazioni delle azioni non supportano tutte le interfacce utente disponibili, e quindi potrebbero non supportare l'interfaccia utente specifica di cui eseguire il test. Ad esempio, non si può creare immediatamente un test codificato dell'interfaccia utente o una registrazione delle azioni per un foglio di calcolo di [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Si può però creare un'estensione personalizzata del framework dei test codificati dell'interfaccia utente che supporterà l'interfaccia utente specifica sfruttando l'estendibilità del framework stesso. L'argomento seguente viene fornito un esempio che illustra come estendere il framework per supportare la creazione di test e le registrazioni delle azioni per [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Per altre informazioni sulle piattaforme supportate, vedere [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 

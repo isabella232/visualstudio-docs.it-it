@@ -1,5 +1,5 @@
 ---
-title: Oggetto VSCodeWindowManager . Documenti Microsoft
+title: Oggetto VSCodeWindowManager | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17bc9462af55ec9621654bd39cd65a2091f3f73f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740412"
 ---
 # <a name="vscodewindowmanager-object"></a>Oggetto VSCodeWindowManager
 
-Il servizio di linguaggio implementa il gestore della finestra del codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra a discesa). Per ulteriori informazioni, vedere Personalizzazione delle finestre di [codice tramite l'API Legacy](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+Il servizio di linguaggio implementa gestione finestre del codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra a discesa). Per altre informazioni, vedere [personalizzazione delle finestre di codice tramite l'API legacy](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
 
-Nella tabella seguente vengono illustrate `VSCodeWindowManager` le interfacce nell'oggetto.
+Nella tabella seguente vengono illustrate le interfacce dell' `VSCodeWindowManager` oggetto.
 
 |Interfaccia|Descrizione|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Consente di aggiungere o rimuovere aree di controllo (ad esempio barre a discesa) da una finestra del codice.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Consente l'aggiunta o la rimozione di aree di strumenti, ad esempio barre a discesa, da una finestra del codice.|

@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPortNotify2::RemoveProgramNode . Documenti Microsoft
+title: 'IDebugPortNotify2:: RemoveProgramNode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c59b80a2c9748dccccd7b1fa1d5217b8e9f4979f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724954"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
-Annulla la registrazione di un programma di cui è possibile eseguire il debug dalla porta su cui è in esecuzione.
+Annulla la registrazione di un programma di cui è possibile eseguire il debug dalla porta in cui è in esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ int RemoveProgramNode( 
 
 ## <a name="parameters"></a>Parametri
 `pProgramNode`\
-[in] Objecy [di IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il programma di cui annullare la registrazione.
+in Un Esplora [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che rappresenta il programma di cui annullare la registrazione.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo rimuove un nodo di programma che è stato aggiunto con una chiamata al [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metodo.
+ Questo metodo rimuove un nodo di programma che è stato aggiunto con una chiamata al metodo [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

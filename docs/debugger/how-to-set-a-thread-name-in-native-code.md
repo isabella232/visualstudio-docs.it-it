@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ce6281a87900247cc54422a5175714d5f05b8e07
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349146"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Procedura: impostare il nome di un thread in codice nativo
@@ -32,7 +32,7 @@ Esistono due modi per impostare un nome di thread. Il primo è tramite la funzio
 
 Vale la pena notare che _entrambi_ gli approcci possono essere utilizzati insieme, se necessario, poiché i meccanismi con i quali funzionano sono indipendenti tra loro.
 
-### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Impostare il nome di un thread utilizzando`SetThreadDescription`
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Impostare il nome di un thread utilizzando `SetThreadDescription`
 
 Vantaggi:
 * I nomi dei thread sono visibili durante il debug in Visual Studio, indipendentemente dal fatto che il debugger sia stato collegato al processo al momento in cui viene richiamato SetThreadDescription.
@@ -108,7 +108,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 }
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
 - [Procedura: impostare il nome di un thread in codice gestito](../debugger/how-to-set-a-thread-name-in-managed-code.md)

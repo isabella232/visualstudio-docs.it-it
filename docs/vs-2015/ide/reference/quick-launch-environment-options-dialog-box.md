@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851629"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-È possibile usare **Avvio veloce** per effettuare una rapida ricerca ed eseguire le azioni delle risorse IDE, ad esempio opzioni, modelli, menu. Non è possibile usare **Avvio veloce** per cercare codice e simboli. La casella di ricerca **Avvio veloce** si trova nell'angolo superiore destro della barra dei menu ed è possibile accedervi premendo CTRL+Q. È sufficiente immettere la stringa di ricerca nella casella. Per cercare stringhe contenenti @, usare ‘@@’.
+È possibile usare **Avvio veloce** per effettuare una rapida ricerca ed eseguire le azioni delle risorse IDE, ad esempio opzioni, modelli, menu. Non è possibile usare **Avvio veloce** per cercare codice e simboli. La casella di ricerca **Avvio veloce** si trova nell'angolo superiore destro della barra dei menu ed è possibile accedervi premendo CTRL+Q. È sufficiente immettere la stringa di ricerca nella casella. Per cercare stringhe contenenti @, usare ‘@@’. 
 
  **Avvio veloce** è abilitato per impostazione predefinita quando si installa Visual Studio. Nella barra dei menu è possibile mostrare o nascondere **Avvio veloce** scegliendo **Strumenti**, **Opzioni**. Espandere il nodo **Ambienti** e quindi scegliere **Avvio veloce**. Selezionare o deselezionare la casella di controllo **Abilita avvio veloce**. In questa pagina è anche possibile abilitare o disabilitare le categorie di ricerca.
 
@@ -34,12 +34,12 @@ ms.locfileid: "75851629"
 
  È possibile usare i metodi rapidi seguenti per limitare la ricerca a categorie specifiche.
 
-|Categoria|Collegamento|Descrizione metodo rapido|
+|Category|Tasto di scelta rapida|Descrizione metodo rapido|
 |--------------|--------------|--------------------------|
-|Usati di recente|@mru<br /><br /> Ad esempio, `@mru font`.|Visualizza fino a cinque elementi **Usati di recente**.|
-|Menus|@menu<br /><br /> Ad esempio, `@menu font`.|Limita la ricerca alle voci di menu.|
-|Options|@opt<br /><br /> Ad esempio, `@opt font`.|Limita la ricerca alle impostazioni nella finestra di dialogo **Opzioni**.|
-|Documenti|@doc<br /><br /> Ad esempio, `@doc font`.|Limita la ricerca ai percorsi e ai nomi di file dei documenti aperti per i criteri di ricerca, ma non esegue la ricerca nel testo all'interno dei file.|
+|Usati di recente|@mru<br /><br /> Ad esempio: `@mru font`|Visualizza fino a cinque elementi **Usati di recente**.|
+|Menu|@menu<br /><br /> Ad esempio: `@menu font`|Limita la ricerca alle voci di menu.|
+|Opzioni|@opt<br /><br /> Ad esempio: `@opt font`|Limita la ricerca alle impostazioni nella finestra di dialogo **Opzioni**.|
+|Documenti|@doc<br /><br /> Ad esempio: `@doc font`|Limita la ricerca ai percorsi e ai nomi di file dei documenti aperti per i criteri di ricerca, ma non esegue la ricerca nel testo all'interno dei file.|
 
 > [!NOTE]
 > È possibile modificare le combinazioni di tasti nella pagina **Generale**, **Tastiera** della finestra di dialogo **Opzioni**.

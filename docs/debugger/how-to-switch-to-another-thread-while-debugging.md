@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9306e68c7d8906c6956eb5e3810327898bc56567
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348912"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Procedura: passare a un altro thread durante il debug in Visual Studio (C#, Visual Basic, C++)
@@ -47,5 +47,5 @@ Quando si esaminano i thread nell'editor di codice e le diverse finestre di debu
 
 2. Nell'elenco, fare clic sul thread al quale si desidera passare.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)

@@ -23,13 +23,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233120"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>Finestra di dialogo Opzioni: Elenco attività ambiente \>
+# <a name="options-dialog-box-environment--task-list"></a>Finestra di dialogo Opzioni: ambiente \> elenco attività
 
 La pagina Opzioni consente di aggiungere, eliminare e modificare i token di commento che generano i promemoria di **Elenco attività**. Per visualizzare queste impostazioni selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e quindi scegliere **Elenco attività**.
 

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e7aade87e0e1f6fe6a07269a585b35f52d4a9e5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191544"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concetti avanzati relativi a MSBuild
@@ -25,11 +25,11 @@ Nei documenti di questa sezione viene descritto come utilizzare le tecniche avan
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|DESCRIZIONE|  
+|Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Batch MSBuild](../msbuild/msbuild-batching.md)|Viene descritto come compilare in batch destinazioni e attività in base ai metadati dell'elemento.|  
+|[Batch](../msbuild/msbuild-batching.md)|Viene descritto come compilare in batch destinazioni e attività in base ai metadati dell'elemento.|  
 |[Trasformazioni](../msbuild/msbuild-transforms.md)|Viene illustrato come utilizzare le trasformazioni per abilitare l'analisi delle dipendenze.|  
-|[Integrazione con Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|Viene illustrato come utilizzare il file di progetto MSBuild quando si compila codice dall'IDE di Visual Studio.|  
+|[Integrazione di Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|Viene illustrato come utilizzare il file di progetto MSBuild quando si compila codice dall'IDE di Visual Studio.|  
 |[Compilazione di più progetti in parallelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)|Viene descritto come compilarepiù progetti velocemente nei computer che dispongono di più processori o processori multicore.|  
 |[Multitargeting](../msbuild/msbuild-multitargeting-overview.md)|Viene descritto come compilare un'applicazione da eseguire in una qualunque delle tante versioni di .NET Framework.|  
 |[Procedure consigliate](../msbuild/msbuild-best-practices.md)|Vengono indicate le procedure consigliate per la scrittura di script MSBuild.|  
