@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418743"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
@@ -34,11 +34,11 @@ Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora
 
 Le opzioni seguenti consentono di selezionare la configurazione e la piattaforma da visualizzare o modificare.
 
-**Configuration**
+**Configurazione**
 
 Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni possibili sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**.
 
-**Platform**
+**Piattaforma**
 
 Specifica le impostazioni della piattaforma da visualizzare o modificare. Le scelte possono includere **Qualsiasi CPU** (impostazione predefinita), **x64** e **x86**.
 
@@ -82,7 +82,7 @@ Questa opzione specifica se è supportato il debug del codice nativo. Selezionar
 
 Selezionare o deselezionare questa casella di controllo per abilitare o disabilitare il debug delle routine SQL dall'applicazione Visual Basic. Questa casella di controllo è deselezionata per impostazione predefinita.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
 - [Impostazioni di progetto per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)

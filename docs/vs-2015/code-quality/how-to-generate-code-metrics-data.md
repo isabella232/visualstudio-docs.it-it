@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661284"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica codice
@@ -25,7 +25,7 @@ ms.locfileid: "72661284"
 
 È possibile decidere di generare i risultati della metrica del codice per un'intera soluzione o per un progetto selezionato.
 
- **Requirements**
+ **Requisiti**
 
  Visual Studio Enterprise
 
@@ -33,11 +33,11 @@ ms.locfileid: "72661284"
 
 - Fare clic sul **menu Analizza**e quindi su **metriche CalculateCode per la soluzione**.
 
-     \- oppure -
+     \- - oppure -
 
 - In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e quindi scegliere **metriche CalculateCode**.
 
-     \- oppure -
+     \- - oppure -
 
 - Nella finestra **dei risultati della metrica del codice** , fare clic sul pulsante **metrica CalculateCode per la soluzione** .
 
@@ -49,7 +49,7 @@ ms.locfileid: "72661284"
 
 2. Fare clic su **analizza**e quindi su **genera metrica codice per i progetti selezionati**.
 
-    \- oppure -
+    \- - oppure -
 
     Fare clic con il pulsante destro del mouse sulle selezioni e quindi fare clic su **metriche CalculateCode**.
 

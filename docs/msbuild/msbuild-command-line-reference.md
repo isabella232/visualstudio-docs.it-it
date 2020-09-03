@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a393afa3346b42786ff352dc0c2d48ea6c8b1152
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88639380"
 ---
 # <a name="msbuild-command-line-reference"></a>Riferimenti alla riga di comando di MSBuild
@@ -42,9 +42,9 @@ MSBuild.exe [Switches] [ProjectFile]
 |--------------|-----------------|
 |`ProjectFile`|Compila le destinazioni nel file di progetto specificato. Se non si specifica un file di progetto, in MSBuild viene eseguita una ricerca nella directory di lavoro corrente di un nome file la cui estensione termina in *proj* e viene usato il file in questione. È inoltre possibile specificare un file di soluzione di Visual Studio per questo argomento.|
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
 
-|Opzione|Forma breve|Descrizione|
+|Commutatore|Forma breve|Descrizione|
 |------------|----------------|-----------------|
 |-detailedSummary|-ds|Mostra informazioni dettagliate alla fine del log di compilazione sulle configurazioni che sono state compilate e su come sono state pianificate nei nodi.|
 |-graphBuild [: `True` o `False` ]|-Graph [: `True` o `False` ]|Consente a MSBuild di costruire e compilare un grafico del progetto. La costruzione di un grafico comporta l'identificazione dei riferimenti al progetto per creare dipendenze. La compilazione di tale grafo comporta il tentativo di compilare i riferimenti al progetto prima dei progetti che vi fanno riferimento, diversi dalla pianificazione tradizionale di MSBuild. Richiede MSBuild 16 o versione successiva.|
@@ -74,7 +74,7 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ### <a name="switches-for-loggers"></a>Opzioni per logger
 
-|Opzione|Forma breve|Descrizione|
+|Commutatore|Forma breve|Descrizione|
 |------------|----------------|-----------------|
 |-binaryLogger [: [LogFile =]`output.binlog`<br/>[; ProjectImports = [None, embed, ZipFile]]]|-bl|Serializza tutti gli eventi di compilazione in un file binario compresso. Per impostazione predefinita il file si trova nella directory corrente ed è denominato *msbuild.binlog*. Il registro binario è una descrizione dettagliata del processo di compilazione che in un secondo momento può essere usata per ricostruire i registri di testo e da altri strumenti di analisi. Un registro binario è in genere 10-20 volte inferiore rispetto a quello più dettagliato di diagnostica a livello di testo, ma sono incluse informazioni aggiuntive.<br /><br />Per impostazione predefinita, il logger binario raccoglie il testo di origine dei file di progetto, inclusi tutti i progetti importati e i file di destinazione durante la compilazione. Il commutatore facoltativo `ProjectImports` controlla questo comportamento:<br /><br /> -   **ProjectImports = None**. Non raccogliere le importazioni del progetto.<br /> -   **ProjectImports=Embed**. Il progetto Embed importa il file di log (impostazione predefinita).<br /> -   **ProjectImports=ZipFile**. Salvare i file di progetto in * \<output>.projectimports.zip* dove corrisponde al nome \<output> del file di log binario.<br /><br />L'impostazione predefinita per ProjectImports è Embed.<br />**Nota**: il logger non raccoglie file di origine non MSBuild come *.cs*, *.cpp* e così via.<br />Un file *.binlog* può essere "riprodotto" passandolo a *msbuild.exe* come argomento anziché progetto o soluzione. Altri logger riceveranno le informazioni contenute nel file di log, come se si stesse verificando la compilazione originale. Altre informazioni sul registro binario e relativo utilizzo sono disponibili all'indirizzo: https://github.com/Microsoft/msbuild/wiki/Binary-Log <br /><br />**Esempi**:<br /> -   `-bl`<br /> -    `-bl:output.binlog`<br /> -   `-bl:output.binlog;ProjectImports=None`<br /> -   `-bl:output.binlog;ProjectImports=ZipFile`<br /> -   `-bl:..\..\custom.binlog`<br /> -   `-binaryLogger`|
 |-consoleLoggerParameters:<br /><br /> `parameters`|-clp:`parameters`|Passa i parametri specificati al logger di console tramite cui le informazioni sulla compilazione vengono visualizzate nella finestra della console. È possibile specificare i parametri seguenti:<br /><br /> -   **PerformanceSummary**. Visualizza il tempo necessario per attività, destinazioni e progetti.<br />-   **Riepilogo**. Mostra il riepilogo di avvisi ed errori alla fine.<br />-   **NoSummary**. Non mostra il riepilogo di avvisi ed errori alla fine.<br />-   **ErrorsOnly**. Mostra solo gli errori.<br />-   **WarningsOnly**. Mostra solo gli avvisi.<br />-   **NoItemAndPropertyList**. Non mostra l'elenco degli elementi e delle proprietà che verrebbero visualizzati all'inizio di ogni compilazione del progetto se il livello di dettaglio fosse stato impostato su `diagnostic`.<br />-   **ShowCommandLine**. Mostra i messaggi `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. Mostra il timestamp come prefisso di ogni messaggio.<br />-   **ShowEventId**. Mostra l'ID evento per ogni evento avviato, completato e per ogni messaggio.<br />-   **ForceNoAlign**. Non allinea il testo alla dimensione del buffer della console.<br />-   **DisableConsoleColor**. Usa i colori predefiniti della console per tutti i messaggi di registrazione.<br />-   **DisableMPLogging**. Disabilita lo stile di registrazione del multiprocessore dell'output quando è in esecuzione in modalità non multiprocessore.<br />-   **EnableMPLogging**. Abilita lo stile di registrazione del multiprocessore anche quando è in esecuzione in modalità non multiprocessore. Questo stile di registrazione è attivato per impostazione predefinita.<br />-   Livello di **dettaglio**. Esegue l'override dell'impostazione **-verbosity** per questo logger.<br /><br /> Usare un punto e virgola per separare più parametri, come illustrato nell'esempio seguente:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`<br/><br/> Il logger della console predefinito è al livello di dettaglio normale e include un `Summary` .|

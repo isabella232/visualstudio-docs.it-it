@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68919529"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Suggerimenti sull'accessibilità per Visual Studio
@@ -47,27 +47,27 @@ L'editor di Visual Studio comprende molte "aree di controllo" del testo che cons
 
 Come molte finestre degli strumenti, l'IDE di Visual Studio include alcune barre degli strumenti. I seguenti tasti di scelta rapida consentono di accedervi.
 
-|Funzionalità|Descrizione|Tasti di scelta rapida|
+|Feature|Descrizione|Tasti di scelta rapida|
 |-------------|-----------------| - |
-|Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard.|**ALT**, **Ctrl**+**scheda** CTRL|
-|Barre degli strumenti della finestra degli strumenti|Consentono di spostare lo stato attivo nelle barre degli strumenti in una finestra degli strumenti. <br> <br> **NOTA:** questo procedimento funziona per la maggior parte delle finestre degli strumenti, ma solo quando lo stato attivo è in una finestra degli strumenti. È anche necessario scegliere MAIUSC prima di ALT. In alcune finestre degli strumenti, ad esempio Team Explorer, è necessario tenere premuto MAIUSC per qualche istante prima di scegliere ALT.|**MAIUSC**+**ALT**|
-|Barre degli strumenti|Consente di passare al primo elemento nella barra degli strumenti successiva (quando una barra degli strumenti ha lo stato attivo).|**CTRL**+**Tab**|
+|Barre degli strumenti dell'IDE|Consente di selezionare il primo pulsante della barra degli strumenti Standard.|**ALT**, **Ctrl** + **scheda** CTRL|
+|Barre degli strumenti della finestra degli strumenti|Consentono di spostare lo stato attivo nelle barre degli strumenti in una finestra degli strumenti. <br> <br> **NOTA:** questo procedimento funziona per la maggior parte delle finestre degli strumenti, ma solo quando lo stato attivo è in una finestra degli strumenti. È anche necessario scegliere MAIUSC prima di ALT. In alcune finestre degli strumenti, ad esempio Team Explorer, è necessario tenere premuto MAIUSC per qualche istante prima di scegliere ALT.|**Sposta** + **ALT**|
+|Barre degli strumenti|Consente di passare al primo elemento nella barra degli strumenti successiva (quando una barra degli strumenti ha lo stato attivo).|**CTRL** + **Scheda**|
 
 ### <a name="other-useful-keyboard-shortcuts"></a>Altri tasti di scelta rapida utili
 
 Di seguito sono riportate altri tasti di scelta rapida utili.
 
-|Funzionalità|Descrizione|Tasti di scelta rapida|
+|Feature|Descrizione|Tasti di scelta rapida|
 |-------------|-----------------| - |
-|IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **Nota:** Tasti di scelta rapida standard di Windows|**Left ALT**+**Left Shift**+**Stamp**|
+|IDE|Consente di attivare e disattivare l'impostazione Contrasto elevato. <br> <br> **Nota:** Tasti di scelta rapida standard di Windows|**ALT sinistro** + **Spostamento** + a sinistra **Stamp**|
 |Finestra di dialogo|Consente di selezionare o deselezionare l'opzione di una casella di controllo in una finestra di dialogo. <br> <br> **Nota:** Tasti di scelta rapida standard di Windows|**BARRA SPAZIATRICE**|
-|Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **Nota:** Tasti di scelta rapida standard di Windows|**MAIUSC**+**F10**|
-|Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Premere il tasto **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio, è possibile scegliere **ALT**+**F**+**O**+**P**.  <br><br> **Nota:** Tasti di scelta rapida standard di Windows|**Alt** + **[lettera]**|
-|Casella Cerca|Usare la funzionalità di ricerca in Visual Studio.|**CTRL**+**Q**|
-|Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti.|**CTRL**+**freccia su**<br /><br /> e<br /><br /> **CTRL**+**freccia giù**|
+|Menu di scelta rapida|Consentono di aprire un menu di scelta rapida (clic con il pulsante destro del mouse). <br> <br> **Nota:** Tasti di scelta rapida standard di Windows|**Sposta** + **F10**|
+|Menu|Consente di accedere rapidamente a una voce di menu con i rispettivi tasti di scelta rapida. Premere il tasto **ALT** seguito dalle lettere sottolineate in un menu per attivare il comando. Ad esempio, per visualizzare la finestra di dialogo Apri progetto in Visual Studio, è possibile scegliere **ALT** + **F** + **O** + **P**.  <br><br> **Nota:** Tasti di scelta rapida standard di Windows|**ALT**  +  **[lettera]**|
+|Casella di ricerca|Usare la funzionalità di ricerca in Visual Studio.|**CTRL** + **D**|
+|Finestra della casella degli strumenti|Consente di passare da una scheda all'altra della casella degli strumenti.|**CTRL** + **Freccia su**<br /><br /> e<br /><br /> **CTRL** + **Freccia giù**|
 |Finestra della casella degli strumenti|Consente di aggiungere un controllo della casella degli strumenti a un form o finestra di progettazione.|**Entrare**|
-|Finestra di dialogo Opzioni: ambiente > tastiera|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**.|**BACKSPACE**|
-|Finestra degli strumenti Notifiche|Aprire la finestra degli strumenti Notifiche usando due combinazioni di tasti di scelta rapida, una dopo l'altra. Quindi, visualizzare una notifica usando i tasti di direzione per selezionarla.| **CTRL** + **&#92;**, **CTRL**+**N**|
+|Finestra di dialogo Opzioni: ambiente > tastiera|Consente di eliminare una combinazione di tasti immessa nell'opzione **Premi tasti di scelta rapida**.|**Backspace**|
+|Finestra degli strumenti Notifiche|Aprire la finestra degli strumenti Notifiche usando due combinazioni di tasti di scelta rapida, una dopo l'altra. Quindi, visualizzare una notifica usando i tasti di direzione per selezionarla.| **CTRL** + **&#92;**, **CTRL** + **N**|
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso.
@@ -76,7 +76,7 @@ Di seguito sono riportate altri tasti di scelta rapida utili.
 
 Di seguito viene illustrato come accedere alla finestra notifiche tramite tasti di scelta rapida quando viene visualizzata una notifica nell'IDE:
 
-1. Da qualsiasi punto dell'IDE, premere i due tasti di scelta rapida seguenti in sequenza, uno dopo l'altro: **CTRL** + **&#92;** e quindi **CTRL**+**N**.
+1. Da qualsiasi punto dell'IDE, premere i due tasti di scelta rapida seguenti in sequenza, uno dopo l'altro: **CTRL** + **&#92;** e quindi **CTRL** + **N**.
 
    Verrà visualizzata la finestra **Notifiche**.
 

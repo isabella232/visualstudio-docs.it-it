@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4c82836f5a80fae421a30721d8c3ee4c3d6893d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735386"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante delle dimensioni della trama ridotte a metà o un quarto
@@ -27,7 +27,7 @@ Riduce le dimensioni della trama per trame che non sono destinazioni di renderin
 
  Se le trame occupano più memoria di quella disponibile, considerarne la riduzione delle dimensioni, ma solo dopo avere previsto la compressione delle trame appropriate. Come accade per le trame più piccole, le trame compresse occupano meno memoria e riducono la necessità di paging nella memoria di sistema, tuttavia la fedeltà dei colori risulterà ridotta. A seconda del contenuto delle trame, la compressione può non sempre rappresentare la soluzione appropriata, ad esempio nel caso di trame con variazioni di colore significative. Per molte trame, tuttavia, la compressione può permettere di conservare una migliore qualità complessiva dell'immagine rispetto alla loro riduzione.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Le dimensioni della trama vengono ridotte a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, le dimensioni della trama vengono ridotte quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una trama che viene usata nel rendering, ovvero:
 
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.
@@ -41,7 +41,7 @@ Riduce le dimensioni della trama per trame che non sono destinazioni di renderin
   Se vengono generate mappe MIP per la trama, la variante riduce il numero di livelli MIP di conseguenza, un livello in meno quando si dimezzano le dimensioni o due livelli in meno quando si riducono di tre quarti.
 
 ## <a name="example"></a>Esempio
- Questa variante ridimensiona le trame in fase di esecuzione prima della chiamata a `CreateTexture2D`. Per codice di produzione, questo approccio è sconsigliato perché le trame a dimensioni intere occupano più spazio su disco e perché il passaggio aggiuntivo può aumentare i tempi di caricamento nell'app, in particolare per quanto riguarda le trame compresse, che richiedono risorse di elaborazione notevoli per la codifica. È invece consigliabile ridimensionare le trame offline usando un editor o programma per l'elaborazione di immagini che faccia parte della pipeline di compilazione. Questi approcci riducono i requisiti di spazio su disco ed eliminano sovraccarichi di in fase di esecuzione nell'app, oltre a restituire una quantità di tempo di elaborazione che consente di mantenere la miglior qualità di immagine riducendo o comprimendone le trame.
+ Questa variante ridimensiona le trame in fase di esecuzione prima della chiamata a `CreateTexture2D` . Per codice di produzione, questo approccio è sconsigliato perché le trame a dimensioni intere occupano più spazio su disco e perché il passaggio aggiuntivo può aumentare i tempi di caricamento nell'app, in particolare per quanto riguarda le trame compresse, che richiedono risorse di elaborazione notevoli per la codifica. È invece consigliabile ridimensionare le trame offline usando un editor o programma per l'elaborazione di immagini che faccia parte della pipeline di compilazione. Questi approcci riducono i requisiti di spazio su disco ed eliminano sovraccarichi di in fase di esecuzione nell'app, oltre a restituire una quantità di tempo di elaborazione che consente di mantenere la miglior qualità di immagine riducendo o comprimendone le trame.
 
 ## <a name="see-also"></a>Vedere anche
 - [Variante di generazione di mappe MIP](mip-map-generation-variant.md)

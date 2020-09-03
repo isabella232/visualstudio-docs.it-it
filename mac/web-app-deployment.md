@@ -7,17 +7,17 @@ ms.author: sayedha
 ms.date: 01/25/2019
 ms.assetid: d746292d-0570-424a-bf43-e16ab85bbf0d
 ms.openlocfilehash: 98169016921df5397fafb5a77c214357c18a0ae8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70107989"
 ---
 # <a name="aspnet-core-web-app-deployment"></a>Distribuzione di applicazioni Web ASP.NET Core
 
 La pubblicazione (distribuzione) rappresenta un passaggio importante dello sviluppo di applicazioni Web. È possibile pubblicare in un ambiente remoto per consentire ad altri utenti di usare l'applicazione oppure per eseguire test. Visual Studio per Mac offre due opzioni per pubblicare l'applicazione. L'opzione Pubblica in Servizi app di Azure consente di pubblicare l'applicazione Web nel servizio app di Azure. L'opzione Pubblica nella cartella consente di pubblicare l'applicazione in una cartella.
 
-## <a name="publish-to-azure-app-service"></a>Pubblicare in Servizio app di Azure
+## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 
 Usando Visual Studio per Mac è possibile pubblicare l'applicazione Web direttamente nel servizio app di Azure. Per pubblicare l'applicazione Web ASP.NET Core nel servizio app di Azure fare riferimento all'articolo [Eseguire la pubblicazione nel servizio app di Azure](publish-app-svc.md).
 

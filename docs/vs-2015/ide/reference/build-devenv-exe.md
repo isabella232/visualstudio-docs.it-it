@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419716d750771908a43318d051cb0b4681d35149
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660988"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -58,4 +58,4 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Compilazione e pulizia di progetti e soluzioni in Visual Studio ](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Devenv opzioni della riga di comando ](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv. exe) ](../../ide/reference/rebuild-devenv-exe.md) [/clean (devenv. exe) ](../../ide/reference/clean-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+ [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [devenv opzioni della riga di comando](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

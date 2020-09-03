@@ -9,10 +9,10 @@ caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd212eb304e6cba022b067b8b432cf00fc3f87ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660543"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
@@ -52,7 +52,7 @@ Quando si crea un progetto di test in Microsoft Visual Studio, per impostazione 
 
 1. Creare un nuovo progetto di unit test Visual Basic. Scegliere **Nuovo** dal menu **File** e quindi **Progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+     La finestra di dialogo **Nuovo progetto** viene visualizzata.
 
 2. In **Modelli installati** espandere **Visual Basic**. Selezionare **Test** e quindi selezionare il modello **Progetto di test**.
 
@@ -62,7 +62,7 @@ Quando si crea un progetto di test in Microsoft Visual Studio, per impostazione 
 
      Verranno visualizzate le proprietà del progetto di test Visual Basic.
 
-5. Nella scheda **Compila** scegliere **Opzioni di compilazione avanzate**, come illustrato nella figura seguente.
+5. Nella scheda **Compila** scegliere **Opzioni di compilazione avanzate** , come illustrato nella figura seguente.
 
      ![Opzioni di compilazione avanzate](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
 
@@ -74,9 +74,9 @@ Quando si crea un progetto di test in Microsoft Visual Studio, per impostazione 
 
 1. Creare un nuovo progetto di unit test Visual C#. Scegliere **Nuovo** dal menu **File** e quindi **Progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+     La finestra di dialogo **Nuovo progetto** viene visualizzata.
 
-2. In **Modelli installati** espandere **Visual C#** . Selezionare **Test** e quindi selezionare il modello **Progetto di test**.
+2. In **Modelli installati** espandere **Visual C#**. Selezionare **Test** e quindi selezionare il modello **Progetto di test**.
 
 3. Nella casella di testo **Nome** digitare un nome per il progetto di test Visual C# e scegliere **OK**.
 
@@ -92,18 +92,18 @@ Quando si crea un progetto di test in Microsoft Visual Studio, per impostazione 
 
 1. Creare un nuovo progetto di unit test Visual C++. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+     La finestra di dialogo **Nuovo progetto** viene visualizzata.
 
     > [!WARNING]
     > Per compilare unit test C++/CLI per una versione precedente di .NET Framework per Visual C++, è necessario usare la versione corrispondente di Visual Studio. Ad esempio, per impostare come destinazione .NET Framework 3.5, è necessario installare [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] e [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.
 
-2. In **Modelli installati** espandere **Visual C++** . Selezionare **Test** e quindi selezionare il modello **Progetto di test**.
+2. In **Modelli installati** espandere **Visual C++**. Selezionare **Test** e quindi selezionare il modello **Progetto di test**.
 
 3. Nella casella di testo **Nome** digitare un nome per il progetto di test Visual C++ e scegliere **OK**.
 
-4. In Esplora soluzioni scegliere **Scarica progetto** dal nuovo progetto di test Visual C++.
+4. In Esplora soluzioni scegliere **Scarica progetto** dalla nuova Visual C++ progetto di test.
 
-5. In Esplora soluzioni scegliere il progetto di test di Visual C++ scaricato, quindi selezionare **Modifica \<nome progetto>.vcxproj**.
+5. In Esplora soluzioni scegliere il progetto di test Visual C++ scaricato e quindi scegliere **modifica \<project name> . vcxproj**.
 
      Il file con estensione vcxproj verrà aperto nell'editor.
 
@@ -123,7 +123,7 @@ Quando si crea un progetto di test in Microsoft Visual Studio, per impostazione 
 
 7. Salvare e chiudere il file con estensione vcxproj.
 
-8. In Esplora soluzioni selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test Visual C++.
+8. In Esplora soluzioni scegliere Seleziona **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di Visual C++ test.
 
 ## <a name="see-also"></a>Vedere anche
  [Creazione ed esecuzione di unit test per il codice esistente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173) [creazione di soluzioni SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [compilazione e debug di soluzioni SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) finestra di [dialogo impostazioni del compilatore avanzate (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

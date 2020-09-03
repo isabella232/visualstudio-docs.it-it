@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731202"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>finestra di dialogo Debugger di Microsoft Visual Studio (generata eccezione)
@@ -43,5 +43,5 @@ Si è verificata un'eccezione nel programma. In questa finestra di dialogo è in
 
 ## <a name="see-also"></a>Vedere anche
 - [Gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md)
-- [Procedure consigliate per le eccezioni](/dotnet/standard/exceptions/best-practices-for-exceptions)
+- [Suggerimenti per le eccezioni](/dotnet/standard/exceptions/best-practices-for-exceptions)
 - [Gestione delle eccezioni](/cpp/extensions/exception-handling-cpp-component-extensions)

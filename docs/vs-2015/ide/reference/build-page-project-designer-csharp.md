@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21b572e99d23c882f90a1e9218e7a52fb94aedb8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660900"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
@@ -38,12 +38,12 @@ Usare la pagina **Compilazione** di **Creazione progetti** per specificare le pr
 
  **Configurazione** Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni possono essere **Attiva (Debug)** (il valore predefinito), **Debug**, **Release** o **Tutte le configurazioni**.
 
- **Piattaforma** Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [How to: Create and Edit Configurations](../../ide/how-to-create-and-edit-configurations.md) (Procedura: Creare e modificare le configurazioni).
+ **Piattaforma** Specifica le impostazioni della piattaforma da visualizzare o modificare. L'impostazione predefinita è **Active (Any CPU)** (Attiva (qualsiasi CPU)). È possibile modificare la piattaforma attiva tramite **Gestione configurazione**. Per altre informazioni, vedere [procedura: creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Generale
  Le opzioni seguenti consentono di configurare diverse impostazioni del compilatore C#.
 
- **Simboli di compilazione condizionale** Specifica i simboli su cui eseguire la compilazione condizionale. Separare i simboli con un punto e virgola (";"). Per altre informazioni, vedere [/define (Opzioni del compilatore C#)](https://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e).
+ **Simboli di compilazione condizionale** Specifica i simboli su cui eseguire la compilazione condizionale. Separare i simboli con un punto e virgola (";"). Per altre informazioni, vedere [/define (opzioni del compilatore C#)](https://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e).
 
  **Definisci costante DEBUG** Definisce DEBUG come simbolo in tutti i file di codice sorgente dell'app. Selezionare questa opzione equivale a usare l'opzione della riga di comando `/define:DEBUG`.
 
@@ -67,7 +67,7 @@ Usare la pagina **Compilazione** di **Creazione progetti** per specificare le pr
 
   [Consenti codice di tipo unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) Consente la compilazione del codice che usa la parola chiave **unsafe**. Per altre informazioni, vedere [/unsafe (Opzioni del compilatore C#)](https://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).
 
-  **Ottimizza codice** Abilita o disabilita le ottimizzazioni eseguite dal compilatore per ridurre le dimensioni del file di output e aumentarne la velocità e l'efficienza. Per altre informazioni, vedere [/optimize (Opzioni del compilatore C#)](https://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).
+  **Ottimizza codice** Abilita o disabilita le ottimizzazioni eseguite dal compilatore per ridurre le dimensioni del file di output e aumentarne la velocità e l'efficienza. Per altre informazioni, vedere [/optimize (opzioni del compilatore C#)](https://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).
 
 ## <a name="errors-and-warnings"></a>Errori e avvisi
  Le impostazioni riportate di seguito sono usate per configurare le opzioni di errori e avvisi del processo di compilazione.
@@ -77,7 +77,7 @@ Usare la pagina **Compilazione** di **Creazione progetti** per specificare le pr
  **Non visualizzare avvisi** Blocca la capacità del compilatore di generare uno o più avvisi. Separare più numeri di avvisi tramite virgola o punto e virgola. Per altre informazioni, vedere [/nowarn (Opzioni del compilatore C#)](https://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4).
 
 ## <a name="treat-warnings-as-errors"></a>Considera gli avvisi come errori
- Le impostazioni riportate di seguito sono usate per specificare quali avvisi considerare come errori. Selezionare una delle opzioni seguenti per indicare in quali condizioni restituire un errore se la compilazione rileva un avviso. Per altre informazioni, vedere [/warnaserror (Opzioni del compilatore C#)](https://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).
+ Le impostazioni riportate di seguito sono usate per specificare quali avvisi considerare come errori. Selezionare una delle opzioni seguenti per indicare in quali condizioni restituire un errore se la compilazione rileva un avviso. Per altre informazioni, vedere [/warnaserror (opzioni del compilatore C#)](https://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).
 
  **Nessuno** Non considera gli avvisi come errori.
 
@@ -98,7 +98,7 @@ Usare la pagina **Compilazione** di **Creazione progetti** per specificare le pr
 
  **Genera assembly di serializzazione** Specifica se il compilatore userà lo strumento per la generazione di serializzatori XML (Sgen.exe) per creare assembly di serializzazione XML. Gli assembly di serializzazione possono migliorare le prestazioni di avvio della classe <xref:System.Xml.Serialization.XmlSerializer>, se è stata usata per serializzare i tipi nel codice. Per impostazione predefinita, questa opzione è impostata su **Auto**. Specifica quindi che saranno generati assembly di serializzazione solo se è stata usata la classe <xref:System.Xml.Serialization.XmlSerializer> per codificare i tipi nel codice in XML. **Off** specifica che non saranno mai generati assembly di serializzazione, indipendentemente dal fatto che il codice usi o meno la classe <xref:System.Xml.Serialization.XmlSerializer>. **On** specifica che saranno sempre generati assembly di serializzazione. Gli assembly di serializzazione sono denominati `TypeName`.XmlSerializers.dll. Per altre informazioni, vedere [Strumento per la generazione di serializzatori XML (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).
 
- [Avanzate](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) Selezionare il collegamento per informazioni sulla finestra di dialogo **Impostazioni di compilazione avanzate (C#)** .
+ [Avanzate](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) Selezionare il collegamento per informazioni sulla finestra di dialogo **Impostazioni di compilazione avanzate (C#)**.
 
 ## <a name="see-also"></a>Vedere anche
- Le [proprietà del progetto fanno riferimento](../../ide/reference/project-properties-reference.md) [ C# alle opzioni del compilatore](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
+ Le [proprietà del progetto fanno riferimento](../../ide/reference/project-properties-reference.md) alle [Opzioni del compilatore C#](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)

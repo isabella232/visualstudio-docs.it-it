@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 995bf40669a4480f6f1ddfe8071a7885a4659c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152717"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>Metodo GetTaskSchedulersForDebugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti che sono attualmente attivi.  
+Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti attualmente attivi.  
   
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché non è possibile accedere a questo membro interno dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,10 +35,10 @@ Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli og
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Una matrice di tutti i <xref:System.Threading.Tasks.TaskScheduler> gli oggetti che sono attualmente attivi in questo <xref:System.AppDomain>.  
+ Matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti attualmente attivi in questo oggetto <xref:System.AppDomain> .  
   
-## <a name="remarks"></a>Note  
- Questo metodo non è thread-safe e non deve essere utilizzato contemporaneamente ad altre istanze di <xref:System.Threading.Tasks.TaskScheduler>. Deve essere chiamato da un debugger solo quando il debugger ha sospeso tutti gli altri thread.  
+## <a name="remarks"></a>Osservazioni  
+ Questo metodo non è thread-safe e non deve essere utilizzato contemporaneamente ad altre istanze di <xref:System.Threading.Tasks.TaskScheduler> . Deve essere chiamato da un debugger solo quando il debugger ha sospeso tutti gli altri thread.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

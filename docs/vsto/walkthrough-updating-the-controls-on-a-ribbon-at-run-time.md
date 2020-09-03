@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Aggiornare i controlli in una barra multifunzione in fase di esecuzione'
+title: 'Procedura dettagliata: aggiornare i controlli in una barra multifunzione in fase di esecuzione'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255341"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Procedura dettagliata: Aggiornare i controlli in una barra multifunzione in fase di esecuzione
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Procedura dettagliata: aggiornare i controlli in una barra multifunzione in fase di esecuzione
 
 Questa procedura dettagliata illustra come usare il modello a oggetti della barra multifunzione per aggiornare i controlli su una barra multifunzione dopo che la barra multifunzione è stata caricata nell'applicazione di Office.
 
@@ -32,7 +32,7 @@ Questa procedura dettagliata illustra come usare il modello a oggetti della barr
 
 L'esempio usa i dati del database di esempio Northwind per popolare una casella combinata e un menu in Microsoft Office Outlook. Gli elementi selezionati in questi controlli compilano automaticamente i campi, ad esempio, e **sottoposti** **a un** messaggio di posta elettronica.
 
-Questa procedura dettagliata illustra le attività seguenti:
+Vengono illustrate le attività seguenti:
 
 - Creare un nuovo progetto di componente aggiuntivo VSTO per Outlook.
 
@@ -43,11 +43,11 @@ Questa procedura dettagliata illustra le attività seguenti:
 - Aggiornare i controlli sulla barra multifunzione in fase di esecuzione.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
+Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -59,13 +59,13 @@ Prima di tutto, creare un progetto di componente aggiuntivo VSTO di Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Per creare un nuovo progetto di componente aggiuntivo VSTO di Outlook
 
-1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]creare un progetto di componente aggiuntivo VSTO per Outlook con il nome **Ribbon_Update_At_Runtime**.
+1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creare un progetto di componente aggiuntivo VSTO di Outlook con il nome **Ribbon_Update_At_Runtime**.
 
 2. Nella finestra di dialogo **Nuovo progetto** selezionare **Crea directory per soluzione**.
 
 3. Salvare il progetto nella directory del progetto predefinita.
 
-     Per altre informazioni, vedere [Procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Progettare un gruppo della barra multifunzione personalizzato
 
@@ -73,9 +73,9 @@ La barra multifunzione per questo esempio verrà visualizzata quando un utente c
 
 ### <a name="to-design-a-custom-group"></a>Per progettare un gruppo personalizzato
 
-1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+1. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)** .
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
 
 3. Modificare il nome della nuova barra multifunzione in **CustomerRibbon**, quindi fare clic su **Aggiungi**.
 
@@ -153,11 +153,11 @@ Usare la finestra **Origini dati** per aggiungere un DataSet tipizzato al proget
 
     2. **Dettagli ordine**
 
-    3. **Ordini**
+    3. **Orders**
 
     4. **Prodotti**
 
-9. Scegliere **Fine**.
+9. Fare clic su **Fine**.
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>Aggiornare i controlli nel gruppo personalizzato in fase di esecuzione
 
@@ -179,7 +179,7 @@ Usare il modello a oggetti della barra multifunzione per effettuare le seguenti 
 
 3. In **Esplora soluzioni**fare clic su **CustomerRibbon.cs** o **CustomerRibbon. vb** per selezionarlo.
 
-4. Scegliere **codice**dal menu **Visualizza** .
+4. Scegliere **Codice** dal menu **Visualizza**.
 
     Il file di codice della barra multifunzione viene aperto nell'editor di codice.
 
@@ -188,12 +188,12 @@ Usare il modello a oggetti della barra multifunzione per effettuare le seguenti 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
 
-6. Aggiungere il codice seguente all'interno `CustomerRibbon` della classe. Il codice dichiara la tabella dati e gli adattatori di tabella che verranno usati per archiviare le informazioni delle tabelle Clienti, Ordini, Dettagli sugli ordini e Prodotti del database Northwind.
+6. Aggiungere il codice seguente all'interno della `CustomerRibbon` classe. Il codice dichiara la tabella dati e gli adattatori di tabella che verranno usati per archiviare le informazioni delle tabelle Clienti, Ordini, Dettagli sugli ordini e Prodotti del database Northwind.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
 
-7. Aggiungere il seguente blocco di codice alla classe `CustomerRibbon`. Questo codice aggiunge tre metodi helper per la creazione di controlli per la barra multifunzione in fase di esecuzione.
+7.  Aggiungere il seguente blocco di codice alla classe `CustomerRibbon`. Questo codice aggiunge tre metodi helper per la creazione di controlli per la barra multifunzione in fase di esecuzione.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]
@@ -226,7 +226,7 @@ Usare il modello a oggetti della barra multifunzione per effettuare le seguenti 
 
      Nell'editor di codice viene aperto il file di codice della barra multifunzione e viene visualizzato il gestore eventi `ComboBox1_TextChanged`.
 
-12. Sostituire il gestore eventi `ComboBox1_TextChanged` con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
+12. Sostituire il gestore eventi `ComboBox1_TextChanged` con il codice seguente. Il codice esegue queste operazioni:
 
     - Chiama il metodo di supporto `PopulateSalesOrderInfo`. Questo metodo aggiorna il menu **prodotti acquistati** con gli ordini di vendita correlati al cliente selezionato.
 
@@ -240,7 +240,7 @@ Usare il modello a oggetti della barra multifunzione per effettuare le seguenti 
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Aggiungere il codice seguente alla classe `CustomerRibbon` . Mediante il codice vengono effettuate le seguenti attività:
+14. Aggiungere il codice seguente alla classe `CustomerRibbon` . Il codice esegue queste operazioni:
 
     - Popola la riga a dei nuovi messaggi di posta elettronica utilizzando l'indirizzo di posta elettronica del cliente attualmente selezionato.
 
@@ -263,7 +263,7 @@ Per creare un messaggio di posta elettronica di completamento per i clienti, sel
 
 2. In Outlook scegliere **nuovo**dal menu **file** , quindi fare clic su **messaggio di posta elettronica**.
 
-     Eseguire le azioni seguenti:
+     Si verificano le azioni seguenti:
 
     - Viene visualizzata una nuova finestra di controllo del messaggio di posta.
 
@@ -273,7 +273,7 @@ Per creare un messaggio di posta elettronica di completamento per i clienti, sel
 
 3. Nella scheda **messaggio** della barra multifunzione, nel gruppo **Customer Purchases** , selezionare un cliente dalla casella combinata **Customers** .
 
-     Eseguire le azioni seguenti:
+     Si verificano le azioni seguenti:
 
     - Il menu **prodotti acquistati** viene aggiornato per visualizzare ogni ordine di vendita per il cliente selezionato.
 
@@ -291,7 +291,7 @@ Per creare un messaggio di posta elettronica di completamento per i clienti, sel
 
 - Aggiunta di un'interfaccia utente basata sul contesto a una personalizzazione a livello di documento. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).
 
-- Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [Procedura dettagliata: Progettare un'area](../vsto/walkthrough-designing-an-outlook-form-region.md)del modulo di Outlook.
+- Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Aggiungere un riquadro attività personalizzato a Outlook. Per ulteriori informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
@@ -300,13 +300,13 @@ Per creare un messaggio di posta elettronica di completamento per i clienti, sel
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/index)
-- [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
-- [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md)
 - [Personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Procedura: Modificare la posizione di una scheda sulla barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)
-- [Procedura: Aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Procedura: Esportare una barra multifunzione dalla finestra di progettazione Ribbon alla barra multifunzione XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Procedura: Mostra errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Procedura: modificare la posizione di una scheda nella barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)
+- [Procedura: aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Procedura: visualizzare gli errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md)

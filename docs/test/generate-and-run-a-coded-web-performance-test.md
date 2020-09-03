@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589578"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
@@ -85,14 +85,14 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 ## <a name="qa"></a>Domande e risposte
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>D: È possibile eseguire più test contemporaneamente?
-**A:** Sì, utilizzare il menu di scelta rapida (contesto) in **Esplora soluzioni**.
+**R:** Sì, fare clic con il pulsante destro del mouse sul menu di scelta rapida in **Esplora soluzioni**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>D: È necessario aggiungere un'origine dati prima o dopo avere generato un test codificato?
 **R:** È più semplice aggiungere un'[origine dati](../test/add-a-data-source-to-a-web-performance-test.md) prima di generare il test codificato, perché il codice verrà generato automaticamente.
 
 Quando si esegue un test codificato con un 'origine dati, può venire visualizzato il messaggio di errore seguente:
 
-**Impossibile eseguire il test \<Nome test> sull'agente \<Nome computer>: Riferimento oggetto non impostato su un'istanza di un oggetto.**
+**Non è stato possibile eseguire \<Test Name> il test sull'agente \<Computer Name> : il riferimento all'oggetto non è impostato su un'istanza di un oggetto.**
 
 Questo errore può verificarsi perché per la classe di test è definito un oggetto DataSourceAttribute senza un oggetto DataBindingAttribute corrispondente. Per risolvere questo errore, aggiungere un oggetto DataBindingAttribute appropriato, eliminarlo oppure impostarlo come commento nel codice.
 

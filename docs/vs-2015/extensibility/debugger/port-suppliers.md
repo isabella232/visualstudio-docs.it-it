@@ -1,5 +1,5 @@
 ---
-title: Porta Suppliers | Microsoft Docs
+title: Fornitori di porte | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e90871927c30399dea4691381baa749db2b3e8bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153711"
 ---
 # <a name="port-suppliers"></a>Fornitori di porte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In termini di architettura del debugger, un **fornitore della porta**:  
+In termini di architettura del debugger, un **Fornitore di porte**:  
   
-- È contenuta da un server e fornisce le porte su richiesta a tale server.  
+- È contenuto in un server e fornisce le porte su richiesta al server.  
   
-- Puoi aggiungere e rimuovere le porte dal server che lo contiene.  
+- Consente di aggiungere e rimuovere porte dal server contenitore.  
   
-- Possibile enumerare tutte le porte che è fornito per il server.  
+- Consente di enumerare tutte le porte fornite al server.  
   
-- È rappresentato da un [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfaccia, che è stato registrato con Visual Studio tramite il Registro di sistema. Questa interfaccia può essere ottenuta chiamando [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+- È rappresentato da un'interfaccia [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) , registrata con Visual Studio tramite il registro di sistema. Questa interfaccia può essere ottenuta chiamando [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
-  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornisce un fornitore di porte predefinita e una porta predefinita. Se una porta personalizzata deve essere implementata, un fornitore di porte personalizzato deve inoltre essere implementati per fornire tali porte personalizzate.  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornisce un fornitore di porta predefinito e una porta predefinita. Se è necessario implementare una porta personalizzata, è necessario implementare anche un fornitore di porte personalizzato per fornire tali porte personalizzate.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Server](../../extensibility/debugger/servers-visual-studio-sdk.md)   

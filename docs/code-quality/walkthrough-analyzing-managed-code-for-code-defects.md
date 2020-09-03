@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72535697"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procedura dettagliata: usare l'analisi del codice statica per individuare i difetti del codice
@@ -95,23 +95,23 @@ Questo articolo illustra il processo di utilizzo dell'analisi legacy per analizz
 
    [CA1014: contrassegnare gli assembly con CLSCompliantAttribute](../code-quality/ca1014.md): aggiungere il codice `[assembly: CLSCompliant(true)]` alla fine del file AssemblyInfo.cs.
 
-   [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032.md): aggiungere il costruttore `public demo (String s) : base(s) { }` alla classe `demo`.
+   [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032.md): aggiungere il costruttore `public demo (String s) : base(s) { }` alla classe `demo` .
 
-   [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032.md): aggiungere il costruttore `public demo (String s, Exception e) : base(s, e) { }` alla classe `demo`.
+   [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032.md): aggiungere il costruttore `public demo (String s, Exception e) : base(s, e) { }` alla classe `demo` .
 
-   [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032.md): aggiungere il costruttore `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` alla demo della classe. Sarà inoltre necessario aggiungere un'istruzione `using` per <xref:System.Runtime.Serialization?displayProperty=fullName>.
+   [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032.md): aggiungere il costruttore `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` alla classe demo. Sarà inoltre necessario aggiungere un' `using` istruzione per <xref:System.Runtime.Serialization?displayProperty=fullName> .
 
-   [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032.md): aggiungere il costruttore `public demo () : base() { }` alla classe `demo`.
+   [CA1032: implementare costruttori di eccezioni standard](../code-quality/ca1032.md): aggiungere il costruttore `public demo () : base() { }` alla classe `demo` .
 
-   [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709.md): modificare la combinazione di maiuscole e minuscole dello spazio dei nomi `testCode` in `TestCode`.
+   [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709.md): modificare la combinazione di maiuscole e minuscole dello spazio dei nomi `testCode` in `TestCode` .
 
-   [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709.md): modificare il nome del membro in `Demo`.
+   [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709.md): modificare il nome del membro in `Demo` .
 
-   [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709.md): modificare il nome del membro in `Item`.
+   [CA1709: gli identificatori devono essere configurati correttamente](../code-quality/ca1709.md): modificare il nome del membro in `Item` .
 
-   [CA1710: gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710.md): modificare il nome della classe e i relativi costruttori in `DemoException`.
+   [CA1710: gli identificatori devono avere il suffisso corretto](../code-quality/ca1710.md): modificare il nome della classe e i relativi costruttori in `DemoException` .
 
-   [CA2237: contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237.md): aggiungere l'attributo `[Serializable ()]` alla classe `demo`.
+   [CA2237: contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237.md): aggiungere l' `[Serializable ()]` attributo alla classe `demo` .
 
    [CA2210: gli assembly devono avere nomi sicuri validi](../code-quality/ca2210.md): Sign ' CodeAnalysisManagedDemo ' con una chiave con nome sicuro:
 
@@ -123,9 +123,9 @@ Questo articolo illustra il processo di utilizzo dell'analisi legacy per analizz
 
    1. Selezionare la casella di controllo **Firma assembly** .
 
-   1. Nell'elenco **Scegli un file chiave con nome stringa** selezionare **\<New >** .
+   1. Nell'elenco **scegliere un file di chiave con nome stringa** selezionare **\<New>** .
 
-      Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro** .
+      Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**.
 
    1. Per **nome file di chiave**immettere **TestKey**.
 
@@ -164,7 +164,7 @@ Questo articolo illustra il processo di utilizzo dell'analisi legacy per analizz
 
     1. Selezionare l'avviso nella **Elenco errori**.
 
-    1. Dal menu di scelta rapida (menu di scelta rapida) scegliere **elimina** > **nel file di eliminazione**.
+    1. Dal menu di scelta rapida (menu di scelta rapida) scegliere **Elimina**  >  **nel file di eliminazione**.
 
 1. Ricompilare il progetto.
 
@@ -172,4 +172,4 @@ Questo articolo illustra il processo di utilizzo dell'analisi legacy per analizz
 
 ## <a name="see-also"></a>Vedere anche
 
-[Analisi codice per codice gestito](../code-quality/code-analysis-for-managed-code-overview.md)
+[Analisi codice per il codice gestito](../code-quality/code-analysis-for-managed-code-overview.md)

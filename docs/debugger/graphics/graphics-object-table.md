@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735445"
 ---
 # <a name="graphics-object-table"></a>Tabella oggetti grafici
@@ -39,15 +39,15 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 |Colonna|Descrizione|
 |------------|-----------------|
 |**Identificatore**|ID dell'oggetto.|
-|**Nome**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|
-|**Type**|Tipo di oggetto.|
-|**Active**|Visualizza "*" per un oggetto impostato per D3D10Device o D3D11DeviceContext durante il frame acquisito.<br /><br /> Corrisponde agli oggetti visualizzati come testo in grigio, ma fornisce una voce di colonna che è possibile usare per ordinare la tabella degli oggetti.|
-|**Size**|Dimensione dell'oggetto in byte.|
-|**Format**|Formato dell'oggetto. Ad esempio, il formato di un oggetto trama o il modello di shader di un oggetto shader.|
-|**Width**|Larghezza di un oggetto trama. Non vale per altri tipi di oggetto.|
-|**Height**|Altezza di un oggetto trama. Non vale per altri tipi di oggetto.|
+|**Name**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|
+|**Tipo**|Tipo di oggetto.|
+|**Attivo**|Visualizza "*" per un oggetto impostato per D3D10Device o D3D11DeviceContext durante il frame acquisito.<br /><br /> Corrisponde agli oggetti visualizzati come testo in grigio, ma fornisce una voce di colonna che è possibile usare per ordinare la tabella degli oggetti.|
+|**Dimensione**|Dimensione dell'oggetto in byte.|
+|**Formato**|Formato dell'oggetto. Ad esempio, il formato di un oggetto trama o il modello di shader di un oggetto shader.|
+|**Larghezza**|Larghezza di un oggetto trama. Non vale per altri tipi di oggetto.|
+|**Altezza**|Altezza di un oggetto trama. Non vale per altri tipi di oggetto.|
 |**Depth**|Profondità di un oggetto trama tridimensionale. Se una trama non è in 3D, il valore sarà 0. Non vale per altri tipi di oggetto.|
-|**Mips**|Numero di livelli MIP di un oggetto trama. Non vale per altri tipi di oggetto.|
+|**MIPS**|Numero di livelli MIP di un oggetto trama. Non vale per altri tipi di oggetto.|
 |**ArraySize**|Numero di trame in una matrice di trame. L'intervallo è compreso tra 1 e un limite superiore definito dal livello della funzionalità corrente. Per una mappa cubi, questo valore corrisponde a 6 volte il numero delle mappe cubi nella matrice.|
 |**Esempi**|Numero di trame multicampionate per pixel.|
 
@@ -56,7 +56,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 
  Ecco il Visualizzatore trame che mostra il contenuto della fase della pipeline Unione output.
 
- ![Anteprima della trama che visualizza la fusione dell'output](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
+ ![Anteprima della trama con unione dell'output](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
 
 ### <a name="d3d12-command-list"></a>Elenco comandi D3D12
  In Direct3D 12 un elenco di comandi è un oggetto che registra i comandi in un allocatore di comandi, in modo che sia possibile inviarli alla GPU come una singola richiesta. Gli elenchi di comandi in genere eseguono una serie di comandi di impostazione dello stato, disegno, cancellazione e copia. Sono particolarmente importanti perché rappresentano il metodo consigliato per il rendering in Direct3D 12 e possono essere riutilizzati tra i frame per migliorare le prestazioni. I dettagli sull'elenco di comandi vengono visualizzati in una nuova finestra del documento, con informazioni relative a ogni fase della pipeline presentate in schede separate.
@@ -78,7 +78,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 
  Si può anche selezionare/deselezionare la casella di controllo **Mostra offset** per nascondere o visualizzare l'offset di ogni elemento del buffer.
 
-|Digitare|Descrizione|
+|Type|Descrizione|
 |----------|-----------------|
 |**float**|Valore a virgola mobile a 32 bit.|
 |**float2**|Vettore che contiene due valori a virgola mobile a 32 bit.|
@@ -96,7 +96,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 |**u2byte**|Valore Unsigned Integer a 16 bit.|
 |**u4byte**|Valore Unsigned Integer a 32 bit. Equivale a **uint**.|
 |**u8byte**|Valore Unsigned Integer a 64 bit. Equivale a **uint64**.|
-|**half**|Valore a virgola mobile a 16 bit.|
+|**metà**|Valore a virgola mobile a 16 bit.|
 |**half2**|Vettore che contiene due valori a virgola mobile a 16 bit.|
 |**half3**|Vettore che contiene tre valori a virgola mobile a 16 bit.|
 |**half4**|Vettore che contiene quattro valori a virgola mobile a 16 bit.|
@@ -110,5 +110,5 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 |**bool**|Valore booleano (`true` o `false`). Ogni valore booleano è rappresentato da un valore a 32 bit.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Diagnostica della grafica (debug della grafica DirectX)](visual-studio-graphics-diagnostics.md)
-- [Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Diagnostica della grafica (Debug grafica DirectX)](visual-studio-graphics-diagnostics.md)
+- [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae94a7cb9572a0975dc1c3717275c384c2e45978
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734753"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (costruttore)
@@ -27,10 +27,10 @@ VsgDbg(
 ```
 
 #### <a name="parameters"></a>Parametri
- `bDefaultInit` `true` per specificare che il componente di diagnostica della grafica integrato nell'applicazione deve essere preparato per acquisire e registrare attivamente le informazioni grafiche; `false` per specificare che in questo momento l'applicazione non deve essere preparata per acquisire e registrare attivamente le informazioni grafiche.
+ `bDefaultInit``true`per specificare che il componente in-app della diagnostica della grafica deve essere preparato per acquisire e registrare attivamente le informazioni grafiche; `false` per specificare che l'app non deve essere preparata per acquisire e registrare attivamente le informazioni grafiche in questo momento.
 
-## <a name="remarks"></a>Note
- Quando il costruttore viene chiamato con `bDefaultInit` impostato su `true`, il nome file del file di log di grafica è determinato dalla modalità di definizione dei simboli del preprocessore `DONT_SAVE_VSGLOG_TO_TEMP` e `VSG_DEFAULT_RUN_FILENAME` prima che `vsgcapture.h` sia incluso nell'app.
+## <a name="remarks"></a>Osservazioni
+ Quando il costruttore viene chiamato con `bDefaultInit` impostato su `true` , il nome file del file di log di grafica è determinato dalla modalità `DONT_SAVE_VSGLOG_TO_TEMP` di `VSG_DEFAULT_RUN_FILENAME` definizione dei simboli del preprocessore e prima che `vsgcapture.h` sia incluso nell'app.
 
  Quando il costruttore viene chiamato con `bDefaultInit` impostato su `false`, il componente di diagnostica della grafica integrato nell'applicazione può essere preparato per acquisire e registrare attivamente le informazioni grafiche in un secondo momento chiamando la funzione `Init`.
 

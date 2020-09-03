@@ -15,15 +15,15 @@ dev_langs:
 - CSharp
 - CPP
 ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69585377"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Supporto per la sensibilizzazione per monitor per Extender di Visual Studio
 
-Nelle versioni precedenti a Visual Studio 2019 il contesto di riconoscimento DPI è stato impostato su System Aware, anziché per il monitor DPI Aware (PMA). L'esecuzione nella consapevolezza del sistema ha comportato un'esperienza visiva degradata (ad esempio, i tipi di carattere o le icone sfocate) quando Visual Studio doveva eseguire il rendering tra monitoraggi con fattori di scala diversi o in computer con configurazioni di visualizzazione diverse (ad esempio, diversi Ridimensionamento di Windows).
+Nelle versioni precedenti a Visual Studio 2019 il contesto di riconoscimento DPI è stato impostato su System Aware, anziché per il monitor DPI Aware (PMA). L'esecuzione nella consapevolezza del sistema ha comportato un'esperienza visiva degradata (ad esempio, i tipi di carattere o le icone sfocate) quando Visual Studio doveva eseguire il rendering tra i monitoraggi con fattori di scala diversi o in computer con configurazioni di visualizzazione diverse, ad esempio il ridimensionamento di Windows.
 
 Il contesto di riconoscimento DPI di Visual Studio 2019 è impostato come PMA, quando l'ambiente lo supporta, consentendo a Visual Studio di eseguire il rendering in base alla configurazione dello schermo in cui è ospitato anziché una singola configurazione definita dal sistema. Infine, la conversione in un'interfaccia utente sempre nitida per aree di superficie che supportano la modalità PMA.
 
@@ -31,7 +31,7 @@ Per ulteriori informazioni sui termini e sullo scenario generale trattati in que
 
 ## <a name="quickstart"></a>Guida introduttiva
 
-- Verificare che Visual Studio sia in esecuzione in modalità PMA (vedere Abilitazione di **PMA**)
+- Verificare che Visual Studio sia in esecuzione in modalità PMA (vedere **Abilitazione di PMA**)
 
 - Verificare che l'estensione funzioni correttamente in un set di scenari comuni (vedere **test delle estensioni per i problemi PMA**)
 
@@ -121,12 +121,12 @@ Non tutti i contenuti del Windows Forms supportano la modalità PMA. Di consegue
 #### <a name="windows-forms-controls-or-windows-not-displaying"></a>Controlli Windows Forms o Windows non visualizzati
 Una delle cause principali di questo problema è rappresentata dagli sviluppatori che tentano di riassociare un controllo o una finestra con un DpiAwarenessContext a una finestra con un DpiAwarenessContext diverso.
 
-Le immagini seguenti mostrano le restrizioni correnti del sistema operativo Windows in finestre padre:
+Le immagini seguenti mostrano le restrizioni **correnti del** sistema operativo Windows in finestre padre:
 
 ![Screenshot del comportamento corretto dell'elemento padre](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> È possibile modificare questo comportamento impostando il comportamento di hosting del thread (vedere l' [enumerazione Dpi_Hosting_Behavior](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> È possibile modificare questo comportamento impostando il comportamento di hosting del thread (vedere [Dpi_Hosting_Behavior enumerazione](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Di conseguenza, se si imposta la relazione padre-figlio tra modalità non supportate, l'operazione avrà esito negativo e non sarà possibile eseguire il rendering del controllo o della finestra come previsto.
 
@@ -168,7 +168,7 @@ Come Snoop, gli strumenti XAML in Visual Studio consentono di diagnosticare i pr
 
 ### <a name="replace-dpihelper-calls"></a>Sostituisci chiamate DpiHelper
 
-Nella maggior parte dei casi, la correzione dei problemi dell'interfaccia utente in modalità PMA si riduce alla sostituzione delle chiamate nel codice gestito alle classi *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* e *Microsoft. VisualStudio. PlatformUI. DpiHelper* precedenti, con chiamate al nuovo  *Classe helper Microsoft. VisualStudio. Utilities. DpiAwareness* . 
+Nella maggior parte dei casi, la correzione dei problemi dell'interfaccia utente in modalità PMA si riduce alla sostituzione delle chiamate nel codice gestito alle classi *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* e *Microsoft. VisualStudio. PlatformUI. DpiHelper* precedenti, con chiamate alla nuova classe helper *Microsoft. VisualStudio. Utilities. DpiAwareness* . 
 
 ```cs
 // Remove this kind of use:
@@ -230,7 +230,7 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-Per i linguaggi gestiti, il posto migliore per implementare questa interfaccia si trova nella stessa classe che deriva da *Microsoft. VisualStudio. Shell. ToolWindowPane*. Per C++, la posizione migliore in cui implementare questa interfaccia si trova nella stessa classe che implementa *IVsWindowPane* da vsshell. h.
+Per i linguaggi gestiti, il posto migliore per implementare questa interfaccia si trova nella stessa classe che deriva da *Microsoft. VisualStudio. Shell. ToolWindowPane*. Per C++, il posto migliore per implementare questa interfaccia si trova nella stessa classe che implementa *IVsWindowPane* da vsshell. h.
 
 Il valore restituito dalla proprietà Mode sull'interfaccia è un __VSDPIMODE (ed eseguito il cast a uint in Managed):
 
@@ -248,7 +248,7 @@ enum __VSDPIMODE
 - PerMonitor significa che la finestra degli strumenti deve gestire tutti i dpi in tutte le visualizzazioni e ogni volta che viene modificato il valore DPI.
 
 > [!NOTE]
-> Visual Studio supporta solo PerMonitorV2 Awareness, quindi il PerMonitor enum value viene convertito nel valore di Windows DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
+> Visual Studio supporta solo PerMonitorV2 Awareness, quindi il valore enum di PerMonitor viene convertito nel valore di Windows DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
 
 #### <a name="force-a-control-into-a-specific-dpiawarenesscontext"></a>Forzare un controllo in un DpiAwarenessContext specifico
 
@@ -275,7 +275,7 @@ void MyClass::ShowDialog()
 
 ## <a name="known-issues"></a>Problemi noti
 
-### <a name="windows-forms"></a>Windows Form
+### <a name="windows-forms"></a>Windows Forms
 
 Per ottimizzare i nuovi scenari in modalità mista, Windows Forms modificato il modo in cui crea i controlli e le finestre ogni volta che l'elemento padre non è stato impostato in modo esplicito. In precedenza, i controlli senza un elemento padre esplicito usavano una "finestra di parcheggio" interna come elemento padre temporaneo per il controllo o la finestra da creare. 
 

@@ -20,19 +20,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72568995"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Creare visualizzazioni personalizzate dei dati nel debugger di Visual Studio (C#, Visual Basic, C++)
 
-In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger sono disponibili molti strumenti per esaminare e modificare lo stato del programma. La maggior parte di questi strumenti è utilizzabile solo in modalità di interruzione.
+Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger fornisce molti strumenti per controllare e modificare lo stato del programma. La maggior parte di questi strumenti è utilizzabile solo in modalità di interruzione.
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Creare visualizzazioni personalizzate dei dati nelle finestre delle variabili e nei suggerimenti dati
 
- Molte delle [finestre del debugger](../debugger/debugger-windows.md), ad esempio le finestre **auto** e **espressioni di controllo** , consentono di esaminare le variabili. È possibile personalizzare il C++ modo in cui i tipi, gli oggetti gestiti e i tipi personalizzati vengono visualizzati nelle finestre delle variabili del debugger e nei [suggerimenti](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)dati. Per altre informazioni, vedere [creare visualizzazioni personalizzate di C++ oggetti](../debugger/create-custom-views-of-native-objects.md) e [creare visualizzazioni personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md).
+ Molte delle [finestre del debugger](../debugger/debugger-windows.md), ad esempio le finestre **auto** e **espressioni di controllo** , consentono di esaminare le variabili. È possibile personalizzare il modo in cui i tipi C++, gli oggetti gestiti e i tipi personalizzati vengono visualizzati nelle finestre delle variabili del debugger e nei [suggerimenti](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)dati. Per altre informazioni, vedere [creare viste personalizzate di oggetti C++](../debugger/create-custom-views-of-native-objects.md) e [creare visualizzazioni personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Creare visualizzatori personalizzati
 

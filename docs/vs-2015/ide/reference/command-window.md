@@ -1,5 +1,5 @@
 ---
-title: Finestra Comando | Microsoft Docs
+title: Finestra di comando | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c3bcac9f320840faaed32d0622f30e4cbd288ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660836"
 ---
 # <a name="command-window"></a>Finestra di comando
@@ -55,10 +55,10 @@ La finestra **Comando** consente di eseguire i comandi o gli alias direttamente 
 
  I collegamenti seguenti consentono l'esplorazione in modalità di comando.
 
-|Operazione|Posizione del cursore|Tasto di scelta rapida|
+|Action|Posizione del cursore|Tasto di scelta rapida|
 |------------|---------------------|----------------|
 |Scorrere l'elenco dei comandi immessi in precedenza.|Riga di input|FRECCIA GIÙ o FRECCIA SU|
-|Scorrere la finestra verso l'alto.|Contenuto della finestra Comando|CTRL+FRECCIA SU|
+|Scorrere la finestra verso l'alto.|Contenuto della finestra Comando|CTRL+freccia SU|
 |Scorrere la finestra verso il basso.|Contenuto della finestra Comando|FRECCIA GIÙ o CTRL+FRECCIA GIÙ|
 
 > [!TIP]
@@ -113,7 +113,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale valore viene applicato a ogni opzione. Ad esempio, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se una delle opzioni del gruppo non accetta un valore, si verifica un errore.
 
 ## <a name="escape-characters"></a>Caratteri di escape
- Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
+ Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```
 >Edit.Find ^^t /regex
@@ -122,7 +122,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato. L'esempio riportato di seguito illustra come cercare il criterio "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usare le virgolette per nomi di percorso con spazi
- Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Programmi"** or **"C:\Programmi"** .
+ Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Programmi"** or **"C:\Programmi"**.
 
 ## <a name="see-also"></a>Vedere anche
  [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md) alias di comandi di [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

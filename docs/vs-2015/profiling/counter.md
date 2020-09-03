@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5da78c33af599accf5ff3a2e09a9afb52982573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149286"
 ---
-# <a name="counter"></a>Counter
+# <a name="counter"></a>Contatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).  
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Opzioni obbligatorie  
  L'opzione Counter può essere usata solo con una delle opzioni seguenti:  
   
- **Start:** `Trace`  
+ **Inizio:**`Trace`  
  Inizializza il profiler per l'uso del metodo basato sulla strumentazione.  
   
- **Launch:** `AppName`  
+ **Avvia:**`AppName`  
  Avvia l'applicazione specificata e il profiler. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.  
   
- **Attach:** `PID`  
+ **Connetti:**`PID`  
  Avvia il profiler e lo connette al processo specificato dall'ID processo. Il profiler deve essere inizializzato per l'uso del metodo basato sul campionamento.  
   
 ## <a name="example"></a>Esempio  

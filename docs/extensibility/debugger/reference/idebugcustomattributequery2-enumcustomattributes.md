@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes . Documenti Microsoft
+title: 'IDebugCustomAttributeQuery2:: EnumCustomAttributes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5b00ead2236a36c2fa12e1ad154b9f853aa2224d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732594"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-Ottiene un enumeratore per tutti gli attributi personalizzati associati a questo campo.
+Ottiene un enumeratore per tutti gli attributi personalizzati collegati a questo campo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ int EnumCustomAttributes(
 
 ## <a name="parameters"></a>Parametri
 `ppEnum`\
-[fuori] Restituisce un [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) oggetto che rappresenta l'elenco di attributi personalizzati; in caso contrario, restituisce un valore null se non sono presenti attributi personalizzati.
+out Restituisce un oggetto [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) che rappresenta l'elenco di attributi personalizzati. in caso contrario, restituisce un valore null se non sono presenti attributi personalizzati.
 
 ## <a name="return-value"></a>Valore restituito
- Se S_OK, restituisce S_OK o S_FALSE se non sono presenti attributi personalizzati in questo campo. In caso contrario, restituisce un codice di errore;
+ Se ha esito positivo, restituisce S_OK o S_FALSE se non sono presenti attributi personalizzati in questo campo. In caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
  Un campo può avere più attributi personalizzati.

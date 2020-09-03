@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a310de2e1fd754f16fd701f264f8d5ee8aac4166
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660943"
 ---
 # <a name="build-events-page-project-designer-c"></a>Pagina Eventi di compilazione, Progettazione progetti (C#)
@@ -28,7 +28,7 @@ ms.locfileid: "72660943"
 
 Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specificare le istruzioni di configurazione della build. È anche possibile specificare le condizioni in cui vengono eseguiti gli eventi di post-compilazione. Per altre informazioni, vedere [Procedura: Specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  **Configurazione** Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
  **Piattaforma**Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
@@ -38,7 +38,7 @@ Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specifi
 > [!NOTE]
 > Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.
 
- **Riga di comando dell'evento di post-compilazione**Specifica i comandi da eseguire dopo l'avvio della compilazione. Per immettere comandi lunghi, fare clic su **Modifica post-compilazione** per visualizzare la **finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione**.
+ **Riga di comando dell'evento di post-compilazione**Specifica i comandi da eseguire dopo l'avvio della compilazione. Per digitare i comandi lunghi, fare clic su **modifica post-compilazione** per visualizzare la **finestra di dialogo riga di comando eventi pre-compilazione/post-compilazione**.
 
 > [!NOTE]
 > Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -48,8 +48,8 @@ Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specifi
 |Opzione|Risultato|
 |------------|------------|
 |**Sempre**|L'evento di post-compilazione verrà sempre eseguito, indipendentemente dall'esito della compilazione.|
-|**A compilazione completata**|L'evento di post-compilazione verrà eseguito se la compilazione avrà esito positivo. L'evento verrà quindi eseguito anche per un progetto aggiornato, purché la compilazione abbia esito positivo.|
+|**On successful build**|L'evento di post-compilazione verrà eseguito se la compilazione avrà esito positivo. L'evento verrà quindi eseguito anche per un progetto aggiornato, purché la compilazione abbia esito positivo.|
 |**Quando la compilazione aggiorna l'output del progetto**|L'evento di post-compilazione verrà eseguito solo quando il file di output del compilatore (con estensione exe o dll) è diverso dal file di output del compilatore precedente. L'evento di post-compilazione non viene quindi eseguito se un progetto è aggiornato.|
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [procedura: specificare gli eventi diC#compilazione ()](../../ide/how-to-specify-build-events-csharp.md) [proprietà del progetto riferimenti](../../ide/reference/project-properties-reference.md) [compilazione e compilazione](../../ide/compiling-and-building-in-visual-studio.md)
+ [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [procedura: specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md) [riferimento alle proprietà di progetto](../../ide/reference/project-properties-reference.md) [compilazione e compilazione](../../ide/compiling-and-building-in-visual-studio.md)

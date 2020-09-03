@@ -11,22 +11,22 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 54e0b95084bd685d5bc4b025f777c82b0ab1381f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162229"
 ---
-# <a name="taskstatecanceled-field"></a>Campo TASK_STATE_CANCELED
+# <a name="task_state_canceled-field"></a>Campo TASK_STATE_CANCELED
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-L'attività è stata annullata prima che ha raggiunto lo stato di esecuzione, oppure ha confermato l'annullamento relativi e completata senza eccezioni.  
+L'attività è stata annullata prima che raggiunga lo stato in esecuzione oppure ha riconosciuto il relativo annullamento e completato senza eccezione.  
   
  **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché non è possibile accedere a questo membro interno dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,8 +34,8 @@ L'attività è stata annullata prima che ha raggiunto lo stato di esecuzione, op
 .field static assembly literal int32 TASK_STATE_CANCELED = int32(0x00800000)  
 ```  
   
-## <a name="remarks"></a>Note  
- Se il [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene questo valore, il <xref:System.Threading.Tasks.Task.Status%2A> restituisce proprietà <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+## <a name="remarks"></a>Osservazioni  
+ Se il [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene questo valore, la <xref:System.Threading.Tasks.Task.Status%2A> proprietà restituisce <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,5 +1,5 @@
 ---
-title: Stack di chiamate eventi grafici | Microsoft Docs
+title: Stack di chiamate eventi di grafica | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192747"
 ---
 # <a name="graphics-event-call-stack"></a>Stack di chiamate eventi di grafica
@@ -25,7 +25,7 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
   
  Questa è la finestra Stack di chiamate eventi:  
   
- ![Lo stack di chiamate che precede un evento DrawIndexed. ](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![Stack di chiamate che precede un evento DrawIndexed.](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Nozioni di base sullo stack di chiamate eventi grafici  
  È possibile usare lo stack di chiamate eventi per esaminare il flusso di esecuzione che ha provocato un particolare evento Direct3D. È simile alla finestra dello stack di chiamate di Visual Studio, ma anziché visualizzare lo stack di chiamate corrente del thread attivo in un'app in esecuzione, visualizza lo stack di chiamate come si presentava quando si è verificato l'evento Direct3D selezionato. Dallo stack di chiamate eventi è possibile passare al sito di chiamata dell'evento Direct3D selezionato per controllare il codice adiacente.  
@@ -37,9 +37,9 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Nome**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|  
+|**Name**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|  
 |**File**|Nome del file di codice sorgente o di libreria contenente il sito di chiamata.|  
-|**Location**|Numero di riga del sito di chiamata.|  
+|**Posizione**|Numero di riga del sito di chiamata.|  
   
 ### <a name="links-to-graphics-objects"></a>Collegamenti a oggetti grafici  
  Per comprendere l'evento di grafica selezionato potrebbero essere necessarie informazioni sull'oggetto Direct3D a cui è associato. Nella finestra **Stack di chiamate eventi di grafica** è presente un collegamento a tali informazioni.  

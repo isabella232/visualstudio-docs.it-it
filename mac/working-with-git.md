@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70108020"
 ---
 # <a name="working-with-git"></a>Uso di Git
@@ -91,7 +91,7 @@ Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Contro
 
 Ciò consente di visualizzare tutte le modifiche in ogni file di un progetto con l'opzione di annullarle, creare una patch o eseguire il commit.
 
-Per eseguire il commit di un file nel repository remoto, premere **Commit**, immettere un messaggio di commit e confermare con il pulsante Commit:
+Per eseguire il commit di un file nel repository remoto, premere **commit**, immettere un messaggio di commit e confermare con il pulsante commit:
 
 ![Commit di un file](media/version-control-gitCommit.png)
 
