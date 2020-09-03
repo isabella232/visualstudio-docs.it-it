@@ -1,5 +1,5 @@
 ---
-title: Creazione di un'interfaccia utente tramite la finestra di progettazione XAML
+title: Creazione di un'interfaccia utente tramite XAML Designer
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d230d9a4719e1757820de87b60bcc7566a785f99
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844011"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
@@ -34,15 +34,15 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 ## <a name="authoring-views"></a>Visualizzazioni per la creazione
  La finestra di progettazione XAML include una visualizzazione XAML e una visualizzazione Progettazione sincronizzata del markup XAML dell'app sottoposto a rendering. Con un file XAML aperto in Visual Studio, è possibile spostarsi tra la visualizzazione Progettazione e la visualizzazione XAML mediante le schede **Progettazione** e **XAML** . È possibile usare il pulsante **Scambia riquadri** per visualizzare in primo piano alternativamente la tavola da disegno o l'Editor XAML.
 
- Nella visualizzazione Progettazione la finestra che include la *tavola da disegno* è la finestra attiva ed è possibile usarla come area di lavoro principale. Permette di progettare visivamente una pagina nell'app, aggiungendo o disegnando elementi e quindi modificandoli. Per altre informazioni, vedi [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
+ Nella visualizzazione progettazione la finestra che contiene la *tavola da disegno* è la finestra attiva e può essere utilizzata come area di lavoro primaria. Permette di progettare visivamente una pagina nell'app, aggiungendo o disegnando elementi e quindi modificandoli. Per altre informazioni, vedi [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
 
- ![Visualizzazione progettazione di finestra di progettazione XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![Visualizzazione Progettazione della finestra di progettazione XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Nella tavola da disegno sono disponibili le funzionalità seguenti:
 
  **Guide di allineamento** Le guide di allineamento sono *limiti di allineamento*, visualizzati sotto forma di linee tratteggiate rosse, per indicare quando i bordi dei controlli sono allineati o quando le linee di base del testo sono allineate. I limiti di allineamento vengono visualizzati solo quando è abilitato l' **allineamento alle guide di allineamento** .
 
- **Rails** `Grid` Rails vengono usati per gestire righe e colonne in un pannello [griglia](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . È possibile creare ed eliminare righe e colonne e modificare le rispettive larghezze e altezze. La sbarra verticale della griglia, visualizzata nel lato sinistro della tavola da disegno, viene usata per le righe, mentre la sbarra orizzontale, visualizzata in alto, viene usata per le colonne.
+ **Sbarre della griglia Le sbarre di tipo ** `Grid` consentono di gestire righe e colonne in un pannello [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). È possibile creare ed eliminare righe e colonne e modificare le rispettive larghezze e altezze. La sbarra verticale della griglia, visualizzata nel lato sinistro della tavola da disegno, viene usata per le righe, mentre la sbarra orizzontale, visualizzata in alto, viene usata per le colonne.
 
  **Strumenti decorativi griglia** Uno strumento decorativo `Grid` viene visualizzato sotto forma di triangolo a cui è collegata una linea verticale oppure orizzontale sulla sbarra `Grid`. Quando si trascina uno strumento decorativo `Grid` , le larghezze o altezze delle colonne o righe adiacenti vengono aggiornate in base allo spostamento del mouse.
 
@@ -58,7 +58,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  Nella visualizzazione Progettazione sono disponibili comandi aggiuntivi della tavola da disegno nell'area inferiore sinistra della schermata, come illustrato di seguito:
 
- ![Comandi visualizzazione progettazione](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Comandi della visualizzazione Progettazione](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Nella barra degli strumenti sono disponibili i comandi seguenti:
 
@@ -81,7 +81,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 ## <a name="device-window"></a>Finestra Dispositivo
  La finestra Dispositivo nella finestra di progettazione XAML per Visual Studio consente di simulare in fase di progettazione diverse visualizzazioni e opzioni di visualizzazione per il progetto Windows Store o Windows Phone. La finestra Dispositivo è disponibile nel menu **Progettazione** quando si usa la finestra di progettazione XAML Di seguito è riportata un'immagine di tale finestra:
 
- ![Finestra del dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Finestra Dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Le opzioni della finestra Dispositivo sono le seguenti:
 
@@ -108,7 +108,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
 - Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.
 
-- Selezionare gli elementi in modo da poterli modificare, ossia spostarli nella gerarchia, modificarli sulla tavola da disegno, impostarne le proprietà nella finestra Proprietà e così via. Per ulteriori informazioni, vedere [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
+- Selezionare gli elementi in modo da poterli modificare, ossia spostarli nella gerarchia, modificarli sulla tavola da disegno, impostarne le proprietà nella finestra Proprietà e così via. Per ulteriori informazioni, vedere [utilizzo di elementi in finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md)
 
 - Creare e modificare modelli per gli elementi che sono controlli.
 
@@ -122,9 +122,9 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
   **Struttura documento** La visualizzazione principale nella finestra Struttura documento mostra la gerarchia di un documento in una struttura ad albero. È possibile usare la natura gerarchica della struttura documento per esaminare il documento con diversi livelli di dettaglio e per bloccare e nascondere gli elementi singolarmente o in gruppo.
 
-  **Mostra/Nascondi** Visualizza o nasconde gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Usare i pulsanti **Mostra/Nascondi** (identificati, quando gli elementi sono visualizzati, dal simbolo di un occhio) oppure premere CTRL+H per nascondere gli elementi e MAIUSC+CTRL+H per visualizzarli.
+  **Mostra/Nascondi** Visualizza o nasconde gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Usare i pulsanti **Mostra/Nascondi** , che visualizzano il simbolo di un occhio quando vengono visualizzati, oppure premere CTRL + h per nascondere gli elementi e MAIUSC + CTRL + h per visualizzarli.
 
-  **Blocca/Sblocca** Blocca o sblocca gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Gli elementi bloccati non possono essere modificati. Usare i pulsanti **Blocca/Sblocca** (identificati, quando è applicato il blocco, dal simbolo di un lucchetto) oppure premere CTRL+L per bloccare gli elementi e MAIUSC+CTRL+L per sbloccarli.
+  **Blocca/Sblocca** Blocca o sblocca gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Gli elementi bloccati non possono essere modificati. Usare i pulsanti di **blocco/sblocco** , che visualizzano un simbolo di lucchetto quando sono bloccati, oppure premere CTRL + l per bloccare gli elementi e MAIUSC + CTRL + l per sbloccarli.
 
   **Reimposta l'ambito pageRoot** L'opzione nella parte superiore della finestra Struttura documento, con il simbolo di una freccia rivolta verso l'alto, reimposta l'ambito precedente per la struttura del documento. Questa operazione può essere eseguita solo nell'ambito di uno stile o di un modello.
 

@@ -1,5 +1,5 @@
 ---
-title: Notifica alla porta Documenti Microsoft
+title: Notifica della porta | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738321"
 ---
-# <a name="notify-the-port"></a>Notifica alla porta
-Dopo aver avviato un programma, la porta deve essere notificata, come segue:
+# <a name="notify-the-port"></a>Notificare la porta
+Dopo l'avvio di un programma, la porta deve essere notificata, come indicato di seguito:
 
-1. Quando una porta riceve un nuovo nodo di programma, invia un evento di creazione del programma alla sessione di debug. L'evento porta con sé un'interfaccia che rappresenta il programma.
+1. Quando una porta riceve un nuovo nodo di programma, invia un evento di creazione del programma alla sessione di debug. L'evento contiene un'interfaccia che rappresenta il programma.
 
-2. La sessione di debug esegue una query sul programma per l'identificatore di un motore di debug (DE) che può connettersi.
+2. La sessione di debug esegue una query sul programma per l'identificatore di un motore di debug (DE) che può connettersi a.
 
-3. La sessione di debug controlla per vedere se il DE è nell'elenco dei DEs consentiti per quel programma. La sessione di debug ottiene questo elenco dalle impostazioni del programma attivo della soluzione, originariamente passato dal pacchetto di debug.
+3. La sessione di debug controlla se il DE è nell'elenco di DEs consentiti per il programma. La sessione di debug ottiene questo elenco dalle impostazioni del programma attive della soluzione, passate in origine dal pacchetto di debug.
 
-    Il DE deve essere nell'elenco consentito, altrimenti il DE non sarà collegato al programma.
+    Il DE deve trovarsi nell'elenco consentito, altrimenti il DE non verrà collegato al programma.
 
-   A livello di codice, quando una porta riceve per la prima volta un nuovo nodo di programma, crea un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaccia per rappresentare il programma.
-
-> [!NOTE]
-> Questo non deve essere `IDebugProgram2` confuso con l'interfaccia creata in seguito dal motore di debug (DE).
-
- La porta invia un evento di creazione del programma [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) al gestore `IConnectionPoint` di sessione di debug (SDM) tramite un'interfaccia COM.
+   A livello di codice, quando una porta riceve per la prima volta un nuovo nodo di programma, crea un'interfaccia [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) per rappresentare il programma.
 
 > [!NOTE]
-> Questo non deve essere `IDebugProgramCreateEvent2` confuso con l'interfaccia, che viene inviata in seguito dal DE.
+> Questa operazione non deve essere confusa con l' `IDebugProgram2` interfaccia creata in un secondo momento dal motore di debug (de).
 
- Insieme all'interfaccia eventi stessa, la porta invia le interfacce [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)e [IDebugProgram2,](../../extensibility/debugger/reference/idebugprogram2.md) che rappresentano rispettivamente la porta, il processo e il programma. SDM chiama [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) per ottenere il GUID del DE che può eseguire il debug del programma. Il GUID è stato originariamente ottenuto dal [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia.
+ La porta Invia un evento di creazione di un programma [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) a gestione debug sessione (SDM) tramite un'interfaccia com `IConnectionPoint` .
 
- Il File SDM verifica se il DE è nell'elenco dei DE consentiti. Il modello SDM ottiene questo elenco dalle impostazioni del programma attivo della soluzione, originariamente passato dal pacchetto di debug. Il DE deve essere nell'elenco consentito, altrimenti non sarà collegato al programma.
+> [!NOTE]
+> Questa operazione non deve essere confusa con l' `IDebugProgramCreateEvent2` interfaccia, che viene inviata in un secondo momento da de.
 
- Una volta che l'identità del DE è noto, il modello SDM è pronto per collegarlo al programma.
+ Insieme all'interfaccia evento, la porta Invia le interfacce [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)e [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , che rappresentano rispettivamente la porta, il processo e il programma. SDM chiama [IDebugProgram2:: GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) per ottenere il GUID del de che può eseguire il debug del programma. Il GUID è stato originariamente ottenuto dall'interfaccia [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .
+
+ SDM verifica se l'oggetto DE è presente nell'elenco di DEs consentiti. SDM ottiene questo elenco dalle impostazioni del programma attive della soluzione, passate originariamente dal pacchetto di debug. Il DE deve trovarsi nell'elenco consentito, altrimenti non verrà collegato al programma.
+
+ Quando l'identità del DE è nota, il SDM è pronto per collegarlo al programma.
 
 ## <a name="see-also"></a>Vedere anche
 - [Avvio di un programma](../../extensibility/debugger/launching-a-program.md)
-- [Collegamento dopo un lancio](../../extensibility/debugger/attaching-after-a-launch.md)
-- [Attività di debugDebugging tasks](../../extensibility/debugger/debugging-tasks.md)
+- [Connessione dopo un avvio](../../extensibility/debugger/attaching-after-a-launch.md)
+- [Attività di debug](../../extensibility/debugger/debugging-tasks.md)

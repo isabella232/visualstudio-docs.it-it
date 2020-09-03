@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711625"
 ---
 # <a name="clearcollectiont-activity-designer"></a>Activity Designer\<T> ClearCollection
@@ -35,7 +35,7 @@ L' **ActivityDesigner ClearCollection \<T> ** è disponibile nella categoria **r
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.ClearCollection%601> e ne viene descritta la modalità di uso nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.ClearCollection%601>. Il valore predefinito è ClearCollection<Int32 \> . Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|Vero|Specifica la raccolta di cui cancellare tutti gli elementi. Questa raccolta è di tipo **ICollection \<TypeArgument> .** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|

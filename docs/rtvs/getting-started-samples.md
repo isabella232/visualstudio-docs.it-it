@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: ef3316d929b00203815918a656568f75571e954e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843816"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Progetti di esempio di R Tools per Visual Studio
@@ -41,7 +41,7 @@ Questo esempio offre un'introduzione approfondita a R tramite la serie di commen
 
 Questa raccolta di esempi illustra come usare R per creare modelli di apprendimento automatico e come sfruttare le funzionalità di [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server).
 
-Come per tutti gli esempi, aprire il file, posizionare il cursore nella parte superiore e quindi scorrere il codice riga per riga con **Ctrl**+**Invio**. Anche i file markdown in ogni cartella contengono dettagli aggiuntivi.
+Come per tutti gli esempi, aprire il file, posizionare il cursore nella parte superiore e quindi eseguire il codice riga per riga con **CTRL** + **invio**. Anche i file markdown in ogni cartella contengono dettagli aggiuntivi.
 
 - `Benchmarks` esegue diversi calcoli paralleli a elevato utilizzo di algebra lineare per visualizzare il miglioramento delle prestazioni che è possibile realizzare tramite l'uso di Microsoft R Open e delle librerie Intel Math Kernel Library (MKL). Con dati simulati, i benchmark confrontano in modo specifico i calcoli di matrice per un thread rispetto ad altri due.
 

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634331"
 ---
 # <a name="createitem-task"></a>CreateItem (attività)
@@ -32,20 +32,20 @@ Inserisce elementi di input nelle raccolte di elementi. Questo consente di copia
 > [!NOTE]
 > Si tratta di un'attività deprecata. A partire da .NET Framework 3.5, è possibile posizionare i gruppi di elementi all'interno di elementi [Target](../msbuild/target-element-msbuild.md). Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
-## <a name="attributes"></a>Attributes
+## <a name="attributes"></a>Attributi
 
  Nella tabella che segue vengono descritti i parametri dell'attività `CreateItem` .
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|`AdditionalMetadata`|Parametro di matrice `String` facoltativo.<br /><br /> Specifica metadati aggiuntivi da associare agli elementi di output.  Specificare il nome e il valore dei metadati dell'elemento usando la sintassi seguente:<br /><br /> *NomeMetadati* `=` *ValoreMetadati*<br /><br /> Le coppie nome/valore di metadati devono essere separate da un punto e virgola. Se il nome o il valore contiene un punto e virgola o qualsiasi altro carattere speciale, questo deve essere preceduto dal carattere di escape. Per altre informazioni, vedere [Procedura: eseguire l'escape di caratteri speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|
-|`Exclude`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica gli elementi da escludere dalla raccolta di elementi di output. Questo parametro può contenere specifiche di caratteri jolly. Per ulteriori informazioni, vedere [Elementi](../msbuild/msbuild-items.md) e [procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).|
+|`AdditionalMetadata`|Parametro di matrice `String` facoltativo.<br /><br /> Specifica metadati aggiuntivi da associare agli elementi di output.  Specificare il nome e il valore dei metadati dell'elemento usando la sintassi seguente:<br /><br /> *NomeMetadati* `=` *ValoreMetadati*<br /><br /> Le coppie nome/valore di metadati devono essere separate da un punto e virgola. Se il nome o il valore contiene un punto e virgola o qualsiasi altro carattere speciale, questo deve essere preceduto dal carattere di escape. Per altre informazioni, vedere [procedura: eseguire l'escape dei caratteri speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|
+|`Exclude`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica gli elementi da escludere dalla raccolta di elementi di output. Questo parametro può contenere specifiche di caratteri jolly. Per altre informazioni, vedere [elementi](../msbuild/msbuild-items.md) e [procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).|
 |`Include`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi da includere nella raccolta di elementi di output. Questo parametro può contenere specifiche di caratteri jolly.|
 |`PreserveExistingMetadata`|Parametro `Boolean` facoltativo.<br /><br /> Se `True`, i metadati aggiuntivi vengono applicati solo se non sono ancora presenti.|
 
 ## <a name="remarks"></a>Osservazioni
 
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
@@ -76,11 +76,11 @@ Inserisce elementi di input nelle raccolte di elementi. Questo consente di copia
 
  La tabella seguente descrive il valore dell'elemento di output dopo l'esecuzione dell'attività. I metadati degli elementi vengono visualizzati tra parentesi dopo l'elemento.
 
-|Raccolta di elementi|Sommario|
+|Raccolta di elementi|Contenuto|
 |---------------------|--------------|
-|`MySourceItemsWithMetadata`|*file1.resx* `MyMetadata="Hello"`( )<br /><br /> *file2.resx* `MyMetadata="Hello"`( )|
+|`MySourceItemsWithMetadata`|*file1. resx* ( `MyMetadata="Hello"` )<br /><br /> *file2. resx* ( `MyMetadata="Hello"` )|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

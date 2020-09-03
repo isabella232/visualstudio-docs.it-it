@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843887"
 ---
 # <a name="wpf-community-resources"></a>Risorse della community di WPF
@@ -24,7 +24,7 @@ Microsoft mette a disposizione numerose risorse della community per conoscere, d
 ## <a name="community"></a>Community
  [Forum di WPF](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
- [Overflow dello stack](https://stackoverflow.com/questions/tagged/wpf)
+ [Stack Overflow](https://stackoverflow.com/questions/tagged/wpf)
 
  [Blog del team WPF](https://devblogs.microsoft.com/wpf/)
 

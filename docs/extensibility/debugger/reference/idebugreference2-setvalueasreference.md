@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugReference2::SetValueAsReference . Documenti Microsoft
+title: 'IDebugReference2:: SetValueAsReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f4767dbe08e716d64ea03c18a1c4a6f7d6690a7b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720299"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Imposta il valore di un riferimento da un altro riferimento. Riservato per utilizzi futuri.
+Imposta il valore di un riferimento da un altro riferimento. Riservato per usi futuri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,16 +47,16 @@ int SetValueAsReference ( 
 
 ## <a name="parameters"></a>Parametri
 `rgpArgs`\
-[in] Matrice di [oggetti IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) utilizzati per determinare come impostare il valore di riferimento.
+in Matrice di oggetti [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) utilizzati per determinare come impostare il valore di riferimento.
 
 `dwArgCount`\
-[in] Numero di riferimenti nella matrice.
+in Numero di riferimenti nella matrice.
 
 `pValue`\
-[in] Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) da cui impostare il valore della proprietà.
+in Oggetto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) da cui impostare il valore della proprietà.
 
 `dwTimeout`\
-[in] Tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Utilizzare `INFINITE` per attendere a tempo indeterminato.
+in Tempo massimo, in millisecondi, di attesa prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.

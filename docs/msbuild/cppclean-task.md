@@ -20,15 +20,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634344"
 ---
 # <a name="cppclean-task"></a>Attività CPPClean
 
-Elimina i file temporanei creati da MSBuild quando viene compilato un progetto in c'è. Il processo di eliminazione dei file di compilazione è noto come *pulizia*.
+Elimina i file temporanei creati da MSBuild quando viene compilato un progetto C++. Il processo di eliminazione dei file di compilazione è noto come *pulizia*.
 
 ## <a name="parameters"></a>Parametri
 
@@ -44,4 +44,4 @@ Elimina i file temporanei creati da MSBuild quando viene compilato un progetto i
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

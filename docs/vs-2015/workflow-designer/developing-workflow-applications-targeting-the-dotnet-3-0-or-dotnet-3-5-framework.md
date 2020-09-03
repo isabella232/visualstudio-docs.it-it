@@ -12,21 +12,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843870"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Sviluppo di applicazioni flusso di lavoro destinate a Framework .NET 3.0 o Framework .NET 3.5
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] fornisce le [!INCLUDE[wfd1](../includes/wfd1-md.md)] per la creazione di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] destinate al [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Il progettatore usa l'interfaccia utente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comune per la costruzione grafica e per l'esecuzione del debug di applicazioni flusso di lavoro.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] fornisce [!INCLUDE[wfd1](../includes/wfd1-md.md)] per la creazione di [!INCLUDE[wf](../includes/wf-md.md)] applicazioni destinate a [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] . Il progettatore usa l'interfaccia utente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comune per la costruzione grafica e per l'esecuzione del debug di applicazioni flusso di lavoro.
 
  [!INCLUDE[vs2010](../includes/vs2010-md.md)] fornisce inoltre l'accesso a una Progettazione flussi di lavoro legacy che può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Questa sezione include materiale sussidiario sull'uso di questa finestra di progettazione legacy.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
  [Uso di Progettazione flussi di lavoro legacy](../workflow-designer/using-the-legacy-workflow-designer.md)
 
  [Debug dei flussi di lavoro legacy](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Guida alla programmazione di Windows Workflow Foundation](https://msdn2.microsoft.com/library/bb628474.aspx)
+ [Guida di programmazione di Windows Workflow Foundation](https://msdn2.microsoft.com/library/bb628474.aspx)

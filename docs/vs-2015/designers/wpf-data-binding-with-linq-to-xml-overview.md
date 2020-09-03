@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c0cbd93f2d32c06ba52b2c47c1af8f326948609a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843920"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Panoramica del data binding WPF con LINQ to XML
@@ -37,9 +37,9 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
 
 |Componente|Descrizione|
 |---------------|-----------------|
-|Destinazione di associazione|Elemento dell'interfaccia utente da associare all'origine dati. Gli elementi visivi di WPF sono derivati dalla classe <xref:System.Windows.UIElement>.|
+|Destinazione di binding|Elemento dell'interfaccia utente da associare all'origine dati. Gli elementi visivi di WPF sono derivati dalla classe <xref:System.Windows.UIElement>.|
 |Proprietà di destinazione|*Proprietà di dipendenza* della destinazione di associazione che riflette il valore dell'origine del data binding. Le proprietà della dipendenza sono supportate direttamente dalla classe <xref:System.Windows.DependencyObject>, da cui deriva <xref:System.Windows.UIElement>.|
-|Origine di associazione|Oggetto di origine per uno o più valori forniti all'elemento dell'interfaccia utente per la presentazione. In WPF sono automaticamente supportati i seguenti tipi di origini di associazione: oggetti CLR, oggetti dati ADO.NET, dati XML (provenienti da query XPath o LINQ to XML) o un altro oggetto <xref:System.Windows.DependencyObject>.|
+|Origine di binding|Oggetto di origine per uno o più valori forniti all'elemento dell'interfaccia utente per la presentazione. In WPF sono automaticamente supportati i seguenti tipi di origini di associazione: oggetti CLR, oggetti dati ADO.NET, dati XML (provenienti da query XPath o LINQ to XML) o un altro oggetto <xref:System.Windows.DependencyObject>.|
 |Percorso di origine|Proprietà dell'origine di associazione che si risolve nel valore o set di valori a cui deve essere associata.|
 
  Quello della proprietà della dipendenza è un concetto specifico di WPF che rappresenta una proprietà di un elemento dell'interfaccia utente elaborato dinamicamente. Ad esempio, le proprietà di dipendenza includono spesso valori predefiniti o specificati da un elemento padre. Queste proprietà speciali sono supportate da istanze della classe <xref:System.Windows.DependencyProperty> e non da campi come con proprietà standard. Per altre informazioni, vedere [Panoramica  sulle proprietà di dipendenza](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).
