@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName . Documenti Microsoft
+title: 'IDebugCoreServer3:: GetServerFriendlyName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732893"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
@@ -41,19 +41,19 @@ int GetServerFriendlyName(
 
 ## <a name="parameters"></a>Parametri
 `pbstrName`\
-[fuori] Restituisce un nome descrittivo per il server.
+out Restituisce un nome descrittivo per il server.
 
 > [!NOTE]
 > Il chiamante è responsabile della liberazione della stringa.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha `S_OK`esito positivo, restituisce ; in caso contrario, restituisce il codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
 ## <a name="remarks"></a>Osservazioni
- Per i server avviati dall'utente, il nome restituito da questo metodo è il nome completo del server. Per i server avviati automaticamente, il nome è quello del computer su cui è in esecuzione il server.
+ Per i server avviati dall'utente, il nome restituito da questo metodo è il nome completo del server. Per i server con avvio automatico, il nome è quello del computer in cui è in esecuzione il server.
 
- Per un nome orientato al computer, chiamare il [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) metodo.
+ Per un nome orientato al computer, chiamare il metodo [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
-- [NomeServer GetServer](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
+- [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

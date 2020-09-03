@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
+title: 'IDebugDocumentChecksum2:: GetChecksumAndAlgorithmId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8a603a025d6a9b5b2ba4f0418807666bba4d8b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156485"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera l'identificatore di algoritmo e del documento dato il numero massimo di byte da usare.  
+Recupera il checksum del documento e l'identificatore dell'algoritmo dato il numero massimo di byte da usare.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,22 +45,22 @@ public int GetChecksumAndAlgorithmId(
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Identificatore univoco per l'algoritmo di checksum.  
+ out Identificatore univoco per l'algoritmo di checksum.  
   
  `cMaxBytes`  
- [in] Numero massimo di byte da usare per il valore di checksum.  
+ in Numero massimo di byte da utilizzare per il checksum.  
   
  `pChecksum`  
- [out] Valore di checksum.  
+ out Valore del checksum.  
   
  `pcNumBytes`  
- [out] Numero effettivo di byte utilizzati per il valore di checksum.  
+ out Numero effettivo di byte utilizzati per il checksum.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente usa questo metodo per ottenere il checksum e l'algoritmo per un documento.  
+ Nell'esempio seguente viene usato questo metodo per ottenere il checksum e l'algoritmo per un documento.  
   
 ```cpp#  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  

@@ -24,9 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015055"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Creazione di Web part per SharePoint
@@ -99,7 +100,7 @@ ms.locfileid: "86015055"
   Per ulteriori informazioni sulle soluzioni create mediante sandbox, vedere [differenze tra soluzioni create mediante sandbox e soluzioni farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Creazione di Web part basate su SharePoint in stile obsoleto
- È possibile utilizzare i modelli in Visual Studio per creare [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web part personalizzate per SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]le web part sono basate sull'infrastruttura delle [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Web part e sono il tipo consigliato per i nuovi progetti.
+ È possibile utilizzare i modelli in Visual Studio per creare [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web part personalizzate per SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] le web part sono basate sull'infrastruttura delle [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Web part e sono il tipo consigliato per i nuovi progetti.
 
  In pochissimi casi, potrebbe essere necessario creare una Web part utilizzando la Web part basata su SharePoint di tipo obsoleto. È possibile utilizzare Visual Studio per creare questi tipi di Web part, ma Visual Studio non fornisce alcun modello progettato specificamente per facilitarne la creazione.
 

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba84f3ec67acf44cab35f3c7761159839e4ef5bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156118"
 ---
 # <a name="multiple-categories-are-present"></a>Più categorie presenti
@@ -26,8 +26,8 @@ ms.locfileid: "68156118"
 La sezione selezionata contiene più di un tipo di attività per un intervallo di tempo specificato. Si noti che vengono visualizzati due colori, uno impilato verticalmente sull'altro. Questi colori rappresentano solo le prime due attività più frequenti nell'intervallo di tempo specificato. Le frequenze di queste due attività sono rappresentate in relazione l'una all'altra come terzi o metà della barra verticale. Per visualizzare ulteriori dettagli, provare fare zoom avanti in questa sezione della visualizzazione dei thread.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Tempo di esecuzione (visualizzazione Thread)](../profiling/execution-time-threads-view.md)   
- [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md)   
+ [Tempo di esecuzione (visualizzazione thread)](../profiling/execution-time-threads-view.md)   
+ [Tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md)   
  [Tempo di gestione della memoria](../profiling/memory-management-time.md)   
  [Tempo di precedenza](../profiling/preemption-time.md)   
  [Tempo di sospensione](../profiling/sleep-time.md)   

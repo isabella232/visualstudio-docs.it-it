@@ -1,5 +1,5 @@
 ---
-title: Criteri dei modelli e la finestra proprietà | Microsoft Docs
+title: Criteri dei modelli e finestra Proprietà | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,24 +11,24 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1c67150c5a71a3d70df85669319795a405c60f4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156017"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Criteri dei modelli e finestra Proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Quando un progetto è contenuto all'interno di un progetto di modello aziendale, tale progetto di modello dell'organizzazione possa applicare criteri. Criteri dei modelli diventa un sistema vincolante che può essere utilizzato per impostare i valori predefiniti per le proprietà, nascondere le proprietà, aggiungere le proprietà e così via.  
+Quando un progetto è contenuto all'interno di un progetto modello Enterprise, il progetto modello Enterprise può applicare i criteri. Il criterio dei modelli diventa un sistema vincolante che può essere usato per impostare i valori predefiniti per le proprietà, nascondere proprietà, aggiungere proprietà e così via.  
   
- Usando i criteri dei modelli per controllare la visualizzazione delle informazioni nel **delle proprietà** finestra è diversa dall'implementazione <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> gestisce le proprietà dell'oggetto a livello di componente, mentre i criteri dei modelli può essere utilizzato per vincolare le proprietà dell'oggetto a livello di soluzione o progetto. In altre parole  
+ L'utilizzo di criteri modello per controllare la visualizzazione delle informazioni nella finestra **Proprietà** è diverso dall'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> gestisce le proprietà degli oggetti a livello di componente, mentre i criteri dei modelli possono essere usati per vincolare le proprietà dell'oggetto a livello di soluzione o di progetto. In altre parole  
   
-- Implementare i metodi sui <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> per determinare gli elementi visualizzati nei **proprietà** finestra per oggetti specifici  
+- Implementare i metodi su <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> per determinare gli elementi visualizzati nella finestra **Proprietà** per oggetti specifici  
   
-- Usare i criteri dei modelli a livello di soluzione e progetto per determinare gli elementi visualizzati nei **proprietà** finestra per gli oggetti specificati in precedenza  
+- Usare i criteri dei modelli a livello di soluzione e di progetto per determinare gli elementi visualizzati nella finestra **Proprietà** per gli oggetti specificati in precedenza  
   
-  Usando i criteri dei modelli per applicare un vincolo in modo selettivo le proprietà specifiche nel **delle proprietà** finestra quando un elemento del progetto di un tipo specificato viene selezionato in **Esplora soluzioni** può essere utile per tutti i membri di il team di sviluppo lavorando a un progetto. Usa i criteri dei modelli, ad esempio, è possibile configurare tutte le informazioni della stringa di connessione in un database per gli sviluppatori e rendere la stringa di connessione di sola lettura. In tal modo, è possibile fornire un modo semplice per garantire che ogni sviluppatore utilizza il percorso corretto per accedere ai dati.  
+  L'uso di criteri modello per vincolare selettivamente proprietà specifiche nella finestra **Proprietà** quando viene selezionato un elemento del progetto di un tipo specificato in **Esplora soluzioni** può essere utile per tutti i membri del team di sviluppo che lavorano su un progetto. Usando, ad esempio, i criteri dei modelli, è possibile configurare tutte le informazioni della stringa di connessione in un database per gli sviluppatori e rendere la stringa di connessione di sola lettura. In questo modo, è possibile fornire un modo semplice per assicurare che ogni sviluppatore usi il percorso corretto per l'accesso ai dati.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   

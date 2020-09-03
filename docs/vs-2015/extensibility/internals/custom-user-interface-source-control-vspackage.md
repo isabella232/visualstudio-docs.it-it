@@ -1,5 +1,5 @@
 ---
-title: Interfaccia utente personalizzata (VSPackage di controllo codice sorgente) | Microsoft Docs
+title: Interfaccia utente personalizzata (VSPackage del controllo del codice sorgente) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,50 +12,50 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f03713213ec2e54ed8d82d7528dae12cefab7ebc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154986"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaccia utente personalizzata (VSPackage di controllo del codice sorgente)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefinito tramite il file di Visual Studio Command Table (vsct). Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE) le voci di menu viene visualizzato nei rispettivi Stati predefiniti fino a quando non viene caricato il pacchetto VSPackage. Successivamente, il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> viene chiamato per abilitare o disabilitare le voci di menu.  
+Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefiniti tramite il file della tabella dei comandi di Visual Studio (con estensione vsct). Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Integrated Development Environment (IDE) Visualizza le voci di menu negli stati predefiniti fino a quando il pacchetto VSPackage non viene caricato. Successivamente, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> viene chiamato il metodo per abilitare o disabilitare le voci di menu.  
   
- Un pacchetto VSPackage può impostare una chiave del Registro di sistema in modo che il pacchetto VSPackage può essere caricato automaticamente in base a un contesto dell'interfaccia utente del comando, anche se in genere controllo del codice sorgente VSPackage verrà caricato su richiesta anziché semplicemente il passaggio a un determinato contesto dell'interfaccia utente. Per altre informazioni sulla chiave del Registro di sistema AutoLoadPackages, vedere [gestione dei pacchetti VSPackage](../../extensibility/managing-vspackages.md).  
+ Un pacchetto VSPackage può impostare una chiave del registro di sistema in modo che il pacchetto VSPackage possa essere caricato automaticamente in base a un contesto dell'interfaccia utente di comando, anche se in genere un VSPackage del controllo del codice sorgente deve essere caricato su richiesta anziché semplicemente passare a un particolare contesto dell'interfaccia utente. Per ulteriori informazioni sulla chiave del registro di sistema AutoLoadPackages, vedere [gestione dei pacchetti VSPackage](../../extensibility/managing-vspackages.md).  
   
-## <a name="vspackage-ui"></a>VSPackage dell'interfaccia utente  
- Un pacchetto controllo del codice sorgente viene implementato come un pacchetto VSPackage e non usa alcuna interfaccia utente da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Ogni controllo del codice sorgente VSPackage è necessario specificare i proprio elementi dell'interfaccia utente, ad esempio voci di menu, gruppi di menu, finestre degli strumenti, barre degli strumenti e qualsiasi interfaccia utente necessaria per l'impostazione di opzioni specifico per il controllo del codice sorgente VSPackage. Questi elementi dell'interfaccia utente possono essere abilitati in modo statico o dinamico. Elementi dell'interfaccia utente statici sono definiti in un file vsct e vengono visualizzati se il VSPackage viene caricato o non. Elementi dell'interfaccia utente dinamici potrebbero essere visibili a seconda del contesto dell'interfaccia utente un comando specifico, ad esempio <xref:EnvDTE.Constants.vsContextNoSolution>, o come risultato di una chiamata al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (metodo). La visibilità degli elementi dell'interfaccia utente dinamici è conforme con la strategia per il caricamento ritardato di VSPackage.  
+## <a name="vspackage-ui"></a>Interfaccia utente VSPackage  
+ Un pacchetto di controllo del codice sorgente viene implementato come VSPackage e non usa alcuna interfaccia utente da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Ogni VSPackage del controllo del codice sorgente deve specificare i propri elementi dell'interfaccia utente, ad esempio le voci di menu, i gruppi di menu, le finestre degli strumenti, le barre degli strumenti e qualsiasi interfaccia utente necessaria per impostare le opzioni specifiche del pacchetto VSPackage del controllo Questi elementi dell'interfaccia utente possono essere abilitati in modo statico o dinamico. Gli elementi statici dell'interfaccia utente sono definiti in un file con estensione vsct e vengono visualizzati se il pacchetto VSPackage è stato caricato o meno. Gli elementi dinamici dell'interfaccia utente possono essere visibili a seconda del contesto dell'interfaccia utente di un comando specifico, ad esempio <xref:EnvDTE.Constants.vsContextNoSolution> o come risultato di una chiamata al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo. La visibilità degli elementi dinamici dell'interfaccia utente è conforme alla strategia per il caricamento ritardato dei pacchetti VSPackage.  
   
-## <a name="ui-constraints-on-source-control-vspackages"></a>Vincoli di interfaccia utente per pacchetti VSPackage di controllo di origine  
- Poiché VSPackage di controllo del codice sorgente non può essere rimosso dall'IDE di dopo essere stato caricato, il pacchetto VSPackage deve essere in grado di passare a uno stato inattivo. Quando un pacchetto VSPackage riceve una notifica che non è più attivo, il pacchetto VSPackage disabilita la relativa interfaccia utente e ignora qualsiasi interazione IDE esterno. L'implementazione di VSPackage del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo consigliabile nascondere i comandi quando il pacchetto VSPackage non è attivo.  
+## <a name="ui-constraints-on-source-control-vspackages"></a>Vincoli dell'interfaccia utente nei pacchetti VSPackage del controllo del codice sorgente  
+ Poiché il pacchetto VSPackage del controllo del codice sorgente non può essere rimosso dall'IDE dopo che è stato caricato, il pacchetto VSPackage deve essere in grado di entrare in uno stato inattivo. Quando un pacchetto VSPackage riceve una notifica che non è più attivo, il pacchetto VSPackage Disabilita la relativa interfaccia utente e ignora qualsiasi interazione IDE esterna. L'implementazione del pacchetto VSPackage del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo deve nascondere i comandi quando il pacchetto VSPackage non è attivo.  
   
- Ogni controllo del codice sorgente pacchetto VSPackage deve implementare il `IVsSccProvider` interfaccia. Due metodi sull'interfaccia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>, deve essere implementata da VSPackage.  
+ Ogni VSPackage del controllo del codice sorgente deve implementare l' `IVsSccProvider` interfaccia. Due metodi sull'interfaccia, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A> , devono essere implementati dal pacchetto VSPackage.  
   
- Il controllo del codice sorgente VSPackage può sottoscritti a vari eventi IDE, che vengono implementati mediante il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>e così via. Inoltre, il pacchetto VSPackage hanno implementato le interfacce di callback basate sul Registro di sistema, ad esempio il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>. Questi devono tutte essere ignorati quando è inattivo.  
+ Il pacchetto VSPackage del controllo del codice sorgente potrebbe aver sottoscritto vari eventi IDE, implementati da <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> , <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> e così via. Inoltre, il pacchetto VSPackage potrebbe avere implementato interfacce di callback abilitate per il registro di sistema, ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> . Questi devono essere tutti ignorati quando sono inattivi.  
   
- Nell'elenco seguente mostra le interfacce impatto lo stato attivo di un pacchetto VSPackage di controllo di origine:  
+ L'elenco seguente mostra le interfacce interessate dallo stato attivo di un pacchetto VSPackage del controllo del codice sorgente:  
   
-- Tenere traccia degli eventi di documenti di progetto.  
+- Tenere traccia degli eventi dei documenti di progetto.  
   
 - Eventi della soluzione.  
   
-- Interfacce di persistenza di soluzione. Quando è inattivo, i pacchetti non devono scrivere i file con estensione sln e suo.  
+- Interfacce di persistenza della soluzione. Quando è inattivo, i pacchetti non devono scrivere in file con estensione sln e suo.  
   
-- Estensioni della proprietà.  
+- Extender della proprietà.  
   
-  Richiesti <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, e anche eventuali interfacce facoltative associate al controllo del codice sorgente, non vengono chiamati quando il pacchetto VSPackage di controllo di origine è inattivo.  
+  Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> interfacce obbligatorie e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> e tutte le interfacce facoltative associate al controllo del codice sorgente non vengono chiamate quando il pacchetto VSPackage del controllo del codice sorgente è inattivo.  
   
-  Quando la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] avvio dell'IDE, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] imposta il contesto dell'interfaccia utente del comando per l'ID del controllo sorgente predefinito corrente ID del pacchetto VSPackage. In questo modo l'interfaccia utente statico del pacchetto VSPackage venga visualizzata nell'IDE senza effettivamente il caricamento di VSPackage di controllo del codice sorgente attivo. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] viene sospeso per il pacchetto VSPackage registrarsi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] attraverso il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> prima di inviare tutte le chiamate al pacchetto VSPackage.  
+  Quando l' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE viene avviato, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] imposta il contesto dell'interfaccia utente del comando sull'ID dell'ID VSPackage predefinito del controllo del codice sorgente corrente. In questo modo l'interfaccia utente statica del VSPackage del controllo del codice sorgente attivo viene visualizzata nell'IDE senza caricare effettivamente il pacchetto VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sospende il pacchetto VSPackage per la registrazione con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tramite prima di effettuare <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> qualsiasi chiamata al pacchetto VSPackage.  
   
-  La tabella seguente descrive i dettagli specifici sul modo in cui [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE nasconde gli elementi dell'interfaccia utente diversi.  
+  Nella tabella seguente vengono descritti i dettagli specifici sul modo in cui l' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE nasconde elementi dell'interfaccia utente diversi.  
   
 |Elemento dell'interfaccia utente|Descrizione|  
 |-------------|-----------------|  
-|Menu e barre degli strumenti|Il pacchetto del controllo codice sorgente è necessario impostare gli stati iniziali di visibilità della barra degli strumenti e menu per l'ID di pacchetto di controllo di origine nel [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sezione del file con estensione vsct. In questo modo, il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE per impostare in modo appropriato lo stato delle voci di menu senza il caricamento di VSPackage e la chiamata a un'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (metodo).|  
-|Finestre degli strumenti|Il controllo del codice sorgente VSPackage nasconde le finestre degli strumenti che cui diventa proprietaria quando viene reso inattivo.|  
-|Pagine delle opzioni di controllo del codice sorgente specifico del VSPackage|La chiave del Registro di sistema HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts consente a un pacchetto VSPackage di impostare i contesti in cui sono necessarie relative pagine di opzioni da visualizzare. Una voce del Registro di sistema sotto questa chiave dovrà essere creato usando il servizio di ID (SID) del servizio di controllo di origine e assegnarle un valore DWORD pari a 1. Ogni volta che l'interfaccia utente si verifica un evento nel contesto di un pacchetto VSPackage è registrato con il controllo del codice sorgente, verrà chiamato il pacchetto VSPackage se è attiva.|  
+|Menu e barre degli strumenti|Il pacchetto del controllo del codice sorgente deve impostare gli Stati di visibilità del menu iniziale e della barra degli strumenti sull'ID del pacchetto del controllo del codice sorgente nella sezione [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) del file. vsct. Ciò consente all' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE di impostare lo stato delle voci di menu in modo appropriato senza caricare il pacchetto VSPackage e chiamare un'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo.|  
+|Finestre degli strumenti|Il pacchetto VSPackage del controllo del codice sorgente nasconde tutte le finestre degli strumenti di cui è proprietario quando viene reso inattivo.|  
+|Pagine di opzioni specifiche del pacchetto VSPackage del controllo del codice sorgente|La chiave del registro di sistema HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts consente a un VSPackage di impostare i contesti in cui sono necessarie le pagine di opzioni da visualizzare. Una voce del registro di sistema sotto questa chiave deve essere creata usando l'ID del servizio (SID) del servizio di controllo del codice sorgente e assegnando a tale voce un valore DWORD pari a 1. Ogni volta che si verifica un evento dell'interfaccia utente in un contesto in cui è registrato il pacchetto VSPackage del controllo del codice sorgente, il pacchetto VSPackage verrà chiamato se è attivo.|  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>   

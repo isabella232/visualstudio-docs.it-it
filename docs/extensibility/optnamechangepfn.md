@@ -1,5 +1,5 @@
 ---
-title: METODO OPTNAMECHANGEPFN . Documenti Microsoft
+title: OPTNAMECHANGEPFN | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702242"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-Si tratta di una funzione di callback specificata in `SCC_OPT_NAMECHANGEPFN`una chiamata a [SccSetOption](../extensibility/sccsetoption-function.md) (utilizzando l'opzione ) e viene utilizzata per comunicare all'IDE le modifiche apportate al nome apportate dal plug-in del controllo del codice sorgente.
+Si tratta di una funzione di callback specificata in una chiamata a [SccSetOption](../extensibility/sccsetoption-function.md) (opzione using `SCC_OPT_NAMECHANGEPFN` ) e viene usata per comunicare le modifiche del nome apportate dal plug-in del controllo del codice sorgente all'IDE.
 
 ## <a name="signature"></a>Firma
 
@@ -33,17 +33,17 @@ typedef void (*OPTNAMECHANGEPFN)(
 ```
 
 ## <a name="parameters"></a>Parametri
- pvCallerData (informazioni in fibra con i dati)
+ pvCallerData
 
-[in] Valore utente specificato in una precedente chiamata a `SCC_OPT_USERDATA` [SccSetOption](../extensibility/sccsetoption-function.md) (utilizzando l'opzione ).
+in Valore utente specificato in una chiamata precedente a [SccSetOption](../extensibility/sccsetoption-function.md) (opzione using `SCC_OPT_USERDATA` ).
 
- pszOldName (nome spzOldName)
+ pszOldName
 
-[in] Nome originale del file.
+in Nome originale del file.
 
- pszNewName (nome di dominio spzNewName)
+ pszNewName
 
-[in] Nome con cui è stato rinominato il file.
+in Nome in cui il file è stato rinominato.
 
 ## <a name="return-value"></a>Valore restituito
  No.
@@ -51,8 +51,8 @@ typedef void (*OPTNAMECHANGEPFN)(
 ## <a name="remarks"></a>Osservazioni
  Se un file viene rinominato durante un'operazione del controllo del codice sorgente, il plug-in del controllo del codice sorgente può notificare all'IDE la modifica del nome tramite questo callback.
 
- Se l'IDE non supporta questo callback, non chiamerà [sccSetOption](../extensibility/sccsetoption-function.md) per specificarlo. Se il plug-in non supporta questo `SCC_E_OPNOTSUPPORTED` callback, `SccSetOption` restituirà dalla funzione quando l'IDE tenta di impostare il callback.
+ Se l'IDE non supporta questo callback, non chiamerà [SccSetOption](../extensibility/sccsetoption-function.md) per specificarlo. Se il plug-in non supporta questo callback, viene restituito `SCC_E_OPNOTSUPPORTED` dalla `SccSetOption` funzione quando l'IDE tenta di impostare il callback.
 
 ## <a name="see-also"></a>Vedere anche
-- [Callback functions implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

@@ -8,10 +8,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155276"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Strumenti di Visual Studio per Apache Cordova
@@ -31,4 +31,4 @@ Compilare app eseguite in dispositivi iOS, Android e Windows e condividere quasi
   
 Se si stanno valutando questi strumenti, ma non si è ancora pronti a provarli, visitare la pagina delle [funzionalità](https://www.visualstudio.com/explore/cordova-vs) per altre informazioni.  
   
-Se si è pronti per iniziare, vedere [sviluppo di applicazioni per dispositivi mobili con JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).
+Se si è pronti per iniziare, vedere [sviluppo per dispositivi mobili con JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).

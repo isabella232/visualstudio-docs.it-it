@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015066"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Creare definizioni di sito per SharePoint
@@ -45,7 +46,7 @@ ms.locfileid: "86015066"
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Procedura dettagliata: Creare un progetto di definizione di sito di base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Guida dettagliata alla creazione di un progetto di definizione di sito di base in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
+|[Procedura dettagliata: creare un progetto di definizione di sito di base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Guida dettagliata alla creazione di un progetto di definizione di sito di base in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Procedura: creare una definizione di sito e una configurazione personalizzati](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|Viene descritto come creare una definizione di sito personalizzata in SharePoint copiando una definizione di sito esistente e quindi modificando la copia.|
 |[*WebTemp.xml*](/previous-versions/office/developer/sharepoint-2010/ms447717(v=office.14))|Descrive il file originale che specifica le definizioni dei siti disponibili nella sezione **Selezione modello** della pagina **nuovo sito di SharePoint** .|
 |[Localizzare le soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Viene descritto come preparare le soluzioni SharePoint per l'utilizzo globale.|

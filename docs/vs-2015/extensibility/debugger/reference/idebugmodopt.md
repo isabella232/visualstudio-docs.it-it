@@ -11,10 +11,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 66f499225d2b319f3678c88894a1217d90b10135
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162515"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
@@ -29,18 +29,18 @@ IDebugModOpt : IUnknown
 ```  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Ottenuto da un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che rappresenta una classe o metodo.  
+ Ottenuta da un oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta una classe o un metodo.  
   
 ## <a name="methods"></a>Metodi  
  Questa interfaccia implementa il metodo seguente:  
   
-|Metodo|DESCRIZIONE|  
+|Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Recupera un elenco di modificatori facoltativi.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

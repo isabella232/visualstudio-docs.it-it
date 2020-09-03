@@ -1,5 +1,5 @@
 ---
-title: Elemento ProjectTemplateLink (modelli di Visual Studio) Documenti Microsoft
+title: Elemento ProjectTemplateLink (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e6d402b6605f2e01a20d400c2c33573c686a1cdd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701814"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelli di Visual Studio)
-Specifica il percorso del file *.vstemplate* di un progetto in un modello multiprogetto.
+Specifica il percorso del file con *estensione vstemplate* di un progetto in un modello multiprogetto.
 
- \<VSTemplate \<> \<TemplateContent> \<ProjectCollection> ProjectTemplateLink> \<-or- VSTemplate> \<TemplateContent> \<ProjectCollection> \<SolutionFolder> \<ProjectTemplateLink>
+ \<VSTemplate> \<TemplateContent>
+ \<ProjectCollection>
+ \<ProjectTemplateLink>
+o \<VSTemplate>
+ \<TemplateContent>
+ \<ProjectCollection>
+ \<SolutionFolder>
+ \<ProjectTemplateLink>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,15 +44,15 @@ Specifica il percorso del file *.vstemplate* di un progetto in un modello multip
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`ProjectName`|Attributo facoltativo.<br /><br /> Specifica il nome di ogni singolo progetto in un modello multiprogetto. La finestra di dialogo **Nuovo progetto** non può assegnare nomi ai singoli progetti.|
-|`CopyParameters`|Consente la copia di tutte le variabili nel modello del gruppo centrale in ognuno dei modelli collegati.<br /><br /> I parametri nei modelli collegati dispongono del prefisso `"$ext_*$"`. Ad esempio, se nel modello `$projectname$` di gruppo padre il parametro ha un valore **ExampleProject1**, quando `$ext_projectname$`il modello collegato `$projectname$` ottiene il turno per essere eseguito, acquisisce un parametro , che è una copia del parametro dal modello del gruppo padre.<br /><br /> In questo modo i modelli collegati possono condividere alcuni parametri comuni, che possono essere facilmente creati solo nel modello del gruppo padre.<br /><br /> Questo attributo è facoltativo ed è automaticamente impostato su `false` quando non è incluso.<br /><br /> Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione corretta del prodotto, vedere Assembly di [riferimento forniti in Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|
+|`ProjectName`|Attributo facoltativo.<br /><br /> Specifica il nome di ogni singolo progetto in un modello multiprogetto. La finestra di dialogo **nuovo progetto** non può assegnare nomi ai singoli progetti.|
+|`CopyParameters`|Consente la copia di tutte le variabili nel modello del gruppo centrale in ognuno dei modelli collegati.<br /><br /> I parametri nei modelli collegati dispongono del prefisso `"$ext_*$"`. Se, ad esempio, nel modello del gruppo padre il parametro `$projectname$` ha un valore **ExampleProject1**, quando il modello collegato viene trasformato in modo da essere eseguito, acquisisce un parametro `$ext_projectname$` , che è una copia del `$projectname$` parametro dal modello del gruppo padre.<br /><br /> In questo modo i modelli collegati possono condividere alcuni parametri comuni, che possono essere facilmente creati solo nel modello del gruppo padre.<br /><br /> Questo attributo è facoltativo ed è automaticamente impostato su `false` quando non è incluso.<br /><br /> Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione del prodotto corretta, vedere [assembly di riferimento recapitati in Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -57,13 +64,13 @@ Specifica il percorso del file *.vstemplate* di un progetto in un modello multip
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Questo testo specifica il percorso del file *.vstemplate* del modello.
+ Questo testo specifica il percorso del file con *estensione vstemplate* del modello.
 
 ## <a name="remarks"></a>Osservazioni
- I modelli multiprogetto fungono da contenitori per due o più progetti. L'elemento `ProjectTemplateLink` viene utilizzato per specificare il percorso del file *.vstemplate* per uno dei progetti nel modello. Il file *.vstemplate* di un modello `ProjectTemplateLink` multiprogetto contiene un elemento per ogni progetto nel modello. Per ulteriori informazioni sui modelli multiprogetto, vedere [Procedura: creare modelli multiprogetto](../ide/how-to-create-multi-project-templates.md).
+ I modelli multiprogetto fungono da contenitori per due o più progetti. L' `ProjectTemplateLink` elemento viene utilizzato per specificare il percorso del file con *estensione vstemplate* per uno dei progetti nel modello. Il file con *estensione vstemplate* di un modello per più progetti contiene un `ProjectTemplateLink` elemento per ogni progetto nel modello. Per altre informazioni sui modelli multiprogetto, vedere [procedura: creare modelli](../ide/how-to-create-multi-project-templates.md)per più progetti.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene illustrato un semplice file *.vstemplate .vstemplate* radice multiprogetto. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` nell'elemento `ProjectTemplateLink` imposta il nome per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] da assegnare a questo progetto. Se `ProjectName` l'attributo non esiste, il nome del file *.vstemplate* viene utilizzato come nome del progetto.
+ Questo esempio illustra un semplice file con *estensione vstemplate* radice multiprogetto. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` nell'elemento `ProjectTemplateLink` imposta il nome per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] da assegnare a questo progetto. Se l' `ProjectName` attributo non esiste, il nome del file con *estensione vstemplate* viene utilizzato come nome del progetto.
 
 ```
 <VSTemplate Version="3.0.0" Type="ProjectGroup"
@@ -88,6 +95,6 @@ Specifica il percorso del file *.vstemplate* di un progetto in un modello multip
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Procedura: creare modelli multiprogettoHow to: Create multi-project templates](../ide/how-to-create-multi-project-templates.md)
+- [Procedura: creare modelli per più progetti](../ide/how-to-create-multi-project-templates.md)

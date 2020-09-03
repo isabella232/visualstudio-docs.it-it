@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 . Documenti Microsoft
+title: 'IDebugCoreServer2:: GetMachineUtilities_V7 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 79eba6889583f1dfa482dab107ad31eaaacdbcc2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733146"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
-Questo metodo ottiene le utilità della macchina per un server.
+Questo metodo ottiene le utilità del computer per un server.
 
 > [!NOTE]
-> Questo metodo è obsoleto:[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] non `E_NOTIMPL` utilizzare ( restituisce sempre se questo metodo viene chiamato). Viene mantenuto per motivi storici.
+> Questo metodo è obsoleto: non usare ( [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] restituisce sempre `E_NOTIMPL` se questo metodo viene chiamato). Viene mantenuto per motivi cronologici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,13 +44,13 @@ int GetMachineUtilities_V7(
 
 ## <a name="parameters"></a>Parametri
 `ppUtil`\
-[fuori] Restituisce `IDebugMDMUtil2_V7` un'interfaccia che rappresenta le informazioni sulle utilità della macchina.
+out Restituisce un' `IDebugMDMUtil2_V7` interfaccia che rappresenta le informazioni sulle utilità del computer.
 
 ## <a name="return-value"></a>Valore restituito
- Restituisce `E_NOTIMPL`sempre , a indicare che il metodo non è implementato.
+ Restituisce sempre `E_NOTIMPL` , che indica che il metodo non è implementato.
 
 ## <a name="remarks"></a>Osservazioni
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]restituisce `E_NOTIMPL` sempre se viene chiamato questo metodo.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] restituisce sempre `E_NOTIMPL` se questo metodo viene chiamato.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

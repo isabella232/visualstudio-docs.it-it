@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfdbbf0f585ea02bfdb32f47728ab0cd26e9af3e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250673"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
@@ -31,7 +31,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 </Target>
 ```
 
- Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio,
+ Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio:
 
 ```xml
 <Target Name="AfterBuild" >
@@ -68,7 +68,7 @@ Per informazioni dettagliate e altre informazioni sull'ordine di compilazione di
 
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione
 
-Un elemento di destinazione può avere un `Outputs` attributo che specifica i metadati nel formato%( \<Metadata> ). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio,
+Un elemento di destinazione può avere un `Outputs` attributo che specifica i metadati nel formato%( \<Metadata> ). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio:
 
 ```xml
 <ItemGroup>

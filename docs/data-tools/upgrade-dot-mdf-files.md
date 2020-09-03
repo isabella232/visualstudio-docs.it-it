@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281123"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
@@ -61,7 +61,7 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
 2. Nella finestra di dialogo **Aggiungi connessione** specificare le informazioni seguenti:
 
-    - **Origine dati**:`Microsoft SQL Server (SqlClient)`
+    - **Origine dati**: `Microsoft SQL Server (SqlClient)`
 
     - **Nome server**:
 
@@ -101,7 +101,7 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Per rendere SQL Server Express il motore di database predefinito
 
-1. Nella barra dei menu selezionare **strumenti**  >  **Opzioni**.
+1. Nella barra dei menu selezionare **Strumenti** > **Opzioni**.
 
 2. Nella finestra di dialogo **Opzioni** espandere le opzioni **strumenti di database** , quindi selezionare **connessioni dati**.
 
@@ -111,6 +111,6 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
     SQL Server Express sarà il motore di database predefinito per le applicazioni.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Accesso ai dati in Visual Studio](accessing-data-in-visual-studio.md)
