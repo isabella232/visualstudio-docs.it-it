@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd2e8a41ef4b9708df079e94bcac8b8c06189116
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536110"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>Tipo di carattere ambiente
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Tipo di carattere ambiente
  Tutti i tipi di carattere in Visual Studio devono essere esposti all'utente per la personalizzazione. Questa operazione viene eseguita principalmente tramite la pagina **tipi di carattere e colori** della finestra di dialogo **strumenti > opzioni** . Le tre categorie principali di impostazioni del tipo di carattere sono:
 
 - **Tipo di carattere ambiente** : il tipo di carattere principale per l'IDE (Integrated Development Environment), usato per tutti gli elementi dell'interfaccia, inclusi i dialoghi, i menu, le finestre degli strumenti e le finestre dei documenti. Per impostazione predefinita, il tipo di carattere dell'ambiente è associato a un tipo di carattere di sistema che viene visualizzato come 9 PT Segoe UI nelle versioni correnti di Windows. L'uso di un tipo di carattere per tutti gli elementi dell'interfaccia consente di garantire un aspetto coerente del tipo di carattere nell'IDE.
@@ -32,7 +32,7 @@ ms.locfileid: "85536110"
 
 1. Per il testo del codice nell'editor, ridimensionare con l'impostazione del tipo di carattere del testo del codice e rispondere al livello di zoom del testo dell'editor.
 
-2. Tutti gli altri elementi dell'interfaccia devono essere associati all'impostazione del tipo di carattere ambiente e rispondere alle eventuali modifiche globali nell'ambiente. Questo include (ma non è limitato a):
+2. Tutti gli altri elementi dell'interfaccia devono essere associati all'impostazione del tipo di carattere ambiente e rispondere alle eventuali modifiche globali nell'ambiente. includendo tra l'altro:
 
     - Testo nei menu di scelta rapida
 
@@ -69,7 +69,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  Sostituire `Microsoft.VisualStudio.Shell.11.0` con la versione corrente della DLL di MPF.
 
- Per visualizzare la finestra di dialogo, chiamare " `ShowModal()` " sulla classe `ShowDialog()` . `ShowModal()`imposta lo stato modale corretto nella shell, assicura che la finestra di dialogo sia centrata nella finestra padre e così via.
+ Per visualizzare la finestra di dialogo, chiamare " `ShowModal()` " sulla classe `ShowDialog()` . `ShowModal()` imposta lo stato modale corretto nella shell, assicura che la finestra di dialogo sia centrata nella finestra padre e così via.
 
  Il codice è indicato di seguito:
 
@@ -78,7 +78,7 @@ MyWindow window = new MyWindow();
 window.ShowModal()
 ```
 
- `ShowModal`Restituisce un valore bool? (valore booleano nullable) con `DialogResult` , che può essere usato se necessario. Il valore restituito è true se la finestra di dialogo è stata chiusa con **OK**.
+ `ShowModal` Restituisce un valore bool? (valore booleano nullable) con `DialogResult` , che può essere usato se necessario. Il valore restituito è true se la finestra di dialogo è stata chiusa con **OK**.
 
  Se è necessario visualizzare un'interfaccia utente di WPF che non è una finestra di dialogo e che è ospitata in modo autonomo `HwndSource` , ad esempio una finestra popup o una finestra figlio WPF di una finestra padre Win32/WinForms, sarà necessario impostare `FontFamily` e `FontSize` sull'elemento radice dell'elemento WPF. La shell imposta le proprietà nella finestra principale, ma non verranno ereditate dopo `HWND` . La shell fornisce le risorse a cui è possibile associare le proprietà, come indicato di seguito:
 
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Guida di riferimento alla formattazione (ridimensionamento/grassetto)
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a> Guida di riferimento alla formattazione (ridimensionamento/grassetto)
  Alcune finestre di dialogo richiedono un testo particolare in grassetto o una dimensione diversa dal tipo di carattere ambiente. In precedenza, i caratteri più grandi del tipo di carattere dell'ambiente venivano codificati come " `environment font +2` " o simili. L'uso dei frammenti di codice forniti supporterà i monitoraggi con valori DPI alti e assicurerà che il testo visualizzato venga sempre visualizzato con le dimensioni e il peso corretti (ad esempio, Light o Semilight).
 
 > [!NOTE]
@@ -301,7 +301,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Per reimpostare il tipo di carattere, fare clic su "Usa impostazioni predefinite" in **strumenti > opzioni > ambiente > tipi di carattere e colori**.
 
-## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Stile testo
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a> Stile testo
  Lo stile del testo si riferisce a dimensioni, peso e maiuscole e minuscole. Per informazioni aggiuntive sull'implementazione, vedere [il tipo di carattere ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Maiuscole/minuscole testo
@@ -324,7 +324,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Pulsanti|Barre di stato|
 |Etichette di tabella||
 |Intestazioni di colonna||
-|Descrizioni comandi||
+|Descrizioni comando||
 
 ##### <a name="title-case"></a>Iniziali maiuscole
  Il titolo è uno stile in cui le prime lettere della maggior parte o di tutte le parole all'interno di una frase sono maiuscole. In Visual Studio, case del titolo viene usato per molti elementi, tra cui:
@@ -389,7 +389,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>Corsivo
  Visual Studio non usa il testo in corsivo o in grassetto.
 
-#### <a name="color"></a>Colore
+#### <a name="color"></a>Color
 
 - Il blu è riservato per i collegamenti ipertestuali (navigazione e comando) e non deve mai essere usato per l'orientamento.
 

@@ -9,16 +9,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544794"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Immagini e icone per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Uso delle immagini in Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Uso delle immagini in Visual Studio
  Prima di creare grafica, provare a usare le immagini 1000 + nella [libreria di immagini di Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Tipi di immagini
@@ -35,7 +35,7 @@ ms.locfileid: "85544794"
 
 - **Cursori.** Utilizzato per indicare se un'operazione è consentita utilizzando il mouse, in cui un oggetto può essere eliminato e così via.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Progettazione dell'icona
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Progettazione dell'icona
 
 ### <a name="overview"></a>Panoramica
  Visual Studio USA icone in stile moderno, con geometria pulita e un saldo 50/50 positivo/negativo (chiaro/scuro) e usa metafore dirette e comprensibili. Icona cruciale punti di progettazione Centra intorno a chiarezza, semplificazione e contesto.
@@ -269,7 +269,7 @@ ms.locfileid: "85544794"
 
  Per altre informazioni sull'uso del colore nelle icone di Visual Studio, vedere [uso dei colori nelle immagini](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Uso del colore nelle immagini
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Uso del colore nelle immagini
 
 ### <a name="overview"></a>Panoramica
  Le icone in Visual Studio sono principalmente monocromatiche. Il colore è riservato per fornire informazioni specifiche e mai per la decorazione. Viene usato il colore:
@@ -295,11 +295,11 @@ ms.locfileid: "85544794"
 ### <a name="base-palette"></a>Tavolozza di base
  Tutte le icone standard contengono tre colori di base. Le icone non contengono gradienti o ombreggiatura, con una o due eccezioni per le icone degli strumenti 3D.
 
-|Utilizzo|Name|Valore (tema chiaro)|Campione|Esempio|
+|Utilizzo|Nome|Valore (tema chiaro)|Campione|Esempio|
 |-----------|----------|---------------------------|------------|-------------|
 |Sfondo/scuro|VS BG|424242/66, 66, 66|![Campione 424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405_424242")|![Esempio di tavolozza di base](../../extensibility/ux-guidelines/media/0405-02-basepaletteexample.png "0405-02_BasePaletteExample")|
 |Primo piano/chiaro|VS FG|F0EFF1/240.239.241|![Campione F0EFF1](../../extensibility/ux-guidelines/media/0405-f0eff1.png "0405_F0EFF1")||
-|Bordo|Visual Studio|F6F6F6/246.246.246|![Campione F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")||
+|Riquadro|Visual Studio|F6F6F6/246.246.246|![Campione F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")||
 
  Oltre ai colori di base, ogni icona può contenere un colore aggiuntivo dalla tavolozza estesa.
 
@@ -308,10 +308,10 @@ ms.locfileid: "85544794"
 #### <a name="action-modifiers"></a>Modificatori di azione
  I quattro colori seguenti indicano i tipi di azioni richiesti dai modificatori di azione:
 
-|Utilizzo|Name|Valore (tutti i temi)|Campione|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
-|Positive|Verde azione VS|388A34/56138, 52|![Campione 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
-|Negative|Rosso azione VS|A1260D/161, 38, 13|![Campione A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
+|Positivo|Verde azione VS|388A34/56138, 52|![Campione 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
+|Negativo|Rosso azione VS|A1260D/161, 38, 13|![Campione A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
 |Neutralità|Blu azione VS|00539C/0, 83156|![Campione 00539C](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
 |Crea/nuovo|Arancio azione VS|C27D1A/194156, 26|![Campione C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 
@@ -343,21 +343,21 @@ ms.locfileid: "85544794"
 #### <a name="special-cases"></a>Casi speciali
  In casi speciali, un modificatore di azione colorato può essere usato in modo indipendente come icona autonoma. Il colore utilizzato per l'icona riflette le azioni a cui è associata l'icona. Questo utilizzo è limitato a un piccolo subset di icone, tra cui:
 
-|Esegui|Arresto|Delete|Salvare|Esplora indietro|
+|Esegui|Arresto|Delete|Salva|Esplora indietro|
 |-|-|-|-|-|
 |![Icona Esegui](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![Icona Arresta](../../extensibility/ux-guidelines/media/0405-19-stop.png "0405-19_Stop")|![Icona Elimina](../../extensibility/ux-guidelines/media/0405-20-delete.png "0405-20_Delete")|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21-save.png "0405-21_Save")|![Icona Esplora indietro](../../extensibility/ux-guidelines/media/0405-22-navigateback.png "0405-22_NavigateBack")|
 ### <a name="code-hierarchy-palette"></a>Tavolozza gerarchia del codice
 
 #### <a name="folder"></a>Cartella
 
-|Utilizzo|Name|Valore (tutti i temi)|Campione|Esempio|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|Esempio|
 |-----------|----------|--------------------------|------------|-------------|
 |Cartelle|Cartella|DCB67A/220.182.122|![Campione DCB67A](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![Icona del colore della cartella](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Linguaggi di Visual Studio
  A ogni linguaggio o piattaforma comune disponibile in Visual Studio è associato un colore. Questi colori vengono utilizzati sull'icona di base o sui modificatori di linguaggio visualizzati nell'angolo superiore destro delle icone composte.
 
-|Utilizzo|Name|Valore (tutti i temi)|Campione|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP.NET HTML WPF blu|0095D7/0149.215|![Campione 0095D7](../../extensibility/ux-guidelines/media/0405-0096d7.png "0405_0096D7")|
 |C++|CPP viola|9B4F96/155, 79150|![Campione 9B4F96](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
@@ -382,7 +382,7 @@ ms.locfileid: "85544794"
 #### <a name="intellisense"></a>IntelliSense
  Le icone IntelliSense usano una tavolozza dei colori esclusiva. Questi colori vengono usati per aiutare gli utenti a distinguere rapidamente tra i diversi elementi nell'elenco popup di IntelliSense.
 
-|Utilizzo|Name|Valore (tutti i temi)|Campione|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Classe, evento|Arancio azione VS|C27D1A/194125, 26|![Campione C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 |Metodo di estensione, metodo, modulo, delegato|Viola azione VS|652D90/101, 45144|![Campione 652D90](../../extensibility/ux-guidelines/media/0405-652d90.png "0405_652D90")|
@@ -404,7 +404,7 @@ ms.locfileid: "85544794"
 ### <a name="notifications"></a>Notifiche
  Le notifiche in Visual Studio vengono usate per indicare lo stato. La tavolozza delle notifiche usa i quattro colori seguenti, nonché le opzioni di riempimento in primo piano nero o bianco, per definire le notifiche con i livelli di stato seguenti.
 
-|Utilizzo|Name|Valore (tutti i temi)|Campione|
+|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Stato: neutro|Notifica blu (VS blu)|1BA1E2/27.161.226|![Campione 1BA1E2](../../extensibility/ux-guidelines/media/0405-1ba1e2.png "0405_1BA1E2")|
 |Stato: positivo|Verde delle notifiche (VS verde)|339933/51153, 51|![Campione 339933](../../extensibility/ux-guidelines/media/0405-339933.png "0405_339933")|
@@ -422,19 +422,19 @@ ms.locfileid: "85544794"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  In generale, Visual Studio online è costituito da funzionalità ospitate in un browser. Il colore varia in ambienti diversi, ma lo stile rimane invariato.
 
-|Gruppo|Utilizzo|Name|Valore (tutti i temi)|Campione|
+|Group|Utilizzo|Nome|Valore (tutti i temi)|Campione|
 |-----------|-----------|----------|--------------------------|------------|
-|TFS|Background|TFSO BG|656565/101, 101, 101|![Campione 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
-|TFS|Bordo|TFSO|FFFFFF/255, 255, 255|![Campione FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|Napa|Background|bianco|FFFFFF/255, 255, 255|![Campione FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|Monaco|Background|bianco|FFFFFF/255, 255, 255|![Campione FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
-|F12|Background|bianco|FFFFFF/255, 255, 255|![Campione FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|TFS|Sfondo|TFSO BG|656565/101, 101, 101|![Campione 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
+|TFS|Riquadro|TFSO|FFFFFF/255, 255, 255|![Campione FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|Napa|Sfondo|White|FFFFFF/255, 255, 255|![Campione FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|Monaco|Sfondo|White|FFFFFF/255, 255, 255|![Campione FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
+|F12|Sfondo|White|FFFFFF/255, 255, 255|![Campione FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|Normale|Grey_Primary F12|555555/85, 85, 85|![Campione 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
 |F12|Passaggio del mouse|Blue_Hover F12|2279BF/34.121.191|![Campione 2279BF](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|Disabled|LtGrey_Disabled F12|ABABAC/171.171.172|![Campione ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|F12|Disattiva|LtGrey_Disabled F12|ABABAC/171.171.172|![Campione ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|Sfondo del passaggio del mouse|Passaggio del mouse su BG|D9EBF7/217.235.247|![Campione D9EBF7](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|Sfondo premuto|Premuto BG|B2D7F0/178.215.240|![Campione B2D7F0](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
-|F12|Bordo|VISUAL STUDIO|F6F6F6/246.246.246|![Campione F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
+|F12|Riquadro|VISUAL STUDIO|F6F6F6/246.246.246|![Campione F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
 |F12|Informazioni|Informazioni|00BCF2/0188.242|![Campione 00BCF2](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
 |F12|Avviso|Avviso|F28300/242131, 0|![Campione F28300](../../extensibility/ux-guidelines/media/0405-f28300.png "0405_F28300")|
 |F12|Errore/negativo|Error_Negative|E81123/232, 17, 35|![Campione E81123](../../extensibility/ux-guidelines/media/0405-e81123.png "0405_E81123")|

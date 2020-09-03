@@ -12,10 +12,10 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672131"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
@@ -23,11 +23,11 @@ ms.locfileid: "72672131"
 
 In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia utente per il test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente.
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
-  Quando si crea un nuovo test codificato dell'interfaccia utente, per impostazione predefinita il Framework di test di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera il codice per il test in una classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Per altre informazioni sulla registrazione di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).
+  Quando si crea un nuovo test codificato dell'interfaccia utente, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per impostazione predefinita il Framework di test genera il codice per il test in una classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Per altre informazioni sulla registrazione di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).
 
   Il codice generato per la mappa dell'interfaccia utente contiene una classe per ogni oggetto con cui il test interagisce. Per ogni metodo generato, viene generata una classe complementare per i parametri del metodo appositamente per quel metodo. Se l'applicazione contiene un numero elevato di oggetti, pagine, moduli e controlli, la mappa dell'interfaccia utente può raggiungere dimensioni significative. Inoltre, se più persone stanno operando sui test, l'applicazione può diventare difficile da gestire se è presente un solo file di mappa dell'interfaccia utente di grandi dimensioni.
 
@@ -50,13 +50,13 @@ In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia 
 
 #### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Per aggiungere una mappa dell'interfaccia utente al progetto di test codificato dell'interfaccia utente
 
-1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file del progetto di test codificato dell'interfaccia utente, scegliere **Aggiungi** e quindi **Nuova cartella** per creare una cartella nel progetto di test codificato dell'interfaccia utente in cui archiviare tutte le mappe dell'interfaccia utente. Ad esempio, la cartella potrebbe essere denominata `UIMaps`.
+1. In **Esplora soluzioni**, per creare una cartella nel progetto di test codificato dell'interfaccia utente per archiviare tutte le mappe dell'interfaccia utente, fare clic con il pulsante destro del mouse sul file di progetto di test codificato dell'interfaccia utente, scegliere **Aggiungi** e quindi **nuova cartella**. Ad esempio, la cartella potrebbe essere denominata `UIMaps`.
 
     La nuova cartella verrà visualizzata sotto il progetto di test codificato dell'interfaccia utente.
 
 2. Fare clic con il pulsante destro del sulla cartella `UIMaps`, scegliere **Aggiungi** e quindi **Nuovo elemento**.
 
-    Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
+    La finestra di dialogo **Aggiungi nuovo elemento** viene visualizzata.
 
    > [!NOTE]
    > È necessario essere all'interno di un progetto di test codificato dell'interfaccia utente per aggiungere una nuova mappa di test codificati dell'interfaccia utente.

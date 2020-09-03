@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173603"
 ---
 # <a name="author-vsct-files"></a>Crea file con estensione vsct
@@ -229,7 +229,7 @@ Questo documento illustra come creare un file con *estensione vsct* per aggiunge
 
    Alcuni tipi di menu e pulsanti includono comportamenti specializzati. Nell'elenco seguente vengono descritti alcuni tipi di menu e pulsanti specializzati. Per gli altri tipi, vedere le `types` descrizioni degli attributi nel [menu](../../extensibility/menu-element.md), nel [pulsante](../../extensibility/button-element.md)e negli elementi [combinati](../../extensibility/combo-element.md) .
 
-   - Casella combinata: una casella combinata è un elenco a discesa che può essere usato su una barra degli strumenti. Per aggiungere caselle combinate all'interfaccia utente, creare un elemento [combos](../../extensibility/combos-element.md) nell' `Commands` elemento. Aggiungere quindi all' `Combos` elemento un `Combo` elemento per ogni casella combinata da aggiungere. `Combo`gli elementi hanno gli stessi attributi e figli degli `Button` elementi e hanno `DefaultWidth` anche `idCommandList` attributi e. L' `DefaultWidth` attributo imposta la larghezza in pixel e l' `idCommandList` attributo punta a un ID di comando utilizzato per popolare la casella combinata.
+   - Casella combinata: una casella combinata è un elenco a discesa che può essere usato su una barra degli strumenti. Per aggiungere caselle combinate all'interfaccia utente, creare un elemento [combos](../../extensibility/combos-element.md) nell' `Commands` elemento. Aggiungere quindi all' `Combos` elemento un `Combo` elemento per ogni casella combinata da aggiungere. `Combo` gli elementi hanno gli stessi attributi e figli degli `Button` elementi e hanno `DefaultWidth` anche `idCommandList` attributi e. L' `DefaultWidth` attributo imposta la larghezza in pixel e l' `idCommandList` attributo punta a un ID di comando utilizzato per popolare la casella combinata.
 
    - Controller menu: un controller di menu è un pulsante con una freccia accanto. Facendo clic sulla freccia si apre un elenco. Per aggiungere un controller di menu all'interfaccia utente, creare un `Menu` elemento e impostare il relativo `type` attributo su `MenuController` o `MenuControllerLatched` , a seconda del comportamento desiderato. Per popolare un controller di menu, impostarlo come padre di un `Group` elemento. Il controller di menu visualizzerà tutti gli elementi figlio del gruppo nell'elenco a discesa.
 

@@ -1,5 +1,5 @@
 ---
-title: Elemento nascosto (modelli di Visual Studio) . Documenti Microsoft
+title: Elemento Hidden (modelli di Visual Studio) | Microsoft Docs
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711115"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Elemento nascosto (modelli di Visual Studio)Hidden element (Visual Studio templates)
+# <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelli di Visual Studio)
 
-Specifica se il modello viene visualizzato nelle finestre di dialogo Nuovo progetto o **Aggiungi nuovo elemento.**
+Specifica se il modello viene visualizzato nelle finestre di dialogo nuovo progetto o **Aggiungi nuovo elemento** .
 
 ```xml
 <VSTemplate>
@@ -43,11 +43,11 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 ### <a name="attributes"></a>Attributi
 
-No.
+Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-No.
+Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -59,17 +59,17 @@ No.
 
 È necessario specificare un valore di testo.
 
-Il testo deve `true` `false`essere o , che indica se il modello verrà visualizzato o meno nelle finestre di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento.**
+Il testo deve essere `true` o `false` , che indica se il modello verrà visualizzato nelle finestre di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .
 
 ## <a name="remarks"></a>Osservazioni
 
 `Hidden` è un elemento facoltativo.
 
-Se specificato, non sono `TemplateData` necessari altri elementi figlio dell'elemento.
+Se specificato, non sono necessari altri elementi figlio dell' `TemplateData` elemento.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono illustrati i metadati per un modello di C.
+Nell'esempio seguente vengono illustrati i metadati per un modello C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ Nell'esempio seguente vengono illustrati i metadati per un modello di C.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sullo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
+- [Riferimento allo schema del modello](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

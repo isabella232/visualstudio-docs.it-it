@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 10/23/2018
 ms.openlocfilehash: d488d56bdecd2801ecd94a2551c3be0f9834d0d7
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938670"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio per Mac protetto da un firewall o un server proxy
@@ -53,7 +53,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 
 ### <a name="general"></a>Generale
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Risoluzione degli URL Microsoft |
 | vsstartpage.blob.core.windows.net| 80/443| Dati della pagina iniziale|
@@ -64,7 +64,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 
 ### <a name="identity"></a>Identità
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| Provider di identità|
 | secure.aadcdn.microsoftonline-p.com | 80/443|Provider di identità|
@@ -73,7 +73,7 @@ Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual S
 
 ### <a name="nuget"></a>NuGet
 
-| Dominio | Porta/e|Scopo|
+| Dominio | Porte|Scopo|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|API NuGet|
 | secure.aadcdn.microsoftonline-p.com |80/443| Provider di identità|

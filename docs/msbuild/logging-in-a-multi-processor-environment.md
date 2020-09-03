@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633564"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrazione in un ambiente a più processori
@@ -77,5 +77,5 @@ Un asterisco (*) separa i due nomi di logger nell'opzione `-dl`.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Costruisci logger](../msbuild/build-loggers.md)
+- [Logger di compilazione](../msbuild/build-loggers.md)
 - [Creare logger di inoltro](../msbuild/creating-forwarding-loggers.md)

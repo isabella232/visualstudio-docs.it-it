@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf555a9a4b7c73e4e204bcc42e6b57d3ab96cd01
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419172"
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisiti (finestra di dialogo)
@@ -56,7 +56,7 @@ I componenti dei prerequisiti che sono visualizzati nella finestra di dialogo **
 |**Librerie di runtime di Visual C++ "14" (x64)**|Con questo pacchetto vengono installate le librerie di runtime di Visual C++ per i sistemi operativi x64 che forniscono routine di programmazione per il sistema operativo Microsoft Windows. Queste routine consentono di automatizzare molte attività di programmazione comuni non fornite dai linguaggi C e C++.<br /><br /> Per altyre informazioni, vedere [Riferimenti alla libreria di runtime C](/cpp/c-runtime-library/c-run-time-library-reference).|
 |**Librerie di runtime di Visual C++ "14" (x86)**|Con questo pacchetto vengono installate le librerie di runtime di Visual C++ per i sistemi operativi x86 che forniscono routine di programmazione per il sistema operativo Microsoft Windows. Queste routine consentono di automatizzare molte attività di programmazione comuni non fornite dai linguaggi C e C++.<br /><br /> Per altyre informazioni, vedere [Riferimenti alla libreria di runtime C](/cpp/c-runtime-library/c-run-time-library-reference).|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Pagina Pubblica, Progettazione progetti](../../ide/reference/publish-page-project-designer.md)
 - [Prerequisiti per la distribuzione dell'applicazione](../../deployment/application-deployment-prerequisites.md)

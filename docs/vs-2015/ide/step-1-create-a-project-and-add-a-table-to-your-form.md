@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 05a7f9930dc1619d6f35a6024bd0f754f7caeeb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643508"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: creare un progetto e aggiungere una tabella al form
@@ -52,7 +52,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
    5. Nel menu delle attività scegliere **Aggiungi riga** due volte per aggiungere altre due righe, quindi scegliere **Aggiungi colonna** due volte per aggiungere altre due colonne.
 
-   6. Nel menu delle attività scegliere **Modifica righe e colonne** per aprire la finestra **Stili di riga e colonna**. Scegliere ognuna delle colonne, fare clic sul pulsante di opzione **%** e quindi impostare la larghezza di ogni colonna sul 25% della larghezza totale. Selezionare quindi **Righe** dalla casella a discesa nella parte superiore della finestra e impostare l'altezza di ogni riga su 25%. Al termine, scegliere il pulsante **OK**.
+   6. Nel menu delle attività scegliere **Modifica righe e colonne** per aprire la finestra **Stili di riga e colonna**. Scegliere ognuna delle colonne, fare clic sul pulsante di opzione **%** e quindi impostare la larghezza di ogni colonna sul 25% della larghezza totale. Selezionare quindi **Righe** dalla casella a discesa nella parte superiore della finestra e impostare l'altezza di ogni riga su 25%. Al termine dell'operazione, fare clic su **OK**.
 
       TableLayoutPanel dovrebbe essere ora costituito da una griglia 4x4 con sedici celle quadrate di dimensioni uguali. In queste righe e colonne appariranno in un secondo momento le immagini icona.
 
@@ -90,6 +90,6 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 2: aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 2: aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
-- Per tornare all'argomento introduttivo, vedere [Esercitazione 3: creare un gioco delle coppie](../ide/tutorial-3-create-a-matching-game.md).
+- Per tornare all'argomento introduttivo, vedere [esercitazione 3: creare un gioco di abbinamenti](../ide/tutorial-3-create-a-matching-game.md).

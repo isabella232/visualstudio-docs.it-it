@@ -10,23 +10,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85573309e594fab49db75115a48b5a4e98e44de3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918851"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'API di immutabilità del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK di visualizzazione e modellazione consente a un programma di bloccare parte o tutto un modello DSL (Domain-Specific Language) in modo che possa essere letto ma non modificato. Questa opzione di sola lettura può essere usata, ad esempio, in modo che un utente possa chiedere ai colleghi di annotare ed esaminare un modello DSL, ma non di modificare l'originale.
+L'API di immutabilità dell' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK di visualizzazione e modellazione consente a un programma di bloccare parte o tutto un modello di linguaggio specifico di dominio (DSL), in modo che possa essere letto ma non modificato. Questa opzione di sola lettura può essere usata, ad esempio, in modo che un utente possa chiedere ai colleghi di annotare ed esaminare un modello DSL, ma non di modificare l'originale.
 
  Inoltre, come autore di un linguaggio DSL, è possibile definire un *criterio di blocco.* Un criterio di blocco definisce quali blocchi sono consentiti, non consentiti o obbligatori. Ad esempio, quando si pubblica un linguaggio DSL, è possibile incoraggiare gli sviluppatori di terze parti a estenderlo con nuovi comandi. Tuttavia, è anche possibile usare un criterio di blocco per impedire che modifichi lo stato di sola lettura delle parti specificate del modello.
 
 > [!NOTE]
 > Un criterio di blocco può essere eluso tramite reflection. Fornisce un limite chiaro per gli sviluppatori di terze parti, ma non offre una protezione avanzata.
 
- Ulteriori informazioni sono disponibili nel sito Web dell' [SDK di visualizzazione e modellazione](https://www.microsoft.com/download/details.aspx?id=48148) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Ulteriori informazioni sono disponibili nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sito Web dell' [SDK di visualizzazione e modellazione](https://www.microsoft.com/download/details.aspx?id=48148) .
 
 ## <a name="setting-and-getting-locks"></a>Impostazione e recupero di blocchi
  È possibile impostare blocchi nell'archivio, in una partizione o in un singolo elemento. Questa istruzione, ad esempio, impedisce l'eliminazione di un elemento del modello e impedisce inoltre la modifica delle proprietà:
@@ -38,16 +38,16 @@ element.SetLocks(Locks.Delete | Locks.Property);
 
  È possibile utilizzare altri valori di blocco per impedire modifiche nelle relazioni, creazione di elementi, spostamento tra partizioni e riordinamento di collegamenti in un ruolo.
 
- I blocchi si applicano sia alle azioni utente che al codice programma. Se il codice programma tenta di apportare una modifica, verrà generata un'`InvalidOperationException`. I blocchi vengono ignorati in un'operazione di annullamento o ripetizione.
+ I blocchi si applicano sia alle azioni utente che al codice programma. Se il codice programma tenta di apportare una modifica, `InvalidOperationException` verrà generata un'eccezione. I blocchi vengono ignorati in un'operazione di annullamento o ripetizione.
 
- È possibile scoprire se un elemento ha un blocco in un determinato set usando `IsLocked(Locks)` ed è possibile ottenere il set di blocchi corrente su un elemento usando `GetLocks()`.
+ È possibile individuare se un elemento ha un blocco in un determinato set usando `IsLocked(Locks)` ed è possibile ottenere il set corrente di blocchi su un elemento usando `GetLocks()` .
 
  È possibile impostare un blocco senza utilizzare una transazione. Il database di blocco non fa parte dell'archivio. Se si imposta un blocco in risposta a una modifica di un valore nell'archivio, ad esempio in OnValueChanged, è necessario consentire le modifiche che fanno parte di un'operazione di annullamento.
 
- Questi metodi sono metodi di estensione definiti nello spazio dei nomi <xref:Microsoft.VisualStudio.Modeling.Immutability>.
+ Questi metodi sono metodi di estensione definiti nello <xref:Microsoft.VisualStudio.Modeling.Immutability> spazio dei nomi.
 
 ### <a name="locks-on-partitions-and-stores"></a>Blocchi su partizioni e archivi
- I blocchi possono anche essere applicati alle partizioni e all'archivio. Un blocco impostato in una partizione si applica a tutti gli elementi della partizione. Pertanto, ad esempio, l'istruzione seguente impedisce l'eliminazione di tutti gli elementi di una partizione, indipendentemente dagli Stati dei propri blocchi. Tuttavia, altri blocchi come `Locks.Property` possono comunque essere impostati su singoli elementi:
+ I blocchi possono anche essere applicati alle partizioni e all'archivio. Un blocco impostato in una partizione si applica a tutti gli elementi della partizione. Pertanto, ad esempio, l'istruzione seguente impedisce l'eliminazione di tutti gli elementi di una partizione, indipendentemente dagli Stati dei propri blocchi. Tuttavia, altri blocchi come `Locks.Property` possono comunque essere impostati per i singoli elementi:
 
 ```
 partition.SetLocks(Locks.Delete);
@@ -55,7 +55,7 @@ partition.SetLocks(Locks.Delete);
 
  Un blocco impostato sull'archivio si applica a tutti i relativi elementi, indipendentemente dalle impostazioni di tale blocco sulle partizioni e sugli elementi.
 
-### <a name="using-locks"></a>Utilizzo dei blocchi
+### <a name="using-locks"></a>Utilizzo di blocchi
  È possibile utilizzare i blocchi per implementare schemi come gli esempi seguenti:
 
 - Non consentire le modifiche a tutti gli elementi e le relazioni ad eccezione di quelli che rappresentano commenti. Ciò consente agli utenti di aggiungere annotazioni a un modello senza modificarlo.
@@ -69,7 +69,7 @@ partition.SetLocks(Locks.Delete);
 - Non consente l'aggiunta e l'eliminazione di elementi e relazioni di determinate classi, ma consentono le modifiche alle proprietà. In questo modo gli utenti hanno un formato fisso in cui possono compilare le proprietà.
 
 ## <a name="lock-values"></a>Valori di blocco
- I blocchi possono essere impostati in un archivio, una partizione o un singolo ModelElement. Locks è un'enumerazione `Flags`: è possibile combinare i valori con&#124;''.
+ I blocchi possono essere impostati in un archivio, una partizione o un singolo ModelElement. Locks è un' `Flags` enumerazione: è possibile combinare i valori con ' &#124;'.
 
 - I blocchi di un ModelElement includono sempre i blocchi della relativa partizione.
 
@@ -79,21 +79,21 @@ partition.SetLocks(Locks.Delete);
 
 |Valore|Indica se `IsLocked(Value)` è true|
 |-----------|------------------------------------------|
-|nessuna|Nessuna restrizione.|
-|Gli|Impossibile modificare le proprietà di dominio degli elementi. Questa operazione non si applica alle proprietà generate dal ruolo di una classe di dominio in una relazione.|
-|Aggiunta|Non è possibile creare nuovi elementi e collegamenti in una partizione o in un archivio.<br /><br /> Non applicabile a `ModelElement`.|
-|Move|Non è possibile spostare l'elemento tra partizioni se `element.IsLocked(Move)` è true o se `targetPartition.IsLocked(Move)` è true.|
-|Elimina|Non è possibile eliminare un elemento se questo blocco è impostato sull'elemento stesso o su uno degli elementi a cui l'eliminazione propagherà, ad esempio elementi e forme incorporati.<br /><br /> È possibile utilizzare `element.CanDelete()` per individuare se un elemento può essere eliminato.|
-|Riordina|Non è possibile modificare l'ordine dei collegamenti in un RolePlayer.|
+|Nessuno|Nessuna restrizione.|
+|Proprietà|Impossibile modificare le proprietà di dominio degli elementi. Questa operazione non si applica alle proprietà generate dal ruolo di una classe di dominio in una relazione.|
+|Add|Non è possibile creare nuovi elementi e collegamenti in una partizione o in un archivio.<br /><br /> Non applicabile a `ModelElement` .|
+|Spostamento|Non è possibile spostare l'elemento tra partizioni se `element.IsLocked(Move)` è true o se `targetPartition.IsLocked(Move)` è true.|
+|Delete|Non è possibile eliminare un elemento se questo blocco è impostato sull'elemento stesso o su uno degli elementi a cui l'eliminazione propagherà, ad esempio elementi e forme incorporati.<br /><br /> È possibile utilizzare `element.CanDelete()` per individuare se un elemento può essere eliminato.|
+|Riordinare|Non è possibile modificare l'ordine dei collegamenti in un RolePlayer.|
 |RolePlayer|Il set di collegamenti originati in questo elemento non può essere modificato. Ad esempio, non è possibile incorporare nuovi elementi in questo elemento. Questa operazione non influisce sui collegamenti per i quali questo elemento è la destinazione.<br /><br /> Se questo elemento è un collegamento, l'origine e la destinazione non sono interessate.|
-|Tutte le|OR bit per bit degli altri valori.|
+|Tutti|OR bit per bit degli altri valori.|
 
 ## <a name="locking-policies"></a>Criteri di blocco
- Come autore di un linguaggio DSL, è possibile definire un *criterio di blocco*. Un criterio di blocco modera l'operazione di blocchi (), in modo che sia possibile impedire l'impostazione di blocchi specifici o richiedere l'impostazione di blocchi specifici. In genere, è possibile usare un criterio di blocco per impedire a utenti o sviluppatori di contravvenendo accidentalmente l'uso previsto di un linguaggio DSL, nello stesso modo in cui è possibile dichiarare una variabile `private`.
+ Come autore di un linguaggio DSL, è possibile definire un *criterio di blocco*. Un criterio di blocco modera l'operazione di blocchi (), in modo che sia possibile impedire l'impostazione di blocchi specifici o richiedere l'impostazione di blocchi specifici. In genere, è possibile usare un criterio di blocco per impedire a utenti o sviluppatori di contravvenendo accidentalmente l'uso previsto di un linguaggio DSL, nello stesso modo in cui è possibile dichiarare una variabile `private` .
 
  È anche possibile usare un criterio di blocco per impostare i blocchi su tutti gli elementi che dipendono dal tipo dell'elemento. Questo perché `SetLocks(Locks.None)` viene sempre chiamato quando un elemento viene creato o deserializzato per la prima volta da un file.
 
- Tuttavia, non è possibile usare un criterio per variare i blocchi di un elemento durante la sua vita. Per ottenere questo risultato, è necessario utilizzare le chiamate a `SetLocks()`.
+ Tuttavia, non è possibile usare un criterio per variare i blocchi di un elemento durante la sua vita. Per ottenere questo risultato, è necessario utilizzare le chiamate a `SetLocks()` .
 
  Per definire un criterio di blocco, è necessario:
 
@@ -102,7 +102,7 @@ partition.SetLocks(Locks.Delete);
 - Aggiungere questa classe ai servizi disponibili tramite DocData del linguaggio DSL.
 
 ### <a name="to-define-a-locking-policy"></a>Per definire un criterio di blocco
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> presenta la seguente definizione:
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> ha la definizione seguente:
 
 ```
 public interface ILockingPolicy
@@ -154,7 +154,7 @@ namespace Company.YourDsl.DslPackage // Change
  `return element is MyClass ? (proposedLocks | Locks.Property) : proposedLocks;`
 
 ### <a name="to-make-your-policy-available-as-a-service"></a>Per rendere disponibili i criteri come servizio
- Nel progetto `DslPackage` aggiungere un nuovo file contenente codice simile al seguente esempio:
+ Nel `DslPackage` progetto aggiungere un nuovo file che contiene codice simile a quello riportato nell'esempio seguente:
 
 ```
 using Microsoft.VisualStudio.Modeling;

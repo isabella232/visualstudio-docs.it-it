@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e159082266b848ce4742e436c706f3f71b2cc9ea
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182976"
 ---
 # <a name="add-explicit-cast"></a>Aggiungere un cast esplicito
@@ -26,7 +26,7 @@ Questa generazione di codice si applica a:
 
 **Motivo:** È possibile aggiungere manualmente un cast esplicito a un'espressione, tuttavia questa funzionalità la aggiunge automaticamente in base al contesto del codice.
 
-## <a name="how-to-use-it"></a>Modalità d'uso
+## <a name="how-to-use-it"></a>Modo d'uso
 
 1. Posizionare il cursore sull'errore.
 2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.

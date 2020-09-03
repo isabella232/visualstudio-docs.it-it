@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015759"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procedura dettagliata: distribuire una definizione di elenco attività progetto
@@ -155,11 +156,11 @@ Visual Studio ricicla il pool di applicazioni IIS, ritira le versioni esistenti 
 
 5. Usare il `Add-SPUserSolution` comando di PowerShell per installare il pacchetto nell'installazione remota di SharePoint. Per le soluzioni farm, utilizzare il `Add-SPSolution` comando.
 
-     Ad esempio: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     Ad esempio, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`
 
 6. Usare il `Install-SPUserSolution` comando di PowerShell per distribuire la soluzione. Per le soluzioni farm, utilizzare il `Install-SPSolution` comando.
 
-     Ad esempio: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     Ad esempio, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`
 
      Per altre informazioni sulla distribuzione remota, vedere [uso delle soluzioni](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) e [aggiunta e distribuzione di soluzioni con PowerShell in SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 

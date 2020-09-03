@@ -1,5 +1,5 @@
 ---
-title: Proprietà Define Element . Documenti Microsoft
+title: Elemento define | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712265"
 ---
 # <a name="define-element"></a>Definisci elemento
-Definisce una coppia nome simbolo e valore. Questo simbolo può essere valutato da attributi condizionali. Per ulteriori informazioni, consultate [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md) Vedere anche [l'elemento Symbols](../extensibility/symbols-element.md).
+Definisce una coppia di nome e valore del simbolo. Questo simbolo può essere valutato dagli attributi condizionali. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md). Vedere anche l' [elemento symbols](../extensibility/symbols-element.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,18 +34,18 @@ Definisce una coppia nome simbolo e valore. Questo simbolo può essere valutato 
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|name|Obbligatorio. Il nome del simbolo:<br /><br /> nome: "Modalità"|
-|Valore|Obbligatorio. Il valore del simbolo:<br /><br /> valore: "Standard"|
-|Condizione|Facoltativa. Per ulteriori informazioni, consultate [Attributi condizionali.](../extensibility/vsct-xml-schema-conditional-attributes.md)|
+|name|Obbligatorio. Nome del simbolo:<br /><br /> Name = "Mode"|
+|Valore|Obbligatorio. Valore del simbolo:<br /><br /> value = "standard"|
+|Condizione|facoltativo. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi che un VSPackage fornisce all'ambiente di sviluppo integrato (IDE). Ad esempio, voci di menu, menu, barre degli strumenti e caselle combinate.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi forniti da un VSPackage all'Integrated Development Environment (IDE). Ad esempio, le voci di menu, i menu, le barre degli strumenti e le caselle combinate.|
 
 ## <a name="example"></a>Esempio
 

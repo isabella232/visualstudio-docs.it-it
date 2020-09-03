@@ -9,10 +9,10 @@ caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 37c855f7940cbed847dcb7d5c6414be436cee993
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918367"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) con app Xamarin
@@ -33,7 +33,7 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
   
  Commento generale: tutte le funzionalità di pianificazione e traccia sono indipendenti dal tipo di progetto e dai linguaggi di codifica.  
   
-|Caratteristica|Supportato con Xamarin|Commenti aggiuntivi|  
+|Feature|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |Gestione di backlog e sprint|Sì||  
 |Verifica del lavoro|Sì||  
@@ -46,7 +46,7 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
   
  Le funzionalità di progettazione sono indipendenti dal linguaggio di codifica o funzionano con i linguaggi .NET come C#. Per informazioni sugli aspetti correlati al codice, vedere [Ruoli dei diagrammi dell'architettura e della modellazione nello sviluppo del software](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools).  
   
-|Caratteristica|Supportato con Xamarin|Commenti aggiuntivi|  
+|Feature|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |Diagrammi sequenza|Sì||  
 |Grafici delle dipendenze|Sì||  
@@ -59,7 +59,7 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
   
 ## <a name="code"></a>Codice  
   
-|Caratteristica|Supportato con Xamarin|Commenti aggiuntivi|  
+|Feature|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |[Usare il controllo della versione di Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o di Visual Studio Team Services|Sì||  
 |[Introduzione a Git in Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Sì||  
@@ -67,12 +67,12 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 |[Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md)|Sì|Ad eccezione dei limiti specifici tra le piattaforme dove l'implementazione viene risolta solo dopo la fase di esecuzione.|  
 |[Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)|Sì||  
   
-## <a name="build"></a>Compila  
+## <a name="build"></a>Compilare  
  Collegamento di riferimento: **[Compilazione](/azure/devops/pipelines/index)**  
   
-|Caratteristica|Supportato con Xamarin|Commenti aggiuntivi|  
+|Feature|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
-|Server TFS locale|Sì|È necessario che nei computer di compilazione sia installato Xamarin e che i computer possano essere collegati a un computer OSX per la compilazione con iOS. Vedere [Configurazione di TFS per Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (sito Web Xamarin)|  
+|Server TFS locale|Sì|È necessario che nei computer di compilazione sia installato Xamarin e che i computer possano essere collegati a un computer OSX per la compilazione con iOS. Vedere [configurazione di TFS per Novell](/azure/devops/repos/tfvc/overview?view=azure-devops) (sito Web Novell)|  
 |Server di compilazione locale collegato a Visual Studio Team Services|Sì|Per istruzioni, vedere [Server di compilazione](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
 |Servizio controller ospitato di Visual Studio Team Services|Sì|Vedere [Build your Xamarin app](https://www.visualstudio.com/docs/build/apps/mobile/xamarin) (Compilare l'app Xamarin).|  
 |Definizioni di compilazione con pre e post script|Sì||  
@@ -81,19 +81,19 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 ## <a name="testing"></a>Test  
  Collegamento di riferimento: **[Test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Caratteristica|Supportato con Xamarin|Commenti aggiuntivi|  
+|Feature|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |Pianificazione dei test, creazione di test case e organizzazione di gruppi di test|Sì||  
 |Test manuali|Sì||  
 |Test Manager (registrazione e riproduzione di test)|Sì|Solo dispositivi Windows ed emulatori Android da Visual Studio. È possibile la registrazione per tutti i dispositivi con [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
-|Code coverage|N/D||  
+|Code coverage|n/d||  
 |[Eseguire unit test del codice](../test/unit-test-your-code.md)|Sì|Per destinazioni Windows e Android, è possibile usare gli strumenti incorporati MSTest. Per eseguire unit test in Windows, Android e iOS, Xamarin consiglia NUnit. Vedere [Configurazione di TFS per Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (sito Web Xamarin).|  
 |[Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)|Solo Windows|La registrazione dei test dell'interfaccia utente di Visual Studio è disponibile solo per Windows. Per tutte le piattaforme, vedere [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Migliorare la qualità del codice  
  Collegamento di riferimento: **[Migliorare la qualità del codice](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Caratteristica|Supportato con Xamarin|Commenti aggiuntivi|  
+|Feature|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |[Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sì||  
 |[Ricerca del codice duplicato mediante il rilevamento del clone di codice](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sì||  
@@ -104,15 +104,15 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 ## <a name="release-management"></a>Gestione versioni  
  Collegamento di riferimento: **[Automatizzare le distribuzioni con Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Caratteristica|Supportato con Xamarin|Commenti aggiuntivi|  
+|Feature|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |Gestire i processi di rilascio|Sì||  
 |Distribuzione ai server per il caricamento laterale tramite script|Sì||  
-|Caricare nell'app store|Partial|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni.  Vedere le [estensioni per Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Caricare nell'app store|Parziale|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni.  Vedere le [estensioni per Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Monitorare con HockeyApp  
  Collegamento di riferimento: **[Monitorare con HockeyApp](https://www.hockeyapp.net/features/)**  
   
-|Caratteristica|Supportato con Xamarin|Commenti aggiuntivi|  
+|Feature|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |Analisi degli arresti anomali, telemetria e distribuzione beta|Sì||

@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852433"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Eseguire il debug di stili CSS tramite DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "windows_and_phone_content")  
   
  Quando si esegue il debug delle app di Windows Store o di Windows Phone Store e di app create usando Strumenti di Visual Studio per Apache Cordova, è possibile visualizzare e modificare le regole CSS per alcuni elementi DOM e i relativi elementi figlio.  
   
@@ -48,7 +48,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
 - Usare la scheda **Modifiche** (solo per app di Windows Store e Windows Phone Store) per identificare e tenere traccia degli stili CSS modificati durante la sessione di debug.  
   
 > [!TIP]
-> Le modifiche apportate nelle schede **Stili** e **Calcolata** non sono permanenti, vengono infatti perse quando si arresta il debug. Per modificare il codice sorgente e ricaricare le pagine senza arrestare e riavviare il debugger, aggiornare l'app usando il pulsante ![Aggiorna applicazione Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Aggiorna applicazione Windows**) nella barra degli strumenti **debug** (solo Windows Store e app Windows Phone di Windows Store). Per altre informazioni, vedere [aggiornare un'app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Le modifiche apportate nelle schede **Stili** e **Calcolata** non sono permanenti, vengono infatti perse quando si arresta il debug. Per modificare il codice sorgente e ricaricare le pagine senza arrestare e riavviare il debugger, aggiornare l'app usando il pulsante  ![Aggiorna applicazione Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Aggiorna applicazione Windows**) nella barra degli strumenti **debug** (solo Windows Store e app Windows Phone di Windows Store). Per altre informazioni, vedere [aggiornare un'app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Esempio di correzione di una regola CSS  
  Questo esempio illustra come controllare le regole CSS ed eseguire il debug di un problema di stile. Per questo esempio, si supponga di voler modificare il colore di un carattere usato per visualizzare i titoli di gruppo nel modello Applicazione divisa di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
@@ -91,7 +91,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
   
 4. Selezionare **Simulatore** nell'elenco a discesa della barra degli strumenti **Debug** (**Computer locale** è il valore predefinito).  
   
-     ![Selezionare l'elenco destinazione di debug](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Selezionare l'elenco di destinazione del debug](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 5. Premere F5 per eseguire l'app in modalità debug.  
   
@@ -120,7 +120,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
   
      Quando si seleziona l'elemento H4 in DOM Explorer, le relative schede ora mostrano le regole associate all'elemento H4. La scheda **Calcolata** è illustrata qui, con la proprietà `color` aperta:  
   
-     ![Scheda stili traccia in DOM Explorer](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
+     ![Scheda Stili traccia in DOM Explorer](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
      Questa visualizzazione fornisce informazioni utili sulle regole associate allo stile `color` , come illustrato di seguito:  
   
@@ -136,17 +136,17 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
   
 9. Deselezionare la casella di controllo per la prima occorrenza dello stile `color` , ovvero per il selettore `.itemspage .itemslist .item .item-overlay .item-title` . A questo punto, nel simulatore si vedrà che il colore dei titoli dell'elemento diventa arancione, come previsto, e non viene più eseguito l'override del selettore modificato in CSS `.itemspage .itemslist .item`, (non viene più applicato il testo barrato). Di seguito è riportata la scheda **Calcolata** dopo aver deselezionato la casella di controllo.  
   
-     ![Scheda calcolata dopo l'aggiornamento dello stile CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
+     ![Scheda Calcolati dopo l'aggiornamento dello stile CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. Selezionare la scheda **Modifiche** .  
   
      Usare la scheda **Modifiche** per identificare e tenere traccia delle modifiche degli stili apportate durante la sessione di debug. La figura seguente illustra il selettore `.itemspage .itemslist .item .item-overlay .item-title` nella scheda **Modifiche** , di cui è stato eseguito l'override.  
   
-     ![Scheda modifiche della DOM Explorer](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
+     ![Scheda Modifiche di DOM Explorer](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
   
 11. È anche possibile modificare manualmente i valori di stile CSS e visualizzare il risultato immediato tramite la scheda **Stili** .  
   
-12. Fare clic sulla scheda **Stili** .  
+12. Selezionare la scheda **Stili**.  
   
 13. Aprire il selettore di stile `.itemspage .itemslist .item .item-overlay .item-title` .  
   
@@ -154,7 +154,7 @@ Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png 
   
 15. Usare la tastiera per modificare questo valore. Sostituirlo con `rgb(255, 255, 0, 0.87)`e quindi premere INVIO. I colori dei titoli degli elementi nel simulatore vengono tutti cambiati in giallo.  
   
-16. Per apportare modifiche al file CSS di origine, fare clic sul collegamento **Items. CSS** nella scheda **stili** . Verrà aperto Items. CSS, in cui è possibile modificare il valore dello stile del `color` nel codice dell'app. Per aggiornare l'app senza arrestare e riavviare il debugger, fare clic sul pulsante ![Aggiorna applicazione Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Aggiorna applicazione Windows**) sulla barra degli strumenti **debug** .  
+16. Per apportare modifiche al file CSS di origine, fare clic sul collegamento **Items. CSS** nella scheda **stili** . Verrà aperto Items. CSS, in cui è possibile modificare il valore dello `color` stile nel codice dell'app. Per aggiornare l'app senza arrestare e riavviare il debugger, fare clic sul pulsante  ![Aggiorna applicazione Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Aggiorna applicazione Windows**) sulla barra degli strumenti **debug** .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida introduttiva: eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   

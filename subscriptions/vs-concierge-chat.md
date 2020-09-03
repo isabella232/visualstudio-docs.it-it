@@ -8,10 +8,10 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio Concierge Chat nelle sottoscrizioni di Visual Studio.
 ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906045"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat nelle sottoscrizioni di Visual Studio
@@ -27,7 +27,7 @@ Ottenere assistenza tramite il servizio Concierge Chat è molto semplice.
     > [!div class="mx-imgBorder"]
     > ![Riquadro Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
-3. Fare clic su **Continue**.
+3. Fare clic su **Continua**.
 
 4. Verrà aperta una finestra di chat e verrà visualizzato un contatore che mostra la posizione nella coda.
 

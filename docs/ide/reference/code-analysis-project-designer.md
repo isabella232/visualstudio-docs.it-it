@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76113781"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
@@ -64,6 +64,6 @@ Abilita o disabilita le regole di utilizzo. È anche possibile espandere questa 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Code Analysis for Managed Code Warnings](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Analisi del codice per gli avvisi del codice gestito](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Panoramica dell'analisi codice gestito](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [Procedura dettagliata: analisi del codice gestito per l'identificazione di errori del codice](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

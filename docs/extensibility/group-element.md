@@ -1,5 +1,5 @@
 ---
-title: Elemento Group Documenti Microsoft
+title: Elemento Group | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711225"
 ---
 # <a name="group-element"></a>Group - elemento
-Definisce un gruppo di comandi VSPackage.Defines a VSPackage command group.
+Definisce un gruppo di comandi VSPackage.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,23 +36,23 @@ Definisce un gruppo di comandi VSPackage.Defines a VSPackage command group.
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|guid|Obbligatorio. GUID dell'identificatore di comando GUID/ID.|
-|id|Obbligatorio. ID dell'identificatore di comando GUID/ID.|
-|priority|Facoltativa. Valore numerico che specifica la priorità.|
-|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|guid|Obbligatorio. GUID dell'identificatore del comando GUID/ID.|
+|id|Obbligatorio. ID dell'identificatore del comando GUID/ID.|
+|priority|facoltativo. Valore numerico che specifica la priorità.|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Parent|Facoltativa. Elemento padre del pulsante.|
+|Parent|facoltativo. Elemento padre del pulsante.|
 |Annotazione|Commento facoltativo.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento Groups](../extensibility/groups-element.md)|Contiene voci che definiscono i gruppi di comandi di un pacchetto VSPackage.|
+|[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un VSPackage.|
 
 ## <a name="example"></a>Esempio
 

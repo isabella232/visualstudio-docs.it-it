@@ -1,5 +1,5 @@
 ---
-title: Estensibilità del debugger di Visual Studio Documenti Microsoft
+title: Estensibilità del debugger di Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,32 +12,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff4222b555fab73914776725fc79581f29fa5e53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712504"
 ---
-# <a name="visual-studio-debugger-extensibility"></a>Estendibilità del debugger di Visual StudioVisual Studio debugger extensibility
-Visual Studio include un debugger del codice sorgente completamente interattivo, che fornisce uno strumento potente e facile da usare per tenere traccia dei bug nel programma. Il debugger dispone del supporto completo per Visual Basic, C, C/C, e JavaScript. Tuttavia, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]con l'oggetto , disponibile nell'Area [download Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), altri linguaggi di programmazione possono essere supportati nel debugger con le stesse funzionalità avanzate.
+# <a name="visual-studio-debugger-extensibility"></a>Estensibilità del debugger di Visual Studio
+Visual Studio include un debugger completamente interattivo del codice sorgente, che offre uno strumento potente e facile da usare per tenere traccia dei bug nel programma. Il debugger dispone del supporto completo per Visual Basic, C#, C/C++ e JavaScript. Tuttavia, con [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , disponibile nell' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), altri linguaggi di programmazione possono essere supportati nel debugger con le stesse funzionalità avanzate.
 
- Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger è il front-end comune (ovvero l'interfaccia utente) ai componenti di debug che sono, a loro volta, specifici per il linguaggio in fase di debug. Per i nuovi linguaggi, tutto ciò che è necessario per il supporto da parte del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger è quello di creare i componenti back-end necessari, ad esempio un motore di debug (DE). Questo punto è [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] dove entra in gioco il
+ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger è il front-end comune, ovvero l'interfaccia utente, per i componenti di debug che, a loro volta, sono specifici del linguaggio di cui è in corso il debug. Per i nuovi linguaggi, tutto ciò che è necessario per il supporto del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger consiste nel creare i componenti back-end necessari, ad esempio un motore di debug (de). Questo è il punto [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] in cui entra in arrivo.
 
- Il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] include un riferimento [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] completo a tutti gli elementi necessari per creare un nuovo DE. Inoltre, ci sono esempi e tutorial che ti aiuteranno a iniziare.
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Include un riferimento completo a tutti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gli elementi necessari per creare un nuovo de. Sono inoltre disponibili esempi ed esercitazioni che consentono di iniziare.
 
- Per un esempio completo di un sistema di progetto di linguaggio con supporto per il debug, vedere [l'esempio IronPython](https://www.microsoft.com/download/details.aspx?id=55984).
+ Per un esempio completo di un sistema di progetto di linguaggio con supporto per il debug, vedere l' [esempio IronPython](https://www.microsoft.com/download/details.aspx?id=55984).
 
- Nelle sezioni seguenti viene descritto come [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]estendere il debugger utilizzando il metodo .
+ Nelle sezioni seguenti viene descritto come estendere il debugger utilizzando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Guida introduttiva](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) Vengono descritti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i prodotti per il debug e come installare l'SDK.
+ [Inizia subito](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) Descrive [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] le offerte di debug e come installare l'SDK.
 
- [Creare un motore di debug personalizzatoCreate](../../extensibility/debugger/creating-a-custom-debug-engine.md) a custom debug engine Documenta il processo DE personalizzato, dalla preparazione del programma per un DE per scollegare il DE.
+ [Creare un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md) Documenta il processo personalizzato DE, dalla preparazione del programma per un DE allo scollegamento della DE.
 
- [Scrivere un analizzatore di espressioni CLRWrite a CLR expression evaluator](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) Viene illustrato se è necessario scrivere un analizzatore di espressioni.
+ [Scrivere un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) Viene illustrato se è necessario scrivere un analizzatore di espressioni.
 
- [Scegliere una strategia di implementazione](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md) del motore di debugChoose a debug engine implementation strategy Viene illustrato come implementare il DE.
+ [Scegliere una strategia di implementazione del motore di debug](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md) Viene illustrato come implementare il DE.
 
- [Riferimento](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md) Documenta [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l'API di debug.
+ Informazioni di [riferimento](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md) Documenta l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] API di debug.
 
- [Esempi](../../extensibility/debugger/visual-studio-debugging-samples.md) Contiene collegamenti a un esempio di analizzatore di espressioni di Common Language Runtime e un esempio di motore di debug.
+ [Esempi](../../extensibility/debugger/visual-studio-debugging-samples.md) di Contiene collegamenti a un esempio Common Language Runtime analizzatore di espressioni e un esempio di motore di debug.
