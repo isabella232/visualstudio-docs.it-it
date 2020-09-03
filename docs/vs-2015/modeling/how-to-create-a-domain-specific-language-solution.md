@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533081"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
@@ -78,7 +78,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione speci
    > [!NOTE]
    > Se viene visualizzato un messaggio che informa che non è possibile eseguire modelli di testo da origini non attendibili, fare clic su **OK**. È possibile impostare questo messaggio in modo che non venga visualizzato di nuovo.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Pagine della procedura guidata Finestra di progettazione DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> Pagine della procedura guidata Finestra di progettazione DSL
  È possibile lasciare diversi campi senza modifiche rispetto ai valori predefiniti. Tuttavia, assicurarsi di impostare il campo estensione file.
 
 ### <a name="solution-settings-page"></a>Pagina Impostazioni soluzione

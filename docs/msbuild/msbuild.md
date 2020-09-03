@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289196"
 ---
 # <a name="msbuild"></a>MSBuild
@@ -70,7 +70,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Nelle sezioni seguenti vengono descritti alcuni elementi di base del formato di file di progetto MSBuild. Per un'esercitazione su come creare un file di progetto di base, vedere [procedura dettagliata: creazione di un file di progetto MSBuild da zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-### <a name="properties"></a>Proprietà <a name="BKMK_Properties"></a>
+### <a name="properties"></a><a name="BKMK_Properties"></a> Proprietà
 
  Le proprietà sono coppie di chiave/valore che possono essere usate per configurare le compilazioni. Per dichiarare le proprietà, è necessario creare un elemento con lo stesso nome della proprietà, come figlio di un elemento [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Tramite il codice seguente, ad esempio, viene creata una proprietà denominata `BuildDir` con un valore `Build`.
 
@@ -90,7 +90,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Per altre informazioni sulle proprietà, vedere [Proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
-### <a name="items"></a><a name="BKMK_Items"></a>Elementi
+### <a name="items"></a><a name="BKMK_Items"></a> Elementi
 
  Gli elementi sono input nel sistema di compilazione e, in genere, rappresentano i file. Gli elementi sono raggruppati in tipi di elemento in base a nomi di elemento definiti dall'utente. Tali tipi di elemento possono essere usati come parametri per le attività, le quali a loro volta utilizzano i singoli elementi dei tipi per eseguire i passaggi del processo di compilazione.
 
@@ -116,7 +116,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Gli elementi possono essere dichiarati usando caratteri jolly e, negli scenari di compilazione più avanzati, possono contenere metadati aggiuntivi. Per altre informazioni sugli elementi, vedere [Elementi](../msbuild/msbuild-items.md).
 
-### <a name="tasks"></a><a name="BKMK_Tasks"></a>Attività
+### <a name="tasks"></a><a name="BKMK_Tasks"></a> Attività
 
  Le attività sono unità di codice eseguibile usate dai progetti MSBuild per eseguire operazioni di compilazione. Ad esempio, un'attività potrebbe compilare file di input o eseguire uno strumento esterno. Le attività possono essere riutilizzate e condivise da sviluppatori diversi in progetti diversi.
 
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Per altre informazioni sulle attività, vedere [Attività](../msbuild/msbuild-tasks.md).
 
-### <a name="targets"></a><a name="BKMK_Targets"></a>Obiettivi
+### <a name="targets"></a><a name="BKMK_Targets"></a> Obiettivi
 
  Le destinazioni raggruppano le attività in un determinato ordine ed espongono le sezioni del file di progetto come punti di ingresso al processo di compilazione. Le destinazioni vengono spesso raggruppate in sezioni logiche per garantire una maggiore leggibilità e consentire l'espansione. La suddivisione delle istruzioni di compilazione in più destinazioni consente di chiamare una parte del processo di compilazione da altre destinazioni senza dover copiare la corrispondente sezione di codice in ognuna di esse. Ad esempio, se alcuni punti di ingresso al processo di compilazione richiedono la compilazione di riferimenti, è possibile creare una destinazione che compila riferimenti e quindi eseguire tale destinazione da ognuno dei suddetti punti di ingresso.
 
@@ -158,7 +158,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Per un'esercitazione sull'uso di MSBuild in Visual Studio, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a>Multitargeting
+## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a> Multitargeting
 
  Con Visual Studio è possibile compilare un'applicazione da eseguire in una qualsiasi delle diverse versioni di .NET Framework. È ad esempio possibile compilare un'applicazione da eseguire su .NET Framework 2,0 in una piattaforma a 32 bit ed è possibile compilare la stessa applicazione per l'esecuzione su .NET Framework 4,5 su una piattaforma a 64 bit. La possibilità di compilare in più framework è denominata multitargeting.
 
@@ -176,7 +176,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 | Titolo | Descrizione |
 | - | - |
@@ -193,7 +193,7 @@ Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargetin
 | [Come vengono compilati i progetti in MSBuild](build-process-overview.md) | Descrive il processo di compilazione interno usato in MSBuild |
 | [Risorse aggiuntive](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Elenca risorse della community e di supporto che consentono di ottenere altre informazioni su MSBuild. |
 
-## <a name="reference"></a>Riferimento
+## <a name="reference"></a>Informazioni di riferimento
 
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)\
  Collegamenti ad argomenti che contengono informazioni di riferimento.

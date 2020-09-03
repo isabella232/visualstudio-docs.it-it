@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288377"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procedura: Aggiungere contatori agli insiemi di contatori usando l'Editor test di carico
@@ -62,7 +62,7 @@ I contatori vengono gestiti nell'**Editor test di carico**. Gli insiemi di conta
     > [!NOTE]
     > È inoltre possibile aggiungere contatori a un insieme di contatori selezionando una categoria di contatori o un contatore esistente, scegliendo Copia, quindi incollandolo in un nodo di insiemi di contatori diverso. I contatori aggiuntivi che vengono copiati ma non sono necessari possono essere eliminati.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)

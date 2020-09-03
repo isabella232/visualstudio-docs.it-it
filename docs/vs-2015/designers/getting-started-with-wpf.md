@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b005b55e0079b7db6486a8cde08f81f62ac7399
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542038"
 ---
 # <a name="getting-started-with-wpf"></a>Introduzione a WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows Presentation Foundation (WPF) è un framework dell'interfaccia utente che crea applicazioni client desktop. La piattaforma di sviluppo WPF supporta un'ampia serie di funzionalità di sviluppo di applicazioni, incluso un modello dell'applicazione, le risorse, i controlli, la grafica, il layout, l'associazione dati, i documenti e la sicurezza. È un subset di .NET Framework, pertanto se in precedenza si sono sviluppate applicazioni con .NET Framework usando ASP.NET o Windows Form, l'esperienza di programmazione dovrebbe essere familiare. In WPF viene usato il linguaggio Extensible Application Markup Language (XAML) per fornire un modello dichiarativo per la programmazione di applicazioni. Questa sezione contiene argomenti introduttivi all'uso di WPF.
+Windows Presentation Foundation (WPF) è un framework dell'interfaccia utente che crea applicazioni client desktop. La piattaforma di sviluppo WPF supporta un'ampia serie di funzionalità di sviluppo di applicazioni, inclusi un modello applicativo, risorse, controlli, elementi grafici, layout, data binding, documenti e sicurezza. È un subset di .NET Framework, pertanto se in precedenza si sono sviluppate applicazioni con .NET Framework usando ASP.NET o Windows Form, l'esperienza di programmazione dovrebbe essere familiare. WPF usa il linguaggio XAML (Extensible Application Markup Language) per offrire un modello dichiarativo per la programmazione di applicazioni. Questa sezione contiene argomenti introduttivi all'uso di WPF.
 
 ## <a name="where-should-i-start"></a>Da dove iniziare
 

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586798"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
@@ -84,7 +84,7 @@ In C#, Visual Basic e altro codice gestito usare il provider predefinito chiaman
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Per usare un nuovo provider marcatori in un progetto C++ o C
 
-1. Usare la funzione `CvInitProvider` per inizializzare un PCV_PROVIDER. Il costruttore accetta un GUID * e PCV_PROVIDER\*.
+1. Usare la funzione `CvInitProvider` per inizializzare un PCV_PROVIDER. Il costruttore accetta un GUID * e PCV_PROVIDER \* .
 
 2. Per registrare il provider, aprire la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Selezionare la scheda **Marcatori** e selezionare il pulsante **Aggiungi nuovo provider**. Nella finestra di dialogo immettere il GUID usato per creare il provider e una descrizione del provider.
 

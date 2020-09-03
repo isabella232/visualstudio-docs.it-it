@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633707"
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
 
-MSBuild 2.0 abilita la dichiarazione statica di elementi nei file di progetto utilizzando il [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elemento. I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da MSBuild 3.5, un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) supera questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.
+MSBuild 2,0 Abilita la dichiarazione statica degli elementi nei file di progetto usando l'elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md) . I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da MSBuild 3,5, un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) viene sottoposto a questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.
 
 L'elemento *ItemDefinitionGroup* viene visualizzato immediatamente dopo l'elemento [Project](../msbuild/project-element-msbuild.md) nel file di progetto. Le definizioni degli elementi offrono le funzionalità seguenti:
 
@@ -27,7 +27,7 @@ L'elemento *ItemDefinitionGroup* viene visualizzato immediatamente dopo l'elemen
 
 - I tipi di elemento possono presentare più definizioni. Quando al tipo vengono aggiunte altre specifiche di metadati, l'ultima ha la precedenza. \(I metadati seguono lo stesso ordine di importazione delle proprietà.\)
 
-- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio: `MT;STD_CALL;DEBUG;UNICODE`.
+- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio, `MT;STD_CALL;DEBUG;UNICODE`
 
 - I metadati possono essere rimossi.
 
@@ -74,13 +74,13 @@ I valori per i metadati definiti in un ItemDefinitionGroup possono provenire da 
 
 - Variabile di ambiente
 
-- Proprietà globale (dalla riga di comando *MSBuild.exe)*
+- Proprietà globale (dalla riga di comando *MSBuild.exe* )
 
 - Proprietà riservata
 
 - Metadati noti in un elemento di un ItemDefinitionGroup
 
-- Sezione CDATA \<\!\[CDATA\[nessun dato analizzato\]\]\>
+- Sezione CDATA \<\!\[CDATA\[anything here is not parsed\]\]\>
 
 > [!NOTE]
 > I metadati degli elementi di un ItemGroup non sono utili in una dichiarazione di metadati di un ItemDefinitionGroup perché gli elementi dell'ItemDefinitionGroup vengono elaborati prima di quelli dell'ItemGroup.
@@ -195,7 +195,7 @@ Nell'esempio precedente "m" verrebbe impostato sul valore "m1" perché la condiz
 
 ## <a name="override-and-delete-metadata"></a>Eseguire l'override dei metadati ed eliminarli
 
-I metadati definiti in un elemento ItemDefinitionGroup possono essere sottoposti a override in un successivo elemento ItemDefinitionGroup impostando il valore dei metadati su un altro valore. È anche possibile eliminare un elemento dei metadati impostandolo su un valore vuoto. Ad esempio:
+I metadati definiti in un elemento ItemDefinitionGroup possono essere sottoposti a override in un elemento ItemDefinitionGroup successivo impostando il valore dei metadati su un altro valore. È anche possibile eliminare un elemento dei metadati impostandolo su un valore vuoto. Ad esempio:
 
 ```xml
 <ItemDefinitionGroup>
@@ -247,7 +247,7 @@ Quanto segue, tuttavia, non è valido:
 </ItemDefinitionGroup>
 ```
 
-A partire da MSBuild 3.5, ItemGroups può anche essere autoreferenziale. Ad esempio:
+A partire da MSBuild 3,5, ItemGroup può anche essere autoreferenziale. Ad esempio:
 
 ```xml
 <ItemGroup>

@@ -9,10 +9,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 0f7d2f993891a4adfa9217357fbdb1a95e10b637
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289300"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli shim per isolare l'app per il testing unità
@@ -521,7 +521,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 Non è possibile usare gli shim in tutti i tipi della libreria di classi base .NET **mscorlib** e **System**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Isolare codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Blog di Peter prevosto: shim di Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)

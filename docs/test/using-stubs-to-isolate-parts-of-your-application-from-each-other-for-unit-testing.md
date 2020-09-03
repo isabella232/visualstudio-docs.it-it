@@ -11,10 +11,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 1d66dcd0a59edfbfb199a68f81ecebe608afccb1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289053"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usare stub per isolare parti dell'applicazione l'una dall'altra per il testing unità
@@ -458,6 +458,6 @@ Il comportamento può anche essere modificato a livello globale per tutti gli og
 StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Isolare codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

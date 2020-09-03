@@ -24,23 +24,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620561"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tramite le procedure descritte in questo argomento è possibile compilare, ricompilare o pulire tutti o alcuni progetti o elementi di progetto di una soluzione. Per un'esercitazione dettagliata, vedere [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilazione di un'applicazione).
+Tramite le procedure descritte in questo argomento è possibile compilare, ricompilare o pulire tutti o alcuni progetti o elementi di progetto di una soluzione. Per un'esercitazione dettagliata, vedere [procedura dettagliata: compilazione di un'applicazione](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> L'interfaccia utente dell'edizione di Visual Studio in uso potrebbe essere diversa da quanto descritto in questo argomento, a seconda delle impostazioni attive. Per modificare le impostazioni, aprire il menu **Strumenti** e quindi scegliere **Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> L'interfaccia utente dell'edizione di Visual Studio in uso potrebbe essere diversa da quanto descritto in questo argomento, a seconda delle impostazioni attive. Per modificare le impostazioni, aprire il menu **Strumenti** e quindi scegliere **Importa/Esporta impostazioni**. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Per compilare, ricompilare o pulire un'intera soluzione
 
-1. In **Esplora soluzioni**  scegliere una soluzione o aprire la soluzione voluta.
+1. In **Esplora soluzioni ** scegliere una soluzione o aprire la soluzione voluta.
 
 2. Nella barra dei menu, scegliere **Compila** e quindi scegliere uno dei comandi seguenti:
 
@@ -55,17 +55,17 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Per compilare o ricompilare un progetto singolo
 
-1. In **Esplora soluzioni**  scegliere un progetto o aprire il progetto voluto.
+1. In **Esplora soluzioni ** scegliere un progetto o aprire il progetto voluto.
 
-2. Nella barra dei menu scegliere **Compila** e quindi scegliere **Compila** _NomeProgetto_ o **Ricompila** _NomeProgetto_.
+2. Sulla barra dei menu scegliere **Compila**, quindi scegliere **Compila** _NomeProgetto_ o **ricompila** _NomeProgetto_.
 
-    - Scegliere **Compila**  _NomeProgetto_ per compilare solo i componenti del progetto che sono stati modificati dopo la build più recente.
+    - Scegliere **Compila** _NomeProgetto_ per compilare solo i componenti del progetto che sono stati modificati rispetto alla build più recente.
 
-    - Scegliere **Ricompila** _NomeProgetto_ per "pulire" il progetto e quindi compilare i file e tutti i componenti del progetto.
+    - Scegliere **ricompila** _NomeProgetto_ per "pulire" il progetto e quindi compilare i file di progetto e tutti i componenti del progetto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Per compilare il progetto di avvio e le relative dipendenze
 
-1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
+1. Sulla barra dei menu scegliere **strumenti**, **Opzioni**.
 
 2. Nella finestra di dialogo **Opzioni** espandere il nodo **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.
 
@@ -75,9 +75,9 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
     Se questa casella di controllo è selezionata, solo il progetto di avvio corrente e le relative dipendenze vengono compilati quando si esegue la procedura seguente:
 
-   - Nella barra dei menu scegliere **debug**  > **Avvia debug** (F5).
+   - Sulla barra dei menu scegliere **debug**  >  **Avvia debug** (F5).
 
-   - Nella barra dei menu scegliere **compila**  > **Compila soluzione** (CTRL + MAIUSC + B).
+   - Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione** (CTRL + MAIUSC + B).
 
      Quando questa casella di controllo è deselezionata e si eseguono i comandi precedenti vengono compilati tutti i progetti, le relative dipendenze e i file della soluzione. Per impostazione predefinita, questa casella di controllo è deselezionata.
 
@@ -85,13 +85,13 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 1. Scegliere un progetto di [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] e quindi dalla barra dei menu scegliere **Compila**, **Project Only** (Solo progetto) e quindi uno dei comandi seguenti:
 
-   - **Build Only** (Compila solo) *NomeProgetto*
+   - **Build Only (Compila solo) ** *NomeProgetto*
 
-   - **Rebuild Only** (Ricompila solo) *NomeProgetto*
+   - **Rebuild Only (Ricompila solo) ** *NomeProgetto*
 
-   - **Clean Only** (Pulisci solo) *NomeProgetto*
+   - **Clean Only (Pulisci solo) ** *NomeProgetto*
 
-   - **Link Only** (Collega solo) *NomeProgetto*
+   - **Link Only (Collega solo) ** *NomeProgetto*
 
      Questi comandi si applicano solo al progetto di [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] scelto. Non eseguono la compilazione, la ricompilazione, la pulizia o il collegamento di eventuali dipendenze del progetto o file di soluzione. A seconda della versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], il sottomenu **Project Only** (Solo progetto) potrebbe contenere altri comandi.
 
@@ -110,4 +110,4 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
     - Scegliere la combinazione di tasti Ctrl + Interr.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: visualizzare, salvare e configurare i file di log](../ide/how-to-view-save-and-configure-build-log-files.md) di compilazione [recupero dei log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md) [compilazione e](../ide/compiling-and-building-in-visual-studio.md) compilazione informazioni sulle configurazioni di [compilazione](../ide/understanding-build-configurations.md) [debug e rilascio di configurazioni di progetto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ riferimento per la compilazione ](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md) [soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
+ [Procedura: visualizzare, salvare e configurare i file di log](../ide/how-to-view-save-and-configure-build-log-files.md) di compilazione [recupero dei log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md) [compilazione e compilazione](../ide/compiling-and-building-in-visual-studio.md) [informazioni sulle configurazioni](../ide/understanding-build-configurations.md) [di compilazione debug e rilascio delle configurazioni di progetto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ compilazione riferimenti](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) della riga di [comando devenv opzioni](../ide/reference/devenv-command-line-switches.md) [e progetti](../ide/solutions-and-projects-in-visual-studio.md)

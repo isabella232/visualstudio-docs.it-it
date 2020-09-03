@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015075"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procedura dettagliata: creare un'estensione di progetto SharePoint
@@ -44,7 +45,7 @@ ms.locfileid: "86015075"
 
 - Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] , SharePoint e [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata usa il modello di **progetto VSIX** in [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] per creare un pacchetto VSIX per distribuire l'estensione della proprietà del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Oggetto [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Questa procedura dettagliata usa il modello di **progetto VSIX** in [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] per creare un pacchetto VSIX per distribuire l'estensione della proprietà del progetto. Per altre informazioni, vedere [estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="create-the-projects"></a>Creare i progetti
  Per completare questa procedura dettagliata, è necessario creare due progetti:
@@ -82,7 +83,7 @@ ms.locfileid: "86015075"
 
 4. Nella casella **nome** immettere **ProjectExtension**, quindi scegliere il pulsante **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]aggiunge il progetto **ProjectExtension** alla soluzione e apre il file di codice Class1 predefinito.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aggiunge il progetto **ProjectExtension** alla soluzione e apre il file di codice Class1 predefinito.
 
 5. Eliminare il file di codice Class1 dal progetto.
 
@@ -127,7 +128,7 @@ ms.locfileid: "86015075"
 
 1. In **Esplora soluzioni**aprire il menu di scelta rapida per il file source. Extension. vsixmanifest, quindi scegliere il pulsante **Apri** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]apre il file nella finestra di progettazione del manifesto. Le informazioni visualizzate nella scheda **metadati** vengono visualizzate anche in **estensioni e aggiornamenti**. Tutti i pacchetti VSIX richiedono il file Extension. vsixmanifest. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file nella finestra di progettazione del manifesto. Le informazioni visualizzate nella scheda **metadati** vengono visualizzate anche in **estensioni e aggiornamenti**. Tutti i pacchetti VSIX richiedono il file Extension. vsixmanifest. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
 2. Nella casella **nome prodotto** immettere **Proprietà progetto personalizzato**.
 
@@ -171,7 +172,7 @@ ms.locfileid: "86015075"
 
 2. Avviare una build di debug del progetto scegliendo il tasto **F5** oppure, sulla barra dei menu, scegliendo **debug**  >  **Avvia debug**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]installa l'estensione nel progetto%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 e avvia un'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] installa l'estensione nel progetto%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Property\1.0 e avvia un'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 3. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creare un progetto SharePoint per una soluzione farm e utilizzare i valori predefiniti per gli altri valori nella procedura guidata.
 

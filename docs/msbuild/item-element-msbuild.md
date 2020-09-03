@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289014"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
@@ -68,7 +68,7 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -83,17 +83,17 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Chiave dei metadati di elemento definita dall'utente che contiene il valore dei metadati dell'elemento. Possono esistere zero o più elementi `ItemMetadata` in un elemento.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento di raggruppamento per elementi.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
 Gli elementi `Item` definiscono gli input nel sistema di compilazione e vengono raggruppati in raccolte di elementi in base ai relativi nomi definiti dall'utente. Queste raccolte di elementi possono essere usate come parametri per le [attività](../msbuild/msbuild-tasks.md), che a loro volta usano i singoli elementi nelle raccolte per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
@@ -101,7 +101,7 @@ L'uso della notazione @ ( \<myType> ) consente di espandere una raccolta di elem
 
 Il motore MSBuild può valutare caratteri jolly come `*` e `?` e caratteri jolly ricorsivi, ad esempio * / \* \* / \* . cs*. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
-## <a name="examples"></a>Esempio
+## <a name="examples"></a>Esempi
 
 Nell'esempio di codice seguente viene illustrato come dichiarare due elementi di tipo `CSFile`. Il secondo elemento dichiarato contiene i metadati con `MyMetadata` impostato su `HelloWorld`.
 
@@ -124,7 +124,7 @@ L'esempio di codice seguente illustra come usare l'attributo `Update` per modifi
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Elementi](../msbuild/msbuild-items.md)
 - [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)

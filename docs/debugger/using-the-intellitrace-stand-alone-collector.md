@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f0e0ce657c1cc0ed79d56e3daa90480ed0c1381
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536493"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Uso dell'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
@@ -50,7 +50,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 - [In quali altre posizioni è possibile ottenere i dati IntelliTrace?](#WhereElse)
 
-## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a>Quali app funzionano con l'agente di raccolta?
+## <a name="what-apps-work-with-the-collector"></a><a name="WhatApps"></a> Quali app funzionano con l'agente di raccolta?
 
 - App Web ASP.NET ospitate in Internet Information Services (IIS) versione 7,0, 7,5, 8,0, 12,0 e 16,0
 
@@ -58,7 +58,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 - App Windows Presentation Foundation (WPF) e Windows Form.
 
-## <a name="how-do-i-get-started"></a><a name="GetStarted"></a>Ricerca per categorie iniziare?
+## <a name="how-do-i-get-started"></a><a name="GetStarted"></a> Ricerca per categorie iniziare?
 
 1. [Installare l'agente di raccolta](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
@@ -76,7 +76,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 6. [Aprire il file .iTrace in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a>Installare l'agente di raccolta
+## <a name="install-the-collector"></a><a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Installare l'agente di raccolta
 
 1. Nel server dell'app creare la directory dell'agente di raccolta, ad esempio **C:\IntelliTraceCollector**
 
@@ -117,7 +117,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
        > [!NOTE]
        > Il punto (**.**) lascia inalterate le sottocartelle che contengono i piani di raccolta localizzati.
 
-## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a>Configurare le autorizzazioni per la directory dell'agente di raccolta
+## <a name="set-up-permissions-for-the-collector-directory"></a><a name="ConfigurePermissionsRunningCollector"></a> Configurare le autorizzazioni per la directory dell'agente di raccolta
 
 1. Nel server dell'app aprire una finestra del prompt dei comandi come amministratore.
 
@@ -145,7 +145,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a>Installare i cmdlet di PowerShell IntelliTrace per raccogliere dati per le applicazioni Web o le applicazioni SharePoint
+## <a name="install-intellitrace-powershell-cmdlets-to-collect-data-for-web-apps-or-sharepoint-applications"></a><a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Installare i cmdlet di PowerShell IntelliTrace per raccogliere dati per le applicazioni Web o le applicazioni SharePoint
 
 1. Nel server dell'app, verificare che PowerShell sia abilitato. Nella maggior parte delle versioni di Windows Server, è possibile aggiungere questa funzionalità nello strumento di amministrazione **Server Manager** .
 
@@ -169,7 +169,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a>Configurare le autorizzazioni per la directory di file. iTrace
+## <a name="set-up-permissions-for-the-itrace-file-directory"></a><a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Configurare le autorizzazioni per la directory di file. iTrace
 
 1. Nel server dell'app creare la directory di file .iTrace, ad esempio: **C:\IntelliTraceLogFiles**
 
@@ -213,7 +213,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
      7. Verificare che il pool di applicazioni abbia il **Controllo completo**.
 
-## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a>Raccogliere dati da un'app Web o da un'applicazione SharePoint
+## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Raccogliere dati da un'app Web o da un'applicazione SharePoint
 
 1. Per avviare la raccolta dei dati, aprire una finestra di comando PowerShell come amministratore, quindi eseguire il comando:
 
@@ -236,7 +236,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
      *È possibile aprire il file .iTrace in questo momento?* No, il file è bloccato durante la raccolta dei dati.
 
-2. Riprodurre il problema.
+2. Riproduci il problema.
 
 3. Per creare un checkpoint del file con estensione iTrace, usare questa sintassi:
 
@@ -255,7 +255,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 6. [Aprire il file .iTrace in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a>Raccogliere dati da un'app gestita
+## <a name="collect-data-from-a-managed-app"></a><a name="BKMK_Collect_Data_from_Executables"></a> Raccogliere dati da un'app gestita
 
 1. Per avviare l'app e raccogliere i dati allo stesso tempo, usare questa sintassi:
 
@@ -276,7 +276,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 3. [Aprire il file .iTrace in Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a>Aprire il file con estensione iTrace in Visual Studio Enterprise
+## <a name="open-the-itrace-file-in-visual-studio-enterprise"></a><a name="BKMK_View_IntelliTrace_Log_Files"></a> Aprire il file con estensione iTrace in Visual Studio Enterprise
 
 > [!NOTE]
 > Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli. Vedere [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
@@ -290,7 +290,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
     > [!NOTE]
     > Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli nel computer di sviluppo. Vedere [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
 
-## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>Ricerca per categorie ottenere la maggior parte dei dati senza rallentare l'applicazione?
+## <a name="how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> Ricerca per categorie ottenere la maggior parte dei dati senza rallentare l'applicazione?
  IntelliTrace può raccogliere grandi quantità di dati: l'impatto sulle prestazioni dell'app dipende dai dati raccolti da IntelliTrace e dal tipo di codice analizzato. Vedere [Ottimizzazione della raccolta IntelliTrace nei server di produzione](https://devblogs.microsoft.com/devops/optimizing-intellitrace-collection-on-production-server/).
 
  Esistono dei metodi per ottenere la maggior quantità di dati possibile senza rallentare l'app:
@@ -379,7 +379,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
    L'agente di raccolta registra i valori per `id`, `Employee.Id`, `Employee.Name` e l'oggetto `Employee` restituito dal metodo `AlterEmployee` . Tuttavia, l'agente di raccolta non registra le informazioni sull'oggetto `Address` , tranne quelle relative allo stato null o non null. L'agente di raccolta non registra neanche i dati relativi alle variabili locali nel metodo `AlterEmployee` a meno che altri metodi non usino tali variabili come parametri; in questo caso, vengono registrate come parametri del metodo.
 
-## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a>In quali altri casi è possibile ottenere i dati IntelliTrace?
+## <a name="where-else-can-i-get-intellitrace-data"></a><a name="WhereElse"></a> In quali altri casi è possibile ottenere i dati IntelliTrace?
 
 È possibile ottenere dati IntelliTrace da una sessione di debug IntelliTrace in Visual Studio Enterprise. Vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).
 

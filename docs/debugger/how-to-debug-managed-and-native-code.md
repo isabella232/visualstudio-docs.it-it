@@ -16,10 +16,10 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182638"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug C# e C++ nella stessa sessione di debug
@@ -28,7 +28,7 @@ Visual Studio consente di abilitare più di un tipo di debugger in una sessione 
 
 Questa esercitazione illustra come eseguire il debug di codice nativo da un'app gestita, ma è anche possibile [eseguire il debug di codice gestito da un'app nativa](../debugger/how-to-debug-in-mixed-mode.md). Il debugger supporta anche altri tipi di debug in modalità mista, ad esempio il debug [di codice Python e nativo](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) e l'uso del debugger di script in tipi di app come ad esempio ASP.NET.
 
-In questa esercitazione:
+In questa esercitazione si apprenderà come:
 
 > [!div class="checklist"]
 > * Creare una semplice DLL nativa

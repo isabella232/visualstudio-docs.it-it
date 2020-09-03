@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4907838720e3a68614e4b9774eb2d7e9fb42ff20
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916532"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilizzando l'SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), è possibile creare potenti strumenti di sviluppo basati su modelli che è possibile integrare in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ad esempio, gli strumenti UML vengono creati utilizzando MSDK. Analogamente, è possibile creare una o più definizioni di modello e integrarle in un set di strumenti.
+Utilizzando l'SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), è possibile creare potenti strumenti di sviluppo basati su modelli che è possibile integrare in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Ad esempio, gli strumenti UML vengono creati utilizzando MSDK. Analogamente, è possibile creare una o più definizioni di modello e integrarle in un set di strumenti.
 
  MSDK è basato sulla definizione di un modello creato per rappresentare i concetti nella propria area aziendale. È possibile integrare il modello con vari strumenti, ad esempio una visualizzazione basata su diagramma, la possibilità di generare codice e altri elementi, comandi per trasformare il modello e la possibilità di interagire con il codice e altri oggetti in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Quando si sviluppa il modello, è possibile combinarlo con altri modelli e strumenti per formare un potente set di strumenti avanzati incentrati sulla propria attività di sviluppo.
 
@@ -43,9 +43,9 @@ Utilizzando l'SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 ## <a name="samples-and-the-latest-information"></a>Esempi e informazioni più recenti
  [Scaricare l'SDK di modellazione per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- Per indicazioni sulla risoluzione dei problemi e alle tecniche più avanzate, visitare [forum di estendibilità degli strumenti di modellazione e DSL di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
+ Per informazioni aggiuntive sulle tecniche avanzate e sulla risoluzione dei problemi, visitare il [Forum di estendibilità degli strumenti di modellazione di Visual Studio & DSL](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
  [Introduzione ai linguaggi specifici del dominio](../modeling/getting-started-with-domain-specific-languages.md)
 
  [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)
@@ -70,10 +70,10 @@ Utilizzando l'SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
  [Creazione di un linguaggio specifico di dominio basato su WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Procedura: Estendere la finestra di progettazione di linguaggio specifico di dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Procedura: Eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Riferimento API per SDK di modellazione per Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

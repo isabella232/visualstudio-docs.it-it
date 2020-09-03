@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289274"
 ---
 # <a name="msbuild-batching"></a>Batch MSBuild
@@ -93,7 +93,7 @@ Questa sezione descrive come comprendere gli effetti della modifica delle propri
 
 Poiché il batch di destinazione e l'invio in batch delle attività sono due diverse operazioni di MSBuild, è importante comprendere esattamente quale forma di batch USA MSBuild in ogni caso. Quando la sintassi di invio in batch `%(ItemMetadataName)` viene visualizzata in un'attività in una destinazione, ma non in un attributo della destinazione, MSBuild utilizza la suddivisione in batch delle attività. L'unico modo per specificare la suddivisione in batch di destinazione consiste nell'utilizzare la sintassi batch su un attributo di destinazione, in genere l' `Outputs` attributo.
 
-Con la suddivisione in batch delle attività e l'invio in batch delle attività, è possibile considerare i batch in modo che vengano eseguiti in modo indipendente. Tutti i batch iniziano con una copia dello stesso stato iniziale dei valori dei metadati delle proprietà e degli elementi. Eventuali mutazioni dei valori delle proprietà durante l'esecuzione del batch non sono visibili ad altri batch. Prendere in considerazione gli esempi seguenti:
+Con la suddivisione in batch delle attività e l'invio in batch delle attività, è possibile considerare i batch in modo che vengano eseguiti in modo indipendente. Tutti i batch iniziano con una copia dello stesso stato iniziale dei valori dei metadati delle proprietà e degli elementi. Eventuali mutazioni dei valori delle proprietà durante l'esecuzione del batch non sono visibili ad altri batch. Si consideri l'esempio seguente:
 
 ```xml
   <ItemGroup>
@@ -113,7 +113,7 @@ Con la suddivisione in batch delle attività e l'invio in batch delle attività,
   </Target>
 ```
 
-L'output è:
+L'output è il seguente:
 
 ```output
 Target DemoIndependentBatches:
@@ -163,7 +163,7 @@ A questo punto, esaminare l'output di questi due progetti simili.
     </Target>
 ```
 
-L'output è:
+L'output è il seguente:
 
 ```output
 Test1:
@@ -191,7 +191,7 @@ A questo punto `Outputs` , rimuovere l'attributo che ha specificato il batch di 
     </Target>
 ```
 
-L'output è:
+L'output è il seguente:
 
 ```output
 Test1:
@@ -205,13 +205,13 @@ Il motivo è che quando si usa la suddivisione in batch delle destinazioni, ogni
 
 ## <a name="property-functions-using-metadata"></a>Funzioni delle proprietà che usano i metadati
 
-La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio,
+La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio:
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 usa <xref:System.IO.Path.Combine%2A> per combinare un percorso di cartella radice con un percorso di elemento Compile.
 
-Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati. Ad esempio,
+Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati. Ad esempio:
 
 `%(Compile.FullPath.Substring(0,3))`
 
@@ -219,7 +219,7 @@ non è consentito.
 
 Per altre informazioni sulle funzioni delle proprietà, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

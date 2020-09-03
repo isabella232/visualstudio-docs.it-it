@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290684"
 ---
 # <a name="how-msbuild-builds-projects"></a>Come vengono compilati i progetti in MSBuild
@@ -113,7 +113,7 @@ MSBuild può assumere due percorsi di codice, quello normale, qui descritto e l'
 
 I singoli progetti specificano la dipendenza da altri progetti tramite `ProjectReference` gli elementi. Quando inizia la compilazione di un progetto nella parte superiore dello stack, raggiunge il punto in cui `ResolveProjectReferences` viene eseguita la destinazione, una destinazione standard definita nei file di destinazione comuni.
 
-`ResolveProjectReferences`richiama l'attività MSBuild con gli input degli `ProjectReference` elementi per ottenere gli output. Gli `ProjectReference` elementi vengono trasformati in elementi locali, ad esempio `Reference` . La fase di esecuzione di MSBuild per il progetto corrente viene sospesa mentre la fase di esecuzione inizia a elaborare il progetto a cui si fa riferimento (la fase di valutazione viene eseguita prima in base alle esigenze). Il progetto a cui si fa riferimento viene compilato solo dopo aver iniziato a compilare il progetto dipendente, quindi viene creato un albero di progetti che compilano.
+`ResolveProjectReferences` richiama l'attività MSBuild con gli input degli `ProjectReference` elementi per ottenere gli output. Gli `ProjectReference` elementi vengono trasformati in elementi locali, ad esempio `Reference` . La fase di esecuzione di MSBuild per il progetto corrente viene sospesa mentre la fase di esecuzione inizia a elaborare il progetto a cui si fa riferimento (la fase di valutazione viene eseguita prima in base alle esigenze). Il progetto a cui si fa riferimento viene compilato solo dopo aver iniziato a compilare il progetto dipendente, quindi viene creato un albero di progetti che compilano.
 
 Visual Studio consente di creare dipendenze del progetto nei file di soluzione (con estensione sln). Le dipendenze vengono specificate nel file della soluzione e vengono rispettate solo quando si compila una soluzione o quando si compila in Visual Studio. Se si compila un singolo progetto, questo tipo di dipendenza viene ignorato. I riferimenti alla soluzione vengono trasformati da MSBuild in `ProjectReference` elementi e successivamente vengono trattati nello stesso modo.
 
@@ -155,7 +155,7 @@ Nell'implementazione *Microsoft. Common. targets* è un thin wrapper che importa
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild`e `AfterBuild` sono punti di estensione. Sono vuoti nel file *Microsoft. Common. CurrentVersion. targets* , ma i progetti possono fornire le proprie `BeforeBuild` destinazioni e le proprie `AfterBuild` destinazioni con le attività che devono essere eseguite prima o dopo il processo di compilazione principale. `AfterBuild`viene eseguito prima della destinazione no-op, `Build` , perché `AfterBuild` viene visualizzato nell' `DependsOn` attributo nella `Build` destinazione, ma si verifica dopo `CoreBuild` .
+`BeforeBuild` e `AfterBuild` sono punti di estensione. Sono vuoti nel file *Microsoft. Common. CurrentVersion. targets* , ma i progetti possono fornire le proprie `BeforeBuild` destinazioni e le proprie `AfterBuild` destinazioni con le attività che devono essere eseguite prima o dopo il processo di compilazione principale. `AfterBuild` viene eseguito prima della destinazione no-op, `Build` , perché `AfterBuild` viene visualizzato nell' `DependsOn` attributo nella `Build` destinazione, ma si verifica dopo `CoreBuild` .
 
 La `CoreBuild` destinazione contiene le chiamate agli strumenti di compilazione, come indicato di seguito:
 
@@ -193,7 +193,7 @@ La `CoreBuild` destinazione contiene le chiamate agli strumenti di compilazione,
 
 Nella tabella seguente vengono descritte queste destinazioni. alcune destinazioni sono applicabili solo a determinati tipi di progetto.
 
-| Destinazione | Description |
+| Destinazione | Descrizione |
 |--------|-------------|
 | BuildOnlySettings | Impostazioni solo per le compilazioni reali, non per quando MSBuild viene richiamato durante il caricamento del progetto da Visual Studio. |
 | PrepareForBuild | Preparare i prerequisiti per la compilazione |
@@ -238,6 +238,6 @@ Molti comportamenti di compilazione possono essere configurati impostando le pro
 
 Il processo MSBuild presenta diversi altri punti di estensione diversi da quelli descritti qui. Vedere [personalizzare la compilazione](customize-your-build.md). e [come estendere il processo di compilazione di Visual Studio](how-to-extend-the-visual-studio-build-process.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [MSBuild](msbuild.md)

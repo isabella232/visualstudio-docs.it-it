@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918254"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Esplorare relazioni con l'API UML
@@ -50,7 +50,7 @@ foreach (IRelationship relationship in
 
 ```
 
-### <a name="association"></a>Associazione
+### <a name="association"></a>Association Rules
  Un'associazione è una relazione tra due proprietà, ognuna delle quali appartiene a un classificatore.
 
 ```
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Enumerazione delle relazioni
- Tutte le proprietà del modello UML che restituiscono più valori sono conformi all'interfaccia IEnumerable < >. Ciò significa che è possibile utilizzare le [espressioni di query LINQ](/dotnet/csharp/linq/index) e i metodi di estensione definiti nello spazio dei nomi **System. Linq** .
+ Tutte le proprietà del modello UML che restituiscono più valori sono conformi all'interfaccia IEnumerable<> . Ciò significa che è possibile utilizzare le [espressioni di query LINQ](/dotnet/csharp/linq/index) e i metodi di estensione definiti nello spazio dei nomi **System. Linq** .
 
  Ad esempio:
 

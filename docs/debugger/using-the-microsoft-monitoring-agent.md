@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a06222c86ece31b18749394cf4590eedc4822f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536409"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Uso del Microsoft Monitoring Agent (C#, Visual Basic)
@@ -32,13 +32,13 @@ ms.locfileid: "85536409"
 
 3. [Passaggio 3: salvataggio degli eventi registrati](#SaveEvents)
 
-## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring"></a>Passaggio 1: configurare Microsoft Monitoring Agent
+## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring"></a> Passaggio 1: configurare Microsoft Monitoring Agent
 
  Configurare l'agente autonomo nel server Web in modo che il monitoraggio locale venga eseguito senza modificare l'applicazione. Se è si usa System Center 2012, vedere [Installazione di Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).
 
-### <a name="set-up-the-standalone-agent"></a><a name="SetUpStandaloneMMA"></a>Configurare l'agente autonomo
+### <a name="set-up-the-standalone-agent"></a><a name="SetUpStandaloneMMA"></a> Configurare l'agente autonomo
 
-1. Verificare che:
+1. Assicurarsi che:
 
     - Il server Web stia eseguendo [versioni supportate di Internet Information Services (IIS)](/previous-versions/system-center/system-center-2012-R2/dn465154(v=sc.12)).
 
@@ -65,7 +65,7 @@ ms.locfileid: "85536409"
 
 ### <a name="q--a"></a>Domande e risposte
 
-#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a>D: cosa accade se si dispone di Windows PowerShell 2,0?
+#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a> D: cosa accade se si dispone di Windows PowerShell 2,0?
  **R:** Si consiglia di usare PowerShell 3.0. In caso contrario, sarà necessario importare i cmdlet di PowerShell di Microsoft Monitoring Agent ogni volta che si esegue PowerShell. Non sarà neanche possibile accedere al contenuto scaricabile della Guida.
 
 1. Aprire una finestra del prompt dei comandi **Windows PowerShell ISE** o **Windows PowerShell** come amministratore.
@@ -76,7 +76,7 @@ ms.locfileid: "85536409"
 
 3. [Visitare TechNet](https://technet.microsoft.com/systemcenter/default) per ottenere il contenuto della Guida più recente.
 
-#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a>D: Ricerca per categorie configurare le autorizzazioni per il pool di applicazioni?
+#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> D: Ricerca per categorie configurare le autorizzazioni per il pool di applicazioni?
  **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Ad esempio:
 
 - Per configurare le autorizzazioni con il comando Windows **icacls** :
@@ -107,7 +107,7 @@ ms.locfileid: "85536409"
 
   7. Verificare che il pool di applicazioni disponga delle autorizzazioni di **lettura ed esecuzione**.
 
-## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a>Passaggio 2: avviare il monitoraggio dell'app
+## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> Passaggio 2: avviare il monitoraggio dell'app
  Per avviare il monitoraggio dell'applicazione usare il comando [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) di Windows PowerShell. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
 
 1. Nel server Web aprire una finestra del prompt dei comandi di **Windows PowerShell** o **Windows PowerShell ISE** come amministratore.
@@ -146,7 +146,7 @@ ms.locfileid: "85536409"
 
 ### <a name="q--a"></a>Domande e risposte
 
-#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>D: Ricerca per categorie ottenere la maggior parte dei dati senza rallentare l'applicazione?
+#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> D: Ricerca per categorie ottenere la maggior parte dei dati senza rallentare l'applicazione?
  **R:** con Microsoft Monitoring Agent è possibile raccogliere moltissimi dati e l'impatto sulle prestazioni dell'applicazione dipende dai dati che si sceglie di raccogliere e da come avviene la raccolta. Esistono dei metodi per ottenere la maggior quantità di dati possibile senza rallentare l'app:
 
 - Per le applicazioni Web e SharePoint, l'agente registra i dati per ogni applicazione in cui è condiviso il pool di applicazioni specificato. Ciò potrebbe rallentare qualsiasi applicazione in cui è condiviso lo stesso pool di applicazioni, anche se è possibile limitare la raccolta ai moduli per una singola applicazione. Per evitare di rallentare le altre applicazioni, inserire ogni applicazione nel proprio pool di applicazioni.
@@ -228,7 +228,7 @@ Il tipo `Employee` ha i seguenti attributi: `Id`, `Name`e `HomeAddress`. Esiste 
 
 L'agente registra valori per `id`, `Employee.Id`, `Employee.Name` e per l'oggetto `Employee` restituito dal metodo `AlterEmployee` . Tuttavia, l'agente non registra informazioni sull'oggetto `Address` , eccetto se era Null oppure no. L'agente non registra nemmeno i dati sulle variabili locali nel metodo `AlterEmployee` , a meno che non vengano usate da altri metodi come parametri; in questo caso vengono registrate come parametri di metodo.
 
-## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a>Passaggio 3: salvare gli eventi registrati
+## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a> Passaggio 3: salvare gli eventi registrati
  Quando si rileva un errore o un problema di prestazioni, salvare gli eventi registrati in un log IntelliTrace. L'agente crea il log solo se sono stati registrati degli eventi. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Salvataggio degli eventi registrati continuando il monitoraggio

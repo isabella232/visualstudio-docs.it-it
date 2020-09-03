@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
 ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916688"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
@@ -44,7 +44,7 @@ Dopo il completamento, la finestra di dialogo **Add Connected Services** (Aggiun
 
 1. Nella finestra di dialogo **Archiviazione di Azure** selezionare un account di archiviazione esistente, quindi **Aggiungi**.
 
-    Se è necessario creare un account di archiviazione, andare al passaggio successivo. In caso contrario, andare direttamente al passaggio 6.
+    Se è necessario creare un account di archiviazione, andare al passaggio successivo. In caso contrario, andare al passaggio 6.
 
     ![Aggiungere un account di archiviazione esistente al progetto l'elenco](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 

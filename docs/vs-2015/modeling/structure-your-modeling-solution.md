@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917320"
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
@@ -119,5 +119,5 @@ Ad esempio, se si usano spesso soluzioni con livelli presentazione, aziendale e 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire modelli e diagrammi nel controllo della versione](../modeling/manage-models-and-diagrams-under-version-control.md)
-[usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)
+[Gestire modelli e diagrammi nel controllo](../modeling/manage-models-and-diagrams-under-version-control.md) 
+ della versione [Usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)

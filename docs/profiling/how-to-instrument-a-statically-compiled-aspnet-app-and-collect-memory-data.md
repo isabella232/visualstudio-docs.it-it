@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327926"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di memoria tramite la riga di comando del profiler
@@ -65,7 +65,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    > [!NOTE]
    > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
 
-   | Opzione | Description |
+   | Opzione | Descrizione |
    | - | - |
    | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio facoltativo e il nome utente dell'account proprietario del processo di lavoro ASP.NET. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il nome è elencato nella colonna **Nome utente** della scheda **Processi** di Gestione attività di Windows. |
    | [/CrossSession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna ID sessione della scheda **processi** di gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -83,7 +83,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 - Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/GlobalOff/GlobalOn](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
@@ -104,7 +104,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **VSPerfCmd /shutdown**
 
-4. (Facoltativo). Cancellare le variabili di ambiente di profilatura. Digitare:
+4. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Digitare:
 
     **VSPerfCmd /globaloff**
 
@@ -112,6 +112,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **IISReset /start**
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

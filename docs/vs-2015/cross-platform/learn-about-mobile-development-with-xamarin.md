@@ -7,10 +7,10 @@ caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: a362bd4eef2a48667c67c03e940e213fc960418b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919011"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Altre informazioni sullo sviluppo per dispositivi mobili con Xamarin
@@ -61,13 +61,13 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 - Usare Xamarin.Forms per creare schermate per uso generico che offrono un'interfaccia utente e funzionalità simili in tutte le piattaforme, come le schermate di accesso, i moduli di contatto e i risultati di ricerca.  
   
-- Xamarin.Forms consente anche di usare un'ampia gamma di funzionalità di personalizzazione per adattare l'interfaccia utente a ogni piattaforma. È ad esempio possibile usare l'API OnPlatform sia dal codice che da XAML, creare una visualizzazione personalizzata, estendere un renderer esistente e creare un renderer personalizzato.  
+- Xamarin.Forms consente anche di usare un'ampia gamma di funzionalità di personalizzazione per adattare l'interfaccia utente a ogni piattaforma. È ad esempio possibile usare l'API OnPlatform, sia dal codice che da XAML, per creare una visualizzazione personalizzata, estendere un renderer esistente e creare un renderer personalizzato.  
   
 - Se necessario, usare Xamarin Native per creare schermate che usano funzionalità dell'interfaccia utente univoche di ogni piattaforma, ad esempio una schermata che usa funzionalità native per l'acquisizione da fotocamera e la manipolazione delle immagini.  
   
   È consigliabile iniziare sempre con una soluzione Xamarin.Forms per impostare il codice dell'interfaccia utente condiviso tra le piattaforme e poi usare le funzionalità di personalizzazione per gli adeguamenti specifici della piattaforma. Se e quando è necessario creare schermate interamente specifiche della piattaforma, è possibile aggiungerle singolarmente tramite Xamarin Native.  
   
-  Per altre informazioni:  
+  Per altre informazioni, vedere:  
   
 1. [Xamarin.Forms](/xamarin/xamarin-forms/) (xamarin.com) fornisce una breve panoramica e informazioni sui vantaggi e gli svantaggi di Xamarin.Forms rispetto ai livelli dell'interfaccia utente nativa (ovvero, Xamarin.iOS e Xamarin.Android).  
   
@@ -86,15 +86,15 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 1. **Emulatore Android.** A seconda della versione di Windows in uso, è consigliabile usare Visual Studio Emulator for Android di Microsoft o Xamarin Player, che offrono entrambi prestazioni elevate e supportano un'ampia gamma di funzionalità dei dispositivi:  
   
-    - **Computer con Windows 8 +:** è consigliabile usare [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)di Microsoft, installato con Visual Studio.  Il video dedicato a [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel 9, 5 minuti e 55 secondi) offre una panoramica e una dimostrazione.  
+    - **Computer con Windows 8 +:** è consigliabile usare [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)di Microsoft, installato con Visual Studio.  Il video [di Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (channel9, 55 secondi) offre una panoramica e una dimostrazione.  
   
     - **Windows 7 o versioni precedenti e Windows in esecuzione su Mac OS X**: usare [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
   
 2. **Simulatore iOS di Apple.** Per altre informazioni, leggere l'[introduzione al simulatore iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3. **Emulatore Windows Phone di Microsoft.** Per altre informazioni, leggere l' [Emulatore Windows Phone per Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3. **Emulatore Windows Phone Microsoft.** Per altre informazioni, leggere l' [Emulatore Windows Phone per Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-## <a name="components"></a> Deeper Dive: Xamarin Components  
+## <a name="deeper-dive-xamarin-components"></a><a name="components"></a> Approfondimento: componenti di Novell  
  *10 minuti*  
   
- Numerose funzionalità estese sono disponibili per le app Xamarin mediante i componenti di Xamarin. All'indirizzo [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) è disponibile per il download il catalogo completo, che include i componenti per controlli aggiuntivi dell'interfaccia utente e per l'autenticazione, oltre a un'ampia gamma di servizi cloud come Microsoft Azure e molto altro ancora.
+ Numerose funzionalità estese sono disponibili per le app Xamarin mediante i componenti di Xamarin. È possibile trovare il catalogo completo disponibile per il download in [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) , che include i componenti per altri controlli dell'interfaccia utente, l'autenticazione, un'ampia gamma di servizi cloud come Microsoft Azure e molto altro ancora.

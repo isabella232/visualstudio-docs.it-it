@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION . Documenti Microsoft
+title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738145"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Specifica dove si trova un assieme.
+Specifica la posizione in cui si trova un assembly.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,20 +54,20 @@ L'assembly si trova nello spazio dei nomi corrente.
 L'assembly si trova in una directory utente.
 
 `ALR_SHAREDDIR`\
-L'assembly si trova nella directory condivisa.
+L'assembly si trova in una directory condivisa.
 
 `ALR_REMOTEDIR`\
 L'assembly si trova in una directory remota.
 
 ## <a name="remarks"></a>Osservazioni
-Questi valori vengono restituiti dai metodi [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData.](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
+Questi valori vengono restituiti dai metodi [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .
 
-Questi valori possono essere `OR` combinati con l'operazione.
+Questi valori possono essere combinati con l' `OR` operazione.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015810"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Procedure dettagliate e esempi di sviluppo di SharePoint
@@ -32,4 +33,4 @@ ms.locfileid: "86015810"
 |[Procedure dettagliate sullo sviluppo per SharePoint](../sharepoint/sharepoint-development-walkthroughs.md)|Vengono elencate procedure dettagliate che offrono un'introduzione agli strumenti di sviluppo di SharePoint in Visual Studio.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Creare soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Creazione di soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)

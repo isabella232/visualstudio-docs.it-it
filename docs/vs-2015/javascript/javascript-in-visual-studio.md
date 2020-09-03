@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 778912c3149f9f146c01dbab15afa4fabeaa49b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852264"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
@@ -41,7 +41,7 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 ## <a name="whats-new-in-javascript"></a>Novità in JavaScript
  Nuove funzionalità per JavaScript sono elencate nella tabella seguente.
 
-|Caratteristica|Descrizione|
+|Feature|Descrizione|
 |-------------|-----------------|
 |Classi|La nuova sintassi supporta la dichiarazione delle [classi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Suggerimenti|I [suggerimenti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) consentono una codifica asincrona più semplice e chiara. I costruttori di suggerimenti sono supportati, con i metodi di utilità `all` e `race`.|
@@ -51,7 +51,7 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 |Miglioramenti dei valori letterali di oggetto|Gli oggetti ora supportano proprietà calcolate, definizioni di metodo concise e sintassi abbreviata per le proprietà il cui valore viene inizializzato su una variabile con lo stesso nome. Per altre informazioni, vedere [Creazione di oggetti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|
 |Proxy|I [proxy](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) abilitano il comportamento personalizzato per gli oggetti.|
 |Parametri rest|I parametri rest consentono di convertire in una matrice gli argomenti consecutivi in una chiamata di funzione. Per altre informazioni, vedere [Funzioni](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function).|
-|Operatore spread|L'[operatore spread](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) espande le espressioni iterabili in singoli argomenti. Ad esempio, `a.b(…array)` è quasi come `a.b.apply(a, array)`.|
+|Operatore spread|L' [operatore spread](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) ( `…` ) espande le espressioni iterable in singoli argomenti. Ad esempio, `a.b(…array)` è quasi come `a.b.apply(a, array)`.|
 |Simboli|Gli oggetti [Symbol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) consentono di aggiungere proprietà agli oggetti esistenti senza possibilità di interferenza con le proprietà di questi ultimi, senza alcuna visibilità imprevista e senza altre aggiunte non coordinate mediante altro codice.|
 |Stringhe modello|Le [stringhe modello](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) sono valori letterali stringa che consentono di valutare le espressioni e di concatenarle con il valore letterale stringa.|
 |Miglioramenti di Unicode|Sono stati apportati miglioramenti al supporto per Unicode. Ad esempio, un nuovo formato di sequenza di escape supporta i punti di codice "astrali" (punti di codice con più di quattro cifre esadecimali). Per altre informazioni, vedere [Caratteri speciali](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions#Types_of_special_characters).|
