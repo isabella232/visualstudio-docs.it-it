@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcc993ab7c127b16fda206047a1a985d1e003123
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663183"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Visualizzazione dei tipi e delle relazioni (Progettazione classi)
@@ -41,7 +41,7 @@ Progettazione classi usa i diagrammi classi per visualizzare i dettagli dei tipi
 
  Viene descritto come visualizzare le relazioni di ereditarietà tra tipi.
 
- [Procedura: Passare dalla notazione membro alla notazione associazione (Progettazione classi)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+ [Procedura: passare dalla notazione membro alla notazione associazione (Progettazione classi)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
 
  Viene descritto come passare dalla notazione membro alla notazione associazione.
 

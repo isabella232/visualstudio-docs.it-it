@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 8217b2ff48028f43c05c5590a293d358897c8651
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86475991"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
@@ -112,11 +112,11 @@ La tabella seguente illustra i diversi modi in cui è possibile trovare una corr
 | PublicKeyToken | Corrisponde agli assembly firmati dal token di chiave pubblica. |
 | Source (Sorgente) | Corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti. |
 | Attributo | Corrisponde a elementi con l'attributo specificato. Specificare il nome completo dell'attributo, ad esempio `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se si esclude l'attributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, il codice che usa funzionalità del linguaggio come `async`, `await`, `yield return` e le proprietà implementate automaticamente viene escluso dall'analisi code coverage. Per escludere il codice effettivamente generato, escludere solo l'attributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
-| Funzione | Corrisponde a procedure, funzioni o metodi in base al nome completo, incluso l'elenco di parametri. È inoltre possibile far corrispondere parte del nome utilizzando un' [espressione regolare](#regular-expressions).<br/><br/>Esempi:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`C++ |
+| Funzione | Corrisponde a procedure, funzioni o metodi in base al nome completo, incluso l'elenco di parametri. È inoltre possibile far corrispondere parte del nome utilizzando un' [espressione regolare](#regular-expressions).<br/><br/>Esempi:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` C++ |
 
 ### <a name="regular-expressions"></a>Espressioni regolari
 
-I nodi Includi ed Escludi usano espressioni regolari, che non sono uguali ai caratteri jolly. Tutte le corrispondenze fanno distinzione tra maiuscole e minuscole. Di seguito sono riportati alcuni esempi:
+I nodi Includi ed Escludi usano espressioni regolari, che non sono uguali ai caratteri jolly. Tutte le corrispondenze fanno distinzione tra maiuscole e minuscole. Ad esempio:
 
 - **.\*** corrisponde a una stringa di qualsiasi carattere
 
@@ -124,7 +124,7 @@ I nodi Includi ed Escludi usano espressioni regolari, che non sono uguali ai car
 
 - ** \\ ( \\ )** corrisponde alle parentesi "()"
 
-- **\\\\**corrisponde a un delimitatore di percorso di file " \\ "
+- **\\\\** corrisponde a un delimitatore di percorso di file " \\ "
 
 - **^** corrisponde all'inizio della stringa
 

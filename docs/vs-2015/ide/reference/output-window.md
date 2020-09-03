@@ -18,13 +18,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f17b91cc462b6f628100ffbf370fcdec2eb9888d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662188"
 ---
-# <a name="output-window"></a>Output (finestra)
+# <a name="output-window"></a>Finestra di output
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Nella finestra **Output** è possibile che vengano visualizzati messaggi di stato per diverse funzionalità dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment). Per aprire la finestra **Output**, nella barra dei menu scegliere **Visualizza/Output** oppure premere CTRL+ALT+O.
@@ -32,7 +32,7 @@ Nella finestra **Output** è possibile che vengano visualizzati messaggi di stat
 > [!WARNING]
 > La finestra di output non viene visualizzata nel menu nelle edizioni di Visual Studio Express. Per visualizzarla, utilizzare il tasto di scelta CTRL + ALT + O.
 
-## <a name="toolbar"></a>ToolBar
+## <a name="toolbar"></a>Barra degli strumenti
  **Mostra output da** Visualizza uno o più riquadri di output da visualizzare. Potrebbero essere disponibili diversi riquadri di informazioni, a seconda dello strumento dell'IDE da cui è stata usata la finestra **Output** per recapitare messaggi all'utente.
 
  **Trova messaggio nel codice** Sposta il punto di inserimento nell'editor di codice alla riga che contiene l'errore di compilazione selezionato.
@@ -45,15 +45,15 @@ Nella finestra **Output** è possibile che vengano visualizzati messaggi di stat
 
  **Imposta/Nascondi a capo automatico** Attiva e disattiva la funzionalità a capo automatico nel riquadro di **output** . Quando la funzione A capo automatico è attiva, il testo contenuto in voci particolarmente lunghe che si estende oltre l'area di visualizzazione verrà visualizzato nella riga successiva.
 
-## <a name="output-pane"></a>Riquadro Output
+## <a name="output-pane"></a>Riquadro di output
  Nel riquadro **Output** selezionato nell'elenco **Mostra output di** viene visualizzato l'output dell'origine indicata.
 
 ## <a name="routing-messages-to-the-output-window"></a>Routing dei messaggi alla finestra di output
  Per visualizzare la finestra **Output** ogni volta che si compila un progetto, nella finestra di dialogo **Generale, Progetti e soluzioni, Opzioni** selezionare **Mostra finestra di output a inizio compilazione**. Quindi, con un file di codice aperto per la modifica, scegliere i pulsanti **Vai al messaggio successivo** e **Vai al messaggio precedente** nella barra degli strumenti della finestra **Output** per selezionare le voci nel riquadro **Output**. Durante l'operazione, il punto di inserimento nell'editor di codice passa alla riga di codice in cui si è verificato il problema selezionato.
 
- Alcuni comandi e funzionalità dell'IDE richiamati nella [finestra di comando](../../ide/reference/command-window.md) recapitano l'output nella finestra **Output**. L'output di strumenti esterni, quali file con estensione bat e com, in genere visualizzato nella finestra del prompt dei comandi, viene indirizzato a un riquadro **Output** quando si seleziona l'opzione **Usa finestra di output** (vedere [Gestione di strumenti esterni](../../ide/managing-external-tools.md)). Nei riquadri **Output** possono essere visualizzati anche molti altri tipi di messaggi. Ad esempio, quando la sintassi Transact-SQL in una stored procedure viene controllata in base a un database di destinazione, i risultati vengono visualizzati nella finestra **Output**.
+ Alcune funzionalità e comandi IDE richiamati nella [finestra di comando](../../ide/reference/command-window.md) recapitano l'output alla finestra di **output** . L'output di strumenti esterni, quali file con estensione bat e com, in genere visualizzato nella finestra del prompt dei comandi, viene indirizzato a un riquadro **Output** quando si seleziona l'opzione **Usa finestra di output** (vedere [Gestione di strumenti esterni](../../ide/managing-external-tools.md)). Nei riquadri **Output** possono essere visualizzati anche molti altri tipi di messaggi. Ad esempio, quando la sintassi Transact-SQL in una stored procedure viene controllata in base a un database di destinazione, i risultati vengono visualizzati nella finestra **Output**.
 
- È anche possibile programmare applicazioni personalizzate per scrivere messaggi di diagnostica in fase di esecuzione in un riquadro **Output**. A tale scopo, usare i membri della classe <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace> nello spazio dei nomi <xref:System.Diagnostics> nella libreria di classi .NET Framework. I membri della classe <xref:System.Diagnostics.Debug> visualizzano l'output quando si compilano configurazioni di debug della soluzione o del progetto, mentre i membri della classe <xref:System.Diagnostics.Trace> visualizzano l'output quando si compilano configurazioni di debug o di rilascio. Per altre informazioni, vedere [Messaggi diagnostici nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md).
+ È anche possibile programmare applicazioni personalizzate per scrivere messaggi di diagnostica in fase di esecuzione in un riquadro **Output**. A tale scopo, usare i membri della classe <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace> nello spazio dei nomi <xref:System.Diagnostics> nella libreria di classi .NET Framework. I membri della classe <xref:System.Diagnostics.Debug> visualizzano l'output quando si compilano configurazioni di debug della soluzione o del progetto, mentre i membri della classe <xref:System.Diagnostics.Trace> visualizzano l'output quando si compilano configurazioni di debug o di rilascio. Per ulteriori informazioni, vedere la pagina relativa ai [messaggi di diagnostica nel finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md).
 
  In [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]  è possibile creare istruzioni ed eventi di compilazione personalizzati i cui avvisi ed errori vengono visualizzati e conteggiati nel riquadro **Output**. Premendo F1 su una riga di output, è possibile visualizzare un argomento della Guida appropriato. Per altre informazioni, vedere [Formattazione dell'output di un'istruzione di compilazione personalizzata o un evento di compilazione](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).
 

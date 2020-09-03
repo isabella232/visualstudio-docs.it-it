@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01ebd0dbfa8274b370a7e84b1033465e2be0b4a9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876034"
 ---
 # <a name="pick-activity-designer"></a>ActivityDesigner Pick
@@ -39,7 +39,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Pick> nell'intestazione. Il valore predefinito è Pick. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)
 - [Attività di selezione](/dotnet/framework/windows-workflow-foundation/pick-activity)

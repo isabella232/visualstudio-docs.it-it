@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor | Microsoft Docs
+title: 'IDebugFunctionObject:: CreateObjectNoConstructor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ea00035eb220ccd08590ceaea6db98944f4657a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179466"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Crea un oggetto con alcun costruttore.  
+Crea un oggetto senza costruttore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,18 +42,18 @@ int CreateObjectNoConstructor(
   
 #### <a name="parameters"></a>Parametri  
  `pClassObject`  
- [in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che rappresenta il tipo dell'oggetto da creare.  
+ in Oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il tipo dell'oggetto da creare.  
   
  `ppObject`  
- [out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto appena creato.  
+ out Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta l'oggetto appena creato.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una struttura o un tipo complesso (che non richiede un costruttore) che è un parametro alla funzione che è rappresentato dal [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfaccia.  
+## <a name="remarks"></a>Osservazioni  
+ Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una struttura o di un tipo complesso (che non richiede un costruttore) che rappresenta un parametro per la funzione rappresentata dall'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .  
   
- Se il parametro dell'oggetto richiede un costruttore, chiamare il [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) (metodo).  
+ Se il parametro dell'oggetto richiede un costruttore, chiamare il metodo [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

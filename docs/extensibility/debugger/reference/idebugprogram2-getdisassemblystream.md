@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgram2::GetDisassemblyStream . Documenti Microsoft
+title: 'IDebugProgram2:: GetDisassemblyStream | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2160f963ad1f3f37291519ced30b8096e33a6116
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722860"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
-Ottiene il flusso di disassembly per questo programma o una parte di questo programma.
+Ottiene il flusso di disassembly per il programma o una parte di questo programma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,19 +45,19 @@ int GetDisassemblyStream( 
 
 ## <a name="parameters"></a>Parametri
 `dwScope`\
-[in] Specifica un valore dall'enumerazione [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) che definisce l'ambito del flusso di disassembly.
+in Specifica un valore dell'enumerazione [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) che definisce l'ambito del flusso di Disassembly.
 
 `pCodeContext`\
-[in] Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta la posizione in cui iniziare il flusso di disassembly.
+in Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta la posizione in cui avviare il flusso di Disassembly.
 
 `ppDisassemblyStream`\
-[fuori] Restituisce un [oggetto IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) che rappresenta il flusso di disassembly.
+out Restituisce un oggetto [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) che rappresenta il flusso Disassembly.
 
 ## <a name="return-value"></a>Valore restituito
- In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_DISASM_NOTSUPPORTED` se il disassembly non è supportato per questa particolare architettura.
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_DISASM_NOTSUPPORTED` se il Disassembly non è supportato per questa architettura particolare.
 
 ## <a name="remarks"></a>Osservazioni
- Se `dwScopes` il parametro ha il `DSS_HUGE` flag dell'enumerazione [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) impostata, si prevede che il disassembly restituisca un numero elevato di istruzioni disassembly, ad esempio per un intero file o modulo. Se `DSS_HUGE` il flag non è impostato, si prevede che il disassemblaggio sia limitato a una piccola area, in genere quella di una singola funzione.
+ Se il `dwScopes` parametro ha il `DSS_HUGE` flag del set di enumerazione [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) , il disassembly deve restituire un numero elevato di istruzioni di Disassembly, ad esempio per un intero file o modulo. Se il `DSS_HUGE` flag non è impostato, il disassembly dovrebbe essere limitato a una piccola area, in genere quella di una singola funzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

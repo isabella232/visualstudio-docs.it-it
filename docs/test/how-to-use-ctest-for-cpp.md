@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: c429c9e676ead54bb9f168e3220bf2d4791fac63
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287233"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Come usare CTest per C++ in Visual Studio 2017 e versioni successive
@@ -34,6 +34,6 @@ La figura seguente mostra i risultati di un'esecuzione di CTest con il framework
 
 Se si usa CTest ma non gli adattatori Google o Boost, i risultati vengono visualizzati a livello di CTest anziché a livello del singolo metodo di test. È possibile eseguire il debug ed eseguire istruzione per istruzione eseguibili solo CTest, ma non sono supportate analisi dello stack per singoli test.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)

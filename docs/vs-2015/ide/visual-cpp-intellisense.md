@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 173020a95977bdae2ad3006ce23dea376fb9d22e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608816"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C++
@@ -24,37 +24,37 @@ In Visual Studio 2015 IntelliSense è disponibile per singoli file del codice e 
 ## <a name="intellisense-features-in-c"></a>Funzionalità IntelliSense in C++
  IntelliSense è un nome assegnato a un set di funzionalità che semplificano la scrittura di codice. Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono essere abilitate o disabilitate nella pagina delle proprietà accessibile tramite **Editor di testo, C/C++, Avanzate**.
 
- ![Strumenti, opzioni, editor di testo,&#47;c&#43;&#43;c, avanzate](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
+ ![Strumenti, opzioni, editor di testo, C&#47;C&#43;&#43;, avanzate](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
 
  Per accedere a IntelliSense, è possibile utilizzare le voci di menu e i tasti di scelta rapida illustrati nella figura seguente.
 
- ![Menu IntelliSense&#43; &#43; di Visual C](../ide/media/vs2015-cpp-intellisense-menu.png "vs2015_cpp_intellisense_menu")
+ ![Menu IntelliSense di Visual C&#43;&#43; ](../ide/media/vs2015-cpp-intellisense-menu.png "vs2015_cpp_intellisense_menu")
 
 ### <a name="statement-completion-and-member-list"></a>Elenco di completamento istruzioni e dei membri
  Quando si inizia a digitare una parola chiave, un tipo, una funzione, un nome di variabile o un altro elemento del programma che viene riconosciuto dal compilatore, l'editor visualizza un elenco di suggerimenti per completare la parola.
 
  Per un elenco delle icone e dei relativi significati, vedere [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md).
 
- ![Finestra di&#43; &#43; Word completa Visual C](../ide/media/vs2015-cpp-complete-word.png "vs2015_cpp_complete_word")
+ ![Finestra di Word completa di Visual C&#43;&#43; ](../ide/media/vs2015-cpp-complete-word.png "vs2015_cpp_complete_word")
 
  La prima volta che viene richiamato, l'elenco dei membri mostra solo i membri accessibili per il contesto corrente. Se successivamente si usa **CTRL+J**, vengono visualizzati tutti i membri indipendentemente dall'accessibilità. Se viene richiamato per la terza volta, viene visualizzato un elenco di elementi del programma ancora più ampio. È possibile disattivare il completamento delle istruzioni nella pagina **Opzioni generali di C/C++** .
 
- ![Elenco dei&#43; &#43; membri di Visual C](../ide/media/vs2015-cpp-list-members.png "vs2015_cpp_list_members")
+ ![Elenco dei membri di Visual C&#43;&#43; ](../ide/media/vs2015-cpp-list-members.png "vs2015_cpp_list_members")
 
 ### <a name="parameter-help"></a>Guida per i parametri
- Quando si digita una parentesi graffa di apertura di una chiamata di funzione o una parentesi angolare in una dichiarazione di variabile del modello di classe, l'editor visualizza una piccola finestra con i tipi di parametro per ogni overload del costruttore o della funzione. Il parametro corrente, sulla base della posizione del cursore, è visualizzato in grassetto. È possibile disattivare il completamento delle istruzioni nella pagina **Opzioni generali di C/C++** .
+ Quando si digita una parentesi graffa di apertura di una chiamata di funzione o una parentesi angolare in una dichiarazione di variabile del modello di classe, l'editor visualizza una piccola finestra con i tipi di parametro per ogni overload del costruttore o della funzione. Il parametro corrente, sulla base della posizione del cursore, è visualizzato in grassetto. È possibile disattivare il completamento delle istruzioni nella pagina **Opzioni generali di C/C++**.
 
- ![Guida per&#43; &#43; i parametri di Visual C](../ide/media/vs-2015-cpp-param-help.png "vs_2015_cpp_param_help")
+ ![Guida per i parametri di Visual C&#43;&#43; ](../ide/media/vs-2015-cpp-param-help.png "vs_2015_cpp_param_help")
 
 ### <a name="quick-info"></a>Informazioni rapide
  Quando si passa con il cursore del mouse su una variabile, viene visualizzata una piccola finestra inline che mostra le informazioni sul tipo e l'intestazione in cui è definito il tipo. Passare con il puntatore del mouse su una chiamata di funzione per visualizzare la firma della funzione. È possibile disattivare la funzionalità Informazioni rapide nella pagina **Editor di testo, C/C++, Avanzate**.
 
- ![Informazioni rapide Visual&#43; &#43; C](../ide/media/vs2015-cpp-quickinfo.png "vs2015_cpp_quickInfo")
+ ![Visual C&#43;&#43; informazioni rapide](../ide/media/vs2015-cpp-quickinfo.png "vs2015_cpp_quickInfo")
 
 ## <a name="error-squiggles"></a>Sottolineatura a zigzag per gli errori
  La presenza di una sottolineatura a zigzag sotto un elemento di programma (variabile, parola chiave, parentesi, nome di tipo e così via) serve a richiamare l'attenzione su un errore effettivo o potenziale nel codice. La sottolineatura a zigzag di colore verde appare quando si scrive una dichiarazione con prototipo per ricordare che non è ancora stata scritta l'implementazione. La sottolineatura a zigzag di colore viola appare in un progetto condiviso quando è presente un errore in codice attualmente non attivo, ad esempio quando si lavora nel contesto Windows ma si scrive codice errato in un contesto Android. La sottolineatura a zigzag di colore rosso indica che nel codice attivo è presente un errore o un avviso che è necessario risolvere.
 
- ![Errore di&#43; &#43; Visual C controllo ortografia durante](../ide/media/vs2015-cpp-error-quiggles.png "vs2015_cpp_error_quiggles")
+ ![Errore di&#43;&#43; di Visual C controllo ortografia durante](../ide/media/vs2015-cpp-error-quiggles.png "vs2015_cpp_error_quiggles")
 
 ## <a name="code-colorization-and-fonts"></a>Tipi di carattere e colori del codice
  I colori e i tipi di carattere predefiniti possono essere modificati nella pagina delle proprietà **Ambiente, Tipi di carattere e colori**. In questa pagina è possibile modificare i tipi di carattere per molte finestre dell'interfaccia utente, non solo per l'editor. Le impostazioni specifiche di C++ iniziano con "C++", mentre le altre impostazioni sono valide per tutti i linguaggi.
@@ -80,7 +80,7 @@ In Visual Studio 2015 IntelliSense è disponibile per singoli file del codice e 
 
   Tenere presente quanto segue:
 
-- Il ramo #ifdef sulla riga 6 è visualizzato in grigio per indicare l'area inattiva, perché *_ANDROID\\* \_ non è definito per il progetto iOS.
+- Il ramo #ifdef alla riga 6 è disattivato per indicare l'area inattiva, perché *_ANDROID \\ * \_ non è definito per il progetto iOS.
 
 - La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore HELLO, che ora ha una sottolineatura a zig-zag di colore rosso. Ciò è dovuto al fatto che nessun identificatore HELLO è definito nel progetto iOS attualmente attivo.
 
@@ -89,9 +89,9 @@ In Visual Studio 2015 IntelliSense è disponibile per singoli file del codice e 
 ## <a name="single-file-intellisense"></a>IntelliSense con singolo file
  IntelliSense è disponibile anche quando si apre un singolo file all'esterno di qualsiasi progetto. Per abilitare o disabilitare particolari funzionalità, passare a **Editor di testo, C/C++, Avanzate** e attivare o disattivare le funzionalità IntelliSense. Per configurare IntelliSense per singoli file che non fanno parte di un progetto, cercare l’argomento relativo all'**uso di IntelliSense ed esplorazione dei file non di progetto** nella sezione **Avanzate**. Vedere [Presentazione guidata di Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).
 
- ![IntelliSense per&#43; &#43; file singolo Visual C](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")
+ ![IntelliSense di Visual C&#43;&#43; file singolo](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")
 
- Per impostazione predefinita, IntelliSense con singolo file utilizza solo directory di inclusione per trovare i file di intestazione. Per aggiungere ulteriori directory, aprire il menu di scelta rapida del nodo della soluzione e aggiungere la directory all’elenco relativo al **codice sorgente di debug**, come illustrato nella figura seguente:
+ Per impostazione predefinita, IntelliSense con singolo file utilizza solo directory di inclusione per trovare i file di intestazione. Per aggiungere altre directory, aprire il menu di scelta rapida del nodo **Soluzione** e aggiungere la directory all’elenco Esegui debug dei file di origine, come illustrato nella figura seguente:
 
  ![Aggiunta di un percorso a un file di intestazione.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 

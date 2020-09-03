@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 483023fbd28da26d9967dd2d88bc37748d00f088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663993"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Utilizzo di elementi in XAML Designer
@@ -22,7 +22,7 @@ ms.locfileid: "72663993"
 Puoi aggiungere elementi come controlli, layout e forme alla tua app in XAML, nel codice o tramite la finestra di progettazione XAML. Questo argomento descrive come usare gli elementi nella finestra di progettazione XAML in Visual Studio o in Blend per Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Aggiunta di un elemento a un layout
- Per *layout* si intende il processo di ridimensionamento e posizionamento degli elementi in un'interfaccia utente. Per posizionare gli elementi visivi, è necessario inserirli in una classe [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) del layout. Una classe `Panel` contiene una proprietà figlio, ovvero una raccolta di tipi [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). È possibile usare vari elementi figlio di `Panel`, ad esempio [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) e [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) come contenitori di layout e per posizionare e disporre gli elementi in una pagina.
+ Per *layout* si intende il processo di ridimensionamento e posizionamento degli elementi in un'interfaccia utente. Per posizionare gli elementi visivi, è necessario inserirli in una classe [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) del layout. Una classe `Panel` contiene una proprietà figlio, ovvero una raccolta di tipi [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). È possibile utilizzare vari  `Panel` elementi figlio, ad esempio [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx)e [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), per fungere da contenitori di layout e per posizionare e disporre gli elementi in una pagina.
 
  Per impostazione predefinita, viene usato un pannello `Grid` come contenitore di layout di primo livello all'interno di una pagina o di un modulo. È possibile aggiungere pannelli di layout, controlli o altri elementi nel layout di pagina di primo livello.
 
@@ -37,7 +37,7 @@ Puoi aggiungere elementi come controlli, layout e forme alla tua app in XAML, ne
   - Nella **casella degli strumenti** fare clic su uno degli strumenti di disegno, ad esempio [Ellisse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) o [Rettangolo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx) e disegnare un elemento nel pannello attivo.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Modifica dell'ordine di disposizione degli elementi
- In presenza di due elementi sulla tavola da disegno nella finestra di progettazione XAML, un elemento verrà visualizzato davanti all'altro nell'ordine di disposizione. Alla fine dell'elenco di elementi nella finestra Struttura documento si trova l'elemento in primo piano, eccetto quando è impostata la proprietà **ZIndex** per un elemento. Quando si inserisce un elemento in una pagina, un modulo o un contenitore di layout, l'elemento viene automaticamente posizionato davanti agli altri nell'elemento contenitore attivo. Per modificare l'ordine degli elementi, è possibile usare i comandi di **Ordina** o trascinare gli elementi nella struttura a oggetti nella finestra Struttura documento.
+ In presenza di due elementi sulla tavola da disegno nella finestra di progettazione XAML, un elemento verrà visualizzato davanti all'altro nell'ordine di disposizione. Nella parte inferiore dell'elenco di elementi nella finestra Struttura documento si trova l'elemento di primo livello (ad eccezione di quando è impostata la proprietà **ZIndex** per un elemento). Quando si inserisce un elemento in una pagina, un modulo o un contenitore di layout, l'elemento viene automaticamente posizionato davanti agli altri nell'elemento contenitore attivo. Per modificare l'ordine degli elementi, è possibile usare i comandi di **Ordina** o trascinare gli elementi nella struttura a oggetti nella finestra Struttura documento.
 
 #### <a name="to-change-the-layering-order"></a>Per modificare l'ordine di disposizione
 
@@ -60,7 +60,7 @@ Puoi aggiungere elementi come controlli, layout e forme alla tua app in XAML, ne
 ## <a name="changing-the-alignment-of-an-element"></a>Modifica dell'allineamento di un elemento
  È possibile allineare elementi nella tavola da disegno usando i comandi di menu o trascinando gli elementi sulle guide di allineamento.
 
- Una *guida di allineamento* è un'indicazione visiva che agevola l'allineamento di un elemento in relazione ad altri elementi nell'app.
+ Una guida di *allineamento* è un segnale visivo che consente di allineare un elemento in relazione ad altri elementi nell'app.
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Per allineare due o più elementi tramite comandi di menu
 
@@ -119,7 +119,7 @@ Puoi aggiungere elementi come controlli, layout e forme alla tua app in XAML, ne
 
 #### <a name="to-reset-the-element-layout"></a>Per reimpostare il layout dell'elemento
 
-- Nella finestra Struttura documento o nella tavola da disegno fare clic con il pulsante destro del mouse sull'elemento, scegliere **Layout** e **Reimposta** *NomeProprietà*, dove *NomeProprietà* è la proprietà che si vuole reimpostare oppure scegliere **Layout**, **Reimposta tutto** per reimpostare tutte le proprietà di layout per l'elemento.
+- Nella finestra Struttura documento o nella tavola da disegno fare clic con il pulsante destro del mouse sull'elemento, scegliere **Layout** e **Reimposta ** *NomeProprietà*, dove *NomeProprietà* è la proprietà che si vuole reimpostare oppure scegliere **Layout**, **Reimposta tutto** per reimpostare tutte le proprietà di layout per l'elemento.
 
 ## <a name="see-also"></a>Vedere anche
- [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+ [Creazione di un'interfaccia utente tramite XAML Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

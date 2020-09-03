@@ -31,10 +31,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59f9fb1f628da6bc4d958fdca3843adebe61b798
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662135"
 ---
 # <a name="project-and-solution-file-types"></a>Tipi di file di soluzioni e di progetto
@@ -45,7 +45,7 @@ ms.locfileid: "72662135"
 ## <a name="solution-files-sln-and-suo"></a>File di soluzione (.sln e .suo)
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa due tipi di file (.sln e .suo) per archiviare le impostazioni specifiche delle soluzioni. Questi file, noti collettivamente come file di soluzione, forniscono a Esplora soluzioni le informazioni necessarie per visualizzare un'interfaccia grafica per la gestione dei file. Consentono all'utente di concentrarsi sui progetti e sugli obiettivi finali anziché sull'ambiente stesso ogni volta che si riprendono le attività di sviluppo.
 
-|Estensione|nome|DESCRIZIONE|
+|Estensione|Nome|Descrizione|
 |---------------|----------|-----------------|
 |sln|Soluzione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]|Organizza progetti, elementi di progetto ed elementi della soluzione nella soluzione.|
 |suo|Solution User Options|Tiene traccia delle personalizzazioni a livello dell'utente apportate in Visual Studio, ad esempio i punti di interruzione.|
@@ -61,4 +61,4 @@ ms.locfileid: "72662135"
  [Unicode](https://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)
 
 ## <a name="see-also"></a>Vedere anche
- [Solutions and Projects](../../ide/solutions-and-projects-in-visual-studio.md) (Soluzioni e progetti)
+ [Soluzioni e progetti](../../ide/solutions-and-projects-in-visual-studio.md)

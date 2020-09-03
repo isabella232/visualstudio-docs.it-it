@@ -35,10 +35,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b42c219620a669a8fa27a7ce847dc571a4075288
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662173"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
@@ -87,4 +87,4 @@ ms.locfileid: "72662173"
 |`$(TargetExt)`|Estensione di file del file di output principale per la compilazione. È incluso il punto '.' prima dell'estensione.|
 
 ## <a name="see-also"></a>Vedere anche
- [Specifica di eventi di compilazione personalizzati nella](../../ide/specifying-custom-build-events-in-visual-studio.md) [pagina eventi di compilazione di Visual StudioC#, Progettazione progetti ()](../../ide/reference/build-events-page-project-designer-csharp.md) [procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [procedura:C#specificare gli eventi di compilazione ()](../../ide/how-to-specify-build-events-csharp.md)
+ [Specifica di eventi di compilazione personalizzati nella](../../ide/specifying-custom-build-events-in-visual-studio.md) [pagina eventi di compilazione di Visual Studio, Progettazione progetti (c#)](../../ide/reference/build-events-page-project-designer-csharp.md) [procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [procedura: specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)

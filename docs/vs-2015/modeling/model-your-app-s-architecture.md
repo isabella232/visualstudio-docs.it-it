@@ -1,5 +1,5 @@
 ---
-title: Modellare l'&#39;architettura dell'app | Microsoft Docs
+title: Modellare l'architettura dell'app&#39;s | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41dbb7b996c32af10010694935cbd3660b462f73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609641"
 ---
-# <a name="model-your-app39s-architecture"></a>Modellare l'&#39;architettura dell'app
+# <a name="model-your-app39s-architecture"></a>Modellare l'architettura dell'app&#39;s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per garantire che il sistema software o l'applicazione soddisfi le esigenze degli utenti, è possibile creare modelli in Visual Studio come parte della descrizione della struttura complessiva e del comportamento del sistema o dell'applicazione software. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.
+Per garantire che il sistema software o l'applicazione soddisfi le esigenze degli utenti, è possibile creare modelli in Visual Studio come parte della descrizione della struttura complessiva e del comportamento del sistema software o dell'applicazione. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -36,7 +36,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
 - [Schemi di progettazione](#Patterns) e convenzioni usati in tutte le progettazioni dei componenti. Un modello descrive un particolare approccio per realizzare un obiettivo di programmazione. Usando gli stessi schemi in tutta una progettazione, il team può ridurre il costo delle modifiche e dello sviluppo di nuovo software.
 
-## <a name="Structure"></a>Progettazione di alto livello
+## <a name="high-level-design"></a><a name="Structure"></a> Progettazione di alto livello
  Un progetto di alto livello descrive i componenti principali del sistema e il modo in cui interagiscono tra loro per raggiungere gli obiettivi della progettazione. Le attività nell'elenco seguente sono coinvolte nello sviluppo della progettazione di alto livello, anche se non necessariamente in una determinata sequenza.
 
  Se si sta aggiornando il codice esistente, è possibile iniziare descrivendo i componenti principali. Verificare di comprendere le modifiche ai requisiti dell'utente e quindi aggiungere o modificare le interazioni tra i componenti. Se si sta sviluppando un nuovo sistema, iniziare individuando le funzionalità principali di esigenze degli utenti. È possibile esplorare le sequenze di interazioni per i casi di utilizzo principali e quindi consolidare le sequenze in una progettazione del componente.
@@ -53,7 +53,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
 - [Modello di dati di componenti e interfacce](#Data). È possibile creare diagrammi classi per descrivere le informazioni passate tra componenti e archiviate all'interno dei componenti.
 
-## <a name="Requirements"></a>Informazioni sui requisiti
+## <a name="understanding-the-requirements"></a><a name="Requirements"></a> Informazioni sui requisiti
  La progettazione di alto livello di un'applicazione completa viene sviluppata più efficacemente con un modello requisiti o altra descrizione delle esigenze degli utenti. Per ulteriori informazioni sui modelli di requisiti, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).
 
  Se il sistema che si sta sviluppando è un componente in un sistema più grande, parte o tutti i requisiti potrebbero essere incorporati nelle interfacce di programmazione.
@@ -78,7 +78,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
   La quantità di dettagli che devono essere inseriti in un modello di requisiti o architettonico dipende dalla scala del progetto e dalle dimensioni e dalla distribuzione del team. Un piccolo team su un progetto breve non po' andare oltre il disegno di un diagramma classi dei concetti aziendali e alcuni schemi progettuali; un progetto di grandi dimensioni distribuito su più aree ha bisogno di più dettagli.
 
-## <a name="BigDecisions"></a>Modelli architetturali
+## <a name="architectural-patterns"></a><a name="BigDecisions"></a> Modelli architetturali
  Nelle prime fasi di sviluppo è necessario scegliere le principali tecnologie e gli elementi da cui dipende la progettazione. Le aree in cui devono essere apportate queste scelte includono quanto segue:
 
 - Scelte di tecnologia di base, ad esempio la scelta tra un database e un file system e la scelta tra un'applicazione di rete e un client Web e così via.
@@ -91,7 +91,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
   Le selezioni effettuate influiscono sulla modalità di utilizzo e di interpretazione del modello architettonico. Ad esempio, in un sistema che usa un database, le associazioni in un diagramma classi potrebbero rappresentare relazioni o chiavi esterne nel database, mentre in un sistema basato su file XML, le associazioni potrebbero indicare riferimenti incrociati che usano XPath. In un sistema distribuito i messaggi in un diagramma di sequenza possono rappresentare messaggi su una connessione; in un'applicazione indipendente, possono rappresentare chiamate di funzione.
 
-## <a name="Components"></a>Componenti e relative interfacce
+## <a name="components-and-their-interfaces"></a><a name="Components"></a> Componenti e relative interfacce
  Le indicazioni principali di questa sezione sono le seguenti:
 
 - Creare diagrammi dei componenti per mostrare le parti principali del sistema.
@@ -107,7 +107,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 ### <a name="components"></a>Componenti
  Le viste centrali di un modello dell'architettura sono i diagrammi dei componenti che mostrano le parti principali del sistema e le modalità di dipendenza tra loro. Per ulteriori informazioni sui diagrammi dei componenti, vedere [diagrammi dei componenti UML: riferimenti](../modeling/uml-component-diagrams-reference.md).
 
- ![Diagramma componenti UML che mostra parti](../modeling/media/uml-barecomponent.png "UML_BareComponent")
+ ![Diagramma dei componenti UML con parti](../modeling/media/uml-barecomponent.png "UML_BareComponent")
 
  Un diagramma dei componenti tipico per un sistema di grandi dimensioni può includere componenti come i seguenti:
 
@@ -178,7 +178,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
   L'utilizzo di interfacce richieste è preferibile all'utilizzo delle parti. Sebbene la progettazione può richiedere più tempo, il sistema risultante è più flessibile. È anche più semplice testare separatamente i componenti. In questo modo sono possibili meno accoppiamenti nei piani di sviluppo.
 
-## <a name="Interactions"></a>Interazioni tra componenti
+## <a name="interactions-between-components"></a><a name="Interactions"></a> Interazioni tra componenti
  Le indicazioni principali di questa sezione sono le seguenti:
 
 - Identificare i casi di utilizzo del sistema.
@@ -218,14 +218,14 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
  È utile aggiungere commenti a diagrammi di attività o di sequenza, per prendere nota del risultato ottenuto dopo ogni operazione. È anche possibile scrivere l'effetto di ogni operazione nella relativa proprietà **postcondizione locale** .
 
-### <a name="Data"></a>Modello di dati dei componenti e delle interfacce
+### <a name="data-model-of-the-components-and-interfaces"></a><a name="Data"></a> Modello di dati dei componenti e delle interfacce
  Definire i parametri e restituire valori di ogni operazione nelle interfacce del componente. Laddove le operazioni rappresentano chiamate come ad esempio richieste di servizio Web, i parametri sono quelle informazioni che vengono inviate come parte della richiesta. Quando più valori vengono restituiti da un'operazione, è possibile usare i parametri con la proprietà **Direction** impostata su **out**.
 
  Ogni parametro e il valore restituito dispongono di un tipo. È possibile definire questi tipi mediante Diagrammi classi UML. Non è necessario rappresentare il dettaglio di implementazione in questi diagrammi. Se, ad esempio, si descrivono i dati trasmessi come XML, è possibile usare un'associazione per rappresentare qualsiasi tipo di riferimento incrociato tra nodi XML e usare classi per rappresentare i nodi.
 
  Usare i commenti per descrivere i vincoli aziendali sulle associazioni e sugli attributi. Se, ad esempio, tutti gli elementi nell'ordine del cliente devono provenire dallo stesso fornitore, è possibile descrivere tale situazione mediante il riferimento alle associazioni tra gli articoli dell'ordine e gli elementi nel catalogo dei prodotti e tra l'elemento del catalogo e il fornitore.
 
-## <a name="Patterns"></a>Modelli di progettazione
+## <a name="design-patterns"></a><a name="Patterns"></a> Modelli di progettazione
  Uno schema progettuale è una struttura sulla modalità di progettazione di un particolare aspetto del software, specialmente uno che ricorre in parti diverse del sistema. Adottando un approccio uniforme nel progetto, è possibile ridurre il costo di progettazione, garantire la coerenza nell'interfaccia utente e ridurre i costi di comprensione e modifica del codice.
 
  Alcuni schemi progettuali generali, ad esempio Observer sono ben conosciuti e ampiamente applicabili. Sono anche disponibili modelli che possono essere applicati solo al progetto. Ad esempio, in un sistema di vendite Web, saranno disponibili diverse operazioni nel codice dove vengono apportate modifiche all'ordine del cliente. Per assicurarsi che lo stato dell'ordine venga visualizzato in modo accurato in ogni fase, tutte queste operazioni devono seguire un particolare protocollo per aggiornare il database.
@@ -236,7 +236,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
  Uno schema progettuale viene descritto in un documento e in genere include le seguenti parti:ne viene descritto in un documento e in genere include le seguenti parti:
 
-- Nome.
+- Name.
 
 - Descrizione del contesto in cui è applicabile. In base a quali criteri uno sviluppatore deve pensare di applicare questo modello?
 

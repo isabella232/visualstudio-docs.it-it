@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1e3f4df9a7a885245e40f7e9fec1b0da207ada39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662303"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opzioni, Editor di testo, C#, IntelliSense
@@ -32,16 +32,16 @@ ms.locfileid: "72662303"
 Usare la pagina delle proprietà **IntelliSense** per modificare le impostazioni che hanno effetto sul comportamento di IntelliSense per Visual C#. È possibile accedere alla pagina delle proprietà **IntelliSense** facendo clic su **Opzioni** nel menu **Strumenti**, quindi su **C#** nella cartella **Editor di testo** e infine su **IntelliSense**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  La pagina delle proprietà **IntelliSense** include le proprietà seguenti:
 
 ## <a name="completion-lists"></a>Elenchi di completamento
- **Mostra elenco di completamento dopo la digitazione di un carattere** Quando questa opzione è selezionata, IntelliSense visualizza automaticamente l'elenco di completamento quando si inizia a digitare. Quando questa opzione non è selezionata, il completamento di IntelliSense è ancora disponibile tramite il menu **IntelliSense** o premendo CTRL+BARRA SPAZIATRICE.
+ **Mostra elenco di completamento dopo la digitazione di un carattere** Quando questa opzione è selezionata, IntelliSense visualizza automaticamente l'elenco di completamento quando si inizia a digitare. Quando questa opzione non è selezionata, il completamento di IntelliSense è ancora disponibile dal menu **IntelliSense** o premendo CTRL + barra spaziatrice.
 
- **Inserire parole chiave negli elenchi di completamento** Quando questa opzione è selezionata, IntelliSense aggiunge C# le parole chiave, ad esempio, [Class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), all'elenco di completamento.
+ **Inserire parole chiave negli elenchi di completamento** Quando questa opzione è selezionata, IntelliSense aggiunge le parole chiave di C#, ad esempio, [Class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), all'elenco di completamento.
 
- **Inserire frammenti di codice negli elenchi di completamento** Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per C# i frammenti di codice all'elenco di completamento. Se l'alias del frammento di codice corrisponde a una parola chiave, ad esempio [class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), la parola chiave viene sostituita dal collegamento. Per altre informazioni, vedere [Frammenti di codice Visual C#](../../ide/visual-csharp-code-snippets.md).
+ **Inserire frammenti di codice negli elenchi di completamento** Quando questa opzione è selezionata, IntelliSense aggiunge gli alias per i frammenti di codice C# all'elenco di completamento. Se l'alias del frammento di codice corrisponde a una parola chiave, ad esempio [class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), la parola chiave viene sostituita dal collegamento. Per altre informazioni, vedere [Frammenti di codice Visual C#](../../ide/visual-csharp-code-snippets.md).
 
 ## <a name="selection-in-completion-lists"></a>Selezione negli elenchi di completamento
  **Commit digitando i caratteri seguenti:** Specifica tutti i caratteri che eseguono il completamento automatico IntelliSense per l'elemento selezionato nell'elenco di completamento, dopo la digitazione.

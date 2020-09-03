@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 245b453a3020e79b924cb8058ff392bd59673402
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662128"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Progetti e soluzioni, Opzioni (finestra di dialogo)
@@ -25,14 +25,14 @@ ms.locfileid: "72662128"
 Imposta il percorso predefinito delle cartelle di progetto [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e determina il comportamento predefinito della finestra **Output**, dell'**Elenco attività** e di **Esplora soluzioni** durante lo sviluppo e la compilazione dei progetti. Per accedere a questa finestra di dialogo, fare clic su **Strumenti/Opzioni**, espandere **Progetti e soluzioni** e fare clic su **Generale**.
 
 > [!NOTE]
-> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questo argomento della Guida è stato creato tenendo presente le **Impostazioni generali per lo sviluppo**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questo argomento della Guida è stato creato tenendo presente le **Impostazioni generali per lo sviluppo**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="settings"></a>Impostazioni
  **Percorso progetti** Imposta il percorso predefinito in cui vengono creati i nuovi progetti e le cartelle e le directory della soluzione. Anche diverse finestre di dialogo usano il percorso impostato in questa opzione come punto di partenza della cartella. Ad esempio, la finestra di dialogo Apri progetto usa questo percorso per il collegamento Progetti.
 
- **Percorso modelli di progetto utente** Imposta il percorso predefinito usato dalla finestra di dialogo **nuovo progetto** per creare l'elenco di **modelli personali**. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+ **Percorso modelli di progetto utente** Imposta il percorso predefinito usato dalla finestra di dialogo **nuovo progetto** per creare l'elenco di **modelli personali**. Per altre informazioni, vedere [procedura: individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
- **Percorso modelli di elemento utente** Imposta il percorso predefinito usato dalla finestra di dialogo **Aggiungi nuovo elemento** per creare l'elenco di **modelli personali**. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+ **Percorso modelli di elemento utente** Imposta il percorso predefinito usato dalla finestra di dialogo **Aggiungi nuovo elemento** per creare l'elenco di **modelli personali**. Per altre informazioni, vedere [procedura: individuare e organizzare modelli](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
  **Mostra sempre elenco errori se la compilazione termina con errori** Apre la finestra di **Elenco errori** al completamento della compilazione, solo se non è stato possibile compilare un progetto. Vengono visualizzati gli errori che si sono verificati durante il processo di compilazione. Quando questa opzione è deselezionata, gli errori si verificano ugualmente, ma la finestra non verrà aperta una volta completata la compilazione. Questa opzione è attivata per impostazione predefinita.
 
@@ -50,7 +50,7 @@ Imposta il percorso predefinito delle cartelle di progetto [!INCLUDE[vsprvs](../
 
  **Mostra finestra di output all'avvio della compilazione** Visualizza automaticamente il Finestra di output nell'IDE all'inizio delle compilazioni di soluzioni. Per altre informazioni, vedere [Procedura: Controllare la finestra di output](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Questa opzione è attivata per impostazione predefinita.
 
- **Richiedi ridenominazione simbolica quando i file vengono rinominati** Quando questa opzione è selezionata, viene visualizzata una finestra di messaggio in cui viene chiesto se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] necessario rinominare anche tutti i riferimenti nel progetto all'elemento di codice.
+ **Richiedi ridenominazione simbolica quando i file vengono rinominati** Quando questa opzione è selezionata, viene visualizzata una finestra di messaggio in cui viene chiesto se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rinominare anche tutti i riferimenti nel progetto all'elemento di codice.
 
 ## <a name="see-also"></a>Vedere anche
- [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+ [Finestra di dialogo Opzioni, progetti e soluzioni, compila ed Esegui](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

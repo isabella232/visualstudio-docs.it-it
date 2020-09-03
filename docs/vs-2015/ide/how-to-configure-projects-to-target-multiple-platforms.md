@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb759faff99b641f24df87f73bc1d3d52b6635cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663555"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedura: configurare progetti per piattaforme di destinazione multiple
@@ -29,18 +29,18 @@ ms.locfileid: "72663555"
 
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Per impostare una piattaforma diversa come destinazione della configurazione
 
-1. Nel menu **Compila** fare clic su **Gestione configurazione**.
+1. Scegliere **Configuration Manager** dal menu **Compila**.
 
-2. Nella casella **Piattaforma soluzione attiva** selezionare la piattaforma che si vuole impostare come destinazione della soluzione oppure selezionare **\<Nuovo>** per creare una nuova piattaforma. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compila l'applicazione impostando come destinazione la piattaforma specificata come piattaforma attiva nella finestra di dialogo **Gestione configurazione**.
+2. Nella **casella Piattaforma soluzione attiva**selezionare la piattaforma di destinazione della soluzione oppure selezionare **\<New>** per creare una nuova piattaforma. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compila l'applicazione impostando come destinazione la piattaforma specificata come piattaforma attiva nella finestra di dialogo **Gestione configurazione**.
 
 ## <a name="removing-a-platform"></a>Rimozione di una piattaforma
  Se una piattaforma non è più necessaria, è possibile rimuoverla usando la finestra di dialogo Gestione configurazione. Verranno rimosse tutte le impostazioni di soluzione e progetto configurate per la combinazione di configurazione e destinazione.
 
 #### <a name="to-remove-a-platform"></a>Per rimuovere una piattaforma
 
-1. Nel menu **Compila** fare clic su **Gestione configurazione**.
+1. Scegliere **Configuration Manager** dal menu **Compila**.
 
-2. Nella casella **Piattaforma soluzione attiva** selezionare **\<Modifica>** . Viene visualizzata la finestra di dialogo **Modifica piattaforme soluzione**.
+2. Nella **casella Piattaforma soluzione attiva**selezionare **\<Edit>** . Viene visualizzata la finestra di dialogo **Modifica piattaforme soluzione**.
 
 3. Fare clic sulla piattaforma da rimuovere e quindi su **Rimuovi**.
 
