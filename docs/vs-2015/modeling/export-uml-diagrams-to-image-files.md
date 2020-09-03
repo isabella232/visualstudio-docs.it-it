@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669661"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Esportare diagrammi UML nei file di immagine
@@ -29,7 +29,7 @@ ms.locfileid: "72669661"
 > [!NOTE]
 > Per correggere questo codice come un comando di menu, è necessario includerlo in un componente MEF. Per altre informazioni, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
- Il codice USA innanzitutto [IShape. GetObject](/previous-versions/ee789371(v=vs.140)) per ottenere la <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> dell'implementazione sottostante. Questo tipo dispone di un metodo <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.
+ Il codice USA innanzitutto [IShape. GetObject](/previous-versions/ee789371(v=vs.140)) per ottenere l'oggetto <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> dell'implementazione sottostante. Questo tipo dispone di un metodo <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.
 
 ```
 namespace SaveToImage

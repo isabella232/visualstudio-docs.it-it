@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8304e573f64671936eee2ce922b904b41187aad2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669849"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definizione di forme e connettori
@@ -21,7 +21,7 @@ ms.locfileid: "72669849"
 
 Per visualizzare le informazioni su un diagramma in un linguaggio specifico di dominio (DSL), sono disponibili numerosi tipi base di forme.
 
-## <a name="shapeTypes"></a>Tipi di base di forme e connettori
+## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> Tipi di base di forme e connettori
  Un diagramma DSL Mostra una raccolta di *forme* intercollegate da linee o *connettori*.  In genere, ma non sempre:
 
 - Le forme sono la rappresentazione visibile di elementi modello.
@@ -45,5 +45,5 @@ Per visualizzare le informazioni su un diagramma in un linguaggio specifico di d
 |Corsie|Le corsie sono una partizione orizzontale o verticale di un diagramma. Le corsia rimane sempre sotto le altre forme nel diagramma.<br /><br /> In genere, gli elementi modello della corsia sono associati a un elemento padre nel modello radice e gli altri elementi sono associati agli elementi padre dei primi. Per un esempio, creare un DSL dal modello di soluzione Flusso attività.|
 |Connettori|Le linee tracciate tra le forme rappresentano in genere relazioni di riferimento. Sono disponibili opzioni per impostare un connettore come diritto o rettilineo e con diversi tipi di punta della freccia.|
 
-## <a name="shapeInheritance"></a>Ereditarietà della forma
+## <a name="shape-inheritance"></a><a name="shapeInheritance"></a> Ereditarietà della forma
  Una forma può ereditare da un'altra forma. Tuttavia, è necessario che le forme siano dello stesso tipo. Ad esempio, solo una forma geometrica può ereditare da una forma geometrica. Le forme ereditate mantengono i raggruppamenti e gli elementi Decorator della relativa forma di base. I connettori possono invece ereditare dai connettori.

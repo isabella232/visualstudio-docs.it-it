@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f620cc2bd189dccf067c6276f760d21cde5cf05e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669511"
 ---
 # <a name="xml-document-properties-properties-window"></a>Proprietà dei documenti XML, finestra Proprietà
@@ -26,7 +26,7 @@ Nella finestra **Proprietà** vengono fornite informazioni di base sul documento
 
  **Codifica** Codifica dei caratteri per il file. Modificando questa proprietà si modifica anche l'attributo della codifica nella dichiarazione XML e viceversa. La nuova codifica verrà usata per codificare il file quando viene salvato.
 
- **Input** di Documento di input associato al foglio di stile XSLT. Viene usato dal comando **output ShowXSLT** . È possibile selezionare un documento utilizzando il pulsante Sfoglia ( **..** .).
+ **Input** di Documento di input associato al foglio di stile XSLT. Viene usato dal comando **output ShowXSLT** . È possibile selezionare un documento utilizzando il pulsante Sfoglia (**..**.).
 
  Questa proprietà è visibile solo quando il file XSLT è correntemente attivo nella finestra dell'editor.
 
@@ -38,7 +38,7 @@ Nella finestra **Proprietà** vengono fornite informazioni di base sul documento
 
  È possibile anche immettere il percorso degli schemi. Se vengono specificati più schemi, ogni singolo percorso di schema deve essere racchiuso tra virgolette.
 
- **Foglio di stile** File XSLT utilizzato per trasformare il documento quando viene utilizzato il comando **Mostra output XSLT** . Se questo campo è vuoto quando si utilizza il comando **Mostra output XSLT** , l'editor utilizzerà il valore specificato nell'istruzione di elaborazione `xml-stylesheet` del documento oppure verrà richiesto di specificare il nome del file.
+ **Foglio di stile** File XSLT utilizzato per trasformare il documento quando viene utilizzato il comando **Mostra output XSLT** . Se questo campo è vuoto quando si utilizza il comando **Mostra output XSLT** , l'editor utilizzerà il valore specificato nell' `xml-stylesheet` istruzione di elaborazione del documento oppure verrà richiesto di specificare il nome del file.
 
  Quando si modifica un file XSLT, questa proprietà può essere utilizzata per specificare che deve essere utilizzato un foglio di stile diverso quando si seleziona il comando **Mostra output XSLT** o **debug XSLT** . Ad esempio, è possibile eseguire tale operazione quando si modifica un foglio di stile incluso in un foglio di stile padre.
 

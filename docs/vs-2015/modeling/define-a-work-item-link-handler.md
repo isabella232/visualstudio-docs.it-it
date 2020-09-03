@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669927"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definire un gestore dei collegamenti agli elementi di lavoro
@@ -34,9 +34,9 @@ ms.locfileid: "72669927"
 
 1. Creare un progetto di libreria di classi, aggiungendolo a una soluzione VSIX esistente oppure creando una nuova soluzione.
 
-    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+    1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
-    2. In **modelli installati**espandere **Visual C#**  o **Visual Basic**, quindi nella colonna centrale fare clic su **libreria di classi**.
+    2. In **modelli installati**espandere **Visual C#** o **Visual Basic**, quindi nella colonna centrale fare clic su **libreria di classi**.
 
     3. Impostare **Soluzione** per indicare se si desidera creare una nuova soluzione o aggiungere un componente a una soluzione VSIX che è già stata aperta.
 
@@ -44,7 +44,7 @@ ms.locfileid: "72669927"
 
 2. Creare un progetto VSIX salvo il caso in cui la soluzione ne contenga già uno.
 
-    1. In **Esplora soluzioni**scegliere **Aggiungi**dal menu di scelta rapida della soluzione e quindi fare clic su **Nuovo progetto**.
+    1. In **Esplora soluzioni**scegliere **Aggiungi**, **nuovo progetto**dal menu di scelta rapida della soluzione.
 
     2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**, quindi selezionare **Extensibility**. Nella colonna centrale scegliere **Progetto VSIX**.
 
@@ -60,11 +60,11 @@ ms.locfileid: "72669927"
 
     3. Nella scheda **Asset** scegliere **Nuovo**e nella finestra di dialogo impostare le opzioni seguenti:
 
-         **Tipo** = **Componente MEF**
+         **Tipo**  =  di **Componente MEF**
 
-         **Origine** = **Progetto nella soluzione corrente**
+         **Origine**  =  dati **Progetto nella soluzione corrente**
 
-         **Progetto** = *Progetto di libreria di classi*
+         **Progetto**  =  di *Progetto di libreria di classi*
 
 ## <a name="defining-the-work-item-link-handler"></a>Definizione di un gestore dei collegamenti agli elementi di lavoro
  Eseguire tutte le attività seguenti nel progetto di libreria di classi.
@@ -82,12 +82,12 @@ ms.locfileid: "72669927"
 
  `System.ComponentModel.Composition`
 
- `System.Drawing`-usato dal codice di esempio
+ `System.Drawing` -usato dal codice di esempio
 
- Se non è possibile trovare uno di questi riferimenti nella scheda **.NET** della finestra di dialogo **Aggiungi riferimento** , utilizzare la scheda Sfoglia per trovarla in \Programmi\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies \\.
+ Se non è possibile trovare uno di questi riferimenti nella scheda **.NET** della finestra di dialogo **Aggiungi riferimento** , utilizzare la scheda Sfoglia per trovarla in \Programmi\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies \\ .
 
 ### <a name="import-the-work-item-namespace"></a>Importare lo spazio dei nomi dell'elemento di lavoro
- Nei **riferimenti**del progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiungere riferimenti agli assembly seguenti:
+ Nei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **riferimenti**del progetto aggiungere riferimenti agli assembly seguenti:
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-     **Risoluzione dei problemi**: se non viene avviata una nuova [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.
+     **Risoluzione dei problemi**: se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non viene avviato un nuovo, verificare che il progetto VSIX sia impostato come progetto di avvio della soluzione.
 
 2. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.
 
@@ -206,7 +206,7 @@ public void OnWorkItemCreated(
 ```
 
 ### <a name="listening-for-link-creation"></a>Attesa della creazione di collegamenti
- `OnWorkItemLinked` viene chiamato subito dopo la creazione di un collegamento, sia nel caso di collegamento a un nuovo elemento di lavoro che a un elemento esistente. Viene chiamato una volta per ogni elemento di lavoro.
+ `OnWorkItemLinked` viene chiamato subito dopo la creazione di un collegamento. sia nel caso di collegamento a un nuovo elemento di lavoro che a un elemento esistente. Viene chiamato una volta per ogni elemento di lavoro.
 
 ```
 public void OnWorkItemLinked
@@ -224,7 +224,7 @@ public void OnWorkItemLinked
 > Per far funzionare questo esempio, è necessario aggiungere un riferimento di progetto a `System.Drawing.dll` e importare lo spazio dei nomi `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Tuttavia, queste aggiunte non sono necessarie per altre implementazioni di `OnWorkItemLinked`.
 
 ### <a name="listening-for-link-removal"></a>Attesa della rimozione di collegamenti
- `OnWorkItemRemoved` viene chiamato una volta prima dell'eliminazione di ogni collegamento di elemento di lavoro. Se viene eliminato un elemento del modello, verranno rimossi tutti i relativi collegamenti.
+ `OnWorkItemRemoved` viene chiamato una volta prima di ogni collegamento a un elemento di lavoro che viene eliminato. Se viene eliminato un elemento del modello, verranno rimossi tutti i relativi collegamenti.
 
 ```
 public void OnWorkItemRemoved

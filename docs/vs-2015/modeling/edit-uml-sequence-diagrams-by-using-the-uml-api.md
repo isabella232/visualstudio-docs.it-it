@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669706"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modificare i diagrammi di sequenza UML usando l'API UML
@@ -55,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  Per altre informazioni, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ### <a name="getting-the-context"></a>Recupero del contesto
- Se si sta modificando un'interazione come parte di un comando o di un gestore movimenti in un diagramma di sequenza, è possibile ottenere un riferimento al contesto. Esempio:
+ Se si sta modificando un'interazione come parte di un comando o di un gestore movimenti in un diagramma di sequenza, è possibile ottenere un riferimento al contesto. Ad esempio:
 
 ```
 [SequenceDesignerExtension]
@@ -120,11 +120,11 @@ public void Execute (IMenuCommand command)
 
 - `ISequenceDiagram.UpdateShapePositions()` regola le posizioni delle forme inserite o spostate di recente e le relative forme adiacenti.
 
-- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` ridisegna l'intero diagramma. È possibile usare il parametro per specificare il riposizionamento delle linee di vita, dei messaggi o di entrambi.
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` ridisegno dell'intero diagramma. È possibile usare il parametro per specificare il riposizionamento delle linee di vita, dei messaggi o di entrambi.
 
   Ciò è particolarmente importante quando si inseriscono nuovi elementi o si spostano elementi esistenti, che occuperanno le posizioni corrette nel diagramma solo dopo avere eseguito una di queste operazioni. È sufficiente chiamare una di queste operazioni una volta alla fine di una serie di modifiche.
 
-  Per evitare di confondere l'utente che esegue un annullamento dopo il comando, usare `ILinkedUndoTransaction` per racchiudere le modifiche e le operazioni `Layout()` o `UpdateShapePositions()` finali. Esempio:
+  Per evitare di confondere l'utente che esegue un annullamento dopo il comando, usare `ILinkedUndoTransaction` per racchiudere le modifiche e le operazioni `Layout()` o `UpdateShapePositions()` finali. Ad esempio:
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```
 
 ### <a name="to-create-messages"></a>Per creare messaggi
- Per creare un messaggio, è necessario identificare i punti di inserimento sulle linee di vita di origine e di destinazione. Esempio:
+ Per creare un messaggio, è necessario identificare i punti di inserimento sulle linee di vita di origine e di destinazione. Ad esempio:
 
 ```
 interaction.CreateMessage( sourceInsertionPoint,
@@ -241,7 +241,7 @@ cf.CreateInteractionOperand(cf.Operands.First(), false);
 cf.CreateInteractionOperand(cf.Operands.Last(), true);
 ```
 
-## <a name="troubleshooting"></a>Troubleshooting
+## <a name="troubleshooting"></a>Risoluzione dei problemi
  Le forme non saranno nelle posizioni corrette se le modifiche non vengono completate con un'operazione `UpdateShapePositions()` o `Layout()`.
 
  La maggior parte degli altri problemi sono causati da punti di inserimento non allineati che obbligheranno i nuovi messaggi o frammenti a intersecare gli altri. I sintomi possono essere la mancata esecuzione delle modifiche o la generazione di un'eccezione. L'eccezione potrebbe venire generata solo dopo l'esecuzione dell'operazione `UpdateShapePositions()` o `Layout()`.

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b25b47b5b711f09334501ed21abf06cb66402b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669731"
 ---
 # <a name="domain-path-syntax"></a>Sintassi del percorso di dominio
@@ -27,7 +27,7 @@ Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi spe
 
  Un percorso di dominio usa il formato seguente:
 
- *RelationshipName. PropertyName/! Ruolo*
+ *RelationshipName.PropertyName/!Role*
 
  ![Relazione di riferimento CommentReferencesSubjects](../modeling/media/dsl-reference.png "dsl_reference")
 

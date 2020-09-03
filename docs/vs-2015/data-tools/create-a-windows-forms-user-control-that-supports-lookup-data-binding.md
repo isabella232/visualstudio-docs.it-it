@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48891f82667270f04af49c60122c63f8d3a943f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668784"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding di ricerca
@@ -58,8 +58,8 @@ Quando si visualizzano dati nei Windows Form, è possibile scegliere i controlli
 
 - Creare un form per visualizzare i dati nel controllo.
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare questa procedura dettagliata, è necessario:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questo scenario, saranno necessari gli elementi seguenti:
 
 - Accedere al database di esempio Northwind.
 
@@ -105,7 +105,7 @@ Quando si visualizzano dati nei Windows Form, è possibile scegliere i controlli
      [!code-csharp[VbRaddataDisplaying#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/LookupBox.cs#5)]
      [!code-vb[VbRaddataDisplaying#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/LookupBox.vb#5)]
 
-3. Scegliere **Compila soluzione** dal menu **Compila**.
+3. Scegliere **Compila soluzione**dal menu **Compila** .
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
  Questo passaggio crea un'origine dati usando la **Configurazione guidata origine dati** basata sulle tabelle `Customers` e `Orders` nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sull'impostazione del database di esempio Northwind, vedere [Install SQL Server database di esempio](../data-tools/install-sql-server-sample-databases.md).
@@ -114,7 +114,7 @@ Quando si visualizzano dati nei Windows Form, è possibile scegliere i controlli
 
 1. Scegliere **Mostra origini dati** dal menu **Dati**.
 
-2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
@@ -160,7 +160,7 @@ Quando si visualizzano dati nei Windows Form, è possibile scegliere i controlli
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Per creare controlli associati ai dati nel Windows Form
 
-- Trascinare il nodo **Orders** dalla finestra **origini dati** nel Windows Form e verificare che il controllo **LookupBox** venga utilizzato per visualizzare i dati nella colonna `CustomerID`.
+- Trascinare il nodo **Orders** dalla finestra **origini dati** nel Windows Form e verificare che il controllo **LookupBox** sia utilizzato per visualizzare i dati nella `CustomerID` colonna.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Associare il controllo per cercare CompanyName dalla tabella Customers
 

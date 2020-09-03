@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa954cfb356593a4f22a44faddd69acdcfc93e37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669572"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Procedura dettagliata: utilizzo delle funzionalità dell'editor XML
@@ -32,11 +32,11 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia ( **...** ) nel campo **schemi** .
+3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
 
      Verrà visualizzata la finestra di dialogo **schemi XSD** .
 
-4. Fare clic su **Aggiungi**.
+4. Scegliere **Aggiungi**.
 
      Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
 
@@ -60,7 +60,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
     - **dipendente** per aggiungere l'elemento radice.
 
-2. Selezionare **\<!--** per aggiungere un nodo di commento e premere INVIO.
+2. Selezionare ** \< !--** per aggiungere un nodo di commento e premere INVIO.
 
      L'editor inserisce un tag di fine comment e colloca il cursore tra i tag comment di inizio e di fine.
 
@@ -104,7 +104,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ### <a name="to-save-the-xml-document"></a>Per salvare il documento XML
 
-1. Scegliere **Salva con nome**dal menu **file** .
+1. Dal menu **File** selezionare **Salva con nome**.
 
      Viene visualizzata la finestra **di dialogo Salva file con nome** . Il nome file predefinito è "XMLFile1".
 

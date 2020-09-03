@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c11c952223854ff1b4b963e24615e7abe831496
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669870"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Distribuire un'estensione del modello di livello
@@ -29,9 +29,9 @@ Altri utenti di Visual Studio possono installare estensioni di modellazione del 
 
 #### <a name="to-install-the-extension"></a>Per installare l'estensione
 
-1. Nel progetto che contiene **source. vsix. manifest**aprire **bin \\ \\** * in Esplora file.
+1. Nel progetto che contiene **source. vsix. manifest**aprire **bin \\ \\ *** in Esplora file.
 
-2. Copiare il file **\*. vsix** nel computer in cui si vuole installare l'estensione.
+2. Copiare il file ** \* VSIX** nel computer in cui si vuole installare l'estensione.
 
 3. Nel computer di destinazione fare doppio clic sul file con estensione VSIX in Esplora risorse.
 
@@ -44,11 +44,11 @@ Altri utenti di Visual Studio possono installare estensioni di modellazione del 
 2. Fare clic sul nome dell'estensione e quindi fare clic su **Disinstalla**.
 
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Installazione di un'estensione in un server Team Foundation Build
- Nei server [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] non viene in genere installato Visual Studio, quindi non è possibile installare VSIX facendo doppio clic su di esso. L'installazione di [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] include alcuni componenti che consentono l'esecuzione di un'estensione VSIX, ma è necessario installarla manualmente.
+ [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] per i server in genere non è installato Visual Studio, quindi non è possibile installare il progetto VSIX facendo doppio clic su di esso. L'installazione di [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] include alcuni componenti che consentono l'esecuzione di un'estensione VSIX, ma è necessario installarla manualmente.
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Per installare l'estensione del livello in un server [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]
+#### <a name="to-install-your-layer-extension-on-a-esprbuild-server"></a>Per installare l'estensione del livello in un server [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]
 
-1. Copiare i file con **estensione VSIX** dal computer di sviluppo al computer [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
+1. Copiare i file con **estensione VSIX** dal computer di sviluppo al [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] computer.
 
      Inserire il file VSIX in uno dei percorsi seguenti:
 

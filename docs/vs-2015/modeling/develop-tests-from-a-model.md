@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b9fec6954706fcecb1281650a8db3d85f08fbd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669793"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
@@ -120,7 +120,7 @@ Assert (countAfter == countBefore = 1);
  I requisiti di prestazioni e gli altri requisiti di qualità del servizio possono essere indicati in commenti nei diagrammi caso di utilizzo, di attività o di sequenza e anch'essi possono essere collegati agli elementi di lavoro requisiti e ai relativi gruppi di test.
 
 ### <a name="sequence-and-activity-diagrams-for-tests"></a>Diagrammi di sequenza e di attività per i test
- Se i modelli di requisiti o di architettura includono i diagrammi di sequenza o di attività, è possibile scrivere test che seguono direttamente i diagrammi.
+ Se i modelli di requisiti o di architettura includono i diagrammi di sequenza o di attività, è possibile scrivere test che seguono direttamente i diagrammi. 
 
  A volte è utile progettare test che scelgono dinamicamente percorsi diversi tramite i rami e i cicli del diagramma.
 
@@ -134,7 +134,7 @@ Assert (countAfter == countBefore = 1);
  In entrambi i casi è possibile stabilire una relazione tra gli elementi del modello e i test di sottosistema, in modo analogo all'operazione eseguita per stabilire una relazione tra il modello di requisiti e i test di sistema.
 
 ### <a name="isolate-components-with-provided-and-required-interfaces"></a>Isolare i componenti con interfacce fornite e richieste
- È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste. Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.
+ È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste.  Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.
 
  Un vantaggio costituito da questa separazione è la possibilità di eseguire il test del componente sostituendo i servizi usati generalmente con oggetti fittizi. Si tratta di componenti configurati a scopo di test. Un componente fittizio fornisce l'interfaccia richiesta dal componente, rispondendo alle query con dati simulati. I componenti fittizi fanno parte di un test harness completo che è possibile connettere a tutte le interfacce del componente.
 
@@ -147,10 +147,10 @@ Assert (countAfter == countBefore = 1);
 
  Da un punto di vista del test, un modello di requisiti può essere considerato un metodo abbreviato per i test. È quindi importante gestire la relazione tra i test e il modello in tutto il progetto.
 
-## <a name="Attaching"></a>Associazione di test case agli elementi del modello
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Associazione di test case agli elementi del modello
  Se il progetto usa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.
 
- È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:
+ È possibile collegare i test a tutti i tipi di elemento. Di seguito sono riportati alcuni esempi:
 
 - Collegare un caso di utilizzo ai test che ne eseguono la verifica.
 

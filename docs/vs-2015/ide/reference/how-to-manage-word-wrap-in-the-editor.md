@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59cc8536707744543490bc3e91b85545e4cd4007
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668857"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: gestire la modalità A capo automatico nell'editor
@@ -28,17 +28,17 @@ ms.locfileid: "72668857"
  Per altre informazioni, vedere [Procedura: Impostare le opzioni generali dell'editor](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda dell'edizione o delle impostazioni attive. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="procedure"></a>Routine
+## <a name="procedure"></a>Procedura
 
 #### <a name="to-set-word-wrap-preferences"></a>Per impostare le preferenze del ritorno a capo automatico
 
-1. Scegliere **Opzioni** dal menu **Strumenti**.
+1. Scegliere **Options** (Opzioni) dal menu **Tools** (Strumenti).
 
 2. Per impostare l'opzione a livello globale, nella cartella **Editor di testo** scegliere le opzioni **Generale** nella sottocartella **Tutti i linguaggi**.
 
-     oppure
+     - o -
 
      Scegliere le opzioni **Generale** nella sottocartella corrispondente al linguaggio di programmazione in uso.
 

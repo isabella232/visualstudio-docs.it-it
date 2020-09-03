@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cd10f9eb0e2899394788c3b19348892837426db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669457"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
@@ -52,7 +52,7 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
 
  `<book>`
 
- L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Di seguito è riportato un esempio di questo argomento (&#124;il "" rileva la posizione del cursore):
+ L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Di seguito è riportato un esempio di questa operazione (il "&#124;" rileva la posizione del cursore):
 
  `<book>`&#124;`</book>`
 
@@ -87,27 +87,27 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
 
 - Tag di inizio e di fine corrispondenti.
 
-- Qualsiasi coppia di parentesi angolari "\<" o ">".
+- Qualsiasi coppia di parentesi angolari "\<" or ">".
 
-- Inizio e fine dei commenti.
+- Inizio e fine di commenti.
 
-- Inizio e fine delle istruzioni di elaborazione.
+- Inizio e fine di istruzioni di elaborazione.
 
-- Inizio e fine dei blocchi CDATA.
+- Inizio e fine di blocchi CDATA.
 
-- Inizio e fine delle dichiarazioni DTD.
+- Inizio e fine di dichiarazioni DTD.
 
-- Virgolette di apertura e chiusura sugli attributi.
+- Virgolette di apertura e di chiusura sugli attributi.
 
 ## <a name="modifying-the-intellisense-options"></a>Modifica delle opzioni IntelliSense
  Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare le impostazioni relative alle opzioni degli strumenti.
 
  La sezione **inserimento automatico** della pagina **varie** controlla il comportamento seguente:
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
-|Tag di fine|Inserisce i tag di chiusura per i nuovi elementi.|
-|Virgolette per attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|
+|Chiudi i tag|Inserisce i tag di chiusura per i nuovi elementi.|
+|Virgolette per gli attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|
 |Altro markup|Completa commenti, CDATA, DOCTYPE, istruzioni di elaborazione e altre dichiarazioni dei markup.|
 
 #### <a name="to-change-the-auto-completion-behavior"></a>Per modificare il comportamento del completamento automatico

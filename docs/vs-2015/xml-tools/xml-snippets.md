@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bc8946d62f47291a6e0e3f26032589bfdf0de16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669354"
 ---
 # <a name="xml-snippets"></a>Frammenti di codice XML
@@ -48,7 +48,7 @@ L'editor XML offre una funzionalità, denominata *frammenti XML*, che consente d
  Per altre informazioni, vedere [procedura: generare un frammento XML da uno schema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
 ## <a name="create-new-xml-snippets"></a>Creazione di nuovi frammenti di codice XML
- Oltre ai frammenti di codice inclusi in [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio per impostazione predefinita, è anche possibile creare e utilizzare frammenti XML personalizzati.
+ Oltre ai frammenti [!INCLUDE[msCoName](../includes/msconame-md.md)] di codice inclusi in Visual Studio per impostazione predefinita, è anche possibile creare e utilizzare frammenti XML personalizzati.
 
  Per altre informazioni, vedere [procedura: creare frammenti XML](../xml-tools/how-to-create-xml-snippets.md).
 
