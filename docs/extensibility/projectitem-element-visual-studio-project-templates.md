@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770314"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Elemento ProjectItem (modelli di progetto di Visual Studio)
@@ -48,7 +48,7 @@ Specifica un file incluso nel modello di progetto.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 | Attributo | Descrizione |
 |---------------------| - |
@@ -60,7 +60,7 @@ Specifica un file incluso nel modello di progetto.
 | `OpenOrder` | Attributo facoltativo.<br /><br /> Specifica un valore numerico che rappresenta l'ordine in cui gli elementi verranno aperti nei rispettivi editor. Tutti i valori devono essere multipli di 10. Gli elementi con `OpenOrder` valori più alti vengono aperti per primi. |
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -74,7 +74,7 @@ Specifica un file incluso nel modello di progetto.
  Oggetto `string` che rappresenta il nome o il percorso di un file nel file con *estensione zip* del modello.
 
 ## <a name="remarks"></a>Osservazioni
- `ProjectItem`è un elemento figlio facoltativo di `Project` .
+ `ProjectItem` è un elemento figlio facoltativo di `Project` .
 
  L' `TargetFileName` attributo può essere usato per creare una struttura di directory diversa dalla struttura di directory nel file con *estensione zip* del modello. Se, ad esempio, il file MyFile *. vb* è presente nella radice del file con estensione *zip* del modello, ma si vuole inserire il file in una directory denominata *CustomFiles* in tutti i progetti creati dal modello, usare il codice XML seguente:
 

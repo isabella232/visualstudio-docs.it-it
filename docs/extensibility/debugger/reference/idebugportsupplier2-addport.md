@@ -1,5 +1,5 @@
 ---
-title: Metodo IDebugPortSupplier2::AddPort . Documenti Microsoft
+title: 'IDebugPortSupplier2:: AddPort | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 00954ceaa0ddd750a3d08e372d1edaa1905f01c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724732"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
@@ -43,16 +43,16 @@ int AddPort( 
 
 ## <a name="parameters"></a>Parametri
 `pRequest`\
-[in] Oggetto [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) che descrive la porta da aggiungere.
+in Oggetto [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) che descrive la porta da aggiungere.
 
 `ppPort`\
-[fuori] Restituisce un [oggetto IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta.
+out Restituisce un oggetto [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) che rappresenta la porta.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo crea effettivamente la porta richiesta e la aggiunge all'elenco interno delle porte attive del fornitore della porta. Il [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) metodo può essere chiamato prima per evitare possibili ritardi che richiedono molto tempo.
+ Questo metodo crea effettivamente la porta richiesta e la aggiunge all'elenco interno di porte attive del fornitore della porta. Il metodo [CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) può essere chiamato per primo per evitare possibili ritardi che richiedono molto tempo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

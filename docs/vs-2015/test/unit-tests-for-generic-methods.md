@@ -12,10 +12,10 @@ caps.latest.revision: 49
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2619e975dbfd22d96db2cc382a7cebbf04a05223
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657281"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
@@ -33,7 +33,7 @@ ms.locfileid: "72657281"
 
 - [Uso di un vincolo di tipo](#TypeConstraintNotSatisfied). Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo. In questo esempio il vincolo di tipo non viene soddisfatto.
 
-### <a name="EditingGeneratedTestCode"></a> Esempio 1: Modifica del codice di test generato
+### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a> Esempio 1: modifica del codice di test generato
  Il codice di test in questa sezione consente di testare un metodo di codice sottoposto a test denominato `SizeOfLinkedList()`. Questo metodo restituisce un numero intero che specifica il numero di nodi nell'elenco collegato.
 
  Il primo esempio di codice, nella sezione relativa al codice di test generato, mostra il codice di test non modificato, così come è stato generato da Visual Studio Enterprise. Il secondo esempio, nella sezione relativa al codice di test modificato, mostra come eseguire il test del funzionamento del metodo SizeOfLinkedList per due tipi di dati diversi, `int` e `char`.
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> Ogni volta che viene eseguito il test SizeOfLinkedListTest, il relativo metodo TestHelper viene chiamato due volte. L'istruzione Assert deve restituire true ogni volta affinché il test venga superato. Se il test non viene superato, potrebbe non essere chiaro se l'esito negativo è dovuto alla chiamata che ha specificato `<int>` o alla chiamata che ha specificato `<char>`. Per trovare la risposta, è possibile esaminare lo stack di chiamate oppure è possibile impostare punti di interruzione nel metodo di test e quindi eseguire il debug durante l'esecuzione del test. Per altre informazioni, vedere [Procedura: Eseguire il debug durante l'esecuzione di un test in una soluzione ASP.NET](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Ogni volta che viene eseguito il test SizeOfLinkedListTest, il relativo metodo TestHelper viene chiamato due volte. L'istruzione Assert deve restituire true ogni volta affinché il test venga superato. Se il test non viene superato, potrebbe non essere chiaro se l'esito negativo è dovuto alla chiamata che ha specificato `<int>` o alla chiamata che ha specificato `<char>`. Per trovare la risposta, è possibile esaminare lo stack di chiamate oppure è possibile impostare punti di interruzione nel metodo di test e quindi eseguire il debug durante l'esecuzione del test. Per altre informazioni, vedere [procedura: eseguire il debug durante l'esecuzione di un test in una soluzione ASP.NET](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-### <a name="TypeConstraintNotSatisfied"></a> Esempio 2: Uso di un vincolo di tipo
+### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> Esempio 2: uso di un vincolo di tipo
  Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo che non viene soddisfatto. La prima sezione mostra il codice del progetto di codice sottoposto a test. Il vincolo di tipo è evidenziato.
 
  La seconda sezione mostra il codice del progetto di test.

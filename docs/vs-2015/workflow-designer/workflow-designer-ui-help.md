@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf1a78148e2520478c7c6bc3e7953adccbab8c52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657554"
 ---
 # <a name="workflow-designer-ui-help"></a>Guida dell'interfaccia utente della finestra di progettazione dei flussi di lavoro
-Contenuto della sezione sono inclusi gli argomenti della Guida sensibile al contesto di [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Quando si lavora in [!INCLUDE[vs2010](../includes/vs2010-md.md)], è possibile accedere a questi argomenti dall'interfaccia utente premendo **F1** quando viene aperta una finestra di dialogo [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+Contenuto della sezione sono inclusi gli argomenti della Guida sensibile al contesto di [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Quando si utilizza [!INCLUDE[vs2010](../includes/vs2010-md.md)] , è possibile accedere a questi argomenti dall'interfaccia utente premendo **F1** quando viene visualizzata una finestra di [!INCLUDE[wfd2](../includes/wfd2-md.md)] dialogo.
 
  Nella sezione sono inoltre contenuti diversi argomenti relativi alla navigazione e ai messaggi di errore.
 
@@ -41,7 +41,7 @@ Contenuto della sezione sono inclusi gli argomenti della Guida sensibile al cont
 
  [Scheda System.Activities, finestra di dialogo Scegli elementi della Casella degli strumenti](../workflow-designer/system-activities-tab-choose-toolbox-items-dialog-box.md)
 
- [Funzionalità della shell di Progettazione flussi di lavoro](../workflow-designer/workflow-designer-shell-features.md)
+ [Caratteristiche della shell di Progettazione flussi di lavoro](../workflow-designer/workflow-designer-shell-features.md)
 
  [Tasti di scelta rapida](../workflow-designer/keyboard-shortcuts-in-the-workflow-designer.md)
 

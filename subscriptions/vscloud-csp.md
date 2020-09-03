@@ -8,10 +8,10 @@ ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
 ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273868"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
@@ -20,7 +20,7 @@ I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.
 [Confrontare le opzioni di sottoscrizione cloud](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
 
 ## <a name="prerequisites"></a>Prerequisiti
 È prima di tutto necessario configurare il tenant del cliente nel Centro per i partner e creare una sottoscrizione di Azure per questo tenant.
@@ -37,7 +37,7 @@ Chiunque disponga dell'[accesso come Proprietario o Collaboratore](https://na01.
 0. Scegliere **Gestione dei servizi**.
 0. Scegliere **Visual Studio Marketplace**.
 0. Assicurarsi che sia visualizzato il nome del cliente nell'angolo in alto a destra.
-0. Scegliere **Abbonamenti**.
+0. Scegliere **sottoscrizioni**.
 0. Scegliere Enterprise o Professional per Visual Studio.
 0. Scegliere **Acquista**.
 0. Scegliere la sottoscrizione di Azure per la fatturazione dell'acquisto.
@@ -69,9 +69,9 @@ Per visualizzare i prezzi di Visual Studio per i partner CSP, accedere al [Centr
 
 Di seguito viene illustrato come interpretare le informazioni disponibili in questo foglio di calcolo:
 
-| Categoria del contatore    |   Nome                 |  Unità                                |           Contenuto                          |
+| Categoria del contatore    |   Name                 |  Unità                                |           Contenuto                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Subscription                         | Sottoscrizione mensile di Visual Studio Enterprise   |
+| Visual Studio     | Funzionalità per le aziende             |  Subscription                         | Sottoscrizione mensile di Visual Studio Enterprise   |
 | Visual Studio     | Professionale           |  Subscription                         | Sottoscrizione mensile di Visual Studio Professional |
 
 Offriamo uno sconto del 5% per la sesta unità acquistata (per un determinato cliente) mensilmente di ogni sottoscrizione di Visual Studio. Questo è il motivo per cui sono visualizzate due righe per ogni opzione di sottoscrizione. Una riga mostra un valore minimo pari a 0, da interpretare come prezzo di base per le unità da 1 a 5. L'altra riga mostra un valore minimo pari a 5, ovvero il prezzo scontato del % 5 che si applica dalle 6 unità in poi.
@@ -108,9 +108,9 @@ R: no, i prezzi per le sottoscrizioni di Visual Studio sono fissi. Lo stesso pre
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Consulta le [domande frequenti sulla fatturazione cloud](vscloud-billing-faq.md) per le risposte alle domande di fatturazione più comuni.  
+Per le risposte alle domande comuni sulla fatturazione, vedere le domande [frequenti sulla fatturazione cloud](vscloud-billing-faq.md) .  

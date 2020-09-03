@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769411"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
@@ -48,7 +48,7 @@ I punti di interruzione rappresentano una delle tecniche di debug più important
 > [!NOTE]
 > Se si conosce l'attività o il problema che si sta tentando di risolvere, ma è necessario conoscere il tipo di punto di interruzione da usare, vedere [trovare l'attività di debug](../debugger/find-your-debugging-task.md#pause-running-code).
 
-## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Imposta punti di interruzione nel codice sorgente
+## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> Imposta punti di interruzione nel codice sorgente
 
 È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Nel codice C# seguente, ad esempio, è possibile impostare un punto di interruzione sulla riga di codice con l'assegnazione di variabile ( `int testInt = 1` ), il `for` ciclo o qualsiasi codice all'interno del `for` ciclo. Non è possibile impostare un punto di interruzione in firme di metodi, dichiarazioni per uno spazio dei nomi o una classe o dichiarazioni di variabili se non è presente alcuna assegnazione e nessun getter/setter.
 
@@ -74,7 +74,7 @@ Di seguito sono riportate alcune istruzioni generali per l'utilizzo dei punti di
 
 - Impostare le condizioni e le azioni, aggiungere e modificare etichette oppure esportare un punto di interruzione facendo clic con il pulsante destro del mouse su di esso e selezionando il comando appropriato oppure passando il puntatore del mouse e selezionando l'icona **delle impostazioni** .
 
-## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Azioni del punto di interruzione e punti
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Azioni del punto di interruzione e punti
 
 Un *punto di analisi è un* punto di interruzione che stampa un messaggio nella finestra di **output** . Un punto di analisi può fungere da istruzione di traccia temporanea nel linguaggio di programmazione e non sospende l'esecuzione del codice. Per creare un punto di analisi, impostare un'azione speciale nella finestra impostazioni del punto di **interruzione** . Per istruzioni dettagliate, vedere [usare punti nel debugger di Visual Studio](../debugger/using-tracepoints.md).
 
@@ -164,7 +164,7 @@ In **condizioni** nella finestra **Impostazioni** del punto di interruzione sele
 
 Racchiudere i valori String tra virgolette doppie. È possibile combinare clausole usando `&` (AND), `||` (OR), `!` (NOT) e le parentesi.
 
-## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a>Imposta punti di interruzione della funzione
+## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Imposta punti di interruzione della funzione
 
 È possibile interrompere l'esecuzione quando viene chiamata una funzione. Questa operazione è utile, ad esempio, quando si conosce il nome della funzione, ma non la relativa posizione. È utile anche se si dispone di funzioni con lo stesso nome e si desidera interrompere tutte le funzioni (ad esempio funzioni o funzioni in overload in progetti diversi).
 
@@ -289,7 +289,7 @@ Per selezionare le colonne da visualizzare nella finestra punti di **interruzion
 - Per esportare tutti i punti di interruzione, deselezionare tutte le caselle e lasciare vuoto il campo di **ricerca** . Selezionare l'icona Esporta tutti i punti di **interruzione corrispondenti ai criteri di ricerca correnti** e salvare il file.
 - Per importare i punti di interruzione, nella finestra punti di **interruzione** selezionare l'icona **Importa punti di interruzione da un file** , passare al percorso del file XML e selezionare **Apri**.
 
-## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a>Imposta punti di interruzione dalle finestre del debugger
+## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Imposta punti di interruzione dalle finestre del debugger
 
 È anche possibile impostare punti di interruzione dalle finestre **dello stack di chiamate** e del debugger **Disassembly** .
 

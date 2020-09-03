@@ -1,5 +1,5 @@
 ---
-title: 'Enumeratore del codice di comando : Documenti Microsoft'
+title: Enumeratore del codice di comando | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15916d26ac0120417205af0bb9117a45ec0397c6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739791"
 ---
 # <a name="command-code-enumerator"></a>Enumeratore del codice di comando
-Questo enumeratore viene utilizzato nelle opzioni per [il SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md)per indicare il comando per il quale sono specificate le opzioni.
+Questo enumeratore viene usato nelle opzioni per [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md)per indicare il comando per il quale vengono specificate le opzioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,22 +39,22 @@ enum SCCCOMMAND {
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 SCC_COMMAND_GET corrisponde a [SccGet](../extensibility/sccget-function.md).
 
 SCC_COMMAND_CHECKOUT corrisponde a [SccCheckout](../extensibility/scccheckout-function.md).
 
-SCC_COMMAND_CHECKIN corrisponde al file [SccCheckin](../extensibility/scccheckin-function.md).
+SCC_COMMAND_CHECKIN corrisponde a [SccCheckin](../extensibility/scccheckin-function.md).
 
-SCC_COMMAND_UNCHECKOUT Corrisponde a [SccUncheckout](../extensibility/sccuncheckout-function.md).
+SCC_COMMAND_UNCHECKOUT corrisponde a [SccUncheckout](../extensibility/sccuncheckout-function.md).
 
-SCC_COMMAND_ADD Corrisponde alla proprietà [SccAdd](../extensibility/sccadd-function.md).
+SCC_COMMAND_ADD corrisponde a [SccAdd](../extensibility/sccadd-function.md).
 
-SCC_COMMAND_REMOVE Corrisponde a [SccRemove](../extensibility/sccremove-function.md).
+SCC_COMMAND_REMOVE corrisponde a [SccRemove](../extensibility/sccremove-function.md).
 
-SCC_COMMAND_DIFF corrisponde al file [SccDiff](../extensibility/sccdiff-function.md).
+SCC_COMMAND_DIFF corrisponde a [SccDiff](../extensibility/sccdiff-function.md).
 
-SCC_COMMAND_HISTORY Corrisponde alla proprietà [SccHistory](../extensibility/scchistory-function.md).
+SCC_COMMAND_HISTORY corrisponde a [SccHistory](../extensibility/scchistory-function.md).
 
 SCC_COMMAND_RENAME corrisponde a [SccRename](../extensibility/sccrename-function.md).
 

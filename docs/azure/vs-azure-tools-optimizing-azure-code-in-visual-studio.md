@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81489636"
 ---
 # <a name="optimizing-your-azure-code"></a>Ottimizzare il codice Azure
@@ -356,7 +356,7 @@ CloudConfigurationManager legge il file di configurazione appropriato per l'ambi
 ### <a name="solution"></a>Soluzione
 Effettuare il refactoring del codice per utilizzare il [CloudConfigurationManager classe](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). Una correzione del codice per questo problema viene fornita dallo strumento di analisi del codice di Azure.
 
-Il seguente frammento di codice dimostra la correzione del codice per questo problema. Replace
+Il seguente frammento di codice dimostra la correzione del codice per questo problema. Sostituisci
 
 `var settings = ConfigurationManager.AppSettings["mySettings"];`
 

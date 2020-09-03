@@ -9,28 +9,28 @@ caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa9db3e67b1f5ba5e183f8df0c7b34372476fb08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851164"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Uso di shim per isolare l'applicazione da altri assembly per gli unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I tipi shim** sono una delle due tecnologie che il framework Microsoft Fakes usa per consentire agli utenti di isolare dall'ambiente i componenti sottoposti a test. Gli shim deviano le chiamate a metodi specifici verso il codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Questo semplifica considerevolmente la scrittura dei test.
+I tipi shim** sono una delle due tecnologie che il framework Microsoft Fakes usa per consentire agli utenti di isolare dall'ambiente i componenti sottoposti a test. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Ciò rende i test più semplici da scrivere.
 
- Usare gli shim per isolare il proprio codice dagli assembly che non fanno parte della propria soluzione. Per isolare tra loro i diversi componenti della soluzione, è consigliabile usare gli stub.
+ Utilizzare gli shim per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare tra loro i componenti della soluzione, è consigliabile utilizzare gli stub.
 
  Per una panoramica e materiale sussidiario introduttivo, vedere [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
   Guardare il [video (durata: 1 ora e 16 minuti) su come testare codice non testabile con Fakes in Visual Studio 2012](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)
 
-## <a name="BKMK_Example__The_Y2K_bug"></a> Esempio: il bug dell'anno 2000
+## <a name="example-the-y2k-bug"></a><a name="BKMK_Example__The_Y2K_bug"></a> Esempio: il bug dell'anno 2000
  Si consideri un metodo che genera un'eccezione l'1 gennaio 2000:
 
 ```csharp
@@ -62,9 +62,9 @@ using (ShimsContext.Create()
 
 ```
 
-## <a name="BKMK_Fakes_requirements"></a> Come usare gli shim
+## <a name="how-to-use-shims"></a><a name="BKMK_Fakes_requirements"></a> Come utilizzare gli shim
 
-### <a name="AddFakes"></a> Aggiungere gli assembly Fakes
+### <a name="add-fakes-assemblies"></a><a name="AddFakes"></a> Aggiungere gli assembly Fakes
 
 1. In Esplora soluzioni espandere l'elenco **Riferimenti** del progetto di unit test.
 
@@ -74,7 +74,7 @@ using (ShimsContext.Create()
 
 3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
-### <a name="ShimsContext"></a> Usare ShimsContext
+### <a name="use-shimscontext"></a><a name="ShimsContext"></a> Usare ShimsContext
  Quando si usano tipi shim in un framework di unit test, è necessario eseguire il wrapping del codice di test in un oggetto `ShimsContext` per controllare la durata degli shim. Se ciò non fosse posto come condizione obbligatoria, gli shim durerebbero fino all'arresto di AppDomain. Il modo più semplice per creare un oggetto `ShimsContext` consiste nell'usare il metodo statico `Create()` come mostrato nel codice seguente:
 
 ```csharp
@@ -90,7 +90,7 @@ public void Y2kCheckerTest() {
 
  È fondamentale eliminare correttamente ogni contesto shim. Come regola generale, chiamare sempre `ShimsContext.Create` all'interno di un'istruzione `using` per assicurare la corretta eliminazione degli shim registrati. Ad esempio, si potrebbe registrare uno shim per un metodo di test che sostituisce il metodo `DateTime.Now` con un delegato che restituisce sempre il primo gennaio 2000. Se si dimentica di eliminare lo shim registrato nel metodo di test, il resto dell'esecuzione del test restituisce sempre il primo gennaio 2000 come valore di DateTime.Now. Ciò potrebbe sorprendere e confondere.
 
-### <a name="WriteShims"></a> Scrivere un test con shim
+### <a name="write-a-test-with-shims"></a><a name="WriteShims"></a> Scrivere un test con shim
  Nel codice di test inserire una *deviazione* per il metodo da simulare. Ad esempio:
 
 ```csharp
@@ -159,10 +159,10 @@ End Class
 
  Può verificarsi un errore di compilazione che informa che lo spazio dei nomi di Fake non esiste. L'errore talvolta viene visualizzato quando sono presenti altri errori di compilazione. Correggere gli altri errori e il problema viene risolto.
 
-## <a name="BKMK_Shim_basics"></a> Shim per tipi di metodi differenti
+## <a name="shims-for-different-kinds-of-methods"></a><a name="BKMK_Shim_basics"></a> Shim per tipi di metodi differenti
  I tipi shim consentono di sostituire qualsiasi metodo .NET, compresi i metodi statici o metodi non virtuali, con i delegati.
 
-### <a name="BKMK_Static_methods"></a> Metodi statici
+### <a name="static-methods"></a><a name="BKMK_Static_methods"></a> Metodi statici
  Le proprietà per associare gli shim ai metodi statici vengono inserite in un tipo shim. Ogni proprietà dispone solo di un setter che può essere usato per associare un delegato al metodo di destinazione. Si consideri ad esempio una classe `MyClass` con un metodo statico `MyMethod`:
 
 ```csharp
@@ -181,7 +181,7 @@ public static class MyClass {
 ShimMyClass.MyMethod = () =>5;
 ```
 
-### <a name="BKMK_Instance_methods__for_all_instances_"></a> Metodi di istanza (per tutte le istanze)
+### <a name="instance-methods-for-all-instances"></a><a name="BKMK_Instance_methods__for_all_instances_"></a> Metodi di istanza (per tutte le istanze)
  Analogamente ai metodi statici, i metodi di istanza possono essere sottoposti a shim per tutte le istanze. Le proprietà a cui associare tali shim vengono inserite in un tipo annidato denominato AllInstances per evitare confusione. Si consideri, ad esempio, una classe `MyClass` con un metodo di istanza `MyMethod`:
 
 ```csharp
@@ -217,7 +217,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
  Si noti che in questo caso Fakes passa l'istanza di runtime come primo argomento del delegato.
 
-### <a name="BKMK_Instance_methods__for_one_instance_"></a> Metodi di istanza (per un'istanza di runtime)
+### <a name="instance-methods-for-one-runtime-instance"></a><a name="BKMK_Instance_methods__for_one_instance_"></a> Metodi di istanza (per un'istanza di runtime)
  I metodi di istanza possono anche essere sottoposti a shim da delegati diversi, in base al destinatario della chiamata. In questo modo, lo stesso metodo di istanza può avere comportamenti diversi per ogni istanza del tipo. Le proprietà per impostare tali shim sono metodi di istanza del tipo shim stesso. Ogni tipo shim di cui viene creata un'istanza è anche associato a un'istanza non elaborata di un tipo sottoposto a shim.
 
  Si consideri, ad esempio, una classe `MyClass` con un metodo di istanza `MyMethod`:
@@ -277,7 +277,7 @@ MyClass instance = shim; // implicit cast retrieves the runtime
                          // instance
 ```
 
-### <a name="BKMK_Constructors"></a> Costruttori
+### <a name="constructors"></a><a name="BKMK_Constructors"></a> Costruttori
  Anche i costruttori possono essere sottoposti a shim per associare tipi shim a oggetti futuri. Ogni costruttore viene esposto come costruttore di metodo statico nel tipo shim. Si consideri ad esempio una classe `MyClass` con un costruttore che accetta un valore intero:
 
 ```csharp
@@ -327,7 +327,7 @@ public class ShimMyClass : ShimBase<MyClass>
 }
 ```
 
-### <a name="BKMK_Base_members"></a> Membri di base
+### <a name="base-members"></a><a name="BKMK_Base_members"></a> Membri di base
  È possibile accedere alle proprietà degli shim dei membri di base creando uno shim per il tipo di base e passando l'istanza figlio come parametro al costruttore della classe shim di base.
 
  Si consideri, ad esempio, una classe `MyBase` con un metodo di istanza `MyMethod` e un sottotipo `MyChild`:
@@ -370,16 +370,16 @@ public class ShimMyBase : ShimBase<MyBase> {
 }
 ```
 
-### <a name="BKMK_Static_constructors"></a> Costruttori statici
+### <a name="static-constructors"></a><a name="BKMK_Static_constructors"></a> Costruttori statici
  I tipi shim espongono un metodo statico `StaticConstructor` per sottoporre a shim il costruttore statico di un tipo. Poiché i costruttori statici vengono eseguiti una sola volta, è necessario verificare che lo shim sia configurato prima di accedere a qualsiasi membro del tipo.
 
-### <a name="BKMK_Finalizers"></a> Finalizzatori
+### <a name="finalizers"></a><a name="BKMK_Finalizers"></a> I finalizzatori
  I finalizzatori non sono supportati in Fakes.
 
-### <a name="BKMK_Private_methods"></a> Metodi privati
+### <a name="private-methods"></a><a name="BKMK_Private_methods"></a> Metodi privati
  Il generatore di codice Fakes creerà le proprietà dello shim per i metodi privati che hanno solo tipi visibili nella segnatura, ad esempio i tipi di parametri e il tipo restituito visibile.
 
-### <a name="BKMK_Binding_interfaces"></a> Interfacce di binding
+### <a name="binding-interfaces"></a><a name="BKMK_Binding_interfaces"></a> Interfacce di binding
  Quando un tipo sottoposto a shim implementa un'interfaccia, il generatore di codice genera un metodo che consente di associare contemporaneamente tutti i membri di tale interfaccia.
 
  Si consideri, ad esempio, una classe `MyClass` che implementa `IEnumerable<int>`:
@@ -415,7 +415,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 ```
 
-## <a name="BKMK_Changing_the_default_behavior"></a> Modifica del comportamento predefinito
+## <a name="changing-the-default-behavior"></a><a name="BKMK_Changing_the_default_behavior"></a> Modifica del comportamento predefinito
  Ogni tipo shim generato include un'istanza dell'interfaccia `IShimBehavior`, tramite la proprietà `ShimBase<T>.InstanceBehavior`. Il comportamento viene usato ogni volta che un client chiama un membro di istanza che non è stato sottoposto a shim in modo esplicito.
 
  Se il comportamento non è stato impostato in modo esplicito, verrà usata l'istanza restituita dalla proprietà statica `ShimsBehaviors.Current`. Per impostazione predefinita, questa proprietà restituisce un comportamento che genera un'eccezione `NotImplementedException`.
@@ -441,7 +441,7 @@ ShimsBehaviors.Current =
 
 ```
 
-## <a name="BKMK_Detecting_environment_accesses"></a> Rilevamento degli accessi nell'ambiente
+## <a name="detecting-environment-accesses"></a><a name="BKMK_Detecting_environment_accesses"></a> Rilevamento degli accessi all'ambiente
  È possibile associare un comportamento a tutti i membri, inclusi i metodi statici, di un determinato tipo assegnando il comportamento `ShimsBehaviors.NotImplemented` alla proprietà statica `Behavior` del tipo shim corrispondente:
 
 ```csharp
@@ -453,10 +453,10 @@ ShimMyClass.BehaveAsNotImplemented();
 
 ```
 
-## <a name="BKMK_Concurrency"></a> Concorrenza
+## <a name="concurrency"></a><a name="BKMK_Concurrency"></a> Concorrenza
  I tipi shim si applicano a tutti i thread in AppDomain e non presentano affinità di thread. Si tratta di un aspetto importante se si prevede di usare un test runner che supporta la concorrenza, in quanto i test che coinvolgono tipi shim non possono essere eseguiti simultaneamente. Questa proprietà non viene applicata dal runtime di Fakes.
 
-## <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Chiamata del metodo originale dal metodo shim
+## <a name="calling-the-original-method-from-the-shim-method"></a><a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Chiamata del metodo originale dal metodo shim
  Si supponga di voler scrivere effettivamente il testo nel file system dopo la convalida del nome file passato al metodo. In tal caso, sarebbe necessario chiamare il metodo originale all'interno del metodo shim.
 
  Il primo approccio per risolvere questo problema consiste nell'eseguire il wrapping di una chiamata al metodo originale usando un delegato e `ShimsContext.ExecuteWithoutShims()` come nel codice seguente:
@@ -498,12 +498,12 @@ ShimFile.WriteAllTextStringString = shim;
 
 ```
 
-## <a name="BKMK_Limitations"></a> Limitazioni
+## <a name="limitations"></a><a name="BKMK_Limitations"></a> Limitazioni
  Non è possibile usare gli shim in tutti i tipi della libreria di classi base .NET **mscorlib** e **System**.
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="guidance"></a>Informazioni aggiuntive
+### <a name="guidance"></a>Indicazioni
  [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Vedere anche

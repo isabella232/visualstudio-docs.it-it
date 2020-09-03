@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445012"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Pubblicare un'applicazione Node.js in Azure (Servizio app Linux)
@@ -31,7 +31,7 @@ Questa esercitazione mostra come creare un'applicazione Node.js partendo da un t
 
 In questa esercitazione verranno illustrate le procedure per:
 > [!div class="checklist"]
-> * Creare un progetto Web Node.js
+> * Creare un progetto Node.js
 > * Creare un repository GitHub per il codice
 > * Creare un Servizio app Linux in Azure
 > * Distribuire in Azure
@@ -41,13 +41,13 @@ In questa esercitazione verranno illustrate le procedure per:
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se non hai ancora installato Visual Studio 2019, vai alla pagina dei [download](https://visualstudio.microsoft.com/downloads/) di Visual Studio per installarlo gratuitamente.
+    Se Visual Studio 2019 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se non hai ancora installato Visual Studio 2017, vai alla pagina dei [download](https://visualstudio.microsoft.com/downloads/) di Visual Studio per installarlo gratuitamente.
+    Se Visual Studio 2017 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
     ::: moniker-end
 
-    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **Strumenti** > **Get Tools and Features...**, che apre il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
+    Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
 
     ![Carico di lavoro Node.js nel programma di installazione di Visual Studio](../ide/media/quickstart-nodejs-workload.png)
 
@@ -65,7 +65,7 @@ In questa esercitazione verranno illustrate le procedure per:
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **Node.js** e scegliere **Create new Basic Azure Node.js Express 4 application** (Crea nuova applicazione Basic Azure Node.js Express 4) (TypeScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dalla barra dei menu superiore, scegliere **File** > **Nuovo** > **progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **TypeScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
+    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **TypeScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
 
     ![Creare una nuova app rapida TypeScript](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
@@ -75,7 +75,7 @@ In questa esercitazione verranno illustrate le procedure per:
 
 1. Premere **F5** per compilare ed eseguire l'app e assicurarsi che tutto funzioni come previsto.
 
-1. Selezionare **Aggiungi file** > **al controllo del codice sorgente** per creare un repository Git locale per il progetto.
+1. Selezionare **file**  >  **Aggiungi al controllo del codice sorgente** per creare un repository git locale per il progetto.
 
     A questo punto, è in esecuzione e viene archiviata nel controllo del codice sorgente locale un'app Node.js che usa il framework Express ed è scritta in TypeScript.
 
@@ -87,7 +87,7 @@ Per configurare GitHub per Visual Studio:
 
 1. Assicurarsi che sia installata l'[Estensione GitHub per Visual Studio](https://visualstudio.github.com/) e abilitata tramite la voce di menu **Strumenti** > **Estensioni e aggiornamenti**.
 
-2. Dal menu selezionare **Visualizza** > **altro GitHub di Windows** > **GitHub**.
+2. Dal menu selezionare **Visualizza**  >  **altri Windows**  >  **GitHub**.
 
     Viene visualizzata la finestra di GitHub.
 
@@ -95,7 +95,7 @@ Per configurare GitHub per Visual Studio:
 
     ![Aprire la finestra di GitHub](../javascript/media/azure-github-get-started.png)
 
-4. Fare clic su **Introduzione**.
+4. Fare clic su **Inizia**.
 
     Se si è già connessi a GitHub, viene visualizzata la casella degli strumenti simile alla figura seguente.
 
@@ -125,12 +125,12 @@ Per configurare GitHub per Visual Studio:
 
 6. Dopo la distribuzione, passare alla sezione **Impostazioni applicazione** e aggiungere un'impostazione con un nome per `SCM_SCRIPT_GENERATOR_ARGS` e un valore per `--node`.
 
-    ![Impostazioni dell'applicazione](../javascript/media/azure-script-generator-args.png)
+    ![Impostazioni applicazione](../javascript/media/azure-script-generator-args.png)
 
     > [!WARNING]
     > Il processo di distribuzione del Servizio app usa una serie di regole euristiche per determinare il tipo di applicazione da provare ed eseguire. Se viene rilevato un file .*sln* nel contenuto distribuito, processo presuppone che venga distribuito un progetto basato su MSBuild. L'impostazione aggiunta in precedenza sostituisce questa logica e specifica esplicitamente che si tratta di un'applicazione Node.js. Senza questa impostazione, l'applicazione Node.js non verrà distribuita se il file .*sln* fa parte del repository distribuito al Servizio app.
 
-7. In **Impostazioni applicazione**aggiungere un'altra `WEBSITE_NODE_DEFAULT_VERSION` impostazione `8.9.0`con un nome di e un valore di .
+7. In **Impostazioni applicazione**aggiungere un'altra impostazione con il nome `WEBSITE_NODE_DEFAULT_VERSION` e il valore `8.9.0` .
 
 8. Dopo la distribuzione, aprire il Servizio app e selezionare **Opzioni di distribuzione**.
 

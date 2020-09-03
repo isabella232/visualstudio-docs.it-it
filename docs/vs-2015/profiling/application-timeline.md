@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f899e081377ecc1a56e141f8793d6f707df2b69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534082"
 ---
 # <a name="application-timeline"></a>Sequenza temporale applicazione
@@ -65,7 +65,7 @@ Utilizzare il profiler **Sequenza temporale applicazione** per individuare e cor
   
      ![Report del profiler della sequenza temporale](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
-## <a name="analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a>Analizzare i dati di profilatura della sequenza temporale  
+## <a name="analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a> Analizzare i dati di profilatura della sequenza temporale  
  Dopo aver raccolto i dati di profilatura, è possibile utilizzare la procedura indicata di seguito per avviare l'analisi:  
   
 1. Esaminare le informazioni nei grafici **Utilizzo thread UI** e **Velocità effettiva visuale (FPS)** , quindi utilizzare le barre di navigazione della sequenza temporale per selezionare un intervallo di tempo da analizzare.  

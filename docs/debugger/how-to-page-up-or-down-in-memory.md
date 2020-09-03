@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79216ba29047101c9b9d2c6618cae013640542b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349419"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Procedura: spostare verso l'alto o verso il basso una pagina di memoria
@@ -46,7 +46,7 @@ Quando si visualizza il contenuto della memoria nella finestra **Memoria** o **D
 
 - Fare clic sulla freccia all'estremità superiore o inferiore della barra di scorrimento verticale.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Finestra Memoria](../debugger/memory-windows.md)
 - [Procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

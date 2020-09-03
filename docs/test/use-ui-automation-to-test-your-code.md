@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
-ms.sourcegitcommit: 5d1b2895d3a249c6bea30eb12b0ad7c0f0862d85
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80880364"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usare test codificati dell'interfaccia utente per il testing del codice
@@ -56,7 +56,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
 1. Creare un progetto di test codificato dell'interfaccia utente.
 
-   I test codificati dell'interfaccia utente devono essere contenuti in un progetto di test codificato dell'interfaccia utente. Se non è presente un progetto di test codificato dell'interfaccia utente, crearne uno. Scegliere **File** > **nuovo** > **progetto**. Cercare e selezionare il modello **Progetto di test codificato dell'interfaccia utente**.
+   I test codificati dell'interfaccia utente devono essere contenuti in un progetto di test codificato dell'interfaccia utente. Se non è presente un progetto di test codificato dell'interfaccia utente, crearne uno. Scegliere **file**  >  **nuovo**  >  **progetto**. Cercare e selezionare il modello **Progetto di test codificato dell'interfaccia utente**.
 
    ::: moniker range="vs-2017"
 
@@ -69,13 +69,13 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
 2. Aggiungere un file di test codificato dell'interfaccia utente.
 
-     Se è stato appena creato un progetto di test codificato dell'interfaccia utente, il primo file di test codificato dell'interfaccia utente viene aggiunto automaticamente. Per aggiungere un altro file di test, aprire il menu di scelta rapida nel progetto di test codificato dell'interfaccia utente in **Esplora soluzioni**, quindi scegliere **Aggiungi** > **test codificato dell'interfaccia utente**.
+     Se è stato appena creato un progetto di test codificato dell'interfaccia utente, il primo file di test codificato dell'interfaccia utente viene aggiunto automaticamente. Per aggiungere un altro file di test, aprire il menu di scelta rapida nel progetto di test codificato dell'interfaccia utente in **Esplora soluzioni**, quindi scegliere **Aggiungi**  >  **test codificato dell'interfaccia utente**.
 
      Nella finestra di dialogo **Genera codice per Test codificato dell'interfaccia utente** scegliere **Registra le azioni** > **Modifica mappa dell'interfaccia utente o aggiungi asserzioni**.
 
      ![Finestra di dialogo Genera codice per test codificato dell'interfaccia utente](media/generate-code-for-coded-ui-test.png)
 
-     Verrà visualizzato il **Generatore di test codificati dell'interfaccia utente.**
+     Viene visualizzato il **Generatore di test codificati dell'interfaccia utente** .
 
      ![Generatore di test codificati dell'interfaccia utente](../test/media/codedui_testbuilder.png)
 
@@ -134,15 +134,15 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
      ![Editor test codificati dell'interfaccia utente](../test/media/cuit_editor_edit.png)
 
-     Per ulteriori informazioni, consultate Modificare i [test codificati dell'interfaccia utente utilizzando l'editor test codificati dell'interfaccia utente.](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+     Per altre informazioni, vedere [modificare i test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 8. Eseguire il test.
 
-   Usare Esplora test o aprire il menu di scelta rapida nel metodo di test e scegliere **Esegui test**. Per altre informazioni su come eseguire i test, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) e Opzioni aggiuntive per l'esecuzione di test *codificati dell'interfaccia utente* nella sezione Cosa succede [alla](#whats-next) fine di questo argomento.
+   Usare Esplora test o aprire il menu di scelta rapida nel metodo di test e scegliere **Esegui test**. Per altre informazioni su come eseguire i test, vedere [eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) e *Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente* nella sezione passaggi [successivi](#whats-next) alla fine di questo argomento.
 
 Le sezioni rimanenti di questo argomento offrono informazioni più dettagliate sui passaggi di questa procedura.
 
-Per un esempio più dettagliato, vedere [Procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In questa procedura dettagliata verrà creata una semplice applicazione Windows Presentation Foundation (WPF) per dimostrare come creare, modificare e gestire un test codificato dell'interfaccia utente. Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring del controllo.
+Per un esempio più dettagliato, vedere [procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In questa procedura dettagliata verrà creata una semplice applicazione Windows Presentation Foundation (WPF) per dimostrare come creare, modificare e gestire un test codificato dell'interfaccia utente. Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring del controllo.
 
 ## <a name="start-and-stop-the-application-under-test"></a>Avviare e arrestare l'applicazione sottoposta a test
 
@@ -211,7 +211,7 @@ Per generare codice per le asserzioni e aggiungere il controllo alla mappa dell'
 
 ### <a name="select-a-hidden-control-using-the-keyboard"></a>Selezionare un controllo nascosto tramite tastiera
 
-Se il controllo che si desidera selezionare perde lo stato attivo e scompare quando si seleziona lo strumento **Aggiungi asserzioni** dal generatore di **test codificati dell'interfaccia utente**:
+Se il controllo che si desidera selezionare perde lo stato attivo e scompare quando si seleziona lo strumento **Aggiungi asserzioni** dal **Generatore di test codificati dell'interfaccia utente**:
 
 A volte, durante l'aggiunta di controlli e la verifica delle relative proprietà, può essere necessario usare la tastiera. Ad esempio, quando si prova a registrare un test codificato dell'interfaccia utente che usa un controllo del menu di scelta rapida, l'elenco delle voci di menu nel controllo perderà lo stato attivo e non sarà visualizzato quando si cercherà di selezionare lo strumento **Aggiungi asserzioni** dal **Generatore di test codificati dell'interfaccia utente**. Questa situazione è illustrata nella figura seguente in cui il menu di scelta rapida in Internet Explorer perde lo stato attivo e scompare quando si cerca di selezionarlo con lo strumento **Aggiungi asserzioni**.
 
@@ -240,7 +240,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 Se la scelta rapida da tastiera assegnata all'acquisizione degli eventi di passaggio del mouse è già in uso nell'ambiente:
 
-Se necessario, l'assegnazione predefinita della tastiera di **Ctrl**+**Shift**+**R** utilizzata per applicare gli eventi di passaggio del mouse nei test codificati dell'interfaccia utente può essere configurata per l'utilizzo di tasti diversi.
+Se necessario, è possibile configurare la scelta rapida da tastiera **CTRL** + **MAIUSC** + **R** usata per applicare gli eventi di passaggio del mouse nei test codificati dell'interfaccia utente in modo da usare chiavi diverse.
 
 > [!WARNING]
 > In circostanze normali, non è necessario modificare la scelta rapida da tastiera per gli eventi di passaggio del mouse. Prestare attenzione nella riassegnazione dei tasti. La scelta rapida da tastiera potrebbe essere già in uso in Visual Studio o nell'applicazione sottoposta a test.
@@ -289,17 +289,17 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
   - Dopo aver creato un test codificato dell'interfaccia utente, è possibile modificarlo in modo che sia basato sui dati. Per altre informazioni, vedere [Creare un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md).
 
-  - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata una finestra, che venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente che attende l'abilitazione di un controllo mediante il metodo WaitForControlEnabled , vedere [Procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente.](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+  - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata una finestra, che venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente che attende che un controllo venga abilitato usando il metodo WaitForControlEnabled, vedere [procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-  - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per ulteriori informazioni, consultate [Utilizzo dei controlli HTML5 nei test codificati dell'interfaccia utente.](../test/using-html5-controls-in-coded-ui-tests.md)
+  - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per altre informazioni, vedere [uso dei controlli HTML5 nei test codificati dell'interfaccia utente](../test/using-html5-controls-in-coded-ui-tests.md).
 
   - Informazioni aggiuntive sui test codificati dell'interfaccia utente:
 
     - [Anatomia di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)
 
-    - [Procedure consigliate per i test codificati dell'interfaccia utenteBest practices for coded UI tests](../test/best-practices-for-coded-ui-tests.md)
+    - [Procedure consigliate per i test codificati dell'interfaccia utente](../test/best-practices-for-coded-ui-tests.md)
 
-    - [Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utenteTest a large application with multiple UI Maps](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
     - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
@@ -326,7 +326,7 @@ Quando si sceglie **Genera codice**, vengono create diverse parti di codice:
 
      È anche possibile aggiungere nuovi metodi di test e aggiungere codice nello stesso modo. Tutti i metodi di test devono disporre dell'attributo `[TestMethod]`.
 
-- Un metodo in *UIMap.uitest*.
+- Un metodo in *UIMap. UITest*.
 
      Questo metodo include i dettagli delle azioni registrate o il valore verificato. Per modificare questo codice, aprire *UIMap.uitest*. Il file verrà aperto in un editor specializzato, in cui è possibile eliminare o effettuare il refactoring delle azioni registrate.
 
@@ -362,7 +362,7 @@ Quando si sceglie **Genera codice**, vengono create diverse parti di codice:
     }
     ```
 
-- Dichiarazioni in *UIMap.uitest*.
+- Dichiarazioni in *UIMap. UITest*.
 
     Queste dichiarazioni rappresentano i controlli dell'interfaccia utente dell'applicazione usata dal test. Vengono usate dal codice generato per azionare i controlli e accedere alle relative proprietà.
 
@@ -433,13 +433,13 @@ myWinCheckBox.Checked = true;
 
 È possibile analizzare i test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente. I log dei test codificati dell'interfaccia utente filtrano e registrano informazioni importanti sulle esecuzioni dei test codificati dell'interfaccia utente. Il formato dei log consente di eseguire rapidamente il debug dei problemi. Per altre informazioni, vedere [Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-## <a name="whats-next"></a>Quali sono le operazioni successive?
+## <a name="whats-next"></a>Passaggi successivi
 
 ::: moniker range="vs-2017"
-**Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:Additional options for running Coded UI tests:** È possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio, come descritto in precedenza in questo argomento. Inoltre, è possibile eseguire test automatizzati dell'interfaccia utente da Microsoft Test Manager o tramite Azure Pipelines. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
+**Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:** È possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio, come descritto in precedenza in questo argomento. Inoltre, è possibile eseguire test automatizzati dell'interfaccia utente da Microsoft Test Manager o tramite Azure Pipelines. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-**Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:Additional options for running Coded UI tests:** È possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio, come descritto in precedenza in questo argomento. Inoltre, è possibile eseguire test automatizzati dell'interfaccia utente usando le pipeline di Azure.Additionally, you can run automated UI tests using Azure Pipelines. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
+**Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:** È possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio, come descritto in precedenza in questo argomento. Inoltre, è possibile eseguire test automatizzati dell'interfaccia utente usando Azure Pipelines. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
 ::: moniker-end
 
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
@@ -448,9 +448,9 @@ myWinCheckBox.Checked = true;
 
 - [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Aggiunta del supporto per i controlli personalizzati:Adding support for custom controls:**  Il framework di test codificato dell'interfaccia utente non supporta tutte le possibili interfaccia utente e potrebbe non supportare l'interfaccia utente che si desidera testare. Ad esempio, non si può creare immediatamente un test codificato dell'interfaccia utente per Microsoft Excel. È tuttavia possibile creare un'estensione al framework dei test codificati dell'interfaccia utente che supporterà un controllo personalizzato.
+**Aggiunta del supporto per controlli personalizzati:**  Il Framework dei test codificati dell'interfaccia utente non supporta ogni possibile interfaccia utente e potrebbe non supportare l'interfaccia utente che si desidera testare. Ad esempio, non si può creare immediatamente un test codificato dell'interfaccia utente per Microsoft Excel. È tuttavia possibile creare un'estensione al framework dei test codificati dell'interfaccia utente che supporterà un controllo personalizzato.
 
-- [Abilitare il test codificato dell'interfaccia utente dei controlliEnable coded UI testing of your controls](../test/enable-coded-ui-testing-of-your-controls.md)
+- [Abilitare il test codificato dell'interfaccia utente per i controlli](../test/enable-coded-ui-testing-of-your-controls.md)
 
 - [Estendere test codificati dell'interfaccia utente e registrazioni delle azioni](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
@@ -461,8 +461,8 @@ I test codificati dell'interfaccia utente vengono spesso usati per automatizzare
 - [Registrare e riprodurre test manuali](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utenteWalkthrough: Create, edit, and maintain a Coded UI test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Procedura dettagliata: creare, modificare e gestire un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Creare un test codificato dell'interfaccia utente per testare un'app UWP](test-uwp-app-with-coded-ui-test.md)
 - [Anatomia di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)
-- [Procedure consigliate per i test codificati dell'interfaccia utenteBest practices for Coded UI tests](../test/best-practices-for-coded-ui-tests.md)
-- [Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utenteTest a large application with multiple UI Maps](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Procedure consigliate per i test codificati dell'interfaccia utente](../test/best-practices-for-coded-ui-tests.md)
+- [Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533719"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizzare le attività di compilazione e debug per lo sviluppo con "Apri cartella"
@@ -221,7 +221,7 @@ Questa sezione descrive alcune delle proprietà che è possibile specificare in 
 |`${relativeFile}`| Percorso relativo del file o della cartella (ad esempio, *src\hello.js*)|
 |`${fileBasename}`| Nome del file senza percorso o estensione (ad esempio, *Hello*)|
 |`${fileDirname}`| Percorso completo del file, escluso il nome file (ad esempio, *C:\sources\hello\src*)|
-|`${fileExtname}`| Estensione del file selezionato (ad esempio, *. js*)|
+|`${fileExtname}`| Estensione del file selezionato (ad esempio,  *. js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configurare il debug con launch.vs.json
 
@@ -311,7 +311,7 @@ Le impostazioni lette dal file con estensione *gitignore* vengono applicate alla
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Sviluppare codice senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Progetti Apri cartella per C++](/cpp/build/open-folder-projects-cpp)
 - [Progetti CMake per C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Riferimenti a NMAKE](/cpp/build/reference/nmake-reference)

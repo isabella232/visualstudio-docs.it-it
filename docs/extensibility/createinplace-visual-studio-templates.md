@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739655"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Elemento CreateInPlace (modelli di Visual Studio)
-Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel percorso specificato oppure eseguire la sostituzione dei parametri in un percorso temporaneo e quindi salvare il progetto nel percorso specificato.
+Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel percorso specificato oppure eseguire la sostituzione dei parametri in un percorso temporaneo, quindi salvare il progetto nel percorso specificato.
 
- \<Template> \<TemplateData \<> CreateInPlace>
+ \<VSTemplate> \<TemplateData>
+ \<CreateInPlace>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,11 +36,11 @@ Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel pe
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
- No.
+### <a name="attributes"></a>Attributes
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -50,7 +51,7 @@ Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel pe
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Questo testo deve essere `true` o `false`. Se `true`, il progetto viene creato e la sostituzione dei parametri viene eseguita nel percorso specificato nella finestra di dialogo **Nuovo progetto.** Se `false`, la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.
+ Questo testo deve essere `true` o `false`. Se `true` , il progetto viene creato e la sostituzione dei parametri viene eseguita nel percorso specificato nella finestra di dialogo **nuovo progetto** . Se `false` , la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.
 
 ## <a name="remarks"></a>Osservazioni
  `CreateInPlace` è un elemento facoltativo. Il valore predefinito è `true`.
@@ -85,4 +86,4 @@ Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel pe
 
 ## <a name="see-also"></a>Vedere anche
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273894"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installare Build Tools in un contenitore
@@ -41,7 +41,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
 > [!WARNING]
 > Questo Dockerfile di esempio esclude solo le versioni precedenti di Windows SDK che non possono essere installate in contenitori. Con le versioni precedenti il comando di compilazione ha esito negativo.
 
-1. Aprire un prompt dei comandi.
+1. Aprire un prompt dei comandi:
 
 1. Creare una nuova directory (operazione consigliata):
 
@@ -87,7 +87,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    ```
 
    > [!TIP]
-   > Per un elenco dei carichi di lavoro e dei componenti, vedere la directory del componente Strumenti di compilazione di [Visual Studio.](workload-component-id-vs-build-tools.md)
+   > Per un elenco di carichi di lavoro e componenti, vedere la [directory componente Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
    >
 
    > [!WARNING]
@@ -129,7 +129,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    ```
 
    > [!TIP]
-   > Per un elenco dei carichi di lavoro e dei componenti, vedere la directory del componente Strumenti di compilazione di [Visual Studio.](workload-component-id-vs-build-tools.md)
+   > Per un elenco di carichi di lavoro e componenti, vedere la [directory componente Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
    >
 
    > [!WARNING]
@@ -140,7 +140,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
    ::: moniker-end
    
    > [!NOTE]
-   > Il `3010` codice di errore viene utilizzato per indicare l'esito positivo con un riavvio necessario, vedere messaggi di [errore MsiExec.exe](/windows/win32/msi/error-codes) per ulteriori informazioni.
+   > Il codice `3010` di errore viene utilizzato per indicare l'esito positivo con un riavvio necessario. per ulteriori informazioni, vedere [MsiExec.exe messaggi di errore](/windows/win32/msi/error-codes) .
 
 1. Eseguire il comando seguente in tale directory.
 
@@ -172,7 +172,7 @@ Salvare il Dockerfile di esempio seguente in un nuovo file su disco. Se il file 
 
 Dopo avere creato un'immagine, è possibile eseguirla in un contenitore per eseguire compilazioni sia automatiche che interattive. L'esempio usa il prompt dei comandi per gli sviluppatori, in modo che la variabile PATH e altre variabili di ambiente siano già configurate.
 
-1. Aprire un prompt dei comandi.
+1. Aprire un prompt dei comandi:
 
 1. Eseguire il contenitore per avviare un ambiente di PowerShell con tutte le variabili di ambiente per gli sviluppatori impostate:
 
@@ -195,11 +195,11 @@ Dopo avere creato un'immagine, è possibile eseguirla in un contenitore per eseg
 Per usare questa immagine per il flusso di lavoro CI/CD è possibile pubblicarla nel proprio [Registro Azure Container](https://azure.microsoft.com/services/container-registry) o in un altro [registro Docker](https://docs.docker.com/registry/deploying) interno, in modo che i server possano semplicemente eseguirne il pull.
 
    > [!NOTE]
-   > Se il contenitore Docker non viene avviato, è probabile che si sia verificato un problema di installazione di Visual Studio.If the Docker container fails to start, there's likely a Visual Studio installation issue. È possibile aggiornare il Dockerfile per rimuovere il passaggio che chiama il comando batch di Visual Studio.You can update the Dockerfile to remove the step that calls the Visual Studio batch command. In questo modo è possibile avviare il contenitore Docker e leggere i log degli errori di installazione.
+   > Se il contenitore Docker non viene avviato, è probabile che si verifichi un problema di installazione di Visual Studio. È possibile aggiornare Dockerfile per rimuovere il passaggio che chiama il comando batch di Visual Studio. In questo modo è possibile avviare il contenitore Docker e leggere i log degli errori di installazione.
    >
-   > Nel file Dockerfile, `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` rimuovere `&&` i `ENTRYPOINT` parametri e dal comando. Il comando dovrebbe `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`ora essere . Successivamente, ricompilare il Dockerfile ed eseguire il `run` comando per accedere ai file contenitore. Per individuare i log degli `$env:TEMP` errori di `dd_setup_<timestamp>_errors.log` installazione, passare alla directory e individuare il file.
+   > Nel file Dockerfile rimuovere i `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` parametri e dal `ENTRYPOINT` comando. Il comando dovrebbe ora essere `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]` . Successivamente, ricompilare il Dockerfile ed eseguire il `run` comando per accedere ai file contenitore. Per individuare i log degli errori di installazione, passare alla `$env:TEMP` Directory e individuare il `dd_setup_<timestamp>_errors.log` file.
    >
-   > Dopo aver identificato e risolto il problema `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` di installazione, `ENTRYPOINT` è possibile aggiungere nuovamente i parametri e al comando e ricompilare il Dockerfile.
+   > Una volta identificato e risolto il problema di installazione, è possibile aggiungere `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` di nuovo i parametri e al `ENTRYPOINT` comando e ricompilare i Dockerfile.
    >
    > Per altre informazioni, vedere [Problemi noti dei contenitori](build-tools-container-issues.md).
 
@@ -207,6 +207,6 @@ Per usare questa immagine per il flusso di lavoro CI/CD è possibile pubblicarla
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esempio avanzato per i contenitoriAdvanced Example for Containers](advanced-build-tools-container.md)
+* [Esempio avanzato per i contenitori](advanced-build-tools-container.md)
 * [Problemi noti dei contenitori](build-tools-container-issues.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

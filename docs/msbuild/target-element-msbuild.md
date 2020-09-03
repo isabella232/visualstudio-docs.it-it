@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80375558"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
@@ -55,12 +55,12 @@ Contiene un set di attività per l'esecuzione sequenziale di MSBuild.
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Name`|Attributo obbligatorio.<br /><br /> Nome della destinazione. Un nome di destinazione `$@()%*?.`può contenere qualsiasi carattere ad eccezione di .|
-|`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Se la condizione restituisce `false`, la destinazione non eseguirà il corpo della destinazione o di eventuali destinazioni impostate nell'attributo `DependsOnTargets`. Per ulteriori informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
+|`Name`|Attributo obbligatorio.<br /><br /> Nome della destinazione. Un nome di destinazione può contenere qualsiasi carattere eccetto `$@()%*?.` .|
+|`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Se la condizione restituisce `false`, la destinazione non eseguirà il corpo della destinazione o di eventuali destinazioni impostate nell'attributo `DependsOnTargets`. Per ulteriori informazioni sulle condizioni, vedere [condizioni](../msbuild/msbuild-conditions.md).|
 |`Inputs`|Attributo facoltativo.<br /><br /> File che costituiscono gli input in questa destinazione. Per specificare più file, usare il punto e virgola come delimitatore. I timestamp dei file verranno confrontati con i timestamp dei file in `Outputs` per determinare se `Target` è aggiornata. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md), [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md) e [Trasformazioni](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Attributo facoltativo.<br /><br /> File che costituiscono gli output in questa destinazione. Per specificare più file, usare il punto e virgola come delimitatore. I timestamp dei file verranno confrontati con i timestamp dei file in `Inputs` per determinare se `Target` è aggiornata. Per altre informazioni, vedere [Compilazioni incrementali](../msbuild/incremental-builds.md), [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md) e [Trasformazioni](../msbuild/msbuild-transforms.md).|
 |`Returns`|Attributo facoltativo.<br /><br /> Set di elementi che saranno disponibili per le attività che richiamano questa destinazione, ad esempio, le attività di MSBuild. Se si specificano più destinazioni, usare il punto e virgola per separarle. Se le destinazioni nel file non hanno attributi `Returns`, in alternativa vengono usati gli attributi Outputs a questo scopo.|
@@ -83,11 +83,11 @@ Contiene un set di attività per l'esecuzione sequenziale di MSBuild.
 
 | Elemento | Descrizione |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
 ## <a name="remarks"></a>Osservazioni
 
- La prima destinazione da eseguire viene specificata in fase di esecuzione. Le destinazioni possono avere dipendenze da altre destinazioni. Ad esempio, una destinazione per la distribuzione dipende da una destinazione per la compilazione. Il motore MSBuild esegue le dipendenze nell'ordine `DependsOnTargets` in cui appaiono nell'attributo, da sinistra a destra. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).
+ La prima destinazione da eseguire viene specificata in fase di esecuzione. Le destinazioni possono avere dipendenze da altre destinazioni. Ad esempio, una destinazione per la distribuzione dipende da una destinazione per la compilazione. Il motore MSBuild esegue le dipendenze nell'ordine in cui sono visualizzate nell' `DependsOnTargets` attributo, da sinistra a destra. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).
 
  MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione con un attributo `Name` specifico diventa l'ultima definizione usata.
 
@@ -124,4 +124,4 @@ Contiene un set di attività per l'esecuzione sequenziale di MSBuild.
 ## <a name="see-also"></a>Vedere anche
 
 - [Server di destinazione](../msbuild/msbuild-targets.md)
-- [Informazioni di riferimento sullo schema del file di progettoProject file schema reference](../msbuild/msbuild-project-file-schema-reference.md)
+- [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
