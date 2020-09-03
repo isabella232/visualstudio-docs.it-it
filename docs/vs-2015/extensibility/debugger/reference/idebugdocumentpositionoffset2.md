@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c1f30c3a465d4803e5c91f14ee45ad582e76d986
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200221"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Rappresenta una posizione in un file di origine da un offset di carattere.  
+Rappresenta una posizione in un file di origine come offset carattere.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -29,22 +29,22 @@ IDebugDocumentPositionOffset2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Implementata dall'IDE e utilizzato dai motori di debug.  
+ Implementato dall'IDE e utilizzato dai motori di debug.  
   
 ## <a name="methods"></a>Metodi  
- Nella tabella seguente sono illustrati i metodi di `IDebugDocumentPositionOffset2`.  
+ La tabella seguente illustra i metodi di `IDebugDocumentPositionOffset2` .  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Recupera l'intervallo per la posizione corrente del documento.|  
+|[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|Recupera l'intervallo per la posizione del documento corrente.|  
   
-## <a name="remarks"></a>Note  
- Restituisce le stesse informazioni [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) ma in `char` viene eseguito l'offset dall'inizio del documento. Questo presenta il documento, ad esempio che esisterebbe in un disco, vale a dire, una matrice unidimensionale di caratteri, anziché le informazioni di riga e colonna che viene in genere restituito.  
+## <a name="remarks"></a>Osservazioni  
+ Restituisce le stesse informazioni di [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) ma in `char` offset dall'inizio del documento. Viene visualizzato il documento come se fosse presente su un disco, ovvero una matrice unidimensionale di caratteri, anziché le informazioni di riga e colonna restituite normalmente.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: Msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

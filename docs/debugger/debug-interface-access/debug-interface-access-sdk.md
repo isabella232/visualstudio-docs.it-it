@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da0ced56e8bf7e61e7fa5251e834a762d4c66650
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468693"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
@@ -31,7 +31,7 @@ Microsoft Debug Interface Access Software Development Kit (DIA SDK) fornisce l'a
 
 Fornisce una panoramica delle funzionalità di DIA SDK e specifica la posizione in cui è installato il DIA SDK nonché i file di intestazione e di libreria necessari.
 
-[Ricerche nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+[Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
 
 Fornisce istruzioni su come usare l'API DIA per eseguire una query sul file con estensione pdb.
 

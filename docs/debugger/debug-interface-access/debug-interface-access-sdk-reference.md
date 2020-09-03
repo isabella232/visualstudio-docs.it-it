@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7fb49ee4ccd49d848b4d770459352c685469fb7b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468700"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Riferimenti di Debug Interface Access SDK
@@ -45,6 +45,6 @@ Descrive un numero di stringhe e le relative etichette che possono essere usate 
 
 Vengono descritti i simboli e il modo in cui vengono identificati in base al tipo.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

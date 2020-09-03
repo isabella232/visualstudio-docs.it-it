@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c0ae3dd206953e728175f4479920861295feae00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200294"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (distruttore)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Elimina un'istanza di `VsgDbg` classe. Se viene registrate in modo attivo le informazioni grafiche, il file di log di grafica viene finalizzato e chiusa e vengono rilasciate le risorse che sono state usate durante l'acquisizione attivamente informazioni grafiche.  
+Elimina un'istanza della `VsgDbg` classe. Se le informazioni grafiche vengono registrate attivamente, il file di log di grafica viene finalizzato e chiuso e le risorse utilizzate durante l'acquisizione attiva delle informazioni grafiche vengono rilasciate.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -28,4 +28,4 @@ Elimina un'istanza di `VsgDbg` classe. Se viene registrate in modo attivo le inf
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [VsgDbg::VsgDbg (Costruttore)](../debugger/vsgdbg-vsgdbg-constructor.md)
+ [VsgDbg::VsgDbg (costruttore)](../debugger/vsgdbg-vsgdbg-constructor.md)

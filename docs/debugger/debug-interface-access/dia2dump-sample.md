@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17fe6d65e70399ccac5b9ef4e2f1234ef4e3698e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468686"
 ---
 # <a name="dia2dump-sample"></a>Esempio Dia2dump
@@ -74,6 +74,6 @@ Dia2Dump.exe si basa sul server COM*Version*. dll di MSDIA vengono per fornire i
 
 1. Dia2Dump dispone di altre opzioni per visualizzare solo le informazioni selezionate. Usare il `dia2dump -?` comando per elencare tutte le opzioni disponibili.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Porta, migrazione e aggiornamento dei progetti di Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

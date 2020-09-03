@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Microsoft Docs
+title: 'IDebugDocumentText2:: GetText | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066c2c025fe7b1c83fb30cb3a0e1a7b61d8c2c41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200185"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
@@ -46,22 +46,22 @@ int GetText( 
   
 #### <a name="parameters"></a>Parametri  
  `pos`  
- [in] Oggetto [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struttura che indica la posizione del testo da recuperare.  
+ in Struttura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) che indica la posizione del testo da recuperare.  
   
  `cMaxChars`  
- [in] Il numero massimo di caratteri del testo da recuperare.  
+ in Numero massimo di caratteri del testo da recuperare.  
   
  `pText`  
- [in, out] Un puntatore a un buffer che deve essere compilato con il testo desiderato. Questo buffer deve essere in grado di contenere almeno `cMaxChars` numero di caratteri "wide".  
+ [in, out] Puntatore a un buffer che deve essere compilato con il testo desiderato. Questo buffer deve essere in grado di contenere almeno un `cMaxChars` numero di caratteri wide.  
   
  `pcNumChars`  
- [out] Restituisce il numero di caratteri effettivamente recuperati.  
+ out Restituisce il numero di caratteri effettivamente recuperati.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 ## <a name="example"></a>Esempio  
- Questo esempio mostra come questo metodo può essere chiamato da codice c#.  
+ Questo esempio mostra in che modo questo metodo può essere chiamato da C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

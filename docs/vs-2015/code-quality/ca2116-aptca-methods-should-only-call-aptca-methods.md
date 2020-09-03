@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 115c0e733716994ba463eada938f8ff908612d0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547758"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: I metodi APTCA devono chiamare solo metodi APTCA
@@ -40,9 +40,9 @@ ms.locfileid: "85547758"
 
  Quando l'attributo APTCA è presente in un assembly completamente attendibile e l'assembly esegue codice in un altro assembly che non consente chiamanti parzialmente attendibili, è possibile che si sia verificata una violazione della sicurezza. Se due metodi `M1` e `M2` soddisfano le condizioni seguenti, i chiamanti malintenzionati possono usare il metodo `M1` per ignorare la richiesta di collegamento di attendibilità totale implicita che protegge `M2` :
 
-- `M1`è un metodo pubblico dichiarato in un assembly completamente attendibile con l'attributo APTCA.
+- `M1` è un metodo pubblico dichiarato in un assembly completamente attendibile con l'attributo APTCA.
 
-- `M1`chiama un metodo `M2` esterno all' `M1` assembly.
+- `M1` chiama un metodo `M2` esterno all' `M1` assembly.
 
 - `M2`l'assembly di non dispone dell'attributo APTCA e, pertanto, non deve essere eseguito da o per conto di chiamanti parzialmente attendibili.
 

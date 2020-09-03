@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fea037e4e99cc5c8822987c30a94adf37ebe276e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467708"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
@@ -38,5 +38,5 @@ in Numero di simboli nella sequenza di enumerazione da ignorare.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` se non sono presenti altri simboli da ignorare.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

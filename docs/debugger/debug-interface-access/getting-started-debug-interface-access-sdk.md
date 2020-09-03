@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a93225b4bd4180a9ce3389911c2c15d0dbef52ad
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468602"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Introduzione (Debug Interface Access SDK)
@@ -47,10 +47,10 @@ L'SDK di debug Interface Access (DIA) fornisce la documentazione di istruzioni e
 
 Esamina l'architettura di base di DIA.
 
-[Ricerche nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+[Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
 
 Fornisce istruzioni dettagliate su come usare l'API DIA per eseguire query in un file con estensione pdb.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
