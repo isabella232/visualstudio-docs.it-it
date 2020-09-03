@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 24c49015915b8a1d214a833c38c5550f51c50c13
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328698"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando
@@ -57,7 +57,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
     > [!NOTE]
     > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per i servizi.
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName`|Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows.|
     |[/CrossSession](../profiling/crosssession.md)|Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se il servizio è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna **ID sessione** della scheda **processi** di gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**.|
@@ -73,7 +73,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     - `PID` specifica l'ID o il nome del processo del servizio. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.
 
-    - **targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativa.
+    - **targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. facoltativo.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
  Mentre il servizio è in esecuzione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni *VSPerfCmd.exe* . Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.
@@ -82,7 +82,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 - Le coppie seguenti di opzioni di **VSPerfCmd** avviano e interrompono la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/GlobalOff/GlobalOn](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8cb71acb9c1c332f269f77129fa2d11a9a874f8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350147"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio (C++, C#, Visual Basic, F #)
@@ -70,7 +70,7 @@ Potrebbe essere necessario eseguire il debug di un'app (file con*estensione exe*
 
 1. Con il nuovo file selezionato, avviare il debug dell'app selezionando un comando di esecuzione, ad esempio **Avvia debug**, dal menu **debug** .
 
-### <a name="see-also"></a>Vedi anche
+### <a name="see-also"></a>Vedere anche
 - [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [File DBG](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

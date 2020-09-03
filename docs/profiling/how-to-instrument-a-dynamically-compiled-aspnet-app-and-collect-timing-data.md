@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: f510878c3952cb98bcbee3bfecedf05b87b2658f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327969"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
@@ -50,14 +50,14 @@ Avviare il profiler, quindi eseguire l'applicazione di destinazione. Mentre il p
 
    - L'opzione **/start:trace** inizializza il profiler.
 
-   - L'opzione **/output:** `OutputFile` è obbligatoria con **/Start**. `OutputFile`Specifica il nome e il percorso dei dati di profilatura (.* VSP*).
+   - L'opzione **/output:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` Specifica il nome e il percorso dei dati di profilatura (.* VSP*).
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:trace**.
 
      > [!NOTE]
      > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
 
-     | Opzione | Description |
+     | Opzione | Descrizione |
      | - | - |
      | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo di lavoro ASP.NET. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
      | [/CrossSession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni di accesso. Questa opzione è obbligatoria se l'applicazione ASP.NET è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -75,7 +75,7 @@ Quando è in esecuzione l'applicazione di destinazione, è possibile controllare
 
 - Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/GlobalOff/GlobalOn](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
@@ -113,7 +113,7 @@ Dopo aver completato l'attività di profilatura, sostituire il file *web.config*
 
 3. Riavviare il computer.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Profilare applicazioni](../profiling/command-line-profiling-of-aspnet-web-applications.md) 
  Web ASP.NET [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)

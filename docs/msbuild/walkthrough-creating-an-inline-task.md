@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289144"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procedura dettagliata: Creare un'attività inline
@@ -264,7 +264,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 </Code>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Attività inline](../msbuild/msbuild-inline-tasks.md)
 - [Attività](../msbuild/msbuild-tasks.md)

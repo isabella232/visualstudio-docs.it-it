@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709092"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Creare cartelle del contenitore padre per le soluzioni
@@ -43,15 +43,15 @@ Nel plug-in del controllo del codice sorgente versione 1,2, un utente può speci
 
 - I progetti sono stati aggiunti separatamente (in una soluzione controllata dal codice sorgente).
 
-In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]è consigliabile che il nome della cartella sur corrisponda al nome della soluzione senza estensione. Nella tabella seguente viene riepilogato il comportamento delle due versioni.
+In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è consigliabile che il nome della cartella sur corrisponda al nome della soluzione senza estensione. Nella tabella seguente viene riepilogato il comportamento delle due versioni.
 
-|Funzionalità|API del plug-in del controllo del codice sorgente versione 1,1|API del plug-in del controllo del codice sorgente versione 1,2|
+|Feature|API del plug-in del controllo del codice sorgente versione 1,1|API del plug-in del controllo del codice sorgente versione 1,2|
 |-------------| - | - |
 |Aggiungi soluzione a SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|
 |Aggiungi progetto a soluzione controllata dal codice sorgente|SccGetProjPath()<br /><br /> OpenProject ()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Nota:**  In Visual Studio si presuppone che una soluzione sia un figlio diretto di SUR.|
 
 ## <a name="examples"></a>Esempi
- Nella tabella seguente sono elencati due esempi. In entrambi i casi, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] all'utente viene richiesto di specificare un percorso di destinazione per la soluzione nel controllo del codice sorgente finché il *user_choice* non viene specificato come destinazione. Quando si specifica il user_choice, la soluzione e due progetti vengono aggiunti senza richiedere all'utente le destinazioni del controllo del codice sorgente.
+ Nella tabella seguente sono elencati due esempi. In entrambi i casi, all' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utente viene richiesto di specificare un percorso di destinazione per la soluzione nel controllo del codice sorgente finché il  *user_choice* non viene specificato come destinazione. Quando si specifica il user_choice, la soluzione e due progetti vengono aggiunti senza richiedere all'utente le destinazioni del controllo del codice sorgente.
 
 |La soluzione contiene|Sui percorsi del disco|Struttura predefinita del database|
 |-----------------------|-----------------------|--------------------------------|
@@ -60,9 +60,9 @@ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]è consigliabile 
 
  La cartella SUR e le sottocartelle vengono create indipendentemente dal fatto che l'operazione venga annullata o non riesca a causa di un errore. Non vengono rimosse automaticamente in condizioni di errore o di annullamento.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]il valore predefinito è il comportamento della versione 1,1 se il plug-in del controllo `SCC_CAP_CREATESUBPROJECT` del `SCC_CAP_GETPARENTPROJECT` codice sorgente non restituisce e i flag di funzionalità. Inoltre, gli utenti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di possono scegliere di ripristinare il comportamento della versione 1,1 impostando il valore della chiave seguente su *DWORD: 00000001*:
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] il valore predefinito è il comportamento della versione 1,1 se il plug-in del controllo del codice sorgente non restituisce `SCC_CAP_CREATESUBPROJECT` e i `SCC_CAP_GETPARENTPROJECT` flag di funzionalità. Inoltre, gli utenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possono scegliere di ripristinare il comportamento della versione 1,1 impostando il valore della chiave seguente su *DWORD: 00000001*:
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *DWORD: 00000001*
+ **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\sourcecontrol] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
 
 ## <a name="see-also"></a>Vedere anche
 - [Novità dell'API del plug-in del controllo del codice sorgente versione 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

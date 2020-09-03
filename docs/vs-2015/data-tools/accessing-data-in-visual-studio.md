@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 78d950b777d866835ef516c4910180b21de295e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545002"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Accesso ai dati in Visual Studio
@@ -86,7 +86,7 @@ In Visual Studio è possibile creare applicazioni che si connettono ai dati prat
 ### <a name="net-languages"></a>Linguaggi .NET
  Tutti gli accessi ai dati .NET, incluso in .NET Core, sono basati su ADO.NET, un set di classi che definisce un'interfaccia per l'accesso a qualsiasi tipo di origine dati, sia relazionale che non relazionale. Visual Studio include diversi strumenti e finestre di progettazione che funzionano con ADO.NET per semplificare la connessione ai database, modificare i dati e presentare i dati all'utente. La documentazione in questa sezione descrive come usare questi strumenti. È anche possibile programmare direttamente con gli oggetti comando ADO.NET. Per ulteriori informazioni sulla chiamata diretta delle API ADO.NET, vedere [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) in MSDN Library.
 
- Per la documentazione relativa all'accesso ai dati specificamente correlata a ASP.NET, vedere [utilizzo dei dati](/aspnet/web-forms/overview/presenting-and-managing-data/) nel sito di ASP.NET. Per un'esercitazione sull'uso di Entity Framework con ASP.NET MVC, vedere [Introduzione con Entity Framework 6 Code First con MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ Per la documentazione relativa all'accesso ai dati specificamente correlata a ASP.NET, vedere  [utilizzo dei dati](/aspnet/web-forms/overview/presenting-and-managing-data/) nel sito di ASP.NET. Per un'esercitazione sull'uso di Entity Framework con ASP.NET MVC, vedere [Introduzione con Entity Framework 6 Code First con MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
  Le app piattaforma UWP (Universal Windows Platform) (UWP) in C# o Visual Basic possono usare la Microsoft Azure SDK per .NET per accedere ad archiviazione di Azure e ad altri servizi di Azure. La classe Windows. Web. HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per ulteriori informazioni, vedere [come connettersi a un server http utilizzando Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -97,7 +97,7 @@ In Visual Studio è possibile creare applicazioni che si connettono ai dati prat
 #### <a name="data-providers"></a>Provider di dati
  Affinché un database sia utilizzabile in ADO.NET, è necessario che disponga di un *provider di dati ADO.NET* personalizzato. in caso contrario, deve esporre un'interfaccia ODBC o OLE DB. Microsoft fornisce un [elenco di provider di dati ADO.NET](https://msdn.microsoft.com/data/dd363565) per SQL Server prodotti, nonché per i provider ODBC e OLE DB.
 
-#### <a name="data-modeling"></a>Modellazione dei dati
+#### <a name="data-modeling"></a>Modellazione dati
  In .NET sono disponibili tre opzioni per la modellazione e la modifica dei dati in memoria dopo che è stato recuperato da un'origine dati:
 
  Entity Framework la tecnologia Microsoft ORM preferita. È possibile usarlo per programmare in base ai dati relazionali come oggetti .NET di prima classe. Per le nuove applicazioni, deve essere la prima scelta predefinita quando è necessario un modello. Richiede il supporto personalizzato del provider ADO.NET sottostante.
@@ -115,16 +115,16 @@ In Visual Studio è possibile creare applicazioni che si connettono ai dati prat
 
  I programmi C++ che funzionano con Archiviazione di Microsoft Azure possono usare il [client di archiviazione di Microsoft Azure](https://www.nuget.org/packages/wastorage).
 
-#### <a name="data-modeling"></a>Modellazione dei dati
+#### <a name="data-modeling"></a>Modellazione dati
  Visual Studio non fornisce un livello ORM per C++.  [ODB](https://www.codesynthesis.com/products/odb/) è un noto ORM open source per C++.
 
- Per ulteriori informazioni sulle tecnologie legacy di accesso ai dati Visual C++, vedere [accesso ai dati](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ Per ulteriori informazioni sulle tecnologie legacy di accesso ai dati Visual C++, vedere  [accesso ai dati](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [JavaScript in Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) è un linguaggio di prima classe per la creazione di app multipiattaforma, app UWP, servizi cloud, siti Web e app Web. È possibile usare Bower, grugnire, Gulp, NPM e NuGet da Visual Studio per installare le librerie JavaScript e i prodotti di database preferiti. Connettersi ad archiviazione e servizi di Azure scaricando gli SDK dal [sito Web di Azure](https://azure.microsoft.com/).  Edge.js è una libreria che connette JavaScript sul lato server (Node.js) alle origini dati ADO.NET.
 
 ### <a name="python"></a>Python
- Installare [Python Tools for Visual Studio](http://microsoft.github.io/PTVS/) insieme al framework Python preferito per creare applicazioni CPython o IronPython (.NET).  Il sito Web di Python Tools for Visual Studio offre diverse esercitazioni sulla connessione ai dati, tra cui [Django e il database SQL in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django e MySQL in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) e [Bottle e MongoDB in Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+ Installare  [Python Tools for Visual Studio](http://microsoft.github.io/PTVS/) insieme al framework Python preferito per creare applicazioni CPython o IronPython (.NET).  Il sito Web di Python Tools for Visual Studio offre diverse esercitazioni sulla connessione ai dati, tra cui [Django e il database SQL in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django e MySQL in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) e [Bottle e MongoDB in Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Installazione di sistemi di database, strumenti ed esempi](../data-tools/installing-database-systems-tools-and-samples.md) Viene illustrato come ottenere i prodotti di database e le estensioni o i driver di Visual Studio che li supportano, oltre a individuare i database di esempio a scopo di sperimentazione e apprendimento.

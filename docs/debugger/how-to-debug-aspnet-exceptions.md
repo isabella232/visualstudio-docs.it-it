@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: a6808bff0a38b6ebaa3049f1655e781439f3f735
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350134"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedura: debug di eccezioni ASP.NET
@@ -47,5 +47,5 @@ Il debug delle eccezioni è una parte importante dello sviluppo di una potente a
 
 - Collocare blocchi `try ... catch` attorno al codice che può generare eccezioni anticipabili e gestibili. Se, ad esempio, l'applicazione effettua chiamate a un Servizio Web XML o direttamente a SQL Server, il codice dovrebbe trovarsi in blocchi **try ... catch** perché è possibile che si verifichino numerose eccezioni.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

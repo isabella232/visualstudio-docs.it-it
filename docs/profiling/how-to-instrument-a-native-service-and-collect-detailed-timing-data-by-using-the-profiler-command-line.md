@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 123c9af48d93e23d4f582575848d981f57abd2f9
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327889"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio nativo e raccogliere dati di intervallo dettagliati con la riga di comando del profiler
@@ -46,14 +46,14 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
    - L'opzione **/start:trace** inizializza il profiler.
 
-   - L'opzione **/output:** `OutputFile` è obbligatoria con **/Start**. `OutputFile`Specifica il nome e il percorso dei dati di profilatura (.* VSP*).
+   - L'opzione **/output:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` Specifica il nome e il percorso dei dati di profilatura (.* VSP*).
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:trace**.
 
    > [!NOTE]
    > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
 
-   | Opzione | Description |
+   | Opzione | Descrizione |
    | - | - |
    | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo di lavoro ASP.NET. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
    | [/CrossSession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni di accesso. Questa opzione è obbligatoria se l'applicazione ASP.NET è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna ID sessione della scheda Processi di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -73,7 +73,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 - Le coppie seguenti di opzioni di **VSPerfCmd** avviano e interrompono la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|Description|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/GlobalOff/GlobalOn](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:**`PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
@@ -92,6 +92,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 3. Sostituire il modulo instrumentato con l'originale. Se necessario, riconfigurare il tipo di avvio del servizio.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
 - [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)

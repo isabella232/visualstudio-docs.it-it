@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d0571c01217441d4a39fbfe6fb58ccfe95fd0c5a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290618"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>Refactoring semplificato dell'espressione condizionale
@@ -38,6 +38,6 @@ Questo refactoring si applica a:
 
     ![Semplificare l'espressione condizionale](media/simplify-conditional-expression.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

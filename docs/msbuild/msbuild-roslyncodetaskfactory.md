@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289209"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Attività inline di MSBuild con RoslynCodeTaskFactory
@@ -146,7 +146,7 @@ I parametri possono avere uno o più degli attributi seguenti:
 
 - `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.
 
-Ad esempio,
+Ad esempio:
 
 ```xml
 <ParameterGroup>
@@ -261,7 +261,7 @@ Queste attività inline possono combinare i percorsi e ottenere il nome del file
 
 ## <a name="provide-backward-compatibility"></a>Fornire compatibilità con le versioni precedenti
 
-`RoslynCodeTaskFactory`per prima cosa è stato reso disponibile nella versione 15,8 di MSBuild. Si supponga di avere una situazione in cui si vogliono supportare le versioni precedenti di Visual Studio e MSBuild, quando `RoslynCodeTaskFactory` non era disponibile, ma `CodeTaskFactory` era, ma si vuole usare lo stesso script di compilazione. È possibile usare un `Choose` costrutto che usa la `$(MSBuildVersion)` proprietà per decidere in fase di compilazione se usare `RoslynCodeTaskFactory` o eseguire il fallback a `CodeTaskFactory` , come nell'esempio seguente:
+`RoslynCodeTaskFactory` per prima cosa è stato reso disponibile nella versione 15,8 di MSBuild. Si supponga di avere una situazione in cui si vogliono supportare le versioni precedenti di Visual Studio e MSBuild, quando `RoslynCodeTaskFactory` non era disponibile, ma `CodeTaskFactory` era, ma si vuole usare lo stesso script di compilazione. È possibile usare un `Choose` costrutto che usa la `$(MSBuildVersion)` proprietà per decidere in fase di compilazione se usare `RoslynCodeTaskFactory` o eseguire il fallback a `CodeTaskFactory` , come nell'esempio seguente:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -310,7 +310,7 @@ Queste attività inline possono combinare i percorsi e ottenere il nome del file
 </Project>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Procedura dettagliata: Creare un'attività inline](../msbuild/walkthrough-creating-an-inline-task.md)

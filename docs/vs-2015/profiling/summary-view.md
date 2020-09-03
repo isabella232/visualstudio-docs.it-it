@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4346b0e7459ee3c78669ab9178555370ffac16d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545509"
 ---
 # <a name="summary-view"></a>Visualizzazione Riepilogo
@@ -39,7 +39,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti ch
 ## <a name="notifications-links"></a>Collegamenti nell'elenco Notifica  
  È possibile fare clic sui collegamenti nell'elenco Notifica per impostare le opzioni di visualizzazione per il report. L'elenco è a destra del grafico della sequenza temporale.  
   
-|Opzione|Description|  
+|Opzione|Descrizione|  
 |-|-|  
 |**Mostra tutto il codice**<br /><br /> **Mostra Just My Code**|Non disponibile per il codice nativo o per i dati di profilatura raccolti tramite il metodo di strumentazione. Consente di passare dalla visualizzazione dei dati solo dal codice utente (**Mostra Just My Code**) alla visualizzazione dei dati da tutto il codice, incluso il codice di sistema (**Mostra tutto il codice**). Per impostazione predefinita, i dati sono limitati al codice utente. Per modificare l'impostazione, vedere [Procedura: Filtrare le visualizzazioni dei report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)|  
 |**Visualizza materiale sussidiario**|Visualizza gli avvisi delle regola per le prestazioni nella finestra **Elenco errori**. Per altre informazioni, vedere[Uso di regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md).|  
@@ -47,7 +47,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti ch
 ## <a name="report"></a>Report  
  È possibile fare clic sui collegamenti nell'elenco Rapporto per aprire visualizzazioni diverse e confrontare, salvare o filtrare il report. L'elenco è a destra del grafico della sequenza temporale.  
   
-|Name|Descrizione|  
+|Nome|Descrizione|  
 |-|-|  
 |**Mostra albero delle chiamate ridotto**|Visualizza i percorsi di esecuzione più dispendiosi nella visualizzazione Albero delle chiamate. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md).|  
 |**Mostra righe critiche**|Non disponibile per i dati di profilatura raccolti tramite il metodo di strumentazione. Visualizza le righe di codice sorgente più dispendiose nella visualizzazione Righe. Per altre informazioni, vedere [Visualizzazione Righe](../profiling/lines-view.md).|  

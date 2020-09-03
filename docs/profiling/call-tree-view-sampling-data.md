@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779753"
 ---
 # <a name="call-tree-view---sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento
@@ -39,23 +39,23 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**ID di processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Process Name**|Nome del processo.|
+|**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
+|**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 |**Nome funzione**|Nome completo della funzione.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
-|**Livello**|Profondità di questa funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|Profondità di questa funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Campioni esclusivi**|Numero di esempi raccolti in questa funzione quando la funzione è stata chiamata dalla funzione padre nell'albero delle chiamate. Questo numero non include gli esempi raccolti nelle funzioni chiamate dalla funzione.|
 |**% esempi esclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che erano esempi esclusivi di questa funzione quando è stata chiamata dalla funzione padre nell'albero delle chiamate.|
 |**Esempi inclusivi**|Numero di esempi raccolti in questa funzione quando la funzione è stata chiamata dalla funzione padre nell'albero delle chiamate. Il numero include gli esempi raccolti nelle funzioni chiamate dalla funzione.|
 |**% campioni inclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che erano esempi inclusivi di questa funzione quando è stata chiamata dalla funzione padre nell'albero delle chiamate.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: personalizzare le colonne della visualizzazione reportHow to: Customize report view columns](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Albero delle chiamate: dati di campionamento del profiler](../profiling/call-Tree-view-sampling-data.md)
 - [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Struttura ad albero delle chiamate - strumentazioneCall Tree view - instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
-- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)
+- [Visualizzazione albero delle chiamate-Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)

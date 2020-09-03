@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 803f81d1a26438c2134349a85369d341353e17cf
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350420"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Come è possibile eseguire il debug di una violazione di accesso C++?
@@ -79,5 +79,5 @@ Se si esegue questo codice in Visual Studio 2015 Update 1, dovrebbe comparire la
 
 Se non è possibile determinare perché il puntatore ha causato una violazione di accesso, tracciare il codice per assicurarsi che il puntatore che provoca il problema sia stato assegnato correttamente.  Se viene passato come parametro, assicurarsi che venga passato correttamente e che non si crei accidentalmente una [copia superficiale](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Verificare quindi che i valori non vengano involontariamente modificati in qualche punto del programma creando un punto di interruzione dei dati per il puntatore in questione per assicurarsi che non venga modificato altrove nel programma. Per ulteriori informazioni sui punti di interruzione dei dati, vedere la relativa sezione in [Using Breakpoints](../debugger/using-breakpoints.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)

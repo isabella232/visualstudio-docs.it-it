@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: eb60a431ae1fd1f6d44b8aa1477d74705eb532d7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328363"
 ---
 # <a name="how-to-set-the-current-session"></a>Procedura: Impostare la sessione corrente
@@ -35,7 +35,7 @@ Dopo avere impostato una sessione come sessione corrente, fare clic su **Avvio**
 
      Il nome della sessione verrà visualizzato in grassetto.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
  di prestazioni [Finestra Esplora prestazioni](../profiling/performance-explorer-window.md) 

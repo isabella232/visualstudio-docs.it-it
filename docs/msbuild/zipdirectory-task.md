@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183067"
 ---
 # <a name="zipdirectory-task"></a>Attività ZipDirectory
@@ -46,7 +46,7 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 |`Overwrite`|Parametro `Boolean` facoltativo.<br /><br /> Se `true` , il file di destinazione verrà sovrascritto, se esistente. Il valore predefinito è `false`.|
 |`SourceDirectory`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica la directory da cui creare un archivio con estensione *zip*.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -69,4 +69,4 @@ Crea un archivio con estensione *zip* dal contenuto di una directory.
 ## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

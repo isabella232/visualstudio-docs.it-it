@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545171"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
@@ -35,13 +35,13 @@ ms.locfileid: "85545171"
 
 - La proprietà <xref:System.Xml.XmlNode.InnerXml%2A> nel codice XML è impostata.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>la proprietà è impostata su Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> la proprietà è impostata su Parse.
 
 - Un input non attendibile viene elaborato con <xref:System.Xml.XmlResolver> anziché con <xref:System.Xml.XmlSecureResolver> .
 
 - Lettore XML.<xref:System.Xml.XmlReader.Create%2A> il metodo viene richiamato con un' <xref:System.Xml.XmlReaderSettings> istanza non protetta o senza alcuna istanza.
 
-- <xref:System.Xml.XmlReader>viene creato con impostazioni o valori predefiniti non sicuri.
+- <xref:System.Xml.XmlReader> viene creato con impostazioni o valori predefiniti non sicuri.
 
   In ognuno di questi casi, il risultato è lo stesso: il contenuto del file system o delle condivisioni di rete nel computer in cui viene elaborato il codice XML sarà esposto alle minacce di utenti malintenzionati e potrà quindi essere usato come vettore di attacchi DoS.
 

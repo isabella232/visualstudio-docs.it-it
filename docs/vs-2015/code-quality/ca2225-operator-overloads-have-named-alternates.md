@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545223"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Gli overload degli operatori hanno alternative con nome
@@ -42,8 +42,8 @@ ms.locfileid: "85545223"
 
 |C#|Visual Basic|C++|Nome alternativo|
 |---------|------------------|-----------|--------------------|
-|+ (binario)|+|+ (binario)|Aggiunta|
-|+=|+=|+=|Aggiunta|
+|+ (binario)|+|+ (binario)|Add|
+|+=|+=|+=|Add|
 |&|e|&|BitwiseAnd|
 |&=|E =|&=|BitwiseAnd|
 |&#124;|Oppure|&#124;|BitwiseOr|
@@ -51,13 +51,13 @@ ms.locfileid: "85545223"
 |--|N/D|--|Operatore di conversione|
 |/|/|/|Divisione|
 |/=|/=|/=|Divisione|
-|==|=|==|Uguale a|
+|==|=|==|Equals|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
 |>|>|>|Confronto|
 |>=|>=|>=|Confronto|
 |++|N/D|++|Incremento valore Identity|
-|<>|!=|Uguale a|
+|<>|!=|Equals|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
 |<|<|<|Confronto|
@@ -77,7 +77,7 @@ ms.locfileid: "85545223"
 |true|IsTrue|N/D|IsTrue (proprietà)|
 | - (unario)   |N/D|-|Negate|
 |+ (unario)|N/D|+|Plus|
-|false|IsFalse|False|IsTrue (proprietà)|
+|false|IsFalse|Falso|IsTrue (proprietà)|
 
  Non è possibile eseguire l'overload di N/A = = nella lingua selezionata.
 

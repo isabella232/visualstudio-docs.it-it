@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d28df6d36b1b91974483ae793e6e57f064974183
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328528"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Procedura: Serializzare le informazioni sui simboli
@@ -34,7 +34,7 @@ ms.locfileid: "85328528"
 
 3. In **Impostazione generale** selezionare **Serializzare automaticamente le informazioni sui simboli**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
 - [Procedura: fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [Procedura: Salvare file di rapporto analizzati](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

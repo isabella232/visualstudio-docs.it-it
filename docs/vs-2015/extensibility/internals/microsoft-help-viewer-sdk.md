@@ -9,10 +9,10 @@ caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f7cbe9606b73741e1e59eb14f40cb277052944a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545080"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
@@ -132,17 +132,17 @@ Questo articolo contiene le attività seguenti per gli integratori del Visualizz
 
  Il corpo (escluso l'intestazione e il piè di pagina) dell'argomento conterrà i collegamenti alle pagine, una sezione di nota, un'area comprimibile, un frammento di codice e una sezione di testo specifico del linguaggio.  Per informazioni sulle aree dell'argomento presentato, vedere la sezione relativa alla personalizzazione.
 
-1. Aggiungere un tag titolo argomento:`<div class="title">Contoso Topic 4</div>`
+1. Aggiungere un tag titolo argomento:  `<div class="title">Contoso Topic 4</div>`
 
-2. Aggiungere una sezione Nota:`<div class="alert"> add your table tag and text </div>`
+2. Aggiungere una sezione Nota: `<div class="alert"> add your table tag and text </div>`
 
-3. Aggiungere un'area comprimibile:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Aggiungere un'area comprimibile:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Aggiungere un frammento di codice:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Aggiungere un frammento di codice:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Aggiungere testo specifico del linguaggio di codice: si `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` noti che devLangnu = consente di immettere altre lingue. Ad esempio, devLangnu = "FORTRAN" visualizzerà FORTRAN quando il frammento di codice DisplayLanguage = FORTRAN
+5. Aggiungere testo specifico del linguaggio di codice: si  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` noti che devLangnu = consente di immettere altre lingue. Ad esempio, devLangnu = "FORTRAN" visualizzerà FORTRAN quando il frammento di codice DisplayLanguage = FORTRAN
 
-6. Aggiungi collegamenti a pagina:`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Aggiungi collegamenti a pagina: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Nota: per la nuova colorazione del codice "lingua di visualizzazione" (ad esempio, F #, COBOL, Fortran) nel frammento di codice, il frammento di codice sarà monocromatico.
@@ -436,14 +436,14 @@ some F# code
 
 Funzionalità: **CollapsibleArea** use: Espandi Comprimi testo controllo contenuto
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |ExpandText|Espandere|
 |CollapseText|Comprimi|
 
 Funzionalità:**CodeSnippet** use: testo del controllo frammento di codice.  Nota: il contenuto dei frammenti di codice con spazio "senza interruzioni" verrà modificato in spazio.
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |CopyToClipboard|Copia negli Appunti|
 |ViewColorizedText|Visualizza colori|
@@ -453,7 +453,7 @@ Funzionalità:**CodeSnippet** use: testo del controllo frammento di codice.  Not
 
 Funzionalità: **feedback, piè** di pagina e uso del logo: fornire un controllo feedback per il cliente per fornire commenti e suggerimenti sull'argomento corrente tramite posta elettronica.  Testo del copyright per il contenuto.  Definizione del logo.
 
-|**Elemento**|**Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).**|
+|**elemento**|**Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).**|
 |-|-|
 |CopyRight|© 2013 Microsoft Corporation. Tutti i diritti sono riservati.|
 |SendFeedback|\<a href="{0}" {1}>Inviare commenti \</a> e suggerimenti su questo argomento a Microsoft.|
@@ -464,7 +464,7 @@ Funzionalità: **feedback, piè** di pagina e uso del logo: fornire un controllo
 
 Funzionalità: uso della dichiarazione di non responsabilità: un set di dichiarazioni di non **responsabilità** del case specifiche per il contenuto tradotto dal computer.
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |MT_Editable|Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
 |MT_NonEditable|Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
@@ -475,7 +475,7 @@ Funzionalità: uso della dichiarazione di non responsabilità: un set di dichiar
 
 Funzionalità: uso di **LinkTable** : supporto per i collegamenti agli argomenti online
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |LinkTableTitle|Tabella di collegamento|
 |TopicEnuLinkText|Visualizzare la versione in lingua inglese \</a> di questo argomento disponibile nel computer.|
@@ -484,7 +484,7 @@ Funzionalità: uso di **LinkTable** : supporto per i collegamenti agli argomenti
 
 Funzionalità: uso del **controllo audio video** : visualizzazione di elementi e testo per contenuto video
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |MultiMediaNotSupported|Per supportare il contenuto, è necessario che sia installato Internet Explorer 9 o versione successiva {0} .|
 |VideoText|visualizzazione di video|
@@ -494,7 +494,7 @@ Funzionalità: uso del **controllo audio video** : visualizzazione di elementi e
 
 Funzionalità: uso del **controllo del contenuto non installato** : elementi di testo (stringhe) usati per il rendering di contentnotinstalled.htm
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |ContentNotInstalledTitle|Nessun contenuto trovato nel computer.|
 |ContentNotInstalledDownloadContentText|\<p>Per scaricare il contenuto nel computer, \<a href="{0}" {1}> fare clic sulla scheda Gestisci \</a> .\</p>|
@@ -502,7 +502,7 @@ Funzionalità: uso del **controllo del contenuto non installato** : elementi di 
 
 Funzionalità: **argomento utilizzo del controllo non trovato** : elementi di testo (stringhe) usati per il rendering di topicnotfound.htm
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |TopicNotFoundTitle|Impossibile trovare l'argomento richiesto nel computer.|
 |TopicNotFoundViewOnlineText|\<p>L'argomento richiesto non è stato trovato nel computer, ma è possibile \<a href="{0}" {1}> visualizzare l'argomento online \</a> .\</p>|
@@ -511,14 +511,14 @@ Funzionalità: **argomento utilizzo del controllo non trovato** : elementi di te
 
 Funzionalità: **argomento uso del controllo danneggiato** : elementi di testo (stringhe) usati per il rendering di topiccorrupted.htm
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |TopicCorruptedTitle|Impossibile visualizzare l'argomento richiesto.|
 |TopicCorruptedViewOnlineText|\<p>Help Viewer non è in grado di visualizzare l'argomento richiesto. Potrebbe essersi verificato un errore nel contenuto dell'argomento o in una dipendenza di sistema sottostante.\</p>|
 
 Funzionalità: uso del **controllo Home page** : testo che supporta la visualizzazione del contenuto del nodo di livello superiore del Visualizzatore della guida.
 
-|**Elemento**|**Valore**|
+|**elemento**|**Valore**|
 |-|-|
 |HomePageTitle|Pagina iniziale del Visualizzatore della Guida|
 |HomePageIntroduction|\<p>Benvenuti all'Microsoft Help Viewer, un'origine essenziale di informazioni per tutti gli utenti che utilizzano strumenti, prodotti, tecnologie e servizi Microsoft. Help Viewer consente di accedere alle informazioni di riferimento, al codice di esempio, agli articoli tecnici e altro ancora. Per trovare il contenuto necessario, esplorare il sommario, utilizzare la ricerca full-text o spostarsi nel contenuto utilizzando la parola chiave index.\</p>|
@@ -572,22 +572,22 @@ Funzionalità: uso del **controllo Home page** : testo che supporta la visualizz
 |**File**|**Uso**|**Origine contenuto visualizzata**|
 |-|-|-|
 |homepage.htm|Si tratta di una pagina che Visualizza il contenuto attualmente installato e qualsiasi altro messaggio appropriato da presentare all'utente sul contenuto.  Questo file contiene l'attributo meta data aggiuntivo "Microsoft.Help.Id" Content = "-1" che inserisce il contenuto nella parte superiore del sommario del contenuto locale.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, Tag\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, Tag\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, Tag\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Sezione di intestazione Branding.xml tag \<HomePageInstalledBooks> , i dati generati dall'applicazione, \<HomePageNoBooksInstalled> quando non sono installati libri.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, Tag \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, Tag \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, Tag \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Sezione di intestazione Branding.xml tag \<HomePageInstalledBooks> , i dati generati dall'applicazione,  \<HomePageNoBooksInstalled> quando non sono installati libri.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Sezione intestazione Branding.xml tag \<HomePageHelpSettings> , testo sezione \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Quando un argomento esiste nel set locale, ma per qualche motivo non è possibile visualizzarlo (contenuto danneggiato).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, Tag\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, Tag\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, Tag \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, Tag \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Quando un argomento non viene trovato nel set di contenuto locale, né disponibile online||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, Tag\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, Tag\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, Tag\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, Tag \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, Tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, Tag \<TopicNotFoundText>|
 |contentnotinstalled.htm|Quando non è installato alcun contenuto locale per il prodotto.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, Tag\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, Tag\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, Tag\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, Tag \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, Tag \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, Tag \<ContentNotInstalledText>|
 
  **File CSS**
 
@@ -695,7 +695,7 @@ Funzionalità: uso del **controllo Home page** : testo che supporta la visualizz
 
 ```
 
- **Riepilogo**
+ **Summary**
 
  L'uso ed estensione dei passaggi precedenti consentirà a VSPs di distribuire i set di contenuto per il Visualizzatore della Guida di Visual Studio.
 
@@ -747,9 +747,9 @@ Funzionalità: uso del **controllo Home page** : testo che supporta la visualizz
 
   Per creare un'estensione della shell isolata:
 
-1. In Visual Studio, in **file**scegliere **nuovo progetto**, in **altri tipi di progetto** scegliere **estendibilità**, quindi scegliere **Visual Studio Shell isolata**. Denominare il progetto `ContosoHelpShell` ) per creare un progetto di estendibilità basato sul modello Visual Studio Isolated Shell.
+1. In Visual Studio, in **file**scegliere **nuovo progetto**, in **altri tipi di progetto** scegliere **estendibilità**, quindi scegliere  **Visual Studio Shell isolata**. Denominare il progetto `ContosoHelpShell` ) per creare un progetto di estendibilità basato sul modello Visual Studio Isolated Shell.
 
-2. In Esplora soluzioni, nella cartella file di risorse del progetto ContosoHelpShellUI aprire ApplicationCommands. vsct. Verificare che questa riga sia impostata come commento (cercare "No_Help"):`<!-- <define name=“No_HelpMenuCommands”/> -->`
+2. In Esplora soluzioni, nella cartella file di risorse del progetto ContosoHelpShellUI aprire ApplicationCommands. vsct. Verificare che questa riga sia impostata come commento (cercare "No_Help"): `<!-- <define name=“No_HelpMenuCommands”/> -->`
 
 3. Premere il tasto F5 per compilare ed eseguire il **debug**. Nell'istanza sperimentale dell'IDE della shell isolata, scegliere il menu **Guida** . Verificare che vengano visualizzati i comandi **Visualizza Guida**, **Aggiungi e Rimuovi contenuto della Guida**e **imposta preferenza** guida.
 
@@ -791,7 +791,7 @@ Funzionalità: uso del **controllo Home page** : testo che supporta la visualizz
 
 10. Copiare il contenuto dalla cartella della versione ContosoHelpShell alla \\ cartella \Program Files (x86) \Contoso\
 
-11. Avviare l'editor del registro di sistema scegliendo **Esegui** nel menu **Start** e immettendo `Regedit` . Nell'editor del registro di sistema scegliere **file**, quindi **Importa**. Passare alla cartella del progetto ContosoHelpShell. Nella sottocartella ContosoHelpShell scegliere ContosoHelpShell. reg.
+11. Avviare l'editor del registro di sistema scegliendo  **Esegui** nel menu **Start** e immettendo `Regedit` . Nell'editor del registro di sistema scegliere **file**, quindi **Importa**. Passare alla cartella del progetto ContosoHelpShell. Nella sottocartella ContosoHelpShell scegliere ContosoHelpShell. reg.
 
 12. Creare un archivio di contenuti:
 
@@ -814,7 +814,7 @@ Funzionalità: uso del **controllo Home page** : testo che supporta la visualizz
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12
 
-     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]Shell integrata:
+     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell integrata:
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 

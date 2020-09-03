@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e568b5e19d7d5f8034ba2bd3b96e3b6968c4b5fe
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328507"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animare oggetti in una finestra di progettazione XAML
@@ -46,6 +46,6 @@ Le immagini seguenti mostrano uno storyboard denominato **Storyboard1**. La sequ
 
 Provare ad apportate altre modifiche al rettangolo in altri punti della sequenza temporale. Ad esempio, è possibile cambiare il colore di riempimento o capovolgere l'orientamento nella finestra Proprietà.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creare un'interfaccia utente usando Blend per Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

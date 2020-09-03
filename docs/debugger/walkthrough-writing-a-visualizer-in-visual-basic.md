@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84180532"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: scrittura di un visualizzatore in Visual Basic
@@ -57,11 +57,11 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 2. Sostituire Class1.vb con un nome significativo, ad esempio DebuggerSide.vb.
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]modifica automaticamente la dichiarazione di classe in DebuggerSide. vb in modo che corrisponda al nuovo nome file.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifica automaticamente la dichiarazione di classe in DebuggerSide. vb in modo che corrisponda al nuovo nome file.
 
 3. In **Esplora soluzioni** fare clic son il pulsante destro del mouse su **My First Visualizer** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-4. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e individuare Microsoft. VisualStudio. DebuggerVisualizers. dll.
+4. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e trovare il Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
     È possibile trovare la DLL nella sottodirectory * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies.* della directory di installazione di Visual Studio.
 
@@ -91,7 +91,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
    Inherits DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer`dispone di un metodo astratto, `Show` , che è necessario eseguire l'override di.
+   `DialogDebuggerVisualizer` dispone di un metodo astratto, `Show` , che è necessario eseguire l'override di.
 
 ### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Per eseguire l'override del metodo DialogDebuggerVisualizer.Show
 
@@ -109,7 +109,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia**e individuare il file System. Windows. Forms. dll.
+2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia**e individuare il System.Windows.Forms.DLL.
 
     È possibile trovare la DLL in *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
