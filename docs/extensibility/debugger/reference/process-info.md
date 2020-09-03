@@ -1,5 +1,5 @@
 ---
-title: proprietà PROCESS_INFO . Documenti Microsoft
+title: PROCESS_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713877"
 ---
 # <a name="process_info"></a>PROCESS_INFO
@@ -60,22 +60,22 @@ public struct PROCESS_INFO { 
  Combinazione di flag dell'enumerazione [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) che specificano i campi da compilare.
 
  `bstrFileName`\
- Nome del percorso completo del processo. Equivale a chiamare il metodo `GN_FILENAME` [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) con il parametro .
+ Nome del percorso completo del processo. Equivale a chiamare il metodo [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) con il parametro `GN_FILENAME` .
 
  `bstrBaseName`\
- Il nome file e l'estensione del processo. Equivale a `IDebugProcess2::Getname` chiamare il `GN_BASENAME`metodo con il parametro .
+ Il nome file e l'estensione del processo. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_BASENAME` .
 
  `bstrTitle`\
- Titolo del processo, se presente. Equivale a `IDebugProcess2::Getname` chiamare il `GN_TITLE`metodo con il parametro .
+ Titolo del processo, se ne esiste uno. Equivale a chiamare il `IDebugProcess2::Getname` metodo con il parametro `GN_TITLE` .
 
  `ProcessId`\
- Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) che identifica il processo. Equivalente alla chiamata al metodo [GetPhysicalProcessId.](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+ Struttura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) che identifica il processo. Equivale a chiamare il metodo [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) .
 
  `dwSessionId`\
  Identificatore della sessione di debug in cui è in esecuzione il processo.
 
  `bstrAttachedSessionName`\
- Nome della sessione allegato. Equivalente alla chiamata al metodo [GetAttachedSessionName.](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+ Nome della sessione associata. Equivale a chiamare il metodo [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) .
 
  `CreationTime`\
  Ora di creazione del processo.
@@ -84,12 +84,12 @@ public struct PROCESS_INFO { 
  Combinazione di flag dell'enumerazione [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) che specificano le proprietà del processo.
 
 ## <a name="remarks"></a>Osservazioni
- Questa struttura viene passata al [metodo GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) in cui viene compilata.
+ Questa struttura viene passata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) dove viene compilata.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

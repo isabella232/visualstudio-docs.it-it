@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89c5b6418e832dd145837e579cfded3f47022e00
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466602"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
@@ -38,5 +38,5 @@ out Restituisce un `IEnumSTATPROPSTG` oggetto (nello spazio dei nomi Microsoft. 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

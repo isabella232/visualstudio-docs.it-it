@@ -1,5 +1,5 @@
 ---
-title: proprietà PROCESS_INFO_FIELDS . Documenti Microsoft
+title: PROCESS_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f81709e7146bbdef13daa3564bb784fd9c08d58e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714018"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
@@ -58,28 +58,28 @@ public enum enum_PROCESS_INFO_FIELDS { 
 
 ## <a name="fields"></a>Campi
  `PIF_FILE_NAME`\
- Inizializzare/utilizzare `bstrFileName` il campo della [struttura PROCESS_INFO.](../../../extensibility/debugger/reference/process-info.md)
+ Inizializza/usa il `bstrFileName` campo della struttura [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .
 
  `PIF_BASE_NAME`\
- Inizializzare/utilizzare `bstrBaseName` il `PROCESS_INFO` campo della struttura.
+ Inizializza/usa il `bstrBaseName` campo della `PROCESS_INFO` struttura.
 
  `PIF_TITLE`\
- Inizializzare/utilizzare `bstrTitle` il `PROCESS_INFO` campo della struttura.
+ Inizializza/usa il `bstrTitle` campo della `PROCESS_INFO` struttura.
 
  `PIF_PROCESS_ID`\
- Inizializzare/utilizzare `ProcessId` il `PROCESS_INFO` campo della struttura.
+ Inizializza/usa il `ProcessId` campo della `PROCESS_INFO` struttura.
 
  `PIF_SESSION_ID`\
- Inizializzare/utilizzare `dwSessionId` il `PROCESS_INFO` campo della struttura.
+ Inizializza/usa il `dwSessionId` campo della `PROCESS_INFO` struttura.
 
  `PIF_ATTACHED_SESSION_NAME`\
- Inizializzare/utilizzare `bstrAttachedSessionName` il `PROCESS_INFO` campo della struttura.
+ Inizializza/usa il `bstrAttachedSessionName` campo della `PROCESS_INFO` struttura.
 
  `PIF_CREATION_TIME`\
- Inizializzare/utilizzare `CreationTime` il `PROCESS_INFO` campo della struttura.
+ Inizializza/usa il `CreationTime` campo della `PROCESS_INFO` struttura.
 
  `PIF_FLAGS`\
- Inizializzare/utilizzare `Flags` il `PROCESS_INFO` campo della struttura.
+ Inizializza/usa il `Flags` campo della `PROCESS_INFO` struttura.
 
  `PIF_ALL`\
  Compila tutti i campi.
@@ -87,14 +87,14 @@ public enum enum_PROCESS_INFO_FIELDS { 
 ## <a name="remarks"></a>Osservazioni
  Passato al metodo [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) per indicare quali campi della struttura [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) devono essere inizializzati.
 
- Utilizzato anche `Fields` nel `PROCESS_INFO` campo della struttura per indicare quali campi vengono utilizzati e validi.
+ Usato anche nel `Fields` campo della `PROCESS_INFO` struttura per indicare quali campi vengono usati e validi.
 
- Questi flag possono essere combinati `OR`con un oggetto .
+ Questi flag possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

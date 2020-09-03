@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1f826c4dfcc8f000b37144b28dfcb8cf503a87
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462053"
 ---
 # <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
@@ -41,7 +41,7 @@ out Restituisce `TRUE` se la classe o il metodo è sealed; in caso contrario, re
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Una classe sealed non può essere utilizzata come classe base. Un metodo sealed non può essere punto.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,5 +51,5 @@ out Restituisce `TRUE` se la classe o il metodo è sealed; in caso contrario, re
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

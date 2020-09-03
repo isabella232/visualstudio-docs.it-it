@@ -1,5 +1,5 @@
 ---
-title: proprietà PROVIDER_FLAGS . Documenti Microsoft
+title: PROVIDER_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713812"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
@@ -57,25 +57,25 @@ public enum enum_PROVIDER_FLAGS {
  Nessun flag specificato.
 
  `PFLAG_REMOTE_PORT`\
- Il chiamante desidera un elenco [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]di programmi su un computer diverso da .
+ Il chiamante desidera un elenco di programmi in un computer diverso rispetto a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_DEBUGGEE`\
- È in corso il debug del [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]processo da questa istanza di .
+ Il processo è attualmente in fase di debug da questa istanza di [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]è collegato al programma in fase di debug ma non l'ha avviato.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] viene collegato al programma di cui è in corso il debug, ma non è stato avviato.
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]sta guardando per gli eventi.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] sta controllando gli eventi.
 
  `PFLAG_GET_PROGRAM_NODES`\
- Il chiamante vuole il `ProgramNodes` campo della struttura [PROVIDER_PROCESS_DATA.](../../../extensibility/debugger/reference/provider-process-data.md)
+ Il chiamante desidera il `ProgramNodes` campo della struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) .
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- Il chiamante vuole il `fIsTheDebuggerPresent` campo della `PROVIDER_PROCESS_DATA` struttura.
+ Il chiamante desidera il `fIsTheDebuggerPresent` campo della `PROVIDER_PROCESS_DATA` struttura.
 
 ## <a name="remarks"></a>Osservazioni
- Questi flag vengono passati ai seguenti metodi:
+ Questi flag vengono passati ai metodi seguenti:
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
@@ -83,12 +83,12 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  Questi valori possono essere combinati `OR`con un file bit per bit.
+  Questi valori possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

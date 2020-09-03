@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543611"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: I tipi APTCA devono estendere solo tipi di base APTCA
@@ -40,9 +40,9 @@ ms.locfileid: "85543611"
 
  Quando l'attributo APTCA è presente in un assembly completamente attendibile e un tipo nell'assembly eredita da un tipo che non consente chiamanti parzialmente attendibili, è possibile un exploit di sicurezza. Se due tipi `T1` e `T2` soddisfano le condizioni seguenti, i chiamanti malintenzionati possono utilizzare il tipo `T1` per ignorare la richiesta implicita di ereditarietà dell'attendibilità totale che protegge `T2` :
 
-- `T1`è un tipo pubblico dichiarato in un assembly completamente attendibile con l'attributo APTCA.
+- `T1` è un tipo pubblico dichiarato in un assembly completamente attendibile con l'attributo APTCA.
 
-- `T1`eredita da un tipo `T2` all'esterno del relativo assembly.
+- `T1` eredita da un tipo `T2` all'esterno del relativo assembly.
 
 - `T2`l'assembly di non dispone dell'attributo APTCA e, pertanto, non deve essere ereditabile dai tipi in assembly parzialmente attendibili.
 

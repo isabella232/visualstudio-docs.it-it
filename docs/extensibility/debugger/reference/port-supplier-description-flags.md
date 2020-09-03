@@ -1,5 +1,5 @@
 ---
-title: proprietà PORT_SUPPLIER_DESCRIPTION_FLAGS . Documenti Microsoft
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,15 +14,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713987"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
-Definisce i metadati che possono essere recuperati su un fornitore di porta.
+Definisce i metadati che possono essere recuperati su un fornitore di porte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,21 +44,21 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>Campi
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-Se selezionata, l'icona di avviso verrà visualizzata nell'interfaccia utente.
+Se questa opzione è selezionata, l'icona di avviso verrà visualizzata nell'interfaccia utente.
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa enumerazione viene restituita dal [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) metodo.
+Questa enumerazione viene restituita dal metodo [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) .
 
 ## <a name="requirements"></a>Requisiti
 
-Intestazione: Msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [GetDescrizione](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
+- [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)

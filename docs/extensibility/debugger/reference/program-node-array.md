@@ -1,5 +1,5 @@
 ---
-title: PROGRAM_NODE_ARRAY . Documenti Microsoft
+title: PROGRAM_NODE_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce84fec7a0d9223575828da105e46f43cc6cab09
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713807"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
@@ -43,18 +43,18 @@ public struct tagPROGRAM_NODE_ARRAY {
 
 ## <a name="members"></a>Membri
  `dwCount`\
- Numero di oggetti `Members` nella matrice.
+ Numero di oggetti nella `Members` matrice.
 
  `Members`\
- Matrice di [oggetti IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che descrivono i programmi richiesti.
+ Matrice di oggetti [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) che descrive i programmi richiesti.
 
 ## <a name="remarks"></a>Osservazioni
- Questa struttura fa parte della [struttura PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) che a sua volta viene compilata da una chiamata al [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metodo.
+ Questa struttura fa parte della struttura di [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) , che a sua volta viene compilata da una chiamata al metodo [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

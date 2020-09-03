@@ -1,5 +1,5 @@
 ---
-title: PROPRIETÀ THREADSTATE . Documenti Microsoft
+title: THREADSTATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713330"
 ---
 # <a name="threadstate"></a>THREADSTATE
@@ -53,24 +53,24 @@ public enum enum_THREADSTATE { 
  Indica che il thread è in esecuzione.
 
  `THREADSTATE_STOPPED`\
- Indica che il thread è stato arrestato a causa di un punto di interruzione.
+ Indica che il thread è stato interrotto a causa di un punto di interruzione.
 
  `THREADSTATE_FRESH`\
- Indica che il thread è stato creato, ma non è ancora in esecuzione codice.
+ Indica che il thread è stato creato, ma non è ancora in esecuzione il codice.
 
  `THREADSTATE_DEAD`\
- Indica che il thread è morto.
+ Indica che il thread è inattivo.
 
  `THREADSTATE_FROZEN`\
  Indica che il thread è bloccato (non è possibile eseguire alcuna esecuzione).
 
 ## <a name="remarks"></a>Osservazioni
- Utilizzato per `dwThreadState` il campo della struttura [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
+ Utilizzato per il `dwThreadState` campo della struttura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

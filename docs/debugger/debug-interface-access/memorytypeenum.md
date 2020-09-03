@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2cd255ab59c9d46676ba46baddd9cee7e3ef4cc2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461182"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
@@ -34,20 +34,20 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Parametri
-`MemTypeCode`Accede solo alla memoria del codice.
+`MemTypeCode` Accede solo alla memoria del codice.
 
-`MemTypeData`Accede ai dati o alla memoria dello stack.
+`MemTypeData` Accede ai dati o alla memoria dello stack.
 
-`MemTypeStack`Accede solo alla memoria dello stack.
+`MemTypeStack` Accede solo alla memoria dello stack.
 
-`MemTypeAny`Accede a qualsiasi tipo di memoria.
+`MemTypeAny` Accede a qualsiasi tipo di memoria.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 I valori di questa enumerazione vengono passati al metodo [IDiaStackWalkHelper:: ReadMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) per limitare l'accesso a diversi tipi di memoria.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

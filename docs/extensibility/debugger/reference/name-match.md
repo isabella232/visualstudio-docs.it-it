@@ -1,5 +1,5 @@
 ---
-title: proprietà NAME_MATCH . Documenti Microsoft
+title: NAME_MATCH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714284"
 ---
 # <a name="name_match"></a>NAME_MATCH
@@ -48,10 +48,10 @@ public enum NameMatchOptions { 
  Non è stata specificata alcuna opzione.
 
  `nmCaseSensitive`\
- Indica che per i nomi di cui trovare la corrispondenza viene fatta distinzione tra maiuscole e minuscole.
+ Indica che i nomi di cui trovare una corrispondenza fanno distinzione tra maiuscole e minuscole.
 
  `nmCaseInsensitive`\
- Indica che per i nomi di cui trovare la corrispondenza non viene fatta distinzione tra maiuscole e minuscole.
+ Indica che i nomi di cui trovare una corrispondenza non fanno distinzione tra maiuscole e minuscole.
 
 ## <a name="remarks"></a>Osservazioni
  Passato come argomento ai metodi seguenti:
@@ -65,9 +65,9 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: sh.h
+ Intestazione: sh. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

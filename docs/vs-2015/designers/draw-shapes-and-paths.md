@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542207"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
@@ -37,7 +37,7 @@ In finestra di progettazione XAML, una *forma* è esattamente ciò che ci si asp
 
 - [Creare un tracciato di ritaglio](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>Disegnare una forma
+## <a name="draw-a-shape"></a><a name="Shape"></a> Disegnare una forma
  Le forme sono disponibili nel pannello **Asset** .
 
  ![Categoria Forme nel pannello Asset](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -96,12 +96,12 @@ In finestra di progettazione XAML, una *forma* è esattamente ciò che ci si asp
 
  Usare lo **Selection** strumento selezione ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") per selezionare il percorso. Usare lo **Pen** strumento penna ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") per fare clic in un punto qualsiasi del percorso in cui si vuole aggiungere il punto.
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>Convertire una forma in un tracciato
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> Convertire una forma in un tracciato
  Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato.
 
  **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (Uso di tracciati: convertire una forma in un tracciato).
 
-## <a name="combine-paths"></a><a name="Combine"></a>Combinare i percorsi
+## <a name="combine-paths"></a><a name="Combine"></a> Combinare i percorsi
  È possibile combinare forme e tracciati in un unico tracciato.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
@@ -114,7 +114,7 @@ In finestra di progettazione XAML, una *forma* è esattamente ciò che ci si asp
 
  **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (Uso di tracciati: combinare tracciati).
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>Creare un tracciato composto
+## <a name="create-a-compound-path"></a><a name="Compound"></a> Creare un tracciato composto
  Quando si crea un tracciato composto, eventuali parti del tracciato che si intersecano vengono sottratte dal risultato e il tracciato risultante assume le proprietà visive del percorso situato più in basso.
 
  È possibile separare un tracciato composto in qualsiasi momento dopo averlo creato.
@@ -123,7 +123,7 @@ In finestra di progettazione XAML, una *forma* è esattamente ciò che ci si asp
 
  **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (Uso di tracciati: creare un tracciato composto).
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>Creare un tracciato di ritaglio
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> Creare un tracciato di ritaglio
  Un tracciato di ritaglio è un tracciato o una forma applicato a un altro oggetto, in modo da nascondere le parti dell'oggetto mascherato esterne al tracciato di ritaglio.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")

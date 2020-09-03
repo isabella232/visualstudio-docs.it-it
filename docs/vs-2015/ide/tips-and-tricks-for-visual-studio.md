@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542987"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Suggerimenti su Visual Studio
@@ -49,7 +49,7 @@ ms.locfileid: "85542987"
 |Visualizzare l'elenco di file aperti|CTRL+ALT+freccia GIÙ|
 |Visualizzare tutte le finestre mobili|CTRL+MAIUSC+M|
 
-## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Collegamenti alla finestra
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a> Collegamenti alla finestra
 
 |Comando|Tasto di scelta rapida|
 |-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "85542987"
 |Avviare una nuova istanza|Win+MAIUSC+n|
 |Spostarsi tra le finestre|Win+n|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Ricerca in Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Ricerca in Visual Studio
 
 |Comando|Tasto di scelta rapida|
 |-|-|
@@ -69,7 +69,7 @@ ms.locfileid: "85542987"
 |Definire ambito risultati di Avvio veloce|-   @opt Opzioni<br />-   @cmd Comandi<br />-   @mru Usati più di recente<br />-   @doc Documenti aperti|
 |Opzioni di ricerca negli strumenti|CTRL+E|
 
-## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Ricerca nell'editor
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a> Ricerca nell'editor
 
 |Comando|Tasto di scelta rapida|
 |-|-|
@@ -84,7 +84,7 @@ ms.locfileid: "85542987"
 |Cerca nei file|CTRL+MAIUSC+F|
 |Sostituisci nei file|CTRL+MAIUSC+H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Editor di codice
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> Editor di codice
 
 |Comando|Tasto di scelta rapida|
 |-|-|
@@ -109,7 +109,7 @@ ms.locfileid: "85542987"
 |Spostarsi tra più risultati|F8 e MAIUSC+F8|
 |Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|MAIUSC+ESC|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Barre degli strumenti
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> Barre degli strumenti
 
 |Comando|Tasto di scelta rapida|
 |-|-|
@@ -137,7 +137,7 @@ ms.locfileid: "85542987"
 |Cancellare il buffer della finestra di controllo immediato|>cls|
 |Valore di stampa della finestra di controllo immediato|?varname|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Application Lifecycle Management
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> Application Lifecycle Management
 
 Vedere [Scelte rapide da tastiera: Visual Studio Online, portale Web TFS e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71105c6c3f93f259bdb6ce8e5f46abe30c5953c2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462616"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
@@ -41,7 +41,7 @@ out Restituisce l'offset in byte della posizione del simbolo.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  L'offset è da un punto noto precedentemente determinato. Ad esempio, l'offset per un `LocIsBitField` tipo di posizione è in genere dall'inizio della classe che lo contiene.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,6 +51,6 @@ out Restituisce l'offset in byte della posizione del simbolo.
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

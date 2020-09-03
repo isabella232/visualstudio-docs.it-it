@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016346"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Esplorazione delle connessioni di SharePoint tramite Esplora server
@@ -37,7 +38,7 @@ ms.locfileid: "86016346"
 |Nome comando|Descrizione|
 |------------------|-----------------|
 |Aggiorna|Aggiorna la visualizzazione albero in modo da riflettere le modifiche che potrebbero essersi verificate dall'ultima visualizzazione del nodo.|
-|Elimina|Rimuove il nodo selezionato dalla visualizzazione albero. **Nota:**  Questo comando è abilitato solo nelle connessioni di SharePoint elencate nel nodo **connessioni di SharePoint** .|
+|Delete|Rimuove il nodo selezionato dalla visualizzazione albero. **Nota:**  Questo comando è abilitato solo nelle connessioni di SharePoint elencate nel nodo **connessioni di SharePoint** .|
 |Proprietà|Consente di visualizzare le proprietà disponibili per il nodo selezionato nella finestra **Proprietà** . Tutte le proprietà sono di sola lettura e non tutte le proprietà sono associate a ogni nodo.|
 |Aggiungi connessione|Consente di specificare un sito di SharePoint che si desidera esplorare. Disponibile nel nodo **connessioni di SharePoint** e nei nodi del sito secondario.|
 |Visualizza nel browser|Consente di visualizzare l'elenco selezionato nel Web browser. Questo comando è disponibile in alcuni elenchi nel nodo **elenchi** contenuto negli **elenchi e nelle raccolte**.|

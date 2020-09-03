@@ -1,5 +1,5 @@
 ---
-title: Proprietà Extern Element . Documenti Microsoft
+title: Elemento extern | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711494"
 ---
-# <a name="extern-element"></a>Elemento Extern
-L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna (*.h*) da unire al file *vsct* in fase di compilazione. I file da unire devono trovarsi nel percorso Include specificato al compilatore VSCT o a cui fa riferimento un [elemento Include](../extensibility/include-element.md). I file possono essere altri file *vsct* o file di intestazione di C.
+# <a name="extern-element"></a>Extern (elemento)
+L'elemento extern fa riferimento a qualsiasi file di intestazione esterna (*. h*) da unire con il file *vsct* in fase di compilazione. I file da unire devono trovarsi nel percorso di inclusione assegnato al compilatore VSCT o a cui fa riferimento un [elemento include](../extensibility/include-element.md). I file possono essere altri file con *estensione vsct* o file di intestazione C++.
 
- Le definizioni nei file di intestazione devono avere il formato "#define [Simbolo] [Valore]" Il valore può essere un altro simbolo se è definito in precedenza. Le definizioni possono essere utilizzate nelle istruzioni condizionali degli elementi di comando. Qualsiasi simbolo non effettivamente utilizzato verrà eliminato.
+ Le definizioni nei file di intestazione devono essere nel formato "#define [Symbol] [valore]". il valore può essere un altro simbolo se è stato definito in precedenza. Le definizioni possono essere utilizzate nelle istruzioni condizionali degli elementi di comando. Qualsiasi simbolo non effettivamente usato verrà rimosso.
 
- Elemento CommandTable Extern
+ Elemento extern elemento CommandTable
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,21 +40,21 @@ L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna (*.h*)
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|href|Obbligatorio. Percorso del file di intestazione:<br /><br /> href: "stdidcmd.h"|
-|Condizione|Facoltativa. Consultate [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
-|Linguaggio|Facoltativa. La lingua predefinita [ \<](../extensibility/strings-element.md) di tutte le stringhe>gli elementi nella tabella dei comandi:<br /><br /> lingua: "en-us"|
+|href|Obbligatorio. Percorso del file di intestazione:<br /><br /> href = "Stdidcmd. h"|
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Linguaggio|facoltativo. Lingua predefinita di tutti [\<Strings>](../extensibility/strings-element.md) gli elementi nella tabella dei comandi:<br /><br /> lingua = "en-US"|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|No.|No.|
+|Nessuno.|Nessuno.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi, ovvero voci di menu, menu, barre degli strumenti e caselle combinate, che un VSPackage fornisce all'IDE.|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Definisce tutti gli elementi che rappresentano i comandi, ovvero le voci di menu, i menu, le barre degli strumenti e le caselle combinate, fornite da un pacchetto VSPackage all'IDE.|
 
 ## <a name="example"></a>Esempio
 
@@ -70,5 +70,5 @@ L'elemento Extern fa riferimento a qualsiasi file di intestazione esterna (*.h*)
 
 ## <a name="see-also"></a>Vedere anche
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Come VSPackage aggiungere elementi dell'interfaccia utenteHow VSPackages add user interface elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

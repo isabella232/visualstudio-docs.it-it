@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5cf76f2c335af44a3dc1b0ebdd388ae1a26c462c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466357"
 ---
 # <a name="idiasectioncontribget_code16bit"></a>IDiaSectionContrib::get_code16bit
@@ -38,8 +38,8 @@ out Restituisce `TRUE` se il codice nella sezione è a 16 bit. in caso contrario
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Questo metodo indica solo se il codice è a 16 bit. Se il codice non è a 16 bit, potrebbe essere qualsiasi altro elemento, ad esempio codice a 32 bit o a 64 bit.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

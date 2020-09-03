@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657457"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Procedura: configurare l'analisi del codice per un'applicazione Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] è possibile effettuare una selezione da un elenco di *set di regole* di analisi codice da applicare a [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applicazione Web. Il set di regole predefinito è Microsoft Mininimum consigliate. È possibile selezionare un altro set di regole da applicare al sito Web.
+In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] ed [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] è possibile scegliere da un elenco di set di *regole* di analisi codice da applicare all' [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applicazione Web. Il set di regole predefinito è Microsoft Mininimum consigliate. È possibile selezionare un altro set di regole da applicare al sito Web.
 
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Per configurare un set di regole per un progetto del framework di pagine ASP.NET
 
@@ -43,6 +43,6 @@ In [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
 
     - Selezionare il set di regole che si desidera utilizzare.
 
-    - Selezionare **\<Browse >** per specificare un set di regole personalizzato esistente non presente nell'elenco.
+    - Selezionare **\<Browse>** questa impostazione per specificare un set di regole personalizzato esistente non presente nell'elenco.
 
     - Definire un set di regole personalizzato. Per altre informazioni, vedere [creazione di set di regole personalizzati](../code-quality/creating-custom-code-analysis-rule-sets.md).
