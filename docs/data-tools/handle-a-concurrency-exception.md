@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282358"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
@@ -212,6 +212,6 @@ Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
    Se si seleziona **No** , l'aggiornamento viene annullato e il set di dati viene aggiornato con i valori attualmente presenti nel database. Se **si seleziona Sì** , il valore proposto viene scritto nel database.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

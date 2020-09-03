@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282579"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
@@ -43,7 +43,7 @@ La didascalia intelligente è controllata dall'espressione regolare immessa nel 
 
 La tabella seguente descrive i valori del registro di sistema che controllano le etichette delle didascalie.
 
-|Elemento del registro di sistema|Description|
+|Elemento del registro di sistema|Descrizione|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|Espressione regolare usata per trovare la corrispondenza con i modelli.|
 |**SmartCaptionReplacement**|Formato per visualizzare i gruppi corrispondenti in **SmartCaptionExpression**.|
@@ -55,7 +55,7 @@ Nella tabella seguente sono elencate le impostazioni predefinite interne per que
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**( \\ \p{ll}) ( \\ \p{Lu}) &#124;_ +**|Corrisponde a un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** rappresenta tutti i caratteri corrispondenti nelle prime parentesi dell'espressione e il **$2** rappresenta tutti i caratteri corrispondenti nella seconda parentesi. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
-|**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name` , il suffisso lo rende`Company Name:`|
+|**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name` , il suffisso lo rende `Company Name:`|
 
 > [!CAUTION]
 > Prestare attenzione quando si esegue qualsiasi operazione nell'editor del registro di sistema. Eseguire il backup del registro di sistema prima di modificarlo. Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che i problemi causati dall'utilizzo errato dell'editor del registro di sistema possano essere risolti. L'uso dell'editor del Registro di sistema è di sola responsabilità dell'utente.
@@ -138,6 +138,6 @@ Nella tabella seguente sono elencate le impostazioni predefinite interne per que
 
     La volta successiva che si trascinano gli elementi dalla finestra **origini dati** , le etichette didascalia vengono create con didascalie non modificate.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

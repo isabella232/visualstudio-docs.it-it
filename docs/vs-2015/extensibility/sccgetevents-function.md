@@ -13,10 +13,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d975570334aeab7c6709db92f3240a8e8d06b131
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200119"
 ---
 # <a name="sccgetevents-function"></a>Funzione SccGetEvents
@@ -37,31 +37,31 @@ SCCRTN SccGetEvents (
   
 #### <a name="parameters"></a>Parametri  
  pvContext  
- [in] La struttura del contesto plug-in del controllo origine.  
+ in Struttura del contesto del plug-in del controllo del codice sorgente.  
   
  lpFileName  
- [in, out] Buffer in cui il plug-in del controllo del codice sorgente inserisce il nome del file restituito (un massimo di caratteri di MAX_PATH).  
+ [in, out] Buffer in cui il plug-in del controllo del codice sorgente inserisce il nome file restituito (fino a _MAX_PATH caratteri).  
   
  lpStatus  
- [in, out] Restituisce il codice di stato (vedere [File di codice di stato](../extensibility/file-status-code-enumerator.md) per i valori possibili).  
+ [in, out] Restituisce il codice di stato (vedere il [codice di stato dei file](../extensibility/file-status-code-enumerator.md) per i valori possibili).  
   
  pnEventsRemaining  
- [in, out] Restituisce i numero di voci lasciato nella coda dopo questa chiamata. Se questo numero è elevato, il chiamante può decidere di chiamare il [SccQueryInfo](../extensibility/sccqueryinfo-function.md) per ottenere tutte le informazioni in una sola volta.  
+ [in, out] Restituisce il numero di voci rimaste nella coda dopo la chiamata. Se questo numero è elevato, il chiamante può decidere di chiamare il [SccQueryInfo](../extensibility/sccqueryinfo-function.md) per ottenere tutte le informazioni contemporaneamente.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|Ottenere gli eventi ha avuto esito positivo.|  
+|SCC_OK|Eventi Get riusciti.|  
 |SCC_E_OPNOTSUPPORTED|Questa funzione non è supportata.|  
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|  
   
-## <a name="remarks"></a>Note  
- Questa funzione viene chiamata durante l'elaborazione inattive per vedere se sono state apportate eventuali aggiornamenti di stato per i file di controllo del codice sorgente. Il plug-in del controllo del codice sorgente gestisce lo stato di tutti i file di che cui è a conoscenza e ogni volta che una modifica di stato viene segnalato tramite il plug-in, lo stato e i file associato vengono archiviati in una coda. Quando si `SccGetEvents` viene chiamato, la parte superiore dell'elemento della coda viene recuperato e restituito. Questa funzione è vincolata da restituire solo le informazioni precedentemente memorizzata nella cache e deve avere molto rapidi (vale a dire, senza la lettura del disco o che richiede il controllo del codice sorgente per lo stato); in caso contrario, le prestazioni dell'IDE potrebbero avviarsi per ridurre le prestazioni.  
+## <a name="remarks"></a>Osservazioni  
+ Questa funzione viene chiamata durante l'elaborazione inattiva per verificare se sono stati apportati aggiornamenti di stato per i file nel controllo del codice sorgente. Il plug-in del controllo del codice sorgente mantiene lo stato di tutti i file che conosce e ogni volta che una modifica dello stato è indicata dal plug-in, lo stato e il file associato vengono archiviati in una coda. Quando `SccGetEvents` viene chiamato il metodo, viene recuperato e restituito il primo elemento della coda. Questa funzione è vincolata a restituire solo le informazioni precedentemente memorizzate nella cache e deve avere un turnaround molto rapido (ovvero, nessuna lettura del disco o richiesta al sistema di controllo del codice sorgente per lo stato); in caso contrario, le prestazioni dell'IDE potrebbero iniziare a peggiorare.  
   
- Se non sono presenti aggiornamenti di stato al report, il plug-in del controllo del codice sorgente archivia una stringa vuota nel buffer a cui punta `lpFileName`. In caso contrario, il plug-in vengono archiviati il nome e percorso completo del file per cui è stato modificato le informazioni sullo stato e restituisce il codice di stato appropriato (uno dei valori descritti in dettaglio in [File di codice di stato](../extensibility/file-status-code-enumerator.md)).  
+ Se non è presente alcun aggiornamento dello stato per il report, il plug-in del controllo del codice sorgente archivia una stringa vuota nel buffer a cui punta `lpFileName` . In caso contrario, il plug-in archivia il nome del percorso completo del file per il quale sono state modificate le informazioni sullo stato e restituisce il codice di stato appropriato (uno dei valori descritti in dettaglio nel [codice di stato dei file](../extensibility/file-status-code-enumerator.md)).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)   
  [Codice di stato dei file](../extensibility/file-status-code-enumerator.md)

@@ -19,20 +19,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1403beccdb6bf9b938787f62cb3da2e5bb5c259
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668130"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: creare e rimuovere dipendenze di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando si compila una soluzione che contiene più progetti, può essere necessario prima compilare alcuni progetti, per generare il codice usato da altri progetti. Quando un progetto usa codice eseguibile generato da un altro progetto, il progetto che genera il codice viene definito come dipendenza del progetto che usa il codice. Tali relazioni di dipendenza possono essere definite nella finestra di dialogo **Dipendenze progetto**.
+Quando si compila una soluzione che contiene più progetti, può essere necessario prima compilare alcuni progetti, per generare il codice usato da altri progetti. Quando un progetto usa codice eseguibile generato da un altro progetto, il progetto che genera il codice viene definito come dipendenza del progetto che usa il codice. Tali relazioni di dipendenza possono essere definite nella finestra di dialogo **Dipendenze progetto** .
 
 ### <a name="to-assign-dependencies-to-projects"></a>Per assegnare le dipendenze ai progetti
 
-1. Selezionare un progetto in Esplora soluzioni.
+1. In Esplora soluzioni selezionare il progetto desiderato.
 
 2. Nel menu **Proprietà** scegliere **Dipendenze progetto**.
 
@@ -49,7 +49,7 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
 
 ### <a name="to-remove-dependencies-from-projects"></a>Per rimuovere dipendenze dai progetti
 
-1. Selezionare un progetto in Esplora soluzioni.
+1. In Esplora soluzioni selezionare il progetto desiderato.
 
 2. Nel menu **Proprietà** scegliere **Dipendenze progetto**.
 

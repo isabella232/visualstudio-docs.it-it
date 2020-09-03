@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e70039f361ac3410a8ddcccb0f139d8bdcb32ed9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668084"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: creare modelli di elementi a più file
@@ -37,7 +37,7 @@ Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni ca
 
 1. Creare il modello di elemento allo stesso modo in cui si crea un modello di elemento a file singolo. Per altre informazioni, vedere [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md).
 
-2. Aggiungere gli attributi `TargetFileName` a ogni elemento `ProjectItem`. Impostare i valori degli attributi `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Esempio:
+2. Aggiungere gli attributi `TargetFileName` a ogni elemento `ProjectItem`. Impostare i valori degli attributi `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Ad esempio:
 
     ```
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -55,7 +55,7 @@ Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni ca
 
 3. Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi fare clic su **Cartella compressa**. I file selezionati verranno compressi in un file ZIP.
 
-4. Inserire il file con estensione zip nel percorso del modello di elemento dell'utente. Per impostazione predefinita, la directory è \Documenti\Visual Studio *Versione*\Templates\ItemTemplates\\. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+4. Inserire il file con estensione zip nel percorso del modello di elemento dell'utente. Per impostazione predefinita, la directory è \Documenti\Visual Studio *Versione*\Templates\ItemTemplates\\. Per altre informazioni, vedere [procedura: individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="example"></a>Esempio
  L'esempio seguente illustra un modello di Windows Forms di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Quando viene creato un elemento basato su questo modello, i nomi dei tre file creati corrisponderanno al nome immesso nella finestra di dialogo **Aggiungi nuovo elemento**.

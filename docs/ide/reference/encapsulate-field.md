@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569712"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring Incapsula campo
@@ -49,7 +49,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+E**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
+      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring > Incapsula campo**.
       - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
@@ -62,7 +62,7 @@ Questo refactoring si applica a:
    La proprietà viene creata e vengono aggiornati i riferimenti al campo, se selezionato.
 
    > [!TIP]
-   > Utilizzare il collegamento **Anteprima modifiche** nella finestra popup per visualizzare [il risultato](../../ide/preview-changes.md) prima di eseguire il commit.
+   > Usare il collegamento **Anteprima modifiche** nella finestra popup [per vedere quale sarà il risultato prima del](../../ide/preview-changes.md) commit.
 
    - C#:
 
@@ -75,4 +75,4 @@ Questo refactoring si applica a:
 ## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Anteprima delle modifiche](../../ide/preview-changes.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)

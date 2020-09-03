@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75584439"
 ---
 # <a name="load-test-scenario-properties"></a>Proprietà di uno scenario di test di carico
@@ -26,7 +26,7 @@ Modificare le impostazioni delle proprietà di uno scenario di test di carico in
 
 |Proprietà|Definizione|
 |-|----------------|
-|**Nome**|Nome dello scenario.|
+|**Name**|Nome dello scenario.|
 
 ## <a name="mix"></a>Combinazione
 
@@ -34,7 +34,7 @@ Modificare le impostazioni delle proprietà di uno scenario di test di carico in
 |-|----------------|
 |**Combinazione di browser**|Specifica la combinazione di Web browser per il test di carico. È possibile specificare tipi di Web browser diversi e la relativa distribuzione del carico.<br /><br />Scegliere il pulsante con i puntini di sospensione **(…)** per aprire la finestra di dialogo **Modifica combinazioni di browser** e usare **Aggiungi** e **Rimuovi** per selezionare i tipi di Web browser nel test di carico.<br /><br />Per altre informazioni, vedere [Specificare i tipi di Web browser](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Combinazione di reti**|Specifica la combinazione di reti per il test di carico. È possibile specificare quali tipi di rete includere e la relativa distribuzione del carico.<br /><br />Scegliere il pulsante con i puntini di sospensione **(…)** per aprire la finestra di dialogo **Modifica combinazione di reti** e usare **Aggiungi** e **Rimuovi** per selezionare i tipi di rete nel test di carico.<br /><br />Per altre informazioni, vedere [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
-|**Miscela di test**|Specifica le prestazioni Web e la combinazione di unit test per il test di carico. È possibile specificare quali test includere e la relativa distribuzione del carico.<br /><br />Scegliere il pulsante con i puntini di sospensione **(…)** per aprire la finestra di dialogo **Modifica combinazione di test** e usare **Aggiungi** e **Rimuovi** per selezionare i test nel test di carico.<br /><br />Per altre informazioni, vedere [Modificare la combinazione di test per uno scenario di test di carico](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
+|**Combinazione di test**|Specifica le prestazioni Web e la combinazione di unit test per il test di carico. È possibile specificare quali test includere e la relativa distribuzione del carico.<br /><br />Scegliere il pulsante con i puntini di sospensione **(…)** per aprire la finestra di dialogo **Modifica combinazione di test** e usare **Aggiungi** e **Rimuovi** per selezionare i test nel test di carico.<br /><br />Per altre informazioni, vedere [Modificare la combinazione di test per uno scenario di test di carico](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Tipo di combinazione di test**|Specifica il modello di combinazione di test da usare nel test di carico.<br /><br />Scegliere il pulsante con i puntini di sospensione **(…)** per aprire la finestra di dialogo **Modifica combinazione di test** e usare l'elenco a discesa in **Modello di combinazione di test** per selezionare il modello di combinazione di test da usare nel test di carico.<br /><br />Per altre informazioni, vedere [Modificare i modelli di combinazione di test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).|
 
 ## <a name="options"></a>Opzioni
@@ -46,7 +46,7 @@ Modificare le impostazioni delle proprietà di uno scenario di test di carico in
 |**Commutazione IP**|Valore booleano usato per specificare se viene usata la commutazione IP.<br /><br />La commutazione IP consente a un agente di test di inviare richieste a un server usando un intervallo di indirizzi IP diversi. In questo modo si simulano le chiamate provenienti da computer client diversi. La commutazione IP è importante negli scenari di test di una Web farm con bilanciamento del carico. La maggior parte dei servizi di bilanciamento del carico stabilisce un'affinità tra un client e un determinato server Web usando l'indirizzo IP del client. Se tutte le richieste sembrano provenire da un singolo client, il servizio di bilanciamento del carico non bilancia il carico. Per ottenere un buon bilanciamento del carico nella Web farm, è importante che le richieste provengano da un intervallo di indirizzi IP.<br /><br />La commutazione IP è disponibile solo con l'agente di test.|
 |**Numero massimo di iterazioni test**|Valore numerico utilizzato per specificare il numero massimo di test da eseguire nello scenario. Un valore 0 specifica che non viene impostato alcun valore massimo<br /><br />Per altre informazioni, vedere [Configurare iterazioni di test in uno scenario](../test/configure-test-iterations-in-a-load-test-scenario.md).|
 |**Percentuale di nuovi utenti**|Valore numerico che specifica la percentuale di utenti nuovi o che visitano per la prima volta lo scenario.<br /><br />Per altre informazioni, vedere [Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
-|**Profilo Di Pensare**|Specifica se nello scenario verrà usata la **Distribuzione normale** o se il profilo interazione utente è **Attivato** o **Disattivato**.<br /><br />Per altre informazioni, vedere [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md).|
+|**Profilo interazione**|Specifica se nello scenario verrà usata la **Distribuzione normale** o se il profilo interazione utente è **Attivato** o **Disattivato**.<br /><br />Per altre informazioni, vedere [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Intervallo
 

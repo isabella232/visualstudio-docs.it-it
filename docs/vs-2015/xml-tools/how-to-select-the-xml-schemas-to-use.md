@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f607d500bfcb8a745bfb129490d2c2b09c6b105c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666511"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
@@ -34,13 +34,13 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
 
 2. Nella finestra proprietà del documento fare clic sul pulsante nel campo **schemi** .
 
-    Verrà visualizzata la finestra di dialogo **schemi XML** . Nella finestra di dialogo sono elencati tutti gli schemi con estensione xsd nella cache degli schemi (inclusi gli schemi a cui viene fatto riferimento nel file Catalog. Xml), nonché qualsiasi schema incluso nella soluzione corrente, aperto in Visual Studio, a cui si fa riferimento in un attributo `xsd:schemaLocation` o a cui viene fatto riferimento nel Proprietà **schemas** .
+    Verrà visualizzata la finestra di dialogo **schemi XML** . Nella finestra di dialogo sono elencati tutti gli schemi con estensione xsd nella cache degli schemi (inclusi gli schemi a cui viene fatto riferimento nel file catalog.xml), nonché qualsiasi schema incluso nella soluzione corrente, aperto in Visual Studio, a cui si fa riferimento in un `xsd:schemaLocation` attributo o a cui si fa riferimento nella proprietà **schemas** .
 
 3. Selezionare gli schemi da usare per la convalida eseguendo una delle seguenti operazioni:
 
    - Selezionare uno schema elencato nella finestra di dialogo **schemi XML** , fare clic sulla colonna **utilizza** , quindi selezionare **utilizza questo schema**.
 
-     oppure
+     -oppure-
 
    - Selezionare più schemi elencati nella finestra di dialogo **XML Schema** , fare clic con il pulsante destro del mouse e selezionare **utilizza questo schema**.
 
@@ -52,7 +52,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
 
 1. Nella finestra proprietà del documento fare clic sul pulsante nel campo **schemi** .
 
-2. Fare clic su **Aggiungi**.
+2. Scegliere **Aggiungi**.
 
      Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
 
@@ -71,7 +71,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
      Lo schema viene rimosso dalla cache degli schemi in memoria, ma non dal file system.
 
     > [!NOTE]
-    > Se è ancora presente un riferimento allo schema tramite un attributo `schemaLocation` o un `targetNamespace` corrispondente, la **rimozione** non funzionerà in questa situazione a causa dell'associazione automatica. In questo caso è consigliabile contrassegnare lo schema come **non utilizzare gli schemi selezionati** nella colonna **utilizza** .
+    > Se è ancora presente un riferimento allo schema tramite un `schemaLocation` attributo o un oggetto corrispondente, `targetNamespace` **Remove** non funzionerà in questa situazione a causa dell'associazione automatica. In questo caso è consigliabile contrassegnare lo schema come **non utilizzare gli schemi selezionati** nella colonna **utilizza** .
 
 ## <a name="see-also"></a>Vedere anche
  [Editor XML](../xml-tools/xml-editor.md) schema [della](../xml-tools/schema-cache.md) finestra di [dialogo schemi XML](../xml-tools/xml-schemas-dialog-box.md)

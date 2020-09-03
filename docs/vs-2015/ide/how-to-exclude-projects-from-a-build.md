@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffa2b0fd8cab35fc73031d3ead8a5803558c2c07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667950"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procedura: escludere progetti da una compilazione
@@ -43,7 +43,7 @@ ms.locfileid: "72667950"
 
 1. Nella barra dei menu scegliere **Compilazione**, **Gestione configurazione**.
 
-2. Nell'elenco **Configurazione soluzione attiva** **scegliere \<Nuova**.
+2. Nell'elenco **Configurazione soluzione attiva** scegliere **\<New>** .
 
 3. Nella casella **Nome** immettere un nome per la configurazione della soluzione.
 

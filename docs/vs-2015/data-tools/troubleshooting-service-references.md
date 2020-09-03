@@ -18,48 +18,48 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 60f06aa64cf6a6b96f0c4d610fba1d20b794c55f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667206"
 ---
 # <a name="troubleshooting-service-references"></a>Risoluzione dei problemi relativi ai riferimenti al servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-In questo argomento vengono elencati i problemi comuni che possono verificarsi quando si lavora con [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] o [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] riferimenti in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+In questo argomento vengono elencati i problemi comuni che possono verificarsi quando si utilizzano i [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] riferimenti di o in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="error-returning-data-from-a-service"></a>Errore durante la restituzione di dati da un servizio
- Quando si restituisce un `DataSet` o `DataTable` da un servizio, è possibile che venga visualizzata un'eccezione "la quota di dimensioni massime per i messaggi in arrivo è stata superata". Per impostazione predefinita, la proprietà `MaxReceivedMessageSize` per alcune associazioni è impostata su un valore relativamente piccolo per limitare l'esposizione agli attacchi Denial of Service. È possibile aumentare questo valore per evitare l'eccezione.
+ Quando si restituisce un oggetto `DataSet` o `DataTable` da un servizio, è possibile che venga visualizzata un'eccezione "la quota di dimensioni massime per i messaggi in ingresso è stata superata". Per impostazione predefinita, la `MaxReceivedMessageSize` proprietà per alcune associazioni è impostata su un valore relativamente piccolo per limitare l'esposizione agli attacchi Denial of Service. È possibile aumentare questo valore per evitare l'eccezione.
 
- Per correggere l'errore:
+ Per correggere l'errore: 
 
-1. In **Esplora soluzioni**fare doppio clic sul file app. config per aprirlo.
+1. In **Esplora soluzioni**fare doppio clic sul file app.config per aprirlo.
 
-2. Individuare la proprietà `MaxReceivedMessageSize` e impostarla su un valore più grande.
+2. Individuare la `MaxReceivedMessageSize` proprietà e impostarla su un valore più grande.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Impossibile trovare un servizio nella soluzione
  Quando si fa clic sul pulsante **individua** nella finestra di dialogo **Aggiungi riferimenti al servizio** , uno o più progetti della libreria di servizi WCF nella soluzione non vengono visualizzati nell'elenco dei servizi. Questo problema può verificarsi se una libreria di servizi è stata aggiunta alla soluzione, ma non è ancora stata compilata.
 
- Per correggere l'errore:
+ Per correggere l'errore: 
 
 - In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto libreria di servizi WCF e scegliere **Compila**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Errore durante l'accesso a un servizio tramite un Desktop remoto
  Quando un utente accede a un servizio WCF ospitato sul Web tramite una connessione Desktop remoto e l'utente non dispone di autorizzazioni amministrative, viene utilizzata l'autenticazione NTLM. Se l'utente non dispone di autorizzazioni amministrative, l'utente potrebbe ricevere il messaggio di errore seguente: "la richiesta HTTP non è autorizzata con lo schema di autenticazione client ' Anonymous '. L'intestazione di autenticazione ricevuta dal server è' NTLM ' ".
 
- Per correggere l'errore:
+ Per correggere l'errore: 
 
 1. Nel progetto sito Web, aprire le pagine delle **Proprietà** .
 
 2. Nella scheda **Opzioni di avvio** deselezionare la casella di controllo **autenticazione NTLM** .
 
     > [!NOTE]
-    > È necessario disabilitare l'autenticazione NTLM solo per i siti Web che contengono esclusivamente servizi WCF. La protezione per i servizi WCF viene gestita tramite la configurazione nel file Web. config. Questa operazione rende superflua l'autenticazione NTLM.
+    > È necessario disabilitare l'autenticazione NTLM solo per i siti Web che contengono esclusivamente servizi WCF. La sicurezza per i servizi WCF viene gestita tramite la configurazione nel file di web.config. Questa operazione rende superflua l'autenticazione NTLM.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>L'impostazione del livello di accesso per le classi generate non ha alcun effetto
- L'impostazione dell'opzione **livello di accesso per le classi generate** nella finestra di dialogo **Configura riferimenti al servizio** su **interno** o su **Friend** potrebbe non funzionare sempre. Anche se l'opzione sembra essere impostata nella finestra di dialogo, le classi di supporto risultanti verranno generate con un livello di accesso di `Public`.
+ L'impostazione dell'opzione **livello di accesso per le classi generate** nella finestra di dialogo **Configura riferimenti al servizio** su **interno** o su **Friend** potrebbe non funzionare sempre. Anche se l'opzione sembra essere impostata nella finestra di dialogo, le classi di supporto risultanti verranno generate con un livello di accesso `Public` .
 
- Si tratta di un limite noto di determinati tipi, ad esempio quelli serializzati utilizzando la <xref:System.Xml.Serialization.XmlSerializer>.
+ Si tratta di un limite noto di determinati tipi, ad esempio quelli serializzati tramite <xref:System.Xml.Serialization.XmlSerializer> .
 
 ## <a name="error-debugging-service-code"></a>Errore durante il debug del codice del servizio
  Quando si esegue un'istruzione nel codice per un servizio WCF dal codice client, è possibile che venga visualizzato un errore relativo ai simboli mancanti. Questo problema può verificarsi quando un servizio che fa parte della soluzione è stato spostato o rimosso dalla soluzione.
@@ -78,14 +78,14 @@ In questo argomento vengono elencati i problemi comuni che possono verificarsi q
 
 4. Caricare il progetto del servizio WCF. Per altre informazioni, vedere [procedura: creare soluzioni multiprogetto](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5. Nella finestra di dialogo **Configuration Manager** impostare la **configurazione della soluzione attiva** su **debug**. Per altre informazioni, vedere [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md) (Procedura: Creare e modificare le configurazioni).
+5. Nella finestra di dialogo **Configuration Manager** impostare la **configurazione della soluzione attiva** su **debug**. Per altre informazioni, vedere [procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
 
 6. In **Esplora soluzioni**selezionare il progetto del servizio WCF.
 
 7. Scegliere **ricompila** dal menu **Compila** per ricompilare il progetto del servizio WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services non vengono visualizzati nel browser
- Quando tenta di visualizzare una rappresentazione XML dei dati in una [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], Internet Explorer può interpretare erroneamente i dati come feed RSS. È necessario assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata.
+ Quando tenta di visualizzare una rappresentazione XML dei dati in un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] , Internet Explorer può interpretare erroneamente i dati come feed RSS. È necessario assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata.
 
  Per correggere l'errore, disabilitare i feed RSS:
 
@@ -95,7 +95,7 @@ In questo argomento vengono elencati i problemi comuni che possono verificarsi q
 
 3. Nella finestra di dialogo **Impostazioni feed** deselezionare la casella di controllo **Attiva visualizzazione di lettura feed** , quindi fare clic su **OK**.
 
-4. Scegliere **OK** per chiudere la finestra di dialogo **Opzioni Internet**.
+4. Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni Internet** .
 
 ## <a name="see-also"></a>Vedere anche
 

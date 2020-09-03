@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547589"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Esecuzione di un vincolo di convalida
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> Esecuzione di un vincolo di convalida
  A scopo di test, eseguire i metodi di convalida in modalità debug.
 
 #### <a name="to-test-the-validation-constraint"></a>Per testare il vincolo di convalida
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Gli attributi `Export` e `ValidationMethod` corretti siano aggiunti ai metodi di convalida.
 
-    - `ValidationCategories.Menu`è incluso nell'argomento per l' `ValidationMethod` attributo e viene composto con altri valori usando Logical OR (&#124;).
+    - `ValidationCategories.Menu` è incluso nell'argomento per l' `ValidationMethod` attributo e viene composto con altri valori usando Logical OR (&#124;).
 
     - I parametri di tutti gli attributi `Import` e `Export` siano validi.
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Valutazione del vincolo
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> Valutazione del vincolo
  Il metodo di convalida dovrebbe determinare se il vincolo di convalida che si vuole applicare sia true o false. Se è true, non dovrebbe fare nulla. Se è false, dovrebbe segnalare un errore usando i metodi forniti dal parametro `ValidationContext` .
 
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Coordinamento di più convalide
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> Coordinamento di più convalide
  Quando la convalida viene richiamata, ad esempio dall'utente da un menu del diagramma, ogni metodo di convalida viene applicato a ogni elemento del modello, vale a dire che, in una singola chiamata del framework di convalida, lo stesso metodo può essere applicato più volte a elementi diversi.
 
  Questo comportamento è un problema per le convalide che coinvolgono le relazioni tra gli elementi. Ad esempio, si potrebbe scrivere una convalida che inizia da un caso d'uso e attraversa le relazioni **include** per verificare che non siano presenti cicli. Quando però il metodo viene applicato a ogni caso d'uso in un modello con molti collegamenti **include** , è probabile che le stesse aree del modello vengano elaborate più volte.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Ottiene un valore.|
 |`Context.GetValue<T>()`|Ottiene un valore del tipo specificato.|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installazione e disinstallazione di un'estensione
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installazione e disinstallazione di un'estensione
  È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.
 
 #### <a name="to-install-an-extension"></a>Per installare un'estensione

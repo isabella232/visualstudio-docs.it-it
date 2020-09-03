@@ -8,10 +8,10 @@ ms.date: 03/26/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801685"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
@@ -65,11 +65,11 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | Disponibile       |  Sì|
 | Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Sì|
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |N/D         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                            |N/D         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |N/D         |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |ND         |
+| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                            |ND         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |ND         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile       |  Sì|
-| Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |N/D|
+| Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |ND|
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (Rd).  Escludi: Microsoft Partner Network (MPN), ETP, Imagine.*

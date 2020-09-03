@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6694d3c1521a6a405323edc33adc44dac0e66829
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282553"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Visualizzare dati correlati in applicazioni WPF
@@ -55,7 +55,7 @@ In alcune applicazioni, potrebbe essere necessario utilizzare dati provenienti d
 
      ![Finestra Origini dati con visualizzazione delle relazioni](../data-tools/media/datasources2.gif)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Creare tabelle di ricerca in applicazioni WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)

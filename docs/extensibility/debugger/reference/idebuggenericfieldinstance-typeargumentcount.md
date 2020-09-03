@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugGenericFieldInstance::TypeArgumentCount . Documenti Microsoft
+title: 'IDebugGenericFieldInstance:: TypeArgumentCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0f0272e86f5c1bbbd840ee222b2048440338302d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728161"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
@@ -40,13 +40,13 @@ int TypeArgumentCount(
 
 ## <a name="parameters"></a>Parametri
 `pcArgs`\
-[in, out] Numero di argomenti del parametro di tipo per questa istanza.
+[in, out] Numero di argomenti di parametro di tipo per questa istanza.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Ad esempio,\<se List int>, questo metodo\<restituisce 1 e, se List int,float2> questo metodo restituisce 2. Questo metodo restituisce 0 se non sono presenti argomenti di tipo.
+ Se, ad esempio, List \<int> , questo metodo restituisce 1 e, se List \<int,float2> questo metodo restituisce 2. Questo metodo restituisce 0 se non sono presenti argomenti di tipo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

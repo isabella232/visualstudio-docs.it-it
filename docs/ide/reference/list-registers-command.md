@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568685"
 ---
 # <a name="list-registers-command"></a>Comando Elenca registri
@@ -32,7 +32,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]
 ```
 
-## <a name="switches"></a>Switch
+## <a name="switches"></a>Commutatori
 /Display [{`register`&#124;`registerGroup`}...]
 
 Consente di visualizzare i valori dell'oggetto `register` o `registerGroup` specificato. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Ad esempio:
@@ -67,6 +67,6 @@ r /Display Flags
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md) (Comandi di Visual Studio)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Nozioni fondamentali di debug: finestra Registri](../../debugger/debugging-basics-registers-window.md)
 - [Procedura: utilizzare la finestra Registri](../../debugger/how-to-use-the-registers-window.md)

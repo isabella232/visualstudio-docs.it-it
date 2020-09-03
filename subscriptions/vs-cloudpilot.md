@@ -8,10 +8,10 @@ ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informazioni sul vantaggio CloudPilot disponibile nelle sottoscrizioni di Visual Studio selezionate
 ms.openlocfilehash: bebffb505f5c2b0fff7167ed2cccf629be1e7543
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80274037"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Vantaggio CloudPilot nelle sottoscrizioni di Visual Studio
@@ -20,7 +20,7 @@ ms.locfileid: "80274037"
 ## <a name="overview"></a>Panoramica
 CloudPilot di UnifyCloud è progettato per aiutare gli sviluppatori a spostare rapidamente e con facilità le applicazioni in Azure.  In una frazione del tempo che una valutazione manuale richiederebbe, CloudPilot determina in modo accurato i costi di migrazione PaaS e IaaS di Azure e fornisce indicazioni dettagliate, fino alla singola riga di codice, sulle modifiche al codice da apportare per l'esecuzione dell'applicazione nel cloud. CloudPilot fornisce assistenza nella valutazione iniziale dello sforzo di migrazione al cloud e nella pianificazione dello sviluppo, nel processo di refactoring con modifiche dettagliate a livello di codice per il cloud e nei test finali sulla base di criteri e controlli tecnologici a livello aziendale.
 
-## <a name="activation-steps"></a>Procedura di attivazione
+## <a name="activation-steps"></a>Passaggi di attivazione
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Individuare il riquadro del vantaggio CloudPilot nella categoria "Strumenti" e fare clic su **Ottieni il codice**.
@@ -48,7 +48,7 @@ CloudPilot di UnifyCloud è progettato per aiutare gli sviluppatori a spostare r
     > [!div class="mx-imgBorder"]
     > ![Pagina del prodotto di CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0. L'operazione è terminata.  Verrà visualizzato il portale di CloudPilot e sarà possibile iniziare a usare la sottoscrizione di CloudPilot per spostare le applicazioni in Microsoft Azure.
+0. Ecco fatto!  Verrà visualizzato il portale di CloudPilot e sarà possibile iniziare a usare la sottoscrizione di CloudPilot per spostare le applicazioni in Microsoft Azure.
 
 0. Non appena l'account viene creato correttamente, si riceverà un messaggio di posta elettronica dal supporto VSS di UnifyCloud a conferma della corretta creazione dell'account.
 
@@ -60,35 +60,35 @@ CloudPilot di UnifyCloud è progettato per aiutare gli sviluppatori a spostare r
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 2 licenze, 90 giorni, analisi illimitate       |  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Enterprise con GitHub Enterprise   | Vl | 2 licenze, 90 giorni, analisi illimitate       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL | 2 licenze, 90 giorni, analisi illimitate       |  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 1 licenza, 30 giorni, un'analisi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
-| Visual Studio Professional con GitHub Enterprise | Vl | 1 licenza, 30 giorni, un'analisi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
+| Visual Studio Professional con GitHub Enterprise | VL | 1 licenza, 30 giorni, un'analisi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 
-<sup>1</sup>  *Include: Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *include: not for Resale (NFR), ETP, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
-> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) invitati a passare a esplorare diverse opzioni per l'acquisto di Visual Studio.
+> Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.
 
-Non si è certi della sottoscrizione in uso?  Connettersi [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) a per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
+Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
-- Serve aiuto con CloudPilot?  Vedere queste risorse:
+- Serve aiuto con CloudPilot?  vedere le risorse seguenti:
   - [Contattare UnifyCloud](https://www.unifycloud.com/contacts/) per eventuali domande sui prodotti UnifyCloud.
   - [Manuale dell'utente di CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
   - [Inviare una richiesta di supporto.](https://support.datacamp.com/hc/requests/new)
 
-- Per assistenza con vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il supporto per [le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio .
-- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visitare [il supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Se non è già stato attivato il vantaggio del credito individuale [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) DevTest di Azure fornito con la sottoscrizione, visitare e fare clic sul riquadro Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale di Azure DevTest.If you haven't already activated the Azure DevTest individual credit that comes with your subscription, visit and click on the Azure tile in the Tools category to set up your Azure subscription and redeem your Azure DevTest individual credit.
+Se non è già stato attivato il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul riquadro Azure nella categoria strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale Azure DevTest.

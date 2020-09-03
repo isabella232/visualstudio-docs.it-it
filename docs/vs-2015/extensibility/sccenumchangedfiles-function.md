@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 00ef98c93f02aa8e8a1b4ea53f1998d0ab6713a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200124"
 ---
 # <a name="sccenumchangedfiles-function"></a>Funzione SccEnumChangedFiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dato un elenco di file locali, questa funzione determina quali file sono diversi rispetto alle versioni corrispondenti nel database del controllo del codice sorgente.  
+Dato un elenco di file locali, questa funzione determina quali file sono diversi dalle versioni corrispondenti nel database di controllo del codice sorgente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,22 +38,22 @@ SCCRTN SccEnumChangedFiles(
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto del plug-in controllo di origine.  
+ in Puntatore al contesto del plug-in del controllo del codice sorgente.  
   
  hWnd  
- [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
+ in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.  
   
  cFiles  
- [in] Numero di nomi di file specificato nella `lpFileNames` matrice. Specifica anche dimensioni di `plIsFileDifferent` matrice.  
+ in Numero di nomi di file specificati nella `lpFileNames` matrice. Specifica anche la dimensione della `plIsFileDifferent` matrice.  
   
  lpFileNames  
- [in] Matrice di nomi di file locali da controllare.  
+ in Matrice di nomi di file locali da verificare.  
   
  plIsFileDifferent  
- [in, out] Matrice di valori che indicano lo stato di differenza di ogni file (matrice deve avere almeno `cFiles` voci). Diverso da zero indica che il file è diverso.  
+ [in, out] Matrice di valori che indica lo stato della differenza di ogni file (la matrice deve contenere almeno `cFiles` voci). Diverso da zero indica che il file è diverso.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
 |Valore|Descrizione|  
 |-----------|-----------------|  

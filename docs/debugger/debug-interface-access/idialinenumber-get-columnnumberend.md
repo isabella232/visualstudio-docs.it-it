@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26645878ffca7c8c6ea0c51e02aa24668764a757
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466930"
 ---
 # <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
@@ -38,8 +38,8 @@ out Restituisce il numero di colonna in cui termina l'espressione o l'istruzione
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Il valore della colonna restituito da questo metodo è un offset di byte nella riga alla posizione dopo l'ultimo carattere dell'istruzione sulla riga.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

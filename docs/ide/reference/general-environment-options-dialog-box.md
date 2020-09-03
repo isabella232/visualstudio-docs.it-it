@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569439"
 ---
-# <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: Generale ambiente \>
+# <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: ambiente \> generale
 
 Usare questa pagina per modificare i temi di colori, le impostazioni della barra di stato e le associazioni dell'estensione di file, tra le altre opzioni, per l'ambiente di sviluppo integrato (IDE). Per accedere alla finestra di dialogo **Opzioni**, aprire il menu **Strumenti**, scegliere **Opzioni**, aprire la cartella **Ambiente** e scegliere la pagina **Generale**. Se la pagina non viene visualizzata nell'elenco, selezionare la casella di controllo **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
 
@@ -74,7 +74,7 @@ Consente l'esperienza visiva completa di Visual Studio, inclusi i gradienti e le
 
 Usa l'accelerazione grafica hardware, se disponibile, piuttosto che l'accelerazione software.
 
-## <a name="other"></a>Altri
+## <a name="other"></a>Altro
 
 **Elementi da mostrare nel menu Finestra**
 
@@ -90,7 +90,7 @@ Consente di visualizzare la barra di stato. Nella barra di stato, posizionata ne
 
 **Il pulsante Chiudi si applica solo alla finestra degli strumenti attiva**
 
-Consente di specificare che quando si fa clic sul pulsante **Chiudi** deve essere chiusa solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Per impostazione predefinita, questa opzione è selezionata.
+Consente di specificare che quando si fa clic sul pulsante **Chiudi** deve essere chiusa solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è selezionata per impostazione predefinita.
 
 **Il pulsante Nascondi automaticamente si applica solo alla finestra degli strumenti attiva**
 

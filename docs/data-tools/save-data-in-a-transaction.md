@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281630"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare dati in una transazione
@@ -169,7 +169,7 @@ L'ordine di riconciliazione delle modifiche ai dati correlati è il seguente:
 
 Premere **F5** per eseguire l'applicazione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: salvare dati usando una transazione](../data-tools/save-data-by-using-a-transaction.md)
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

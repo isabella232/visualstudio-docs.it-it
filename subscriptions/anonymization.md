@@ -8,10 +8,10 @@ ms.date: 02/20/2020
 ms.topic: conceptual
 description: Informazioni sull'anonimizzazione dei dati dei sottoscrittori quando viene perso l'accesso alle sottoscrizioni.
 ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232731"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimizzazione dei dati del sottoscrittore di Visual Studio
@@ -37,18 +37,18 @@ R: No.  L'anonimizzazione è la risposta a un evento che causa la perdita dell'a
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q: Sono amministratore delle sottoscrizioni dell'organizzazione.  Se le informazioni di un sottoscrittore vengono rese anonime, è possibile riassegnare la sottoscrizione a un altro utente?
 A: Sì, a condizione che la sottoscrizione non sia scaduta, è possibile riassegnarla a un altro sottoscrittore.
 
-### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>D: In che modo è possibile impedire l'anonimato causato dall'eliminazione di un indirizzo di posta elettronica di accesso?
-R: Ci sono due modi per evitare il problema:
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>D: in che modo è possibile impedire la anonimato dei causata dall'eliminazione di un indirizzo di posta elettronica di accesso?
+R: è possibile evitare il problema in due modi:
 - Distribuire un solo sistema di gestione delle identità, MSA o AAD, ma non entrambi.  
 - Associare le identità AAD e MSA tramite il tenant. 
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOpsAzure DevOps documentation](https://docs.microsoft.com/azure/devops/)
+- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentazione di Azure](https://docs.microsoft.com/azure/)
 - [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Informazioni su come impedire l'anonimato [associando le identità MSA e AAD.](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)
+Informazioni su come impedire anonimato dei [associando le identità di MSA e AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 

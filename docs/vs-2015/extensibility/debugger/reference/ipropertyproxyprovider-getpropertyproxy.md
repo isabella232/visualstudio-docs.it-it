@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider::GetPropertyProxy | Microsoft Docs
+title: 'IPropertyProxyProvider:: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc505799a0ea7571ccff41057ba9852018ddbb3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199472"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera l'interfaccia proprietà del proxy per l'ID del proxy specificate.  
+Recupera l'interfaccia del proxy di proprietà per l'ID proxy specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -42,16 +42,16 @@ int GetPropertyProxy(
   
 #### <a name="parameters"></a>Parametri  
  `dwID`  
- [in] ID del proxy di proprietà desiderata.  
+ in ID del proxy di proprietà desiderato.  
   
  `proxy`  
- [out] Restituisce un [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) oggetto.  
+ out Restituisce un oggetto [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Per supportare i visualizzatori di tipo esterno, questo metodo inoltra la chiamata per il [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) (metodo). Visualizzare [visualizzazione di dati e visualizzare](../../../extensibility/debugger/visualizing-and-viewing-data.md) per informazioni dettagliate sul modo in cui viene ottenuto il IEEVisualizerService.  
+## <a name="remarks"></a>Osservazioni  
+ Per supportare i visualizzatori di tipi esterni, questo metodo in genere trasmette la chiamata al metodo [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) . Per informazioni dettagliate sul modo in cui viene ottenuto il IEEVisualizerService, vedere [visualizzazione e visualizzazione dei dati](../../../extensibility/debugger/visualizing-and-viewing-data.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)   

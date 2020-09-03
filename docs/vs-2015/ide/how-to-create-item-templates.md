@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668082"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: creare modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) di questo argomento illustrano come creare un modello di elemento usando l'**Esportazione guidata modelli**. Se il modello è costituito da più file, vedere [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md).
+I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) di questo argomento illustrano come creare un modello di elemento usando l'**Esportazione guidata modelli**. Se il modello è costituito da più file, vedere [procedura: creare modelli di elementi](../ide/how-to-create-multi-file-item-templates.md)a più file.
 
  La procedura guidata esegue automaticamente molte operazioni per la creazione del modello di base, ma in molti casi sarà necessario modificare manualmente il file con estensione vstemplate dopo aver esportato il modello. Ad esempio, se si vuole includere l'elemento nella finestra di dialogo**Aggiungi nuovo elemento** per un progetto app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], è necessario eseguire alcuni passaggi aggiuntivi. La [seconda procedura](#to-enable-the-item-template-to-be-used-in-a-store-project) di questo argomento illustra come eseguire tale operazione.
 
@@ -38,7 +38,7 @@ I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-templat
 
 2. Aggiungere un elemento al progetto e, se si desidera, modificarlo.
 
-3. Modificare il file del codice per indicare dove verrà applicata la sostituzione dei parametri. Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Modificare il file del codice per indicare dove verrà applicata la sostituzione dei parametri. Per altre informazioni, vedere [procedura: sostituire i parametri in un modello](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4. Nel menu **File** scegliere**Esporta modello**.
 
@@ -50,10 +50,10 @@ I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-templat
 
 8. Digitare il nome del file icona, l'immagine di anteprima, il nome del modello e la descrizione del modello e fare clic su **Fine**.
 
-     I file per il modello vengono aggiunti a un file ZIP e copiati nella directory specificata nella finestra di dialogo. Il percorso predefinito è la cartella **..\Utenti\\<nomeutente\>\Documenti\Visual Studio \<versione>\My Exported Templates\\** .
+     I file per il modello vengono aggiunti a un file ZIP e copiati nella directory specificata nella finestra di dialogo. Il percorso predefinito è **.. \Users \\<nomeutente \> \Documenti\visual Studio \<Version> \My Esportated Templates \\ ** cartella.
 
     > [!WARNING]
-    > Nelle versioni precedenti di Visual Studio, il percorso predefinito è **..Utenti\\<nomeutente\>\Documenti\Visual Studio \<versione>\Templates\ItemTemplates**.
+    > Nelle versioni precedenti di Visual Studio, il percorso predefinito è **.. \Users \\<nomeutente \> \Documenti\visual Studio \<Version> \Templates\ItemTemplates**.
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Per abilitare l'uso del modello di elemento in un progetto Windows Store
 
@@ -67,7 +67,7 @@ I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-templat
 
     Un progetto C# di Windows 8.1 Store usa un valore `WinRT-Native-6.3`. Per Windows 10 e per altri tipi di progetto, vedere [Elemento TemplateGroupID (modelli di Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).
 
-    Nell'esempio seguente è indicato l'intero contenuto di un file vstemplate dopo che è stata aggiunta la riga di codice XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Questo esempio è specifico per i progetti C#. È possibile modificare gli elementi \<ProjectType > e \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> per specificare altri tipi di linguaggio e di progetto.
+    Nell'esempio seguente è indicato l'intero contenuto di un file vstemplate dopo che è stata aggiunta la riga di codice XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Questo esempio è specifico per i progetti C#. È possibile modificare gli \<ProjectType> \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> elementi e per specificare altri tipi di linguaggio e di progetto.
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -110,7 +110,7 @@ I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-templat
 
 2. Impostare il valore di testo dell'elemento su uno dei valori seguenti:
 
-   1. WINDOWS
+   1. Windows
 
    2. Office
 

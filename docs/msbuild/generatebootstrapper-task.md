@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634084"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (attività)
@@ -78,7 +78,7 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
   </BootstrapperItem>
   ```
 
-   L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di `ApplicationFile` input MSBuild obbligatori, a meno che non venga specificato alcun valore. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.
+   L'attributo `Include` rappresenta il nome di un prerequisito che deve essere installato. I metadati dell'elemento `ProductName` sono facoltativi e vengono usati dal motore di compilazione come nome descrittivo se non è possibile trovare il pacchetto. Questi elementi non sono parametri di input MSBuild necessari, a meno che non `ApplicationFile` sia specificato No. È consigliabile includere un elemento per ogni prerequisito che deve essere installato per l'applicazione.
 
    Se non si specifica il parametro `BootstrapperItems` o `ApplicationFile`, si verificherà un errore di compilazione.
 
@@ -152,7 +152,7 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
 
 ## <a name="remarks"></a>Osservazioni
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
@@ -182,4 +182,4 @@ L'esempio seguente usa l'attività `GenerateBootstrapper` per installare un'appl
 ## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

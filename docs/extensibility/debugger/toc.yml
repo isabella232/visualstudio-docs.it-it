@@ -122,11 +122,11 @@
           href: processes.md
         - name: Nodi di programma
           href: program-nodes.md
-        - name: Programs
+        - name: Programmi
           href: programs.md
-        - name: Thread
+        - name: Threads
           href: threads.md
-        - name: Stack frame
+        - name: Frame dello stack
           href: stack-frames.md
         - name: Moduli
           href: modules.md
@@ -148,7 +148,7 @@
       items:
         - name: Attività di debug
           href: debugging-tasks.md
-        - name: Problemi relativi alla sicurezza
+        - name: Problemi di sicurezza
           href: security-issues.md
         - name: Avvio di un programma
           items:

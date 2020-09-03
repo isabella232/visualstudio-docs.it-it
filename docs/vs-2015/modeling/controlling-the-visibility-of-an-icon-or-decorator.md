@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 49cecff999e0155209ba58c20c0d623b15d63698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667835"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
@@ -62,13 +62,13 @@ Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una form
 
 1. Aggiungere una proprietà di dominio calcolato alla classe di dominio. Nella finestra **Proprietà** impostare i valori seguenti:
 
-     **Navigable =** `False` **: nasconde la proprietà dall'utente**
+     **Esplorabile =** `False` **-la proprietà viene nascosta dall'utente**    
 
-     **Kind =** `Calculated` **: indica che verrà fornito codice per il calcolo del valore**
+     **Tipo =** `Calculated` **-questo significa che verrà fornito codice per il calcolo del valore**    
 
      **Nome** , ad esempio **DecoratorControl**
 
-     **Digitare**  =  `Boolean`
+     **Tipo** = `Boolean`
 
      Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -80,7 +80,7 @@ Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una form
 
     3. In **Proprietà filtro**selezionare la proprietà del controllo **DecoratorControl**.
 
-    4. In **voci di visibilità**immettere `True`.
+    4. In **voci di visibilità**immettere `True` .
 
 3. Fare clic su **trasforma tutti i modelli** nella barra degli strumenti Esplora soluzioni.
 
@@ -92,7 +92,7 @@ Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una form
 
 6. Si noti lo spazio dei nomi, la classe e il metodo mancanti.  Ad esempio, Company. FamilyTree. Person. GetDecoratorControlValue ().
 
-7. In un file di codice separato scrivere una definizione di classe parziale che contiene il metodo mancante. Esempio:
+7. In un file di codice separato scrivere una definizione di classe parziale che contiene il metodo mancante. Ad esempio:
 
     ```
     namespace Company.FamilyTree

@@ -11,13 +11,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80256231"
 ---
-# <a name="first-look-at-testing-tools-in-visual-studio"></a>Esaminare gli strumenti di test in Visual StudioFirst look at testing tools in Visual Studio
+# <a name="first-look-at-testing-tools-in-visual-studio"></a>Esaminare prima di tutto gli strumenti di test in Visual Studio
 
 Gli strumenti di test di Visual Studio consentono allo sviluppatore e al team di creare e gestire standard di eccellenza del codice elevati.
 
@@ -85,12 +85,12 @@ Sia che si scelgano i test codificati dell'interfaccia utente più evoluti, sia 
 
 * [Usare l'automazione dell'interfaccia utente per testare il codice](use-ui-automation-to-test-your-code.md)
 * [Creazione, modifica e gestione di un test codificato dell'interfaccia utente](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Testare le app UWP con test codificati dell'interfaccia utenteTest UWP apps with coded UI tests](test-uwp-app-with-coded-ui-test.md)
+* [Testare app UWP con test codificati dell'interfaccia utente](test-uwp-app-with-coded-ui-test.md)
 * [Lab sull'esecuzione di test codificati dell'interfaccia utente con Visual Studio Enterprise](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 
 ## <a name="load-testing"></a>Test di carico
 
-[Il test di carico](../test/quickstart-create-a-load-test-project.md) simula il carico su un'applicazione server eseguendo unit test e test delle prestazioni Web.
+Il [test di carico](../test/quickstart-create-a-load-test-project.md) simula il carico su un'applicazione server eseguendo unit test e test delle prestazioni Web.
 
 ## <a name="related-scenarios"></a>Scenari correlati
 

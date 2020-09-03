@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException Documenti Microsoft
+title: 'IDebugExceptionEvent2:: GetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729856"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-Ottiene una descrizione dettagliata dell'eccezione che ha generato questo evento.
+Ottiene una descrizione dettagliata dell'eccezione che ha generato l'evento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ int GetException( 
 
 ## <a name="remarks"></a>Osservazioni
 
- [Solo C) Il chiamante è responsabile per liberare tutte le stringhe nel [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struttura nonché rilasciare il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto nella struttura.
+ [Solo C++] Il chiamante è responsabile di liberare tutte le stringhe nella struttura [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) e di rilasciare l'oggetto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) nella struttura.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281994"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 
 Per inserire nuovi record in un database, è possibile usare il `TableAdapter.Update` metodo o uno dei metodi DBDirect del TableAdapter (in particolare il `TableAdapter.Insert` metodo). Per ulteriori informazioni, vedere [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Se l'applicazione non usa TableAdapter, è possibile usare gli oggetti comando (ad esempio, <xref:System.Data.SqlClient.SqlCommand> ) per inserire nuovi record nel database.
+Se l'applicazione non usa TableAdapter, è possibile usare gli oggetti comando (ad esempio,  <xref:System.Data.SqlClient.SqlCommand> ) per inserire nuovi record nel database.
 
 Se l'applicazione usa set di dati per archiviare i dati, usare il `TableAdapter.Update` metodo. Il `Update` metodo invia tutte le modifiche (aggiornamenti, inserimenti ed eliminazioni) al database.
 
@@ -84,6 +84,6 @@ Nell'esempio seguente viene illustrato l'inserimento di record in un database ut
 
 È necessario disporre dell'accesso al database a cui si sta tentando di connettersi, nonché dell'autorizzazione per l'esecuzione di inserimenti nella tabella desiderata.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

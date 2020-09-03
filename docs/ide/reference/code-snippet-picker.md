@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570492"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
@@ -42,7 +42,7 @@ La procedura per visualizzare la **Selezione frammento di codice** varia in base
 
 - SQL - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.
 
-Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'elenco cartelle in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per ulteriori informazioni, vedere [Procedura dettagliata: creazione di un frammento](../../ide/walkthrough-creating-a-code-snippet.md)di codice.
+Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'elenco cartelle in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [procedura dettagliata: creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
@@ -58,5 +58,5 @@ Elenco di frammenti di codice disponibili per l'inserimento o un elenco di carte
 
 - [Procedure consigliate per l'uso dei frammenti di codice](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic IntelliSense Code Snippets](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets) (Frammenti di codice IntelliSense di Visual Basic)
-- [Impostazione dei segnalibri nel codiceSetting Bookmarks in Code](../../ide/setting-bookmarks-in-code.md)
+- [Impostazione di segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)
 - [Procedura: Usare frammenti di codice racchiusi](../../ide/how-to-use-surround-with-code-snippets.md)

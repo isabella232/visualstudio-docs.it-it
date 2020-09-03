@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugGenericFieldDefinition::TypeParamCount . Documenti Microsoft
+title: 'IDebugGenericFieldDefinition:: TypeParamCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a488bce2ad5822f875776bdfc4c4de29eee71bbb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728232"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
@@ -46,7 +46,7 @@ int TypeParamCount(
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Se\<l'elenco T>, questo metodo\<restituisce 1 e, se l'elenco T1,T2>, questo metodo restituisce 2. Questo metodo restituisce 0 se non sono presenti parametri di tipo.
+ Se List \<T> , questo metodo restituisce 1 e, se List \<T1,T2> , questo metodo restituisce 2. Questo metodo restituisce 0 se non sono presenti parametri di tipo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

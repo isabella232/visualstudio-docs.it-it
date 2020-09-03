@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568815"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introdurre una variabile locale in Visual Studiio
@@ -44,10 +44,10 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic sul pulsante ![cacciavite](media/screwdriver.png) icona che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con l'espressione evidenziata.
+      - Fare clic sull'icona ![cacciavite](media/screwdriver.png) icona che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con l'espressione evidenziata.
 
    ![Anteprima di Introduce l'elemento locale](media/local-preview-cs.png)
 
@@ -71,5 +71,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Generazione del codice](../code-generation-in-visual-studio.md)
-- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Generazione codice](../code-generation-in-visual-studio.md)
+- [Anteprima modifiche](../../ide/preview-changes.md)

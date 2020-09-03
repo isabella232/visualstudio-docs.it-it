@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546925"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
@@ -125,7 +125,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 9. Per installare VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare **il file VSIX** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
 
-## <a name="programming-validation"></a><a name="programming"></a>Convalida della programmazione
+## <a name="programming-validation"></a><a name="programming"></a> Convalida della programmazione
 
 Per definire un'estensione di convalida dei livelli, è necessario definire una classe con le caratteristiche seguenti:
 
@@ -194,7 +194,7 @@ Ogni nodo e ogni collegamento hanno una o più categorie che specificano il tipo
 
 I collegamenti dai livelli agli elementi nel codice sono associati alla categoria "Rappresenta".
 
-## <a name="debugging-validation"></a><a name="debugging"></a>Debug della convalida
+## <a name="debugging-validation"></a><a name="debugging"></a> Debug della convalida
 
 Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.
 
@@ -226,7 +226,7 @@ Avviare sempre l'istanza sperimentale premendo CTRL+F5 (**Avvia senza eseguire d
 
 Per installare l'estensione di convalida in un computer in cui è installata una versione appropriata di Visual Studio, aprire il file VSIX nel computer di destinazione.
 
-## <a name="example-code"></a><a name="example"></a>Codice di esempio
+## <a name="example-code"></a><a name="example"></a> Codice di esempio
 
 ```csharp
 using System;
