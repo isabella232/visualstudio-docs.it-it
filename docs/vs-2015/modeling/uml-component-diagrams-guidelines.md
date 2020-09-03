@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297152"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagrammi dei componenti UML: linee guida
@@ -41,7 +41,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
   È possibile usare un diagramma dei componenti per rappresentare la progettazione indipendentemente dalla lingua o dalla piattaforma usata.
 
-## <a name="OtherDiagrams"></a>Relazione con altri diagrammi
+## <a name="relationship-to-other-diagrams"></a><a name="OtherDiagrams"></a> Relazione con altri diagrammi
  È possibile usare un diagramma dei componenti insieme ad altri diagrammi.
 
 |Altro diagramma|Discussione e comunicazione dei seguenti aspetti della progettazione|
@@ -51,7 +51,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 |Diagrammi di attività|: Elaborazione interna eseguita da un componente in risposta ai messaggi in arrivo.<br /><br /> Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).|
 |Diagrammi livello|-Livelli di architettura logica per i componenti.<br /><br /> Per altre informazioni, vedere [diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>Passaggi di base per la creazione di diagrammi dei componenti
+## <a name="basic-steps-for-drawing-component-diagrams"></a><a name="Basics"></a> Passaggi di base per la creazione di diagrammi dei componenti
  Per informazioni di riferimento sugli elementi nei diagrammi dei componenti, vedere [diagrammi dei componenti UML:](../modeling/uml-component-diagrams-reference.md)informazioni di riferimento.
 
  Per altre informazioni su come usare i diagrammi dei componenti nel processo di progettazione, vedere [modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md).
@@ -82,7 +82,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 1. Fare clic su **componente** nella casella degli strumenti, quindi fare clic su una parte vuota del diagramma.
 
-     \- oppure -
+     \- - oppure -
 
      Copiare e incollare un componente esistente.
 
@@ -161,8 +161,8 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
     3. Se si desidera creare un'interfaccia obbligatoria, fare clic sul tag azione, quindi fare clic su **Converti in interfaccia richiesta**.
 
-## <a name="Parts"></a>Visualizzazione delle parti interne di un componente
- ![Diagramma componenti che mostra parti interne](../modeling/media/uml-compshowing.png "UML_CompShowing")
+## <a name="showing-the-internal-parts-of-a-component"></a><a name="Parts"></a> Visualizzazione delle parti interne di un componente
+ ![Diagramma dei componenti con parti interne](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  È possibile posizionare le parti (3) di un componente (1) in modo da mostrare come sia costituito da componenti più piccoli che interagiscono tra di loro.
 
@@ -188,13 +188,13 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
          In **Esplora modelli UML**viene creato un nuovo componente. Si tratta del tipo della nuova parte.
 
-         \- oppure -
+         \- - oppure -
 
          Trascinare un componente esistente da Esplora modelli UML nel componente padre.
 
          Una nuova parte (3) verrà visualizzata nel componente padre. Il tipo è il componente trascinato da Esplora modelli UML.
 
-         \- oppure -
+         \- - oppure -
 
          Fare clic con il pulsante destro del mouse su un componente, in un diagramma o in Esplora modelli UML, quindi fare clic su **copia**.
 
@@ -206,7 +206,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
     3. È possibile aggiungere alla nuova parte le interfacce fornite e richieste (4, 5). Fare clic sull' **interfaccia fornita** o sullo strumento **interfaccia richiesta** , quindi fare clic nella parte.
 
-         \- oppure -
+         \- - oppure -
 
          Trascinare un'interfaccia esistente da **Esplora modelli UML** nella parte.
 
@@ -255,7 +255,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
      È ora possibile aggiungervi le parti.
 
-## <a name="Designing"></a>Progettazione del componente
+## <a name="designing-the-component"></a><a name="Designing"></a> Progettazione del componente
 
 ### <a name="describing-how-the-parts-collaborate"></a>Descrizione del modo in cui collaborano le parti
  È possibile creare un diagramma di sequenza per illustrare il modo in cui le parti collaborano in risposta a un messaggio che arriva nel componente padre.
@@ -270,7 +270,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 - Se invece il carico lavoro viene distribuito alleggerendo in maniera eccessiva le parti con molte interazioni, il sistema potrebbe venire eseguito in modo non corretto e la comprensione potrebbe risultare più complessa.
 
-  ![Diagramma sequenza che mostra le parti di collaborazione](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
+  ![Diagramma di sequenza che illustra il modo in cui le parti collaborano](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
 
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Per creare un diagramma di sequenza che illustri la collaborazione tra le parti
 
@@ -318,7 +318,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 ### <a name="general-dependencies-between-components"></a>Dipendenze generali tra componenti
  È possibile usare un diagramma dei componenti solo per illustrare le parti principali della progettazione e le relative interdipendenze.
 
- ![Dipendenza tra i componenti](../modeling/media/uml-compdepend.png "UML_CompDepend")
+ ![Dipendenza tra componenti](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
  Utilizzare lo strumento di **dipendenza** per creare una dipendenza. In questo modo viene indicato che la progettazione di un componente si basa su un altro componente.
 

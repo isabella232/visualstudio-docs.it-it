@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c92fb2ad45bc0fb09c7e9bd8e87db38c13a99736
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546744"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
@@ -50,7 +50,7 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
 </Theme>  
 ```  
   
-|**Attributo**|**Definizione**|  
+|**Attributo**|**Definition**|  
 |-|-|  
 |Nome|Necessaria Nome del tema|  
 |GUID|Necessaria Il GUID del tema (deve corrispondere alla formattazione del GUID)|  
@@ -74,7 +74,7 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
  </Category>  
 ```  
     
-|**Attributo**|**Definizione**|  
+|**Attributo**|**Definition**|  
 |-|-|  
 |Nome|Necessaria Nome della categoria|  
 |GUID|Necessaria Il GUID della categoria (deve corrispondere alla formattazione del GUID)|  
@@ -90,7 +90,7 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
  </Color>  
 ```  
   
-|**Attributo**|**Definizione**|  
+|**Attributo**|**Definition**|  
 |-|-|  
 |Nome|Necessaria Nome del colore|  
   
@@ -103,7 +103,7 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
 <Foreground Type="type" Source="int" />  
 ```  
   
-|**Attributo**|**Definizione**|  
+|**Attributo**|**Definition**|  
 |-|-|  
 |Type|Necessaria Tipo di colore. I possibili valori sono i seguenti:<br /><br /> *CT_INVALID:* Il colore non è valido o non è impostato.<br /><br /> *CT_RAW:* Valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Colore di sistema Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|  
 |Source (Sorgente)|Necessaria Valore del colore rappresentato in formato esadecimale|  
@@ -135,7 +135,7 @@ Lo strumento compilatore colori estensione Visual Studio è un'applicazione cons
   
 |**Nome dell'opzione**|**Note**|**Obbligatorio o facoltativo**|  
 |-|-|-|  
-|Senza nome (file con estensione XML)|Si tratta del primo parametro senza nome e è il percorso del file XML da convertire.|Obbligatoria|  
+|Senza nome (file con estensione XML)|Si tratta del primo parametro senza nome e è il percorso del file XML da convertire.|Necessario|  
 |Senza nome (file. pkgdef)|Si tratta del secondo parametro senza nome e è il percorso di output per il file con estensione pkgdef generato.<br /><br /> Impostazione predefinita: \<XML Filename> . pkgdef|Facoltativo|  
 |/noLogo|L'impostazione di questo flag interrompe le informazioni sul prodotto e sul copyright dalla stampa.|Facoltativo|  
 |/?|Stampare le informazioni della guida.|Facoltativo|  

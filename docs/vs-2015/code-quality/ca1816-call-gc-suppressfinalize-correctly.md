@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 532478a8d6ed6b88347d196b4a74b6f19a38ef85
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546770"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Chiamare GC.SuppressFinalize correttamente
@@ -41,7 +41,7 @@ ms.locfileid: "85546770"
 - Un metodo chiama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> e passa un valore diverso da this (me in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo consente agli utenti di rilasciare le risorse in qualsiasi momento prima che l'oggetto diventi disponibile per Garbage Collection. Se <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> viene chiamato il metodo, vengono liberate le risorse dell'oggetto. Questa operazione rende superflua la finalizzazione. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>deve chiamare in <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> modo che il Garbage Collector non chiami il finalizzatore dell'oggetto.
+ Il <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo consente agli utenti di rilasciare le risorse in qualsiasi momento prima che l'oggetto diventi disponibile per Garbage Collection. Se <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> viene chiamato il metodo, vengono liberate le risorse dell'oggetto. Questa operazione rende superflua la finalizzazione. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> deve chiamare in <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> modo che il Garbage Collector non chiami il finalizzatore dell'oggetto.
 
  Per impedire che i tipi derivati con finalizzatori debbano implementare nuovamente [System. IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) e per chiamarlo, i tipi non sealed senza finalizzatori devono comunque chiamare <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 

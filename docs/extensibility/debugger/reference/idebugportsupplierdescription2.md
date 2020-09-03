@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugPortSupplierDescription2 . Documenti Microsoft
+title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724360"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Consente [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] all'interfaccia utente di visualizzare il testo all'interno della sezione **Informazioni sul trasporto** della finestra di dialogo Connetti a **processo.**
+Consente all' [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interfaccia utente di visualizzare il testo nella sezione **informazioni di trasporto** della finestra di dialogo **Connetti a processo** .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,15 +30,15 @@ IDebugPortSupplierDescription2 : IUnknown
  Questa interfaccia viene implementata dai fornitori di porte.
 
 ## <a name="methods"></a>Metodi
- Nella tabella seguente vengono `IDebugPortSupplierDescription2`illustrati i metodi di .
+ La tabella seguente illustra i metodi di `IDebugPortSupplierDescription2` .
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[GetDescrizione](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera i metadati di descrizione e descrizione per il fornitore della porta.|
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera i metadati della descrizione e della descrizione per il fornitore della porta.|
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

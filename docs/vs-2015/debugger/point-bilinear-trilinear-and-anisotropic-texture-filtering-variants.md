@@ -1,5 +1,5 @@
 ---
-title: Trama bilineare, trilineare e anisotropico varianti del filtro a punti, | Microsoft Docs
+title: Varianti di filtro della trama a punti, bilineare, trilineare e anisotropico | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c53f3b0633ec8938de210cb518d9fae1937eb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185401"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Varianti del filtro della trama a punti, bilineare, trilineare e anisotropico
@@ -36,7 +36,7 @@ Esegue l'override della modalità di filtraggio sui campionatori di trame approp
   
    Se l'impatto sulle prestazioni è trascurabile o invariato a prescindere dalla modalità di filtraggio, ad esempio quando la GPU di destinazione presenta un'abbondanza di velocità di shader e di larghezza di banda di memoria, considerare l'uso del filtraggio anisotropo per ottenere la migliore qualità di immagine per l'applicazione.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
  Queste varianti eseguono l'override degli stati del campionatore nelle chiamate a `ID3D11DeviceContext::PSSetSamplers` in cui la modalità di filtraggio del campionatore fornita dall'applicazione è una delle seguenti:  
   
 - `D3D11_FILTER_MIN_MAG_MIP_POINT`  
@@ -61,7 +61,7 @@ Esegue l'override della modalità di filtraggio sui campionatori di trame approp
   
   Nella variante **Filtraggio anisotropo della trama** la modalità di filtraggio fornita dall'applicazione viene sostituita da `D3D11_FILTER_ANISOTROPIC` e il valore per Anisotropia max viene impostato su 16.  
   
-## <a name="restrictions-and-limitations"></a>Limiti e restrizioni  
+## <a name="restrictions-and-limitations"></a>Restrizioni e limitazioni  
  In Direct3D la funzionalità di livello 9.1 specifica un'anisotropia massima di 2x. Dato che la variante **Filtraggio anisotropo della trama** cerca di usare l'anisotropia 16x in modo esclusivo, la riproduzione non riesce quando l'analisi dei frame viene eseguita su un dispositivo con funzionalità di livello 9.1. Tra i dispositivi contemporanei che sono interessati da questo limite ci sono i tablet Windows basati su ARM Surface RT e Surface 2. GPU più datate che potrebbero essere ancora presenti in alcuni computer possono anch'esse risultare interessate, ma si tratta di hardware generalmente considerato obsoleto e in rapida via di estinzione.  
   
 ## <a name="example"></a>Esempio  
