@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 11e739fc1b0516c2b6e34421ecee7a329830de14
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73983788"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Procedura: individuare il codice Product Key di Visual Studio
@@ -35,6 +35,6 @@ Potrebbe essere necessario individuare il codice Product Key per [!INCLUDE[vsprv
   - Documentazione o altra comunicazione del fornitore dal quale è stato acquistato il software.
 
 ## <a name="see-also"></a>Vedere anche
- * [Procedura: Eseguire l'aggiornamento da una versione di valutazione di Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
- * [Installare Visual Studio](../install/install-visual-studio-2015.md)
- * [White paper sulle licenze per Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350)
+ * [Procedura: eseguire l'aggiornamento da una versione di valutazione di Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
+ * [Installa Visual Studio](../install/install-visual-studio-2015.md)
+ * [White paper sulle licenze di Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350)

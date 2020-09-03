@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f4299ac71c08118563a008abe065f2c02423e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655396"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C#
@@ -51,7 +51,7 @@ In Visual Studio, è possibile usare frammenti di codice per aggiungere il codic
 
 3. Usare i tasti di scelta rapida: **CTRL + K + S**
 
-   Selezionare **#if**. Viene visualizzato un output simile al seguente:
+   Selezionare **#if**. L'output dovrebbe essere simile al seguente:
 
 ```cpp
 #if 0
@@ -62,7 +62,7 @@ In Visual Studio, è possibile usare frammenti di codice per aggiungere il codic
  Sarà quindi possibile sostituire il valore 0 con la condizione corretta.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Dove posso trovare un elenco completo dei frammenti di codice C++?
- È possibile trovare l'elenco completo dei frammenti di codice C++ selezionando **Gestione frammenti di codice** nel menu **Strumenti** e impostando il **Linguaggio** su **Visual C++** . Nella finestra seguente espandere **Visual C++** . Verranno visualizzati i nomi di tutti i frammenti di codice C++ in ordine alfabetico.
+ È possibile trovare l'elenco completo dei frammenti di codice C++ selezionando **Gestione frammenti di codice** nel menu **Strumenti** e impostando il **Linguaggio** su **Visual C++**. Nella finestra seguente espandere **Visual C++**. Verranno visualizzati i nomi di tutti i frammenti di codice C++ in ordine alfabetico.
 
  I nomi della maggior parte dei frammenti di codice sono di chiara interpretazione, ma alcuni nomi potrebbero confondere.
 
@@ -111,7 +111,7 @@ private:
 ## <a name="for-vs-foreach-vs-forr-vs-rfor"></a>For, foreach, forr e rfor
  Sono disponibili quattro diversi frammenti for che forniscono tipi diversi di cicli for.
 
- Il frammento **for`size_t` rende disponibile un ciclo**  in cui la condizione è basata sulla lunghezza (in `for`) di un oggetto:
+ Il frammento **for`size_t` rende disponibile un ciclo ** in cui la condizione è basata sulla lunghezza (in `for`) di un oggetto:
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -148,7 +148,7 @@ for (auto& i : v)
 ```
 
 ## <a name="the-destructor-snippet-"></a>Frammento distruttore (~)
- Il frammento distruttore ( **~** ) ha un comportamento diverso in contesti diversi. Se si inserisce questo frammento di codice all'interno di una classe, esso fornisce un distruttore per quella classe. Si consideri, ad esempio, il codice seguente:
+ Il frammento distruttore ( **~** ) Mostra un comportamento diverso in contesti diversi. Se si inserisce questo frammento di codice all'interno di una classe, esso fornisce un distruttore per quella classe. Si consideri, ad esempio, il codice seguente:
 
 ```cpp
 class SomeClass {

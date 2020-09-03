@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295522"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Modificare modelli e diagrammi UML
@@ -39,21 +39,21 @@ ms.locfileid: "74295522"
 
 ## <a name="in-this-topic"></a>Contenuto dell'argomento
 
-- [I diagrammi UML sono viste di un modello UML](#Views)
+- [I diagrammi UML sono visualizzazioni di un modello UML](#Views)
 
 - [Creazione di diagrammi di modellazione UML](#Creating)
 
-- [Creazione di diagrammi di modellazione UML](#Drawing)
+- [Disegno di diagrammi di modellazione UML](#Drawing)
 
 - [Modifica di forme e connettori](#Editing)
 
-- [Anmutazione delle modifiche apportate al modello](#Undo)
+- [Annullamento delle modifiche al modello](#Undo)
 
 - [Condivisione di elementi tra diagrammi](#Sharing)
 
-- [Copia di elementi e gruppi di elementi correlati](#Copying)
+- [Copia di elementi e di gruppi di elementi correlati](#Copying)
 
-- [Eliminazione di un elemento del modello o delle relative visualizzazioni](#Deleting)
+- [Eliminazione di un elemento del modello o delle visualizzazioni](#Deleting)
 
 - [Ricerca di testo in un diagramma](#Searching)
 
@@ -61,7 +61,7 @@ ms.locfileid: "74295522"
 
 - [Estensione delle finestre di progettazione UML](#extensions)
 
-## <a name="Views"></a>I diagrammi UML sono viste di un modello UML
+## <a name="uml-diagrams-are-views-of-a-uml-model"></a><a name="Views"></a> I diagrammi UML sono viste di un modello UML
  È possibile creare e usare i diagrammi UML solo nei progetti di modellazione. Per altre informazioni su come creare diagrammi e progetti, vedere [creare diagrammi e progetti di modellazione UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 - Un progetto di modellazione contiene un solo modello UML. Ogni diagramma UML nel progetto è una visualizzazione del modello UML.
@@ -70,9 +70,9 @@ ms.locfileid: "74295522"
 
 - Ogni forma in un diagramma è una visualizzazione di un elemento del modello. Quando si inserisce una nuova forma in un diagramma, si crea un nuovo elemento nel modello.
 
-- Quando si salva un diagramma, Visual Studio salva l'intero modello, tutti i relativi diagrammi e il file di progetto di modellazione.
+- Quando si salva un diagramma, Visual Studio salva l'intero modello, tutti i diagrammi e il file di progetto di modellazione.
 
-## <a name="Creating"></a>Creazione di diagrammi di modellazione UML
+## <a name="creating-uml-modeling-diagrams"></a><a name="Creating"></a> Creazione di diagrammi di modellazione UML
 
 1. Scegliere **nuovo diagramma livello o UML**dal menu **architettura** di Visual Studio.
 
@@ -91,7 +91,7 @@ ms.locfileid: "74295522"
 
   Per altre informazioni su come gestire i progetti di modellazione, vedere [creare diagrammi e progetti di modellazione UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-## <a name="Drawing"></a>Creazione di diagrammi di modellazione UML
+## <a name="drawing-uml-modeling-diagrams"></a><a name="Drawing"></a> Creazione di diagrammi di modellazione UML
  Un diagramma di modellazione visualizza una raccolta di elementi del modello collegati da relazioni. Ogni elemento viene visualizzato come forma e ogni relazione viene visualizzata come connettore tra due forme.
 
  Esistono due tipi di strumenti, uno per gli elementi e uno per le relazioni. Nella casella degli strumenti del diagramma classi UML, ad esempio, la **classe** è uno strumento elemento e **Association** è uno strumento di relazione.
@@ -117,7 +117,7 @@ ms.locfileid: "74295522"
 
    In alcuni tipi di diagrammi, è anche possibile disegnare forme semplici. Queste forme non fanno parte del modello, ma è possibile usarle per attirare l'attenzione su parti del diagramma o per dividerlo in aree diverse.
 
-## <a name="Editing"></a>Modifica di forme e connettori
+## <a name="editing-shapes-and-connectors"></a><a name="Editing"></a> Modifica di forme e connettori
  Quando si ridimensiona o si colora una forma oppure si reindirizza un connettore, questa operazione non influisce sul modello sottostante. Quando però si rinomina una forma nel diagramma o in Esplora modelli UML, l'elemento corrispondente viene rinominato in Esplora modelli UML e in qualsiasi altro diagramma che presenta tale elemento.
 
 > [!NOTE]
@@ -125,22 +125,22 @@ ms.locfileid: "74295522"
 
  La figura seguente mostra come modificare le dimensioni o il nome di una forma.
 
- ![Regolazione di un elemento del modello](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
+ ![Modifica di un elemento del modello](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
 
 > [!TIP]
 > I comandi incorporati non includono un comando per allineare accuratamente le forme, Tuttavia, è possibile creare facilmente il proprio comando di allineamento copiando il codice nell'esempio in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).
 
  La figura seguente mostra come regolare la route e la posizione di un connettore o delle sue etichette.
 
- ![Regolazione di un connettore](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
+ ![Modifica di un connettore](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Per spostare un'estremità di un connettore in un'altra forma
 
-1. Esegui una delle operazioni seguenti:
+1. Eseguire una delle operazioni seguenti:
 
    - Premere **CTRL** e spostare la fine.
 
-     \- oppure -
+     \- - oppure -
 
    - Fare clic con il pulsante destro del mouse sul connettore e quindi scegliere **Riconnetti**.
 
@@ -158,22 +158,22 @@ ms.locfileid: "74295522"
 
 - Premere e tenere premuto il tasto **CTRL** mentre si ruota la rotellina del mouse.
 
-     \- oppure -
+     \- - oppure -
 
 - Premere e tenere premuto **CTRL + MAIUSC**, quindi fare clic sul pulsante sinistro o destro del mouse.
 
-     \- oppure -
+     \- - oppure -
 
 - Sulla barra degli strumenti **Progettazione architettura** fare clic sul segno più ( **+** ) o sul segno meno ( **-** ) oppure scegliere un livello di zoom.
 
-## <a name="Searching"></a>Ricerca in un diagramma
+## <a name="searching-in-a-diagram"></a><a name="Searching"></a> Ricerca in un diagramma
  La funzione di ricerca veloce troverà gli elementi in un diagramma. È necessario impostare **Cerca in: nel** **documento corrente**.
 
 #### <a name="to-search-for-text-in-a-modeling-diagram"></a>Per cercare un testo in un diagramma di modellazione
 
 1. Premere **CTRL + F**.
 
-     \- oppure -
+     \- - oppure -
 
      Scegliere **trova e Sostituisci**dal menu **modifica** e quindi fare clic su **ricerca veloce**.
 
@@ -185,7 +185,7 @@ ms.locfileid: "74295522"
     > [!NOTE]
     > Se il testo che si vuole trovare è all'interno di una forma compressa, la forma verrà evidenziata. Espandere la forma, quindi fare di nuovo clic su **Trova successivo** .
 
-## <a name="Undo"></a>Anmutazione delle modifiche apportate al modello
+## <a name="undoing-changes-to-the-model"></a><a name="Undo"></a> Anmutazione delle modifiche apportate al modello
  È possibile annullare e ripristinare le modifiche apportate al modello e ai diagrammi utilizzando i comandi **Annulla** e **Ripeti** nel menu **modifica** .
 
  **Ogni progetto di modello dispone di un singolo stack di modifiche.** In questo stack vengono mantenute tutte le modifiche apportate al modello e ai diagrammi. Lo stack include anche i passaggi dello stato attivo da un diagramma a un altro. Il comando Annulla inverte le modifiche in questo stack.
@@ -196,9 +196,9 @@ ms.locfileid: "74295522"
 
  **Non è possibile annullare l'operazione durante la modifica di una proprietà.** Mentre si modifica una proprietà nella finestra Proprietà, in un'etichetta o in un diagramma, è possibile annullare solo le modifiche apportate in tale proprietà. Completare la modifica nella proprietà premendo INVIO o annullarla premendo ESC. Sarà quindi possibile annullare le modifiche nel modello e nei diagrammi.
 
- **La chiusura di un diagramma senza salvataggio potrebbe non avere l'effetto previsto.** Se si apportano modifiche e quindi si chiude un diagramma senza salvarlo, le modifiche verranno tuttavia conservate nel modello. Si consiglia di chiudere l'intero modello se si vuole chiudere senza salvare le modifiche.
+ **Se si chiude un diagramma senza salvare, l'effetto potrebbe non essere quello previsto.** Se si apportano modifiche e quindi si chiude un diagramma senza salvarlo, le modifiche verranno tuttavia conservate nel modello. Si consiglia di chiudere l'intero modello se si vuole chiudere senza salvare le modifiche.
 
-## <a name="Sharing"></a>Condivisione di elementi tra diagrammi
+## <a name="sharing-elements-between-diagrams"></a><a name="Sharing"></a> Condivisione di elementi tra diagrammi
  È possibile visualizzare più di una volta un'istanza specifica di un elemento del modello nei diagrammi. È possibile farlo con classi, interfacce, componenti, casi di utilizzo e attori.
 
  È utile se si vogliono mostrare gruppi diversi di relazioni in diagrammi diversi. In un diagramma, ad esempio, si potrebbero mostrare le associazioni tra le classi Customer e Address. In un altro, si potrebbe mostrare ancora la classe Address, con l'associazione a Postal Area.
@@ -234,7 +234,7 @@ ms.locfileid: "74295522"
 > [!NOTE]
 > Se si aggiungono a un diagramma visualizzazioni di due elementi del modello già connessi da una relazione, una visualizzazione della relazione apparirà anche nel diagramma. È possibile eliminare questa visualizzazione solo rimuovendo uno degli elementi dal diagramma o eliminando la relazione dal modello.
 
-## <a name="Copying"></a>Copia di elementi e gruppi di elementi correlati
+## <a name="copying-elements-and-groups-of-related-elements"></a><a name="Copying"></a> Copia di elementi e gruppi di elementi correlati
  È possibile copiare e incollare gli elementi del modello ed è possibile copiare e incollare gruppi di elementi e le relazioni tra di essi.
 
 > [!NOTE]
@@ -247,7 +247,7 @@ ms.locfileid: "74295522"
     > [!NOTE]
     > Non è possibile copiare relazioni se non come parte di un gruppo di elementi.
 
-2. Scegliere **copia**dal menu **modifica** .
+2. Scegliere **Copia** dal menu **Modifica**.
 
 3. Per copiare gli elementi in un altro diagramma, creare il nuovo diagramma o aprire il diagramma esistente.
 
@@ -270,7 +270,7 @@ ms.locfileid: "74295522"
 
    Non è possibile replicare un diagramma copiando e incollando in Esplora soluzioni.
 
-## <a name="Deleting"></a>Eliminazione di un elemento del modello o delle relative visualizzazioni
+## <a name="deleting-a-model-element-or-its-views"></a><a name="Deleting"></a> Eliminazione di un elemento del modello o delle relative visualizzazioni
  Alcuni tipi di elementi, in particolare i classificatori, possono essere rimossi da un diagramma senza eliminarli dal modello. I classificatori sono i principali elementi visualizzati nei diagrammi classi, nei diagrammi dei componenti e nei diagrammi caso di utilizzo. Possono apparire in più diagrammi. Per questi tipi di elementi, sono disponibili due comandi distinti: **Rimuovi dal diagramma** ed **Elimina dal modello**.
 
  Al contrario, quando si elimina una relazione da un diagramma, la si elimina sempre anche dal modello.
@@ -282,7 +282,7 @@ ms.locfileid: "74295522"
 
 - Fare clic con il pulsante destro del mouse sull'elemento nel diagramma e quindi scegliere **Rimuovi da diagramma**.
 
-  \- oppure -
+  \- - oppure -
 
 - Fare clic sull'elemento nel diagramma e quindi premere il tasto **Canc** .
 
@@ -307,7 +307,7 @@ ms.locfileid: "74295522"
 
      La relazione viene eliminata dal modello e da ogni diagramma in cui viene visualizzata.
 
-## <a name="presentation"></a>Preparazione di un diagramma per la presentazione
+## <a name="preparing-a-diagram-for-presentation"></a><a name="presentation"></a> Preparazione di un diagramma per la presentazione
  La seguenti funzionalità consentono di mettere in evidenza determinate parti del diagramma, aggiungere spiegazioni o dividere un diagramma in aree di interesse diverse.
 
 - È possibile copiare qualsiasi parte di un diagramma in Word, in PowerPoint o in un altro documento. Selezionare le forme e i connettori desiderati, fare clic con il pulsante destro del mouse e quindi scegliere **copia**.
@@ -323,7 +323,7 @@ ms.locfileid: "74295522"
 ### <a name="to-export-a-diagram-as-an-image"></a>Per esportare un diagramma come immagine
  Per altre informazioni, vedere [esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md).
 
-## <a name="extensions"></a>Estensione delle finestre di progettazione UML
+## <a name="extending-the-uml-designers"></a><a name="extensions"></a> Estensione delle finestre di progettazione UML
  È possibile aggiungere nuove funzionalità agli strumenti UML e adattare la notazione dei diagrammi alle proprie esigenze. Per altre informazioni, vedere [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md).
 
 ## <a name="see-also"></a>Vedere anche

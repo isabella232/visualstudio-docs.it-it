@@ -1,5 +1,5 @@
 ---
-title: m_stateFlags campo Documenti Microsoft
+title: Campo m_stateFlags | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738386"
 ---
-# <a name="m_stateflags-field"></a>m_stateFlags campo
-Archivia le informazioni sullo <xref:System.Threading.Tasks.Task> stato corrente dell'oggetto.
+# <a name="m_stateflags-field"></a>campo m_stateFlags
+Archivia informazioni sullo stato corrente dell' <xref:System.Threading.Tasks.Task> oggetto.
 
- **Spazio dei nomi:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Spazio dei nomi:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
  **Assembly:** mscorlib (in *mscorlib.dll*)
 
- Poiché non è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente è disponibile in Common Intermediate Language (CIL).
+ Poiché non è possibile accedere a questo membro interno dalla .NET Framework, nella Common Intermediate Language (CIL) viene fornita la sintassi seguente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,9 +33,9 @@ Archivia le informazioni sullo <xref:System.Threading.Tasks.Task> stato corrente
 ```
 
 ## <a name="remarks"></a>Osservazioni
- In genere <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> si utilizza la proprietà per accedere a questo valore.
+ In genere si usa la <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> proprietà per accedere a questo valore.
 
- Questo membro può essere qualsiasi combinazione dei seguenti valori:
+ Questo membro può essere costituito da qualsiasi combinazione dei valori seguenti:
 
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 

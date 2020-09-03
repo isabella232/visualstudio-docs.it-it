@@ -1,5 +1,5 @@
 ---
-title: La registrazione di Project and Item Templates | Microsoft Docs
+title: Registrazione di modelli di progetti e di elementi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,21 +15,21 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185831"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrazione di modelli di progetto e di elementi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Tipi di progetto devono registrare le directory in cui si trovano i relativi modelli di progetto ed elemento di progetto. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Usa le informazioni di registrazione associate ai tipi di progetto per determinare gli elementi da visualizzare nel **Aggiungi nuovo progetto** e **Aggiungi nuovo elemento** finestre di dialogo.  
+I tipi di progetto devono registrare le directory in cui si trovano i modelli di progetto e di elemento di progetto. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Usa le informazioni di registrazione associate ai tipi di progetto per determinare gli elementi da visualizzare nelle finestre di dialogo **Aggiungi nuovo progetto** e **Aggiungi nuovo elemento** .  
   
- Per altre informazioni sui modelli, vedere [aggiunta di progetto e modelli di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+ Per ulteriori informazioni sui modelli, vedere [aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
-## <a name="registry-entries-for-projects"></a>Voci del Registro di sistema per i progetti  
- Gli esempi seguenti illustrano le voci del Registro di sistema nella HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versione*>. Le tabelle di accompagnamento illustrano gli elementi utilizzati negli esempi.  
+## <a name="registry-entries-for-projects"></a>Voci del registro di sistema per i progetti  
+ Gli esempi seguenti illustrano le voci del registro di sistema in HKEY_LOCAL_MACHINE versione di \Software\Microsoft\VisualStudio \\ < *Version*>. Le tabelle associate spiegano gli elementi utilizzati negli esempi.  
   
 ```  
 [Projects\{ProjectGUID}]  
@@ -39,14 +39,14 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|Nome|Type|Descrizione|  
+|Nome|Tipo|Descrizione|  
 |----------|----------|-----------------|  
-|@|REG_SZ|Nome predefinito di progetti di questo tipo.|  
-|DisplayName|REG_SZ|ID risorsa del nome da recuperare dalla DLL satellite registrato in pacchetti.|  
-|Pacchetto|REG_SZ|ID classe del pacchetto di registrazione in pacchetti.|  
-|ProjectTemplatesDir|REG_SZ|Percorso predefinito dei file di modello di progetto. I file di modello di progetto vengono visualizzati per il **nuovo progetto** modello.|  
+|@|REG_SZ|Nome predefinito dei progetti di questo tipo.|  
+|DisplayName|REG_SZ|ID risorsa del nome da recuperare dalla DLL satellite registrata nei pacchetti.|  
+|Pacchetto|REG_SZ|ID classe del pacchetto registrato in pacchetti.|  
+|ProjectTemplatesDir|REG_SZ|Percorso predefinito dei file del modello di progetto. I file del modello di progetto vengono visualizzati dal nuovo modello di **progetto** .|  
   
-### <a name="registering-item-templates"></a>La registrazione di modelli di elemento  
+### <a name="registering-item-templates"></a>Registrazione di modelli di elemento  
  È necessario registrare la directory in cui vengono archiviati i modelli di elemento.  
   
 ```  
@@ -57,21 +57,21 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "SortPriority"=dword:00000064  
 ```  
   
-|Nome|Type|Descrizione|  
+|Nome|Tipo|Descrizione|  
 |----------|----------|-----------------|  
-|@|REG_SZ|ID risorsa per i modelli di elemento aggiunta.|  
-|TemplatesDir|REG_SZ|Percorso degli elementi di progetto visualizzato nella finestra di dialogo per la **Aggiungi nuovo elemento** procedura guidata.|  
-|TemplatesLocalizedSubDir|REG_SZ|ID risorsa della stringa che denomina la sottodirectory della TemplatesDir che contiene i modelli localizzati. Poiché [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carica la risorsa stringa dalla DLL satellite nelle varie se disponibili, ogni DLL satellite può contenere un nome di sottodirectory localizzate diverse.|  
-|SortPriority|REG_DWORD|Impostare SortPriority per regolare l'ordine in cui i modelli vengono visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo. I valori maggiori SortPriority vengono visualizzati in precedenza nell'elenco dei modelli.|  
+|@|REG_SZ|ID risorsa per i modelli Aggiungi elemento.|  
+|TemplatesDir|REG_SZ|Percorso degli elementi del progetto visualizzati nella finestra di dialogo per la procedura guidata **Aggiungi nuovo elemento** .|  
+|TemplatesLocalizedSubDir|REG_SZ|ID risorsa di una stringa che denomina la sottodirectory di TemplatesDir che include i modelli localizzati. Poiché [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carica la risorsa di stringa da dll satellite, se sono presenti, ogni DLL satellite può contenere un nome di sottodirectory localizzato diverso.|  
+|SortPriority|REG_DWORD|Impostare SortPriority per regolare l'ordine di visualizzazione dei modelli nella finestra di dialogo **Aggiungi nuovo elemento** . I valori SortPriority più grandi vengono visualizzati in precedenza nell'elenco dei modelli.|  
   
-### <a name="registering-file-filters"></a>La registrazione di filtri file  
- Facoltativamente, è possibile registrare i filtri che [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilizza quando richiesto, specificare i nomi file. Ad esempio, il [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Filtra per il **Apri File** è la finestra di dialogo:  
+### <a name="registering-file-filters"></a>Registrazione dei filtri di file  
+ Facoltativamente, è possibile registrare i filtri [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilizzati da quando viene richiesto di specificare i nomi dei file. Ad esempio, il [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtro per la finestra di dialogo **Apri file** è:  
   
- **File Visual c# (\*cs,\*resx,\*Settings,\*XSD,\*WSDL);\*. cs,\*, RESX\*Settings,\*XSD,\*. WSDL)**  
+ **File di Visual C# ( \* . cs, \* . resx, \* . Settings, \* . xsd, \* . WSDL); \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL)**  
   
- Per supportare la registrazione di più filtri, ogni filtro è registrato nella propria sottochiave in HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versione*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*sottochiave*>. Il nome della sottochiave è arbitrario. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignora il nome della sottochiave e utilizza solo i relativi valori.  
+ Per supportare la registrazione di più filtri, ogni filtro viene registrato nella relativa sottochiave in HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ < *versione*> \projects \\ { \<*ProjectGUID*> } \Filters \\ < *sottochiave*>. Il nome della sottochiave è arbitrario; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Ignora il nome della sottochiave e usa solo i relativi valori.  
   
- È possibile controllare i contesti in cui viene utilizzato un filtro impostando flag, illustrato nella tabella seguente. Se un filtro non ha nessun flag impostato, verrà elencata dopo i filtri nelle attività comuni la **Aggiungi elemento esistente** finestra di dialogo e il **Apri File** la finestra di dialogo, ma non verrà utilizzato nel **Cerca nei file**  nella finestra di dialogo.  
+ È possibile controllare i contesti in cui viene utilizzato un filtro impostando i flag, illustrati nella tabella seguente. Se per un filtro non è impostato alcun flag, questo verrà elencato dopo i filtri comuni nella finestra di dialogo **Aggiungi elemento esistente** e nella finestra di dialogo **Apri file** , ma non verrà utilizzato nella finestra di dialogo **Cerca nei file** .  
   
 ```  
 [Projects\{ProjectGUID}\Filters\MyLanguageFilter]  
@@ -84,23 +84,23 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "SortPriority"=dword:00000064  
 ```  
   
-|Nome|Type|Descrizione|  
+|Nome|Tipo|Descrizione|  
 |----------|----------|-----------------|  
-|CommonFindFilesFilter|REG_DWORD|Rende il filtro per uno dei filtri comuni nella **Cerca nei file** nella finestra di dialogo. Filtri comuni sono elencati nell'elenco di filtri prima i filtri non è contrassegnato come comuni.|  
-|CommonOpenFilesFilter|REG_DWORD|Rende il filtro per uno dei filtri comuni nella **Apri File** nella finestra di dialogo. Filtri comuni sono elencati nell'elenco di filtri prima i filtri non è contrassegnato come comuni.|  
-|FindInFilesFilter|REG_DWORD|Elenca il filtro dopo i filtri nelle attività comuni di **Cerca nei file** nella finestra di dialogo.|  
-|NotOpenFileFilter|REG_DWORD|Indica che il filtro non viene utilizzato nel **Apri File** nella finestra di dialogo.|  
-|NotAddExistingItemFilter|REG_DWORD|Indica che il filtro non viene utilizzato nel **Aggiungi elemento esistente** nella finestra di dialogo.|  
-|SortPriority|REG_DWORD|Impostare SortPriority per regolare l'ordine in cui vengono visualizzati i filtri. I valori maggiori SortPriority vengono visualizzati in precedenza nell'elenco di filtri.|  
+|CommonFindFilesFilter|REG_DWORD|Consente di filtrare uno dei filtri comuni nella finestra di dialogo **Cerca nei file** . I filtri comuni sono elencati nell'elenco di filtri prima che i filtri non siano contrassegnati come comuni.|  
+|CommonOpenFilesFilter|REG_DWORD|Consente di filtrare uno dei filtri comuni nella finestra di dialogo **Apri file** . I filtri comuni sono elencati nell'elenco di filtri prima che i filtri non siano contrassegnati come comuni.|  
+|FindInFilesFilter|REG_DWORD|Elenca il filtro dopo i filtri comuni nella finestra di dialogo **Cerca nei file** .|  
+|NotOpenFileFilter|REG_DWORD|Indica che il filtro non viene utilizzato nella finestra di dialogo **Apri file** .|  
+|NotAddExistingItemFilter|REG_DWORD|Indica che il filtro non viene utilizzato nella finestra di dialogo **Aggiungi elemento esistente** .|  
+|SortPriority|REG_DWORD|Impostare SortPriority per regolare l'ordine di visualizzazione dei filtri. I valori SortPriority più grandi vengono visualizzati in precedenza nell'elenco dei filtri.|  
   
 ## <a name="directory-structure"></a>Struttura di directory  
- Pacchetti VSPackage possono inserire le cartelle e file di modello in qualsiasi punto su un disco locale o remoto, purché la posizione è registrata tramite l'ambiente di sviluppo integrato (IDE). Tuttavia, per facilitare l'organizzazione, è consigliabile la seguente struttura di directory nel percorso di installazione del prodotto.  
+ I pacchetti VSPackage possono inserire i file di modello e le cartelle ovunque in un disco locale o remoto, purché il percorso venga registrato tramite il Integrated Development Environment (IDE). Tuttavia, per semplificare l'organizzazione, è consigliabile usare la seguente struttura di directory nel percorso di installazione del prodotto.  
   
- \Templates  
+ \Modelli  
   
  \Projects (contiene i modelli di progetto)  
   
- \Applications  
+ \Registri applicazioni  
   
  \Components  
   
@@ -108,18 +108,18 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
   
  \ProjectItems (contiene gli elementi del progetto)  
   
- \CLASSE  
+ \Class  
   
  \Form  
   
- \Web pagina  
+ Pagina \Web  
   
- \HelperFiles (contiene i file usati negli elementi di progetto a più file)  
+ \HelperFiles (contiene i file usati negli elementi del progetto con più file)  
   
  \WizardFiles  
   
 ## <a name="see-also"></a>Vedere anche  
- [Aggiunta di progetto e modelli di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+ [Aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Procedure guidate](../../extensibility/internals/wizards.md)   
- [Applicazioni localizzate](../../ide/localizing-applications.md)   
+ [Localizzazione di applicazioni](../../ide/localizing-applications.md)   
  [CATID per gli oggetti che vengono in genere usati per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

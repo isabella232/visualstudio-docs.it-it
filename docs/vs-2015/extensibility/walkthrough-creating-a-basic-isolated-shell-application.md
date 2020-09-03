@@ -13,13 +13,13 @@ caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850342"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procedura dettagliata: creazione di un'applicazione shell isolata di base
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procedura dettagliata: Creazione di un'applicazione shell isolata di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa procedura dettagliata viene illustrato come creare una soluzione Shell isolata, personalizzare la finestra degli strumenti e creare un programma di installazione che consente di installare la shell isolata.  
@@ -44,7 +44,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 2. Nella finestra **nuovo progetto** espandere **altri tipi di progetto** , quindi **estendibilità**. Selezionare il modello di progetto **Visual Studio Shell isolated** .  
   
-3. Denominare il progetto `MyVSShellStub` e specificare un percorso. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, quindi fare clic su **OK**.  
+3. Assegnare un nome al progetto `MyVSShellStub` e specificare un percorso. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, quindi fare clic su **OK**.  
   
      La nuova soluzione verrà visualizzata in **Esplora soluzioni**.  
   
@@ -59,7 +59,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 1. Nel progetto MyVSShellStub aprire \Shell contiene Customization\MyVSShellStub.Application.pkgdef.  
   
-2. Modificare il valore dell'elemento `AppName` in **"appname" = "Fabrikam Music Editor"**  
+2. Modificare il `AppName` valore dell'elemento in **"appname" = "Fabrikam Music Editor"**  
   
 3. Per modificare l'icona dell'applicazione, copiare un'icona diversa nella directory \MyVSShellStub\MyVSShellStub\MyVSShellStub\ Rinominare il file ApplicationIcon. ico esistente in ApplicationIcon1. ico. Rinominare il nuovo file in ApplicationIcon. ico.  
   
@@ -70,7 +70,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Per personalizzare il Web browser predefinito home page  
   
-1. Nel file MyVSShellStub. Application. pkgdef modificare il valore dell'elemento `DefaultHomePage` in "<https://www.microsoft.com>".  
+1. Nel file MyVSShellStub. Application. pkgdef modificare il valore dell' `DefaultHomePage` elemento in " <https://www.microsoft.com> ".  
   
 2. Ricompilare il progetto MyVSShellStub.  
   
@@ -79,7 +79,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
 4. In **Visualizza/altre finestre**fare clic su **Web browser**. Nella finestra del **Web browser** viene visualizzata la Home page Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Rimozione del comando Print  
- Il file con estensione vsct in un progetto dell'interfaccia utente della shell isolata è costituito da un set di dichiarazioni nel formato `<Define name=No_`*elemento*`>`, dove *elemento* è uno dei menu e dei comandi standard di Visual Studio.  
+ Il file con estensione vsct in un progetto di interfaccia utente della shell isolata è costituito da un set di dichiarazioni dell' `<Define name=No_` *elemento*form `>` , dove *element* è uno dei menu e dei comandi standard di Visual Studio.  
   
  Se una dichiarazione viene annullata come commento, tale menu o comando viene escluso dalla shell isolata. Viceversa, se una dichiarazione è impostata come commento, il menu o il comando viene incluso nella shell isolata.  
   
@@ -115,7 +115,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 2. Rimuovere il commento dalla riga seguente:  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \Packages \\ {87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Ricompilare la soluzione e avviare il debug della shell isolata. Aprire un file XML, ad esempio \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verificare che le parole chiave XML nel file non siano colorate e che digitando "<" in una riga non vengano visualizzate le descrizioni comandi XML.  
   
@@ -126,7 +126,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 1. Il nome della società, le informazioni sul copyright, la versione del prodotto e la descrizione del prodotto si trovano nel progetto MyVSShellStub. AboutBoxPackage nel file \Properties\AssemblyInfo.cs. Aprire il file.  
   
-2. Modificare il valore di `AssemblyCompany` in **Fabrikam**, i valori `AssemblyProduct` e `AssemblyTitle` in **Fabrikam Music Editor**e il valore di `AssemblyCopyright` su **Copyright © Fabrikam 2015**:  
+2. Modificare il `AssemblyCompany` valore in **Fabrikam**, i `AssemblyProduct` `AssemblyTitle` valori e in **Fabrikam Music Editor**e il `AssemblyCopyright` valore su **Copyright © Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. Per aggiungere una descrizione del prodotto, modificare il valore di `AssemblyDescription` con **la descrizione di Fabrikam Music Editor.** :  
+3. Per aggiungere una descrizione del prodotto, modificare il `AssemblyDescription` valore con **la descrizione di Fabrikam Music Editor.**:  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4. Avviare il debug e nell'applicazione shell isolata aprire la casella **Guida/informazioni** . Verranno visualizzate le stringhe modificate. Il titolo della casella Guida/informazioni è uguale al valore di `AssemblyTitle` in AssemblyInfo.cs.  
+4. Avviare il debug e nell'applicazione shell isolata aprire la casella **Guida/informazioni** . Verranno visualizzate le stringhe modificate. Il titolo della casella Guida/informazioni è uguale al `AssemblyTitle` valore di AssemblyInfo.cs.  
   
-5. Le proprietà della casella **Guida/informazioni** si trovano nel file MyVSShellStub. AboutBoxPackage\AboutBox.XAML. Per modificare la larghezza della casella Guida/informazioni, passare al blocco `AboutDialogStyle` e impostare la proprietà `Width` su 200:  
+5. Le proprietà della casella **Guida/informazioni** si trovano nel file MyVSShellStub. AboutBoxPackage\AboutBox.XAML. Per modificare la larghezza della casella Guida/informazioni, passare al `AboutDialogStyle` blocco e impostare la `Width` proprietà su 200:  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -178,7 +178,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione, quindi scegliere **Aggiungi nuovo progetto**.  
   
-2. Nella finestra di dialogo **nuovo progetto** espandere **altri tipi di progetto** , quindi selezionare **installazione e distribuzione**. Selezionare il modello InstallShield. Denominare il nuovo progetto `MySetup` e quindi fare clic su **OK**.  
+2. Nella finestra di dialogo **nuovo progetto** espandere **altri tipi di progetto** , quindi selezionare **installazione e distribuzione**. Selezionare il modello InstallShield. Assegnare un nome al nuovo progetto `MySetup` e quindi fare clic su **OK**.  
   
 3. Se InstallShield Limited Edition è già installato, continuare con il passaggio successivo.  
   
@@ -206,15 +206,15 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
     2. DebuggerProxy.dll  
   
-    3. DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll. manifest  
   
-    4. MyVSShellStub.pkgdef  
+    4. MyVSShellStub. pkgdef  
   
-    5. MyVSShellStub.pkgundef  
+    5. MyVSShellStub. pkgundef  
   
     6. MyVSShellStub.winprf  
   
-    7. Splash. bmp  
+    7. Splash.bmp  
   
 5. Fare clic sul pulsante **Aggiungi output progetto** e aggiungere **MyVSShellStub/output primario**. Fare clic su **OK**.  
   
@@ -226,9 +226,9 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 9. Fare clic sul pulsante **Aggiungi file** e dalla cartella \MyVSShellStub\Release\Extensions\Application\ aggiungere i file seguenti:  
   
-    - MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub. AboutBoxPackage. pkgdef  
   
-    - MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub. Application. pkgdef  
   
 10. Fare clic con il pulsante destro del mouse sul nodo di **Fabrikam Music Editor [INSTALLDIR]** nel riquadro sinistro e aggiungere una nuova cartella denominata **1033**.  
   
@@ -248,15 +248,15 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 18. Nel riquadro **che si desidera trovare?** scegliere **voce del registro di sistema** nell'elenco a discesa e fare clic su **Avanti**.  
   
-19. Nel riquadro **come si desidera cercarlo** selezionare **HKEY_LOCAL_MACHINE** come radice del registro di sistema. Immettere **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** per i sistemi a 64 bit o **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** per i sistemi a 32 bit, quindi immettere **Install** come valore del registro di sistema. Scegliere **Avanti**.  
+19. Nel riquadro **come si desidera cercarlo** selezionare **HKEY_LOCAL_MACHINE** come radice del registro di sistema. Immettere **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** per i sistemi a 64 bit o **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** per i sistemi a 32 bit, quindi immettere **Install** come valore del registro di sistema. Fare clic su **Avanti**.  
   
 20. Nel riquadro **che cosa si vuole fare con il valore?** immettere **questo prodotto richiede l'installazione di Visual Studio 2015 isolated shell Redistributable.** come testo visualizzato e fare clic su **fine**.  
   
 21. Ricompilare la soluzione Shell isolata per creare il progetto di installazione.  
   
-     È possibile trovare il file Setup. exe nella cartella seguente:  
+     È possibile trovare il file di setup.exe nella cartella seguente:  
   
      \MyVSShellStub\MySetup\MySetup\Express\SingleImage\DiskImages\DISK1  
   
 ## <a name="testing-the-installation-program"></a>Test del programma di installazione  
- Per testare l'installazione, copiare il file Setup. exe in un computer diverso ed eseguire il file eseguibile di installazione. Dovrebbe essere possibile eseguire l'applicazione shell isolata.
+ Per testare il programma di installazione, copiare il file di setup.exe in un computer diverso ed eseguire il file eseguibile di installazione. Dovrebbe essere possibile eseguire l'applicazione shell isolata.

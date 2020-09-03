@@ -12,18 +12,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184331"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'elemento CommandPlacement Abilita i pulsanti, gruppi e i menu da includere in più di un gruppo o un menu. Usando l'elemento CommandPlacement, non è completamente ridefinire tali elementi per modificare l'aspetto di un'interfaccia utente.  
+L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in più di un gruppo o menu. Utilizzando l'elemento CommandPlacement, non è necessario ridefinire completamente questi elementi per modificare l'aspetto di un'interfaccia utente.  
   
- Per altre informazioni, vedere [creazione di gruppi riutilizzabili di pulsanti](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Per ulteriori informazioni, vedere [creazione di gruppi riutilizzabili di pulsanti](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,18 +38,18 @@ L'elemento CommandPlacement Abilita i pulsanti, gruppi e i menu da includere in 
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|DESCRIZIONE|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
-|GUID|Richiesto. Il guid del set di comandi, come definito nel [elemento Symbols](../extensibility/symbols-element.md).|  
-|id|Richiesto. L'id del menu, gruppo o comando per essere inserito, come definito nel `Symbols Element`.|  
-|priorità|Richiesto. Determina la posizione dell'elemento visual nel relativo elemento padre.|  
-|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Obbligatorio. GUID del set di comandi, come definito nell' [elemento symbols](../extensibility/symbols-element.md).|  
+|id|Obbligatorio. ID del menu, del gruppo o del comando da inserire, come definito in `Symbols Element` .|  
+|priority|Obbligatorio. Determina la posizione visiva dell'elemento nel relativo elemento padre.|  
+|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|Padre|Richiesto. Il menu o un gruppo che ospita l'elemento da inserire.|  
+|Parent|Obbligatorio. Menu o gruppo che ospita l'elemento da inserire.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
@@ -70,4 +70,4 @@ L'elemento CommandPlacement Abilita i pulsanti, gruppi e i menu da includere in 
   
 ## <a name="see-also"></a>Vedere anche  
  [Elemento CommandPlacements](../extensibility/commandplacements-element.md)   
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

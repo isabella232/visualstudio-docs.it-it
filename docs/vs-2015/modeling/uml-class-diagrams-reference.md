@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06e83e254cad77d4ede9716a18a51f6476fb51ad
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850173"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagrammi classi UML: riferimento
@@ -56,34 +56,34 @@ Un diagramma classi UML descrive le strutture di oggetti e informazioni usate da
 
   ![Tre classi che mostrano relazioni e proprietà](../modeling/media/uml-classovreading.png "UML_ClassOvReading")
 
-| **Forma** |       **Elemento**        |                                                                                                                                                             **Descrizione**                                                                                                                                                              |
+| **Con forme** |       **elemento**        |                                                                                                                                                             **Descrizione**                                                                                                                                                              |
 |-----------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     1     |        **Classe**         |                                                           Una definizione di oggetti che condividono caratteristiche strutturali o comportamentali specifiche. Per altre informazioni, vedere [proprietà dei tipi nei diagrammi classi UML](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
 |     1     |        Classificatore        |                                                                                                             Il nome generale per una classe, interfaccia o enumerazione. Sono classificatori anche componenti, casi di utilizzo e attori.                                                                                                             |
 |     2     | Controllo di compressione/espansione |                                                                                         Se non è possibile visualizzare i dettagli di un classificatore, fare clic sul'espansore nella parte superiore sinistra del classificatore. Potrebbe anche essere necessario fare clic su [+] in ogni segmento.                                                                                         |
-|     3\.     |      **Attributo**       |   Un valore tipizzato associato a ogni istanza di un classificatore.<br /><br /> Per aggiungere un attributo, fare clic sulla sezione **attributi** , quindi premere **invio**. Digitare la firma dell'attributo. Per altre informazioni, vedere [proprietà degli attributi nei diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
+|     3     |      **Attributo**       |   Un valore tipizzato associato a ogni istanza di un classificatore.<br /><br /> Per aggiungere un attributo, fare clic sulla sezione **attributi** , quindi premere **invio**. Digitare la firma dell'attributo. Per altre informazioni, vedere [proprietà degli attributi nei diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
 |     4     |      **Operazione**       | Un metodo o funzione che può essere eseguito da istanze di un classificatore. Per aggiungere un'operazione, fare clic sulla sezione **operazioni** e quindi premere **invio**. Digitare la firma dell'operazione. Per altre informazioni, vedere [proprietà delle operazioni sui diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
 |     5     |     **Associazione**      |                                                                  Una relazione tra i membri di due classificatori. Per altre informazioni, vedere [proprietà delle associazioni nei diagrammi classi UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
 |    5a     |     **Aggregazione**      |                                                                                                    Un'associazione che rappresenta una relazione proprietà condivisa. La proprietà **aggregazione** del ruolo proprietario è impostata su **condiviso**.                                                                                                     |
 |    5b     |     **Composizione**      |                                                                                                      Un'associazione che rappresenta una relazione di parte intera. La proprietà **aggregazione** del ruolo proprietario è impostata su **composito**.                                                                                                      |
 |     6     |   **Nome associazione**   |                                                                                                                                         Il nome di un'associazione. Il nome può essere lasciato vuoto.                                                                                                                                          |
 |     7     |      **Nome ruolo**       |                       Il nome di un ruolo, ovvero un'estremità di un'associazione. Può essere usato per fare riferimento all'oggetto associato. Nella figura precedente per ogni ordine `O`, `O.ChosenMenu` è il menu associato.<br /><br /> Ogni ruolo dispone di proprietà personalizzate, elencate sotto le proprietà dell'associazione.                       |
-|     8     |     **Molteplicità**     |                                         Indica il numero di oggetti a questa estremità che può essere collegato a ogni oggetto all'altra estremità. Nell'esempio ogni ordine deve essere collegato a un solo menu.<br /><br /> **\\** \* significa che non esiste alcun limite massimo per il numero di collegamenti che è possibile effettuare.                                         |
+|     8     |     **Molteplicità**     |                                         Indica il numero di oggetti a questa estremità che può essere collegato a ogni oggetto all'altra estremità. Nell'esempio ogni ordine deve essere collegato a un solo menu.<br /><br /> **\\**\* indica che non esiste alcun limite massimo per il numero di collegamenti che è possibile effettuare.                                         |
 |     9     |    **Generalizzazione**    |  Il classificatore *specifico* eredita parte della definizione dal classificatore *generale* . Il classificatore generale si trova all'estremità della freccia del connettore. Attributi, associazioni e operazioni vengono ereditati dal classificatore specifico.<br /><br /> Usare lo strumento **ereditarietà** per creare una generalizzazione tra due classificatori.   |
 
- ![Pacchetto contenente l'interfaccia e l'enumerazione](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")
+ ![Pacchetto che contiene l'interfaccia e l'enumerazione](../modeling/media/uml-classovpackage.png "UML_ClassOvPackage")
 
-|Forma|Elemento|Descrizione|
+|Con forme|Elemento|Descrizione|
 |-----------|-------------|-----------------|
-|10|**Interface**|Una definizione di parte del comportamento visibile esternamente di un oggetto. Per altre informazioni, vedere [proprietà dei tipi nei diagrammi classi UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|
+|10|**Interfaccia**|Una definizione di parte del comportamento visibile esternamente di un oggetto. Per altre informazioni, vedere [proprietà dei tipi nei diagrammi classi UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|
 |11|**Enumerazione**|Un classificatore costituito da un set di valori letterali.|
 |12|**Pacchetto**|Un gruppo di classificatori, associazioni, azioni, linee di vita, componenti e pacchetti. Un diagramma classi logico mostra che i classificatori e i pacchetti del membro sono contenuti all'interno del pacchetto.<br /><br /> I nomi hanno come ambito i pacchetti in modo che **Class1** all'interno di **package1** sia diverso da **Class1** all'esterno del pacchetto. Il nome del pacchetto viene visualizzato come parte delle proprietà del **nome completo** del relativo contenuto.<br /><br /> È possibile impostare la proprietà del **pacchetto collegato** di qualsiasi diagramma UML in modo che faccia riferimento a un pacchetto. Tutti gli elementi creati nel diagramma diventeranno quindi parte del pacchetto Verranno visualizzati sotto il pacchetto in **Esplora modelli UML**.|
-|13|**Import**|Una relazione tra pacchetti, con cui viene indicato che un pacchetto include tutte le definizioni di un altro pacchetto.|
+|13|**Importa**|Una relazione tra pacchetti, con cui viene indicato che un pacchetto include tutte le definizioni di un altro pacchetto.|
 |14|**Dipendenza**|La definizione o l'implementazione del classificatore dipendente potrebbe cambiare se viene modificato il classificatore all'estremità della freccia.|
 
- ![Realizzazione mostrata con connettore e Lollipop](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")
+ ![Realizzazione con connettore e simbolo](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")
 
-|Forma|**Elemento**|Descrizione|
+|Con forme|**elemento**|Descrizione|
 |-----------|-----------------|-----------------|
 |15|**Realizzazione**|La classe implementa le operazioni e gli attributi definiti dall'interfaccia.<br /><br /> Usare lo strumento **ereditarietà** per creare una realizzazione tra una classe e un'interfaccia.|
 |16|**Realizzazione**|Una presentazione alternativa della stessa relazione. L'etichetta sul simbolo identifica l'interfaccia.<br /><br /> Per creare questa presentazione, selezionare una relazione realizzazione esistente. Fare clic sul tag azioni accanto all'associazione. Fare clic sul tag Action, quindi fare clic su **show As Lollipop**.|

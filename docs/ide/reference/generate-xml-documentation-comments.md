@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77706394"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Procedura: Inserire commenti XML per la generazione di documentazione
@@ -36,9 +36,9 @@ Il file XML generato dal compilatore può essere distribuito insieme agli assemb
 
    - Dal menu **Modifica** scegliere **IntelliSense** > **Inserisci commento**
 
-   - Dal menu di scelta rapida o dal menu di scelta rapida sopra o appena sopra l'elemento di codice, scegli**Commento inserimento** **frammento** > 
+   - Dal menu di scelta rapida o dal menu di scelta rapida o immediatamente sopra l'elemento di codice, scegliere **frammento**  >  **Inserisci commento**
 
-   Il modello XML viene generato subito sopra l'elemento di codice. Ad esempio, quando si commenta un metodo, viene generato l'elemento ** \<di riepilogo,\> ** un ** \<\> ** elemento param per ogni parametro e un ** \<\> ** elemento returns per documentare il valore restituito.
+   Il modello XML viene generato subito sopra l'elemento di codice. Ad esempio, quando si commenta un metodo, viene generato l' **\<summary\>** elemento, un **\<param\>** elemento per ogni parametro e un **\<returns\>** elemento per documentare il valore restituito.
 
    ![Modello di commento XML - C#](media/doc-preview-cs.png)
 
@@ -48,18 +48,18 @@ Il file XML generato dal compilatore può essere distribuito insieme agli assemb
 
    ![Commento completato](media/doc-result-cs.png)
 
-È possibile utilizzare gli stili nei commenti XML che verranno visualizzati in Informazioni rapide al passaggio del mouse sull'elemento. Questi stili includono: corsivo, grassetto, punti elenco e un collegamento selezionabile.
+È possibile usare gli stili nei commenti XML che eseguiranno il rendering in informazioni rapide quando si passa il mouse sull'elemento. Questi stili includono: corsivo, grassetto, elenchi puntati e un collegamento selezionabile.
 
    ![Commento completato](media/doc-style-cs.png) 
 
 > [!NOTE]
-> È disponibile un'[opzione](../../ide/reference/options-text-editor-csharp-advanced.md) per attivare/disattivare i commenti in formato documentazione XML dopo aver digitato `///` in C# o `'''` in Visual Basic. Dalla barra dei menu, scegliere**Opzioni** **degli strumenti** > per aprire la finestra di dialogo **Opzioni.** Quindi, passare a **Editor** > di testo**in C** , o**Avanzate** **di base** > . Nella sezione **Guida editor** cercare l'opzione **Genera commenti relativi alla documentazione XML**.
+> È disponibile un'[opzione](../../ide/reference/options-text-editor-csharp-advanced.md) per attivare/disattivare i commenti in formato documentazione XML dopo aver digitato `///` in C# o `'''` in Visual Basic. Dalla barra dei menu scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** . Passare quindi a **editor di testo**  >  **C#** o **Basic**  >  **Advanced**. Nella sezione **Guida editor** cercare l'opzione **Genera commenti relativi alla documentazione XML**.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Commenti relativi alla documentazione XML (Guida per programmatori C](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [Commenti in formato documentazione XML (Guida per programmatori C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentazione del codice con i commenti XML (Guida per C#)](/dotnet/csharp/codedoc)
 - [Procedura: Creare documentazione XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Commenti di C](/cpp/cpp/comments-cpp)
+- [Commenti C++](/cpp/cpp/comments-cpp)
 - [Documentazione XML (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
-- [Generazione del codice](../code-generation-in-visual-studio.md)
+- [Generazione codice](../code-generation-in-visual-studio.md)

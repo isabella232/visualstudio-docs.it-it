@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654867"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le regole minime miste Microsoft si concentrano sui problemi più C++ critici nei progetti che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali dell'applicazione. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per C++ i progetti che supportano Common Language Runtime.
+Le regole minime miste Microsoft si concentrano sui problemi più critici nei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali dell'applicazione. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per i progetti C++ che supportano Common Language Runtime.
 
 |                                            Regola                                             |                                                  Descrizione                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

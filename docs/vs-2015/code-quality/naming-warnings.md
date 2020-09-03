@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 03bc20d4bf39aa31865007e46e7ad3615f4b95bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655963"
 ---
 # <a name="naming-warnings"></a>avvisi di denominazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gli avvisi di denominazione supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+Gli avvisi di denominazione supportano la conformità alle convenzioni di denominazione delle [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] linee guida di progettazione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

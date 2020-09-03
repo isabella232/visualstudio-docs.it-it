@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Impossibile copiare &#39;il&#39; file delle &#39;dipendenze nel progetto&#39; di progetto nella directory di esecuzione perché si verificherebbe &#39;un&#39; conflitto con il file delle dipendenze | Microsoft Docs'
+title: 'Errore: non è possibile copiare il file di &#39;di dipendenza&#39; in Project &#39;Project&#39; nella directory di esecuzione perché potrebbe essere in conflitto con il file &#39;di dipendenza&#39; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5d4fd45741585aaf82c82257999b40d6257e82d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656039"
 ---
-# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Errore: Impossibile copiare &#39;il&#39; file delle &#39;dipendenze nel progetto&#39; di progetto nella directory di esecuzione perché si verificherebbe &#39;un conflitto con il file delle dipendenze&#39;
+# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Errore: non è possibile copiare il file di &#39;di dipendenza&#39; in Project &#39;Project&#39; nella directory di esecuzione perché potrebbe essere in conflitto con il file &#39;di dipendenza&#39;
 Esiste un conflitto tra i riferimenti. Per eseguire l'applicazione, vengono copiate più dipendenze distinte con lo stesso nome di file nella directory bin. La directory di esecuzione non riesce a risolvere il conflitto perché nessuna delle dipendenze è un riferimento primario.
 
  Questo errore impedirà la riuscita della compilazione.
@@ -29,7 +29,7 @@ Esiste un conflitto tra i riferimenti. Per eseguire l'applicazione, vengono copi
 
 - Fare in modo che uno degli assembly sia un riferimento diretto del progetto. Un possibile svantaggio di questo approccio è che l'assembly scelto non necessariamente funzionerà con gli assembly che richiedono un'altra versione dell'assembly a cui fanno riferimento.
 
-     \- oppure -
+     \- - oppure -
 
 - Assicurarsi che entrambe le copie dell'assembly abbiano un nome sicuro e si trovino nella Global Assembly Cache. Questo elimina la necessità di copiare gli assembly nella directory bin.
 

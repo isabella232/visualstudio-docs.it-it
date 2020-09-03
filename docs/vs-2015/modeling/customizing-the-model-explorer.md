@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce96f2a3df901c1fea0aa4caa97d29c07db5e681
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654949"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizzazione di Esplora modelli
@@ -37,14 +37,14 @@ ms.locfileid: "72654949"
  Per modificare il titolo della finestra di Esplora generato, selezionare **comportamento di Esplora risorse** in **Esplora DSL**, quindi nella finestra **proprietà** impostare la proprietà **title** sul titolo desiderato.
 
 ## <a name="changing-the-tab-icon"></a>Modifica dell'icona della scheda
- Per modificare l'icona della scheda per Esplora risorse, usare un'icona 16x16-pixel in un file con estensione bmp. Inserire il file dell'icona nella cartella \DslPackage\Resources\, quindi modificare il nome del file in **ModelExplorerToolWindowBitmaps. bmp**. È ad esempio possibile modificare il file dell'icona [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Setup. ico nel formato BMP e rinominarlo **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. La finestra di progettazione generata visualizzerà questa icona nella scheda della finestra di esplorazione quando viene ancorata insieme a **Esplora soluzioni**.
+ Per modificare l'icona della scheda per Esplora risorse, usare un'icona 16x16-pixel in un file con estensione bmp. Inserire il file dell'icona nella cartella \DslPackage\Resources\, quindi modificare il nome del file in **ModelExplorerToolWindowBitmaps.bmp**. Ad esempio, è possibile modificare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] file dell'icona Setup. ico in formato BMP e rinominarlo in **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. La finestra di progettazione generata visualizzerà questa icona nella scheda della finestra di esplorazione quando viene ancorata insieme a **Esplora soluzioni**.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>Impostazione delle icone personalizzate nei nodi di esplorazione
  È possibile personalizzare i nodi in Esplora risorse usando le impostazioni del nodo di esplorazione. Nella procedura seguente viene illustrato come aggiungere un'icona a un nodo.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Per aggiungere un'icona a un nodo di esplorazione
 
-1. Creare una soluzione [!INCLUDE[dsl](../includes/dsl-md.md)] usando il modello di soluzione flusso attività.
+1. Creare una [!INCLUDE[dsl](../includes/dsl-md.md)] soluzione usando il modello di soluzione flusso attività.
 
 2. Inserire un file con estensione BMP contenente un'icona 16x16-pixel nella cartella **Dsl\Resources** della soluzione.
 

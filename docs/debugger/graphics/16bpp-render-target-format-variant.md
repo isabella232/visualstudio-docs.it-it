@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
-ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74188583"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Variante del formato di destinazione di rendering a 16 BPP
@@ -36,8 +36,8 @@ Altre strategie per ridurre la larghezza di banda di memoria includono:
 
 Di norma, è necessario valutare i compromessi relativi alla qualità di immagine associati a ognuna di queste ottimizzazioni.
 
-Le applicazioni che fanno parte di una catena di scambio hanno un formato di buffer nascosto (DXGI_FORMAT_B5G6R5_UNORM) che non supporta 16 BPP. Queste catene di scambio vengono create utilizzando `D3D11CreateDeviceAndSwapChain` o `IDXGIFactory::CreateSwapChain`. Per ovviare a questa limitazione, attenersi alla procedura seguente:
-1. Creare una destinazione di rendering del formato B5G6R5_UNORM usando `CreateTexture2D` ed eseguire il rendering su tale destinazione.
+Le applicazioni che fanno parte di una catena di scambio hanno un formato di buffer nascosto (DXGI_FORMAT_B5G6R5_UNORM) che non supporta 16 BPP. Queste catene di scambio vengono create usando `D3D11CreateDeviceAndSwapChain` o `IDXGIFactory::CreateSwapChain` . Per ovviare a questa limitazione, attenersi alla procedura seguente:
+1. Creare una destinazione di rendering del formato B5G6R5_UNORM usando `CreateTexture2D` ed eseguendo il rendering su tale destinazione.
 2. Copiare la destinazione di rendering nel buffer a catena di scambio disegnando un quad a schermo intero con la destinazione di rendering come trama di origine.
 3. Chiamata presente nella catena di scambio.
 
@@ -45,7 +45,7 @@ Le applicazioni che fanno parte di una catena di scambio hanno un formato di buf
 
    Le architetture GPU che usano tecniche di rendering affiancate possono avere vantaggi significativi in merito alle prestazioni usando un formato di buffer di frame a 16 BPP. Questo miglioramento è dovuto al fatto che una parte più ampia del buffer dei frame può adattarsi alla cache del buffer dei frame locale di ogni riquadro. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:
 
 - Il membro BindFlags presenta il flag D3D11_BIND_REDNER_TARGET impostato.
@@ -54,11 +54,11 @@ Le applicazioni che fanno parte di una catena di scambio hanno un formato di buf
 
 - Il membro Usage è impostato su D3D11_USAGE_DEFAULT.
 
-## <a name="restrictions-and-limitations"></a>Limiti e restrizioni
+## <a name="restrictions-and-limitations"></a>Restrizioni e limitazioni
  Poiché il formato B5G6R5 non ha un canale alfa, il contenuto alfa non viene mantenuto da questa variante. Se il rendering dell'app richiede un canale alfa nella destinazione di rendering, non è possibile passare semplicemente al formato B5G6R5.
 
 ## <a name="example"></a>Esempio
- La variante del **formato di destinazione di rendering a 16 BPP** può essere riprodotta per le destinazioni di rendering create usando `CreateTexture2D` usando un codice simile al seguente:
+ La variante del **formato di destinazione di rendering a 16 BPP** può essere riprodotta per le destinazioni di rendering create tramite usando `CreateTexture2D` codice simile al seguente:
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

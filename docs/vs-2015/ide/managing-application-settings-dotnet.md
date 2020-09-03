@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293873"
 ---
 # <a name="managing-application-settings-net"></a>Gestione delle impostazioni di un'applicazione (.NET)
@@ -70,11 +70,11 @@ Quando si crea un'impostazione con ambito di utente, ad esempio il tipo di carat
 
 Ad esempio, è possibile aggiungere un file quale SpecialSettings.settings al progetto. Mentre la classe `SpecialSettings` non è esposta nello spazio dei nomi `My` , **Visualizza codice** può leggere il file di impostazioni personalizzate contenente `Partial Class SpecialSettings`.
 
-Progettazione impostazioni cerca innanzi tutto il file Settings.settings creato dal sistema del progetto, ovvero il file predefinito visualizzato nella scheda **Impostazioni** di Creazione progetti. Settings.settings è situato nella cartella Progetti per i progetti [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e nella cartella Proprietà per i progetti [!INCLUDE[csprcs](../includes/csprcs-md.md)] . Successivamente, Creazione progetti cerca gli altri file di impostazioni nella cartella radice del progetto. Pertanto, è necessario inserirvi il file di impostazioni personalizzato. Se si aggiunge un file .settings in un altro punto del progetto, questo non verrà trovato da Creazione progetti.
+La finestra di progettazione delle impostazioni cerca innanzitutto il file Settings. Settings creato dal sistema del progetto; si tratta del file predefinito visualizzato nella scheda **Impostazioni** di progettazione progetti. Settings. Settings si trova nella cartella progetto per i [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] progetti e nella cartella proprietà per i [!INCLUDE[csprcs](../includes/csprcs-md.md)] progetti. Successivamente, Creazione progetti cerca gli altri file di impostazioni nella cartella radice del progetto. Pertanto, è necessario inserirvi il file di impostazioni personalizzato. Se si aggiunge un file .settings in un altro punto del progetto, questo non verrà trovato da Creazione progetti.
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Accesso o modifica delle impostazioni dell'applicazione in fase di esecuzione in Visual Basic
 
-Nei progetti [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] è possibile accedere alle impostazioni dell'applicazione in fase di esecuzione usando l'oggetto `My.Settings` . Nella pagina **Impostazioni** scegliere il pulsante **Visualizza codice** per visualizzare il file Settings.vb. Nel file Settings.vb viene definita la classe `Settings` che consente di gestire i seguenti eventi nella classe delle impostazioni: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>e <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. La classe `Settings` nel file Settings.vb è una classe parziale in cui viene visualizzato solo il codice di proprietà dell'utente, non l'intera classe generata. Per altre informazioni sull'accesso alle impostazioni dell'applicazione mediante l'oggetto `My.Settings` , vedere [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+Nei progetti [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] è possibile accedere alle impostazioni dell'applicazione in fase di esecuzione usando l'oggetto `My.Settings` . Nella pagina **Impostazioni** fare clic sul pulsante **Visualizzare codice** per visualizzare il file Settings.vb. Nel file Settings.vb viene definita la classe `Settings` che consente di gestire i seguenti eventi nella classe delle impostazioni: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>e <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. La classe `Settings` nel file Settings.vb è una classe parziale in cui viene visualizzato solo il codice di proprietà dell'utente, non l'intera classe generata. Per altre informazioni sull'accesso alle impostazioni dell'applicazione mediante l'oggetto `My.Settings` , vedere [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 I valori di qualsiasi impostazione con ambito di utente che vengono modificati dall'utente in fase di esecuzione, ad esempio la posizione di un form, vengono archiviati in un file user.config. I valori predefiniti vengono salvati nel file app.config.
 
@@ -86,7 +86,7 @@ Se si modifica qualsiasi impostazione con ambito di utente in fase di esecuzione
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Accesso o modifica delle impostazioni dell'applicazione in fase di esecuzione in Visual C#
 <!-- markdownlint-enable MD003 MD020 -->
 
-In linguaggi diversi da [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], quali [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario accedere direttamente alla classe `Settings` , come illustrato nell'esempio seguente relativo a [!INCLUDE[csprcs](../includes/csprcs-md.md)] .
+In linguaggi diversi da [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], come [!INCLUDE[csprcs](../includes/csprcs-md.md)], è necessario accedere direttamente alla classe `Settings`, come illustrato nell'esempio seguente relativo a [!INCLUDE[csprcs](../includes/csprcs-md.md)].
 
 ```csharp
 Properties.Settings.Default.FirstUserSetting = "abc";
@@ -98,8 +98,8 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-Per informazioni generali sull'accesso alle impostazioni dell'applicazione mediante la classe `Settings`, vedere [Cenni preliminari sulle impostazioni delle applicazioni](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Per impostazioni sullo scorrimento delle impostazioni, vedere questo [post del forum](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Per informazioni generali sull'accesso alle impostazioni dell'applicazione mediante la classe `Settings` , vedere [Application Settings Overview](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Per impostazioni sullo scorrimento delle impostazioni, vedere questo [post del forum](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Accesso alle impostazioni dell'applicazione](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

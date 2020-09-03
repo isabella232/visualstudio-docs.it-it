@@ -1,5 +1,5 @@
 ---
-title: Scheda output, messaggi di finestra di dialogo Opzioni | Microsoft Docs
+title: Scheda output, finestra di dialogo Opzioni messaggio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,48 +12,48 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1fa4494ccff03fa71e25b32a4814a98a9e06dc28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185133"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Scheda Output, finestra di dialogo Opzioni messaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usare la **Output** tab per specificare quali dati di ogni messaggio all'elenco nella [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **i messaggi di Log** dal **Spy** menu.  
+Utilizzare la scheda **output** per specificare i dati di ogni messaggio da elencare nella [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare la finestra di [dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **Registra messaggi** dal menu **Spy** .  
   
- Le impostazioni seguenti sono disponibili sul **Output** scheda:  
+ Nella scheda **output** sono disponibili le impostazioni seguenti:  
   
  **Numeri di riga**  
  Visualizzare i numeri di riga.  
   
  **Livello di annidamento del messaggio**  
- Prefisso di messaggi annidati con un punto per ogni livello.  
+ Prefisso dei messaggi annidati con un periodo per ogni livello.  
   
  **Parametri dei messaggi non elaborati**  
- Visualizzazione esadecimale **wParam** e **lParam** valori.  
+ Visualizzare i valori di **wParam** e **lParam** esadecimali.  
   
  **Parametri dei messaggi decodificati**  
- Visualizzare i risultati di decodifica messaggio specifica la **wParam** e **lParam** valori.  
+ Visualizzare i risultati della decodifica specifica del messaggio dei valori **wParam** e **lParam** .  
   
  **Valori restituiti non elaborati**  
- Visualizzazione esadecimale **lResult** valore restituito.  
+ Visualizza il valore restituito **LRESULT** esadecimale.  
   
  **Valori restituiti decodificati**  
- Visualizzare i risultati di decodifica messaggio specifica la **lResult** valore restituito.  
+ Visualizza i risultati della decodifica specifica del messaggio del valore restituito di **LRESULT** .  
   
  **Ora di origine del messaggio**  
- Il tempo trascorso dall'avvio del sistema di Windows (solo per messaggi inseriti).  
+ Tempo trascorso dall'avvio del sistema Windows (solo per i messaggi pubblicati).  
   
- **Posizione del Mouse di messaggio**  
- Le coordinate dello schermo del mouse quando il messaggio è stato inserito (solo per messaggi inseriti).  
+ **Posizione del mouse del messaggio**  
+ Coordinate dello schermo del mouse al momento della pubblicazione del messaggio (solo per i messaggi pubblicati).  
   
  **Righe al massimo**  
- Limitare il numero di righe che vengono mantenuti nella visualizzazione dei messaggi attualmente selezionata.  
+ Limitare il numero di righe conservate nella visualizzazione messaggi attualmente selezionati.  
   
- **Registra anche i messaggi nel File**  
- Specificare un file di output per il log dei messaggi. Questo file di output verrà scritti simultaneamente con la finestra di messaggio del log.  
+ **Registra anche i messaggi nel file**  
+ Specificare un file di output per il log dei messaggi. Questo file di output viene scritto simultaneamente con la finestra log del messaggio.  
   
  **Salva impostazioni come predefinite**  
- Salvare le impostazioni precedenti per nuove finestre di flusso di messaggi. Queste impostazioni vengono salvate quando si esce da Spy + +.
+ Salvare le impostazioni precedenti per le nuove finestre del flusso di messaggi. Queste impostazioni vengono salvate quando si esce da Spy + +.

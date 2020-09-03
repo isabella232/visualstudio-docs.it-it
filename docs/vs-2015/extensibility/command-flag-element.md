@@ -1,5 +1,5 @@
 ---
-title: Comando elemento Commandflag | Microsoft Docs
+title: Elemento flag Command | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184360"
 ---
 # <a name="command-flag-element"></a>Elemento CommandFlag
@@ -30,52 +30,52 @@ Modifica il relativo elemento padre.
 ```  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
- La sezione seguente descrive i valori di elemento valido.  
+ Nella sezione seguente vengono descritti i valori degli elementi validi.  
   
 ### <a name="attributes"></a>Attributi  
  Nessuno.  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
-|AllowParams|Indica che gli utenti possono immettere i parametri di comando in di **comando** finestra quando l'utente digita il nome canonico del comando.<br /><br /> Valido per: `Button`|  
-|AlwaysCreate|Menu viene creato anche se non contiene né gruppi di pulsanti.<br /><br /> Valido per: `Menu`|  
-|CaseSensitive|Le voci di utente sono tra maiuscole e minuscole.<br /><br /> Valido per: `Combo`|  
-|CommandWellOnly|Applicare questo flag se il comando non viene visualizzato nel menu di primo livello e si vuole renderlo disponibile per la personalizzazione di altre shell, ad esempio, per associarla a un tasto di scelta rapida. Dopo aver installato il pacchetto VSPackage, è possibile personalizzare questi comandi, aprire il **opzioni** nella finestra di dialogo e quindi modificando il posizionamento del comando sotto il **tastiera ambiente** categoria. Questo flag non influenza la selezione host nei menu di scelta rapida, barre degli strumenti, i controller di menu o sottomenu.<br /><br /> Valida per: `Button`, `Combo`|  
-|DefaultDisabled|Per impostazione predefinita, il comando è disabilitato se non viene caricato il pacchetto VSPackage che lo implementa o `QueryStatus` (metodo) non è stato chiamato.<br /><br /> Valida per: `Button`, `Combo`|  
-|DefaultDocked|Ancorato per impostazione predefinita. Questa impostazione non è più applicabile alle barre degli strumenti perché sono sempre sono ancorate.|  
-|DefaultInvisible|Per impostazione predefinita, il comando è invisibile se non viene caricato il pacchetto VSPackage che lo implementa o `QueryStatus` (metodo) non è stato chiamato.<br /><br /> È consigliabile che si combina con i `DynamicVisibility` flag.<br /><br /> Valida per: `Button`, `Combo`, `Menu`|  
-|DontCache|L'ambiente di sviluppo non memorizza nella cache il `QueryStatus` i risultati dei metodi per questo comando.<br /><br /> Per un menu, indica a un controller di menu non memorizzare nella cache il testo relativo delle voci di menu. Usare questo flag quando il menu contiene gli elementi dinamici o elementi che contengono il testo dinamico.<br /><br /> Valida per: `Button`, `Menu`|  
-|DynamicItemStart|Indica l'inizio di un elenco dinamico. In questo modo l'ambiente compilare un elenco chiamando in successione i `QueryStatus` metodo sugli elementi dell'elenco finché non viene restituito il flag OLECMDERR_E_UNSUPPORTED. Ciò vale per gli elementi, ad esempio utilizzati più di recente (MRU) gli elenchi e finestra.<br /><br /> Valido per: `Button`|  
-|DynamicVisibility|La visibilità del comando può essere modificata tramite il `QueryStatus` (metodo) o tramite un GUID che viene incluso nel contesto di `VisibilityConstraints` sezione.<br /><br /> Si applica ai comandi che vengono visualizzati nei menu e barre degli strumenti finestra degli strumenti, ma non sulle barre degli strumenti di livello superiore che vengono visualizzati nella finestra principale. Gli elementi di primo livello sulla barra degli strumenti possono essere disabilitati, ma non nascosti, quando viene restituito il flag OLECMDF_INVISIBLE dal `QueryStatus` (metodo). Comandi della barra degli strumenti che vengono visualizzati nelle barre degli strumenti finestra degli strumenti possono essere nascosti.<br /><br /> In un menu, questo flag indica anche che si deve essere automaticamente nascosto quando tutti i relativi membri sono nascosti. Questo flag viene in genere assegnato al sottomenu poiché i menu di primo livello è già installato questo comportamento.<br /><br /> Questo flag deve essere combinato con il `DefaultInvisible` flag.<br /><br /> Valida per: `Button`, `Combo`, `Menu`|  
-|FilterKeys|Vedere l'argomento di filtro chiavi sotto [elemento Combo](../extensibility/combo-element.md).<br /><br /> Valido per: `Combo`|  
-|FixMenuController|Se questo comando viene posizionato su un controller di menu, il comando è sempre il valore predefinito; il comando è selezionato, ovvero ogni volta che si seleziona il pulsante di menu controller stesso. Se il controller di menu ha il `TextIsAnchorCommand` flag impostato, quindi il controller di menu Usa anche il testo del comando che ha la `FixMenuController` flag.<br /><br /> Deve avere un solo comando in un controller di menu il `FixMenuController` flag. Se più di un comando viene pertanto contrassegnato, l'ultimo comando nel menu di scelta diventa il comando predefinito.<br /><br /> Valido per: `Button`|  
-|IconAndText|Mostra un'icona e testo nel menu e barra degli strumenti.<br /><br /> Valida per: `Button`, `Combo`, `Menu`|  
-|NoAutoComplete|Funzionalità di completamento automatico è disabilitato.<br /><br /> Valido per: `Combo`|  
-|NoButtonCustomize|Non consentire all'utente di personalizzare questo pulsante.<br /><br /> Valida per: `Button`, `Combo`|  
-|NoKeyCustomize|Non abilitare la personalizzazione della tastiera.<br /><br /> Valida per: `Button`, `Combo`|  
-|NoShowOnMenuController|Se questo comando viene posizionato su un controller di menu, il comando non viene visualizzato nell'elenco a discesa.<br /><br /> Valido per: `Button`|  
-|NotInTBList|Non viene visualizzato nell'elenco delle barre degli strumenti disponibili. Ciò è valido solo per i tipi di menu della barra degli strumenti.<br /><br /> Valido per: `Menu`|  
-|NoToolbarClose|L'utente non è possibile chiudere la barra degli strumenti. Ciò è valido solo per i tipi di menu della barra degli strumenti.<br /><br /> Valido per: `Menu`|  
-|PICT|Mostra solo un'icona su una barra degli strumenti, ma solo il testo in un menu. Se non viene specificata alcuna icona, viene illustrato uno spazio vuoto selezionabile in una barra degli strumenti.<br /><br /> Valido per: `Button`|  
-|PostExec|Esegue il comando non bloccante. L'ambiente di sviluppo rinvia l'esecuzione fino al completamento di tutte le query pre-elaborazione.<br /><br /> Valido per: `Button`|  
-|RouteToDocs|Il comando viene instradato al documento attivo.<br /><br /> Valido per: `Button`|  
-|StretchHorizontally|Quando questo flag è impostato, la larghezza diventa la larghezza minima per la casella combinata e se c'è spazio sulla barra degli strumenti, la casella combinata si estende fino a riempire lo spazio disponibile. Ciò si verifica solo se la barra degli strumenti è ancorato in orizzontale e solo una casella combinata nella barra degli strumenti è possibile usare il flag (il flag viene ignorato in tutto eccetto la prima casella combinata).<br /><br /> Valido per: `Combo`|  
+|AllowParams|Indica che gli utenti possono immettere i parametri del comando nella finestra di **comando** quando digitano il nome canonico del comando.<br /><br /> Valido per: `Button`|  
+|AlwaysCreate|Il menu viene creato anche se non contiene gruppi o pulsanti.<br /><br /> Valido per: `Menu`|  
+|CaseSensitive|Le voci utente fanno distinzione tra maiuscole e minuscole.<br /><br /> Valido per: `Combo`|  
+|CommandWellOnly|Applicare questo flag se il comando non viene visualizzato nel menu di primo livello e si desidera renderlo disponibile per la personalizzazione della shell aggiuntiva, ad esempio per associarlo a un tasto di scelta rapida. Dopo aver installato il pacchetto VSPackage, è possibile personalizzare questi comandi aprendo la finestra di dialogo **Opzioni** e quindi modificando il posizionamento dei comandi nella categoria **ambiente tastiera** . Questo flag non influisce sulla selezione host nei menu di scelta rapida, nelle barre degli strumenti, nei controller di menu o nei sottomenu.<br /><br /> Valido per: `Button` , `Combo`|  
+|DefaultDisabled|Per impostazione predefinita, il comando viene disabilitato se il pacchetto VSPackage che lo implementa non viene caricato o se il `QueryStatus` metodo non è stato chiamato.<br /><br /> Valido per: `Button` , `Combo`|  
+|DefaultDocked|Ancorato per impostazione predefinita. Questa impostazione non si applica più alle barre degli strumenti perché sono sempre ancorate.|  
+|DefaultInvisible|Per impostazione predefinita, il comando è invisibile se il pacchetto VSPackage che lo implementa non viene caricato o se il `QueryStatus` metodo non è stato chiamato.<br /><br /> Si consiglia di combinare questo oggetto con il `DynamicVisibility` flag.<br /><br /> Valido per: `Button` , `Combo` , `Menu`|  
+|DontCache|L'ambiente di sviluppo non memorizza nella cache i `QueryStatus` risultati del metodo per questo comando.<br /><br /> Per un menu, questo indica a un controller di menu di non memorizzare nella cache il testo delle voci di menu. Utilizzare questo flag quando il menu contiene elementi dinamici o elementi con testo dinamico.<br /><br /> Valido per: `Button` , `Menu`|  
+|DynamicItemStart|Indica l'inizio di un elenco dinamico. Ciò consente all'ambiente di compilare un elenco chiamando successivamente il `QueryStatus` Metodo sugli elementi dell'elenco fino a quando non viene restituito il flag di OLECMDERR_E_UNSUPPORTED. Questa operazione è valida per elementi come gli elenchi degli ultimi elementi usati (MRU) e gli elenchi di finestre.<br /><br /> Valido per: `Button`|  
+|DynamicVisibility|La visibilità del comando può essere modificata tramite il `QueryStatus` metodo o tramite un GUID di contesto incluso nella `VisibilityConstraints` sezione.<br /><br /> Si applica ai comandi visualizzati nei menu e nelle barre degli strumenti della finestra degli strumenti, ma non nelle barre degli strumenti di primo livello visualizzate nella finestra principale. Gli elementi della barra degli strumenti di primo livello possono essere disabilitati, ma non nascosti, quando viene restituito il flag OLECMDF_INVISIBLE dal `QueryStatus` metodo. I comandi della barra degli strumenti che vengono visualizzati nelle barre degli strumenti della finestra degli strumenti possono essere nascosti.<br /><br /> In un menu questo flag indica anche che deve essere nascosto automaticamente quando tutti i relativi membri sono nascosti. Questo flag viene in genere assegnato ai sottomenu perché i menu di primo livello dispongono già di questo comportamento.<br /><br /> Questo flag deve essere combinato con il `DefaultInvisible` flag.<br /><br /> Valido per: `Button` , `Combo` , `Menu`|  
+|Filtro tasti|Vedere l'argomento relativo alle chiavi di filtro in [elemento combinato](../extensibility/combo-element.md).<br /><br /> Valido per: `Combo`|  
+|FixMenuController|Se questo comando è posizionato in un controller di menu, il comando è sempre il valore predefinito. ovvero, il comando viene selezionato ogni volta che viene selezionato il pulsante del controller di menu. Se per il controller di menu è `TextIsAnchorCommand` impostato il flag, il controller di menu accetta anche il testo del comando con il `FixMenuController` flag.<br /><br /> Un solo comando in un controller di menu deve avere il `FixMenuController` flag. Se più di un comando è così contrassegnato, l'ultimo comando nel menu diventa il comando predefinito.<br /><br /> Valido per: `Button`|  
+|IconAndText|Mostra un'icona e un testo nel menu e nella barra degli strumenti.<br /><br /> Valido per: `Button` , `Combo` , `Menu`|  
+|NoAutoComplete|La funzionalità di completamento automatico è disabilitata.<br /><br /> Valido per: `Combo`|  
+|NoButtonCustomize|Non consentire all'utente di personalizzare questo pulsante.<br /><br /> Valido per: `Button` , `Combo`|  
+|NoKeyCustomize|Non abilitare la personalizzazione della tastiera.<br /><br /> Valido per: `Button` , `Combo`|  
+|NoShowOnMenuController|Se questo comando è posizionato in un controller di menu, il comando non viene visualizzato nell'elenco a discesa.<br /><br /> Valido per: `Button`|  
+|NotInTBList|Non viene visualizzato nell'elenco delle barre degli strumenti disponibili. Questa operazione è valida solo per i tipi di menu della barra degli strumenti.<br /><br /> Valido per: `Menu`|  
+|NoToolbarClose|L'utente non può chiudere la barra degli strumenti. Questa operazione è valida solo per i tipi di menu della barra degli strumenti.<br /><br /> Valido per: `Menu`|  
+|PICT|Mostra solo un'icona su una barra degli strumenti, ma solo il testo di un menu. Se non viene specificata alcuna icona, Mostra uno spazio vuoto selezionabile su una barra degli strumenti.<br /><br /> Valido per: `Button`|  
+|Postexec|Rende il comando non bloccante. L'ambiente di sviluppo rinvia l'esecuzione fino a quando non vengono completate tutte le query di pre-elaborazione.<br /><br /> Valido per: `Button`|  
+|RouteToDocs|Il comando viene indirizzato al documento attivo.<br /><br /> Valido per: `Button`|  
+|StretchHorizontally|Quando questo flag è impostato, la larghezza diventa la larghezza minima della casella combinata e, se è presente spazio sulla barra degli strumenti, la casella combinata si estende per riempire lo spazio disponibile. Questa situazione si verifica solo se la barra degli strumenti è ancorata orizzontalmente e solo una casella combinata sulla barra degli strumenti può utilizzare il flag (il flag viene ignorato su tutti tranne la prima casella combinata).<br /><br /> Valido per: `Combo`|  
 |TextMenuUseButton|Usare il `ButtonText` campo per i menu. Il campo predefinito è `MenuText` se è specificato.<br /><br /> Valido per: `Button`|  
-|TextChanges|Il testo di comando o un menu può essere modificato in fase di esecuzione, in genere tramite il `QueryStatus` (metodo).<br /><br /> Valida per: `Button`, `Menu`|  
+|TEXTCHANGES al|Il testo del comando o del menu può essere modificato in fase di esecuzione, in genere tramite il `QueryStatus` metodo.<br /><br /> Valido per: `Button` , `Menu`|  
 |TextChangesButton|Valido per: `Button`|  
-|TextIsAnchorCommand|Per un controller di menu, viene acquisito il testo del menu del comando predefinito (ancoraggio). Un comando di ancoraggio è l'ultimo comando selezionato o impostare un latch. Se questo flag non è impostato, il controller di menu Usa il proprio `MenuText` campo. Tuttavia, facendo clic su controller di menu consente ancora l'ultimo comando selezionato dal controller di.<br /><br /> È consigliabile che si combina questo flag con la `TextChanges` flag.<br /><br /> Questo flag si applica solo ai menu di tipo MenuController o MenuControllerLatched.<br /><br /> Valido per: `Menu`|  
-|TextMenuCtrlUseMenu|Usare il `MenuText` campo nei controller di menu. Il campo predefinito è `ButtonText`.<br /><br /> Valido per: `Button`|  
+|TextIsAnchorCommand|Per un controller di menu, il testo del menu viene tratto dal comando predefinito (ancoraggio). Un comando di ancoraggio è l'ultimo comando selezionato o bloccato. Se questo flag non è impostato, il controller di menu usa il proprio `MenuText` campo. Tuttavia, se si fa clic sul controller dei menu, viene ancora abilitato l'ultimo comando selezionato da tale controller.<br /><br /> Si consiglia di combinare questo flag con il `TextChanges` flag.<br /><br /> Questo flag si applica solo ai menu di tipo MenuController o MenuControllerLatched.<br /><br /> Valido per: `Menu`|  
+|TextMenuCtrlUseMenu|Usare il `MenuText` campo nei controller di menu. Il campo predefinito è `ButtonText` .<br /><br /> Valido per: `Button`|  
 |TextMenuUseButton|Usare il `ButtonText` campo per i menu. Il campo predefinito è `MenuText` se è specificato.<br /><br /> Valido per: `Button`|  
-|TextOnly|Mostrare solo testo in una barra degli strumenti o un menu, ma nessuna icona anche se viene specificato l'icona.<br /><br /> Valido per: `Button`|  
+|TextOnly|Mostra solo il testo su una barra degli strumenti o un menu, ma nessuna icona anche se l'icona è specificata.<br /><br /> Valido per: `Button`|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|DESCRIZIONE|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento Buttons](../extensibility/buttons-element.md)|Fornisce un gruppo per [elemento pulsante](../extensibility/button-element.md) elementi.|  
-|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu che implementa un pacchetto VSPackage.|  
+|[Elemento Buttons](../extensibility/buttons-element.md)|Fornisce un gruppo per gli elementi [elemento del pulsante](../extensibility/button-element.md) .|  
+|[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu implementati da un VSPackage.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a9e82cf8387756cb4a4abe8b4c41d082485cdcdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656289"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: utilizzare Progettazione XML Schema con i valori letterali XML
@@ -25,7 +25,7 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
 1. Avviare Visual Studio 2010.
 
-2. Scegliere **nuovo**dal menu **file** , quindi selezionare **progetto**. Verrà visualizzata la finestra di dialogo **Nuovo progetto**. Per i **tipi di progetto**, selezionare **altri linguaggi,** quindi selezionare **Visual Basic**. Per i **modelli**, selezionare applicazione console. Digitare quindi `XMLLiterals` nel campo **nome** e un percorso progetto nel campo **percorso** . Fare clic su **OK**.
+2. Scegliere **Nuovo** dal menu **File**, quindi selezionare **Progetto**. Verrà visualizzata la finestra di dialogo **Nuovo progetto** . Per i **tipi di progetto**, selezionare **altri linguaggi,** quindi selezionare **Visual Basic**. Per i **modelli**, selezionare applicazione console. Digitare quindi `XMLLiterals` il campo **nome** e il percorso del progetto nel campo **percorso** . Fare clic su **OK**.
 
      Il nuovo progetto è creato. Il progetto XMLLiterals contiene un file di origine di Visual Basic, Module1.vb.
 

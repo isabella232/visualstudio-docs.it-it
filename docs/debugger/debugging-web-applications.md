@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73714446"
 ---
 # <a name="debugging-web-applications"></a>Debug di applicazioni Web
@@ -26,7 +26,7 @@ Questo articolo fornisce i collegamenti che consentono di eseguire il debug di d
 
 - Eseguire il debug di applicazioni ASP.NET
 
-  Per i passaggi necessari per abilitare il debug di applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], vedere [eseguire il debug di applicazioni ASP.NET](how-to-enable-debugging-for-aspnet-applications.md).
+  Per i passaggi necessari per abilitare il debug delle [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazioni, vedere [debug di applicazioni ASP.NET](how-to-enable-debugging-for-aspnet-applications.md).
 
 - Eseguire il debug di script lato client in ASP.NET
 

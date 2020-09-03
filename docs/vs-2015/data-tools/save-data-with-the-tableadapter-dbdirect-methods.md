@@ -20,16 +20,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce987f5ef90448c41da45a39c62710b968e11199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655415"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuzione di istruzioni SQL direttamente in un database utilizzando i metodi DBDirect di un TableAdapter. I metodi DBDirect di un oggetto TableAdapter consentono un elevato livello di controllo degli aggiornamenti del database. È possibile utilizzarli per eseguire istruzioni SQL e stored procedure specifiche chiamando i singoli metodi `Insert`, `Update` e `Delete` in base alle esigenze dell'applicazione (anziché il metodo di `Update` di overload che esegue l'aggiornamento, inserire e le istruzioni DELETE in una sola chiamata).
+In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuzione di istruzioni SQL direttamente in un database utilizzando i metodi DBDirect di un TableAdapter. I metodi DBDirect di un oggetto TableAdapter consentono un elevato livello di controllo degli aggiornamenti del database. È possibile usarli per eseguire istruzioni SQL e stored procedure specifiche chiamando i singoli `Insert` metodi, `Update` e in base alle `Delete` esigenze dell'applicazione, anziché il metodo di overload `Update` che esegue le istruzioni Update, INSERT e DELETE in un'unica chiamata.
 
  Durante questa procedura dettagliata, si apprenderà come:
 
@@ -43,8 +43,8 @@ In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'ese
 
 - Aggiungere metodi per accedere direttamente al database ed eseguire inserimenti, aggiornamenti ed eliminazioni.
 
-## <a name="prerequisites"></a>Prerequisites
- Per completare questa procedura dettagliata, è necessario:
+## <a name="prerequisites"></a>Prerequisiti
+ Per completare questo scenario, saranno necessari gli elementi seguenti:
 
 - Accedere al database di esempio Northwind.
 
@@ -76,7 +76,7 @@ In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'ese
 
     - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         oppure
+         -oppure-
 
     - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
@@ -86,7 +86,7 @@ In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'ese
 
 7. Nella schermata **Seleziona oggetti di database** espandere il nodo **tabelle** .
 
-8. Selezionare la tabella `Region`, quindi fare clic su **fine**.
+8. Selezionare la `Region` tabella, quindi fare clic su **fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Region` viene visualizzata nella finestra **Origini dati**.
 
@@ -97,7 +97,7 @@ In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'ese
 
 - Trascinare il nodo **area** principale dalla finestra **origini dati** nel form.
 
-     Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), RegionTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
+     Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), RegionTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
 #### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Per aggiungere pulsanti da usare per la chiamata ai singoli metodi DbDirect di TableAdapter
 
@@ -105,11 +105,11 @@ In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'ese
 
 2. Impostare le proprietà **Name** e **Text** seguenti per ciascun pulsante.
 
-    |Name|Testo|
+    |Nome|Testo|
     |----------|----------|
-    |`InsertButton`|**Inserisci**|
+    |`InsertButton`|**Inserimento**|
     |`UpdateButton`|**Aggiornamento**|
-    |`DeleteButton`|**Eliminazione**|
+    |`DeleteButton`|**Elimina**|
 
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Per aggiungere il codice per l'inserimento dei nuovi record nel database
 
@@ -138,7 +138,7 @@ In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'ese
      [!code-csharp[VbRaddataSaving#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs#3)]
      [!code-vb[VbRaddataSaving#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb#3)]
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione
 

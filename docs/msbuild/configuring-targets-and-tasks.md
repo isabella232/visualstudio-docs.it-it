@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39a3d6ba3eff6a01c2d0ff68b4132d883eadb90f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634396"
 ---
 # <a name="configure-targets-and-tasks"></a>Configurare destinazioni e attività
@@ -21,13 +21,13 @@ ms.locfileid: "77634396"
 
 ## <a name="installation"></a>Installazione
 
-  Se si desidera installare MSBuild separatamente da Visual Studio, è possibile scaricare il pacchetto di installazione da [MSBuild download](https://www.microsoft.com/download/details.aspx?id=40760). È inoltre necessario installare le versioni di .NET Framework che si prevede di usare.
+  Se si vuole installare MSBuild separatamente da Visual Studio, è possibile scaricare il pacchetto di installazione dal [download di MSBuild](https://www.microsoft.com/download/details.aspx?id=40760). È inoltre necessario installare le versioni di .NET Framework che si prevede di usare.
 
 ## <a name="targets-and-tasks"></a>Destinazioni e attività
 
  In MSBuild vengono eseguite alcune attività di compilazione out-of-process per specificare come destinazione un set più ampio di contesti.  Ad esempio, in un'istanza di MSBuild a 32 bit è possibile eseguire un'attività di compilazione in un processo a 64 bit destinato a un computer a 64 bit. Questa funzionalità è controllata dagli argomenti `UsingTask` e dai parametri `Task`. Questi argomenti e parametri vengono impostati dalle destinazioni installate da .NET Framework 4.5 e non è necessaria alcuna modifica per compilare applicazioni per i vari contesti di destinazione.
 
- Se si desidera creare un contesto di destinazione personalizzato, è necessario impostare questi argomenti e parametri in modo appropriato. Cercare esempi nel file *Microsoft.Common.targets* di .NET Framework 4.5 e nel file *Microsoft.Common.Tasks.*  Per informazioni su come creare un'attività personalizzata in grado di utilizzare più contesti di destinazione o su come modificare le attività esistenti, vedere [Procedura: Configurare destinazioni e attività.](../msbuild/how-to-configure-targets-and-tasks.md)
+ Se si desidera creare un contesto di destinazione personalizzato, è necessario impostare questi argomenti e parametri in modo appropriato. Per gli esempi, vedere il file .NET Framework 4,5 *Microsoft. Common. targets* e il file *Microsoft. Common. Tasks* .  Per informazioni su come creare un'attività personalizzata che può funzionare con più contesti di destinazione o come modificare le attività esistenti, vedere [procedura: configurare destinazioni e attività](../msbuild/how-to-configure-targets-and-tasks.md).
 
 ## <a name="see-also"></a>Vedere anche
 

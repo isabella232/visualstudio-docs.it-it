@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f634f028dafea3260a69537893513f13cc0ebe83
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74292539"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Eseguire unit test su estensioni UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per mantenere la stabilità del codice in caso di modifiche successive, è consigliabile scrivere unit test ed eseguirli come parte di un normale processo di compilazione. Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md). Per configurare i test per le estensioni di modellazione di Visual Studio sono necessarie alcune informazioni. Riepilogo:
+Per mantenere la stabilità del codice in caso di modifiche successive, è consigliabile scrivere unit test ed eseguirli come parte di un normale processo di compilazione. Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md). Per configurare i test per le estensioni di modellazione di Visual Studio sono necessarie alcune informazioni. In sintesi:
 
-- [Configurazione di uno unit test per le estensioni VSIX](#Host)
+- [Configurazione di un unit test per estensioni VSIX](#Host)
 
    Eseguire test con l'adattatore host dell'IDE di VS. Aggiungere `[HostType("VS IDE")]`come prefisso a ogni metodo di test. L'adattatore host avvia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] durante l'esecuzione dei test.
 
@@ -33,11 +33,11 @@ Per mantenere la stabilità del codice in caso di modifiche successive, è consi
 
    È possibile eseguire il casting di `EnvDTE.ProjectItem` in e da `IDiagramContext`.
 
-- [Esecuzione di modifiche nel thread dell'interfaccia utente](#UiThread)
+- [Modifiche nel thread dell'interfaccia utente](#UiThread)
 
    I test che modificano l'archivio modelli devono essere eseguiti nel thread dell'interfaccia utente. A tale scopo, è possibile usare `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` .
 
-- [Test di comandi, movimenti e altri componenti MEF](#MEF)
+- [Testing di comandi, movimenti e altri componenti MEF](#MEF)
 
    Per testare i componenti MEF, è necessario connettere in modo esplicito le relative proprietà importate a valori.
 
@@ -48,16 +48,16 @@ Per mantenere la stabilità del codice in caso di modifiche successive, è consi
 
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="Host"></a>Configurazione di uno unit test per le estensioni VSIX
+## <a name="setting-up-a-unit-test-for-vsix-extensions"></a><a name="Host"></a> Configurazione di uno unit test per le estensioni VSIX
  I metodi disponibili nelle estensioni di modellazione possono essere in genere usati con un diagramma già aperto. I metodi usano importazioni MEF, quali **IDiagramContext** e **ILinkedUndoContext**. L'ambiente di testing deve configurare questo contesto prima dell'esecuzione dei test.
 
-#### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>Per configurare un unit test da eseguire in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+#### <a name="to-set-up-a-unit-test-that-executes-in-vsprvs"></a>Per configurare un unit test da eseguire in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
 1. Creare il progetto di estensione UML e il progetto di unit test.
 
-    1. **Un progetto di estensione UML.** Per creare il progetto si usano in genere i comandi, i movimenti o i modelli di progetto di convalida. Ad esempio, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+    1. **Progetto di estensione UML.** Per creare il progetto si usano in genere i comandi, i movimenti o i modelli di progetto di convalida. Ad esempio, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **Progetto unit test.** Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md).
+    2. **Progetto di unit test.** Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md).
 
 2. Creare una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che include un progetto di modellazione UML. Questa soluzione sarà usata come stato iniziale dei test. Dovrebbe essere separata dalla soluzione in cui si scrivono l'estensione UML e i relativi unit test. Per altre informazioni, vedere [creare diagrammi e progetti di modellazione UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
@@ -78,25 +78,25 @@ Per mantenere la stabilità del codice in caso di modifiche successive, è consi
 
 5. **Nel progetto di unit test**aggiungere i riferimenti ad assembly seguenti:
 
-    - *Progetto di estensione UML*
+    - *Progetto di estensione UML.*
 
-    - **EnvDTE. dll**
+    - **EnvDTE.dll**
 
-    - **Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll**
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
 
-    - **Microsoft. VisualStudio. ComponentModelHost. dll**
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**
 
-    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
 
-    - **Microsoft. VisualStudio. Uml. Interfaces. dll**
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
 
-    - **Microsoft. VSSDK. TestHostFramework. dll**
+    - **Microsoft.VSSDK.TestHostFramework.dll**
 
 6. Aggiungere l'attributo `[HostType("VS IDE")]` come prefisso a ogni metodo di test, inclusi i metodi di inizializzazione.
 
      Ciò consente di assicurare che il test sarà eseguito in un'istanza sperimentale di Visual Studio.
 
-## <a name="DTE"></a>Accesso a DTE e ModelStore
+## <a name="accessing-dte-and-modelstore"></a><a name="DTE"></a> Accesso a DTE e ModelStore
  Scrivere un metodo per aprire un progetto di modellazione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È in genere consigliabile aprire una soluzione solo una volta in ogni esecuzione di test. Per eseguire il metodo solo una volta, aggiungere l'attributo `[AssemblyInitialize]` come prefisso per il metodo. È anche necessario specificare l'attributo [HostType("VS IDE")] in ogni metodo di test.  Ad esempio:
 
 ```csharp
@@ -164,7 +164,7 @@ namespace UnitTests
 
  Se un'istanza di <xref:EnvDTE.Project?displayProperty=fullName> rappresenta un progetto di modello, è possibile eseguirne il cast da e verso [IModelingProject](/previous-versions/ee789474(v=vs.140)).
 
-## <a name="Opening"></a>Apertura di un diagramma del modello
+## <a name="opening-a-model-diagram"></a><a name="Opening"></a> Apertura di un diagramma del modello
  Per ogni test o classe di test è in genere consigliabile usare un diagramma aperto. L'esempio seguente usa l'attributo `[ClassInitialize]` , che esegue questo metodo prima degli altri metodi nella classe di test. Anche in questo caso è necessario specificare l'attributo [HostType("VS IDE")] in ogni metodo di test:
 
 ```csharp
@@ -209,7 +209,7 @@ public class MyTestClass
 
 ```
 
-## <a name="UiThread"></a>Eseguire modifiche al modello nel thread UI
+## <a name="perform-model-changes-in-the-ui-thread"></a><a name="UiThread"></a> Eseguire modifiche al modello nel thread UI
  Se i test o i metodi sottoposti a test apportano modifiche all'archivio modelli, sarà necessario eseguirli nel thread dell'interfaccia utente. In caso contrario, è possibile che sia visualizzata una `AccessViolationException`. Racchiudere il codice del metodo di test in una chiamata a Invoke:
 
 ```
@@ -229,7 +229,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }
 ```
 
-## <a name="MEF"></a>Testing di comandi, movimenti e altri componenti MEF
+## <a name="testing-command-gesture-and-other-mef-components"></a><a name="MEF"></a> Testing di comandi, movimenti e altri componenti MEF
  I componenti MEF usano dichiarazioni di proprietà che includono l'attributo `[Import]` e i cui valori sono configurati dai rispettivi host. In genere queste proprietà includono IDiagramContext, SVsServiceProvider e ILinkedUndoContext. Quando si testa un metodo che usa una di queste proprietà, occorre configurarne i valori prima di eseguire il metodo sottoposto a test. Ad esempio, se è stata scritta un'estensione di comando analoga al codice seguente:
 
 ```

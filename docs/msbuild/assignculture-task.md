@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634565"
 ---
 # <a name="assignculture-task"></a>AssignCulture (attività)
@@ -43,7 +43,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `AssignCult
 
 ## <a name="remarks"></a>Osservazioni
 
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e delle relative descrizioni, vedere [TaskExtension base class](../msbuild/taskextension-base-class.md).
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 
@@ -74,7 +74,7 @@ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla cl
 
 La tabella seguente descrive il valore degli elementi di output dopo l'esecuzione dell'attività. I metadati degli elementi vengono visualizzati tra parentesi dopo l'elemento.
 
-|Raccolta di elementi|Sommario|
+|Raccolta di elementi|Contenuto|
 |---------------------|--------------|
 |`OutAssignedFiles`|*MyResource1.fr.resx* (Impostazioni cultura="fr")<br /><br /> *MyResource2.XX.resx* (senza metadati aggiuntivi)|
 |`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (Impostazioni cultura="fr")|
@@ -84,4 +84,4 @@ La tabella seguente descrive il valore degli elementi di output dopo l'esecuzion
 ## <a name="see-also"></a>Vedere anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+- [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
