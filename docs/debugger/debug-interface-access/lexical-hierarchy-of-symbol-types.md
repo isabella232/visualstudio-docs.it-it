@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b003fcbd1b38eb5dc919b7f4f361e0b56b585f08
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461224"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Gerarchia lessicale dei tipi di simboli
@@ -45,7 +45,7 @@ Nella tabella seguente vengono illustrati i tipi di simboli della gerarchia less
 > [!NOTE]
 > È possibile che siano disponibili ulteriori proprietà dei simboli a seconda del tipo di simbolo. Queste proprietà sono elencate nei singoli argomenti dei simboli.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
 - [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

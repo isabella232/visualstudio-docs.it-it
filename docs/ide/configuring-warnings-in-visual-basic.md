@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114725"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
@@ -36,10 +36,10 @@ Quando **Option Strict** è impostato su **Off**, gli avvisi associati a **Optio
 
 L'opzione della riga di comando **/warnaserror** del compilatore consente anche di specificare se gli avvisi vengono considerati come errori. È possibile aggiungere un elenco delimitato da virgole a questa opzione per specificare mediante i segni + o - gli avvisi da considerare come errori o come avvisi. La seguente tabella elenca le opzioni possibili.
 
-|Opzione della riga di comando|Specifica|
+|Opzione da riga di comando|Specifica|
 | - |---------------|
 |`/warnaserror+`|Considera tutti gli avvisi come errori.|
-|`/warnsaserror`-|Non considera gli avvisi come errori. Questa è la modalità predefinita.|
+|`/warnsaserror`-|Non considera gli avvisi come errori. Questa è l'impostazione predefinita.|
 |`/warnaserror+:<warning list` `>`|Considera come errori gli avvisi specifici elencati in base al numero ID dell'errore in un elenco delimitato da virgole.|
 |`/warnaserror-:<warning list>`|Non considera come errori gli avvisi specifici elencati in base al numero ID dell'errore in un elenco delimitato da virgole.|
 |`/nowarn`|Non segnala gli avvisi.|
@@ -120,8 +120,8 @@ ID: 42029, 42031
 ## <a name="see-also"></a>Vedere anche
 
 - [Tipi di errore](/dotnet/visual-basic/programming-guide/language-features/error-types)
-- [Provare... Prendere... Dichiarazione Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+- [Prova... Rileva... Finally (istruzione)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [Pagina Compilazione, Creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Avvisi del compilatore disattivati per impostazione predefinitaCompiler warnings that are off by default](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+- [Pagina Compila, Progettazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Avvisi del compilatore disattivati per impostazione predefinita](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114678"
 ---
 # <a name="control-flow-activity-designers"></a>ActivityDesigner Flusso di controllo
 
 Progettazione flussi di lavoro include diverse attività fornite dal sistema che è possibile usare per la costruzione dei flussi di lavoro. Contenuto della sezione sono presentate le attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro. Negli argomenti riportati di seguito vengono illustrate queste attività e vengono fornite indicazioni sulle relative modalità di utilizzo.
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Informazioni di riferimento
 
  <xref:System.Activities.Activity>
 
@@ -47,15 +47,15 @@ Progettazione flussi di lavoro include diverse attività fornite dal sistema che
 
 Per altri tipi di ActivityDesigner, vedere gli argomenti seguenti:
 
- [Uso degli Activity Designer](control-flow-activity-designers.md)
+ [Utilizzo degli ActivityDesigner](control-flow-activity-designers.md)
 
  [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+ [Messaggistica](../workflow-designer/messaging-activity-designers.md)
 
  [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [Primitive](../workflow-designer/primitives-activity-designers.md)
 
  [Transazione](../workflow-designer/transaction-activity-designers.md)
 
@@ -65,4 +65,4 @@ Per altri tipi di ActivityDesigner, vedere gli argomenti seguenti:
 
 ## <a name="external-resources"></a>Risorse esterne
 
-- [Uso degli Activity Designer](control-flow-activity-designers.md)
+- [Utilizzo degli ActivityDesigner](control-flow-activity-designers.md)

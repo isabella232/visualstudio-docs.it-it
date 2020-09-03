@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544989"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definire e installare un'estensione di modellazione
@@ -109,7 +109,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
 3. Se è stato selezionato **Avvia senza eseguire il debug** , ma si vuole usare il debugger, tornare all'istanza principale di Visual Studio. Scegliere **Connetti a processo** dal menu **Debug**. Nella finestra di dialogo selezionare l'istanza sperimentale di Visual Studio, con il nome programma **devenv**.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installazione e disinstallazione di un'estensione
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installazione e disinstallazione di un'estensione
  Seguire questa procedura per eseguire l'estensione nell'istanza principale di Visual Studio nel proprio computer o in altri.
 
 1. Nel computer trovare il file **.vsix** compilato dal progetto di estensione.
@@ -130,7 +130,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
 #### <a name="to-uninstall-an-extension"></a>Per disinstallare un'estensione
 
-1. Nel menu **Strumenti** fare clic su **Estensioni e aggiornamenti**.
+1. Dal menu **Strumenti** scegliere **Estensioni e aggiornamenti**.
 
 2. Espandere **Estensioni installate**.
 

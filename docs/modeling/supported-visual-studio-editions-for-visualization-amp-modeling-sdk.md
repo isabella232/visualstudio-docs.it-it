@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3be233ce8730879c2f0406ec9cc180685992c6bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544937"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
@@ -35,7 +35,7 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 
 ## <a name="deployment-editions"></a>Edizioni per la distribuzione
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]supporta le seguenti configurazioni per la distribuzione dei linguaggi specifici del dominio compilati:
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] supporta le seguenti configurazioni per la distribuzione dei linguaggi specifici del dominio compilati:
 
 - Visual Studio Enterprise
 

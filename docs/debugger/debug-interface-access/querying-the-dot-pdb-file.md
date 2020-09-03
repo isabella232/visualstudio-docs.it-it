@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a7cff092d06b8845993dcf1a35b271da0c0a33c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461161"
 ---
 # <a name="querying-the-pdb-file"></a>Ricerche nel file PDB
@@ -90,5 +90,5 @@ Un file di database di programma (Extension. pdb) è un file binario che contien
     }
     ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

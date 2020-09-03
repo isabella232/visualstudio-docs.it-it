@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633772"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedura: Usare caratteri XML riservati nei file di progetto
@@ -75,5 +75,5 @@ Quando si creano file di progetto, potrebbe essere necessario usare caratteri XM
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

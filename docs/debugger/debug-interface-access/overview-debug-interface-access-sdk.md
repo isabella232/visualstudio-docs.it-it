@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a403a8d3ddec82ce7e051e545687511c2421fa9
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461168"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Panoramica (Debug Interface Access SDK)
@@ -33,6 +33,6 @@ Usare il DIA SDK per accedere alle informazioni di debug Microsoft. Il DIA SDK f
 
  Ogni interfaccia nel DIA SDK rappresenta un oggetto COM diverso, tranne se diversamente specificato. Le interfacce aggiuntive e quindi gli oggetti aggiuntivi vengono creati tramite query esplicite, ad esempio [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) o [IDiaSession:: findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md), anziché chiamando `QueryInterface` sui puntatori di interfaccia esistenti.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)

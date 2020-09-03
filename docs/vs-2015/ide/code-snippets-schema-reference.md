@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67bc1a18b4e4cbfdf69fe917c0d0fdff09832983
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545028"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
@@ -41,7 +41,7 @@ I frammenti di codice IntelliSense sono parti di codice già create e pronte per
 |[Elemento Function](../ide/code-snippets-schema-reference.md#function)|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|[Elemento URL](../ide/code-snippets-schema-reference.md#url)|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header)|[Reference-elemento](../ide/code-snippets-schema-reference.md#reference)||
 
-## <a name="assembly-element"></a><a name="assembly"></a>Assembly-elemento
+## <a name="assembly-element"></a><a name="assembly"></a> Assembly-elemento
  Specifica il nome dell'assembly a cui fa riferimento il frammento di codice.
 
 > [!NOTE]
@@ -146,7 +146,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Tale testo specifica il codice, insieme ai valori letterali e agli oggetti, che è possibile usare in caso di inserimento di questo frammento di codice in un progetto.
 
-## <a name="codesnippet-element"></a><a name="codesnippet"></a>Elemento CodeSnippet
+## <a name="codesnippet-element"></a><a name="codesnippet"></a> Elemento CodeSnippet
  Consente di specificare un'intestazione e più frammenti di codice IntelliSense, che è possibile inserire in file di codice di Visual Studio.
 
 ```xml
@@ -170,7 +170,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento CodeSnippets](../ide/code-snippets-schema-reference.md#codesnippets)|Elemento radice dell'XML Schema dei frammenti di codice.|
 
-## <a name="codesnippets-element"></a><a name="codesnippets"></a>Elemento CodeSnippets
+## <a name="codesnippets-element"></a><a name="codesnippets"></a> Elemento CodeSnippets
  Raggruppa gli elementi [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet). L'elemento `CodeSnippets` è l'elemento radice dell'XML Schema dei frammenti di codice.
 
 ```xml
@@ -184,7 +184,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento facoltativo. Elemento padre di tutti i dati del frammento di codice. Possono esistere zero o più elementi `CodeSnippet` in un elemento `CodeSnippets`.|
 
-## <a name="declarations-element"></a><a name="declarations"></a>Elemento Declarations
+## <a name="declarations-element"></a><a name="declarations"></a> Elemento Declarations
  Specifica i valori letterali e gli oggetti che costituiscono le parti modificabili di un frammento di codice.
 
 ```xml
@@ -204,7 +204,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
 
-## <a name="default-element"></a><a name="default"></a>Elemento default
+## <a name="default-element"></a><a name="default"></a> Elemento default
  Specifica il valore predefinito del valore letterale o dell'oggetto di un frammento di codice IntelliSense.
 
 ```xml
@@ -221,7 +221,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Il testo specifica l'impostazione predefinita del valore letterale o dell'oggetto che popola i campi modificabili del frammento di codice.
 
-## <a name="description-element"></a><a name="description"></a>Description (elemento)
+## <a name="description-element"></a><a name="description"></a> Description (elemento)
  Specifica informazioni descrittive sul contenuto di un frammento di codice IntelliSense.
 
 ```xml
@@ -236,7 +236,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Questo testo descrive il frammento di codice.
 
-## <a name="function-element"></a><a name="function"></a>Elemento Function
+## <a name="function-element"></a><a name="function"></a> Elemento Function
  Specifica una funzione da eseguire quando il valore letterale o l'oggetto ricevono lo stato attivo in Visual Studio.
 
 > [!NOTE]
@@ -255,7 +255,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Questo testo specifica una funzione da eseguire quando il campo con valore letterale o con oggetto riceve lo stato attivo in Visual Studio.
 
-## <a name="header-element"></a><a name="header"></a>Elemento Header
+## <a name="header-element"></a><a name="header"></a> Elemento Header
  Specifica informazioni generali sul frammento di codice IntelliSense.
 
 ```xml
@@ -285,7 +285,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento padre di tutti i dati del frammento di codice.|
 
-## <a name="helpurl-element"></a><a name="helpurl"></a>Elemento HelpUrl
+## <a name="helpurl-element"></a><a name="helpurl"></a> Elemento HelpUrl
  Specifica un URL nel quale sono presenti altre informazioni su un frammento di codice.
 
 > [!NOTE]
@@ -304,7 +304,7 @@ is a great color. I love Blue.
 
  Il valore di testo è facoltativo. Tale testo specifica l'URL da visitare per ottenere altre informazioni su un frammento di codice.
 
-## <a name="id-element"></a><a name="id"></a>ID (elemento)
+## <a name="id-element"></a><a name="id"></a> ID (elemento)
  Specifica un identificatore univoco per un elemento `Literal` o `Object`. Due valori letterali o oggetti nello stesso frammento di codice non possono avere lo stesso valore di testo negli elementi `ID`. I valori letterali e gli oggetti non possono contenere un elemento `ID` con un valore end. `$end$` è un valore riservato e viene usato per contrassegnare il punto in cui posizionare il cursore dopo l'inserimento del frammento di codice.
 
 ```xml
@@ -321,7 +321,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Tale testo specifica l'identificatore univoco per l'oggetto o il valore letterale.
 
-## <a name="import-element"></a><a name="import"></a>Elemento Import
+## <a name="import-element"></a><a name="import"></a> Elemento Import
  Specifica gli spazi dei nomi importati usati da un frammento di codice IntelliSense.
 
 > [!NOTE]
@@ -342,7 +342,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports)|Elemento di raggruppamento per elementi **Import**.|
 
-## <a name="imports-element"></a><a name="imports"></a>Elemento Imports
+## <a name="imports-element"></a><a name="imports"></a> Elemento Imports
  Raggruppa singoli elementi `Import`.
 
 > [!NOTE]
@@ -377,7 +377,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Parola chiave per il frammento di codice.
 
-## <a name="keywords-element"></a><a name="keywords"></a>Elemento Keywords
+## <a name="keywords-element"></a><a name="keywords"></a> Elemento Keywords
  Raggruppa singoli elementi `Keyword`. Le parole chiave del frammento di codice sono usate da Visual Studio e costituiscono un modo standard dei provider di contenuti online di aggiungere parole chiave personalizzate per la ricerca o la classificazione in categorie
 
 ```xml
@@ -395,7 +395,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Contiene informazioni generali sul frammento di codice.|
 
-## <a name="literal-element"></a><a name="literal"></a>Elemento Literal
+## <a name="literal-element"></a><a name="literal"></a> Elemento Literal
  Definisce i valori letterali modificabili del frammento di codice. L'elemento `Literal` viene usato per identificare una sostituzione per una parte di codice che è interamente contenuta nel frammento, ma verrà probabilmente personalizzata dopo l'inserimento nel codice. Ad esempio, i valori letterali stringa, i valori numerici e alcuni nomi di variabili dovrebbero essere dichiarati come valori letterali.
 
  I valori letterali e gli oggetti non possono contenere un elemento **ID** con valore selected o end. Il valore `$selected$` rappresenta il testo selezionato nel documento da inserire nel frammento di codice quando viene richiamato. `$end$` contrassegna il punto in cui posizionare il cursore dopo l'inserimento del frammento di codice.
@@ -424,7 +424,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Contiene i valori letterali e gli oggetti di un frammento di codice che è possibile modificare.|
 
-## <a name="namespace-element"></a><a name="namespace"></a>Namespace-elemento
+## <a name="namespace-element"></a><a name="namespace"></a> Namespace-elemento
  Specifica lo spazio dei nomi che deve essere importato per la compilazione e l'esecuzione del frammento di codice. Lo spazio dei nomi specificato nell'elemento `Namespace` viene aggiunto automaticamente a un'istruzione `Imports` all'inizio del codice, se non esiste già.
 
 > [!NOTE]
@@ -442,7 +442,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Questo testo specifica uno spazio dei nomi di cui il frammento di codice presuppone l'importazione.
 
-## <a name="object-element"></a><a name="object"></a>Elemento Object
+## <a name="object-element"></a><a name="object"></a> Elemento Object
  Definisce gli oggetti modificabili del frammento di codice. L'elemento `Object` viene usato per identificare un elemento richiesto dal frammento di codice ma che viene probabilmente definito al di fuori del frammento stesso. È ad esempio opportuno dichiarare come oggetti i controlli Windows Form, i controlli ASP.NET, le istanze di oggetti e le istanze di tipi. Per le dichiarazioni di oggetti è necessario specificare un tipo, usando l'elemento `Type`.
 
 ```xml
@@ -493,7 +493,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento References](../ide/code-snippets-schema-reference.md#references)|Elemento di raggruppamento per elementi `Reference`.|
 
-## <a name="references-element"></a><a name="references"></a>References-elemento
+## <a name="references-element"></a><a name="references"></a> References-elemento
  Raggruppa singoli elementi `Reference`.
 
 > [!NOTE]
@@ -513,7 +513,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene i riferimenti, le importazioni, le dichiarazioni e il codice del frammento di codice.|
 
-## <a name="shortcut-element"></a><a name="shortcut"></a>Elemento Shortcut
+## <a name="shortcut-element"></a><a name="shortcut"></a> Elemento Shortcut
  Specifica il testo del collegamento usato per inserire il frammento di codice. Il valore di testo di un elemento `Shortcut` può contenere solo caratteri alfanumerici, trattini (-) e caratteri di sottolineatura (_).
 
 > [!CAUTION]
@@ -555,7 +555,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Consente di specificare un'intestazione e più frammenti di codice IntelliSense, che è possibile inserire in file di codice di Visual Studio.|
 
-## <a name="snippettype-element"></a><a name="snippettype"></a>Elemento SnippetType
+## <a name="snippettype-element"></a><a name="snippettype"></a> Elemento SnippetType
  Specifica la modalità di inserimento del frammento di codice.
 
 ```xml
@@ -625,7 +625,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Tale testo specifica la descrizione della Descrizione comando da associare all'oggetto o al valore letterale nel frammento di codice.
 
-## <a name="type-element"></a><a name="type"></a>Elemento Type
+## <a name="type-element"></a><a name="type"></a> Elemento Type
  Specifica il tipo di oggetto. L'elemento `Object` viene usato per identificare un elemento richiesto dal frammento di codice ma che viene probabilmente definito al di fuori del frammento stesso. È ad esempio opportuno dichiarare come oggetti i controlli Windows Form, i controlli ASP.NET, le istanze di oggetti e le istanze di tipi. Per le dichiarazioni di oggetti è necessario specificare un tipo, usando l'elemento `Type`.
 
 ```xml
@@ -640,7 +640,7 @@ is a great color. I love Blue.
 
  È necessario specificare un valore di testo. Tale testo specifica il tipo dell'oggetto.
 
-## <a name="url-element"></a><a name="url"></a>Elemento URL
+## <a name="url-element"></a><a name="url"></a> Elemento URL
  Specifica un URL che fornisce altre informazioni sull'assembly a cui viene fatto riferimento.
 
 > [!NOTE]

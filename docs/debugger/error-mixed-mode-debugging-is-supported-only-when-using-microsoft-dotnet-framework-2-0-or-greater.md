@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: de19f6b735f990b0e419c040291e1bf538f680f5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460624"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Errore: il debug in modalità mista è supportato solo quando si utilizza Microsoft .NET Framework 2.0 o versione successiva
@@ -28,5 +28,5 @@ Per eseguire il debug di codice nativo e gestito misto, è necessario avere .NET
 
 - Aggiornare il .NET Framework alla versione 2,0, 3,0, 3,5 o 4,0.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug remoto](../debugger/remote-debugging.md)

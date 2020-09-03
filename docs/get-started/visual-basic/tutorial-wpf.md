@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419211"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: creare un'applicazione semplice con Visual Basic
@@ -265,7 +265,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 #### <a name="add-breakpoints"></a>Aggiungere punti di interruzione
 
-1. Aprire *Greetings. XAML. vb*e selezionare la riga seguente:`MessageBox.Show("Hello.")`
+1. Aprire *Greetings. XAML. vb*e selezionare la riga seguente: `MessageBox.Show("Hello.")`
 
 2. Aggiungere un punto di interruzione dal menu premendo **F9** o selezionando **Debug**, quindi **Attiva/disattiva punto di interruzione**.
 
@@ -315,7 +315,7 @@ Dopo aver verificato che tutto funzioni, sarà possibile preparare una build di 
 
 L'esercitazione è stata completata. È possibile trovare il file con *estensione exe* compilato nella directory della soluzione e del progetto (*. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 ::: moniker range="vs-2017"
 

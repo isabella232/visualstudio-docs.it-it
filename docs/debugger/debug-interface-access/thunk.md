@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90eeaefd8784be3e381c72dd452a23c56e0df47d
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461035"
 ---
 # <a name="thunk"></a>Thunk
@@ -52,13 +52,13 @@ Ogni `thunk` viene identificato da un `SymTagThunk` tag.
 |[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Tipo di thunk, in base a quanto definito dall' [enumerazione THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md).|
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Tipo di questo thunk (solo in DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID del simbolo del tipo (solo in DIA SDK versione 8.0 o successiva).|
-|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`Se il thunk non è allineato (solo in DIA SDK versione 8.0 o successiva),|
-|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE`Se il thunk è virtuale (solo in DIA SDK versione 8.0 o successiva).|
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` Se il thunk non è allineato (solo in DIA SDK versione 8.0 o successiva),|
+|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE` Se il thunk è virtuale (solo in DIA SDK versione 8.0 o successiva).|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posizione del thunk all'interno dell'immagine eseguibile.|
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Offset della tabella virtuale per questo thunk (solo in DIA SDK versione 8.0 o successiva).|
-|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`Se il thunk è contrassegnato come volatile (solo in DIA SDK V 8.0 o versione successiva).|
+|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se il thunk è contrassegnato come volatile (solo in DIA SDK V 8.0 o versione successiva).|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Enumerazione THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)

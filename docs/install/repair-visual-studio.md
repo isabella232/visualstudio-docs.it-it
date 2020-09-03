@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418964"
 ---
 # <a name="repair-visual-studio"></a>Ripristinare Visual Studio
@@ -89,9 +89,9 @@ In alcuni casi l'installazione di Visual Studio può risultare danneggiata Una c
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Installa Visual Studio](install-visual-studio.md)
 * [Aggiornare Visual Studio](update-visual-studio.md)
 * [Disinstallare Visual Studio](uninstall-visual-studio.md)
 * [Risoluzione dei problemi di installazione e aggiornamento di Visual Studio](troubleshooting-installation-issues.md)

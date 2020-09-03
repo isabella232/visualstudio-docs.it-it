@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2fe7c62ce04e61a8476731ed14ee14f60e2b044
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461042"
 ---
 # <a name="thunk_ordinal"></a>THUNK_ORDINAL
@@ -53,12 +53,12 @@ THUNK_ORDINAL_TRAMP_INCREMENTAL thunk del trampolino incrementale (un thunk del 
 
 Thunk del punto di THUNK_ORDINAL_TRAMP_BRANCHISLAND ramo.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

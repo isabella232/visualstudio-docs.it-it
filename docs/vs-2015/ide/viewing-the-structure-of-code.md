@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a860fbb88bb15786fad5fdf277f8f65b245056b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545015"
 ---
 # <a name="viewing-the-structure-of-code"></a>Visualizzazione della struttura del codice
@@ -132,7 +132,7 @@ ms.locfileid: "85545015"
 |**Vai a definizione**|Consente di passare alla definizione originale di un metodo.|
 |**Trova tutti i riferimenti**|Trova nel progetto tutti i riferimenti al metodo selezionato.|
 |**Copia**|Copia il nodo selezionato (ma non i sottonodi).|
-|**Refresh** (Aggiornamento)|Aggiorna le informazioni.|
+|**Aggiorna**|Aggiorna le informazioni.|
 
 ## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Visualizzatore oggetti
  Il **Visualizzatore oggetti** visualizza le descrizioni del codice nei progetti.

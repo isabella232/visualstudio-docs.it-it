@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0342146f604d86dd93ce25ed20e6ab393c581ea9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544170"
 ---
 # <a name="properties-of-domain-properties"></a>Proprietà delle proprietà di dominio
@@ -43,7 +43,7 @@ Una *proprietà di dominio* è una funzionalità di un elemento del modello che 
 |**È Nome elemento**|Se `True`, questa proprietà di dominio verrà visualizzata come nome del relativo elemento modello in DSL Explorer.<br /><br /> I nuovi elementi modello riceveranno un valore predefinito univoco per questa proprietà. Se si desidera controllare la modalità di generazione di questi valori, impostare **provider nome elemento**.|`False`|
 |**È di sola lettura nell'interfaccia utente**|Se `True`, il valore della proprietà di dominio non può essere modificato tramite l'interfaccia utente. Può comunque essere impostato da programmi e sarà visibile nella finestra Proprietà.<br /><br /> Se si desidera nascondere la proprietà del dominio dall'utente, set **è esplorabile**. Se si vuole controllare l'accesso tramite programmi, impostare il **modificatore di accesso Setter**.|`False`|
 |**Tipologia**|Il tipo di proprietà di dominio (`Normal`, `Calculated` o `CustomStorage`). Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
-|**Nome**|Nome di questa proprietà di dominio. Deve essere un identificatore valido, ad esempio **SongTitle**.|\<none>|
+|**Name**|Nome di questa proprietà di dominio. Deve essere un identificatore valido, ad esempio **SongTitle**.|\<none>|
 |**Note**|Note informali associate alla proprietà di dominio.|\<none>|
 |**Modificatore di accesso con metodo Set**|Modificatore di accesso per il metodo Set. Consente di controllare l'ambito nel quale il codice programma può impostare la proprietà.|`public`|
 |**Tipo**|Tipo di proprietà. Per aggiungere l'elenco dei tipi disponibili, fare clic con il pulsante destro del mouse sulla radice del DSL in DSL Explorer e scegliere **Aggiungi tipo esterno**.|`String`|

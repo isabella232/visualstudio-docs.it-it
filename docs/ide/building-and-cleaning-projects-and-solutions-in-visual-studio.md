@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114562"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
@@ -59,33 +59,33 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 1. In **Esplora soluzioni ** scegliere un progetto o aprire il progetto voluto.
 
-2. Sulla barra dei menu scegliere **Compila**, quindi **Compila** *NomeProgetto* o **Ricompila** *NomeProgetto*.
+2. Sulla barra dei menu scegliere **Compila**, quindi scegliere **Compila** *NomeProgetto* o **ricompila** *NomeProgetto*.
 
-    - Scegliere **Compila** *ProjectName* per compilare solo i componenti del progetto che sono stati modificati dopo la compilazione più recente.
+    - Scegliere **Compila** *NomeProgetto* per compilare solo i componenti del progetto che sono stati modificati rispetto alla build più recente.
 
-    - Scegliere **Ricompila** *ProjectName* per "pulire" il progetto, quindi compilare i file di progetto e tutti i componenti del progetto.
+    - Scegliere **ricompila** *NomeProgetto* per "pulire" il progetto e quindi compilare i file di progetto e tutti i componenti del progetto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Per compilare il progetto di avvio e le relative dipendenze
 
-1. Nella barra dei menu scegliere**Opzioni** **degli strumenti** > .
+1. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni**.
 
 2. Nella finestra di dialogo **Opzioni** espandere il nodo **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.
 
-     Verrà visualizzata la finestra di dialogo**Opzioni** **progetti e soluzioni** > di **compilazione ed esecuzione** > .
+     Verrà visualizzata la finestra di dialogo **Compila ed Esegui**  >  **Opzioni progetti e soluzioni**  >  **Options** .
 
 3. Selezionare la casella di controllo **Compila progetti di avvio e dipendenze solo in fase di esecuzione**.
 
      Se questa casella di controllo è selezionata, solo il progetto di avvio corrente e le relative dipendenze vengono compilati quando si esegue la procedura seguente:
 
-    - Nella barra dei menu scegliere**Avvio** **debug** > (**F5**).
+    - Sulla barra dei menu scegliere **debug**  >  **Avvia** (**F5**).
 
-    - Nella barra dei menu scegliere **Compila** > **soluzione** compilazione **(CTRL**+**MAIUSC**+**B**).
+    - Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione** (**CTRL** + **MAIUSC** + **B**).
 
-    Quando questa casella di controllo è deselezionata e si eseguono i comandi precedenti vengono compilati tutti i progetti, le relative dipendenze e i file della soluzione. Per impostazione predefinita, tale casella di controllo è deselezionata.
+    Quando questa casella di controllo è deselezionata e si eseguono i comandi precedenti vengono compilati tutti i progetti, le relative dipendenze e i file della soluzione. Per impostazione predefinita, questa casella di controllo è deselezionata.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Per compilare solo il progetto di Visual C++ selezionato
 
-Scegliere [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] un progetto, quindi nella barra dei menu scegliere **Compila** > **solo progetto**e uno dei comandi seguenti:
+Scegliere un [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] progetto, quindi nella barra dei menu scegliere **Compila**  >  **solo progetto**e uno dei comandi seguenti:
 
 - **Build Only (Compila solo) ** *NomeProgetto*
 
@@ -107,18 +107,18 @@ Se i file hanno dipendenze, vengono compilati in ordine di dipendenza. L'operazi
 
 Effettuare uno dei passaggi seguenti:
 
-- Nella barra dei menu selezionare**Annulla** **compilazione** > .
+- Nella barra dei menu selezionare **Compila**  >  **Annulla**.
 
-- Premere **CTRL**+**Break**.
+- Premere **CTRL** + **INTERR**.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilazione e compilazione](../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Riferimento dell'edificio C/C](/cpp/build/reference/c-cpp-building-reference)
+- [Riferimenti alla compilazione in C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
 - [Compilazione e pulizia di progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

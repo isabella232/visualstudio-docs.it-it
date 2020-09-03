@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 907d075f597799edd582c9f2bae693eac92c0b2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544963"
 ---
 # <a name="outlining"></a>struttura
@@ -49,6 +49,6 @@ ms.locfileid: "85544963"
 |Visualizza selezione nascosta|(CTRL + M, CTRL + U) - Rimuove le informazioni relative alla struttura per l'area definita dall'utente attualmente selezionata. Non disponibile in Visual Basic.|
 |Comprimi alle definizioni|(CTRL + M, CTRL + O) - Consente di comprimere i membri di tutti i tipi.|
 |Comprimi blocco:\<logical boundary>|(Visual C++) Consente di comprimere un'area nella funzione contenente il punto di inserimento. Ad esempio, se il punto di inserimento si trova all'interno di un ciclo, il ciclo è nascosto.|
-|Comprimi tutto in:\<logical structures>|(Visual C++) Comprime tutte le strutture all'interno della funzione.|
+|Comprimi tutto in: \<logical structures>|(Visual C++) Comprime tutte le strutture all'interno della funzione.|
 
  È anche possibile usare Visual Studio SDK per definire le aree di testo che si intende espandere o comprimere. Vedere [Walkthrough: Outlining](../extensibility/walkthrough-outlining.md) (Procedura dettagliata: struttura).

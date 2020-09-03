@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad2a26e36c83c4a3b3ad051504bc3944663ee2ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544976"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
@@ -52,7 +52,7 @@ ms.locfileid: "85544976"
 
 |Scenario|Descrizione|
 |-|-|
-|Navigazione|Usare la scheda **Sommario** per visualizzare il contenuto installato sotto forma di gerarchi e specificare i criteri per filtrare i titoli visualizzati.<br /><br /> Usare la scheda **Cerca** per cercare i termini in tutto il contenuto, inclusi il codice e i titoli degli argomenti.<br /><br /> Usare la scheda **Indice** per eseguire ricerche nell'indice, specificare i criteri per filtrare le voci e specificare che le voci di indice contengano o inizino con il testo desiderato.<br /><br /> Usare la scheda **Preferiti** per salvare collegamenti ad argomenti visualizzati frequentemente e visualizzare un elenco degli ultimi argomenti visitati.|
+|Spostamento|Usare la scheda **Sommario** per visualizzare il contenuto installato sotto forma di gerarchi e specificare i criteri per filtrare i titoli visualizzati.<br /><br /> Usare la scheda **Cerca** per cercare i termini in tutto il contenuto, inclusi il codice e i titoli degli argomenti.<br /><br /> Usare la scheda **Indice** per eseguire ricerche nell'indice, specificare i criteri per filtrare le voci e specificare che le voci di indice contengano o inizino con il testo desiderato.<br /><br /> Usare la scheda **Preferiti** per salvare collegamenti ad argomenti visualizzati frequentemente e visualizzare un elenco degli ultimi argomenti visitati.|
 |Visualizzazione degli argomenti|Ogni argomento viene visualizzato in una scheda ed è possibile aprire più argomenti contemporaneamente.|
 |Gestione del contenuto|È possibile installare, aggiornare, spostare ed eliminare il contenuto usando la scheda **Gestisci contenuto** . Nella parte superiore della scheda è possibile usare il controllo del **codice sorgente di installazione** per specificare se installare i libri da un percorso di rete o da un disco o un URI. Nella casella **Percorso archivio locale** viene visualizzato il percorso in cui vengono installati i libri nel computer locale. Per spostare i libri in un percorso diverso, scegliere il pulsante **Sposta**.<br /><br /> L'elenco del contenuto visualizza i libri che è possibile installare o quelli già installati, se è disponibile un aggiornamento e le dimensioni di ciascun libro. È possibile installare o rimuovere uno o più libri scegliendo i collegamenti appropriati **Aggiungi** o **Rimuovi** e quindi scegliendo il pulsante **Aggiorna** nel riquadro **Modifiche in sospeso**. Se sono disponibili aggiornamenti per la documentazione già installata, è possibile aggiornare il contenuto scegliendo il collegamento **Fare clic qui per scaricare ora** nella parte inferiore della finestra. Inoltre, tutti i libri installati verranno aggiornati se sono disponibili aggiornamenti quando si installano altri libri. **Nota:**  La funzionalità della scheda **Gestisci contenuto** può essere diversa se l'amministratore di Help Viewer disattiva queste funzionalità o se non è disponibile l'accesso a Internet.|
 

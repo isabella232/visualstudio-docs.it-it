@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e19ce48a8716952f53a1caa6a44fd5ba3d817f4e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461350"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
@@ -30,11 +30,11 @@ HRESULT getSrcLineOnTypeDefn(
 #### <a name="parameters"></a>Parametri
  `ppResult`
 
-out `IDiaLineNumber`Oggetto contenente il file di origine e il numero di riga in cui è definito dall'utente.
+out `IDiaLineNumber` Oggetto contenente il file di origine e il numero di riga in cui è definito dall'utente.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

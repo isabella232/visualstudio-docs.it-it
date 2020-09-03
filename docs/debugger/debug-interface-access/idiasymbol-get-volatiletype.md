@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f612b11623f2a70e972ddce9ee4aa26ff2d44067
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461358"
 ---
 # <a name="idiasymbolget_volatiletype"></a>IDiaSymbol::get_volatileType
@@ -41,8 +41,8 @@ out Restituisce `TRUE` se il tipo definito dall'utente è volatile; in caso cont
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  In C++, un tipo definito dall'utente può essere contrassegnato con la `volatile` parola chiave, che indica che il contenuto non può essere considerato esistente da un accesso a quello successivo.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

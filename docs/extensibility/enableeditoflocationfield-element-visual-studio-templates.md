@@ -1,5 +1,5 @@
 ---
-title: EnableEditOfLocationField (elemento) Documenti Microsoft
+title: Elemento EnableEditOfLocationField (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,16 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e15e2f5c070b8a8c565497c6ba3fc6490b87591
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711998"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (elemento) (modelli di Visual Studio)
-Specifica se l'utente può modificare il campo della posizione.
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelli di Visual Studio)
+Specifica se l'utente può modificare il campo del percorso.
 
- \<VSTemplate \<> TemplateData> \<> EnableEditOfLocationField
+ \<VSTemplate> \<TemplateData>
+ \<EnableEditOfLocationField>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,10 +34,10 @@ Specifica se l'utente può modificare il campo della posizione.
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- nessuno
+ Nessuno
 
 ### <a name="child-elements"></a>Elementi figlio
- nessuno
+ Nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -47,15 +48,15 @@ Specifica se l'utente può modificare il campo della posizione.
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve `true` `false`essere o , che indica se l'utente può modificare o meno la casella di testo **Percorso** nella finestra di dialogo **Nuovo progetto** .
+ Il testo deve essere `true` o `false` , che indica se l'utente può modificare la casella di testo **percorso** nella finestra di dialogo **nuovo progetto** .
 
 ## <a name="remarks"></a>Osservazioni
- `EnableEditOfLocationField` è un elemento facoltativo. Il valore `true`predefinito è , che consente all'utente di modificare il valore nella casella di testo **Percorso** della finestra di dialogo **Nuovo progetto** .
+ `EnableEditOfLocationField` è un elemento facoltativo. Il valore predefinito è `true` , che consente all'utente di modificare il valore nella casella di testo **percorso** della finestra di dialogo **nuovo progetto** .
 
- Nella finestra di dialogo **Nuovo progetto,** la casella di testo **Percorso** specifica la directory in cui viene salvato un nuovo progetto.
+ Nella casella di testo **percorso** della finestra di dialogo **nuovo progetto** viene specificata la directory in cui viene salvato un nuovo progetto.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] i metadati per un'applicazione Windows.The following example illustrates the metadata for a Windows application.
+ Nell'esempio seguente vengono illustrati i metadati per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,5 +85,5 @@ Specifica se l'utente può modificare il campo della posizione.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

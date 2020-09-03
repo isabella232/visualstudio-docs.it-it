@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton (elemento) (modelli di Visual Studio) Documenti Microsoft
+title: Elemento EnableLocationBrowseButton (modelli di Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711980"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton (elemento) (modelli di Visual Studio)
-Specifica se il pulsante **Sfoglia** è disponibile nella finestra di dialogo **Nuovo progetto,** in modo che gli utenti possano modificare facilmente la directory predefinita in cui viene salvato un nuovo progetto.
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelli di Visual Studio)
+Specifica se il pulsante **Sfoglia** è disponibile nella finestra di dialogo **nuovo progetto** , in modo che gli utenti possano modificare facilmente la directory predefinita in cui viene salvato un nuovo progetto.
 
- \<VSTemplate \<> TemplateData> \<> EnableLocationBrowseButton
+ \<VSTemplate> \<TemplateData>
+ \<EnableLocationBrowseButton>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,10 +36,10 @@ Specifica se il pulsante **Sfoglia** è disponibile nella finestra di dialogo **
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- No.
+ Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -49,15 +50,15 @@ Specifica se il pulsante **Sfoglia** è disponibile nella finestra di dialogo **
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Il testo deve `true` `false`essere o , che indica se visualizzare o meno il pulsante **Sfoglia** nella finestra di dialogo **Nuovo progetto** .
+ Il testo deve essere `true` o `false` , che indica se visualizzare o meno il pulsante **Sfoglia** nella finestra di dialogo **nuovo progetto** .
 
 ## <a name="remarks"></a>Osservazioni
- `EnableLocationBrowseButton` è un elemento facoltativo. Il valore `true`predefinito è , che visualizza il pulsante **Sfoglia** nella finestra di dialogo **Nuovo progetto** .
+ `EnableLocationBrowseButton` è un elemento facoltativo. Il valore predefinito è `true` , che consente di visualizzare il pulsante **Sfoglia** nella finestra di dialogo **nuovo progetto** .
 
- Nella finestra di dialogo **Nuovo progetto,** la casella di testo **Percorso** specifica la directory in cui viene salvato un nuovo progetto. Il pulsante **Sfoglia** consente di modificare questa directory visualizzando la finestra di dialogo **Percorso progetto,** che consente di passare facilmente a un'altra directory disponibile dal computer, quindi selezionarla come directory in cui viene salvato il nuovo progetto.
+ Nella casella di testo **percorso** della finestra di dialogo **nuovo progetto** viene specificata la directory in cui viene salvato un nuovo progetto. Il pulsante **Sfoglia** consente di modificare questa directory visualizzando la finestra di dialogo **percorso progetto** , che consente di passare facilmente a una directory diversa disponibile dal computer e quindi sceglierla come directory in cui viene salvato il nuovo progetto.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] i metadati per un'applicazione Windows.The following example illustrates the metadata for a Windows application.
+ Nell'esempio seguente vengono illustrati i metadati per un' [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] applicazione Windows.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -85,5 +86,5 @@ Specifica se il pulsante **Sfoglia** è disponibile nella finestra di dialogo **
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Informazioni di riferimento sullo schema del modello di Visual StudioVisual Studio template schema reference](../extensibility/visual-studio-template-schema-reference.md)
-- [Creazione di modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Enumeratore del codice di stato del file - Documenti Microsoft
+title: Enumeratore del codice di stato file | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711446"
 ---
-# <a name="file-status-code-enumerator"></a>Enumeratore codice di stato del file
-L'enumeratore `SccStatus` contiene valori costanti denominati che specificano lo stato di un file nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e dalla `POPLISTFUNC` funzione di callback (vedere [POPLISTFUNC](../extensibility/poplistfunc.md) per i dettagli).
+# <a name="file-status-code-enumerator"></a>Enumeratore del codice di stato file
+L' `SccStatus` enumeratore contiene valori costanti denominati che specificano lo stato di un file nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e dalla `POPLISTFUNC` funzione di callback (vedere [POPLISTFUNC](../extensibility/poplistfunc.md) per informazioni dettagliate).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,41 +49,41 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Membri
- SCC_STATUS_INVALID Impossibile ottenere lo Status; non fare affidamento su di esso.
+ Non è stato possibile ottenere lo stato SCC_STATUS_INVALID; non fare affidamento su di esso.
 
- SCC_STATUS_NOTCONTROLLED File non è nel controllo del codice sorgente.
+ Il file di SCC_STATUS_NOTCONTROLLED non è sotto il controllo del codice sorgente.
 
- SCC_STATUS_CONTROLLED File è nel controllo del codice sorgente.
+ Il file di SCC_STATUS_CONTROLLED è sotto il controllo del codice sorgente.
 
- SCC_STATUS_CHECKEDOUT Estratto dall'utente corrente sul disco locale.
+ SCC_STATUS_CHECKEDOUT estratto dall'utente corrente nel disco locale.
 
- SCC_STATUS_OUTOTHER file è estratto da un altro utente.
+ Il file di SCC_STATUS_OUTOTHER viene Estratto da un altro utente.
 
- SCC_STATUS_OUTEXCLUSIVE file viene estratto esclusivamente.
+ Il file di SCC_STATUS_OUTEXCLUSIVE viene estratto in modo esclusivo.
 
- SCC_STATUS_OUTMULTIPLE file è estratto da più utenti.
+ SCC_STATUS_OUTMULTIPLE file viene Estratto da più di un utente.
 
- SCC_STATUS_OUTOFDATE Il file non è il più recente.
+ SCC_STATUS_OUTOFDATE il file non è il più recente.
 
- SCC_STATUS_DELETED file è stato eliminato dal progetto.
+ Il file di SCC_STATUS_DELETED è stato eliminato dal progetto.
 
- SCC_STATUS_LOCKED Il file è bloccato; non sono più ammesse versioni.
+ Il file di SCC_STATUS_LOCKED è bloccato. non sono consentite altre versioni.
 
- SCC_STATUS_MERGED file è stato unito ma non ancora fisso/verificato.
+ Il file di SCC_STATUS_MERGED è stato Unito ma non ancora corretto o verificato.
 
  SCC_STATUS_SHARED file viene condiviso tra i progetti.
 
- SCC_STATUS_PINNED File viene condiviso con una versione esplicita.
+ SCC_STATUS_PINNED file è condiviso con una versione esplicita.
 
- SCC_STATUS_MODIFIED file è stato modificato/interrotto/violato.
+ Il file di SCC_STATUS_MODIFIED è stato modificato/violato/violato.
 
- SCC_STATUS_OUTBYUSER file è estratto dall'utente corrente.
+ Il file di SCC_STATUS_OUTBYUSER è estratto dall'utente corrente.
 
- SCC_STATUS_NOMERGE File non può mai essere unito e non deve essere salvato prima di un GET.
+ Il file di SCC_STATUS_NOMERGE non può mai essere unito con e non deve essere salvato prima di un'GET.
 
- SCC_STATUS_RESERVED_1 Riservato per uso interno.
+ SCC_STATUS_RESERVED_1 riservata per uso interno.
 
- SCC_STATUS_RESERVED_2 Riservato per uso interno.
+ SCC_STATUS_RESERVED_2 riservata per uso interno.
 
 ## <a name="see-also"></a>Vedere anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

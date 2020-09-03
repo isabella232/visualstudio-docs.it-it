@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: acef0d6809e33b969e1b6ecd874a842f0da32ae5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461063"
 ---
 # <a name="symbols-and-symbol-tags"></a>Simboli e relativi tag
@@ -40,6 +40,6 @@ Vengono descritti i tipi di simboli che formano gerarchie lessicali, ad esempio 
 
 Descrive i tipi di simboli che corrispondono a elementi di linguaggio diversi, ad esempio classi, matrici e tipi restituiti della funzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
