@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS . Documenti Microsoft
+title: PROVIDER_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713796"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
@@ -52,12 +52,12 @@ public enum enum_PROVIDER_FIELDS {
 ## <a name="remarks"></a>Osservazioni
  Questi valori vengono restituiti nel `Fields` membro della struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) per indicare quali campi della struttura sono stati compilati in modo esplicito.
 
- Questi valori possono essere combinati `OR`con un file bit per bit.
+ Questi valori possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

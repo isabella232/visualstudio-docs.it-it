@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS . Documenti Microsoft
+title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713403"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
-Specifica quali informazioni su un thread deve essere recuperato.
+Specifica le informazioni su un thread da recuperare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,37 +54,37 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
 ## <a name="fields"></a>Campi
  `TPF_ID`\
- Inizializzare/utilizzare `dwThreadId` il campo della struttura [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
+ Inizializza/usa il `dwThreadId` campo della struttura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
 
  `TPF_SUSPENDCOUNT`\
- Inizializzare/utilizzare `dwSuspendCount` il `THREADPROPERTIE`campo della struttura S.
+ Inizializza/usa il `dwSuspendCount` campo della `THREADPROPERTIE` struttura S.
 
  `TPF_STATE`\
- Inizializzare/utilizzare `dwThreadState` il `THREADPROPERTIE`campo della struttura S.
+ Inizializza/usa il `dwThreadState` campo della `THREADPROPERTIE` struttura S.
 
  `TPF_PRIORITY`\
- Inizializzare/utilizzare `bstrPriority` il `THREADPROPERTIE`campo della struttura S.
+ Inizializza/usa il `bstrPriority` campo della `THREADPROPERTIE` struttura S.
 
  `TPF_NAME`\
- Inizializzare/utilizzare `bstrName` il `THREADPROPERTIE`campo della struttura S.
+ Inizializza/usa il `bstrName` campo della `THREADPROPERTIE` struttura S.
 
  `TPF_LOCATION`\
- Inizializzare/utilizzare `bstrLocation` il `THREADPROPERTIE`campo della struttura S.
+ Inizializza/usa il `bstrLocation` campo della `THREADPROPERTIE` struttura S.
 
  `TPF_ALLFIELDS`\
  Specifica tutti i campi.
 
 ## <a name="remarks"></a>Osservazioni
- Questi valori vengono passati come argomento al metodo [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) per indicare quali campi della struttura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) devono essere inizializzati.
+ Questi valori vengono passati come argomento al metodo [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) per indicare i campi della struttura [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) da inizializzare.
 
- Questi valori vengono `dwFields` utilizzati `THREADPROPERTIES` anche nel membro della struttura per indicare quali campi vengono utilizzati e validi.
+ Questi valori vengono inoltre utilizzati nel `dwFields` membro della `THREADPROPERTIES` struttura per indicare quali campi vengono utilizzati e validi.
 
- Questi flag possono essere combinati `OR`con un oggetto .
+ Questi flag possono essere combinati con un bit per bit `OR` .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c17b25d8a837f751b8bd8ec108c0b821d58c6df0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657690"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Trova e sostituisci, Ambiente, finestra di dialogo Opzioni
@@ -28,9 +28,9 @@ ms.locfileid: "72657690"
 Tramite questa pagina della finestra di **Opzioni** è possibile controllare le caselle dei messaggi e altri aspetti di un'operazione di ricerca e sostituzione. È possibile accedere a questa finestra di dialogo dal menu **Strumenti** facendo clic su **Opzioni**, espandendo **Ambiente** e facendo clic su **Trova e sostituisci**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.
 
 > [!NOTE]
-> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="uielement-list"></a>Elenco UIElement
+## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  **Visualizza messaggi informativi** Selezionare questa opzione per visualizzare tutti i messaggi informativi Find e Replace con l'opzione **Mostra sempre questo messaggio** . Ad esempio, se si sceglie di non visualizzare il messaggio "Raggiunto il punto iniziale della ricerca.", selezionando questa opzione verrà visualizzato nuovamente il messaggio informativo quando si usa l'opzione Trova e sostituisci.
 
  Se non si desidera visualizzare alcun messaggio informativo per Trova e sostituisci, deselezionare questa opzione.

@@ -1,5 +1,5 @@
 ---
-title: Impossibile recuperare le informazioni sullo schema per il nome dell'oggetto di database &lt;object &gt; | Microsoft Docs
+title: Impossibile recuperare le informazioni sullo schema per il &lt; nome dell'oggetto di database &gt; | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: caa8b10bf1644084ab5551d99afe0745feac6280
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651095"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Impossibile recuperare le informazioni sullo schema per il nome dell'oggetto di database &lt;object &gt;
+# <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Impossibile recuperare le informazioni sullo schema per il &lt; nome dell'oggetto di database&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo messaggio viene in genere visualizzato quando un oggetto in **Esplora server/Esplora database** viene copiato negli Appunti, eliminato dal database e quindi incollato nella finestra di progettazione. La visualizzazione del messaggio è pertanto dovuta al fatto che l'oggetto di database non esiste più.

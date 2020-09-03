@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633135"
 ---
 # <a name="msbuild-tasks"></a>MSBuild (attività)
 
-Una piattaforma di compilazione deve poter eseguire un numero illimitato di azioni durante il processo di compilazione. MSBuild usa *le attività* per eseguire queste azioni. Un'attività è un'unità di codice eseguibile utilizzata da MSBuild per eseguire operazioni di compilazione atomica.
+Una piattaforma di compilazione deve poter eseguire un numero illimitato di azioni durante il processo di compilazione. MSBuild usa le *attività* per eseguire queste azioni. Un'attività è un'unità di codice eseguibile utilizzata da MSBuild per eseguire operazioni di compilazione atomiche.
 
 ## <a name="task-logic"></a>Logica delle attività
 
- Il formato di file del progetto XML MSBuild non può eseguire completamente le operazioni di compilazione da solo, pertanto la logica dell'attività deve essere implementata all'esterno del file di progetto.
+ Il formato del file di progetto XML di MSBuild non è in grado di eseguire completamente le operazioni di compilazione, pertanto la logica dell'attività deve essere implementata all'esterno del file di progetto.
 
  La logica di esecuzione di un'attività viene implementata come classe .NET che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>, definita nello spazio dei nomi <xref:Microsoft.Build.Framework>.
 
- La classe dell'attività definisce anche i parametri di input e di output disponibili per l'attività nel file di progetto. A tutte le proprietà non astratte non statiche pubbliche esposte dalla classe di attività possono essere assegnati valori nel file di progetto inserendo un attributo corrispondente con lo stesso nome nell'elemento [Task](../msbuild/task-element-msbuild.md) e impostandone il valore, come illustrato negli esempi più avanti in questo articolo.
+ La classe dell'attività definisce anche i parametri di input e di output disponibili per l'attività nel file di progetto. A tutte le proprietà non statiche impostabili pubbliche esposte dalla classe di attività è possibile assegnare valori nel file di progetto inserendo un attributo corrispondente con lo stesso nome nell'elemento [Task](../msbuild/task-element-msbuild.md) e impostandone il valore come illustrato negli esempi più avanti in questo articolo.
 
- Per scrivere un'attività personalizzata, è sufficiente creare una classe gestita che implementi l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per ulteriori informazioni, consultate [Scrittura di attività.](../msbuild/task-writing.md)
+ Per scrivere un'attività personalizzata, è sufficiente creare una classe gestita che implementi l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per ulteriori informazioni, vedere la pagina relativa alla [scrittura di attività](../msbuild/task-writing.md).
 
 ## <a name="execute-a-task-from-a-project-file"></a>Esecuzione di un'attività da un file di progetto
 
- Prima di eseguire un'attività nel file di progetto, è necessario eseguire il mapping del tipo nell'assembly che implementa l'attività al nome dell'attività con l'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Ciò consente a MSBuild di sapere dove cercare la logica di esecuzione dell'attività quando la trova nel file di progetto.
+ Prima di eseguire un'attività nel file di progetto, è necessario eseguire il mapping del tipo nell'assembly che implementa l'attività al nome dell'attività con l'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). In questo modo, MSBuild sa dove cercare la logica di esecuzione dell'attività quando viene trovata nel file di progetto.
 
- Per eseguire un'attività in un file di progetto MSBuild, creare un `Target` elemento con il nome dell'attività come figlio di un elemento. Se un'attività accetta i parametri, questi vengono passati come attributi dell'elemento.
+ Per eseguire un'attività in un file di progetto MSBuild, creare un elemento con il nome dell'attività come figlio di un `Target` elemento. Se un'attività accetta i parametri, questi vengono passati come attributi dell'elemento.
 
- Gli elenchi e le proprietà degli elementi MSBuild possono essere utilizzati come parametri. Ad esempio, il codice `MakeDir` seguente chiama l'attività e `MakeDir` imposta il valore `BuildDir` della `Directories` proprietà dell'oggetto uguale al valore della proprietà:
+ Gli elenchi di elementi e le proprietà di MSBuild possono essere utilizzati come parametri. Il codice seguente, ad esempio, chiama l' `MakeDir` attività e imposta il valore della `Directories` proprietà dell' `MakeDir` oggetto su un valore uguale al valore della `BuildDir` proprietà:
 
 ```xml
 <Target Name="MakeBuildDirectory">
@@ -63,15 +63,15 @@ Una piattaforma di compilazione deve poter eseguire un numero illimitato di azio
 
 ## <a name="included-tasks"></a>Attività incluse
 
- MSBuild viene fornito con molte attività, ad esempio [Copy](../msbuild/copy-task.md), che copia i file, [MakeDir](../msbuild/makedir-task.md), che crea directory, e [Csc](../msbuild/csc-task.md), che consente di compilare i file di codice sorgente c'è. Per un elenco completo delle attività disponibili e delle informazioni sull'utilizzo, vedere Informazioni di [riferimento sulle attività](../msbuild/msbuild-task-reference.md).
+ MSBuild viene fornito con molte attività, ad esempio [Copy](../msbuild/copy-task.md), che copia i file, [MakeDir](../msbuild/makedir-task.md), che creano le directory e [CSC](../msbuild/csc-task.md), che compila i file di codice sorgente C#. Per un elenco completo delle attività e delle informazioni sull'utilizzo disponibili, vedere [riferimento alle attività](../msbuild/msbuild-task-reference.md).
 
 ## <a name="overridden-tasks"></a>Attività sottoposte a override
 
- MSBuild cerca le attività in diverse posizioni. La prima posizione è nei file con estensione *. OverrideTasks* archiviate nelle directory di .NET Framework. Le attività in questi file eseguono l'override delle altre attività con gli stessi nomi, incluse le attività nel file di progetto. La seconda posizione è in file con estensione *. Attività* nelle directory di .NET Framework. Se l'attività non è presente in nessuna di queste posizioni, viene usata l'attività nel file di progetto.
+ MSBuild cerca le attività in diverse posizioni. Il primo percorso è nei file con estensione *. OverrideTasks* archiviato nelle directory .NET Framework. Le attività in questi file eseguono l'override delle altre attività con gli stessi nomi, incluse le attività nel file di progetto. La seconda posizione è nei file con estensione *. Attività* nelle directory .NET Framework. Se l'attività non è presente in nessuna di queste posizioni, viene usata l'attività nel file di progetto.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Scrittura di attività](../msbuild/task-writing.md)
-- [Attività in linea](../msbuild/msbuild-inline-tasks.md)
+- [Attività inline](../msbuild/msbuild-inline-tasks.md)

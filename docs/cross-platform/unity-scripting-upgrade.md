@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815136"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso di .NET 4.x in Unity
@@ -74,7 +74,7 @@ Oltre a una nuova sintassi C# e a nuove funzionalità per il linguaggio, il runt
 
 1. Individuare un pacchetto compatibile da aggiungere in NuGet (.NET Standard 2.0 o .NET 4.x). In questo esempio verrà illustrata l'aggiunta di [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/), un pacchetto diffuso per l'utilizzo di JSON, a un progetto .NET Standard 2.0.
 
-1. Fare clic sul pulsante **Download**:
+1. Fare clic sul pulsante **download** :
 
     ![pulsante download](media/vstu_nuget-download.png)
 

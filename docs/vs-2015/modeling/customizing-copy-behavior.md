@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918912"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
@@ -43,19 +43,19 @@ In un linguaggio specifico di dominio (DSL, Domain-Specific Language) creato con
 ## <a name="customizing-copy-and-paste-behavior"></a>Personalizzazione del comportamento della funzione di copia e incolla
  Per ulteriori informazioni sulla personalizzazione del modello utilizzando il codice programma, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- **Abilita o Disabilita copia, taglia e incolla.**
+ **Abilitare o disabilitare le funzioni Copia, Taglia e Incolla**
 In DSL Explorer impostare la proprietà **Enable copy paste** del nodo **Editor** .
 
- **Copiare i collegamenti alla stessa destinazione.** ad esempio per avere una casella per i commenti collegata all'elemento dello stesso soggetto.
+ **Copiare collegamenti nella stessa destinazione,**  ad esempio per avere una casella per i commenti collegata all'elemento dello stesso soggetto.
 Impostare la proprietà **propaga copia** del ruolo su **propaga copia solo a collegamento**. Per ulteriori informazioni, vedere [personalizzazione del comportamento di copia dei collegamenti](#customizeLinks).
 
  Copiare elementi collegati. Ad esempio, quando si copia un nuovo elemento, vengono eseguite le copie anche di eventuali caselle per i commenti collegate.
 Imposta la proprietà **propaga copia** del ruolo in modo da **propagare copia al collegamento e assegnatario di ruolo opposto**. Per ulteriori informazioni, vedere [personalizzazione del comportamento di copia dei collegamenti](#customizeLinks).
 
- **Duplicare rapidamente elementi copiando e incollando.** In genere, l'elemento appena copiato resta selezionato e non è possibile incollare lo stesso tipo di elemento su di esso.
+ **Duplicare rapidamente elementi mediante copia e incolla.**  In genere, l'elemento appena copiato resta selezionato e non è possibile incollare lo stesso tipo di elemento su di esso.
 Aggiungere una direttiva di unione degli elementi alla classe di dominio e impostarla per inoltrare le unioni alla classe padre. Questo avrà lo stesso effetto sulle operazioni di trascinamento. Per altre informazioni, vedere [personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md).
 
- \- oppure -
+ \- - oppure -
 
  Selezionare il diagramma prima di incollare gli elementi, mediante l'override di `ClipboardCommandSet.ProcessOnPasteCommand()`. Aggiungere il codice seguente in un file personalizzato del progetto DslPackage:
 
@@ -77,20 +77,20 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Crea collegamenti aggiuntivi quando l'utente incolla su una destinazione selezionata.** Ad esempio, quando una casella per i commenti viene incollata su un elemento, viene creato un collegamento tra i due.
+ **Creare collegamenti aggiuntivi quando l'utente incolla su una destinazione selezionata.**  Ad esempio, quando una casella per i commenti viene incollata su un elemento, viene creato un collegamento tra i due.
 Aggiungere una direttiva di unione degli elementi alla classe di dominio di destinazione e impostarla per elaborare l'unione mediante l'aggiunta di collegamenti. Questo avrà lo stesso effetto sulle operazioni di trascinamento. Per altre informazioni, vedere [personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md).
 
- \- oppure -
+ \- - oppure -
 
  Eseguire l'override di `ClipboardCommandSet.ProcessOnPasteCommand()` per creare i collegamenti aggiuntivi dopo la chiamata del metodo di base.
 
  **Personalizzare i formati in cui è possibile copiare gli elementi in** applicazioni esterne, ad esempio per aggiungere un bordo al form bitmap.
-Eseguire l'override di *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` nel progetto DslPackage.
+Eseguire l'override di *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` nel progetto DslPackage.
 
  **Personalizzare il modo in cui gli elementi vengono copiati negli Appunti tramite il comando copy, ma non in un'operazione di trascinamento.**
-Eseguire l'override di *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` nel progetto DslPackage.
+Eseguire l'override di *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` nel progetto DslPackage.
 
- **Mantieni il layout delle forme tramite copia e incolla.**
+ **Conservare il layout della forma durante l'operazione di copia e incolla.**
 Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. 
 
  Per ottenere questo effetto, aggiungere le forme e i connettori all'elemento ElementGroupPrototype copiato. Il metodo più conveniente per l'override è ElementOperations.CreateElementGroupPrototype(). Per eseguire questa operazione, aggiungere il codice seguente al progetto DSL:
@@ -147,7 +147,7 @@ partial class MyDslDiagram // EDIT NAME
 
 ```
 
- **Incollare le forme in una posizione scelta, ad esempio la posizione del cursore corrente.**
+ **Incollare le forme in una posizione prescelta, ad esempio la posizione del cursore attuale.**
 Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate.
 
  Per ottenere questo effetto, eseguire l'override di `ClipboardCommandSet.ProcessOnMenuPasteCommand()` per usare la versione di `ElementOperations.Merge()` specifica per il percorso. Per eseguire questa operazione, aggiungere il codice seguente al progetto DslPackage:
@@ -217,10 +217,10 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Consentire all'utente di trascinare e rilasciare gli elementi.**
 Vedere [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizeLinks"></a>Personalizzazione del comportamento di copia dei collegamenti
+## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a> Personalizzazione del comportamento di copia dei collegamenti
  Quando l'utente copia un elemento, il comportamento standard prevede che gli eventuali elementi incorporati vengano anch'essi copiati. È possibile modificare il comportamento di copia standard. Nella definizione DSL selezionare un ruolo a un lato di una relazione e nella Finestra Proprietà impostare il valore di **copia propaga** .
 
- ![Propaga la proprietà copia del ruolo di dominio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Propagazione della proprietà Copia del ruolo di dominio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
 
  Sono disponibili tre valori:
 
@@ -240,15 +240,15 @@ Vedere [procedura: aggiungere un gestore di trascinamento della selezione](../mo
 > [!TIP]
 > Per ulteriori informazioni sulla personalizzazione del modello utilizzando il codice programma, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Diagramma sequenza per l'operazione di copia](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Diagramma sequenza per l'operazione Copia](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
 
- ![Diagramma sequenza dell'operazione incolla](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Diagramma sequenza per l'operazione Incolla](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
 
 #### <a name="to-define-your-own-elementoperations"></a>Per definire il proprio oggetto ElementOperations
 
 1. In un nuovo file del progetto DSL creare una classe derivata da <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è reperibile nel **dsl\generatedcode\diagrams.cs**.
+2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è disponibile in **Dsl\GeneratedCode\Diagrams.cs**.
 
     Nella classe diagramma sovrascrivere <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> per restituire un'istanza della sottoclasse ElementOperations. È necessario restituire la stessa istanza ad ogni chiamata.
 
@@ -377,7 +377,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  Quando l'utente preme CTRL+C o usa il comando di menu Copia, viene chiamato il metodo <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>. È possibile vedere come viene configurato in **DslPackage\Generated Code\CommandSet.cs**. Per ulteriori informazioni sulla configurazione dei comandi, vedere [procedura: aggiungere un comando al menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- È possibile eseguire l'override di ProcessOnMenuCopyCommand aggiungendo una definizione di classe parziale di *MyDsl*`ClipboardCommandSet` nel progetto DslPackage.
+ È possibile eseguire l'override di ProcessOnMenuCopyCommand aggiungendo una definizione di classe parziale di *MyDsl* `ClipboardCommandSet` nel progetto DslPackage.
 
 ```csharp
 using System.Collections.Generic;

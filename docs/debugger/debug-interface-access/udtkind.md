@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 746ff69de6f58f85d16982522c6ac13dcbf4ce6a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460972"
 ---
 # <a name="udtkind"></a>UdtKind
@@ -42,12 +42,12 @@ Il tipo definito dall'utente UdtUnion è un'Unione.
 
 Il tipo definito dall'utente UdtInterface è un'interfaccia.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

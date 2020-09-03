@@ -34,10 +34,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918949"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestione delle eccezioni con il Debugger
@@ -135,13 +135,13 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
    }  
    ```  
   
-    Se l'eccezione **AccessViolationException** è selezionata in **Impostazioni eccezioni**, quando si esegue questo codice nel debugger, l'esecuzione si interrompe alla riga `throw` in **ThrowHandledException()** e **ThrowUnhandledException()** .  
+    Se l'eccezione **AccessViolationException** è selezionata in **Impostazioni eccezioni**, quando si esegue questo codice nel debugger, l'esecuzione si interrompe alla riga `throw` in **ThrowHandledException()** e **ThrowUnhandledException()**.  
   
    Se si desidera ripristinare le impostazioni di eccezioni sulle impostazioni predefinite, è possibile scegliere il pulsante **Ripristina** nella barra degli strumenti:  
   
-   ![Ripristina impostazioni predefinite in impostazioni eccezioni](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Ripristinare i valori predefiniti in Impostazioni eccezione](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a>Impostazione del debugger per continuare in corrispondenza di eccezioni non gestite dall'utente  
+### <a name="setting-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a> Impostazione del debugger per continuare in corrispondenza di eccezioni non gestite dall'utente  
  Se si esegue il debug del codice .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), è possibile impostare il debugger in modo da non interrompere l'esecuzione in corrispondenza di eccezioni non gestite nel codice utente, ma gestite in un'altra posizione.  
   
 1. Nella finestra **Impostazioni eccezioni** , aprire il menu di scelta rapida facendo clic con il pulsante destro del mouse nella finestra e selezionando **Mostra colonne**. (Se **Just My Code**è stato disattivato, questo comando non verrà visualizzato).  
@@ -152,7 +152,7 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
   
    Ad esempio, le applicazioni Web ASP.NET gestiscono le eccezioni convertendole in un codice di stato HTTP 500 ([Gestione delle eccezioni nell'API ASP.NET](/aspnet/web-api/overview/error-handling/exception-handling)), che potrebbe non aiutare a determinare l'origine dell'eccezione. Nell'esempio seguente, il codice utente effettua una chiamata a `String.Format()` che genera un’eccezione <xref:System.FormatException>. L'esecuzione si interrompe come segue:  
   
-   ![interruzioni sull'&#45;eccezione unhanlded utente](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![interruzioni sull'utente&#45;eccezione unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Aggiunta ed eliminazione di eccezioni  
  È possibile aggiungere ed eliminare le eccezioni. È possibile eliminare qualsiasi tipo di eccezione da qualsiasi categoria selezionando l'eccezione e facendo clic sul pulsante **Elimina** (il segno meno) nella barra degli strumenti **Impostazioni eccezioni** o facendo clic con il pulsante destro del mouse sull'eccezione e selezionando **Elimina** dal menu di scelta rapida. L'eliminazione di un'eccezione ha lo stesso effetto di un’eccezione non selezionata, vale a dire che il debugger non interrompe l’esecuzione quando l’eccezione viene generata.  
@@ -179,12 +179,12 @@ public class GenericException<T> : Exception
   
  È possibile aggiungere l'eccezione a **Impostazioni eccezioni** come segue:  
   
- ![Aggiunta di un'eccezione generica](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![Aggiunta di eccezione generica](../debugger/media/addgenericexception.png "AddGenericException")  
   
 ## <a name="see-also"></a>Vedere anche  
  [Continuazione dell'esecuzione dopo un'eccezione](../debugger/continuing-execution-after-an-exception.md)   
  [Procedura: esaminare il codice di sistema dopo un'eccezione](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Procedura: utilizzare i controlli runtime nativi](../debugger/how-to-use-native-run-time-checks.md)   
  [Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
-   informazioni sulle [eccezioni](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)  
+ [Informazioni sulle eccezioni](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0214d3e8d097efa31b3f8b02e67f419226a093a4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461343"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
@@ -220,7 +220,7 @@ La tabella seguente illustra i metodi di `IDiaSymbol` .
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Recupera l'identificatore di forma della tabella virtuale del simbolo.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Recupera un flag che indica se il tipo di dati definito dall'utente è volatile.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando uno dei metodi seguenti:
@@ -261,7 +261,7 @@ Ottenere questa interfaccia chiamando uno dei metodi seguenti:
 Questo esempio Mostra come visualizzare le variabili locali per una funzione in un indirizzo virtuale relativo specifico. Viene inoltre illustrato il modo in cui i simboli di tipi diversi sono correlati tra loro.
 
 > [!NOTE]
-> `CDiaBSTR`è una classe che esegue il wrapping `BSTR` di un oggetto e gestisce automaticamente la liberazione della stringa quando la creazione dell'istanza esce dall'ambito.
+> `CDiaBSTR` è una classe che esegue il wrapping `BSTR` di un oggetto e gestisce automaticamente la liberazione della stringa quando la creazione dell'istanza esce dall'ambito.
 
 ```C++
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )
@@ -336,13 +336,13 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```
 
 ## <a name="requirements"></a>Requisiti
-`Header:`Dia2. h
+`Header:` Dia2. h
 
 Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

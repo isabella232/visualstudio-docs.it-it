@@ -14,16 +14,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12945998b215e9082591fad514bd9c16ab789405
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203884"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica i flag host IntelliSense.  
+Specifica i flag host di IntelliSense.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,16 +40,16 @@ enum IntellisenseHostFlags
   
 #### <a name="parameters"></a>Parametri  
   
-|Members|DESCRIZIONE|  
+|Membri|Descrizione|  
 |-------------|-----------------|  
-|`IHF_READONLYCONTEXT`|Buffer del contesto è di sola lettura.|  
-|`IHF_NOSEPARATESUBJECT`|Nessun testo dell'oggetto. Buffer del contesto contiene IntelliSense-target (implica `!IHF_READONLYCONTEXT`).|  
-|`IHF_SINGLELINESUBJECT`|Testo dell'oggetto non è più-riga in grado di supportare.|  
+|`IHF_READONLYCONTEXT`|Il buffer del contesto è di sola lettura.|  
+|`IHF_NOSEPARATESUBJECT`|Nessun testo soggetto. Il buffer del contesto contiene la destinazione IntelliSense (implica `!IHF_READONLYCONTEXT` ).|  
+|`IHF_SINGLELINESUBJECT`|Il testo dell'oggetto non è in grado di supportare più righe.|  
 |`IHF_FORCECOMMITTOCONTEXT`|Uguale a `CanCommitIntoReadOnlyBuffer`.|  
-|`IHF_OVERTYPE`|La modifica (nell'oggetto o al contesto) deve essere eseguita in modalità sovrascrittura.|  
+|`IHF_OVERTYPE`|La modifica (in oggetto o contesto) deve essere eseguita in modalità sovratipo.|  
   
 ## <a name="requirements"></a>Requisiti  
- SingleFileeditor.idl  
+ SingleFileeditor. idl  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.TextManager.Interop>

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8618a15ab4dcd6c9bbc0d9d8ab9bf347552883b1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460143"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Errore: non è possibile connettersi al nome del computer &lt; &gt; . Impossibile trovare il computer sulla rete.
@@ -44,6 +44,6 @@ Questo messaggio di errore viene visualizzato quando si verifica una delle segue
 
 - Assicurarsi che la password utilizzata per la connessione al computer remoto sia valida e non scaduta.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug remoto](../debugger/remote-debugging.md)
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)

@@ -1,5 +1,5 @@
 ---
-title: Registrazione di un analizzatore di espressioni . Documenti Microsoft
+title: Registrazione di un analizzatore di espressioni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,26 +12,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713202"
 ---
-# <a name="register-an-expression-evaluator"></a>Registrare un analizzatore di espressioniRegister an expression evaluator
+# <a name="register-an-expression-evaluator"></a>Registrare un analizzatore di espressioni
 > [!IMPORTANT]
-> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere [Analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e Esempio di [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- L'analizzatore di espressioni (EE) deve registrarsi come class factory sia con l'ambiente COM di Windows che con Visual Studio. Un EE è impostato come una DLL in modo che venga inserito nello spazio degli indirizzi del motore di debug (DE) o nello spazio degli indirizzi di Visual Studio, a seconda di quale entità crea un'istanza di EE.
+ L'analizzatore di espressioni (EE) deve registrarsi come class factory con l'ambiente COM Windows e Visual Studio. Un EE viene configurato come DLL in modo che venga inserito nello spazio degli indirizzi del motore di debug (DE) o nello spazio degli indirizzi di Visual Studio, a seconda dell'entità che crea un'istanza di EE.
 
-## <a name="managed-code-expression-evaluator"></a>Analizzatore di espressioni di codice gestito
- Un EE di codice gestito viene implementato come libreria di classi, ovvero una DLL che si registra con l'ambiente COM, in genere avviata da una chiamata al programma VSIP, *regpkg.exe*. Il processo effettivo di scrittura delle chiavi del Registro di sistema per l'ambiente COM viene gestito automaticamente.
+## <a name="managed-code-expression-evaluator"></a>Analizzatore di espressioni del codice gestito
+ Un codice gestito EE viene implementato come libreria di classi, ovvero una DLL che si registra con l'ambiente COM, in genere avviata da una chiamata al programma VSIP, *regpkg.exe*. Il processo effettivo di scrittura delle chiavi del registro di sistema per l'ambiente COM viene gestito automaticamente.
 
- Un metodo della classe main <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>è contrassegnato con , a indicare che il metodo deve essere chiamato quando la DLL viene registrata con COM. Questo metodo di `RegisterClass`registrazione, spesso chiamato , esegue l'attività di registrazione della DLL con Visual Studio. Un `UnregisterClass` corrispondente (contrassegnato con il <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> `RegisterClass` ), annulla gli effetti di quando la DLL viene disinstallata.
-Le stesse voci del Registro di sistema vengono effettuate come per un EE scritto in codice non gestito; l'unica differenza è che non `SetEEMetric` esiste alcuna funzione di supporto come fare il lavoro per voi. Di seguito è riportato un esempio del processo di registrazione e annullamento della registrazione.
+ Un metodo della classe principale è contrassegnato con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> , a indicare che il metodo deve essere chiamato quando la dll viene registrata con com. Questo metodo di registrazione, spesso chiamato `RegisterClass` , esegue l'attività di registrazione della dll con Visual Studio. Oggetto corrispondente `UnregisterClass` (contrassegnato con <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ), che annulla gli effetti del `RegisterClass` momento in cui la dll viene disinstallata.
+Le stesse voci del registro di sistema vengono apportate come per un EE scritto in codice non gestito; l'unica differenza è che non esiste alcuna funzione di supporto, ad esempio `SetEEMetric` per eseguire il lavoro. Di seguito è riportato un esempio del processo di registrazione e annullamento della registrazione.
 
 ### <a name="example"></a>Esempio
- La funzione seguente mostra come un codice gestito EE registra e annulla la registrazione con Visual Studio.The following function shows how a managed code EE registers and unregisters itself with Visual Studio.
+ La funzione seguente mostra come un codice gestito EE registra e Annulla la registrazione con Visual Studio.
 
 ```csharp
 namespace EEMC
@@ -97,33 +97,33 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code-expression-evaluator"></a>Analizzatore di espressioni di codice non gestitoUnmanaged code expression evaluator
- La DLL EE `DllRegisterServer` implementa la funzione per registrarsi con l'ambiente COM e Visual Studio.
+## <a name="unmanaged-code-expression-evaluator"></a>Analizzatore di espressioni di codice non gestito
+ La DLL EE implementa la `DllRegisterServer` funzione per la registrazione con l'ambiente com e con Visual Studio.
 
 > [!NOTE]
-> Il codice del codice MyCEE è codice del Registro di sistema di esempio nel file *dllentry.cpp*, che si trova nell'installazione di VSIP in EnVSDK, MyCPkgkgs, MyCEE.
+> È possibile trovare il codice del registro di sistema MyCEE Code Sample nel file *DLLENTRY. cpp*, disponibile nell'installazione di VSIP in EnVSDK\MyCPkgs\MyCEE.
 
 ### <a name="dll-server-process"></a>Processo server DLL
- Durante la registrazione di EE, il server DLL:
+ Quando si registra l'EE, il server DLL:
 
-1. Registra la class `CLSID` factory in base alle normali convenzioni COM.
+1. Registra la class factory `CLSID` come per le normali convenzioni com.
 
-2. Chiama la `SetEEMetric` funzione di supporto per registrare con Visual Studio le metriche Di EE illustrate nella tabella seguente. La `SetEEMetric` funzione e le metriche specificate come segue fanno parte della libreria *dbgmetric.lib.* Per informazioni dettagliate, vedere [gli helper SDK per il debug.](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+2. Chiama la funzione helper `SetEEMetric` per registrare con Visual Studio le metriche EE mostrate nella tabella seguente. La funzione `SetEEMetric` e le metriche specificate come segue fanno parte della libreria *dbgmetric. lib* . Per informazioni dettagliate, vedere [Helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) .
 
     |Metrica|Descrizione|
     |------------|-----------------|
-    |`metricCLSID`|`CLSID`della fabbrica di classi EE|
+    |`metricCLSID`|`CLSID` del class factory EE|
     |`metricName`|Nome dell'EE come stringa visualizzabile|
-    |`metricLanguage`|Il nome della lingua a cui è destinato l'EE|
+    |`metricLanguage`|Nome della lingua progettata per la valutazione dell'EE|
     |`metricEngine`|`GUID`s dei motori di debug (DE) che funzionano con questo EE|
 
     > [!NOTE]
-    > Identifica `metricLanguage``GUID` la lingua in base al `guidLang` `SetEEMetric` nome, ma è l'argomento che seleziona la lingua. Quando il compilatore genera il file di `guidLang` informazioni di debug, deve scrivere l'appropriato in modo che il DE sappia quale EE utilizzare. Il DE richiede in genere `GUID`il provider di simboli per questa lingua , che viene archiviato nel file di informazioni di debug.
+    > `metricLanguage``GUID`Identifica la lingua in base al nome, ma è l' `guidLang` argomento a `SetEEMetric` che seleziona la lingua. Quando il compilatore genera il file di informazioni di debug, deve scrivere l'oggetto appropriato `guidLang` in modo che conosca l'EE da usare. Il DE richiede in genere il provider di simboli per questa lingua `GUID` , archiviata nel file di informazioni di debug.
 
-3. Esegue la registrazione con Visual Studio creando le chiavi\\*X.Y*in HKEY_LOCAL_MACHINE SOFTWARE , dove *X.Y* è la versione di Visual Studio con cui eseguire la registrazione.
+3. Esegue la registrazione con Visual Studio mediante la creazione di chiavi in HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*, dove *x. y* è la versione di Visual Studio con cui eseguire la registrazione.
 
 ### <a name="example"></a>Esempio
- La funzione seguente mostra come un codice non gestito (C ) EE registra e annulla la registrazione con Visual Studio.
+ La funzione seguente mostra come un codice non gestito (C++) EE registra e Annulla la registrazione con Visual Studio.
 
 ```cpp
 /*---------------------------------------------------------
@@ -210,5 +210,5 @@ static HRESULT RegisterMetric( bool registerIt )
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Scrittura di un analizzatore di espressioni CLRWriting a CLR expression evaluator](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

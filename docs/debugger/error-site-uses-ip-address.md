@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 58db12ba9dbbc9526ac86262a6be5b2c0a7f765e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460546"
 ---
 # <a name="error-site-uses-ip-address"></a>Errore: il sito utilizza un indirizzo IP
@@ -36,5 +36,5 @@ Questo errore si verifica quando il debugger tenta di connettersi automaticament
 
 2. Modificare l'impostazione **Identificazione sito Web IIS**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -12,16 +12,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4e686b5e105b0ea0aa80783137093679d4cad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203960"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il `IDSymbol` elemento contiene l'ID della coppia GUID: ID che rappresenta un menu, gruppo o comando. Il GUID viene fornito dall'elemento padre `GuidSymbol` elemento. Il `IDSymbol` elemento ha un `name` attributo che fornisce un nome descrittivo per l'ID, che è contenuto nel `value` attributo.  
+L' `IDSymbol` elemento contiene l'ID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando. Il GUID deriva dall'elemento padre `GuidSymbol` . L' `IDSymbol` elemento dispone di un `name` attributo che fornisce un nome descrittivo per l'ID, contenuto nell' `value` attributo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,8 +36,8 @@ Il `IDSymbol` elemento contiene l'ID della coppia GUID: ID che rappresenta un me
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|name|Richiesto. Nome del simbolo ID.|  
-|value|Richiesto. Valore ID numerico del simbolo ID.|  
+|name|Obbligatorio. Nome del simbolo ID.|  
+|Valore|Obbligatorio. Valore ID numerico del simbolo ID.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  
@@ -46,10 +46,10 @@ Il `IDSymbol` elemento contiene l'ID della coppia GUID: ID che rappresenta un me
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento GuidSymbol](../extensibility/guidsymbol-element.md)|Contiene il GUID della coppia GUID: ID che rappresenta un menu, gruppo o comando. Raggruppa gli elementi `IDSymbol`.|  
+|[Elemento GuidSymbol](../extensibility/guidsymbol-element.md)|Contiene il GUID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando. Raggruppa gli elementi `IDSymbol`.|  
   
-## <a name="remarks"></a>Note  
- Ogni `IDSymbol` elemento in un determinato `GuidSymbol` elemento deve avere un valore univoco `value`. Tuttavia, `IDSymbol` possono essere presenti in un pacchetto di elementi che hanno valori identici purché hanno elementi padre diversi.  
+## <a name="remarks"></a>Osservazioni  
+ Ogni `IDSymbol` elemento in un dato `GuidSymbol` elemento deve avere un univoco `value` . Tuttavia, `IDSymbol` gli elementi con valori identici possono esistere in un pacchetto purché abbiano elementi padre diversi.  
   
 ## <a name="see-also"></a>Vedere anche  
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815123"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: eseguire il debug di un foglio di stile XSLT
@@ -70,7 +70,7 @@ Verranno aggiunte due variabili alla finestra espressione di **controllo 1** , i
 
 3. Nella riga successiva digitare `self::node()` nel campo **nome** , quindi premere **invio**.
 
-   `self::node()`espressione XPath che restituisce il nodo di contesto corrente. Il valore dell'espressione XPath `self::node()` costituisce il primo nodo libro.  Il valore verrà modificato durante le fasi della trasformazione.
+   `self::node()` espressione XPath che restituisce il nodo di contesto corrente. Il valore dell'espressione XPath `self::node()` costituisce il primo nodo libro.  Il valore verrà modificato durante le fasi della trasformazione.
 
 4. Espandere il `self::node()` nodo, quindi espandere il nodo il cui valore è `price` .
 

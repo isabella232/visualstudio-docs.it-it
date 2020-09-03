@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE . Documenti Microsoft
+title: REFERENCE_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713723"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
@@ -49,18 +49,18 @@ public enum enum_REFERENCE_COMPARE { 
  Specifica un confronto di uguale a.
 
  `REF_COMPARE_LESS_THAN`\
- Specifica un confronto minore di.
+ Specifica un confronto di minore di.
 
  `REF_COMPARE_GREATER_THAN`\
  Specifica un confronto maggiore di.
 
 ## <a name="remarks"></a>Osservazioni
- Passato come argomento per il [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) metodo.
+ Passato come argomento al metodo [compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 

@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918482"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Eccezioni dei criteri relativi al ciclo di vita di Visual Studio
@@ -24,22 +24,22 @@ Visual Studio include una raccolta di compilatori, linguaggi, runtime, ambienti 
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Componenti esterni che seguono criteri relativi al ciclo di vita diversi da quelli di Visual Studio  
  La tabella seguente elenca i componenti delle piattaforme Microsoft che possono essere inclusi in Visual Studio (a seconda dell'edizione specifica del software Visual Studio) e che sono soggetti a tempistiche e criteri di supporto specifici.  
   
-|FAMIGLIA DI PRODOTTI|EXTERNAL NAME|  
+|FAMIGLIA DI PRODOTTI|NOME ESTERNO|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
 |[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|.NET 4.5.1 MT Pack (Classic)<br /><br /> .NET 4.5.1 Multi-targeting Pack (Store)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> .NET 4.5.1 Redist<br /><br /> .NET 4.5.1 Redist Language Packs<br /><br /> .NET 4.5.1 SDK|  
-|[ASP.NET Web Stack](https://support.microsoft.com/kb/2902020)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> API Web ASP.NET<br /><br /> ASP.NET Web API 2<br /><br /> Pagine Web ASP.NET 2<br /><br /> Pagine Web ASP.NET 3|  
+|[ASP.NET Web Stack](https://support.microsoft.com/kb/2902020)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> API Web ASP.NET<br /><br /> API Web ASP.NET 2<br /><br /> Pagine Web ASP.NET 2<br /><br /> Pagine Web ASP.NET 3|  
 |[Entity Framework 6](https://support.microsoft.com/kb/2902020)|Entity Framework 6|  
 |[Exchange 2013](https://support.microsoft.com/kb/2902020)|Servizi Web Exchange|  
 |[Microsoft OWIN](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
 |[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Microsoft Web Developer Tools 2013|  
-|Gli aggiornamenti di questi componenti vengono distribuiti tramite NuGet e non seguono i criteri relativi al ciclo di vita standard di Microsoft.  Per altre informazioni, vedere [http://docs.nuget.org/](/nuget/).|Gestore dei token Web JSON per Microsoft .NET Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Framework di ottimizzazione Web<br /><br /> WebGrease|  
+|Gli aggiornamenti di questi componenti vengono distribuiti tramite NuGet e non seguono i criteri relativi al ciclo di vita standard di Microsoft.  [http://docs.nuget.org/](/nuget/)Per ulteriori informazioni, vedere.|Gestore dei token Web JSON per Microsoft .NET Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Framework di ottimizzazione Web<br /><br /> WebGrease|  
 |[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Open XML SDK|  
 |[Criteri di Online Services](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Ads SDK|  
 |[SharePoint 2013](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|Componente client di SharePoint<br /><br /> SharePoint Foundation 2013<br /><br /> Estensioni di Windows Identity Foundation|  
-|[Silverlight 5](https://support.microsoft.com/lifecycle/search/?p1=16278)<br /><br /> <br />> Vedere anche: [http://support.microsoft.com/gp/lifean45](https://support.microsoft.com/gp/lifean45)|Silverlight 5 Runtime<br /><br /> Silverlight 5 SDK|  
+|[Silverlight 5](https://support.microsoft.com/lifecycle/search/?p1=16278)<br /><br /> <br />> vedere anche: [http://support.microsoft.com/gp/lifean45](https://support.microsoft.com/gp/lifean45)|Silverlight 5 Runtime<br /><br /> Silverlight 5 SDK|  
 |[SQL Server 2008 R2](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|Tipi CLR di sistema SQL (SQL Server 2008 R2)|  
 |[SQL Server 2012](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL Command Line Utilities<br /><br /> Servizio di linguaggio SQL - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> Tipi CLR di sistema SQL (SQL Server 2012)<br /><br /> SQLDOM|  
 |[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL Command Line Utilities<br /><br /> Servizio di linguaggio SQL - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> Tipi CLR di sistema SQL (SQL Server 2014)<br /><br /> SQLDOM|  
@@ -49,4 +49,4 @@ Visual Studio include una raccolta di compilatori, linguaggi, runtime, ambienti 
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> Libreria Windows per JavaScript (WinJS)|  
-|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> Vedere anche: [criteri del ciclo](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy) di vita online|SDK di Servizi mobili di Microsoft Azure<br /><br /> Strumenti di Servizi mobili di Microsoft Azure|
+|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> vedere anche: [criteri del ciclo](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy) di vita online|Microsoft Azure Mobile Services SDK<br /><br /> Strumenti di Servizi mobili di Microsoft Azure|

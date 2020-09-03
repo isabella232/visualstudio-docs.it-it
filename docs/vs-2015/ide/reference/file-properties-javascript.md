@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719a956558141684c7d755aafb6929f4368482f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657716"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
@@ -68,7 +68,7 @@ ms.locfileid: "72657716"
 ## <a name="reference-file-properties"></a>Proprietà File di riferimento
  In questa sezione vengono descritte le proprietà comuni ai file cui fa riferimento un'[!INCLUDE[win8_app_js](../../includes/win8-app-js-md.md)]. Quando si seleziona un riferimento come un file con estensione .winmd, un riferimento SDK, un riferimento da progetto a progetto o un riferimento ad assembly in Esplora soluzioni, le altre proprietà possono essere visualizzate nella finestra Proprietà, in base al tipo di file.
 
-### <a name="culture"></a>culture
+### <a name="culture"></a>Cultura
  Visualizza la lingua associata al riferimento.
 
 ### <a name="file-type"></a>Tipo di file
@@ -77,7 +77,7 @@ ms.locfileid: "72657716"
 ### <a name="file-version"></a>Versione file
  Visualizza la versione file del riferimento.
 
-### <a name="identity"></a>identità
+### <a name="identity"></a>Identità
  Visualizza l'identità del riferimento utilizzato nel progetto, archiviato nel file di progetto.
 
 ### <a name="package"></a>Pacchetto
@@ -89,10 +89,10 @@ ms.locfileid: "72657716"
 ### <a name="sdk-path"></a>Percorso SDK
  Visualizza il percorso al file SDK cui viene fatto riferimento.
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
  Visualizza l'URI che deve essere incluso nei file HTML o JavaScript del progetto per includere il file come file di origine.
 
-### <a name="version"></a>Versione
+### <a name="version"></a>Version
  Visualizza la versione del riferimento.
 
 ## <a name="see-also"></a>Vedere anche

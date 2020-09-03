@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a36da3feecfe1af664e35fa50d616d2a94fb0a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461511"
 ---
 # <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
@@ -33,7 +33,7 @@ HRESULT get_value (
 #### <a name="parameters"></a>Parametri
 `pRetVal`
 
-[in, out] `VARIANT`Oggetto compilato con il valore di una costante.
+[in, out] `VARIANT` Oggetto compilato con il valore di una costante.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
@@ -41,7 +41,7 @@ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FAL
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 La variante fornita deve essere inizializzata prima di essere passata a questo metodo. Per ulteriori informazioni, vedere l'esempio.
 
 ## <a name="example"></a>Esempio

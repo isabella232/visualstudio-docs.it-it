@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114530"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali tipi di Web browser includere in uno scenario di test di carico
@@ -74,10 +74,10 @@ Il pulsante **Distribuisci** viene usato per allocare uniformemente i valori per
 > [!WARNING]
 > Il pulsante **Distribuisci** esegue l'override degli eventuali elementi bloccati.
 
-È anche possibile digitare i valori **%** percentuali direttamente nella colonna anziché utilizzare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
+È anche possibile digitare i valori percentuali direttamente nella **%** colonna anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
 
 > [!NOTE]
-> I cursori sono disabilitati quando il totale non viene aggiunto fino al **%** 100% o quando i valori percentuali immessi nella colonna sono decimali.
+> I dispositivi di scorrimento sono disabilitati se il totale non è pari al 100% oppure quando i valori percentuali immessi nella **%** colonna sono decimali.
 
 Quando si immettono manualmente le percentuali, assicurarsi che la somma di tutti gli elementi sia 100%. Quando si salva una combinazione, se la somma non è pari al 100%, verrà richiesto di accettare i valori percentuali così come sono o di tornare indietro e regolarli. Se si sceglie di accettarle così come sono, le percentuali verranno ripartite proporzionalmente al 100%.  Se ad esempio si dispone di due elementi che sono stati impostati manualmente su 80% e 40%, il primo elemento verrà impostato su 66,67% (80 diviso 120) mentre il secondo su 33,33% (40 diviso 120).
 

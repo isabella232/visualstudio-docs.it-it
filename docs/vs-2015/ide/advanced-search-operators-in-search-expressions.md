@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5088fc04f4440260bdb9d3f040d99061c05d243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620341"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Operatori di ricerca avanzati nelle espressioni di ricerca
@@ -31,7 +31,7 @@ Usando gli operatori di ricerca avanzati, è possibile affinare la ricerca di co
 > [!WARNING]
 > È necessario immettere gli operatori di ricerca avanzati seguiti da due punti senza spazio affinché il motore di ricerca li possa riconoscere.
 
-|Per cercare|Usa|Esempio|Risultato|
+|Per cercare|Uso|Esempio|Risultato|
 |-------------------|---------|-------------|------------|
 |Un termine nel titolo dell'argomento|title:|title:binaryreader|Argomenti che contengono "binaryreader" nei titoli.|
 |Un termine in un esempio di codice|code:|code:readdouble|Argomenti che contengono "readdouble" in un esempio di codice.|
@@ -40,7 +40,7 @@ Usando gli operatori di ricerca avanzati, è possibile affinare la ricerca di co
 
  È possibile usare l'operatore code: per trovare contenuti relativi a diversi linguaggi di programmazione. Restituisce tuttavia solo i risultati relativi al contenuto contrassegnato con un linguaggio di programmazione specifico. La tabella seguente elenca i linguaggi di programmazione supportati da questo operatore:
 
-|Linguaggio di programmazione|Usa|
+|Linguaggio di programmazione|Uso|
 |--------------------------|---------|
 |Visual Basic|code:vb<br /><br /> Oppure<br /><br /> code:visualbasic|
 |C#|code:c#<br /><br /> Oppure<br /><br /> code:csharp|

@@ -1,5 +1,5 @@
 ---
-title: Esempio di implementazione della modifica dei valori Documenti Microsoft
+title: Implementazione di esempio di valori modificabili | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713121"
 ---
-# <a name="sample-implementation-of-changing-values"></a>Esempio di implementazione della modifica dei valori
+# <a name="sample-implementation-of-changing-values"></a>Implementazione di esempio di valori modificabili
 > [!IMPORTANT]
-> In Visual Studio 2015, questo modo di implementare gli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere [Analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e Esempio di [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- A ogni locale visualizzato nella finestra **Variabili locali** è associato un oggetto [IDebugProperty2.](../../extensibility/debugger/reference/idebugproperty2.md) Questo `IDebugProperty2` oggetto contiene il nome, il valore e il tipo del locale. Quando un utente modifica il valore di un locale, Visual Studio chiama [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) per aggiornare il valore della lingua locale in memoria. In questo esempio, la classe `CFieldProperty` locale è `IDebugProperty2` rappresentata dalla classe che implementa l'interfaccia.
+ A ogni locale visualizzato nella finestra **variabili locali** è associato un oggetto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) . Questo `IDebugProperty2` oggetto contiene il nome, il valore e il tipo del locale. Quando un utente modifica il valore di un oggetto locale, Visual Studio chiama [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) per aggiornare il valore del locale in memoria. In questo esempio, il locale è rappresentato dalla `CFieldProperty` classe che implementa l' `IDebugProperty2` interfaccia.
 
 > [!NOTE]
-> Per le espressioni **Watch** e **QuickWatch,** il `CValueProperty` valore modificato è rappresentato dalla classe nell'esempio MyCEE. Tuttavia, l'implementazione di `IDebugProperty2::SetValueAsString` è la stessa come mostrato qui.
+> Per le espressioni di **controllo e controllo** **immediato** , il valore da modificare è rappresentato dalla `CValueProperty` classe nell'esempio MyCEE. Tuttavia, l'implementazione di `IDebugProperty2::SetValueAsString` è identica a quella illustrata di seguito.
 
- L'implementazione di `IDebugProperty2::SetValueAsString` esegue le seguenti attività:
+ L'implementazione di `IDebugProperty2::SetValueAsString` esegue le attività seguenti:
 
 1. Valuta l'espressione per produrre un valore.
 
-2. Associa l'oggetto [associato IDebugField](../../extensibility/debugger/reference/idebugfield.md) oggetto alla relativa posizione di memoria e produce un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) oggetto.
+2. Associa l'oggetto [IDebugField](../../extensibility/debugger/reference/idebugfield.md) associato alla relativa posizione di memoria e produce un oggetto [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) .
 
 3. Converte il valore in una serie di byte.
 
 4. Chiama [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) per archiviare i byte in memoria.
 
 ## <a name="managed-code"></a>Codice gestito
- Il codice seguente è `IDebugProperty2::SetValueAsString` un'implementazione di nel codice gestito.
+ Il codice seguente è un'implementazione di `IDebugProperty2::SetValueAsString` nel codice gestito.
 
 ```csharp
 namespace EEMC
@@ -223,7 +223,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Codice non gestito
- Il codice seguente è `IDebugProperty2::SetValueAsString` un'implementazione di nel codice gestito. La funzione `FieldCoerceValueType` di supporto (non illustrata) impone a `VARIANT` a per essere `FieldSetValue` un tipo specifico e verifica che il valore è uno dei tipi in grado di gestire.
+ Il codice seguente è un'implementazione di `IDebugProperty2::SetValueAsString` nel codice gestito. La funzione helper `FieldCoerceValueType` (non mostrata) impone a un `VARIANT` tipo specifico e assicura che il valore sia uno dei tipi che `FieldSetValue` può gestire.
 
 ```cpp
 STDMETHODIMP CFieldProperty::SetValueAsString(
@@ -421,5 +421,5 @@ HRESULT FieldSetValue(
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Modifica del valore di un](../../extensibility/debugger/changing-the-value-of-a-local.md)
+- [Modifica del valore di un oggetto locale](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md)

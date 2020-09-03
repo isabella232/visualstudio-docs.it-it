@@ -18,18 +18,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630951"
 ---
 # <a name="wpf-targets-files"></a>File WPF con estensione targets
 
-Windows Presentation Foundation (WPF) estende MSBuild aggiungendo un set di attività specifiche di WPF combinate in un file *con estensione targets* speciale, *Microsoft.WinFX.targets*. Questo file combina il set di attività MSBuild necessarie per compilare un progetto MSBuild in WPFWPF.
+Windows Presentation Foundation (WPF) estende MSBuild mediante l'aggiunta di un set di attività specifiche di WPF combinate in un file speciale con *estensione targets* , *Microsoft. WinFX. targets*. Questo file combina il set di attività MSBuild necessarie per compilare un progetto MSBuild in WPF.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [File con estensione targets MSBuildMSBuild .targets files](../msbuild/msbuild-dot-targets-files.md)
-- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [File con estensione targets di MSBuild](../msbuild/msbuild-dot-targets-files.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 - [Compilazione di un'applicazione WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

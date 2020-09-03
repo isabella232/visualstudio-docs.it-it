@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 984b9d5d9bfd5c3800ec816e1f57489e0348f53c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461287"
 ---
 # <a name="idiatable"></a>IDiaTable
@@ -38,7 +38,7 @@ La tabella seguente illustra i metodi di `IDiaTable` .
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Recupera il numero di elementi nella tabella.|
 |[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Recupera un riferimento a un indice di voce specifico.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 Questa interfaccia implementa i `IEnumUnknown` metodi di enumerazione nello spazio dei nomi Microsoft. VisualStudio. OLE. Interop. L' `IEnumUnknown` interfaccia di enumerazione è molto più efficiente per scorrere il contenuto della tabella rispetto ai metodi [IDiaTable:: Get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) e [IDiaTable:: Item](../../debugger/debug-interface-access/idiatable-item.md) .
 
 L'interpretazione dell' `IUnknown` interfaccia restituita dal `IDiaTable::Item` metodo o dal `Next` Metodo (nello spazio dei nomi Microsoft. VisualStudio. OLE. Interop) dipende dal tipo di tabella. Se, ad esempio, l' `IDiaTable` interfaccia rappresenta un elenco di origini inserite, l'interfaccia deve essere sottoposta `IUnknown` a query per l'interfaccia [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .
@@ -66,7 +66,7 @@ Le interfacce seguenti sono implementate con l' `IDiaTable` interfaccia, ovvero 
 La prima funzione, `ShowTableNames` , Visualizza i nomi di tutte le tabelle della sessione. La seconda funzione, `GetTable` , esegue la ricerca in tutte le tabelle di una tabella che implementa un'interfaccia specificata. La terza funzione, `UseTable` , Mostra come usare la `GetTable` funzione.
 
 > [!NOTE]
-> `CDiaBSTR`è una classe che esegue il wrapping `BSTR` di un oggetto e gestisce automaticamente la liberazione della stringa quando la creazione dell'istanza esce dall'ambito.
+> `CDiaBSTR` è una classe che esegue il wrapping `BSTR` di un oggetto e gestisce automaticamente la liberazione della stringa quando la creazione dell'istanza esce dall'ambito.
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -137,7 +137,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

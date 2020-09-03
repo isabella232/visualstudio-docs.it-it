@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION . Documenti Microsoft
+title: TEXT_POSITION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713419"
 ---
 # <a name="text_position"></a>TEXT_POSITION
@@ -41,19 +41,19 @@ public struct TEXT_POSITION { 
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
 `dwLine`\
 Indice della riga nel file di origine.
 
 `dwColumn`\
-Offset carattere in riga.
+Offset carattere nella riga.
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa struttura viene utilizzata nelle strutture [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
+Questa struttura viene utilizzata nelle strutture [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
-Questa struttura viene compilata da una chiamata ai metodi seguenti:This structure is filled in by a call to the following methods:
+Questa struttura viene compilata mediante una chiamata ai metodi seguenti:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -63,9 +63,9 @@ Questa struttura viene compilata da una chiamata ai metodi seguenti:This structu
 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
-Questa struttura viene passata come parametro ai metodi seguenti:This structure is passed as a parameter to the following methods:
+Questa struttura viene passata come parametro ai metodi seguenti:
 
-- [Gettext](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
+- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 
 - [onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)
 
@@ -77,9 +77,9 @@ Questa struttura viene passata come parametro ai metodi seguenti:This structure 
 
 ## <a name="requirements"></a>Requisiti
 
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
@@ -90,7 +90,7 @@ Questa struttura viene passata come parametro ai metodi seguenti:This structure 
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
-- [Gettext](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
+- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a8ff19ab503efe58e207d36a87babb5b8a80b28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645389"
 ---
 # <a name="text-editor-options-dialog-box"></a>Finestra di dialogo Opzioni editor di testo
@@ -54,15 +54,15 @@ Le opzioni dell'editor nella finestra di dialogo **Opzioni** consentono di perso
 
  [Opzioni, editor di testo, di base (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Illustra le opzioni di Visual Basic.
 
- [Opzioni, editor di testo, CC++/, formattazione](../../ide/reference/options-text-editor-c-cpp-formatting.md) illustra leC++ opzioni di formattazione c/.
+ [Opzioni, editor di testo, C/C++, formattazione](../../ide/reference/options-text-editor-c-cpp-formatting.md) Illustra le opzioni di formattazione di C/C++.
 
- [Opzioni, editor di testo, CC++/, avanzate](../../ide/reference/options-text-editor-c-cpp-advanced.md) spiega leC++ opzioni c/avanzate.
+ [Opzioni, editor di testo, C/C++, avanzate](../../ide/reference/options-text-editor-c-cpp-advanced.md) Illustra le opzioni avanzate di C/C++.
 
- [Opzioni, editor di testo C#,, formattazione](../../ide/reference/options-text-editor-csharp-formatting.md) illustra C# le opzioni di formattazione.
+ [Opzioni, editor di testo, C#, formattazione](../../ide/reference/options-text-editor-csharp-formatting.md) Illustra le opzioni di formattazione C#.
 
- [Opzioni, editor di testo C#,, avanzate](../../ide/reference/options-text-editor-csharp-advanced.md) spiega C# le opzioni avanzate.
+ [Opzioni, editor di testo, C#, avanzate](../../ide/reference/options-text-editor-csharp-advanced.md) Illustra le opzioni avanzate di C#.
 
- [Opzioni, editor di testo C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) spiega C# le opzioni di IntelliSense.
+ [Opzioni, editor di testo, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) Illustra le opzioni di IntelliSense per C#.
 
  [Opzioni, editor di testo, JavaScript, formattazione](../../ide/reference/options-text-editor-javascript-formatting.md) Illustra le opzioni di formattazione di JavaScript.
 

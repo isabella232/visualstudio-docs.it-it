@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f4777bf6c94997b9291bb84fed07befa197a8c5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620307"
 ---
 # <a name="application-properties"></a>Application Properties
@@ -53,8 +53,8 @@ ms.locfileid: "72620307"
 
   Le attività disponibili per l'applicazione dipendono dal linguaggio di sviluppo usato.
 
-## <a name="in-this-section"></a>In questa sezione
- [Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Procedura: specificare l'icona di un'applicazione (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 ## <a name="see-also"></a>Vedere anche
- Pagina [applicazione, Progettazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [pagina applicazione, Progettazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md) [Introduzione a Progettazione progetti pubblicazione di](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md) [protezione delle applicazioni ClickOnce](../deployment/securing-clickonce-applications.md) [Gestione delle proprietà di debug](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [gestione delle proprietà di compilazione](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [gestione delle risorse dell'applicazione (.NET)](../ide/managing-application-resources-dotnet.md) [gestione delle impostazioni dell'applicazione (.NET)](../ide/managing-application-settings-dotnet.md)
+ Pagina [applicazione, Progettazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [pagina applicazione, Progettazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md) [Introduzione a Progettazione progetti](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md) [protezione delle applicazioni ClickOnce](../deployment/securing-clickonce-applications.md) [gestione delle proprietà di debug](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68) [gestione delle proprietà di compilazione](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [gestione delle risorse dell'applicazione (.NET)](../ide/managing-application-resources-dotnet.md) [gestione delle impostazioni dell'applicazione (.NET)](../ide/managing-application-settings-dotnet.md)

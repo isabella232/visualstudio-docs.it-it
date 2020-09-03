@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719b31e834b5410dd137a0c5b69cc07ae01651e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645464"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Procedura: compilare più configurazioni contemporaneamente
@@ -25,7 +25,7 @@ ms.locfileid: "72645464"
 
 2. Tutti i progetti di Visual Basic
 
-   Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
+   Per ulteriori informazioni sulle configurazioni della build, vedere [informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>Per compilare un progetto in più configurazioni della build
 

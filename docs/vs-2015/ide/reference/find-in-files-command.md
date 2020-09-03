@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 831a67fe567c2e6ae1e288d1bc7ee91026ff2273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651030"
 ---
 # <a name="find-in-files-command"></a>Comando Cerca nei file
@@ -37,7 +37,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="arguments"></a>Argomenti
  `findwhat` Obbligatorio. Testo da cercare.
 
-## <a name="switches"></a>Opzioni
+## <a name="switches"></a>Commutatori
  /case o /c Facoltativo. Vengono rilevate corrispondenze solo se i caratteri maiuscoli e minuscoli corrispondono esattamente a quelli specificati nell'argomento `findwhat`.
 
  /ext: `extensions` Facoltativo. Specifica l'estensione dei file nei quali eseguire la ricerca. Se non è specificato e in precedenza è stata immessa un'estensione, viene usata tale estensione.

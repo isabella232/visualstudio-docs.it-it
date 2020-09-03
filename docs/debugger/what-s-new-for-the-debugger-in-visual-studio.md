@@ -21,10 +21,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944225"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novità relative al debugger di Visual Studio 2017
@@ -68,7 +68,7 @@ Il debugger include le nuove funzionalità seguenti:
 
     ![Cerca in Connetti a processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Per ulteriori informazioni su queste nuove funzionalità, vedere le [Note sulla versione per [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes).
+Per ulteriori informazioni su queste nuove funzionalità, vedere le [Note sulla versione [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] di ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Vedere anche
 

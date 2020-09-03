@@ -1,5 +1,5 @@
 ---
-title: Attività di MSBuild specifiche per C. Documenti Microsoft
+title: Attività di MSBuild specifiche di C++ | Microsoft Docs
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -16,49 +16,49 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6393e771f9e9ed862d21397dabacdb3f3808c386
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633148"
 ---
-# <a name="msbuild-tasks-specific-to-c"></a>Attività di MSBuild specifiche per C
+# <a name="msbuild-tasks-specific-to-c"></a>Attività di MSBuild specifiche di C++
 
-Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Quando viene installato il linguaggio C, sono disponibili le attività seguenti, oltre a quelle installate con MSBuild. Per ulteriori informazioni, vedere [Cenni preliminari su MSBuild (C)](/cpp/build/msbuild-visual-cpp-overview).
+Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Quando viene installato C++, sono disponibili le attività seguenti, oltre a quelle installate con MSBuild. Per ulteriori informazioni, vedere [Cenni preliminari su MSBuild (C++)](/cpp/build/msbuild-visual-cpp-overview).
 
  Ogni attività dispone di parametri propri e anche dei parametri seguenti.
 
 | Parametro | Descrizione |
 |-------------------| - |
-| `Condition` | Parametro `String` facoltativo.<br /><br /> Espressione `Boolean` utilizzata dal motore MSBuild per determinare se questa attività verrà eseguita. Per informazioni sulle condizioni supportate da MSBuild, vedere [Condizioni](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per ulteriori informazioni, vedere [Procedura: ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `Condition` | Parametro `String` facoltativo.<br /><br /> `Boolean`Espressione utilizzata dal motore MSBuild per determinare se questa attività verrà eseguita. Per informazioni sulle condizioni supportate da MSBuild, vedere [condizioni](../msbuild/msbuild-conditions.md). |
+| `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [Target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori delle attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [procedura: ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ### <a name="related-topics"></a>Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Attività BscMake](../msbuild/bscmake-task.md)|Esegue il wrapping dello strumento Microsoft Browse Information Maintenance Utility (*bscmake.exe*).|
-|[Attività CL](../msbuild/cl-task.md)|Esegue il wrapping dello strumento del compilatore di C,*cl.exe*.|
-|[Attività CPPClean](../msbuild/cppclean-task.md)|Elimina i file temporanei creati da MSBuild quando viene compilato un progetto in c'è.|
-|[Attività ClangCompile](../msbuild/clangcompile-task.md)|Esegue il wrapping dello strumento del compilatore di C,*clang.exe*.|
-|[Attività CustomBuild](../msbuild/custombuild-task.md)|Esegue il wrapping dello strumento del compilatore di C,*ovvero cmd.exe*.|
+|[attività CL](../msbuild/cl-task.md)|Esegue il wrapping dello strumento compilatore C++ (*cl.exe*).|
+|[Attività CPPClean](../msbuild/cppclean-task.md)|Elimina i file temporanei creati da MSBuild quando viene compilato un progetto C++.|
+|[Attività ClangCompile](../msbuild/clangcompile-task.md)|Esegue il wrapping dello strumento compilatore C++ (*clang.exe*).|
+|[Attività CustomBuild](../msbuild/custombuild-task.md)|Esegue il wrapping dello strumento compilatore C++ (*cmd.exe*).|
 |[Attività FXC](../msbuild/fxc-task.md)|Usare i compilatori di shader HLSL nel processo di compilazione.|
 |[GetOutOfDateItems](../msbuild/getoutofdateitems-task.md)|Legge i tlog precedenti, scrive nuovi tlog e restituisce set di elementi che non sono aggiornati. (attività di supporto)|
 |[GetOutputFileName](../msbuild/getoutputfilename-task.md)|Ottiene il nome del file di output per cl e altri strumenti, che consentono di specificare solo la directory di output o il nome di file completo o nulla. (attività di supporto)|
-|[Attività LIB](../msbuild/lib-task.md)|Esegue il wrapping dello strumento Gestione librerie a 32 bit di Microsoft (*lib.exe*).|
-|[Attività di collegamento](../msbuild/link-task.md)|Esegue il wrapping dello strumento del linker di C,*link.exe*.|
-|[Attività MIDL](../msbuild/midl-task.md)|Esegue il wrapping dello strumento del compilatore MIDL (Microsoft Interface Definition Language) (*midl.exe*).|
-|[Attività MT](../msbuild/mt-task.md)|Esegue il wrapping dello strumento Microsoft Manifest (*mt.exe*).|
+|[LIB (attività)](../msbuild/lib-task.md)|Esegue il wrapping dello strumento di gestione librerie a 32 bit di Microsoft (*lib.exe*).|
+|[Link (attività)](../msbuild/link-task.md)|Esegue il wrapping dello strumento linker di C++ (*link.exe*).|
+|[MIDL (attività)](../msbuild/midl-task.md)|Esegue il wrapping dello strumento compilatore Microsoft Interface Definition Language (MIDL) (*midl.exe*).|
+|[attività MT](../msbuild/mt-task.md)|Esegue il wrapping dello strumento Manifesto Microsoft (*mt.exe*).|
 |[Attività MultiToolTask](../msbuild/multitooltask-task.md)|Nessuna descrizione.|
 |[Attività ParallelCustomBuild](../msbuild/parallelcustombuild-task.md)|Eseguire istanze parallele dell'[attività CustomBuild](../msbuild/custombuild-task.md).|
-|[Attività RC](../msbuild/rc-task.md)|Esegue il wrapping dello strumento Del compilatore di risorse di Microsoft Windows (*rc.exe*).|
+|[RC (attività)](../msbuild/rc-task.md)|Esegue il wrapping dello strumento compilatore di risorse di Microsoft Windows (*rc.exe*).|
 |[Attività SetEnv](../msbuild/setenv-task.md)|Imposta o elimina il valore di una variabile di ambiente specificata.|
 |[Classe di base TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md)|Eredita da [VCToolTask](../msbuild/vctooltask-base-class.md).|
-|[Attività VCMessage](../msbuild/vcmessage-task.md)|Registra i messaggi di avviso e i messaggi di errore durante una compilazione. (Non estendibile. Solo per uso interno).|
+|[attività VCMessage](../msbuild/vcmessage-task.md)|Registra i messaggi di avviso e i messaggi di errore durante una compilazione. (Non estendibile. Solo per uso interno).|
 |[Classe di base VCToolTask](../msbuild/vctooltask-base-class.md)|Eredita da [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask).|
-|[attività XDCMake](../msbuild/xdcmake-task.md)|Esegue il wrapping dello strumento di documentazione XML (*xdcmake.exe*), che unisce i file dei commenti del documento XML (*xdc*) in un file *XML.*|
-|[Attività XSD](../msbuild/xsd-task.md)|Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera file di schema o di classe da un'origine. *Vedere la nota riportata di seguito.*|
-|[Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)|Descrive gli elementi del sistema MSBuild.|
+|[attività XDCMake](../msbuild/xdcmake-task.md)|Esegue il wrapping dello strumento di documentazione XML (*xdcmake.exe*), che unisce i file di commento del documento XML (con*estensione xdc*) in un file con estensione *XML* .|
+|[XSD (attività)](../msbuild/xsd-task.md)|Esegue il wrapping dello strumento XML Schema Definition (*xsd.exe*), che genera file di schema o di classe da un'origine. *Vedere la nota che segue.*|
+|[Riferimenti a MSBuild](../msbuild/msbuild-reference.md)|Descrive gli elementi del sistema MSBuild.|
 |[Attività](../msbuild/msbuild-tasks.md)|Descrive le attività, che sono unità di codice che possono essere combinate per produrre una compilazione.|
 |[Scrittura di attività](../msbuild/task-writing.md)|Descrive come creare un'attività.|
 

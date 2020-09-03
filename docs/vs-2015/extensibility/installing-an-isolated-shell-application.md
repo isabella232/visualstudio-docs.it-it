@@ -12,10 +12,10 @@ caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944259"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installazione di un'applicazione di shell isolata
@@ -34,7 +34,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
 ## <a name="prerequisites"></a>Prerequisiti  
  Per eseguire le procedure descritte in questo argomento, è necessario che nel computer siano installati gli strumenti seguenti.  
   
-- L'SDK di Visual Studio  
+- Visual Studio SDK  
   
 - Il [set di strumenti XML Windows Installer](https://documentation.help/WiX-Toolset/index.html/) versione 3,6  
   
@@ -47,7 +47,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
   
 1. Modificare ogni file con estensione vsixmanifest nella soluzione.  
   
-     Nell'elemento `Identifier` aggiungere un elemento `InstalledByMSI` e un elemento `SystemComponent`, quindi impostare i relativi valori su `true`.  
+     Nell' `Identifier` elemento aggiungere un `InstalledByMSI` elemento e un `SystemComponent` elemento e quindi impostarne i valori su `true` .  
   
      Questi elementi impediscono al programma di installazione VSIX di provare a installare i componenti e all'utente di disinstallarli usando la finestra di dialogo **estensioni e aggiornamenti** .  
   
@@ -61,7 +61,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
  Quindi, creare le voci del registro di sistema, entrambe nel file. reg per la soluzione e in ApplicationRegistry. wxs.  
   
 ### <a name="detection-blocks"></a>Blocchi di rilevamento  
- Un blocco di rilevamento è costituito da un elemento `Property` che specifica un prerequisito da rilevare e da un elemento `Condition` che specifica un messaggio da restituire se il prerequisito non è presente nel computer. Ad esempio, l'applicazione shell richiederà il ridistribuibile di Microsoft Visual Studio Shell e il blocco di rilevamento sarà simile al markup seguente.  
+ Un blocco di rilevamento è costituito da un `Property` elemento che specifica un prerequisito da rilevare e da un `Condition` elemento che specifica un messaggio da restituire se il prerequisito non è presente nel computer. Ad esempio, l'applicazione shell richiederà il ridistribuibile di Microsoft Visual Studio Shell e il blocco di rilevamento sarà simile al markup seguente.  
   
 ```xml  
 <Property Id="ISOSHELLSFX">  
@@ -85,7 +85,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Per impostare il layout dei componenti della shell  
   
-1. Creare una gerarchia di elementi `Directory` per rappresentare tutte le directory da creare nella file system sul computer di destinazione, come illustrato nell'esempio seguente.  
+1. Creare una gerarchia di `Directory` elementi per rappresentare tutte le directory da creare nel file System nel computer di destinazione, come illustrato nell'esempio seguente.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -103,7 +103,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
     </Directory>  
     ```  
   
-     A queste directory viene fatto riferimento da `Id` quando vengono specificati i file che devono essere installati.  
+     A queste directory viene fatto riferimento `Id` quando si specificano i file che devono essere installati.  
   
 2. Identificare i componenti richiesti dalla shell e dall'applicazione shell, come illustrato nell'esempio riportato di seguito.  
   
@@ -123,7 +123,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
     </Feature>  
     ```  
   
-    1. L'elemento `ComponentRef` fa riferimento a un altro file con estensione wxs che identifica i file necessari per il componente corrente. Ad esempio, GeneralProfile presenta la definizione seguente in HelpAbout. wxs.  
+    1. L' `ComponentRef` elemento fa riferimento a un altro file con estensione wxs che identifica i file necessari per il componente corrente. Ad esempio, GeneralProfile presenta la definizione seguente in HelpAbout. wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -137,9 +137,9 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
         </Fragment>  
         ```  
   
-         L'elemento `DirectoryRef` specifica la posizione in cui i file vengono inseriti nel computer dell'utente. L'elemento `Directory` specifica che verrà installato in una sottodirectory e ogni elemento `File` rappresenta un file compilato o esistente come parte della soluzione e identifica la posizione in cui è possibile trovare il file quando viene creato il file MSI.  
+         L' `DirectoryRef` elemento specifica la posizione in cui i file vengono inseriti nel computer dell'utente. L' `Directory` elemento specifica che verrà installato in una sottodirectory e ogni `File` elemento rappresenta un file compilato o esistente come parte della soluzione e identifica la posizione in cui è possibile trovare il file quando viene creato il file MSI.  
   
-    2. L'elemento `ComponentGroupRef` fa riferimento a un gruppo di altri componenti (o componenti e gruppi di componenti). Ad esempio, `ComponentGroupRef` in ApplicationGroup è definito come segue in Application. wxs.  
+    2. L' `ComponentGroupRef` elemento fa riferimento a un gruppo di altri componenti (o componenti e gruppi di componenti). Ad esempio, `ComponentGroupRef` in ApplicationGroup viene definito come segue in Application. wxs.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -176,12 +176,12 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
   
 5. Per ogni voce del registro di sistema in *NomeProgetto*. reg, aggiungere un blocco del registro di sistema corrispondente, come illustrato negli esempi seguenti.  
   
-    |*NomeProgetto*. reg|ApplicationRegisty.wxs|  
+    |*NomeProgetto*. reg|ApplicationRegisty. wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE Object"|\<RegistryKey ID =' DteClsidRegKey ' root =' HKCR ' Key =' $ (var. DteClsidRegKey)' Action =' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type =' String ' name =' @' value =' $ (var. ShortProductName) oggetto DTE '/><br /><br /> \</RegistryKey>|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID =' DteLocSrv32RegKey ' root =' HKCR ' Key =' $ (var. DteClsidRegKey) \LocalServer32' Action =' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID \\ {bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID \\ {bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @ = "$RootFolder $\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
-     In questo esempio var. DteClsidRegKey viene risolto nella chiave del registro di sistema nella riga superiore. Var. ShortProductName viene risolto in `PhotoStudio`.  
+     In questo esempio var. DteClsidRegKey viene risolto nella chiave del registro di sistema nella riga superiore. Var. ShortProductName viene risolto in `PhotoStudio` .  
   
 ## <a name="creating-a-setup-bootstrapper"></a>Creazione di un programma di avvio automatico dell'installazione  
  L'MSI completato verrà installato solo se tutti i prerequisiti vengono installati per primi. Per semplificare l'esperienza dell'utente finale, creare un programma di installazione che raccoglie e installa tutti i prerequisiti prima di installare l'applicazione. Per garantire una corretta installazione, eseguire le operazioni seguenti:  
@@ -197,7 +197,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
 - Eseguire il file MSI.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Applicazione dell'installazione da amministratore  
- Questa procedura è necessaria per consentire al programma di installazione di accedere alle directory necessarie, ad esempio \Program Files\\.  
+ Questa procedura è necessaria per consentire al programma di installazione di accedere alle directory necessarie, ad esempio \Program Files \\ .  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Per applicare l'installazione in base all'amministratore  
   
@@ -215,9 +215,9 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder specifica il percorso in cui è stata installata la shell di Visual Studio ed è possibile verificare la presenza di file.  
   
- Per un esempio di come rilevare un'installazione della shell, vedere la funzione `GetProductDirFromReg` di Utilities. cpp nell'esempio di distribuzione della shell.  
+ Per un esempio di come rilevare l'installazione di una shell, vedere la `GetProductDirFromReg` funzione di Utilities. cpp nell'esempio relativo alla distribuzione della shell.  
   
- Se una o entrambe le shell di Visual Studio richieste dal pacchetto non sono installate nel computer, è necessario aggiungerle all'elenco dei componenti da installare. Per un esempio, vedere la funzione `ComponentsPage::OnInitDialog` di ComponentsPage. cpp nell'esempio relativo alla distribuzione della shell.  
+ Se una o entrambe le shell di Visual Studio richieste dal pacchetto non sono installate nel computer, è necessario aggiungerle all'elenco dei componenti da installare. Per un esempio, vedere la `ComponentsPage::OnInitDialog` funzione di ComponentsPage. cpp nell'esempio relativo alla distribuzione della shell.  
   
 ### <a name="running-the-shell-installers"></a>Esecuzione dei programmi di installazione della shell  
  Per eseguire i programmi di installazione della shell, chiamare i ridistribuibili della shell di Visual Studio usando i corretti argomenti della riga di comando. Come minimo, è necessario usare gli argomenti della riga di comando **/norestart/q** e controllare il codice restituito per determinare le operazioni da eseguire successivamente. Nell'esempio seguente viene eseguita la shell (isolated) Redistributable.  
@@ -235,7 +235,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ```  
   
 ### <a name="deciphering-return-values"></a>Decifrazione dei valori restituiti  
- In alcuni sistemi operativi, l'installazione di Visual Studio Shell (isolated) richiederà un riavvio. Questa condizione può essere determinata dal codice restituito della chiamata a `ExecCmd`.  
+ In alcuni sistemi operativi, l'installazione di Visual Studio Shell (isolated) richiederà un riavvio. Questa condizione può essere determinata dal codice restituito della chiamata a `ExecCmd` .  
   
 |Valore restituito|Descrizione|  
 |------------------|-----------------|  
@@ -351,7 +351,7 @@ CString GetSetupPath()
 ```  
   
 ### <a name="running-the-application-msi"></a>Esecuzione del file MSI dell'applicazione  
- Quando il programma di installazione della shell di Visual Studio restituisce ERROR_SUCCESS, è possibile eseguire il file MSI per l'applicazione. Poiché il programma di installazione fornisce l'interfaccia utente, avviare l'identità del servizio gestito in modalità non interattiva ( **/q**) e con registrazione ( **/l**), come illustrato nell'esempio seguente.  
+ Quando il programma di installazione della shell di Visual Studio restituisce ERROR_SUCCESS, è possibile eseguire il file MSI per l'applicazione. Poiché il programma di installazione fornisce l'interfaccia utente, avviare l'identità del servizio gestito in modalità non interattiva (**/q**) e con registrazione (**/l**), come illustrato nell'esempio seguente.  
   
 ```cpp#  
 TCHAR temp[MAX_PATH];  

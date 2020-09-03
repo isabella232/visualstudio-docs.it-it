@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851617"
 ---
 # <a name="signing-in-to-visual-studio"></a>Accesso a Visual Studio
@@ -27,7 +27,7 @@ ms.locfileid: "75851617"
 
 - **Concede l'accesso a una vasta gamma di vantaggi** del programma Visual Studio Dev Essentials, compresi software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
-- **Sincronizza le impostazioni di Visual Studio** : le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicati immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [Impostazioni sincronizzate in Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Sincronizza le impostazioni di Visual Studio** : le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicate immediatamente quando si accede a Visual Studio su qualsiasi dispositivo. Vedere [Impostazioni sincronizzate in Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Sblocca Visual Studio Express Edition in modo permanente** : è possibile usare qualsiasi edizione di Visual Studio Express per la durata desiderata, anziché essere vincolati al periodo di valutazione di 30 giorni.
 
@@ -46,7 +46,7 @@ ms.locfileid: "75851617"
 
  Dopo aver fornito le impostazioni, viene avviato Visual Studio e viene eseguito l'accesso dell'utente in modo da poter subito iniziare a usare l'applicazione. Per verificare se è stato eseguito l'accesso, cercare il nome nell'angolo superiore destro dell'ambiente Visual Studio.
 
- ![Utente connesso attualmente](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Utente attualmente connesso](../ide/media/vs2015-username.png "VS2015_UserName")
 
  A meno che non esegua la disconnessione, l'utente verrà automaticamente connesso a Visual Studio a ogni avvio e tutte le modifiche apportate alle impostazioni sincronizzate vengono applicate automaticamente. Per disconnettersi, scegliere la freccia in giù accanto al nome del profilo nell'ambiente Visual Studio, scegliere il comando **Impostazioni account** , quindi scegliere il collegamento **Esci** . Per accedere di nuovo, scegliere il comando **Accedi** nell'angolo superiore destro dell'ambiente Visual Studio.
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 696ad3e659b503b27da73056dafb57c5852d5133
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461175"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
@@ -45,17 +45,17 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Elementi
 `nsNone` Non è stata specificata alcuna opzione.
 
-`nsfCaseSensitive`Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole.
+`nsfCaseSensitive` Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole.
 
-`nsfCaseInsensitive`Applica una corrispondenza con il nome senza distinzione tra maiuscole e minuscole.
+`nsfCaseInsensitive` Applica una corrispondenza con il nome senza distinzione tra maiuscole e minuscole.
 
-`nsfFNameExt`Considera i nomi come percorsi e applica un nome nomefile. EXT corrispondente.
+`nsfFNameExt` Considera i nomi come percorsi e applica un nome nomefile. EXT corrispondente.
 
-`nsfRegularExpression`Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole utilizzando asterischi (*) e punti interrogativi (?) come caratteri jolly. Altri caratteri di espressione regolare comuni non sono supportati.
+`nsfRegularExpression` Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole utilizzando asterischi (*) e punti interrogativi (?) come caratteri jolly. Altri caratteri di espressione regolare comuni non sono supportati.
 
-`nsfUndecoratedName`Si applica solo ai simboli con nomi non decorati e decorati.
+`nsfUndecoratedName` Si applica solo ai simboli con nomi non decorati e decorati.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 I valori di questa enumerazione vengono passati ai metodi seguenti:
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
@@ -67,7 +67,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti:
 ## <a name="requirements"></a>Requisiti
 Intestazione: dia2. h
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)

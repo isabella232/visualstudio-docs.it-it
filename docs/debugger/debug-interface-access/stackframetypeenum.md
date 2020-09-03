@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f83cdb163881366a1a0bede95a07e1dae1fc50a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461098"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
@@ -36,24 +36,24 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elementi
-`FrameTypeFPO`Puntatore al frame omesso; Informazioni sulla Polinesia disponibili.
+`FrameTypeFPO` Puntatore al frame omesso; Informazioni sulla Polinesia disponibili.
 
-`FrameTypeTrap`Frame trap del kernel.
+`FrameTypeTrap` Frame trap del kernel.
 
-`FrameTypeTSS`Frame trap del kernel.
+`FrameTypeTSS` Frame trap del kernel.
 
-`FrameTypeStandard`Stack frame EBP standard.
+`FrameTypeStandard` Stack frame EBP standard.
 
-`FrameTypeFrameData`Puntatore al frame omesso; Informazioni sui dati dei frame disponibili.
+`FrameTypeFrameData` Puntatore al frame omesso; Informazioni sui dati dei frame disponibili.
 
-`FrameTypeUnknown`Frame senza informazioni di debug.
+`FrameTypeUnknown` Frame senza informazioni di debug.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaStackFrame:: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

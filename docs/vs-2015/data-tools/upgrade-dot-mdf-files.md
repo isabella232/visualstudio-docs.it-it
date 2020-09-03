@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 5b26b8cd9d955309e3be0e17e975bfdeb242e475
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621400"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
@@ -74,9 +74,9 @@ In questo argomento vengono descritte le opzioni per l'aggiornamento del file di
 
    - **Nome server**:
 
-       - Per usare la versione predefinita: `(localdb)\MSSQLLocalDB`.  In questo modo verrà specificato ProjectV12 o ProjectV13, a seconda della versione di Visual Studio installata e del momento in cui è stata creata la prima istanza del database locale. Il nodo **MSSQLLocalDB** in **Esplora oggetti di SQL Server** Mostra la versione a cui punta.
+       - Per utilizzare la versione predefinita: `(localdb)\MSSQLLocalDB` .  In questo modo verrà specificato ProjectV12 o ProjectV13, a seconda della versione di Visual Studio installata e del momento in cui è stata creata la prima istanza del database locale. Il nodo **MSSQLLocalDB** in **Esplora oggetti di SQL Server** Mostra la versione a cui punta.
 
-       - Per usare una versione specifica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13`, dove V12 è il database locale 2014 e V13 è il database locale 2016.
+       - Per usare una versione specifica: `(localdb)\ProjectsV12` o `(localdb)\ProjectsV13` , dove V12 è il database locale 2014 e V13 è il database locale 2016.
 
    - **Alleghi un file di database**: il percorso fisico del file con estensione MDF primario.
 
@@ -88,7 +88,7 @@ In questo argomento vengono descritte le opzioni per l'aggiornamento del file di
 
    Il database viene aggiornato, viene collegato al motore di database del database locale e non è più compatibile con la versione precedente del database locale.
 
-   È inoltre possibile modificare una connessione SQL Server Express per utilizzare il database locale aprendo il menu di scelta rapida per la connessione e quindi selezionando **Modifica connessione**. Nella finestra di dialogo **Modifica connessione** modificare il nome del server in `(LocalDB)\MSSQLLocalDB`. Nella finestra di dialogo **proprietà avanzate** verificare che l' **istanza utente** sia impostata su **false**.
+   È inoltre possibile modificare una connessione SQL Server Express per utilizzare il database locale aprendo il menu di scelta rapida per la connessione e quindi selezionando **Modifica connessione**. Nella finestra di dialogo **Modifica connessione** modificare il nome del server in `(LocalDB)\MSSQLLocalDB` . Nella finestra di dialogo **proprietà avanzate** verificare che l' **istanza utente** sia impostata su **false**.
 
 ### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>Per eseguire l'aggiornamento a una versione più recente di SQL Server Express
 
@@ -110,11 +110,11 @@ In questo argomento vengono descritte le opzioni per l'aggiornamento del file di
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Per rendere SQL Server Express il motore di database predefinito
 
-1. Nella barra dei menu selezionare **strumenti**  > **Opzioni**.
+1. Nella barra dei menu selezionare **Strumenti** > **Opzioni**.
 
 2. Nella finestra di dialogo **Opzioni** espandere le opzioni di **Data Tools** , quindi selezionare il nodo **connessioni dati** .
 
-3. Nella casella di testo **nome istanza SQL Server** specificare il nome dell'istanza di SQL Server Express o del database locale che si desidera utilizzare. Se l'istanza non è denominata, specificare `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.
+3. Nella casella di testo **nome istanza SQL Server** specificare il nome dell'istanza di SQL Server Express o del database locale che si desidera utilizzare. Se l'istanza non è denominata, specificare `.\SQLEXPRESS or (localdb)\MSSQLLocalDB` .
 
 4. Selezionare il pulsante **OK** .
 

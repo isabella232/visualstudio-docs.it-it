@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8f7fd108250a406339d5be08b5a6e9aaf67d039
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917558"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
@@ -36,7 +36,7 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
 ## <a name="authenticode-and-code-signing"></a>Firma del codice e Authenticode  
  Un *certificato digitale* è un file che contiene una coppia di chiavi di crittografia pubblica/privata, nonché i metadati relativi all'editore a cui è stato rilasciato il certificato e all'autorità di certificazione.  
   
- Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per altre informazioni, vedere [Introduction to Code Signing](https://msdn.microsoft.com/library/ms537361.aspx)(Introduzione alla firma del codice).  
+ Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per altre informazioni, vedere l'[introduzione alla firma del codice](https://msdn.microsoft.com/library/ms537361.aspx).  
   
  È possibile ottenere un certificato per la firma del codice in uno dei tre modi seguenti:  
   
@@ -47,11 +47,11 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
 - Generando un certificato personalizzato con MakeCert.exe, incluso in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Vantaggi derivanti dall'uso di Autorità di certificazione  
- Un certificato generato mediante l'utilità MakeCert. exe viene comunemente definito autocertificato *o certificato di* *prova*. Questo tipo di certificato funziona in modo molto simile a quello di un file con estensione snk nel .NET Framework. È costituito esclusivamente da una coppia di chiavi crittografiche pubbliche/private e non contiene informazioni verificabili sull'editore. Gli autocertificati consentono di distribuire applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un elevato livello di attendibilità in una rete intranet. Tuttavia, quando sono eseguite in un computer client, queste applicazioni vengono identificate da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] come provenienti da un editore sconosciuto. Per impostazione predefinita, non è possibile usare la distribuzione di applicazioni attendibili per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] firmate con autocertificati e distribuite su Internet.  
+ Un certificato generato mediante l'utilità MakeCert.exe viene comunemente definito autocertificato *o certificato di* *prova*. Questo tipo di certificato funziona in modo molto simile a quello di un file con estensione snk nel .NET Framework. È costituito esclusivamente da una coppia di chiavi crittografiche pubbliche/private e non contiene informazioni verificabili sull'editore. Gli autocertificati consentono di distribuire applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un elevato livello di attendibilità in una rete intranet. Tuttavia, quando sono eseguite in un computer client, queste applicazioni vengono identificate da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] come provenienti da un editore sconosciuto. Per impostazione predefinita, non è possibile usare la distribuzione di applicazioni attendibili per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] firmate con autocertificati e distribuite su Internet.  
   
  Al contrario, se si riceve un certificato proveniente da una CA, ad esempio un fornitore di certificati o un reparto dell'organizzazione, il certificato offre maggiore sicurezza agli utenti. Non solo identifica l'editore del software firmato, ma verifica anche l'identità mediante un controllo con la CA che ha apposto la firma. Se la CA non è l'autorità radice, Authenticode verificherà con l'autorità radice che la CA sia autorizzata a rilasciare certificati. Per maggiore sicurezza, si consiglia di usare un certificato rilasciato da una CA, se possibile.  
   
- Per ulteriori informazioni sulla generazione di certificati autocertificati, vedere [Makecert. exe (strumento di creazione certificati)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Per ulteriori informazioni sulla generazione di certificati autocertificati, vedere [Makecert.exe (strumento per la creazione di certificati)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
 ### <a name="timestamps"></a>Timestamp  
  I certificati usati per firmare applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] scadono dopo un determinato periodo di tempo, in genere dodici mesi. Per evitare di dover firmare costantemente le stesse applicazioni con nuovi certificati, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] supporta i timestamp. Se un'applicazione è firmata con un timestamp, il certificato continuerà a essere accettato anche dopo la scadenza, purché il timestamp sia valido. Questo consente il download e l'esecuzione delle applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con certificati scaduti ma timestamp validi. Permette anche di continuare a scaricare e installare gli aggiornamenti per le applicazioni installate con certificati scaduti.  
@@ -73,6 +73,6 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
+ [Protezione delle applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (Strumento per la generazione e la modifica di manifesti)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

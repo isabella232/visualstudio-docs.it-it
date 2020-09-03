@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee138fd361d883fb465711e679d09e6c96ddac4b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461581"
 ---
 # <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
@@ -41,7 +41,7 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Il tipo corrente è una modifica del tipo originale restituito. Il tipo originale per un simbolo può essere determinato ottenendo innanzitutto il tipo del simbolo e quindi interrogando il tipo restituito per il tipo originale. Si noti che alcuni simboli potrebbero non avere un tipo modificato del tipo originale.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,5 +51,5 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

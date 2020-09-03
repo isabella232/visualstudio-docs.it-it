@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419276"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: creare un'applicazione semplice con C\#
@@ -298,7 +298,7 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 #### <a name="add-breakpoints"></a>Aggiungere punti di interruzione
 
-1. Aprire *Greetings.XAML.cs*e selezionare la riga seguente:`MessageBox.Show("Hello.")`
+1. Aprire *Greetings.XAML.cs*e selezionare la riga seguente: `MessageBox.Show("Hello.")`
 
 1. Aggiungere un punto di interruzione dal menu selezionando **Debug**, quindi **Imposta/Rimuovi punto di interruzione**.
 
@@ -355,6 +355,6 @@ L'esercitazione è stata completata. Per altre informazioni, continuare con le e
 > [!div class="nextstepaction"]
 > [Continuare con altre esercitazioni su WPF](/dotnet/framework/wpf/getting-started/wpf-walkthroughs/)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Suggerimenti per la produttività](../../ide/productivity-features.md)

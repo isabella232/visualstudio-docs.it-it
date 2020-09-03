@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918584"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procedura dettagliata: generazione di codice tramite modelli di testo
@@ -86,7 +86,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-create-the-project"></a>Per creare il progetto
 
-1. Nel menu **File** fare clic su **Nuovo** e poi su **Progetto**.
+1. Scegliere **nuovo** dal menu **file** e quindi fare clic su **progetto**.
 
 2. Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.
 
@@ -97,7 +97,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-add-an-xml-file"></a>Per aggiungere un file XML
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** , quindi fare clic su **nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .
 
@@ -105,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 4. Per questa procedura dettagliata assegnare al file il nome `exampleXml.xml`. Impostare il contenuto del file in modo che sia l'XML mostrato nella sezione precedente.
 
-   .
+   ..
 
 ### <a name="add-a-test-code-file"></a>Aggiungere un file di codice di test
  Aggiungere al progetto un file C# e scrivere in esso un esempio del codice che si vuole poter scrivere. Ad esempio:

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557941"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -37,13 +37,13 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="arguments"></a>Argomenti
 
-- *Localeid*
+- *LocaleID*
 
   Obbligatorio. Identificatore delle impostazioni locali (LCID) della lingua specificata.
 
 ## <a name="remarks"></a>Osservazioni
 
-Carica l'IDE e imposta la lingua naturale predefinita per l'ambiente. Questa modifica viene mantenuta tra le sessioni e l'IDE Mostra questa modifica nella**casella** Di seguito **Opzioni** > **di** > **ambiente** > Impostazioni > **internazionali**degli strumenti .
+Carica l'IDE e imposta la lingua naturale predefinita per l'ambiente. Questa modifica viene mantenute tra le sessioni e l'IDE Mostra questa modifica nella casella **strumenti**  >  **Opzioni**  >  **ambiente**  >  **impostazioni internazionali**  >  **Language** .
 
 Se la lingua specificata non è disponibile nel sistema in uso, l'opzione `/LCID` viene ignorata.
 

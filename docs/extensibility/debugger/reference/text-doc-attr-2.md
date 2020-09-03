@@ -1,5 +1,5 @@
 ---
-title: proprietà TEXT_DOC_ATTR_2 . Documenti Microsoft
+title: TEXT_DOC_ATTR_2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: afbb7d7f4525050e73dafaed906dbc504cc8b52e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713447"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
@@ -36,21 +36,21 @@ const TEXT_DOC_ATTR_2 TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
  `TEXT_DOC_ATTR_READONLY_2`\
  Indica che il documento è di sola lettura.
 
 ## <a name="remarks"></a>Osservazioni
 
 > [!NOTE]
-> Questo valore non è effettivamente definito nell'assembly per C. È invece necessario copiare la definizione nel file di origine.
+> Questo valore non è effettivamente definito nell'assembly per C#. Al contrario, è necessario copiare la definizione nel file di origine.
 
- Passato come argomento al metodo [onUpdateDocumentAttributes.](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)
+ Passato come argomento al metodo [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: msdbg.h
+ Intestazione: msdbg. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
