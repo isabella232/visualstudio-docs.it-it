@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658061"
 ---
 # <a name="n-tier-data-applications-overview"></a>Cenni preliminari sull'applicazione dati a più livelli
@@ -35,16 +35,16 @@ Le applicazioni dati a più livelli * sono applicazioni dati separate in più *l
 
  Visual Studio contiene diverse funzionalità che consentono agli sviluppatori di creare applicazioni a più livelli:
 
-- In Progettazione DataSet è disponibile una proprietà del **progetto DataSet** che consente di separare il set di dati (livello entità dati) e `TableAdapter`s (livello di accesso ai dati) in progetti discreti.
+- In Progettazione DataSet è disponibile una proprietà del **progetto DataSet** che consente di separare il set di dati (livello entità di dati) e `TableAdapter` s (livello di accesso ai dati) in progetti discreti.
 
 - Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) forniscono le impostazioni per generare le classi di dati e DataContext in spazi dei nomi distinti. Ciò consente la separazione logica dei livelli di accesso ai dati e di entità dati.
 
-- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fornisce il metodo <xref:System.Data.Linq.Table%601.Attach%2A> che consente di riunire DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [applicazioni a più livelli e remote con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di riunire DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [applicazioni a più livelli e remote con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
 
 ## <a name="presentation-tier"></a>Livello presentazione
  Il *livello presentazione* è il livello in cui gli utenti interagiscono con un'applicazione. Spesso contiene anche una logica dell'applicazione aggiuntiva. I componenti del livello presentazione tipici includono i seguenti:
 
-- Componenti di data binding, ad esempio <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
+- Componenti di data binding, ad esempio <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> .
 
 - Rappresentazioni di oggetti dei dati, ad esempio [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classi di entità da utilizzare nel livello di presentazione.
 
@@ -70,7 +70,7 @@ Le applicazioni dati a più livelli * sono applicazioni dati separate in più *l
   Il livello intermedio si connette in genere al livello dati utilizzando una connessione dati. Questa connessione dati viene in genere archiviata nel componente di accesso ai dati.
 
 ## <a name="data-tier"></a>Livello dati
- Il *livello dati* è fondamentalmente il server in cui vengono archiviati i dati di un'applicazione, ad esempio un server che esegue [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].
+ Il *livello dati* è fondamentalmente il server in cui vengono archiviati i dati di un'applicazione, ad esempio un server che esegue [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] .
 
  Nella figura seguente sono illustrate le funzionalità e le tecnologie disponibili in Visual Studio e la posizione in cui possono adattarsi al livello dati di un'applicazione a più livelli.
 
@@ -90,4 +90,4 @@ Le applicazioni dati a più livelli * sono applicazioni dati separate in più *l
  [Applicazioni a più livelli e remote con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Data.Linq.ITable.Attach%2A> [procedura dettagliata: creazione di un'applicazione dati](../data-tools/walkthrough-creating-an-n-tier-data-application.md) a più livelli [strumenti per set di dati di](../data-tools/dataset-tools-in-visual-studio.md) [aggiornamento gerarchico](../data-tools/hierarchical-update.md) in Visual Studio [accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ <xref:System.Data.Linq.ITable.Attach%2A>[Procedura dettagliata: creazione di un'applicazione dati](../data-tools/walkthrough-creating-an-n-tier-data-application.md) a più livelli [strumenti per set di dati di](../data-tools/dataset-tools-in-visual-studio.md) [aggiornamento gerarchico](../data-tools/hierarchical-update.md) in Visual Studio [accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

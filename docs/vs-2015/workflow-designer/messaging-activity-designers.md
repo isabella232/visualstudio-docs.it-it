@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6fb06bea4cebf2558990d23f7ece5b4f8db5b95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658924"
 ---
 # <a name="messaging-activity-designers"></a>ActivityDesigner Messaggistica
@@ -25,13 +25,13 @@ Gli ActivityDesigner Messaging vengono usati per creare e configurare attività 
 |----------------------|-----------------|
 |[CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)|Crea e configura un'attività <xref:System.ServiceModel.Activities.CorrelationScope> che consente la gestione implicita delle attività di messaggistica figlio con un oggetto <xref:System.ServiceModel.Activities.CorrelationHandle>.|
 |[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|Crea e configura un'attività <xref:System.ServiceModel.Activities.InitializeCorrelation> che viene usata per inizializzare la correlazione senza inviare o ricevere un messaggio.|
-|[Receive](../workflow-designer/receive-activity-designer.md)|Crea e configura un'attività <xref:System.ServiceModel.Activities.Receive> che riceve un messaggio da un servizio.|
+|[Ricevere](../workflow-designer/receive-activity-designer.md)|Crea e configura un'attività <xref:System.ServiceModel.Activities.Receive> che riceve un messaggio da un servizio.|
 |[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)|Crea una coppia preconfigurata delle attività <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.ReceiveReply> all'interno di un'attività <xref:System.Activities.Statements.Sequence>.|
-|[Send](../workflow-designer/send-activity-designer.md)|Crea e configura un'attività <xref:System.ServiceModel.Activities.Send> che invia un messaggio a un servizio.|
+|[Invia](../workflow-designer/send-activity-designer.md)|Crea e configura un'attività <xref:System.ServiceModel.Activities.Send> che invia un messaggio a un servizio.|
 |[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)|Crea una coppia preconfigurata delle attività <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply> all'interno di un'attività <xref:System.Activities.Statements.Sequence>.|
 |[TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)|Crea e configura un'attività <xref:System.ServiceModel.Activities.TransactedReceiveScope> che consente il flusso di transazioni in un flusso di lavoro.|
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informazioni di riferimento
  <xref:System.Activities.Activity>
 
  <xref:System.ServiceModel.Activities.CorrelationScope>
@@ -51,7 +51,7 @@ Gli ActivityDesigner Messaging vengono usati per creare e configurare attività 
 
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)
 
- [Uso degli Activity Designer](../workflow-designer/using-the-activity-designers.md)
+ [Utilizzo degli ActivityDesigner](../workflow-designer/using-the-activity-designers.md)
 
  [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
 
@@ -66,4 +66,4 @@ Gli ActivityDesigner Messaging vengono usati per creare e configurare attività 
  [Gestione degli errori](../workflow-designer/error-handling-activity-designers.md)
 
 ## <a name="external-resources"></a>Risorse esterne
- [Uso degli Activity Designer](../workflow-designer/using-the-activity-designers.md)
+ [Utilizzo degli ActivityDesigner](../workflow-designer/using-the-activity-designers.md)

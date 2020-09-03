@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetUnderlyingSymbol | Microsoft Docs
+title: 'IDebugEnumField:: GetUnderlyingSymbol | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1841ca2bf9bd5a43ec5a16a515a03769db64ea15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188965"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
@@ -40,15 +40,15 @@ int GetUnderlyingSymbol(
   
 #### <a name="parameters"></a>Parametri  
  `ppField`  
- [out] Restituisce il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descriva il nome di questa enumerazione.  
+ out Restituisce l'oggetto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive il nome dell'enumerazione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Il nome dell'enumerazione contiene anche il tipo di enumerazione, che è associato a una posizione di memoria usando [associare](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
+## <a name="remarks"></a>Osservazioni  
+ Il nome dell'enumerazione contiene anche il tipo di enumerazione, associato a una posizione di memoria tramite [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+ [Associare](../../../extensibility/debugger/reference/idebugbinder-bind.md)

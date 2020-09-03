@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProperty2::EnumChildren . Documenti Microsoft
+title: 'IDebugProperty2:: EnumChildren | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721519"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
-Recupera un elenco degli elementi figlio della proprietà.
+Recupera un elenco di elementi figlio della proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,28 +53,28 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Parametri
 `dwFields`\
-[in] Combinazione di flag dell'enumerazione [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica quali campi nelle strutture [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) enumerate devono essere compilate.
+in Combinazione di flag dell'enumerazione [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) che specifica i campi nelle strutture [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) enumerate da compilare.
 
 `dwRadix`\
-[in] Specifica la radice da utilizzare nella formattazione di qualsiasi informazione numerica.
+in Specifica la radice da usare per la formattazione di qualsiasi informazione numerica.
 
 `guidFilter`\
-[in] GUID del filtro utilizzato `dwAttribFilter` `pszNameFilter` con i `DEBUG_PROPERTY_INFO` parametri e per selezionare gli elementi figlio da enumerare. Ad esempio, `guidFilterLocals` i filtri per le variabili locali.
+in GUID del filtro utilizzato con i `dwAttribFilter` parametri e `pszNameFilter` per selezionare gli `DEBUG_PROPERTY_INFO` elementi figlio da enumerare. Ad esempio, `guidFilterLocals` Filtra le variabili locali.
 
 `dwAttribFilter`\
-[in] Combinazione di flag [dall'enumerazione DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) che specifica il tipo `DBG_ATTRIB_METHOD` di oggetti da enumerare, ad esempio per tutti i metodi che potrebbero essere figli di questa proprietà. Utilizzato in combinazione `guidFilter` `pszNameFilter` con i parametri e .
+in Combinazione di flag dell'enumerazione [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) che specifica il tipo di oggetti da enumerare, ad esempio `DBG_ATTRIB_METHOD` per tutti i metodi che potrebbero essere elementi figlio di questa proprietà. Utilizzato in combinazione con i `guidFilter` `pszNameFilter` parametri e.
 
 `pszNameFilter`\
-[in] Nome del filtro utilizzato `guidFilter` con `dwAttribFilter` i parametri `DEBUG_PROPERTY_INFO` e per selezionare gli elementi figlio da enumerare. Ad esempio, l'impostazione di questo parametro su "MyX" filtri per tutti gli elementi figlio con il nome "MyX".
+in Nome del filtro utilizzato con i `guidFilter` `dwAttribFilter` parametri e per selezionare gli `DEBUG_PROPERTY_INFO` elementi figlio da enumerare. Ad esempio, l'impostazione di questo parametro su "MyX" Filtra tutti gli elementi figlio con il nome "MyX".
 
 `dwTimeout`\
-[in] Specifica il tempo massimo, in millisecondi, di attesa prima della restituzione da questo metodo. Utilizzare `INFINITE` per attendere a tempo indeterminato.
+in Specifica il tempo massimo di attesa, in millisecondi, prima che venga restituito da questo metodo. Usare `INFINITE` per attendere per un periodo illimitato.
 
 `ppEnum`\
-[fuori] Restituisce un [oggetto IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contenente un elenco delle proprietà figlio.
+out Restituisce un oggetto [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contenente un elenco di proprietà figlio.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha `S_OK`esito positivo, restituisce ; in caso contrario restituisce il codice di errore.
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

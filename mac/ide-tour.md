@@ -3,19 +3,19 @@ title: Presentazione di Visual Studio per Mac
 description: Visual Studio per Mac offre un ambiente di sviluppo integrato per creare applicazioni .NET in macOS, inclusi siti Web ASP.NET Core e progetti Xamarin per iOS, Android, Mac e Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 12/13/2019
+ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "75405824"
+ms.locfileid: "89402613"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Presentazione di Visual Studio 2019 per Mac
 
-Visual Studio per Mac è un _ambiente di sviluppo integrato_ .NET nel Mac che può essere usato per modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Oltre alle funzionalità previste, ad esempio un editor e un debugger standard, Visual Studio per Mac include compilatori, strumenti di completamento del codice, finestre di progettazione con interfaccia grafica e controllo del codice sorgente che semplificano il processo di sviluppo del software.
+Visual Studio per Mac è un _ambiente di sviluppo integrato_ .NET nel Mac che può essere usato per modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Oltre a un editor di codice e a un debugger, Visual Studio per Mac include compilatori, strumenti di completamento del codice, finestre di progettazione grafiche e funzionalità di controllo del codice sorgente per semplificare il processo di sviluppo del software.
 
 Visual Studio per Mac supporta molti degli stessi tipi di file della controparte Windows, ad esempio i file con estensione `.csproj`, `.fsproj` o `.sln`, nonché funzionalità quali EditorConfig, rendendo possibile l'uso dell'IDE più adatto alle proprie esigenze.
 La creazione, l'apertura e lo sviluppo di app saranno operazioni familiari per chi in precedenza ha usato Visual Studio in Windows. Visual Studio per Mac usa inoltre molti degli strumenti avanzati che rendono la controparte Windows un IDE estremamente potente. La piattaforma di compilazione Roslyn viene usata per il refactoring e per IntelliSense. Il sistema di progetto e il motore di compilazione utilizzano MSBuild e l'editor di origine utilizza la stessa base di Visual Studio in Windows. Vengono usati gli stessi motori di debugger per le app Xamarin e .NET Core e le stesse finestre di progettazione per Xamarin.iOS e Xamarin.Android.
@@ -38,7 +38,7 @@ Visual Studio per Mac è organizzato in sezioni diverse per la gestione di impos
 
 ## <a name="getting-started"></a>Introduzione
 
-Quando si avvia Visual Studio 2019 per Mac, verrà visualizzata una finestra di accesso. Accedere con l'account Microsoft per attivare una licenza a pagamento (se disponibile) o connettersi alle sottoscrizioni di Azure. È possibile scegliere di **eseguire questa** operazione in un secondo momento e accedere in un secondo momento tramite la voce **di menu di accesso > di Visual Studio** :
+Quando si avvia Visual Studio 2019 per Mac per la prima volta, viene visualizzata una finestra di accesso per i nuovi utenti. Accedere con l'account Microsoft per attivare una licenza a pagamento (se disponibile) o connettersi alle sottoscrizioni di Azure. È possibile scegliere di **eseguire questa** operazione in un secondo momento e accedere in un secondo momento tramite la voce **di menu di accesso > di Visual Studio** :
 
 ![Effettuare l'accesso con l'account Microsoft.](media/ide-tour-2019-start-signin.png)
 
@@ -46,7 +46,7 @@ Sarà quindi possibile personalizzare l'IDE selezionando i tasti di scelta rapid
 
 ![Selezionare i tasti di scelta rapida Preferiti](media/ide-tour-2019-keyboard-shortcut.png)
 
-Gli utenti che hanno eseguito l'accesso visualizzeranno la nuova _finestra iniziale_, che mostra un elenco dei progetti recenti e i pulsanti per aprire un progetto esistente o crearne uno nuovo:
+Dopo questa configurazione iniziale, viene visualizzata la finestra di _avvio_ quando si apre Visual Studio 2019 per Mac, che mostra un elenco di progetti recenti e i pulsanti per aprire un progetto esistente o crearne uno nuovo:
 
 ![Scegliere tra i progetti recenti o crearne uno nuovo](media/ide-tour-2019-start-projects.png)
 
@@ -82,7 +82,7 @@ Per altre informazioni sull'uso dei riferimenti in Visual Studio per Mac, vedere
 
 ## <a name="dependencies--packages"></a>Dipendenze/pacchetti
 
-Tutte le dipendenze esterne usate nell'app vengono archiviate nella cartella Dipendenze o Pacchetti, a seconda che si stia lavorando a un progetto .NET Core o Xamarin.iOS/Xamarin.Android. In genere vengono fornite sotto forma di pacchetto NuGet.
+Tutte le dipendenze esterne usate nell'app vengono archiviate nella cartella dipendenze o pacchetti, a seconda che si tratti di un progetto .NET Core o Novell. iOS/Novell. Android. In genere vengono fornite sotto forma di pacchetto NuGet.
 
 NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET. Con il supporto di NuGet di Visual Studio è possibile cercare e aggiungere facilmente pacchetti al progetto dell'applicazione.
 
@@ -94,7 +94,7 @@ Le informazioni sull'uso di un pacchetto NuGet in un'applicazione sono disponibi
 
 ## <a name="source-editor"></a>Editor standard
 
-Indipendentemente da se si sta scrivendo in C#, XAML o JavaScript, l'editor di codice condivide gli stessi componenti di base con le finestre di Visual Studio, con un'interfaccia utente completamente nativa.
+Indipendentemente da se si sta scrivendo in C#, XAML o JavaScript, l'editor di codice condivide gli stessi componenti di base con Visual Studio in Windows, con un'interfaccia utente completamente nativa.
 
 In questo esempio vengono riportate alcune delle funzionalità seguenti:
 

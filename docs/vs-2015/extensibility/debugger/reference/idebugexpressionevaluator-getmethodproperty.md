@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs
+title: 'IDebugExpressionEvaluator:: GetMethodProperty | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b84ac959241a8f68f4d9516879660b6414708731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155355"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Questo metodo ottiene un oggetto di proprietà che contiene le variabili locali, argomenti e altre proprietà di un metodo.  
+Questo metodo ottiene un oggetto Property che contiene le variabili locali, gli argomenti e altre proprietà di un metodo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,25 +48,25 @@ int GetMethodProperty(
   
 #### <a name="parameters"></a>Parametri  
  `pSymbolProvider`  
- [in] Il provider di simboli da utilizzare, espresse come una [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) oggetto.  
+ in Provider di simboli da utilizzare, espresso come oggetto [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) .  
   
  `pAddress`  
- [in] L'indirizzo nel codice, espresso come un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto, che deve essere risolta nel più vicino che contiene funzioni.  
+ in Indirizzo nel codice, espresso come oggetto [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) , che deve essere risolto nella funzione contenitore più vicina.  
   
  `pBinder`  
- [in] Lo strumento di associazione da utilizzare, espresse come una [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) oggetto.  
+ in Binder da usare, espresso come oggetto [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .  
   
  `fIncludeHiddenLocals`  
- [in] Diverso da zero (`TRUE`) significa che includere variabili locali nascosti; zero (`FALSE`) significa che non inserire nascosti variabili locali  
+ in Diverso da zero ( `TRUE` ) indica l'inclusione di variabili locali nascoste. zero ( `FALSE` ) indica di escludere variabili locali nascoste  
   
  `ppProperty`  
- [out] Restituisce un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che rappresenta il metodo.  
+ out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta il metodo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
-## <a name="remarks"></a>Note  
- Variabili locali nascosti sono in genere le variabili che vengono generate dal compilatore.  
+## <a name="remarks"></a>Osservazioni  
+ Le variabili locali nascoste sono in genere variabili generate dal compilatore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   

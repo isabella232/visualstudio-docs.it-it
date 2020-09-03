@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 669be50e11d3bf17d617c361b63f807149dbc823
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658573"
 ---
 # <a name="t4-include-directive"></a>Direttiva include T4
@@ -27,13 +27,13 @@ In un modello di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possi
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` possono essere assoluti o relativi al file modello corrente.
+- `filePath` può essere assoluto o relativo al file modello corrente.
 
-   Inoltre, le estensioni specifiche di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] possono specificare le proprie directory per cercare i file di inclusione. Ad esempio, dopo aver installato l'SDK di visualizzazione e modellazione (strumenti DSL), la seguente cartella viene aggiunta all'elenco di inclusione: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
+   Inoltre, le estensioni specifiche di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] possono specificare le proprie directory per cercare i file di inclusione. Ad esempio, dopo aver installato l'SDK di visualizzazione e modellazione (strumenti DSL), la seguente cartella viene aggiunta all'elenco di inclusione: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates` .
 
    Queste cartelle di inclusione aggiuntive potrebbero dipendere dall'estensione del file incluso. Ad esempio, la cartella di inclusione di Strumenti DSL è accessibile soltanto ai file inclusi con l'estensione `.tt`
 
-- `filePath` può includere le variabili di ambiente delimitate da "%". Esempio:
+- `filePath` può includere le variabili di ambiente delimitate da "%". Ad esempio:
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
@@ -41,7 +41,7 @@ In un modello di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possi
 
 - Il nome di un file incluso non deve utilizzare l'estensione `".tt"`.
 
-   È possibile utilizzare un'altra estensione, quale `".t4"` per i file inclusi. Questo perché, quando si aggiunge un file di `.tt` a un progetto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] imposta automaticamente la proprietà **strumento personalizzato** su `TextTemplatingFileGenerator`. Non è in genere consigliabile che i file inclusi vengano trasformati singolarmente.
+   È possibile utilizzare un'altra estensione, quale `".t4"` per i file inclusi. Questo perché, quando si aggiunge un `.tt` file a un progetto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] imposta automaticamente la proprietà **strumento personalizzato** su `TextTemplatingFileGenerator` . Non è in genere consigliabile che i file inclusi vengano trasformati singolarmente.
 
    D'altra parte, occorre tener presente che in alcuni casi, l'estensione di file determina in quali cartelle aggiuntive verranno cercati i file di inclusione. Questo potrebbe essere importante quando si dispone di un file incluso che include altri file.
 
@@ -49,7 +49,7 @@ In un modello di testo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possi
 
 - Utilizzare `once="true"` per verificare che un modello sia incluso una sola volta, anche se viene chiamato da più file di inclusione.
 
-   Questa funzionalità semplifica la creazione di una libreria di frammenti di codice T4 riutilizzabili che è possibile includere in, senza doversi preoccupare di un altro frammento di codice già incluso.  Si supponga, ad esempio, di disporre di una libreria di frammenti di codice con granularità fine che gestiscono C# l'elaborazione e la generazione di modelli.  A loro volta, vengono usate da altre utilità specifiche per le attività, ad esempio la generazione di eccezioni, che possono essere usate da qualsiasi altro modello specifico dell'applicazione. Se si crea il grafico dipendenze, si noterà che alcuni frammenti verranno inclusi più volte. Ma il parametro `once` impedisce le inclusioni successive.
+   Questa funzionalità semplifica la creazione di una libreria di frammenti di codice T4 riutilizzabili che è possibile includere in, senza doversi preoccupare di un altro frammento di codice già incluso.  Si supponga, ad esempio, di disporre di una libreria di frammenti di codice con granularità fine che gestiscono l'elaborazione dei modelli e la generazione C#.  A loro volta, vengono usate da altre utilità specifiche per le attività, ad esempio la generazione di eccezioni, che possono essere usate da qualsiasi altro modello specifico dell'applicazione. Se si crea il grafico dipendenze, si noterà che alcuni frammenti verranno inclusi più volte. Ma il parametro `once` impedisce le inclusioni successive.
 
   **MyTextTemplate.tt:**
 
@@ -65,7 +65,7 @@ Output message 5 (from top template).
 
 ```
 
- **TextFile1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -82,7 +82,7 @@ void GenerateMessage(int n)
 
 ```
 
- **In Textfile2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).
@@ -97,7 +97,7 @@ void AnotherGenerateMessage(int n)
 
 ```
 
- **Il file generato risultante, MyTextTemplate. txt:**
+ **Il file generato risultante, MyTextTemplate.txt:**
 
 ```
 Output message 1 (from top template).
@@ -112,7 +112,7 @@ Output message 5 (from top template).
 
 ```
 
-## <a name="msbuild"></a>Uso delle proprietà del progetto in MSBuild e Visual Studio
+## <a name="using-project-properties-in-msbuild-and-visual-studio"></a><a name="msbuild"></a> Uso delle proprietà del progetto in MSBuild e Visual Studio
  Sebbene sia possibile utilizzare le macro di Visual Studio, ad esempio $(SolutionDir), in una direttiva include, non funzionano in MSBuild. Se si desidera trasformare i modelli nel computer di compilazione, è necessario utilizzare le proprietà del progetto.
 
  Modificare il file con estensione csproj o vbproj per definire una proprietà del progetto. In questo esempio viene definita una proprietà denominata `myIncludeFolder`:

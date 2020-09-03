@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: bc0e88265245d795697d32a9e6a95909c0415259
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538658"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Verificare la sintassi di SuppressUnmanagedCodeSecurityAttribute
@@ -36,7 +36,7 @@ ms.locfileid: "85538658"
  Un membro o un tipo pubblico o protetto ha l' <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>modifica il comportamento predefinito del sistema di sicurezza per i membri che eseguono codice non gestito utilizzando l'interoperabilità COM o la chiamata della piattaforma. In genere, il sistema crea [dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) per l'autorizzazione per il codice non gestito. Questa richiesta si verifica in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) per l'autorizzazione: le autorizzazioni del chiamante immediato vengono controllate quando il chiamante viene compilato tramite JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifica il comportamento predefinito del sistema di sicurezza per i membri che eseguono codice non gestito utilizzando l'interoperabilità COM o la chiamata della piattaforma. In genere, il sistema crea [dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) per l'autorizzazione per il codice non gestito. Questa richiesta si verifica in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) per l'autorizzazione: le autorizzazioni del chiamante immediato vengono controllate quando il chiamante viene compilato tramite JIT.
 
  Questo attributo viene principalmente usato per aumentare le prestazioni. L'aumento delle prestazioni, tuttavia, comporta notevoli rischi in termini di sicurezza. Se si inserisce l'attributo nei membri pubblici che chiamano metodi nativi, i chiamanti nello stack di chiamate (ad eccezione del chiamante immediato) non necessitano dell'autorizzazione per il codice non gestito per l'esecuzione di codice non gestito. A seconda delle azioni del membro pubblico e della gestione dell'input, potrebbe consentire ai chiamanti non attendibili di accedere alle funzionalità normalmente limitate al codice attendibile.
 

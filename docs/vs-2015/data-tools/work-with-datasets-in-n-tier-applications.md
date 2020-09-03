@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657806"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Uso dei set di dati nelle applicazioni a più livelli
@@ -54,7 +54,7 @@ Le applicazioni dati a più livelli * sono applicazioni incentrate sui dati sepa
 
  [Procedura dettagliata: aggiunta della convalida a un'applicazione dati a più livelli](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265) Vengono fornite istruzioni dettagliate per l'aggiunta della convalida all'applicazione creata nella procedura dettagliata relativa all'applicazione dati a più livelli.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Riferimento
  <xref:System.Data.DataSet>
 
  <xref:System.Data.TypedTableBase%601>

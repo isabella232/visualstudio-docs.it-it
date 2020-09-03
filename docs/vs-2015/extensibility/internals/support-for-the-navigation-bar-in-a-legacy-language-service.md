@@ -1,5 +1,5 @@
 ---
-title: Supporto per la barra di spostamento in un servizio di linguaggio Legacy | Microsoft Docs
+title: Supporto per la barra di spostamento in un servizio di linguaggio legacy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,24 +12,24 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154090"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Barra di spostamento nella parte superiore della visualizzazione dell'editor consente di visualizzare i tipi e membri nel file. I tipi vengono visualizzati nell'elenco a tendina a sinistra e i membri vengono visualizzati in destra elenco a discesa. Quando l'utente seleziona un tipo, il cursore viene posizionato nella prima riga del tipo. Quando l'utente seleziona un membro, il cursore viene posizionato sulla definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate per riflettere il percorso corrente del punto di inserimento.  
+La barra di navigazione nella parte superiore della visualizzazione dell'editor consente di visualizzare i tipi e i membri del file. I tipi vengono visualizzati nell'elenco a discesa a sinistra e i membri vengono visualizzati nell'elenco a discesa a destra. Quando l'utente seleziona un tipo, il punto di inserimento viene inserito nella prima riga del tipo. Quando l'utente seleziona un membro, il punto di inserimento viene inserito nella definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate in modo da riflettere la posizione corrente del punto di inserimento.  
   
-## <a name="displaying-and-updating-the-navigation-bar"></a>Visualizzazione e l'aggiornamento la barra di spostamento  
- Per supportare la barra di spostamento, è necessario derivare una classe dalla classe la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe e implementare il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (metodo). Quando il servizio di linguaggio ha una finestra del codice, la base <xref:Microsoft.VisualStudio.Package.LanguageService> un'istanza di <xref:Microsoft.VisualStudio.Package.CodeWindowManager>, che contiene il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> oggetto che rappresenta la finestra del codice. Il <xref:Microsoft.VisualStudio.Package.CodeWindowManager> oggetto viene quindi assegnato un nuovo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> oggetto. Il <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metodo ottiene un <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> oggetto. Se si restituisce un'istanza del <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> (classe), il <xref:Microsoft.VisualStudio.Package.CodeWindowManager> chiamate il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo per popolare l'oggetto interno sono elencati e passa il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> dell'oggetto per il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] elenco a discesa della barra di gestione. Elenco a discesa della barra di gestione, a sua volta, chiama il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> metodo sul <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> oggetto per stabilire il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> un oggetto contenente le due barre di elenco a discesa.  
+## <a name="displaying-and-updating-the-navigation-bar"></a>Visualizzazione e aggiornamento della barra di spostamento  
+ Per supportare la barra di navigazione, è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe e implementare il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo. Quando al servizio di linguaggio viene assegnata una finestra del codice, la <xref:Microsoft.VisualStudio.Package.LanguageService> classe base crea un'istanza di <xref:Microsoft.VisualStudio.Package.CodeWindowManager> , che contiene l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> oggetto che rappresenta la finestra del codice. All' <xref:Microsoft.VisualStudio.Package.CodeWindowManager> oggetto viene quindi assegnato un nuovo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> oggetto. Il <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metodo ottiene un <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> oggetto. Se si restituisce un'istanza della <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe, chiama il <xref:Microsoft.VisualStudio.Package.CodeWindowManager> <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo per popolare gli elenchi interni e passa l' <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> oggetto alla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gestione della barra a discesa. Il gestore della barra a discesa chiama a sua volta il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.SetDropdownBar%2A> metodo sull' <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> oggetto per stabilire l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar> oggetto che include le due barre a discesa.  
   
- Quando si sposta il punto di inserimento, il <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> (metodo). La base <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo nel <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe per aggiornare lo stato della barra di spostamento. Si passa un set di <xref:Microsoft.VisualStudio.Package.DropDownMember> oggetti a questo metodo. Ogni oggetto rappresenta una voce nell'elenco a discesa.  
+ Quando il punto di inserimento viene spostato, il <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> metodo chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> metodo. Il metodo di base <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> chiama il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo nella <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe per aggiornare lo stato della barra di navigazione. Viene passato un set di <xref:Microsoft.VisualStudio.Package.DropDownMember> oggetti a questo metodo. Ogni oggetto rappresenta una voce nell'elenco a discesa.  
   
-## <a name="the-contents-of-the-navigation-bar"></a>Il contenuto della barra di spostamento  
- La barra di spostamento contiene in genere un elenco di tipi e un elenco di membri. L'elenco dei tipi include tutti i tipi disponibili nel file di origine corrente. I nomi dei tipi includono le informazioni dello spazio dei nomi completo. Di seguito è riportato un esempio di codice c# con due tipi:  
+## <a name="the-contents-of-the-navigation-bar"></a>Contenuto della barra di spostamento  
+ La barra di spostamento contiene in genere un elenco di tipi e un elenco di membri. L'elenco di tipi include tutti i tipi disponibili nel file di origine corrente. I nomi di tipo includono le informazioni complete sullo spazio dei nomi. Di seguito è riportato un esempio di codice C# con due tipi:  
   
 ```csharp  
 namespace TestLanguagePackage  
@@ -46,48 +46,48 @@ namespace TestLanguagePackage
 }  
 ```  
   
- Verrà visualizzato l'elenco di tipo `TestLanguagePackage.TestLanguageService` e `TestLanguagePackage.TestLanguageService.Tokens`.  
+ Nell'elenco tipo vengono visualizzati `TestLanguagePackage.TestLanguageService` e `TestLanguagePackage.TestLanguageService.Tokens` .  
   
- L'elenco dei membri Visualizza i membri disponibili del tipo che sia selezionato nell'elenco dei tipi. Usando l'esempio di codice precedente, se `TestLanguagePackage.TestLanguageService` è il tipo che è selezionato, l'elenco dei membri contiene i membri privati `tokens` e `serviceName`. La struttura interna `Token` non viene visualizzata.  
+ Nell'elenco dei membri vengono visualizzati i membri disponibili del tipo selezionato nell'elenco tipi. Utilizzando l'esempio di codice precedente, se `TestLanguagePackage.TestLanguageService` è il tipo selezionato, l'elenco dei membri conterrà i membri privati `tokens` e `serviceName` . La struttura interna `Token` non viene visualizzata.  
   
- È possibile implementare l'elenco dei membri per rendere il nome di un membro in grassetto quando il cursore viene posizionato all'interno. I membri possono essere visualizzati anche nella testo, in grigio che indica che essi non sono all'interno dell'ambito in cui il punto di inserimento è attualmente posizionato.  
+ È possibile implementare l'elenco dei membri per rendere il nome di un membro in grassetto quando il punto di inserimento viene inserito al suo interno. I membri possono anche essere visualizzati in testo in grigio, a indicare che non si trovano all'interno dell'ambito in cui è attualmente posizionato il cursore.  
   
 ## <a name="enabling-support-for-the-navigation-bar"></a>Abilitazione del supporto per la barra di spostamento  
- Per abilitare il supporto per la barra di spostamento, è necessario impostare il `ShowDropdownBarOption` parametro il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> dell'attributo `true`. Questo parametro imposta la proprietà <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A>. Per supportare la barra di spostamento, è necessario implementare il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> dell'oggetto nel <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metodo su di <xref:Microsoft.VisualStudio.Package.LanguageService> classe.  
+ Per abilitare il supporto per la barra di navigazione, è necessario impostare il `ShowDropdownBarOption` parametro dell' <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attributo su `true` . Questo parametro imposta la proprietà <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A>. Per supportare la barra di navigazione, è necessario implementare l' <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> oggetto nel <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metodo della <xref:Microsoft.VisualStudio.Package.LanguageService> classe.  
   
- Nell'implementazione del <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metodo, se il <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> è impostata su `true`, è possibile restituire un <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> oggetto. Se non si restituiscono l'oggetto, non viene visualizzata la barra di spostamento.  
+ Nell'implementazione del <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDropDownHelper%2A> metodo, se la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.ShowNavigationBar%2A> proprietà è impostata su `true` , è possibile restituire un <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> oggetto. Se non si restituisce l'oggetto, la barra di spostamento non viene visualizzata.  
   
- L'opzione per visualizzare la barra di spostamento è impostabili dall'utente, pertanto è possibile che questo controllo da reimpostare mentre la visualizzazione dell'editor è aperta. L'utente deve chiudere e riaprire la finestra dell'editor prima che venga eseguita la modifica.  
+ L'opzione per visualizzare la barra di spostamento può essere impostata dall'utente, pertanto è possibile che il controllo venga reimpostato mentre è aperta la visualizzazione dell'editor. L'utente deve chiudere e riaprire la finestra dell'editor prima che la modifica avvenga.  
   
 ## <a name="implementing-support-for-the-navigation-bar"></a>Implementazione del supporto per la barra di spostamento  
  Il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo accetta due elenchi (uno per ogni elenco a discesa) e due valori che rappresentano la selezione corrente in ogni elenco. Gli elenchi e i valori di selezione possono essere aggiornati, nel qual caso il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo deve restituire `true` per indicare che gli elenchi sono stati modificati.  
   
- Man mano che cambia la selezione nei tipi di elenco a discesa, l'elenco dei membri da aggiornare in modo da riflettere il nuovo tipo. Che cosa viene visualizzata nell'elenco dei membri possa essere:  
+ Quando si modifica la selezione nell'elenco a discesa tipi, è necessario aggiornare l'elenco dei membri in modo da riflettere il nuovo tipo. Gli elementi visualizzati nell'elenco dei membri possono essere i seguenti:  
   
-- L'elenco dei membri per il tipo corrente.  
+- Elenco di membri per il tipo corrente.  
   
-- Tutti i membri disponibili nell'origine dei file, ma con tutti i membri non di tipo corrente visualizzato nel testo grigio. L'utente può comunque selezionare i membri di grigio, in modo che possono essere utilizzati per la navigazione rapida, ma il colore indica che non fanno parte del tipo attualmente selezionato.  
+- Tutti i membri disponibili nel file di origine, ma con tutti i membri non appartenenti al tipo corrente visualizzato in testo in grigio. L'utente può comunque selezionare i membri in grigio, in modo che possano essere usati per la navigazione rapida, ma il colore indica che non fanno parte del tipo attualmente selezionato.  
   
   Un'implementazione del <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo in genere esegue i passaggi seguenti:  
   
-1. Ottenere un elenco delle dichiarazioni correnti del file di origine.  
+1. Ottiene un elenco di dichiarazioni correnti per il file di origine.  
   
-     Esistono diversi modi per popolare gli elenchi. Un approccio consiste nel creare un metodo personalizzato nella versione del <xref:Microsoft.VisualStudio.Package.LanguageService> classe che chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo con un motivo di analisi personalizzata che restituisce un elenco di tutte le dichiarazioni. Potrebbe essere un altro approccio per chiamare il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo direttamente dal <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo con il motivo per l'analisi personalizzata. Un terzo approccio potrebbe essere per memorizzare nella cache le dichiarazioni nel <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe restituito dall'ultima operazione di analisi completa nel <xref:Microsoft.VisualStudio.Package.LanguageService> classe e recuperare queste informazioni dalla <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (metodo).  
+     Sono disponibili diversi modi per popolare gli elenchi. Un approccio consiste nel creare un metodo personalizzato sulla versione della <xref:Microsoft.VisualStudio.Package.LanguageService> classe che chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo con un motivo di analisi personalizzato che restituisce un elenco di tutte le dichiarazioni. Un altro approccio potrebbe consistere nel chiamare il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo direttamente dal <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo con il motivo dell'analisi personalizzata. Un terzo approccio potrebbe essere quello di memorizzare nella cache le dichiarazioni della <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe restituite dall'ultima operazione di analisi completa nella <xref:Microsoft.VisualStudio.Package.LanguageService> classe e di recuperarle dal <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo.  
   
-2. Inserire o aggiornare l'elenco dei tipi.  
+2. Popolare o aggiornare l'elenco di tipi.  
   
-     Il contenuto dell'elenco dei tipi sia in grado di essere aggiornato quando l'origine è stato modificato o se si è scelto di modificare lo stile del testo dei tipi di base la posizione corrente del cursore. Si noti che questa posizione viene passata per il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (metodo).  
+     Il contenuto dell'elenco dei tipi può essere aggiornato quando l'origine è stata modificata o se si è scelto di modificare lo stile del testo dei tipi in base alla posizione corrente del punto di inserimento. Si noti che questa posizione viene passata al <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo.  
   
-3. Determinare il tipo per selezionare nell'elenco di tipi di base la posizione corrente del cursore.  
+3. Determinare il tipo da selezionare nell'elenco dei tipi in base alla posizione corrente del cursore.  
   
-     È possibile cercare le dichiarazioni che sono state ottenute nel passaggio 1 per trovare il tipo che include la posizione corrente del cursore e quindi eseguire ricerche nell'elenco di tipi per tale tipo determinare il relativo indice nell'elenco dei tipi.  
+     È possibile eseguire una ricerca nelle dichiarazioni ottenute nel passaggio 1 per trovare il tipo che racchiude la posizione corrente del cursore, quindi eseguire una ricerca nell'elenco dei tipi per quel tipo per determinare l'indice nell'elenco dei tipi.  
   
-4. Inserire o aggiornare l'elenco dei membri in base al tipo selezionato.  
+4. Compila o aggiorna l'elenco dei membri in base al tipo selezionato.  
   
-     L'elenco dei membri riflette ciò che è attualmente visualizzato nei **membri** elenco a discesa. Il contenuto dell'elenco di membri debba essere aggiornato se l'origine è stato modificato o se si visualizzano solo i membri del tipo selezionato e il tipo selezionato è stato modificato. Se si sceglie di visualizzare tutti i membri nel file di origine, lo stile di testo di ogni membro nell'elenco deve essere aggiornato se il tipo selezionato è stato modificato.  
+     L'elenco dei membri riflette gli elementi attualmente visualizzati nell'elenco a discesa **membri** . Potrebbe essere necessario aggiornare il contenuto dell'elenco di membri se l'origine è stata modificata o se vengono visualizzati solo i membri del tipo selezionato e il tipo selezionato è stato modificato. Se si sceglie di visualizzare tutti i membri nel file di origine, è necessario aggiornare lo stile del testo di ogni membro nell'elenco se il tipo attualmente selezionato è stato modificato.  
   
-5. Determinare i membri da selezionare nell'elenco dei membri in base alla posizione del punto di inserimento corrente.  
+5. Determinare il membro da selezionare nell'elenco dei membri in base alla posizione corrente del cursore.  
   
-     Cercare le dichiarazioni che sono state ottenute nel passaggio 1 per il membro che contiene la posizione corrente del cursore, quindi eseguire ricerche nell'elenco di membri per il membro determinare il relativo indice nell'elenco dei membri.  
+     Eseguire una ricerca nelle dichiarazioni ottenute nel passaggio 1 per il membro che contiene la posizione corrente del punto di inserimento, quindi cercare nell'elenco dei membri il membro per determinarne l'indice nell'elenco dei membri.  
   
-6. Restituire `true` se sono state apportate modifiche per gli elenchi o le selezioni in entrambi gli elenchi.
+6. Restituisce `true` se sono state apportate modifiche agli elenchi o alle selezioni in uno degli elenchi.

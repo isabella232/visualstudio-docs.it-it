@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef6e65c9d180119d9270c292e30e619d94836175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154073"
 ---
 # <a name="collecting-additional-performance-data"></a>Raccolta di dati aggiuntivi relativi alle prestazioni
@@ -26,5 +26,5 @@ Oltre ai dati raccolti tramite un metodo di profilatura, gli strumenti di profil
 |Attività|Contenuti correlati|  
 |----------|---------------------|  
 |**Raccogliere dati sulle prestazioni per le chiamate ADO.NET nell'applicazione.** Aggiungere i dati sulle chiamate sincrone effettuate dall'applicazione ai database.|-   [Raccolta di dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)|  
-|**Raccogliere i dati dei contatori delle prestazioni Windows.** Aggiungere i contatori delle prestazioni di sistema come contrassegni di profilatura ai dati di profilatura. I contrassegni possono essere usati per filtrare i report.|-   [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)|  
-|**Raccogliere dati ETW (Event Tracing for Windows).** Raccogliere i dati ETW (Event Tracing for Windows) per registrare gli eventi di applicazioni e sistemi oltre ai dati di profilatura.|-   [Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|**Raccogliere i dati dei contatori delle prestazioni Windows.** Aggiungere i contatori delle prestazioni di sistema come contrassegni di profilatura ai dati di profilatura. I contrassegni possono essere usati per filtrare i report.|-   [Procedura: raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)|  
+|**Raccogliere dati ETW (Event Tracing for Windows).** Raccogliere i dati ETW (Event Tracing for Windows) per registrare gli eventi di applicazioni e sistemi oltre ai dati di profilatura.|-   [Procedura: raccogliere dati di Event Tracing for Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|

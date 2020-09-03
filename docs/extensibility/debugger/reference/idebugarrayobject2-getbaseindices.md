@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugArrayObject2::GetBaseIndices . Documenti Microsoft
+title: 'IDebugArrayObject2:: GetBaseIndices | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736137"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-Recupera gli indici di base (limiti inferiori) per ogni indice in base al numero di dimensioni nella matrice.
+Recupera gli indici di base (limiti inferiori) per ogni indice dato il numero di dimensioni nella matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ int GetBaseIndices (
 
 ## <a name="parameters"></a>Parametri
 `dwRank`\
-[in] Numero di dimensioni (rank) della matrice.
+in Numero di dimensioni (rango) della matrice.
 
 `dwIndices`\
-[fuori] Gli indici di base (limiti inferiori) per la matrice.
+out Indici di base (limiti inferiori) per la matrice.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Ad esempio, questa funzione restituirebbe '5' per la matrice creata dal seguente codice C:
+ Ad esempio, questa funzione restituisce ' 5' per la matrice creata dal codice C# seguente:
 
 ```
 int[] lengths = { 12 };

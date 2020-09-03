@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9424eb099516761866ec459888ff830fcf56a28b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154750"
 ---
 # <a name="wincounter"></a>WinCounter
@@ -40,13 +40,13 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Opzioni obbligatorie  
  L'opzione **WinCounter** può essere usata solo con l'opzione **Start**.  
   
- **Start:** `Method`  
+ **Inizio:**`Method`  
  L'opzione **Start** inizializza il profiler sul metodo di profilatura specificato.  
   
 ## <a name="exclusive-options"></a>Opzioni esclusive  
  L'opzione **AutoMark** può essere usata solo con l'opzione **WinCounter**.  
   
- **AutoMark:** `Milliseconds`  
+ **Contrassegno automark:**`Milliseconds`  
  Specifica il numero di millisecondi tra le raccolte di dati dei contatori delle prestazioni di Windows.  
   
 ## <a name="example"></a>Esempio  

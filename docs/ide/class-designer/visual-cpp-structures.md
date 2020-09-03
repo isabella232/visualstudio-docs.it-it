@@ -1,5 +1,5 @@
 ---
-title: Strutture di C, in Progettazione classi
+title: Strutture C++ in Progettazione classi
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590684"
 ---
-# <a name="c-structures-in-class-designer"></a>Strutture di C, in Progettazione classi
+# <a name="c-structures-in-class-designer"></a>Strutture C++ in Progettazione classi
 
 **Progettazione Classi** supporta le strutture C++, che vengono dichiarate con la parola chiave `struct`. Di seguito è illustrato un esempio:
 
@@ -40,6 +40,6 @@ Una forma struttura C++ in un diagramma classi è simile per aspetto e funzionam
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Lavorare con il codice C](working-with-visual-cpp-code.md)
+- [Uso del codice C++](working-with-visual-cpp-code.md)
 - [Classi e struct](/cpp/cpp/classes-and-structs-cpp)
 - [struct](/cpp/cpp/struct-cpp)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dd4560673259373b68b370e73a43de424fb7bdb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658480"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Risoluzione dei problemi relativi a estensioni per diagrammi livello
@@ -24,11 +24,11 @@ ms.locfileid: "72658480"
 
 Questo argomento risolve alcuni problemi che possono verificarsi quando si creano estensioni del modello di livello.
 
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Quando si preme F5 per eseguire il debug dell'estensione, i comandi, i gestori movimenti, le estensioni di convalida o le proprietà personalizzate non vengono visualizzate nei diagrammi livello nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-vsprvs"></a>Quando si preme F5 per eseguire il debug dell'estensione, i comandi, i gestori movimenti, le estensioni di convalida o le proprietà personalizzate non vengono visualizzate nei diagrammi livello nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
 1. Aprire la soluzione di estensione nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e scegliere **Ricompila soluzione**dal menu **Compila** .
 
-2. Premere **F5** o **CTRL + F5** per avviare l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aprire un diagramma livello e testare l'estensione.
+2. Premere **F5** o **CTRL + F5** per avviare l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Aprire un diagramma livello e testare l'estensione.
 
    Continuare con la procedura descritta di seguito, se necessario.
 
@@ -39,7 +39,7 @@ Questo argomento risolve alcuni problemi che possono verificarsi quando si crean
 2. Eliminare la cartella seguente:%LocalAppData%\Microsoft\VisualStudio \\ [Version] \ComponentModelCache
 
    > [!NOTE]
-   > % LocalAppData% è in genere *driveName*: \Users \\*nomeutente*\AppData\Local.
+   > % LocalAppData% è in genere *driveName*: \Users \\ *nomeutente*\AppData\Local.
 
    Continuare con la procedura descritta di seguito, se necessario.
 

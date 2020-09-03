@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1ac04a3d8834e3fc24f148fc36327d101e43720a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658855"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procedura: Configurare l'analisi codice per un progetto di codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)], è possibile scegliere da un elenco di set di *regole* di analisi codice da applicare a un progetto di codice gestito. Il set di regole predefinito corrisponde alle regole minime consigliate di Microsoft. È possibile applicare un altro set di regole a un progetto o a tutti i progetti in una soluzione.
+In [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)] è possibile scegliere da un elenco di *set di regole* di analisi codice da applicare a un progetto di codice gestito. Il set di regole predefinito corrisponde alle regole minime consigliate di Microsoft. È possibile applicare un altro set di regole a un progetto o a tutti i progetti in una soluzione.
 
 > [!NOTE]
 > Per informazioni su come configurare un set di regole per le applicazioni Web ASP.NET, vedere [procedura: configurare l'analisi del codice per un'applicazione web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -37,7 +37,7 @@ In [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../i
 
 3. Negli elenchi **configurazione** e **piattaforma** fare clic sulla configurazione della build e sulla piattaforma di destinazione.
 
-4. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato usando la configurazione selezionata, selezionare la casella di controllo **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** . È anche possibile eseguire manualmente l'analisi del codice aprendo il menu **analizza** e facendo clic **su Esegui analisi del codice su** *NomeProgetto*.
+4. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato usando la configurazione selezionata, selezionare la casella di controllo **Abilita analisi codice su compilazione (definizione CODE_ANALYSIS costante)** . È anche possibile eseguire manualmente l'analisi del codice aprendo il menu **analizza** e facendo clic **su Esegui analisi del codice su** *NomeProgetto*.
 
 5. Per impostazione predefinita, l'analisi del codice non segnala gli avvisi del codice generato automaticamente da strumenti esterni. Per visualizzare gli avvisi dal codice generato, deselezionare la casella di controllo non **visualizzare i risultati del codice generato** .
 
@@ -48,11 +48,11 @@ In [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../i
 
     - Fare clic sul set di regole che si desidera utilizzare.
 
-    - Fare clic su **\<Browse... >** per specificare un set di regole personalizzato esistente non presente nell'elenco.
+    - Fare clic **\<Browse...>** per specificare un set di regole personalizzato esistente non presente nell'elenco.
 
     - Definire un set di regole personalizzato.
 
          Per altre informazioni, vedere [creazione di set di regole personalizzati](../code-quality/creating-custom-code-analysis-rule-sets.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura dettagliata: configurazione e uso di un set di regole personalizzate](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
+ [Procedura dettagliata: Configurazione e uso di un set di regole personalizzate](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

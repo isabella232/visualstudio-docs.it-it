@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591216"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
@@ -28,7 +28,7 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
 
    1. Determinare quale processo *QTAgent\*.exe* viene avviato quando si esegue il test. Un modo per farlo è osservare la scheda **Dettagli** in **Gestione attività** di Windows.
 
-   2. Aprire il file *con estensione config* corrispondente dalla cartella *%ProgramFiles(x86)>>%\\\< \\ \<* . Ad esempio, se il processo eseguito è *QTAgent_40.exe* aprire *QTAgent_40.exe.config*.
+   2. Aprire il file con *estensione config* corrispondente dalla cartella *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE* . Ad esempio, se il processo eseguito è *QTAgent_40.exe* aprire *QTAgent_40.exe.config*.
 
    2. Modificare il valore di **EqtTraceLevel** e impostarlo sul livello di log desiderato.
 
@@ -71,7 +71,7 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
      I test automatizzati vengono eseguiti e segnalano se sono stati superati o se hanno avuto esito negativo.
 
     > [!TIP]
-    > Per visualizzare **Esplora test**, scegliere **Test** > **di Windows**, quindi Esplora **test**.
+    > Per visualizzare **Esplora test**, scegliere **Test**  >  **finestre**di test, quindi scegliere **Esplora test**.
 
 4. Scegliere il collegamento **Output** nei risultati di **Esplora test**.
 

@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154831"
 ---
 # <a name="msbuild-glossary"></a>Glossario di MSBuild
@@ -70,17 +70,17 @@ Questi termini vengono usati per descrivere Microsoft Build Engine (MSBuild) e i
 
  Vedere funzione Item.
 
- elemento
+ item
 
- Gli elementi sono input nel sistema di compilazione e vengono raggruppati in tipi di elemento in base ai nomi degli elementi. Gli elementi rappresentano in genere file. Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini *elemento* e *valore dell'elemento* sono interscambiabili. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+ Gli elementi sono input nel sistema di compilazione e vengono raggruppati in tipi di elemento in base ai nomi degli elementi. Gli elementi rappresentano in genere file. Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini *elemento* e *valore dell'elemento* sono interscambiabili. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
  definizione di un elemento
 
- I gruppi di definizioni di elementi contengono definizioni di elementi che aggiungono metadati predefiniti a qualsiasi tipo di elemento. Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Per altre informazioni, vedere [Definizioni degli elementi](../msbuild/item-definitions.md).
+ I gruppi di definizioni di elementi contengono definizioni di elementi che aggiungono metadati predefiniti a qualsiasi tipo di elemento. Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Per altre informazioni, vedere [definizioni di elementi](../msbuild/item-definitions.md).
 
  funzione Item
 
- Le funzioni Item ottengono informazioni sugli elementi nel progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi. Queste funzioni servono a modificare le stringhe e i percorsi degli elementi. Per altre informazioni, vedere [Funzioni Item](../msbuild/item-functions.md).
+ Le funzioni Item ottengono informazioni sugli elementi nel progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi. Queste funzioni servono a modificare le stringhe e i percorsi degli elementi. Per altre informazioni, vedere [funzioni](../msbuild/item-functions.md) per gli elementi
 
  metadati degli elementi
 
@@ -88,21 +88,21 @@ Questi termini vengono usati per descrivere Microsoft Build Engine (MSBuild) e i
 
  tipo di elemento
 
- I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+ I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
  metadati, elemento
 
- I metadati di un elemento sono una raccolta di coppie nome-valore associate a un elemento. I metadati forniscono informazioni descrittive per l'elemento e sono facoltativi, eccetto i metadati noti. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+ I metadati di un elemento sono una raccolta di coppie nome-valore associate a un elemento. I metadati forniscono informazioni descrittive per l'elemento e sono facoltativi, eccetto i metadati noti. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
  metadati, noti
 
- I metadati noti sono i metadati degli elementi di sola lettura che vengono inizializzati usando un valore predefinito. I metadati noti forniscono informazioni descrittive per un elemento che fa riferimento a un file. Ad esempio, il valore dei metadati noti denominati `FullPath` è il percorso completo del file di riferimento. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+ I metadati noti sono i metadati degli elementi di sola lettura che vengono inizializzati usando un valore predefinito. I metadati noti forniscono informazioni descrittive per un elemento che fa riferimento a un file. Ad esempio, il valore dei metadati noti denominati `FullPath` è il percorso completo del file di riferimento. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
  multitargeting
 
  Possibilità per un progetto di applicazione o assembly di specificare come destinazione più CLR e framework diversi da MSBuild e da Visual Studio.
 
- profilo
+ profile
 
  Subset del framework completo. Viene usato per ridurre al minimo la quantità di dati che è necessario scaricare in un computer.
 
@@ -112,11 +112,11 @@ Questi termini vengono usati per descrivere Microsoft Build Engine (MSBuild) e i
 
  proprietà
 
- Una proprietà è una coppia chiave-valore usata per controllare il processo di compilazione. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).
+ Una proprietà è una coppia chiave-valore usata per controllare il processo di compilazione. Per altre informazioni, vedere [proprietà di MSBuild](msbuild-properties1.md).
 
  proprietà, ambiente
 
- Una proprietà dell'ambiente è una proprietà che viene automaticamente inizializzata sul valore di una variabile di ambiente di sistema con lo stesso nome. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).
+ Una proprietà dell'ambiente è una proprietà che viene automaticamente inizializzata sul valore di una variabile di ambiente di sistema con lo stesso nome. Per altre informazioni, vedere [proprietà di MSBuild](msbuild-properties1.md).
 
  file di proprietà
 
@@ -124,19 +124,19 @@ Questi termini vengono usati per descrivere Microsoft Build Engine (MSBuild) e i
 
  proprietà, funzione
 
- Una funzione di proprietà è una proprietà di sistema o un metodo che si può usare per valutare gli script di MSBuild. I metodi di proprietà possono essere usati per leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni. Per altre informazioni, vedere [Funzioni di proprietà](../msbuild/property-functions.md).
+ Una funzione di proprietà è una proprietà di sistema o un metodo che si può usare per valutare gli script di MSBuild. I metodi di proprietà possono essere usati per leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni. Per altre informazioni, vedere [funzioni di proprietà](../msbuild/property-functions.md).
 
  funzione di proprietà, annidata
 
- Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio,
+ Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio:
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- Per altre informazioni, vedere [Funzioni di proprietà](../msbuild/property-functions.md).
+ Per altre informazioni, vedere [funzioni di proprietà](../msbuild/property-functions.md).
 
  proprietà, globale
 
- Una proprietà globale è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà globali vengono impostate al prompt dei comandi oppure usando l'attributo `Properties` di un'[attività di MSBuild](../msbuild/msbuild-task.md) e non possono essere modificate durante la fase di valutazione di una compilazione. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).
+ Una proprietà globale è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà globali vengono impostate al prompt dei comandi oppure usando l'attributo `Properties` di un'[attività di MSBuild](../msbuild/msbuild-task.md) e non possono essere modificate durante la fase di valutazione di una compilazione. Per altre informazioni, vedere [proprietà di MSBuild](msbuild-properties1.md).
 
  proprietà, locale
 
@@ -144,11 +144,11 @@ Questi termini vengono usati per descrivere Microsoft Build Engine (MSBuild) e i
 
  proprietà, Registro di sistema
 
- Una proprietà del Registro di sistema ha un valore che viene impostato usando una speciale sintassi che legge il valore di una sottochiave del Registro di sistema. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).
+ Una proprietà del Registro di sistema ha un valore che viene impostato usando una speciale sintassi che legge il valore di una sottochiave del Registro di sistema. Per altre informazioni, vedere [proprietà di MSBuild](msbuild-properties1.md).
 
  proprietà, riservata
 
- Una proprietà riservata è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà riservate vengono automaticamente inizializzate su valori predefiniti. Per altre informazioni, vedere [MSBuild Properties](msbuild-properties1.md) (Proprietà MSBuild).
+ Una proprietà riservata è una coppia chiave-valore usata per controllare il processo di compilazione. Le proprietà riservate vengono automaticamente inizializzate su valori predefiniti. Per altre informazioni, vedere [proprietà di MSBuild](msbuild-properties1.md).
 
  ambito di progetto
 

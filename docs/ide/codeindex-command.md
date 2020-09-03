@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591164"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
@@ -38,7 +38,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 ### <a name="parameters"></a>Parametri
 
-|**discussione**|**Descrizione**|
+|**Argument**|**Descrizione**|
 |------------------| - |
 |`CollectionName`|Specifica il nome della raccolta di progetti. Se il nome contiene spazi, racchiuderlo tra virgolette, ad esempio, "Sito Web di Fabrikam".|
 |`CollectionId`|Specifica il numero di identificazione della raccolta di progetti.|
@@ -54,8 +54,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/noPrompt]**|Eliminare l'indice del codice e rimuovere tutti i dati indicizzati. Non è richiesta conferma se si usa l'opzione **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Controllare la quantità di dati temporanei creati da CodeLens durante l'elaborazione degli insiemi di modifiche. Il limite predefinito è 2 GB.<br /><br /> -   **view**: mostra il limite di dimensioni attuale.<br />-   `SizeInGBs`: modifica il limite di dimensioni.<br />-   **disable**: rimuove il limite di dimensioni.<br /><br /> Questo limite viene verificato prima dell'elaborazione di un nuovo insieme di modifiche con CodeLens. Se i dati temporanei superano questo limite, CodeLens sospende l'elaborazione degli insiemi di modifiche precedenti, non di quelli nuovi. CodeLens riavvia l'elaborazione dopo che i dati sono stati puliti e sono tornati sotto il limite. La pulizia viene eseguita automaticamente una volta al giorno. Questo implica che i dati temporanei potrebbero superare questo limite prima dell'esecuzione del processo di pulizia.|
 |**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Controllare la lunghezza dell'intervallo di indicizzazione della cronologia delle modifiche. Ciò incide sulla quantità di cronologia che CodeLens mostra all'utente. Il limite predefinito è di 12 mesi. Questo significa che CodeLens mostra la cronologia delle modifiche solo degli ultimi 12 mesi.<br /><br /> -   **view**: mostra il numero di mesi corrente.<br />-   **all**: indicizza tutta la cronologia delle modifiche.<br />-   `NumberOfMonths`: modifica il numero di mesi usato per indicizzare la cronologia delle modifiche.|
-|**/collectionNome:**`CollectionName`|Specifica il nome dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
-|**/collectionId:**`CollectionId`|Specifica il numero di identificazione dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
+|**/CollectionName:**`CollectionName`|Specifica il nome dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
+|**/CollectionId:**`CollectionId`|Specifica il numero di identificazione dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
 
 ## <a name="examples"></a>Esempi
 

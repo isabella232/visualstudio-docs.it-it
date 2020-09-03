@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: be60d2a1dcb769a0b7a8574984de3d288bf57af4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538879"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Usare StringComparison ordinale
@@ -41,7 +41,7 @@ ms.locfileid: "85538879"
  Quando si specifica **StringComparison. Ordinal** o **StringComparison. OrdinalIgnoreCase**, il confronto tra stringhe sarà di tipo non linguistico. In altre parole, le funzionalità specifiche del linguaggio naturale vengono ignorate quando vengono prese decisioni di confronto. Ciò significa che le decisioni sono basate su semplici confronti di byte e ignorano le tabelle di maiuscole e minuscole parametrizzate in base alle impostazioni cultura. Di conseguenza, impostando in modo esplicito il parametro su **StringComparison. Ordinal** o **StringComparison. OrdinalIgnoreCase**, il codice ottiene spesso una velocità, aumenta la correttezza e diventa più affidabile.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il metodo di confronto tra stringhe in un overload che accetta l' <xref:System.StringComparison?displayProperty=fullName> enumerazione come parametro e specificare **ordinal** o **OrdinalIgnoreCase**. Ad esempio, sostituire `String.Compare(str1, str2)` con `String.Compare(str1, str2, StringComparison.Ordinal)`.
+ Per correggere una violazione di questa regola, modificare il metodo di confronto tra stringhe in un overload che accetta l' <xref:System.StringComparison?displayProperty=fullName> enumerazione come parametro e specificare **ordinal** o **OrdinalIgnoreCase**. Puoi ad esempio modificare `String.Compare(str1, str2)` in `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola quando la libreria o l'applicazione è destinata a un gruppo di destinatari locale limitato o quando è necessario usare la semantica delle impostazioni cultura correnti.

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9349745eeee24f2f8b1e62eb2b01bd75273c86d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658589"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
@@ -31,7 +31,7 @@ Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La 
 ## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente
  Per passare direttamente alla pagina di riferimento di .NET Framework per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.
 
-|nome|DESCRIZIONE|
+|Nome|Descrizione|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|Aggiunge un'istanza di un set di dati tipizzato o non tipizzato al form o al componente. Quando si trascina questo oggetto in una finestra di progettazione, viene visualizzata una finestra di dialogo che consente di selezionare una classe Dataset tipizzata esistente o di specificare che si vuole creare un nuovo set di dati non tipizzato vuoto. **Nota:** l'oggetto <xref:System.Data.DataSet> nella **Casella degli strumenti** non viene usato per creare una nuova classe e un nuovo schema di set di dati tipizzato. Per altre informazioni, vedere [Create and configure datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).|
 |<xref:System.Windows.Forms.DataGridView>|Offre un sistema efficiente e flessibile per visualizzare i dati in formato tabulare.|

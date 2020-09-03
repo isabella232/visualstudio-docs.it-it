@@ -1,5 +1,5 @@
 ---
-title: Proprietà IDebugProgramPublisher2 . Documenti Microsoft
+title: IDebugProgramPublisher2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721532"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-Questa interfaccia consente a un motore di debug (DE) o ai fornitori di porte personalizzate di registrare i programmi per il debug.
+Questa interfaccia consente a un motore di debug (DE) o a un fornitore di porta personalizzato di registrare i programmi per il debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,34 +29,34 @@ IDebugProgramPublisher2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
-Visual Studio implementa questa interfaccia per registrare i programmi in fase di debug per renderli visibili per il debug tra più processi.
+Visual Studio implementa questa interfaccia per registrare i programmi di cui è in corso il debug, in modo da renderli visibili per il debug in più processi.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Chiamare la `CoCreateInstance` funzione `CLSID_ProgramPublisher` di COM con per ottenere questa interfaccia (vedere l'esempio). Un DE o un fornitore di porta personalizzato utilizza questa interfaccia per registrare i nodi di programma che rappresentano i programmi in fase di debug.
+Chiamare `CoCreateInstance` la funzione com con `CLSID_ProgramPublisher` per ottenere questa interfaccia (vedere l'esempio). Un fornitore di porte o personalizzato usa questa interfaccia per registrare i nodi del programma che rappresentano i programmi di cui è in corso il debug.
 
-## <a name="methods-in-vtable-order"></a>Metodi in ordine Vtable
-Questa interfaccia implementa i metodi seguenti:This interface implements the following methods:
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
+Questa interfaccia implementa i metodi seguenti:
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Rende un nodo di programma disponibile per i DE e il gestore di sessione di debug (SDM).|
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Rende disponibile un nodo di programma a DEs e a gestione debug sessione (SDM).|
 |[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Rimuove un nodo di programma in modo che non sia più disponibile.|
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Rende disponibile un programma per i DOS e il Sistema SDM.|
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Rende disponibile un programma per DEs e SDM.|
 |[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Rimuove un programma in modo che non sia più disponibile.|
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Imposta un flag che indica che è presente un debugger.|
 
 ## <a name="remarks"></a>Osservazioni
-Questa interfaccia rende disponibili programmi e nodi di programma (ovvero, "pubblica") per l'utilizzo da parte di DE e del gestore di debug della sessione (SDM). Per accedere ai programmi pubblicati e ai nodi di programma, utilizzare il [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfaccia. Questo è l'unico modo in cui Visual Studio è in grado di riconoscere che è in corso il debug di un programma.
+Questa interfaccia rende disponibili i programmi e i nodi del programma (ovvero li pubblica) per l'uso da parte di DEs e gestione debug della sessione (SDM). Per accedere ai programmi e ai nodi del programma pubblicati, usare l'interfaccia [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) . Questo è l'unico modo in cui Visual Studio è in grado di riconoscere che è in corso il debug di un programma.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: msdbg.h
+Intestazione: msdbg. h
 
-Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Esempio
-In questo esempio viene illustrato come creare un'istanza dell'autore del programma e registrare un nodo di programma. Questa operazione è tratta dall'Esercitazione, [Pubblicazione del nodo del programma](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
+Questo esempio illustra come creare un'istanza dell'autore del programma e registrare un nodo del programma. Questa operazione viene eseguita nell'esercitazione [pubblicazione del nodo del programma](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:

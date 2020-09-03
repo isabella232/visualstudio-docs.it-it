@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ea2fdf1f47385a9be26fa65a93b9104b2d864079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658014"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animare oggetti in una finestra di progettazione XAML
@@ -29,7 +29,7 @@ ms.locfileid: "72658014"
 
  Per imparare a creare animazioni, è possibile guardare i video seguenti.
 
-|Breve video:|Procedure incluse:|
+|Breve video:|Viene illustrato come:|
 |--------------------------|-------------------|
 |![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [creare sequenze temporali](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|Creare una sequenza temporale e usare gli oggetti nella sequenza temporale.|
 |![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [aggiungere fotogrammi chiave e ripetere l'animazione](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|Aggiungere fotogrammi chiave e impostare le proprietà di ogni fotogramma. Eseguire quindi l'animazione e notare la transizione graduale applicata agli oggetti.|

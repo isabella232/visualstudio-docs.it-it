@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387031"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
@@ -66,12 +66,12 @@ Quando si impostano le condizioni, è anche possibile impostare un'**azione** e 
 
 Quando l'esecuzione del codice viene arrestata in corrispondenza di un punto di interruzione, sono disponibili varie opzioni per eseguire il codice istruzione per istruzione oppure eseguire blocchi di codice prima di una nuova interruzione. Questi comandi sono disponibili in diverse posizioni, tra cui la barra degli strumenti di debug superiore, il menu **Debug**, il menu di scelta rapida nell'editor del codice e tramite i tasti di scelta rapida, tenendo presente però che non tutti i comandi sono accessibili da tutte le posizioni:
 
-| Funzionalità | Combinazioni di tasti | Descrizione |
+| Feature | Combinazioni di tasti | Descrizione |
 | --- | --- | --- |
 | **Continua** | **F5** | Esegue il codice fino a quando non viene raggiunto il punto di interruzione successivo. |
 | **Esegui istruzione** | **F11** | Esegue l'istruzione successiva e si arresta. Se l'istruzione successiva è una chiamata a una funzione, il debugger si arresta in corrispondenza della prima riga della funzione chiamata. |
 | **Esegui istruzione/routine** | **F10** | Esegue l'istruzione successiva, effettuando anche una chiamata a una funzione (ed eseguendone tutto il relativo codice) ed applicando l'eventuale valore restituito. Questo comando consente di ignorare facilmente le funzioni di cui non è necessario eseguire il debug. |
-| **Esci da istruzione/uscita** | **Sposta** + **F11** | Esegue il codice fino alla fine della funzione corrente, quindi passa all'istruzione di chiamata.  Questo comando è utile quando non è necessario eseguire il debug della parte restante della funzione corrente. |
+| **Esci da istruzione/routine** | **Sposta** + **F11** | Esegue il codice fino alla fine della funzione corrente, quindi passa all'istruzione di chiamata.  Questo comando è utile quando non è necessario eseguire il debug della parte restante della funzione corrente. |
 | **Esegui fino al cursore** | **CTRL** + **F10** | Esegue il codice fino alla posizione del punto di inserimento nell'editor. Questo comando consente di ignorare facilmente un segmento di codice di cui non è necessario eseguire il debug. |
 | **Imposta istruzione successiva** | **CTRL** + **Sposta** + **F10** | Imposta il punto di esecuzione corrente nel codice in corrispondenza della posizione del punto di inserimento. Questo comando consente di evitare l'esecuzione di un segmento di codice, ad esempio quando si sa già che contiene errori o produce effetti collaterali indesiderati. |
 | **Mostra istruzione successiva** | **ALT** + **Num** **&#42;**| Riporta alla successiva istruzione da eseguire. Questo comando è utile per individuare all'interno del codice il punto in cui il debugger è stato arrestato. |
@@ -132,7 +132,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 
 ### <a name="launch-mode-options"></a>Opzioni di Modalità di avvio
 
-| Opzione | Description |
+| Opzione | Descrizione |
 | --- | --- |
 | **Utilità di avvio Python standard** | Usa il codice di debug scritto in Python portabile che è compatibile con CPython, IronPython e varianti quali Stackless Python. Offre un'esperienza ottimale per il debug di codice Python puro. Si tratta dell'utilità di avvio usata quando ci si collega a un processo *python.exe* in esecuzione. Questa utilità di avvio include anche il [debug in modalità mista](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) per CPython, che consente di passare in modo trasparente dal codice C/C++ al codice Python e viceversa. |
 | **Utilità di avvio Web** | Esegue il browser predefinito all'avvio e consente di eseguire il debug di modelli. Per altre informazioni, vedere la sezione [Web template debugging](python-web-application-project-templates.md#debugging) (Debug di modelli Web). |
@@ -141,7 +141,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opzioni di esecuzione (percorsi di ricerca, argomenti di avvio e variabili di ambiente)
 
-| Opzione | Description |
+| Opzione | Descrizione |
 | --- | --- |
 | **Percorsi di ricerca** | Questi valori corrispondono a ciò che viene visualizzato nel nodo **percorsi di ricerca** del progetto in **Esplora soluzioni**. È possibile modificare qui questo valore, ma è più facile usare **Esplora soluzioni** che consente di sfogliare le cartelle e converte automaticamente i percorsi nel formato relativo. |
 | **Argomenti dello script** | Questi argomenti vengono aggiunti al comando usato per avviare lo script e vengono visualizzati dopo il nome del file di script. Il primo elemento definito qui risulta disponibile per lo script come `sys.argv[1]`, il secondo come `sys.argv[2]`e così via. |

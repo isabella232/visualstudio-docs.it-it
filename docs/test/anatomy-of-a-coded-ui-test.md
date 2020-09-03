@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591203"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
@@ -31,9 +31,9 @@ Quando si crea un test codificato dell'interfaccia utente, il **Generatore di te
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sezione delle dichiarazioni](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parziale, generata automaticamente)<br /><br /> [Metodi](#UIMapMethods)<br /><br /> [Proprietà](#UIMapProperties)|No|
 |[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Sì|
 |[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Sì|
-|[UIMap.uitest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|
+|[UIMap. UITest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|
 
-### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a>UIMap.Designer.cs
+### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
 Questo file contiene il codice creato automaticamente dal **Generatore di test codificati dell'interfaccia utente** quando viene creato un test. Questo file viene ricreato ogni volta che un test viene modificato e quindi non è un file in cui si possa aggiungere o modificare il codice.
 
 #### <a name="declarations-section"></a>Sezione delle dichiarazioni
@@ -191,7 +191,7 @@ In questa classe è possibile creare il codice personalizzato per estendere la f
 
 Tutte le parti di [UIMap](/previous-versions/dd580454(v=vs.140)) possono usare i metodi e le proprietà di qualsiasi altra parte della classe [UIMap](/previous-versions/dd580454(v=vs.140)).
 
-### <a name="codeduitest1cs"></a><a name="CodedUITestCS"></a>CodedUITest1.cs
+### <a name="codeduitest1cs"></a><a name="CodedUITestCS"></a> CodedUITest1.cs
 Questo file viene generato dal **Generatore di test codificati dell'interfaccia utente**, ma non viene ricreato ogni volta che il test viene modificato, di conseguenza il codice presente in questo file è modificabile. Il nome del file viene generato dal nome specificato per il test quando è stato creato.
 
 #### <a name="codeduitest1-class"></a>Classe CodedUITest1
@@ -280,6 +280,6 @@ Il file *UIMap.uitest* non è modificabile direttamente. È però possibile usar
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)
-- [Procedure consigliate per i test codificati dell'interfaccia utenteBest practices for coded UI tests](../test/best-practices-for-coded-ui-tests.md)
-- [Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utenteTesting a large application with multiple UI maps](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Procedure consigliate per i test codificati dell'interfaccia utente](../test/best-practices-for-coded-ui-tests.md)
+- [Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

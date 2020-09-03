@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591190"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
@@ -25,7 +25,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 - Creare unit test o test codificati dell'interfaccia utente da eseguire con l'impostazione di test.
 
@@ -97,13 +97,13 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 ::: moniker range="vs-2017"
 
-8. Scegliere **Impostazioni** > test dal menu **Test,** quindi scegliere il file **Select Test Settings File** *TestSettingDistributedTestWalkthrough.testsettings.*
+8. Nel menu **test** selezionare **impostazioni test** > **selezionare file di impostazioni test** , quindi scegliere il file *TestSettingDistributedTestWalkthrough. testsettings* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Scegliere Seleziona file **di impostazioni**dal menu **Test** . Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
+8. Scegliere **Seleziona file di impostazioni**dal menu **test** . Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
 
 ::: moniker-end
 
