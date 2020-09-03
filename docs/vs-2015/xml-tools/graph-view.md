@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba58777700ba34de3dc3b7a842f26462daf08c89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656354"
 ---
 # <a name="graph-view"></a>Visualizzazione grafico
@@ -23,7 +23,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  Nell'immagine seguente viene illustrata la visualizzazione grafico con sei nodi globali sulla relativa area di progettazione.
 
- ![Visualizzazione grafico di progettazione XML Schema](../xml-tools/media/xsddesigner-graphview.gif "XSDDesigner_GraphView")
+ ![Visualizzazione del grafico di Progettazione XML Schema](../xml-tools/media/xsddesigner-graphview.gif "XSDDesigner_GraphView")
 
 ## <a name="design-surface"></a>Area di progettazione
  Nell'area di progettazione della visualizzazione grafico viene visualizzato il contenuto dell' [area di lavoro di progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md). Se l'area di lavoro contiene eventuali nodi globali del set di schemi, i nodi vengono mostrati nell'area di progettazione della visualizzazione grafico e vengono tracciate frecce tra i nodi tra cui intercorrono relazioni.
@@ -34,7 +34,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, XML Schema Explorer e la filigrana. La *filigrana* è un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD.
 
- ![Progettazione XSD; Visualizzazione grafico](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![Progettazione XSD; Visualizzazione del grafico](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
 
  Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
 
@@ -51,7 +51,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 |**Genera XML di esempio**|Disponibile solo per elementi globali. Consente di generare un file XML di esempio per l'elemento globale.|
 |**Cancella area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
-|**Rimuovi tutto tranne la selezione dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
+|**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Esporta diagramma come immagine...**|Salva l'area di progettazione in un file XPS.|
 |**Seleziona tutto**|Seleziona tutti i nodi nell'area di progettazione.|
 |**Visualizza codice**|Consente di aprire il file che contiene il nodo selezionato nell'editor XML. L'elemento selezionato in XML Schema Explorer sarà selezionato anche nell'editor XML.|
@@ -94,7 +94,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 ## <a name="xsd-toolbar"></a>Barra degli strumenti XSD
  I seguenti pulsanti della barra degli strumenti XSD sono abilitati quando la visualizzazione grafico è attiva.
 
- ![Barra degli strumenti di progettazione XML Schema](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
 
 |Opzione|Descrizione|
 |------------|-----------------|
@@ -103,10 +103,10 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 |**Mostra visualizzazione grafico**|Passa alla [visualizzazione grafico](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione tramite i tasti di scelta rapida: **CTRL + 3**.|
 |**Cancella area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
-|**Rimuovi tutto tranne la selezione dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione. Questa opzione è abilitata nella visualizzazione modello di contenuto e nella visualizzazione grafico.|
+|**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione. Questa opzione è abilitata nella visualizzazione modello di contenuto e nella visualizzazione grafico.|
 |**Da sinistra a destra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT + freccia destra**.|
 |**Da destra a sinistra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT + freccia sinistra**.|
-|**Dall'alto verso il basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT + freccia giù**.|
+|**Dall'alto in basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT + freccia giù**.|
 |**Dal basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT + freccia su**.|
 
 ## <a name="panscroll"></a>Panoramica/scorrimento

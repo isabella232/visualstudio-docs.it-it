@@ -8,16 +8,16 @@ ms.date: 07/22/2020
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
 ms.openlocfilehash: 9f715cf5b9bd0278073b4a5f19a0f0a4f6a7a423
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801074"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
 
-## <a name="sign-in"></a>Accesso
+## <a name="sign-in"></a>Accedi
 
    > [!div class="mx-imgBorder"]
    > ![Riquadro Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
